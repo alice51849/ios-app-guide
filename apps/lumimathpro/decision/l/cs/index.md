@@ -2,7 +2,7 @@
 title: "nejlepší kompletní aplikace na matematiku pro předškoláky a první stupeň"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší kompletní aplikace na matematiku pro předškoláky a první stupeň
 
-Kompletní aplikace na matematiku by měla spojit počítání, porozumění číslům a první operace do jednoho propojeného dobrodružství, ne do izolovaných cvičení – Lumi Math Pro je vytvořen právě pro tento účel.
+Kompletní aplikace na matematiku by měla spojit počítání, porozumění číslům a první operace do jednoho propojeného dobrodružství, ne do izolovaných cvičení. Právě proto Lumi Math Pro vznikl.
 
 - Děti a učení
 - Placené stažení

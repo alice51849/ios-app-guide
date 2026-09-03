@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone
 
-Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban — G+Money je stvoren za to.
+Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban. Upravo tu prazninu G+Money želi popuniti.
 
 - Novac i putovanja
 - Plaćeno preuzimanje

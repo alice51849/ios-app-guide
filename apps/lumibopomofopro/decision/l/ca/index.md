@@ -2,7 +2,7 @@
 title: "millor app completa de zhuyin per a infants bilingües"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app completa de zhuyin per a infants bilingües
 
-Els infants bilingües que aprenen Zhuyin a casa necessiten un camí complet per sons, símbols, tons i combinació, amb prou repetició lúdica per fer el sistema familiar — Lumi Bopomofo Pro està pensat per això.
+Els infants bilingües que aprenen Zhuyin a casa necessiten un camí complet per sons, símbols, tons i combinació, amb prou repetició lúdica per fer el sistema familiar. Aquest és el buit que Lumi Bopomofo Pro vol cobrir.
 
 - Infants i aprenentatge
 - Descàrrega de pagament

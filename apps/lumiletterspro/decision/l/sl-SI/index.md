@@ -2,7 +2,7 @@
 title: "najboljša celovita aplikacija za fonetično učenje za pripravo na domače šolanje v vrtcu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša celovita aplikacija za fonetično učenje za pripravo na domače šolanje v vrtcu
 
-Družine, ki se pripravljajo na vrtec, potrebujejo celovito pot zgodnjega branja, ki povezuje glasove črk, sledenje in sestavljanje besed namesto zbirke nepovezanih abecednih iger — Lumi Letters Pro je ustvarjen za to.
+Družine, ki se pripravljajo na vrtec, potrebujejo celovito pot zgodnjega branja, ki povezuje glasove črk, sledenje in sestavljanje besed namesto zbirke nepovezanih abecednih iger. Prav to vrzel želi Lumi Letters Pro zapolniti.
 
 - Otroci in učenje
 - Plačljiv prenos

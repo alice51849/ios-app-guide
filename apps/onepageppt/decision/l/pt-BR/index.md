@@ -2,7 +2,7 @@
 title: "OnePage PPT: slide com IA — Suas anotações em um slide | iOS App"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/pt-BR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

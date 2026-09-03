@@ -2,7 +2,7 @@
 title: "无需订阅的最佳旅行预算追踪应用 iPhone"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 无需订阅的最佳旅行预算追踪应用 iPhone
 
-旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立——G+Money 专为此设计。
+旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立。这个缺口，正是 G+Money 想补上的。
 
 - 理财与出行
 - 付费下载

@@ -2,7 +2,7 @@
 title: "najboljša preprosta aplikacija za seznam opravil na iPhonu brez naročnine"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša preprosta aplikacija za seznam opravil na iPhonu brez naročnine
 
-Če se vam večina aplikacij za opravila zdi preveč zapletenih, je prava izbira čist kontrolni seznam z opomniki, ponavljanjem in komplikacijo za Apple Watch — in namerno brez upravljanja projektov — Mochi je narejen za to.
+Če se vam večina aplikacij za opravila zdi preveč zapletenih, je prava izbira čist kontrolni seznam z opomniki, ponavljanjem in komplikacijo za Apple Watch — in namerno brez upravljanja projektov. Prav zato Mochi obstaja.
 
 - Produktivnost
 - Brezplačen začetek

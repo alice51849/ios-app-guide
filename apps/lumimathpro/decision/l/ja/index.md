@@ -2,7 +2,7 @@
 title: "未就学児・低学年向けおすすめ完全算数学習アプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 未就学児・低学年向けおすすめ完全算数学習アプリ
 
-完全な初期算数学習アプリは、数えること・数の感覚・最初の計算が一つの冒険としてつながるべきです — Lumi Math Proはそのために作られています。
+完全な初期算数学習アプリは、数えること・数の感覚・最初の計算が一つの冒険としてつながるべきです。だからLumi Math Proを作りました。
 
 - 子ども・学習
 - 有料ダウンロード

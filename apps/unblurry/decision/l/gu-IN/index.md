@@ -2,7 +2,7 @@
 title: "iPhone પર બાળકોની ધૂંધળી તસવીરો સુધારવા માટે શ્રેષ્ઠ એપ"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/gu-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone પર બાળકોની ધૂંધળી તસવીરો સુધારવા માટે શ્રેષ્ઠ એપ
 
-બાળકો ક્યારેય શાંતિથી નથી બેઠા રહેતા, તેથી નરમ-ફોકસ અને કેમેરા હલચલવાળી તસવીરો અનિવાર્ય છે — Unblurry આ માટે બનાવવામાં આવી છે.
+બાળકો ક્યારેય શાંતિથી નથી બેઠા રહેતા, તેથી નરમ-ફોકસ અને કેમેરા હલચલવાળી તસવીરો અનિવાર્ય છે
 
 - ફોટો અને ઉપયોગિતા
 - મફત શરૂઆત

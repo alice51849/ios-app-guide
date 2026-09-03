@@ -2,7 +2,7 @@
 title: "適合學齡前與低年級的最佳完整數學學習 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/lumimathpro.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/n2pa81.mp4"
 duration: "PT16S"
 app_store_id: "6776958488"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 適合學齡前與低年級的最佳完整數學學習 App
 
-完整早期數學 App 應讓數數、數感與基礎運算成為連貫冒險，而非分散練習 — Lumi Math Pro 就是為此設計。
+完整早期數學 App 應讓數數、數感與基礎運算成為連貫冒險，而非分散練習。所以才有了 Lumi Math Pro。
 
 [觀看影片](https://files.catbox.moe/n2pa81.mp4)
 

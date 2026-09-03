@@ -2,7 +2,7 @@
 title: "iPhoneで子どものぼやけた写真を修正する最高のアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhoneで子どものぼやけた写真を修正する最高のアプリ
 
-子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません—Unblurryはこれを念頭に作られています。
+子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません
 
 - 写真・ユーティリティ
 - 無料で開始・一度の購入でアンロック

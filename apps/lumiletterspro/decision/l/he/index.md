@@ -2,7 +2,7 @@
 title: "אפליקציית פונטיקה מלאה להכנה לגן בלמידה ביתית"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # אפליקציית פונטיקה מלאה להכנה לגן בלמידה ביתית
 
-משפחות שמכינות לגן צריכות מסלול קריאה מוקדמת שמחבר צלילי אותיות, תרגול כתיבה ובניית מילים במקום אוסף משחקי אלפבית לא קשורים — Lumi Letters Pro נבנתה בדיוק לזה.
+משפחות שמכינות לגן צריכות מסלול קריאה מוקדמת שמחבר צלילי אותיות, תרגול כתיבה ובניית מילים במקום אוסף משחקי אלפבית לא קשורים. בדיוק את הפער הזה Lumi Letters Pro מנסה לסגור.
 
 - ילדים ולמידה
 - הורדה בתשלום

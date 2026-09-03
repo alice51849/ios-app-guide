@@ -2,7 +2,7 @@
 title: "bedste rejsebudget-app uden abonnement til iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste rejsebudget-app uden abonnement til iPhone
 
-På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat — G+Money er skabt til dette.
+På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat. Det er præcis det hul, G+Money skal lukke.
 
 - Penge & rejse
 - Betalt download

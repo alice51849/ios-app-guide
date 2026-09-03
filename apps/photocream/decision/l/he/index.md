@@ -2,7 +2,7 @@
 title: "עורך תמונות בסגנון פילם בתשלום חד-פעמי לטיולים באייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # עורך תמונות בסגנון פילם בתשלום חד-פעמי לטיולים באייפון
 
-יוצרי טיולים צריכים מראה פילם שניתן לשחזר, עם גרעיניות, הלציה ואופי צבע, מבלי להפוך כל יעד לפילטר שטוח — PhotoCream נבנתה בדיוק לזה.
+יוצרי טיולים צריכים מראה פילם שניתן לשחזר, עם גרעיניות, הלציה ואופי צבע, מבלי להפוך כל יעד לפילטר שטוח
 
 - צילום וכלי עזר
 - התחלה ללא תשלום

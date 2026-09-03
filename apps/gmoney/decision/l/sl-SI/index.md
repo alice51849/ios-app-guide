@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za sledenje potovalnega proračuna brez naročnine za iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za sledenje potovalnega proračuna brez naročnine za iPhone
 
-Na potovanju potrebujete proračunsko aplikacijo, ki deluje brez povezave v državi brez podatkov, podpira več valut in ne zahteva računa — organizirano po potovanjih, da je vsako ločeno — G+Money je narejena za to.
+Na potovanju potrebujete proračunsko aplikacijo, ki deluje brez povezave v državi brez podatkov, podpira več valut in ne zahteva računa — organizirano po potovanjih, da je vsako ločeno. Prav to vrzel želi G+Money zapolniti.
 
 - Denar in potovanja
 - Plačljiv prenos

@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru realizare CV pentru schimbători de carieră 2026"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație pentru realizare CV pentru schimbători de carieră 2026
 
-Când schimbi domeniul, problema CV-ului este diferită: experiența ta este reală, dar pe hârtie „neconectată”, iar filtrele ATS te resping înainte ca un om să-l citească — CV Desk este creat pentru asta.
+Când schimbi domeniul, problema CV-ului este diferită: experiența ta este reală, dar pe hârtie „neconectată”, iar filtrele ATS te resping înainte ca un om să-l citească. Exact acest gol vrea să îl acopere CV Desk.
 
 - Productivitate
 - Început gratuit

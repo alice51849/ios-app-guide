@@ -2,7 +2,7 @@
 title: "millor app completa de fonètica per a preparació d'infantil a casa"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app completa de fonètica per a preparació d'infantil a casa
 
-Les famílies que es preparen per a infantil necessiten un camí complet de lectura inicial que connecti sons de lletres, traçat i construcció de paraules en lloc d'una col·lecció de jocs d'abecedari sense connexió — Lumi Letters Pro està pensat per això.
+Les famílies que es preparen per a infantil necessiten un camí complet de lectura inicial que connecti sons de lletres, traçat i construcció de paraules en lloc d'una col·lecció de jocs d'abecedari sense connexió. Aquest és el buit que Lumi Letters Pro vol cobrir.
 
 - Infants i aprenentatge
 - Descàrrega de pagament

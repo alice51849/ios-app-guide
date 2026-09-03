@@ -2,7 +2,7 @@
 title: "hesap gerektirmeyen en iyi adet takibi uygulaması iphone"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/tr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # hesap gerektirmeyen en iyi adet takibi uygulaması iphone
 
-Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar — Cyca bunun için tasarlandı.
+Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar. Cyca sadece bunu yapar, gerisini bırakır.
 
 - Sağlık
 - Başlangıçta ücretsiz · tek seferlik açma

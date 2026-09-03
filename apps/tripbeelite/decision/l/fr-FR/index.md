@@ -2,7 +2,7 @@
 title: "meilleure application simple pour planifier un voyage sur iPhone"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/fr-FR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # meilleure application simple pour planifier un voyage sur iPhone
 
-Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est plus utile qu’une archive encombrée de tous les voyages que vous pourriez faire un jour — TripBee Lite est conçu pour cela.
+Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est plus utile qu’une archive encombrée de tous les voyages que vous pourriez faire un jour. Si ça vous parle, jetez un œil à TripBee Lite.
 
 - Voyage
 - Gratuit au départ · déblocage unique

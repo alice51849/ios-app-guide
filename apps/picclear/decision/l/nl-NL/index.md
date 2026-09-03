@@ -2,7 +2,7 @@
 title: "beste app om iPhone-opslag vrij te maken door dubbele foto’s te verwijderen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste app om iPhone-opslag vrij te maken door dubbele foto’s te verwijderen
 
-Om snel ruimte vrij te maken, richt je je eerst op de grootste winst: exacte dubbele foto’s, bijna identieke burstfoto’s, wazige afkeuringen en grote video’s — PicClear helpt je dit op je iPhone te doen.
+Om snel ruimte vrij te maken, richt je je eerst op de grootste winst: exacte dubbele foto’s, bijna identieke burstfoto’s, wazige afkeuringen en grote video’s
 
 - Foto & hulpmiddel
 - Gratis te starten · eenmalige ontgrendeling

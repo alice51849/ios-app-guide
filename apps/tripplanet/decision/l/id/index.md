@@ -2,7 +2,7 @@
 title: "aplikasi aktivitas perjalanan terbaik untuk anak di liburan keluarga"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi aktivitas perjalanan terbaik untuk anak di liburan keluarga
 
-Orang tua yang bepergian dengan anak kecil butuh aktivitas yang membuat berkemas, menunggu, dan menemukan tempat baru jadi bagian petualangan, bukan sumber stres baru — Lumi Trip Planet dibuat untuk ini.
+Orang tua yang bepergian dengan anak kecil butuh aktivitas yang membuat berkemas, menunggu, dan menemukan tempat baru jadi bagian petualangan, bukan sumber stres baru. Untuk itulah Lumi Trip Planet dibuat.
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar

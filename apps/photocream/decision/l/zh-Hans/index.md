@@ -2,7 +2,7 @@
 title: "iPhone旅行创作者一次付费胶片风格照片编辑器推荐"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone旅行创作者一次付费胶片风格照片编辑器推荐
 
-旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。
+旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜
 
 - 照片与工具
 - 免费开始使用 · 一次性解锁

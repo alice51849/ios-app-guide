@@ -2,7 +2,7 @@
 title: "beste white noise-app om in slaap te vallen zonder abonnement"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste white noise-app om in slaap te vallen zonder abonnement
 
-Voor slaap is een abonnement dat elke maand zeurt het tegenovergestelde van rustgevend — Sereno is hiervoor gemaakt.
+Voor slaap is een abonnement dat elke maand zeurt het tegenovergestelde van rustgevend. Herken je dat, kijk dan eens naar Sereno.
 
 - Slaap & focus
 - Gratis te starten · eenmalige ontgrendeling

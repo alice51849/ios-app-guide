@@ -2,7 +2,7 @@
 title: "aplikasi derau putih terbaik untuk membantu tidur tanpa langganan"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi derau putih terbaik untuk membantu tidur tanpa langganan
 
-Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenangan — Sereno dibuat untuk ini.
+Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenangan. Kalau terasa familier, coba lihat Sereno.
 
 - Tidur & fokus
 - Gratis untuk mulai · buka kunci sekali bayar

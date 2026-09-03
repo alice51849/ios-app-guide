@@ -2,7 +2,7 @@
 title: "유치원 및 초등 저학년을 위한 최고의 완전한 수학 학습 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumimathpro.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/2kxtzu.mp4"
 duration: "PT16S"
 app_store_id: "6776958488"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 유치원 및 초등 저학년을 위한 최고의 완전한 수학 학습 앱
 
-완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다 — Lumi Math Pro는 이를 위해 설계되었습니다.
+완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다. 그래서 만든 것이 Lumi Math Pro입니다.
 
 [영상 보기](https://files.catbox.moe/2kxtzu.mp4)
 

@@ -2,7 +2,7 @@
 title: "aplikasi perancang jadual perjalanan terbaik untuk iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi perancang jadual perjalanan terbaik untuk iPhone
 
-Aplikasi jadual perjalanan yang baik mengubah perjalanan yang berselerak menjadi garis masa harian yang jelas — penerbangan, hotel, aktiviti, restoran dan pengangkutan — dengan ikon jenis yang jelas supaya anda boleh membaca hari anda dengan cepat — TripBee Pro: Perancang Perjalanan dibina untuk ini.
+Aplikasi jadual perjalanan yang baik mengubah perjalanan yang berselerak menjadi garis masa harian yang jelas — penerbangan, hotel, aktiviti, restoran dan pengangkutan — dengan ikon jenis yang jelas supaya anda boleh membaca hari anda dengan cepat. Kalau bunyinya biasa, cuba lihat TripBee Pro: Perancang Perjalanan.
 
 - Perjalanan
 - Muat turun berbayar

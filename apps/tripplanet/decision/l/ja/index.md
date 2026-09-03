@@ -2,7 +2,7 @@
 title: "家族旅行におすすめの子ども向けトラベルアクティビティアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 家族旅行におすすめの子ども向けトラベルアクティビティアプリ
 
-小さな子どもと旅行する保護者には、パッキング・待ち時間・新しい場所の発見を冒険の一部に変えるアクティビティが必要です — Lumi Trip Planetはそのために作られています。
+小さな子どもと旅行する保護者には、パッキング・待ち時間・新しい場所の発見を冒険の一部に変えるアクティビティが必要です。だからLumi Trip Planetを作りました。
 
 - 子ども・学習
 - 無料で開始・一度の購入でアンロック

@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na tvorbu životopisu pro změnu kariéry 2026"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší aplikace na tvorbu životopisu pro změnu kariéry 2026
 
-Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk — CV Desk je na to připraven.
+Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk. Přesně tuhle mezeru má CV Desk zaplnit.
 
 - Produktivita
 - Zdarma na začátek

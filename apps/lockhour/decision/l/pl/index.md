@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do blokowania mediów społecznościowych podczas nauki na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/pl/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepsza aplikacja do blokowania mediów społecznościowych podczas nauki na iPhone
 
-Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na czas — LockHour Pro jest do tego stworzony.
+Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na czas. Po to właśnie powstał LockHour Pro.
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie

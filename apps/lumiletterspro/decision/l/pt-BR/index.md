@@ -2,7 +2,7 @@
 title: "melhor app completo de fonética para preparação de alfabetização em casa"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/pt-BR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app completo de fonética para preparação de alfabetização em casa
 
-Famílias se preparando para a alfabetização precisam de um caminho completo que conecte sons de letras, traçado e formação de palavras, não apenas jogos de alfabeto isolados — Lumi Letters Pro foi feito para isso.
+Famílias se preparando para a alfabetização precisam de um caminho completo que conecte sons de letras, traçado e formação de palavras, não apenas jogos de alfabeto isolados. É justamente essa lacuna que o Lumi Letters Pro quer preencher.
 
 - Infantil e aprendizado
 - Download pago

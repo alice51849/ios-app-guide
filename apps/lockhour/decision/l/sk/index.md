@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na blokovanie sociálnych sietí počas štúdia pre iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/sk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepšia aplikácia na blokovanie sociálnych sietí počas štúdia pre iPhone
 
-Počas skúšok nie je vôľa nástrojom — tvrdý časový blok je — LockHour Pro je na to navrhnutý.
+Počas skúšok nie je vôľa nástrojom — tvrdý časový blok je. Práve preto LockHour Pro vznikol.
 
 - Produktivita
 - Zadarmo na začiatok

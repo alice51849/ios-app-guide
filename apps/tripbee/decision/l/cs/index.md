@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na plánování itineráře cesty pro iPhone"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší aplikace na plánování itineráře cesty pro iPhone
 
-Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled — TripBee Pro: Plánovač cest je na to stavěný.
+Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled. Jestli to znáte, mrkněte na TripBee Pro: Plánovač cest.
 
 - Cestování
 - Placené stažení

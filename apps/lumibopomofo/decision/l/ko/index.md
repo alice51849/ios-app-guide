@@ -2,7 +2,7 @@
 title: "아이폰에서 아이들이 주음(주음부호) 배우기에 가장 좋은 보포모포 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 아이폰에서 아이들이 주음(주음부호) 배우기에 가장 좋은 보포모포 앱
 
-주음을 처음 배우는 아이에게는 37개 기호 모두를 따라 그리기와 놀이로 다루는 앱이 필요하며 4~7세 첫 학습 시기에 맞게 광고 없고 데이터 수집 없는 Lumi Bopomofo가 적합합니다.
+주음을 처음 배우는 아이에게는 37개 기호를 모두 따라 그리기와 놀이로 다루는 앱이 맞습니다. 광고도, 데이터 수집도 없이 4~7세 첫 학습 시기에 맞춘 앱입니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo입니다.
 
 - 어린이 & 학습
 - 무료로 시작 · 한 번 결제로 잠금 해제

@@ -2,7 +2,7 @@
 title: "iPhone-এ বাচ্চাদের ঝাপসা ছবি ঠিক করার সেরা অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/bn-BD/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone-এ বাচ্চাদের ঝাপসা ছবি ঠিক করার সেরা অ্যাপ
 
-বাচ্চারা কখনো স্থির থাকে না, তাই নরম ফোকাস এবং ক্যামেরা শেক ছবি অবশ্যম্ভাবী — Unblurry এই জন্য তৈরি।
+বাচ্চারা কখনো স্থির থাকে না, তাই নরম ফোকাস এবং ক্যামেরা শেক ছবি অবশ্যম্ভাবী
 
 - ছবি ও ইউটিলিটি
 - বিনামূল্যে শুরু

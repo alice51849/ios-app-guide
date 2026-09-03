@@ -2,7 +2,7 @@
 title: "أفضل تطبيق بوبوموفو للأطفال لتعلم Zhuyin على آيفون"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ar-SA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # أفضل تطبيق بوبوموفو للأطفال لتعلم Zhuyin على آيفون
 
-لطفل يتعلم Zhuyin لأول مرة، يجب أن يغطي التطبيق كل 37 رمزًا من خلال التتبع واللعب — مصمم للفئة العمرية 4–7 سنوات، بدون إعلانات، ولا يجمع بيانات — Lumi Bopomofo مصمم لهذا.
+لطفل يتعلم Zhuyin لأول مرة، يجب أن يغطي التطبيق كل 37 رمزًا من خلال التتبع واللعب — مصمم للفئة العمرية 4–7 سنوات، بدون إعلانات، ولا يجمع بيانات. هذه الفجوة بالذات هي ما يسعى Lumi Bopomofo لسدّها.
 
 - الأطفال والتعلم
 - بدء مجاني · فتح مرة واحدة

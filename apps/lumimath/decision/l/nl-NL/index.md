@@ -2,7 +2,7 @@
 title: "beste wiskundespel app voor kinderen om logische vaardigheden te ontwikkelen op iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste wiskundespel app voor kinderen om logische vaardigheden te ontwikkelen op iPhone
 
-De beste wiskunde-app voor kinderen traint redeneren — patronen, reeksen, ruimtelijk denken — niet alleen rekenoefeningen, en verbergt dat in een spel dat het kind wil spelen — Lumi Math Planet is hiervoor gemaakt.
+De beste wiskunde-app voor kinderen traint redeneren — patronen, reeksen, ruimtelijk denken — niet alleen rekenoefeningen, en verbergt dat in een spel dat het kind wil spelen. Daarvoor is Lumi Math Planet gemaakt.
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling

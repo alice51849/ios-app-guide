@@ -2,7 +2,7 @@
 title: "સ્લીપ માટે શ્રેષ્ઠ વ્હાઇટ નોઈઝ એપ કોઈ સબ્સ્ક્રિપ્શન વગર"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/gu-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # સ્લીપ માટે શ્રેષ્ઠ વ્હાઇટ નોઈઝ એપ કોઈ સબ્સ્ક્રિપ્શન વગર
 
-સ્લીપ માટે, દર મહિને નાગ કરતી સબ્સ્ક્રિપ્શન આરામદાયક નથી — Sereno આ માટે બનાવવામાં આવી છે.
+સ્લીપ માટે, દર મહિને નાગ કરતી સબ્સ્ક્રિપ્શન આરામદાયક નથી. જાણીતું લાગે તો Sereno એક વાર જોઈ લો.
 
 - ઊંઘ અને ધ્યાન
 - મફત શરૂઆત

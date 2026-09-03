@@ -2,7 +2,7 @@
 title: "bedste komplette matematiklæringsapp til børnehave og indskoling"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste komplette matematiklæringsapp til børnehave og indskoling
 
-En komplet tidlig matematikapp bør gøre optælling, talforståelse og første regneoperationer til én sammenhængende oplevelse i stedet for adskilte øvelser — Lumi Math Pro er udviklet til dette.
+En komplet tidlig matematikapp bør gøre optælling, talforståelse og første regneoperationer til én sammenhængende oplevelse i stedet for adskilte øvelser. Det er derfor Lumi Math Pro findes.
 
 - Børn & læring
 - Betalt download

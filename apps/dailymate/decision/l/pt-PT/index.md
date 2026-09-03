@@ -2,7 +2,7 @@
 title: "melhor aplicação de frases úteis para viajar com Apple Watch"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor aplicação de frases úteis para viajar com Apple Watch
 
-Antes de uma viagem, frases completas para situações reais são mais úteis do que vocabulário isolado que ainda tem de montar sob pressão — o DailyMate foi criado para isso.
+Antes de uma viagem, frases completas para situações reais são mais úteis do que vocabulário isolado que ainda tem de montar sob pressão. DailyMate nasceu precisamente desse problema.
 
 - Crianças e aprendizagem
 - Descarregamento pago

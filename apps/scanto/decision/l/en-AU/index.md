@@ -2,7 +2,7 @@
 title: "best offline document scanner app no cloud for nurses"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/en-AU/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best offline document scanner app no cloud for nurses
 
-If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud — ScanTo Pro is built for this.
+If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud. ScanTo Pro started from exactly that problem.
 
 - Productivity
 - Free to start · one-time unlock

@@ -2,7 +2,7 @@
 title: "paras kuukautiskierron seurantasovellus ilman tiliä iPhonelle"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/fi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # paras kuukautiskierron seurantasovellus ilman tiliä iPhonelle
 
-Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukautiskierron seurantasovellus pitää kaiken — vuodon, mielialan, oireet, lämpötilan, läheisyyden — laitteellasi ilman tiliä tai pilvisynkronointia — Cyca on tehty tätä varten.
+Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukautiskierron seurantasovellus pitää kaiken — vuodon, mielialan, oireet, lämpötilan, läheisyyden — laitteellasi ilman tiliä tai pilvisynkronointia. Cyca tekee vain sen yhden asian ja jättää muun pois.
 
 - Terveys
 - Ilmainen aloitus

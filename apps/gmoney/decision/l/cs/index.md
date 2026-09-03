@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na sledování cestovního rozpočtu bez předplatného pro iPhone"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší aplikace na sledování cestovního rozpočtu bez předplatného pro iPhone
 
-Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná — G+Money je na to navržena.
+Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná. Přesně tuhle mezeru má G+Money zaplnit.
 
 - Finance a cestování
 - Placené stažení

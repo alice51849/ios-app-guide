@@ -2,7 +2,7 @@
 title: "適合通勤族搭配 Apple Watch 的最佳單字學習 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/zh-Hant/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 適合通勤族搭配 Apple Watch 的最佳單字學習 App
 
-通勤族需要能利用零碎時間練單字，不需完整課程、帳號或每次都拿手機複習 — Wordmate：學習 44 種語言就是為此設計。
+通勤族要的是零碎時間就能背幾個字，不必上完整課程、不必註冊帳號，也不必每次都得把手機拿出來複習。Wordmate：學習 44 種語言 就是從這個問題開始做的。
 
 - 學習
 - 付費下載

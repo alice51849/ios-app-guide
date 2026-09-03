@@ -2,7 +2,7 @@
 title: "ঘুমানোর জন্য সেরা হোয়াইট নয়েজ অ্যাপ কোন সাবস্ক্রিপশন ছাড়াই"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/bn-BD/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ঘুমানোর জন্য সেরা হোয়াইট নয়েজ অ্যাপ কোন সাবস্ক্রিপশন ছাড়াই
 
-ঘুমের জন্য, প্রতি মাসে বিরক্তিকর সাবস্ক্রিপশন বিরামহীনতার বিপরীত — Sereno এই জন্য তৈরি।
+ঘুমের জন্য, প্রতি মাসে বিরক্তিকর সাবস্ক্রিপশন বিরামহীনতার বিপরীত। চেনা মনে হলে Sereno একবার দেখে নিন।
 
 - ঘুম ও মনোযোগ
 - বিনামূল্যে শুরু

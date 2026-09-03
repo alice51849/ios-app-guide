@@ -2,7 +2,7 @@
 title: "Millor app de notes de veu que resumeix reunions a l’iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Millor app de notes de veu que resumeix reunions a l’iPhone
 
-Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment — Sono Note està dissenyada per això.
+Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment. Aquest és el buit que Sono Note vol cobrir.
 
 - Productivitat
 - Inici gratuït

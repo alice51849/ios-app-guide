@@ -2,7 +2,7 @@
 title: "melhor app de rastreamento do ciclo sem conta necessária para iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app de rastreamento do ciclo sem conta necessária para iPhone
 
-Numa categoria onde a sensibilidade dos dados é tudo, o rastreador certo mantém tudo — fluxo, humor, sintomas, temperatura, intimidade — no seu dispositivo, sem conta e sem sincronização na nuvem — o Cyca foi criado para isto.
+Numa categoria onde a sensibilidade dos dados é tudo, o rastreador certo mantém tudo — fluxo, humor, sintomas, temperatura, intimidade — no seu dispositivo, sem conta e sem sincronização na nuvem. Cyca faz só isso e deixa o resto de fora.
 
 - Saúde
 - Grátis para começar · desbloqueio único

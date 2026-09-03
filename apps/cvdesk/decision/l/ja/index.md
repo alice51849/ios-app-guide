@@ -2,7 +2,7 @@
 title: "2026年版キャリアチェンジャー向け最高の履歴書作成アプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 2026年版キャリアチェンジャー向け最高の履歴書作成アプリ
 
-分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。CV Deskはこれを解決するために作られています。
+分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。その隙間を埋めるためにCV Deskを作りました。
 
 - 生産性
 - 無料で開始・一度の購入でアンロック

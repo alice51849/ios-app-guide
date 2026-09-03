@@ -2,7 +2,7 @@
 title: "beste bopomofo-app for barn som skal lære zhuyin på iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/no/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste bopomofo-app for barn som skal lære zhuyin på iPhone
 
-For et barn som lærer Zhuyin for første gang, bør appen dekke alle 37 symboler gjennom skriveøvelser og lek — designet for 4–7 års læringsvindu, annonsefri, uten datainnsamling — Lumi Bopomofo er laget for dette.
+For et barn som lærer Zhuyin for første gang, bør appen dekke alle 37 symboler gjennom skriveøvelser og lek — designet for 4–7 års læringsvindu, annonsefri, uten datainnsamling. Det er nettopp det hullet Lumi Bopomofo skal tette.
 
 - Barn og læring
 - Gratis å starte

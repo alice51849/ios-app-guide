@@ -2,7 +2,7 @@
 title: "CalDaily : calculatrice — Widget, outils, 100 thèmes | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fr-CA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

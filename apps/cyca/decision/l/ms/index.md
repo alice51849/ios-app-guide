@@ -2,7 +2,7 @@
 title: "aplikasi penjejak haid terbaik tanpa akaun diperlukan iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi penjejak haid terbaik tanpa akaun diperlukan iPhone
 
-Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang betul menyimpan semuanya — aliran, mood, simptom, suhu, keintiman — di dalam peranti anda, tanpa akaun dan tanpa penyelarasan awan — Cyca dibina untuk ini.
+Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang betul menyimpan semuanya — aliran, mood, simptom, suhu, keintiman — di dalam peranti anda, tanpa akaun dan tanpa penyelarasan awan. Cyca buat satu perkara itu sahaja dan tinggalkan yang lain.
 
 - Kesihatan
 - Percuma untuk bermula · buka kunci sekali sahaja

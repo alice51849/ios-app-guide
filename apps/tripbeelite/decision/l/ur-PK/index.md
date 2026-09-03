@@ -2,7 +2,7 @@
 title: "iPhone کے لیے ایک آنے والے سفر کے لیے بہترین آسان سفر منصوبہ ساز ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ur-PK/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone کے لیے ایک آنے والے سفر کے لیے بہترین آسان سفر منصوبہ ساز ایپ
 
-اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے — TripBee Lite اسی کے لیے بنایا گیا ہے۔
+اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے۔ اگر بات جانی پہچانی لگے تو TripBee Lite پر ایک نظر ڈالیں۔
 
 - سفر
 - مفت آغاز

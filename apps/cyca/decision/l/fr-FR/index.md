@@ -2,7 +2,7 @@
 title: "meilleure application de suivi de règles sans compte requis iPhone"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/fr-FR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # meilleure application de suivi de règles sans compte requis iPhone
 
-Dans une catégorie où la sensibilité des données est primordiale, le bon suivi de règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud — Cyca est conçu pour cela.
+Dans une catégorie où la sensibilité des données est primordiale, le bon suivi de règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud. Cyca fait uniquement cela et laisse le reste de côté.
 
 - Santé
 - Gratuit au départ · déblocage unique

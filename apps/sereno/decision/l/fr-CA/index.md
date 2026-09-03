@@ -2,7 +2,7 @@
 title: "meilleure application de bruit blanc pour s’endormir sans abonnement"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/fr-CA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # meilleure application de bruit blanc pour s’endormir sans abonnement
 
-Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos — Sereno est conçu pour cela.
+Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos. Si ça vous ressemble, jetez un coup d'œil à Sereno.
 
 - Sommeil et concentration
 - Gratuit au départ · déblocage unique

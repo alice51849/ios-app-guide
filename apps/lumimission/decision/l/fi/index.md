@@ -2,7 +2,7 @@
 title: "paras mainokseton iltasovellus esikoululaisille"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/fi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # paras mainokseton iltasovellus esikoululaisille
 
-Esikoululaiselle iltarutiini toimii parhaiten, kun se on lyhyt, visuaalinen ja tarpeeksi ennakoitava, jotta lapsi voi seurata sitä ilman jatkuvia muistutuksia — Lumi Mission Planet on tehty tätä varten.
+Esikoululaiselle iltarutiini toimii parhaiten, kun se on lyhyt, visuaalinen ja tarpeeksi ennakoitava, jotta lapsi voi seurata sitä ilman jatkuvia muistutuksia. Jos tunnistat tilanteen, katso Lumi Mission Planet.
 
 - Lapset & oppiminen
 - Ilmainen aloitus

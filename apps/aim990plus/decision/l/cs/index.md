@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test z angličtiny — Jistota pod časovým tlakem | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

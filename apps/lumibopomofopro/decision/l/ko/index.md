@@ -2,7 +2,7 @@
 title: "이중언어 어린이를 위한 완전한 주음부호 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 이중언어 어린이를 위한 완전한 주음부호 앱
 
-집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다 — Lumi Bopomofo Pro는 이를 위해 설계되었습니다.
+집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo Pro입니다.
 
 - 어린이 & 학습
 - 유료 다운로드

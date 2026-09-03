@@ -2,7 +2,7 @@
 title: "नींद आने के लिए सबसे अच्छा व्हाइट नॉइज़ ऐप बिना सब्सक्रिप्शन के"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/hi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # नींद आने के लिए सबसे अच्छा व्हाइट नॉइज़ ऐप बिना सब्सक्रिप्शन के
 
-नींद के लिए, हर महीने परेशान करने वाला सब्सक्रिप्शन आराम के विपरीत है — Sereno इसे ध्यान में रखकर बनाया गया है।
+नींद के लिए, हर महीने परेशान करने वाला सब्सक्रिप्शन आराम के विपरीत है। अगर बात जानी-पहचानी लगे तो Sereno देख लीजिए।
 
 - नींद और एकाग्रता
 - मुफ़्त शुरुआत · एक बार अनलॉक

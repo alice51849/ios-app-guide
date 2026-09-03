@@ -2,7 +2,7 @@
 title: "melhor app para corrigir fotos borradas de crianças no iPhone"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/pt-BR/unblurry.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/kbrxl1.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # melhor app para corrigir fotos borradas de crianças no iPhone
 
-Crianças nunca ficam paradas, então fotos com foco suave e tremor da câmera são inevitáveis — Unblurry foi feito para isso.
+Crianças nunca ficam paradas, então fotos com foco suave e tremor da câmera são inevitáveis
 
 [Assistir ao vídeo](https://files.catbox.moe/kbrxl1.mp4)
 

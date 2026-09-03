@@ -2,7 +2,7 @@
 title: "Okul öncesi ve ilk sınıflar için en iyi tam matematik öğrenme uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/tr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Okul öncesi ve ilk sınıflar için en iyi tam matematik öğrenme uygulaması
 
-Tam bir erken matematik uygulaması, sayma, sayı algısı ve ilk işlemleri birbirine bağlı bir macera gibi hissettirmeli — Lumi Math Pro bunun için tasarlandı.
+Tam bir erken matematik uygulaması, sayma, sayı algısı ve ilk işlemleri birbirine bağlı bir macera gibi hissettirmeli. İşte Lumi Math Pro bu yüzden ortaya çıktı.
 
 - Çocuklar & öğrenme
 - Ücretli indirme

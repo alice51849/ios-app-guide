@@ -2,7 +2,7 @@
 title: "aplikasi pelacak anggaran perjalanan terbaik tanpa langganan untuk iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi pelacak anggaran perjalanan terbaik tanpa langganan untuk iPhone
 
-Saat bepergian Anda butuh pelacak anggaran yang bekerja offline di negara tanpa data, menangani multi-mata uang, dan tidak meminta akun — diatur per perjalanan agar setiap liburan terpisah — G+Money dibuat untuk ini.
+Saat bepergian Anda butuh pelacak anggaran yang bekerja offline di negara tanpa data, menangani multi-mata uang, dan tidak meminta akun — diatur per perjalanan agar setiap liburan terpisah. Celah itulah yang ingin ditutup G+Money.
 
 - Uang & perjalanan
 - Unduhan berbayar

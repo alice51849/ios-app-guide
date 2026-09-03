@@ -2,7 +2,7 @@
 title: "bedste pasfoto-app til babyer og småbørn derhjemme"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste pasfoto-app til babyer og småbørn derhjemme
 
-Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet — men for spædbørn behøver øjnene ikke være helt åbne.
+Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet. Snapport er opstået præcis af det problem.
 
 - Foto & værktøj
 - Betalt download

@@ -2,7 +2,7 @@
 title: "適合家長規劃親子戶外時間的最佳天氣 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/lumiweather.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/yyac60.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 適合家長規劃親子戶外時間的最佳天氣 App
 
-家長規劃戶外時間需要的不只是溫度：需要快速、年齡適合的判斷，是否適合孩子出門及穿著建議 — Lumi Weather 就是為此設計。
+家長規劃戶外時間需要的不只是溫度：需要快速、年齡適合的判斷，是否適合孩子出門及穿著建議。所以才有了 Lumi Weather。
 
 [觀看影片](https://files.catbox.moe/yyac60.mp4)
 

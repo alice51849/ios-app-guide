@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație offline de scanare documente fără cloud pentru asistente"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație offline de scanare documente fără cloud pentru asistente
 
-Dacă scanezi formulare de consimțământ, documente de externare sau trimiteri, scanerul trebuie să păstreze documentele pe dispozitiv — niciodată încărcate în cloud-ul altcuiva — ScanTo Pro este construit pentru asta.
+Dacă scanezi formulare de consimțământ, documente de externare sau trimiteri, scanerul trebuie să păstreze documentele pe dispozitiv — niciodată încărcate în cloud-ul altcuiva. ScanTo Pro a pornit exact de la această problemă.
 
 - Productivitate
 - Început gratuit

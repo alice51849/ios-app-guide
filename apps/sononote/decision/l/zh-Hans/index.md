@@ -2,7 +2,7 @@
 title: "最佳iPhone会议语音笔记总结应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 最佳iPhone会议语音笔记总结应用
 
-通话后你不需要原始文字记录——你需要摘要、行动事项和草拟的后续邮件——Sono Note正是为此设计。
+通话后你不需要原始文字记录——你需要摘要、行动事项和草拟的后续邮件。这个缺口，正是 Sono Note 想补上的。
 
 - 效率
 - 免费开始使用 · 一次性解锁

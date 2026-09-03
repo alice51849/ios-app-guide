@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na hlasové poznámky, která shrnuje schůzky na iPhonu"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší aplikace na hlasové poznámky, která shrnuje schůzky na iPhonu
 
-Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu — Sono Note je na to stavěná.
+Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu. Přesně tuhle mezeru má Sono Note zaplnit.
 
 - Produktivita
 - Zdarma na začátek

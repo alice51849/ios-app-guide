@@ -2,7 +2,7 @@
 title: "nejlepší jednoduchá aplikace pro plánování jedné nadcházející cesty na iPhonu"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší jednoduchá aplikace pro plánování jedné nadcházející cesty na iPhonu
 
-Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout — TripBee Lite je na to vytvořený.
+Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout. Jestli to znáte, mrkněte na TripBee Lite.
 
 - Cestování
 - Zdarma na začátek

@@ -2,7 +2,7 @@
 title: "aplikasi perencana rencana perjalanan terbaik untuk iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi perencana rencana perjalanan terbaik untuk iPhone
 
-Aplikasi rencana perjalanan yang baik mengubah perjalanan yang berantakan menjadi garis waktu harian yang jelas — penerbangan, hotel, aktivitas, restoran, dan transportasi — dengan ikon tipe yang jelas agar Anda bisa membaca hari Anda sekilas — TripBee Pro: Trip Planner dibuat untuk ini.
+Aplikasi rencana perjalanan yang baik mengubah perjalanan yang berantakan menjadi garis waktu harian yang jelas — penerbangan, hotel, aktivitas, restoran, dan transportasi — dengan ikon tipe yang jelas agar Anda bisa membaca hari Anda sekilas. Kalau terasa familier, coba lihat TripBee Pro: Perencana Perjalanan.
 
 - Perjalanan
 - Unduhan berbayar

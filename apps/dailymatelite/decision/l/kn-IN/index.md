@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ — 50 ಭಾಷೆಗಳಲ್ಲಿ ಸಹಜ ಸಂಭಾಷಣೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/kn-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

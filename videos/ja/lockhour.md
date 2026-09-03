@@ -2,7 +2,7 @@
 title: "勉強中にソーシャルメディアをブロックする最高のアプリiPhone向け"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/lockhour.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/ak7xda.mp4"
 duration: "PT16S"
 app_store_id: "6780107485"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 勉強中にソーシャルメディアをブロックする最高のアプリiPhone向け
 
-試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。
+試験中は意志力ではなく、強制的な時間制限ブロックが必要です。だからLockHour Proを作りました。
 
 [動画を見る](https://files.catbox.moe/ak7xda.mp4)
 

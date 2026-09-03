@@ -2,7 +2,7 @@
 title: "beste reisactiviteiten-app voor kinderen op gezinsreizen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste reisactiviteiten-app voor kinderen op gezinsreizen
 
-Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wachten en een nieuwe plek ontdekken tot onderdeel van het avontuur maken in plaats van extra stress — Lumi Trip Planet is hiervoor gemaakt.
+Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wachten en een nieuwe plek ontdekken tot onderdeel van het avontuur maken in plaats van extra stress. Daarvoor is Lumi Trip Planet gemaakt.
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling

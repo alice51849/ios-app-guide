@@ -2,7 +2,7 @@
 title: "แอปบันทึกเสียงที่สรุปการประชุมบน iPhone ที่ดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/th/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # แอปบันทึกเสียงที่สรุปการประชุมบน iPhone ที่ดีที่สุด
 
-หลังการโทร คุณไม่ต้องการแค่ถอดเสียงดิบ — คุณต้องการสรุป รายการงาน และร่างติดตามผล — Sono Note ถูกสร้างมาเพื่อสิ่งนี้
+หลังการโทร คุณไม่ต้องการแค่ถอดเสียงดิบ — คุณต้องการสรุป รายการงาน และร่างติดตามผล ช่องว่างตรงนี้แหละที่ Sono Note อยากอุด
 
 - เพิ่มประสิทธิภาพ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว

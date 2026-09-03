@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na sledovanie menštruácie bez potreby účtu pre iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/sk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepšia aplikácia na sledovanie menštruácie bez potreby účtu pre iPhone
 
-V kategórii, kde je citlivosť údajov kľúčová, správna aplikácia na sledovanie menštruácie uchováva všetko — prietok, náladu, príznaky, teplotu, intimitu — vo vašom zariadení, bez účtu a synchronizácie v cloude — Cyca je na to stvorená.
+V kategórii, kde je citlivosť údajov kľúčová, správna aplikácia na sledovanie menštruácie uchováva všetko — prietok, náladu, príznaky, teplotu, intimitu — vo vašom zariadení, bez účtu a synchronizácie v cloude. Cyca robí len toto jedno a zvyšok vynecháva.
 
 - Zdravie
 - Zadarmo na začiatok

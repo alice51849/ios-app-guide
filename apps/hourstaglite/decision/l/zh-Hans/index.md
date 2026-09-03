@@ -2,7 +2,7 @@
 title: "HoursTag Lite：买前先算工时 — 看见每样东西的真实代价 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

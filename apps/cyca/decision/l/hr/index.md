@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za praćenje menstruacije bez potrebe za računom za iPhone"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja aplikacija za praćenje menstruacije bez potrebe za računom za iPhone
 
-U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku — Cyca je stvorena za to.
+U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku. Cyca radi samo to jedno i ostalo izostavlja.
 
 - Zdravlje
 - Besplatno za početak

@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće
 
-Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna — no za dojenčad oči ne moraju biti potpuno otvorene.
+Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna. Snapport je nastao točno iz tog problema.
 
 - Fotografija i pomoćni alati
 - Plaćeno preuzimanje

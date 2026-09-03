@@ -2,7 +2,7 @@
 title: "집에서 아기와 유아용 여권 사진 앱 추천"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/snapport.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/z8apkg.mp4"
 duration: "PT16S"
 app_store_id: "6780575828"

@@ -2,7 +2,7 @@
 title: "最佳iPhone儿童模糊照片修复应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hans/unblurry.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/zsq203.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 最佳iPhone儿童模糊照片修复应用
 
-孩子总是不安分，轻微虚焦和抖动照片不可避免——Unblurry正是为此设计。
+孩子总是不安分，轻微虚焦和抖动照片不可避免
 
 [观看视频](https://files.catbox.moe/zsq203.mp4)
 

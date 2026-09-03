@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za bijeli šum za uspavljivanje bez pretplate"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja aplikacija za bijeli šum za uspavljivanje bez pretplate
 
-Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Sereno je stvoren za to.
+Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora. Ako vam to zvuči poznato, pogledajte Sereno.
 
 - Spavanje i fokus
 - Besplatno za početak

@@ -2,7 +2,7 @@
 title: "サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ
 
-睡眠のために毎月課金を催促されるサブスクリプションは安らぎの対極です—Serenoはこれを念頭に作られています。
+睡眠のために毎月課金を催促されるサブスクリプションは安らぎの対極です。心当たりがあるなら、Serenoを試してみてください。
 
 - 睡眠・集中
 - 無料で開始・一度の購入でアンロック

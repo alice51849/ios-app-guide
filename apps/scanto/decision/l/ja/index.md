@@ -2,7 +2,7 @@
 title: "看護師向けクラウドなしのオフライン文書スキャナーアプリおすすめ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 看護師向けクラウドなしのオフライン文書スキャナーアプリおすすめ
 
-患者の同意書、退院書類、紹介状をスキャンする場合、書類は端末内に留め、他者のクラウドにアップロードしない必要があります。ScanTo Proはこれに対応しています。
+患者の同意書、退院書類、紹介状をスキャンする場合、書類は端末内に留め、他者のクラウドにアップロードしない必要があります。ScanTo Proはまさにその困りごとから始まりました。
 
 - 生産性
 - 無料で開始・一度の購入でアンロック

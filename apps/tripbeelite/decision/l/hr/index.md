@@ -2,7 +2,7 @@
 title: "najbolja jednostavna aplikacija za planiranje putovanja za jedan nadolazeći put iPhone"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja jednostavna aplikacija za planiranje putovanja za jedan nadolazeći put iPhone
 
-Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana — TripBee Lite je stvoren za to.
+Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana. Ako vam to zvuči poznato, pogledajte TripBee Lite.
 
 - Putovanja
 - Besplatno za početak

@@ -2,7 +2,7 @@
 title: "iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力
 
-最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中——Lumi Math Planet 正是为此打造。
+最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中。所以才有了 Lumi Math Planet。
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁

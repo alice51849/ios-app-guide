@@ -2,7 +2,7 @@
 title: "Beste App zur Verbesserung unscharfer Kinderfotos auf dem iPhone"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/de-DE/unblurry.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/m4nly0.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # Beste App zur Verbesserung unscharfer Kinderfotos auf dem iPhone
 
-Kinder halten nie still, daher sind leicht unscharfe und verwackelte Fotos unvermeidlich – Unblurry ist genau dafür gemacht.
+Kinder halten nie still, daher sind leicht unscharfe und verwackelte Fotos unvermeidlich
 
 [Video ansehen](https://files.catbox.moe/m4nly0.mp4)
 

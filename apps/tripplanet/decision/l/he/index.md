@@ -2,7 +2,7 @@
 title: "אפליקציית פעילויות נסיעה לילדים בטיולי משפחה"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # אפליקציית פעילויות נסיעה לילדים בטיולי משפחה
 
-הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ — Lumi Trip Planet נבנתה בדיוק לזה.
+הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ. בשביל זה Lumi Trip Planet נבנה.
 
 - ילדים ולמידה
 - התחלה ללא תשלום

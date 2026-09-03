@@ -2,7 +2,7 @@
 title: "iPhone पर बच्चों की धुंधली तस्वीरें ठीक करने के लिए सबसे अच्छा ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/hi/unblurry.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/oiiwl3.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # iPhone पर बच्चों की धुंधली तस्वीरें ठीक करने के लिए सबसे अच्छा ऐप
 
-बच्चे कभी स्थिर नहीं रहते, इसलिए नरम फोकस और कैमरा हिलना आम है — Unblurry इसे ध्यान में रखकर बनाया गया है।
+बच्चे कभी स्थिर नहीं रहते, इसलिए नरम फोकस और कैमरा हिलना आम है
 
 [वीडियो देखें](https://files.catbox.moe/oiiwl3.mp4)
 

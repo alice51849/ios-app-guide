@@ -2,7 +2,7 @@
 title: "millor app bopomofo per nens per aprendre zhuyin a l’iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app bopomofo per nens per aprendre zhuyin a l’iPhone
 
-Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades — Lumi Bopomofo està feta per això.
+Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades. Aquest és el buit que Lumi Bopomofo vol cobrir.
 
 - Infants i aprenentatge
 - Inici gratuït

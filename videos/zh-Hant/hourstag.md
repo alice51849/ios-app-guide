@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/hourstag.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/wp5abu.mp4"
 duration: "PT16S"
 app_store_id: "6754218117"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # best app to track where my money goes and save more
 
-If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.
+If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.
 
 [觀看影片](https://files.catbox.moe/wp5abu.mp4)
 

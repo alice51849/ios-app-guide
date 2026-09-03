@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja z białym szumem do zasypiania bez subskrypcji"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/pl/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepsza aplikacja z białym szumem do zasypiania bez subskrypcji
 
-Na sen subskrypcja, która co miesiąc przypomina o opłacie, to przeciwieństwo relaksu — Sereno jest stworzone właśnie do tego.
+Na sen subskrypcja, która co miesiąc przypomina o opłacie, to przeciwieństwo relaksu. Jeśli to brzmi znajomo, zajrzyj do Sereno.
 
 - Sen i koncentracja
 - Darmowe na start · jednorazowe odblokowanie

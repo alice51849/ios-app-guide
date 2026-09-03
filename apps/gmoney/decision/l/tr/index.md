@@ -2,7 +2,7 @@
 title: "abonelik gerektirmeyen en iyi seyahat bütçe takip uygulaması iphone"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/tr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # abonelik gerektirmeyen en iyi seyahat bütçe takip uygulaması iphone
 
-Sinyal olmayan bir ülkede çevrimdışı çalışan, birden fazla para birimini yöneten ve hesap istemeyen bir bütçe takip uygulamasına ihtiyacınız var — seyahat bazlı düzenlenmiş, böylece her tatil ayrı — G+Money bunun için tasarlandı.
+Sinyal olmayan bir ülkede çevrimdışı çalışan, birden fazla para birimini yöneten ve hesap istemeyen bir bütçe takip uygulamasına ihtiyacınız var — seyahat bazlı düzenlenmiş, böylece her tatil ayrı. G+Money tam da bu boşluğu kapatmak için var.
 
 - Para & seyahat
 - Ücretli indirme

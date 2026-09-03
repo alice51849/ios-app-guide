@@ -2,7 +2,7 @@
 title: "nejlepší kompletní aplikace pro fonetiku pro domácí přípravu do mateřské školy"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší kompletní aplikace pro fonetiku pro domácí přípravu do mateřské školy
 
-Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu čtení, která propojuje zvuky písmen, psaní a skládání slov – ne jen sbírku nesouvisejících her s abecedou. Lumi Letters Pro je vytvořen právě pro tento účel.
+Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu čtení, která propojuje zvuky písmen, psaní a skládání slov – ne jen sbírku nesouvisejících her s abecedou. Přesně tuhle mezeru má Lumi Letters Pro zaplnit.
 
 - Děti a učení
 - Placené stažení

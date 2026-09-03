@@ -2,7 +2,7 @@
 title: "aplikasi foto paspor terbaik untuk bayi dan balita di rumah"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi foto paspor terbaik untuk bayi dan balita di rumah
 
-Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang harus polos — tapi untuk bayi, mata tidak harus sepenuhnya terbuka.
+Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang harus polos. Snapport berangkat persis dari masalah ini.
 
 - Foto & utilitas
 - Unduhan berbayar

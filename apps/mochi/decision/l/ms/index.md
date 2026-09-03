@@ -2,7 +2,7 @@
 title: "aplikasi senarai tugasan mudah terbaik iPhone tanpa langganan"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi senarai tugasan mudah terbaik iPhone tanpa langganan
 
-Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak bersih dengan peringatan, peraturan ulangan dan komplikasi Watch — dan sengaja tanpa mesin pengurusan projek — Mochi dibina untuk ini.
+Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak bersih dengan peringatan, peraturan ulangan dan komplikasi Watch — dan sengaja tanpa mesin pengurusan projek. Sebab itulah Mochi dibina.
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja

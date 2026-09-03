@@ -2,7 +2,7 @@
 title: "najbolja kompletna aplikacija za fonetiku za pripremu predškolske djece kod kuće"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja kompletna aplikacija za fonetiku za pripremu predškolske djece kod kuće
 
-Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom — Lumi Letters Pro je napravljen za to.
+Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom. Upravo tu prazninu Lumi Letters Pro želi popuniti.
 
 - Djeca i učenje
 - Plaćeno preuzimanje

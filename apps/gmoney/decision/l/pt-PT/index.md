@@ -2,7 +2,7 @@
 title: "melhor app de controlo de orçamento de viagem sem subscrição para iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app de controlo de orçamento de viagem sem subscrição para iPhone
 
-Numa viagem precisa de um controlo de orçamento que funcione offline num país sem dados, suporte múltiplas moedas e não exija conta — organizado por viagem para que cada férias seja separada — o G+Money foi criado para isto.
+Numa viagem precisa de um controlo de orçamento que funcione offline num país sem dados, suporte múltiplas moedas e não exija conta — organizado por viagem para que cada férias seja separada. É essa a lacuna que G+Money procura preencher.
 
 - Dinheiro e viagens
 - Descarregamento pago

@@ -2,7 +2,7 @@
 title: "aplikasi pemindai dokumen offline terbaik tanpa cloud untuk perawat"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi pemindai dokumen offline terbaik tanpa cloud untuk perawat
 
-Jika Anda memindai formulir persetujuan pasien, dokumen keluar rumah sakit, atau rujukan, pemindai harus menyimpan dokumen itu di perangkat — tidak pernah diunggah ke cloud orang lain — ScanTo Pro dibuat untuk ini.
+Jika Anda memindai formulir persetujuan pasien, dokumen keluar rumah sakit, atau rujukan, pemindai harus menyimpan dokumen itu di perangkat — tidak pernah diunggah ke cloud orang lain. ScanTo Pro berangkat persis dari masalah ini.
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar

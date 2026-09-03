@@ -2,7 +2,7 @@
 title: "适合学龄前儿童且无广告的最佳睡前习惯应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 适合学龄前儿童且无广告的最佳睡前习惯应用
 
-对于学龄前儿童，睡前流程以简短、直观和可预测为佳，孩子无需反复提醒即可完成——Lumi Mission Planet正是为此而设计。
+对于学龄前儿童，睡前流程以简短、直观和可预测为佳，孩子无需反复提醒即可完成。如果你也是这种情况，可以看看 Lumi Mission Planet。
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁

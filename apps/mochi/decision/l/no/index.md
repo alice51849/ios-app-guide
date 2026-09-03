@@ -2,7 +2,7 @@
 title: "beste enkle oppgaveliste-app på iPhone uten abonnement"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/no/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste enkle oppgaveliste-app på iPhone uten abonnement
 
-Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri — Mochi er laget for dette.
+Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.
 
 - Produktivitet
 - Gratis å starte

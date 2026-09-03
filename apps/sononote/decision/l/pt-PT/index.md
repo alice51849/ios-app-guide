@@ -2,7 +2,7 @@
 title: "melhor app de notas de voz que resume reuniões no iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app de notas de voz que resume reuniões no iPhone
 
-Depois de uma chamada, não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de seguimento — Sono Note foi criado para isso.
+Depois de uma chamada, não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de seguimento. É essa a lacuna que Sono Note procura preencher.
 
 - Produtividade
 - Grátis para começar · desbloqueio único

@@ -2,7 +2,7 @@
 title: "melhor app construtor de currículos para quem muda de carreira 2026"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app construtor de currículos para quem muda de carreira 2026
 
-Ao mudar de área, o problema do currículo é diferente: a sua experiência é real mas 'não relacionada' no papel, e os filtros ATS rejeitam-no antes de um humano ler — o CV Desk foi criado para isto.
+Ao mudar de área, o problema do currículo é diferente: a sua experiência é real mas 'não relacionada' no papel, e os filtros ATS rejeitam-no antes de um humano ler. É essa a lacuna que CV Desk procura preencher.
 
 - Produtividade
 - Grátis para começar · desbloqueio único

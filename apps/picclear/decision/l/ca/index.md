@@ -2,7 +2,7 @@
 title: "millor app per alliberar espai a l’iPhone eliminant fotos duplicades"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app per alliberar espai a l’iPhone eliminant fotos duplicades
 
-Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans — PicClear t’ajuda a fer-ho a l’iPhone.
+Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans
 
 - Fotografia i utilitat
 - Inici gratuït

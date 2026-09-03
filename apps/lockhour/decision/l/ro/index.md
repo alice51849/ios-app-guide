@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru blocarea rețelelor sociale în timpul studiului pentru iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație pentru blocarea rețelelor sociale în timpul studiului pentru iPhone
 
-În timpul examenelor, voința nu este instrumentul — un blocaj ferm temporizat este — LockHour Pro este creat pentru asta.
+În timpul examenelor, voința nu este instrumentul — un blocaj ferm temporizat este. De aceea există LockHour Pro.
 
 - Productivitate
 - Început gratuit

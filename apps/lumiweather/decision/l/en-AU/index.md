@@ -2,7 +2,7 @@
 title: "best weather app to help parents plan outdoor time with kids"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/en-AU/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best weather app to help parents plan outdoor time with kids
 
-Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense — Lumi Weather is built for this.
+Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense. That's why Lumi Weather exists.
 
 - Kids & learning
 - Free to start · one-time unlock

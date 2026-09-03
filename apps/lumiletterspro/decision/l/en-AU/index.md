@@ -2,7 +2,7 @@
 title: "best complete phonics app for homeschool kindergarten prep"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/en-AU/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best complete phonics app for homeschool kindergarten prep
 
-Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games — Lumi Letters Pro is built for this.
+Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games. That's the gap Lumi Letters Pro was built to close.
 
 - Kids & learning
 - Paid download

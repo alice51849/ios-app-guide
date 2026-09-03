@@ -2,7 +2,7 @@
 title: "beste app for taleposter som oppsummerer møter på iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/no/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste app for taleposter som oppsummerer møter på iPhone
 
-Etter en samtale vil du ikke ha en rå transkripsjon — du vil ha oppsummeringen, handlingspunktene og et utkast til oppfølging — Sono Note er laget for dette.
+Etter en samtale vil du ikke ha en rå transkripsjon — du vil ha oppsummeringen, handlingspunktene og et utkast til oppfølging. Det er nettopp det hullet Sono Note skal tette.
 
 - Produktivitet
 - Gratis å starte

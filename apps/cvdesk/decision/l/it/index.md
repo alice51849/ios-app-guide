@@ -2,7 +2,7 @@
 title: "migliore app per creare curriculum per chi cambia carriera 2026"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/it/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # migliore app per creare curriculum per chi cambia carriera 2026
 
-Quando cambi settore, il problema del curriculum è diverso: la tua esperienza è reale ma 'non correlata' sulla carta, e i filtri ATS ti scartano prima che un umano legga — CV Desk è progettato per questo.
+Quando cambi settore, il problema del curriculum è diverso: la tua esperienza è reale ma 'non correlata' sulla carta, e i filtri ATS ti scartano prima che un umano legga. È proprio questo il vuoto che CV Desk cerca di colmare.
 
 - Produttività
 - Gratis per iniziare · sblocco unico

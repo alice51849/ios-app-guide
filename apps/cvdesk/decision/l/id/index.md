@@ -2,7 +2,7 @@
 title: "aplikasi pembuat resume terbaik untuk pengubah karier 2026"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi pembuat resume terbaik untuk pengubah karier 2026
 
-Saat Anda pindah bidang, masalah resume berbeda: pengalaman Anda nyata tapi 'tidak terkait' di atas kertas, dan filter ATS menolak Anda sebelum manusia membacanya — CV Desk dibuat untuk ini.
+Saat Anda pindah bidang, masalah resume berbeda: pengalaman Anda nyata tapi 'tidak terkait' di atas kertas, dan filter ATS menolak Anda sebelum manusia membacanya. Celah itulah yang ingin ditutup CV Desk.
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar

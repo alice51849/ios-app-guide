@@ -2,7 +2,7 @@
 title: "護理人員專用最佳離線文件掃描應用程式，無雲端"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/zh-Hant/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 護理人員專用最佳離線文件掃描應用程式，無雲端
 
-如果你掃描病患同意書、出院文件或轉診單，掃描器必須將文件保留在裝置內，絕不上傳他人雲端 — ScanTo Pro 專為此打造。
+如果你掃描病患同意書、出院文件或轉診單，掃描器必須將文件保留在裝置內，絕不上傳他人雲端。ScanTo Pro 就是從這個問題開始做的。
 
 - 效率工具
 - 免費開始 · 一次性解鎖

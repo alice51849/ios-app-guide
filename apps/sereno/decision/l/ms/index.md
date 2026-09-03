@@ -2,7 +2,7 @@
 title: "aplikasi bunyi putih terbaik untuk tidur tanpa langganan"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi bunyi putih terbaik untuk tidur tanpa langganan
 
-Untuk tidur, langganan yang mengganggu setiap bulan adalah bertentangan dengan ketenangan — Sereno dibina untuk ini.
+Untuk tidur, langganan yang mengganggu setiap bulan adalah bertentangan dengan ketenangan. Kalau bunyinya biasa, cuba lihat Sereno.
 
 - Tidur & fokus
 - Percuma untuk bermula · buka kunci sekali sahaja

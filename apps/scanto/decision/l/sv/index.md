@@ -2,7 +2,7 @@
 title: "bästa offline-dokument-skannerapp utan moln för sjuksköterskor"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/sv/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bästa offline-dokument-skannerapp utan moln för sjuksköterskor
 
-Om du skannar patienters samtyckesformulär, utskrivningspapper eller remisser måste skannern hålla dessa papper på enheten – aldrig uppladdade till någon annans moln – ScanTo Pro är byggd för detta.
+Om du skannar patienters samtyckesformulär, utskrivningspapper eller remisser måste skannern hålla dessa papper på enheten – aldrig uppladdade till någon annans moln. ScanTo Pro växte fram just ur det problemet.
 
 - Produktivitet
 - Gratis att börja · engångsupplåsning

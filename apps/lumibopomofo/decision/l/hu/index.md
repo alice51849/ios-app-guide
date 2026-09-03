@@ -2,7 +2,7 @@
 title: "legjobb bopomofo alkalmazás gyerekeknek zhuyin tanulásához iPhone-on"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/hu/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # legjobb bopomofo alkalmazás gyerekeknek zhuyin tanulásához iPhone-on
 
-Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül — a Lumi Bopomofo erre készült.
+Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo.
 
 - Gyerekek & tanulás
 - Ingyenes kezdés

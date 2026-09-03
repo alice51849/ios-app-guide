@@ -2,7 +2,7 @@
 title: "最佳 iPhone 會議語音筆記摘要App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/zh-Hant/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 最佳 iPhone 會議語音筆記摘要App
 
-通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續——Sono Note 專為此打造。
+通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續。這個缺口，就是 Sono Note 想補上的。
 
 - 效率工具
 - 免費開始 · 一次性解鎖

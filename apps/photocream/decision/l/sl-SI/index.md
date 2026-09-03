@@ -2,7 +2,7 @@
 title: "najboljši enkrat plačljiv filmski urejevalnik fotografij za popotniške ustvarjalce na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljši enkrat plačljiv filmski urejevalnik fotografij za popotniške ustvarjalce na iPhonu
 
-Popotniški ustvarjalci potrebujejo ponovljiv filmski videz, ki doda zrnatost, halacijo in barvni značaj, ne da bi vsako destinacijo spremenil v enak filter — PhotoCream je ustvarjen za to.
+Popotniški ustvarjalci potrebujejo ponovljiv filmski videz, ki doda zrnatost, halacijo in barvni značaj, ne da bi vsako destinacijo spremenil v enak filter
 
 - Fotografija in pripomočki
 - Brezplačen začetek

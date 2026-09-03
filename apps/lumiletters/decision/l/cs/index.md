@@ -2,7 +2,7 @@
 title: "nejlepší vzdělávací herní aplikace pro děti bez reklam na iPhonu"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší vzdělávací herní aplikace pro děti bez reklam na iPhonu
 
-Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují — Lumi Letters je pro to stvořená.
+Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují. Právě proto Lumi Letters vznikl.
 
 - Děti a učení
 - Zdarma na začátek

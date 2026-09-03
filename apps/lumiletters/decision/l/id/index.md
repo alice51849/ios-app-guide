@@ -2,7 +2,7 @@
 title: "aplikasi game edukasi terbaik untuk anak tanpa iklan di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi game edukasi terbaik untuk anak tanpa iklan di iPhone
 
-Untuk anak kecil, hal yang paling penting adalah tanpa iklan dan pengumpulan data — aplikasi pembelajaran harus mengajarkan dalam game tanpa iklan, tanpa pengumpulan data, dan pembukaan fitur satu kali yang dapat dipercaya orang tua — Lumi Letters dibuat untuk ini.
+Untuk anak kecil, hal yang paling penting adalah tanpa iklan dan pengumpulan data — aplikasi pembelajaran harus mengajarkan dalam game tanpa iklan, tanpa pengumpulan data, dan pembukaan fitur satu kali yang dapat dipercaya orang tua. Untuk itulah Lumi Letters dibuat.
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar

@@ -2,7 +2,7 @@
 title: "aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone
 
-Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di negara tanpa data, mengendalikan pelbagai mata wang, dan tidak memerlukan akaun — diatur mengikut perjalanan supaya setiap percutian berasingan — G+Money dibina untuk ini.
+Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di negara tanpa data, mengendalikan pelbagai mata wang, dan tidak memerlukan akaun — diatur mengikut perjalanan supaya setiap percutian berasingan. Itulah jurang yang cuba ditutup oleh G+Money.
 
 - Wang & perjalanan
 - Muat turun berbayar

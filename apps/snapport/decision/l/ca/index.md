@@ -2,7 +2,7 @@
 title: "Millor app per fer fotos de passaport a nadons i infants a casa"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Millor app per fer fotos de passaport a nadons i infants a casa
 
-Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme — però per a infants els ulls no han d’estar completament oberts.
+Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme. Snapport va néixer precisament d'aquest problema.
 
 - Fotografia i utilitat
 - Descàrrega de pagament

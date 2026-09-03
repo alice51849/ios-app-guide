@@ -2,7 +2,7 @@
 title: "2026 年最佳职业转型简历制作应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 2026 年最佳职业转型简历制作应用
 
-转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝——CV Desk 专为此设计。
+转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝。这个缺口，正是 CV Desk 想补上的。
 
 - 效率
 - 免费开始使用 · 一次性解锁

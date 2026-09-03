@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za planiranje putovanja za iPhone"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/hr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najbolja aplikacija za planiranje putovanja za iPhone
 
-Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan — TripBee Pro: Planer putovanja je stvoren za to.
+Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan. Ako vam to zvuči poznato, pogledajte TripBee Pro: Planer putovanja.
 
 - Putovanja
 - Plaćeno preuzimanje

@@ -2,7 +2,7 @@
 title: "无需账户的最佳经期追踪应用 iPhone"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 无需账户的最佳经期追踪应用 iPhone
 
-在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步——Cyca 专为此设计。
+在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步。Cyca 只做这一件事，其余一概不加。
 
 - 健康
 - 免费开始使用 · 一次性解锁

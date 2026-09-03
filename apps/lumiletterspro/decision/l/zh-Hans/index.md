@@ -2,7 +2,7 @@
 title: "适合家庭学前启蒙的完整拼读应用推荐"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 适合家庭学前启蒙的完整拼读应用推荐
 
-准备入园的家庭需要一条完整的早期阅读路径，将字母发音、书写和单词构建有机结合，而不是一组无关联的字母游戏 —— Lumi Letters Pro正是为此设计。
+准备入园的家庭需要一条完整的早期阅读路径，将字母发音、书写和单词构建有机结合，而不是一组无关联的字母游戏。这个缺口，正是 Lumi Letters Pro 想补上的。
 
 - 儿童与学习
 - 付费下载

@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לחסימת רשתות חברתיות בזמן לימודים לאייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # האפליקציה הטובה ביותר לחסימת רשתות חברתיות בזמן לימודים לאייפון
 
-במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא — LockHour Pro נבנתה לכך.
+במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא. בשביל זה LockHour Pro נבנה.
 
 - פרודוקטיביות
 - התחלה ללא תשלום

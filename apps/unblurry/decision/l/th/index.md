@@ -2,7 +2,7 @@
 title: "แอปแก้ภาพเบลอของเด็กที่ดีที่สุดบน iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/th/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # แอปแก้ภาพเบลอของเด็กที่ดีที่สุดบน iPhone
 
-เด็กไม่เคยอยู่นิ่ง ภาพโฟกัสนุ่มและสั่นจากกล้องจึงหลีกเลี่ยงไม่ได้ — Unblurry ถูกสร้างมาเพื่อสิ่งนี้
+เด็กไม่เคยอยู่นิ่ง ภาพโฟกัสนุ่มและสั่นจากกล้องจึงหลีกเลี่ยงไม่ได้
 
 - รูปภาพ & เครื่องมือ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว

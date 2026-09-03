@@ -2,7 +2,7 @@
 title: "アカウント不要の最高の生理周期トラッカーアプリiPhone向け"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/cyca.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/vew5n7.mp4"
 duration: "PT16S"
 app_store_id: "6782251621"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # アカウント不要の最高の生理周期トラッカーアプリiPhone向け
 
-データの機密性が重要なカテゴリでは、適切な生理周期トラッカーは経血、気分、症状、体温、親密さなどすべてを端末内に保ち、アカウントもクラウド同期も不要です。— Cycaはこれを実現しています。
+データの機密性が重要なカテゴリでは、適切な生理周期トラッカーは経血、気分、症状、体温、親密さなどすべてを端末内に保ち、アカウントもクラウド同期も不要です。Cycaはその一点だけに絞って、あとは削ぎ落としています。
 
 [動画を見る](https://files.catbox.moe/vew5n7.mp4)
 

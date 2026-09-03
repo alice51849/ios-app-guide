@@ -2,7 +2,7 @@
 title: "millor joc educatiu per a nens sense anuncis a l’iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor joc educatiu per a nens sense anuncis a l’iPhone
 
-Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar — Lumi Letters està feta per això.
+Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar. Per això existeix Lumi Letters.
 
 - Infants i aprenentatge
 - Inici gratuït

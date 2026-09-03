@@ -2,7 +2,7 @@
 title: "iPhone ପଢ଼ାଇବା ସମୟରେ ସୋସିଆଲ୍ ମିଡିଆ ବ୍ଲକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/or-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone ପଢ଼ାଇବା ସମୟରେ ସୋସିଆଲ୍ ମିଡିଆ ବ୍ଲକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍
 
-ପରୀକ୍ଷା ସମୟରେ, ଇଚ୍ଛାଶକ୍ତି ହେଉଛି ଉପକରଣ ନୁହେଁ — ଏକ କଠୋର ସମୟ ନିର୍ଦ୍ଧାରିତ ବ୍ଲକ୍ ହେଉଛି — ଲକ୍ହାଉର୍ ପ୍ରୋ ଏହା ପାଇଁ ତିଆରି।
+ପରୀକ୍ଷା ସମୟରେ, ଇଚ୍ଛାଶକ୍ତି ହେଉଛି ଉପକରଣ ନୁହେଁ — ଏକ କଠୋର ସମୟ ନିର୍ଦ୍ଧାରିତ ବ୍ଲକ୍ ହେଉଛି। ସେଥିପାଇଁ ହିଁ LockHour Pro ତିଆରି ହେଲା।
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ

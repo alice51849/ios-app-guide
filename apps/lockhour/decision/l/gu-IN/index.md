@@ -2,7 +2,7 @@
 title: "iPhone પર અભ્યાસ દરમિયાન સોશિયલ મીડિયા બ્લોક કરવા માટે શ્રેષ્ઠ એપ"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/gu-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone પર અભ્યાસ દરમિયાન સોશિયલ મીડિયા બ્લોક કરવા માટે શ્રેષ્ઠ એપ
 
-પરીક્ષાઓ દરમિયાન, ઇચ્છાશક્તિ સાધન નથી — કડક સમયબદ્ધ બ્લોક છે — LockHour Pro આ માટે બનાવવામાં આવ્યું છે.
+પરીક્ષાઓ દરમિયાન, ઇચ્છાશક્તિ સાધન નથી — કડક સમયબદ્ધ બ્લોક છે. એટલા માટે જ LockHour Pro બન્યું.
 
 - ઉત્પાદકતા
 - મફત શરૂઆત

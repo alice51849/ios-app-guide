@@ -2,7 +2,7 @@
 title: "paras sovellus epäselvien lasten kuvien korjaamiseen iPhonella"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/fi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # paras sovellus epäselvien lasten kuvien korjaamiseen iPhonella
 
-Lapset eivät koskaan pysy paikallaan, joten pehmeät ja tärähtäneet kuvat ovat väistämättömiä — Unblurry on tehty tätä varten.
+Lapset eivät koskaan pysy paikallaan, joten pehmeät ja tärähtäneet kuvat ovat väistämättömiä
 
 - Kuva & apuohjelma
 - Ilmainen aloitus

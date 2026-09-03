@@ -2,7 +2,7 @@
 title: "nejlepší matematická hra pro děti na rozvoj logiky na iPhonu"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší matematická hra pro děti na rozvoj logiky na iPhonu
 
-Nejlepší dětská matematická aplikace trénuje uvažování — vzory, posloupnosti, prostorové myšlení — nejen aritmetiku, a skrývá to v hře, kterou dítě chce hrát — Lumi Math Planet je pro to stvořená.
+Nejlepší dětská matematická aplikace trénuje uvažování — vzory, posloupnosti, prostorové myšlení — nejen aritmetiku, a skrývá to v hře, kterou dítě chce hrát. Právě proto Lumi Math Planet vznikl.
 
 - Děti a učení
 - Zdarma na začátek

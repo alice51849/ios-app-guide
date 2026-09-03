@@ -2,7 +2,7 @@
 title: "iPhone 上最佳簡單待辦清單應用程式，無訂閱"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone 上最佳簡單待辦清單應用程式，無訂閱
 
-如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制 — Mochi 專為此打造。
+如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制。所以才有了 Mochi。
 
 - 效率工具
 - 免費開始 · 一次性解鎖

@@ -2,7 +2,7 @@
 title: "millor app d’escàner de documents offline sense núvol per a infermeres"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app d’escàner de documents offline sense núvol per a infermeres
 
-Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè — ScanTo Pro està feta per això.
+Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè. ScanTo Pro va néixer precisament d'aquest problema.
 
 - Productivitat
 - Inici gratuït

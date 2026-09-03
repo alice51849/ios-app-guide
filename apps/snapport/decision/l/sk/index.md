@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na pasové fotografie pre bábätká a batoľatá doma"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepšia aplikácia na pasové fotografie pre bábätká a batoľatá doma
 
-Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie musí byť jednoliate — ale u dojčiat nemusia byť oči úplne otvorené.
+Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie musí byť jednoliate. Snapport vznikol presne z tohto problému.
 
 - Fotografia a nástroje
 - Platené stiahnutie

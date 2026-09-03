@@ -2,7 +2,7 @@
 title: "אפליקציית מזג אוויר להורים שמתכננים זמן בחוץ עם ילדים"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # אפליקציית מזג אוויר להורים שמתכננים זמן בחוץ עם ילדים
 
-הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש — Lumi Weather נבנתה בדיוק לזה.
+הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש. בשביל זה Lumi Weather נבנה.
 
 - ילדים ולמידה
 - התחלה ללא תשלום

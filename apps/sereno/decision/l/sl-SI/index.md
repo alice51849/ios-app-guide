@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za belo šum za lažje spanje brez naročnine"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za belo šum za lažje spanje brez naročnine
 
-Za spanje je naročnina, ki vas vsak mesec nadleguje, ravno nasprotje sprostitve — Sereno je ustvarjeno za to.
+Za spanje je naročnina, ki vas vsak mesec nadleguje, ravno nasprotje sprostitve. Če vam je to znano, si oglejte Sereno.
 
 - Spanec in osredotočenost
 - Brezplačen začetek

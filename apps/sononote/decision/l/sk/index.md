@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na hlasové poznámky, ktorá zhrňuje stretnutia na iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/sk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepšia aplikácia na hlasové poznámky, ktorá zhrňuje stretnutia na iPhone
 
-Po hovore nechcete surový prepis — chcete zhrnutie, úlohy a návrh pokračovania — Sono Note je na to stavaná.
+Po hovore nechcete surový prepis — chcete zhrnutie, úlohy a návrh pokračovania. Presne túto medzeru má Sono Note zaplniť.
 
 - Produktivita
 - Zadarmo na začiatok

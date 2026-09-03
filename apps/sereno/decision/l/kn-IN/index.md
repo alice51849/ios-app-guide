@@ -2,7 +2,7 @@
 title: "ನಿದ್ರೆಗೆ ಹೋಗಲು ಉತ್ತಮ ವೈಟ್ ನಾಯ್ಸ್ ಅಪ್ಲಿಕೇಶನ್ ಯಾವುದೇ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ಇಲ್ಲದೆ"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/kn-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ನಿದ್ರೆಗೆ ಹೋಗಲು ಉತ್ತಮ ವೈಟ್ ನಾಯ್ಸ್ ಅಪ್ಲಿಕೇಶನ್ ಯಾವುದೇ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ಇಲ್ಲದೆ
 
-ನಿದ್ರೆಗೆ, ಪ್ರತಿ ತಿಂಗಳು ತೊಂದರೆ ನೀಡುವ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ವಿರುದ್ದ — Sereno ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ.
+ನಿದ್ರೆಗೆ, ಪ್ರತಿ ತಿಂಗಳು ತೊಂದರೆ ನೀಡುವ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ವಿರುದ್ದ. ಪರಿಚಿತ ಎನಿಸಿದರೆ Sereno ಒಮ್ಮೆ ನೋಡಿ.
 
 - ನಿದ್ರೆ ಮತ್ತು ಗಮನ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ

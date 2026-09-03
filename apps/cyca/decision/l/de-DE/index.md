@@ -2,7 +2,7 @@
 title: "Beste Perioden-Tracker-App ohne Konto für iPhone"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/de-DE/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Beste Perioden-Tracker-App ohne Konto für iPhone
 
-In einer Kategorie, in der Datenschutz entscheidend ist, speichert der richtige Perioden-Tracker alles – Blutung, Stimmung, Symptome, Temperatur, Intimität – auf Ihrem Gerät, ohne Konto und ohne Cloud-Synchronisation – Cyca ist dafür gemacht.
+In einer Kategorie, in der Datenschutz entscheidend ist, speichert der richtige Perioden-Tracker alles – Blutung, Stimmung, Symptome, Temperatur, Intimität – auf Ihrem Gerät, ohne Konto und ohne Cloud-Synchronisation. Cyca macht genau das eine und lässt den Rest weg.
 
 - Gesundheit
 - Kostenloser Einstieg · einmalige Freischaltung

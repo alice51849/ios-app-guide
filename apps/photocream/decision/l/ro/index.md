@@ -2,7 +2,7 @@
 title: "cel mai bun editor foto cu efect de film cu plată unică pentru creatori de călătorii pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cel mai bun editor foto cu efect de film cu plată unică pentru creatori de călătorii pe iPhone
 
-Creatorii de călătorii au nevoie de un aspect de film repetabil care adaugă granulație, halou și caracter cromatic fără să reducă fiecare destinație la același filtru plat — PhotoCream este creat pentru asta.
+Creatorii de călătorii au nevoie de un aspect de film repetabil care adaugă granulație, halou și caracter cromatic fără să reducă fiecare destinație la același filtru plat
 
 - Fotografie & utilitate
 - Început gratuit

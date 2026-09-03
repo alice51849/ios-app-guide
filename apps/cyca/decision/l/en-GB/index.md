@@ -2,7 +2,7 @@
 title: "best period tracker app no account required iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/en-GB/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best period tracker app no account required iphone
 
-In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync — Cyca is built for this.
+In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync. Cyca sticks to that one job and leaves the rest out.
 
 - Health
 - Free to start · one-time unlock

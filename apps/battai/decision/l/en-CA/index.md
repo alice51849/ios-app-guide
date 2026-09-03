@@ -2,7 +2,7 @@
 title: "best iphone battery health app with honest estimates and report"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/en-CA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best iphone battery health app with honest estimates and report
 
-A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself — BattAI is built for this.
+A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself
 
 - More
 - Free to start · one-time unlock

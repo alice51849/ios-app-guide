@@ -2,7 +2,7 @@
 title: "适用于即将出行的iPhone最佳简易行程规划应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 适用于即将出行的iPhone最佳简易行程规划应用
 
-如果您只规划一个即将到来的行程，专注清晰的时间线比杂乱的所有未来可能行程档案更实用——TripBee Lite正是为此设计。
+如果您只规划一个即将到来的行程，专注清晰的时间线比杂乱的所有未来可能行程档案更实用。如果你也是这种情况，可以看看 TripBee Lite。
 
 - 出行
 - 免费开始使用 · 一次性解锁

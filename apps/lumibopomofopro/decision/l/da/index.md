@@ -2,7 +2,7 @@
 title: "bedste komplette zhuyin-app til tosprogede børn"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste komplette zhuyin-app til tosprogede børn
 
-Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt — Lumi Bopomofo Pro er udviklet til dette.
+Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt. Det er præcis det hul, Lumi Bopomofo Pro skal lukke.
 
 - Børn & læring
 - Betalt download

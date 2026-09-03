@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație simplă pentru planificarea unei călătorii pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație simplă pentru planificarea unei călătorii pe iPhone
 
-Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru acea călătorie este mai utilă decât o arhivă aglomerată cu toate călătoriile pe care le-ai putea face vreodată — TripBee Lite este creat pentru asta.
+Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru acea călătorie este mai utilă decât o arhivă aglomerată cu toate călătoriile pe care le-ai putea face vreodată. Dacă te regăsești, aruncă o privire la TripBee Lite.
 
 - Călătorii
 - Început gratuit

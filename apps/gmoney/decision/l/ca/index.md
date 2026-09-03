@@ -2,7 +2,7 @@
 title: "millor aplicació per controlar pressupost de viatge sense subscripció per a iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor aplicació per controlar pressupost de viatge sense subscripció per a iPhone
 
-En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades — G+Money està creat per això.
+En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades. Aquest és el buit que G+Money vol cobrir.
 
 - Diners i viatges
 - Descàrrega de pagament

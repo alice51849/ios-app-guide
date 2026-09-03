@@ -2,7 +2,7 @@
 title: "legjobb menstruációs naptár alkalmazás fiók nélkül iPhone-ra"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/hu/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # legjobb menstruációs naptár alkalmazás fiók nélkül iPhone-ra
 
-Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül — a Cyca erre készült.
+Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül. A Cyca csak ezt az egyet csinálja, a többit kihagyja.
 
 - Egészség
 - Ingyenes kezdés

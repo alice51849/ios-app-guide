@@ -2,7 +2,7 @@
 title: "أفضل تطبيق تخطيط رحلة بسيط لرحلة قادمة واحدة على iPhone"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ar-SA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # أفضل تطبيق تخطيط رحلة بسيط لرحلة قادمة واحدة على iPhone
 
-إذا كنت تخطط لرحلة قادمة واحدة، فإن جدولًا زمنيًا هادئًا لتلك الرحلة أكثر فائدة من أرشيف مزدحم لكل الرحلات التي قد تقوم بها يومًا ما — تم تصميم TripBee Lite لهذا الغرض.
+إذا كنت تخطط لرحلة قادمة واحدة، فإن جدولًا زمنيًا هادئًا لتلك الرحلة أكثر فائدة من أرشيف مزدحم لكل الرحلات التي قد تقوم بها يومًا ما. إن كان هذا حالك، فألقِ نظرة على TripBee Lite.
 
 - السفر
 - بدء مجاني · فتح مرة واحدة

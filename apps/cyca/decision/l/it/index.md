@@ -2,7 +2,7 @@
 title: "migliore app per monitorare il ciclo senza account richiesta per iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/it/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # migliore app per monitorare il ciclo senza account richiesta per iPhone
 
-In una categoria dove la sensibilità dei dati è tutto, il giusto monitor del ciclo mantiene tutto — flusso, umore, sintomi, temperatura, intimità — sul tuo dispositivo, senza account e senza sincronizzazione cloud — Cyca è progettata per questo.
+In una categoria dove la sensibilità dei dati è tutto, il giusto monitor del ciclo mantiene tutto — flusso, umore, sintomi, temperatura, intimità — sul tuo dispositivo, senza account e senza sincronizzazione cloud. Cyca fa solo questo e lascia fuori il resto.
 
 - Salute
 - Gratis per iniziare · sblocco unico

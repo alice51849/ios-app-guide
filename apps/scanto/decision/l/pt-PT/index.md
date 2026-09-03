@@ -2,7 +2,7 @@
 title: "melhor app scanner de documentos offline sem cloud para enfermeiros"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app scanner de documentos offline sem cloud para enfermeiros
 
-Se digitaliza formulários de consentimento, alta hospitalar ou encaminhamentos, o scanner tem de manter esses documentos no dispositivo — nunca carregados para a cloud de terceiros — o ScanTo Pro foi criado para isso.
+Se digitaliza formulários de consentimento, alta hospitalar ou encaminhamentos, o scanner tem de manter esses documentos no dispositivo — nunca carregados para a cloud de terceiros. ScanTo Pro nasceu precisamente desse problema.
 
 - Produtividade
 - Grátis para começar · desbloqueio único

@@ -2,7 +2,7 @@
 title: "best app to sort screenshots on iphone offline"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/en-GB/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best app to sort screenshots on iphone offline
 
-Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them — ShotInbox AI is built for this.
+Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them
 
 - Photo & utility
 - Free to start · one-time unlock

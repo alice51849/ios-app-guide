@@ -2,7 +2,7 @@
 title: "кращий додаток для блокування соцмереж під час навчання для iPhone"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/uk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # кращий додаток для блокування соцмереж під час навчання для iPhone
 
-Під час іспитів сила волі — не інструмент, потрібне жорстке блокування за часом — LockHour Pro створений саме для цього.
+Під час іспитів сила волі — не інструмент, потрібне жорстке блокування за часом. Заради цього LockHour Pro і зроблено.
 
 - Продуктивність
 - Безкоштовно для початку · разове розблокування

@@ -2,7 +2,7 @@
 title: "iPhone'da mantık becerilerini geliştirmek için çocuklar için en iyi matematik oyunu uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/tr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone'da mantık becerilerini geliştirmek için çocuklar için en iyi matematik oyunu uygulaması
 
-En iyi çocuk matematik uygulaması, mantık eğitimi verir — kalıplar, diziler, mekansal düşünme — sadece aritmetik alıştırması değil, ve bunu çocuğun oynamak istediği bir oyunun içinde gizler — Lumi Math Planet bu amaçla yapılmıştır.
+En iyi çocuk matematik uygulaması, mantık eğitimi verir — kalıplar, diziler, mekansal düşünme — sadece aritmetik alıştırması değil, ve bunu çocuğun oynamak istediği bir oyunun içinde gizler. İşte Lumi Math Planet bu yüzden ortaya çıktı.
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma

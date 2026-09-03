@@ -2,7 +2,7 @@
 title: "beste complete fonetische app voor thuisonderwijs kleuterklas"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste complete fonetische app voor thuisonderwijs kleuterklas
 
-Gezinnen die zich voorbereiden op de kleuterklas hebben een compleet vroeg-leestraject nodig dat klanken, overtrekken en woordbouw verbindt in plaats van losse alfabetspelletjes — Lumi Letters Pro is hiervoor gemaakt.
+Gezinnen die zich voorbereiden op de kleuterklas hebben een compleet vroeg-leestraject nodig dat klanken, overtrekken en woordbouw verbindt in plaats van losse alfabetspelletjes. Precies dat gat wil Lumi Letters Pro dichten.
 
 - Kinderen & leren
 - Betaalde aanschaf

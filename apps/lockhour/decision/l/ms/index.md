@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk menyekat media sosial semasa belajar iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi terbaik untuk menyekat media sosial semasa belajar iPhone
 
-Semasa peperiksaan, kekuatan kehendak bukan alatnya — sekatan masa keras adalah — LockHour Pro dibina untuk ini.
+Semasa peperiksaan, kekuatan kehendak bukan alatnya — sekatan masa keras adalah. Sebab itulah LockHour Pro dibina.
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za izdelavo življenjepisa za menjavo kariere 2026"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za izdelavo življenjepisa za menjavo kariere 2026
 
-Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so resnične, a na papirju 'nepovezane', ATS filtri pa vas zavrnejo, preden jih pregleda človek — CV Desk je narejen za to.
+Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so resnične, a na papirju 'nepovezane', ATS filtri pa vas zavrnejo, preden jih pregleda človek. Prav to vrzel želi CV Desk zapolniti.
 
 - Produktivnost
 - Brezplačen začetek

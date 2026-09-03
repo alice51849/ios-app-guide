@@ -2,7 +2,7 @@
 title: "best math game app for kids to build logic skills iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/en-GB/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best math game app for kids to build logic skills iphone
 
-The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play — Lumi Math Planet is built for this.
+The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play. That's why Lumi Math Planet exists.
 
 - Children & learning
 - Free to start · one-time unlock

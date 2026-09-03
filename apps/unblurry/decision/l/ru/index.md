@@ -2,7 +2,7 @@
 title: "лучшее приложение для исправления размытых фото детей на iPhone"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ru/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # лучшее приложение для исправления размытых фото детей на iPhone
 
-Дети не могут долго стоять на месте, поэтому мягкое размытие и дрожание камеры неизбежны — Unblurry создано именно для этого.
+Дети не могут долго стоять на месте, поэтому мягкое размытие и дрожание камеры неизбежны
 
 - Фото и инструменты
 - Бесплатно начать · разовая разблокировка

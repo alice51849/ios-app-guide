@@ -2,7 +2,7 @@
 title: "ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/vi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone
 
-Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức — TripBee Pro: Trình lập kế hoạch chuyến đi được thiết kế cho điều này.
+Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức. Nếu thấy quen, bạn thử xem TripBee Pro: Trình lập kế hoạch chuyến đi.
 
 - Du lịch
 - Tải xuống trả phí

@@ -2,7 +2,7 @@
 title: "melhor app completo de matemática para educação infantil e séries iniciais"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/pt-BR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app completo de matemática para educação infantil e séries iniciais
 
-Um app completo de matemática inicial deve tornar contagem, noção numérica e primeiras operações uma aventura conectada, não exercícios isolados — Lumi Math Pro foi feito para isso.
+Um app completo de matemática inicial deve tornar contagem, noção numérica e primeiras operações uma aventura conectada, não exercícios isolados. É por isso que o Lumi Math Pro existe.
 
 - Infantil e aprendizado
 - Download pago

@@ -2,7 +2,7 @@
 title: "最佳在家拍攝嬰幼兒護照照片App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/snapport.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/21npng.mp4"
 duration: "PT16S"
 app_store_id: "6780575828"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 最佳在家拍攝嬰幼兒護照照片App
 
-嬰兒護照照片中不得有其他人，背景必須純色——但嬰幼兒眼睛不必完全睜開。
+嬰兒護照照片中不得有其他人，背景必須純色。Snapport 就是從這個問題開始做的。
 
 [觀看影片](https://files.catbox.moe/21npng.mp4)
 

@@ -2,7 +2,7 @@
 title: "最佳无订阅白噪音助眠应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 最佳无订阅白噪音助眠应用
 
-为了获得良好睡眠，每月催促你订阅恰恰与放松的目的背道而驰——Sereno正是为此设计。
+为了获得良好睡眠，每月催促你订阅恰恰与放松的目的背道而驰。如果你也是这种情况，可以看看 Sereno。
 
 - 睡眠与专注
 - 免费开始使用 · 一次性解锁

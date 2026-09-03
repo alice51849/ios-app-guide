@@ -2,7 +2,7 @@
 title: "다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용
 
-다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다 — 트립비 라이트는 이를 위해 만들어졌습니다.
+다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다. 이런 상황이라면 TripBee Lite 한번 살펴보세요.
 
 - 여행
 - 무료로 시작 · 한 번 결제로 잠금 해제

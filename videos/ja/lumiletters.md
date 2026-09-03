@@ -2,7 +2,7 @@
 title: "広告なしの子供向け教育ゲームアプリiPhone版おすすめ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/lumiletters.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/7kka4d.mp4"
 duration: "PT16S"
 app_store_id: "6778748533"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 広告なしの子供向け教育ゲームアプリiPhone版おすすめ
 
-幼児にとって重要なのは広告とデータ収集の有無です。学習アプリは広告ゼロで子供から何も収集せず、一度購入で親が安心できるものが望ましく、Lumi Lettersはそれに対応しています。
+幼児にとって重要なのは広告とデータ収集の有無です。学習アプリは広告ゼロで子供から何も収集せず、一度購入で親が安心できるものが望ましく。だからLumi Lettersを作りました。
 
 [動画を見る](https://files.catbox.moe/7kka4d.mp4)
 

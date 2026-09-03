@@ -2,7 +2,7 @@
 title: "iPhone ରେ ଶିଶୁଙ୍କର ଧୁସର ଫଟୋ ସଠିକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/or-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone ରେ ଶିଶୁଙ୍କର ଧୁସର ଫଟୋ ସଠିକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍
 
-ଶିଶୁମାନେ କେବେ ଶାନ୍ତ ରହନ୍ତି ନାହିଁ, ତେଣୁ ସୋଫ୍ଟ-ଫୋକସ୍ ଏବଂ କ୍ୟାମେରା ହିଲା ଫଟୋ ଅନିବାର୍ଯ୍ୟ — Unblurry ଏହା ପାଇଁ ତିଆରି।
+ଶିଶୁମାନେ କେବେ ଶାନ୍ତ ରହନ୍ତି ନାହିଁ, ତେଣୁ ସୋଫ୍ଟ-ଫୋକସ୍ ଏବଂ କ୍ୟାମେରା ହିଲା ଫଟୋ ଅନିବାର୍ଯ୍ୟ
 
 - ଫଟୋ ଏବଂ ସାଧନ
 - ମୁକ୍ତ ଆରମ୍ଭ

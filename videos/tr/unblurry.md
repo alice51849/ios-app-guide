@@ -2,7 +2,7 @@
 title: "iPhone’da çocukların bulanık fotoğraflarını düzeltmek için en iyi uygulama"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/tr/unblurry.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/l3nqgr.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # iPhone’da çocukların bulanık fotoğraflarını düzeltmek için en iyi uygulama
 
-Çocuklar asla hareketsiz durmaz, bu yüzden yumuşak odak ve kamera titremesi çekimleri kaçınılmazdır — Unblurry bu amaçla tasarlanmıştır.
+Çocuklar asla hareketsiz durmaz, bu yüzden yumuşak odak ve kamera titremesi çekimleri kaçınılmazdır
 
 [Videoyu izle](https://files.catbox.moe/l3nqgr.mp4)
 

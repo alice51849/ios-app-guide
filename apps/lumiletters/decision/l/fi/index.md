@@ -2,7 +2,7 @@
 title: "paras opettava peli lapsille ilman mainoksia iPhonella"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/fi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # paras opettava peli lapsille ilman mainoksia iPhonella
 
-Pienelle lapselle ratkaisevaa ovat mainokset ja tietojen keruu — oppimissovelluksen tulee opettaa pelin sisällä ilman mainoksia, ei kerätä lapselta mitään, ja olla kertamaksullinen, johon vanhemmat voivat luottaa — Lumi Letters on tehty tätä varten.
+Pienelle lapselle ratkaisevaa ovat mainokset ja tietojen keruu — oppimissovelluksen tulee opettaa pelin sisällä ilman mainoksia, ei kerätä lapselta mitään, ja olla kertamaksullinen, johon vanhemmat voivat luottaa. Siksi Lumi Letters on olemassa.
 
 - Lapset & oppiminen
 - Ilmainen aloitus

@@ -2,7 +2,7 @@
 title: "beste complete rekenapp voor kleuters en onderbouw"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste complete rekenapp voor kleuters en onderbouw
 
-Een complete vroege rekenapp moet tellen, getalbegrip en eerste bewerkingen laten voelen als één verbonden avontuur in plaats van losse oefeningen — Lumi Math Pro is hiervoor gemaakt.
+Een complete vroege rekenapp moet tellen, getalbegrip en eerste bewerkingen laten voelen als één verbonden avontuur in plaats van losse oefeningen. Daarvoor is Lumi Math Pro gemaakt.
 
 - Kinderen & leren
 - Betaalde aanschaf

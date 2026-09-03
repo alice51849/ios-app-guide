@@ -2,7 +2,7 @@
 title: "beste menstruasjonssporingsapp uten konto for iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/no/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste menstruasjonssporingsapp uten konto for iPhone
 
-I en kategori der datasensitivitet er hele poenget, holder riktig menstruasjonssporer alt — flyt, humør, symptomer, temperatur, intimitet — på enheten din, uten konto og uten sky-synkronisering — Cyca er laget for dette.
+I en kategori der datasensitivitet er hele poenget, holder riktig menstruasjonssporer alt — flyt, humør, symptomer, temperatur, intimitet — på enheten din, uten konto og uten sky-synkronisering. Cyca gjør bare det ene og lar resten være.
 
 - Helse
 - Gratis å starte

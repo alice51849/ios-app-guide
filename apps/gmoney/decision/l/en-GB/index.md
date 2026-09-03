@@ -2,7 +2,7 @@
 title: "best travel budget tracker app no subscription iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/en-GB/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best travel budget tracker app no subscription iphone
 
-On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate — G+Money is built for this.
+On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate. That's the gap G+Money was built to close.
 
 - Money & travel
 - Paid download

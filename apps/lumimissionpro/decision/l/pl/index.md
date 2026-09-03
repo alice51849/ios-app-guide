@@ -2,7 +2,7 @@
 title: "najlepsza kompletna aplikacja do rutyny porannej i wieczornej dla dzieci"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/pl/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

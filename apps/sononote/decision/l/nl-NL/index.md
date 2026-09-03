@@ -2,7 +2,7 @@
 title: "beste app voor spraaknotities die vergaderingen samenvat op iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste app voor spraaknotities die vergaderingen samenvat op iPhone
 
-Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de actiepunten en een concept opvolgmail — Sono Note is hiervoor gemaakt.
+Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de actiepunten en een concept opvolgmail. Precies dat gat wil Sono Note dichten.
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling

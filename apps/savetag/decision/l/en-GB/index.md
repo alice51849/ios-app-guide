@@ -2,7 +2,7 @@
 title: "best app to save links from other apps on iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/en-GB/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best app to save links from other apps on iphone
 
-Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not — SaveTag is built for this.
+Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not
 
 - Productivity
 - Free to start · one-time unlock

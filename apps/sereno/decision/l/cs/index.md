@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na bílý šum pro usínání bez předplatného"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší aplikace na bílý šum pro usínání bez předplatného
 
-Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu — Sereno je na to stavěné.
+Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu. Jestli to znáte, mrkněte na Sereno.
 
 - Spánek a soustředění
 - Zdarma na začátek

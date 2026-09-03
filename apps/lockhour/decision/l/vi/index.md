@@ -2,7 +2,7 @@
 title: "ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/vi/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone
 
-Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian — LockHour Pro được thiết kế cho điều này.
+Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian. LockHour Pro ra đời chính vì thế.
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần

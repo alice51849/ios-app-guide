@@ -2,7 +2,7 @@
 title: "millor app d'activitats de viatge per a infants en viatges familiars"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app d'activitats de viatge per a infants en viatges familiars
 
-Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès — Lumi Trip Planet està pensat per això.
+Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès. Per això existeix Lumi Trip Planet.
 
 - Infants i aprenentatge
 - Inici gratuït

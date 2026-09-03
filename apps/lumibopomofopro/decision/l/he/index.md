@@ -2,7 +2,7 @@
 title: "אפליקציית Zhuyin מלאה לילדים דו-לשוניים"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # אפליקציית Zhuyin מלאה לילדים דו-לשוניים
 
-ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת — Lumi Bopomofo Pro נבנתה בדיוק לזה.
+ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת. בדיוק את הפער הזה Lumi Bopomofo Pro מנסה לסגור.
 
 - ילדים ולמידה
 - הורדה בתשלום

@@ -2,7 +2,7 @@
 title: "Millor app de soroll blanc per adormir-se sense subscripció"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Millor app de soroll blanc per adormir-se sense subscripció
 
-Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant — Sereno està dissenyada per això.
+Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant. Si t'hi veus reflectit, dona-li un cop d'ull a Sereno.
 
 - Son i concentració
 - Inici gratuït

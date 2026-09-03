@@ -2,7 +2,7 @@
 title: "meilleure application pour corriger les photos floues d’enfants sur iPhone"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/fr-FR/unblurry.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/sbugs3.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # meilleure application pour corriger les photos floues d’enfants sur iPhone
 
-Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes sont inévitables — Unblurry est conçu pour cela.
+Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes sont inévitables
 
 [Regarder la vidéo](https://files.catbox.moe/sbugs3.mp4)
 

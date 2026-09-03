@@ -2,7 +2,7 @@
 title: "Millor app per arreglar fotos borroses de nens a l’iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Millor app per arreglar fotos borroses de nens a l’iPhone
 
-Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables — Unblurry està dissenyada per això.
+Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables
 
 - Fotografia i utilitat
 - Inici gratuït

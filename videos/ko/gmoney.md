@@ -2,7 +2,7 @@
 title: "구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/gmoney.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/3xucog.mp4"
 duration: "PT16.2S"
 app_store_id: "6755782939"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용
 
-여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다 — G+Money는 이를 위해 만들어졌습니다.
+여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다. 그 간극을 메우려고 만든 앱이 G+Money입니다.
 
 [영상 보기](https://files.catbox.moe/3xucog.mp4)
 

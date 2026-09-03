@@ -2,7 +2,7 @@
 title: "2026 年最佳職涯轉換者履歷建立應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/cvdesk.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/ytpq18.mp4"
 duration: "PT16S"
 app_store_id: "6781337213"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 2026 年最佳職涯轉換者履歷建立應用程式
 
-轉換領域時，履歷問題不同：經驗真實但紙本看似「不相關」，ATS 過濾器會在人工審閱前拒絕你 — CV Desk 專為此設計。
+轉換領域時，履歷問題不同：經驗真實但紙本看似「不相關」，ATS 過濾器會在人工審閱前拒絕你。這個缺口，就是 CV Desk 想補上的。
 
 [觀看影片](https://files.catbox.moe/ytpq18.mp4)
 

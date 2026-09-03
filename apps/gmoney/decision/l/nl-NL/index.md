@@ -2,7 +2,7 @@
 title: "beste reisbudgettracker-app zonder abonnement iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste reisbudgettracker-app zonder abonnement iPhone
 
-Op reis heb je een budgettracker nodig die offline werkt in een land zonder data, meerdere valuta aankan en geen account vereist — georganiseerd per reis zodat elke vakantie apart is — G+Money is hiervoor gemaakt.
+Op reis heb je een budgettracker nodig die offline werkt in een land zonder data, meerdere valuta aankan en geen account vereist — georganiseerd per reis zodat elke vakantie apart is. Precies dat gat wil G+Money dichten.
 
 - Geld & reizen
 - Betaalde aanschaf

@@ -2,7 +2,7 @@
 title: "melhor app completo de fonética para preparação de jardim de infância em ensino doméstico"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app completo de fonética para preparação de jardim de infância em ensino doméstico
 
-Famílias a preparar para o jardim de infância precisam de um caminho completo de leitura inicial que ligue sons de letras, traçado e construção de palavras em vez de jogos de alfabeto isolados — Lumi Letters Pro foi criado para isso.
+Famílias a preparar para o jardim de infância precisam de um caminho completo de leitura inicial que ligue sons de letras, traçado e construção de palavras em vez de jogos de alfabeto isolados. É essa a lacuna que Lumi Letters Pro procura preencher.
 
 - Crianças e aprendizagem
 - Descarregamento pago

@@ -2,7 +2,7 @@
 title: "beste complete zhuyin-app voor tweetalige kinderen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste complete zhuyin-app voor tweetalige kinderen
 
-Tweetalige kinderen die thuis Zhuyin leren hebben een compleet traject nodig door klanken, symbolen, tonen en mengen, met genoeg speelse herhaling om het systeem vertrouwd te maken — Lumi Bopomofo Pro is hiervoor gemaakt.
+Tweetalige kinderen die thuis Zhuyin leren hebben een compleet traject nodig door klanken, symbolen, tonen en mengen, met genoeg speelse herhaling om het systeem vertrouwd te maken. Precies dat gat wil Lumi Bopomofo Pro dichten.
 
 - Kinderen & leren
 - Betaalde aanschaf

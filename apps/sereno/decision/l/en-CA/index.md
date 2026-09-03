@@ -2,7 +2,7 @@
 title: "best white noise app for falling asleep no subscription"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/en-CA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best white noise app for falling asleep no subscription
 
-For sleep, a subscription that nags you every month is the opposite of restful — Sereno is built for this.
+For sleep, a subscription that nags you every month is the opposite of restful. If that's your situation, Sereno is worth a look.
 
 - Sleep & focus
 - Free to start · one-time unlock

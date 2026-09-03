@@ -2,7 +2,7 @@
 title: "Beste vollständige Mathe-Lern-App für Vorschule und frühe Klassen"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/de-DE/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Beste vollständige Mathe-Lern-App für Vorschule und frühe Klassen
 
-Eine vollständige Frühmathe-App sollte Zählen, Zahlensinn und erste Rechenoperationen als ein zusammenhängendes Abenteuer statt isolierter Übungen vermitteln — Lumi Math Pro ist dafür gemacht.
+Eine vollständige Frühmathe-App sollte Zählen, Zahlensinn und erste Rechenoperationen als ein zusammenhängendes Abenteuer statt isolierter Übungen vermitteln. Dafür gibt es Lumi Math Pro.
 
 - Kinder & Lernen
 - Kostenpflichtiger Download

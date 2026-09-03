@@ -2,7 +2,7 @@
 title: "أفضل تطبيق لإصلاح الصور الضبابية للأطفال على iPhone"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ar-SA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # أفضل تطبيق لإصلاح الصور الضبابية للأطفال على iPhone
 
-الأطفال لا يثبتون أبدًا، لذا الصور ذات التركيز الناعم والاهتزاز الخفيف أمر لا مفر منه — تم تصميم Unblurry لهذا.
+الأطفال لا يثبتون أبدًا، لذا الصور ذات التركيز الناعم والاهتزاز الخفيف أمر لا مفر منه
 
 - الصورة والأدوات
 - بدء مجاني · فتح مرة واحدة

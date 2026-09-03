@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de urmărire buget de călătorie fără abonament pentru iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație de urmărire buget de călătorie fără abonament pentru iPhone
 
-Într-o călătorie ai nevoie de un tracker de buget care să funcționeze offline într-o țară fără date, să gestioneze mai multe valute și să nu ceară cont — organizat pe călătorii ca fiecare vacanță să fie separată — G+Money este creat pentru asta.
+Într-o călătorie ai nevoie de un tracker de buget care să funcționeze offline într-o țară fără date, să gestioneze mai multe valute și să nu ceară cont — organizat pe călătorii ca fiecare vacanță să fie separată. Exact acest gol vrea să îl acopere G+Money.
 
 - Bani & călătorii
 - Descărcare plătită

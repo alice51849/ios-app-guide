@@ -2,7 +2,7 @@
 title: "iPhone ରେ ସଭା ସାରାଂଶ କରୁଥିବା ସର୍ବୋତ୍ତମ ଭଏସ୍ ନୋଟ୍ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/or-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone ରେ ସଭା ସାରାଂଶ କରୁଥିବା ସର୍ବୋତ୍ତମ ଭଏସ୍ ନୋଟ୍ ଆପ୍
 
-କଲ୍ ପରେ ଆପଣ କେବଳ କଚ୍ଛା ଟ୍ରାନ୍ସକ୍ରିପ୍ଟ ଚାହାଁନ୍ତି ନାହିଁ — ଆପଣ ସାରାଂଶ, କାର୍ଯ୍ୟ ଆଇଟମ୍ ଏବଂ ଏକ ଡ୍ରାଫ୍ଟ ଫଲୋ-ଅପ୍ ଚାହାଁନ୍ତି — Sono Note ଏହା ପାଇଁ ତିଆରି।
+କଲ୍ ପରେ ଆପଣ କେବଳ କଚ୍ଛା ଟ୍ରାନ୍ସକ୍ରିପ୍ଟ ଚାହାଁନ୍ତି ନାହିଁ — ଆପଣ ସାରାଂଶ, କାର୍ଯ୍ୟ ଆଇଟମ୍ ଏବଂ ଏକ ଡ୍ରାଫ୍ଟ ଫଲୋ-ଅପ୍ ଚାହାଁନ୍ତି। ଏହି ଅଭାବକୁ ହିଁ Sono Note ପୂରଣ କରିବାକୁ ଚାହେଁ।
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ

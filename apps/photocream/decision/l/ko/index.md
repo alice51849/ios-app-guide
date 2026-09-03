@@ -2,7 +2,7 @@
 title: "아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천
 
-여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다.
+여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다
 
 - 사진 & 유틸리티
 - 무료로 시작 · 한 번 결제로 잠금 해제

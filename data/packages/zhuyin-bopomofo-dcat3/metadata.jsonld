@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-09-02T00:00:00Z",
+  "dateModified": "2026-09-03T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-09-02"
+      "dateModified": "2026-09-03"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28806 bytes",
-      "sha256": "a2a021cb0c636f10c763f6eec4e660cdd0e7a0499d3fe087fdbebdf243aa1c0f"
+      "contentSize": "28822 bytes",
+      "sha256": "aa45bf410ee69234d12f51e1efcc1323b1bd26f894539030149e6abd83e3d730"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "1798afdad75bdb70496750561098df4600a8ee68c3dd99c934f275c53ca5c4e7"
+      "sha256": "67141f65651e0d606051edf1f85ae26dea2e3d4e5635b63c75e1ff448bcbeb68"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "a4ec2a5c878dcb6e19b62a415796b1750d803ce44bf2e359bd43980e51aae7c1"
+      "sha256": "91c2b7fd656f610576d08511d661715fecfa77cd40af361cb539d9dd881825fa"
     }
   ]
 }

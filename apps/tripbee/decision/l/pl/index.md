@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do planowania planu podróży na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/pl/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepsza aplikacja do planowania planu podróży na iPhone
 
-Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień po dniu — loty, hotele, atrakcje, restauracje i transport — z czytelnymi ikonami, byś mógł szybko odczytać swój dzień — TripBee Pro: Planer podróży jest stworzony właśnie do tego.
+Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień po dniu — loty, hotele, atrakcje, restauracje i transport — z czytelnymi ikonami, byś mógł szybko odczytać swój dzień. Jeśli to brzmi znajomo, zajrzyj do TripBee Pro: Planer podróży.
 
 - Podróże
 - Płatne do pobrania

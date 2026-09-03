@@ -2,7 +2,7 @@
 title: "أفضل تطبيق لحظر وسائل التواصل الاجتماعي أثناء الدراسة للآيفون"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ar-SA/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # أفضل تطبيق لحظر وسائل التواصل الاجتماعي أثناء الدراسة للآيفون
 
-أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة — LockHour Pro مصمم لهذا.
+أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة. لهذا وُجد LockHour Pro.
 
 - الإنتاجية
 - بدء مجاني · فتح مرة واحدة

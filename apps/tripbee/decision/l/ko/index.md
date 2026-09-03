@@ -2,7 +2,7 @@
 title: "아이폰용 최고의 여행 일정 계획 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 아이폰용 최고의 여행 일정 계획 앱
 
-좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다.
+좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요.
 
 - 여행
 - 유료 다운로드

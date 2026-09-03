@@ -2,7 +2,7 @@
 title: "iPhoneの重複写真削除でストレージを空けるおすすめアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/picclear.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/cx5hf5.mp4"
 duration: "PT16S"
 app_store_id: "6780223070"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # iPhoneの重複写真削除でストレージを空けるおすすめアプリ
 
-空き容量を素早く増やすには、完全な重複写真、ほぼ同一の連写写真、ぼやけた写真、大きな動画を優先的に削除します。PicClearはiPhoneでこれを支援します。
+空き容量を素早く増やすには、完全な重複写真、ほぼ同一の連写写真、ぼやけた写真、大きな動画を優先的に削除します。
 
 [動画を見る](https://files.catbox.moe/cx5hf5.mp4)
 

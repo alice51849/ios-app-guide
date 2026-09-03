@@ -2,7 +2,7 @@
 title: "bedste menstruationscyklus-app uden konto til iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste menstruationscyklus-app uden konto til iPhone
 
-I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk — Cyca er skabt til dette.
+I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk. Cyca gør kun det ene og lader resten være.
 
 - Sundhed
 - Gratis at komme i gang

@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/de-DE/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best app to track where my money goes and save more
 
-If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.
+If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, StundenTag is worth a look.
 
 - Geld & Reisen
 - Kostenpflichtiger Download

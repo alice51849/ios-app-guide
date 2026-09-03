@@ -2,7 +2,7 @@
 title: "najlepší jednorazovo platený filmový foto editor pre cestovateľov na iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/sk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepší jednorazovo platený filmový foto editor pre cestovateľov na iPhone
 
-Cestovatelia potrebujú opakovateľný filmový vzhľad, ktorý pridáva zrno, haláciu a farebný charakter bez toho, aby každú destináciu zjednotil do rovnakého plochého filtra — PhotoCream je na to určený.
+Cestovatelia potrebujú opakovateľný filmový vzhľad, ktorý pridáva zrno, haláciu a farebný charakter bez toho, aby každú destináciu zjednotil do rovnakého plochého filtra
 
 - Fotografia a nástroje
 - Zadarmo na začiatok

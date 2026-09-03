@@ -2,7 +2,7 @@
 title: "最佳無訂閱旅遊預算追蹤應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/gmoney.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/mlgrxy.mp4"
 duration: "PT16.2S"
 app_store_id: "6755782939"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 最佳無訂閱旅遊預算追蹤應用程式 iPhone
 
-旅途中你需要一款能在無資料國家離線使用、支援多貨幣且不需帳號的預算追蹤器 — 按旅程分類讓每次假期獨立 — G+Money 專為此設計。
+旅途中你需要一款能在無資料國家離線使用、支援多貨幣且不需帳號的預算追蹤器 — 按旅程分類讓每次假期獨立。這個缺口，就是 G+Money 想補上的。
 
 [觀看影片](https://files.catbox.moe/mlgrxy.mp4)
 

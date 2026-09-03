@@ -2,7 +2,7 @@
 title: "nejlepší cestovní aktivní aplikace pro děti na rodinné výlety"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/cs/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší cestovní aktivní aplikace pro děti na rodinné výlety
 
-Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu – Lumi Trip Planet je vytvořen právě pro tento účel.
+Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu. Právě proto Lumi Trip Planet vznikl.
 
 - Děti a učení
 - Zdarma na začátek

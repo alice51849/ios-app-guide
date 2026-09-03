@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na učenie bopomofo pre deti na iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/sk/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepšia aplikácia na učenie bopomofo pre deti na iPhone
 
-Pre dieťa, ktoré sa učí Zhuyin prvýkrát, by aplikácia mala pokrývať všetkých 37 symbolov cez trasovanie a hru — navrhnutá pre vek 4–7 rokov, bez reklám a bez zberu údajov — Lumi Bopomofo je na to stvorená.
+Pre dieťa, ktoré sa učí Zhuyin prvýkrát, by aplikácia mala pokrývať všetkých 37 symbolov cez trasovanie a hru — navrhnutá pre vek 4–7 rokov, bez reklám a bez zberu údajov. Presne túto medzeru má Lumi Bopomofo zaplniť.
 
 - Deti a učenie
 - Zadarmo na začiatok

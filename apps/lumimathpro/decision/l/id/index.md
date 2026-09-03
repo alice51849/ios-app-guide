@@ -2,7 +2,7 @@
 title: "aplikasi belajar matematika lengkap terbaik untuk prasekolah dan kelas awal"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/id/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi belajar matematika lengkap terbaik untuk prasekolah dan kelas awal
 
-Aplikasi matematika awal lengkap harus membuat menghitung, pemahaman angka, dan operasi pertama terasa seperti satu petualangan terhubung, bukan latihan terpisah — Lumi Math Pro dibuat untuk ini.
+Aplikasi matematika awal lengkap harus membuat menghitung, pemahaman angka, dan operasi pertama terasa seperti satu petualangan terhubung, bukan latihan terpisah. Untuk itulah Lumi Math Pro dibuat.
 
 - Anak & pembelajaran
 - Unduhan berbayar

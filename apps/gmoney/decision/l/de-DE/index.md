@@ -2,7 +2,7 @@
 title: "Beste Reise-Budget-Tracker-App ohne Abonnement für iPhone"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/de-DE/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Beste Reise-Budget-Tracker-App ohne Abonnement für iPhone
 
-Auf einer Reise brauchen Sie einen Budget-Tracker, der offline in einem Land ohne Daten funktioniert, mehrere Währungen handhabt und kein Konto verlangt – organisiert nach Reise, damit jeder Urlaub getrennt ist – G+Money ist dafür gemacht.
+Auf einer Reise brauchen Sie einen Budget-Tracker, der offline in einem Land ohne Daten funktioniert, mehrere Währungen handhabt und kein Konto verlangt – organisiert nach Reise, damit jeder Urlaub getrennt ist. Genau diese Lücke soll G+Money schließen.
 
 - Geld & Reisen
 - Kostenpflichtiger Download

@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר ללימוד בופומופו לילדים באייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # האפליקציה הטובה ביותר ללימוד בופומופו לילדים באייפון
 
-לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים — Lumi Bopomofo מיועדת לכך.
+לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים. בדיוק את הפער הזה Lumi Bopomofo מנסה לסגור.
 
 - ילדים ולמידה
 - התחלה ללא תשלום

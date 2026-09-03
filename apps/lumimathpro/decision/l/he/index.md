@@ -2,7 +2,7 @@
 title: "אפליקציית מתמטיקה מלאה לגיל הגן וכיתות ראשונות"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/he/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # אפליקציית מתמטיקה מלאה לגיל הגן וכיתות ראשונות
 
-אפליקציה מלאה למתמטיקה מוקדמת צריכה להפוך ספירה, הבנת מספרים ופעולות ראשונות להרפתקה מחוברת ולא תרגילים מבודדים — Lumi Math Pro נבנתה בדיוק לזה.
+אפליקציה מלאה למתמטיקה מוקדמת צריכה להפוך ספירה, הבנת מספרים ופעולות ראשונות להרפתקה מחוברת ולא תרגילים מבודדים. בשביל זה Lumi Math Pro נבנה.
 
 - ילדים ולמידה
 - הורדה בתשלום

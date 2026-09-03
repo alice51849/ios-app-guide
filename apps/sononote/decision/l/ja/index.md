@@ -2,7 +2,7 @@
 title: "iPhoneで会議を要約する最高のボイスノートアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhoneで会議を要約する最高のボイスノートアプリ
 
-通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。
+通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。
 
 - 生産性
 - 無料で開始・一度の購入でアンロック

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma
 
-Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora biti enobarvno — za dojenčke oči ne morajo biti popolnoma odprte.
+Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora biti enobarvno. Snapport je nastal prav iz te težave.
 
 - Fotografija in pripomočki
 - Plačljiv prenos

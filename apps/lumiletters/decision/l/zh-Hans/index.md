@@ -2,7 +2,7 @@
 title: "iPhone 上最佳无广告儿童教育游戏应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone 上最佳无广告儿童教育游戏应用
 
-对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学——Lumi Letters 正是为此打造。
+对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学。所以才有了 Lumi Letters。
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁

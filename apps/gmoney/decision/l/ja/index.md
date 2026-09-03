@@ -2,7 +2,7 @@
 title: "サブスクリプション不要の最高の旅行予算管理アプリiPhone向け"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ja/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # サブスクリプション不要の最高の旅行予算管理アプリiPhone向け
 
-旅行中はデータ通信なしで使え、多通貨対応でアカウント不要の予算管理が必要です。旅行ごとに整理される—G+Moneyはこれを実現しています。
+旅行中はデータ通信なしで使え、多通貨対応でアカウント不要の予算管理が必要です。旅行ごとに整理される。その隙間を埋めるためにG+Moneyを作りました。
 
 - お金・旅行
 - 有料ダウンロード

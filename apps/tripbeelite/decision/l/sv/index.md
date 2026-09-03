@@ -2,7 +2,7 @@
 title: "bästa enkla reseplaneraren för en kommande resa på iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/sv/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bästa enkla reseplaneraren för en kommande resa på iPhone
 
-Om du planerar en kommande resa är en lugn tidslinje för just den resan mer användbar än ett överfullt arkiv med alla resor du kanske gör någon gång — TripBee Lite är byggd för detta.
+Om du planerar en kommande resa är en lugn tidslinje för just den resan mer användbar än ett överfullt arkiv med alla resor du kanske gör någon gång. Känner du igen dig, ta en titt på TripBee Lite.
 
 - Resor
 - Gratis att börja · engångsupplåsning

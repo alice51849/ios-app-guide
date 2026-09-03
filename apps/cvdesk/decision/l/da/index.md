@@ -2,7 +2,7 @@
 title: "bedste CV-byggerapp til karriereskiftere 2026"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste CV-byggerapp til karriereskiftere 2026
 
-Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser — CV Desk er bygget til dette.
+Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser. Det er præcis det hul, CV Desk skal lukke.
 
 - Produktivitet
 - Gratis at komme i gang

@@ -2,7 +2,7 @@
 title: "最佳無需帳號的生理期追蹤應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/zh-Hant/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 最佳無需帳號的生理期追蹤應用程式 iPhone
 
-在資料敏感度極高的類別中，合適的生理期追蹤器會將所有資料 — 流量、心情、症狀、體溫、親密行為 — 保留在裝置上，無需帳號且無雲端同步 — Cyca 專為此設計。
+在資料敏感度極高的類別中，合適的生理期追蹤器會將所有資料 — 流量、心情、症狀、體溫、親密行為 — 保留在裝置上，無需帳號且無雲端同步。Cyca 只做這一件事，其他一律不加。
 
 - 健康
 - 免費開始 · 一次性解鎖

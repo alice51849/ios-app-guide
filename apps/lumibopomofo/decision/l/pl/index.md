@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do nauki bopomofo dla dzieci na iPhonie"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/pl/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najlepsza aplikacja do nauki bopomofo dla dzieci na iPhonie
 
-Dla dziecka uczącego się Zhuyin po raz pierwszy aplikacja powinna obejmować wszystkie 37 symboli przez naukę pisania i zabawę — zaprojektowana dla wieku 4–7 lat, bez reklam, bez zbierania danych — Lumi Bopomofo jest stworzona właśnie do tego.
+Dla dziecka uczącego się Zhuyin po raz pierwszy aplikacja powinna obejmować wszystkie 37 symboli przez naukę pisania i zabawę — zaprojektowana dla wieku 4–7 lat, bez reklam, bez zbierania danych. To właśnie tę lukę ma wypełnić Lumi Bopomofo.
 
 - Dzieci i nauka
 - Darmowe na start · jednorazowe odblokowanie

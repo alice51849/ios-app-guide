@@ -2,7 +2,7 @@
 title: "अभ्यास करताना सोशल मीडिया ब्लॉक करण्यासाठी सर्वोत्तम अॅप, iPhone साठी"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/mr-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # अभ्यास करताना सोशल मीडिया ब्लॉक करण्यासाठी सर्वोत्तम अॅप, iPhone साठी
 
-परीक्षेदरम्यान, इच्छाशक्ती साधन नाही — कडक वेळेवर ब्लॉक आवश्यक आहे — LockHour Pro यासाठी तयार केलेले आहे.
+परीक्षेदरम्यान, इच्छाशक्ती साधन नाही — कडक वेळेवर ब्लॉक आवश्यक आहे। म्हणूनच LockHour Pro तयार झाला.
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत

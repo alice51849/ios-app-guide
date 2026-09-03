@@ -2,7 +2,7 @@
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pt-BR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best last time tracker app for household maintenance without a subscription
 
-Para tarefas e manutenção que não cabem em um calendário rígido, um bom registro lembra quando você realmente concluiu e conta o próximo intervalo a partir desse momento. O Mochi DoneStamp foi feito exatamente para isso.
+Para tarefas e manutenção que não cabem em um calendário rígido, um bom registro lembra quando você realmente concluiu e conta o próximo intervalo a partir desse momento.
 
 - Estilo de vida
 - Grátis para começar · desbloqueio único

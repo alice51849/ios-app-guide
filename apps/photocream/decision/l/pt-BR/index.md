@@ -2,7 +2,7 @@
 title: "melhor editor de fotos com efeito filme para criadores de viagem no iPhone com pagamento único"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/pt-BR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor editor de fotos com efeito filme para criadores de viagem no iPhone com pagamento único
 
-Criadores de viagem precisam de um visual de filme repetível que adicione granulação, halation e personalidade de cor sem deixar todos os destinos com o mesmo filtro — PhotoCream foi feito para isso.
+Criadores de viagem precisam de um visual de filme repetível que adicione granulação, halation e personalidade de cor sem deixar todos os destinos com o mesmo filtro
 
 - Foto e utilidade
 - Grátis para começar · desbloqueio único

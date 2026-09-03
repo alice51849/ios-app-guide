@@ -2,7 +2,7 @@
 title: "melhor app de vocabulário para quem usa Apple Watch no transporte"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/pt-BR/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app de vocabulário para quem usa Apple Watch no transporte
 
-Quem usa transporte precisa de prática de vocabulário que caiba em minutos livres, sem exigir lição completa, nova conta ou celular em mãos para cada revisão — Wordmate: Aprenda 44 Idiomas foi feito para isso.
+Quem usa transporte precisa de prática de vocabulário que caiba em minutos livres, sem exigir lição completa, nova conta ou celular em mãos para cada revisão. Wordmate: Aprenda 44 Idiomas nasceu exatamente desse problema.
 
 - Educação
 - Download pago

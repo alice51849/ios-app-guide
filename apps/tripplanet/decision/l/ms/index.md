@@ -2,7 +2,7 @@
 title: "apl aktiviti perjalanan terbaik untuk kanak-kanak semasa percutian keluarga"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ms/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # apl aktiviti perjalanan terbaik untuk kanak-kanak semasa percutian keluarga
 
-Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan — Lumi Trip Planet dibina untuk ini.
+Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan. Sebab itulah Lumi Trip Planet dibina.
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja

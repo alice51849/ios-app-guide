@@ -2,7 +2,7 @@
 title: "migliore app per bloccare i social media mentre studi iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/it/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # migliore app per bloccare i social media mentre studi iPhone
 
-Durante gli esami, la forza di volontà non basta — serve un blocco rigoroso a tempo — LockHour Pro è progettato per questo.
+Durante gli esami, la forza di volontà non basta — serve un blocco rigoroso a tempo. È per questo che esiste LockHour Pro.
 
 - Produttività
 - Gratis per iniziare · sblocco unico

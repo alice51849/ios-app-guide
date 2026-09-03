@@ -2,7 +2,7 @@
 title: "ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਧਾਰਣ ਯਾਤਰਾ ਯੋਜਕ ਐਪ iPhone ਲਈ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/pa-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਧਾਰਣ ਯਾਤਰਾ ਯੋਜਕ ਐਪ iPhone ਲਈ
 
-ਜੇ ਤੁਸੀਂ ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾ ਰਹੇ ਹੋ, ਤਾਂ ਉਸ ਯਾਤਰਾ ਲਈ ਇੱਕ ਸ਼ਾਂਤ ਟਾਈਮਲਾਈਨ ਹਰ ਇੱਕ ਸੰਭਵ ਯਾਤਰਾ ਦੇ ਭਰੇ ਹੋਏ ਆਰਕਾਈਵ ਨਾਲੋਂ ਵਧੀਆ ਹੈ — TripBee Lite ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।
+ਜੇ ਤੁਸੀਂ ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾ ਰਹੇ ਹੋ, ਤਾਂ ਉਸ ਯਾਤਰਾ ਲਈ ਇੱਕ ਸ਼ਾਂਤ ਟਾਈਮਲਾਈਨ ਹਰ ਇੱਕ ਸੰਭਵ ਯਾਤਰਾ ਦੇ ਭਰੇ ਹੋਏ ਆਰਕਾਈਵ ਨਾਲੋਂ ਵਧੀਆ ਹੈ। ਜਾਣੀ-ਪਛਾਣੀ ਗੱਲ ਲੱਗੇ ਤਾਂ TripBee Lite ਇੱਕ ਵਾਰ ਵੇਖੋ।
 
 - ਯਾਤਰਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ

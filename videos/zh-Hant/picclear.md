@@ -2,7 +2,7 @@
 title: "iPhone 上最佳清理重複照片釋放儲存空間應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/picclear.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/goh2d7.mp4"
 duration: "PT16S"
 app_store_id: "6780223070"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # iPhone 上最佳清理重複照片釋放儲存空間應用程式
 
-要快速釋放空間，先從最大效益著手：完全重複照片、幾乎相同的連拍、模糊照片和大型影片 — PicClear 幫你在 iPhone 上完成。
+要快速釋放空間，先從最大效益著手：完全重複照片、幾乎相同的連拍、模糊照片和大型影片
 
 [觀看影片](https://files.catbox.moe/goh2d7.mp4)
 

@@ -2,7 +2,7 @@
 title: "适合通勤族和Apple Watch用户的最佳词汇App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 适合通勤族和Apple Watch用户的最佳词汇App
 
-通勤族需要能在碎片时间练习词汇，无需完整课程、账号或每次都拿手机 —— Wordmate：学习44种语言正是为此设计。
+通勤族要的是零碎时间就能背几个词，不必上完整课程、不必注册账号，也不必每次都得把手机拿出来复习。Wordmate：学习44种语言 就是从这个问题开始做的。
 
 - 教育
 - 付费下载

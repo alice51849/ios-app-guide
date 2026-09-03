@@ -2,7 +2,7 @@
 title: "millor app de vocabulari per a persones que fan trajectes amb Apple Watch"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app de vocabulari per a persones que fan trajectes amb Apple Watch
 
-Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs — Wordmate: Learn 44 Languages està pensat per això.
+Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs. Wordmate: Learn 44 Languages va néixer precisament d'aquest problema.
 
 - Educació
 - Descàrrega de pagament

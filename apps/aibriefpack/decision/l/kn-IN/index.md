@@ -2,7 +2,7 @@
 title: "AI Brief: ಕಡತದಿಂದ AI ಪ್ರಾಂಪ್ಟ್ — ಫೈಲ್‌ನಿಂದ ಸ್ಪಷ್ಟ ಸಂದರ್ಭ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/kn-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

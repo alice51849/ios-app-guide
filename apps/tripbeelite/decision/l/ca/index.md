@@ -2,7 +2,7 @@
 title: "millor app senzilla per planificar un viatge a l'iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ca/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app senzilla per planificar un viatge a l'iPhone
 
-Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia — TripBee Lite està pensat per això.
+Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Lite.
 
 - Viatges
 - Inici gratuït

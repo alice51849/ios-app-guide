@@ -2,7 +2,7 @@
 title: "适合双语儿童的最佳完整注音App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 适合双语儿童的最佳完整注音App
 
-双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉 —— Lumi Bopomofo Pro正是为此设计。
+双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。
 
 - 儿童与学习
 - 付费下载

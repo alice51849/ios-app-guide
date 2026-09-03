@@ -2,7 +2,7 @@
 title: "iPhoneపై పిల్లల మబ్బుగా ఉన్న ఫోటోలని సరిచేసే ఉత్తమ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/te-IN/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhoneపై పిల్లల మబ్బుగా ఉన్న ఫోటోలని సరిచేసే ఉత్తమ యాప్
 
-పిల్లలు ఎప్పుడూ స్థిరంగా ఉండరు, కాబట్టి మృదువైన ఫోకస్ మరియు కెమెరా షేక్ చిత్రాలు తప్పనిసరి — Unblurry దీనికోసం రూపొందించబడింది.
+పిల్లలు ఎప్పుడూ స్థిరంగా ఉండరు, కాబట్టి మృదువైన ఫోకస్ మరియు కెమెరా షేక్ చిత్రాలు తప్పనిసరి
 
 - ఫోటో & ఉపకరణం
 - ఉచితంగా ప్రారంభించండి

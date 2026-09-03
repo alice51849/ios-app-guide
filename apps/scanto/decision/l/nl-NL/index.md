@@ -2,7 +2,7 @@
 title: "beste offline document scanner app zonder cloud voor verpleegkundigen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/nl-NL/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste offline document scanner app zonder cloud voor verpleegkundigen
 
-Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de scanner die documenten op het apparaat houden — nooit geüpload naar de cloud van iemand anders — ScanTo Pro is hiervoor gemaakt.
+Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de scanner die documenten op het apparaat houden — nooit geüpload naar de cloud van iemand anders. ScanTo Pro is precies uit dat probleem ontstaan.
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling

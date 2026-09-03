@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za načrtovanje potovalnega itinerarja za iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za načrtovanje potovalnega itinerarja za iPhone
 
-Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni načrt — leti, hoteli, aktivnosti, restavracije in prevoz — z jasnimi ikonami tipov, da lahko na hitro preberete svoj dan — TripBee Pro: načrtovalec potovanja je ustvarjen za to.
+Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni načrt — leti, hoteli, aktivnosti, restavracije in prevoz — z jasnimi ikonami tipov, da lahko na hitro preberete svoj dan. Če vam je to znano, si oglejte TripBee Pro: načrtovalec potovanja.
 
 - Potovanja
 - Plačljiv prenos

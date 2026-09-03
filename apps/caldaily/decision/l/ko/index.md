@@ -2,7 +2,7 @@
 title: "CalDaily 계산기 및 테마 — 위젯, 도구, 기록 정리 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

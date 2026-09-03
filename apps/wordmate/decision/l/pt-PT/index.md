@@ -2,7 +2,7 @@
 title: "melhor app de vocabulário para utilizadores em deslocação com Apple Watch"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/pt-PT/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app de vocabulário para utilizadores em deslocação com Apple Watch
 
-Utilizadores em deslocação precisam de prática de vocabulário que encaixe em minutos livres sem exigir uma lição completa, uma nova conta ou o telefone na mão para cada revisão — Wordmate: Learn 44 Languages foi criado para isso.
+Utilizadores em deslocação precisam de prática de vocabulário que encaixe em minutos livres sem exigir uma lição completa, uma nova conta ou o telefone na mão para cada revisão. Wordmate: Learn 44 Languages nasceu precisamente desse problema.
 
 - Educação
 - Descarregamento pago

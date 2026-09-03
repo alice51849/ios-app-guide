@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za učenje bopomofo za otroke za učenje zhuyin na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za učenje bopomofo za otroke za učenje zhuyin na iPhonu
 
-Za otroka, ki se prvič uči Zhuyin, mora aplikacija pokrivati vseh 37 simbolov z risanjem in igro — zasnovano za starost 4–7 let, brez oglasov in brez zbiranja podatkov — Lumi Bopomofo je narejena za to.
+Za otroka, ki se prvič uči Zhuyin, mora aplikacija pokrivati vseh 37 simbolov z risanjem in igro — zasnovano za starost 4–7 let, brez oglasov in brez zbiranja podatkov. Prav to vrzel želi Lumi Bopomofo zapolniti.
 
 - Otroci in učenje
 - Brezplačen začetek

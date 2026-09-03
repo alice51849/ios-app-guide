@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za glasovne zapiske, ki povzame sestanke na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/sl-SI/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # najboljša aplikacija za glasovne zapiske, ki povzame sestanke na iPhonu
 
-Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nadaljnjega sporočila — Sono Note je ustvarjena za to.
+Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nadaljnjega sporočila. Prav to vrzel želi Sono Note zapolniti.
 
 - Produktivnost
 - Brezplačen začetek

@@ -2,7 +2,7 @@
 title: "홈스쿨 유치원 준비를 위한 최고의 완전한 파닉스 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ko/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 홈스쿨 유치원 준비를 위한 최고의 완전한 파닉스 앱
 
-유치원 준비 가족에게는 알파벳 소리, 따라쓰기, 단어 만들기를 연결하는 완전한 초기 읽기 경로가 필요하며, 단순한 알파벳 게임 모음이 아닌 Lumi Letters Pro가 이를 위해 만들어졌습니다.
+취학을 준비하는 가정에는 글자 소리, 쓰기, 단어 만들기가 하나로 이어지는 초기 읽기 과정이 필요합니다. 서로 따로 노는 알파벳 게임 모음으로는 그 흐름이 생기지 않습니다. 그 간극을 메우려고 만든 앱이 Lumi Letters Pro입니다.
 
 - 어린이 & 학습
 - 유료 다운로드

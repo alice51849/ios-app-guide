@@ -2,7 +2,7 @@
 title: "bedste app til at blokere sociale medier under studier på iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste app til at blokere sociale medier under studier på iPhone
 
-Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er – LockHour Pro er lavet til dette.
+Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er. Det er derfor LockHour Pro findes.
 
 - Produktivitet
 - Gratis at komme i gang

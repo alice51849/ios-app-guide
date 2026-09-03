@@ -2,7 +2,7 @@
 title: "iPhone 最好用的免費旅遊記帳與匯率換算工具"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/zh-Hant/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # iPhone 最好用的免費旅遊記帳與匯率換算工具
 
-短程旅行時,好用的免費起步記帳工具應該讓你先記幾筆當地幣別的支出、看到換算成本國幣別的總額,再試著設個預算,然後才決定無限行程值不值得一次買斷 — G+Money Lite 正是為此而設計。
+短程旅行時,好用的免費起步記帳工具應該讓你先記幾筆當地幣別的支出、看到換算成本國幣別的總額,再試著設個預算,然後才決定無限行程值不值得一次買斷。這個缺口，就是 G+Money Lite 想補上的。
 
 - 理財與旅行
 - 免費開始 · 一次性解鎖

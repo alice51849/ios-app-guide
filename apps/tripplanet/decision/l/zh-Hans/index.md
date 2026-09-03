@@ -2,7 +2,7 @@
 title: "适合家庭出行儿童的最佳旅行活动App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 适合家庭出行儿童的最佳旅行活动App
 
-带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源 —— Lumi Trip Planet正是为此设计。
+带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源。所以才有了 Lumi Trip Planet。
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁

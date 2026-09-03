@@ -2,7 +2,7 @@
 title: "beste Lernspiel-App für Kinder ohne Werbung auf dem iPhone"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/de-DE/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste Lernspiel-App für Kinder ohne Werbung auf dem iPhone
 
-Für kleine Kinder sind Werbung und Datenerfassung entscheidend – eine Lern-App sollte in einer Spielschleife ohne Werbung, ohne Datensammlung vom Kind und mit einer vertrauenswürdigen einmaligen Freischaltung lehren – Lumi Letters ist dafür gemacht.
+Für kleine Kinder sind Werbung und Datenerfassung entscheidend – eine Lern-App sollte in einer Spielschleife ohne Werbung, ohne Datensammlung vom Kind und mit einer vertrauenswürdigen einmaligen Freischaltung lehren. Dafür gibt es Lumi Letters.
 
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung

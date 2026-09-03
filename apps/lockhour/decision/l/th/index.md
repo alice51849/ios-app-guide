@@ -2,7 +2,7 @@
 title: "แอปบล็อกโซเชียลมีเดียที่ดีที่สุดขณะเรียนสำหรับ iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/th/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # แอปบล็อกโซเชียลมีเดียที่ดีที่สุดขณะเรียนสำหรับ iPhone
 
-ในช่วงสอบ ความตั้งใจไม่ใช่เครื่องมือ — แต่การบล็อกแบบเข้มงวดตามเวลาคือสิ่งที่จำเป็น — LockHour Pro ถูกสร้างมาเพื่อสิ่งนี้
+ในช่วงสอบ ความตั้งใจไม่ใช่เครื่องมือ — แต่การบล็อกแบบเข้มงวดตามเวลาคือสิ่งที่จำเป็น LockHour Pro ถึงเกิดขึ้นมาด้วยเหตุนี้
 
 - เพิ่มประสิทธิภาพ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว

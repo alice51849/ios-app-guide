@@ -2,7 +2,7 @@
 title: "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumiweather.html"
-modified: "2026-08-23"
+modified: "2026-09-03"
 video_url: "https://files.catbox.moe/fu7uq6.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # 부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱
 
-야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다 — Lumi Weather는 바로 이런 용도로 만들어졌습니다.
+야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다. 그래서 만든 것이 Lumi Weather입니다.
 
 [영상 보기](https://files.catbox.moe/fu7uq6.mp4)
 

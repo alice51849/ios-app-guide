@@ -2,7 +2,7 @@
 title: "legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/hu/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on
 
-Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell — a LockHour Pro erre készült.
+Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell. Ezért készült a LockHour Pro.
 
 - Produktivitás
 - Ingyenes kezdés

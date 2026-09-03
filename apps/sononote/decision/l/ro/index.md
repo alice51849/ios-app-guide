@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de notițe vocale care rezumă întâlnirile pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ro/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație de notițe vocale care rezumă întâlnirile pe iPhone
 
-După un apel nu vrei o transcriere brută — vrei rezumatul, punctele de acțiune și un draft de urmărire — Sono Note este construit pentru asta.
+După un apel nu vrei o transcriere brută — vrei rezumatul, punctele de acțiune și un draft de urmărire. Exact acest gol vrea să îl acopere Sono Note.
 
 - Productivitate
 - Început gratuit

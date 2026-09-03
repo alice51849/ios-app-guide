@@ -2,7 +2,7 @@
 title: "bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/tr/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması
 
-Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıdır — ancak bebeklerde gözlerin tamamen açık olması gerekmez.
+Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıdır. Snapport tam olarak bu sorundan doğdu.
 
 - Fotoğraf & yardımcı
 - Ücretli indirme

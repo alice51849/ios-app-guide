@@ -2,7 +2,7 @@
 title: "bedste komplette lydrette-app til hjemmeundervisning og børnehaveforberedelse"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/da/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # bedste komplette lydrette-app til hjemmeundervisning og børnehaveforberedelse
 
-Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læsevej, der forbinder bogstavlyde, skriveøvelser og ordbygning i stedet for en samling af adskilte alfabetspil — Lumi Letters Pro er udviklet til dette.
+Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læsevej, der forbinder bogstavlyde, skriveøvelser og ordbygning i stedet for en samling af adskilte alfabetspil. Det er præcis det hul, Lumi Letters Pro skal lukke.
 
 - Børn & læring
 - Betalt download

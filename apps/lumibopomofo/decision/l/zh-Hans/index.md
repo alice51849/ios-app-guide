@@ -2,7 +2,7 @@
 title: "让孩子在 iPhone 上学注音的最佳注音 App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hans/index.html"
-modified: "2026-09-02"
+modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # 让孩子在 iPhone 上学注音的最佳注音 App
 
-对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据 —— Lumi Bopomofo 正是为此打造。
+对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据。这个缺口，正是 Lumi Bopomofo 想补上的。
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁

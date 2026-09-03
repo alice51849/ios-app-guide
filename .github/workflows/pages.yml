@@ -37,6 +37,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
+      - name: Refuse pages that still identify themselves on the Pages origin
+        run: python3 _engine/geo/audit_public_host_html.py --site-root .
       - name: Prepare externally bound high-intent deployment
         env:
           # The route pages, manifest and deployment record this step writes are

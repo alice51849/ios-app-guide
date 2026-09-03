@@ -44,6 +44,7 @@ SYNC_ENGINE_FILES = (
     Path("official_locales.py"),
     Path("publish.py"),
     Path("sync_standard_site.py"),
+    Path("site_config.py"),
     Path("websub_config.py"),
 )
 INVENTORY_FILENAME = "verified-ios-app-finder-catalog.json"

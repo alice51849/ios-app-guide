@@ -1,10 +1,10 @@
 {
-  "contract_digest": "0646b580997b4ffd550a180acd3c6a7a817f32ac7bc0407cce05fe0f5d0a9584",
+  "contract_digest": "2675f036ec56139d78f3a1578d80547a8a96654f142dc7d22f8e63227f41db41",
   "copy_mode": "byte_for_byte",
   "files": [
     {
       "engine_relative_path": "high_intent_decision_routes.py",
-      "sha256": "f328418b1163b8ede63f282e33f584a6a418396e4565bcc1b0b67437098e9a31",
+      "sha256": "09acdcae2a165b7a2ca93f7e71f486feb1ff172fbb03b5c4908d8c81d2c5840a",
       "source_path": "geo/high_intent_decision_routes.py",
       "target_path": "_engine/geo/high_intent_decision_routes.py"
     },
@@ -37,6 +37,12 @@
       "sha256": "4fde45e1d9039b4ee89d6a006198602d890abff70941b2e2ad73f49f3c366568",
       "source_path": "geo/sync_standard_site.py",
       "target_path": "_engine/geo/sync_standard_site.py"
+    },
+    {
+      "engine_relative_path": "site_config.py",
+      "sha256": "8dc7ec9af39264dfdf0090c0b6ed7439e4a3dd7cca57188bf38c442aa93b6868",
+      "source_path": "geo/site_config.py",
+      "target_path": "_engine/geo/site_config.py"
     },
     {
       "engine_relative_path": "websub_config.py",

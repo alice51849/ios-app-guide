@@ -22,7 +22,7 @@ import urllib.request
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from official_locales import OFFICIAL_LOCALES
-from site_config import PUBLIC_SITE  # noqa: E402
+from site_config import ORIGIN_HOST, PUBLIC_SITE  # noqa: E402
 
 
 DEFAULT_SITE = os.environ.get(
@@ -77,9 +77,14 @@ def is_same_host_out_of_scope(url: str, site: str) -> bool:
     parsed = urllib.parse.urlsplit(url)
     expected = urllib.parse.urlsplit(site)
     base_path = expected.path.rstrip("/") + "/"
+    # The Pages origin host is the same property served under another name;
+    # pointers to it are ours but never IndexNow-eligible under the owned host.
+    same_property = parsed.netloc in {expected.netloc, ORIGIN_HOST}
+    # A Guide URL under the base path on either host is never "out of scope":
+    # on the origin host it is a generator regression that must fail loudly.
     return (
         parsed.scheme == "https"
-        and parsed.netloc == expected.netloc
+        and same_property
         and not parsed.path.startswith(base_path)
         and not parsed.query
         and not parsed.fragment

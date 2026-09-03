@@ -12,10 +12,11 @@ import subprocess
 import sys
 
 from official_locales import OFFICIAL_LOCALES
+from site_config import PUBLIC_SITE
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE)
 STANDARD_SITE_GUIDE_CONTRACT_URL = os.environ.get(
     "STANDARD_SITE_GUIDE_CONTRACT_URL",
     "https://raw.githubusercontent.com/alice51849/"

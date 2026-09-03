@@ -25,15 +25,13 @@ import app_store_storefronts
 import gen_store_attribution
 from official_locales import OFFICIAL_LOCALES
 import sync_standard_site
+from site_config import PUBLIC_SITE
 from websub_config import WEBSUB_HUBS
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
-SITE = os.environ.get(
-    "GEO_SITE",
-    "https://alice51849.github.io/ios-app-guide",
-).rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 SOURCE_PATH = HERE / "data" / "high_intent_decision_routes_v2.json"
 SYNC_CONTRACT_PATH = (
     HERE / "data" / "high_intent_guide_sync_contract.json"

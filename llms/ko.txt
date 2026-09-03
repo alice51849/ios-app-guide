@@ -3,7 +3,7 @@
 > 각 iOS 앱의 구조화된 정보 — 기능, 가격, FAQ.
 
 locale: ko
-apps: 46
+apps: 45
 - 앱 목록: https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.html
 - 앱 목록 · PWA: https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld
@@ -31,11 +31,11 @@ apps: 46
   - 손글씨와 타이핑으로 자료를 정리하고 PDF를 공부하세요. 29종 펜과 브러시, 서로 다른 100종 스타일, 페이지에 붙는 음성 메모, 기기 내 검색과 간격 반복 학습을 제공합니다.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6798813048
-- [AI Brief](https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html) — 파일을 명확한 맥락으로
+- [AI Brief：파일을 AI 프롬프트로](https://alice51849.github.io/ios-app-guide/ko/aibriefpack.html) — 파일을 명확한 맥락으로
   - 스크린샷, 문서, 메모를 한곳에 모으세요. 사실은 유지하세요. 민감한 정보는 검토하세요. 하나의 명확한 브리프를 복사하세요.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6791658210
-- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) — 15분 완성 7개 영역 집중
+- [Aim990 Plus：영어 모의고사·실전 연습](https://alice51849.github.io/ios-app-guide/ko/aim990plus.html) — 15분 완성 7개 영역 집중
   - 8문제 워밍업부터 15분 20문제 압박 훈련, 오답 재도전까지 한 흐름으로 이어집니다. 창작 630문제와 단계별 모의고사, 받아쓰기, 약점 분석을 모두 오프라인에서 사용하세요.
   - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
   - App Store: https://apps.apple.com/kr/app/id6792483140
@@ -43,10 +43,6 @@ apps: 46
   - 토익 990점을 목표로 하는 30일 학습 코치! 개인 맞춤형 학습으로 실력을 키워보세요.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6784974530
-- [BattAI: 배터리 상태 점수](https://alice51849.github.io/ios-app-guide/ko/battai.html) — 규칙, 출처, 한계를 분명하게
-  - 시간에 따른 배터리 변화를 이해하세요 규칙, 출처, 한계를 분명하게 더 깊은 기록, 계획, 리포트를 이용할 수 있어요. 한 번만 결제하면 됩니다. 구독은 없어요.
-  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
-  - App Store: https://apps.apple.com/kr/app/id6802423998
 - [CalDaily 계산기 및 테마](https://alice51849.github.io/ios-app-guide/ko/caldaily.html) — 위젯, 도구, 기록 정리
   - 계산 결과에 이름과 종류를 붙여 나중에 다시 찾는 계산기. 8가지 도구, 홈 화면 위젯, 100가지 테마를 모두 기기 안에서.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
@@ -67,15 +63,15 @@ apps: 46
   - 낱말만 따로 외우지 마세요. 47개 언어의 완전한 실생활 문장 8,400개를 시스템 음성으로 듣고, 인터랙티브 위젯과 Apple Watch에서도 이어서 배우세요. 한 번 구매, 구독 없음.
   - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
   - App Store: https://apps.apple.com/kr/app/id6790418321
-- [G+Money](https://alice51849.github.io/ios-app-guide/ko/gmoney.html) — 가계부·예산·환율 계산기
-  - 가계부와 환율 계산을 하나로. 지출을 기록하고 하루 예산을 정해 돈의 흐름을 한눈에. 해외에서도 오프라인 환율 변환. 광고 없음, 한 번 결제, 데이터는 내 기기에만.
-  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
-  - App Store: https://apps.apple.com/kr/app/id6755782939
-- [G+Money Lite](https://alice51849.github.io/ios-app-guide/ko/gmoneylite.html) — 여행 가계부·예산·환율
+- [G+Money Lite：여행 가계부·환율](https://alice51849.github.io/ios-app-guide/ko/gmoneylite.html) — 여행 가계부·예산·환율
   - 여행 경비, 이제 간단하게 · 무료: 환율·예산·기본 요약 · 여행 1개 · 지출 3건 · 일회성 결제 · 평생 이용 · 구독 없음
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6793436548
-- [HoursTag Lite](https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html) — 모든 것의 진짜 가격을 보세요
+- [G+Money：가계부·예산·환율](https://alice51849.github.io/ios-app-guide/ko/gmoney.html) — 가계부·예산·환율 계산기
+  - 가계부와 환율 계산을 하나로. 지출을 기록하고 하루 예산을 정해 돈의 흐름을 한눈에. 해외에서도 오프라인 환율 변환. 광고 없음, 한 번 결제, 데이터는 내 기기에만.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6755782939
+- [HoursTag Lite：노동시간으로 보는 가격](https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html) — 모든 것의 진짜 가격을 보세요
   - 모든 것의 진짜 가격을 보세요 - 가치 렌즈 만나기 - 삶의 시간 비용 - 모든 데이터는 기기에만 저장됩니다. 계정 불필요, 추적 없음
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6794039979
@@ -83,7 +79,7 @@ apps: 46
   - 가격을 '일하는 시간'으로 환산. 시급이나 월급을 입력하면 물건이 몇 시간어치인지 한눈에 보여 충동구매를 막아줘요. 목표와 지출도 관리. 광고 없음, 한 번 결제, 내 기기에만.
   - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
   - App Store: https://apps.apple.com/kr/app/id6754218117
-- [LockHour Pro](https://alice51849.github.io/ios-app-guide/ko/lockhour.html) — 앱 차단 · 집중 타이머
+- [LockHour Pro：앱 차단·집중 타이머](https://alice51849.github.io/ios-app-guide/ko/lockhour.html) — 앱 차단 · 집중 타이머
   - 산만하게 만드는 앱을 잠그세요. 집중 세션을 시작해 앱을 차단하고 연속 기록을 쌓아 시간을 되찾으세요. 완전 비공개, 광고 없음, 평생 한 번 결제.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6780107485
@@ -123,7 +119,7 @@ apps: 46
   - 수학을 사랑하게 되는 앱! 따뜻한 우주 모험에서 숫자·덧셈·도형·논리를 놀이로 배워요. 3~6세, 몬테소리 영감, 광고 없음, 평생 소장.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6778269699
-- [Mask My File](https://alice51849.github.io/ios-app-guide/ko/maskmyfile.html) — 공유 전 개인정보 영구 가리기
+- [Mask My File：공유 전 개인정보 삭제](https://alice51849.github.io/ios-app-guide/ko/maskmyfile.html) — 공유 전 개인정보 영구 가리기
   - 공유하기 전에 기기에서 개인정보를 영구적으로 가리세요. 내보낸 파일은 다시 열어 매번 확인하고, 한 번에 최대 100개 파일을 보호합니다. 한 번 구매로 평생 사용, 구독 없음.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6792850916
@@ -136,18 +132,18 @@ apps: 46
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6785004775
 - [MoneyTag: 수입과 지출](https://alice51849.github.io/ios-app-guide/ko/moneytag.html) — 프로젝트 · 태그 · 리포트
-  - 프로젝트마다 따로 계산되는 순액 · 프로젝트를 넘나드는 태그 합계 · 프로젝트당 통화 하나 · 자동 또는 수동 환율 · Apple Watch 앱 · 홈 화면·잠금 화면 위젯
+  - 부업, 플리마켓 판매, 월세 정산, 모임 회비 — 일마다 장부를 따로 두고, 태그 하나로 여러 장부에 흩어진 수입과 지출을 한 번에 확인하세요.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6801956402
 - [OnePage PPT: AI 발표자료](https://alice51849.github.io/ios-app-guide/ko/onepageppt.html) — 메모·PDF를 한 장 슬라이드로
   - 메모, 캡처, PDF, CSV를 붙여넣기만 하세요. 템플릿 고를 필요 없이 핵심이 제목으로 정리되고, 데이터가 뒷받침될 때만 막대·추이·비교 차트가 들어간 16:9 슬라이드 한 장이 완성됩니다. pptx·PDF·PNG로 내보내기, 인터넷 없이 기기 안에서 처리, 결제는 평생 한 번뿐입니다.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6798814385
-- [PhotoCream Pro](https://alice51849.github.io/ios-app-guide/ko/photocream.html) — 필름카메라·감성 사진편집
+- [PhotoCream Pro：필름 필터·감성 보정](https://alice51849.github.io/ios-app-guide/ko/photocream.html) — 필름카메라·감성 사진편집
   - 모든 사진에 필름 감성을. 진짜 그레인·라이트리크·100가지 빈티지 필터에 전문 뷰티 보정까지. 모두 기기 내 처리, 광고 없음, 평생 소장.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6781808054
-- [PicClear Pro](https://alice51849.github.io/ios-app-guide/ko/picclear.html) — 사진 클리너로 용량 확보
+- [PicClear Pro：사진 정리·중복 삭제](https://alice51849.github.io/ios-app-guide/ko/picclear.html) — 사진 클리너로 용량 확보
   - 중복 사진, 스크린샷, 흐릿한 사진, 큰 동영상을 기기에서 찾아 저장공간을 되찾으세요. 삭제 전 검토, 광고 없음, 구독 없음.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6780223070
@@ -167,7 +163,7 @@ apps: 46
   - 모든 스크린샷을 찾고, 처리하고, 정리하세요. 최근 50개 스크린샷은 핵심 흐름 전체를 무료로 쓸 수 있습니다. Apple Vision과 Natural Language를 기기에서 처리합니다. 업로드하지 않습니다. 한 번 구매 • 평생 이용 • 구독 없음.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6802166527
-- [Snapport Lite](https://alice51849.github.io/ios-app-guide/ko/snapportlite.html) — 집에서 ID 사진 만들기
+- [Snapport Lite：집에서 증명사진](https://alice51849.github.io/ios-app-guide/ko/snapportlite.html) — 집에서 ID 사진 만들기
   - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요. | 무료 버전 · 내보내기 1회 지원 | 한 번 구매로 평생 이용 · 구독 없음 | 광고 없음, 추적 없음
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6792856304
@@ -191,14 +187,14 @@ apps: 46
   - 흐리고 흔들린 사진을 몇 초 만에 선명하게. 샤픈, HD 확대, 오래된 사진 복원까지 iPhone에서 처리. 광고 없음, 한 번 구매.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6782275018
-- [WiFi Aid](https://alice51849.github.io/ios-app-guide/ko/wifiaid.html) — 네트워크 진단과 원인 분석
-  - 다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다.
-  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
-  - App Store: https://apps.apple.com/kr/app/id6790467886
 - [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/ko/wifiaidlite.html) — 네트워크 진단과 원인 분석
   - 진짜 문제 찾기. 각 도구는 1회 무료 사용을 포함합니다. 선택적 1회성 평생 잠금 해제로 무제한 사용—구독, 광고, 추적 없음.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6793414462
+- [WiFi Aid：네트워크 문제 진단](https://alice51849.github.io/ios-app-guide/ko/wifiaid.html) — 네트워크 진단과 원인 분석
+  - 다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6790467886
 - [Wordmate Lite 하루 5단어](https://alice51849.github.io/ios-app-guide/ko/wordmatelite.html) — 44개 언어, 1분이면 끝나는 어휘
   - 오늘은 딱 다섯 개. 1분이면 끝나는 학습이 조약돌 길처럼 쌓입니다. 44개 언어, 14가지 주제, 3단계 난이도. 계정도 인터넷도 필요 없고, 방금 익힌 다섯 개를 바로 확인할 수 있습니다.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.

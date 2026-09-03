@@ -3,7 +3,7 @@
 > Jäsennellyt tiedot jokaisen iOS-sovelluksen ominaisuuksista, hinnasta ja usein kysytyistä kysymyksistä.
 
 locale: fi
-apps: 46
+apps: 45
 - Sovellushakemisto: https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html
 - Sovellushakemisto · PWA: https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fi.jsonld
@@ -31,7 +31,7 @@ apps: 46
   - Yksityinen, ilman verkkoyhteyttä toimiva työtila käsinkirjoitukselle, tekstille ja PDF-merkinnöille. Liitä äänite sivuun ja kertaa sanakorteilla.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6798813048
-- [AI Brief](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html) — Tiedostoista selkeä konteksti
+- [AI Brief: Tiedostot promptiksi](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html) — Tiedostoista selkeä konteksti
   - Tuo näyttökuvat, dokumentit ja muistiinpanot yhteen. Säilytä faktat. Tarkista yksityiset tiedot. Kopioi yksi selkeä kooste.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6791658210
@@ -39,14 +39,10 @@ apps: 46
   - Valmistaudu TOEIC-testin huipentumaan! 30 päivän opas, joka vie sinut kohti unelmiesi pistettä.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6784974530
-- [Aim990 Plus](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) — Englantia paineen alla
+- [Aim990 Plus: Englannin testi](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) — Englantia paineen alla
   - Harjoittele englantia aidon koetilanteen tuntuisessa paineessa: lämmittely, ajastettu tehtäväsarja ja omiin virheisiin perustuva kertaus.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792483140
-- [BattAI: Akun kuntotulos](https://alice51849.github.io/ios-app-guide/fi/battai.html) — Selkeät säännöt, lähteet ja rajat
-  - Ymmärrä akkusi kehitys Selkeät säännöt, lähteet ja rajat Avaa syvempi historia, suunnittelu ja raportit. Yksi maksu. Ei tilausta.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
-  - App Store: https://apps.apple.com/fi/app/id6802423998
 - [CalDaily: laskin ja teemat](https://alice51849.github.io/ios-app-guide/fi/caldaily.html) — Widget, työkalut ja historia
   - Jokaiselle tallennetulle tulokselle voi antaa nimen ja tyypin, ja löydät sen myöhemmin. Kahdeksan työkalua, kotinäytön widget ja sata teemaa, kaikki laitteessasi.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
@@ -67,15 +63,15 @@ apps: 46
   - Unohda irralliset sanat. Opi 8 400 kokonaista lausetta 47 kielellä, kuuntele järjestelmä-äänellä ja jatka widgetissä tai Apple Watchissa. Yksi maksu, ei tilausta.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6790418321
-- [G+Money](https://alice51849.github.io/ios-app-guide/fi/gmoney.html) — Budjetti, menot & valuutta
-  - Kaksi työkalua yhdessä: seuraa menoja, aseta budjetti ja muunna 50+ valuuttaa—kotona tai matkalla. Täysin offline, yksityinen, mainokseton, kertaosto.
-  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
-  - App Store: https://apps.apple.com/fi/app/id6755782939
-- [G+Money Lite](https://alice51849.github.io/ios-app-guide/fi/gmoneylite.html) — Budjetti, menot & valuutta
+- [G+Money Lite: Matkakulut](https://alice51849.github.io/ios-app-guide/fi/gmoneylite.html) — Budjetti, menot & valuutta
   - Matkaraha, helposti · Ilmainen: kurssit, budjetti, yhteenveto · 1 matka · 3 kulua · Yksi maksu · Elinikäinen käyttö · Ei tilausta
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6793436548
-- [HoursTag Lite](https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html) — Asioiden todellinen hinta
+- [G+Money: Menot ja budjetti](https://alice51849.github.io/ios-app-guide/fi/gmoney.html) — Budjetti, menot & valuutta
+  - Kaksi työkalua yhdessä: seuraa menoja, aseta budjetti ja muunna 50+ valuuttaa—kotona tai matkalla. Täysin offline, yksityinen, mainokseton, kertaosto.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6755782939
+- [HoursTag Lite: Hinta tunteina](https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html) — Asioiden todellinen hinta
   - Asioiden todellinen hinta - Tutustu arvoprismaasi - Aikakustannus - Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6794039979
@@ -83,7 +79,7 @@ apps: 46
   - Muuta jokainen hinta työtunneiksi. Syötä tulosi, näe mitä asiat oikeasti maksavat aikana ja pysäytä heräteostokset. Tavoitteet ja menot. Mainokseton, kertaosto.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6754218117
-- [LockHour Pro](https://alice51849.github.io/ios-app-guide/fi/lockhour.html) — Sovellusten esto & ajastin
+- [LockHour Pro: Sovellusten esto](https://alice51849.github.io/ios-app-guide/fi/lockhour.html) — Sovellusten esto & ajastin
   - Lukitse häiritsevät sovellukset. Aloita keskittymisjakso, estä sovellukset, kerää putkia ja ota aikasi takaisin. Yksityinen, mainokseton, kertaosto.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6780107485
@@ -127,7 +123,7 @@ apps: 46
   - Näe heti, onko hyvä päivä lähteä ulos lasten kanssa. Tarkka ennuste tunneittain ja viikoksi, sade, UV ja pukeutumisvinkki. Ei mainoksia, ei tilausta, kertaosto.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6779552704
-- [Mask My File](https://alice51849.github.io/ios-app-guide/fi/maskmyfile.html) — Suojaa ennen jakamista
+- [Mask My File: Poista tietosi](https://alice51849.github.io/ios-app-guide/fi/maskmyfile.html) — Suojaa ennen jakamista
   - Piilota yksityiset tiedot ennen jakamista. Jokainen kopio avataan ja tarkistetaan uudelleen, ja suojaat jopa 100 tiedostoa kerralla. Kertaosto, ei tilauksia.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792850916
@@ -140,18 +136,18 @@ apps: 46
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6785004775
 - [MoneyTag: Tulot ja menot](https://alice51849.github.io/ios-app-guide/fi/moneytag.html) — Projektit · Tunnisteet
-  - Jokaisella projektilla oma nettotulos · Tunnisteet laskevat yhteen projektien yli · Yksi valuutta per projekti · Live- tai manuaaliset kurssit · Apple Watch -sovellus
+  - Keikkatyöt, myyntikoju, vuokra-asunto, luokkakassa – jokaisella oma kirjanpito, ja yksi tunniste paljastaa, mitä se toi ja vei niissä kaikissa yhteensä.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6801956402
 - [OnePage PPT: tekoälyesitys](https://alice51849.github.io/ios-app-guide/fi/onepageppt.html) — Muistiinpanoista yksi dia
   - Liitä muistiinpanot, kuvakaappaukset tai PDF ja saat yhden viimeistellyn 16:9-dian oikeine kaavioineen. Esitä tai vie PowerPointiin. Toimii ilman verkkoa.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6798814385
-- [PhotoCream Pro](https://alice51849.github.io/ios-app-guide/fi/photocream.html) — Filmikamera & retro suodatin
+- [PhotoCream Pro: Filmifiltterit](https://alice51849.github.io/ios-app-guide/fi/photocream.html) — Filmikamera & retro suodatin
   - Anna jokaiselle kuvalle filmin sielu: aitoa rakeisuutta, valovuotoja, 100+ vintage-tyyliä ja pro-kauneusretusointi. Kaikki laitteessa, mainokseton, kertaosto.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6781808054
-- [PicClear Pro](https://alice51849.github.io/ios-app-guide/fi/picclear.html) — Kuvapuhdistaja vapauttaa tilaa
+- [PicClear Pro: Kuvien siivous](https://alice51849.github.io/ios-app-guide/fi/picclear.html) — Kuvapuhdistaja vapauttaa tilaa
   - Löydä kaksoiskuvat, kuvakaappaukset, sumeat kuvat ja suuret videot. Tarkista kaikki laitteessa ennen poistoa. Ei mainoksia, ei tilausta.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6780223070
@@ -171,7 +167,7 @@ apps: 46
   - Löydä, hoida ja siivoa jokainen näyttökuva. Uusimmat 50 näyttökuvaa sisältävät koko ydinkulun maksutta. Kertaosto • Elinikäinen käyttö • Ei tilausta.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6802166527
-- [Snapport Lite](https://alice51849.github.io/ios-app-guide/fi/snapportlite.html) — Luo ID-valokuvia kotona
+- [Snapport Lite: Tee passikuvat](https://alice51849.github.io/ios-app-guide/fi/snapportlite.html) — Luo ID-valokuvia kotona
   - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä. | Ilmaisversio · Tukee 1 vientiä
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792856304
@@ -195,14 +191,14 @@ apps: 46
   - Pelasta sumeat ja tärähtäneet kuvat sekunneissa. Terävöitä, paranna HDksi, suurenna 4Kksi ja palauta vanhat kuvat iPhonessa. Ei tilausta.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6782275018
-- [WiFi Aid](https://alice51849.github.io/ios-app-guide/fi/wifiaid.html) — Verkon vianmääritys näytöin
-  - Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa.
-  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
-  - App Store: https://apps.apple.com/fi/app/id6790467886
 - [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/fi/wifiaidlite.html) — Verkon vianmääritys näytöin
   - Löydä oikea ongelma. Jokaisessa työkalussa yksi ilmainen täysi käyttö. Valinnainen elinikäinen avaus rajattomaan käyttöön—ei tilausta.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6793414462
+- [WiFi Aid: Löydä verkon viat](https://alice51849.github.io/ios-app-guide/fi/wifiaid.html) — Verkon vianmääritys näytöin
+  - Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6790467886
 - [Wordmate Lite: Sanasto](https://alice51849.github.io/ios-app-guide/fi/wordmatelite.html) — Viisi uutta sanaa päivässä
   - Viisi sanaa. Yksi minuutti. Yksi askel, jonka näet. Ei korttipakkoja rakennettavaksi eikä loputonta kertausjonoa. Avaa, kulje päivän polku, ja se on tehty.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.

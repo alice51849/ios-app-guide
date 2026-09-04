@@ -1147,15 +1147,19 @@ def reconcile_remote_state(
         did=did,
     )
 
-    claimed_publications = [
-        (rkey, record)
-        for rkey, record in publication_records.items()
-        if record["value"].get("url") == publication_url
-    ]
-    if len(claimed_publications) > 1:
+    publication_candidates = []
+    for rkey, record in publication_records.items():
+        value = record["value"]
+        remote_url = str(value.get("url") or "")
+        if (
+            remote_url == publication_url
+            or PUBLICATION_URL_MIGRATIONS.get(remote_url) == publication_url
+        ):
+            publication_candidates.append((rkey, record))
+    if len(publication_candidates) > 1:
         raise StateError("Multiple remote records claim the Standard.site publication")
-    if claimed_publications and (
-        claimed_publications[0][1]["value"].get("$type")
+    if publication_candidates and (
+        publication_candidates[0][1]["value"].get("$type")
         != PUBLICATION_COLLECTION
     ):
         raise StateError("Remote publication claim has the wrong record type")
@@ -1163,8 +1167,8 @@ def reconcile_remote_state(
     publication = state["publication"]
     configured_rkey = str(publication.get("rkey") or "")
     remote_publication: dict[str, object] | None = None
-    if claimed_publications:
-        remote_rkey, remote_publication = claimed_publications[0]
+    if publication_candidates:
+        remote_rkey, remote_publication = publication_candidates[0]
         if configured_rkey and configured_rkey != remote_rkey:
             raise StateError(
                 "Durable publication rkey conflicts with the remote publication"
@@ -1174,18 +1178,9 @@ def reconcile_remote_state(
     elif configured_rkey:
         occupying = publication_records.get(configured_rkey)
         if occupying is not None:
-            value = occupying["value"]
-            legacy_url = str(value.get("url") or "")
-            if (
-                value.get("$type") == PUBLICATION_COLLECTION
-                and PUBLICATION_URL_MIGRATIONS.get(legacy_url)
-                == publication_url
-            ):
-                remote_publication = occupying
-            else:
-                raise StateError(
-                    "Durable publication rkey is occupied by another record"
-                )
+            raise StateError(
+                "Durable publication rkey is occupied by another record"
+            )
         else:
             _clear_publication_confirmation(publication)
 

@@ -1617,6 +1617,119 @@ class StandardSitePublisherTests(ProjectScratchCase):
             ]["value"]["url"],
         )
 
+    def test_origin_migration_recovers_remote_identity_after_state_loss(
+        self,
+    ) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        legacy = next(iter(publisher.PUBLICATION_URL_MIGRATIONS))
+        legacy_manifest = deepcopy(manifest)
+        legacy_manifest["publication"]["url"] = legacy
+        for document in legacy_manifest["documents"]:
+            document["canonical_url"] = legacy + document["path"]
+            document["content_hash"] = generator.document_content_hash(
+                document
+            )
+        generator.validate_manifest(legacy_manifest)
+        publisher.run(
+            legacy_manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        legacy_state = json.loads(state_path.read_text(encoding="utf-8"))
+        legacy_rkey = legacy_state["publication"]["rkey"]
+        state_path.unlink()
+
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW + timedelta(days=1),
+        )
+
+        recovered = json.loads(state_path.read_text(encoding="utf-8"))
+        publication_keys = {
+            rkey
+            for collection, rkey in client.records
+            if collection == publisher.PUBLICATION_COLLECTION
+        }
+        self.assertEqual({legacy_rkey}, publication_keys)
+        self.assertEqual(legacy_rkey, recovered["publication"]["rkey"])
+        self.assertEqual(
+            manifest["publication"]["url"],
+            client.records[
+                (publisher.PUBLICATION_COLLECTION, legacy_rkey)
+            ]["value"]["url"],
+        )
+
+    def test_origin_migration_rejects_mixed_remote_publications(
+        self,
+    ) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        legacy = next(iter(publisher.PUBLICATION_URL_MIGRATIONS))
+        legacy_manifest = deepcopy(manifest)
+        legacy_manifest["publication"]["url"] = legacy
+        for document in legacy_manifest["documents"]:
+            document["canonical_url"] = legacy + document["path"]
+            document["content_hash"] = generator.document_content_hash(
+                document
+            )
+        generator.validate_manifest(legacy_manifest)
+        publisher.run(
+            legacy_manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        client.put_record(
+            publisher.PUBLICATION_COLLECTION,
+            "3zzzzzzzzzzzz",
+            publisher.publication_record(manifest),
+        )
+        state_path.unlink()
+
+        with self.assertRaisesRegex(
+            publisher.StateError, "Multiple remote records"
+        ):
+            publisher.run(
+                manifest,
+                state_path=state_path,
+                contract_path=contract_path,
+                well_known_path=well_known_path,
+                limit=1,
+                publish=True,
+                environment=self.ENV,
+                client_factory=lambda _handle, _password: client,
+                expected_did=self.DID,
+                tid_generator=self.deterministic_tids(),
+                now=self.NOW + timedelta(days=1),
+            )
+
     def test_upserts_are_idempotent_and_rkeys_stay_stable(self) -> None:
         state_path, contract_path, well_known_path = self.paths()
         client = FakeRepoClient(self.DID)

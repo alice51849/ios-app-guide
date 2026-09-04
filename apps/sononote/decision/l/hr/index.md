@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za glasovne bilješke koja sažima sastanke na iPhoneu"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/hr/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

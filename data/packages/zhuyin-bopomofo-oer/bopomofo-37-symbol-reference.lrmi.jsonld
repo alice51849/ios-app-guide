@@ -221,7 +221,7 @@
         "@type": "xsd:date"
       },
       "schema:dateModified": {
-        "@value": "2026-07-11T13:00:48Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "schema:encodingFormat": "application/ld+json",
@@ -278,7 +278,7 @@
       },
       "schema:identifier": [
         "LUMI-ZHUYIN-EPUB-EN-2026",
-        "urn:sha256:be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9"
+        "urn:sha256:748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24"
       ],
       "schema:inLanguage": "en",
       "schema:datePublished": {
@@ -286,7 +286,7 @@
         "@type": "xsd:date"
       },
       "schema:dateModified": {
-        "@value": "2026-07-11T10:45:50Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "schema:license": {
@@ -330,8 +330,8 @@
           "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
         },
         "schema:encodingFormat": "application/epub+zip",
-        "schema:contentSize": "9564 bytes",
-        "schema:sha256": "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+        "schema:contentSize": "9533 bytes",
+        "schema:sha256": "748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24",
         "schema:inLanguage": "en"
       },
       "schema:accessMode": "textual",
@@ -427,7 +427,7 @@
       },
       "schema:identifier": [
         "LUMI-ZHUYIN-EPUB-ZH-HANT-2026",
-        "urn:sha256:0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b"
+        "urn:sha256:8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b"
       ],
       "schema:inLanguage": "zh-Hant",
       "schema:datePublished": {
@@ -435,7 +435,7 @@
         "@type": "xsd:date"
       },
       "schema:dateModified": {
-        "@value": "2026-07-11T10:45:50Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "schema:license": {
@@ -479,8 +479,8 @@
           "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
         },
         "schema:encodingFormat": "application/epub+zip",
-        "schema:contentSize": "10287 bytes",
-        "schema:sha256": "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+        "schema:contentSize": "10258 bytes",
+        "schema:sha256": "8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b",
         "schema:inLanguage": "zh-Hant"
       },
       "schema:accessMode": "textual",

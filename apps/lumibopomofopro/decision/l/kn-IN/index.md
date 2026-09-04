@@ -2,7 +2,7 @@
 title: "ದ್ವಿಭಾಷಾ ಮಕ್ಕಳಿಗೆ ಪೂರ್ಣ Zhuyin ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/kn-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

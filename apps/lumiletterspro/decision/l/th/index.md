@@ -2,7 +2,7 @@
 title: "แอปโฟนิกส์ครบวงจรสำหรับเตรียมอนุบาลที่ดีที่สุด"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/th/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

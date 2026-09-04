@@ -123,7 +123,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:language": [
@@ -271,7 +271,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -389,7 +389,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "9675",
+        "@value": "9670",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -411,7 +411,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "5072ef1d1fb3951830f71fc4e2bac378c6f9a22b883070cd9f96eb7c2de230d7",
+        "@value": "42dd00e51fe23acc67ca33cf642a73133be7b9655829ccb8900a97b1084abe5f",
         "@type": "xsd:hexBinary"
       }
     },
@@ -434,7 +434,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "9773",
+        "@value": "9563",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -459,7 +459,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "e6c95e415d94c8e9f32c9169e68acd2e988960ce171449c7d3d0a0c848a50028",
+        "@value": "2825e472d5696cc6ab9eb433fcb9ed3c685db442a72ade187c820d84b0d109c7",
         "@type": "xsd:hexBinary"
       }
     },
@@ -481,7 +481,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -522,7 +522,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11",
+        "@value": "2026-09-04",
         "@type": "xsd:date"
       },
       "dcterms:publisher": {
@@ -619,7 +619,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "79017",
+        "@value": "78997",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -641,7 +641,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a",
+        "@value": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49",
         "@type": "xsd:hexBinary"
       }
     },
@@ -664,7 +664,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/turtle"
       },
       "dcat:byteSize": {
-        "@value": "32239",
+        "@value": "32219",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -686,7 +686,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411",
+        "@value": "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1",
         "@type": "xsd:hexBinary"
       }
     },
@@ -709,7 +709,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/n-triples"
       },
       "dcat:byteSize": {
-        "@value": "141016",
+        "@value": "135781",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -731,7 +731,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef",
+        "@value": "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4",
         "@type": "xsd:hexBinary"
       }
     },
@@ -754,7 +754,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/turtle"
       },
       "dcat:byteSize": {
-        "@value": "4070",
+        "@value": "4065",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -776,7 +776,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc",
+        "@value": "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1",
         "@type": "xsd:hexBinary"
       }
     },
@@ -799,7 +799,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "7408",
+        "@value": "7278",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -821,7 +821,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "07677e136027ee01638b334acc6df1435509967bd274d2c38e341a67e94d814e",
+        "@value": "c2fa89eb04cf55ec535a82aa0d62879e78f843ceb60c5d010f7a549e5fd12661",
         "@type": "xsd:hexBinary"
       }
     },
@@ -843,7 +843,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -884,7 +884,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11",
+        "@value": "2026-09-04",
         "@type": "xsd:date"
       },
       "dcterms:publisher": {
@@ -994,7 +994,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/csv"
       },
       "dcat:byteSize": {
-        "@value": "8350",
+        "@value": "7980",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1016,7 +1016,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+        "@value": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1039,7 +1039,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/plain"
       },
       "dcat:byteSize": {
-        "@value": "14734",
+        "@value": "14364",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1061,7 +1061,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+        "@value": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1084,7 +1084,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "13777",
+        "@value": "13637",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1106,7 +1106,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7",
+        "@value": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1129,7 +1129,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/csvm+json"
       },
       "dcat:byteSize": {
-        "@value": "7701",
+        "@value": "7631",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1151,7 +1151,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
+        "@value": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1174,7 +1174,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "4867",
+        "@value": "4851",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1199,7 +1199,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "8cdb9e0961d725552ce284d1a6e1521f92dd9afd69682d83fdf674851893ee3d",
+        "@value": "56923ddec232b791d97c679be286af139ebdd22b509808446d5558c7d2de1a59",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1244,7 +1244,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "9b26f04fb3eef881df3a983e590f565bc155e9fe3d4782d19ecaf60391a26495",
+        "@value": "776ae236eb143e1b613750ac772ac541e486f47eb50e8c449c84860452fd5521",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1267,7 +1267,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "3029",
+        "@value": "2974",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1289,7 +1289,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "6a382525ad09793d7e57584046595d3fd97fe9d85bc7dea0198d074dc74146c1",
+        "@value": "a88565a8c409920e4eaec3f6ab66d379cf02b5ee76bce2f57be93c724eaf8c68",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1311,7 +1311,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1435,7 +1435,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "2165",
+        "@value": "2145",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1457,7 +1457,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "80efcd4adad386e9838f53b5d415f38be84ab4b5e3ecc6d9156b0284f7e1ab94",
+        "@value": "fc7819fffb1d9513472ba86a8269df9fc9a7598a546160dc5839b6a8fe275a88",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1480,7 +1480,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "5470",
+        "@value": "5445",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1502,7 +1502,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "ac2e61302e11c8613a44ab42c2927daace54ce1583a20b2f5072de6d407dc7fb",
+        "@value": "25762f51439d14bf191d9eff2f422721b9cba703c1e67736d7eadec45b152206",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1525,7 +1525,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/csv"
       },
       "dcat:byteSize": {
-        "@value": "8350",
+        "@value": "7980",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1547,7 +1547,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+        "@value": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1569,7 +1569,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1610,7 +1610,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11",
+        "@value": "2026-09-04",
         "@type": "xsd:date"
       },
       "dcterms:publisher": {
@@ -1693,7 +1693,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "309126",
+        "@value": "302881",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1718,7 +1718,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "e27e729ca86f0dc0347fbd5625b9cfb6ddc06f0fa929f19287539463c2eab316",
+        "@value": "adca89022c1a439e93be4ededc34fc05273a6507367a2aafb15d74647850ddf3",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1763,7 +1763,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "000818b69543fd9b7f56b45aa3b7eff0abfd07eb1e62b44b53746a559f7f13dc",
+        "@value": "eab80e0a6fcba7c443533d0c0294df19f9cfecdbf89f37b248f3f223021ad650",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1786,7 +1786,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "6182",
+        "@value": "6107",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1808,7 +1808,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "5d7853556c3c49629e30774e27f4b92a4dcbfa8f79b4337541231cd82bf98e0c",
+        "@value": "7c1e471fecdd23a706eae7a2e440376c189156e76c54c337bba37fef8a70228c",
         "@type": "xsd:hexBinary"
       }
     },
@@ -1830,7 +1830,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -1871,7 +1871,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T17:19:58Z",
+        "@value": "2026-09-04T14:41:42Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -1954,7 +1954,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "317476",
+        "@value": "595224",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -1979,7 +1979,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "523d0a796fe84773ca713fe2779846e1bcfec73b5b1524e058970c22360989d2",
+        "@value": "0f0c08262f7001e8af7be52d8fbeecf06bd5b8ceb1617d330b169909a1935e1c",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2024,7 +2024,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "0e508eab13b6fe4d687bfe44f486f1e329b724b72bae087d4d659bc2594a2fc7",
+        "@value": "401b022651cd888c6edd1af2d6cc36a3cb91ef5b0f6d6eaa9c7fa4b6cc8e6f03",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2047,7 +2047,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "7669",
+        "@value": "7594",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2069,7 +2069,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "2a448300c88c9bcad47c346ebfc295420c081ffce3bcb410e424dbd272bca822",
+        "@value": "256919df74671eabaabd8453bab6cebdeec230acd71662062fce29076ad6583f",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2091,7 +2091,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2221,7 +2221,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "1526",
+        "@value": "1511",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2243,7 +2243,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "ee825f28ea05055f08b4be1ae22e03cdb0c4adc55699e590af3ab6b4c8b5e863",
+        "@value": "7c1d1a39a96ae2ab7b19404cb648ff69846ea7483624e33f1c312a114d455223",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2266,7 +2266,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "120940",
+        "@value": "119965",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2288,7 +2288,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "dea96363d882f1b7d04979092b884e2e7b223c7387d6f07360048bce533b082b",
+        "@value": "a75feb47be71d9acf952015cdb75cd217bccb78f6b121da709b63da6cba296fe",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2311,7 +2311,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "222009",
+        "@value": "221019",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2336,7 +2336,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "9df20d6ebcf4b9fada38fb67ab7874a76f14ead2ab69049a98e18409e7b979f8",
+        "@value": "c31e6ee6041e674a947c9e411884df8d43d177478e2db0c144420bde08dd4085",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2381,7 +2381,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "0bb7f88b06d39fc985d8aff1f1cf52eea4261cfb85c2ca97a3e18f645b57d8f8",
+        "@value": "8149198f058f4eafb2341a61acf39cdbd482c8db99feefb2d6200dd4b89d5561",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2404,7 +2404,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "18588",
+        "@value": "18348",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2426,7 +2426,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "43279303ad1bb131972a92508117df3b7baa4d724263873d3ab8ae1fba5ab3cd",
+        "@value": "67e5eae5dd09c1d2d2b3e5cf3691f9e46d37b4d22429213d141fe221bc8b3191",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2448,7 +2448,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2489,7 +2489,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03",
+        "@value": "2026-09-04",
         "@type": "xsd:date"
       },
       "dcterms:publisher": {
@@ -2575,7 +2575,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "20388",
+        "@value": "20379",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2600,7 +2600,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "c4e433221e8e23131e91d11aff6ed2f9154eacd691b1739b89bd2f44093f8a36",
+        "@value": "26135af42a5b95920e77fbcc0ea674d69194a35a3c60b6255a3e9ef8a627fe15",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2623,7 +2623,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "9141",
+        "@value": "9071",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2645,7 +2645,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "3088ef6f58801d653c51c89b281c502ec171465d9a645a49bcbbaa3dd1c7f9f7",
+        "@value": "f8f8172621ed5a8c46a6a93ffa2d1ea9d6bec4530c3230fd45634130a1860eee",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2668,7 +2668,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/html"
       },
       "dcat:byteSize": {
-        "@value": "4268",
+        "@value": "4258",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2690,7 +2690,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "73355363e3339daf94ad4218031c9a1e82d665d78455a41b6cef85a860f49a4f",
+        "@value": "58d1db606b3df83bd2b26495413dc0fc62e7b5482950c2408ff15b7e60613cad",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2735,7 +2735,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "c99b9941b4bf9983deb033658df5c5116dd8d34995b0866f01e5ba023fb5e51f",
+        "@value": "f42877616a2c7aa2d3ed27a4387b0a1a88caff0254ccf31695ce93d4756de54c",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2757,7 +2757,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -2798,7 +2798,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T20:08:50Z",
+        "@value": "2026-09-04T14:41:42Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -2892,7 +2892,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "20380",
+        "@value": "20363",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2917,7 +2917,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "3ab4ab392b795f31fd93a6f7673d9b65b37d88e478aaa75961cd59436afa3f16",
+        "@value": "2d3b325d9fb30a0e08e8c24da64f8f7e87129e9444f3d8a6134cbf2e9f6cbc43",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2940,7 +2940,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/xml"
       },
       "dcat:byteSize": {
-        "@value": "5794",
+        "@value": "5744",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -2962,7 +2962,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "6316a3c27c55dff4138eaf879f3338434bcc865c0b06b4b8f23ccae3097f6edc",
+        "@value": "bd7d4c86f3d5294fdfa83051e72c5a9b0156486b54be5d63a9b95b0d94ec6188",
         "@type": "xsd:hexBinary"
       }
     },
@@ -2985,7 +2985,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/xml"
       },
       "dcat:byteSize": {
-        "@value": "27906",
+        "@value": "27691",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3007,7 +3007,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "83848d27eb92ef712ad4a17b77d5176c872efa2f975320d3841bfc5a944dc0fa",
+        "@value": "8bdb06c9db211cb396f6cf433d2359047014c2909bcffe983aa357ece73d3694",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3052,7 +3052,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "c439fecf088663bfed9104b32b2942ff1a24465fdf9f5b7b9db87a7448b2d8db",
+        "@value": "851cede409bf0b2e13ad11b6d5c439f3ab05315d8b5bb18c5e756830adf0de6f",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3075,7 +3075,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "5609",
+        "@value": "5534",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3097,7 +3097,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "6af72a3f903e384b4046fa97b4fa7d5ce6aadc40e27ff5dd0ca31e7a112a8c11",
+        "@value": "9a05fb2ef09b6da26b3df75408cbb6f23345f292d045dd513b1283f8556536f1",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3119,7 +3119,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -3160,7 +3160,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T21:45:19Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -3260,7 +3260,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "10723",
+        "@value": "10713",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3285,7 +3285,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "d4840bad229cbca80f402575d6570755627ccad407bddb8cba77e35e147a4bdc",
+        "@value": "f3424777324fce03a48deac2c4cc4b8b77d7ed8edd703b7b7cd35619a0be39e1",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3308,7 +3308,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
       },
       "dcat:byteSize": {
-        "@value": "23395",
+        "@value": "22950",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3330,7 +3330,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "546cb1fc83bd885575b8c49e34867d03422f6be98769761960b2ca327240b8f4",
+        "@value": "4b5ae24032017cd6870e04833f7f9bcb34adc72ef4a9cc754ea87e520d05dc86",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3353,7 +3353,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/turtle"
       },
       "dcat:byteSize": {
-        "@value": "35131",
+        "@value": "34036",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3375,7 +3375,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "86d0bd8096e01b935d87d19cad764420135ef1e6a4ef5f5645a740ecd0ea2a2e",
+        "@value": "fd213423db69816818f2ae717fde9d19f5d0d4302a00d8ea99f31d436dd95d2f",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3398,7 +3398,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "27385",
+        "@value": "26940",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3420,7 +3420,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "30307ad9c0f1e0156c60b7ff3caa5c88a99a8bb515e7cdc8f00ceb1edb2e2885",
+        "@value": "fa76a5164de36a09fe878dc59bf033fe1444ba11af738bb17dcb9dd40cb33ca7",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3465,7 +3465,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "6c20d3710cd3a4bd918023f8ac87eaa6e68b0a8c97fb923eb4b56502756fcc47",
+        "@value": "fe70af132539d1122bae5ebe0fb386d8994fbd3c262f4b13256c0baf954023a5",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3488,7 +3488,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "9907",
+        "@value": "9772",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3510,7 +3510,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "915b2e769c8fd0f1650c035a8408b7baaba52fbb5d1c74529cdff3c88cb1dac3",
+        "@value": "970f7a13b19a7f1ffd1e7b88140e5acb2def84e3dc852121cba290df42d92861",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3532,7 +3532,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -3573,7 +3573,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T21:36:15Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -3682,7 +3682,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "10604",
+        "@value": "10580",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3707,7 +3707,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "643110cdfd9a643645228c24d6cd99ba5f48b78ff8375cb05122e3745ed78401",
+        "@value": "ad87ab8cfd7be0b44a850e7f47c845e062bf3175078394c02dca359c711fb957",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3730,7 +3730,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "11113",
+        "@value": "10968",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3752,7 +3752,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "c0ef478f3dee33ee0c268d94bcb317a03b9658b74522ae2992946c6a27c6d0f0",
+        "@value": "dc464aa5b2be753f0f1e3660254fcf1d1e798d542bc4703aff389c6cdcfeb6c6",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3775,7 +3775,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/turtle"
       },
       "dcat:byteSize": {
-        "@value": "15139",
+        "@value": "14709",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3797,7 +3797,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "0f894e4ccf73b166b4e560daa68bf3ef5a533b7532f6c3b9262504ed6306bb23",
+        "@value": "76edfd00371fb4b4ab425a87ec2ed56a1c1195740ef8b12dfc633af0de96443e",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3820,7 +3820,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "33626",
+        "@value": "32891",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3842,7 +3842,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "3e78edefbc852bce23a3f2ed066fea87ab963195c6073f2a3f6d901cf9bc87c1",
+        "@value": "392e80e6d846a38d19ec1cde308e919dbc7fa9d66c6cb278457541f8dde362ce",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3865,7 +3865,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "31169",
+        "@value": "30489",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3887,7 +3887,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "a278318f325f55484a8d58ac1f2b88a7143079610e1032a6834731db93984ec7",
+        "@value": "894abc8f6e81aea5e1179c68acb1ac25a29ee997f7ffed989a39d82bcbcc92d0",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3910,7 +3910,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "31152",
+        "@value": "30472",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3932,7 +3932,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "43d8e5baa131a8d75db41042159ad4a82eee1fc0ede776a941ff7867de5953fe",
+        "@value": "ba4a1bbd20573a6291e8de64c752d7793f166d403b30500d0143a9b0dbb055ee",
         "@type": "xsd:hexBinary"
       }
     },
@@ -3955,7 +3955,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/turtle"
       },
       "dcat:byteSize": {
-        "@value": "1383",
+        "@value": "1368",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -3977,7 +3977,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "8946d9fa102d4da38fffc54a726f10649a096407295243a2ce0027c690887256",
+        "@value": "61be9c203c50da8a6ffecfa40bbff7b88a67679eccb24cb585508a97a37631d7",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4022,7 +4022,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "48745bb04a5c97139a0e2e121d6dfc99c65fac7e31bc6b621d6036a3555a4c1e",
+        "@value": "3de829ee4b09b3cf4e178be2f0c836f456ff6929a464ff3050559725bee1353f",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4045,7 +4045,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "4860",
+        "@value": "4795",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -4067,7 +4067,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "dcb874e7be4e77d37bfc1bfd86d2ad121091032c0c46529c1f99f1149c76f871",
+        "@value": "59dbdfb4b76759e3f54d3be48d1cecfaabe8e55cc47e84281b75be8634a97662",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4089,7 +4089,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -4290,7 +4290,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "5039",
+        "@value": "4989",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -4312,7 +4312,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "b526b5c0da4e8bed381a515fc5d7dc09757ac5ff02061f8c893adbc55fba0bbc",
+        "@value": "d2ee5b068a1047a25eb645c1705cf36269a50ae0ccdf566fc2864d4175954611",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4334,7 +4334,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -4683,7 +4683,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "3659",
+        "@value": "3609",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -4705,7 +4705,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "676f2bf06e014e060b26382ddb38ad3fb9e5e6158e034cf0dd1b13b47b01d77f",
+        "@value": "548449a4195b61a0a5f9f49eddcd6901d72821f27bb8a309f272dc4e94d4eb22",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4727,7 +4727,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -4768,7 +4768,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T10:45:50Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -4874,7 +4874,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/epub+zip"
       },
       "dcat:byteSize": {
-        "@value": "9564",
+        "@value": "9533",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": {
@@ -4891,7 +4891,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+        "@value": "748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4914,7 +4914,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/epub+zip"
       },
       "dcat:byteSize": {
-        "@value": "10287",
+        "@value": "10258",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": {
@@ -4931,7 +4931,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+        "@value": "8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4954,7 +4954,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "5327",
+        "@value": "5222",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": {
@@ -4971,7 +4971,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "09ec312d52ba898b2a960077f4d289532701552eb302d34ee640ad73bdbdac16",
+        "@value": "f506e98278322f8a13feaca1e0dab2a16fa11c1861534819e5253858e9b1a0d0",
         "@type": "xsd:hexBinary"
       }
     },
@@ -4994,7 +4994,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "5425",
+        "@value": "5320",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": {
@@ -5011,7 +5011,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "e334dadc09d8e45429c7ec74d2cf27df1fad2a75388c5ecc3d2a01805e015827",
+        "@value": "ba5aad72296263a6f643a5ed5fa644e74aa8d0325bd7eceb90899e591953de5c",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5034,7 +5034,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:byteSize": {
-        "@value": "7313",
+        "@value": "7223",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5056,7 +5056,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "eec21c6cb926389c7a2831247806827cc8f0be8b040851974df726cfed416dcb",
+        "@value": "aa1aa709ffede0f77448f11f4fcaec2741b146cdc3b574cd9973724ac073a538",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5079,7 +5079,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/atom+xml"
       },
       "dcat:byteSize": {
-        "@value": "5920",
+        "@value": "5815",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5101,7 +5101,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "abec7a277bdb59eac7d19e5c710c79e9e2daaa77d2ea8ebf25fbdc585321edaa",
+        "@value": "29671a620682655317a73c8064f09aade2bad61d0a71f13e07befe0a79506cff",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5124,7 +5124,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "3986",
+        "@value": "3936",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5146,7 +5146,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "15a6a277d079e8c6937ace33373427a331be0b14010f9fb8b4503f104752bee4",
+        "@value": "525a9a0559729972c863c56b7e8a6b542ad29e5ca9f6c49450fc0796e873c264",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5168,7 +5168,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -5209,7 +5209,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T10:45:50Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -5309,7 +5309,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "7970",
+        "@value": "7948",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5334,7 +5334,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "c7dc38d04e25ab8283096474dd874d4cbe3a7ae4e0109644d817d971d4aab0ba",
+        "@value": "8449a7db7f88e5ae7574a54146b3ec322c9833208afc94044f1ec652835bdd9b",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5357,7 +5357,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/marcxml+xml"
       },
       "dcat:byteSize": {
-        "@value": "10420",
+        "@value": "10400",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5379,7 +5379,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "b55535fd2e41b6b6965261a6f866a0872229b04a84365eae0c9501a071634068",
+        "@value": "ecf9f160b9bdb3d5159a166bbc00064f14f5b89e2449ad7d88859c1241e5c9a4",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5402,7 +5402,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/mods+xml"
       },
       "dcat:byteSize": {
-        "@value": "5915",
+        "@value": "5905",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5424,7 +5424,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "3bfb9f4dd858410abca2ddcb18af61efca34f9c0f33aa794dd39b59247f779ab",
+        "@value": "324b7794de657fc89b4adecdc12067ff6dfcb62fdd967c277aa443570f3a7878",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5447,7 +5447,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "12726",
+        "@value": "12441",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5469,7 +5469,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "877cee6863e77af8d95b3c730cfa0b420b60221e384190cbe33fe4af929a99a3",
+        "@value": "5d669a2b34dbba2b2cefd753b06b7627f79df388bbf680ec543bc4988e6a6bc4",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5492,7 +5492,7 @@
         "@id": "https://www.iana.org/assignments/media-types/text/turtle"
       },
       "dcat:byteSize": {
-        "@value": "9105",
+        "@value": "8820",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5514,7 +5514,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "0a823448b1a0a1c8641fead8cca0a0b56e4523570780f09b9cf8cae3a90c64ab",
+        "@value": "83902fc5c01dc80ffa6bee50df1127501283f1cf65a35d5f344b2be00c3190f9",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5537,7 +5537,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "4554",
+        "@value": "4494",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5559,7 +5559,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "4fe7c6acb31c2cfea933ecc000f5e0d412e008f115225db359bfb285c6d3e500",
+        "@value": "564fb449feb13ced14cb5260ed14a571c92907f5f8ba8b381598dd93cfa0ba76",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5581,7 +5581,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-09-03T00:00:00Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:conformsTo": {
@@ -5622,7 +5622,7 @@
         "@type": "xsd:date"
       },
       "dcterms:modified": {
-        "@value": "2026-07-11T13:00:48Z",
+        "@value": "2026-09-04T14:41:43Z",
         "@type": "xsd:dateTime"
       },
       "dcterms:publisher": {
@@ -5722,7 +5722,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/zip"
       },
       "dcat:byteSize": {
-        "@value": "9842",
+        "@value": "9809",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5747,7 +5747,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "674a6afbd46902f7c722607ba60ba020b493d1a81cadefbf86fc2e3a3a0ddd6a",
+        "@value": "b7052e6b60cedd7b69e0188cf1b7a307e1cea53ab9d3ca7419ee344cfbdf424f",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5770,7 +5770,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/xml"
       },
       "dcat:byteSize": {
-        "@value": "2357",
+        "@value": "2337",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": {
@@ -5787,7 +5787,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "afdf7a343c448f1112a65eefca2215fc82b840dbbdb7acad408e14c82004d9b2",
+        "@value": "73f16521b4fbe09139394dac53be5e3cadb8a1d422c895c82c36d1eb9ecc88f1",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5810,7 +5810,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/xml"
       },
       "dcat:byteSize": {
-        "@value": "2377",
+        "@value": "2357",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": {
@@ -5827,7 +5827,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "c05fb23988619b22f44b6515ce3ee48a9b72573216f8d722b31059bf1a1608c2",
+        "@value": "2a130a6b552615cfdf623720b1d4e2791dc4324b488f21ffb08374e9a1c921d5",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5850,7 +5850,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "13687",
+        "@value": "13502",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5872,7 +5872,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "fa0c3c6d5c0f9fb1482a7cef67cef1200c92b80ab1d9a52dbd0fbb4af36517ca",
+        "@value": "b70a85a084b8a5b5c9ebf833806ab83b49d701ac279dc3eac90f68c3a1f9d024",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5895,7 +5895,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "18898",
+        "@value": "18678",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5917,7 +5917,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "4e3f312f69e448481f5825ad213b6710a2767b807c209f0e47101833e30aa23c",
+        "@value": "330eae58bfbcad4b4130d1097f0a0f3a1bc3b968d9931bfcfc1ce80b8e54438a",
         "@type": "xsd:hexBinary"
       }
     },
@@ -5940,7 +5940,7 @@
         "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
       },
       "dcat:byteSize": {
-        "@value": "5433",
+        "@value": "5368",
         "@type": "xsd:nonNegativeInteger"
       },
       "dcterms:language": [
@@ -5962,7 +5962,7 @@
         "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
       },
       "spdx:checksumValue": {
-        "@value": "b380ea52a6a36023ccb80cce170fb72d9ffc6ccfff3f41db08924a28cefa5b17",
+        "@value": "0fa8ef730752671af61b0776d2c16c7dfd410869cf322418083a2e171b0ed9a4",
         "@type": "xsd:hexBinary"
       }
     },

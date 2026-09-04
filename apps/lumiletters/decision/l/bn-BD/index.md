@@ -2,7 +2,7 @@
 title: "বিজ্ঞাপন মুক্ত শিশুদের জন্য সেরা শিক্ষামূলক গেম অ্যাপ আইফোন"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/bn-BD/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:integrity="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld#">
   <id>https://open.cait518.cc/ios-app-guide/opds/bopomofo-37-symbol-reference.xml</id>
   <title>Bopomofo 37-Symbol Open Publication Catalog</title>
-  <updated>2026-07-11T10:45:50Z</updated>
+  <updated>2026-09-04T14:41:43Z</updated>
   <author>
     <name>Lumi Apps - iOS App Guide</name>
     <uri>https://open.cait518.cc/ios-app-guide</uri>
@@ -15,7 +15,7 @@
   <entry>
     <id>https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml</id>
     <title xml:lang="en">Bopomofo: A 37-Symbol Reference</title>
-    <updated>2026-07-11T10:45:50Z</updated>
+    <updated>2026-09-04T14:41:43Z</updated>
     <published>2026-07-11T00:00:00Z</published>
     <author>
       <name>Lumi Apps - iOS App Guide</name>
@@ -33,14 +33,14 @@
     <link rel="alternate" href="https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json" type="application/webpub+json" title="Web Publication manifest" />
     <link rel="describedby" href="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld" type="application/ld+json" title="Schema.org metadata" />
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub" type="application/epub+zip" title="Bopomofo: A 37-Symbol Reference - EPUB 3.3" length="9564">
-      <integrity:checksum algorithm="sha-256" encoding="hex">be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9</integrity:checksum>
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub" type="application/epub+zip" title="Bopomofo: A 37-Symbol Reference - EPUB 3.3" length="9533">
+      <integrity:checksum algorithm="sha-256" encoding="hex">748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24</integrity:checksum>
     </link>
   </entry>
   <entry>
     <id>https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/title.xhtml</id>
     <title xml:lang="zh-Hant">注音符號：37 符號完整參考手冊</title>
-    <updated>2026-07-11T10:45:50Z</updated>
+    <updated>2026-09-04T14:41:43Z</updated>
     <published>2026-07-11T00:00:00Z</published>
     <author>
       <name>Lumi Apps - iOS App Guide</name>
@@ -58,8 +58,8 @@
     <link rel="alternate" href="https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json" type="application/webpub+json" title="Web Publication manifest" />
     <link rel="describedby" href="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld" type="application/ld+json" title="Schema.org metadata" />
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub" type="application/epub+zip" title="注音符號：37 符號完整參考手冊 - EPUB 3.3" length="10287">
-      <integrity:checksum algorithm="sha-256" encoding="hex">0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b</integrity:checksum>
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub" type="application/epub+zip" title="注音符號：37 符號完整參考手冊 - EPUB 3.3" length="10258">
+      <integrity:checksum algorithm="sha-256" encoding="hex">8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b</integrity:checksum>
     </link>
   </entry>
 </feed>

@@ -19,7 +19,7 @@ zhuyin:scheme
     dcterms:source <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json>, <https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html>, <https://www.unicode.org/charts/PDF/U3100.pdf> ;
     dcterms:conformsTo <https://www.w3.org/TR/skos-reference/> ;
     dcterms:created "2026-07-11"^^xsd:date ;
-    dcterms:modified "2026-07-11"^^xsd:date ;
+    dcterms:modified "2026-09-04"^^xsd:date ;
     schema:numberOfItems "37"^^xsd:integer ;
     skos:hasTopConcept zhuyin:initials, zhuyin:medials, zhuyin:finals .
 

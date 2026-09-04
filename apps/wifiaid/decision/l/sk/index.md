@@ -2,7 +2,7 @@
 title: "WiFi Aid: Nájdite chyby siete — Diagnostika siete s dôkazmi | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

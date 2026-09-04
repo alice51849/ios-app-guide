@@ -2,7 +2,7 @@
 title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/de-DE/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

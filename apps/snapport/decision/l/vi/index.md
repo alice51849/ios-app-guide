@@ -2,7 +2,7 @@
 title: "ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/vi/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

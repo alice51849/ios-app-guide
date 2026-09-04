@@ -2,7 +2,7 @@
 title: "AI Brief: கோப்பை ப்ராம்ட்டாக — கோப்பிலிருந்து தெளிவான சூழல் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/ta-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

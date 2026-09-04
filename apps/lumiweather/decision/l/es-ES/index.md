@@ -2,7 +2,7 @@
 title: "mejor app de tiempo meteorológico para ayudar a padres a planificar actividades al aire libre con niños"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/es-ES/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

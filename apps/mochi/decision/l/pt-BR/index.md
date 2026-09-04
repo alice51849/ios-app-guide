@@ -2,7 +2,7 @@
 title: "melhor app simples de lista de tarefas no iPhone sem assinatura"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/pt-BR/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com 
 - Grátis para começar · desbloqueio único
 - Sem anúncios
 - App Store · Grátis
-- ★ 5.0/5 · 1
+- ★ 4.0/5 · 2
 
 [Baixe o Mochi na App Store →](https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=iag_data_pt_br&mt=8)
 

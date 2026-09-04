@@ -9,7 +9,7 @@
   "identifier": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11",
+  "dateModified": "2026-09-04",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "inLanguage": [
@@ -24,15 +24,15 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "measurementTechnique": "RFC 8493 BagIt 1.0 with SHA-256 and SHA-512 payload and tag manifests",
-  "size": "302135.10",
+  "size": "295895.10",
   "distribution": [
     {
       "@type": "DataDownload",
       "name": "Deterministic RFC 8493 BagIt ZIP",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip",
       "encodingFormat": "application/zip",
-      "contentSize": "309126 B",
-      "sha256": "e27e729ca86f0dc0347fbd5625b9cfb6ddc06f0fa929f19287539463c2eab316"
+      "contentSize": "302881 B",
+      "sha256": "adca89022c1a439e93be4ededc34fc05273a6507367a2aafb15d74647850ddf3"
     },
     {
       "@type": "DataDownload",
@@ -40,7 +40,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "contentSize": "104 B",
-      "sha256": "000818b69543fd9b7f56b45aa3b7eff0abfd07eb1e62b44b53746a559f7f13dc"
+      "sha256": "eab80e0a6fcba7c443533d0c0294df19f9cfecdbf89f37b248f3f223021ad650"
     }
   ],
   "hasPart": [
@@ -49,8 +49,8 @@
       "name": "data/LICENSE.txt",
       "description": "CC BY 4.0 license notice",
       "encodingFormat": "text/plain",
-      "contentSize": "391 B",
-      "sha256": "0d7eb296b36e8ee510db5311dd0da8854344a3a92177075c348a238a7b30574c",
+      "contentSize": "386 B",
+      "sha256": "db5f000803644221be3bfc429590674421606ca5d4dd0ead328a6316b0927ffa",
       "isBasedOn": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
@@ -58,8 +58,8 @@
       "name": "data/README.md",
       "description": "Preservation and validation guide",
       "encodingFormat": "text/markdown",
-      "contentSize": "840 B",
-      "sha256": "5d556e96e0efaa1c5ca09e6766f159b83f0ec9a4f72737c0e0667ba5156f3af9",
+      "contentSize": "835 B",
+      "sha256": "2021e1e3d3fea3adf4fb25d9db99560374c31bb76543710ff500067df2d496ce",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
     },
     {
@@ -67,8 +67,8 @@
       "name": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "description": "MLCommons Croissant 1.1 metadata",
       "encodingFormat": "application/ld+json; profile=\"http://mlcommons.org/croissant/1.1\"",
-      "contentSize": "13777 B",
-      "sha256": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7",
+      "contentSize": "13637 B",
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
     },
     {
@@ -76,8 +76,8 @@
       "name": "data/zhuyin-bopomofo-ml-dataset.csv",
       "description": "Canonical 37-row UTF-8 table",
       "encodingFormat": "text/csv",
-      "contentSize": "8350 B",
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+      "contentSize": "7980 B",
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
     },
     {
@@ -85,8 +85,8 @@
       "name": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "description": "W3C CSVW metadata",
       "encodingFormat": "application/csvm+json",
-      "contentSize": "7701 B",
-      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
+      "contentSize": "7631 B",
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
     },
     {
@@ -94,8 +94,8 @@
       "name": "data/zhuyin-bopomofo-ml-dataset.jsonl",
       "description": "Equivalent JSON Lines records",
       "encodingFormat": "application/x-ndjson",
-      "contentSize": "14734 B",
-      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+      "contentSize": "14364 B",
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
     },
     {
@@ -103,8 +103,8 @@
       "name": "data/zhuyin-bopomofo-vocabulary.jsonld",
       "description": "SKOS vocabulary in JSON-LD",
       "encodingFormat": "application/ld+json",
-      "contentSize": "79017 B",
-      "sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a",
+      "contentSize": "78997 B",
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
     },
     {
@@ -112,8 +112,8 @@
       "name": "data/zhuyin-bopomofo-vocabulary.nt",
       "description": "SKOS vocabulary in N-Triples",
       "encodingFormat": "application/n-triples",
-      "contentSize": "141016 B",
-      "sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef",
+      "contentSize": "135781 B",
+      "sha256": "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
     },
     {
@@ -121,8 +121,8 @@
       "name": "data/zhuyin-bopomofo-vocabulary.shacl.ttl",
       "description": "SHACL validation shapes",
       "encodingFormat": "text/turtle",
-      "contentSize": "4070 B",
-      "sha256": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc",
+      "contentSize": "4065 B",
+      "sha256": "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
     },
     {
@@ -130,8 +130,8 @@
       "name": "data/zhuyin-bopomofo-vocabulary.ttl",
       "description": "SKOS vocabulary in Turtle",
       "encodingFormat": "text/turtle",
-      "contentSize": "32239 B",
-      "sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411",
+      "contentSize": "32219 B",
+      "sha256": "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
     }
   ]

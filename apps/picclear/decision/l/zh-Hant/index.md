@@ -2,7 +2,7 @@
 title: "iPhone 上最佳清理重複照片釋放儲存空間應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/zh-Hant/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

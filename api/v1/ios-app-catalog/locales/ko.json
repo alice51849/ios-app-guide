@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-02",
-  "content_digest": "1d3d4c468976302f60d7dd65790d17dc45b1320abd855122d84f5c6edbeed579",
+  "date_modified": "2026-09-04",
+  "content_digest": "a89f4042c9c3cea1067b5d6e71566884ebdbdc406ea659f56266dcfd4c158778",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -124,7 +124,8 @@
         "리스닝",
         "리딩",
         "연습",
-        "점수 추적"
+        "점수 추적",
+        "토익 990"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -211,7 +212,8 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기"
+        "데이터 내보내기",
+        "배터리"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -857,7 +859,8 @@
         "파닉스",
         "쓰기",
         "읽기",
-        "주음부호"
+        "주음부호",
+        "유아 중국어"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1525,7 +1528,8 @@
         "카드번호",
         "이름",
         "OCR",
-        "비식별화"
+        "비식별화",
+        "pdf 가리기"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

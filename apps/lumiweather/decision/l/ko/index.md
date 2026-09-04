@@ -2,7 +2,7 @@
 title: "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ko/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

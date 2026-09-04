@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לרעש לבן להירדמות ללא מנוי"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/he/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

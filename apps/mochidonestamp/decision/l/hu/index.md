@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Legutóbb — Emlékszik, mikor csináltad | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/hu/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

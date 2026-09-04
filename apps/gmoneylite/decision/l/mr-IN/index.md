@@ -2,7 +2,7 @@
 title: "G+Money Lite: प्रवास खर्च — प्रवास खर्च आणि चलन | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/mr-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

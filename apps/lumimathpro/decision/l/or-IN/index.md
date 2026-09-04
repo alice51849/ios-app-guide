@@ -2,7 +2,7 @@
 title: "ପ୍ରାଥମିକ ଏବଂ ଆରମ୍ଭିକ ଶ୍ରେଣୀ ପାଇଁ ସର୍ବୋତ୍ତମ ସମ୍ପୂର୍ଣ୍ଣ ଗଣିତ ଶିକ୍ଷା ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/or-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

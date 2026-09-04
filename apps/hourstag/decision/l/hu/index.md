@@ -2,7 +2,7 @@
 title: "HoursTag: Órák a vásárláshoz — Költségvetés & spórolás | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/hu/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

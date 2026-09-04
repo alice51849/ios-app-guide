@@ -2,7 +2,7 @@
 title: "HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ur-PK/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

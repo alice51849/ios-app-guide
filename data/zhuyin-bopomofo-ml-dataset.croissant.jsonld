@@ -86,7 +86,7 @@
     "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11",
+  "dateModified": "2026-09-04",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -149,9 +149,9 @@
       "name": "zhuyin-bopomofo-ml-dataset.csv",
       "description": "Canonical UTF-8 table for the symbols RecordSet.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
-      "contentSize": "8350 B",
+      "contentSize": "7980 B",
       "encodingFormat": "text/csv",
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
       "sameAs": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
     },
     {
@@ -160,9 +160,9 @@
       "name": "zhuyin-bopomofo-ml-dataset.jsonl",
       "description": "The same 37 records serialized as newline-delimited JSON.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
-      "contentSize": "14734 B",
+      "contentSize": "14364 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
       "sameAs": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
     }
   ],

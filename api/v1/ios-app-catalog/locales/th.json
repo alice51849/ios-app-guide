@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-02",
-  "content_digest": "1d3d4c468976302f60d7dd65790d17dc45b1320abd855122d84f5c6edbeed579",
+  "date_modified": "2026-09-04",
+  "content_digest": "a89f4042c9c3cea1067b5d6e71566884ebdbdc406ea659f56266dcfd4c158778",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -221,7 +221,8 @@
         "วิทยาศาสตร์",
         "นับวัน",
         "วันทำการ",
-        "ค่าน้ำมัน"
+        "ค่าน้ำมัน",
+        "เครื่องคิดเลข วิดเจ็ต"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -546,7 +547,8 @@
         "ซื้อตามอารมณ์",
         "เงิน",
         "ใช้เงินน้อยลง",
-        "ชั่วโมงทำงาน"
+        "ชั่วโมงทำงาน",
+        "ซื้อของตามอารมณ์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -965,7 +967,8 @@
         "ทักษะ",
         "พื้นฐาน",
         "learning",
-        "puzzle"
+        "puzzle",
+        "คณิต อนุบาล"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1935,7 +1938,8 @@
         "ทริป",
         "เดินทาง",
         "ตั๋ว",
-        "เตือน"
+        "เตือน",
+        "แผนเที่ยว"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1976,7 +1980,8 @@
         "โรงแรม",
         "เที่ยวบิน",
         "ที่เที่ยว",
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "แผนเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

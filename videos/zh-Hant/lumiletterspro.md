@@ -2,7 +2,7 @@
 title: "適合居家學前準備的最佳完整自然發音學習 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/lumiletterspro.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/gywe7s.mp4"
 duration: "PT16S"
 app_store_id: "6778491147"

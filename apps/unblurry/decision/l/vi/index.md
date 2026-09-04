@@ -2,7 +2,7 @@
 title: "ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/vi/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

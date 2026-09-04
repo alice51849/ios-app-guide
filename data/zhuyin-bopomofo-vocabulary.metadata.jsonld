@@ -35,7 +35,7 @@
         }
       ],
       "dcterms:created": "2026-07-11",
-      "dcterms:modified": "2026-07-11",
+      "dcterms:modified": "2026-09-04",
       "dcterms:creator": {
         "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
@@ -154,8 +154,8 @@
         "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
       },
       "dcat:mediaType": "application/ld+json",
-      "dcat:byteSize": 79017,
-      "schema:sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"
+      "dcat:byteSize": 78997,
+      "schema:sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49"
     },
     {
       "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle",
@@ -171,8 +171,8 @@
         "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
       },
       "dcat:mediaType": "text/turtle",
-      "dcat:byteSize": 32239,
-      "schema:sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411"
+      "dcat:byteSize": 32219,
+      "schema:sha256": "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1"
     },
     {
       "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples",
@@ -188,8 +188,8 @@
         "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
       },
       "dcat:mediaType": "application/n-triples",
-      "dcat:byteSize": 141016,
-      "schema:sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef"
+      "dcat:byteSize": 135781,
+      "schema:sha256": "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4"
     },
     {
       "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl",
@@ -205,8 +205,8 @@
         "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
       },
       "dcat:mediaType": "text/turtle",
-      "dcat:byteSize": 4070,
-      "schema:sha256": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc"
+      "dcat:byteSize": 4065,
+      "schema:sha256": "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1"
     }
   ]
 }

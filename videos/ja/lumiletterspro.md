@@ -2,7 +2,7 @@
 title: "ホームスクール幼稚園準備におすすめの完全フォニックスアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ja/lumiletterspro.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/0rbgg6.mp4"
 duration: "PT16S"
 app_store_id: "6778491147"

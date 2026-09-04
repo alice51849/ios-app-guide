@@ -2,7 +2,7 @@
 title: "2026 年最佳職涯轉換者履歷建立應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/cvdesk.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/ytpq18.mp4"
 duration: "PT16S"
 app_store_id: "6781337213"

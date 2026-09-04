@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI 발표자료 — 메모·PDF를 한 장 슬라이드로 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ko/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

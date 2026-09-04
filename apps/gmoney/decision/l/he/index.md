@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר למעקב תקציב נסיעות ללא מנוי לאייפון"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/he/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

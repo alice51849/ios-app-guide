@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk memperbaiki foto anak yang buram di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/id/unblurry.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/ebnxj0.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"

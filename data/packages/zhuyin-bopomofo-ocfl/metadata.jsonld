@@ -9,17 +9,17 @@
     "name": "Lumi Apps - iOS App Guide",
     "url": "https://open.cait518.cc/ios-app-guide"
   },
-  "dateModified": "2026-07-11T17:19:58Z",
+  "dateModified": "2026-09-04T14:41:42Z",
   "datePublished": "2026-07-11",
   "description": "Download a deterministic, independently validated OCFL 1.1 object for the complete 37-symbol Bopomofo dataset, with SHA-512 content addressing and SHA-256 fixity.",
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentSize": "311216 B",
+      "contentSize": "595224 B",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip",
       "encodingFormat": "application/zip",
       "name": "Deterministic OCFL 1.1 object ZIP",
-      "sha256": "fc13a850721a20c806d824b479bcb9cc04d4d42dc933154dcf70cb06d61262cb"
+      "sha256": "0f0c08262f7001e8af7be52d8fbeecf06bd5b8ceb1617d330b169909a1935e1c"
     },
     {
       "@type": "DataDownload",
@@ -27,7 +27,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "name": "Outer SHA-256 checksum",
-      "sha256": "57da7c81a4596bf4ae54a7be3ef05d7ede9bcfdd0c26acd0daf4d468278f23b7"
+      "sha256": "401b022651cd888c6edd1af2d6cc36a3cb91ef5b0f6d6eaa9c7fa4b6cc8e6f03"
     }
   ],
   "hasPart": [
@@ -58,8 +58,8 @@
       "encodingFormat": "application/ld+json; profile=\"http://mlcommons.org/croissant/1.1\"",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "name": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
-      "sha256": "875a9d7d9b39653b3d5b941cc297d075ca3bc46dc6dc94818099615ed11a3066",
-      "sha512": "bd77e09f300ff363608b92c27be0ea897ae76de200c7589129574067bb9d7b5312d35f5f67d071e467b9ed3542e99f598924aaec12d625cefe23c5c0d82735ff"
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35",
+      "sha512": "e6952cd82f095da2d6b85e810b34567645df39f607820a4f234567b777d5ec45a9828fa1b8fae71aafb4216c7bec08c40b93e5706cf7955fe6034d0ad82abae5"
     },
     {
       "@type": "DigitalDocument",
@@ -78,8 +78,8 @@
       "encodingFormat": "application/csvm+json",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "name": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
-      "sha256": "a001dcc10198ad9e7c30f44bb6cd223ea94aa9b637f9fd0c56bca8b779d431ba",
-      "sha512": "d893f9615afeaf0088990dd39fc20c096246d69a00d495b951830a15c400d6eb991c31b6196bb93c5c8d9e25d0a3e4bea2d25334b78f381beb8c6a24826dab22"
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677",
+      "sha512": "0b897e50bfc5e639af2a66f982c3df5172d9dd000518d6c68fb612127eea5cc1d5dd93f2251637a279b135f63d7422fa1b492fd92fe3e5a7a7ec041e4141f10d"
     },
     {
       "@type": "DigitalDocument",
@@ -98,8 +98,8 @@
       "encodingFormat": "application/ld+json",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
       "name": "data/zhuyin-bopomofo-vocabulary.jsonld",
-      "sha256": "5721675083f1e501711c1fd5199f12d48f05ab2f85f20f92dfdf390dfd1d2198",
-      "sha512": "5d2883031871accf630c213a611e426c7833bbca26a64311c9662d5712a93edc5995bef9d73df9ada4284d2a673fec8c79238aab036c00e387ff8b368b40998a"
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49",
+      "sha512": "a6ece29263028af127ba303425156ec6beca2a3c461edff6d1984fe1710270a0a75a629710d829f753e56183d11b7cc92c2a389c2e6cf585a0442c2486f360f4"
     },
     {
       "@type": "DigitalDocument",
@@ -108,8 +108,8 @@
       "encodingFormat": "application/n-triples",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt",
       "name": "data/zhuyin-bopomofo-vocabulary.nt",
-      "sha256": "b83eefed47513ea489241843a758ad2e028742bc7005351fb8d982a990d348cf",
-      "sha512": "e0786bda43004189b3b230350858773eb25cac6b926d0dc34d3a69d212b6f4c40372e27f6c9f8c62477ea35283933c6577a5a90a94fb3a1a51ffe6dcab8edfc3"
+      "sha256": "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4",
+      "sha512": "2d5426c3815adb3d9f9ca8649280fa17d4eddc0f859a3fbd527c3a291fa858a8a3028364bd255badde814ff3f8e7c87c56fbde98067d575598c4f262eff6657d"
     },
     {
       "@type": "DigitalDocument",
@@ -128,8 +128,8 @@
       "encodingFormat": "text/turtle",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl",
       "name": "data/zhuyin-bopomofo-vocabulary.ttl",
-      "sha256": "77295c4d94109267319a8c2cf3c215e5e6297913f3d35d4952d735df9a97c1f0",
-      "sha512": "dcd50cc0d3777edfb16f72bd41620ecfd1b9d201ec43bcebfd1dd0114b15addc28fe55419510ea7637086f76ba41fcaa7d23de37333b7dccd9d9df7099c17e75"
+      "sha256": "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1",
+      "sha512": "631252f596f5d625a512fe28fab4667883d71949537192ef8c9f6c83bea95010549fbee06e8c597da7c7b9169314ba8e0acbfa96089ffa7ebab1af2e08c4b0d7"
     }
   ],
   "identifier": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/#ocfl-object",
@@ -144,5 +144,5 @@
   "name": "OCFL 1.1 object for complete Bopomofo reference data",
   "numberOfItems": 10,
   "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
-  "version": "v1"
+  "version": "v2"
 }

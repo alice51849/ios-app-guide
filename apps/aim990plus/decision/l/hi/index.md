@@ -2,7 +2,7 @@
 title: "Aim990 Plus: अंग्रेजी टेस्ट — दबाव में तेज़ और सटीक जवाब | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/hi/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "아이폰에서 아이들 흐릿한 사진을 보정하는 최고의 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/ko/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

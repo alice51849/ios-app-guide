@@ -2,7 +2,7 @@
 title: "AI Brief: Filer til AI-prompt — Filer til tydelig kontekst | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/no/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

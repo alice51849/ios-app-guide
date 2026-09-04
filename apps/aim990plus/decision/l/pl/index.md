@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test angielskiego — Pewność pod presją czasu | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/pl/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

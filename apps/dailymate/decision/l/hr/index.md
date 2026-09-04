@@ -2,7 +2,7 @@
 title: "najbolja praktična aplikacija za fraze na jeziku za putnike s Apple Watchom"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/hr/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

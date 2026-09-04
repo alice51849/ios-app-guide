@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za izdelavo življenjepisa za menjavo kariere 2026"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/sl-SI/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

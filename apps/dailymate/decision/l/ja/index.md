@@ -2,7 +2,7 @@
 title: "Apple Watch対応の旅行者向け実用的な言語フレーズアプリのおすすめ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ja/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

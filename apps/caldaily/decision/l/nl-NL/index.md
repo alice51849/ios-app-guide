@@ -2,7 +2,7 @@
 title: "CalDaily: rekenmachine+thema's — Widget, tools, geschiedenis | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/nl-NL/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

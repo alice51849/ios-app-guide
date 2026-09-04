@@ -2,7 +2,7 @@
 title: "Çocuklar için en iyi tam sabah ve uyku rutini uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/tr/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ଆଜି କୁହନ୍ତୁ — ଦୈନନ୍ଦିନ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/or-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

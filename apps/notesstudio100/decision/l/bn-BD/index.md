@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — হাতে লেখা নোট ও PDF পড়া | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/bn-BD/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

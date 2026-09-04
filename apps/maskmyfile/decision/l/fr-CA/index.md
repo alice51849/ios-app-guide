@@ -2,7 +2,7 @@
 title: "Mask My File: Ôter vos infos — Cachez vos infos avant l'envoi | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/fr-CA/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

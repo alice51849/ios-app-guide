@@ -2,7 +2,7 @@
 title: "beste komplette morgen- og leggetidsrutine-app for barn"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/no/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

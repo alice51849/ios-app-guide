@@ -2,7 +2,7 @@
 title: "ਸੌਂਣ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵਾਈਟ ਨੌਇਜ਼ ਐਪ ਬਿਨਾਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦੇ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/pa-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

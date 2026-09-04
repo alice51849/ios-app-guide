@@ -2,7 +2,7 @@
 title: "子ども向けおすすめ完全朝・夜ルーティンアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ja/lumimissionpro.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/el3gzc.mp4"
 duration: "PT16S"
 app_store_id: "6779745474"

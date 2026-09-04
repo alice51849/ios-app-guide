@@ -2,7 +2,7 @@
 title: "iPhone’da çocukların bulanık fotoğraflarını düzeltmek için en iyi uygulama"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/tr/unblurry.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/l3nqgr.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"

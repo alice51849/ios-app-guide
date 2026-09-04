@@ -2,7 +2,7 @@
 title: "najlepsza prosta aplikacja do planowania jednej nadchodzącej podróży na iPhone"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/pl/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

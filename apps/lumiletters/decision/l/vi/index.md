@@ -2,7 +2,7 @@
 title: "ứng dụng trò chơi giáo dục tốt nhất cho trẻ em không quảng cáo trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/vi/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

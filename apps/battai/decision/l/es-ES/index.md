@@ -2,7 +2,7 @@
 title: "BattAI: Salud de la batería — Reglas, fuentes y límites claros | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/es-ES/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

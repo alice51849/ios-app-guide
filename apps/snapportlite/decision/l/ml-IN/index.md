@@ -2,7 +2,7 @@
 title: "Snapport Lite: ഐഡി ഫോട്ടോ — Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ml-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

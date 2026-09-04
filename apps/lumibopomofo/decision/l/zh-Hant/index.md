@@ -2,7 +2,7 @@
 title: "iPhone 上最佳兒童注音符號學習應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

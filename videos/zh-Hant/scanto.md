@@ -2,7 +2,7 @@
 title: "護理人員專用最佳離線文件掃描應用程式，無雲端"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/scanto.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/c7nygv.mp4"
 duration: "PT16S"
 app_store_id: "6779977651"

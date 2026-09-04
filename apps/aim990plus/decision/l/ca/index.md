@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Simulacre anglès — Anglès a contrarellotge | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ca/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

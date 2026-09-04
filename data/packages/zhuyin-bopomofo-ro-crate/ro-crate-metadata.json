@@ -27,7 +27,7 @@
       "cite-as": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
       "version": "1.0.0",
       "datePublished": "2026-07-11",
-      "dateModified": "2026-09-03",
+      "dateModified": "2026-09-04",
       "inLanguage": [
         "en",
         "zh-Hant"
@@ -155,8 +155,8 @@
       "name": "Canonical 37-row Bopomofo table",
       "description": "UTF-8 table covering all 37 Bopomofo symbols with stable IDs, Unicode notation, Hanyu Pinyin, broad IPA, categories and examples.",
       "encodingFormat": "text/csv",
-      "contentSize": "8350",
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
+      "contentSize": "7980",
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       }
@@ -167,8 +167,8 @@
       "name": "Equivalent Bopomofo JSON Lines records",
       "description": "One UTF-8 JSON object per Bopomofo symbol in canonical display order.",
       "encodingFormat": "application/x-ndjson",
-      "contentSize": "14734",
-      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
+      "contentSize": "14364",
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       }
@@ -179,8 +179,8 @@
       "name": "MLCommons Croissant metadata",
       "description": "Croissant 1.1 metadata describing the canonical CSV and JSON Lines records, fields, source provenance and CC BY 4.0 reuse terms.",
       "encodingFormat": "application/ld+json",
-      "contentSize": "13777",
-      "sha256": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7",
+      "contentSize": "13637",
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -194,8 +194,8 @@
       "name": "W3C CSVW metadata",
       "description": "CSV on the Web metadata describing the canonical table dialect, required columns, datatypes, primary key and URI templates.",
       "encodingFormat": "application/csvm+json",
-      "contentSize": "7701",
-      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
+      "contentSize": "7631",
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -209,8 +209,8 @@
       "name": "Bopomofo SKOS vocabulary",
       "description": "JSON-LD SKOS concept scheme for all 37 Bopomofo symbols with stable concept IRIs, bilingual labels and phonetic notation.",
       "encodingFormat": "application/ld+json",
-      "contentSize": "79017",
-      "sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a",
+      "contentSize": "78997",
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
@@ -224,8 +224,8 @@
       "name": "Bilingual RO-Crate reuse guide",
       "description": "Plain-text English and Traditional Chinese validation and reuse guide.",
       "encodingFormat": "text/plain",
-      "contentSize": "1469",
-      "sha256": "59cac459de0ad02863bb2034c4c797850e68dbe009e007173e927aba87015392",
+      "contentSize": "1459",
+      "sha256": "2fe44f82052394c17a79e2d3a1d12a092e3c94c64b41540b3eabb4a5c3efeee9",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       }
@@ -236,8 +236,8 @@
       "name": "CC BY 4.0 attribution notice",
       "description": "License URL and requested attribution for the packaged open data.",
       "encodingFormat": "text/plain",
-      "contentSize": "514",
-      "sha256": "8199d9c1932433899775601b462906b97aab11956b3cf4a50db52ee3905b8f99",
+      "contentSize": "509",
+      "sha256": "7e80de9c04fa0316a5db5630c5925191dec40715e865e6f8a26469a77206520c",
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       }

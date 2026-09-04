@@ -2,7 +2,7 @@
 title: "beste eenvoudige reisplanner-app voor één aankomende reis iPhone"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/nl-NL/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

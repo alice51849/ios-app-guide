@@ -12,7 +12,7 @@
   "identifier": "LUMI-ZHUYIN-EPUB-CATALOG-2026",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T10:45:50Z",
+  "dateModified": "2026-09-04T14:41:43Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -27,22 +27,22 @@
   "isBasedOn": {
     "@type": "Book",
     "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
-    "dateModified": "2026-07-11T10:45:50Z",
+    "dateModified": "2026-09-04T14:41:43Z",
     "encoding": [
       {
         "@type": "MediaObject",
         "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
         "encodingFormat": "application/epub+zip",
-        "contentSize": "9564 bytes",
-        "sha256": "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+        "contentSize": "9533 bytes",
+        "sha256": "748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24",
         "inLanguage": "en"
       },
       {
         "@type": "MediaObject",
         "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
         "encodingFormat": "application/epub+zip",
-        "contentSize": "10287 bytes",
-        "sha256": "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+        "contentSize": "10258 bytes",
+        "sha256": "8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b",
         "inLanguage": "zh-Hant"
       }
     ]
@@ -69,40 +69,40 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip",
-      "contentSize": "7970 bytes",
-      "sha256": "c7dc38d04e25ab8283096474dd874d4cbe3a7ae4e0109644d817d971d4aab0ba"
+      "contentSize": "7948 bytes",
+      "sha256": "8449a7db7f88e5ae7574a54146b3ec322c9833208afc94044f1ec652835bdd9b"
     },
     {
       "@type": "DataDownload",
       "name": "MARCXML",
       "encodingFormat": "application/marcxml+xml",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml",
-      "contentSize": "10420 bytes",
-      "sha256": "b55535fd2e41b6b6965261a6f866a0872229b04a84365eae0c9501a071634068"
+      "contentSize": "10400 bytes",
+      "sha256": "ecf9f160b9bdb3d5159a166bbc00064f14f5b89e2449ad7d88859c1241e5c9a4"
     },
     {
       "@type": "DataDownload",
       "name": "MODS 3.8",
       "encodingFormat": "application/mods+xml",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml",
-      "contentSize": "5915 bytes",
-      "sha256": "3bfb9f4dd858410abca2ddcb18af61efca34f9c0f33aa794dd39b59247f779ab"
+      "contentSize": "5905 bytes",
+      "sha256": "324b7794de657fc89b4adecdc12067ff6dfcb62fdd967c277aa443570f3a7878"
     },
     {
       "@type": "DataDownload",
       "name": "BIBFRAME 2.0 JSON-LD",
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld",
-      "contentSize": "12726 bytes",
-      "sha256": "877cee6863e77af8d95b3c730cfa0b420b60221e384190cbe33fe4af929a99a3"
+      "contentSize": "12441 bytes",
+      "sha256": "5d669a2b34dbba2b2cefd753b06b7627f79df388bbf680ec543bc4988e6a6bc4"
     },
     {
       "@type": "DataDownload",
       "name": "BIBFRAME 2.0 Turtle",
       "encodingFormat": "text/turtle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl",
-      "contentSize": "9105 bytes",
-      "sha256": "0a823448b1a0a1c8641fead8cca0a0b56e4523570780f09b9cf8cae3a90c64ab"
+      "contentSize": "8820 bytes",
+      "sha256": "83902fc5c01dc80ffa6bee50df1127501283f1cf65a35d5f344b2be00c3190f9"
     }
   ],
   "includedInDataCatalog": {

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-02",
-  "content_digest": "1d3d4c468976302f60d7dd65790d17dc45b1320abd855122d84f5c6edbeed579",
+  "date_modified": "2026-09-04",
+  "content_digest": "a89f4042c9c3cea1067b5d6e71566884ebdbdc406ea659f56266dcfd4c158778",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -26,7 +26,8 @@
         "учёба",
         "экзамен",
         "офлайн",
-        "документы"
+        "документы",
+        "аннотации pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -105,7 +106,8 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель"
+        "самоучитель",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -146,7 +148,8 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы"
+        "фразы",
+        "toeic аудирование"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -182,7 +185,8 @@
         "Бережная зарядка",
         "Диапазон заряда",
         "Скорость зарядки",
-        "Экспорт данных"
+        "Экспорт данных",
+        "емкость батареи"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -707,7 +711,9 @@
         "фонетика",
         "малыши",
         "дошкольники",
-        "язык"
+        "язык",
+        "учить чжуинь",
+        "чжуинь"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -762,7 +768,9 @@
         "малыши",
         "дошкольники",
         "язык",
-        "mandarin"
+        "mandarin",
+        "учить чжуинь",
+        "чжуинь"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1291,7 +1299,8 @@
         "договор",
         "квитанция",
         "метаданные",
-        "pdf"
+        "pdf",
+        "замазать данные"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1332,7 +1341,8 @@
         "расписание",
         "покупки",
         "календарь",
-        "виджет"
+        "виджет",
+        "милый планер"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1374,7 +1384,8 @@
         "кожа",
         "авто",
         "семья",
-        "стоматолог"
+        "стоматолог",
+        "когда последний раз"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1410,7 +1421,8 @@
         "рентабельность клиента",
         "распределение затрат",
         "сквозной анализ",
-        "ИП"
+        "ИП",
+        "расходы по проекту"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2100,7 +2112,8 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping"
+        "ping",
+        "диагностика wifi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

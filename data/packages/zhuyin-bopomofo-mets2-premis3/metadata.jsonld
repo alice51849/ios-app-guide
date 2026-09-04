@@ -12,7 +12,7 @@
   "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T20:08:50Z",
+  "dateModified": "2026-09-04T14:41:42Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -42,24 +42,24 @@
       "name": "Complete deterministic ZIP",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/bopomofo-37-symbols-mets2-premis3.zip",
       "encodingFormat": "application/zip",
-      "contentSize": 20380,
-      "sha256": "3ab4ab392b795f31fd93a6f7673d9b65b37d88e478aaa75961cd59436afa3f16"
+      "contentSize": 20363,
+      "sha256": "2d3b325d9fb30a0e08e8c24da64f8f7e87129e9444f3d8a6134cbf2e9f6cbc43"
     },
     {
       "@type": "DataDownload",
       "name": "METS 2.0 record",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/mets.xml",
       "encodingFormat": "application/xml",
-      "contentSize": 5794,
-      "sha256": "6316a3c27c55dff4138eaf879f3338434bcc865c0b06b4b8f23ccae3097f6edc"
+      "contentSize": 5744,
+      "sha256": "bd7d4c86f3d5294fdfa83051e72c5a9b0156486b54be5d63a9b95b0d94ec6188"
     },
     {
       "@type": "DataDownload",
       "name": "PREMIS 3.0 record",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/premis.xml",
       "encodingFormat": "application/xml",
-      "contentSize": 27906,
-      "sha256": "83848d27eb92ef712ad4a17b77d5176c872efa2f975320d3841bfc5a944dc0fa"
+      "contentSize": 27691,
+      "sha256": "8bdb06c9db211cb396f6cf433d2359047014c2909bcffe983aa357ece73d3694"
     },
     {
       "@type": "DataDownload",
@@ -67,7 +67,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "contentSize": 849,
-      "sha256": "c439fecf088663bfed9104b32b2942ff1a24465fdf9f5b7b9db87a7448b2d8db"
+      "sha256": "851cede409bf0b2e13ad11b6d5c439f3ab05315d8b5bb18c5e756830adf0de6f"
     }
   ],
   "hasPart": [
@@ -76,56 +76,56 @@
       "name": "Canonical 37-row Bopomofo table",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv",
       "encodingFormat": "text/csv",
-      "contentSize": 8350,
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"
+      "contentSize": 7980,
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514"
     },
     {
       "@type": "DataDownload",
       "name": "Equivalent Bopomofo JSON Lines records",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl",
       "encodingFormat": "text/plain",
-      "contentSize": 14734,
-      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131"
+      "contentSize": 14364,
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7"
     },
     {
       "@type": "DataDownload",
       "name": "MLCommons Croissant 1.1 metadata",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 13777,
-      "sha256": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7"
+      "contentSize": 13637,
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35"
     },
     {
       "@type": "DataDownload",
       "name": "W3C CSVW metadata",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "encodingFormat": "application/csvm+json",
-      "contentSize": 7701,
-      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771"
+      "contentSize": 7631,
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677"
     },
     {
       "@type": "DataDownload",
       "name": "Bopomofo SKOS vocabulary",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 79017,
-      "sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"
+      "contentSize": 78997,
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49"
     },
     {
       "@type": "DataDownload",
       "name": "Bilingual preservation and validation guide",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt",
       "encodingFormat": "text/plain",
-      "contentSize": 1874,
-      "sha256": "de8ad97486b677bab2f388f9d11666aac17445d820120e323439bd73f6e47bb7"
+      "contentSize": 1864,
+      "sha256": "ac46a7734953aed17522b7947a269d9d16b195e615fbce39796f5be50d25c1ed"
     },
     {
       "@type": "DataDownload",
       "name": "CC BY 4.0 attribution notice",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt",
       "encodingFormat": "text/plain",
-      "contentSize": 1052,
-      "sha256": "50e0e179d421314dbd3a7317459dddcfed2e4c2103f9e70ed0417e9748e78f25"
+      "contentSize": 1047,
+      "sha256": "4e6a84a70db92eefc475e51936a6ea93c33862d64d70b44bf99cc12c5ffb9ec6"
     }
   ]
 }

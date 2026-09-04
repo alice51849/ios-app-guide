@@ -2,7 +2,7 @@
 title: "Apple Watch সহ ব্যস্ত যাত্রীদের জন্য সেরা শব্দভাণ্ডার অ্যাপ"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/bn-BD/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -12,7 +12,7 @@
   "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T21:45:19Z",
+  "dateModified": "2026-09-04T14:41:43Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -43,24 +43,24 @@
       "name": "OAI-ORE Resource Map in RDF/XML",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf",
       "encodingFormat": "application/rdf+xml",
-      "contentSize": 23395,
-      "sha256": "546cb1fc83bd885575b8c49e34867d03422f6be98769761960b2ca327240b8f4"
+      "contentSize": 22950,
+      "sha256": "4b5ae24032017cd6870e04833f7f9bcb34adc72ef4a9cc754ea87e520d05dc86"
     },
     {
       "@type": "DataDownload",
       "name": "OAI-ORE Resource Map in Turtle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl",
       "encodingFormat": "text/turtle",
-      "contentSize": 35131,
-      "sha256": "86d0bd8096e01b935d87d19cad764420135ef1e6a4ef5f5645a740ecd0ea2a2e"
+      "contentSize": 34036,
+      "sha256": "fd213423db69816818f2ae717fde9d19f5d0d4302a00d8ea99f31d436dd95d2f"
     },
     {
       "@type": "DataDownload",
       "name": "OAI-ORE Resource Map in JSON-LD",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 27385,
-      "sha256": "30307ad9c0f1e0156c60b7ff3caa5c88a99a8bb515e7cdc8f00ceb1edb2e2885"
+      "contentSize": 26940,
+      "sha256": "fa76a5164de36a09fe878dc59bf033fe1444ba11af738bb17dcb9dd40cb33ca7"
     },
     {
       "@type": "DataDownload",
@@ -68,15 +68,15 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "contentSize": 446,
-      "sha256": "6c20d3710cd3a4bd918023f8ac87eaa6e68b0a8c97fb923eb4b56502756fcc47"
+      "sha256": "fe70af132539d1122bae5ebe0fb386d8994fbd3c262f4b13256c0baf954023a5"
     },
     {
       "@type": "DataDownload",
       "name": "Bilingual validation guide",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/README.txt",
       "encodingFormat": "text/plain",
-      "contentSize": 1982,
-      "sha256": "ee7f821ca9fae37450a6497307a746edd16736542aaba34e6999bc0280801d9a"
+      "contentSize": 1977,
+      "sha256": "05c7b700d960a5c25fbf5944f8f1aae421d6164ec190f3b33ee3e35408416882"
     },
     {
       "@type": "DataDownload",
@@ -91,8 +91,8 @@
       "name": "Complete deterministic bundle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-37-symbols-oai-ore-bundle.zip",
       "encodingFormat": "application/zip",
-      "contentSize": 10723,
-      "sha256": "d4840bad229cbca80f402575d6570755627ccad407bddb8cba77e35e147a4bdc"
+      "contentSize": 10713,
+      "sha256": "f3424777324fce03a48deac2c4cc4b8b77d7ed8edd703b7b7cd35619a0be39e1"
     }
   ],
   "hasPart": [
@@ -101,128 +101,128 @@
       "name": "Canonical 37-symbol Bopomofo JSON",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json",
       "encodingFormat": "application/json",
-      "contentSize": 9675,
-      "sha256": "5072ef1d1fb3951830f71fc4e2bac378c6f9a22b883070cd9f96eb7c2de230d7"
+      "contentSize": 9670,
+      "sha256": "42dd00e51fe23acc67ca33cf642a73133be7b9655829ccb8900a97b1084abe5f"
     },
     {
       "@type": "DataDownload",
       "name": "Canonical 37-row Bopomofo CSV",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
       "encodingFormat": "text/csv",
-      "contentSize": 8350,
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"
+      "contentSize": 7980,
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514"
     },
     {
       "@type": "DataDownload",
       "name": "Equivalent Bopomofo JSON Lines records",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
       "encodingFormat": "text/plain",
-      "contentSize": 14734,
-      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131"
+      "contentSize": 14364,
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7"
     },
     {
       "@type": "DataDownload",
       "name": "MLCommons Croissant 1.1 metadata",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 13777,
-      "sha256": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7"
+      "contentSize": 13637,
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35"
     },
     {
       "@type": "DataDownload",
       "name": "W3C CSVW metadata",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "encodingFormat": "application/csvm+json",
-      "contentSize": 7701,
-      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771"
+      "contentSize": 7631,
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677"
     },
     {
       "@type": "DataDownload",
       "name": "Bopomofo SKOS vocabulary in JSON-LD",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 79017,
-      "sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"
+      "contentSize": 78997,
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49"
     },
     {
       "@type": "DataDownload",
       "name": "Bopomofo SKOS vocabulary in Turtle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl",
       "encodingFormat": "text/turtle",
-      "contentSize": 32239,
-      "sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411"
+      "contentSize": 32219,
+      "sha256": "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1"
     },
     {
       "@type": "DataDownload",
       "name": "Bopomofo SKOS vocabulary in N-Triples",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt",
       "encodingFormat": "application/n-triples",
-      "contentSize": 141016,
-      "sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef"
+      "contentSize": 135781,
+      "sha256": "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4"
     },
     {
       "@type": "DataDownload",
       "name": "SHACL validation shapes for the SKOS vocabulary",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl",
       "encodingFormat": "text/turtle",
-      "contentSize": 4070,
-      "sha256": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc"
+      "contentSize": 4065,
+      "sha256": "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1"
     },
     {
       "@type": "DataDownload",
       "name": "Frictionless Data Package 2.0 descriptor",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json",
       "encodingFormat": "application/json",
-      "contentSize": 2165,
-      "sha256": "80efcd4adad386e9838f53b5d415f38be84ab4b5e3ecc6d9156b0284f7e1ab94"
+      "contentSize": 2145,
+      "sha256": "fc7819fffb1d9513472ba86a8269df9fc9a7598a546160dc5839b6a8fe275a88"
     },
     {
       "@type": "DataDownload",
       "name": "Frictionless Table Schema 2.0",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json",
       "encodingFormat": "application/json",
-      "contentSize": 5470,
-      "sha256": "ac2e61302e11c8613a44ab42c2927daace54ce1583a20b2f5072de6d407dc7fb"
+      "contentSize": 5445,
+      "sha256": "25762f51439d14bf191d9eff2f422721b9cba703c1e67736d7eadec45b152206"
     },
     {
       "@type": "DataDownload",
       "name": "Frictionless package CSV resource",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv",
       "encodingFormat": "text/csv",
-      "contentSize": 8350,
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"
+      "contentSize": 7980,
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514"
     },
     {
       "@type": "DataDownload",
       "name": "Static Bopomofo API collection",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json",
       "encodingFormat": "application/json",
-      "contentSize": 9773,
-      "sha256": "e6c95e415d94c8e9f32c9169e68acd2e988960ce171449c7d3d0a0c848a50028"
+      "contentSize": 9563,
+      "sha256": "2825e472d5696cc6ab9eb433fcb9ed3c685db442a72ade187c820d84b0d109c7"
     },
     {
       "@type": "DataDownload",
       "name": "OpenAPI 3.1 description for the static API",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json",
       "encodingFormat": "application/vnd.oai.openapi+json;version=3.1",
-      "contentSize": 22659,
-      "sha256": "9ba0af494930aede38462f542ff9d5dc691a37e14cd9cf166ca491ad6b956211"
+      "contentSize": 22649,
+      "sha256": "7eeb5ff6b81d04dd4e7efc29ce6d0fb3e52abf70db830e245a9013e9b9b4fdee"
     },
     {
       "@type": "DataDownload",
       "name": "Canonical LDES 1.0 JSON-LD event-stream entry point",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
       "encodingFormat": "application/ld+json",
-      "contentSize": 11113,
-      "sha256": "c0ef478f3dee33ee0c268d94bcb317a03b9658b74522ae2992946c6a27c6d0f0"
+      "contentSize": 10968,
+      "sha256": "dc464aa5b2be753f0f1e3660254fcf1d1e798d542bc4703aff389c6cdcfeb6c6"
     },
     {
       "@type": "DataDownload",
       "name": "Turtle discovery overview for the LDES event stream",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
       "encodingFormat": "text/turtle",
-      "contentSize": 15139,
-      "sha256": "0f894e4ccf73b166b4e560daa68bf3ef5a533b7532f6c3b9262504ed6306bb23"
+      "contentSize": 14709,
+      "sha256": "76edfd00371fb4b4ab425a87ec2ed56a1c1195740ef8b12dfc633af0de96443e"
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: "간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ko/scanto.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/zhmncf.mp4"
 duration: "PT16S"
 app_store_id: "6779977651"

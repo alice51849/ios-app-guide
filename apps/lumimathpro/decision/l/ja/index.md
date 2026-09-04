@@ -2,7 +2,7 @@
 title: "未就学児・低学年向けおすすめ完全算数学習アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ja/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

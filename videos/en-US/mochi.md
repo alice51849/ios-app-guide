@@ -2,7 +2,7 @@
 title: "best simple to do list app iphone no subscription"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/en-US/mochi.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://open.cait518.cc/ios-app-guide/media/app-videos/mochi-en-us.mp4"
 duration: "PT8.8S"
 app_store_id: "6785004775"

@@ -2,7 +2,7 @@
 title: "తల్లిదండ్రులు పిల్లలతో బయట సమయం ప్లాన్ చేయడానికి సహాయపడే ఉత్తమ వాతావరణ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/te-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

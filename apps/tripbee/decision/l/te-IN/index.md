@@ -2,7 +2,7 @@
 title: "iPhone కోసం ఉత్తమ ట్రిప్ ఇటికరరీ ప్లానర్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/te-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

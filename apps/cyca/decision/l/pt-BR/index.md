@@ -2,7 +2,7 @@
 title: "melhor app de rastreamento de ciclo menstrual sem necessidade de conta para iPhone"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/pt-BR/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

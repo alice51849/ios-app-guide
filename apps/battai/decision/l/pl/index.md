@@ -2,7 +2,7 @@
 title: "BattAI: Wynik kondycji baterii — Jasne zasady, źródła i granice | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/pl/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

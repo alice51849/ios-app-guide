@@ -2,7 +2,7 @@
 title: "最佳學習時封鎖社群媒體應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/lockhour.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/hzqwfa.mp4"
 duration: "PT16S"
 app_store_id: "6780107485"

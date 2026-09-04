@@ -2,7 +2,7 @@
 title: "முகாமையாளர்களுக்கான சிறந்த ஆஃப்லைன் ஆவண ஸ்கேனர் பயன்பாடு, கிளவுட் இல்லாமல்"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/ta-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

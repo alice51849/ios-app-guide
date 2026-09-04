@@ -2,7 +2,7 @@
 title: "无需订阅的最佳旅行预算追踪应用 iPhone"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/zh-Hans/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

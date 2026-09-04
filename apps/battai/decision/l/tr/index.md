@@ -2,7 +2,7 @@
 title: "BattAI: Pil sağlığı puanı — Açık kurallar, kaynaklar ve sınırlar | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/tr/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

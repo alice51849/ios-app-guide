@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-02",
-  "content_digest": "1d3d4c468976302f60d7dd65790d17dc45b1320abd855122d84f5c6edbeed579",
+  "date_modified": "2026-09-04",
+  "content_digest": "a89f4042c9c3cea1067b5d6e71566884ebdbdc406ea659f56266dcfd4c158778",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -92,7 +92,8 @@
         "文件掃描",
         "文字辨識",
         "論文閱讀",
-        "讀文件"
+        "讀文件",
+        "提示詞管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -130,7 +131,8 @@
         "考試準備",
         "練習",
         "學習計劃",
-        "成績追蹤"
+        "成績追蹤",
+        "多益"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -338,7 +340,8 @@
         "工讀",
         "求才",
         "履歷封面",
-        "自傳範本"
+        "自傳範本",
+        "ats 履歷"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1616,7 +1619,8 @@
         "客戶紀錄",
         "離線本機處理",
         "批次作業",
-        "機密安全傳送"
+        "機密安全傳送",
+        "pdf 遮蔽"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

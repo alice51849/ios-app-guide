@@ -2,7 +2,7 @@
 title: "найпростіший додаток для списку справ на iPhone без підписки"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/uk/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

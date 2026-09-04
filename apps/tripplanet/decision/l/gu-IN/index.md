@@ -2,7 +2,7 @@
 title: "ફેમિલી ટ્રિપ્સ માટે બાળકો માટે શ્રેષ્ઠ ટ્રાવેલ એક્ટિવિટી એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/gu-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

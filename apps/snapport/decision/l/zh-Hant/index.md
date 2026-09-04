@@ -2,7 +2,7 @@
 title: "最佳在家拍攝嬰幼兒護照照片App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/zh-Hant/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "migliore app per correggere foto sfocate di bambini su iPhone"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/it/unblurry.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/h90ie5.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"

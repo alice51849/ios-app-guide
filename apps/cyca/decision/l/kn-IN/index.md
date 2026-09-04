@@ -2,7 +2,7 @@
 title: "ಅಕೌಂಟ್ ಅಗತ್ಯವಿಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪೀರಿಯಡ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/kn-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

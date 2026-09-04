@@ -34,7 +34,7 @@
   "identifier": "LUMI-ZHUYIN-OER-METADATA-2026",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11T13:00:48Z",
+  "dateModified": "2026-09-04T14:41:43Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -56,22 +56,22 @@
   "isBasedOn": {
     "@type": "Book",
     "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
-    "dateModified": "2026-07-11T10:45:50Z",
+    "dateModified": "2026-09-04T14:41:43Z",
     "encoding": [
       {
         "@type": "MediaObject",
         "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
         "encodingFormat": "application/epub+zip",
-        "contentSize": "9564 bytes",
-        "sha256": "be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9",
+        "contentSize": "9533 bytes",
+        "sha256": "748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24",
         "inLanguage": "en"
       },
       {
         "@type": "MediaObject",
         "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
         "encodingFormat": "application/epub+zip",
-        "contentSize": "10287 bytes",
-        "sha256": "0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b",
+        "contentSize": "10258 bytes",
+        "sha256": "8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b",
         "inLanguage": "zh-Hant"
       }
     ]
@@ -101,40 +101,40 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip",
-      "contentSize": "9842 bytes",
-      "sha256": "674a6afbd46902f7c722607ba60ba020b493d1a81cadefbf86fc2e3a3a0ddd6a"
+      "contentSize": "9809 bytes",
+      "sha256": "b7052e6b60cedd7b69e0188cf1b7a307e1cea53ab9d3ca7419ee344cfbdf424f"
     },
     {
       "@type": "DataDownload",
       "name": "OAI-DC XML - English",
       "encodingFormat": "application/xml",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml",
-      "contentSize": "2357 bytes",
-      "sha256": "afdf7a343c448f1112a65eefca2215fc82b840dbbdb7acad408e14c82004d9b2"
+      "contentSize": "2337 bytes",
+      "sha256": "73f16521b4fbe09139394dac53be5e3cadb8a1d422c895c82c36d1eb9ecc88f1"
     },
     {
       "@type": "DataDownload",
       "name": "OAI-DC XML - Traditional Chinese",
       "encodingFormat": "application/xml",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml",
-      "contentSize": "2377 bytes",
-      "sha256": "c05fb23988619b22f44b6515ce3ee48a9b72573216f8d722b31059bf1a1608c2"
+      "contentSize": "2357 bytes",
+      "sha256": "2a130a6b552615cfdf623720b1d4e2791dc4324b488f21ffb08374e9a1c921d5"
     },
     {
       "@type": "DataDownload",
       "name": "DCMI Terms JSON-LD",
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
-      "contentSize": "13687 bytes",
-      "sha256": "fa0c3c6d5c0f9fb1482a7cef67cef1200c92b80ab1d9a52dbd0fbb4af36517ca"
+      "contentSize": "13502 bytes",
+      "sha256": "b70a85a084b8a5b5c9ebf833806ab83b49d701ac279dc3eac90f68c3a1f9d024"
     },
     {
       "@type": "DataDownload",
       "name": "LRMI JSON-LD",
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld",
-      "contentSize": "18898 bytes",
-      "sha256": "4e3f312f69e448481f5825ad213b6710a2767b807c209f0e47101833e30aa23c"
+      "contentSize": "18678 bytes",
+      "sha256": "330eae58bfbcad4b4130d1097f0a0f3a1bc3b968d9931bfcfc1ce80b8e54438a"
     }
   ],
   "includedInDataCatalog": {

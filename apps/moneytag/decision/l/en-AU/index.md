@@ -2,7 +2,7 @@
 title: "best income and expense tracker for freelance projects no subscription"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/en-AU/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

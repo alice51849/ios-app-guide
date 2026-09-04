@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za načrtovanje potovalnega itinerarja za iPhone"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/sl-SI/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -8,7 +8,7 @@
   "identifier": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11",
+  "dateModified": "2026-09-04",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -44,24 +44,24 @@
       "name": "zhuyin-bopomofo-ml-dataset.csv",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
       "encodingFormat": "text/csv",
-      "contentSize": "8350 B",
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422"
+      "contentSize": "7980 B",
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514"
     },
     {
       "@type": "DataDownload",
       "name": "zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "encodingFormat": "application/csvm+json",
-      "contentSize": "7701 B",
-      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771"
+      "contentSize": "7631 B",
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677"
     },
     {
       "@type": "DataDownload",
       "name": "bopomofo-37-symbols-csvw-bundle.zip",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip",
       "encodingFormat": "application/zip",
-      "contentSize": "4867 B",
-      "sha256": "8cdb9e0961d725552ce284d1a6e1521f92dd9afd69682d83fdf674851893ee3d"
+      "contentSize": "4851 B",
+      "sha256": "56923ddec232b791d97c679be286af139ebdd22b509808446d5558c7d2de1a59"
     },
     {
       "@type": "DataDownload",
@@ -69,7 +69,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "contentSize": "362 B",
-      "sha256": "9b26f04fb3eef881df3a983e590f565bc155e9fe3d4782d19ecaf60391a26495"
+      "sha256": "776ae236eb143e1b613750ac772ac541e486f47eb50e8c449c84860452fd5521"
     }
   ]
 }

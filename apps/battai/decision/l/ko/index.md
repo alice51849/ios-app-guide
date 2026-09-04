@@ -2,7 +2,7 @@
 title: "BattAI: 배터리 상태 점수 — 규칙, 출처, 한계를 분명하게 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ko/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

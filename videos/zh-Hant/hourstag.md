@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/hourstag.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 video_url: "https://files.catbox.moe/wp5abu.mp4"
 duration: "PT16S"
 app_store_id: "6754218117"

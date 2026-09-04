@@ -2,7 +2,7 @@
 title: "Apple Watch असलेल्या व्यस्त प्रवाशांसाठी सर्वोत्तम शब्दसंग्रह अ‍ॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/mr-IN/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "Snapport Lite: ทำรูปติดบัตร — ถ่ายรูปติดบัตรที่บ้าน | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/th/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

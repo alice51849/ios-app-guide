@@ -2,7 +2,7 @@
 title: "ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/vi/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

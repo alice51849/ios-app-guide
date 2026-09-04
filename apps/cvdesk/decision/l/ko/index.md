@@ -2,7 +2,7 @@
 title: "2026년 경력 전환자를 위한 최고의 이력서 작성 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ko/index.html"
-modified: "2026-09-03"
+modified: "2026-09-04"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

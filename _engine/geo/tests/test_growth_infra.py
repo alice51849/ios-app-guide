@@ -7193,6 +7193,37 @@ class GeneratorTests(unittest.TestCase):
         self._seed_zhuyin_bagit_pages(pages)
         zhuyin_bagit_package.build(pages, app_public=False)
 
+    def test_committed_zhuyin_ocfl_asset_is_self_consistent(self):
+        pages = Path(zhuyin_ocfl_object.PAGES)
+        package = pages / zhuyin_ocfl_object.PACKAGE_PATH
+        bundle = package / zhuyin_ocfl_object.BUNDLE_FILENAME
+        checksums = package / zhuyin_ocfl_object.CHECKSUM_FILENAME
+        if not bundle.exists() or not checksums.exists():
+            self.skipTest("Published OCFL assets are not in this checkout")
+
+        expected_digest, expected_name = checksums.read_text(
+            encoding="ascii"
+        ).split()
+        self.assertEqual(zhuyin_ocfl_object.BUNDLE_FILENAME, expected_name)
+        self.assertEqual(
+            expected_digest,
+            hashlib.sha256(bundle.read_bytes()).hexdigest(),
+        )
+
+        prefix = f"{zhuyin_ocfl_object.OBJECT_ROOT}/"
+        with zipfile.ZipFile(bundle) as archive:
+            self.assertIsNone(archive.testzip())
+            names = archive.namelist()
+            self.assertTrue(names)
+            self.assertTrue(all(name.startswith(prefix) for name in names))
+            object_files = {
+                name[len(prefix) :]: archive.read(name)
+                for name in names
+                if name != prefix
+            }
+        payload, _ = zhuyin_ocfl_object.load_payload(pages)
+        zhuyin_ocfl_object.validate_object_files(object_files, payload)
+
     def test_zhuyin_ocfl_object_is_versioned_deterministic_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

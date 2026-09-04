@@ -15,11 +15,11 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentSize": "317476 B",
+      "contentSize": "311216 B",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip",
       "encodingFormat": "application/zip",
       "name": "Deterministic OCFL 1.1 object ZIP",
-      "sha256": "523d0a796fe84773ca713fe2779846e1bcfec73b5b1524e058970c22360989d2"
+      "sha256": "fc13a850721a20c806d824b479bcb9cc04d4d42dc933154dcf70cb06d61262cb"
     },
     {
       "@type": "DataDownload",
@@ -27,109 +27,109 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "name": "Outer SHA-256 checksum",
-      "sha256": "0e508eab13b6fe4d687bfe44f486f1e329b724b72bae087d4d659bc2594a2fc7"
+      "sha256": "57da7c81a4596bf4ae54a7be3ef05d7ede9bcfdd0c26acd0daf4d468278f23b7"
     }
   ],
   "hasPart": [
     {
       "@type": "DigitalDocument",
-      "contentSize": "394 B",
+      "contentSize": "389 B",
       "description": "CC BY 4.0 license notice",
       "encodingFormat": "text/plain",
       "isBasedOn": "https://creativecommons.org/licenses/by/4.0/",
       "name": "data/LICENSE.txt",
-      "sha256": "89785d578236e5988127fbaf86aff1bbcd107be4a499c2c5aa80efd00fbc311a",
-      "sha512": "81f4deb45f5d349e5b5c54365550315678f0e382005ae7e238ae957b37c42c4cabdb8d1a8f3c33c7d7b6aefe60ef10a7a962c78c8b32172029b6a5e026d861a5"
+      "sha256": "dfc5506804c55c07f78b0bb027a8c58bbc5b7dc6f68ed1e6348a8e8d40e57114",
+      "sha512": "655c6c444347a230ad9cde06e274e306644c3e75e76754ecbf12d19d626789abe7c7fc5025b1b44ad3d4815c2579e5c12ed9fd0a54ef6f3c36e5fe07f8e56aef"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "840 B",
+      "contentSize": "835 B",
       "description": "Preservation and validation guide",
       "encodingFormat": "text/markdown",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
       "name": "data/README.md",
-      "sha256": "a943ad7bfc6ce80d9084e029c94a62ab29548061caef8015182ae20050a4376d",
-      "sha512": "53b43fa5c44595694cb92c7d8b76418a7cbb230b72bcc5b91fe174b73819c819b877fe080a4246ff6a3634c6e70d764525a28cdaf948d8087f4e6a18894c482f"
+      "sha256": "a884071c0424676111931d6725ffb242b15b3ca204123a47c0933df8548edbf2",
+      "sha512": "f5eed2ef4574d8189e535ba0eae4892f35e47c0bf740adf346aed57b362e079c2203eb94fffb98ae04c16ec32d6bc04fa54ead3d3ae0ca57240fbf6ecd15d25e"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "13777 B",
+      "contentSize": "13637 B",
       "description": "MLCommons Croissant 1.1 metadata",
       "encodingFormat": "application/ld+json; profile=\"http://mlcommons.org/croissant/1.1\"",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "name": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
-      "sha256": "d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7",
-      "sha512": "a433f33de8d9e71d653860417a22566abad77bd173646dc160742d487327dc3b934d46994cc296fae72f076deda5f5827f794c168e27976adb8a8162bdc0b27a"
+      "sha256": "875a9d7d9b39653b3d5b941cc297d075ca3bc46dc6dc94818099615ed11a3066",
+      "sha512": "bd77e09f300ff363608b92c27be0ea897ae76de200c7589129574067bb9d7b5312d35f5f67d071e467b9ed3542e99f598924aaec12d625cefe23c5c0d82735ff"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "8350 B",
+      "contentSize": "7980 B",
       "description": "Canonical 37-row UTF-8 table",
       "encodingFormat": "text/csv",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
       "name": "data/zhuyin-bopomofo-ml-dataset.csv",
-      "sha256": "6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422",
-      "sha512": "d5a725aff9d0091fc7620d81c3b3f93c39b733901c00b7e275af419b1cfcdb6305721f7e344d692aa6e03774567b452b21249c0cd93e53433703a51f65463acc"
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
+      "sha512": "abdcdce24834e36f0d7a9cad27b6b76996db452f58e28c97d77974a2a8603b4bc4a95955a95a86bbd0d7bfdd7fc77c4d45001a2dcb7cde15fb596c08d57fa02e"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "7701 B",
+      "contentSize": "7631 B",
       "description": "W3C CSVW metadata",
       "encodingFormat": "application/csvm+json",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "name": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
-      "sha256": "eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771",
-      "sha512": "098deb1b27ff643599828f6060c8256f7c3d97c523c7467c3012286361b26b9971fe9ecc4bd19f0a280fd34899815a0e0d4d77a072f800c4696acdfa1a613f1c"
+      "sha256": "a001dcc10198ad9e7c30f44bb6cd223ea94aa9b637f9fd0c56bca8b779d431ba",
+      "sha512": "d893f9615afeaf0088990dd39fc20c096246d69a00d495b951830a15c400d6eb991c31b6196bb93c5c8d9e25d0a3e4bea2d25334b78f381beb8c6a24826dab22"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "14734 B",
+      "contentSize": "14364 B",
       "description": "Equivalent JSON Lines records",
       "encodingFormat": "application/x-ndjson",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
       "name": "data/zhuyin-bopomofo-ml-dataset.jsonl",
-      "sha256": "68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131",
-      "sha512": "5e6960175d29c475aac4ec2a0ebc060d757171a42108ba6c7afe445cb6fb4a78f18e4036d91e1580d5d7b20e2025722740d96d599ce1d2d1093d4f8dfad8021b"
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
+      "sha512": "3bf8f4a8630f481616cb8769d4345c2e3e18b6531d5466bc756c0bc640ca9d1f8910d71b886906ee9a214f709e6b469262b288a6141f7c72f57d2846824a2c55"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "79017 B",
+      "contentSize": "78997 B",
       "description": "SKOS vocabulary in JSON-LD",
       "encodingFormat": "application/ld+json",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
       "name": "data/zhuyin-bopomofo-vocabulary.jsonld",
-      "sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a",
-      "sha512": "a5d41276f18fb1cbb038772d34f0014441248f5d65cde207f10def1a18ab294fde3d1fe22669df8cec5a21d1d3175b65d79d47d73927a0b8ed4e4404aab8efa8"
+      "sha256": "5721675083f1e501711c1fd5199f12d48f05ab2f85f20f92dfdf390dfd1d2198",
+      "sha512": "5d2883031871accf630c213a611e426c7833bbca26a64311c9662d5712a93edc5995bef9d73df9ada4284d2a673fec8c79238aab036c00e387ff8b368b40998a"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "141016 B",
+      "contentSize": "135781 B",
       "description": "SKOS vocabulary in N-Triples",
       "encodingFormat": "application/n-triples",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt",
       "name": "data/zhuyin-bopomofo-vocabulary.nt",
-      "sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef",
-      "sha512": "588c48c7ccd6ce0b6cce5b1d5015e1d3681c1e1713cbb1b093601771864902c78d64c936506f01b523a71aebfc5e1bf167631872eb9c6a39eeb8ab177f764838"
+      "sha256": "b83eefed47513ea489241843a758ad2e028742bc7005351fb8d982a990d348cf",
+      "sha512": "e0786bda43004189b3b230350858773eb25cac6b926d0dc34d3a69d212b6f4c40372e27f6c9f8c62477ea35283933c6577a5a90a94fb3a1a51ffe6dcab8edfc3"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "4070 B",
+      "contentSize": "4065 B",
       "description": "SHACL validation shapes",
       "encodingFormat": "text/turtle",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl",
       "name": "data/zhuyin-bopomofo-vocabulary.shacl.ttl",
-      "sha256": "3f96d72fbbea61f308b28b8b54fc9867b0c2f6ae1538763e05093a9565fdd7cc",
-      "sha512": "67243fb25bfadb43a7f2eaa2b974887a452440024a7a4405b8abd2a784d120735dc0c8367434b9f999d4376614dba6d64d81314d1a0a5c4c13b06ea32c7fd9b2"
+      "sha256": "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1",
+      "sha512": "adb988adcfaa4a39c05aaf6d794a5439faaaddc14732cf3a1938da79b1c506d091f16a8abb3bfe486a047469b46637d5ddfbc4396d79c0926ba9b6e7e8672760"
     },
     {
       "@type": "DigitalDocument",
-      "contentSize": "32239 B",
+      "contentSize": "32219 B",
       "description": "SKOS vocabulary in Turtle",
       "encodingFormat": "text/turtle",
       "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl",
       "name": "data/zhuyin-bopomofo-vocabulary.ttl",
-      "sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411",
-      "sha512": "ff671139315c287f077aae0a6ab940756b7b4a48a671af63a881b5b9d52fda7355f7f9d9da09001b6e638d499d565d6672e29bb119d40ba472655cf4bfafee5b"
+      "sha256": "77295c4d94109267319a8c2cf3c215e5e6297913f3d35d4952d735df9a97c1f0",
+      "sha512": "dcd50cc0d3777edfb16f72bd41620ecfd1b9d201ec43bcebfd1dd0114b15addc28fe55419510ea7637086f76ba41fcaa7d23de37333b7dccd9d9df7099c17e75"
     }
   ],
   "identifier": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/#ocfl-object",

@@ -28,7 +28,7 @@ FEED_FILES = (
 )
 TOPICS = tuple(f"{SITE}/{filename}" for filename in FEED_FILES)
 LOCALIZED_ATOM_DIR = Path("data") / "app-install-decision-routes" / "feeds"
-VERIFY_WORKERS = 12
+VERIFY_WORKERS = 6
 USER_AGENT = "iOS-App-Guide-WebSub-Publisher/2.0"
 
 
@@ -98,7 +98,7 @@ def wait_until_deployed(
     feed_dir,
     topics=None,
     attempts=6,
-    timeout=10,
+    timeout=20,
     delay=5,
     workers=VERIFY_WORKERS,
 ):
@@ -114,9 +114,10 @@ def wait_until_deployed(
         for topic in topics
     }
 
+    pending_topics = set(topics)
     pending = []
     for attempt in range(1, attempts + 1):
-        pending = []
+        failures = {}
 
         def check(topic):
             try:
@@ -133,16 +134,18 @@ def wait_until_deployed(
             return None
 
         with ThreadPoolExecutor(
-            max_workers=min(workers, len(topics))
+            max_workers=min(workers, len(pending_topics))
         ) as executor:
             futures = {
-                executor.submit(check, topic): topic for topic in topics
+                executor.submit(check, topic): topic
+                for topic in pending_topics
             }
             for future in as_completed(futures):
                 failure = future.result()
                 if failure:
-                    pending.append(failure)
-        pending.sort()
+                    failures[futures[future]] = failure
+        pending_topics = set(failures)
+        pending = sorted(failures.values())
         if not pending:
             print(f"WebSub deployment verified: {len(topics)} feeds")
             return
@@ -241,7 +244,7 @@ def main():
     )
     parser.add_argument("--deploy-attempts", type=int, default=6)
     parser.add_argument("--delay", type=float, default=5)
-    parser.add_argument("--timeout", type=float, default=10)
+    parser.add_argument("--timeout", type=float, default=20)
     args = parser.parse_args()
     topics = discover_topics(args.feed_dir)
     wait_until_deployed(

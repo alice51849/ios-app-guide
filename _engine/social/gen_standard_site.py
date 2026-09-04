@@ -60,7 +60,7 @@ def _default_public_site() -> str:
 
         return PUBLIC_SITE.rstrip("/")
     except Exception:  # noqa: BLE001 - isolated copies have no geo/ beside them
-        return "https://alice51849.github.io/ios-app-guide"
+        return "https://open.cait518.cc/ios-app-guide"
 
 
 DEFAULT_SITE = _default_public_site()

@@ -4466,6 +4466,43 @@ class GeneratorTests(unittest.TestCase):
                 all(call.kwargs["timeout"] == 7 for call in urlopen.call_args_list)
             )
 
+            attempts = {}
+            flaky_topic = topics[-1]
+
+            def one_flaky_feed(request, **_kwargs):
+                topic = request.full_url
+                attempts[topic] = attempts.get(topic, 0) + 1
+                if topic == flaky_topic and attempts[topic] == 1:
+                    raise OSError("transient CDN timeout")
+                path = notify_websub._local_feed_path(root, topic)
+                return Response(path.read_bytes())
+
+            with mock.patch.object(
+                notify_websub.urllib.request,
+                "urlopen",
+                side_effect=one_flaky_feed,
+            ) as urlopen, mock.patch.object(
+                notify_websub.time, "sleep"
+            ) as sleep:
+                notify_websub.wait_until_deployed(
+                    root,
+                    topics=topics,
+                    attempts=2,
+                    timeout=7,
+                    delay=1,
+                    workers=1,
+                )
+            self.assertEqual(len(topics) + 1, urlopen.call_count)
+            self.assertEqual(2, attempts[flaky_topic])
+            self.assertTrue(
+                all(
+                    count == 1
+                    for topic, count in attempts.items()
+                    if topic != flaky_topic
+                )
+            )
+            sleep.assert_called_once_with(1)
+
         with mock.patch.object(
             notify_websub.urllib.request,
             "urlopen",

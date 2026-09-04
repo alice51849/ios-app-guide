@@ -92,7 +92,7 @@ def fixture_manifest(
         )
         for index in range(1, count + 1):
             canonical = (
-                "https://alice51849.github.io/ios-app-guide/"
+                generator.DEFAULT_SITE + "/"
                 f"answers/{app_key}-{index}.html"
             )
             disclosure = generator.DISCLOSURE_TEMPLATE.format(name=name)
@@ -161,7 +161,7 @@ def fixture_manifest(
             "policy": "publisher-authored",
         },
         "publication": {
-            "url": "https://alice51849.github.io/ios-app-guide",
+            "url": generator.DEFAULT_SITE,
             "name": "Lumi Studio App Guides",
             "description": (
                 "First-party commercial publisher guidance; not an "
@@ -573,6 +573,54 @@ class StandardSiteReadRetryTests(unittest.TestCase):
 
 
 class StandardSiteSelectionTests(unittest.TestCase):
+    def test_approved_origin_migration_preserves_record_identities(self) -> None:
+        manifest = fixture_manifest({"alpha": 1})
+        state = publisher.empty_state()
+        publisher.allocate_rkeys(
+            state,
+            manifest,
+            publisher.TIDGenerator(
+                clock_us=lambda: 1_800_000_000_000_000,
+                random_clock_id=lambda: 1,
+            ),
+        )
+        target = manifest["publication"]["url"]
+        legacy = next(iter(publisher.PUBLICATION_URL_MIGRATIONS))
+        document = manifest["documents"][0]
+        current_url = document["canonical_url"]
+        legacy_url = legacy + current_url[len(target) :]
+        publication_rkey = state["publication"]["rkey"]
+        document_rkey = state["documents"][current_url]["rkey"]
+        state["publication"]["canonical_url"] = legacy
+        state["documents"] = {legacy_url: state["documents"].pop(current_url)}
+        state["daily"] = {
+            "2026-07-27": {
+                "selected_urls": [legacy_url],
+                "created_at": "2026-07-27T14:00:00.000Z",
+            }
+        }
+
+        migrated_from = publisher.migrate_publication_origin(state, manifest)
+
+        self.assertEqual(legacy, migrated_from)
+        self.assertEqual(target, state["publication"]["canonical_url"])
+        self.assertEqual(publication_rkey, state["publication"]["rkey"])
+        self.assertEqual(document_rkey, state["documents"][current_url]["rkey"])
+        self.assertEqual(
+            [current_url],
+            state["daily"]["2026-07-27"]["selected_urls"],
+        )
+
+    def test_unknown_origin_migration_fails_closed(self) -> None:
+        manifest = fixture_manifest({"alpha": 1})
+        state = publisher.empty_state()
+        state["publication"]["canonical_url"] = "https://example.invalid/apps"
+
+        with self.assertRaisesRegex(
+            publisher.StateError, "explicit migration"
+        ):
+            publisher.migrate_publication_origin(state, manifest)
+
     def test_daily_cap_dedup_and_cross_app_round_robin(self) -> None:
         manifest = fixture_manifest(
             {"alpha": 2, "beta": 2, "gamma": 2, "delta": 2}
@@ -1502,6 +1550,71 @@ class StandardSitePublisherTests(ProjectScratchCase):
         return publisher.TIDGenerator(
             clock_us=lambda: 1_800_000_000_000_000,
             random_clock_id=lambda: 2,
+        )
+
+    def test_origin_migration_updates_existing_records_without_duplication(
+        self,
+    ) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        legacy = next(iter(publisher.PUBLICATION_URL_MIGRATIONS))
+        legacy_manifest = deepcopy(manifest)
+        legacy_manifest["publication"]["url"] = legacy
+        for document in legacy_manifest["documents"]:
+            document["canonical_url"] = legacy + document["path"]
+            document["content_hash"] = generator.document_content_hash(
+                document
+            )
+        generator.validate_manifest(legacy_manifest)
+        publisher.run(
+            legacy_manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        legacy_state = json.loads(state_path.read_text(encoding="utf-8"))
+        legacy_publication_rkey = legacy_state["publication"]["rkey"]
+        legacy_document_rkey = next(
+            iter(legacy_state["documents"].values())
+        )["rkey"]
+        remote_keys = set(client.records)
+
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW + timedelta(days=1),
+        )
+
+        migrated = json.loads(state_path.read_text(encoding="utf-8"))
+        canonical = manifest["documents"][0]["canonical_url"]
+        self.assertEqual(remote_keys, set(client.records))
+        self.assertEqual(
+            legacy_publication_rkey, migrated["publication"]["rkey"]
+        )
+        self.assertEqual(
+            legacy_document_rkey, migrated["documents"][canonical]["rkey"]
+        )
+        self.assertEqual(
+            manifest["publication"]["url"],
+            client.records[
+                (publisher.PUBLICATION_COLLECTION, legacy_publication_rkey)
+            ]["value"]["url"],
         )
 
     def test_upserts_are_idempotent_and_rkeys_stay_stable(self) -> None:

@@ -52,6 +52,11 @@ AT_URI_RE = re.compile(
     r"([234567abcdefghij][234567abcdefghijklmnopqrstuvwxyz]{12})$"
 )
 EXPECTED_PUBLISHER_DID = "did:plc:kboucnzkxzmqmatvhes4xlt4"
+PUBLICATION_URL_MIGRATIONS = {
+    "https://alice51849.github.io/ios-app-guide": (
+        "https://open.cait518.cc/ios-app-guide"
+    ),
+}
 DEFAULT_STATE = PRIVATE_DIR / "standard-site-state.json"
 DEFAULT_CONTRACT = PRIVATE_DIR / "standard-site-guide-contract.json"
 DEFAULT_WELL_KNOWN = PRIVATE_DIR / "site.standard.publication"
@@ -352,6 +357,66 @@ def _all_rkeys(state: Mapping[str, object]) -> list[str]:
     return result
 
 
+def migrate_publication_origin(
+    state: MutableMapping[str, object],
+    manifest: Mapping[str, object],
+) -> str | None:
+    """Move the one approved origin without changing AT record identities."""
+    validate_state(state)
+    publication = state["publication"]
+    target = str(manifest["publication"]["url"])
+    configured = str(publication.get("canonical_url") or "")
+    if not configured or configured == target:
+        return None
+    if PUBLICATION_URL_MIGRATIONS.get(configured) != target:
+        raise StateError(
+            "Publication URL changed; explicit migration is required"
+        )
+
+    def remap(canonical: object, label: str) -> str:
+        value = str(canonical)
+        if value.startswith(configured + "/"):
+            return target + value[len(configured) :]
+        if value.startswith(target + "/"):
+            return value
+        raise StateError(
+            f"{label} is outside the approved publication migration"
+        )
+
+    remapped_documents: dict[str, object] = {}
+    for canonical, entry in state["documents"].items():
+        migrated = remap(canonical, "Document canonical URL")
+        if migrated in remapped_documents:
+            raise StateError(
+                "Publication migration would collide document identities"
+            )
+        remapped_documents[migrated] = entry
+
+    remapped_daily: dict[str, object] = {}
+    for day, raw_entry in state["daily"].items():
+        if not isinstance(raw_entry, Mapping):
+            raise StateError(f"Invalid daily selection state: {day}")
+        selected = raw_entry.get("selected_urls")
+        if not isinstance(selected, list):
+            raise StateError(f"Invalid daily selection state: {day}")
+        migrated_urls = [
+            remap(canonical, "Daily canonical URL") for canonical in selected
+        ]
+        if len(migrated_urls) != len(set(migrated_urls)):
+            raise StateError(
+                f"Publication migration would collide daily URLs: {day}"
+            )
+        entry = dict(raw_entry)
+        entry["selected_urls"] = migrated_urls
+        remapped_daily[str(day)] = entry
+
+    state["documents"] = remapped_documents
+    state["daily"] = remapped_daily
+    publication["canonical_url"] = target
+    validate_state(state)
+    return configured
+
+
 def allocate_rkeys(
     state: MutableMapping[str, object],
     manifest: Mapping[str, object],
@@ -359,6 +424,8 @@ def allocate_rkeys(
 ) -> bool:
     """Persistently map the publication and every canonical URL to first TIDs."""
     changed = False
+    migrated_from = migrate_publication_origin(state, manifest)
+    changed = migrated_from is not None
     publication = state["publication"]
     publication_url = str(manifest["publication"]["url"])
     configured_url = publication.get("canonical_url")
@@ -1060,6 +1127,7 @@ def reconcile_remote_state(
 ) -> None:
     """Recover stable identities and invalidate stale local confirmations."""
     validate_state(state)
+    migrate_publication_origin(state, manifest)
     _migrate_legacy_pending_state(
         state,
         manifest,
@@ -1106,8 +1174,20 @@ def reconcile_remote_state(
     elif configured_rkey:
         occupying = publication_records.get(configured_rkey)
         if occupying is not None:
-            raise StateError("Durable publication rkey is occupied by another record")
-        _clear_publication_confirmation(publication)
+            value = occupying["value"]
+            legacy_url = str(value.get("url") or "")
+            if (
+                value.get("$type") == PUBLICATION_COLLECTION
+                and PUBLICATION_URL_MIGRATIONS.get(legacy_url)
+                == publication_url
+            ):
+                remote_publication = occupying
+            else:
+                raise StateError(
+                    "Durable publication rkey is occupied by another record"
+                )
+        else:
+            _clear_publication_confirmation(publication)
 
     if remote_publication is not None:
         _mark_publication(

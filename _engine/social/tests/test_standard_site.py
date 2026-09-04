@@ -2048,7 +2048,7 @@ class StandardSitePublisherTests(ProjectScratchCase):
     def test_live_108_document_republish_drains_for_all_limits(self) -> None:
         manifest = generator.build_manifest(
             pages=SOCIAL.parents[1],
-            site="https://alice51849.github.io/ios-app-guide",
+            site=generator.DEFAULT_SITE,
             max_per_app=3,
             now=self.NOW,
         )

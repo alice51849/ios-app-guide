@@ -7,7 +7,9 @@ import datetime as dt
 import io
 import json
 import os
+from pathlib import Path
 import sys
+import tempfile
 import unittest
 import urllib.error
 import urllib.parse
@@ -665,6 +667,178 @@ class RetryTests(unittest.TestCase):
         self.assertIn("/sendPhoto", request.call_args.args[0].full_url)
         self.assertEqual([image_url], sent["photo"])
         self.assertEqual(["Buyer-intent copy"], sent["caption"])
+
+    def test_telegram_local_photo_upload_uses_multipart_jpeg(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            image_path = Path(temporary) / "aim990-share.jpg"
+            image_path.write_bytes(b"verified-jpeg")
+            with (
+                mock.patch.object(
+                    telegram_post.secrets,
+                    "token_hex",
+                    return_value="fixed",
+                ),
+                mock.patch.object(
+                    telegram_post,
+                    "request_json",
+                    return_value={"ok": True, "result": {"message_id": 2}},
+                ) as request,
+            ):
+                telegram_post._send_photo_file(
+                    "token",
+                    "chat",
+                    "Buyer-intent copy",
+                    image_path,
+                )
+        sent = request.call_args.args[0]
+        self.assertIn("/sendPhoto", sent.full_url)
+        self.assertEqual(
+            "multipart/form-data; boundary=LumiTelegramfixed",
+            sent.headers["Content-type"],
+        )
+        self.assertIn(b'name="chat_id"\r\n\r\nchat', sent.data)
+        self.assertIn(b'name="caption"\r\n\r\nBuyer-intent copy', sent.data)
+        self.assertIn(
+            b'name="photo"; filename="aim990-share.jpg"',
+            sent.data,
+        )
+        self.assertIn(b"Content-Type: image/jpeg", sent.data)
+        self.assertIn(b"verified-jpeg", sent.data)
+
+    def test_telegram_confirmed_remote_failure_uses_local_photo(self):
+        item = {
+            "image_url": (
+                "https://open.cait518.cc/ios-app-guide/"
+                "social/img/aim990-share.jpg"
+            )
+        }
+        local_path = Path("/tmp/aim990-share.jpg")
+        with (
+            mock.patch.object(
+                telegram_post,
+                "_send_photo",
+                side_effect=common.HTTPStatusError(
+                    "Telegram sendPhoto",
+                    400,
+                ),
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_local_image_path",
+                return_value=local_path,
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_send_photo_file",
+                return_value={"ok": True, "result": {"message_id": 3}},
+            ) as local_send,
+            mock.patch.object(telegram_post, "_send_message") as text_send,
+            mock.patch("sys.stderr", new_callable=io.StringIO),
+        ):
+            result = telegram_post._publish_item(
+                "token",
+                "chat",
+                "Buyer-intent copy",
+                item,
+            )
+        self.assertEqual(3, result["result"]["message_id"])
+        local_send.assert_called_once_with(
+            "token",
+            "chat",
+            "Buyer-intent copy",
+            local_path,
+        )
+        text_send.assert_not_called()
+
+    def test_telegram_confirmed_local_failure_falls_back_to_text(self):
+        item = {
+            "image_url": (
+                "https://open.cait518.cc/ios-app-guide/"
+                "social/img/aim990-share.jpg"
+            )
+        }
+        with (
+            mock.patch.object(
+                telegram_post,
+                "_send_photo",
+                side_effect=common.HTTPStatusError(
+                    "Telegram sendPhoto",
+                    400,
+                ),
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_local_image_path",
+                return_value=Path("/tmp/aim990-share.jpg"),
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_send_photo_file",
+                side_effect=common.HTTPStatusError(
+                    "Telegram local sendPhoto",
+                    400,
+                ),
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_send_message",
+                return_value={"ok": True, "result": {"message_id": 4}},
+            ) as text_send,
+            mock.patch("sys.stderr", new_callable=io.StringIO),
+        ):
+            result = telegram_post._publish_item(
+                "token",
+                "chat",
+                "Buyer-intent copy",
+                item,
+            )
+        self.assertEqual(4, result["result"]["message_id"])
+        text_send.assert_called_once_with(
+            "token",
+            "chat",
+            "Buyer-intent copy",
+        )
+
+    def test_telegram_uncertain_local_failure_does_not_double_post(self):
+        item = {
+            "image_url": (
+                "https://open.cait518.cc/ios-app-guide/"
+                "social/img/aim990-share.jpg"
+            )
+        }
+        with (
+            mock.patch.object(
+                telegram_post,
+                "_send_photo",
+                side_effect=common.HTTPStatusError(
+                    "Telegram sendPhoto",
+                    400,
+                ),
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_local_image_path",
+                return_value=Path("/tmp/aim990-share.jpg"),
+            ),
+            mock.patch.object(
+                telegram_post,
+                "_send_photo_file",
+                side_effect=common.RequestError("connection reset"),
+            ),
+            mock.patch.object(telegram_post, "_send_message") as text_send,
+            mock.patch("sys.stderr", new_callable=io.StringIO),
+        ):
+            with self.assertRaisesRegex(
+                common.RequestError,
+                "connection reset",
+            ):
+                telegram_post._publish_item(
+                    "token",
+                    "chat",
+                    "Buyer-intent copy",
+                    item,
+                )
+        text_send.assert_not_called()
 
 
 class DailyPortfolioCoverageTests(unittest.TestCase):

@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 import re
+import secrets
 import sys
 import urllib.parse
 import urllib.request
@@ -243,6 +244,92 @@ def _send_photo(token, chat, text, image_url):
     )
 
 
+def _local_image_path(image_url):
+    image_url = canonical_social_image_url(image_url)
+    image_path = SOCIAL_IMAGE_DIR / Path(
+        urllib.parse.urlsplit(image_url).path
+    ).name
+    if not image_path.is_file() or image_path.stat().st_size <= 0:
+        raise ValueError(f"Telegram local image is missing: {image_path.name}")
+    return image_path
+
+
+def _multipart_photo_body(chat, text, image_path, boundary):
+    body = bytearray()
+    for name, value in (("chat_id", chat), ("caption", text)):
+        body.extend(f"--{boundary}\r\n".encode("ascii"))
+        body.extend(
+            f'Content-Disposition: form-data; name="{name}"\r\n\r\n'
+            .encode("ascii")
+        )
+        body.extend(str(value).encode("utf-8"))
+        body.extend(b"\r\n")
+    body.extend(f"--{boundary}\r\n".encode("ascii"))
+    body.extend(
+        (
+            'Content-Disposition: form-data; name="photo"; '
+            f'filename="{image_path.name}"\r\n'
+            "Content-Type: image/jpeg\r\n\r\n"
+        ).encode("ascii")
+    )
+    body.extend(image_path.read_bytes())
+    body.extend(f"\r\n--{boundary}--\r\n".encode("ascii"))
+    return bytes(body)
+
+
+def _send_photo_file(token, chat, text, image_path):
+    image_path = Path(image_path)
+    if not image_path.is_file() or image_path.stat().st_size <= 0:
+        raise ValueError(f"Telegram local image is missing: {image_path.name}")
+    boundary = f"LumiTelegram{secrets.token_hex(16)}"
+    data = _multipart_photo_body(chat, text, image_path, boundary)
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendPhoto",
+        data=data,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Lumi Apps poster)",
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+        },
+    )
+    return request_json(
+        req,
+        label="Telegram local sendPhoto",
+        timeout=30,
+        attempts=3,
+    )
+
+
+def _publish_item(token, chat, text, item):
+    image_url = item_image_url(item)
+    if not image_url:
+        return _send_message(token, chat, text)
+    try:
+        return _send_photo(token, chat, text, image_url)
+    except HTTPStatusError as remote_error:
+        print(
+            "Telegram remote image rejected; retrying the verified local JPEG: "
+            f"{remote_error}",
+            file=sys.stderr,
+        )
+    try:
+        image_path = _local_image_path(image_url)
+        return _send_photo_file(token, chat, text, image_path)
+    except HTTPStatusError as local_error:
+        print(
+            "Telegram local image rejected; falling back to a text post: "
+            f"{local_error}",
+            file=sys.stderr,
+        )
+        return _send_message(token, chat, text)
+    except (OSError, ValueError) as local_error:
+        print(
+            "Telegram local image unavailable; falling back to a text post: "
+            f"{local_error}",
+            file=sys.stderr,
+        )
+        return _send_message(token, chat, text)
+
+
 def main():
     tok = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
@@ -252,12 +339,7 @@ def main():
     try:
         item = pick_postable(load_pool())
         text = compose_text(item)
-        image_url = item_image_url(item)
-        res = (
-            _send_photo(tok, chat, text, image_url)
-            if image_url
-            else _send_message(tok, chat, text)
-        )
+        res = _publish_item(tok, chat, text, item)
         if not res.get("ok") or not res.get("result", {}).get("message_id"):
             raise RequestError("Telegram publication returned no message_id")
         print("posted ok, message_id:", res.get("result", {}).get("message_id"),

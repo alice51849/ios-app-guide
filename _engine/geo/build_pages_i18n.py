@@ -48,6 +48,7 @@ from official_locales import (  # noqa: E402
     require_official_locale_coverage,
 )
 from site_config import PUBLIC_SITE  # noqa: E402
+import rank_opportunity_pages  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 DATA = os.path.join(ROOT, "data")
@@ -1574,6 +1575,16 @@ def build_one(key, locale, all_locales):
     title_sub = _word_bounded_excerpt(sub, 60)
 
     pricing_text = pricing_text_for(key, locale)
+    # App Store 排名儀器量到的母語搜尋詞(geo/data/rank_opportunity_topics.json):
+    # 一行母語散文(專用標籤 + 最多 3 個詞照原樣列出),並補進既有的 meta
+    # keywords。該語言沒有專用標籤、沒有檔案或沒有詞就完全不動版面;
+    # title/canonical/hreflang 一律不變。
+    rank_phrases = rank_opportunity_pages.phrases_for(key, locale)
+    searched_as = rank_opportunity_pages.searched_as_block(locale, rank_phrases)
+    searched_as_css = (
+        f"\n{rank_opportunity_pages.CSS_TAG}" if searched_as else ""
+    )
+    meta_keywords = rank_opportunity_pages.merged_keywords(kws, rank_phrases)
 
     app_schema = {
         "@context": "https://schema.org",
@@ -1622,11 +1633,11 @@ def build_one(key, locale, all_locales):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(name)} — {e(title_sub)} | iOS App</title>
 <meta name="description" content="{e(short_desc)}">
-<meta name="keywords" content="{e(', '.join(kws))}">
+<meta name="keywords" content="{e(', '.join(meta_keywords))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">
 {feed_discovery_links()}
 {hreflang_block(key, all_locales)}
-{ld}
+{ld}{searched_as_css}
 </head>
 <body>
 <main>
@@ -1639,7 +1650,7 @@ def build_one(key, locale, all_locales):
   <h2>{e(ui["feat"])}</h2>
   <ul>
 {feat_li}
-  </ul>
+  </ul>{searched_as}
 
   <h2>{e(ui["price"])}</h2>
   <p>{e(pricing_text)}</p>

@@ -29,6 +29,7 @@ from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
 import gen_store_attribution  # noqa: E402
 import queries  # noqa: E402
+import rank_opportunity_pages  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -316,6 +317,14 @@ def build_localized_hub(key, locale, availability=None):
     )
     section_label = questions_label if answers else why_label
     title = f"{name} · {section_label}"
+    # 母語搜尋詞一行散文(見 rank_opportunity_pages):該語言有專用標籤且有詞
+    # 才輸出,不影響 title/canonical/hreflang。
+    searched_as = rank_opportunity_pages.searched_as_block(
+        locale,
+        rank_opportunity_pages.phrases_for(key, locale),
+        compact=True,
+    )
+    searched_as_css = rank_opportunity_pages.CSS_TAG if searched_as else ""
     social_metadata = _social_metadata(
         key,
         title,
@@ -369,13 +378,13 @@ def build_localized_hub(key, locale, availability=None):
 <link rel="canonical" href="{canon}">
 {hreflang_links(key)}
 {social_metadata}
-<style>{STYLE}</style>
+<style>{STYLE}</style>{searched_as_css}
 <script type="application/ld+json">{_schema_json(schema)}</script>
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{e(guide_url)}">{e(guide_label)}</a></div></header>
 <main class="wrap">
 <section class="hero">{_preview_html(key, store_href, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p><a class="cta" href="{e(store_href)}" rel="nofollow noopener">{e(store_label)}</a></section>
-<section class="card"><h2>{e(section_label)}</h2><div class="ll">{resources_html}</div></section>
+<section class="card"><h2>{e(section_label)}</h2><div class="ll">{resources_html}</div></section>{searched_as}
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
 </body></html>'''

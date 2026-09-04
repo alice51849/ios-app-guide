@@ -1287,6 +1287,18 @@ def reconcile_remote_state(
                     detected_at=verified_at,
                     republish_after_day=repair_after_day,
                 )
+            elif (
+                configured_document_rkey == remote_rkey
+                and entry.get("published") is True
+                and entry.get("at_uri") == remote.get("uri")
+                and entry.get("record_hash") == record_hash(remote_record)
+            ):
+                _mark_attribution_repair_pending(
+                    entry,
+                    document,
+                    detected_at=verified_at,
+                    repair_after_day=repair_after_day,
+                )
             else:
                 raise StateError(
                     "Remote legacy Standard.site content lacks explicit "

@@ -2471,6 +2471,72 @@ class StandardSitePublisherTests(ProjectScratchCase):
 
         self.assertEqual(puts_before, len(client.puts))
 
+    def test_remote_legacy_with_matching_record_hash_queues_repair(
+        self,
+    ) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        document = manifest["documents"][0]
+        canonical = document["canonical_url"]
+        entry = state["documents"][canonical]
+        key = (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+        client.records[key]["value"]["textContent"] = (
+            attribution.legacy_text_content(
+                document["text_content"],
+                app_id=document["app_store_id"],
+                mode=document["legacy_app_store_link"],
+            )
+        )
+        entry["record_hash"] = publisher.record_hash(
+            client.records[key]["value"]
+        )
+        entry["published_hash"] = "f" * 64
+        state_path.write_text(
+            json.dumps(state, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        puts_before = len(client.puts)
+
+        result = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW + timedelta(hours=1),
+        )
+
+        pending = json.loads(state_path.read_text(encoding="utf-8"))
+        pending_entry = pending["documents"][canonical]
+        self.assertEqual([], result["selected_urls"])
+        self.assertFalse(pending_entry["published"])
+        self.assertEqual(
+            publisher.ATTRIBUTION_REPAIR_REASON,
+            pending_entry["repair_reason"],
+        )
+        self.assertEqual(document["content_hash"], pending_entry["published_hash"])
+        self.assertEqual(puts_before, len(client.puts))
+
     def test_migrated_legacy_remote_is_republished_without_downgrade(
         self,
     ) -> None:

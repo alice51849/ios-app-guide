@@ -1,0 +1,69 @@
+name: line-watchdog
+
+# Judges every Guide line by real evidence — the live
+# `.well-known/deployment.json` must point at a commit on main and be fresh,
+# the latest telegram-daily success must carry a Telegram message_id — plus a
+# recent successful run per scheduled workflow. Stale lines are re-triggered
+# at most twice per 24h; anything still red is kept in a single `line-health`
+# issue and announced once through the existing Telegram bot (alert failure
+# never turns the watchdog itself red). Only this repository's token is used;
+# nothing here types into a session or messages another agent.
+
+on:
+  schedule:
+    - cron: '41 0 * * *'
+    - cron: '41 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+  issues: write
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: line-watchdog
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            .github
+          sparse-checkout-cone-mode: true
+      - name: Self-test the judgement logic before trusting it
+        timeout-minutes: 3
+        run: |
+          cd .github/scripts
+          python3 -m unittest test_line_watchdog
+      - name: Judge lines, heal stale ones, reconcile the line-health issue
+        id: judge
+        timeout-minutes: 8
+        continue-on-error: true
+        run: |
+          python3 .github/scripts/line_watchdog.py \
+            --profile ios-app-guide \
+            --repo "$GITHUB_REPOSITORY" \
+            --root . \
+            --report "$RUNNER_TEMP/line-health.json" \
+            --telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Preserve the judgement as an artifact
+        if: always()
+        timeout-minutes: 2
+        uses: actions/upload-artifact@v4
+        with:
+          name: line-health-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/line-health.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Fail the run only when a line is still red
+        timeout-minutes: 1
+        run: test "${{ steps.judge.outcome }}" = "success"

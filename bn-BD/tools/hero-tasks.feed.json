@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 581,
+          "title": "উদাহরণ CSV ডাউনলোড",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "হাতে পাওয়া ঘণ্টাপ্রতি আয় দিয়ে কেনাকাটা তুলনা করে নিজের CSV ডাউনলোড করুন। মোট = পরিমাণ × চূড়ান্ত একক মূল্য। কাজের ঘণ্টা = মোট ÷ ঘণ্টাপ্রতি নিট আয়। কর্মদিবস = কাজের ঘণ্টা ÷ প্রতিদিন কাজের ঘণ্টা। দামের মধ্যে কর অন্তর্ভুক্ত করুন। মুদ্রা রূপান্তর, বেতন হিসাব, সঞ্চয়ের পূর্বাভাস বা কেনার পরামর্শ দেওয়া হয় না। দুই দশমিক দেখানো হয়; মোট হিসাব অপরিবর্তিত মান দিয়ে করা হয়।",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/purchase-worktime-sheet.html",
+      "language": "bn-BD",
+      "title": "কেনাকাটা তুলনা করুন কাজের ঘণ্টায়",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "bn-BD",
+  "title": "বিনামূল্যের কাজের ফলাফল",
+  "version": "https://jsonfeed.org/version/1.1"
+}

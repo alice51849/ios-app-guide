@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/id/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/id/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 371,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Bandingkan belanja dengan penghasilan bersih per jam, lalu unduh CSV Anda. Total = jumlah × harga akhir. Jam kerja = total ÷ penghasilan bersih per jam. Hari kerja = jam kerja ÷ jam per hari kerja. Masukkan harga termasuk pajak. Tanpa konversi mata uang, penggajian, prediksi tabungan, atau saran membeli. Tampilan dibulatkan dua desimal; total memakai nilai tanpa pembulatan.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html",
+      "language": "id",
+      "title": "Bandingkan belanja dalam jam kerja",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "id",
+  "title": "Hasil tugas gratis",
+  "version": "https://jsonfeed.org/version/1.1"
+}

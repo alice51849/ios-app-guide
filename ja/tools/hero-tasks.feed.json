@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/ja/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/ja/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 377,
+          "title": "計算例の CSV を保存",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "手取り時給で複数の買い物を比較し、自分の CSV をダウンロードできます。 合計＝数量 × 税込単価。必要な労働時間＝合計 ÷ 手取り時給。労働日数＝必要な労働時間 ÷ 1日の労働時間。 税込価格を入力してください。為替換算、給与計算、貯蓄予測、購入の助言は行いません。表示は小数第2位まで、合計は丸める前の値で計算します。",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/purchase-worktime-sheet.html",
+      "language": "ja",
+      "title": "買い物を労働時間で比べる計算シート",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "ja",
+  "title": "無料ツールの成果",
+  "version": "https://jsonfeed.org/version/1.1"
+}

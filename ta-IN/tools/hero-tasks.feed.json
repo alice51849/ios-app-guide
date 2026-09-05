@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 684,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கம்",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "உங்கள் நிகர மணிநேர வருமானத்துடன் வாங்குதல்களை ஒப்பிட்டு, சொந்த CSV கோப்பைப் பதிவிறக்குங்கள். மொத்தம் = எண்ணிக்கை × இறுதி விலை. வேலை மணிநேரம் = மொத்தம் ÷ மணிநேர நிகர வருமானம். வேலைநாட்கள் = வேலை மணிநேரம் ÷ தினசரி வேலை மணிநேரம். வரியுடன் விலையை உள்ளிடுங்கள். நாணய மாற்றம், ஊதியக் கணக்கீடு, சேமிப்புக் கணிப்பு அல்லது வாங்கும் ஆலோசனை இல்லை. இரண்டு தசம இடங்கள் காட்டப்படும்; மொத்தம் முழுத் துல்லிய மதிப்புகளிலிருந்து கணக்கிடப்படும்.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/purchase-worktime-sheet.html",
+      "language": "ta-IN",
+      "title": "வாங்குதல்களை வேலை நேரத்தில் ஒப்பிடுங்கள்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "ta-IN",
+  "title": "இலவசப் பணி முடிவுகள்",
+  "version": "https://jsonfeed.org/version/1.1"
+}

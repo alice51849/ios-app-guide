@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 394,
+          "title": "Télécharger le CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Comparez plusieurs achats avec votre revenu horaire net, puis téléchargez votre CSV. Total = quantité × prix unitaire taxes incluses. Heures = total ÷ revenu horaire net. Jours = heures ÷ durée d’une journée de travail. Entrez des prix taxes incluses. Aucune conversion de devises, paie, prévision d’épargne ni recommandation d’achat. L’affichage arrondit à deux décimales ; les totaux utilisent les valeurs non arrondies.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/purchase-worktime-sheet.html",
+      "language": "fr-CA",
+      "title": "Comparer ses achats en heures de travail",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "fr-CA",
+  "title": "Résultats gratuits",
+  "version": "https://jsonfeed.org/version/1.1"
+}

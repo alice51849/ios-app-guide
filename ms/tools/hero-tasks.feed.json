@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/ms/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/ms/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 370,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Bandingkan belian menggunakan pendapatan bersih sejam, kemudian muat turun CSV anda. Jumlah = kuantiti × harga akhir. Jam = jumlah ÷ pendapatan bersih sejam. Hari = jam ÷ jam sehari bekerja. Masukkan harga termasuk cukai. Tiada pertukaran mata wang, pengiraan gaji, ramalan simpanan atau nasihat membeli. Paparan dibundarkan kepada dua perpuluhan; jumlah menggunakan nilai tanpa pembundaran.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html",
+      "language": "ms",
+      "title": "Bandingkan belian dalam jam bekerja",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "ms",
+  "title": "Hasil tugasan percuma",
+  "version": "https://jsonfeed.org/version/1.1"
+}

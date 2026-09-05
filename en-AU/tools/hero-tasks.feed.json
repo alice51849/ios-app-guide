@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 370,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Compare purchases using your take-home hourly income, then download your own CSV. Total = quantity × final unit price. Work hours = total ÷ hourly income. Workdays = work hours ÷ hours per workday. Include tax in your prices. No currency conversion, payroll calculation, savings prediction or buying advice. Display rounds to two decimals; totals use unrounded values.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html",
+      "language": "en-AU",
+      "title": "Purchase-to-work-time worksheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "en-AU",
+  "title": "Free task results",
+  "version": "https://jsonfeed.org/version/1.1"
+}

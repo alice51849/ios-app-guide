@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/pl/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/pl/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 373,
+          "title": "Pobierz przykładowy CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Porównaj zakupy według dochodu netto za godzinę i pobierz własny CSV. Razem = ilość × cena końcowa. Godziny = suma ÷ dochód netto za godzinę. Dni = godziny ÷ godziny w dniu pracy. Podaj ceny z podatkiem. Bez przeliczania walut, naliczania wynagrodzeń, prognoz oszczędności i porad zakupowych. Wyświetlane są dwa miejsca po przecinku; sumy wykorzystują wartości niezaokrąglone.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pl/tools/purchase-worktime-sheet.html",
+      "language": "pl",
+      "title": "Porównaj zakupy w godzinach pracy",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "pl",
+  "title": "Bezpłatne wyniki zadań",
+  "version": "https://jsonfeed.org/version/1.1"
+}

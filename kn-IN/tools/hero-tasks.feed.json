@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 592,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "ನಿಮ್ಮ ನಿವ್ವಳ ಗಂಟೆಯ ಆದಾಯದಿಂದ ಖರೀದಿಗಳನ್ನು ಹೋಲಿಸಿ, ನಿಮ್ಮ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಟ್ಟು = ಪ್ರಮಾಣ × ಅಂತಿಮ ಬೆಲೆ. ಕೆಲಸದ ಗಂಟೆಗಳು = ಒಟ್ಟು ÷ ಗಂಟೆಗೆ ನಿವ್ವಳ ಆದಾಯ. ಕೆಲಸದ ದಿನಗಳು = ಕೆಲಸದ ಗಂಟೆಗಳು ÷ ದಿನದ ಕೆಲಸದ ಗಂಟೆಗಳು. ತೆರಿಗೆ ಸೇರಿಸಿದ ಬೆಲೆ ನಮೂದಿಸಿ. ಕರೆನ್ಸಿ ಪರಿವರ್ತನೆ, ಸಂಬಳ ಲೆಕ್ಕ, ಉಳಿತಾಯದ ಮುನ್ಸೂಚನೆ ಅಥವಾ ಖರೀದಿ ಸಲಹೆ ಇಲ್ಲ. ಎರಡು ದಶಮಾಂಶ ಸ್ಥಾನಗಳನ್ನು ತೋರಿಸಲಾಗುತ್ತದೆ; ಒಟ್ಟು ಪೂರ್ಣ ನಿಖರತೆಯಿಂದ ಲೆಕ್ಕವಾಗುತ್ತದೆ.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/purchase-worktime-sheet.html",
+      "language": "kn-IN",
+      "title": "ಖರೀದಿಗಳನ್ನು ಕೆಲಸದ ಗಂಟೆಗಳಲ್ಲಿ ಹೋಲಿಸಿ",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "kn-IN",
+  "title": "ಉಚಿತ ಕೆಲಸದ ಫಲಿತಾಂಶಗಳು",
+  "version": "https://jsonfeed.org/version/1.1"
+}

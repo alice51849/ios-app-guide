@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/uk/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/uk/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 503,
+          "title": "Завантажити CSV прикладу",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Порівняйте покупки за чистим доходом за годину та завантажте власний CSV. Разом = кількість × кінцева ціна. Години = сума ÷ чистий дохід за годину. Дні = години ÷ годин у робочому дні. Вказуйте ціни з податками. Без обміну валют, розрахунку зарплати, прогнозу заощаджень чи порад щодо покупки. Показано два десяткові знаки; підсумки використовують неокруглені значення.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/purchase-worktime-sheet.html",
+      "language": "uk",
+      "title": "Порівняння покупок у годинах роботи",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "uk",
+  "title": "Безкоштовні результати",
+  "version": "https://jsonfeed.org/version/1.1"
+}

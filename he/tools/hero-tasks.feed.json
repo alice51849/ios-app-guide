@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/he/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/he/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 438,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "השוו קניות לפי ההכנסה נטו לשעה והורידו קובץ CSV משלכם. סך הכול = כמות × מחיר סופי. שעות עבודה = הסכום ÷ הכנסה נטו לשעה. ימי עבודה = שעות ÷ שעות ביום עבודה. הזינו מחירים הכוללים מס. ללא המרת מטבע, חישוב שכר, תחזית חיסכון או עצת קנייה. מוצגות שתי ספרות עשרוניות; הסכומים מחושבים ללא עיגול ביניים.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html",
+      "language": "he",
+      "title": "השוואת קניות בשעות עבודה",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "he",
+  "title": "תוצאות משימות בחינם",
+  "version": "https://jsonfeed.org/version/1.1"
+}

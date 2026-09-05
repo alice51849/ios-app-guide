@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 550,
+          "title": "ਉਦਾਹਰਨ CSV ਡਾਊਨਲੋਡ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "ਆਪਣੀ ਪ੍ਰਤੀ ਘੰਟਾ ਸ਼ੁੱਧ ਆਮਦਨ ਨਾਲ ਖਰੀਦਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ ਅਤੇ ਆਪਣਾ CSV ਡਾਊਨਲੋਡ ਕਰੋ। ਕੁੱਲ = ਗਿਣਤੀ × ਅੰਤਿਮ ਇਕਾਈ ਕੀਮਤ। ਕੰਮ ਦੇ ਘੰਟੇ = ਕੁੱਲ ÷ ਪ੍ਰਤੀ ਘੰਟਾ ਸ਼ੁੱਧ ਆਮਦਨ। ਕੰਮਕਾਜੀ ਦਿਨ = ਕੰਮ ਦੇ ਘੰਟੇ ÷ ਰੋਜ਼ਾਨਾ ਕੰਮ ਦੇ ਘੰਟੇ। ਕੀਮਤਾਂ ਵਿੱਚ ਟੈਕਸ ਸ਼ਾਮਲ ਕਰੋ। ਮੁਦਰਾ ਬਦਲੀ, ਤਨਖ਼ਾਹ ਗਿਣਤੀ, ਬਚਤ ਦੀ ਭਵਿੱਖਬਾਣੀ ਜਾਂ ਖਰੀਦ ਸਲਾਹ ਨਹੀਂ। ਦੋ ਦਸ਼ਮਲਵ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ; ਕੁੱਲ ਮੂਲ ਮੁੱਲਾਂ ਨਾਲ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ।",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/purchase-worktime-sheet.html",
+      "language": "pa-IN",
+      "title": "ਖਰੀਦਾਂ ਦੀ ਤੁਲਨਾ ਕੰਮ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "pa-IN",
+  "title": "ਮੁਫ਼ਤ ਕੰਮ ਦੇ ਨਤੀਜੇ",
+  "version": "https://jsonfeed.org/version/1.1"
+}

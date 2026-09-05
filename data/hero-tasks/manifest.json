@@ -1,0 +1,1274 @@
+{
+  "$schema": "https://open.cait518.cc/ios-app-guide/data/hero-tasks/manifest.schema.json",
+  "app_locale_pairs": 100,
+  "content_digest": "7d38a98ea23b9d275b5972b22aa8956793abcc1676bd50e5d99bf390954950d9",
+  "date_modified": "2026-09-05",
+  "integrations": [
+    "ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ar-SA/tools/index.html",
+    "bn-BD/hourstag.html",
+    "bn-BD/hourstaglite.html",
+    "bn-BD/tools/index.html",
+    "ca/hourstag.html",
+    "ca/hourstaglite.html",
+    "ca/tools/index.html",
+    "cs/hourstag.html",
+    "cs/hourstaglite.html",
+    "cs/tools/index.html",
+    "da/hourstag.html",
+    "da/hourstaglite.html",
+    "da/tools/index.html",
+    "de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "de-DE/tools/index.html",
+    "el/hourstag.html",
+    "el/hourstaglite.html",
+    "el/tools/index.html",
+    "en-AU/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "en-AU/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-AU/tools/index.html",
+    "en-CA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "en-CA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-CA/tools/index.html",
+    "en-GB/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "en-GB/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-GB/tools/index.html",
+    "en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-US/tools/index.html",
+    "es-ES/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "es-ES/tools/index.html",
+    "es-MX/hourstag.html",
+    "es-MX/hourstaglite.html",
+    "es-MX/tools/index.html",
+    "fi/hourstag.html",
+    "fi/hourstaglite.html",
+    "fi/tools/index.html",
+    "fr-CA/hourstag.html",
+    "fr-CA/hourstaglite.html",
+    "fr-CA/tools/index.html",
+    "fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "fr-FR/tools/index.html",
+    "gu-IN/hourstag.html",
+    "gu-IN/hourstaglite.html",
+    "gu-IN/tools/index.html",
+    "he/hourstag.html",
+    "he/hourstaglite.html",
+    "he/tools/index.html",
+    "hi/hourstag.html",
+    "hi/hourstaglite.html",
+    "hi/tools/index.html",
+    "hr/hourstag.html",
+    "hr/hourstaglite.html",
+    "hr/tools/index.html",
+    "hu/hourstag.html",
+    "hu/hourstaglite.html",
+    "hu/tools/index.html",
+    "id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "id/tools/index.html",
+    "it/hourstag.html",
+    "it/hourstaglite.html",
+    "it/tools/index.html",
+    "ja/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ja/tools/index.html",
+    "kn-IN/hourstag.html",
+    "kn-IN/hourstaglite.html",
+    "kn-IN/tools/index.html",
+    "ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ko/tools/index.html",
+    "ml-IN/hourstag.html",
+    "ml-IN/hourstaglite.html",
+    "ml-IN/tools/index.html",
+    "mr-IN/hourstag.html",
+    "mr-IN/hourstaglite.html",
+    "mr-IN/tools/index.html",
+    "ms/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ms/tools/index.html",
+    "nl-NL/hourstag.html",
+    "nl-NL/hourstaglite.html",
+    "nl-NL/tools/index.html",
+    "no/hourstag.html",
+    "no/hourstaglite.html",
+    "no/tools/index.html",
+    "or-IN/hourstag.html",
+    "or-IN/hourstaglite.html",
+    "or-IN/tools/index.html",
+    "pa-IN/hourstag.html",
+    "pa-IN/hourstaglite.html",
+    "pa-IN/tools/index.html",
+    "pl/hourstag.html",
+    "pl/hourstaglite.html",
+    "pl/tools/index.html",
+    "pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "pt-BR/tools/index.html",
+    "pt-PT/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "pt-PT/tools/index.html",
+    "ro/hourstag.html",
+    "ro/hourstaglite.html",
+    "ro/tools/index.html",
+    "ru/hourstag.html",
+    "ru/hourstaglite.html",
+    "ru/tools/index.html",
+    "sitemap_index.xml",
+    "sk/hourstag.html",
+    "sk/hourstaglite.html",
+    "sk/tools/index.html",
+    "sl-SI/hourstag.html",
+    "sl-SI/hourstaglite.html",
+    "sl-SI/tools/index.html",
+    "sv/hourstag.html",
+    "sv/hourstaglite.html",
+    "sv/tools/index.html",
+    "ta-IN/hourstag.html",
+    "ta-IN/hourstaglite.html",
+    "ta-IN/tools/index.html",
+    "te-IN/hourstag.html",
+    "te-IN/hourstaglite.html",
+    "te-IN/tools/index.html",
+    "th/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "th/tools/index.html",
+    "tr/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "tr/tools/index.html",
+    "uk/hourstag.html",
+    "uk/hourstaglite.html",
+    "uk/tools/index.html",
+    "ur-PK/hourstag.html",
+    "ur-PK/hourstaglite.html",
+    "ur-PK/tools/index.html",
+    "vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "vi/tools/index.html",
+    "zh-Hans/hourstag.html",
+    "zh-Hans/hourstaglite.html",
+    "zh-Hans/tools/index.html",
+    "zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+    "zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "zh-Hant/tools/index.html"
+  ],
+  "locale_count": 50,
+  "measured_search_volume": false,
+  "outputs": {
+    "ar-SA/tools/hero-tasks.feed.json": "803ca3e1d33a79e9e10d713e501ffcbcd9fe479edbff959b209e498508dc6499",
+    "ar-SA/tools/purchase-worktime-sheet.html": "7491ecc397ea821bc21e0356fbbdef0bc3bc17d8ed30df564b1d282eba5dacb2",
+    "ar-SA/tools/results/purchase-worktime-sheet.csv": "c630b2fcd059fa4af964127b72dcaee9788ba8012abc7fb2589743c888305cf3",
+    "assets/hero-tasks/424ab50f8e77fd30-hero-task-core.js": "424ab50f8e77fd308a728bd62fc7c15168740b6390c9acc528096e9ff67198e2",
+    "assets/hero-tasks/61b63f55d58fb603-hero-task.css": "61b63f55d58fb603efc1d6ae79184602c5f63b4e309d7909136a9c3d0759eb5c",
+    "assets/hero-tasks/8b476e9b77ec9716-hero-task-ui.js": "8b476e9b77ec971620c75b634701bc606244a4a57dfbacebc5738046b10f5cc0",
+    "bn-BD/tools/hero-tasks.feed.json": "5ab055eac9e44c00080c94fee0ddf5993c60313aadccf867b452f1c8fddb4b12",
+    "bn-BD/tools/purchase-worktime-sheet.html": "2de8cbacef0a959f993827f4957f898d598903dc3858269ab4701f063c331072",
+    "bn-BD/tools/results/purchase-worktime-sheet.csv": "be0aeae825446766950a116a82a1bf6cdc3573a5880eea288b4b3e8b71d92bf3",
+    "ca/tools/hero-tasks.feed.json": "6ed222ed51ef14f303e5317f19fa3a0f172c8bcb6386211cfef6a09134e79cbe",
+    "ca/tools/purchase-worktime-sheet.html": "9d7c4328211d0bf94f6ddd3e020fd94f484eb2c49c738ba73e5f129dd903c9de",
+    "ca/tools/results/purchase-worktime-sheet.csv": "e4c8fdf4123ac523346c30ed0ec345c3ac4837c30a590fd3baaf4eb2e3c405d3",
+    "cs/tools/hero-tasks.feed.json": "23b62d3436562a703765c445a06c19ef63645f9c6fee98cb5e2582fa055414e3",
+    "cs/tools/purchase-worktime-sheet.html": "63432c8b7173879936b4286b371711309b6b591b6e58c3815805f7b62c10597f",
+    "cs/tools/results/purchase-worktime-sheet.csv": "bd6d06620179b156f49be62e40cf84560e82160c7034cc77c1dec37b2058f3c2",
+    "da/tools/hero-tasks.feed.json": "e0a2f809a92316f1c0b15eaa29a925006e2b07b9cfdc12d4a4295c9e88e62b8e",
+    "da/tools/purchase-worktime-sheet.html": "c76a1e6c179c1ad8d872dd54ff70b3f5a8bec51f2f4d3fe76cd1aa9d5a18ae93",
+    "da/tools/results/purchase-worktime-sheet.csv": "7f732e71a7a5853ed5e3479f27602e7fe07194578a2fb2a3716ff5514988985e",
+    "data/hero-tasks/manifest.schema.json": "844160a1c60c29fdb8fdaaf2899a4f6e46b26a166d548758609fb23ba577e7d5",
+    "de-DE/tools/hero-tasks.feed.json": "fe682a2b054af0868edb0f1d000ea56e21bdecb674efe618ede3cdc08a53ebc5",
+    "de-DE/tools/purchase-worktime-sheet.html": "1d801140155e1f164d28a5e30b45a356e67502011c4188f8dfad84b7350e4f00",
+    "de-DE/tools/results/purchase-worktime-sheet.csv": "4601ab266f6bf545b15d8aa9cdb7416f58606ff3e2318108719652afcec49b07",
+    "el/tools/hero-tasks.feed.json": "4e031c57b42e1c9f82e5c734271e598d1928af548c06bae7914d4b1ec7ee7377",
+    "el/tools/purchase-worktime-sheet.html": "c91c1d30f4b68f4a9e98862a3d947c02a8b134bd003b0996099dca428dbe3b90",
+    "el/tools/results/purchase-worktime-sheet.csv": "afeb47747adb1b23d61fd0ef0fd1eca319e35f4da3e33e457b0cbd02d4e074ba",
+    "en-AU/tools/hero-tasks.feed.json": "ec7058f07fc9967fbdee8d0755266e7bf9a1e671e67b75a07bde3c5de12bc880",
+    "en-AU/tools/purchase-worktime-sheet.html": "069abb522b3f404ebe70c5ccf09e229f95a9fcb57900d26e43fe2c1950ba1d62",
+    "en-AU/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
+    "en-CA/tools/hero-tasks.feed.json": "f750e7258d85a56801dd2383f9ab29f90a4445b8ff4a37ac8ad752971aa697a2",
+    "en-CA/tools/purchase-worktime-sheet.html": "e5e66910c69e51ef7aae11afd405adf96b152fa9a74cb32067a508716ee47f02",
+    "en-CA/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
+    "en-GB/tools/hero-tasks.feed.json": "cffb0699706da4b49451289145b0a4a1a11364757fb6924eae994e92b8f83d6b",
+    "en-GB/tools/purchase-worktime-sheet.html": "deba76623ed5ba01c1d8db8d6761d84c5756b5ba0df31013170da68768a70247",
+    "en-GB/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
+    "en-US/tools/hero-tasks.feed.json": "6a86bfd7d2b4f1da887db96d8aeace3707c1b63c9f8de715d92d8b7c3a5beb86",
+    "en-US/tools/purchase-worktime-sheet.html": "e82b3834dd3c67a5e9337adff22c25dbbc304ccab3bf48c0a588aeab99093634",
+    "en-US/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
+    "es-ES/tools/hero-tasks.feed.json": "4708f037d050c4c04e98690e3ad108b4cc070f19849a6342e6f4146390115dec",
+    "es-ES/tools/purchase-worktime-sheet.html": "75912c35779fb0fae3aa7a5d505c88ad552e2754e5678040e4ac641435da23b6",
+    "es-ES/tools/results/purchase-worktime-sheet.csv": "7d4f529f14cd9dd59976d8a3b014ab49c7bbe4183ecc4b88b71de5b863b248de",
+    "es-MX/tools/hero-tasks.feed.json": "31df3080ecd37570ef879b48137af133311ce03ac4bb16370a971a1b0c373da4",
+    "es-MX/tools/purchase-worktime-sheet.html": "c86fada1454a842b5c6086f6cd63c7e46469903e74de0c0e15b49a1a486923f4",
+    "es-MX/tools/results/purchase-worktime-sheet.csv": "36c1cb82209c6490283670bc494b2ea8b970b76bd283bb2c8bfc582f268ca565",
+    "fi/tools/hero-tasks.feed.json": "06d5c132c8df1a66ce7f3eea451cefb358c45e8d8fb1e1a76309b01889de1abd",
+    "fi/tools/purchase-worktime-sheet.html": "b0d5699ae8915e14cf56f1c87ff4641e7ecfcf5a9e6f2439be4199af9f508c62",
+    "fi/tools/results/purchase-worktime-sheet.csv": "cf54e7a294faec6ba31a21b11ada017fd9ef0cfbddd17d97fe26da10b5a902c2",
+    "fr-CA/tools/hero-tasks.feed.json": "59d295e3770d0ba174cc33116fc4ba87712058da8e1acfdd5c9e4598c59135d6",
+    "fr-CA/tools/purchase-worktime-sheet.html": "4476b3c0a09bf42bdfe2c9a2f86292a6cf9f65a538b4a129b44d0027fc4a8ce5",
+    "fr-CA/tools/results/purchase-worktime-sheet.csv": "67d8e8da25fafc577d53c7e0732b522181aae17222c9b30e2838f40af4c3fddd",
+    "fr-FR/tools/hero-tasks.feed.json": "9f6b0d8732050ca0a560d041c79c27fa2eb60df4e26b6f5f712a594fb5ca3c92",
+    "fr-FR/tools/purchase-worktime-sheet.html": "d330f1edcff51a2c2271bcef91741a40413dc20c8140aa02fb8d3eec09a99ed5",
+    "fr-FR/tools/results/purchase-worktime-sheet.csv": "1a8d7f3f338d742fc74c4261c39c07d10160e94498257dda43ff907f30f28a61",
+    "gu-IN/tools/hero-tasks.feed.json": "69d5722e7cb1015b201ca13c47ef41e2e1e8996c1b6a9039cf4c1823e17d4421",
+    "gu-IN/tools/purchase-worktime-sheet.html": "6b2ac4bd9f07168eb56c88355e26c0c9641c340274496517f57c012bfd700f92",
+    "gu-IN/tools/results/purchase-worktime-sheet.csv": "2928d7ed0b88be821db0ac294c303d6bee0935182e67c1c1b7e48fd10e2c638a",
+    "he/tools/hero-tasks.feed.json": "c87540deb1b6c2729dcabbfbfe6e4922e3024d10eab3987b0aea61a6cef34a7f",
+    "he/tools/purchase-worktime-sheet.html": "f48a7329452249d8d843f332c48d09eacaa75df88ede5152c78bfe5bcd36b266",
+    "he/tools/results/purchase-worktime-sheet.csv": "a6678c14a5eaecbac7bbc8c0d137e80125de48d235b74bd2621acb5b13079ec4",
+    "hi/tools/hero-tasks.feed.json": "204b3350f64b27e789fb143890f9f94eb1b4d94b9dc25c553c28f63827f79bb6",
+    "hi/tools/purchase-worktime-sheet.html": "8e35e3a0b41f8c9344aa0f8b4f3ddb5e86148a564eefc83a3fd04006c4c12dd1",
+    "hi/tools/results/purchase-worktime-sheet.csv": "9ae92c00abc243dea8f2ac9d54f99891c75ca225a00c658ee64ef910ea4ad737",
+    "hr/tools/hero-tasks.feed.json": "795e0d1af37a88efd580ca6d362f93fb527b0aa20eb9e685d3122ccf5aa0d9e2",
+    "hr/tools/purchase-worktime-sheet.html": "47ade3d54fd98ef5afdd9e7a6af35704334c3cb138004b1fba390cf4b60f76e5",
+    "hr/tools/results/purchase-worktime-sheet.csv": "a7a7a1a029a5ae3afffe86d48ab6ec5776e0f139a0779efef90b0becccaa7f0f",
+    "hu/tools/hero-tasks.feed.json": "59c3e7a0142630d3bf5b551208469fafdab92ba036f9779f7e2cd8f582ddbc3c",
+    "hu/tools/purchase-worktime-sheet.html": "28834d1a9b62660e2507b4ceafb508494916f4f0d51d74728188d6cc510876fe",
+    "hu/tools/results/purchase-worktime-sheet.csv": "827bde4fe3ce677bea1dea28774a06c2682bd2e9f2fb65a2b11c62b676010605",
+    "id/tools/hero-tasks.feed.json": "d97766ff26b166074624468965dd76d8743b438b5680ca31c6fdb86a3a868894",
+    "id/tools/purchase-worktime-sheet.html": "21a302a764a80b9360caeee65aa4e60e3a831dc86928a075f402e51163d96210",
+    "id/tools/results/purchase-worktime-sheet.csv": "d989a2aa4cf6082b0bc08da9c6bcfbd393fca1b7efa9692fb02861a9c93a5948",
+    "it/tools/hero-tasks.feed.json": "78fd669d9618683e5d3212b5f01146677cc1477ed830f3f9c385595ff7475d35",
+    "it/tools/purchase-worktime-sheet.html": "e9f5e7efe310559135a16d3342c5f3218d8e3a0043e3c4f4f0e25d85e356f54d",
+    "it/tools/results/purchase-worktime-sheet.csv": "4d43dda99097491dfa04ebaa92d0dbbe45a93f8953bc1f7b1829ad25106c3642",
+    "ja/tools/hero-tasks.feed.json": "69e4c41dd2f9a2915945a0cc01428ae97a07863a48b72b5a2eced325381172b4",
+    "ja/tools/purchase-worktime-sheet.html": "82c406ece108e0c2446cdd5194b20539ccda21a65e9daa03060bdaa54470e538",
+    "ja/tools/results/purchase-worktime-sheet.csv": "3dafe1f253e38380607b748c51ca20f8c735c5a5cfcdb095a8c79b3ea15b7d9d",
+    "kn-IN/tools/hero-tasks.feed.json": "00e72a38b5628860d0c296c74e50aaeb6666009658489018948764a0b1365353",
+    "kn-IN/tools/purchase-worktime-sheet.html": "23980ff76ab6e4db4f2149aed2798f776931dd96aa2f67bc7a29391ae5b110ee",
+    "kn-IN/tools/results/purchase-worktime-sheet.csv": "8ed2013736af4ad84dfdf9e724eee6979bf2bd1f2f96ef9fc7e18f27aeaf5b65",
+    "ko/tools/hero-tasks.feed.json": "503409ec6e06fd9f93fc6a1c198ca95a9d5cb03316705e8f0fc3f6ea8442ca39",
+    "ko/tools/purchase-worktime-sheet.html": "f684d4111c357c28296b2b4554083c77b82bb23bc09bd1242ee95784f0b980c7",
+    "ko/tools/results/purchase-worktime-sheet.csv": "71cef52a27666e970305a793a09ce32f4ccf48f00cb17a1775ead776ef9a24f6",
+    "ml-IN/tools/hero-tasks.feed.json": "ba0f89180c0c45af5a539c32fb856bbd721e4a2140218ef64dbb3533bfe12d01",
+    "ml-IN/tools/purchase-worktime-sheet.html": "207805539bfc7a01417e769cdc6aac2087aec45ae85a2ed85af518aeb91ca4a2",
+    "ml-IN/tools/results/purchase-worktime-sheet.csv": "51d52aa26809f9b4f1fedbd6830bf9c811f5b544c6102552771221b5cf519c01",
+    "mr-IN/tools/hero-tasks.feed.json": "3e4758f97e299cf2678e6c20ed4209010392e163983b68737a1487ef5a891ce3",
+    "mr-IN/tools/purchase-worktime-sheet.html": "a6f4487e6846915cd521ebb22c74bb18fdb9472df09c0e8220fecba168247432",
+    "mr-IN/tools/results/purchase-worktime-sheet.csv": "75ad2556e7d9829337c1653561b89c22f610bd64395de96864d70bf061f7f192",
+    "ms/tools/hero-tasks.feed.json": "2dfaa1323a9577ca6ce792122f1f99221cf9e3622272168a8ca4ecfbe963a57d",
+    "ms/tools/purchase-worktime-sheet.html": "d346c77e7d673a6742ae303d1771cb5d5fbc8ec57883303e4d83f82548709918",
+    "ms/tools/results/purchase-worktime-sheet.csv": "0e7862c23807a81c78b36ae8255225519b00ee26dbd53ea2352008c5dd00357f",
+    "nl-NL/tools/hero-tasks.feed.json": "34faeb226018bdc08a32132a20170348d2f060b6d6c0960589390b125ea80220",
+    "nl-NL/tools/purchase-worktime-sheet.html": "577dfe2314b2e9c8c8cf1c9269b6f36f743dc793cc405a6812ba390d63af12c1",
+    "nl-NL/tools/results/purchase-worktime-sheet.csv": "4d6b600cfec8ec72ee86afb22a7b92b64453c07064ed250d47e22e640d5e233c",
+    "no/tools/hero-tasks.feed.json": "f3badec239c26d36661508ffa60e5484f3a94e27910a1c93ca3b450cadbaa0d4",
+    "no/tools/purchase-worktime-sheet.html": "6a706a52556074e3c4c837435d6157804b4c1ac7fd446124271e71fa0ace5395",
+    "no/tools/results/purchase-worktime-sheet.csv": "07fdea7de4eb8925c0005db3ca7929dff813e62590db87ea4c0c372468fb42f4",
+    "or-IN/tools/hero-tasks.feed.json": "bbb0ffb532697c577f18dc3afe602dc7dbfd81a40dc5ba9375eb1359f4c17f79",
+    "or-IN/tools/purchase-worktime-sheet.html": "51580fec2843a11fe5c5f41846a403cefd24e93a8c45a785345b3de05f1430db",
+    "or-IN/tools/results/purchase-worktime-sheet.csv": "9c452527bac5e34a00d978bca8a49b90d2d6a4f89d7f0f00eecadfe7e05bc8aa",
+    "pa-IN/tools/hero-tasks.feed.json": "55ec46e82a5047c0b7d6626a247cadaf4724421905193ff31e8542c792877a61",
+    "pa-IN/tools/purchase-worktime-sheet.html": "9fe006047c6ecaf46ad5e3e15f6990c4024386c56c6a296f9de63f8073e6b243",
+    "pa-IN/tools/results/purchase-worktime-sheet.csv": "e6ab0c1df99b97c39e209024333e439776d875db15f118760b0536cbc7a0f764",
+    "pl/tools/hero-tasks.feed.json": "caa7464ff33869d440c77bb92fe6d05271754e94628afc9c28784efa2c4dc4f5",
+    "pl/tools/purchase-worktime-sheet.html": "b8ade8658e4dfb15e02809d5c82bf7602c16b412c70fbd3d1c7ddc18021f7435",
+    "pl/tools/results/purchase-worktime-sheet.csv": "d2094d5db8c2c644ce1dea7efe9c42d5c185d93e7a9f1cae9bf5aa7d36576fea",
+    "pt-BR/tools/hero-tasks.feed.json": "c2f4c6817980e8f04e30f453f88d7fafe4a16782ae1cad5f48cae4900677457f",
+    "pt-BR/tools/purchase-worktime-sheet.html": "7158066ddf57548071f9b2d282abce9cf0d57ff7148fdff9d629a89592a78536",
+    "pt-BR/tools/results/purchase-worktime-sheet.csv": "d722cf7643b89a72731182cf2af0ccd2433de12c1fd3ef97f0ceb4469c6218f2",
+    "pt-PT/tools/hero-tasks.feed.json": "0f2949921776a53fb540943cfb6d49b87b071b3b68e9c25b23492ba3fe8a25c7",
+    "pt-PT/tools/purchase-worktime-sheet.html": "57479a91c7d0d42eec278b6f20e5c00b60e0d20a78912fc001818eec994bbed0",
+    "pt-PT/tools/results/purchase-worktime-sheet.csv": "4d38e53b0fe2a64bb8880903ef7feaea02a9a453bc63d87ee7bad17200a9f751",
+    "ro/tools/hero-tasks.feed.json": "16771ed5b0ee3db6ec7e38f103ec4458a443ffe45a6277d5bca39fe47dbf51ca",
+    "ro/tools/purchase-worktime-sheet.html": "a5ad209a81947df1ee615efc1cbbe464ba23e1f2411de02051e01712ea78bc4b",
+    "ro/tools/results/purchase-worktime-sheet.csv": "ef3580b52057f1de3523ea119950461effae3f12959c773cb6a02ea5cf103e14",
+    "ru/tools/hero-tasks.feed.json": "9df971f44c164c226247c16a8c49f706f3e33f3c18804f4dfab1e410f215ebc3",
+    "ru/tools/purchase-worktime-sheet.html": "c9acaf46a7a72ef1b74d63f36bc650aa6108b543ec46eaa68ef0a2f7810d7fff",
+    "ru/tools/results/purchase-worktime-sheet.csv": "15552d9e9b367495c31b809aa342618b114ea405d3c1bada7cad71926934f86c",
+    "sitemap_hero_tasks.xml": "43f37347c88fc3fff6222e80a994a908ebafd7b501ec39cb8cd536ab1c5331dd",
+    "sk/tools/hero-tasks.feed.json": "48223bb6e79828536ab437abf56bc2d8fbfa5c885c92faf849b214bed20ac44c",
+    "sk/tools/purchase-worktime-sheet.html": "305ec453ef20ffd3b8fdc5ddea6b38b993dc2b3647b9a71c0c8e9494ae831d68",
+    "sk/tools/results/purchase-worktime-sheet.csv": "8097671b36bfad4c439b753d81dcaae251b967feb7c1117a34686d7f11203392",
+    "sl-SI/tools/hero-tasks.feed.json": "891e6df6dcc9c184b36a998694b0b800f50cc55c19914af005c1371ebf4ea539",
+    "sl-SI/tools/purchase-worktime-sheet.html": "2a70eab47c004ae6df72c3e44679365d9d8128852518ff34439906f50b6f2b5a",
+    "sl-SI/tools/results/purchase-worktime-sheet.csv": "e2df4491df04702b9b361f4daf7c6023c14bfc4402197d54e3fc84ba07bf1a0b",
+    "sv/tools/hero-tasks.feed.json": "1e11b73c16c591e1d232956c9a1e45d50a51f43515ad442b137d63f2ac12c007",
+    "sv/tools/purchase-worktime-sheet.html": "b764f5e71f569641f2a1c87f5b15c455ba4856d815d56916235e082a1cd5b3de",
+    "sv/tools/results/purchase-worktime-sheet.csv": "56c367801b85532f5f07e861fabe27482be384cace12e9245b8be08418ef06dc",
+    "ta-IN/tools/hero-tasks.feed.json": "c0921bc7576b54e91d4360dc10601a35279a37401ae63a2b7175fcd6bea5e5df",
+    "ta-IN/tools/purchase-worktime-sheet.html": "74dc3863a52f1c9c9c49caf16d9f3411305eda3d2878734c1e38690936aeb259",
+    "ta-IN/tools/results/purchase-worktime-sheet.csv": "d549f9f7310c4ce0bc85bd1ff28d53fd64fce5c992b58a3202d7896f5dc55913",
+    "te-IN/tools/hero-tasks.feed.json": "e23ba3c22a7f5e55dc86c78e67483acaef92726dde9f61a49b44a8455f329ccd",
+    "te-IN/tools/purchase-worktime-sheet.html": "7e0fae18dd0de8b89846fa7caa002153759ceb688c1684db097d86ec525dbb29",
+    "te-IN/tools/results/purchase-worktime-sheet.csv": "6335a6d66b4b628d1d1af03a6da279ca1dd68b062dc41a6e79cf28af6c2ca376",
+    "th/tools/hero-tasks.feed.json": "46a3f900b7f3abd4f5ee2b5738c1d9135b0612f033bb1c37a23bb28db2694a24",
+    "th/tools/purchase-worktime-sheet.html": "af239b51e2af3fdd83b12d773c784efb7349a8383cf9e6e2a574c0e60a04b762",
+    "th/tools/results/purchase-worktime-sheet.csv": "7579fa89b360cda327057fcfc2cdedb6874657a51669c1f219dc6dd37e0d2add",
+    "tr/tools/hero-tasks.feed.json": "2c2627991bea18e9bc0d16dd8b748fb3fc5425967821b9617747c4e201d984d1",
+    "tr/tools/purchase-worktime-sheet.html": "e52173621b389c1dee9de5f19923fd0bb2a36250d6e4bf4ff43ec02bba8053b9",
+    "tr/tools/results/purchase-worktime-sheet.csv": "b366acb1ed81b7d61051b1b68cc9d7a988b8fba9761a4bdde1dce3f853e8b831",
+    "uk/tools/hero-tasks.feed.json": "0f4a8d98bf6688ca0f83fdcbc9e9467cb7454f9799c64d8b42bf3e94eb98c9b3",
+    "uk/tools/purchase-worktime-sheet.html": "7254e1fa2704c1c2c7aedc777258a805977717df3f12634a92f5677887b1eb8f",
+    "uk/tools/results/purchase-worktime-sheet.csv": "3d46bbbd5cb6ee0031dc8da7f0595404c4353ee1c6453d0515b625e1cf7484be",
+    "ur-PK/tools/hero-tasks.feed.json": "4d24fb51ebeda00c2f5f4e0d1a18d1e82f44458376073d256b993f3990e60900",
+    "ur-PK/tools/purchase-worktime-sheet.html": "4e1c53ba9f8f6b2e91631063d6e0971c23b4a6fbac933c59b639584b24c94bd4",
+    "ur-PK/tools/results/purchase-worktime-sheet.csv": "281dd274ab5fef3d6ad48aca5aa4078a66ee188d63131b3214f7afba0f599177",
+    "vi/tools/hero-tasks.feed.json": "121aaaaae2e8ea1b248e1347d48c36e14c3e5b9c5b41c5ac5948b49b075af8ff",
+    "vi/tools/purchase-worktime-sheet.html": "8e021edd55c6f7a2756c83656c3888bd2ca7b45789b64ccefab24ddaff11966b",
+    "vi/tools/results/purchase-worktime-sheet.csv": "4f34c4ad67a48bf5fad1dec55e4d8ae70d1b2012f0d613f881fc4b22a61f9992",
+    "zh-Hans/tools/hero-tasks.feed.json": "7767cb7175c76a41a12a070f0c6e414a9fb7261239936fec3eb45b977a3c23ce",
+    "zh-Hans/tools/purchase-worktime-sheet.html": "b4f4d075632e452c5cf50cabf1ebfb3233c6de7c99df6e36a426b053cf6ea96a",
+    "zh-Hans/tools/results/purchase-worktime-sheet.csv": "857134dee13d8bb7db1bd071eb2e14af007cc4adec4b997e3ba16d4e5fc2ce71",
+    "zh-Hant/tools/hero-tasks.feed.json": "294aa96bcf78e72635a6140005950385d0ba5e2f7504e7cf25177e12b2c89a21",
+    "zh-Hant/tools/purchase-worktime-sheet.html": "b5bf142927dd00ab31a0903be3d6c77f9e803989530b7921211a70b7b98ad381",
+    "zh-Hant/tools/results/purchase-worktime-sheet.csv": "68d02fef68c79c3905795283496710cf7da72a4d901e2a44e53e9028f379e957"
+  },
+  "portfolio_app_count": 46,
+  "records": [
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ar-SA",
+      "path": "ar-SA/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/purchase-worktime-sheet.csv",
+      "locale": "bn-BD",
+      "path": "bn-BD/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ca",
+      "path": "ca/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/purchase-worktime-sheet.csv",
+      "locale": "cs",
+      "path": "cs/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/da/tools/results/purchase-worktime-sheet.csv",
+      "locale": "da",
+      "path": "da/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/purchase-worktime-sheet.csv",
+      "locale": "de-DE",
+      "path": "de-DE/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/el/tools/results/purchase-worktime-sheet.csv",
+      "locale": "el",
+      "path": "el/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/purchase-worktime-sheet.csv",
+      "locale": "en-AU",
+      "path": "en-AU/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/results/purchase-worktime-sheet.csv",
+      "locale": "en-CA",
+      "path": "en-CA/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/results/purchase-worktime-sheet.csv",
+      "locale": "en-GB",
+      "path": "en-GB/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-US/tools/results/purchase-worktime-sheet.csv",
+      "locale": "en-US",
+      "path": "en-US/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/results/purchase-worktime-sheet.csv",
+      "locale": "es-ES",
+      "path": "es-ES/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/purchase-worktime-sheet.csv",
+      "locale": "es-MX",
+      "path": "es-MX/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/purchase-worktime-sheet.csv",
+      "locale": "fi",
+      "path": "fi/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/purchase-worktime-sheet.csv",
+      "locale": "fr-CA",
+      "path": "fr-CA/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/purchase-worktime-sheet.csv",
+      "locale": "fr-FR",
+      "path": "fr-FR/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "gu-IN",
+      "path": "gu-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/he/tools/results/purchase-worktime-sheet.csv",
+      "locale": "he",
+      "path": "he/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/purchase-worktime-sheet.csv",
+      "locale": "hi",
+      "path": "hi/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/purchase-worktime-sheet.csv",
+      "locale": "hr",
+      "path": "hr/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/purchase-worktime-sheet.csv",
+      "locale": "hu",
+      "path": "hu/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/id/tools/results/purchase-worktime-sheet.csv",
+      "locale": "id",
+      "path": "id/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/it/tools/results/purchase-worktime-sheet.csv",
+      "locale": "it",
+      "path": "it/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ja",
+      "path": "ja/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "kn-IN",
+      "path": "kn-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ko",
+      "path": "ko/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ml-IN",
+      "path": "ml-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "mr-IN",
+      "path": "mr-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ms",
+      "path": "ms/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/purchase-worktime-sheet.csv",
+      "locale": "nl-NL",
+      "path": "nl-NL/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/no/tools/results/purchase-worktime-sheet.csv",
+      "locale": "no",
+      "path": "no/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/no/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "or-IN",
+      "path": "or-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "pa-IN",
+      "path": "pa-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/purchase-worktime-sheet.csv",
+      "locale": "pl",
+      "path": "pl/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/purchase-worktime-sheet.csv",
+      "locale": "pt-BR",
+      "path": "pt-BR/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pt/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/purchase-worktime-sheet.csv",
+      "locale": "pt-PT",
+      "path": "pt-PT/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ro",
+      "path": "ro/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ru/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ru",
+      "path": "ru/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ru/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/purchase-worktime-sheet.csv",
+      "locale": "sk",
+      "path": "sk/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/purchase-worktime-sheet.csv",
+      "locale": "sl-SI",
+      "path": "sl-SI/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/purchase-worktime-sheet.csv",
+      "locale": "sv",
+      "path": "sv/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ta-IN",
+      "path": "ta-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/purchase-worktime-sheet.csv",
+      "locale": "te-IN",
+      "path": "te-IN/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/th/tools/results/purchase-worktime-sheet.csv",
+      "locale": "th",
+      "path": "th/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tr/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/purchase-worktime-sheet.csv",
+      "locale": "tr",
+      "path": "tr/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/purchase-worktime-sheet.csv",
+      "locale": "uk",
+      "path": "uk/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/purchase-worktime-sheet.csv",
+      "locale": "ur-PK",
+      "path": "ur-PK/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/vi/tools/results/purchase-worktime-sheet.csv",
+      "locale": "vi",
+      "path": "vi/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/vi/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/purchase-worktime-sheet.csv",
+      "locale": "zh-Hans",
+      "path": "zh-Hans/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "purchase-worktime-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstaglite"
+        },
+        {
+          "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+          "key": "hourstag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/purchase-worktime-sheet.csv",
+      "locale": "zh-Hant",
+      "path": "zh-Hant/tools/purchase-worktime-sheet.html",
+      "task_id": "purchase-worktime",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "reviewed_adapters_only",
+  "supported_app_keys": [
+    "hourstag",
+    "hourstaglite"
+  ],
+  "task_count": 1,
+  "unserved_app_keys": [
+    "aibriefpack",
+    "aim990",
+    "aim990plus",
+    "battai",
+    "caldaily",
+    "cvdesk",
+    "cyca",
+    "dailymate",
+    "dailymatelite",
+    "gmoney",
+    "gmoneylite",
+    "lockhour",
+    "lumibopomofo",
+    "lumibopomofopro",
+    "lumiletters",
+    "lumiletterspro",
+    "lumimath",
+    "lumimathpro",
+    "lumimission",
+    "lumimissionpro",
+    "lumiweather",
+    "maskmyfile",
+    "mochi",
+    "mochidonestamp",
+    "moneytag",
+    "notesstudio100",
+    "onepageppt",
+    "photocream",
+    "picclear",
+    "savetag",
+    "scanto",
+    "sereno",
+    "shotinbox",
+    "snapport",
+    "snapportlite",
+    "sononote",
+    "tripbee",
+    "tripbeelite",
+    "tripplanet",
+    "unblurry",
+    "wifiaid",
+    "wifiaidlite",
+    "wordmate",
+    "wordmatelite"
+  ]
+}

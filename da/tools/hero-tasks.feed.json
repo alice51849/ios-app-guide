@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/da/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/da/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 355,
+          "title": "Hent eksempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/da/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Sammenlign køb med din nettoindkomst pr. time, og hent din egen CSV. I alt = antal × stykpris. Arbejdstimer = beløb ÷ nettoindkomst pr. time. Arbejdsdage = arbejdstimer ÷ timer pr. arbejdsdag. Brug priser inklusive afgifter. Ingen valutaomregning, lønberegning, opsparingsprognose eller købsrådgivning. Visning med to decimaler; totaler bruger uafrundede tal.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/da/tools/purchase-worktime-sheet.html",
+      "language": "da",
+      "title": "Sammenlign køb i arbejdstimer",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "da",
+  "title": "Gratis opgaveresultater",
+  "version": "https://jsonfeed.org/version/1.1"
+}

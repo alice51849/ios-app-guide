@@ -356,6 +356,7 @@ def main():
     # 問答,下一輪再被改掉。只加站內連結,不動商店連結,所以不影響下游
     # 「一頁一個 App ID」的身份判定。
     require([PY, os.path.join(HERE, "gen_app_page_related.py")], env=env)
+    require([PY, os.path.join(HERE, "hero_tasks.py")], env=env)
     # 連結圖補完:把只存在於 sitemap 的孤兒頁接回首頁 3 次點擊內。必須跑在
     # 所有頁面產生器之後(才掃得到全部頁),而且要在 build_pages_i18n 重寫
     # 語系首頁之後,否則注入的導覽會被蓋掉。
@@ -382,11 +383,14 @@ def main():
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
+    require([PY, os.path.join(HERE, "hero_tasks.py")], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     sync_standard_site(env)
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
+    require([PY, os.path.join(HERE, "hero_tasks.py")], env=env)
+    require([PY, os.path.join(HERE, "hero_tasks.py"), "--check"], env=env)
     # 發布前的硬閘門:可索引頁一頁都不可以從首頁點不到。這是量測不是產生 ——
     # 它擋的是「某支下游產生器把連結圖洗掉,結果我們把孤兒站推上線」。
     # 失敗時整條管線中止、不 commit、不 push、不送 IndexNow;工作樹留在原地,

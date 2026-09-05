@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/ko/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/ko/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 406,
+          "title": "예시 CSV 다운로드",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "실수령 시급으로 여러 구매 항목을 비교하고 나만의 CSV를 내려받으세요. 합계 = 수량 × 세금 포함 단가. 근무 시간 = 합계 ÷ 실수령 시급. 근무 일수 = 근무 시간 ÷ 하루 근무 시간. 세금이 포함된 가격을 입력하세요. 환전, 급여 계산, 저축 예측이나 구매 조언은 제공하지 않습니다. 표시는 소수 둘째 자리까지이며 합계는 반올림 전 값으로 계산합니다.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/purchase-worktime-sheet.html",
+      "language": "ko",
+      "title": "구매 비용을 근무 시간으로 비교",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "ko",
+  "title": "무료 작업 결과",
+  "version": "https://jsonfeed.org/version/1.1"
+}

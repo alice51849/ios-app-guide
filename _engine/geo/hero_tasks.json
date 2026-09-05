@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "purchase-worktime",
+      "slug": "purchase-worktime-sheet",
+      "adapter": "purchase-worktime-v1",
+      "apps": {
+        "hourstag": "6754218117",
+        "hourstaglite": "6794039979"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "hourstag_work_hours_tool.py",
+        "intent_queries": {
+          "hourstag": "best app to track where my money goes and save more",
+          "hourstaglite": "best app to convert prices into work hours before buying"
+        },
+        "scope": "A multi-purchase, downloadable worksheet complements the existing single-purchase calculator. It is not a timesheet, payroll estimate, savings prediction or purchase recommendation."
+      },
+      "example": {
+        "hourly_income": "20",
+        "workday_hours": "8",
+        "items": [
+          {"quantity": 1, "price": "120"},
+          {"quantity": 2, "price": "45"},
+          {"quantity": 3, "price": "30"}
+        ]
+      }
+    }
+  ]
+}

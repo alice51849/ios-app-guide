@@ -35,6 +35,9 @@ jobs:
           ref: main
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
       - name: Refuse pages that still identify themselves on the Pages origin
@@ -86,6 +89,11 @@ jobs:
             --run-attempt "$GITHUB_RUN_ATTEMPT"
           rm -rf "$source_dir"
           trap - EXIT
+      - name: Require complete local-only hero results before upload
+        env:
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
+          APP_STORE_PROVIDER_TOKEN: "118326163"
+        run: python3 _engine/geo/hero_tasks.py --pages-dir . --check
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"
@@ -94,6 +102,7 @@ jobs:
           cp _engine/geo/official_locales.py "$RUNNER_TEMP/official_locales.py"
           cp _engine/geo/notify_rsscloud.py "$RUNNER_TEMP/notify_rsscloud.py"
           cp _engine/geo/rsscloud_config.py "$RUNNER_TEMP/rsscloud_config.py"
+          cp _engine/geo/hero_tasks_readback.py "$RUNNER_TEMP/hero_tasks_readback.py"
           rm -rf _engine
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -143,13 +152,22 @@ jobs:
           path: ${{ runner.temp }}/deployment-readback-${{ github.run_id }}-${{ github.run_attempt }}.json
           if-no-files-found: error
           retention-days: 30
+      - name: Verify every hero result on the public host
+        id: verify_hero
+        if: steps.verify_live.outcome == 'success'
+        timeout-minutes: 10
+        run: >-
+          python3 "$RUNNER_TEMP/hero_tasks_readback.py"
+          --manifest "$GITHUB_WORKSPACE/data/hero-tasks/manifest.json"
+          --base-url https://open.cait518.cc/ios-app-guide
       - name: Notify WebSub subscribers
         id: notify_websub
         if: >-
           always() &&
           (steps.deployment.outcome == 'success' ||
           steps.deployment_retry.outcome == 'success') &&
-          steps.verify_live.outcome == 'success'
+          steps.verify_live.outcome == 'success' &&
+          steps.verify_hero.outcome == 'success'
         continue-on-error: true
         timeout-minutes: 6
         env:
@@ -163,7 +181,8 @@ jobs:
           always() &&
           (steps.deployment.outcome == 'success' ||
           steps.deployment_retry.outcome == 'success') &&
-          steps.verify_live.outcome == 'success'
+          steps.verify_live.outcome == 'success' &&
+          steps.verify_hero.outcome == 'success'
         continue-on-error: true
         timeout-minutes: 6
         env:
@@ -176,7 +195,8 @@ jobs:
           always() &&
           (steps.deployment.outcome == 'success' ||
           steps.deployment_retry.outcome == 'success') &&
-          steps.verify_live.outcome == 'success'
+          steps.verify_live.outcome == 'success' &&
+          steps.verify_hero.outcome == 'success'
         run: |
           test "${{ steps.notify_websub.outcome }}" = "success"
           test "${{ steps.notify_rsscloud.outcome }}" = "success"

@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 540,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "તમારી ચોખ્ખી કલાકદીઠ આવકથી ખરીદીની સરખામણી કરો અને તમારું CSV ડાઉનલોડ કરો. કુલ = જથ્થો × અંતિમ એકમ કિંમત. કામના કલાક = કુલ ÷ કલાકદીઠ ચોખ્ખી આવક. કાર્યદિવસ = કામના કલાક ÷ દરરોજના કામના કલાક. કિંમતમાં કર સામેલ કરો. ચલણ રૂપાંતર, પગાર ગણતરી, બચતની આગાહી કે ખરીદીની સલાહ નથી. દેખાવ બે દશાંશ સુધી છે; કુલ મૂળ મૂલ્યોથી ગણાય છે.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/purchase-worktime-sheet.html",
+      "language": "gu-IN",
+      "title": "ખરીદીની સરખામણી કામના કલાકોમાં",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "gu-IN",
+  "title": "મફત કાર્ય પરિણામો",
+  "version": "https://jsonfeed.org/version/1.1"
+}

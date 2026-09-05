@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/fi/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/fi/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 376,
+          "title": "Lataa esimerkin CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Vertaa ostoksia nettotuntitulosi avulla ja lataa oma CSV-tiedostosi. Yhteensä = määrä × yksikköhinta. Työtunnit = summa ÷ nettotuntitulo. Työpäivät = työtunnit ÷ työtunnit päivässä. Sisällytä verot hintoihin. Ei valuutanvaihtoa, palkanlaskentaa, säästöennusteita tai ostosuosituksia. Näyttö pyöristää kahteen desimaaliin; summat lasketaan pyöristämättömistä arvoista.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/purchase-worktime-sheet.html",
+      "language": "fi",
+      "title": "Vertaa ostoksia työtunteina",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "fi",
+  "title": "Ilmaiset tehtävätulokset",
+  "version": "https://jsonfeed.org/version/1.1"
+}

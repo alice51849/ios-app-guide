@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 566,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "ଆପଣଙ୍କ ଘଣ୍ଟାପିଛା ନିଟ୍ ଆୟରେ କିଣାକିଣି ତୁଳନା କରି ନିଜ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ମୋଟ = ପରିମାଣ × ଅନ୍ତିମ ଏକକ ମୂଲ୍ୟ। କାମ ଘଣ୍ଟା = ମୋଟ ÷ ଘଣ୍ଟାପିଛା ନିଟ୍ ଆୟ। କାର୍ଯ୍ୟଦିନ = କାମ ଘଣ୍ଟା ÷ ଦୈନିକ କାମ ଘଣ୍ଟା। ମୂଲ୍ୟରେ କର ଯୋଡ଼ନ୍ତୁ। ମୁଦ୍ରା ବଦଳ, ଦରମା ହିସାବ, ସଞ୍ଚୟ ପୂର୍ବାନୁମାନ କିମ୍ବା କିଣିବା ପରାମର୍ଶ ନାହିଁ। ଦୁଇ ଦଶମିକ ଦେଖାଯାଏ; ମୋଟ ମୂଳ ମୂଲ୍ୟରୁ ହିସାବ ହୁଏ।",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/purchase-worktime-sheet.html",
+      "language": "or-IN",
+      "title": "କିଣାକିଣିକୁ କାମ ଘଣ୍ଟାରେ ତୁଳନା କରନ୍ତୁ",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "or-IN",
+  "title": "ମାଗଣା କାର୍ଯ୍ୟ ଫଳାଫଳ",
+  "version": "https://jsonfeed.org/version/1.1"
+}

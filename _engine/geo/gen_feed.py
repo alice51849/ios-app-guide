@@ -15,6 +15,7 @@ import re
 import subprocess
 import time
 from html.parser import HTMLParser
+from pathlib import Path
 
 from PIL import Image
 
@@ -320,6 +321,12 @@ def collect():
         path = os.path.join(PAGES, relative)
         if os.path.exists(path):
             items.append((_content_modified(path, git_modified), url, path))
+    from hero_tasks import english_feed_entries
+    hero_entries = english_feed_entries(Path(PAGES))
+    hero_urls = {url for _, url in hero_entries}
+    for relative, url in hero_entries:
+        path = os.path.join(PAGES, relative)
+        items.append((_content_modified(path, git_modified), url, path))
     items.sort(reverse=True)
     required = [
         item
@@ -331,6 +338,7 @@ def collect():
                 for relative in REQUIRED_RELATIVE_PATHS
             )
             or _has_owned_resource_cta(item[2])
+            or item[1] in hero_urls
         )
     ]
     reserved_shortfall = sum(

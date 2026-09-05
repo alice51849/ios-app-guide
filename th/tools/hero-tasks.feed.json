@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/th/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/th/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 628,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "เปรียบเทียบของที่จะซื้อด้วยรายได้สุทธิต่อชั่วโมง แล้วดาวน์โหลด CSV ของคุณ ยอดรวม = จำนวน × ราคาสุดท้ายต่อชิ้น ชั่วโมง = ยอดรวม ÷ รายได้สุทธิต่อชั่วโมง วัน = ชั่วโมง ÷ ชั่วโมงทำงานต่อวัน ใส่ราคารวมภาษี ไม่แปลงสกุลเงิน คำนวณเงินเดือน คาดการณ์เงินออม หรือแนะนำให้ซื้อ แสดงทศนิยมสองตำแหน่ง โดยคำนวณยอดรวมจากค่าที่ไม่ปัดเศษ",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/purchase-worktime-sheet.html",
+      "language": "th",
+      "title": "เทียบราคาซื้อเป็นชั่วโมงทำงาน",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "th",
+  "title": "ผลลัพธ์งานฟรี",
+  "version": "https://jsonfeed.org/version/1.1"
+}

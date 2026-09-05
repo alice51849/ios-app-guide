@@ -49,6 +49,9 @@ jobs:
           cache-dependency-path: |
             _engine/geo/requirements-validation.txt
             _engine/geo/requirements-iiif-validation.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Install validation dependencies
         run: |
           python3 -m pip install --requirement _engine/geo/requirements-validation.txt
@@ -155,6 +158,7 @@ jobs:
           python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
+          python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 live_app_guard.py --site-root pages
       - name: Reconcile verified Standard.site discovery links
@@ -185,6 +189,7 @@ jobs:
           python3 close_sitemap_graph.py
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
           python3 gen_store_attribution.py
+          python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 audit_link_depth.py --max-indexable-orphans 0
           python3 high_intent_decision_routes.py \
@@ -324,6 +329,7 @@ jobs:
           python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
+          python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 reconcile_answer_semantics.py
           python3 outreach_scorecard.py --require-complete
@@ -373,6 +379,7 @@ jobs:
               python3 close_sitemap_graph.py
               python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
               python3 gen_store_attribution.py
+              python3 hero_tasks.py --today "$GEO_BUILD_DATE"
               python3 gen_feed.py
               python3 audit_link_depth.py --max-indexable-orphans 0
               python3 high_intent_decision_routes.py \
@@ -476,6 +483,7 @@ jobs:
           python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
+          python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/sync_standard_site.py \
@@ -499,6 +507,7 @@ jobs:
           python3 close_sitemap_graph.py
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
           python3 gen_store_attribution.py
+          python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 audit_link_depth.py --max-indexable-orphans 0
           python3 high_intent_decision_routes.py \
@@ -510,6 +519,10 @@ jobs:
             --fallback-state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE" \
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
+      - name: Seal complete local-only hero results
+        run: |
+          python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
+          python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
       - name: Verify localized output before commit
         run: |
           attestation="$RUNNER_TEMP/localized-verified-tree.json"
@@ -556,6 +569,7 @@ jobs:
                 python3 close_sitemap_graph.py
                 python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
                 python3 gen_store_attribution.py
+                python3 hero_tasks.py --today "$GEO_BUILD_DATE"
                 python3 gen_feed.py
                 python3 audit_link_depth.py --max-indexable-orphans 0
                 python3 high_intent_decision_routes.py \
@@ -566,6 +580,8 @@ jobs:
                 python3 _engine/geo/gen_sitemap_lastmod.py \
                   --today "$GEO_BUILD_DATE" \
                   --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
+                python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
+                python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
                 python3 _engine/geo/parallel_unittest.py --jobs 3
               fi
               cd _engine/geo

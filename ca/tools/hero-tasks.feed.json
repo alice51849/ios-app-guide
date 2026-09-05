@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/ca/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/ca/tools/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 367,
+          "title": "Baixa el CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "Compara diverses compres amb els teus ingressos nets per hora i baixa el teu CSV. Total = quantitat × preu final. Hores = total ÷ ingressos nets per hora. Jornades = hores ÷ hores per jornada. Inclou els impostos en els preus. Sense canvi de divises, nòmines, previsions d’estalvi ni consells de compra. Es mostren dos decimals; els totals fan servir valors sense arrodonir.",
+      "date_modified": "2026-09-05T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/purchase-worktime-sheet.html",
+      "language": "ca",
+      "title": "Compara compres en hores de feina",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/purchase-worktime-sheet.html"
+    }
+  ],
+  "language": "ca",
+  "title": "Resultats gratuïts",
+  "version": "https://jsonfeed.org/version/1.1"
+}

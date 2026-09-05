@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Generate per-app review hub pages linking to all language review pages."""
+import html as html_module
 import json, os, sys
 from pathlib import Path
 
@@ -11,7 +12,10 @@ REVIEW_HUBS.mkdir(parents=True, exist_ok=True)
 
 sys.path.insert(0, str(HERE / ".." / "social"))
 from videogen.registry import APPS, APPSTORE
+from app_store_storefronts import campaign_app_store_url, resolve_provider_token
 from site_config import PUBLIC_SITE  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
+from site_tree_index import extract_html_facts  # noqa: E402
 
 GEO_SITE = os.getenv("GEO_SITE", PUBLIC_SITE)
 CSS = """body{font-family:system-ui,sans-serif;max-width:960px;margin:2rem auto;padding:0 1rem;color:#222}
@@ -244,26 +248,38 @@ def lang_display(code):
     return LANG_NAMES.get(code, code)
 
 def get_lang_dirs():
-    dirs = []
-    for d in sorted(PAGES.iterdir()):
-        if d.is_dir() and d.name not in ("_engine", "hubs", "topic-hubs", "review-hubs", "stories", "answers", "tools", "seasonal", "data", "resourcesync"):
-            dirs.append(d.name)
-    return dirs
+    return [locale for locale in OFFICIAL_LOCALES if (PAGES / locale).is_dir()]
+
+
+def _indexable_page(path):
+    if not path.is_file():
+        return False
+    with path.open(encoding="utf-8") as handle:
+        source = handle.read(262144)
+    return not extract_html_facts(source).noindex
 
 def build_review_hub(app_cfg, lang_dirs):
     key = app_cfg["key"]
     app = APPS.get(key, {})
     aid = APPSTORE.get(key, "")
     name = app.get("name", key)
-    store_url = f"https://apps.apple.com/app/id{aid}" if aid else "#"
+    store_url = (
+        campaign_app_store_url(
+            f"https://apps.apple.com/app/id{aid}",
+            "geo_pick",
+            provider_token=resolve_provider_token(),
+        )
+        if aid
+        else "#"
+    )
 
     links = []
     for lang in lang_dirs:
         page_path = PAGES / lang / "reviews" / f"{key}-{app_cfg['slug_suffix']}-{lang}.html"
         if not page_path.exists():
             page_path = PAGES / lang / "reviews" / f"{key}-{app_cfg['slug_suffix']}-{lang.lower()}.html"
-        if page_path.exists():
-            url = f"{GEO_SITE}/{lang}/reviews/{key}-{app_cfg['slug_suffix']}-{lang}.html"
+        if _indexable_page(page_path):
+            url = f"{GEO_SITE}/{lang}/reviews/{page_path.name}"
             links.append((lang, lang_display(lang), url))
 
     if not links:
@@ -316,7 +332,7 @@ def build_review_hub(app_cfg, lang_dirs):
 <h1>{app_cfg['emoji']} {name} Review 2026 — All Languages</h1>
 
 <p>Pay once, no subscription. Read honest reviews in {len(links)} languages.</p>
-<a href="{store_url}?ct=iag_review_hub_{key}" class="dl" rel="noopener">Download on App Store →</a>
+<a href="{html_module.escape(store_url, quote=True)}" class="dl" rel="noopener">Download on App Store →</a>
 <p class="count">Reviews available in {len(links)} languages:</p>
 <div class="grid">
 {link_items}
@@ -339,14 +355,14 @@ def build_index(apps_built):
 <head>
 <meta charset="utf-8">
 <title>iOS App Reviews — All Languages</title>
-<meta name="description" content="Honest iOS app reviews in 150+ languages. Privacy tools that respect your data.">
+<meta name="description" content="Honest iOS app reviews across currently indexed official App Store locale editions. Privacy tools that respect your data.">
 <link rel="canonical" href="{GEO_SITE}/review-hubs/">
 <style>{CSS}</style>
 </head>
 <body>
 <p><a class="back" href="{GEO_SITE}/">← iOS App Guide</a></p>
 <h1>⭐ iOS App Reviews — All Languages</h1>
-<p>Honest reviews of privacy-first iOS apps available in 150+ languages.</p>
+<p>Honest reviews of privacy-first iOS apps in their currently indexed official App Store locale editions.</p>
 <div class="grid">
 {items}
 </div>

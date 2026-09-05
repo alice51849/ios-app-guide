@@ -67,6 +67,11 @@ PREVIEW_URL = f"{PACKAGE_URL}{PREVIEW_FILENAME}"
 CHECKSUM_URL = f"{PACKAGE_URL}{CHECKSUM_FILENAME}"
 BUNDLE_URL = f"{PACKAGE_URL}{BUNDLE_FILENAME}"
 SITEMAP_URL = f"{SITE}/{SITEMAP_PATH.as_posix()}"
+STANDARD_SITE_PUBLICATION_RE = re.compile(
+    r'<link\s+rel=["\']site\.standard\.publication["\']'
+    r'\s+href=["\'](at://[^"\']+)["\']\s*/?>',
+    re.IGNORECASE,
+)
 
 PROFILE = "https://w3id.org/ro/crate/1.3"
 CONTEXT = "https://w3id.org/ro/crate/1.3/context"
@@ -541,7 +546,19 @@ def _metadata_bytes(metadata: dict) -> bytes:
     return (json.dumps(metadata, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
 
 
-def render_preview(metadata: dict) -> bytes:
+def _existing_standard_site_publication_uri(path: Path) -> str | None:
+    try:
+        source = path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return None
+    match = STANDARD_SITE_PUBLICATION_RE.search(source[:65536])
+    return html.unescape(match.group(1)) if match else None
+
+
+def render_preview(
+    metadata: dict,
+    standard_site_publication_uri: str | None = None,
+) -> bytes:
     entities = {entity["@id"]: entity for entity in metadata["@graph"]}
     root = entities[ROOT_ID]
     rows = []
@@ -556,12 +573,20 @@ def render_preview(metadata: dict) -> bytes:
             f'<td><code>{html.escape(entity["sha256"])}</code></td>'
             "</tr>"
         )
+    publication_link = ""
+    if standard_site_publication_uri:
+        publication_link = (
+            '<link rel="site.standard.publication" href="'
+            f'{html.escape(standard_site_publication_uri, quote=True)}">'
+        )
     page = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bopomofo 37-Symbol RO-Crate 1.3 Preview</title>
+<link rel="canonical" href="{PREVIEW_URL}">
+{publication_link}
 <style>
 body{{font:16px/1.6 system-ui,sans-serif;margin:0;color:#172033;background:#f7f8fc}}
 main{{width:min(1080px,calc(100% - 32px));margin:auto;padding:40px 0}}
@@ -633,7 +658,10 @@ def make_artifacts(pages: Path, modified: str) -> dict[str, bytes]:
     source_entries = _source_entries(pages)
     metadata = crate_metadata(source_entries, modified)
     metadata_bytes = _metadata_bytes(metadata)
-    preview_bytes = render_preview(metadata)
+    publication_uri = _existing_standard_site_publication_uri(
+        pages / PACKAGE_PATH / PREVIEW_FILENAME
+    )
+    preview_bytes = render_preview(metadata, publication_uri)
     ordered: dict[str, bytes] = {
         METADATA_FILENAME: metadata_bytes,
         PREVIEW_FILENAME: preview_bytes,
@@ -648,11 +676,15 @@ def make_artifacts(pages: Path, modified: str) -> dict[str, bytes]:
         **zip_entries,
         BUNDLE_FILENAME: _zip_bytes(zip_entries),
     }
-    validate_artifacts(artifacts, modified)
+    validate_artifacts(artifacts, modified, publication_uri)
     return artifacts
 
 
-def validate_artifacts(artifacts: dict[str, bytes], modified: str) -> None:
+def validate_artifacts(
+    artifacts: dict[str, bytes],
+    modified: str,
+    standard_site_publication_uri: str | None = None,
+) -> None:
     context_document = _load_context()
     expected_members = [
         METADATA_FILENAME,
@@ -697,6 +729,15 @@ def validate_artifacts(artifacts: dict[str, bytes], modified: str) -> None:
             raise ValueError(f"RO-Crate root Dataset is missing {field}")
     if root.get("dateModified") != modified:
         raise ValueError("RO-Crate dateModified mismatch")
+    if standard_site_publication_uri:
+        publication_link = (
+            '<link rel="site.standard.publication" href="'
+            f'{html.escape(standard_site_publication_uri, quote=True)}">'
+        ).encode("utf-8")
+        if artifacts[PREVIEW_FILENAME].count(publication_link) != 1:
+            raise ValueError(
+                "RO-Crate preview lost the Standard.site publication link"
+            )
     reference = entities.get(MOE_REFERENCE_ID)
     if (
         not reference
@@ -774,6 +815,8 @@ def validate_artifacts(artifacts: dict[str, bytes], modified: str) -> None:
     preview = artifacts[PREVIEW_FILENAME].decode("utf-8")
     if "<script" in preview.lower():
         raise ValueError("RO-Crate preview must remain static and script-free")
+    if f'<link rel="canonical" href="{PREVIEW_URL}">' not in preview:
+        raise ValueError("RO-Crate preview canonical URL is missing")
     for path in (METADATA_FILENAME, CHECKSUM_FILENAME, *expected_parts):
         if path not in preview and path not in (README_FILENAME, LICENSE_FILENAME):
             raise ValueError(f"RO-Crate preview omits a required link: {path}")

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Generate topic hub pages linking to all language variants for key topics."""
-import json, os, sys
+import json, os, re, sys
 from pathlib import Path
 from site_config import PUBLIC_SITE  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
+from site_tree_index import extract_html_facts  # noqa: E402
 
 HERE = Path(__file__).parent
 PAGES = HERE / "pages"
@@ -382,15 +384,33 @@ LANG_NAMES = {
 }
 
 def get_lang_dirs():
-    """Return all language directories that exist."""
-    dirs = []
-    for d in sorted(PAGES.iterdir()):
-        if d.is_dir() and d.name not in ("_engine", "hubs", "topic-hubs", "stories", "answers", "tools", "seasonal", "data", "resourcesync"):
-            dirs.append(d.name)
-    return dirs
+    """Return only indexable App Store locale directories."""
+    return [locale for locale in OFFICIAL_LOCALES if (PAGES / locale).is_dir()]
+
+
+def _indexable_page(path):
+    if not path.is_file():
+        return False
+    with path.open(encoding="utf-8") as handle:
+        source = handle.read(262144)
+    return not extract_html_facts(source).noindex
 
 def lang_display(code):
     return LANG_NAMES.get(code, code)
+
+
+def _counted_description(description, count):
+    def replace_count(match):
+        available = "Available" if match.group(0).startswith("Available") else "available"
+        edition = "edition" if count == 1 else "editions"
+        return f"{available} in {count} currently indexed language {edition}"
+
+    return re.sub(
+        r"(?:[Aa]vailable in )?(?:150\+|170\+|171) languages",
+        replace_count,
+        description,
+    )
+
 
 def build_hub(topic, lang_dirs):
     links = []
@@ -398,14 +418,15 @@ def build_hub(topic, lang_dirs):
         page_path = PAGES / lang / topic["subdir"] / f"{topic['page_slug']}-{lang}.html"
         if not page_path.exists():
             page_path = PAGES / lang / topic["subdir"] / f"{topic['page_slug']}-{lang.lower()}.html"
-        if page_path.exists():
-            url = f"{GEO_SITE}/{lang}/{topic['subdir']}/{topic['page_slug']}-{lang}.html"
+        if _indexable_page(page_path):
+            url = f"{GEO_SITE}/{lang}/{topic['subdir']}/{page_path.name}"
             name = lang_display(lang)
             links.append((lang, name, url))
 
     if not links:
         return None, 0
 
+    description = _counted_description(topic["desc"], len(links))
     link_items = "\n".join(
         f'<a class="lang-link" href="{url}" hreflang="{lang}">{name}</a>'
         for lang, name, url in links
@@ -414,7 +435,7 @@ def build_hub(topic, lang_dirs):
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": topic["title"],
-        "description": topic["desc"],
+        "description": description,
         "numberOfItems": len(links),
         "itemListElement": [
             {"@type": "ListItem", "position": i+1, "url": url, "name": name}
@@ -427,7 +448,7 @@ def build_hub(topic, lang_dirs):
 <head>
 <meta charset="utf-8">
 <title>{topic["title"]}</title>
-<meta name="description" content="{topic["desc"]}">
+<meta name="description" content="{description}">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="{GEO_SITE}/topic-hubs/{topic['slug']}.html">
 <style>{CSS}</style>
@@ -436,7 +457,7 @@ def build_hub(topic, lang_dirs):
 <body>
 <p><a class="back" href="{GEO_SITE}/">← iOS App Guide</a></p>
 <h1>{topic["emoji"]} {topic["title"]}</h1>
-<p>{topic["desc"]}</p>
+<p>{description}</p>
 <p class="count">Available in {len(links)} languages:</p>
 <div class="grid">
 {link_items}
@@ -474,7 +495,7 @@ def build_index(topics_built):
 <body>
 <p><a class="back" href="{GEO_SITE}/">← iOS App Guide</a></p>
 <h1>📍 iOS App Topic Hubs — All Languages</h1>
-<p>Find iOS app guides in your language. Each topic is available in 170+ languages.</p>
+<p>Find iOS app guides in your language. Each topic lists its currently indexed official App Store locale editions.</p>
 <div class="grid">
 {items}
 </div>

@@ -108,11 +108,13 @@ import gen_llms
 import gen_mobile_app_identity
 import gen_mobile_store_ctas
 import gen_publisher_disclosures
+import gen_review_hubs
 import normalize_app_store_links
 import gen_roundups
 import gen_sitemap_lastmod
 import gen_social_previews
 import gen_smart_app_banners
+import gen_topic_hubs
 import gen_webstories
 import gen_webstories_i18n
 import indexnow_submit
@@ -567,6 +569,32 @@ class GeneratorTests(unittest.TestCase):
             ],
             locations[:4],
         )
+
+    def test_sitemap_index_keeps_official_locale_and_app_sitemaps(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            relative_paths = (
+                "en-US/sitemap.xml",
+                "apps/example/sitemap.xml",
+                "sitemap_agent_feed.xml",
+                "sitemap-high-intent-decision-routes.xml",
+                "sitemap_aim990plus.xml",
+                "sitemap_maskmyfile.xml",
+                "sitemap_orphans.xml",
+            )
+            for relative in relative_paths:
+                sitemap = pages / relative
+                sitemap.parent.mkdir(parents=True, exist_ok=True)
+                sitemap.write_text(
+                    '<?xml version="1.0" encoding="UTF-8"?>\n'
+                    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                    "<url><loc>https://example.com/page</loc></url></urlset>\n",
+                    encoding="utf-8",
+                )
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                index = gen_llms.build_sitemap_index()
+            for relative in relative_paths:
+                self.assertIn(f"{gen_llms.SITE}/{relative}", index)
 
     def test_image_sitemap_maps_every_canonical_story_to_its_owned_poster(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -8202,6 +8230,13 @@ class GeneratorTests(unittest.TestCase):
                 b"<script",
                 first[zhuyin_ro_crate.PREVIEW_FILENAME].lower(),
             )
+            self.assertIn(
+                (
+                    f'<link rel="canonical" href="'
+                    f'{zhuyin_ro_crate.PREVIEW_URL}">'
+                ).encode("utf-8"),
+                first[zhuyin_ro_crate.PREVIEW_FILENAME],
+            )
 
             urls = zhuyin_ro_crate.build(pages, app_public=False)
             self.assertEqual(14, len(urls))
@@ -8305,6 +8340,48 @@ class GeneratorTests(unittest.TestCase):
                 mtimes,
                 {path: path.stat().st_mtime_ns for path in expected_paths},
             )
+            publication_uri = (
+                "at://did:plc:publisher/"
+                "site.standard.publication/record"
+            )
+            preview_path = package / zhuyin_ro_crate.PREVIEW_FILENAME
+            preview_path.write_text(
+                preview_path.read_text(encoding="utf-8").replace(
+                    "</head>",
+                    '<link rel="site.standard.publication" '
+                    f'href="{publication_uri}">\n</head>',
+                ),
+                encoding="utf-8",
+            )
+            zhuyin_ro_crate.build(pages, app_public=False)
+            preview_bytes = preview_path.read_bytes()
+            self.assertEqual(
+                1,
+                preview_bytes.count(
+                    b'rel="site.standard.publication"'
+                ),
+            )
+            self.assertIn(publication_uri.encode("ascii"), preview_bytes)
+            checksum_entries = {
+                path: digest
+                for digest, path in (
+                    line.split("  ", 1)
+                    for line in (
+                        package / zhuyin_ro_crate.CHECKSUM_FILENAME
+                    ).read_text(encoding="ascii").splitlines()
+                )
+            }
+            self.assertEqual(
+                hashlib.sha256(preview_bytes).hexdigest(),
+                checksum_entries[zhuyin_ro_crate.PREVIEW_FILENAME],
+            )
+            with zipfile.ZipFile(
+                package / zhuyin_ro_crate.BUNDLE_FILENAME
+            ) as archive:
+                self.assertEqual(
+                    preview_bytes,
+                    archive.read(zhuyin_ro_crate.PREVIEW_FILENAME),
+                )
 
     def test_zhuyin_mets_premis_package_is_valid_deterministic_and_discoverable(
         self,
@@ -24520,6 +24597,116 @@ class GeneratorTests(unittest.TestCase):
         sereno = gen_llms.build_llms({}, {"sereno"})
         self.assertIn("### Sleep & focus", sereno)
         self.assertNotIn("### sleep-sound", sereno)
+
+    def test_llms_catalog_store_links_share_low_cardinality_attribution(self):
+        expected = "pt=118326163&ct=geo_pick&mt=8"
+        with mock.patch.dict(
+            os.environ,
+            {"APP_STORE_PROVIDER_TOKEN": "118326163"},
+        ), tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            page = pages / "en-US" / "aim990.html"
+            page.parent.mkdir(parents=True)
+            page.write_text("page", encoding="utf-8")
+            line = gen_llms.app_line("aim990", [], {"aim990"})
+            record = gen_llms._localized_app_record(
+                "aim990",
+                "en-US",
+                pages,
+                {},
+            )
+            with mock.patch.object(gen_llms, "PAGES", str(pages)):
+                full = gen_llms.build_llms_full({}, {"aim990"})
+
+        self.assertIn(expected, line)
+        self.assertIn(expected, record["store"])
+        store_urls = re.findall(r"https://apps\.apple\.com/[^\s)]+", full)
+        self.assertTrue(store_urls)
+        self.assertTrue(all(expected in url for url in store_urls))
+
+    def test_legacy_language_hubs_only_link_official_indexable_pages(self):
+        indexable = "<html><head></head><body>ok</body></html>"
+        noindex = (
+            '<html><head><meta name="robots" content="noindex,follow">'
+            "</head><body>hidden</body></html>"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            topic = gen_topic_hubs.TOPICS[0]
+            review = gen_review_hubs.REVIEW_APPS[0]
+            for locale, source in (
+                ("en-US", indexable),
+                ("zh-Hant", noindex),
+                ("eo", indexable),
+            ):
+                topic_page = (
+                    pages
+                    / locale
+                    / topic["subdir"]
+                    / f"{topic['page_slug']}-{locale}.html"
+                )
+                topic_page.parent.mkdir(parents=True, exist_ok=True)
+                topic_page.write_text(source, encoding="utf-8")
+                review_page = (
+                    pages
+                    / locale
+                    / "reviews"
+                    / f"{review['key']}-{review['slug_suffix']}-{locale}.html"
+                )
+                review_page.parent.mkdir(parents=True, exist_ok=True)
+                review_page.write_text(source, encoding="utf-8")
+
+            with mock.patch.object(gen_topic_hubs, "PAGES", pages):
+                locales = gen_topic_hubs.get_lang_dirs()
+                topic_html, topic_count = gen_topic_hubs.build_hub(
+                    topic, locales
+                )
+            with mock.patch.object(
+                gen_review_hubs, "PAGES", pages
+            ), mock.patch.dict(
+                os.environ, {"APP_STORE_PROVIDER_TOKEN": "118326163"}
+            ):
+                locales = gen_review_hubs.get_lang_dirs()
+                review_html, review_count = gen_review_hubs.build_review_hub(
+                    review, locales
+                )
+
+        self.assertEqual(1, topic_count)
+        self.assertEqual(1, review_count)
+        for output in (topic_html, review_html):
+            self.assertIn("/en-US/", output)
+            self.assertNotIn("/zh-Hant/", output)
+            self.assertNotIn("/eo/", output)
+            self.assertNotRegex(output, r"(?:150\+|170\+|171) languages")
+        self.assertIn(
+            "available in 1 currently indexed language edition",
+            topic_html,
+        )
+        self.assertIn(
+            "pt=118326163&amp;ct=geo_pick&amp;mt=8",
+            review_html,
+        )
+        self.assertNotIn(
+            "170+ languages",
+            gen_topic_hubs.build_index(
+                [(topic["slug"], topic["title"], topic["emoji"], 1)]
+            ),
+        )
+        self.assertNotIn(
+            "150+ languages",
+            gen_review_hubs.build_index(
+                [(review["key"], "Example", review["emoji"], 1)]
+            ),
+        )
+
+    def test_geo_daily_adds_related_guidance_to_app_detail_pages(self):
+        pages = Path(
+            os.environ.get("GEO_PAGES", Path(GEO) / "pages")
+        )
+        workflow = (pages / ".github/workflows/geo-daily.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("python3 gen_app_page_related.py", workflow)
 
     def test_portfolio_discovery_is_disclosed_as_first_party(self):
         publisher_main = inspect.getsource(

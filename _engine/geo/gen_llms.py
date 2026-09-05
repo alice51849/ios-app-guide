@@ -213,7 +213,9 @@ def positioning(key):
 # growth review only decides *which storefronts are worth naming*, and even
 # those are dropped unless Apple's public lookup confirms the app is sold
 # there.
-BUYER_INTENT_CAMPAIGN = "llms_answer"
+AI_CATALOG_CAMPAIGN = "geo_pick"
+# Compatibility for the focused buyer-intent suite and existing callers.
+BUYER_INTENT_CAMPAIGN = AI_CATALOG_CAMPAIGN
 
 # Storefront codes only. No download, revenue, or ranking figure belongs in a
 # public file, and none is needed: the codes just prioritise which verified
@@ -317,7 +319,7 @@ def _assert_supportable(lines):
     return lines
 
 
-def _buyer_intent_store_url(url):
+def _catalog_store_url(url):
     """A campaign-attributed App Store link, or the plain one without a token.
 
     ``resolve_provider_token`` rather than a bare environment read: llms.txt is
@@ -327,8 +329,12 @@ def _buyer_intent_store_url(url):
     variable, which always wins over the token file.
     """
     return campaign_app_store_url(
-        url, BUYER_INTENT_CAMPAIGN, provider_token=resolve_provider_token()
+        url, AI_CATALOG_CAMPAIGN, provider_token=resolve_provider_token()
     )
+
+
+def _buyer_intent_store_url(url):
+    return _catalog_store_url(url)
 
 
 def _app_store_id(key):
@@ -603,7 +609,8 @@ def buyer_intent_full_lines(key, availability):
 
 def app_line(key, comps, live_keys):
     a = APPS[key]
-    url = appstore_url(key)
+    direct_url = appstore_url(key)
+    url = _catalog_store_url(direct_url) if direct_url else None
     if not url or key not in live_keys:
         return None
     sub = (a.get("sub") or "").replace("\n", " ").strip()
@@ -1102,10 +1109,8 @@ def _localized_app_record(key, locale, pages, availability):
             build_pages_i18n.pricing_text_for(key, locale)
         ),
         "guide": f"{SITE}/{locale}/{key}.html",
-        "store": verified_app_store_url(
-            canonical,
-            locale,
-            availability,
+        "store": _catalog_store_url(
+            verified_app_store_url(canonical, locale, availability)
         ),
     }
 
@@ -2105,7 +2110,7 @@ def build_llms_full(comp_map, live_keys):
                 "",
                 f"#### {app['name']}",
                 f"- Summary: {sub}",
-                f"- App Store: {appstore_url(key)}",
+                f"- App Store: {_catalog_store_url(appstore_url(key))}",
             ]
             if facts:
                 lines.append(f"- Supported positioning: {'; '.join(facts)}")
@@ -9060,6 +9065,19 @@ def build_sitemap_index():
         "sitemap_problems_sm.xml",
         "sitemap_problems_nah.xml",
     ])
+    maps.extend(f"{locale}/sitemap.xml" for locale in OFFICIAL_LOCALES)
+    maps.extend([
+        agent_product_feed.SITEMAP_RELATIVE.as_posix(),
+        high_intent_decision_routes.SITEMAP_RELATIVE.as_posix(),
+        "sitemap_aim990plus.xml",
+        "sitemap_maskmyfile.xml",
+        "sitemap_orphans.xml",
+    ])
+    app_sitemaps = (Path(PAGES) / "apps").glob("*/sitemap*.xml")
+    maps.extend(
+        sitemap.relative_to(PAGES).as_posix()
+        for sitemap in sorted(app_sitemaps)
+    )
     maps = list(dict.fromkeys(maps))
     items = "\n".join(
         f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>"

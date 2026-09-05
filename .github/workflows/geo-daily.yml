@@ -423,6 +423,10 @@ jobs:
         run: |
           cd _engine/geo
           python3 add_related_tools.py --all-official-locales
+      - name: Add related guidance to all 50 localized App detail pages
+        run: |
+          cd _engine/geo
+          python3 gen_app_page_related.py
       - name: Final link and availability cleanup
         run: |
           cd _engine/geo

@@ -75,17 +75,20 @@ jobs:
               git@github.com:alice51849/00_GrowthEngine.git "$source_dir"
           engine_revision="$(git -C "$source_dir" rev-parse HEAD)"
           rm -f "$key_file" "$known_hosts"
-          python3 _engine/geo/high_intent_decision_routes.py \
+          python3 _engine/geo/deployment_generation.py prepare \
             --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
             --output-dir "$GITHUB_WORKSPACE" \
             --prepare-pages-deployment \
             --source-commit "$(git rev-parse HEAD)" \
             --current-source-root "$source_dir/geo" \
-            --engine-source-revision "$engine_revision"
+            --engine-source-revision "$engine_revision" \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-attempt "$GITHUB_RUN_ATTEMPT"
           rm -rf "$source_dir"
           trap - EXIT
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
+          cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
           cp _engine/geo/websub_config.py "$RUNNER_TEMP/websub_config.py"
           cp _engine/geo/official_locales.py "$RUNNER_TEMP/official_locales.py"
@@ -116,45 +119,30 @@ jobs:
         env:
           DEPLOYMENT_MANIFEST_URL: >-
             https://alice51849.github.io/ios-app-guide/.well-known/deployment.json
-          ROUTE_MANIFEST_URL: >-
-            https://alice51849.github.io/ios-app-guide/data/high-intent-decision-routes/expected-output-manifest.json
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
         run: |
-          fields='{version,deployment_id,source_commit,engine_source_revision,source_contract_digest,route_manifest_digest,route_count,app_count,candidate_app_locale_pairs,abstained_pairs,fallback_records}'
-          expected="$(
-            jq -ceS \
-              "$fields |
-              if any(.[]; . == null)
-              then error(\"missing deployment field\")
-              else .
-              end |
-              select(.version == 4 and .app_count > 0 and .route_count > 0 and
-                .fallback_records == 0)" \
-              .well-known/deployment.json
-          )"
-          expected_source="$(jq -er '.source_commit' .well-known/deployment.json)"
-          expected_route_digest="$(jq -er '.route_manifest_digest' .well-known/deployment.json)"
-          for attempt in {1..30}; do
-            live_deployment="$(
-              curl -fsS --retry 2 --retry-all-errors \
-                --connect-timeout 10 --max-time 20 \
-                "${DEPLOYMENT_MANIFEST_URL}?run=${GITHUB_RUN_ID}-${attempt}" \
-              | jq -cS "$fields" 2>/dev/null || true
-            )"
-            live_route_digest="$(
-              curl -fsS --retry 2 --retry-all-errors \
-                --connect-timeout 10 --max-time 20 \
-                "${ROUTE_MANIFEST_URL}?run=${GITHUB_RUN_ID}-${attempt}" \
-              | jq -er '.manifest_digest' 2>/dev/null || true
-            )"
-            if [[ "$live_deployment" == "$expected" ]] &&
-              [[ "$live_route_digest" == "$expected_route_digest" ]]; then
-              echo "Exact deployment is live: $expected_source"
-              exit 0
-            fi
-            sleep 10
-          done
-          echo "Expected deployment never reached the public CDN: $expected_source" >&2
-          exit 1
+          set -euo pipefail
+          jq -e '.version == 4 and .app_count > 0 and .route_count > 0 and
+            .fallback_records == 0 and
+            .route_manifest_digest == .generation.manifest_digest' \
+            .well-known/deployment.json > /dev/null
+          test "$(git rev-parse HEAD)" = \
+            "$(jq -er '.generation.pages_source_sha' .well-known/deployment.json)"
+          python3 "$RUNNER_TEMP/deployment_generation.py" verify-live \
+            --deployment .well-known/deployment.json \
+            --site "${DEPLOYMENT_MANIFEST_URL%/.well-known/deployment.json}" \
+            --site "$GEO_SITE" \
+            --receipt "$RUNNER_TEMP/deployment-readback-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json" \
+            --attempts 30
+          echo "Exact deployment is live: $(jq -er '.generation.generation_id' .well-known/deployment.json)"
+      - name: Preserve generation-bound live readback
+        if: always() && steps.verify_live.outcome != 'skipped'
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployment-readback-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/deployment-readback-${{ github.run_id }}-${{ github.run_attempt }}.json
+          if-no-files-found: error
+          retention-days: 30
       - name: Notify WebSub subscribers
         id: notify_websub
         if: >-

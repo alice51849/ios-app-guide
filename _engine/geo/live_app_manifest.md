@@ -64,12 +64,22 @@ python3 aso/growth_scorecard.py \
 的正向證據，也不增加或重設 miss count。網路失敗或某款暫時查不到時仍保留完整
 roster、last-good 與原因，availability advisory 不得中止 GEO publish。
 
+版本化 roster 與 `APPSTORE`／`APPS` 一致完成更名或 identity 更新後，`--refresh`
+會先驗舊 snapshot 的 schema、內容／digest、時間及所有 App／pending adoption ID
+仍在 `APPSTORE` 登錄，再將 identity 不符的快取明確列為 stale advisory、丟棄整份
+availability 歷史並重新查核；不沿用舊 identity 的 last-good 或 miss count。
+只有 roster 擴增而既有 identity 完全相同時，仍保留舊 subset snapshot 歷史。
+此自癒只適用 refresh；consumer 直接載入 identity 不符的 snapshot 仍拒收。
+schema／digest／內容損毀、未登錄 ID 或版本化 roster／registry 不一致仍 hard fail，
+不靜默忽略、不開始 lookup，也不覆寫原快取或 roster。
+
 新 live App 必須同時存在於已登錄的 `APPSTORE`／`APPS`，並由至少兩個獨立
 Apple storefront 的當次結果確認，才可用 `--refresh --adopt` 自動納入。
 `new_app_catchup.refresh_registered_inventory()` 在 registry 已落盤後呼叫此
 路徑；roster 與 digest 受 lock 保護、原子替換，revision 遞增，納入來源 commit
 後才保存 runtime snapshot。單來源或 aggregate 結果只列為 `pending_adoptions`；
-未登錄 ID、identity drift 或壞 schema/digest 一律 hard fail，不改 roster。
+未登錄 ID、版本化 roster／registry identity drift 或壞 schema/digest 一律 hard fail，
+不改 roster。
 
 Scorecard 本身不隱式查網路。`GROWTH_LIVE_MANIFEST` 指定同一份最新 snapshot；
 **絕不**把 `GEO_PUBLIC_INVENTORY_BASELINE`／`apps.json` 當作 snapshot fallback。

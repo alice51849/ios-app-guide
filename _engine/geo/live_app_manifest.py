@@ -537,13 +537,26 @@ def adopt_registered_live_apps(results, *, appstore=None, registry=None):
         return sorted(added)
 
 
-def _previous_snapshot(path, apps, now):
+def _previous_snapshot(path, apps, now, *, registered_ids):
     if path is None or not Path(path).exists():
         return None
     previous = _validate_envelope(_read(path))
     _statuses(previous, now)
+    snapshot_ids = {app["app_id"] for app in previous["apps"].values()}
+    snapshot_ids.update(entry["app_id"] for entry in previous.get("pending_adoptions", []))
+    unregistered = snapshot_ids - registered_ids
+    if unregistered:
+        raise ManifestError(
+            "Unregistered App IDs in last-good availability snapshot: "
+            + ", ".join(sorted(unregistered))
+        )
     if any(apps.get(key) != app for key, app in previous["apps"].items()):
-        raise ManifestError("Last-good availability snapshot has roster identity drift")
+        print(
+            "Availability advisory: discarding stale last-good snapshot with outdated "
+            "roster identity; rebuilding without cached availability history",
+            file=sys.stderr,
+        )
+        return None
     return previous
 
 
@@ -562,7 +575,10 @@ def refresh_manifest(
         ):
             raise ManifestError(f"Registry roster drift: {key}")
     now = _now(now)
-    previous = _previous_snapshot(previous_path, baseline["apps"], now)
+    previous = _previous_snapshot(
+        previous_path, baseline["apps"], now,
+        registered_ids={str(app_id) for app_id in appstore.values() if app_id},
+    )
     results = _lookup_results(appstore, lookup=lookup, lookup_country=lookup_country)
     if adopt:
         adopt_registered_live_apps(results, appstore=appstore, registry=registry)

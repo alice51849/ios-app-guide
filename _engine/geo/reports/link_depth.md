@@ -19,19 +19,19 @@ noindex 頁永遠不會排名,算進分母只是充數;下表只看能排名的�
 | 指標 | 值 |
 |---|---:|
 | noindex 頁數 | 22,054 |
-| 其中可達 | 17,675 |
-| 其中不可達(刻意不接回,省爬取預算) | 4,379 |
+| 其中可達 | 4,669 |
+| 其中不可達(刻意不接回,省爬取預算) | 17,385 |
 
 ## 全站(含 noindex,僅供對比歷史快照)
 
 | 指標 | 值 |
 |---|---:|
 | HTML 總頁數 | 64,496 |
-| 從首頁可達 | 60,117 (93.21%) |
-| 不可達(孤兒頁) | 4,379 |
-| 3 次點擊內可達 | 60,044 (93.1%) |
-| 可達頁平均深度 | 2.906 |
-| 最大深度 | 5 |
+| 從首頁可達 | 47,111 (73.04%) |
+| 不可達(孤兒頁) | 17,385 |
+| 3 次點擊內可達 | 47,111 (73.04%) |
+| 可達頁平均深度 | 2.879 |
+| 最大深度 | 3 |
 | 整批孤立的區塊數(≥20 頁且 0 可達) | 0 |
 
 ## 深度分佈
@@ -40,10 +40,8 @@ noindex 頁永遠不會排名,算進分母只是充數;下表只看能排名的�
 |---:|---:|
 | 0 | 1 |
 | 1 | 112 |
-| 2 | 5,488 |
-| 3 | 54,443 |
-| 4 | 61 |
-| 5 | 12 |
+| 2 | 5,486 |
+| 3 | 41,512 |
 
 ## 各頂層區塊
 
@@ -93,24 +91,24 @@ noindex 頁永遠不會排名,算進分母只是充數;下表只看能排名的�
 ## 孤兒頁樣本
 
 ```
-https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-document-mask-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-passport-photo-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-photo-hide-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-scan-offline-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-social-block-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/reviews/maskmyfile-review-2026-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/reviews/scanto-review-2026-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/reviews/snapport-review-2026-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/reviews/zafe-review-2026-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-school-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-summer-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-year-end-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/vs/scanto-vs-apple-notes-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/vs/snapport-vs-photographer-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/vs/zafe-vs-hidden-album-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-privacy-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-workflow-freelancer-ace-id.html
-https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-workflow-student-ace-id.html
-https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-document-mask-ach-ug.html
-https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-passport-photo-ach-ug.html
+https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-document-mask-aa.html
+https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-passport-photo-aa.html
+https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-photo-hide-aa.html
+https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-scan-offline-aa.html
+https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-social-block-aa.html
+https://open.cait518.cc/ios-app-guide/aa/reviews/maskmyfile-review-2026-aa.html
+https://open.cait518.cc/ios-app-guide/aa/reviews/scanto-review-2026-aa.html
+https://open.cait518.cc/ios-app-guide/aa/reviews/snapport-review-2026-aa.html
+https://open.cait518.cc/ios-app-guide/aa/reviews/zafe-review-2026-aa.html
+https://open.cait518.cc/ios-app-guide/aa/seasonal/iphone-apps-school-aa.html
+https://open.cait518.cc/ios-app-guide/aa/seasonal/iphone-apps-summer-aa.html
+https://open.cait518.cc/ios-app-guide/aa/seasonal/iphone-apps-year-end-aa.html
+https://open.cait518.cc/ios-app-guide/aa/vs/scanto-vs-apple-notes-aa.html
+https://open.cait518.cc/ios-app-guide/aa/vs/snapport-vs-photographer-aa.html
+https://open.cait518.cc/ios-app-guide/aa/vs/zafe-vs-hidden-album-aa.html
+https://open.cait518.cc/ios-app-guide/aa/workflow/iphone-privacy-aa.html
+https://open.cait518.cc/ios-app-guide/aa/workflow/iphone-workflow-freelancer-aa.html
+https://open.cait518.cc/ios-app-guide/aa/workflow/iphone-workflow-student-aa.html
+https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-document-mask-ab.html
+https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-passport-photo-ab.html
 ```

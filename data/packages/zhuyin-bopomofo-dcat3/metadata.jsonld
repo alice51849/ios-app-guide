@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-09-05T00:00:00Z",
+  "dateModified": "2026-09-05T06:19:36Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28752 bytes",
-      "sha256": "a0b1991e3548ae5c232ec91e4e0a2397d57d6c26d23997dbab59fab1ca7730ac"
+      "contentSize": "28778 bytes",
+      "sha256": "171d84bf61ba90e46fc63494ddb7f4e7d887e5a8b41218de3553ebff4b2f0bd3"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "215134 bytes",
-      "sha256": "5711ac58730e6a70bf08bd2a5d3c41ff5dd3c02727b9a2c46c20402bc3dc4446"
+      "sha256": "c08fcce54d4417c1ecebd0e5a74fd3c10871971ecd9d84317fb818e805a308a6"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "144953 bytes",
-      "sha256": "f3f5efd828b6204a8a8f94d3d75663a50150bbec15a619b5802080b018c51442"
+      "sha256": "e5d8530264835a1ed94b978f3863ea370bc192094f872df502f3979be44f8241"
     }
   ]
 }

@@ -8,26 +8,24 @@
   "indexable_within_3_clicks": 42442,
   "indexable_within_3_clicks_pct": 100.0,
   "noindex_pages": 22054,
-  "noindex_reachable_total": 17675,
-  "noindex_orphans": 4379,
-  "reachable": 60117,
-  "unreachable": 4379,
+  "noindex_reachable_total": 4669,
+  "noindex_orphans": 17385,
+  "reachable": 47111,
+  "unreachable": 17385,
   "unreachable_indexable": 0,
-  "unreachable_noindex_by_design": 4379,
-  "reachable_pct": 93.21,
-  "within_3_clicks": 60044,
-  "within_3_clicks_pct": 93.1,
-  "avg_depth_reachable": 2.906,
-  "max_depth": 5,
+  "unreachable_noindex_by_design": 17385,
+  "reachable_pct": 73.04,
+  "within_3_clicks": 47111,
+  "within_3_clicks_pct": 73.04,
+  "avg_depth_reachable": 2.879,
+  "max_depth": 3,
   "depth_distribution": {
     "0": 1,
     "1": 112,
-    "2": 5488,
-    "3": 54443,
-    "4": 61,
-    "5": 12
+    "2": 5486,
+    "3": 41512
   },
-  "noindex_reachable": 17675,
+  "noindex_reachable": 4669,
   "broken_links_by_section": {},
   "broken_samples": {},
   "top_level": {
@@ -419,13 +417,13 @@
       "total": 33,
       "reachable": 33,
       "unreachable": 0,
-      "avg_depth": 2.0
+      "avg_depth": 2.06
     },
     "bg": {
       "total": 27,
-      "reachable": 8,
-      "unreachable": 19,
-      "avg_depth": 3.88
+      "reachable": 0,
+      "unreachable": 27,
+      "avg_depth": null
     },
     "cross": {
       "total": 27,
@@ -435,69 +433,69 @@
     },
     "sot": {
       "total": 27,
-      "reachable": 18,
-      "unreachable": 9,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 27,
+      "avg_depth": null
     },
     "bho": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "loz": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "mag": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "mah": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "mai": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "nah": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "new": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "raj": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "sm": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "ssw": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "sv-SE": {
       "total": 23,
@@ -507,21 +505,21 @@
     },
     "tso": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "tvl": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "ven": {
       "total": 23,
-      "reachable": 18,
-      "unreachable": 5,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 23,
+      "avg_depth": null
     },
     "da-DK": {
       "total": 21,
@@ -537,33 +535,33 @@
     },
     "aa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ab": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "abr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "abs": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ace": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ace-ID": {
       "total": 18,
@@ -573,9 +571,9 @@
     },
     "ach": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ach-UG": {
       "total": 18,
@@ -585,51 +583,51 @@
     },
     "acm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "acq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "acw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ada": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ady": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "aeb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "aec": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "af": {
       "total": 18,
-      "reachable": 7,
-      "unreachable": 11,
-      "avg_depth": 4.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "af-ZA": {
       "total": 18,
@@ -639,69 +637,69 @@
     },
     "afb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "agi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "agn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "agq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "agr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ahr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ak": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "akl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "alt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "alz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "am": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "am-ET": {
       "total": 18,
@@ -711,57 +709,57 @@
     },
     "ami": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "amo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "an": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "anp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "anr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "anu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "any": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "apc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "apd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ar-BH": {
       "total": 18,
@@ -843,27 +841,27 @@
     },
     "arn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ary": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "arz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "as": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "as-IN": {
       "total": 18,
@@ -873,39 +871,39 @@
     },
     "asa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "av": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "avn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "avu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "awa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ay": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ay-BO": {
       "total": 18,
@@ -915,15 +913,15 @@
     },
     "aym": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "az": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "az-AZ": {
       "total": 18,
@@ -933,9 +931,9 @@
     },
     "ba": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ba-RU": {
       "total": 18,
@@ -945,15 +943,15 @@
     },
     "bal": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ban": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ban-ID": {
       "total": 18,
@@ -963,51 +961,51 @@
     },
     "bar": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bas": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bax": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bbc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bbj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bcc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bci": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bcl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bcl-PH": {
       "total": 18,
@@ -1017,147 +1015,147 @@
     },
     "be": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bej": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bem": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bew": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bex": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bez": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bfa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bfa2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bfd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bfo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bft": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bfw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bfy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bgc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bgn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bgp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bgq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bhb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bhi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bin": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bis": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bjj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bjn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bjn-ID": {
       "total": 18,
@@ -1167,39 +1165,39 @@
     },
     "bjt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bkm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bkn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "blk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "blt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bm-ML": {
       "total": 18,
@@ -1209,33 +1207,33 @@
     },
     "bmq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bn": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 3.5
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bnj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bns": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bo-CN": {
       "total": 18,
@@ -1245,39 +1243,39 @@
     },
     "box": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bpy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bqc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bqi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bqv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "br": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "br-FR": {
       "total": 18,
@@ -1287,15 +1285,15 @@
     },
     "bra": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "brx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "brx-IN": {
       "total": 18,
@@ -1305,9 +1303,9 @@
     },
     "bs": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 3.88
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bs-BA": {
       "total": 18,
@@ -1317,51 +1315,51 @@
     },
     "bsc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bsc2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bsh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bsq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bss": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bua": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bud": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bug": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bug-ID": {
       "total": 18,
@@ -1371,39 +1369,39 @@
     },
     "bum": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bwq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bwu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "byv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bza": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "bze": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ca-ES": {
       "total": 18,
@@ -1413,39 +1411,39 @@
     },
     "cak": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cbk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cce": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cdo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ce": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ceb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ceb-PH": {
       "total": 18,
@@ -1455,9 +1453,9 @@
     },
     "cgg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cgg-UG": {
       "total": 18,
@@ -1467,15 +1465,15 @@
     },
     "ch": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "che": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "che-RU": {
       "total": 18,
@@ -1485,63 +1483,63 @@
     },
     "chk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cho": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "chr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cjk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cjs": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cjy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ckb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cnh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cni": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "co": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "co-FR": {
       "total": 18,
@@ -1551,63 +1549,63 @@
     },
     "cos": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cps": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cre": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "crh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "crs": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "csb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "csk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ctg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "cv-RU": {
       "total": 18,
@@ -1629,39 +1627,39 @@
     },
     "daa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dan": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dar": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dav": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dcc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "de-AT": {
       "total": 18,
@@ -1677,27 +1675,27 @@
     },
     "dee": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dga": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dga2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dgo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dgo-IN": {
       "total": 18,
@@ -1707,99 +1705,99 @@
     },
     "dhd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dhn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "din": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dip": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dlg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dnj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "doi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dop": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dry": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dsb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dtp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dty": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dua": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dyo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dyu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dyu-CI": {
       "total": 18,
@@ -1809,9 +1807,9 @@
     },
     "dz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "dz-BT": {
       "total": 18,
@@ -1821,45 +1819,45 @@
     },
     "dzo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ebu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "edo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ee": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "efi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "egl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "emx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "en-BW": {
       "total": 18,
@@ -2025,9 +2023,9 @@
     },
     "eo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "es-AR": {
       "total": 18,
@@ -2151,15 +2149,15 @@
     },
     "etu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "eu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "eu-ES": {
       "total": 18,
@@ -2169,15 +2167,15 @@
     },
     "evn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ewe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ewe-GH": {
       "total": 18,
@@ -2187,33 +2185,33 @@
     },
     "ewo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ext": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fa": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 4.12
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fat": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ff": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ff-SN": {
       "total": 18,
@@ -2223,21 +2221,21 @@
     },
     "fij": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fit": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fj-FJ": {
       "total": 18,
@@ -2247,21 +2245,21 @@
     },
     "fkv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fon": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fr-BE": {
       "total": 18,
@@ -2427,33 +2425,33 @@
     },
     "frp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "frr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fub": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fuf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fur": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fur-IT": {
       "total": 18,
@@ -2463,21 +2461,21 @@
     },
     "fuv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "fy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ga": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ga-IE": {
       "total": 18,
@@ -2487,15 +2485,15 @@
     },
     "gaa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gag-MD": {
       "total": 18,
@@ -2505,117 +2503,117 @@
     },
     "gan": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gas": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gbj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gbk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gbm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gbo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gbr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gcf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gcr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gdx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gej": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gez": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gid": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gil": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gjn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gju": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gkp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gl-ES": {
       "total": 18,
@@ -2625,15 +2623,15 @@
     },
     "glk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gn-PY": {
       "total": 18,
@@ -2643,21 +2641,21 @@
     },
     "gng": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gog": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gom": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gom-IN": {
       "total": 18,
@@ -2667,9 +2665,9 @@
     },
     "gon": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gor-ID": {
       "total": 18,
@@ -2679,63 +2677,63 @@
     },
     "grj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "grn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "grt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gsw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gu": {
       "total": 18,
-      "reachable": 14,
-      "unreachable": 4,
-      "avg_depth": 3.14
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "guc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gud": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gutn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "guw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "guz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "guz-KE": {
       "total": 18,
@@ -2745,33 +2743,33 @@
     },
     "gv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gvr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gwc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "gwr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ha": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ha-NG": {
       "total": 18,
@@ -2781,123 +2779,123 @@
     },
     "hag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hak": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hat": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hay": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "haz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "heh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hif": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hil": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hmo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hnd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hne": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hnj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hnn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hno": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ho": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hoc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hoj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hsb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hsn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ht": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ht-HT": {
       "total": 18,
@@ -2907,9 +2905,9 @@
     },
     "hy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "hy-AM": {
       "total": 18,
@@ -2919,33 +2917,33 @@
     },
     "hz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ia": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ibb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "idu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ig": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ig-NG": {
       "total": 18,
@@ -2955,39 +2953,39 @@
     },
     "igl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ii": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ik": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ikt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "iku": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ilo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ilo-PH": {
       "total": 18,
@@ -2997,15 +2995,15 @@
     },
     "inh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "is": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "is-IS": {
       "total": 18,
@@ -3015,45 +3013,45 @@
     },
     "iu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ixl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "jam": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "jgo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "jmc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "jut": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "jv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "jv-ID": {
       "total": 18,
@@ -3063,15 +3061,15 @@
     },
     "jya": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ka": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ka-GE": {
       "total": 18,
@@ -3081,15 +3079,15 @@
     },
     "kaa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kab": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kab-DZ": {
       "total": 18,
@@ -3099,15 +3097,15 @@
     },
     "kac": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kam": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kam-KE": {
       "total": 18,
@@ -3117,219 +3115,219 @@
     },
     "kao": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kas": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kbd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kbn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kbp2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kby": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kcg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kck": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kdc2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kde": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kdh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kdj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kdq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kdr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kea": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kek": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kel": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "keo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ket": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kex": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kfe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kfq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kfr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kfx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kfy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kha": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "khb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "khw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ki": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kim": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kin": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kjh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kjo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kk-KZ": {
       "total": 18,
@@ -3339,21 +3337,21 @@
     },
     "kkj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kln": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kln-KE": {
       "total": 18,
@@ -3363,9 +3361,9 @@
     },
     "km": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "km-KH": {
       "total": 18,
@@ -3375,117 +3373,117 @@
     },
     "kmb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "knc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "knf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "koi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kok": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "koq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kpe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kpv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kpy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kqn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kqs": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "krc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kri": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "krj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "krl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kru": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ks": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ks-IN": {
       "total": 18,
@@ -3495,87 +3493,87 @@
     },
     "ksb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ksf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ksh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ksw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ktu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ku": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kum": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kus": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kvx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kxp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "kxv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ky": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ky-KG": {
       "total": 18,
@@ -3585,39 +3583,39 @@
     },
     "la": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lad": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "laj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "las": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lb-LU": {
       "total": 18,
@@ -3627,27 +3625,27 @@
     },
     "lbe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lep": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lez": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lg-UG": {
       "total": 18,
@@ -3657,69 +3655,69 @@
     },
     "lgg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "li": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lif": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lij": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "liv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lkt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lld": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lmn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lmo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ln": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lo-LA": {
       "total": 18,
@@ -3729,21 +3727,21 @@
     },
     "lom": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lot": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lrc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lt": {
       "total": 18,
@@ -3759,15 +3757,15 @@
     },
     "lu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lua": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lua-CD": {
       "total": 18,
@@ -3777,33 +3775,33 @@
     },
     "luc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lue": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lug": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lun": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "luo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "luo-KE": {
       "total": 18,
@@ -3813,21 +3811,21 @@
     },
     "lus": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "luy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "luz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "lv": {
       "total": 18,
@@ -3843,9 +3841,9 @@
     },
     "mad": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mad-ID": {
       "total": 18,
@@ -3861,9 +3859,9 @@
     },
     "mak": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mak-ID": {
       "total": 18,
@@ -3873,15 +3871,15 @@
     },
     "mam": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mas": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mas-KE": {
       "total": 18,
@@ -3891,51 +3889,51 @@
     },
     "maz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mcn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mcp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mcu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mdf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mdh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "men": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mer": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mer-KE": {
       "total": 18,
@@ -3945,51 +3943,51 @@
     },
     "meu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mfa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mfe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mfi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mfk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mfq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mfz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mg-MG": {
       "total": 18,
@@ -3999,33 +3997,33 @@
     },
     "mgh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mgo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mhr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mi-NZ": {
       "total": 18,
@@ -4035,9 +4033,9 @@
     },
     "min": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "min-ID": {
       "total": 18,
@@ -4047,27 +4045,27 @@
     },
     "mjl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mjt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mjz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mk": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 3.88
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mk-MK": {
       "total": 18,
@@ -4077,15 +4075,15 @@
     },
     "ml": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mn-MN": {
       "total": 18,
@@ -4095,9 +4093,9 @@
     },
     "mni": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mni-IN": {
       "total": 18,
@@ -4107,15 +4105,15 @@
     },
     "mnk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mnw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mnw-MM": {
       "total": 18,
@@ -4125,51 +4123,51 @@
     },
     "moh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mos": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mr": {
       "total": 18,
-      "reachable": 11,
-      "unreachable": 7,
-      "avg_depth": 3.27
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mrj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mrw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "msb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "msm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mt-MT": {
       "total": 18,
@@ -4179,45 +4177,45 @@
     },
     "mta": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mtr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mua": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mup": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mwl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mwr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "my": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "my-MM": {
       "total": 18,
@@ -4227,87 +4225,87 @@
     },
     "myk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "myv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "myx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mzn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "mzw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "na": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nan": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nap": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "naq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nav": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ncu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ndc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ndc-ZW": {
       "total": 18,
@@ -4317,27 +4315,27 @@
     },
     "nde": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ndh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nds": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ne": {
       "total": 18,
-      "reachable": 17,
-      "unreachable": 1,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ne-NP": {
       "total": 18,
@@ -4353,63 +4351,63 @@
     },
     "ng": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ngb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nhx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nia": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nij": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nim": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "niq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "niu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "niv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "njo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nl-BE": {
       "total": 18,
@@ -4419,57 +4417,57 @@
     },
     "nmg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nmz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nnh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nnq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nod": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "noe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nog": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nr-ZA": {
       "total": 18,
@@ -4479,15 +4477,15 @@
     },
     "nrf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nso": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nso-ZA": {
       "total": 18,
@@ -4497,21 +4495,21 @@
     },
     "ntr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nup": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nus": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nus-SS": {
       "total": 18,
@@ -4521,15 +4519,15 @@
     },
     "nv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ny": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ny-MW": {
       "total": 18,
@@ -4539,15 +4537,15 @@
     },
     "nya": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nyf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nym-TZ": {
       "total": 18,
@@ -4557,9 +4555,9 @@
     },
     "nyn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nyn-UG": {
       "total": 18,
@@ -4569,27 +4567,27 @@
     },
     "nyo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "nzi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "obo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "oc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "oc-FR": {
       "total": 18,
@@ -4599,39 +4597,39 @@
     },
     "oci": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "odk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "oj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "oji": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "olo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "om": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "om-ET": {
       "total": 18,
@@ -4641,15 +4639,15 @@
     },
     "or": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "os": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "os-RU": {
       "total": 18,
@@ -4659,21 +4657,21 @@
     },
     "ovd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pa": {
       "total": 18,
-      "reachable": 16,
-      "unreachable": 2,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pag-PH": {
       "total": 18,
@@ -4683,9 +4681,9 @@
     },
     "pam": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pam-PH": {
       "total": 18,
@@ -4695,99 +4693,99 @@
     },
     "pap": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pau": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pcd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pce": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pcm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pfl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pis": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pko": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pms": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pmu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pnb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "poh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "pon": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "prs": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "prv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ps": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ps-AF": {
       "total": 18,
@@ -4821,21 +4819,21 @@
     },
     "pwo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "qom": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "qu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "qu-PE": {
       "total": 18,
@@ -4845,81 +4843,81 @@
     },
     "quc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "que": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "quz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rag": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rag2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rap": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rej": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rgn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rif": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rim": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rki": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rkt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rm-CH": {
       "total": 18,
@@ -4929,63 +4927,63 @@
     },
     "rmc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rmn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rmy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rof": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rop": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rue": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "run": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rup": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "rw-RW": {
       "total": 18,
@@ -4995,27 +4993,27 @@
     },
     "rwk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "saf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sah": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sah-RU": {
       "total": 18,
@@ -5025,21 +5023,21 @@
     },
     "saq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sas": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sat": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sat-IN": {
       "total": 18,
@@ -5049,21 +5047,21 @@
     },
     "sba": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sbp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sc": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sc-IT": {
       "total": 18,
@@ -5079,15 +5077,15 @@
     },
     "sck": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "scn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "scn-IT": {
       "total": 18,
@@ -5097,15 +5095,15 @@
     },
     "sco": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sd-PK": {
       "total": 18,
@@ -5115,69 +5113,69 @@
     },
     "sdh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sdr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "se": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sef": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "seh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sg2": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sgj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "shi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "shk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "shn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "shn-MM": {
       "total": 18,
@@ -5187,15 +5185,15 @@
     },
     "shp": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "si": {
       "total": 18,
-      "reachable": 17,
-      "unreachable": 1,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "si-LK": {
       "total": 18,
@@ -5205,39 +5203,39 @@
     },
     "sid": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sip": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sje": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sju": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "skr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sl": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 4.12
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sm-WS": {
       "total": 18,
@@ -5247,33 +5245,33 @@
     },
     "sma": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "smj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "smn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sms": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sn-ZW": {
       "total": 18,
@@ -5283,27 +5281,27 @@
     },
     "snf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "snk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "snn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "so": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "so-SO": {
       "total": 18,
@@ -5313,15 +5311,15 @@
     },
     "sou": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sq": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 3.88
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sq-AL": {
       "total": 18,
@@ -5331,9 +5329,9 @@
     },
     "sr": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 4.12
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sr-ME": {
       "total": 18,
@@ -5343,27 +5341,27 @@
     },
     "srd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "srn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "srx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ss": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ss-SZ": {
       "total": 18,
@@ -5373,9 +5371,9 @@
     },
     "st": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "st-ZA": {
       "total": 18,
@@ -5385,9 +5383,9 @@
     },
     "su": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "su-ID": {
       "total": 18,
@@ -5397,15 +5395,15 @@
     },
     "suk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sus": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sw": {
       "total": 18,
@@ -5421,9 +5419,9 @@
     },
     "swb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "swc-CD": {
       "total": 18,
@@ -5433,99 +5431,99 @@
     },
     "swg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "swv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "sxu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "syl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "szl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ta": {
       "total": 18,
-      "reachable": 8,
-      "unreachable": 10,
-      "avg_depth": 3.5
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tab": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tay": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tbl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tbw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tcy": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tdb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tdg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "te": {
       "total": 18,
-      "reachable": 11,
-      "unreachable": 7,
-      "avg_depth": 3.27
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tem": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "teo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "teo-UG": {
       "total": 18,
@@ -5535,15 +5533,15 @@
     },
     "tet": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tg-TJ": {
       "total": 18,
@@ -5553,33 +5551,33 @@
     },
     "the": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "thk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "thl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "thq": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ti": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ti-ER": {
       "total": 18,
@@ -5589,27 +5587,27 @@
     },
     "tig": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tik": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tiv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tk": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tk-TM": {
       "total": 18,
@@ -5619,9 +5617,9 @@
     },
     "tl": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tl-PH": {
       "total": 18,
@@ -5631,15 +5629,15 @@
     },
     "tly": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tn": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tn-ZA": {
       "total": 18,
@@ -5649,15 +5647,15 @@
     },
     "tnr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "to": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "to-TO": {
       "total": 18,
@@ -5667,21 +5665,21 @@
     },
     "toi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "toj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ton": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "topic-hubs": {
       "total": 18,
@@ -5691,15 +5689,15 @@
     },
     "tpi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ts": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ts-ZA": {
       "total": 18,
@@ -5709,21 +5707,21 @@
     },
     "tsg": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tsj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tt": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tt-RU": {
       "total": 18,
@@ -5733,33 +5731,33 @@
     },
     "ttj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tts": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tui": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tum": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tw": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tw-GH": {
       "total": 18,
@@ -5769,15 +5767,15 @@
     },
     "twd": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "twi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "twi-GH": {
       "total": 18,
@@ -5787,51 +5785,51 @@
     },
     "ty": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tyv": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tzh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tzj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tzm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "tzo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "udm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ug": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ug-CN": {
       "total": 18,
@@ -5841,33 +5839,33 @@
     },
     "unr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "unx": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ur": {
       "total": 18,
-      "reachable": 7,
-      "unreachable": 11,
-      "avg_depth": 4.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "urh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "uz": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "uz-UZ": {
       "total": 18,
@@ -5877,21 +5875,21 @@
     },
     "vah": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vai": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ve": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ve-ZA": {
       "total": 18,
@@ -5901,9 +5899,9 @@
     },
     "vec": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vec-IT": {
       "total": 18,
@@ -5913,45 +5911,45 @@
     },
     "vid": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vls": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vmf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vro": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "vun": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wa": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wa-BE": {
       "total": 18,
@@ -5961,21 +5959,21 @@
     },
     "wae": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wal": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "war": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "war-PH": {
       "total": 18,
@@ -5985,33 +5983,33 @@
     },
     "wbm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wbr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wep": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wln": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wo-SN": {
       "total": 18,
@@ -6021,39 +6019,39 @@
     },
     "wob": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wol": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wtm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "wuu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xal": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xh-ZA": {
       "total": 18,
@@ -6063,33 +6061,33 @@
     },
     "xka": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xmf": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xnj": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xnr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xog": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xog-UG": {
       "total": 18,
@@ -6099,51 +6097,51 @@
     },
     "xon": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xpe": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "xsr": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yav": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ybb": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yi": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "ymm": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yo": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yo-NG": {
       "total": 18,
@@ -6153,51 +6151,51 @@
     },
     "yom": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yre": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yua": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "yue": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "za": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "zea": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "zga": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "zgh": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "zgh-MA": {
       "total": 18,
@@ -6207,9 +6205,9 @@
     },
     "zu": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "zu-ZA": {
       "total": 18,
@@ -6219,9 +6217,9 @@
     },
     "zza": {
       "total": 18,
-      "reachable": 18,
-      "unreachable": 0,
-      "avg_depth": 3.0
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
     },
     "root": {
       "total": 11,
@@ -6295,93 +6293,48 @@
   "fully_orphaned_section_min_pages": 20,
   "indexable_orphan_sections": [],
   "indexable_orphan_section_count": 0,
-  "sections_min_depth_over_3": [
-    "af:best-for",
-    "af:reviews",
-    "af:seasonal",
-    "af:vs",
-    "bg:best-for",
-    "bg:reviews",
-    "bg:seasonal",
-    "bg:vs",
-    "bn:best-for",
-    "bn:reviews",
-    "bn:seasonal",
-    "bs:best-for",
-    "bs:reviews",
-    "bs:seasonal",
-    "bs:vs",
-    "fa:best-for",
-    "fa:reviews",
-    "fa:seasonal",
-    "fa:vs",
-    "mk:best-for",
-    "mk:reviews",
-    "mk:seasonal",
-    "mk:vs",
-    "mr:reviews",
-    "sl:best-for",
-    "sl:reviews",
-    "sl:seasonal",
-    "sl:vs",
-    "sq:best-for",
-    "sq:reviews",
-    "sq:seasonal",
-    "sq:vs",
-    "sr:best-for",
-    "sr:reviews",
-    "sr:seasonal",
-    "sr:vs",
-    "ta:best-for",
-    "ta:reviews",
-    "ta:seasonal",
-    "te:reviews",
-    "ur:best-for",
-    "ur:reviews",
-    "ur:seasonal",
-    "ur:vs"
-  ],
+  "sections_min_depth_over_3": [],
   "unreachable_samples": [
-    "https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-document-mask-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-passport-photo-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-photo-hide-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-scan-offline-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-social-block-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/reviews/maskmyfile-review-2026-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/reviews/scanto-review-2026-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/reviews/snapport-review-2026-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/reviews/zafe-review-2026-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-school-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-summer-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-year-end-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/vs/scanto-vs-apple-notes-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/vs/snapport-vs-photographer-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/vs/zafe-vs-hidden-album-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-privacy-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-workflow-freelancer-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-workflow-student-ace-id.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-document-mask-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-passport-photo-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-photo-hide-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-scan-offline-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-social-block-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/reviews/maskmyfile-review-2026-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/reviews/scanto-review-2026-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/reviews/snapport-review-2026-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/reviews/zafe-review-2026-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/seasonal/iphone-apps-school-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/seasonal/iphone-apps-summer-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/seasonal/iphone-apps-year-end-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/vs/scanto-vs-apple-notes-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/vs/snapport-vs-photographer-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/vs/zafe-vs-hidden-album-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/workflow/iphone-privacy-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/workflow/iphone-workflow-freelancer-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/ach-UG/workflow/iphone-workflow-student-ach-ug.html",
-    "https://open.cait518.cc/ios-app-guide/af-ZA/best-for/iphone-best-app-document-mask-af-za.html",
-    "https://open.cait518.cc/ios-app-guide/af-ZA/best-for/iphone-best-app-passport-photo-af-za.html",
-    "https://open.cait518.cc/ios-app-guide/af-ZA/best-for/iphone-best-app-photo-hide-af-za.html",
-    "https://open.cait518.cc/ios-app-guide/af-ZA/best-for/iphone-best-app-scan-offline-af-za.html"
+    "https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-document-mask-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-passport-photo-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-photo-hide-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-scan-offline-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/best-for/iphone-best-app-social-block-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/reviews/maskmyfile-review-2026-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/reviews/scanto-review-2026-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/reviews/snapport-review-2026-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/reviews/zafe-review-2026-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/seasonal/iphone-apps-school-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/seasonal/iphone-apps-summer-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/seasonal/iphone-apps-year-end-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/vs/scanto-vs-apple-notes-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/vs/snapport-vs-photographer-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/vs/zafe-vs-hidden-album-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/workflow/iphone-privacy-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/workflow/iphone-workflow-freelancer-aa.html",
+    "https://open.cait518.cc/ios-app-guide/aa/workflow/iphone-workflow-student-aa.html",
+    "https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-document-mask-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-passport-photo-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-photo-hide-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-scan-offline-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/best-for/iphone-best-app-social-block-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/reviews/maskmyfile-review-2026-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/reviews/scanto-review-2026-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/reviews/snapport-review-2026-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/reviews/zafe-review-2026-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/seasonal/iphone-apps-school-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/seasonal/iphone-apps-summer-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/seasonal/iphone-apps-year-end-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/vs/scanto-vs-apple-notes-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/vs/snapport-vs-photographer-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/vs/zafe-vs-hidden-album-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/workflow/iphone-privacy-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/workflow/iphone-workflow-freelancer-ab.html",
+    "https://open.cait518.cc/ios-app-guide/ab/workflow/iphone-workflow-student-ab.html",
+    "https://open.cait518.cc/ios-app-guide/abr/best-for/iphone-best-app-document-mask-abr.html",
+    "https://open.cait518.cc/ios-app-guide/abr/best-for/iphone-best-app-passport-photo-abr.html",
+    "https://open.cait518.cc/ios-app-guide/abr/best-for/iphone-best-app-photo-hide-abr.html",
+    "https://open.cait518.cc/ios-app-guide/abr/best-for/iphone-best-app-scan-offline-abr.html"
   ],
-  "read_mb": 1035.3
+  "read_mb": 993.4
 }

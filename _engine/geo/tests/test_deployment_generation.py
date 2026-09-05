@@ -65,6 +65,7 @@ class DeploymentGenerationTests(unittest.TestCase):
             _write(self.source, f"geo/{name}", body)
             _write(self.site, f"_engine/geo/{name}", body)
         _write(self.source, "README.md", b"Canonical source\n")
+        _write(self.source, "agent/state.json", b'{"tick": 1}\n')
         _write(self.site, ".github/workflows/pages.yml", b"name: Pages\n")
         _write(self.site, "_engine/geo/i18n_trans/en-US.json", b'{"cache": 1}\n')
         _commit(self.source)
@@ -138,7 +139,58 @@ class DeploymentGenerationTests(unittest.TestCase):
             with self.subTest(identity=identity["run_id"]):
                 proof = generation.seal_generation(identity, self.outputs)
                 self.assertNotEqual(self.proof["generation_id"], proof["generation_id"])
+                self.assertNotEqual(self.proof["execution_generation_id"], proof["execution_generation_id"])
+                self.assertEqual(self.proof["measurement_generation_id"], proof["measurement_generation_id"])
                 self.assertEqual(self.proof["manifest_digest"], proof["manifest_digest"])
+
+    def test_measurement_identity_changes_with_each_content_or_dependency_input(self):
+        for key in sorted(generation.MEASUREMENT_FIELDS):
+            with self.subTest(field=key):
+                changed = dict(self.proof)
+                changed[key] = ("0" if changed[key][0] != "0" else "1") + changed[key][1:]
+                resealed = generation.seal_generation(changed, {})
+                self.assertNotEqual(self.proof["measurement_generation_id"], resealed["measurement_generation_id"])
+
+    def test_run_tampering_is_rejected_even_when_measurement_identity_is_unchanged(self):
+        for field, value in (("run_id", "other-run"), ("run_attempt", "2")):
+            with self.subTest(field=field):
+                forged = {**self.proof, field: value}
+                self.assertEqual(self.proof["measurement_generation_id"], forged["measurement_generation_id"])
+                with self.assertRaises(generation.GenerationError):
+                    generation.validate_generation(forged)
+
+    def test_legacy_generation_remains_readable_with_explicit_identity_adapters(self):
+        legacy = {key: self.proof[key] for key in generation.LEGACY_GENERATION_FIELDS}
+        legacy["schema_version"] = 1
+        legacy["generation_id"] = generation.digest({
+            key: value for key, value in legacy.items() if key != "generation_id"
+        })
+        self.assertEqual(legacy, generation.validate_generation(legacy))
+        identifiers = generation.lineage_ids(legacy)
+        self.assertEqual(legacy["generation_id"], identifiers["execution_generation_id"])
+        self.assertEqual(self.proof["measurement_generation_id"], identifiers["measurement_generation_id"])
+
+    def test_consumers_ignore_unrelated_dirty_runtime_state_but_prepare_refuses_it(self):
+        for relative in ("agent/state.json", "README.md"):
+            with self.subTest(path=relative):
+                original = (self.source / relative).read_bytes()
+                try:
+                    _write(self.source, relative, b"uncommitted runtime update\n")
+                    current = generation.validate_current_source(self.proof, self.source)
+                    self.assertEqual(self.identity["source_sha"], current["source_sha"])
+                    with self.assertRaisesRegex(generation.GenerationError, "dirty"):
+                        generation.source_identity(self.source, mode="prepare")
+                finally:
+                    _write(self.source, relative, original)
+        with self.assertRaisesRegex(generation.GenerationError, "mode"):
+            generation.source_identity(self.source, mode="unrestricted")
+
+    def test_pages_outputs_are_excluded_from_both_source_modes(self):
+        _write(self.source, "geo/pages/index.html", b"generated Guide output\n")
+        for mode in ("prepare", "consumer"):
+            with self.subTest(mode=mode):
+                current = generation.source_identity(self.source, mode=mode)
+                self.assertTrue(all(current[key] == self.proof[key] for key in generation.SOURCE_FIELDS))
 
     def test_uncommitted_modified_added_and_deleted_sources_invalidate(self):
         target = self.source / "geo/high_intent_decision_routes.py"
@@ -198,6 +250,10 @@ class DeploymentGenerationTests(unittest.TestCase):
         self.assertEqual(self.identity["mirror_digest"], current["mirror_digest"])
         self.assertNotEqual(self.identity["mirror_inputs_digest"], current["mirror_inputs_digest"])
         self.assertNotEqual(self.identity["build_config_digest"], current["build_config_digest"])
+        self.assertEqual(
+            self.proof["measurement_generation_id"],
+            generation.seal_generation(current, self.outputs)["measurement_generation_id"],
+        )
 
     def test_configuration_changes_invalidate_generation(self):
         _write(self.site, ".github/workflows/pages.yml", b"name: New Pages\n")
@@ -381,7 +437,7 @@ class DeploymentGenerationTests(unittest.TestCase):
         def fetch(url, **kwargs):
             result = self.fetch(url, **kwargs)
             if generation.CATALOG_PATH in url:
-                (self.source / "README.md").write_bytes(b"changed during GET\n")
+                (self.source / "geo/high_intent_decision_routes.py").write_bytes(b"# changed during GET\n")
             return result
         with self.assertRaisesRegex(generation.GenerationError, "dirty"):
             self.readback(fetch=fetch)

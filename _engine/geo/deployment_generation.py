@@ -25,6 +25,7 @@ from urllib.request import Request, urlopen
 
 
 VERSION = 1
+GENERATION_SCHEMA_VERSION = 2
 DEPLOYMENT_PATH = ".well-known/deployment.json"
 MANIFEST_PATH = "data/high-intent-decision-routes/expected-output-manifest.json"
 CATALOG_PATH = "data/verified-ios-app-finder-catalog.json"
@@ -38,9 +39,17 @@ DIGEST_FIELDS = {
     "manifest_file_digest", "catalog_digest", "outputs_digest",
     "dependency_environment_digest",
 }
-GENERATION_FIELDS = SOURCE_FIELDS | DIGEST_FIELDS | {
+LEGACY_GENERATION_FIELDS = SOURCE_FIELDS | DIGEST_FIELDS | {
     "schema_version", "scope", "pages_source_sha", "pages_source_tree",
     "run_id", "run_attempt", "generation_id",
+}
+GENERATION_ID_FIELDS = {
+    "generation_id", "execution_generation_id", "measurement_generation_id",
+}
+GENERATION_FIELDS = LEGACY_GENERATION_FIELDS | GENERATION_ID_FIELDS
+MEASUREMENT_FIELDS = SOURCE_FIELDS | {
+    "dependency_environment_digest", "mirror_digest", "manifest_digest",
+    "catalog_digest", "outputs_digest",
 }
 
 
@@ -129,14 +138,17 @@ def _files(root: Path, paths: list[str]) -> list[dict[str, str]]:
     ]
 
 
-def source_identity(root: Path) -> dict[str, str]:
-    """Every commit or dirty source invalidates evidence, including non-mirrors."""
+def source_identity(root: Path, *, mode: str = "prepare") -> dict[str, str]:
+    """Preparation is pristine; consumers ignore unrelated working runtime state."""
+    if mode not in {"prepare", "consumer"}:
+        raise GenerationError("source identity mode must be prepare or consumer")
     root = root.resolve()
     revision, tree = _repository(root)
     # geo/pages is a separate output repository, not GrowthEngine source.
     status_args = (
         "status", "--porcelain=v1", "--untracked-files=all",
-        "--ignore-submodules=all", "--", ".", ":(exclude)geo/pages",
+        "--ignore-submodules=all", "--",
+        "." if mode == "prepare" else "geo", ":(exclude)geo/pages",
     )
     if _git(root, *status_args):
         raise GenerationError("GrowthEngine source is dirty; previous evidence is invalid")
@@ -188,7 +200,7 @@ def build_identity(
         raise GenerationError("run_id must explicitly identify this build")
     if not re.fullmatch(r"[1-9][0-9]*", run_attempt):
         raise GenerationError("run_attempt must be a positive integer")
-    source = source_identity(source_root)
+    source = source_identity(source_root, mode="prepare")
     revision, tree = _repository(site_root)
     status_args = ("status", "--porcelain=v1", "--untracked-files=all",
                    "--", ".github", "_engine")
@@ -210,7 +222,7 @@ def build_identity(
         static.append(entry)
     config_paths = _paths(site_root, ".github", "_engine")
     result = {
-        "schema_version": VERSION,
+        "schema_version": GENERATION_SCHEMA_VERSION,
         "scope": "high_intent_route_closure",
         **source,
         "pages_source_sha": revision,
@@ -274,21 +286,32 @@ def output_identity(site_root: Path) -> dict[str, str]:
 
 
 def seal_generation(identity: dict[str, Any], outputs: dict[str, str]) -> dict[str, Any]:
-    generation = {**identity, **outputs}
-    generation["generation_id"] = digest(generation)
+    generation = {
+        key: value for key, value in {**identity, **outputs}.items()
+        if key not in GENERATION_ID_FIELDS
+    }
+    generation["schema_version"] = GENERATION_SCHEMA_VERSION
+    generation["measurement_generation_id"] = _measurement_digest(generation)
+    execution_id = digest(generation)
+    generation["execution_generation_id"] = execution_id
+    generation["generation_id"] = execution_id
     validate_generation(generation)
     return generation
 
 
 def validate_generation(value: Any) -> dict[str, Any]:
-    if not isinstance(value, dict) or set(value) != GENERATION_FIELDS:
+    if not isinstance(value, dict):
         raise GenerationError("missing or unsupported deployment generation")
+    version = value.get("schema_version")
+    expected_fields = LEGACY_GENERATION_FIELDS if version == 1 else GENERATION_FIELDS
+    if type(version) is not int or version not in {1, GENERATION_SCHEMA_VERSION} or set(value) != expected_fields:
+        raise GenerationError("missing or unsupported deployment generation")
+    identity_fields = {"generation_id"} if version == 1 else GENERATION_ID_FIELDS
     if (
-        type(value["schema_version"]) is not int or value["schema_version"] != VERSION
-        or value["scope"] != "high_intent_route_closure"
+        value["scope"] != "high_intent_route_closure"
         or any(not isinstance(value[key], str) or
                not re.fullmatch(r"[0-9a-f]{64}", value[key])
-               for key in DIGEST_FIELDS | {"generation_id"})
+               for key in DIGEST_FIELDS | identity_fields)
         or any(not isinstance(value[key], str) or
                not re.fullmatch(r"(?:[0-9a-f]{40}|[0-9a-f]{64})", value[key])
                for key in {"source_sha", "source_tree", "pages_source_sha", "pages_source_tree"})
@@ -296,12 +319,38 @@ def validate_generation(value: Any) -> dict[str, Any]:
         or not re.fullmatch(r"[A-Za-z0-9_.:-]{1,160}", value["run_id"])
         or not isinstance(value["run_attempt"], str)
         or not re.fullmatch(r"[1-9][0-9]*", value["run_attempt"])
-        or value["generation_id"] != digest({
-            key: item for key, item in value.items() if key != "generation_id"
-        })
     ):
         raise GenerationError("deployment generation is invalid")
+    excluded = {"generation_id"}
+    if version == GENERATION_SCHEMA_VERSION:
+        excluded.add("execution_generation_id")
+        if (
+            value["measurement_generation_id"] != _measurement_digest(value)
+            or value["generation_id"] != value["execution_generation_id"]
+        ):
+            raise GenerationError("deployment generation identities differ")
+    if value["generation_id"] != digest({
+        key: item for key, item in value.items() if key not in excluded
+    }):
+        raise GenerationError("deployment generation is invalid")
     return value
+
+
+def _measurement_digest(value: dict[str, Any]) -> str:
+    return digest({
+        "measurement_contract_version": 1,
+        "scope": value["scope"],
+        "inputs": {key: value[key] for key in sorted(MEASUREMENT_FIELDS)},
+    })
+
+
+def lineage_ids(value: dict[str, Any]) -> dict[str, str]:
+    validate_generation(value)
+    return {
+        "generation_id": value["generation_id"],
+        "execution_generation_id": value.get("execution_generation_id", value["generation_id"]),
+        "measurement_generation_id": value.get("measurement_generation_id", _measurement_digest(value)),
+    }
 
 
 def validate_binding(document: dict[str, Any]) -> dict[str, Any]:
@@ -319,7 +368,7 @@ def validate_current_source(
     generation: dict[str, Any], source_root: Path,
 ) -> dict[str, str]:
     validate_generation(generation)
-    current = source_identity(source_root)
+    current = source_identity(source_root, mode="consumer")
     if any(current[key] != generation[key] for key in SOURCE_FIELDS):
         raise GenerationError("source changed; previous generation evidence is invalid")
     return current

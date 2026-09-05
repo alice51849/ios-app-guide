@@ -15,8 +15,13 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 from app_store_storefronts import campaign_app_store_url
+from hero_task_html import (
+    generated_index, insert_resource, require_retirable_index,
+    useful_navigation, without_resource,
+)
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE
+from sync_standard_site import preserve_managed_links
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
@@ -286,7 +291,7 @@ def purchase_row(copy: dict, item: dict, index: int, result: dict | None = None)
 
 
 def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
-                modified: str, site: str, assets: dict) -> str:
+                modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
     esc = html.escape
     url = f"{site}/{resource_path(task, locale)}"
     csv_url = f"{site}/{example_path(task, locale)}"
@@ -322,6 +327,10 @@ def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[di
     prefix = urlsplit(site).path.rstrip("/")
     asset = {key: f"{prefix}/{value}" for key, value in assets.items()}
     direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
     calculation = (
         " + ".join(f"{item['quantity']} × {item['price']}" for item in sample["input"]["items"])
         + f" = {number(result['total_minor'] / 100)}\n"
@@ -358,7 +367,7 @@ def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[di
 <script src="{asset['ui']}" defer></script>
 </head>
 <body><main>
-<nav><a href="{site}/{locale}/tools/index.html">{esc(copy['tools'])}</a><span>Lumi Studio</span></nav>
+<nav>{back_link}<span>Lumi Studio</span></nav>
 <h1>{esc(copy['item'])} · {esc(copy['hours'])}</h1><p>{esc(copy['intro'])}</p>
 <section class="panel" aria-label="{esc(copy['title'], quote=True)}">
 <form id="hero-form" autocomplete="off">
@@ -410,48 +419,65 @@ def resource_block(locale: str, tasks: list[dict], copy: dict, site: str) -> str
     return f'<!-- {MARKER}:start --><section class="hero-resource" data-primary-resource="hero-task">{cards}</section><!-- {MARKER}:end -->'
 
 
-def insert_block(document: str, block: str) -> str:
-    document = re.sub(
-        rf"<!-- {MARKER}:start -->.*?<!-- {MARKER}:end -->(?:\r?\n)?",
-        "", document, flags=re.S,
-    )
-    match = re.search(r"<main\b[^>]*>", document, re.I)
-    if match is None:
-        match = re.search(r"<body\b[^>]*>", document, re.I)
-    if match is None:
-        raise ValueError("No safe main/body insertion point")
-    return document[:match.end()] + "\n" + block + "\n" + document[match.end():].lstrip("\n")
+def insert_block(document: str, block: str, *, index: bool = False, label: str = "") -> str:
+    return insert_resource(document, block, MARKER, index=index, label=label)
 
 
-def integrate(pages: Path, tasks: list[dict], copy: dict, apps: dict, site: str, assets: dict) -> dict[str, str]:
+def retired_indexes(pages: Path, previous: dict, site: str) -> list[str]:
+    allowed = {f"{locale}/tools/index.html" for locale in OFFICIAL_LOCALES}
+    retired = set(previous.get("retired_indexes", []))
+    if not retired <= allowed:
+        raise ValueError("Invalid retired hero-task index path")
+    for locale in OFFICIAL_LOCALES:
+        relative = f"{locale}/tools/index.html"
+        path = safe_path(pages, relative)
+        if not path.is_file():
+            continue
+        source = path.read_text(encoding="utf-8")
+        if generated_index(source):
+            require_retirable_index(source, MARKER, label=relative)
+            retired.add(relative)
+        elif useful_navigation(source, locale, f"{site}/{relative}", MARKER, tools=True):
+            retired.discard(relative)
+        elif relative in retired:
+            raise ValueError(f"Retired index reappeared without verified ownership or useful content: {relative}")
+    return sorted(retired)
+
+
+def navigation_target(pages: Path, locale: str, copy: dict, site: str) -> dict | None:
+    for relative, tools in (
+        (f"{locale}/tools/index.html", True),
+        (f"{locale}/index.html", False),
+        (f"{locale}/hubs/index.html", False),
+    ):
+        path = safe_path(pages, relative)
+        if path.is_file() and useful_navigation(
+            path.read_text(encoding="utf-8"), locale, f"{site}/{relative}", MARKER, tools=tools
+        ):
+            return {"path": relative, "label": copy["tools"] if tools else "iOS App Guide"}
+    return None
+
+
+def integrate(pages: Path, tasks: list[dict], copy: dict, apps: dict, site: str) -> dict[str, str]:
     changes = {}
     for locale in OFFICIAL_LOCALES:
         index = f"{locale}/tools/index.html"
         path = safe_path(pages, index)
-        source = path.read_text(encoding="utf-8") if path.exists() else (
-            f'<!doctype html><html lang="{locale}" dir="{"rtl" if locale in RTL else "ltr"}">'
-            '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            '<meta name="hero-tools-index" content="v1">'
-            f'<title>{html.escape(copy[locale]["tools"])}</title><link rel="canonical" href="{site}/{index}">'
-            f'<link rel="alternate" type="application/feed+json" href="{site}/{feed_path(locale)}">'
-            f'<link rel="stylesheet" href="{urlsplit(site).path.rstrip("/")}/{assets["css"]}">'
-            '</head><body><main>'
-            f'<h1>{html.escape(copy[locale]["tools"])}</h1></main></body></html>'
-        )
-        if '<meta name="hero-tools-index" content="v1">' in source:
-            source = re.sub(
-                r'<link rel="stylesheet" href="[^"]+/assets/hero-tasks/[^"]+">',
-                f'<link rel="stylesheet" href="{urlsplit(site).path.rstrip("/")}/{assets["css"]}">',
-                source,
-            )
-        block = resource_block(locale, tasks, copy[locale], site)
-        changes[index] = insert_block(source, block)
+        if path.is_file():
+            source = path.read_text(encoding="utf-8")
+            if not generated_index(source):
+                block = resource_block(locale, tasks, copy[locale], site)
+                changes[index] = (
+                    insert_block(source, block, index=True, label=index)
+                    if useful_navigation(source, locale, f"{site}/{index}", MARKER, tools=True)
+                    else without_resource(source, MARKER)
+                )
         for task in tasks:
             own_block = resource_block(locale, [task], copy[locale], site)
             for key in task["apps"]:
                 answer = apps[(locale, key)]["answer_path"]
                 source = changes.get(answer) or safe_path(pages, answer).read_text(encoding="utf-8")
-                changes[answer] = insert_block(source, own_block)
+                changes[answer] = insert_block(source, own_block, label=answer)
     return changes
 
 
@@ -478,6 +504,7 @@ def manifest_schema() -> dict:
                 "type": "string", "pattern": "^[0-9a-f]{64}$",
             }},
             "integrations": {"type": "array", "uniqueItems": True, "items": {"type": "string"}},
+            "retired_indexes": {"type": "array", "uniqueItems": True, "items": {"type": "string"}},
         },
     }
 
@@ -508,6 +535,10 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         raise ValueError("Invalid build date")
     tasks, copy = load_registry(registry), load_i18n(i18n)
     inventory, apps = catalogs(pages, tasks, site, provider)
+    previous_path = safe_path(pages, MANIFEST)
+    previous = json.loads(previous_path.read_text()) if previous_path.is_file() else {}
+    retired = retired_indexes(pages, previous, site)
+    navigation = {locale: navigation_target(pages, locale, copy[locale], site) for locale in OFFICIAL_LOCALES}
     calculated = examples(tasks, copy)
     assets = {
         key: f"assets/hero-tasks/{digest(path.read_bytes())[:16]}-{path.name}"
@@ -516,13 +547,12 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
     source_digest = digest(json_text({
         "sources": {
             str(path.name): digest(path.read_bytes())
-            for path in (Path(__file__), registry, i18n, CORE, UI, CSS)
+            for path in (Path(__file__), registry, i18n, CORE, UI, CSS,
+                         HERE / "hero_task_html.py", HERE / "sync_standard_site.py")
         },
         "inventory": sorted(inventory), "bindings": list(apps.values()),
-        "site": site, "provider": provider,
+        "site": site, "provider": provider, "navigation": navigation, "retired_indexes": retired,
     }).encode())
-    previous_path = safe_path(pages, MANIFEST)
-    previous = json.loads(previous_path.read_text()) if previous_path.is_file() else {}
     modified = today
     if previous.get("content_digest") == source_digest:
         previous_date = previous["date_modified"]
@@ -540,7 +570,10 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
                 key=lambda app: (app["purchase_model"] != "free_with_lifetime_unlock", app["key"]),
             )
             relative = resource_path(task, locale)
-            page = render_page(task, locale, copy[locale], sample, optional, modified, site, assets)
+            page = render_page(task, locale, copy[locale], sample, optional, modified, site, assets, navigation[locale])
+            existing_path = safe_path(pages, relative)
+            existing = existing_path.read_text(encoding="utf-8") if existing_path.is_file() else ""
+            page = preserve_managed_links(existing, page, label=relative)
             outputs[relative] = page.encode()
             csv_path = example_path(task, locale)
             outputs[csv_path] = sample["csv"].encode()
@@ -548,6 +581,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
                 "task_id": task["id"], "adapter": task["adapter"], "locale": locale,
                 "url": f"{site}/{relative}", "path": relative,
                 "example_url": f"{site}/{csv_path}",
+                "navigation_url": f"{site}/{navigation[locale]['path']}" if navigation[locale] else None,
                 "apps": [{"key": app["key"], "app_store_url": app["app_store_url"]} for app in optional],
             }
             records.append(record)
@@ -561,7 +595,11 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
             })
         outputs[feed_path(locale)] = json_text({
             "version": "https://jsonfeed.org/version/1.1", "title": copy[locale]["feed"],
-            "home_page_url": f"{site}/{locale}/tools/index.html", "feed_url": f"{site}/{feed_path(locale)}",
+            "home_page_url": (
+                f"{site}/{navigation[locale]['path']}" if navigation[locale]
+                else f"{site}/{resource_path(tasks[0], locale)}"
+            ),
+            "feed_url": f"{site}/{feed_path(locale)}",
             "language": locale, "authors": [{"name": "Lumi Studio", "url": site}], "items": feed_items,
         }).encode()
     outputs[SITEMAP] = (
@@ -571,7 +609,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         + "</urlset>\n"
     ).encode()
     outputs[SCHEMA] = json_text(manifest_schema()).encode()
-    integrations = integrate(pages, tasks, copy, apps, site, assets)
+    integrations = integrate(pages, tasks, copy, apps, site)
     root_path = safe_path(pages, "sitemap_index.xml")
     root_xml = root_path.read_text() if root_path.exists() else f'<sitemapindex xmlns="{NAMESPACE}"></sitemapindex>'
     integrations["sitemap_index.xml"] = sitemap_index(root_xml, site, modified)
@@ -584,7 +622,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         "scope": "reviewed_adapters_only", "measured_search_volume": False,
         "task_count": len(tasks), "app_locale_pairs": len(supported) * 50,
         "records": records, "outputs": {path: digest(content) for path, content in sorted(outputs.items())},
-        "integrations": sorted(integrations),
+        "integrations": sorted(integrations), "retired_indexes": retired,
     }
     outputs[MANIFEST] = json_text(manifest).encode()
     outputs.update({path: text.encode() for path, text in integrations.items()})
@@ -597,6 +635,13 @@ def build(pages: Path = DEFAULT_PAGES, *, check: bool = False, **kwargs) -> dict
     previous_path = safe_path(pages, MANIFEST)
     previous = json.loads(previous_path.read_text()) if previous_path.is_file() else {}
     manifest, outputs = plan(pages, **kwargs)
+    retiring = {}
+    for relative in manifest["retired_indexes"]:
+        path = safe_path(pages, relative)
+        if path.is_file():
+            original = path.read_bytes()
+            require_retirable_index(original.decode("utf-8"), MARKER, label=relative)
+            retiring[relative] = digest(original)
     stale = sorted(set(previous.get("outputs", {})) - set(outputs))
     for relative in stale:
         path = safe_path(pages, relative)
@@ -604,8 +649,8 @@ def build(pages: Path = DEFAULT_PAGES, *, check: bool = False, **kwargs) -> dict
             raise ValueError(f"Refusing to delete modified stale output: {relative}")
     changed = [relative for relative, content in outputs.items()
                if not safe_path(pages, relative).is_file() or safe_path(pages, relative).read_bytes() != content]
-    if check and (changed or stale):
-        raise ValueError(f"Hero-task output gate failed ({len(changed)}): {', '.join(changed[:8])}")
+    if check and (changed or stale or retiring):
+        raise ValueError(f"Hero-task output gate failed ({len(changed)}, retiring {len(retiring)}): {', '.join(changed[:8])}")
     if not check:
         for relative in changed:
             path = safe_path(pages, relative)
@@ -613,12 +658,17 @@ def build(pages: Path = DEFAULT_PAGES, *, check: bool = False, **kwargs) -> dict
             path.write_bytes(outputs[relative])
         for relative in stale:
             safe_path(pages, relative).unlink(missing_ok=True)
+        for relative, expected in retiring.items():
+            path = safe_path(pages, relative)
+            if digest(path.read_bytes()) != expected:
+                raise ValueError(f"Retiring index changed concurrently: {relative}")
+            path.unlink()
     return {
         "tasks": manifest["task_count"], "locales": 50,
         "supported_apps": len(manifest["supported_app_keys"]),
         "unserved_apps": len(manifest["unserved_app_keys"]),
         "pages": len(manifest["records"]), "changed": len(changed),
-        "removed": len(stale),
+        "removed": len(stale) + len(retiring),
         "content_digest": manifest["content_digest"], "check": check,
     }
 

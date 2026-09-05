@@ -102,6 +102,13 @@
       "minItems": 50,
       "type": "array"
     },
+    "retired_indexes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
     "schema_version": {
       "const": 1
     },

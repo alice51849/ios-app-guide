@@ -19,6 +19,8 @@ sys.path.insert(0, str(GEO))
 
 import hero_tasks as hero  # noqa: E402
 import hero_tasks_readback as readback  # noqa: E402
+import sync_standard_site as sync  # noqa: E402
+from hero_task_html import Document, without_resource  # noqa: E402
 
 
 class HeroTaskTests(unittest.TestCase):
@@ -39,7 +41,9 @@ class HeroTaskTests(unittest.TestCase):
         self.write(hero.FINDER, {"record_count": len(apps), "apps": apps})
         self.write(".appstore_live_state.json", {"live_ids": [app["app_store_id"] for app in apps]})
         records = []
+        self.original_pages = {}
         for locale in hero.OFFICIAL_LOCALES:
+            home_links = []
             for app in apps[:2]:
                 key = app["key"]
                 relative = (
@@ -48,12 +52,30 @@ class HeroTaskTests(unittest.TestCase):
                 )
                 path = self.pages / relative
                 path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text(
-                    '<!doctype html><html><head></head><body><main>\n    '
-                    f'<p>Preserve this original page: {locale}/{key}.</p>\n'
-                    '</main></body></html>',
-                    encoding="utf-8",
+                heading = f'<h1 class="p-name" id="primary-heading">{key}</h1>'
+                summary = f'<p class="lead p-summary" id="primary-summary">{locale} original summary.</p>'
+                cta = (
+                    f'<a class="cta" id="primary-cta" href="https://apps.apple.com/app/id{app["app_store_id"]}">'
+                    f'{key} on the App Store</a>'
                 )
+                if locale == "bn-BD":
+                    introduction = (
+                        heading + summary + '<!-- app-decision-card:start -->'
+                        '<aside class="iag-decision-card"><div>' + cta + "</div></aside>"
+                        '<!-- app-decision-card:end -->'
+                    )
+                else:
+                    introduction = '<section class="hero wrap">' + heading + summary + '<div>' + cta + "</div></section>"
+                source = (
+                    '<!doctype html><html><head><meta name="description" content="Original app page"></head>'
+                    '<body><div class="h-entry"><div class="e-content"><main>\n    '
+                    + introduction + '<section><h2>Original details</h2>'
+                    f'<p>Preserve this original page: {locale}/{key}.</p></section>\n'
+                    '</main></div></div></body></html>'
+                )
+                path.write_text(source, encoding="utf-8")
+                self.original_pages[relative] = source
+                home_links.append(f'<a href="{self.site}/{relative}">{key}</a>')
                 records.append({
                     "locale": locale, "app_key": key, "app_store_id": app["app_store_id"],
                     "app_name": key, "verified_live": True,
@@ -62,6 +84,21 @@ class HeroTaskTests(unittest.TestCase):
                     "app_store_url": f"https://apps.apple.com/us/app/id{app['app_store_id']}",
                     "app_store_cta_label": f"App Store · {key}",
                 })
+            self.navigation_page(
+                f"{locale}/index.html", locale, "".join(home_links), title="Existing app catalogue"
+            )
+        self.original_indexes = {}
+        for locale in hero.OFFICIAL_LOCALES[:10]:
+            relative = f"{locale}/tools/index.html"
+            for slug in ("one", "two"):
+                self.navigation_page(f"{locale}/tools/{slug}.html", locale, "<p>Working tool fixture.</p>", title=slug)
+            self.navigation_page(
+                relative, locale,
+                '<section><h2>Existing tools</h2><article><a href="one.html">First working tool</a></article>'
+                '<article><a href="two.html">Second working tool</a></article></section>',
+                title="Existing full tools hub",
+            )
+            self.original_indexes[relative] = (self.pages / relative).read_text()
         self.write(hero.INTENTS, {"records": records})
         self.options = {"provider": "118326163", "today": "2026-09-05", "site": self.site}
 
@@ -73,6 +110,246 @@ class HeroTaskTests(unittest.TestCase):
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
         return target
+
+    def navigation_page(self, relative, locale, content, *, title):
+        path = self.pages / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            f'<!doctype html><html lang="{locale}"><head><title>{title}</title>'
+            f'<meta name="description" content="{title} with useful resources">'
+            f'<link rel="canonical" href="{self.site}/{relative}">'
+            f'<link rel="alternate" hreflang="{locale}" href="{self.site}/{relative}">'
+            '<script type="application/ld+json">{"@type":"ItemList","numberOfItems":2}</script>'
+            '</head><body><header class="hero">'
+            f'<h1>{title}</h1><p class="lead">Original introductory context.</p></header>'
+            f'<main>{content}</main></body></html>',
+            encoding="utf-8",
+        )
+        return path
+
+    def add_legacy_thin_indexes(self):
+        paths = []
+        for locale in hero.OFFICIAL_LOCALES[10:]:
+            relative = f"{locale}/tools/index.html"
+            path = self.pages / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(
+                f'<!doctype html><html lang="{locale}"><head><title>Free tools</title>'
+                '<meta name="hero-tools-index" content="v1">'
+                f'<link rel="canonical" href="{self.site}/{relative}">'
+                '</head><body><main>'
+                + hero.resource_block(locale, self.tasks, self.copy[locale], self.site)
+                + '<h1>Free tools</h1></main></body></html>',
+                encoding="utf-8",
+            )
+            paths.append(relative)
+        return paths
+
+    def standard_site_contract(self):
+        uri = "at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mabcde234567"
+        body = uri + "\n"
+        return json.dumps({
+            "contract_version": 1, "generated_at": "2026-07-28T00:00:00.000Z",
+            "publication": {
+                "url": sync.PUBLICATION_URL, "at_uri": uri,
+                "discovery_link_tag": f'<link rel="{sync.PUBLICATION_COLLECTION}" href="{uri}">',
+                "well_known": {
+                    "request_url": sync.WELL_KNOWN_URL, "request_path": sync.WELL_KNOWN_PATH,
+                    "content_type": "text/plain; charset=utf-8", "body": body,
+                    "sha256": hero.digest(body.encode()), "deploy_at_origin_root": True,
+                },
+            },
+            "documents": [],
+        }).encode()
+
+    def test_standard_site_links_survive_fifty_pages_and_repeated_sync(self):
+        hero.build(self.pages, **self.options)
+        payload = self.standard_site_contract()
+        synced = sync.synchronize_payload(payload, site_root=self.pages)
+        self.assertGreater(synced.html_changed, 0)
+        synchronized = {
+            locale: (self.pages / hero.resource_path(self.tasks[0], locale)).read_bytes()
+            for locale in hero.OFFICIAL_LOCALES
+        }
+        hero.build(self.pages, **self.options)
+        manifest = json.loads((self.pages / hero.MANIFEST).read_text())
+        for locale in hero.OFFICIAL_LOCALES:
+            relative = hero.resource_path(self.tasks[0], locale)
+            content = (self.pages / relative).read_bytes()
+            with self.subTest(locale=locale):
+                self.assertEqual(synchronized[locale], content)
+                self.assertEqual(1, content.count(b'rel="site.standard.publication"'))
+                self.assertEqual(hero.digest(content), manifest["outputs"][relative])
+        stable = {relative: (self.pages / relative).read_bytes() for relative in manifest["outputs"]}
+        stable[hero.MANIFEST] = (self.pages / hero.MANIFEST).read_bytes()
+        for _ in range(3):
+            self.assertEqual(0, sync.synchronize_payload(payload, site_root=self.pages).html_changed)
+            self.assertEqual(0, hero.build(self.pages, **self.options)["changed"])
+            for relative, content in stable.items():
+                self.assertEqual(content, (self.pages / relative).read_bytes(), relative)
+
+    def test_standard_site_document_link_and_malformed_link_fail_closed(self):
+        hero.build(self.pages, **self.options)
+        path = self.pages / hero.resource_path(self.tasks[0], "en-US")
+        publication = json.loads(self.standard_site_contract())["publication"]["discovery_link_tag"]
+        document = '<link rel="site.standard.document" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.document/3mabcdef23456">'
+        synchronized = sync.render_html(path.read_text(), publication_link_tag=publication,
+                                        document_link_tag=document, label=str(path))
+        path.write_text(synchronized)
+        hero.build(self.pages, **self.options)
+        self.assertEqual(synchronized, path.read_text())
+        broken = synchronized.replace(publication, "")
+        path.write_text(broken)
+        before = (self.pages / hero.MANIFEST).read_bytes()
+        with self.assertRaises(sync.SyncError):
+            hero.build(self.pages, **self.options)
+        self.assertEqual(broken, path.read_text())
+        self.assertEqual(before, (self.pages / hero.MANIFEST).read_bytes())
+
+    def test_forty_legacy_thin_indexes_are_retired_not_recreated(self):
+        hero.build(self.pages, **self.options)
+        legacy = self.add_legacy_thin_indexes()
+        self.assertEqual(40, len(legacy))
+        manifest_path = self.pages / hero.MANIFEST
+        old = json.loads(manifest_path.read_text())
+        old.pop("retired_indexes", None)
+        old["integrations"] = sorted(set(old["integrations"]) | set(legacy))
+        manifest_path.write_text(hero.json_text(old))
+        with self.assertRaisesRegex(ValueError, "retiring 40"):
+            hero.build(self.pages, check=True, **self.options)
+        report = hero.build(self.pages, **self.options)
+        self.assertEqual(40, report["removed"])
+        manifest = json.loads(manifest_path.read_text())
+        self.assertEqual(sorted(legacy), manifest["retired_indexes"])
+        self.assertEqual(10, len(list(self.pages.glob("*/tools/index.html"))))
+        for relative in legacy:
+            self.assertFalse((self.pages / relative).exists(), relative)
+            self.assertNotIn(relative, manifest["integrations"])
+        for record in manifest["records"]:
+            locale = record["locale"]
+            expected = f"{locale}/tools/index.html" if locale in hero.OFFICIAL_LOCALES[:10] else f"{locale}/index.html"
+            self.assertEqual(f"{self.site}/{expected}", record["navigation_url"])
+            feed = json.loads((self.pages / hero.feed_path(locale)).read_text())
+            self.assertEqual(f"{self.site}/{expected}", feed["home_page_url"])
+            self.assertIn(f'href="{self.site}/{expected}"', (self.pages / record["path"]).read_text())
+        stable = manifest_path.read_bytes()
+        self.assertEqual(0, hero.build(self.pages, **self.options)["changed"])
+        self.assertEqual(stable, manifest_path.read_bytes())
+        self.assertEqual(10, len(list(self.pages.glob("*/tools/index.html"))))
+        hero.build(self.pages, check=True, **self.options)
+
+    def test_ten_existing_hubs_preserve_metadata_hreflang_and_original_cards(self):
+        hero.build(self.pages, **self.options)
+        self.assertEqual(10, len(self.original_indexes))
+        for relative, original in self.original_indexes.items():
+            updated = (self.pages / relative).read_text()
+            with self.subTest(relative=relative):
+                self.assertEqual(original, without_resource(updated, hero.MARKER))
+                self.assertEqual(original.split("</head>")[0], updated.split("</head>")[0])
+                self.assertEqual(1, updated.count(f"<!-- {hero.MARKER}:start -->"))
+                self.assertLess(updated.index("</h1>"), updated.index(f"<!-- {hero.MARKER}:start -->"))
+                self.assertLess(updated.index("Original introductory context."), updated.index(f"<!-- {hero.MARKER}:start -->"))
+                self.assertIn("First working tool", updated)
+                self.assertIn("Second working tool", updated)
+
+    def test_missing_or_ineligible_navigation_does_not_manufacture_a_landing_page(self):
+        locale = hero.OFFICIAL_LOCALES[-1]
+        (self.pages / f"{locale}/index.html").unlink()
+        hero.build(self.pages, **self.options)
+        document = (self.pages / hero.resource_path(self.tasks[0], locale)).read_text()
+        nav = re.search(r"<nav>(.*?)</nav>", document, re.S).group(1)
+        self.assertNotIn("<a", nav)
+        self.assertFalse((self.pages / f"{locale}/tools/index.html").exists())
+        feed = json.loads((self.pages / hero.feed_path(locale)).read_text())
+        self.assertEqual(f"{self.site}/{hero.resource_path(self.tasks[0], locale)}", feed["home_page_url"])
+
+    def test_retirement_refuses_foreign_content_and_accepts_a_real_replacement_hub(self):
+        legacy = self.add_legacy_thin_indexes()
+        changed = self.pages / legacy[0]
+        changed.write_text(changed.read_text().replace("</main>", "<article>Other owner's work</article></main>"))
+        with self.assertRaisesRegex(ValueError, "other content"):
+            hero.build(self.pages, **self.options)
+        self.assertFalse((self.pages / hero.MANIFEST).exists())
+        self.assertTrue(all((self.pages / relative).exists() for relative in legacy))
+        self.add_legacy_thin_indexes()
+        hero.build(self.pages, **self.options)
+        locale = hero.OFFICIAL_LOCALES[10]
+        self.navigation_page(f"{locale}/tools/index.html", locale,
+                             '<a href="one.html">One useful tool</a><a href="two.html">Another useful tool</a>',
+                             title="Reviewed replacement catalogue")
+        hero.build(self.pages, **self.options)
+        manifest = json.loads((self.pages / hero.MANIFEST).read_text())
+        self.assertNotIn(f"{locale}/tools/index.html", manifest["retired_indexes"])
+        self.assertIn("Reviewed replacement catalogue", (self.pages / f"{locale}/tools/index.html").read_text())
+
+    def test_one_hundred_pages_keep_heading_summary_cta_and_microformat_order(self):
+        hero.build(self.pages, **self.options)
+        self.assertEqual(100, len(self.original_pages))
+        for relative, original in self.original_pages.items():
+            updated = (self.pages / relative).read_text()
+            marker = updated.index(f"<!-- {hero.MARKER}:start -->")
+            with self.subTest(relative=relative):
+                self.assertEqual(original, without_resource(updated, hero.MARKER))
+                self.assertLess(updated.index('id="primary-heading"'), marker)
+                self.assertLess(updated.index('id="primary-summary"'), marker)
+                self.assertLess(updated.index("</a>", updated.index('id="primary-cta"')), marker)
+                if "<!-- app-decision-card:end -->" in updated:
+                    self.assertLess(updated.index("<!-- app-decision-card:end -->"), marker)
+                tree = Document(updated)
+                resource = next(node for node in tree.nodes if node.attrs.get("data-primary-resource") == "hero-task")
+                content = next(node for node in tree.nodes if "e-content" in node.classes)
+                self.assertTrue(resource.within(content))
+                self.assertNotEqual("a", resource.parent.tag)
+                self.assertNotEqual("p", resource.parent.tag)
+                self.assertEqual(1, len([node for node in tree.nodes if "h-entry" in node.classes]))
+                self.assertLess(updated.index("<h1"), updated.index("<h2"))
+                own_block = updated[marker:updated.index(f"<!-- {hero.MARKER}:end -->", marker) + len(f"<!-- {hero.MARKER}:end -->")]
+                self.assertEqual(updated, hero.insert_block(updated, own_block, label=relative))
+
+    def test_semantic_insertion_preserves_inner_microformat_content_and_skips_ghost_cta(self):
+        source = (
+            '<html><body><main><article class="h-entry"><h1 class="p-name">Original question</h1>'
+            '<p class="p-summary">Original summary</p><a class="cta ghost" href="#preview">Preview</a>'
+            '<div class="actions"><a class="cta" id="real-cta" href="https://apps.apple.com/app/id6754218117">Install</a></div>'
+            '<div class="e-content"><h2>Answer</h2><p>Original answer text.</p></div></article></main></body></html>'
+        )
+        block = hero.resource_block("en-US", self.tasks, self.copy["en-US"], self.site)
+        updated = hero.insert_block(source, block)
+        self.assertEqual(source, without_resource(updated, hero.MARKER))
+        self.assertLess(updated.index('id="real-cta"'), updated.index(f"<!-- {hero.MARKER}:start -->"))
+        self.assertIn('<div class="e-content"><h2>Answer</h2><p>Original answer text.</p></div>', updated)
+        tree = Document(updated)
+        resource = next(node for node in tree.nodes if node.attrs.get("data-primary-resource") == "hero-task")
+        content = next(node for node in tree.nodes if "e-content" in node.classes)
+        self.assertFalse(resource.within(content))
+        self.assertEqual(updated, hero.insert_block(updated, block))
+        with self.assertRaisesRegex(ValueError, "primary h1"):
+            hero.insert_block("<html><body><main><p>No heading</p></main></body></html>", block)
+
+    def test_published_one_hundred_introductions_keep_their_original_priority(self):
+        tasks = hero.load_registry()
+        _, bindings = hero.catalogs(hero.DEFAULT_PAGES, tasks, hero.DEFAULT_SITE, "118326163")
+        self.assertEqual(100, len(bindings))
+        for binding in bindings.values():
+            relative = binding["answer_path"]
+            source = (hero.DEFAULT_PAGES / relative).read_text()
+            tree = Document(source)
+            heading = tree.first("h1")
+            resources = [node for node in tree.nodes if node.attrs.get("data-primary-resource") == "hero-task"]
+            with self.subTest(relative=relative):
+                self.assertEqual(1, len(resources))
+                resource = resources[0]
+                self.assertLess(heading.end, resource.start)
+                store = next(node for node in tree.nodes if node.tag == "a" and node.start > heading.end
+                             and (node.attrs.get("href") or "").startswith("https://apps.apple.com/"))
+                self.assertLess(store.end, resource.start)
+                for node in tree.nodes:
+                    if "p-summary" in node.classes and node.start < store.start:
+                        self.assertLess(node.end, resource.start)
+                marker_start = source.index(f"<!-- {hero.MARKER}:start -->")
+                marker_end = source.index(f"<!-- {hero.MARKER}:end -->") + len(f"<!-- {hero.MARKER}:end -->")
+                block = source[marker_start:marker_end]
+                self.assertEqual(source, hero.insert_block(source, block, label=relative))
 
     def node(self, script, payload):
         process = subprocess.run(

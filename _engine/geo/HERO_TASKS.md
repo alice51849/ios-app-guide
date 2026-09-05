@@ -14,7 +14,13 @@ HoursTag 與 HoursTag Lite 共用同一任務 canonical。依據是既有產品�
   穩定 item ID、語意更新日期及完整 App Store 歸因連結。
 - `data/hero-tasks/manifest.json`、schema、`sitemap_hero_tasks.xml`：
   真實支援範圍、來源 digest、成果 SHA-256 與 canonical 清單。
-- 每語工具索引及既有第一順位答案接到免費成果。
+- 只向既有、具完整 metadata／hreflang 與多項工具的索引插卡，不建立新的索引薄頁。
+  缺少合格索引時，導覽及 feed 改指該語既有完整首頁／hub；都不存在時不輸出導覽，
+  feed 則直接指向完整工具頁。舊版自行產生、僅有標題與 hero 卡片的索引會安全清理，
+  並以 `retired_indexes` 保持冪等；已有其他內容者不會被刪除。
+- 既有第一順位答案及 App guide 的原始 h1、摘要和主要 CTA 都先於 hero 資源卡。
+  插入點採真實 HTML 元素邊界，位於 CTA managed block 之外，
+  不重寫原始內容、microformats、metadata 或 hreflang。
   沒有該語答案的場合，沿用經驗證的本語 App guide 作導航，
   **不為補數量生成答案頁**。
 
@@ -45,6 +51,8 @@ APP_STORE_PROVIDER_TOKEN=118326163 python3 -B geo/hero_tasks.py --check
 缺 provider token、native copy、已驗證 App ID、來源頁或 adapter 時，
 必須在寫入任何成果前失敗。`--check` 不修復、不寫檔。
 再次生成不改動相同 bytes／mtime／dateModified；只清理前次 manifest 擁有且未被修改的舊成果。
+重繪完整工具頁前會用 `sync_standard_site.preserve_managed_links` 保留已驗證的
+publication／document links，再計算最終成果 SHA-256；反覆 `sync → hero` 不得漂移。
 
 ```sh
 mkdir -p geo/.hero-validation
@@ -69,6 +77,8 @@ PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest geo.tests.test_hero_tasks
 3. 在 `hero_tasks.json` 明確綁定 App key、App Store ID、來源 query 與公共範例。
    等價任務合併至既有 canonical；不接受同 adapter 複製多個 slug。
 4. 通過錯誤／邊界／下載／注入防護／50 語／無 JS／冪等／pipeline 順序測試。
+   另有 50 頁 managed links、40 舊薄頁／10 完整索引，以及 100 頁原始
+   h1／summary／CTA 優先與 microformats 保留矩陣。
 5. 把來源、JS/CSS、文案及測試同步到 `pages/_engine/geo/`。
 
 `publish.py` 與 `geo-daily.yml` 會在跨頁處理後重建成果，再執行 Gate。

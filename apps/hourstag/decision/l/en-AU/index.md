@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/en-AU/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

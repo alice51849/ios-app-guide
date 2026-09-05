@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ — ଦିନକୁ 5 ନୂଆ ଶବ୍ଦ, ଏକ ମିନିଟ୍ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/or-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

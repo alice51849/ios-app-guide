@@ -2,7 +2,7 @@
 title: "millor joc de matemàtiques per a nens per desenvolupar habilitats lògiques a l’iPhone"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/ca/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

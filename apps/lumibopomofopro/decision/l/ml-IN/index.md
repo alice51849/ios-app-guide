@@ -2,7 +2,7 @@
 title: "ബൈലിംഗ്വൽ കുട്ടികൾക്കായി മികച്ച പൂർണ്ണ Zhuyin ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/ml-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

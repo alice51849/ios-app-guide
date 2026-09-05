@@ -2,7 +2,7 @@
 title: "Mask My File: माहिती हटवा — शेअर करण्यापूर्वी माहिती लपवा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/mr-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "WiFi Aid：找出网络问题·诊断 — 网络诊断与连接证据 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

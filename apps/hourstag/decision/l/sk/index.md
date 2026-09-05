@@ -2,7 +2,7 @@
 title: "HoursTag: Hodiny na nákup — Rozpočet, výdavky a úspory | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/sk/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

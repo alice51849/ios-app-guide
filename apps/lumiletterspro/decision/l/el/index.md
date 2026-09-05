@@ -2,7 +2,7 @@
 title: "καλύτερη πλήρης εφαρμογή φωνητικής για προετοιμασία νηπιαγωγείου στο σπίτι"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/el/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

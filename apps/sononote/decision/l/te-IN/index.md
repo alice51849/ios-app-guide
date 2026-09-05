@@ -2,7 +2,7 @@
 title: "iPhoneపై సమావేశాలను సారాంశం చేసే ఉత్తమ వాయిస్ నోట్స్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/te-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

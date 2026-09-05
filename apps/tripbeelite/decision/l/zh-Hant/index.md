@@ -2,7 +2,7 @@
 title: "適合即將出行的最佳簡易行程規劃 iPhone 應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/zh-Hant/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

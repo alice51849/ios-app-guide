@@ -2,7 +2,7 @@
 title: "アカウント不要の最高の生理周期トラッカーアプリiPhone向け"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ja/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

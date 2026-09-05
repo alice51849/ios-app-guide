@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-09-05",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,9 +10,9 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "5efb1cd9476341b6dd7a6f5fa106ddc4ace04be605bfcc5df2dcb1966e7de973",
-  "content_digest": "462c40ea458b3e8f216b6e8ac95d1c8e29594a831770626d6ec41ac44950754e",
-  "generation_digest": "33c3f1bddcbfebb50fc126d56f2c57aa728f866b9315ad769442c70c7e56d883",
+  "source_sha256": "47c3293c18165591b34441828358702a33aeeebf011b5386c549522c8670fb1b",
+  "content_digest": "89501cb17a3be22b4bbb4f6144da57b6e6c714509eee3ec28c031f385a7e2314",
+  "generation_digest": "3b32917ae6690679287f4c0deef98fa18547180f9848b584ae81ed76e7d24af7",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 46,
   "locale_count": 50,
@@ -22,257 +22,257 @@
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "135c0f2fea1916551d21f468e503391f8c74bb1ed4a7821a87b0814e5cdc22b3"
+      "sha256": "f3112376ebdc8182a1808048bd99d09f313aee6c8eeba37990d1fae6da04b00f"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "cc9f009def7ef779c0e0acb52cc42280fd1f00957b289cb2bbb90667a7dd6e5f"
+      "sha256": "a82b1c9c63d7f26f9e6fe1381e29cc1e11342f11b3c5ffde6bd267b3b44791f9"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "d1f246149bb77054e58f4fcb892629775e99569173da2f76c8afe66f33f354af"
+      "sha256": "f247406c46825891b9f5aedb6ddce05c38657dbf6bf63fd7ffd06ea28fcea916"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "01c2fa6b61397552800af42ef6972655752a02a65d1fad1c1b22b1acd1297cbb"
+      "sha256": "e4fe9cca34568d84ceead924b8a5d472c9d8a50e61766a99a6a0ee49033f14ff"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "5d669cc27464f222528883207ccf613c0d342d68f09b42fc9de1a7ae27ce33b8"
+      "sha256": "c226888bd98e4beeef7ec69541a9581cff7f0c6e7e20f39cdfd8d37f8ee7ff36"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "241baeb7a6a651a78c2dd306248aa6aca9b7bd18047bd03bd7e51908cce42c46"
+      "sha256": "390c81eaf40fce3690ca122305454b09e38b7a807c9093b188c5792fc68ced1a"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "6ae30e131bc13e3b5ae49239f25921204f5a89e7fd90f9d4458a0c2c52aad20b"
+      "sha256": "8fde76f61b148fcd76ad2b2dbaf607fd84e389e652adf704b4ea3399506c353c"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "c781547f32111fe0bcf2491bbae4f3f8b311c8fac9a5d5b4e88e7a0da7229b01"
+      "sha256": "a9f3aef153e6b894f4023880a2a3b9a1a1257858fc940f6ae6a83a2bae943473"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "caca91e61f97ee2437420fa8dbf32375cf1fa681fed96040bfc014df06f2b51c"
+      "sha256": "95a6c31e0f2a3a2840be83ff59eba804163ead22892e43e2b957ff7860991517"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "ddced6a79db0982804dd7045318ca2846f5b62a5431fcee723f032ab496fc687"
+      "sha256": "40db20da2e9d11156002507e5155ac1a1ce2bd50cdde6608bccbd6d552eae716"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "9a69a82c28955b8caafc2df90f34931fc33040d7728865e7b3e39aecce16d3ef"
+      "sha256": "64c3a92f382abfb63947f33aa8d0a799458e4688e7e3eeb5e1e850fa4dddb546"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "cc983eabd74f497028c37186a6d1f7558e6f8e21131385c4e9ce602bd3bc43cf"
+      "sha256": "5ae40f281096cdd78ab74389af00a1ff073cff751c56c4cdf848b2c46cb10d06"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "bfcd79ca104ce448efe7e532ed0ddd2d26e84fe7a24ca12c87c8c6c3ae31eef2"
+      "sha256": "e17b73b8371fef70cf92cf39567c140abfb7cb2b2afacd32f7073ae8e3af8e52"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "0eacd8a8893d8c6a62417433b7cf1c06972f2e2859a4ef1f9ce0c16da1c2fdc6"
+      "sha256": "3bb96825010455db68e0d0ce829b8d94d25f1ecebde4ccba146a0ff154a1a841"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "6b01db4948fa3ea055d7c01da7c86bbedd4080946413919e348a1a7bb3159eef"
+      "sha256": "1c6e068eb3d6df97fd037a162dc0e64fb3efebf8fa797dcac8142ba4012a3fa9"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "fc477722788a5a9acef5fcd9f49c6a5b7be73ebeca4f3844046e101a23f899f3"
+      "sha256": "660dfa650f06e4cecc1b8ac2cfa6531965c300da07289a46cc1d55712aca8fd8"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "d3a4b51e75bcc0819de213b8d3331b9c6a3522f425e8e71c0cd7610c677974f4"
+      "sha256": "a34be6c63f1a7a42e2583cd5f7db27b3bcad9c227826fef32f7aba5c307198b4"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "087febcfa1ff1750df5ae4fe56257168c47e9291d13bf7490e5c81242d597d22"
+      "sha256": "d7c89d6a6244b025355f99ef0b544b5af3552053c793f4be2f1093aa954c5add"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "ca0549562e5100f6fa3387e14798acf2afc9e3d1bfd93f238fc0f7da9a13d9b5"
+      "sha256": "2fc0ba9bf559ed4e8bc800e58e43606c3861bb52f8da9a1d21711bb69d3fdaa1"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "71b94878a2953253045c1efce581fe42d290e4901635353eb93bd94cd6a5138c"
+      "sha256": "3fd92638391d5dba77687c39f67b70c8022a0cfa5c6c78e2f53a8797025708b5"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "6a038e4be531c1f2c077e6eea32ceeabd03c8979f169b9a0d723e9338d4da00d"
+      "sha256": "5237789bc2d216da37cde03a0421545e6f299a54a4ef770a4e92476976d98e4e"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "8b9346738e2940bacc5fbc9589cb12ea746bffb633d27048f28abc0d1f35d8d9"
+      "sha256": "25c5d90c5dfc4697f09a7b41253471298af604dbb72142c4dedd3cb6c0e9edd2"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "7471bfdf82e7a16423a5eb9845c37a2a7966a4a7a867d5a0702a814f4a4c0e05"
+      "sha256": "1bcc33efebb7d841eeb6fb2976e77cb44e0fa7956c6575c4a7d3a116a96bded0"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "b2ee438e7d1a222f36130b3ce618720a11b69a22519c042961ee5c570f804dd1"
+      "sha256": "a5d0990e879798076479be94c16cbcfe13d94678cff973285ec4070423fcc9aa"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "3fbe86a126334d7fd42ecc1d86a65ef6b7796e529dce41830c5388c6e030ed7b"
+      "sha256": "055e4eebfa9b180974aa38b5753effcabac36ed011af124f27eb55400cf7b5d6"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "240d27a92ac9880cd651edcac8363a229dc2a48e0ce9630deeb2b9abbf4cd20c"
+      "sha256": "d53315169aa72721ca7012905aa962dff4888456753dcf0d2d00fb532dcd36bc"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "66d43e5866d8b44c7665d4db5a62cf3ff1dfe9aaeb84ae608346f8dfef658954"
+      "sha256": "1623fce8c383eb1d674d22032437ff186491e575bb2a1629fa508860bed0b8ab"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "419a8e79ded84d49ab6a8c0247172992e835e66a26e0e1820a91211ae6ec5d06"
+      "sha256": "4647cc1e5e0298e0a05485956fcd104fd152e5cb5e4f745e2c375d3b730758bd"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "0bdc51d42635e8a1b08d161608cfff8c114d5aa1ee5f0f187929f4fb701c5a7f"
+      "sha256": "e26d32994ff55c4fed01193d35ff3560441bf8638142ca84bc05318a668772e9"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "d6b4ca760a6a0320be1a6764d734ade5c4f89e1c901a6e2c31e8b8d7d651d460"
+      "sha256": "ab3b37a600da03ccee5ffe1ae617cdf4349633348d54225ec5599e00d619481f"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "f31a2eb518d1acbf1b49e4448051a38b44bdaa983b95c65ff8eb7f604cb3c713"
+      "sha256": "791c24b6219253eb210cde6c2f8893a7cdcca0e72bbb593d48b0fa30dadadd08"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "760a8949d16feede6e99c856bad664c2243d3f8f41b7777d216c9034db3046e5"
+      "sha256": "0001152a84d6cb212387034ffc1891151da8b2f94402dca45d023b5265230d1c"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "2acfe58a1d4d75983b5f83749fec98c0c5bb3241eab061fc41d373cc4b7568af"
+      "sha256": "c5a61072332f3a184108a8901da896932ecaa94930f9d351da9ea96f3a9007ec"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "dec820e5437625f507cfc294148d182a30678d22cbda090784686327184682e8"
+      "sha256": "59d1feb62e0fb8644fcb2679b4b305d6da900a97f732ff5f621bc83b031881af"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "27f1a9c276dcfb8aee84ea522060b2670fb21ba115f088e99375ee06c95118cc"
+      "sha256": "314eba9448e095961f98596f1ef6b99e9436a685eeb87d46deedc084b77d63b1"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "18d39c7234ffebca4d2ccfee80220094b56213a4c67ff7ab242e587485cd0363"
+      "sha256": "8d462d6a79c99180c3c663b0b2075672644720ecb74bcfe3495ae456f8c204f3"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "92d95ac52ee328b4ee8176df4eed2db011e7a6c0bba839c3e4132742888d077f"
+      "sha256": "7a95370cf5348fb26cb773ae87dae6da55918d04e84002cc4c123d817550ef63"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "66816aa639e15e863b81ccb6abd6391e2657b0251f858c7c87a48300ae531c02"
+      "sha256": "72a15c1b846442693bea83f1dc5b435e9153d3766c79c7f65ef793f321e3b7cc"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "4ad9de6ac2d4c91fd878b75bea5f88938fabbacdd682393e327517aa65664952"
+      "sha256": "416f6914af89f4b20ddfd2fd3412f990b19258ecff303dbb7c44a817581ff205"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "f24e9a7005725f8f02e1c118397276b84687b07dcfd2a345077b220a2209b52b"
+      "sha256": "8bf3a3bed8ec2c560425cde51d0397b42cde0035dd471a0e70a3e27f5cefa1f2"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "3e6c158d4aa0f7a28c978aa4fed3808eebc3f7b1439bae728077b222e35f6733"
+      "sha256": "064cdf035cfdc83e4ef16c2960b410f1e3511531933509db82df65e6a7aeebfb"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "0e2ec87bc3474871d530d75561efa76713b0a6cddf41c5622b355115ad5c8e1b"
+      "sha256": "9fa2c093a5787ee3059f46defd3c13e23d2a99a96273f3e099a6521884431f05"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "989dc51faef1849dddc5e4c902d8968e0f199fc95bba3da5295142e63f563016"
+      "sha256": "7b9c16ca75ed31841b1b5ba44d556397b9ea49f679d6fb5b3b9686be586059bc"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "85e810f134a9b0384f6db9c62e4d440c160acde908d5f39f0ccbafbe0ce79769"
+      "sha256": "a9fe04879554cd5de96bfc92cd1d3fd3fbf405d0e731867f4f3e46dce6b3d188"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "a4fcda5edb92ec0d5f3db55bf301a5ccc5c0e7da6a5b360fff83838f4e213105"
+      "sha256": "6597f15dc09b651669330a0039e55882dbb7de442b4be5e5a52bb89028887259"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "1c6d47e162dc172c537f50aac0555e61aeedc0d4daaf6352f945b87e4b8b0788"
+      "sha256": "5edc95ed9266d239e8f5a834b2e129ecbc19577a351034e79b2d182c05d6692d"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "1e50082077ff080cf892d92f26a5f6ee6ecfe3581b5dfc8e545a8c236f455122"
+      "sha256": "fb2048208ea9909b65e66c6e664ea113971bcad5a1bf40fd0b3e868ad719663a"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "29255e40e9fb0a6cc810f047bcef68b88275a542d184dedc07c22de4aadbe9cf"
+      "sha256": "fb06e330407b0291a51eb23ba3b3d73381b9c6a67d68154d9126b454160aaea7"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "d67762dbd72483cf4e31e72bb4480d8d3a44c5ffa2b54164fe82d8f472ebb79e"
+      "sha256": "d5ec7505b42f13fb24a29585f324ea96ecb1e9b6859481f934653a935bed31c0"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "1204cb18c1d002a8b62a46a8ad247da871778580aba3238a11d61ca66ca72749"
+      "sha256": "67fdfa80e7389d5377e4927da200754b48f0b400d58ed456c023b70022b738de"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "54b410e742348727ace7f7d0afea3feb1f516699d5f265f10f134c1e32019b71"
+      "sha256": "e3ee39656ceec90d01696005a4c5d11ca393bc68c5fe6e1ab70557acd52b27bf"
     }
   ],
   "publisher_authored": true,
@@ -3944,9 +3944,9 @@
       "app_store_id": "6793414462",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/wifiaidlite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/wifiaidlite.html",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "app_store_url": "https://apps.apple.com/au/app/id6793414462?pt=118326163&ct=iag_visual_en_au&mt=8",
-      "sha256": "cab8dea6204a06f3d200fa0a646e8287a67837954b242f6c5bdb6a302e2bdfd0"
+      "sha256": "c2451f4fdf18830467552ac3bd75dcab5ecc172fa7dbeba5daad08db15667f47"
     },
     {
       "locale": "en-AU",
@@ -4404,9 +4404,9 @@
       "app_store_id": "6793414462",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/wifiaidlite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/wifiaidlite.html",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=iag_visual_en_ca&mt=8",
-      "sha256": "5c64d119dd47a7c04ee34322472ed9216e0a9d613f3ad7bac7671b692d551f7d"
+      "sha256": "914b0f6a82ec24f4215c1df60a9f78ce45cc4cfe52b7ce3f4242d947eebf0f24"
     },
     {
       "locale": "en-CA",
@@ -4864,9 +4864,9 @@
       "app_store_id": "6793414462",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/wifiaidlite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/wifiaidlite.html",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6793414462?pt=118326163&ct=iag_visual_en_gb&mt=8",
-      "sha256": "306bfbd254ba2aa5438e27917d4a10d63deaf3ccbb23d61866c96305d08a5735"
+      "sha256": "653ba1f90fe91a4031c7b43592d31f853a62af1e6f261ebda26b8df31d9abaea"
     },
     {
       "locale": "en-GB",
@@ -5324,9 +5324,9 @@
       "app_store_id": "6793414462",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/wifiaidlite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "app_store_url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_visual_en_us&mt=8",
-      "sha256": "bb22daef2c21ec9cfdf99165ab35a5770324fb1250935cec7af1dd32b7723369"
+      "sha256": "802ac41279cd7302ed747fbd182df4a9aa4cd10f12585ddb63aafb11b14771d9"
     },
     {
       "locale": "en-US",

@@ -2,7 +2,7 @@
 title: "আইফোনে বাচ্চাদের জন্য বোপোমোফো শেখার সেরা অ্যাপ"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/bn-BD/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

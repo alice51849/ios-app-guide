@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test i engelska — Engelska prov under press | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/sv/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

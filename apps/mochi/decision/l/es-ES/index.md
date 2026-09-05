@@ -2,7 +2,7 @@
 title: "mejor app simple de lista de tareas para iPhone sin suscripción"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/es-ES/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

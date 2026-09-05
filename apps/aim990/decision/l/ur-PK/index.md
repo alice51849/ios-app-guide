@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین TOEIC پریپ ایپ آف لائن اسٹڈی پلان"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/ur-PK/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

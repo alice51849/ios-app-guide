@@ -2,7 +2,7 @@
 title: "BattAI: 电池健康评分 — 规则、来源和限制都说清楚 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hans/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

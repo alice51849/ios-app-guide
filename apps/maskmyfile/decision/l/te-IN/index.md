@@ -2,7 +2,7 @@
 title: "Mask My File: వివరాలు తొలగించు — పంచుకునే ముందు వివరాలు దాచండి | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/te-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

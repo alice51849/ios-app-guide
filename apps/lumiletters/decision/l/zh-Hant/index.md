@@ -2,7 +2,7 @@
 title: "iPhone 上最佳無廣告兒童教育遊戲應用程式"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/zh-Hant/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

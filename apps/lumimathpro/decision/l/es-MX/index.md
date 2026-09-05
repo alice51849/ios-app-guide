@@ -2,7 +2,7 @@
 title: "mejor app completa de matemáticas para preescolar y primeros grados"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/es-MX/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

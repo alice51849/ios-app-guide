@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za vremensku prognozu za roditelje za planiranje boravka vani s djecom"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/hr/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

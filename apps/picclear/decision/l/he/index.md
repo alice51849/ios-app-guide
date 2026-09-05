@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לפינוי אחסון באייפון על ידי מחיקת תמונות כפולות"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/he/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

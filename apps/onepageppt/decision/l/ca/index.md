@@ -2,7 +2,7 @@
 title: "OnePage PPT: diapositives IA — Els apunts, en una pàgina | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ca/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

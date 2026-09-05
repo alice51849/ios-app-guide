@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja z aktywnościami podróżnymi dla dzieci na rodzinne wyjazdy"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/pl/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Snapport Lite: شناختی تصاویر — گھر پر شناختی تصاویر بنائیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ur-PK/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

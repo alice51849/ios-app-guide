@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ — ದಿನಕ್ಕೆ 5 ಪದಗಳು, ಒಂದೇ ನಿಮಿಷ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/kn-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

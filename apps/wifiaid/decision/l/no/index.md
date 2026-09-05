@@ -2,7 +2,7 @@
 title: "WiFi Aid: Finn nettverksfeil — Nettverksdiagnose med bevis | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/no/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

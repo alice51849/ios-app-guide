@@ -2,7 +2,7 @@
 title: "أفضل تطبيق تتبع ميزانية السفر بدون اشتراك للآيفون"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ar-SA/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

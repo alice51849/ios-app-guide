@@ -2,7 +2,7 @@
 title: "Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ — ಇಂಗ್ಲಿಷ್ ಒತ್ತಡ ಅಭ್ಯಾಸ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/kn-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

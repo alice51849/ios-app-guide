@@ -2,7 +2,7 @@
 title: "mejor app para controlar presupuesto de viaje sin suscripción para iPhone"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/es-ES/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

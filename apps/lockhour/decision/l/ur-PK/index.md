@@ -2,7 +2,7 @@
 title: "iPhone پر پڑھائی کے دوران سوشل میڈیا بلاک کرنے کے لیے بہترین ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/ur-PK/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

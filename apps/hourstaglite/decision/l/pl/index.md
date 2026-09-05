@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Cena to godziny — Prawdziwa cena rzeczy | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/pl/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

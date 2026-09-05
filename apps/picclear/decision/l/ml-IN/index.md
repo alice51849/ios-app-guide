@@ -2,7 +2,7 @@
 title: "iPhone സ്റ്റോറേജ് ഒഴിവാക്കാൻ ഡ്യൂപ്ലിക്കേറ്റ് ഫോട്ടോകൾ ഇല്ലാതാക്കാനുള്ള മികച്ച ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/ml-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

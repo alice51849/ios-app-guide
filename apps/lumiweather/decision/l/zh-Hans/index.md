@@ -2,7 +2,7 @@
 title: "帮助家长规划亲子户外时间的最佳天气应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/zh-Hans/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

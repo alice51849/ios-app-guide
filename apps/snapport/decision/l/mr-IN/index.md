@@ -2,7 +2,7 @@
 title: "बाळ आणि लहान मुलांसाठी घरच्या घरी सर्वोत्तम पासपोर्ट फोटो अॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/mr-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator og temaer — Widget, verktøy og historikk | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/no/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

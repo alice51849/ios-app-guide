@@ -2,7 +2,7 @@
 title: "AI Brief: Datoteke u AI upit — Datoteke u jasnom kontekstu | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/hr/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Wordmate Lite: aprenda idiomas — Um minuto por dia, sem conta | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/pt-BR/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

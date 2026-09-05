@@ -2,7 +2,7 @@
 title: "migliore app per monitorare il ciclo senza account richiesta per iPhone"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/it/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

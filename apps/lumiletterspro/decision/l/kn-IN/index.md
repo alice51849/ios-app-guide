@@ -2,7 +2,7 @@
 title: "ಹೋಮ್‌ಸ್ಕೂಲ್ ಕಿಂಡರ್ಗಾರ್ಟನ್ ತಯಾರಿಗಾಗಿ ಪೂರ್ಣ ಫೋನಿಕ್ಸ್ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/kn-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

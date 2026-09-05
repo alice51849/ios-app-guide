@@ -2,7 +2,7 @@
 title: "MoneyTag: Ingresos y gastos — Cada proyecto, su propio neto | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/es-MX/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

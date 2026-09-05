@@ -2,7 +2,7 @@
 title: "ഒരു വരാനിരിക്കുന്ന യാത്രയ്ക്കായി ഏറ്റവും മികച്ച ലളിതമായ യാത്രാ പദ്ധതിയിടുന്ന ആപ്പ് iPhone-ന്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/ml-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

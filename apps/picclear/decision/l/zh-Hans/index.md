@@ -2,7 +2,7 @@
 title: "iPhone 上最佳释放存储空间删除重复照片的应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/zh-Hans/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

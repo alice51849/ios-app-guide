@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — એકવાર ખરીદો, આજીવન ઉપયોગ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/gu-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "OnePage PPT: ഒറ്റ സ്ലൈഡ് — കുറിപ്പുകൾ പ്രസന്റേഷനാക്കൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ml-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

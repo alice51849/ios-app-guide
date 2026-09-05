@@ -2,7 +2,7 @@
 title: "아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ko/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

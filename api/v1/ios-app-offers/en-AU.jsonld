@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalogue",
   "description": "A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-AU",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-09-05",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2857,7 +2857,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/au/app/id6793414462?pt=118326163&ct=iag_data_en_au&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+        "description": "WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2883,11 +2883,11 @@
             "target": "https://apps.apple.com/au/app/id6793414462?pt=118326163&ct=iag_data_en_au&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/wifiaidlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "en-AU",
-          "description": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+          "description": "WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-wifiaidlite"
           },

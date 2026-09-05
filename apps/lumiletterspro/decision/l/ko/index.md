@@ -2,7 +2,7 @@
 title: "홈스쿨 유치원 준비를 위한 최고의 완전한 파닉스 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ko/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

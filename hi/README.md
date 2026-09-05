@@ -146,6 +146,6 @@ JSON, JSONL और CSV में समान 2,300 रिकॉर्ड शा
 
 [मुखपृष्ठ](https://open.cait518.cc/ios-app-guide/hi/index.html) · [खुला डेटा](https://open.cait518.cc/ios-app-guide/hi/data/lumi-studio-publisher-search-intent-catalog.html) · [लाइसेंस](https://creativecommons.org/licenses/by/4.0/)
 
-अद्यतनित: 2026-09-03
+अद्यतनित: 2026-09-05
 
 CC BY 4.0 मूल सूची संकलन पर लागू होता है; ऐप नाम और App Store चिह्न उनके मालिकों के हैं।

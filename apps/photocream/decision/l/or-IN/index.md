@@ -2,7 +2,7 @@
 title: "iPhone ଉପରେ ଯାତ୍ରା ସୃଜନକାରୀମାନେ ପାଇଁ ଏକମାତ୍ର ଦେୟ ଦେଇ ଚଳଚ୍ଚିତ୍ର ଫଟୋ ସମ୍ପାଦକ ସର୍ବଶ୍ରେଷ୍ଠ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/or-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

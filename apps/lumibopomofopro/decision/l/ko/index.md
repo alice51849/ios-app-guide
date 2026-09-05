@@ -2,7 +2,7 @@
 title: "이중언어 어린이를 위한 완전한 주음부호 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/ko/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

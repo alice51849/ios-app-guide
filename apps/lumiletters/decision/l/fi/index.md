@@ -2,7 +2,7 @@
 title: "paras opettava peli lapsille ilman mainoksia iPhonella"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/fi/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

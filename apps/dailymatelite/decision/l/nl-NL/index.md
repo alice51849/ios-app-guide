@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Spreek nu — 50 talen, echte gesprekken | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/nl-NL/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

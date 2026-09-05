@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI 一頁簡報 — 筆記、螢幕截圖、PDF秒變投影片 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/zh-Hant/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

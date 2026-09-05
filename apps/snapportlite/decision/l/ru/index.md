@@ -2,7 +2,7 @@
 title: "Snapport Lite: Паспортное фото — Фото на документы дома | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ru/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

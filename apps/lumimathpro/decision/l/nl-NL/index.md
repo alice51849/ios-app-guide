@@ -2,7 +2,7 @@
 title: "beste complete rekenapp voor kleuters en onderbouw"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/nl-NL/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

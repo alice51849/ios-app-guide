@@ -2,7 +2,7 @@
 title: "أفضل تطبيق صور جواز السفر للأطفال والرضع في المنزل"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ar-SA/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "AI Brief: फाइल से AI प्रॉम्प्ट — फ़ाइलों से साफ़ संदर्भ | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/hi/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

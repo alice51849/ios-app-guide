@@ -2,7 +2,7 @@
 title: "Aim990 Plus: ஆங்கிலத் தேர்வு — ஆங்கில திறன் சவால் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ta-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "SaveTag: حفظ الروابط الذكي — احفظ الآن واقرأ لاحقًا | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ar-SA/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

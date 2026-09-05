@@ -2,7 +2,7 @@
 title: "집에서 아기와 유아용 여권 사진 앱 추천"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ko/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

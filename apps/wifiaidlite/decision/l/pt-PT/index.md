@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Diagnóstico de rede fiável | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/pt-PT/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

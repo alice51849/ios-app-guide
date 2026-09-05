@@ -2,7 +2,7 @@
 title: "iPhone ପଢ଼ାଇବା ସମୟରେ ସୋସିଆଲ୍ ମିଡିଆ ବ୍ଲକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/or-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

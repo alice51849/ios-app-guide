@@ -2,7 +2,7 @@
 title: "ପରିବାର ଯାତ୍ରାରେ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଭ୍ରମଣ କାର୍ଯ୍ୟ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/or-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

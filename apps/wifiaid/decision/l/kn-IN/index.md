@@ -2,7 +2,7 @@
 title: "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/kn-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

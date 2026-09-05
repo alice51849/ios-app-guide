@@ -2,7 +2,7 @@
 title: "app rutin waktu tidur terbaik untuk kanak-kanak prasekolah tanpa iklan"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ms/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

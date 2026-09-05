@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Fale agora — 50 idiomas, diálogos reais | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/pt-BR/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

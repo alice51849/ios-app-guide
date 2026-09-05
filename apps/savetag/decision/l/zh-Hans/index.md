@@ -2,7 +2,7 @@
 title: "SaveTag:AI 链接收藏 — 稍后阅读,自动打标签 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/zh-Hans/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

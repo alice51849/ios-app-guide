@@ -2,7 +2,7 @@
 title: "SaveTag: yapay zekâlı yer imi — Bağlantıları kaydet, sonra oku | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/tr/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

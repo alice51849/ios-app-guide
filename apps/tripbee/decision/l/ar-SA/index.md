@@ -2,7 +2,7 @@
 title: "أفضل تطبيق مخطط مسار الرحلة على iPhone"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ar-SA/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

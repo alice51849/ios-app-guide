@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — 本機截圖分類、OCR搜尋與時間軸 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/zh-Hant/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

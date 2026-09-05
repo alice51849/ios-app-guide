@@ -2,7 +2,7 @@
 title: "G+Money Lite: ভ্রমণ খরচ — ভ্রমণ খরচ ও মুদ্রা | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/bn-BD/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

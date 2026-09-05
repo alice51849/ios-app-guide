@@ -2,7 +2,7 @@
 title: "iPhone కోసం ఉత్తమ TOEIC ప్రిప్ యాప్ ఆఫ్‌లైన్ స్టడీ ప్లాన్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/te-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

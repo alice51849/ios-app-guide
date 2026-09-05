@@ -2,7 +2,7 @@
 title: "구독 없이 잠들기 좋은 최고의 백색소음 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ko/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

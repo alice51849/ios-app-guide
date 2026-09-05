@@ -2,7 +2,7 @@
 title: "beste CV-byggerapp for karrierebytter 2026"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/no/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

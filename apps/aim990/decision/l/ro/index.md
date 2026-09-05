@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de pregătire TOEIC cu plan de studiu offline pentru iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/ro/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

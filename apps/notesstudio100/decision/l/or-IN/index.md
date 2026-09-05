@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — ହସ୍ତଲିଖିତ ନୋଟ୍, PDF ଟିପ୍ପଣୀ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/or-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

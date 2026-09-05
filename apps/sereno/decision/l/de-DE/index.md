@@ -2,7 +2,7 @@
 title: "Beste White-Noise-App zum Einschlafen ohne Abo"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/de-DE/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

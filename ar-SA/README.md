@@ -146,6 +146,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://open.cait518.cc/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://open.cait518.cc/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-09-03
+آخر تحديث: 2026-09-05
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

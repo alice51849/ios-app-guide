@@ -2,7 +2,7 @@
 title: "trình chỉnh sửa ảnh phim trả phí một lần tốt nhất cho nhà sáng tạo du lịch trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/vi/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

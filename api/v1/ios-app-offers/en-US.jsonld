@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalog",
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-US",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-09-05",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2856,8 +2856,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "WiFi Aid Lite: Network Check",
-        "description": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+        "name": "WiFi Aid Lite",
+        "description": "WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2872,7 +2872,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6793414462"
           },
-          "name": "WiFi Aid Lite: Network Check",
+          "name": "WiFi Aid Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -2883,11 +2883,11 @@
             "target": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "en-US",
-          "description": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+          "description": "WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wifiaidlite"
           },

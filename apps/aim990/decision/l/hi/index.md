@@ -2,7 +2,7 @@
 title: "iPhone के लिए सर्वश्रेष्ठ TOEIC तैयारी ऐप ऑफ़लाइन अध्ययन योजना"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/hi/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

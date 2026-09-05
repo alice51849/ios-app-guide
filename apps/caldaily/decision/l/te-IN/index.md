@@ -2,7 +2,7 @@
 title: "CalDaily: క్యాలిక్యులేటర్ — విడ్జెట్, సాధనాలు, చరిత్ర | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/te-IN/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

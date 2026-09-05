@@ -146,6 +146,6 @@ JSON، JSONL اور CSV میں وہی 2,300 ریکارڈز شامل ہیں۔
 
 [ہوم](https://open.cait518.cc/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://open.cait518.cc/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-09-03
+اپ ڈیٹ کیا گیا: 2026-09-05
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

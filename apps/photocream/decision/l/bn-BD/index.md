@@ -2,7 +2,7 @@
 title: "ভ্রমণ নির্মাতাদের জন্য আইফোনে একবার মূল্য পরিশোধে সেরা ফিল্ম ফটো সম্পাদনা অ্যাপ"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/bn-BD/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

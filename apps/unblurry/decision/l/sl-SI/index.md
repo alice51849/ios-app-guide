@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za popravljanje zamegljenih fotografij otrok na iPhonu"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/sl-SI/index.html"
-modified: "2026-09-04"
+modified: "2026-09-05"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

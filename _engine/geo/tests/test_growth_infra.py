@@ -121,6 +121,7 @@ import indexnow_submit
 import notify_rsscloud
 import notify_websub
 import outreach_scorecard
+import live_app_manifest
 import passport_photo_print_sheet
 import photo_storage_cleanup_planner
 import portfolio_app_catalog_api
@@ -23284,7 +23285,7 @@ class GeneratorTests(unittest.TestCase):
         workflow = (
             guide_root / ".github" / "workflows" / "geo-daily.yml"
         ).read_text(encoding="utf-8")
-        self.assertEqual(1, workflow.count("refresh=True"))
+        self.assertEqual(1, workflow.count("live_app_manifest.py --refresh"))
         self.assertEqual(
             0,
             workflow.count(
@@ -23446,7 +23447,7 @@ class GeneratorTests(unittest.TestCase):
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index(
                 "refresh_storefront_availability.py"
             ),
@@ -23468,39 +23469,39 @@ class GeneratorTests(unittest.TestCase):
             )[1].split("- name: Generate new answer pages", 1)[0],
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("passport_photo_print_sheet.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("document_scan_planner.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("blurry_photo_diagnostic.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("daily_checklist_planner.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("screen_time_block_planner.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("photo_storage_cleanup_planner.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("film_look_recipe_planner.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("family_routine_card_planner.py"),
         )
         self.assertLess(
-            availability_block.index("refresh=True"),
+            availability_block.index("live_app_manifest.py --refresh"),
             availability_block.index("toeic_study_allocation_planner.py"),
         )
         self.assertLess(
@@ -23569,8 +23570,10 @@ class GeneratorTests(unittest.TestCase):
             3,
             workflow.count("outreach_scorecard.py --require-complete"),
         )
-        self.assertIn("GEO_PUBLIC_INVENTORY_BASELINE", workflow)
-        self.assertIn("cp apps.json", workflow)
+        self.assertNotIn("GEO_PUBLIC_INVENTORY_BASELINE", workflow)
+        self.assertIn("GROWTH_LIVE_MANIFEST", workflow)
+        self.assertIn('.growth-runtime/live-app-manifest.json', workflow)
+        self.assertIn('--output "$GROWTH_LIVE_MANIFEST"', workflow)
         first_scorecard = workflow.index("outreach_scorecard.py")
         answer_generation = workflow.index("aeo_answers.py --cached-live")
         self.assertNotIn(
@@ -23631,43 +23634,43 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("app_video_lessons.py"))
         self.assertEqual(3, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("passport_photo_print_sheet.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("document_scan_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("blurry_photo_diagnostic.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("daily_checklist_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("screen_time_block_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("photo_storage_cleanup_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("film_look_recipe_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("family_routine_card_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("vocabulary_habit_planner.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("toeic_study_allocation_planner.py"),
         )
         self.assertLess(
@@ -23675,7 +23678,7 @@ class GeneratorTests(unittest.TestCase):
             workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("bopomofo_symbol_contrast_cards.py"),
         )
         self.assertLess(
@@ -23707,11 +23710,11 @@ class GeneratorTests(unittest.TestCase):
             workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.index("wordmate_language_support.py"),
         )
         self.assertLess(
-            workflow.index("refresh=True"),
+            workflow.index("live_app_manifest.py --refresh"),
             workflow.rindex("portfolio_app_finder.py"),
         )
         self.assertEqual(1, workflow.count("refresh_primary_resource_answers.py"))
@@ -24250,10 +24253,9 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("queue: max", sov)
         self.assertIn("ref: main", sov)
         self.assertIn("fetch-depth: 0", sov)
-        self.assertIn(
-            "remote_first_publish reconcile_sov_phase origin main 5",
-            sov,
-        )
+        self.assertIn("contents: read", sov)
+        self.assertIn("actions/upload-artifact@v4", sov)
+        self.assertNotIn("git commit", sov)
         self.assertNotIn("--refresh-slug", workflow)
         self.assertIn("aeo_answers.py --cached-live --limit 0", workflow)
         refresh_script = (
@@ -27295,7 +27297,11 @@ class GeneratorTests(unittest.TestCase):
             )
 
     def test_scorecard_marks_unavailable_apps_without_promoting_them(self):
-        rows = outreach_scorecard.build_rows({"lumibopomofo"})
+        manifest = live_app_manifest.create_manifest(
+            live_app_manifest.canonical_manifest()["apps"],
+        )
+        with mock.patch.object(outreach_scorecard, "_exists", return_value=True):
+            rows = outreach_scorecard.build_rows({"lumibopomofo"}, manifest=manifest)
         by_key = {row["key"]: row for row in rows}
         self.assertTrue(by_key["lumibopomofo"]["public"])
         self.assertGreater(by_key["lumibopomofo"]["coverage_score"], 0)
@@ -27318,21 +27324,23 @@ class GeneratorTests(unittest.TestCase):
 
     def test_scorecard_completion_gate_rejects_shrunken_public_inventory(self):
         with tempfile.TemporaryDirectory() as directory:
-            baseline = Path(directory) / "apps.json"
+            baseline = Path(directory) / "live-app-manifest.json"
+            manifest = live_app_manifest.create_manifest(
+                live_app_manifest.canonical_manifest()["apps"],
+            )
             baseline.write_text(
-                json.dumps([
-                    {"appStoreUrl": "https://apps.apple.com/app/id1"},
-                    {"appStoreUrl": "https://apps.apple.com/app/id2"},
-                ]),
+                json.dumps(manifest),
                 encoding="utf-8",
             )
-            appstore = {"first": "1", "second": "2", "new": "3"}
+            appstore = {
+                key: app["app_id"] for key, app in manifest["apps"].items()
+            }
             outreach_scorecard.validate_public_inventory(
-                {"first", "second", "new"},
+                set(appstore),
                 baseline,
                 appstore,
             )
-            for public in ({"first"}, set()):
+            for public in (set(appstore) - {"battai"}, set()):
                 with self.subTest(public=public):
                     with self.assertRaisesRegex(
                         RuntimeError,
@@ -27397,7 +27405,12 @@ class GeneratorTests(unittest.TestCase):
             with mock.patch.object(
                 outreach_scorecard, "PAGES", str(pages)
             ):
-                rows = outreach_scorecard.build_rows({"maskmyfile"})
+                rows = outreach_scorecard.build_rows(
+                    {"maskmyfile"},
+                    manifest=live_app_manifest.create_manifest(
+                        live_app_manifest.canonical_manifest()["apps"],
+                    ),
+                )
 
         row = next(row for row in rows if row["key"] == "maskmyfile")
         self.assertEqual(1, row["social_posts"])

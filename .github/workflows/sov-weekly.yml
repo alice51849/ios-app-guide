@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: ios-app-guide-main-writer
@@ -16,6 +16,9 @@ concurrency:
 jobs:
   measure:
     runs-on: ubuntu-latest
+    env:
+      GROWTH_LIVE_MANIFEST: ${{ github.workspace }}/.growth-runtime/live-app-manifest.json
+      GEO_REPORTS: ${{ github.workspace }}/.growth-runtime/outreach
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,23 +31,28 @@ jobs:
         run: |
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
+      - name: Restore last-good availability evidence
+        uses: actions/cache/restore@v4
+        with:
+          path: .growth-runtime/live-app-manifest.json
+          key: live-availability-v2-${{ hashFiles('_engine/geo/live_app_manifest.json', '_engine/social/videogen/registry*.json', '_engine/social/videogen/registry.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            live-availability-v2-${{ hashFiles('_engine/geo/live_app_manifest.json', '_engine/social/videogen/registry*.json', '_engine/social/videogen/registry.py') }}-
+      - name: Refresh availability evidence
+        run: |
+          python3 _engine/geo/live_app_manifest.py --refresh \
+            --output "$GROWTH_LIVE_MANIFEST"
+      - name: Save last-good availability evidence
+        uses: actions/cache/save@v4
+        with:
+          path: .growth-runtime/live-app-manifest.json
+          key: live-availability-v2-${{ hashFiles('_engine/geo/live_app_manifest.json', '_engine/social/videogen/registry*.json', '_engine/social/videogen/registry.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Measure factual owned-asset coverage
         run: python3 _engine/geo/outreach_scorecard.py
-      - name: Commit report
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A _engine/geo/reports
-          if git diff --cached --quiet; then
-            echo "No coverage changes."
-          else
-            git commit -m "Weekly zero-cost outreach coverage [skip deploy]"
-            source .github/scripts/remote-first-publish.sh
-            reconcile_sov_phase() {
-              python3 _engine/geo/outreach_scorecard.py
-            }
-            export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile weekly outreach coverage after origin merge"
-            if ! remote_first_publish reconcile_sov_phase origin main 5; then
-              exit 1
-            fi
-          fi
+      - name: Retain coverage report without changing site source
+        uses: actions/upload-artifact@v4
+        with:
+          name: outreach-coverage-${{ github.run_id }}
+          path: .growth-runtime/outreach
+          include-hidden-files: true
+          retention-days: 14

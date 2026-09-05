@@ -1153,15 +1153,17 @@ def render_page(
 
 def _coverage_rates() -> dict:
     """Owned outreach coverage per app (lower = more neglected within its tier)."""
-    path = ROOT / "reports" / "outreach_coverage.json"
+    from live_app_manifest import runtime_manifest_path, validate_outreach_coverage
+
+    path = Path(os.environ.get("GEO_REPORTS", runtime_manifest_path().parent / "outreach")) / "outreach_coverage.json"
     try:
         d = json.loads(path.read_text(encoding="utf-8"))
         return {
-            row["key"]: row.get("coverage_score", 0.0)
-            for row in d.get("rows", [])
-            if row.get("public")
+            key: row["coverage_score"]
+            for key, row in validate_outreach_coverage(d).items()
         }
-    except Exception:  # noqa: BLE001
+    except Exception as error:  # noqa: BLE001
+        print(f"Outreach ranking coverage unavailable; retaining all App priorities: {error}")
         return {}
 
 

@@ -7,76 +7,61 @@ import json
 import os
 import re
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 sys.path.insert(0, HERE)
 
-from appstore_live import live_app_keys  # noqa: E402
+from live_app_manifest import (  # noqa: E402
+    ManifestError, app_statuses, load_manifest, runtime_manifest_path,
+    validate_manifest,
+)
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import queries  # noqa: E402
 from aeo_answers import is_english_answer_question  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
-REPORTS = os.environ.get("GEO_REPORTS", os.path.join(HERE, "reports"))
+REPORTS = os.environ.get("GEO_REPORTS", str(runtime_manifest_path().parent / "outreach"))
 JSON_OUT = os.path.join(REPORTS, "outreach_coverage.json")
 MD_OUT = os.path.join(REPORTS, "outreach_coverage.md")
 
 
-def validate_public_inventory(public_keys, baseline_path, appstore=APPSTORE):
-    """Reject an empty or unexpectedly shrunken public-app inventory."""
+def validate_public_inventory(
+    public_keys, baseline_path=None, appstore=APPSTORE, *,
+    now=None, require_fresh=True,
+):
+    """Validate the shared contract, not a possibly shrunken apps.json array."""
     try:
-        with open(baseline_path, encoding="utf-8") as handle:
-            catalog = json.load(handle)
-    except (OSError, json.JSONDecodeError) as error:
-        raise RuntimeError(
-            f"Public App inventory baseline is unavailable: {baseline_path}"
-        ) from error
-    if not isinstance(catalog, list) or not catalog:
-        raise RuntimeError("Public App inventory baseline must be a non-empty array")
-
-    baseline_ids = []
-    for item in catalog:
-        if not isinstance(item, dict):
-            raise RuntimeError("Public App inventory entries must be objects")
-        match = re.fullmatch(
-            r"https://apps\.apple\.com/app/id(\d+)",
-            str(item.get("appStoreUrl", "")),
+        manifest = load_manifest(
+            baseline_path, now=now, require_fresh=require_fresh,
         )
-        if not match:
-            raise RuntimeError(
-                "Public App inventory has an invalid App Store URL"
-            )
-        baseline_ids.append(match.group(1))
-    if len(baseline_ids) != len(set(baseline_ids)):
-        raise RuntimeError("Public App inventory contains duplicate App IDs")
-
-    known_ids = {str(app_id) for app_id in appstore.values() if app_id}
-    unknown_ids = set(baseline_ids) - known_ids
-    if unknown_ids:
+    except ManifestError as error:
+        raise RuntimeError(str(error)) from error
+    drift = [
+        key for key, app in manifest["apps"].items()
+        if str(appstore.get(key, "")) != app["app_id"]
+    ]
+    if drift:
         raise RuntimeError(
-            "Public App inventory contains unregistered App IDs: "
-            + ", ".join(sorted(unknown_ids))
+            "Live manifest registry roster drift: " + ", ".join(sorted(drift))
         )
-    unknown_keys = set(public_keys) - set(appstore)
+    if public_keys is None:
+        return manifest
+    unknown_keys = set(public_keys) - set(manifest["apps"])
     if unknown_keys:
         raise RuntimeError(
-            "Live App inventory contains unregistered keys: "
+            "Live App inventory roster drift; unregistered keys: "
             + ", ".join(sorted(unknown_keys))
         )
-    live_ids = {
-        str(appstore[key])
-        for key in public_keys
-        if key in appstore and appstore[key]
-    }
-    missing_ids = set(baseline_ids) - live_ids
-    if missing_ids:
+    missing = set(manifest["apps"]) - set(public_keys)
+    if missing:
         raise RuntimeError(
-            "Live App inventory unexpectedly shrank; missing App IDs: "
-            + ", ".join(sorted(missing_ids))
+            "Live App inventory unexpectedly shrank; missing Apps: "
+            + ", ".join(sorted(missing))
         )
+    return manifest
 
 
 def slugify(question):
@@ -144,14 +129,41 @@ def _exists(relative):
     return os.path.exists(os.path.join(PAGES, relative))
 
 
-def build_rows(public_keys):
+def build_rows(public_keys=None, *, manifest=None, now=None):
+    manifest = (
+        load_manifest(require_fresh=False, now=now)
+        if manifest is None else validate_manifest(manifest, require_fresh=False, now=now)
+    )
+    states = app_statuses(manifest, now=now)
+    pending = {entry["key"]: entry for entry in manifest.get("pending_adoptions", [])}
+    if public_keys is None:
+        public_keys = {
+            key for key, state in states.items()
+            if state["public_eligible"]
+        }
+    else:
+        public_keys = set(public_keys)
     posts = _social_posts(public_keys)
     alternatives = os.path.join(PAGES, "alternatives")
     alt_files = os.listdir(alternatives) if os.path.isdir(alternatives) else []
     rows = []
-    for key, app in APPS.items():
-        public = key in public_keys
-        app_id = APPSTORE.get(key, "")
+    apps = {**APPS, **manifest["apps"]}
+    for key, app in apps.items():
+        expected = key in manifest["apps"]
+        state = dict(states.get(key, {
+            "inventory_status": "unknown" if key in pending else "not_in_live_roster",
+            "inventory_reason": (
+                "Registered App observed; awaiting safe automatic roster adoption"
+                if key in pending else "Not in the versioned live roster"
+            ),
+            "inventory_observed_at": None,
+            "public_eligible": False,
+        }))
+        if expected and key not in public_keys and state["inventory_status"] == "live":
+            state["inventory_status"] = "unknown"
+            state["inventory_reason"] = "Missing from supplied live keys; roster retained"
+        public = expected and key in public_keys and state["public_eligible"]
+        app_id = app.get("app_id", APPSTORE.get(key, ""))
         app_posts = [
             item for item in posts if str(item.get("app", "")) == str(app_id)
         ]
@@ -180,7 +192,7 @@ def build_rows(public_keys):
             "hub": _exists(f"hubs/{key}.html"),
             "guide": _exists(f"guides/{key}.html"),
             "story": _exists(f"stories/{key}.html"),
-            "catalog": public and _exists("apps/index.html"),
+            "catalog": expected and _exists("apps/index.html"),
         }
         score = (
             min(answer_ratio, 1.0) * 0.35
@@ -191,10 +203,13 @@ def build_rows(public_keys):
             + float(assets["guide"]) * 0.05
             + float(assets["story"]) * 0.05
             + float(assets["catalog"]) * 0.05
-        ) if public else 0.0
+        ) if expected else 0.0
         rows.append({
             "key": key,
             "name": app["name"],
+            "app_id": str(app_id),
+            "in_live_roster": expected,
+            **state,
             "public": public,
             "appstore": appstore_url(key) if public else "",
             "coverage_score": round(score, 3),
@@ -208,26 +223,42 @@ def build_rows(public_keys):
     return rows
 
 
-def write_reports(rows):
+def write_reports(rows, manifest=None):
     os.makedirs(REPORTS, exist_ok=True)
     public = [row for row in rows if row["public"]]
+    roster = [row for row in rows if row.get("in_live_roster", row["public"])]
+    inventory_gaps = [
+        row["key"] for row in roster if row.get("inventory_status") != "live"
+    ]
+    verified = [row for row in public if row.get("inventory_status") == "live"]
     average = (
         round(sum(row["coverage_score"] for row in public) / len(public), 3)
         if public else 0.0
     )
     payload = {
+        "schema": "lumi.outreach-scorecard/v2",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "generated_on": date.today().isoformat(),
         "metric": "owned outreach asset coverage (not AI recommendation share-of-voice)",
+        "live_app_count": len(roster),
         "public_apps": len(public),
+        "verified_public_apps": len(verified),
+        "inventory_gaps": inventory_gaps,
+        "inventory_complete": (
+            manifest is not None and {row["key"] for row in roster} == set(manifest["apps"])
+        ),
+        "availability_complete": not inventory_gaps,
         "average_public_coverage": average,
         "rows": rows,
     }
+    if manifest is not None:
+        payload["live_inventory"] = manifest
     with open(JSON_OUT, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
 
     ranked = sorted(
-        public,
+        roster,
         key=lambda row: (row["coverage_score"], row["name"].lower()),
     )
     lines = [
@@ -235,27 +266,33 @@ def write_reports(rows):
         "",
         "> Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.",
         "",
-        f"Public apps: **{len(public)}** · Average coverage: **{average:.1%}**",
+        f"Live roster: **{len(roster)}** · Eligible: **{len(public)}** · Freshly verified: **{len(verified)}** · Average roster coverage: **{average:.1%}**",
         "",
-        "| App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |",
-        "|---|---:|---:|---:|---:|---|",
+        "| App | Inventory | Coverage | Answers | Social languages | Alternatives | Hub / guide / story | Reason |",
+        "|---|---|---:|---:|---:|---:|---|---|",
     ]
     for row in ranked:
         status = " / ".join(
             name for name in ("hub", "guide", "story") if row[name]
         ) or "—"
         lines.append(
-            f"| {row['name']} | {row['coverage_score']:.1%} | "
+            f"| {row['name']} | {row.get('inventory_status', 'unknown')} | {row['coverage_score']:.1%} | "
             f"{row['answers']}/{row['planned_answers']} | "
-            f"{len(row['social_languages'])} | {row['alternatives']} | {status} |"
+            f"{len(row['social_languages'])} | {row['alternatives']} | {status} | "
+            f"{row.get('inventory_reason', '')} |"
         )
-    unavailable = [row["name"] for row in rows if not row["public"]]
+    unavailable = [row for row in rows if not row.get("in_live_roster", row["public"])]
     if unavailable:
         lines += [
             "",
-            "## Excluded until publicly available",
+            "## Registered Apps outside the verified live roster",
             "",
-            ", ".join(unavailable),
+            "| App | Inventory | Reason |",
+            "|---|---|---|",
+            *[
+                f"| {row['name']} | {row.get('inventory_status', 'unknown')} | {row.get('inventory_reason', '')} |"
+                for row in unavailable
+            ],
         ]
     with open(MD_OUT, "w", encoding="utf-8") as handle:
         handle.write("\n".join(lines) + "\n")
@@ -273,33 +310,39 @@ def incomplete_public_rows(rows):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
+        "--manifest",
+        default=os.environ.get("GROWTH_LIVE_MANIFEST"),
+        help="Explicit v2 availability snapshot; a missing snapshot is advisory, not a missing roster.",
+    )
+    parser.add_argument(
         "--require-complete",
         action="store_true",
         help="Exit non-zero when any public App has less than full coverage.",
     )
     args = parser.parse_args(argv)
-    public = live_app_keys(
-        APPSTORE,
-        PAGES,
-        refresh=False,
-        strict_state=args.require_complete,
-    )
-    if args.require_complete:
-        baseline = os.environ.get(
-            "GEO_PUBLIC_INVENTORY_BASELINE",
-            os.path.join(PAGES, "apps.json"),
+    try:
+        manifest = validate_public_inventory(
+            None, args.manifest, require_fresh=False,
         )
-        try:
-            validate_public_inventory(public, baseline)
-        except RuntimeError as error:
-            print(f"outreach inventory invalid: {error}", file=sys.stderr)
-            return 1
-    rows = build_rows(public)
-    payload = write_reports(rows)
+        rows = build_rows(manifest=manifest)
+    except (RuntimeError, ManifestError) as error:
+        print(f"outreach inventory invalid: {error}", file=sys.stderr)
+        return 1
+    payload = write_reports(rows, manifest)
     print(
-        f"✓ outreach coverage: {payload['public_apps']} public apps · "
+        f"outreach coverage: {payload['live_app_count']} roster apps · "
+        f"{payload['public_apps']} eligible · {payload['verified_public_apps']} freshly verified · "
         f"{payload['average_public_coverage']:.1%} average"
     )
+    if not payload["inventory_complete"]:
+        print("outreach inventory incomplete", file=sys.stderr)
+        return 1
+    if not payload["availability_complete"]:
+        print(
+            "outreach availability advisory (roster retained): "
+            + ", ".join(payload["inventory_gaps"]),
+            file=sys.stderr,
+        )
     incomplete = incomplete_public_rows(rows)
     if args.require_complete and incomplete:
         summary = ", ".join(

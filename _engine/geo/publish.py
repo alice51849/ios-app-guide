@@ -13,6 +13,7 @@ import sys
 
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE
+from live_app_manifest import runtime_manifest_path
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -102,13 +103,26 @@ def reconcile_lastmod_after_rebase(env):
 
 
 def main():
-    env = dict(os.environ, GEO_SITE=SITE)
+    manifest_path = str(runtime_manifest_path())
+    env = dict(
+        os.environ, GEO_SITE=SITE, GROWTH_LIVE_MANIFEST=manifest_path,
+        GEO_REPORTS=os.environ.get(
+            "GEO_REPORTS", os.path.join(os.path.dirname(manifest_path), "outreach"),
+        ),
+    )
     if "--no-push" not in sys.argv:
         branch = require(["git", "branch", "--show-current"], cwd=PAGES).strip()
         if branch != "main":
             raise RuntimeError(
                 f"Pages publishing requires main, found {branch or 'detached'}"
             )
+    manifest_command = [PY, os.path.join(HERE, "live_app_manifest.py")]
+    if os.environ.get("GROWTH_MANIFEST_PREPARED") == "1":
+        manifest_command += ["--manifest", manifest_path]
+    else:
+        manifest_command += ["--refresh", "--output", manifest_path]
+    manifest_command += ["--live-state-output", os.path.join(PAGES, ".appstore_live_state.json")]
+    require(manifest_command, env=env)
     # 1) 重建
     require(
         [PY, os.path.join(HERE, "refresh_storefront_availability.py")],

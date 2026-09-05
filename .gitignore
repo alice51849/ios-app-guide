@@ -2,3 +2,7 @@ _engine/**/__pycache__/
 **/__pycache__/
 *.pyc
 _engine/geo/pages
+
+# Availability evidence and scorecards are runtime measurements, not site source.
+**/.growth-runtime/
+/.live_app_manifest.json

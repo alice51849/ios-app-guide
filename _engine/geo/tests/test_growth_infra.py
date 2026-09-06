@@ -25231,6 +25231,11 @@ class GeneratorTests(unittest.TestCase):
         output, changes = normalize_app_store_links.normalize_source(source)
         self.assertEqual(source, output)
         self.assertEqual(0, changes)
+        normalize_app_store_links.assert_no_partial_campaigns(source, Path("answers/x.html"))
+        with self.assertRaises(ValueError):
+            normalize_app_store_links.assert_no_partial_campaigns(
+                source.replace("&mt=8.", "&mt=8&x=1."), Path("answers/x.html")
+            )
         self.assertEqual(
             [stamped],
             [m.group(0) for m in normalize_app_store_links.APP_STORE_URL_RE.finditer(source)][:1],

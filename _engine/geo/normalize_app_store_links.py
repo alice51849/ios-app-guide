@@ -55,7 +55,10 @@ QUERY_APP_STORE_URL_RE = re.compile(
     # whatever the surrounding document puts after the URL and then rejects a
     # perfectly valid campaign link: ")" ends a Markdown link target in every
     # generated README, and "," ends a CSV field in the published datasets.
-    r"\?[-A-Za-z0-9._~%+=&;/:!*$#]+",
+    # ...and sentence punctuation right after the link (".", ";", ":", "!")
+    # belongs to the prose: the last character must be one a query value can
+    # legitimately end with.
+    r"\?[-A-Za-z0-9._~%+=&;/:!*$#]*[-A-Za-z0-9_~%+=&/]",
     flags=re.IGNORECASE,
 )
 

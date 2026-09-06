@@ -3,6 +3,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const os = require("node:os");
 const http = require("node:http");
 const {spawn} = require("node:child_process");
 
@@ -98,7 +99,13 @@ async function connect(url) {
   });
   await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
   const origin = "http://127.0.0.1:" + server.address().port;
-  const profile = path.join(workspace, "browser-profile");
+  // Chromium's singleton lock is a Unix socket, and its path is capped near
+  // 108 bytes; a profile under the repo checkout blows that cap and the
+  // browser dies with "Socket path too long" before it ever opens a page.
+  // TMPDIR is deliberately pointed at the workspace for the downloads, so
+  // os.tmpdir() is long too; take the shortest base that exists.
+  const shortTmp = fs.existsSync("/tmp") ? "/tmp" : os.tmpdir();
+  const profile = fs.mkdtempSync(path.join(shortTmp, "hero-"));
   const downloads = path.join(workspace, "downloads");
   fs.mkdirSync(downloads, {recursive: true});
   const child = spawn(chrome, [
@@ -575,8 +582,140 @@ async function connect(url) {
         return headline==="Ship the checkout redesign by 30 September"?"english":document.getElementById("download-csv").disabled?"disabled":"native";
       })()`), "native", locale + " worked example is native prose and valid");
     }
+    const split = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "bill-split");
+    await navigate(split);
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("grand-total-value").textContent'), "94.04");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("tax-pct");input.value="101";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a tax percentage above 100 disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-person").click()');
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#split-rows .split-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#split-rows .split-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 3);
+    assert.equal(await evaluate(`(()=>{
+      const rows=[...document.getElementById("split-rows").children];
+      const cents=rows.map((row)=>Math.round(parseFloat(row.querySelector("[data-output=due]").textContent.replace(/[^0-9.]/g,""))*100));
+      const total=Math.round(parseFloat(document.getElementById("grand-total-value").textContent.replace(/[^0-9.]/g,""))*100);
+      return cents.reduce((sum,value)=>sum+value,0)===total;
+    })()`), true, "the shares still add back up to the bill in the browser");
+    await evaluate(`(()=>{
+      const row=document.querySelector(".split-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const splitFile = path.join(downloads, "bill-split-sheet.csv");
+    await until(() => fs.existsSync(splitFile) && fs.statSync(splitFile).size > 0, STATE_TIMEOUT_MS, "download splitFile");
+    await until(async () => { const size = fs.statSync(splitFile).size; await pause(150); return fs.statSync(splitFile).size === size; });
+    const splitCsv = fs.readFileSync(splitFile, "utf8");
+    assert(splitCsv.includes(`"'=1+1"`), "split csv: " + splitCsv.slice(0, 500));
+    assert(splitCsv.includes('"94.04"') && splitCsv.includes('"8.25%"'), "bill total and rate kept: " + splitCsv.slice(0, 500));
+    assert(!splitCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "bill-split"));
+      assert.equal(await evaluate(`(()=>{
+        const row=document.querySelector(".split-row");
+        const input=row.querySelector("[data-field=amount]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(12.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal amount input");
+    }
+    const backlog = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "reading-backlog");
+    await navigate(backlog);
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 4);
+    assert.equal(await evaluate('document.getElementById("total-days").textContent'), "5");
+    assert.equal(await evaluate('document.getElementById("finish-date").textContent'), "2026-09-11");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("start-date");input.value="2026-9-7";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a date that is not YYYY-MM-DD disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-item").click()');
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 5);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#backlog-rows .backlog-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 5);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#backlog-rows .backlog-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 4);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".backlog-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const backlogFile = path.join(downloads, "reading-backlog-sheet.csv");
+    await until(() => fs.existsSync(backlogFile) && fs.statSync(backlogFile).size > 0, STATE_TIMEOUT_MS, "download backlogFile");
+    await until(async () => { const size = fs.statSync(backlogFile).size; await pause(150); return fs.statSync(backlogFile).size === size; });
+    const backlogCsv = fs.readFileSync(backlogFile, "utf8");
+    assert(backlogCsv.includes(`"'=1+1"`), "backlog csv: " + backlogCsv.slice(0, 500));
+    assert(backlogCsv.includes('"2026-09-11"') && backlogCsv.includes('"95"'), "finish date and total kept: " + backlogCsv.slice(0, 500));
+    assert(!backlogCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "reading-backlog"));
+      assert.equal(await evaluate(`(()=>{
+        const digits=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false});
+        const input=document.getElementById("daily-minutes");
+        input.value=digits.format(45);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit minutes input");
+    }
+    const review = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "review-schedule");
+    await navigate(review);
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("review-count").textContent'), "15");
+    assert.equal(await evaluate('document.getElementById("next-review").textContent'), "2026-09-07");
+    assert.equal(await evaluate('document.querySelector("#note-rows .note-row:nth-child(2) [data-output=status]").dataset.status'), "today");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("today-date");input.value="2026-02-30";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a date that never existed disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-note").click()');
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#note-rows .note-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#note-rows .note-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".note-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const reviewFile = path.join(downloads, "review-schedule-sheet.csv");
+    await until(() => fs.existsSync(reviewFile) && fs.statSync(reviewFile).size > 0, STATE_TIMEOUT_MS, "download reviewFile");
+    await until(async () => { const size = fs.statSync(reviewFile).size; await pause(150); return fs.statSync(reviewFile).size === size; });
+    const reviewCsv = fs.readFileSync(reviewFile, "utf8");
+    assert(reviewCsv.includes(`"'=1+1"`), "review csv: " + reviewCsv.slice(0, 500));
+    assert(reviewCsv.includes('"-17"') && !reviewCsv.includes(`"'-17"`), "a passed date keeps a plain negative number");
+    assert(reviewCsv.includes('"2026-09-24"'), "the whole ladder is written out: " + reviewCsv.slice(0, 500));
+    assert(!reviewCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "review-schedule"));
+      assert.equal(await evaluate(`(()=>{
+        const row=document.querySelector(".note-row");
+        const input=row.querySelector("[data-field=studied_on]");
+        const digits=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false,minimumIntegerDigits:2});
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false,minimumIntegerDigits:4}).format(2026)
+          +"-"+digits.format(9)+"-"+digits.format(3);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit date input");
+    }
     assert.deepEqual(external.filter((url) => !url.startsWith("data:")), []);
-    console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 8, external_requests: external.length}));
+    console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 11, external_requests: external.length}));
   } finally {
     if (browser) await browser.send("Browser.close").catch(() => {});
     if (page) page.socket.close();

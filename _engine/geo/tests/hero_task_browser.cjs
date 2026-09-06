@@ -21,14 +21,17 @@ const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 // Browser-state waits run on shared CI runners alongside hundreds of
 // tests; 15s is enough on a laptop but not under that load.
 const STATE_TIMEOUT_MS = Number(process.env.HERO_STATE_TIMEOUT_MS || 60000);
-async function until(predicate, limit = STATE_TIMEOUT_MS) {
+// Which page / which wait is in flight, so a timeout names the culprit
+// instead of leaving a 400-page run to be bisected by hand.
+let waitContext = "";
+async function until(predicate, limit = STATE_TIMEOUT_MS, label = "browser state") {
   const start = Date.now();
   while (Date.now() - start < limit) {
     const result = await predicate();
     if (result) return result;
     await pause(100);
   }
-  throw new Error("Timed out waiting for browser state.");
+  throw new Error(`Timed out waiting for ${label} after ${limit}ms (${waitContext || "no page"}).`);
 }
 
 async function connect(url) {
@@ -145,6 +148,7 @@ async function connect(url) {
       return result.result.value;
     };
     async function navigate(record, width = 360) {
+      waitContext = `${record.locale} ${record.path}`;
       await page.send("Emulation.setDeviceMetricsOverride", {width, height: 568, deviceScaleFactor: 1, mobile: false});
       const navigation = await page.send("Page.navigate", {url: origin + prefix + "/" + record.path});
       if (navigation.errorText) throw new Error(navigation.errorText);
@@ -157,7 +161,7 @@ async function connect(url) {
             if (/context|navigat/i.test(error.message)) return false;
             throw error;
           }
-        }, 30000);
+        }, Math.max(30000, STATE_TIMEOUT_MS), "page ready (lang + hero-form)");
       } catch (error) {
         throw new Error(error.message + " " + JSON.stringify({locale: record.locale, requests: requests.slice(-8), external: external.slice(-8), failures}));
       }
@@ -231,7 +235,7 @@ async function connect(url) {
       document.getElementById("download-csv").click();
     })()`);
     const filename = path.join(downloads, "purchase-worktime-sheet.csv");
-    await until(() => fs.existsSync(filename));
+    await until(() => fs.existsSync(filename), STATE_TIMEOUT_MS, "download filename");
     const csv = fs.readFileSync(filename, "utf8");
     assert(csv.includes(`"'=1+1"`));
     assert(csv.includes('"21.00"'));
@@ -275,7 +279,7 @@ async function connect(url) {
       document.getElementById("download-csv").click();
     })()`);
     const maintenanceFile = path.join(downloads, "maintenance-next-due-sheet.csv");
-    await until(() => fs.existsSync(maintenanceFile));
+    await until(() => fs.existsSync(maintenanceFile), STATE_TIMEOUT_MS, "download maintenanceFile");
     const maintenanceCsv = fs.readFileSync(maintenanceFile, "utf8");
     assert(maintenanceCsv.includes(`"'=1+1"`));
     assert(maintenanceCsv.includes('"2024-02-29"'));
@@ -319,7 +323,7 @@ async function connect(url) {
     })()`);
     assert.equal(await evaluate('document.getElementById("hourly-net").textContent'), "—", "no hours means no hourly figure");
     const profitFile = path.join(downloads, "project-profit-sheet.csv");
-    await until(() => fs.existsSync(profitFile) && fs.statSync(profitFile).size > 0);
+    await until(() => fs.existsSync(profitFile) && fs.statSync(profitFile).size > 0, STATE_TIMEOUT_MS, "download profitFile");
     await until(async () => { const size = fs.statSync(profitFile).size; await pause(150); return fs.statSync(profitFile).size === size; });
     const profitCsv = fs.readFileSync(profitFile, "utf8");
     assert(profitCsv.includes(`"'=1+1"`), "profit csv: " + profitCsv.slice(0, 500));
@@ -367,7 +371,7 @@ async function connect(url) {
     assert.equal(await evaluate('document.getElementById("device-count").textContent'), "3");
     assert.equal(await evaluate('document.getElementById("soonest-80").textContent'), "Already at or below 80%", "a device already at 80% makes the soonest figure a fact");
     const batteryFile = path.join(downloads, "battery-wear-range-sheet.csv");
-    await until(() => fs.existsSync(batteryFile) && fs.statSync(batteryFile).size > 0);
+    await until(() => fs.existsSync(batteryFile) && fs.statSync(batteryFile).size > 0, STATE_TIMEOUT_MS, "download batteryFile");
     await until(async () => { const size = fs.statSync(batteryFile).size; await pause(150); return fs.statSync(batteryFile).size === size; });
     const batteryCsv = fs.readFileSync(batteryFile, "utf8");
     assert(batteryCsv.includes(`"'=1+1"`));
@@ -413,7 +417,7 @@ async function connect(url) {
     })()`);
     assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "short", "over-committed plan shows the honest verdict");
     const bandwidthFile = path.join(downloads, "bandwidth-need-sheet.csv");
-    await until(() => fs.existsSync(bandwidthFile) && fs.statSync(bandwidthFile).size > 0);
+    await until(() => fs.existsSync(bandwidthFile) && fs.statSync(bandwidthFile).size > 0, STATE_TIMEOUT_MS, "download bandwidthFile");
     await until(async () => { const size = fs.statSync(bandwidthFile).size; await pause(150); return fs.statSync(bandwidthFile).size === size; });
     const bandwidthCsv = fs.readFileSync(bandwidthFile, "utf8");
     assert(bandwidthCsv.includes(`"'=1+1"`), "bandwidth csv: " + bandwidthCsv.slice(0, 500));
@@ -455,7 +459,7 @@ async function connect(url) {
     })()`);
     assert.equal(await evaluate('document.getElementById("variable-total").textContent'), "1,149.50");
     const tripFile = path.join(downloads, "trip-budget-sheet.csv");
-    await until(() => fs.existsSync(tripFile) && fs.statSync(tripFile).size > 0);
+    await until(() => fs.existsSync(tripFile) && fs.statSync(tripFile).size > 0, STATE_TIMEOUT_MS, "download tripFile");
     await until(async () => { const size = fs.statSync(tripFile).size; await pause(150); return fs.statSync(tripFile).size === size; });
     const tripCsv = fs.readFileSync(tripFile, "utf8");
     assert(tripCsv.includes(`"'=1+1"`), "trip csv: " + tripCsv.slice(0, 500));
@@ -504,7 +508,7 @@ async function connect(url) {
     })()`);
     assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "overrun", "a day that does not fit shows the honest verdict");
     const itineraryFile = path.join(downloads, "day-itinerary-sheet.csv");
-    await until(() => fs.existsSync(itineraryFile) && fs.statSync(itineraryFile).size > 0);
+    await until(() => fs.existsSync(itineraryFile) && fs.statSync(itineraryFile).size > 0, STATE_TIMEOUT_MS, "download itineraryFile");
     await until(async () => { const size = fs.statSync(itineraryFile).size; await pause(150); return fs.statSync(itineraryFile).size === size; });
     const itineraryCsv = fs.readFileSync(itineraryFile, "utf8");
     assert(itineraryCsv.includes(`"'=1+1"`), "itinerary csv: " + itineraryCsv.slice(0, 500));
@@ -548,7 +552,7 @@ async function connect(url) {
     assert.equal(await evaluate('document.getElementById("preview-headline").textContent'), "=1+1", "the preview shows the text verbatim");
     assert.equal(await evaluate('document.getElementById("preview-metric").hidden'), false);
     const outlineFile = path.join(downloads, "one-page-outline-sheet.csv");
-    await until(() => fs.existsSync(outlineFile) && fs.statSync(outlineFile).size > 0);
+    await until(() => fs.existsSync(outlineFile) && fs.statSync(outlineFile).size > 0, STATE_TIMEOUT_MS, "download outlineFile");
     await until(async () => { const size = fs.statSync(outlineFile).size; await pause(150); return fs.statSync(outlineFile).size === size; });
     const outlineCsv = fs.readFileSync(outlineFile, "utf8");
     assert(outlineCsv.includes(`"'=1+1"`), "outline csv: " + outlineCsv.slice(0, 500));

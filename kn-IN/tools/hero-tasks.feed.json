@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "ನಿಮ್ಮ ನಿವ್ವಳ ಗಂಟೆಯ ಆದಾಯದಿಂದ ಖರೀದಿಗಳನ್ನು ಹೋಲಿಸಿ, ನಿಮ್ಮ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಟ್ಟು = ಪ್ರಮಾಣ × ಅಂತಿಮ ಬೆಲೆ. ಕೆಲಸದ ಗಂಟೆಗಳು = ಒಟ್ಟು ÷ ಗಂಟೆಗೆ ನಿವ್ವಳ ಆದಾಯ. ಕೆಲಸದ ದಿನಗಳು = ಕೆಲಸದ ಗಂಟೆಗಳು ÷ ದಿನದ ಕೆಲಸದ ಗಂಟೆಗಳು. ತೆರಿಗೆ ಸೇರಿಸಿದ ಬೆಲೆ ನಮೂದಿಸಿ. ಕರೆನ್ಸಿ ಪರಿವರ್ತನೆ, ಸಂಬಳ ಲೆಕ್ಕ, ಉಳಿತಾಯದ ಮುನ್ಸೂಚನೆ ಅಥವಾ ಖರೀದಿ ಸಲಹೆ ಇಲ್ಲ. ಎರಡು ದಶಮಾಂಶ ಸ್ಥಾನಗಳನ್ನು ತೋರಿಸಲಾಗುತ್ತದೆ; ಒಟ್ಟು ಪೂರ್ಣ ನಿಖರತೆಯಿಂದ ಲೆಕ್ಕವಾಗುತ್ತದೆ.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/purchase-worktime-sheet.html",
       "language": "kn-IN",
       "title": "ಖರೀದಿಗಳನ್ನು ಕೆಲಸದ ಗಂಟೆಗಳಲ್ಲಿ ಹೋಲಿಸಿ",
       "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 504,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "ಮನೆ, ಕಾರು ಅಥವಾ ಆರೋಗ್ಯದ ಪ್ರತಿ ಕೆಲಸವನ್ನು ಕೊನೆಯ ಬಾರಿ ಯಾವಾಗ ಮಾಡಿದಿರಿ ಮತ್ತು ಎಷ್ಟು ಅಂತರದಲ್ಲಿ ಪುನರಾವರ್ತಿಸಬೇಕು ಎಂದು ಬರೆಯಿರಿ; ಮುಂದಿನ ದಿನಾಂಕ, ಉಳಿದ ದಿನಗಳು ಮತ್ತು ತಡವಾದ ಕೆಲಸಗಳನ್ನು ಒಂದು ಪಟ್ಟಿಯಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಮುಂದಿನ ದಿನಾಂಕ = ಕೊನೆಯ ಬಾರಿ + ಅಂತರ. ತಿಂಗಳುಗಳಲ್ಲಿ ಅದೇ ದಿನ ಉಳಿಯುತ್ತದೆ; ಇಲ್ಲದಿದ್ದರೆ ತಿಂಗಳ ಕೊನೆಯ ದಿನ ತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ (ಅಧಿಕ ವರ್ಷ ಸೇರಿ). ಉಳಿದ ದಿನಗಳು = ಮುಂದಿನ ದಿನಾಂಕ − ಇಂದು. 0 ಕ್ಕಿಂತ ಕಡಿಮೆ ತಡ; 0 ರಿಂದ 7 ಶೀಘ್ರದಲ್ಲೇ. ಅಂತರ 1 ರಿಂದ 3650 ದಿನ, ವಾರ ಅಥವಾ ತಿಂಗಳು. ದಿನಾಂಕಗಳು 1900-01-01 ರಿಂದ 2999-12-31. ಗರಿಷ್ಠ 30 ಕೆಲಸಗಳು. ಜ್ಞಾಪನೆ, ಅಧಿಸೂಚನೆ ಅಥವಾ ಕ್ಯಾಲೆಂಡರ್ ಸಿಂಕ್ ಇಲ್ಲ; ಯಾವುದೂ ಈ ಪುಟದಿಂದ ಹೊರಹೋಗುವುದಿಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/maintenance-next-due-sheet.html",
+      "language": "kn-IN",
+      "title": "ನಿರ್ವಹಣೆಯ ಮುಂದಿನ ದಿನಾಂಕ ಪಟ್ಟಿ",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 526,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "ಫ್ರೀಲ್ಯಾನ್ಸ್ ಪ್ರಾಜೆಕ್ಟ್ ಅಥವಾ ಚಿಕ್ಕ ಕೆಲಸದಿಂದ ಏನು ಬಂತು, ಏನು ಖರ್ಚಾಯಿತು ಎಂದು ಬರೆದು, ಒಟ್ಟು ಲಾಭ, ಮಾರ್ಜಿನ್ ಮತ್ತು ಗಂಟೆಗೆ ನಿವ್ವಳ ಆದಾಯವಿರುವ ಶೀಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಲಾಭ = ಒಟ್ಟು ಆದಾಯ − ಒಟ್ಟು ವೆಚ್ಚ. ಮಾರ್ಜಿನ್ = ಲಾಭ ÷ ಒಟ್ಟು ಆದಾಯ. ಗಂಟೆಗೆ ನಿವ್ವಳ = ಲಾಭ ÷ ವ್ಯಯಿಸಿದ ಗಂಟೆಗಳು. ಮೊತ್ತಗಳನ್ನು ಪೂರ್ಣ ಪೈಸೆಗಳಲ್ಲಿ ಕೂಡಿಸುವುದರಿಂದ ಮೊತ್ತಗಳು ಜಾರುವುದಿಲ್ಲ. ಮೊತ್ತ 0 ರಿಂದ 100,000,000, ಗರಿಷ್ಠ ಎರಡು ದಶಮಾಂಶ; ಗರಿಷ್ಠ 20 ಆದಾಯ ಮತ್ತು 20 ವೆಚ್ಚ ಸಾಲುಗಳು; ಗಂಟೆ 0.25 ರಿಂದ 2000, ಕಾಲು ಗಂಟೆಯ ಹೆಜ್ಜೆಗಳಲ್ಲಿ. ಒಂದೇ ಕರೆನ್ಸಿ, ವಿನಿಮಯ ಇಲ್ಲ, ತೆರಿಗೆ ಅಥವಾ ಲೆಕ್ಕಪತ್ರ ಸಲಹೆ ಇಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/project-profit-sheet.html",
+      "language": "kn-IN",
+      "title": "ಪ್ರಾಜೆಕ್ಟ್ ಲಾಭ ಶೀಟ್",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1776,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಂದ ಗರಿಷ್ಠ ಸಾಮರ್ಥ್ಯ ಮತ್ತು ಇದ್ದರೆ ಸೈಕಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ, ನಂತರ ತಿಂಗಳ ಸವೆತ ಶ್ರೇಣಿ ಮತ್ತು 80% ಕ್ಕೆ ಉಳಿದ ತಿಂಗಳುಗಳಿರುವ ಶೀಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ — ಯಾವಾಗಲೂ ಶ್ರೇಣಿ, ಎಂದಿಗೂ ಅಂಕವಲ್ಲ. ತಿಂಗಳ ಸವೆತ = (100 − ಸಾಮರ್ಥ್ಯ) ÷ ತಿಂಗಳುಗಳಲ್ಲಿ ವಯಸ್ಸು, ±25% ಪಟ್ಟಿಯೊಂದಿಗೆ. 80% ಕ್ಕೆ ತಿಂಗಳುಗಳು = (ಸಾಮರ್ಥ್ಯ − 80) ÷ ಸವೆತ; ಕಡಿಮೆ ಮಿತಿ ಹೆಚ್ಚಿನ ದರದಿಂದ, ಹೆಚ್ಚಿನ ಮಿತಿ ಕಡಿಮೆ ದರದಿಂದ. ತಿಂಗಳ ಸೈಕಲ್ = ಸೈಕಲ್ ÷ ವಯಸ್ಸು. ಸಾಮರ್ಥ್ಯ 60 ರಿಂದ 100 ಪೂರ್ಣ ಶೇಕಡಾ, ಸೈಕಲ್ 0 ರಿಂದ 3000, ಖರೀದಿ ತಿಂಗಳು 2007 ಮತ್ತು 2099 ನಡುವೆ ಹಾಗೂ ವಯಸ್ಸು 1 ರಿಂದ 240 ತಿಂಗಳು, ಗರಿಷ್ಠ 10 ಸಾಧನ. ತಿಂಗಳು YYYY-MM ರೂಪದಲ್ಲಿ. ನಮೂದುಗಳು ಈ ಟ್ಯಾಬ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ; ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಏನನ್ನೂ ಅಳೆಯುವುದಿಲ್ಲ ಅಥವಾ ಓದುವುದಿಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/battery-wear-range-sheet.html",
+      "language": "kn-IN",
+      "title": "ಬ್ಯಾಟರಿ ಸವೆತ ಶ್ರೇಣಿ ಶೀಟ್",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "kn-IN",

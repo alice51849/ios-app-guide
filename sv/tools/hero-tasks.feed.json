@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Jämför köp med din nettoinkomst per timme och ladda ned din egen CSV. Totalt = antal × styckpris. Arbetstimmar = totalbelopp ÷ nettoinkomst per timme. Arbetsdagar = arbetstimmar ÷ timmar per arbetsdag. Ange priser inklusive skatt. Ingen valutaväxling, löneberäkning, sparprognos eller köprådgivning. Visningen avrundas till två decimaler; totaler använder oavrundade värden.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/purchase-worktime-sheet.html",
       "language": "sv",
       "title": "Jämför köp i arbetstimmar",
       "url": "https://open.cait518.cc/ios-app-guide/sv/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/se/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 337,
+          "title": "Ladda ned exempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Skriv in när du senast gjorde varje uppgift för hemmet, bilen eller hälsan och hur ofta den återkommer: du får nästa datum, dagar kvar och det som är försenat i ett nedladdningsbart blad. Nästa förfallodatum = senast gjord + intervall. Vid månader behålls samma dag; finns den inte används månadens sista dag (även skottår). Dagar kvar = förfallodatum − i dag. Försenad under 0; snart från 0 till 7. Intervall från 1 till 3650 dagar, veckor eller månader. Datum mellan 1900-01-01 och 2999-12-31. Upp till 30 uppgifter. Inga påminnelser, notiser eller kalendersynkning; ingenting lämnar den här sidan.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sv/tools/maintenance-next-due-sheet.html",
+      "language": "sv",
+      "title": "Underhållsschema med nästa förfallodatum",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/se/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 309,
+          "title": "Ladda ner exempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Lista vad ett frilansprojekt eller litet uppdrag gav och kostade och ladda ner ett blad med bruttovinst, marginal och netto per timme. Vinst = summa intäkter − summa kostnader. Marginal = vinst ÷ summa intäkter. Netto per timme = vinst ÷ arbetade timmar. Beloppen summeras i hela ören, så totalerna driver inte. Belopp från 0 till 100 000 000 med högst två decimaler, upp till 20 intäkts- och 20 kostnadsrader, timmar från 0,25 till 2000 i kvartssteg. Samma valuta, ingen växling, ingen skatte- eller bokföringsrådgivning.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sv/tools/project-profit-sheet.html",
+      "language": "sv",
+      "title": "Projektets vinstblad",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 897,
+          "title": "Ladda ner exempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Skriv in den maximala kapaciteten från iPhone-inställningarna och, om du har det, antalet laddcykler, och ladda ner ett blad med slitagespannet per månad och månaderna kvar till 80 % – alltid ett spann, aldrig ett betyg. Slitage per månad = (100 − kapacitet) ÷ ålder i månader, visat med ±25 %. Månader till 80 % = (kapacitet − 80) ÷ slitage; undre gräns med den höga takten, övre gräns med den låga. Cykler per månad = cykler ÷ ålder. Kapacitet 60–100 som helt procenttal, cykler 0–3000, köpmånad mellan 2007 och 2099 med 1–240 månaders ålder, upp till 10 enheter. Månader som ÅÅÅÅ-MM. Uppgifterna stannar i den här fliken; ingenting mäts eller läses från din telefon.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sv/tools/battery-wear-range-sheet.html",
+      "language": "sv",
+      "title": "Batterislitage-intervall",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "sv",

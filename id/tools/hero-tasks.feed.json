@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Bandingkan belanja dengan penghasilan bersih per jam, lalu unduh CSV Anda. Total = jumlah × harga akhir. Jam kerja = total ÷ penghasilan bersih per jam. Hari kerja = jam kerja ÷ jam per hari kerja. Masukkan harga termasuk pajak. Tanpa konversi mata uang, penggajian, prediksi tabungan, atau saran membeli. Tampilan dibulatkan dua desimal; total memakai nilai tanpa pembulatan.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html",
       "language": "id",
       "title": "Bandingkan belanja dalam jam kerja",
       "url": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 344,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Catat kapan terakhir kali Anda mengerjakan tiap tugas rumah, mobil, atau kesehatan dan seberapa sering diulang: dapatkan tanggal jatuh tempo berikutnya, sisa hari, dan yang terlambat dalam lembar yang bisa diunduh. Jatuh tempo berikutnya = terakhir dilakukan + interval. Untuk bulan, tanggal yang sama dipertahankan; jika tidak ada, dipakai hari terakhir bulan itu (termasuk tahun kabisat). Sisa hari = jatuh tempo − hari ini. Di bawah 0 terlambat; 0 sampai 7 segera. Interval 1 sampai 3650 hari, minggu, atau bulan. Tanggal antara 1900-01-01 dan 2999-12-31. Maksimal 30 tugas. Tanpa pengingat, notifikasi, atau sinkronisasi kalender; tidak ada data yang keluar dari halaman ini.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/maintenance-next-due-sheet.html",
+      "language": "id",
+      "title": "Lembar jadwal jatuh tempo perawatan",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 322,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Catat apa yang dihasilkan dan dihabiskan sebuah proyek lepas atau pekerjaan kecil, lalu unduh lembar berisi laba kotor, margin, dan bersih per jam. Laba = total pemasukan − total pengeluaran. Margin = laba ÷ total pemasukan. Bersih per jam = laba ÷ jam yang dihabiskan. Jumlah dijumlahkan dalam satuan sen bulat sehingga total tidak melenceng. Jumlah dari 0 sampai 100.000.000 dengan maksimal dua desimal, hingga 20 baris pemasukan dan 20 pengeluaran, jam dari 0,25 sampai 2000 dalam kelipatan seperempat jam. Satu mata uang, tanpa konversi, tanpa saran pajak atau akuntansi.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/project-profit-sheet.html",
+      "language": "id",
+      "title": "Lembar laba proyek",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 910,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Masukkan kapasitas maksimum dari Pengaturan iPhone dan, jika ada, jumlah siklus, lalu unduh lembar berisi rentang keausan per bulan dan sisa bulan sebelum 80% — selalu berupa rentang, bukan skor. Keausan per bulan = (100 − kapasitas) ÷ umur dalam bulan, ditampilkan dengan pita ±25%. Bulan hingga 80% = (kapasitas − 80) ÷ keausan; batas bawah dari laju tinggi, batas atas dari laju rendah. Siklus per bulan = siklus ÷ umur. Kapasitas 60 sampai 100 dalam persen bulat, siklus 0 sampai 3000, bulan pembelian antara 2007 dan 2099 dengan umur 1 sampai 240 bulan, hingga 10 perangkat. Bulan dalam format YYYY-MM. Isian tetap di tab ini; tidak ada yang diukur atau dibaca dari ponsel Anda.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/battery-wear-range-sheet.html",
+      "language": "id",
+      "title": "Rentang keausan baterai",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "id",

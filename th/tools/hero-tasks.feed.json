@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "เปรียบเทียบของที่จะซื้อด้วยรายได้สุทธิต่อชั่วโมง แล้วดาวน์โหลด CSV ของคุณ ยอดรวม = จำนวน × ราคาสุดท้ายต่อชิ้น ชั่วโมง = ยอดรวม ÷ รายได้สุทธิต่อชั่วโมง วัน = ชั่วโมง ÷ ชั่วโมงทำงานต่อวัน ใส่ราคารวมภาษี ไม่แปลงสกุลเงิน คำนวณเงินเดือน คาดการณ์เงินออม หรือแนะนำให้ซื้อ แสดงทศนิยมสองตำแหน่ง โดยคำนวณยอดรวมจากค่าที่ไม่ปัดเศษ",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/th/tools/purchase-worktime-sheet.html",
       "language": "th",
       "title": "เทียบราคาซื้อเป็นชั่วโมงทำงาน",
       "url": "https://open.cait518.cc/ios-app-guide/th/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 519,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "จดว่างานบ้าน รถ หรือสุขภาพแต่ละอย่างทำครั้งล่าสุดเมื่อไรและทำซ้ำทุกกี่วัน แล้วรับวันครบกำหนดถัดไป จำนวนวันที่เหลือ และรายการที่เกินกำหนดเป็นตารางสำหรับดาวน์โหลด ครบกำหนดถัดไป = ทำล่าสุด + ช่วงห่าง หน่วยเดือนจะคงวันที่เดิม หากเดือนนั้นไม่มีวันดังกล่าวจะใช้วันสุดท้ายของเดือน (รวมปีอธิกสุรทิน) วันที่เหลือ = ครบกำหนด − วันนี้ น้อยกว่า 0 คือเกินกำหนด 0 ถึง 7 คือใกล้ครบกำหนด ช่วงห่าง 1 ถึง 3650 วัน สัปดาห์ หรือเดือน วันที่ระหว่าง 1900-01-01 ถึง 2999-12-31 สูงสุด 30 งาน ไม่มีการเตือน การแจ้งเตือน หรือซิงก์ปฏิทิน ข้อมูลไม่ออกจากหน้านี้",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/maintenance-next-due-sheet.html",
+      "language": "th",
+      "title": "ตารางกำหนดครั้งถัดไปของการบำรุงรักษา",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 564,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "จดว่างานฟรีแลนซ์หรืองานเล็ก ๆ ได้เงินมาเท่าไรและมีค่าใช้จ่ายอะไร แล้วดาวน์โหลดตารางที่คำนวณกำไรขั้นต้น อัตรากำไร และกำไรสุทธิต่อชั่วโมง กำไร = รวมรายรับ − รวมรายจ่าย อัตรากำไร = กำไร ÷ รวมรายรับ สุทธิต่อชั่วโมง = กำไร ÷ ชั่วโมงที่ใช้ จำนวนเงินบวกกันเป็นสตางค์เต็มหน่วย ยอดรวมจึงไม่คลาดเคลื่อน จำนวนเงิน 0 ถึง 100,000,000 ทศนิยมไม่เกินสองตำแหน่ง รายรับและรายจ่ายอย่างละไม่เกิน 20 แถว ชั่วโมง 0.25 ถึง 2000 เป็นขั้นละสิบห้านาที สกุลเงินเดียว ไม่แปลงค่าเงิน ไม่มีคำแนะนำด้านภาษีหรือบัญชี",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/project-profit-sheet.html",
+      "language": "th",
+      "title": "ชีตกำไรโปรเจกต์",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1781,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "กรอกความจุสูงสุดจากการตั้งค่า iPhone และจำนวนรอบชาร์จ (ถ้ามี) แล้วดาวน์โหลดตารางที่แสดงช่วงการเสื่อมต่อเดือนและจำนวนเดือนก่อนถึง 80% แสดงเป็นช่วงเสมอ ไม่ใช่คะแนน การเสื่อมต่อเดือน = (100 − ความจุ) ÷ อายุเป็นเดือน แสดงพร้อมแถบ ±25% เดือนถึง 80% = (ความจุ − 80) ÷ การเสื่อม ขอบล่างจากอัตราสูง ขอบบนจากอัตราต่ำ รอบชาร์จต่อเดือน = รอบชาร์จ ÷ อายุ ความจุ 60 ถึง 100 เป็นเปอร์เซ็นต์จำนวนเต็ม รอบชาร์จ 0 ถึง 3000 เดือนที่ซื้อระหว่างปี 2007 ถึง 2099 และอายุ 1 ถึง 240 เดือน สูงสุด 10 อุปกรณ์ เดือนใช้รูปแบบ YYYY-MM ข้อมูลอยู่ในแท็บนี้เท่านั้น ไม่มีการวัดหรืออ่านค่าจากโทรศัพท์ของคุณ",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/battery-wear-range-sheet.html",
+      "language": "th",
+      "title": "ชีตช่วงการเสื่อมแบตเตอรี่",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "th",

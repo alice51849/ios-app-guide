@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "실수령 시급으로 여러 구매 항목을 비교하고 나만의 CSV를 내려받으세요. 합계 = 수량 × 세금 포함 단가. 근무 시간 = 합계 ÷ 실수령 시급. 근무 일수 = 근무 시간 ÷ 하루 근무 시간. 세금이 포함된 가격을 입력하세요. 환전, 급여 계산, 저축 예측이나 구매 조언은 제공하지 않습니다. 표시는 소수 둘째 자리까지이며 합계는 반올림 전 값으로 계산합니다.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ko/tools/purchase-worktime-sheet.html",
       "language": "ko",
       "title": "구매 비용을 근무 시간으로 비교",
       "url": "https://open.cait518.cc/ios-app-guide/ko/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 332,
+          "title": "예시 CSV 내려받기",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "집·자동차·건강 관리 항목마다 마지막으로 한 날짜와 반복 간격을 적으면 다음 예정일, 남은 일수, 기한이 지난 항목을 한 번에 계산해 표로 내려받을 수 있습니다. 다음 예정일 = 마지막 완료 + 간격. 월 단위는 같은 날을 유지하고 그 날이 없는 달은 말일로 조정합니다(윤년 포함). 남은 일수 = 다음 예정일 − 오늘. 0 미만은 기한 지남, 0~7은 임박입니다. 간격은 1~3650일·주·개월. 날짜는 1900-01-01부터 2999-12-31까지. 항목은 최대 30개. 알림, 푸시, 캘린더 동기화는 없으며 데이터는 이 페이지를 벗어나지 않습니다.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/maintenance-next-due-sheet.html",
+      "language": "ko",
+      "title": "정비 다음 예정일 일정표",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 322,
+          "title": "예시 CSV 내려받기",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "프리랜서 프로젝트나 작은 작업의 수입과 지출을 나열하고 매출총이익, 이익률, 시간당 순수입을 계산해 표로 내려받으세요. 이익 = 수입 합계 − 지출 합계. 이익률 = 이익 ÷ 수입 합계. 시간당 순수입 = 이익 ÷ 투입 시간. 금액은 최소 단위 정수로 더하므로 합계가 어긋나지 않습니다. 금액은 0~100,000,000, 소수점 둘째 자리까지. 수입·지출 각각 최대 20행, 시간은 0.25~2000(0.25시간 단위). 같은 통화, 환율 변환 없음, 세무·회계 조언 없음.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/project-profit-sheet.html",
+      "language": "ko",
+      "title": "프로젝트 수익 시트",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 850,
+          "title": "예시 CSV 내려받기",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone 설정의 최대 용량 %와, 있다면 사이클 수를 입력해 월별 마모율 범위와 80%까지 남은 개월 수가 담긴 표를 내려받으세요. 항상 범위로만 보여 주고 점수는 내지 않습니다. 월 마모 = (100 − 용량) ÷ 사용 개월, ±25% 폭으로 표시. 80%까지 개월 = (용량 − 80) ÷ 마모율로, 하한은 높은 마모율에서, 상한은 낮은 마모율에서 계산. 월 사이클 = 사이클 수 ÷ 사용 개월. 용량은 60~100 정수 %, 사이클 수는 0~3000, 구매 월은 2007~2099이며 사용 기간 1~240개월, 최대 10대. 월은 YYYY-MM. 입력은 이 탭에만 남고 기기를 측정하거나 읽지 않습니다.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html",
+      "language": "ko",
+      "title": "배터리 마모 범위 시트",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ko",

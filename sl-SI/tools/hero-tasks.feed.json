@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Primerjajte nakupe z neto urnim dohodkom in prenesite svoj CSV. Skupaj = količina × končna cena. Ure = skupni znesek ÷ neto urni dohodek. Dnevi = ure ÷ ure na delovni dan. Vnesite cene z davkom. Brez pretvorbe valut, obračuna plač, napovedi prihrankov ali nakupnih nasvetov. Prikaz je zaokrožen na dve decimalki; vsote uporabljajo nezaokrožene vrednosti.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/purchase-worktime-sheet.html",
       "language": "sl-SI",
       "title": "Primerjajte nakupe v delovnih urah",
       "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/si/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 319,
+          "title": "Prenesi primer CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Zapišite, kdaj ste nazadnje opravili vsako opravilo za dom, avto ali zdravje in kako pogosto se ponavlja: dobite naslednji rok, preostale dneve in zamude v preglednici za prenos. Naslednji rok = nazadnje + razmik. Pri mesecih ostane isti dan; če ne obstaja, se vzame zadnji dan meseca (tudi v prestopnih letih). Preostalo dni = rok − danes. Pod 0 zamuja; od 0 do 7 kmalu. Razmiki od 1 do 3650 dni, tednov ali mesecev. Datumi med 1900-01-01 in 2999-12-31. Do 30 opravil. Brez opomnikov, obvestil ali sinhronizacije s koledarjem; nič ne zapusti te strani.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/maintenance-next-due-sheet.html",
+      "language": "sl-SI",
+      "title": "Preglednica rokov vzdrževanja",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 323,
+          "title": "Prenesi vzorčni CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Zapiši, kaj je samostojni projekt ali manjše delo prineslo in koliko je stalo, nato prenesi preglednico z bruto dobičkom, maržo in netom na uro. Dobiček = prihodki skupaj − odhodki skupaj. Marža = dobiček ÷ prihodki skupaj. Neto na uro = dobiček ÷ porabljene ure. Zneski se seštevajo v celih centih, zato seštevki ne odstopajo. Zneski od 0 do 100.000.000 z največ dvema decimalkama, do 20 vrstic prihodkov in 20 odhodkov, ure od 0,25 do 2000 po četrt ure. Ista valuta, brez pretvorbe, brez davčnih ali računovodskih nasvetov.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/project-profit-sheet.html",
+      "language": "sl-SI",
+      "title": "List dobička projekta",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 886,
+          "title": "Prenesi vzorčni CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Vnesi največjo zmogljivost iz nastavitev iPhona in, če jo imaš, število ciklov, nato prenesi preglednico z razponom obrabe na mesec in meseci do 80 % – vedno kot razpon, nikoli kot oceno. Obraba na mesec = (100 − zmogljivost) ÷ starost v mesecih, prikazana s pasom ±25 %. Mesecev do 80 % = (zmogljivost − 80) ÷ obraba; spodnja meja iz visoke stopnje, zgornja iz nizke. Ciklov na mesec = cikli ÷ starost. Zmogljivost od 60 do 100 kot cel odstotek, cikli od 0 do 3000, mesec nakupa med 2007 in 2099 pri starosti 1 do 240 mesecev, do 10 naprav. Meseci v obliki LLLL-MM. Vnosi ostanejo v tem zavihku; s telefona se nič ne meri ali bere.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/battery-wear-range-sheet.html",
+      "language": "sl-SI",
+      "title": "Razpon obrabe baterije",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "sl-SI",

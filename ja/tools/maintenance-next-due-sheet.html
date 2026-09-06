@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="家・車・体のメンテナンスについて、前回いつ行ったかと繰り返しの間隔を入力し、次回期限・残り日数・期限切れの項目を一覧にしてダウンロードできます。">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="maintenance-next-due">
+<title>メンテナンス次回期限シート</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/maintenance-next-due-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="無料ツールの成果">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="無料ツールの成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="無料ツールの成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/ja/tools/hero-tasks.feed.json" title="無料ツールの成果">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/023db5f4e02b0f97-hero-task-maintenance.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html","name":"メンテナンス次回期限シート","description":"家・車・体のメンテナンスについて、前回いつ行ったかと繰り返しの間隔を入力し、次回期限・残り日数・期限切れの項目を一覧にしてダウンロードできます。","inLanguage":"ja","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html#worked-example","name":"計算例","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/ja/tools/results/maintenance-next-due-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/json" id="hero-config">{"adapter":"maintenance-next-due-v1","slug":"maintenance-next-due-sheet","locale":"ja","copy":{"title":"メンテナンス次回期限シート","intro":"家・車・体のメンテナンスについて、前回いつ行ったかと繰り返しの間隔を入力し、次回期限・残り日数・期限切れの項目を一覧にしてダウンロードできます。","income":"手取り時給","day":"1日の労働時間","item":"項目","quantity":"数量","price":"税込単価","total":"合計","hours":"必要な労働時間","days":"労働日数","add":"項目を追加","remove":"削除","download":"自分の CSV を保存","reset":"例に戻す","example":"計算例","example_note":"2026-09-05 時点で3項目を確認：期限切れ1件、1週間以内1件、問題なし1件。日付は YYYY-MM-DD 形式です。","formula":"次回期限＝前回実施＋間隔。月単位では同じ日を保ち、その日が存在しない月は月末にします（うるう年を含む）。残り日数＝次回期限−今日。0未満は期限切れ、0〜7は期限間近です。","limits":"間隔は1〜3650の日・週・か月。日付は 1900-01-01 から 2999-12-31 まで。項目は30件まで。リマインダー、通知、カレンダー同期はなく、データはこのページの外に出ません。","privacy":"入力内容はこのタブ内だけで処理します。アップロード、アカウント、入力の追跡、データ保存はありません。再読み込みで変更内容が消えます。","optional":"任意で使えるアプリ","optional_note":"この無料シートにアプリは不要です。最新の機能と価格は各 App Store ページでご確認ください。","error":"各項目に名前、有効な YYYY-MM-DD の日付、1〜3650 の整数の間隔を入力してください。","row_limit":"項目は30件まで、間隔は1〜3650。","tools":"無料ツール","method":"計算式と制限","sources":"出典","result":"あなたの予定表","disclosure":"任意アプリの開発元 Lumi Studio が公開しています。独立したランキングではありません。","download_example":"計算例の CSV を保存","feed":"無料ツールの成果","today":"今日","last_done":"前回実施","interval":"繰り返し","interval_value":"間隔","unit_day":"日","unit_week":"週","unit_month":"か月","next_due":"次回期限","days_left":"残り日数","status":"状態","status_ok":"問題なし","status_due_soon":"7日以内に期限","status_overdue":"期限切れ"},"example":{"today":"2026-09-05","items":[{"last_done":"2026-06-01","interval_value":3,"interval_unit":"month","name":"項目 1"},{"last_done":"2026-08-31","interval_value":1,"interval_unit":"week","name":"項目 2"},{"last_done":"2025-11-30","interval_value":12,"interval_unit":"month","name":"項目 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/a59e47ffe1e998d7-hero-task-maintenance-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/a6dd1f55f7cd475e-hero-task-maintenance-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/ja/tools/index.html">無料ツール</a><span>Lumi Studio</span></nav>
+<h1>項目 · 次回期限</h1><p>家・車・体のメンテナンスについて、前回いつ行ったかと繰り返しの間隔を入力し、次回期限・残り日数・期限切れの項目を一覧にしてダウンロードできます。</p>
+<section class="panel" aria-label="メンテナンス次回期限シート">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="today-date">今日</label><input id="today-date" type="date" min="1900-01-01" max="2999-12-31" value="2026-09-05" required autocomplete="off"></div>
+</div>
+<div id="maintenance-rows"><div class="maintenance-row"><div class="name-field"><label data-label="name" for="task-1-name">項目</label><input id="task-1-name" data-field="name" type="text" maxlength="120" value="項目 1" required autocomplete="off"></div><div class="last-done-field"><label data-label="last_done" for="task-1-last_done">前回実施</label><input id="task-1-last_done" data-field="last_done" type="date" min="1900-01-01" max="2999-12-31" value="2026-06-01" required autocomplete="off"></div><div class="interval-value-field"><label data-label="interval_value" for="task-1-interval_value">間隔</label><input id="task-1-interval_value" data-field="interval_value" type="text" inputmode="numeric" maxlength="4" value="3" required autocomplete="off"></div><div class="interval-unit-field"><label data-label="interval_unit" for="task-1-interval_unit">繰り返し</label><select id="task-1-interval_unit" data-field="interval_unit" required><option value="day">日</option><option value="week">週</option><option value="month" selected>か月</option></select></div><div><p class="output-label">次回期限</p><output data-output="next_due" dir="ltr">2026-09-01</output></div><div><p class="output-label">残り日数</p><output data-output="days_left">-4</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="overdue">期限切れ</output></div><button type="button" data-remove aria-label="削除 · 項目 1">削除</button></div><div class="maintenance-row"><div class="name-field"><label data-label="name" for="task-2-name">項目</label><input id="task-2-name" data-field="name" type="text" maxlength="120" value="項目 2" required autocomplete="off"></div><div class="last-done-field"><label data-label="last_done" for="task-2-last_done">前回実施</label><input id="task-2-last_done" data-field="last_done" type="date" min="1900-01-01" max="2999-12-31" value="2026-08-31" required autocomplete="off"></div><div class="interval-value-field"><label data-label="interval_value" for="task-2-interval_value">間隔</label><input id="task-2-interval_value" data-field="interval_value" type="text" inputmode="numeric" maxlength="4" value="1" required autocomplete="off"></div><div class="interval-unit-field"><label data-label="interval_unit" for="task-2-interval_unit">繰り返し</label><select id="task-2-interval_unit" data-field="interval_unit" required><option value="day">日</option><option value="week" selected>週</option><option value="month">か月</option></select></div><div><p class="output-label">次回期限</p><output data-output="next_due" dir="ltr">2026-09-07</output></div><div><p class="output-label">残り日数</p><output data-output="days_left">2</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="due_soon">7日以内に期限</output></div><button type="button" data-remove aria-label="削除 · 項目 2">削除</button></div><div class="maintenance-row"><div class="name-field"><label data-label="name" for="task-3-name">項目</label><input id="task-3-name" data-field="name" type="text" maxlength="120" value="項目 3" required autocomplete="off"></div><div class="last-done-field"><label data-label="last_done" for="task-3-last_done">前回実施</label><input id="task-3-last_done" data-field="last_done" type="date" min="1900-01-01" max="2999-12-31" value="2025-11-30" required autocomplete="off"></div><div class="interval-value-field"><label data-label="interval_value" for="task-3-interval_value">間隔</label><input id="task-3-interval_value" data-field="interval_value" type="text" inputmode="numeric" maxlength="4" value="12" required autocomplete="off"></div><div class="interval-unit-field"><label data-label="interval_unit" for="task-3-interval_unit">繰り返し</label><select id="task-3-interval_unit" data-field="interval_unit" required><option value="day">日</option><option value="week">週</option><option value="month" selected>か月</option></select></div><div><p class="output-label">次回期限</p><output data-output="next_due" dir="ltr">2026-11-30</output></div><div><p class="output-label">残り日数</p><output data-output="days_left">86</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="ok">問題なし</output></div><button type="button" data-remove aria-label="削除 · 項目 3">削除</button></div></div>
+<template id="maintenance-template"><div class="maintenance-row"><div class="name-field"><label data-label="name" for="task-0-name">項目</label><input id="task-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div class="last-done-field"><label data-label="last_done" for="task-0-last_done">前回実施</label><input id="task-0-last_done" data-field="last_done" type="date" min="1900-01-01" max="2999-12-31" value="2026-09-05" required autocomplete="off"></div><div class="interval-value-field"><label data-label="interval_value" for="task-0-interval_value">間隔</label><input id="task-0-interval_value" data-field="interval_value" type="text" inputmode="numeric" maxlength="4" value="1" required autocomplete="off"></div><div class="interval-unit-field"><label data-label="interval_unit" for="task-0-interval_unit">繰り返し</label><select id="task-0-interval_unit" data-field="interval_unit" required><option value="day">日</option><option value="week">週</option><option value="month" selected>か月</option></select></div><div><p class="output-label">次回期限</p><output data-output="next_due" dir="ltr">—</output></div><div><p class="output-label">残り日数</p><output data-output="days_left">—</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="">—</output></div><button type="button" data-remove aria-label="削除 · ">削除</button></div></template>
+<div class="actions"><button type="button" id="add-task">項目を追加</button><span class="small">項目は30件まで、間隔は1〜3650。</span></div>
+<div class="totals" aria-label="あなたの予定表">
+<div><p>期限切れ</p><output class="total-value" id="count-overdue">1</output></div><div><p>7日以内に期限</p><output class="total-value" id="count-due_soon">1</output></div><div><p>問題なし</p><output class="total-value" id="count-ok">1</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>自分の CSV を保存</button><button type="button" id="reset-example">例に戻す</button></div>
+</fieldset></form><p class="small">入力内容はこのタブ内だけで処理します。アップロード、アカウント、入力の追跡、データ保存はありません。再読み込みで変更内容が消えます。</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>計算例</h2><p>2026-09-05 時点で3項目を確認：期限切れ1件、1週間以内1件、問題なし1件。日付は YYYY-MM-DD 形式です。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">項目</th><th scope="col">前回実施</th><th scope="col">繰り返し</th><th scope="col">次回期限</th><th scope="col">残り日数</th><th scope="col">状態</th></tr></thead><tbody><tr><td>項目 1</td><td>2026-06-01</td><td>3 か月</td><td>2026-09-01</td><td>-4</td><td>期限切れ</td></tr><tr><td>項目 2</td><td>2026-08-31</td><td>1 週</td><td>2026-09-07</td><td>2</td><td>7日以内に期限</td></tr><tr><td>項目 3</td><td>2025-11-30</td><td>12 か月</td><td>2026-11-30</td><td>86</td><td>問題なし</td></tr></tbody><tfoot><tr class="example-total"><td>今日</td><td>2026-09-05</td><td></td><td></td><td></td><td></td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/ja/tools/results/maintenance-next-due-sheet.csv" download>計算例の CSV を保存</a>
+<h2>計算式と制限</h2><p>次回期限＝前回実施＋間隔。月単位では同じ日を保ち、その日が存在しない月は月末にします（うるう年を含む）。残り日数＝次回期限−今日。0未満は期限切れ、0〜7は期限間近です。</p>
+<pre class="formula">2026-06-01 + 3 か月 = 2026-09-01; 2026-09-01 − 2026-09-05 = -4
+2026-08-31 + 1 週 = 2026-09-07; 2026-09-07 − 2026-09-05 = 2
+2025-11-30 + 12 か月 = 2026-11-30; 2026-11-30 − 2026-09-05 = 86</pre>
+<p>間隔は1〜3650の日・週・か月。日付は 1900-01-01 から 2999-12-31 まで。項目は30件まで。リマインダー、通知、カレンダー同期はなく、データはこのページの外に出ません。</p>
+<ul class="small">
+<li>間隔: <bdi dir="ltr">1 ≤ x ≤ 3650</bdi></li>
+<li>前回実施: <bdi dir="ltr">1900-01-01 ≤ x ≤ 2999-12-31</bdi></li>
+<li>項目: <bdi dir="ltr">1 ≤ n ≤ 30</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>任意で使えるアプリ</h2><p>この無料シートにアプリは不要です。最新の機能と価格は各 App Store ページでご確認ください。</p><div class="actions"><a class="button" href="https://apps.apple.com/jp/app/id6790800323?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store で Mochi DoneStamp を入手 →</a></div></section>
+<footer><p>任意アプリの開発元 Lumi Studio が公開しています。独立したランキングではありません。</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">出典</a> · <a href="https://open.cait518.cc/ios-app-guide/ja/tools/hero-tasks.feed.json">無料ツールの成果</a></footer>
+</main></body></html>

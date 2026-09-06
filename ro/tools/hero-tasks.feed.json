@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Compară cumpărăturile folosind venitul net pe oră și descarcă propriul CSV. Total = cantitate × preț final. Ore = total ÷ venit net pe oră. Zile = ore ÷ ore pe zi de lucru. Include taxele în prețuri. Fără conversie valutară, calcul salarial, prognoze de economisire sau sfaturi de cumpărare. Afișare cu două zecimale; totalurile folosesc valori nerotunjite.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ro/tools/purchase-worktime-sheet.html",
       "language": "ro",
       "title": "Compară cumpărăturile în ore de muncă",
       "url": "https://open.cait518.cc/ios-app-guide/ro/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 345,
+          "title": "Descarcă CSV exemplu",
+          "url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Notează când ai făcut ultima dată fiecare sarcină pentru casă, mașină sau sănătate și cât de des se repetă: primești următoarea scadență, zilele rămase și restanțele într-o fișă descărcabilă. Următoarea scadență = ultima dată + interval. La luni se păstrează aceeași zi; dacă nu există, se ia ultima zi a lunii (inclusiv în anii bisecți). Zile rămase = scadență − azi. Restantă sub 0; în curând de la 0 la 7. Intervale de la 1 la 3650 de zile, săptămâni sau luni. Date între 1900-01-01 și 2999-12-31. Până la 30 de sarcini. Fără mementouri, notificări sau sincronizare cu calendarul; nimic nu părăsește această pagină.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ro/tools/maintenance-next-due-sheet.html",
+      "language": "ro",
+      "title": "Fișă cu următoarele scadențe de întreținere",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 317,
+          "title": "Descarcă CSV de exemplu",
+          "url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Notează cât a adus și cât a costat un proiect freelance sau o lucrare mică, apoi descarcă o fișă cu profitul brut, marja și netul pe oră. Profit = total venituri − total cheltuieli. Marjă = profit ÷ total venituri. Net pe oră = profit ÷ ore lucrate. Sumele se adună în bani întregi, așa că totalurile nu deviază. Sume de la 0 la 100.000.000 cu cel mult două decimale, până la 20 de rânduri de venituri și 20 de cheltuieli, ore de la 0,25 la 2000 în pași de sfert de oră. Aceeași monedă, fără conversie, fără consultanță fiscală sau contabilă.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ro/tools/project-profit-sheet.html",
+      "language": "ro",
+      "title": "Fișă de profit pe proiect",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 960,
+          "title": "Descarcă CSV de exemplu",
+          "url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Introdu capacitatea maximă din Setările iPhone-ului și, dacă o ai, numărul de cicluri, apoi descarcă o fișă cu intervalul de uzură lunar și lunile rămase până la 80% – întotdeauna un interval, niciodată un scor. Uzură pe lună = (100 − capacitate) ÷ vechime în luni, afișată cu bandă de ±25%. Luni până la 80% = (capacitate − 80) ÷ uzură; limita minimă din rata mare, limita maximă din rata mică. Cicluri pe lună = cicluri ÷ vechime. Capacitate de la 60 la 100 în procent întreg, cicluri de la 0 la 3000, luna achiziției între 2007 și 2099 cu o vechime de 1 până la 240 de luni, până la 10 dispozitive. Luni în format AAAA-LL. Datele rămân în această filă; nu se măsoară și nu se citește nimic din telefon.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ro/tools/battery-wear-range-sheet.html",
+      "language": "ro",
+      "title": "Interval de uzură a bateriei",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ro",

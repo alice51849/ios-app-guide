@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "உங்கள் நிகர மணிநேர வருமானத்துடன் வாங்குதல்களை ஒப்பிட்டு, சொந்த CSV கோப்பைப் பதிவிறக்குங்கள். மொத்தம் = எண்ணிக்கை × இறுதி விலை. வேலை மணிநேரம் = மொத்தம் ÷ மணிநேர நிகர வருமானம். வேலைநாட்கள் = வேலை மணிநேரம் ÷ தினசரி வேலை மணிநேரம். வரியுடன் விலையை உள்ளிடுங்கள். நாணய மாற்றம், ஊதியக் கணக்கீடு, சேமிப்புக் கணிப்பு அல்லது வாங்கும் ஆலோசனை இல்லை. இரண்டு தசம இடங்கள் காட்டப்படும்; மொத்தம் முழுத் துல்லிய மதிப்புகளிலிருந்து கணக்கிடப்படும்.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/purchase-worktime-sheet.html",
       "language": "ta-IN",
       "title": "வாங்குதல்களை வேலை நேரத்தில் ஒப்பிடுங்கள்",
       "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 531,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கம்",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "வீடு, வாகனம் அல்லது உடல்நலப் பணி ஒவ்வொன்றையும் கடைசியாக எப்போது செய்தீர்கள், எவ்வளவு இடைவெளியில் திரும்பச் செய்ய வேண்டும் என்று குறியுங்கள்; அடுத்த தேதி, மீதமுள்ள நாட்கள், தாமதமான பணிகளை ஒரு அட்டவணையாகப் பதிவிறக்குங்கள். அடுத்த தேதி = கடைசியாக செய்தது + இடைவெளி. மாதங்களில் அதே நாள் தொடரும்; இல்லையெனில் மாதத்தின் கடைசி நாள் (லீப் ஆண்டு உட்பட). மீதமுள்ள நாட்கள் = அடுத்த தேதி − இன்று. 0-க்குக் கீழ் தாமதம்; 0 முதல் 7 வரை விரைவில். இடைவெளி 1 முதல் 3650 நாள், வாரம் அல்லது மாதம். தேதிகள் 1900-01-01 முதல் 2999-12-31 வரை. அதிகபட்சம் 30 பணிகள். நினைவூட்டல், அறிவிப்பு அல்லது காலெண்டர் ஒத்திசைவு இல்லை; எதுவும் இந்தப் பக்கத்தை விட்டு வெளியேறாது.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/maintenance-next-due-sheet.html",
+      "language": "ta-IN",
+      "title": "பராமரிப்பு அடுத்த தேதி அட்டவணை",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 536,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கு",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "ஒரு ஃப்ரீலான்ஸ் திட்டம் அல்லது சிறு வேலையில் என்ன வந்தது, என்ன செலவானது என்று பட்டியலிட்டு, மொத்த லாபம், லாப விகிதம், மணிக்கு நிகர வருமானம் உள்ள தாளைப் பதிவிறக்குங்கள். லாபம் = மொத்த வருமானம் − மொத்த செலவு. லாப விகிதம் = லாபம் ÷ மொத்த வருமானம். மணிக்கு நிகரம் = லாபம் ÷ செலவழித்த மணிநேரம். தொகைகள் முழுப் பைசாவில் கூட்டப்படுவதால் மொத்தங்கள் நகராது. தொகை 0 முதல் 100,000,000 வரை, அதிகபட்சம் இரண்டு தசமங்கள்; அதிகபட்சம் 20 வருமான வரிசைகள், 20 செலவு வரிசைகள்; மணிநேரம் 0.25 முதல் 2000 வரை, கால் மணி படிகளில். ஒரே நாணயம், மாற்று விகிதம் இல்லை, வரி அல்லது கணக்கியல் ஆலோசனை இல்லை.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/project-profit-sheet.html",
+      "language": "ta-IN",
+      "title": "திட்ட லாபத் தாள்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 2051,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கு",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone அமைப்புகளில் உள்ள அதிகபட்ச கொள்ளளவையும், இருந்தால் சுழற்சி எண்ணிக்கையையும் உள்ளிட்டு, மாதத் தேய்மான வரம்பும் 80% வரை மீதமுள்ள மாதங்களும் உள்ள தாளைப் பதிவிறக்குங்கள் — எப்போதும் வரம்பு, ஒருபோதும் மதிப்பெண் இல்லை. மாதத் தேய்மானம் = (100 − கொள்ளளவு) ÷ மாதங்களில் வயது, ±25% பட்டையுடன். 80% வரை மாதங்கள் = (கொள்ளளவு − 80) ÷ தேய்மானம்; குறைந்த எல்லை அதிக விகிதத்திலிருந்து, அதிக எல்லை குறைந்த விகிதத்திலிருந்து. மாதச் சுழற்சி = சுழற்சிகள் ÷ வயது. கொள்ளளவு 60 முதல் 100 முழு சதவீதத்தில், சுழற்சி 0 முதல் 3000, வாங்கிய மாதம் 2007-க்கும் 2099-க்கும் இடையில் வயது 1 முதல் 240 மாதங்கள், அதிகபட்சம் 10 சாதனங்கள். மாதங்கள் YYYY-MM வடிவில். உள்ளீடுகள் இந்தத் தாவலில் மட்டும்; உங்கள் போனிலிருந்து எதுவும் அளக்கவோ படிக்கவோ இல்லை.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/battery-wear-range-sheet.html",
+      "language": "ta-IN",
+      "title": "பேட்டரி தேய்மான வரம்பு தாள்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ta-IN",

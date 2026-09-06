@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Порівняйте покупки за чистим доходом за годину та завантажте власний CSV. Разом = кількість × кінцева ціна. Години = сума ÷ чистий дохід за годину. Дні = години ÷ годин у робочому дні. Вказуйте ціни з податками. Без обміну валют, розрахунку зарплати, прогнозу заощаджень чи порад щодо покупки. Показано два десяткові знаки; підсумки використовують неокруглені значення.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/uk/tools/purchase-worktime-sheet.html",
       "language": "uk",
       "title": "Порівняння покупок у годинах роботи",
       "url": "https://open.cait518.cc/ios-app-guide/uk/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 487,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Зазначте, коли ви останнього разу виконували кожну справу вдома, для авто чи здоров’я і як часто вона повторюється: отримайте наступний термін, дні, що залишилися, і прострочені пункти в таблиці для завантаження. Наступний термін = останній раз + інтервал. Для місяців зберігається те саме число; якщо його немає, береться останній день місяця (з урахуванням високосних років). Залишилось днів = термін − сьогодні. Менше 0 — прострочено; від 0 до 7 — незабаром. Інтервали від 1 до 3650 днів, тижнів або місяців. Дати з 1900-01-01 до 2999-12-31. До 30 справ. Без нагадувань, сповіщень і синхронізації з календарем; дані не залишають цю сторінку.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/maintenance-next-due-sheet.html",
+      "language": "uk",
+      "title": "Таблиця термінів обслуговування",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 449,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Запишіть, що принесла і скільки коштувала фриланс-робота чи невеликий проєкт, і завантажте таблицю з валовим прибутком, маржею та чистим доходом за годину. Прибуток = разом доходів − разом витрат. Маржа = прибуток ÷ разом доходів. Чистий дохід за годину = прибуток ÷ витрачені години. Суми додаються в цілих копійках, тож підсумки не розходяться. Суми від 0 до 100 000 000 щонайбільше з двома знаками після коми, до 20 рядків доходів і 20 витрат, години від 0,25 до 2000 з кроком чверть години. Одна валюта, без конвертації, без податкових чи бухгалтерських порад.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/project-profit-sheet.html",
+      "language": "uk",
+      "title": "Аркуш прибутку проєкту",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1343,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Введіть максимальну ємність із Параметрів iPhone і, якщо знаєте, кількість циклів, потім завантажте таблицю з діапазоном зносу за місяць і місяцями до 80 % — завжди діапазон, ніколи не бал. Знос за місяць = (100 − ємність) ÷ вік у місяцях, показано зі смугою ±25 %. Місяців до 80 % = (ємність − 80) ÷ знос; нижня межа за високим темпом, верхня — за низьким. Циклів за місяць = цикли ÷ вік. Ємність від 60 до 100 цілим відсотком, цикли від 0 до 3000, місяць придбання між 2007 і 2099 за віку від 1 до 240 місяців, до 10 пристроїв. Місяці у форматі РРРР-ММ. Дані залишаються в цій вкладці; з телефону нічого не вимірюється й не зчитується.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/battery-wear-range-sheet.html",
+      "language": "uk",
+      "title": "Діапазон зносу батареї",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "uk",

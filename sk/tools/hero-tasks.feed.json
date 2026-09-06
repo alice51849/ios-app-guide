@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Porovnajte nákupy podľa čistého hodinového príjmu a stiahnite si vlastný CSV. Spolu = počet × konečná cena. Hodiny = celková suma ÷ čistý hodinový príjem. Dni = hodiny ÷ hodiny za pracovný deň. Zadajte ceny vrátane dane. Bez prevodu mien, výpočtu mzdy, predpovede úspor a nákupných rád. Zobrazenie má dve desatinné miesta; súčty používajú nezaokrúhlené hodnoty.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/purchase-worktime-sheet.html",
       "language": "sk",
       "title": "Porovnajte nákupy v hodinách práce",
       "url": "https://open.cait518.cc/ios-app-guide/sk/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 328,
+          "title": "Stiahnuť ukážkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Zapíšte, kedy ste naposledy urobili každú úlohu v domácnosti, pri aute alebo pre zdravie a ako často sa opakuje: získate ďalší termín, zostávajúce dni a to, čo je po termíne, v tabuľke na stiahnutie. Ďalší termín = naposledy + interval. Pri mesiacoch zostáva rovnaký deň; ak neexistuje, použije sa posledný deň mesiaca (vrátane priestupných rokov). Zostáva dní = termín − dnes. Pod 0 po termíne; 0 až 7 čoskoro. Intervaly 1 až 3650 dní, týždňov alebo mesiacov. Dátumy medzi 1900-01-01 a 2999-12-31. Najviac 30 úloh. Žiadne pripomienky, upozornenia ani synchronizácia s kalendárom; nič neopúšťa túto stránku.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/maintenance-next-due-sheet.html",
+      "language": "sk",
+      "title": "Prehľad termínov údržby",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 334,
+          "title": "Stiahnuť vzorové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Vypíšte, čo zákazka na voľnej nohe alebo malý projekt priniesli a koľko stáli, a stiahnite si prehľad s hrubým ziskom, maržou a čistým zárobkom na hodinu. Zisk = príjmy spolu − výdavky spolu. Marža = zisk ÷ príjmy spolu. Čistý zárobok na hodinu = zisk ÷ odpracované hodiny. Sumy sa sčítavajú v celých centoch, takže súčty neujdú. Sumy od 0 do 100 000 000 s najviac dvoma desatinnými miestami, až 20 riadkov príjmov a 20 výdavkov, hodiny od 0,25 do 2000 po štvrťhodinách. Jedna mena, bez prepočtu, bez daňového či účtovného poradenstva.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/project-profit-sheet.html",
+      "language": "sk",
+      "title": "Prehľad zisku projektu",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 952,
+          "title": "Stiahnuť vzorové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Zadajte maximálnu kapacitu z Nastavení iPhonu a, ak ho poznáte, počet cyklov, a stiahnite si tabuľku s rozsahom opotrebenia za mesiac a počtom mesiacov do 80 % – vždy ako rozsah, nikdy ako skóre. Opotrebenie za mesiac = (100 − kapacita) ÷ vek v mesiacoch, zobrazené s pásmom ±25 %. Mesiacov do 80 % = (kapacita − 80) ÷ opotrebenie; dolná hranica z vysokého tempa, horná z nízkeho. Cyklov za mesiac = cykly ÷ vek. Kapacita 60 až 100 ako celé percento, cykly 0 až 3000, mesiac nákupu medzi 2007 a 2099 pri veku 1 až 240 mesiacov, až 10 zariadení. Mesiace v tvare RRRR-MM. Údaje zostávajú v tejto karte; z telefónu sa nič nemeria ani nečíta.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/battery-wear-range-sheet.html",
+      "language": "sk",
+      "title": "Rozsah opotrebenia batérie",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "sk",

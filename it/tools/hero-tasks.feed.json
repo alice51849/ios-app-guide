@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Confronta più acquisti con il tuo reddito orario netto e scarica il tuo CSV. Totale = quantità × prezzo finale. Ore = totale ÷ reddito orario netto. Giornate = ore ÷ ore per giornata lavorativa. Inserisci prezzi comprensivi di imposte. Nessun cambio valuta, calcolo della busta paga, previsione di risparmio o consiglio d’acquisto. Visualizzazione a due decimali; totali senza arrotondamenti intermedi.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/it/tools/purchase-worktime-sheet.html",
       "language": "it",
       "title": "Confronta gli acquisti in ore di lavoro",
       "url": "https://open.cait518.cc/ios-app-guide/it/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 343,
+          "title": "Scarica il CSV di esempio",
+          "url": "https://open.cait518.cc/ios-app-guide/it/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Annota quando hai svolto l’ultima volta ogni attività di casa, auto o salute e ogni quanto si ripete: ottieni la prossima scadenza, i giorni rimanenti e ciò che è in ritardo in una scheda da scaricare. Prossima scadenza = ultima volta + intervallo. Nei mesi si mantiene lo stesso giorno; se non esiste, si usa l’ultimo giorno del mese (anche negli anni bisestili). Giorni rimanenti = scadenza − oggi. In ritardo sotto 0; imminente da 0 a 7. Intervalli da 1 a 3650 giorni, settimane o mesi. Date tra 1900-01-01 e 2999-12-31. Fino a 30 attività. Nessun promemoria, notifica o sincronizzazione del calendario; nulla lascia questa pagina.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/it/tools/maintenance-next-due-sheet.html",
+      "language": "it",
+      "title": "Scheda scadenze di manutenzione",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/it/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 297,
+          "title": "Scarica il CSV di esempio",
+          "url": "https://open.cait518.cc/ios-app-guide/it/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Elenca quanto ha reso e quanto è costato un progetto freelance o un piccolo lavoro e scarica un prospetto con utile lordo, margine e netto per ora. Utile = totale ricavi − totale costi. Margine = utile ÷ totale ricavi. Netto per ora = utile ÷ ore impiegate. Gli importi si sommano in centesimi interi, quindi i totali non si spostano. Importi da 0 a 100.000.000 con al massimo due decimali, fino a 20 righe di ricavi e 20 di costi, ore da 0,25 a 2000 a quarti d’ora. Stessa valuta, nessuna conversione, nessuna consulenza fiscale o contabile.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/it/tools/project-profit-sheet.html",
+      "language": "it",
+      "title": "Foglio profitto progetto",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 895,
+          "title": "Scarica il CSV di esempio",
+          "url": "https://open.cait518.cc/ios-app-guide/it/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Inserisci la capacità massima indicata nelle Impostazioni dell’iPhone e, se lo conosci, il numero di cicli, poi scarica un prospetto con l’intervallo di usura mensile e i mesi che restano prima dell’80% – sempre un intervallo, mai un punteggio. Usura al mese = (100 − capacità) ÷ età in mesi, mostrata con banda ±25%. Mesi all’80% = (capacità − 80) ÷ usura; limite basso con il tasso alto, limite alto con il tasso basso. Cicli al mese = cicli ÷ età. Capacità da 60 a 100 in percentuale intera, cicli da 0 a 3000, mese di acquisto tra 2007 e 2099 con età da 1 a 240 mesi, fino a 10 dispositivi. Mesi nel formato AAAA-MM. I dati restano in questa scheda; nulla viene misurato o letto dal telefono.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/it/tools/battery-wear-range-sheet.html",
+      "language": "it",
+      "title": "Foglio usura batteria",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "it",

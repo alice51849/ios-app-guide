@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import re
+import urllib.parse
 import sys
 import xml.etree.ElementTree as ET
 
@@ -41,7 +42,8 @@ JSON_LD_RE = re.compile(
 )
 APP_META_RE = re.compile(
     r'<meta\s+name="apple-itunes-app"\s+content="'
-    r'app-id=(\d+),\s*app-argument=([^"]+)">',
+    r'app-id=(\d+),\s*app-argument=([^",]+)'
+    r'(?:,\s*affiliate-data=([^"]*))?">',
     re.IGNORECASE,
 )
 PAGE_ID_RE = re.compile(r'<amp-story-page\s+id="([^"]+)">', re.IGNORECASE)
@@ -132,13 +134,19 @@ def validate_story(path, key, locale=None, localization=None):
     )
     # The attribute is HTML-escaped in the document, so a campaign URL with
     # "&pt=...&ct=...&mt=8" arrives here as "&amp;". Compare the decoded value.
-    meta_matches = [
-        (app_id, html.unescape(argument))
-        for app_id, argument in APP_META_RE.findall(document)
-    ]
+    # gen_store_attribution appends affiliate-data (the campaign query) to
+    # every Smart App Banner so the read-only audit can attribute it; when
+    # present it must be exactly this Story's iag_story query.
     campaign_url = appstore_url(key, "iag_story")
-    if meta_matches != [(APPSTORE[key], campaign_url)]:
+    campaign_query = urllib.parse.urlsplit(campaign_url).query
+    meta_matches = [
+        (app_id, html.unescape(argument), html.unescape(affiliate) if affiliate else None)
+        for app_id, argument, affiliate in APP_META_RE.findall(document)
+    ]
+    if [(app_id, argument) for app_id, argument, _ in meta_matches] != [(APPSTORE[key], campaign_url)]:
         raise ValueError(f"{label}: invalid Smart App Banner campaign URL")
+    if meta_matches[0][2] not in (None, campaign_query):
+        raise ValueError(f"{label}: Smart App Banner affiliate-data does not match the Story campaign")
     if f'href="{html.escape(campaign_url, quote=True)}"' not in document:
         raise ValueError(f"{label}: missing direct App Store CTA")
     require_mobile_identity(document, key, canonical, label)

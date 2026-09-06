@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "നിങ്ങളുടെ മണിക്കൂറിലെ അറ്റവരുമാനം ഉപയോഗിച്ച് വാങ്ങലുകൾ താരതമ്യം ചെയ്ത് സ്വന്തം CSV ഡൗൺലോഡ് ചെയ്യൂ. ആകെ = എണ്ണം × അന്തിമ വില. ജോലി മണിക്കൂറുകൾ = ആകെ ÷ മണിക്കൂറിലെ അറ്റവരുമാനം. ജോലി ദിവസങ്ങൾ = ജോലി മണിക്കൂറുകൾ ÷ ദിവസത്തിലെ ജോലി മണിക്കൂറുകൾ. നികുതിയുൾപ്പെട്ട വില നൽകുക. നാണയമാറ്റം, ശമ്പളക്കണക്ക്, സമ്പാദ്യ പ്രവചനം, വാങ്ങൽ ഉപദേശം എന്നിവയില്ല. രണ്ട് ദശാംശസ്ഥാനങ്ങൾ കാണിക്കും; ആകെ കൃത്യമായ മൂല്യങ്ങളിൽ നിന്നാണ് കണക്കാക്കുന്നത്.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/purchase-worktime-sheet.html",
       "language": "ml-IN",
       "title": "വാങ്ങലുകൾ ജോലി മണിക്കൂറുകളിൽ താരതമ്യം ചെയ്യൂ",
       "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 503,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "വീട്, വാഹനം അല്ലെങ്കിൽ ആരോഗ്യ കാര്യങ്ങൾ അവസാനം എപ്പോൾ ചെയ്തു, എത്ര ഇടവേളയിൽ ആവർത്തിക്കണം എന്ന് രേഖപ്പെടുത്തുക; അടുത്ത തീയതി, ശേഷിക്കുന്ന ദിവസങ്ങൾ, വൈകിയവ എന്നിവ ഒരു പട്ടികയായി ഡൗൺലോഡ് ചെയ്യുക. അടുത്ത തീയതി = അവസാനം ചെയ്തത് + ഇടവേള. മാസങ്ങളിൽ അതേ ദിവസം നിലനിർത്തും; ഇല്ലെങ്കിൽ മാസത്തിന്റെ അവസാന ദിവസം (അധിവർഷം ഉൾപ്പെടെ). ശേഷിക്കുന്ന ദിവസങ്ങൾ = അടുത്ത തീയതി − ഇന്ന്. 0-ൽ താഴെ വൈകി; 0 മുതൽ 7 വരെ ഉടൻ. ഇടവേള 1 മുതൽ 3650 ദിവസം, ആഴ്ച അല്ലെങ്കിൽ മാസം. തീയതികൾ 1900-01-01 മുതൽ 2999-12-31 വരെ. പരമാവധി 30 ജോലികൾ. ഓർമ്മപ്പെടുത്തലോ അറിയിപ്പോ കലണ്ടർ സിങ്കോ ഇല്ല; ഒന്നും ഈ പേജ് വിട്ടുപോകുന്നില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/maintenance-next-due-sheet.html",
+      "language": "ml-IN",
+      "title": "അറ്റകുറ്റപ്പണിയുടെ അടുത്ത തീയതി പട്ടിക",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 508,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "ഒരു ഫ്രീലാൻസ് പ്രോജക്റ്റോ ചെറിയ ജോലിയോ എന്ത് കൊണ്ടുവന്നു, എന്ത് ചെലവായി എന്ന് കുറിച്ച്, മൊത്ത ലാഭം, മാർജിൻ, മണിക്കൂറിന് അറ്റ വരുമാനം എന്നിവയുള്ള ഷീറ്റ് ഡൗൺലോഡ് ചെയ്യുക. ലാഭം = മൊത്തം വരവ് − മൊത്തം ചെലവ്. മാർജിൻ = ലാഭം ÷ മൊത്തം വരവ്. മണിക്കൂറിന് അറ്റം = ലാഭം ÷ ചെലവഴിച്ച മണിക്കൂർ. തുകകൾ പൂർണ്ണ പൈസയിൽ കൂട്ടുന്നതിനാൽ ആകെത്തുകകൾ തെന്നിപ്പോകില്ല. തുക 0 മുതൽ 100,000,000 വരെ, പരമാവധി രണ്ട് ദശാംശം; പരമാവധി 20 വരവ്, 20 ചെലവ് വരികൾ; മണിക്കൂർ 0.25 മുതൽ 2000 വരെ, കാൽ മണിക്കൂർ പടികളിൽ. ഒരേ കറൻസി, വിനിമയമില്ല, നികുതി അല്ലെങ്കിൽ അക്കൗണ്ടിംഗ് ഉപദേശമില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/project-profit-sheet.html",
+      "language": "ml-IN",
+      "title": "പ്രോജക്റ്റ് ലാഭ ഷീറ്റ്",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 2035,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone സെറ്റിംഗ്‌സിലെ പരമാവധി കപ്പാസിറ്റിയും ഉണ്ടെങ്കിൽ സൈക്കിൾ എണ്ണവും നൽകി, മാസത്തിലെ തേയ്‌മാന റേഞ്ചും 80% വരെ ശേഷിക്കുന്ന മാസങ്ങളും ഉള്ള ഷീറ്റ് ഡൗൺലോഡ് ചെയ്യുക — എപ്പോഴും റേഞ്ച്, ഒരിക്കലും സ്‌കോർ അല്ല. മാസ തേയ്‌മാനം = (100 − കപ്പാസിറ്റി) ÷ മാസങ്ങളിലെ പ്രായം, ±25% ബാൻഡോടെ. 80% വരെ മാസങ്ങൾ = (കപ്പാസിറ്റി − 80) ÷ തേയ്‌മാനം; കുറഞ്ഞ പരിധി ഉയർന്ന നിരക്കിൽനിന്ന്, കൂടിയ പരിധി കുറഞ്ഞ നിരക്കിൽനിന്ന്. മാസ സൈക്കിൾ = സൈക്കിളുകൾ ÷ പ്രായം. കപ്പാസിറ്റി 60 മുതൽ 100 വരെ പൂർണ്ണ ശതമാനത്തിൽ, സൈക്കിൾ 0 മുതൽ 3000, വാങ്ങിയ മാസം 2007-നും 2099-നും ഇടയിൽ പ്രായം 1 മുതൽ 240 മാസം, പരമാവധി 10 ഉപകരണങ്ങൾ. മാസങ്ങൾ YYYY-MM രൂപത്തിൽ. നൽകിയവ ഈ ടാബിൽ മാത്രം; നിങ്ങളുടെ ഫോണിൽനിന്ന് ഒന്നും അളക്കുകയോ വായിക്കുകയോ ചെയ്യുന്നില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/battery-wear-range-sheet.html",
+      "language": "ml-IN",
+      "title": "ബാറ്ററി തേയ്മാന ശ്രേണി ഷീറ്റ്",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ml-IN",

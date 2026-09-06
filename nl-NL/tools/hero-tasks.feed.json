@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Vergelijk aankopen met je netto-uurinkomen en download je eigen CSV. Totaal = aantal × eindprijs. Werkuren = totaal ÷ netto-uurinkomen. Werkdagen = werkuren ÷ uren per werkdag. Gebruik prijzen inclusief belasting. Geen valutaomrekening, loonberekening, spaarprognose of aankoopadvies. Weergave op twee decimalen; totalen gebruiken niet-afgeronde waarden.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/purchase-worktime-sheet.html",
       "language": "nl-NL",
       "title": "Aankopen vergelijken in werkuren",
       "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 329,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Noteer wanneer je elke taak voor huis, auto of gezondheid het laatst hebt gedaan en hoe vaak die terugkomt: je krijgt de volgende vervaldatum, resterende dagen en achterstallige taken in een downloadbaar overzicht. Volgende vervaldatum = laatst gedaan + interval. Bij maanden blijft de dag gelijk; bestaat die niet, dan geldt de laatste dag van de maand (ook in schrikkeljaren). Dagen resterend = vervaldatum − vandaag. Achterstallig onder 0; binnenkort van 0 tot 7. Intervallen van 1 tot 3650 dagen, weken of maanden. Datums tussen 1900-01-01 en 2999-12-31. Maximaal 30 taken. Geen herinneringen, meldingen of agendasynchronisatie; niets verlaat deze pagina.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/maintenance-next-due-sheet.html",
+      "language": "nl-NL",
+      "title": "Onderhoudsplanning met volgende vervaldatum",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 304,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Zet op een rij wat een freelanceproject of kleine klus heeft opgebracht en gekost, en download een overzicht met brutowinst, marge en netto per uur. Winst = totaal inkomsten − totaal uitgaven. Marge = winst ÷ totaal inkomsten. Netto per uur = winst ÷ bestede uren. Bedragen worden in hele centen opgeteld, dus totalen verschuiven niet. Bedragen van 0 tot 100.000.000 met hoogstens twee decimalen, tot 20 inkomsten- en 20 uitgavenregels, uren van 0,25 tot 2000 in kwartieren. Eén valuta, geen omrekening, geen belasting- of boekhoudadvies.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/project-profit-sheet.html",
+      "language": "nl-NL",
+      "title": "Projectwinstoverzicht",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 895,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Vul de maximumcapaciteit uit de iPhone-instellingen in en, als je die hebt, het aantal laadcycli, en download een blad met het slijtagebereik per maand en de maanden tot 80% – altijd een bereik, nooit een score. Slijtage per maand = (100 − capaciteit) ÷ leeftijd in maanden, getoond met een band van ±25%. Maanden tot 80% = (capaciteit − 80) ÷ slijtage; ondergrens met het hoge tempo, bovengrens met het lage tempo. Cycli per maand = cycli ÷ leeftijd. Capaciteit van 60 tot 100 als heel percentage, cycli van 0 tot 3000, aankoopmaand tussen 2007 en 2099 bij 1 tot 240 maanden oud, tot 10 toestellen. Maanden als JJJJ-MM. Invoer blijft in dit tabblad; er wordt niets op je telefoon gemeten of uitgelezen.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/battery-wear-range-sheet.html",
+      "language": "nl-NL",
+      "title": "Accuslijtage-bereikblad",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "nl-NL",

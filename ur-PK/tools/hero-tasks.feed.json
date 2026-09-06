@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "فی گھنٹہ خالص آمدنی سے خریداری کا موازنہ کریں اور اپنی CSV ڈاؤن لوڈ کریں۔ کل = تعداد × آخری فی اکائی قیمت۔ کام کے گھنٹے = کل ÷ فی گھنٹہ خالص آمدنی۔ کام کے دن = کام کے گھنٹے ÷ روزانہ کام کے گھنٹے۔ قیمت میں ٹیکس شامل کریں۔ کرنسی کی تبدیلی، تنخواہ کا حساب، بچت کی پیش گوئی یا خریداری کا مشورہ نہیں دیا جاتا۔ دو اعشاری ہندسے دکھائے جاتے ہیں؛ کل اصل قدروں سے بنتا ہے۔",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/purchase-worktime-sheet.html",
       "language": "ur-PK",
       "title": "خریداری کا موازنہ کام کے گھنٹوں میں",
       "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 334,
+          "title": "مثال CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "گھر، گاڑی یا صحت کا ہر کام آخری بار کب کیا اور کتنے وقفے سے دوبارہ کرنا ہے لکھیں؛ اگلی تاریخ، باقی دن اور تاخیر والے کام ایک فہرست میں ڈاؤن لوڈ کریں۔ اگلی تاریخ = آخری بار + وقفہ۔ مہینوں میں وہی دن رہتا ہے؛ نہ ہو تو مہینے کا آخری دن لیا جاتا ہے (لیپ سال سمیت)۔ باقی دن = اگلی تاریخ − آج۔ 0 سے کم تاخیر؛ 0 سے 7 جلد۔ وقفہ 1 سے 3650 دن، ہفتے یا مہینے۔ تاریخیں 1900-01-01 سے 2999-12-31 تک۔ زیادہ سے زیادہ 30 کام۔ کوئی یاد دہانی، اطلاع یا کیلنڈر سنک نہیں؛ کچھ بھی اس صفحے سے باہر نہیں جاتا۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/maintenance-next-due-sheet.html",
+      "language": "ur-PK",
+      "title": "دیکھ بھال کی اگلی تاریخ کی فہرست",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 365,
+          "title": "نمونہ CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "کسی فری لانس پروجیکٹ یا چھوٹے کام کی آمدنی اور اخراجات درج کریں، پھر مجموعی منافع، منافع کی شرح اور فی گھنٹہ خالص آمدنی والی شیٹ ڈاؤن لوڈ کریں۔ منافع = کل آمدنی − کل اخراجات۔ منافع کی شرح = منافع ÷ کل آمدنی۔ فی گھنٹہ خالص = منافع ÷ لگائے گئے گھنٹے۔ رقوم پورے پیسوں میں جمع ہوتی ہیں، اس لیے میزان نہیں بہکتے۔ رقم 0 سے 100,000,000 تک زیادہ سے زیادہ دو اعشاریہ ہندسوں کے ساتھ، زیادہ سے زیادہ 20 آمدنی اور 20 خرچ کی سطریں، گھنٹے 0.25 سے 2000 تک چوتھائی گھنٹے کے وقفے سے۔ ایک کرنسی، کوئی تبادلہ نہیں، کوئی ٹیکس یا اکاؤنٹنگ مشورہ نہیں۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/project-profit-sheet.html",
+      "language": "ur-PK",
+      "title": "پروجیکٹ منافع شیٹ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1307,
+          "title": "نمونہ CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone کی سیٹنگز میں دی گئی زیادہ سے زیادہ گنجائش اور، اگر معلوم ہو، سائیکل کی تعداد درج کریں، پھر ماہانہ گھسائی کی رینج اور 80% تک باقی مہینوں والی شیٹ ڈاؤن لوڈ کریں — ہمیشہ رینج، کبھی اسکور نہیں۔ ماہانہ گھسائی = (100 − گنجائش) ÷ مہینوں میں عمر، ±25% بینڈ کے ساتھ۔ 80% تک مہینے = (گنجائش − 80) ÷ گھسائی؛ نچلی حد زیادہ شرح سے، اوپری حد کم شرح سے۔ ماہانہ سائیکل = سائیکل ÷ عمر۔ گنجائش 60 سے 100 تک پورے فیصد میں، سائیکل 0 سے 3000، خریداری کا مہینہ 2007 اور 2099 کے بیچ اور عمر 1 سے 240 مہینے، زیادہ سے زیادہ 10 ڈیوائسز۔ مہینے YYYY-MM کی صورت میں۔ اندراجات اسی ٹیب میں رہتے ہیں؛ آپ کے فون سے کچھ ناپا یا پڑھا نہیں جاتا۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/battery-wear-range-sheet.html",
+      "language": "ur-PK",
+      "title": "بیٹری گھساؤ رینج شیٹ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ur-PK",

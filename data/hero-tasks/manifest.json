@@ -1,286 +1,745 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/data/hero-tasks/manifest.schema.json",
-  "app_locale_pairs": 100,
-  "content_digest": "6491066f9576cf0718d53b3fd290f1f0821b3bbb4f091f28ba4f34849ca9c9d1",
-  "date_modified": "2026-09-05",
+  "app_locale_pairs": 250,
+  "content_digest": "f74ce4b24e6a36c7a320ee4a7ffdf5b70a3d21795ed5ac5ab93763f2fd2cf35e",
+  "date_modified": "2026-09-06",
   "integrations": [
     "ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ar-SA/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "ar-SA/battai.html",
+    "ar-SA/moneytag.html",
+    "bn-BD/battai.html",
     "bn-BD/hourstag.html",
     "bn-BD/hourstaglite.html",
+    "bn-BD/mochidonestamp.html",
+    "bn-BD/moneytag.html",
+    "ca/battai.html",
     "ca/hourstag.html",
     "ca/hourstaglite.html",
+    "ca/mochidonestamp.html",
+    "ca/moneytag.html",
+    "cs/battai.html",
     "cs/hourstag.html",
     "cs/hourstaglite.html",
+    "cs/mochidonestamp.html",
+    "cs/moneytag.html",
+    "da/battai.html",
     "da/hourstag.html",
     "da/hourstaglite.html",
+    "da/mochidonestamp.html",
+    "da/moneytag.html",
     "de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "de-DE/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "de-DE/battai.html",
+    "de-DE/moneytag.html",
     "de-DE/tools/index.html",
+    "el/battai.html",
     "el/hourstag.html",
     "el/hourstaglite.html",
+    "el/mochidonestamp.html",
+    "el/moneytag.html",
     "en-AU/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "en-AU/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-AU/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
+    "en-AU/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+    "en-AU/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
     "en-CA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "en-CA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-CA/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
+    "en-CA/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+    "en-CA/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
     "en-GB/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "en-GB/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-GB/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
+    "en-GB/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+    "en-GB/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
     "en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "en-US/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
+    "en-US/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+    "en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
     "es-ES/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "es-ES/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "es-ES/battai.html",
+    "es-ES/moneytag.html",
     "es-ES/tools/index.html",
+    "es-MX/battai.html",
     "es-MX/hourstag.html",
     "es-MX/hourstaglite.html",
+    "es-MX/mochidonestamp.html",
+    "es-MX/moneytag.html",
+    "fi/battai.html",
     "fi/hourstag.html",
     "fi/hourstaglite.html",
+    "fi/mochidonestamp.html",
+    "fi/moneytag.html",
+    "fr-CA/battai.html",
     "fr-CA/hourstag.html",
     "fr-CA/hourstaglite.html",
+    "fr-CA/mochidonestamp.html",
+    "fr-CA/moneytag.html",
     "fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "fr-FR/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "fr-FR/battai.html",
+    "fr-FR/moneytag.html",
     "fr-FR/tools/index.html",
+    "gu-IN/battai.html",
     "gu-IN/hourstag.html",
     "gu-IN/hourstaglite.html",
+    "gu-IN/mochidonestamp.html",
+    "gu-IN/moneytag.html",
+    "he/battai.html",
     "he/hourstag.html",
     "he/hourstaglite.html",
+    "he/mochidonestamp.html",
+    "he/moneytag.html",
+    "hi/battai.html",
     "hi/hourstag.html",
     "hi/hourstaglite.html",
+    "hi/mochidonestamp.html",
+    "hi/moneytag.html",
     "hi/tools/index.html",
+    "hr/battai.html",
     "hr/hourstag.html",
     "hr/hourstaglite.html",
+    "hr/mochidonestamp.html",
+    "hr/moneytag.html",
+    "hu/battai.html",
     "hu/hourstag.html",
     "hu/hourstaglite.html",
+    "hu/mochidonestamp.html",
+    "hu/moneytag.html",
     "id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "id/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "id/battai.html",
+    "id/moneytag.html",
     "id/tools/index.html",
+    "it/battai.html",
     "it/hourstag.html",
     "it/hourstaglite.html",
+    "it/mochidonestamp.html",
+    "it/moneytag.html",
     "ja/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ja/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "ja/battai.html",
+    "ja/moneytag.html",
     "ja/tools/index.html",
+    "kn-IN/battai.html",
     "kn-IN/hourstag.html",
     "kn-IN/hourstaglite.html",
+    "kn-IN/mochidonestamp.html",
+    "kn-IN/moneytag.html",
     "ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ko/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "ko/battai.html",
+    "ko/moneytag.html",
     "ko/tools/index.html",
+    "ml-IN/battai.html",
     "ml-IN/hourstag.html",
     "ml-IN/hourstaglite.html",
+    "ml-IN/mochidonestamp.html",
+    "ml-IN/moneytag.html",
+    "mr-IN/battai.html",
     "mr-IN/hourstag.html",
     "mr-IN/hourstaglite.html",
+    "mr-IN/mochidonestamp.html",
+    "mr-IN/moneytag.html",
     "ms/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "ms/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "ms/battai.html",
+    "ms/moneytag.html",
     "ms/tools/index.html",
+    "nl-NL/battai.html",
     "nl-NL/hourstag.html",
     "nl-NL/hourstaglite.html",
+    "nl-NL/mochidonestamp.html",
+    "nl-NL/moneytag.html",
+    "no/battai.html",
     "no/hourstag.html",
     "no/hourstaglite.html",
+    "no/mochidonestamp.html",
+    "no/moneytag.html",
+    "or-IN/battai.html",
     "or-IN/hourstag.html",
     "or-IN/hourstaglite.html",
+    "or-IN/mochidonestamp.html",
+    "or-IN/moneytag.html",
+    "pa-IN/battai.html",
     "pa-IN/hourstag.html",
     "pa-IN/hourstaglite.html",
+    "pa-IN/mochidonestamp.html",
+    "pa-IN/moneytag.html",
+    "pl/battai.html",
     "pl/hourstag.html",
     "pl/hourstaglite.html",
+    "pl/mochidonestamp.html",
+    "pl/moneytag.html",
     "pl/tools/index.html",
     "pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "pt-BR/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "pt-BR/battai.html",
+    "pt-BR/moneytag.html",
     "pt-BR/tools/index.html",
     "pt-PT/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "pt-PT/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "pt-PT/battai.html",
+    "pt-PT/moneytag.html",
+    "ro/battai.html",
     "ro/hourstag.html",
     "ro/hourstaglite.html",
+    "ro/mochidonestamp.html",
+    "ro/moneytag.html",
+    "ru/battai.html",
     "ru/hourstag.html",
     "ru/hourstaglite.html",
+    "ru/mochidonestamp.html",
+    "ru/moneytag.html",
     "ru/tools/index.html",
     "sitemap_index.xml",
+    "sk/battai.html",
     "sk/hourstag.html",
     "sk/hourstaglite.html",
+    "sk/mochidonestamp.html",
+    "sk/moneytag.html",
+    "sl-SI/battai.html",
     "sl-SI/hourstag.html",
     "sl-SI/hourstaglite.html",
+    "sl-SI/mochidonestamp.html",
+    "sl-SI/moneytag.html",
+    "sv/battai.html",
     "sv/hourstag.html",
     "sv/hourstaglite.html",
+    "sv/mochidonestamp.html",
+    "sv/moneytag.html",
+    "ta-IN/battai.html",
     "ta-IN/hourstag.html",
     "ta-IN/hourstaglite.html",
+    "ta-IN/mochidonestamp.html",
+    "ta-IN/moneytag.html",
     "ta-IN/tools/index.html",
+    "te-IN/battai.html",
     "te-IN/hourstag.html",
     "te-IN/hourstaglite.html",
+    "te-IN/mochidonestamp.html",
+    "te-IN/moneytag.html",
     "th/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "th/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "th/battai.html",
+    "th/moneytag.html",
     "th/tools/index.html",
     "tr/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "tr/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "tr/battai.html",
+    "tr/moneytag.html",
     "tr/tools/index.html",
+    "uk/battai.html",
     "uk/hourstag.html",
     "uk/hourstaglite.html",
+    "uk/mochidonestamp.html",
+    "uk/moneytag.html",
     "uk/tools/index.html",
+    "ur-PK/battai.html",
     "ur-PK/hourstag.html",
     "ur-PK/hourstaglite.html",
+    "ur-PK/mochidonestamp.html",
+    "ur-PK/moneytag.html",
     "vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "vi/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "vi/battai.html",
+    "vi/moneytag.html",
     "vi/tools/index.html",
+    "zh-Hans/battai.html",
     "zh-Hans/hourstag.html",
     "zh-Hans/hourstaglite.html",
+    "zh-Hans/mochidonestamp.html",
+    "zh-Hans/moneytag.html",
     "zh-Hans/tools/index.html",
     "zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
     "zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+    "zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+    "zh-Hant/battai.html",
+    "zh-Hant/moneytag.html",
     "zh-Hant/tools/index.html"
   ],
   "locale_count": 50,
   "measured_search_volume": false,
   "outputs": {
-    "ar-SA/tools/hero-tasks.feed.json": "4ccde773db6b106f096be095c7441e69f9a2bbfe61a85ceb9dfb5849ae8d23f5",
-    "ar-SA/tools/purchase-worktime-sheet.html": "8bb052c250e9c01499bf06bc622c4d5025af6153079a3082f4716076cf3eeff6",
+    "ar-SA/tools/battery-wear-range-sheet.html": "5b78364ad5fe622e3a7d0b9969487c05fd410d505e4afa6418c33ea7f52230a8",
+    "ar-SA/tools/hero-tasks.feed.json": "663c1ed4f5747fb3d49d269576673c5a233c16df45a8f346e3f9507fdb5c3e51",
+    "ar-SA/tools/maintenance-next-due-sheet.html": "456fc697755bc9d6b37435569f19c2befc6448607aeaea53c6e304b327521e30",
+    "ar-SA/tools/project-profit-sheet.html": "0a6788760e07d4b2d8dd58953536977475cd75a1628b1d282366ce181c3c589e",
+    "ar-SA/tools/purchase-worktime-sheet.html": "0a908c5a810b3fc3d5770ba94b537f9262d0d01631cad85783f62a7541a299e8",
+    "ar-SA/tools/results/battery-wear-range-sheet.csv": "00baf79f07e7b51d5175129b8d01c035380e43f0eb5f984873aabcdfee16f566",
+    "ar-SA/tools/results/maintenance-next-due-sheet.csv": "ad6697c59bac1906e53a8f206be3e83b037239ee3a3fcb801c0b1fa0381634ba",
+    "ar-SA/tools/results/project-profit-sheet.csv": "d37e86ca3dd7dd2fb93e8201fe4967c7fd71b92cc3d84dcc5310299685e08ac3",
     "ar-SA/tools/results/purchase-worktime-sheet.csv": "c630b2fcd059fa4af964127b72dcaee9788ba8012abc7fb2589743c888305cf3",
+    "assets/hero-tasks/023db5f4e02b0f97-hero-task-maintenance.css": "023db5f4e02b0f973523562ec376d251184ce8ed99baa0ff285f58fa7aafaeb3",
+    "assets/hero-tasks/04198e0d5a41cbe3-hero-task-battery.css": "04198e0d5a41cbe363c49e461af205068f61b56c16da4a0b7582e2de4d700b36",
+    "assets/hero-tasks/105d26a0e85463fa-hero-task-battery-ui.js": "105d26a0e85463fad59341d7af5598adced6ca5a9d6ff4d4aefbc68ad5f37b8b",
+    "assets/hero-tasks/3a773bda4f739542-hero-task-profit-core.js": "3a773bda4f7395423e5d7fa51d8e32a7778feecafbbcf5d4f8985702db31b986",
     "assets/hero-tasks/424ab50f8e77fd30-hero-task-core.js": "424ab50f8e77fd308a728bd62fc7c15168740b6390c9acc528096e9ff67198e2",
+    "assets/hero-tasks/4af5389aeaf2cb31-hero-task-profit-ui.js": "4af5389aeaf2cb316130c1ce374d80c496fbf69abd23e944eccb8288d9bccbf3",
+    "assets/hero-tasks/5143a1abe8fad8bb-hero-task-battery-core.js": "5143a1abe8fad8bb6d4a3b36332571d548aa1850456fd439bb365b261b8d6a08",
     "assets/hero-tasks/61b63f55d58fb603-hero-task.css": "61b63f55d58fb603efc1d6ae79184602c5f63b4e309d7909136a9c3d0759eb5c",
     "assets/hero-tasks/8b476e9b77ec9716-hero-task-ui.js": "8b476e9b77ec971620c75b634701bc606244a4a57dfbacebc5738046b10f5cc0",
-    "bn-BD/tools/hero-tasks.feed.json": "4b0a1310ada58df2dc8d987e3c6630318e9ef2d06317fc80909da48e8c97bbca",
-    "bn-BD/tools/purchase-worktime-sheet.html": "9bab18244c03841885b7652c140d07b6dcc5bb558827add411e23dfcd2e67aec",
+    "assets/hero-tasks/a59e47ffe1e998d7-hero-task-maintenance-core.js": "a59e47ffe1e998d7b8cf9fa2044e9f42a7f40119d442b28b358d6fd34c2cdd9e",
+    "assets/hero-tasks/a6dd1f55f7cd475e-hero-task-maintenance-ui.js": "a6dd1f55f7cd475e549e4913ab89e907330f495059605cdd116a9f2b0bd3b843",
+    "assets/hero-tasks/f3e56f097816b172-hero-task-profit.css": "f3e56f097816b172eb706d7cf0599d547fde25cb7b78a6b30bc5d7cb8bc6892d",
+    "bn-BD/tools/battery-wear-range-sheet.html": "84a4956020aedaf65cfee8845a4ee5b53d57630781ba7add73ff306a6ef450a4",
+    "bn-BD/tools/hero-tasks.feed.json": "55cede3c9070ab8ebbfff7fe707cf0acd9d120647e407f0550ef4df2e96a5835",
+    "bn-BD/tools/maintenance-next-due-sheet.html": "eeffdd7d8fc28a391fa54c25e533753c14875116fb6315e9db7f37fc8cff979a",
+    "bn-BD/tools/project-profit-sheet.html": "9822747903aac6a08e3538d1905913edaf43e551214eca96ed6d4a7644072782",
+    "bn-BD/tools/purchase-worktime-sheet.html": "8a8502e64679cb365c5b5052955f1e1e1c12970a25ab3059e9106b6338338cd4",
+    "bn-BD/tools/results/battery-wear-range-sheet.csv": "d6e7a8ecdb9fd1e315017800069ed9c665e976203b55df4c7041f8f0b65807c5",
+    "bn-BD/tools/results/maintenance-next-due-sheet.csv": "2534a70818ce92d508031e113c84b8924473aa8132a726555ca348e385348a86",
+    "bn-BD/tools/results/project-profit-sheet.csv": "14346290fc924456f6309d85b3e5533d31b8e9969393277b09ef534a45a4bb2a",
     "bn-BD/tools/results/purchase-worktime-sheet.csv": "be0aeae825446766950a116a82a1bf6cdc3573a5880eea288b4b3e8b71d92bf3",
-    "ca/tools/hero-tasks.feed.json": "4b0889c913353cf7c709d300e148b6ec1b8a3053b8a095a6c4c42523720f88cf",
-    "ca/tools/purchase-worktime-sheet.html": "870538db940c2eada176c96a38f696e4ebf5cef8eb2a98d8f869c955ae2d4e33",
+    "ca/tools/battery-wear-range-sheet.html": "60ac4cc354dddd4961937290d4633aaebf12da356ad9957a064621eeb9588d25",
+    "ca/tools/hero-tasks.feed.json": "8f4b1e81e79bee95826df06a7ac8c7e1108af7c34437ecaae2288afd329c0623",
+    "ca/tools/maintenance-next-due-sheet.html": "4cd38b271204bd521a9ed6d3c2d525d4e52bd97de5bb1ce631f73d6e83abe141",
+    "ca/tools/project-profit-sheet.html": "e32533e4ad2afbc377f8ebd14670cc10008004fb57d57b2695e0392d3ba9c3d2",
+    "ca/tools/purchase-worktime-sheet.html": "c60e0300e340631a1dc1e9d7028be3f66a61d15cc4886ace9b1c52ffb7c8abcb",
+    "ca/tools/results/battery-wear-range-sheet.csv": "80d5ee4e2b7fe46bf22792da609b7edeeea06b1c2ae424131f59506dd688ab9a",
+    "ca/tools/results/maintenance-next-due-sheet.csv": "7fb50f4416dacbc7a6995558aed51d7bc6fed046a0fa3cf46aa5bc4c1aa8f253",
+    "ca/tools/results/project-profit-sheet.csv": "dcdfeb8fa7ec150d2cdba0f39775d8b8847079518a82ad2b8814fe482b15dc0a",
     "ca/tools/results/purchase-worktime-sheet.csv": "e4c8fdf4123ac523346c30ed0ec345c3ac4837c30a590fd3baaf4eb2e3c405d3",
-    "cs/tools/hero-tasks.feed.json": "0f552c4442be0fa0bfb0ec99141a4f84bcbab83de9b1afbcaa99dc67b2bb833e",
-    "cs/tools/purchase-worktime-sheet.html": "5e8ad35b5c36408860c7b41acd175be6568d70072f2936fd73ead167a8acaef4",
+    "cs/tools/battery-wear-range-sheet.html": "ad76482d96570dce9eec2aad58d9607fabe39b4e1389b7259b3598ea3ff2f1dd",
+    "cs/tools/hero-tasks.feed.json": "0344ae4c8d64cb84ca55ecd79cc36e5a8621bea9912a5bed033751ab57246b5c",
+    "cs/tools/maintenance-next-due-sheet.html": "60743fd15465e7183de1f7acb18c28cfb95208908b1764f94200f6a342405256",
+    "cs/tools/project-profit-sheet.html": "d6771fcc71f1f272091844382edda94d9685e07cb98f217e71284c39bdc2c83f",
+    "cs/tools/purchase-worktime-sheet.html": "674fc60eb22b69c8d77b9d2c0cba3b2a228e94ac17d1aa19ea09824144fa5b86",
+    "cs/tools/results/battery-wear-range-sheet.csv": "513c36ccbec07b441defb2121fe90b323e2fb9cccc895569e905876c371b2eb8",
+    "cs/tools/results/maintenance-next-due-sheet.csv": "43873a5f66a6bdc51036259e9d1f55fb53dc396d54888e59fec74b103ea61633",
+    "cs/tools/results/project-profit-sheet.csv": "95096d1fa2d14f3b94ce248cdcb65380801cab8558988a94137eda5f9ba5235c",
     "cs/tools/results/purchase-worktime-sheet.csv": "bd6d06620179b156f49be62e40cf84560e82160c7034cc77c1dec37b2058f3c2",
-    "da/tools/hero-tasks.feed.json": "ca49e933c55367bf3e57de0fe7e77bd35740b89a0c4209e087e8a47027cc24b3",
-    "da/tools/purchase-worktime-sheet.html": "53fde82636af73bb5ad025447f4c4433666a666cff23e8200d45e6d8ff8183fa",
+    "da/tools/battery-wear-range-sheet.html": "a3169b52f3d072233d3f3ed1e5d217b199cfdf5ffec0a864b0513571290268c9",
+    "da/tools/hero-tasks.feed.json": "f9d095f390b3055c7a9e93304c5c63181fdaebb66a42d684442f9adde8592ce5",
+    "da/tools/maintenance-next-due-sheet.html": "8f91b09fcf974c9a430d78ac36967c278a168ad15de008928ec1027c77a8c5d9",
+    "da/tools/project-profit-sheet.html": "f34488e93c443e89bfd9b29f8aea846a9ab2b993f8ba9172986c94da80d3c8e2",
+    "da/tools/purchase-worktime-sheet.html": "e8f2742272654f80d3694fa597776de83bf55740ea2823d4b41d9b92d7012846",
+    "da/tools/results/battery-wear-range-sheet.csv": "591c47e977f932d24529c4dfc5b54009e873d8e8ab8df64edcc7d4d308ec372f",
+    "da/tools/results/maintenance-next-due-sheet.csv": "8dede43e61b73b424a1400a74e0404de56f2444775982882b2955a09fa12ea4f",
+    "da/tools/results/project-profit-sheet.csv": "bde97bd70d78eb629dcafb643c25f4cd4825903d3d20914fc0c225d3182e8584",
     "da/tools/results/purchase-worktime-sheet.csv": "7f732e71a7a5853ed5e3479f27602e7fe07194578a2fb2a3716ff5514988985e",
     "data/hero-tasks/manifest.schema.json": "155e12c608c8069ae5fba15ee2dce674ae71e6d96b410a7e06fe0d466f5f166f",
-    "de-DE/tools/hero-tasks.feed.json": "fe682a2b054af0868edb0f1d000ea56e21bdecb674efe618ede3cdc08a53ebc5",
-    "de-DE/tools/purchase-worktime-sheet.html": "1d801140155e1f164d28a5e30b45a356e67502011c4188f8dfad84b7350e4f00",
+    "de-DE/tools/battery-wear-range-sheet.html": "0fea1736dd33986b0b5daa528f8f9e479c8baf3c26c874b624d6fc166587cc91",
+    "de-DE/tools/hero-tasks.feed.json": "4741d751b1bc8a5714bf8d6186c02db45647134a856711957373fc778a0ac7a7",
+    "de-DE/tools/maintenance-next-due-sheet.html": "05a059b89c3c42602e6cc9873489ef07d159dc6fba22a20abd5ed14134f09647",
+    "de-DE/tools/project-profit-sheet.html": "96ef43e4ec498e72e8b598cb1381603fbca623ed17759c60cf991f5f84b1bd17",
+    "de-DE/tools/purchase-worktime-sheet.html": "4b5c57f344bcebaba57fb81d390e01a1c09d0af2d22ccb1067465de71e677a89",
+    "de-DE/tools/results/battery-wear-range-sheet.csv": "772ce7f44eefcbe2fce7f9888f8cc2b056f57388b4d350c3b8a1feef5547a55f",
+    "de-DE/tools/results/maintenance-next-due-sheet.csv": "377abeb4ab94f02868e69633905e0a2ebaa4179f12efd3e5440c8a594d1f29c2",
+    "de-DE/tools/results/project-profit-sheet.csv": "18b6922b22c904d8b253242c1d918d11443893ee8d11281c42facb7d10755407",
     "de-DE/tools/results/purchase-worktime-sheet.csv": "4601ab266f6bf545b15d8aa9cdb7416f58606ff3e2318108719652afcec49b07",
-    "el/tools/hero-tasks.feed.json": "897146d0ce9be3e430aab4a33d80e7c6e025c07287d502ecaa8d198a06614ed7",
-    "el/tools/purchase-worktime-sheet.html": "a9ffc0f8cc882c94a69139f6c71ac47a1c3eff6a2a70bc08f53c195e60fbe9d9",
+    "el/tools/battery-wear-range-sheet.html": "9a57f121e7fff97686f74e86c21e31d4e3b9a1ae919c68d9a720fa006b5a36b0",
+    "el/tools/hero-tasks.feed.json": "87598830367438feb922e5d0aa86af4869a259d82f566980323d31ac33740bdd",
+    "el/tools/maintenance-next-due-sheet.html": "22d223e76803bf8e60b575c0e202b6d3390a568ec6c80599fd77bde91a4dbead",
+    "el/tools/project-profit-sheet.html": "2354806a12e7e29e772e3ca598819bc5db9e91e99eb282d2574829ef6cd1f2ab",
+    "el/tools/purchase-worktime-sheet.html": "e0b6aefc755426ceeaae0428bdc1fb046cd6da14d6eb25380edf41a6767a8137",
+    "el/tools/results/battery-wear-range-sheet.csv": "eb10b554cba903a8170bfd01b03663f478b70039342cd2cf6a51175181c33852",
+    "el/tools/results/maintenance-next-due-sheet.csv": "bc2fa879fcbc5dbbc1c1a11754fefcda965ca0fac4a9e46583b395be94fe752d",
+    "el/tools/results/project-profit-sheet.csv": "35bb86b8b948d00595b75eacb1c261dd4a8f88616932e0fc6c72dac3c7aa8575",
     "el/tools/results/purchase-worktime-sheet.csv": "afeb47747adb1b23d61fd0ef0fd1eca319e35f4da3e33e457b0cbd02d4e074ba",
-    "en-AU/tools/hero-tasks.feed.json": "187f0942aa5ee9fbd3873bb71342450b7d65782a836eaf14b3b145a4fbb21a3f",
-    "en-AU/tools/purchase-worktime-sheet.html": "e78f3346fe424d3f5fc2b1f768e758d0b6e6e8e4e95c0bbad6c5d0da08ba6653",
+    "en-AU/tools/battery-wear-range-sheet.html": "e179039b454fb9bb2ada6fbd37c3d97848d45c906b9e6d275ea9b31ca40a3560",
+    "en-AU/tools/hero-tasks.feed.json": "43cb24a08ac94f328f4e8fa9426891ec1cea863d0926a635fdaff91cdc3ebb22",
+    "en-AU/tools/maintenance-next-due-sheet.html": "7a6fe954269aa54fb46ffc7be2c540ad1b71e01689eb20b87be0dde52aabda45",
+    "en-AU/tools/project-profit-sheet.html": "7dae834b344d452d0a9c7eb40fad21cc5e3d89beb0192a6e92c4a8a3e280a85a",
+    "en-AU/tools/purchase-worktime-sheet.html": "f62cca26f3fa329c86b9c3f93c8c4ab1c3e596017e92ab3675e2803d956d37bb",
+    "en-AU/tools/results/battery-wear-range-sheet.csv": "459cfdf2b2b50b28955cd48ab6806cfc967a3c505ef0ececc92be1ffb16a1925",
+    "en-AU/tools/results/maintenance-next-due-sheet.csv": "ca6336c7606182d3946b9fe106758818d84b780a9818c610e7c96a4e88ae569b",
+    "en-AU/tools/results/project-profit-sheet.csv": "706e5f10ec41ccb1530301d4b2f2d01101f4ed0d7095f7ef0dfc3cb489e081d4",
     "en-AU/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
-    "en-CA/tools/hero-tasks.feed.json": "abe03cb4a0dd2e7b69b2fa92ecb24ec7aae5ee7349e413db6c940adb9aa34ac9",
-    "en-CA/tools/purchase-worktime-sheet.html": "74eb4901cb3949b094b56f428cb9830519a6f2e89c6a606e663d391767eaff38",
+    "en-CA/tools/battery-wear-range-sheet.html": "945616f91bd3ba738c4db9e6ea3bceaada4777cc190a80061b9c69079784be5b",
+    "en-CA/tools/hero-tasks.feed.json": "fb610f015a0d9aff8c9b40234659208f6b10fe91e10f826062479123f5176ba8",
+    "en-CA/tools/maintenance-next-due-sheet.html": "2f34c2ad9bd43a59e9ad407f02febc1174b1136ffa820f7c5722c7e3031ac14e",
+    "en-CA/tools/project-profit-sheet.html": "5ff415b51997fc386232ed3118a01f87f61c089f3693b34590a53d3c33578ab5",
+    "en-CA/tools/purchase-worktime-sheet.html": "b23ee7c75e7626c90ab34807b42c67efaeb2ad9a21237b52a324912ee03b98b6",
+    "en-CA/tools/results/battery-wear-range-sheet.csv": "459cfdf2b2b50b28955cd48ab6806cfc967a3c505ef0ececc92be1ffb16a1925",
+    "en-CA/tools/results/maintenance-next-due-sheet.csv": "ca6336c7606182d3946b9fe106758818d84b780a9818c610e7c96a4e88ae569b",
+    "en-CA/tools/results/project-profit-sheet.csv": "706e5f10ec41ccb1530301d4b2f2d01101f4ed0d7095f7ef0dfc3cb489e081d4",
     "en-CA/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
-    "en-GB/tools/hero-tasks.feed.json": "46e46d417367fbacccbaed521de0d2e932f7af2ac30a25f094c3e1ad617fa35a",
-    "en-GB/tools/purchase-worktime-sheet.html": "c6ad4d817295cdffa9799bdbb3008703115e66c7836ad8786fa9a32107a22233",
+    "en-GB/tools/battery-wear-range-sheet.html": "65c816f92ae9ad8eaf7d371d0b171c565b81e828b12516a631956b942a1b0e8d",
+    "en-GB/tools/hero-tasks.feed.json": "8cce7098571674519ed15e63eccb605390205ffd6d8e991605d7bffc1044ece7",
+    "en-GB/tools/maintenance-next-due-sheet.html": "f36b5d6fe28683464c4b66709151dfc1c65f3925b87d022b74bc629c949498d5",
+    "en-GB/tools/project-profit-sheet.html": "0e0edba3df93da0e1e4157987ab9eb6d5425e8ab7facf5618a259fefd3317a60",
+    "en-GB/tools/purchase-worktime-sheet.html": "3ae9c23788abe571fa72453e59f56c0c1f4ea9fe0ab8bb9d04b199c5154d9b5a",
+    "en-GB/tools/results/battery-wear-range-sheet.csv": "459cfdf2b2b50b28955cd48ab6806cfc967a3c505ef0ececc92be1ffb16a1925",
+    "en-GB/tools/results/maintenance-next-due-sheet.csv": "ca6336c7606182d3946b9fe106758818d84b780a9818c610e7c96a4e88ae569b",
+    "en-GB/tools/results/project-profit-sheet.csv": "706e5f10ec41ccb1530301d4b2f2d01101f4ed0d7095f7ef0dfc3cb489e081d4",
     "en-GB/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
-    "en-US/tools/hero-tasks.feed.json": "322b5bfc04b093d0b253b529f42e2f0b681fe2434b3401c3cc5f7c3066862112",
-    "en-US/tools/purchase-worktime-sheet.html": "8442a587b702dc397b6aa8e6dafb95d45a3e4fa17e43a58ff0e7162539f48204",
+    "en-US/tools/battery-wear-range-sheet.html": "35c46994dc70d27733d20f6a9a31e7165e325a092227343f37e1f00ad571188c",
+    "en-US/tools/hero-tasks.feed.json": "fef0eb2b609aaa342cf56d09394963fba717b808cf25daeeeecfdc005d67f4c1",
+    "en-US/tools/maintenance-next-due-sheet.html": "2fd4b9a3d72e7f8c049181d009587cfbab47df8fec50da8c59cdd8edca40b770",
+    "en-US/tools/project-profit-sheet.html": "ce218085ce57e5fd2ec67e9746f43496d6094eea4f242305857d34d2b310cb5d",
+    "en-US/tools/purchase-worktime-sheet.html": "4fda2e29966049d29575e5eefc28652492049ac5b8d3e08ae251aba1de5af9d7",
+    "en-US/tools/results/battery-wear-range-sheet.csv": "459cfdf2b2b50b28955cd48ab6806cfc967a3c505ef0ececc92be1ffb16a1925",
+    "en-US/tools/results/maintenance-next-due-sheet.csv": "ca6336c7606182d3946b9fe106758818d84b780a9818c610e7c96a4e88ae569b",
+    "en-US/tools/results/project-profit-sheet.csv": "706e5f10ec41ccb1530301d4b2f2d01101f4ed0d7095f7ef0dfc3cb489e081d4",
     "en-US/tools/results/purchase-worktime-sheet.csv": "050dd5be9714b6e064dd5dc3fc0c133ed779d79fa034a289856c7a61b6cd7a1b",
-    "es-ES/tools/hero-tasks.feed.json": "4708f037d050c4c04e98690e3ad108b4cc070f19849a6342e6f4146390115dec",
-    "es-ES/tools/purchase-worktime-sheet.html": "75912c35779fb0fae3aa7a5d505c88ad552e2754e5678040e4ac641435da23b6",
+    "es-ES/tools/battery-wear-range-sheet.html": "d79388fef101f5db234e3a755a37b11ba2280fead4dbdcac87c40911c3631e98",
+    "es-ES/tools/hero-tasks.feed.json": "30ca9c2c86b417fbf34d4d7ab5b17f17a0a89f5590b009f2527536bcff9db1fd",
+    "es-ES/tools/maintenance-next-due-sheet.html": "7185fc3c5fc26e3a74e6102a43848344b1e468596384f566c1e7b8c7c7832300",
+    "es-ES/tools/project-profit-sheet.html": "56998f81731e3e38ba1eb9452e7efe50a8d0cde16bdddd36bd4e145d42995959",
+    "es-ES/tools/purchase-worktime-sheet.html": "a3ebaf764043d92d280a3d975d5821700fa331e51792cd33aec65fc1e8ead4a7",
+    "es-ES/tools/results/battery-wear-range-sheet.csv": "9ad49157ba2a493bc5aa6ece153022798cf139606e6dcb22b9ef116fb427fa35",
+    "es-ES/tools/results/maintenance-next-due-sheet.csv": "f78524c99942199157777b0d7ae595f951edaa19f8cb91bc8a7284d8b665a537",
+    "es-ES/tools/results/project-profit-sheet.csv": "0f3f8136e4cd58f917817b04d57665133d16f5352a16a69f9116c4b9dc580f4e",
     "es-ES/tools/results/purchase-worktime-sheet.csv": "7d4f529f14cd9dd59976d8a3b014ab49c7bbe4183ecc4b88b71de5b863b248de",
-    "es-MX/tools/hero-tasks.feed.json": "301d1bef5bea75530fd5b73016a0e55fad50e35fe5eb24cef9f9f3c13036bf8e",
-    "es-MX/tools/purchase-worktime-sheet.html": "b344ba25864a33e722468c3122f6dc3aa60dae564f83fc3b5deed8cc6feb5064",
+    "es-MX/tools/battery-wear-range-sheet.html": "5d55acfac5530f1e74befca8a1873da01e7ec724ea168003f67d5b8cfecaea6b",
+    "es-MX/tools/hero-tasks.feed.json": "dcac3df003c7c102016c76856b67fea7e7295b152805fe7828546992ab42e4cf",
+    "es-MX/tools/maintenance-next-due-sheet.html": "8f78f087bb04dbb466642e873c5679694da299cad2bb6020a66cfcb5da435759",
+    "es-MX/tools/project-profit-sheet.html": "6cc4e1b94cfb9cbecffb2bb1268ee965dd2168e31c077d2370e8a2e8e9e0546e",
+    "es-MX/tools/purchase-worktime-sheet.html": "7656ed028e4a56df0a7968630a73a139a62a36735fe984002fa16917e5791c93",
+    "es-MX/tools/results/battery-wear-range-sheet.csv": "481622f7ecd917d624b2f3c0fc098860b2c4e4b9e727f85bb3a1481eadc99413",
+    "es-MX/tools/results/maintenance-next-due-sheet.csv": "53a5b1e7766002283139b48d34a24840d18662aa113486973cb4fe29df155ced",
+    "es-MX/tools/results/project-profit-sheet.csv": "98345afeb2b070d9b333db8ba28ab9876bb80a3787b079ce2d663bf74ed7d605",
     "es-MX/tools/results/purchase-worktime-sheet.csv": "36c1cb82209c6490283670bc494b2ea8b970b76bd283bb2c8bfc582f268ca565",
-    "fi/tools/hero-tasks.feed.json": "98f9981b1f3036821290e677fcccaf62b736c5b0dc69b32f2e64408f7f76c7e6",
-    "fi/tools/purchase-worktime-sheet.html": "b6ca6e26c121907fffc2851b6f2738a70e11318dc6fe297d279b4a1e4a2da05e",
+    "fi/tools/battery-wear-range-sheet.html": "41781042f2331cc207107d099105eb4499453004a509629d7182665aecdf9107",
+    "fi/tools/hero-tasks.feed.json": "ee05e1b7c872302011ad1ece73f7774ae2cbea8a869bb2392595c895ad8c9202",
+    "fi/tools/maintenance-next-due-sheet.html": "f116fd5aca2f78e331ead937e65b3d5109b9f480e8db73240b755eda34b887e8",
+    "fi/tools/project-profit-sheet.html": "07b41f8c85793728059b70b6693a10d6b684361b137dd7d6bd9485b9a9cd271f",
+    "fi/tools/purchase-worktime-sheet.html": "71ec237262544c33a999613928c87f6047ffe00f98d99e8f590788b64e30b450",
+    "fi/tools/results/battery-wear-range-sheet.csv": "300ff8bd5a3d10668115be99fd014f996b5869609efc51907cd4c8e1a758de87",
+    "fi/tools/results/maintenance-next-due-sheet.csv": "fc6ac955b560bdea57f0a025deca1d811183be21277707bc044930a4d9a5eef0",
+    "fi/tools/results/project-profit-sheet.csv": "a3f773e1ef453328852e893d2f866f07bd20c4556e1f986183060e43b50c5894",
     "fi/tools/results/purchase-worktime-sheet.csv": "cf54e7a294faec6ba31a21b11ada017fd9ef0cfbddd17d97fe26da10b5a902c2",
-    "fr-CA/tools/hero-tasks.feed.json": "014920894e42e94f1cca2014d108c5a55d77b373972f75d3595ac6d910e95b54",
-    "fr-CA/tools/purchase-worktime-sheet.html": "f2fedd1eb44780a63446c39bb44b34bed0b3836bea4633d077b2cf300598c0fa",
+    "fr-CA/tools/battery-wear-range-sheet.html": "5f0d69061c4e39ed9eea58eb619cfe4eec407be9d101989df3e504bd5bf271a9",
+    "fr-CA/tools/hero-tasks.feed.json": "16eefedfbd68710334b847ef49c327f30bcc3d0255be21ed2fff398f0b5f11a1",
+    "fr-CA/tools/maintenance-next-due-sheet.html": "c245e1e7384cea5804bef780428b27bf2f4bd3bf52e6e6e0e226868162ad70d2",
+    "fr-CA/tools/project-profit-sheet.html": "a154bfdf24ca6a940b25721ba33c671addc3e97c67bfbdda90de4f09fdb78578",
+    "fr-CA/tools/purchase-worktime-sheet.html": "db17eba57c7cebbdb2a1b43bb2c921c02b7a31bba40a99f4de1fece706154c89",
+    "fr-CA/tools/results/battery-wear-range-sheet.csv": "211ef2035743ebbd12dfbb5dc236c4a5bd2a21de67860bfbe004aa42b7de75b6",
+    "fr-CA/tools/results/maintenance-next-due-sheet.csv": "37a79f10eb8a70fe6f7455b28de9bf48cdb993a29060f5dfdf1417edc74a67fa",
+    "fr-CA/tools/results/project-profit-sheet.csv": "12e564a1ff5974fb64908e5009d386da7412b473fa33d4e3ed13764bfffb49b1",
     "fr-CA/tools/results/purchase-worktime-sheet.csv": "67d8e8da25fafc577d53c7e0732b522181aae17222c9b30e2838f40af4c3fddd",
-    "fr-FR/tools/hero-tasks.feed.json": "9f6b0d8732050ca0a560d041c79c27fa2eb60df4e26b6f5f712a594fb5ca3c92",
-    "fr-FR/tools/purchase-worktime-sheet.html": "d330f1edcff51a2c2271bcef91741a40413dc20c8140aa02fb8d3eec09a99ed5",
+    "fr-FR/tools/battery-wear-range-sheet.html": "0265d5c8a2efd3d4047e90e592d432417a82b456ca865e36ebecef9c49c9f198",
+    "fr-FR/tools/hero-tasks.feed.json": "5b91b26dceec14fc3c532b0abc28081fd08a2ec35a1dee89482e1dc9cc35db1c",
+    "fr-FR/tools/maintenance-next-due-sheet.html": "8eeae4be35f2b27ad4e9e2bd5bbfb83ce1d42da4a5002f6b0e312f10fe241264",
+    "fr-FR/tools/project-profit-sheet.html": "1e08f0fb4e09ee875aeded15d4ad65fe2d3bb442d7c5b270100235672dc8237c",
+    "fr-FR/tools/purchase-worktime-sheet.html": "e20a757fc8948c2717a9bec9a96a77eac44c070786233784287e938e3d053f62",
+    "fr-FR/tools/results/battery-wear-range-sheet.csv": "fc6302b0e9c231d7b1f90599de5da65a4ecf5bc31e8083f25c85cbb6e05da919",
+    "fr-FR/tools/results/maintenance-next-due-sheet.csv": "d292b85eba5de91ca55d76fdcc592feeb45e01c919fd23f18eac0ecfbfa2b66b",
+    "fr-FR/tools/results/project-profit-sheet.csv": "9282018095d464560dd023379e79ed49412cd22eb89d73d25dc259640d087631",
     "fr-FR/tools/results/purchase-worktime-sheet.csv": "1a8d7f3f338d742fc74c4261c39c07d10160e94498257dda43ff907f30f28a61",
-    "gu-IN/tools/hero-tasks.feed.json": "7b22fc7e53a2652bb98058c915b920c184efee2352e131be0f4e49a1abc1932d",
-    "gu-IN/tools/purchase-worktime-sheet.html": "3bc9ac800ea3b30e23907e9f2e93a6ae8344ed1a092d3d53ab66db3ce9ac789e",
+    "gu-IN/tools/battery-wear-range-sheet.html": "6a75578d0ad7a2a30e1ccac3492c04e0a9a8f595b1affaac20dd9269e738a35f",
+    "gu-IN/tools/hero-tasks.feed.json": "e8116f75f17f925f30a43fea3733ec490d9403119a8de2e9c64e1af05374c0c9",
+    "gu-IN/tools/maintenance-next-due-sheet.html": "43e3d5ec32b75cda26d95e67065e458bdf23a0b851ad4682d4cfa4e9a5a79339",
+    "gu-IN/tools/project-profit-sheet.html": "e19b69f7f9e2eb6edc14122aae53e976eab8f67aa8430224a737b634f83fac75",
+    "gu-IN/tools/purchase-worktime-sheet.html": "6f290b1614ed1a66e212f462bdc68004a53ac00223d535b4dab08b1ee8d834cc",
+    "gu-IN/tools/results/battery-wear-range-sheet.csv": "edafda067d94191dcd7190f8a8bb4d09eb173f07fc571d94641ad040760517fa",
+    "gu-IN/tools/results/maintenance-next-due-sheet.csv": "538e3e1bf09a6492207ae62ba2e80c77d7e4db8806dcb998e5456125be526cd8",
+    "gu-IN/tools/results/project-profit-sheet.csv": "da23762565e6f07fa55b3ea8dfb4a66c00d564d723f2d0241bdbc4fd780ffb5f",
     "gu-IN/tools/results/purchase-worktime-sheet.csv": "2928d7ed0b88be821db0ac294c303d6bee0935182e67c1c1b7e48fd10e2c638a",
-    "he/tools/hero-tasks.feed.json": "12e0753f6be3d3bb4f06ecd814e79ff8f1228d338b548e22aa3d7655848654f8",
-    "he/tools/purchase-worktime-sheet.html": "ac3cc95fc7ad0fd8b24c2f197295a0597e38c054e13a79c54f6e1689f34b67bf",
+    "he/tools/battery-wear-range-sheet.html": "c0dc9e374fbcb20c0b98d2af6f629a0dbed50048b66b60ed4ee3c18000d7ebbc",
+    "he/tools/hero-tasks.feed.json": "3a8601e92839d177a473b369c8de4f1e571becc19b0ebe265879a77fdb44c4a9",
+    "he/tools/maintenance-next-due-sheet.html": "05f581a3173c07d2e715f543af76acae7c3f904c5a53e86f73b04e345fbbbfa6",
+    "he/tools/project-profit-sheet.html": "6018d204f2fde6b04a4ec823666e78fa9178d9f7fbfe0ac00a8daabeb35e3c57",
+    "he/tools/purchase-worktime-sheet.html": "fb2d901205f38fb7c42418b4e30b1036fb21f23bc2579763a619071dcb4f2ed0",
+    "he/tools/results/battery-wear-range-sheet.csv": "de0c2113775547fbe620a0ac4a17e3dd9c0659cfbab23b4d33c85275f85391e4",
+    "he/tools/results/maintenance-next-due-sheet.csv": "c499a83536e330b5d8af225f82c31cd09a25e6055e17a3d83fa56f266e4f2757",
+    "he/tools/results/project-profit-sheet.csv": "5c324bbd02cca5684ceb3acf4bd8ffd0ca6826a1275beb6258a70456eecfac69",
     "he/tools/results/purchase-worktime-sheet.csv": "a6678c14a5eaecbac7bbc8c0d137e80125de48d235b74bd2621acb5b13079ec4",
-    "hi/tools/hero-tasks.feed.json": "204b3350f64b27e789fb143890f9f94eb1b4d94b9dc25c553c28f63827f79bb6",
-    "hi/tools/purchase-worktime-sheet.html": "8e35e3a0b41f8c9344aa0f8b4f3ddb5e86148a564eefc83a3fd04006c4c12dd1",
+    "hi/tools/battery-wear-range-sheet.html": "cd6ad1c9ea6ccc7483518bb493f15b96647ea2fbef3b6bef9b7c6886b756fe67",
+    "hi/tools/hero-tasks.feed.json": "d888e70a6667292f42e9bc2153e03ee8be73c38f45b9d039e6b3fe93eab30ec6",
+    "hi/tools/maintenance-next-due-sheet.html": "ef08873d8ab7a4722c4dc57cf4016f10d7e7552fc7bba8ba12a50c5544508ebd",
+    "hi/tools/project-profit-sheet.html": "3d7c429d2cebf74e3a615dc11b7b25c326ddc21acd9f5c598d7d7437f303e47f",
+    "hi/tools/purchase-worktime-sheet.html": "2edce62cf51895ef4fd8c164a24ce321b53bf4ce4dff29250fb0554449e75e63",
+    "hi/tools/results/battery-wear-range-sheet.csv": "1f4814189b31108685a2a0bce232f981af05d33a18caec8dbc33f7d8965893d6",
+    "hi/tools/results/maintenance-next-due-sheet.csv": "ae47c776c3c6c8311feb0ed0afe32a5a92139db5bcf96b20afae37db661c2cf2",
+    "hi/tools/results/project-profit-sheet.csv": "e4a287c890495db8e951c11e4124ea6a954d04c2ebb0b1d232adc24dc799e56f",
     "hi/tools/results/purchase-worktime-sheet.csv": "9ae92c00abc243dea8f2ac9d54f99891c75ca225a00c658ee64ef910ea4ad737",
-    "hr/tools/hero-tasks.feed.json": "f5b32e73c9019c03cd526820c697ce9cce0f752ce1c741845cb065a157b75faf",
-    "hr/tools/purchase-worktime-sheet.html": "1cdd607a4bc4ccd8566534be911200a5e55cf16305e56a6e36a110c8d029fcc4",
+    "hr/tools/battery-wear-range-sheet.html": "01b5d9e9753384d5839aeffbe8a970881bd7d2cdda62aa7f66d01749c311f919",
+    "hr/tools/hero-tasks.feed.json": "0e3c1336fa36bf135ed757daf37947a863a51c9dc9cc375c050b0cebba01adf8",
+    "hr/tools/maintenance-next-due-sheet.html": "67d811070520ff2b8cda421e7978e0d8887f6b69245884de25517e0cb4127e61",
+    "hr/tools/project-profit-sheet.html": "4339dc16421e801ff6ebb2585714ed1cb9148572ed713e27f16f6f6acbabfc21",
+    "hr/tools/purchase-worktime-sheet.html": "bf7baeee45397b7b5b679e32486356d60d1f34de01f59d29832098edc0ee6ad0",
+    "hr/tools/results/battery-wear-range-sheet.csv": "52c27f16a538e288e64c66a9205785e49f9161288e97eb974c780257e9fe5c0d",
+    "hr/tools/results/maintenance-next-due-sheet.csv": "e659ec95d1ff560f01a781da60ef07e20c37af7aa4dae6be5b037257cc3e91a3",
+    "hr/tools/results/project-profit-sheet.csv": "018b208084b5a4080aee30d73cc4fbed3d086af46100c386dd8a3bfaed8a02e1",
     "hr/tools/results/purchase-worktime-sheet.csv": "a7a7a1a029a5ae3afffe86d48ab6ec5776e0f139a0779efef90b0becccaa7f0f",
-    "hu/tools/hero-tasks.feed.json": "adbd3cc669e1edf27a5ac1add81f79a04ce1fe7778c0d5fd667e1082f90bfbee",
-    "hu/tools/purchase-worktime-sheet.html": "3145f9a6e1cf2fccda1cd01346bc247b6cf5e4107a358553829c7a526e591b65",
+    "hu/tools/battery-wear-range-sheet.html": "08add60ca3955372a6cd79dbbdb3436337e8f375c7a5d75c04016e597f46c9ec",
+    "hu/tools/hero-tasks.feed.json": "bd5654d46f08fdfbd391fd9a05736f65d16a0867d6dbc36c687fcfea65a0f538",
+    "hu/tools/maintenance-next-due-sheet.html": "f28517ac15c8a2c252888cb699da0d9c43dfa9fcee5cc2e03696a661172a0653",
+    "hu/tools/project-profit-sheet.html": "2ebd10d0ea2ef29211f49e1919aa05b699cef40f14a9670c5820c716fe3e4c7b",
+    "hu/tools/purchase-worktime-sheet.html": "05a516eda7522dbb2368019841f67f27593a213475959f4f2b3af4947657a47a",
+    "hu/tools/results/battery-wear-range-sheet.csv": "1780b39c19849c578f0669398ca1f61ddab1476bea2de5663a191d858a331b14",
+    "hu/tools/results/maintenance-next-due-sheet.csv": "52ee48fa6e2315c13d385f21784ac9ce6a0dd306e84b8a4d733604facf6b7f99",
+    "hu/tools/results/project-profit-sheet.csv": "ca8b4a46a47e5dea52d6fc36fdb2a98cb62e73ed0584f3349adc2bcb9a9c4d90",
     "hu/tools/results/purchase-worktime-sheet.csv": "827bde4fe3ce677bea1dea28774a06c2682bd2e9f2fb65a2b11c62b676010605",
-    "id/tools/hero-tasks.feed.json": "d97766ff26b166074624468965dd76d8743b438b5680ca31c6fdb86a3a868894",
-    "id/tools/purchase-worktime-sheet.html": "21a302a764a80b9360caeee65aa4e60e3a831dc86928a075f402e51163d96210",
+    "id/tools/battery-wear-range-sheet.html": "4068839a52459c2b04455ddc9c570c10e9594a9faadfb8ed70372b3fdadc6ba0",
+    "id/tools/hero-tasks.feed.json": "bc47f3de0028fc2928b766962bbe6801f8526581dad6dde5cf4815719438a435",
+    "id/tools/maintenance-next-due-sheet.html": "d1fbef541446589b3ae82cd98f01aed1434f31705a7d9c94041a0a2c28bd746e",
+    "id/tools/project-profit-sheet.html": "daa50d4bbcb3467c441d89c40a8bd65be310fa4ab66fcc2d4ebe7056bcb532cd",
+    "id/tools/purchase-worktime-sheet.html": "280bd1cda319a199928b0c49aebc98550e50a4ea50282eab78ea1159b7268971",
+    "id/tools/results/battery-wear-range-sheet.csv": "615c42f667d64d8b7b348d4d87360e12b91144bb6f1de06b8caa1f2809371224",
+    "id/tools/results/maintenance-next-due-sheet.csv": "aff86191b5a2b0a190ff99018790dbc5829e19f79495bea72d302c08b492c67e",
+    "id/tools/results/project-profit-sheet.csv": "f8986cc1673ed1687c7e0d7a08a3d8723f855ce1f850d4347a105bdf52f52a22",
     "id/tools/results/purchase-worktime-sheet.csv": "d989a2aa4cf6082b0bc08da9c6bcfbd393fca1b7efa9692fb02861a9c93a5948",
-    "it/tools/hero-tasks.feed.json": "2f66f50fb8f65d8a915eb5db7cdff3bb5f52a679709b4aa259d3632e3db490c7",
-    "it/tools/purchase-worktime-sheet.html": "2b485e8624a76d58ee94716fcdf9c782715d52b655a33692ac8ab283b0d9ff85",
+    "it/tools/battery-wear-range-sheet.html": "aa211907e1a5240295700fb3847c214691055ce035c840869ec9d20d80416c86",
+    "it/tools/hero-tasks.feed.json": "5d9207f4af55bb4d2ce32bbceebfca76bf845980fcfcc357f2264be302db44a8",
+    "it/tools/maintenance-next-due-sheet.html": "41cda4e7ef3a9bf54edfb7ee81fbeabfa05dada01407620f5ab0d5b8b241f34c",
+    "it/tools/project-profit-sheet.html": "e60ee98249e7ed3f3eadda093480c9025e3b7f861ef3afa89d23d57d36337f07",
+    "it/tools/purchase-worktime-sheet.html": "5271b0efa05af0f44274130996a3941419c7842b0aece42994ac580463876d6b",
+    "it/tools/results/battery-wear-range-sheet.csv": "dffac2cbfca489aab86d5cfada33f9ed8fc3b821b63c93350198796d26d131a7",
+    "it/tools/results/maintenance-next-due-sheet.csv": "9a554398771af9bb63f41a3a5e111449c2bad394af417c8758cad514dcc2a9da",
+    "it/tools/results/project-profit-sheet.csv": "9e013f6b9a2133dd5450dcdd0bfbd1ba8761ba50b137535a3c88eb71aa5ba02f",
     "it/tools/results/purchase-worktime-sheet.csv": "4d43dda99097491dfa04ebaa92d0dbbe45a93f8953bc1f7b1829ad25106c3642",
-    "ja/tools/hero-tasks.feed.json": "69e4c41dd2f9a2915945a0cc01428ae97a07863a48b72b5a2eced325381172b4",
-    "ja/tools/purchase-worktime-sheet.html": "82c406ece108e0c2446cdd5194b20539ccda21a65e9daa03060bdaa54470e538",
+    "ja/tools/battery-wear-range-sheet.html": "44fb23ff447cc25976b7bbf3e96fe16e700a0a4b6bdf58040abd033edc1b7e23",
+    "ja/tools/hero-tasks.feed.json": "91fa75a2b76eac424735b03ffb21f60595dbc3a1edcdbb2ab4c7867f9fd8afde",
+    "ja/tools/maintenance-next-due-sheet.html": "9a7681752399c40c52b730297b5c8be3a4c765c57864675bd7246d2a04832787",
+    "ja/tools/project-profit-sheet.html": "410dcc4bc999ce2e5389475bad340694ea3634f07abbd4a4836bbbc39e1616de",
+    "ja/tools/purchase-worktime-sheet.html": "f5fc6ffd3e89a89129bb6ae2bc554992b9ed19f43a6f2cae104865b4b23c3ec4",
+    "ja/tools/results/battery-wear-range-sheet.csv": "4fd4e3d3013e79302b2e95591477ac57406157e6eeaf8e2661c7d911152ca860",
+    "ja/tools/results/maintenance-next-due-sheet.csv": "7dadf9d7153bcd4ad885d3d87d814ac04b48d6e3b9af130b6b654d144563b2fb",
+    "ja/tools/results/project-profit-sheet.csv": "1b270c70c306eb0af1967c5fe74796cb1cc6703f9fa17ad3975812282b6db461",
     "ja/tools/results/purchase-worktime-sheet.csv": "3dafe1f253e38380607b748c51ca20f8c735c5a5cfcdb095a8c79b3ea15b7d9d",
-    "kn-IN/tools/hero-tasks.feed.json": "69580c984d44dd2aa7bc6bef84e614cf0f02e37a253fa5be56516ba12164af6b",
-    "kn-IN/tools/purchase-worktime-sheet.html": "cb472eba17324b409ae2b5136e3aa8e72c4aab3cafbd8897a694c1e6b35cbbfb",
+    "kn-IN/tools/battery-wear-range-sheet.html": "522580684e747ac3b93b227032208dcbcb70f42f7b58902a986f61c33d10fcee",
+    "kn-IN/tools/hero-tasks.feed.json": "a4ae53ae0256c2bea19decd3a77a79c1b6ab266894d05f576b96f19da3973219",
+    "kn-IN/tools/maintenance-next-due-sheet.html": "99e1e82703c03de002bc2ae7dfed0790c9ad74ead67a41b68a81032036f7b7c1",
+    "kn-IN/tools/project-profit-sheet.html": "cf2da5ca33986ee5201e9ac36cace332c1db6687509f4798b92589d41702cff1",
+    "kn-IN/tools/purchase-worktime-sheet.html": "54ed4296585d47b355dc5319d74e2b62288cd750db313ba699c1ae3a89e754e3",
+    "kn-IN/tools/results/battery-wear-range-sheet.csv": "a6e930f42c095b4002cba389f7f48776314397be0a541b5b5d0f09c39105e13a",
+    "kn-IN/tools/results/maintenance-next-due-sheet.csv": "bb4949f61159cd39447150c70b6aab80a80eed84c31789387652ea2b20fc5828",
+    "kn-IN/tools/results/project-profit-sheet.csv": "274cff970400fb41450172ed18ae8472dc1a80e563962d54a18e9be40a31f3f1",
     "kn-IN/tools/results/purchase-worktime-sheet.csv": "8ed2013736af4ad84dfdf9e724eee6979bf2bd1f2f96ef9fc7e18f27aeaf5b65",
-    "ko/tools/hero-tasks.feed.json": "503409ec6e06fd9f93fc6a1c198ca95a9d5cb03316705e8f0fc3f6ea8442ca39",
-    "ko/tools/purchase-worktime-sheet.html": "f684d4111c357c28296b2b4554083c77b82bb23bc09bd1242ee95784f0b980c7",
+    "ko/tools/battery-wear-range-sheet.html": "000eb8399e2f9a740d165068a592edc3f9fbe2b0334f39f10bbc91c02160ce43",
+    "ko/tools/hero-tasks.feed.json": "737ad7417698259ae1fb890bf2ee02cc3f281cb96e0e527ce3e47e10fa4b79b2",
+    "ko/tools/maintenance-next-due-sheet.html": "206f86ef0a40381a9bfece6b94cbd34349144216093c3a74b24855a5f8fba85b",
+    "ko/tools/project-profit-sheet.html": "e371000350b2d595a75307ab7653ee3d395e90ac77f9381b232a0f0aead2b26b",
+    "ko/tools/purchase-worktime-sheet.html": "98eea95b5be2b7b8869d2a7768cdbdf66540135b5f3dede848a0d3e8fad59573",
+    "ko/tools/results/battery-wear-range-sheet.csv": "3f9db9e766f9f159c82bc1e7847830bc0f2b618c3c366d86babfb8092653102c",
+    "ko/tools/results/maintenance-next-due-sheet.csv": "0614eb158691bec0673aeae29520fd8928783a156859260bfd88fbb0ce8705fa",
+    "ko/tools/results/project-profit-sheet.csv": "f6379bbae1583a3c77e3a5d81fc4228377f6c9ddb01fae4cca3677031c852c37",
     "ko/tools/results/purchase-worktime-sheet.csv": "71cef52a27666e970305a793a09ce32f4ccf48f00cb17a1775ead776ef9a24f6",
-    "ml-IN/tools/hero-tasks.feed.json": "ff497688704078e79af1504235ffb1e93ece9ab4b34dd1deeaf2e982c881c87d",
-    "ml-IN/tools/purchase-worktime-sheet.html": "3e52bbe7b169cbb0554cbe3fcde15e6c45a8fd274108c7d761b44f789d20eeb6",
+    "ml-IN/tools/battery-wear-range-sheet.html": "04f85d1ddcdf8f6b6cff654c2cc221187f33d3a8d340ce1da517ca74ac79a880",
+    "ml-IN/tools/hero-tasks.feed.json": "ff550e8ee47225ccddb03faf98bfe2535136785145218a165a35d6737ea38dc3",
+    "ml-IN/tools/maintenance-next-due-sheet.html": "4bd6b4742bc34b22f6ac0a704d9b683b4fcdc380e663d0109d9f7788de8814ab",
+    "ml-IN/tools/project-profit-sheet.html": "cda66aeba95b896b580a9c59b2b9577acbd3a9da68a4eeb25aeffe2efde59e47",
+    "ml-IN/tools/purchase-worktime-sheet.html": "01cfdc9d4da56ee07c21722ecdb1eb72276bc950f2f216c43569f6d385448010",
+    "ml-IN/tools/results/battery-wear-range-sheet.csv": "010ca18a7db63571f0538b2ddd79bc8952191069d4bf592193393ddd46977c2b",
+    "ml-IN/tools/results/maintenance-next-due-sheet.csv": "ed10799466650923c56870409d76fc3b9eda5ec228fd8206affe5d2dd3ca60ed",
+    "ml-IN/tools/results/project-profit-sheet.csv": "dfd2129af43b07c3b2b5c6060dd639ff7e8d39a4866b6b51ab27136bce034857",
     "ml-IN/tools/results/purchase-worktime-sheet.csv": "51d52aa26809f9b4f1fedbd6830bf9c811f5b544c6102552771221b5cf519c01",
-    "mr-IN/tools/hero-tasks.feed.json": "23361c4e29c7c4b5a1aa70f6d42f044eba5d24a09be17e2bdf279b35f371cf56",
-    "mr-IN/tools/purchase-worktime-sheet.html": "912462212c05e577f9277bc8ac239673129a8e97e5a2fe861997ff18aabf2c1e",
+    "mr-IN/tools/battery-wear-range-sheet.html": "a24c585e7c6ce2537603b93736cab9057dbfc7a5c25ff3b037d32fc41a138203",
+    "mr-IN/tools/hero-tasks.feed.json": "61650f532a2003c57730fb329e9428b8aadbecc6841a053db4c12b38ce27aebb",
+    "mr-IN/tools/maintenance-next-due-sheet.html": "e0e6c84f83391d499882556bdac9b8e8788890686052e9356d3c5ca5c8a45303",
+    "mr-IN/tools/project-profit-sheet.html": "29bdcdb8762a6daa8a92e61da688f4bf486b472bd2c4f1b067a637a1080bd1c3",
+    "mr-IN/tools/purchase-worktime-sheet.html": "247cf9216e4659a12ce87a7bffe9f181df372a085068089f9da3e87b869809a7",
+    "mr-IN/tools/results/battery-wear-range-sheet.csv": "b0fdf816c79fcc1cc1c75575a3344406e33335afb99fecd501cd0205a21078ad",
+    "mr-IN/tools/results/maintenance-next-due-sheet.csv": "4d5b9c3d07fb0010acb76f954a56c0aa2db172912a03df220b93d2260aa1650c",
+    "mr-IN/tools/results/project-profit-sheet.csv": "f0448720e44581cf4d3798e173ca6945866a4bd0f9b86a688877f8beb6852e18",
     "mr-IN/tools/results/purchase-worktime-sheet.csv": "75ad2556e7d9829337c1653561b89c22f610bd64395de96864d70bf061f7f192",
-    "ms/tools/hero-tasks.feed.json": "2dfaa1323a9577ca6ce792122f1f99221cf9e3622272168a8ca4ecfbe963a57d",
-    "ms/tools/purchase-worktime-sheet.html": "d346c77e7d673a6742ae303d1771cb5d5fbc8ec57883303e4d83f82548709918",
+    "ms/tools/battery-wear-range-sheet.html": "1f6f07578ef62dfc5a07d8f6acd7391c5026fcc77fa8aecc47ac94d7dbe2e219",
+    "ms/tools/hero-tasks.feed.json": "824ce596c726af8ba98444f8e3d1cea32022856d546f73d7203c7938df544ab8",
+    "ms/tools/maintenance-next-due-sheet.html": "5e544d0c21aba7f32eac98eb3a7cd53ae058ad841aa2bde11f3a83858fb1944c",
+    "ms/tools/project-profit-sheet.html": "c0a1fde247fb2aa945c271db68e63b4b0b66a92b737c27fa4ea23c688759875b",
+    "ms/tools/purchase-worktime-sheet.html": "a4dc0a3e06a3fe21f9bdb299826e308a5f81b2c5e64ade686c69cfe8732f9408",
+    "ms/tools/results/battery-wear-range-sheet.csv": "9ab9db69fb6c0d26fcae8d1768b4a1a27fc028b6f4224080e8e629e226cd7418",
+    "ms/tools/results/maintenance-next-due-sheet.csv": "70cfff2e6fc0291ec9202d2a02c851bc30f74bb9b3a3a5403dd7cb8997a9cd97",
+    "ms/tools/results/project-profit-sheet.csv": "ad163cf7fa82bb7e8abf40f66febc26cb815e311c7ca67e90b57e58087e3fdab",
     "ms/tools/results/purchase-worktime-sheet.csv": "0e7862c23807a81c78b36ae8255225519b00ee26dbd53ea2352008c5dd00357f",
-    "nl-NL/tools/hero-tasks.feed.json": "108e7619ee9023146fd1bfe7d123ab4818d5ca845cfbb49601db2a4a5956b3bc",
-    "nl-NL/tools/purchase-worktime-sheet.html": "632e95d5ffe7f755d8b1b1f38f14e6866d2587dca1778c8a0d04860b761559bb",
+    "nl-NL/tools/battery-wear-range-sheet.html": "ab1cba2b90ad3d3fc61bae00a71166c247e7847a380a52b42a68a213c5da24b9",
+    "nl-NL/tools/hero-tasks.feed.json": "8878e3253915be47a1780a14b63b88f761d6544d429a7221b5b79493d47590c3",
+    "nl-NL/tools/maintenance-next-due-sheet.html": "2a28c3b5361c8c34b9ac9297993e17310ae42d8a5d7dbb59ef113aa30500a314",
+    "nl-NL/tools/project-profit-sheet.html": "13be41b984994e205895c48c0137715567bf8f0e20f8e0cc673283ef59d56fe4",
+    "nl-NL/tools/purchase-worktime-sheet.html": "d6547d7fab9791e5eb93b8bc0041a94fec41a455ae40c2f8a81c375d4c353e50",
+    "nl-NL/tools/results/battery-wear-range-sheet.csv": "51cf6c6de0c6e97f4cca3d0c7705c1112e953765ec5dba959290de1bf211100b",
+    "nl-NL/tools/results/maintenance-next-due-sheet.csv": "442fd6b57e4a134144ef7307bbd5643392bfbcbd5f8e59ad52dfed669586864e",
+    "nl-NL/tools/results/project-profit-sheet.csv": "37998037a898a5169a33d2816cebb361dee2d983c0ed797cb43365b6669f2f81",
     "nl-NL/tools/results/purchase-worktime-sheet.csv": "4d6b600cfec8ec72ee86afb22a7b92b64453c07064ed250d47e22e640d5e233c",
-    "no/tools/hero-tasks.feed.json": "0c3c550454c7afa825071915f8da6407a1464f25f2e2a297b3e2fa0d23005825",
-    "no/tools/purchase-worktime-sheet.html": "c0a07df2d23b5f49d16e0f1fcdf668bb6126984ea5feb6793497d399dc52542e",
+    "no/tools/battery-wear-range-sheet.html": "ce84dd4122b3c3b48c94980294fbfdea78024c7433b0646203f735a40255dd4a",
+    "no/tools/hero-tasks.feed.json": "451d384ebf6a87d9e2c367eff06b4c8b7204fa4045f1d03d2ff927cc71910e7e",
+    "no/tools/maintenance-next-due-sheet.html": "6e36bf2150491d78d9165ca27de7db75b22c3f424096564799e76e0eb58f7966",
+    "no/tools/project-profit-sheet.html": "738ec0bc9da40a82e2418275584cd2b70b32b1e32de840158c40887a7607b678",
+    "no/tools/purchase-worktime-sheet.html": "4933673a398f2711f7062ece750c896d6c321c14a25a2ef9a8b7e45efed7924b",
+    "no/tools/results/battery-wear-range-sheet.csv": "6c03ed85055a8b78fd48c65f3339da1c25e5d3a778c6a22ecf16a034143b016b",
+    "no/tools/results/maintenance-next-due-sheet.csv": "886530beb6e912ea8d2d0b14d79081ecb4df26a7b252a8f918006610d398d1cb",
+    "no/tools/results/project-profit-sheet.csv": "63c01996dfa192f4d06afd6e278398b4937a05a639145198b7ac54dbe85726de",
     "no/tools/results/purchase-worktime-sheet.csv": "07fdea7de4eb8925c0005db3ca7929dff813e62590db87ea4c0c372468fb42f4",
-    "or-IN/tools/hero-tasks.feed.json": "11df5a2353b8364ec8e6511056da3ec0770afbe8d192ed97cc8e8897a0fdc15d",
-    "or-IN/tools/purchase-worktime-sheet.html": "a15db227400537b1374c3e739828b0f0a722e6ba2b37a14a01d21361b3aa2633",
+    "or-IN/tools/battery-wear-range-sheet.html": "9854ccfa93e7896f1fa91dbe8f083e999cb3cf6dfb14c3d55b571eda23a933d6",
+    "or-IN/tools/hero-tasks.feed.json": "313088036bba93ced2b9c0db4241bf63abd8d3afdf80a7e05b100f62869ea87b",
+    "or-IN/tools/maintenance-next-due-sheet.html": "5a2f5c4d9c20076d38a11515e373324ad809d9f57c80c78113f3f791de3ebc70",
+    "or-IN/tools/project-profit-sheet.html": "9bc99eaf5ca59324afa7c0594dd511bf58ab0ac1206700a89552cb142341a22a",
+    "or-IN/tools/purchase-worktime-sheet.html": "315ea9f9ae3d903646b6c8a7614118af33493c25a6fe58abdaf800e7a8d07429",
+    "or-IN/tools/results/battery-wear-range-sheet.csv": "2b523e23b04aa06515ccd2ffb236363cde0c820a53e58fec86d31a5deda57cf1",
+    "or-IN/tools/results/maintenance-next-due-sheet.csv": "f16da5dda106f3e7a65d4ef88d7f2e2df2ea5d666cedac580639093812f6f292",
+    "or-IN/tools/results/project-profit-sheet.csv": "b8393d0e550e92e2bf9bb061e5ee1a53796cafd5832bdb393fdd55933c64e29b",
     "or-IN/tools/results/purchase-worktime-sheet.csv": "9c452527bac5e34a00d978bca8a49b90d2d6a4f89d7f0f00eecadfe7e05bc8aa",
-    "pa-IN/tools/hero-tasks.feed.json": "a2f3ccbcfb9ebb1dfd0fc517e26ba9762317476c2ecfe0c7973e864fe0e83b2e",
-    "pa-IN/tools/purchase-worktime-sheet.html": "137603fb34783a311e859d695d3a989c34ed5a664746580e3ff3247faada134d",
+    "pa-IN/tools/battery-wear-range-sheet.html": "a25dd2c5f4e7e14debb6c29972725a6ac73ada1ca296d4df67a72423b21631c1",
+    "pa-IN/tools/hero-tasks.feed.json": "40771c439f3bab3536c252dee633dc844349a0ae9bcda5c621be57ec5e4045ba",
+    "pa-IN/tools/maintenance-next-due-sheet.html": "8b1e0318c6f31ba86c07477ed610d0198e4e90268f457664559bdeeff3483155",
+    "pa-IN/tools/project-profit-sheet.html": "4015d2a24f4951ba8eaa5dcee64c1e771a556b8e1ac6d1cab80022ad14689efa",
+    "pa-IN/tools/purchase-worktime-sheet.html": "1d55852983d005aeb322a91c6eb9496f0de9d0cbd01fd5d924ed3061f79e5f31",
+    "pa-IN/tools/results/battery-wear-range-sheet.csv": "c771ceb9a7d5450fa41673483303b833ef6ae108827e58c7e49c44b4e70b85fb",
+    "pa-IN/tools/results/maintenance-next-due-sheet.csv": "3b89eca913637bc362deab90ea6d947a07598630001576cde373a95e48d5790a",
+    "pa-IN/tools/results/project-profit-sheet.csv": "56cbad7a81e8f0dbecb58668d87ee811ec7e8edd1acb83aa4bcdb14f38c4063b",
     "pa-IN/tools/results/purchase-worktime-sheet.csv": "e6ab0c1df99b97c39e209024333e439776d875db15f118760b0536cbc7a0f764",
-    "pl/tools/hero-tasks.feed.json": "caa7464ff33869d440c77bb92fe6d05271754e94628afc9c28784efa2c4dc4f5",
-    "pl/tools/purchase-worktime-sheet.html": "b8ade8658e4dfb15e02809d5c82bf7602c16b412c70fbd3d1c7ddc18021f7435",
+    "pl/tools/battery-wear-range-sheet.html": "ec0d3caa87553ffb77b32cb094334d20e8785e9d02cd9b06e29966a27eca7297",
+    "pl/tools/hero-tasks.feed.json": "131fddbfc565fa45b307e18aff2d3200d9580f3fb2b8bfcec4d224b7022d89b2",
+    "pl/tools/maintenance-next-due-sheet.html": "ecf32267ab74188c387676f4617cf748dd64c5b4eebc81e660b2379ed2d3110c",
+    "pl/tools/project-profit-sheet.html": "5009b8543ac2a82477d2866727ba28f01f1e3d7cd252e63d76dfd371faeeef09",
+    "pl/tools/purchase-worktime-sheet.html": "b63f39daf4e94903de1be8e502c44105fa1a33a91a499253b8071d60a01a8ea2",
+    "pl/tools/results/battery-wear-range-sheet.csv": "71aad9d591759e048855e2872ab4630e70d8d98835c07b63b9fa58282c5e9cd0",
+    "pl/tools/results/maintenance-next-due-sheet.csv": "8a4a8dff55b63a8306c63b67ed3c85f12ecc3a766d74d1d5857ecdbf19229a4e",
+    "pl/tools/results/project-profit-sheet.csv": "977f84967866d568221a9c271b3fee04cd30a01fff1c766a096ee55f0b217b9f",
     "pl/tools/results/purchase-worktime-sheet.csv": "d2094d5db8c2c644ce1dea7efe9c42d5c185d93e7a9f1cae9bf5aa7d36576fea",
-    "pt-BR/tools/hero-tasks.feed.json": "c2f4c6817980e8f04e30f453f88d7fafe4a16782ae1cad5f48cae4900677457f",
-    "pt-BR/tools/purchase-worktime-sheet.html": "7158066ddf57548071f9b2d282abce9cf0d57ff7148fdff9d629a89592a78536",
+    "pt-BR/tools/battery-wear-range-sheet.html": "0920f3588811c0ea9a626902a0a3eee52f93696ecd5184207182c1bb48f50698",
+    "pt-BR/tools/hero-tasks.feed.json": "35938242cd2a826e11bdffee0c39e7d8ef36cc44e076e45e8dffef2bfefe784a",
+    "pt-BR/tools/maintenance-next-due-sheet.html": "328d0531b7873b057b8ab9a7e34ac4bcf00bd27cd57af913eafd9963efe6ce90",
+    "pt-BR/tools/project-profit-sheet.html": "0dc088a37a4f808d596f4660dd0d84ad58588963a97e2175ee2072f2a23519eb",
+    "pt-BR/tools/purchase-worktime-sheet.html": "1d6ab6569dfe05d87669b7bf8ac21337bdc5ba8c41bff51edec791d8cb80d444",
+    "pt-BR/tools/results/battery-wear-range-sheet.csv": "757b3d225f8320627279a7e64ae3370342fef4dcb1576fba1bc3efef2ca02b7e",
+    "pt-BR/tools/results/maintenance-next-due-sheet.csv": "e1b87a031ff6433d82142d1b3c6fdebdbf0a76f38f22f7da7d61fb3ff8982b84",
+    "pt-BR/tools/results/project-profit-sheet.csv": "ec4c110088cf96268aeb25d2b7f8ac257e23cbcbc8a92213076a6c703ea8a331",
     "pt-BR/tools/results/purchase-worktime-sheet.csv": "d722cf7643b89a72731182cf2af0ccd2433de12c1fd3ef97f0ceb4469c6218f2",
-    "pt-PT/tools/hero-tasks.feed.json": "b35b96fa7bf1fdd52f09a7e13067808cf9a52a1c9c648b6ffaccfbe41b20c233",
-    "pt-PT/tools/purchase-worktime-sheet.html": "4c9ac4acd8d4b2d68d0132aeaa15cc1984af18e36a09b14d26b3f33ce21f0a34",
+    "pt-PT/tools/battery-wear-range-sheet.html": "1f62da55e16be0c1839f7a829c427f0ecd8f47b22d6a0e2f52fac64869e7356a",
+    "pt-PT/tools/hero-tasks.feed.json": "b17026405b703b75c0895cf691a46bf57cc0474282eb38d35fbd8b732ca44869",
+    "pt-PT/tools/maintenance-next-due-sheet.html": "b016950343b212a12ea461fdf13c28b80897b91af48af8fee17a5b98bcdb0514",
+    "pt-PT/tools/project-profit-sheet.html": "9ff79ae47a751d11e49058ac8ea738d978304251db2d21e3b561465572349ef4",
+    "pt-PT/tools/purchase-worktime-sheet.html": "8ae526cf559c9413dc484c4202b27bb329102a751a48dfd11e28024b63fd9f0f",
+    "pt-PT/tools/results/battery-wear-range-sheet.csv": "cbf4874e3b793f8ab7a05978b9e970ad177d73f5584b413b2c92ca3279cf0674",
+    "pt-PT/tools/results/maintenance-next-due-sheet.csv": "1aaabf3a49f07ef6183a4eaaf698700746ef8c2e38bf8ba384f7bbe3490a7917",
+    "pt-PT/tools/results/project-profit-sheet.csv": "ff4132ca36b40035d8e502819a95224769f77ebea37c3ca9d841b5a7082506ee",
     "pt-PT/tools/results/purchase-worktime-sheet.csv": "4d38e53b0fe2a64bb8880903ef7feaea02a9a453bc63d87ee7bad17200a9f751",
-    "ro/tools/hero-tasks.feed.json": "00968e306d5cf67f353417905c5adeee49a320e8ddc4797fdb9ee679432c6f03",
-    "ro/tools/purchase-worktime-sheet.html": "fe2fcb539091a021c0b9cde452715f1056e782148b89b5ee1c3cd8a2485961dc",
+    "ro/tools/battery-wear-range-sheet.html": "adc14923ce72506e221f3417f89ba3a6618c83f6e37300d8f5514f794543f68c",
+    "ro/tools/hero-tasks.feed.json": "c41bb5327d890cf872f2e3c4cd2e19e25eb9c679a447a1bb6fc1e63fdf084e9c",
+    "ro/tools/maintenance-next-due-sheet.html": "5c7e498a3215913c1f10ca35d59faa9e0ad42402ec0bc16e1d4789f308f48868",
+    "ro/tools/project-profit-sheet.html": "46e018093f1b05e7104ebc04e764a49e9ec422a7cb6425128d844b709f4e2ff8",
+    "ro/tools/purchase-worktime-sheet.html": "33dcb8d022cddb82fb64aeb8b04882c658a4efd2b44ac1064f95ca16459bf79b",
+    "ro/tools/results/battery-wear-range-sheet.csv": "6dca3d35e5df024d9d58c180bed422cb604083c9fd4b37adeeda84d2af096533",
+    "ro/tools/results/maintenance-next-due-sheet.csv": "55e5e2f92084254ec70cdc256a6d6457d5e061727cab421cf71b3f4a47ab694c",
+    "ro/tools/results/project-profit-sheet.csv": "60da4a5072c2d79e9d661549e211359cc6dfb1e53b6aedf75a7b2c8901214808",
     "ro/tools/results/purchase-worktime-sheet.csv": "ef3580b52057f1de3523ea119950461effae3f12959c773cb6a02ea5cf103e14",
-    "ru/tools/hero-tasks.feed.json": "9df971f44c164c226247c16a8c49f706f3e33f3c18804f4dfab1e410f215ebc3",
-    "ru/tools/purchase-worktime-sheet.html": "c9acaf46a7a72ef1b74d63f36bc650aa6108b543ec46eaa68ef0a2f7810d7fff",
+    "ru/tools/battery-wear-range-sheet.html": "91f5eeadecccc9844504f56f56f18a0cf5effaa2936e4c159c8da79d1adc242e",
+    "ru/tools/hero-tasks.feed.json": "f9684f49287cddd60ea009a20691f3f443920211a97b0d88d867482ebfd137f1",
+    "ru/tools/maintenance-next-due-sheet.html": "fc1e53f4a049b17ee60fa3847f7672109fe9d42e6cf0d4cea1b5d98744993107",
+    "ru/tools/project-profit-sheet.html": "9d94e72967d1a05ddc71772baf6729d2d1d350d62a46216ed8645d52e12f1138",
+    "ru/tools/purchase-worktime-sheet.html": "fbc04013c506010ed7010c55a360223581dfc43e21ddb0a7be756c2440d562c8",
+    "ru/tools/results/battery-wear-range-sheet.csv": "428893b7936ed51bede78888bf80149d371455c25467bc2f6346b157a71406f6",
+    "ru/tools/results/maintenance-next-due-sheet.csv": "c8c14c6de50a94f9ce8508ee01a8904e0f996657675241d25a6e2bdbff96c4a4",
+    "ru/tools/results/project-profit-sheet.csv": "0eb4bf8326a1d4770d88f960e105a24cc257322e38e0b1572de1147fe856d228",
     "ru/tools/results/purchase-worktime-sheet.csv": "15552d9e9b367495c31b809aa342618b114ea405d3c1bada7cad71926934f86c",
-    "sitemap_hero_tasks.xml": "43f37347c88fc3fff6222e80a994a908ebafd7b501ec39cb8cd536ab1c5331dd",
-    "sk/tools/hero-tasks.feed.json": "1327654362437894ef3c76bc76cdcf9849dc5b59333cdb4d7ed11a449a42694e",
-    "sk/tools/purchase-worktime-sheet.html": "d00d3d3e76e788d6caf795250b4bdab4fd59a1f114842a95fae42c728f9acc86",
+    "sitemap_hero_tasks.xml": "cb73d137a39ba3cf5746698786ca7afd77877c6491d22f37a6c12e9913ba82ff",
+    "sk/tools/battery-wear-range-sheet.html": "66fcfb55658922caaa76410c12bb6535f69e7ee84137ee89d262ada9e4b70143",
+    "sk/tools/hero-tasks.feed.json": "9dac1c9bda4955dab192db8d675253106a0401ff36f9d8493023cf54839b12d0",
+    "sk/tools/maintenance-next-due-sheet.html": "6eca73bd2e7c0208088fa1a1d6cf1b1ac67a138823a56096f82a15b61e97e184",
+    "sk/tools/project-profit-sheet.html": "10abb9518c0159f9effaaacf8b3d249c7d480c3ac4061b0cfcbdbc07d92e9e6c",
+    "sk/tools/purchase-worktime-sheet.html": "ac5553e04708a625b52554734b1c96fb271d36ad65760131ab4fc36945660326",
+    "sk/tools/results/battery-wear-range-sheet.csv": "8662369aa00a7ef08725ced1f8851f7feda524221c619ea15170e4b2c27d4bc2",
+    "sk/tools/results/maintenance-next-due-sheet.csv": "672adb1211806472ae0a5a6d7a9187c847072d8384fc8cc58d7703dc667cdc66",
+    "sk/tools/results/project-profit-sheet.csv": "f2f4874c7acc007493ca536a78fa59be6684e8ba52a7e1ae7dd35bab8a9aea89",
     "sk/tools/results/purchase-worktime-sheet.csv": "8097671b36bfad4c439b753d81dcaae251b967feb7c1117a34686d7f11203392",
-    "sl-SI/tools/hero-tasks.feed.json": "e45cb0054266c209d83dcc294269b4ddc93b60c9f17a3ddf4ac1ed535a907164",
-    "sl-SI/tools/purchase-worktime-sheet.html": "2bdd2344cc1a3befe51d16503a8004916903ae13cfdab4ba8f2a6da27b19e44a",
+    "sl-SI/tools/battery-wear-range-sheet.html": "dc9fcf9d0edfadbd5ab2001978e55e9a5814863271302ced06c1b5a9d466438e",
+    "sl-SI/tools/hero-tasks.feed.json": "f092498fe3a95a40c3dfcce28a31d9e4bbe0511c9c3cbde9328eb6d1bed5c57f",
+    "sl-SI/tools/maintenance-next-due-sheet.html": "4ddb68ef16b3752eba3e7f321a3318568681217e6aee9732a52fadf8cd5e9a69",
+    "sl-SI/tools/project-profit-sheet.html": "4ca6bd6ec5c2559e1414bafac0185ab6dd5841e1970a3279d954984ccfd9116d",
+    "sl-SI/tools/purchase-worktime-sheet.html": "e7f1a1912b2cc7ca121cc7b8f823072da043fc38388175d51864bfe9ad416adf",
+    "sl-SI/tools/results/battery-wear-range-sheet.csv": "b11d8d99526894b933e3927fd721305c9e97568e1ecab5b0902258d64e0479ea",
+    "sl-SI/tools/results/maintenance-next-due-sheet.csv": "85e784c4348bd1a0b0a8ea9e9bf3da2a00bfb6d2fb1a25d5a224377a0cb986a5",
+    "sl-SI/tools/results/project-profit-sheet.csv": "f9599df1c31559d45f2d2216171f7c641629bd62afcf77ffd4155a0fa0cbfd8c",
     "sl-SI/tools/results/purchase-worktime-sheet.csv": "e2df4491df04702b9b361f4daf7c6023c14bfc4402197d54e3fc84ba07bf1a0b",
-    "sv/tools/hero-tasks.feed.json": "76565a55cb996113243f5ffd281b5a566755bf0610aabccc0ef72c9dac2e4a62",
-    "sv/tools/purchase-worktime-sheet.html": "764e936ccd5359a6f00cff21f47ff41628cb6912891f7e5ef565a62c6b9f24ba",
+    "sv/tools/battery-wear-range-sheet.html": "4d11f8c4febb9d4b33a5ce130063d90ab7f8b9d175d90c92458e3e9fcea58e0c",
+    "sv/tools/hero-tasks.feed.json": "fe03393291cbdc2eda81db04acc04235737f0e5e875b3c65c0392f33fd6e0b24",
+    "sv/tools/maintenance-next-due-sheet.html": "4f7e690f10fe87d202fc96b5b83a1845b064196f5ec09715950037ace6dcd571",
+    "sv/tools/project-profit-sheet.html": "0ab16896208b8904dacd2a544d9a90ae1126ce9247a543bf9bbf051400a72336",
+    "sv/tools/purchase-worktime-sheet.html": "a97dc7cdfafc23b31b4c5866da486253975e7356a47115aefcc77e8035a758ba",
+    "sv/tools/results/battery-wear-range-sheet.csv": "534a696a48b51b0afd2bf7b3be0fe77108b9a9571bac692f7f6497d09cf1d403",
+    "sv/tools/results/maintenance-next-due-sheet.csv": "37461bca04fd8c125d0e0c7c7fe8100a538aff57163de21fa177f97d32d2d718",
+    "sv/tools/results/project-profit-sheet.csv": "7b858833015fe5259c280e4bcb09e8c1d9dc1324b782f8ce96430adc1894acd9",
     "sv/tools/results/purchase-worktime-sheet.csv": "56c367801b85532f5f07e861fabe27482be384cace12e9245b8be08418ef06dc",
-    "ta-IN/tools/hero-tasks.feed.json": "c0921bc7576b54e91d4360dc10601a35279a37401ae63a2b7175fcd6bea5e5df",
-    "ta-IN/tools/purchase-worktime-sheet.html": "74dc3863a52f1c9c9c49caf16d9f3411305eda3d2878734c1e38690936aeb259",
+    "ta-IN/tools/battery-wear-range-sheet.html": "37080b2808bd543192d6cfa8338ba2e3273b3c39695f9a5ad667af85afaaee29",
+    "ta-IN/tools/hero-tasks.feed.json": "6ecdc9d34d0eb49e9c50a5edd185bc909e4312803fdc52532e6fd86f321911be",
+    "ta-IN/tools/maintenance-next-due-sheet.html": "32a99664d9573b6b2d20251f8858d6347e5ce3caaa4bb812c08f61b284c2ed3c",
+    "ta-IN/tools/project-profit-sheet.html": "3a9bc08181778bcf53d5374989d838c59362af55a897f7887fdfec394ec5db3d",
+    "ta-IN/tools/purchase-worktime-sheet.html": "672d2061396d4aabe8a0df485e142ba2bbb7c6aa96630e33b00957e2839c2005",
+    "ta-IN/tools/results/battery-wear-range-sheet.csv": "5ef0eab44f5f0a196b627c9f93e20e5b4aabe9d64c7a88b31f4a487ad377e185",
+    "ta-IN/tools/results/maintenance-next-due-sheet.csv": "f2c5064bac55f46b566eebc050874224a4feb263159202e4d8c28fd798d7e15c",
+    "ta-IN/tools/results/project-profit-sheet.csv": "4d6a88c9f78a24c6e2eaa1278146221bee28975d948fa79bdf7b51ab0f3964be",
     "ta-IN/tools/results/purchase-worktime-sheet.csv": "d549f9f7310c4ce0bc85bd1ff28d53fd64fce5c992b58a3202d7896f5dc55913",
-    "te-IN/tools/hero-tasks.feed.json": "1ec6b7a286485a31a567db412cd11ce5795054ac6058391d9aee167931d9cb67",
-    "te-IN/tools/purchase-worktime-sheet.html": "e33ea7c7a2b514691367db45de461b975925de8959ac9d5d8d52d57dbedf2567",
+    "te-IN/tools/battery-wear-range-sheet.html": "dcb6ec145f19fb21f6e43afdfc13099304b19cec184075d2f26d5e7cf613dce3",
+    "te-IN/tools/hero-tasks.feed.json": "5edcf2b88a68d897cd37654b76bf802c452dcadee985f1b393522b8c40fe3136",
+    "te-IN/tools/maintenance-next-due-sheet.html": "2037e746a4fabd85f92c5a7961d12e009f315b3469e9878fa88a35117dc7594f",
+    "te-IN/tools/project-profit-sheet.html": "8678d2d21d082915ab04707d0bc8fea1c87e75805a479fbb2cb3178a16f79deb",
+    "te-IN/tools/purchase-worktime-sheet.html": "882bf1091f4cc89f1a6d79ced75fe9f744b350da1b6d05d9aea559ba1d66e03a",
+    "te-IN/tools/results/battery-wear-range-sheet.csv": "09505004c1f14976e25178a104308937354a0f1ff24ed09911be7abd59613151",
+    "te-IN/tools/results/maintenance-next-due-sheet.csv": "9398222d2d7a912011bcd361ba8e0b723ce2f131165ff0544c6f8bc932ef1374",
+    "te-IN/tools/results/project-profit-sheet.csv": "d747bbb49a8e3c3295525cda5b303e3691057bf1a0cf730e16d83cd135d5ab4e",
     "te-IN/tools/results/purchase-worktime-sheet.csv": "6335a6d66b4b628d1d1af03a6da279ca1dd68b062dc41a6e79cf28af6c2ca376",
-    "th/tools/hero-tasks.feed.json": "46a3f900b7f3abd4f5ee2b5738c1d9135b0612f033bb1c37a23bb28db2694a24",
-    "th/tools/purchase-worktime-sheet.html": "af239b51e2af3fdd83b12d773c784efb7349a8383cf9e6e2a574c0e60a04b762",
+    "th/tools/battery-wear-range-sheet.html": "38defb07509e0332af9c1a45daf6a947c6576f6bf9efa8f1b4b29c549cfb74a2",
+    "th/tools/hero-tasks.feed.json": "2c3c4265f52c23b52d6a9267084ec6bf905f0780e4e24f1b8564f8fb27850b56",
+    "th/tools/maintenance-next-due-sheet.html": "7a5f9fbe8d1e00f51a1f0cb77b34a9df7c04a2117c715d783396b236a8a919d4",
+    "th/tools/project-profit-sheet.html": "8a78a7bdaa6b55d7273b149c55aa29952e78de32e676375c428fd4db4eec5a26",
+    "th/tools/purchase-worktime-sheet.html": "e30bb5196f4532607536f26492d17972daadced55f805c59337c41bc7c846a94",
+    "th/tools/results/battery-wear-range-sheet.csv": "89c3abc33e9e548c428b6a3db81e85c5f38e3d9a7a7fd9c1e3b7d5b21dcd98fe",
+    "th/tools/results/maintenance-next-due-sheet.csv": "b55fe0761716517761c71c113f44c0b3da7b47b3455b19fe4847bdfe3ffee324",
+    "th/tools/results/project-profit-sheet.csv": "703b0459a523919b66c799b19973e2d076e0d4b652541a5324ce915393c54908",
     "th/tools/results/purchase-worktime-sheet.csv": "7579fa89b360cda327057fcfc2cdedb6874657a51669c1f219dc6dd37e0d2add",
-    "tr/tools/hero-tasks.feed.json": "2c2627991bea18e9bc0d16dd8b748fb3fc5425967821b9617747c4e201d984d1",
-    "tr/tools/purchase-worktime-sheet.html": "e52173621b389c1dee9de5f19923fd0bb2a36250d6e4bf4ff43ec02bba8053b9",
+    "tr/tools/battery-wear-range-sheet.html": "33b5245396245120d59ff7c46350e68ad5f25be7a8bc05041f88e3dea756df45",
+    "tr/tools/hero-tasks.feed.json": "dbf074a00a9aec1d569dc5bd7c59d9d632acfd0f216344f2e5d42e49b6fb5fc4",
+    "tr/tools/maintenance-next-due-sheet.html": "b7a7a357b47003576e7e2bb3a47d95d065fe7eddccfe1390c5e0246a42a1f99c",
+    "tr/tools/project-profit-sheet.html": "3d6fb8e60771e5f6a7fc9a3bc980caff70fb56f8c33c23c4c864258faa9b377f",
+    "tr/tools/purchase-worktime-sheet.html": "3dc328e5ca81dfb83b1eaf0b9bae511ec51dce6fdd651ad6cebd0724fb4e28df",
+    "tr/tools/results/battery-wear-range-sheet.csv": "2c72050c23fa3522147da2e6242513171a490f0c062abd4308687f75f6704cdb",
+    "tr/tools/results/maintenance-next-due-sheet.csv": "71870c535b741e90b552137dfff368c2f5500538037001c63ae7f82194aa716d",
+    "tr/tools/results/project-profit-sheet.csv": "ec908a714dcb54e323749221213805a3c664b30889a309a975cb4696e45ad5af",
     "tr/tools/results/purchase-worktime-sheet.csv": "b366acb1ed81b7d61051b1b68cc9d7a988b8fba9761a4bdde1dce3f853e8b831",
-    "uk/tools/hero-tasks.feed.json": "0f4a8d98bf6688ca0f83fdcbc9e9467cb7454f9799c64d8b42bf3e94eb98c9b3",
-    "uk/tools/purchase-worktime-sheet.html": "7254e1fa2704c1c2c7aedc777258a805977717df3f12634a92f5677887b1eb8f",
+    "uk/tools/battery-wear-range-sheet.html": "3c40549fefcf70c332fc38aec06e41c5ed61af78867454d7cf8b7df2c2c39618",
+    "uk/tools/hero-tasks.feed.json": "45ca96ee7a65b2a6f5ea668d48b1fed30d214ff98f95e293b509cc976175660a",
+    "uk/tools/maintenance-next-due-sheet.html": "9778ecaf0b5f8914142e928582b302be2b2fe2ca284859e591b9dd0c133d5a62",
+    "uk/tools/project-profit-sheet.html": "a3007dbab4d92f2cd73198551bcd06b28bdd04d35631d2aaa205a9c4621fd8b0",
+    "uk/tools/purchase-worktime-sheet.html": "e1f96e55570d629e1e2195d4858c244d5f0013ef466d04340ec7b74907a8b985",
+    "uk/tools/results/battery-wear-range-sheet.csv": "5fcafdbfab4aad8f70437f8e197a3bec5bf03a8de22e169f2ceea01e8ebc1c5b",
+    "uk/tools/results/maintenance-next-due-sheet.csv": "6806ae064bb2468e4eba1db48886e5645c013dbc0b16424fe322d6e87e8a4cf2",
+    "uk/tools/results/project-profit-sheet.csv": "bb62ba0c015291aa50981c213af75dd82e62334969faf22d5ea436f9c7feb04b",
     "uk/tools/results/purchase-worktime-sheet.csv": "3d46bbbd5cb6ee0031dc8da7f0595404c4353ee1c6453d0515b625e1cf7484be",
-    "ur-PK/tools/hero-tasks.feed.json": "cf4018001c8f6fa98063149d68492238547b38cb8617fb84ff4ee5d7dc77010a",
-    "ur-PK/tools/purchase-worktime-sheet.html": "11b5f37fe10c448eef5026a9194d7245a149623fee104ba371f5022ab193f558",
+    "ur-PK/tools/battery-wear-range-sheet.html": "e1bca9ed8ef1b4faa2d38cf57e7405c204b4468b4c01ba931e10e8d5b44644e0",
+    "ur-PK/tools/hero-tasks.feed.json": "a8b6ee57c5f6a6074f297eb6a86f374202f88bfdad489863de440b454516d366",
+    "ur-PK/tools/maintenance-next-due-sheet.html": "70a6e7da282a83284164b60eef96480a851c0878240c7f2721dd69ef7d678593",
+    "ur-PK/tools/project-profit-sheet.html": "da9617b160cafa563bd5f1ccfe6de79aed4704cdccece70607a94c60042cf6b6",
+    "ur-PK/tools/purchase-worktime-sheet.html": "2275c9c1e98e467d7c9fa4157f2f57e950174add36260e3efa07e328a39f2ee6",
+    "ur-PK/tools/results/battery-wear-range-sheet.csv": "1c134fb00604737de9515c6f30a929772617466e688066e83965ea7369e06df6",
+    "ur-PK/tools/results/maintenance-next-due-sheet.csv": "f55dd909bc2133399f3c61ef3df7675205b79b762f7b50b295b651d81ff5246f",
+    "ur-PK/tools/results/project-profit-sheet.csv": "3021bfd1d7cfd430e000e4d66101548bfdc4a2ca53affe44bf3dfde50fc7dfcc",
     "ur-PK/tools/results/purchase-worktime-sheet.csv": "281dd274ab5fef3d6ad48aca5aa4078a66ee188d63131b3214f7afba0f599177",
-    "vi/tools/hero-tasks.feed.json": "121aaaaae2e8ea1b248e1347d48c36e14c3e5b9c5b41c5ac5948b49b075af8ff",
-    "vi/tools/purchase-worktime-sheet.html": "8e021edd55c6f7a2756c83656c3888bd2ca7b45789b64ccefab24ddaff11966b",
+    "vi/tools/battery-wear-range-sheet.html": "e84f75444b9a4e6f6306f4d77c4e568236f472b045ba706b4dec8a51496f1ade",
+    "vi/tools/hero-tasks.feed.json": "73f83fc98a0be9b456c14ae98f092323742e5938d8305585aee886c9f54c4932",
+    "vi/tools/maintenance-next-due-sheet.html": "91f81f73c5613a22bfcf0d4b2283bef5278f7b88ec0d2e058cb6fcd33c59ecdc",
+    "vi/tools/project-profit-sheet.html": "e644400115acdd471a93bfbd0d6840a4c070ace90fc7c29bd7de014282c0eb35",
+    "vi/tools/purchase-worktime-sheet.html": "3a4a32e246109130e2523d16a296e97842b0ab7209d58d023f85eab91be1c8ae",
+    "vi/tools/results/battery-wear-range-sheet.csv": "c20b4e6ec109f2b29d69bd02ad5d30fc43758093a718d9dfacfb359072b1c8d9",
+    "vi/tools/results/maintenance-next-due-sheet.csv": "a576a5bd6d3723709f2b4c95aa7178ba4663693b3eb4fd91bca8605b7a804705",
+    "vi/tools/results/project-profit-sheet.csv": "15d4535bd86dcb311241763d586416f9ecb47e6bb8c8b72043c18b147857261f",
     "vi/tools/results/purchase-worktime-sheet.csv": "4f34c4ad67a48bf5fad1dec55e4d8ae70d1b2012f0d613f881fc4b22a61f9992",
-    "zh-Hans/tools/hero-tasks.feed.json": "7767cb7175c76a41a12a070f0c6e414a9fb7261239936fec3eb45b977a3c23ce",
-    "zh-Hans/tools/purchase-worktime-sheet.html": "b4f4d075632e452c5cf50cabf1ebfb3233c6de7c99df6e36a426b053cf6ea96a",
+    "zh-Hans/tools/battery-wear-range-sheet.html": "94471011823fa3277681488cd3e99f61d1b393fa38bd7ea38e5b1ba5b0f06e12",
+    "zh-Hans/tools/hero-tasks.feed.json": "10b1e52fb4f6fc9bb2e676c70942d9001458eca48a2592faf3ecbcac99dea740",
+    "zh-Hans/tools/maintenance-next-due-sheet.html": "4e7bbd6ff706075e71ca4fc906439baafb8609fa34ba52e8b20fe744c9db9ef6",
+    "zh-Hans/tools/project-profit-sheet.html": "e396602e944083809eb6a18eeae6fe7ea6644a072471afae5c9cded6fb6f7186",
+    "zh-Hans/tools/purchase-worktime-sheet.html": "b3251e8342d11b0ea314a87ba490a22c6b8aab81551f2950a0294106f2fb7e16",
+    "zh-Hans/tools/results/battery-wear-range-sheet.csv": "c494ff96da6b74bde72c147daa5e078b1fd6537f2e4ab494747081748687a4cf",
+    "zh-Hans/tools/results/maintenance-next-due-sheet.csv": "1959be615e2ea19afc5ae3c14b16e5158b7416d291b03cce8b4a781a2129b1e2",
+    "zh-Hans/tools/results/project-profit-sheet.csv": "e4b3dcb8b925fda6538d3c4e35a568bdbc6b6dfa6e32e5ebdf4bb4ecd74673ec",
     "zh-Hans/tools/results/purchase-worktime-sheet.csv": "857134dee13d8bb7db1bd071eb2e14af007cc4adec4b997e3ba16d4e5fc2ce71",
-    "zh-Hant/tools/hero-tasks.feed.json": "294aa96bcf78e72635a6140005950385d0ba5e2f7504e7cf25177e12b2c89a21",
-    "zh-Hant/tools/purchase-worktime-sheet.html": "b5bf142927dd00ab31a0903be3d6c77f9e803989530b7921211a70b7b98ad381",
+    "zh-Hant/tools/battery-wear-range-sheet.html": "782b47df7fbf38217e2a99230f69ddfd0b9333902bbd31a0b4a5322749c93b1c",
+    "zh-Hant/tools/hero-tasks.feed.json": "d67be11db3230802ba949c7553200f09aa4df3c5bf7dc7930019fad620b31aa0",
+    "zh-Hant/tools/maintenance-next-due-sheet.html": "22d45a50991242f5fd51fba9c5022b04c0254bed23365ddd8cc65a8052dd44e6",
+    "zh-Hant/tools/project-profit-sheet.html": "c6a9f9b799edd5cff7b0aadd7b4abe23c98da745b1f0579a6300e790814c6acb",
+    "zh-Hant/tools/purchase-worktime-sheet.html": "99d378fa46f2554aeb92155e1ae5620bf84218e50c09b514c0bbd2a38720a30a",
+    "zh-Hant/tools/results/battery-wear-range-sheet.csv": "daf383b6ad07b1d8fb0b5032ff1c407c4a3584bc60da761413f1ca670d48ea66",
+    "zh-Hant/tools/results/maintenance-next-due-sheet.csv": "6d7ea051ab766152386f542dd4af072111e7d0c4fd8eae676b05d76b2dd681d0",
+    "zh-Hant/tools/results/project-profit-sheet.csv": "099ea8932d69d7f1c7fd93c4c59d269bc4b572404f507a956ed9ca598525c046",
     "zh-Hant/tools/results/purchase-worktime-sheet.csv": "68d02fef68c79c3905795283496710cf7da72a4d901e2a44e53e9028f379e957"
   },
   "portfolio_app_count": 46,
@@ -305,6 +764,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sa/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ar-SA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ar-SA/index.html",
+      "path": "ar-SA/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sa/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/project-profit-sheet.csv",
+      "locale": "ar-SA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ar-SA/index.html",
+      "path": "ar-SA/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ar-SA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ar-SA/index.html",
+      "path": "ar-SA/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -322,6 +826,51 @@
       "path": "bn-BD/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "bn-BD",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/bn-BD/index.html",
+      "path": "bn-BD/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/project-profit-sheet.csv",
+      "locale": "bn-BD",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/bn-BD/index.html",
+      "path": "bn-BD/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/battery-wear-range-sheet.csv",
+      "locale": "bn-BD",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/bn-BD/index.html",
+      "path": "bn-BD/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -343,6 +892,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/ca/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ca",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ca/index.html",
+      "path": "ca/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/project-profit-sheet.csv",
+      "locale": "ca",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ca/index.html",
+      "path": "ca/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ca",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ca/index.html",
+      "path": "ca/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -360,6 +954,51 @@
       "path": "cs/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/cs/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cz/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "cs",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/cs/index.html",
+      "path": "cs/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cz/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/project-profit-sheet.csv",
+      "locale": "cs",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/cs/index.html",
+      "path": "cs/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/battery-wear-range-sheet.csv",
+      "locale": "cs",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/cs/index.html",
+      "path": "cs/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -381,6 +1020,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/da/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/dk/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/da/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "da",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/da/index.html",
+      "path": "da/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/dk/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/da/tools/results/project-profit-sheet.csv",
+      "locale": "da",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/da/index.html",
+      "path": "da/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/dk/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/da/tools/results/battery-wear-range-sheet.csv",
+      "locale": "da",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/da/index.html",
+      "path": "da/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -398,6 +1082,51 @@
       "path": "de-DE/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/de/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "de-DE",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/index.html",
+      "path": "de-DE/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/de/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/project-profit-sheet.csv",
+      "locale": "de-DE",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/index.html",
+      "path": "de-DE/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/battery-wear-range-sheet.csv",
+      "locale": "de-DE",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/index.html",
+      "path": "de-DE/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -419,6 +1148,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/el/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/el/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "el",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/el/index.html",
+      "path": "el/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/el/tools/results/project-profit-sheet.csv",
+      "locale": "el",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/el/index.html",
+      "path": "el/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/el/tools/results/battery-wear-range-sheet.csv",
+      "locale": "el",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/el/index.html",
+      "path": "el/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -436,6 +1210,51 @@
       "path": "en-AU/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/au/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "en-AU",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-AU/index.html",
+      "path": "en-AU/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/au/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/project-profit-sheet.csv",
+      "locale": "en-AU",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-AU/index.html",
+      "path": "en-AU/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/au/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/battery-wear-range-sheet.csv",
+      "locale": "en-AU",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-AU/index.html",
+      "path": "en-AU/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -457,6 +1276,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "en-CA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-CA/index.html",
+      "path": "en-CA/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/results/project-profit-sheet.csv",
+      "locale": "en-CA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-CA/index.html",
+      "path": "en-CA/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/results/battery-wear-range-sheet.csv",
+      "locale": "en-CA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-CA/index.html",
+      "path": "en-CA/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/en-CA/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -474,6 +1338,51 @@
       "path": "en-GB/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gb/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "en-GB",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-GB/index.html",
+      "path": "en-GB/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gb/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/results/project-profit-sheet.csv",
+      "locale": "en-GB",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-GB/index.html",
+      "path": "en-GB/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/gb/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/results/battery-wear-range-sheet.csv",
+      "locale": "en-GB",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-GB/index.html",
+      "path": "en-GB/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/en-GB/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -495,6 +1404,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-US/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "en-US",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-US/index.html",
+      "path": "en-US/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-US/tools/results/project-profit-sheet.csv",
+      "locale": "en-US",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-US/index.html",
+      "path": "en-US/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/en-US/tools/results/battery-wear-range-sheet.csv",
+      "locale": "en-US",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/en-US/index.html",
+      "path": "en-US/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -512,6 +1466,51 @@
       "path": "es-ES/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "es-ES",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/index.html",
+      "path": "es-ES/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/results/project-profit-sheet.csv",
+      "locale": "es-ES",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/index.html",
+      "path": "es-ES/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/results/battery-wear-range-sheet.csv",
+      "locale": "es-ES",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/index.html",
+      "path": "es-ES/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/es-ES/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -533,6 +1532,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/mx/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "es-MX",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/es-MX/index.html",
+      "path": "es-MX/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/mx/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/project-profit-sheet.csv",
+      "locale": "es-MX",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/es-MX/index.html",
+      "path": "es-MX/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/mx/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/battery-wear-range-sheet.csv",
+      "locale": "es-MX",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/es-MX/index.html",
+      "path": "es-MX/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -550,6 +1594,51 @@
       "path": "fi/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/fi/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "fi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fi/index.html",
+      "path": "fi/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fi/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/project-profit-sheet.csv",
+      "locale": "fi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fi/index.html",
+      "path": "fi/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/battery-wear-range-sheet.csv",
+      "locale": "fi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fi/index.html",
+      "path": "fi/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -571,6 +1660,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "fr-CA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fr-CA/index.html",
+      "path": "fr-CA/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/project-profit-sheet.csv",
+      "locale": "fr-CA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fr-CA/index.html",
+      "path": "fr-CA/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/battery-wear-range-sheet.csv",
+      "locale": "fr-CA",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fr-CA/index.html",
+      "path": "fr-CA/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -588,6 +1722,51 @@
       "path": "fr-FR/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "fr-FR",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/index.html",
+      "path": "fr-FR/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/project-profit-sheet.csv",
+      "locale": "fr-FR",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/index.html",
+      "path": "fr-FR/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/fr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/battery-wear-range-sheet.csv",
+      "locale": "fr-FR",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/index.html",
+      "path": "fr-FR/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -609,6 +1788,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "gu-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/gu-IN/index.html",
+      "path": "gu-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/project-profit-sheet.csv",
+      "locale": "gu-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/gu-IN/index.html",
+      "path": "gu-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "gu-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/gu-IN/index.html",
+      "path": "gu-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -626,6 +1850,51 @@
       "path": "he/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/il/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/he/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "he",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/he/index.html",
+      "path": "he/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/il/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/he/tools/results/project-profit-sheet.csv",
+      "locale": "he",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/he/index.html",
+      "path": "he/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/he/tools/results/battery-wear-range-sheet.csv",
+      "locale": "he",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/he/index.html",
+      "path": "he/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -647,6 +1916,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/hi/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "hi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hi/tools/index.html",
+      "path": "hi/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/project-profit-sheet.csv",
+      "locale": "hi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hi/tools/index.html",
+      "path": "hi/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/battery-wear-range-sheet.csv",
+      "locale": "hi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hi/tools/index.html",
+      "path": "hi/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -664,6 +1978,51 @@
       "path": "hr/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/hr/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "hr",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hr/index.html",
+      "path": "hr/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/project-profit-sheet.csv",
+      "locale": "hr",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hr/index.html",
+      "path": "hr/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/battery-wear-range-sheet.csv",
+      "locale": "hr",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hr/index.html",
+      "path": "hr/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -685,6 +2044,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/hu/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "hu",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hu/index.html",
+      "path": "hu/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hu/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/project-profit-sheet.csv",
+      "locale": "hu",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hu/index.html",
+      "path": "hu/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/battery-wear-range-sheet.csv",
+      "locale": "hu",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/hu/index.html",
+      "path": "hu/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -702,6 +2106,51 @@
       "path": "id/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/id/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/id/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "id",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/id/tools/index.html",
+      "path": "id/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/id/tools/results/project-profit-sheet.csv",
+      "locale": "id",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/id/tools/index.html",
+      "path": "id/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/id/tools/results/battery-wear-range-sheet.csv",
+      "locale": "id",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/id/tools/index.html",
+      "path": "id/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -723,6 +2172,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/it/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/it/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "it",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/it/index.html",
+      "path": "it/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/it/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/it/tools/results/project-profit-sheet.csv",
+      "locale": "it",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/it/index.html",
+      "path": "it/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/it/tools/results/battery-wear-range-sheet.csv",
+      "locale": "it",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/it/index.html",
+      "path": "it/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/it/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -740,6 +2234,51 @@
       "path": "ja/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/ja/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ja",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ja/tools/index.html",
+      "path": "ja/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/project-profit-sheet.csv",
+      "locale": "ja",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ja/tools/index.html",
+      "path": "ja/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ja",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ja/tools/index.html",
+      "path": "ja/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -761,6 +2300,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "kn-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/kn-IN/index.html",
+      "path": "kn-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/project-profit-sheet.csv",
+      "locale": "kn-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/kn-IN/index.html",
+      "path": "kn-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "kn-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/kn-IN/index.html",
+      "path": "kn-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -778,6 +2362,51 @@
       "path": "ko/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/ko/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ko",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ko/tools/index.html",
+      "path": "ko/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/project-profit-sheet.csv",
+      "locale": "ko",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ko/tools/index.html",
+      "path": "ko/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ko",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ko/tools/index.html",
+      "path": "ko/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -799,6 +2428,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ml-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ml-IN/index.html",
+      "path": "ml-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/project-profit-sheet.csv",
+      "locale": "ml-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ml-IN/index.html",
+      "path": "ml-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ml-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ml-IN/index.html",
+      "path": "ml-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -816,6 +2490,51 @@
       "path": "mr-IN/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "mr-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/mr-IN/index.html",
+      "path": "mr-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/project-profit-sheet.csv",
+      "locale": "mr-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/mr-IN/index.html",
+      "path": "mr-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "mr-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/mr-IN/index.html",
+      "path": "mr-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -837,6 +2556,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/my/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ms",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ms/tools/index.html",
+      "path": "ms/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/my/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/project-profit-sheet.csv",
+      "locale": "ms",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ms/tools/index.html",
+      "path": "ms/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ms",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ms/tools/index.html",
+      "path": "ms/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -854,6 +2618,51 @@
       "path": "nl-NL/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "nl-NL",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/nl-NL/index.html",
+      "path": "nl-NL/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/nl/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/project-profit-sheet.csv",
+      "locale": "nl-NL",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/nl-NL/index.html",
+      "path": "nl-NL/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/battery-wear-range-sheet.csv",
+      "locale": "nl-NL",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/nl-NL/index.html",
+      "path": "nl-NL/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -875,6 +2684,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/no/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/no/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "no",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/no/index.html",
+      "path": "no/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/no/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/no/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/no/tools/results/project-profit-sheet.csv",
+      "locale": "no",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/no/index.html",
+      "path": "no/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/no/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/no/tools/results/battery-wear-range-sheet.csv",
+      "locale": "no",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/no/index.html",
+      "path": "no/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/no/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -892,6 +2746,51 @@
       "path": "or-IN/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "or-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/or-IN/index.html",
+      "path": "or-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/project-profit-sheet.csv",
+      "locale": "or-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/or-IN/index.html",
+      "path": "or-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "or-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/or-IN/index.html",
+      "path": "or-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -913,6 +2812,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "pa-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pa-IN/index.html",
+      "path": "pa-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/project-profit-sheet.csv",
+      "locale": "pa-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pa-IN/index.html",
+      "path": "pa-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "pa-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pa-IN/index.html",
+      "path": "pa-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -930,6 +2874,51 @@
       "path": "pl/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/pl/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pl/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "pl",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pl/tools/index.html",
+      "path": "pl/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/project-profit-sheet.csv",
+      "locale": "pl",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pl/tools/index.html",
+      "path": "pl/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/battery-wear-range-sheet.csv",
+      "locale": "pl",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pl/tools/index.html",
+      "path": "pl/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -951,6 +2940,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/br/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "pt-BR",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/index.html",
+      "path": "pt-BR/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/project-profit-sheet.csv",
+      "locale": "pt-BR",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/index.html",
+      "path": "pt-BR/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/battery-wear-range-sheet.csv",
+      "locale": "pt-BR",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/index.html",
+      "path": "pt-BR/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -968,6 +3002,51 @@
       "path": "pt-PT/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pt/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "pt-PT",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pt-PT/index.html",
+      "path": "pt-PT/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pt/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/project-profit-sheet.csv",
+      "locale": "pt-PT",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pt-PT/index.html",
+      "path": "pt-PT/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pt/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/battery-wear-range-sheet.csv",
+      "locale": "pt-PT",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/pt-PT/index.html",
+      "path": "pt-PT/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -989,6 +3068,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/ro/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ro",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ro/index.html",
+      "path": "ro/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/project-profit-sheet.csv",
+      "locale": "ro",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ro/index.html",
+      "path": "ro/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ro/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ro",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ro/index.html",
+      "path": "ro/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ro/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1006,6 +3130,51 @@
       "path": "ru/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/ru/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ru/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ru",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ru/tools/index.html",
+      "path": "ru/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ru/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ru/tools/results/project-profit-sheet.csv",
+      "locale": "ru",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ru/tools/index.html",
+      "path": "ru/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ru/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ru/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ru",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ru/tools/index.html",
+      "path": "ru/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ru/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -1027,6 +3196,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/sk/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sk/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "sk",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sk/index.html",
+      "path": "sk/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sk/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/project-profit-sheet.csv",
+      "locale": "sk",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sk/index.html",
+      "path": "sk/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/battery-wear-range-sheet.csv",
+      "locale": "sk",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sk/index.html",
+      "path": "sk/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1044,6 +3258,51 @@
       "path": "sl-SI/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/si/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "sl-SI",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sl-SI/index.html",
+      "path": "sl-SI/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/project-profit-sheet.csv",
+      "locale": "sl-SI",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sl-SI/index.html",
+      "path": "sl-SI/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/results/battery-wear-range-sheet.csv",
+      "locale": "sl-SI",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sl-SI/index.html",
+      "path": "sl-SI/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -1065,6 +3324,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/sv/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/se/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "sv",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sv/index.html",
+      "path": "sv/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/se/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/project-profit-sheet.csv",
+      "locale": "sv",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sv/index.html",
+      "path": "sv/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/sv/tools/results/battery-wear-range-sheet.csv",
+      "locale": "sv",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/sv/index.html",
+      "path": "sv/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/sv/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1082,6 +3386,51 @@
       "path": "ta-IN/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ta-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/index.html",
+      "path": "ta-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/project-profit-sheet.csv",
+      "locale": "ta-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/index.html",
+      "path": "ta-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ta-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/index.html",
+      "path": "ta-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -1103,6 +3452,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "te-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/te-IN/index.html",
+      "path": "te-IN/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/project-profit-sheet.csv",
+      "locale": "te-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/te-IN/index.html",
+      "path": "te-IN/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/battery-wear-range-sheet.csv",
+      "locale": "te-IN",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/te-IN/index.html",
+      "path": "te-IN/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1120,6 +3514,51 @@
       "path": "th/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/th/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/th/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/th/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "th",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/th/tools/index.html",
+      "path": "th/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/th/tools/results/project-profit-sheet.csv",
+      "locale": "th",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/th/tools/index.html",
+      "path": "th/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/th/tools/results/battery-wear-range-sheet.csv",
+      "locale": "th",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/th/tools/index.html",
+      "path": "th/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -1141,6 +3580,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/tr/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "tr",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/tr/tools/index.html",
+      "path": "tr/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/project-profit-sheet.csv",
+      "locale": "tr",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/tr/tools/index.html",
+      "path": "tr/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/battery-wear-range-sheet.csv",
+      "locale": "tr",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/tr/tools/index.html",
+      "path": "tr/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1158,6 +3642,51 @@
       "path": "uk/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/uk/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ua/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "uk",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/uk/tools/index.html",
+      "path": "uk/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ua/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/project-profit-sheet.csv",
+      "locale": "uk",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/uk/tools/index.html",
+      "path": "uk/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/battery-wear-range-sheet.csv",
+      "locale": "uk",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/uk/tools/index.html",
+      "path": "uk/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -1179,6 +3708,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "ur-PK",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ur-PK/index.html",
+      "path": "ur-PK/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/project-profit-sheet.csv",
+      "locale": "ur-PK",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ur-PK/index.html",
+      "path": "ur-PK/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/battery-wear-range-sheet.csv",
+      "locale": "ur-PK",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/ur-PK/index.html",
+      "path": "ur-PK/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1196,6 +3770,51 @@
       "path": "vi/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/vi/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/vi/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "vi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/vi/tools/index.html",
+      "path": "vi/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/vi/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/vi/tools/results/project-profit-sheet.csv",
+      "locale": "vi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/vi/tools/index.html",
+      "path": "vi/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/vi/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/vi/tools/results/battery-wear-range-sheet.csv",
+      "locale": "vi",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/vi/tools/index.html",
+      "path": "vi/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/vi/tools/battery-wear-range-sheet.html"
     },
     {
       "adapter": "purchase-worktime-v1",
@@ -1217,6 +3836,51 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/purchase-worktime-sheet.html"
     },
     {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "zh-Hans",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html",
+      "path": "zh-Hans/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/project-profit-sheet.csv",
+      "locale": "zh-Hans",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html",
+      "path": "zh-Hans/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/battery-wear-range-sheet.csv",
+      "locale": "zh-Hans",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html",
+      "path": "zh-Hans/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/battery-wear-range-sheet.html"
+    },
+    {
       "adapter": "purchase-worktime-v1",
       "apps": [
         {
@@ -1234,6 +3898,51 @@
       "path": "zh-Hant/tools/purchase-worktime-sheet.html",
       "task_id": "purchase-worktime",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "adapter": "maintenance-next-due-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+          "key": "mochidonestamp"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/maintenance-next-due-sheet.csv",
+      "locale": "zh-Hant",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html",
+      "path": "zh-Hant/tools/maintenance-next-due-sheet.html",
+      "task_id": "maintenance-next-due",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "adapter": "project-profit-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+          "key": "moneytag"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/project-profit-sheet.csv",
+      "locale": "zh-Hant",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html",
+      "path": "zh-Hant/tools/project-profit-sheet.html",
+      "task_id": "project-profit",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/project-profit-sheet.html"
+    },
+    {
+      "adapter": "battery-wear-range-v1",
+      "apps": [
+        {
+          "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+          "key": "battai"
+        }
+      ],
+      "example_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/battery-wear-range-sheet.csv",
+      "locale": "zh-Hant",
+      "navigation_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html",
+      "path": "zh-Hant/tools/battery-wear-range-sheet.html",
+      "task_id": "battery-wear",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/battery-wear-range-sheet.html"
     }
   ],
   "retired_indexes": [
@@ -1273,15 +3982,17 @@
   "schema_version": 1,
   "scope": "reviewed_adapters_only",
   "supported_app_keys": [
+    "battai",
     "hourstag",
-    "hourstaglite"
+    "hourstaglite",
+    "mochidonestamp",
+    "moneytag"
   ],
-  "task_count": 1,
+  "task_count": 4,
   "unserved_app_keys": [
     "aibriefpack",
     "aim990",
     "aim990plus",
-    "battai",
     "caldaily",
     "cvdesk",
     "cyca",
@@ -1301,8 +4012,6 @@
     "lumiweather",
     "maskmyfile",
     "mochi",
-    "mochidonestamp",
-    "moneytag",
     "notesstudio100",
     "onepageppt",
     "photocream",

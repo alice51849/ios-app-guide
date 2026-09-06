@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "השוו קניות לפי ההכנסה נטו לשעה והורידו קובץ CSV משלכם. סך הכול = כמות × מחיר סופי. שעות עבודה = הסכום ÷ הכנסה נטו לשעה. ימי עבודה = שעות ÷ שעות ביום עבודה. הזינו מחירים הכוללים מס. ללא המרת מטבע, חישוב שכר, תחזית חיסכון או עצת קנייה. מוצגות שתי ספרות עשרוניות; הסכומים מחושבים ללא עיגול ביניים.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html",
       "language": "he",
       "title": "השוואת קניות בשעות עבודה",
       "url": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 381,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מתי ביצעתם לאחרונה כל משימה בבית, ברכב או לבריאות ובאיזו תדירות היא חוזרת: תקבלו את המועד הבא, הימים שנותרו ומה שבפיגור בטבלה להורדה. מועד הבא = בוצע לאחרונה + מרווח. בחודשים נשמר אותו יום בחודש; אם אינו קיים, נבחר היום האחרון בחודש (כולל שנים מעוברות). ימים שנותרו = מועד − היום. מתחת ל-0 בפיגור; 0 עד 7 בקרוב. מרווחים של 1 עד 3650 ימים, שבועות או חודשים. תאריכים בין 1900-01-01 ל-2999-12-31. עד 30 משימות. ללא תזכורות, התראות או סנכרון יומן; שום דבר לא יוצא מהעמוד הזה.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/maintenance-next-due-sheet.html",
+      "language": "he",
+      "title": "טבלת מועדי תחזוקה הבאים",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 368,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מה הכניס ומה עלה פרויקט פרילנס או עבודה קטנה, והורידו דף עם רווח גולמי, שולי רווח ונטו לשעה. רווח = סך הכנסות − סך הוצאות. שולי רווח = רווח ÷ סך הכנסות. נטו לשעה = רווח ÷ שעות שהושקעו. הסכומים נסכמים באגורות שלמות, ולכן הסיכומים לא נסחפים. סכומים בין 0 ל‑100,000,000 עם שתי ספרות עשרוניות לכל היותר, עד 20 שורות הכנסה ו‑20 שורות הוצאה, שעות בין 0.25 ל‑2000 בקפיצות של רבע שעה. מטבע אחד, ללא המרה, ללא ייעוץ מס או חשבונאות.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/project-profit-sheet.html",
+      "language": "he",
+      "title": "גיליון רווח לפרויקט",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1100,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "הקלידו את הקיבולת המרבית מהגדרות ה‑iPhone ואם יש, את מספר המחזורים, והורידו דף עם טווח הבלאי החודשי והחודשים שנותרו עד 80% – תמיד כטווח, לעולם לא כציון. בלאי לחודש = (100 − קיבולת) ÷ גיל בחודשים, מוצג עם רצועה של ±25%. חודשים עד 80% = (קיבולת − 80) ÷ בלאי; הגבול הנמוך מהקצב הגבוה והגבוה מהקצב הנמוך. מחזורים לחודש = מחזורים ÷ גיל. קיבולת 60 עד 100 כאחוז שלם, מחזורים 0 עד 3000, חודש רכישה בין 2007 ל‑2099 בגיל של 1 עד 240 חודשים, עד 10 מכשירים. חודשים בפורמט YYYY-MM. הנתונים נשארים בלשונית זו; דבר לא נמדד או נקרא מהטלפון.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html",
+      "language": "he",
+      "title": "גיליון טווח בלאי סוללה",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "he",

@@ -14,6 +14,8 @@ import urllib.parse
 import segno
 
 from app_store_storefronts import (
+    load_storefront_availability,
+    resolve_provider_token,
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
@@ -511,9 +513,25 @@ def generate(
         path: app_id for path, app_id in targets.items() if path in eligible_pages
     }
     prepared: dict[Path, tuple[str, str, str, str]] = {}
+    from gen_store_attribution import final_store_url, page_token
+
+    availability = load_storefront_availability(pages) or None
+    provider = resolve_provider_token() or None
     for path, app_id in sorted(qr_targets.items()):
         source = path.read_text(encoding="utf-8")
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
+        # Hash the link the stamper will actually leave on the page (storefront
+        # aligned to the page locale, page campaign applied), never the
+        # pre-stamp CTA, otherwise gen_store_attribution's QR desync gate
+        # rejects the tree.
+        relative = path.resolve().relative_to(pages.resolve()).as_posix()
+        cta = (
+            final_store_url(
+                cta[0], page_token(relative, source), provider,
+                locale=page_locale(path, pages), availability=availability, app_id=app_id,
+            ),
+            *cta[1:],
+        )
         if cta is None:
             raise ValueError(f"App Store QR page has no direct app link: {path}")
         prepared[path] = (app_id, *cta, source)

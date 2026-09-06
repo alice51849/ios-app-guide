@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Compare compras com sua renda líquida por hora e baixe seu CSV. Total = quantidade × preço final. Horas = total ÷ renda líquida por hora. Dias = horas ÷ horas por dia de trabalho. Inclua impostos nos preços. Sem conversão de moeda, folha de pagamento, previsão de economia ou recomendação de compra. Exibição com duas casas decimais; totais usam valores sem arredondamento.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/purchase-worktime-sheet.html",
       "language": "pt-BR",
       "title": "Compare compras em horas de trabalho",
       "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/br/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 323,
+          "title": "Baixar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Anote quando você fez pela última vez cada tarefa da casa, do carro ou da saúde e com que frequência ela se repete: você recebe a próxima data, os dias restantes e o que está atrasado em uma planilha para baixar. Próximo vencimento = última vez + intervalo. Em meses, o dia é mantido; se ele não existir, usa-se o último dia do mês (inclusive em anos bissextos). Dias restantes = vencimento − hoje. Atrasada abaixo de 0; em breve de 0 a 7. Intervalos de 1 a 3650 dias, semanas ou meses. Datas entre 1900-01-01 e 2999-12-31. Até 30 tarefas. Sem lembretes, notificações ou sincronização com calendário; nada sai desta página.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/maintenance-next-due-sheet.html",
+      "language": "pt-BR",
+      "title": "Planilha de próximos vencimentos de manutenção",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 315,
+          "title": "Baixar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Liste o que um projeto freelance ou trabalho pequeno rendeu e custou e baixe uma planilha com o lucro bruto, a margem e o líquido por hora. Lucro = total de receitas − total de despesas. Margem = lucro ÷ total de receitas. Líquido por hora = lucro ÷ horas trabalhadas. Os valores são somados em centavos inteiros, então os totais não desviam. Valores de 0 a 100.000.000 com no máximo duas casas decimais, até 20 linhas de receita e 20 de despesa, horas de 0,25 a 2000 em passos de quinze minutos. Mesma moeda, sem conversão, sem orientação fiscal ou contábil.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/project-profit-sheet.html",
+      "language": "pt-BR",
+      "title": "Planilha de lucro do projeto",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 903,
+          "title": "Baixar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Digite a capacidade máxima mostrada nos Ajustes do iPhone e, se tiver, a contagem de ciclos, e baixe uma planilha com a faixa de desgaste por mês e os meses restantes até 80% — sempre uma faixa, nunca uma nota. Desgaste por mês = (100 − capacidade) ÷ idade em meses, exibido com banda de ±25%. Meses até 80% = (capacidade − 80) ÷ desgaste; limite baixo com a taxa alta e limite alto com a taxa baixa. Ciclos por mês = ciclos ÷ idade. Capacidade de 60 a 100 em porcentagem inteira, ciclos de 0 a 3000, mês da compra entre 2007 e 2099 com idade de 1 a 240 meses, até 10 aparelhos. Meses no formato AAAA-MM. Os dados ficam nesta aba; nada é medido ou lido do seu celular.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/battery-wear-range-sheet.html",
+      "language": "pt-BR",
+      "title": "Faixa de desgaste da bateria",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "pt-BR",

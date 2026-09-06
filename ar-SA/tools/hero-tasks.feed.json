@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "قارن مشترياتك بصافي دخلك في الساعة، ثم نزّل ملف CSV الخاص بك. الإجمالي = الكمية × السعر النهائي. ساعات العمل = الإجمالي ÷ صافي الدخل في الساعة. أيام العمل = الساعات ÷ ساعات يوم العمل. أدخل أسعارًا شاملة للضريبة. لا تحويل عملات ولا حساب رواتب ولا توقع للادخار ولا نصيحة شراء. العرض بمنزلتين عشريتين، والإجماليات تُحسب بالقيم غير المقرّبة.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/purchase-worktime-sheet.html",
       "language": "ar-SA",
       "title": "مقارنة المشتريات بساعات العمل",
       "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sa/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 425,
+          "title": "تنزيل ملف CSV للمثال",
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "سجّل آخر مرة أنجزت فيها كل مهمة للمنزل أو السيارة أو الصحة وكم مرة تتكرر، لتحصل على الموعد القادم والأيام المتبقية والمهام المتأخرة في جدول قابل للتنزيل. الموعد القادم = آخر إنجاز + الفاصل. مع الأشهر يُحتفظ بنفس اليوم؛ وإن لم يوجد يُعتمد آخر يوم في الشهر (بما في ذلك السنوات الكبيسة). الأيام المتبقية = الموعد − اليوم. أقل من 0 متأخر؛ من 0 إلى 7 قريب. الفواصل من 1 إلى 3650 يوماً أو أسبوعاً أو شهراً. التواريخ بين 1900-01-01 و2999-12-31. حتى 30 مهمة. لا تذكيرات ولا إشعارات ولا مزامنة تقويم؛ لا شيء يخرج من هذه الصفحة.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/maintenance-next-due-sheet.html",
+      "language": "ar-SA",
+      "title": "جدول مواعيد الصيانة القادمة",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sa/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 434,
+          "title": "تنزيل CSV النموذج",
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "سجّل ما جلبه مشروع مستقل أو عمل صغير وما كلّفه، ثم نزّل جدولًا يعرض إجمالي الربح وهامش الربح وصافي الساعة. الربح = إجمالي الإيرادات − إجمالي المصروفات. هامش الربح = الربح ÷ إجمالي الإيرادات. صافي الساعة = الربح ÷ الساعات المستغرقة. تُجمع المبالغ بالهللات الصحيحة فلا تنحرف الإجماليات. مبالغ من 0 إلى 100,000,000 بخانتَين عشريتَين على الأكثر، حتى 20 صف إيراد و20 صف مصروف، وساعات من 0.25 إلى 2000 بخطوات ربع ساعة. عملة واحدة، بلا تحويل عملات، وبلا نصائح ضريبية أو محاسبية.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/project-profit-sheet.html",
+      "language": "ar-SA",
+      "title": "ورقة أرباح المشروع",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1269,
+          "title": "تنزيل CSV النموذج",
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "أدخل السعة القصوى من إعدادات iPhone، وعدد الدورات إن كان متاحًا، ثم نزّل جدولًا يعرض نطاق التآكل الشهري والأشهر المتبقية قبل الوصول إلى 80%، دائمًا كنطاق وليس كدرجة. التآكل شهريًا = (100 − السعة) ÷ العمر بالأشهر، ويُعرض بهامش ±25%. الأشهر حتى 80% = (السعة − 80) ÷ التآكل؛ الحد الأدنى من المعدل الأعلى والحد الأعلى من المعدل الأدنى. الدورات شهريًا = الدورات ÷ العمر. السعة من 60 إلى 100 كنسبة صحيحة، والدورات من 0 إلى 3000، وشهر الشراء بين 2007 و2099 بعمر من شهر إلى 240 شهرًا، وحتى 10 أجهزة. الأشهر بصيغة YYYY-MM. تبقى المدخلات في هذه اللوحة؛ لا يُقاس أو يُقرأ شيء من هاتفك.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/battery-wear-range-sheet.html",
+      "language": "ar-SA",
+      "title": "ورقة نطاق تآكل البطارية",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ar-SA",

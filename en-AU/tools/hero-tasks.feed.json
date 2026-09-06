@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Compare purchases using your take-home hourly income, then download your own CSV. Total = quantity × final unit price. Work hours = total ÷ hourly income. Workdays = work hours ÷ hours per workday. Include tax in your prices. No currency conversion, payroll calculation, savings prediction or buying advice. Display rounds to two decimals; totals use unrounded values.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html",
       "language": "en-AU",
       "title": "Purchase-to-work-time worksheet",
       "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 299,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "List when you last did each household, car or health task and how often it repeats, then download a sheet with the next due date, days left and what is overdue. Next due = last done + interval. Month intervals keep the same day of the month and fall back to the last day when it does not exist, including leap years. Days left = next due − today. Overdue below 0 days; due soon from 0 to 7. Intervals from 1 to 3650 days, weeks or months. Dates between 1900-01-01 and 2999-12-31. Up to 30 tasks. No reminders, notifications or calendar sync; nothing leaves this page.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/maintenance-next-due-sheet.html",
+      "language": "en-AU",
+      "title": "Maintenance next-due schedule sheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 296,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "List what a freelance project or small job brought in and what it cost, then download a sheet with the gross profit, margin and net per hour. Profit = income total − expense total. Margin = profit ÷ income total. Net per hour = profit ÷ hours spent. Amounts are added in whole cents, so totals never drift. Amounts from 0 to 100,000,000 with at most two decimals, up to 20 income and 20 expense rows, hours from 0.25 to 2000 in quarter-hour steps. Same currency, no exchange rates, no tax or accounting advice.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/project-profit-sheet.html",
+      "language": "en-AU",
+      "title": "Project profit sheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 838,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Type the maximum capacity from iPhone Settings and, if you have it, the cycle count, then download a sheet with the wear-per-month range and the months left before 80%, always as a range and never as a score. Wear per month = (100 − capacity) ÷ age in months, shown as a ±25% band. Months to 80% = (capacity − 80) ÷ wear, low bound from the high wear rate and high bound from the low rate. Cycles per month = cycle count ÷ age. Capacity from 60 to 100 as a whole percent, cycle count from 0 to 3000, purchase month between 2007 and 2099 and one to 240 months old, up to 10 devices. Months are YYYY-MM. Inputs stay in this tab; nothing is measured or read from your phone.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/battery-wear-range-sheet.html",
+      "language": "en-AU",
+      "title": "Battery wear range sheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "en-AU",

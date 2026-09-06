@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "手取り時給で複数の買い物を比較し、自分の CSV をダウンロードできます。 合計＝数量 × 税込単価。必要な労働時間＝合計 ÷ 手取り時給。労働日数＝必要な労働時間 ÷ 1日の労働時間。 税込価格を入力してください。為替換算、給与計算、貯蓄予測、購入の助言は行いません。表示は小数第2位まで、合計は丸める前の値で計算します。",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ja/tools/purchase-worktime-sheet.html",
       "language": "ja",
       "title": "買い物を労働時間で比べる計算シート",
       "url": "https://open.cait518.cc/ios-app-guide/ja/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 328,
+          "title": "計算例の CSV を保存",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "家・車・体のメンテナンスについて、前回いつ行ったかと繰り返しの間隔を入力し、次回期限・残り日数・期限切れの項目を一覧にしてダウンロードできます。 次回期限＝前回実施＋間隔。月単位では同じ日を保ち、その日が存在しない月は月末にします（うるう年を含む）。残り日数＝次回期限−今日。0未満は期限切れ、0〜7は期限間近です。 間隔は1〜3650の日・週・か月。日付は 1900-01-01 から 2999-12-31 まで。項目は30件まで。リマインダー、通知、カレンダー同期はなく、データはこのページの外に出ません。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html",
+      "language": "ja",
+      "title": "メンテナンス次回期限シート",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 322,
+          "title": "サンプルCSVをダウンロード",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "フリーランス案件や小さな仕事の収入と支出を並べて、粗利・利益率・1時間あたりの純収入を計算し、シートとしてダウンロードできます。 粗利＝収入合計−支出合計。利益率＝粗利÷収入合計。1時間あたりの純収入＝粗利÷作業時間。金額は最小単位の整数で加算するため合計がずれません。 金額は0〜100,000,000で小数第2位まで、収入・支出それぞれ最大20行、作業時間は0.25〜2000（0.25時間単位）。同一通貨、為替換算なし、税務・会計の助言はありません。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/project-profit-sheet.html",
+      "language": "ja",
+      "title": "案件の損益シート",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 933,
+          "title": "サンプルCSVをダウンロード",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhoneの設定にある「最大容量%」と、分かれば充放電回数を入力すると、月あたりの劣化率レンジと80%まで残り何か月かをシートでダウンロードできます。常にレンジで示し、スコアは出しません。 月あたり劣化＝(100−容量)÷使用か月数を±25%の幅で表示。80%までの月数＝(容量−80)÷劣化率で、下限は高い劣化率、上限は低い劣化率から算出。月あたり回数＝充放電回数÷使用か月数。 容量は60〜100の整数％、充放電回数は0〜3000、購入月は2007〜2099で使用期間1〜240か月、最大10台。月は YYYY-MM 形式。入力はこのタブ内だけに留まり、端末の測定や読み取りは行いません。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/battery-wear-range-sheet.html",
+      "language": "ja",
+      "title": "バッテリー劣化レンジ表",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ja",

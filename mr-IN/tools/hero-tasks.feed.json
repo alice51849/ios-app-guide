@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "हाती येणाऱ्या ताशी उत्पन्नाने खरेदीची तुलना करा आणि तुमचा CSV डाउनलोड करा. एकूण = संख्या × अंतिम प्रति नग किंमत. कामाचे तास = एकूण ÷ ताशी निव्वळ उत्पन्न. कामाचे दिवस = कामाचे तास ÷ दिवसातील कामाचे तास. किमतीत कर समाविष्ट करा. चलन रूपांतरण, पगार गणना, बचतीचा अंदाज किंवा खरेदीचा सल्ला दिला जात नाही. दोन दशांश दाखवले जातात; एकूण मूळ मूल्यांवरून मोजले जाते.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/purchase-worktime-sheet.html",
       "language": "mr-IN",
       "title": "खरेदीची तुलना कामाच्या तासांत",
       "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 450,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "घर, गाडी किंवा आरोग्याचे प्रत्येक काम शेवटी कधी केले आणि किती अंतराने पुन्हा करायचे ते लिहा; पुढील तारीख, उरलेले दिवस आणि उशीर झालेली कामे एका सूचीत डाउनलोड करा. पुढील तारीख = शेवटी केले + अंतर. महिन्यांत तोच दिवस राहतो; तो नसल्यास महिन्याचा शेवटचा दिवस घेतला जातो (लीप वर्षासह). उरलेले दिवस = पुढील तारीख − आज. 0 पेक्षा कमी उशीर; 0 ते 7 लवकरच. अंतर 1 ते 3650 दिवस, आठवडे किंवा महिने. तारखा 1900-01-01 ते 2999-12-31. जास्तीत जास्त 30 कामे. स्मरणपत्र, सूचना किंवा कॅलेंडर सिंक नाही; काहीही या पानाबाहेर जात नाही.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/maintenance-next-due-sheet.html",
+      "language": "mr-IN",
+      "title": "देखभालीची पुढील तारीख सूची",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 457,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "फ्रीलान्स प्रोजेक्ट किंवा छोट्या कामातून काय आले आणि काय खर्च झाला ते लिहा, मग एकूण नफा, मार्जिन आणि तासाला निव्वळ उत्पन्न असलेली शीट डाउनलोड करा. नफा = एकूण जमा − एकूण खर्च. मार्जिन = नफा ÷ एकूण जमा. तासाला निव्वळ = नफा ÷ लागलेले तास. रकमा पूर्ण पैशांत मिळवल्या जातात, त्यामुळे बेरजा सरकत नाहीत. रक्कम 0 ते 100,000,000, जास्तीत जास्त दोन दशांश; जास्तीत जास्त 20 जमा आणि 20 खर्चाच्या ओळी; तास 0.25 ते 2000, पाव तासाच्या टप्प्यांत. एकच चलन, विनिमय नाही, कर किंवा लेखा सल्ला नाही.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/project-profit-sheet.html",
+      "language": "mr-IN",
+      "title": "प्रोजेक्ट नफा शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1603,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone च्या सेटिंग्जमधील कमाल क्षमता आणि, असेल तर, सायकल संख्या लिहा, मग महिन्याच्या झिजेची रेंज आणि 80% पर्यंत उरलेले महिने असलेली शीट डाउनलोड करा — नेहमी रेंज, कधीही स्कोअर नाही. मासिक झीज = (100 − क्षमता) ÷ महिन्यांतील वय, ±25% पट्ट्यासह. 80% पर्यंत महिने = (क्षमता − 80) ÷ झीज; खालची मर्यादा उच्च दराने, वरची मर्यादा कमी दराने. मासिक सायकल = सायकल ÷ वय. क्षमता 60 ते 100 पूर्ण टक्क्यांत, सायकल 0 ते 3000, खरेदीचा महिना 2007 आणि 2099 दरम्यान व वय 1 ते 240 महिने, जास्तीत जास्त 10 डिव्हाइस. महिने YYYY-MM स्वरूपात. नोंदी याच टॅबमध्ये राहतात; तुमच्या फोनमधून काही मोजले किंवा वाचले जात नाही.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/battery-wear-range-sheet.html",
+      "language": "mr-IN",
+      "title": "बॅटरी घसारा रेंज शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "mr-IN",

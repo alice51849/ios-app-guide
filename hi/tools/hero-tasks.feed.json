@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "अपनी प्रति घंटे की शुद्ध आय से खरीदारी की तुलना करें और अपना CSV डाउनलोड करें। कुल = संख्या × अंतिम इकाई मूल्य। काम के घंटे = कुल ÷ प्रति घंटे शुद्ध आय। कार्यदिवस = काम के घंटे ÷ प्रतिदिन काम के घंटे। कीमत में कर शामिल करें। मुद्रा परिवर्तन, वेतन गणना, बचत का अनुमान या खरीद की सलाह नहीं दी जाती। प्रदर्शन दो दशमलव तक है; कुल में बिना राउंड किए मान उपयोग होते हैं।",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hi/tools/purchase-worktime-sheet.html",
       "language": "hi",
       "title": "खरीदारी की तुलना काम के घंटों में",
       "url": "https://open.cait518.cc/ios-app-guide/hi/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 448,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "घर, गाड़ी या स्वास्थ्य के हर काम के लिए लिखें कि आखिरी बार कब किया और कितने अंतराल पर दोहराना है; अगली तारीख, बचे दिन और देर हो चुके काम एक तालिका में डाउनलोड करें। अगली तारीख = आखिरी बार + अंतराल। महीनों में वही दिन रहता है; न होने पर महीने का आखिरी दिन लिया जाता है (लीप वर्ष सहित)। बचे दिन = अगली तारीख − आज। 0 से कम देर हो चुकी; 0 से 7 जल्द देय। अंतराल 1 से 3650 दिन, सप्ताह या महीने। तारीखें 1900-01-01 से 2999-12-31 तक। अधिकतम 30 काम। कोई रिमाइंडर, सूचना या कैलेंडर सिंक नहीं; कुछ भी इस पेज से बाहर नहीं जाता।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/maintenance-next-due-sheet.html",
+      "language": "hi",
+      "title": "रखरखाव की अगली तारीख तालिका",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 428,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "किसी फ्रीलांस प्रोजेक्ट या छोटे काम से क्या आया और क्या खर्च हुआ, यह लिखें और सकल लाभ, मार्जिन और प्रति घंटा शुद्ध आय वाली शीट डाउनलोड करें। लाभ = कुल आय − कुल व्यय। मार्जिन = लाभ ÷ कुल आय। प्रति घंटा शुद्ध = लाभ ÷ लगे घंटे। राशियाँ पूरे पैसों में जोड़ी जाती हैं, इसलिए योग नहीं बिगड़ते। राशि 0 से 100,000,000 तक अधिकतम दो दशमलव के साथ, अधिकतम 20 आय और 20 व्यय पंक्तियाँ, घंटे 0.25 से 2000 तक चौथाई घंटे के चरणों में। एक ही मुद्रा, कोई विनिमय नहीं, कोई कर या लेखा सलाह नहीं।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/project-profit-sheet.html",
+      "language": "hi",
+      "title": "प्रोजेक्ट लाभ शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1605,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone की सेटिंग्स से अधिकतम क्षमता और, अगर हो, साइकिल गिनती लिखें, फिर हर महीने के घिसाव की रेंज और 80% तक बचे महीनों वाली शीट डाउनलोड करें — हमेशा रेंज, कभी स्कोर नहीं। मासिक घिसाव = (100 − क्षमता) ÷ महीनों में उम्र, ±25% बैंड के साथ। 80% तक महीने = (क्षमता − 80) ÷ घिसाव; निचली सीमा ऊँची दर से, ऊपरी सीमा नीची दर से। मासिक साइकिल = साइकिल ÷ उम्र। क्षमता 60 से 100 पूर्ण प्रतिशत में, साइकिल 0 से 3000, खरीद का महीना 2007 और 2099 के बीच व उम्र 1 से 240 महीने, अधिकतम 10 डिवाइस। महीने YYYY-MM में। इनपुट इसी टैब में रहते हैं; आपके फ़ोन से कुछ मापा या पढ़ा नहीं जाता।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/battery-wear-range-sheet.html",
+      "language": "hi",
+      "title": "बैटरी घिसाव रेंज शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "hi",

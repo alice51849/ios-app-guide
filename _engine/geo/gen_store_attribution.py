@@ -307,6 +307,26 @@ def align_storefront(url: str, locale: str | None, availability=None) -> str:
     return urllib.parse.urlunsplit(parsed._replace(path=path))
 
 
+def final_store_url(
+    url: str, token: str, provider: str | None, *,
+    locale: str | None = None, availability=None, app_id: str | None = None,
+) -> str:
+    """The exact link the stamper will leave on a page: storefront aligned to
+    the page locale, then the page campaign (protected campaigns kept).
+    Generators that hash a link (QR cards) must mint from this, never from
+    the pre-stamp CTA, or the QR desync gate rejects the whole tree."""
+    if is_clean_app_store_developer_url(url):
+        return url
+    url = align_storefront(url, locale, availability)
+    existing = existing_campaign(url)
+    campaign = existing if existing in PROTECTED_CAMPAIGNS else token
+    return required_campaign_app_store_url(
+        url, campaign, provider_token=provider,
+        expected_locale=storefront_locale_for_url(url, locale),
+        expected_app_id=app_id, availability=availability,
+    )
+
+
 def rewrite(
     text: str, token: str, provider: str | None, *,
     locale: str | None = None, availability=None,
@@ -339,15 +359,8 @@ def rewrite(
     changes = 0
 
     def retarget(url: str, local=locale, app_id=None) -> str:
-        if is_clean_app_store_developer_url(url):
-            return url
-        url = align_storefront(url, local, availability)
-        existing = existing_campaign(url)
-        campaign = existing if existing in PROTECTED_CAMPAIGNS else token
-        return required_campaign_app_store_url(
-            url, campaign, provider_token=provider,
-            expected_locale=storefront_locale_for_url(url, local),
-            expected_app_id=app_id, availability=availability,
+        return final_store_url(
+            url, token, provider, locale=local, availability=availability, app_id=app_id,
         )
 
     def replace(match: re.Match[str]) -> str:
@@ -429,15 +442,8 @@ def rewrite(
             for item in html.unescape(content["value"]).split(",") if "=" in item
         )
         app_id = fields.get("app-id", "")
-        if existing_campaign(fields.get("app-argument", "")) in PROTECTED_CAMPAIGNS:
-            # Web Stories mint their own banner (app-argument already carries
-            # iag_story) and validate_webstories pins that exact shape, so the
-            # generic pass must not append affiliate-data; strip one if a
-            # previous run did.
-            fields.pop("affiliate-data", None)
-        else:
-            url = retarget(f"https://apps.apple.com/app/id{app_id}")
-            fields["affiliate-data"] = urllib.parse.urlsplit(url).query
+        url = retarget(f"https://apps.apple.com/app/id{app_id}")
+        fields["affiliate-data"] = urllib.parse.urlsplit(url).query
         updated = html.escape(", ".join(f"{key}={value}" for key, value in fields.items()), quote=True)
         if updated != content["value"]:
             changes += 1

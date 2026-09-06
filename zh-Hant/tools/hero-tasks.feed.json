@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "用實領時薪比較多筆購物，再下載自己的 CSV。 合計＝數量 × 含稅單價。所需工時＝合計 ÷ 實領時薪。工作天數＝所需工時 ÷ 每天工作時數。 請輸入含稅價格。不換匯、不試算薪資、不預測存款，也不建議是否購買。顯示取小數兩位，合計使用未四捨五入的數值。",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/purchase-worktime-sheet.html",
       "language": "zh-Hant",
       "title": "購物價格換工時比較表",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 308,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "列出家裡、車子或身體保養上次做的日期與間隔，一次算出下次到期日、剩餘天數與逾期項目，再下載成表。 下次到期＝上次完成＋間隔。以月為單位時保留同一日，該月沒有這天則取月底（含閏年）。剩餘天數＝下次到期－今天；小於 0 為已逾期，0 至 7 為即將到期。 間隔為 1 至 3650 天、週或個月；日期介於 1900-01-01 與 2999-12-31；最多 30 個項目。不提醒、不推播、不同步行事曆，資料不會離開本頁。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/maintenance-next-due-sheet.html",
+      "language": "zh-Hant",
+      "title": "保養到期排程表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 312,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "把接案或小專案的每筆收入與支出列出來，一次算出毛利、毛利率與每小時淨收入，再下載成表。 毛利＝收入合計－支出合計。毛利率＝毛利÷收入合計。每小時淨收入＝毛利÷投入時數。金額以最小單位整數相加，合計不會漂移。 金額 0 至 100,000,000、最多兩位小數；收入與支出各最多 20 列；時數 0.25 至 2000，以 0.25 小時為單位。同幣別、不換匯，不提供稅務或會計建議。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/project-profit-sheet.html",
+      "language": "zh-Hant",
+      "title": "專案損益表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 798,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "把 iPhone 設定裡的「最大容量 %」和（若有）循環次數填進來，下載一份含每月磨耗率區間與「跌到 80% 前還有幾個月」的表；一律是區間，不是分數。 每月磨耗＝(100－容量)÷機齡月數，以 ±25% 帶寬呈現。距 80% 月數＝(容量－80)÷磨耗率，下界用高磨耗率、上界用低磨耗率。每月循環＝循環次數÷機齡。 容量 60 至 100 的整數百分比；循環次數 0 至 3000；購買月份介於 2007 與 2099、機齡 1 至 240 個月；最多 10 台。月份格式 YYYY-MM。輸入只留在本分頁，不會量測或讀取你的手機。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/battery-wear-range-sheet.html",
+      "language": "zh-Hant",
+      "title": "電池磨耗區間表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "zh-Hant",

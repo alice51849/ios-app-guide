@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "ଆପଣଙ୍କ ଘଣ୍ଟାପିଛା ନିଟ୍ ଆୟରେ କିଣାକିଣି ତୁଳନା କରି ନିଜ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ମୋଟ = ପରିମାଣ × ଅନ୍ତିମ ଏକକ ମୂଲ୍ୟ। କାମ ଘଣ୍ଟା = ମୋଟ ÷ ଘଣ୍ଟାପିଛା ନିଟ୍ ଆୟ। କାର୍ଯ୍ୟଦିନ = କାମ ଘଣ୍ଟା ÷ ଦୈନିକ କାମ ଘଣ୍ଟା। ମୂଲ୍ୟରେ କର ଯୋଡ଼ନ୍ତୁ। ମୁଦ୍ରା ବଦଳ, ଦରମା ହିସାବ, ସଞ୍ଚୟ ପୂର୍ବାନୁମାନ କିମ୍ବା କିଣିବା ପରାମର୍ଶ ନାହିଁ। ଦୁଇ ଦଶମିକ ଦେଖାଯାଏ; ମୋଟ ମୂଳ ମୂଲ୍ୟରୁ ହିସାବ ହୁଏ।",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/purchase-worktime-sheet.html",
       "language": "or-IN",
       "title": "କିଣାକିଣିକୁ କାମ ଘଣ୍ଟାରେ ତୁଳନା କରନ୍ତୁ",
       "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 450,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "ଘର, ଗାଡ଼ି କିମ୍ବା ସ୍ୱାସ୍ଥ୍ୟର ପ୍ରତ୍ୟେକ କାମ ଶେଷ ଥର କେବେ କରିଥିଲେ ଏବଂ କେତେ ବ୍ୟବଧାନରେ ପୁଣି କରିବେ ଲେଖନ୍ତୁ; ପରବର୍ତ୍ତୀ ତାରିଖ, ବାକି ଦିନ ଏବଂ ବିଳମ୍ବିତ କାମ ଏକ ତାଲିକାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ପରବର୍ତ୍ତୀ ତାରିଖ = ଶେଷ ଥର + ବ୍ୟବଧାନ। ମାସରେ ସେହି ଦିନ ରହେ; ନଥିଲେ ମାସର ଶେଷ ଦିନ ନିଆଯାଏ (ଅଧିବର୍ଷ ସହିତ)। ବାକି ଦିନ = ପରବର୍ତ୍ତୀ ତାରିଖ − ଆଜି। 0 ରୁ କମ୍ ବିଳମ୍ବିତ; 0 ରୁ 7 ଶୀଘ୍ର। ବ୍ୟବଧାନ 1 ରୁ 3650 ଦିନ, ସପ୍ତାହ କିମ୍ବା ମାସ। ତାରିଖ 1900-01-01 ରୁ 2999-12-31। ସର୍ବାଧିକ 30 କାମ। କୌଣସି ରିମାଇଣ୍ଡର, ବିଜ୍ଞପ୍ତି କିମ୍ବା କ୍ୟାଲେଣ୍ଡର ସିଙ୍କ୍ ନାହିଁ; କିଛି ଏହି ପୃଷ୍ଠା ବାହାରକୁ ଯାଏ ନାହିଁ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/maintenance-next-due-sheet.html",
+      "language": "or-IN",
+      "title": "ରକ୍ଷଣାବେକ୍ଷଣର ପରବର୍ତ୍ତୀ ତାରିଖ ତାଲିକା",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 467,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "ଫ୍ରିଲାନ୍ସ ପ୍ରୋଜେକ୍ଟ କିମ୍ବା ଛୋଟ କାମରୁ କଣ ଆସିଲା ଓ କଣ ଖର୍ଚ୍ଚ ହେଲା ତାହା ଲେଖନ୍ତୁ, ତାପରେ ମୋଟ ଲାଭ, ମାର୍ଜିନ ଓ ଘଣ୍ଟା ପ୍ରତି ନିଟ ଆୟ ଥିବା ଶିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଲାଭ = ମୋଟ ଆୟ − ମୋଟ ବ୍ୟୟ। ମାର୍ଜିନ = ଲାଭ ÷ ମୋଟ ଆୟ। ଘଣ୍ଟା ପ୍ରତି ନିଟ = ଲାଭ ÷ ଲାଗିଥିବା ଘଣ୍ଟା। ରାଶି ପୂର୍ଣ୍ଣ ପଇସାରେ ମିଶାଯାଏ, ତେଣୁ ଯୋଗଫଳ ଘୁଞ୍ଚେ ନାହିଁ। ରାଶି 0 ରୁ 100,000,000, ସର୍ବାଧିକ ଦୁଇ ଦଶମିକ; ସର୍ବାଧିକ 20 ଆୟ ଓ 20 ବ୍ୟୟ ଧାଡ଼ି; ଘଣ୍ଟା 0.25 ରୁ 2000, ପାଏ ଘଣ୍ଟା ପାହାଚରେ। ଏକା ମୁଦ୍ରା, ବିନିମୟ ନାହିଁ, ଟିକସ ବା ହିସାବ ପରାମର୍ଶ ନାହିଁ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/project-profit-sheet.html",
+      "language": "or-IN",
+      "title": "ପ୍ରୋଜେକ୍ଟ ଲାଭ ସିଟ୍",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1648,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone ସେଟିଂସରୁ ସର୍ବାଧିକ କ୍ଷମତା ଓ ଥିଲେ ସାଇକଲ୍ ସଂଖ୍ୟା ଲେଖନ୍ତୁ, ତାପରେ ମାସିକ କ୍ଷୟ ରେଞ୍ଜ ଓ 80% ପର୍ଯ୍ୟନ୍ତ ବାକି ମାସ ଥିବା ଶିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ — ସବୁବେଳେ ରେଞ୍ଜ, କେବେ ସ୍କୋର ନୁହେଁ। ମାସିକ କ୍ଷୟ = (100 − କ୍ଷମତା) ÷ ମାସରେ ବୟସ, ±25% ବ୍ୟାଣ୍ଡ ସହ। 80% ପର୍ଯ୍ୟନ୍ତ ମାସ = (କ୍ଷମତା − 80) ÷ କ୍ଷୟ; ତଳ ସୀମା ଅଧିକ ହାରରୁ, ଉପର ସୀମା କମ୍ ହାରରୁ। ମାସିକ ସାଇକଲ୍ = ସାଇକଲ୍ ÷ ବୟସ। କ୍ଷମତା 60 ରୁ 100 ପୂର୍ଣ୍ଣ ଶତକଡ଼ାରେ, ସାଇକଲ୍ 0 ରୁ 3000, କିଣିବା ମାସ 2007 ଓ 2099 ମଧ୍ୟରେ ଏବଂ ବୟସ 1 ରୁ 240 ମାସ, ସର୍ବାଧିକ 10 ଡିଭାଇସ୍। ମାସ YYYY-MM ରୂପରେ। ଇନପୁଟ୍ ଏହି ଟ୍ୟାବରେ ରହେ; ଆପଣଙ୍କ ଫୋନ୍‌ରୁ କିଛି ମାପ ବା ପଢ଼ା ହୁଏ ନାହିଁ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/battery-wear-range-sheet.html",
+      "language": "or-IN",
+      "title": "ବ୍ୟାଟେରୀ କ୍ଷୟ ରେଞ୍ଜ ସିଟ୍",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "or-IN",

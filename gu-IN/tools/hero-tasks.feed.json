@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "તમારી ચોખ્ખી કલાકદીઠ આવકથી ખરીદીની સરખામણી કરો અને તમારું CSV ડાઉનલોડ કરો. કુલ = જથ્થો × અંતિમ એકમ કિંમત. કામના કલાક = કુલ ÷ કલાકદીઠ ચોખ્ખી આવક. કાર્યદિવસ = કામના કલાક ÷ દરરોજના કામના કલાક. કિંમતમાં કર સામેલ કરો. ચલણ રૂપાંતર, પગાર ગણતરી, બચતની આગાહી કે ખરીદીની સલાહ નથી. દેખાવ બે દશાંશ સુધી છે; કુલ મૂળ મૂલ્યોથી ગણાય છે.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/purchase-worktime-sheet.html",
       "language": "gu-IN",
       "title": "ખરીદીની સરખામણી કામના કલાકોમાં",
       "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 458,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "ઘર, ગાડી કે આરોગ્યનું દરેક કામ છેલ્લે ક્યારે કર્યું અને કેટલા અંતરે ફરી કરવાનું છે તે લખો; આગલી તારીખ, બાકી દિવસો અને મોડું થયેલું કામ એક સૂચિમાં ડાઉનલોડ કરો. આગલી તારીખ = છેલ્લે કર્યું + અંતર. મહિનામાં એજ દિવસ રહે છે; ન હોય તો મહિનાનો છેલ્લો દિવસ લેવાય છે (લીપ વર્ષ સહિત). બાકી દિવસો = આગલી તારીખ − આજે. 0 થી ઓછું મોડું; 0 થી 7 ટૂંક સમયમાં. અંતર 1 થી 3650 દિવસ, અઠવાડિયા કે મહિના. તારીખો 1900-01-01 થી 2999-12-31. વધુમાં વધુ 30 કામ. કોઈ રિમાઇન્ડર, સૂચના કે કૅલેન્ડર સિંક નહીં; કંઈ પણ આ પેજ બહાર જતું નથી.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/maintenance-next-due-sheet.html",
+      "language": "gu-IN",
+      "title": "જાળવણીની આગલી તારીખની સૂચિ",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 467,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "ફ્રીલાન્સ પ્રોજેક્ટ કે નાના કામમાં શું આવ્યું અને શું ખર્ચ થયો તે લખો, પછી કુલ નફો, માર્જિન અને કલાક દીઠ ચોખ્ખી આવક સાથેની શીટ ડાઉનલોડ કરો. નફો = કુલ આવક − કુલ ખર્ચ. માર્જિન = નફો ÷ કુલ આવક. કલાક દીઠ ચોખ્ખું = નફો ÷ લગાડેલા કલાક. રકમ પૂરા પૈસામાં ઉમેરાય છે, એટલે સરવાળા ખસતા નથી. રકમ 0 થી 100,000,000 સુધી વધુમાં વધુ બે દશાંશ સાથે, વધુમાં વધુ 20 આવક અને 20 ખર્ચની હરોળ, કલાક 0.25 થી 2000 સુધી પા કલાકના પગલે. એક જ ચલણ, કોઈ વિનિમય નહીં, કોઈ કર કે હિસાબી સલાહ નહીં.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/project-profit-sheet.html",
+      "language": "gu-IN",
+      "title": "પ્રોજેક્ટ નફા શીટ",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1641,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone ની સેટિંગ્સમાંથી મહત્તમ ક્ષમતા અને, હોય તો, સાયકલ ગણતરી લખો, પછી માસિક ઘસારાની રેન્જ અને 80% સુધી બાકી મહિનાવાળી શીટ ડાઉનલોડ કરો — હંમેશાં રેન્જ, કદી સ્કોર નહીં. માસિક ઘસારો = (100 − ક્ષમતા) ÷ મહિનામાં ઉંમર, ±25% બેન્ડ સાથે. 80% સુધી મહિના = (ક્ષમતા − 80) ÷ ઘસારો; નીચી મર્યાદા ઊંચા દરથી, ઊંચી મર્યાદા નીચા દરથી. માસિક સાયકલ = સાયકલ ÷ ઉંમર. ક્ષમતા 60 થી 100 પૂર્ણ ટકામાં, સાયકલ 0 થી 3000, ખરીદીનો મહિનો 2007 અને 2099 વચ્ચે અને ઉંમર 1 થી 240 મહિના, વધુમાં વધુ 10 ડિવાઇસ. મહિના YYYY-MM માં. ઇનપુટ આ ટૅબમાં જ રહે છે; તમારા ફોનમાંથી કંઈ મપાતું કે વંચાતું નથી.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/battery-wear-range-sheet.html",
+      "language": "gu-IN",
+      "title": "બેટરી ઘસારો રેન્જ શીટ",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "gu-IN",

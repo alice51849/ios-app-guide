@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "হাতে পাওয়া ঘণ্টাপ্রতি আয় দিয়ে কেনাকাটা তুলনা করে নিজের CSV ডাউনলোড করুন। মোট = পরিমাণ × চূড়ান্ত একক মূল্য। কাজের ঘণ্টা = মোট ÷ ঘণ্টাপ্রতি নিট আয়। কর্মদিবস = কাজের ঘণ্টা ÷ প্রতিদিন কাজের ঘণ্টা। দামের মধ্যে কর অন্তর্ভুক্ত করুন। মুদ্রা রূপান্তর, বেতন হিসাব, সঞ্চয়ের পূর্বাভাস বা কেনার পরামর্শ দেওয়া হয় না। দুই দশমিক দেখানো হয়; মোট হিসাব অপরিবর্তিত মান দিয়ে করা হয়।",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/purchase-worktime-sheet.html",
       "language": "bn-BD",
       "title": "কেনাকাটা তুলনা করুন কাজের ঘণ্টায়",
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 461,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "বাড়ি, গাড়ি বা স্বাস্থ্যের প্রতিটি কাজ শেষবার কখন করেছেন এবং কত দিন পর আবার করতে হবে লিখুন; পরবর্তী তারিখ, বাকি দিন ও দেরি হওয়া কাজ একটি তালিকায় ডাউনলোড করুন। পরবর্তী তারিখ = শেষবার + ব্যবধান। মাসের ক্ষেত্রে একই দিন থাকে; না থাকলে মাসের শেষ দিন নেওয়া হয় (অধিবর্ষসহ)। বাকি দিন = পরবর্তী তারিখ − আজ। ০-এর নিচে দেরি; ০ থেকে ৭ শিগগিরই। ব্যবধান ১ থেকে ৩৬৫০ দিন, সপ্তাহ বা মাস। তারিখ 1900-01-01 থেকে 2999-12-31। সর্বোচ্চ ৩০টি কাজ। কোনো রিমাইন্ডার, নোটিফিকেশন বা ক্যালেন্ডার সিঙ্ক নেই; কিছুই এই পাতা ছেড়ে যায় না।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/maintenance-next-due-sheet.html",
+      "language": "bn-BD",
+      "title": "রক্ষণাবেক্ষণের পরবর্তী তারিখের তালিকা",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 460,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "কোনো ফ্রিল্যান্স প্রজেক্ট বা ছোট কাজে কী আয় হলো আর কী খরচ হলো তা লিখুন, তারপর মোট লাভ, মার্জিন ও ঘণ্টাপ্রতি নিট আয়সহ শিট ডাউনলোড করুন। লাভ = মোট আয় − মোট ব্যয়। মার্জিন = লাভ ÷ মোট আয়। ঘণ্টাপ্রতি নিট = লাভ ÷ ব্যয়িত ঘণ্টা। পরিমাণ পূর্ণ পয়সায় যোগ হয়, তাই যোগফল সরে যায় না। পরিমাণ 0 থেকে 100,000,000, সর্বোচ্চ দুই দশমিক; সর্বোচ্চ 20টি আয় ও 20টি ব্যয়ের সারি; ঘণ্টা 0.25 থেকে 2000, সিকি ঘণ্টার ধাপে। একই মুদ্রা, বিনিময় নেই, কর বা হিসাবরক্ষণ পরামর্শ নেই।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/project-profit-sheet.html",
+      "language": "bn-BD",
+      "title": "প্রোজেক্ট লাভের শিট",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1634,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone-এর সেটিংস থেকে সর্বোচ্চ ক্ষমতা এবং থাকলে সাইকেল সংখ্যা লিখুন, তারপর মাসিক ক্ষয়ের রেঞ্জ ও 80%-এ নামার আগে বাকি মাসসহ শিট ডাউনলোড করুন — সব সময় রেঞ্জ, কখনো স্কোর নয়। মাসিক ক্ষয় = (100 − ক্ষমতা) ÷ মাসে বয়স, ±25% ব্যান্ডসহ। 80% পর্যন্ত মাস = (ক্ষমতা − 80) ÷ ক্ষয়; নিম্ন সীমা উচ্চ হার থেকে, উচ্চ সীমা নিম্ন হার থেকে। মাসিক সাইকেল = সাইকেল ÷ বয়স। ক্ষমতা 60 থেকে 100 পূর্ণ শতাংশে, সাইকেল 0 থেকে 3000, কেনার মাস 2007 ও 2099-এর মধ্যে এবং বয়স 1 থেকে 240 মাস, সর্বোচ্চ 10টি ডিভাইস। মাস YYYY-MM বিন্যাসে। ইনপুট এই ট্যাবেই থাকে; আপনার ফোন থেকে কিছু মাপা বা পড়া হয় না।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/battery-wear-range-sheet.html",
+      "language": "bn-BD",
+      "title": "ব্যাটারি ক্ষয় রেঞ্জ শিট",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "bn-BD",

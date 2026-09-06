@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Porównaj zakupy według dochodu netto za godzinę i pobierz własny CSV. Razem = ilość × cena końcowa. Godziny = suma ÷ dochód netto za godzinę. Dni = godziny ÷ godziny w dniu pracy. Podaj ceny z podatkiem. Bez przeliczania walut, naliczania wynagrodzeń, prognoz oszczędności i porad zakupowych. Wyświetlane są dwa miejsca po przecinku; sumy wykorzystują wartości niezaokrąglone.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pl/tools/purchase-worktime-sheet.html",
       "language": "pl",
       "title": "Porównaj zakupy w godzinach pracy",
       "url": "https://open.cait518.cc/ios-app-guide/pl/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pl/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 347,
+          "title": "Pobierz przykładowy CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Wpisz, kiedy ostatnio wykonano każde zadanie domowe, samochodowe lub zdrowotne i jak często się powtarza: otrzymasz następny termin, pozostałe dni i zaległości w arkuszu do pobrania. Następny termin = ostatnio wykonane + odstęp. Dla miesięcy zachowany jest ten sam dzień; jeśli go nie ma, brany jest ostatni dzień miesiąca (także w latach przestępnych). Pozostało dni = termin − dziś. Poniżej 0 zaległe; od 0 do 7 wkrótce. Odstępy od 1 do 3650 dni, tygodni lub miesięcy. Daty od 1900-01-01 do 2999-12-31. Do 30 zadań. Bez przypomnień, powiadomień i synchronizacji z kalendarzem; nic nie opuszcza tej strony.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pl/tools/maintenance-next-due-sheet.html",
+      "language": "pl",
+      "title": "Arkusz terminów konserwacji",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 325,
+          "title": "Pobierz przykładowy CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Wypisz, co przyniosło i ile kosztowało zlecenie freelance lub mały projekt, a potem pobierz zestawienie z zyskiem brutto, marżą i kwotą netto za godzinę. Zysk = suma przychodów − suma kosztów. Marża = zysk ÷ suma przychodów. Netto za godzinę = zysk ÷ przepracowane godziny. Kwoty sumowane są w pełnych groszach, więc sumy się nie rozjeżdżają. Kwoty od 0 do 100 000 000 z najwyżej dwoma miejscami po przecinku, do 20 wierszy przychodów i 20 kosztów, godziny od 0,25 do 2000 co kwadrans. Jedna waluta, bez przeliczania, bez porad podatkowych i księgowych.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pl/tools/project-profit-sheet.html",
+      "language": "pl",
+      "title": "Arkusz zysku projektu",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 982,
+          "title": "Pobierz przykładowy CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/pl/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Wpisz maksymalną pojemność z Ustawień iPhone’a i, jeśli ją znasz, liczbę cykli, a potem pobierz arkusz z zakresem zużycia na miesiąc i liczbą miesięcy do 80% – zawsze jako zakres, nigdy jako wynik punktowy. Zużycie na miesiąc = (100 − pojemność) ÷ wiek w miesiącach, pokazane z pasmem ±25%. Miesiące do 80% = (pojemność − 80) ÷ zużycie; dolna granica z wysokiego tempa, górna z niskiego. Cykle na miesiąc = cykle ÷ wiek. Pojemność od 60 do 100 jako pełny procent, cykle od 0 do 3000, miesiąc zakupu między 2007 a 2099 przy wieku od 1 do 240 miesięcy, do 10 urządzeń. Miesiące w formacie RRRR-MM. Dane zostają w tej karcie; nic nie jest mierzone ani odczytywane z telefonu.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pl/tools/battery-wear-range-sheet.html",
+      "language": "pl",
+      "title": "Zakres zużycia baterii",
+      "url": "https://open.cait518.cc/ios-app-guide/pl/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "pl",

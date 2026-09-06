@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "ਆਪਣੀ ਪ੍ਰਤੀ ਘੰਟਾ ਸ਼ੁੱਧ ਆਮਦਨ ਨਾਲ ਖਰੀਦਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ ਅਤੇ ਆਪਣਾ CSV ਡਾਊਨਲੋਡ ਕਰੋ। ਕੁੱਲ = ਗਿਣਤੀ × ਅੰਤਿਮ ਇਕਾਈ ਕੀਮਤ। ਕੰਮ ਦੇ ਘੰਟੇ = ਕੁੱਲ ÷ ਪ੍ਰਤੀ ਘੰਟਾ ਸ਼ੁੱਧ ਆਮਦਨ। ਕੰਮਕਾਜੀ ਦਿਨ = ਕੰਮ ਦੇ ਘੰਟੇ ÷ ਰੋਜ਼ਾਨਾ ਕੰਮ ਦੇ ਘੰਟੇ। ਕੀਮਤਾਂ ਵਿੱਚ ਟੈਕਸ ਸ਼ਾਮਲ ਕਰੋ। ਮੁਦਰਾ ਬਦਲੀ, ਤਨਖ਼ਾਹ ਗਿਣਤੀ, ਬਚਤ ਦੀ ਭਵਿੱਖਬਾਣੀ ਜਾਂ ਖਰੀਦ ਸਲਾਹ ਨਹੀਂ। ਦੋ ਦਸ਼ਮਲਵ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ; ਕੁੱਲ ਮੂਲ ਮੁੱਲਾਂ ਨਾਲ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ।",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/purchase-worktime-sheet.html",
       "language": "pa-IN",
       "title": "ਖਰੀਦਾਂ ਦੀ ਤੁਲਨਾ ਕੰਮ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ",
       "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 436,
+          "title": "ਉਦਾਹਰਨ CSV ਡਾਊਨਲੋਡ ਕਰੋ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "ਘਰ, ਗੱਡੀ ਜਾਂ ਸਿਹਤ ਦਾ ਹਰ ਕੰਮ ਆਖ਼ਰੀ ਵਾਰ ਕਦੋਂ ਕੀਤਾ ਅਤੇ ਕਿੰਨੇ ਅੰਤਰਾਲ ਤੇ ਦੁਹਰਾਉਣਾ ਹੈ, ਲਿਖੋ; ਅਗਲੀ ਤਾਰੀਖ਼, ਬਾਕੀ ਦਿਨ ਅਤੇ ਲੇਟ ਹੋਏ ਕੰਮ ਇੱਕ ਸੂਚੀ ਵਿੱਚ ਡਾਊਨਲੋਡ ਕਰੋ। ਅਗਲੀ ਤਾਰੀਖ਼ = ਆਖ਼ਰੀ ਵਾਰ + ਅੰਤਰਾਲ। ਮਹੀਨਿਆਂ ਵਿੱਚ ਉਹੀ ਦਿਨ ਰਹਿੰਦਾ ਹੈ; ਨਾ ਹੋਵੇ ਤਾਂ ਮਹੀਨੇ ਦਾ ਆਖ਼ਰੀ ਦਿਨ ਲਿਆ ਜਾਂਦਾ ਹੈ (ਲੀਪ ਸਾਲ ਸਮੇਤ)। ਬਾਕੀ ਦਿਨ = ਅਗਲੀ ਤਾਰੀਖ਼ − ਅੱਜ। 0 ਤੋਂ ਘੱਟ ਲੇਟ; 0 ਤੋਂ 7 ਜਲਦੀ। ਅੰਤਰਾਲ 1 ਤੋਂ 3650 ਦਿਨ, ਹਫ਼ਤੇ ਜਾਂ ਮਹੀਨੇ। ਤਾਰੀਖ਼ਾਂ 1900-01-01 ਤੋਂ 2999-12-31। ਵੱਧ ਤੋਂ ਵੱਧ 30 ਕੰਮ। ਕੋਈ ਰਿਮਾਈਂਡਰ, ਸੂਚਨਾ ਜਾਂ ਕੈਲੰਡਰ ਸਿੰਕ ਨਹੀਂ; ਕੁਝ ਵੀ ਇਸ ਪੰਨੇ ਤੋਂ ਬਾਹਰ ਨਹੀਂ ਜਾਂਦਾ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/maintenance-next-due-sheet.html",
+      "language": "pa-IN",
+      "title": "ਸਾਂਭ-ਸੰਭਾਲ ਦੀ ਅਗਲੀ ਤਾਰੀਖ਼ ਸੂਚੀ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 437,
+          "title": "ਉਦਾਹਰਣ CSV ਡਾਊਨਲੋਡ ਕਰੋ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "ਕਿਸੇ ਫ੍ਰੀਲਾਂਸ ਪ੍ਰੋਜੈਕਟ ਜਾਂ ਛੋਟੇ ਕੰਮ ਤੋਂ ਕੀ ਆਇਆ ਤੇ ਕੀ ਖਰਚ ਹੋਇਆ ਲਿਖੋ, ਫਿਰ ਕੁੱਲ ਲਾਭ, ਮਾਰਜਿਨ ਅਤੇ ਪ੍ਰਤੀ ਘੰਟਾ ਸ਼ੁੱਧ ਆਮਦਨ ਵਾਲੀ ਸ਼ੀਟ ਡਾਊਨਲੋਡ ਕਰੋ। ਲਾਭ = ਕੁੱਲ ਆਮਦਨ − ਕੁੱਲ ਖਰਚ। ਮਾਰਜਿਨ = ਲਾਭ ÷ ਕੁੱਲ ਆਮਦਨ। ਪ੍ਰਤੀ ਘੰਟਾ ਸ਼ੁੱਧ = ਲਾਭ ÷ ਲੱਗੇ ਘੰਟੇ। ਰਕਮਾਂ ਪੂਰੇ ਪੈਸਿਆਂ ਵਿੱਚ ਜੋੜੀਆਂ ਜਾਂਦੀਆਂ ਹਨ, ਇਸ ਲਈ ਜੋੜ ਨਹੀਂ ਖਿਸਕਦੇ। ਰਕਮ 0 ਤੋਂ 100,000,000 ਤੱਕ ਵੱਧ ਤੋਂ ਵੱਧ ਦੋ ਦਸ਼ਮਲਵ ਨਾਲ, ਵੱਧ ਤੋਂ ਵੱਧ 20 ਆਮਦਨ ਅਤੇ 20 ਖਰਚ ਕਤਾਰਾਂ, ਘੰਟੇ 0.25 ਤੋਂ 2000 ਤੱਕ ਚੌਥਾਈ ਘੰਟੇ ਦੇ ਕਦਮਾਂ ਵਿੱਚ। ਇੱਕੋ ਮੁਦਰਾ, ਕੋਈ ਵਟਾਂਦਰਾ ਨਹੀਂ, ਕੋਈ ਟੈਕਸ ਜਾਂ ਲੇਖਾ ਸਲਾਹ ਨਹੀਂ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/project-profit-sheet.html",
+      "language": "pa-IN",
+      "title": "ਪ੍ਰੋਜੈਕਟ ਲਾਭ ਸ਼ੀਟ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1654,
+          "title": "ਉਦਾਹਰਣ CSV ਡਾਊਨਲੋਡ ਕਰੋ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚੋਂ ਵੱਧ ਤੋਂ ਵੱਧ ਸਮਰੱਥਾ ਅਤੇ, ਜੇ ਹੋਵੇ, ਸਾਈਕਲ ਗਿਣਤੀ ਲਿਖੋ, ਫਿਰ ਮਹੀਨਾਵਾਰ ਘਸਾਈ ਦੀ ਰੇਂਜ ਅਤੇ 80% ਤੱਕ ਬਾਕੀ ਮਹੀਨਿਆਂ ਵਾਲੀ ਸ਼ੀਟ ਡਾਊਨਲੋਡ ਕਰੋ — ਹਮੇਸ਼ਾ ਰੇਂਜ, ਕਦੇ ਸਕੋਰ ਨਹੀਂ। ਮਹੀਨਾਵਾਰ ਘਸਾਈ = (100 − ਸਮਰੱਥਾ) ÷ ਮਹੀਨਿਆਂ ਵਿੱਚ ਉਮਰ, ±25% ਬੈਂਡ ਨਾਲ। 80% ਤੱਕ ਮਹੀਨੇ = (ਸਮਰੱਥਾ − 80) ÷ ਘਸਾਈ; ਹੇਠਲੀ ਹੱਦ ਉੱਚੀ ਦਰ ਤੋਂ, ਉੱਪਰਲੀ ਹੱਦ ਘੱਟ ਦਰ ਤੋਂ। ਮਹੀਨਾਵਾਰ ਸਾਈਕਲ = ਸਾਈਕਲ ÷ ਉਮਰ। ਸਮਰੱਥਾ 60 ਤੋਂ 100 ਪੂਰੇ ਫੀਸਦ ਵਿੱਚ, ਸਾਈਕਲ 0 ਤੋਂ 3000, ਖਰੀਦ ਦਾ ਮਹੀਨਾ 2007 ਅਤੇ 2099 ਦੇ ਵਿਚਕਾਰ ਤੇ ਉਮਰ 1 ਤੋਂ 240 ਮਹੀਨੇ, ਵੱਧ ਤੋਂ ਵੱਧ 10 ਡਿਵਾਈਸ। ਮਹੀਨੇ YYYY-MM ਵਿੱਚ। ਇਨਪੁੱਟ ਇਸੇ ਟੈਬ ਵਿੱਚ ਰਹਿੰਦੇ ਹਨ; ਤੁਹਾਡੇ ਫ਼ੋਨ ਤੋਂ ਕੁਝ ਮਾਪਿਆ ਜਾਂ ਪੜ੍ਹਿਆ ਨਹੀਂ ਜਾਂਦਾ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/battery-wear-range-sheet.html",
+      "language": "pa-IN",
+      "title": "ਬੈਟਰੀ ਘਿਸਾਵ ਰੇਂਜ ਸ਼ੀਟ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "pa-IN",

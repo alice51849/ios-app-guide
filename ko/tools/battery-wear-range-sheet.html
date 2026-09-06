@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="iPhone 설정의 최대 용량 %와, 있다면 사이클 수를 입력해 월별 마모율 범위와 80%까지 남은 개월 수가 담긴 표를 내려받으세요. 항상 범위로만 보여 주고 점수는 내지 않습니다.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="battery-wear">
+<title>배터리 마모 범위 시트</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/battery-wear-range-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/battery-wear-range-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="무료 작업 결과">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="무료 작업 결과">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="무료 작업 결과">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/ko/tools/hero-tasks.feed.json" title="무료 작업 결과">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/04198e0d5a41cbe3-hero-task-battery.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html","name":"배터리 마모 범위 시트","description":"iPhone 설정의 최대 용량 %와, 있다면 사이클 수를 입력해 월별 마모율 범위와 80%까지 남은 개월 수가 담긴 표를 내려받으세요. 항상 범위로만 보여 주고 점수는 내지 않습니다.","inLanguage":"ko","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html#worked-example","name":"계산 예시","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/ko/tools/results/battery-wear-range-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/json" id="hero-config">{"adapter":"battery-wear-range-v1","slug":"battery-wear-range-sheet","locale":"ko","copy":{"title":"배터리 마모 범위 시트","intro":"iPhone 설정의 최대 용량 %와, 있다면 사이클 수를 입력해 월별 마모율 범위와 80%까지 남은 개월 수가 담긴 표를 내려받으세요. 항상 범위로만 보여 주고 점수는 내지 않습니다.","income":"실수령 시급","day":"하루 근무 시간","item":"기기","quantity":"수량","price":"세금 포함 단가","total":"합계","hours":"필요한 근무 시간","days":"근무 일수","add":"기기 추가","remove":"삭제","download":"내 CSV 다운로드","reset":"예시로 초기화","example":"계산 예시","example_note":"2026-09에 세 기기를 확인: 2년 된 88%·412사이클 iPhone, 아직 100%인 새 기기, 이미 79%인 오래된 기기.","formula":"월 마모 = (100 − 용량) ÷ 사용 개월, ±25% 폭으로 표시. 80%까지 개월 = (용량 − 80) ÷ 마모율로, 하한은 높은 마모율에서, 상한은 낮은 마모율에서 계산. 월 사이클 = 사이클 수 ÷ 사용 개월.","limits":"용량은 60~100 정수 %, 사이클 수는 0~3000, 구매 월은 2007~2099이며 사용 기간 1~240개월, 최대 10대. 월은 YYYY-MM. 입력은 이 탭에만 남고 기기를 측정하거나 읽지 않습니다.","privacy":"입력은 이 탭에만 머뭅니다. 업로드, 계정, 입력 추적이나 데이터 저장이 없습니다. 새로고침하면 수정 내용이 지워집니다.","optional":"선택 사항인 앱","optional_note":"이 무료 비교표는 앱 없이 사용할 수 있습니다. 최신 기능과 가격은 각 App Store 페이지에서 확인하세요.","error":"이름, 현재 월보다 이른 YYYY-MM 구매 월, 60~100 정수 용량 %, 선택 사항인 3000 이하 정수 사이클 수를 입력하세요.","row_limit":"최대 10대.","tools":"무료 도구","method":"계산식과 한계","sources":"출처","result":"내 마모 범위표","disclosure":"선택 사항인 앱의 개발사 Lumi Studio가 제공합니다. 독립적인 순위가 아닙니다.","download_example":"예시 CSV 내려받기","feed":"무료 작업 결과","today":"현재 월","purchase_month":"구매 월","capacity":"최대 용량 %","cycles":"사이클 수","cycles_hint":"사이클 수는 선택 사항입니다. 최신 기기에서는 배터리 성능 상태에서 볼 수 있습니다.","age":"사용 기간(개월)","wear_rate":"월 마모 %","months_to_80":"80%까지 개월","cycles_per_month":"월 사이클","low":"낮음","high":"높음","range_note":"모든 결과는 관측 평균을 중심으로 ±25% 폭을 둔 범위입니다. 단일 숫자 예측도, 건강 점수도 없습니다.","marker_provided":"직접 입력","marker_estimated":"추정","source_marker":"출처","at_or_below_80":"이미 80% 이하","no_wear_yet":"측정 가능한 마모 없음"},"example":{"today":"2026-09","items":[{"purchase_month":"2024-09","max_capacity_pct":"88","cycle_count":"412","name":"기기 1"},{"purchase_month":"2026-08","max_capacity_pct":"100","cycle_count":"","name":"기기 2"},{"purchase_month":"2021-03","max_capacity_pct":"79","cycle_count":"","name":"기기 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/5143a1abe8fad8bb-hero-task-battery-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/105d26a0e85463fa-hero-task-battery-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/ko/tools/index.html">무료 도구</a><span>Lumi Studio</span></nav>
+<h1>배터리 마모 범위 시트</h1><p>iPhone 설정의 최대 용량 %와, 있다면 사이클 수를 입력해 월별 마모율 범위와 80%까지 남은 개월 수가 담긴 표를 내려받으세요. 항상 범위로만 보여 주고 점수는 내지 않습니다.</p>
+<section class="panel" aria-label="배터리 마모 범위 시트">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="today-month">현재 월</label><input id="today-month" type="text" inputmode="numeric" maxlength="7" value="2026-09" required autocomplete="off"></div>
+<div><p class="output-label">모든 결과는 관측 평균을 중심으로 ±25% 폭을 둔 범위입니다. 단일 숫자 예측도, 건강 점수도 없습니다.</p><p class="marker-legend"><span>직접 입력: 구매 월, 최대 용량 %, 사이클 수</span><span>추정: 사용 기간(개월), 월 마모 %, 80%까지 개월, 월 사이클</span></p></div>
+</div>
+<div id="battery-rows"><div class="battery-row"><div class="name-field"><label data-label="name" for="device-1-name">기기</label><input id="device-1-name" data-field="name" type="text" inputmode="text" maxlength="120" value="기기 1" required autocomplete="off"></div><div class="purchase-month-field"><label data-label="purchase_month" for="device-1-purchase_month">구매 월</label><input id="device-1-purchase_month" data-field="purchase_month" type="text" inputmode="numeric" maxlength="7" value="2024-09" required autocomplete="off"></div><div class="max-capacity-pct-field"><label data-label="max_capacity_pct" for="device-1-max_capacity_pct">최대 용량 %</label><input id="device-1-max_capacity_pct" data-field="max_capacity_pct" type="text" inputmode="numeric" maxlength="3" value="88" required autocomplete="off"></div><div class="cycle-count-field"><label data-label="cycle_count" for="device-1-cycle_count">사이클 수</label><input id="device-1-cycle_count" data-field="cycle_count" type="text" inputmode="numeric" maxlength="4" value="412" autocomplete="off"></div><div><p class="output-label">사용 기간(개월)<span class="estimate">추정</span></p><output data-output="age">24</output></div><div><p class="output-label">월 마모 %<span class="estimate">추정</span></p><output data-output="wear" dir="ltr">0.38–0.63</output></div><div><p class="output-label">80%까지 개월<span class="estimate">추정</span></p><output data-output="months" dir="ltr">12–22</output></div><div><p class="output-label">월 사이클<span class="estimate">추정</span></p><output data-output="cycles">17.2</output></div><button type="button" data-remove aria-label="삭제 · 기기 1">삭제</button></div><div class="battery-row"><div class="name-field"><label data-label="name" for="device-2-name">기기</label><input id="device-2-name" data-field="name" type="text" inputmode="text" maxlength="120" value="기기 2" required autocomplete="off"></div><div class="purchase-month-field"><label data-label="purchase_month" for="device-2-purchase_month">구매 월</label><input id="device-2-purchase_month" data-field="purchase_month" type="text" inputmode="numeric" maxlength="7" value="2026-08" required autocomplete="off"></div><div class="max-capacity-pct-field"><label data-label="max_capacity_pct" for="device-2-max_capacity_pct">최대 용량 %</label><input id="device-2-max_capacity_pct" data-field="max_capacity_pct" type="text" inputmode="numeric" maxlength="3" value="100" required autocomplete="off"></div><div class="cycle-count-field"><label data-label="cycle_count" for="device-2-cycle_count">사이클 수</label><input id="device-2-cycle_count" data-field="cycle_count" type="text" inputmode="numeric" maxlength="4" value="" autocomplete="off"></div><div><p class="output-label">사용 기간(개월)<span class="estimate">추정</span></p><output data-output="age">1</output></div><div><p class="output-label">월 마모 %<span class="estimate">추정</span></p><output data-output="wear" dir="ltr">0.00–0.00</output></div><div><p class="output-label">80%까지 개월<span class="estimate">추정</span></p><output data-output="months" dir="ltr">측정 가능한 마모 없음</output></div><div><p class="output-label">월 사이클<span class="estimate">추정</span></p><output data-output="cycles">—</output></div><button type="button" data-remove aria-label="삭제 · 기기 2">삭제</button></div><div class="battery-row"><div class="name-field"><label data-label="name" for="device-3-name">기기</label><input id="device-3-name" data-field="name" type="text" inputmode="text" maxlength="120" value="기기 3" required autocomplete="off"></div><div class="purchase-month-field"><label data-label="purchase_month" for="device-3-purchase_month">구매 월</label><input id="device-3-purchase_month" data-field="purchase_month" type="text" inputmode="numeric" maxlength="7" value="2021-03" required autocomplete="off"></div><div class="max-capacity-pct-field"><label data-label="max_capacity_pct" for="device-3-max_capacity_pct">최대 용량 %</label><input id="device-3-max_capacity_pct" data-field="max_capacity_pct" type="text" inputmode="numeric" maxlength="3" value="79" required autocomplete="off"></div><div class="cycle-count-field"><label data-label="cycle_count" for="device-3-cycle_count">사이클 수</label><input id="device-3-cycle_count" data-field="cycle_count" type="text" inputmode="numeric" maxlength="4" value="" autocomplete="off"></div><div><p class="output-label">사용 기간(개월)<span class="estimate">추정</span></p><output data-output="age">66</output></div><div><p class="output-label">월 마모 %<span class="estimate">추정</span></p><output data-output="wear" dir="ltr">0.24–0.40</output></div><div><p class="output-label">80%까지 개월<span class="estimate">추정</span></p><output data-output="months" dir="ltr">이미 80% 이하</output></div><div><p class="output-label">월 사이클<span class="estimate">추정</span></p><output data-output="cycles">—</output></div><button type="button" data-remove aria-label="삭제 · 기기 3">삭제</button></div></div>
+<template id="battery-template"><div class="battery-row"><div class="name-field"><label data-label="name" for="device-0-name">기기</label><input id="device-0-name" data-field="name" type="text" inputmode="text" maxlength="120" value="" required autocomplete="off"></div><div class="purchase-month-field"><label data-label="purchase_month" for="device-0-purchase_month">구매 월</label><input id="device-0-purchase_month" data-field="purchase_month" type="text" inputmode="numeric" maxlength="7" value="2024-09" required autocomplete="off"></div><div class="max-capacity-pct-field"><label data-label="max_capacity_pct" for="device-0-max_capacity_pct">최대 용량 %</label><input id="device-0-max_capacity_pct" data-field="max_capacity_pct" type="text" inputmode="numeric" maxlength="3" value="100" required autocomplete="off"></div><div class="cycle-count-field"><label data-label="cycle_count" for="device-0-cycle_count">사이클 수</label><input id="device-0-cycle_count" data-field="cycle_count" type="text" inputmode="numeric" maxlength="4" value="" autocomplete="off"></div><div><p class="output-label">사용 기간(개월)<span class="estimate">추정</span></p><output data-output="age">—</output></div><div><p class="output-label">월 마모 %<span class="estimate">추정</span></p><output data-output="wear" dir="ltr">—</output></div><div><p class="output-label">80%까지 개월<span class="estimate">추정</span></p><output data-output="months" dir="ltr">—</output></div><div><p class="output-label">월 사이클<span class="estimate">추정</span></p><output data-output="cycles">—</output></div><button type="button" data-remove aria-label="삭제 · ">삭제</button></div></template>
+<div class="actions"><button type="button" id="add-device">기기 추가</button><span class="small">최대 10대.</span><span class="small">사이클 수는 선택 사항입니다. 최신 기기에서는 배터리 성능 상태에서 볼 수 있습니다.</span></div>
+<div class="totals battery-totals" aria-label="내 마모 범위표"><div><p>기기</p><output class="total-value" id="device-count">3</output></div><div><p>최대 용량 %<span class="estimate">직접 입력</span></p><output class="total-value" id="lowest-capacity">79</output></div><div><p>80%까지 개월<span class="estimate">추정</span></p><output class="total-value" id="soonest-80" dir="ltr">이미 80% 이하</output></div></div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>내 CSV 다운로드</button><button type="button" id="reset-example">예시로 초기화</button></div>
+</fieldset></form><p class="small">입력은 이 탭에만 머뭅니다. 업로드, 계정, 입력 추적이나 데이터 저장이 없습니다. 새로고침하면 수정 내용이 지워집니다.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>계산 예시</h2><p>2026-09에 세 기기를 확인: 2년 된 88%·412사이클 iPhone, 아직 100%인 새 기기, 이미 79%인 오래된 기기.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">기기</th><th scope="col">구매 월</th><th scope="col">최대 용량 %</th><th scope="col">사이클 수</th><th scope="col">사용 기간(개월)</th><th scope="col">월 마모 % (낮음)</th><th scope="col">월 마모 % (높음)</th><th scope="col">80%까지 개월 (낮음)</th><th scope="col">80%까지 개월 (높음)</th><th scope="col">출처</th></tr></thead><tbody><tr><td>기기 1</td><td>2024-09</td><td>88</td><td>412</td><td>24</td><td>0.38</td><td>0.63</td><td>12</td><td>22</td><td>직접 입력: 구매 월, 최대 용량 %, 사이클 수; 추정: 사용 기간(개월), 월 마모 %, 80%까지 개월</td></tr><tr><td>기기 2</td><td>2026-08</td><td>100</td><td></td><td>1</td><td>0.00</td><td>0.00</td><td>측정 가능한 마모 없음</td><td>측정 가능한 마모 없음</td><td>직접 입력: 구매 월, 최대 용량 %; 추정: 사용 기간(개월), 월 마모 %, 80%까지 개월</td></tr><tr><td>기기 3</td><td>2021-03</td><td>79</td><td></td><td>66</td><td>0.24</td><td>0.40</td><td>이미 80% 이하</td><td>이미 80% 이하</td><td>직접 입력: 구매 월, 최대 용량 %; 추정: 사용 기간(개월), 월 마모 %, 80%까지 개월</td></tr></tbody><tfoot><tr class="example-total"><td>현재 월</td><td>2026-09</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/ko/tools/results/battery-wear-range-sheet.csv" download>예시 CSV 내려받기</a>
+<h2>계산식과 한계</h2><p>월 마모 = (100 − 용량) ÷ 사용 개월, ±25% 폭으로 표시. 80%까지 개월 = (용량 − 80) ÷ 마모율로, 하한은 높은 마모율에서, 상한은 낮은 마모율에서 계산. 월 사이클 = 사이클 수 ÷ 사용 개월.</p>
+<pre class="formula">기기 1: (100 − 88) ÷ 24 = 0.50 %/사용 기간(개월) → ±25% → 0.38–0.63; (88 − 80) ÷ 월 마모 % → 12–22
+기기 2: (100 − 100) ÷ 1 = 0.00 %/사용 기간(개월) → ±25% → 0.00–0.00; (100 − 80) ÷ 월 마모 % → 측정 가능한 마모 없음
+기기 3: (100 − 79) ÷ 66 = 0.32 %/사용 기간(개월) → ±25% → 0.24–0.40; (79 − 80) ÷ 월 마모 % → 이미 80% 이하</pre>
+<p>용량은 60~100 정수 %, 사이클 수는 0~3000, 구매 월은 2007~2099이며 사용 기간 1~240개월, 최대 10대. 월은 YYYY-MM. 입력은 이 탭에만 남고 기기를 측정하거나 읽지 않습니다.</p>
+<ul class="small">
+<li>최대 용량 %: <bdi dir="ltr">60 ≤ x ≤ 100</bdi></li>
+<li>사이클 수: <bdi dir="ltr">0 ≤ x ≤ 3000</bdi></li>
+<li>사용 기간(개월): <bdi dir="ltr">1 ≤ m ≤ 240</bdi></li>
+<li>기기: <bdi dir="ltr">1 ≤ n ≤ 10</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>선택 사항인 앱</h2><p>이 무료 비교표는 앱 없이 사용할 수 있습니다. 최신 기능과 가격은 각 App Store 페이지에서 확인하세요.</p><div class="actions"><a class="button" href="https://apps.apple.com/kr/app/id6802423998?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store에서 BattAI: 배터리 상태 점수 받기</a></div></section>
+<footer><p>선택 사항인 앱의 개발사 Lumi Studio가 제공합니다. 독립적인 순위가 아닙니다.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">출처</a> · <a href="https://open.cait518.cc/ios-app-guide/ko/tools/hero-tasks.feed.json">무료 작업 결과</a></footer>
+</main></body></html>

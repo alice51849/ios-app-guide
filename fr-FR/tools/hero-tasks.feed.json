@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Comparez plusieurs achats avec votre revenu horaire net, puis téléchargez votre CSV. Total = quantité × prix unitaire TTC. Heures = total ÷ revenu horaire net. Jours = heures ÷ durée d’une journée de travail. Saisissez des prix taxes comprises. Sans conversion de devises, calcul de paie, prévision d’épargne ni conseil d’achat. Affichage à deux décimales ; totaux calculés sans arrondi intermédiaire.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/purchase-worktime-sheet.html",
       "language": "fr-FR",
       "title": "Comparer ses achats en heures de travail",
       "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 349,
+          "title": "Télécharger le CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Indiquez la dernière fois que vous avez fait chaque tâche (maison, voiture, santé) et sa fréquence : vous obtenez la prochaine échéance, les jours restants et les retards dans un tableau à télécharger. Prochaine échéance = dernière fois + intervalle. En mois, le jour reste identique ; s’il n’existe pas, on prend le dernier jour du mois (années bissextiles comprises). Jours restants = échéance − aujourd’hui. En retard sous 0 ; bientôt due de 0 à 7. Intervalles de 1 à 3650 jours, semaines ou mois. Dates entre 1900-01-01 et 2999-12-31. Jusqu’à 30 tâches. Aucun rappel, notification ou synchronisation d’agenda ; rien ne quitte cette page.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/maintenance-next-due-sheet.html",
+      "language": "fr-FR",
+      "title": "Tableau d’échéances d’entretien",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 331,
+          "title": "Télécharger l’exemple CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Listez ce qu’un projet freelance ou une petite mission a rapporté et coûté, puis téléchargez une feuille avec la marge brute, le taux de marge et le net par heure. Bénéfice = total des recettes − total des dépenses. Taux de marge = bénéfice ÷ total des recettes. Net par heure = bénéfice ÷ heures passées. Les montants sont additionnés en centimes entiers : les totaux ne dérivent pas. Montants de 0 à 100 000 000 avec au plus deux décimales, jusqu’à 20 lignes de recettes et 20 de dépenses, heures de 0,25 à 2000 par quart d’heure. Même devise, pas de conversion, aucun conseil fiscal ou comptable.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/project-profit-sheet.html",
+      "language": "fr-FR",
+      "title": "Fiche de bénéfice du projet",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 907,
+          "title": "Télécharger l’exemple CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Saisissez la capacité maximale indiquée dans les réglages de l’iPhone et, si vous l’avez, le nombre de cycles, puis téléchargez une feuille avec la plage d’usure mensuelle et les mois restants avant 80 % – toujours une plage, jamais une note. Usure par mois = (100 − capacité) ÷ âge en mois, affichée avec une bande de ±25 %. Mois avant 80 % = (capacité − 80) ÷ usure ; borne basse avec le taux élevé, borne haute avec le taux faible. Cycles par mois = cycles ÷ âge. Capacité de 60 à 100 en pourcentage entier, cycles de 0 à 3000, mois d’achat entre 2007 et 2099 pour un âge de 1 à 240 mois, jusqu’à 10 appareils. Mois au format AAAA-MM. Les saisies restent dans cet onglet ; rien n’est mesuré ni lu sur votre téléphone.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/battery-wear-range-sheet.html",
+      "language": "fr-FR",
+      "title": "Plage d'usure de batterie",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "fr-FR",

@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Bandingkan belian menggunakan pendapatan bersih sejam, kemudian muat turun CSV anda. Jumlah = kuantiti × harga akhir. Jam = jumlah ÷ pendapatan bersih sejam. Hari = jam ÷ jam sehari bekerja. Masukkan harga termasuk cukai. Tiada pertukaran mata wang, pengiraan gaji, ramalan simpanan atau nasihat membeli. Paparan dibundarkan kepada dua perpuluhan; jumlah menggunakan nilai tanpa pembundaran.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html",
       "language": "ms",
       "title": "Bandingkan belian dalam jam bekerja",
       "url": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 349,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Catat bila anda terakhir kali melakukan setiap tugasan rumah, kereta atau kesihatan dan berapa kerap ia berulang: dapatkan tarikh akhir seterusnya, baki hari dan yang tertunggak dalam helaian untuk dimuat turun. Tarikh akhir seterusnya = terakhir dilakukan + selang. Untuk bulan, hari yang sama dikekalkan; jika tiada, hari terakhir bulan itu digunakan (termasuk tahun lompat). Baki hari = tarikh akhir − hari ini. Bawah 0 tertunggak; 0 hingga 7 tidak lama lagi. Selang 1 hingga 3650 hari, minggu atau bulan. Tarikh antara 1900-01-01 dan 2999-12-31. Sehingga 30 tugasan. Tiada peringatan, pemberitahuan atau penyegerakan kalendar; tiada data keluar dari halaman ini.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/maintenance-next-due-sheet.html",
+      "language": "ms",
+      "title": "Helaian jadual tarikh akhir penyelenggaraan",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 322,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Senaraikan apa yang dihasilkan dan dibelanjakan oleh projek bebas atau kerja kecil, kemudian muat turun helaian dengan untung kasar, margin dan bersih sejam. Untung = jumlah pendapatan − jumlah perbelanjaan. Margin = untung ÷ jumlah pendapatan. Bersih sejam = untung ÷ jam digunakan. Amaun dijumlahkan dalam sen penuh supaya jumlah tidak terpesong. Amaun dari 0 hingga 100,000,000 dengan paling banyak dua tempat perpuluhan, hingga 20 baris pendapatan dan 20 perbelanjaan, jam dari 0.25 hingga 2000 dalam langkah suku jam. Satu mata wang, tiada penukaran, tiada nasihat cukai atau perakaunan.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/project-profit-sheet.html",
+      "language": "ms",
+      "title": "Helaian untung projek",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 915,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Masukkan kapasiti maksimum daripada Tetapan iPhone dan, jika ada, bilangan kitaran, kemudian muat turun helaian dengan julat kehausan sebulan dan bulan yang tinggal sebelum 80% — sentiasa julat, bukan skor. Kehausan sebulan = (100 − kapasiti) ÷ umur dalam bulan, dipaparkan dengan jalur ±25%. Bulan hingga 80% = (kapasiti − 80) ÷ kehausan; had bawah daripada kadar tinggi, had atas daripada kadar rendah. Kitaran sebulan = kitaran ÷ umur. Kapasiti 60 hingga 100 dalam peratus bulat, kitaran 0 hingga 3000, bulan pembelian antara 2007 dan 2099 dengan umur 1 hingga 240 bulan, hingga 10 peranti. Bulan dalam format YYYY-MM. Input kekal dalam tab ini; tiada apa-apa diukur atau dibaca daripada telefon anda.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/battery-wear-range-sheet.html",
+      "language": "ms",
+      "title": "Helaian julat haus bateri",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "ms",

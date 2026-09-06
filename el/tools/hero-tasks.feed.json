@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Συγκρίνετε αγορές με το καθαρό ωρομίσθιό σας και κατεβάστε το δικό σας CSV. Σύνολο = ποσότητα × τελική τιμή. Ώρες = σύνολο ÷ καθαρό ωρομίσθιο. Ημέρες = ώρες ÷ ώρες ανά εργάσιμη ημέρα. Συμπεριλάβετε τους φόρους στις τιμές. Χωρίς μετατροπή νομίσματος, μισθοδοσία, πρόβλεψη αποταμίευσης ή αγοραστικές συμβουλές. Εμφάνιση με δύο δεκαδικά· τα σύνολα χρησιμοποιούν μη στρογγυλοποιημένες τιμές.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/el/tools/purchase-worktime-sheet.html",
       "language": "el",
       "title": "Σύγκριση αγορών σε ώρες εργασίας",
       "url": "https://open.cait518.cc/ios-app-guide/el/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 506,
+          "title": "Λήψη CSV παραδείγματος",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Σημειώστε πότε κάνατε τελευταία φορά κάθε εργασία για το σπίτι, το αυτοκίνητο ή την υγεία και κάθε πόσο επαναλαμβάνεται: παίρνετε την επόμενη προθεσμία, τις ημέρες που απομένουν και τα εκπρόθεσμα σε πίνακα για λήψη. Επόμενη προθεσμία = τελευταία φορά + διάστημα. Στους μήνες διατηρείται η ίδια ημέρα· αν δεν υπάρχει, χρησιμοποιείται η τελευταία ημέρα του μήνα (και σε δίσεκτα έτη). Ημέρες που απομένουν = προθεσμία − σήμερα. Κάτω από 0 εκπρόθεσμο· 0 έως 7 σύντομα. Διαστήματα από 1 έως 3650 ημέρες, εβδομάδες ή μήνες. Ημερομηνίες από 1900-01-01 έως 2999-12-31. Έως 30 εργασίες. Χωρίς υπενθυμίσεις, ειδοποιήσεις ή συγχρονισμό ημερολογίου· τίποτα δεν φεύγει από αυτή τη σελίδα.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/maintenance-next-due-sheet.html",
+      "language": "el",
+      "title": "Πίνακας επόμενων προθεσμιών συντήρησης",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 434,
+          "title": "Λήψη παραδείγματος CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Κατάγραψε τι απέδωσε και τι κόστισε ένα freelance έργο ή μια μικρή δουλειά και κατέβασε ένα φύλλο με μεικτό κέρδος, περιθώριο και καθαρό ανά ώρα. Κέρδος = σύνολο εσόδων − σύνολο εξόδων. Περιθώριο = κέρδος ÷ σύνολο εσόδων. Καθαρό ανά ώρα = κέρδος ÷ ώρες εργασίας. Τα ποσά προστίθενται σε ακέραια λεπτά, ώστε τα σύνολα να μην αποκλίνουν. Ποσά από 0 έως 100.000.000 με έως δύο δεκαδικά, έως 20 γραμμές εσόδων και 20 εξόδων, ώρες από 0,25 έως 2000 σε τέταρτα. Ίδιο νόμισμα, χωρίς μετατροπή, χωρίς φορολογικές ή λογιστικές συμβουλές.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/project-profit-sheet.html",
+      "language": "el",
+      "title": "Φύλλο κέρδους έργου",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1404,
+          "title": "Λήψη παραδείγματος CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "Γράψε τη μέγιστη χωρητικότητα από τις Ρυθμίσεις του iPhone και, αν την έχεις, τους κύκλους φόρτισης, και κατέβασε ένα φύλλο με το εύρος φθοράς ανά μήνα και τους μήνες που απομένουν μέχρι το 80% – πάντα εύρος, ποτέ βαθμολογία. Φθορά ανά μήνα = (100 − χωρητικότητα) ÷ ηλικία σε μήνες, με ζώνη ±25%. Μήνες έως το 80% = (χωρητικότητα − 80) ÷ φθορά· κάτω όριο από τον υψηλό ρυθμό, άνω όριο από τον χαμηλό. Κύκλοι ανά μήνα = κύκλοι ÷ ηλικία. Χωρητικότητα 60 έως 100 ως ακέραιο ποσοστό, κύκλοι 0 έως 3000, μήνας αγοράς μεταξύ 2007 και 2099 με ηλικία 1 έως 240 μήνες, έως 10 συσκευές. Μήνες σε μορφή ΕΕΕΕ-ΜΜ. Οι καταχωρίσεις μένουν σε αυτή την καρτέλα· τίποτα δεν μετριέται ούτε διαβάζεται από το τηλέφωνο.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/battery-wear-range-sheet.html",
+      "language": "el",
+      "title": "Φύλλο φθοράς μπαταρίας",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "el",

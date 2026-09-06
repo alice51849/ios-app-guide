@@ -31,11 +31,86 @@
         }
       ],
       "content_text": "Alışverişleri net saatlik gelirinizle karşılaştırın ve kendi CSV dosyanızı indirin. Toplam = adet × son fiyat. Saat = toplam ÷ net saatlik gelir. İş günü = saat ÷ günlük çalışma saati. Vergileri fiyata dâhil edin. Döviz dönüşümü, bordro hesabı, tasarruf tahmini veya satın alma tavsiyesi sunulmaz. Görünüm iki ondalığa yuvarlanır; toplamlar yuvarlanmamış değerleri kullanır.",
-      "date_modified": "2026-09-05T00:00:00Z",
+      "date_modified": "2026-09-06T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/tr/tools/purchase-worktime-sheet.html",
       "language": "tr",
       "title": "Alışverişleri çalışma saatiyle karşılaştırın",
       "url": "https://open.cait518.cc/ios-app-guide/tr/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 293,
+          "title": "Örnek CSV’yi indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "Ev, araba veya sağlıkla ilgili her işi en son ne zaman yaptığınızı ve ne sıklıkla tekrarlandığını yazın: bir sonraki tarihi, kalan günleri ve gecikenleri indirilebilir bir çizelgede alın. Sonraki tarih = son yapılma + aralık. Aylarda aynı gün korunur; o gün yoksa ayın son günü alınır (artık yıllar dahil). Kalan gün = sonraki tarih − bugün. 0’ın altı gecikmiş; 0–7 yakında. Aralıklar 1–3650 gün, hafta veya ay. Tarihler 1900-01-01 ile 2999-12-31 arasında. En fazla 30 iş. Hatırlatıcı, bildirim veya takvim eşitlemesi yok; hiçbir veri bu sayfadan çıkmaz.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/maintenance-next-due-sheet.html",
+      "language": "tr",
+      "title": "Bakım sonraki tarih çizelgesi",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 295,
+          "title": "Örnek CSV’yi indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "Bir serbest projenin veya küçük işin ne getirdiğini ve neye mal olduğunu listele, ardından brüt kâr, kâr marjı ve saatlik net kazancı içeren tabloyu indir. Kâr = toplam gelir − toplam gider. Kâr marjı = kâr ÷ toplam gelir. Saatlik net = kâr ÷ harcanan saat. Tutarlar tam kuruş olarak toplanır, böylece toplamlar kaymaz. Tutarlar 0 ile 100.000.000 arasında en fazla iki ondalıklı, en fazla 20 gelir ve 20 gider satırı, saat 0,25 ile 2000 arasında çeyrek saat adımlarıyla. Aynı para birimi, kur çevrimi yok, vergi veya muhasebe tavsiyesi yok.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/project-profit-sheet.html",
+      "language": "tr",
+      "title": "Proje kâr tablosu",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 890,
+          "title": "Örnek CSV’yi indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "iPhone Ayarlar’daki maksimum kapasiteyi ve varsa döngü sayısını gir, aylık aşınma aralığı ile %80’e kalan ayları içeren tabloyu indir – her zaman aralık olarak, hiçbir zaman puan olarak. Aylık aşınma = (100 − kapasite) ÷ ay olarak yaş, ±%25 bantla gösterilir. %80’e kalan ay = (kapasite − 80) ÷ aşınma; alt sınır yüksek orandan, üst sınır düşük orandan. Aylık döngü = döngü ÷ yaş. Kapasite 60–100 arası tam yüzde, döngü 0–3000, satın alma ayı 2007–2099 arası ve 1–240 ay yaş, en fazla 10 cihaz. Aylar YYYY-AA biçiminde. Girdiler bu sekmede kalır; telefonundan hiçbir şey ölçülmez veya okunmaz.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/battery-wear-range-sheet.html",
+      "language": "tr",
+      "title": "Pil aşınma aralığı tablosu",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/battery-wear-range-sheet.html"
     }
   ],
   "language": "tr",

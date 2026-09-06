@@ -202,6 +202,11 @@ jobs:
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Verify zero-cost growth infrastructure
+        env:
+          # The hero browser test shares this runner with ~900 parallel
+          # tests; its page/CDP waits need far more than a laptop's 15s.
+          HERO_STATE_TIMEOUT_MS: "180000"
+          HERO_CDP_TIMEOUT_MS: "180000"
         run: |
           python3 _engine/geo/parallel_unittest.py --jobs 3
           STANDARD_SITE_ENGINE_ROOT="$GITHUB_WORKSPACE/_engine" \

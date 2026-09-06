@@ -3890,10 +3890,13 @@ class GeneratorTests(unittest.TestCase):
             # The attribution stamper appends ", affiliate-data=..." inside the
             # banner content, so match the generator's banner up to its app-id.
             banner = gen_smart_app_banners.banner_block(targets[path])
-            self.assertEqual(1, source.count(banner.split('">', 1)[0]))
+            self.assertEqual(
+                1, source.count(banner.split('">', 1)[0]), msg=str(path)
+            )
             self.assertEqual(
                 1,
                 source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
+                msg=str(path),
             )
             assert_qr_card(path, source, cta)
             self.assertEqual(

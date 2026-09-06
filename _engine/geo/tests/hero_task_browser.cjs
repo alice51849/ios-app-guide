@@ -18,7 +18,10 @@ if (!chrome || !fs.existsSync(chrome)) {
 }
 
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-async function until(predicate, limit = 15000) {
+// Browser-state waits run on shared CI runners alongside hundreds of
+// tests; 15s is enough on a laptop but not under that load.
+const STATE_TIMEOUT_MS = Number(process.env.HERO_STATE_TIMEOUT_MS || 60000);
+async function until(predicate, limit = STATE_TIMEOUT_MS) {
   const start = Date.now();
   while (Date.now() - start < limit) {
     const result = await predicate();

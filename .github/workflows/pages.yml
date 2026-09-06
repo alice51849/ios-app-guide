@@ -93,7 +93,12 @@ jobs:
         env:
           GEO_SITE: https://open.cait518.cc/ios-app-guide
           APP_STORE_PROVIDER_TOKEN: "118326163"
-        run: python3 _engine/geo/hero_tasks.py --pages-dir . --check
+        # The high-intent prepare step above re-closes the sitemap graph, so
+        # re-materialise the hero sitemap entry first; the check must then be
+        # a no-op or the upload is refused.
+        run: |
+          python3 _engine/geo/hero_tasks.py --pages-dir .
+          python3 _engine/geo/hero_tasks.py --pages-dir . --check
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"

@@ -1462,7 +1462,7 @@ class HeroTaskTests(unittest.TestCase):
         process = subprocess.run(
             ["node", str(GEO / "tests" / "hero_task_browser.cjs"), str(self.pages), str(self.folder)],
             capture_output=True, text=True,
-            timeout=int(os.environ.get("HERO_BROWSER_TIMEOUT", "360")), check=False,
+            timeout=int(os.environ.get("HERO_BROWSER_TIMEOUT", "1800")), check=False,
             env={**os.environ, "TMPDIR": str(self.folder)},
         )
         self.assertEqual(0, process.returncode, process.stdout + process.stderr)

@@ -15,6 +15,8 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 import gen_app_store_qr_ctas  # noqa: E402
+from gen_store_attribution import final_store_url, page_token  # noqa: E402
+from app_store_storefronts import load_storefront_availability, resolve_provider_token  # noqa: E402
 import gen_app_store_share_ctas  # noqa: E402
 import gen_mobile_store_ctas  # noqa: E402
 import gen_smart_app_banners  # noqa: E402
@@ -66,6 +68,8 @@ def generate(
         )
     )
     qr_changed = 0
+    provider = resolve_provider_token() or None
+    availability = load_storefront_availability(pages) or None
     share_changed = int(
         gen_app_store_share_ctas._write_if_changed(
             pages / gen_app_store_share_ctas.ASSET_RELATIVE,
@@ -107,16 +111,25 @@ def generate(
         if cta is None:
             raise ValueError(f"App Store QR page has no direct app link: {path}")
         href, label = cta
-        qr_assets.add((app_id, href))
+        # Hash the exact link the attribution stamper will leave on the page
+        # (storefront aligned to the page locale, page campaign applied) so the
+        # combined pass stays byte-equivalent with gen_app_store_qr_ctas.
+        relative = path.resolve().relative_to(pages.resolve()).as_posix()
+        qr_href = final_store_url(
+            href, page_token(relative, current), provider,
+            locale=gen_app_store_qr_ctas.page_locale(path, pages),
+            availability=availability, app_id=app_id,
+        )
+        qr_assets.add((app_id, qr_href))
         image_href = gen_app_store_qr_ctas._site_asset_href(
             site,
-            gen_app_store_qr_ctas.qr_asset_relative(app_id, href),
+            gen_app_store_qr_ctas.qr_asset_relative(app_id, qr_href),
         )
         rendered = gen_app_store_qr_ctas.render_qr_card(
             path,
             current,
             app_id,
-            href,
+            qr_href,
             label,
             qr_stylesheet_href,
             image_href,

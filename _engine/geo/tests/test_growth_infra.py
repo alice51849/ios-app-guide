@@ -3887,12 +3887,10 @@ class GeneratorTests(unittest.TestCase):
                 source, targets[path]
             )
             self.assertIsNotNone(cta)
-            self.assertEqual(
-                1,
-                source.count(
-                    gen_smart_app_banners.banner_block(targets[path])
-                ),
-            )
+            # The attribution stamper appends ", affiliate-data=..." inside the
+            # banner content, so match the generator's banner up to its app-id.
+            banner = gen_smart_app_banners.banner_block(targets[path])
+            self.assertEqual(1, source.count(banner.split('">', 1)[0]))
             self.assertEqual(
                 1,
                 source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
@@ -27413,7 +27411,7 @@ class GeneratorTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             if (
                 '<meta name="apple-itunes-app" '
-                'content="app-id=6801956402">' in text
+                'content="app-id=6801956402,' in text
             ):
                 pages.append((path, text))
         self.assertGreaterEqual(len(pages), 21)

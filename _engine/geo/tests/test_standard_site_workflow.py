@@ -47,13 +47,13 @@ import gen_standard_site as generator  # noqa: E402
 
 MIRROR_SHA256 = {
     "_engine/social/gen_standard_site.py": (
-        "e4cb2b074abe8e5f27b74f31036caae638234af0314b3ee0e7f655d55aa2b116"
+        "bb5360a9861abe6e20d49b65b2501a2317ec4ffac6178d7246e827c13f75a95a"
     ),
     "_engine/social/standard_site_publish.py": (
         "393067b95201a7b671ea5127d31ce0e489085ea0e4794d647615d461e872d30f"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "2f8d3edc1c2ddab65c7996ff43b910abe7291b7adbfa5676a010449859242938"
+        "a0e6d8f7bc870d98ec9fb96a7a428660bc37a5cb5d3f0391f438e9974fe49274"
     ),
 }
 
@@ -367,7 +367,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             # IAP), so the door opens the paid edition. Pinning the Lite id
             # here froze a state the free-first swap had created, where the
             # page linked Lite while the copy described the paid App.
-            self.assertIn('content="app-id=6790467886"', html)
+            self.assertIn('content="app-id=6790467886,', html)
             # Direct Apple links only; they carry this site's own campaign
             # attribution once a provider token is configured, so match the
             # target app and let the validator reject anything malformed.

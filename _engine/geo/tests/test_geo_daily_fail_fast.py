@@ -148,9 +148,14 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
 
     def test_pages_readback_rejects_partial_or_degraded_manifests(self):
         source = PAGES_WORKFLOW.read_text(encoding="utf-8")
-        self.assertIn('if any(.[]; . == null)', source)
+        # The generation-bound readback (deployment_generation.py verify-live)
+        # replaced the hand-rolled jq field loop; the manifest gate must still
+        # pin version 4, zero fallback records and the route manifest digest.
+        self.assertIn('deployment_generation.py" verify-live', source)
         self.assertIn('.version == 4', source)
         self.assertIn('.fallback_records == 0', source)
+        self.assertIn('.route_manifest_digest == .generation.manifest_digest', source)
+        self.assertIn('.generation.pages_source_sha', source)
 
     def test_skipped_workflow_run_cannot_cancel_a_valid_pages_deploy(self):
         source = PAGES_WORKFLOW.read_text(encoding="utf-8")

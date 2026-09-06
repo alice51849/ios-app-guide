@@ -480,9 +480,20 @@ def _validate_inventory_binding(
         or expectations["app_keys_sha256"] != keys_digest
         or expectations["copy_sha256"] != copy_digest
     ):
+        # Name what drifted: the sealed contract only carries aggregate
+        # digests, so print one fingerprint per App so a cloud log can be
+        # diffed against a local run without guessing.
+        fingerprints = " ".join(
+            f"{item['key']}={_sha256_json(item)[:10]}"
+            for item in _inventory_projection(contracted_apps)
+        )
         raise ValueError(
             "Public inventory/copy drifted; review every source reference "
-            "before regenerating decision routes"
+            "before regenerating decision routes "
+            f"(apps {len(contracted_apps)}/{expectations['app_count']}, "
+            f"keys {keys_digest[:10]} vs {expectations['app_keys_sha256'][:10]}, "
+            f"copy {copy_digest[:10]} vs {expectations['copy_sha256'][:10]}; "
+            f"fingerprints: {fingerprints})"
         )
     extra = sorted(current_keys - expected_keys)
     if extra and not allow_new_live_apps:

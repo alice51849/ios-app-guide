@@ -36,12 +36,15 @@ APP_STORE_URL_RE = re.compile(
     r"(?:[-A-Za-z0-9._~%]+/)?id(?P<app_id>\d{9,12})"
     # "&(amp;)*" covers raw, HTML-escaped and doubly-escaped separators: an
     # Atom <content type="html"> block carries "&amp;amp;" between pt/ct/mt.
-    r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+"
-    r"(?:&(?:amp;)*(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+)*)?"
+    # A query value may contain dots only *between* value characters: a
+    # sentence period right after "mt=8" belongs to the prose, not the URL
+    # (stamped links inside JSON-LD descriptions are followed by one).
+    r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_/%+-]+(?:\.[A-Za-z0-9_/%+-]+)*"
+    r"(?:&(?:amp;)*(?:pt|ct|mt)=[A-Za-z0-9_/%+-]+(?:\.[A-Za-z0-9_/%+-]+)*)*)?"
     # Refuse to stop inside a query value. With a bare "(?![?&])" the engine
     # backtracks into the middle of "pt=118326163", matches a truncated URL
     # and rewrites it — that is what shredded the decision feeds.
-    r"(?![?&A-Za-z0-9_/%+.-])",
+    r"(?![?&A-Za-z0-9_/%+-])",
     flags=re.IGNORECASE,
 )
 QUERY_APP_STORE_URL_RE = re.compile(

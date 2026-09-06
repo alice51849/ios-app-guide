@@ -25219,6 +25219,23 @@ class GeneratorTests(unittest.TestCase):
                     invalid, "en-US"
                 )
 
+    def test_app_store_normalizer_leaves_sentence_periods_after_stamped_links(self):
+        # A stamped link inside prose or a JSON-LD description is followed by
+        # the sentence period; the query-value pattern must not swallow it
+        # (geo-daily died on "mt=8." in normalize_app_store_campaign_url).
+        stamped = "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_ask&mt=8"
+        source = (
+            f'<script type="application/ld+json">{{"description": "Get it: {stamped}. Then read on."}}</script>'
+            f"<p>Plain https://apps.apple.com/app/id6778748533. End</p>"
+        )
+        output, changes = normalize_app_store_links.normalize_source(source)
+        self.assertEqual(source, output)
+        self.assertEqual(0, changes)
+        self.assertEqual(
+            [stamped],
+            [m.group(0) for m in normalize_app_store_links.APP_STORE_URL_RE.finditer(source)][:1],
+        )
+
     def test_app_store_normalizer_covers_social_payloads_and_legacy_slugs(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.dict(
             os.environ,

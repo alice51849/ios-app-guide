@@ -1,0 +1,811 @@
+[
+ {
+  "app_key": "mochi",
+  "kind": "scenario",
+  "query": "checklist app with a home screen widget for iphone",
+  "match": [
+   "checklist app with a home screen widget for iphone",
+   "checklist app with a home screen widget"
+  ],
+  "meta_description": "A checklist app with a Home Screen widget lets you tick items off without opening the app.",
+  "lead": "A checklist app with a Home Screen widget lets you tick items off without opening the app — {name} shows the current date, your list and page buttons right on the widget.",
+  "detail": "{name} keeps checklists cute but practical: the Home Screen and Lock Screen widgets show today's date in the same format as the app, long lists page with the widget's own up/down buttons, and tapping a real item refreshes the widget once. It is free to start, with a one-time unlock and no subscription.",
+  "bullets": [
+   "Home Screen and Lock Screen widgets that show the real list, not a sample",
+   "Widget paging buttons for long checklists instead of cut-off items",
+   "Free to start, one-time unlock, no subscription and no ads"
+  ],
+  "faq": [
+   {
+    "q": "Does the widget update when I tick something inside the app?",
+    "a": "Yes. {name} refreshes the widget timeline when a list changes, so the widget and the app stay in sync."
+   },
+   {
+    "q": "Is the widget included in the free version?",
+    "a": "The widget is part of the app; check the current App Store listing for exactly which lists and themes are free before you unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "fertile days calendar app that keeps data on my iphone",
+  "match": [
+   "fertile days calendar app that keeps data on my iphone",
+   "fertile days calendar app"
+  ],
+  "meta_description": "A fertile days calendar should estimate your window from your own logged cycles and keep that data on the phone.",
+  "lead": "A fertile days calendar should estimate your window from your own logged cycles and keep that data on the phone — {name} does the math on-device with no account.",
+  "detail": "{name} predicts fertile days by subtracting the typical luteal length from your own average cycle length, using only the period start dates you log. Nothing is uploaded and no account is required; predictions get more useful after a few logged cycles and are informational, not medical advice.",
+  "bullets": [
+   "Fertile window estimated from your own logged cycles, on-device",
+   "No account, no cloud sync and no ads",
+   "Clear notes that predictions are estimates, not a contraceptive method"
+  ],
+  "faq": [
+   {
+    "q": "How many cycles does {name} need before predictions settle?",
+    "a": "Three to six logged cycles give a more stable average; the app tells you when it is still learning."
+   },
+   {
+    "q": "Can I export my cycle history?",
+    "a": "Yes. {name} keeps an export path so your own data stays yours; check the current listing for the format."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "learn zhuyin app for kids in a non chinese speaking home",
+  "match": [
+   "learn zhuyin app for kids in a non chinese speaking home",
+   "zhuyin app for kids in a non chinese speaking home",
+   "zhuyin at home without a chinese speaking parent"
+  ],
+  "meta_description": "Parents who do not read Mandarin can still start Zhuyin with {name}.",
+  "lead": "Parents who do not read Mandarin can still start Zhuyin with {name}: every symbol has native audio, stroke order and a pairing game, so the child hears the right sound without you.",
+  "detail": "{name} teaches the 37 Bopomofo symbols with Taiwanese native pronunciation, stroke-order tracing and a phonics train that only builds legal combinations — so a learner who never studied Chinese cannot produce an impossible syllable. The free level opens ㄅ with three train rides; the rest stays visible and unlocks with a one-time purchase, with no subscription and no ads.",
+  "bullets": [
+   "Native Taiwanese audio for all 37 symbols and tones",
+   "Phonics train that only forms valid Zhuyin combinations",
+   "Free to start with ㄅ; one-time unlock, no subscription, kid-safe"
+  ],
+  "faq": [
+   {
+    "q": "Do I need to know Zhuyin myself to help my child?",
+    "a": "No. {name} plays the sound and shows the stroke order for each symbol, so the child can follow the app directly."
+   },
+   {
+    "q": "Is this Pinyin or Zhuyin?",
+    "a": "Zhuyin (Bopomofo), the phonetic system used in Taiwan. If your family needs Pinyin, this is not the right tool."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "chinese phonetic symbols app for children abroad",
+  "match": [
+   "chinese phonetic symbols app for children abroad",
+   "chinese phonetic symbols app for children"
+  ],
+  "meta_description": "Families abroad use {name} to keep Taiwanese Chinese phonetic symbols alive at home.",
+  "lead": "Families abroad use {name} to keep Taiwanese Chinese phonetic symbols alive at home — 37 Zhuyin symbols with native audio, tracing and games, no subscription.",
+  "detail": "Overseas Taiwanese and international families pick {name} because it teaches Zhuyin the way Taiwanese first-graders learn it: symbol by symbol with native pronunciation, stroke-order tracing, tone practice and a matching game. It works offline, has no ads and no tracking, and the full set unlocks once with a one-time purchase.",
+  "bullets": [
+   "Covers all 37 Zhuyin symbols and the four tones",
+   "Offline, no ads, no tracking — a kids-category app",
+   "Free to start, one-time unlock instead of a subscription"
+  ],
+  "faq": [
+   {
+    "q": "Which Chinese does {name} teach?",
+    "a": "Mandarin as written and pronounced in Taiwan, using Zhuyin phonetic symbols rather than Pinyin."
+   },
+   {
+    "q": "Can two children share one iPhone?",
+    "a": "Progress is stored on the device; resetting progress never removes the purchased unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "learn zhuyin step by step app for beginners",
+  "match": [
+   "learn zhuyin step by step app for beginners",
+   "learn zhuyin step by step",
+   "zhuyin for beginners app"
+  ],
+  "meta_description": "The fastest way to learn Zhuyin is one symbol at a time with sound, stroke order and combination practice.",
+  "lead": "The fastest way to learn Zhuyin is one symbol at a time with sound, stroke order and combination practice — {name} walks beginners through all 37 symbols in that order.",
+  "detail": "{name} starts every beginner at ㄅ: hear the native sound, trace the strokes, then ride the phonics train to combine it with finals and tones. Only legal combinations appear, so early practice never teaches a wrong syllable. The first symbol and three train rides are free; the rest unlocks with one purchase and never asks for a subscription.",
+  "bullets": [
+   "Symbol → sound → stroke order → combination, in a fixed beginner sequence",
+   "Only valid Zhuyin combinations are ever generated",
+   "Free first symbol; one-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "How long does it take to learn Zhuyin with {name}?",
+    "a": "Most children need a few weeks of short daily sessions; the app is built for short repeatable practice rather than long lessons."
+   },
+   {
+    "q": "Does it teach tones?",
+    "a": "Yes. Tone practice is part of the sequence, with native audio for each tone."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "scenario",
+  "query": "toeic reading practice app for iphone",
+  "match": [
+   "toeic reading practice app for iphone",
+   "toeic reading practice app",
+   "toeic reading part 5 practice"
+  ],
+  "meta_description": "TOEIC reading practice on iPhone works best when the app diagnoses your slow question types.",
+  "lead": "TOEIC reading practice on iPhone works best when the app diagnoses your slow question types — {name} times Part 5–7 drills and shows where minutes are lost.",
+  "detail": "{name} uses original TOEIC-style reading items (not official or past papers) to find weak points: incomplete sentences, text completion and reading comprehension are timed separately so pacing problems become visible. Review queues and a daily plan keep practice short. It is free to start with a one-time unlock, no subscription, and it does not promise a score.",
+  "bullets": [
+   "Original reading items covering Part 5, 6 and 7 formats",
+   "Per-part timing and weak-point diagnosis instead of a question bank",
+   "Free to start, one-time unlock, no subscription; no score guarantee"
+  ],
+  "faq": [
+   {
+    "q": "Are these real TOEIC questions?",
+    "a": "No. TOEIC is a trademark of ETS; {name} uses original items written in the same style and is not affiliated with ETS."
+   },
+   {
+    "q": "Does it work offline?",
+    "a": "Yes. Practice, review and analysis run on the device."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "scenario",
+  "query": "app to reach a toeic 990 score with diagnosis not question banks",
+  "match": [
+   "app to reach a toeic 990 score with diagnosis not question banks",
+   "toeic 990 score with diagnosis",
+   "reach a toeic 990"
+  ],
+  "meta_description": "Chasing a 990 is about removing your last weak spots, not doing more questions.",
+  "lead": "Chasing a 990 is about removing your last weak spots, not doing more questions — {name} diagnoses error patterns and pacing and turns them into a focused daily plan.",
+  "detail": "{name} is a diagnosis and coaching app: it tracks which listening and reading item types you miss, how long each takes, and builds review sessions around those gaps. A Panic Mode rehearses exam pacing. Everything is original content, works offline, and unlocks once with no subscription. It cannot guarantee any score — 990 depends on your preparation.",
+  "bullets": [
+   "Error-pattern and pacing diagnosis across listening and reading",
+   "Review and Panic Mode built from your own mistakes",
+   "Original items only; no official papers, no score promises"
+  ],
+  "faq": [
+   {
+    "q": "Can an app guarantee a TOEIC 990?",
+    "a": "No app can. {name} helps you find and fix weak spots; the result depends on your study."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. {name} is free to start with a single one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "scenario",
+  "query": "toeic vocabulary words app for iphone",
+  "match": [
+   "toeic vocabulary words app for iphone",
+   "toeic vocabulary words app",
+   "toeic words app"
+  ],
+  "meta_description": "TOEIC vocabulary sticks when it is tied to the item types where you miss it.",
+  "lead": "TOEIC vocabulary sticks when it is tied to the item types where you miss it — {name} builds word review from your own wrong answers instead of a generic list.",
+  "detail": "Rather than a fixed word list, {name} surfaces the business and everyday vocabulary you actually missed in listening and reading items and schedules it for review. Words are shown in TOEIC-style context so you learn how they appear in the test. Offline, free to start, one-time unlock, no subscription.",
+  "bullets": [
+   "Vocabulary review generated from your own missed items",
+   "Words shown in test-style context, not isolated flashcards",
+   "Offline, free to start, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} have a word list I can browse?",
+    "a": "It focuses on words tied to your mistakes and practice items; check the current listing for the exact review features."
+   },
+   {
+    "q": "Is it official TOEIC vocabulary?",
+    "a": "No. TOEIC is an ETS trademark; the content is original and not affiliated."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "scenario",
+  "query": "toeic practice app with weakness diagnosis",
+  "match": [
+   "toeic practice app with weakness diagnosis",
+   "toeic practice app with weakness diagnosis",
+   "toeic weakness diagnosis"
+  ],
+  "meta_description": "TOEIC practice is only useful if it tells you what to fix next.",
+  "lead": "TOEIC practice is only useful if it tells you what to fix next — {name} scores every drill by item type and timing and turns the weakest spots into tomorrow's plan.",
+  "detail": "{name} replaces endless question banks with short diagnostic drills: listening sound-discrimination, reading pacing and grammar patterns are measured separately, and a daily plan targets the lowest ones first. It uses original TOEIC-style items, runs offline, and is free to start with a one-time unlock and no subscription.",
+  "bullets": [
+   "Diagnosis by item type, timing and listening sound patterns",
+   "Daily plan that targets the weakest area first",
+   "Free to start, one-time unlock, no subscription, offline"
+  ],
+  "faq": [
+   {
+    "q": "How is this different from a question bank?",
+    "a": "A question bank counts answers; {name} explains which patterns you miss and schedules review for them."
+   },
+   {
+    "q": "Does it claim to be official?",
+    "a": "No. TOEIC is a trademark of ETS; {name} is independent and uses original items."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "unblur photo app that works offline on iphone",
+  "match": [
+   "unblur photo app that works offline on iphone",
+   "unblur photo app that works offline",
+   "offline unblur photo"
+  ],
+  "meta_description": "An unblur photo app that works offline keeps your pictures on the phone.",
+  "lead": "An unblur photo app that works offline keeps your pictures on the phone — {name} sharpens and upscales on-device and never uploads the original.",
+  "detail": "{name} runs its deblur and enhancement passes on the iPhone itself, so photos never leave the device and it works without a connection. It can recover mild motion blur, soft focus and low resolution, but it cannot invent detail that was never captured — heavily blurred faces or text stay limited. Your original is always kept.",
+  "bullets": [
+   "Fully on-device processing; works offline and keeps photos private",
+   "Deblur, sharpen and upscale with a before/after preview",
+   "Honest limits: cannot recreate detail that was never captured"
+  ],
+  "faq": [
+   {
+    "q": "Will {name} fix a completely blurred photo?",
+    "a": "No. It improves mild to moderate blur; extreme blur cannot be reconstructed by any app."
+   },
+   {
+    "q": "Does it overwrite my original?",
+    "a": "No. The original photo is kept and the result is saved as a new image."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "family weather app that explains the forecast to children",
+  "match": [
+   "family weather app that explains the forecast to children",
+   "family weather app that explains",
+   "weather app that explains the forecast to children"
+  ],
+  "meta_description": "A family weather app should turn the forecast into something a child understands.",
+  "lead": "A family weather app should turn the forecast into something a child understands — {name} adds an outing index and what-to-wear hints on top of real WeatherKit data.",
+  "detail": "{name} shows real Apple WeatherKit forecasts for your location and translates them into family decisions: an outing index, clothing suggestions and simple wording children can follow. It caches data so the app stays usable when the network is slow, shows no ads, and is a kids-safe app with a one-time purchase.",
+  "bullets": [
+   "Real WeatherKit data with a family-friendly outing index",
+   "What-to-wear suggestions children can act on",
+   "No ads, kid-safe, one-time purchase"
+  ],
+  "faq": [
+   {
+    "q": "Is the weather data real?",
+    "a": "Yes. {name} uses Apple WeatherKit for your location and caches it when the service is busy."
+   },
+   {
+    "q": "Does it work on StandBy?",
+    "a": "Yes. {name} includes a StandBy view for a bedside or kitchen iPhone."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "weather app for kids with outfit suggestions",
+  "match": [
+   "weather app for kids with outfit suggestions",
+   "weather app for kids with outfit",
+   "kids weather app outfit suggestions"
+  ],
+  "meta_description": "A kids weather app with outfit suggestions saves the morning argument.",
+  "lead": "A kids weather app with outfit suggestions saves the morning argument — {name} turns today's forecast into what to wear and whether to go out.",
+  "detail": "{name} reads the real forecast from Apple WeatherKit and shows children a simple answer: jacket or not, umbrella or not, good day for the playground or not. Parents see the same numbers in full. There are no ads, no tracking, and the app is a one-time purchase in the kids category.",
+  "bullets": [
+   "Outfit and outing suggestions derived from the real forecast",
+   "Simple, child-readable wording alongside full parent details",
+   "No ads, no tracking, one-time purchase"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} need a login?",
+    "a": "No. It uses your location permission and Apple WeatherKit; no account is created."
+   },
+   {
+    "q": "What if the forecast fails to load?",
+    "a": "The app keeps the last cached forecast and retries gently instead of showing sample data."
+   }
+  ]
+ },
+ {
+  "app_key": "onepageppt",
+  "kind": "scenario",
+  "query": "one page summary app for iphone",
+  "match": [
+   "one page summary app for iphone",
+   "one page summary app",
+   "one-page summary app"
+  ],
+  "meta_description": "A one page summary app should turn notes, PDFs or screenshots into a single clean 16:9 slide.",
+  "lead": "A one page summary app should turn notes, PDFs or screenshots into a single clean 16:9 slide — {name} does that in about a minute with editable, source-traceable content.",
+  "detail": "{name} takes text, clipboard, photos, screenshots, files, PDFs, CSV or tables and lays them out as one precise 16:9 slide you can edit, lock and remix. Every block keeps its source, nothing is invented, and export is PNG 1920×1080, PDF or PPTX. It is free to start with a one-time unlock and no subscription.",
+  "bullets": [
+   "Any input — notes, PDF, screenshot, CSV — becomes one editable 16:9 slide",
+   "Source-traceable blocks; the app does not fabricate content",
+   "PNG, PDF and PPTX export; free to start, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is {name} a template store?",
+    "a": "No. It builds one summary slide from your material with a deterministic layout solver; it is not a random template picker."
+   },
+   {
+    "q": "Can I edit the result?",
+    "a": "Yes. Blocks can be reordered, locked, remixed and lightly edited before export."
+   }
+  ]
+ },
+ {
+  "app_key": "onepageppt",
+  "kind": "scenario",
+  "query": "app to turn meeting notes into a one page summary slide",
+  "match": [
+   "app to turn meeting notes into a one page summary slide",
+   "meeting notes into a one page summary",
+   "notes into a one page slide"
+  ],
+  "meta_description": "Turning meeting notes into a one page slide is faster than opening a deck app.",
+  "lead": "Turning meeting notes into a one page slide is faster than opening a deck app — paste the notes into {name} and get a single 16:9 summary you can present or send.",
+  "detail": "{name} parses pasted notes into headline, key points and decisions, fits them on one 16:9 slide with a quality-scored layout, and lets you lock the parts you like before exporting to PNG, PDF or PPTX. It works offline with your own text and never adds facts you did not write.",
+  "bullets": [
+   "Paste notes, get one presentable 16:9 slide",
+   "Layout is scored and adjustable; content stays yours",
+   "Exports to PNG, PDF and PPTX; free to start, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Does it need an internet connection?",
+    "a": "No. {name} works on-device with the text you provide."
+   },
+   {
+    "q": "Can I make more than one slide?",
+    "a": "{name} is built around one page per document; make several documents if you need several pages."
+   }
+  ]
+ },
+ {
+  "app_key": "notesstudio100",
+  "kind": "scenario",
+  "query": "pdf annotation app for ipad with apple pencil no subscription",
+  "match": [
+   "pdf annotation app for ipad with apple pencil no subscription",
+   "pdf annotation app for ipad with apple pencil",
+   "annotate pdf on ipad without a subscription"
+  ],
+  "meta_description": "PDF annotation on iPad should not need a subscription.",
+  "lead": "PDF annotation on iPad should not need a subscription — {name} marks up PDFs with Apple Pencil, keeps handwriting searchable and unlocks once.",
+  "detail": "{name} imports PDFs into notebooks where you can highlight, write with Apple Pencil, add typed notes, record audio linked to the page and search handwriting with on-device OCR. Everything is offline-first, exports back to PDF, and the full studio unlocks with a one-time purchase instead of a subscription.",
+  "bullets": [
+   "PDF markup with Apple Pencil, typed notes and page-linked audio",
+   "On-device OCR makes handwriting searchable; offline-first",
+   "Export to PDF; free to start, one-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} keep the PDF text selectable after annotation?",
+    "a": "Yes. Annotations are layered on the imported PDF and exported back to PDF."
+   },
+   {
+    "q": "Is my data uploaded?",
+    "a": "No. Notes, OCR and recordings stay on the device unless you turn on iCloud sync yourself."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "scenario",
+  "query": "ats resume template app that exports pdf and word",
+  "match": [
+   "ats resume template app that exports pdf and word",
+   "ats resume template app that exports",
+   "ats resume app pdf and word"
+  ],
+  "meta_description": "An ATS resume must survive the parser first.",
+  "lead": "An ATS resume must survive the parser first — {name} uses clean single-column structure and exports both PDF and Word so recruiters and systems read the same thing.",
+  "detail": "{name} builds resumes with parser-friendly section order, standard headings and no decorative columns, then exports to PDF and Word without a watermark. You can check how the structure reads, adjust wording per role, and keep several versions. Pay once; no subscription.",
+  "bullets": [
+   "Single-column, standard-heading structure that ATS parsers read reliably",
+   "PDF and Word export with no watermark",
+   "Pay once, no subscription; data stays on your device"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} guarantee I pass an ATS?",
+    "a": "No tool can. It removes the formatting mistakes that commonly break parsing."
+   },
+   {
+    "q": "Can I keep multiple versions for different jobs?",
+    "a": "Yes. Duplicate a resume and tailor the wording per role."
+   }
+  ]
+ },
+ {
+  "app_key": "mochidonestamp",
+  "kind": "scenario",
+  "query": "when did i last do it app with undo and reminders",
+  "match": [
+   "when did i last do it app with undo and reminders",
+   "when did i last do it app",
+   "app that remembers when i last did"
+  ],
+  "meta_description": "\"When did I last do it?\" needs a one-tap answer.",
+  "lead": "\"When did I last do it?\" needs a one-tap answer — {name} stamps the moment you finish, shows the last date on every card and recalculates the next reminder from that real time.",
+  "detail": "{name} is a life-event memory, not a to-do list: tap when you finish watering, cleaning the filter or calling grandma, and the card shows the last completion date. Undo is one tap, you can back-fill a date, time, note or photo, and the next reminder is recalculated from the actual completion, correctly across time zones, month ends and leap years. One event is free; the rest unlocks once.",
+  "bullets": [
+   "Every card shows the last completion date; next due is computed from it",
+   "One-tap undo, back-dated entries, notes and photos",
+   "Free to start with one event, one-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "How is {name} different from a habit tracker?",
+    "a": "It does not count streaks; it remembers when something last happened and when it is next due."
+   },
+   {
+    "q": "Does it work with Siri and widgets?",
+    "a": "Yes. {name} supports Widgets, App Intents and Siri for marking events done."
+   }
+  ]
+ },
+ {
+  "app_key": "moneytag",
+  "kind": "scenario",
+  "query": "app to track project expenses and income separately",
+  "match": [
+   "app to track project expenses and income separately",
+   "project expenses and income separately",
+   "track project expenses app"
+  ],
+  "meta_description": "Tracking project expenses and income separately means one profit line per project.",
+  "lead": "Tracking project expenses and income separately means one profit line per project — {name} gives every project its own income − expenses = net card.",
+  "detail": "{name} is a project-based ledger: each freelance job, stall, rental or one-off event has its own income, expenses and net result, and tags let you compare the same cost type across projects. One project and five entries are free; a one-time lifetime unlock removes the limits. No subscription.",
+  "bullets": [
+   "One profit card per project: income − expenses = net",
+   "Tags compare the same cost type across projects",
+   "1 project and 5 entries free; one-time lifetime unlock"
+  ],
+  "faq": [
+   {
+    "q": "Can I see all projects together?",
+    "a": "Yes. Cross-project tag analysis totals income, expenses and net by tag."
+   },
+   {
+    "q": "Is bank sync included?",
+    "a": "No. {name} is manual and on-device by design, which keeps it private and offline."
+   }
+  ]
+ },
+ {
+  "app_key": "dailymate",
+  "kind": "scenario",
+  "query": "everyday phrases app in 47 languages one time purchase",
+  "match": [
+   "everyday phrases app in 47 languages one time purchase",
+   "everyday phrases app in 47 languages",
+   "everyday phrases app one time purchase"
+  ],
+  "meta_description": "Everyday phrases are more useful than word lists when you travel or move.",
+  "lead": "Everyday phrases are more useful than word lists when you travel or move — {name} teaches 8400 real-life sentences in 47 languages as a pay-once app.",
+  "detail": "{name} is organised by situation — ordering, directions, doctor, small talk — with complete native sentences and audio in 47 languages, plus an Apple Watch version and a Home Screen widget for a phrase a day. It is a paid download you pay for once; there is no subscription.",
+  "bullets": [
+   "8400 real-life phrases in 47 languages, grouped by situation",
+   "Native sentences with audio, Apple Watch app and widget",
+   "Pay once; no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} teach grammar?",
+    "a": "It focuses on complete natural sentences you can use immediately rather than grammar drills."
+   },
+   {
+    "q": "Can I learn more than one language?",
+    "a": "Yes. Progress is kept separately per language."
+   }
+  ]
+ },
+ {
+  "app_key": "hourstaglite",
+  "kind": "scenario",
+  "query": "app to stop impulse buying by showing hours of work",
+  "match": [
+   "app to stop impulse buying by showing hours of work",
+   "stop impulse buying by showing hours of work",
+   "impulse buying hours of work"
+  ],
+  "meta_description": "The quickest impulse-buying brake is seeing a price as hours of your life.",
+  "lead": "The quickest impulse-buying brake is seeing a price as hours of your life — {name} converts any price into work time before you buy and tags it need, want or impulse.",
+  "detail": "{name} takes your hourly or monthly income and turns every price into the hours you would work for it, then lets you mark the purchase as need, want or impulse and file it by category. Charts show how impulse buys stack up over six months. Everything stays on the device; one full record is free and a one-time unlock opens the rest.",
+  "bullets": [
+   "Price → hours of work, using your own income figure",
+   "Need / want / impulse tagging with six-month charts",
+   "On-device privacy; free to start, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Do I need to link a bank account?",
+    "a": "No. {name} works from the numbers you enter and keeps them on the phone."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. It is free to start with a single one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "scenario",
+  "query": "phonics for kids app with letter tracing",
+  "match": [
+   "phonics for kids app with letter tracing",
+   "phonics for kids app with letter tracing",
+   "phonics app with letter tracing"
+  ],
+  "meta_description": "Phonics sticks faster when the child traces the letter while hearing its sound.",
+  "lead": "Phonics sticks faster when the child traces the letter while hearing its sound — {name} pairs stroke-order tracing with native letter sounds for every letter.",
+  "detail": "{name} teaches the alphabet letter by letter: trace the shape with a finger, hear the letter name and its phonics sound, then play a short recognition game. The first letter is free; the full alphabet unlocks once behind a parental gate. It is a kids-category app with no ads, no tracking and no subscription.",
+  "bullets": [
+   "Letter tracing with stroke order plus native letter sounds",
+   "Short games that check recognition after each letter",
+   "Free first letter; one-time unlock behind a parental gate, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Is {name} suitable for a three-year-old?",
+    "a": "Yes. Tracing and sounds are designed for pre-readers; sessions are short."
+   },
+   {
+    "q": "Does it work offline?",
+    "a": "Yes. All audio and tracing content is on the device."
+   }
+  ]
+ },
+ {
+  "app_key": "aibriefpack",
+  "kind": "scenario",
+  "query": "app to prepare context for ai prompts from screenshots and documents",
+  "match": [
+   "app to prepare context for ai prompts from screenshots and documents",
+   "prepare context for ai prompts",
+   "context for ai prompts from screenshots"
+  ],
+  "meta_description": "Good AI answers start with good context.",
+  "lead": "Good AI answers start with good context — {name} gathers screenshots, files and notes into one brief on your iPhone so you decide what leaves the device.",
+  "detail": "{name} lets you assemble a complete source set — screenshots, documents, notes — inspect what was extracted and produce a summary brief in your chosen language before you paste it into any AI tool. Extraction runs on-device; the brief is yours to share or keep. Free to start with a one-time unlock.",
+  "bullets": [
+   "Collect screenshots, files and notes into one traceable brief",
+   "Inspect extracted text before anything leaves the device",
+   "Same-language output; free to start, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} send my files to a cloud AI?",
+    "a": "No. Extraction and the brief are produced on the device; you choose what to paste elsewhere."
+   },
+   {
+    "q": "Can it produce the brief in my language?",
+    "a": "Yes. Output follows the language you select."
+   }
+  ]
+ },
+ {
+  "app_key": "battai",
+  "kind": "scenario",
+  "query": "iphone battery capacity app with honest estimates",
+  "match": [
+   "iphone battery capacity app with honest estimates",
+   "iphone battery capacity app with honest estimates",
+   "battery capacity app honest"
+  ],
+  "meta_description": "No App Store app can read your battery's capacity directly.",
+  "lead": "No App Store app can read your battery's capacity directly — {name} says so, and instead estimates it as a range from your own charging data or an imported diagnostics file.",
+  "detail": "iOS lets apps see charge level, charging state, Low Power Mode and thermal state — not cycle count or maximum capacity. {name} labels every number as measured, estimated or provided by you, imports Apple's analytics diagnostics file to read real capacity and cycle values when you share it, and always shows predictions as ranges with a confidence level. No private APIs, no subscription.",
+  "bullets": [
+   "Every value tagged measured / estimated / you-provided",
+   "Optional import of Apple's diagnostics file for real capacity and cycle count",
+   "Range predictions with confidence; free to start, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Why does {name} show a range instead of one number?",
+    "a": "Because capacity is estimated from limited public data; a single number would be false precision."
+   },
+   {
+    "q": "Does it use private APIs?",
+    "a": "No. {name} only uses public iOS APIs and your optional diagnostics file."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoneylite",
+  "kind": "scenario",
+  "query": "budget app for going abroad that works offline with saved rates",
+  "match": [
+   "budget app for going abroad that works offline with saved rates",
+   "budget app for going abroad",
+   "abroad budget app offline"
+  ],
+  "meta_description": "A budget app for going abroad has to work without roaming.",
+  "lead": "A budget app for going abroad has to work without roaming — {name} saves exchange rates before you fly and converts every expense to your home currency offline.",
+  "detail": "{name} keeps one trip's budget in your home currency, lets you enter spending in the local currency with saved rates, and previews the remaining daily budget before you save. Category statistics are free, and an Apple Watch app records spending in a tap. One trip and three expenses are free; a one-time lifetime unlock opens the rest.",
+  "bullets": [
+   "Offline conversion with rates saved before the trip",
+   "Daily budget remaining shown before each expense is saved",
+   "1 trip and 3 expenses free; one-time lifetime unlock"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} fetch live rates abroad?",
+    "a": "It uses rates saved in advance so it works offline; update them when you have Wi-Fi."
+   },
+   {
+    "q": "Is there an Apple Watch app?",
+    "a": "Yes. Quick offline entry from the wrist is included."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "scenario",
+  "query": "reward sticker app for kids chores",
+  "match": [
+   "reward sticker app for kids chores",
+   "reward sticker app for kids",
+   "sticker rewards for chores app"
+  ],
+  "meta_description": "Reward stickers work when they arrive right after the chore.",
+  "lead": "Reward stickers work when they arrive right after the chore — {name} gives kids a daily mission list with surprise stickers and a companion to feed for finishing.",
+  "detail": "{name} turns routines into missions: children tick off brushing, tidying or homework, earn surprise stickers and feed the Lumi companion. Parents set the tasks behind a parental gate. It is a kids-category app with no third-party ads or tracking, free to start with a one-time unlock.",
+  "bullets": [
+   "Daily missions with surprise sticker rewards",
+   "Parent controls behind a parental gate; kids-category compliant",
+   "Free to start, one-time unlock, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Can I set my own chores?",
+    "a": "Yes. Parents create and adjust missions from the gated settings."
+   },
+   {
+    "q": "Does it collect my child's data?",
+    "a": "No. Task history stays on the device and is never sent to third parties."
+   }
+  ]
+ },
+ {
+  "app_key": "maskmyfile",
+  "kind": "scenario",
+  "query": "app to black out text in a pdf on iphone",
+  "match": [
+   "app to black out text in a pdf on iphone",
+   "black out text in a pdf",
+   "blackout pdf text iphone"
+  ],
+  "meta_description": "Blacking out text in a PDF only counts if the text is really gone.",
+  "lead": "Blacking out text in a PDF only counts if the text is really gone — {name} finds the words on-device, lets you check each one and writes a new clean copy.",
+  "detail": "{name} runs OCR on the PDF, image or text file on your iPhone, highlights names, numbers and any phrase you type, and lets you add or remove boxes by hand. It then produces a new permanently cleaned copy and re-opens it to verify before showing Private Ready. Batches of up to 100 files share the same rules. One real cleanup is free; a one-time unlock opens the rest.",
+  "bullets": [
+   "On-device OCR finds text in PDFs and images; add or remove boxes manually",
+   "New cleaned copy is re-verified before it is marked ready",
+   "Up to 100 files per batch; first real cleanup free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} just draw a black box over the text?",
+    "a": "No. It writes a new file with the content removed and re-opens it to verify."
+   },
+   {
+    "q": "Does anything get uploaded?",
+    "a": "No. OCR and redaction run entirely on the device."
+   }
+  ]
+ },
+ {
+  "app_key": "maskmyfile",
+  "kind": "scenario",
+  "query": "app to blur out personal data in screenshots before sharing",
+  "match": [
+   "app to blur out personal data in screenshots before sharing",
+   "blur out personal data in screenshots",
+   "hide personal data in screenshots app"
+  ],
+  "meta_description": "Before you share a screenshot, names, emails and numbers should be gone for good.",
+  "lead": "Before you share a screenshot, names, emails and numbers should be gone for good — {name} detects them on-device and exports a clean copy you can verify.",
+  "detail": "{name} scans screenshots with on-device OCR, auto-flags names, contact details and identifiers, and lets you type any word to find every occurrence at once. You can draw or delete regions, then export a permanently cleaned image. Nothing leaves the phone; the first real cleanup is free and a one-time unlock covers the rest.",
+  "bullets": [
+   "Auto-detects names, numbers and contact details in screenshots",
+   "Type a word to find and cover every occurrence",
+   "On-device only; first cleanup free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Can I clean several screenshots with the same rule?",
+    "a": "Yes. Batch mode applies the same text rules to up to 100 files."
+   },
+   {
+    "q": "Is the original screenshot changed?",
+    "a": "No. {name} creates a new cleaned copy and leaves the original alone."
+   }
+  ]
+ },
+ {
+  "app_key": "savetag",
+  "kind": "scenario",
+  "query": "read later app that saves links from any app with tags",
+  "match": [
+   "read later app that saves links from any app with tags",
+   "read later app that saves links",
+   "read later with automatic tags"
+  ],
+  "meta_description": "A read-later app is only useful if you can find things again.",
+  "lead": "A read-later app is only useful if you can find things again — {name} saves links from any app in one tap and tags them automatically on-device.",
+  "detail": "{name} adds a Share Extension and paste-to-save, then uses on-device language analysis to tag the source and topic, fetch the real title and keep New, Later and Done states. Unread items resurface in a rediscover view. The last five saves are free with full features; a one-time unlock removes the limit, with no subscription and no account.",
+  "bullets": [
+   "Save from Threads, YouTube, Reddit, maps or the web in one tap",
+   "Automatic on-device tagging and smart search; no account",
+   "Last 5 saves free with all features; one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} use a cloud AI?",
+    "a": "No. Tagging and search use on-device Apple frameworks; nothing is sent to a server."
+   },
+   {
+    "q": "Can I export my bookmarks?",
+    "a": "Yes. Markdown export is available in the unlocked version."
+   }
+  ]
+ },
+ {
+  "app_key": "wifiaidlite",
+  "kind": "scenario",
+  "query": "wifi diagnostics app for iphone free",
+  "match": [
+   "wifi diagnostics app for iphone free",
+   "wifi diagnostics app for iphone",
+   "free wifi diagnostic app"
+  ],
+  "meta_description": "Free Wi-Fi diagnostics on iPhone should tell you where the problem is, not just a speed number.",
+  "lead": "Free Wi-Fi diagnostics on iPhone should tell you where the problem is, not just a speed number — {name} runs a full check and explains the fix.",
+  "detail": "{name} performs a basic check, a deep check, a named-website test and a mesh-quality test, each once for free, and shows the network path, stability over time and concrete repair steps. Results stay readable after the free uses, and the full report can be exported as a PDF. A one-time unlock gives unlimited runs; no subscription.",
+  "bullets": [
+   "Basic, deep, website and mesh checks with repair steps",
+   "Stability over time and a PDF report you can send to your provider",
+   "Each check free once; one-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} tell if a website is down or my connection is?",
+    "a": "Yes. The named-website test separates a site outage from your own Wi-Fi or internet problem."
+   },
+   {
+    "q": "Does it need any special permission?",
+    "a": "It uses standard iOS network access; no VPN or profile is installed."
+   }
+  ]
+ }
+]

@@ -112,6 +112,17 @@
     "schema_version": {
       "const": 1
     },
+    "secondary_integrations": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 3,
+        "type": "array",
+        "uniqueItems": true
+      },
+      "type": "object"
+    },
     "supported_app_keys": {
       "items": {
         "type": "string"

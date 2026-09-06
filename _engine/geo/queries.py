@@ -1181,6 +1181,89 @@ for _k, _qs in _GEO_TAILORED20.items():
             _base.append(_q)
 
 
+# 2026-09-06 在榜詞對齊：46 App × 51 個 App Store rank 4–30 母語搜尋詞（US/GB/RU/CN，
+# 見 per-app-growth-analysis-20260905）各對應一題品類問句；事實在 deep_items/00_rank_terms_20260906.json，
+# ru／zh-Hans／zh-Hant 標題逐字含該母語詞。
+_GEO_TAILORED21 = {
+    "mochi": [
+        "checklist app with a home screen widget for iphone"
+    ],
+    "cyca": [
+        "fertile days calendar app that keeps data on my iphone"
+    ],
+    "lumibopomofo": [
+        "learn zhuyin app for kids in a non chinese speaking home",
+        "chinese phonetic symbols app for children abroad",
+        "learn zhuyin step by step app for beginners"
+    ],
+    "aim990": [
+        "toeic reading practice app for iphone",
+        "app to reach a toeic 990 score with diagnosis not question banks",
+        "toeic vocabulary words app for iphone",
+        "toeic practice app with weakness diagnosis"
+    ],
+    "unblurry": [
+        "unblur photo app that works offline on iphone"
+    ],
+    "lumiweather": [
+        "family weather app that explains the forecast to children",
+        "weather app for kids with outfit suggestions"
+    ],
+    "onepageppt": [
+        "one page summary app for iphone",
+        "app to turn meeting notes into a one page summary slide"
+    ],
+    "notesstudio100": [
+        "pdf annotation app for ipad with apple pencil no subscription"
+    ],
+    "cvdesk": [
+        "ats resume template app that exports pdf and word"
+    ],
+    "mochidonestamp": [
+        "when did i last do it app with undo and reminders"
+    ],
+    "moneytag": [
+        "app to track project expenses and income separately"
+    ],
+    "dailymate": [
+        "everyday phrases app in 47 languages one time purchase"
+    ],
+    "hourstaglite": [
+        "app to stop impulse buying by showing hours of work"
+    ],
+    "lumiletters": [
+        "phonics for kids app with letter tracing"
+    ],
+    "aibriefpack": [
+        "app to prepare context for ai prompts from screenshots and documents"
+    ],
+    "battai": [
+        "iphone battery capacity app with honest estimates"
+    ],
+    "gmoneylite": [
+        "budget app for going abroad that works offline with saved rates"
+    ],
+    "lumimission": [
+        "reward sticker app for kids chores"
+    ],
+    "maskmyfile": [
+        "app to black out text in a pdf on iphone",
+        "app to blur out personal data in screenshots before sharing"
+    ],
+    "savetag": [
+        "read later app that saves links from any app with tags"
+    ],
+    "wifiaidlite": [
+        "wifi diagnostics app for iphone free"
+    ]
+}
+for _k, _qs in _GEO_TAILORED21.items():
+    _base = CURATED.setdefault(_k, [])
+    for _q in _qs:
+        if _q not in _base:
+            _base.append(_q)
+
+
 # 上方所有來源都載入後，再把免費版新增題目合併到 Pro；Pro 專屬題目
 # 保留在 Pro 自己的 list，不可反向出現在免費版。
 for _pro_key, _free_key in _PRO_INHERITS.items():

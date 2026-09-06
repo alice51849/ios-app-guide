@@ -1938,6 +1938,7 @@ def build_llms(comp_map, live_keys):
     lines += app_install_decision_route_lines(full=False)
     lines += high_intent_decision_route_lines(full=False)
     lines += localized_llms_discovery_lines()
+    lines += hero_tool_lines()
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
     lines += ["", "## External curated lists & datasets (GitHub, CC0/CC BY — free to cite)"]
@@ -1978,6 +1979,33 @@ def build_llms(comp_map, live_keys):
     ]
     lines.append("")
     return demote_optional_sections("\n".join(lines))
+
+
+HERO_MANIFEST = os.path.join(PAGES, "data", "hero-tasks", "manifest.json")
+
+
+def hero_tool_lines(locale="en-US"):
+    """Free result tools from the hero task manifest: full pages only (no CSV),
+    one line per task in ``locale``; the page itself carries 50-locale hreflang."""
+    if not os.path.exists(HERO_MANIFEST):
+        return []
+    with open(HERO_MANIFEST, encoding="utf-8") as handle:
+        manifest = json.load(handle)
+    rows = []
+    for record in manifest.get("records", []):
+        if record.get("locale") != locale:
+            continue
+        page = os.path.join(PAGES, record["path"])
+        if not os.path.exists(page):
+            continue
+        with open(page, encoding="utf-8") as handle:
+            head = handle.read(20000)
+        match = re.search(r"<title>(.*?)</title>", head, re.S)
+        title = html.unescape(match.group(1)).strip() if match else record["task_id"]
+        rows.append(f"- [{title}]({record['url']}) — free, local-only browser tool; {manifest.get('locale_count', 50)} languages via hreflang; App Store links carry pt/ct/mt")
+    if not rows:
+        return []
+    return ["", "## Free result tools (local-only, 50 languages)", *rows]
 
 
 def _resource_files(directory, live_keys, prefix):
@@ -2155,6 +2183,7 @@ def build_llms_full(comp_map, live_keys):
                 for label, suffix in DATA_DISTRIBUTIONS:
                     if os.path.exists(os.path.join(directory, f"{stem}{suffix}")):
                         lines.append(f"  - {label}: {url[:-5]}{suffix}")
+    lines += hero_tool_lines()
 
     static_apis = [
         descriptor

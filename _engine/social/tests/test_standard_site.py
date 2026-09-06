@@ -3165,3 +3165,93 @@ class StandardSitePublisherTests(ProjectScratchCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HeroToolDocumentTests(ProjectScratchCase):
+    def _tool_page(self, pages: Path, relative: str, site: str, *, title: str, steps: list[str]) -> None:
+        path = pages / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        canonical = f"{site}/{relative}"
+        howto = {"@context": "https://schema.org", "@type": "HowTo", "name": title,
+                 "step": [{"@type": "HowToStep", "position": index, "text": text}
+                          for index, text in enumerate(steps, start=1)]}
+        dataset = {"@context": "https://schema.org", "@type": "Dataset", "name": "Sample"}
+        path.write_text(
+            "<html><head><title>" + title + "</title>"
+            '<meta name="description" content="Compare prices against your own work hours.">'
+            f'<link rel="canonical" href="{canonical}">'
+            '<script type="application/ld+json">{"@type": "WebApplication"}</script>'
+            '<script type="application/ld+json">' + json.dumps([howto, dataset]) + "</script>"
+            "</head><body></body></html>",
+            encoding="utf-8",
+        )
+
+    def test_hero_tool_pages_become_extra_documents_without_displacing_editorial_ones(self) -> None:
+        pages = self.scratch / "pages"
+        pages.mkdir()
+        (pages / generator.LIVE_STATE_NAME).write_text(
+            json.dumps({"live_ids": ["101", "202"]}), encoding="utf-8"
+        )
+        site = "https://example.com/guide"
+        query = "How can Alpha solve a careful real-world workflow?"
+        slug = generator.slugify(query)
+        canonical = f"{site}/answers/{slug}.html"
+        (pages / "answers").mkdir()
+        (pages / "answers" / f"{slug}.html").write_text(
+            f'<html><head><link rel="canonical" href="{canonical}"></head></html>', encoding="utf-8"
+        )
+        (pages / "en-US").mkdir()
+        (pages / "en-US" / "beta.html").write_text(
+            f'<html><head><link rel="canonical" href="{site}/en-US/beta.html"></head></html>', encoding="utf-8"
+        )
+        self._tool_page(pages, "en-US/tools/purchase-worktime-sheet.html", site,
+                        title="Purchase price → work hours sheet", steps=["Hours = price ÷ hourly income.", "Up to 30 rows."])
+        self._tool_page(pages, "ja/tools/purchase-worktime-sheet.html", site, title="価格→労働時間シート", steps=["時間 = 価格 ÷ 時給"])
+        self._tool_page(pages, "en-US/tools/not-live-sheet.html", site, title="Not live tool", steps=["x"])
+        manifest_dir = pages / "data" / "hero-tasks"
+        manifest_dir.mkdir(parents=True)
+        (manifest_dir / "manifest.json").write_text(json.dumps({"records": [
+            {"task_id": "purchase-worktime", "locale": "en-US", "url": f"{site}/en-US/tools/purchase-worktime-sheet.html",
+             "path": "en-US/tools/purchase-worktime-sheet.html", "apps": [{"key": "alpha"}, {"key": "beta"}]},
+            {"task_id": "purchase-worktime", "locale": "ja", "url": f"{site}/ja/tools/purchase-worktime-sheet.html",
+             "path": "ja/tools/purchase-worktime-sheet.html", "apps": [{"key": "alpha"}]},
+            {"task_id": "not-live", "locale": "en-US", "url": f"{site}/en-US/tools/not-live-sheet.html",
+             "path": "en-US/tools/not-live-sheet.html", "apps": [{"key": "not-live"}]},
+        ]}), encoding="utf-8")
+        apps = {
+            "alpha": {"name": "Alpha", "category": "productivity", "sub": "Organize a careful workflow",
+                      "cta_bullets": ["No account", "Offline"], "purchase_model": "paid_upfront"},
+            "beta": {"name": "Beta", "category": "utility", "sub": "Complete a focused utility task",
+                     "cta_bullets": ["Private", "Pay once"], "purchase_model": "free_with_lifetime_unlock"},
+            "not-live": {"name": "Not Live"},
+        }
+        deep = [{"app_key": "alpha", "kind": "scenario", "query": query,
+                 "lead": "Begin with the real outcome and its constraints.",
+                 "detail": "A careful evaluation compares required inputs before adopting a tool. " * 4,
+                 "bullets": ["Write down the required outcome"],
+                 "where_app_fits": "Alpha is optional.",
+                 "faq": [{"q": "Is this a ranking?", "a": "No."}]}]
+        manifest = generator.build_manifest(
+            pages=pages, site=site, apps=apps,
+            appstore={"alpha": "101", "beta": "202", "not-live": "303"},
+            deep_items=deep, max_per_app=1,
+            now=datetime(2026, 9, 6, 8, tzinfo=timezone.utc),
+        )
+        by_url = {document["canonical_url"]: document for document in manifest["documents"]}
+        self.assertIn(canonical, by_url)
+        tool = by_url[f"{site}/en-US/tools/purchase-worktime-sheet.html"]
+        self.assertEqual("alpha", tool["app_key"])
+        self.assertEqual("tool", tool["editorial_kind"])
+        self.assertEqual("Purchase price → work hours sheet", tool["title"])
+        self.assertEqual("purchase-worktime", tool["source_query"])
+        self.assertIn("1. Hours = price ÷ hourly income.", tool["text_content"])
+        self.assertIn("2. Up to 30 rows.", tool["text_content"])
+        self.assertIn("free tool", tool["tags"])
+        self.assertEqual("101", tool["app_store_id"])
+        self.assertEqual(attribution.document_content_hash(tool), tool["content_hash"])
+        self.assertNotIn(f"{site}/ja/tools/purchase-worktime-sheet.html", by_url)
+        self.assertNotIn(f"{site}/en-US/tools/not-live-sheet.html", by_url)
+        self.assertEqual(2, sum(document["app_key"] == "alpha" for document in manifest["documents"]))
+        self.assertEqual(f"geo/pages/{generator.HERO_MANIFEST_RELATIVE}", manifest["source"]["hero_tools"])
+        for document in manifest["documents"]:
+            self.assertTrue(document["canonical_url"].startswith(site + "/"))

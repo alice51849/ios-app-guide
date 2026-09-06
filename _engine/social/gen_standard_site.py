@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 from datetime import datetime, timezone
 import hashlib
+from html import unescape as html_unescape
 import json
 import os
 from pathlib import Path
@@ -526,6 +527,123 @@ def _store_url(app_id: object) -> str:
     return f"https://apps.apple.com/app/id{value}"
 
 
+HERO_MANIFEST_RELATIVE = "data/hero-tasks/manifest.json"
+HERO_DOCUMENT_LOCALE = "en-US"
+_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
+_DESCRIPTION_RE = re.compile(
+    r'<meta\s+name="description"\s+content="([^"]*)"', re.S
+)
+_LD_JSON_RE = re.compile(
+    r'<script type="application/ld\+json">(.*?)</script>', re.S
+)
+
+
+def _hero_documents(
+    *,
+    pages: Path,
+    site: str,
+    live_keys: Sequence[str],
+    apps: Mapping[str, Mapping[str, object]],
+    appstore: Mapping[str, object],
+    seen_urls: set[str],
+) -> list[dict[str, object]]:
+    """Publish the free hero result tools (full pages only, one locale) as
+    Standard.site documents so AppViews index them passively. They are extra
+    candidates: they never displace an App's deep editorial documents."""
+    manifest_path = Path(pages) / HERO_MANIFEST_RELATIVE
+    if not manifest_path.is_file():
+        return []
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    documents: list[dict[str, object]] = []
+    for record in manifest.get("records", []):
+        if record.get("locale") != HERO_DOCUMENT_LOCALE:
+            continue
+        canonical = str(record["url"])
+        if canonical in seen_urls or not _canonical_is_deployed(
+            pages, canonical, site
+        ):
+            continue
+        keys = [
+            str(app["key"]) for app in record.get("apps", [])
+            if str(app.get("key")) in live_keys
+        ]
+        if not keys:
+            continue
+        key = keys[0]
+        app = apps[key]
+        name = _compact(app["name"])
+        app_store_id = str(appstore[key]).strip()
+        app_store_url = _store_url(app_store_id)
+        page = (Path(pages) / str(record["path"])).read_text(encoding="utf-8")
+        title_match = _TITLE_RE.search(page)
+        description_match = _DESCRIPTION_RE.search(page)
+        if not title_match or not description_match:
+            raise ManifestError(f"Hero tool page lacks title/description: {canonical}")
+        title = _compact(html_unescape(title_match.group(1)))
+        description = _compact(html_unescape(description_match.group(1)))
+        steps: list[str] = []
+        for block in _LD_JSON_RE.findall(page):
+            payload = json.loads(block)
+            for node in payload if isinstance(payload, list) else [payload]:
+                if isinstance(node, Mapping) and node.get("@type") == "HowTo":
+                    steps.extend(
+                        _compact(step.get("text"))
+                        for step in node.get("step", [])
+                        if isinstance(step, Mapping) and _compact(step.get("text"))
+                    )
+        sections = [
+            DISCLOSURE_TEMPLATE.format(name=name),
+            title,
+            "What this free tool does",
+            description,
+            "The tool runs entirely in the browser, keeps every input on the "
+            "device and offers a public sample CSV; no account, analytics or "
+            "third-party script is involved.",
+        ]
+        if steps:
+            sections.append("How the result is calculated")
+            sections.extend(
+                f"{index}. {value}" for index, value in enumerate(steps, start=1)
+            )
+        sections.extend(
+            [
+                "Where the app fits",
+                _where_app_fits(name, app, app_store_url),
+                "Limits and availability",
+                AVAILABILITY_NOTE,
+            ]
+        )
+        text = "\n\n".join(value for value in sections if value)
+        try:
+            text, primary_app_store_url, legacy_app_store_link = (
+                ensure_primary_app_store_url(
+                    text, app_id=app_store_id, fallback_route=app_store_url,
+                )
+            )
+        except AttributionError as error:
+            raise ManifestError(
+                f"Invalid primary App Store URL for {key}: {error}"
+            ) from error
+        document = {
+            "app_key": key,
+            "canonical_url": canonical,
+            "path": canonical_path(canonical, site),
+            "title": title,
+            "description": description[:3000],
+            "text_content": text,
+            "app_store_id": app_store_id,
+            "primary_app_store_url": primary_app_store_url,
+            "legacy_app_store_link": legacy_app_store_link,
+            "tags": _tags(key, app) + ["free tool", "local-only"],
+            "source_query": _compact(record.get("task_id")),
+            "editorial_kind": "tool",
+        }
+        document["content_hash"] = document_content_hash(document)
+        documents.append(document)
+        seen_urls.add(canonical)
+    return documents
+
+
 def _fallback_canonical(
     pages: Path, site: str, key: str
 ) -> str | None:
@@ -624,6 +742,12 @@ def build_manifest(
             )
             seen_urls.add(canonical)
 
+    documents.extend(
+        _hero_documents(
+            pages=pages, site=site, live_keys=live_keys, apps=apps,
+            appstore=appstore, seen_urls=seen_urls,
+        )
+    )
     documents.sort(key=lambda value: (
         str(value["app_key"]),
         str(value["canonical_url"]),
@@ -637,6 +761,7 @@ def build_manifest(
             "live_catalog": f"geo/pages/{LIVE_STATE_NAME}",
             "live_catalog_sha256": live_state_sha256,
             "editorial_catalog": "geo/answer_deep.py + geo/deep_items/*.json",
+            "hero_tools": f"geo/pages/{HERO_MANIFEST_RELATIVE}",
             "schema_sources": SCHEMA_SOURCES,
             "live_app_keys": live_keys,
             "live_app_count": len(live_keys),

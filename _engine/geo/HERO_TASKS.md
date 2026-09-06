@@ -64,6 +64,21 @@ CSV 使用 UTF-8 BOM、RFC 4180 引號、固定小數點，並阻止試算表公
 網站的 `.gitattributes` 保留 CSV 的 CRLF 原始位元組，避免跨平台 checkout 破壞公布的 SHA-256。
 表單必須等本機 JS 成功初始化才啟用；無 JS 時公共範例仍可直接下載。
 
+## 第二層到達路徑與 AI 引用
+
+- **第二層插卡（零新 URL）**：除第一順位答案／App guide 外，同 App、同語、`answers/` 下已由
+  `gen_app_decision_cards` 放入該 App 決策卡（`<!-- app-decision-card:start/end -->` 內含該 App Store ID）的
+  其他答案頁，每 App 每語最多 3 頁（路徑排序取前三），插同一張 `hero-task-resources-v1` 卡，仍遵守
+  h1→原 CTA→hero block→h2 與真實元素邊界；沒有合格邊界的頁面直接略過，不改寫。
+  manifest 的 `secondary_integrations` 逐 `{locale}/{app}` 列出，`integrations` 一併包含。
+- **HowTo + Dataset JSON-LD**：每份工具頁在 `WebApplication` 之後另有一段 JSON-LD：`HowTo`（步驟＝該語
+  formula／limits 文案、`isAccessibleForFree`）與 `Dataset`（公共範例 CSV 的 `distribution`、CC BY 4.0、
+  `includedInDataCatalog` 指向 `/data/`）。**永遠不得輸出 `aggregateRating`／`review`**。
+- **分發線**：`gen_llms.py` 的 llms.txt／llms-full.txt 與 `gen_data_hub.py` 的 `/data/` 索引只列 en-US 完整工具頁
+  （不列 CSV）；`social/gen_standard_site.py` 把 en-US 工具頁當作額外 Standard.site 文件（`editorial_kind: tool`，
+  不佔每 App 的 deep 文件名額）；IndexNow 由 `pages.yml` 成功（含 `verify_hero`）後的 `indexnow-daily`
+  透過 `sitemap_index.xml` 中的 `sitemap_hero_tasks.xml` 提交。
+
 ## 本機生成與驗證
 
 在 GrowthEngine 根目錄執行；不會 commit、push、部署、更新 live cache 或發送 IndexNow：

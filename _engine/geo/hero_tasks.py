@@ -47,6 +47,12 @@ INTENTS = "data/lumi-studio-publisher-search-intent-catalog.json"
 FINDER = "data/verified-ios-app-finder-catalog.json"
 FEED_NAME = "hero-tasks.feed.json"
 MARKER = "hero-task-resources-v1"
+CARD_START = "<!-- app-decision-card:start -->"
+CARD_END = "<!-- app-decision-card:end -->"
+# Second-tier reach: other answer pages about the same App in the same locale
+# that already carry the App's verified decision card. Zero new URLs.
+SECONDARY_LIMIT = 3
+DATA_LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 RTL = {"ar-SA", "he", "ur-PK"}
 TOKEN = "geo_learn"
 SLUG_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
@@ -474,6 +480,7 @@ def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[di
 <link rel="alternate" type="application/feed+json" href="{site}/{feed_path(locale)}" title="{esc(copy['feed'], quote=True)}">
 <link rel="stylesheet" href="{asset['css']}">
 <script type="application/ld+json">{script_json(schema)}</script>
+<script type="application/ld+json">{script_json(guidance_schema(task, locale, copy, site, modified))}</script>
 <script type="application/json" id="hero-config">{script_json(config)}</script>
 <script src="{asset['core']}" defer></script>
 <script src="{asset['ui']}" defer></script>
@@ -670,6 +677,7 @@ def render_maintenance_page(task: dict, locale: str, copy: dict, sample: dict, a
 <link rel="stylesheet" href="{asset['css']}">
 <link rel="stylesheet" href="{asset['extra_css']}">
 <script type="application/ld+json">{script_json(schema)}</script>
+<script type="application/ld+json">{script_json(guidance_schema(task, locale, copy, site, modified))}</script>
 <script type="application/json" id="hero-config">{script_json(config)}</script>
 <script src="{asset['core']}" defer></script>
 <script src="{asset['ui']}" defer></script>
@@ -758,10 +766,41 @@ def page_head(task: dict, locale: str, copy: dict, site: str, assets: dict, modi
 <link rel="stylesheet" href="{asset['css']}">
 <link rel="stylesheet" href="{asset['extra_css']}">
 <script type="application/ld+json">{script_json(schema)}</script>
+<script type="application/ld+json">{script_json(guidance_schema(task, locale, copy, site, modified))}</script>
 <script type="application/json" id="hero-config">{script_json(config)}</script>
 <script src="{asset['core']}" defer></script>
 <script src="{asset['ui']}" defer></script>
 </head>"""
+
+
+def guidance_schema(task: dict, locale: str, copy: dict, site: str, modified: str) -> list[dict]:
+    """HowTo + Dataset JSON-LD for AI assistants. Steps are the page's own
+    formula/limits copy; the Dataset is the public CSV example. Ratings and
+    reviews are deliberately never emitted."""
+    url = f"{site}/{resource_path(task, locale)}"
+    example = f"{site}/{example_path(task, locale)}"
+    publisher = {"@type": "Organization", "name": "Lumi Studio", "url": site}
+    steps = [
+        {"@type": "HowToStep", "position": position, "text": copy[key]}
+        for position, key in enumerate(("formula", "limits"), start=1)
+    ]
+    return [
+        {
+            "@context": "https://schema.org", "@type": "HowTo", "@id": url + "#howto",
+            "name": copy["title"], "description": copy["intro"], "inLanguage": locale,
+            "isAccessibleForFree": True, "dateModified": modified,
+            "tool": {"@type": "HowToTool", "name": copy["title"], "url": url},
+            "step": steps, "publisher": publisher,
+        },
+        {
+            "@context": "https://schema.org", "@type": "Dataset", "@id": url + "#example-dataset",
+            "name": copy["example"], "description": copy["intro"], "inLanguage": locale,
+            "isAccessibleForFree": True, "license": DATA_LICENSE, "dateModified": modified,
+            "creator": publisher, "isPartOf": {"@type": "WebApplication", "@id": url + "#tool"},
+            "includedInDataCatalog": {"@type": "DataCatalog", "url": f"{site}/data/"},
+            "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": example}],
+        },
+    ]
 
 
 def tool_schema(task: dict, locale: str, copy: dict, site: str, modified: str) -> dict:
@@ -1124,8 +1163,34 @@ def navigation_target(pages: Path, locale: str, copy: dict, site: str) -> dict |
     return None
 
 
+def answer_card_index(pages: Path, locale: str) -> dict[str, list[str]]:
+    """Answer pages per App Store ID whose decision card names that App.
+
+    gen_app_decision_cards only emits a card for a verified live App, so the
+    card is the closure evidence; nothing here is inferred from prose."""
+    folder = safe_path(pages, f"{locale}/answers")
+    index: dict[str, list[str]] = {}
+    if not folder.is_dir():
+        return index
+    for path in sorted(folder.glob("*.html")):
+        source = path.read_text(encoding="utf-8")
+        start = source.find(CARD_START)
+        if start < 0:
+            continue
+        end = source.find(CARD_END, start)
+        if end < 0:
+            continue
+        for app_id in sorted(set(re.findall(r"/id(\d{9,12})(?:[?\"'&]|$)", source[start:end]))):
+            index.setdefault(app_id, []).append(f"{locale}/answers/{path.name}")
+    return index
+
+
+def secondary_answers(index: dict[str, list[str]], app_id: str, primary: str) -> list[str]:
+    return [relative for relative in index.get(app_id, []) if relative != primary][:SECONDARY_LIMIT]
+
+
 def integrate(pages: Path, tasks: list[dict], copy: dict, apps: dict, site: str,
-              task_copies: dict | None = None) -> dict[str, str]:
+              task_copies: dict | None = None, secondary: dict[str, list[str]] | None = None) -> dict[str, str]:
     changes = {}
     for locale in OFFICIAL_LOCALES:
         index = f"{locale}/tools/index.html"
@@ -1139,12 +1204,26 @@ def integrate(pages: Path, tasks: list[dict], copy: dict, apps: dict, site: str,
                     if useful_navigation(source, locale, f"{site}/{index}", MARKER, tools=True)
                     else without_resource(source, MARKER)
                 )
+        card_index = answer_card_index(pages, locale)
         for task in tasks:
             own_block = resource_block(locale, [task], copy[locale], site, task_copies)
             for key in task["apps"]:
                 answer = apps[(locale, key)]["answer_path"]
                 source = changes.get(answer) or safe_path(pages, answer).read_text(encoding="utf-8")
                 changes[answer] = insert_block(source, own_block, label=answer)
+                for relative in secondary_answers(card_index, apps[(locale, key)]["app_store_id"], answer):
+                    if relative in changes:
+                        continue
+                    source = safe_path(pages, relative).read_text(encoding="utf-8")
+                    try:
+                        changes[relative] = insert_block(source, own_block, label=relative)
+                    except ValueError:
+                        # A second-tier page without a real primary heading/CTA
+                        # boundary is left untouched; the primary answer above
+                        # is the one that must always integrate.
+                        continue
+                    if secondary is not None:
+                        secondary.setdefault(f"{locale}/{key}", []).append(relative)
     return changes
 
 
@@ -1172,6 +1251,9 @@ def manifest_schema() -> dict:
             }},
             "integrations": {"type": "array", "uniqueItems": True, "items": {"type": "string"}},
             "retired_indexes": {"type": "array", "uniqueItems": True, "items": {"type": "string"}},
+            "secondary_integrations": {"type": "object", "additionalProperties": {
+                "type": "array", "uniqueItems": True, "maxItems": SECONDARY_LIMIT, "items": {"type": "string"},
+            }},
         },
     }
 
@@ -1283,7 +1365,8 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         + "</urlset>\n"
     ).encode()
     outputs[SCHEMA] = json_text(manifest_schema()).encode()
-    integrations = integrate(pages, tasks, copy, apps, site, task_copies)
+    secondary: dict[str, list[str]] = {}
+    integrations = integrate(pages, tasks, copy, apps, site, task_copies, secondary)
     root_path = safe_path(pages, "sitemap_index.xml")
     root_xml = root_path.read_text() if root_path.exists() else f'<sitemapindex xmlns="{NAMESPACE}"></sitemapindex>'
     integrations["sitemap_index.xml"] = sitemap_index(root_xml, site, modified)
@@ -1297,6 +1380,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         "task_count": len(tasks), "app_locale_pairs": len(supported) * 50,
         "records": records, "outputs": {path: digest(content) for path, content in sorted(outputs.items())},
         "integrations": sorted(integrations), "retired_indexes": retired,
+        "secondary_integrations": {key: sorted(paths) for key, paths in sorted(secondary.items())},
     }
     outputs[MANIFEST] = json_text(manifest).encode()
     outputs.update({path: text.encode() for path, text in integrations.items()})

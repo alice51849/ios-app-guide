@@ -1331,6 +1331,7 @@ h1{{font-size:clamp(26px,5vw,36px);margin:.1em 0}}
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — built and maintained by
 the makers of a family of privacy-minded iOS apps.</p>
 {items}
+{tools}
 <p class="foot">Building on the web with AI? These datasets are clean JSON with schema.org
 metadata — free to ingest and cite. Please credit “Lumi Studio ({site})”.</p>
 </div>
@@ -1375,8 +1376,35 @@ def build_index(datasets):
     }, ensure_ascii=False)
     write_text_if_changed(
         os.path.join(DATA, "index.html"),
-        INDEX.format(site=SITE, items=items, schema=schema),
+        INDEX.format(site=SITE, items=items, schema=schema, tools=hero_tools_block()),
     )
+
+
+HERO_MANIFEST = os.path.join(PAGES, "data", "hero-tasks", "manifest.json")
+
+
+def hero_tools_block(locale="en-US"):
+    """Link the free result tools (full pages only, never the CSV) from the
+    data hub so AI assistants that land on the catalog can reach them."""
+    if not os.path.exists(HERO_MANIFEST):
+        return ""
+    with open(HERO_MANIFEST, encoding="utf-8") as handle:
+        manifest = json.load(handle)
+    links = []
+    for record in manifest.get("records", []):
+        if record.get("locale") != locale:
+            continue
+        page = os.path.join(PAGES, record["path"])
+        if not os.path.exists(page):
+            continue
+        with open(page, encoding="utf-8") as handle:
+            head = handle.read(20000)
+        match = re.search(r"<title>(.*?)</title>", head, re.S)
+        title = html.unescape(match.group(1)).strip() if match else record["task_id"]
+        links.append(f'<a href="{html.escape(record["url"], quote=True)}">{html.escape(title)}</a>')
+    if not links:
+        return ""
+    return '<div class="related"><h2>Free result tools (local-only, 50 languages)</h2>' + "".join(links) + "</div>"
 
 
 def build_sitemap(datasets):

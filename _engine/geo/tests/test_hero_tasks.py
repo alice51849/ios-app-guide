@@ -22,6 +22,7 @@ import hero_tasks as hero  # noqa: E402
 import hero_tasks_readback as readback  # noqa: E402
 import sync_standard_site as sync  # noqa: E402
 from hero_task_html import Document, without_resource  # noqa: E402
+import indexnow_submit  # noqa: E402
 
 
 class HeroTaskTests(unittest.TestCase):
@@ -1076,3 +1077,123 @@ class HeroTaskTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HeroReachTests(unittest.TestCase):
+    """Second-tier reach, AI-citation JSON-LD and distribution-line wiring.
+
+    Reuses the HeroTaskTests fixture builders without re-running that suite."""
+
+    setUp = HeroTaskTests.setUp
+    tearDown = HeroTaskTests.tearDown
+    write = HeroTaskTests.write
+    navigation_page = HeroTaskTests.navigation_page
+
+    def secondary_page(self, relative: str, app_id: str, *, card: bool = True, heading: bool = True) -> str:
+        cta = f'<a class="cta" href="https://apps.apple.com/app/id{app_id}">Install</a>'
+        intro = (
+            f'<h1 class="p-name">Secondary {relative}</h1><p class="p-summary">Second-tier summary.</p>'
+            if heading else "<p>No heading here.</p>"
+        )
+        block = (
+            f"{hero.CARD_START}<aside class=\"iag-decision-card\"><div>{cta}</div></aside>{hero.CARD_END}"
+            if card else f"<div>{cta}</div>"
+        )
+        source = (
+            '<!doctype html><html><head><meta name="description" content="Secondary answer"></head>'
+            '<body><div class="h-entry"><div class="e-content"><main>' + intro + block +
+            f'<section><h2>More</h2><p>Original text for {relative}.</p></section></main></div></div></body></html>'
+        )
+        path = self.pages / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(source, encoding="utf-8")
+        return source
+
+    def test_second_tier_answers_get_the_card_only_with_a_verified_decision_card(self):
+        served = [(key, app_id) for task in self.tasks for key, app_id in task["apps"].items()]
+        key, app_id = served[0]
+        other_key, other_id = served[-1]
+        originals = {}
+        for locale in ("en-US", "ja"):
+            for index in range(5):
+                relative = f"{locale}/answers/{key}-extra-{index}.html"
+                originals[relative] = self.secondary_page(relative, app_id)
+            originals[f"{locale}/answers/{key}-no-card.html"] = self.secondary_page(
+                f"{locale}/answers/{key}-no-card.html", app_id, card=False
+            )
+            originals[f"{locale}/answers/{key}-foreign-card.html"] = self.secondary_page(
+                f"{locale}/answers/{key}-foreign-card.html", other_id
+            )
+            originals[f"{locale}/answers/{key}-headless.html"] = self.secondary_page(
+                f"{locale}/answers/{key}-headless.html", app_id, heading=False
+            )
+        hero.build(self.pages, **self.options)
+        manifest = json.loads((self.pages / hero.MANIFEST).read_text())
+        secondary = manifest["secondary_integrations"]
+        for locale in ("en-US", "ja"):
+            chosen = secondary[f"{locale}/{key}"]
+            self.assertEqual(
+                [f"{locale}/answers/{key}-extra-{index}.html" for index in range(hero.SECONDARY_LIMIT)], chosen
+            )
+            for relative in chosen:
+                updated = (self.pages / relative).read_text()
+                marker = updated.index(f"<!-- {hero.MARKER}:start -->")
+                self.assertEqual(originals[relative], without_resource(updated, hero.MARKER))
+                self.assertLess(updated.index("<h1"), marker)
+                self.assertLess(updated.index("</a>", updated.index('class="cta"')), marker)
+                self.assertLess(updated.index(hero.CARD_END), marker)
+                self.assertIn(relative, manifest["integrations"])
+                own = updated[marker:updated.index(f"<!-- {hero.MARKER}:end -->", marker) + len(f"<!-- {hero.MARKER}:end -->")]
+                self.assertEqual(updated, hero.insert_block(updated, own, label=relative))
+            for untouched in (f"{key}-extra-3", f"{key}-extra-4", f"{key}-no-card", f"{key}-headless"):
+                relative = f"{locale}/answers/{untouched}.html"
+                self.assertEqual(originals[relative], (self.pages / relative).read_text())
+                self.assertNotIn(relative, manifest["integrations"])
+            foreign = f"{locale}/answers/{key}-foreign-card.html"
+            self.assertNotIn(foreign, secondary.get(f"{locale}/{key}", []))
+            self.assertIn(foreign, secondary.get(f"{locale}/{other_key}", []))
+        # The primary answer for every served App/locale still integrates exactly once.
+        primary = {binding["answer_path"] for binding in hero.catalogs(self.pages, self.tasks, self.site, "118326163")[1].values()}
+        self.assertTrue(primary <= set(manifest["integrations"]))
+        hero.build(self.pages, **self.options)
+        rebuilt = json.loads((self.pages / hero.MANIFEST).read_text())
+        self.assertEqual(manifest["secondary_integrations"], rebuilt["secondary_integrations"])
+        self.assertEqual(manifest["content_digest"], rebuilt["content_digest"])
+
+    def test_tool_pages_carry_howto_and_dataset_json_ld_without_ratings(self):
+        hero.build(self.pages, **self.options)
+        manifest = json.loads((self.pages / hero.MANIFEST).read_text())
+        seen = 0
+        for record in manifest["records"]:
+            page = (self.pages / record["path"]).read_text()
+            scripts = re.findall(r'<script type="application/ld\+json">(.*?)</script>', page, re.S)
+            self.assertEqual(2, len(scripts), record["path"])
+            primary = json.loads(scripts[0])
+            guidance = json.loads(scripts[1])
+            self.assertEqual("WebApplication", primary["@type"])
+            self.assertEqual(["HowTo", "Dataset"], [item["@type"] for item in guidance])
+            howto, dataset = guidance
+            task = hero.task_for_app(self.tasks, record["apps"][0]["key"])
+            copy = hero.task_copy(self.copy, self.task_copies, task, record["locale"])
+            self.assertEqual([copy["formula"], copy["limits"]], [step["text"] for step in howto["step"]])
+            self.assertEqual(record["url"] + "#howto", howto["@id"])
+            self.assertTrue(howto["isAccessibleForFree"])
+            self.assertEqual(record["example_url"], dataset["distribution"][0]["contentUrl"])
+            self.assertEqual("text/csv", dataset["distribution"][0]["encodingFormat"])
+            self.assertEqual(hero.DATA_LICENSE, dataset["license"])
+            self.assertEqual(record["url"] + "#tool", dataset["isPartOf"]["@id"])
+            self.assertEqual(f"{self.site}/data/", dataset["includedInDataCatalog"]["url"])
+            self.assertEqual(manifest["date_modified"], dataset["dateModified"])
+            for forbidden in ("aggregateRating", "ratingValue", '"review"', "reviewCount"):
+                self.assertNotIn(forbidden, page, record["path"])
+            seen += 1
+        self.assertEqual(50 * len(self.tasks), seen)
+
+    def test_hero_urls_reach_indexnow_through_the_sitemap_index(self):
+        hero.build(self.pages, **self.options)
+        manifest = json.loads((self.pages / hero.MANIFEST).read_text())
+        listed = set(indexnow_submit.read_urls(self.pages, self.site))
+        expected = {record["url"] for record in manifest["records"]}
+        self.assertTrue(expected <= listed, sorted(expected - listed)[:3])
+        index = (self.pages / "sitemap_index.xml").read_text()
+        self.assertIn(f"{self.site}/{hero.SITEMAP}", index)

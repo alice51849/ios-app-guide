@@ -22,7 +22,7 @@ HoursTag Lite - Pozrite sa na skutočnú cenu vecí Každý nákup stojí hodiny
 - Apple Watch
 - App Store · Zadarmo
 
-[Stiahnuť HoursTag Lite: Cena v hodinách v App Store](https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť HoursTag Lite: Cena v hodinách v App Store](https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/hourstaglite.html)
 

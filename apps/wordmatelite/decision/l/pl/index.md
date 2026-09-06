@@ -18,7 +18,7 @@ Chcesz wrócić do nauki języka, ale wieczór znowu mija i nie przybyło ani je
 - Offline
 - App Store · Bezpłatnie
 
-[Pobierz Wordmate Lite: nauka słówek z App Store](https://apps.apple.com/pl/app/id6797601720?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Wordmate Lite: nauka słówek z App Store](https://apps.apple.com/pl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/wordmatelite.html)
 

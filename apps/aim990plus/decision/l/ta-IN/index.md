@@ -17,7 +17,7 @@ Aim990 Plus என்பது பெரியவர்கள் தங்கள
 - பணம் செலுத்தி பதிவிறக்கவும்
 - App Store · ₹ 599
 
-[App Store-இல் Aim990 Plus: ஆங்கிலத் தேர்வு-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் Aim990 Plus: ஆங்கிலத் தேர்வு-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/aim990plus.html)
 

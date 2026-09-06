@@ -18,7 +18,7 @@ Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje b
 - Bez oglasa
 - App Store · 9,99 €
 
-[Preuzmite Lumi Math Pro na App Storeu →](https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Lumi Math Pro na App Storeu →](https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

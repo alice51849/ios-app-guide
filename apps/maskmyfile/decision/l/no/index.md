@@ -18,7 +18,7 @@ Del trygt uten å miste den nyttige sammenhengen. Mask My File finner personlige
 - Privat / på enheten
 - App Store · Gratis
 
-[Last ned Mask My File: Fjern dine data fra App Store](https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned Mask My File: Fjern dine data fra App Store](https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/maskmyfile.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · 無料
 
-[App StoreでLumi Trip Planetを入手 →](https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでLumi Trip Planetを入手 →](https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

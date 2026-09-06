@@ -3,13 +3,39 @@
 第一波是 **多筆購物價格 → 工作時間比較表 → CSV**，不是工時打卡或薪資工具。
 HoursTag 與 HoursTag Lite 共用同一任務 canonical。依據是既有產品契約、
 `hourstag_work_hours_tool.py` 及 publisher intent catalog；**不是已測得的搜尋量**。
+
+第二波是 **多項保養「上次完成日＋間隔」→ 下次到期／剩餘天數／逾期 排程表 → CSV**
+（`maintenance-next-due`，Mochi DoneStamp 6790800323），不是提醒、推播、行事曆同步或每日待辦。
+月單位保留同一日、該月沒有則取月底（含閏年），與 App 契約一致；狀態為 overdue／due_soon（≤7 天）／ok，
+表格依剩餘天數排序。任務層文案放在 `hero_tasks_i18n.json` 的 `tasks.maintenance-next-due`，
+只覆蓋任務自己的 key，共用 key（remove／download／privacy…）沿用第一波，第一波輸出 bytes 不變。
+每個 adapter 有自己的純 JS 核心與瀏覽器 UI（`hero-task-maintenance-core.js`／`-ui.js`），
+共用 `hero-task.css` 並可加一份專屬樣式；資產以內容 digest 命名，第一波資產路徑不受第二波影響。
 未配置 adapter 的 App 留在 manifest 的 `unserved_app_keys`，不產出替代文案或薄頁。
+
+第二波另有兩個任務，同樣各自帶 core／UI 資產與 `tasks.<id>` 任務層文案，前兩個任務的輸出 bytes 不變：
+
+- **專案收支損益表**（`project-profit`，MoneyTag 6801956402）：多筆收入／支出 → 收入合計、支出合計、
+  利潤、毛利率、每小時淨收入 → CSV。金額轉整數最小單位相加；沒有收入時毛利率、沒有工時時每小時淨收入
+  一律為空而不是 0；工時只接受 0.25–2000 的四分之一小時步進。同幣別、不換匯、不做稅務或會計建議，
+  不綁 G+Money，也不是發票、薪資或記帳工具。
+- **電池容量／循環磨耗區間表**（`battery-wear`，BattAI 6802423998）：使用者自己輸入的最大容量、
+  選填循環次數與購入月份 → 每月磨耗 %、距 80% 月數、每月循環數 → CSV。依 BattAI 契約，
+  每個數值都標「你提供／推估」，推估值只以觀測平均 ±25% 的區間呈現（低界取高磨耗率、高界取低磨耗率），
+  永不輸出單一預測數字或健康分數；工具不量測、不讀取任何手機資料，也不給診斷或更換建議。
 
 ## 產出與隱私
 
 - `/{locale}/tools/purchase-worktime-sheet.html`：官方 50 locale 的完整工具、
   預先算好的範例表格、逐步公式、範圍限制與選用 App。
+- `/{locale}/tools/maintenance-next-due-sheet.html` 與 `/{locale}/tools/results/maintenance-next-due-sheet.csv`：
+  第二波保養到期排程表；日期一律 ISO `YYYY-MM-DD`，間隔 1–3650（日／週／月），最多 30 項。
 - `/{locale}/tools/results/purchase-worktime-sheet.csv`：不含個資的公共範例。
+- `/{locale}/tools/project-profit-sheet.html` 與 `/{locale}/tools/results/project-profit-sheet.csv`：
+  專案損益表；金額 0–100,000,000、至多兩位小數，收入與支出各至多 20 列。
+- `/{locale}/tools/battery-wear-range-sheet.html` 與 `/{locale}/tools/results/battery-wear-range-sheet.csv`：
+  電池磨耗區間表；容量 60–100 整數 %、循環 0–3000、購入月份 `YYYY-MM`（2007–2099、機齡 1–240 個月），至多 10 台，
+  CSV 每列附「你提供／推估」來源欄。
 - `/{locale}/tools/hero-tasks.feed.json`：50 份原生語系 JSON Feed，含可下載範例、
   穩定 item ID、語意更新日期及完整 App Store 歸因連結。
 - `data/hero-tasks/manifest.json`、schema、`sitemap_hero_tasks.xml`：
@@ -73,7 +99,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest geo.tests.test_hero_tasks
 
 1. 先查證下一款 App 的主承諾及真實可下載任務，不能從行銷標籤猜能力。
 2. 為新 adapter 增加純 JS 核心、對應 Python renderer、完整 50 語文案及 golden cases。
-   目前 renderer 僅接受 `purchase-worktime-v1` 的資料契約。
+   目前 renderer 接受 `purchase-worktime-v1`、`maintenance-next-due-v1`、`project-profit-v1`
+   與 `battery-wear-range-v1` 四種資料契約；
+   新 adapter 在 `ADAPTER_ASSETS` 登錄自己的 core／ui（可選 extra_css），任務層 key 登錄於 `TASK_KEYS`。
 3. 在 `hero_tasks.json` 明確綁定 App key、App Store ID、來源 query 與公共範例。
    等價任務合併至既有 canonical；不接受同 adapter 複製多個 slug。
 4. 通過錯誤／邊界／下載／注入防護／50 語／無 JS／冪等／pipeline 順序測試。

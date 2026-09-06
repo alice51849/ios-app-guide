@@ -17,7 +17,7 @@ Suas capturas, organizadas Encontre, resolva e limpe cada captura. As 50 captura
 - Grátis para começar · desbloqueio único
 - App Store · Grátis
 
-[Baixe ShotInbox AI: Sort Screenshots na App Store](https://apps.apple.com/br/app/id6802166527?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe ShotInbox AI: Sort Screenshots na App Store](https://apps.apple.com/br/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/shotinbox.html)
 

@@ -22,7 +22,7 @@ Navetiștii ocupați au nevoie de exersare de vocabular care să se potrivească
 - Apple Watch
 - App Store · 49,99 lei
 
-[Descarcă Wordmate: Learn 44 Languages din App Store →](https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Wordmate: Learn 44 Languages din App Store →](https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

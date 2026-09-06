@@ -24,7 +24,7 @@ Thu và chi Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết
 - Apple Watch
 - App Store · Miễn phí
 
-[Tải MoneyTag: Thu và chi trên App Store](https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải MoneyTag: Thu và chi trên App Store](https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/moneytag.html)
 

@@ -17,7 +17,7 @@ La partie 5 semble courte, mais ces questions à phrase incomplète peuvent pren
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenez Aim990 sur l’App Store →](https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenez Aim990 sur l’App Store →](https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

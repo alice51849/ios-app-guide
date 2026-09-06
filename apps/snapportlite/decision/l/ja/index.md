@@ -18,7 +18,7 @@ Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準�
 - オフライン
 - App Store · 無料
 
-[App Store で Snapport Lite：自宅で証明写真 を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で Snapport Lite：自宅で証明写真 を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/snapportlite.html)
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a 50-locale, local-only finder for every verified live app."""
+"""Generate full-roster evidence and a 50-locale, verified-only local finder."""
 
 from __future__ import annotations
 
@@ -16,7 +16,12 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 import answer_portfolio  # noqa: E402
-from app_store_storefronts import campaign_app_store_url  # noqa: E402
+import appstore_live  # noqa: E402
+import aso_evidence_contract as contract  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    campaign_app_store_url,
+    required_campaign_app_store_url,
+)
 from appstore_live import (  # noqa: E402
     LOOKUP_COUNTRIES,
     STATE_FILE,
@@ -513,17 +518,16 @@ def explicit_capabilities(app: dict[str, object]) -> dict[str, bool]:
 
 
 def _campaign_url(key: str) -> str:
-    campaign = f"iag_finder_{key}"
-    if len(campaign) > 30 or not re.fullmatch(r"[A-Za-z0-9_]+", campaign):
-        raise ValueError(f"Invalid finder campaign token: {campaign}")
-    return appstore_url(key, campaign)
+    return campaign_app_store_url(appstore_url(key), finder_campaign_token("en"))
 
 
 def finder_campaign_token(locale: str) -> str:
-    token = f"iag_find_{locale.replace('-', '_').lower()}"
-    if len(token) > 30 or not re.fullmatch(r"[a-z0-9_]+", token):
-        raise ValueError(f"Invalid localized finder campaign token: {token}")
-    return token
+    from gen_store_attribution import campaign_token as surface_campaign_token
+    from official_locales import OFFICIAL_LOCALES
+
+    if locale not in ("en", *OFFICIAL_LOCALES):
+        raise ValueError(f"Invalid localized finder campaign locale: {locale}")
+    return surface_campaign_token(f"{locale}/tools/ios-app-finder.html")
 
 
 def localized_app_store_url(record: dict[str, object], locale: str) -> str:
@@ -550,6 +554,8 @@ def localized_summary(key: str, locale: str, pages: Path) -> str:
 def catalog_records(
     live_keys: set[str] | list[str],
     pages: Path = PAGES,
+    *,
+    allow_unknown_summaries: bool = False,
 ) -> list[dict[str, object]]:
     live = set(live_keys)
     if not live:
@@ -577,6 +583,14 @@ def catalog_records(
             if str(value).strip()
         ]
         category = str(app.get("category", "other"))
+        summaries = {}
+        for label, locale in (("en", "en-US"), ("zh-Hant", "zh-Hant")):
+            try:
+                summaries[label] = localized_summary(key, locale, pages)
+            except ValueError:
+                if not allow_unknown_summaries:
+                    raise
+                summaries[label] = None
         records.append(
             {
                 "key": key,
@@ -592,10 +606,7 @@ def catalog_records(
                         UI["zh-Hant"]["category_labels"]["other"],
                     ),
                 },
-                "summaries": {
-                    "en": localized_summary(key, "en-US", pages),
-                    "zh-Hant": localized_summary(key, "zh-Hant", pages),
-                },
+                "summaries": summaries,
                 "purchase_model": model,
                 "purchase_labels": {
                     "en": UI["en"]["purchase_labels"][model],
@@ -722,31 +733,119 @@ def localized_intent(
     return intent
 
 
-def dataset_payload(records: list[dict[str, object]]) -> dict[str, object]:
+def verify_availability(*, roster=None, lookup=None, clock=None) -> dict:
+    """GET-only observations; a cached live-key set is not a fresh receipt."""
+    roster = contract.live_roster() if roster is None else roster
+    lookup = lookup or appstore_live._lookup_country
+    clock = clock or contract.utc_now
+    wanted = {row["track_id"] for row in roster.values()}
+    live_ids = set()
+    verified_by_id = {}
+    observations = []
+    for country in LOOKUP_COUNTRIES:
+        try:
+            observed_ids = {str(value) for value in lookup(wanted, country)}
+        except (OSError, RuntimeError, TypeError, ValueError):
+            continue
+        live_ids.update(observed_ids & wanted)
+        observed_at = clock()
+        observations.append(observed_at)
+        for app_id in observed_ids & wanted:
+            verified_by_id.setdefault(app_id, observed_at.isoformat())
     return {
+        "source": "Apple iTunes Lookup API",
+        "checked_at": clock().isoformat(),
+        "verified_at": min(observations).isoformat() if observations else None,
+        "live_ids": sorted(live_ids),
+        "verified_at_by_id": verified_by_id,
+    }
+
+
+def dataset_payload(
+    records: list[dict[str, object]], *, availability=None, roster=None, now=None, pages=PAGES,
+) -> dict[str, object]:
+    roster = contract.live_roster() if roster is None else roster
+    now = now or contract.utc_now()
+    indexed = {}
+    for record in records:
+        key = record.get("key")
+        if key not in roster or key in indexed:
+            raise contract.ContractError("finder_producer_roster_invalid")
+        indexed[key] = dict(record)
+    missing = set(roster) - set(indexed)
+    if missing:
+        indexed.update({row["key"]: row for row in catalog_records(missing, pages, allow_unknown_summaries=True)})
+    availability = availability or {
+        "source": "Apple iTunes Lookup API", "checked_at": now.isoformat(),
+        "verified_at": None, "live_ids": [], "verified_at_by_id": {},
+    }
+    if availability.get("source") != "Apple iTunes Lookup API":
+        raise contract.ContractError("finder_verification_source_invalid")
+    generated = contract.timestamp(availability.get("checked_at"))
+    verified = availability.get("verified_at")
+    verified_time = contract.timestamp(verified) if verified is not None else None
+    if generated > now or verified_time is not None and verified_time > generated:
+        raise contract.ContractError("future_availability_evidence")
+    live_ids = set(availability.get("live_ids") or [])
+    verified_by_id = availability.get("verified_at_by_id") or {}
+    output = []
+    for key, expected in roster.items():
+        record = indexed[key]
+        identity_matches = record.get("app_store_id") == expected["track_id"]
+        app_verified = verified_by_id.get(expected["track_id"])
+        known = identity_matches and expected["track_id"] in live_ids and verified_time is not None and app_verified is not None
+        if known and contract.timestamp(app_verified) > generated:
+            raise contract.ContractError("future_app_availability")
+        if not identity_matches:
+            record = catalog_records({key}, pages, allow_unknown_summaries=True)[0]
+        output.append({
+            **record, "app_store_id": expected["track_id"],
+            "app_store_url": required_campaign_app_store_url(
+                str(record["canonical_app_store_url"]),
+                finder_campaign_token("en"),
+                expected_app_id=str(expected["track_id"]),
+            ),
+            "verified_live": True if known else None,
+            "verified_at": app_verified if known else None,
+            "metadata_status": "verified" if all(record["summaries"].values()) else "unknown",
+            "availability_status": "verified" if known else "unknown",
+            "availability_issues": [] if known else [
+                "identity_mismatch" if not identity_matches else "availability_not_observed",
+            ],
+        })
+    output.sort(key=lambda row: (str(row["name"]).casefold(), str(row["key"])))
+    document = {
         "name": CATALOG_NAME,
         "description": FINDER_COPY["en"]["description"],
         "question": answer_portfolio.PORTFOLIO_QUERY,
         "date_modified": CONTENT_DATE,
         "license": LICENSE_URL,
         "publisher_disclosure": (
-            "First-party catalogue published by Lumi Studio, the developer of "
-            "every listed app; not an independent review or third-party ranking."
+            "First-party catalogue of the complete Lumi Studio live-app roster. "
+            "Availability is reported per app; unknown is not verified live. "
+            "Not an independent review or third-party ranking."
         ),
         "ordering": "alphabetical_by_app_name_not_a_ranking",
         "availability_verification": {
             "source": "Apple iTunes Lookup API",
             "markets": [country.upper() for country in LOOKUP_COUNTRIES],
             "retirement_rule": "Retire after three consecutive verified misses",
+            "verified_at": verified,
         },
-        "record_count": len(records),
-        "apps": records,
+        "record_count": len(output),
+        "apps": output,
     }
+    document = contract.seal(
+        document, contract.FINDER_SCHEMA, roster=roster, generated_at=generated,
+        expires_at=(verified_time or generated) + contract.MAX_AGE[contract.FINDER_SCHEMA],
+        sources={"catalog": contract.canonical_digest(output)},
+    )
+    return contract.validate_finder(document, roster=roster, now=now)
 
 
-def dataset_json(records: list[dict[str, object]]) -> str:
+def dataset_json(records: list[dict[str, object]], **kwargs) -> str:
     return json.dumps(
-        dataset_payload(records),
+        dataset_payload(records, **kwargs),
         ensure_ascii=False,
         indent=2,
     ) + "\n"
@@ -757,6 +856,8 @@ def legacy_apps_payload(
     pages: Path,
 ) -> list[dict[str, object]]:
     """Keep the original apps.json contract in sync with the verified catalog."""
+    from gen_store_attribution import campaign_token as surface_campaign_token
+
     output = []
     for record in records:
         key = str(record["key"])
@@ -793,7 +894,10 @@ def legacy_apps_payload(
                 "valueProp": record["summaries"]["en"],
                 "category": record["category_labels"]["en"],
                 "attributes": deduplicated_attributes,
-                "appStoreUrl": record["canonical_app_store_url"],
+                "appStoreUrl": campaign_app_store_url(
+                    str(record["canonical_app_store_url"]),
+                    surface_campaign_token("api/apps.json"),
+                ),
                 "guideUrl": f"{SITE}/en-US/{key}.html",
                 "relatedUrls": related_urls,
             }
@@ -827,7 +931,12 @@ def dataset_schema() -> str:
         "keywords",
         "capabilities",
         "canonical_app_store_url",
+        "app_store_url",
         "verified_live",
+        "verified_at",
+        "availability_status",
+        "availability_issues",
+        "metadata_status",
     ]
     schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -846,8 +955,24 @@ def dataset_schema() -> str:
             "availability_verification",
             "record_count",
             "apps",
+            "schema_version",
+            "generated_at",
+            "expires_at",
+            "source_digests",
+            "document_digest",
         ],
         "properties": {
+            "schema_version": {"const": contract.FINDER_SCHEMA},
+            "generated_at": {"type": "string", "format": "date-time"},
+            "expires_at": {"type": "string", "format": "date-time"},
+            "document_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "source_digests": {
+                "type": "object", "required": ["live_roster", "catalog"], "additionalProperties": False,
+                "properties": {
+                    name: {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+                    for name in ("live_roster", "catalog")
+                },
+            },
             "name": {"type": "string"},
             "description": {"type": "string"},
             "question": {"const": answer_portfolio.PORTFOLIO_QUERY},
@@ -859,9 +984,10 @@ def dataset_schema() -> str:
             },
             "availability_verification": {
                 "type": "object",
-                "required": ["source", "markets", "retirement_rule"],
+                "required": ["source", "markets", "retirement_rule", "verified_at"],
                 "properties": {
                     "source": {"type": "string"},
+                    "verified_at": {"type": ["string", "null"], "format": "date-time"},
                     "markets": {
                         "type": "array",
                         "items": {"type": "string"},
@@ -872,10 +998,11 @@ def dataset_schema() -> str:
                 },
                 "additionalProperties": False,
             },
-            "record_count": {"type": "integer", "minimum": 1},
+            "record_count": {"const": contract.LIVE_APP_COUNT},
             "apps": {
                 "type": "array",
-                "minItems": 1,
+                "minItems": contract.LIVE_APP_COUNT,
+                "maxItems": contract.LIVE_APP_COUNT,
                 "uniqueItems": True,
                 "items": {
                     "type": "object",
@@ -939,7 +1066,15 @@ def dataset_schema() -> str:
                             "type": "string",
                             "format": "uri",
                         },
-                        "verified_live": {"const": True},
+                        "app_store_url": {
+                            "type": "string",
+                            "format": "uri",
+                        },
+                        "verified_live": {"type": ["boolean", "null"]},
+                        "verified_at": {"type": ["string", "null"], "format": "date-time"},
+                        "availability_status": {"enum": ["verified", "unknown"]},
+                        "availability_issues": {"type": "array", "items": {"type": "string"}},
+                        "metadata_status": {"enum": ["verified", "unknown"]},
                     },
                 },
             },
@@ -950,8 +1085,8 @@ def dataset_schema() -> str:
                 "required": ["en", "zh-Hant"],
                 "additionalProperties": False,
                 "properties": {
-                    "en": {"type": "string", "minLength": 1},
-                    "zh-Hant": {"type": "string", "minLength": 1},
+                    "en": {"type": ["string", "null"], "minLength": 1},
+                    "zh-Hant": {"type": ["string", "null"], "minLength": 1},
                 },
             }
         },
@@ -959,10 +1094,18 @@ def dataset_schema() -> str:
     return json.dumps(schema, ensure_ascii=False, indent=2) + "\n"
 
 
+def verified_records(records: list[dict[str, object]]) -> list[dict[str, object]]:
+    return [
+        row for row in records
+        if row.get("verified_live") is True and row.get("metadata_status", "verified") == "verified"
+    ]
+
+
 def structured_data(
     locale: str,
     records: list[dict[str, object]],
 ) -> str:
+    records = verified_records(records)
     copy = FINDER_COPY[locale]
     ui = UI[locale]
     app_items = []
@@ -1129,6 +1272,7 @@ def webmcp_input_schema(
     locale: str,
     records: list[dict[str, object]],
 ) -> dict[str, object]:
+    records = verified_records(records)
     copy = UI[locale]
     categories = sorted({record["category"] for record in records})
     purchase_models = sorted(
@@ -1247,6 +1391,7 @@ def webmcp_records(
     locale: str,
     records: list[dict[str, object]],
 ) -> list[dict[str, object]]:
+    records = verified_records(records)
     return [
         {
             "search": _record_search_text(record, locale),
@@ -1269,6 +1414,7 @@ def app_cards(
     locale: str,
     records: list[dict[str, object]],
 ) -> str:
+    records = verified_records(records)
     copy = UI[locale]
     cards = []
     for record in records:
@@ -1328,6 +1474,7 @@ def render_page(
     locale: str,
     records: list[dict[str, object]],
 ) -> str:
+    records = verified_records(records)
     copy = UI[locale]
     answer = FINDER_COPY[locale]
     other_locale = "zh-Hant" if locale == "en" else "en"
@@ -1722,37 +1869,44 @@ def build(
     pages: Path = PAGES,
     *,
     live_keys: set[str] | list[str],
+    availability: dict | None = None,
+    now=None,
 ) -> list[str]:
     if queries.PORTFOLIO_CURATED.count(
         answer_portfolio.PORTFOLIO_QUERY
     ) != 1:
         raise ValueError("Portfolio finder query must be unique")
-    records = catalog_records(live_keys, pages)
+    roster = contract.live_roster()
+    uncovered = set(live_keys) - set(roster)
+    if uncovered:
+        raise ValueError(f"Live apps are missing from the versioned roster: {sorted(uncovered)}")
+    availability = verify_availability(roster=roster) if availability is None else availability
+    document = dataset_payload(
+        catalog_records(set(roster), pages, allow_unknown_summaries=True),
+        availability=availability, roster=roster, now=now, pages=pages,
+    )
     data_dir = pages / "data"
     write_text_if_changed(
         data_dir / f"{DATA_SLUG}.json",
-        dataset_json(records),
+        json.dumps(document, ensure_ascii=False, indent=2) + "\n",
     )
     write_text_if_changed(
         data_dir / f"{DATA_SLUG}.schema.json",
         dataset_schema(),
     )
+    # Unknown availability stays in the 46-row evidence catalog, not in a
+    # recommendation carrying a "verified live" badge or install action.
+    records = verified_records(document["apps"])
+    if not records:
+        return []
     write_text_if_changed(
         pages / "apps.json",
         legacy_apps_json(records, pages),
     )
-    # The 50-locale buyer-intent catalog is a whole-portfolio artifact: it is
-    # rebuilt from the finder dataset written just above and its schema pins
-    # app_count to len(PERSONAS). So it may only be rebuilt when this run
-    # really did write a record for every persona. A partial live set (an
-    # incremental materialization or a focused test build) must never reach
-    # publisher_intent_catalog.build, or it truncates the catalog to the
-    # handful of apps it happened to carry.
-    #
-    # answer_personas.PERSONAS is contractually the live set — apps still in
-    # review are staged in answer_personas_prelaunch.PRELAUNCH_PERSONAS — so a
-    # live app without a persona is a hard error, never a silent downgrade.
-    live_set = {str(key) for key in live_keys}
+    # Evidence always covers the full roster, but the 50-locale intent
+    # artifact may only be rebuilt when every record is actually verified
+    # and has its required localized metadata.
+    live_set = {str(row["key"]) for row in records}
     expected_live = set(publisher_intent_catalog.PERSONAS)
     uncovered = live_set - expected_live
     if uncovered:
@@ -1807,18 +1961,8 @@ def main() -> None:
             "Live apps are missing from the 50-locale buyer-intent catalog: "
             f"{sorted(uncovered)} — add their personas to answer_personas."
         )
-    # Personas are the live portfolio by contract (see
-    # answer_personas_prelaunch.PRELAUNCH_PERSONAS for apps still in review).
-    # A persona without a live app means either the cached App Store state is
-    # stale or the app was pulled; both need a decision, and continuing would
-    # silently drop the finder and its 48 extra locales to a bilingual stub.
-    stale = expected - set(live)
-    if stale:
-        raise RuntimeError(
-            "Personas exist for apps that are not verified live: "
-            f"{sorted(stale)} — refresh {STATE_FILE} if they are public, or "
-            "stage them in answer_personas_prelaunch.PRELAUNCH_PERSONAS."
-        )
+    # The cached set is only a hint. build performs fresh GETs for the full
+    # versioned roster and retains unobserved apps as explicitly unknown.
     for output in build(live_keys=live):
         print(f"portfolio app finder -> {output}")
     print(f"catalog JSON -> {data_url('.json')}")

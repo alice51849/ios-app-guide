@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · בחינם
 
-[הורידו את MoneyTag: הכנסות והוצאות מה-App Store](https://apps.apple.com/il/app/id6801956402?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את MoneyTag: הכנסות והוצאות מה-App Store](https://apps.apple.com/il/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/moneytag.html)
 

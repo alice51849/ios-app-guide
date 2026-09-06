@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - મફત શરૂઆત
 - App Store · મફત
 
-[App Store પરથી SaveTag: AI બુકમાર્ક મેળવો](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી SaveTag: AI બુકમાર્ક મેળવો](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/savetag.html)
 

@@ -17,7 +17,7 @@ Seyahat içerik üreticileri, her destinasyonu aynı düz filtreye indirgemeden 
 - Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
-[PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054?pt=118326163&ct=iag_data_tr&mt=8)
+[PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

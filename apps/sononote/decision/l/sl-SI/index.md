@@ -18,7 +18,7 @@ Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nad
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite Sono Note iz App Store →](https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Sono Note iz App Store →](https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

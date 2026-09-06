@@ -18,7 +18,7 @@ Eine vollständige Frühmathe-App sollte Zählen, Zahlensinn und erste Rechenope
 - Keine Werbung
 - App Store · 9,99 €
 
-[Lumi Math Pro im App Store holen →](https://apps.apple.com/de/app/id6776958488?pt=118326163&ct=iag_data_de_de&mt=8)
+[Lumi Math Pro im App Store holen →](https://apps.apple.com/de/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

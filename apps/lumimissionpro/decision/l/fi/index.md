@@ -18,7 +18,7 @@ Hampaiden harjaus ja ilta usein epäonnistuvat samassa hetkessä joka ilta: laps
 - Ei mainoksia
 - App Store · 6,99 €
 
-[Hanki Lumi Mission Planet Pro App Storesta →](https://apps.apple.com/fi/app/id6779745474?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Lumi Mission Planet Pro App Storesta →](https://apps.apple.com/fi/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

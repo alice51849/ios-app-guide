@@ -17,7 +17,7 @@ Screenshots pile up because each one was a task — a receipt to file, a link to
 - Free to start · one-time unlock
 - App Store · Free
 
-[Get ShotInbox AI on the App Store →](https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get ShotInbox AI on the App Store →](https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-app-to-sort-screenshots-on-iphone-offline.html)
 

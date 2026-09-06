@@ -18,7 +18,7 @@ Po hovore nechcete surový prepis — chcete zhrnutie, úlohy a návrh pokračov
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Stiahnite si Sono Note v App Store →](https://apps.apple.com/sk/app/id6782139553?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnite si Sono Note v App Store →](https://apps.apple.com/sk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

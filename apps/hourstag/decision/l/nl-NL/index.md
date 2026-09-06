@@ -19,7 +19,7 @@ Wat kost het echt? Niet in euro's, maar in uren van je leven.
 - Privé / op apparaat
 - App Store · € 5,99
 
-[Download HoursTag: Uren om te kopen in de App Store](https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download HoursTag: Uren om te kopen in de App Store](https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/hourstag.html)
 

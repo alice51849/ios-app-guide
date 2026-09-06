@@ -18,7 +18,7 @@ For a preschooler, a bedtime routine works best when it is short, visual and pre
 - No ads
 - App Store · Free
 
-[Get Lumi Mission Planet on the App Store →](https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get Lumi Mission Planet on the App Store →](https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

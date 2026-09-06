@@ -18,7 +18,7 @@ Cinco palabras, un minuto, un paso que se nota. Wordmate Lite agarra ese propós
 - Sin conexión
 - App Store · Gratis
 
-[Consigue Wordmate Lite: aprende idiomas en el App Store](https://apps.apple.com/mx/app/id6797601720?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue Wordmate Lite: aprende idiomas en el App Store](https://apps.apple.com/mx/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/wordmatelite.html)
 

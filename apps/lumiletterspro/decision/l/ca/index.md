@@ -18,7 +18,7 @@ Les famílies que es preparen per a infantil necessiten un camí complet de lect
 - Sense anuncis
 - App Store · 9,99 €
 
-[Descarrega Lumi Letters Pro a l'App Store →](https://apps.apple.com/es/app/id6778491147?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Lumi Letters Pro a l'App Store →](https://apps.apple.com/es/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

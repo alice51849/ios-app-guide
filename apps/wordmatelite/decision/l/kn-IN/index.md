@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಆಫ್‌ಲೈನ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/wordmatelite.html)
 

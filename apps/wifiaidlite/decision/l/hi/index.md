@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - कोई खाता नहीं
 - App Store · मुफ़्त
 
-[App Store पर WiFi Aid Lite पाएँ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर WiFi Aid Lite पाएँ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/wifiaidlite.html)
 

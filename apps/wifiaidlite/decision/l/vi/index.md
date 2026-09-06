@@ -18,7 +18,7 @@ Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đ�
 - Không tài khoản
 - App Store · Miễn phí
 
-[Tải WiFi Aid Lite trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải WiFi Aid Lite trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html)
 

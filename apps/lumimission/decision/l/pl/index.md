@@ -18,7 +18,7 @@ Dla przedszkolaka rutyna przed snem działa najlepiej, gdy jest krótka, wizualn
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Lumi Mission Planet z App Store →](https://apps.apple.com/pl/app/id6779750237?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Lumi Mission Planet z App Store →](https://apps.apple.com/pl/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

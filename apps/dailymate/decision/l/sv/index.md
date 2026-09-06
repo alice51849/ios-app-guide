@@ -18,7 +18,7 @@ Innan en resa är kompletta fraser för verkliga situationer mer användbara än
 - Apple Watch
 - App Store · 149,00 kr
 
-[Skaffa DailyMate på App Store →](https://apps.apple.com/se/app/id6790418321?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa DailyMate på App Store →](https://apps.apple.com/se/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ఉచితంగా ప్రారంభించండి
 - App Store · ఉచితం
 
-[App Storeలో PhotoCream పొందండి →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Storeలో PhotoCream పొందండి →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

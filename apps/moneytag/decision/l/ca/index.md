@@ -24,7 +24,7 @@ Ingressos i despeses Cada projecte porta els seus propis comptes: els ingressos 
 - Apple Watch
 - App Store · Gratis
 
-[Descarrega MoneyTag: Ingressos i despeses a l’App Store](https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega MoneyTag: Ingressos i despeses a l’App Store](https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/moneytag.html)
 

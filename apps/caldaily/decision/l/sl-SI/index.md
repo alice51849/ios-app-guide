@@ -18,7 +18,7 @@ Kalkulator, ki ga boste res uporabljali, ker si zapomni misel za vsako številko
 - Gradnik
 - App Store · Brezplačno
 
-[Prenesite CalDaily: kalkulator in teme iz trgovine App Store](https://apps.apple.com/si/app/id6794178671?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite CalDaily: kalkulator in teme iz trgovine App Store](https://apps.apple.com/si/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/caldaily.html)
 

@@ -22,7 +22,7 @@ Kiireiset työmatkalaiset tarvitsevat sanastoharjoituksia, jotka mahtuvat vapais
 - Apple Watch
 - App Store · 9,99 €
 
-[Hanki Wordmate: Learn 44 Languages App Storesta →](https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Wordmate: Learn 44 Languages App Storesta →](https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

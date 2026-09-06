@@ -17,7 +17,7 @@ Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990
 - Plaćeno preuzimanje
 - App Store · 6,99 €
 
-[Preuzmite Aim990 Plus: Test iz engleskog u App Storeu](https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Aim990 Plus: Test iz engleskog u App Storeu](https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/aim990plus.html)
 

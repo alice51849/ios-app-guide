@@ -17,7 +17,7 @@ Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có th
 - Bắt đầu miễn phí · mở khóa một lần
 - App Store · Miễn phí
 
-[Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

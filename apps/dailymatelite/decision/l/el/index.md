@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή
 - App Store · Δωρεάν
 
-[Αποκτήστε το DailyMate Lite: Μίλα σήμερα από το App Store](https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το DailyMate Lite: Μίλα σήμερα από το App Store](https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/dailymatelite.html)
 

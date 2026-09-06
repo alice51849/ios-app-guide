@@ -17,7 +17,7 @@ Vos captures, enfin rangées Retrouvez, traitez et rangez chaque capture. Les 50
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenir ShotInbox AI: Sort Screenshots sur l'App Store](https://apps.apple.com/fr/app/id6802166527?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir ShotInbox AI: Sort Screenshots sur l'App Store](https://apps.apple.com/fr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/shotinbox.html)
 

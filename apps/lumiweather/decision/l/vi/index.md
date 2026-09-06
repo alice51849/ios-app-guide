@@ -19,7 +19,7 @@ Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt đ�
 - Không theo dõi
 - App Store · Miễn phí
 
-[Tải Lumi Weather trên App Store →](https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Lumi Weather trên App Store →](https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

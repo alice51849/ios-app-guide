@@ -19,7 +19,7 @@ Za spanje je naročnina, ki vas vsak mesec nadleguje, ravno nasprotje sprostitve
 - Brez oglasov
 - App Store · Brezplačno
 
-[Prenesite Sereno iz App Store →](https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Sereno iz App Store →](https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

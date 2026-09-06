@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · مفت
 
-[App Store سے Lumi Math Planet حاصل کریں →](https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Lumi Math Planet حاصل کریں →](https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

@@ -17,7 +17,7 @@ Je screenshots, netjes geordend Vind, verwerk en ruim elk screenshot op. De nieu
 - Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
-[Download ShotInbox AI: Sort Screenshots in de App Store](https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download ShotInbox AI: Sort Screenshots in de App Store](https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/shotinbox.html)
 

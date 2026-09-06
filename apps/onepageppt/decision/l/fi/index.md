@@ -17,7 +17,7 @@ Muuta tekstiseinä YHDEKSI diaksi, jonka joku oikeasti lukee. OnePage PPT lukee 
 - Ilmainen aloitus
 - App Store · Ilmainen
 
-[Lataa OnePage PPT: tekoälyesitys App Storesta](https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa OnePage PPT: tekoälyesitys App Storesta](https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/onepageppt.html)
 

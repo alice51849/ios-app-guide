@@ -17,7 +17,7 @@ Ze zdi textu vznikne JEDEN snímek, který si lidé opravdu přečtou. OnePage P
 - Zdarma na začátek
 - App Store · Zdarma
 
-[Stáhněte si OnePage PPT: AI snímek v App Storu](https://apps.apple.com/cz/app/id6798814385?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si OnePage PPT: AI snímek v App Storu](https://apps.apple.com/cz/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/onepageppt.html)
 

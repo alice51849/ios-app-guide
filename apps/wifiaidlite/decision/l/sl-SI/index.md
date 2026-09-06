@@ -18,7 +18,7 @@ Poišči pravo težavo. Vsako orodje vključuje eno brezplačno popolno uporabo.
 - Brez računa
 - App Store · Brezplačno
 
-[Prenesite WiFi Aid Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793414462?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite WiFi Aid Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/wifiaidlite.html)
 

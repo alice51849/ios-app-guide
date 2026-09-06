@@ -17,7 +17,7 @@ BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: po
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz BattAI: Wynik kondycji baterii z App Store](https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz BattAI: Wynik kondycji baterii z App Store](https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/battai.html)
 

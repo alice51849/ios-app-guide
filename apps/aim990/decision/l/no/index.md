@@ -17,7 +17,7 @@ Del 5 virker kort, men spørsmål med ufullstendige setninger kan ta tid hvis gr
 - Gratis å starte
 - App Store · Gratis
 
-[Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530?pt=118326163&ct=iag_data_no&mt=8)
+[Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

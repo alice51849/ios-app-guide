@@ -23,7 +23,7 @@ G+Money Lite — Conversor de divisas y gastos de viaje El dinero del viaje, fá
 - Apple Watch
 - App Store · Gratis
 
-[Consigue G+Money Lite: Gastos de viaje en el App Store](https://apps.apple.com/mx/app/id6793436548?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue G+Money Lite: Gastos de viaje en el App Store](https://apps.apple.com/mx/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/gmoneylite.html)
 

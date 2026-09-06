@@ -19,7 +19,7 @@ Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxan
 - Sense anuncis
 - App Store · Gratis
 
-[Descarrega Sereno a l’App Store →](https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Sereno a l’App Store →](https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু
 - App Store · বিনামূল্যে
 
-[App Store থেকে SaveTag: AI বুকমার্ক ডাউনলোড করুন](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে SaveTag: AI বুকমার্ক ডাউনলোড করুন](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/savetag.html)
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map the official App Store locales to direct country storefront URLs."""
+"""Shared App Store storefront, identity and campaign-link contracts."""
 
 from __future__ import annotations
 
@@ -143,6 +143,10 @@ APP_STORE_URL_RE = re.compile(
 APP_STORE_PATH_RE = re.compile(
     r"/(?:(?P<country>[a-z]{2})/)?app/id(?P<app_id>\d{9,12})"
 )
+APP_STORE_DEVELOPER_PATH_RE = re.compile(
+    r"/(?:(?P<country>[a-z]{2})/)?developer/"
+    r"(?:[-A-Za-z0-9._~%]+/)?id[0-9]{1,20}"
+)
 
 # Two-letter codes that look like plausible storefronts but are not ones Apple
 # operates. A locale mapped here produces links that 301 to /us, sending readers
@@ -186,13 +190,51 @@ def localized_app_store_url(value: str, locale: str) -> str:
     )
 
 
+def is_clean_app_store_developer_url(value: str) -> bool:
+    """A developer profile is a publisher identity, never an app download CTA."""
+    if not isinstance(value, str):
+        return False
+    parsed = urllib.parse.urlsplit(value)
+    match = APP_STORE_DEVELOPER_PATH_RE.fullmatch(parsed.path)
+    return bool(
+        parsed.scheme == "https" and parsed.netloc == "apps.apple.com"
+        and not parsed.query and not parsed.fragment and match
+        and (
+            match.group("country") is None
+            or match.group("country") in LOCALE_STOREFRONTS.values()
+        )
+    )
+
+
+def storefront_locale_for_url(value: str, locale: str | None) -> str | None:
+    """Supplemental web languages may use global links, never guessed countries."""
+    if locale is None or locale in LOCALE_STOREFRONTS:
+        return locale
+    parsed = urllib.parse.urlsplit(value)
+    match = APP_STORE_PATH_RE.fullmatch(parsed.path)
+    if match is None:
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if match["country"] is not None:
+        raise ValueError(f"Unsupported App Store locale: {locale!r}")
+    return None
+
+
 def validated_app_store_url(
     value: str,
     expected_app_id: str | None = None,
+    *,
+    expected_locale: str | None = None,
+    require_campaign: bool = False,
+    provider_token: str | None = None,
+    availability: dict[str, frozenset[str]] | None = None,
 ) -> str:
     """Validate a clean Apple URL or a complete Apple campaign URL."""
     if not isinstance(value, str):
         raise ValueError("App Store URL must be a string")
+    if re.search(r"[\x00-\x20\x7f]", value.strip()):
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if expected_locale is not None and expected_locale not in LOCALE_STOREFRONTS:
+        raise ValueError(f"Unsupported App Store locale: {expected_locale!r}")
     parsed = urllib.parse.urlsplit(value.strip())
     path = APP_STORE_PATH_RE.fullmatch(parsed.path)
     country = path.group("country") if path else None
@@ -211,6 +253,15 @@ def validated_app_store_url(
         )
     ):
         raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if country is not None:
+        if expected_locale is not None and country != LOCALE_STOREFRONTS[expected_locale]:
+            raise ValueError(
+                f"App Store storefront mismatch for {expected_locale}: {value!r}"
+            )
+        if availability is not None and path.group("app_id") not in availability.get(
+            country, frozenset()
+        ):
+            raise ValueError(f"Unverified App Store storefront: {value!r}")
     try:
         parameters = urllib.parse.parse_qsl(
             parsed.query,
@@ -220,6 +271,8 @@ def validated_app_store_url(
     except ValueError as error:
         raise ValueError(f"Invalid direct App Store URL: {value!r}") from error
     if not parameters:
+        if require_campaign:
+            raise ValueError(f"Missing App Store campaign attribution: {value!r}")
         return urllib.parse.urlunsplit(parsed._replace(query=""))
     if (
         [key for key, _ in parameters] != ["pt", "ct", "mt"]
@@ -228,6 +281,8 @@ def validated_app_store_url(
         or parameters[2][1] != MEDIA_TYPE
     ):
         raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if provider_token is not None and parameters[0][1] != _provider_token(provider_token):
+        raise ValueError(f"App Store provider token mismatch: {value!r}")
     return urllib.parse.urlunsplit(
         parsed._replace(query=urllib.parse.urlencode(parameters))
     )
@@ -244,8 +299,8 @@ def resolve_provider_token() -> str:
 
     Deliberately NOT used by ``_provider_token`` below: the shared helpers stay
     strictly environment-driven so that generator unit tests remain hermetic on
-    a machine that has the real token on disk.  Only
-    ``gen_store_attribution.py`` — the one whole-site stamper — opts in.
+    a machine that has the real token on disk. Publication entry points opt in
+    and export the resolved value before running any generators.
     """
     env = os.environ.get(PROVIDER_TOKEN_ENV)
     if env is not None:
@@ -261,6 +316,8 @@ def resolve_provider_token() -> str:
 
 
 def _provider_token(value: str | None) -> str | None:
+    if value is not None and not isinstance(value, str):
+        raise ValueError("App Store provider token must be a string")
     token = (
         os.environ.get(PROVIDER_TOKEN_ENV, "").strip()
         if value is None
@@ -350,6 +407,40 @@ def campaign_app_store_url(
             ),
             fragment="",
         )
+    )
+
+
+def required_campaign_app_store_url(
+    value: str,
+    campaign_token: str,
+    *,
+    provider_token: str | None = None,
+    expected_locale: str | None = None,
+    expected_app_id: str | None = None,
+    availability: dict[str, frozenset[str]] | None = None,
+) -> str:
+    """Build a publishable CTA; missing attribution and wrong storefronts block."""
+    if not isinstance(value, str) or urllib.parse.urlsplit(value).fragment:
+        raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    # Validate the input before retargeting it: silently dropping unknown or
+    # duplicate query parameters hides broken generator contracts.
+    normalized = normalize_app_store_campaign_url(value, provider_token=provider_token)
+    validated_app_store_url(
+        normalized,
+        expected_app_id,
+        expected_locale=expected_locale,
+        availability=availability,
+    )
+    result = campaign_app_store_url(
+        normalized, campaign_token, provider_token=provider_token
+    )
+    return validated_app_store_url(
+        result,
+        expected_app_id,
+        expected_locale=expected_locale,
+        require_campaign=True,
+        provider_token=provider_token,
+        availability=availability,
     )
 
 

@@ -18,7 +18,7 @@ A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos 
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Szerezd be az Unblurry-t az App Store-ból →](https://apps.apple.com/hu/app/id6782275018?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezd be az Unblurry-t az App Store-ból →](https://apps.apple.com/hu/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

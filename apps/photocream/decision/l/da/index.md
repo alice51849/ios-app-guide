@@ -17,7 +17,7 @@ Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn,
 - Gratis at komme i gang
 - App Store · Gratis
 
-[Hent PhotoCream i App Store →](https://apps.apple.com/dk/app/id6781808054?pt=118326163&ct=iag_data_da&mt=8)
+[Hent PhotoCream i App Store →](https://apps.apple.com/dk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

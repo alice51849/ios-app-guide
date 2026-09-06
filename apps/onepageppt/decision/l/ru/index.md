@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Бесплатно начать · разовая разблокировка
 - App Store · Бесплатно
 
-[Установить OnePage PPT: ИИ-слайды в App Store](https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить OnePage PPT: ИИ-слайды в App Store](https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/onepageppt.html)
 

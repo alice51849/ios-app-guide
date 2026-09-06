@@ -18,7 +18,7 @@ Aplikasi matematik kanak-kanak terbaik melatih penaakulan — corak, urutan, pem
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Math Planet di App Store →](https://apps.apple.com/my/app/id6778269699?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Math Planet di App Store →](https://apps.apple.com/my/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

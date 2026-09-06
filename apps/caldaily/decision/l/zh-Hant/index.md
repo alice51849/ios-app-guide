@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 主畫面小工具
 - App Store · 免費
 
-[在 App Store 取得 CalDaily 計算機與主題](https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 CalDaily 計算機與主題](https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/caldaily.html)
 

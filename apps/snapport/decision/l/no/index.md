@@ -18,7 +18,7 @@ For babyens passfoto kan ingen andre være med i bildet, og bakgrunnen må være
 - Privat / på enheten
 - App Store · 79,00 kr
 
-[Last ned Snapport i App Store →](https://apps.apple.com/no/app/id6780575828?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned Snapport i App Store →](https://apps.apple.com/no/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - পেইড ডাউনলোড
 - App Store · ₹ 599
 
-[App Store থেকে WiFi Aid: নেটওয়ার্ক সমস্যা ডাউনলোড করুন](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে WiFi Aid: নেটওয়ার্ক সমস্যা ডাউনলোড করুন](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html)
 

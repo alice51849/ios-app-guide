@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ମୁକ୍ତ ଆରମ୍ଭ
 - App Store · ମାଗଣା
 
-[App Store ରୁ ଟ୍ରିପ୍ବି ଲାଇଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ ଟ୍ରିପ୍ବି ଲାଇଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

@@ -24,7 +24,7 @@ Pemasukan & Pengeluaran Setiap proyek punya pembukuannya sendiri: pemasukan diku
 - Apple Watch
 - App Store · Gratis
 
-[Dapatkan MoneyTag di App Store](https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan MoneyTag di App Store](https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/moneytag.html)
 

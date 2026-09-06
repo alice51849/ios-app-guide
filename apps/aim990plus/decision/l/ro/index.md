@@ -17,7 +17,7 @@ Să înțelegi engleza este important; să rămâi precis când timpul se scurge
 - Descărcare plătită
 - App Store · 29,99 lei
 
-[Descarcă Aim990 Plus: Test de engleză din App Store](https://apps.apple.com/ro/app/id6792483140?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Aim990 Plus: Test de engleză din App Store](https://apps.apple.com/ro/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/aim990plus.html)
 

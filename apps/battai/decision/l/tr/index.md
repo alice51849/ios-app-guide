@@ -17,7 +17,7 @@ BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düze
 - Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
-[BattAI: Pil sağlığı puanı uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=iag_data_tr&mt=8)
+[BattAI: Pil sağlığı puanı uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/battai.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Mask My File: വിവരങ്ങൾ നീക്കുക നേടൂ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് Mask My File: വിവരങ്ങൾ നീക്കുക നേടൂ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/maskmyfile.html)
 

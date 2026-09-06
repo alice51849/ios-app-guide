@@ -18,7 +18,7 @@ Bättre sammanhang. Bättre svar. Gör om skärmbilder, filer, anteckningar och 
 - Privat / på enheten
 - App Store · Gratis
 
-[Hämta AI Brief: Filer till AI-prompt i App Store](https://apps.apple.com/se/app/id6791658210?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta AI Brief: Filer till AI-prompt i App Store](https://apps.apple.com/se/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/aibriefpack.html)
 

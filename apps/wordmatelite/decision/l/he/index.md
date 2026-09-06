@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - לא מקוון
 - App Store · בחינם
 
-[הורידו את Wordmate Lite: לומדים שפות מה-App Store](https://apps.apple.com/il/app/id6797601720?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את Wordmate Lite: לומדים שפות מה-App Store](https://apps.apple.com/il/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/wordmatelite.html)
 

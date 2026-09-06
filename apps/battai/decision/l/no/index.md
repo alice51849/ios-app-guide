@@ -17,7 +17,7 @@ BattAI BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladest
 - Gratis å starte
 - App Store · Gratis
 
-[Last ned BattAI: Batteritilstand fra App Store](https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned BattAI: Batteritilstand fra App Store](https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/battai.html)
 

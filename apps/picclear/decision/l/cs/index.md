@@ -18,7 +18,7 @@ Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: p�
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte PicClear v App Store →](https://apps.apple.com/cz/app/id6780223070?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte PicClear v App Store →](https://apps.apple.com/cz/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

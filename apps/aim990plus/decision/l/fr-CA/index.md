@@ -17,7 +17,7 @@ Renforcez votre compréhension de l’anglais avec des séances structurées pou
 - Téléchargement payant
 - App Store · $7.99
 
-[Obtenir Aim990 Plus: Test d'anglais sur l'App Store](https://apps.apple.com/ca/app/id6792483140?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir Aim990 Plus: Test d'anglais sur l'App Store](https://apps.apple.com/ca/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/aim990plus.html)
 

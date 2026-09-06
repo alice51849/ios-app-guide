@@ -18,7 +18,7 @@ Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukau
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Hanki Cyca App Storesta →](https://apps.apple.com/fi/app/id6782251621?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Cyca App Storesta →](https://apps.apple.com/fi/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-period-tracker-app-no-account-required-iphone.html)
 

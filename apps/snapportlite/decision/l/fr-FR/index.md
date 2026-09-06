@@ -18,7 +18,7 @@ Snapport Lite - Réalisez des photos de passeport, visa et documents avec repèr
 - Hors ligne
 - App Store · Gratuit
 
-[Obtenir Snapport Lite: Photo passeport sur l'App Store](https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir Snapport Lite: Photo passeport sur l'App Store](https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/snapportlite.html)
 

@@ -23,7 +23,7 @@ A useful free travel-expense test should include the complete local-to-home-curr
 - Apple Watch
 - App Store · 무료
 
-[App Store에서 G+Money Lite 받기 →](https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 G+Money Lite 받기 →](https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 

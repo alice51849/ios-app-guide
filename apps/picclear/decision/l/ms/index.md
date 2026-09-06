@@ -18,7 +18,7 @@ Untuk kosongkan ruang dengan cepat, sasarkan kemenangan terbesar dahulu: foto be
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan PicClear di App Store →](https://apps.apple.com/my/app/id6780223070?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan PicClear di App Store →](https://apps.apple.com/my/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

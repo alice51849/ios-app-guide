@@ -241,6 +241,9 @@ jobs:
           # batch can never commit the first generation for an App with more
           # missing questions than the limit.
           python3 aeo_answers.py --cached-live
+          # Category questions now owned by the free sibling are re-rendered
+          # from the free key so the free door gets its own honest answer.
+          python3 reclaim_free_first_answers.py
           python3 refresh_primary_resource_answers.py
       - name: Refresh AI indexes + hubs
         run: |

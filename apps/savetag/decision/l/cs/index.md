@@ -17,7 +17,7 @@ Ulož teď. A tentokrát to opravdu přečti. Celý den si posíláš odkazy. Re
 - Zdarma na začátek
 - App Store · Zdarma
 
-[Stáhněte si SaveTag: záložky s AI v App Storu](https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si SaveTag: záložky s AI v App Storu](https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/savetag.html)
 

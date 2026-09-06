@@ -17,7 +17,7 @@ Partea 5 pare scurtă, dar întrebările cu propoziții incomplete pot consuma t
 - Început gratuit
 - App Store · Gratuit
 
-[Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530?pt=118326163&ct=iag_data_ro&mt=8)
+[Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

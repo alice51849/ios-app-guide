@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[קבל את LockHour Pro ב-App Store →](https://apps.apple.com/il/app/id6780107485?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את LockHour Pro ב-App Store →](https://apps.apple.com/il/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

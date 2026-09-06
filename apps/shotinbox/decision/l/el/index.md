@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή
 - App Store · Δωρεάν
 
-[Αποκτήστε το ShotInbox AI: Sort Screenshots από το App Store](https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το ShotInbox AI: Sort Screenshots από το App Store](https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/shotinbox.html)
 

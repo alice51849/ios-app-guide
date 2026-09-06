@@ -18,7 +18,7 @@ Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista z
 - Bez oglasa
 - App Store · Besplatno
 
-[Preuzmite Mochi u App Storeu →](https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Mochi u App Storeu →](https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

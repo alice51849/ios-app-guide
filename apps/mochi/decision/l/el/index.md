@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · Δωρεάν
 
-[Κατεβάστε το Mochi από το App Store →](https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το Mochi από το App Store →](https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

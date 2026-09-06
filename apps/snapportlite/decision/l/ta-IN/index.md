@@ -18,7 +18,7 @@ Snapport Lite - வழிகாட்டிய அளவீடுகள், ப�
 - ஆஃப்லைன்
 - App Store · இலவசம்
 
-[App Store-இல் Snapport Lite: ஐடி புகைப்படம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் Snapport Lite: ஐடி புகைப்படம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/snapportlite.html)
 

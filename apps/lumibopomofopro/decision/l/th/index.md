@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฿299.00
 
-[ดาวน์โหลด Lumi Bopomofo Pro ใน App Store →](https://apps.apple.com/th/app/id6775773117?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Lumi Bopomofo Pro ใน App Store →](https://apps.apple.com/th/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

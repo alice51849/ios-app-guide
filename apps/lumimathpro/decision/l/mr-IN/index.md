@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - जाहिराती नाहीत
 - App Store · ₹ 999
 
-[Lumi Math Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_mr_in&mt=8)
+[Lumi Math Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

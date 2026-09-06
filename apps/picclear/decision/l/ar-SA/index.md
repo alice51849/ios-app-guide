@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على PicClear من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780223070?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على PicClear من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

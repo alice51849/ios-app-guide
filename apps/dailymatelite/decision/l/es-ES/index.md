@@ -17,7 +17,7 @@ Habla con confianza cuando llegue el momento. DailyMate Lite convierte situacion
 - Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
-[Consigue DailyMate Lite: Habla hoy en el App Store](https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue DailyMate Lite: Habla hoy en el App Store](https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/dailymatelite.html)
 

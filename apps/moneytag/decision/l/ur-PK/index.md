@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · مفت
 
-[App Store سے MoneyTag: آمدنی اور اخراجات حاصل کریں](https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے MoneyTag: آمدنی اور اخراجات حاصل کریں](https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/moneytag.html)
 

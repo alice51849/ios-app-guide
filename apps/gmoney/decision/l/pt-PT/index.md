@@ -19,7 +19,7 @@ Numa viagem precisa de um controlo de orçamento que funcione offline num país 
 - Sem conta
 - App Store · 5,99 €
 
-[Obtenha o G+Money na App Store →](https://apps.apple.com/pt/app/id6755782939?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o G+Money na App Store →](https://apps.apple.com/pt/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

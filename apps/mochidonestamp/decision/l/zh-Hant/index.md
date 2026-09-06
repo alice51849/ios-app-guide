@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次性解鎖
 - App Store · 免費
 
-[前往 App Store 取得 Mochi DoneStamp →](https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[前往 App Store 取得 Mochi DoneStamp →](https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 

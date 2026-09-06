@@ -17,7 +17,7 @@ If you are planning one upcoming journey, a calm timeline for that trip is more 
 - Free to start · one-time unlock
 - App Store · Free
 
-[Get TripBee Lite on the App Store →](https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get TripBee Lite on the App Store →](https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

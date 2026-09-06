@@ -18,7 +18,7 @@ Kalkulator, którego naprawdę będziesz używać, bo pamięta myśl stojącą z
 - Widżet
 - App Store · Bezpłatnie
 
-[Pobierz CalDaily: kalkulator i motywy z App Store](https://apps.apple.com/pl/app/id6794178671?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz CalDaily: kalkulator i motywy z App Store](https://apps.apple.com/pl/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/caldaily.html)
 

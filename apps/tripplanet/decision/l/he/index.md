@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - App Store · בחינם
 
-[קבל את Lumi Trip Planet ב-App Store →](https://apps.apple.com/il/app/id6787193643?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Lumi Trip Planet ב-App Store →](https://apps.apple.com/il/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

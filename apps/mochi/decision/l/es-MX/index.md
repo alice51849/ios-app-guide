@@ -18,7 +18,7 @@ Si la mayoría de las apps de tareas parecen saturadas, la correcta es una lista
 - Sin anuncios
 - App Store · Gratis
 
-[Consigue Mochi en la App Store →](https://apps.apple.com/mx/app/id6785004775?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue Mochi en la App Store →](https://apps.apple.com/mx/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

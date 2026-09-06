@@ -17,7 +17,7 @@ Osa 5 näyttää lyhyeltä, mutta keskeneräiset lauseet voivat viedä aikaa, jo
 - Ilmainen aloitus
 - App Store · Ilmainen
 
-[Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

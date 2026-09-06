@@ -17,7 +17,7 @@ Snakk når det teller. Med DailyMate Lite øver du på komplette replikkveksling
 - Gratis å starte
 - App Store · Gratis
 
-[Last ned DailyMate Lite: Snakk i dag fra App Store](https://apps.apple.com/no/app/id6794725568?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned DailyMate Lite: Snakk i dag fra App Store](https://apps.apple.com/no/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/dailymatelite.html)
 

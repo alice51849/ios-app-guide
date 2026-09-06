@@ -18,7 +18,7 @@ Snapport Lite - ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ ਅਤੇ ਦਸਤਾਵ
 - ਆਫਲਾਈਨ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ Snapport Lite: ID ਫੋਟੋ ਬਣਾਓ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ Snapport Lite: ID ਫੋਟੋ ਬਣਾਓ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/snapportlite.html)
 

@@ -18,7 +18,7 @@ Tandenpoetsen en bedtijd mislukken vaak op hetzelfde moment: het kind is moe, de
 - Geen advertenties
 - App Store · € 6,99
 
-[Lumi Mission Planet Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6779745474?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Lumi Mission Planet Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

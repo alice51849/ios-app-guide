@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும்
 - App Store · இலவசம்
 
-[App Store இல் Aim990 ஐ பெறவும் →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store இல் Aim990 ஐ பெறவும் →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

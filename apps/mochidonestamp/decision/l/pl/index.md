@@ -17,7 +17,7 @@ Kiedy ostatnio zmieniono pościel, podlano roślinę, zadzwoniono do bliskich, z
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz Mochi DoneStamp: Ostatni raz z App Store](https://apps.apple.com/pl/app/id6790800323?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Mochi DoneStamp: Ostatni raz z App Store](https://apps.apple.com/pl/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/mochidonestamp.html)
 

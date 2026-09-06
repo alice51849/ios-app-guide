@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - App Store · ₪19.90
 
-[הורידו את Aim990 Plus: מבחן תרגול אנגלית מה-App Store](https://apps.apple.com/il/app/id6792483140?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את Aim990 Plus: מבחן תרגול אנגלית מה-App Store](https://apps.apple.com/il/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/aim990plus.html)
 

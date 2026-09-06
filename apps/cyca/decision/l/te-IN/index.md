@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
-[App Store నుండి Cyca పొందండి →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుండి Cyca పొందండి →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-period-tracker-app-no-account-required-iphone.html)
 

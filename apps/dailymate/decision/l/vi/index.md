@@ -18,7 +18,7 @@ Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực t�
 - Apple Watch
 - App Store · 399.000đ
 
-[Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
-[App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

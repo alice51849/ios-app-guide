@@ -18,7 +18,7 @@ El raspallat de dents i l'hora de dormir sovint fallen al mateix moment cada nit
 - Sense anuncis
 - App Store · 6,99 €
 
-[Descarrega Lumi Mission Planet Pro a l'App Store →](https://apps.apple.com/es/app/id6779745474?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Lumi Mission Planet Pro a l'App Store →](https://apps.apple.com/es/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

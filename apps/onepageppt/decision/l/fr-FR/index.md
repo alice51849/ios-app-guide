@@ -17,7 +17,7 @@ Transformez un mur de texte en UNE diapo réellement lue. OnePage PPT analyse to
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenir OnePage PPT : diapo IA sur l'App Store](https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir OnePage PPT : diapo IA sur l'App Store](https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/onepageppt.html)
 

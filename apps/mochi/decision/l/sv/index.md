@@ -18,7 +18,7 @@ Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Mochi på App Store →](https://apps.apple.com/se/app/id6785004775?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Mochi på App Store →](https://apps.apple.com/se/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

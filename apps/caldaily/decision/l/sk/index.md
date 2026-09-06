@@ -18,7 +18,7 @@ Kalkulačka, ktorú budete naozaj používať, pretože si pamätá myšlienku z
 - Widget
 - App Store · Zadarmo
 
-[Stiahnuť CalDaily: kalkulačka a témy v App Store](https://apps.apple.com/sk/app/id6794178671?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť CalDaily: kalkulačka a témy v App Store](https://apps.apple.com/sk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/caldaily.html)
 

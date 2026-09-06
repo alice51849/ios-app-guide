@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฿199.00
 
-[ดาวน์โหลด Snapport ใน App Store →](https://apps.apple.com/th/app/id6780575828?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Snapport ใน App Store →](https://apps.apple.com/th/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

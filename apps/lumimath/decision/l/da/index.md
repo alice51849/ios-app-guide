@@ -18,7 +18,7 @@ Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, ruml
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Math Planet i App Store →](https://apps.apple.com/dk/app/id6778269699?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Lumi Math Planet i App Store →](https://apps.apple.com/dk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

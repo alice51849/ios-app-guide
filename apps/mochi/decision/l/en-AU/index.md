@@ -19,7 +19,7 @@ If most to-do apps feel bloated, the right one is a clean checklist with reminde
 - App Store · Free
 - ★ 3.0/5 · 1
 
-[Get Mochi on the App Store →](https://apps.apple.com/au/app/id6785004775?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get Mochi on the App Store →](https://apps.apple.com/au/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

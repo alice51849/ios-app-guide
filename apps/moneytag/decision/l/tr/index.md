@@ -24,7 +24,7 @@ Gelir ve gider Her proje kendi defterini tutar: gelirden gideri çıkarınca pro
 - Apple Watch
 - App Store · Ücretsiz
 
-[MoneyTag: Gelir ve gider uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6801956402?pt=118326163&ct=iag_data_tr&mt=8)
+[MoneyTag: Gelir ve gider uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/moneytag.html)
 

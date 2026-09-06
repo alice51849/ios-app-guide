@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฿199.00
 
-[ดาวน์โหลด HoursTag บน App Store →](https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด HoursTag บน App Store →](https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - கணக்கு இல்லை
 - App Store · இலவசம்
 
-[App Store-இல் WiFi Aid Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் WiFi Aid Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/wifiaidlite.html)
 

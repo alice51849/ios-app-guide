@@ -19,7 +19,7 @@ Voor slaap is een abonnement dat elke maand zeurt het tegenovergestelde van rust
 - Geen advertenties
 - App Store · Gratis
 
-[Download Sereno in de App Store →](https://apps.apple.com/nl/app/id6788236641?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download Sereno in de App Store →](https://apps.apple.com/nl/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

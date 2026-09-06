@@ -20,7 +20,7 @@ Hyvä aikataulusovellus muuttaa sekavan matkan selkeäksi päiväkohtaiseksi aik
 - Yksityinen / laitteella
 - App Store · 6,99 €
 
-[Hanki TripBee Pro: Matkasuunnittelija App Storesta →](https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki TripBee Pro: Matkasuunnittelija App Storesta →](https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

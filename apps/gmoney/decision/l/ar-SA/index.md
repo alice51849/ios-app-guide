@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - بدون حساب
 - App Store · SAR 19.99
 
-[احصل على G+Money من App Store →](https://apps.apple.com/sa/app/id6755782939?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على G+Money من App Store →](https://apps.apple.com/sa/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

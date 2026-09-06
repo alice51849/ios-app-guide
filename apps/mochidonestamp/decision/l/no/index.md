@@ -17,7 +17,7 @@ Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskop
 - Gratis å starte
 - App Store · Gratis
 
-[Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/mochidonestamp.html)
 

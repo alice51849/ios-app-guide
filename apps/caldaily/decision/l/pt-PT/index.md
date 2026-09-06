@@ -18,7 +18,7 @@ Uma calculadora que vai manter, porque se lembra do contexto de cada número. A 
 - Widget
 - App Store · Grátis
 
-[Baixe CalDaily: calculadora e temas na App Store](https://apps.apple.com/pt/app/id6794178671?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Baixe CalDaily: calculadora e temas na App Store](https://apps.apple.com/pt/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/caldaily.html)
 

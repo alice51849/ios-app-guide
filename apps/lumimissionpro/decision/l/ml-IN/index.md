@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · ₹ 599
 
-[Lumi Mission Planet Pro App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_ml_in&mt=8)
+[Lumi Mission Planet Pro App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

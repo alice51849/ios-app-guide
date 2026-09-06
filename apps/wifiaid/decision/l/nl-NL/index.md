@@ -17,7 +17,7 @@ Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en s
 - Betaalde aanschaf
 - App Store · € 6,99
 
-[Download WiFi Aid: Vind netwerkfouten in de App Store](https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download WiFi Aid: Vind netwerkfouten in de App Store](https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/wifiaid.html)
 

@@ -19,7 +19,7 @@ Saat bepergian Anda butuh pelacak anggaran yang bekerja offline di negara tanpa 
 - Tanpa akun
 - App Store · Rp 89ribu
 
-[Dapatkan G+Money di App Store →](https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan G+Money di App Store →](https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

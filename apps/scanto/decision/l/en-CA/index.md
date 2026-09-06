@@ -18,7 +18,7 @@ If you scan patient consent forms, discharge paperwork or referrals, the scanner
 - Private / on-device
 - App Store · Free
 
-[Get ScanTo Pro on the App Store →](https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get ScanTo Pro on the App Store →](https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

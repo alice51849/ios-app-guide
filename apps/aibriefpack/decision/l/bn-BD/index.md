@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - গোপনীয় / ডিভাইসে
 - App Store · বিনামূল্যে
 
-[App Store থেকে AI Brief: ফাইল থেকে AI প্রম্পট ডাউনলোড করুন](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে AI Brief: ফাইল থেকে AI প্রম্পট ডাউনলোড করুন](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/aibriefpack.html)
 

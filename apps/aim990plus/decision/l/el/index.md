@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Λήψη με χρέωση
 - App Store · 6,99 €
 
-[Αποκτήστε το Aim990 Plus: Τεστ αγγλικών από το App Store](https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το Aim990 Plus: Τεστ αγγλικών από το App Store](https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/aim990plus.html)
 

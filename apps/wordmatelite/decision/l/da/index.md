@@ -18,7 +18,7 @@ Fem ord. Ét minut. En sti du rent faktisk kan se. De fleste gloseprogrammer bed
 - Offline
 - App Store · Gratis
 
-[Hent Wordmate Lite: Ordforråd i App Store](https://apps.apple.com/dk/app/id6797601720?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Wordmate Lite: Ordforråd i App Store](https://apps.apple.com/dk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/wordmatelite.html)
 

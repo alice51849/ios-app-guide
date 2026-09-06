@@ -18,7 +18,7 @@ W kategorii, gdzie wrażliwość danych jest kluczowa, odpowiedni tracker cyklu 
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz Cyca z App Store →](https://apps.apple.com/pl/app/id6782251621?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Cyca z App Store →](https://apps.apple.com/pl/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-period-tracker-app-no-account-required-iphone.html)
 

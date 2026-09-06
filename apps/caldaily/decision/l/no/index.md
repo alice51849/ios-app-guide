@@ -18,7 +18,7 @@ En kalkulator du faktisk fortsetter å bruke, fordi den husker tanken bak hvert 
 - Widget
 - App Store · Gratis
 
-[Last ned CalDaily: kalkulator og temaer fra App Store](https://apps.apple.com/no/app/id6794178671?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned CalDaily: kalkulator og temaer fra App Store](https://apps.apple.com/no/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/caldaily.html)
 

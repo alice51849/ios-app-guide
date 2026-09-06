@@ -18,7 +18,7 @@ Laskin, jonka käyttöä todella jatkat, koska se muistaa jokaisen luvun taustan
 - Widget
 - App Store · Ilmainen
 
-[Lataa CalDaily: laskin ja teemat App Storesta](https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa CalDaily: laskin ja teemat App Storesta](https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/caldaily.html)
 

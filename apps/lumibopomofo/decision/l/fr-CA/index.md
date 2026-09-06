@@ -18,7 +18,7 @@ Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symbol
 - Aucune publicité
 - App Store · Gratuit
 
-[Obtenez Lumi Bopomofo sur l’App Store →](https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenez Lumi Bopomofo sur l’App Store →](https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

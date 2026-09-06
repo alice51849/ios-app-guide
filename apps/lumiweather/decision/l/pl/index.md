@@ -19,7 +19,7 @@ Rodzice planujący czas na dworze potrzebują czegoś więcej niż temperatury: 
 - Bez śledzenia
 - App Store · Bezpłatnie
 
-[Pobierz Lumi Weather z App Store →](https://apps.apple.com/pl/app/id6779552704?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Lumi Weather z App Store →](https://apps.apple.com/pl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

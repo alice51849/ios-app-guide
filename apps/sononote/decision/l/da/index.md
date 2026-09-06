@@ -18,7 +18,7 @@ Efter et opkald vil du ikke have en rå transskription — du vil have opsummeri
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

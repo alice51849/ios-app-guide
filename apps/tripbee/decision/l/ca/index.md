@@ -20,7 +20,7 @@ Una bona app d’itineraris converteix un viatge desordenat en una línia de tem
 - Privat / en el dispositiu
 - App Store · 6,99 €
 
-[Descarrega TripBee Pro: Planificador de Viatges a l’App Store →](https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega TripBee Pro: Planificador de Viatges a l’App Store →](https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

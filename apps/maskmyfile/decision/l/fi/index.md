@@ -18,7 +18,7 @@ Jaa turvallisesti menettämättä hyödyllistä asiayhteyttä. Mask My File löy
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Lataa Mask My File: Poista tietosi App Storesta](https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa Mask My File: Poista tietosi App Storesta](https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/maskmyfile.html)
 

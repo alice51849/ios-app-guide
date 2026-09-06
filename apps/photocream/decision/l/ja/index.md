@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
-[App StoreでPhotoCreamを入手 →](https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでPhotoCreamを入手 →](https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

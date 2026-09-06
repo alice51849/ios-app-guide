@@ -103,7 +103,7 @@ COST_COMPARE_RE = re.compile(r"-subscription-cost-vs-pay-once(?:-|$)")
 # 明確要求「零內購」的問句:配對免費版一定有內購(free_with_lifetime_unlock),
 # 所以它**不是**這題的答案。這種 slug 沒有 pro/plus 字樣,既有 exempt 抓不到,
 # 而且答案文字未必寫出 `paid download`,所以獨立成一條意圖判準。
-PAID_ONLY_INTENT_RE = re.compile(r"in[-\s]?app purchase", re.I)
+from free_first_ownership import PAID_ONLY_INTENT_RE  # noqa: E402
 
 
 def _persona_page_basenames():
@@ -974,9 +974,7 @@ def enforce_free_door_pricing(text, rel=""):
 # 比 finder 的「Free to start · one-time unlock」更貼近 pill / featureList 語氣。
 REGISTRY_FREE_START_BULLET = "Free to start"
 # 換門後仍代表「付費下載 / 一次付清價格」的殘留字樣(不分大小寫)。
-PAID_MODEL_RESIDUE_RE = re.compile(
-    r"paid[-\s]download|paid[-\s]upfront|upfront price", re.I
-)
+from free_first_ownership import PAID_MODEL_RESIDUE_RE  # noqa: E402
 
 
 def _add_pair(pairs, locale, paid, free):

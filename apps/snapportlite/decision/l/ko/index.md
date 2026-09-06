@@ -18,7 +18,7 @@ Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 
 - 오프라인
 - App Store · 무료
 
-[App Store에서 Snapport Lite：집에서 증명사진 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Snapport Lite：집에서 증명사진 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/snapportlite.html)
 

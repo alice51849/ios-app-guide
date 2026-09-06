@@ -19,7 +19,7 @@ During exams, willpower isn't the tool — a hard timed block is. That is why Lo
 - Private / on-device
 - App Store · Free
 
-[Get LockHour Pro on the App Store →](https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get LockHour Pro on the App Store →](https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

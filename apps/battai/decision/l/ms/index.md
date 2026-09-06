@@ -17,7 +17,7 @@ BattAI BattAI menggunakan lima nilai daripada API awam iOS: aras bateri, keadaan
 - Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
-[Dapatkan BattAI: Skor kesihatan bateri di App Store](https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan BattAI: Skor kesihatan bateri di App Store](https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/battai.html)
 

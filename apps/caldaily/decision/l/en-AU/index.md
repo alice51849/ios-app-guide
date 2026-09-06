@@ -18,7 +18,7 @@ CalDaily — A calculator you will actually keep using, because it remembers the
 - Widget
 - App Store · Free
 
-[Get CalDaily on the App Store →](https://apps.apple.com/au/app/id6794178671?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get CalDaily on the App Store →](https://apps.apple.com/au/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html)
 

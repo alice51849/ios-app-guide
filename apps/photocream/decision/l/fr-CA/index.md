@@ -17,7 +17,7 @@ Les créateurs voyage ont besoin d’un style film répétable qui ajoute grain,
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenez PhotoCream sur l’App Store →](https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenez PhotoCream sur l’App Store →](https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

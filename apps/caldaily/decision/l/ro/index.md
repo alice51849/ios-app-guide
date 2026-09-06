@@ -18,7 +18,7 @@ Un calculator pe care chiar continui să îl folosești, pentru că ține minte 
 - Widget
 - App Store · Gratuit
 
-[Descarcă CalDaily: calculator și teme din App Store](https://apps.apple.com/ro/app/id6794178671?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă CalDaily: calculator și teme din App Store](https://apps.apple.com/ro/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/caldaily.html)
 

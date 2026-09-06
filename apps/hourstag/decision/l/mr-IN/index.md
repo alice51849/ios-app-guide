@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · ₹ 499
 
-[App Store वरून HoursTag: खरेदी वेळेची किंमत मिळवा](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून HoursTag: खरेदी वेळेची किंमत मिळवा](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/hourstag.html)
 

@@ -17,7 +17,7 @@ BattAI BattAI använder fem värden från offentliga iOS-API:er: batterinivå, l
 - Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
-[Hämta BattAI: Batteriets hälsopoäng i App Store](https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta BattAI: Batteriets hälsopoäng i App Store](https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/battai.html)
 

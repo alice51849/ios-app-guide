@@ -18,7 +18,7 @@ Udostępniaj bezpiecznie, nie tracąc potrzebnego kontekstu. Mask My File znajdu
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz Mask My File: Usuń swoje dane z App Store](https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Mask My File: Usuń swoje dane z App Store](https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/maskmyfile.html)
 

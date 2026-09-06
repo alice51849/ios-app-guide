@@ -17,7 +17,7 @@ Puhu luontevasti silloin, kun tilanne tulee vastaan. DailyMate Lite auttaa harjo
 - Ilmainen aloitus
 - App Store · Ilmainen
 
-[Lataa DailyMate Lite: Puhu tänään App Storesta](https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa DailyMate Lite: Puhu tänään App Storesta](https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/dailymatelite.html)
 

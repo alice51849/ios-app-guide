@@ -19,7 +19,7 @@ Ouders die buitentijd plannen hebben meer nodig dan een temperatuur: ze willen s
 - Geen tracking
 - App Store · Gratis
 
-[Lumi Weather downloaden in de App Store →](https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Lumi Weather downloaden in de App Store →](https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

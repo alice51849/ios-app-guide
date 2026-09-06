@@ -17,7 +17,7 @@ Mikor cseréltél utoljára ágyneműt, locsoltál növényt, hívtad fel a csal
 - Ingyenes kezdés
 - App Store · Ingyenes
 
-[Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból](https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból](https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/mochidonestamp.html)
 

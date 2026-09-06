@@ -18,7 +18,7 @@ Wenn Sie Einwilligungsformulare, Entlassungsunterlagen oder Überweisungen scann
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 
-[Holen Sie sich ScanTo Pro im App Store →](https://apps.apple.com/de/app/id6779977651?pt=118326163&ct=iag_data_de_de&mt=8)
+[Holen Sie sich ScanTo Pro im App Store →](https://apps.apple.com/de/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

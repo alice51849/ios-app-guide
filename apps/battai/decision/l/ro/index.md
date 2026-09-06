@@ -17,7 +17,7 @@ BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul baterie
 - Început gratuit
 - App Store · Gratuit
 
-[Descarcă BattAI: Sănătatea bateriei din App Store](https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă BattAI: Sănătatea bateriei din App Store](https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/battai.html)
 

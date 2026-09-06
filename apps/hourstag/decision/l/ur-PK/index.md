@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · Rs 1,300.00
 
-[App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/hourstag.html)
 

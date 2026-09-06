@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · இலவசம்
 
-[App Store-இல் Lumi Bopomofo பெறவும் →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் Lumi Bopomofo பெறவும் →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

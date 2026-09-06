@@ -18,7 +18,7 @@ Le brossage des dents et le coucher échouent souvent au même moment chaque soi
 - Sans publicité
 - App Store · 6,99 €
 
-[Obtenir Lumi Mission Planet Pro sur l’App Store →](https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir Lumi Mission Planet Pro sur l’App Store →](https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

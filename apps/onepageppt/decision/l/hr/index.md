@@ -17,7 +17,7 @@ Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju. OnePage PPT pro
 - Besplatno za početak
 - App Store · Besplatno
 
-[Preuzmite OnePage PPT: AI slajd u App Storeu](https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite OnePage PPT: AI slajd u App Storeu](https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/onepageppt.html)
 

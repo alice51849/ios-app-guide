@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · Rs 2,500.00
 
-[Lumi Letters Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[Lumi Letters Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - App Store · SAR 39.99
 
-[احصل على Lumi Letters Pro من App Store →](https://apps.apple.com/sa/app/id6778491147?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على Lumi Letters Pro من App Store →](https://apps.apple.com/sa/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

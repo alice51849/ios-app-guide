@@ -17,7 +17,7 @@ Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skut
 - Zdarma na začátek
 - App Store · Zdarma
 
-[Získejte CV Desk v App Store →](https://apps.apple.com/cz/app/id6781337213?pt=118326163&ct=iag_data_cs&mt=8)
+[Získejte CV Desk v App Store →](https://apps.apple.com/cz/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-resume-builder-app-for-career-changers-2026.html)
 

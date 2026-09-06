@@ -17,7 +17,7 @@ Ak plánujete jednu nadchádzajúcu cestu, pokojný časový plán pre túto ces
 - Zadarmo na začiatok
 - App Store · Zadarmo
 
-[Stiahnite si TripBee Lite v App Store →](https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnite si TripBee Lite v App Store →](https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

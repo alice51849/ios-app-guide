@@ -18,7 +18,7 @@ Periajul dinților și ora de culcare eșuează adesea în același moment în f
 - Fără reclame
 - App Store · 29,99 lei
 
-[Descarcă Lumi Mission Planet Pro din App Store →](https://apps.apple.com/ro/app/id6779745474?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Lumi Mission Planet Pro din App Store →](https://apps.apple.com/ro/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

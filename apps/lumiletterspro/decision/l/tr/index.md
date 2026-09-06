@@ -18,7 +18,7 @@ Anaokulu hazırlığı yapan aileler, harf sesleri, çizim ve kelime oluşturmay
 - Reklam yok
 - App Store · ₺499,99
 
-[Lumi Letters Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6778491147?pt=118326163&ct=iag_data_tr&mt=8)
+[Lumi Letters Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

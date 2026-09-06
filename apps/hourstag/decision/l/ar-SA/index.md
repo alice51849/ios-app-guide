@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - خاص / على الجهاز
 - App Store · SAR 19.99
 
-[Get HoursTag on the App Store ←](https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[Get HoursTag on the App Store ←](https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

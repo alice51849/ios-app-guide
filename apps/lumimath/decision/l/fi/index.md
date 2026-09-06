@@ -18,7 +18,7 @@ Paras lasten matikkasovellus harjoittaa päättelyä — kuvioita, sarjoja, avar
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Lumi Math Planet App Storesta →](https://apps.apple.com/fi/app/id6778269699?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Lumi Math Planet App Storesta →](https://apps.apple.com/fi/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

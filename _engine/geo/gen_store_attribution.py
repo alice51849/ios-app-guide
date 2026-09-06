@@ -7,16 +7,15 @@ emit plain ``https://apps.apple.com/app/id...`` strings, so even with a provider
 token configured most of the site would still be unattributed and we could never
 tell which page earns a download.  Patching every generator does not scale (the
 tree has 250+ of them and they are actively edited).  This is the choke point
-instead: it runs after all generators and rewrites the *anchors* they produced.
+instead: it runs after the HTML generators. The final audit also checks feeds,
+APIs and downloadable artifacts emitted later in the pipeline.
 
 Rules that keep it safe:
-  • No provider token (``APP_STORE_PROVIDER_TOKEN``, else
-    ``~/.growth-private/app-store-provider-token``) => every URL is returned
-    unchanged, so this is a no-op until Apple's token is configured.
-  • Only ``<a href>`` and the share block's ``data-app-store-url`` are
-    touched — the two surfaces a visitor can actually click.  JSON-LD ``url``/``sameAs``,
-    feeds and APIs keep the clean canonical URL, because a tracking query string
-    there would break entity identity for search and AI engines.
+  • A valid provider token is mandatory; missing configuration fails closed.
+  • Anchors, share URLs, Smart App Banners and embedded tool/download payloads
+    are attributed. Canonical/hreflang, entity IDs and sameAs remain clean.
+    Standalone API/feed/download files are validated by audit_store_attribution
+    after all generators; their content digests are never patched after the fact.
   • Generator-minted campaigns are re-stamped (see "single authority" below),
     except publisher-managed surfaces: Web Stories own ``iag_story`` and the
     localized visual collection owns ``iag_visual_<locale>``.
@@ -31,20 +30,28 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import json
 import os
 from pathlib import Path
 import re
 import sys
+import urllib.parse
 from collections import Counter
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 from app_store_storefronts import (  # noqa: E402
+    APP_STORE_PATH_RE,
+    LOCALE_STOREFRONTS,
     PROVIDER_TOKEN_ENV,
-    campaign_app_store_url,
+    PROVIDER_TOKEN_RE,
+    is_clean_app_store_developer_url,
+    load_storefront_availability,
     normalize_app_store_campaign_url,
+    required_campaign_app_store_url,
     resolve_provider_token,
+    storefront_locale_for_url,
 )
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
@@ -55,13 +62,12 @@ EXCLUDED_PARTS = {
     ".git",
     "_engine",
     "node_modules",
-    "stories",
-    "visuals",
 }
+PROTECTED_PARTS = {"stories", "visuals"}
 ANCHOR_HREF_RE = re.compile(
-    r'(?P<prefix><a\b[^>]*?\bhref=")'
-    r"(?P<url>https://apps\.apple\.com/[^\"]*)"
-    r'(?P<suffix>")',
+    r"""(?P<prefix><(?:a|area)\b[^>]*?\bhref\s*=\s*(?P<quote>["']?))"""
+    r"""(?P<url>(?:https?://|itms-apps://|//)apps\.apple\.com[^\s"'<>]*)"""
+    r"(?P<suffix>(?P=quote))",
     flags=re.IGNORECASE,
 )
 # The share block (gen_app_store_share_ctas.py) hands this URL to the Web Share
@@ -69,9 +75,9 @@ ANCHOR_HREF_RE = re.compile(
 # It is the same measurement surface as an anchor and must carry the same token,
 # otherwise 27k links keep reporting under a legacy campaign.
 SHARE_URL_RE = re.compile(
-    r'(?P<prefix>\bdata-app-store-url=")'
-    r"(?P<url>https://apps\.apple\.com/[^\"]*)"
-    r'(?P<suffix>")',
+    r"""(?P<prefix>\bdata-app-store-url\s*=\s*(?P<quote>["']?))"""
+    r"""(?P<url>(?:https?://|itms-apps://|//)apps\.apple\.com[^\s"'<>]*)"""
+    r"(?P<suffix>(?P=quote))",
     flags=re.IGNORECASE,
 )
 STORE_URL_PATTERNS = (ANCHOR_HREF_RE, SHARE_URL_RE)
@@ -155,7 +161,8 @@ SECTION_BUCKETS = {
 # Campaigns this pass must not touch.  Web Stories mint iag_story and
 # validate_webstories.py checks it against the Smart App Banner meta tag; the
 # stories/ directories are skipped anyway, this is the belt to that braces.
-PROTECTED_CAMPAIGNS = frozenset({"iag_story"})
+STORY_CAMPAIGN = "iag_story"
+PROTECTED_CAMPAIGNS = frozenset({STORY_CAMPAIGN})
 
 # Historical tokens -> the bucket they roll up into, so the report keeps one
 # continuous series across the 2026-08-20 change instead of starting at zero.
@@ -271,7 +278,39 @@ def has_campaign(url: str) -> bool:
     return existing_campaign(url) is not None
 
 
-def rewrite(text: str, token: str, provider: str | None) -> tuple[str, int]:
+def align_storefront(url: str, locale: str | None, availability=None) -> str:
+    """Send a page's readers to their own storefront, never another country's.
+
+    Legacy generators minted some links on a fixed storefront (Lumi apps on
+    ``/tw/`` inside English answer pages). validated_app_store_url rejects
+    that as a storefront mismatch, so the single stamper authority moves the
+    link onto the page locale's storefront when the app is verified there and
+    otherwise falls back to the global (country-less) link. Pages outside the
+    official locales and links without a country are left untouched.
+    """
+    if locale not in LOCALE_STOREFRONTS:
+        return url
+    parsed = urllib.parse.urlsplit(url)
+    match = APP_STORE_PATH_RE.fullmatch(parsed.path)
+    if match is None or match["country"] is None:
+        return url
+    target = LOCALE_STOREFRONTS[locale]
+    if match["country"] == target or match["country"] not in LOCALE_STOREFRONTS.values():
+        # Only a *known* foreign storefront is re-homed; an unknown country code
+        # is corrupt input and must keep failing closed downstream.
+        return url
+    app_id = match["app_id"]
+    if availability is None or app_id in availability.get(target, frozenset()):
+        path = f"/{target}/app/id{app_id}"
+    else:
+        path = f"/app/id{app_id}"
+    return urllib.parse.urlunsplit(parsed._replace(path=path))
+
+
+def rewrite(
+    text: str, token: str, provider: str | None, *,
+    locale: str | None = None, availability=None,
+) -> tuple[str, int]:
     """Re-stamp every store anchor in ``text`` with ``token``.
 
     This is the single authority on campaign tokens for the site tree.  Before
@@ -282,21 +321,43 @@ def rewrite(text: str, token: str, provider: str | None) -> tuple[str, int]:
     exception is PROTECTED_CAMPAIGNS, whose tokens are part of a contract that
     is checked elsewhere.
     """
+    from audit_store_attribution import (
+        SCRIPT_RE, STORE_TEXT_RE, identity_field, is_store_url, js_strings,
+        schema_node, schema_value_field,
+    )
+
+    if locale is None:
+        # Root-level pages have no locale directory; the read-only audit
+        # derives their storefront from <html lang>, so the stamper must too.
+        from audit_store_attribution import _locale
+
+        declared = re.search(r"""<html\b[^>]*\blang\s*=\s*["']([^"']+)["']""", text, re.I)
+        if declared is not None:
+            candidate = _locale(declared.group(1), None)
+            if candidate in LOCALE_STOREFRONTS:
+                locale = candidate
     changes = 0
+
+    def retarget(url: str, local=locale, app_id=None) -> str:
+        if is_clean_app_store_developer_url(url):
+            return url
+        url = align_storefront(url, local, availability)
+        existing = existing_campaign(url)
+        campaign = existing if existing in PROTECTED_CAMPAIGNS else token
+        return required_campaign_app_store_url(
+            url, campaign, provider_token=provider,
+            expected_locale=storefront_locale_for_url(url, local),
+            expected_app_id=app_id, availability=availability,
+        )
 
     def replace(match: re.Match[str]) -> str:
         nonlocal changes
         raw = match.group("url")
         # Half the tree writes the query as &amp;; decode before parsing and
         # re-encode afterwards so the rewrite never changes how a page parses.
-        escaped = "&amp;" in raw
-        url = raw.replace("&amp;", "&") if escaped else raw
-        if existing_campaign(url) in PROTECTED_CAMPAIGNS:
-            return match.group(0)
-        try:
-            updated = campaign_app_store_url(url, token, provider_token=provider)
-        except ValueError:
-            return match.group(0)  # never break a page over an odd URL
+        escaped = html.unescape(raw) != raw
+        url = html.unescape(raw)
+        updated = retarget(url)
         if escaped:
             updated = updated.replace("&", "&amp;")
         if updated == raw:
@@ -304,9 +365,97 @@ def rewrite(text: str, token: str, provider: str | None) -> tuple[str, int]:
         changes += 1
         return match.group("prefix") + updated + match.group("suffix")
 
-    for pattern in STORE_URL_PATTERNS:
-        text = pattern.sub(replace, text)
-    return text, changes
+    def json_value(value, *, field="", parent=None, local=locale, app_id=None, schema=False):
+        nonlocal changes
+        # Provenance/identity fields and JSON Schema sample or regex keywords
+        # are mirrored by audit_store_attribution: neither is a CTA to stamp.
+        if identity_field(field, parent) or schema_value_field(field, parent, schema):
+            return value
+        if isinstance(value, dict):
+            schema = schema_node(value, schema)
+            local = value.get("locale", value.get("page_language", local))
+            local = "en-US" if local == "en" else local
+            app_id = str(value["app_store_id"]) if "app_store_id" in value else app_id
+            return {
+                key: json_value(
+                    child, field=key, parent=value, local=local, app_id=app_id, schema=schema
+                )
+                for key, child in value.items()
+            }
+        if isinstance(value, list):
+            return [
+                json_value(child, field=field, local=local, app_id=app_id, schema=schema)
+                for child in value
+            ]
+        if isinstance(value, str) and is_store_url(value):
+            updated = STORE_TEXT_RE.sub(
+                lambda match: retarget(match.group(), local, app_id), value
+            )
+            changes += int(updated != value)
+            return updated
+        return value
+
+    def script(match):
+        nonlocal changes
+        body = match["body"]
+        if re.search(r"""type\s*=\s*["']application/(?:ld\+)?json["']""", match["open"], re.I):
+            payload = json.loads(body)
+            updated = json_value(payload)
+            if updated != payload:
+                body = json.dumps(updated, ensure_ascii=False, separators=(",", ":")).replace("</", r"<\/")
+        else:
+            replacements = []
+            for literal, value, field in js_strings(body):
+                if not is_store_url(value) or identity_field(field):
+                    continue
+                updated = STORE_TEXT_RE.sub(lambda item: retarget(item.group()), value)
+                if updated != value:
+                    changes += 1
+                    replacements.append((literal.start(), literal.end(), json.dumps(updated, ensure_ascii=False)))
+            for start, end, replacement in reversed(replacements):
+                body = body[:start] + replacement + body[end:]
+        return match["open"] + body + match["close"]
+
+    def banner(match):
+        nonlocal changes
+        source = match.group()
+        if not re.search(r"""name\s*=\s*["']apple-itunes-app["']""", source, re.I):
+            return source
+        content = re.search(r"""content\s*=\s*(?P<quote>["'])(?P<value>.*?)(?P=quote)""", source, re.I)
+        if content is None:
+            raise ValueError("Smart App Banner has no content")
+        fields = dict(
+            item.strip().split("=", 1)
+            for item in html.unescape(content["value"]).split(",") if "=" in item
+        )
+        app_id = fields.get("app-id", "")
+        if existing_campaign(fields.get("app-argument", "")) in PROTECTED_CAMPAIGNS:
+            # Web Stories mint their own banner (app-argument already carries
+            # iag_story) and validate_webstories pins that exact shape, so the
+            # generic pass must not append affiliate-data; strip one if a
+            # previous run did.
+            fields.pop("affiliate-data", None)
+        else:
+            url = retarget(f"https://apps.apple.com/app/id{app_id}")
+            fields["affiliate-data"] = urllib.parse.urlsplit(url).query
+        updated = html.escape(", ".join(f"{key}={value}" for key, value in fields.items()), quote=True)
+        if updated != content["value"]:
+            changes += 1
+            source = source[:content.start("value")] + updated + source[content.end("value"):]
+        return source
+
+    def markup(source):
+        for pattern in STORE_URL_PATTERNS:
+            source = pattern.sub(replace, source)
+        return re.sub(r"<meta\b[^>]*>", banner, source, flags=re.I)
+
+    pieces = []
+    previous = 0
+    for match in SCRIPT_RE.finditer(text):
+        pieces.extend((markup(text[previous:match.start()]), script(match)))
+        previous = match.end()
+    pieces.append(markup(text[previous:]))
+    return "".join(pieces), changes
 
 
 # --------------------------------------------------------------------------- #
@@ -338,14 +487,13 @@ def qr_card_desync(text: str) -> tuple[str, str, str] | None:
     """
     link = QR_CARD_LINK_RE.search(text)
     image = QR_CARD_IMAGE_RE.search(text)
+    if not link and not image:
+        return None
     if not link or not image:
-        return None
-    try:
-        url = normalize_app_store_campaign_url(
-            html.unescape(link.group("href"))
-        )
-    except ValueError:
-        return None
+        raise QrCardDesyncError("App Store QR card is missing its link or image")
+    url = normalize_app_store_campaign_url(
+        html.unescape(link.group("href"))
+    )
     expected = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20]
     if expected == image.group("digest"):
         return None
@@ -363,30 +511,67 @@ def iter_html(pages: Path):
         yield path.relative_to(pages).as_posix(), path
 
 
+def page_token(rel: str, text: str) -> str | None:
+    """The single campaign a page may carry: stories use the protected story
+    campaign, publisher visuals are left to their own generator (None), every
+    other surface gets the taxonomy bucket for its path."""
+    parts = set(Path(rel).parts)
+    if "stories" in parts:
+        return STORY_CAMPAIGN
+    if PROTECTED_PARTS.intersection(parts):
+        return None
+    return campaign_token(rel, text)
+
+
 def generate(pages: Path, check: bool) -> dict[str, object]:
+    from audit_store_attribution import audit_source, locale_of
+
     provider = resolve_provider_token() or None
+    if provider is None or PROVIDER_TOKEN_RE.fullmatch(provider) is None:
+        raise ValueError(f"{PROVIDER_TOKEN_ENV} must be configured for publication")
+    if not pages.is_dir():
+        raise ValueError(f"Missing generated pages directory: {pages}")
+    availability = load_storefront_availability(pages) or None
     files_with_links = 0
     files_changed = 0
     links_total = 0
     links_stamped = 0
     tokens: Counter = Counter()
+    pending = []
     for rel, path in iter_html(pages):
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        if "apps.apple.com" not in text:
+        text = path.read_text(encoding="utf-8")
+        if not any(marker in text for marker in (
+            "apps.apple.com", "apple-itunes-app", "data-app-store-url",
+            "app_store_url", "app-store-qr-card",
+        )):
             continue
         anchors = [
             match
             for pattern in STORE_URL_PATTERNS
             for match in pattern.findall(text)
         ]
-        if not anchors:
-            continue
-        files_with_links += 1
+        protected = bool(PROTECTED_PARTS.intersection(Path(rel).parts))
+        files_with_links += int(bool(anchors) and not protected)
         links_total += len(anchors)
-        token = campaign_token(rel, text)
-        updated, changes = rewrite(text, token, provider)
-        if changes and qr_card_desync(updated) and not qr_card_desync(text):
-            href, stale, expected = qr_card_desync(updated)
+        token = page_token(rel, text)
+        # Every failure names the page: a whole-tree run must point straight at
+        # the offending file instead of leaving the operator to bisect 80k pages.
+        try:
+            # Web Stories keep their own iag_story campaign but still carry
+            # machine-readable MobileApplication url/installUrl/downloadUrl
+            # that gen_mobile_app_identity emits clean; stamp those with the
+            # story campaign so the page has exactly one attributable token.
+            # Publisher visuals mint per-locale atomic campaigns and stay untouched.
+            updated, changes = (text, 0) if protected and token is None else rewrite(
+                text, token, provider, locale=locale_of(rel), availability=availability
+            )
+            desync = qr_card_desync(updated)
+        except QrCardDesyncError as error:
+            raise QrCardDesyncError(f"{rel}: {error}") from error
+        except ValueError as error:
+            raise ValueError(f"{rel}: {error}") from error
+        if desync:
+            href, stale, expected = desync
             raise QrCardDesyncError(
                 "store attribution would outdate the App Store QR image on "
                 f"{rel}: the card now links to {href} (sha {expected}) but its "
@@ -398,17 +583,37 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         # Census the token for every anchor on the page, not just the ones this
         # run had to touch — otherwise a second (idempotent) run reports zero
         # campaigns and the taxonomy looks empty.
-        if provider:
-            tokens[token] += len(anchors)
+        try:
+            refs = audit_source(updated, rel, provider=provider, availability=availability)
+        except ValueError as error:
+            raise ValueError(f"{rel}: {error}") from error
+        for ref in refs:
+            if not ref.identity:
+                tokens[existing_campaign(ref.url)] += 1
         if changes:
             links_stamped += changes
             files_changed += 1
             if not check:
-                path.write_text(updated, encoding="utf-8")
+                pending.append((rel, path, hashlib.sha256(text.encode("utf-8")).digest()))
+    # Validate the entire input before changing any page. Do not retain a whole
+    # site's HTML in memory, and never overwrite a concurrently changed page.
+    for rel, path, digest in pending:
+        text = path.read_text(encoding="utf-8")
+        if hashlib.sha256(text.encode("utf-8")).digest() != digest:
+            raise ValueError(f"Page changed during attribution preflight: {rel}")
+        try:
+            updated, _ = rewrite(
+                text, page_token(rel, text), provider,
+                locale=locale_of(rel), availability=availability,
+            )
+        except ValueError as error:
+            raise ValueError(f"{rel}: {error}") from error
+        path.write_text(updated, encoding="utf-8")
     return {
         "provider_token_configured": bool(provider),
         "pages_with_store_anchors": files_with_links,
         "store_anchors": links_total,
+        "attributed_links": sum(tokens.values()),
         "anchors_stamped": links_stamped,
         "pages_changed": files_changed,
         "distinct_campaigns": len(tokens),
@@ -426,11 +631,8 @@ def main() -> None:
     print("store-attribution: " + " ".join(f"{k}={v}" for k, v in stats.items()))
     for campaign, count in by_campaign.items():
         print(f"store-attribution:   {campaign} links={count:,}")
-    if not stats["provider_token_configured"]:
-        print(
-            f"store-attribution: {PROVIDER_TOKEN_ENV} is unset — links left clean; "
-            "set it and re-run to attribute the whole site."
-        )
+    if args.check and stats["pages_changed"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ Gdy zmieniasz branżę, problem z CV jest inny: twoje doświadczenie jest prawdz
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz CV Desk z App Store →](https://apps.apple.com/pl/app/id6781337213?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz CV Desk z App Store →](https://apps.apple.com/pl/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-resume-builder-app-for-career-changers-2026.html)
 

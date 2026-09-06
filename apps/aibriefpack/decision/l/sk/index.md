@@ -18,7 +18,7 @@ Lepší kontext, lepšie odpovede. Zobraziť snímok obrazovky, súbory, poznám
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Stiahnuť AI Brief: Súbory na AI prompt v App Store](https://apps.apple.com/sk/app/id6791658210?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť AI Brief: Súbory na AI prompt v App Store](https://apps.apple.com/sk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/aibriefpack.html)
 

@@ -17,7 +17,7 @@ Popotniški ustvarjalci potrebujejo ponovljiv filmski videz, ki doda zrnatost, h
 - Brezplačen začetek
 - App Store · Brezplačno
 
-[Pridobite PhotoCream v trgovini App Store →](https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Pridobite PhotoCream v trgovini App Store →](https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

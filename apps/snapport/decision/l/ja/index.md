@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - プライベート／端末内
 - App Store · ¥1,000
 
-[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

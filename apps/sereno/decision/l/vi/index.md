@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Sereno trên App Store →](https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Sereno trên App Store →](https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

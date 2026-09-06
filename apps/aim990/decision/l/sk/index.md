@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Zadarmo na začiatok
 - App Store · Zadarmo
 
-[Získajte Aim990 v App Store →](https://apps.apple.com/sk/app/id6784974530?pt=118326163&ct=iag_data_sk&mt=8)
+[Získajte Aim990 v App Store →](https://apps.apple.com/sk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

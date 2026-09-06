@@ -18,7 +18,7 @@ I bambini non stanno mai fermi, quindi foto sfocate o mosse sono inevitabili
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica Unblurry dall’App Store →](https://apps.apple.com/it/app/id6782275018?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Unblurry dall’App Store →](https://apps.apple.com/it/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

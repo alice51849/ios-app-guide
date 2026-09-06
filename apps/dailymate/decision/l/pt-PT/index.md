@@ -18,7 +18,7 @@ Antes de uma viagem, frases completas para situações reais são mais úteis do
 - Apple Watch
 - App Store · 12,99 €
 
-[Obtenha o DailyMate na App Store →](https://apps.apple.com/pt/app/id6790418321?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o DailyMate na App Store →](https://apps.apple.com/pt/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

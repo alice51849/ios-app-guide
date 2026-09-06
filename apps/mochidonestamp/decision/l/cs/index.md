@@ -17,7 +17,7 @@ Kdy jste naposledy měnili povlečení, zalévali rostlinu, volali rodině, zál
 - Zdarma na začátek
 - App Store · Zdarma
 
-[Stáhněte si Mochi DoneStamp: Naposledy v App Storu](https://apps.apple.com/cz/app/id6790800323?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si Mochi DoneStamp: Naposledy v App Storu](https://apps.apple.com/cz/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/mochidonestamp.html)
 

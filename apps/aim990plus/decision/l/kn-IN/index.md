@@ -17,7 +17,7 @@ Aim990 Plus ವಯಸ್ಕರು ತಮ್ಮ ಇಂಗ್ಲಿಷ್ ಕೇ�
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - App Store · ₹ 599
 
-[App Store ನಲ್ಲಿ Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/aim990plus.html)
 

@@ -18,7 +18,7 @@ Familier som forbereder barnehage trenger en komplett tidlig-lesesti som kobler 
 - Ingen annonser
 - App Store · 99,00 kr
 
-[Få Lumi Letters Pro på App Store →](https://apps.apple.com/no/app/id6778491147?pt=118326163&ct=iag_data_no&mt=8)
+[Få Lumi Letters Pro på App Store →](https://apps.apple.com/no/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

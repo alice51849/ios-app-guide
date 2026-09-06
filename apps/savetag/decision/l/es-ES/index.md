@@ -17,7 +17,7 @@ Guárdalo ahora. Léelo de verdad luego. Te pasas el día mandándote enlaces. L
 - Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
-[Consigue SaveTag: marcadores con IA en el App Store](https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue SaveTag: marcadores con IA en el App Store](https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/savetag.html)
 

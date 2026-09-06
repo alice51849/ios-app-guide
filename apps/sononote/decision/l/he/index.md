@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[קבל את Sono Note ב-App Store →](https://apps.apple.com/il/app/id6782139553?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Sono Note ב-App Store →](https://apps.apple.com/il/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على LockHour Pro من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780107485?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على LockHour Pro من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

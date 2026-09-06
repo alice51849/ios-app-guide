@@ -24,7 +24,7 @@ Intäkter och utgifter Varje projekt har sin egen bokföring: intäkter minus ut
 - Apple Watch
 - App Store · Gratis
 
-[Hämta MoneyTag i App Store](https://apps.apple.com/se/app/id6801956402?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta MoneyTag i App Store](https://apps.apple.com/se/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/moneytag.html)
 

@@ -19101,6 +19101,7 @@ class GeneratorTests(unittest.TestCase):
             [value for value in strings if value not in translations],
         )
 
+    @mock.patch.dict(os.environ, {"APP_STORE_PROVIDER_TOKEN": "123456789"})
     def test_partial_live_keys_cannot_truncate_the_intent_catalog(self):
         # Regression (CI run 32141442536): the daily workflow rebuilds the
         # finder from whatever live set the caller carries. A build holding
@@ -19176,6 +19177,7 @@ class GeneratorTests(unittest.TestCase):
                 ).exists()
             )
 
+    @mock.patch.dict(os.environ, {"APP_STORE_PROVIDER_TOKEN": "123456789"})
     def test_portfolio_app_finder_is_bilingual_factual_and_idempotent(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -19396,8 +19398,8 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(
             {
-                "https://apps.apple.com/app/id6780575828",
-                "https://apps.apple.com/app/id6789917808",
+                "https://apps.apple.com/app/id6780575828?pt=123456789&ct=geo_pick&mt=8",
+                "https://apps.apple.com/app/id6789917808?pt=123456789&ct=geo_pick&mt=8",
             },
             {record["appStoreUrl"] for record in legacy},
         )
@@ -19566,8 +19568,8 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(2, len(tool_records))
         self.assertEqual(
             [
-                appstore_url("snapport", "iag_finder_snapport"),
-                appstore_url("wordmate", "iag_finder_wordmate"),
+                appstore_url("snapport", "geo_learn"),
+                appstore_url("wordmate", "geo_learn"),
             ],
             [record["app_store_url"] for record in tool_records],
         )
@@ -20260,6 +20262,7 @@ class GeneratorTests(unittest.TestCase):
             {
                 "key": "snapport",
                 "app_store_id": "6780575828",
+                "app_store_url": "https://apps.apple.com/us/app/id6780575828?pt=123456789&ct=geo_pick&mt=8",
                 "name": "Snapport",
                 "summary": "Private passport photos.",
                 "search_terms": ["passport photo"],
@@ -20270,6 +20273,7 @@ class GeneratorTests(unittest.TestCase):
             {
                 "key": "wordmate",
                 "app_store_id": "6789917808",
+                "app_store_url": "https://apps.apple.com/us/app/id6789917808?pt=123456789&ct=geo_pick&mt=8",
                 "name": "Wordmate",
                 "summary": "Vocabulary practice.",
                 "search_terms": ["vocabulary"],
@@ -23321,8 +23325,10 @@ class GeneratorTests(unittest.TestCase):
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
         )
+        # 22 generator passes + 11 hero_tasks.py build/check passes (the hero
+        # task system re-materialises after every body-rewriting phase).
         self.assertEqual(
-            22,
+            33,
             workflow.count('--today "$GEO_BUILD_DATE"'),
         )
         self.assertEqual(

@@ -18,7 +18,7 @@ Snapport Lite - Fes fotos de passaport, visat i documents amb dimensions guiades
 - Fora de línia
 - App Store · Gratis
 
-[Descarrega Snapport Lite: Fotos de carnet a l’App Store](https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Snapport Lite: Fotos de carnet a l’App Store](https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/snapportlite.html)
 

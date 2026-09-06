@@ -22,7 +22,7 @@ HoursTag Lite — HoursTag Lite - See the real price of things Every purchase co
 - Apple Watch
 - App Store · 무료
 
-[App Store에서 HoursTag Lite 받기 →](https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 HoursTag Lite 받기 →](https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 

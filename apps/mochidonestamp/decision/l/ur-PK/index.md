@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز
 - App Store · مفت
 
-[App Store سے Mochi DoneStamp: آخری بار حاصل کریں](https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Mochi DoneStamp: آخری بار حاصل کریں](https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/mochidonestamp.html)
 

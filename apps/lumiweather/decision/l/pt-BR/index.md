@@ -19,7 +19,7 @@ Pais planejando passeios ao ar livre precisam de mais que temperatura: precisam 
 - Sem rastreamento
 - App Store · Grátis
 
-[Baixe Lumi Weather na App Store →](https://apps.apple.com/br/app/id6779552704?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Lumi Weather na App Store →](https://apps.apple.com/br/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Віджет
 - App Store · Безкоштовно
 
-[Завантажте CalDaily: калькулятор і теми з App Store](https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте CalDaily: калькулятор і теми з App Store](https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/caldaily.html)
 

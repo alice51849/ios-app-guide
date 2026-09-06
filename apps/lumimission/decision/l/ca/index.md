@@ -18,7 +18,7 @@ Per a un infant d'educació infantil, una rutina per anar a dormir funciona mill
 - Sense anuncis
 - App Store · Gratis
 
-[Obtén Lumi Mission Planet a l'App Store →](https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=iag_data_ca&mt=8)
+[Obtén Lumi Mission Planet a l'App Store →](https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

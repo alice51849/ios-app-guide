@@ -18,7 +18,7 @@ Cinc paraules, un minut, un pas visible en el teu camí. El Wordmate Lite agafa 
 - Fora de línia
 - App Store · Gratis
 
-[Descarrega Wordmate Lite: vocabulari a l’App Store](https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Wordmate Lite: vocabulari a l’App Store](https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/wordmatelite.html)
 

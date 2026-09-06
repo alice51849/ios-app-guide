@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次性解鎖
 - App Store · 免費
 
-[於 App Store 取得 TripBee Lite →](https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[於 App Store 取得 TripBee Lite →](https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

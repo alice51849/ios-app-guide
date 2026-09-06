@@ -17,7 +17,7 @@ Spreek met meer vertrouwen wanneer het ertoe doet. DailyMate Lite zet situaties 
 - Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
-[Download DailyMate Lite: Spreek nu in de App Store](https://apps.apple.com/nl/app/id6794725568?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download DailyMate Lite: Spreek nu in de App Store](https://apps.apple.com/nl/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/dailymatelite.html)
 

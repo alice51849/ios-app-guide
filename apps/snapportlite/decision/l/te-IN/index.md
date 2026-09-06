@@ -18,7 +18,7 @@ Snapport Lite - మార్గదర్శక పరిమాణం, నేప�
 - ఆఫ్‌లైన్
 - App Store · ఉచితం
 
-[App Store నుంచి Snapport Lite: ఐడీ ఫోటో తయారీ పొందండి](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి Snapport Lite: ఐడీ ఫోటో తయారీ పొందండి](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/snapportlite.html)
 

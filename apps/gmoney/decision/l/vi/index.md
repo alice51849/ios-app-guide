@@ -19,7 +19,7 @@ Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động
 - Không tài khoản
 - App Store · 149.000đ
 
-[Tải G+Money trên App Store →](https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải G+Money trên App Store →](https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

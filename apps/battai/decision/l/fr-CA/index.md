@@ -17,7 +17,7 @@ BattAI BattAI utilise cinq valeurs fournies par les API publiques d’iOS : nive
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenir BattAI: Santé de la batterie sur l'App Store](https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir BattAI: Santé de la batterie sur l'App Store](https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/battai.html)
 

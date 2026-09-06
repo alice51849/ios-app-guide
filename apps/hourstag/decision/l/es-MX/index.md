@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Privado / en el dispositivo
 - App Store · $99.00
 
-[Consigue HoursTag: Horas para comprar en el App Store](https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue HoursTag: Horas para comprar en el App Store](https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/hourstag.html)
 

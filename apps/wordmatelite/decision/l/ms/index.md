@@ -18,7 +18,7 @@ Ramai yang tersekat belajar bahasa pada titik kad hafalan masih belum siap disus
 - Luar talian
 - App Store · Percuma
 
-[Dapatkan Wordmate Lite Seminit Sehari di App Store](https://apps.apple.com/my/app/id6797601720?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Wordmate Lite Seminit Sehari di App Store](https://apps.apple.com/my/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/wordmatelite.html)
 

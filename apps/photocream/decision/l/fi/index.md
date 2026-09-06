@@ -17,7 +17,7 @@ Matkasisällön tekijät tarvitsevat toistettavan filmityylin, joka lisää rake
 - Ilmainen aloitus
 - App Store · Ilmainen
 
-[Hanki PhotoCream App Storesta →](https://apps.apple.com/fi/app/id6781808054?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki PhotoCream App Storesta →](https://apps.apple.com/fi/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

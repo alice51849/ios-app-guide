@@ -18,7 +18,7 @@ Vapauta tilaa nopeasti kohdistamalla suurimpiin voittoihin: täsmälliset kaksoi
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Hanki PicClear App Storesta →](https://apps.apple.com/fi/app/id6780223070?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki PicClear App Storesta →](https://apps.apple.com/fi/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

@@ -17,7 +17,7 @@ Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svar
 - Betald nedladdning
 - App Store · 79,00 kr
 
-[Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/wifiaid.html)
 

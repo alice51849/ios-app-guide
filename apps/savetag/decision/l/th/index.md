@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
 - App Store · ฟรี
 
-[ดาวน์โหลด SaveTag: บุ๊กมาร์ก AI บน App Store](https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด SaveTag: บุ๊กมาร์ก AI บน App Store](https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/savetag.html)
 

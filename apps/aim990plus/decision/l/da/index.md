@@ -17,7 +17,7 @@ Aim990 Plus er et samlet træningsværktøj til voksne, der vil læse og forstå
 - Betalt download
 - App Store · 49,00 kr
 
-[Hent Aim990 Plus: Engelsk prøvetest i App Store](https://apps.apple.com/dk/app/id6792483140?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Aim990 Plus: Engelsk prøvetest i App Store](https://apps.apple.com/dk/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/aim990plus.html)
 

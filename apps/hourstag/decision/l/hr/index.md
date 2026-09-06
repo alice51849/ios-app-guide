@@ -19,7 +19,7 @@ Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.
 - Privatno / na uređaju
 - App Store · 5,99 €
 
-[Preuzmite HoursTag: Sati za kupnju u App Storeu](https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite HoursTag: Sati za kupnju u App Storeu](https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/hourstag.html)
 

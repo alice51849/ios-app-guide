@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - App Store · ₹ 599
 
-[App Store-ൽ നിന്ന് WiFi Aid: കണക്ഷൻ പ്രശ്നം നേടൂ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് WiFi Aid: കണക്ഷൻ പ്രശ്നം നേടൂ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/wifiaid.html)
 

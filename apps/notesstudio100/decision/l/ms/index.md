@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/my/app/id6798813048?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/my/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/notesstudio100.html)
 

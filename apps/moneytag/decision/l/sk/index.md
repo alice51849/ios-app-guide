@@ -24,7 +24,7 @@ Príjmy a výdavky Každý projekt si vedie vlastné účtovníctvo: príjmy mí
 - Apple Watch
 - App Store · Zadarmo
 
-[Stiahnuť MoneyTag: Príjmy a výdavky v App Store](https://apps.apple.com/sk/app/id6801956402?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť MoneyTag: Príjmy a výdavky v App Store](https://apps.apple.com/sk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/moneytag.html)
 

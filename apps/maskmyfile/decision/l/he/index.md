@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[הורידו את Mask My File: מחיקת מידע אישי מה-App Store](https://apps.apple.com/il/app/id6792850916?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את Mask My File: מחיקת מידע אישי מה-App Store](https://apps.apple.com/il/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/maskmyfile.html)
 

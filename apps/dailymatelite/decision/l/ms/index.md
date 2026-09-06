@@ -17,7 +17,7 @@ Bercakap secara semula jadi apabila tiba masanya. DailyMate Lite mengubah situas
 - Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
-[Dapatkan DailyMate Lite: Cakap Hari Ini di App Store](https://apps.apple.com/my/app/id6794725568?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan DailyMate Lite: Cakap Hari Ini di App Store](https://apps.apple.com/my/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/dailymatelite.html)
 

@@ -18,7 +18,7 @@ AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceabl
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[App Store에서 AI Brief 받기 →](https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 AI Brief 받기 →](https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 

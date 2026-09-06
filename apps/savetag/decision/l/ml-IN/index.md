@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് SaveTag: AI ബുക്ക്മാർക്ക് നേടൂ](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് SaveTag: AI ബുക്ക്മാർക്ക് നേടൂ](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/savetag.html)
 

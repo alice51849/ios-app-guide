@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 
-[App Store पर Mask My File: जानकारी हटाएँ पाएँ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर Mask My File: जानकारी हटाएँ पाएँ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/maskmyfile.html)
 

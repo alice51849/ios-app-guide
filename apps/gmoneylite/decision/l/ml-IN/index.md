@@ -23,7 +23,7 @@ G+Money Lite — സ്മാർട്ട് യാത്രാ നാണ്യ�
 - Apple Watch
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് G+Money Lite: യാത്രാച്ചെലവ് നേടൂ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് G+Money Lite: യാത്രാച്ചെലവ് നേടൂ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/gmoneylite.html)
 

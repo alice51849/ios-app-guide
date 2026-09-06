@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 799,00 ₽
 
-[Скачать Wordmate: изучение 44 языков в App Store →](https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачать Wordmate: изучение 44 языков в App Store →](https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

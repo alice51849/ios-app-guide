@@ -19,7 +19,7 @@ Für den Schlaf ist ein monatlich nervendes Abo das Gegenteil von Erholung. Wenn
 - Keine Werbung
 - App Store · Kostenlos
 
-[Sereno im App Store herunterladen →](https://apps.apple.com/de/app/id6788236641?pt=118326163&ct=iag_data_de_de&mt=8)
+[Sereno im App Store herunterladen →](https://apps.apple.com/de/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

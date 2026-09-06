@@ -22,7 +22,7 @@ HoursTag Lite - Den sande pris på ting Hvert køb koster timer af dit liv. Hour
 - Apple Watch
 - App Store · Gratis
 
-[Hent HoursTag Lite: Pris i timer i App Store](https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=iag_data_da&mt=8)
+[Hent HoursTag Lite: Pris i timer i App Store](https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/hourstaglite.html)
 

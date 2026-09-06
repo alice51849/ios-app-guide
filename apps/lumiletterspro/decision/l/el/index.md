@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · 9,99 €
 
-[Αποκτήστε το Lumi Letters Pro στο App Store →](https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το Lumi Letters Pro στο App Store →](https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

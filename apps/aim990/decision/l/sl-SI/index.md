@@ -17,7 +17,7 @@ Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko čas
 - Brezplačen začetek
 - App Store · Brezplačno
 
-[Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

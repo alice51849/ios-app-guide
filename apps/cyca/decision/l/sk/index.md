@@ -18,7 +18,7 @@ V kategórii, kde je citlivosť údajov kľúčová, správna aplikácia na sled
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Získajte Cyca v App Store →](https://apps.apple.com/sk/app/id6782251621?pt=118326163&ct=iag_data_sk&mt=8)
+[Získajte Cyca v App Store →](https://apps.apple.com/sk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-period-tracker-app-no-account-required-iphone.html)
 

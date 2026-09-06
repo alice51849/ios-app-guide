@@ -18,7 +18,7 @@ Snapport Lite - Делайте фото на паспорт, визу и док�
 - Автономно
 - App Store · Бесплатно
 
-[Установить Snapport Lite: Паспортное фото в App Store](https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить Snapport Lite: Паспортное фото в App Store](https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/snapportlite.html)
 

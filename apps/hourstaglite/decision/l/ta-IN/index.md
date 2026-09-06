@@ -22,7 +22,7 @@ HoursTag Lite - விஷயங்களின் உண்மையான வ�
 - Apple Watch
 - App Store · இலவசம்
 
-[App Store-இல் HoursTag Lite: விலை மணிநேரமாக-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் HoursTag Lite: விலை மணிநேரமாக-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/hourstaglite.html)
 

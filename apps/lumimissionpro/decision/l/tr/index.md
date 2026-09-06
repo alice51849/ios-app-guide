@@ -18,7 +18,7 @@ Diş fırçalama ve uyku rutini çoğu gece aynı anda başarısız olur: çocuk
 - Reklam yok
 - App Store · ₺299,99
 
-[Lumi Mission Planet Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6779745474?pt=118326163&ct=iag_data_tr&mt=8)
+[Lumi Mission Planet Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

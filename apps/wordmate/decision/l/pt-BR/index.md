@@ -22,7 +22,7 @@ Quem usa transporte precisa de prática de vocabulário que caiba em minutos liv
 - Apple Watch
 - App Store · R$ 59,90
 
-[Baixe Wordmate: Aprenda 44 Idiomas na App Store →](https://apps.apple.com/br/app/id6789917808?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Wordmate: Aprenda 44 Idiomas na App Store →](https://apps.apple.com/br/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

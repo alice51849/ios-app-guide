@@ -18,7 +18,7 @@ Un meilleur contexte. De meilleures réponses. Transformer des captures d'écran
 - Privé / sur l'appareil
 - App Store · Gratuit
 
-[Obtenir AI Brief: Fichiers en prompt sur l'App Store](https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir AI Brief: Fichiers en prompt sur l'App Store](https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/aibriefpack.html)
 

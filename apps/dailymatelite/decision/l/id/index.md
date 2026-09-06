@@ -17,7 +17,7 @@ Siap berbicara saat situasi nyata datang. DailyMate Lite mengubah percakapan seh
 - Gratis untuk mulai · buka kunci sekali bayar
 - App Store · Gratis
 
-[Dapatkan DailyMate Lite di App Store](https://apps.apple.com/id/app/id6794725568?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan DailyMate Lite di App Store](https://apps.apple.com/id/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/dailymatelite.html)
 

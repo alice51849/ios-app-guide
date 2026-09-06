@@ -18,7 +18,7 @@ Für ein Baby-Passfoto darf niemand sonst im Bild sein und der Hintergrund muss 
 - Privat / auf dem Gerät
 - App Store · 6,99 €
 
-[Snapport im App Store herunterladen →](https://apps.apple.com/de/app/id6780575828?pt=118326163&ct=iag_data_de_de&mt=8)
+[Snapport im App Store herunterladen →](https://apps.apple.com/de/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

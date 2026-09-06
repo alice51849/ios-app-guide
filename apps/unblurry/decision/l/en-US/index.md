@@ -19,7 +19,7 @@ Kids never hold still, so soft-focus and camera-shake shots are inevitable
 - App Store · Free
 - ★ 1.0/5 · 1
 
-[Get Unblurry on the App Store →](https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Unblurry on the App Store →](https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

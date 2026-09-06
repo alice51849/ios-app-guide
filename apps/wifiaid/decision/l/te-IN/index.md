@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - చెల్లింపు డౌన్లోడ్
 - App Store · ₹ 599
 
-[App Store నుంచి WiFi Aid: నెట్వర్క్ సమస్య పొందండి](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి WiFi Aid: నెట్వర్క్ సమస్య పొందండి](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/wifiaid.html)
 

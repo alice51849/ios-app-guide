@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · मोफत
 
-[App Store वरून AI Brief: फाइलचे AI प्रॉम्प्ट मिळवा](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून AI Brief: फाइलचे AI प्रॉम्प्ट मिळवा](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/aibriefpack.html)
 

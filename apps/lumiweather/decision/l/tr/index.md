@@ -19,7 +19,7 @@ Dışarıda zaman planlayan ebeveynler sadece sıcaklık değil; çocuğa uygun 
 - Takip yok
 - App Store · Ücretsiz
 
-[Lumi Weather’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6779552704?pt=118326163&ct=iag_data_tr&mt=8)
+[Lumi Weather’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

@@ -23,7 +23,7 @@ G+Money Lite — Smart resevaluta- & utgiftsspårare Reskassan, enkelt Registrer
 - Apple Watch
 - App Store · Gratis
 
-[Hämta G+Money Lite: Reseutgifter i App Store](https://apps.apple.com/se/app/id6793436548?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta G+Money Lite: Reseutgifter i App Store](https://apps.apple.com/se/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/gmoneylite.html)
 

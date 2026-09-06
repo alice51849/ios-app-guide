@@ -17,7 +17,7 @@ Tangkapan skrin anda, tersusun Cari, urus dan kemaskan setiap tangkapan skrin. 5
 - Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
-[Dapatkan ShotInbox AI: Sort Screenshots di App Store](https://apps.apple.com/my/app/id6802166527?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan ShotInbox AI: Sort Screenshots di App Store](https://apps.apple.com/my/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/shotinbox.html)
 

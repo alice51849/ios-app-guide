@@ -17,7 +17,7 @@ Hvis du planlegger én kommende reise, er en rolig tidslinje for den turen mer n
 - Gratis å starte
 - App Store · Gratis
 
-[Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=iag_data_no&mt=8)
+[Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

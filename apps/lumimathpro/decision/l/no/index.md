@@ -18,7 +18,7 @@ En komplett tidlig-matte-app bør gjøre telling, tallforståelse og første reg
 - Ingen annonser
 - App Store · 99,00 kr
 
-[Få Lumi Math Pro på App Store →](https://apps.apple.com/no/app/id6776958488?pt=118326163&ct=iag_data_no&mt=8)
+[Få Lumi Math Pro på App Store →](https://apps.apple.com/no/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -18,7 +18,7 @@ Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikac
 - Bez oglasa
 - App Store · Besplatno
 
-[Preuzmite Lumi Letters u App Storeu →](https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Lumi Letters u App Storeu →](https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

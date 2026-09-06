@@ -18,7 +18,7 @@ Cinco palavras, um minuto, um passo que dá para ver. O Wordmate Lite pega aquel
 - Offline
 - App Store · Grátis
 
-[Baixe Wordmate Lite: aprenda idiomas na App Store](https://apps.apple.com/br/app/id6797601720?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Wordmate Lite: aprenda idiomas na App Store](https://apps.apple.com/br/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/wordmatelite.html)
 

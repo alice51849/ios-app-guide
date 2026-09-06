@@ -17,7 +17,7 @@ Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe
 - Besplatno za početak
 - App Store · Besplatno
 
-[Preuzmite DailyMate Lite: Govori danas u App Storeu](https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite DailyMate Lite: Govori danas u App Storeu](https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/dailymatelite.html)
 

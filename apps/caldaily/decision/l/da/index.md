@@ -18,7 +18,7 @@ En lommeregner, du beholder, fordi den husker, hvad hvert tal handlede om. De fl
 - Widget
 - App Store · Gratis
 
-[Hent CalDaily: lommeregner & temaer i App Store](https://apps.apple.com/dk/app/id6794178671?pt=118326163&ct=iag_data_da&mt=8)
+[Hent CalDaily: lommeregner & temaer i App Store](https://apps.apple.com/dk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/caldaily.html)
 

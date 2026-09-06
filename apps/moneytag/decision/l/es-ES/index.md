@@ -24,7 +24,7 @@ Ingresos y gastos Cada proyecto lleva sus propias cuentas: los ingresos menos lo
 - Apple Watch
 - App Store · Gratis
 
-[Consigue MoneyTag: Ingresos y gastos en el App Store](https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue MoneyTag: Ingresos y gastos en el App Store](https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/moneytag.html)
 

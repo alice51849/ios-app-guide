@@ -18,7 +18,7 @@ To free up space fast, target the biggest wins first: exact-duplicate photos, ne
 - Private / on-device
 - App Store · Free
 
-[Get PicClear on the App Store →](https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get PicClear on the App Store →](https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

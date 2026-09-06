@@ -23,7 +23,7 @@ G+Money Lite — Chytrý převodník měn a sledovač výdajů Cestovní peníze
 - Apple Watch
 - App Store · Zdarma
 
-[Stáhněte si G+Money Lite: Výdaje na cesty v App Storu](https://apps.apple.com/cz/app/id6793436548?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si G+Money Lite: Výdaje na cesty v App Storu](https://apps.apple.com/cz/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/gmoneylite.html)
 

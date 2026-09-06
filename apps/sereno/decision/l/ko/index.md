@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - App Store · 무료
 
-[App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

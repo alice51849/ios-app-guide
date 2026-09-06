@@ -18,7 +18,7 @@ Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací apli
 - Bez reklam
 - App Store · Zdarma
 
-[Stáhněte Lumi Letters v App Store →](https://apps.apple.com/cz/app/id6778748533?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte Lumi Letters v App Store →](https://apps.apple.com/cz/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

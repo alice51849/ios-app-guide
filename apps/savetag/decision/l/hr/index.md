@@ -17,7 +17,7 @@ Spremi sada. I ovaj put stvarno pročitaj. Cijeli dan šalješ poveznice sam seb
 - Besplatno za početak
 - App Store · Besplatno
 
-[Preuzmite SaveTag: AI oznake u App Storeu](https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite SaveTag: AI oznake u App Storeu](https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/savetag.html)
 

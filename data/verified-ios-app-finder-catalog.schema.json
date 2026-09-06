@@ -14,9 +14,47 @@
     "ordering",
     "availability_verification",
     "record_count",
-    "apps"
+    "apps",
+    "schema_version",
+    "generated_at",
+    "expires_at",
+    "source_digests",
+    "document_digest"
   ],
   "properties": {
+    "schema_version": {
+      "const": "growth-finder-evidence/1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "document_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_digests": {
+      "type": "object",
+      "required": [
+        "live_roster",
+        "catalog"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "live_roster": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "catalog": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
     "name": {
       "type": "string"
     },
@@ -46,11 +84,19 @@
       "required": [
         "source",
         "markets",
-        "retirement_rule"
+        "retirement_rule",
+        "verified_at"
       ],
       "properties": {
         "source": {
           "type": "string"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
         },
         "markets": {
           "type": "array",
@@ -67,12 +113,12 @@
       "additionalProperties": false
     },
     "record_count": {
-      "type": "integer",
-      "minimum": 1
+      "const": 46
     },
     "apps": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 46,
+      "maxItems": 46,
       "uniqueItems": true,
       "items": {
         "type": "object",
@@ -91,7 +137,12 @@
           "keywords",
           "capabilities",
           "canonical_app_store_url",
-          "verified_live"
+          "app_store_url",
+          "verified_live",
+          "verified_at",
+          "availability_status",
+          "availability_issues",
+          "metadata_status"
         ],
         "properties": {
           "key": {
@@ -185,8 +236,40 @@
             "type": "string",
             "format": "uri"
           },
+          "app_store_url": {
+            "type": "string",
+            "format": "uri"
+          },
           "verified_live": {
-            "const": true
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "verified_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "availability_status": {
+            "enum": [
+              "verified",
+              "unknown"
+            ]
+          },
+          "availability_issues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metadata_status": {
+            "enum": [
+              "verified",
+              "unknown"
+            ]
           }
         }
       }
@@ -202,11 +285,17 @@
       "additionalProperties": false,
       "properties": {
         "en": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "minLength": 1
         },
         "zh-Hant": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "minLength": 1
         }
       }

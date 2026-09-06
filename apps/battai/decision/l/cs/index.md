@@ -17,7 +17,7 @@ BattAI BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav n
 - Zdarma na začátek
 - App Store · Zdarma
 
-[Stáhněte si BattAI: Skóre kondice baterie v App Storu](https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si BattAI: Skóre kondice baterie v App Storu](https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/battai.html)
 

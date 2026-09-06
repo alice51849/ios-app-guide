@@ -17,7 +17,7 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 - Grátis para começar · desbloqueio único
 - App Store · Grátis
 
-[Obter o Mochi DoneStamp na App Store →](https://apps.apple.com/pt/app/id6790800323?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obter o Mochi DoneStamp na App Store →](https://apps.apple.com/pt/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 

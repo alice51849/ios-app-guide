@@ -24,7 +24,7 @@ Receitas e despesas Cada projeto tem as suas próprias contas: receitas menos de
 - Apple Watch
 - App Store · Grátis
 
-[Baixe MoneyTag: Receitas e despesas na App Store](https://apps.apple.com/pt/app/id6801956402?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Baixe MoneyTag: Receitas e despesas na App Store](https://apps.apple.com/pt/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/moneytag.html)
 

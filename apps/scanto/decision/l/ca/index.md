@@ -18,7 +18,7 @@ Si escaneges formularis de consentiment, documents d’alta o derivacions, l’e
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega ScanTo Pro a l’App Store →](https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega ScanTo Pro a l’App Store →](https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

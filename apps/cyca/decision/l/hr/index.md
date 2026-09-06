@@ -18,7 +18,7 @@ U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za pra�
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite Cyca u App Storeu →](https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Cyca u App Storeu →](https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-period-tracker-app-no-account-required-iphone.html)
 

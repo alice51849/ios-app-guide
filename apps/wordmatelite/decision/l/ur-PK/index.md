@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - آف لائن
 - App Store · مفت
 
-[App Store سے Wordmate Lite: روزانہ الفاظ حاصل کریں](https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Wordmate Lite: روزانہ الفاظ حاصل کریں](https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/wordmatelite.html)
 

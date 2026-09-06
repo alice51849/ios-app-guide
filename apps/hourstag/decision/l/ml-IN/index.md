@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · ₹ 499
 
-[App Store-ൽ നിന്ന് HoursTag: സമയം വാങ്ങുക നേടൂ](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് HoursTag: സമയം വാങ്ങുക നേടൂ](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/hourstag.html)
 

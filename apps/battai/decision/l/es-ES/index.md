@@ -17,7 +17,7 @@ BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, 
 - Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
-[Consigue BattAI: Salud de la batería en el App Store](https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue BattAI: Salud de la batería en el App Store](https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/battai.html)
 

@@ -11,6 +11,9 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "social"))
 from videogen.registry import APPS  # noqa: E402
+import re as _re  # noqa: E402
+
+_PAID_ONLY_INTENT_RE = _re.compile(r"in[-\s]?app purchase", _re.I)
 
 # 手工精選:最自然、最可能被問、競爭最小的利基問句
 CURATED = {
@@ -1196,6 +1199,10 @@ def is_inherited_query(
     question: str,
     selected_keys: set[str],
 ) -> bool:
+    # 零內購意圖的題目永遠由付費版擁有(免費版靠內購解鎖,不是答案),
+    # 不可因為免費版也在這一批就把 pro 的那一份跳掉。
+    if _PAID_ONLY_INTENT_RE.search(question):
+        return False
     free_key = _PRO_INHERITS.get(key)
     return bool(
         free_key
@@ -1235,6 +1242,18 @@ def queries_for(key):
 
 
 ALL = {k: queries_for(k) for k in APPS}
+
+# 免費門歸屬(2026-09-05):付費/免費配對中,免費版能誠實回答的品類問句由免費版
+# 擁有(頁面從產生時就是免費門、事實也是免費版的);零內購意圖的題目永遠歸
+# 付費版。判準在 free_first_ownership,只看產生器輸入。內容庫不可匯入時維持
+# 原始清單(ImportError 以外的錯誤照常拋出,不可默默退化)。
+FREE_FIRST_MOVES = {"to_free": {}, "to_paid": {}}
+try:
+    from free_first_ownership import apply_free_first_ownership as _apply_ownership
+except ImportError:
+    _apply_ownership = None
+if _apply_ownership is not None:
+    ALL, FREE_FIRST_MOVES = _apply_ownership(ALL)
 
 
 if __name__ == "__main__":

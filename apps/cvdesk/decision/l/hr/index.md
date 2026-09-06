@@ -17,7 +17,7 @@ Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskus
 - Besplatno za početak
 - App Store · Besplatno
 
-[Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-resume-builder-app-for-career-changers-2026.html)
 

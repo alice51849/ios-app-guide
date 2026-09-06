@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - App Store · ₪19.90
 
-[הורידו את WiFi Aid: איתור תקלות רשת מה-App Store](https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את WiFi Aid: איתור תקלות רשת מה-App Store](https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/wifiaid.html)
 

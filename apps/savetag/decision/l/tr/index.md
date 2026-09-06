@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
-[SaveTag: yapay zekâlı yer imi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=iag_data_tr&mt=8)
+[SaveTag: yapay zekâlı yer imi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/savetag.html)
 

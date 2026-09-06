@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Бесплатно начать · разовая разблокировка
 - App Store · Бесплатно
 
-[Скачать Aim990 в App Store →](https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачать Aim990 в App Store →](https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

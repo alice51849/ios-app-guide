@@ -17,7 +17,7 @@ Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS
 - Plaćeno preuzimanje
 - App Store · 6,99 €
 
-[Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/wifiaid.html)
 

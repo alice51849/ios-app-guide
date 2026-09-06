@@ -17,7 +17,7 @@ Aim990 Plus ਬਾਲਗ ਸਿੱਖਿਆਰਥੀਆਂ ਲਈ ਅੰਗਰ�
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - App Store · ₹ 599
 
-[App Store ਤੋਂ Aim990 Plus: ਅੰਗਰੇਜ਼ੀ ਟੈਸਟ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ Aim990 Plus: ਅੰਗਰੇਜ਼ੀ ਟੈਸਟ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/aim990plus.html)
 

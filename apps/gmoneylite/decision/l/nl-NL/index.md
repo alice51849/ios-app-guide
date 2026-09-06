@@ -23,7 +23,7 @@ G+Money Lite — Slimme reisvaluta- & uitgaventracker Reisgeld, simpel gemaakt L
 - Apple Watch
 - App Store · Gratis
 
-[Download G+Money Lite: Reisuitgaven in de App Store](https://apps.apple.com/nl/app/id6793436548?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download G+Money Lite: Reisuitgaven in de App Store](https://apps.apple.com/nl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/gmoneylite.html)
 

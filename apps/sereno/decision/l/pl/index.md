@@ -19,7 +19,7 @@ Na sen subskrypcja, która co miesiąc przypomina o opłacie, to przeciwieństwo
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Sereno w App Store →](https://apps.apple.com/pl/app/id6788236641?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Sereno w App Store →](https://apps.apple.com/pl/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

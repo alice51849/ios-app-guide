@@ -17,7 +17,7 @@ Salve agora. E dessa vez leia mesmo. Você passa o dia mandando links para você
 - Grátis para começar · desbloqueio único
 - App Store · Grátis
 
-[Baixe SaveTag: favoritos com IA na App Store](https://apps.apple.com/br/app/id6802505528?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe SaveTag: favoritos com IA na App Store](https://apps.apple.com/br/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/savetag.html)
 

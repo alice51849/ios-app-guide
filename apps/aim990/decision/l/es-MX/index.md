@@ -17,7 +17,7 @@ La Parte 5 parece corta, pero esas preguntas de oraciones incompletas pueden con
 - Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
-[Obtén Aim990 en la App Store →](https://apps.apple.com/mx/app/id6784974530?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Obtén Aim990 en la App Store →](https://apps.apple.com/mx/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

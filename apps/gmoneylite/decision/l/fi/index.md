@@ -23,7 +23,7 @@ G+Money Lite — Älykäs matkavaluutta- & kululaskuri Matkaraha, helposti Kirja
 - Apple Watch
 - App Store · Ilmainen
 
-[Lataa G+Money Lite: Matkakulut App Storesta](https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa G+Money Lite: Matkakulut App Storesta](https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/gmoneylite.html)
 

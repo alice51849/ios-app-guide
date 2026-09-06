@@ -18,7 +18,7 @@ Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứ
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Mochi trên App Store →](https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Mochi trên App Store →](https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

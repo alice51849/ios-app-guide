@@ -338,6 +338,8 @@ def _content_text(record: dict[str, Any]) -> str:
 def _group_records(
     records: list[dict[str, Any]],
 ) -> dict[str, list[dict[str, Any]]]:
+    from app_store_storefronts import validated_app_store_url
+
     grouped: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
     record_ids: set[str] = set()
     page_urls: set[str] = set()
@@ -361,10 +363,11 @@ def _group_records(
             record.get("app_store_url"),
             "App Store URL",
         )
+        validated_app_store_url(
+            app_store_url, app_id, expected_locale=locale, require_campaign=True
+        )
         if (
             not app_id.isdigit()
-            or not app_store_url.startswith("https://apps.apple.com/")
-            or f"id{app_id}" not in app_store_url
             or record.get("verified_live") is not True
             or record.get("is_ranking") is not False
             or record.get("measured_search_volume") is not False

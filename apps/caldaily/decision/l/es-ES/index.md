@@ -18,7 +18,7 @@ Una calculadora que conservarás, porque recuerda de qué iba cada número. La m
 - Widget
 - App Store · Gratis
 
-[Consigue CalDaily: calculadora y temas en el App Store](https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue CalDaily: calculadora y temas en el App Store](https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/caldaily.html)
 

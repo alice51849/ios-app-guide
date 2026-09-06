@@ -383,6 +383,8 @@ def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
                 "app_store_url": validated_app_store_url(
                     str(record["app_store_url"]),
                     expected_app_id=app_id,
+                    expected_locale=BASE_LOCALE,
+                    require_campaign=True,
                 ),
             }
         )
@@ -563,7 +565,7 @@ def jsonld_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
             "@id": f"{json_url()}#{row['app_key']}",
             "name": row["app_name"],
             "url": row["guide_url"],
-            "sameAs": row["app_store_url"],
+            "sameAs": validated_app_store_url(str(row["app_store_url"])).partition("?")[0],
             "installUrl": row["app_store_url"],
             "applicationCategory": row["category_label"],
             "operatingSystem": "iOS",

@@ -18,7 +18,7 @@ Voor een jong kind is het doorslaggevend dat er geen advertenties en geen datave
 - Geen advertenties
 - App Store · Gratis
 
-[Download Lumi Letters in de App Store →](https://apps.apple.com/nl/app/id6778748533?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download Lumi Letters in de App Store →](https://apps.apple.com/nl/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

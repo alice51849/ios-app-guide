@@ -17,7 +17,7 @@ Converteix un mur de text en UNA diapositiva que la gent llegeix. OnePage PPT ll
 - Inici gratuït
 - App Store · Gratis
 
-[Descarrega OnePage PPT: diapositives IA a l’App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega OnePage PPT: diapositives IA a l’App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/onepageppt.html)
 

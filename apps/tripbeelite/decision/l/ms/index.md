@@ -17,7 +17,7 @@ Jika anda merancang satu perjalanan akan datang, garis masa yang tenang untuk pe
 - Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
-[Dapatkan TripBee Lite di App Store →](https://apps.apple.com/my/app/id6791299610?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan TripBee Lite di App Store →](https://apps.apple.com/my/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

@@ -19,7 +19,7 @@ På en rejse har du brug for en budgetapp, der virker offline i et land uden dat
 - Ingen konto
 - App Store · 39,00 kr
 
-[Hent G+Money i App Store →](https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=iag_data_da&mt=8)
+[Hent G+Money i App Store →](https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

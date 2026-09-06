@@ -23,7 +23,7 @@ G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych Pieniądze w
 - Apple Watch
 - App Store · Bezpłatnie
 
-[Pobierz G+Money Lite: Koszty podróży z App Store](https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz G+Money Lite: Koszty podróży z App Store](https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/gmoneylite.html)
 

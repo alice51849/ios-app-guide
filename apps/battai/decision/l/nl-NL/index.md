@@ -17,7 +17,7 @@ BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, la
 - Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
-[Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/battai.html)
 

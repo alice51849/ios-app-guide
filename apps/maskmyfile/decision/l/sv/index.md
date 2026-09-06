@@ -18,7 +18,7 @@ Dela säkert utan att förlora det nyttiga sammanhanget. Mask My File hittar per
 - Privat / på enheten
 - App Store · Gratis
 
-[Hämta Mask My File: Radera dina data i App Store](https://apps.apple.com/se/app/id6792850916?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta Mask My File: Radera dina data i App Store](https://apps.apple.com/se/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/maskmyfile.html)
 

@@ -17,7 +17,7 @@ Upuzun bir metni, insanların gerçekten okuduğu TEK bir sayfaya dönüştürü
 - Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
-[OnePage PPT: Yapay Zeka Slayt uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798814385?pt=118326163&ct=iag_data_tr&mt=8)
+[OnePage PPT: Yapay Zeka Slayt uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/onepageppt.html)
 

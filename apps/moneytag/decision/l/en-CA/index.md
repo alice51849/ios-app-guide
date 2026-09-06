@@ -24,7 +24,7 @@ A monthly budget cannot tell a freelancer whether one client project actually ma
 - Apple Watch
 - App Store · Free
 
-[Get MoneyTag: Income & Expense on the App Store →](https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get MoneyTag: Income & Expense on the App Store →](https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html)
 

@@ -17,7 +17,7 @@ BattAI BattAI പൊതു iOS API-കളിൽ നിന്ന് 5 മൂല�
 - സൗജന്യമായി ആരംഭിക്കുക
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ നേടൂ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ നേടൂ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/battai.html)
 

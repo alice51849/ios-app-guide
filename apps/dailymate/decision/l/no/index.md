@@ -18,7 +18,7 @@ Før en reise er komplette fraser for virkelige situasjoner mer nyttige enn isol
 - Apple Watch
 - App Store · 149,00 kr
 
-[Skaff DailyMate i App Store →](https://apps.apple.com/no/app/id6790418321?pt=118326163&ct=iag_data_no&mt=8)
+[Skaff DailyMate i App Store →](https://apps.apple.com/no/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

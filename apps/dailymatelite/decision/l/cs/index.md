@@ -17,7 +17,7 @@ Mluvte jistě právě tehdy, když to potřebujete. DailyMate Lite mění situac
 - Zdarma na začátek
 - App Store · Zdarma
 
-[Stáhněte si DailyMate Lite: Mluvte jistě v App Storu](https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si DailyMate Lite: Mluvte jistě v App Storu](https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/dailymatelite.html)
 

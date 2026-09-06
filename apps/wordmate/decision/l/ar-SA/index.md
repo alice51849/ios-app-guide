@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · SAR 39.99
 
-[احصل على Wordmate: Learn 44 Languages من App Store →](https://apps.apple.com/sa/app/id6789917808?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على Wordmate: Learn 44 Languages من App Store →](https://apps.apple.com/sa/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -18,7 +18,7 @@ Delite varno, brez izgube koristnega konteksta. Mask My File poišče osebne pod
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite Mask My File: Odstrani podatke iz trgovine App Store](https://apps.apple.com/si/app/id6792850916?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Mask My File: Odstrani podatke iz trgovine App Store](https://apps.apple.com/si/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/maskmyfile.html)
 

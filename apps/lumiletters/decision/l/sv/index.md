@@ -18,7 +18,7 @@ För ett litet barn är avgörande faktorer annonser och datainsamling – en l�
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Lumi Letters på App Store →](https://apps.apple.com/se/app/id6778748533?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Lumi Letters på App Store →](https://apps.apple.com/se/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

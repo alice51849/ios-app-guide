@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - App Store · Безкоштовно
 
-[Отримайте Lumi Bopomofo в App Store →](https://apps.apple.com/ua/app/id6773017109?pt=118326163&ct=iag_data_uk&mt=8)
+[Отримайте Lumi Bopomofo в App Store →](https://apps.apple.com/ua/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

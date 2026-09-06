@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ચુકવેલ ડાઉનલોડ
 - App Store · ₹ 599
 
-[App Store પરથી WiFi Aid: નેટવર્ક સમસ્યા શોધો મેળવો](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી WiFi Aid: નેટવર્ક સમસ્યા શોધો મેળવો](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/wifiaid.html)
 

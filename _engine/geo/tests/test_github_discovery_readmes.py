@@ -200,12 +200,12 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
             ),
         )
 
-    def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
+    def test_campaign_tokens_share_the_existing_intent_bucket(self) -> None:
         tokens = [
             discovery.campaign_token(locale)
             for locale in OFFICIAL_LOCALES
         ]
-        self.assertEqual(len(tokens), len(set(tokens)))
+        self.assertEqual({"geo_pick"}, set(tokens))
         for token in tokens:
             self.assertLessEqual(len(token), 30)
             self.assertRegex(token, r"^[a-z0-9_]+$")
@@ -239,7 +239,10 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
                 "aim990plus",
             )
 
-    def test_store_url_is_clean_without_a_provider_token(self) -> None:
+    def test_store_url_fails_closed_without_a_provider_token(self) -> None:
+        # A README link is a CTA Apple reports on; without the provider token
+        # it cannot carry pt+ct+mt, and a silently clean link would publish an
+        # unattributable install path. The contract is to refuse, not degrade.
         record = {
             "locale": "ja",
             "app_store_id": "6780575828",
@@ -251,11 +254,10 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
         with mock.patch.dict(
             os.environ,
             {"APP_STORE_PROVIDER_TOKEN": ""},
+        ), self.assertRaisesRegex(
+            ValueError, "Missing App Store campaign attribution"
         ):
-            self.assertEqual(
-                "https://apps.apple.com/jp/app/id6780575828",
-                discovery.github_store_url(record),
-            )
+            discovery.github_store_url(record)
 
 
 class GitHubDiscoveryOutputTests(unittest.TestCase):

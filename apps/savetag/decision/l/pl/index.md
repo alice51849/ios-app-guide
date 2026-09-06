@@ -17,7 +17,7 @@ Zapisz teraz. I tym razem naprawdę przeczytaj. Cały dzień wysyłasz linki sam
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz SaveTag: zakładki z AI z App Store](https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz SaveTag: zakładki z AI z App Store](https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/savetag.html)
 

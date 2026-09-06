@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · 499,00 ₽
 
-[Скачать Lumi Mission Planet Pro в App Store →](https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачать Lumi Mission Planet Pro в App Store →](https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

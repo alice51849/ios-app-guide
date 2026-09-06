@@ -18,7 +18,7 @@ After a call you don't want a raw transcript — you want the summary, the actio
 - Private / on-device
 - App Store · Free
 
-[Get Sono Note on the App Store →](https://apps.apple.com/au/app/id6782139553?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get Sono Note on the App Store →](https://apps.apple.com/au/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

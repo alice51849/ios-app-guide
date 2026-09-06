@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - App Store · ¥38.00
 
-[在 App Store 获取 Aim990 Plus：英语模拟测验·限时](https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 Aim990 Plus：英语模拟测验·限时](https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/aim990plus.html)
 

@@ -20,7 +20,7 @@ Una buena app de itinerarios convierte un viaje desordenado en una línea de tie
 - Privado / en el dispositivo
 - App Store · $129.00
 
-[Obtén TripBee Pro: Planificador de Viajes en la App Store →](https://apps.apple.com/mx/app/id6787754435?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Obtén TripBee Pro: Planificador de Viajes en la App Store →](https://apps.apple.com/mx/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

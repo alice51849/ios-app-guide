@@ -17,7 +17,7 @@ A battery score is only useful when the app separates what iOS measured, what it
 - Free to start · one-time unlock
 - App Store · Free
 
-[Get BattAI on the App Store →](https://apps.apple.com/gb/app/id6802423998?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get BattAI on the App Store →](https://apps.apple.com/gb/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html)
 

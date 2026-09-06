@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ללא מעקב
 - App Store · בחינם
 
-[קבל את Lumi Weather ב-App Store →](https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Lumi Weather ב-App Store →](https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · Бесплатно
 
-[Скачайте Mochi в App Store →](https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачайте Mochi в App Store →](https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

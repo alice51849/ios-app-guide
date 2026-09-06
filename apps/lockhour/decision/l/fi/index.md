@@ -19,7 +19,7 @@ Kokeissa tahdonvoima ei riitä — tarvitaan tiukka ajoitettu esto. Siksi LockHo
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Hanki LockHour Pro App Storesta →](https://apps.apple.com/fi/app/id6780107485?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki LockHour Pro App Storesta →](https://apps.apple.com/fi/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

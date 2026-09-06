@@ -19,7 +19,7 @@ Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz
 - Bez praćenja
 - App Store · Besplatno
 
-[Preuzmite Lumi Weather na App Storeu →](https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Lumi Weather na App Storeu →](https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

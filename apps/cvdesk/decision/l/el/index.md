@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή
 - App Store · Δωρεάν
 
-[Κατεβάστε το CV Desk από το App Store →](https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το CV Desk από το App Store →](https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html)
 

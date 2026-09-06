@@ -17,7 +17,7 @@ Simpan sekarang. Dan kali ini betul-betul dibaca. Sepanjang hari anda menghantar
 - Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
-[Dapatkan SaveTag: penanda buku AI di App Store](https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan SaveTag: penanda buku AI di App Store](https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/savetag.html)
 

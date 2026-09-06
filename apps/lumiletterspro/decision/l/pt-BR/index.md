@@ -18,7 +18,7 @@ Famílias se preparando para a alfabetização precisam de um caminho completo q
 - Sem anúncios
 - App Store · R$ 59,90
 
-[Baixe Lumi Letters Pro na App Store →](https://apps.apple.com/br/app/id6778491147?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Lumi Letters Pro na App Store →](https://apps.apple.com/br/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

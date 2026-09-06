@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - App Store · 무료
 
-[App Store에서 Lumi Trip Planet 받기 →](https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Lumi Trip Planet 받기 →](https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

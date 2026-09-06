@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - App Store · ₹ 599
 
-[App Store ਤੋਂ WiFi Aid: ਨੈੱਟਵਰਕ ਸਮੱਸਿਆ ਲੱਭੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ WiFi Aid: ਨੈੱਟਵਰਕ ਸਮੱਸਿਆ ਲੱਭੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/wifiaid.html)
 

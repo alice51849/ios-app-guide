@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · Δωρεάν
 
-[Αποκτήστε το MoneyTag: Έσοδα και έξοδα από το App Store](https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το MoneyTag: Έσοδα και έξοδα από το App Store](https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/moneytag.html)
 

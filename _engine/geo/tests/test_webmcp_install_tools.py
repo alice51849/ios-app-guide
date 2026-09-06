@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 import re
 import sys
 import tempfile
 import unittest
+from unittest import mock
 
 
 GEO = Path(__file__).resolve().parents[1]
@@ -13,6 +15,7 @@ if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
 import gen_webmcp_install_tools as tools
+from app_store_storefronts import validated_app_store_url
 from official_locales import OFFICIAL_LOCALES
 from videogen.registry import APPS, APPSTORE
 
@@ -41,6 +44,11 @@ def _payload(source: str) -> dict[str, object]:
 
 
 class WebMcpInstallToolsTests(unittest.TestCase):
+    def setUp(self):
+        environment = mock.patch.dict(os.environ, {"APP_STORE_PROVIDER_TOKEN": "123456789"})
+        environment.start()
+        self.addCleanup(environment.stop)
+
     def test_generate_covers_locales_with_verified_storefronts(self):
         key = "lumibopomofo"
         app_id = str(APPSTORE[key])
@@ -125,7 +133,8 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                 payload = _payload(source)
                 self.assertEqual(locale, payload["page_language"])
                 self.assertEqual(
-                    f"https://apps.apple.com/{country}/app/id{app_id}",
+                    f"https://apps.apple.com/{country}/app/id{app_id}"
+                    "?pt=123456789&ct=geo_pick&mt=8",
                     payload["app_store_url"],
                 )
                 self.assertEqual(
@@ -185,7 +194,8 @@ class WebMcpInstallToolsTests(unittest.TestCase):
 
             self.assertEqual(1, stats["fallbacks"])
             self.assertEqual(
-                f"https://apps.apple.com/app/id{app_id}",
+                f"https://apps.apple.com/app/id{app_id}"
+                "?pt=123456789&ct=geo_pick&mt=8",
                 _payload(path.read_text(encoding="utf-8"))[
                     "app_store_url"
                 ],
@@ -265,10 +275,9 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                         str(APPS[key]["name"]),
                         payload["app_name"],
                     )
-                    self.assertRegex(
+                    validated_app_store_url(
                         payload["app_store_url"],
-                        r"^https://apps\.apple\.com/"
-                        r"(?:[a-z]{2}/)?app/id[0-9]{9,12}$",
+                        str(APPSTORE[key]), expected_locale=locale, require_campaign=True,
                     )
 
 

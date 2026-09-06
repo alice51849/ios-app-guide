@@ -17,7 +17,7 @@ Az 5. rész rövidnek tűnik, de az hiányos mondatos kérdések időt rabolhatn
 - Ingyenes kezdés
 - App Store · Ingyenes
 
-[Szerezd be az Aim990-et az App Store-ból →](https://apps.apple.com/hu/app/id6784974530?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezd be az Aim990-et az App Store-ból →](https://apps.apple.com/hu/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

@@ -18,7 +18,7 @@ Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[Sono Note’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=iag_data_tr&mt=8)
+[Sono Note’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

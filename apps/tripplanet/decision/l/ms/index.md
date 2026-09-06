@@ -18,7 +18,7 @@ Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengema
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

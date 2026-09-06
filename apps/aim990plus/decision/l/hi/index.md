@@ -17,7 +17,7 @@ Aim990 Plus वयस्क शिक्षार्थियों के ल�
 - भुगतान किया गया डाउनलोड
 - App Store · ₹ 599
 
-[App Store पर Aim990 Plus: अंग्रेजी टेस्ट पाएँ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर Aim990 Plus: अंग्रेजी टेस्ट पाएँ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/aim990plus.html)
 

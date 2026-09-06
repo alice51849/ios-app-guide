@@ -18,7 +18,7 @@ Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čis
 - Bez reklam
 - App Store · Zdarma
 
-[Stáhněte Mochi v App Store →](https://apps.apple.com/cz/app/id6785004775?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte Mochi v App Store →](https://apps.apple.com/cz/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

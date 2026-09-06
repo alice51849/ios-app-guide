@@ -18,7 +18,7 @@ Chaque outil inclut une utilisation complète gratuite. Déblocage à vie unique
 - Sans compte
 - App Store · Gratuit
 
-[Obtenir WiFi Aid Lite sur l'App Store](https://apps.apple.com/fr/app/id6793414462?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir WiFi Aid Lite sur l'App Store](https://apps.apple.com/fr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/wifiaidlite.html)
 

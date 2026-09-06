@@ -18,7 +18,7 @@ Gezinnen die zich voorbereiden op de kleuterklas hebben een compleet vroeg-leest
 - Geen advertenties
 - App Store · € 9,99
 
-[Lumi Letters Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6778491147?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Lumi Letters Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

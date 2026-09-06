@@ -20,7 +20,7 @@ Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành d�
 - Riêng tư / trên thiết bị
 - App Store · 199.000đ
 
-[Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →](https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải TripBee Pro: Trình lập kế hoạch chuyến đi trên App Store →](https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

@@ -19,7 +19,7 @@ For sleep, a subscription that nags you every month is the opposite of restful. 
 - No ads
 - App Store · Free
 
-[Get Sereno on the App Store →](https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Sereno on the App Store →](https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

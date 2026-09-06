@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - התחלה ללא תשלום
 - App Store · בחינם
 
-[קבל את CV Desk ב-App Store →](https://apps.apple.com/il/app/id6781337213?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את CV Desk ב-App Store →](https://apps.apple.com/il/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-resume-builder-app-for-career-changers-2026.html)
 

@@ -17,7 +17,7 @@ Wenn Sie eine bevorstehende Reise planen, ist eine ruhige Zeitachse für diese R
 - Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
-[Holen Sie sich TripBee Lite im App Store →](https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=iag_data_de_de&mt=8)
+[Holen Sie sich TripBee Lite im App Store →](https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · SAR 49.99
 
-[احصل على DailyMate من App Store →](https://apps.apple.com/sa/app/id6790418321?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على DailyMate من App Store →](https://apps.apple.com/sa/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

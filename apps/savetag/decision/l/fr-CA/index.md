@@ -17,7 +17,7 @@ Gardez-le maintenant. Lisez-le pour vrai plus tard. Toute la journée, vous vous
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenir SaveTag : signets par IA sur l'App Store](https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir SaveTag : signets par IA sur l'App Store](https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/savetag.html)
 

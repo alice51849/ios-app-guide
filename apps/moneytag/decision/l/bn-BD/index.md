@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · বিনামূল্যে
 
-[App Store থেকে MoneyTag: আয় ও ব্যয় ডাউনলোড করুন](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে MoneyTag: আয় ও ব্যয় ডাউনলোড করুন](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/moneytag.html)
 

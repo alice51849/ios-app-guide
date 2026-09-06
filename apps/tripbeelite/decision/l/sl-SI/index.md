@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Brezplačen začetek
 - App Store · Brezplačno
 
-[Prenesite TripBee Lite v App Store →](https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite TripBee Lite v App Store →](https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

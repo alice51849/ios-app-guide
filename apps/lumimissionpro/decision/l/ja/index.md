@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · ¥1,000
 
-[App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

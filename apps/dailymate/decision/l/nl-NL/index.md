@@ -18,7 +18,7 @@ Voor een reis zijn complete zinnen voor echte situaties nuttiger dan losse woord
 - Apple Watch
 - App Store · € 12,99
 
-[Download DailyMate in de App Store →](https://apps.apple.com/nl/app/id6790418321?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download DailyMate in de App Store →](https://apps.apple.com/nl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

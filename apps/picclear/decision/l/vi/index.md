@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải PicClear trên App Store →](https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải PicClear trên App Store →](https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

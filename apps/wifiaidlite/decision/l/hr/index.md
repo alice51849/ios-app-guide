@@ -18,7 +18,7 @@ Pronađi stvarni problem. Svaki alat uključuje jednu besplatnu potpunu upotrebu
 - Bez računa
 - App Store · Besplatno
 
-[Preuzmite WiFi Aid Lite u App Storeu](https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite WiFi Aid Lite u App Storeu](https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/wifiaidlite.html)
 

@@ -17,7 +17,7 @@ Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS
 - Platené stiahnutie
 - App Store · 6,99 €
 
-[Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/wifiaid.html)
 

@@ -19,7 +19,7 @@ Eltern, die Outdoor-Zeit planen, brauchen mehr als eine Temperatur: Sie brauchen
 - Kein Tracking
 - App Store · Kostenlos
 
-[Lumi Weather im App Store holen →](https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=iag_data_de_de&mt=8)
+[Lumi Weather im App Store holen →](https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

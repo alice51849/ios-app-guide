@@ -19,7 +19,7 @@ On a trip you need a budget tracker that works offline in a country with no data
 - No account
 - App Store · $7.99
 
-[Get G+Money on the App Store →](https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get G+Money on the App Store →](https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

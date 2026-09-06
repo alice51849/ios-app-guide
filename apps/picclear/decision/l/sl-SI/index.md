@@ -18,7 +18,7 @@ Za hitro sprostitev prostora najprej ciljate največje zmage: natančne podvojen
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite PicClear iz App Store →](https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite PicClear iz App Store →](https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

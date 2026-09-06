@@ -19,7 +19,7 @@ Ile to naprawdę kosztuje? Nie w złotówkach – w godzinach twojego życia.
 - Prywatne / na urządzeniu
 - App Store · 24,99 zł
 
-[Pobierz HoursTag: Godziny zakupu z App Store](https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz HoursTag: Godziny zakupu z App Store](https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/hourstag.html)
 

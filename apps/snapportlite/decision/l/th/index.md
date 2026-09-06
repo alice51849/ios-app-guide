@@ -18,7 +18,7 @@ Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า
 - ออฟไลน์
 - App Store · ฟรี
 
-[ดาวน์โหลด Snapport Lite: ทำรูปติดบัตร บน App Store](https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Snapport Lite: ทำรูปติดบัตร บน App Store](https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/snapportlite.html)
 

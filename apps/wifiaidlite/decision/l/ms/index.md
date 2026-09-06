@@ -18,7 +18,7 @@ Cari punca sebenar. Setiap alat termasuk satu penggunaan penuh percuma. Buka kun
 - Tiada akaun
 - App Store · Percuma
 
-[Dapatkan WiFi Aid Lite di App Store](https://apps.apple.com/my/app/id6793414462?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan WiFi Aid Lite di App Store](https://apps.apple.com/my/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/wifiaidlite.html)
 

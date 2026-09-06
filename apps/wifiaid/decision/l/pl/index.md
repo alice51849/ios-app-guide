@@ -17,7 +17,7 @@ Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, 
 - Płatne do pobrania
 - App Store · 29,99 zł
 
-[Pobierz WiFi Aid: Znajdź błędy sieci z App Store](https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz WiFi Aid: Znajdź błędy sieci z App Store](https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/wifiaid.html)
 

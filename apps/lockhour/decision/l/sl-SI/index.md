@@ -19,7 +19,7 @@ Med izpiti volja ni orodje — trda časovno omejena blokada je. Prav zato LockH
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite LockHour Pro iz App Store →](https://apps.apple.com/si/app/id6780107485?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite LockHour Pro iz App Store →](https://apps.apple.com/si/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

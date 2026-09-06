@@ -17,7 +17,7 @@ Nu bewaren. En deze keer ook echt lezen. De hele dag stuur je jezelf links. Het 
 - Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
-[Download SaveTag: AI-bladwijzers in de App Store](https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download SaveTag: AI-bladwijzers in de App Store](https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/savetag.html)
 

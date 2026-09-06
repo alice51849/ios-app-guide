@@ -24,7 +24,7 @@ Inkomsten & uitgaven Elk project houdt zijn eigen boekhouding bij: inkomsten min
 - Apple Watch
 - App Store · Gratis
 
-[Download MoneyTag: Inkomsten & uitgaven in de App Store](https://apps.apple.com/nl/app/id6801956402?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download MoneyTag: Inkomsten & uitgaven in de App Store](https://apps.apple.com/nl/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/moneytag.html)
 

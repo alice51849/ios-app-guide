@@ -13,7 +13,7 @@ import urllib.parse
 
 from app_store_storefronts import (
     CAMPAIGN_TOKEN_RE,
-    campaign_app_store_url,
+    required_campaign_app_store_url,
     validated_app_store_url,
 )
 from official_locales import OFFICIAL_LOCALES
@@ -199,19 +199,19 @@ def validate_dataset(payload: dict[str, object]) -> list[dict[str, Any]]:
 
 
 def campaign_token(locale: str) -> str:
-    token = f"iag_gh_{locale.replace('-', '_').lower()}"
-    if CAMPAIGN_TOKEN_RE.fullmatch(token) is None:
-        raise ValueError(f"Invalid GitHub README campaign token: {token}")
-    return token
+    from gen_store_attribution import campaign_token as surface_campaign_token
+
+    if locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Invalid GitHub README campaign locale: {locale}")
+    return surface_campaign_token("apps/README.md")
 
 
 def github_store_url(record: dict[str, Any]) -> str:
-    result = campaign_app_store_url(
+    return required_campaign_app_store_url(
         record["app_store_url"],
         campaign_token(record["locale"]),
+        expected_app_id=record["app_store_id"], expected_locale=record["locale"],
     )
-    validated_app_store_url(result, record["app_store_id"])
-    return result
 
 
 def _markdown_text(value: object) -> str:

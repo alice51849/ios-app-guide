@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Mask My File: ಮಾಹಿತಿ ಅಳಿಸಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Mask My File: ಮಾಹಿತಿ ಅಳಿಸಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/maskmyfile.html)
 

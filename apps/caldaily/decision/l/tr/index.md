@@ -18,7 +18,7 @@ Gerçekten kullanmaya devam edeceğiniz bir hesap makinesi, çünkü her sayın�
 - Araç takımı
 - App Store · Ücretsiz
 
-[CalDaily: hesap makinesi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794178671?pt=118326163&ct=iag_data_tr&mt=8)
+[CalDaily: hesap makinesi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/caldaily.html)
 

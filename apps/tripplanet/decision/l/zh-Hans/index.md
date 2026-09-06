@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 一次性解锁
 - 无广告
 
-[在App Store获取Lumi Trip Planet →](https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Lumi Trip Planet →](https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ¥2,000
 
-[App StoreでDailyMateを入手 →](https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでDailyMateを入手 →](https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - App Store · ₪29.90
 
-[קבל את Lumi Math Pro ב-App Store →](https://apps.apple.com/il/app/id6776958488?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Lumi Math Pro ב-App Store →](https://apps.apple.com/il/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

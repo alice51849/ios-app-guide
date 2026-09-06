@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Reklam yok
 - App Store · Ücretsiz
 
-[Mochi'yi App Store'dan edinin →](https://apps.apple.com/tr/app/id6785004775?pt=118326163&ct=iag_data_tr&mt=8)
+[Mochi'yi App Store'dan edinin →](https://apps.apple.com/tr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

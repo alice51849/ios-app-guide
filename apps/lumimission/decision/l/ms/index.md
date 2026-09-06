@@ -18,7 +18,7 @@ Bagi kanak-kanak prasekolah, rutin waktu tidur paling berkesan apabila ia pendek
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Mission Planet di App Store →](https://apps.apple.com/my/app/id6779750237?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Mission Planet di App Store →](https://apps.apple.com/my/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

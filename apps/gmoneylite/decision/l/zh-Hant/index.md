@@ -23,7 +23,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 免費
 
-[前往 App Store 取得 G+Money Lite →](https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[前往 App Store 取得 G+Money Lite →](https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 

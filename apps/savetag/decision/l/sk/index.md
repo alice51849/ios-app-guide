@@ -17,7 +17,7 @@ Ulož teraz. A tentoraz to naozaj prečítaj. Celý deň si posielaš odkazy. Re
 - Zadarmo na začiatok
 - App Store · Zadarmo
 
-[Stiahnuť SaveTag: záložky s AI v App Store](https://apps.apple.com/sk/app/id6802505528?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť SaveTag: záložky s AI v App Store](https://apps.apple.com/sk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/savetag.html)
 

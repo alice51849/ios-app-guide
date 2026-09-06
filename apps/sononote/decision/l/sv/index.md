@@ -18,7 +18,7 @@ Efter ett samtal vill du inte ha en rå transkription – du vill ha sammanfattn
 - Privat / på enheten
 - App Store · Gratis
 
-[Skaffa Sono Note i App Store →](https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Sono Note i App Store →](https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

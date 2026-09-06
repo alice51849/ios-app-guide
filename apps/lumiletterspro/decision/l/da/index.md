@@ -18,7 +18,7 @@ Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læs
 - Ingen reklamer
 - App Store · 79,00 kr
 
-[Hent Lumi Letters Pro i App Store →](https://apps.apple.com/dk/app/id6778491147?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Lumi Letters Pro i App Store →](https://apps.apple.com/dk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

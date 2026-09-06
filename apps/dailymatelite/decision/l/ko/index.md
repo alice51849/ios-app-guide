@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 무료로 시작 · 한 번 결제로 잠금 해제
 - App Store · 무료
 
-[App Store에서 DailyMate Lite: 바로 쓰는 한마디 받기](https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 DailyMate Lite: 바로 쓰는 한마디 받기](https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/dailymatelite.html)
 

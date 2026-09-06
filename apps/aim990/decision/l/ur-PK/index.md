@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز
 - App Store · مفت
 
-[Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

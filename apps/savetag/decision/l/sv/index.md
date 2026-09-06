@@ -17,7 +17,7 @@ Spara nu. Läs på riktigt sen. Du skickar länkar till dig själv hela dagarna.
 - Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
-[Hämta SaveTag: AI-bokmärken i App Store](https://apps.apple.com/se/app/id6802505528?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta SaveTag: AI-bokmärken i App Store](https://apps.apple.com/se/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/savetag.html)
 

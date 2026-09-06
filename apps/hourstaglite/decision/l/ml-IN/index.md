@@ -22,7 +22,7 @@ HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വ�
 - Apple Watch
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് HoursTag Lite: വില മണിക്കൂറിൽ നേടൂ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് HoursTag Lite: വില മണിക്കൂറിൽ നേടൂ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/hourstaglite.html)
 

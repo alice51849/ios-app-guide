@@ -145,6 +145,8 @@ def offer_item(
     store_url = validated_app_store_url(
         str(record["app_store_url"]),
         expected_app_id=app_id,
+        expected_locale=locale,
+        require_campaign=True,
     )
     offer_id = f"{catalog_url(locale)}#offer-{record['app_key']}"
     application = gen_mobile_app_identity.mobile_app_schema(

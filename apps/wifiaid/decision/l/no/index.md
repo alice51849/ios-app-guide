@@ -17,7 +17,7 @@ Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS
 - Betalt nedlasting
 - App Store · 79,00 kr
 
-[Last ned WiFi Aid: Finn nettverksfeil fra App Store](https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned WiFi Aid: Finn nettverksfeil fra App Store](https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/wifiaid.html)
 

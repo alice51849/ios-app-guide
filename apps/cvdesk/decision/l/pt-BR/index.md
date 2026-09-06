@@ -17,7 +17,7 @@ Quando você muda de área, o problema do currículo é diferente: sua experiên
 - Grátis para começar · desbloqueio único
 - App Store · Grátis
 
-[Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-resume-builder-app-for-career-changers-2026.html)
 

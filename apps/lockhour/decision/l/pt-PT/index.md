@@ -19,7 +19,7 @@ Durante os exames, a força de vontade não é a ferramenta — um bloqueio temp
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Obtenha o LockHour Pro na App Store →](https://apps.apple.com/pt/app/id6780107485?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o LockHour Pro na App Store →](https://apps.apple.com/pt/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

@@ -17,7 +17,7 @@ Aus einer Textwand wird EINE Folie, die wirklich gelesen wird. OnePage PPT werte
 - Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
-[OnePage PPT: KI Folien im App Store laden](https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=iag_data_de_de&mt=8)
+[OnePage PPT: KI Folien im App Store laden](https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/onepageppt.html)
 

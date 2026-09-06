@@ -97,11 +97,14 @@ def require_mobile_identity(document, key, canonical, label):
         raise ValueError(f"{label}: expected one MobileApplication, found {len(apps)}")
     app = apps[0]
     store_url = f"https://apps.apple.com/app/id{APPSTORE[key]}"
+    # @id stays the clean identity; the actionable fields carry the same
+    # iag_story campaign as the visible CTA (gen_store_attribution stamps them).
+    campaign_url = appstore_url(key, "iag_story")
     expected = {
         "@id": store_url,
-        "url": store_url,
-        "installUrl": store_url,
-        "downloadUrl": store_url,
+        "url": campaign_url,
+        "installUrl": campaign_url,
+        "downloadUrl": campaign_url,
     }
     for field, value in expected.items():
         if app.get(field) != value:

@@ -17,7 +17,7 @@ OnePage PPT — Turn a wall of text into ONE slide people actually read. Free to
 - Free to start · one-time unlock
 - App Store · Free
 
-[Get OnePage PPT on the App Store →](https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get OnePage PPT on the App Store →](https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html)
 

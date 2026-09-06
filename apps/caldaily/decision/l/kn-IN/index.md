@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ವಿಜೆಟ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/caldaily.html)
 

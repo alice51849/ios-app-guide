@@ -18,7 +18,7 @@ Eskarivalmistautuville perheille tarvitaan kokonainen lukemaan oppimisen polku, 
 - Ei mainoksia
 - App Store · 9,99 €
 
-[Hanki Lumi Letters Pro App Storesta →](https://apps.apple.com/fi/app/id6778491147?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Lumi Letters Pro App Storesta →](https://apps.apple.com/fi/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -18,7 +18,7 @@ Kalkulator yang anda akan terus guna, kerana ia mengingati apa yang ada di sebal
 - Widjet
 - App Store · Percuma
 
-[Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/my/app/id6794178671?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/my/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/caldaily.html)
 

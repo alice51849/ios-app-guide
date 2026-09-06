@@ -18,7 +18,7 @@ För att frigöra utrymme snabbt, börja med de största vinsterna: exakta dubbl
 - Privat / på enheten
 - App Store · Gratis
 
-[Skaffa PicClear på App Store →](https://apps.apple.com/se/app/id6780223070?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa PicClear på App Store →](https://apps.apple.com/se/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

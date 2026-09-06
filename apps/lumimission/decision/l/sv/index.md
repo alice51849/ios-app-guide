@@ -18,7 +18,7 @@ För ett förskolebarn fungerar en kvällsrutin bäst när den är kort, visuell
 - Inga annonser
 - App Store · Gratis
 
-[Hämta Lumi Mission Planet på App Store →](https://apps.apple.com/se/app/id6779750237?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta Lumi Mission Planet på App Store →](https://apps.apple.com/se/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

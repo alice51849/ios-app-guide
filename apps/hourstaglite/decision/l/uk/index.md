@@ -22,7 +22,7 @@ HoursTag Lite - Побачте справжню ціну речей Кожна �
 - Apple Watch
 - App Store · Безкоштовно
 
-[Завантажте HoursTag Lite: Ціна в годинах з App Store](https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте HoursTag Lite: Ціна в годинах з App Store](https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/hourstaglite.html)
 

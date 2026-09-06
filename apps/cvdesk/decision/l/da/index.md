@@ -17,7 +17,7 @@ Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikk
 - Gratis at komme i gang
 - App Store · Gratis
 
-[Hent CV Desk i App Store →](https://apps.apple.com/dk/app/id6781337213?pt=118326163&ct=iag_data_da&mt=8)
+[Hent CV Desk i App Store →](https://apps.apple.com/dk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-resume-builder-app-for-career-changers-2026.html)
 

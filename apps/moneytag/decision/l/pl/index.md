@@ -24,7 +24,7 @@ Przychody i wydatki Każdy projekt prowadzi własną księgę: przychody minus w
 - Apple Watch
 - App Store · Bezpłatnie
 
-[Pobierz MoneyTag: Przychody i wydatki z App Store](https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz MoneyTag: Przychody i wydatki z App Store](https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/moneytag.html)
 

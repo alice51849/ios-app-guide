@@ -18,7 +18,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada k
 - Apple Watch
 - App Store · RM59.90
 
-[Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

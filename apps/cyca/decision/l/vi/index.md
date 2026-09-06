@@ -18,7 +18,7 @@ Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải Cyca trên App Store →](https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Cyca trên App Store →](https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-period-tracker-app-no-account-required-iphone.html)
 

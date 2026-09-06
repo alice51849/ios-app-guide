@@ -18,7 +18,7 @@ Den bästa matteappen för barn tränar resonemang – mönster, sekvenser, rums
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Lumi Math Planet på App Store →](https://apps.apple.com/se/app/id6778269699?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Lumi Math Planet på App Store →](https://apps.apple.com/se/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

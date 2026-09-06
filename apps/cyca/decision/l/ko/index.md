@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8)
+[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html)
 

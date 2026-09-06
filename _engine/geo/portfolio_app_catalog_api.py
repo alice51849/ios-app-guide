@@ -35,6 +35,7 @@ from official_locales import (  # noqa: E402
     require_official_locale_coverage,
 )
 import portfolio_app_finder  # noqa: E402
+from gen_store_attribution import campaign_token as surface_campaign_token  # noqa: E402
 from static_api_catalog import build_api_discovery  # noqa: E402
 from videogen.registry import (  # noqa: E402
     APPSTORE,
@@ -151,10 +152,9 @@ def feed_url(locale: str) -> str:
 
 
 def _channel_campaign(channel: str, locale: str) -> str:
-    value = f"iag_{channel}_{locale.replace('-', '_').lower()}"
-    if len(value) > 30 or not re.fullmatch(r"[A-Za-z0-9_]+", value):
-        raise ValueError(f"Invalid catalog campaign token: {value}")
-    return value
+    if channel not in {"api", "feed"} or locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Invalid catalog campaign context: {channel}/{locale}")
+    return surface_campaign_token(f"api/{channel}/{locale}.json")
 
 
 def _campaign(locale: str) -> str:
@@ -367,9 +367,8 @@ def _retarget_app_store_campaign(
     app: dict[str, object],
     campaign: str,
 ) -> str:
-    current = str(
-        app.get("app_store_url")
-        or f"https://apps.apple.com/app/id{app['app_store_id']}"
+    current = validated_app_store_url(
+        app.get("app_store_url"), str(app["app_store_id"])
     )
     parsed = urllib.parse.urlsplit(current)
     parameters = urllib.parse.parse_qs(parsed.query)
@@ -1223,6 +1222,8 @@ def validate_artifacts(
                 validated_app_store_url(
                     str(app["app_store_url"]),
                     expected_app_id=app_id,
+                    expected_locale=locale,
+                    require_campaign=True,
                 )
             except ValueError as error:
                 raise ValueError(
@@ -1259,6 +1260,8 @@ def validate_artifacts(
                 validated_app_store_url(
                     str(item["external_url"]),
                     expected_app_id=str(app["app_store_id"]),
+                    expected_locale=locale,
+                    require_campaign=True,
                 )
             except ValueError as error:
                 raise ValueError(

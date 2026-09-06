@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
-[App Store で OnePage PPT: AI資料作成 を入手](https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で OnePage PPT: AI資料作成 を入手](https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/onepageppt.html)
 

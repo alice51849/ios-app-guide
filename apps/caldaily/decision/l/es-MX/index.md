@@ -18,7 +18,7 @@ Una calculadora que vas a conservar, porque recuerda de qué se trataba cada nú
 - Widget
 - App Store · Gratis
 
-[Consigue CalDaily: calculadora y temas en el App Store](https://apps.apple.com/mx/app/id6794178671?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue CalDaily: calculadora y temas en el App Store](https://apps.apple.com/mx/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/caldaily.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - App Store · בחינם
 
-[קבל את Mochi ב-App Store →](https://apps.apple.com/il/app/id6785004775?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Mochi ב-App Store →](https://apps.apple.com/il/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

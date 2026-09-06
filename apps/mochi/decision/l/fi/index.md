@@ -18,7 +18,7 @@ Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkist
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Mochi App Storesta →](https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Mochi App Storesta →](https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

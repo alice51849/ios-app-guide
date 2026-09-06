@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Αποκτήστε το 100 Notes Studio: Pen & Paper από το App Store](https://apps.apple.com/gr/app/id6798813048?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το 100 Notes Studio: Pen & Paper από το App Store](https://apps.apple.com/gr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/notesstudio100.html)
 

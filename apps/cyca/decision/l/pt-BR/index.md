@@ -18,7 +18,7 @@ Em uma categoria onde a sensibilidade dos dados é tudo, o rastreador certo mant
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Baixe Cyca na App Store →](https://apps.apple.com/br/app/id6782251621?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Cyca na App Store →](https://apps.apple.com/br/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-period-tracker-app-no-account-required-iphone.html)
 

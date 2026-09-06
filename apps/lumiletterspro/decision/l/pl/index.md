@@ -18,7 +18,7 @@ Rodziny przygotowujące się do przedszkola potrzebują kompletnej ścieżki wcz
 - Bez reklam
 - App Store · 39,99 zł
 
-[Pobierz Lumi Letters Pro z App Store →](https://apps.apple.com/pl/app/id6778491147?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Lumi Letters Pro z App Store →](https://apps.apple.com/pl/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

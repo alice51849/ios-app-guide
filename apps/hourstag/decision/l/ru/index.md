@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · 449,00 ₽
 
-[Установить HoursTag: Часы для покупки в App Store](https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить HoursTag: Часы для покупки в App Store](https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/hourstag.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Κατεβάστε το Cyca από το App Store →](https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το Cyca από το App Store →](https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html)
 

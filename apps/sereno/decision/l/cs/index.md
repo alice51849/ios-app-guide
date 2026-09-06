@@ -19,7 +19,7 @@ Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klid
 - Bez reklam
 - App Store · Zdarma
 
-[Stáhněte Sereno v App Store →](https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte Sereno v App Store →](https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

@@ -18,7 +18,7 @@ Za predšolskega otroka je večerna rutina najbolj učinkovita, če je kratka, v
 - Brez oglasov
 - App Store · Brezplačno
 
-[Prenesite Lumi Mission Planet v trgovini App Store →](https://apps.apple.com/si/app/id6779750237?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Lumi Mission Planet v trgovini App Store →](https://apps.apple.com/si/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

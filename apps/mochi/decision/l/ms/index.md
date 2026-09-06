@@ -18,7 +18,7 @@ Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak b
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Mochi di App Store →](https://apps.apple.com/my/app/id6785004775?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Mochi di App Store →](https://apps.apple.com/my/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

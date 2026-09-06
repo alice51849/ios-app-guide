@@ -17,7 +17,7 @@ Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so re
 - Brezplačen začetek
 - App Store · Brezplačno
 
-[Prenesite CV Desk v App Store →](https://apps.apple.com/si/app/id6781337213?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite CV Desk v App Store →](https://apps.apple.com/si/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-resume-builder-app-for-career-changers-2026.html)
 

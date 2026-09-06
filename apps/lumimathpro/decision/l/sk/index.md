@@ -18,7 +18,7 @@ Kompletná aplikácia na ranú matematiku by mala spájať počítanie, číseln
 - Bez reklám
 - App Store · 9,99 €
 
-[Získajte Lumi Math Pro v App Store →](https://apps.apple.com/sk/app/id6776958488?pt=118326163&ct=iag_data_sk&mt=8)
+[Získajte Lumi Math Pro v App Store →](https://apps.apple.com/sk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -18,7 +18,7 @@ Snapport Lite - Tag pas-, visum- og dokumentfotos med vejledende størrelser, ba
 - Offline
 - App Store · Gratis
 
-[Hent Snapport Lite: Pasfoto hjemme i App Store](https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Snapport Lite: Pasfoto hjemme i App Store](https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/snapportlite.html)
 

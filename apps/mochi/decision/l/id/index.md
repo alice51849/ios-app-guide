@@ -18,7 +18,7 @@ Jika sebagian besar aplikasi daftar tugas terasa berat, yang tepat adalah daftar
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Mochi di App Store →](https://apps.apple.com/id/app/id6785004775?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Mochi di App Store →](https://apps.apple.com/id/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

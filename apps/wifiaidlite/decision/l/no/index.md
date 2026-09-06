@@ -18,7 +18,7 @@ Finn det virkelige problemet. Hvert verktøy inkluderer én gratis full bruk. Va
 - Ingen konto
 - App Store · Gratis
 
-[Last ned WiFi Aid Lite fra App Store](https://apps.apple.com/no/app/id6793414462?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned WiFi Aid Lite fra App Store](https://apps.apple.com/no/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/wifiaidlite.html)
 

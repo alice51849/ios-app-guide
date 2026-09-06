@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 계정 없음
 - App Store · ￦7,700
 
-[앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8)
+[앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

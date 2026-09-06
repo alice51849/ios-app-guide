@@ -20,7 +20,7 @@ Eine App statt fünf. 100 Notes Studio ist ein privates Offline-Studio für Stif
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 
-[100 Notes Studio: Pen & Paper im App Store laden](https://apps.apple.com/de/app/id6798813048?pt=118326163&ct=iag_data_de_de&mt=8)
+[100 Notes Studio: Pen & Paper im App Store laden](https://apps.apple.com/de/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/notesstudio100.html)
 

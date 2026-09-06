@@ -17,7 +17,7 @@ Shrani zdaj. In tokrat res preberi. Ves dan si pošiljaš povezave. Recept od pr
 - Brezplačen začetek
 - App Store · Brezplačno
 
-[Prenesite SaveTag: zaznamki z UI iz trgovine App Store](https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite SaveTag: zaznamki z UI iz trgovine App Store](https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/savetag.html)
 

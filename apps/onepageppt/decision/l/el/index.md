@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή
 - App Store · Δωρεάν
 
-[Αποκτήστε το OnePage PPT: Παρουσίαση AI από το App Store](https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το OnePage PPT: Παρουσίαση AI από το App Store](https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/onepageppt.html)
 

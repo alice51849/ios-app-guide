@@ -18,7 +18,7 @@ Wordmate Lite — Five words. Free to start · One-time unlock · No subscriptio
 - Offline
 - App Store · Free
 
-[Get Wordmate Lite on the App Store →](https://apps.apple.com/au/app/id6797601720?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get Wordmate Lite on the App Store →](https://apps.apple.com/au/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html)
 

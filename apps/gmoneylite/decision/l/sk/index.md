@@ -23,7 +23,7 @@ G+Money Lite — Inteligentný prevodník cestovnej meny a sledovač výdavkov C
 - Apple Watch
 - App Store · Zadarmo
 
-[Stiahnuť G+Money Lite: Výdavky na cesty v App Store](https://apps.apple.com/sk/app/id6793436548?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť G+Money Lite: Výdavky na cesty v App Store](https://apps.apple.com/sk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/gmoneylite.html)
 

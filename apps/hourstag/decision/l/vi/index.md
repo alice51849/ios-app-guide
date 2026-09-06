@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - Riêng tư / trên thiết bị
 - App Store · 149.000đ
 
-[Tải HoursTag trên App Store →](https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải HoursTag trên App Store →](https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

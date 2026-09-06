@@ -19,7 +19,7 @@ Para dormir, uma assinatura que incomoda todo mês é o oposto de relaxante. Se 
 - Sem anúncios
 - App Store · Grátis
 
-[Baixe o Sereno na App Store →](https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe o Sereno na App Store →](https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

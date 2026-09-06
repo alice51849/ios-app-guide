@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · разове розблокування
 - App Store · Безкоштовно
 
-[Завантажте DailyMate Lite: Живі фрази з App Store](https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте DailyMate Lite: Живі фрази з App Store](https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/dailymatelite.html)
 

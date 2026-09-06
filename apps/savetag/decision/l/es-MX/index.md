@@ -17,7 +17,7 @@ Guárdalo ahora. Y esta vez sí, léelo después. Todo el día te mandas links a
 - Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
-[Consigue SaveTag: guarda links con IA en el App Store](https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue SaveTag: guarda links con IA en el App Store](https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/savetag.html)
 

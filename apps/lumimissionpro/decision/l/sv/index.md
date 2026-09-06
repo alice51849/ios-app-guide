@@ -18,7 +18,7 @@ Tandborstning och läggdags misslyckas ofta vid samma tidpunkt varje kväll: bar
 - Inga annonser
 - App Store · 79,00 kr
 
-[Hämta Lumi Mission Planet Pro på App Store →](https://apps.apple.com/se/app/id6779745474?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta Lumi Mission Planet Pro på App Store →](https://apps.apple.com/se/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

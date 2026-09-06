@@ -18,7 +18,7 @@ Hasta onay formları, taburcu evrakları veya sevkleri tarıyorsanız, tarayıc�
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[ScanTo Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6779977651?pt=118326163&ct=iag_data_tr&mt=8)
+[ScanTo Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

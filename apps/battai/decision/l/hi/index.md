@@ -17,7 +17,7 @@ BattAI BattAI सार्वजनिक iOS API से पाँच मान 
 - मुफ़्त शुरुआत · एक बार अनलॉक
 - App Store · मुफ़्त
 
-[App Store पर BattAI: बैटरी स्वास्थ्य स्कोर पाएँ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर BattAI: बैटरी स्वास्थ्य स्कोर पाएँ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/battai.html)
 

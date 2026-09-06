@@ -18,7 +18,7 @@ Pienelle lapselle ratkaisevaa ovat mainokset ja tietojen keruu — oppimissovell
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Lumi Letters App Storesta →](https://apps.apple.com/fi/app/id6778748533?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Lumi Letters App Storesta →](https://apps.apple.com/fi/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

@@ -17,7 +17,7 @@ Aim990 Plus ବୟସ୍କମାନଙ୍କ ଇଂରାଜୀ ଶ୍ରବଣ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - App Store · ₹ 599
 
-[App Store ରୁ Aim990 Plus: ଇଂରାଜୀ ପରୀକ୍ଷା ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ Aim990 Plus: ଇଂରାଜୀ ପରୀକ୍ଷା ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/aim990plus.html)
 

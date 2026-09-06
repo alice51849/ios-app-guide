@@ -24,7 +24,7 @@ Prihodi i troškovi Svaki projekt vodi svoje knjige: prihodi minus troškovi daj
 - Apple Watch
 - App Store · Besplatno
 
-[Preuzmite MoneyTag: Prihodi i troškovi u App Storeu](https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite MoneyTag: Prihodi i troškovi u App Storeu](https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/moneytag.html)
 

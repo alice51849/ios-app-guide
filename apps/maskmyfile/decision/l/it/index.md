@@ -18,7 +18,7 @@ Condividi senza esporre più del necessario. Mask My File individua i dati perso
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica Mask My File: Rimuovi i dati sull'App Store](https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Mask My File: Rimuovi i dati sull'App Store](https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/maskmyfile.html)
 

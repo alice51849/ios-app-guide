@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - بدء مجاني · فتح مرة واحدة
 - App Store · مجاني
 
-[احصل على TripBee Lite من App Store →](https://apps.apple.com/sa/app/id6791299610?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على TripBee Lite من App Store →](https://apps.apple.com/sa/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

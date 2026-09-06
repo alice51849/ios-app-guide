@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte si 100 Notes Studio: Pen & Paper v App Storu](https://apps.apple.com/cz/app/id6798813048?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si 100 Notes Studio: Pen & Paper v App Storu](https://apps.apple.com/cz/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/notesstudio100.html)
 

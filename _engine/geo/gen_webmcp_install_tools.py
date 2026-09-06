@@ -14,18 +14,20 @@ from app_store_storefronts import (
     load_storefront_availability,
     load_storefront_details,
     localized_storefront_detail,
+    required_campaign_app_store_url,
     verified_app_store_url,
 )
 from appstore_live import live_app_keys
 import gen_mobile_app_identity
 import gen_smart_app_banners
+from gen_store_attribution import campaign_token
 from official_locales import OFFICIAL_LOCALES, OFFICIAL_LOCALE_SET
 from videogen.registry import APPS, APPSTORE
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
-ASSET_NAME = "webmcp-install-tool-v1.js"
+ASSET_NAME = "webmcp-install-tool-v2.js"
 DATA_ID = "iag-webmcp-install-data"
 BLOCK_START = "<!-- webmcp-install-tool:start -->"
 BLOCK_END = "<!-- webmcp-install-tool:end -->"
@@ -34,10 +36,6 @@ BLOCK_RE = re.compile(
     flags=re.DOTALL,
 )
 BODY_END_RE = re.compile(r"</body\s*>", flags=re.IGNORECASE)
-APP_STORE_PATH_RE = re.compile(
-    r"^/(?:[a-z]{2}/)?app/id[0-9]{9,12}$",
-    flags=re.IGNORECASE,
-)
 SENTENCE_END_RE = re.compile(
     r"[.!?\u3002\uff01\uff1f\u061f\u0964\u2026]"
     r"(?:[\"'\u2019\u201d\u00bb)\]]*)"
@@ -55,11 +53,23 @@ ASSET_SOURCE = r"""(() => {
     data = JSON.parse(node.textContent);
     const store = new URL(data.app_store_url);
     const facts = data.storefront_facts;
+    const storefronts = __LOCALE_STOREFRONTS__;
+    const country = storefronts[data.page_language];
+    const campaign = [...store.searchParams];
     if (
       store.protocol !== "https:" ||
-      store.hostname !== "apps.apple.com" ||
-      !/^\/(?:[a-z]{2}\/)?app\/id[0-9]{9,12}$/i.test(store.pathname) ||
-      store.search ||
+      store.host !== "apps.apple.com" ||
+      store.username || store.password ||
+      !country ||
+      ![
+        `/app/id${data.app_store_id}`,
+        `/${country}/app/id${data.app_store_id}`
+      ].includes(store.pathname) ||
+      campaign.length !== 3 ||
+      campaign.map(([key]) => key).join(",") !== "pt,ct,mt" ||
+      !/^[0-9]{1,20}$/.test(store.searchParams.get("pt")) ||
+      store.searchParams.get("ct") !== "geo_pick" ||
+      store.searchParams.get("mt") !== "8" ||
       store.hash ||
       !/^[0-9]{9,12}$/.test(data.app_store_id)
     ) throw new TypeError("Invalid verified App Store payload.");
@@ -153,7 +163,7 @@ ASSET_SOURCE = r"""(() => {
     console.error("WebMCP install tool registration failed.", error)
   );
 })();
-"""
+""".replace("__LOCALE_STOREFRONTS__", json.dumps(LOCALE_STOREFRONTS, sort_keys=True))
 
 
 class _PageParser(HTMLParser):
@@ -348,16 +358,15 @@ def generate(
                 locale,
                 availability,
             )
-            if APP_STORE_PATH_RE.fullmatch(
-                re.sub(r"^https://apps\.apple\.com", "", store_url)
-            ) is None:
-                raise ValueError(
-                    f"Invalid verified App Store URL for {key}: {store_url}"
-                )
             if store_url == canonical_store:
                 fallbacks += 1
             else:
                 localized_storefronts += 1
+            store_url = required_campaign_app_store_url(
+                store_url, campaign_token(f"{locale}/{key}.html"),
+                expected_locale=locale, expected_app_id=app_id,
+                availability=availability,
+            )
             payload = {
                 "app_store_id": app_id,
                 "app_name": str(APPS[key]["name"]),

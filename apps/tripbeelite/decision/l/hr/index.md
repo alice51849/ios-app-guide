@@ -17,7 +17,7 @@ Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanj
 - Besplatno za početak
 - App Store · Besplatno
 
-[Preuzmite TripBee Lite na App Store →](https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite TripBee Lite na App Store →](https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

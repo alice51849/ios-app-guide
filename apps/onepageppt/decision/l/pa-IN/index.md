@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/onepageppt.html)
 

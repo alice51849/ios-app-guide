@@ -22,7 +22,7 @@ HoursTag Lite - વસ્તુઓની વાસ્તવિક કિંમ�
 - Apple Watch
 - App Store · મફત
 
-[App Store પરથી HoursTag Lite: કિંમત કલાકોમાં મેળવો](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી HoursTag Lite: કિંમત કલાકોમાં મેળવો](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/hourstaglite.html)
 

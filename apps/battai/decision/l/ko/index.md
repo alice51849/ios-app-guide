@@ -17,7 +17,7 @@ BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상
 - 무료로 시작 · 한 번 결제로 잠금 해제
 - App Store · 무료
 
-[App Store에서 BattAI: 배터리 상태 점수 받기](https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 BattAI: 배터리 상태 점수 받기](https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/battai.html)
 

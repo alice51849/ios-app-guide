@@ -18,7 +18,7 @@ Snapport Lite - Створюйте фотографії для паспорта,
 - Офлайн
 - App Store · Безкоштовно
 
-[Завантажте Snapport Lite: ID-фото вдома з App Store](https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте Snapport Lite: ID-фото вдома з App Store](https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/snapportlite.html)
 

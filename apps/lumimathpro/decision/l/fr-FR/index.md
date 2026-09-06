@@ -18,7 +18,7 @@ Une application mathématique complète doit rendre le comptage, le sens du nomb
 - Sans publicité
 - App Store · 9,99 €
 
-[Obtenir Lumi Math Pro sur l’App Store →](https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir Lumi Math Pro sur l’App Store →](https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -20,7 +20,7 @@ Satukan tulisan tangan, teks ketik, anotasi dokumen, rekaman, dan bahan belajar 
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/notesstudio100.html)
 

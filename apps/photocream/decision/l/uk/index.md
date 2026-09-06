@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · разове розблокування
 - App Store · Безкоштовно
 
-[Отримати PhotoCream в App Store →](https://apps.apple.com/ua/app/id6781808054?pt=118326163&ct=iag_data_uk&mt=8)
+[Отримати PhotoCream в App Store →](https://apps.apple.com/ua/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

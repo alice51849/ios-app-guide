@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু
 - App Store · বিনামূল্যে
 
-[অ্যাপ স্টোর থেকে ট্রিপবি লাইট পান →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[অ্যাপ স্টোর থেকে ট্রিপবি লাইট পান →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

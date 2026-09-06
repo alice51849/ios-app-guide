@@ -18,7 +18,7 @@ Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wac
 - Geen advertenties
 - App Store · Gratis
 
-[Lumi Trip Planet downloaden in de App Store →](https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Lumi Trip Planet downloaden in de App Store →](https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

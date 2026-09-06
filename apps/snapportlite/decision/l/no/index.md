@@ -18,7 +18,7 @@ Snapport Lite - Lag pass, visum og dokumentbilder med veiledet størrelse, bakgr
 - Frakoblet
 - App Store · Gratis
 
-[Last ned Snapport Lite: Passfoto hjemme fra App Store](https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned Snapport Lite: Passfoto hjemme fra App Store](https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/snapportlite.html)
 

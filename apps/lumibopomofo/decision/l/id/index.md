@@ -18,7 +18,7 @@ Untuk anak yang baru belajar Zhuyin, aplikasi harus mencakup semua 37 simbol mel
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/id/app/id6773017109?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/id/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

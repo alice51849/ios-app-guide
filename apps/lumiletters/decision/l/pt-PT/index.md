@@ -18,7 +18,7 @@ Para uma criança pequena, o fator decisivo são os anúncios e a recolha de dad
 - Sem anúncios
 - App Store · Grátis
 
-[Obtenha o Lumi Letters na App Store →](https://apps.apple.com/pt/app/id6778748533?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o Lumi Letters na App Store →](https://apps.apple.com/pt/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

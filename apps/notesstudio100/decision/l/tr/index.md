@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[100 Notes Studio: Pen & Paper uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798813048?pt=118326163&ct=iag_data_tr&mt=8)
+[100 Notes Studio: Pen & Paper uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/notesstudio100.html)
 

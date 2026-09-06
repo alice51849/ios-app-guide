@@ -19,7 +19,7 @@ W podróży potrzebujesz trackera budżetu, który działa offline w kraju bez d
 - Bez konta
 - App Store · 24,99 zł
 
-[Pobierz G+Money z App Store →](https://apps.apple.com/pl/app/id6755782939?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz G+Money z App Store →](https://apps.apple.com/pl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

@@ -18,7 +18,7 @@ Snapport Lite - Faça fotos de passaporte, visto e documentos com guias de taman
 - Offline
 - App Store · Grátis
 
-[Baixe Snapport Lite: Faça foto 3x4 na App Store](https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Snapport Lite: Faça foto 3x4 na App Store](https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/snapportlite.html)
 

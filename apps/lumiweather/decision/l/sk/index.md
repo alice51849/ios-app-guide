@@ -19,7 +19,7 @@ Rodičia plánujúci čas vonku potrebujú viac než teplotu: potrebujú rýchly
 - Bez sledovania
 - App Store · Zadarmo
 
-[Získajte Lumi Weather v App Store →](https://apps.apple.com/sk/app/id6779552704?pt=118326163&ct=iag_data_sk&mt=8)
+[Získajte Lumi Weather v App Store →](https://apps.apple.com/sk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

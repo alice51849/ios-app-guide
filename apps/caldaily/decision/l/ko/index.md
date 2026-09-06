@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 위젯
 - App Store · 무료
 
-[App Store에서 CalDaily 계산기 및 테마 받기](https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 CalDaily 계산기 및 테마 받기](https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/caldaily.html)
 

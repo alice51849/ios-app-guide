@@ -18,7 +18,7 @@ Betere context. Betere antwoorden. Verander schermafbeeldingen, bestanden, notit
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download AI Brief: Bestand naar prompt in de App Store](https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download AI Brief: Bestand naar prompt in de App Store](https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/aibriefpack.html)
 

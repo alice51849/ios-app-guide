@@ -18,7 +18,7 @@ Snapport Lite - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon sÃ
 - Offline
 - App Store Â· Ilmainen
 
-[Lataa Snapport Lite: Tee passikuvat App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa Snapport Lite: Tee passikuvat App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/snapportlite.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - 无广告
 
-[在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/app/id6775773117?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

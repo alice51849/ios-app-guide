@@ -18,7 +18,7 @@ Lapset eivät koskaan pysy paikallaan, joten pehmeät ja tärähtäneet kuvat ov
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Hanki Unblurry App Storesta →](https://apps.apple.com/fi/app/id6782275018?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Unblurry App Storesta →](https://apps.apple.com/fi/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

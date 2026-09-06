@@ -22,7 +22,7 @@ Zaposleni potniki potrebujejo vadbo besedišča, ki se prilega prostim minutam b
 - Apple Watch
 - App Store · 9,99 €
 
-[Pridobite Wordmate: Learn 44 Languages v trgovini App Store →](https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Pridobite Wordmate: Learn 44 Languages v trgovini App Store →](https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -23,7 +23,7 @@ G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן �
 - Apple Watch
 - App Store · בחינם
 
-[הורידו את G+Money Lite: הוצאות טיול מה-App Store](https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את G+Money Lite: הוצאות טיול מה-App Store](https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/gmoneylite.html)
 

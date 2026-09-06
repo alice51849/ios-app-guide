@@ -18,7 +18,7 @@ Las familias que preparan para kínder necesitan un camino completo de lectura t
 - Sin anuncios
 - App Store · $199.00
 
-[Consigue Lumi Letters Pro en App Store →](https://apps.apple.com/mx/app/id6778491147?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue Lumi Letters Pro en App Store →](https://apps.apple.com/mx/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് MoneyTag: വരവും ചെലവും നേടൂ](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് MoneyTag: വരവും ചെലവും നേടൂ](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/moneytag.html)
 

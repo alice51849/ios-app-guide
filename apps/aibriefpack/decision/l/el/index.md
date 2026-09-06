@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Αποκτήστε το AI Brief: Αρχεία σε AI prompt από το App Store](https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το AI Brief: Αρχεία σε AI prompt από το App Store](https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/aibriefpack.html)
 

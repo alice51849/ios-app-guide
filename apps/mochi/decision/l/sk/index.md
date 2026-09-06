@@ -18,7 +18,7 @@ Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý
 - Bez reklám
 - App Store · Zadarmo
 
-[Stiahnite si Mochi v App Store →](https://apps.apple.com/sk/app/id6785004775?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnite si Mochi v App Store →](https://apps.apple.com/sk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

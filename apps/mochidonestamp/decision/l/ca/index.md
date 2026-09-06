@@ -17,7 +17,7 @@ Quan va ser l’última vegada que vas canviar els llençols, regar una planta, 
 - Inici gratuït
 - App Store · Gratis
 
-[Descarrega Mochi DoneStamp: Última vegada a l’App Store](https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Mochi DoneStamp: Última vegada a l’App Store](https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/mochidonestamp.html)
 

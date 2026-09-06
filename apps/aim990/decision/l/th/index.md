@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
 - App Store · ฟรี
 
-[รับ Aim990 ใน App Store →](https://apps.apple.com/th/app/id6784974530?pt=118326163&ct=iag_data_th&mt=8)
+[รับ Aim990 ใน App Store →](https://apps.apple.com/th/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

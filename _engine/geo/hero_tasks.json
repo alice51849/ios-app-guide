@@ -23,9 +23,127 @@
         "hourly_income": "20",
         "workday_hours": "8",
         "items": [
-          {"quantity": 1, "price": "120"},
-          {"quantity": 2, "price": "45"},
-          {"quantity": 3, "price": "30"}
+          {
+            "quantity": 1,
+            "price": "120"
+          },
+          {
+            "quantity": 2,
+            "price": "45"
+          },
+          {
+            "quantity": 3,
+            "price": "30"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-next-due",
+      "slug": "maintenance-next-due-sheet",
+      "adapter": "maintenance-next-due-v1",
+      "apps": {
+        "mochidonestamp": "6790800323"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "Mochi DoneStamp product contract: last done date + repeat interval, month-end and leap-year safe",
+        "intent_queries": {
+          "mochidonestamp": "best last time tracker app for household maintenance without a subscription"
+        },
+        "scope": "A multi-task, downloadable next-due sheet from last-done dates and repeat intervals. It is not a reminder, notification, calendar sync or a daily checklist."
+      },
+      "example": {
+        "today": "2026-09-05",
+        "items": [
+          {
+            "last_done": "2026-06-01",
+            "interval_value": 3,
+            "interval_unit": "month"
+          },
+          {
+            "last_done": "2026-08-31",
+            "interval_value": 1,
+            "interval_unit": "week"
+          },
+          {
+            "last_done": "2025-11-30",
+            "interval_value": 12,
+            "interval_unit": "month"
+          }
+        ]
+      }
+    },
+    {
+      "id": "project-profit",
+      "slug": "project-profit-sheet",
+      "adapter": "project-profit-v1",
+      "apps": {
+        "moneytag": "6801956402"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "MoneyTag product contract: per-project income and expense ledger with profit, margin and per-hour net; same-currency, no exchange rates, no tax advice",
+        "intent_queries": {
+          "moneytag": "best income and expense tracker for freelance projects no subscription"
+        },
+        "scope": "A downloadable per-project profit sheet from income and expense rows with optional hours. It is not bookkeeping, invoicing, payroll, tax filing or a currency converter."
+      },
+      "example": {
+        "project_name": "Landing page",
+        "hours_spent": "12.5",
+        "items": [
+          {
+            "kind": "income",
+            "amount": "1500"
+          },
+          {
+            "kind": "expense",
+            "amount": "320.40"
+          },
+          {
+            "kind": "expense",
+            "amount": "79.99"
+          }
+        ]
+      }
+    },
+    {
+      "id": "battery-wear",
+      "slug": "battery-wear-range-sheet",
+      "adapter": "battery-wear-range-v1",
+      "apps": {
+        "battai": "6802423998"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "BattAI product contract: user-entered maximum capacity and optional cycle count are calibration inputs; every derived figure is a labelled estimate reported as a range, never a single number or a health score",
+        "intent_queries": {
+          "battai": "best iphone battery health app with honest estimates and report"
+        },
+        "scope": "A downloadable wear-range sheet from typed-in capacity, optional cycle count and purchase month. It measures nothing on the phone, reads no battery data, and gives no diagnosis, replacement verdict or health score."
+      },
+      "example": {
+        "today": "2026-09",
+        "items": [
+          {
+            "purchase_month": "2024-09",
+            "max_capacity_pct": "88",
+            "cycle_count": "412"
+          },
+          {
+            "purchase_month": "2026-08",
+            "max_capacity_pct": "100",
+            "cycle_count": ""
+          },
+          {
+            "purchase_month": "2021-03",
+            "max_capacity_pct": "79",
+            "cycle_count": ""
+          }
         ]
       }
     }

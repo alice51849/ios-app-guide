@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · 免费
 
-[在App Store获取Unblurry →](https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Unblurry →](https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

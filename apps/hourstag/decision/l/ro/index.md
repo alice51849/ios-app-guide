@@ -19,7 +19,7 @@ Cât costă cu adevărat? Nu în lei, ci în ore din viața ta.
 - Privat / pe dispozitiv
 - App Store · 29,99 lei
 
-[Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/hourstag.html)
 

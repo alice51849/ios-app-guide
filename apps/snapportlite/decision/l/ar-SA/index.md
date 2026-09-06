@@ -18,7 +18,7 @@ Snapport Lite - أنشئ صور جواز السفر والتأشيرة واله�
 - دون اتصال
 - App Store · مجاني
 
-[احصل على Snapport Lite: إنشاء صور وثائق من App Store](https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على Snapport Lite: إنشاء صور وثائق من App Store](https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/snapportlite.html)
 

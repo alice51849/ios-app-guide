@@ -208,8 +208,14 @@ class QrEligiblePageFamilyTests(unittest.TestCase):
             )
             for path in visual_paths:
                 path.parent.mkdir(parents=True, exist_ok=True)
+                localized_url = (
+                    visual_url.replace("/us/", "/jp/").replace(
+                        "iag_visual_en_us", "iag_visual_ja"
+                    )
+                    if "ja" in path.parts else visual_url
+                )
                 path.write_text(
-                    f'<a href="{visual_url}">Visual</a>',
+                    f'<a href="{localized_url}">Visual</a>',
                     encoding="utf-8",
                 )
             guide = root / "guides" / "page.html"
@@ -239,7 +245,7 @@ class QrEligiblePageFamilyTests(unittest.TestCase):
 
             for path in visual_paths:
                 self.assertIn(
-                    "ct=iag_visual_en_us",
+                    "ct=iag_visual_ja" if "ja" in path.parts else "ct=iag_visual_en_us",
                     path.read_text(encoding="utf-8"),
                 )
             self.assertIn(

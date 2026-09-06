@@ -2758,8 +2758,13 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "guide_title": "Wi-Fi or the site: how to tell which one is actually broken",
             "triggers": [
                 "is it my wifi or the website",
+                "wifi or the website",
                 "wifi connected but no internet",
+                "wi-fi connected but no internet",
+                "connected but no internet",
                 "check if a website is down",
+                "website is down",
+                "whole internet connection",
                 "dns not resolving iphone",
                 "slow wifi diagnose",
                 "network test app no account",

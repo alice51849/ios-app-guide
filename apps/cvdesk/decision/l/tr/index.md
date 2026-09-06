@@ -17,7 +17,7 @@ Alan değiştirirken, sorun farklıdır: deneyiminiz gerçek ama kağıt üzerin
 - Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
-[CV Desk’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781337213?pt=118326163&ct=iag_data_tr&mt=8)
+[CV Desk’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-resume-builder-app-for-career-changers-2026.html)
 

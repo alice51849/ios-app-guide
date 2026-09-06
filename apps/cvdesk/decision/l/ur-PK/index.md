@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز
 - App Store · مفت
 
-[CV ڈیسک ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[CV ڈیسک ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-resume-builder-app-for-career-changers-2026.html)
 

@@ -18,7 +18,7 @@ Für Vorschulkinder funktioniert eine Einschlafroutine am besten, wenn sie kurz,
 - Keine Werbung
 - App Store · Kostenlos
 
-[Lumi Mission Planet im App Store erhalten →](https://apps.apple.com/de/app/id6779750237?pt=118326163&ct=iag_data_de_de&mt=8)
+[Lumi Mission Planet im App Store erhalten →](https://apps.apple.com/de/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

@@ -18,7 +18,7 @@ A private AI-context workflow should let you assemble the complete source set, i
 - Private / on-device
 - App Store · Free
 
-[Get AI Brief on the App Store →](https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get AI Brief on the App Store →](https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 

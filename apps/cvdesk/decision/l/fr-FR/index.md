@@ -17,7 +17,7 @@ Quand vous changez de domaine, le problème du CV est différent : votre expéri
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenez CV Desk sur l’App Store →](https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenez CV Desk sur l’App Store →](https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-resume-builder-app-for-career-changers-2026.html)
 

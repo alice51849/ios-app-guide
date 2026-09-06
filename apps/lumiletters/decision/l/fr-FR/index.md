@@ -18,7 +18,7 @@ Pour un jeune enfant, le critère décisif est l’absence de pub et de collecte
 - Sans publicité
 - App Store · Gratuit
 
-[Obtenez Lumi Letters sur l’App Store →](https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenez Lumi Letters sur l’App Store →](https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

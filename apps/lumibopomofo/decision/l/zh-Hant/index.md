@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - App Store · 免費
 - ★ 4.6/5 · 7
 
-[在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

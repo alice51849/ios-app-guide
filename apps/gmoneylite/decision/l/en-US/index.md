@@ -23,7 +23,7 @@ For a short trip, a useful free-to-start tracker should let you log a few local-
 - Apple Watch
 - App Store · Free
 
-[Get G+Money Lite on the App Store →](https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get G+Money Lite on the App Store →](https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 

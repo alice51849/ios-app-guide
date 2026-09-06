@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Скачайте ScanTo Pro в App Store →](https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачайте ScanTo Pro в App Store →](https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

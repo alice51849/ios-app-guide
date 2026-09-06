@@ -25,7 +25,7 @@ import urllib.request
 
 from answer_personas import PERSONAS
 from app_store_storefronts import (
-    campaign_app_store_url,
+    required_campaign_app_store_url,
     load_storefront_availability,
     verified_app_store_url,
 )
@@ -1069,10 +1069,11 @@ def load_ui_i18n(path: Path = I18N_PATH) -> dict[str, dict[str, str]]:
 
 
 def campaign_token(locale: str) -> str:
-    token = f"iag_data_{locale.replace('-', '_').lower()}"
-    if len(token) > 30 or not re.fullmatch(r"[a-z0-9_]+", token):
-        raise ValueError(f"Invalid publisher intent campaign token: {token}")
-    return token
+    from gen_store_attribution import campaign_token as surface_campaign_token
+
+    if locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Invalid publisher intent campaign locale: {locale}")
+    return surface_campaign_token(f"data/{locale}.json")
 
 
 def _app_store_url(
@@ -1081,9 +1082,10 @@ def _app_store_url(
     availability: dict[str, frozenset[str]],
 ) -> str:
     canonical = f"https://apps.apple.com/app/id{app_id}"
-    return campaign_app_store_url(
+    return required_campaign_app_store_url(
         verified_app_store_url(canonical, locale, availability),
         campaign_token(locale),
+        expected_locale=locale, expected_app_id=app_id, availability=availability,
     )
 
 

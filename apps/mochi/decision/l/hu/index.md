@@ -18,7 +18,7 @@ Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy t
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezze be a Mochi-t az App Store-ból →](https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezze be a Mochi-t az App Store-ból →](https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

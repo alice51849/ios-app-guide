@@ -18,7 +18,7 @@ WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No 
 - No account
 - App Store · Free
 
-[Get WiFi Aid Lite on the App Store →](https://apps.apple.com/gb/app/id6793414462?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get WiFi Aid Lite on the App Store →](https://apps.apple.com/gb/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html)
 

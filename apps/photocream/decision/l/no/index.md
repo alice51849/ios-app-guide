@@ -17,7 +17,7 @@ Reiseskapere trenger et gjentakbart filmutseende som gir korn, halering og farge
 - Gratis å starte
 - App Store · Gratis
 
-[Få PhotoCream på App Store →](https://apps.apple.com/no/app/id6781808054?pt=118326163&ct=iag_data_no&mt=8)
+[Få PhotoCream på App Store →](https://apps.apple.com/no/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

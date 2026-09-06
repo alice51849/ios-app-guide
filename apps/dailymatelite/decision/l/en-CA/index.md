@@ -17,7 +17,7 @@ DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-
 - Free to start · one-time unlock
 - App Store · Free
 
-[Get DailyMate Lite on the App Store →](https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get DailyMate Lite on the App Store →](https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html)
 

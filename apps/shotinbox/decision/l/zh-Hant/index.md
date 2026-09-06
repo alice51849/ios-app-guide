@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次性解鎖
 - App Store · 免費
 
-[在 App Store 取得 ShotInbox AI: Sort Screenshots](https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 ShotInbox AI: Sort Screenshots](https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/shotinbox.html)
 

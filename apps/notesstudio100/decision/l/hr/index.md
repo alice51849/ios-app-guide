@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite 100 Notes Studio: Pen & Paper u App Storeu](https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite 100 Notes Studio: Pen & Paper u App Storeu](https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/notesstudio100.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · இலவசம்
 
-[App Store-இல் Lumi Math Planet பெறவும் →](https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் Lumi Math Planet பெறவும் →](https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

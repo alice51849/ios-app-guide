@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 999
 
-[Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_kn_in&mt=8)
+[Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -24,7 +24,7 @@ Prihodki in stroški Vsak projekt vodi svoje knjige: prihodki minus stroški daj
 - Apple Watch
 - App Store · Brezplačno
 
-[Prenesite MoneyTag: Prihodki in stroški iz trgovine App Store](https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite MoneyTag: Prihodki in stroški iz trgovine App Store](https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/moneytag.html)
 

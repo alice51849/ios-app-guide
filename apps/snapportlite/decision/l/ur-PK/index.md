@@ -18,7 +18,7 @@ Snapport Lite - پاسپورٹ، ویزا، اور دستاویزات کی تص�
 - آف لائن
 - App Store · مفت
 
-[App Store سے Snapport Lite: شناختی تصاویر حاصل کریں](https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Snapport Lite: شناختی تصاویر حاصل کریں](https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/snapportlite.html)
 

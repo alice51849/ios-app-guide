@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 离线
 - App Store · 免费
 
-[在 App Store 获取 Wordmate Lite 每天五个单词](https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 Wordmate Lite 每天五个单词](https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/wordmatelite.html)
 

@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ฟรี
 
-[ดาวน์โหลด MoneyTag: รายรับและรายจ่าย บน App Store](https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด MoneyTag: รายรับและรายจ่าย บน App Store](https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/moneytag.html)
 

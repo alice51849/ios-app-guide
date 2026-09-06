@@ -17,7 +17,7 @@ Vaše snimke, uredno složene Pronađite, riješite i očistite svaku snimku. Na
 - Besplatno za početak
 - App Store · Besplatno
 
-[Preuzmite ShotInbox AI: Sort Screenshots u App Storeu](https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite ShotInbox AI: Sort Screenshots u App Storeu](https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/shotinbox.html)
 

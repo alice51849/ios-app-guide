@@ -20,7 +20,7 @@ O 100 Notes Studio reúne escrita manual, texto, anotação de PDF e ferramentas
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Baixe 100 Notes Studio: Pen & Paper na App Store](https://apps.apple.com/pt/app/id6798813048?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Baixe 100 Notes Studio: Pen & Paper na App Store](https://apps.apple.com/pt/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/notesstudio100.html)
 

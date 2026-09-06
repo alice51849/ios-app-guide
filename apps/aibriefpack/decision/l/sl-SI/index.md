@@ -18,7 +18,7 @@ Boljši kontekst. Boljši odgovori. Spremenite posnetke zaslona, datoteke, bele�
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite AI Brief: Datoteke v AI poziv iz trgovine App Store](https://apps.apple.com/si/app/id6791658210?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite AI Brief: Datoteke v AI poziv iz trgovine App Store](https://apps.apple.com/si/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/aibriefpack.html)
 

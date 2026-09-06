@@ -18,7 +18,7 @@ Millor context. Millors respostes. Converteix captures de pantalla, fitxers, not
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega AI Brief: Fitxers a prompt IA a l’App Store](https://apps.apple.com/es/app/id6791658210?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega AI Brief: Fitxers a prompt IA a l’App Store](https://apps.apple.com/es/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/aibriefpack.html)
 

@@ -17,7 +17,7 @@ Travel creators need a repeatable film look that adds grain, halation and colour
 - Free to start · one-time unlock
 - App Store · Free
 
-[Get PhotoCream on the App Store →](https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get PhotoCream on the App Store →](https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

@@ -18,7 +18,7 @@ Pentru fotografia de pașaport a bebelușului, nimeni altcineva nu poate fi în 
 - Privat / pe dispozitiv
 - App Store · 29,99 lei
 
-[Descarcă Snapport din App Store →](https://apps.apple.com/ro/app/id6780575828?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Snapport din App Store →](https://apps.apple.com/ro/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

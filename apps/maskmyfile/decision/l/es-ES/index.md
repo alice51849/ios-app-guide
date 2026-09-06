@@ -18,7 +18,7 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Consigue Mask My File en el App Store →](https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue Mask My File en el App Store →](https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 

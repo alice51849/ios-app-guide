@@ -19,7 +19,7 @@ Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir. Tan�
 - Reklam yok
 - App Store · Ücretsiz
 
-[Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=iag_data_tr&mt=8)
+[Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

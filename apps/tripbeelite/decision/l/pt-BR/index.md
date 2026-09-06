@@ -17,7 +17,7 @@ Se você está planejando uma viagem futura, uma linha do tempo calma para essa 
 - Grátis para começar · desbloqueio único
 - App Store · Grátis
 
-[Baixe TripBee Lite na App Store →](https://apps.apple.com/br/app/id6791299610?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe TripBee Lite na App Store →](https://apps.apple.com/br/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

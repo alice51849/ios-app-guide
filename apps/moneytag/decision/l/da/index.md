@@ -24,7 +24,7 @@ Indtægter og udgifter Hvert projekt fører sit eget regnskab: indtægter minus 
 - Apple Watch
 - App Store · Gratis
 
-[Hent MoneyTag i App Store](https://apps.apple.com/dk/app/id6801956402?pt=118326163&ct=iag_data_da&mt=8)
+[Hent MoneyTag i App Store](https://apps.apple.com/dk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/moneytag.html)
 

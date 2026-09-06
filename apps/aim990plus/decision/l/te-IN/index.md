@@ -17,7 +17,7 @@ Aim990 Plus అనేది పెద్దలు తమ ఆంగ్ల శ్�
 - చెల్లింపు డౌన్లోడ్
 - App Store · ₹ 599
 
-[App Store నుంచి Aim990 Plus: ఇంగ్లీష్ పరీక్ష పొందండి](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి Aim990 Plus: ఇంగ్లీష్ పరీక్ష పొందండి](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/aim990plus.html)
 

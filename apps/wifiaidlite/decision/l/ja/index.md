@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - アカウント不要
 - App Store · 無料
 
-[App Store で WiFi Aid Lite を入手](https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で WiFi Aid Lite を入手](https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/wifiaidlite.html)
 

@@ -17,7 +17,7 @@ Jeśli planujesz jedną nadchodzącą podróż, spokojna oś czasu dla tej wycie
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz TripBee Lite w App Store →](https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz TripBee Lite w App Store →](https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

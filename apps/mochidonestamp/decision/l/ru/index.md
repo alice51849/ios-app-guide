@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Бесплатно начать · разовая разблокировка
 - App Store · Бесплатно
 
-[Установить Mochi DoneStamp: Когда было в App Store](https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить Mochi DoneStamp: Когда было в App Store](https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/mochidonestamp.html)
 

@@ -18,7 +18,7 @@ Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä
 - Apple Watch
 - App Store · 12,99 €
 
-[Hanki DailyMate App Storesta →](https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki DailyMate App Storesta →](https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

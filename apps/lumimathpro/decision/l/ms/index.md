@@ -18,7 +18,7 @@ Aplikasi matematik awal lengkap patut jadikan mengira, pemahaman nombor dan oper
 - Tiada iklan
 - App Store · RM39.90
 
-[Dapatkan Lumi Math Pro di App Store →](https://apps.apple.com/my/app/id6776958488?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Math Pro di App Store →](https://apps.apple.com/my/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

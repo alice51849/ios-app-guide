@@ -22,7 +22,7 @@ I pendolari hanno bisogno di pratica vocabolario che si adatti ai minuti liberi 
 - Apple Watch
 - App Store · 9,99 €
 
-[Scarica Wordmate: Learn 44 Languages su App Store →](https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Wordmate: Learn 44 Languages su App Store →](https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

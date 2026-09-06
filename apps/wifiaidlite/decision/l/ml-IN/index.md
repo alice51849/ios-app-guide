@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - അക്കൗണ്ട് ഇല്ല
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് WiFi Aid Lite നേടൂ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് WiFi Aid Lite നേടൂ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/wifiaidlite.html)
 

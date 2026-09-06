@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · 無料
 
-[App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

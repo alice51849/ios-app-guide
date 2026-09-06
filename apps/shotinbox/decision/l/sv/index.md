@@ -17,7 +17,7 @@ Dina skärmbilder, sorterade Hitta, hantera och rensa varje skärmbild. De senas
 - Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
-[Hämta ShotInbox AI: Sort Screenshots i App Store](https://apps.apple.com/se/app/id6802166527?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta ShotInbox AI: Sort Screenshots i App Store](https://apps.apple.com/se/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/shotinbox.html)
 

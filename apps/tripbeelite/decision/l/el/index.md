@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή
 - App Store · Δωρεάν
 
-[Κατεβάστε το TripBee Lite από το App Store →](https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το TripBee Lite από το App Store →](https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

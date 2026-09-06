@@ -20,7 +20,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - App Store · $150.00
 - ★ 5.0/5 · 1
 
-[前往 App Store 取得 HoursTag →](https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[前往 App Store 取得 HoursTag →](https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

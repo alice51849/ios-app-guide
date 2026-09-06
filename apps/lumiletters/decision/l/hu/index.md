@@ -18,7 +18,7 @@ Kisgyerekeknél a legfontosabb a reklámok és adatgyűjtés hiánya — a tanul
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezze be a Lumi Letters-t az App Store-ból →](https://apps.apple.com/hu/app/id6778748533?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezze be a Lumi Letters-t az App Store-ból →](https://apps.apple.com/hu/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

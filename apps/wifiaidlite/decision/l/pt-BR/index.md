@@ -18,7 +18,7 @@ Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagam
 - Sem conta
 - App Store · Grátis
 
-[Baixe WiFi Aid Lite na App Store](https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe WiFi Aid Lite na App Store](https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/wifiaidlite.html)
 

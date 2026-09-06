@@ -17,7 +17,7 @@ Tal, når det gælder. Med DailyMate Lite øver du komplette replikskift i hverd
 - Gratis at komme i gang
 - App Store · Gratis
 
-[Hent DailyMate Lite: Tal i dag i App Store](https://apps.apple.com/dk/app/id6794725568?pt=118326163&ct=iag_data_da&mt=8)
+[Hent DailyMate Lite: Tal i dag i App Store](https://apps.apple.com/dk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/dailymatelite.html)
 

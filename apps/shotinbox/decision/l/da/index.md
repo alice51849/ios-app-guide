@@ -17,7 +17,7 @@ Dine skærmbilleder, sorteret Find, håndter og ryd hvert skærmbillede. De nyes
 - Gratis at komme i gang
 - App Store · Gratis
 
-[Hent ShotInbox AI: Sort Screenshots i App Store](https://apps.apple.com/dk/app/id6802166527?pt=118326163&ct=iag_data_da&mt=8)
+[Hent ShotInbox AI: Sort Screenshots i App Store](https://apps.apple.com/dk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/shotinbox.html)
 

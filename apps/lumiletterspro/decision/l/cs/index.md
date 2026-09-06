@@ -18,7 +18,7 @@ Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu č
 - Bez reklam
 - App Store · 249,00 Kč
 
-[Stáhněte si Lumi Letters Pro v App Store →](https://apps.apple.com/cz/app/id6778491147?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si Lumi Letters Pro v App Store →](https://apps.apple.com/cz/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

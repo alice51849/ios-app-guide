@@ -18,7 +18,7 @@ Parempi konteksti. Paremmat vastaukset. Muuta näyttökuvat, tiedostot, muistiin
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Lataa AI Brief: Tiedostot promptiksi App Storesta](https://apps.apple.com/fi/app/id6791658210?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa AI Brief: Tiedostot promptiksi App Storesta](https://apps.apple.com/fi/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/aibriefpack.html)
 

@@ -18,7 +18,7 @@ Para a foto de passaporte do bebé, ninguém mais pode estar na foto e o fundo d
 - Privado / no dispositivo
 - App Store · 6,99 €
 
-[Obtenha o Snapport na App Store →](https://apps.apple.com/pt/app/id6780575828?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o Snapport na App Store →](https://apps.apple.com/pt/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

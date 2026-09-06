@@ -18,7 +18,7 @@ O melhor app de matemática para crianças treina raciocínio — padrões, sequ
 - Sem anúncios
 - App Store · Grátis
 
-[Obtenha o Lumi Math Planet na App Store →](https://apps.apple.com/pt/app/id6778269699?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o Lumi Math Planet na App Store →](https://apps.apple.com/pt/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

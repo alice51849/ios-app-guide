@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 免費
 
-[在 App Store 取得 MoneyTag: 收入與支出](https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 MoneyTag: 收入與支出](https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/moneytag.html)
 

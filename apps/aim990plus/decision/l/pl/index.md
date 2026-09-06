@@ -17,7 +17,7 @@ Zachowaj jasność myślenia, gdy liczy się każda sekunda. Aim990 Plus to inte
 - Płatne do pobrania
 - App Store · 29,99 zł
 
-[Pobierz Aim990 Plus: Test angielskiego z App Store](https://apps.apple.com/pl/app/id6792483140?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Aim990 Plus: Test angielskiego z App Store](https://apps.apple.com/pl/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/aim990plus.html)
 

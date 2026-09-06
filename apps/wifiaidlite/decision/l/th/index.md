@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีบัญชี
 - App Store · ฟรี
 
-[ดาวน์โหลด WiFi Aid Lite บน App Store](https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด WiFi Aid Lite บน App Store](https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html)
 

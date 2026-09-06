@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - Unduhan berbayar
 - App Store · Rp 99ribu
 
-[Dapatkan Aim990 Plus di App Store →](https://apps.apple.com/id/app/id6792483140?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Aim990 Plus di App Store →](https://apps.apple.com/id/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

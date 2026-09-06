@@ -18,7 +18,7 @@ Um schnell Speicherplatz freizugeben, konzentrieren Sie sich zuerst auf die grö
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 
-[Holen Sie sich PicClear im App Store →](https://apps.apple.com/de/app/id6780223070?pt=118326163&ct=iag_data_de_de&mt=8)
+[Holen Sie sich PicClear im App Store →](https://apps.apple.com/de/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

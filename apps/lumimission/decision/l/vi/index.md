@@ -18,7 +18,7 @@ Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn g�
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Mission Planet trên App Store →](https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Lumi Mission Planet trên App Store →](https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

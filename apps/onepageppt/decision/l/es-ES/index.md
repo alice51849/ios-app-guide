@@ -17,7 +17,7 @@ Convierte un muro de texto en UNA diapositiva que sí se lee. OnePage PPT analiz
 - Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
-[Consigue OnePage PPT: diapositiva IA en el App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue OnePage PPT: diapositiva IA en el App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/onepageppt.html)
 

@@ -18,7 +18,7 @@ Küçük bir çocuk için, belirleyici faktör reklamlar ve veri toplama — ö�
 - Reklam yok
 - App Store · Ücretsiz
 
-[Lumi Letters'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6778748533?pt=118326163&ct=iag_data_tr&mt=8)
+[Lumi Letters'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

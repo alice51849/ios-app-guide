@@ -19,7 +19,7 @@ Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak. Ha 
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezd be a Sereno-t az App Store-ból →](https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezd be a Sereno-t az App Store-ból →](https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

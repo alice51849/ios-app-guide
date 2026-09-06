@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - App Store · ମାଗଣା
 
-[Lumi Weather ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_or_in&mt=8)
+[Lumi Weather ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

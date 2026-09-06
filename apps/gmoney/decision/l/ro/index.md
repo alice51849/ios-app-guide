@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Fără cont
 - App Store · 29,99 lei
 
-[Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=iag_data_ro&mt=8)
+[Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

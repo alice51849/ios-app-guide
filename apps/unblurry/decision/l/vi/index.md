@@ -18,7 +18,7 @@ Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung m�
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải Unblurry trên App Store →](https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Unblurry trên App Store →](https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

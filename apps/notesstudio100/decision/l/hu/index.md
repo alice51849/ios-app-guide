@@ -20,7 +20,7 @@ Ne oszd szét a kézírást, a gépelt szöveget, a dokumentumjelölést, a hang
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Töltse le a(z) 100 Notes Studio: Pen & Paper appot az App Store-ból](https://apps.apple.com/hu/app/id6798813048?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) 100 Notes Studio: Pen & Paper appot az App Store-ból](https://apps.apple.com/hu/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/notesstudio100.html)
 

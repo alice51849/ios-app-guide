@@ -18,7 +18,7 @@ Lepší kontext. Lepší odpovědi. Proměňte snímky obrazovky, soubory, pozn�
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte si AI Brief: Ze souborů AI prompt v App Storu](https://apps.apple.com/cz/app/id6791658210?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si AI Brief: Ze souborů AI prompt v App Storu](https://apps.apple.com/cz/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/aibriefpack.html)
 

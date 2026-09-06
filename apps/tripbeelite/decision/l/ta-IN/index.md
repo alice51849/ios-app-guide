@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும்
 - App Store · இலவசம்
 
-[App Storeஇல் TripBee Lite ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Storeஇல் TripBee Lite ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

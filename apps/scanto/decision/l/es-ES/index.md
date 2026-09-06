@@ -18,7 +18,7 @@ Si escaneas formularios de consentimiento, documentos de alta o referencias, el 
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Consigue ScanTo Pro en la App Store →](https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue ScanTo Pro en la App Store →](https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

@@ -4,7 +4,7 @@
   "question": "How can I find a privacy-first iPhone app with a one-time purchase?",
   "date_modified": "2026-07-20",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "publisher_disclosure": "First-party catalogue published by Lumi Studio, the developer of every listed app; not an independent review or third-party ranking.",
+  "publisher_disclosure": "First-party catalogue of the complete Lumi Studio live-app roster. Availability is reported per app; unknown is not verified live. Not an independent review or third-party ranking.",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
   "availability_verification": {
     "source": "Apple iTunes Lookup API",
@@ -14,7 +14,8 @@
       "JP",
       "GB"
     ],
-    "retirement_rule": "Retire after three consecutive verified misses"
+    "retirement_rule": "Retire after three consecutive verified misses",
+    "verified_at": "2026-09-05T12:54:26.274882+00:00"
   },
   "record_count": 46,
   "apps": [
@@ -60,7 +61,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "aibriefpack",
@@ -104,7 +110,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6791658210?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "aim990",
@@ -151,7 +162,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6784974530?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "aim990plus",
@@ -192,7 +208,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6792483140?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "battai",
@@ -236,7 +257,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "caldaily",
@@ -280,7 +306,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "cvdesk",
@@ -325,7 +356,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6781337213?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "cyca",
@@ -370,7 +406,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6782251621?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "dailymate",
@@ -414,7 +455,12 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6790418321?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "dailymatelite",
@@ -458,7 +504,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6794725568?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "gmoney",
@@ -502,7 +553,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "gmoneylite",
@@ -552,7 +608,12 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "hourstaglite",
@@ -601,7 +662,12 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "hourstag",
@@ -645,7 +711,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lockhour",
@@ -690,7 +761,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6780107485?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumibopomofo",
@@ -735,7 +811,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumibopomofopro",
@@ -780,7 +861,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumiletters",
@@ -827,7 +913,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumiletterspro",
@@ -872,7 +963,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6778491147?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumimath",
@@ -919,7 +1015,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumimathpro",
@@ -964,7 +1065,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumimission",
@@ -1011,7 +1117,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6779750237?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumimissionpro",
@@ -1056,7 +1167,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6779745474?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "tripplanet",
@@ -1101,7 +1217,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "lumiweather",
@@ -1145,7 +1266,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6779552704?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "maskmyfile",
@@ -1186,7 +1312,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6792850916?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "mochi",
@@ -1232,7 +1363,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6785004775?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "mochidonestamp",
@@ -1276,7 +1412,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "moneytag",
@@ -1329,7 +1470,12 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "onepageppt",
@@ -1373,7 +1519,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "photocream",
@@ -1418,7 +1569,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6781808054?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "picclear",
@@ -1462,7 +1618,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6780223070?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "savetag",
@@ -1506,7 +1667,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "scanto",
@@ -1551,7 +1717,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6779977651?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "sereno",
@@ -1599,7 +1770,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6788236641?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "shotinbox",
@@ -1643,7 +1819,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "snapport",
@@ -1688,7 +1869,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6780575828?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "snapportlite",
@@ -1732,7 +1918,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6792856304?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "sononote",
@@ -1777,7 +1968,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6782139553?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "tripbeelite",
@@ -1821,7 +2017,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "tripbee",
@@ -1867,7 +2068,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "unblurry",
@@ -1911,7 +2117,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6782275018?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "wifiaid",
@@ -1952,7 +2163,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "wifiaidlite",
@@ -1996,7 +2212,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "wordmatelite",
@@ -2040,7 +2261,12 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6797601720?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     },
     {
       "key": "wordmate",
@@ -2089,7 +2315,20 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "verified_live": true
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6789917808?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-05T12:54:26.274882+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
     }
-  ]
+  ],
+  "schema_version": "growth-finder-evidence/1",
+  "generated_at": "2026-09-05T12:54:26.735843+00:00",
+  "expires_at": "2026-09-13T12:54:26.274882+00:00",
+  "source_digests": {
+    "live_roster": "64c11362cbec995d5346f03504f0b7c93c714631a9ea188564501c54dd7bff20",
+    "catalog": "9384820665733e556d85668e2a44b9d175549eb3e621aab1ee2b54e4b2315d62"
+  },
+  "document_digest": "7650eb14c6071f4f9250c4e6896dd176283605c2d267c916a667305f7909b01d"
 }

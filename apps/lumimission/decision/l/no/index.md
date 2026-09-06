@@ -18,7 +18,7 @@ For barnehagebarn fungerer en leggetid-rutine best når den er kort, visuell og 
 - Ingen annonser
 - App Store · Gratis
 
-[Få Lumi Mission Planet på App Store →](https://apps.apple.com/no/app/id6779750237?pt=118326163&ct=iag_data_no&mt=8)
+[Få Lumi Mission Planet på App Store →](https://apps.apple.com/no/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - התחלה ללא תשלום
 - App Store · בחינם
 
-[קבל את PhotoCream ב-App Store →](https://apps.apple.com/il/app/id6781808054?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את PhotoCream ב-App Store →](https://apps.apple.com/il/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

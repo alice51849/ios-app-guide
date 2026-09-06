@@ -18,7 +18,7 @@ Orang tua yang bepergian dengan anak kecil butuh aktivitas yang membuat berkemas
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/id/app/id6787193643?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/id/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

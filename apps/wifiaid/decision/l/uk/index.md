@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платне завантаження
 - App Store · 6,99 USD
 
-[Завантажте WiFi Aid: Пошук проблем мережі з App Store](https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте WiFi Aid: Пошук проблем мережі з App Store](https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/wifiaid.html)
 

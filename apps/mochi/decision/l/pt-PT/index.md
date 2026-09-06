@@ -18,7 +18,7 @@ Se a maioria das apps de tarefas parecerem pesadas, a certa é uma lista limpa c
 - Sem anúncios
 - App Store · Grátis
 
-[Obtenha o Mochi na App Store →](https://apps.apple.com/pt/app/id6785004775?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha o Mochi na App Store →](https://apps.apple.com/pt/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

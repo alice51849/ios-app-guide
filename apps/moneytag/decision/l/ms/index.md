@@ -24,7 +24,7 @@ Pendapatan & Perbelanjaan Setiap projek menyimpan akaunnya sendiri: pendapatan t
 - Apple Watch
 - App Store · Percuma
 
-[Dapatkan MoneyTag di App Store](https://apps.apple.com/my/app/id6801956402?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan MoneyTag di App Store](https://apps.apple.com/my/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/moneytag.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
-[App Store પરથી AI Brief: ફાઇલથી AI પ્રોમ્પ્ટ મેળવો](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી AI Brief: ફાઇલથી AI પ્રોમ્પ્ટ મેળવો](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/aibriefpack.html)
 

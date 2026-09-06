@@ -18,7 +18,7 @@ Parents traveling with young children need activities that turn packing, waiting
 - No ads
 - App Store · Free
 
-[Get Lumi Trip Planet on the App Store →](https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Lumi Trip Planet on the App Store →](https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

@@ -18,7 +18,7 @@ La millor app de matemàtiques per a nens entrena el raonament — patrons, seq�
 - Sense anuncis
 - App Store · Gratis
 
-[Descarrega Lumi Math Planet a l’App Store →](https://apps.apple.com/es/app/id6778269699?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Lumi Math Planet a l’App Store →](https://apps.apple.com/es/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

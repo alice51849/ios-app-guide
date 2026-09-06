@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 무료로 시작 · 한 번 결제로 잠금 해제
 - App Store · 무료
 
-[App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

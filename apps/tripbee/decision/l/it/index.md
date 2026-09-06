@@ -20,7 +20,7 @@ Una buona app per itinerari trasforma un viaggio disordinato in una timeline chi
 - Privato / su dispositivo
 - App Store · 6,99 €
 
-[Scarica TripBee Pro: Pianificatore di Viaggi dall’App Store →](https://apps.apple.com/it/app/id6787754435?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica TripBee Pro: Pianificatore di Viaggi dall’App Store →](https://apps.apple.com/it/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 
 [Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

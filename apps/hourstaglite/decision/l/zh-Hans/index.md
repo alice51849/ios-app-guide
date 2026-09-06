@@ -22,7 +22,7 @@ HoursTag Lite - 看见每样东西的真实代价 每一笔花费，都消耗你
 - Apple Watch
 - App Store · 免费
 
-[在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html)
 

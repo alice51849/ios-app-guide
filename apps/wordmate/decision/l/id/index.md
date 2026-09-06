@@ -22,7 +22,7 @@ Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu 
 - Apple Watch
 - App Store · Rp 149ribu
 
-[Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

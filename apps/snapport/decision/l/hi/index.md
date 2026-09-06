@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - निजी / डिवाइस पर
 - App Store · ₹ 599
 
-[App Store से Snapport प्राप्त करें →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store से Snapport प्राप्त करें →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

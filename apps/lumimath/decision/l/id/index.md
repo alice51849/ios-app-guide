@@ -18,7 +18,7 @@ Aplikasi matematika anak terbaik melatih penalaran — pola, urutan, pemikiran s
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Lumi Math Planet di App Store →](https://apps.apple.com/id/app/id6778269699?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Lumi Math Planet di App Store →](https://apps.apple.com/id/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

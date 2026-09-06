@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 14,99 USD
 
-[Отримайте DailyMate в App Store →](https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=iag_data_uk&mt=8)
+[Отримайте DailyMate в App Store →](https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 1,199
 
-[App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

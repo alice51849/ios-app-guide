@@ -18,7 +18,7 @@ In a category where data sensitivity is the whole story, the right period tracke
 - Private / on-device
 - App Store · Free
 
-[Get Cyca on the App Store →](https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get Cyca on the App Store →](https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-CA/answers/best-period-tracker-app-no-account-required-iphone.html)
 

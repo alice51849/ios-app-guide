@@ -19,7 +19,7 @@ For søvn er et abonnement som maser hver måned det motsatte av avslappende. Kj
 - Ingen annonser
 - App Store · Gratis
 
-[Last ned Sereno i App Store →](https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned Sereno i App Store →](https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

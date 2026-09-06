@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Private / on-device
 - App Store · Free
 
-[Get 100 Notes Studio on the App Store →](https://apps.apple.com/gb/app/id6798813048?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get 100 Notes Studio on the App Store →](https://apps.apple.com/gb/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html)
 

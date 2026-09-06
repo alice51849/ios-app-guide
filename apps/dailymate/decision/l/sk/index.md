@@ -18,7 +18,7 @@ Pred cestou sú kompletné frázy pre reálne situácie užitočnejšie ako izol
 - Apple Watch
 - App Store · 12,99 €
 
-[Stiahnite si DailyMate v App Store →](https://apps.apple.com/sk/app/id6790418321?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnite si DailyMate v App Store →](https://apps.apple.com/sk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

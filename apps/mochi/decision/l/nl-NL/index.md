@@ -18,7 +18,7 @@ Als de meeste takenlijst-apps te vol voelen, is de juiste een overzichtelijke ch
 - Geen advertenties
 - App Store · Gratis
 
-[Download Mochi in de App Store →](https://apps.apple.com/nl/app/id6785004775?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download Mochi in de App Store →](https://apps.apple.com/nl/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

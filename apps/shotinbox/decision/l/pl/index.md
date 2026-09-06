@@ -17,7 +17,7 @@ Twoje zrzuty, uporządkowane Znajdź, załatw i uporządkuj każdy zrzut. Najnow
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz ShotInbox AI: Sort Screenshots z App Store](https://apps.apple.com/pl/app/id6802166527?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz ShotInbox AI: Sort Screenshots z App Store](https://apps.apple.com/pl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/shotinbox.html)
 

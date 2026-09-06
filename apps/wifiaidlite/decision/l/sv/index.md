@@ -18,7 +18,7 @@ Hitta det riktiga problemet. Varje verktyg innehåller en gratis fullständig an
 - Inget konto
 - App Store · Gratis
 
-[Hämta WiFi Aid Lite i App Store](https://apps.apple.com/se/app/id6793414462?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta WiFi Aid Lite i App Store](https://apps.apple.com/se/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/wifiaidlite.html)
 

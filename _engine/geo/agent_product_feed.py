@@ -247,6 +247,8 @@ def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
             "app_store_url": validated_app_store_url(
                 str(record["app_store_url"]),
                 expected_app_id=app_id,
+                expected_locale=locale,
+                require_campaign=True,
             ),
             "operating_system": "iOS",
             "purchase_model": purchase_model,

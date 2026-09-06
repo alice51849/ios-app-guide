@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · 799,00 ₽
 
-[Скачать Lumi Math Pro в App Store →](https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачать Lumi Math Pro в App Store →](https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -23,7 +23,7 @@ G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & π
 - Apple Watch
 - App Store · Δωρεάν
 
-[Αποκτήστε το G+Money Lite: Έξοδα ταξιδιού από το App Store](https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το G+Money Lite: Έξοδα ταξιδιού από το App Store](https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/gmoneylite.html)
 

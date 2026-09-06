@@ -253,9 +253,9 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
                     locale,
                 )
 
-    def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
+    def test_campaign_tokens_share_the_existing_intent_bucket(self) -> None:
         tokens = [catalog.campaign_token(locale) for locale in OFFICIAL_LOCALES]
-        self.assertEqual(len(tokens), len(set(tokens)))
+        self.assertEqual({"geo_pick"}, set(tokens))
         for token in tokens:
             self.assertLessEqual(len(token), 30)
             self.assertRegex(token, r"^[a-z0-9_]+$")

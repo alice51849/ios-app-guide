@@ -20,7 +20,7 @@ Adună scrisul de mână, textul tastat, adnotările PDF și instrumentele de st
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă 100 Notes Studio: Pen & Paper din App Store](https://apps.apple.com/ro/app/id6798813048?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă 100 Notes Studio: Pen & Paper din App Store](https://apps.apple.com/ro/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/notesstudio100.html)
 

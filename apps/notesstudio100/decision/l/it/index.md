@@ -20,7 +20,7 @@ Riunisci scrittura a mano, testo digitato, annotazione di documenti, registrazio
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica 100 Notes Studio: Pen & Paper sull'App Store](https://apps.apple.com/it/app/id6798813048?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica 100 Notes Studio: Pen & Paper sull'App Store](https://apps.apple.com/it/app/id6798813048?pt=118326163&ct=geo_pick&mt=8)
 
 [Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/notesstudio100.html)
 

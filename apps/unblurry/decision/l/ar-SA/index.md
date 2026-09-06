@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على Unblurry من متجر التطبيقات →](https://apps.apple.com/sa/app/id6782275018?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على Unblurry من متجر التطبيقات →](https://apps.apple.com/sa/app/id6782275018?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

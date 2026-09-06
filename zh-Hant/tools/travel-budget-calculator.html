@@ -67,7 +67,6 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"旅遊預算計算機","description":"把當地花費（當地幣別）與機票保險（本國幣別）分開計算，最後才用有標日期的 ECB 參考匯率換算，並算出每人與每人每天的金額。","url":"https://open.cait518.cc/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"TravelApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["當地花費以當地幣別輸入","固定支出以本國幣別輸入","可調整的預備金比例","每人與每人每天金額"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"是用哪種匯率換算？","acceptedAnswer":{"@type":"Answer","text":"歐洲央行（ECB）參考匯率，透過公開的 frankfurter.dev 取得，取不到時使用內建、標有日期的快照。實際使用的匯率、日期與來源都顯示在最後一格。"}},{"@type":"Question","name":"為什麼要把兩種幣別分開？","acceptedAnswer":{"@type":"Answer","text":"因為混在一起就是旅遊預算失準的主因。住宿與餐飲是當地幣別、會受匯率波動影響；已經在國內付掉的機票則不會。"}},{"@type":"Question","name":"預備金抓 10% 夠嗎？","acceptedAnswer":{"@type":"Answer","text":"那只是起點，可以在 0–30% 之間調整。天數長或第一次去的地方通常要抓更多。"}}]}</script>
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
@@ -125,7 +124,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <footer class="footer"><div class="wrap">全部在瀏覽器內完成 · 不上傳、不儲存 · <a href="index.html">所有免費工具</a></div></footer>
 <script>var L={"h2":"把當地花費與固定支出分開算","intro":"每日金額用當地幣別，固定支出用你的幣別。","l_days":"天數","l_people":"人數","l_home":"你的幣別","l_dest":"當地幣別","l_flights":"機票（你的幣別）","l_onceoff":"保險、簽證、其他（你的幣別）","h_daily":"每天 · 全團合計 — 以當地幣別","l_stay":"住宿","l_food":"餐飲","l_local":"當地交通","l_fun":"活動與門票","l_buffer":"預備金","r_daily":"每日花費","r_onsite":"當地花費合計","r_fixed":"固定支出","r_total":"旅程總額","r_person":"每人","r_rate":"使用匯率","per_day":"每天","src_snapshot":"內建 ECB 快照","src_live":"即時 ECB 參考匯率（frankfurter.dev）","note":"ECB 參考匯率是中間價，不是你刷卡會拿到的匯率；銀行與發卡機構會另外加價。"};
 
-var SNAP={"amount":1.0,"base":"USD","date":"2026-08-26","rates":{"AUD":1.3918,"BRL":5.1465,"CAD":1.3862,"CHF":0.80384,"CNY":6.7205,"CZK":20.638,"DKK":6.4065,"EUR":0.85697,"GBP":0.73368,"HKD":7.8381,"HUF":308.66,"IDR":17713,"ILS":2.9742,"INR":95.42,"ISK":121.0,"JPY":159.07,"KRW":1383.49,"MXN":16.9309,"MYR":4.0265,"NOK":9.3277,"NZD":1.6781,"PHP":61.661,"PLN":3.6811,"RON":4.5049,"SEK":9.494,"SGD":1.2698,"THB":32.745,"TRY":48.117,"ZAR":15.916}};
+var SNAP={"amount":1.0,"base":"USD","date":"2026-09-04","rates":{"AUD":1.3882,"BRL":5.1114,"CAD":1.38,"CHF":0.80924,"CNY":6.7109,"CZK":20.813,"DKK":6.4315,"EUR":0.86044,"GBP":0.7391,"HKD":7.8403,"HUF":312.58,"IDR":17636,"ILS":3.0076,"INR":94.49,"ISK":121.15,"JPY":156.25,"KRW":1350.35,"MXN":16.8991,"MYR":4.0445,"NOK":9.2957,"NZD":1.6998,"PHP":62.65,"PLN":3.7126,"RON":4.5199,"SEK":9.5513,"SGD":1.2669,"THB":32.92,"TRY":48.443,"ZAR":15.9672}};
 var rates=null,asof='',srclabel='';
 var $=function(i){return document.getElementById(i);};
 function fill(){var codes=Object.keys(rates).sort();

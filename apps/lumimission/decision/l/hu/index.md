@@ -18,7 +18,7 @@ Egy óvodás számára az esti rutin akkor működik a legjobban, ha rövid, viz
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezze be a Lumi Mission Planet alkalmazást az App Store-ban →](https://apps.apple.com/hu/app/id6779750237?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezze be a Lumi Mission Planet alkalmazást az App Store-ban →](https://apps.apple.com/hu/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

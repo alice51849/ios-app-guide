@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ PicClear ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ PicClear ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=geo_pick&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

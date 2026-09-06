@@ -18,7 +18,7 @@ Comparte de forma segura sin sacrificar el contexto que sí importa. Mask My Fil
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Consigue Mask My File: Borra tus datos en el App Store](https://apps.apple.com/mx/app/id6792850916?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue Mask My File: Borra tus datos en el App Store](https://apps.apple.com/mx/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/maskmyfile.html)
 

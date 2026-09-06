@@ -17,7 +17,7 @@ Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est 
 - Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
-[Obtenez TripBee Lite sur l’App Store →](https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenez TripBee Lite sur l’App Store →](https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

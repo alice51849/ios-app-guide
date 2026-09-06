@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - App Store · ¥38.00
 
-[在 App Store 获取 WiFi Aid：找出网络问题·诊断](https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 WiFi Aid：找出网络问题·诊断](https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html)
 

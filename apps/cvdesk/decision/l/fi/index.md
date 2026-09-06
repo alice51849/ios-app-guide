@@ -17,7 +17,7 @@ Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista
 - Ilmainen aloitus
 - App Store · Ilmainen
 
-[Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-resume-builder-app-for-career-changers-2026.html)
 

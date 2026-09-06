@@ -162,12 +162,14 @@ async function connect(url) {
         locale:document.documentElement.lang,
         ready:typeof HeroTaskCore==="object"&&!document.getElementById("download-csv").disabled,
         overflow:document.documentElement.scrollWidth>innerWidth+1,
+        wide:[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left<-1||e.scrollWidth>e.clientWidth+1)
+          .slice(0,6).map(e=>e.tagName.toLowerCase()+(e.id?"#"+e.id:"")+(e.className&&typeof e.className==="string"?"."+e.className.split(" ").join("."):"")+"="+Math.round(e.getBoundingClientRect().width)+"px:"+(e.textContent||"").trim().slice(0,40)),
         scripts:[...document.scripts].filter(s=>s.src).length,
         name:document.querySelector("[data-field=name]").value
       })`);
       assert.equal(state.locale, record.locale);
       assert.equal(state.ready, true, record.locale);
-      assert.equal(state.overflow, false, record.locale + " overflow at " + width);
+      assert.equal(state.overflow, false, record.locale + "/" + record.task_id + " overflow at " + width + " " + JSON.stringify(state.wide));
       assert.equal(state.scripts, 2);
       assert.equal(await evaluate(`([...document.querySelectorAll("h1,.fields label,.totals p")]).every(
         element=>element.scrollWidth<=element.clientWidth+1&&
@@ -196,7 +198,7 @@ async function connect(url) {
       assert.equal(await evaluate("document.documentElement.scrollWidth>innerWidth+1"), false, record.locale);
       assert.equal(await evaluate("Object.keys(localStorage).length+Object.keys(sessionStorage).length"), 0);
     }
-    const english = manifest.records.find((record) => record.locale === "en-US");
+    const english = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "purchase-worktime");
     await navigate(english);
     assert.equal(await evaluate(`(()=>{
       const input=document.getElementById("hourly-income");input.value="0";
@@ -239,8 +241,145 @@ async function connect(url) {
         return document.getElementById("download-csv").disabled;
       })()`), false, locale + " native decimal input");
     }
+    const maintenance = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "maintenance-next-due");
+    await navigate(maintenance);
+    assert.equal(await evaluate('document.getElementById("today-date").value.length'), 10, "live sheet starts from the visitor's own day");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("today-date");input.value="";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "an invalid date disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-task").click()');
+    assert.equal(await evaluate('document.getElementById("maintenance-rows").children.length'), 4);
+    assert.equal(await evaluate('document.getElementById("today-date").value'), maintenance.example_today || "2026-09-05");
+    acceptDialog = false;
+    await evaluate('document.querySelector("#maintenance-rows .maintenance-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("maintenance-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#maintenance-rows .maintenance-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("maintenance-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".maintenance-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=last_done]").value='2024-01-31';
+      row.querySelector("[data-field=interval_value]").value='1';
+      row.querySelector("[data-field=interval_unit]").value='month';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const maintenanceFile = path.join(downloads, "maintenance-next-due-sheet.csv");
+    await until(() => fs.existsSync(maintenanceFile));
+    const maintenanceCsv = fs.readFileSync(maintenanceFile, "utf8");
+    assert(maintenanceCsv.includes(`"'=1+1"`));
+    assert(maintenanceCsv.includes('"2024-02-29"'));
+    assert(maintenanceCsv.includes('"Overdue"'));
+    assert(!maintenanceCsv.includes("<script>"));
+    assert.equal(await evaluate('document.querySelector(".maintenance-row [data-output=status]").dataset.status'), "overdue");
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "maintenance-next-due"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.querySelector(".maintenance-row [data-field=interval_value]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(12);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit interval input");
+    }
+    const profit = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "project-profit");
+    await navigate(profit);
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("hourly-net").textContent'), "87.97");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("hours-spent");input.value="12.3";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "hours outside quarter-hour steps disable the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-expense").click()');
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 4);
+    assert.equal(await evaluate('document.querySelector("#profit-rows .profit-row:last-child").dataset.kind'), "expense");
+    acceptDialog = false;
+    await evaluate('document.querySelector("#profit-rows .profit-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#profit-rows .profit-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".profit-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=amount]").value='100';
+      document.getElementById("hours-spent").value='';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("hourly-net").textContent'), "—", "no hours means no hourly figure");
+    const profitFile = path.join(downloads, "project-profit-sheet.csv");
+    await until(() => fs.existsSync(profitFile) && fs.statSync(profitFile).size > 0);
+    await until(async () => { const size = fs.statSync(profitFile).size; await pause(150); return fs.statSync(profitFile).size === size; });
+    const profitCsv = fs.readFileSync(profitFile, "utf8");
+    assert(profitCsv.includes(`"'=1+1"`), "profit csv: " + profitCsv.slice(0, 500));
+    assert(profitCsv.includes('"-300.39"'), "negative profit stays a plain number: " + profitCsv.slice(0, 500));
+    assert(!profitCsv.includes(`"'-300.39"`));
+    assert(!profitCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "project-profit"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.querySelector(".profit-row [data-field=amount]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(20.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal amount input");
+    }
+    const battery = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "battery-wear");
+    await navigate(battery);
+    assert.equal(await evaluate('document.getElementById("today-month").value.length'), 7, "live sheet starts from the visitor's own month");
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 3);
+    assert.equal(await evaluate(`(()=>{
+      const input=document.querySelector(".battery-row [data-field=max_capacity_pct]");input.value="59";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a capacity outside 60-100 disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-device").click()');
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#battery-rows .battery-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#battery-rows .battery-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("today-month").value='2026-09';
+      const row=document.querySelector(".battery-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=purchase_month]").value='2024-09';
+      row.querySelector("[data-field=max_capacity_pct]").value='88';
+      row.querySelector("[data-field=cycle_count]").value='412';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.querySelector(".battery-row [data-output=wear]").textContent.includes("0.38")'), true);
+    assert.equal(await evaluate('document.querySelector(".battery-row [data-output=months]").textContent.includes("12")'), true);
+    assert.equal(await evaluate('document.getElementById("device-count").textContent'), "3");
+    assert.equal(await evaluate('document.getElementById("soonest-80").textContent'), "Already at or below 80%", "a device already at 80% makes the soonest figure a fact");
+    const batteryFile = path.join(downloads, "battery-wear-range-sheet.csv");
+    await until(() => fs.existsSync(batteryFile) && fs.statSync(batteryFile).size > 0);
+    await until(async () => { const size = fs.statSync(batteryFile).size; await pause(150); return fs.statSync(batteryFile).size === size; });
+    const batteryCsv = fs.readFileSync(batteryFile, "utf8");
+    assert(batteryCsv.includes(`"'=1+1"`));
+    assert(batteryCsv.includes('"0.38"') && batteryCsv.includes('"0.63"'), "wear stays a band");
+    assert(batteryCsv.includes("; Estimated: Age (months), Wear % per month, Months to 80%"), "every derived figure carries its estimate marker: " + batteryCsv.slice(0, 500));
+    assert(batteryCsv.includes("You provided: Purchase month, Maximum capacity %, Cycle count;"), "typed-in values are marked as provided");
+    assert(!batteryCsv.toLowerCase().includes("score"));
+    assert(!batteryCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "battery-wear"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.querySelector(".battery-row [data-field=max_capacity_pct]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(91);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit capacity input");
+    }
     assert.deepEqual(external.filter((url) => !url.startsWith("data:")), []);
-    console.log(JSON.stringify({locales: manifest.records.length, viewports: 2, downloads: 1, external_requests: external.length}));
+    console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 4, external_requests: external.length}));
   } finally {
     if (browser) await browser.send("Browser.close").catch(() => {});
     if (page) page.socket.close();

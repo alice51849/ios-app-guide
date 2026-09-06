@@ -17,7 +17,7 @@ Tukar timbunan teks kepada satu halaman yang benar-benar dibaca. OnePage PPT mem
 - Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
-[Dapatkan OnePage PPT: Slaid AI di App Store](https://apps.apple.com/my/app/id6798814385?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan OnePage PPT: Slaid AI di App Store](https://apps.apple.com/my/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/onepageppt.html)
 

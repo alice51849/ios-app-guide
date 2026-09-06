@@ -18,7 +18,7 @@ Context mai bun. Răspunsuri mai bune. Transformă capturile de ecran, fișierel
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă AI Brief: Fișiere în prompt AI din App Store](https://apps.apple.com/ro/app/id6791658210?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă AI Brief: Fișiere în prompt AI din App Store](https://apps.apple.com/ro/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/aibriefpack.html)
 

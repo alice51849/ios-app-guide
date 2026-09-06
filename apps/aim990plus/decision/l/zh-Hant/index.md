@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - 付費下載
 - App Store · $190.00
 
-[前往 App Store 取得 Aim990 Plus →](https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[前往 App Store 取得 Aim990 Plus →](https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

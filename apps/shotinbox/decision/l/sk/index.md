@@ -17,7 +17,7 @@ Vaše snímky, prehľadne Nájdite, vybavte a upracte každú snímku. Najnovš�
 - Zadarmo na začiatok
 - App Store · Zadarmo
 
-[Stiahnuť ShotInbox AI: Sort Screenshots v App Store](https://apps.apple.com/sk/app/id6802166527?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť ShotInbox AI: Sort Screenshots v App Store](https://apps.apple.com/sk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/shotinbox.html)
 

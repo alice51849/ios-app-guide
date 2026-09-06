@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - મફત શરૂઆત
 - App Store · મફત
 
-[App Store પર CV ડેસ્ક મેળવો →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પર CV ડેસ્ક મેળવો →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
 

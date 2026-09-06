@@ -22,7 +22,7 @@ HoursTag Lite - El precio real de las cosas Cada compra cuesta horas de tu vida.
 - Apple Watch
 - App Store · Gratis
 
-[Consigue HoursTag Lite: Precio en horas en el App Store](https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue HoursTag Lite: Precio en horas en el App Store](https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=geo_pick&mt=8)
 
 [Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/hourstaglite.html)
 

@@ -18,7 +18,7 @@ Per la foto tessera del bambino, nessun altro deve comparire nella foto e lo sfo
 - Privato / su dispositivo
 - App Store · 6,99 €
 
-[Scarica Snapport dall’App Store →](https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Snapport dall’App Store →](https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

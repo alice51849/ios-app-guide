@@ -17,7 +17,7 @@ Näyttökuvat järjestykseen Löydä, hoida ja siivoa jokainen näyttökuva. Uus
 - Ilmainen aloitus
 - App Store · Ilmainen
 
-[Lataa ShotInbox AI: Sort Screenshots App Storesta](https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa ShotInbox AI: Sort Screenshots App Storesta](https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/shotinbox.html)
 

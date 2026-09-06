@@ -18,7 +18,7 @@ Dacă scanezi formulare de consimțământ, documente de externare sau trimiteri
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă ScanTo Pro din App Store →](https://apps.apple.com/ro/app/id6779977651?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă ScanTo Pro din App Store →](https://apps.apple.com/ro/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

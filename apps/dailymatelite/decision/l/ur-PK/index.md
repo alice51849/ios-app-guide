@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز
 - App Store · مفت
 
-[App Store سے DailyMate Lite: آج ہی بولیں حاصل کریں](https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے DailyMate Lite: آج ہی بولیں حاصل کریں](https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/dailymatelite.html)
 

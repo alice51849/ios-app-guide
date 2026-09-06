@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - App Store · Безкоштовно
 
-[Завантажте AI Brief: Файли в промпт ШІ з App Store](https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте AI Brief: Файли в промпт ШІ з App Store](https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=geo_pick&mt=8)
 
 [Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/aibriefpack.html)
 

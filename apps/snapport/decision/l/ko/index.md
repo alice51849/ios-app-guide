@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 프라이빗 / 기기 내
 - App Store · ￦9,900
 
-[App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 
 [전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

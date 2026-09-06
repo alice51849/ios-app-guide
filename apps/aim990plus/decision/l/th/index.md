@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - ดาวน์โหลดแบบชำระเงิน
 - App Store · ฿199.00
 
-[ดาวน์โหลด Aim990 Plus บน App Store →](https://apps.apple.com/th/app/id6792483140?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Aim990 Plus บน App Store →](https://apps.apple.com/th/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

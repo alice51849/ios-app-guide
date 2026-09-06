@@ -18,7 +18,7 @@ Ein Rechner, den Sie behalten, weil er sich merkt, worum es bei jeder Zahl ging.
 - Widget
 - App Store · Kostenlos
 
-[CalDaily: Rechner & Designs im App Store laden](https://apps.apple.com/de/app/id6794178671?pt=118326163&ct=iag_data_de_de&mt=8)
+[CalDaily: Rechner & Designs im App Store laden](https://apps.apple.com/de/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/caldaily.html)
 

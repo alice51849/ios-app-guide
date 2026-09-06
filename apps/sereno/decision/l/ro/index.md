@@ -19,7 +19,7 @@ Pentru somn, un abonament care te deranjează în fiecare lună este opusul rela
 - Fără reclame
 - App Store · Gratuit
 
-[Descarcă Sereno din App Store →](https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Sereno din App Store →](https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
 
 [Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

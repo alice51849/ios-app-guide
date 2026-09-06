@@ -17,7 +17,7 @@ Repérez la cause probable grâce aux vérifications indépendantes des chemins,
 - Téléchargement payant
 - App Store · $7.99
 
-[Obtenir WiFi Aid: Diagnostic réseau sur l'App Store](https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir WiFi Aid: Diagnostic réseau sur l'App Store](https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 
 [Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/wifiaid.html)
 

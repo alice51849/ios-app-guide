@@ -18,7 +18,7 @@ For a young child, the dealbreaker is ads and data collection — a learning app
 - No ads
 - App Store · Free
 
-[Get Lumi Letters on the App Store →](https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Lumi Letters on the App Store →](https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

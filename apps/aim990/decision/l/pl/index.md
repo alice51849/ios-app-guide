@@ -17,7 +17,7 @@ Część 5 wygląda krótko, ale pytania z niepełnymi zdaniami mogą zabierać 
 - Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
-[Pobierz Aim990 z App Store →](https://apps.apple.com/pl/app/id6784974530?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Aim990 z App Store →](https://apps.apple.com/pl/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)
 
 [Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

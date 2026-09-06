@@ -24,7 +24,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 無料
 
-[App Store で MoneyTag: 収入と支出 を入手](https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で MoneyTag: 収入と支出 を入手](https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
 [完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/moneytag.html)
 

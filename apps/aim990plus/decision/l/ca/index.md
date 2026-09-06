@@ -17,7 +17,7 @@ Entrena la comprensió de l’anglès amb sessions que posen a prova l’atenci�
 - Descàrrega de pagament
 - App Store · 6,99 €
 
-[Descarrega Aim990 Plus: Simulacre anglès a l’App Store](https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Aim990 Plus: Simulacre anglès a l’App Store](https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/aim990plus.html)
 

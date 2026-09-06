@@ -18,7 +18,7 @@ For a child first learning Zhuyin, the app should cover all 37 symbols through t
 - No ads
 - App Store · Free
 
-[Get Lumi Bopomofo on the App Store →](https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Lumi Bopomofo on the App Store →](https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 
 [Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

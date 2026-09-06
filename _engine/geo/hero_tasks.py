@@ -7,6 +7,7 @@ from datetime import date, datetime, timezone
 import hashlib
 import html
 import json
+import math
 import os
 from pathlib import Path, PurePosixPath
 import re
@@ -40,6 +41,18 @@ PROFIT_CSS = HERE / "assets" / "hero-task-profit.css"
 BATTERY_CORE = HERE / "assets" / "hero-task-battery-core.js"
 BATTERY_UI = HERE / "assets" / "hero-task-battery-ui.js"
 BATTERY_CSS = HERE / "assets" / "hero-task-battery.css"
+BANDWIDTH_CORE = HERE / "assets" / "hero-task-bandwidth-core.js"
+BANDWIDTH_UI = HERE / "assets" / "hero-task-bandwidth-ui.js"
+BANDWIDTH_CSS = HERE / "assets" / "hero-task-bandwidth.css"
+TRIPBUDGET_CORE = HERE / "assets" / "hero-task-tripbudget-core.js"
+TRIPBUDGET_UI = HERE / "assets" / "hero-task-tripbudget-ui.js"
+TRIPBUDGET_CSS = HERE / "assets" / "hero-task-tripbudget.css"
+ITINERARY_CORE = HERE / "assets" / "hero-task-itinerary-core.js"
+ITINERARY_UI = HERE / "assets" / "hero-task-itinerary-ui.js"
+ITINERARY_CSS = HERE / "assets" / "hero-task-itinerary.css"
+OUTLINE_CORE = HERE / "assets" / "hero-task-outline-core.js"
+OUTLINE_UI = HERE / "assets" / "hero-task-outline-ui.js"
+OUTLINE_CSS = HERE / "assets" / "hero-task-outline.css"
 MANIFEST = "data/hero-tasks/manifest.json"
 SCHEMA = "data/hero-tasks/manifest.schema.json"
 SITEMAP = "sitemap_hero_tasks.xml"
@@ -81,10 +94,38 @@ TASK_KEYS = {
         "at_or_below_80 no_wear_yet add example example_note formula limits error row_limit result "
         "download_example"
     ).split(),
+    "bandwidth-need": (
+        "title intro plan_down plan_up activity activity_sd_stream activity_hd_stream activity_uhd_stream "
+        "activity_video_call activity_gaming activity_cloud_backup activity_browsing activity_smart_home "
+        "devices per_device_down per_device_up total_down total_up need_down need_up headroom status "
+        "status_ok status_tight status_short approx_note add example example_note formula limits error "
+        "row_limit result download_example"
+    ).split(),
+    "trip-budget": (
+        "title intro budget days travelers fixed item amount share food transport tickets shopping "
+        "per_day per_person_day variable add example example_note formula limits error row_limit result "
+        "download_example"
+    ).split(),
+    "day-itinerary": (
+        "title intro start end place stay travel arrive leave order total available overrun status "
+        "status_fits status_overrun add example example_note formula limits error row_limit result "
+        "download_example"
+    ).split(),
+    "one-page-outline": (
+        "title intro headline points point action metric metric_hint section order text point_count "
+        "preview add example example_note formula limits error row_limit result download_example "
+        "example_headline example_point_1 example_point_2 example_point_3 example_action example_metric"
+    ).split(),
 }
+TRIP_CATEGORIES = ("food", "transport", "tickets", "shopping")
+ITEM_LABEL_KEY = {"day-itinerary": "place"}
+ACTIVITY_KEYS = (
+    "sd_stream", "hd_stream", "uhd_stream", "video_call", "gaming", "cloud_backup", "browsing", "smart_home",
+)
 NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
 REVIEWED_ADAPTERS = frozenset({
     "purchase-worktime-v1", "maintenance-next-due-v1", "project-profit-v1", "battery-wear-range-v1",
+    "bandwidth-need-v1", "trip-budget-v1", "day-itinerary-v1", "one-page-outline-v1",
 })
 # Each adapter ships its own pure-JS core and browser UI; the shared stylesheet is
 # reused and an adapter may add one stylesheet of its own.
@@ -95,12 +136,23 @@ ADAPTER_ASSETS = {
     },
     "project-profit-v1": {"core": PROFIT_CORE, "ui": PROFIT_UI, "css": CSS, "extra_css": PROFIT_CSS},
     "battery-wear-range-v1": {"core": BATTERY_CORE, "ui": BATTERY_UI, "css": CSS, "extra_css": BATTERY_CSS},
+    "bandwidth-need-v1": {"core": BANDWIDTH_CORE, "ui": BANDWIDTH_UI, "css": CSS, "extra_css": BANDWIDTH_CSS},
+    "trip-budget-v1": {"core": TRIPBUDGET_CORE, "ui": TRIPBUDGET_UI, "css": CSS, "extra_css": TRIPBUDGET_CSS},
+    "day-itinerary-v1": {"core": ITINERARY_CORE, "ui": ITINERARY_UI, "css": CSS, "extra_css": ITINERARY_CSS},
+    "one-page-outline-v1": {"core": OUTLINE_CORE, "ui": OUTLINE_UI, "css": CSS, "extra_css": OUTLINE_CSS},
 }
 ASSET_FILES = (
     CORE, UI, CSS, MAINTENANCE_CORE, MAINTENANCE_UI, MAINTENANCE_CSS,
     PROFIT_CORE, PROFIT_UI, PROFIT_CSS, BATTERY_CORE, BATTERY_UI, BATTERY_CSS,
+    BANDWIDTH_CORE, BANDWIDTH_UI, BANDWIDTH_CSS, TRIPBUDGET_CORE, TRIPBUDGET_UI, TRIPBUDGET_CSS,
+    ITINERARY_CORE, ITINERARY_UI, ITINERARY_CSS, OUTLINE_CORE, OUTLINE_UI, OUTLINE_CSS,
 )
 UNITS = ("day", "week", "month")
+# Per-device planning figures (tenths of Mbps, down/up) mirrored from the core.
+BANDWIDTH_REFERENCE = {
+    "sd_stream": (30, 5), "hd_stream": (50, 5), "uhd_stream": (150, 5), "video_call": (30, 30),
+    "gaming": (30, 10), "cloud_backup": (10, 50), "browsing": (10, 5), "smart_home": (5, 5),
+}
 
 
 def json_text(value: object) -> str:
@@ -312,10 +364,20 @@ def examples(tasks: list[dict], copy: dict, task_copies: dict | None = None) -> 
         for locale in OFFICIAL_LOCALES:
             labels = task_copy(copy, task_copies, task, locale)
             sample = dict(task["example"])
-            sample["items"] = [
-                {**item, "name": f"{labels['item']} {index + 1}"}
-                for index, item in enumerate(sample["items"])
-            ]
+            if "items" in sample:
+                # Row names come from the task's own noun ("place" for stops) or the shared "item".
+                noun = labels[ITEM_LABEL_KEY.get(task["id"], "item")]
+                sample["items"] = [
+                    {**item, "name": f"{noun} {index + 1}"}
+                    for index, item in enumerate(sample["items"])
+                ]
+            if "points" in sample:
+                # The outline example is prose, so every locale carries its own native version.
+                sample = {
+                    "headline": labels["example_headline"],
+                    "points": [labels[f"example_point_{index}"] for index in (1, 2, 3)],
+                    "action": labels["example_action"], "metric": labels["example_metric"],
+                }
             batches.setdefault(task["adapter"], []).append(
                 {"adapter": task["adapter"], "input": sample, "labels": labels}
             )
@@ -408,6 +470,14 @@ def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[di
         return render_profit_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
     if task["adapter"] == "battery-wear-range-v1":
         return render_battery_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "bandwidth-need-v1":
+        return render_bandwidth_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "trip-budget-v1":
+        return render_trip_budget_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "day-itinerary-v1":
+        return render_itinerary_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "one-page-outline-v1":
+        return render_outline_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
     if task["adapter"] != "purchase-worktime-v1":
         raise ValueError(f"No reviewed renderer for adapter: {task['adapter']}")
     esc = html.escape
@@ -721,8 +791,10 @@ def render_maintenance_page(task: dict, locale: str, copy: dict, sample: dict, a
 
 
 def money_text(minor: float) -> str:
+    # Same rounding as the JS cores' money(): half-up on the absolute value,
+    # never Python's banker's rounding, so pages and CSVs print identical cents.
     negative = minor < 0
-    absolute = abs(round(minor))
+    absolute = int(math.floor(abs(minor) + 0.5))
     text = f"{absolute // 100}.{absolute % 100:02d}"
     return f"-{text}" if negative else text
 
@@ -1101,6 +1173,521 @@ def render_battery_page(task: dict, locale: str, copy: dict, sample: dict, apps:
 <li>{esc(copy['cycles'])}: <bdi dir="ltr">0 ≤ x ≤ 3000</bdi></li>
 <li>{esc(copy['age'])}: <bdi dir="ltr">1 ≤ m ≤ 240</bdi></li>
 <li>{esc(copy['item'])}: <bdi dir="ltr">1 ≤ n ≤ 10</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
+
+
+
+def mbps_text(tenths: int) -> str:
+    sign = "-" if tenths < 0 else ""
+    absolute = abs(int(tenths))
+    return f"{sign}{absolute // 10}.{absolute % 10}"
+
+
+def activity_select(copy: dict, ident: str, selected: str) -> str:
+    esc = html.escape
+    options = "".join(
+        f'<option value="{key}"{" selected" if key == selected else ""}>{esc(copy["activity_" + key])}</option>'
+        for key in ACTIVITY_KEYS
+    )
+    return f'<select id="{ident}" data-field="activity" required>{options}</select>'
+
+
+def bandwidth_row(copy: dict, item: dict, index: int, result: dict | None = None) -> str:
+    esc = html.escape
+    ident_name, ident_activity, ident_devices = f"row-{index}-name", f"row-{index}-activity", f"row-{index}-devices"
+    down = mbps_text(result["total_down_tenths"]) if result else "—"
+    up = mbps_text(result["total_up_tenths"]) if result else "—"
+    return (
+        '<div class="bandwidth-row">'
+        f'<div class="name-field"><label data-label="name" for="{ident_name}">{esc(copy["item"])}</label>'
+        f'<input id="{ident_name}" data-field="name" type="text" maxlength="120" value="{esc(str(item.get("name", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div class="activity-field"><label data-label="activity" for="{ident_activity}">{esc(copy["activity"])}</label>'
+        f'{activity_select(copy, ident_activity, str(item.get("activity", "browsing")))}</div>'
+        f'<div><label data-label="devices" for="{ident_devices}">{esc(copy["devices"])}</label>'
+        f'<input id="{ident_devices}" data-field="devices" type="text" inputmode="numeric" maxlength="2" value="{esc(str(item.get("devices", "1")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><p class="output-label">{esc(copy["total_down"])}</p><output data-output="total_down">{down}</output></div>'
+        f'<div><p class="output-label">{esc(copy["total_up"])}</p><output data-output="total_up">{up}</output></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(item.get("name", "")), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def bandwidth_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    keys = ("item", "activity", "devices", "per_device_down", "per_device_up", "total_down", "total_up")
+    headings = "".join(f'<th scope="col">{esc(copy[key])}</th>' for key in keys)
+    rows = "".join(
+        f"<tr><td>{esc(item['name'])}</td><td>{esc(copy['activity_' + item['activity']])}</td><td>{item['devices']}</td>"
+        f"<td>{mbps_text(item['per_device_down_tenths'])}</td><td>{mbps_text(item['per_device_up_tenths'])}</td>"
+        f"<td>{mbps_text(item['total_down_tenths'])}</td><td>{mbps_text(item['total_up_tenths'])}</td></tr>"
+        for item in result["items"]
+    )
+    footer = "".join(
+        f'<tr class="example-total"><td>{esc(label)}</td><td></td><td></td><td></td><td></td><td>{down}</td><td>{up}</td></tr>'
+        for label, down, up in (
+            (copy["need_down"], mbps_text(result["need_down_tenths"]), ""),
+            (copy["need_up"], "", mbps_text(result["need_up_tenths"])),
+            (copy["plan_down"], mbps_text(result["plan_down_tenths"]), ""),
+            (copy["plan_up"], "", mbps_text(result["plan_up_tenths"])),
+            (copy["headroom"], mbps_text(result["headroom_down_tenths"]), mbps_text(result["headroom_up_tenths"])),
+            (copy["status"], esc(copy["status_" + result["status_down"]]), esc(copy["status_" + result["status_up"]])),
+        )
+    )
+    return (
+        '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>"
+        + rows + "</tbody><tfoot>" + footer + "</tfoot></table></div>"
+    )
+
+
+def render_bandwidth_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                          modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    rows = "".join(
+        bandwidth_row(copy, item, index + 1, result["items"][index])
+        for index, item in enumerate(sample["input"]["items"])
+    )
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample["input"]}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    calculation = "\n".join(
+        f"{item['name']}: {item['devices']} × {mbps_text(item['per_device_down_tenths'])} ↓ / "
+        f"{mbps_text(item['per_device_up_tenths'])} ↑ = {mbps_text(item['total_down_tenths'])} ↓ / {mbps_text(item['total_up_tenths'])} ↑"
+        for item in result["items"]
+    ) + (
+        f"\n{copy['need_down']} = {mbps_text(result['need_down_tenths'])}; {copy['need_up']} = {mbps_text(result['need_up_tenths'])}"
+        f"\n{copy['headroom']} = {mbps_text(result['plan_down_tenths'])} − {mbps_text(result['need_down_tenths'])} = {mbps_text(result['headroom_down_tenths'])} ↓; "
+        f"{mbps_text(result['plan_up_tenths'])} − {mbps_text(result['need_up_tenths'])} = {mbps_text(result['headroom_up_tenths'])} ↑"
+        f"\n{copy['status']} = {copy['status_' + result['status']]}"
+    )
+    totals = "".join(
+        f'<div><p>{esc(copy[key])}</p><output class="total-value" id="{ident}">{value}</output></div>'
+        for key, ident, value in (
+            ("need_down", "need-down", mbps_text(result["need_down_tenths"])),
+            ("need_up", "need-up", mbps_text(result["need_up_tenths"])),
+        )
+    ) + (
+        # One "headroom ↓ / ↑" row carries both directions so the label stays on one line.
+        f'<div><p>{esc(copy["headroom"])}</p><span class="headroom-pair" dir="ltr">'
+        f'<output class="total-value" id="headroom-down">{mbps_text(result["headroom_down_tenths"])}</output> / '
+        f'<output class="total-value" id="headroom-up">{mbps_text(result["headroom_up_tenths"])}</output></span></div>'
+    ) + (
+        f'<div><p>{esc(copy["status"])}</p><output class="total-value status-badge" id="status-total" '
+        f'data-status="{result["status"]}">{esc(copy["status_" + result["status"]])}</output></div>'
+    )
+    reference = "".join(
+        f"<li>{esc(copy['activity_' + key])}: <bdi dir=\"ltr\">{mbps_text(down)} ↓ / {mbps_text(up)} ↑ Mbps</bdi></li>"
+        for key, (down, up) in BANDWIDTH_REFERENCE.items()
+    )
+    template_item = {"name": "", "activity": "browsing", "devices": "1"}
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="plan-down">{esc(copy['plan_down'])}</label><input id="plan-down" type="text" inputmode="decimal" maxlength="7" value="{esc(sample['input']['plan_down_mbps'], quote=True)}" required autocomplete="off"></div>
+<div><label for="plan-up">{esc(copy['plan_up'])}</label><input id="plan-up" type="text" inputmode="decimal" maxlength="7" value="{esc(sample['input']['plan_up_mbps'], quote=True)}" required autocomplete="off"><p class="small approx-note">{esc(copy['approx_note'])}</p></div>
+</div>
+<div id="bandwidth-rows">{rows}</div>
+<template id="bandwidth-template">{bandwidth_row(copy, template_item, 0)}</template>
+<div class="actions"><button type="button" id="add-row">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="totals bandwidth-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{bandwidth_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['approx_note'])}</p>
+<ul class="small">{reference}</ul>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['plan_down'])} / {esc(copy['plan_up'])}: <bdi dir="ltr">0.5 ≤ x ≤ 10000 Mbps</bdi></li>
+<li>{esc(copy['devices'])}: <bdi dir="ltr">1 ≤ n ≤ 50</bdi></li>
+<li>{esc(copy['item'])}: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
+
+
+
+def fixed_row(copy: dict, item: dict, index: int) -> str:
+    esc = html.escape
+    ident_name, ident_amount = f"row-{index}-name", f"row-{index}-amount"
+    return (
+        '<div class="fixed-row">'
+        f'<div class="name-field"><label data-label="name" for="{ident_name}">{esc(copy["item"])}</label>'
+        f'<input id="{ident_name}" data-field="name" type="text" maxlength="120" value="{esc(str(item.get("name", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><label data-label="amount" for="{ident_amount}">{esc(copy["amount"])}</label>'
+        f'<input id="{ident_amount}" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="{esc(str(item.get("amount", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(item.get("name", "")), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def trip_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    headings = "".join(f'<th scope="col">{esc(copy[key])}</th>' for key in ("item", "amount", "share", "per_day", "per_person_day"))
+    rows = "".join(
+        f"<tr><td>{esc(item['name'])}</td><td>{money_text(item['amount_minor'])}</td><td></td><td></td><td></td></tr>"
+        for item in result["items"]
+    )
+    categories = "".join(
+        f"<tr><td>{esc(copy[row['category']])}</td><td></td><td>{row['share_pct']}%</td>"
+        f"<td>{money_text(row['per_day_minor'])}</td><td>{money_text(row['per_person_day_minor'])}</td></tr>"
+        for row in result["categories"]
+    )
+    footer = (
+        f'<tr class="example-total"><td>{esc(copy["fixed"])}</td><td>{money_text(result["fixed_total_minor"])}</td><td></td><td></td><td></td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["variable"])}</td><td>{money_text(result["variable_minor"])}</td><td>100%</td>'
+        f'<td>{money_text(result["per_day_minor"])}</td><td>{money_text(result["per_person_day_minor"])}</td></tr>'
+    )
+    return (
+        '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>"
+        + rows + categories + "</tbody><tfoot>" + footer + "</tfoot></table></div>"
+    )
+
+
+def render_trip_budget_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                            modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    sample_input = sample["input"]
+    rows = "".join(fixed_row(copy, item, index + 1) for index, item in enumerate(sample_input["items"]))
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample_input}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    calculation = (
+        f"{copy['fixed']} = {money_text(result['fixed_total_minor'])}\n"
+        f"{copy['variable']} = {money_text(result['budget_minor'])} − {money_text(result['fixed_total_minor'])} = {money_text(result['variable_minor'])}\n"
+        f"{copy['per_day']} = {money_text(result['variable_minor'])} ÷ {result['days']} = {money_text(result['per_day_minor'])}\n"
+        f"{copy['per_person_day']} = {money_text(result['per_day_minor'])} ÷ {result['travelers']} = {money_text(result['per_person_day_minor'])}\n"
+        + "\n".join(
+            f"{copy[row['category']]} = {money_text(result['per_day_minor'])} × {row['share_pct']}% = {money_text(row['per_day_minor'])}"
+            for row in result["categories"]
+        )
+    )
+    shares = "".join(
+        f'<div><label for="share-{category}">{esc(copy[category])} (%)</label>'
+        f'<input id="share-{category}" type="text" inputmode="numeric" maxlength="3" value="{esc(str(sample_input["shares"][category]), quote=True)}" required autocomplete="off"></div>'
+        for category in TRIP_CATEGORIES
+    )
+    split = "".join(
+        f'<div><p>{esc(copy[row["category"]])} · {row["share_pct"]}%</p>'
+        f'<output data-output="day" id="day-{row["category"]}">{money_text(row["per_day_minor"])}</output>'
+        f'<output data-output="person" id="person-{row["category"]}">{money_text(row["per_person_day_minor"])}</output></div>'
+        for row in result["categories"]
+    )
+    totals = "".join(
+        f'<div><p>{esc(copy[key])}</p><output class="total-value" id="{ident}">{value}</output></div>'
+        for key, ident, value in (
+            ("fixed", "fixed-total", money_text(result["fixed_total_minor"])),
+            ("variable", "variable-total", money_text(result["variable_minor"])),
+            ("per_day", "per-day", money_text(result["per_day_minor"])),
+            ("per_person_day", "per-person-day", money_text(result["per_person_day_minor"])),
+        )
+    )
+    template_item = {"name": "", "amount": "0"}
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields trip-fields">
+<div><label for="budget-total">{esc(copy['budget'])}</label><input id="budget-total" type="text" inputmode="decimal" maxlength="12" value="{esc(sample_input['budget_total'], quote=True)}" required autocomplete="off"></div>
+<div><label for="trip-days">{esc(copy['days'])}</label><input id="trip-days" type="text" inputmode="numeric" maxlength="3" value="{esc(sample_input['days'], quote=True)}" required autocomplete="off"></div>
+<div><label for="travelers">{esc(copy['travelers'])}</label><input id="travelers" type="text" inputmode="numeric" maxlength="2" value="{esc(sample_input['travelers'], quote=True)}" required autocomplete="off"></div>
+</div>
+<div class="shares" aria-label="{esc(copy['share'], quote=True)}">{shares}</div>
+<p class="output-label">{esc(copy['fixed'])}</p>
+<div id="fixed-rows">{rows}</div>
+<template id="fixed-template">{fixed_row(copy, template_item, 0)}</template>
+<div class="actions"><button type="button" id="add-fixed">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="totals trip-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+<div class="category-split" aria-label="{esc(copy['share'], quote=True)}">{split}</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{trip_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['budget'])} / {esc(copy['amount'])}: <bdi dir="ltr">0 ≤ x ≤ 100,000,000</bdi></li>
+<li>{esc(copy['days'])}: <bdi dir="ltr">1 ≤ d ≤ 120</bdi></li>
+<li>{esc(copy['travelers'])}: <bdi dir="ltr">1 ≤ p ≤ 20</bdi></li>
+<li>{esc(copy['share'])}: <bdi dir="ltr">Σ = 100%</bdi></li>
+<li>{esc(copy['fixed'])}: <bdi dir="ltr">0 ≤ n ≤ 15</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
+
+
+
+def clock_text(minutes: int) -> str:
+    days, rest = divmod(int(minutes), 24 * 60)
+    text = f"{rest // 60:02d}:{rest % 60:02d}"
+    return f"{text} +{days}" if days > 0 else text
+
+
+def stop_row(copy: dict, item: dict, index: int, result: dict | None = None) -> str:
+    esc = html.escape
+    ident_name, ident_stay, ident_travel = f"row-{index}-name", f"row-{index}-stay_min", f"row-{index}-travel_min"
+    arrive = clock_text(result["arrive_min"]) if result else "—"
+    leave = clock_text(result["leave_min"]) if result else "—"
+    return (
+        '<div class="stop-row">'
+        f'<div class="name-field"><label data-label="name" for="{ident_name}">{esc(copy["place"])}</label>'
+        f'<input id="{ident_name}" data-field="name" type="text" maxlength="120" value="{esc(str(item.get("name", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><label data-label="stay_min" for="{ident_stay}">{esc(copy["stay"])}</label>'
+        f'<input id="{ident_stay}" data-field="stay_min" type="text" inputmode="numeric" maxlength="3" value="{esc(str(item.get("stay_min", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><label data-label="travel_min" for="{ident_travel}">{esc(copy["travel"])}</label>'
+        f'<input id="{ident_travel}" data-field="travel_min" type="text" inputmode="numeric" maxlength="3" value="{esc(str(item.get("travel_min", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><p class="output-label">{esc(copy["arrive"])}</p><output data-output="arrive">{arrive}</output></div>'
+        f'<div><p class="output-label">{esc(copy["leave"])}</p><output data-output="leave">{leave}</output></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(item.get("name", "")), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def itinerary_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    headings = "".join(f'<th scope="col">{esc(copy[key])}</th>' for key in ("order", "place", "arrive", "leave", "stay", "travel"))
+    rows = "".join(
+        f"<tr><td>{item['order']}</td><td>{esc(item['name'])}</td><td>{clock_text(item['arrive_min'])}</td>"
+        f"<td>{clock_text(item['leave_min'])}</td><td>{item['stay_min']}</td><td>{item['travel_min']}</td></tr>"
+        for item in result["items"]
+    )
+    footer = (
+        f'<tr class="example-total"><td>{esc(copy["total"])}</td><td></td><td></td><td></td><td>{result["total_min"]}</td><td></td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["available"])}</td><td></td><td>{clock_text(result["start_min"])}</td>'
+        f'<td>{clock_text(result["start_min"] + result["available_min"])}</td><td>{result["available_min"]}</td><td></td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["overrun"])}</td><td></td><td></td><td></td><td>{result["overrun_min"]}</td><td></td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["status"])}</td><td>{esc(copy["status_" + result["status"]])}</td><td></td><td></td><td></td><td></td></tr>'
+    )
+    return (
+        '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>"
+        + rows + "</tbody><tfoot>" + footer + "</tfoot></table></div>"
+    )
+
+
+def render_itinerary_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                          modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    sample_input = sample["input"]
+    rows = "".join(
+        stop_row(copy, item, index + 1, result["items"][index]) for index, item in enumerate(sample_input["items"])
+    )
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample_input}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    calculation = "\n".join(
+        f"{item['order']}. {item['name']}: {clock_text(item['arrive_min'])} + {item['stay_min']} = {clock_text(item['leave_min'])}"
+        + (f" + {item['travel_min']} →" if item['travel_min'] else "")
+        for item in result["items"]
+    ) + (
+        f"\n{copy['total']} = {result['total_min']}; {copy['available']} = {clock_text(result['start_min'])}–"
+        f"{clock_text(result['start_min'] + result['available_min'])} = {result['available_min']}"
+        f"\n{copy['overrun']} = {result['total_min']} − {result['available_min']} = {result['overrun_min']} → {copy['status_' + result['status']]}"
+    )
+    totals = "".join(
+        f'<div><p>{esc(copy[key])}</p><output class="total-value" id="{ident}">{value}</output></div>'
+        for key, ident, value in (
+            ("total", "total-minutes", result["total_min"]),
+            ("available", "available-minutes", result["available_min"]),
+            ("overrun", "overrun-minutes", result["overrun_min"]),
+        )
+    ) + (
+        f'<div><p>{esc(copy["status"])}</p><output class="total-value status-badge" id="status-total" '
+        f'data-status="{result["status"]}">{esc(copy["status_" + result["status"]])}</output></div>'
+    )
+    template_item = {"name": "", "stay_min": "60", "travel_min": "15"}
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="start-time">{esc(copy['start'])}</label><input id="start-time" type="text" inputmode="numeric" maxlength="5" value="{esc(sample_input['start_time'], quote=True)}" required autocomplete="off"></div>
+<div><label for="end-time">{esc(copy['end'])}</label><input id="end-time" type="text" inputmode="numeric" maxlength="5" value="{esc(sample_input['end_time'], quote=True)}" required autocomplete="off"></div>
+</div>
+<div id="stop-rows">{rows}</div>
+<template id="stop-template">{stop_row(copy, template_item, 0)}</template>
+<div class="actions"><button type="button" id="add-stop">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="totals itinerary-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{itinerary_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['start'])} / {esc(copy['end'])}: <bdi dir="ltr">HH:MM</bdi></li>
+<li>{esc(copy['stay'])}: <bdi dir="ltr">5 ≤ m ≤ 720</bdi></li>
+<li>{esc(copy['travel'])}: <bdi dir="ltr">0 ≤ m ≤ 600</bdi></li>
+<li>{esc(copy['place'])}: <bdi dir="ltr">1 ≤ n ≤ 25</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
+
+
+def point_row(copy: dict, text: str, index: int) -> str:
+    esc = html.escape
+    ident = f"row-{index}-point"
+    return (
+        '<div class="point-row">'
+        f'<div><label data-label="point" for="{ident}">{esc(copy["point"])} {index}</label>'
+        f'<input id="{ident}" data-field="point" type="text" maxlength="160" value="{esc(text, quote=True)}" required autocomplete="off"></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(index), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def outline_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    headings = "".join(f'<th scope="col">{esc(copy[key])}</th>' for key in ("section", "order", "text"))
+    rows = "".join(
+        f"<tr><td>{esc(copy[row['section']])}</td><td>{row['order']}</td><td>{esc(row['text'])}</td></tr>"
+        for row in result["sections"]
+    )
+    return '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>" + rows + "</tbody></table></div>"
+
+
+def render_outline_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                        modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    sample_input = sample["input"]
+    rows = "".join(point_row(copy, text, index + 1) for index, text in enumerate(sample_input["points"]))
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample_input}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    points = "".join(f"<li>{esc(point['text'])}</li>" for point in result["points"])
+    metric = result["metric"] or ""
+    preview = (
+        '<div class="outline-preview" aria-label="' + esc(copy["preview"], quote=True) + '">'
+        f'<h3 id="preview-headline">{esc(result["headline"])}</h3>'
+        f'<ol id="preview-points">{points}</ol>'
+        f'<p class="action" id="preview-action">{esc(result["action"])}</p>'
+        f'<p class="metric" id="preview-metric"{"" if metric else " hidden"}>{esc(metric)}</p>'
+        "</div>"
+    )
+    calculation = (
+        f"{copy['headline']} ≤ 80 · {copy['point']} × {result['point_count']} ≤ 160 · {copy['action']} ≤ 160 · {copy['metric']} ≤ 60\n"
+        f"{copy['section']}: {copy['headline']} → {copy['point']} 1…{result['point_count']} → {copy['action']}"
+        + (f" → {copy['metric']}" if metric else "")
+    )
+    totals = (
+        f'<div><p>{esc(copy["point_count"])}</p><output class="total-value" id="point-count">{result["point_count"]}</output></div>'
+        f'<div><p>{esc(copy["section"])}</p><output class="total-value">{len(result["sections"])}</output></div>'
+    )
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="headline">{esc(copy['headline'])}</label><input id="headline" type="text" maxlength="80" value="{esc(sample_input['headline'], quote=True)}" required autocomplete="off"></div>
+</div>
+<p class="output-label">{esc(copy['points'])}</p>
+<div id="point-rows">{rows}</div>
+<template id="point-template">{point_row(copy, "", 0)}</template>
+<div class="actions"><button type="button" id="add-point">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="fields">
+<div><label for="next-action">{esc(copy['action'])}</label><input id="next-action" type="text" maxlength="160" value="{esc(sample_input['action'], quote=True)}" required autocomplete="off"></div>
+<div><label for="metric">{esc(copy['metric'])}</label><input id="metric" type="text" maxlength="60" value="{esc(sample_input['metric'], quote=True)}" autocomplete="off"><p class="small">{esc(copy['metric_hint'])}</p></div>
+</div>
+<div class="totals outline-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+{preview}
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{outline_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['headline'])}: <bdi dir="ltr">≤ 80</bdi></li>
+<li>{esc(copy['point'])}: <bdi dir="ltr">3 ≤ n ≤ 12, ≤ 160</bdi></li>
+<li>{esc(copy['action'])}: <bdi dir="ltr">≤ 160</bdi></li>
+<li>{esc(copy['metric'])}: <bdi dir="ltr">≤ 60</bdi></li>
 </ul>
 </section>
 <section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>

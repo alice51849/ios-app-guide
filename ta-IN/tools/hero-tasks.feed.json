@@ -111,6 +111,118 @@
       "language": "ta-IN",
       "title": "பேட்டரி தேய்மான வரம்பு தாள்",
       "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1071,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கு",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "வீட்டில் ஒரே நேரத்தில் இணையத்தில் என்ன நடக்கிறது, எத்தனை சாதனங்களில் என்பதைப் பட்டியலிடுங்கள்; தேவையான Mbps மற்றும் உங்கள் திட்டத்தில் மீதமுள்ள இடைவெளியுடன் ஒரு தாளைப் பதிவிறக்குங்கள். வரிசை மொத்தம் = சாதனங்கள் × சாதன மதிப்பு. தேவை = வரிசைகளின் கூட்டுத்தொகை. இடைவெளி = திட்டம் − தேவை; திட்டத்தில் 20%-க்குக் குறைவெனில் நெருக்கடி, பூஜ்ஜியத்திற்குக் கீழ் போதாது. முழு பத்தில் ஒரு Mbps அலகில் கூட்டப்படுவதால் மொத்தம் மாறாது. திட்ட வேகம் 0.5 முதல் 10000 Mbps வரை, அதிகபட்சம் ஒரு தசமம்; ஒரு வரிசைக்கு 1 முதல் 50 சாதனங்கள்; அதிகபட்சம் 20 வரிசைகள். Wi‑Fi கவரேஜ், தாமதம், வழங்குநரின் உண்மையான வேகம் இந்தத் தாளின் எல்லைக்கு வெளியே.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/bandwidth-need-sheet.html",
+      "language": "ta-IN",
+      "title": "வீட்டு இணைய வேகத் தாள்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 728,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கு",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "பயணத்தின் மொத்த பட்ஜெட், நாட்கள், பயணிகள், ஏற்கனவே தெரிந்த செலவுகளை உள்ளிடுங்கள்; ஒவ்வொருவரும் ஒரு நாளைக்கு எவ்வளவு செலவழிக்கலாம், அது உணவு, போக்குவரத்து, டிக்கெட், ஷாப்பிங் என எப்படிப் பிரிகிறது என்ற தாளைப் பதிவிறக்குங்கள். செலவழிக்க மீதம் = மொத்த பட்ஜெட் − நிலையான செலவுகள். ஒரு நாளுக்கு = மீதம் ÷ நாட்கள். ஒருவருக்கு ஒரு நாளுக்கு = ஒரு நாளுக்கு ÷ பயணிகள். ஒவ்வொரு பிரிவும் = ஒரு நாளுக்கு × அதன் பங்கு. தொகைகள் முழு பைசாவில் கூட்டப்படும்; நாள் எண்கள் காட்டும்போது மட்டுமே சுற்றப்படும். தொகை 0 முதல் 100,000,000 வரை, அதிகபட்சம் இரண்டு தசமம்; 1 முதல் 120 நாட்கள்; 1 முதல் 20 பயணிகள்; அதிகபட்சம் 15 நிலையான செலவுகள்; நான்கு பங்குகளின் கூட்டுத்தொகை சரியாக 100. முழுவதும் ஒரே நாணயம், மாற்று விகிதம் இல்லை, விலை அல்லது முன்பதிவு ஆலோசனை இல்லை.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/trip-budget-sheet.html",
+      "language": "ta-IN",
+      "title": "பயணத்தின் ஒரு நாள் பட்ஜெட் தாள்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 613,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கு",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ஒரு நாளில் செல்ல விரும்பும் இடங்கள், ஒவ்வொன்றிலும் தங்கும் நேரம், அடுத்த இடத்திற்குச் செல்லும் நேரம் ஆகியவற்றைப் பட்டியலிடுங்கள்; வருகை／புறப்பாடு நேரங்களுடன், தொடக்கத்திற்கும் முடிவிற்கும் இடையில் எல்லாம் அடங்குமா என்பதைக் காட்டும் தாளைப் பதிவிறக்குங்கள். வருகை = முந்தைய புறப்பாடு + பயணம். புறப்பாடு = வருகை + தங்கல். மொத்தம் = எல்லா தங்கல்கள் + எல்லா பயணங்கள். கிடைக்கும் = முடிவு − தொடக்கம்; தொடக்கத்திற்கு முந்தைய முடிவு நேரம் அடுத்த நாளாகக் கணக்கிடப்படும். மீறல் = மொத்தம் − கிடைக்கும்; பூஜ்ஜியத்திற்கு மேல் இருந்தால் நேரம் மீறும். வெறும் நிமிடக் கூட்டல், நேர மண்டலங்கள் இல்லை. நேரங்கள் 24 மணி HH:MM வடிவில்; தங்கல் 5 முதல் 720 நிமிடம்; பயணம் 0 முதல் 600 நிமிடம்; அதிகபட்சம் 25 இடங்கள். திறக்கும் நேரம், உண்மையான போக்குவரத்து, வரைபடம், வழி, முன்பதிவு இந்தத் தாளின் எல்லைக்கு வெளியே.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/day-itinerary-sheet.html",
+      "language": "ta-IN",
+      "title": "ஒரு நாள் பயண நேரத் தாள்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 868,
+          "title": "எடுத்துக்காட்டு CSV பதிவிறக்கு",
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "சிதறிய கூட்டக் குறிப்புகளை ஒரு பக்க வரைவாக மாற்றுங்கள்: ஒரு தலைப்பு, மூன்று முதல் பன்னிரண்டு முக்கியப் புள்ளிகள், ஒரு அடுத்த நடவடிக்கை, விருப்பத்தேர்வான ஒரு அளவீடு; பின்னர் ஸ்லைடு அல்லது சுருக்கத்தில் ஒட்டக்கூடிய தாளாகப் பதிவிறக்குங்கள். தாள் உங்கள் சொற்களை அப்படியே வைத்திருக்கும்: தலைப்பு, பின்னர் நீங்கள் தட்டச்சு செய்த வரிசையில் புள்ளிகள், பின்னர் அடுத்த நடவடிக்கை, பின்னர் அளவீடு. புள்ளிகளை எண்ணி ஓரங்களின் வெற்றிடங்களை நீக்குகிறது; எதுவும் மீண்டும் எழுதப்படவோ சுருக்கப்படவோ மதிப்பிடப்படவோ இல்லை. தலைப்பு அதிகபட்சம் 80 எழுத்துகள்; 3 முதல் 12 புள்ளிகள், ஒவ்வொன்றும் அதிகபட்சம் 160 எழுத்துகள்; அடுத்த நடவடிக்கை அதிகபட்சம் 160 எழுத்துகள்; அளவீடு அதிகபட்சம் 60 எழுத்துகள். ஒவ்வொரு வரியும் ஒற்றை வரி உரையாக இருக்க வேண்டும். தாள் கோப்புகள், பதிவுகள் அல்லது நாட்காட்டிகளைப் படிக்காது.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/one-page-outline-sheet.html",
+      "language": "ta-IN",
+      "title": "கூட்டக் குறிப்பு ஒரே பக்கத்தில்",
+      "url": "https://open.cait518.cc/ios-app-guide/ta-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ta-IN",

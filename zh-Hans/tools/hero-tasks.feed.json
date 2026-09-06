@@ -111,6 +111,118 @@
       "language": "zh-Hans",
       "title": "电池损耗区间表",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 543,
+          "title": "下载示例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。 每行小计＝设备数 × 每台数值。所需＝各行相加。余量＝套餐－所需；低于套餐 20% 为偏紧，小于零为不足。以 0.1 Mbps 为单位整数相加，合计不会漂移。 套餐速度 0.5 至 10000 Mbps、最多一位小数；每行 1 至 50 台；最多 20 行。Wi‑Fi 覆盖、延迟与运营商实际到户速度不在本表范围。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html",
+      "language": "zh-Hans",
+      "title": "家庭带宽需求表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 422,
+          "title": "下载示例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "填入一次旅行的总预算、天数、人数和已知的固定支出，就能下载每人每天还能花多少、以及餐饮／交通／门票／购物各占多少的分配表。 可自由花费＝总预算－固定支出。每天＝可自由花费÷天数。每人每天＝每天÷人数。各类别＝每天×比例。金额以最小单位整数相加；每日数字只在显示时四舍五入。 金额 0 至 100,000,000、最多两位小数；1 至 120 天；1 至 20 人；固定支出最多 15 行；四个比例合计必须正好 100。全程同币种、不换汇，不提供价格或订房建议。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/trip-budget-sheet.html",
+      "language": "zh-Hans",
+      "title": "旅行每日预算分配表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 366,
+          "title": "下载示例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "把一天想去的地点、停留时间和前往下一站的移动时间列出来，就能下载每站的到达／离开时间，并看出整天是否排得进你的开始与结束时间。 到达＝上一站离开＋移动。离开＝到达＋停留。合计＝所有停留＋所有移动。可用＝结束－开始；结束时间早于开始时视为次日。超出＝合计－可用；大于零即超时。纯分钟加法，不处理时区。 时间为 24 小时制 HH:MM；停留 5 至 720 分钟；移动 0 至 600 分钟；最多 25 站。营业时间、实际路况、地图、路线规划与预订不在本表范围。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/day-itinerary-sheet.html",
+      "language": "zh-Hans",
+      "title": "一日行程时间表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 289,
+          "title": "下载示例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "把凌乱的会议记录整理成一页大纲：一个标题、三到十二个要点、一个下一步行动和可选的指标，然后下载成可贴进幻灯片或摘要的表格。 本表原样保留你的文字：先标题，再按你输入的顺序列要点，接着下一步行动，最后指标。它只统计要点数并去掉前后空白；不改写、不摘要、不打分。 标题最多 80 个字符；要点 3 到 12 个、每个最多 160 个字符；下一步行动最多 160 个字符；指标最多 60 个字符。每一行都必须是单行文字。本表不会读取文件、录音或日历。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/one-page-outline-sheet.html",
+      "language": "zh-Hans",
+      "title": "会议记录变一页大纲",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "zh-Hans",

@@ -111,6 +111,118 @@
       "language": "ja",
       "title": "バッテリー劣化レンジ表",
       "url": "https://open.cait518.cc/ios-app-guide/ja/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 581,
+          "title": "サンプル CSV をダウンロード",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "家で同時にしていることと台数を並べると、必要な Mbps と今のプランの余裕がわかり、表としてダウンロードできます。 行の小計＝台数 × 1台あたりの値。必要量＝各行の合計。余裕＝プラン − 必要量。プランの 20% 未満はぎりぎり、マイナスは不足。0.1 Mbps 単位の整数で足すため合計がずれません。 プラン速度は 0.5〜10000 Mbps、小数は 1 桁まで。1 行あたり 1〜50 台、最大 20 行。Wi‑Fi の届く範囲、遅延、実際に出る速度は対象外です。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/bandwidth-need-sheet.html",
+      "language": "ja",
+      "title": "家庭の回線速度 必要量シート",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 443,
+          "title": "サンプル CSV をダウンロード",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "旅行の総予算・日数・人数と、すでに決まっている固定費を入れると、1人1日に使える額と、食事・交通・入場料・買い物への配分をシートとしてダウンロードできます。 自由に使える額＝総予算 − 固定費。1日あたり＝自由に使える額 ÷ 日数。1人1日あたり＝1日あたり ÷ 人数。各カテゴリ＝1日あたり × 配分。金額は最小単位の整数で足し、1日あたりの数字は表示時のみ丸めます。 金額は 0〜100,000,000、小数は 2 桁まで。日数 1〜120、人数 1〜20、固定費は最大 15 行、4 つの配分の合計はちょうど 100。通貨は一貫して同じで、両替レートや価格・予約の助言は扱いません。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/trip-budget-sheet.html",
+      "language": "ja",
+      "title": "旅行の1日予算配分シート",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 372,
+          "title": "サンプル CSV をダウンロード",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "1日で行きたい場所と滞在時間、次の場所への移動時間を並べると、各地点の到着・出発時刻と、開始から終了までに収まるかどうかをシートとしてダウンロードできます。 到着＝前の出発＋移動。出発＝到着＋滞在。合計＝すべての滞在＋すべての移動。使える時間＝終了 − 開始。終了が開始より早い場合は翌日扱い。超過＝合計 − 使える時間。0 より大きければ時間超過。分の足し算だけで、時差は扱いません。 時刻は 24 時間制の HH:MM、滞在は 5〜720 分、移動は 0〜600 分、最大 25 か所。営業時間、実際の交通状況、地図、経路探索、予約は対象外です。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/day-itinerary-sheet.html",
+      "language": "ja",
+      "title": "1日プランの時間シート",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 411,
+          "title": "サンプル CSV をダウンロード",
+          "url": "https://open.cait518.cc/ios-app-guide/ja/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "散らかった議事メモを 1 枚のアウトラインに整えます。見出し 1 つ、要点 3〜12 個、次のアクション 1 つ、任意の指標を入れて、スライドや要約に貼れるシートとしてダウンロードできます。 シートは入力した言葉をそのまま保ちます。見出し、入力順の要点、次のアクション、指標の順です。要点の数を数え、前後の空白を取り除くだけで、書き換え・要約・採点はしません。 見出しは 80 文字まで、要点は 3〜12 個で各 160 文字まで、次のアクションは 160 文字まで、指標は 60 文字まで。各行は 1 行のテキストにしてください。ファイル、録音、カレンダーは読み取りません。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ja/tools/one-page-outline-sheet.html",
+      "language": "ja",
+      "title": "議事メモを 1 枚のアウトラインに",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ja",

@@ -111,6 +111,118 @@
       "language": "or-IN",
       "title": "ବ୍ୟାଟେରୀ କ୍ଷୟ ରେଞ୍ଜ ସିଟ୍",
       "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 903,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "ଘରେ ଏକାସାଙ୍ଗରେ ଅନଲାଇନରେ କ'ଣ ଚାଲେ ଏବଂ କେତୋଟି ଡିଭାଇସରେ ଚାଲେ ଲେଖନ୍ତୁ, ତାପରେ ଆବଶ୍ୟକ Mbps ଓ ଆପଣଙ୍କ ପ୍ଲାନରେ ବଳକା ମାର୍ଜିନ ଥିବା ଶିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଧାଡ଼ିର ମୋଟ = ଡିଭାଇସ୍ × ପ୍ରତି ଡିଭାଇସ୍ ମୂଲ୍ୟ। ଆବଶ୍ୟକତା = ଧାଡ଼ିଗୁଡ଼ିକର ଯୋଗ। ମାର୍ଜିନ = ପ୍ଲାନ୍ − ଆବଶ୍ୟକତା; ପ୍ଲାନର 20% ରୁ କମ୍ ହେଲେ ଟାଣ, ଶୂନ୍ୟରୁ କମ୍ ହେଲେ ଯଥେଷ୍ଟ ନୁହେଁ। ପୂର୍ଣ୍ଣ ଦଶମାଂଶ Mbps ରେ ଯୋଗ ହୁଏ, ତେଣୁ ମୋଟ କେବେ ଘୁଞ୍ଚେ ନାହିଁ। ପ୍ଲାନ୍ ବେଗ 0.5 ରୁ 10000 Mbps, ସର୍ବାଧିକ ଗୋଟିଏ ଦଶମିକ; ପ୍ରତି ଧାଡ଼ିରେ 1 ରୁ 50 ଡିଭାଇସ୍; ସର୍ବାଧିକ 20 ଧାଡ଼ି। Wi‑Fi କଭରେଜ୍, ଲେଟେନ୍ସି ଓ ପ୍ରଦାନକାରୀଙ୍କ ପ୍ରକୃତ ବେଗ ଏହି ଶିଟ୍ ବାହାରେ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/bandwidth-need-sheet.html",
+      "language": "or-IN",
+      "title": "ଘର ପାଇଁ ଇଣ୍ଟରନେଟ୍ ସ୍ପିଡ୍",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 658,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "ଯାତ୍ରାର ମୋଟ ବଜେଟ୍, ଦିନ, ଯାତ୍ରୀ ଓ ପୂର୍ବରୁ ଜଣା ଖର୍ଚ୍ଚ ଲେଖନ୍ତୁ, ତାପରେ ଶିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ—ପ୍ରତ୍ୟେକ ବ୍ୟକ୍ତି ଦିନକୁ କେତେ ଖର୍ଚ୍ଚ କରିପାରିବେ ଏବଂ ତାହା ଖାଦ୍ୟ, ପରିବହନ, ଟିକେଟ୍ ଓ କିଣାକିଣିରେ କିପରି ବଣ୍ଟା ହେବ। ଖର୍ଚ୍ଚ ପାଇଁ ବଳକା = ମୋଟ ବଜେଟ୍ − ସ୍ଥିର ଖର୍ଚ୍ଚ। ପ୍ରତି ଦିନ = ବଳକା ÷ ଦିନ। ପ୍ରତି ବ୍ୟକ୍ତି ପ୍ରତି ଦିନ = ପ୍ରତି ଦିନ ÷ ଯାତ୍ରୀ। ପ୍ରତ୍ୟେକ ବର୍ଗ = ପ୍ରତି ଦିନ × ତାହାର ଅଂଶ। ପରିମାଣ ପୂର୍ଣ୍ଣ ପଇସାରେ ଯୋଗ ହୁଏ; ଦୈନିକ ସଂଖ୍ୟା କେବଳ ଦେଖାଇବା ସମୟରେ ଗୋଲ ହୁଏ। ପରିମାଣ 0 ରୁ 100,000,000, ସର୍ବାଧିକ ଦୁଇ ଦଶମିକ; 1 ରୁ 120 ଦିନ; 1 ରୁ 20 ଯାତ୍ରୀ; ସର୍ବାଧିକ 15 ସ୍ଥିର ଖର୍ଚ୍ଚ; ଚାରି ଅଂଶର ଯୋଗ ଠିକ୍ 100। ସବୁଠାରେ ଏକ ମୁଦ୍ରା, ବିନିମୟ ହାର ନାହିଁ, ମୂଲ୍ୟ କିମ୍ବା ବୁକିଂ ପରାମର୍ଶ ନାହିଁ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/trip-budget-sheet.html",
+      "language": "or-IN",
+      "title": "ଯାତ୍ରାର ଦୈନିକ ବଜେଟ୍ ଶିଟ୍",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 571,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ଗୋଟିଏ ଦିନରେ ଯିବାକୁ ଥିବା ସ୍ଥାନ, ପ୍ରତ୍ୟେକ ସ୍ଥାନରେ କେତେ ସମୟ ରହିବେ ଓ ପରବର୍ତ୍ତୀ ସ୍ଥାନକୁ ପହଞ୍ଚିବାକୁ କେତେ ସମୟ ଲାଗିବ ଲେଖନ୍ତୁ, ତାପରେ ପହଞ୍ଚିବା ଓ ବାହାରିବା ସମୟ ଥିବା ଶିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ ଯାହା ଦେଖାଏ ସବୁକିଛି ଆପଣଙ୍କ ଆରମ୍ଭ ଓ ଶେଷ ମଧ୍ୟରେ ଅଟେ କି ନାହିଁ। ପହଞ୍ଚିବା = ପୂର୍ବ ବାହାରିବା + ଯାତ୍ରା। ବାହାରିବା = ପହଞ୍ଚିବା + ରହଣି। ମୋଟ = ସମସ୍ତ ରହଣି + ସମସ୍ତ ଯାତ୍ରା। ଉପଲବ୍ଧ = ଶେଷ − ଆରମ୍ଭ; ଆରମ୍ଭ ପୂର୍ବର ଶେଷ ସମୟ ପରଦିନ ଗଣାଯାଏ। ଅଧିକ = ମୋଟ − ଉପଲବ୍ଧ; ଶୂନ୍ୟରୁ ଅଧିକ ହେଲେ ସମୟ ଅତିକ୍ରମ। କେବଳ ମିନିଟ୍ ଯୋଗ, ଟାଇମ୍ ଜୋନ୍ ନାହିଁ। ସମୟ 24-ଘଣ୍ଟା HH:MM ରୂପରେ, ରହଣି 5 ରୁ 720 ମିନିଟ୍, ଯାତ୍ରା 0 ରୁ 600 ମିନିଟ୍, ସର୍ବାଧିକ 25 ସ୍ଥାନ। ଖୋଲିବା ସମୟ, ପ୍ରକୃତ ଯାନବାହନ ଚାପ, ମାନଚିତ୍ର, ମାର୍ଗ ଓ ବୁକିଂ ଏହି ଶିଟ୍ ବାହାରେ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/day-itinerary-sheet.html",
+      "language": "or-IN",
+      "title": "ଗୋଟିଏ ଦିନର ଯାତ୍ରା ସମୟ-ଶିଟ୍",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 731,
+          "title": "ଉଦାହରଣ CSV ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "ଅବ୍ୟବସ୍ଥିତ ମିଟିଂ ନୋଟ୍‌କୁ ଗୋଟିଏ ପୃଷ୍ଠାର ରୂପରେଖରେ ବଦଳାନ୍ତୁ: ଗୋଟିଏ ଶିରୋନାମା, ତିନିରୁ ବାରଟି ମୁଖ୍ୟ ବିନ୍ଦୁ, ଗୋଟିଏ ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ ଓ ଐଚ୍ଛିକ ମାପ, ତାପରେ ସ୍ଲାଇଡ୍ କିମ୍ବା ସାରାଂଶରେ ପେଷ୍ଟ କରିବା ପାଇଁ ଶିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଶିଟ୍ ଆପଣଙ୍କ ଶବ୍ଦକୁ ଯେମିତି ଅଛି ସେମିତି ରଖେ: ଶିରୋନାମା, ତାପରେ ଆପଣ ଲେଖିଥିବା କ୍ରମରେ ବିନ୍ଦୁ, ତାପରେ ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ, ତାପରେ ମାପ। ଏହା ବିନ୍ଦୁ ଗଣେ ଓ ଧାରର ଖାଲି ସ୍ଥାନ ହଟାଏ; କିଛି ପୁନଃଲିଖନ, ସଂକ୍ଷିପ୍ତ କିମ୍ବା ସ୍କୋର କରାଯାଏ ନାହିଁ। ଶିରୋନାମା ସର୍ବାଧିକ 80 ଅକ୍ଷର, 3 ରୁ 12 ବିନ୍ଦୁ ପ୍ରତ୍ୟେକ ସର୍ବାଧିକ 160 ଅକ୍ଷର, ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ ସର୍ବାଧିକ 160 ଅକ୍ଷର, ମାପ ସର୍ବାଧିକ 60 ଅକ୍ଷର। ପ୍ରତ୍ୟେକ ଧାଡ଼ି ଗୋଟିଏ ଧାଡ଼ିର ଲେଖା ହେବା ଆବଶ୍ୟକ। ଶିଟ୍ ଫାଇଲ୍, ରେକର୍ଡିଂ କିମ୍ବା କ୍ୟାଲେଣ୍ଡର ପଢ଼େ ନାହିଁ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/or-IN/tools/one-page-outline-sheet.html",
+      "language": "or-IN",
+      "title": "ମିଟିଂ ନୋଟ୍ ଗୋଟିଏ ପୃଷ୍ଠାରେ",
+      "url": "https://open.cait518.cc/ios-app-guide/or-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "or-IN",

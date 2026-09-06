@@ -111,6 +111,118 @@
       "language": "kn-IN",
       "title": "ಬ್ಯಾಟರಿ ಸವೆತ ಶ್ರೇಣಿ ಶೀಟ್",
       "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 918,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "ಮನೆಯಲ್ಲಿ ಒಂದೇ ಸಮಯದಲ್ಲಿ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಏನೇನು ನಡೆಯುತ್ತದೆ, ಎಷ್ಟು ಸಾಧನಗಳಲ್ಲಿ ಎಂದು ಬರೆಯಿರಿ; ಬೇಕಾದ Mbps ಮತ್ತು ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಉಳಿದ ಅಂಚು ಇರುವ ಶೀಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಸಾಲಿನ ಒಟ್ಟು = ಸಾಧನಗಳು × ಪ್ರತಿ ಸಾಧನದ ಮೌಲ್ಯ. ಅಗತ್ಯ = ಸಾಲುಗಳ ಮೊತ್ತ. ಅಂಚು = ಪ್ಲಾನ್ − ಅಗತ್ಯ; ಪ್ಲಾನ್‌ನ 20%ಕ್ಕಿಂತ ಕಡಿಮೆಯಾದರೆ ಬಿಗಿ, ಸೊನ್ನೆಗಿಂತ ಕಡಿಮೆಯಾದರೆ ಸಾಲದು. ಪೂರ್ಣ ಹತ್ತನೇ ಒಂದು Mbps ಘಟಕದಲ್ಲಿ ಕೂಡಿಸುವುದರಿಂದ ಮೊತ್ತ ಎಂದಿಗೂ ಜಾರುವುದಿಲ್ಲ. ಪ್ಲಾನ್ ವೇಗ 0.5 ರಿಂದ 10000 Mbps, ಗರಿಷ್ಠ ಒಂದು ದಶಮಾಂಶ; ಪ್ರತಿ ಸಾಲಿಗೆ 1 ರಿಂದ 50 ಸಾಧನಗಳು; ಗರಿಷ್ಠ 20 ಸಾಲುಗಳು. Wi‑Fi ವ್ಯಾಪ್ತಿ, ವಿಳಂಬ ಮತ್ತು ಒದಗಿಸುವವರ ನಿಜವಾದ ವೇಗ ಈ ಶೀಟ್‌ನ ವ್ಯಾಪ್ತಿಯಲ್ಲಿಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/bandwidth-need-sheet.html",
+      "language": "kn-IN",
+      "title": "ಮನೆಗೆ ಬೇಕಾದ ಇಂಟರ್ನೆಟ್ ವೇಗ",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 679,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "ಪ್ರವಾಸದ ಒಟ್ಟು ಬಜೆಟ್, ದಿನಗಳು, ಪ್ರವಾಸಿಗರು ಮತ್ತು ಈಗಾಗಲೇ ತಿಳಿದಿರುವ ವೆಚ್ಚಗಳನ್ನು ನಮೂದಿಸಿ; ಪ್ರತಿಯೊಬ್ಬರೂ ದಿನಕ್ಕೆ ಎಷ್ಟು ಖರ್ಚು ಮಾಡಬಹುದು ಮತ್ತು ಅದು ಆಹಾರ, ಸಾರಿಗೆ, ಟಿಕೆಟ್ ಹಾಗೂ ಶಾಪಿಂಗ್‌ಗೆ ಹೇಗೆ ಹಂಚಿಕೆಯಾಗುತ್ತದೆ ಎಂಬ ಶೀಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಖರ್ಚಿಗೆ ಉಳಿದದ್ದು = ಒಟ್ಟು ಬಜೆಟ್ − ನಿಗದಿತ ವೆಚ್ಚಗಳು. ದಿನಕ್ಕೆ = ಉಳಿದದ್ದು ÷ ದಿನಗಳು. ಪ್ರತಿ ವ್ಯಕ್ತಿಗೆ ದಿನಕ್ಕೆ = ದಿನಕ್ಕೆ ÷ ಪ್ರವಾಸಿಗರು. ಪ್ರತಿ ವರ್ಗ = ದಿನಕ್ಕೆ × ಅದರ ಪಾಲು. ಮೊತ್ತಗಳನ್ನು ಪೂರ್ಣ ಪೈಸೆಯಲ್ಲಿ ಕೂಡಿಸಲಾಗುತ್ತದೆ; ದಿನದ ಅಂಕಿಗಳನ್ನು ತೋರಿಸುವಾಗ ಮಾತ್ರ ಪೂರ್ಣಾಂಕಗೊಳಿಸಲಾಗುತ್ತದೆ. ಮೊತ್ತ 0 ರಿಂದ 100,000,000, ಗರಿಷ್ಠ ಎರಡು ದಶಮಾಂಶ; 1 ರಿಂದ 120 ದಿನ; 1 ರಿಂದ 20 ಪ್ರವಾಸಿಗರು; ಗರಿಷ್ಠ 15 ನಿಗದಿತ ವೆಚ್ಚಗಳು; ನಾಲ್ಕು ಪಾಲುಗಳ ಮೊತ್ತ ನಿಖರವಾಗಿ 100. ಎಲ್ಲೆಡೆ ಒಂದೇ ಕರೆನ್ಸಿ, ವಿನಿಮಯ ದರವಿಲ್ಲ, ಬೆಲೆ ಅಥವಾ ಬುಕಿಂಗ್ ಸಲಹೆ ಇಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/trip-budget-sheet.html",
+      "language": "kn-IN",
+      "title": "ಪ್ರವಾಸದ ದಿನದ ಬಜೆಟ್ ಶೀಟ್",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 559,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ಒಂದು ದಿನದಲ್ಲಿ ಹೋಗಬೇಕಾದ ಸ್ಥಳಗಳು, ಪ್ರತಿ ಸ್ಥಳದಲ್ಲಿ ಎಷ್ಟು ಹೊತ್ತು ಇರುತ್ತೀರಿ ಮತ್ತು ಮುಂದಿನ ಸ್ಥಳಕ್ಕೆ ತಲುಪಲು ಎಷ್ಟು ಸಮಯ ಎಂದು ಬರೆಯಿರಿ; ಆಗಮನ／ನಿರ್ಗಮನ ಸಮಯಗಳೊಂದಿಗೆ, ಎಲ್ಲವೂ ನಿಮ್ಮ ಆರಂಭ ಮತ್ತು ಅಂತ್ಯದ ನಡುವೆ ಹೊಂದುತ್ತದೆಯೇ ಎಂದು ತೋರಿಸುವ ಶೀಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಆಗಮನ = ಹಿಂದಿನ ನಿರ್ಗಮನ + ಪ್ರಯಾಣ. ನಿರ್ಗಮನ = ಆಗಮನ + ತಂಗುವಿಕೆ. ಒಟ್ಟು = ಎಲ್ಲಾ ತಂಗುವಿಕೆಗಳು + ಎಲ್ಲಾ ಪ್ರಯಾಣಗಳು. ಲಭ್ಯ = ಅಂತ್ಯ − ಆರಂಭ; ಆರಂಭಕ್ಕಿಂತ ಮುಂಚಿನ ಅಂತ್ಯದ ಸಮಯ ಮರುದಿನವೆಂದು ಲೆಕ್ಕ. ಮೀರಿದ್ದು = ಒಟ್ಟು − ಲಭ್ಯ; ಸೊನ್ನೆಗಿಂತ ಹೆಚ್ಚಿದ್ದರೆ ಸಮಯ ಮೀರಿದೆ. ಕೇವಲ ನಿಮಿಷಗಳ ಕೂಡುವಿಕೆ, ಸಮಯ ವಲಯಗಳಿಲ್ಲ. ಸಮಯಗಳು 24 ಗಂಟೆ HH:MM ರೂಪದಲ್ಲಿ; ತಂಗುವಿಕೆ 5 ರಿಂದ 720 ನಿಮಿಷ; ಪ್ರಯಾಣ 0 ರಿಂದ 600 ನಿಮಿಷ; ಗರಿಷ್ಠ 25 ಸ್ಥಳಗಳು. ತೆರೆಯುವ ಸಮಯ, ನಿಜವಾದ ಸಂಚಾರ, ನಕ್ಷೆ, ಮಾರ್ಗ ಮತ್ತು ಬುಕಿಂಗ್ ಈ ಶೀಟ್‌ನ ವ್ಯಾಪ್ತಿಯಲ್ಲಿಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/day-itinerary-sheet.html",
+      "language": "kn-IN",
+      "title": "ಒಂದು ದಿನದ ಪ್ರವಾಸ ಸಮಯ ಶೀಟ್",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 762,
+          "title": "ಉದಾಹರಣೆ CSV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "ಅಸ್ತವ್ಯಸ್ತ ಸಭೆಯ ಟಿಪ್ಪಣಿಗಳನ್ನು ಒಂದು ಪುಟದ ರೂಪರೇಖೆಯಾಗಿ ಬದಲಾಯಿಸಿ: ಒಂದು ಶೀರ್ಷಿಕೆ, ಮೂರರಿಂದ ಹನ್ನೆರಡು ಪ್ರಮುಖ ಅಂಶಗಳು, ಒಂದು ಮುಂದಿನ ಕ್ರಮ ಮತ್ತು ಐಚ್ಛಿಕ ಮಾಪನ; ನಂತರ ಸ್ಲೈಡ್ ಅಥವಾ ಸಾರಾಂಶದಲ್ಲಿ ಅಂಟಿಸಬಹುದಾದ ಶೀಟ್ ಆಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಶೀಟ್ ನಿಮ್ಮ ಪದಗಳನ್ನು ಇದ್ದಂತೆಯೇ ಉಳಿಸುತ್ತದೆ: ಶೀರ್ಷಿಕೆ, ನಂತರ ನೀವು ಟೈಪ್ ಮಾಡಿದ ಕ್ರಮದಲ್ಲಿ ಅಂಶಗಳು, ನಂತರ ಮುಂದಿನ ಕ್ರಮ, ನಂತರ ಮಾಪನ. ಇದು ಅಂಶಗಳನ್ನು ಎಣಿಸಿ ಅಂಚಿನ ಖಾಲಿ ಜಾಗವನ್ನು ತೆಗೆಯುತ್ತದೆ; ಯಾವುದನ್ನೂ ಮರುಬರೆಯುವುದಿಲ್ಲ, ಸಂಕ್ಷೇಪಿಸುವುದಿಲ್ಲ ಅಥವಾ ಅಂಕ ನೀಡುವುದಿಲ್ಲ. ಶೀರ್ಷಿಕೆ ಗರಿಷ್ಠ 80 ಅಕ್ಷರಗಳು; 3 ರಿಂದ 12 ಅಂಶಗಳು, ಪ್ರತಿಯೊಂದೂ ಗರಿಷ್ಠ 160 ಅಕ್ಷರಗಳು; ಮುಂದಿನ ಕ್ರಮ ಗರಿಷ್ಠ 160 ಅಕ್ಷರಗಳು; ಮಾಪನ ಗರಿಷ್ಠ 60 ಅಕ್ಷರಗಳು. ಪ್ರತಿ ಸಾಲು ಒಂದೇ ಸಾಲಿನ ಪಠ್ಯವಾಗಿರಬೇಕು. ಶೀಟ್ ಫೈಲ್‌ಗಳು, ರೆಕಾರ್ಡಿಂಗ್‌ಗಳು ಅಥವಾ ಕ್ಯಾಲೆಂಡರ್‌ಗಳನ್ನು ಓದುವುದಿಲ್ಲ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/one-page-outline-sheet.html",
+      "language": "kn-IN",
+      "title": "ಸಭೆಯ ಟಿಪ್ಪಣಿ ಒಂದೇ ಪುಟದಲ್ಲಿ",
+      "url": "https://open.cait518.cc/ios-app-guide/kn-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "kn-IN",

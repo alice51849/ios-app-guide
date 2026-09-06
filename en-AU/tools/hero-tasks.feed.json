@@ -111,6 +111,118 @@
       "language": "en-AU",
       "title": "Battery wear range sheet",
       "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 532,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan. Total per row = devices × per-device figure. Needed = sum of the rows. Headroom = plan − needed; under 20% of the plan is tight, below zero is not enough. Figures are added in tenths of a Mbps, so totals never drift. Plan speeds from 0.5 to 10000 Mbps with at most one decimal, 1 to 50 devices per row, up to 20 rows. Wi-Fi coverage, latency and your provider's real delivered speed are outside this sheet.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/bandwidth-need-sheet.html",
+      "language": "en-AU",
+      "title": "Home bandwidth sheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 427,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Enter one trip budget, the days, the travelers and the costs you already know, then download a sheet with how much each person can spend per day and how it splits across food, transport, tickets and shopping. Left to spend = total budget − fixed costs. Per day = left to spend ÷ days. Per person per day = per day ÷ travelers. Each category = per day × its share. Amounts are added in whole cents; daily figures are only rounded when shown. Amounts from 0 to 100,000,000 with at most two decimals, 1 to 120 days, 1 to 20 travelers, up to 15 fixed costs, four shares that add up to exactly 100. Same currency throughout, no exchange rates, no price or booking advice.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/trip-budget-sheet.html",
+      "language": "en-AU",
+      "title": "Trip budget per day sheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 338,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "List the places you want to visit in one day with how long you will stay and how long it takes to reach the next one, then download a sheet with arrival and departure times and whether it all fits between your start and end. Arrive = previous leave + travel. Leave = arrive + stay. Total = all stays + all travel. Available = end − start; an end time earlier than the start counts as the next day. Over by = total − available; anything above zero is over time. Plain minute arithmetic, no time zones. Times as 24-hour HH:MM, stays from 5 to 720 minutes, travel from 0 to 600 minutes, up to 25 stops. Opening hours, real traffic, maps, routing and bookings are outside this sheet.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/day-itinerary-sheet.html",
+      "language": "en-AU",
+      "title": "One-day itinerary time sheet",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 328,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Turn messy meeting notes into a one-page outline: one headline, three to twelve key points, one next action and an optional metric, then download it as a sheet you can paste into a slide or a summary. The sheet keeps your words as they are: headline, then points in the order you typed them, then the next action, then the metric. It counts the points and trims surrounding spaces; nothing is rewritten, summarised or scored. Headline up to 80 characters, 3 to 12 points of up to 160 characters each, next action up to 160 characters, metric up to 60 characters. Every line must be single-line text. The sheet does not read files, recordings or calendars.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/one-page-outline-sheet.html",
+      "language": "en-AU",
+      "title": "Meeting notes to one-page outline",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "en-AU",

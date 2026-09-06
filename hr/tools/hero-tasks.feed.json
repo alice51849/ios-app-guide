@@ -111,6 +111,118 @@
       "language": "hr",
       "title": "Raspon trošenja baterije",
       "url": "https://open.cait518.cc/ios-app-guide/hr/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 549,
+          "title": "Preuzmi primjer CSV-a",
+          "url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Popiši što ukućani rade na internetu istodobno i na koliko uređaja, pa preuzmi tablicu s potrebnim Mbps i rezervom koja ti ostaje u paketu. Ukupno po retku = uređaji × vrijednost po uređaju. Potreba = zbroj redaka. Rezerva = paket − potreba; ispod 20 % paketa je tijesno, ispod nule nedovoljno. Zbraja se u cijelim desetinkama Mbps, pa zbrojevi nikad ne odstupaju. Brzine paketa od 0,5 do 10000 Mbps s najviše jednom decimalom, 1 do 50 uređaja po retku, najviše 20 redaka. Pokrivenost Wi‑Fi-jem, latencija i stvarno isporučena brzina nisu dio tablice.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hr/tools/bandwidth-need-sheet.html",
+      "language": "hr",
+      "title": "Brzina interneta za kuću",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 435,
+          "title": "Preuzmi primjer CSV-a",
+          "url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Unesi ukupni proračun putovanja, dane, putnike i troškove koje već znaš, pa preuzmi tablicu s time koliko svatko može potrošiti dnevno i kako se to dijeli na hranu, prijevoz, ulaznice i kupnju. Za potrošiti = ukupni proračun − fiksni troškovi. Po danu = za potrošiti ÷ dani. Po osobi po danu = po danu ÷ putnici. Svaka kategorija = po danu × njezin udio. Iznosi se zbrajaju u cijelim centima; dnevne brojke zaokružuju se samo pri prikazu. Iznosi od 0 do 100.000.000 s najviše dvije decimale, 1 do 120 dana, 1 do 20 putnika, najviše 15 fiksnih troškova, četiri udjela koja daju točno 100. Posvuda ista valuta, bez tečajeva, bez savjeta o cijenama ili rezervacijama.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hr/tools/trip-budget-sheet.html",
+      "language": "hr",
+      "title": "Putni proračun po danu",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 362,
+          "title": "Preuzmi primjer CSV-a",
+          "url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Popiši mjesta jednog dana s time koliko ostaješ i koliko traje put do sljedećeg, pa preuzmi tablicu s vremenima dolaska i odlaska koja pokazuje stane li sve između tvog početka i kraja. Dolazak = prethodni odlazak + put. Odlazak = dolazak + boravak. Ukupno = svi boravci + svi putovi. Raspoloživo = kraj − početak; kraj raniji od početka broji se kao sljedeći dan. Prekoračenje = ukupno − raspoloživo; sve iznad nule prekoračuje. Čista računica u minutama, bez vremenskih zona. Vremena u 24-satnom formatu HH:MM, boravci od 5 do 720 minuta, putovi od 0 do 600 minuta, najviše 25 mjesta. Radno vrijeme, stvarni promet, karte, rute i rezervacije nisu dio tablice.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hr/tools/day-itinerary-sheet.html",
+      "language": "hr",
+      "title": "Vremenski plan jednog dana",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 336,
+          "title": "Preuzmi primjer CSV-a",
+          "url": "https://open.cait518.cc/ios-app-guide/hr/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Pretvori neuredne bilješke sa sastanka u sažetak na jednoj stranici: jedan naslov, tri do dvanaest ključnih točaka, jedan sljedeći korak i neobvezan pokazatelj, pa preuzmi tablicu koju možeš zalijepiti u slajd ili sažetak. Tablica zadržava tvoje riječi kakve jesu: naslov, zatim točke redoslijedom kojim si ih upisao, pa sljedeći korak, pa pokazatelj. Broji točke i uklanja razmake na rubovima; ništa se ne prepisuje, ne sažima i ne ocjenjuje. Naslov do 80 znakova, 3 do 12 točaka od najviše 160 znakova svaka, sljedeći korak do 160 znakova, pokazatelj do 60 znakova. Svaki redak mora biti jednoredni tekst. Tablica ne čita datoteke, snimke ni kalendare.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hr/tools/one-page-outline-sheet.html",
+      "language": "hr",
+      "title": "Sastanak na jednoj stranici",
+      "url": "https://open.cait518.cc/ios-app-guide/hr/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "hr",

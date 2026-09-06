@@ -24,6 +24,24 @@ HoursTag 與 HoursTag Lite 共用同一任務 canonical。依據是既有產品�
   每個數值都標「你提供／推估」，推估值只以觀測平均 ±25% 的區間呈現（低界取高磨耗率、高界取低磨耗率），
   永不輸出單一預測數字或健康分數；工具不量測、不讀取任何手機資料，也不給診斷或更換建議。
 
+第三波把同一套 adapter／任務層文案架構延伸到其他 App 群，每個任務各自帶 core／UI 資產，前四個任務的輸出 bytes 不變：
+
+- **家用頻寬需求表**（`bandwidth-need`，WiFi Aid Lite 6793414462 主推、WiFi Aid 6790467886 並列）：方案上下行 Mbps ＋
+  逐列「活動 × 裝置數」→ 每列小計、所需上下行、餘裕與 ok／tight（餘裕 < 方案 20%）／short 判定 → CSV。
+  每台數值是各服務公開建議的約略規劃值（Netflix、Zoom、主機廠商、FCC），頁面明列來源與「約略值」；
+  以 0.1 Mbps 整數相加。工具只做規劃，不做速度測試、不量測 ISP、不修改任何網路設定。
+- **旅程每日預算分配表**（`trip-budget`，G+Money Lite 6793436548 主推、G+Money 6755782939 並列）：總預算、天數、人數、
+  固定支出列與四類比例（餐飲／交通／門票／購物，合計須恰為 100）→ 可自由花費、每天、每人每天與各類別金額 → CSV。
+  金額以最小單位整數相加，每日數字只在顯示時四捨五入；同幣別、不換匯（換匯留給 App），不做價格或訂房建議。
+- **一日行程時間表**（`day-itinerary`，TripBee Lite 6791299610 主推、TripBee 6787754435 並列）：開始／結束時間（HH:MM）
+  ＋逐站「停留分鐘、移動到下一站分鐘」→ 每站到達／離開時刻、合計、可用、超出與 fits／overrun 判定 → CSV。
+  結束早於開始視為跨日，跨日的時刻顯示「+1」日標記而不是靜默繞回；純分鐘加法、無時區、無日期，
+  不查營業時間、不做路線規劃與訂位。
+- **會議記錄一頁大綱表**（`one-page-outline`，OnePage PPT 6798814385）：標題、3–12 個重點、下一步行動與可選指標
+  → 依「標題 → 重點（依輸入順序）→ 行動 → 指標」排成區塊表 → CSV。文字原樣保留，只裁前後空白與計數；
+  不改寫、不摘要、不評分，指標永遠是文字（序號／標籤不會被當成可畫圖的數值，延續 OnePage PPT 的誠實性鐵律）。
+  範例是散文，因此 50 語各自帶母語版本（`example_headline`、`example_point_1..3`、`example_action`、`example_metric`）。
+
 ## 產出與隱私
 
 - `/{locale}/tools/purchase-worktime-sheet.html`：官方 50 locale 的完整工具、
@@ -36,6 +54,14 @@ HoursTag 與 HoursTag Lite 共用同一任務 canonical。依據是既有產品�
 - `/{locale}/tools/battery-wear-range-sheet.html` 與 `/{locale}/tools/results/battery-wear-range-sheet.csv`：
   電池磨耗區間表；容量 60–100 整數 %、循環 0–3000、購入月份 `YYYY-MM`（2007–2099、機齡 1–240 個月），至多 10 台，
   CSV 每列附「你提供／推估」來源欄。
+- `/{locale}/tools/bandwidth-need-sheet.html` 與 `/{locale}/tools/results/bandwidth-need-sheet.csv`：
+  家用頻寬需求表；方案速度 0.5–10000 Mbps（最多一位小數）、每列 1–50 台、至多 20 列，活動固定 8 種。
+- `/{locale}/tools/trip-budget-sheet.html` 與 `/{locale}/tools/results/trip-budget-sheet.csv`：
+  旅程每日預算分配表；金額 0–100,000,000（最多兩位小數）、1–120 天、1–20 人、固定支出至多 15 列。
+- `/{locale}/tools/day-itinerary-sheet.html` 與 `/{locale}/tools/results/day-itinerary-sheet.csv`：
+  一日行程時間表；時刻 24 小時制 `HH:MM`、停留 5–720 分、移動 0–600 分、至多 25 站。
+- `/{locale}/tools/one-page-outline-sheet.html` 與 `/{locale}/tools/results/one-page-outline-sheet.csv`：
+  會議記錄一頁大綱表；標題 ≤ 80 字元、重點 3–12 個各 ≤ 160、行動 ≤ 160、指標 ≤ 60，全部單行文字。
 - `/{locale}/tools/hero-tasks.feed.json`：50 份原生語系 JSON Feed，含可下載範例、
   穩定 item ID、語意更新日期及完整 App Store 歸因連結。
 - `data/hero-tasks/manifest.json`、schema、`sitemap_hero_tasks.xml`：
@@ -114,8 +140,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest geo.tests.test_hero_tasks
 
 1. 先查證下一款 App 的主承諾及真實可下載任務，不能從行銷標籤猜能力。
 2. 為新 adapter 增加純 JS 核心、對應 Python renderer、完整 50 語文案及 golden cases。
-   目前 renderer 接受 `purchase-worktime-v1`、`maintenance-next-due-v1`、`project-profit-v1`
-   與 `battery-wear-range-v1` 四種資料契約；
+   目前 renderer 接受 `purchase-worktime-v1`、`maintenance-next-due-v1`、`project-profit-v1`、
+   `battery-wear-range-v1`、`bandwidth-need-v1`、`trip-budget-v1`、`day-itinerary-v1` 與
+   `one-page-outline-v1` 八種資料契約；
    新 adapter 在 `ADAPTER_ASSETS` 登錄自己的 core／ui（可選 extra_css），任務層 key 登錄於 `TASK_KEYS`。
 3. 在 `hero_tasks.json` 明確綁定 App key、App Store ID、來源 query 與公共範例。
    等價任務合併至既有 canonical；不接受同 adapter 複製多個 slug。

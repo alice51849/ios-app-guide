@@ -111,6 +111,118 @@
       "language": "id",
       "title": "Rentang keausan baterai",
       "url": "https://open.cait518.cc/ios-app-guide/id/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 555,
+          "title": "Unduh contoh CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Tuliskan apa saja yang dilakukan penghuni rumah secara online pada saat bersamaan dan berapa perangkat yang dipakai, lalu unduh lembar berisi Mbps yang dibutuhkan dan sisa ruang paket Anda. Total per baris = perangkat × nilai per perangkat. Kebutuhan = jumlah semua baris. Sisa ruang = paket − kebutuhan; di bawah 20% paket berarti mepet, di bawah nol berarti kurang. Dijumlahkan dalam sepersepuluh Mbps bulat, jadi totalnya tidak pernah meleset. Kecepatan paket 0,5 sampai 10000 Mbps dengan maksimal satu desimal, 1 sampai 50 perangkat per baris, maksimal 20 baris. Jangkauan Wi‑Fi, latensi, dan kecepatan sebenarnya dari penyedia berada di luar lembar ini.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/bandwidth-need-sheet.html",
+      "language": "id",
+      "title": "Kebutuhan bandwidth rumah",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 441,
+          "title": "Unduh contoh CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Masukkan total anggaran perjalanan, jumlah hari, jumlah orang, dan biaya yang sudah diketahui, lalu unduh lembar berisi berapa yang bisa dibelanjakan tiap orang per hari dan pembagiannya untuk makan, transportasi, tiket, dan belanja. Sisa = total anggaran − biaya tetap. Per hari = sisa ÷ hari. Per orang per hari = per hari ÷ jumlah orang. Setiap kategori = per hari × porsinya. Jumlah dijumlahkan dalam sen bulat; angka harian hanya dibulatkan saat ditampilkan. Jumlah 0 sampai 100.000.000 dengan maksimal dua desimal, 1 sampai 120 hari, 1 sampai 20 orang, maksimal 15 biaya tetap, empat porsi yang berjumlah tepat 100. Satu mata uang sepanjang lembar, tanpa kurs, tanpa saran harga atau pemesanan.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/trip-budget-sheet.html",
+      "language": "id",
+      "title": "Anggaran perjalanan per hari",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 375,
+          "title": "Unduh contoh CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Tuliskan tempat yang ingin dikunjungi dalam sehari, berapa lama di tiap tempat, dan berapa lama menuju tempat berikutnya, lalu unduh lembar berisi jam tiba dan jam berangkat yang menunjukkan apakah semuanya muat di antara jam mulai dan jam selesai Anda. Tiba = berangkat sebelumnya + perjalanan. Berangkat = tiba + lama di tempat. Total = semua lama di tempat + semua perjalanan. Tersedia = selesai − mulai; jam selesai yang lebih awal dari jam mulai dihitung sebagai hari berikutnya. Kelebihan = total − tersedia; di atas nol berarti melebihi waktu. Sekadar hitungan menit, tanpa zona waktu. Jam dalam format 24 jam HH:MM, lama di tempat 5 sampai 720 menit, perjalanan 0 sampai 600 menit, maksimal 25 tempat. Jam buka, lalu lintas nyata, peta, rute, dan pemesanan berada di luar lembar ini.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/day-itinerary-sheet.html",
+      "language": "id",
+      "title": "Lembar waktu perjalanan sehari",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 338,
+          "title": "Unduh contoh CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Ubah catatan rapat yang berantakan menjadi kerangka satu halaman: satu judul, tiga sampai dua belas poin utama, satu tindakan berikutnya, dan satu metrik opsional, lalu unduh sebagai lembar yang bisa ditempel ke slide atau ringkasan. Lembar ini menjaga kata-kata Anda apa adanya: judul, lalu poin sesuai urutan yang Anda ketik, lalu tindakan berikutnya, lalu metrik. Ia menghitung poin dan memangkas spasi di tepi; tidak ada yang ditulis ulang, diringkas, atau dinilai. Judul maksimal 80 karakter, 3 sampai 12 poin masing-masing maksimal 160 karakter, tindakan berikutnya maksimal 160 karakter, metrik maksimal 60 karakter. Setiap baris harus berupa teks satu baris. Lembar ini tidak membaca berkas, rekaman, atau kalender.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/one-page-outline-sheet.html",
+      "language": "id",
+      "title": "Catatan rapat satu halaman",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "id",

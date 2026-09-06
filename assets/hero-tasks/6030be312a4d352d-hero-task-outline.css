@@ -1,0 +1,11 @@
+.point-row{display:grid;grid-template-columns:minmax(200px,1fr) auto;gap:12px;align-items:end;padding:12px 0;border-bottom:1px solid var(--line)}
+#point-rows,#hero-fields>.output-label{order:3}
+.outline-preview{order:2;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:20px}
+.outline-preview h3{margin:0 0 12px;font-size:1.25rem;line-height:1.3;overflow-wrap:anywhere}
+.outline-preview ol{margin:0 0 12px;padding-inline-start:1.4em}
+.outline-preview li{margin:4px 0;overflow-wrap:anywhere}
+.outline-preview .action{font-weight:600;overflow-wrap:anywhere}
+.outline-preview .metric{display:inline-block;margin-top:8px;border-radius:999px;padding:4px 12px;background:var(--soft);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.totals.outline-totals{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:780px){.totals.outline-totals{gap:10px;padding:14px 16px}.outline-totals .total-value{font-size:clamp(1.2rem,3vw,1.8rem)}.fields .small{display:none}}
+@media(max-width:420px){.point-row{grid-template-columns:1fr}.point-row>[data-remove]{justify-self:end}.totals.outline-totals{grid-template-columns:1fr;gap:6px;padding:10px 12px}.totals.outline-totals>div{min-height:0}.outline-totals .total-value{font-size:1rem;line-height:1.3}}

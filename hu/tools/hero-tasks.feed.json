@@ -111,6 +111,118 @@
       "language": "hu",
       "title": "Akkumulátor-kopás sáv",
       "url": "https://open.cait518.cc/ios-app-guide/hu/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 612,
+          "title": "Példa CSV letöltése",
+          "url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Írd össze, mit csinál a háztartás egyszerre a neten és hány eszközön, majd töltsd le a táblázatot a szükséges Mbps-sel és azzal, mennyi tartalék marad a csomagodban. Soronként összesen = eszközök × eszközönkénti érték. Igény = a sorok összege. Tartalék = csomag − igény; a csomag 20%-a alatt szűkös, nulla alatt kevés. Egész tized Mbps-ben adjuk össze, így az összegek sosem csúsznak el. Csomagsebesség 0,5 és 10000 Mbps között legfeljebb egy tizedessel, soronként 1–50 eszköz, legfeljebb 20 sor. A Wi‑Fi lefedettség, a késleltetés és a ténylegesen kapott sebesség nem része a táblázatnak.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hu/tools/bandwidth-need-sheet.html",
+      "language": "hu",
+      "title": "Otthoni sávszélesség-igény",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 454,
+          "title": "Példa CSV letöltése",
+          "url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Add meg az út teljes keretét, a napokat, az utazókat és a már ismert költségeket, majd töltsd le a táblázatot: mennyit költhet egy fő naponta, és hogyan oszlik ez étkezésre, közlekedésre, belépőkre és vásárlásra. Szabadon költhető = teljes keret − fix költségek. Naponta = szabadon költhető ÷ napok. Főre és napra = naponta ÷ utazók. Minden kategória = naponta × az aránya. Az összegeket egész fillérekben adjuk össze; a napi számokat csak megjelenítéskor kerekítjük. Összegek 0 és 100 000 000 között legfeljebb két tizedessel, 1–120 nap, 1–20 utazó, legfeljebb 15 fix költség, négy arány, amely pontosan 100-at ad. Végig ugyanaz a pénznem, nincs árfolyam, nincs ár- vagy foglalási tanács.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hu/tools/trip-budget-sheet.html",
+      "language": "hu",
+      "title": "Utazási költségkeret naponta",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 405,
+          "title": "Példa CSV letöltése",
+          "url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Írd össze a nap helyszíneit azzal, mennyi ideig maradsz és mennyi idő eljutni a következőhöz, majd töltsd le a táblázatot érkezési és indulási időkkel, amely megmutatja, belefér-e minden a kezdés és a befejezés közé. Érkezés = előző indulás + út. Indulás = érkezés + tartózkodás. Összesen = minden tartózkodás + minden út. Rendelkezésre áll = befejezés − kezdés; a kezdésnél korábbi befejezés a következő napnak számít. Túllépés = összesen − rendelkezésre áll; nulla felett túlfut. Egyszerű percszámítás, időzónák nélkül. Idők 24 órás HH:MM formátumban, tartózkodás 5–720 perc, út 0–600 perc, legfeljebb 25 helyszín. Nyitvatartás, valós forgalom, térkép, útvonaltervezés és foglalás nem része a táblázatnak.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hu/tools/day-itinerary-sheet.html",
+      "language": "hu",
+      "title": "Egynapos időterv",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 379,
+          "title": "Példa CSV letöltése",
+          "url": "https://open.cait518.cc/ios-app-guide/hu/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Rendezd a kusza megbeszélés-jegyzeteket egyoldalas vázlattá: egy címsor, három–tizenkét kulcspont, egy következő lépés és egy opcionális mérőszám, majd töltsd le táblázatként, amit diába vagy összefoglalóba illeszthetsz. A táblázat változatlanul megőrzi a szavaidat: címsor, majd a pontok a beírt sorrendben, aztán a következő lépés, végül a mérőszám. Megszámolja a pontokat és levágja a szélső szóközöket; semmit nem ír át, foglal össze vagy pontoz. Címsor legfeljebb 80 karakter, 3–12 pont egyenként legfeljebb 160 karakter, következő lépés legfeljebb 160 karakter, mérőszám legfeljebb 60 karakter. Minden sor egysoros szöveg legyen. A táblázat nem olvas fájlokat, felvételeket vagy naptárakat.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hu/tools/one-page-outline-sheet.html",
+      "language": "hu",
+      "title": "Megbeszélés egy oldalon",
+      "url": "https://open.cait518.cc/ios-app-guide/hu/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "hu",

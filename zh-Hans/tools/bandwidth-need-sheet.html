@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="bandwidth-need">
+<title>家庭带宽需求表</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bandwidth-need-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="免费任务成果">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="免费任务成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="免费任务成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/hero-tasks.feed.json" title="免费任务成果">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/e7ac399021fa2d13-hero-task-bandwidth.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html","name":"家庭带宽需求表","description":"列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。","inLanguage":"zh-Hans","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html#worked-example","name":"完整计算示例","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bandwidth-need-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html#howto","name":"家庭带宽需求表","description":"列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。","inLanguage":"zh-Hans","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"家庭带宽需求表","url":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"每行小计＝设备数 × 每台数值。所需＝各行相加。余量＝套餐－所需；低于套餐 20% 为偏紧，小于零为不足。以 0.1 Mbps 为单位整数相加，合计不会漂移。"},{"@type":"HowToStep","position":2,"text":"套餐速度 0.5 至 10000 Mbps、最多一位小数；每行 1 至 50 台；最多 20 行。Wi‑Fi 覆盖、延迟与运营商实际到户速度不在本表范围。"}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html#example-dataset","name":"完整计算示例","description":"列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。","inLanguage":"zh-Hans","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bandwidth-need-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"bandwidth-need-v1","slug":"bandwidth-need-sheet","locale":"zh-Hans","copy":{"title":"家庭带宽需求表","intro":"列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。","income":"每小时到手收入","day":"每天工作时长","item":"购买项目","quantity":"数量","price":"含税单价","total":"合计","hours":"所需工时","days":"工作天数","add":"添加活动","remove":"移除","download":"下载我的 CSV","reset":"重置为示例","example":"完整计算示例","example_note":"100 / 20 Mbps 套餐，一台 4K 流媒体、两路视频通话、四台设备浏览：需要 25.0 Mbps 下行与 8.5 Mbps 上行，余量 75.0 / 11.5 Mbps。","formula":"每行小计＝设备数 × 每台数值。所需＝各行相加。余量＝套餐－所需；低于套餐 20% 为偏紧，小于零为不足。以 0.1 Mbps 为单位整数相加，合计不会漂移。","limits":"套餐速度 0.5 至 10000 Mbps、最多一位小数；每行 1 至 50 台；最多 20 行。Wi‑Fi 覆盖、延迟与运营商实际到户速度不在本表范围。","privacy":"输入只留在当前标签页，不上传、不需要账号、不跟踪输入，也不保存数据。重新加载会清除修改。","optional":"可选 App","optional_note":"使用这份免费对比表不需要 App。最新功能与价格请查看各 App Store 页面。","error":"请填写两个套餐速度（最多一位小数），每行设备数为 1 至 50 的整数。","row_limit":"最多 20 行。","tools":"免费工具","method":"公式与限制","sources":"资料来源","result":"你的带宽需求表","disclosure":"由可选 App 的开发者 Lumi Studio 提供，并非独立排名。","download_example":"下载示例 CSV","feed":"免费任务成果","plan_down":"套餐下行（Mbps）","plan_up":"套餐上行（Mbps）","activity":"活动","activity_sd_stream":"流媒体（SD）","activity_hd_stream":"流媒体（HD）","activity_uhd_stream":"流媒体（4K）","activity_video_call":"视频通话","activity_gaming":"在线游戏","activity_cloud_backup":"云备份","activity_browsing":"浏览与消息","activity_smart_home":"智能家居设备","devices":"设备数","per_device_down":"每台 ↓","per_device_up":"每台 ↑","total_down":"小计 ↓","total_up":"小计 ↑","need_down":"所需下行","need_up":"所需上行","headroom":"余量 ↓ / ↑","status":"状态","status_ok":"足够","status_tight":"偏紧","status_short":"不足","approx_note":"每台数值是各服务官方建议的近似规划值（Netflix、Zoom、主机厂商、FCC）。本表只做规划，不测量你的线路。"},"example":{"plan_down_mbps":"100","plan_up_mbps":"20","items":[{"activity":"uhd_stream","devices":"1","name":"购买项目 1"},{"activity":"video_call","devices":"2","name":"购买项目 2"},{"activity":"browsing","devices":"4","name":"购买项目 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/4f61f962b3165cda-hero-task-bandwidth-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/db41ef48e1cc24e6-hero-task-bandwidth-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html">免费工具</a><span>Lumi Studio</span></nav>
+<h1>家庭带宽需求表</h1><p>列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。</p>
+<section class="panel" aria-label="家庭带宽需求表">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="plan-down">套餐下行（Mbps）</label><input id="plan-down" type="text" inputmode="decimal" maxlength="7" value="100" required autocomplete="off"></div>
+<div><label for="plan-up">套餐上行（Mbps）</label><input id="plan-up" type="text" inputmode="decimal" maxlength="7" value="20" required autocomplete="off"><p class="small approx-note">每台数值是各服务官方建议的近似规划值（Netflix、Zoom、主机厂商、FCC）。本表只做规划，不测量你的线路。</p></div>
+</div>
+<div id="bandwidth-rows"><div class="bandwidth-row"><div class="name-field"><label data-label="name" for="row-1-name">购买项目</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="购买项目 1" required autocomplete="off"></div><div class="activity-field"><label data-label="activity" for="row-1-activity">活动</label><select id="row-1-activity" data-field="activity" required><option value="sd_stream">流媒体（SD）</option><option value="hd_stream">流媒体（HD）</option><option value="uhd_stream" selected>流媒体（4K）</option><option value="video_call">视频通话</option><option value="gaming">在线游戏</option><option value="cloud_backup">云备份</option><option value="browsing">浏览与消息</option><option value="smart_home">智能家居设备</option></select></div><div><label data-label="devices" for="row-1-devices">设备数</label><input id="row-1-devices" data-field="devices" type="text" inputmode="numeric" maxlength="2" value="1" required autocomplete="off"></div><div><p class="output-label">小计 ↓</p><output data-output="total_down">15.0</output></div><div><p class="output-label">小计 ↑</p><output data-output="total_up">0.5</output></div><button type="button" data-remove aria-label="移除 · 购买项目 1">移除</button></div><div class="bandwidth-row"><div class="name-field"><label data-label="name" for="row-2-name">购买项目</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="购买项目 2" required autocomplete="off"></div><div class="activity-field"><label data-label="activity" for="row-2-activity">活动</label><select id="row-2-activity" data-field="activity" required><option value="sd_stream">流媒体（SD）</option><option value="hd_stream">流媒体（HD）</option><option value="uhd_stream">流媒体（4K）</option><option value="video_call" selected>视频通话</option><option value="gaming">在线游戏</option><option value="cloud_backup">云备份</option><option value="browsing">浏览与消息</option><option value="smart_home">智能家居设备</option></select></div><div><label data-label="devices" for="row-2-devices">设备数</label><input id="row-2-devices" data-field="devices" type="text" inputmode="numeric" maxlength="2" value="2" required autocomplete="off"></div><div><p class="output-label">小计 ↓</p><output data-output="total_down">6.0</output></div><div><p class="output-label">小计 ↑</p><output data-output="total_up">6.0</output></div><button type="button" data-remove aria-label="移除 · 购买项目 2">移除</button></div><div class="bandwidth-row"><div class="name-field"><label data-label="name" for="row-3-name">购买项目</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="购买项目 3" required autocomplete="off"></div><div class="activity-field"><label data-label="activity" for="row-3-activity">活动</label><select id="row-3-activity" data-field="activity" required><option value="sd_stream">流媒体（SD）</option><option value="hd_stream">流媒体（HD）</option><option value="uhd_stream">流媒体（4K）</option><option value="video_call">视频通话</option><option value="gaming">在线游戏</option><option value="cloud_backup">云备份</option><option value="browsing" selected>浏览与消息</option><option value="smart_home">智能家居设备</option></select></div><div><label data-label="devices" for="row-3-devices">设备数</label><input id="row-3-devices" data-field="devices" type="text" inputmode="numeric" maxlength="2" value="4" required autocomplete="off"></div><div><p class="output-label">小计 ↓</p><output data-output="total_down">4.0</output></div><div><p class="output-label">小计 ↑</p><output data-output="total_up">2.0</output></div><button type="button" data-remove aria-label="移除 · 购买项目 3">移除</button></div></div>
+<template id="bandwidth-template"><div class="bandwidth-row"><div class="name-field"><label data-label="name" for="row-0-name">购买项目</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div class="activity-field"><label data-label="activity" for="row-0-activity">活动</label><select id="row-0-activity" data-field="activity" required><option value="sd_stream">流媒体（SD）</option><option value="hd_stream">流媒体（HD）</option><option value="uhd_stream">流媒体（4K）</option><option value="video_call">视频通话</option><option value="gaming">在线游戏</option><option value="cloud_backup">云备份</option><option value="browsing" selected>浏览与消息</option><option value="smart_home">智能家居设备</option></select></div><div><label data-label="devices" for="row-0-devices">设备数</label><input id="row-0-devices" data-field="devices" type="text" inputmode="numeric" maxlength="2" value="1" required autocomplete="off"></div><div><p class="output-label">小计 ↓</p><output data-output="total_down">—</output></div><div><p class="output-label">小计 ↑</p><output data-output="total_up">—</output></div><button type="button" data-remove aria-label="移除 · ">移除</button></div></template>
+<div class="actions"><button type="button" id="add-row">添加活动</button><span class="small">最多 20 行。</span></div>
+<div class="totals bandwidth-totals" aria-label="你的带宽需求表">
+<div><p>所需下行</p><output class="total-value" id="need-down">25.0</output></div><div><p>所需上行</p><output class="total-value" id="need-up">8.5</output></div><div><p>余量 ↓ / ↑</p><span class="headroom-pair" dir="ltr"><output class="total-value" id="headroom-down">75.0</output> / <output class="total-value" id="headroom-up">11.5</output></span></div><div><p>状态</p><output class="total-value status-badge" id="status-total" data-status="ok">足够</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>下载我的 CSV</button><button type="button" id="reset-example">重置为示例</button></div>
+</fieldset></form><p class="small">输入只留在当前标签页，不上传、不需要账号、不跟踪输入，也不保存数据。重新加载会清除修改。</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>完整计算示例</h2><p>100 / 20 Mbps 套餐，一台 4K 流媒体、两路视频通话、四台设备浏览：需要 25.0 Mbps 下行与 8.5 Mbps 上行，余量 75.0 / 11.5 Mbps。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">购买项目</th><th scope="col">活动</th><th scope="col">设备数</th><th scope="col">每台 ↓</th><th scope="col">每台 ↑</th><th scope="col">小计 ↓</th><th scope="col">小计 ↑</th></tr></thead><tbody><tr><td>购买项目 1</td><td>流媒体（4K）</td><td>1</td><td>15.0</td><td>0.5</td><td>15.0</td><td>0.5</td></tr><tr><td>购买项目 2</td><td>视频通话</td><td>2</td><td>3.0</td><td>3.0</td><td>6.0</td><td>6.0</td></tr><tr><td>购买项目 3</td><td>浏览与消息</td><td>4</td><td>1.0</td><td>0.5</td><td>4.0</td><td>2.0</td></tr></tbody><tfoot><tr class="example-total"><td>所需下行</td><td></td><td></td><td></td><td></td><td>25.0</td><td></td></tr><tr class="example-total"><td>所需上行</td><td></td><td></td><td></td><td></td><td></td><td>8.5</td></tr><tr class="example-total"><td>套餐下行（Mbps）</td><td></td><td></td><td></td><td></td><td>100.0</td><td></td></tr><tr class="example-total"><td>套餐上行（Mbps）</td><td></td><td></td><td></td><td></td><td></td><td>20.0</td></tr><tr class="example-total"><td>余量 ↓ / ↑</td><td></td><td></td><td></td><td></td><td>75.0</td><td>11.5</td></tr><tr class="example-total"><td>状态</td><td></td><td></td><td></td><td></td><td>足够</td><td>足够</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bandwidth-need-sheet.csv" download>下载示例 CSV</a>
+<h2>公式与限制</h2><p>每行小计＝设备数 × 每台数值。所需＝各行相加。余量＝套餐－所需；低于套餐 20% 为偏紧，小于零为不足。以 0.1 Mbps 为单位整数相加，合计不会漂移。</p>
+<pre class="formula">购买项目 1: 1 × 15.0 ↓ / 0.5 ↑ = 15.0 ↓ / 0.5 ↑
+购买项目 2: 2 × 3.0 ↓ / 3.0 ↑ = 6.0 ↓ / 6.0 ↑
+购买项目 3: 4 × 1.0 ↓ / 0.5 ↑ = 4.0 ↓ / 2.0 ↑
+所需下行 = 25.0; 所需上行 = 8.5
+余量 ↓ / ↑ = 100.0 − 25.0 = 75.0 ↓; 20.0 − 8.5 = 11.5 ↑
+状态 = 足够</pre>
+<p>每台数值是各服务官方建议的近似规划值（Netflix、Zoom、主机厂商、FCC）。本表只做规划，不测量你的线路。</p>
+<ul class="small"><li>流媒体（SD）: <bdi dir="ltr">3.0 ↓ / 0.5 ↑ Mbps</bdi></li><li>流媒体（HD）: <bdi dir="ltr">5.0 ↓ / 0.5 ↑ Mbps</bdi></li><li>流媒体（4K）: <bdi dir="ltr">15.0 ↓ / 0.5 ↑ Mbps</bdi></li><li>视频通话: <bdi dir="ltr">3.0 ↓ / 3.0 ↑ Mbps</bdi></li><li>在线游戏: <bdi dir="ltr">3.0 ↓ / 1.0 ↑ Mbps</bdi></li><li>云备份: <bdi dir="ltr">1.0 ↓ / 5.0 ↑ Mbps</bdi></li><li>浏览与消息: <bdi dir="ltr">1.0 ↓ / 0.5 ↑ Mbps</bdi></li><li>智能家居设备: <bdi dir="ltr">0.5 ↓ / 0.5 ↑ Mbps</bdi></li></ul>
+<p>套餐速度 0.5 至 10000 Mbps、最多一位小数；每行 1 至 50 台；最多 20 行。Wi‑Fi 覆盖、延迟与运营商实际到户速度不在本表范围。</p>
+<ul class="small">
+<li>套餐下行（Mbps） / 套餐上行（Mbps）: <bdi dir="ltr">0.5 ≤ x ≤ 10000 Mbps</bdi></li>
+<li>设备数: <bdi dir="ltr">1 ≤ n ≤ 50</bdi></li>
+<li>购买项目: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>可选 App</h2><p>使用这份免费对比表不需要 App。最新功能与价格请查看各 App Store 页面。</p><div class="actions"><a class="button" href="https://apps.apple.com/cn/app/id6793414462?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">在 App Store 获取 WiFi Aid Lite</a><a class="button" href="https://apps.apple.com/cn/app/id6790467886?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">在 App Store 获取 WiFi Aid：找出网络问题·诊断</a></div></section>
+<footer><p>由可选 App 的开发者 Lumi Studio 提供，并非独立排名。</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">资料来源</a> · <a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/hero-tasks.feed.json">免费任务成果</a></footer>
+</main></body></html>

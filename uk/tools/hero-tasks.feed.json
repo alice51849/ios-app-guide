@@ -111,6 +111,118 @@
       "language": "uk",
       "title": "Діапазон зносу батареї",
       "url": "https://open.cait518.cc/ios-app-guide/uk/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 765,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Запишіть, що домашні роблять у мережі одночасно та на скількох пристроях, і завантажте таблицю з потрібними Мбіт/с та запасом, який лишається у вашому тарифі. Разом у рядку = пристрої × значення на пристрій. Потрібно = сума рядків. Запас = тариф − потрібно; менше ніж 20 % тарифу — впритул, менше нуля — не вистачає. Додаються цілі десяті Мбіт/с, тож підсумки ніколи не розходяться. Швидкості тарифу від 0,5 до 10000 Мбіт/с щонайбільше з одним десятковим знаком, від 1 до 50 пристроїв у рядку, до 20 рядків. Покриття Wi‑Fi, затримка та реальна швидкість від провайдера до таблиці не входять.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/bandwidth-need-sheet.html",
+      "language": "uk",
+      "title": "Швидкість інтернету для дому",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 584,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Введіть загальний бюджет подорожі, дні, кількість мандрівників і вже відомі витрати — і завантажте таблицю: скільки кожен може витрачати на день і як це ділиться на їжу, транспорт, квитки та покупки. Лишається на витрати = загальний бюджет − фіксовані витрати. На день = залишок ÷ дні. На особу на день = на день ÷ мандрівники. Кожна категорія = на день × її частка. Суми додаються в цілих копійках; денні значення округлюються лише під час показу. Суми від 0 до 100 000 000 щонайбільше з двома десятковими знаками, від 1 до 120 днів, від 1 до 20 осіб, до 15 фіксованих витрат, чотири частки рівно на 100 у сумі. Одна валюта скрізь, без курсів, без порад щодо цін чи бронювання.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/trip-budget-sheet.html",
+      "language": "uk",
+      "title": "Бюджет подорожі на день",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 470,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Перелічіть місця на день, скільки ви там пробудете й скільки їхати до наступного, і завантажте таблицю з часом прибуття та від'їзду, яка покаже, чи все вкладається між вашим початком і кінцем. Прибуття = попередній від'їзд + дорога. Від'їзд = прибуття + перебування. Разом = усі перебування + уся дорога. Доступно = кінець − початок; кінець раніший за початок вважається наступним днем. Перевищення = разом − доступно; більше нуля — не вкладається. Проста арифметика хвилин, без часових поясів. Час у 24-годинному форматі ГГ:ХХ, перебування від 5 до 720 хвилин, дорога від 0 до 600 хвилин, до 25 місць. Години роботи, реальний рух, карти, маршрути та бронювання до таблиці не входять.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/day-itinerary-sheet.html",
+      "language": "uk",
+      "title": "Розклад одного дня",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 539,
+          "title": "Завантажити приклад CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Перетворіть безладні нотатки зі зустрічі на план на одну сторінку: один заголовок, від трьох до дванадцяти ключових пунктів, одна наступна дія та необов'язкова метрика, а потім завантажте таблицю, яку можна вставити у слайд або резюме. Таблиця зберігає ваші слова як є: заголовок, потім пункти в порядку введення, потім наступна дія, потім метрика. Вона рахує пункти й прибирає пробіли по краях; нічого не переписується, не скорочується й не оцінюється. Заголовок до 80 символів, від 3 до 12 пунктів до 160 символів кожен, наступна дія до 160 символів, метрика до 60 символів. Кожен рядок має бути однорядковим текстом. Таблиця не читає файли, записи чи календарі.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/one-page-outline-sheet.html",
+      "language": "uk",
+      "title": "Зустріч на одній сторінці",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "uk",

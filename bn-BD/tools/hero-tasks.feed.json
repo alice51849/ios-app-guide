@@ -111,6 +111,118 @@
       "language": "bn-BD",
       "title": "ব্যাটারি ক্ষয় রেঞ্জ শিট",
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 918,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "বাড়িতে একসঙ্গে অনলাইনে কী কী চলে আর কতগুলো ডিভাইসে চলে তা লিখুন, তারপর প্রয়োজনীয় Mbps ও আপনার প্ল্যানে বাকি থাকা মার্জিনের শিট ডাউনলোড করুন। সারির মোট = ডিভাইস × প্রতি ডিভাইস মান। চাহিদা = সারিগুলোর যোগফল। মার্জিন = প্ল্যান − চাহিদা; প্ল্যানের 20%-এর কম হলে টানাটানি, শূন্যের নিচে হলে অপর্যাপ্ত। পূর্ণ দশমাংশ Mbps-এ যোগ হয়, তাই মোট কখনো সরে না। প্ল্যানের গতি 0.5 থেকে 10000 Mbps, সর্বোচ্চ এক দশমিক; প্রতি সারিতে 1 থেকে 50 ডিভাইস; সর্বোচ্চ 20 সারি। Wi‑Fi কভারেজ, লেটেন্সি ও প্রদানকারীর প্রকৃত গতি এই শিটের বাইরে।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/bandwidth-need-sheet.html",
+      "language": "bn-BD",
+      "title": "বাড়ির ইন্টারনেট স্পিডের চাহিদা শিট",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 634,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "ভ্রমণের মোট বাজেট, দিন, যাত্রী ও আগে থেকে জানা খরচ লিখুন, তারপর শিট ডাউনলোড করুন—প্রতিজন দিনে কত খরচ করতে পারবে এবং তা খাবার, যাতায়াত, টিকিট ও কেনাকাটায় কীভাবে ভাগ হবে। খরচের জন্য বাকি = মোট বাজেট − নির্ধারিত খরচ। প্রতিদিন = বাকি ÷ দিন। প্রতিজন প্রতিদিন = প্রতিদিন ÷ যাত্রী। প্রতিটি খাত = প্রতিদিন × তার অংশ। পরিমাণ পূর্ণ পয়সায় যোগ হয়; দৈনিক সংখ্যা শুধু দেখানোর সময় রাউন্ড হয়। পরিমাণ 0 থেকে 100,000,000, সর্বোচ্চ দুই দশমিক; 1 থেকে 120 দিন; 1 থেকে 20 যাত্রী; সর্বোচ্চ 15টি নির্ধারিত খরচ; চারটি অংশের যোগফল ঠিক 100। পুরোটা একই মুদ্রায়, বিনিময় হার নেই, দাম বা বুকিংয়ের পরামর্শ নেই।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/trip-budget-sheet.html",
+      "language": "bn-BD",
+      "title": "ভ্রমণের দৈনিক বাজেট শিট",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 572,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "একদিনে যেসব জায়গায় যেতে চান, কোথায় কতক্ষণ থাকবেন আর পরের জায়গায় যেতে কতক্ষণ লাগবে তা লিখুন; পৌঁছানো ও রওনার সময়সহ শিট ডাউনলোড করুন, যা দেখায় সবকিছু আপনার শুরু ও শেষের মধ্যে ধরে কি না। পৌঁছানো = আগের রওনা + যাত্রা। রওনা = পৌঁছানো + অবস্থান। মোট = সব অবস্থান + সব যাত্রা। উপলব্ধ = শেষ − শুরু; শুরুর আগের শেষ সময় পরের দিন ধরা হয়। অতিরিক্ত = মোট − উপলব্ধ; শূন্যের বেশি হলে সময় ছাড়িয়ে যায়। শুধু মিনিটের যোগ, টাইম জোন নেই। সময় 24-ঘণ্টা HH:MM ফরম্যাটে, অবস্থান 5 থেকে 720 মিনিট, যাত্রা 0 থেকে 600 মিনিট, সর্বোচ্চ 25টি জায়গা। খোলার সময়, বাস্তব যানজট, মানচিত্র, রুট ও বুকিং এই শিটের বাইরে।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/day-itinerary-sheet.html",
+      "language": "bn-BD",
+      "title": "একদিনের ভ্রমণ সময়-শিট",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 734,
+          "title": "উদাহরণ CSV ডাউনলোড করুন",
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "এলোমেলো মিটিং নোটকে এক পাতার রূপরেখায় বদলে নিন: একটি শিরোনাম, তিন থেকে বারোটি মূল পয়েন্ট, একটি পরবর্তী পদক্ষেপ ও ঐচ্ছিক একটি মেট্রিক, তারপর স্লাইড বা সারসংক্ষেপে পেস্ট করার মতো শিট ডাউনলোড করুন। শিট আপনার কথা যেমন আছে তেমনই রাখে: শিরোনাম, তারপর আপনার লেখা ক্রমে পয়েন্ট, তারপর পরবর্তী পদক্ষেপ, তারপর মেট্রিক। এটি পয়েন্ট গোনে ও দুই পাশের ফাঁকা জায়গা বাদ দেয়; কিছুই নতুন করে লেখা, সংক্ষিপ্ত বা স্কোর করা হয় না। শিরোনাম সর্বোচ্চ 80 অক্ষর, 3 থেকে 12টি পয়েন্ট প্রতিটি সর্বোচ্চ 160 অক্ষর, পরবর্তী পদক্ষেপ সর্বোচ্চ 160 অক্ষর, মেট্রিক সর্বোচ্চ 60 অক্ষর। প্রতিটি লাইন এক লাইনের লেখা হতে হবে। শিট ফাইল, রেকর্ডিং বা ক্যালেন্ডার পড়ে না।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/one-page-outline-sheet.html",
+      "language": "bn-BD",
+      "title": "মিটিং নোট থেকে এক পাতার রূপরেখা",
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "bn-BD",

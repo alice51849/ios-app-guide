@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="th" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="day-itinerary">
+<title>ตารางเวลาเที่ยวหนึ่งวัน</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/day-itinerary-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/day-itinerary-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="ผลลัพธ์งานฟรี">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="ผลลัพธ์งานฟรี">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="ผลลัพธ์งานฟรี">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/th/tools/hero-tasks.feed.json" title="ผลลัพธ์งานฟรี">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/596384ec2c6235f0-hero-task-itinerary.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html","name":"ตารางเวลาเที่ยวหนึ่งวัน","description":"ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่","inLanguage":"th","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html#worked-example","name":"ตัวอย่างการคำนวณ","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/th/tools/results/day-itinerary-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html#howto","name":"ตารางเวลาเที่ยวหนึ่งวัน","description":"ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่","inLanguage":"th","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"ตารางเวลาเที่ยวหนึ่งวัน","url":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"ถึง = ออกจากที่ก่อนหน้า + เดินทาง ออก = ถึง + อยู่ รวม = เวลาอยู่ทั้งหมด + เวลาเดินทางทั้งหมด มีให้ใช้ = เลิก − เริ่ม หากเวลาเลิกมาก่อนเวลาเริ่ม ถือเป็นวันถัดไป เกิน = รวม − มีให้ใช้ มากกว่าศูนย์คือเกินเวลา บวกลบนาทีล้วน ๆ ไม่มีเขตเวลา"},{"@type":"HowToStep","position":2,"text":"เวลาแบบ 24 ชั่วโมง HH:MM อยู่ 5 ถึง 720 นาที เดินทาง 0 ถึง 600 นาที สูงสุด 25 สถานที่ เวลาเปิดทำการ การจราจรจริง แผนที่ เส้นทาง และการจอง อยู่นอกขอบเขตของตารางนี้"}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html#example-dataset","name":"ตัวอย่างการคำนวณ","description":"ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่","inLanguage":"th","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/th/tools/results/day-itinerary-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"day-itinerary-v1","slug":"day-itinerary-sheet","locale":"th","copy":{"title":"ตารางเวลาเที่ยวหนึ่งวัน","intro":"ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่","income":"รายได้สุทธิต่อชั่วโมง","day":"ชั่วโมงทำงานต่อวัน","item":"รายการซื้อ","quantity":"จำนวน","price":"ราคาต่อชิ้นรวมภาษี","total":"รวม (นาที)","hours":"ชั่วโมงทำงาน","days":"วันทำงาน","add":"เพิ่มสถานที่","remove":"ลบ","download":"ดาวน์โหลด CSV ของฉัน","reset":"คืนค่าตัวอย่าง","example":"ตัวอย่างการคำนวณ","example_note":"วันหนึ่งตั้งแต่ 09:00 ถึง 18:00 มีพิพิธภัณฑ์ (120 นาที เดินทาง 25 นาที) มื้อเที่ยง (60 นาที 40 นาที) และเมืองเก่า (180 นาที 30 นาที): ใช้ไป 455 จาก 540 นาทีที่มี จึงพอดีและเหลืออีก 85 นาที","formula":"ถึง = ออกจากที่ก่อนหน้า + เดินทาง ออก = ถึง + อยู่ รวม = เวลาอยู่ทั้งหมด + เวลาเดินทางทั้งหมด มีให้ใช้ = เลิก − เริ่ม หากเวลาเลิกมาก่อนเวลาเริ่ม ถือเป็นวันถัดไป เกิน = รวม − มีให้ใช้ มากกว่าศูนย์คือเกินเวลา บวกลบนาทีล้วน ๆ ไม่มีเขตเวลา","limits":"เวลาแบบ 24 ชั่วโมง HH:MM อยู่ 5 ถึง 720 นาที เดินทาง 0 ถึง 600 นาที สูงสุด 25 สถานที่ เวลาเปิดทำการ การจราจรจริง แผนที่ เส้นทาง และการจอง อยู่นอกขอบเขตของตารางนี้","privacy":"ข้อมูลอยู่ในแท็บนี้เท่านั้น ไม่มีการอัปโหลด บัญชี การติดตามข้อมูลที่กรอก หรือการบันทึก โหลดใหม่จะล้างการแก้ไข","optional":"แอปที่เลือกใช้ได้","optional_note":"ตารางฟรีนี้ใช้ได้โดยไม่ต้องมีแอป ตรวจสอบคุณสมบัติและราคาปัจจุบันในแต่ละหน้า App Store","error":"กรอกเวลาทั้งสองแบบ HH:MM และในทุกสถานที่ใส่นาทีเป็นจำนวนเต็ม: อยู่ 5 ถึง 720 และเดินทาง 0 ถึง 600","row_limit":"สูงสุด 25 สถานที่","tools":"เครื่องมือฟรี","method":"สูตรและข้อจำกัด","sources":"แหล่งข้อมูล","result":"ตารางวันของคุณ","disclosure":"เผยแพร่โดย Lumi Studio ผู้พัฒนาแอปที่เลือกใช้ได้ ไม่ใช่การจัดอันดับอิสระ","download_example":"ดาวน์โหลด CSV ตัวอย่าง","feed":"ผลลัพธ์งานฟรี","start":"เวลาเริ่ม","end":"เวลาเลิก","place":"สถานที่","stay":"อยู่ (นาที)","travel":"เดินทางไปที่ถัดไป (นาที)","arrive":"ถึง","leave":"ออก","order":"#","available":"มีให้ใช้ (นาที)","overrun":"เกิน (นาที)","status":"สถานะ","status_fits":"พอดี","status_overrun":"เกินเวลา"},"example":{"start_time":"09:00","end_time":"18:00","items":[{"stay_min":"120","travel_min":"25","name":"สถานที่ 1"},{"stay_min":"60","travel_min":"40","name":"สถานที่ 2"},{"stay_min":"180","travel_min":"30","name":"สถานที่ 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/44320824fb04bcf0-hero-task-itinerary-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/bd45b9b020075c94-hero-task-itinerary-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/th/tools/index.html">เครื่องมือฟรี</a><span>Lumi Studio</span></nav>
+<h1>ตารางเวลาเที่ยวหนึ่งวัน</h1><p>ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่</p>
+<section class="panel" aria-label="ตารางเวลาเที่ยวหนึ่งวัน">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="start-time">เวลาเริ่ม</label><input id="start-time" type="text" inputmode="numeric" maxlength="5" value="09:00" required autocomplete="off"></div>
+<div><label for="end-time">เวลาเลิก</label><input id="end-time" type="text" inputmode="numeric" maxlength="5" value="18:00" required autocomplete="off"></div>
+</div>
+<div id="stop-rows"><div class="stop-row"><div class="name-field"><label data-label="name" for="row-1-name">สถานที่</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="สถานที่ 1" required autocomplete="off"></div><div><label data-label="stay_min" for="row-1-stay_min">อยู่ (นาที)</label><input id="row-1-stay_min" data-field="stay_min" type="text" inputmode="numeric" maxlength="3" value="120" required autocomplete="off"></div><div><label data-label="travel_min" for="row-1-travel_min">เดินทางไปที่ถัดไป (นาที)</label><input id="row-1-travel_min" data-field="travel_min" type="text" inputmode="numeric" maxlength="3" value="25" required autocomplete="off"></div><div><p class="output-label">ถึง</p><output data-output="arrive">09:00</output></div><div><p class="output-label">ออก</p><output data-output="leave">11:00</output></div><button type="button" data-remove aria-label="ลบ · สถานที่ 1">ลบ</button></div><div class="stop-row"><div class="name-field"><label data-label="name" for="row-2-name">สถานที่</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="สถานที่ 2" required autocomplete="off"></div><div><label data-label="stay_min" for="row-2-stay_min">อยู่ (นาที)</label><input id="row-2-stay_min" data-field="stay_min" type="text" inputmode="numeric" maxlength="3" value="60" required autocomplete="off"></div><div><label data-label="travel_min" for="row-2-travel_min">เดินทางไปที่ถัดไป (นาที)</label><input id="row-2-travel_min" data-field="travel_min" type="text" inputmode="numeric" maxlength="3" value="40" required autocomplete="off"></div><div><p class="output-label">ถึง</p><output data-output="arrive">11:25</output></div><div><p class="output-label">ออก</p><output data-output="leave">12:25</output></div><button type="button" data-remove aria-label="ลบ · สถานที่ 2">ลบ</button></div><div class="stop-row"><div class="name-field"><label data-label="name" for="row-3-name">สถานที่</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="สถานที่ 3" required autocomplete="off"></div><div><label data-label="stay_min" for="row-3-stay_min">อยู่ (นาที)</label><input id="row-3-stay_min" data-field="stay_min" type="text" inputmode="numeric" maxlength="3" value="180" required autocomplete="off"></div><div><label data-label="travel_min" for="row-3-travel_min">เดินทางไปที่ถัดไป (นาที)</label><input id="row-3-travel_min" data-field="travel_min" type="text" inputmode="numeric" maxlength="3" value="30" required autocomplete="off"></div><div><p class="output-label">ถึง</p><output data-output="arrive">13:05</output></div><div><p class="output-label">ออก</p><output data-output="leave">16:05</output></div><button type="button" data-remove aria-label="ลบ · สถานที่ 3">ลบ</button></div></div>
+<template id="stop-template"><div class="stop-row"><div class="name-field"><label data-label="name" for="row-0-name">สถานที่</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="stay_min" for="row-0-stay_min">อยู่ (นาที)</label><input id="row-0-stay_min" data-field="stay_min" type="text" inputmode="numeric" maxlength="3" value="60" required autocomplete="off"></div><div><label data-label="travel_min" for="row-0-travel_min">เดินทางไปที่ถัดไป (นาที)</label><input id="row-0-travel_min" data-field="travel_min" type="text" inputmode="numeric" maxlength="3" value="15" required autocomplete="off"></div><div><p class="output-label">ถึง</p><output data-output="arrive">—</output></div><div><p class="output-label">ออก</p><output data-output="leave">—</output></div><button type="button" data-remove aria-label="ลบ · ">ลบ</button></div></template>
+<div class="actions"><button type="button" id="add-stop">เพิ่มสถานที่</button><span class="small">สูงสุด 25 สถานที่</span></div>
+<div class="totals itinerary-totals" aria-label="ตารางวันของคุณ">
+<div><p>รวม (นาที)</p><output class="total-value" id="total-minutes">455</output></div><div><p>มีให้ใช้ (นาที)</p><output class="total-value" id="available-minutes">540</output></div><div><p>เกิน (นาที)</p><output class="total-value" id="overrun-minutes">-85</output></div><div><p>สถานะ</p><output class="total-value status-badge" id="status-total" data-status="fits">พอดี</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>ดาวน์โหลด CSV ของฉัน</button><button type="button" id="reset-example">คืนค่าตัวอย่าง</button></div>
+</fieldset></form><p class="small">ข้อมูลอยู่ในแท็บนี้เท่านั้น ไม่มีการอัปโหลด บัญชี การติดตามข้อมูลที่กรอก หรือการบันทึก โหลดใหม่จะล้างการแก้ไข</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>ตัวอย่างการคำนวณ</h2><p>วันหนึ่งตั้งแต่ 09:00 ถึง 18:00 มีพิพิธภัณฑ์ (120 นาที เดินทาง 25 นาที) มื้อเที่ยง (60 นาที 40 นาที) และเมืองเก่า (180 นาที 30 นาที): ใช้ไป 455 จาก 540 นาทีที่มี จึงพอดีและเหลืออีก 85 นาที</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">#</th><th scope="col">สถานที่</th><th scope="col">ถึง</th><th scope="col">ออก</th><th scope="col">อยู่ (นาที)</th><th scope="col">เดินทางไปที่ถัดไป (นาที)</th></tr></thead><tbody><tr><td>1</td><td>สถานที่ 1</td><td>09:00</td><td>11:00</td><td>120</td><td>25</td></tr><tr><td>2</td><td>สถานที่ 2</td><td>11:25</td><td>12:25</td><td>60</td><td>40</td></tr><tr><td>3</td><td>สถานที่ 3</td><td>13:05</td><td>16:05</td><td>180</td><td>30</td></tr></tbody><tfoot><tr class="example-total"><td>รวม (นาที)</td><td></td><td></td><td></td><td>455</td><td></td></tr><tr class="example-total"><td>มีให้ใช้ (นาที)</td><td></td><td>09:00</td><td>18:00</td><td>540</td><td></td></tr><tr class="example-total"><td>เกิน (นาที)</td><td></td><td></td><td></td><td>-85</td><td></td></tr><tr class="example-total"><td>สถานะ</td><td>พอดี</td><td></td><td></td><td></td><td></td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/th/tools/results/day-itinerary-sheet.csv" download>ดาวน์โหลด CSV ตัวอย่าง</a>
+<h2>สูตรและข้อจำกัด</h2><p>ถึง = ออกจากที่ก่อนหน้า + เดินทาง ออก = ถึง + อยู่ รวม = เวลาอยู่ทั้งหมด + เวลาเดินทางทั้งหมด มีให้ใช้ = เลิก − เริ่ม หากเวลาเลิกมาก่อนเวลาเริ่ม ถือเป็นวันถัดไป เกิน = รวม − มีให้ใช้ มากกว่าศูนย์คือเกินเวลา บวกลบนาทีล้วน ๆ ไม่มีเขตเวลา</p>
+<pre class="formula">1. สถานที่ 1: 09:00 + 120 = 11:00 + 25 →
+2. สถานที่ 2: 11:25 + 60 = 12:25 + 40 →
+3. สถานที่ 3: 13:05 + 180 = 16:05 + 30 →
+รวม (นาที) = 455; มีให้ใช้ (นาที) = 09:00–18:00 = 540
+เกิน (นาที) = 455 − 540 = -85 → พอดี</pre>
+<p>เวลาแบบ 24 ชั่วโมง HH:MM อยู่ 5 ถึง 720 นาที เดินทาง 0 ถึง 600 นาที สูงสุด 25 สถานที่ เวลาเปิดทำการ การจราจรจริง แผนที่ เส้นทาง และการจอง อยู่นอกขอบเขตของตารางนี้</p>
+<ul class="small">
+<li>เวลาเริ่ม / เวลาเลิก: <bdi dir="ltr">HH:MM</bdi></li>
+<li>อยู่ (นาที): <bdi dir="ltr">5 ≤ m ≤ 720</bdi></li>
+<li>เดินทางไปที่ถัดไป (นาที): <bdi dir="ltr">0 ≤ m ≤ 600</bdi></li>
+<li>สถานที่: <bdi dir="ltr">1 ≤ n ≤ 25</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>แอปที่เลือกใช้ได้</h2><p>ตารางฟรีนี้ใช้ได้โดยไม่ต้องมีแอป ตรวจสอบคุณสมบัติและราคาปัจจุบันในแต่ละหน้า App Store</p><div class="actions"><a class="button" href="https://apps.apple.com/th/app/id6791299610?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">ดาวน์โหลด TripBee Lite ได้ที่ App Store →</a><a class="button" href="https://apps.apple.com/th/app/id6787754435?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">ดาวน์โหลด TripBee Pro: Trip Planner ใน App Store →</a></div></section>
+<footer><p>เผยแพร่โดย Lumi Studio ผู้พัฒนาแอปที่เลือกใช้ได้ ไม่ใช่การจัดอันดับอิสระ</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">แหล่งข้อมูล</a> · <a href="https://open.cait518.cc/ios-app-guide/th/tools/hero-tasks.feed.json">ผลลัพธ์งานฟรี</a></footer>
+</main></body></html>

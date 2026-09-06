@@ -111,6 +111,118 @@
       "language": "ca",
       "title": "Full d'interval de desgast",
       "url": "https://open.cait518.cc/ios-app-guide/ca/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 571,
+          "title": "Baixa el CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Apunta què fa la teva llar en línia alhora i amb quants dispositius, i baixa una taula amb els Mbps que necessites i el marge que li queda a la teva tarifa. Total per fila = dispositius × valor per dispositiu. Necessari = suma de les files. Marge = tarifa − necessari; per sota del 20 % de la tarifa és just, per sota de zero és insuficient. Se sumen dècimes de Mbps senceres, els totals mai no es desvien. Velocitats de la tarifa de 0,5 a 10000 Mbps amb un decimal com a màxim, d'1 a 50 dispositius per fila, fins a 20 files. La cobertura Wi‑Fi, la latència i la velocitat realment lliurada queden fora d'aquesta taula.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/bandwidth-need-sheet.html",
+      "language": "ca",
+      "title": "Ample de banda que cal a casa",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 453,
+          "title": "Baixa el CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Introdueix el pressupost total del viatge, els dies, els viatgers i les despeses que ja coneixes, i baixa una taula amb el que pot gastar cada persona al dia i com es reparteix entre menjar, transport, entrades i compres. Disponible = pressupost total − despeses fixes. Per dia = disponible ÷ dies. Per persona i dia = per dia ÷ viatgers. Cada categoria = per dia × la seva part. Els imports se sumen en cèntims sencers; les xifres diàries només s'arrodoneixen en mostrar-les. Imports de 0 a 100.000.000 amb dos decimals com a màxim, d'1 a 120 dies, d'1 a 20 viatgers, fins a 15 despeses fixes i quatre parts que sumin exactament 100. La mateixa moneda a tot arreu, sense tipus de canvi, sense consells de preu ni de reserva.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/trip-budget-sheet.html",
+      "language": "ca",
+      "title": "Pressupost de viatge per dia",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 347,
+          "title": "Baixa el CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Apunta els llocs d'un dia amb el temps que t'hi estaràs i el que es triga fins al següent, i baixa una taula amb hores d'arribada i sortida que diu si tot cap entre el teu inici i el teu final. Arribada = sortida anterior + trajecte. Sortida = arribada + estada. Total = totes les estades + tots els trajectes. Disponible = final − inici; un final anterior a l'inici compta com l'endemà. Excés = total − disponible; per sobre de zero es passa. Aritmètica simple en minuts, sense fusos horaris. Hores en format de 24 h HH:MM, estades de 5 a 720 minuts, trajectes de 0 a 600 minuts, fins a 25 llocs. Horaris d'obertura, trànsit real, mapes, rutes i reserves queden fora d'aquesta taula.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/day-itinerary-sheet.html",
+      "language": "ca",
+      "title": "Full horari d'un dia",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 362,
+          "title": "Baixa el CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Converteix unes notes de reunió desordenades en un esquema d'una pàgina: un titular, de tres a dotze punts clau, una acció següent i una mètrica opcional, i baixa-ho com a taula per enganxar en una diapositiva o un resum. La taula conserva les teves paraules tal com són: titular, després els punts en l'ordre que els has escrit, després l'acció següent i finalment la mètrica. Compta els punts i treu els espais dels extrems; no reescriu, resumeix ni puntua res. Titular de fins a 80 caràcters, de 3 a 12 punts de fins a 160 caràcters cadascun, acció següent de fins a 160 caràcters, mètrica de fins a 60 caràcters. Cada línia ha de ser text d'una sola línia. La taula no llegeix fitxers, gravacions ni calendaris.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/one-page-outline-sheet.html",
+      "language": "ca",
+      "title": "Notes de reunió en una pàgina",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ca",

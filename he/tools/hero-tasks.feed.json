@@ -111,6 +111,118 @@
       "language": "he",
       "title": "גיליון טווח בלאי סוללה",
       "url": "https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 631,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מה בני הבית עושים ברשת בו-זמנית ובכמה מכשירים, והורידו גיליון עם ה-Mbps הדרושים והמרווח שנשאר בחבילה שלכם. סה״כ בשורה = מכשירים × ערך למכשיר. נדרש = סכום השורות. מרווח = חבילה − נדרש; פחות מ-20% מהחבילה זה גבולי, מתחת לאפס לא מספיק. מסכמים בעשיריות Mbps שלמות, כך שהסכומים לעולם לא סוטים. מהירויות חבילה בין 0.5 ל-10000 Mbps עם ספרה עשרונית אחת לכל היותר, 1 עד 50 מכשירים בשורה, עד 20 שורות. כיסוי Wi‑Fi, השהיה והמהירות שהספק מספק בפועל אינם חלק מהגיליון.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/bandwidth-need-sheet.html",
+      "language": "he",
+      "title": "גיליון צורכי רוחב הפס בבית",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 496,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "הזינו את תקציב הטיול הכולל, הימים, המטיילים וההוצאות שכבר ידועות, והורידו גיליון עם כמה כל אחד יכול להוציא ביום ואיך זה מתחלק בין אוכל, תחבורה, כרטיסים וקניות. נשאר להוצאה = תקציב כולל − הוצאות קבועות. ליום = נשאר להוצאה ÷ ימים. לאדם ליום = ליום ÷ מטיילים. כל קטגוריה = ליום × החלק שלה. הסכומים מחוברים באגורות שלמות; הערכים היומיים מעוגלים רק בתצוגה. סכומים בין 0 ל-100,000,000 עם עד שתי ספרות עשרוניות, 1 עד 120 ימים, 1 עד 20 מטיילים, עד 15 הוצאות קבועות, ארבעה חלקים שסכומם בדיוק 100. אותו מטבע לאורך כל הדרך, בלי שערי חליפין, בלי ייעוץ מחירים או הזמנות.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/trip-budget-sheet.html",
+      "language": "he",
+      "title": "תקציב טיול ליום",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 385,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו את המקומות ליום אחד עם משך השהייה וזמן הנסיעה למקום הבא, והורידו גיליון עם שעות הגעה ויציאה שמראה אם הכול נכנס בין ההתחלה לסיום שלכם. הגעה = יציאה קודמת + נסיעה. יציאה = הגעה + שהייה. סה״כ = כל השהיות + כל הנסיעות. זמין = סיום − התחלה; סיום מוקדם מההתחלה נחשב ליום הבא. חריגה = סה״כ − זמין; מעל אפס חורג. חשבון דקות פשוט, בלי אזורי זמן. שעות בפורמט 24 שעות HH:MM, שהייה 5 עד 720 דקות, נסיעה 0 עד 600 דקות, עד 25 מקומות. שעות פתיחה, תנועה אמיתית, מפות, ניווט והזמנות אינם חלק מהגיליון.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/day-itinerary-sheet.html",
+      "language": "he",
+      "title": "גיליון זמנים ליום אחד",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 431,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "הפכו רשימות פגישה מבולגנות למתווה של עמוד אחד: כותרת אחת, שלוש עד שתים-עשרה נקודות מפתח, פעולה הבאה אחת ומדד אופציונלי, והורידו גיליון שאפשר להדביק בשקופית או בסיכום. הגיליון שומר על המילים שלכם כפי שהן: כותרת, אחר כך הנקודות בסדר שהקלדתם, אחר כך הפעולה הבאה ולבסוף המדד. הוא סופר את הנקודות ומסיר רווחים בקצוות; שום דבר לא נכתב מחדש, לא מתומצת ולא מדורג. כותרת עד 80 תווים, 3 עד 12 נקודות של עד 160 תווים כל אחת, פעולה הבאה עד 160 תווים, מדד עד 60 תווים. כל שורה חייבת להיות טקסט בשורה אחת. הגיליון לא קורא קבצים, הקלטות או יומנים.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/one-page-outline-sheet.html",
+      "language": "he",
+      "title": "מסיכום פגישה לעמוד אחד",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "he",

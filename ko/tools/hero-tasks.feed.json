@@ -111,6 +111,118 @@
       "language": "ko",
       "title": "배터리 마모 범위 시트",
       "url": "https://open.cait518.cc/ios-app-guide/ko/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 580,
+          "title": "예시 CSV 다운로드",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "집에서 동시에 하는 일과 기기 수를 적으면 필요한 Mbps와 현재 요금제의 여유가 계산되고, 시트로 내려받을 수 있습니다. 행 소계 = 기기 수 × 기기당 값. 필요량 = 각 행의 합. 여유 = 요금제 − 필요량. 요금제의 20% 미만이면 빠듯함, 0 미만이면 부족. 0.1 Mbps 단위 정수로 더해 합계가 흔들리지 않습니다. 요금제 속도는 0.5~10000 Mbps, 소수 한 자리까지. 행당 기기 1~50대, 최대 20행. Wi‑Fi 도달 범위, 지연 시간, 실제 제공 속도는 다루지 않습니다.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/bandwidth-need-sheet.html",
+      "language": "ko",
+      "title": "가정용 인터넷 속도 필요량 시트",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 433,
+          "title": "예시 CSV 다운로드",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다. 자유롭게 쓸 금액 = 총예산 − 고정 비용. 하루 = 자유롭게 쓸 금액 ÷ 일수. 1인 하루 = 하루 ÷ 인원. 각 항목 = 하루 × 비율. 금액은 최소 단위 정수로 더하고, 하루 수치는 표시할 때만 반올림합니다. 금액 0~100,000,000, 소수 두 자리까지; 일수 1~120; 인원 1~20; 고정 비용 최대 15행; 네 비율의 합은 정확히 100. 같은 통화만 사용하며 환율, 가격·예약 조언은 다루지 않습니다.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html",
+      "language": "ko",
+      "title": "여행 하루 예산 배분 시트",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 347,
+          "title": "예시 CSV 다운로드",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "하루에 가고 싶은 곳과 머무는 시간, 다음 장소까지 이동 시간을 적으면 각 장소의 도착·출발 시각과 시작부터 끝까지 다 들어가는지 시트로 내려받을 수 있습니다. 도착 = 이전 출발 + 이동. 출발 = 도착 + 체류. 합계 = 모든 체류 + 모든 이동. 가용 = 종료 − 시작; 종료가 시작보다 이르면 다음 날로 봅니다. 초과 = 합계 − 가용; 0보다 크면 시간 초과. 분 단위 덧셈만 하며 시간대는 다루지 않습니다. 시각은 24시간 HH:MM, 체류 5~720분, 이동 0~600분, 최대 25곳. 영업시간, 실제 교통, 지도, 경로 탐색, 예약은 이 시트의 범위 밖입니다.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/day-itinerary-sheet.html",
+      "language": "ko",
+      "title": "하루 일정 시간표",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 342,
+          "title": "예시 CSV 다운로드",
+          "url": "https://open.cait518.cc/ios-app-guide/ko/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "어지러운 회의 메모를 한 장 개요로 정리합니다. 헤드라인 하나, 핵심 포인트 3~12개, 다음 행동 하나, 선택 지표를 넣고 슬라이드나 요약에 붙여 넣을 수 있는 시트로 내려받으세요. 시트는 입력한 문구를 그대로 유지합니다. 헤드라인, 입력한 순서의 포인트, 다음 행동, 지표 순입니다. 포인트 수를 세고 앞뒤 공백만 정리하며 고쳐 쓰기·요약·채점은 하지 않습니다. 헤드라인 80자 이내, 포인트 3~12개 각 160자 이내, 다음 행동 160자 이내, 지표 60자 이내. 모든 줄은 한 줄 텍스트여야 합니다. 파일, 녹음, 캘린더는 읽지 않습니다.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ko/tools/one-page-outline-sheet.html",
+      "language": "ko",
+      "title": "회의 메모를 한 장 개요로",
+      "url": "https://open.cait518.cc/ios-app-guide/ko/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ko",

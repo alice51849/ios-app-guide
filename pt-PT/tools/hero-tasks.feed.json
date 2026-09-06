@@ -111,6 +111,118 @@
       "language": "pt-PT",
       "title": "Folha de desgaste da bateria",
       "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 571,
+          "title": "Descarregar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Liste o que a sua casa faz online ao mesmo tempo e quantos dispositivos o fazem, e descarregue uma tabela com os Mbps necessários e a margem que sobra no seu tarifário. Total da linha = dispositivos × valor por dispositivo. Necessário = soma das linhas. Margem = tarifário − necessário; abaixo de 20% do tarifário é apertado, abaixo de zero não chega. Soma-se em décimas de Mbps inteiras, os totais nunca derivam. Velocidades do tarifário de 0,5 a 10000 Mbps com no máximo uma casa decimal, 1 a 50 dispositivos por linha, até 20 linhas. Cobertura Wi‑Fi, latência e a velocidade realmente entregue ficam fora desta tabela.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/bandwidth-need-sheet.html",
+      "language": "pt-PT",
+      "title": "Largura de banda para casa",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 451,
+          "title": "Descarregar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Indique o orçamento total da viagem, os dias, os viajantes e as despesas já conhecidas, e descarregue uma tabela com o que cada pessoa pode gastar por dia e como se reparte entre refeições, transportes, bilhetes e compras. Livre para gastar = orçamento total − despesas fixas. Por dia = livre para gastar ÷ dias. Por pessoa e por dia = por dia ÷ viajantes. Cada categoria = por dia × a sua quota. Os montantes somam-se em cêntimos inteiros; os valores diários só são arredondados ao mostrar. Montantes de 0 a 100.000.000 com no máximo duas casas decimais, 1 a 120 dias, 1 a 20 viajantes, até 15 despesas fixas e quatro quotas que somem exatamente 100. A mesma moeda em tudo, sem taxas de câmbio, sem conselhos de preço ou de reserva.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/trip-budget-sheet.html",
+      "language": "pt-PT",
+      "title": "Orçamento de viagem por dia",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 365,
+          "title": "Descarregar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Liste os locais de um dia com o tempo que ficará em cada um e quanto demora até ao seguinte, e descarregue uma tabela com horas de chegada e de saída que mostra se tudo cabe entre o seu início e o seu fim. Chegada = saída anterior + deslocação. Saída = chegada + permanência. Total = todas as permanências + todas as deslocações. Disponível = fim − início; um fim anterior ao início conta como o dia seguinte. Excesso = total − disponível; acima de zero ultrapassa. Apenas aritmética de minutos, sem fusos horários. Horas em formato 24 h HH:MM, permanências de 5 a 720 minutos, deslocações de 0 a 600 minutos, até 25 locais. Horários de abertura, trânsito real, mapas, rotas e reservas ficam fora desta tabela.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/day-itinerary-sheet.html",
+      "language": "pt-PT",
+      "title": "Folha horária de um dia",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pt/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 362,
+          "title": "Descarregar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Transforme notas de reunião desorganizadas num resumo de uma página: um título, três a doze pontos-chave, uma próxima ação e uma métrica opcional, e descarregue como tabela para colar num diapositivo ou num resumo. A tabela mantém as suas palavras tal como estão: título, depois os pontos pela ordem em que os escreveu, depois a próxima ação e por fim a métrica. Conta os pontos e remove espaços nas extremidades; nada é reescrito, resumido ou classificado. Título até 80 caracteres, 3 a 12 pontos até 160 caracteres cada, próxima ação até 160 caracteres, métrica até 60 caracteres. Cada linha tem de ser texto de uma só linha. A tabela não lê ficheiros, gravações nem calendários.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/one-page-outline-sheet.html",
+      "language": "pt-PT",
+      "title": "Reunião numa página",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-PT/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "pt-PT",

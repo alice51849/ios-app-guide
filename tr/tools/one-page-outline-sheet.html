@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="one-page-outline">
+<title>Toplantı notlarından tek sayfa özet</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/one-page-outline-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/one-page-outline-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="Ücretsiz görev sonuçları">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="Ücretsiz görev sonuçları">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="Ücretsiz görev sonuçları">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/tr/tools/hero-tasks.feed.json" title="Ücretsiz görev sonuçları">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/6030be312a4d352d-hero-task-outline.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html","name":"Toplantı notlarından tek sayfa özet","description":"Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin.","inLanguage":"tr","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html#worked-example","name":"Çözümlü örnek","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/tr/tools/results/one-page-outline-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html#howto","name":"Toplantı notlarından tek sayfa özet","description":"Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin.","inLanguage":"tr","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"Toplantı notlarından tek sayfa özet","url":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"Tablo sözlerinizi olduğu gibi korur: başlık, sonra yazdığınız sıradaki noktalar, sonra sonraki adım, sonra ölçüt. Noktaları sayar ve baş ve sondaki boşlukları kırpar; hiçbir şey yeniden yazılmaz, özetlenmez ya da puanlanmaz."},{"@type":"HowToStep","position":2,"text":"Başlık en fazla 80 karakter, 3 ila 12 nokta her biri en fazla 160 karakter, sonraki adım en fazla 160 karakter, ölçüt en fazla 60 karakter. Her satır tek satırlık metin olmalıdır. Tablo dosya, kayıt ya da takvim okumaz."}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html#example-dataset","name":"Çözümlü örnek","description":"Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin.","inLanguage":"tr","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/tr/tools/results/one-page-outline-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"one-page-outline-v1","slug":"one-page-outline-sheet","locale":"tr","copy":{"title":"Toplantı notlarından tek sayfa özet","intro":"Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin.","income":"Saatlik net gelir","day":"İş günü başına saat","item":"Alışveriş","quantity":"Adet","price":"Vergi dâhil birim fiyat","total":"Toplam","hours":"Çalışma saati","days":"İş günü","add":"Nokta ekle","remove":"Kaldır","download":"CSV dosyamı indir","reset":"Örneğe dön","example":"Çözümlü örnek","example_note":"Ödeme sayfası yenilemesiyle ilgili notlar şu hale gelir: başlık “Yeni ödeme sayfasını 30 Eylül'e kadar yayınla”, üç nokta (terk etme adres adımında oluyor, pilot terk etmeyi azalttı, mühendislik iki hafta daha istiyor), sonraki adım “Ek sprint'i pazartesi onayla” ve ölçüt “Pilotta %48 terk etme”.","formula":"Tablo sözlerinizi olduğu gibi korur: başlık, sonra yazdığınız sıradaki noktalar, sonra sonraki adım, sonra ölçüt. Noktaları sayar ve baş ve sondaki boşlukları kırpar; hiçbir şey yeniden yazılmaz, özetlenmez ya da puanlanmaz.","limits":"Başlık en fazla 80 karakter, 3 ila 12 nokta her biri en fazla 160 karakter, sonraki adım en fazla 160 karakter, ölçüt en fazla 60 karakter. Her satır tek satırlık metin olmalıdır. Tablo dosya, kayıt ya da takvim okumaz.","privacy":"Girdileriniz bu sekmede kalır. Yükleme, hesap, girdi takibi veya veri kaydı yoktur. Sayfayı yenilemek değişiklikleri siler.","optional":"İsteğe bağlı uygulamalar","optional_note":"Bu ücretsiz tablo uygulama olmadan çalışır. Güncel özellikleri ve fiyatları App Store sayfalarında kontrol edin.","error":"Tek satırlık bir başlık, 3 ila 12 boş olmayan nokta ve karakter sınırları içinde bir sonraki adım girin.","row_limit":"3 ila 12 nokta.","tools":"Ücretsiz araçlar","method":"Formül ve sınırlar","sources":"Kaynaklar","result":"Tek sayfalık taslağınız","disclosure":"İsteğe bağlı uygulamaların geliştiricisi Lumi Studio tarafından yayımlanmıştır. Bağımsız bir sıralama değildir.","download_example":"Örnek CSV indir","feed":"Ücretsiz görev sonuçları","headline":"Başlık","points":"Ana noktalar","point":"Nokta","action":"Sonraki adım","metric":"Ölçüt","metric_hint":"İsteğe bağlı: noktayı kanıtlayan tek bir sayı, örneğin bir oran ya da adet.","section":"Bölüm","order":"#","text":"Metin","point_count":"Nokta sayısı","preview":"Tek sayfa önizleme","example_headline":"Yeni ödeme sayfasını 30 Eylül'e kadar yayınla","example_point_1":"Terk etme adres adımında oluyor","example_point_2":"Pilot terk etmeyi azalttı","example_point_3":"Mühendislik iki hafta daha istiyor","example_action":"Ek sprint'i pazartesi onayla","example_metric":"Pilotta %48 terk etme"},"example":{"headline":"Yeni ödeme sayfasını 30 Eylül'e kadar yayınla","points":["Terk etme adres adımında oluyor","Pilot terk etmeyi azalttı","Mühendislik iki hafta daha istiyor"],"action":"Ek sprint'i pazartesi onayla","metric":"Pilotta %48 terk etme"}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/f6c5ca1a766a5248-hero-task-outline-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/c8b2ef573e1ac7af-hero-task-outline-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/tr/tools/index.html">Ücretsiz araçlar</a><span>Lumi Studio</span></nav>
+<h1>Toplantı notlarından tek sayfa özet</h1><p>Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin.</p>
+<section class="panel" aria-label="Toplantı notlarından tek sayfa özet">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="headline">Başlık</label><input id="headline" type="text" maxlength="80" value="Yeni ödeme sayfasını 30 Eylül&#x27;e kadar yayınla" required autocomplete="off"></div>
+</div>
+<p class="output-label">Ana noktalar</p>
+<div id="point-rows"><div class="point-row"><div><label data-label="point" for="row-1-point">Nokta 1</label><input id="row-1-point" data-field="point" type="text" maxlength="160" value="Terk etme adres adımında oluyor" required autocomplete="off"></div><button type="button" data-remove aria-label="Kaldır · 1">Kaldır</button></div><div class="point-row"><div><label data-label="point" for="row-2-point">Nokta 2</label><input id="row-2-point" data-field="point" type="text" maxlength="160" value="Pilot terk etmeyi azalttı" required autocomplete="off"></div><button type="button" data-remove aria-label="Kaldır · 2">Kaldır</button></div><div class="point-row"><div><label data-label="point" for="row-3-point">Nokta 3</label><input id="row-3-point" data-field="point" type="text" maxlength="160" value="Mühendislik iki hafta daha istiyor" required autocomplete="off"></div><button type="button" data-remove aria-label="Kaldır · 3">Kaldır</button></div></div>
+<template id="point-template"><div class="point-row"><div><label data-label="point" for="row-0-point">Nokta 0</label><input id="row-0-point" data-field="point" type="text" maxlength="160" value="" required autocomplete="off"></div><button type="button" data-remove aria-label="Kaldır · 0">Kaldır</button></div></template>
+<div class="actions"><button type="button" id="add-point">Nokta ekle</button><span class="small">3 ila 12 nokta.</span></div>
+<div class="fields">
+<div><label for="next-action">Sonraki adım</label><input id="next-action" type="text" maxlength="160" value="Ek sprint&#x27;i pazartesi onayla" required autocomplete="off"></div>
+<div><label for="metric">Ölçüt</label><input id="metric" type="text" maxlength="60" value="Pilotta %48 terk etme" autocomplete="off"><p class="small">İsteğe bağlı: noktayı kanıtlayan tek bir sayı, örneğin bir oran ya da adet.</p></div>
+</div>
+<div class="totals outline-totals" aria-label="Tek sayfalık taslağınız">
+<div><p>Nokta sayısı</p><output class="total-value" id="point-count">3</output></div><div><p>Bölüm</p><output class="total-value">6</output></div>
+</div>
+<div class="outline-preview" aria-label="Tek sayfa önizleme"><h3 id="preview-headline">Yeni ödeme sayfasını 30 Eylül&#x27;e kadar yayınla</h3><ol id="preview-points"><li>Terk etme adres adımında oluyor</li><li>Pilot terk etmeyi azalttı</li><li>Mühendislik iki hafta daha istiyor</li></ol><p class="action" id="preview-action">Ek sprint&#x27;i pazartesi onayla</p><p class="metric" id="preview-metric">Pilotta %48 terk etme</p></div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>CSV dosyamı indir</button><button type="button" id="reset-example">Örneğe dön</button></div>
+</fieldset></form><p class="small">Girdileriniz bu sekmede kalır. Yükleme, hesap, girdi takibi veya veri kaydı yoktur. Sayfayı yenilemek değişiklikleri siler.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>Çözümlü örnek</h2><p>Ödeme sayfası yenilemesiyle ilgili notlar şu hale gelir: başlık “Yeni ödeme sayfasını 30 Eylül&#x27;e kadar yayınla”, üç nokta (terk etme adres adımında oluyor, pilot terk etmeyi azalttı, mühendislik iki hafta daha istiyor), sonraki adım “Ek sprint&#x27;i pazartesi onayla” ve ölçüt “Pilotta %48 terk etme”.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Bölüm</th><th scope="col">#</th><th scope="col">Metin</th></tr></thead><tbody><tr><td>Başlık</td><td>1</td><td>Yeni ödeme sayfasını 30 Eylül&#x27;e kadar yayınla</td></tr><tr><td>Nokta</td><td>1</td><td>Terk etme adres adımında oluyor</td></tr><tr><td>Nokta</td><td>2</td><td>Pilot terk etmeyi azalttı</td></tr><tr><td>Nokta</td><td>3</td><td>Mühendislik iki hafta daha istiyor</td></tr><tr><td>Sonraki adım</td><td>1</td><td>Ek sprint&#x27;i pazartesi onayla</td></tr><tr><td>Ölçüt</td><td>1</td><td>Pilotta %48 terk etme</td></tr></tbody></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/tr/tools/results/one-page-outline-sheet.csv" download>Örnek CSV indir</a>
+<h2>Formül ve sınırlar</h2><p>Tablo sözlerinizi olduğu gibi korur: başlık, sonra yazdığınız sıradaki noktalar, sonra sonraki adım, sonra ölçüt. Noktaları sayar ve baş ve sondaki boşlukları kırpar; hiçbir şey yeniden yazılmaz, özetlenmez ya da puanlanmaz.</p>
+<pre class="formula">Başlık ≤ 80 · Nokta × 3 ≤ 160 · Sonraki adım ≤ 160 · Ölçüt ≤ 60
+Bölüm: Başlık → Nokta 1…3 → Sonraki adım → Ölçüt</pre>
+<p>Başlık en fazla 80 karakter, 3 ila 12 nokta her biri en fazla 160 karakter, sonraki adım en fazla 160 karakter, ölçüt en fazla 60 karakter. Her satır tek satırlık metin olmalıdır. Tablo dosya, kayıt ya da takvim okumaz.</p>
+<ul class="small">
+<li>Başlık: <bdi dir="ltr">≤ 80</bdi></li>
+<li>Nokta: <bdi dir="ltr">3 ≤ n ≤ 12, ≤ 160</bdi></li>
+<li>Sonraki adım: <bdi dir="ltr">≤ 160</bdi></li>
+<li>Ölçüt: <bdi dir="ltr">≤ 60</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>İsteğe bağlı uygulamalar</h2><p>Bu ücretsiz tablo uygulama olmadan çalışır. Güncel özellikleri ve fiyatları App Store sayfalarında kontrol edin.</p><div class="actions"><a class="button" href="https://apps.apple.com/tr/app/id6798814385?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">OnePage PPT: Yapay Zeka Slayt uygulamasını App Store&#x27;dan al</a></div></section>
+<footer><p>İsteğe bağlı uygulamaların geliştiricisi Lumi Studio tarafından yayımlanmıştır. Bağımsız bir sıralama değildir.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">Kaynaklar</a> · <a href="https://open.cait518.cc/ios-app-guide/tr/tools/hero-tasks.feed.json">Ücretsiz görev sonuçları</a></footer>
+</main></body></html>

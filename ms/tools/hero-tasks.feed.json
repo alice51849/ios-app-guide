@@ -111,6 +111,118 @@
       "language": "ms",
       "title": "Helaian julat haus bateri",
       "url": "https://open.cait518.cc/ios-app-guide/ms/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 571,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Senaraikan apa yang dilakukan isi rumah dalam talian pada masa yang sama dan berapa peranti yang terlibat, kemudian muat turun helaian dengan Mbps yang diperlukan dan baki ruang pelan anda. Jumlah setiap baris = peranti × nilai setiap peranti. Keperluan = jumlah semua baris. Baki ruang = pelan − keperluan; di bawah 20% pelan bermakna ketat, di bawah sifar bermakna tidak cukup. Dijumlahkan dalam persepuluh Mbps bulat, jadi jumlahnya tidak pernah tersasar. Kelajuan pelan 0.5 hingga 10000 Mbps dengan paling banyak satu tempat perpuluhan, 1 hingga 50 peranti setiap baris, sehingga 20 baris. Liputan Wi‑Fi, kependaman dan kelajuan sebenar daripada penyedia berada di luar helaian ini.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/bandwidth-need-sheet.html",
+      "language": "ms",
+      "title": "Keperluan jalur lebar rumah",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 452,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Masukkan jumlah bajet perjalanan, bilangan hari, bilangan orang dan kos yang sudah diketahui, kemudian muat turun helaian yang menunjukkan berapa setiap orang boleh belanja sehari dan pembahagiannya untuk makanan, pengangkutan, tiket dan beli-belah. Baki = jumlah bajet − kos tetap. Sehari = baki ÷ hari. Seorang sehari = sehari ÷ bilangan orang. Setiap kategori = sehari × bahagiannya. Amaun dijumlahkan dalam sen bulat; angka harian hanya dibundarkan semasa dipaparkan. Amaun 0 hingga 100,000,000 dengan paling banyak dua tempat perpuluhan, 1 hingga 120 hari, 1 hingga 20 orang, sehingga 15 kos tetap, empat bahagian yang berjumlah tepat 100. Mata wang yang sama sepanjang helaian, tiada kadar tukaran, tiada nasihat harga atau tempahan.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/trip-budget-sheet.html",
+      "language": "ms",
+      "title": "Helaian bajet perjalanan sehari",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 375,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Senaraikan tempat yang ingin dilawati dalam sehari, berapa lama di setiap tempat dan berapa lama untuk ke tempat seterusnya, kemudian muat turun helaian dengan waktu tiba dan bertolak yang menunjukkan sama ada semuanya muat antara waktu mula dan waktu tamat anda. Tiba = bertolak sebelumnya + perjalanan. Bertolak = tiba + tempoh di tempat. Jumlah = semua tempoh di tempat + semua perjalanan. Tersedia = tamat − mula; waktu tamat yang lebih awal daripada waktu mula dikira sebagai hari berikutnya. Lebihan = jumlah − tersedia; melebihi sifar bermakna melebihi masa. Kiraan minit semata-mata, tiada zon waktu. Waktu dalam format 24 jam HH:MM, tempoh di tempat 5 hingga 720 minit, perjalanan 0 hingga 600 minit, sehingga 25 tempat. Waktu buka, trafik sebenar, peta, laluan dan tempahan berada di luar helaian ini.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/day-itinerary-sheet.html",
+      "language": "ms",
+      "title": "Helaian masa perjalanan sehari",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/my/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 381,
+          "title": "Muat turun CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/ms/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Tukar nota mesyuarat yang bersepah menjadi rangka satu muka: satu tajuk, tiga hingga dua belas perkara utama, satu tindakan seterusnya dan satu metrik pilihan, kemudian muat turun sebagai helaian untuk ditampal ke slaid atau ringkasan. Helaian ini mengekalkan kata-kata anda seadanya: tajuk, kemudian perkara mengikut urutan yang anda taip, kemudian tindakan seterusnya, kemudian metrik. Ia mengira perkara dan membuang ruang di tepi; tiada apa yang ditulis semula, diringkaskan atau dinilai. Tajuk maksimum 80 aksara, 3 hingga 12 perkara masing-masing maksimum 160 aksara, tindakan seterusnya maksimum 160 aksara, metrik maksimum 60 aksara. Setiap baris mesti teks satu baris. Helaian ini tidak membaca fail, rakaman atau kalendar.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ms/tools/one-page-outline-sheet.html",
+      "language": "ms",
+      "title": "Nota mesyuarat satu muka",
+      "url": "https://open.cait518.cc/ios-app-guide/ms/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ms",

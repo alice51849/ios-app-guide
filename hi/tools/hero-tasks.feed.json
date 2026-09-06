@@ -111,6 +111,118 @@
       "language": "hi",
       "title": "बैटरी घिसाव रेंज शीट",
       "url": "https://open.cait518.cc/ios-app-guide/hi/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 884,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "लिखें कि घर में एक साथ ऑनलाइन क्या-क्या चलता है और कितने डिवाइस पर, फिर ज़रूरी Mbps और आपके प्लान में बचे मार्जिन की शीट डाउनलोड करें। पंक्ति का कुल = डिवाइस × प्रति डिवाइस मान। ज़रूरत = पंक्तियों का योग। मार्जिन = प्लान − ज़रूरत; प्लान के 20% से कम हो तो तंग, शून्य से कम हो तो कम है। जोड़ पूरे दशमांश Mbps में होता है, इसलिए योग कभी नहीं खिसकता। प्लान स्पीड 0.5 से 10000 Mbps तक, अधिकतम एक दशमलव; हर पंक्ति में 1 से 50 डिवाइस; अधिकतम 20 पंक्तियाँ। Wi‑Fi कवरेज, लेटेंसी और प्रदाता की वास्तविक स्पीड इस शीट में शामिल नहीं हैं।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/bandwidth-need-sheet.html",
+      "language": "hi",
+      "title": "घर की इंटरनेट स्पीड ज़रूरत शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 609,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "यात्रा का कुल बजट, दिन, लोग और पहले से तय खर्च भरें, फिर शीट डाउनलोड करें कि हर व्यक्ति रोज़ कितना खर्च कर सकता है और वह खाना, आना-जाना, टिकट और खरीदारी में कैसे बँटता है। खर्च के लिए बचा = कुल बजट − तय खर्च। प्रति दिन = बचा ÷ दिन। प्रति व्यक्ति प्रति दिन = प्रति दिन ÷ यात्री। हर श्रेणी = प्रति दिन × उसका हिस्सा। राशियाँ पूरे पैसों में जुड़ती हैं; रोज़ के आँकड़े केवल दिखाते समय पूर्णांकित होते हैं। राशि 0 से 100,000,000 तक, अधिकतम दो दशमलव; 1 से 120 दिन; 1 से 20 यात्री; अधिकतम 15 तय खर्च; चार हिस्से जिनका योग ठीक 100 हो। पूरी तरह एक ही मुद्रा, विनिमय दर नहीं, कीमत या बुकिंग की सलाह नहीं।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/trip-budget-sheet.html",
+      "language": "hi",
+      "title": "यात्रा का रोज़ का बजट शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 508,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "एक दिन में जिन जगहों पर जाना है, हर जगह कितनी देर रुकेंगे और अगली जगह पहुँचने में कितना समय लगेगा—यह लिखें, फिर आने-जाने के समय वाली शीट डाउनलोड करें जो बताती है कि सब कुछ आपके शुरू और अंत के बीच समाता है या नहीं। पहुँचना = पिछला निकलना + आगे का समय। निकलना = पहुँचना + ठहराव। कुल = सभी ठहराव + सभी आने-जाने का समय। उपलब्ध = अंत − शुरू; शुरू से पहले का अंत अगला दिन माना जाता है। अधिक = कुल − उपलब्ध; शून्य से ऊपर हो तो समय से अधिक। सिर्फ़ मिनटों का जोड़, समय-क्षेत्र नहीं। समय 24-घंटे HH:MM में, ठहराव 5 से 720 मिनट, आने-जाने का समय 0 से 600 मिनट, अधिकतम 25 जगहें। खुलने के समय, असली ट्रैफ़िक, नक्शे, रास्ते और बुकिंग इस शीट में शामिल नहीं हैं।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/day-itinerary-sheet.html",
+      "language": "hi",
+      "title": "एक दिन की यात्रा समय-शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 710,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "बिखरे हुए मीटिंग नोट्स को एक पेज की रूपरेखा में बदलें: एक शीर्षक, तीन से बारह मुख्य बिंदु, एक अगला कदम और वैकल्पिक मीट्रिक, फिर इसे शीट के रूप में डाउनलोड करें जिसे स्लाइड या सारांश में चिपकाया जा सके। शीट आपके शब्द ज्यों के त्यों रखती है: शीर्षक, फिर आपके लिखे क्रम में बिंदु, फिर अगला कदम, फिर मीट्रिक। यह बिंदु गिनती है और किनारों की खाली जगह हटाती है; कुछ भी दोबारा नहीं लिखा, संक्षिप्त या स्कोर नहीं किया जाता। शीर्षक अधिकतम 80 वर्ण, 3 से 12 बिंदु प्रत्येक अधिकतम 160 वर्ण, अगला कदम अधिकतम 160 वर्ण, मीट्रिक अधिकतम 60 वर्ण। हर पंक्ति एक-पंक्ति का पाठ होनी चाहिए। शीट फ़ाइलें, रिकॉर्डिंग या कैलेंडर नहीं पढ़ती।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/one-page-outline-sheet.html",
+      "language": "hi",
+      "title": "मीटिंग नोट्स से एक पेज की रूपरेखा",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "hi",

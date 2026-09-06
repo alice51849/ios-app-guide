@@ -111,6 +111,118 @@
       "language": "tr",
       "title": "Pil aşınma aralığı tablosu",
       "url": "https://open.cait518.cc/ios-app-guide/tr/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 574,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Evde aynı anda internette yapılanları ve kaç cihazın yaptığını yazın; gereken Mbps'yi ve paketinizde kalan payı gösteren bir tablo indirin. Satır toplamı = cihaz sayısı × cihaz başına değer. Gereken = satırların toplamı. Pay = paket − gereken; paketin %20'sinin altı kıt, sıfırın altı yetersizdir. Tam onda bir Mbps olarak toplanır, toplamlar asla kaymaz. Paket hızları 0,5 ile 10000 Mbps arasında ve en fazla bir ondalıklı, satır başına 1–50 cihaz, en fazla 20 satır. Wi‑Fi kapsaması, gecikme ve fiilen sunulan hız bu tablonun dışındadır.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/bandwidth-need-sheet.html",
+      "language": "tr",
+      "title": "Evde gereken internet hızı tablosu",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 436,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Seyahatin toplam bütçesini, gün ve kişi sayısını ve bilinen giderleri girin; kişi başı günde ne kadar harcanabileceğini ve bunun yemek, ulaşım, bilet ve alışveriş arasında nasıl dağıldığını gösteren tabloyu indirin. Harcanabilir = toplam bütçe − sabit giderler. Günlük = harcanabilir ÷ gün. Kişi başı günlük = günlük ÷ kişi. Her kategori = günlük × payı. Tutarlar tam kuruş olarak toplanır; günlük rakamlar yalnızca gösterilirken yuvarlanır. Tutarlar 0 ile 100.000.000 arasında ve en fazla iki ondalıklı, 1–120 gün, 1–20 kişi, en fazla 15 sabit gider, toplamı tam 100 olan dört pay. Baştan sona aynı para birimi, kur yok, fiyat veya rezervasyon önerisi yok.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/trip-budget-sheet.html",
+      "language": "tr",
+      "title": "Günlük seyahat bütçesi tablosu",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 344,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Bir günde gitmek istediğiniz yerleri, ne kadar kalacağınızı ve bir sonrakine ulaşma süresini yazın; varış ve ayrılış saatlerini ve hepsinin başlangıç ile bitiş arasına sığıp sığmadığını gösteren tabloyu indirin. Varış = önceki ayrılış + yol. Ayrılış = varış + kalış. Toplam = tüm kalışlar + tüm yollar. Kullanılabilir = bitiş − başlangıç; başlangıçtan önceki bitiş saati ertesi gün sayılır. Aşım = toplam − kullanılabilir; sıfırın üstü aşıyor demektir. Yalnızca dakika toplama, saat dilimi yok. Saatler 24 saatlik SS:DD biçiminde, kalış 5–720 dakika, yol 0–600 dakika, en fazla 25 yer. Açılış saatleri, gerçek trafik, harita, rota ve rezervasyon bu tablonun dışındadır.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/day-itinerary-sheet.html",
+      "language": "tr",
+      "title": "Bir günlük gezi zaman tablosu",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 329,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Dağınık toplantı notlarını tek sayfalık bir taslağa dönüştürün: bir başlık, üç ila on iki ana nokta, bir sonraki adım ve isteğe bağlı bir ölçüt; sonra slayda ya da özete yapıştırabileceğiniz bir tablo olarak indirin. Tablo sözlerinizi olduğu gibi korur: başlık, sonra yazdığınız sıradaki noktalar, sonra sonraki adım, sonra ölçüt. Noktaları sayar ve baş ve sondaki boşlukları kırpar; hiçbir şey yeniden yazılmaz, özetlenmez ya da puanlanmaz. Başlık en fazla 80 karakter, 3 ila 12 nokta her biri en fazla 160 karakter, sonraki adım en fazla 160 karakter, ölçüt en fazla 60 karakter. Her satır tek satırlık metin olmalıdır. Tablo dosya, kayıt ya da takvim okumaz.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html",
+      "language": "tr",
+      "title": "Toplantı notlarından tek sayfa özet",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "tr",

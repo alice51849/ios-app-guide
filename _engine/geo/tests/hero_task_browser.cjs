@@ -165,25 +165,29 @@ async function connect(url) {
         wide:[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left<-1||e.scrollWidth>e.clientWidth+1)
           .slice(0,6).map(e=>e.tagName.toLowerCase()+(e.id?"#"+e.id:"")+(e.className&&typeof e.className==="string"?"."+e.className.split(" ").join("."):"")+"="+Math.round(e.getBoundingClientRect().width)+"px:"+(e.textContent||"").trim().slice(0,40)),
         scripts:[...document.scripts].filter(s=>s.src).length,
-        name:document.querySelector("[data-field=name]").value
+        name:document.querySelector("[data-field=name],[data-field=point]").value
       })`);
       assert.equal(state.locale, record.locale);
       assert.equal(state.ready, true, record.locale);
       assert.equal(state.overflow, false, record.locale + "/" + record.task_id + " overflow at " + width + " " + JSON.stringify(state.wide));
       assert.equal(state.scripts, 2);
-      assert.equal(await evaluate(`([...document.querySelectorAll("h1,.fields label,.totals p")]).every(
-        element=>element.scrollWidth<=element.clientWidth+1&&
-          element.getBoundingClientRect().height<=parseFloat(getComputedStyle(element).lineHeight)+1
-      )`), true, record.locale + " primary labels remain complete on one line");
+      const clipped = await evaluate(`([...document.querySelectorAll("h1,.fields label,.totals p")]).filter(
+        element=>!(element.scrollWidth<=element.clientWidth+1&&
+          element.getBoundingClientRect().height<=parseFloat(getComputedStyle(element).lineHeight)+1)
+      ).map(element=>element.tagName.toLowerCase()+":"+element.textContent.trim()+"="+element.scrollWidth+"/"+element.clientWidth)`);
+      assert.deepEqual(clipped, [], record.locale + "/" + record.task_id + " primary labels remain complete on one line");
       assert.equal(await evaluate(`(()=>{
         const rect=document.getElementById("download-csv").getBoundingClientRect();
         return rect.height>=44&&rect.top>=0&&rect.bottom<=innerHeight;
       })()`), true, record.locale + " primary action is visible");
-      assert.equal(await evaluate(`(()=>{
+      const firstScreen = await evaluate(`(()=>{
         const result=document.querySelector(".totals").getBoundingClientRect();
         const action=document.getElementById("download-csv").getBoundingClientRect();
-        return result.top>=0&&result.bottom+8<=action.top;
-      })()`), true, record.locale + " first-screen results are not covered");
+        const rows=[...document.querySelectorAll(".totals>div")].map(e=>Math.round(e.getBoundingClientRect().height));
+        const children=[...document.getElementById("hero-fields").children].filter(e=>e.tagName!=="TEMPLATE").map(e=>{const r=e.getBoundingClientRect();return (e.id||e.className||e.tagName.toLowerCase())+"@"+Math.round(r.top)+"-"+Math.round(r.bottom)+"/o"+getComputedStyle(e).order;});
+        return {ok:result.top>=0&&result.bottom+8<=action.top,top:Math.round(result.top),bottom:Math.round(result.bottom),action:Math.round(action.top),rows,inner:innerHeight,children};
+      })()`);
+      assert.equal(firstScreen.ok, true, record.locale + "/" + record.task_id + " first-screen results are not covered " + JSON.stringify(firstScreen));
     }
     for (const record of manifest.records) {
       await navigate(record, 320);
@@ -378,8 +382,184 @@ async function connect(url) {
         return document.getElementById("download-csv").disabled;
       })()`), false, locale + " native digit capacity input");
     }
+    const bandwidth = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "bandwidth-need");
+    await navigate(bandwidth);
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "ok");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("plan-down");input.value="0.4";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a plan speed outside 0.5-10000 disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-row").click()');
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#bandwidth-rows .bandwidth-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#bandwidth-rows .bandwidth-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("plan-down").value='10';
+      const row=document.querySelector(".bandwidth-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=activity]").value='uhd_stream';
+      row.querySelector("[data-field=devices]").value='2';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "short", "over-committed plan shows the honest verdict");
+    const bandwidthFile = path.join(downloads, "bandwidth-need-sheet.csv");
+    await until(() => fs.existsSync(bandwidthFile) && fs.statSync(bandwidthFile).size > 0);
+    await until(async () => { const size = fs.statSync(bandwidthFile).size; await pause(150); return fs.statSync(bandwidthFile).size === size; });
+    const bandwidthCsv = fs.readFileSync(bandwidthFile, "utf8");
+    assert(bandwidthCsv.includes(`"'=1+1"`), "bandwidth csv: " + bandwidthCsv.slice(0, 500));
+    assert(bandwidthCsv.includes('"Not enough"'), "verdict is written in words: " + bandwidthCsv.slice(0, 500));
+    assert(/"-\d+\.\d"/.test(bandwidthCsv) && !bandwidthCsv.includes(`"'-`), "negative headroom stays a plain number");
+    assert(!bandwidthCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "bandwidth-need"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.getElementById("plan-down");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(50.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal plan input");
+    }
+    const trip = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "trip-budget");
+    await navigate(trip);
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 2);
+    assert.equal(await evaluate('document.getElementById("per-person-day").textContent'), "124.95");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("share-food");input.value="41";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "shares that do not add up to 100 disable the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-fixed").click()');
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 3);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#fixed-rows .fixed-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 3);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#fixed-rows .fixed-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 2);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".fixed-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=amount]").value='1000';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("variable-total").textContent'), "1,149.50");
+    const tripFile = path.join(downloads, "trip-budget-sheet.csv");
+    await until(() => fs.existsSync(tripFile) && fs.statSync(tripFile).size > 0);
+    await until(async () => { const size = fs.statSync(tripFile).size; await pause(150); return fs.statSync(tripFile).size === size; });
+    const tripCsv = fs.readFileSync(tripFile, "utf8");
+    assert(tripCsv.includes(`"'=1+1"`), "trip csv: " + tripCsv.slice(0, 500));
+    assert(tripCsv.includes('"1149.50"') && tripCsv.includes('"100%"'), "left to spend reconciles: " + tripCsv.slice(0, 500));
+    assert(!tripCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "trip-budget"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.getElementById("budget-total");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(2500.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal budget input");
+    }
+    const itinerary = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "day-itinerary");
+    await navigate(itinerary);
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "fits");
+    assert.equal(await evaluate('document.getElementById("total-minutes").textContent'), "455");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("end-time");input.value="9:00";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a time that is not HH:MM disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-stop").click()');
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#stop-rows .stop-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#stop-rows .stop-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("start-time").value='22:00';
+      document.getElementById("end-time").value='02:00';
+      document.getElementById("end-time").dispatchEvent(new Event("input",{bubbles:true}));
+    })()`);
+    assert.equal(await evaluate('document.querySelector("#stop-rows .stop-row [data-output=leave]").textContent'), "00:00 +1", "past midnight carries a day marker");
+    assert.equal(await evaluate('document.getElementById("available-minutes").textContent'), "240");
+    await evaluate(`(()=>{
+      const row=document.querySelector(".stop-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=stay_min]").value='600';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "overrun", "a day that does not fit shows the honest verdict");
+    const itineraryFile = path.join(downloads, "day-itinerary-sheet.csv");
+    await until(() => fs.existsSync(itineraryFile) && fs.statSync(itineraryFile).size > 0);
+    await until(async () => { const size = fs.statSync(itineraryFile).size; await pause(150); return fs.statSync(itineraryFile).size === size; });
+    const itineraryCsv = fs.readFileSync(itineraryFile, "utf8");
+    assert(itineraryCsv.includes(`"'=1+1"`), "itinerary csv: " + itineraryCsv.slice(0, 500));
+    assert(itineraryCsv.includes('"Over time"') && itineraryCsv.includes(' +1"'), "verdict in words and day marker kept: " + itineraryCsv.slice(0, 500));
+    assert(!itineraryCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "day-itinerary"));
+      assert.equal(await evaluate(`(()=>{
+        const digits=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false,minimumIntegerDigits:2});
+        const input=document.getElementById("start-time");
+        input.value=digits.format(8)+":"+digits.format(30);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit clock input");
+    }
+    const outline = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "one-page-outline");
+    await navigate(outline);
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("point-count").textContent'), "3");
+    assert.equal(await evaluate('document.querySelector("#point-rows [data-remove]").disabled'), true, "three points is the minimum");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("headline");input.value="   ";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "an empty headline disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-point").click()');
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 4);
+    assert.equal(await evaluate('document.getElementById("download-csv").disabled'), true, "a new empty point must be filled in first");
+    acceptDialog = false;
+    await evaluate('document.querySelector("#point-rows .point-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#point-rows .point-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("headline").value='=1+1';
+      document.getElementById("metric").value='-3%';
+      document.getElementById("metric").dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("preview-headline").textContent'), "=1+1", "the preview shows the text verbatim");
+    assert.equal(await evaluate('document.getElementById("preview-metric").hidden'), false);
+    const outlineFile = path.join(downloads, "one-page-outline-sheet.csv");
+    await until(() => fs.existsSync(outlineFile) && fs.statSync(outlineFile).size > 0);
+    await until(async () => { const size = fs.statSync(outlineFile).size; await pause(150); return fs.statSync(outlineFile).size === size; });
+    const outlineCsv = fs.readFileSync(outlineFile, "utf8");
+    assert(outlineCsv.includes(`"'=1+1"`), "outline csv: " + outlineCsv.slice(0, 500));
+    assert(outlineCsv.includes('"-3%"') && !outlineCsv.includes(`"'-3%"`), "a negative percentage stays a plain value");
+    assert(!outlineCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "one-page-outline"));
+      assert.equal(await evaluate(`(()=>{
+        const headline=document.getElementById("headline").value;
+        return headline==="Ship the checkout redesign by 30 September"?"english":document.getElementById("download-csv").disabled?"disabled":"native";
+      })()`), "native", locale + " worked example is native prose and valid");
+    }
     assert.deepEqual(external.filter((url) => !url.startsWith("data:")), []);
-    console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 4, external_requests: external.length}));
+    console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 8, external_requests: external.length}));
   } finally {
     if (browser) await browser.send("Browser.close").catch(() => {});
     if (page) page.socket.close();

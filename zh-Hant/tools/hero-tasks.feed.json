@@ -111,6 +111,118 @@
       "language": "zh-Hant",
       "title": "電池磨耗區間表",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 552,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "把家裡同時在線上做的事和裝置數列出來，就能算出需要多少 Mbps、目前方案還剩多少餘裕，並下載成表。 每列小計＝裝置數 × 每台數值。所需＝各列相加。餘裕＝方案－所需；低於方案 20% 為偏緊，小於零為不足。以 0.1 Mbps 為單位整數相加，合計不會漂移。 方案速度 0.5 至 10000 Mbps、最多一位小數；每列 1 至 50 台；最多 20 列。Wi‑Fi 涵蓋、延遲與電信商實際到府速度不在本表範圍。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bandwidth-need-sheet.html",
+      "language": "zh-Hant",
+      "title": "家用頻寬需求表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 422,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "填入一趟旅程的總預算、天數、人數與已知的固定支出，就能下載每人每天還能花多少、以及餐飲／交通／門票／購物各佔多少的分配表。 可自由花費＝總預算－固定支出。每天＝可自由花費÷天數。每人每天＝每天÷人數。各類別＝每天×比例。金額以最小單位整數相加；每日數字只在顯示時四捨五入。 金額 0 至 100,000,000、最多兩位小數；1 至 120 天；1 至 20 人；固定支出最多 15 列；四個比例合計必須恰為 100。全程同幣別、不換匯，不提供價格或訂房建議。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/trip-budget-sheet.html",
+      "language": "zh-Hant",
+      "title": "旅程每日預算分配表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 366,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "把一天想去的地點、停留時間與前往下一站的移動時間列出來，就能下載每站的到達／離開時間，並看出整天是否塞得進你的開始與結束時間。 到達＝上一站離開＋移動。離開＝到達＋停留。合計＝所有停留＋所有移動。可用＝結束－開始；結束時間早於開始時視為隔天。超出＝合計－可用；大於零即超時。純分鐘加法，不處理時區。 時間為 24 小時制 HH:MM；停留 5 至 720 分鐘；移動 0 至 600 分鐘；最多 25 站。營業時間、實際路況、地圖、路線規劃與訂位不在本表範圍。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/day-itinerary-sheet.html",
+      "language": "zh-Hant",
+      "title": "一日行程時間表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 295,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "把凌亂的會議記錄整理成一頁大綱：一個標題、三到十二個重點、一個下一步行動與可選的指標，然後下載成可貼進投影片或摘要的表格。 本表原樣保留你的文字：先標題，再依你輸入的順序列重點，接著下一步行動，最後指標。它只計算重點數並去掉前後空白；不改寫、不摘要、不評分。 標題最多 80 字元；重點 3 到 12 個、每個最多 160 字元；下一步行動最多 160 字元；指標最多 60 字元。每一行都必須是單行文字。本表不會讀取檔案、錄音或行事曆。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/one-page-outline-sheet.html",
+      "language": "zh-Hant",
+      "title": "會議記錄變一頁大綱",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "zh-Hant",

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="vi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Nhập tổng ngân sách chuyến đi, số ngày, số người và các khoản đã biết, rồi tải về bảng cho biết mỗi người có thể chi bao nhiêu mỗi ngày và chia thế nào cho ăn uống, đi lại, vé và mua sắm.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="trip-budget">
+<title>Ngân sách chuyến đi mỗi ngày</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/trip-budget-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="Kết quả miễn phí">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="Kết quả miễn phí">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="Kết quả miễn phí">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/vi/tools/hero-tasks.feed.json" title="Kết quả miễn phí">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/e3c449c8351a7b16-hero-task-tripbudget.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html","name":"Ngân sách chuyến đi mỗi ngày","description":"Nhập tổng ngân sách chuyến đi, số ngày, số người và các khoản đã biết, rồi tải về bảng cho biết mỗi người có thể chi bao nhiêu mỗi ngày và chia thế nào cho ăn uống, đi lại, vé và mua sắm.","inLanguage":"vi","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html#worked-example","name":"Ví dụ có lời giải","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/vi/tools/results/trip-budget-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html#howto","name":"Ngân sách chuyến đi mỗi ngày","description":"Nhập tổng ngân sách chuyến đi, số ngày, số người và các khoản đã biết, rồi tải về bảng cho biết mỗi người có thể chi bao nhiêu mỗi ngày và chia thế nào cho ăn uống, đi lại, vé và mua sắm.","inLanguage":"vi","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"Ngân sách chuyến đi mỗi ngày","url":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"Còn lại để chi = tổng ngân sách − chi phí cố định. Mỗi ngày = còn lại ÷ số ngày. Mỗi người mỗi ngày = mỗi ngày ÷ số người. Mỗi hạng mục = mỗi ngày × tỷ lệ của nó. Số tiền cộng theo đơn vị nhỏ nhất nguyên; con số theo ngày chỉ làm tròn khi hiển thị."},{"@type":"HowToStep","position":2,"text":"Số tiền từ 0 đến 100.000.000, tối đa hai chữ số thập phân; 1 đến 120 ngày; 1 đến 20 người; tối đa 15 chi phí cố định; bốn tỷ lệ cộng lại đúng 100. Cùng một loại tiền xuyên suốt, không tỷ giá, không tư vấn giá hay đặt chỗ."}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html#example-dataset","name":"Ví dụ có lời giải","description":"Nhập tổng ngân sách chuyến đi, số ngày, số người và các khoản đã biết, rồi tải về bảng cho biết mỗi người có thể chi bao nhiêu mỗi ngày và chia thế nào cho ăn uống, đi lại, vé và mua sắm.","inLanguage":"vi","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/vi/tools/results/trip-budget-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"trip-budget-v1","slug":"trip-budget-sheet","locale":"vi","copy":{"title":"Ngân sách chuyến đi mỗi ngày","intro":"Nhập tổng ngân sách chuyến đi, số ngày, số người và các khoản đã biết, rồi tải về bảng cho biết mỗi người có thể chi bao nhiêu mỗi ngày và chia thế nào cho ăn uống, đi lại, vé và mua sắm.","income":"Thu nhập thực nhận mỗi giờ","day":"Số giờ mỗi ngày làm việc","item":"Khoản","quantity":"Số lượng","price":"Đơn giá sau thuế","total":"Tổng","hours":"Giờ làm","days":"Số ngày","add":"Thêm chi phí cố định","remove":"Xóa","download":"Tải CSV của tôi","reset":"Khôi phục ví dụ","example":"Ví dụ có lời giải","example_note":"Ngân sách 3000 cho 5 ngày và 2 người, vé máy bay 900 và khách sạn 850,50: còn lại 1249,50, tức 249,90 mỗi ngày và 124,95 mỗi người mỗi ngày, chia theo 40 / 20 / 25 / 15.","formula":"Còn lại để chi = tổng ngân sách − chi phí cố định. Mỗi ngày = còn lại ÷ số ngày. Mỗi người mỗi ngày = mỗi ngày ÷ số người. Mỗi hạng mục = mỗi ngày × tỷ lệ của nó. Số tiền cộng theo đơn vị nhỏ nhất nguyên; con số theo ngày chỉ làm tròn khi hiển thị.","limits":"Số tiền từ 0 đến 100.000.000, tối đa hai chữ số thập phân; 1 đến 120 ngày; 1 đến 20 người; tối đa 15 chi phí cố định; bốn tỷ lệ cộng lại đúng 100. Cùng một loại tiền xuyên suốt, không tỷ giá, không tư vấn giá hay đặt chỗ.","privacy":"Dữ liệu nhập chỉ ở trong thẻ này. Không tải lên, tài khoản, theo dõi dữ liệu nhập hay lưu trữ. Tải lại sẽ xóa thay đổi.","optional":"Ứng dụng tùy chọn","optional_note":"Bảng miễn phí này không cần ứng dụng. Xem tính năng và giá hiện tại trên từng trang App Store.","error":"Nhập ngân sách lớn hơn 0, số ngày và số người nguyên, bốn tỷ lệ cộng lại bằng 100, và ở mỗi chi phí cố định một số tiền tối đa hai chữ số thập phân.","row_limit":"Tối đa 15 chi phí cố định.","tools":"Công cụ miễn phí","method":"Công thức và giới hạn","sources":"Nguồn","result":"Bảng ngân sách chuyến đi của bạn","disclosure":"Do Lumi Studio, nhà phát triển các ứng dụng tùy chọn, xuất bản. Đây không phải bảng xếp hạng độc lập.","download_example":"Tải CSV mẫu","feed":"Kết quả miễn phí","budget":"Tổng ngân sách","travelers":"Số người","fixed":"Chi phí cố định","amount":"Số tiền","share":"Tỷ lệ","food":"Ăn uống","transport":"Đi lại","tickets":"Vé","shopping":"Mua sắm","per_day":"Mỗi ngày","per_person_day":"Mỗi người mỗi ngày","variable":"Còn lại để chi"},"example":{"budget_total":"3000","days":"5","travelers":"2","shares":{"food":"40","transport":"20","tickets":"25","shopping":"15"},"items":[{"amount":"900","name":"Khoản 1"},{"amount":"850.50","name":"Khoản 2"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/4e45de7eb579eb7d-hero-task-tripbudget-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/24a8ee9743fdeab8-hero-task-tripbudget-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/vi/tools/index.html">Công cụ miễn phí</a><span>Lumi Studio</span></nav>
+<h1>Ngân sách chuyến đi mỗi ngày</h1><p>Nhập tổng ngân sách chuyến đi, số ngày, số người và các khoản đã biết, rồi tải về bảng cho biết mỗi người có thể chi bao nhiêu mỗi ngày và chia thế nào cho ăn uống, đi lại, vé và mua sắm.</p>
+<section class="panel" aria-label="Ngân sách chuyến đi mỗi ngày">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields trip-fields">
+<div><label for="budget-total">Tổng ngân sách</label><input id="budget-total" type="text" inputmode="decimal" maxlength="12" value="3000" required autocomplete="off"></div>
+<div><label for="trip-days">Số ngày</label><input id="trip-days" type="text" inputmode="numeric" maxlength="3" value="5" required autocomplete="off"></div>
+<div><label for="travelers">Số người</label><input id="travelers" type="text" inputmode="numeric" maxlength="2" value="2" required autocomplete="off"></div>
+</div>
+<div class="shares" aria-label="Tỷ lệ"><div><label for="share-food">Ăn uống (%)</label><input id="share-food" type="text" inputmode="numeric" maxlength="3" value="40" required autocomplete="off"></div><div><label for="share-transport">Đi lại (%)</label><input id="share-transport" type="text" inputmode="numeric" maxlength="3" value="20" required autocomplete="off"></div><div><label for="share-tickets">Vé (%)</label><input id="share-tickets" type="text" inputmode="numeric" maxlength="3" value="25" required autocomplete="off"></div><div><label for="share-shopping">Mua sắm (%)</label><input id="share-shopping" type="text" inputmode="numeric" maxlength="3" value="15" required autocomplete="off"></div></div>
+<p class="output-label">Chi phí cố định</p>
+<div id="fixed-rows"><div class="fixed-row"><div class="name-field"><label data-label="name" for="row-1-name">Khoản</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="Khoản 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">Số tiền</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="900" required autocomplete="off"></div><button type="button" data-remove aria-label="Xóa · Khoản 1">Xóa</button></div><div class="fixed-row"><div class="name-field"><label data-label="name" for="row-2-name">Khoản</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="Khoản 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">Số tiền</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="850.50" required autocomplete="off"></div><button type="button" data-remove aria-label="Xóa · Khoản 2">Xóa</button></div></div>
+<template id="fixed-template"><div class="fixed-row"><div class="name-field"><label data-label="name" for="row-0-name">Khoản</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">Số tiền</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><button type="button" data-remove aria-label="Xóa · ">Xóa</button></div></template>
+<div class="actions"><button type="button" id="add-fixed">Thêm chi phí cố định</button><span class="small">Tối đa 15 chi phí cố định.</span></div>
+<div class="totals trip-totals" aria-label="Bảng ngân sách chuyến đi của bạn">
+<div><p>Chi phí cố định</p><output class="total-value" id="fixed-total">1750.50</output></div><div><p>Còn lại để chi</p><output class="total-value" id="variable-total">1249.50</output></div><div><p>Mỗi ngày</p><output class="total-value" id="per-day">249.90</output></div><div><p>Mỗi người mỗi ngày</p><output class="total-value" id="per-person-day">124.95</output></div>
+</div>
+<div class="category-split" aria-label="Tỷ lệ"><div><p>Ăn uống · 40%</p><output data-output="day" id="day-food">99.96</output><output data-output="person" id="person-food">49.98</output></div><div><p>Đi lại · 20%</p><output data-output="day" id="day-transport">49.98</output><output data-output="person" id="person-transport">24.99</output></div><div><p>Vé · 25%</p><output data-output="day" id="day-tickets">62.48</output><output data-output="person" id="person-tickets">31.24</output></div><div><p>Mua sắm · 15%</p><output data-output="day" id="day-shopping">37.49</output><output data-output="person" id="person-shopping">18.74</output></div></div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>Tải CSV của tôi</button><button type="button" id="reset-example">Khôi phục ví dụ</button></div>
+</fieldset></form><p class="small">Dữ liệu nhập chỉ ở trong thẻ này. Không tải lên, tài khoản, theo dõi dữ liệu nhập hay lưu trữ. Tải lại sẽ xóa thay đổi.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>Ví dụ có lời giải</h2><p>Ngân sách 3000 cho 5 ngày và 2 người, vé máy bay 900 và khách sạn 850,50: còn lại 1249,50, tức 249,90 mỗi ngày và 124,95 mỗi người mỗi ngày, chia theo 40 / 20 / 25 / 15.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Khoản</th><th scope="col">Số tiền</th><th scope="col">Tỷ lệ</th><th scope="col">Mỗi ngày</th><th scope="col">Mỗi người mỗi ngày</th></tr></thead><tbody><tr><td>Khoản 1</td><td>900.00</td><td></td><td></td><td></td></tr><tr><td>Khoản 2</td><td>850.50</td><td></td><td></td><td></td></tr><tr><td>Ăn uống</td><td></td><td>40%</td><td>99.96</td><td>49.98</td></tr><tr><td>Đi lại</td><td></td><td>20%</td><td>49.98</td><td>24.99</td></tr><tr><td>Vé</td><td></td><td>25%</td><td>62.48</td><td>31.24</td></tr><tr><td>Mua sắm</td><td></td><td>15%</td><td>37.49</td><td>18.74</td></tr></tbody><tfoot><tr class="example-total"><td>Chi phí cố định</td><td>1750.50</td><td></td><td></td><td></td></tr><tr class="example-total"><td>Còn lại để chi</td><td>1249.50</td><td>100%</td><td>249.90</td><td>124.95</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/vi/tools/results/trip-budget-sheet.csv" download>Tải CSV mẫu</a>
+<h2>Công thức và giới hạn</h2><p>Còn lại để chi = tổng ngân sách − chi phí cố định. Mỗi ngày = còn lại ÷ số ngày. Mỗi người mỗi ngày = mỗi ngày ÷ số người. Mỗi hạng mục = mỗi ngày × tỷ lệ của nó. Số tiền cộng theo đơn vị nhỏ nhất nguyên; con số theo ngày chỉ làm tròn khi hiển thị.</p>
+<pre class="formula">Chi phí cố định = 1750.50
+Còn lại để chi = 3000.00 − 1750.50 = 1249.50
+Mỗi ngày = 1249.50 ÷ 5 = 249.90
+Mỗi người mỗi ngày = 249.90 ÷ 2 = 124.95
+Ăn uống = 249.90 × 40% = 99.96
+Đi lại = 249.90 × 20% = 49.98
+Vé = 249.90 × 25% = 62.48
+Mua sắm = 249.90 × 15% = 37.49</pre>
+<p>Số tiền từ 0 đến 100.000.000, tối đa hai chữ số thập phân; 1 đến 120 ngày; 1 đến 20 người; tối đa 15 chi phí cố định; bốn tỷ lệ cộng lại đúng 100. Cùng một loại tiền xuyên suốt, không tỷ giá, không tư vấn giá hay đặt chỗ.</p>
+<ul class="small">
+<li>Tổng ngân sách / Số tiền: <bdi dir="ltr">0 ≤ x ≤ 100,000,000</bdi></li>
+<li>Số ngày: <bdi dir="ltr">1 ≤ d ≤ 120</bdi></li>
+<li>Số người: <bdi dir="ltr">1 ≤ p ≤ 20</bdi></li>
+<li>Tỷ lệ: <bdi dir="ltr">Σ = 100%</bdi></li>
+<li>Chi phí cố định: <bdi dir="ltr">0 ≤ n ≤ 15</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>Ứng dụng tùy chọn</h2><p>Bảng miễn phí này không cần ứng dụng. Xem tính năng và giá hiện tại trên từng trang App Store.</p><div class="actions"><a class="button" href="https://apps.apple.com/vn/app/id6793436548?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">Tải G+Money Lite trên App Store →</a><a class="button" href="https://apps.apple.com/vn/app/id6755782939?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">Tải G+Money trên App Store →</a></div></section>
+<footer><p>Do Lumi Studio, nhà phát triển các ứng dụng tùy chọn, xuất bản. Đây không phải bảng xếp hạng độc lập.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">Nguồn</a> · <a href="https://open.cait518.cc/ios-app-guide/vi/tools/hero-tasks.feed.json">Kết quả miễn phí</a></footer>
+</main></body></html>

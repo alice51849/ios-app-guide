@@ -111,6 +111,118 @@
       "language": "th",
       "title": "ชีตช่วงการเสื่อมแบตเตอรี่",
       "url": "https://open.cait518.cc/ios-app-guide/th/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1008,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "ระบุว่าที่บ้านใช้อินเทอร์เน็ตทำอะไรพร้อมกันบ้างและใช้กี่เครื่อง แล้วดาวน์โหลดตารางที่บอกว่าต้องใช้กี่ Mbps และแพ็กเกจของคุณเหลือส่วนเผื่อเท่าไร รวมต่อแถว = จำนวนเครื่อง × ค่าต่อเครื่อง ที่ต้องใช้ = ผลรวมทุกแถว ส่วนเผื่อ = แพ็กเกจ − ที่ต้องใช้ ต่ำกว่า 20% ของแพ็กเกจถือว่าตึงมือ ต่ำกว่าศูนย์ถือว่าไม่พอ บวกกันเป็นหน่วย 0.1 Mbps แบบจำนวนเต็ม ผลรวมจึงไม่คลาดเคลื่อน ความเร็วแพ็กเกจ 0.5 ถึง 10000 Mbps ทศนิยมไม่เกินหนึ่งตำแหน่ง แถวละ 1 ถึง 50 เครื่อง สูงสุด 20 แถว ระยะสัญญาณ Wi‑Fi ความหน่วง และความเร็วจริงจากผู้ให้บริการอยู่นอกขอบเขตของตารางนี้",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/bandwidth-need-sheet.html",
+      "language": "th",
+      "title": "ตารางความเร็วเน็ตที่บ้านต้องใช้",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 665,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "กรอกงบรวมของทริป จำนวนวัน จำนวนคน และค่าใช้จ่ายที่รู้อยู่แล้ว แล้วดาวน์โหลดตารางว่าแต่ละคนใช้ได้วันละเท่าไร และแบ่งเป็นค่าอาหาร เดินทาง ตั๋ว และช้อปปิ้งอย่างไร เหลือให้ใช้ = งบรวม − ค่าใช้จ่ายคงที่ ต่อวัน = เหลือให้ใช้ ÷ จำนวนวัน ต่อคนต่อวัน = ต่อวัน ÷ จำนวนคน แต่ละหมวด = ต่อวัน × สัดส่วน จำนวนเงินบวกกันเป็นหน่วยสตางค์เต็ม ตัวเลขรายวันปัดเศษเฉพาะตอนแสดงผล จำนวนเงิน 0 ถึง 100,000,000 ทศนิยมไม่เกินสองตำแหน่ง 1 ถึง 120 วัน 1 ถึง 20 คน ค่าใช้จ่ายคงที่สูงสุด 15 รายการ สัดส่วนสี่หมวดต้องรวมเท่ากับ 100 พอดี ใช้สกุลเงินเดียวตลอด ไม่มีอัตราแลกเปลี่ยน ไม่ให้คำแนะนำเรื่องราคาหรือการจอง",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/trip-budget-sheet.html",
+      "language": "th",
+      "title": "ตารางงบเที่ยวต่อวัน",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 540,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ระบุสถานที่ที่จะไปในหนึ่งวัน อยู่ที่ละกี่นาที และใช้เวลาเดินทางไปที่ถัดไปเท่าไร แล้วดาวน์โหลดตารางเวลาถึงและออกจากแต่ละที่ ที่บอกว่าทั้งหมดอยู่ในช่วงเวลาเริ่มถึงเลิกของคุณหรือไม่ ถึง = ออกจากที่ก่อนหน้า + เดินทาง ออก = ถึง + อยู่ รวม = เวลาอยู่ทั้งหมด + เวลาเดินทางทั้งหมด มีให้ใช้ = เลิก − เริ่ม หากเวลาเลิกมาก่อนเวลาเริ่ม ถือเป็นวันถัดไป เกิน = รวม − มีให้ใช้ มากกว่าศูนย์คือเกินเวลา บวกลบนาทีล้วน ๆ ไม่มีเขตเวลา เวลาแบบ 24 ชั่วโมง HH:MM อยู่ 5 ถึง 720 นาที เดินทาง 0 ถึง 600 นาที สูงสุด 25 สถานที่ เวลาเปิดทำการ การจราจรจริง แผนที่ เส้นทาง และการจอง อยู่นอกขอบเขตของตารางนี้",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html",
+      "language": "th",
+      "title": "ตารางเวลาเที่ยวหนึ่งวัน",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 833,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "เปลี่ยนโน้ตประชุมที่กระจัดกระจายให้เป็นโครงร่างหนึ่งหน้า: หัวข้อหลักหนึ่งข้อ ประเด็นสำคัญสามถึงสิบสองข้อ การดำเนินการถัดไปหนึ่งข้อ และตัวชี้วัด (ไม่บังคับ) แล้วดาวน์โหลดเป็นตารางเพื่อวางลงในสไลด์หรือสรุป ตารางเก็บถ้อยคำของคุณไว้ตามเดิม: หัวข้อหลัก ตามด้วยประเด็นตามลำดับที่พิมพ์ จากนั้นการดำเนินการถัดไป แล้วตัวชี้วัด ตารางนับจำนวนประเด็นและตัดช่องว่างหัวท้ายเท่านั้น ไม่มีการเขียนใหม่ สรุป หรือให้คะแนน หัวข้อหลักไม่เกิน 80 ตัวอักษร ประเด็น 3 ถึง 12 ข้อ ข้อละไม่เกิน 160 ตัวอักษร การดำเนินการถัดไปไม่เกิน 160 ตัวอักษร ตัวชี้วัดไม่เกิน 60 ตัวอักษร ทุกบรรทัดต้องเป็นข้อความบรรทัดเดียว ตารางไม่อ่านไฟล์ บันทึกเสียง หรือปฏิทิน",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/one-page-outline-sheet.html",
+      "language": "th",
+      "title": "โน้ตประชุมเป็นสรุปหนึ่งหน้า",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "th",

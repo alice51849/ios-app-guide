@@ -111,6 +111,118 @@
       "language": "nl-NL",
       "title": "Accuslijtage-bereikblad",
       "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 565,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Zet op een rij wat er thuis tegelijk online gebeurt en met hoeveel apparaten, en download een tabel met de benodigde Mbps en de ruimte die je abonnement nog overhoudt. Totaal per rij = apparaten × waarde per apparaat. Nodig = som van de rijen. Ruimte = abonnement − nodig; onder 20% van het abonnement is krap, onder nul te weinig. Er wordt in hele tienden van een Mbps opgeteld, dus totalen verschuiven nooit. Abonnementssnelheden van 0,5 tot 10000 Mbps met hoogstens één decimaal, 1 tot 50 apparaten per rij, maximaal 20 rijen. Wifi-bereik, latentie en de werkelijk geleverde snelheid vallen buiten deze tabel.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/bandwidth-need-sheet.html",
+      "language": "nl-NL",
+      "title": "Bandbreedte voor thuis",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 434,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Vul het totale reisbudget, de dagen, de reizigers en de kosten die je al kent in, en download een tabel met wat iedereen per dag kan uitgeven en hoe dat verdeeld is over eten, vervoer, tickets en winkelen. Vrij te besteden = totaal budget − vaste kosten. Per dag = vrij te besteden ÷ dagen. Per persoon per dag = per dag ÷ reizigers. Elke categorie = per dag × haar aandeel. Bedragen worden in hele centen opgeteld; dagbedragen worden alleen bij weergave afgerond. Bedragen van 0 tot 100.000.000 met hoogstens twee decimalen, 1 tot 120 dagen, 1 tot 20 reizigers, maximaal 15 vaste kosten, vier aandelen die samen precies 100 zijn. Overal dezelfde valuta, geen wisselkoersen, geen prijs- of boekingsadvies.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/trip-budget-sheet.html",
+      "language": "nl-NL",
+      "title": "Reisbudget per dag",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 349,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Zet de plekken van één dag op een rij met hoelang je blijft en hoelang je naar de volgende reist, en download een tabel met aankomst- en vertrektijden die laat zien of alles tussen je begin en einde past. Aankomst = vorig vertrek + reis. Vertrek = aankomst + verblijf. Totaal = alle verblijven + alle reizen. Beschikbaar = einde − begin; een eindtijd vóór de begintijd telt als de volgende dag. Te veel = totaal − beschikbaar; alles boven nul loopt uit. Simpel rekenen in minuten, zonder tijdzones. Tijden als 24-uurs HH:MM, verblijven van 5 tot 720 minuten, reizen van 0 tot 600 minuten, maximaal 25 plekken. Openingstijden, echt verkeer, kaarten, routes en reserveringen vallen buiten deze tabel.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/day-itinerary-sheet.html",
+      "language": "nl-NL",
+      "title": "Tijdschema voor één dag",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/nl/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 337,
+          "title": "Voorbeeld-CSV downloaden",
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Maak van rommelige vergadernotities een overzicht van één pagina: één kop, drie tot twaalf kernpunten, één volgende actie en een optionele meetwaarde, en download het als tabel om in een slide of samenvatting te plakken. De tabel houdt je woorden zoals ze zijn: kop, dan de punten in de volgorde waarin je ze typte, dan de volgende actie, dan de meetwaarde. Hij telt de punten en verwijdert spaties aan de randen; niets wordt herschreven, samengevat of beoordeeld. Kop tot 80 tekens, 3 tot 12 punten van elk maximaal 160 tekens, volgende actie tot 160 tekens, meetwaarde tot 60 tekens. Elke regel moet tekst op één regel zijn. De tabel leest geen bestanden, opnames of agenda's.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/one-page-outline-sheet.html",
+      "language": "nl-NL",
+      "title": "Vergadernotities naar één pagina",
+      "url": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "nl-NL",

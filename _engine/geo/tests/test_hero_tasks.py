@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import csv
+import html
 import io
 import json
 import os
@@ -37,7 +38,7 @@ class HeroTaskTests(unittest.TestCase):
         self.site = hero.DEFAULT_SITE
         apps = [
             {"key": key, "app_store_id": app_id, "name": key, "verified_live": True,
-             "purchase_model": "paid_upfront" if key == "hourstag" else "free_with_lifetime_unlock"}
+             "purchase_model": "paid_upfront" if key in {"hourstag", "wifiaid", "gmoney", "tripbee"} else "free_with_lifetime_unlock"}
             for task in self.tasks for key, app_id in task["apps"].items()
         ]
         self.served = len(apps)
@@ -384,9 +385,10 @@ class HeroTaskTests(unittest.TestCase):
         return json.loads(process.stdout)
 
     def test_task_copy_layers_only_the_tasks_own_keys_over_the_shared_copy(self):
-        self.assertEqual({"maintenance-next-due", "project-profit", "battery-wear"}, set(self.task_copies))
-        self.assertEqual(["purchase-worktime", "maintenance-next-due", "project-profit", "battery-wear"],
-                         [task["id"] for task in self.tasks])
+        self.assertEqual({"maintenance-next-due", "project-profit", "battery-wear", "bandwidth-need", "trip-budget",
+                          "day-itinerary", "one-page-outline"}, set(self.task_copies))
+        self.assertEqual(["purchase-worktime", "maintenance-next-due", "project-profit", "battery-wear", "bandwidth-need",
+                          "trip-budget", "day-itinerary", "one-page-outline"], [task["id"] for task in self.tasks])
         for locale in hero.OFFICIAL_LOCALES:
             with self.subTest(locale=locale):
                 self.assertIs(self.copy[locale], hero.task_copy(self.copy, self.task_copies, self.tasks[0], locale))
@@ -407,6 +409,20 @@ class HeroTaskTests(unittest.TestCase):
                 # BattAI contract: estimates are labelled and reported as a band, never a score.
                 self.assertNotEqual(battery["marker_provided"], battery["marker_estimated"])
                 self.assertNotEqual(battery["low"], battery["high"])
+                bandwidth = hero.task_copy(self.copy, self.task_copies, self.tasks[4], locale)
+                # Three distinct verdicts and eight distinct activity labels per locale.
+                self.assertEqual(3, len({bandwidth["status_ok"], bandwidth["status_tight"], bandwidth["status_short"]}))
+                self.assertEqual(8, len({bandwidth["activity_" + key] for key in hero.ACTIVITY_KEYS}))
+                trip = hero.task_copy(self.copy, self.task_copies, self.tasks[5], locale)
+                self.assertEqual(4, len({trip[category] for category in hero.TRIP_CATEGORIES}))
+                itinerary = hero.task_copy(self.copy, self.task_copies, self.tasks[6], locale)
+                self.assertNotEqual(itinerary["status_fits"], itinerary["status_overrun"])
+                outline = hero.task_copy(self.copy, self.task_copies, self.tasks[7], locale)
+                # Four distinct section labels (they become CSV cells) and a native worked example.
+                self.assertEqual(4, len({outline[section] for section in ("headline", "point", "action", "metric")}))
+                self.assertLessEqual(len(outline["example_headline"]), 80)
+                self.assertLessEqual(len(outline["example_metric"]), 60)
+                self.assertEqual(3, len({outline[f"example_point_{index}"] for index in (1, 2, 3)}))
         raw = json.loads(hero.I18N.read_text())
         raw["tasks"]["maintenance-next-due"]["locales"]["ja"][0] = raw["tasks"]["maintenance-next-due"]["locales"]["en-US"][0]
         broken = self.folder / "english-fallback.json"
@@ -545,6 +561,308 @@ class HeroTaskTests(unittest.TestCase):
     def battery_node(self, script, payload):
         with mock.patch.dict(os.environ, {"ADAPTER": "battery-wear-range-v1"}):
             return self.adapter_node(hero.BATTERY_CORE, script, payload)
+
+    def bandwidth_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "bandwidth-need-v1"}):
+            return self.adapter_node(hero.BANDWIDTH_CORE, script, payload)
+
+    def trip_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "trip-budget-v1"}):
+            return self.adapter_node(hero.TRIPBUDGET_CORE, script, payload)
+
+    def test_trip_budget_table_driven_exact_cents_and_category_split(self):
+        shares = lambda food, transport, tickets, shopping: {
+            "food": food, "transport": transport, "tickets": tickets, "shopping": shopping}
+        fixed = lambda *amounts: [{"name": f"cost {index}", "amount": amount} for index, amount in enumerate(amounts)]
+        cases = [
+            ({"budget_total": "3000", "days": "5", "travelers": "2", "shares": shares("40", "20", "25", "15"),
+              "items": fixed("900", "850.50")}, 175050, 124950, 24990.0, 12495.0, [9996.0, 4998.0, 6247.5, 3748.5]),
+            ({"budget_total": "0.01", "days": "1", "travelers": "1", "shares": shares("100", "0", "0", "0"),
+              "items": []}, 0, 1, 1.0, 1.0, [1.0, 0.0, 0.0, 0.0]),
+            ({"budget_total": "1000", "days": "3", "travelers": "3", "shares": shares("25", "25", "25", "25"),
+              "items": fixed("1000")}, 100000, 0, 0.0, 0.0, [0.0, 0.0, 0.0, 0.0]),
+            ({"budget_total": "100000000", "days": "120", "travelers": "20", "shares": shares("0", "0", "0", "100"),
+              "items": fixed(*["0.10"] * 15)}, 150, 9999999850, 9999999850 / 120, 9999999850 / 2400,
+             [0.0, 0.0, 0.0, 9999999850 / 120]),
+        ]
+        outputs = self.trip_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(budget=case[0]["budget_total"]):
+                self.assertEqual((case[1], case[2]), (output["fixed_total_minor"], output["variable_minor"]))
+                self.assertAlmostEqual(case[3], output["per_day_minor"])
+                self.assertAlmostEqual(case[4], output["per_person_day_minor"])
+                for expected, row in zip(case[5], output["categories"], strict=True):
+                    self.assertAlmostEqual(expected, row["per_day_minor"])
+                self.assertEqual(["food", "transport", "tickets", "shopping"], [row["category"] for row in output["categories"]])
+        self.assertEqual("62.48", hero.money_text(outputs[0]["categories"][2]["per_day_minor"]))
+        self.assertEqual("0.00", hero.money_text(outputs[2]["per_day_minor"]))
+
+    def test_trip_budget_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"budget_total": "3000", "days": "5", "travelers": "2",
+                 "shares": {"food": "40", "transport": "20", "tickets": "25", "shopping": "15"},
+                 "items": [{"name": "Flights", "amount": "900"}]}
+        invalid = []
+        for value in ["0", "", "-1", "1.005", "100000000.01", "1e3", 3000, None, "  3"]:
+            invalid.append({**valid, "budget_total": value})
+        for field, values in (("days", ["0", "121", "", "1.5", "01", "-1", 5, None]),
+                              ("travelers", ["0", "21", "", "2.0", "02", 2, None])):
+            for value in values:
+                invalid.append({**valid, field: value})
+        for bad in ({"food": "40", "transport": "20", "tickets": "25", "shopping": "16"},
+                    {"food": "100", "transport": "0", "tickets": "0"},
+                    {"food": "50.5", "transport": "49.5", "tickets": "0", "shopping": "0"},
+                    {"food": "-10", "transport": "110", "tickets": "0", "shopping": "0"},
+                    {"food": "40", "transport": "20", "tickets": "25", "shopping": "15", "extra": "0"},
+                    {"food": 40, "transport": "20", "tickets": "25", "shopping": "15"}):
+            invalid.append({**valid, "shares": bad})
+        for field, values in (("amount", ["-1", "", "1,50", "2.123", "100000000.01", 900, None]),
+                              ("name", ["", " ", "line\nbreak", "\x00", "a" * 121, None])):
+            for value in values:
+                item = copy.deepcopy(valid)
+                item["items"][0][field] = value
+                invalid.append(item)
+        invalid += [
+            {**valid, "items": valid["items"] * 16},
+            {**valid, "items": [{"name": "Hotel", "amount": "3000.01"}]},
+            {**valid, "currency": "not accepted"},
+            {**valid, "items": [{**valid["items"][0], "paid": "not accepted"}]},
+        ]
+        errors = self.trip_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_trip_budget_csv_is_localized_formula_safe_and_reconciles(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[5], "ja")
+        data = {"budget_total": "1000", "days": "4", "travelers": "2",
+                "shares": {"food": "50", "transport": "30", "tickets": "20", "shopping": "0"},
+                "items": [{"name": "=1+1", "amount": "200"}, {"name": "\u200f@cmd", "amount": "0.50"},
+                          {"name": 'Comma, "quote"', "amount": "0"}]}
+        result = self.trip_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual([labels["item"], labels["amount"], labels["share"], labels["per_day"], labels["per_person_day"]], rows[0])
+        self.assertEqual([labels["budget"], "1000.00", "", "", ""], rows[1])
+        self.assertEqual({"'=1+1", "'\u200f@cmd", 'Comma, "quote"'}, {row[0] for row in rows[4:7]})
+        self.assertEqual([labels["fixed"], "200.50", "", "", ""], rows[7])
+        self.assertEqual([labels["variable"], "799.50", "100%", "199.88", "99.94"], rows[8])
+        self.assertEqual([labels["food"], "", "50%", "99.94", "49.97"], rows[9])
+        self.assertEqual([labels["shopping"], "", "0%", "0.00", "0.00"], rows[12])
+        with self.assertRaises(AssertionError):
+            self.trip_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
+
+    def itinerary_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "day-itinerary-v1"}):
+            return self.adapter_node(hero.ITINERARY_CORE, script, payload)
+
+    def outline_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "one-page-outline-v1"}):
+            return self.adapter_node(hero.OUTLINE_CORE, script, payload)
+
+    def test_itinerary_table_driven_midnight_marker_and_overrun(self):
+        stops = lambda *pairs: [{"name": f"stop {index}", "stay_min": stay, "travel_min": travel}
+                                for index, (stay, travel) in enumerate(pairs)]
+        cases = [
+            ({"start_time": "09:00", "end_time": "18:00", "items": stops(("120", "25"), ("60", "40"), ("180", "30"))},
+             [(540, 660), (685, 745), (785, 965)], 455, 540, -85, "fits"),
+            # An end before the start is the next day; landing exactly on the end still fits.
+            ({"start_time": "22:00", "end_time": "02:00", "items": stops(("90", "30"), ("120", "0"))},
+             [(1320, 1410), (1440, 1560)], 240, 240, 0, "fits"),
+            ({"start_time": "09:00", "end_time": "10:00", "items": stops(("60", "10"), ("5", "0"))},
+             [(540, 600), (610, 615)], 75, 60, 15, "overrun"),
+            ({"start_time": "00:00", "end_time": "23:59", "items": stops(*[("720", "600")] * 25)},
+             None, 33000, 1439, 31561, "overrun"),
+        ]
+        outputs = self.itinerary_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(start=case[0]["start_time"], end=case[0]["end_time"]):
+                if case[1] is not None:
+                    self.assertEqual(case[1], [(item["arrive_min"], item["leave_min"]) for item in output["items"]])
+                self.assertEqual(case[2:], (output["total_min"], output["available_min"], output["overrun_min"], output["status"]))
+                self.assertEqual(list(range(1, len(case[0]["items"]) + 1)), [item["order"] for item in output["items"]])
+        self.assertEqual(("00:00 +1", "02:00 +1", "23:59", "12:00 +22"),
+                         (hero.clock_text(1440), hero.clock_text(1560), hero.clock_text(1439), hero.clock_text(32400)))
+        self.assertEqual((31680, 32400), (outputs[3]["items"][24]["arrive_min"], outputs[3]["items"][24]["leave_min"]))
+
+    def test_itinerary_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"start_time": "09:00", "end_time": "18:00",
+                 "items": [{"name": "Museum", "stay_min": "120", "travel_min": "25"}]}
+        invalid = []
+        for field in ("start_time", "end_time"):
+            for value in ["9:00", "24:00", "09:60", "", "09:00:00", " 09:00", "9am", 540, None]:
+                invalid.append({**valid, field: value})
+        invalid.append({**valid, "end_time": "09:00"})
+        for field, values in (("stay_min", ["4", "721", "", "60.5", "-5", "060", " 60", 60, None]),
+                              ("travel_min", ["601", "", "-1", "1.5", "01", 15, None]),
+                              ("name", ["", " ", "line\nbreak", "\x00", "a" * 121, None])):
+            for value in values:
+                item = copy.deepcopy(valid)
+                item["items"][0][field] = value
+                invalid.append(item)
+        invalid += [
+            {**valid, "items": []},
+            {**valid, "items": valid["items"] * 26},
+            {**valid, "date": "not accepted"},
+            {**valid, "items": [{**valid["items"][0], "opens_at": "not accepted"}]},
+        ]
+        errors = self.itinerary_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_itinerary_csv_is_localized_formula_safe_and_keeps_clock_marker(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[6], "ja")
+        data = {"start_time": "09:00", "end_time": "18:00", "items": [
+            {"name": "=1+1", "stay_min": "120", "travel_min": "25"},
+            {"name": "\u200f@cmd", "stay_min": "60", "travel_min": "40"},
+            {"name": 'Comma, "quote"', "stay_min": "180", "travel_min": "30"},
+        ]}
+        result = self.itinerary_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual([labels[key] for key in ("order", "place", "arrive", "leave", "stay", "travel")], rows[0])
+        self.assertEqual(["1", "'=1+1", "09:00", "11:00", "120", "25"], rows[1])
+        self.assertEqual(["2", "'\u200f@cmd", "11:25", "12:25", "60", "40"], rows[2])
+        self.assertEqual(["3", 'Comma, "quote"', "13:05", "16:05", "180", "30"], rows[3])
+        self.assertEqual([labels["total"], "", "", "", "455", ""], rows[4])
+        self.assertEqual([labels["available"], "", "09:00", "18:00", "540", ""], rows[5])
+        # Negative overrun stays a plain number rather than being quoted as a formula.
+        self.assertEqual([labels["overrun"], "", "", "", "-85", ""], rows[6])
+        self.assertEqual([labels["status"], labels["status_fits"], "", "", "", ""], rows[7])
+        night = self.itinerary_node(self.CSV, {"input": {**data, "start_time": "22:00", "end_time": "02:00"}, "labels": labels})
+        night_rows = list(csv.reader(io.StringIO(night.removeprefix("\ufeff"))))
+        self.assertEqual(["1", "'=1+1", "22:00", "00:00 +1", "120", "25"], night_rows[1])
+        self.assertEqual([labels["available"], "", "22:00", "02:00 +1", "240", ""], night_rows[5])
+        self.assertEqual([labels["status"], labels["status_overrun"], "", "", "", ""], night_rows[7])
+        with self.assertRaises(AssertionError):
+            self.itinerary_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
+
+    def test_outline_keeps_text_verbatim_orders_sections_and_never_scores(self):
+        cases = [
+            ({"headline": "  Ship it  ", "points": ["a", " b ", "c"], "action": "go", "metric": "3rd"},
+             "Ship it", ["a", "b", "c"], "go", "3rd", ["headline", "point", "point", "point", "action", "metric"]),
+            ({"headline": "h", "points": ["p"] * 12, "action": "x" * 160, "metric": ""},
+             "h", ["p"] * 12, "x" * 160, None, ["headline"] + ["point"] * 12 + ["action"]),
+        ]
+        outputs = self.outline_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(headline=case[1]):
+                self.assertEqual(case[1], output["headline"])
+                self.assertEqual(case[2], [point["text"] for point in output["points"]])
+                self.assertEqual(list(range(1, len(case[2]) + 1)), [point["order"] for point in output["points"]])
+                self.assertEqual((case[3], case[4], len(case[2])), (output["action"], output["metric"], output["point_count"]))
+                self.assertEqual(case[5], [row["section"] for row in output["sections"]])
+                self.assertNotIn("score", json.dumps(output))
+        self.assertEqual([1, 1, 2, 3, 1, 1], [row["order"] for row in outputs[0]["sections"]])
+        self.assertEqual("3rd", outputs[0]["sections"][-1]["text"])
+
+    def test_outline_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"headline": "Ship it", "points": ["a", "b", "c"], "action": "go", "metric": ""}
+        invalid = []
+        for value in ["", "   ", "a" * 81, "line\nbreak", "\x00", 1, None]:
+            invalid.append({**valid, "headline": value})
+        for value in [["a", "b"], ["a"] * 13, ["a", "b", ""], ["a", "b", "a" * 161], ["a", "b", None], "a b c", None]:
+            invalid.append({**valid, "points": value})
+        for value in ["", "a" * 161, None]:
+            invalid.append({**valid, "action": value})
+        for value in ["a" * 61, "line\nbreak", None, 48]:
+            invalid.append({**valid, "metric": value})
+        invalid += [
+            {**valid, "audience": "not accepted"},
+            {key: value for key, value in valid.items() if key != "metric"},
+        ]
+        errors = self.outline_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_outline_csv_is_localized_and_formula_safe_for_prose(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[7], "ja")
+        data = {"headline": "=1+1", "points": ["+SUM(A1)", "\u200f@cmd", 'Comma, "quote"'], "action": "-x", "metric": "-3%"}
+        result = self.outline_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual([labels["section"], labels["order"], labels["text"]], rows[0])
+        self.assertEqual([labels["headline"], "1", "'=1+1"], rows[1])
+        self.assertEqual([labels["point"], "1", "'+SUM(A1)"], rows[2])
+        self.assertEqual([labels["point"], "2", "'\u200f@cmd"], rows[3])
+        self.assertEqual([labels["point"], "3", 'Comma, "quote"'], rows[4])
+        self.assertEqual([labels["action"], "1", "'-x"], rows[5])
+        # A negative percentage is a number, not a formula, so it is not quoted.
+        self.assertEqual([labels["metric"], "1", "-3%"], rows[6])
+        self.assertEqual(7, len(rows))
+        with self.assertRaises(AssertionError):
+            self.outline_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
+
+    def test_bandwidth_table_driven_tenths_headroom_and_status(self):
+        rows = lambda *pairs: [{"name": f"row {index}", "activity": activity, "devices": devices}
+                               for index, (activity, devices) in enumerate(pairs)]
+        cases = [
+            ({"plan_down_mbps": "100", "plan_up_mbps": "20",
+              "items": rows(("uhd_stream", "1"), ("video_call", "2"), ("browsing", "4"))},
+             250, 85, 750, 115, "ok", "ok", "ok"),
+            ({"plan_down_mbps": "30", "plan_up_mbps": "5", "items": rows(("hd_stream", "5"), ("cloud_backup", "1"))},
+             260, 75, 40, -25, "tight", "short", "short"),
+            ({"plan_down_mbps": "12.5", "plan_up_mbps": "1", "items": rows(("gaming", "3"), ("smart_home", "6"))},
+             120, 60, 5, -50, "tight", "short", "short"),
+            ({"plan_down_mbps": "0.5", "plan_up_mbps": "10000", "items": rows(("sd_stream", "1"))},
+             30, 5, -25, 99995, "short", "ok", "short"),
+            ({"plan_down_mbps": "10000", "plan_up_mbps": "10000", "items": rows(*[("uhd_stream", "50")] * 20)},
+             150000, 5000, -50000, 95000, "short", "ok", "short"),
+        ]
+        outputs = self.bandwidth_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(plan=case[0]["plan_down_mbps"]):
+                self.assertEqual(case[1:5], (output["need_down_tenths"], output["need_up_tenths"],
+                                             output["headroom_down_tenths"], output["headroom_up_tenths"]))
+                self.assertEqual(case[5:8], (output["status_down"], output["status_up"], output["status"]))
+                self.assertTrue(all(isinstance(item["total_down_tenths"], int) for item in output["items"]))
+        self.assertEqual(("25.0", "-2.5", "9999.5"), (hero.mbps_text(250), hero.mbps_text(-25), hero.mbps_text(99995)))
+
+    def test_bandwidth_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"plan_down_mbps": "100", "plan_up_mbps": "20",
+                 "items": [{"name": "TV", "activity": "uhd_stream", "devices": "1"}]}
+        invalid = []
+        for field in ("plan_down_mbps", "plan_up_mbps"):
+            for value in ["", "0", "0.4", "10000.1", "1.25", "-1", "1e3", "NaN", " 5", "5,5", 100, None]:
+                invalid.append({**valid, field: value})
+        for field, values in (
+            ("devices", ["0", "51", "", "1.5", "-1", "01", " 2", 1, None]),
+            ("activity", ["streaming", "", None, 1, "SD_STREAM"]),
+            ("name", ["", " ", "line\nbreak", "\x00", "a" * 121, None]),
+        ):
+            for value in values:
+                item = copy.deepcopy(valid)
+                item["items"][0][field] = value
+                invalid.append(item)
+        invalid += [
+            {**valid, "items": []},
+            {**valid, "items": valid["items"] * 21},
+            {**valid, "currency": "not accepted"},
+            {**valid, "items": [{**valid["items"][0], "latency": "not accepted"}]},
+        ]
+        errors = self.bandwidth_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_bandwidth_csv_is_localized_formula_safe_and_keeps_negative_headroom_numeric(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[4], "ja")
+        data = {"plan_down_mbps": "10", "plan_up_mbps": "1", "items": [
+            {"name": "=1+1", "activity": "uhd_stream", "devices": "1"},
+            {"name": "+SUM(A1)", "activity": "video_call", "devices": "2"},
+            {"name": "\u200f@cmd", "activity": "cloud_backup", "devices": "1"},
+            {"name": 'Comma, "quote"', "activity": "browsing", "devices": "3"},
+        ]}
+        result = self.bandwidth_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual([labels["item"], labels["activity"], labels["devices"], labels["per_device_down"],
+                          labels["per_device_up"], labels["total_down"], labels["total_up"]], rows[0])
+        self.assertEqual({"'=1+1", "'+SUM(A1)", "'\u200f@cmd", 'Comma, "quote"'}, {row[0] for row in rows[1:5]})
+        self.assertEqual([labels["activity_uhd_stream"], "1", "15.0", "0.5", "15.0", "0.5"], rows[1][1:])
+        self.assertEqual([labels["need_down"], "", "", "", "", "25.0", ""], rows[5])
+        # 1 Mbps up against 13.0 Mbps of upload need: the negative stays a plain number.
+        self.assertEqual([labels["headroom"], "", "", "", "", "-15.0", "-12.0"], rows[9])
+        self.assertEqual([labels["status"], "", "", "", "", labels["status_short"], labels["status_short"]], rows[10])
+        with self.assertRaises(AssertionError):
+            self.bandwidth_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
 
     def test_profit_table_driven_exact_minor_units_margin_and_hourly_net(self):
         rows = lambda *pairs: [{"name": f"{kind} {index}", "kind": kind, "amount": amount}
@@ -823,12 +1141,14 @@ class HeroTaskTests(unittest.TestCase):
 
     def test_builds_fifty_real_results_not_per_app_doorways(self):
         report = hero.build(self.pages, **self.options)
-        self.assertEqual((200, 5, 1), (report["pages"], report["supported_apps"], report["unserved_apps"]))
+        self.assertEqual((400, 12, 1), (report["pages"], report["supported_apps"], report["unserved_apps"]))
         manifest = json.loads((self.pages / hero.MANIFEST).read_text())
-        self.assertEqual(200, len({row["url"] for row in manifest["records"]}))
-        self.assertEqual(250, manifest["app_locale_pairs"])
+        self.assertEqual(400, len({row["url"] for row in manifest["records"]}))
+        self.assertEqual(600, manifest["app_locale_pairs"])
         self.assertEqual(["unserved"], manifest["unserved_app_keys"])
-        maintenance, profit, battery = self.tasks[1], self.tasks[2], self.tasks[3]
+        maintenance, profit, battery, bandwidth, trip, itinerary, outline = (
+            self.tasks[1], self.tasks[2], self.tasks[3], self.tasks[4], self.tasks[5], self.tasks[6], self.tasks[7]
+        )
         for record in manifest["records"]:
             locale = record["locale"]
             with self.subTest(locale=locale, task=record["task_id"]):
@@ -837,7 +1157,7 @@ class HeroTaskTests(unittest.TestCase):
                 self.assertIn(f'href="{record["url"]}"', document)
                 self.assertEqual(51, document.count('hreflang="'))
                 self.assertIn("connect-src 'none'", document)
-                self.assertIn('data-field="name"', document)
+                self.assertRegex(document, r'data-field="(name|point)"')
                 self.assertNotIn("noindex", document)
                 feed = json.loads((self.pages / hero.feed_path(locale)).read_text())
                 self.assertEqual(locale, feed["language"])
@@ -890,6 +1210,82 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertEqual(record["url"], feed["items"][3]["id"])
                     self.assertEqual(own["title"], feed["items"][3]["title"])
                     self.assertEqual(1, len(feed["items"][3]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "bandwidth-need":
+                    own = hero.task_copy(self.copy, self.task_copies, bandwidth, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    for value in ("25.0", "8.5", "75.0", "11.5", own["status_ok"], own["approx_note"],
+                                  own["activity_uhd_stream"]):
+                        self.assertIn(value, document)
+                    self.assertIn('id="bandwidth-rows"', document)
+                    self.assertIn('id="status-total" data-status="ok"', document)
+                    # The free door (WiFi Aid Lite) is listed before the paid sibling.
+                    self.assertLess(document.index("id6793414462"), document.index("id6790467886"))
+                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    example = (self.pages / hero.example_path(bandwidth, locale)).read_text()
+                    self.assertIn(own["status_ok"], example)
+                    self.assertIn("25.0", example)
+                    self.assertIn(own["activity_video_call"], example)
+                    self.assertEqual(record["url"], feed["items"][4]["id"])
+                    self.assertEqual(own["title"], feed["items"][4]["title"])
+                    self.assertEqual(2, len(feed["items"][4]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "trip-budget":
+                    own = hero.task_copy(self.copy, self.task_copies, trip, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    for value in ("1249.50", "249.90", "124.95", "99.96", "37.49", own["food"], own["shopping"]):
+                        self.assertIn(value, document)
+                    self.assertIn('id="fixed-rows"', document)
+                    self.assertIn('id="share-food"', document)
+                    # The free door (G+Money Lite) is listed before the paid sibling.
+                    self.assertLess(document.index("id6793436548"), document.index("id6755782939"))
+                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    example = (self.pages / hero.example_path(trip, locale)).read_text()
+                    self.assertIn(own["variable"], example)
+                    self.assertIn("124.95", example)
+                    self.assertIn("40%", example)
+                    self.assertEqual(record["url"], feed["items"][5]["id"])
+                    self.assertEqual(own["title"], feed["items"][5]["title"])
+                    self.assertEqual(2, len(feed["items"][5]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "day-itinerary":
+                    own = hero.task_copy(self.copy, self.task_copies, itinerary, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    for value in ("11:25", "13:05", "16:05", "455", "540", "-85", own["status_fits"], own["place"] + " 3"):
+                        self.assertIn(value, document)
+                    self.assertIn('id="stop-rows"', document)
+                    self.assertIn('id="status-total" data-status="fits"', document)
+                    # The free door (TripBee Lite) is listed before the paid sibling.
+                    self.assertLess(document.index("id6791299610"), document.index("id6787754435"))
+                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    example = (self.pages / hero.example_path(itinerary, locale)).read_text()
+                    self.assertIn(own["status_fits"], example)
+                    self.assertIn("13:05", example)
+                    self.assertIn(own["place"] + " 1", example)
+                    self.assertEqual(record["url"], feed["items"][6]["id"])
+                    self.assertEqual(own["title"], feed["items"][6]["title"])
+                    self.assertEqual(2, len(feed["items"][6]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "one-page-outline":
+                    own = hero.task_copy(self.copy, self.task_copies, outline, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    # The worked example is native prose, never the English registry text.
+                    for value in (own["example_headline"], own["example_point_2"], own["example_action"], own["example_metric"]):
+                        self.assertIn(html.escape(value), document)
+                    if not locale.startswith("en-"):
+                        self.assertNotIn(outline["example"]["headline"], document)
+                    self.assertIn('id="point-rows"', document)
+                    self.assertIn('id="preview-headline"', document)
+                    self.assertIn('id="point-count">3<', document)
+                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertIn("id6798814385", document)
+                    example = (self.pages / hero.example_path(outline, locale)).read_text()
+                    self.assertIn(own["headline"], example)
+                    self.assertIn(own["example_action"], example)
+                    self.assertIn(own["example_metric"], example)
+                    self.assertEqual(record["url"], feed["items"][7]["id"])
+                    self.assertEqual(own["title"], feed["items"][7]["title"])
+                    self.assertEqual(1, len(feed["items"][7]["_hero_task"]["optional_apps"]))
                 else:
                     self.assertEqual("maintenance-next-due", record["task_id"])
                     own = hero.task_copy(self.copy, self.task_copies, maintenance, locale)
@@ -907,10 +1303,10 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertEqual(own["title"], feed["items"][1]["title"])
                     self.assertEqual(1, len(feed["items"][1]["_hero_task"]["optional_apps"]))
         sitemap = ET.parse(self.pages / hero.SITEMAP)
-        self.assertEqual(200, len(sitemap.getroot()))
+        self.assertEqual(400, len(sitemap.getroot()))
         index = (self.pages / "sitemap_index.xml").read_text()
         self.assertEqual(1, index.count(hero.SITEMAP))
-        self.assertEqual(4, len(hero.english_feed_entries(self.pages)))
+        self.assertEqual(8, len(hero.english_feed_entries(self.pages)))
         with self.assertRaisesRegex(ValueError, "No reviewed"):
             hero.task_for_app(self.tasks, "unserved")
 
@@ -996,7 +1392,7 @@ class HeroTaskTests(unittest.TestCase):
             relative = url.removeprefix(base + "/")
             return (self.pages / relative).read_bytes()
         result = readback.verify(self.pages / hero.MANIFEST, base, fetcher=fetcher)
-        self.assertEqual(465, result["verified_artifacts"])
+        self.assertEqual(877, result["verified_artifacts"])
         target = self.pages / hero.example_path(self.tasks[0], "ko")
         target.write_text("wrong CDN bytes")
         with self.assertRaisesRegex(ValueError, "digest mismatch"):
@@ -1071,8 +1467,8 @@ class HeroTaskTests(unittest.TestCase):
         )
         self.assertEqual(0, process.returncode, process.stdout + process.stderr)
         self.assertIn('"locales":50', process.stdout)
-        self.assertIn('"records":200', process.stdout)
-        self.assertIn('"downloads":4', process.stdout)
+        self.assertIn('"records":400', process.stdout)
+        self.assertIn('"downloads":8', process.stdout)
 
 
 if __name__ == "__main__":

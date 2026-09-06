@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="trip-budget">
+<title>여행 하루 예산 배분 시트</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/trip-budget-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/trip-budget-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="무료 작업 결과">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="무료 작업 결과">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="무료 작업 결과">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/ko/tools/hero-tasks.feed.json" title="무료 작업 결과">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/e3c449c8351a7b16-hero-task-tripbudget.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html","name":"여행 하루 예산 배분 시트","description":"여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다.","inLanguage":"ko","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html#worked-example","name":"계산 예시","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/ko/tools/results/trip-budget-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html#howto","name":"여행 하루 예산 배분 시트","description":"여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다.","inLanguage":"ko","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"여행 하루 예산 배분 시트","url":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"자유롭게 쓸 금액 = 총예산 − 고정 비용. 하루 = 자유롭게 쓸 금액 ÷ 일수. 1인 하루 = 하루 ÷ 인원. 각 항목 = 하루 × 비율. 금액은 최소 단위 정수로 더하고, 하루 수치는 표시할 때만 반올림합니다."},{"@type":"HowToStep","position":2,"text":"금액 0~100,000,000, 소수 두 자리까지; 일수 1~120; 인원 1~20; 고정 비용 최대 15행; 네 비율의 합은 정확히 100. 같은 통화만 사용하며 환율, 가격·예약 조언은 다루지 않습니다."}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html#example-dataset","name":"계산 예시","description":"여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다.","inLanguage":"ko","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ko/tools/trip-budget-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/ko/tools/results/trip-budget-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"trip-budget-v1","slug":"trip-budget-sheet","locale":"ko","copy":{"title":"여행 하루 예산 배분 시트","intro":"여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다.","income":"실수령 시급","day":"하루 근무 시간","item":"항목","quantity":"수량","price":"세금 포함 단가","total":"합계","hours":"필요한 근무 시간","days":"일수","add":"고정 비용 추가","remove":"삭제","download":"내 CSV 다운로드","reset":"예시로 초기화","example":"계산 예시","example_note":"예산 3000, 5일, 2명, 항공권 900과 숙소 850.50: 자유롭게 쓸 금액 1249.50, 하루 249.90, 1인 하루 124.95이며 40 / 20 / 25 / 15로 배분됩니다.","formula":"자유롭게 쓸 금액 = 총예산 − 고정 비용. 하루 = 자유롭게 쓸 금액 ÷ 일수. 1인 하루 = 하루 ÷ 인원. 각 항목 = 하루 × 비율. 금액은 최소 단위 정수로 더하고, 하루 수치는 표시할 때만 반올림합니다.","limits":"금액 0~100,000,000, 소수 두 자리까지; 일수 1~120; 인원 1~20; 고정 비용 최대 15행; 네 비율의 합은 정확히 100. 같은 통화만 사용하며 환율, 가격·예약 조언은 다루지 않습니다.","privacy":"입력은 이 탭에만 머뭅니다. 업로드, 계정, 입력 추적이나 데이터 저장이 없습니다. 새로고침하면 수정 내용이 지워집니다.","optional":"선택 사항인 앱","optional_note":"이 무료 비교표는 앱 없이 사용할 수 있습니다. 최신 기능과 가격은 각 App Store 페이지에서 확인하세요.","error":"0보다 큰 예산, 정수 일수와 인원, 합이 100인 네 비율, 각 고정 비용에 소수 두 자리까지의 금액을 입력하세요.","row_limit":"고정 비용 최대 15행.","tools":"무료 도구","method":"계산식과 한계","sources":"출처","result":"나의 여행 예산 시트","disclosure":"선택 사항인 앱의 개발사 Lumi Studio가 제공합니다. 독립적인 순위가 아닙니다.","download_example":"예시 CSV 다운로드","feed":"무료 작업 결과","budget":"총예산","travelers":"인원","fixed":"고정 비용","amount":"금액","share":"비율","food":"식비","transport":"교통","tickets":"입장권","shopping":"쇼핑","per_day":"하루","per_person_day":"1인 하루","variable":"자유롭게 쓸 금액"},"example":{"budget_total":"3000","days":"5","travelers":"2","shares":{"food":"40","transport":"20","tickets":"25","shopping":"15"},"items":[{"amount":"900","name":"항목 1"},{"amount":"850.50","name":"항목 2"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/4e45de7eb579eb7d-hero-task-tripbudget-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/24a8ee9743fdeab8-hero-task-tripbudget-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/ko/tools/index.html">무료 도구</a><span>Lumi Studio</span></nav>
+<h1>여행 하루 예산 배분 시트</h1><p>여행 총예산, 일수, 인원과 이미 정해진 고정 비용을 입력하면 1인당 하루에 쓸 수 있는 금액과 식비·교통·입장권·쇼핑 배분을 시트로 내려받을 수 있습니다.</p>
+<section class="panel" aria-label="여행 하루 예산 배분 시트">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields trip-fields">
+<div><label for="budget-total">총예산</label><input id="budget-total" type="text" inputmode="decimal" maxlength="12" value="3000" required autocomplete="off"></div>
+<div><label for="trip-days">일수</label><input id="trip-days" type="text" inputmode="numeric" maxlength="3" value="5" required autocomplete="off"></div>
+<div><label for="travelers">인원</label><input id="travelers" type="text" inputmode="numeric" maxlength="2" value="2" required autocomplete="off"></div>
+</div>
+<div class="shares" aria-label="비율"><div><label for="share-food">식비 (%)</label><input id="share-food" type="text" inputmode="numeric" maxlength="3" value="40" required autocomplete="off"></div><div><label for="share-transport">교통 (%)</label><input id="share-transport" type="text" inputmode="numeric" maxlength="3" value="20" required autocomplete="off"></div><div><label for="share-tickets">입장권 (%)</label><input id="share-tickets" type="text" inputmode="numeric" maxlength="3" value="25" required autocomplete="off"></div><div><label for="share-shopping">쇼핑 (%)</label><input id="share-shopping" type="text" inputmode="numeric" maxlength="3" value="15" required autocomplete="off"></div></div>
+<p class="output-label">고정 비용</p>
+<div id="fixed-rows"><div class="fixed-row"><div class="name-field"><label data-label="name" for="row-1-name">항목</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="항목 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">금액</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="900" required autocomplete="off"></div><button type="button" data-remove aria-label="삭제 · 항목 1">삭제</button></div><div class="fixed-row"><div class="name-field"><label data-label="name" for="row-2-name">항목</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="항목 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">금액</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="850.50" required autocomplete="off"></div><button type="button" data-remove aria-label="삭제 · 항목 2">삭제</button></div></div>
+<template id="fixed-template"><div class="fixed-row"><div class="name-field"><label data-label="name" for="row-0-name">항목</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">금액</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><button type="button" data-remove aria-label="삭제 · ">삭제</button></div></template>
+<div class="actions"><button type="button" id="add-fixed">고정 비용 추가</button><span class="small">고정 비용 최대 15행.</span></div>
+<div class="totals trip-totals" aria-label="나의 여행 예산 시트">
+<div><p>고정 비용</p><output class="total-value" id="fixed-total">1750.50</output></div><div><p>자유롭게 쓸 금액</p><output class="total-value" id="variable-total">1249.50</output></div><div><p>하루</p><output class="total-value" id="per-day">249.90</output></div><div><p>1인 하루</p><output class="total-value" id="per-person-day">124.95</output></div>
+</div>
+<div class="category-split" aria-label="비율"><div><p>식비 · 40%</p><output data-output="day" id="day-food">99.96</output><output data-output="person" id="person-food">49.98</output></div><div><p>교통 · 20%</p><output data-output="day" id="day-transport">49.98</output><output data-output="person" id="person-transport">24.99</output></div><div><p>입장권 · 25%</p><output data-output="day" id="day-tickets">62.48</output><output data-output="person" id="person-tickets">31.24</output></div><div><p>쇼핑 · 15%</p><output data-output="day" id="day-shopping">37.49</output><output data-output="person" id="person-shopping">18.74</output></div></div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>내 CSV 다운로드</button><button type="button" id="reset-example">예시로 초기화</button></div>
+</fieldset></form><p class="small">입력은 이 탭에만 머뭅니다. 업로드, 계정, 입력 추적이나 데이터 저장이 없습니다. 새로고침하면 수정 내용이 지워집니다.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>계산 예시</h2><p>예산 3000, 5일, 2명, 항공권 900과 숙소 850.50: 자유롭게 쓸 금액 1249.50, 하루 249.90, 1인 하루 124.95이며 40 / 20 / 25 / 15로 배분됩니다.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">항목</th><th scope="col">금액</th><th scope="col">비율</th><th scope="col">하루</th><th scope="col">1인 하루</th></tr></thead><tbody><tr><td>항목 1</td><td>900.00</td><td></td><td></td><td></td></tr><tr><td>항목 2</td><td>850.50</td><td></td><td></td><td></td></tr><tr><td>식비</td><td></td><td>40%</td><td>99.96</td><td>49.98</td></tr><tr><td>교통</td><td></td><td>20%</td><td>49.98</td><td>24.99</td></tr><tr><td>입장권</td><td></td><td>25%</td><td>62.48</td><td>31.24</td></tr><tr><td>쇼핑</td><td></td><td>15%</td><td>37.49</td><td>18.74</td></tr></tbody><tfoot><tr class="example-total"><td>고정 비용</td><td>1750.50</td><td></td><td></td><td></td></tr><tr class="example-total"><td>자유롭게 쓸 금액</td><td>1249.50</td><td>100%</td><td>249.90</td><td>124.95</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/ko/tools/results/trip-budget-sheet.csv" download>예시 CSV 다운로드</a>
+<h2>계산식과 한계</h2><p>자유롭게 쓸 금액 = 총예산 − 고정 비용. 하루 = 자유롭게 쓸 금액 ÷ 일수. 1인 하루 = 하루 ÷ 인원. 각 항목 = 하루 × 비율. 금액은 최소 단위 정수로 더하고, 하루 수치는 표시할 때만 반올림합니다.</p>
+<pre class="formula">고정 비용 = 1750.50
+자유롭게 쓸 금액 = 3000.00 − 1750.50 = 1249.50
+하루 = 1249.50 ÷ 5 = 249.90
+1인 하루 = 249.90 ÷ 2 = 124.95
+식비 = 249.90 × 40% = 99.96
+교통 = 249.90 × 20% = 49.98
+입장권 = 249.90 × 25% = 62.48
+쇼핑 = 249.90 × 15% = 37.49</pre>
+<p>금액 0~100,000,000, 소수 두 자리까지; 일수 1~120; 인원 1~20; 고정 비용 최대 15행; 네 비율의 합은 정확히 100. 같은 통화만 사용하며 환율, 가격·예약 조언은 다루지 않습니다.</p>
+<ul class="small">
+<li>총예산 / 금액: <bdi dir="ltr">0 ≤ x ≤ 100,000,000</bdi></li>
+<li>일수: <bdi dir="ltr">1 ≤ d ≤ 120</bdi></li>
+<li>인원: <bdi dir="ltr">1 ≤ p ≤ 20</bdi></li>
+<li>비율: <bdi dir="ltr">Σ = 100%</bdi></li>
+<li>고정 비용: <bdi dir="ltr">0 ≤ n ≤ 15</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>선택 사항인 앱</h2><p>이 무료 비교표는 앱 없이 사용할 수 있습니다. 최신 기능과 가격은 각 App Store 페이지에서 확인하세요.</p><div class="actions"><a class="button" href="https://apps.apple.com/kr/app/id6793436548?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store에서 G+Money Lite 받기 →</a><a class="button" href="https://apps.apple.com/kr/app/id6755782939?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">앱 스토어에서 G+Money 받기 →</a></div></section>
+<footer><p>선택 사항인 앱의 개발사 Lumi Studio가 제공합니다. 독립적인 순위가 아닙니다.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">출처</a> · <a href="https://open.cait518.cc/ios-app-guide/ko/tools/hero-tasks.feed.json">무료 작업 결과</a></footer>
+</main></body></html>

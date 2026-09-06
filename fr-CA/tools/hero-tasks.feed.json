@@ -111,6 +111,118 @@
       "language": "fr-CA",
       "title": "Fiche d'usure de batterie",
       "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 583,
+          "title": "Télécharger le CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Listez ce que votre maisonnée fait en ligne en même temps et le nombre d'appareils, puis téléchargez un tableau avec les Mbps requis et la marge qui reste sur votre forfait. Total d'une ligne = appareils × valeur par appareil. Requis = somme des lignes. Marge = forfait − requis; sous 20 % du forfait c'est serré, sous zéro c'est insuffisant. On additionne des dixièmes de Mbps entiers, les totaux ne dérivent jamais. Vitesses du forfait de 0,5 à 10000 Mbps avec au plus une décimale, 1 à 50 appareils par ligne, jusqu'à 20 lignes. La couverture Wi‑Fi, la latence et la vitesse réellement livrée ne font pas partie de ce tableau.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/bandwidth-need-sheet.html",
+      "language": "fr-CA",
+      "title": "Bande passante pour la maison",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 447,
+          "title": "Télécharger le CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Entrez le budget total du voyage, les jours, les voyageurs et les dépenses déjà connues, puis téléchargez un tableau avec ce que chaque personne peut dépenser par jour et la répartition entre repas, transport, billets et magasinage. Reste à dépenser = budget total − dépenses fixes. Par jour = reste à dépenser ÷ jours. Par personne par jour = par jour ÷ voyageurs. Chaque catégorie = par jour × sa part. Les montants s'additionnent en cents entiers; les valeurs quotidiennes ne sont arrondies qu'à l'affichage. Montants de 0 à 100 000 000 avec au plus deux décimales, 1 à 120 jours, 1 à 20 voyageurs, jusqu'à 15 dépenses fixes, quatre parts dont la somme est exactement 100. Même devise partout, aucun taux de change, aucun conseil de prix ou de réservation.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/trip-budget-sheet.html",
+      "language": "fr-CA",
+      "title": "Budget de voyage par jour",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 380,
+          "title": "Télécharger le CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Listez les endroits d'une journée avec le temps sur place et le temps de déplacement vers le suivant, puis téléchargez un tableau avec les heures d'arrivée et de départ qui indique si tout tient entre votre début et votre fin. Arrivée = départ précédent + déplacement. Départ = arrivée + sur place. Total = tout le temps sur place + tous les déplacements. Disponible = fin − début; une fin avant le début compte pour le lendemain. Dépassement = total − disponible; au-dessus de zéro, c'est trop long. Simple calcul en minutes, sans fuseaux horaires. Heures en format 24 h HH:MM, temps sur place de 5 à 720 minutes, déplacements de 0 à 600 minutes, jusqu'à 25 endroits. Heures d'ouverture, circulation réelle, cartes, itinéraires et réservations ne font pas partie de ce tableau.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/day-itinerary-sheet.html",
+      "language": "fr-CA",
+      "title": "Feuille horaire d'une journée",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 392,
+          "title": "Télécharger le CSV d'exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Transformez des notes de réunion en vrac en plan d'une page : un titre, de trois à douze points clés, une prochaine action et un indicateur facultatif, puis téléchargez le tout en tableau à coller dans une diapositive ou un résumé. Le tableau garde vos mots tels quels : le titre, puis les points dans l'ordre saisi, puis la prochaine action, puis l'indicateur. Il compte les points et enlève les espaces autour; rien n'est réécrit, résumé ou noté. Titre d'au plus 80 caractères, de 3 à 12 points d'au plus 160 caractères chacun, prochaine action d'au plus 160 caractères, indicateur d'au plus 60 caractères. Chaque ligne doit tenir sur une seule ligne. Le tableau ne lit ni fichiers, ni enregistrements, ni calendriers.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/one-page-outline-sheet.html",
+      "language": "fr-CA",
+      "title": "Réunion en plan d'une page",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "fr-CA",

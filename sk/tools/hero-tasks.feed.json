@@ -111,6 +111,118 @@
       "language": "sk",
       "title": "Rozsah opotrebenia batérie",
       "url": "https://open.cait518.cc/ios-app-guide/sk/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 570,
+          "title": "Stiahnuť ukážkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Spíšte, čo doma robíte online naraz a na koľkých zariadeniach, a stiahnite si tabuľku s potrebnými Mb/s a rezervou, ktorá vám v paušáli zostáva. Spolu v riadku = zariadenia × hodnota na zariadenie. Potreba = súčet riadkov. Rezerva = paušál − potreba; pod 20 % paušálu je to tesné, pod nulou nestačí. Sčíta sa v celých desatinách Mb/s, súčty sa nikdy nerozídu. Rýchlosti paušálu 0,5 až 10000 Mb/s s najviac jedným desatinným miestom, 1 až 50 zariadení na riadok, najviac 20 riadkov. Pokrytie Wi‑Fi, odozva a skutočne dodávaná rýchlosť do tabuľky nepatria.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/bandwidth-need-sheet.html",
+      "language": "sk",
+      "title": "Potrebná rýchlosť internetu doma",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 442,
+          "title": "Stiahnuť ukážkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Zadajte celkový rozpočet cesty, dni, cestujúcich a náklady, ktoré už poznáte, a stiahnite si tabuľku s tým, koľko môže každý minúť za deň a ako sa to delí medzi jedlo, dopravu, vstupenky a nákupy. Na minutie = celkový rozpočet − pevné náklady. Na deň = na minutie ÷ dni. Na osobu a deň = na deň ÷ cestujúci. Každá kategória = na deň × jej podiel. Sumy sa sčítavajú v celých centoch; denné hodnoty sa zaokrúhľujú len pri zobrazení. Sumy 0 až 100 000 000 s najviac dvoma desatinnými miestami, 1 až 120 dní, 1 až 20 cestujúcich, najviac 15 pevných nákladov, štyri podiely, ktoré dávajú presne 100. Všade rovnaká mena, žiadne kurzy, žiadne rady k cenám ani rezerváciám.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/trip-budget-sheet.html",
+      "language": "sk",
+      "title": "Cestovný rozpočet na deň",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 357,
+          "title": "Stiahnuť ukážkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Spíšte miesta jedného dňa s tým, ako dlho tam ostanete a ako dlho trvá cesta k ďalšiemu, a stiahnite si tabuľku s časmi príchodu a odchodu, ktorá ukáže, či sa všetko zmestí medzi váš začiatok a koniec. Príchod = predchádzajúci odchod + cesta. Odchod = príchod + pobyt. Spolu = všetky pobyty + všetky cesty. K dispozícii = koniec − začiatok; koniec skorší než začiatok sa počíta ako ďalší deň. Presah = spolu − k dispozícii; čokoľvek nad nulou preťahuje. Čistá minútová aritmetika, žiadne časové pásma. Časy v 24-hodinovom formáte HH:MM, pobyty 5 až 720 minút, cesty 0 až 600 minút, najviac 25 miest. Otváracie hodiny, skutočná premávka, mapy, trasovanie a rezervácie do tabuľky nepatria.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/day-itinerary-sheet.html",
+      "language": "sk",
+      "title": "Časový plán jedného dňa",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sk/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 321,
+          "title": "Stiahnuť ukážkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/sk/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Premeňte neusporiadané poznámky zo stretnutia na jednostranovú osnovu: jeden titulok, tri až dvanásť kľúčových bodov, jeden ďalší krok a voliteľnú metriku, a stiahnite si to ako tabuľku, ktorú vložíte do snímky alebo zhrnutia. Tabuľka zachováva vaše slová tak, ako sú: titulok, potom body v poradí, v akom ste ich napísali, potom ďalší krok a nakoniec metrika. Spočíta body a odstráni medzery na okrajoch; nič sa neprepisuje, nezhŕňa ani nehodnotí. Titulok do 80 znakov, 3 až 12 bodov po najviac 160 znakov, ďalší krok do 160 znakov, metrika do 60 znakov. Každý riadok musí byť jednoriadkový text. Tabuľka nečíta súbory, nahrávky ani kalendáre.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/sk/tools/one-page-outline-sheet.html",
+      "language": "sk",
+      "title": "Zo stretnutia na jednu stranu",
+      "url": "https://open.cait518.cc/ios-app-guide/sk/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "sk",

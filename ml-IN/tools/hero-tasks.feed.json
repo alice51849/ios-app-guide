@@ -111,6 +111,118 @@
       "language": "ml-IN",
       "title": "ബാറ്ററി തേയ്മാന ശ്രേണി ഷീറ്റ്",
       "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 932,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "വീട്ടിൽ ഒരേ സമയം ഓൺലൈനിൽ എന്തൊക്കെ നടക്കുന്നു, എത്ര ഉപകരണങ്ങളിൽ എന്ന് എഴുതുക; ആവശ്യമായ Mbps-ഉം നിങ്ങളുടെ പ്ലാനിൽ ബാക്കിയുള്ള മാർജിനും ഉള്ള ഷീറ്റ് ഡൗൺലോഡ് ചെയ്യുക. വരിയുടെ ആകെ = ഉപകരണങ്ങൾ × ഓരോ ഉപകരണ മൂല്യം. ആവശ്യം = വരികളുടെ തുക. മാർജിൻ = പ്ലാൻ − ആവശ്യം; പ്ലാനിന്റെ 20%-ൽ താഴെയെങ്കിൽ ഇറുകിയത്, പൂജ്യത്തിനു താഴെയെങ്കിൽ പോരാ. പൂർണ പത്തിലൊന്ന് Mbps യൂണിറ്റിൽ കൂട്ടുന്നതിനാൽ തുകകൾ ഒരിക്കലും തെറ്റുന്നില്ല. പ്ലാൻ വേഗം 0.5 മുതൽ 10000 Mbps വരെ, പരമാവധി ഒരു ദശാംശം; ഓരോ വരിയിലും 1 മുതൽ 50 ഉപകരണങ്ങൾ; പരമാവധി 20 വരികൾ. Wi‑Fi കവറേജ്, ലേറ്റൻസി, ദാതാവ് യഥാർഥത്തിൽ നൽകുന്ന വേഗം എന്നിവ ഈ ഷീറ്റിന്റെ പരിധിക്കു പുറത്താണ്.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/bandwidth-need-sheet.html",
+      "language": "ml-IN",
+      "title": "വീട്ടിലെ ഇന്റർനെറ്റ് വേഗ ഷീറ്റ്",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 705,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "യാത്രയുടെ മൊത്തം ബജറ്റ്, ദിവസങ്ങൾ, യാത്രക്കാർ, ഇപ്പോൾ അറിയാവുന്ന ചെലവുകൾ എന്നിവ നൽകുക; ഓരോരുത്തർക്കും ദിവസം എത്ര ചെലവഴിക്കാം, അത് ഭക്ഷണം, യാത്ര, ടിക്കറ്റ്, ഷോപ്പിംഗ് എന്നിങ്ങനെ എങ്ങനെ വിഭജിക്കപ്പെടുന്നു എന്ന ഷീറ്റ് ഡൗൺലോഡ് ചെയ്യുക. ചെലവഴിക്കാൻ ബാക്കി = മൊത്തം ബജറ്റ് − സ്ഥിര ചെലവുകൾ. ദിവസത്തിന് = ബാക്കി ÷ ദിവസങ്ങൾ. ഒരാൾക്ക് ദിവസത്തിന് = ദിവസത്തിന് ÷ യാത്രക്കാർ. ഓരോ വിഭാഗവും = ദിവസത്തിന് × അതിന്റെ പങ്ക്. തുകകൾ പൂർണ പൈസയിൽ കൂട്ടുന്നു; ദിവസ കണക്കുകൾ കാണിക്കുമ്പോൾ മാത്രം റൗണ്ട് ചെയ്യുന്നു. തുക 0 മുതൽ 100,000,000 വരെ, പരമാവധി രണ്ട് ദശാംശം; 1 മുതൽ 120 ദിവസം; 1 മുതൽ 20 യാത്രക്കാർ; പരമാവധി 15 സ്ഥിര ചെലവുകൾ; നാല് പങ്കുകളുടെ ആകെത്തുക കൃത്യം 100. എല്ലായിടത്തും ഒരേ കറൻസി, വിനിമയ നിരക്കില്ല, വില അല്ലെങ്കിൽ ബുക്കിംഗ് ഉപദേശമില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/trip-budget-sheet.html",
+      "language": "ml-IN",
+      "title": "യാത്രയുടെ ദിവസ ബജറ്റ് ഷീറ്റ്",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 628,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ഒരു ദിവസം പോകാനുള്ള സ്ഥലങ്ങൾ, ഓരോയിടത്തും എത്ര നേരം നിൽക്കും, അടുത്ത സ്ഥലത്തേക്ക് എത്താൻ എത്ര സമയം എന്നിവ എഴുതുക; എത്തുന്ന／പുറപ്പെടുന്ന സമയങ്ങളോടെ, എല്ലാം നിങ്ങളുടെ തുടക്കത്തിനും അവസാനത്തിനും ഇടയിൽ ഒതുങ്ങുമോ എന്ന് കാണിക്കുന്ന ഷീറ്റ് ഡൗൺലോഡ് ചെയ്യുക. എത്തൽ = മുൻ പുറപ്പെടൽ + യാത്ര. പുറപ്പെടൽ = എത്തൽ + താമസം. ആകെ = എല്ലാ താമസങ്ങളും + എല്ലാ യാത്രകളും. ലഭ്യം = അവസാനം − തുടക്കം; തുടക്കത്തിനു മുമ്പുള്ള അവസാന സമയം അടുത്ത ദിവസമായി കണക്കാക്കും. കവിഞ്ഞത് = ആകെ − ലഭ്യം; പൂജ്യത്തിനു മുകളിലെങ്കിൽ സമയം കവിയും. വെറും മിനിറ്റ് കൂട്ടൽ, സമയ മേഖലകളില്ല. സമയങ്ങൾ 24 മണിക്കൂർ HH:MM രൂപത്തിൽ; താമസം 5 മുതൽ 720 മിനിറ്റ്; യാത്ര 0 മുതൽ 600 മിനിറ്റ്; പരമാവധി 25 സ്ഥലങ്ങൾ. തുറക്കുന്ന സമയം, യഥാർഥ ഗതാഗതം, ഭൂപടങ്ങൾ, റൂട്ടുകൾ, ബുക്കിംഗ് എന്നിവ ഈ ഷീറ്റിന്റെ പരിധിക്കു പുറത്താണ്.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/day-itinerary-sheet.html",
+      "language": "ml-IN",
+      "title": "ഒരു ദിവസത്തെ യാത്രാ സമയ ഷീറ്റ്",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 846,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ് ചെയ്യുക",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "ചിതറിയ മീറ്റിംഗ് കുറിപ്പുകളെ ഒറ്റപ്പേജ് രൂപരേഖയാക്കുക: ഒരു തലക്കെട്ട്, മൂന്ന് മുതൽ പന്ത്രണ്ട് വരെ പ്രധാന പോയിന്റുകൾ, ഒരു അടുത്ത നടപടി, ഐച്ഛികമായ ഒരു അളവ്; പിന്നീട് സ്ലൈഡിലോ സംഗ്രഹത്തിലോ ഒട്ടിക്കാവുന്ന ഷീറ്റായി ഡൗൺലോഡ് ചെയ്യുക. ഷീറ്റ് നിങ്ങളുടെ വാക്കുകൾ അതേപടി നിലനിർത്തുന്നു: തലക്കെട്ട്, പിന്നെ നിങ്ങൾ ടൈപ്പ് ചെയ്ത ക്രമത്തിൽ പോയിന്റുകൾ, പിന്നെ അടുത്ത നടപടി, പിന്നെ അളവ്. പോയിന്റുകൾ എണ്ണി അരികിലെ സ്പേസുകൾ നീക്കുന്നു; ഒന്നും മാറ്റിയെഴുതുകയോ സംഗ്രഹിക്കുകയോ സ്കോർ ചെയ്യുകയോ ഇല്ല. തലക്കെട്ട് പരമാവധി 80 അക്ഷരങ്ങൾ; 3 മുതൽ 12 വരെ പോയിന്റുകൾ, ഓരോന്നും പരമാവധി 160 അക്ഷരങ്ങൾ; അടുത്ത നടപടി പരമാവധി 160 അക്ഷരങ്ങൾ; അളവ് പരമാവധി 60 അക്ഷരങ്ങൾ. ഓരോ വരിയും ഒറ്റവരി വാചകമായിരിക്കണം. ഷീറ്റ് ഫയലുകളോ റെക്കോർഡിംഗുകളോ കലണ്ടറുകളോ വായിക്കില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/one-page-outline-sheet.html",
+      "language": "ml-IN",
+      "title": "മീറ്റിംഗ് കുറിപ്പ് ഒറ്റപ്പേജിൽ",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ml-IN",

@@ -111,6 +111,118 @@
       "language": "gu-IN",
       "title": "બેટરી ઘસારો રેન્જ શીટ",
       "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 846,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "ઘરમાં એક સાથે ઑનલાઇન શું ચાલે છે અને કેટલા ડિવાઇસ પર તે લખો, પછી જરૂરી Mbps અને તમારા પ્લાનમાં બાકી માર્જિન દર્શાવતી શીટ ડાઉનલોડ કરો. પંક્તિનું કુલ = ડિવાઇસ × દરેક ડિવાઇસનું મૂલ્ય. જરૂરિયાત = પંક્તિઓનો સરવાળો. માર્જિન = પ્લાન − જરૂરિયાત; પ્લાનના 20% થી ઓછું હોય તો તંગ, શૂન્યથી નીચે હોય તો અપૂરતું. પૂર્ણ દશાંશ Mbps માં સરવાળો થાય છે, તેથી કુલ ક્યારેય ખસતું નથી. પ્લાન ઝડપ 0.5 થી 10000 Mbps, વધુમાં વધુ એક દશાંશ; દરેક પંક્તિમાં 1 થી 50 ડિવાઇસ; વધુમાં વધુ 20 પંક્તિઓ. Wi‑Fi કવરેજ, લેટન્સી અને પ્રદાતાની વાસ્તવિક ઝડપ આ શીટની બહાર છે.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/bandwidth-need-sheet.html",
+      "language": "gu-IN",
+      "title": "ઘરની ઇન્ટરનેટ સ્પીડ જરૂરિયાત શીટ",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 626,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "પ્રવાસનું કુલ બજેટ, દિવસો, પ્રવાસીઓ અને પહેલેથી જાણીતા ખર્ચ ભરો, પછી શીટ ડાઉનલોડ કરો—દરેક વ્યક્તિ દરરોજ કેટલું ખર્ચ કરી શકે અને તે ખોરાક, પરિવહન, ટિકિટ અને ખરીદીમાં કેવી રીતે વહેંચાય. ખર્ચ માટે બાકી = કુલ બજેટ − નિશ્ચિત ખર્ચ. દરરોજ = બાકી ÷ દિવસો. દરેક વ્યક્તિ દરરોજ = દરરોજ ÷ પ્રવાસીઓ. દરેક વર્ગ = દરરોજ × તેનો હિસ્સો. રકમો પૂર્ણ પૈસામાં ઉમેરાય છે; દૈનિક આંકડા માત્ર બતાવતી વખતે ગોળ કરાય છે. રકમ 0 થી 100,000,000, વધુમાં વધુ બે દશાંશ; 1 થી 120 દિવસ; 1 થી 20 પ્રવાસીઓ; વધુમાં વધુ 15 નિશ્ચિત ખર્ચ; ચાર હિસ્સાનો સરવાળો બરાબર 100. બધે એક જ ચલણ, વિનિમય દર નહીં, કિંમત કે બુકિંગની સલાહ નહીં.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/trip-budget-sheet.html",
+      "language": "gu-IN",
+      "title": "પ્રવાસનું દૈનિક બજેટ શીટ",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 543,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "એક દિવસમાં જવાના સ્થળો, દરેક જગ્યાએ કેટલો સમય રોકાશો અને આગલા સ્થળે પહોંચતાં કેટલો સમય લાગશે તે લખો, પછી પહોંચવા અને નીકળવાના સમય સાથેની શીટ ડાઉનલોડ કરો જે બતાવે કે બધું તમારી શરૂઆત અને અંત વચ્ચે સમાય છે કે નહીં. પહોંચવું = અગાઉનું નીકળવું + મુસાફરી. નીકળવું = પહોંચવું + રોકાણ. કુલ = બધાં રોકાણ + બધી મુસાફરી. ઉપલબ્ધ = અંત − શરૂઆત; શરૂઆત પહેલાંનો અંત બીજો દિવસ ગણાય. વધારે = કુલ − ઉપલબ્ધ; શૂન્યથી ઉપર હોય તો સમય વટાવે છે. ફક્ત મિનિટનો સરવાળો, ટાઇમ ઝોન નહીં. સમય 24-કલાક HH:MM સ્વરૂપમાં, રોકાણ 5 થી 720 મિનિટ, મુસાફરી 0 થી 600 મિનિટ, વધુમાં વધુ 25 સ્થળો. ખુલવાનો સમય, વાસ્તવિક ટ્રાફિક, નકશા, રૂટ અને બુકિંગ આ શીટની બહાર છે.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/day-itinerary-sheet.html",
+      "language": "gu-IN",
+      "title": "એક દિવસની સફરની સમય-શીટ",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 751,
+          "title": "ઉદાહરણ CSV ડાઉનલોડ કરો",
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "અવ્યવસ્થિત મીટિંગ નોંધોને એક પાનાની રૂપરેખામાં ફેરવો: એક શીર્ષક, ત્રણથી બાર મુખ્ય મુદ્દા, એક આગળનું પગલું અને વૈકલ્પિક માપદંડ, પછી સ્લાઇડ કે સારાંશમાં પેસ્ટ કરી શકાય તેવી શીટ ડાઉનલોડ કરો. શીટ તમારા શબ્દો જેમના તેમ રાખે છે: શીર્ષક, પછી તમે લખેલા ક્રમમાં મુદ્દા, પછી આગળનું પગલું, પછી માપદંડ. તે મુદ્દા ગણે છે અને કિનારીની ખાલી જગ્યા કાઢે છે; કંઈ ફરી લખાતું, ટૂંકાવાતું કે સ્કોર થતું નથી. શીર્ષક વધુમાં વધુ 80 અક્ષર, 3 થી 12 મુદ્દા દરેક વધુમાં વધુ 160 અક્ષર, આગળનું પગલું વધુમાં વધુ 160 અક્ષર, માપદંડ વધુમાં વધુ 60 અક્ષર. દરેક લીટી એક લીટીનું લખાણ હોવી જોઈએ. શીટ ફાઇલો, રેકોર્ડિંગ કે કૅલેન્ડર વાંચતી નથી.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/one-page-outline-sheet.html",
+      "language": "gu-IN",
+      "title": "મીટિંગ નોંધોથી એક પાનાની રૂપરેખા",
+      "url": "https://open.cait518.cc/ios-app-guide/gu-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "gu-IN",

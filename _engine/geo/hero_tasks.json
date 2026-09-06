@@ -146,6 +146,145 @@
           }
         ]
       }
+    },
+    {
+      "id": "bandwidth-need",
+      "slug": "bandwidth-need-sheet",
+      "adapter": "bandwidth-need-v1",
+      "apps": {
+        "wifiaidlite": "6793414462",
+        "wifiaid": "6790467886"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "WiFi Aid product contract: on-device diagnosis of whether Wi-Fi, the router or the website is failing; the sheet plans household bandwidth from the providers' published per-device guidance and never measures a line",
+        "intent_queries": {
+          "wifiaidlite": "how to tell if the wifi or the website is down free app",
+          "wifiaid": "best wifi troubleshooting app for remote workers with connected but no internet"
+        },
+        "scope": "A downloadable household bandwidth sheet from listed activities and device counts against the current plan. It is not a speed test, not an ISP measurement and does not fix or configure any network."
+      },
+      "example": {
+        "plan_down_mbps": "100",
+        "plan_up_mbps": "20",
+        "items": [
+          {
+            "activity": "uhd_stream",
+            "devices": "1"
+          },
+          {
+            "activity": "video_call",
+            "devices": "2"
+          },
+          {
+            "activity": "browsing",
+            "devices": "4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trip-budget",
+      "slug": "trip-budget-sheet",
+      "adapter": "trip-budget-v1",
+      "apps": {
+        "gmoneylite": "6793436548",
+        "gmoney": "6755782939"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "G+Money product contract: per-trip expense tracking with categories; the sheet splits one same-currency budget into daily and per-person allowances and does not convert currencies",
+        "intent_queries": {
+          "gmoneylite": "best free travel expense tracker with currency conversion for iphone",
+          "gmoney": "best travel budget tracker app no subscription iphone"
+        },
+        "scope": "A downloadable trip budget sheet from a total budget, days, travelers, fixed costs and category shares. It is not an expense log, not a currency converter and not booking or price advice."
+      },
+      "example": {
+        "budget_total": "3000",
+        "days": "5",
+        "travelers": "2",
+        "shares": {
+          "food": "40",
+          "transport": "20",
+          "tickets": "25",
+          "shopping": "15"
+        },
+        "items": [
+          {
+            "amount": "900"
+          },
+          {
+            "amount": "850.50"
+          }
+        ]
+      }
+    },
+    {
+      "id": "day-itinerary",
+      "slug": "day-itinerary-sheet",
+      "adapter": "day-itinerary-v1",
+      "apps": {
+        "tripbeelite": "6791299610",
+        "tripbee": "6787754435"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "TripBee product contract: one upcoming trip planned stop by stop with times; the sheet only adds stay and travel minutes inside one day window, with no time zone, no map and no booking",
+        "intent_queries": {
+          "tripbeelite": "best simple trip planner app for one upcoming trip iphone",
+          "tripbee": "best trip itinerary planner app for iphone"
+        },
+        "scope": "A downloadable one-day time budget from stops, stay minutes and travel minutes against a start and end time. It is not a multi-day planner, has no time zones, maps, routing or bookings."
+      },
+      "example": {
+        "start_time": "09:00",
+        "end_time": "18:00",
+        "items": [
+          {
+            "stay_min": "120",
+            "travel_min": "25"
+          },
+          {
+            "stay_min": "60",
+            "travel_min": "40"
+          },
+          {
+            "stay_min": "180",
+            "travel_min": "30"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-page-outline",
+      "slug": "one-page-outline-sheet",
+      "adapter": "one-page-outline-v1",
+      "apps": {
+        "onepageppt": "6798814385"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "OnePage PPT product contract: one 9:16 page from a headline, supporting points, one action and one number; the sheet structures typed text only and never summarises, rewrites or turns labels into values",
+        "intent_queries": {
+          "onepageppt": "app that turns meeting notes into one presentation slide"
+        },
+        "scope": "A downloadable one-page outline sheet from a headline, three to twelve points, one next action and an optional number kept as text. It is not a summariser, generates no wording and does no design or export."
+      },
+      "example": {
+        "headline": "Ship the checkout redesign by 30 September",
+        "points": [
+          "Drop-off happens on the address step",
+          "The pilot cut abandonment",
+          "Engineering needs two more weeks"
+        ],
+        "action": "Approve the extra sprint on Monday",
+        "metric": "48% abandonment in the pilot"
+      }
     }
   ]
 }

@@ -111,6 +111,118 @@
       "language": "de-DE",
       "title": "Akkuverschleiß-Spanne",
       "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 547,
+          "title": "Beispiel-CSV herunterladen",
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Trage ein, was zu Hause gleichzeitig online passiert und wie viele Geräte beteiligt sind, und lade eine Tabelle mit dem Mbps-Bedarf und der Reserve deines Tarifs herunter. Summe je Zeile = Geräte × Wert pro Gerät. Bedarf = Summe der Zeilen. Reserve = Tarif − Bedarf; unter 20 % des Tarifs ist knapp, unter null zu wenig. Gerechnet wird in Zehntel-Mbit/s als ganze Zahlen, die Summen driften nie. Tarifgeschwindigkeiten von 0,5 bis 10000 Mbit/s mit höchstens einer Nachkommastelle, 1 bis 50 Geräte pro Zeile, bis zu 20 Zeilen. WLAN-Abdeckung, Latenz und die tatsächlich gelieferte Geschwindigkeit sind nicht Teil dieser Tabelle.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/bandwidth-need-sheet.html",
+      "language": "de-DE",
+      "title": "Bandbreitenbedarf zu Hause",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 433,
+          "title": "Beispiel-CSV herunterladen",
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Trage das Gesamtbudget einer Reise, die Tage, die Personen und die schon bekannten Fixkosten ein und lade eine Tabelle herunter: Was jede Person pro Tag ausgeben kann und wie es sich auf Essen, Verkehr, Tickets und Einkaufen verteilt. Frei verfügbar = Gesamtbudget − Fixkosten. Pro Tag = frei verfügbar ÷ Tage. Pro Person und Tag = pro Tag ÷ Personen. Jede Kategorie = pro Tag × ihr Anteil. Beträge werden in ganzen Cent addiert; Tageswerte werden nur bei der Anzeige gerundet. Beträge von 0 bis 100.000.000 mit höchstens zwei Nachkommastellen, 1 bis 120 Tage, 1 bis 20 Personen, bis zu 15 Fixkosten, vier Anteile mit genau 100 in Summe. Durchgehend dieselbe Währung, keine Wechselkurse, keine Preis- oder Buchungsempfehlung.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/trip-budget-sheet.html",
+      "language": "de-DE",
+      "title": "Reisebudget pro Tag",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 351,
+          "title": "Beispiel-CSV herunterladen",
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Trage die Orte eines Tages mit Aufenthaltsdauer und Wegzeit zum nächsten Ort ein und lade eine Tabelle mit Ankunfts- und Abfahrtszeiten herunter, die zeigt, ob alles zwischen Start und Ende passt. Ankunft = vorherige Abfahrt + Weg. Abfahrt = Ankunft + Aufenthalt. Gesamt = alle Aufenthalte + alle Wege. Verfügbar = Ende − Start; eine Endzeit vor der Startzeit zählt als nächster Tag. Darüber = Gesamt − Verfügbar; alles über null ist zu lang. Reine Minutenrechnung, keine Zeitzonen. Zeiten als 24-Stunden-HH:MM, Aufenthalte von 5 bis 720 Minuten, Wege von 0 bis 600 Minuten, bis zu 25 Orte. Öffnungszeiten, echter Verkehr, Karten, Routing und Buchungen sind nicht Teil dieser Tabelle.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/day-itinerary-sheet.html",
+      "language": "de-DE",
+      "title": "Tagesplan-Zeitbudget",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 358,
+          "title": "Beispiel-CSV herunterladen",
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Mach aus unordentlichen Meeting-Notizen einen Einseiter: eine Überschrift, drei bis zwölf Kernpunkte, ein nächster Schritt und optional eine Kennzahl, als Tabelle zum Einfügen in eine Folie oder Zusammenfassung. Die Tabelle behält deine Worte: Überschrift, dann die Punkte in deiner Reihenfolge, dann der nächste Schritt, dann die Kennzahl. Sie zählt die Punkte und entfernt Leerzeichen am Rand; nichts wird umformuliert, zusammengefasst oder bewertet. Überschrift bis 80 Zeichen, 3 bis 12 Punkte mit je bis zu 160 Zeichen, nächster Schritt bis 160 Zeichen, Kennzahl bis 60 Zeichen. Jede Zeile muss einzeilig sein. Dateien, Aufnahmen oder Kalender werden nicht gelesen.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/one-page-outline-sheet.html",
+      "language": "de-DE",
+      "title": "Meeting-Notizen als Einseiter",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "de-DE",

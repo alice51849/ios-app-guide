@@ -111,6 +111,118 @@
       "language": "fi",
       "title": "Akun kulumisväli",
       "url": "https://open.cait518.cc/ios-app-guide/fi/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 564,
+          "title": "Lataa esimerkki-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Listaa, mitä kotona tehdään verkossa samaan aikaan ja kuinka monella laitteella, ja lataa taulukko tarvittavista Mbps-lukemista ja liittymäsi jäljellä olevasta varasta. Rivin summa = laitteet × laitekohtainen arvo. Tarve = rivien summa. Vara = liittymä − tarve; alle 20 % liittymästä on tiukka, alle nollan ei riitä. Luvut lasketaan kokonaisina Mbit/s-kymmenesosina, joten summat eivät koskaan ajaudu. Liittymän nopeudet 0,5–10000 Mbit/s enintään yhdellä desimaalilla, 1–50 laitetta riviä kohti, enintään 20 riviä. Wi‑Fi-kuuluvuus, viive ja todellisuudessa toimitettu nopeus eivät kuulu tähän taulukkoon.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/bandwidth-need-sheet.html",
+      "language": "fi",
+      "title": "Kodin kaistantarve",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 467,
+          "title": "Lataa esimerkki-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Syötä matkan kokonaisbudjetti, päivät, matkustajat ja jo tiedossa olevat kulut, ja lataa taulukko siitä, paljonko kukin voi käyttää päivässä ja miten se jakautuu ruokaan, liikkumiseen, lippuihin ja ostoksiin. Vapaasti käytettävissä = kokonaisbudjetti − kiinteät kulut. Päivässä = vapaasti käytettävissä ÷ päivät. Henkilöä kohti päivässä = päivässä ÷ matkustajat. Kukin luokka = päivässä × sen osuus. Summat lasketaan kokonaisina sentteinä; päiväluvut pyöristetään vain näytettäessä. Summat 0–100 000 000 enintään kahdella desimaalilla, 1–120 päivää, 1–20 matkustajaa, enintään 15 kiinteää kulua, neljä osuutta, joiden summa on tasan 100. Sama valuutta koko ajan, ei valuuttakursseja, ei hinta- tai varausneuvoja.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/trip-budget-sheet.html",
+      "language": "fi",
+      "title": "Matkabudjetti per päivä",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 364,
+          "title": "Lataa esimerkki-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Listaa päivän kohteet, viipymä kussakin ja siirtymäaika seuraavaan, ja lataa taulukko saapumis- ja lähtöajoista, joka kertoo, mahtuuko kaikki alkamis- ja päättymisajan väliin. Saapuminen = edellinen lähtö + siirtymä. Lähtö = saapuminen + viipymä. Yhteensä = kaikki viipymät + kaikki siirtymät. Käytettävissä = päättyminen − alkaminen; alkamista aikaisempi päättymisaika lasketaan seuraavaksi päiväksi. Ylitys = yhteensä − käytettävissä; nollan ylittävä osa ylittyy. Pelkkää minuuttilaskentaa, ei aikavyöhykkeitä. Ajat 24 tunnin muodossa HH:MM, viipymät 5–720 minuuttia, siirtymät 0–600 minuuttia, enintään 25 kohdetta. Aukioloajat, todellinen liikenne, kartat, reititys ja varaukset eivät kuulu tähän taulukkoon.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/day-itinerary-sheet.html",
+      "language": "fi",
+      "title": "Yhden päivän aikataulu",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 356,
+          "title": "Lataa esimerkki-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Muuta sekavat kokousmuistiinpanot yhden sivun tiivistelmäksi: yksi otsikko, kolmesta kahteentoista avainkohtaa, yksi seuraava toimenpide ja valinnainen mittari, ja lataa se taulukkona, jonka voit liittää diaan tai yhteenvetoon. Taulukko säilyttää sanasi sellaisinaan: otsikko, sitten kohdat kirjoittamassasi järjestyksessä, sitten seuraava toimenpide ja lopuksi mittari. Se laskee kohdat ja poistaa reunojen välilyönnit; mitään ei kirjoiteta uudelleen, tiivistetä tai pisteytetä. Otsikko enintään 80 merkkiä, 3–12 kohtaa enintään 160 merkkiä kukin, seuraava toimenpide enintään 160 merkkiä, mittari enintään 60 merkkiä. Jokaisen rivin on oltava yksirivistä tekstiä. Taulukko ei lue tiedostoja, tallenteita tai kalentereita.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/one-page-outline-sheet.html",
+      "language": "fi",
+      "title": "Kokousmuistiot yhdelle sivulle",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "fi",

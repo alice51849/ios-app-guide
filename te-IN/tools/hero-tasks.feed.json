@@ -111,6 +111,118 @@
       "language": "te-IN",
       "title": "బ్యాటరీ అరుగుదల శ్రేణి షీట్",
       "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1044,
+          "title": "ఉదాహరణ CSV డౌన్‌లోడ్ చేయండి",
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "ఇంట్లో ఒకేసారి ఆన్‌లైన్‌లో ఏం జరుగుతుందో, ఎన్ని పరికరాల్లో జరుగుతుందో రాయండి; అవసరమైన Mbps మరియు మీ ప్లాన్‌లో మిగిలిన మార్జిన్‌తో షీట్ డౌన్‌లోడ్ చేసుకోండి. వరుస మొత్తం = పరికరాలు × ఒక్కో పరికరం విలువ. అవసరం = వరుసల మొత్తం. మార్జిన్ = ప్లాన్ − అవసరం; ప్లాన్‌లో 20% కంటే తక్కువైతే ఇబ్బందిగా, సున్నా కంటే తక్కువైతే సరిపోదు. పూర్తి పదోవంతు Mbps యూనిట్లలో కూడతాం కాబట్టి మొత్తాలు ఎప్పుడూ జారవు. ప్లాన్ వేగం 0.5 నుండి 10000 Mbps వరకు, గరిష్ఠంగా ఒక దశాంశం; వరుసకు 1 నుండి 50 పరికరాలు; గరిష్ఠంగా 20 వరుసలు. Wi‑Fi కవరేజ్, లేటెన్సీ, ప్రొవైడర్ నిజంగా ఇచ్చే వేగం ఈ షీట్ పరిధిలో లేవు.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/te-IN/tools/bandwidth-need-sheet.html",
+      "language": "te-IN",
+      "title": "ఇంటి ఇంటర్నెట్ స్పీడ్ షీట్",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 693,
+          "title": "ఉదాహరణ CSV డౌన్‌లోడ్ చేయండి",
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "ప్రయాణ మొత్తం బడ్జెట్, రోజులు, ప్రయాణికులు, ముందే తెలిసిన ఖర్చులు నమోదు చేయండి; ఒక్కొక్కరు రోజుకు ఎంత ఖర్చు చేయవచ్చు, అది ఆహారం, రవాణా, టికెట్లు, షాపింగ్‌గా ఎలా విభజించబడుతుందో చూపే షీట్ డౌన్‌లోడ్ చేయండి. ఖర్చుకు మిగిలినది = మొత్తం బడ్జెట్ − స్థిర ఖర్చులు. రోజుకు = మిగిలినది ÷ రోజులు. ఒక్కొక్కరికి రోజుకు = రోజుకు ÷ ప్రయాణికులు. ప్రతి వర్గం = రోజుకు × దాని వాటా. మొత్తాలు పూర్తి పైసల్లో కూడతాం; రోజువారీ సంఖ్యలు చూపేటప్పుడు మాత్రమే రౌండ్ అవుతాయి. మొత్తాలు 0 నుండి 100,000,000 వరకు, గరిష్ఠంగా రెండు దశాంశాలు; 1 నుండి 120 రోజులు; 1 నుండి 20 ప్రయాణికులు; గరిష్ఠంగా 15 స్థిర ఖర్చులు; నాలుగు వాటాల మొత్తం సరిగ్గా 100. అంతటా ఒకే కరెన్సీ, మారకపు రేట్లు లేవు, ధర లేదా బుకింగ్ సలహాలు లేవు.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/te-IN/tools/trip-budget-sheet.html",
+      "language": "te-IN",
+      "title": "ప్రయాణ రోజువారీ బడ్జెట్ షీట్",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 630,
+          "title": "ఉదాహరణ CSV డౌన్‌లోడ్ చేయండి",
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ఒక రోజులో వెళ్లాలనుకున్న ప్రదేశాలు, ప్రతిచోట ఎంతసేపు ఉంటారు, తర్వాతి చోటుకు వెళ్లడానికి ఎంత సమయం అనేవి రాయండి; చేరిక／బయలుదేరే సమయాలతో, మీ ప్రారంభం, ముగింపు మధ్య అన్నీ సరిపోతాయో లేదో చూపే షీట్ డౌన్‌లోడ్ చేయండి. చేరిక = మునుపటి బయలుదేరడం + ప్రయాణం. బయలుదేరడం = చేరిక + ఉండే సమయం. మొత్తం = అన్ని ఉండే సమయాలు + అన్ని ప్రయాణాలు. అందుబాటు = ముగింపు − ప్రారంభం; ప్రారంభం కంటే ముందు ముగింపు మరుసటి రోజుగా లెక్క. మించినది = మొత్తం − అందుబాటు; సున్నా కంటే ఎక్కువైతే సమయం మించింది. కేవలం నిమిషాల కూడిక, టైమ్ జోన్లు లేవు. సమయాలు 24 గంటల HH:MM రూపంలో; ఉండే సమయం 5 నుండి 720 నిమిషాలు; ప్రయాణం 0 నుండి 600 నిమిషాలు; గరిష్ఠంగా 25 ప్రదేశాలు. తెరిచే వేళలు, నిజమైన ట్రాఫిక్, మ్యాప్‌లు, రూట్లు, బుకింగ్‌లు ఈ షీట్ పరిధిలో లేవు.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/te-IN/tools/day-itinerary-sheet.html",
+      "language": "te-IN",
+      "title": "ఒక రోజు ప్రయాణ సమయ షీట్",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 776,
+          "title": "ఉదాహరణ CSV డౌన్‌లోడ్ చేయండి",
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "చెల్లాచెదురైన సమావేశ నోట్స్‌ను ఒక పేజీ రూపురేఖగా మార్చండి: ఒక శీర్షిక, మూడు నుండి పన్నెండు ముఖ్యాంశాలు, ఒక తదుపరి చర్య, ఐచ్ఛిక కొలమానం; ఆపై స్లైడ్ లేదా సారాంశంలో అతికించగల షీట్‌గా డౌన్‌లోడ్ చేయండి. షీట్ మీ మాటలను ఉన్నట్టే ఉంచుతుంది: శీర్షిక, తర్వాత మీరు టైప్ చేసిన క్రమంలో అంశాలు, తర్వాత తదుపరి చర్య, తర్వాత కొలమానం. అంశాలను లెక్కించి అంచుల ఖాళీలను తొలగిస్తుంది; ఏదీ తిరగరాయడం, సంక్షిప్తం చేయడం లేదా స్కోర్ చేయడం జరగదు. శీర్షిక గరిష్ఠంగా 80 అక్షరాలు; 3 నుండి 12 అంశాలు, ఒక్కొక్కటి గరిష్ఠంగా 160 అక్షరాలు; తదుపరి చర్య గరిష్ఠంగా 160 అక్షరాలు; కొలమానం గరిష్ఠంగా 60 అక్షరాలు. ప్రతి పంక్తి ఒకే వరుస పాఠ్యంగా ఉండాలి. షీట్ ఫైళ్లు, రికార్డింగ్‌లు లేదా క్యాలెండర్లను చదవదు.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/te-IN/tools/one-page-outline-sheet.html",
+      "language": "te-IN",
+      "title": "సమావేశ నోట్స్ ఒకే పేజీలో",
+      "url": "https://open.cait518.cc/ios-app-guide/te-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "te-IN",

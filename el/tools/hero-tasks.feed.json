@@ -111,6 +111,118 @@
       "language": "el",
       "title": "Φύλλο φθοράς μπαταρίας",
       "url": "https://open.cait518.cc/ios-app-guide/el/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 752,
+          "title": "Λήψη CSV παραδείγματος",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Γράψτε τι κάνει το νοικοκυριό online ταυτόχρονα και με πόσες συσκευές, και κατεβάστε ένα φύλλο με τα Mbps που χρειάζεστε και το περιθώριο που μένει στο πακέτο σας. Σύνολο γραμμής = συσκευές × τιμή ανά συσκευή. Ανάγκη = άθροισμα των γραμμών. Περιθώριο = πακέτο − ανάγκη· κάτω από το 20% του πακέτου είναι οριακό, κάτω από το μηδέν δεν επαρκεί. Προστίθενται ακέραια δέκατα Mbps, ώστε τα σύνολα να μην αποκλίνουν ποτέ. Ταχύτητες πακέτου από 0,5 έως 10000 Mbps με το πολύ ένα δεκαδικό, 1 έως 50 συσκευές ανά γραμμή, έως 20 γραμμές. Η κάλυψη Wi‑Fi, η καθυστέρηση και η πραγματικά παρεχόμενη ταχύτητα δεν ανήκουν σε αυτό το φύλλο.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/bandwidth-need-sheet.html",
+      "language": "el",
+      "title": "Ταχύτητα ίντερνετ για το σπίτι",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 622,
+          "title": "Λήψη CSV παραδείγματος",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Βάλτε τον συνολικό προϋπολογισμό του ταξιδιού, τις ημέρες, τους ταξιδιώτες και τα έξοδα που ήδη ξέρετε, και κατεβάστε ένα φύλλο με το πόσα μπορεί να ξοδέψει ο καθένας την ημέρα και πώς μοιράζονται σε φαγητό, μεταφορές, εισιτήρια και ψώνια. Διαθέσιμο = συνολικός προϋπολογισμός − σταθερά έξοδα. Ανά ημέρα = διαθέσιμο ÷ ημέρες. Ανά άτομο την ημέρα = ανά ημέρα ÷ ταξιδιώτες. Κάθε κατηγορία = ανά ημέρα × το μερίδιό της. Τα ποσά προστίθενται σε ακέραια λεπτά· οι ημερήσιες τιμές στρογγυλοποιούνται μόνο στην εμφάνιση. Ποσά από 0 έως 100.000.000 με το πολύ δύο δεκαδικά, 1 έως 120 ημέρες, 1 έως 20 ταξιδιώτες, έως 15 σταθερά έξοδα, τέσσερα μερίδια με άθροισμα ακριβώς 100. Παντού το ίδιο νόμισμα, χωρίς ισοτιμίες, χωρίς συμβουλές τιμών ή κρατήσεων.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/trip-budget-sheet.html",
+      "language": "el",
+      "title": "Ημερήσιο μπάτζετ ταξιδιού",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 495,
+          "title": "Λήψη CSV παραδείγματος",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Γράψτε τα μέρη μιας ημέρας με το πόσο θα μείνετε και πόσο χρειάζεται μέχρι το επόμενο, και κατεβάστε ένα φύλλο με ώρες άφιξης και αναχώρησης που δείχνει αν όλα χωρούν ανάμεσα στην αρχή και στο τέλος σας. Άφιξη = προηγούμενη αναχώρηση + μετακίνηση. Αναχώρηση = άφιξη + παραμονή. Σύνολο = όλες οι παραμονές + όλες οι μετακινήσεις. Διαθέσιμα = λήξη − έναρξη· λήξη πριν από την έναρξη μετρά ως επόμενη ημέρα. Υπέρβαση = σύνολο − διαθέσιμα· πάνω από το μηδέν ξεπερνά. Απλή αριθμητική λεπτών, χωρίς ζώνες ώρας. Ώρες σε 24ωρη μορφή HH:MM, παραμονές από 5 έως 720 λεπτά, μετακινήσεις από 0 έως 600 λεπτά, έως 25 μέρη. Ωράρια λειτουργίας, πραγματική κίνηση, χάρτες, διαδρομές και κρατήσεις είναι εκτός αυτού του φύλλου.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/day-itinerary-sheet.html",
+      "language": "el",
+      "title": "Ωράριο μιας ημέρας",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 625,
+          "title": "Λήψη CSV παραδείγματος",
+          "url": "https://open.cait518.cc/ios-app-guide/el/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Μετατρέψτε ακατάστατες σημειώσεις σύσκεψης σε περίγραμμα μίας σελίδας: έναν τίτλο, τρία έως δώδεκα βασικά σημεία, μία επόμενη ενέργεια και έναν προαιρετικό δείκτη, και κατεβάστε το ως φύλλο για να το επικολλήσετε σε διαφάνεια ή σύνοψη. Το φύλλο κρατά τα λόγια σας όπως είναι: τίτλος, μετά τα σημεία με τη σειρά που τα γράψατε, μετά η επόμενη ενέργεια, μετά ο δείκτης. Μετρά τα σημεία και αφαιρεί τα κενά στα άκρα· τίποτα δεν ξαναγράφεται, δεν συνοψίζεται ούτε βαθμολογείται. Τίτλος έως 80 χαρακτήρες, 3 έως 12 σημεία έως 160 χαρακτήρες το καθένα, επόμενη ενέργεια έως 160 χαρακτήρες, δείκτης έως 60 χαρακτήρες. Κάθε γραμμή πρέπει να είναι κείμενο μίας γραμμής. Το φύλλο δεν διαβάζει αρχεία, ηχογραφήσεις ή ημερολόγια.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/el/tools/one-page-outline-sheet.html",
+      "language": "el",
+      "title": "Σύσκεψη σε μία σελίδα",
+      "url": "https://open.cait518.cc/ios-app-guide/el/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "el",

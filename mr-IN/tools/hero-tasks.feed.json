@@ -111,6 +111,118 @@
       "language": "mr-IN",
       "title": "बॅटरी घसारा रेंज शीट",
       "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 876,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "घरात एकाच वेळी ऑनलाइन काय चालते आणि किती डिव्हाइसवर ते लिहा, मग आवश्यक Mbps आणि तुमच्या प्लॅनमध्ये उरलेला मार्जिन दाखवणारी शीट डाउनलोड करा. ओळीचे एकूण = डिव्हाइस × प्रति डिव्हाइस मूल्य. गरज = ओळींची बेरीज. मार्जिन = प्लॅन − गरज; प्लॅनच्या 20% पेक्षा कमी असल्यास काठावर, शून्याखाली असल्यास अपुरे. पूर्ण दशांश Mbps मध्ये बेरीज होते, त्यामुळे एकूण कधीच सरकत नाही. प्लॅन वेग 0.5 ते 10000 Mbps, जास्तीत जास्त एक दशांश; प्रत्येक ओळीत 1 ते 50 डिव्हाइस; जास्तीत जास्त 20 ओळी. Wi‑Fi कव्हरेज, लेटन्सी आणि पुरवठादाराचा प्रत्यक्ष वेग या शीटच्या बाहेर आहेत.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/bandwidth-need-sheet.html",
+      "language": "mr-IN",
+      "title": "घरातील इंटरनेट स्पीड गरजेची शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 648,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "प्रवासाचे एकूण बजेट, दिवस, प्रवासी आणि आधीच माहीत असलेले खर्च भरा, मग प्रत्येकजण दररोज किती खर्च करू शकतो आणि ते जेवण, प्रवास, तिकिटे व खरेदीत कसे विभागले जाते हे दाखवणारी शीट डाउनलोड करा. खर्चासाठी उरलेले = एकूण बजेट − ठरलेले खर्च. प्रति दिवस = उरलेले ÷ दिवस. प्रति व्यक्ती प्रति दिवस = प्रति दिवस ÷ प्रवासी. प्रत्येक वर्ग = प्रति दिवस × त्याचा वाटा. रकमा पूर्ण पैशांत जोडल्या जातात; दैनिक आकडे फक्त दाखवताना गोल केले जातात. रक्कम 0 ते 100,000,000, जास्तीत जास्त दोन दशांश; 1 ते 120 दिवस; 1 ते 20 प्रवासी; जास्तीत जास्त 15 ठरलेले खर्च; चार वाट्यांची बेरीज नेमकी 100. सर्वत्र एकच चलन, विनिमय दर नाही, किंमत किंवा बुकिंगचा सल्ला नाही.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/trip-budget-sheet.html",
+      "language": "mr-IN",
+      "title": "प्रवासाचे दररोजचे बजेट शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 559,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "एका दिवसात जायच्या जागा, प्रत्येक ठिकाणी किती वेळ थांबणार आणि पुढच्या जागी पोहोचायला किती वेळ लागेल हे लिहा, मग पोहोचण्याच्या आणि निघण्याच्या वेळांची शीट डाउनलोड करा जी सांगते की सर्व काही तुमच्या सुरुवात आणि शेवटाच्या दरम्यान बसते का. पोहोचणे = मागील निघणे + प्रवास. निघणे = पोहोचणे + थांबा. एकूण = सर्व थांबे + सर्व प्रवास. उपलब्ध = शेवट − सुरुवात; सुरुवातीपूर्वीचा शेवट पुढचा दिवस मानला जातो. जास्त = एकूण − उपलब्ध; शून्यापेक्षा जास्त असल्यास वेळ ओलांडली. फक्त मिनिटांची बेरीज, टाइम झोन नाही. वेळा 24-तास HH:MM स्वरूपात, थांबा 5 ते 720 मिनिटे, प्रवास 0 ते 600 मिनिटे, जास्तीत जास्त 25 जागा. उघडण्याच्या वेळा, प्रत्यक्ष वाहतूक, नकाशे, मार्ग आणि बुकिंग या शीटमध्ये नाहीत.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/day-itinerary-sheet.html",
+      "language": "mr-IN",
+      "title": "एका दिवसाच्या सहलीची वेळ-शीट",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 771,
+          "title": "उदाहरण CSV डाउनलोड करा",
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "विस्कळीत मीटिंग नोट्सचे एका पानाच्या रूपरेषेत रूपांतर करा: एक शीर्षक, तीन ते बारा मुख्य मुद्दे, एक पुढील कृती आणि ऐच्छिक मेट्रिक, मग स्लाइड किंवा सारांशात चिकटवता येईल अशी शीट डाउनलोड करा. शीट तुमचे शब्द जसेच्या तसे ठेवते: शीर्षक, मग तुम्ही लिहिलेल्या क्रमाने मुद्दे, मग पुढील कृती, मग मेट्रिक. ती मुद्दे मोजते आणि कडेच्या रिकाम्या जागा काढते; काहीही पुन्हा लिहिले, संक्षिप्त केले किंवा गुण दिले जात नाहीत. शीर्षक कमाल 80 अक्षरे, 3 ते 12 मुद्दे प्रत्येकी कमाल 160 अक्षरे, पुढील कृती कमाल 160 अक्षरे, मेट्रिक कमाल 60 अक्षरे. प्रत्येक ओळ एका ओळीचा मजकूर असावी. शीट फाइल्स, रेकॉर्डिंग किंवा कॅलेंडर वाचत नाही.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/one-page-outline-sheet.html",
+      "language": "mr-IN",
+      "title": "मीटिंग नोट्सपासून एका पानाची रूपरेषा",
+      "url": "https://open.cait518.cc/ios-app-guide/mr-IN/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "mr-IN",

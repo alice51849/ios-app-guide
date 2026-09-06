@@ -111,6 +111,118 @@
       "language": "da",
       "title": "Batterislid-interval",
       "url": "https://open.cait518.cc/ios-app-guide/da/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 541,
+          "title": "Download eksempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/da/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "Skriv ned, hvad husstanden laver på nettet samtidig, og hvor mange enheder der gør det, og download et ark med de nødvendige Mbps og den margin, der er tilbage på dit abonnement. I alt pr. række = enheder × værdi pr. enhed. Behov = summen af rækkerne. Margin = abonnement − behov; under 20 % af abonnementet er stramt, under nul rækker det ikke. Der lægges sammen i hele tiendedele Mbit/s, så totalerne skrider aldrig. Abonnementshastigheder fra 0,5 til 10000 Mbit/s med højst én decimal, 1 til 50 enheder pr. række, op til 20 rækker. Wi‑Fi-dækning, latens og den faktisk leverede hastighed ligger uden for arket.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/da/tools/bandwidth-need-sheet.html",
+      "language": "da",
+      "title": "Båndbredde til hjemmet",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 436,
+          "title": "Download eksempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/da/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "Skriv rejsens samlede budget, dage, rejsende og de udgifter, du allerede kender, og download et ark med, hvad hver person kan bruge pr. dag, og hvordan det fordeles på mad, transport, billetter og shopping. Frit til rådighed = samlet budget − faste udgifter. Pr. dag = frit til rådighed ÷ dage. Pr. person pr. dag = pr. dag ÷ rejsende. Hver kategori = pr. dag × dens andel. Beløb lægges sammen i hele ører; dagstal afrundes kun ved visning. Beløb fra 0 til 100.000.000 med højst to decimaler, 1 til 120 dage, 1 til 20 rejsende, op til 15 faste udgifter, fire andele der tilsammen giver præcis 100. Samme valuta hele vejen, ingen valutakurser, ingen pris- eller bookingråd.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/da/tools/trip-budget-sheet.html",
+      "language": "da",
+      "title": "Rejsebudget pr. dag",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 346,
+          "title": "Download eksempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/da/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "Skriv dagens steder ned med, hvor længe du bliver, og hvor lang tid der går til det næste, og download et ark med ankomst- og afgangstider, der viser, om det hele kan være mellem din start og dit slut. Ankomst = forrige afgang + rejse. Afgang = ankomst + ophold. I alt = alle ophold + alle rejser. Til rådighed = slut − start; en sluttid før starttiden tæller som næste dag. Over = i alt − til rådighed; alt over nul går over tid. Ren minutregning, ingen tidszoner. Tider som 24-timers HH:MM, ophold fra 5 til 720 minutter, rejser fra 0 til 600 minutter, op til 25 steder. Åbningstider, reel trafik, kort, ruter og bookinger ligger uden for arket.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/da/tools/day-itinerary-sheet.html",
+      "language": "da",
+      "title": "Tidsplan for én dag",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/dk/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 338,
+          "title": "Download eksempel-CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/da/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "Lav rodede mødenoter om til et overblik på én side: én overskrift, tre til tolv nøglepunkter, én næste handling og et valgfrit nøgletal, og download det som en tabel, du kan sætte ind i et slide eller et resumé. Tabellen beholder dine ord, som de er: overskrift, derefter punkterne i den rækkefølge, du skrev dem, derefter næste handling og til sidst nøgletallet. Den tæller punkterne og fjerner mellemrum i kanterne; intet omskrives, opsummeres eller bedømmes. Overskrift på op til 80 tegn, 3 til 12 punkter på op til 160 tegn hver, næste handling på op til 160 tegn, nøgletal på op til 60 tegn. Hver linje skal være tekst på én linje. Tabellen læser ikke filer, optagelser eller kalendere.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/da/tools/one-page-outline-sheet.html",
+      "language": "da",
+      "title": "Mødenoter til én side",
+      "url": "https://open.cait518.cc/ios-app-guide/da/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "da",

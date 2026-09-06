@@ -111,6 +111,118 @@
       "language": "ur-PK",
       "title": "بیٹری گھساؤ رینج شیٹ",
       "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 652,
+          "title": "مثالی CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "لکھیں کہ گھر میں بیک وقت آن لائن کیا کچھ چلتا ہے اور کتنے آلات پر، پھر درکار Mbps اور آپ کے پلان میں بچے مارجن کی شیٹ ڈاؤن لوڈ کریں۔ قطار کا کل = آلات × فی آلہ قدر۔ ضرورت = قطاروں کا مجموعہ۔ مارجن = پلان − ضرورت؛ پلان کے 20% سے کم ہو تو تنگ، صفر سے نیچے ہو تو کم ہے۔ پورے دسویں Mbps میں جمع ہوتا ہے، اس لیے مجموعے کبھی نہیں کھسکتے۔ پلان اسپیڈ 0.5 سے 10000 Mbps، زیادہ سے زیادہ ایک اعشاریہ؛ ہر قطار میں 1 سے 50 آلات؛ زیادہ سے زیادہ 20 قطاریں۔ Wi‑Fi کوریج، لیٹنسی اور فراہم کنندہ کی اصل اسپیڈ اس شیٹ سے باہر ہیں۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/bandwidth-need-sheet.html",
+      "language": "ur-PK",
+      "title": "گھر کے لیے انٹرنیٹ اسپیڈ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 479,
+          "title": "مثالی CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "سفر کا کل بجٹ، دن، مسافر اور پہلے سے معلوم اخراجات درج کریں، پھر شیٹ ڈاؤن لوڈ کریں کہ ہر شخص روزانہ کتنا خرچ کر سکتا ہے اور یہ کھانے، آمد و رفت، ٹکٹوں اور خریداری میں کیسے بٹتا ہے۔ خرچ کے لیے باقی = کل بجٹ − مقررہ اخراجات۔ فی دن = باقی ÷ دن۔ فی شخص فی دن = فی دن ÷ مسافر۔ ہر زمرہ = فی دن × اس کا حصہ۔ رقمیں پورے پیسوں میں جمع ہوتی ہیں؛ روزانہ کے اعداد صرف دکھاتے وقت گول کیے جاتے ہیں۔ رقم 0 سے 100,000,000 تک، زیادہ سے زیادہ دو اعشاریے؛ 1 سے 120 دن؛ 1 سے 20 مسافر؛ زیادہ سے زیادہ 15 مقررہ اخراجات؛ چار حصوں کا مجموعہ بالکل 100۔ ہر جگہ ایک ہی کرنسی، شرح تبادلہ نہیں، قیمت یا بکنگ کا مشورہ نہیں۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/trip-budget-sheet.html",
+      "language": "ur-PK",
+      "title": "سفر کا روزانہ بجٹ شیٹ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 399,
+          "title": "مثالی CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "ایک دن میں جن جگہوں پر جانا ہے، ہر جگہ کتنی دیر رکیں گے اور اگلی جگہ پہنچنے میں کتنا وقت لگے گا لکھیں، پھر پہنچنے اور نکلنے کے اوقات والی شیٹ ڈاؤن لوڈ کریں جو بتاتی ہے کہ سب کچھ آپ کے آغاز اور اختتام کے درمیان سما جاتا ہے یا نہیں۔ پہنچنا = پچھلا نکلنا + سفر۔ نکلنا = پہنچنا + قیام۔ کل = تمام قیام + تمام سفر۔ دستیاب = اختتام − آغاز؛ آغاز سے پہلے کا اختتام اگلا دن شمار ہوتا ہے۔ زائد = کل − دستیاب؛ صفر سے اوپر ہو تو وقت سے زیادہ۔ صرف منٹوں کی جمع، ٹائم زون نہیں۔ اوقات 24 گھنٹے HH:MM میں، قیام 5 سے 720 منٹ، سفر 0 سے 600 منٹ، زیادہ سے زیادہ 25 جگہیں۔ کھلنے کے اوقات، اصل ٹریفک، نقشے، راستے اور بکنگ اس شیٹ سے باہر ہیں۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/day-itinerary-sheet.html",
+      "language": "ur-PK",
+      "title": "ایک دن کے سفر کی وقت شیٹ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 461,
+          "title": "مثالی CSV ڈاؤن لوڈ کریں",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "بکھرے ہوئے میٹنگ نوٹس کو ایک صفحے کے خاکے میں بدلیں: ایک سرخی، تین سے بارہ اہم نکات، ایک اگلا قدم اور اختیاری پیمانہ، پھر سلائیڈ یا خلاصے میں چسپاں کرنے کے لیے شیٹ ڈاؤن لوڈ کریں۔ شیٹ آپ کے الفاظ جوں کے توں رکھتی ہے: سرخی، پھر آپ کی لکھی ترتیب میں نکات، پھر اگلا قدم، پھر پیمانہ۔ یہ نکات گنتی ہے اور کناروں کی خالی جگہ ہٹاتی ہے؛ کچھ بھی دوبارہ لکھا، مختصر یا اسکور نہیں کیا جاتا۔ سرخی زیادہ سے زیادہ 80 حروف، 3 سے 12 نکات ہر ایک زیادہ سے زیادہ 160 حروف، اگلا قدم زیادہ سے زیادہ 160 حروف، پیمانہ زیادہ سے زیادہ 60 حروف۔ ہر سطر ایک سطری متن ہونی چاہیے۔ شیٹ فائلیں، ریکارڈنگ یا کیلنڈر نہیں پڑھتی۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/one-page-outline-sheet.html",
+      "language": "ur-PK",
+      "title": "میٹنگ نوٹس سے ایک صفحے کا خاکہ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/one-page-outline-sheet.html"
     }
   ],
   "language": "ur-PK",

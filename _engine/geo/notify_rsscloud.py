@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
+import hashlib
 import json
 import os
+from pathlib import Path
 import time
 import urllib.error
 import urllib.parse
@@ -96,6 +99,7 @@ def ping(
     attempts=3,
     timeout=20,
     delay=2,
+    receipt_sink=None,
 ):
     if attempts < 1:
         raise ValueError("attempts must be at least 1")
@@ -109,10 +113,20 @@ def ping(
                 _request(endpoint, payload), timeout=timeout
             ) as response:
                 status = response.status
-                body = response.read()
+                body = response.read(65537) if receipt_sink is not None else response.read()
             if 200 <= status < 300:
                 success, message = _parse_result(body)
                 if success:
+                    if receipt_sink is not None:
+                        if len(body) > 65536:
+                            raise ValueError("rssCloud acknowledgement exceeds receipt limit")
+                        receipt_sink({
+                            "endpoint": endpoint, "http_status": status,
+                            "accepted_at": datetime.now(timezone.utc).isoformat(),
+                            "request_sha256": hashlib.sha256(payload).hexdigest(),
+                            "response_sha256": hashlib.sha256(body).hexdigest(),
+                            "response_body": body.decode("utf-8"),
+                        })
                     print(
                         f"rssCloud notified: HTTP {status}, {message or topic}"
                     )
@@ -147,14 +161,30 @@ def main():
     parser.add_argument("--deploy-attempts", type=int, default=6)
     parser.add_argument("--delay", type=float, default=5)
     parser.add_argument("--timeout", type=float, default=10)
+    parser.add_argument("--receipt-file", type=Path)
+    parser.add_argument("--source-sha", default=os.environ.get("GITHUB_SHA"))
     args = parser.parse_args()
+    responses = []
+    if args.receipt_file is not None:
+        import owned_delivery
+        if not owned_delivery.SHA.fullmatch(args.source_sha or ""):
+            parser.error("--receipt-file requires a full --source-sha")
+        feeds = {TOPIC: (Path(args.feed_dir) / RSS_FILE).read_bytes()}
     wait_until_deployed(
         args.feed_dir,
         attempts=args.deploy_attempts,
         timeout=args.timeout,
         delay=args.delay,
     )
-    ping(timeout=max(args.timeout, 20), delay=min(args.delay, 2))
+    ping(
+        timeout=max(args.timeout, 20), delay=min(args.delay, 2),
+        receipt_sink=responses.append if args.receipt_file is not None else None,
+    )
+    if args.receipt_file is not None:
+        owned_delivery.atomic_json(
+            args.receipt_file,
+            owned_delivery.notification_document("rsscloud", args.source_sha, feeds, responses),
+        )
 
 
 if __name__ == "__main__":

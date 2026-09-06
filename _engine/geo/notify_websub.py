@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
+import hashlib
 import os
 from pathlib import Path
 import time
@@ -166,6 +168,7 @@ def notify(
     attempts=3,
     timeout=20,
     delay=2,
+    receipt_sink=None,
 ):
     if attempts < 1:
         raise ValueError("attempts must be at least 1")
@@ -181,7 +184,18 @@ def notify(
                 _request(hub, payload), timeout=timeout
             ) as response:
                 status = response.status
+                body = response.read(65537) if receipt_sink is not None else b""
             if 200 <= status < 300:
+                if receipt_sink is not None:
+                    if len(body) > 65536:
+                        raise ValueError("WebSub acknowledgement exceeds receipt limit")
+                    receipt_sink({
+                        "endpoint": hub, "http_status": status,
+                        "accepted_at": datetime.now(timezone.utc).isoformat(),
+                        "request_sha256": hashlib.sha256(payload).hexdigest(),
+                        "response_sha256": hashlib.sha256(body).hexdigest(),
+                        "response_body": body.decode("utf-8"),
+                    })
                 print(
                     f"WebSub hub notified: {hub} HTTP {status}, "
                     f"{len(topics)} topics"
@@ -211,6 +225,7 @@ def notify_all(
     attempts=3,
     timeout=20,
     delay=2,
+    receipt_sink=None,
 ):
     if not hubs:
         raise ValueError("at least one WebSub hub is required")
@@ -224,6 +239,7 @@ def notify_all(
                 attempts=attempts,
                 timeout=timeout,
                 delay=delay,
+                receipt_sink=receipt_sink,
             )
         except RuntimeError as error:
             failures.append(f"{hub}: {error}")
@@ -245,8 +261,19 @@ def main():
     parser.add_argument("--deploy-attempts", type=int, default=6)
     parser.add_argument("--delay", type=float, default=5)
     parser.add_argument("--timeout", type=float, default=20)
+    parser.add_argument("--receipt-file", type=Path)
+    parser.add_argument("--source-sha", default=os.environ.get("GITHUB_SHA"))
     args = parser.parse_args()
     topics = discover_topics(args.feed_dir)
+    responses = []
+    if args.receipt_file is not None:
+        import owned_delivery
+        if not owned_delivery.SHA.fullmatch(args.source_sha or ""):
+            parser.error("--receipt-file requires a full --source-sha")
+        feeds = {
+            topic: _local_feed_path(args.feed_dir, topic).read_bytes()
+            for topic in topics
+        }
     wait_until_deployed(
         args.feed_dir,
         topics=topics,
@@ -258,7 +285,13 @@ def main():
         topics=topics,
         timeout=max(args.timeout, 20),
         delay=min(args.delay, 2),
+        receipt_sink=responses.append if args.receipt_file is not None else None,
     )
+    if args.receipt_file is not None:
+        owned_delivery.atomic_json(
+            args.receipt_file,
+            owned_delivery.notification_document("websub", args.source_sha, feeds, responses),
+        )
 
 
 if __name__ == "__main__":

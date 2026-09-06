@@ -271,6 +271,29 @@ def submission_receipt(
     endpoint_batches: dict[str, list[dict]],
     accepted_at: str,
 ) -> dict:
+    if not SHA_RE.fullmatch(pages_sha):
+        raise ValueError("IndexNow receipt requires a full source SHA")
+    if len(urls) != len(set(urls)):
+        raise ValueError("IndexNow receipt requires a unique URL inventory")
+    if urls:
+        if set(endpoint_batches) != set(ENDPOINTS):
+            raise ValueError("IndexNow receipt requires every endpoint")
+        for batches in endpoint_batches.values():
+            if not batches:
+                raise ValueError("IndexNow receipt has no endpoint acknowledgement")
+            count = 0
+            for number, batch in enumerate(batches, 1):
+                if (
+                    type(batch.get("batch")) is not int or batch["batch"] != number
+                    or type(batch.get("http_status")) is not int
+                    or batch["http_status"] not in ACCEPTED_STATUSES
+                    or type(batch.get("url_count")) is not int
+                    or not 1 <= batch["url_count"] <= DEFAULT_BATCH_SIZE
+                ):
+                    raise ValueError("IndexNow receipt contains an unaccepted batch")
+                count += batch["url_count"]
+            if count != len(urls):
+                raise ValueError("IndexNow receipt has only partial endpoint acceptance")
     return {
         "version": 1,
         "kind": "indexnow_submission_receipt",
@@ -282,6 +305,7 @@ def submission_receipt(
         "accepted_at": accepted_at,
         "disposition": "accepted" if urls else "no_changed_public_urls",
         "url_count": len(urls),
+        "urls": list(urls),
         "url_set_sha256": url_set_digest(urls),
         "endpoints": [
             {
@@ -747,8 +771,6 @@ def run(
         complete_change_set = len(urls) <= limit
         urls = urls[:limit]
     if not urls:
-        if state_file is not None and current_sha is not None:
-            write_last_submitted_sha(state_file, current_sha)
         if receipt_file is not None and current_sha is not None:
             processed_at = clock().astimezone(timezone.utc).isoformat()
             receipt = carry_receipt_through_noop(
@@ -770,6 +792,8 @@ def run(
                 receipt_file,
                 receipt,
             )
+        if state_file is not None and current_sha is not None:
+            write_last_submitted_sha(state_file, current_sha)
         print("No changed public URLs; nothing to submit")
         return 0
     key = read_key(key_file)
@@ -811,12 +835,6 @@ def run(
         raise SubmissionError(
             f"Only {accepted}/{len(urls)} IndexNow URLs were accepted"
         )
-    if (
-        state_file is not None
-        and current_sha is not None
-        and complete_change_set
-    ):
-        write_last_submitted_sha(state_file, current_sha)
     if receipt_file is not None:
         if current_sha is None:
             raise SubmissionError(
@@ -834,6 +852,12 @@ def run(
                 accepted_at=clock().astimezone(timezone.utc).isoformat(),
             ),
         )
+    if (
+        state_file is not None
+        and current_sha is not None
+        and complete_change_set
+    ):
+        write_last_submitted_sha(state_file, current_sha)
     return accepted
 
 

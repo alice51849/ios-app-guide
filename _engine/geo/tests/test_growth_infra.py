@@ -19103,6 +19103,11 @@ class GeneratorTests(unittest.TestCase):
 
     @mock.patch.dict(os.environ, {"APP_STORE_PROVIDER_TOKEN": "123456789"})
     def test_partial_live_keys_cannot_truncate_the_intent_catalog(self):
+        clock = portfolio_app_finder.contract.utc_now()
+        availability = portfolio_app_finder.verify_availability(
+            lookup=lambda ids, country: {portfolio_app_finder.APPSTORE[key] for key in ("snapport", "wordmate")},
+            clock=lambda: clock,
+        )
         # Regression (CI run 32141442536): the daily workflow rebuilds the
         # finder from whatever live set the caller carries. A build holding
         # only part of the portfolio must stay out of
@@ -19132,6 +19137,7 @@ class GeneratorTests(unittest.TestCase):
             portfolio_app_finder.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
+                availability=availability, now=clock,
             )
             data = json.loads(
                 (
@@ -19139,9 +19145,10 @@ class GeneratorTests(unittest.TestCase):
                 ).read_text(encoding="utf-8")
             )
             self.assertEqual(
-                {"snapport", "wordmate"},
+                set(portfolio_app_finder.contract.live_roster()),
                 {str(app["key"]) for app in data["apps"]},
             )
+            self.assertEqual(2, sum(app["verified_live"] is True for app in data["apps"]))
             # The whole-portfolio artifacts must not exist at all: a partial
             # run may publish neither a truncated intent catalog nor the
             # 50-locale finder pages that are derived from it.
@@ -19167,6 +19174,7 @@ class GeneratorTests(unittest.TestCase):
                 portfolio_app_finder.build(
                     pages,
                     live_keys={"wordmate", "snapport", "zafe"},
+                    availability=availability, now=clock,
                 )
             self.assertIn("zafe", str(caught.exception))
             self.assertFalse(
@@ -19179,6 +19187,11 @@ class GeneratorTests(unittest.TestCase):
 
     @mock.patch.dict(os.environ, {"APP_STORE_PROVIDER_TOKEN": "123456789"})
     def test_portfolio_app_finder_is_bilingual_factual_and_idempotent(self):
+        clock = portfolio_app_finder.contract.utc_now()
+        availability = portfolio_app_finder.verify_availability(
+            lookup=lambda ids, country: {portfolio_app_finder.APPSTORE[key] for key in ("snapport", "wordmate")},
+            clock=lambda: clock,
+        )
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
             for locale, summaries in {
@@ -19213,6 +19226,7 @@ class GeneratorTests(unittest.TestCase):
             portfolio_app_finder.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
+                availability=availability, now=clock,
             )
             english_path = (
                 pages
@@ -19271,6 +19285,7 @@ class GeneratorTests(unittest.TestCase):
             portfolio_app_finder.build(
                 pages,
                 live_keys={"wordmate", "snapport"},
+                availability=availability, now=clock,
             )
             self.assertEqual(first_bytes, data_path.read_bytes())
             self.assertEqual(stable_mtime, data_path.stat().st_mtime_ns)
@@ -19294,7 +19309,7 @@ class GeneratorTests(unittest.TestCase):
                     icon_sizes[size] = image.size
                     icon_alpha[size] = image.getchannel("A").getextrema()
 
-        self.assertEqual(2, data["record_count"])
+        self.assertEqual(46, data["record_count"])
         self.assertEqual(english, legacy_finder)
         self.assertEqual(
             {
@@ -19375,7 +19390,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(
             ["Snapport", "Wordmate: Learn 44 Languages"],
-            [record["name"] for record in data["apps"]],
+            [record["name"] for record in data["apps"] if record["verified_live"] is True],
         )
         self.assertEqual(
             ["Snapport", "Wordmate: Learn 44 Languages"],

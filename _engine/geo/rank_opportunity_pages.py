@@ -29,13 +29,15 @@ Fail-closed and idempotent by construction:
 """
 from __future__ import annotations
 
+import datetime as dt
+import hashlib
 import html
-import json
-import os
 import re
 import unicodedata
 from pathlib import Path
 from typing import Any
+
+import aso_evidence_contract as contract
 
 HERE = Path(__file__).resolve().parent
 TOPICS_PATH = HERE / "data" / "rank_opportunity_topics.json"
@@ -68,7 +70,7 @@ CSS = (
 CSS_TAG = f"<style>{CSS}</style>"
 _WORD_RE = re.compile(r"[^\W_]+", re.UNICODE)
 
-_INDEX_CACHE: dict[str, tuple[Any, dict[tuple[str, str], list[dict[str, Any]]] | None]] = {}
+_INDEX_CACHE: dict[str, tuple[Any, ...]] = {}
 _LOGGED: set[str] = set()
 
 
@@ -80,19 +82,8 @@ def _log_once(path: Path, message: str) -> None:
     print(f"rank-opportunity: {message} ({path}); pages render without the block")
 
 
-def _signature(path: Path):
-    try:
-        stat = os.stat(path)
-    except OSError:
-        return None
-    return (stat.st_mtime_ns, stat.st_size)
-
-
-def _index_topics(payload: Any) -> dict[tuple[str, str], list[dict[str, Any]]]:
-    if not isinstance(payload, dict) or not isinstance(payload.get("topics"), list):
-        raise ValueError("expected an object with a topics list")
-    if payload.get("source") != EXPECTED_SOURCE:
-        raise ValueError(f"unexpected source {payload.get('source')!r}")
+def _index_topics(payload: Any, *, now=None) -> dict[tuple[str, str], list[dict[str, Any]]]:
+    contract.validate_topics(payload, now=now)
     index: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for topic in payload["topics"]:
         if not isinstance(topic, dict):
@@ -112,24 +103,34 @@ def _index_topics(payload: Any) -> dict[tuple[str, str], list[dict[str, Any]]]:
     return index
 
 
-def load_topics(path: Path | str | None = None) -> dict[tuple[str, str], list[dict[str, Any]]] | None:
-    """Topics indexed by (app, locale); ``None`` (logged once) when unusable."""
+def load_topics(path: Path | str | None = None, *, now=None) -> dict[tuple[str, str], list[dict[str, Any]]] | None:
+    """Verify source bytes, exact roster and TTL even for an unchanged cached file."""
     path = Path(TOPICS_PATH if path is None else path)
-    signature = _signature(path)
-    cached = _INDEX_CACHE.get(str(path))
-    if cached is not None and cached[0] == signature:
-        return cached[1]
-    index = None
-    if signature is None:
-        _log_once(path, "no topics file")
-    else:
-        try:
-            index = _index_topics(json.loads(path.read_text(encoding="utf-8")))
-        except (OSError, ValueError) as error:
-            _log_once(path, f"unreadable topics file: {error}")
-            index = None
-    _INDEX_CACHE[str(path)] = (signature, index)
-    return index
+    now = now or contract.utc_now()
+    try:
+        with path.open("rb") as handle:
+            raw = handle.read(contract.MAX_DOCUMENT_BYTES + 1)
+        signature = (hashlib.sha256(raw).hexdigest(), contract.roster_digest(contract.live_roster()))
+        cached = _INDEX_CACHE.get(str(path))
+        if cached is not None and cached[0] == signature:
+            _, generated, expires, index = cached
+            if generated <= now < expires:
+                return index
+            raise contract.ContractError("stale_or_future_evidence")
+        payload = contract.decode_document(raw)
+        index = _index_topics(payload, now=now)
+        expires = contract.timestamp(payload["expires_at"])
+        if payload["topics"]:
+            earliest = min(dt.date.fromisoformat(row["reading_date"]) for row in payload["topics"])
+            expires = min(expires, dt.datetime.combine(
+                earliest + dt.timedelta(days=contract.READING_FRESH_DAYS + 1),
+                dt.time.min, tzinfo=dt.timezone.utc,
+            ))
+        _INDEX_CACHE[str(path)] = (signature, contract.timestamp(payload["generated_at"]), expires, index)
+        return index
+    except (OSError, ValueError) as error:
+        _log_once(path, f"unusable evidence: {error}")
+        return None
 
 
 _UNSET: Any = object()

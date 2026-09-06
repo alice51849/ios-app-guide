@@ -102,6 +102,10 @@ async function connect(url) {
   const downloads = path.join(workspace, "downloads");
   fs.mkdirSync(downloads, {recursive: true});
   const child = spawn(chrome, [
+    // CI containers run as root with a tiny /dev/shm; without these two the
+    // browser never writes DevToolsActivePort and the run dies on a timeout
+    // that names no page (that is exactly how it failed on the runner).
+    "--no-sandbox", "--disable-dev-shm-usage",
     "--headless=new", "--no-first-run", "--no-default-browser-check",
     "--disable-background-networking", "--disable-component-update", "--disable-sync",
     "--disable-breakpad", "--disable-crash-reporter", "--metrics-recording-only", "--no-proxy-server",
@@ -114,10 +118,16 @@ async function connect(url) {
   let browser, page;
   try {
     const portFile = path.join(profile, "DevToolsActivePort");
-    const port = await until(() => {
-      if (child.exitCode !== null) throw new Error("Chromium exited: " + stderr);
-      return fs.existsSync(portFile) && fs.readFileSync(portFile, "utf8").split("\n")[0];
-    });
+    let port;
+    try {
+      port = await until(() => {
+        if (child.exitCode !== null) throw new Error("Chromium exited: " + stderr);
+        return fs.existsSync(portFile) && fs.readFileSync(portFile, "utf8").split("\n")[0];
+      }, STATE_TIMEOUT_MS, "Chromium DevTools port");
+    } catch (error) {
+      // Without the browser's own words a launch failure is unfixable from CI logs.
+      throw new Error(`${error.message} chrome=${chrome} stderr=${stderr.slice(-1200) || "(silent)"}`);
+    }
     const info = await (await fetch("http://127.0.0.1:" + port + "/json/version")).json();
     browser = await connect(info.webSocketDebuggerUrl);
     await browser.send("Browser.setDownloadBehavior", {behavior: "allow", downloadPath: downloads});

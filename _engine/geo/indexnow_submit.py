@@ -40,6 +40,29 @@ DEFAULT_BATCH_SIZE = 10_000
 REQUEST_TIMEOUT_SECONDS = 30
 PRIVATE_TOP_LEVEL_PATHS = {"_engine", ".git", ".github"}
 FINDER_CATALOG_PATH = Path("data/verified-ios-app-finder-catalog.json")
+CONTENT_STATE_VERSION = 1
+CONTENT_STATE_KIND = "indexnow_indexable_content_digests"
+DIGEST_RE = re.compile(r"[0-9a-f]{64}")
+_COMMENT_RE = re.compile(r"(?s)<!--.*?-->")
+_DROPPED_ELEMENT_RE = re.compile(
+    r"(?is)<(script|style|template|noscript)\b[^>]*>.*?</\1\s*>"
+)
+_HEAD_RE = re.compile(r"(?is)<head\b[^>]*>.*?</head\s*>")
+_TAG_RE = re.compile(r"(?s)<[^>]+>")
+_TITLE_RE = re.compile(r"(?is)<title[^>]*>(.*?)</title\s*>")
+_META_RE = re.compile(
+    r"""(?isx)
+    <meta\b[^>]*\bname\s*=\s*(?P<nq>["'])(?P<name>description|robots)(?P=nq)
+    [^>]*\bcontent\s*=\s*(?P<cq>["'])(?P<content>.*?)(?P=cq)
+    """
+)
+_CANONICAL_RE = re.compile(
+    r"""(?isx)
+    <link\b[^>]*\brel\s*=\s*(?P<rq>["'])canonical(?P=rq)
+    [^>]*\bhref\s*=\s*(?P<hq>["'])(?P<href>.*?)(?P=hq)
+    """
+)
+_WHITESPACE_RE = re.compile(r"\s+")
 
 
 class SubmissionError(RuntimeError):
@@ -156,6 +179,139 @@ def git_head_sha(
     if not SHA_RE.fullmatch(sha):
         raise ValueError("IndexNow HEAD must resolve to a full commit hash")
     return sha
+
+
+def indexable_content_digest(path: Path) -> str:
+    """Digest only what a search engine would treat as the page's content.
+
+    IndexNow is a "this URL changed" signal, and Microsoft's own guidance is to
+    submit a URL when its content was added, updated, or deleted.  Every daily
+    regeneration of this site rewrites head-level plumbing (hreflang alternates,
+    JSON-LD ``dateModified``, build fingerprints) on pages whose visible text is
+    byte-identical, so a git-path change set overstates real change by roughly
+    five to one.  This digest deliberately covers the title, meta description,
+    meta robots, canonical target, and visible body text — the parts that change
+    what a result would say — and deliberately ignores the rest of ``<head>``.
+
+    Non-HTML public files keep a whole-file digest: there is no meaningful way
+    to separate their "content" from their bytes.
+    """
+    data = path.read_bytes()
+    if path.suffix.lower() not in {".html", ".htm"}:
+        return hashlib.sha256(data).hexdigest()
+    markup = _COMMENT_RE.sub(" ", data.decode("utf-8", "replace"))
+    markup = _DROPPED_ELEMENT_RE.sub(" ", markup)
+    title = _TITLE_RE.search(markup)
+    meta = {
+        match.group("name").lower(): match.group("content")
+        for match in _META_RE.finditer(markup)
+    }
+    canonical = _CANONICAL_RE.search(markup)
+    body = _TAG_RE.sub(" ", _HEAD_RE.sub(" ", markup))
+    parts = [
+        title.group(1) if title else "",
+        meta.get("description", ""),
+        meta.get("robots", ""),
+        canonical.group("href") if canonical else "",
+        body,
+    ]
+    normalized = "\n".join(
+        _WHITESPACE_RE.sub(" ", html.unescape(part)).strip() for part in parts
+    )
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def url_relative_path(url: str, site: str) -> str | None:
+    """Public URL -> path inside the pages tree, or None when foreign."""
+    prefix = urllib.parse.urlsplit(site).path.rstrip("/") + "/"
+    path = urllib.parse.unquote(urllib.parse.urlsplit(url).path)
+    if not path.startswith(prefix):
+        return None
+    relative = path[len(prefix) :]
+    if relative == "" or relative.endswith("/"):
+        relative += "index.html"
+    return relative
+
+
+def read_content_state(path: Path) -> dict[str, str]:
+    if not path.is_file():
+        return {}
+    document = json.loads(path.read_text(encoding="utf-8"))
+    if (
+        not isinstance(document, dict)
+        or document.get("kind") != CONTENT_STATE_KIND
+        or document.get("version") != CONTENT_STATE_VERSION
+    ):
+        raise ValueError(f"IndexNow content state is not recognised: {path}")
+    digests = document.get("digests")
+    if not isinstance(digests, dict):
+        raise ValueError("IndexNow content state has no digest map")
+    for relative, digest in digests.items():
+        if (
+            not isinstance(relative, str)
+            or not isinstance(digest, str)
+            or not DIGEST_RE.fullmatch(digest)
+        ):
+            raise ValueError("IndexNow content state has an invalid digest")
+    return dict(digests)
+
+
+def write_content_state(path: Path, digests: dict[str, str]) -> None:
+    for relative, digest in digests.items():
+        if not isinstance(relative, str) or not DIGEST_RE.fullmatch(digest):
+            raise ValueError("IndexNow content state has an invalid digest")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    pending = path.with_name(f".{path.name}.new")
+    pending.write_text(
+        json.dumps(
+            {
+                "version": CONTENT_STATE_VERSION,
+                "kind": CONTENT_STATE_KIND,
+                "semantics": "digest_of_indexable_content_not_of_file_bytes",
+                "digests": dict(sorted(digests.items())),
+            },
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    pending.replace(path)
+
+
+def select_content_changed_urls(
+    pages_dir: Path,
+    site: str,
+    urls: list[str],
+    previous: dict[str, str],
+) -> tuple[list[str], dict[str, str]]:
+    """Keep only URLs whose indexable content actually differs.
+
+    Returns the URLs still worth notifying plus the freshly measured digests
+    for every candidate that still exists.  A URL whose file is gone is always
+    kept: a deletion is exactly the change IndexNow exists to carry.
+    """
+    kept: list[str] = []
+    measured: dict[str, str] = {}
+    for url in urls:
+        relative = url_relative_path(url, site)
+        if relative is None:
+            kept.append(url)
+            continue
+        target = pages_dir / relative
+        if not target.is_file():
+            kept.append(url)
+            continue
+        digest = indexable_content_digest(target)
+        measured[relative] = digest
+        if previous.get(relative) != digest:
+            kept.append(url)
+    print(
+        f"content_gate candidates={len(urls)} "
+        f"content_changed={len(kept)} "
+        f"unchanged_suppressed={len(urls) - len(kept)}"
+    )
+    return kept, measured
 
 
 def read_last_submitted_sha(path: Path) -> str | None:
@@ -725,6 +881,7 @@ def run(
     git_since: str | None = None,
     state_file: Path | None = None,
     receipt_file: Path | None = None,
+    content_state_file: Path | None = None,
     limit: int | None = None,
     key_location: str | None = None,
     runner=subprocess.run,
@@ -764,6 +921,18 @@ def run(
             if git_since
             else read_urls(pages_dir, site)
         )
+    previous_content_digests: dict[str, str] = {}
+    measured_content_digests: dict[str, str] = {}
+    # An explicit full refresh is a deliberate re-announcement of the whole
+    # inventory, so it is never gated; only the incremental change set is.
+    if content_state_file is not None and git_since and urls:
+        previous_content_digests = read_content_state(content_state_file)
+        urls, measured_content_digests = select_content_changed_urls(
+            pages_dir,
+            site,
+            urls,
+            previous_content_digests,
+        )
     complete_change_set = True
     if limit is not None:
         if limit <= 0:
@@ -791,6 +960,11 @@ def run(
             write_private_json(
                 receipt_file,
                 receipt,
+            )
+        if content_state_file is not None and measured_content_digests:
+            write_content_state(
+                content_state_file,
+                {**previous_content_digests, **measured_content_digests},
             )
         if state_file is not None and current_sha is not None:
             write_last_submitted_sha(state_file, current_sha)
@@ -852,6 +1026,11 @@ def run(
                 accepted_at=clock().astimezone(timezone.utc).isoformat(),
             ),
         )
+    if content_state_file is not None and complete_change_set:
+        write_content_state(
+            content_state_file,
+            {**previous_content_digests, **measured_content_digests},
+        )
     if (
         state_file is not None
         and current_sha is not None
@@ -893,6 +1072,18 @@ def main() -> None:
             "Acceptance does not mean indexed."
         ),
     )
+    parser.add_argument(
+        "--content-state",
+        type=Path,
+        dest="content_state",
+        help=(
+            "Durable digest of each URL's indexable content. With this set, an "
+            "incremental (--git-since) run only submits a URL when its title, "
+            "description, robots, canonical target, or visible text changed - "
+            "not when the daily rebuild merely rewrote head-level plumbing. A "
+            "full refresh is never gated."
+        ),
+    )
     parser.add_argument("--limit", type=int)
     parser.add_argument(
         "--key-location",
@@ -911,6 +1102,7 @@ def main() -> None:
         git_since=args.git_since,
         state_file=args.state_file,
         receipt_file=args.receipt_file,
+        content_state_file=args.content_state,
         limit=args.limit,
         key_location=args.key_location,
     )

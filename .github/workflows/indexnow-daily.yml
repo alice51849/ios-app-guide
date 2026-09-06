@@ -68,6 +68,11 @@ jobs:
         run: |
           state_file=".indexnow-state/last-submitted-sha"
           receipt_file=".indexnow-state/accepted-receipt.json"
+          # 只有「可索引內容」真的變了才通知。每日重建會改寫每頁的 head
+          # 管線(hreflang、JSON-LD dateModified、build 指紋),實測 75-78%
+          # 的「已變更」頁面可見文字一字未動;把那些送去 IndexNow 只會讓
+          # 這個站的通知被當成雜訊。
+          content_state=".indexnow-state/content-digests.json"
           keyfile="$(find . -maxdepth 1 -type f -name '*.txt' \
             | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
           test -n "$keyfile"
@@ -84,6 +89,7 @@ jobs:
             --batch-size 10000 \
             --state-file "$state_file" \
             --receipt-file "$receipt_file" \
+            --content-state "$content_state" \
             "${mode[@]}"
       - name: Preserve accepted delivery receipt
         if: success()

@@ -371,6 +371,180 @@ class IndexNowTests(unittest.TestCase):
         self.assertIn("changed_public_urls=0", output.getvalue())
         self.assertIn("nothing to submit", output.getvalue())
 
+    def test_full_refresh_is_never_gated_by_the_content_state(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "one.html").write_text(
+                "<html><body>first</body></html>",
+                encoding="utf-8",
+            )
+            (root / "sitemap.xml").write_text(
+                sitemap(f"{site}/one.html"),
+                encoding="utf-8",
+            )
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            content_state = root / "state" / "content-digests.json"
+            indexnow.write_content_state(
+                content_state,
+                {
+                    "one.html": indexnow.indexable_content_digest(
+                        root / "one.html"
+                    )
+                },
+            )
+            sender = mock.Mock()
+            accepted = indexnow.run(
+                root,
+                site,
+                key_file,
+                content_state_file=content_state,
+                sender=sender,
+            )
+        self.assertEqual(1, accepted)
+        self.assertEqual(2, sender.call_count)
+
+    def test_content_gate_ignores_head_churn_but_keeps_real_edits(self) -> None:
+        site = "https://example.com/apps"
+        page = (
+            '<html><head><title>T</title>'
+            '<meta name="description" content="D">'
+            '<link rel="canonical" href="https://example.com/apps/one.html">'
+            "{head}</head><body><p>{body}</p></body></html>"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "one.html"
+            target.write_text(page.format(head="", body="Hello"), encoding="utf-8")
+            first = indexnow.indexable_content_digest(target)
+            target.write_text(
+                page.format(
+                    head=(
+                        '<link rel="alternate" hreflang="de" '
+                        'href="https://example.com/apps/de/one.html">'
+                        '<script>var built="2026-09-07";</script>'
+                    ),
+                    body="Hello",
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(first, indexnow.indexable_content_digest(target))
+            target.write_text(
+                page.format(head="", body="Hello again"),
+                encoding="utf-8",
+            )
+            self.assertNotEqual(first, indexnow.indexable_content_digest(target))
+
+    def test_content_gate_keeps_new_and_deleted_urls(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "kept.html").write_text(
+                "<html><body>same</body></html>",
+                encoding="utf-8",
+            )
+            (root / "edited.html").write_text(
+                "<html><body>new words</body></html>",
+                encoding="utf-8",
+            )
+            unchanged = indexnow.indexable_content_digest(root / "kept.html")
+            urls = [
+                f"{site}/kept.html",
+                f"{site}/edited.html",
+                f"{site}/gone.html",
+            ]
+            selected, measured = indexnow.select_content_changed_urls(
+                root,
+                site,
+                urls,
+                {"kept.html": unchanged, "edited.html": "0" * 64},
+            )
+        self.assertEqual(
+            [f"{site}/edited.html", f"{site}/gone.html"],
+            selected,
+        )
+        self.assertEqual({"kept.html", "edited.html"}, set(measured))
+
+    def test_content_state_round_trips_and_rejects_foreign_documents(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state" / "content-digests.json"
+            self.assertEqual({}, indexnow.read_content_state(path))
+            indexnow.write_content_state(path, {"one.html": "a" * 64})
+            self.assertEqual(
+                {"one.html": "a" * 64},
+                indexnow.read_content_state(path),
+            )
+            path.write_text('{"version": 1}', encoding="utf-8")
+            with self.assertRaises(ValueError):
+                indexnow.read_content_state(path)
+            with self.assertRaises(ValueError):
+                indexnow.write_content_state(path, {"one.html": "nope"})
+
+    def test_run_suppresses_unchanged_urls_on_the_second_pass(self) -> None:
+        site = "https://example.com/apps"
+        sha = "b" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "one.html").write_text(
+                "<html><body>first</body></html>",
+                encoding="utf-8",
+            )
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            content_state = root / "state" / "content-digests.json"
+            runner = mock.Mock(return_value=SimpleNamespace(stdout=f"{sha}\n"))
+            sender = mock.Mock()
+            with mock.patch.object(
+                indexnow,
+                "read_changed_urls",
+                return_value=[f"{site}/one.html"],
+            ):
+                first = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    content_state_file=content_state,
+                    runner=runner,
+                    sender=sender,
+                )
+                self.assertEqual(1, first)
+                sender.reset_mock()
+                output = io.StringIO()
+                with mock.patch("sys.stdout", output):
+                    second = indexnow.run(
+                        root,
+                        site,
+                        key_file,
+                        git_since="25 hours ago",
+                        content_state_file=content_state,
+                        runner=runner,
+                        sender=sender,
+                    )
+                self.assertEqual(0, second)
+                sender.assert_not_called()
+                self.assertIn("unchanged_suppressed=1", output.getvalue())
+
+                (root / "one.html").write_text(
+                    "<html><body>second</body></html>",
+                    encoding="utf-8",
+                )
+                sender.reset_mock()
+                third = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    content_state_file=content_state,
+                    runner=runner,
+                    sender=sender,
+                )
+        self.assertEqual(1, third)
+        self.assertEqual(2, sender.call_count)
+
     def test_successful_delivery_writes_owner_only_acceptance_receipt(self) -> None:
         site = "https://example.com/apps"
         sha = "c" * 40

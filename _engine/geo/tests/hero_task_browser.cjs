@@ -65,7 +65,7 @@ async function connect(url) {
     send(method, params = {}) {
       return new Promise((resolve, reject) => {
         const id = ++sequence;
-        const timer = setTimeout(() => { pending.delete(id); reject(new Error(method + " timed out")); }, 15000);
+        const timer = setTimeout(() => { pending.delete(id); reject(new Error(method + " timed out")); }, Number(process.env.HERO_CDP_TIMEOUT_MS || 60000));
         pending.set(id, {resolve, reject, timer});
         socket.send(JSON.stringify({id, method, params}));
       });

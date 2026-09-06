@@ -259,6 +259,45 @@ class PublicMarketCoverageTests(unittest.TestCase):
         ):
             self.audit(documents)
 
+    def _reviewed_manifest(self, urls):
+        import json
+        import tempfile
+        from pathlib import Path
+
+        directory = tempfile.mkdtemp()
+        path = Path(directory) / "apps.json"
+        path.write_text(
+            json.dumps([{"appStoreUrl": url} for url in urls]),
+            encoding="utf-8",
+        )
+        return path
+
+    def test_reviewed_manifest_accepts_own_campaign_attribution(self):
+        path = self._reviewed_manifest(
+            [
+                "https://apps.apple.com/app/id1234567",
+                "https://apps.apple.com/app/id7654321"
+                "?pt=118326163&ct=geo_pick&mt=8",
+            ]
+        )
+        self.assertEqual(
+            frozenset({"1234567", "7654321"}),
+            coverage.load_reviewed_app_ids(path),
+        )
+
+    def test_reviewed_manifest_rejects_foreign_or_partial_campaign(self):
+        for url in (
+            "https://apps.apple.com/app/id1234567?pt=999&ct=geo_pick&mt=8",
+            "https://apps.apple.com/app/id1234567?pt=118326163&mt=8",
+            "https://apps.apple.com/app/id1234567"
+            "?pt=118326163&ct=geo_pick&mt=8&utm_source=x",
+            "https://apps.apple.com/app/id1234567?ct=a&ct=b&pt=118326163&mt=8",
+        ):
+            with self.subTest(url=url), self.assertRaisesRegex(
+                coverage.CoverageError, "invalid App Store URL"
+            ):
+                coverage.load_reviewed_app_ids(self._reviewed_manifest([url]))
+
     def test_new_reviewed_app_grows_matrix_without_manual_sla_edit(self):
         documents = fixture()
         app_id = "3333333"

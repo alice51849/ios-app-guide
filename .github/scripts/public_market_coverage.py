@@ -204,11 +204,31 @@ def load_reviewed_app_ids(path: Path = DEFAULT_APPS_MANIFEST) -> frozenset[str]:
             or parsed.port is not None
             or parsed.username is not None
             or parsed.password is not None
-            or parsed.query
             or parsed.fragment
             or match is None
         ):
             raise CoverageError("reviewed App manifest has an invalid App Store URL")
+        if parsed.query:
+            # The finder manifest carries this site's own campaign attribution
+            # (gen_store_attribution stamps every public App Store link once a
+            # provider token is configured). Identity still comes from the
+            # path; the query must be exactly our reviewed campaign shape and
+            # nothing else, so a foreign or partial campaign fails closed.
+            try:
+                query = urllib.parse.parse_qs(parsed.query, strict_parsing=True)
+            except ValueError as error:
+                raise CoverageError(
+                    "reviewed App manifest has an invalid App Store URL"
+                ) from error
+            if (
+                query.get("mt") != ["8"]
+                or query.get("pt") != ["118326163"]
+                or len(query.get("ct", [])) != 1
+                or set(query) != {"pt", "ct", "mt"}
+            ):
+                raise CoverageError(
+                    "reviewed App manifest has an invalid App Store URL"
+                )
         app_id = match.group(1)
         if app_id in app_ids:
             raise CoverageError(f"reviewed App manifest repeats App ID {app_id}")

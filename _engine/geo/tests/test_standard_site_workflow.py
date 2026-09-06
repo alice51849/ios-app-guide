@@ -108,6 +108,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "aibriefpack"
+            # hero result tools are extra Standard.site documents, not deep answers
+            and document.get("editorial_kind") != "tool"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -138,6 +140,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "gmoneylite"
+            # hero result tools are extra Standard.site documents, not deep answers
+            and document.get("editorial_kind") != "tool"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -173,6 +177,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "maskmyfile"
+            # hero result tools are extra Standard.site documents, not deep answers
+            and document.get("editorial_kind") != "tool"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -208,6 +214,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "tripbeelite"
+            # hero result tools are extra Standard.site documents, not deep answers
+            and document.get("editorial_kind") != "tool"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -280,6 +288,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "wifiaid"
+            # hero result tools are extra Standard.site documents, not deep answers
+            and document.get("editorial_kind") != "tool"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -362,18 +372,22 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 f'https://open.cait518.cc/ios-app-guide{path}">',
                 html,
             )
-            # These three documents belong to app_key "wifiaid" and their copy
-            # describes the paid edition (a US$5.99 paid download with no
-            # IAP), so the door opens the paid edition. Pinning the Lite id
-            # here froze a state the free-first swap had created, where the
-            # page linked Lite while the copy described the paid App.
-            self.assertIn('content="app-id=6790467886,', html)
+            # The Standard.site document carries the paid edition's editorial
+            # copy, so its own link stays on the paid App. The *page* may have
+            # been re-rendered on the free door by free-first ownership (its
+            # copy then describes Lite), in which case its Smart App Banner
+            # must open the same door the page's direct links open — never a
+            # banner for one edition above copy and links for the other.
+            page_ids = re.findall(r"apps\.apple\.com/(?:[a-z]{2}/)?app/id(\d{9,12})", html)
+            door = max(set(page_ids), key=page_ids.count)
+            self.assertIn(door, {"6790467886", "6793414462"})
+            self.assertIn(f'content="app-id={door},', html)
             # Direct Apple links only; they carry this site's own campaign
             # attribution once a provider token is configured, so match the
             # target app and let the validator reject anything malformed.
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id6790467886(?:\?[^"]*)?)"',
+                rf'(?:[a-z]{{2}}/)?app/id{door}(?:\?[^"]*)?)"',
                 html,
             )
             self.assertTrue(store_urls)
@@ -381,11 +395,12 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 # "html" is the page source here, so unescape by hand.
                 decoded = url.replace("&amp;", "&")
                 self.assertEqual(decoded, validated_app_store_url(decoded))
+            edition = "WiFi Aid Lite" if door == "6793414462" else "WiFi Aid"
             self.assertRegex(
                 html,
                 r'<a class="cta" href="https://apps\.apple\.com/app/'
-                r'id6790467886(?:\?[^"]*)?" rel="nofollow noopener">'
-                r"Get WiFi Aid on the App Store →</a>",
+                rf'id{door}(?:\?[^"]*)?" rel="nofollow noopener">'
+                rf"Get {edition} on the App Store →</a>",
             )
             self.assertIn(
                 "This is a publisher-authored buying guide from the app "
@@ -396,10 +411,12 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 "Try WiFi Aid on a real example first",
                 html,
             )
-            self.assertIn(
-                "paid download with no free trial",
-                html,
-            )
+            if door == "6790467886":
+                # Only the paid door states its own pricing model; the free
+                # door page describes Lite and must not carry paid copy.
+                self.assertIn("paid download with no free trial", html)
+            else:
+                self.assertNotIn("paid download with no free trial", html)
             self.assertNotIn(
                 "alternatives/wifiaid-no-subscription.html",
                 html,

@@ -6,3 +6,6 @@ _engine/geo/pages
 # Availability evidence and scorecards are runtime measurements, not site source.
 **/.growth-runtime/
 /.live_app_manifest.json
+
+# Hero-task validation fixtures are throwaway build inputs, never site content.
+_engine/geo/.hero-validation/

@@ -6,18 +6,18 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-09-05",
+  "dateModified": "2026-09-06",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-notesstudio100",
-        "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
         "description": "100 Notes Studio는 손글씨, 타이핑, PDF 학습과 자료 정리를 한 흐름으로 묶은 개인용 작업 공간입니다. 주요 편집 기능은 네트워크 연결 없이도 사용할 수 있습니다.",
         "seller": {
@@ -37,12 +37,12 @@
           "name": "100 Notes Studio: Pen & Paper",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/notesstudio100.html#webpage"
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-aibriefpack",
-        "url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "name": "AI Brief",
         "description": "AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "AI Brief",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html#webpage"
@@ -145,11 +145,11 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-aim990",
-        "url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
         "name": "Aim990",
         "description": "파트 5는 짧아 보이지만, 문장이 완성되지 않은 문제들이 문법과 어휘가 자동화되지 않으면 시간을 많이 소모할 수 있습니다.",
         "seller": {
@@ -169,12 +169,12 @@
           "name": "Aim990",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
@@ -211,11 +211,11 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
         "name": "Aim990 Plus",
         "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
         "seller": {
@@ -235,12 +235,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html#webpage"
@@ -277,11 +277,11 @@
     {
       "@type": "ListItem",
       "position": 5,
-      "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-battai",
-        "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: 배터리 상태 점수",
         "description": "BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.",
         "seller": {
@@ -301,12 +301,12 @@
           "name": "BattAI: 배터리 상태 점수",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/battai.html#webpage"
@@ -343,11 +343,11 @@
     {
       "@type": "ListItem",
       "position": 6,
-      "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-caldaily",
-        "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "name": "CalDaily 계산기 및 테마",
         "description": "계속 쓰게 되는 계산기입니다. 숫자에 담긴 맥락까지 기억하기 때문입니다.",
         "seller": {
@@ -367,12 +367,12 @@
           "name": "CalDaily 계산기 및 테마",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/caldaily.html#webpage"
@@ -409,11 +409,11 @@
     {
       "@type": "ListItem",
       "position": 7,
-      "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-cvdesk",
-        "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
         "name": "CV Desk",
         "description": "분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다. 그 간극을 메우려고 만든 앱이 CV Desk입니다.",
         "seller": {
@@ -433,12 +433,12 @@
           "name": "CV Desk",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
@@ -475,11 +475,11 @@
     {
       "@type": "ListItem",
       "position": 8,
-      "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-cyca",
-        "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
         "name": "Cyca",
         "description": "데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다. Cyca, 딱 그 한 가지에만 집중합니다.",
         "seller": {
@@ -499,12 +499,12 @@
           "name": "Cyca",
           "operatingSystem": "iOS",
           "applicationCategory": "HealthApplication",
-          "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
@@ -541,11 +541,11 @@
     {
       "@type": "ListItem",
       "position": 9,
-      "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dailymate",
-        "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate",
         "description": "여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다. DailyMate, 바로 그 문제에서 출발했습니다.",
         "seller": {
@@ -565,12 +565,12 @@
           "name": "DailyMate",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
@@ -607,11 +607,11 @@
     {
       "@type": "ListItem",
       "position": 10,
-      "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dailymatelite",
-        "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "name": "DailyMate Lite: 바로 쓰는 한마디",
         "description": "막상 말하려는 순간, 알맞은 표현이 떠오르지 않나요? DailyMate Lite는 여행, 업무, 식사, 건강 등 실제 장면을 짧은 질문과 자연스러운 대답으로 구성해, 50개 언어를 한 차례의 온전한 대화로 연습할 수 있게 해 줍니다.",
         "seller": {
@@ -631,12 +631,12 @@
           "name": "DailyMate Lite: 바로 쓰는 한마디",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/dailymatelite.html#webpage"
@@ -673,11 +673,11 @@
     {
       "@type": "ListItem",
       "position": 11,
-      "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gmoney",
-        "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money",
         "description": "여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다. 그 간극을 메우려고 만든 앱이 G+Money입니다.",
         "seller": {
@@ -697,12 +697,12 @@
           "name": "G+Money",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
@@ -739,11 +739,11 @@
     {
       "@type": "ListItem",
       "position": 12,
-      "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gmoneylite",
-        "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite",
         "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
         "seller": {
@@ -763,12 +763,12 @@
           "name": "G+Money Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html#webpage"
@@ -805,11 +805,11 @@
     {
       "@type": "ListItem",
       "position": 13,
-      "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag",
         "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
         "seller": {
@@ -829,12 +829,12 @@
           "name": "HoursTag",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html#webpage"
@@ -871,11 +871,11 @@
     {
       "@type": "ListItem",
       "position": 14,
-      "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-hourstaglite",
-        "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "name": "HoursTag Lite",
         "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
         "seller": {
@@ -895,12 +895,12 @@
           "name": "HoursTag Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html#webpage"
@@ -937,11 +937,11 @@
     {
       "@type": "ListItem",
       "position": 15,
-      "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lockhour",
-        "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
         "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다. 그래서 만든 것이 LockHour Pro입니다.",
         "seller": {
@@ -961,12 +961,12 @@
           "name": "LockHour Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
@@ -1003,11 +1003,11 @@
     {
       "@type": "ListItem",
       "position": 16,
-      "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumibopomofo",
-        "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Bopomofo",
         "description": "주음을 처음 배우는 아이에게는 37개 기호를 모두 따라 그리기와 놀이로 다루는 앱이 맞습니다. 광고도, 데이터 수집도 없이 4~7세 첫 학습 시기에 맞춘 앱입니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo입니다.",
         "seller": {
@@ -1027,12 +1027,12 @@
           "name": "Lumi Bopomofo",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
@@ -1069,11 +1069,11 @@
     {
       "@type": "ListItem",
       "position": 17,
-      "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumibopomofopro",
-        "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo Pro입니다.",
         "seller": {
@@ -1093,12 +1093,12 @@
           "name": "Lumi Bopomofo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
@@ -1135,11 +1135,11 @@
     {
       "@type": "ListItem",
       "position": 18,
-      "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiletters",
-        "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Letters",
         "description": "어린이에게 가장 중요한 것은 광고와 데이터 수집 여부입니다 — 학습 앱은 광고 없이 게임 루프 안에서 가르치고, 어린이로부터 아무것도 수집하지 않으며, 부모가 신뢰할 수 있는 한 번 결제 방식이어야 합니다. 그래서 만든 것이 Lumi Letters입니다.",
         "seller": {
@@ -1159,12 +1159,12 @@
           "name": "Lumi Letters",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
@@ -1201,11 +1201,11 @@
     {
       "@type": "ListItem",
       "position": 19,
-      "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiletterspro",
-        "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Letters Pro",
         "description": "취학을 준비하는 가정에는 글자 소리, 쓰기, 단어 만들기가 하나로 이어지는 초기 읽기 과정이 필요합니다. 서로 따로 노는 알파벳 게임 모음으로는 그 흐름이 생기지 않습니다. 그 간극을 메우려고 만든 앱이 Lumi Letters Pro입니다.",
         "seller": {
@@ -1225,12 +1225,12 @@
           "name": "Lumi Letters Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
@@ -1267,11 +1267,11 @@
     {
       "@type": "ListItem",
       "position": 20,
-      "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimath",
-        "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Math Planet",
         "description": "최고의 어린이 수학 앱은 산수 연습뿐 아니라 패턴, 수열, 공간 사고력 등 추론을 훈련하며 아이가 즐겨 하는 게임 안에 숨겨져 있습니다. 그래서 만든 것이 Lumi Math Planet입니다.",
         "seller": {
@@ -1291,12 +1291,12 @@
           "name": "Lumi Math Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
@@ -1333,11 +1333,11 @@
     {
       "@type": "ListItem",
       "position": 21,
-      "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimathpro",
-        "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Math Pro",
         "description": "완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다. 그래서 만든 것이 Lumi Math Pro입니다.",
         "seller": {
@@ -1357,12 +1357,12 @@
           "name": "Lumi Math Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
@@ -1399,11 +1399,11 @@
     {
       "@type": "ListItem",
       "position": 22,
-      "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimission",
-        "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Mission Planet",
         "description": "유아에게는 잠자리 습관이 짧고 시각적이며 예측 가능해야 아이가 반복적인 알림 없이 스스로 따라갈 수 있습니다. 이런 상황이라면 Lumi Mission Planet 한번 살펴보세요.",
         "seller": {
@@ -1423,12 +1423,12 @@
           "name": "Lumi Mission Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
@@ -1465,11 +1465,11 @@
     {
       "@type": "ListItem",
       "position": 23,
-      "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimissionpro",
-        "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "치아 닦기와 잠자기 준비는 매일 밤 같은 순간에 실패하기 쉽습니다: 아이도 피곤하고 부모도 피곤하며 다음 단계가 충분히 눈에 띄지 않습니다.",
         "seller": {
@@ -1489,12 +1489,12 @@
           "name": "Lumi Mission Planet Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
@@ -1531,11 +1531,11 @@
     {
       "@type": "ListItem",
       "position": 24,
-      "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Trip Planet",
         "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Lumi Trip Planet입니다.",
         "seller": {
@@ -1555,12 +1555,12 @@
           "name": "Lumi Trip Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
@@ -1597,11 +1597,11 @@
     {
       "@type": "ListItem",
       "position": 25,
-      "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiweather",
-        "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
         "name": "Lumi Weather",
         "description": "야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다. 그래서 만든 것이 Lumi Weather입니다.",
         "seller": {
@@ -1621,12 +1621,12 @@
           "name": "Lumi Weather",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
@@ -1663,11 +1663,11 @@
     {
       "@type": "ListItem",
       "position": 26,
-      "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-maskmyfile",
-        "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mask My File",
         "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
         "seller": {
@@ -1687,12 +1687,12 @@
           "name": "Mask My File",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html#webpage"
@@ -1729,11 +1729,11 @@
     {
       "@type": "ListItem",
       "position": 27,
-      "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochi",
-        "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
         "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 반복 규칙, Apple Watch 컴플리케이션만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
         "seller": {
@@ -1753,12 +1753,12 @@
           "name": "Mochi",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
@@ -1795,11 +1795,11 @@
     {
       "@type": "ListItem",
       "position": 28,
-      "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochidonestamp",
-        "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi DoneStamp",
         "description": "딱딱한 캘린더에 넣기 어려운 집안일과 관리에는, 실제로 언제 끝냈는지를 기억하고 그 시점부터 다음까지의 간격을 재 주는 기록 앱이 잘 맞습니다",
         "seller": {
@@ -1819,12 +1819,12 @@
           "name": "Mochi DoneStamp",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
-          "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html#webpage"
@@ -1861,11 +1861,11 @@
     {
       "@type": "ListItem",
       "position": 29,
-      "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-moneytag",
-        "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
         "name": "MoneyTag: 수입과 지출",
         "description": "수입과 지출 프로젝트마다 장부가 따로 있습니다. 수입에서 지출을 빼면 그 프로젝트의 순액입니다. 가장 많이 받는 질문을 모았습니다. 원하는 답이 없다면 메일을 보내 주세요. 모든 메일을 사람이 직접 읽습니다.",
         "seller": {
@@ -1885,12 +1885,12 @@
           "name": "MoneyTag: 수입과 지출",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/moneytag.html#webpage"
@@ -1927,11 +1927,11 @@
     {
       "@type": "ListItem",
       "position": 30,
-      "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-onepageppt",
-        "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
         "name": "OnePage PPT: AI 발표자료",
         "description": "빽빽한 텍스트를 실제로 읽히는 한 장으로.",
         "seller": {
@@ -1951,12 +1951,12 @@
           "name": "OnePage PPT: AI 발표자료",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/onepageppt.html#webpage"
@@ -1993,11 +1993,11 @@
     {
       "@type": "ListItem",
       "position": 31,
-      "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-photocream",
-        "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
         "name": "PhotoCream",
         "description": "여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다",
         "seller": {
@@ -2017,12 +2017,12 @@
           "name": "PhotoCream",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
@@ -2059,11 +2059,11 @@
     {
       "@type": "ListItem",
       "position": 32,
-      "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-picclear",
-        "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
         "name": "PicClear",
         "description": "빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상",
         "seller": {
@@ -2083,12 +2083,12 @@
           "name": "PicClear",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
@@ -2125,11 +2125,11 @@
     {
       "@type": "ListItem",
       "position": 33,
-      "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-savetag",
-        "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
         "name": "SaveTag: AI 링크 보관함",
         "description": "일단 저장하고, 이번엔 진짜 다 읽습니다.",
         "seller": {
@@ -2149,12 +2149,12 @@
           "name": "SaveTag: AI 링크 보관함",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/savetag.html#webpage"
@@ -2191,11 +2191,11 @@
     {
       "@type": "ListItem",
       "position": 34,
-      "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-scanto",
-        "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
         "name": "ScanTo Pro",
         "description": "환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다. ScanTo Pro, 바로 그 문제에서 출발했습니다.",
         "seller": {
@@ -2215,12 +2215,12 @@
           "name": "ScanTo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
@@ -2257,11 +2257,11 @@
     {
       "@type": "ListItem",
       "position": 35,
-      "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sereno",
-        "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sereno",
         "description": "수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다. 이런 상황이라면 Sereno 한번 살펴보세요.",
         "seller": {
@@ -2281,12 +2281,12 @@
           "name": "Sereno",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
-          "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
@@ -2323,11 +2323,11 @@
     {
       "@type": "ListItem",
       "position": 36,
-      "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-shotinbox",
-        "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
         "description": "스크린샷을 깔끔하게 모든 스크린샷을 찾고, 처리하고, 정리하세요.",
         "seller": {
@@ -2347,12 +2347,12 @@
           "name": "ShotInbox AI: Sort Screenshots",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/shotinbox.html#webpage"
@@ -2389,11 +2389,11 @@
     {
       "@type": "ListItem",
       "position": 37,
-      "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-snapport",
-        "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
         "name": "Snapport",
         "description": "아기 여권 사진은 다른 사람이 나오면 안 되고 배경은 단색이어야 하지만, 영아는 눈을 완전히 뜨지 않아도 됩니다.",
         "seller": {
@@ -2413,12 +2413,12 @@
           "name": "Snapport",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
@@ -2455,11 +2455,11 @@
     {
       "@type": "ListItem",
       "position": 38,
-      "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-snapportlite",
-        "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
         "name": "Snapport Lite：집에서 증명사진",
         "description": "Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요.",
         "seller": {
@@ -2479,12 +2479,12 @@
           "name": "Snapport Lite：집에서 증명사진",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/snapportlite.html#webpage"
@@ -2521,11 +2521,11 @@
     {
       "@type": "ListItem",
       "position": 39,
-      "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sononote",
-        "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
         "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다.",
         "seller": {
@@ -2545,12 +2545,12 @@
           "name": "Sono Note",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
@@ -2587,11 +2587,11 @@
     {
       "@type": "ListItem",
       "position": 40,
-      "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbeelite",
-        "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
         "name": "TripBee Lite",
         "description": "다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다. 이런 상황이라면 TripBee Lite 한번 살펴보세요.",
         "seller": {
@@ -2611,12 +2611,12 @@
           "name": "TripBee Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
-          "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
@@ -2653,11 +2653,11 @@
     {
       "@type": "ListItem",
       "position": 41,
-      "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbee",
-        "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
         "name": "TripBee Pro: 여행 플래너",
         "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요.",
         "seller": {
@@ -2677,12 +2677,12 @@
           "name": "TripBee Pro: 여행 플래너",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
-          "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
@@ -2719,11 +2719,11 @@
     {
       "@type": "ListItem",
       "position": 42,
-      "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-unblurry",
-        "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
         "name": "Unblurry",
         "description": "아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다",
         "seller": {
@@ -2743,12 +2743,12 @@
           "name": "Unblurry",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
@@ -2785,11 +2785,11 @@
     {
       "@type": "ListItem",
       "position": 43,
-      "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid",
         "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
         "seller": {
@@ -2809,12 +2809,12 @@
           "name": "WiFi Aid",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html#webpage"
@@ -2851,11 +2851,11 @@
     {
       "@type": "ListItem",
       "position": 44,
-      "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaidlite",
-        "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
         "description": "\"또 인터넷이 느려졌다\" — 원인은 공유기일까요, DNS일까요, 통신사일까요, 아니면 사이트 자체일까요? WiFi Aid Lite는 여러 독립 경로로 DNS, TCP, TLS, 응답 시간, 안정성을 동시에 검사하고 증거를 교차 비교해 가장 가능성 높은 원인을 알려 줍니다",
         "seller": {
@@ -2875,12 +2875,12 @@
           "name": "WiFi Aid Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/wifiaidlite.html#webpage"
@@ -2917,11 +2917,11 @@
     {
       "@type": "ListItem",
       "position": 45,
-      "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wordmatelite",
-        "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate Lite 하루 5단어",
         "description": "단어장을 만들다가 지쳐서 공부 자체를 놓아버린 적이 있다면, Wordmate Lite는 그 지점을 없애기 위해 만든 어휘 앱입니다.",
         "seller": {
@@ -2941,12 +2941,12 @@
           "name": "Wordmate Lite 하루 5단어",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/wordmatelite.html#webpage"
@@ -2983,11 +2983,11 @@
     {
       "@type": "ListItem",
       "position": 46,
-      "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8",
+      "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wordmate",
-        "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8",
+        "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
         "name": "Wordmate: 44개 언어 학습",
         "description": "바쁜 출퇴근길에는 전체 레슨이나 계정, 매번 휴대폰 없이도 짧은 시간에 단어를 복습할 수 있는 앱이 필요하며, Wordmate: 44개 언어 학습은 이를 위해 만들어졌습니다.",
         "seller": {
@@ -3007,12 +3007,12 @@
           "name": "Wordmate: 44개 언어 학습",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8",
+          "url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8"
+            "target": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"

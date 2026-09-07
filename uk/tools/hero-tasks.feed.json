@@ -223,6 +223,81 @@
       "language": "uk",
       "title": "Зустріч на одній сторінці",
       "url": "https://open.cait518.cc/ios-app-guide/uk/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 458,
+          "title": "Завантажити CSV прикладу",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Впишіть, на скільки замовив кожен, вкажіть відсоток податку й чайових — і побачите, скільки з кого. Податок і чайові розподіляються до копійки пропорційно замовленню, а таблицю можна завантажити у CSV. Проміжний підсумок = сума всіх замовлень. Податок = проміжний підсумок × ставка податку. Чайові = проміжний підсумок × відсоток чайових. Частка кожного — його замовлення ÷ проміжний підсумок; копійки, що лишилися, дістаються спершу найбільшим дробовим частинам, тож частки завжди дають рівно суму рахунку. Використовуйте одну валюту, а податок і чайові вказуйте у відсотках від проміжного підсумку. Без конвертації валют, без правил щодо сервісного збору, без порад про розмір чайових і без платежів. На екрані округлення до двох знаків; сам розрахунок ведеться в цілих копійках.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html",
+      "language": "uk",
+      "title": "Розділити рахунок",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 484,
+          "title": "Завантажити CSV прикладу",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Випишіть, що ви зберегли й скільки часу це забере, вкажіть, скільки хвилин ви справді читаєте на день, — і побачите, якого дня дочитаєте кожен матеріал. План завантажується у CSV. Наростаючий підсумок = хвилини цього матеріалу плюс усе вище. День = наростаючий підсумок ÷ хвилини на день, з округленням угору. Дочитано = дата початку + день − 1. Вільні хвилини = дні × хвилини на день − усього хвилин. Порядок введення — це порядок читання: нічого не переставляється, не пропускається й не об'єднується. Одне читання на день, рівно на ваш ліміт, без вихідних, без відкривання чи завантаження посилань і без оцінки вашої швидкості читання.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/reading-backlog-sheet.html",
+      "language": "uk",
+      "title": "План «прочитати пізніше»",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ua/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1462,
+          "title": "Завантажити CSV прикладу",
+          "url": "https://open.cait518.cc/ios-app-guide/uk/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Вкажіть, коли написано кожен конспект, — і отримаєте п'ять наступних дат повторення, скільки днів лишилося та які дати вже минули. Графік завантажується у CSV. Дата повторення = дата написання + 1, 3, 7, 16 і 35 днів. Лишилося днів = дата повторення − сьогодні; від'ємне число означає дату, що вже минула. Найближче повторення = перша дата, яка припадає на сьогодні або пізніше. Це фіксовані проміжки, а не модель пам'яті: тут нічого не прогнозується, конспекти не оцінюються й відповіді не перевіряються. Лише дати — без часу, часових поясів, нагадувань і сповіщень.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/uk/tools/review-schedule-sheet.html",
+      "language": "uk",
+      "title": "Графік повторення",
+      "url": "https://open.cait518.cc/ios-app-guide/uk/tools/review-schedule-sheet.html"
     }
   ],
   "language": "uk",

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="hi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है।">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="bill-split">
+<title>बिल का बँटवारा</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="मुफ़्त कार्य परिणाम">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="मुफ़्त कार्य परिणाम">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="मुफ़्त कार्य परिणाम">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/hi/tools/hero-tasks.feed.json" title="मुफ़्त कार्य परिणाम">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/734219182d6e9d1a-hero-task-billsplit.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html","name":"बिल का बँटवारा","description":"हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है।","inLanguage":"hi","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html#worked-example","name":"गणना का उदाहरण","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/hi/tools/results/bill-split-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html#howto","name":"बिल का बँटवारा","description":"हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है।","inLanguage":"hi","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"बिल का बँटवारा","url":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"उप-योग = सबके ऑर्डर का जोड़। टैक्स = उप-योग × टैक्स दर। टिप = उप-योग × टिप दर। हर व्यक्ति का हिस्सा उसका अपना ऑर्डर ÷ उप-योग है; बचे हुए पैसे पहले सबसे बड़े दशमलव वाले को जाते हैं, इसलिए सबके हिस्से जोड़कर हमेशा पूरा बिल बनता है।"},{"@type":"HowToStep","position":2,"text":"एक ही मुद्रा रखें और टैक्स तथा टिप को उप-योग के प्रतिशत में भरें। कोई मुद्रा रूपांतरण नहीं, सर्विस चार्ज का कोई नियम नहीं, कितनी टिप देनी है इसकी सलाह नहीं, और कोई भुगतान नहीं। स्क्रीन पर दो दशमलव तक दिखता है; बँटवारा पूरे पैसों में गिना जाता है।"}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html#example-dataset","name":"गणना का उदाहरण","description":"हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है।","inLanguage":"hi","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/hi/tools/results/bill-split-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"bill-split-v1","slug":"bill-split-sheet","locale":"hi","copy":{"title":"बिल का बँटवारा","intro":"हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है।","income":"प्रति घंटे शुद्ध आय","day":"हर कार्यदिवस के घंटे","item":"खरीदारी","quantity":"संख्या","price":"कर सहित इकाई मूल्य","total":"कुल","hours":"काम के घंटे","days":"कार्यदिवस","add":"व्यक्ति जोड़ें","remove":"हटाएँ","download":"मेरा CSV डाउनलोड करें","reset":"उदाहरण बहाल करें","example":"गणना का उदाहरण","example_note":"तीन लोगों ने 32.40, 18.90 और 25.00 का ऑर्डर किया, टैक्स 8.25% और टिप 15%। सभी रकम एक ही मुद्रा में हैं।","formula":"उप-योग = सबके ऑर्डर का जोड़। टैक्स = उप-योग × टैक्स दर। टिप = उप-योग × टिप दर। हर व्यक्ति का हिस्सा उसका अपना ऑर्डर ÷ उप-योग है; बचे हुए पैसे पहले सबसे बड़े दशमलव वाले को जाते हैं, इसलिए सबके हिस्से जोड़कर हमेशा पूरा बिल बनता है।","limits":"एक ही मुद्रा रखें और टैक्स तथा टिप को उप-योग के प्रतिशत में भरें। कोई मुद्रा रूपांतरण नहीं, सर्विस चार्ज का कोई नियम नहीं, कितनी टिप देनी है इसकी सलाह नहीं, और कोई भुगतान नहीं। स्क्रीन पर दो दशमलव तक दिखता है; बँटवारा पूरे पैसों में गिना जाता है।","privacy":"आपकी प्रविष्टियाँ इसी टैब में रहती हैं। कोई अपलोड, खाता, प्रविष्टियों की ट्रैकिंग या संग्रहण नहीं। दोबारा लोड करने पर बदलाव मिट जाते हैं।","optional":"वैकल्पिक ऐप","optional_note":"इस मुफ़्त शीट के लिए ऐप आवश्यक नहीं है। मौजूदा सुविधाएँ और कीमतें हर App Store पेज पर देखें।","error":"हर व्यक्ति का नाम और 0 या उससे अधिक की रकम भरें, दोनों प्रतिशत 0 से 100 के बीच रखें, और उप-योग शून्य से बड़ा हो। ज़्यादा से ज़्यादा दो दशमलव।","row_limit":"अधिकतम 20 लोग; हर रकम 10,00,00,000 तक।","tools":"मुफ़्त टूल","method":"सूत्र और सीमाएँ","sources":"स्रोत","result":"आपका परिणाम","disclosure":"वैकल्पिक ऐप के डेवलपर Lumi Studio द्वारा प्रकाशित। यह स्वतंत्र रैंकिंग नहीं है।","download_example":"उदाहरण CSV डाउनलोड करें","feed":"मुफ़्त कार्य परिणाम","tax_pct":"टैक्स %","tip_pct":"टिप %","person":"व्यक्ति","amount":"कितने का ऑर्डर","tax_share":"टैक्स का हिस्सा","tip_share":"टिप का हिस्सा","total_due":"कुल देना है","subtotal":"उप-योग","tax":"टैक्स","tip":"टिप","grand_total":"बिल का कुल"},"example":{"tax_pct":"8.25","tip_pct":"15","items":[{"amount":"32.40","name":"व्यक्ति 1"},{"amount":"18.90","name":"व्यक्ति 2"},{"amount":"25.00","name":"व्यक्ति 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/f08eeec36dcf3a4d-hero-task-billsplit-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/51ee2eea9ba8e492-hero-task-billsplit-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/hi/tools/index.html">मुफ़्त टूल</a><span>Lumi Studio</span></nav>
+<h1>बिल का बँटवारा</h1><p>हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है।</p>
+<section class="panel" aria-label="बिल का बँटवारा">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="tax-pct">टैक्स %</label><input id="tax-pct" type="text" inputmode="decimal" maxlength="6" value="8.25" required autocomplete="off"></div>
+<div><label for="tip-pct">टिप %</label><input id="tip-pct" type="text" inputmode="decimal" maxlength="6" value="15" required autocomplete="off"></div>
+</div>
+<div id="split-rows"><div class="split-row"><div class="name-field"><label data-label="name" for="row-1-name">व्यक्ति</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="व्यक्ति 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">कितने का ऑर्डर</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="32.40" required autocomplete="off"></div><div><p class="output-label">टैक्स का हिस्सा</p><output data-output="tax">2.67</output></div><div><p class="output-label">टिप का हिस्सा</p><output data-output="tip">4.86</output></div><div><p class="output-label">कुल देना है</p><output data-output="due">39.93</output></div><button type="button" data-remove aria-label="हटाएँ · व्यक्ति 1">हटाएँ</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-2-name">व्यक्ति</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="व्यक्ति 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">कितने का ऑर्डर</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="18.90" required autocomplete="off"></div><div><p class="output-label">टैक्स का हिस्सा</p><output data-output="tax">1.56</output></div><div><p class="output-label">टिप का हिस्सा</p><output data-output="tip">2.84</output></div><div><p class="output-label">कुल देना है</p><output data-output="due">23.30</output></div><button type="button" data-remove aria-label="हटाएँ · व्यक्ति 2">हटाएँ</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-3-name">व्यक्ति</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="व्यक्ति 3" required autocomplete="off"></div><div><label data-label="amount" for="row-3-amount">कितने का ऑर्डर</label><input id="row-3-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="25.00" required autocomplete="off"></div><div><p class="output-label">टैक्स का हिस्सा</p><output data-output="tax">2.06</output></div><div><p class="output-label">टिप का हिस्सा</p><output data-output="tip">3.75</output></div><div><p class="output-label">कुल देना है</p><output data-output="due">30.81</output></div><button type="button" data-remove aria-label="हटाएँ · व्यक्ति 3">हटाएँ</button></div></div>
+<template id="split-template"><div class="split-row"><div class="name-field"><label data-label="name" for="row-0-name">व्यक्ति</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">कितने का ऑर्डर</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><div><p class="output-label">टैक्स का हिस्सा</p><output data-output="tax">0.00</output></div><div><p class="output-label">टिप का हिस्सा</p><output data-output="tip">0.00</output></div><div><p class="output-label">कुल देना है</p><output data-output="due">0.00</output></div><button type="button" data-remove aria-label="हटाएँ · ">हटाएँ</button></div></template>
+<div class="actions"><button type="button" id="add-person">व्यक्ति जोड़ें</button><span class="small">अधिकतम 20 लोग; हर रकम 10,00,00,000 तक।</span></div>
+<div class="totals split-totals" aria-label="आपका परिणाम">
+<div><p>उप-योग</p><output class="total-value" id="subtotal-value">76.30</output></div><div><p>टैक्स</p><output class="total-value" id="tax-value">6.29</output></div><div><p>टिप</p><output class="total-value" id="tip-value">11.45</output></div><div class="grand"><p>बिल का कुल</p><output class="total-value" id="grand-total-value">94.04</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>मेरा CSV डाउनलोड करें</button><button type="button" id="reset-example">उदाहरण बहाल करें</button></div>
+</fieldset></form><p class="small">आपकी प्रविष्टियाँ इसी टैब में रहती हैं। कोई अपलोड, खाता, प्रविष्टियों की ट्रैकिंग या संग्रहण नहीं। दोबारा लोड करने पर बदलाव मिट जाते हैं।</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>गणना का उदाहरण</h2><p>तीन लोगों ने 32.40, 18.90 और 25.00 का ऑर्डर किया, टैक्स 8.25% और टिप 15%। सभी रकम एक ही मुद्रा में हैं।</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">व्यक्ति</th><th scope="col">कितने का ऑर्डर</th><th scope="col">टैक्स का हिस्सा</th><th scope="col">टिप का हिस्सा</th><th scope="col">कुल देना है</th></tr></thead><tbody><tr><td>व्यक्ति 1</td><td>32.40</td><td>2.67</td><td>4.86</td><td>39.93</td></tr><tr><td>व्यक्ति 2</td><td>18.90</td><td>1.56</td><td>2.84</td><td>23.30</td></tr><tr><td>व्यक्ति 3</td><td>25.00</td><td>2.06</td><td>3.75</td><td>30.81</td></tr></tbody><tfoot><tr class="example-total"><td>उप-योग</td><td>76.30</td><td></td><td></td><td></td></tr><tr class="example-total"><td>टैक्स</td><td>8.25%</td><td>6.29</td><td></td><td></td></tr><tr class="example-total"><td>टिप</td><td>15.00%</td><td></td><td>11.45</td><td></td></tr><tr class="example-total"><td>बिल का कुल</td><td></td><td></td><td></td><td>94.04</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/hi/tools/results/bill-split-sheet.csv" download>उदाहरण CSV डाउनलोड करें</a>
+<h2>सूत्र और सीमाएँ</h2><p>उप-योग = सबके ऑर्डर का जोड़। टैक्स = उप-योग × टैक्स दर। टिप = उप-योग × टिप दर। हर व्यक्ति का हिस्सा उसका अपना ऑर्डर ÷ उप-योग है; बचे हुए पैसे पहले सबसे बड़े दशमलव वाले को जाते हैं, इसलिए सबके हिस्से जोड़कर हमेशा पूरा बिल बनता है।</p>
+<pre class="formula">उप-योग = 32.40 + 18.90 + 25.00 = 76.30
+टैक्स = 76.30 × 8.25% = 6.29
+टिप = 76.30 × 15.00% = 11.45
+व्यक्ति 1: 32.40 + 2.67 + 4.86 = 39.93
+व्यक्ति 2: 18.90 + 1.56 + 2.84 = 23.30
+व्यक्ति 3: 25.00 + 2.06 + 3.75 = 30.81
+बिल का कुल = 94.04</pre>
+<p>एक ही मुद्रा रखें और टैक्स तथा टिप को उप-योग के प्रतिशत में भरें। कोई मुद्रा रूपांतरण नहीं, सर्विस चार्ज का कोई नियम नहीं, कितनी टिप देनी है इसकी सलाह नहीं, और कोई भुगतान नहीं। स्क्रीन पर दो दशमलव तक दिखता है; बँटवारा पूरे पैसों में गिना जाता है।</p>
+<ul class="small">
+<li>कितने का ऑर्डर: <bdi dir="ltr">0 ≤ n ≤ 100,000,000</bdi></li>
+<li>टैक्स % / टिप %: <bdi dir="ltr">0 ≤ % ≤ 100</bdi></li>
+<li>व्यक्ति: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>वैकल्पिक ऐप</h2><p>इस मुफ़्त शीट के लिए ऐप आवश्यक नहीं है। मौजूदा सुविधाएँ और कीमतें हर App Store पेज पर देखें।</p><div class="actions"><a class="button" href="https://apps.apple.com/in/app/id6794178671?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store पर CalDaily कैलकुलेटर और थीम पाएँ</a></div></section>
+<footer><p>वैकल्पिक ऐप के डेवलपर Lumi Studio द्वारा प्रकाशित। यह स्वतंत्र रैंकिंग नहीं है।</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">स्रोत</a> · <a href="https://open.cait518.cc/ios-app-guide/hi/tools/hero-tasks.feed.json">मुफ़्त कार्य परिणाम</a></footer>
+</main></body></html>

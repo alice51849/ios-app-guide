@@ -223,6 +223,81 @@
       "language": "hi",
       "title": "मीटिंग नोट्स से एक पेज की रूपरेखा",
       "url": "https://open.cait518.cc/ios-app-guide/hi/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 514,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "हर व्यक्ति ने कितने का ऑर्डर किया वह भरिए, टैक्स और टिप का प्रतिशत डालिए, और देखिए किसे कितना देना है। टैक्स और टिप ऑर्डर के अनुपात में पैसे-पैसे तक बँटते हैं, और शीट CSV में डाउनलोड हो जाती है। उप-योग = सबके ऑर्डर का जोड़। टैक्स = उप-योग × टैक्स दर। टिप = उप-योग × टिप दर। हर व्यक्ति का हिस्सा उसका अपना ऑर्डर ÷ उप-योग है; बचे हुए पैसे पहले सबसे बड़े दशमलव वाले को जाते हैं, इसलिए सबके हिस्से जोड़कर हमेशा पूरा बिल बनता है। एक ही मुद्रा रखें और टैक्स तथा टिप को उप-योग के प्रतिशत में भरें। कोई मुद्रा रूपांतरण नहीं, सर्विस चार्ज का कोई नियम नहीं, कितनी टिप देनी है इसकी सलाह नहीं, और कोई भुगतान नहीं। स्क्रीन पर दो दशमलव तक दिखता है; बँटवारा पूरे पैसों में गिना जाता है।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html",
+      "language": "hi",
+      "title": "बिल का बँटवारा",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 608,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "जो सहेजा है उसे और उसमें लगने वाला समय लिखिए, दिन में सच में कितने मिनट पढ़ते हैं वह भरिए, और देखिए कौन-सी चीज़ किस दिन पूरी होगी। योजना CSV में डाउनलोड हो जाती है। अब तक का जोड़ = इस चीज़ के मिनट और ऊपर की सब चीज़ें। दिन = अब तक का जोड़ ÷ रोज़ के मिनट, ऊपर की ओर पूर्णांकित। पूरा होगा = शुरुआत की तारीख + दिन − 1। बचे मिनट = दिन × रोज़ के मिनट − कुल मिनट। जिस क्रम में लिखा है वही पढ़ने का क्रम है: कुछ भी आगे-पीछे, छोड़ा या जोड़ा नहीं जाता। रोज़ एक बार, बिल्कुल आपके तय समय जितना, बिना छुट्टी के; कोई लिंक न खोला जाता है न लाया जाता है, और आपकी पढ़ने की रफ़्तार का अनुमान भी नहीं लगाया जाता।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/reading-backlog-sheet.html",
+      "language": "hi",
+      "title": "«बाद में पढ़ें» योजना",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1531,
+          "title": "उदाहरण CSV डाउनलोड करें",
+          "url": "https://open.cait518.cc/ios-app-guide/hi/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "हर नोट किस दिन लिखा था वह भरिए, और अगली पाँच दोहराई की तारीखें पाइए — कितने दिन बचे हैं और कौन-सी निकल चुकी हैं, सब दिखेगा। कार्यक्रम CSV में डाउनलोड हो जाता है। दोहराने की तारीख = लिखने की तारीख + 1, 3, 7, 16 और 35 दिन। कितने दिन बचे = दोहराने की तारीख − आज; ऋणात्मक संख्या का मतलब वह तारीख निकल चुकी है। अगली दोहराई = पहली तारीख जो आज या उसके बाद पड़ती है। यह तय अंतरालों की सीढ़ी है, याददाश्त का मॉडल नहीं: यहाँ कुछ भी यह अनुमान नहीं लगाता कि आपको क्या याद रहेगा, न किसी नोट को अंक देता है, न उत्तर जाँचता है। सिर्फ़ तारीखें — समय, टाइम ज़ोन, रिमाइंडर या सूचनाएँ नहीं।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/hi/tools/review-schedule-sheet.html",
+      "language": "hi",
+      "title": "नोट्स दोहराने का चार्ट",
+      "url": "https://open.cait518.cc/ios-app-guide/hi/tools/review-schedule-sheet.html"
     }
   ],
   "language": "hi",

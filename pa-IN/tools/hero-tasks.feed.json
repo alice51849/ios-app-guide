@@ -223,6 +223,81 @@
       "language": "pa-IN",
       "title": "ਮੀਟਿੰਗ ਨੋਟਸ ਤੋਂ ਇੱਕ ਪੰਨੇ ਦੀ ਰੂਪਰੇਖਾ",
       "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 459,
+          "title": "ਉਦਾਹਰਨ CSV ਡਾਊਨਲੋਡ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "ਹਰ ਬੰਦੇ ਨੇ ਕਿੰਨੇ ਦਾ ਆਰਡਰ ਕੀਤਾ, ਉਹ ਲਿਖੋ, ਟੈਕਸ ਤੇ ਟਿੱਪ ਦੀ ਫ਼ੀਸਦੀ ਪਾਓ — ਕਿਸ ਨੇ ਕਿੰਨਾ ਦੇਣਾ ਹੈ, ਸਾਫ਼ ਦਿੱਸ ਪਵੇਗਾ। ਟੈਕਸ ਤੇ ਟਿੱਪ ਆਰਡਰ ਦੇ ਹਿਸਾਬ ਨਾਲ ਪੈਸੇ ਤੱਕ ਵੰਡੇ ਜਾਂਦੇ ਹਨ, ਤੇ ਸ਼ੀਟ CSV ਵਿੱਚ ਡਾਊਨਲੋਡ ਹੋ ਜਾਂਦੀ ਹੈ। ਉਪ-ਜੋੜ = ਸਾਰਿਆਂ ਦੇ ਆਰਡਰਾਂ ਦਾ ਜੋੜ। ਟੈਕਸ = ਉਪ-ਜੋੜ × ਟੈਕਸ ਦਰ। ਟਿੱਪ = ਉਪ-ਜੋੜ × ਟਿੱਪ ਦਰ। ਹਰ ਬੰਦੇ ਦਾ ਹਿੱਸਾ = ਉਸ ਦਾ ਆਪਣਾ ਆਰਡਰ ÷ ਉਪ-ਜੋੜ; ਬਚੇ ਪੈਸੇ ਪਹਿਲਾਂ ਸਭ ਤੋਂ ਵੱਡੇ ਦਸ਼ਮਲਵ ਵਾਲੇ ਨੂੰ ਜਾਂਦੇ ਹਨ, ਇਸ ਲਈ ਸਾਰੇ ਹਿੱਸੇ ਜੋੜ ਕੇ ਹਮੇਸ਼ਾ ਪੂਰਾ ਬਿੱਲ ਬਣਦਾ ਹੈ। ਇੱਕੋ ਮੁਦਰਾ ਵਰਤੋ ਤੇ ਟੈਕਸ ਅਤੇ ਟਿੱਪ ਨੂੰ ਉਪ-ਜੋੜ ਦੀ ਫ਼ੀਸਦੀ ਵਜੋਂ ਭਰੋ। ਮੁਦਰਾ ਬਦਲੀ ਨਹੀਂ, ਸਰਵਿਸ ਚਾਰਜ ਦੇ ਨਿਯਮ ਨਹੀਂ, ਕਿੰਨੀ ਟਿੱਪ ਦੇਣੀ ਹੈ ਇਸ ਦੀ ਸਲਾਹ ਨਹੀਂ, ਤੇ ਕੋਈ ਭੁਗਤਾਨ ਵੀ ਨਹੀਂ। ਸਕਰੀਨ ਉੱਤੇ ਦੋ ਦਸ਼ਮਲਵ; ਹਿਸਾਬ ਪੂਰੇ ਪੈਸਿਆਂ ਵਿੱਚ ਹੁੰਦਾ ਹੈ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html",
+      "language": "pa-IN",
+      "title": "ਬਿੱਲ ਦੀ ਵੰਡ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 572,
+          "title": "ਉਦਾਹਰਨ CSV ਡਾਊਨਲੋਡ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "ਜੋ ਸੰਭਾਲਿਆ ਹੈ ਤੇ ਹਰ ਇੱਕ ਵਿੱਚ ਕਿੰਨਾ ਵੇਲਾ ਲੱਗੇਗਾ, ਉਹ ਲਿਖੋ; ਦਿਨ ਵਿੱਚ ਸੱਚੀਂ ਕਿੰਨੇ ਮਿੰਟ ਪੜ੍ਹਦੇ ਹੋ ਭਰੋ — ਤੇ ਵੇਖੋ ਕਿਹੜੀ ਚੀਜ਼ ਕਿਸ ਦਿਨ ਮੁੱਕੇਗੀ। ਯੋਜਨਾ CSV ਵਿੱਚ ਡਾਊਨਲੋਡ ਹੁੰਦੀ ਹੈ। ਹੁਣ ਤੱਕ ਦਾ ਜੋੜ = ਇਸ ਚੀਜ਼ ਦੇ ਮਿੰਟ + ਉੱਪਰ ਵਾਲੀਆਂ ਸਾਰੀਆਂ। ਦਿਨ = ਜੋੜ ÷ ਰੋਜ਼ ਦੇ ਮਿੰਟ, ਉੱਪਰ ਵੱਲ ਪੂਰਾ। ਮੁੱਕੇਗੀ = ਸ਼ੁਰੂ ਦੀ ਤਾਰੀਖ਼ + ਦਿਨ − 1। ਬਚੇ ਮਿੰਟ = ਦਿਨ × ਰੋਜ਼ ਦੇ ਮਿੰਟ − ਕੁੱਲ ਮਿੰਟ। ਜਿਸ ਤਰਤੀਬ ਵਿੱਚ ਲਿਖਿਆ, ਉਹੀ ਪੜ੍ਹਨ ਦੀ ਤਰਤੀਬ ਹੈ: ਕੁਝ ਵੀ ਅੱਗੇ-ਪਿੱਛੇ, ਛੱਡਿਆ ਜਾਂ ਜੋੜਿਆ ਨਹੀਂ ਜਾਂਦਾ। ਦਿਨ ਵਿੱਚ ਇੱਕ ਵਾਰ, ਠੀਕ ਤੁਹਾਡੇ ਵੇਲੇ ਜਿੰਨਾ, ਬਿਨਾਂ ਛੁੱਟੀ ਦੇ; ਕੋਈ ਲਿੰਕ ਨਾ ਖੋਲ੍ਹਿਆ ਜਾਂਦਾ ਨਾ ਲਿਆਂਦਾ, ਤੇ ਤੁਹਾਡੀ ਪੜ੍ਹਨ ਦੀ ਰਫ਼ਤਾਰ ਦਾ ਅੰਦਾਜ਼ਾ ਵੀ ਨਹੀਂ ਲਾਇਆ ਜਾਂਦਾ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/reading-backlog-sheet.html",
+      "language": "pa-IN",
+      "title": "«ਬਾਅਦ ਵਿੱਚ ਪੜ੍ਹੋ» ਯੋਜਨਾ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1581,
+          "title": "ਉਦਾਹਰਨ CSV ਡਾਊਨਲੋਡ",
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "ਹਰ ਨੋਟ ਕਿਸ ਦਿਨ ਲਿਖਿਆ ਸੀ ਭਰੋ — ਅਗਲੀਆਂ ਪੰਜ ਦੁਹਰਾਈ ਦੀਆਂ ਤਾਰੀਖ਼ਾਂ, ਕਿੰਨੇ ਦਿਨ ਬਾਕੀ ਹਨ ਤੇ ਕਿਹੜੀਆਂ ਲੰਘ ਚੁੱਕੀਆਂ, ਸਭ ਦਿੱਸ ਪਵੇਗਾ। ਸਾਰਣੀ CSV ਵਿੱਚ ਡਾਊਨਲੋਡ ਹੁੰਦੀ ਹੈ। ਦੁਹਰਾਈ ਦੀ ਤਾਰੀਖ਼ = ਲਿਖਣ ਦੀ ਤਾਰੀਖ਼ + 1, 3, 7, 16 ਤੇ 35 ਦਿਨ। ਕਿੰਨੇ ਦਿਨ ਬਾਕੀ = ਦੁਹਰਾਈ ਦੀ ਤਾਰੀਖ਼ − ਅੱਜ; ਰਿਣਾਤਮਕ ਅੰਕ ਦਾ ਮਤਲਬ ਉਹ ਤਾਰੀਖ਼ ਲੰਘ ਚੁੱਕੀ ਹੈ। ਅਗਲੀ ਦੁਹਰਾਈ = ਅੱਜ ਜਾਂ ਉਸ ਤੋਂ ਬਾਅਦ ਪੈਂਦੀ ਪਹਿਲੀ ਤਾਰੀਖ਼। ਇਹ ਪੱਕੇ ਵਕਫ਼ਿਆਂ ਦੀ ਪੌੜੀ ਹੈ, ਯਾਦਦਾਸ਼ਤ ਦਾ ਮਾਡਲ ਨਹੀਂ: ਇੱਥੇ ਕੁਝ ਵੀ ਇਹ ਨਹੀਂ ਦੱਸਦਾ ਕਿ ਤੁਹਾਨੂੰ ਕੀ ਯਾਦ ਰਹੇਗਾ, ਨਾ ਕਿਸੇ ਨੋਟ ਨੂੰ ਅੰਕ ਦਿੰਦਾ ਹੈ, ਨਾ ਜਵਾਬ ਜਾਂਚਦਾ ਹੈ। ਸਿਰਫ਼ ਤਾਰੀਖ਼ਾਂ — ਸਮਾਂ, ਟਾਈਮ ਜ਼ੋਨ, ਯਾਦ-ਪੱਤਰ ਜਾਂ ਸੂਚਨਾਵਾਂ ਨਹੀਂ।",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/review-schedule-sheet.html",
+      "language": "pa-IN",
+      "title": "ਨੋਟ ਦੁਹਰਾਈ ਸਾਰਣੀ",
+      "url": "https://open.cait518.cc/ios-app-guide/pa-IN/tools/review-schedule-sheet.html"
     }
   ],
   "language": "pa-IN",

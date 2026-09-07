@@ -53,6 +53,15 @@ ITINERARY_CSS = HERE / "assets" / "hero-task-itinerary.css"
 OUTLINE_CORE = HERE / "assets" / "hero-task-outline-core.js"
 OUTLINE_UI = HERE / "assets" / "hero-task-outline-ui.js"
 OUTLINE_CSS = HERE / "assets" / "hero-task-outline.css"
+SPLIT_CORE = HERE / "assets" / "hero-task-billsplit-core.js"
+SPLIT_UI = HERE / "assets" / "hero-task-billsplit-ui.js"
+SPLIT_CSS = HERE / "assets" / "hero-task-billsplit.css"
+BACKLOG_CORE = HERE / "assets" / "hero-task-backlog-core.js"
+BACKLOG_UI = HERE / "assets" / "hero-task-backlog-ui.js"
+BACKLOG_CSS = HERE / "assets" / "hero-task-backlog.css"
+REVIEW_CORE = HERE / "assets" / "hero-task-review-core.js"
+REVIEW_UI = HERE / "assets" / "hero-task-review-ui.js"
+REVIEW_CSS = HERE / "assets" / "hero-task-review.css"
 MANIFEST = "data/hero-tasks/manifest.json"
 SCHEMA = "data/hero-tasks/manifest.schema.json"
 SITEMAP = "sitemap_hero_tasks.xml"
@@ -116,9 +125,22 @@ TASK_KEYS = {
         "preview add example example_note formula limits error row_limit result download_example "
         "example_headline example_point_1 example_point_2 example_point_3 example_action example_metric"
     ).split(),
+    "bill-split": (
+        "title intro tax_pct tip_pct person amount tax_share tip_share total_due subtotal tax tip "
+        "grand_total add example_note formula limits error row_limit"
+    ).split(),
+    "reading-backlog": (
+        "title intro daily_minutes start_date item minutes cumulative day finish_date total_minutes "
+        "total_days leftover add example_note formula limits error row_limit"
+    ).split(),
+    "review-schedule": (
+        "title intro today note studied_on step review_date days_left status status_passed status_today "
+        "status_upcoming next_review note_count review_count intervals_note add example_note "
+        "formula limits error row_limit"
+    ).split(),
 }
 TRIP_CATEGORIES = ("food", "transport", "tickets", "shopping")
-ITEM_LABEL_KEY = {"day-itinerary": "place"}
+ITEM_LABEL_KEY = {"day-itinerary": "place", "bill-split": "person", "review-schedule": "note"}
 ACTIVITY_KEYS = (
     "sd_stream", "hd_stream", "uhd_stream", "video_call", "gaming", "cloud_backup", "browsing", "smart_home",
 )
@@ -126,6 +148,7 @@ NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
 REVIEWED_ADAPTERS = frozenset({
     "purchase-worktime-v1", "maintenance-next-due-v1", "project-profit-v1", "battery-wear-range-v1",
     "bandwidth-need-v1", "trip-budget-v1", "day-itinerary-v1", "one-page-outline-v1",
+    "bill-split-v1", "reading-backlog-v1", "review-schedule-v1",
 })
 # Each adapter ships its own pure-JS core and browser UI; the shared stylesheet is
 # reused and an adapter may add one stylesheet of its own.
@@ -140,12 +163,17 @@ ADAPTER_ASSETS = {
     "trip-budget-v1": {"core": TRIPBUDGET_CORE, "ui": TRIPBUDGET_UI, "css": CSS, "extra_css": TRIPBUDGET_CSS},
     "day-itinerary-v1": {"core": ITINERARY_CORE, "ui": ITINERARY_UI, "css": CSS, "extra_css": ITINERARY_CSS},
     "one-page-outline-v1": {"core": OUTLINE_CORE, "ui": OUTLINE_UI, "css": CSS, "extra_css": OUTLINE_CSS},
+    "bill-split-v1": {"core": SPLIT_CORE, "ui": SPLIT_UI, "css": CSS, "extra_css": SPLIT_CSS},
+    "reading-backlog-v1": {"core": BACKLOG_CORE, "ui": BACKLOG_UI, "css": CSS, "extra_css": BACKLOG_CSS},
+    "review-schedule-v1": {"core": REVIEW_CORE, "ui": REVIEW_UI, "css": CSS, "extra_css": REVIEW_CSS},
 }
 ASSET_FILES = (
     CORE, UI, CSS, MAINTENANCE_CORE, MAINTENANCE_UI, MAINTENANCE_CSS,
     PROFIT_CORE, PROFIT_UI, PROFIT_CSS, BATTERY_CORE, BATTERY_UI, BATTERY_CSS,
     BANDWIDTH_CORE, BANDWIDTH_UI, BANDWIDTH_CSS, TRIPBUDGET_CORE, TRIPBUDGET_UI, TRIPBUDGET_CSS,
     ITINERARY_CORE, ITINERARY_UI, ITINERARY_CSS, OUTLINE_CORE, OUTLINE_UI, OUTLINE_CSS,
+    SPLIT_CORE, SPLIT_UI, SPLIT_CSS, BACKLOG_CORE, BACKLOG_UI, BACKLOG_CSS,
+    REVIEW_CORE, REVIEW_UI, REVIEW_CSS,
 )
 UNITS = ("day", "week", "month")
 # Per-device planning figures (tenths of Mbps, down/up) mirrored from the core.
@@ -478,6 +506,12 @@ def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[di
         return render_itinerary_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
     if task["adapter"] == "one-page-outline-v1":
         return render_outline_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "bill-split-v1":
+        return render_bill_split_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "reading-backlog-v1":
+        return render_backlog_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
+    if task["adapter"] == "review-schedule-v1":
+        return render_review_page(task, locale, copy, sample, apps, modified, site, assets, navigation)
     if task["adapter"] != "purchase-worktime-v1":
         raise ValueError(f"No reviewed renderer for adapter: {task['adapter']}")
     esc = html.escape
@@ -1695,6 +1729,387 @@ def render_outline_page(task: dict, locale: str, copy: dict, sample: dict, apps:
 </main></body></html>
 """
 
+
+def percent_rate_text(rate: int) -> str:
+    return f"{money_text(rate)}%"
+
+
+def split_row(copy: dict, item: dict, index: int, result: dict | None = None) -> str:
+    esc = html.escape
+    ident_name, ident_amount = f"row-{index}-name", f"row-{index}-amount"
+    tax = money_text(result["tax_minor"]) if result else "0.00"
+    tip = money_text(result["tip_minor"]) if result else "0.00"
+    due = money_text(result["total_minor"]) if result else "0.00"
+    return (
+        '<div class="split-row">'
+        f'<div class="name-field"><label data-label="name" for="{ident_name}">{esc(copy["person"])}</label>'
+        f'<input id="{ident_name}" data-field="name" type="text" maxlength="120" value="{esc(str(item.get("name", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><label data-label="amount" for="{ident_amount}">{esc(copy["amount"])}</label>'
+        f'<input id="{ident_amount}" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="{esc(str(item.get("amount", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><p class="output-label">{esc(copy["tax_share"])}</p><output data-output="tax">{tax}</output></div>'
+        f'<div><p class="output-label">{esc(copy["tip_share"])}</p><output data-output="tip">{tip}</output></div>'
+        f'<div><p class="output-label">{esc(copy["total_due"])}</p><output data-output="due">{due}</output></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(item.get("name", "")), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def split_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    headings = "".join(
+        f'<th scope="col">{esc(copy[key])}</th>'
+        for key in ("person", "amount", "tax_share", "tip_share", "total_due")
+    )
+    rows = "".join(
+        f"<tr><td>{esc(item['name'])}</td><td>{money_text(item['amount_minor'])}</td>"
+        f"<td>{money_text(item['tax_minor'])}</td><td>{money_text(item['tip_minor'])}</td>"
+        f"<td>{money_text(item['total_minor'])}</td></tr>"
+        for item in result["items"]
+    )
+    footer = (
+        f'<tr class="example-total"><td>{esc(copy["subtotal"])}</td><td>{money_text(result["subtotal_minor"])}</td>'
+        "<td></td><td></td><td></td></tr>"
+        f'<tr class="example-total"><td>{esc(copy["tax"])}</td><td>{percent_rate_text(result["tax_rate"])}</td>'
+        f'<td>{money_text(result["tax_minor"])}</td><td></td><td></td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["tip"])}</td><td>{percent_rate_text(result["tip_rate"])}</td>'
+        f'<td></td><td>{money_text(result["tip_minor"])}</td><td></td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["grand_total"])}</td><td></td><td></td><td></td>'
+        f'<td>{money_text(result["grand_total_minor"])}</td></tr>'
+    )
+    return (
+        '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>"
+        + rows + "</tbody><tfoot>" + footer + "</tfoot></table></div>"
+    )
+
+
+def render_bill_split_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                           modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    sample_input = sample["input"]
+    rows = "".join(
+        split_row(copy, item, index + 1, result["items"][index]) for index, item in enumerate(sample_input["items"])
+    )
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample_input}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    calculation = (
+        f"{copy['subtotal']} = "
+        + " + ".join(money_text(item["amount_minor"]) for item in result["items"])
+        + f" = {money_text(result['subtotal_minor'])}"
+        f"\n{copy['tax']} = {money_text(result['subtotal_minor'])} × {percent_rate_text(result['tax_rate'])}"
+        f" = {money_text(result['tax_minor'])}"
+        f"\n{copy['tip']} = {money_text(result['subtotal_minor'])} × {percent_rate_text(result['tip_rate'])}"
+        f" = {money_text(result['tip_minor'])}\n"
+        + "\n".join(
+            f"{item['name']}: {money_text(item['amount_minor'])} + {money_text(item['tax_minor'])}"
+            f" + {money_text(item['tip_minor'])} = {money_text(item['total_minor'])}"
+            for item in result["items"]
+        )
+        + f"\n{copy['grand_total']} = {money_text(result['grand_total_minor'])}"
+    )
+    totals = "".join(
+        f'<div{extra}><p>{esc(copy[key])}</p><output class="total-value" id="{ident}">{value}</output></div>'
+        for key, ident, value, extra in (
+            ("subtotal", "subtotal-value", money_text(result["subtotal_minor"]), ""),
+            ("tax", "tax-value", money_text(result["tax_minor"]), ""),
+            ("tip", "tip-value", money_text(result["tip_minor"]), ""),
+            ("grand_total", "grand-total-value", money_text(result["grand_total_minor"]), ' class="grand"'),
+        )
+    )
+    template_item = {"name": "", "amount": "0"}
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="tax-pct">{esc(copy['tax_pct'])}</label><input id="tax-pct" type="text" inputmode="decimal" maxlength="6" value="{esc(sample_input['tax_pct'], quote=True)}" required autocomplete="off"></div>
+<div><label for="tip-pct">{esc(copy['tip_pct'])}</label><input id="tip-pct" type="text" inputmode="decimal" maxlength="6" value="{esc(sample_input['tip_pct'], quote=True)}" required autocomplete="off"></div>
+</div>
+<div id="split-rows">{rows}</div>
+<template id="split-template">{split_row(copy, template_item, 0)}</template>
+<div class="actions"><button type="button" id="add-person">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="totals split-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{split_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['amount'])}: <bdi dir="ltr">0 ≤ n ≤ 100,000,000</bdi></li>
+<li>{esc(copy['tax_pct'])} / {esc(copy['tip_pct'])}: <bdi dir="ltr">0 ≤ % ≤ 100</bdi></li>
+<li>{esc(copy['person'])}: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
+
+
+def backlog_row(copy: dict, item: dict, index: int, result: dict | None = None) -> str:
+    esc = html.escape
+    ident_name, ident_minutes = f"row-{index}-name", f"row-{index}-minutes"
+    cumulative = str(result["cumulative_min"]) if result else "—"
+    day = str(result["day"]) if result else "—"
+    finish = result["finish_date"] if result else "—"
+    return (
+        '<div class="backlog-row">'
+        f'<div class="name-field"><label data-label="name" for="{ident_name}">{esc(copy["item"])}</label>'
+        f'<input id="{ident_name}" data-field="name" type="text" maxlength="120" value="{esc(str(item.get("name", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><label data-label="minutes" for="{ident_minutes}">{esc(copy["minutes"])}</label>'
+        f'<input id="{ident_minutes}" data-field="minutes" type="text" inputmode="numeric" maxlength="3" value="{esc(str(item.get("minutes", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><p class="output-label">{esc(copy["cumulative"])}</p><output data-output="cumulative">{cumulative}</output></div>'
+        f'<div><p class="output-label">{esc(copy["day"])}</p><output data-output="day">{day}</output></div>'
+        f'<div><p class="output-label">{esc(copy["finish_date"])}</p><output data-output="date">{finish}</output></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(item.get("name", "")), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def backlog_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    headings = "".join(
+        f'<th scope="col">{esc(copy[key])}</th>'
+        for key in ("item", "minutes", "cumulative", "day", "finish_date")
+    )
+    rows = "".join(
+        f"<tr><td>{esc(item['name'])}</td><td>{item['minutes']}</td><td>{item['cumulative_min']}</td>"
+        f"<td>{item['day']}</td><td>{item['finish_date']}</td></tr>"
+        for item in result["items"]
+    )
+    footer = (
+        f'<tr class="example-total"><td>{esc(copy["total_minutes"])}</td><td>{result["total_minutes"]}</td>'
+        "<td></td><td></td><td></td></tr>"
+        f'<tr class="example-total"><td>{esc(copy["total_days"])}</td><td>{result["total_days"]}</td>'
+        f'<td></td><td></td><td>{result["finish_date"]}</td></tr>'
+        f'<tr class="example-total"><td>{esc(copy["leftover"])}</td><td>{result["leftover_minutes"]}</td>'
+        "<td></td><td></td><td></td></tr>"
+    )
+    return (
+        '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>"
+        + rows + "</tbody><tfoot>" + footer + "</tfoot></table></div>"
+    )
+
+
+def render_backlog_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                        modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    sample_input = sample["input"]
+    rows = "".join(
+        backlog_row(copy, item, index + 1, result["items"][index]) for index, item in enumerate(sample_input["items"])
+    )
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample_input}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    calculation = "\n".join(
+        f"{item['order']}. {item['name']}: {item['cumulative_min']} ÷ {result['daily_minutes']}"
+        f" → {copy['day']} {item['day']} = {item['finish_date']}"
+        for item in result["items"]
+    ) + (
+        f"\n{copy['total_minutes']} = {result['total_minutes']}"
+        f"\n{copy['total_days']} = {result['total_days']} → {result['finish_date']}"
+        f"\n{copy['leftover']} = {result['total_days']} × {result['daily_minutes']} − {result['total_minutes']}"
+        f" = {result['leftover_minutes']}"
+    )
+    totals = "".join(
+        f'<div><p>{esc(copy[key])}</p><output class="total-value" id="{ident}">{value}</output></div>'
+        for key, ident, value in (
+            ("total_minutes", "total-minutes", result["total_minutes"]),
+            ("total_days", "total-days", result["total_days"]),
+            ("leftover", "leftover-minutes", result["leftover_minutes"]),
+            ("finish_date", "finish-date", result["finish_date"]),
+        )
+    )
+    template_item = {"name": "", "minutes": "10"}
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="daily-minutes">{esc(copy['daily_minutes'])}</label><input id="daily-minutes" type="text" inputmode="numeric" maxlength="3" value="{esc(sample_input['daily_minutes'], quote=True)}" required autocomplete="off"></div>
+<div><label for="start-date">{esc(copy['start_date'])}</label><input id="start-date" type="text" inputmode="numeric" maxlength="10" value="{esc(sample_input['start_date'], quote=True)}" required autocomplete="off"></div>
+</div>
+<div id="backlog-rows">{rows}</div>
+<template id="backlog-template">{backlog_row(copy, template_item, 0)}</template>
+<div class="actions"><button type="button" id="add-item">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="totals backlog-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{backlog_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['daily_minutes'])}: <bdi dir="ltr">5 ≤ m ≤ 600</bdi></li>
+<li>{esc(copy['minutes'])}: <bdi dir="ltr">1 ≤ m ≤ 600</bdi></li>
+<li>{esc(copy['start_date'])}: <bdi dir="ltr">YYYY-MM-DD</bdi></li>
+<li>{esc(copy['item'])}: <bdi dir="ltr">1 ≤ n ≤ 30</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
+
+
+def note_row(copy: dict, item: dict, index: int, result: dict | None = None) -> str:
+    esc = html.escape
+    ident_name, ident_studied = f"row-{index}-name", f"row-{index}-studied_on"
+    following = next((review for review in result["reviews"] if review["days_left"] >= 0), None) if result else None
+    next_review = (result["next_review"] if result else None) or "—"
+    state = following["status"] if following else ("passed" if result else "")
+    label = copy["status_" + state] if state else "—"
+    badge = f' data-status="{state}"' if state else ""
+    return (
+        '<div class="note-row">'
+        f'<div class="name-field"><label data-label="name" for="{ident_name}">{esc(copy["note"])}</label>'
+        f'<input id="{ident_name}" data-field="name" type="text" maxlength="120" value="{esc(str(item.get("name", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><label data-label="studied_on" for="{ident_studied}">{esc(copy["studied_on"])}</label>'
+        f'<input id="{ident_studied}" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="{esc(str(item.get("studied_on", "")), quote=True)}" required autocomplete="off"></div>'
+        f'<div><p class="output-label">{esc(copy["next_review"])}</p><output data-output="next">{esc(next_review)}</output></div>'
+        f'<div><p class="output-label">{esc(copy["status"])}</p>'
+        f'<output class="status-badge" data-output="status"{badge}>{esc(label)}</output></div>'
+        f'<button type="button" data-remove aria-label="{esc(copy["remove"] + " · " + str(item.get("name", "")), quote=True)}">{esc(copy["remove"])}</button>'
+        "</div>"
+    )
+
+
+def review_table(copy: dict, result: dict) -> str:
+    esc = html.escape
+    headings = "".join(
+        f'<th scope="col">{esc(copy[key])}</th>'
+        for key in ("note", "studied_on", "step", "review_date", "days_left", "status")
+    )
+    rows = "".join(
+        f"<tr><td>{esc(item['name'])}</td><td>{item['studied_on']}</td><td>{review['step']}</td>"
+        f"<td>{review['date']}</td><td>{review['days_left']}</td>"
+        f"<td>{esc(copy['status_' + review['status']])}</td></tr>"
+        for item in result["items"] for review in item["reviews"]
+    )
+    footer = (
+        f'<tr class="example-total"><td>{esc(copy["note_count"])}</td><td>{result["note_count"]}</td>'
+        "<td></td><td></td><td></td><td></td></tr>"
+        f'<tr class="example-total"><td>{esc(copy["review_count"])}</td><td>{result["review_count"]}</td>'
+        "<td></td><td></td><td></td><td></td></tr>"
+        f'<tr class="example-total"><td>{esc(copy["next_review"])}</td><td></td><td></td>'
+        f'<td>{result["next_review"] or "—"}</td><td></td><td></td></tr>'
+    )
+    return (
+        '<div class="table-scroll"><table><thead><tr>' + headings + "</tr></thead><tbody>"
+        + rows + "</tbody><tfoot>" + footer + "</tfoot></table></div>"
+    )
+
+
+def render_review_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[dict],
+                       modified: str, site: str, assets: dict, navigation: dict | None = None) -> str:
+    esc = html.escape
+    csv_url = f"{site}/{example_path(task, locale)}"
+    result = sample["result"]
+    sample_input = sample["input"]
+    rows = "".join(
+        note_row(copy, item, index + 1, result["items"][index]) for index, item in enumerate(sample_input["items"])
+    )
+    config = {"adapter": task["adapter"], "slug": task["slug"], "locale": locale, "copy": copy, "example": sample_input}
+    head = page_head(task, locale, copy, site, assets, modified, tool_schema(task, locale, copy, site, modified), config)
+    direction = "rtl" if locale in RTL else "ltr"
+    back_link = (
+        f'<a href="{esc(site + "/" + navigation["path"], quote=True)}">{esc(navigation["label"])}</a>'
+        if navigation else ""
+    )
+    ladder = " · ".join(f"+{interval}" for interval in result["intervals"])
+    calculation = f"{copy['review_date']} = {copy['studied_on']} + [{ladder}]\n" + "\n".join(
+        f"{item['name']}: {item['studied_on']} → "
+        + ", ".join(f"{review['date']} ({review['days_left']:+d})" for review in item["reviews"])
+        for item in result["items"]
+    ) + (
+        f"\n{copy['next_review']} = {result['next_review'] or '—'}"
+        f"\n{copy['review_count']} = {result['note_count']} × {len(result['intervals'])} = {result['review_count']}"
+    )
+    totals = "".join(
+        f'<div><p>{esc(copy[key])}</p><output class="total-value" id="{ident}">{esc(str(value))}</output></div>'
+        for key, ident, value in (
+            ("note_count", "note-count", result["note_count"]),
+            ("review_count", "review-count", result["review_count"]),
+            ("next_review", "next-review", result["next_review"] or "—"),
+        )
+    )
+    template_item = {"name": "", "studied_on": result["today"]}
+    return f"""<!doctype html>
+<html lang="{locale}" dir="{direction}">
+{head}
+<body><main>
+<nav>{back_link}<span>Lumi Studio</span></nav>
+<h1>{esc(copy['title'])}</h1><p>{esc(copy['intro'])}</p>
+<section class="panel" aria-label="{esc(copy['title'], quote=True)}">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="today-date">{esc(copy['today'])}</label><input id="today-date" type="text" inputmode="numeric" maxlength="10" value="{esc(sample_input['today'], quote=True)}" required autocomplete="off"><p class="small">{esc(copy['intervals_note'])}</p></div>
+</div>
+<div id="note-rows">{rows}</div>
+<template id="note-template">{note_row(copy, template_item, 0)}</template>
+<div class="actions"><button type="button" id="add-note">{esc(copy['add'])}</button><span class="small">{esc(copy['row_limit'])}</span></div>
+<div class="totals review-totals" aria-label="{esc(copy['result'], quote=True)}">
+{totals}
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>{esc(copy['download'])}</button><button type="button" id="reset-example">{esc(copy['reset'])}</button></div>
+</fieldset></form><p class="small">{esc(copy['privacy'])}</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>{esc(copy['example'])}</h2><p>{esc(copy['example_note'])}</p>
+{review_table(copy, result)}
+<a class="button" href="{csv_url}" download>{esc(copy['download_example'])}</a>
+<h2>{esc(copy['method'])}</h2><p>{esc(copy['formula'])}</p>
+<pre class="formula">{esc(calculation)}</pre>
+<p>{esc(copy['limits'])}</p>
+<ul class="small">
+<li>{esc(copy['today'])} / {esc(copy['studied_on'])}: <bdi dir="ltr">YYYY-MM-DD</bdi></li>
+<li>{esc(copy['step'])}: <bdi dir="ltr">{ladder}</bdi></li>
+<li>{esc(copy['note'])}: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>{esc(copy['optional'])}</h2><p>{esc(copy['optional_note'])}</p><div class="actions">{app_buttons(apps)}</div></section>
+<footer><p>{esc(copy['disclosure'])}</p><a href="{site}/{INTENTS}">{esc(copy['sources'])}</a> · <a href="{site}/{feed_path(locale)}">{esc(copy['feed'])}</a></footer>
+</main></body></html>
+"""
 
 def resource_block(locale: str, tasks: list[dict], copy: dict, site: str,
                    task_copies: dict | None = None) -> str:

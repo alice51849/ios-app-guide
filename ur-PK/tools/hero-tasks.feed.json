@@ -223,6 +223,81 @@
       "language": "ur-PK",
       "title": "میٹنگ نوٹس سے ایک صفحے کا خاکہ",
       "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 366,
+          "title": "مثال کی CSV ڈاؤن لوڈ",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "لکھیے کس نے کتنے کا آرڈر کیا، ٹیکس اور ٹپ کا فیصد ڈالیے، اور دیکھیے کس پر بالکل کتنا بنتا ہے۔ ٹیکس اور ٹپ آرڈر کے تناسب سے پیسے تک تقسیم ہوتے ہیں، اور شیٹ CSV میں ڈاؤن لوڈ ہو جاتی ہے۔ ذیلی میزان = سب کے آرڈر کا مجموعہ۔ ٹیکس = ذیلی میزان × ٹیکس کی شرح۔ ٹپ = ذیلی میزان × ٹپ کی شرح۔ ہر فرد کا حصہ = اُس کا اپنا آرڈر ÷ ذیلی میزان؛ بچے ہوئے پیسے پہلے سب سے بڑے اعشاریے والے کو جاتے ہیں، اس لیے سب کے حصے جمع کر کے ہمیشہ پورا بل بنتا ہے۔ ایک ہی کرنسی استعمال کریں اور ٹیکس و ٹپ کو ذیلی میزان کے فیصد میں لکھیں۔ کرنسی کی تبدیلی نہیں، سروس چارج کے قواعد نہیں، کتنی ٹپ دی جائے اس کا مشورہ نہیں، اور کوئی ادائیگی بھی نہیں۔ اسکرین پر دو اعشاریے؛ حساب پورے پیسوں میں ہوتا ہے۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html",
+      "language": "ur-PK",
+      "title": "بل کی تقسیم",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 423,
+          "title": "مثال کی CSV ڈاؤن لوڈ",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "جو محفوظ کیا ہے اور ہر ایک میں کتنا وقت لگے گا، وہ لکھیے؛ دن میں واقعی کتنے منٹ پڑھتے ہیں بتائیے — اور دیکھیے کون سی چیز کس دن ختم ہوگی۔ منصوبہ CSV میں ڈاؤن لوڈ ہو جاتا ہے۔ اب تک کا مجموعہ = اِس چیز کے منٹ + اوپر کی سب۔ دن = مجموعہ ÷ روزانہ کے منٹ، اوپر کی طرف پورا۔ ختم ہوگی = آغاز کی تاریخ + دن − 1۔ بچے منٹ = دن × روزانہ کے منٹ − کل منٹ۔ جس ترتیب سے لکھا ہے، وہی پڑھنے کی ترتیب ہے: کچھ بھی آگے پیچھے، نظرانداز یا یکجا نہیں کیا جاتا۔ دن میں ایک بار، بالکل آپ کے مقررہ وقت جتنا، بغیر چھٹی کے؛ کوئی لنک نہ کھولا جاتا ہے نہ لایا جاتا ہے، اور آپ کی رفتارِ مطالعہ کا اندازہ بھی نہیں لگایا جاتا۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/reading-backlog-sheet.html",
+      "language": "ur-PK",
+      "title": "«بعد میں پڑھیں» منصوبہ",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1343,
+          "title": "مثال کی CSV ڈاؤن لوڈ",
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "بتائیے ہر نوٹ کس دن لکھا تھا — اس کے بعد آنے والی پانچ دہرائی کی تاریخیں، کتنے دن باقی ہیں اور کون سی گزر چکی ہیں، سب سامنے آ جائے گا۔ شیڈول CSV میں ڈاؤن لوڈ ہوتا ہے۔ دہرائی کی تاریخ = لکھنے کی تاریخ + 1، 3، 7، 16 اور 35 دن۔ کتنے دن باقی = دہرائی کی تاریخ − آج؛ منفی عدد کا مطلب وہ تاریخ گزر چکی ہے۔ اگلی دہرائی = پہلی تاریخ جو آج یا اس کے بعد آتی ہے۔ یہ مقررہ وقفوں کی سیڑھی ہے، یادداشت کا ماڈل نہیں: یہاں کچھ بھی یہ پیش گوئی نہیں کرتا کہ آپ کو کیا یاد رہے گا، نہ کسی نوٹ کو نمبر دیتا ہے، نہ جواب جانچتا ہے۔ صرف تاریخیں — وقت، ٹائم زون، یاد دہانی یا اطلاعات نہیں۔",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/review-schedule-sheet.html",
+      "language": "ur-PK",
+      "title": "نوٹس دہرانے کا شیڈول",
+      "url": "https://open.cait518.cc/ios-app-guide/ur-PK/tools/review-schedule-sheet.html"
     }
   ],
   "language": "ur-PK",

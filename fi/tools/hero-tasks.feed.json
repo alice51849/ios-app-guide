@@ -223,6 +223,81 @@
       "language": "fi",
       "title": "Kokousmuistiot yhdelle sivulle",
       "url": "https://open.cait518.cc/ios-app-guide/fi/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 331,
+          "title": "Lataa esimerkin CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Kirjoita, paljonko kukin tilasi, lisää vero- ja tippiprosentti, niin näet kenelle jää mitäkin maksettavaa. Vero ja tippi jaetaan sentilleen tilauksen suhteessa, ja taulukon saa CSV-tiedostona. Välisumma = kaikki tilattu yhteenlaskettuna. Vero = välisumma × veroprosentti. Tippi = välisumma × tippiprosentti. Kunkin osuus on oma tilaus ÷ välisumma; yli jäävät sentit menevät ensin suurimmille desimaaleille, joten osuudet summautuvat tarkalleen laskun loppusummaksi. Käytä yhtä valuuttaa ja anna vero ja tippi prosentteina välisummasta. Ei valuuttamuunnosta, ei palvelumaksusääntöjä, ei suositusta tipin määrästä eikä maksamista. Näytöllä pyöristetään kahteen desimaaliin; jako lasketaan kokonaisina sentteinä.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html",
+      "language": "fi",
+      "title": "Laskun jako",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 385,
+          "title": "Lataa esimerkin CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Listaa tallentamasi jutut ja niiden kesto, kerro montako minuuttia oikeasti luet päivässä, niin näet minä päivänä kukin tulee luettua. Suunnitelman saa CSV-tiedostona. Kertymä = tämän jutun minuutit plus kaikki yläpuolella. Päivä = kertymä ÷ päivän minuutit, pyöristettynä ylöspäin. Valmis = aloituspäivä + päivä − 1. Vapaat minuutit = päivät × päivän minuutit − minuutit yhteensä. Kirjoittamasi järjestys on lukujärjestys: mitään ei järjestetä uudelleen, ohiteta tai yhdistetä. Yksi lukuhetki päivässä, joka käyttää päivän ajan tarkalleen, ilman vapaapäiviä, avaamatta tai hakematta yhtään linkkiä ja arvaamatta lukunopeuttasi.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/reading-backlog-sheet.html",
+      "language": "fi",
+      "title": "Lukulistan purkuplan",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1142,
+          "title": "Lataa esimerkin CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/fi/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Kerro, milloin kirjoitit kunkin muistiinpanon, niin saat viisi seuraavaa kertauspäivää, jäljellä olevat päivät ja sen, mitkä ovat jo menneet. Aikataulun saa CSV-tiedostona. Kertauspäivä = kirjoituspäivä + 1, 3, 7, 16 ja 35 päivää. Päiviä jäljellä = kertauspäivä − tänään; negatiivinen luku tarkoittaa jo mennyttä päivää. Seuraava kertaus = ensimmäinen päivä, joka on tänään tai myöhemmin. Tämä on kiinteä väliportaikko, ei muistimalli: mitään ei ennusteta, muistiinpanoja ei pisteytetä eikä vastauksia tarkisteta. Vain päivämäärät, ei kellonaikoja, aikavyöhykkeitä, muistutuksia tai ilmoituksia.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fi/tools/review-schedule-sheet.html",
+      "language": "fi",
+      "title": "Kertausaikataulu",
+      "url": "https://open.cait518.cc/ios-app-guide/fi/tools/review-schedule-sheet.html"
     }
   ],
   "language": "fi",

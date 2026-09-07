@@ -223,6 +223,81 @@
       "language": "en-AU",
       "title": "Meeting notes to one-page outline",
       "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 313,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Type what each person ordered, add the tax and tip percentages, and get the exact amount each of them owes. Every cent of tax and tip is shared in proportion, and the sheet downloads as CSV. Subtotal = everything ordered, added up. Tax = subtotal × tax %. Tip = subtotal × tip %. Each person's tax and tip share is their own order ÷ subtotal, and leftover cents go to the largest fractions first, so the shares always add back up to the bill. Use one currency and enter tax and tip as percentages of the subtotal. No currency conversion, no service-charge rules, no advice on how much to tip and no payments. Display rounds to two decimals; the split itself is calculated in whole cents.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html",
+      "language": "en-AU",
+      "title": "Bill split with tax and tip",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 345,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "List what you saved and how long each one takes, set the minutes you really read per day, and see the day every item gets finished. The plan downloads as CSV. Running total = this item's minutes plus everything above it. Day = running total ÷ daily minutes, rounded up. Finished on = start date + day − 1. Spare minutes = days × daily minutes − total minutes. The order you type is the order you read: nothing is reordered, skipped or merged. One session a day of exactly your budget, with no days off, no links opened or fetched, and no reading speed guessed for you.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/reading-backlog-sheet.html",
+      "language": "en-AU",
+      "title": "Read-later backlog plan",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/au/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 996,
+          "title": "Download example CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Enter the date you wrote each note and get the five review dates that follow it, with the days left and which ones have already gone by. The calendar downloads as CSV. Review date = written on + 1, 3, 7, 16 and 35 days. Days left = review date − today, so a negative number is a date that has already gone by. Next review = the first date that is today or later. A fixed interval ladder, not a memory model: nothing here predicts what you will remember, scores a note or marks an answer. Dates only, with no times, no time zones, no reminders and no notifications.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/review-schedule-sheet.html",
+      "language": "en-AU",
+      "title": "Note review schedule",
+      "url": "https://open.cait518.cc/ios-app-guide/en-AU/tools/review-schedule-sheet.html"
     }
   ],
   "language": "en-AU",

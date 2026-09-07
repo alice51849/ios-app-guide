@@ -223,6 +223,81 @@
       "language": "he",
       "title": "מסיכום פגישה לעמוד אחד",
       "url": "https://open.cait518.cc/ios-app-guide/he/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 346,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו כמה הזמין כל אחד, הוסיפו אחוזי מס וטיפ, וקבלו בדיוק כמה כל אחד חייב. המס והטיפ מתחלקים עד האגורה האחרונה לפי ההזמנה, והטבלה יורדת כקובץ CSV. סכום ביניים = כל ההזמנות יחד. מס = סכום ביניים × אחוז המס. טיפ = סכום ביניים × אחוז הטיפ. החלק של כל אחד הוא ההזמנה שלו ÷ סכום הביניים; האגורות שנשארות הולכות קודם לשברים הגדולים ביותר, כך שסכום החלקים תמיד יוצא בדיוק החשבון. השתמשו במטבע אחד, והזינו מס וטיפ כאחוז מסכום הביניים. בלי המרת מטבע, בלי כללי דמי שירות, בלי המלצה כמה טיפ להשאיר ובלי תשלומים. התצוגה מעגלת לשתי ספרות; החישוב עצמו נעשה באגורות שלמות.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html",
+      "language": "he",
+      "title": "חלוקת חשבון",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 413,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מה שמרתם וכמה זמן כל דבר לוקח, הזינו כמה דקות אתם באמת קוראים ביום, וראו באיזה יום כל פריט נגמר. את התוכנית מורידים כקובץ CSV. סכום מצטבר = הדקות של הפריט הזה ועוד כל מה שמעליו. יום = סכום מצטבר ÷ דקות ביום, בעיגול כלפי מעלה. מסתיים ב = תאריך ההתחלה + יום − 1. דקות פנויות = ימים × דקות ביום − סך הדקות. הסדר שהקלדתם הוא סדר הקריאה: שום דבר לא מסודר מחדש, לא מדולג ולא מאוחד. פעם ביום, בדיוק לפי המכסה שלכם, בלי ימי חופש, בלי לפתוח או להוריד קישורים ובלי לנחש את מהירות הקריאה שלכם.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/reading-backlog-sheet.html",
+      "language": "he",
+      "title": "תוכנית «לקרוא אחר כך»",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1311,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "הזינו מתי כתבתם כל סיכום, וקבלו את חמשת מועדי החזרה שאחריו, כמה ימים נשארו ואילו כבר עברו. את הלוח מורידים כקובץ CSV. תאריך חזרה = תאריך הכתיבה + 1, 3, 7, 16 ו-35 ימים. ימים שנותרו = תאריך החזרה − היום; מספר שלילי הוא תאריך שכבר עבר. החזרה הבאה = התאריך הראשון שחל היום או אחריו. זהו סולם מרווחים קבוע, לא מודל זיכרון: שום דבר כאן לא חוזה מה תזכרו, לא נותן ציון לסיכום ולא בודק תשובות. תאריכים בלבד, בלי שעות, אזורי זמן, תזכורות או התראות.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/review-schedule-sheet.html",
+      "language": "he",
+      "title": "לוח חזרות לסיכומים",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/review-schedule-sheet.html"
     }
   ],
   "language": "he",

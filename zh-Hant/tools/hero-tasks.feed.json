@@ -223,6 +223,81 @@
       "language": "zh-Hant",
       "title": "會議記錄變一頁大綱",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 356,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "把每個人各自點的金額打進去，填上稅率與小費比例，就會算出每個人真正要付多少。稅和小費會按各自點的比例分攤到每一分錢，最後可以下載成 CSV。 小計＝所有人點的金額相加。稅＝小計 × 稅率。小費＝小計 × 小費比例。每個人分攤到的稅與小費＝自己點的金額 ÷ 小計，除不盡的零頭優先給小數部分最大的人，所以各人金額加起來一定等於帳單總額。 請使用同一貨幣，稅與小費都以小計的百分比填寫。不換匯、不套用服務費規則、不建議該給多少小費，也不經手任何付款。顯示取小數兩位，分攤計算本身以「分」為單位。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html",
+      "language": "zh-Hant",
+      "title": "帳單分攤表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 374,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "把存下來的東西列出來、各標一個預估閱讀分鐘數，再填每天真的看得完的分鐘數，就會算出每一篇會在哪一天讀完，計畫可下載成 CSV。 累計分鐘＝這一項的分鐘數加上前面全部。第幾天＝累計分鐘 ÷ 每天分鐘，無條件進位。讀完日期＝起始日期 ＋ 天數 − 1。剩下的分鐘＝天數 × 每天分鐘 − 總分鐘數。 你輸入的順序就是閱讀順序：不重新排序、不跳過、不合併。每天只算一次、剛好用完當天的分鐘額度，中間不休假；不會開啟或抓取任何連結，也不會替你推估閱讀速度。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/reading-backlog-sheet.html",
+      "language": "zh-Hant",
+      "title": "稍後再讀消化表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tw/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1072,
+          "title": "下載範例 CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "填上每則筆記是哪天寫的，就會排出後面五個複習日期，還會告訴你各剩幾天、哪些已經過了。日程表可以下載成 CSV。 複習日期＝寫的日期 ＋ 1、3、7、16、35 天。剩幾天＝複習日期 − 今天，負數就代表那天已經過去了。下次複習＝第一個等於今天或還沒到的日期。 這是固定的間隔表，不是記憶模型：它不預測你記得多少、不替筆記打分數，也不批改答案。只算日期，不含時間、時區、提醒或通知。",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/review-schedule-sheet.html",
+      "language": "zh-Hant",
+      "title": "筆記複習表",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/review-schedule-sheet.html"
     }
   ],
   "language": "zh-Hant",

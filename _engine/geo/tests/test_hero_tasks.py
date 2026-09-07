@@ -386,9 +386,11 @@ class HeroTaskTests(unittest.TestCase):
 
     def test_task_copy_layers_only_the_tasks_own_keys_over_the_shared_copy(self):
         self.assertEqual({"maintenance-next-due", "project-profit", "battery-wear", "bandwidth-need", "trip-budget",
-                          "day-itinerary", "one-page-outline"}, set(self.task_copies))
+                          "day-itinerary", "one-page-outline", "bill-split", "reading-backlog", "review-schedule"},
+                         set(self.task_copies))
         self.assertEqual(["purchase-worktime", "maintenance-next-due", "project-profit", "battery-wear", "bandwidth-need",
-                          "trip-budget", "day-itinerary", "one-page-outline"], [task["id"] for task in self.tasks])
+                          "trip-budget", "day-itinerary", "one-page-outline", "bill-split", "reading-backlog",
+                          "review-schedule"], [task["id"] for task in self.tasks])
         for locale in hero.OFFICIAL_LOCALES:
             with self.subTest(locale=locale):
                 self.assertIs(self.copy[locale], hero.task_copy(self.copy, self.task_copies, self.tasks[0], locale))
@@ -1053,6 +1055,267 @@ class HeroTaskTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             self.battery_node(self.CSV, {"input": data, "labels": self.copy["de-DE"]})
 
+    def split_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "bill-split-v1"}):
+            return self.adapter_node(hero.SPLIT_CORE, script, payload)
+
+    def backlog_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "reading-backlog-v1"}):
+            return self.adapter_node(hero.BACKLOG_CORE, script, payload)
+
+    def review_node(self, script, payload):
+        with mock.patch.dict(os.environ, {"ADAPTER": "review-schedule-v1"}):
+            return self.adapter_node(hero.REVIEW_CORE, script, payload)
+
+    def test_bill_split_shares_every_cent_and_reconciles_to_the_bill(self):
+        people = lambda *amounts: [{"name": f"person {index}", "amount": amount}
+                                   for index, amount in enumerate(amounts)]
+        cases = [
+            ({"tax_pct": "8.25", "tip_pct": "15", "items": people("32.40", "18.90", "25.00")},
+             [(267, 486, 3993), (156, 284, 2330), (206, 375, 3081)], 7630, 629, 1145, 9404),
+            # Three equal orders and an odd cent: the remainder is handed out, never dropped.
+            ({"tax_pct": "0", "tip_pct": "10", "items": people("10", "10", "10")},
+             [(0, 100, 1100), (0, 100, 1100), (0, 100, 1100)], 3000, 0, 300, 3300),
+            # A subtotal that does not divide evenly: the two largest fractions take the spare cents.
+            ({"tax_pct": "0", "tip_pct": "10", "items": people("10.00", "10.00", "10.01")},
+             [(0, 100, 1100), (0, 100, 1100), (0, 100, 1101)], 3001, 0, 300, 3301),
+            # A zero order still pays nothing, and the rest still add up exactly.
+            ({"tax_pct": "10", "tip_pct": "0", "items": people("0", "33.33")},
+             [(0, 0, 0), (333, 0, 3666)], 3333, 333, 0, 3666),
+            ({"tax_pct": "100", "tip_pct": "100", "items": people(*["100000000"] * 20)},
+             None, 20 * 10000000000, 20 * 10000000000, 20 * 10000000000, 60 * 10000000000),
+        ]
+        outputs = self.split_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(tax=case[0]["tax_pct"], tip=case[0]["tip_pct"]):
+                if case[1] is not None:
+                    self.assertEqual(
+                        case[1],
+                        [(item["tax_minor"], item["tip_minor"], item["total_minor"]) for item in output["items"]],
+                    )
+                self.assertEqual(
+                    case[2:],
+                    (output["subtotal_minor"], output["tax_minor"], output["tip_minor"], output["grand_total_minor"]),
+                )
+                # The whole point of the sheet: the parts always rebuild the bill.
+                self.assertEqual(output["grand_total_minor"], sum(item["total_minor"] for item in output["items"]))
+                self.assertEqual(output["tax_minor"], sum(item["tax_minor"] for item in output["items"]))
+                self.assertEqual(output["tip_minor"], sum(item["tip_minor"] for item in output["items"]))
+                self.assertEqual(list(range(1, len(case[0]["items"]) + 1)), [item["order"] for item in output["items"]])
+
+    def test_bill_split_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"tax_pct": "8.25", "tip_pct": "15", "items": [{"name": "Ana", "amount": "32.40"}]}
+        invalid = []
+        for field in ("tax_pct", "tip_pct"):
+            for value in ["100.01", "-1", "", "8.255", ".5", "08", " 8", 8, None]:
+                invalid.append({**valid, field: value})
+        for field, values in (("amount", ["", "-1", "1.234", "01", " 1", "1e3", 1, None, "100000001"]),
+                              ("name", ["", " ", "line\nbreak", "\x00", "a" * 121, None])):
+            for value in values:
+                item = copy.deepcopy(valid)
+                item["items"][0][field] = value
+                invalid.append(item)
+        invalid += [
+            {**valid, "items": []},
+            {**valid, "items": valid["items"] * 21},
+            # Nobody ordered anything: there is no bill to share.
+            {**valid, "items": [{"name": "Ana", "amount": "0"}, {"name": "Bo", "amount": "0.00"}]},
+            {**valid, "service_pct": "not accepted"},
+            {**valid, "items": [{**valid["items"][0], "paid": "not accepted"}]},
+        ]
+        errors = self.split_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_bill_split_csv_is_localized_formula_safe_and_reconciles(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[8], "ja")
+        data = {"tax_pct": "8.25", "tip_pct": "15", "items": [
+            {"name": "=1+1", "amount": "32.40"},
+            {"name": "\u200f@cmd", "amount": "18.90"},
+            {"name": 'Comma, "quote"', "amount": "25.00"},
+        ]}
+        result = self.split_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual([labels[key] for key in ("person", "amount", "tax_share", "tip_share", "total_due")], rows[0])
+        self.assertEqual(["'=1+1", "32.40", "2.67", "4.86", "39.93"], rows[1])
+        self.assertEqual(["'\u200f@cmd", "18.90", "1.56", "2.84", "23.30"], rows[2])
+        self.assertEqual(['Comma, "quote"', "25.00", "2.06", "3.75", "30.81"], rows[3])
+        self.assertEqual([labels["subtotal"], "76.30", "", "", ""], rows[4])
+        # Percentages stay numeric-looking and are never quoted as formulas.
+        self.assertEqual([labels["tax"], "8.25%", "6.29", "", ""], rows[5])
+        self.assertEqual([labels["tip"], "15.00%", "11.45", "", ""], rows[6])
+        self.assertEqual([labels["grand_total"], "", "", "", "94.04"], rows[7])
+        self.assertEqual(9404, sum(round(float(row[4]) * 100) for row in rows[1:4]))
+        with self.assertRaises(AssertionError):
+            self.split_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
+
+    def test_reading_backlog_packs_days_in_typed_order_and_spans_long_items(self):
+        saved = lambda *minutes: [{"name": f"item {index}", "minutes": value}
+                                  for index, value in enumerate(minutes)]
+        cases = [
+            ({"daily_minutes": "20", "start_date": "2026-09-07", "items": saved("12", "35", "8", "40")},
+             [(12, 1, "2026-09-07"), (47, 3, "2026-09-09"), (55, 3, "2026-09-09"), (95, 5, "2026-09-11")],
+             95, 5, 5, "2026-09-11"),
+            # A single item longer than the daily budget simply spans days; it is never split or skipped.
+            ({"daily_minutes": "10", "start_date": "2026-02-27", "items": saved("35")},
+             [(35, 4, "2026-03-02")], 35, 4, 5, "2026-03-02"),
+            # Leap day: 2028 has 29 February, so day 4 from 27 February lands on 1 March.
+            ({"daily_minutes": "10", "start_date": "2028-02-27", "items": saved("35")},
+             [(35, 4, "2028-03-01")], 35, 4, 5, "2028-03-01"),
+            # An exact fit leaves no spare minutes on the last day.
+            ({"daily_minutes": "60", "start_date": "2026-12-30", "items": saved("60", "60", "60")},
+             [(60, 1, "2026-12-30"), (120, 2, "2026-12-31"), (180, 3, "2027-01-01")], 180, 3, 0, "2027-01-01"),
+            ({"daily_minutes": "5", "start_date": "2026-01-01", "items": saved(*["600"] * 30)},
+             None, 18000, 3600, 0, "2035-11-09"),
+        ]
+        outputs = self.backlog_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(start=case[0]["start_date"], daily=case[0]["daily_minutes"]):
+                if case[1] is not None:
+                    self.assertEqual(
+                        case[1],
+                        [(item["cumulative_min"], item["day"], item["finish_date"]) for item in output["items"]],
+                    )
+                self.assertEqual(
+                    case[2:],
+                    (output["total_minutes"], output["total_days"], output["leftover_minutes"], output["finish_date"]),
+                )
+                self.assertEqual(list(range(1, len(case[0]["items"]) + 1)), [item["order"] for item in output["items"]])
+                self.assertEqual([item["name"] for item in case[0]["items"]], [item["name"] for item in output["items"]])
+
+    def test_reading_backlog_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"daily_minutes": "20", "start_date": "2026-09-07",
+                 "items": [{"name": "Long read", "minutes": "35"}]}
+        invalid = []
+        for value in ["4", "601", "", "20.5", "-20", "020", " 20", 20, None]:
+            invalid.append({**valid, "daily_minutes": value})
+        for value in ["2026-9-7", "2026-02-30", "1999-12-31", "2100-01-01", "", "07/09/2026", "2026-09-07T00:00", None]:
+            invalid.append({**valid, "start_date": value})
+        for field, values in (("minutes", ["0", "601", "", "1.5", "-1", "01", " 1", 1, None]),
+                              ("name", ["", " ", "line\nbreak", "\x00", "a" * 121, None])):
+            for value in values:
+                item = copy.deepcopy(valid)
+                item["items"][0][field] = value
+                invalid.append(item)
+        invalid += [
+            {**valid, "items": []},
+            {**valid, "items": valid["items"] * 31},
+            # The plan would run past the supported calendar.
+            {"daily_minutes": "5", "start_date": "2099-12-01", "items": [{"name": "Long", "minutes": "600"}]},
+            {**valid, "days_off": "not accepted"},
+            {**valid, "items": [{**valid["items"][0], "url": "not accepted"}]},
+        ]
+        errors = self.backlog_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_reading_backlog_csv_is_localized_and_formula_safe(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[9], "ja")
+        data = {"daily_minutes": "20", "start_date": "2026-09-07", "items": [
+            {"name": "=1+1", "minutes": "12"},
+            {"name": "\u200f@cmd", "minutes": "35"},
+            {"name": 'Comma, "quote"', "minutes": "8"},
+            {"name": "-lead", "minutes": "40"},
+        ]}
+        result = self.backlog_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual([labels[key] for key in ("item", "minutes", "cumulative", "day", "finish_date")], rows[0])
+        self.assertEqual(["'=1+1", "12", "12", "1", "2026-09-07"], rows[1])
+        self.assertEqual(["'\u200f@cmd", "35", "47", "3", "2026-09-09"], rows[2])
+        self.assertEqual(['Comma, "quote"', "8", "55", "3", "2026-09-09"], rows[3])
+        self.assertEqual(["'-lead", "40", "95", "5", "2026-09-11"], rows[4])
+        self.assertEqual([labels["total_minutes"], "95", "", "", ""], rows[5])
+        self.assertEqual([labels["total_days"], "5", "", "", "2026-09-11"], rows[6])
+        self.assertEqual([labels["leftover"], "5", "", "", ""], rows[7])
+        with self.assertRaises(AssertionError):
+            self.backlog_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
+
+    def test_review_schedule_is_a_fixed_ladder_that_never_predicts_recall(self):
+        notes = lambda *dates: [{"name": f"note {index}", "studied_on": date}
+                                for index, date in enumerate(dates)]
+        cases = [
+            ({"today": "2026-09-07", "items": notes("2026-09-01", "2026-09-06", "2026-08-20")},
+             [("2026-09-08", 1, 2), ("2026-09-07", 0, 0), ("2026-09-24", 17, 4)], "2026-09-07", 15, 6),
+            # Every date already gone by: there is no next review, and nothing is invented.
+            ({"today": "2026-11-01", "items": notes("2026-09-01")},
+             [(None, None, 5)], None, 5, 5),
+            # A note written today: the first step is tomorrow.
+            ({"today": "2026-09-07", "items": notes("2026-09-07")},
+             [("2026-09-08", 1, 0)], "2026-09-08", 5, 0),
+            # Month-end and leap-year arithmetic stays on the real calendar.
+            ({"today": "2028-01-01", "items": notes("2028-01-31")},
+             [("2028-02-01", 31, 0)], "2028-02-01", 5, 0),
+        ]
+        outputs = self.review_node(self.RUN, [case[0] for case in cases])
+        for case, output in zip(cases, outputs, strict=True):
+            with self.subTest(today=case[0]["today"]):
+                self.assertEqual(
+                    case[1],
+                    [(item["next_review"], item["next_days_left"], item["passed"]) for item in output["items"]],
+                )
+                self.assertEqual(case[2:], (output["next_review"], output["review_count"], output["passed_count"]))
+                self.assertEqual([1, 3, 7, 16, 35], output["intervals"])
+                for item in output["items"]:
+                    self.assertEqual([1, 2, 3, 4, 5], [review["step"] for review in item["reviews"]])
+                    for review in item["reviews"]:
+                        expected = "upcoming" if review["days_left"] > 0 else (
+                            "today" if review["days_left"] == 0 else "passed")
+                        self.assertEqual(expected, review["status"])
+                # Nothing in the result grades, scores or predicts recall.
+                for forbidden in ("score", "grade", "confidence", "recall", "difficulty"):
+                    self.assertNotIn(forbidden, json.dumps(output))
+        leap = self.review_node(self.RUN, [{"today": "2028-02-28", "items": notes("2028-02-28")}])
+        self.assertEqual(["2028-02-29", "2028-03-02", "2028-03-06", "2028-03-15", "2028-04-03"],
+                         [review["date"] for review in leap[0]["items"][0]["reviews"]])
+
+    def test_review_schedule_invalid_inputs_and_unknown_adapter_fail_closed(self):
+        valid = {"today": "2026-09-07", "items": [{"name": "Chapter 3", "studied_on": "2026-09-01"}]}
+        invalid = []
+        for value in ["2026-9-7", "2026-02-30", "1999-12-31", "2100-01-01", "", "07/09/2026", "2026-09-07T00:00", None]:
+            invalid.append({**valid, "today": value})
+            item = copy.deepcopy(valid)
+            item["items"][0]["studied_on"] = value
+            invalid.append(item)
+        for value in ["", " ", "line\nbreak", "\x00", "a" * 121, None]:
+            item = copy.deepcopy(valid)
+            item["items"][0]["name"] = value
+            invalid.append(item)
+        invalid += [
+            {**valid, "items": []},
+            {**valid, "items": valid["items"] * 21},
+            # The last step would fall outside the supported calendar.
+            {"today": "2099-12-01", "items": [{"name": "Late", "studied_on": "2099-12-31"}]},
+            {**valid, "intervals": "not accepted"},
+            {**valid, "items": [{**valid["items"][0], "difficulty": "not accepted"}]},
+        ]
+        errors = self.review_node(self.FAIL_CLOSED, invalid)
+        self.assertEqual([True] * (len(invalid) + 1), errors)
+
+    def test_review_schedule_csv_is_localized_and_formula_safe(self):
+        labels = hero.task_copy(self.copy, self.task_copies, self.tasks[10], "ja")
+        data = {"today": "2026-09-07", "items": [
+            {"name": "=1+1", "studied_on": "2026-09-01"},
+            {"name": "\u200f@cmd", "studied_on": "2026-09-06"},
+            {"name": 'Comma, "quote"', "studied_on": "2026-08-20"},
+        ]}
+        result = self.review_node(self.CSV, {"input": data, "labels": labels})
+        self.assertTrue(result.startswith("\ufeff"))
+        self.assertIn("\r\n", result)
+        rows = list(csv.reader(io.StringIO(result.removeprefix("\ufeff"))))
+        self.assertEqual(
+            [labels[key] for key in ("note", "studied_on", "step", "review_date", "days_left", "status")], rows[0])
+        self.assertEqual(["'=1+1", "2026-09-01", "1", "2026-09-02", "-5", labels["status_passed"]], rows[1])
+        self.assertEqual(["'=1+1", "2026-09-01", "3", "2026-09-08", "1", labels["status_upcoming"]], rows[3])
+        self.assertEqual(["'\u200f@cmd", "2026-09-06", "1", "2026-09-07", "0", labels["status_today"]], rows[6])
+        self.assertEqual('Comma, "quote"', rows[11][0])
+        self.assertEqual([labels["note_count"], "3", "", "", "", ""], rows[16])
+        self.assertEqual([labels["review_count"], "15", "", "", "", ""], rows[17])
+        self.assertEqual([labels["next_review"], "2026-09-07", "", "", "", ""], rows[18])
+        with self.assertRaises(AssertionError):
+            self.review_node(self.CSV, {"input": data, "labels": self.copy["ja"]})
+
     def test_table_driven_exact_money_and_unrounded_totals(self):
         cases = [
             ({"hourly_income": "20", "workday_hours": "8",
@@ -1141,13 +1404,14 @@ class HeroTaskTests(unittest.TestCase):
 
     def test_builds_fifty_real_results_not_per_app_doorways(self):
         report = hero.build(self.pages, **self.options)
-        self.assertEqual((400, 12, 1), (report["pages"], report["supported_apps"], report["unserved_apps"]))
+        self.assertEqual((550, 15, 1), (report["pages"], report["supported_apps"], report["unserved_apps"]))
         manifest = json.loads((self.pages / hero.MANIFEST).read_text())
-        self.assertEqual(400, len({row["url"] for row in manifest["records"]}))
-        self.assertEqual(600, manifest["app_locale_pairs"])
+        self.assertEqual(550, len({row["url"] for row in manifest["records"]}))
+        self.assertEqual(750, manifest["app_locale_pairs"])
         self.assertEqual(["unserved"], manifest["unserved_app_keys"])
-        maintenance, profit, battery, bandwidth, trip, itinerary, outline = (
-            self.tasks[1], self.tasks[2], self.tasks[3], self.tasks[4], self.tasks[5], self.tasks[6], self.tasks[7]
+        maintenance, profit, battery, bandwidth, trip, itinerary, outline, split, backlog, review = (
+            self.tasks[1], self.tasks[2], self.tasks[3], self.tasks[4], self.tasks[5], self.tasks[6], self.tasks[7],
+            self.tasks[8], self.tasks[9], self.tasks[10]
         )
         for record in manifest["records"]:
             locale = record["locale"]
@@ -1286,6 +1550,56 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertEqual(record["url"], feed["items"][7]["id"])
                     self.assertEqual(own["title"], feed["items"][7]["title"])
                     self.assertEqual(1, len(feed["items"][7]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "bill-split":
+                    own = hero.task_copy(self.copy, self.task_copies, split, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    for value in ("76.30", "6.29", "11.45", "94.04", "39.93", own["person"] + " 3"):
+                        self.assertIn(html.escape(value), document)
+                    self.assertIn('id="split-rows"', document)
+                    self.assertIn('id="grand-total-value">94.04<', document)
+                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertIn("id6794178671", document)
+                    example = (self.pages / hero.example_path(split, locale)).read_text()
+                    self.assertIn(own["grand_total"], example)
+                    self.assertIn("94.04", example)
+                    self.assertEqual(record["url"], feed["items"][8]["id"])
+                    self.assertEqual(own["title"], feed["items"][8]["title"])
+                    self.assertEqual(1, len(feed["items"][8]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "reading-backlog":
+                    own = hero.task_copy(self.copy, self.task_copies, backlog, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    for value in ("2026-09-11", "2026-09-09", own["item"] + " 4"):
+                        self.assertIn(html.escape(value), document)
+                    self.assertIn('id="backlog-rows"', document)
+                    self.assertIn('id="total-minutes">95<', document)
+                    self.assertIn('id="total-days">5<', document)
+                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertIn("id6802505528", document)
+                    example = (self.pages / hero.example_path(backlog, locale)).read_text()
+                    self.assertIn(own["leftover"], example)
+                    self.assertIn("2026-09-11", example)
+                    self.assertEqual(record["url"], feed["items"][9]["id"])
+                    self.assertEqual(own["title"], feed["items"][9]["title"])
+                    self.assertEqual(1, len(feed["items"][9]["_hero_task"]["optional_apps"]))
+                elif record["task_id"] == "review-schedule":
+                    own = hero.task_copy(self.copy, self.task_copies, review, locale)
+                    self.assertIn(own["formula"], document)
+                    self.assertNotIn(self.copy[locale]["formula"], document)
+                    for value in ("2026-09-08", "2026-09-24", "-17", own["status_today"], own["note"] + " 2"):
+                        self.assertIn(html.escape(value), document)
+                    self.assertIn('id="note-rows"', document)
+                    self.assertIn('id="review-count">15<', document)
+                    self.assertIn('id="next-review">2026-09-07<', document)
+                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertIn("id6798813048", document)
+                    example = (self.pages / hero.example_path(review, locale)).read_text()
+                    self.assertIn(own["status_passed"], example)
+                    self.assertIn("2026-09-24", example)
+                    self.assertEqual(record["url"], feed["items"][10]["id"])
+                    self.assertEqual(own["title"], feed["items"][10]["title"])
+                    self.assertEqual(1, len(feed["items"][10]["_hero_task"]["optional_apps"]))
                 else:
                     self.assertEqual("maintenance-next-due", record["task_id"])
                     own = hero.task_copy(self.copy, self.task_copies, maintenance, locale)
@@ -1303,10 +1617,10 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertEqual(own["title"], feed["items"][1]["title"])
                     self.assertEqual(1, len(feed["items"][1]["_hero_task"]["optional_apps"]))
         sitemap = ET.parse(self.pages / hero.SITEMAP)
-        self.assertEqual(400, len(sitemap.getroot()))
+        self.assertEqual(550, len(sitemap.getroot()))
         index = (self.pages / "sitemap_index.xml").read_text()
         self.assertEqual(1, index.count(hero.SITEMAP))
-        self.assertEqual(8, len(hero.english_feed_entries(self.pages)))
+        self.assertEqual(11, len(hero.english_feed_entries(self.pages)))
         with self.assertRaisesRegex(ValueError, "No reviewed"):
             hero.task_for_app(self.tasks, "unserved")
 
@@ -1392,7 +1706,7 @@ class HeroTaskTests(unittest.TestCase):
             relative = url.removeprefix(base + "/")
             return (self.pages / relative).read_bytes()
         result = readback.verify(self.pages / hero.MANIFEST, base, fetcher=fetcher)
-        self.assertEqual(877, result["verified_artifacts"])
+        self.assertEqual(1186, result["verified_artifacts"])
         target = self.pages / hero.example_path(self.tasks[0], "ko")
         target.write_text("wrong CDN bytes")
         with self.assertRaisesRegex(ValueError, "digest mismatch"):
@@ -1449,12 +1763,17 @@ class HeroTaskTests(unittest.TestCase):
         self.assertEqual(3, deploy.count("steps.verify_hero.outcome == 'success'"))
 
     def test_private_inputs_cannot_become_public_urls_or_script(self):
+        # Every reviewed adapter, not only the first wave: one leaked accessor
+        # anywhere would make a private entry public.
+        for adapter, assets in sorted(hero.ADAPTER_ASSETS.items()):
+            with self.subTest(adapter=adapter):
+                source = assets["core"].read_text() + assets["ui"].read_text()
+                for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage",
+                                  "indexedDB", "sendBeacon", "location.search", "location.hash"):
+                    self.assertNotIn(forbidden, source)
+                self.assertIn('window.addEventListener("pagehide", restore)', source)
+                self.assertIn("URL.revokeObjectURL", source)
         source = hero.CORE.read_text() + hero.UI.read_text()
-        for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage",
-                          "indexedDB", "sendBeacon", "location.search", "location.hash"):
-            self.assertNotIn(forbidden, source)
-        self.assertIn('window.addEventListener("pagehide", restore)', source)
-        self.assertIn("URL.revokeObjectURL", source)
         self.assertNotIn("</script>", hero.script_json({"name": "</script><script>alert(1)</script>"}))
 
     def test_browser_downloads_private_result_and_all_fifty_locales_fit(self):
@@ -1467,8 +1786,8 @@ class HeroTaskTests(unittest.TestCase):
         )
         self.assertEqual(0, process.returncode, process.stdout + process.stderr)
         self.assertIn('"locales":50', process.stdout)
-        self.assertIn('"records":400', process.stdout)
-        self.assertIn('"downloads":8', process.stdout)
+        self.assertIn('"records":550', process.stdout)
+        self.assertIn('"downloads":11', process.stdout)
 
 
 if __name__ == "__main__":

@@ -223,6 +223,81 @@
       "language": "th",
       "title": "โน้ตประชุมเป็นสรุปหนึ่งหน้า",
       "url": "https://open.cait518.cc/ios-app-guide/th/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 458,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "ใส่ยอดที่แต่ละคนสั่ง กรอกเปอร์เซ็นต์ภาษีกับทิป แล้วจะเห็นว่าใครต้องจ่ายเท่าไรพอดี ภาษีและทิปถูกเฉลี่ยถึงหน่วยสตางค์ตามสัดส่วนที่สั่ง และดาวน์โหลดตารางเป็น CSV ได้ ยอดรวมย่อย = ยอดที่ทุกคนสั่งรวมกัน ภาษี = ยอดรวมย่อย × อัตราภาษี ทิป = ยอดรวมย่อย × อัตราทิป ส่วนแบ่งของแต่ละคนคือยอดที่ตัวเองสั่ง ÷ ยอดรวมย่อย เศษสตางค์ที่เหลือจะให้คนที่มีทศนิยมมากที่สุดก่อน ผลรวมของทุกคนจึงตรงกับยอดบิลเสมอ ใช้สกุลเงินเดียว และกรอกภาษีกับทิปเป็นเปอร์เซ็นต์ของยอดรวมย่อย ไม่มีการแปลงสกุลเงิน ไม่มีกฎค่าบริการ ไม่แนะนำว่าควรให้ทิปเท่าไร และไม่มีการชำระเงิน หน้าจอปัดเศษสองตำแหน่ง ส่วนการหารคำนวณเป็นหน่วยสตางค์เต็ม",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html",
+      "language": "th",
+      "title": "หารบิลตามที่สั่ง",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 665,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "ลิสต์สิ่งที่เซฟไว้พร้อมเวลาที่ต้องใช้ ใส่จำนวนนาทีที่อ่านได้จริงต่อวัน แล้วดูว่าแต่ละชิ้นจะอ่านจบวันไหน ดาวน์โหลดแผนเป็น CSV ได้ ยอดสะสม = นาทีของรายการนี้บวกทุกอย่างที่อยู่ข้างบน วันที่เท่าไร = ยอดสะสม ÷ นาทีต่อวัน ปัดขึ้น อ่านจบวันที่ = วันเริ่ม + จำนวนวัน − 1 นาทีที่เหลือ = จำนวนวัน × นาทีต่อวัน − รวมนาที ลำดับที่พิมพ์คือลำดับที่อ่าน ไม่มีการจัดเรียงใหม่ ข้าม หรือรวมรายการ อ่านวันละครั้งโดยใช้เวลาพอดีตามที่กำหนด ไม่มีวันหยุด ไม่เปิดหรือดึงลิงก์ใด ๆ และไม่เดาความเร็วในการอ่านให้",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/reading-backlog-sheet.html",
+      "language": "th",
+      "title": "แผนเคลียร์ไว้อ่านทีหลัง",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/th/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1624,
+          "title": "ดาวน์โหลด CSV ตัวอย่าง",
+          "url": "https://open.cait518.cc/ios-app-guide/th/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "ใส่วันที่เขียนโน้ตแต่ละอัน แล้วจะได้วันทบทวนอีกห้าครั้งถัดไป พร้อมเหลืออีกกี่วันและอันไหนเลยกำหนดไปแล้ว ดาวน์โหลดตารางเป็น CSV ได้ วันทบทวน = วันที่เขียน + 1, 3, 7, 16 และ 35 วัน เหลืออีกกี่วัน = วันทบทวน − วันนี้ ตัวเลขติดลบคือวันที่ผ่านไปแล้ว ทบทวนครั้งถัดไป = วันแรกที่ตรงกับวันนี้หรือหลังจากนั้น นี่คือชุดระยะเวลาคงที่ ไม่ใช่แบบจำลองความจำ ไม่มีการทำนายว่าคุณจะจำอะไรได้ ไม่ให้คะแนนโน้ต และไม่ตรวจคำตอบ มีแต่วันที่ ไม่มีเวลา ไม่มีเขตเวลา ไม่มีการเตือน และไม่มีการแจ้งเตือน",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/th/tools/review-schedule-sheet.html",
+      "language": "th",
+      "title": "ตารางทบทวนโน้ต",
+      "url": "https://open.cait518.cc/ios-app-guide/th/tools/review-schedule-sheet.html"
     }
   ],
   "language": "th",

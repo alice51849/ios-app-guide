@@ -223,6 +223,81 @@
       "language": "id",
       "title": "Catatan rapat satu halaman",
       "url": "https://open.cait518.cc/ios-app-guide/id/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 316,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Tulis pesanan tiap orang, isi persen pajak dan tip, lalu lihat siapa harus bayar berapa. Pajak dan tip dibagi sampai sen terakhir sesuai porsi pesanan, dan tabelnya bisa diunduh sebagai CSV. Subtotal = semua pesanan dijumlahkan. Pajak = subtotal × persen pajak. Tip = subtotal × persen tip. Bagian tiap orang adalah pesanannya ÷ subtotal; sisa sen diberikan lebih dulu ke pecahan desimal terbesar, jadi jumlah semua bagian selalu pas dengan tagihan. Pakai satu mata uang, dan isi pajak serta tip sebagai persen dari subtotal. Tidak ada konversi mata uang, tidak ada aturan biaya layanan, tidak ada saran berapa tip yang pantas, dan tidak ada pembayaran. Tampilan dibulatkan dua angka desimal; pembagiannya dihitung dalam sen bulat.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html",
+      "language": "id",
+      "title": "Bagi tagihan",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 371,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Daftarkan apa saja yang kamu simpan dan berapa lama tiap satunya, isi menit yang benar-benar kamu baca per hari, lalu lihat hari ke berapa masing-masing selesai. Rencananya bisa diunduh sebagai CSV. Total berjalan = menit item ini ditambah semua yang di atasnya. Hari = total berjalan ÷ menit per hari, dibulatkan ke atas. Selesai pada = tanggal mulai + hari − 1. Sisa menit = hari × menit per hari − total menit. Urutan yang kamu ketik adalah urutan bacanya: tidak ada yang diurutkan ulang, dilewati, atau digabung. Satu sesi sehari yang menghabiskan tepat jatah waktumu, tanpa hari libur, tanpa membuka atau mengambil tautan apa pun, dan tanpa menebak kecepatan bacamu.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/reading-backlog-sheet.html",
+      "language": "id",
+      "title": "Rencana «baca nanti»",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1172,
+          "title": "Unduh CSV contoh",
+          "url": "https://open.cait518.cc/ios-app-guide/id/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Isi tanggal kamu menulis tiap catatan, lalu dapatkan lima tanggal pengulangan berikutnya, berapa hari lagi, dan mana yang sudah lewat. Jadwalnya bisa diunduh sebagai CSV. Tanggal ulang = tanggal ditulis + 1, 3, 7, 16, dan 35 hari. Sisa hari = tanggal ulang − hari ini; angka negatif berarti tanggal itu sudah lewat. Ulangan berikutnya = tanggal pertama yang jatuh hari ini atau sesudahnya. Ini tangga jarak tetap, bukan model ingatan: tidak ada yang meramal apa yang akan kamu ingat, tidak ada catatan yang dinilai, dan tidak ada jawaban yang diperiksa. Hanya tanggal, tanpa jam, zona waktu, pengingat, atau notifikasi.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/id/tools/review-schedule-sheet.html",
+      "language": "id",
+      "title": "Jadwal mengulang catatan",
+      "url": "https://open.cait518.cc/ios-app-guide/id/tools/review-schedule-sheet.html"
     }
   ],
   "language": "id",

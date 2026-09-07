@@ -223,6 +223,81 @@
       "language": "fr-CA",
       "title": "Réunion en plan d'une page",
       "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 354,
+          "title": "Télécharger le CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Entrez ce que chaque personne a commandé, ajoutez les taxes et le pourboire en pourcentage, et vous voyez le montant exact que chacun doit. Les taxes et le pourboire sont répartis au cent près, et la feuille se télécharge en CSV. Sous-total = tout ce qui a été commandé, additionné. Taxes = sous-total × taux de taxes. Pourboire = sous-total × taux de pourboire. La part de chaque personne est sa commande ÷ sous-total; les cents qui restent vont d'abord aux plus grandes décimales, donc la somme des parts donne exactement la facture. Une seule devise, taxes et pourboire en pourcentage du sous-total. Aucune conversion de devise, aucune règle de frais de service, aucun conseil sur le pourboire à laisser et aucun paiement. L'affichage arrondit à deux décimales; le calcul se fait en cents entiers.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html",
+      "language": "fr-CA",
+      "title": "Séparer la facture",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 396,
+          "title": "Télécharger le CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Inscrivez ce que vous avez enregistré et le temps que ça demande, indiquez les minutes que vous lisez vraiment chaque jour, et vous voyez quel jour chaque article sera fini. Le plan se télécharge en CSV. Cumul = les minutes de cet article plus tout ce qui vient avant. Jour = cumul ÷ minutes par jour, arrondi vers le haut. Fini le = date de départ + jour − 1. Minutes libres = jours × minutes par jour − minutes au total. L'ordre de saisie est l'ordre de lecture : rien n'est replacé, sauté ni fusionné. Une séance par jour qui utilise exactement votre budget, sans journée de congé, sans ouvrir ni télécharger de lien et sans estimer votre vitesse de lecture.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/reading-backlog-sheet.html",
+      "language": "fr-CA",
+      "title": "Plan de lecture différée",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1078,
+          "title": "Télécharger le CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Entrez la date où vous avez écrit chaque note et obtenez les cinq dates de révision qui suivent, avec les jours restants et celles qui sont déjà passées. Le calendrier se télécharge en CSV. Date de révision = date d'écriture + 1, 3, 7, 16 et 35 jours. Jours restants = date de révision − aujourd'hui; un nombre négatif désigne une date déjà passée. Prochaine révision = la première date qui tombe aujourd'hui ou après. Une échelle d'intervalles fixe, pas un modèle de mémoire : rien ici ne prédit ce dont vous vous souviendrez, n'attribue de note ni ne corrige de réponse. Rien que des dates, sans heures, sans fuseaux, sans rappels ni notifications.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/review-schedule-sheet.html",
+      "language": "fr-CA",
+      "title": "Calendrier de révision",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-CA/tools/review-schedule-sheet.html"
     }
   ],
   "language": "fr-CA",

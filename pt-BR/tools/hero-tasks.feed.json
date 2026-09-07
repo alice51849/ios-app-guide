@@ -223,6 +223,81 @@
       "language": "pt-BR",
       "title": "Reunião em uma página",
       "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/br/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 338,
+          "title": "Baixar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Coloque quanto cada pessoa pediu, informe a porcentagem de imposto e de gorjeta e veja o valor exato de cada uma. Imposto e gorjeta são rateados no centavo conforme o pedido, e a planilha sai em CSV. Subtotal = tudo que foi pedido, somado. Imposto = subtotal × porcentagem do imposto. Gorjeta = subtotal × porcentagem da gorjeta. A parte de cada pessoa é o pedido dela ÷ subtotal; os centavos que sobram vão primeiro para as maiores casas decimais, então a soma das partes fecha exatamente com a conta. Use uma única moeda e informe imposto e gorjeta como porcentagem do subtotal. Sem conversão de moeda, sem regra de taxa de serviço, sem sugestão de quanto dar de gorjeta e sem pagamento. A tela arredonda em duas casas; o rateio é calculado em centavos inteiros.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html",
+      "language": "pt-BR",
+      "title": "Rachar a conta",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/br/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 355,
+          "title": "Baixar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Liste o que você salvou e quanto tempo cada coisa leva, informe os minutos que realmente lê por dia e veja em que dia cada item termina. O plano sai em CSV. Acumulado = os minutos deste item mais tudo o que vem antes. Dia = acumulado ÷ minutos por dia, arredondado para cima. Termina em = data inicial + dia − 1. Minutos livres = dias × minutos por dia − minutos no total. A ordem digitada é a ordem de leitura: nada é reordenado, pulado ou juntado. Uma sessão por dia que gasta exatamente o seu tempo, sem folga, sem abrir ou baixar link nenhum e sem estimar a sua velocidade de leitura.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/reading-backlog-sheet.html",
+      "language": "pt-BR",
+      "title": "Plano para «ler depois»",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/br/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1165,
+          "title": "Baixar CSV de exemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Informe a data em que escreveu cada anotação e receba as cinco datas de revisão seguintes, com os dias que faltam e as que já passaram. O calendário sai em CSV. Data da revisão = data em que foi escrita + 1, 3, 7, 16 e 35 dias. Dias restantes = data da revisão − hoje; número negativo é uma data que já passou. Próxima revisão = a primeira data que cai hoje ou depois. É uma escada de intervalos fixa, não um modelo de memória: nada aqui prevê o que você vai lembrar, dá nota a uma anotação ou corrige resposta. Só datas, sem horários, sem fusos, sem lembretes e sem notificações.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/review-schedule-sheet.html",
+      "language": "pt-BR",
+      "title": "Calendário de revisão",
+      "url": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/review-schedule-sheet.html"
     }
   ],
   "language": "pt-BR",

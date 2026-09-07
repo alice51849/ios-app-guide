@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="各ノートを書いた日を入れると、そのあとの復習日5回分と、あと何日か、どれがもう過ぎたかが出ます。スケジュールはCSVでダウンロードできます。">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="review-schedule">
+<title>ノート復習表</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/review-schedule-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="無料ツールの成果">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="無料ツールの成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="無料ツールの成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/ja/tools/hero-tasks.feed.json" title="無料ツールの成果">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/5a4ae986895a1939-hero-task-review.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html","name":"ノート復習表","description":"各ノートを書いた日を入れると、そのあとの復習日5回分と、あと何日か、どれがもう過ぎたかが出ます。スケジュールはCSVでダウンロードできます。","inLanguage":"ja","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html#worked-example","name":"計算例","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/ja/tools/results/review-schedule-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html#howto","name":"ノート復習表","description":"各ノートを書いた日を入れると、そのあとの復習日5回分と、あと何日か、どれがもう過ぎたかが出ます。スケジュールはCSVでダウンロードできます。","inLanguage":"ja","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"ノート復習表","url":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"復習日＝書いた日＋1日、3日、7日、16日、35日。あと何日＝復習日−今日。マイナスはすでに過ぎた日です。次の復習＝今日以降で最初に来る日。"},{"@type":"HowToStep","position":2,"text":"これは固定の間隔表であって記憶モデルではありません。何を覚えているかを予測したり、ノートに点数をつけたり、答え合わせをしたりはしません。扱うのは日付だけで、時刻・タイムゾーン・リマインダー・通知はありません。"}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html#example-dataset","name":"計算例","description":"各ノートを書いた日を入れると、そのあとの復習日5回分と、あと何日か、どれがもう過ぎたかが出ます。スケジュールはCSVでダウンロードできます。","inLanguage":"ja","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/ja/tools/results/review-schedule-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"review-schedule-v1","slug":"review-schedule-sheet","locale":"ja","copy":{"title":"ノート復習表","intro":"各ノートを書いた日を入れると、そのあとの復習日5回分と、あと何日か、どれがもう過ぎたかが出ます。スケジュールはCSVでダウンロードできます。","income":"手取り時給","day":"1日の労働時間","item":"購入品","quantity":"数量","price":"税込単価","total":"合計","hours":"必要な労働時間","days":"労働日数","add":"ノートを追加","remove":"削除","download":"自分の CSV を保存","reset":"例に戻す","example":"計算例","example_note":"2026年9月1日・9月6日・8月20日に書いた3つのノートを、2026年9月7日時点で見た場合。","formula":"復習日＝書いた日＋1日、3日、7日、16日、35日。あと何日＝復習日−今日。マイナスはすでに過ぎた日です。次の復習＝今日以降で最初に来る日。","limits":"これは固定の間隔表であって記憶モデルではありません。何を覚えているかを予測したり、ノートに点数をつけたり、答え合わせをしたりはしません。扱うのは日付だけで、時刻・タイムゾーン・リマインダー・通知はありません。","privacy":"入力内容はこのタブ内だけで処理します。アップロード、アカウント、入力の追跡、データ保存はありません。再読み込みで変更内容が消えます。","optional":"任意で使えるアプリ","optional_note":"この無料シートにアプリは不要です。最新の機能と価格は各 App Store ページでご確認ください。","error":"各ノートに名前とYYYY-MM-DD形式の作成日を入れ、今日の日付も正しく入力してください。","row_limit":"ノートは最大20件、各5回分の復習日。","tools":"無料ツール","method":"計算式と制限","sources":"出典","result":"計算結果","disclosure":"任意アプリの開発元 Lumi Studio が公開しています。独立したランキングではありません。","download_example":"計算例の CSV を保存","feed":"無料ツールの成果","today":"今日","note":"ノート","studied_on":"書いた日","step":"何回目","review_date":"復習日","days_left":"あと何日","status":"状態","status_passed":"過ぎた","status_today":"今日","status_upcoming":"これから","next_review":"次の復習","note_count":"ノート数","review_count":"復習回数","intervals_note":"固定の間隔：書いた日から1日、3日、7日、16日、35日後。"},"example":{"today":"2026-09-07","items":[{"studied_on":"2026-09-01","name":"ノート 1"},{"studied_on":"2026-09-06","name":"ノート 2"},{"studied_on":"2026-08-20","name":"ノート 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/107b93f39bfc94ef-hero-task-review-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/2268505d087cb925-hero-task-review-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/ja/tools/index.html">無料ツール</a><span>Lumi Studio</span></nav>
+<h1>ノート復習表</h1><p>各ノートを書いた日を入れると、そのあとの復習日5回分と、あと何日か、どれがもう過ぎたかが出ます。スケジュールはCSVでダウンロードできます。</p>
+<section class="panel" aria-label="ノート復習表">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="today-date">今日</label><input id="today-date" type="text" inputmode="numeric" maxlength="10" value="2026-09-07" required autocomplete="off"><p class="small">固定の間隔：書いた日から1日、3日、7日、16日、35日後。</p></div>
+</div>
+<div id="note-rows"><div class="note-row"><div class="name-field"><label data-label="name" for="row-1-name">ノート</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="ノート 1" required autocomplete="off"></div><div><label data-label="studied_on" for="row-1-studied_on">書いた日</label><input id="row-1-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-09-01" required autocomplete="off"></div><div><p class="output-label">次の復習</p><output data-output="next">2026-09-08</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="upcoming">これから</output></div><button type="button" data-remove aria-label="削除 · ノート 1">削除</button></div><div class="note-row"><div class="name-field"><label data-label="name" for="row-2-name">ノート</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="ノート 2" required autocomplete="off"></div><div><label data-label="studied_on" for="row-2-studied_on">書いた日</label><input id="row-2-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-09-06" required autocomplete="off"></div><div><p class="output-label">次の復習</p><output data-output="next">2026-09-07</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="today">今日</output></div><button type="button" data-remove aria-label="削除 · ノート 2">削除</button></div><div class="note-row"><div class="name-field"><label data-label="name" for="row-3-name">ノート</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="ノート 3" required autocomplete="off"></div><div><label data-label="studied_on" for="row-3-studied_on">書いた日</label><input id="row-3-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-08-20" required autocomplete="off"></div><div><p class="output-label">次の復習</p><output data-output="next">2026-09-24</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status" data-status="upcoming">これから</output></div><button type="button" data-remove aria-label="削除 · ノート 3">削除</button></div></div>
+<template id="note-template"><div class="note-row"><div class="name-field"><label data-label="name" for="row-0-name">ノート</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="studied_on" for="row-0-studied_on">書いた日</label><input id="row-0-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-09-07" required autocomplete="off"></div><div><p class="output-label">次の復習</p><output data-output="next">—</output></div><div><p class="output-label">状態</p><output class="status-badge" data-output="status">—</output></div><button type="button" data-remove aria-label="削除 · ">削除</button></div></template>
+<div class="actions"><button type="button" id="add-note">ノートを追加</button><span class="small">ノートは最大20件、各5回分の復習日。</span></div>
+<div class="totals review-totals" aria-label="計算結果">
+<div><p>ノート数</p><output class="total-value" id="note-count">3</output></div><div><p>復習回数</p><output class="total-value" id="review-count">15</output></div><div><p>次の復習</p><output class="total-value" id="next-review">2026-09-07</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>自分の CSV を保存</button><button type="button" id="reset-example">例に戻す</button></div>
+</fieldset></form><p class="small">入力内容はこのタブ内だけで処理します。アップロード、アカウント、入力の追跡、データ保存はありません。再読み込みで変更内容が消えます。</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>計算例</h2><p>2026年9月1日・9月6日・8月20日に書いた3つのノートを、2026年9月7日時点で見た場合。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">ノート</th><th scope="col">書いた日</th><th scope="col">何回目</th><th scope="col">復習日</th><th scope="col">あと何日</th><th scope="col">状態</th></tr></thead><tbody><tr><td>ノート 1</td><td>2026-09-01</td><td>1</td><td>2026-09-02</td><td>-5</td><td>過ぎた</td></tr><tr><td>ノート 1</td><td>2026-09-01</td><td>2</td><td>2026-09-04</td><td>-3</td><td>過ぎた</td></tr><tr><td>ノート 1</td><td>2026-09-01</td><td>3</td><td>2026-09-08</td><td>1</td><td>これから</td></tr><tr><td>ノート 1</td><td>2026-09-01</td><td>4</td><td>2026-09-17</td><td>10</td><td>これから</td></tr><tr><td>ノート 1</td><td>2026-09-01</td><td>5</td><td>2026-10-06</td><td>29</td><td>これから</td></tr><tr><td>ノート 2</td><td>2026-09-06</td><td>1</td><td>2026-09-07</td><td>0</td><td>今日</td></tr><tr><td>ノート 2</td><td>2026-09-06</td><td>2</td><td>2026-09-09</td><td>2</td><td>これから</td></tr><tr><td>ノート 2</td><td>2026-09-06</td><td>3</td><td>2026-09-13</td><td>6</td><td>これから</td></tr><tr><td>ノート 2</td><td>2026-09-06</td><td>4</td><td>2026-09-22</td><td>15</td><td>これから</td></tr><tr><td>ノート 2</td><td>2026-09-06</td><td>5</td><td>2026-10-11</td><td>34</td><td>これから</td></tr><tr><td>ノート 3</td><td>2026-08-20</td><td>1</td><td>2026-08-21</td><td>-17</td><td>過ぎた</td></tr><tr><td>ノート 3</td><td>2026-08-20</td><td>2</td><td>2026-08-23</td><td>-15</td><td>過ぎた</td></tr><tr><td>ノート 3</td><td>2026-08-20</td><td>3</td><td>2026-08-27</td><td>-11</td><td>過ぎた</td></tr><tr><td>ノート 3</td><td>2026-08-20</td><td>4</td><td>2026-09-05</td><td>-2</td><td>過ぎた</td></tr><tr><td>ノート 3</td><td>2026-08-20</td><td>5</td><td>2026-09-24</td><td>17</td><td>これから</td></tr></tbody><tfoot><tr class="example-total"><td>ノート数</td><td>3</td><td></td><td></td><td></td><td></td></tr><tr class="example-total"><td>復習回数</td><td>15</td><td></td><td></td><td></td><td></td></tr><tr class="example-total"><td>次の復習</td><td></td><td></td><td>2026-09-07</td><td></td><td></td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/ja/tools/results/review-schedule-sheet.csv" download>計算例の CSV を保存</a>
+<h2>計算式と制限</h2><p>復習日＝書いた日＋1日、3日、7日、16日、35日。あと何日＝復習日−今日。マイナスはすでに過ぎた日です。次の復習＝今日以降で最初に来る日。</p>
+<pre class="formula">復習日 = 書いた日 + [+1 · +3 · +7 · +16 · +35]
+ノート 1: 2026-09-01 → 2026-09-02 (-5), 2026-09-04 (-3), 2026-09-08 (+1), 2026-09-17 (+10), 2026-10-06 (+29)
+ノート 2: 2026-09-06 → 2026-09-07 (+0), 2026-09-09 (+2), 2026-09-13 (+6), 2026-09-22 (+15), 2026-10-11 (+34)
+ノート 3: 2026-08-20 → 2026-08-21 (-17), 2026-08-23 (-15), 2026-08-27 (-11), 2026-09-05 (-2), 2026-09-24 (+17)
+次の復習 = 2026-09-07
+復習回数 = 3 × 5 = 15</pre>
+<p>これは固定の間隔表であって記憶モデルではありません。何を覚えているかを予測したり、ノートに点数をつけたり、答え合わせをしたりはしません。扱うのは日付だけで、時刻・タイムゾーン・リマインダー・通知はありません。</p>
+<ul class="small">
+<li>今日 / 書いた日: <bdi dir="ltr">YYYY-MM-DD</bdi></li>
+<li>何回目: <bdi dir="ltr">+1 · +3 · +7 · +16 · +35</bdi></li>
+<li>ノート: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>任意で使えるアプリ</h2><p>この無料シートにアプリは不要です。最新の機能と価格は各 App Store ページでご確認ください。</p><div class="actions"><a class="button" href="https://apps.apple.com/jp/app/id6798813048?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store で 100 Notes Studio: Pen &amp; Paper を入手</a></div></section>
+<footer><p>任意アプリの開発元 Lumi Studio が公開しています。独立したランキングではありません。</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">出典</a> · <a href="https://open.cait518.cc/ios-app-guide/ja/tools/hero-tasks.feed.json">無料ツールの成果</a></footer>
+</main></body></html>

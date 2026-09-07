@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="bn-BD" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="প্রতিটি নোট কোন দিন লিখেছেন সেটা দিন — পরের পাঁচটি রিভিশনের তারিখ, কত দিন বাকি আর কোনগুলো পেরিয়ে গেছে, সব দেখা যাবে। সময়সূচি CSV হিসেবে নামে।">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="review-schedule">
+<title>নোট রিভিশন সূচি</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/review-schedule-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/review-schedule-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="বিনামূল্যের কাজের ফলাফল">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="বিনামূল্যের কাজের ফলাফল">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="বিনামূল্যের কাজের ফলাফল">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/hero-tasks.feed.json" title="বিনামূল্যের কাজের ফলাফল">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/5a4ae986895a1939-hero-task-review.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html","name":"নোট রিভিশন সূচি","description":"প্রতিটি নোট কোন দিন লিখেছেন সেটা দিন — পরের পাঁচটি রিভিশনের তারিখ, কত দিন বাকি আর কোনগুলো পেরিয়ে গেছে, সব দেখা যাবে। সময়সূচি CSV হিসেবে নামে।","inLanguage":"bn-BD","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html#worked-example","name":"হিসাব করা উদাহরণ","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/review-schedule-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html#howto","name":"নোট রিভিশন সূচি","description":"প্রতিটি নোট কোন দিন লিখেছেন সেটা দিন — পরের পাঁচটি রিভিশনের তারিখ, কত দিন বাকি আর কোনগুলো পেরিয়ে গেছে, সব দেখা যাবে। সময়সূচি CSV হিসেবে নামে।","inLanguage":"bn-BD","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"নোট রিভিশন সূচি","url":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"রিভিশনের তারিখ = লেখার তারিখ + ১, ৩, ৭, ১৬ ও ৩৫ দিন। কত দিন বাকি = রিভিশনের তারিখ − আজ; ঋণাত্মক মানে সেই তারিখ পেরিয়ে গেছে। পরের রিভিশন = আজ বা তার পরের প্রথম তারিখ।"},{"@type":"HowToStep","position":2,"text":"এটি নির্দিষ্ট ব্যবধানের সিঁড়ি, স্মৃতির মডেল নয়: এখানে কিছুই ভবিষ্যদ্বাণী করে না আপনি কী মনে রাখবেন, কোনো নোটে নম্বর দেয় না, উত্তরও যাচাই করে না। শুধু তারিখ — সময়, টাইম জোন, রিমাইন্ডার বা নোটিফিকেশন নেই।"}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html#example-dataset","name":"হিসাব করা উদাহরণ","description":"প্রতিটি নোট কোন দিন লিখেছেন সেটা দিন — পরের পাঁচটি রিভিশনের তারিখ, কত দিন বাকি আর কোনগুলো পেরিয়ে গেছে, সব দেখা যাবে। সময়সূচি CSV হিসেবে নামে।","inLanguage":"bn-BD","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/review-schedule-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/review-schedule-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"review-schedule-v1","slug":"review-schedule-sheet","locale":"bn-BD","copy":{"title":"নোট রিভিশন সূচি","intro":"প্রতিটি নোট কোন দিন লিখেছেন সেটা দিন — পরের পাঁচটি রিভিশনের তারিখ, কত দিন বাকি আর কোনগুলো পেরিয়ে গেছে, সব দেখা যাবে। সময়সূচি CSV হিসেবে নামে।","income":"ঘণ্টাপ্রতি নিট আয়","day":"প্রতি কর্মদিবসের ঘণ্টা","item":"কেনাকাটা","quantity":"পরিমাণ","price":"করসহ একক মূল্য","total":"মোট","hours":"কাজের ঘণ্টা","days":"কর্মদিবস","add":"নোট যোগ করুন","remove":"সরান","download":"আমার CSV ডাউনলোড","reset":"উদাহরণ ফিরিয়ে আনুন","example":"হিসাব করা উদাহরণ","example_note":"২০২৬ সালের ১ সেপ্টেম্বর, ৬ সেপ্টেম্বর ও ২০ আগস্টে লেখা তিনটি নোট, ৭ সেপ্টেম্বর ২০২৬ থেকে দেখা।","formula":"রিভিশনের তারিখ = লেখার তারিখ + ১, ৩, ৭, ১৬ ও ৩৫ দিন। কত দিন বাকি = রিভিশনের তারিখ − আজ; ঋণাত্মক মানে সেই তারিখ পেরিয়ে গেছে। পরের রিভিশন = আজ বা তার পরের প্রথম তারিখ।","limits":"এটি নির্দিষ্ট ব্যবধানের সিঁড়ি, স্মৃতির মডেল নয়: এখানে কিছুই ভবিষ্যদ্বাণী করে না আপনি কী মনে রাখবেন, কোনো নোটে নম্বর দেয় না, উত্তরও যাচাই করে না। শুধু তারিখ — সময়, টাইম জোন, রিমাইন্ডার বা নোটিফিকেশন নেই।","privacy":"আপনার তথ্য এই ট্যাবেই থাকে। আপলোড, অ্যাকাউন্ট, লেখা তথ্য অনুসরণ বা সংরক্ষণ নেই। আবার লোড করলে পরিবর্তন মুছে যায়।","optional":"ঐচ্ছিক অ্যাপ","optional_note":"এই বিনামূল্যের ছকের জন্য অ্যাপ লাগে না। বর্তমান সুবিধা ও দাম প্রতিটি App Store পাতায় দেখুন।","error":"প্রতিটি নোটের নাম আর YYYY-MM-DD ছকে সঠিক লেখার তারিখ দিন, আজকের তারিখও সঠিক দিন।","row_limit":"সর্বোচ্চ ২০টি নোট, প্রতিটির ৫টি তারিখ।","tools":"বিনামূল্যের টুল","method":"সূত্র ও সীমা","sources":"তথ্যসূত্র","result":"আপনার ফলাফল","disclosure":"ঐচ্ছিক অ্যাপগুলোর নির্মাতা Lumi Studio প্রকাশ করেছে। এটি স্বাধীন র‍্যাঙ্কিং নয়।","download_example":"উদাহরণ CSV ডাউনলোড","feed":"বিনামূল্যের কাজের ফলাফল","today":"আজ","note":"নোট","studied_on":"লেখার তারিখ","step":"দফা","review_date":"রিভিশনের তারিখ","days_left":"কত দিন বাকি","status":"অবস্থা","status_passed":"তারিখ পেরিয়ে গেছে","status_today":"আজই","status_upcoming":"এখনও বাকি","next_review":"পরের রিভিশন","note_count":"নোটের সংখ্যা","review_count":"তারিখের সংখ্যা","intervals_note":"নির্দিষ্ট ব্যবধান: লেখার ১, ৩, ৭, ১৬ ও ৩৫ দিন পরে।"},"example":{"today":"2026-09-07","items":[{"studied_on":"2026-09-01","name":"নোট 1"},{"studied_on":"2026-09-06","name":"নোট 2"},{"studied_on":"2026-08-20","name":"নোট 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/107b93f39bfc94ef-hero-task-review-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/2268505d087cb925-hero-task-review-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/bn-BD/index.html">iOS App Guide</a><span>Lumi Studio</span></nav>
+<h1>নোট রিভিশন সূচি</h1><p>প্রতিটি নোট কোন দিন লিখেছেন সেটা দিন — পরের পাঁচটি রিভিশনের তারিখ, কত দিন বাকি আর কোনগুলো পেরিয়ে গেছে, সব দেখা যাবে। সময়সূচি CSV হিসেবে নামে।</p>
+<section class="panel" aria-label="নোট রিভিশন সূচি">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="today-date">আজ</label><input id="today-date" type="text" inputmode="numeric" maxlength="10" value="2026-09-07" required autocomplete="off"><p class="small">নির্দিষ্ট ব্যবধান: লেখার ১, ৩, ৭, ১৬ ও ৩৫ দিন পরে।</p></div>
+</div>
+<div id="note-rows"><div class="note-row"><div class="name-field"><label data-label="name" for="row-1-name">নোট</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="নোট 1" required autocomplete="off"></div><div><label data-label="studied_on" for="row-1-studied_on">লেখার তারিখ</label><input id="row-1-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-09-01" required autocomplete="off"></div><div><p class="output-label">পরের রিভিশন</p><output data-output="next">2026-09-08</output></div><div><p class="output-label">অবস্থা</p><output class="status-badge" data-output="status" data-status="upcoming">এখনও বাকি</output></div><button type="button" data-remove aria-label="সরান · নোট 1">সরান</button></div><div class="note-row"><div class="name-field"><label data-label="name" for="row-2-name">নোট</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="নোট 2" required autocomplete="off"></div><div><label data-label="studied_on" for="row-2-studied_on">লেখার তারিখ</label><input id="row-2-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-09-06" required autocomplete="off"></div><div><p class="output-label">পরের রিভিশন</p><output data-output="next">2026-09-07</output></div><div><p class="output-label">অবস্থা</p><output class="status-badge" data-output="status" data-status="today">আজই</output></div><button type="button" data-remove aria-label="সরান · নোট 2">সরান</button></div><div class="note-row"><div class="name-field"><label data-label="name" for="row-3-name">নোট</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="নোট 3" required autocomplete="off"></div><div><label data-label="studied_on" for="row-3-studied_on">লেখার তারিখ</label><input id="row-3-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-08-20" required autocomplete="off"></div><div><p class="output-label">পরের রিভিশন</p><output data-output="next">2026-09-24</output></div><div><p class="output-label">অবস্থা</p><output class="status-badge" data-output="status" data-status="upcoming">এখনও বাকি</output></div><button type="button" data-remove aria-label="সরান · নোট 3">সরান</button></div></div>
+<template id="note-template"><div class="note-row"><div class="name-field"><label data-label="name" for="row-0-name">নোট</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="studied_on" for="row-0-studied_on">লেখার তারিখ</label><input id="row-0-studied_on" data-field="studied_on" type="text" inputmode="numeric" maxlength="10" value="2026-09-07" required autocomplete="off"></div><div><p class="output-label">পরের রিভিশন</p><output data-output="next">—</output></div><div><p class="output-label">অবস্থা</p><output class="status-badge" data-output="status">—</output></div><button type="button" data-remove aria-label="সরান · ">সরান</button></div></template>
+<div class="actions"><button type="button" id="add-note">নোট যোগ করুন</button><span class="small">সর্বোচ্চ ২০টি নোট, প্রতিটির ৫টি তারিখ।</span></div>
+<div class="totals review-totals" aria-label="আপনার ফলাফল">
+<div><p>নোটের সংখ্যা</p><output class="total-value" id="note-count">3</output></div><div><p>তারিখের সংখ্যা</p><output class="total-value" id="review-count">15</output></div><div><p>পরের রিভিশন</p><output class="total-value" id="next-review">2026-09-07</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>আমার CSV ডাউনলোড</button><button type="button" id="reset-example">উদাহরণ ফিরিয়ে আনুন</button></div>
+</fieldset></form><p class="small">আপনার তথ্য এই ট্যাবেই থাকে। আপলোড, অ্যাকাউন্ট, লেখা তথ্য অনুসরণ বা সংরক্ষণ নেই। আবার লোড করলে পরিবর্তন মুছে যায়।</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>হিসাব করা উদাহরণ</h2><p>২০২৬ সালের ১ সেপ্টেম্বর, ৬ সেপ্টেম্বর ও ২০ আগস্টে লেখা তিনটি নোট, ৭ সেপ্টেম্বর ২০২৬ থেকে দেখা।</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">নোট</th><th scope="col">লেখার তারিখ</th><th scope="col">দফা</th><th scope="col">রিভিশনের তারিখ</th><th scope="col">কত দিন বাকি</th><th scope="col">অবস্থা</th></tr></thead><tbody><tr><td>নোট 1</td><td>2026-09-01</td><td>1</td><td>2026-09-02</td><td>-5</td><td>তারিখ পেরিয়ে গেছে</td></tr><tr><td>নোট 1</td><td>2026-09-01</td><td>2</td><td>2026-09-04</td><td>-3</td><td>তারিখ পেরিয়ে গেছে</td></tr><tr><td>নোট 1</td><td>2026-09-01</td><td>3</td><td>2026-09-08</td><td>1</td><td>এখনও বাকি</td></tr><tr><td>নোট 1</td><td>2026-09-01</td><td>4</td><td>2026-09-17</td><td>10</td><td>এখনও বাকি</td></tr><tr><td>নোট 1</td><td>2026-09-01</td><td>5</td><td>2026-10-06</td><td>29</td><td>এখনও বাকি</td></tr><tr><td>নোট 2</td><td>2026-09-06</td><td>1</td><td>2026-09-07</td><td>0</td><td>আজই</td></tr><tr><td>নোট 2</td><td>2026-09-06</td><td>2</td><td>2026-09-09</td><td>2</td><td>এখনও বাকি</td></tr><tr><td>নোট 2</td><td>2026-09-06</td><td>3</td><td>2026-09-13</td><td>6</td><td>এখনও বাকি</td></tr><tr><td>নোট 2</td><td>2026-09-06</td><td>4</td><td>2026-09-22</td><td>15</td><td>এখনও বাকি</td></tr><tr><td>নোট 2</td><td>2026-09-06</td><td>5</td><td>2026-10-11</td><td>34</td><td>এখনও বাকি</td></tr><tr><td>নোট 3</td><td>2026-08-20</td><td>1</td><td>2026-08-21</td><td>-17</td><td>তারিখ পেরিয়ে গেছে</td></tr><tr><td>নোট 3</td><td>2026-08-20</td><td>2</td><td>2026-08-23</td><td>-15</td><td>তারিখ পেরিয়ে গেছে</td></tr><tr><td>নোট 3</td><td>2026-08-20</td><td>3</td><td>2026-08-27</td><td>-11</td><td>তারিখ পেরিয়ে গেছে</td></tr><tr><td>নোট 3</td><td>2026-08-20</td><td>4</td><td>2026-09-05</td><td>-2</td><td>তারিখ পেরিয়ে গেছে</td></tr><tr><td>নোট 3</td><td>2026-08-20</td><td>5</td><td>2026-09-24</td><td>17</td><td>এখনও বাকি</td></tr></tbody><tfoot><tr class="example-total"><td>নোটের সংখ্যা</td><td>3</td><td></td><td></td><td></td><td></td></tr><tr class="example-total"><td>তারিখের সংখ্যা</td><td>15</td><td></td><td></td><td></td><td></td></tr><tr class="example-total"><td>পরের রিভিশন</td><td></td><td></td><td>2026-09-07</td><td></td><td></td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/results/review-schedule-sheet.csv" download>উদাহরণ CSV ডাউনলোড</a>
+<h2>সূত্র ও সীমা</h2><p>রিভিশনের তারিখ = লেখার তারিখ + ১, ৩, ৭, ১৬ ও ৩৫ দিন। কত দিন বাকি = রিভিশনের তারিখ − আজ; ঋণাত্মক মানে সেই তারিখ পেরিয়ে গেছে। পরের রিভিশন = আজ বা তার পরের প্রথম তারিখ।</p>
+<pre class="formula">রিভিশনের তারিখ = লেখার তারিখ + [+1 · +3 · +7 · +16 · +35]
+নোট 1: 2026-09-01 → 2026-09-02 (-5), 2026-09-04 (-3), 2026-09-08 (+1), 2026-09-17 (+10), 2026-10-06 (+29)
+নোট 2: 2026-09-06 → 2026-09-07 (+0), 2026-09-09 (+2), 2026-09-13 (+6), 2026-09-22 (+15), 2026-10-11 (+34)
+নোট 3: 2026-08-20 → 2026-08-21 (-17), 2026-08-23 (-15), 2026-08-27 (-11), 2026-09-05 (-2), 2026-09-24 (+17)
+পরের রিভিশন = 2026-09-07
+তারিখের সংখ্যা = 3 × 5 = 15</pre>
+<p>এটি নির্দিষ্ট ব্যবধানের সিঁড়ি, স্মৃতির মডেল নয়: এখানে কিছুই ভবিষ্যদ্বাণী করে না আপনি কী মনে রাখবেন, কোনো নোটে নম্বর দেয় না, উত্তরও যাচাই করে না। শুধু তারিখ — সময়, টাইম জোন, রিমাইন্ডার বা নোটিফিকেশন নেই।</p>
+<ul class="small">
+<li>আজ / লেখার তারিখ: <bdi dir="ltr">YYYY-MM-DD</bdi></li>
+<li>দফা: <bdi dir="ltr">+1 · +3 · +7 · +16 · +35</bdi></li>
+<li>নোট: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>ঐচ্ছিক অ্যাপ</h2><p>এই বিনামূল্যের ছকের জন্য অ্যাপ লাগে না। বর্তমান সুবিধা ও দাম প্রতিটি App Store পাতায় দেখুন।</p><div class="actions"><a class="button" href="https://apps.apple.com/in/app/id6798813048?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store থেকে 100 Notes Studio: Pen &amp; Paper ডাউনলোড করুন</a></div></section>
+<footer><p>ঐচ্ছিক অ্যাপগুলোর নির্মাতা Lumi Studio প্রকাশ করেছে। এটি স্বাধীন র‍্যাঙ্কিং নয়।</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">তথ্যসূত্র</a> · <a href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/hero-tasks.feed.json">বিনামূল্যের কাজের ফলাফল</a></footer>
+</main></body></html>

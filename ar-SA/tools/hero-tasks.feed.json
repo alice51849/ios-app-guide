@@ -223,6 +223,81 @@
       "language": "ar-SA",
       "title": "ملاحظات الاجتماع في صفحة واحدة",
       "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sa/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 441,
+          "title": "تنزيل CSV للمثال",
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "اكتب ما طلبه كل شخص، وأضف نسبة الضريبة والبقشيش، لترى بالضبط كم على كل واحد. تُوزّع الضريبة والبقشيش حتى آخر هللة بحسب الطلب، ويمكنك تنزيل الجدول بصيغة CSV. المجموع الفرعي = مجموع كل ما طُلب. الضريبة = المجموع الفرعي × نسبة الضريبة. البقشيش = المجموع الفرعي × نسبة البقشيش. حصة كل شخص = طلبه ÷ المجموع الفرعي، والهللات المتبقية تذهب أولاً لأكبر الكسور، فتتطابق مجموع الحصص مع الفاتورة تمامًا. استخدم عملة واحدة، وأدخل الضريبة والبقشيش كنسبة من المجموع الفرعي. لا تحويل عملات، ولا قواعد لرسوم الخدمة، ولا نصيحة عن مقدار البقشيش، ولا أي عملية دفع. العرض يقرّب إلى منزلتين، والحساب نفسه يجري بوحدات صحيحة.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html",
+      "language": "ar-SA",
+      "title": "تقسيم الفاتورة",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sa/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 470,
+          "title": "تنزيل CSV للمثال",
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "اكتب ما حفظته وكم يستغرق كل عنصر، وحدّد الدقائق التي تقرأها فعليًا كل يوم، لترى في أي يوم ينتهي كل عنصر. تُنزَّل الخطة بصيغة CSV. المجموع التراكمي = دقائق هذا العنصر زائد كل ما قبله. اليوم = المجموع التراكمي ÷ الدقائق اليومية، مقرَّبًا للأعلى. ينتهي في = تاريخ البداية + اليوم − ١. الدقائق المتبقية = الأيام × الدقائق اليومية − إجمالي الدقائق. ترتيب الإدخال هو ترتيب القراءة: لا إعادة ترتيب ولا تخطي ولا دمج. جلسة واحدة يوميًا تستهلك وقتك بالضبط، بلا أيام راحة، ودون فتح أي رابط أو جلبه، ودون تقدير سرعة قراءتك.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/reading-backlog-sheet.html",
+      "language": "ar-SA",
+      "title": "خطة «اقرأه لاحقًا»",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1458,
+          "title": "تنزيل CSV للمثال",
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "أدخل تاريخ كتابة كل ملاحظة لتحصل على مواعيد المراجعة الخمسة التالية، مع الأيام المتبقية وما فات منها. يُنزَّل الجدول بصيغة CSV. تاريخ المراجعة = تاريخ الكتابة + ١ و٣ و٧ و١٦ و٣٥ يومًا. الأيام المتبقية = تاريخ المراجعة − اليوم، والرقم السالب يعني موعدًا فات. المراجعة القادمة = أول تاريخ يوافق اليوم أو بعده. هذا سلّم فواصل ثابت وليس نموذجًا للذاكرة: لا يتنبأ بما ستتذكره، ولا يمنح درجة لملاحظة، ولا يصحّح إجابة. تواريخ فقط، بلا أوقات ولا مناطق زمنية ولا تذكيرات ولا إشعارات.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/review-schedule-sheet.html",
+      "language": "ar-SA",
+      "title": "جدول مراجعة الملاحظات",
+      "url": "https://open.cait518.cc/ios-app-guide/ar-SA/tools/review-schedule-sheet.html"
     }
   ],
   "language": "ar-SA",

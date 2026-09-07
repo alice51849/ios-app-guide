@@ -223,6 +223,81 @@
       "language": "cs",
       "title": "Ze schůzky na jednu stránku",
       "url": "https://open.cait518.cc/ios-app-guide/cs/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cz/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 340,
+          "title": "Stáhnout ukázkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Napiš, za kolik si kdo objednal, doplň procenta daně a spropitného a uvidíš, kolik má kdo přesně zaplatit. Daň i spropitné se rozdělí na haléře podle objednávky a tabulku si stáhneš jako CSV. Mezisoučet = všechny objednávky sečtené. Daň = mezisoučet × sazba daně. Spropitné = mezisoučet × sazba spropitného. Podíl každého je jeho objednávka ÷ mezisoučet; zbylé haléře připadnou nejdřív největším desetinným zbytkům, takže podíly vždy dají přesně částku účtu. Používej jednu měnu a daň i spropitné zadávej jako procento z mezisoučtu. Žádný převod měn, žádná pravidla pro servisní poplatek, žádné doporučení, kolik dát, a žádné placení. Na obrazovce se zaokrouhluje na dvě desetinná místa; samotné dělení počítá v celých haléřích.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html",
+      "language": "cs",
+      "title": "Rozdělení účtu",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 391,
+          "title": "Stáhnout ukázkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Vypiš, co sis uložil a jak dlouho to zabere, zadej, kolik minut denně opravdu čteš, a uvidíš, který den každou věc dočteš. Plán si stáhneš jako CSV. Průběžný součet = minuty této položky plus všechno nad ní. Den = průběžný součet ÷ minuty za den, zaokrouhleno nahoru. Hotovo = počáteční datum + den − 1. Volné minuty = dny × minuty za den − minut celkem. Pořadí, v jakém píšeš, je pořadí čtení: nic se nepřeskupuje, nepřeskakuje ani neslučuje. Jedno čtení denně, které přesně vyčerpá tvůj limit, bez volných dnů, bez otevírání či stahování odkazů a bez odhadování rychlosti čtení.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/cs/tools/reading-backlog-sheet.html",
+      "language": "cs",
+      "title": "Plán «přečíst později»",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/cz/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1157,
+          "title": "Stáhnout ukázkové CSV",
+          "url": "https://open.cait518.cc/ios-app-guide/cs/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Zadej, kdy jsi kterou poznámku psal, a dostaneš pět následujících termínů opakování, kolik dní zbývá a které už jsou za tebou. Plán si stáhneš jako CSV. Datum opakování = datum napsání + 1, 3, 7, 16 a 35 dní. Zbývá dní = datum opakování − dnes; záporné číslo znamená termín, který už minul. Nejbližší opakování = první termín, který je dnes nebo později. Je to pevný žebřík odstupů, ne model paměti: nic tu nepředpovídá, co si zapamatuješ, nehodnotí poznámku ani neopravuje odpovědi. Jen data, bez časů, časových pásem, připomínek a upozornění.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/cs/tools/review-schedule-sheet.html",
+      "language": "cs",
+      "title": "Plán opakování",
+      "url": "https://open.cait518.cc/ios-app-guide/cs/tools/review-schedule-sheet.html"
     }
   ],
   "language": "cs",

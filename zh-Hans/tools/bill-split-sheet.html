@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="把每个人点的金额填进去，写上税率和小费比例，就能算出每人实际该付多少。税和小费按各自点的比例摊到每一分钱，最后可以下载成 CSV。">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="bill-split">
+<title>AA 分账表</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="免费任务成果">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="免费任务成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="免费任务成果">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/hero-tasks.feed.json" title="免费任务成果">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/734219182d6e9d1a-hero-task-billsplit.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html","name":"AA 分账表","description":"把每个人点的金额填进去，写上税率和小费比例，就能算出每人实际该付多少。税和小费按各自点的比例摊到每一分钱，最后可以下载成 CSV。","inLanguage":"zh-Hans","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html#worked-example","name":"完整计算示例","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bill-split-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html#howto","name":"AA 分账表","description":"把每个人点的金额填进去，写上税率和小费比例，就能算出每人实际该付多少。税和小费按各自点的比例摊到每一分钱，最后可以下载成 CSV。","inLanguage":"zh-Hans","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"AA 分账表","url":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"小计＝所有人点的金额之和。税＝小计 × 税率。小费＝小计 × 小费比例。每人分摊的税和小费＝自己点的金额 ÷ 小计，除不尽的零头先给小数部分最大的人，所以各人金额相加一定等于账单合计。"},{"@type":"HowToStep","position":2,"text":"请使用同一币种，税和小费都按小计的百分比填写。不做汇率换算、不套用服务费规则、不建议给多少小费，也不经手任何支付。显示保留两位小数，分账计算本身以「分」为单位。"}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html#example-dataset","name":"完整计算示例","description":"把每个人点的金额填进去，写上税率和小费比例，就能算出每人实际该付多少。税和小费按各自点的比例摊到每一分钱，最后可以下载成 CSV。","inLanguage":"zh-Hans","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bill-split-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"bill-split-v1","slug":"bill-split-sheet","locale":"zh-Hans","copy":{"title":"AA 分账表","intro":"把每个人点的金额填进去，写上税率和小费比例，就能算出每人实际该付多少。税和小费按各自点的比例摊到每一分钱，最后可以下载成 CSV。","income":"每小时到手收入","day":"每天工作时长","item":"购买项目","quantity":"数量","price":"含税单价","total":"合计","hours":"所需工时","days":"工作天数","add":"添加一个人","remove":"移除","download":"下载我的 CSV","reset":"重置为示例","example":"完整计算示例","example_note":"三个人分别点了 32.40、18.90、25.00，税率 8.25%、小费 15%；所有金额使用同一币种。","formula":"小计＝所有人点的金额之和。税＝小计 × 税率。小费＝小计 × 小费比例。每人分摊的税和小费＝自己点的金额 ÷ 小计，除不尽的零头先给小数部分最大的人，所以各人金额相加一定等于账单合计。","limits":"请使用同一币种，税和小费都按小计的百分比填写。不做汇率换算、不套用服务费规则、不建议给多少小费，也不经手任何支付。显示保留两位小数，分账计算本身以「分」为单位。","privacy":"输入只留在当前标签页，不上传、不需要账号、不跟踪输入，也不保存数据。重新加载会清除修改。","optional":"可选 App","optional_note":"使用这份免费对比表不需要 App。最新功能与价格请查看各 App Store 页面。","error":"每个人都要有名字和非负金额，两个百分比都要在 0 到 100 之间，小计必须大于零，小数最多两位。","row_limit":"最多 20 人；单笔金额上限 100,000,000。","tools":"免费工具","method":"公式与限制","sources":"资料来源","result":"你的计算结果","disclosure":"由可选 App 的开发者 Lumi Studio 提供，并非独立排名。","download_example":"下载示例 CSV","feed":"免费任务成果","tax_pct":"税率 %","tip_pct":"小费 %","person":"分账人","amount":"他点的金额","tax_share":"分摊的税","tip_share":"分摊的小费","total_due":"应付金额","subtotal":"小计","tax":"税","tip":"小费","grand_total":"账单合计"},"example":{"tax_pct":"8.25","tip_pct":"15","items":[{"amount":"32.40","name":"分账人 1"},{"amount":"18.90","name":"分账人 2"},{"amount":"25.00","name":"分账人 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/f08eeec36dcf3a4d-hero-task-billsplit-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/51ee2eea9ba8e492-hero-task-billsplit-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html">免费工具</a><span>Lumi Studio</span></nav>
+<h1>AA 分账表</h1><p>把每个人点的金额填进去，写上税率和小费比例，就能算出每人实际该付多少。税和小费按各自点的比例摊到每一分钱，最后可以下载成 CSV。</p>
+<section class="panel" aria-label="AA 分账表">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="tax-pct">税率 %</label><input id="tax-pct" type="text" inputmode="decimal" maxlength="6" value="8.25" required autocomplete="off"></div>
+<div><label for="tip-pct">小费 %</label><input id="tip-pct" type="text" inputmode="decimal" maxlength="6" value="15" required autocomplete="off"></div>
+</div>
+<div id="split-rows"><div class="split-row"><div class="name-field"><label data-label="name" for="row-1-name">分账人</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="分账人 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">他点的金额</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="32.40" required autocomplete="off"></div><div><p class="output-label">分摊的税</p><output data-output="tax">2.67</output></div><div><p class="output-label">分摊的小费</p><output data-output="tip">4.86</output></div><div><p class="output-label">应付金额</p><output data-output="due">39.93</output></div><button type="button" data-remove aria-label="移除 · 分账人 1">移除</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-2-name">分账人</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="分账人 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">他点的金额</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="18.90" required autocomplete="off"></div><div><p class="output-label">分摊的税</p><output data-output="tax">1.56</output></div><div><p class="output-label">分摊的小费</p><output data-output="tip">2.84</output></div><div><p class="output-label">应付金额</p><output data-output="due">23.30</output></div><button type="button" data-remove aria-label="移除 · 分账人 2">移除</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-3-name">分账人</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="分账人 3" required autocomplete="off"></div><div><label data-label="amount" for="row-3-amount">他点的金额</label><input id="row-3-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="25.00" required autocomplete="off"></div><div><p class="output-label">分摊的税</p><output data-output="tax">2.06</output></div><div><p class="output-label">分摊的小费</p><output data-output="tip">3.75</output></div><div><p class="output-label">应付金额</p><output data-output="due">30.81</output></div><button type="button" data-remove aria-label="移除 · 分账人 3">移除</button></div></div>
+<template id="split-template"><div class="split-row"><div class="name-field"><label data-label="name" for="row-0-name">分账人</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">他点的金额</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><div><p class="output-label">分摊的税</p><output data-output="tax">0.00</output></div><div><p class="output-label">分摊的小费</p><output data-output="tip">0.00</output></div><div><p class="output-label">应付金额</p><output data-output="due">0.00</output></div><button type="button" data-remove aria-label="移除 · ">移除</button></div></template>
+<div class="actions"><button type="button" id="add-person">添加一个人</button><span class="small">最多 20 人；单笔金额上限 100,000,000。</span></div>
+<div class="totals split-totals" aria-label="你的计算结果">
+<div><p>小计</p><output class="total-value" id="subtotal-value">76.30</output></div><div><p>税</p><output class="total-value" id="tax-value">6.29</output></div><div><p>小费</p><output class="total-value" id="tip-value">11.45</output></div><div class="grand"><p>账单合计</p><output class="total-value" id="grand-total-value">94.04</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>下载我的 CSV</button><button type="button" id="reset-example">重置为示例</button></div>
+</fieldset></form><p class="small">输入只留在当前标签页，不上传、不需要账号、不跟踪输入，也不保存数据。重新加载会清除修改。</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>完整计算示例</h2><p>三个人分别点了 32.40、18.90、25.00，税率 8.25%、小费 15%；所有金额使用同一币种。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">分账人</th><th scope="col">他点的金额</th><th scope="col">分摊的税</th><th scope="col">分摊的小费</th><th scope="col">应付金额</th></tr></thead><tbody><tr><td>分账人 1</td><td>32.40</td><td>2.67</td><td>4.86</td><td>39.93</td></tr><tr><td>分账人 2</td><td>18.90</td><td>1.56</td><td>2.84</td><td>23.30</td></tr><tr><td>分账人 3</td><td>25.00</td><td>2.06</td><td>3.75</td><td>30.81</td></tr></tbody><tfoot><tr class="example-total"><td>小计</td><td>76.30</td><td></td><td></td><td></td></tr><tr class="example-total"><td>税</td><td>8.25%</td><td>6.29</td><td></td><td></td></tr><tr class="example-total"><td>小费</td><td>15.00%</td><td></td><td>11.45</td><td></td></tr><tr class="example-total"><td>账单合计</td><td></td><td></td><td></td><td>94.04</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bill-split-sheet.csv" download>下载示例 CSV</a>
+<h2>公式与限制</h2><p>小计＝所有人点的金额之和。税＝小计 × 税率。小费＝小计 × 小费比例。每人分摊的税和小费＝自己点的金额 ÷ 小计，除不尽的零头先给小数部分最大的人，所以各人金额相加一定等于账单合计。</p>
+<pre class="formula">小计 = 32.40 + 18.90 + 25.00 = 76.30
+税 = 76.30 × 8.25% = 6.29
+小费 = 76.30 × 15.00% = 11.45
+分账人 1: 32.40 + 2.67 + 4.86 = 39.93
+分账人 2: 18.90 + 1.56 + 2.84 = 23.30
+分账人 3: 25.00 + 2.06 + 3.75 = 30.81
+账单合计 = 94.04</pre>
+<p>请使用同一币种，税和小费都按小计的百分比填写。不做汇率换算、不套用服务费规则、不建议给多少小费，也不经手任何支付。显示保留两位小数，分账计算本身以「分」为单位。</p>
+<ul class="small">
+<li>他点的金额: <bdi dir="ltr">0 ≤ n ≤ 100,000,000</bdi></li>
+<li>税率 % / 小费 %: <bdi dir="ltr">0 ≤ % ≤ 100</bdi></li>
+<li>分账人: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>可选 App</h2><p>使用这份免费对比表不需要 App。最新功能与价格请查看各 App Store 页面。</p><div class="actions"><a class="button" href="https://apps.apple.com/cn/app/id6794178671?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">在 App Store 获取 CalDaily 计算器与主题</a></div></section>
+<footer><p>由可选 App 的开发者 Lumi Studio 提供，并非独立排名。</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">资料来源</a> · <a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/hero-tasks.feed.json">免费任务成果</a></footer>
+</main></body></html>

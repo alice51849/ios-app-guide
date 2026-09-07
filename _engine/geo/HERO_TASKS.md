@@ -42,6 +42,21 @@ HoursTag 與 HoursTag Lite 共用同一任務 canonical。依據是既有產品�
   不改寫、不摘要、不評分，指標永遠是文字（序號／標籤不會被當成可畫圖的數值，延續 OnePage PPT 的誠實性鐵律）。
   範例是散文，因此 50 語各自帶母語版本（`example_headline`、`example_point_1..3`、`example_action`、`example_metric`）。
 
+第四波再加三個任務，同樣各自帶 core／UI 資產與 `tasks.<id>` 任務層文案，前八個任務的輸出 bytes 不變：
+
+- **分開算的帳單分攤表**（`bill-split`，CalDaily 6794178671）：每個人各自點的金額 ＋ 稅率與小費比例 →
+  各自分攤到的稅、小費與應付金額 → CSV。稅與小費先以最小單位四捨五入，再依「自己點的金額 ÷ 小計」
+  用最大餘數法分配，除不盡的零頭給小數部分最大的人，因此每個人的金額加總**恆等於**帳單總額。
+  同幣別、不換匯、不套服務費規則、不建議小費金額，也不經手任何付款；小計必須大於零。
+- **稍後再讀清單消化計畫**（`reading-backlog`，SaveTag 6802505528）：每筆存下的內容與預估閱讀分鐘
+  ＋每天實際閱讀分鐘與起始日期 → 累計分鐘、第幾天讀完、讀完日期、總天數與最後一天剩餘分鐘 → CSV。
+  輸入順序就是閱讀順序，不重排、不跳過、不合併，長項目自然跨天；每天剛好用完額度、無休假日。
+  工具不開啟、不抓取任何連結，也不推估閱讀速度。
+- **筆記複習日程表**（`review-schedule`，100 Notes Studio 6798813048）：每則筆記的書寫日期 ＋ 今天 →
+  固定間隔 1／3／7／16／35 天的五個複習日期、各剩幾天與「已過期／就是今天／還沒到」→ CSV
+  （每則筆記 × 每個階段一列）。這是固定間隔表，**不是記憶模型**：不預測記憶、不給分數、不批改答案；
+  只算日期，無時間、時區、提醒或通知。
+
 ## 產出與隱私
 
 - `/{locale}/tools/purchase-worktime-sheet.html`：官方 50 locale 的完整工具、
@@ -62,6 +77,14 @@ HoursTag 與 HoursTag Lite 共用同一任務 canonical。依據是既有產品�
   一日行程時間表；時刻 24 小時制 `HH:MM`、停留 5–720 分、移動 0–600 分、至多 25 站。
 - `/{locale}/tools/one-page-outline-sheet.html` 與 `/{locale}/tools/results/one-page-outline-sheet.csv`：
   會議記錄一頁大綱表；標題 ≤ 80 字元、重點 3–12 個各 ≤ 160、行動 ≤ 160、指標 ≤ 60，全部單行文字。
+- `/{locale}/tools/bill-split-sheet.html` 與 `/{locale}/tools/results/bill-split-sheet.csv`：
+  帳單分攤表；金額 0–100,000,000（最多兩位小數）、稅與小費 0–100%（最多兩位小數）、至多 20 人，
+  CSV 尾列列出小計、稅（含比例）、小費（含比例）與帳單總額。
+- `/{locale}/tools/reading-backlog-sheet.html` 與 `/{locale}/tools/results/reading-backlog-sheet.csv`：
+  稍後再讀消化計畫；每筆 1–600 分（整數）、每天 5–600 分（整數）、起始日期 ISO `YYYY-MM-DD`（2000–2099），
+  至多 30 筆。
+- `/{locale}/tools/review-schedule-sheet.html` 與 `/{locale}/tools/results/review-schedule-sheet.csv`：
+  筆記複習日程表；日期一律 ISO `YYYY-MM-DD`（2000–2099），至多 20 則筆記 × 5 個固定階段。
 - `/{locale}/tools/hero-tasks.feed.json`：50 份原生語系 JSON Feed，含可下載範例、
   穩定 item ID、語意更新日期及完整 App Store 歸因連結。
 - `data/hero-tasks/manifest.json`、schema、`sitemap_hero_tasks.xml`：
@@ -141,8 +164,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest geo.tests.test_hero_tasks
 1. 先查證下一款 App 的主承諾及真實可下載任務，不能從行銷標籤猜能力。
 2. 為新 adapter 增加純 JS 核心、對應 Python renderer、完整 50 語文案及 golden cases。
    目前 renderer 接受 `purchase-worktime-v1`、`maintenance-next-due-v1`、`project-profit-v1`、
-   `battery-wear-range-v1`、`bandwidth-need-v1`、`trip-budget-v1`、`day-itinerary-v1` 與
-   `one-page-outline-v1` 八種資料契約；
+   `battery-wear-range-v1`、`bandwidth-need-v1`、`trip-budget-v1`、`day-itinerary-v1`、
+   `one-page-outline-v1`、`bill-split-v1`、`reading-backlog-v1` 與 `review-schedule-v1`
+   十一種資料契約；
    新 adapter 在 `ADAPTER_ASSETS` 登錄自己的 core／ui（可選 extra_css），任務層 key 登錄於 `TASK_KEYS`。
 3. 在 `hero_tasks.json` 明確綁定 App key、App Store ID、來源 query 與公共範例。
    等價任務合併至既有 canonical；不接受同 adapter 複製多個 slug。

@@ -223,6 +223,81 @@
       "language": "ca",
       "title": "Notes de reunió en una pàgina",
       "url": "https://open.cait518.cc/ios-app-guide/ca/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 349,
+          "title": "Baixa el CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Escriu què ha demanat cada persona, afegeix els percentatges d'impostos i de propina i veuràs quant ha de pagar cadascú. Els impostos i la propina es reparteixen al cèntim segons la comanda, i el full es descarrega en CSV. Subtotal = la suma de tot el que s'ha demanat. Impostos = subtotal × percentatge d'impostos. Propina = subtotal × percentatge de propina. La part de cadascú és la seva comanda ÷ subtotal; els cèntims que sobren van primer als decimals més grans, de manera que la suma de les parts dona exactament el compte. Fes servir una sola moneda i posa impostos i propina com a percentatge del subtotal. Sense conversió de divises, sense regles de servei inclòs, sense consells sobre quanta propina deixar i sense cobraments. A la pantalla s'arrodoneix a dos decimals; el repartiment es calcula en cèntims sencers.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html",
+      "language": "ca",
+      "title": "Repartir el compte",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 362,
+          "title": "Baixa el CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Fes una llista del que has desat i quant triga cadascun, indica els minuts que llegeixes de debò cada dia i veuràs quin dia acabes cada cosa. El pla es descarrega en CSV. Acumulat = els minuts d'aquest element més tot el que hi ha a sobre. Dia = acumulat ÷ minuts al dia, arrodonit cap amunt. Acabat el = data d'inici + dia − 1. Minuts lliures = dies × minuts al dia − minuts en total. L'ordre que escrius és l'ordre de lectura: no es reordena, se salta ni s'ajunta res. Una sessió al dia que gasta exactament el teu temps, sense dies de descans, sense obrir ni descarregar cap enllaç i sense estimar la teva velocitat de lectura.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/reading-backlog-sheet.html",
+      "language": "ca",
+      "title": "Pla de «llegir més tard»",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/es/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1147,
+          "title": "Baixa el CSV d’exemple",
+          "url": "https://open.cait518.cc/ios-app-guide/ca/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Posa la data en què vas escriure cada apunt i obtindràs les cinc dates de repàs següents, amb els dies que falten i les que ja han passat. El calendari es descarrega en CSV. Data de repàs = data d'escriptura + 1, 3, 7, 16 i 35 dies. Dies que falten = data de repàs − avui; un número negatiu és una data que ja ha passat. Pròxim repàs = la primera data que cau avui o més endavant. És una escala d'intervals fixa, no un model de memòria: aquí no es prediu què recordaràs, no es puntua cap apunt ni es corregeix cap resposta. Només dates, sense hores, fusos, recordatoris ni notificacions.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ca/tools/review-schedule-sheet.html",
+      "language": "ca",
+      "title": "Calendari de repàs",
+      "url": "https://open.cait518.cc/ios-app-guide/ca/tools/review-schedule-sheet.html"
     }
   ],
   "language": "ca",

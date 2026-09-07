@@ -223,6 +223,81 @@
       "language": "es-MX",
       "title": "Notas de junta en una página",
       "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/mx/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 353,
+          "title": "Descargar CSV de ejemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Anota lo que pidió cada persona, agrega el porcentaje de impuesto y de propina, y verás cuánto le toca pagar a cada quien. El impuesto y la propina se reparten al centavo según lo que pidió cada uno, y la hoja se descarga en CSV. Subtotal = todo lo que se pidió, sumado. Impuesto = subtotal × porcentaje de impuesto. Propina = subtotal × porcentaje de propina. La parte de cada quien es lo suyo ÷ subtotal; los centavos que sobran se dan primero a los decimales más altos, así que la suma de las partes da exactamente la cuenta. Usa una sola moneda y captura impuesto y propina como porcentaje del subtotal. No hay conversión de divisas, ni reglas de servicio incluido, ni sugerencias de cuánto dejar de propina, ni cobros. En pantalla se redondea a dos decimales; el reparto se calcula en centavos enteros.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html",
+      "language": "es-MX",
+      "title": "Dividir la cuenta",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 348,
+          "title": "Descargar CSV de ejemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Anota lo que guardaste y cuánto tarda cada cosa, pon los minutos que de verdad lees al día y verás qué día terminas cada una. El plan se descarga en CSV. Acumulado = los minutos de este elemento más todo lo de arriba. Día = acumulado ÷ minutos al día, redondeado hacia arriba. Terminado el = fecha de inicio + día − 1. Minutos libres = días × minutos al día − minutos en total. El orden en que capturas es el orden en que lees: nada se reordena, se brinca ni se junta. Una sesión al día que usa justo tu tiempo, sin días de descanso, sin abrir ni descargar ningún enlace y sin estimar tu velocidad de lectura.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/reading-backlog-sheet.html",
+      "language": "es-MX",
+      "title": "Plan para «leer después»",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/mx/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1089,
+          "title": "Descargar CSV de ejemplo",
+          "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Escribe la fecha en que hiciste cada apunte y verás las cinco fechas de repaso que siguen, con los días que faltan y las que ya se pasaron. El calendario se descarga en CSV. Fecha de repaso = fecha en que se escribió + 1, 3, 7, 16 y 35 días. Días que faltan = fecha de repaso − hoy; un número negativo es una fecha que ya pasó. Siguiente repaso = la primera fecha que cae hoy o después. Es una escalera de intervalos fija, no un modelo de memoria: aquí nada predice lo que vas a recordar, ni califica un apunte, ni revisa respuestas. Solo fechas, sin horas, sin zonas horarias, sin recordatorios ni notificaciones.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/review-schedule-sheet.html",
+      "language": "es-MX",
+      "title": "Calendario de repaso",
+      "url": "https://open.cait518.cc/ios-app-guide/es-MX/tools/review-schedule-sheet.html"
     }
   ],
   "language": "es-MX",

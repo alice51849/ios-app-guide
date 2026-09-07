@@ -285,6 +285,104 @@
         "action": "Approve the extra sprint on Monday",
         "metric": "48% abandonment in the pilot"
       }
+    },
+    {
+      "id": "bill-split",
+      "slug": "bill-split-sheet",
+      "adapter": "bill-split-v1",
+      "apps": {
+        "caldaily": "6794178671"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "CalDaily product contract: every calculation is kept with a name you can search later; the sheet is one uneven bill split with tax and tip allocated to the exact cent, and it stores nothing",
+        "intent_queries": {
+          "caldaily": "best calculator app iphone that saves history you can name and search"
+        },
+        "scope": "A downloadable uneven bill split from what each person ordered, with tax and tip shared in proportion. It is not a payments app, sends no requests, settles nothing and gives no tipping advice."
+      },
+      "example": {
+        "tax_pct": "8.25",
+        "tip_pct": "15",
+        "items": [
+          {
+            "amount": "32.40"
+          },
+          {
+            "amount": "18.90"
+          },
+          {
+            "amount": "25.00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reading-backlog",
+      "slug": "reading-backlog-sheet",
+      "adapter": "reading-backlog-v1",
+      "apps": {
+        "savetag": "6802505528"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "SaveTag product contract: links saved from other apps kept in one place; the sheet turns a saved-item list plus a daily reading budget into the day each item is finished",
+        "intent_queries": {
+          "savetag": "best app to save links from other apps on iphone"
+        },
+        "scope": "A downloadable clear-the-backlog plan from saved items, their reading minutes and one daily reading budget. It does not open, fetch, rank or summarise any link, and it reorders nothing."
+      },
+      "example": {
+        "daily_minutes": "20",
+        "start_date": "2026-09-07",
+        "items": [
+          {
+            "minutes": "12"
+          },
+          {
+            "minutes": "35"
+          },
+          {
+            "minutes": "8"
+          },
+          {
+            "minutes": "40"
+          }
+        ]
+      }
+    },
+    {
+      "id": "review-schedule",
+      "slug": "review-schedule-sheet",
+      "adapter": "review-schedule-v1",
+      "apps": {
+        "notesstudio100": "6798813048"
+      },
+      "evidence": {
+        "kind": "verified_product_scope_and_publisher_authored_queries",
+        "measured_search_volume": false,
+        "product_source": "100 Notes Studio product contract: handwritten notebooks and marked-up PDFs kept offline on the iPad; the sheet only turns the date a note was written into a fixed ladder of review dates",
+        "intent_queries": {
+          "notesstudio100": "best offline handwriting notes app for ipad with pdf markup no subscription"
+        },
+        "scope": "A downloadable review calendar built from the date each note was written and one fixed interval ladder. It is not a memory model: it predicts nothing, scores nothing and grades no answers."
+      },
+      "example": {
+        "today": "2026-09-07",
+        "items": [
+          {
+            "studied_on": "2026-09-01"
+          },
+          {
+            "studied_on": "2026-09-06"
+          },
+          {
+            "studied_on": "2026-08-20"
+          }
+        ]
+      }
     }
   ]
 }

@@ -223,6 +223,81 @@
       "language": "ml-IN",
       "title": "മീറ്റിംഗ് കുറിപ്പ് ഒറ്റപ്പേജിൽ",
       "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 465,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ്",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം. ഉപത്തുക = എല്ലാവരുടെയും ഓർഡറുകളുടെ ആകെത്തുക. നികുതി = ഉപത്തുക × നികുതി നിരക്ക്. ടിപ്പ് = ഉപത്തുക × ടിപ്പ് നിരക്ക്. ഓരോരുത്തരുടെയും വിഹിതം = സ്വന്തം ഓർഡർ ÷ ഉപത്തുക; ബാക്കിയാകുന്ന പൈസ ആദ്യം ഏറ്റവും വലിയ ദശാംശഭാഗമുള്ളവർക്ക് പോകും, അതിനാൽ വിഹിതങ്ങളുടെ ആകെത്തുക എപ്പോഴും ബില്ലിനോട് കൃത്യമായി ചേരും. ഒരേ കറൻസി ഉപയോഗിക്കുക; നികുതിയും ടിപ്പും ഉപത്തുകയുടെ ശതമാനമായി നൽകുക. കറൻസി മാറ്റമില്ല, സേവന നിരക്ക് നിയമങ്ങളില്ല, എത്ര ടിപ്പ് നൽകണമെന്ന ഉപദേശമില്ല, പണമിടപാടുമില്ല. സ്ക്രീനിൽ രണ്ട് ദശാംശം; കണക്കുകൂട്ടൽ പൂർണ പൈസയിൽ.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html",
+      "language": "ml-IN",
+      "title": "ബില്ല് വീതിക്കൽ",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 641,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ്",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "സേവ് ചെയ്തതും ഓരോന്നിനും വേണ്ട സമയവും എഴുതുക, ദിവസം ശരിക്കും എത്ര മിനിറ്റ് വായിക്കുന്നു എന്ന് നൽകുക — ഏതു ദിവസം ഏതു തീരുമെന്ന് കാണാം. പദ്ധതി CSV ആയി ഡൗൺലോഡ് ചെയ്യാം. ഇതുവരെയുള്ള ആകെ = ഈ ഇനത്തിന്റെ മിനിറ്റ് + മുകളിലുള്ളതെല്ലാം. ദിവസം = ആകെ ÷ ദിവസത്തെ മിനിറ്റ്, മുകളിലേക്ക് പൂർണസംഖ്യ. തീരുന്ന ദിവസം = തുടക്ക തീയതി + ദിവസം − 1. ബാക്കി മിനിറ്റ് = ദിവസങ്ങൾ × ദിവസത്തെ മിനിറ്റ് − ആകെ മിനിറ്റ്. നിങ്ങൾ ടൈപ്പ് ചെയ്ത ക്രമമാണ് വായനാ ക്രമം: ഒന്നും പുനഃക്രമീകരിക്കുകയോ ഒഴിവാക്കുകയോ കൂട്ടിച്ചേർക്കുകയോ ഇല്ല. ദിവസം ഒരിക്കൽ, നിങ്ങളുടെ സമയം കൃത്യമായി ഉപയോഗിച്ച്, അവധി ദിവസങ്ങളില്ലാതെ; ഒരു ലിങ്കും തുറക്കുകയോ എടുക്കുകയോ ഇല്ല, വായനാ വേഗം ഊഹിക്കുകയുമില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/reading-backlog-sheet.html",
+      "language": "ml-IN",
+      "title": "«പിന്നെ വായിക്കാം» പദ്ധതി",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1973,
+          "title": "ഉദാഹരണ CSV ഡൗൺലോഡ്",
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "ഓരോ കുറിപ്പും ഏതു ദിവസം എഴുതി എന്നു നൽകുക — അതിനു ശേഷമുള്ള അഞ്ച് ആവർത്തന തീയതികൾ, എത്ര ദിവസം ബാക്കി, ഏതൊക്കെ കഴിഞ്ഞുപോയി എന്നിവ കാണാം. സമയക്രമം CSV ആയി ഡൗൺലോഡ് ചെയ്യാം. ആവർത്തന തീയതി = എഴുതിയ തീയതി + 1, 3, 7, 16, 35 ദിവസം. ബാക്കി ദിവസം = ആവർത്തന തീയതി − ഇന്ന്; നെഗറ്റീവ് സംഖ്യ എന്നാൽ ആ തീയതി കഴിഞ്ഞുപോയി. അടുത്ത ആവർത്തനം = ഇന്നോ അതിനു ശേഷമോ വരുന്ന ആദ്യ തീയതി. ഇത് സ്ഥിര ഇടവേളകളുടെ ഏണിയാണ്, ഓർമ്മയുടെ മാതൃകയല്ല: നിങ്ങൾ എന്ത് ഓർക്കുമെന്ന് ഇത് പ്രവചിക്കുന്നില്ല, കുറിപ്പിന് മാർക്ക് നൽകുന്നില്ല, ഉത്തരം പരിശോധിക്കുന്നുമില്ല. തീയതികൾ മാത്രം — സമയം, സമയമേഖല, ഓർമ്മപ്പെടുത്തൽ, അറിയിപ്പ് എന്നിവയില്ല.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/review-schedule-sheet.html",
+      "language": "ml-IN",
+      "title": "കുറിപ്പ് ആവർത്തന സമയക്രമം",
+      "url": "https://open.cait518.cc/ios-app-guide/ml-IN/tools/review-schedule-sheet.html"
     }
   ],
   "language": "ml-IN",

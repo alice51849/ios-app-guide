@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ml-IN" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="bill-split">
+<title>ബില്ല് വീതിക്കൽ</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="സൗജന്യ പ്രവർത്തന ഫലങ്ങൾ">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="സൗജന്യ പ്രവർത്തന ഫലങ്ങൾ">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="സൗജന്യ പ്രവർത്തന ഫലങ്ങൾ">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/hero-tasks.feed.json" title="സൗജന്യ പ്രവർത്തന ഫലങ്ങൾ">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/734219182d6e9d1a-hero-task-billsplit.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html","name":"ബില്ല് വീതിക്കൽ","description":"ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം.","inLanguage":"ml-IN","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html#worked-example","name":"കണക്കാക്കിയ ഉദാഹരണം","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/bill-split-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html#howto","name":"ബില്ല് വീതിക്കൽ","description":"ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം.","inLanguage":"ml-IN","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"ബില്ല് വീതിക്കൽ","url":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"ഉപത്തുക = എല്ലാവരുടെയും ഓർഡറുകളുടെ ആകെത്തുക. നികുതി = ഉപത്തുക × നികുതി നിരക്ക്. ടിപ്പ് = ഉപത്തുക × ടിപ്പ് നിരക്ക്. ഓരോരുത്തരുടെയും വിഹിതം = സ്വന്തം ഓർഡർ ÷ ഉപത്തുക; ബാക്കിയാകുന്ന പൈസ ആദ്യം ഏറ്റവും വലിയ ദശാംശഭാഗമുള്ളവർക്ക് പോകും, അതിനാൽ വിഹിതങ്ങളുടെ ആകെത്തുക എപ്പോഴും ബില്ലിനോട് കൃത്യമായി ചേരും."},{"@type":"HowToStep","position":2,"text":"ഒരേ കറൻസി ഉപയോഗിക്കുക; നികുതിയും ടിപ്പും ഉപത്തുകയുടെ ശതമാനമായി നൽകുക. കറൻസി മാറ്റമില്ല, സേവന നിരക്ക് നിയമങ്ങളില്ല, എത്ര ടിപ്പ് നൽകണമെന്ന ഉപദേശമില്ല, പണമിടപാടുമില്ല. സ്ക്രീനിൽ രണ്ട് ദശാംശം; കണക്കുകൂട്ടൽ പൂർണ പൈസയിൽ."}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html#example-dataset","name":"കണക്കാക്കിയ ഉദാഹരണം","description":"ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം.","inLanguage":"ml-IN","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/bill-split-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"bill-split-v1","slug":"bill-split-sheet","locale":"ml-IN","copy":{"title":"ബില്ല് വീതിക്കൽ","intro":"ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം.","income":"മണിക്കൂറിലെ അറ്റവരുമാനം","day":"ജോലി ദിവസത്തിലെ മണിക്കൂറുകൾ","item":"വാങ്ങൽ","quantity":"എണ്ണം","price":"നികുതിയുൾപ്പെട്ട യൂണിറ്റ് വില","total":"ആകെ","hours":"ജോലി മണിക്കൂറുകൾ","days":"ജോലി ദിവസങ്ങൾ","add":"ആളെ ചേർക്കുക","remove":"നീക്കുക","download":"എന്റെ CSV ഡൗൺലോഡ്","reset":"ഉദാഹരണം പുനഃസ്ഥാപിക്കുക","example":"കണക്കാക്കിയ ഉദാഹരണം","example_note":"മൂന്നു പേർ 32.40, 18.90, 25.00 എന്നിങ്ങനെ ഓർഡർ ചെയ്യുന്നു; നികുതി 8.25%, ടിപ്പ് 15%. എല്ലാ തുകകളും ഒരേ കറൻസിയിൽ.","formula":"ഉപത്തുക = എല്ലാവരുടെയും ഓർഡറുകളുടെ ആകെത്തുക. നികുതി = ഉപത്തുക × നികുതി നിരക്ക്. ടിപ്പ് = ഉപത്തുക × ടിപ്പ് നിരക്ക്. ഓരോരുത്തരുടെയും വിഹിതം = സ്വന്തം ഓർഡർ ÷ ഉപത്തുക; ബാക്കിയാകുന്ന പൈസ ആദ്യം ഏറ്റവും വലിയ ദശാംശഭാഗമുള്ളവർക്ക് പോകും, അതിനാൽ വിഹിതങ്ങളുടെ ആകെത്തുക എപ്പോഴും ബില്ലിനോട് കൃത്യമായി ചേരും.","limits":"ഒരേ കറൻസി ഉപയോഗിക്കുക; നികുതിയും ടിപ്പും ഉപത്തുകയുടെ ശതമാനമായി നൽകുക. കറൻസി മാറ്റമില്ല, സേവന നിരക്ക് നിയമങ്ങളില്ല, എത്ര ടിപ്പ് നൽകണമെന്ന ഉപദേശമില്ല, പണമിടപാടുമില്ല. സ്ക്രീനിൽ രണ്ട് ദശാംശം; കണക്കുകൂട്ടൽ പൂർണ പൈസയിൽ.","privacy":"വിവരങ്ങൾ ഈ ടാബിൽ മാത്രം തുടരും. അപ്‌ലോഡ്, അക്കൗണ്ട്, നൽകിയ വിവരങ്ങളുടെ ട്രാക്കിങ്, സംഭരണം എന്നിവയില്ല. വീണ്ടും ലോഡ് ചെയ്താൽ മാറ്റങ്ങൾ മായും.","optional":"ഐച്ഛിക ആപ്പുകൾ","optional_note":"ഈ സൗജന്യ പട്ടികയ്ക്ക് ആപ്പ് ആവശ്യമില്ല. നിലവിലെ സവിശേഷതകളും വിലകളും ഓരോ App Store പേജിലും പരിശോധിക്കുക.","error":"ഓരോ ആൾക്കും പേരും 0 അല്ലെങ്കിൽ അതിലധികവും തുക നൽകുക; രണ്ട് ശതമാനവും 0 മുതൽ 100 വരെ, ഉപത്തുക പൂജ്യത്തിലധികം വേണം. പരമാവധി രണ്ട് ദശാംശം.","row_limit":"പരമാവധി 20 പേർ; ഓരോ തുകയും 10,00,00,000 വരെ.","tools":"സൗജന്യ ഉപകരണങ്ങൾ","method":"സൂത്രവും പരിധികളും","sources":"ഉറവിടങ്ങൾ","result":"നിങ്ങളുടെ ഫലം","disclosure":"ഐച്ഛിക ആപ്പുകളുടെ ഡെവലപ്പറായ Lumi Studio പ്രസിദ്ധീകരിച്ചത്. ഇത് സ്വതന്ത്ര റാങ്കിങ് അല്ല.","download_example":"ഉദാഹരണ CSV ഡൗൺലോഡ്","feed":"സൗജന്യ പ്രവർത്തന ഫലങ്ങൾ","tax_pct":"നികുതി %","tip_pct":"ടിപ്പ് %","person":"ആൾ","amount":"ഓർഡർ തുക","tax_share":"നികുതി വിഹിതം","tip_share":"ടിപ്പ് വിഹിതം","total_due":"കൊടുക്കേണ്ടത്","subtotal":"ഉപത്തുക","tax":"നികുതി","tip":"ടിപ്പ്","grand_total":"ബില്ല് ആകെ"},"example":{"tax_pct":"8.25","tip_pct":"15","items":[{"amount":"32.40","name":"ആൾ 1"},{"amount":"18.90","name":"ആൾ 2"},{"amount":"25.00","name":"ആൾ 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/f08eeec36dcf3a4d-hero-task-billsplit-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/51ee2eea9ba8e492-hero-task-billsplit-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/ml-IN/index.html">iOS App Guide</a><span>Lumi Studio</span></nav>
+<h1>ബില്ല് വീതിക്കൽ</h1><p>ഓരോരുത്തരും എത്ര രൂപയ്ക്ക് ഓർഡർ ചെയ്തു എന്ന് എഴുതുക, നികുതിയുടെയും ടിപ്പിന്റെയും ശതമാനം നൽകുക — ആർക്ക് എത്ര കൊടുക്കണമെന്ന് കൃത്യമായി കിട്ടും. നികുതിയും ടിപ്പും ഓർഡറിന്റെ അനുപാതത്തിൽ പൈസ വരെ വീതിക്കും, പട്ടിക CSV ആയി ഡൗൺലോഡ് ചെയ്യാം.</p>
+<section class="panel" aria-label="ബില്ല് വീതിക്കൽ">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="tax-pct">നികുതി %</label><input id="tax-pct" type="text" inputmode="decimal" maxlength="6" value="8.25" required autocomplete="off"></div>
+<div><label for="tip-pct">ടിപ്പ് %</label><input id="tip-pct" type="text" inputmode="decimal" maxlength="6" value="15" required autocomplete="off"></div>
+</div>
+<div id="split-rows"><div class="split-row"><div class="name-field"><label data-label="name" for="row-1-name">ആൾ</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="ആൾ 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">ഓർഡർ തുക</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="32.40" required autocomplete="off"></div><div><p class="output-label">നികുതി വിഹിതം</p><output data-output="tax">2.67</output></div><div><p class="output-label">ടിപ്പ് വിഹിതം</p><output data-output="tip">4.86</output></div><div><p class="output-label">കൊടുക്കേണ്ടത്</p><output data-output="due">39.93</output></div><button type="button" data-remove aria-label="നീക്കുക · ആൾ 1">നീക്കുക</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-2-name">ആൾ</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="ആൾ 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">ഓർഡർ തുക</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="18.90" required autocomplete="off"></div><div><p class="output-label">നികുതി വിഹിതം</p><output data-output="tax">1.56</output></div><div><p class="output-label">ടിപ്പ് വിഹിതം</p><output data-output="tip">2.84</output></div><div><p class="output-label">കൊടുക്കേണ്ടത്</p><output data-output="due">23.30</output></div><button type="button" data-remove aria-label="നീക്കുക · ആൾ 2">നീക്കുക</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-3-name">ആൾ</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="ആൾ 3" required autocomplete="off"></div><div><label data-label="amount" for="row-3-amount">ഓർഡർ തുക</label><input id="row-3-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="25.00" required autocomplete="off"></div><div><p class="output-label">നികുതി വിഹിതം</p><output data-output="tax">2.06</output></div><div><p class="output-label">ടിപ്പ് വിഹിതം</p><output data-output="tip">3.75</output></div><div><p class="output-label">കൊടുക്കേണ്ടത്</p><output data-output="due">30.81</output></div><button type="button" data-remove aria-label="നീക്കുക · ആൾ 3">നീക്കുക</button></div></div>
+<template id="split-template"><div class="split-row"><div class="name-field"><label data-label="name" for="row-0-name">ആൾ</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">ഓർഡർ തുക</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><div><p class="output-label">നികുതി വിഹിതം</p><output data-output="tax">0.00</output></div><div><p class="output-label">ടിപ്പ് വിഹിതം</p><output data-output="tip">0.00</output></div><div><p class="output-label">കൊടുക്കേണ്ടത്</p><output data-output="due">0.00</output></div><button type="button" data-remove aria-label="നീക്കുക · ">നീക്കുക</button></div></template>
+<div class="actions"><button type="button" id="add-person">ആളെ ചേർക്കുക</button><span class="small">പരമാവധി 20 പേർ; ഓരോ തുകയും 10,00,00,000 വരെ.</span></div>
+<div class="totals split-totals" aria-label="നിങ്ങളുടെ ഫലം">
+<div><p>ഉപത്തുക</p><output class="total-value" id="subtotal-value">76.30</output></div><div><p>നികുതി</p><output class="total-value" id="tax-value">6.29</output></div><div><p>ടിപ്പ്</p><output class="total-value" id="tip-value">11.45</output></div><div class="grand"><p>ബില്ല് ആകെ</p><output class="total-value" id="grand-total-value">94.04</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>എന്റെ CSV ഡൗൺലോഡ്</button><button type="button" id="reset-example">ഉദാഹരണം പുനഃസ്ഥാപിക്കുക</button></div>
+</fieldset></form><p class="small">വിവരങ്ങൾ ഈ ടാബിൽ മാത്രം തുടരും. അപ്‌ലോഡ്, അക്കൗണ്ട്, നൽകിയ വിവരങ്ങളുടെ ട്രാക്കിങ്, സംഭരണം എന്നിവയില്ല. വീണ്ടും ലോഡ് ചെയ്താൽ മാറ്റങ്ങൾ മായും.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>കണക്കാക്കിയ ഉദാഹരണം</h2><p>മൂന്നു പേർ 32.40, 18.90, 25.00 എന്നിങ്ങനെ ഓർഡർ ചെയ്യുന്നു; നികുതി 8.25%, ടിപ്പ് 15%. എല്ലാ തുകകളും ഒരേ കറൻസിയിൽ.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">ആൾ</th><th scope="col">ഓർഡർ തുക</th><th scope="col">നികുതി വിഹിതം</th><th scope="col">ടിപ്പ് വിഹിതം</th><th scope="col">കൊടുക്കേണ്ടത്</th></tr></thead><tbody><tr><td>ആൾ 1</td><td>32.40</td><td>2.67</td><td>4.86</td><td>39.93</td></tr><tr><td>ആൾ 2</td><td>18.90</td><td>1.56</td><td>2.84</td><td>23.30</td></tr><tr><td>ആൾ 3</td><td>25.00</td><td>2.06</td><td>3.75</td><td>30.81</td></tr></tbody><tfoot><tr class="example-total"><td>ഉപത്തുക</td><td>76.30</td><td></td><td></td><td></td></tr><tr class="example-total"><td>നികുതി</td><td>8.25%</td><td>6.29</td><td></td><td></td></tr><tr class="example-total"><td>ടിപ്പ്</td><td>15.00%</td><td></td><td>11.45</td><td></td></tr><tr class="example-total"><td>ബില്ല് ആകെ</td><td></td><td></td><td></td><td>94.04</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/results/bill-split-sheet.csv" download>ഉദാഹരണ CSV ഡൗൺലോഡ്</a>
+<h2>സൂത്രവും പരിധികളും</h2><p>ഉപത്തുക = എല്ലാവരുടെയും ഓർഡറുകളുടെ ആകെത്തുക. നികുതി = ഉപത്തുക × നികുതി നിരക്ക്. ടിപ്പ് = ഉപത്തുക × ടിപ്പ് നിരക്ക്. ഓരോരുത്തരുടെയും വിഹിതം = സ്വന്തം ഓർഡർ ÷ ഉപത്തുക; ബാക്കിയാകുന്ന പൈസ ആദ്യം ഏറ്റവും വലിയ ദശാംശഭാഗമുള്ളവർക്ക് പോകും, അതിനാൽ വിഹിതങ്ങളുടെ ആകെത്തുക എപ്പോഴും ബില്ലിനോട് കൃത്യമായി ചേരും.</p>
+<pre class="formula">ഉപത്തുക = 32.40 + 18.90 + 25.00 = 76.30
+നികുതി = 76.30 × 8.25% = 6.29
+ടിപ്പ് = 76.30 × 15.00% = 11.45
+ആൾ 1: 32.40 + 2.67 + 4.86 = 39.93
+ആൾ 2: 18.90 + 1.56 + 2.84 = 23.30
+ആൾ 3: 25.00 + 2.06 + 3.75 = 30.81
+ബില്ല് ആകെ = 94.04</pre>
+<p>ഒരേ കറൻസി ഉപയോഗിക്കുക; നികുതിയും ടിപ്പും ഉപത്തുകയുടെ ശതമാനമായി നൽകുക. കറൻസി മാറ്റമില്ല, സേവന നിരക്ക് നിയമങ്ങളില്ല, എത്ര ടിപ്പ് നൽകണമെന്ന ഉപദേശമില്ല, പണമിടപാടുമില്ല. സ്ക്രീനിൽ രണ്ട് ദശാംശം; കണക്കുകൂട്ടൽ പൂർണ പൈസയിൽ.</p>
+<ul class="small">
+<li>ഓർഡർ തുക: <bdi dir="ltr">0 ≤ n ≤ 100,000,000</bdi></li>
+<li>നികുതി % / ടിപ്പ് %: <bdi dir="ltr">0 ≤ % ≤ 100</bdi></li>
+<li>ആൾ: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>ഐച്ഛിക ആപ്പുകൾ</h2><p>ഈ സൗജന്യ പട്ടികയ്ക്ക് ആപ്പ് ആവശ്യമില്ല. നിലവിലെ സവിശേഷതകളും വിലകളും ഓരോ App Store പേജിലും പരിശോധിക്കുക.</p><div class="actions"><a class="button" href="https://apps.apple.com/in/app/id6794178671?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store-ൽ നിന്ന് CalDaily കാൽക്കുലേറ്റർ നേടൂ</a></div></section>
+<footer><p>ഐച്ഛിക ആപ്പുകളുടെ ഡെവലപ്പറായ Lumi Studio പ്രസിദ്ധീകരിച്ചത്. ഇത് സ്വതന്ത്ര റാങ്കിങ് അല്ല.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">ഉറവിടങ്ങൾ</a> · <a href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/hero-tasks.feed.json">സൗജന്യ പ്രവർത്തന ഫലങ്ങൾ</a></footer>
+</main></body></html>

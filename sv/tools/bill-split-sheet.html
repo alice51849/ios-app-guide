@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="bill-split">
+<title>Dela notan</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="Kostnadsfria resultat">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="Kostnadsfria resultat">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="Kostnadsfria resultat">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/sv/tools/hero-tasks.feed.json" title="Kostnadsfria resultat">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/734219182d6e9d1a-hero-task-billsplit.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html","name":"Dela notan","description":"Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV.","inLanguage":"sv","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html#worked-example","name":"Räkneexempel","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/sv/tools/results/bill-split-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html#howto","name":"Dela notan","description":"Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV.","inLanguage":"sv","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"Dela notan","url":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"Delsumma = allt beställt hopräknat. Moms = delsumma × momssats. Dricks = delsumma × dricksprocent. Varje persons andel är den egna beställningen ÷ delsumman; ören som blir över går först till de största decimalerna, så att andelarna tillsammans blir exakt notan."},{"@type":"HowToStep","position":2,"text":"Använd en enda valuta och ange moms och dricks som procent av delsumman. Ingen valutaväxling, inga regler för serveringsavgift, inga råd om hur mycket dricks du bör lämna och inga betalningar. På skärmen avrundas till två decimaler; själva fördelningen räknas i hela ören."}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html#example-dataset","name":"Räkneexempel","description":"Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV.","inLanguage":"sv","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/sv/tools/results/bill-split-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"bill-split-v1","slug":"bill-split-sheet","locale":"sv","copy":{"title":"Dela notan","intro":"Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV.","income":"Nettoinkomst per timme","day":"Timmar per arbetsdag","item":"Köp","quantity":"Antal","price":"Slutligt styckpris","total":"Totalt","hours":"Arbetstimmar","days":"Arbetsdagar","add":"Lägg till person","remove":"Ta bort","download":"Ladda ned min CSV","reset":"Återställ exemplet","example":"Räkneexempel","example_note":"Tre personer beställer för 32,40, 18,90 och 25,00 med 8,25 % moms och 15 % dricks. Alla belopp är i samma valuta.","formula":"Delsumma = allt beställt hopräknat. Moms = delsumma × momssats. Dricks = delsumma × dricksprocent. Varje persons andel är den egna beställningen ÷ delsumman; ören som blir över går först till de största decimalerna, så att andelarna tillsammans blir exakt notan.","limits":"Använd en enda valuta och ange moms och dricks som procent av delsumman. Ingen valutaväxling, inga regler för serveringsavgift, inga råd om hur mycket dricks du bör lämna och inga betalningar. På skärmen avrundas till två decimaler; själva fördelningen räknas i hela ören.","privacy":"Dina uppgifter stannar i den här fliken. Ingen uppladdning, inget konto, ingen spårning av inmatningar eller lagring. Omladdning raderar ändringarna.","optional":"Valfria appar","optional_note":"Det här kostnadsfria bladet fungerar utan app. Kontrollera aktuella funktioner och priser på respektive App Store-sida.","error":"Ge varje person ett namn och ett belopp på 0 eller mer, håll båda procenttalen mellan 0 och 100 och en delsumma över noll. Högst två decimaler.","row_limit":"Upp till 20 personer; varje belopp upp till 100 000 000.","tools":"Gratis verktyg","method":"Formel och begränsningar","sources":"Källor","result":"Ditt resultat","disclosure":"Publicerat av Lumi Studio, utvecklaren av de valfria apparna. Ingen oberoende rankning.","download_example":"Ladda ned exempel-CSV","feed":"Kostnadsfria resultat","tax_pct":"Moms %","tip_pct":"Dricks %","person":"Person","amount":"Beställde för","tax_share":"Andel av moms","tip_share":"Andel av dricks","total_due":"Att betala","subtotal":"Delsumma","tax":"Moms","tip":"Dricks","grand_total":"Hela notan"},"example":{"tax_pct":"8.25","tip_pct":"15","items":[{"amount":"32.40","name":"Person 1"},{"amount":"18.90","name":"Person 2"},{"amount":"25.00","name":"Person 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/f08eeec36dcf3a4d-hero-task-billsplit-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/51ee2eea9ba8e492-hero-task-billsplit-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/sv/index.html">iOS App Guide</a><span>Lumi Studio</span></nav>
+<h1>Dela notan</h1><p>Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV.</p>
+<section class="panel" aria-label="Dela notan">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="tax-pct">Moms %</label><input id="tax-pct" type="text" inputmode="decimal" maxlength="6" value="8.25" required autocomplete="off"></div>
+<div><label for="tip-pct">Dricks %</label><input id="tip-pct" type="text" inputmode="decimal" maxlength="6" value="15" required autocomplete="off"></div>
+</div>
+<div id="split-rows"><div class="split-row"><div class="name-field"><label data-label="name" for="row-1-name">Person</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="Person 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">Beställde för</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="32.40" required autocomplete="off"></div><div><p class="output-label">Andel av moms</p><output data-output="tax">2.67</output></div><div><p class="output-label">Andel av dricks</p><output data-output="tip">4.86</output></div><div><p class="output-label">Att betala</p><output data-output="due">39.93</output></div><button type="button" data-remove aria-label="Ta bort · Person 1">Ta bort</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-2-name">Person</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="Person 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">Beställde för</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="18.90" required autocomplete="off"></div><div><p class="output-label">Andel av moms</p><output data-output="tax">1.56</output></div><div><p class="output-label">Andel av dricks</p><output data-output="tip">2.84</output></div><div><p class="output-label">Att betala</p><output data-output="due">23.30</output></div><button type="button" data-remove aria-label="Ta bort · Person 2">Ta bort</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-3-name">Person</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="Person 3" required autocomplete="off"></div><div><label data-label="amount" for="row-3-amount">Beställde för</label><input id="row-3-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="25.00" required autocomplete="off"></div><div><p class="output-label">Andel av moms</p><output data-output="tax">2.06</output></div><div><p class="output-label">Andel av dricks</p><output data-output="tip">3.75</output></div><div><p class="output-label">Att betala</p><output data-output="due">30.81</output></div><button type="button" data-remove aria-label="Ta bort · Person 3">Ta bort</button></div></div>
+<template id="split-template"><div class="split-row"><div class="name-field"><label data-label="name" for="row-0-name">Person</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">Beställde för</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><div><p class="output-label">Andel av moms</p><output data-output="tax">0.00</output></div><div><p class="output-label">Andel av dricks</p><output data-output="tip">0.00</output></div><div><p class="output-label">Att betala</p><output data-output="due">0.00</output></div><button type="button" data-remove aria-label="Ta bort · ">Ta bort</button></div></template>
+<div class="actions"><button type="button" id="add-person">Lägg till person</button><span class="small">Upp till 20 personer; varje belopp upp till 100 000 000.</span></div>
+<div class="totals split-totals" aria-label="Ditt resultat">
+<div><p>Delsumma</p><output class="total-value" id="subtotal-value">76.30</output></div><div><p>Moms</p><output class="total-value" id="tax-value">6.29</output></div><div><p>Dricks</p><output class="total-value" id="tip-value">11.45</output></div><div class="grand"><p>Hela notan</p><output class="total-value" id="grand-total-value">94.04</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>Ladda ned min CSV</button><button type="button" id="reset-example">Återställ exemplet</button></div>
+</fieldset></form><p class="small">Dina uppgifter stannar i den här fliken. Ingen uppladdning, inget konto, ingen spårning av inmatningar eller lagring. Omladdning raderar ändringarna.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>Räkneexempel</h2><p>Tre personer beställer för 32,40, 18,90 och 25,00 med 8,25 % moms och 15 % dricks. Alla belopp är i samma valuta.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Person</th><th scope="col">Beställde för</th><th scope="col">Andel av moms</th><th scope="col">Andel av dricks</th><th scope="col">Att betala</th></tr></thead><tbody><tr><td>Person 1</td><td>32.40</td><td>2.67</td><td>4.86</td><td>39.93</td></tr><tr><td>Person 2</td><td>18.90</td><td>1.56</td><td>2.84</td><td>23.30</td></tr><tr><td>Person 3</td><td>25.00</td><td>2.06</td><td>3.75</td><td>30.81</td></tr></tbody><tfoot><tr class="example-total"><td>Delsumma</td><td>76.30</td><td></td><td></td><td></td></tr><tr class="example-total"><td>Moms</td><td>8.25%</td><td>6.29</td><td></td><td></td></tr><tr class="example-total"><td>Dricks</td><td>15.00%</td><td></td><td>11.45</td><td></td></tr><tr class="example-total"><td>Hela notan</td><td></td><td></td><td></td><td>94.04</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/sv/tools/results/bill-split-sheet.csv" download>Ladda ned exempel-CSV</a>
+<h2>Formel och begränsningar</h2><p>Delsumma = allt beställt hopräknat. Moms = delsumma × momssats. Dricks = delsumma × dricksprocent. Varje persons andel är den egna beställningen ÷ delsumman; ören som blir över går först till de största decimalerna, så att andelarna tillsammans blir exakt notan.</p>
+<pre class="formula">Delsumma = 32.40 + 18.90 + 25.00 = 76.30
+Moms = 76.30 × 8.25% = 6.29
+Dricks = 76.30 × 15.00% = 11.45
+Person 1: 32.40 + 2.67 + 4.86 = 39.93
+Person 2: 18.90 + 1.56 + 2.84 = 23.30
+Person 3: 25.00 + 2.06 + 3.75 = 30.81
+Hela notan = 94.04</pre>
+<p>Använd en enda valuta och ange moms och dricks som procent av delsumman. Ingen valutaväxling, inga regler för serveringsavgift, inga råd om hur mycket dricks du bör lämna och inga betalningar. På skärmen avrundas till två decimaler; själva fördelningen räknas i hela ören.</p>
+<ul class="small">
+<li>Beställde för: <bdi dir="ltr">0 ≤ n ≤ 100,000,000</bdi></li>
+<li>Moms % / Dricks %: <bdi dir="ltr">0 ≤ % ≤ 100</bdi></li>
+<li>Person: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>Valfria appar</h2><p>Det här kostnadsfria bladet fungerar utan app. Kontrollera aktuella funktioner och priser på respektive App Store-sida.</p><div class="actions"><a class="button" href="https://apps.apple.com/se/app/id6794178671?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">Hämta CalDaily: kalkylator och teman i App Store</a></div></section>
+<footer><p>Publicerat av Lumi Studio, utvecklaren av de valfria apparna. Ingen oberoende rankning.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">Källor</a> · <a href="https://open.cait518.cc/ios-app-guide/sv/tools/hero-tasks.feed.json">Kostnadsfria resultat</a></footer>
+</main></body></html>

@@ -223,6 +223,81 @@
       "language": "tr",
       "title": "Toplantı notlarından tek sayfa özet",
       "url": "https://open.cait518.cc/ios-app-guide/tr/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 330,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "Kimin ne kadar sipariş verdiğini yaz, vergi ve bahşiş yüzdesini gir; kimin tam olarak ne ödeyeceğini gör. Vergi ve bahşiş, siparişe göre kuruşu kuruşuna paylaştırılır ve tabloyu CSV olarak indirirsin. Ara toplam = tüm siparişlerin toplamı. Vergi = ara toplam × vergi oranı. Bahşiş = ara toplam × bahşiş oranı. Herkesin payı kendi siparişi ÷ ara toplamdır; artan kuruşlar önce en büyük ondalık kalanlara gider, böylece paylar her zaman hesabın tam toplamını verir. Tek para birimi kullan; vergi ve bahşişi ara toplamın yüzdesi olarak gir. Döviz çevirisi, servis ücreti kuralı, ne kadar bahşiş bırakılacağına dair tavsiye ve ödeme yoktur. Ekranda iki basamağa yuvarlanır; paylaştırma tam kuruş üzerinden hesaplanır.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html",
+      "language": "tr",
+      "title": "Hesabı paylaşma",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 351,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "Kaydettiklerini ve her birinin ne kadar süreceğini yaz, günde gerçekten kaç dakika okuduğunu gir; hangisini hangi gün bitireceğini gör. Planı CSV olarak indirirsin. Yürüyen toplam = bu kaydın dakikası artı üstündeki her şey. Gün = yürüyen toplam ÷ günlük dakika, yukarı yuvarlanır. Biteceği tarih = başlangıç tarihi + gün − 1. Kalan dakika = gün × günlük dakika − toplam dakika. Yazdığın sıra okuma sırasıdır: hiçbir şey yeniden sıralanmaz, atlanmaz veya birleştirilmez. Günde bir oturum, tam olarak senin süreni harcar; izin günü yok, hiçbir bağlantı açılmaz veya indirilmez ve okuma hızın tahmin edilmez.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/reading-backlog-sheet.html",
+      "language": "tr",
+      "title": "«Sonra okurum» planı",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/tr/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1038,
+          "title": "Örnek CSV indir",
+          "url": "https://open.cait518.cc/ios-app-guide/tr/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "Her notu ne zaman yazdığını gir; ardından gelen beş tekrar tarihini, kaç gün kaldığını ve hangilerinin çoktan geçtiğini gör. Takvimi CSV olarak indirirsin. Tekrar tarihi = yazıldığı tarih + 1, 3, 7, 16 ve 35 gün. Kalan gün = tekrar tarihi − bugün; eksi sayı çoktan geçmiş bir tarihtir. Sıradaki tekrar = bugüne veya sonrasına denk gelen ilk tarih. Bu sabit bir aralık merdiveni, hafıza modeli değil: burada neyi hatırlayacağın tahmin edilmez, hiçbir nota puan verilmez ve hiçbir cevap değerlendirilmez. Sadece tarihler; saat, saat dilimi, hatırlatıcı ve bildirim yok.",
+      "date_modified": "2026-09-06T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/tr/tools/review-schedule-sheet.html",
+      "language": "tr",
+      "title": "Tekrar takvimi",
+      "url": "https://open.cait518.cc/ios-app-guide/tr/tools/review-schedule-sheet.html"
     }
   ],
   "language": "tr",

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ta-IN" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="ஒவ்வொருவரும் எவ்வளவுக்கு ஆர்டர் செய்தார் என்பதைப் பதிவு செய்து, வரி மற்றும் டிப் சதவீதத்தைக் கொடுத்தால், யார் எவ்வளவு தர வேண்டும் என்பது சரியாகத் தெரியும். வரியும் டிப்பும் ஆர்டர் விகிதத்தில் காசு வரை பிரிக்கப்படும், அட்டவணையை CSV ஆகப் பதிவிறக்கலாம்.">
+<meta name="content-modified" content="2026-09-06">
+<meta name="hero-task" content="bill-split">
+<title>பில் பங்கீடு</title>
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/bill-split-sheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/tools/bill-split-sheet.html">
+<link rel="alternate" type="application/atom+xml" href="https://open.cait518.cc/ios-app-guide/feed.xml" title="இலவசப் பணி முடிவுகள்">
+<link rel="alternate" type="application/rss+xml" href="https://open.cait518.cc/ios-app-guide/rss.xml" title="இலவசப் பணி முடிவுகள்">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/feed.json" title="இலவசப் பணி முடிவுகள்">
+<link rel="alternate" type="application/feed+json" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/hero-tasks.feed.json" title="இலவசப் பணி முடிவுகள்">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/61b63f55d58fb603-hero-task.css">
+<link rel="stylesheet" href="/ios-app-guide/assets/hero-tasks/734219182d6e9d1a-hero-task-billsplit.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html#tool","url":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html","name":"பில் பங்கீடு","description":"ஒவ்வொருவரும் எவ்வளவுக்கு ஆர்டர் செய்தார் என்பதைப் பதிவு செய்து, வரி மற்றும் டிப் சதவீதத்தைக் கொடுத்தால், யார் எவ்வளவு தர வேண்டும் என்பது சரியாகத் தெரியும். வரியும் டிப்பும் ஆர்டர் விகிதத்தில் காசு வரை பிரிக்கப்படும், அட்டவணையை CSV ஆகப் பதிவிறக்கலாம்.","inLanguage":"ta-IN","isAccessibleForFree":true,"operatingSystem":"Any","applicationCategory":"UtilitiesApplication","dateModified":"2026-09-06","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"hasPart":{"@type":"CreativeWork","@id":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html#worked-example","name":"கணக்கிட்ட எடுத்துக்காட்டு","encoding":{"@type":"MediaObject","contentUrl":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/bill-split-sheet.csv","encodingFormat":"text/csv"}},"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","@id":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html#howto","name":"பில் பங்கீடு","description":"ஒவ்வொருவரும் எவ்வளவுக்கு ஆர்டர் செய்தார் என்பதைப் பதிவு செய்து, வரி மற்றும் டிப் சதவீதத்தைக் கொடுத்தால், யார் எவ்வளவு தர வேண்டும் என்பது சரியாகத் தெரியும். வரியும் டிப்பும் ஆர்டர் விகிதத்தில் காசு வரை பிரிக்கப்படும், அட்டவணையை CSV ஆகப் பதிவிறக்கலாம்.","inLanguage":"ta-IN","isAccessibleForFree":true,"dateModified":"2026-09-06","tool":{"@type":"HowToTool","name":"பில் பங்கீடு","url":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html"},"step":[{"@type":"HowToStep","position":1,"text":"இடைத்தொகை = அனைவரின் ஆர்டர்களின் கூட்டுத்தொகை. வரி = இடைத்தொகை × வரி விகிதம். டிப் = இடைத்தொகை × டிப் விகிதம். ஒவ்வொருவரின் பங்கு = அவரது ஆர்டர் ÷ இடைத்தொகை; மீதமுள்ள காசுகள் பெரிய தசம பகுதி உள்ளவருக்கு முதலில் சேரும், எனவே பங்குகளின் கூட்டுத்தொகை எப்போதும் பில்லுக்குச் சரியாகப் பொருந்தும்."},{"@type":"HowToStep","position":2,"text":"ஒரே நாணயத்தைப் பயன்படுத்துங்கள்; வரியையும் டிப்பையும் இடைத்தொகையின் சதவீதமாகக் கொடுங்கள். நாணய மாற்றம் இல்லை, சேவைக் கட்டண விதிகள் இல்லை, எவ்வளவு டிப் தர வேண்டும் என்ற ஆலோசனை இல்லை, பணப் பரிமாற்றமும் இல்லை. திரையில் இரண்டு தசம இடங்கள்; கணக்கீடு முழுக் காசுகளில் நடக்கும்."}],"publisher":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"}},{"@context":"https://schema.org","@type":"Dataset","@id":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html#example-dataset","name":"கணக்கிட்ட எடுத்துக்காட்டு","description":"ஒவ்வொருவரும் எவ்வளவுக்கு ஆர்டர் செய்தார் என்பதைப் பதிவு செய்து, வரி மற்றும் டிப் சதவீதத்தைக் கொடுத்தால், யார் எவ்வளவு தர வேண்டும் என்பது சரியாகத் தெரியும். வரியும் டிப்பும் ஆர்டர் விகிதத்தில் காசு வரை பிரிக்கப்படும், அட்டவணையை CSV ஆகப் பதிவிறக்கலாம்.","inLanguage":"ta-IN","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","dateModified":"2026-09-06","creator":{"@type":"Organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide"},"isPartOf":{"@type":"WebApplication","@id":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/bill-split-sheet.html#tool"},"includedInDataCatalog":{"@type":"DataCatalog","url":"https://open.cait518.cc/ios-app-guide/data/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/bill-split-sheet.csv"}]}]</script>
+<script type="application/json" id="hero-config">{"adapter":"bill-split-v1","slug":"bill-split-sheet","locale":"ta-IN","copy":{"title":"பில் பங்கீடு","intro":"ஒவ்வொருவரும் எவ்வளவுக்கு ஆர்டர் செய்தார் என்பதைப் பதிவு செய்து, வரி மற்றும் டிப் சதவீதத்தைக் கொடுத்தால், யார் எவ்வளவு தர வேண்டும் என்பது சரியாகத் தெரியும். வரியும் டிப்பும் ஆர்டர் விகிதத்தில் காசு வரை பிரிக்கப்படும், அட்டவணையை CSV ஆகப் பதிவிறக்கலாம்.","income":"மணிநேர நிகர வருமானம்","day":"ஒரு வேலைநாளின் மணிநேரம்","item":"வாங்குதல்","quantity":"எண்ணிக்கை","price":"வரியுடன் ஒரு பொருளின் விலை","total":"மொத்தம்","hours":"வேலை மணிநேரம்","days":"வேலைநாட்கள்","add":"நபரைச் சேர்","remove":"நீக்க","download":"எனது CSV பதிவிறக்கம்","reset":"எடுத்துக்காட்டை மீட்டமைக்க","example":"கணக்கிட்ட எடுத்துக்காட்டு","example_note":"மூன்று பேர் 32.40, 18.90, 25.00 என ஆர்டர் செய்கிறார்கள்; வரி 8.25%, டிப் 15%. அனைத்துத் தொகைகளும் ஒரே நாணயத்தில்.","formula":"இடைத்தொகை = அனைவரின் ஆர்டர்களின் கூட்டுத்தொகை. வரி = இடைத்தொகை × வரி விகிதம். டிப் = இடைத்தொகை × டிப் விகிதம். ஒவ்வொருவரின் பங்கு = அவரது ஆர்டர் ÷ இடைத்தொகை; மீதமுள்ள காசுகள் பெரிய தசம பகுதி உள்ளவருக்கு முதலில் சேரும், எனவே பங்குகளின் கூட்டுத்தொகை எப்போதும் பில்லுக்குச் சரியாகப் பொருந்தும்.","limits":"ஒரே நாணயத்தைப் பயன்படுத்துங்கள்; வரியையும் டிப்பையும் இடைத்தொகையின் சதவீதமாகக் கொடுங்கள். நாணய மாற்றம் இல்லை, சேவைக் கட்டண விதிகள் இல்லை, எவ்வளவு டிப் தர வேண்டும் என்ற ஆலோசனை இல்லை, பணப் பரிமாற்றமும் இல்லை. திரையில் இரண்டு தசம இடங்கள்; கணக்கீடு முழுக் காசுகளில் நடக்கும்.","privacy":"உள்ளீடுகள் இந்தத் தாவலில் மட்டுமே இருக்கும். பதிவேற்றம், கணக்கு, உள்ளீட்டுக் கண்காணிப்பு அல்லது சேமிப்பு இல்லை. மீண்டும் ஏற்றினால் மாற்றங்கள் அழியும்.","optional":"விருப்பச் செயலிகள்","optional_note":"இந்த இலவசத் தாளுக்கு செயலி தேவையில்லை. தற்போதைய அம்சங்கள் மற்றும் விலைகளை ஒவ்வொரு App Store பக்கத்திலும் சரிபாருங்கள்.","error":"ஒவ்வொருவருக்கும் பெயரும் 0 அல்லது அதற்கு மேற்பட்ட தொகையும் தேவை; இரு சதவீதங்களும் 0 முதல் 100 வரை, இடைத்தொகை பூஜ்ஜியத்தை விட அதிகமாக இருக்க வேண்டும். அதிகபட்சம் இரண்டு தசம இடங்கள்.","row_limit":"அதிகபட்சம் 20 நபர்; ஒவ்வொரு தொகையும் 10,00,00,000 வரை.","tools":"இலவசக் கருவிகள்","method":"சூத்திரமும் வரம்புகளும்","sources":"ஆதாரங்கள்","result":"உங்கள் முடிவு","disclosure":"விருப்பச் செயலிகளின் உருவாக்குநரான Lumi Studio வெளியிட்டது. இது சுயாதீனத் தரவரிசை அல்ல.","download_example":"எடுத்துக்காட்டு CSV பதிவிறக்கம்","feed":"இலவசப் பணி முடிவுகள்","tax_pct":"வரி %","tip_pct":"டிப் %","person":"நபர்","amount":"ஆர்டர் தொகை","tax_share":"வரிப் பங்கு","tip_share":"டிப் பங்கு","total_due":"கட்ட வேண்டியது","subtotal":"இடைத்தொகை","tax":"வரி","tip":"டிப்","grand_total":"பில் மொத்தம்"},"example":{"tax_pct":"8.25","tip_pct":"15","items":[{"amount":"32.40","name":"நபர் 1"},{"amount":"18.90","name":"நபர் 2"},{"amount":"25.00","name":"நபர் 3"}]}}</script>
+<script src="/ios-app-guide/assets/hero-tasks/f08eeec36dcf3a4d-hero-task-billsplit-core.js" defer></script>
+<script src="/ios-app-guide/assets/hero-tasks/51ee2eea9ba8e492-hero-task-billsplit-ui.js" defer></script>
+</head>
+<body><main>
+<nav><a href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/index.html">இலவசக் கருவிகள்</a><span>Lumi Studio</span></nav>
+<h1>பில் பங்கீடு</h1><p>ஒவ்வொருவரும் எவ்வளவுக்கு ஆர்டர் செய்தார் என்பதைப் பதிவு செய்து, வரி மற்றும் டிப் சதவீதத்தைக் கொடுத்தால், யார் எவ்வளவு தர வேண்டும் என்பது சரியாகத் தெரியும். வரியும் டிப்பும் ஆர்டர் விகிதத்தில் காசு வரை பிரிக்கப்படும், அட்டவணையை CSV ஆகப் பதிவிறக்கலாம்.</p>
+<section class="panel" aria-label="பில் பங்கீடு">
+<form id="hero-form" autocomplete="off">
+<fieldset id="hero-fields" disabled>
+<div class="fields">
+<div><label for="tax-pct">வரி %</label><input id="tax-pct" type="text" inputmode="decimal" maxlength="6" value="8.25" required autocomplete="off"></div>
+<div><label for="tip-pct">டிப் %</label><input id="tip-pct" type="text" inputmode="decimal" maxlength="6" value="15" required autocomplete="off"></div>
+</div>
+<div id="split-rows"><div class="split-row"><div class="name-field"><label data-label="name" for="row-1-name">நபர்</label><input id="row-1-name" data-field="name" type="text" maxlength="120" value="நபர் 1" required autocomplete="off"></div><div><label data-label="amount" for="row-1-amount">ஆர்டர் தொகை</label><input id="row-1-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="32.40" required autocomplete="off"></div><div><p class="output-label">வரிப் பங்கு</p><output data-output="tax">2.67</output></div><div><p class="output-label">டிப் பங்கு</p><output data-output="tip">4.86</output></div><div><p class="output-label">கட்ட வேண்டியது</p><output data-output="due">39.93</output></div><button type="button" data-remove aria-label="நீக்க · நபர் 1">நீக்க</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-2-name">நபர்</label><input id="row-2-name" data-field="name" type="text" maxlength="120" value="நபர் 2" required autocomplete="off"></div><div><label data-label="amount" for="row-2-amount">ஆர்டர் தொகை</label><input id="row-2-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="18.90" required autocomplete="off"></div><div><p class="output-label">வரிப் பங்கு</p><output data-output="tax">1.56</output></div><div><p class="output-label">டிப் பங்கு</p><output data-output="tip">2.84</output></div><div><p class="output-label">கட்ட வேண்டியது</p><output data-output="due">23.30</output></div><button type="button" data-remove aria-label="நீக்க · நபர் 2">நீக்க</button></div><div class="split-row"><div class="name-field"><label data-label="name" for="row-3-name">நபர்</label><input id="row-3-name" data-field="name" type="text" maxlength="120" value="நபர் 3" required autocomplete="off"></div><div><label data-label="amount" for="row-3-amount">ஆர்டர் தொகை</label><input id="row-3-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="25.00" required autocomplete="off"></div><div><p class="output-label">வரிப் பங்கு</p><output data-output="tax">2.06</output></div><div><p class="output-label">டிப் பங்கு</p><output data-output="tip">3.75</output></div><div><p class="output-label">கட்ட வேண்டியது</p><output data-output="due">30.81</output></div><button type="button" data-remove aria-label="நீக்க · நபர் 3">நீக்க</button></div></div>
+<template id="split-template"><div class="split-row"><div class="name-field"><label data-label="name" for="row-0-name">நபர்</label><input id="row-0-name" data-field="name" type="text" maxlength="120" value="" required autocomplete="off"></div><div><label data-label="amount" for="row-0-amount">ஆர்டர் தொகை</label><input id="row-0-amount" data-field="amount" type="text" inputmode="decimal" maxlength="12" value="0" required autocomplete="off"></div><div><p class="output-label">வரிப் பங்கு</p><output data-output="tax">0.00</output></div><div><p class="output-label">டிப் பங்கு</p><output data-output="tip">0.00</output></div><div><p class="output-label">கட்ட வேண்டியது</p><output data-output="due">0.00</output></div><button type="button" data-remove aria-label="நீக்க · ">நீக்க</button></div></template>
+<div class="actions"><button type="button" id="add-person">நபரைச் சேர்</button><span class="small">அதிகபட்சம் 20 நபர்; ஒவ்வொரு தொகையும் 10,00,00,000 வரை.</span></div>
+<div class="totals split-totals" aria-label="உங்கள் முடிவு">
+<div><p>இடைத்தொகை</p><output class="total-value" id="subtotal-value">76.30</output></div><div><p>வரி</p><output class="total-value" id="tax-value">6.29</output></div><div><p>டிப்</p><output class="total-value" id="tip-value">11.45</output></div><div class="grand"><p>பில் மொத்தம்</p><output class="total-value" id="grand-total-value">94.04</output></div>
+</div>
+<p id="hero-status" role="status" aria-live="polite"></p>
+<div class="actions"><button type="button" class="primary" id="download-csv" disabled>எனது CSV பதிவிறக்கம்</button><button type="button" id="reset-example">எடுத்துக்காட்டை மீட்டமைக்க</button></div>
+</fieldset></form><p class="small">உள்ளீடுகள் இந்தத் தாவலில் மட்டுமே இருக்கும். பதிவேற்றம், கணக்கு, உள்ளீட்டுக் கண்காணிப்பு அல்லது சேமிப்பு இல்லை. மீண்டும் ஏற்றினால் மாற்றங்கள் அழியும்.</p>
+</section>
+<section class="panel" id="worked-example">
+<h2>கணக்கிட்ட எடுத்துக்காட்டு</h2><p>மூன்று பேர் 32.40, 18.90, 25.00 என ஆர்டர் செய்கிறார்கள்; வரி 8.25%, டிப் 15%. அனைத்துத் தொகைகளும் ஒரே நாணயத்தில்.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">நபர்</th><th scope="col">ஆர்டர் தொகை</th><th scope="col">வரிப் பங்கு</th><th scope="col">டிப் பங்கு</th><th scope="col">கட்ட வேண்டியது</th></tr></thead><tbody><tr><td>நபர் 1</td><td>32.40</td><td>2.67</td><td>4.86</td><td>39.93</td></tr><tr><td>நபர் 2</td><td>18.90</td><td>1.56</td><td>2.84</td><td>23.30</td></tr><tr><td>நபர் 3</td><td>25.00</td><td>2.06</td><td>3.75</td><td>30.81</td></tr></tbody><tfoot><tr class="example-total"><td>இடைத்தொகை</td><td>76.30</td><td></td><td></td><td></td></tr><tr class="example-total"><td>வரி</td><td>8.25%</td><td>6.29</td><td></td><td></td></tr><tr class="example-total"><td>டிப்</td><td>15.00%</td><td></td><td>11.45</td><td></td></tr><tr class="example-total"><td>பில் மொத்தம்</td><td></td><td></td><td></td><td>94.04</td></tr></tfoot></table></div>
+<a class="button" href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/results/bill-split-sheet.csv" download>எடுத்துக்காட்டு CSV பதிவிறக்கம்</a>
+<h2>சூத்திரமும் வரம்புகளும்</h2><p>இடைத்தொகை = அனைவரின் ஆர்டர்களின் கூட்டுத்தொகை. வரி = இடைத்தொகை × வரி விகிதம். டிப் = இடைத்தொகை × டிப் விகிதம். ஒவ்வொருவரின் பங்கு = அவரது ஆர்டர் ÷ இடைத்தொகை; மீதமுள்ள காசுகள் பெரிய தசம பகுதி உள்ளவருக்கு முதலில் சேரும், எனவே பங்குகளின் கூட்டுத்தொகை எப்போதும் பில்லுக்குச் சரியாகப் பொருந்தும்.</p>
+<pre class="formula">இடைத்தொகை = 32.40 + 18.90 + 25.00 = 76.30
+வரி = 76.30 × 8.25% = 6.29
+டிப் = 76.30 × 15.00% = 11.45
+நபர் 1: 32.40 + 2.67 + 4.86 = 39.93
+நபர் 2: 18.90 + 1.56 + 2.84 = 23.30
+நபர் 3: 25.00 + 2.06 + 3.75 = 30.81
+பில் மொத்தம் = 94.04</pre>
+<p>ஒரே நாணயத்தைப் பயன்படுத்துங்கள்; வரியையும் டிப்பையும் இடைத்தொகையின் சதவீதமாகக் கொடுங்கள். நாணய மாற்றம் இல்லை, சேவைக் கட்டண விதிகள் இல்லை, எவ்வளவு டிப் தர வேண்டும் என்ற ஆலோசனை இல்லை, பணப் பரிமாற்றமும் இல்லை. திரையில் இரண்டு தசம இடங்கள்; கணக்கீடு முழுக் காசுகளில் நடக்கும்.</p>
+<ul class="small">
+<li>ஆர்டர் தொகை: <bdi dir="ltr">0 ≤ n ≤ 100,000,000</bdi></li>
+<li>வரி % / டிப் %: <bdi dir="ltr">0 ≤ % ≤ 100</bdi></li>
+<li>நபர்: <bdi dir="ltr">1 ≤ n ≤ 20</bdi></li>
+</ul>
+</section>
+<section class="panel optional-apps"><h2>விருப்பச் செயலிகள்</h2><p>இந்த இலவசத் தாளுக்கு செயலி தேவையில்லை. தற்போதைய அம்சங்கள் மற்றும் விலைகளை ஒவ்வொரு App Store பக்கத்திலும் சரிபாருங்கள்.</p><div class="actions"><a class="button" href="https://apps.apple.com/in/app/id6794178671?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">App Store-இல் CalDaily: கால்குலேட்டர்-ஐப் பெறுங்கள்</a></div></section>
+<footer><p>விருப்பச் செயலிகளின் உருவாக்குநரான Lumi Studio வெளியிட்டது. இது சுயாதீனத் தரவரிசை அல்ல.</p><a href="https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json">ஆதாரங்கள்</a> · <a href="https://open.cait518.cc/ios-app-guide/ta-IN/tools/hero-tasks.feed.json">இலவசப் பணி முடிவுகள்</a></footer>
+</main></body></html>

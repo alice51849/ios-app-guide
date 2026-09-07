@@ -55,6 +55,87 @@ def _page_label(path, root):
             continue
     return str(path)
 
+
+def _banner_diagnostic(path, root, source, expected_app_id):
+    """Evidence for why a page's Smart App Banner does not match ``expected``.
+
+    A bare ``1 != 0`` here only says "the expected banner block is not on this
+    page". It cannot separate the live hypotheses -- the block was stripped
+    after gen_app_store_conversion_surfaces installed it, a second App won the
+    dominant-app vote so the installed banner names another id, or the
+    attribution stamper reshaped the meta -- and this has only ever reproduced
+    inside the cloud rebuild, where re-deriving the loop by hand costs a whole
+    run. So the message carries the answer back on the first failing run.
+
+    Like ``_page_label`` this must never raise: it is a failure label, not a
+    check.
+    """
+    import re as _re
+    from collections import Counter as _Counter
+
+    id_re = _re.compile(r"app/id(\d+)")
+    start = "<!-- smart-app-banner:start -->"
+    end = "<!-- smart-app-banner:end -->"
+    free_first = '<meta name="iag-free-resource-first" content="true">'
+    try:
+        blocks = _re.findall(
+            _re.escape(start) + r"(.*?)" + _re.escape(end),
+            source,
+            flags=_re.DOTALL,
+        )
+        metas = _re.findall(
+            r'<meta\b[^>]*\bname="apple-itunes-app"[^>]*\bcontent="([^"]*)"',
+            source,
+        )
+        try:
+            import answer_app_store_links
+
+            unmanaged = answer_app_store_links.unmanaged_app_store_source(
+                source
+            )
+        except Exception as error:  # pragma: no cover - label only
+            unmanaged = ""
+            metas = metas + ["<unmanaged view unavailable: %r>" % (error,)]
+        # Which managed blocks survive separates the two hypotheses: all four
+        # missing means gen_app_store_conversion_surfaces did not hold this
+        # page as an install target when it ran and stripped its surfaces;
+        # only the banner missing means a later pass ate it. The mtime says
+        # which workflow step wrote the page last -- the step log is stamped.
+        managed = {
+            name: source.count(f"<!-- {name}:start -->")
+            for name in (
+                "smart-app-banner",
+                "mobile-store-cta",
+                "app-store-qr",
+                "app-store-share",
+                "app-decision-card",
+            )
+        }
+        try:
+            import datetime as _datetime
+
+            modified = _datetime.datetime.fromtimestamp(
+                Path(path).stat().st_mtime, _datetime.timezone.utc
+            ).isoformat(timespec="seconds")
+        except OSError as error:  # pragma: no cover - label only
+            modified = repr(error)
+        facts = (
+            ("page", _page_label(path, root)),
+            ("expected app-id", expected_app_id),
+            ("banner blocks", [block.strip() for block in blocks]),
+            ("apple-itunes-app content", metas),
+            ("app/id counts", dict(_Counter(id_re.findall(source)))),
+            ("unmanaged app/id counts", dict(_Counter(id_re.findall(unmanaged)))),
+            ("managed blocks", managed),
+            ("free-resource-first", free_first in source),
+            ("noindex", "noindex" in source[:4096]),
+            ("meta-refresh", 'http-equiv="refresh"' in source[:4096]),
+            ("page written at", modified),
+        )
+        return "; ".join(f"{name}={value}" for name, value in facts)
+    except Exception as error:  # pragma: no cover - label only
+        return f"{path} (diagnostic failed: {error!r})"
+
 import aeo_answers
 import aeo_answers_i18n
 import aeo_guide
@@ -3881,22 +3962,35 @@ class GeneratorTests(unittest.TestCase):
         buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
         buyer_intent_targets = set(targets) & buyer_intent_pages
         self.assertGreater(len(buyer_intent_targets), 0)
-        for path in buyer_intent_targets:
+        # Sorted, and the install-surface drift collected rather than raised on
+        # the first page: an unsorted set walk reported a different locale of
+        # the same slug every rebuild, which read like five separate faults.
+        # One run must name the whole affected set.
+        surface_drift = []
+        for path in sorted(buyer_intent_targets):
             source = path.read_text(encoding="utf-8")
             cta = gen_mobile_store_ctas.app_store_cta(
                 source, targets[path]
             )
-            self.assertIsNotNone(cta)
+            if cta is None:
+                surface_drift.append(
+                    "no App Store CTA: "
+                    + _banner_diagnostic(path, pages, source, targets[path])
+                )
+                continue
             # The attribution stamper appends ", affiliate-data=..." inside the
             # banner content, so match the generator's banner up to its app-id.
             banner = gen_smart_app_banners.banner_block(targets[path])
-            self.assertEqual(
-                1, source.count(banner.split('">', 1)[0]), msg=str(path)
-            )
+            if source.count(banner.split('">', 1)[0]) != 1:
+                surface_drift.append(
+                    "no Smart App Banner: "
+                    + _banner_diagnostic(path, pages, source, targets[path])
+                )
+                continue
             self.assertEqual(
                 1,
                 source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
-                msg=str(path),
+                msg=_banner_diagnostic(path, pages, source, targets[path]),
             )
             assert_qr_card(path, source, cta)
             self.assertEqual(
@@ -3909,6 +4003,12 @@ class GeneratorTests(unittest.TestCase):
                     )
                 ),
             )
+        self.assertEqual(
+            [],
+            surface_drift[:8],
+            msg=f"{len(surface_drift)} buyer-intent pages lost their install "
+            "surfaces after gen_app_store_conversion_surfaces installed them",
+        )
 
         self.assertEqual(
             {pages / relative for relative in qr_assets},
@@ -4357,8 +4457,21 @@ class GeneratorTests(unittest.TestCase):
                 )
         self.assertGreater(len(expected_resource_answers), 10)
         self.assertTrue(expected_resource_answers <= set(atom_ids))
+        # The /tools/ reserve is a floor, not a cap: it guarantees the feed
+        # keeps carrying free tools when older answers would otherwise crowd
+        # them out. Hero-task sheets are *required* entries, so once the hero
+        # wave grew past the reserve (8 -> 11 sheets on 2026-09-07) the honest
+        # expectation is the larger of the two, still exact -- derived from the
+        # same manifest gen_feed reads rather than restated as a constant.
+        import hero_tasks
+
+        hero_tools = sum(
+            "/tools/" in url
+            for _, url in hero_tasks.english_feed_entries(pages)
+        )
+        self.assertGreaterEqual(hero_tools, 1)
         self.assertEqual(
-            gen_feed.RESERVED_SUBDIR_LIMITS[0][1],
+            max(gen_feed.RESERVED_SUBDIR_LIMITS[0][1], hero_tools),
             sum("/tools/" in url for url in atom_ids),
         )
         self.assertEqual(

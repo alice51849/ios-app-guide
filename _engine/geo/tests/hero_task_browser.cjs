@@ -168,6 +168,12 @@ async function connect(url) {
       if (result.exceptionDetails) throw new Error(JSON.stringify(result.exceptionDetails));
       return result.result.value;
     };
+    // Every locale/task whose primary labels overflow, not just the first.
+    // These widths come from the runner's own font stack and have never
+    // reproduced on a laptop, so a rebuild that names one page at a time
+    // costs a ~90 minute round per string. Collect them, fail once.
+    const layoutIssues = [];
+    const headlineWidths = [];
     async function navigate(record, width = 360) {
       waitContext = `${record.locale} ${record.path}`;
       await page.send("Emulation.setDeviceMetricsOverride", {width, height: 568, deviceScaleFactor: 1, mobile: false});
@@ -203,7 +209,9 @@ async function connect(url) {
         element=>!(element.scrollWidth<=element.clientWidth+1&&
           element.getBoundingClientRect().height<=parseFloat(getComputedStyle(element).lineHeight)+1)
       ).map(element=>element.tagName.toLowerCase()+":"+element.textContent.trim()+"="+element.scrollWidth+"/"+element.clientWidth)`);
-      assert.deepEqual(clipped, [], record.locale + "/" + record.task_id + " primary labels remain complete on one line");
+      if (clipped.length) layoutIssues.push(record.locale + "/" + record.task_id + "@" + width + " " + JSON.stringify(clipped));
+      const headline = await evaluate(`(()=>{const h=document.querySelector("h1");return {sw:h.scrollWidth,cw:h.clientWidth};})()`);
+      headlineWidths.push({page: record.locale + "/" + record.task_id, width, sw: headline.sw, cw: headline.cw});
       assert.equal(await evaluate(`(()=>{
         const rect=document.getElementById("download-csv").getBoundingClientRect();
         return rect.height>=44&&rect.top>=0&&rect.bottom<=innerHeight;
@@ -230,6 +238,13 @@ async function connect(url) {
       assert.equal(await evaluate("document.documentElement.scrollWidth>innerWidth+1"), false, record.locale);
       assert.equal(await evaluate("Object.keys(localStorage).length+Object.keys(sessionStorage).length"), 0);
     }
+    // The measured headline widths for every locale, worst first. Fonts are
+    // the runner's, not the laptop's, so this table is the only place these
+    // numbers exist -- print it before the assertion so a red run still
+    // hands over the budget for every string that has to be shortened.
+    console.log(JSON.stringify({headline_widths: headlineWidths
+      .sort((a, b) => b.sw / b.cw - a.sw / a.cw).slice(0, 40)}));
+    assert.deepEqual(layoutIssues, [], "primary labels remain complete on one line");
     const english = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "purchase-worktime");
     await navigate(english);
     assert.equal(await evaluate(`(()=>{
@@ -718,6 +733,7 @@ async function connect(url) {
         return document.getElementById("download-csv").disabled;
       })()`), false, locale + " native digit date input");
     }
+    assert.deepEqual(layoutIssues, [], "primary labels remain complete on one line");
     assert.deepEqual(external.filter((url) => !url.startsWith("data:")), []);
     console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 11, external_requests: external.length}));
   } finally {

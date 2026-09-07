@@ -119,7 +119,11 @@ async function connect(url) {
     "--password-store=basic", "--use-mock-keychain",
     "--user-data-dir=" + profile, "--remote-debugging-port=0",
     "--remote-debugging-address=127.0.0.1", "about:blank"
-  ], {stdio: ["ignore", "ignore", "pipe"], env: {...process.env, TMPDIR: workspace}});
+    // Chromium builds its singleton socket under TMPDIR, so pointing TMPDIR at
+    // the deep workspace path reintroduces "Socket path too long" even with a
+    // short profile. Downloads are directed by Browser.setDownloadBehavior,
+    // not by TMPDIR, so the short base is safe here.
+  ], {stdio: ["ignore", "ignore", "pipe"], env: {...process.env, TMPDIR: shortTmp}});
   let stderr = "";
   child.stderr.on("data", (chunk) => { stderr = (stderr + chunk.toString()).slice(-4000); });
   let browser, page;

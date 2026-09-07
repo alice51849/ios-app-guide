@@ -168,6 +168,44 @@ class GuideEvidenceTests(unittest.TestCase):
         })
         self.assertIsNone(wd.telegram_message_id(silent)[0])
 
+    def test_idempotent_slot_skip_does_not_hide_a_delivering_line(self):
+        """The line runs more often than it posts; a run that finds its slot
+        already served is healthy. Judging only the newest run reported a
+        delivering line as dead (2026-09-07, message_id 253 was already out)."""
+        gh = ScriptedGh({
+            "workflows/telegram-daily.yml/runs": {"workflow_runs": [
+                run_at(1, run_id=91), run_at(3, run_id=90),
+            ]},
+            "run view 91": "cloud social slot 2026-09-07T09:00:00+00:00: already completed; skip",
+            "run view 90": "posted ok, message_id: 253 | lang: en-US",
+        })
+        stamp, note = wd.telegram_message_id(gh)
+        self.assertEqual(NOW - 3 * H, stamp)
+        self.assertIn("message_id", note)
+        self.assertIn("1 newer run(s) skipped", note)
+
+    def test_a_line_that_only_ever_skips_is_still_red(self):
+        gh = ScriptedGh({
+            "workflows/telegram-daily.yml/runs": {"workflow_runs": [
+                run_at(1, run_id=93), run_at(2, run_id=92),
+            ]},
+            "run view 93": "already completed; skip",
+            "run view 92": "already completed; skip",
+        })
+        stamp, note = wd.telegram_message_id(gh)
+        self.assertIsNone(stamp)
+        self.assertIn("without ever delivering", note)
+
+    def test_a_silent_run_behind_a_skip_is_still_red(self):
+        gh = ScriptedGh({
+            "workflows/telegram-daily.yml/runs": {"workflow_runs": [
+                run_at(1, run_id=95), run_at(2, run_id=94),
+            ]},
+            "run view 95": "already completed; skip",
+            "run view 94": "posted nothing at all",
+        })
+        self.assertIsNone(wd.telegram_message_id(gh)[0])
+
 
 class ReportingTests(unittest.TestCase):
     def rows(self, red: bool):

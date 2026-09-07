@@ -280,15 +280,36 @@ def guide_deployment(gh: Gh, fetch: Callable[[str], bytes], site: str) -> tuple[
     return stamp, f"live source {source[:8]} is on main"
 
 
+# The line is scheduled more often than it posts: a run whose slot another run
+# already served exits with "already completed; skip", which is the healthy
+# idempotent outcome, not a delivery failure. Judging only the newest run
+# therefore reported a delivering line as dead (2026-09-07: message_id 253 had
+# gone out at 19:00, and the watchdog still went red).
+TELEGRAM_IDEMPOTENT_SKIP = "already completed; skip"
+TELEGRAM_RUNS_SCANNED = 8
+
+
 def telegram_message_id(gh: Gh) -> tuple[float | None, str]:
     runs = [run for run in gh.runs("telegram-daily.yml") if run.get("conclusion") == "success"]
     if not runs:
         return None, "no successful telegram-daily run"
-    latest = runs[0]
-    log = gh.run_log(int(latest["id"]))
-    if "message_id" not in log:
-        return None, f"run {latest['id']} succeeded without a Telegram message_id"
-    return parse_time(latest.get("updated_at") or latest.get("created_at")), f"run {latest['id']} carries message_id"
+    skipped = 0
+    for run in runs[:TELEGRAM_RUNS_SCANNED]:
+        log = gh.run_log(int(run["id"]))
+        if "message_id" in log:
+            stamp = parse_time(run.get("updated_at") or run.get("created_at"))
+            note = f"run {run['id']} carries message_id"
+            if skipped:
+                note += f" ({skipped} newer run(s) skipped an already-served slot)"
+            return stamp, note
+        if TELEGRAM_IDEMPOTENT_SKIP in log:
+            skipped += 1
+            continue
+        return None, f"run {run['id']} succeeded without a Telegram message_id"
+    return None, (
+        f"the last {min(len(runs), TELEGRAM_RUNS_SCANNED)} successful runs all "
+        "skipped an already-served slot without ever delivering one"
+    )
 
 
 def judge_evidence(name: str, stamp: float | None, note: str, now: float) -> dict:

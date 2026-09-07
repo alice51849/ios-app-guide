@@ -461,6 +461,27 @@ def normalize_campaign_token(campaign):
     return token
 
 
+def _cpp_deeplink(url, key):
+    """Route an outreach link to an approved Custom Product Page, if there is one.
+
+    Fail-closed by construction: ``aso/cpp_links.py`` only hands back a ``ppid``
+    for a page Apple has approved *and* whose ledger row has been switched on
+    deliberately, so this is a no-op until both are true.  A missing module or
+    ledger leaves the link exactly as it was.
+    """
+    try:
+        import sys
+
+        aso = os.path.join(os.path.dirname(__file__), "..", "..", "aso")
+        if aso not in sys.path:
+            sys.path.append(aso)
+        import cpp_links
+
+        return cpp_links.decorate(url, key)
+    except Exception:  # noqa: BLE001 - routing must never break a link
+        return url
+
+
 def appstore_url(key, campaign=None):
     """Direct App Store link, with attribution only when a provider token exists."""
     aid = APPSTORE.get(key)
@@ -468,16 +489,16 @@ def appstore_url(key, campaign=None):
         return ""
     url = f"https://apps.apple.com/app/id{aid}"
     if not campaign:
-        return url
+        return _cpp_deeplink(url, key)
     provider = os.environ.get("APP_STORE_PROVIDER_TOKEN", "").strip()
     if not provider:
-        return url
+        return _cpp_deeplink(url, key)
     if not re.fullmatch(r"[0-9]{1,20}", provider):
         raise ValueError(f"Invalid App Store provider token: {provider!r}")
     token = normalize_campaign_token(campaign)
     if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", token):
         raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
-    return f"{url}?pt={provider}&ct={token}&mt=8"
+    return _cpp_deeplink(f"{url}?pt={provider}&ct={token}&mt=8", key)
 
 
 def longform_appstore_url(key, provider_token=None):

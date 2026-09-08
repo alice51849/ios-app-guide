@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,6 +9,7 @@ from unittest.mock import patch
 import answer_facts
 import aeo_answers_i18n
 import aso_evidence_contract
+import portfolio_app_finder
 import queries
 from answer_personas import PERSONAS, persona_meta_description
 from live_app_manifest import canonical_manifest
@@ -30,6 +32,13 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             {key: str(app["app_id"]) for key, app in canonical.items()},
             {key: app["track_id"] for key, app in roster.items()},
         )
+
+    def test_finder_schema_uses_the_canonical_live_roster_count(self):
+        schema = json.loads(portfolio_app_finder.dataset_schema())
+        count = len(canonical_manifest()["apps"])
+        self.assertEqual(count, schema["properties"]["record_count"]["const"])
+        self.assertEqual(count, schema["properties"]["apps"]["minItems"])
+        self.assertEqual(count, schema["properties"]["apps"]["maxItems"])
 
     def test_shared_persona_query_stays_with_its_free_app(self):
         query = PERSONAS["lumimission"][0]["query"]

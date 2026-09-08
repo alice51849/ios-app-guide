@@ -917,6 +917,7 @@ def legacy_apps_json(
 
 
 def dataset_schema() -> str:
+    live_app_count = len(contract.live_roster())
     app_required = [
         "key",
         "app_store_id",
@@ -998,11 +999,11 @@ def dataset_schema() -> str:
                 },
                 "additionalProperties": False,
             },
-            "record_count": {"const": contract.LIVE_APP_COUNT},
+            "record_count": {"const": live_app_count},
             "apps": {
                 "type": "array",
-                "minItems": contract.LIVE_APP_COUNT,
-                "maxItems": contract.LIVE_APP_COUNT,
+                "minItems": live_app_count,
+                "maxItems": live_app_count,
                 "uniqueItems": True,
                 "items": {
                     "type": "object",

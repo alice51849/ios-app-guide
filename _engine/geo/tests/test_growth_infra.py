@@ -19423,7 +19423,10 @@ class GeneratorTests(unittest.TestCase):
                     icon_sizes[size] = image.size
                     icon_alpha[size] = image.getchannel("A").getextrema()
 
-        self.assertEqual(46, data["record_count"])
+        self.assertEqual(
+            len(live_app_manifest.canonical_manifest()["apps"]),
+            data["record_count"],
+        )
         self.assertEqual(english, legacy_finder)
         self.assertEqual(
             {
@@ -22000,6 +22003,9 @@ class GeneratorTests(unittest.TestCase):
             "wordmate",
             "dailymate",
             "wifiaid",
+            # Paid download, no subscription (reviewed first-party registry,
+            # checked 2026-09-08).
+            "zipbox",
         }
         free_with_unlock = {
             "sononote",

@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 1,
-  "roster_digest": "96081fb38736efe3ad78522ab8cad630fabde3e170d33449955360b414962ff4",
+  "revision": 2,
+  "roster_digest": "40d77eea74d7ce9f9bf9a8b61196552e25cd1d43ea9fa123b9212af17a9d38b6",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -187,6 +187,10 @@
     "wordmatelite": {
       "app_id": "6797601720",
       "name": "Wordmate Lite"
+    },
+    "zipbox": {
+      "app_id": "6806776579",
+      "name": "Zipbox"
     }
   }
 }

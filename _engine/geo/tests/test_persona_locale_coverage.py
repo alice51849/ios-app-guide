@@ -9,57 +9,11 @@ import answer_facts
 import aeo_answers_i18n
 import queries
 from answer_personas import PERSONAS, persona_meta_description
+from live_app_manifest import canonical_manifest
 from official_locales import OFFICIAL_LOCALES
 
 
-CURRENT_LIVE_APPS = {
-    "aibriefpack",
-    "aim990",
-    "aim990plus",
-    "battai",
-    "caldaily",
-    "cvdesk",
-    "cyca",
-    "dailymate",
-    "dailymatelite",
-    "gmoney",
-    "gmoneylite",
-    "hourstag",
-    "hourstaglite",
-    "lockhour",
-    "lumibopomofo",
-    "lumibopomofopro",
-    "lumiletters",
-    "lumiletterspro",
-    "lumimath",
-    "lumimathpro",
-    "lumimission",
-    "lumimissionpro",
-    "lumiweather",
-    "maskmyfile",
-    "mochi",
-    "mochidonestamp",
-    "photocream",
-    "picclear",
-    "scanto",
-    "savetag",
-    "sereno",
-    "shotinbox",
-    "snapport",
-    "snapportlite",
-    "sononote",
-    "tripbee",
-    "tripbeelite",
-    "tripplanet",
-    "unblurry",
-    "notesstudio100",
-    "onepageppt",
-    "moneytag",
-    "wifiaid",
-    "wifiaidlite",
-    "wordmate",
-    "wordmatelite",
-}
+CURRENT_LIVE_APPS = set(canonical_manifest()["apps"])
 
 
 class PersonaLocaleCoverageTests(unittest.TestCase):

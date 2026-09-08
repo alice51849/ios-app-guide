@@ -3437,6 +3437,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     ],
 }
 
+# Zipbox has entered the canonical live roster; its reviewed pre-publication
+# persona now participates in every live-roster consumer.
+PERSONAS["zipbox"] = PENDING_PERSONAS.pop("zipbox")
+
 
 def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:
     suffix = f" — {name}."

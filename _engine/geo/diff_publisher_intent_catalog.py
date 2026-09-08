@@ -4,7 +4,8 @@
 The delivery matrix matches catalog rows on identity -- `record_id`
 (`<locale>:<app_key>:<slug>`), `app_store_id`, `canonical_app_store_url`,
 `canonical_guide_url`, `verified_live`, `locale_count`, `record_count`.  If a
-copy edit moves any of those, all 46 apps fall out of the mcp_catalog channel.
+copy edit moves any of those, every reviewed app falls out of the mcp_catalog
+channel.
 
 This tool diffs two catalog JSON files and fails unless
 
@@ -24,6 +25,9 @@ import json
 from pathlib import Path
 import sys
 from typing import Any
+
+from live_app_manifest import canonical_manifest
+from official_locales import OFFICIAL_LOCALES
 
 # Fields the delivery matrix and the App Store links depend on.  None of these
 # may move when only the wording of a page changed.
@@ -68,8 +72,9 @@ HEADER_INVARIANTS: tuple[str, ...] = (
     "locales",
 )
 
-EXPECTED_RECORDS = 2300
-EXPECTED_LOCALES = 50
+EXPECTED_APPS = len(canonical_manifest()["apps"])
+EXPECTED_LOCALES = len(OFFICIAL_LOCALES)
+EXPECTED_RECORDS = EXPECTED_APPS * EXPECTED_LOCALES
 
 
 def _records(doc: dict[str, Any]) -> dict[str, dict[str, Any]]:

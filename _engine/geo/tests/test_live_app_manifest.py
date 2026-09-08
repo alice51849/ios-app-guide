@@ -34,8 +34,10 @@ class LiveManifestTests(unittest.TestCase):
         )
         self.assertEqual(manifest.roster_digest(self.apps), result["roster_digest"])
 
-    def test_legacy_45_array_and_v1_inventory_are_rejected(self):
-        old_apps = dict(list(self.apps.items())[:45])
+    def test_below_current_floor_and_v1_inventory_are_rejected(self):
+        old_apps = dict(
+            list(self.apps.items())[: manifest.MIN_APP_COUNT - 1]
+        )
         for old in (
             [{"appStoreUrl": f"https://apps.apple.com/app/id{app['app_id']}"} for app in old_apps.values()],
             {"version": 1, "live_state_sha256": "a" * 64, "apps": old_apps},
@@ -48,7 +50,10 @@ class LiveManifestTests(unittest.TestCase):
         forged["observations"] = {
             key: self.document["observations"][key] for key in old_apps
         }
-        with self.assertRaisesRegex(manifest.ManifestError, "46.*45"):
+        with self.assertRaisesRegex(
+            manifest.ManifestError,
+            f"{manifest.MIN_APP_COUNT}.*{len(old_apps)}",
+        ):
             manifest.validate_manifest(forged, now=NOW)
 
     def test_each_missing_extra_or_replaced_app_is_rejected_after_resealing(self):
@@ -69,8 +74,17 @@ class LiveManifestTests(unittest.TestCase):
                         self.document["observations"][key]
                     )
                     extra.append(unexpected)
-                changed["roster_digest"] = manifest.roster_digest(changed["apps"])
                 with self.subTest(app=key, fault=fault):
+                    if len(changed["apps"]) < manifest.MIN_APP_COUNT:
+                        with self.assertRaisesRegex(
+                            manifest.ManifestError,
+                            f"at least {manifest.MIN_APP_COUNT}",
+                        ):
+                            manifest.validate_manifest(changed, now=NOW)
+                        continue
+                    changed["roster_digest"] = manifest.roster_digest(
+                        changed["apps"]
+                    )
                     with self.assertRaisesRegex(manifest.ManifestError, "roster drift") as raised:
                         manifest.validate_manifest(changed, now=NOW)
                     self.assertIn(f"missing={missing}, extra={extra}", str(raised.exception))

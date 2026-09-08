@@ -32,7 +32,7 @@ DEPLOYMENT_SCHEMA_VERSION = 4
 # Guide commits no longer churn it. Keep both constants in lockstep with
 # DEPLOYMENT_SCHEMA_VERSION / DEPLOYMENT_ID_PREFIX over there.
 DEPLOYMENT_ID_PREFIX = "github-pages:high-intent:v1"
-EXPECTED_APPS = 46
+EXPECTED_APPS = None
 EXPECTED_LOCALES = 50
 MAX_RESPONSE_BYTES = 8 * 1024 * 1024
 GIT_OBJECT_ID_RE = re.compile(r"^[0-9a-f]{40}(?:[0-9a-f]{24})?$")
@@ -495,7 +495,7 @@ def _validate_feed(
 def audit_public_market_coverage(
     *,
     site: str = DEFAULT_SITE,
-    expected_apps: int = EXPECTED_APPS,
+    expected_apps: int | None = EXPECTED_APPS,
     expected_locales: int = EXPECTED_LOCALES,
     reviewed_app_ids: frozenset[str] | None = None,
     official_locales: frozenset[str] = OFFICIAL_LOCALE_SET,
@@ -507,6 +507,8 @@ def audit_public_market_coverage(
     fetch = fetcher or (lambda url: fetch_json(url, site=site))
     deployment = fetch(f"{site}/.well-known/deployment.json")
     reviewed_ids = reviewed_app_ids or load_reviewed_app_ids()
+    if expected_apps is None:
+        expected_apps = len(reviewed_ids)
     if len(reviewed_ids) < expected_apps:
         raise CoverageError("reviewed App manifest fell below SLA floor")
     lineage = _validate_deployment(

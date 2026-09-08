@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for the deployed 46-App x 50-locale public coverage gate."""
+"""Tests for the reviewed-App x 50-locale public coverage gate."""
 
 from __future__ import annotations
 
@@ -338,7 +338,6 @@ class PublicMarketCoverageTests(unittest.TestCase):
             deployment_manifest(app_count=3)
         )
         report = coverage.audit_public_market_coverage(
-            expected_apps=2,
             expected_locales=2,
             reviewed_app_ids=frozenset({"1234567", "7654321", app_id}),
             official_locales=frozenset({"en-US", "zh-Hant"}),
@@ -346,6 +345,7 @@ class PublicMarketCoverageTests(unittest.TestCase):
             fetcher=lambda url: copy.deepcopy(documents[url]),
         )
         self.assertEqual(3, report["apps"])
+        self.assertEqual(3, report["minimum_apps"])
         self.assertEqual(6, report["native_public_cells"])
 
     def test_locale_count_cannot_hide_wrong_locale_identity(self):

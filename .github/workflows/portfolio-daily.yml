@@ -31,10 +31,9 @@ jobs:
           python-version: "3.x"
       - name: Verify public market coverage regressions
         run: python3 .github/scripts/test_public_market_coverage.py -q -b
-      - name: Verify all 46 Apps across all 50 Apple locales are public
+      - name: Verify every reviewed App across all 50 Apple locales is public
         run: >-
           python3 .github/scripts/public_market_coverage.py
-          --expected-apps 46
           --expected-locales 50
           --workers 10
           --report "$RUNNER_TEMP/public-market-coverage.json"

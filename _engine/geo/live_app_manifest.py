@@ -21,7 +21,7 @@ SCHEMA = "lumi.live-app-manifest/v2"
 VERSION = 2
 ROSTER_SCHEMA = "lumi.live-app-roster/v1"
 MAX_TTL_SECONDS = 24 * 60 * 60
-MIN_APP_COUNT = 46
+MIN_APP_COUNT = 47
 DEFAULT_MANIFEST = Path(__file__).with_suffix(".json")
 DEFAULT_ROSTER = DEFAULT_MANIFEST
 LOOKUP_COUNTRIES = ("us", "tw", "jp", "gb")
@@ -73,7 +73,7 @@ def _apps(value: object) -> dict[str, dict[str, str]]:
     if not isinstance(value, dict) or len(value) < MIN_APP_COUNT:
         raise ManifestError(
             f"Live manifest must retain at least {MIN_APP_COUNT} apps; "
-            "legacy 45-app baselines are not accepted"
+            "legacy 46-app baselines are not accepted"
         )
     normalized = {}
     ids = set()

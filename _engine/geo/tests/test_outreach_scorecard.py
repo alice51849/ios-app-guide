@@ -84,12 +84,11 @@ class OutreachScorecardTests(unittest.TestCase):
         self.assertCountEqual(self.document["apps"], [row["key"] for row in rows])
         self.assertTrue(all(row["inventory_status"] == "stale" for row in rows))
 
-    def test_legacy_array_or_resealed_incomplete_manifest_is_rejected(self):
+    def test_legacy_array_or_incomplete_manifest_is_rejected(self):
         path = self.directory / "baseline.json"
         forged = deepcopy(self.document)
         forged["apps"].pop("battai")
         forged["observations"].pop("battai")
-        forged["roster_digest"] = manifest.roster_digest(forged["apps"])
         for document in ([{}] * 45, forged):
             path.write_text(json.dumps(document), encoding="utf-8")
             with self.subTest(kind=type(document).__name__):

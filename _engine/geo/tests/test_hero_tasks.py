@@ -1670,6 +1670,34 @@ class HeroTaskTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "share one canonical"):
             hero.load_registry(path)
 
+    def test_published_titles_and_assets_match_current_generators(self):
+        pages = hero.DEFAULT_PAGES
+        manifest = json.loads((pages / hero.MANIFEST).read_text(encoding="utf-8"))
+        tasks = {task["id"]: task for task in self.tasks}
+        checked_assets = set()
+        self.assertEqual(550, len(manifest["records"]))
+        for record in manifest["records"]:
+            with self.subTest(page=record["path"]):
+                task = tasks[record["task_id"]]
+                own = hero.task_copy(self.copy, self.task_copies, task, record["locale"])
+                source = (pages / record["path"]).read_text(encoding="utf-8")
+                title = own["title"]
+                if task["adapter"] == "purchase-worktime-v1":
+                    title = f"{own['item']} · {own['hours']}"
+                elif task["adapter"] == "maintenance-next-due-v1":
+                    title = f"{own['item']} · {own['next_due']}"
+                heading = re.search(r"<h1>(.*?)</h1>", source)
+                self.assertIsNotNone(heading)
+                self.assertEqual(html.escape(title), heading.group(1))
+                urls = re.findall(r'\b(?:href|src)="([^"]+)"', source)
+                for asset in hero.ADAPTER_ASSETS[task["adapter"]].values():
+                    content = asset.read_bytes()
+                    relative = f"assets/hero-tasks/{hero.digest(content)[:16]}-{asset.name}"
+                    self.assertTrue(any(url.endswith("/" + relative) for url in urls), relative)
+                    if relative not in checked_assets:
+                        self.assertEqual(content, (pages / relative).read_bytes(), relative)
+                        checked_assets.add(relative)
+
     def test_idempotency_semantic_dates_and_preserved_original_content(self):
         hero.build(self.pages, **self.options)
         original = {str(path.relative_to(self.pages)): (path.read_bytes(), path.stat().st_mtime_ns)

@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Comparez plusieurs achats avec votre revenu horaire net, puis téléchargez votre CSV. Total = quantité × prix unitaire TTC. Heures = total ÷ revenu horaire net. Jours = heures ÷ durée d’une journée de travail. Saisissez des prix taxes comprises. Sans conversion de devises, calcul de paie, prévision d’épargne ni conseil d’achat. Affichage à deux décimales ; totaux calculés sans arrondi intermédiaire.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/purchase-worktime-sheet.html",
       "language": "fr-FR",
       "title": "Comparer ses achats en heures de travail",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Indiquez la dernière fois que vous avez fait chaque tâche (maison, voiture, santé) et sa fréquence : vous obtenez la prochaine échéance, les jours restants et les retards dans un tableau à télécharger. Prochaine échéance = dernière fois + intervalle. En mois, le jour reste identique ; s’il n’existe pas, on prend le dernier jour du mois (années bissextiles comprises). Jours restants = échéance − aujourd’hui. En retard sous 0 ; bientôt due de 0 à 7. Intervalles de 1 à 3650 jours, semaines ou mois. Dates entre 1900-01-01 et 2999-12-31. Jusqu’à 30 tâches. Aucun rappel, notification ou synchronisation d’agenda ; rien ne quitte cette page.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/maintenance-next-due-sheet.html",
       "language": "fr-FR",
       "title": "Tableau d’échéances d’entretien",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Listez ce qu’un projet freelance ou une petite mission a rapporté et coûté, puis téléchargez une feuille avec la marge brute, le taux de marge et le net par heure. Bénéfice = total des recettes − total des dépenses. Taux de marge = bénéfice ÷ total des recettes. Net par heure = bénéfice ÷ heures passées. Les montants sont additionnés en centimes entiers : les totaux ne dérivent pas. Montants de 0 à 100 000 000 avec au plus deux décimales, jusqu’à 20 lignes de recettes et 20 de dépenses, heures de 0,25 à 2000 par quart d’heure. Même devise, pas de conversion, aucun conseil fiscal ou comptable.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/project-profit-sheet.html",
       "language": "fr-FR",
       "title": "Fiche de bénéfice du projet",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Saisissez la capacité maximale indiquée dans les réglages de l’iPhone et, si vous l’avez, le nombre de cycles, puis téléchargez une feuille avec la plage d’usure mensuelle et les mois restants avant 80 % – toujours une plage, jamais une note. Usure par mois = (100 − capacité) ÷ âge en mois, affichée avec une bande de ±25 %. Mois avant 80 % = (capacité − 80) ÷ usure ; borne basse avec le taux élevé, borne haute avec le taux faible. Cycles par mois = cycles ÷ âge. Capacité de 60 à 100 en pourcentage entier, cycles de 0 à 3000, mois d’achat entre 2007 et 2099 pour un âge de 1 à 240 mois, jusqu’à 10 appareils. Mois au format AAAA-MM. Les saisies restent dans cet onglet ; rien n’est mesuré ni lu sur votre téléphone.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/battery-wear-range-sheet.html",
       "language": "fr-FR",
       "title": "Plage d'usure de batterie",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Listez ce que votre foyer fait en ligne en même temps et le nombre d'appareils, puis téléchargez un tableau avec les Mbps nécessaires et la marge restante de votre offre. Total d'une ligne = appareils × valeur par appareil. Requis = somme des lignes. Marge = offre − requis ; sous 20 % de l'offre c'est juste, sous zéro c'est insuffisant. Les valeurs s'additionnent en dixièmes de Mbps entiers, les totaux ne dérivent jamais. Débits de l'offre de 0,5 à 10000 Mbps avec au plus une décimale, 1 à 50 appareils par ligne, jusqu'à 20 lignes. La couverture Wi‑Fi, la latence et le débit réellement fourni ne relèvent pas de ce tableau.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/bandwidth-need-sheet.html",
       "language": "fr-FR",
       "title": "Besoin en débit à la maison",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Indiquez le budget total du voyage, les jours, les voyageurs et les dépenses déjà connues, puis téléchargez un tableau avec ce que chacun peut dépenser par jour et la répartition entre repas, transports, billets et achats. Reste à dépenser = budget total − dépenses fixes. Par jour = reste à dépenser ÷ jours. Par personne et par jour = par jour ÷ voyageurs. Chaque catégorie = par jour × sa part. Les montants s'additionnent en centimes entiers ; les valeurs journalières ne sont arrondies qu'à l'affichage. Montants de 0 à 100 000 000 avec au plus deux décimales, 1 à 120 jours, 1 à 20 voyageurs, jusqu'à 15 dépenses fixes, quatre parts dont la somme fait exactement 100. Même devise partout, pas de taux de change, pas de conseil de prix ni de réservation.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/trip-budget-sheet.html",
       "language": "fr-FR",
       "title": "Budget de voyage par jour",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Listez les lieux d'une journée avec la durée sur place et le temps de trajet vers le suivant, puis téléchargez un tableau avec les heures d'arrivée et de départ et la réponse : tout tient-il entre votre début et votre fin ? Arrivée = départ précédent + trajet. Départ = arrivée + sur place. Total = tous les temps sur place + tous les trajets. Disponible = fin − début ; une fin antérieure au début compte pour le lendemain. Dépassement = total − disponible ; au-dessus de zéro, c'est trop long. Simple arithmétique en minutes, sans fuseaux horaires. Heures au format 24 h HH:MM, temps sur place de 5 à 720 minutes, trajets de 0 à 600 minutes, jusqu'à 25 lieux. Horaires d'ouverture, trafic réel, cartes, itinéraires et réservations ne relèvent pas de ce tableau.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/day-itinerary-sheet.html",
       "language": "fr-FR",
       "title": "Feuille horaire d'une journée",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Transformez des notes de réunion en vrac en plan d'une page : un titre, trois à douze points clés, une prochaine action et un indicateur facultatif, puis téléchargez le tout en tableau à coller dans une diapositive ou un résumé. Le tableau garde vos mots tels quels : le titre, puis les points dans l'ordre saisi, puis la prochaine action, puis l'indicateur. Il compte les points et retire les espaces autour ; rien n'est réécrit, résumé ou noté. Titre jusqu'à 80 caractères, 3 à 12 points de 160 caractères maximum chacun, prochaine action jusqu'à 160 caractères, indicateur jusqu'à 60 caractères. Chaque ligne doit tenir sur une seule ligne. Le tableau ne lit ni fichiers, ni enregistrements, ni agendas.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/one-page-outline-sheet.html",
       "language": "fr-FR",
       "title": "Réunion en plan d'une page",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Indiquez ce que chaque personne a commandé, ajoutez la taxe et le pourboire en pourcentage, et vous obtenez la somme due par chacun. Taxe et pourboire sont répartis au centime près, et la feuille se télécharge en CSV. Sous-total = la somme de tout ce qui a été commandé. Taxe = sous-total × taux de taxe. Pourboire = sous-total × taux de pourboire. La part de chacun vaut sa commande ÷ sous-total ; les centimes restants vont d'abord aux plus grandes décimales, donc la somme des parts redonne exactement l'addition. Une seule devise, taxe et pourboire exprimés en pourcentage du sous-total. Aucune conversion de devise, aucune règle de service compris, aucun conseil sur le montant du pourboire et aucun paiement. L'affichage arrondit à deux décimales ; le calcul se fait en centimes entiers.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/bill-split-sheet.html",
       "language": "fr-FR",
       "title": "Partager l'addition",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Listez ce que vous avez enregistré et le temps que ça prend, indiquez les minutes que vous lisez vraiment chaque jour, et vous voyez le jour où chaque article sera terminé. Le plan se télécharge en CSV. Cumul = les minutes de cet article plus tout ce qui précède. Jour = cumul ÷ minutes par jour, arrondi au supérieur. Terminé le = date de départ + jour − 1. Minutes restantes = jours × minutes par jour − minutes au total. L'ordre saisi est l'ordre de lecture : rien n'est réordonné, sauté ni fusionné. Une séance par jour qui consomme exactement votre budget, sans jour de pause, sans ouvrir ni récupérer le moindre lien et sans estimer votre vitesse de lecture.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/reading-backlog-sheet.html",
       "language": "fr-FR",
       "title": "Pile « à lire plus tard »",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Indiquez la date à laquelle vous avez écrit chaque note et obtenez les cinq dates de révision qui suivent, avec les jours restants et celles qui sont déjà passées. Le calendrier se télécharge en CSV. Date de révision = date d'écriture + 1, 3, 7, 16 et 35 jours. Jours restants = date de révision − aujourd'hui ; un nombre négatif désigne une date déjà passée. Prochaine révision = la première date qui tombe aujourd'hui ou plus tard. Une échelle d'intervalles fixe, pas un modèle de mémoire : rien ici ne prédit ce dont vous vous souviendrez, ne note une fiche ni ne corrige une réponse. Uniquement des dates, sans heures, sans fuseaux, sans rappels ni notifications.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fr-FR/tools/review-schedule-sheet.html",
       "language": "fr-FR",
       "title": "Calendrier de révision",

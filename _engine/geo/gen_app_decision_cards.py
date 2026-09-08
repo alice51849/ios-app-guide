@@ -94,7 +94,8 @@ HREF_RE = re.compile(
     flags=re.IGNORECASE | re.DOTALL,
 )
 ANSWER_HERO_RE = re.compile(
-    r'<section\b(?=[^>]*\bclass\s*=\s*["\'][^"\']*\bhero\b[^"\']*["\'])'
+    # "hero-resource" belongs to a different generator's replaceable block.
+    r'<section\b(?=[^>]*\bclass\s*=\s*["\'](?:[^"\']*\s)?hero(?:\s[^"\']*)?["\'])'
     r"[^>]*>.*?</section>",
     flags=re.IGNORECASE | re.DOTALL,
 )

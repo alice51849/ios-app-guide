@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Usporedite kupnje prema neto prihodu po satu i preuzmite vlastiti CSV. Ukupno = količina × konačna cijena. Sati = ukupni iznos ÷ neto prihod po satu. Dani = sati ÷ sati po radnom danu. Unesite cijene s porezom. Bez konverzije valuta, obračuna plaće, predviđanja uštede ili savjeta za kupnju. Prikaz se zaokružuje na dvije decimale; zbrojevi koriste nezaokružene vrijednosti.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/purchase-worktime-sheet.html",
       "language": "hr",
       "title": "Usporedite kupnje u radnim satima",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Zapišite kada ste zadnji put obavili svaki zadatak za dom, auto ili zdravlje i koliko se često ponavlja: dobivate sljedeći rok, preostale dane i ono što kasni u tablici za preuzimanje. Sljedeći rok = zadnji put + razmak. Kod mjeseci zadržava se isti dan; ako ne postoji, uzima se zadnji dan mjeseca (uključujući prijestupne godine). Preostalo dana = rok − danas. Ispod 0 kasni; od 0 do 7 uskoro. Razmaci od 1 do 3650 dana, tjedana ili mjeseci. Datumi između 1900-01-01 i 2999-12-31. Do 30 zadataka. Bez podsjetnika, obavijesti ili sinkronizacije s kalendarom; ništa ne napušta ovu stranicu.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/maintenance-next-due-sheet.html",
       "language": "hr",
       "title": "Tablica rokova održavanja",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Popiši što je freelance projekt ili mali posao donio i koliko je koštao, pa preuzmi tablicu s bruto dobiti, maržom i netom po satu. Dobit = ukupni prihodi − ukupni rashodi. Marža = dobit ÷ ukupni prihodi. Neto po satu = dobit ÷ utrošeni sati. Iznosi se zbrajaju u cijelim centima, pa zbrojevi ne odstupaju. Iznosi od 0 do 100.000.000 s najviše dvije decimale, do 20 redaka prihoda i 20 rashoda, sati od 0,25 do 2000 u koracima od četvrt sata. Ista valuta, bez konverzije, bez poreznih ili računovodstvenih savjeta.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/project-profit-sheet.html",
       "language": "hr",
       "title": "Tablica dobiti projekta",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Upiši maksimalni kapacitet iz postavki iPhonea i, ako ga imaš, broj ciklusa, pa preuzmi tablicu s rasponom istrošenosti po mjesecu i mjesecima do 80 % – uvijek kao raspon, nikad kao ocjenu. Istrošenost mjesečno = (100 − kapacitet) ÷ starost u mjesecima, prikazana s pojasom ±25 %. Mjeseci do 80 % = (kapacitet − 80) ÷ istrošenost; donja granica iz visoke stope, gornja iz niske. Ciklusa mjesečno = ciklusi ÷ starost. Kapacitet od 60 do 100 kao cijeli postotak, ciklusi od 0 do 3000, mjesec kupnje između 2007. i 2099. uz starost od 1 do 240 mjeseci, do 10 uređaja. Mjeseci u obliku GGGG-MM. Unosi ostaju u ovoj kartici; ništa se ne mjeri niti čita s telefona.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/battery-wear-range-sheet.html",
       "language": "hr",
       "title": "Raspon trošenja baterije",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Popiši što ukućani rade na internetu istodobno i na koliko uređaja, pa preuzmi tablicu s potrebnim Mbps i rezervom koja ti ostaje u paketu. Ukupno po retku = uređaji × vrijednost po uređaju. Potreba = zbroj redaka. Rezerva = paket − potreba; ispod 20 % paketa je tijesno, ispod nule nedovoljno. Zbraja se u cijelim desetinkama Mbps, pa zbrojevi nikad ne odstupaju. Brzine paketa od 0,5 do 10000 Mbps s najviše jednom decimalom, 1 do 50 uređaja po retku, najviše 20 redaka. Pokrivenost Wi‑Fi-jem, latencija i stvarno isporučena brzina nisu dio tablice.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/bandwidth-need-sheet.html",
       "language": "hr",
       "title": "Brzina interneta za kuću",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Unesi ukupni proračun putovanja, dane, putnike i troškove koje već znaš, pa preuzmi tablicu s time koliko svatko može potrošiti dnevno i kako se to dijeli na hranu, prijevoz, ulaznice i kupnju. Za potrošiti = ukupni proračun − fiksni troškovi. Po danu = za potrošiti ÷ dani. Po osobi po danu = po danu ÷ putnici. Svaka kategorija = po danu × njezin udio. Iznosi se zbrajaju u cijelim centima; dnevne brojke zaokružuju se samo pri prikazu. Iznosi od 0 do 100.000.000 s najviše dvije decimale, 1 do 120 dana, 1 do 20 putnika, najviše 15 fiksnih troškova, četiri udjela koja daju točno 100. Posvuda ista valuta, bez tečajeva, bez savjeta o cijenama ili rezervacijama.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/trip-budget-sheet.html",
       "language": "hr",
       "title": "Putni proračun po danu",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Popiši mjesta jednog dana s time koliko ostaješ i koliko traje put do sljedećeg, pa preuzmi tablicu s vremenima dolaska i odlaska koja pokazuje stane li sve između tvog početka i kraja. Dolazak = prethodni odlazak + put. Odlazak = dolazak + boravak. Ukupno = svi boravci + svi putovi. Raspoloživo = kraj − početak; kraj raniji od početka broji se kao sljedeći dan. Prekoračenje = ukupno − raspoloživo; sve iznad nule prekoračuje. Čista računica u minutama, bez vremenskih zona. Vremena u 24-satnom formatu HH:MM, boravci od 5 do 720 minuta, putovi od 0 do 600 minuta, najviše 25 mjesta. Radno vrijeme, stvarni promet, karte, rute i rezervacije nisu dio tablice.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/day-itinerary-sheet.html",
       "language": "hr",
       "title": "Vremenski plan jednog dana",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Pretvori neuredne bilješke sa sastanka u sažetak na jednoj stranici: jedan naslov, tri do dvanaest ključnih točaka, jedan sljedeći korak i neobvezan pokazatelj, pa preuzmi tablicu koju možeš zalijepiti u slajd ili sažetak. Tablica zadržava tvoje riječi kakve jesu: naslov, zatim točke redoslijedom kojim si ih upisao, pa sljedeći korak, pa pokazatelj. Broji točke i uklanja razmake na rubovima; ništa se ne prepisuje, ne sažima i ne ocjenjuje. Naslov do 80 znakova, 3 do 12 točaka od najviše 160 znakova svaka, sljedeći korak do 160 znakova, pokazatelj do 60 znakova. Svaki redak mora biti jednoredni tekst. Tablica ne čita datoteke, snimke ni kalendare.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/one-page-outline-sheet.html",
       "language": "hr",
       "title": "Sastanak na jednoj stranici",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Upiši koliko je tko naručio, dodaj postotke poreza i napojnice i vidjet ćeš koliko točno tko plaća. Porez i napojnica dijele se do lipe prema narudžbi, a tablicu preuzimaš kao CSV. Međuzbroj = sve narudžbe zbrojene. Porez = međuzbroj × stopa poreza. Napojnica = međuzbroj × stopa napojnice. Udio svake osobe je njezina narudžba ÷ međuzbroj; preostale lipe idu prvo najvećim decimalnim ostacima, pa se udjeli uvijek zbroje točno u iznos računa. Koristi jednu valutu, a porez i napojnicu upiši kao postotak međuzbroja. Bez pretvaranja valuta, bez pravila o naplati usluge, bez savjeta koliko ostaviti napojnice i bez plaćanja. Na zaslonu se zaokružuje na dvije decimale; sama podjela računa se u cijelim lipama.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/bill-split-sheet.html",
       "language": "hr",
       "title": "Podjela računa",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Popiši što si spremio i koliko svaka stvar traje, upiši koliko minuta dnevno stvarno čitaš i vidjet ćeš kojeg dana svaku stvar završiš. Plan preuzimaš kao CSV. Zbroj do sada = minute ove stavke plus sve iznad. Dan = zbroj do sada ÷ minute dnevno, zaokruženo naviše. Gotovo = početni datum + dan − 1. Slobodne minute = dani × minute dnevno − ukupno minuta. Redoslijed kojim upisuješ je redoslijed čitanja: ništa se ne preslaguje, preskače ni spaja. Jedno čitanje dnevno koje potroši točno tvoje vrijeme, bez slobodnih dana, bez otvaranja ili preuzimanja poveznica i bez procjene tvoje brzine čitanja.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/reading-backlog-sheet.html",
       "language": "hr",
       "title": "Plan «pročitaj poslije»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Upiši kad si koju bilješku napisao i dobit ćeš pet sljedećih datuma ponavljanja, koliko dana ostaje i koji su već prošli. Plan preuzimaš kao CSV. Datum ponavljanja = datum pisanja + 1, 3, 7, 16 i 35 dana. Dana do roka = datum ponavljanja − danas; negativan broj znači datum koji je već prošao. Sljedeće ponavljanje = prvi datum koji pada danas ili kasnije. Ovo su stalni razmaci, a ne model pamćenja: ništa ovdje ne predviđa što ćeš zapamtiti, ne ocjenjuje bilješku i ne ispravlja odgovore. Samo datumi, bez sati, vremenskih zona, podsjetnika i obavijesti.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hr/tools/review-schedule-sheet.html",
       "language": "hr",
       "title": "Plan ponavljanja",

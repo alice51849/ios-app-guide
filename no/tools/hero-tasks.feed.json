@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Sammenlign kjøp med nettoinntekten din per time, og last ned din egen CSV. Totalt = antall × stykkpris. Arbeidstimer = totalbeløp ÷ nettoinntekt per time. Arbeidsdager = arbeidstimer ÷ timer per arbeidsdag. Bruk priser inkludert avgifter. Ingen valutaveksling, lønnsberegning, spareprognose eller kjøpsråd. Visningen avrundes til to desimaler; totaler bruker uavrundede verdier.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/purchase-worktime-sheet.html",
       "language": "no",
       "title": "Sammenlign kjøp i arbeidstimer",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Skriv inn når du sist gjorde hver oppgave for hjem, bil eller helse og hvor ofte den gjentas: du får neste frist, dager igjen og det som er forfalt i et ark du kan laste ned. Neste frist = sist utført + intervall. Ved måneder beholdes samme dag; finnes den ikke, brukes månedens siste dag (også i skuddår). Dager igjen = frist − i dag. Forfalt under 0; snart fra 0 til 7. Intervaller fra 1 til 3650 dager, uker eller måneder. Datoer mellom 1900-01-01 og 2999-12-31. Opptil 30 oppgaver. Ingen påminnelser, varsler eller kalendersynkronisering; ingenting forlater denne siden.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/maintenance-next-due-sheet.html",
       "language": "no",
       "title": "Vedlikeholdsplan med neste frist",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "List opp hva et frilansprosjekt eller en liten jobb ga og kostet, og last ned et ark med bruttofortjeneste, margin og netto per time. Fortjeneste = sum inntekter − sum utgifter. Margin = fortjeneste ÷ sum inntekter. Netto per time = fortjeneste ÷ timer brukt. Beløp summeres i hele øre, så totalene driver ikke. Beløp fra 0 til 100 000 000 med høyst to desimaler, opptil 20 inntekts- og 20 utgiftsrader, timer fra 0,25 til 2000 i kvarter. Samme valuta, ingen veksling, ingen skatte- eller regnskapsråd.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/project-profit-sheet.html",
       "language": "no",
       "title": "Prosjektets resultatark",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Skriv inn maksimal kapasitet fra iPhone-innstillingene og, om du har det, antall ladesykluser, og last ned et ark med slitasjeintervallet per måned og månedene som er igjen til 80 % – alltid et intervall, aldri en poengsum. Slitasje per måned = (100 − kapasitet) ÷ alder i måneder, vist med ±25 %. Måneder til 80 % = (kapasitet − 80) ÷ slitasje; nedre grense fra den høye raten, øvre grense fra den lave. Sykluser per måned = sykluser ÷ alder. Kapasitet 60 til 100 som helt prosenttall, sykluser 0 til 3000, kjøpsmåned mellom 2007 og 2099 med 1 til 240 måneders alder, opptil 10 enheter. Måneder som ÅÅÅÅ-MM. Det du skriver inn blir i denne fanen; ingenting måles eller leses fra telefonen din.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/battery-wear-range-sheet.html",
       "language": "no",
       "title": "Batterislitasje-intervall",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "List opp hva husstanden gjør på nettet samtidig og hvor mange enheter som gjør det, og last ned et ark med Mbps du trenger og hvor mye margin abonnementet har igjen. Sum per rad = enheter × verdi per enhet. Behov = summen av radene. Margin = abonnement − behov; under 20 % av abonnementet er trangt, under null holder det ikke. Alt summeres i hele tidels Mbit/s, så summene driver aldri. Abonnementshastigheter fra 0,5 til 10000 Mbit/s med høyst én desimal, 1 til 50 enheter per rad, inntil 20 rader. Wi‑Fi-dekning, forsinkelse og hastigheten du faktisk får, er utenfor arket.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/bandwidth-need-sheet.html",
       "language": "no",
       "title": "Båndbredde hjemmet trenger",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Skriv inn reisens totale budsjett, dager, reisende og kostnadene du allerede kjenner, og last ned et ark med hva hver person kan bruke per dag og hvordan det fordeles på mat, transport, billetter og shopping. Fritt å bruke = totalt budsjett − faste kostnader. Per dag = fritt å bruke ÷ dager. Per person per dag = per dag ÷ reisende. Hver kategori = per dag × sin andel. Beløp summeres i hele øre; dagsbeløp avrundes bare ved visning. Beløp fra 0 til 100 000 000 med høyst to desimaler, 1 til 120 dager, 1 til 20 reisende, inntil 15 faste kostnader, fire andeler som til sammen blir nøyaktig 100. Samme valuta hele veien, ingen valutakurser, ingen pris- eller bestillingsråd.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/trip-budget-sheet.html",
       "language": "no",
       "title": "Reisebudsjett per dag",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "List opp dagens steder med hvor lenge du blir og hvor lang tid det tar til neste, og last ned et ark med ankomst- og avreisetider som viser om alt får plass mellom start og slutt. Ankomst = forrige avreise + reise. Avreise = ankomst + opphold. Totalt = alle opphold + alle reiser. Tilgjengelig = slutt − start; en sluttid før starttiden regnes som neste dag. Over = totalt − tilgjengelig; alt over null går over tiden. Ren minuttregning, ingen tidssoner. Tider som 24-timers HH:MM, opphold fra 5 til 720 minutter, reiser fra 0 til 600 minutter, inntil 25 steder. Åpningstider, faktisk trafikk, kart, ruter og bestillinger er utenfor arket.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/day-itinerary-sheet.html",
       "language": "no",
       "title": "Tidsplan for én dag",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Gjør rotete møtenotater om til en oversikt på én side: én overskrift, tre til tolv hovedpunkter, én neste handling og et valgfritt måltall, og last det ned som en tabell du kan lime inn i et lysbilde eller et sammendrag. Tabellen beholder ordene dine slik de er: overskrift, deretter punktene i den rekkefølgen du skrev dem, så neste handling og til slutt måltallet. Den teller punktene og fjerner mellomrom i kantene; ingenting skrives om, oppsummeres eller vurderes. Overskrift på inntil 80 tegn, 3 til 12 punkter på inntil 160 tegn hver, neste handling på inntil 160 tegn, måltall på inntil 60 tegn. Hver linje må være tekst på én linje. Tabellen leser ikke filer, opptak eller kalendere.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/one-page-outline-sheet.html",
       "language": "no",
       "title": "Møtenotater til én side",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Skriv inn hva hver person har bestilt for, legg inn avgift og tips i prosent, og se nøyaktig hva hver enkelt skylder. Avgift og tips fordeles til siste øre etter bestillingen, og arket lastes ned som CSV. Delsum = alt det bestilte lagt sammen. Avgift = delsum × avgiftssats. Tips = delsum × tipssats. Andelen til hver person er egen bestilling ÷ delsum; ørene som blir til overs går først til de største desimalene, slik at andelene til sammen treffer regningen nøyaktig. Bruk én valuta, og oppgi avgift og tips som prosent av delsummen. Ingen valutaomregning, ingen regler for serviceavgift, ingen råd om hvor mye du bør gi i tips og ingen betaling. Visningen avrundes til to desimaler; selve fordelingen regnes i hele øre.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/bill-split-sheet.html",
       "language": "no",
       "title": "Del regningen",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Skriv opp hva du har lagret og hvor lang tid hver ting tar, oppgi hvor mange minutter du faktisk leser hver dag, og se hvilken dag alt er ferdig. Planen lastes ned som CSV. Løpende sum = minuttene for dette elementet pluss alt over. Dag = løpende sum ÷ minutter per dag, rundet opp. Ferdig den = startdato + dag − 1. Ledige minutter = dager × minutter per dag − minutter totalt. Rekkefølgen du skriver er leserekkefølgen: ingenting sorteres om, hoppes over eller slås sammen. Én økt om dagen som bruker nøyaktig tiden din, uten fridager, uten å åpne eller hente lenker og uten å gjette lesehastigheten din.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/reading-backlog-sheet.html",
       "language": "no",
       "title": "Les senere-plan",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Skriv når du laget hvert notat, så får du de fem repetisjonsdatoene som følger, med dager igjen og hvilke som allerede har vært. Planen lastes ned som CSV. Repetisjonsdato = skrivedato + 1, 3, 7, 16 og 35 dager. Dager igjen = repetisjonsdato − i dag; et negativt tall er en dato som allerede har vært. Neste repetisjon = den første datoen i dag eller senere. En fast intervalltrapp, ikke en hukommelsesmodell: ingenting her forutsier hva du husker, gir karakter til et notat eller retter et svar. Bare datoer, uten klokkeslett, tidssoner, påminnelser eller varsler.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/no/tools/review-schedule-sheet.html",
       "language": "no",
       "title": "Repetisjonsplan",

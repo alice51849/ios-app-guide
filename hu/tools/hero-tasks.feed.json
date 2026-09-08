@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Hasonlítsd össze a vásárlásokat nettó órabéreddel, majd töltsd le saját CSV-det. Összesen = mennyiség × végső egységár. Munkaóra = összeg ÷ nettó órabér. Munkanap = munkaóra ÷ napi munkaóra. Adóval növelt árakat adj meg. Nincs pénzváltás, bérszámfejtés, megtakarítási előrejelzés vagy vásárlási tanács. A kijelzés két tizedesre kerekít; az összesítés kerekítetlen értékeket használ.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/purchase-worktime-sheet.html",
       "language": "hu",
       "title": "Vásárlások összevetése munkaórában",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Írd be, mikor végezted el utoljára az otthoni, autós vagy egészségügyi teendőket, és milyen gyakran ismétlődnek: megkapod a következő határidőt, a hátralévő napokat és a lejárt tételeket letölthető táblázatban. Következő határidő = utoljára + időköz. Hónapoknál ugyanaz a nap marad; ha nem létezik, a hónap utolsó napja számít (szökőévben is). Hátralévő napok = határidő − ma. 0 alatt lejárt; 0 és 7 között hamarosan esedékes. Időköz 1 és 3650 nap, hét vagy hónap között. Dátumok 1900-01-01 és 2999-12-31 között. Legfeljebb 30 teendő. Nincs emlékeztető, értesítés vagy naptárszinkron; semmi nem hagyja el ezt az oldalt.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/maintenance-next-due-sheet.html",
       "language": "hu",
       "title": "Karbantartási határidő-táblázat",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Írd fel, mit hozott és mibe került egy szabadúszó projekt vagy kisebb munka, majd töltsd le a lapot a bruttó nyereséggel, az árréssel és az egy órára jutó nettóval. Nyereség = bevétel összesen − kiadás összesen. Árrés = nyereség ÷ bevétel összesen. Nettó óránként = nyereség ÷ ráfordított órák. Az összegeket egész fillérben adjuk össze, így a végösszeg nem csúszik el. Összegek 0-tól 100 000 000-ig legfeljebb két tizedessel, legfeljebb 20 bevételi és 20 kiadási sor, órák 0,25-től 2000-ig negyedórás lépésekben. Egy pénznem, nincs átváltás, nincs adó- vagy könyvelési tanács.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/project-profit-sheet.html",
       "language": "hu",
       "title": "Projektnyereség-lap",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Írd be az iPhone Beállításokban látható maximális kapacitást és, ha megvan, a töltési ciklusok számát, majd töltsd le a lapot a havi kopás sávjával és a 80%-ig hátralévő hónapokkal – mindig sávként, soha nem pontszámként. Kopás havonta = (100 − kapacitás) ÷ kor hónapban, ±25%-os sávval. Hónap 80%-ig = (kapacitás − 80) ÷ kopás; alsó határ a magas, felső határ az alacsony ütemből. Ciklus havonta = ciklusok ÷ kor. Kapacitás 60 és 100 között egész százalékban, ciklusok 0 és 3000 között, vásárlás hónapja 2007 és 2099 között 1–240 hónapos korral, legfeljebb 10 készülék. Hónap formátuma ÉÉÉÉ-HH. Az adatok ezen a lapon maradnak; a telefonról semmit nem mérünk vagy olvasunk ki.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/battery-wear-range-sheet.html",
       "language": "hu",
       "title": "Akkumulátor-kopás sáv",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Írd össze, mit csinál a háztartás egyszerre a neten és hány eszközön, majd töltsd le a táblázatot a szükséges Mbps-sel és azzal, mennyi tartalék marad a csomagodban. Soronként összesen = eszközök × eszközönkénti érték. Igény = a sorok összege. Tartalék = csomag − igény; a csomag 20%-a alatt szűkös, nulla alatt kevés. Egész tized Mbps-ben adjuk össze, így az összegek sosem csúsznak el. Csomagsebesség 0,5 és 10000 Mbps között legfeljebb egy tizedessel, soronként 1–50 eszköz, legfeljebb 20 sor. A Wi‑Fi lefedettség, a késleltetés és a ténylegesen kapott sebesség nem része a táblázatnak.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/bandwidth-need-sheet.html",
       "language": "hu",
       "title": "Otthoni sávszélesség-igény",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Add meg az út teljes keretét, a napokat, az utazókat és a már ismert költségeket, majd töltsd le a táblázatot: mennyit költhet egy fő naponta, és hogyan oszlik ez étkezésre, közlekedésre, belépőkre és vásárlásra. Szabadon költhető = teljes keret − fix költségek. Naponta = szabadon költhető ÷ napok. Főre és napra = naponta ÷ utazók. Minden kategória = naponta × az aránya. Az összegeket egész fillérekben adjuk össze; a napi számokat csak megjelenítéskor kerekítjük. Összegek 0 és 100 000 000 között legfeljebb két tizedessel, 1–120 nap, 1–20 utazó, legfeljebb 15 fix költség, négy arány, amely pontosan 100-at ad. Végig ugyanaz a pénznem, nincs árfolyam, nincs ár- vagy foglalási tanács.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/trip-budget-sheet.html",
       "language": "hu",
       "title": "Utazási költségkeret naponta",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Írd össze a nap helyszíneit azzal, mennyi ideig maradsz és mennyi idő eljutni a következőhöz, majd töltsd le a táblázatot érkezési és indulási időkkel, amely megmutatja, belefér-e minden a kezdés és a befejezés közé. Érkezés = előző indulás + út. Indulás = érkezés + tartózkodás. Összesen = minden tartózkodás + minden út. Rendelkezésre áll = befejezés − kezdés; a kezdésnél korábbi befejezés a következő napnak számít. Túllépés = összesen − rendelkezésre áll; nulla felett túlfut. Egyszerű percszámítás, időzónák nélkül. Idők 24 órás HH:MM formátumban, tartózkodás 5–720 perc, út 0–600 perc, legfeljebb 25 helyszín. Nyitvatartás, valós forgalom, térkép, útvonaltervezés és foglalás nem része a táblázatnak.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/day-itinerary-sheet.html",
       "language": "hu",
       "title": "Egynapos időterv",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Rendezd a kusza megbeszélés-jegyzeteket egyoldalas vázlattá: egy címsor, három–tizenkét kulcspont, egy következő lépés és egy opcionális mérőszám, majd töltsd le táblázatként, amit diába vagy összefoglalóba illeszthetsz. A táblázat változatlanul megőrzi a szavaidat: címsor, majd a pontok a beírt sorrendben, aztán a következő lépés, végül a mérőszám. Megszámolja a pontokat és levágja a szélső szóközöket; semmit nem ír át, foglal össze vagy pontoz. Címsor legfeljebb 80 karakter, 3–12 pont egyenként legfeljebb 160 karakter, következő lépés legfeljebb 160 karakter, mérőszám legfeljebb 60 karakter. Minden sor egysoros szöveg legyen. A táblázat nem olvas fájlokat, felvételeket vagy naptárakat.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/one-page-outline-sheet.html",
       "language": "hu",
       "title": "Megbeszélés egy oldalon",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Írd be, ki mennyiért rendelt, add meg az adó és a borravaló százalékát, és látod, kinek pontosan mennyit kell fizetnie. Az adó és a borravaló fillérre pontosan, arányosan oszlik el, a táblázatot pedig CSV-ben töltöd le. Részösszeg = az összes rendelés összeadva. Adó = részösszeg × adókulcs. Borravaló = részösszeg × borravalókulcs. Mindenki adó- és borravalórésze a saját rendelése ÷ részösszeg; a maradék fillérek előbb a legnagyobb tizedesekhez kerülnek, így a részek összege mindig pontosan kiadja a számlát. Egyetlen pénznemet használj, az adót és a borravalót a részösszeg százalékaként add meg. Nincs átváltás, nincs szervizdíjszabály, nincs javaslat a borravaló mértékére és nincs fizetés. A képernyőn két tizedesre kerekítünk; az osztás egész fillérekkel számol.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/bill-split-sheet.html",
       "language": "hu",
       "title": "Számla szétosztása",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Írd össze, mit mentettél el és mennyi ideig tart, add meg, hány percet olvasol tényleg naponta, és látod, melyik napra végzel mindegyikkel. A tervet CSV-ben töltöd le. Futó összeg = ennek a tételnek a perce plusz minden fölötte. Nap = futó összeg ÷ napi perc, felfelé kerekítve. Ekkorra kész = kezdő dátum + nap − 1. Szabad perc = napok × napi perc − összes perc. A beírás sorrendje az olvasás sorrendje: semmi nem kerül át, nem marad ki és nem olvad össze. Naponta egy alkalom, ami pontosan elhasználja a kereted, szünnap nélkül, link megnyitása és letöltése nélkül, és az olvasási sebességedet sem becsüli meg senki.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/reading-backlog-sheet.html",
       "language": "hu",
       "title": "«Majd elolvasom» terv",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Add meg, mikor írtad az egyes jegyzeteket, és megkapod az utána következő öt ismétlési dátumot, a hátralévő napokkal és azzal, hogy melyik van már mögötted. A naptárat CSV-ben töltöd le. Ismétlés dátuma = az írás napja + 1, 3, 7, 16 és 35 nap. Hátralévő nap = ismétlés dátuma − ma; a negatív szám olyan dátum, ami már elmúlt. Következő ismétlés = az első dátum, ami ma vagy később van. Ez rögzített lépcső, nem memóriamodell: semmi nem jósolja meg, mire fogsz emlékezni, nem osztályoz jegyzetet és nem javít választ. Csak dátumok, időpont, időzóna, emlékeztető és értesítés nélkül.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/hu/tools/review-schedule-sheet.html",
       "language": "hu",
       "title": "Ismétlési naptár",

@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Sammenlign køb med din nettoindkomst pr. time, og hent din egen CSV. I alt = antal × stykpris. Arbejdstimer = beløb ÷ nettoindkomst pr. time. Arbejdsdage = arbejdstimer ÷ timer pr. arbejdsdag. Brug priser inklusive afgifter. Ingen valutaomregning, lønberegning, opsparingsprognose eller købsrådgivning. Visning med to decimaler; totaler bruger uafrundede tal.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/purchase-worktime-sheet.html",
       "language": "da",
       "title": "Sammenlign køb i arbejdstimer",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Skriv, hvornår du sidst udførte hver opgave i hjemmet, bilen eller for helbredet, og hvor ofte den gentages: du får næste frist, resterende dage og det, der er forfaldent, i et ark til download. Næste frist = sidst udført + interval. Ved måneder beholdes samme dag; findes den ikke, bruges månedens sidste dag (også i skudår). Dage tilbage = frist − i dag. Forfalden under 0; snart fra 0 til 7. Intervaller fra 1 til 3650 dage, uger eller måneder. Datoer mellem 1900-01-01 og 2999-12-31. Op til 30 opgaver. Ingen påmindelser, notifikationer eller kalendersynkronisering; intet forlader denne side.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/maintenance-next-due-sheet.html",
       "language": "da",
       "title": "Vedligeholdelsesplan med næste frist",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Skriv, hvad et freelanceprojekt eller en lille opgave gav og kostede, og download et ark med bruttofortjeneste, margin og netto pr. time. Fortjeneste = indtægter i alt − udgifter i alt. Margin = fortjeneste ÷ indtægter i alt. Netto pr. time = fortjeneste ÷ brugte timer. Beløb lægges sammen i hele ører, så totalerne skrider ikke. Beløb fra 0 til 100.000.000 med højst to decimaler, op til 20 indtægts- og 20 udgiftsrækker, timer fra 0,25 til 2000 i kvarter. Samme valuta, ingen omregning, ingen skatte- eller regnskabsrådgivning.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/project-profit-sheet.html",
       "language": "da",
       "title": "Projektets fortjenesteark",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Indtast den maksimale kapacitet fra iPhone-indstillingerne og, hvis du har det, antallet af ladecyklusser, og download et ark med slidintervallet pr. måned og månederne til 80 % – altid et interval, aldrig en score. Slid pr. måned = (100 − kapacitet) ÷ alder i måneder, vist med et bånd på ±25 %. Måneder til 80 % = (kapacitet − 80) ÷ slid; nedre grænse fra den høje rate, øvre grænse fra den lave. Cyklusser pr. måned = cyklusser ÷ alder. Kapacitet 60 til 100 som helt procenttal, cyklusser 0 til 3000, købsmåned mellem 2007 og 2099 med en alder på 1 til 240 måneder, op til 10 enheder. Måneder som ÅÅÅÅ-MM. Indtastninger bliver i denne fane; intet måles eller læses fra din telefon.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/battery-wear-range-sheet.html",
       "language": "da",
       "title": "Batterislid-interval",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Skriv ned, hvad husstanden laver på nettet samtidig, og hvor mange enheder der gør det, og download et ark med de nødvendige Mbps og den margin, der er tilbage på dit abonnement. I alt pr. række = enheder × værdi pr. enhed. Behov = summen af rækkerne. Margin = abonnement − behov; under 20 % af abonnementet er stramt, under nul rækker det ikke. Der lægges sammen i hele tiendedele Mbit/s, så totalerne skrider aldrig. Abonnementshastigheder fra 0,5 til 10000 Mbit/s med højst én decimal, 1 til 50 enheder pr. række, op til 20 rækker. Wi‑Fi-dækning, latens og den faktisk leverede hastighed ligger uden for arket.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/bandwidth-need-sheet.html",
       "language": "da",
       "title": "Båndbredde til hjemmet",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Skriv rejsens samlede budget, dage, rejsende og de udgifter, du allerede kender, og download et ark med, hvad hver person kan bruge pr. dag, og hvordan det fordeles på mad, transport, billetter og shopping. Frit til rådighed = samlet budget − faste udgifter. Pr. dag = frit til rådighed ÷ dage. Pr. person pr. dag = pr. dag ÷ rejsende. Hver kategori = pr. dag × dens andel. Beløb lægges sammen i hele ører; dagstal afrundes kun ved visning. Beløb fra 0 til 100.000.000 med højst to decimaler, 1 til 120 dage, 1 til 20 rejsende, op til 15 faste udgifter, fire andele der tilsammen giver præcis 100. Samme valuta hele vejen, ingen valutakurser, ingen pris- eller bookingråd.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/trip-budget-sheet.html",
       "language": "da",
       "title": "Rejsebudget pr. dag",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Skriv dagens steder ned med, hvor længe du bliver, og hvor lang tid der går til det næste, og download et ark med ankomst- og afgangstider, der viser, om det hele kan være mellem din start og dit slut. Ankomst = forrige afgang + rejse. Afgang = ankomst + ophold. I alt = alle ophold + alle rejser. Til rådighed = slut − start; en sluttid før starttiden tæller som næste dag. Over = i alt − til rådighed; alt over nul går over tid. Ren minutregning, ingen tidszoner. Tider som 24-timers HH:MM, ophold fra 5 til 720 minutter, rejser fra 0 til 600 minutter, op til 25 steder. Åbningstider, reel trafik, kort, ruter og bookinger ligger uden for arket.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/day-itinerary-sheet.html",
       "language": "da",
       "title": "Tidsplan for én dag",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Lav rodede mødenoter om til et overblik på én side: én overskrift, tre til tolv nøglepunkter, én næste handling og et valgfrit nøgletal, og download det som en tabel, du kan sætte ind i et slide eller et resumé. Tabellen beholder dine ord, som de er: overskrift, derefter punkterne i den rækkefølge, du skrev dem, derefter næste handling og til sidst nøgletallet. Den tæller punkterne og fjerner mellemrum i kanterne; intet omskrives, opsummeres eller bedømmes. Overskrift på op til 80 tegn, 3 til 12 punkter på op til 160 tegn hver, næste handling på op til 160 tegn, nøgletal på op til 60 tegn. Hver linje skal være tekst på én linje. Tabellen læser ikke filer, optagelser eller kalendere.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/one-page-outline-sheet.html",
       "language": "da",
       "title": "Mødenoter til én side",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Skriv, hvad hver person har bestilt for, angiv moms og drikkepenge i procent, og se præcis hvad hver enkelt skylder. Moms og drikkepenge fordeles til sidste øre efter bestillingen, og arket hentes som CSV. Subtotal = alt det bestilte lagt sammen. Moms = subtotal × momssats. Drikkepenge = subtotal × drikkepengesats. Hver persons andel er egen bestilling ÷ subtotal; de øre, der bliver til overs, går først til de største decimaler, så andelene tilsammen rammer regningen præcist. Brug én valuta, og angiv moms og drikkepenge som procent af subtotalen. Ingen valutaomregning, ingen regler for serviceafgift, ingen anbefaling af hvor meget du bør give, og ingen betaling. Visningen afrundes til to decimaler; selve fordelingen regnes i hele øre.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/bill-split-sheet.html",
       "language": "da",
       "title": "Del regningen",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Skriv, hvad du har gemt, og hvor lang tid hver ting tager, angiv hvor mange minutter du faktisk læser om dagen, og se hvilken dag hver ting er færdig. Planen hentes som CSV. Løbende sum = minutterne for dette element plus alt ovenfor. Dag = løbende sum ÷ minutter om dagen, rundet op. Færdig den = startdato + dag − 1. Ledige minutter = dage × minutter om dagen − minutter i alt. Den rækkefølge, du skriver, er læserækkefølgen: intet bliver flyttet, sprunget over eller slået sammen. Én omgang om dagen, der bruger præcis din tid, uden fridage, uden at åbne eller hente links og uden at gætte din læsehastighed.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/reading-backlog-sheet.html",
       "language": "da",
       "title": "Læs senere-plan",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Skriv, hvornår du lavede hver note, og få de fem repetitionsdatoer, der følger efter, med dage tilbage og hvilke der allerede er passeret. Planen hentes som CSV. Repetitionsdato = skrivedato + 1, 3, 7, 16 og 35 dage. Dage tilbage = repetitionsdato − i dag; et negativt tal er en dato, der allerede er passeret. Næste repetition = den første dato i dag eller senere. En fast intervaltrappe, ikke en hukommelsesmodel: der forudsiges intet om, hvad du husker, ingen note får karakter, og intet svar bliver rettet. Kun datoer, uden klokkeslæt, tidszoner, påmindelser eller notifikationer.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/da/tools/review-schedule-sheet.html",
       "language": "da",
       "title": "Repetitionsplan",

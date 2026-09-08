@@ -104,7 +104,7 @@ async function connect(url) {
   // browser dies with "Socket path too long" before it ever opens a page.
   // TMPDIR is deliberately pointed at the workspace for the downloads, so
   // os.tmpdir() is long too; take the shortest base that exists.
-  const shortTmp = fs.existsSync("/tmp") ? "/tmp" : os.tmpdir();
+  const shortTmp = process.env.HERO_BROWSER_TMPDIR || (fs.existsSync("/tmp") ? "/tmp" : os.tmpdir());
   const profile = fs.mkdtempSync(path.join(shortTmp, "hero-"));
   const downloads = path.join(workspace, "downloads");
   fs.mkdirSync(downloads, {recursive: true});
@@ -205,6 +205,13 @@ async function connect(url) {
       assert.equal(state.ready, true, record.locale);
       assert.equal(state.overflow, false, record.locale + "/" + record.task_id + " overflow at " + width + " " + JSON.stringify(state.wide));
       assert.equal(state.scripts, 2);
+      const tableOverflow = await evaluate(`([...document.querySelectorAll(".table-scroll")]).filter(
+        element=>element.getBoundingClientRect().left<-1||
+          element.getBoundingClientRect().right>document.documentElement.clientWidth+1||
+          (element.scrollWidth>element.clientWidth+1&&
+            !["auto","scroll"].includes(getComputedStyle(element).overflowX))
+      ).map(element=>({width:element.clientWidth,scroll:element.scrollWidth}))`);
+      assert.deepEqual(tableOverflow, [], record.locale + "/" + record.task_id + " tables stay inside their scrollports");
       const clipped = await evaluate(`([...document.querySelectorAll("h1,.fields label,.totals p")]).filter(
         element=>!(element.scrollWidth<=element.clientWidth+1&&
           element.getBoundingClientRect().height<=parseFloat(getComputedStyle(element).lineHeight)+1)
@@ -238,6 +245,29 @@ async function connect(url) {
       assert.equal(await evaluate("document.documentElement.scrollWidth>innerWidth+1"), false, record.locale);
       assert.equal(await evaluate("Object.keys(localStorage).length+Object.keys(sessionStorage).length"), 0);
     }
+    const gujaratiBandwidth = manifest.records.find((record) => record.locale === "gu-IN" && record.task_id === "bandwidth-need");
+    await navigate(gujaratiBandwidth, 320);
+    const wideTable = await evaluate(`(()=>{
+      const scrollport=document.querySelector(".table-scroll");
+      const table=scrollport.querySelector("table");
+      const first=table.querySelector("tbody td");
+      const original=first.textContent;
+      first.textContent="W".repeat(128);
+      scrollport.scrollLeft=scrollport.scrollWidth;
+      const last=table.querySelector("tbody tr:first-child td:last-child").getBoundingClientRect();
+      const bounds=scrollport.getBoundingClientRect();
+      const state={
+        tableWiderThanViewport:table.getBoundingClientRect().width>innerWidth,
+        pageFits:document.documentElement.scrollWidth<=innerWidth+1,
+        canReachLastColumn:scrollport.scrollLeft>0&&last.left>=bounds.left-1&&last.right<=bounds.right+1
+      };
+      first.textContent=original;
+      scrollport.scrollLeft=0;
+      return state;
+    })()`);
+    assert.deepEqual(wideTable, {
+      tableWiderThanViewport:true, pageFits:true, canReachLastColumn:true
+    }, "Gujarati bandwidth tables scroll without widening the page or hiding columns");
     // The measured headline widths for every locale, worst first. Fonts are
     // the runner's, not the laptop's, so this table is the only place these
     // numbers exist -- print it before the assertion so a red run still

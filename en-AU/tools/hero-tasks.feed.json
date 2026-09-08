@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Compare purchases using your take-home hourly income, then download your own CSV. Total = quantity × final unit price. Work hours = total ÷ hourly income. Workdays = work hours ÷ hours per workday. Include tax in your prices. No currency conversion, payroll calculation, savings prediction or buying advice. Display rounds to two decimals; totals use unrounded values.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/purchase-worktime-sheet.html",
       "language": "en-AU",
       "title": "Purchase-to-work-time worksheet",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "List when you last did each household, car or health task and how often it repeats, then download a sheet with the next due date, days left and what is overdue. Next due = last done + interval. Month intervals keep the same day of the month and fall back to the last day when it does not exist, including leap years. Days left = next due − today. Overdue below 0 days; due soon from 0 to 7. Intervals from 1 to 3650 days, weeks or months. Dates between 1900-01-01 and 2999-12-31. Up to 30 tasks. No reminders, notifications or calendar sync; nothing leaves this page.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/maintenance-next-due-sheet.html",
       "language": "en-AU",
       "title": "Maintenance next-due schedule sheet",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "List what a freelance project or small job brought in and what it cost, then download a sheet with the gross profit, margin and net per hour. Profit = income total − expense total. Margin = profit ÷ income total. Net per hour = profit ÷ hours spent. Amounts are added in whole cents, so totals never drift. Amounts from 0 to 100,000,000 with at most two decimals, up to 20 income and 20 expense rows, hours from 0.25 to 2000 in quarter-hour steps. Same currency, no exchange rates, no tax or accounting advice.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/project-profit-sheet.html",
       "language": "en-AU",
       "title": "Project profit sheet",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Type the maximum capacity from iPhone Settings and, if you have it, the cycle count, then download a sheet with the wear-per-month range and the months left before 80%, always as a range and never as a score. Wear per month = (100 − capacity) ÷ age in months, shown as a ±25% band. Months to 80% = (capacity − 80) ÷ wear, low bound from the high wear rate and high bound from the low rate. Cycles per month = cycle count ÷ age. Capacity from 60 to 100 as a whole percent, cycle count from 0 to 3000, purchase month between 2007 and 2099 and one to 240 months old, up to 10 devices. Months are YYYY-MM. Inputs stay in this tab; nothing is measured or read from your phone.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/battery-wear-range-sheet.html",
       "language": "en-AU",
       "title": "Battery wear range sheet",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan. Total per row = devices × per-device figure. Needed = sum of the rows. Headroom = plan − needed; under 20% of the plan is tight, below zero is not enough. Figures are added in tenths of a Mbps, so totals never drift. Plan speeds from 0.5 to 10000 Mbps with at most one decimal, 1 to 50 devices per row, up to 20 rows. Wi-Fi coverage, latency and your provider's real delivered speed are outside this sheet.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/bandwidth-need-sheet.html",
       "language": "en-AU",
       "title": "Home bandwidth sheet",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Enter one trip budget, the days, the travelers and the costs you already know, then download a sheet with how much each person can spend per day and how it splits across food, transport, tickets and shopping. Left to spend = total budget − fixed costs. Per day = left to spend ÷ days. Per person per day = per day ÷ travelers. Each category = per day × its share. Amounts are added in whole cents; daily figures are only rounded when shown. Amounts from 0 to 100,000,000 with at most two decimals, 1 to 120 days, 1 to 20 travelers, up to 15 fixed costs, four shares that add up to exactly 100. Same currency throughout, no exchange rates, no price or booking advice.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/trip-budget-sheet.html",
       "language": "en-AU",
       "title": "Trip budget per day sheet",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "List the places you want to visit in one day with how long you will stay and how long it takes to reach the next one, then download a sheet with arrival and departure times and whether it all fits between your start and end. Arrive = previous leave + travel. Leave = arrive + stay. Total = all stays + all travel. Available = end − start; an end time earlier than the start counts as the next day. Over by = total − available; anything above zero is over time. Plain minute arithmetic, no time zones. Times as 24-hour HH:MM, stays from 5 to 720 minutes, travel from 0 to 600 minutes, up to 25 stops. Opening hours, real traffic, maps, routing and bookings are outside this sheet.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/day-itinerary-sheet.html",
       "language": "en-AU",
       "title": "One-day itinerary time sheet",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Turn messy meeting notes into a one-page outline: one headline, three to twelve key points, one next action and an optional metric, then download it as a sheet you can paste into a slide or a summary. The sheet keeps your words as they are: headline, then points in the order you typed them, then the next action, then the metric. It counts the points and trims surrounding spaces; nothing is rewritten, summarised or scored. Headline up to 80 characters, 3 to 12 points of up to 160 characters each, next action up to 160 characters, metric up to 60 characters. Every line must be single-line text. The sheet does not read files, recordings or calendars.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/one-page-outline-sheet.html",
       "language": "en-AU",
       "title": "Meeting notes to one-page outline",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Type what each person ordered, add the tax and tip percentages, and get the exact amount each of them owes. Every cent of tax and tip is shared in proportion, and the sheet downloads as CSV. Subtotal = everything ordered, added up. Tax = subtotal × tax %. Tip = subtotal × tip %. Each person's tax and tip share is their own order ÷ subtotal, and leftover cents go to the largest fractions first, so the shares always add back up to the bill. Use one currency and enter tax and tip as percentages of the subtotal. No currency conversion, no service-charge rules, no advice on how much to tip and no payments. Display rounds to two decimals; the split itself is calculated in whole cents.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/bill-split-sheet.html",
       "language": "en-AU",
       "title": "Bill split with tax and tip",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "List what you saved and how long each one takes, set the minutes you really read per day, and see the day every item gets finished. The plan downloads as CSV. Running total = this item's minutes plus everything above it. Day = running total ÷ daily minutes, rounded up. Finished on = start date + day − 1. Spare minutes = days × daily minutes − total minutes. The order you type is the order you read: nothing is reordered, skipped or merged. One session a day of exactly your budget, with no days off, no links opened or fetched, and no reading speed guessed for you.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/reading-backlog-sheet.html",
       "language": "en-AU",
       "title": "Read-later backlog plan",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Enter the date you wrote each note and get the five review dates that follow it, with the days left and which ones have already gone by. The calendar downloads as CSV. Review date = written on + 1, 3, 7, 16 and 35 days. Days left = review date − today, so a negative number is a date that has already gone by. Next review = the first date that is today or later. A fixed interval ladder, not a memory model: nothing here predicts what you will remember, scores a note or marks an answer. Dates only, with no times, no time zones, no reminders and no notifications.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/en-AU/tools/review-schedule-sheet.html",
       "language": "en-AU",
       "title": "Note review schedule",

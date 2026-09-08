@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Bandingkan belanja dengan penghasilan bersih per jam, lalu unduh CSV Anda. Total = jumlah × harga akhir. Jam kerja = total ÷ penghasilan bersih per jam. Hari kerja = jam kerja ÷ jam per hari kerja. Masukkan harga termasuk pajak. Tanpa konversi mata uang, penggajian, prediksi tabungan, atau saran membeli. Tampilan dibulatkan dua desimal; total memakai nilai tanpa pembulatan.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/purchase-worktime-sheet.html",
       "language": "id",
       "title": "Bandingkan belanja dalam jam kerja",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Catat kapan terakhir kali Anda mengerjakan tiap tugas rumah, mobil, atau kesehatan dan seberapa sering diulang: dapatkan tanggal jatuh tempo berikutnya, sisa hari, dan yang terlambat dalam lembar yang bisa diunduh. Jatuh tempo berikutnya = terakhir dilakukan + interval. Untuk bulan, tanggal yang sama dipertahankan; jika tidak ada, dipakai hari terakhir bulan itu (termasuk tahun kabisat). Sisa hari = jatuh tempo − hari ini. Di bawah 0 terlambat; 0 sampai 7 segera. Interval 1 sampai 3650 hari, minggu, atau bulan. Tanggal antara 1900-01-01 dan 2999-12-31. Maksimal 30 tugas. Tanpa pengingat, notifikasi, atau sinkronisasi kalender; tidak ada data yang keluar dari halaman ini.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/maintenance-next-due-sheet.html",
       "language": "id",
       "title": "Lembar jadwal jatuh tempo perawatan",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Catat apa yang dihasilkan dan dihabiskan sebuah proyek lepas atau pekerjaan kecil, lalu unduh lembar berisi laba kotor, margin, dan bersih per jam. Laba = total pemasukan − total pengeluaran. Margin = laba ÷ total pemasukan. Bersih per jam = laba ÷ jam yang dihabiskan. Jumlah dijumlahkan dalam satuan sen bulat sehingga total tidak melenceng. Jumlah dari 0 sampai 100.000.000 dengan maksimal dua desimal, hingga 20 baris pemasukan dan 20 pengeluaran, jam dari 0,25 sampai 2000 dalam kelipatan seperempat jam. Satu mata uang, tanpa konversi, tanpa saran pajak atau akuntansi.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/project-profit-sheet.html",
       "language": "id",
       "title": "Lembar laba proyek",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Masukkan kapasitas maksimum dari Pengaturan iPhone dan, jika ada, jumlah siklus, lalu unduh lembar berisi rentang keausan per bulan dan sisa bulan sebelum 80% — selalu berupa rentang, bukan skor. Keausan per bulan = (100 − kapasitas) ÷ umur dalam bulan, ditampilkan dengan pita ±25%. Bulan hingga 80% = (kapasitas − 80) ÷ keausan; batas bawah dari laju tinggi, batas atas dari laju rendah. Siklus per bulan = siklus ÷ umur. Kapasitas 60 sampai 100 dalam persen bulat, siklus 0 sampai 3000, bulan pembelian antara 2007 dan 2099 dengan umur 1 sampai 240 bulan, hingga 10 perangkat. Bulan dalam format YYYY-MM. Isian tetap di tab ini; tidak ada yang diukur atau dibaca dari ponsel Anda.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/battery-wear-range-sheet.html",
       "language": "id",
       "title": "Rentang keausan baterai",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Tuliskan apa saja yang dilakukan penghuni rumah secara online pada saat bersamaan dan berapa perangkat yang dipakai, lalu unduh lembar berisi Mbps yang dibutuhkan dan sisa ruang paket Anda. Total per baris = perangkat × nilai per perangkat. Kebutuhan = jumlah semua baris. Sisa ruang = paket − kebutuhan; di bawah 20% paket berarti mepet, di bawah nol berarti kurang. Dijumlahkan dalam sepersepuluh Mbps bulat, jadi totalnya tidak pernah meleset. Kecepatan paket 0,5 sampai 10000 Mbps dengan maksimal satu desimal, 1 sampai 50 perangkat per baris, maksimal 20 baris. Jangkauan Wi‑Fi, latensi, dan kecepatan sebenarnya dari penyedia berada di luar lembar ini.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/bandwidth-need-sheet.html",
       "language": "id",
       "title": "Kebutuhan bandwidth rumah",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Masukkan total anggaran perjalanan, jumlah hari, jumlah orang, dan biaya yang sudah diketahui, lalu unduh lembar berisi berapa yang bisa dibelanjakan tiap orang per hari dan pembagiannya untuk makan, transportasi, tiket, dan belanja. Sisa = total anggaran − biaya tetap. Per hari = sisa ÷ hari. Per orang per hari = per hari ÷ jumlah orang. Setiap kategori = per hari × porsinya. Jumlah dijumlahkan dalam sen bulat; angka harian hanya dibulatkan saat ditampilkan. Jumlah 0 sampai 100.000.000 dengan maksimal dua desimal, 1 sampai 120 hari, 1 sampai 20 orang, maksimal 15 biaya tetap, empat porsi yang berjumlah tepat 100. Satu mata uang sepanjang lembar, tanpa kurs, tanpa saran harga atau pemesanan.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/trip-budget-sheet.html",
       "language": "id",
       "title": "Anggaran perjalanan per hari",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Tuliskan tempat yang ingin dikunjungi dalam sehari, berapa lama di tiap tempat, dan berapa lama menuju tempat berikutnya, lalu unduh lembar berisi jam tiba dan jam berangkat yang menunjukkan apakah semuanya muat di antara jam mulai dan jam selesai Anda. Tiba = berangkat sebelumnya + perjalanan. Berangkat = tiba + lama di tempat. Total = semua lama di tempat + semua perjalanan. Tersedia = selesai − mulai; jam selesai yang lebih awal dari jam mulai dihitung sebagai hari berikutnya. Kelebihan = total − tersedia; di atas nol berarti melebihi waktu. Sekadar hitungan menit, tanpa zona waktu. Jam dalam format 24 jam HH:MM, lama di tempat 5 sampai 720 menit, perjalanan 0 sampai 600 menit, maksimal 25 tempat. Jam buka, lalu lintas nyata, peta, rute, dan pemesanan berada di luar lembar ini.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/day-itinerary-sheet.html",
       "language": "id",
       "title": "Lembar waktu perjalanan sehari",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Ubah catatan rapat yang berantakan menjadi kerangka satu halaman: satu judul, tiga sampai dua belas poin utama, satu tindakan berikutnya, dan satu metrik opsional, lalu unduh sebagai lembar yang bisa ditempel ke slide atau ringkasan. Lembar ini menjaga kata-kata Anda apa adanya: judul, lalu poin sesuai urutan yang Anda ketik, lalu tindakan berikutnya, lalu metrik. Ia menghitung poin dan memangkas spasi di tepi; tidak ada yang ditulis ulang, diringkas, atau dinilai. Judul maksimal 80 karakter, 3 sampai 12 poin masing-masing maksimal 160 karakter, tindakan berikutnya maksimal 160 karakter, metrik maksimal 60 karakter. Setiap baris harus berupa teks satu baris. Lembar ini tidak membaca berkas, rekaman, atau kalender.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/one-page-outline-sheet.html",
       "language": "id",
       "title": "Catatan rapat satu halaman",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Tulis pesanan tiap orang, isi persen pajak dan tip, lalu lihat siapa harus bayar berapa. Pajak dan tip dibagi sampai sen terakhir sesuai porsi pesanan, dan tabelnya bisa diunduh sebagai CSV. Subtotal = semua pesanan dijumlahkan. Pajak = subtotal × persen pajak. Tip = subtotal × persen tip. Bagian tiap orang adalah pesanannya ÷ subtotal; sisa sen diberikan lebih dulu ke pecahan desimal terbesar, jadi jumlah semua bagian selalu pas dengan tagihan. Pakai satu mata uang, dan isi pajak serta tip sebagai persen dari subtotal. Tidak ada konversi mata uang, tidak ada aturan biaya layanan, tidak ada saran berapa tip yang pantas, dan tidak ada pembayaran. Tampilan dibulatkan dua angka desimal; pembagiannya dihitung dalam sen bulat.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/bill-split-sheet.html",
       "language": "id",
       "title": "Bagi tagihan",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Daftarkan apa saja yang kamu simpan dan berapa lama tiap satunya, isi menit yang benar-benar kamu baca per hari, lalu lihat hari ke berapa masing-masing selesai. Rencananya bisa diunduh sebagai CSV. Total berjalan = menit item ini ditambah semua yang di atasnya. Hari = total berjalan ÷ menit per hari, dibulatkan ke atas. Selesai pada = tanggal mulai + hari − 1. Sisa menit = hari × menit per hari − total menit. Urutan yang kamu ketik adalah urutan bacanya: tidak ada yang diurutkan ulang, dilewati, atau digabung. Satu sesi sehari yang menghabiskan tepat jatah waktumu, tanpa hari libur, tanpa membuka atau mengambil tautan apa pun, dan tanpa menebak kecepatan bacamu.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/reading-backlog-sheet.html",
       "language": "id",
       "title": "Rencana «baca nanti»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Isi tanggal kamu menulis tiap catatan, lalu dapatkan lima tanggal pengulangan berikutnya, berapa hari lagi, dan mana yang sudah lewat. Jadwalnya bisa diunduh sebagai CSV. Tanggal ulang = tanggal ditulis + 1, 3, 7, 16, dan 35 hari. Sisa hari = tanggal ulang − hari ini; angka negatif berarti tanggal itu sudah lewat. Ulangan berikutnya = tanggal pertama yang jatuh hari ini atau sesudahnya. Ini tangga jarak tetap, bukan model ingatan: tidak ada yang meramal apa yang akan kamu ingat, tidak ada catatan yang dinilai, dan tidak ada jawaban yang diperiksa. Hanya tanggal, tanpa jam, zona waktu, pengingat, atau notifikasi.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/id/tools/review-schedule-sheet.html",
       "language": "id",
       "title": "Jadwal mengulang catatan",

@@ -12,12 +12,15 @@ if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
 import gen_publisher_disclosures  # noqa: E402
+import gen_app_decision_cards  # noqa: E402
 import gen_app_store_conversion_surfaces  # noqa: E402
 import gen_app_store_qr_ctas  # noqa: E402
 import gen_app_store_share_ctas  # noqa: E402
 import gen_guide_design  # noqa: E402
 import gen_mobile_store_ctas  # noqa: E402
 import gen_smart_app_banners  # noqa: E402
+import gen_store_attribution  # noqa: E402
+import hero_tasks  # noqa: E402
 import reconcile_answer_semantics  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
@@ -31,6 +34,105 @@ def guide_workflow() -> str:
 
 
 class RefreshPerformanceTests(unittest.TestCase):
+    def test_answer_hero_anchor_matches_a_complete_class_token(self):
+        for classes in ("hero", "hero wrap", "wrap hero", "wrap\thero\nwide"):
+            with self.subTest(classes=classes):
+                source = f'<section class="{classes}">Introduction</section>'
+                self.assertIsNotNone(gen_app_decision_cards.ANSWER_HERO_RE.search(source))
+        for classes in ("hero-resource", "page-hero", "heroic", "wrap hero-resource wide"):
+            with self.subTest(classes=classes):
+                source = f'<section class="{classes}">Supplement</section>'
+                self.assertIsNone(gen_app_decision_cards.ANSWER_HERO_RE.search(source))
+
+    @mock.patch.dict(os.environ, {"APP_STORE_PROVIDER_TOKEN": "118326163"})
+    def test_hero_refresh_preserves_regenerated_conversion_blocks(self):
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            pages = Path(directory)
+            app_id = APPSTORE["gmoney"]
+            site = "https://example.test/site"
+            path = pages / "ar-SA/answers/budgeting-expense-tracking-app-subscription-cost-vs-pay-once-2026.html"
+            path.parent.mkdir(parents=True)
+            icon = pages / "stories/img/gmoney-icon.jpg"
+            icon.parent.mkdir(parents=True)
+            icon.write_bytes(b"owned-icon")
+            resource = (
+                f"<!-- {hero_tasks.MARKER}:start -->"
+                '<section class="hero-resource"><h2>Free budget sheet</h2>'
+                '<a href="/site/ar-SA/tools/trip-budget.html">Open sheet</a>'
+                f"</section><!-- {hero_tasks.MARKER}:end -->"
+            )
+            qr_style = gen_app_store_qr_ctas.style_block(
+                gen_app_store_qr_ctas._site_asset_href(site, gen_app_store_qr_ctas.STYLESHEET_RELATIVE),
+            )
+            path.write_text(
+                '<html lang="ar-SA" dir="rtl"><head>'
+                '<meta name="robots" content="noindex,follow">'
+                f'<link rel="canonical" href="{site}/ar-SA/answers/{path.name}">'
+                f"{qr_style}"
+                '<link rel="alternate" type="application/atom+xml" href="/site/feed.xml">'
+                '</head><body><main><h1>G+Money</h1>'
+                '<p class="lead">خطط لميزانية الرحلة</p>'
+                f'<a class="cta" href="https://apps.apple.com/sa/app/id{app_id}">'
+                'احصل على G+Money من App Store</a>'
+                + resource + "</main></body></html>",
+                encoding="utf-8",
+            )
+            guide = pages / "guides/gmoney.html"
+            guide.parent.mkdir()
+            guide.write_text(
+                '<html lang="en"><head></head><body><main>'
+                f'<a href="https://apps.apple.com/app/id{app_id}">G+Money</a>'
+                '</main></body></html>',
+                encoding="utf-8",
+            )
+            inventory = gen_smart_app_banners.SurfaceInventory(
+                targets={path.resolve(): app_id, guide.resolve(): app_id},
+                app_count=1,
+                guide_pages=frozenset({guide.resolve()}),
+                answer_pages=frozenset({path.resolve()}),
+                buyer_intent_pages=frozenset({path.resolve()}),
+            )
+            availability = {"sa": frozenset({app_id})}
+            previous = None
+            for cycle in range(3):
+                with self.subTest(cycle=cycle):
+                    gen_app_decision_cards.ensure_card(
+                        path, "gmoney", app_id, pages, site, availability=availability,
+                    )
+                    with mock.patch.object(
+                        gen_smart_app_banners, "build_surface_inventory", return_value=inventory,
+                    ):
+                        gen_app_store_conversion_surfaces.generate(pages, {"gmoney"}, site)
+                    source, _ = gen_store_attribution.rewrite(
+                        path.read_text(encoding="utf-8"), "geo_ask", "118326163",
+                        locale="ar-SA", availability=availability,
+                    )
+                    blocks = [
+                        pattern.search(source).group(0).strip()
+                        for pattern in (
+                            gen_app_decision_cards.CARD_RE,
+                            gen_smart_app_banners.BLOCK_RE,
+                            gen_mobile_store_ctas.BLOCK_RE,
+                            gen_app_store_qr_ctas.CARD_BLOCK_RE,
+                            gen_app_store_share_ctas.BLOCK_RE,
+                        )
+                    ]
+                    updated = hero_tasks.insert_block(source, resource, label=str(path))
+                    for block in blocks:
+                        self.assertEqual(1, updated.count(block), block)
+                    cta = gen_mobile_store_ctas.app_store_cta(updated, app_id)
+                    self.assertIsNotNone(cta)
+                    self.assertEqual(
+                        1,
+                        updated.count(gen_mobile_store_ctas.mobile_cta_block(
+                            *cta, gen_mobile_store_ctas.asset_href(site),
+                        )),
+                    )
+                    if previous is not None:
+                        self.assertEqual(previous, updated)
+                    previous = updated
+                    path.write_text(updated, encoding="utf-8")
+
     def test_combined_conversion_pass_is_byte_equivalent(self):
         with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
             root = Path(directory)

@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Compare compras com sua renda líquida por hora e baixe seu CSV. Total = quantidade × preço final. Horas = total ÷ renda líquida por hora. Dias = horas ÷ horas por dia de trabalho. Inclua impostos nos preços. Sem conversão de moeda, folha de pagamento, previsão de economia ou recomendação de compra. Exibição com duas casas decimais; totais usam valores sem arredondamento.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/purchase-worktime-sheet.html",
       "language": "pt-BR",
       "title": "Compare compras em horas de trabalho",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Anote quando você fez pela última vez cada tarefa da casa, do carro ou da saúde e com que frequência ela se repete: você recebe a próxima data, os dias restantes e o que está atrasado em uma planilha para baixar. Próximo vencimento = última vez + intervalo. Em meses, o dia é mantido; se ele não existir, usa-se o último dia do mês (inclusive em anos bissextos). Dias restantes = vencimento − hoje. Atrasada abaixo de 0; em breve de 0 a 7. Intervalos de 1 a 3650 dias, semanas ou meses. Datas entre 1900-01-01 e 2999-12-31. Até 30 tarefas. Sem lembretes, notificações ou sincronização com calendário; nada sai desta página.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/maintenance-next-due-sheet.html",
       "language": "pt-BR",
       "title": "Planilha de próximos vencimentos de manutenção",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Liste o que um projeto freelance ou trabalho pequeno rendeu e custou e baixe uma planilha com o lucro bruto, a margem e o líquido por hora. Lucro = total de receitas − total de despesas. Margem = lucro ÷ total de receitas. Líquido por hora = lucro ÷ horas trabalhadas. Os valores são somados em centavos inteiros, então os totais não desviam. Valores de 0 a 100.000.000 com no máximo duas casas decimais, até 20 linhas de receita e 20 de despesa, horas de 0,25 a 2000 em passos de quinze minutos. Mesma moeda, sem conversão, sem orientação fiscal ou contábil.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/project-profit-sheet.html",
       "language": "pt-BR",
       "title": "Planilha de lucro do projeto",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Digite a capacidade máxima mostrada nos Ajustes do iPhone e, se tiver, a contagem de ciclos, e baixe uma planilha com a faixa de desgaste por mês e os meses restantes até 80% — sempre uma faixa, nunca uma nota. Desgaste por mês = (100 − capacidade) ÷ idade em meses, exibido com banda de ±25%. Meses até 80% = (capacidade − 80) ÷ desgaste; limite baixo com a taxa alta e limite alto com a taxa baixa. Ciclos por mês = ciclos ÷ idade. Capacidade de 60 a 100 em porcentagem inteira, ciclos de 0 a 3000, mês da compra entre 2007 e 2099 com idade de 1 a 240 meses, até 10 aparelhos. Meses no formato AAAA-MM. Os dados ficam nesta aba; nada é medido ou lido do seu celular.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/battery-wear-range-sheet.html",
       "language": "pt-BR",
       "title": "Faixa de desgaste da bateria",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Liste o que a sua casa faz on-line ao mesmo tempo e quantos aparelhos participam, depois baixe uma planilha com os Mbps necessários e a folga que sobra no seu plano. Total da linha = aparelhos × valor por aparelho. Necessário = soma das linhas. Folga = plano − necessário; abaixo de 20% do plano é apertado, abaixo de zero não dá. Soma-se em décimos de Mbps inteiros, os totais nunca derivam. Velocidades do plano de 0,5 a 10000 Mbps com no máximo uma casa decimal, de 1 a 50 aparelhos por linha, até 20 linhas. Cobertura do Wi‑Fi, latência e a velocidade real entregue pela operadora ficam fora desta planilha.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/bandwidth-need-sheet.html",
       "language": "pt-BR",
       "title": "Banda larga necessária em casa",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Informe o orçamento total da viagem, os dias, os viajantes e os gastos que você já conhece, depois baixe uma planilha com quanto cada pessoa pode gastar por dia e como isso se divide entre comida, transporte, ingressos e compras. Livre para gastar = orçamento total − custos fixos. Por dia = livre para gastar ÷ dias. Por pessoa por dia = por dia ÷ viajantes. Cada categoria = por dia × sua fatia. Os valores são somados em centavos inteiros; os números diários só são arredondados na exibição. Valores de 0 a 100.000.000 com no máximo duas casas decimais, 1 a 120 dias, 1 a 20 viajantes, até 15 custos fixos e quatro fatias que somem exatamente 100. Mesma moeda o tempo todo, sem câmbio, sem dica de preço ou de reserva.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/trip-budget-sheet.html",
       "language": "pt-BR",
       "title": "Orçamento de viagem por dia",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Liste os lugares de um dia com o tempo que vai ficar em cada um e quanto leva até o próximo, depois baixe uma planilha com horários de chegada e saída que mostra se tudo cabe entre o seu início e o seu fim. Chegada = saída anterior + deslocamento. Saída = chegada + permanência. Total = todas as permanências + todos os deslocamentos. Disponível = fim − início; um fim anterior ao início conta como o dia seguinte. Excedente = total − disponível; acima de zero passou do tempo. Só aritmética de minutos, sem fusos horários. Horários em 24 h no formato HH:MM, permanências de 5 a 720 minutos, deslocamentos de 0 a 600 minutos, até 25 lugares. Horário de funcionamento, trânsito real, mapas, rotas e reservas ficam fora desta planilha.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/day-itinerary-sheet.html",
       "language": "pt-BR",
       "title": "Planilha de horários de um dia",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Transforme anotações bagunçadas de reunião em um resumo de uma página: um título, de três a doze pontos-chave, uma próxima ação e uma métrica opcional, e baixe como planilha para colar em um slide ou em um resumo. A planilha mantém suas palavras como estão: título, depois os pontos na ordem digitada, depois a próxima ação e por fim a métrica. Ela conta os pontos e remove espaços nas pontas; nada é reescrito, resumido ou avaliado. Título com até 80 caracteres, de 3 a 12 pontos com até 160 caracteres cada, próxima ação com até 160 caracteres, métrica com até 60 caracteres. Cada linha deve ser texto de uma linha só. A planilha não lê arquivos, gravações nem calendários.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/one-page-outline-sheet.html",
       "language": "pt-BR",
       "title": "Reunião em uma página",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Coloque quanto cada pessoa pediu, informe a porcentagem de imposto e de gorjeta e veja o valor exato de cada uma. Imposto e gorjeta são rateados no centavo conforme o pedido, e a planilha sai em CSV. Subtotal = tudo que foi pedido, somado. Imposto = subtotal × porcentagem do imposto. Gorjeta = subtotal × porcentagem da gorjeta. A parte de cada pessoa é o pedido dela ÷ subtotal; os centavos que sobram vão primeiro para as maiores casas decimais, então a soma das partes fecha exatamente com a conta. Use uma única moeda e informe imposto e gorjeta como porcentagem do subtotal. Sem conversão de moeda, sem regra de taxa de serviço, sem sugestão de quanto dar de gorjeta e sem pagamento. A tela arredonda em duas casas; o rateio é calculado em centavos inteiros.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/bill-split-sheet.html",
       "language": "pt-BR",
       "title": "Rachar a conta",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Liste o que você salvou e quanto tempo cada coisa leva, informe os minutos que realmente lê por dia e veja em que dia cada item termina. O plano sai em CSV. Acumulado = os minutos deste item mais tudo o que vem antes. Dia = acumulado ÷ minutos por dia, arredondado para cima. Termina em = data inicial + dia − 1. Minutos livres = dias × minutos por dia − minutos no total. A ordem digitada é a ordem de leitura: nada é reordenado, pulado ou juntado. Uma sessão por dia que gasta exatamente o seu tempo, sem folga, sem abrir ou baixar link nenhum e sem estimar a sua velocidade de leitura.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/reading-backlog-sheet.html",
       "language": "pt-BR",
       "title": "Plano para «ler depois»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Informe a data em que escreveu cada anotação e receba as cinco datas de revisão seguintes, com os dias que faltam e as que já passaram. O calendário sai em CSV. Data da revisão = data em que foi escrita + 1, 3, 7, 16 e 35 dias. Dias restantes = data da revisão − hoje; número negativo é uma data que já passou. Próxima revisão = a primeira data que cai hoje ou depois. É uma escada de intervalos fixa, não um modelo de memória: nada aqui prevê o que você vai lembrar, dá nota a uma anotação ou corrige resposta. Só datas, sem horários, sem fusos, sem lembretes e sem notificações.",
-      "date_modified": "2026-09-06T00:00:00Z",
+      "date_modified": "2026-09-08T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/pt-BR/tools/review-schedule-sheet.html",
       "language": "pt-BR",
       "title": "Calendário de revisão",

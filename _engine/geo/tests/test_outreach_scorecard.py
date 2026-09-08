@@ -25,6 +25,7 @@ class OutreachScorecardTests(unittest.TestCase):
         self.addCleanup(self.stack.close)
         self.directory = Path(self.stack.enter_context(tempfile.TemporaryDirectory()))
         self.document = manifest.create_manifest(manifest.canonical_manifest()["apps"], now=NOW)
+        self.app_count = len(self.document["apps"])
         self.stack.enter_context(mock.patch.object(scorecard, "APPS", self.document["apps"]))
         self.stack.enter_context(mock.patch.object(scorecard, "_social_posts", return_value=[]))
         self.stack.enter_context(mock.patch.object(scorecard, "_exists", return_value=False))
@@ -33,13 +34,13 @@ class OutreachScorecardTests(unittest.TestCase):
         self.stack.enter_context(mock.patch.object(scorecard, "JSON_OUT", str(self.directory / "report.json")))
         self.stack.enter_context(mock.patch.object(scorecard, "MD_OUT", str(self.directory / "report.md")))
 
-    def test_zero_coverage_keeps_all_46_apps_and_battai(self):
+    def test_zero_coverage_keeps_the_complete_live_roster(self):
         rows = scorecard.build_rows(manifest=self.document, now=NOW)
-        self.assertEqual(46, len(rows))
-        self.assertEqual(set(self.document["apps"]), {row["key"] for row in rows})
+        self.assertCountEqual(self.document["apps"], [row["key"] for row in rows])
+        self.assertIn("zipbox", {row["key"] for row in rows})
         self.assertTrue(all(row["coverage_score"] == 0 for row in rows))
         report = scorecard.write_reports(rows, self.document)
-        self.assertEqual(46, report["live_app_count"])
+        self.assertEqual(self.app_count, report["live_app_count"])
         self.assertTrue(report["inventory_complete"])
         text = (self.directory / "report.md").read_text(encoding="utf-8")
         for app in self.document["apps"].values():
@@ -52,9 +53,10 @@ class OutreachScorecardTests(unittest.TestCase):
         self.document["observations"]["savetag"]["checked_at"] = (NOW - timedelta(days=1)).isoformat()
         rows = scorecard.build_rows(manifest=self.document, now=NOW)
         report = scorecard.write_reports(rows, self.document)
-        self.assertEqual(46, report["live_app_count"])
-        self.assertEqual(46, report["public_apps"])
-        self.assertEqual(44, report["verified_public_apps"])
+        self.assertEqual(self.app_count, report["live_app_count"])
+        self.assertEqual(self.app_count, report["public_apps"])
+        self.assertEqual(self.app_count - 2, report["verified_public_apps"])
+        self.assertCountEqual(self.document["apps"], [row["key"] for row in rows])
         self.assertEqual({"battai", "savetag"}, set(report["inventory_gaps"]))
         self.assertTrue(report["inventory_complete"])
         self.assertFalse(report["availability_complete"])
@@ -70,22 +72,24 @@ class OutreachScorecardTests(unittest.TestCase):
         self.assertEqual("unknown", battai["inventory_status"])
         self.assertFalse(battai["public"])
         self.assertEqual("", battai["appstore"])
-        self.assertEqual(46, len(rows))
+        self.assertCountEqual(self.document["apps"], [row["key"] for row in rows])
 
-    def test_expired_availability_never_expires_the_46_app_public_roster(self):
+    def test_expired_availability_never_expires_the_complete_public_roster(self):
         rows = scorecard.build_rows(manifest=self.document, now=NOW + timedelta(days=1))
         report = scorecard.write_reports(rows, self.document)
-        self.assertEqual(46, report["live_app_count"])
-        self.assertEqual(46, report["public_apps"])
+        self.assertEqual(self.app_count, report["live_app_count"])
+        self.assertEqual(self.app_count, report["public_apps"])
         self.assertEqual(0, report["verified_public_apps"])
-        self.assertEqual(46, len(report["inventory_gaps"]))
+        self.assertCountEqual(self.document["apps"], report["inventory_gaps"])
+        self.assertCountEqual(self.document["apps"], [row["key"] for row in rows])
         self.assertTrue(all(row["inventory_status"] == "stale" for row in rows))
 
-    def test_old_45_array_or_forged_45_manifest_is_rejected(self):
+    def test_legacy_array_or_resealed_incomplete_manifest_is_rejected(self):
         path = self.directory / "baseline.json"
         forged = deepcopy(self.document)
         forged["apps"].pop("battai")
         forged["observations"].pop("battai")
+        forged["roster_digest"] = manifest.roster_digest(forged["apps"])
         for document in ([{}] * 45, forged):
             path.write_text(json.dumps(document), encoding="utf-8")
             with self.subTest(kind=type(document).__name__):
@@ -122,7 +126,8 @@ class OutreachScorecardTests(unittest.TestCase):
             path.write_text(json.dumps(fresh), encoding="utf-8")
             self.assertEqual(0, scorecard.main(["--manifest", str(path)]))
         report = json.loads((self.directory / "report.json").read_text(encoding="utf-8"))
-        self.assertEqual(46, report["live_app_count"])
+        self.assertEqual(self.app_count, report["live_app_count"])
+        self.assertCountEqual(self.document["apps"], [row["key"] for row in report["rows"]])
         self.assertEqual(["battai"], report["inventory_gaps"])
 
 

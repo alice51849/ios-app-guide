@@ -23,10 +23,11 @@ class LiveManifestTests(unittest.TestCase):
         self.apps = manifest.canonical_manifest()["apps"]
         self.document = manifest.create_manifest(self.apps, now=NOW)
 
-    def test_versioned_roster_has_all_46_apps_including_battai(self):
+    def test_versioned_roster_has_every_live_app_including_zipbox(self):
         result = manifest.validate_manifest(self.document, now=NOW)
-        self.assertEqual(46, len(result["apps"]))
+        self.assertEqual(self.apps, result["apps"])
         self.assertEqual("6802423998", result["apps"]["battai"]["app_id"])
+        self.assertEqual(APPSTORE["zipbox"], result["apps"]["zipbox"]["app_id"])
         self.assertEqual(manifest.SCHEMA, result["schema"])
         self.assertEqual(
             set(APPSTORE) - {"zafe", "zodira"}, set(result["apps"]),
@@ -34,7 +35,7 @@ class LiveManifestTests(unittest.TestCase):
         self.assertEqual(manifest.roster_digest(self.apps), result["roster_digest"])
 
     def test_legacy_45_array_and_v1_inventory_are_rejected(self):
-        old_apps = {key: app for key, app in self.apps.items() if key != "battai"}
+        old_apps = dict(list(self.apps.items())[:45])
         for old in (
             [{"appStoreUrl": f"https://apps.apple.com/app/id{app['app_id']}"} for app in old_apps.values()],
             {"version": 1, "live_state_sha256": "a" * 64, "apps": old_apps},
@@ -44,9 +45,35 @@ class LiveManifestTests(unittest.TestCase):
                     manifest.validate_manifest(old, now=NOW)
         forged = deepcopy(self.document)
         forged["apps"] = old_apps
-        forged["observations"].pop("battai")
+        forged["observations"] = {
+            key: self.document["observations"][key] for key in old_apps
+        }
         with self.assertRaisesRegex(manifest.ManifestError, "46.*45"):
             manifest.validate_manifest(forged, now=NOW)
+
+    def test_each_missing_extra_or_replaced_app_is_rejected_after_resealing(self):
+        for key in self.apps:
+            for fault in ("missing", "extra", "replaced"):
+                changed = deepcopy(self.document)
+                missing, extra = [], []
+                if fault != "extra":
+                    changed["apps"].pop(key)
+                    changed["observations"].pop(key)
+                    missing.append(key)
+                if fault != "missing":
+                    unexpected = f"unexpected{key}"
+                    changed["apps"][unexpected] = {
+                        "app_id": "9999999999", "name": "Unexpected App",
+                    }
+                    changed["observations"][unexpected] = deepcopy(
+                        self.document["observations"][key]
+                    )
+                    extra.append(unexpected)
+                changed["roster_digest"] = manifest.roster_digest(changed["apps"])
+                with self.subTest(app=key, fault=fault):
+                    with self.assertRaisesRegex(manifest.ManifestError, "roster drift") as raised:
+                        manifest.validate_manifest(changed, now=NOW)
+                    self.assertIn(f"missing={missing}, extra={extra}", str(raised.exception))
 
     def test_digest_drift_and_resealed_identity_drift_are_rejected(self):
         altered = deepcopy(self.document)
@@ -87,7 +114,7 @@ class LiveManifestTests(unittest.TestCase):
         with self.assertRaisesRegex(manifest.ManifestError, "TTL expired"):
             manifest.validate_manifest(self.document, now=expired)
         states = manifest.app_statuses(self.document, now=expired)
-        self.assertEqual(46, len(states))
+        self.assertEqual(set(self.apps), set(states))
         self.assertEqual({"stale"}, {row["inventory_status"] for row in states.values()})
 
     def test_per_app_unknown_and_stale_do_not_shrink_roster(self):
@@ -98,7 +125,7 @@ class LiveManifestTests(unittest.TestCase):
             NOW - timedelta(seconds=manifest.MAX_TTL_SECONDS)
         ).isoformat()
         states = manifest.app_statuses(self.document, now=NOW)
-        self.assertEqual(46, len(states))
+        self.assertEqual(set(self.apps), set(states))
         self.assertEqual("unknown", states["battai"]["inventory_status"])
         self.assertEqual("stale", states["savetag"]["inventory_status"])
         with self.assertRaisesRegex(manifest.ManifestError, "savetag"):
@@ -125,16 +152,16 @@ class LiveManifestTests(unittest.TestCase):
         result = manifest.refresh_manifest(
             APPSTORE, APPS, now=NOW, lookup=lambda ids: observed,
         )
-        self.assertEqual(46, len(result["apps"]))
+        self.assertEqual(self.apps, result["apps"])
         self.assertEqual("unknown", result["observations"]["battai"]["status"])
         self.assertEqual(self.document["roster_digest"], result["roster_digest"])
 
-    def test_failed_lookup_retains_46_unknown_apps(self):
+    def test_failed_lookup_retains_the_complete_unknown_roster(self):
         def unavailable(ids):
             raise TimeoutError("Network down")
 
         result = manifest.refresh_manifest(APPSTORE, APPS, now=NOW, lookup=unavailable)
-        self.assertEqual(46, len(result["apps"]))
+        self.assertEqual(self.apps, result["apps"])
         states = manifest.app_statuses(result, now=NOW)
         self.assertEqual({"unknown"}, {row["inventory_status"] for row in states.values()})
 
@@ -142,7 +169,7 @@ class LiveManifestTests(unittest.TestCase):
         observed = set(APPSTORE.values())
         result = manifest.refresh_manifest(APPSTORE, APPS, now=NOW, lookup=lambda ids: observed)
         self.assertEqual({"zafe", "zodira"}, {row["key"] for row in result["pending_adoptions"]})
-        self.assertEqual(46, len(result["apps"]))
+        self.assertEqual(self.apps, result["apps"])
         changed = dict(APPSTORE, battai="12345")
         with self.assertRaisesRegex(manifest.ManifestError, "Registry roster drift: battai"):
             manifest.refresh_manifest(changed, APPS, now=NOW, lookup=lambda ids: observed)

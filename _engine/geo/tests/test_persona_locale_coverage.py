@@ -7,6 +7,7 @@ from unittest.mock import patch
 
 import answer_facts
 import aeo_answers_i18n
+import aso_evidence_contract
 import queries
 from answer_personas import PERSONAS, persona_meta_description
 from live_app_manifest import canonical_manifest
@@ -20,6 +21,15 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
     def test_every_live_app_has_a_persona_workflow(self):
         self.assertEqual(CURRENT_LIVE_APPS, set(PERSONAS))
         self.assertTrue(all(PERSONAS[key] for key in CURRENT_LIVE_APPS))
+
+    def test_evidence_contract_uses_the_canonical_live_roster(self):
+        canonical = canonical_manifest()["apps"]
+        roster = aso_evidence_contract.live_roster()
+        self.assertEqual(set(canonical), set(roster))
+        self.assertEqual(
+            {key: str(app["app_id"]) for key, app in canonical.items()},
+            {key: app["track_id"] for key, app in roster.items()},
+        )
 
     def test_shared_persona_query_stays_with_its_free_app(self):
         query = PERSONAS["lumimission"][0]["query"]

@@ -11,9 +11,9 @@ Producer protocol
 document_digest. All digests use canonical UTF-8 JSON (sorted keys, compact
 separators, no NaN); document_digest excludes only itself. Timestamp offsets
 are mandatory and expiry is exclusive. ``source_digests.live_roster`` hashes
-the exact {app_key: track_id} mapping from the versioned 46-app live registry.
+the exact {app_key: track_id} mapping from the versioned canonical live registry.
 
-Finder: the producer always emits the 46-row roster. Verified observations
+Finder: the producer always emits the complete canonical roster. Verified observations
 have verified_live=true and their actual verified_at; unobserved availability
 and missing localized metadata stay explicit unknown/null, never fabricated.
 ``catalog`` hashes the complete apps array. The eight-day TTL starts at Apple
@@ -36,7 +36,7 @@ then rechecks current freshness per app, rather than letting an unused stale
 reading veto fresh evidence for the rest of the roster.
 After an envelope passes schema/digest/source checks, individual missing or
 mismatched apps are assessed independently. Derived proposals/topics retain
-all 46 rows. Publication requires verified source/rank evidence for every app
+every canonical row. Publication requires verified source/rank evidence for every app
 that actually emits a topic, not for inactive rows. Unknown apps remain in
 the roster and generate explicit WARN health details, never new topics.
 A staging candidate is
@@ -71,7 +71,6 @@ SOURCE_KEYS = {
     TOPICS_SCHEMA: {"live_roster", "proposal"},
 }
 FEEDBACK_MAX_AGE = timedelta(hours=30)
-LIVE_APP_COUNT = 46
 READING_FRESH_DAYS = 4
 OFFSITE_ONLY = "offsite_topics_only"
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
@@ -152,14 +151,25 @@ def live_roster() -> dict[str, dict[str, str]]:
         if str(path) not in sys.path:
             sys.path.insert(0, str(path))
     from answer_personas import PERSONAS
+    from live_app_manifest import canonical_manifest
     from videogen.registry import APPS, APPSTORE
 
-    if len(PERSONAS) != LIVE_APP_COUNT:
-        raise ContractError(f"live_roster_count:{len(PERSONAS)}!={LIVE_APP_COUNT}")
+    canonical_apps = canonical_manifest()["apps"]
+    if set(PERSONAS) != set(canonical_apps):
+        raise ContractError(
+            "live_roster_identity_mismatch:"
+            f"personas={len(PERSONAS)} canonical={len(canonical_apps)}"
+        )
     roster = {}
-    for key in sorted(PERSONAS):
+    for key in sorted(canonical_apps):
         app_id = str(APPSTORE.get(key) or "")
-        if key not in APPS or not app_id.isdigit():
+        canonical = canonical_apps[key]
+        if (
+            key not in APPS
+            or not app_id.isdigit()
+            or app_id != str(canonical.get("app_id") or "")
+            or APPS[key]["name"] != canonical.get("name")
+        ):
             raise ContractError(f"live_roster_identity_missing:{key}")
         roster[key] = {"name": APPS[key]["name"], "track_id": app_id}
     if len({row["track_id"] for row in roster.values()}) != len(roster):

@@ -117,6 +117,24 @@ class ExternalAppLocaleTests(unittest.TestCase):
         )
         self.assertIn("zh-Hant", locales)
 
+    def test_zipbox_full_metadata_covers_every_official_locale(self):
+        locales = pages.load_app_locales("zipbox")
+        self.assertEqual(OFFICIAL_LOCALE_SET, set(locales))
+        self.assertEqual(
+            OFFICIAL_LOCALE_SET,
+            set(pages.all_locales_for("zipbox")),
+        )
+        for locale, content in locales.items():
+            with self.subTest(locale=locale):
+                for field in (
+                    "name",
+                    "subtitle",
+                    "keywords",
+                    "promotionalText",
+                    "description",
+                ):
+                    self.assertTrue(content[field].strip(), field)
+
     def test_generated_pages_are_native_linked_and_direct(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(
             pages, "PAGES", directory

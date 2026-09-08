@@ -519,6 +519,11 @@ class DeploymentWorkflowGenerationTests(unittest.TestCase):
         self.assertIn("steps.verify_live.outcome == 'success'", self.workflow)
         self.assertNotIn('fields=\'{version,deployment_id', self.workflow)
 
+    def test_readback_retry_window_exceeds_the_ten_minute_cdn_ttl(self):
+        self.assertIn("--attempts 30", self.workflow)
+        self.assertIn("--retry-delay 25", self.workflow)
+        self.assertGreater((30 - 1) * 25, 600)
+
     def test_verifier_survives_pruning_but_is_not_uploaded_in_the_site(self):
         self.assertLess(
             self.workflow.index('cp _engine/geo/deployment_generation.py'),

@@ -147,7 +147,8 @@ jobs:
             --site "${DEPLOYMENT_MANIFEST_URL%/.well-known/deployment.json}" \
             --site "$GEO_SITE" \
             --receipt "$RUNNER_TEMP/deployment-readback-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json" \
-            --attempts 30
+            --attempts 30 \
+            --retry-delay 25
           echo "Exact deployment is live: $(jq -er '.generation.generation_id' .well-known/deployment.json)"
       - name: Preserve generation-bound live readback
         if: always() && steps.verify_live.outcome != 'skipped'

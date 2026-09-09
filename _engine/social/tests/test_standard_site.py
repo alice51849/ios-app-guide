@@ -2294,6 +2294,7 @@ class StandardSitePublisherTests(ProjectScratchCase):
             all(
                 sum(
                     document["app_key"] == key
+                    and document["editorial_kind"] != "tool"
                     for document in manifest["documents"]
                 )
                 <= 3

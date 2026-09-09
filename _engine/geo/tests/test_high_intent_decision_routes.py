@@ -30,7 +30,50 @@ from videogen.registry import APPS  # noqa: E402
 
 
 SOURCE_PATH = GEO / "data" / "high_intent_decision_routes_v2.json"
-GUIDE_REPOSITORY = Path(
+TEST_PROVIDER_TOKEN = "118326163"
+CURRENT_SOURCE_ROOT = (
+    Path(os.environ["HIGH_INTENT_CURRENT_SOURCE_ROOT"])
+    if os.environ.get("HIGH_INTENT_CURRENT_SOURCE_ROOT")
+    else None
+)
+RELEASE_CARDINALITY_SYMBOLS = (
+    "EXPECTED_APP_COUNT",
+    "EXPECTED_ROUTE_COUNT",
+    "EXPECTED_PAIR_COUNT",
+    "EXPECTED_ABSTAINED_PAIR_COUNT",
+    "EXPECTED_LIVE_APP_COUNT",
+    "EXPECTED_APP_LOCALE_PAIRS",
+    "EXPECTED_ABSTAINED_PAIRS",
+    "EXPECTED_LIVE_APP_KEYS_SHA256",
+)
+
+
+def git_repository_root(path: Path) -> Path | None:
+    result = subprocess.run(
+        ["git", "-C", str(path), "rev-parse", "--show-toplevel"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return None
+    return Path(result.stdout.strip()).resolve()
+
+
+def deployed_guide_repository() -> Path | None:
+    repository = git_repository_root(GEO)
+    if repository is None:
+        return None
+    if GEO.resolve() != (repository / "_engine" / "geo").resolve():
+        return None
+    workflow = repository / ".github" / "workflows" / "geo-daily.yml"
+    if not workflow.is_file():
+        raise AssertionError("Deployed Guide checkout is missing geo-daily.yml")
+    return repository
+
+
+DEPLOYED_GUIDE_REPOSITORY = deployed_guide_repository()
+GUIDE_REPOSITORY = DEPLOYED_GUIDE_REPOSITORY or Path(
     os.environ.get(
         "HIGH_INTENT_GUIDE_REPOSITORY",
         Path.home() / "00_GrowthEngine" / "geo" / "pages",
@@ -45,21 +88,42 @@ INVENTORY_PATH = (
     if os.environ.get("HIGH_INTENT_TEST_INVENTORY")
     else GUIDE_REPOSITORY / "data" / routes.INVENTORY_FILENAME
 )
-TEST_PROVIDER_TOKEN = "118326163"
-CURRENT_SOURCE_ROOT = (
-    Path(os.environ["HIGH_INTENT_CURRENT_SOURCE_ROOT"])
-    if os.environ.get("HIGH_INTENT_CURRENT_SOURCE_ROOT")
-    else None
-)
 
 
 def guide_gitlink_revision() -> str:
+    if DEPLOYED_GUIDE_REPOSITORY is not None:
+        result = subprocess.run(
+            [
+                "git",
+                "-C",
+                str(DEPLOYED_GUIDE_REPOSITORY),
+                "rev-parse",
+                "--verify",
+                "HEAD^{commit}",
+            ],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        revision = result.stdout.strip()
+        if result.returncode != 0 or len(revision) != 40:
+            raise AssertionError(
+                "Deployed Guide checkout must have one resolved HEAD commit"
+            )
+        return revision
+
     result = subprocess.run(
         ["git", "-C", str(GROWTH_REPOSITORY), "ls-files", "--stage", "geo/pages"],
-        capture_output=True, text=True, check=True,
+        capture_output=True, text=True, check=False,
     )
     fields = result.stdout.strip().split()
-    if len(fields) != 4 or fields[0] != "160000" or fields[2:] != ["0", "geo/pages"]:
+    if (
+        result.returncode != 0
+        or len(fields) != 4
+        or fields[0] != "160000"
+        or len(fields[1]) != 40
+        or fields[2:] != ["0", "geo/pages"]
+    ):
         raise AssertionError("GrowthEngine must pin one resolved geo/pages gitlink")
     return fields[1]
 
@@ -185,26 +249,25 @@ class HighIntentRouteSourceTests(unittest.TestCase):
         self.assertNotIn("requests.", source)
         self.assertNotIn("urllib.request", source)
 
-    def test_release_cardinality_and_controller_keys_are_not_hardcoded(self):
+    def test_release_cardinality_is_not_hardcoded_in_producer(self):
         producer = (GEO / "high_intent_decision_routes.py").read_text(
             encoding="utf-8"
         )
-        controller = (
+        for symbol in RELEASE_CARDINALITY_SYMBOLS:
+            self.assertNotIn(symbol, producer)
+
+    def test_controller_keys_are_not_hardcoded(self):
+        controller_path = (
             GROWTH_REPOSITORY
             / "agent"
             / "organic_experiment_controller.py"
-        ).read_text(encoding="utf-8")
-        for symbol in (
-            "EXPECTED_APP_COUNT",
-            "EXPECTED_ROUTE_COUNT",
-            "EXPECTED_PAIR_COUNT",
-            "EXPECTED_ABSTAINED_PAIR_COUNT",
-            "EXPECTED_LIVE_APP_COUNT",
-            "EXPECTED_APP_LOCALE_PAIRS",
-            "EXPECTED_ABSTAINED_PAIRS",
-            "EXPECTED_LIVE_APP_KEYS_SHA256",
-        ):
-            self.assertNotIn(symbol, producer)
+        )
+        if not controller_path.is_file():
+            if DEPLOYED_GUIDE_REPOSITORY is not None:
+                self.skipTest("Growth-only controller is not deployed to Guide")
+            self.fail(f"GrowthEngine controller is missing: {controller_path}")
+        controller = controller_path.read_text(encoding="utf-8")
+        for symbol in RELEASE_CARDINALITY_SYMBOLS:
             self.assertNotIn(symbol, controller)
         self.assertNotIn(
             self.source["inventory_contract"]["app_keys_sha256"],
@@ -1036,6 +1099,14 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
         revision: str | None = None,
     ) -> Path:
         revision = revision or cls.trusted_guide_revision
+        inventory_path = root / f"inventory-{revision[:12]}.json"
+        if DEPLOYED_GUIDE_REPOSITORY is not None:
+            if revision != guide_gitlink_revision():
+                raise AssertionError(
+                    "Deployed Guide inventory must stay bound to resolved HEAD"
+                )
+            shutil.copy2(INVENTORY_PATH, inventory_path)
+            return inventory_path
         result = subprocess.run(
             [
                 "git",
@@ -1055,7 +1126,6 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
                 f"Unable to read Guide inventory at {revision}: "
                 f"{result.stderr.decode(errors='replace').strip()}"
             )
-        inventory_path = root / f"inventory-{revision[:12]}.json"
         inventory_path.write_bytes(result.stdout)
         return inventory_path
 
@@ -1274,21 +1344,10 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             app_keys_sha256, copy_sha256 = routes._inventory_digests(
                 contracted_apps
             )
-            gitlink = subprocess.run(
-                [
-                    "git",
-                    "-C",
-                    str(GROWTH_REPOSITORY),
-                    "ls-files",
-                    "--stage",
-                    "geo/pages",
-                ],
-                capture_output=True,
-                text=True,
-                check=True,
-            ).stdout
-
-            self.assertIn(self.trusted_guide_revision, gitlink)
+            self.assertEqual(
+                self.trusted_guide_revision,
+                guide_gitlink_revision(),
+            )
             self.assertEqual(self.release["app_count"], len(apps))
             self.assertEqual(expected_keys, set(apps))
             self.assertEqual(len(expected_keys), self.release["app_count"])

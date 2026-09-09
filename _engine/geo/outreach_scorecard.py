@@ -8,6 +8,7 @@ import os
 import re
 import sys
 from datetime import date, datetime, timezone
+from urllib.parse import parse_qsl, urlsplit
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -70,6 +71,31 @@ def slugify(question):
     ).strip("-")
 
 
+def _catalog_app_id(value):
+    parsed = urlsplit(str(value))
+    if (
+        parsed.scheme != "https"
+        or parsed.netloc != "apps.apple.com"
+        or parsed.fragment
+    ):
+        return None
+    match = re.fullmatch(r"/app/id(\d+)", parsed.path)
+    if not match:
+        return None
+    if parsed.query:
+        pairs = parse_qsl(parsed.query, keep_blank_values=True)
+        attributes = dict(pairs)
+        if (
+            len(pairs) != 3
+            or set(attributes) != {"pt", "ct", "mt"}
+            or not attributes["pt"].isdigit()
+            or not re.fullmatch(r"[A-Za-z0-9_.-]+", attributes["ct"])
+            or attributes["mt"] != "8"
+        ):
+            return None
+    return match.group(1)
+
+
 def _portfolio_social_posts(public_keys):
     catalog_path = os.path.join(PAGES, "apps.json")
     required_assets = (
@@ -95,12 +121,9 @@ def _portfolio_social_posts(public_keys):
     for item in catalog:
         if not isinstance(item, dict):
             raise ValueError("Portfolio app catalog entries must be objects")
-        match = re.fullmatch(
-            r"https://apps\.apple\.com/app/id(\d+)",
-            str(item.get("appStoreUrl", "")),
-        )
-        if match:
-            catalog_ids.add(match.group(1))
+        app_id = _catalog_app_id(item.get("appStoreUrl", ""))
+        if app_id is not None:
+            catalog_ids.add(app_id)
     return [
         {
             "app": app_id,

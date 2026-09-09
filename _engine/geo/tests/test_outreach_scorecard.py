@@ -129,6 +129,63 @@ class OutreachScorecardTests(unittest.TestCase):
         self.assertCountEqual(self.document["apps"], [row["key"] for row in report["rows"]])
         self.assertEqual(["battai"], report["inventory_gaps"])
 
+    def test_portfolio_posts_accept_attributed_app_store_urls(self):
+        pages = Path(scorecard.PAGES)
+        (pages / ".github" / "scripts").mkdir(parents=True)
+        (pages / ".github" / "workflows").mkdir(parents=True)
+        (pages / ".github" / "scripts" / "portfolio_daily.py").write_text("")
+        (pages / ".github" / "workflows" / "portfolio-daily.yml").write_text("")
+        attributed_id = str(scorecard.APPSTORE["zipbox"])
+        bare_id = str(scorecard.APPSTORE["battai"])
+        (pages / "apps.json").write_text(
+            json.dumps(
+                [
+                    {
+                        "appStoreUrl": (
+                            f"https://apps.apple.com/app/id{attributed_id}"
+                            "?pt=118326163&ct=geo_pick&mt=8"
+                        )
+                    },
+                    {
+                        "appStoreUrl": (
+                            f"https://apps.apple.com/app/id{bare_id}"
+                        )
+                    },
+                    {
+                        "appStoreUrl": (
+                            "https://apps.apple.com.evil.invalid/app/"
+                            f"id{scorecard.APPSTORE['savetag']}"
+                        )
+                    },
+                    {
+                        "appStoreUrl": (
+                            "https://apps.apple.com/app/"
+                            f"id{scorecard.APPSTORE['moneytag']}?redirect=1"
+                        )
+                    },
+                ]
+            ),
+            encoding="utf-8",
+        )
+
+        self.assertEqual(
+            [
+                {
+                    "app": bare_id,
+                    "lang": "zh-Hant",
+                    "source": "portfolio-daily",
+                },
+                {
+                    "app": attributed_id,
+                    "lang": "zh-Hant",
+                    "source": "portfolio-daily",
+                },
+            ],
+            scorecard._portfolio_social_posts(
+                {"zipbox", "battai", "savetag", "moneytag"}
+            ),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

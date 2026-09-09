@@ -380,6 +380,21 @@ CURATED_FALLBACK = {
             ["toeic vocabulary builder", 0],
         ],
     },
+    "zipbox": {
+        "key": "zipbox",
+        "gap_queries": [
+            "best paid archive extractor for iphone with no ads or subscription",
+            "open password protected zip rar and 7z files on iphone",
+            "preview files inside an archive before extracting on iphone",
+            "on-device iphone archive extractor with no account or tracking",
+        ],
+        "top_competitors": [
+            ["unzip – zip rar 7z extractor", 0],
+            ["unzip - zip,rar,7z file opener", 0],
+            ["irar - zip,rar,7z file opener", 0],
+            ["zarchiver: unzip, unrar, 7z", 0],
+        ],
+    },
 }
 
 # 類別 → 給人看的名詞 + schema 類別

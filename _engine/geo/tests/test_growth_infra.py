@@ -22694,6 +22694,7 @@ class GeneratorTests(unittest.TestCase):
             "wifiaidlite": "6793414462",
             "moneytag": "6801956402",
             "savetag": "6802505528",
+            "zipbox": "6806776579",
         }
         for key, app_id in app_ids.items():
             with self.subTest(key=key):
@@ -22732,6 +22733,28 @@ class GeneratorTests(unittest.TestCase):
             ("vocabulary learning app", "EducationalApplication"),
             aeo_pages.cat_noun("wordmatelite"),
         )
+
+    def test_zipbox_persona_matches_paid_upfront_store_model(self):
+        from answer_personas import PERSONAS
+
+        persona = PERSONAS["zipbox"][0]
+        copy = " ".join(
+            [
+                persona["query"],
+                *persona["triggers"],
+                *persona["paras"],
+                persona["fits"],
+                *[
+                    item
+                    for faq in persona["faq"]
+                    for item in (faq["q"], faq["a"])
+                ],
+            ]
+        )
+        self.assertIn("paid App Store download", copy)
+        self.assertIn("no in-app purchases", copy)
+        self.assertNotIn("extraction is free", copy)
+        self.assertNotIn("purchase unlocks the Pro extras", copy)
 
     def test_roundup_cli_can_generate_only_selected_apps(self):
         argv = ["gen_roundups.py", "dailymate"]

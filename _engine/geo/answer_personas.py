@@ -3349,13 +3349,11 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
 # into PERSONAS in the same change that admits the app to the registry.
 # ShotInbox AI went through here on 2026-08-26.
 PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
-    # Zipbox is live in the TW and JP storefronts but not yet in US, so it is
-    # discoverable without being fully published. Claims here are held to the
-    # app's verified format matrix: ZST and CAB are NOT supported and must
-    # never be implied, and RAR is extract-only.
+    # Claims here are held to Zipbox's verified paid-upfront model and format
+    # matrix: ZST and CAB are not supported, and RAR is extract-only.
     "zipbox": [
         {
-            "query": "free app to open RAR and 7z files on iPhone without ads",
+            "query": "app to open RAR and 7z files on iPhone without ads",
             "guide_title": "Opening RAR, ZIP and 7z on iPhone: what to check",
             "triggers": [
                 "open rar files on iphone",
@@ -3377,9 +3375,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "a tool states which of those it reads before you rely on it.",
                 "Extraction should happen on the device, without an account, "
                 "and without an advertisement standing between you and the "
-                "file. A one-time purchase for the extras is easier to reason "
-                "about than a weekly subscription for opening a file someone "
-                "sent you.",
+                "file. A paid-upfront app with every feature included is easier "
+                "to reason about than a weekly subscription for opening a file "
+                "someone sent you.",
             ],
             "look": [
                 "ZIP including encrypted, split and ZIP64 archives.",
@@ -3397,16 +3395,16 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "fits": (
                 "fits anyone who receives ZIP, RAR or 7z archives on an iPhone "
-                "or iPad and wants them opened on the device without "
-                "advertising or a subscription."
+                "or iPad and wants a paid-upfront tool that opens them on the "
+                "device without advertising, in-app purchases or a subscription."
             ),
             "faq": [
                 {
-                    "q": "Is extracting free?",
+                    "q": "How is Zipbox priced?",
                     "a": (
-                        "Yes — extraction is free with no advertising. A single "
-                        "one-time purchase unlocks the Pro extras; there is no "
-                        "subscription."
+                        "Zipbox is a paid App Store download. One purchase "
+                        "includes every feature, with no in-app purchases, "
+                        "subscription or advertising."
                     ),
                 },
                 {

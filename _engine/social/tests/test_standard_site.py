@@ -2278,7 +2278,17 @@ class StandardSitePublisherTests(ProjectScratchCase):
             max_per_app=3,
             now=self.NOW,
         )
-        self.assertEqual(46, manifest["source"]["live_app_count"])
+        expected_keys, _ = generator.load_live_app_keys(
+            SOCIAL.parents[1],
+            generator.APPSTORE,
+            generator.APPS,
+        )
+        self.assertEqual(expected_keys, manifest["source"]["live_app_keys"])
+        self.assertEqual(
+            len(expected_keys),
+            manifest["source"]["live_app_count"],
+        )
+        self.assertIn("zipbox", expected_keys)
         self.assertEqual(108, len(manifest["documents"]))
         base_dir = self.scratch / "live-base"
         base_dir.mkdir()

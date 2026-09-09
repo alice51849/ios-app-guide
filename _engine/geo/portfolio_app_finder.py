@@ -1895,7 +1895,7 @@ def build(
         data_dir / f"{DATA_SLUG}.schema.json",
         dataset_schema(),
     )
-    # Unknown availability stays in the 46-row evidence catalog, not in a
+    # Unknown availability stays in the full-roster evidence catalog, not in a
     # recommendation carrying a "verified live" badge or install action.
     records = verified_records(document["apps"])
     if not records:

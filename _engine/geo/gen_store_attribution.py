@@ -21,6 +21,8 @@ Rules that keep it safe:
     localized visual collection owns ``iag_visual_<locale>``.
   • The original ``&`` / ``&amp;`` escaping of the href is preserved, so the
     rewrite never changes how a page is parsed.
+  • Registry membership is not live evidence. The shared manifest removes
+    non-live promotions before attribution; mixed pages retain their live links.
 
     python geo/gen_store_attribution.py           # apply
     python geo/gen_store_attribution.py --check   # report only
@@ -531,12 +533,14 @@ def page_token(rel: str, text: str) -> str | None:
 
 def generate(pages: Path, check: bool) -> dict[str, object]:
     from audit_store_attribution import audit_source, locale_of
+    from live_app_guard import live_apps, sanitize_nonlive_html
 
     provider = resolve_provider_token() or None
     if provider is None or PROVIDER_TOKEN_RE.fullmatch(provider) is None:
         raise ValueError(f"{PROVIDER_TOKEN_ENV} must be configured for publication")
     if not pages.is_dir():
         raise ValueError(f"Missing generated pages directory: {pages}")
+    live_ids = set(live_apps().values())
     availability = load_storefront_availability(pages) or None
     files_with_links = 0
     files_changed = 0
@@ -563,18 +567,19 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         # Every failure names the page: a whole-tree run must point straight at
         # the offending file instead of leaving the operator to bisect 80k pages.
         try:
+            sanitized = sanitize_nonlive_html(text, live_ids)
             # Web Stories keep their own iag_story campaign but still carry
             # machine-readable MobileApplication url/installUrl/downloadUrl
             # that gen_mobile_app_identity emits clean; stamp those with the
             # story campaign so the page has exactly one attributable token.
             # Publisher visuals mint per-locale atomic campaigns and stay untouched.
-            updated, changes = (text, 0) if protected and token is None else rewrite(
-                text, token, provider, locale=locale_of(rel), availability=availability
+            updated, changes = (sanitized, 0) if protected and token is None else rewrite(
+                sanitized, token, provider, locale=locale_of(rel), availability=availability
             )
             desync = qr_card_desync(updated)
         except QrCardDesyncError as error:
             raise QrCardDesyncError(f"{rel}: {error}") from error
-        except ValueError as error:
+        except (ValueError, RuntimeError) as error:
             raise ValueError(f"{rel}: {error}") from error
         if desync:
             href, stale, expected = desync
@@ -596,7 +601,7 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         for ref in refs:
             if not ref.identity:
                 tokens[existing_campaign(ref.url)] += 1
-        if changes:
+        if updated != text:
             links_stamped += changes
             files_changed += 1
             if not check:
@@ -608,10 +613,15 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         if hashlib.sha256(text.encode("utf-8")).digest() != digest:
             raise ValueError(f"Page changed during attribution preflight: {rel}")
         try:
-            updated, _ = rewrite(
-                text, page_token(rel, text), provider,
-                locale=locale_of(rel), availability=availability,
-            )
+            sanitized = sanitize_nonlive_html(text, live_ids)
+            token = page_token(rel, text)
+            if PROTECTED_PARTS.intersection(Path(rel).parts) and token is None:
+                updated = sanitized
+            else:
+                updated, _ = rewrite(
+                    sanitized, token, provider,
+                    locale=locale_of(rel), availability=availability,
+                )
         except ValueError as error:
             raise ValueError(f"{rel}: {error}") from error
         path.write_text(updated, encoding="utf-8")

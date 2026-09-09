@@ -74,6 +74,9 @@ def reconcile_lastmod_after_rebase(env):
     sync_standard_site(env)
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
+    require([PY, os.path.join(HERE, "live_app_guard.py"), "--site-root", PAGES], env=env)
+    require([PY, os.path.join(HERE, "close_sitemap_graph.py")], env=env)
+    require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     # Feeds, publisher visuals and downloadable results are emitted after the
     # HTML stamper. Audit the final tree before any commit, push or IndexNow.
@@ -386,6 +389,9 @@ def main():
     require(
         [PY, os.path.join(HERE, "dedupe_locale_meta.py"), "--apply"], env=env
     )
+    # Legacy body generators and a remote-first rebase can restore unlisted
+    # promotions. Quarantine them before the final link/sitemap closure.
+    require([PY, os.path.join(HERE, "live_app_guard.py"), "--site-root", PAGES], env=env)
     # 連結圖第二趟(冪等,靜態樹上 0 變更,約 15 秒)。gen_link_hubs 是「注入
     # 受管理區塊」,而 build_pages_i18n / dedupe_locale_meta 這類產生器會整份
     # 重寫語系首頁 —— 只要有一支跑在它後面把區塊洗掉,整個語系的子樹就會在

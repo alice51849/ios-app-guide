@@ -1,8 +1,8 @@
 # 共用 live App manifest
 
-`live_app_manifest.json` 是版本控制內、不因時間過期的唯一 roster identity。2026-09-05 的 Apple
-iTunes Lookup（US、TW、JP、GB）唯讀查核確認 **46 款**，包含 BattAI；Zafe、
-Zodira 未出現在該次公開查核中，不屬於這份 live roster。已上架 App 不因最新
+`live_app_manifest.json` 是版本控制內、不因時間過期的唯一 roster identity。目前共 **47 款**，
+包含 BattAI、ZipBox；Zafe、Zodira 未經 Apple iTunes Lookup（US、TW、JP、GB）
+公開查核確認，不屬於這份 live roster。已上架 App 不因最新
 ASC 版本 non-ready、報告 pending、查核暫時失敗或下載／購買雙零而移出 roster。
 
 ## 契約
@@ -17,7 +17,7 @@ ASC 版本 non-ready、報告 pending、查核暫時失敗或下載／購買雙�
   遞增 `revision`、`apps` 與 `roster_digest`，**沒有 TTL 或 availability 時間戳**。
 - 可刷新 evidence 另使用 `schema=lumi.live-app-manifest/v2`、`version=2`，
   只放 gitignored `.growth-runtime/`（或指定的 private/build 路徑）。
-- `apps` 是完整 `key → {app_id, name}`；拒絕重複 ID／JSON 欄位與不足 46 款。
+- `apps` 是完整 `key → {app_id, name}`；拒絕重複 ID／JSON 欄位與不足 47 款。
 - `roster_digest` 是 `apps` 經 UTF-8、`sort_keys=True`、
   `separators=(",", ":")` 序列化後的 SHA-256，亦必須符合版本化基線。
   僅重算 digest、用另一款替掉 BattAI 或更新筆數，不能繞過 identity drift。
@@ -91,6 +91,43 @@ Guide workflow 明確設定 v2 `GROWTH_LIVE_MANIFEST` 及 private `GEO_REPORTS`�
 Optimizer 與 download controller 預設直接使用 feedback 內綁定的 manifest；
 不再讀取無時間契約的 `.appstore_live_state.json`。既有 `--live-state` 參數
 及其 `--live-manifest` 別名只接受 v2 manifest。
+
+## 非 live generated 內容的收斂
+
+`APPSTORE`／`APPS` 是包含尚未上線產品的登錄庫，不是可發布名單。舊
+`gen_full_coverage_*`、review、best-for、seasonal 等模板會直接插入 registry
+的 ID；只重建 47 款新頁，不會刪掉已提交的舊頁。
+
+`cleanup_localized_assets.py` 與 `gen_store_attribution.py` 共用
+`live_app_guard.live_apps()`，只採用上述 manifest 的 `public_eligible` identity。
+不以 generated `apps.json` 或缺少新 App 的舊 `.appstore_live_state.json` 作為
+刪除依據；unknown/stale 沿用原本 last-good／三次 clean miss 契約。
+
+- guard 掃描整個 public HTML tree，包括補充語系及舊頁型，不限 `/apps/`；
+  `_engine`、隱藏 runtime、symlink 與其他 source 目錄不修改。
+- 非 live 單 App／明確主體頁保留網址，但移除商店 CTA、Smart Banner、
+  install schema，加入持久 `iag-nonlive` 標記及 `noindex,nofollow`。
+  混合頁只移除非 live 的 CTA／schema item，保留 live 連結及其他內容。
+- 被隔離頁的 sitemap URL／alternate 由同一 producer 移除；再次執行為冪等。
+  malformed／無法安全處理的內容在寫入前 fail closed，不直接刪整張混合頁。
+- catch-up 經 `publish.py` 在所有 body generator／dedupe 後、link/sitemap
+  closure 與歸因稽核前執行 guard；rebase 後同樣重做。Daily GEO 的完整 cleanup
+  亦使用同一 policy。attribution producer 先消除非 live promotion，才產生歸因。
+  catch-up mirror 與 bootstrap owned allowlist 同步包含 guard、cleanup、attribution，
+  避免只更新 `publish.py`、雲端仍沿用舊 consumer。
+
+舊有數千張 Zafe 頁的安全收斂由此 producer 完成，不手改 generated HTML、
+不改 roster、不套用 runtime stash。可在隔離 checkout 驗證：
+
+```sh
+GROWTH_LIVE_MANIFEST=/path/to/prepared-live-app-manifest.json \
+  python3 geo/live_app_guard.py --site-root /path/to/isolated-guide
+GROWTH_LIVE_MANIFEST=/path/to/prepared-live-app-manifest.json \
+  python3 geo/live_app_guard.py --site-root /path/to/isolated-guide --check
+```
+
+正式發布仍須重建完整 pipeline、通過 `audit_store_attribution.py` 的全 roster
+× 50 locale／API／QR／feed／download Gate；guard PASS 不代替其他發布 Gates。
 
 ## 報表與失敗語意
 

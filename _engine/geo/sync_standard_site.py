@@ -67,6 +67,7 @@ LEGACY_STORE_REACH_HEAD_OPEN = (
 LEGACY_STORE_REACH_HEAD_CLOSE = (
     "<!-- store-reach-style:end -->/head>"
 )
+GOOGLE_SITE_VERIFICATION_NAME_RE = re.compile(r"google[0-9a-f]{16}\.html")
 
 
 class SyncError(RuntimeError):
@@ -605,6 +606,16 @@ def preserve_managed_links(
     )
 
 
+def _is_google_site_verification(path: Path, site_root: Path) -> bool:
+    if (
+        path.parent != site_root
+        or GOOGLE_SITE_VERIFICATION_NAME_RE.fullmatch(path.name) is None
+    ):
+        return False
+    expected = f"google-site-verification: {path.name}".encode("ascii")
+    return path.read_bytes() in {expected, expected + b"\n"}
+
+
 def _discover_html(site_root: Path) -> list[Path]:
     paths: list[Path] = []
     for current, directories, files in os.walk(site_root, followlinks=False):
@@ -621,6 +632,8 @@ def _discover_html(site_root: Path) -> list[Path]:
             path = current_path / filename
             if path.is_symlink() or not stat.S_ISREG(path.lstat().st_mode):
                 raise SyncError(f"Guide HTML must be a regular file: {path}")
+            if _is_google_site_verification(path, site_root):
+                continue
             paths.append(path)
     if not paths:
         raise SyncError("Guide contains no HTML files")

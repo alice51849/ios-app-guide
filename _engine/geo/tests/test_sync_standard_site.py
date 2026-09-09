@@ -176,6 +176,39 @@ class ContractSyncTests(ProjectScratchCase):
         self.assertNotIn(sync.DOCUMENT_COLLECTION, other_source)
         self.assertTrue(self.state.is_file())
 
+    def test_preserves_exact_root_google_site_verification_file(self):
+        verification = self.write_html(
+            "google95a1dbd7e816488b.html",
+            "google-site-verification: google95a1dbd7e816488b.html\n",
+        )
+        self.write_html(
+            "index.html",
+            "<html><head><title>Home</title></head><body>Home</body></html>\n",
+        )
+        original = verification.read_bytes()
+
+        result = sync.synchronize_payload(
+            self.contract(), site_root=self.site, state_path=self.state
+        )
+
+        self.assertEqual(1, result.html_files)
+        self.assertEqual(original, verification.read_bytes())
+
+    def test_malformed_google_site_verification_file_still_fails_closed(self):
+        self.write_html(
+            "google95a1dbd7e816488b.html",
+            "google-site-verification: another-file.html\n",
+        )
+        self.write_html(
+            "index.html",
+            "<html><head><title>Home</title></head><body>Home</body></html>\n",
+        )
+
+        with self.assertRaisesRegex(sync.SyncError, "invalid head structure"):
+            sync.synchronize_payload(
+                self.contract(), site_root=self.site, state_path=self.state
+            )
+
     def test_second_run_is_byte_identical_and_preserves_unmanaged_standard_tag(self):
         page = self.write_html(
             "index.html",

@@ -20,12 +20,12 @@ sys.path.insert(0, str(ROOT / "social"))
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 from aeo_pages import pricing_profile  # noqa: E402
-from appstore_live import live_app_keys  # noqa: E402
+import live_app_guard  # noqa: E402
 from build_pages_i18n import pricing_text_for  # noqa: E402
 from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
-PAGES = HERE / "pages"
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
@@ -1201,6 +1201,8 @@ def owns_unlisted_app(
     path: Path, app_ids: set[str], app_names: set[str] | None = None
 ) -> bool:
     text = path.read_text(encoding="utf-8", errors="ignore")
+    if live_app_guard._store_ids(text) & (set(APPSTORE.values()) - app_ids):
+        return False
     if any(text.count(f"/id{app_id}") >= 2 for app_id in app_ids):
         return True
     names = {name.casefold() for name in (app_names or set())}
@@ -1357,6 +1359,9 @@ def prune_find_app(
 
 
 def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
+    live_ids = {str(APPSTORE[key]) for key in live_keys}
+    if not live_ids:
+        raise RuntimeError("Refusing cleanup with an empty verified live inventory")
     locales = locale_dirs(pages)
     locale_names = {path.name for path in locales}
     root_alt = pages / "alternatives"
@@ -1379,6 +1384,8 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         "rewritten_html": 0,
         "updated_indexes": 0,
         "removed_sitemap_urls": 0,
+        "nonlive_html": 0,
+        "nonlive_sitemaps": 0,
     }
 
     unlisted_ids = {APPSTORE[key] for key in unlisted_keys}
@@ -1426,6 +1433,22 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
     stats["redirected_hourstag_guides"] = (
         reconcile_hourstag_guide_redirects(pages, locales)
     )
+
+    # Preserve the existing exact-page pruning and free-tool repair semantics.
+    # Then quarantine legacy families before caching canonical/indexability data.
+    for tools_dir in [pages / "tools", *(path / "tools" for path in locales)]:
+        if not tools_dir.is_dir():
+            continue
+        for tool_page in tools_dir.glob("*.html"):
+            if scrub_unlisted_tool_promotions(
+                tool_page, unlisted_ids, inactive_names
+            ):
+                stats["rewritten_html"] += 1
+    guard = live_app_guard.quarantine_nonlive_pages(
+        pages, apply=True, live_ids=live_ids,
+    )
+    stats["nonlive_html"] = guard["html"]
+    stats["nonlive_sitemaps"] = guard["sitemaps"]
 
     tree = SiteTreeIndex(pages)
     for locale_dir in locales:
@@ -1481,15 +1504,6 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
             ):
                 stats["rewritten_html"] += 1
 
-    for tools_dir in [pages / "tools", *(path / "tools" for path in locales)]:
-        if not tools_dir.is_dir():
-            continue
-        for tool_page in tools_dir.glob("*.html"):
-            if scrub_unlisted_tool_promotions(
-                tool_page, unlisted_ids, inactive_names
-            ):
-                stats["rewritten_html"] += 1
-
     if prune_apps_json(pages / "apps.json", unlisted_ids):
         stats["rewritten_html"] += 1
     if prune_find_app(pages / "find-app.html", inactive_keys, inactive_names):
@@ -1541,10 +1555,10 @@ def main() -> int:
     parser.add_argument(
         "--cached-live",
         action="store_true",
-        help="Use the last verified App Store snapshot without a network refresh.",
+        help="Compatibility flag; cleanup always consumes the shared live manifest without lookup.",
     )
-    args = parser.parse_args()
-    live = live_app_keys(APPSTORE, str(PAGES), refresh=not args.cached_live)
+    parser.parse_args()
+    live = set(live_app_guard.live_apps())
     print(json.dumps(cleanup(PAGES, live), ensure_ascii=False, sort_keys=True))
     return 0
 

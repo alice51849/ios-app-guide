@@ -11,4 +11,4 @@ input[data-field=studied_on],#today-date{direction:ltr;text-align:start}
 @media(max-width:900px){.totals.review-totals{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:780px){.totals.review-totals{gap:10px;padding:14px 16px}.review-totals .total-value{font-size:clamp(1.2rem,3vw,1.8rem)}.fields .small{display:none}}
 @media(max-width:640px){.note-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.note-row>.name-field{grid-column:1/-1}.note-row>[data-remove]{grid-column:1/-1;justify-self:end}}
-@media(max-width:420px){.note-row{grid-template-columns:1fr}.totals.review-totals{grid-template-columns:1fr;gap:6px;padding:10px 12px}.totals.review-totals>div{min-height:0}.review-totals .total-value{font-size:1rem;line-height:1.3}}
+@media(max-width:420px){.note-row{grid-template-columns:1fr}.totals.review-totals{grid-template-columns:1fr;gap:6px;padding:10px 12px}.totals.review-totals>div{display:grid;grid-template-columns:minmax(0,1fr) auto;min-height:0}.totals.review-totals>div:last-child{grid-template-columns:1fr}.review-totals .total-value{font-size:1rem;line-height:1.3;min-width:max-content;overflow-wrap:normal;white-space:nowrap}}

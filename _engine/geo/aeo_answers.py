@@ -54,6 +54,13 @@ TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
 FREE_RESOURCE_FIRST_META = (
     '<meta name="iag-free-resource-first" content="true">'
 )
+MONEYTAG_RATE_PRIVACY_DISCLOSURE = (
+    "Ledger data stays on the device, and saved or manual exchange rates work "
+    "offline. Automatic rate updates contact Frankfurter or ExchangeRate-API; "
+    "their Cloudflare infrastructure may process connection, usage and "
+    "diagnostic data for functionality and analytics, as disclosed in the "
+    "app's privacy information."
+)
 
 # Commercial focus first, then share-of-voice within each tier. Every public app
 # remains eligible; this only prevents the daily limit from being spent on the
@@ -971,7 +978,26 @@ def render_page(
     style = extract_style(effective_pages_root)
     primary_resource_url = content.get("primary_resource_url", "")
     primary_resource_label = content.get("primary_resource_label", "")
-    faq = content["faq"]
+    faq = list(content["faq"])
+    if key == "moneytag":
+        moneytag_copy = [
+            *content["short_answer_paragraphs"],
+            *(str(item.get("a", "")) for item in faq),
+        ]
+        required_disclosures = (
+            "Ledger data stays on the device",
+            "Automatic rate updates contact Frankfurter or ExchangeRate-API",
+        )
+        if not all(
+            any(required in paragraph for paragraph in moneytag_copy)
+            for required in required_disclosures
+        ):
+            faq.append(
+                {
+                    "q": "Does MoneyTag work offline, and when does it use the network?",
+                    "a": MONEYTAG_RATE_PRIVACY_DISCLOSURE,
+                }
+            )
     breadcrumb = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",

@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 46,
-    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
-    "copy_sha256": "58addba3b868fa27fa61ccf66ed8263af07df0354e897dc515ec22c18a8a9716",
+    "expected_app_count": 47,
+    "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
+    "copy_sha256": "83996c01ec5091a81a52086ded3f99afb44fa42f9d399bc129be47a481875c19",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -1341,6 +1341,34 @@
             "Confirm each tool's free-use allowance and lifetime-unlock scope."
           ],
           "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+        }
+      }
+    },
+    {
+      "app_key": "zipbox",
+      "route_slug": "open-encrypted-and-split-archives-on-iphone",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [0, 2, 4],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone and iPad users often receive a password-protected or split archive through email, chat or cloud storage when no desktop computer is nearby.",
+          "query": "Which pay-once iPhone app can open encrypted or split ZIP, RAR and 7z archives without ads?",
+          "buyer_problem": "A basic ZIP opener stops being useful when a client, coworker or download sends RAR5, encrypted 7z, ZIP64 or multiple split volumes. The decision is whether one on-device archive tool covers the formats that actually arrive without adding an account, advertising or a recurring payment.",
+          "decision_rule": "Choose a paid-upfront archive utility when broad extraction support, password handling and predictable ownership matter more than cloud collaboration. Confirm creation separately from extraction because RAR and RAR5 can be opened but not created.",
+          "workflow_checks": [
+            "Can the app preview and extract encrypted ZIP or 7z without uploading the archive?",
+            "Can it join split ZIP, RAR or 7z volumes that arrive as several files?",
+            "Can it create ZIP or 7z when a smaller outgoing archive is needed?"
+          ],
+          "alternative_lens": "Apple's Files app is enough for an ordinary ZIP. A desktop archive suite is better for unsupported formats such as standalone Zstandard (.zst) or CAB, or when a large batch needs advanced repair and automation.",
+          "verify_before_install": [
+            "Match the sender's exact format, encryption and split-volume requirements against the supported list.",
+            "Confirm the current paid download price and remember that RAR and RAR5 are extraction-only."
+          ],
+          "evidence_refs": ["summary.en", "fact.purchase_model", "feature.0", "feature.1", "feature.2", "feature.3", "capability.no_ads"]
         }
       }
     },

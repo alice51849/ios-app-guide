@@ -29,6 +29,7 @@ from __future__ import annotations
 import re
 import sys
 import unittest
+from html import unescape
 from pathlib import Path
 
 GEO = Path(__file__).resolve().parents[1]
@@ -96,6 +97,49 @@ class AnswerNamesAppTests(unittest.TestCase):
                     meta,
                     r"[,;:]\s*\.",
                     f"meta for {question!r} ends a clause with a bare period: {meta}",
+                )
+
+    def test_moneytag_generic_answer_discloses_rate_network_boundary(self) -> None:
+        question = "app to track project expenses and income separately"
+        content = A.normalized_content(
+            A.default_content(question, "moneytag"),
+            question,
+            "moneytag",
+        )
+        content["short_answer_paragraphs"] = [
+            "Track each project's income and expenses in one ledger."
+        ]
+        content["faq"] = []
+
+        rendered = unescape(A.render_page(question, "moneytag", content))
+
+        self.assertIn("Ledger data stays on the device", rendered)
+        self.assertIn(
+            "Automatic rate updates contact Frankfurter or ExchangeRate-API",
+            rendered,
+        )
+        self.assertEqual([], content["faq"])
+
+    def test_every_planned_moneytag_answer_discloses_rate_boundary(
+        self,
+    ) -> None:
+        plan = A.question_plan(["moneytag"], refresh_live=False)
+        self.assertTrue(plan)
+        for key, question in plan:
+            with self.subTest(question=question):
+                content = A.normalized_content(
+                    A.default_content(question, key),
+                    question,
+                    key,
+                )
+                rendered = unescape(
+                    A.render_page(question, key, content)
+                )
+                self.assertIn("Ledger data stays on the device", rendered)
+                self.assertIn(
+                    "Automatic rate updates contact Frankfurter "
+                    "or ExchangeRate-API",
+                    rendered,
                 )
 
     def test_appended_sentence_only_restates_registry_facts(self) -> None:

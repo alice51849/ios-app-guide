@@ -22,6 +22,7 @@ from answer_text import (
     is_malformed_meta,
     is_malformed_localized_meta,
 )
+from official_locales import OFFICIAL_LOCALE_SET
 from videogen.registry import APPS, APPSTORE
 
 
@@ -55,6 +56,13 @@ PASSPORT_SIGNAL_RES = tuple(
         r"photo crop",
     )
 )
+MONEYTAG_APP_ID = str(APPSTORE["moneytag"])
+MONEYTAG_REQUIRED_DISCLOSURES = (
+    "Ledger data stays on the device",
+    "Automatic rate updates contact Frankfurter or ExchangeRate-API",
+)
+MONEYTAG_LOCALIZATIONS_PATH = HERE.parent / "data" / "moneytag_full.json"
+_moneytag_localized_disclosures: dict[str, str] | None = None
 
 
 def _attribute(tag: str, name: str) -> str | None:
@@ -203,6 +211,123 @@ def answer_lead(source: str) -> str:
 def answer_content_text(source: str) -> str:
     match = ANSWER_CONTENT_RE.search(source)
     return _plain_text(match.group(1) if match else source)
+
+
+def moneytag_localized_privacy_disclosures() -> dict[str, str]:
+    global _moneytag_localized_disclosures
+    if _moneytag_localized_disclosures is not None:
+        return _moneytag_localized_disclosures
+
+    document = json.loads(
+        MONEYTAG_LOCALIZATIONS_PATH.read_text(encoding="utf-8")
+    )
+    if set(document) != OFFICIAL_LOCALE_SET:
+        missing = sorted(OFFICIAL_LOCALE_SET - set(document))
+        extra = sorted(set(document) - OFFICIAL_LOCALE_SET)
+        raise ValueError(
+            "MoneyTag privacy localization coverage differs from exact-50: "
+            f"missing={missing}, extra={extra}"
+        )
+
+    disclosures: dict[str, str] = {}
+    markers = (
+        "Frankfurter",
+        "ExchangeRate-API",
+        "Cloudflare",
+        "api.frankfurter.dev",
+        "open.er-api.com",
+    )
+    for locale, localization in document.items():
+        description = str(localization.get("description") or "")
+        candidates = [
+            " ".join(line.split())
+            for line in description.splitlines()
+            if all(marker in line for marker in markers)
+        ]
+        if len(candidates) != 1 or len(candidates[0]) < 250:
+            raise ValueError(
+                "MoneyTag privacy localization must contain one complete "
+                f"network-boundary paragraph: {locale}"
+            )
+        disclosures[locale] = candidates[0]
+    _moneytag_localized_disclosures = disclosures
+    return disclosures
+
+
+def moneytag_localized_privacy_disclosure(locale: str) -> str:
+    try:
+        return moneytag_localized_privacy_disclosures()[locale]
+    except KeyError as exc:
+        raise ValueError(
+            f"MoneyTag privacy disclosure has no official locale: {locale}"
+        ) from exc
+
+
+def is_moneytag_answer(source: str) -> bool:
+    for tag in META_TAG_RE.findall(source):
+        if (_attribute(tag, "name") or "").casefold() != "apple-itunes-app":
+            continue
+        content = _attribute(tag, "content") or ""
+        match = re.search(r"(?:^|,\s*)app-id=(\d+)(?:,|$)", content)
+        if match and match.group(1) == MONEYTAG_APP_ID:
+            return True
+    return False
+
+
+def missing_moneytag_privacy_disclosures(
+    source: str,
+    locale: str | None = None,
+) -> tuple[str, ...]:
+    if not is_moneytag_answer(source):
+        return ()
+    visible = answer_content_text(source)
+    if locale is not None:
+        disclosure = moneytag_localized_privacy_disclosure(locale)
+        return (
+            ()
+            if disclosure in visible
+            else ("localized MoneyTag privacy and exchange-rate boundary",)
+        )
+    return tuple(
+        disclosure
+        for disclosure in MONEYTAG_REQUIRED_DISCLOSURES
+        if disclosure not in visible
+    )
+
+
+def planned_moneytag_privacy_repair(
+    path: Path,
+    source: str | None = None,
+    locale: str | None = None,
+) -> str | None:
+    if source is None:
+        source = path.read_text(encoding="utf-8")
+    if not missing_moneytag_privacy_disclosures(source, locale):
+        return None
+    main_closes = list(
+        re.finditer(r"</main>", source, flags=re.IGNORECASE)
+    )
+    if not main_closes:
+        raise ValueError(f"MoneyTag Answer has no closing main element: {path}")
+    disclosure = html.escape(
+        (
+            moneytag_localized_privacy_disclosure(locale)
+            if locale is not None
+            else aeo_answers.MONEYTAG_RATE_PRIVACY_DISCLOSURE
+        )
+    )
+    heading = (
+        "MoneyTag"
+        if locale is not None
+        else "MoneyTag privacy and exchange-rate boundary"
+    )
+    notice = (
+        '<section class="wrap card moneytag-network-boundary">'
+        f"<h2>{heading}</h2>"
+        f"<p>{disclosure}</p></section>"
+    )
+    position = main_closes[-1].start()
+    return source[:position] + notice + source[position:]
 
 
 def has_cross_topic_passport_content(source: str) -> bool:
@@ -440,6 +565,15 @@ def _audit_english_source(
                     "detail": _element_text(source, "h1"),
                 }
             )
+        missing_disclosures = missing_moneytag_privacy_disclosures(source)
+        if missing_disclosures:
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "moneytag-privacy-boundary",
+                    "detail": ", ".join(missing_disclosures),
+                }
+            )
         unexpected_apps = unexpected_portfolio_apps_in_lead(source, path)
         if unexpected_apps:
             issues.append(
@@ -506,6 +640,18 @@ def _audit_localized_source(
                     "detail": ", ".join(structured_data_issues),
                 }
             )
+        missing_disclosures = missing_moneytag_privacy_disclosures(
+            source,
+            locale,
+        )
+        if missing_disclosures:
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "moneytag-localized-privacy-boundary",
+                    "detail": ", ".join(missing_disclosures),
+                }
+            )
         unexpected_apps = unexpected_portfolio_apps_in_lead(source, path)
         if unexpected_apps:
             issues.append(
@@ -549,6 +695,7 @@ def audit_pages(pages: Path = PAGES) -> list[dict[str, str]]:
 def repair(pages: Path = PAGES) -> dict[str, int]:
     english_paths = _english_answer_paths(pages)
     refreshed = 0
+    moneytag_privacy = 0
     operations: list[tuple[Path, str, bool]] = []
     issues: list[dict[str, str]] = []
     for path in english_paths:
@@ -556,25 +703,48 @@ def repair(pages: Path = PAGES) -> dict[str, int]:
         if refresh_cross_topic_page(path, pages, source):
             refreshed += 1
             source = path.read_text(encoding="utf-8")
-        updated = planned_page_metadata_repair(path, source=source)
+        privacy_updated = planned_moneytag_privacy_repair(
+            path,
+            source=source,
+        )
+        privacy_source = privacy_updated or source
+        if privacy_updated is not None:
+            moneytag_privacy += 1
+        updated = planned_page_metadata_repair(
+            path,
+            source=privacy_source,
+        )
         if updated is not None:
             operations.append((path, updated, True))
-        _audit_english_source(issues, path, updated or source)
+        elif privacy_updated is not None:
+            operations.append((path, privacy_updated, False))
+        _audit_english_source(issues, path, updated or privacy_source)
     localized_metadata = 0
     localized_microformats = 0
     localized_structured_data = 0
+    localized_moneytag_privacy = 0
     for directory in _localized_answer_dirs(pages):
         locale = directory.parent.name
         for path in sorted(directory.glob("*.html")):
             if path.name == "index.html":
                 continue
             source = path.read_text(encoding="utf-8")
+            privacy_updated = planned_moneytag_privacy_repair(
+                path,
+                source=source,
+                locale=locale,
+            )
+            privacy_source = privacy_updated or source
+            if privacy_updated is not None:
+                localized_moneytag_privacy += 1
             updated = planned_page_metadata_repair(
                 path,
                 english=False,
-                source=source,
+                source=privacy_source,
             )
-            metadata_source = updated if updated is not None else source
+            metadata_source = (
+                updated if updated is not None else privacy_source
+            )
             reconciled = aeo_answers_i18n.reconcile_microformat_url(
                 metadata_source,
                 locale,
@@ -599,6 +769,7 @@ def repair(pages: Path = PAGES) -> dict[str, int]:
     english_metadata = sum(int(english) for _, _, english in operations)
     if refreshed:
         aeo_answers.regenerate_index(pages)
+    if refreshed or moneytag_privacy:
         aeo_answers.write_sitemap(pages)
     if issues:
         sample = json.dumps(issues[:10], ensure_ascii=False, indent=2)
@@ -607,6 +778,8 @@ def repair(pages: Path = PAGES) -> dict[str, int]:
         )
     return {
         "refreshed_cross_topic": refreshed,
+        "repaired_moneytag_privacy": moneytag_privacy,
+        "repaired_localized_moneytag_privacy": localized_moneytag_privacy,
         "repaired_english_metadata": english_metadata,
         "repaired_localized_metadata": localized_metadata,
         "repaired_localized_microformats": localized_microformats,

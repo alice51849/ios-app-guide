@@ -339,7 +339,7 @@ jobs:
           python3 gen_llms.py --cached-live
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
-          python3 reconcile_answer_semantics.py
+          python3 reconcile_answer_semantics.py --repair
           python3 outreach_scorecard.py --require-complete
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/sync_standard_site.py \
@@ -373,7 +373,7 @@ jobs:
                 --timeout 10 \
                 --retries 3 \
                 --retry-delay 2
-              python3 _engine/geo/reconcile_answer_semantics.py
+              python3 _engine/geo/reconcile_answer_semantics.py --repair
               cd _engine/geo
               python3 dedupe_locale_meta.py --apply
               python3 gen_locale_indexation.py
@@ -501,7 +501,7 @@ jobs:
             --timeout 10 \
             --retries 3 \
             --retry-delay 2
-          python3 _engine/geo/reconcile_answer_semantics.py
+          python3 _engine/geo/reconcile_answer_semantics.py --repair
           cd _engine/geo
           python3 live_app_guard.py --site-root pages
           # One inventory powers both passes. The second sitemap pass is
@@ -567,7 +567,7 @@ jobs:
                   --timeout 10 \
                   --retries 3 \
                   --retry-delay 2
-                python3 _engine/geo/reconcile_answer_semantics.py
+                python3 _engine/geo/reconcile_answer_semantics.py --repair
                 cd _engine/geo
                 python3 dedupe_locale_meta.py --apply
                 python3 high_intent_decision_routes.py \

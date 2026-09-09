@@ -83,35 +83,20 @@ GUIDE_WORKFLOW = GUIDE_REPOSITORY / ".github" / "workflows" / "geo-daily.yml"
 GROWTH_REPOSITORY = Path(
     os.environ.get("HIGH_INTENT_GROWTH_REPOSITORY", GEO.parent)
 )
-INVENTORY_PATH = (
-    Path(os.environ["HIGH_INTENT_TEST_INVENTORY"])
-    if os.environ.get("HIGH_INTENT_TEST_INVENTORY")
-    else GUIDE_REPOSITORY / "data" / routes.INVENTORY_FILENAME
-)
+
+
+def current_guide_inventory_path() -> Path:
+    repository = DEPLOYED_GUIDE_REPOSITORY or GUIDE_REPOSITORY
+    canonical = repository / "data" / routes.INVENTORY_FILENAME
+    override = os.environ.get("HIGH_INTENT_TEST_INVENTORY")
+    if override and Path(override).resolve() != canonical.resolve():
+        raise AssertionError(
+            "HIGH_INTENT_TEST_INVENTORY cannot override canonical Guide inventory"
+        )
+    return canonical
 
 
 def guide_gitlink_revision() -> str:
-    if DEPLOYED_GUIDE_REPOSITORY is not None:
-        result = subprocess.run(
-            [
-                "git",
-                "-C",
-                str(DEPLOYED_GUIDE_REPOSITORY),
-                "rev-parse",
-                "--verify",
-                "HEAD^{commit}",
-            ],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        revision = result.stdout.strip()
-        if result.returncode != 0 or len(revision) != 40:
-            raise AssertionError(
-                "Deployed Guide checkout must have one resolved HEAD commit"
-            )
-        return revision
-
     result = subprocess.run(
         ["git", "-C", str(GROWTH_REPOSITORY), "ls-files", "--stage", "geo/pages"],
         capture_output=True, text=True, check=False,
@@ -126,6 +111,295 @@ def guide_gitlink_revision() -> str:
     ):
         raise AssertionError("GrowthEngine must pin one resolved geo/pages gitlink")
     return fields[1]
+
+
+def write_contracted_guide_inventory(
+    root: Path,
+    app_keys: tuple[str, ...],
+) -> Path:
+    if DEPLOYED_GUIDE_REPOSITORY is not None:
+        # The workflow rebuilds this canonical file before running tests.
+        inventory = json.loads(
+            current_guide_inventory_path().read_text(encoding="utf-8")
+        )
+    else:
+        revision = guide_gitlink_revision()
+        result = subprocess.run(
+            [
+                "git",
+                "-C",
+                str(GUIDE_REPOSITORY),
+                "show",
+                f"{revision}:data/{routes.INVENTORY_FILENAME}",
+            ],
+            capture_output=True,
+            check=False,
+        )
+        if result.returncode != 0:
+            raise AssertionError(
+                f"Unable to read Guide inventory at {revision}: "
+                f"{result.stderr.decode(errors='replace').strip()}"
+            )
+        inventory = json.loads(result.stdout)
+
+    expected = set(app_keys)
+    missing = sorted(expected - {app["key"] for app in inventory["apps"]})
+    if missing:
+        raise AssertionError(
+            f"Guide inventory is missing expected release app keys: {missing}"
+        )
+    inventory["apps"] = [
+        app for app in inventory["apps"] if app["key"] in expected
+    ]
+    if len(inventory["apps"]) != len(expected):
+        raise AssertionError("Guide inventory repeats expected release app keys")
+    inventory["record_count"] = len(inventory["apps"])
+    inventory_path = root / "inventory-contracted.json"
+    inventory_path.write_text(
+        json.dumps(inventory, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    return inventory_path
+
+
+class HighIntentInventoryContextTests(unittest.TestCase):
+    def setUp(self) -> None:
+        scratch = tempfile.TemporaryDirectory(
+            prefix=".high-intent-context-test-",
+            dir=GEO / "tests",
+        )
+        self.addCleanup(scratch.cleanup)
+        self.root = Path(scratch.name)
+        self.guide = self.root / "guide"
+        self.growth = self.root / "growth"
+        self.inventory_path = self.guide / "data" / routes.INVENTORY_FILENAME
+        self.inventory_path.parent.mkdir(parents=True)
+        self.output = self.root / "output"
+        self.output.mkdir()
+        self.app_keys = ("reviewed-one", "reviewed-two")
+        self.inventory = {
+            "record_count": 2,
+            "apps": [
+                {"key": key, "name": key} for key in self.app_keys
+            ],
+        }
+        self.write_current_inventory(self.inventory)
+        context = mock.patch.dict(
+            globals(),
+            {
+                "DEPLOYED_GUIDE_REPOSITORY": self.guide,
+                "GUIDE_REPOSITORY": self.root / "unrelated-guide",
+                "GROWTH_REPOSITORY": self.growth,
+            },
+        )
+        context.start()
+        self.addCleanup(context.stop)
+        environment = mock.patch.dict(
+            os.environ, {"HIGH_INTENT_TEST_INVENTORY": ""}
+        )
+        environment.start()
+        self.addCleanup(environment.stop)
+
+    def write_current_inventory(self, inventory: dict) -> None:
+        self.inventory_path.write_text(
+            json.dumps(inventory), encoding="utf-8"
+        )
+
+    @staticmethod
+    def git(repository: Path, *arguments: str) -> str:
+        return subprocess.run(
+            [
+                "git",
+                "-C",
+                str(repository),
+                "-c",
+                "user.name=Inventory Fixture",
+                "-c",
+                "user.email=inventory-fixture@example.invalid",
+                "-c",
+                "commit.gpgSign=false",
+                "-c",
+                "core.hooksPath=/dev/null",
+                *arguments,
+            ],
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+
+    def pin_committed_inventory(self) -> str:
+        self.git(self.guide, "init", "--quiet")
+        self.git(self.guide, "add", "data")
+        self.git(self.guide, "commit", "--quiet", "-m", "Inventory fixture")
+        revision = self.git(self.guide, "rev-parse", "HEAD")
+        self.growth.mkdir()
+        self.git(self.growth, "init", "--quiet")
+        self.git(
+            self.growth,
+            "update-index",
+            "--add",
+            "--cacheinfo",
+            f"160000,{revision},geo/pages",
+        )
+        context = mock.patch.dict(
+            globals(),
+            {
+                "DEPLOYED_GUIDE_REPOSITORY": None,
+                "GUIDE_REPOSITORY": self.guide,
+            },
+        )
+        context.start()
+        self.addCleanup(context.stop)
+        return revision
+
+    def test_deployed_missing_expected_app_fails_before_writing_fixture(self):
+        for apps in (
+            self.inventory["apps"][:1],
+            [self.inventory["apps"][0], {"key": "new-live-app"}],
+        ):
+            with self.subTest(keys=[app["key"] for app in apps]):
+                self.write_current_inventory(
+                    {"record_count": len(apps), "apps": apps}
+                )
+                with self.assertRaisesRegex(
+                    AssertionError,
+                    "missing expected release app keys.*reviewed-two",
+                ):
+                    write_contracted_guide_inventory(self.output, self.app_keys)
+                self.assertEqual([], list(self.output.iterdir()))
+
+    def test_deployed_extra_app_does_not_pollute_exact_fixture(self):
+        inventory = deepcopy(self.inventory)
+        inventory["apps"].append({"key": "new-live-app"})
+        inventory["record_count"] = len(inventory["apps"])
+        self.write_current_inventory(inventory)
+        original = self.inventory_path.read_bytes()
+
+        fixture = write_contracted_guide_inventory(self.output, self.app_keys)
+
+        self.assertEqual(self.inventory, json.loads(fixture.read_text()))
+        self.assertEqual(original, self.inventory_path.read_bytes())
+        self.assertIn(
+            "new-live-app",
+            {app["key"] for app in json.loads(original)["apps"]},
+        )
+
+    def test_deployed_duplicate_expected_app_fails_closed(self):
+        inventory = deepcopy(self.inventory)
+        inventory["apps"].append(deepcopy(inventory["apps"][0]))
+        inventory["record_count"] = len(inventory["apps"])
+        self.write_current_inventory(inventory)
+        with self.assertRaisesRegex(
+            AssertionError, "repeats expected release app keys"
+        ):
+            write_contracted_guide_inventory(self.output, self.app_keys)
+        self.assertEqual([], list(self.output.iterdir()))
+
+    def test_deployed_env_path_cannot_bypass_missing_expected_app(self):
+        override = self.root / "override.json"
+        override.write_bytes(self.inventory_path.read_bytes())
+        self.write_current_inventory(
+            {"record_count": 1, "apps": self.inventory["apps"][:1]}
+        )
+        with mock.patch.dict(
+            os.environ, {"HIGH_INTENT_TEST_INVENTORY": str(override)}
+        ):
+            with self.assertRaisesRegex(
+                AssertionError, "HIGH_INTENT_TEST_INVENTORY.*canonical"
+            ):
+                write_contracted_guide_inventory(self.output, self.app_keys)
+        self.assertEqual([], list(self.output.iterdir()))
+
+    def test_deployed_canonical_inventory_never_consults_git_head(self):
+        with (
+            mock.patch.dict(
+                os.environ,
+                {"HIGH_INTENT_TEST_INVENTORY": str(self.inventory_path)},
+            ),
+            mock.patch.object(subprocess, "run") as run,
+        ):
+            self.assertEqual(
+                self.inventory_path, current_guide_inventory_path()
+            )
+            fixture = write_contracted_guide_inventory(
+                self.output, self.app_keys
+            )
+            run.assert_not_called()
+        self.assertEqual(self.inventory, json.loads(fixture.read_text()))
+
+    def test_deployed_missing_canonical_inventory_has_no_fallback(self):
+        self.inventory_path.unlink()
+        with mock.patch.object(subprocess, "run") as run:
+            with self.assertRaises(FileNotFoundError):
+                write_contracted_guide_inventory(self.output, self.app_keys)
+            run.assert_not_called()
+        self.assertEqual([], list(self.output.iterdir()))
+
+    def test_growth_fixture_reads_real_gitlink_blob_not_mutable_inventory(self):
+        inventory = deepcopy(self.inventory)
+        inventory["apps"].append({"key": "new-live-app"})
+        inventory["record_count"] = len(inventory["apps"])
+        self.write_current_inventory(inventory)
+        revision = self.pin_committed_inventory()
+        self.write_current_inventory(
+            {"record_count": 1, "apps": [{"key": "mutable-current-app"}]}
+        )
+
+        self.assertEqual(revision, guide_gitlink_revision())
+        fixture = write_contracted_guide_inventory(self.output, self.app_keys)
+
+        self.assertEqual(self.inventory, json.loads(fixture.read_text()))
+        self.assertEqual(
+            ["mutable-current-app"],
+            [
+                app["key"]
+                for app in json.loads(self.inventory_path.read_text())["apps"]
+            ],
+        )
+
+    def test_growth_missing_expected_app_in_committed_blob_fails_closed(self):
+        self.write_current_inventory(
+            {"record_count": 1, "apps": self.inventory["apps"][:1]}
+        )
+        self.pin_committed_inventory()
+        self.write_current_inventory(self.inventory)
+        with self.assertRaisesRegex(
+            AssertionError, "missing expected release app keys.*reviewed-two"
+        ):
+            write_contracted_guide_inventory(self.output, self.app_keys)
+        self.assertEqual([], list(self.output.iterdir()))
+
+    def test_growth_missing_committed_blob_cannot_use_current_inventory(self):
+        self.pin_committed_inventory()
+        self.git(self.guide, "rm", "--quiet", str(self.inventory_path))
+        self.git(self.guide, "commit", "--quiet", "-m", "Remove fixture")
+        revision = self.git(self.guide, "rev-parse", "HEAD")
+        self.git(
+            self.growth,
+            "update-index",
+            "--cacheinfo",
+            f"160000,{revision},geo/pages",
+        )
+        self.inventory_path.parent.mkdir(parents=True, exist_ok=True)
+        self.write_current_inventory(self.inventory)
+        with self.assertRaisesRegex(AssertionError, "Unable to read Guide inventory"):
+            write_contracted_guide_inventory(self.output, self.app_keys)
+        self.assertEqual([], list(self.output.iterdir()))
+
+    def test_growth_rejects_regular_file_instead_of_gitlink(self):
+        self.pin_committed_inventory()
+        blob = self.git(
+            self.guide, "rev-parse", f"HEAD:data/{routes.INVENTORY_FILENAME}"
+        )
+        self.git(
+            self.growth,
+            "update-index",
+            "--cacheinfo",
+            f"100644,{blob},geo/pages",
+        )
+        with self.assertRaisesRegex(AssertionError, "resolved geo/pages gitlink"):
+            write_contracted_guide_inventory(self.output, self.app_keys)
+        self.assertEqual([], list(self.output.iterdir()))
 
 
 class HighIntentRouteSourceTests(unittest.TestCase):
@@ -1059,90 +1333,27 @@ class HighIntentManagedOutputTests(unittest.TestCase):
 class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.trusted_guide_revision = guide_gitlink_revision()
-        if not INVENTORY_PATH.is_file():
+        cls.inventory_path = current_guide_inventory_path()
+        if not cls.inventory_path.is_file():
             raise AssertionError(
-                f"Current Guide inventory mount is required: {INVENTORY_PATH}"
+                f"Current Guide inventory mount is required: {cls.inventory_path}"
             )
-        revision = subprocess.run(
-            [
-                "git",
-                "-C",
-                str(GUIDE_REPOSITORY),
-                "cat-file",
-                "-e",
-                f"{cls.trusted_guide_revision}^{{commit}}",
-            ],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        if revision.returncode != 0:
-            raise AssertionError(
-                "Trusted Guide revision is not mounted in the real Guide "
-                f"repository: {revision.stderr.strip()}"
-            )
-        cls.apps = routes.load_inventory(INVENTORY_PATH)
+        cls.apps = routes.load_inventory(cls.inventory_path)
         cls.source = routes.load_route_source(SOURCE_PATH)
         cls.release = routes.release_expectations(cls.source)
         cls.records, cls.report = routes.build(
-            inventory_path=INVENTORY_PATH,
+            inventory_path=cls.inventory_path,
             source_path=SOURCE_PATH,
             provider_token=TEST_PROVIDER_TOKEN,
             allow_new_live_app_gaps=True,
         )
 
     @classmethod
-    def write_guide_inventory(
-        cls,
-        root: Path,
-        revision: str | None = None,
-    ) -> Path:
-        revision = revision or cls.trusted_guide_revision
-        inventory_path = root / f"inventory-{revision[:12]}.json"
-        if DEPLOYED_GUIDE_REPOSITORY is not None:
-            if revision != guide_gitlink_revision():
-                raise AssertionError(
-                    "Deployed Guide inventory must stay bound to resolved HEAD"
-                )
-            shutil.copy2(INVENTORY_PATH, inventory_path)
-            return inventory_path
-        result = subprocess.run(
-            [
-                "git",
-                "-C",
-                str(GUIDE_REPOSITORY),
-                "show",
-                (
-                    f"{revision}:data/"
-                    f"{routes.INVENTORY_FILENAME}"
-                ),
-            ],
-            capture_output=True,
-            check=False,
-        )
-        if result.returncode != 0:
-            raise AssertionError(
-                f"Unable to read Guide inventory at {revision}: "
-                f"{result.stderr.decode(errors='replace').strip()}"
-            )
-        inventory_path.write_bytes(result.stdout)
-        return inventory_path
+    def write_guide_inventory(cls, root: Path) -> Path:
+        return write_contracted_guide_inventory(root, cls.release["app_keys"])
 
     def exact_contracted_inventory(self, root: Path) -> Path:
-        inventory_path = self.write_guide_inventory(root)
-        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
-        contracted = set(self.release["app_keys"])
-        inventory["apps"] = [
-            app for app in inventory["apps"] if app.get("key") in contracted
-        ]
-        inventory["record_count"] = len(inventory["apps"])
-        exact_path = root / "inventory-contracted.json"
-        exact_path.write_text(
-            json.dumps(inventory, ensure_ascii=False),
-            encoding="utf-8",
-        )
-        return exact_path
+        return self.write_guide_inventory(root)
 
     def expanded_contract_fixture(
         self,
@@ -1151,14 +1362,10 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
         extra_apps: int,
         include_route_copy: bool,
     ) -> tuple[Path, Path, list[str]]:
-        inventory = json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
+        inventory = json.loads(
+            self.write_guide_inventory(root).read_text(encoding="utf-8")
+        )
         source = deepcopy(self.source)
-        contracted_keys = set(self.release["app_keys"])
-        inventory["apps"] = [
-            app
-            for app in inventory["apps"]
-            if app.get("key") in contracted_keys
-        ]
         new_keys: list[str] = []
         for offset in range(extra_apps):
             app_template = deepcopy(inventory["apps"][offset])
@@ -1332,7 +1539,7 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
         shutil.copy2(routes.SYNC_CONTRACT_PATH, contract_target)
         return current_source
 
-    def test_gitlink_base_inventory_recomputes_the_reviewed_contract(self):
+    def test_context_inventory_recomputes_the_reviewed_contract(self):
         with tempfile.TemporaryDirectory(
             prefix=".high-intent-gitlink-base-test-",
             dir=GEO / "tests",
@@ -1343,10 +1550,6 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             contracted_apps = [apps[key] for key in self.release["app_keys"]]
             app_keys_sha256, copy_sha256 = routes._inventory_digests(
                 contracted_apps
-            )
-            self.assertEqual(
-                self.trusted_guide_revision,
-                guide_gitlink_revision(),
             )
             self.assertEqual(self.release["app_count"], len(apps))
             self.assertEqual(expected_keys, set(apps))
@@ -1407,7 +1610,7 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             pages = Path(scratch)
             inventory_target = pages / "data" / routes.INVENTORY_FILENAME
             inventory_target.parent.mkdir(parents=True)
-            shutil.copy2(INVENTORY_PATH, inventory_target)
+            shutil.copy2(self.inventory_path, inventory_target)
             self.write_sitemap_index(pages)
             commands: list[tuple[str, ...]] = []
             run_commands: list[tuple[str, ...]] = []
@@ -1822,7 +2025,7 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
                 )
             self.assertFalse((root / routes.DEPLOYMENT_RELATIVE).exists())
 
-    def test_gitlink_inventory_passes_strict_pages_closure(self):
+    def test_contracted_inventory_passes_strict_pages_closure(self):
         with tempfile.TemporaryDirectory(
             prefix=".high-intent-gitlink-exact-test-",
             dir=GEO / "tests",

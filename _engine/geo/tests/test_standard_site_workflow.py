@@ -53,7 +53,7 @@ MIRROR_SHA256 = {
         "393067b95201a7b671ea5127d31ce0e489085ea0e4794d647615d461e872d30f"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "241e9266d539fdc55bf1672f59d4d14964381b5791db7ef6d31cabb970d298c5"
+        "1f588adfcd36e4818ecb761009655b2f70d91499555bde45f18afe9df24a9feb"
     ),
 }
 

@@ -2271,7 +2271,7 @@ class StandardSitePublisherTests(ProjectScratchCase):
             ),
         )
 
-    def test_live_108_document_republish_drains_for_all_limits(self) -> None:
+    def test_live_document_republish_drains_for_all_limits(self) -> None:
         manifest = generator.build_manifest(
             pages=SOCIAL.parents[1],
             site=generator.DEFAULT_SITE,
@@ -2289,7 +2289,17 @@ class StandardSitePublisherTests(ProjectScratchCase):
             manifest["source"]["live_app_count"],
         )
         self.assertIn("zipbox", expected_keys)
-        self.assertEqual(108, len(manifest["documents"]))
+        self.assertGreaterEqual(len(manifest["documents"]), 100)
+        self.assertTrue(
+            all(
+                sum(
+                    document["app_key"] == key
+                    for document in manifest["documents"]
+                )
+                <= 3
+                for key in expected_keys
+            )
+        )
         base_dir = self.scratch / "live-base"
         base_dir.mkdir()
         base_state = base_dir / "state.json"

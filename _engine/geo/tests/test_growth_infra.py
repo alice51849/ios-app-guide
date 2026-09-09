@@ -22751,6 +22751,11 @@ class GeneratorTests(unittest.TestCase):
                 ],
             ]
         )
+        demand_copy = " ".join(
+            [persona["query"], *persona["triggers"]]
+        ).casefold()
+        self.assertIn("paid app", persona["query"].casefold())
+        self.assertNotRegex(demand_copy, r"\bfree\b")
         self.assertIn("paid App Store download", copy)
         self.assertIn("no in-app purchases", copy)
         self.assertNotIn("extraction is free", copy)

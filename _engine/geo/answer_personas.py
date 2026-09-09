@@ -3353,11 +3353,11 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     # matrix: ZST and CAB are not supported, and RAR is extract-only.
     "zipbox": [
         {
-            "query": "app to open RAR and 7z files on iPhone without ads",
+            "query": "paid app to open RAR and 7z files on iPhone without ads",
             "guide_title": "Opening RAR, ZIP and 7z on iPhone: what to check",
             "triggers": [
                 "open rar files on iphone",
-                "extract 7z on iphone free",
+                "extract 7z files on iphone",
                 "unzip password protected zip iphone",
                 "archive extractor no ads no subscription",
                 "open split archive on iphone",

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Nincs fiók"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Továbbiak",
         "Ingyenes kezdés",
-        "Nincs fiók",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:zipbox",
+      "locale": "hu",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: RAR, ZIP, 7z kibontó",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: RAR, ZIP, 7z kibontó — Kicsomagolás reklám nélkül | iOS App",
+      "decision_context": "A Zipbox fizetős app az App Store-ban. Egy vásárlás minden funkciót ad, alkalmazáson belüli vásárlás, előfizetés és reklám nélkül. A Zipbox 13 formátumot kezel helyben. Semmi reklám, soha. Se banner, se teljes képernyős videó, se visszaszámlálás közted és a saját fájlod között. ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 és ISO kibontása Előbb nézd meg, aztán csomagold ki. Görgesd végig a listát, nézd meg a fényképeket, videókat, PDF-eket, szöveget és kódot, majd vedd ki csak azt az egy fájlt, amire tényleg szükséged van. Minden a készüléken történik. A Zipbox nem küld hálózati kérést, nincs benne fiók és bejelentkezés, és nincs benne elemző vagy nyomkövető kód. Több részre bontott és jelszóval védett ZIP-, RAR- és 7z-fájlok Nyisd meg egyenesen a Fájlokból, egy Safari letöltésből, a Mailből vagy bármelyik megosztási menüből, és ugyanazon az úton küldd tovább az eredményt. Munkahelyi archívum érkezik levélben, és a vonaton negyvenből egyetlen PDF kell belőle. A Safariban letöltött RAR ott ül a Fájlokban, és a telefonon semmi nem nyitja meg. Valaki jelszavas 7z-ben küldi a nyaralós képeket, te pedig csak meg akarod nézni őket. Mire képes a Zipbox ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 és ISO kibontása Több részre bontott és jelszóval védett ZIP-, RAR- és 7z-fájlok Belenézés az archívumba anélkül, hogy kibontanád Fényképek, videók, PDF, szöveg és kód előnézete Egyetlen fájl, kijelölt fájlok vagy az egész kivétele Megnyitás a Fájlokból, Safari letöltésekből, a Mailből és a megosztási menüből ZIP és 7z készítése AES-256 titkosítással és részekre bontással Több archívum kibontása egymás után; egy hiba nem állítja le a többit Keresés fájlnevekben és szövegben az archívumon belül; PDF csak fájlnév szerint Áthelyezés, átnevezés, rendszerezés, exportálás a Fájlokba és iCloud Drive-ba, Archívum létrehozása (Siri-parancsok) A Zipbox fizetős app az App Store-ban. Egy vásárlás minden funkciót ad, alkalmazáson belüli vásárlás, előfizetés és reklám nélkül. A Zipbox 13 formátumot kezel helyben. Ha egy fájl nem nyílik meg, vagy hiányzik egy formátum: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "Továbbiak",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Fizetős letöltés",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Privát / eszközön tárolt"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Továbbiak",
+        "Fizetős letöltés",
+        "Offline",
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Privát / eszközön tárolt",
+        "App Store · HUF1,990.00"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/hu/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/hu/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Töltse le a(z) Zipbox: RAR, ZIP, 7z kibontó appot az App Store-ból",
+      "storefront_facts": {
+        "price": "1990",
+        "currency": "HUF",
+        "formatted_price": "HUF1,990.00"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -6,8 +6,8 @@
   "name": "Katalog Niat Pencarian Penerbit Lumi Studio",
   "description": "Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.",
   "inLanguage": "id",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "149000",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "ID"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: Ekstrak RAR, ZIP, 7z",
+        "description": "Zipbox adalah app berbayar di App Store. Sekali beli, semua fitur tersedia; tanpa pembelian dalam app, langganan, atau iklan. Semua 13 format diproses di",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: Ekstrak RAR, ZIP, 7z",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/id/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "id",
+          "description": "Zipbox adalah app berbayar di App Store. Sekali beli, semua fitur tersedia; tanpa pembelian dalam app, langganan, atau iklan. Semua 13 format diproses di",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "89000",
         "priceCurrency": "IDR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

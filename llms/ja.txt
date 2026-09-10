@@ -3,7 +3,7 @@
 > 各 iOS アプリの構造化情報 — 機能・価格・FAQ。
 
 locale: ja
-apps: 46
+apps: 47
 - アプリ一覧: https://open.cait518.cc/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.html
 - アプリ一覧 · PWA: https://open.cait518.cc/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
@@ -207,6 +207,10 @@ apps: 46
   - WordmateはApp Storeで一度購入する有料アプリ。自然な例文で学べる44言語・全レベル・インタラクティブウィジェット・Apple Watchをすべて収録。サブスクリプション、アプリ内課金、有料アップグレードはありません。
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox 解凍：ZIP RAR 7z対応](https://open.cait518.cc/ios-app-guide/ja/zipbox.html) — 広告なしで圧縮ファイルをすぐ開く
+  - ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。
+  - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
+  - App Store: https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8
 - [ルミのおてんき星 おでかけ指数](https://open.cait518.cc/ios-app-guide/ja/lumiweather.html) — 天気予報・雨雲レーダー
   - 今日は子どもと外に出られる日かな?ひと目でわかります。正確な1時間・週間予報、雨雲、紫外線、お出かけ最適時間と服装の目安。広告なし・サブスクなし・買い切り、ウィジェット対応。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。

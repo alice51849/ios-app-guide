@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/cs.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/cs.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Bez účtu"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
-        "Bez účtu",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "Průvodce od vývojáře aplikace, studia Lumi Studio. Názvy aplikací jsou ochrannými známkami svých vlastníků a slouží pouze k identifikaci. U rozhodnutí týkajících se dokumentů, zdraví, školy a produktivity si tam, kde je to na místě, ověřte oficiální požadavky.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "cs:zipbox",
+      "locale": "cs",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: otevřít RAR, ZIP, 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: otevřít RAR, ZIP, 7z — Rozbalte bez reklam | iOS App",
+      "decision_context": "Zipbox je placená aplikace z App Storu. Jedna koupě zahrnuje všechny funkce, bez nákupů v aplikaci, předplatného a reklam. Všech 13 formátů se zpracuje v zařízení. Žádné reklamy, nikdy. Ani banner, ani celoobrazovkové video, ani odpočet mezi vámi a vaším vlastním souborem. Rozbalení ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 a ISO Nejdřív nahlédněte, potom rozbalte. Projděte seznam, prohlédněte si fotky, videa, PDF, text i kód a vytáhněte jen ten jeden soubor, který opravdu potřebujete. Všechno probíhá v zařízení. Zipbox nedělá žádné síťové požadavky, nemá účet ani přihlášení a neobsahuje analytický ani sledovací kód. ZIP, RAR a 7z rozdělené na části nebo chráněné heslem Otevírejte přímo ze Souborů, ze stažení v Safari, z Mailu nebo z libovolné nabídky sdílení a výsledek pošlete zpět stejnou cestou. Pracovní archiv dorazí mailem a ve vlaku potřebujete jediné PDF ze čtyřiceti. RAR stažený v Safari leží v Souborech a v telefonu ho nic neotevře. Někdo pošle 7z s heslem a fotkami z dovolené a vy si je chcete jen prohlédnout. Co Zipbox umí Rozbalení ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 a ISO ZIP, RAR a 7z rozdělené na části nebo chráněné heslem Nahlédnutí do archivu bez rozbalení Náhled fotek, videí, PDF, textu a kódu Vytažení jednoho souboru, výběru nebo všeho Otevření ze Souborů, stažení v Safari, Mailu a nabídky sdílení Vytváření ZIP a 7z se šifrováním AES-256 a rozdělením na části Postupné rozbalení více archivů; chyba jednoho nezastaví ostatní Hledání v názvech souborů a v textu uvnitř archivu; PDF jen podle názvu Přesun, přejmenování, třídění, export do Souborů a iCloud Drive, Vytvořit archiv (zkratky Siri) Zipbox je placená aplikace z App Storu. Jedna koupě zahrnuje všechny funkce, bez nákupů v aplikaci, předplatného a reklam. Všech 13 formátů se zpracuje v zařízení. Soubor, který nejde otevřít, nebo chybějící formát: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "Více",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Placené stažení",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Více",
+        "Placené stažení",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "App Store · 129,00 Kč"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/cs/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/cs/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fcs%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Stáhněte si Zipbox: otevřít RAR, ZIP, 7z v App Storu",
+      "storefront_facts": {
+        "price": "129",
+        "currency": "CZK",
+        "formatted_price": "129,00 Kč"
+      },
+      "guide_cta_label": "Přečtěte si celý průvodce",
+      "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

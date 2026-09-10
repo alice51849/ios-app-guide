@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 46 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 47 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **WiFi Aid: Diagnòstic de xarxa** | WiFi Aid: Diagnòstic de xarxa — Diagnòstic de xarxa amb proves \| iOS App | Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/wifiaid.html) | [Descarrega WiFi Aid: Diagnòstic de xarxa a l’App Store](https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: vocabulari** | Wordmate Lite: vocabulari — Cinc paraules al dia, offline \| iOS App | Cinc paraules, un minut, un pas visible en el teu camí. El Wordmate Lite agafa aquell propòsit vague d'aprendre per fi una llengua i el redueix a un gest | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/wordmatelite.html) | [Descarrega Wordmate Lite: vocabulari a l’App Store](https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | millor app de vocabulari per a persones que fan trajectes amb Apple Watch | Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs. Wordmate: Learn 44 Languages va néixer precisament d'aquest problema. | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Descarrega Wordmate: Learn 44 Languages a l'App Store →](https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: obrir RAR, ZIP i 7z** | Zipbox: obrir RAR, ZIP i 7z — Descomprimeix-ho sense anuncis \| iOS App | Zipbox és una app de pagament a l’App Store. Una compra inclou tot, sense compres integrades, subscripcions ni anuncis. Els 13 formats es processen al | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/zipbox.html) | [Descarrega Zipbox: obrir RAR, ZIP i 7z a l’App Store](https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 2.300 registres.
+JSON, JSONL i CSV contenen els mateixos 2.350 registres.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL i CSV contenen els mateixos 2.300 registres.
 
 [Inici](https://open.cait518.cc/ios-app-guide/ca/index.html) · [Dades obertes](https://open.cait518.cc/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-09-05
+Actualitzat: 2026-09-10
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

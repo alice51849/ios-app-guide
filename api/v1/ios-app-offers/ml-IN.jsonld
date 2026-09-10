@@ -6,8 +6,8 @@
   "name": "Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ്",
   "description": "ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്",
   "inLanguage": "ml-IN",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: ZIP, RAR, 7z തുറക്കുക",
+        "description": "Zipbox App Store-ലെ പണമടച്ചുള്ള ആപ്പാണ്. ഒരിക്കൽ വാങ്ങിയാൽ എല്ലാ സൗകര്യവും ലഭിക്കും; ഇൻ-ആപ്പ് വാങ്ങലോ സബ്സ്ക്രിപ്ഷനോ പരസ്യമോ ഇല്ല. 13 ഫോർമാറ്റും ഉപകരണത്തിൽ",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: ZIP, RAR, 7z തുറക്കുക",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ml-IN/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "ml-IN",
+          "description": "Zipbox App Store-ലെ പണമടച്ചുള്ള ആപ്പാണ്. ഒരിക്കൽ വാങ്ങിയാൽ എല്ലാ സൗകര്യവും ലഭിക്കും; ഇൻ-ആപ്പ് വാങ്ങലോ സബ്സ്ക്രിപ്ഷനോ പരസ്യമോ ഇല്ല. 13 ഫോർമാറ്റും ഉപകരണത്തിൽ",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

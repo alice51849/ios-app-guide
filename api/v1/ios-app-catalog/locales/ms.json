@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-05",
-  "content_digest": "c8a40169d75be98e3dfbf2d274a9b81c2ad35cfc78aba01287c127b0fd530985",
+  "date_modified": "2026-09-10",
+  "content_digest": "fb3e26b4673a673405cba8ca3d19589e8784effef7c56e927930918faf8c9595",
   "locale": "ms",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 46,
+  "record_count": 47,
   "apps": [
     {
       "key": "notesstudio100",
@@ -2106,7 +2106,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -2201,6 +2201,49 @@
         "currency": "MYR",
         "formatted_price": "RM39.90",
         "storefront_url": "https://apps.apple.com/my/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox: Buka RAR, ZIP, 7z",
+      "summary": "Zipbox ialah app berbayar di App Store. Satu pembelian merangkumi semua ciri, tanpa pembelian dalam app, langganan atau iklan. Kesemua 13 format diproses pada peranti.",
+      "category": "utility",
+      "search_terms": [
+        "kata laluan",
+        "penyulitan",
+        "folder",
+        "arkib",
+        "pengurus",
+        "pratonton",
+        "mampat",
+        "gambar",
+        "7zip",
+        "unrar",
+        "tar",
+        "gz",
+        "iso",
+        "video"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/my/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ms/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "22.9",
+        "currency": "MYR",
+        "formatted_price": "RM22.90",
+        "storefront_url": "https://apps.apple.com/my/app/id6806776579"
       }
     }
   ]

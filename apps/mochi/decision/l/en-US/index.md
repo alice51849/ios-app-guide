@@ -2,7 +2,7 @@
 title: "best simple to do list app iphone no subscription"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ If most to-do apps feel bloated, the right one is a clean checklist with reminde
 - Free to start · one-time unlock
 - No ads
 - App Store · Free
-- ★ 4.3/5 · 6
+- ★ 4.4/5 · 7
 
 [Get Mochi on the App Store →](https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 46 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 47 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **WiFi Aid: Diagnoză de rețea** | WiFi Aid: Diagnoză de rețea — Diagnoză de rețea cu dovezi \| iOS App | Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/wifiaid.html) | [Descarcă WiFi Aid: Diagnoză de rețea din App Store](https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: cuvinte zilnic** | Wordmate Lite: cuvinte zilnic — Un minut pe zi, vocabular nou \| iOS App | Vrei să avansezi într-o limbă străină, dar seara trece iar și nu ai reținut niciun cuvânt nou. Wordmate Lite reduce învățarea la un minut pe zi, un minut | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/wordmatelite.html) | [Descarcă Wordmate Lite: cuvinte zilnic din App Store](https://apps.apple.com/ro/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | cea mai bună aplicație de vocabular pentru navetiști ocupați cu Apple Watch | Navetiștii ocupați au nevoie de exersare de vocabular care să se potrivească în minutele libere fără a necesita o lecție completă, un cont nou sau telefonul în mână la fiecare recapitulare. Wordmate: Learn 44 Languages a pornit exact de la această problemă. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Descarcă Wordmate: Learn 44 Languages din App Store →](https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: deschide RAR, ZIP, 7z** | Zipbox: deschide RAR, ZIP, 7z — Dezarhivare fără reclame \| iOS App | Zipbox este o aplicație cu plată din App Store. O cumpărare include totul, fără achiziții în aplicație, abonamente ori reclame. Cele 13 formate sunt | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/zipbox.html) | [Descarcă Zipbox: deschide RAR, ZIP, 7z din App Store](https://apps.apple.com/ro/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.300 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.350 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL și CSV conțin aceleași 2.300 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-09-05
+Actualizat: 2026-09-10
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

@@ -659,6 +659,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "zipbox",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "8899ebcd4c5b286de5d78df67ac6e0e975de55463d7c6933daf9c87f692a9237"
+      },
+      "id": "en-US:zipbox:open-encrypted-and-split-archives-on-iphone",
+      "language": "en",
+      "summary": "A basic ZIP opener stops being useful when a client, coworker or download sends RAR5, encrypted 7z, ZIP64 or multiple split volumes. The decision is whether one on-device archive tool covers the formats that actually arrive without adding an account, advertising or a recurring payment.",
+      "title": "Which pay-once iPhone app can open encrypted or split ZIP, RAR and 7z archives without ads?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "battai",
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",

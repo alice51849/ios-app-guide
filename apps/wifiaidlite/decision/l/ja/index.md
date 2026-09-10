@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — ネット接続診断・原因を特定 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ja/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - その他
 - 無料で開始・一度の購入でアンロック
-- アカウント不要
 - App Store · 無料
 
 [App Store で WiFi Aid Lite を入手](https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

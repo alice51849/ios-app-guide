@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — 네트워크 진단과 원인 분석 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ko/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
-- 계정 없음
 - App Store · 무료
 
 [App Store에서 WiFi Aid Lite 받기](https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

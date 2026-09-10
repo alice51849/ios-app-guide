@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ar-SA",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ar-SA.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ar-SA.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "بدء مجاني · فتح مرة واحدة",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "بدون حساب"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "المزيد",
         "بدء مجاني · فتح مرة واحدة",
-        "بدون حساب",
         "App Store · مجاني"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ar-SA:zipbox",
+      "locale": "ar-SA",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: فك ضغط RAR وZIP و7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: فك ضغط RAR وZIP و7z — استخراج ومعاينة بلا إعلانات | iOS App",
+      "decision_context": "Zipbox تطبيق مدفوع من App Store. شراء التطبيق يشمل كل الميزات، بلا مشتريات داخل التطبيق أو اشتراكات أو إعلانات. تُعالج 13 صيغة محليًا على جهازك. لا إعلانات أبدا. لا شريط إعلاني ولا مقطع بملء الشاشة ولا عد تنازلي يقف بينك وبين ملفك أنت. استخراج ZIP وRAR/RAR5 و7z وTAR وGZIP وTAR.GZIP وBZIP2 وTAR.BZIP2 وXZ وTAR.XZ وLZMA وLZ4 وISO انظر أولا ثم استخرج. تصفح قائمة الملفات، وعاين الصور والفيديو وملفات PDF والنصوص والشيفرة، ثم أخرج الملف الذي تحتاجه فعلا وحده. كل شيء يجري على جهازك. لا يرسل Zipbox أي طلب شبكة، ولا يطلب حسابا ولا تسجيل دخول، ولا يحتوي على أي شيفرة تحليلات أو تتبع. ملفات ZIP وRAR و7z المقسمة إلى أجزاء أو المحمية بكلمة سر افتح مباشرة من تطبيق الملفات أو من تنزيل في سفاري أو من البريد أو من أي قائمة مشاركة، وأعد إرسال النتيجة بالطريقة نفسها. يصلك أرشيف عمل بالبريد وأنت في القطار، ولا تحتاج سوى ملف PDF واحد من بين أربعين. ملف RAR نزّلته من سفاري موجود في تطبيق الملفات ولا شيء في الهاتف يفتحه. يرسل لك صديق ملف 7z محميا بكلمة سر فيه صور الإجازة وأنت تريد رؤيتها فقط. ماذا يفعل Zipbox استخراج ZIP وRAR/RAR5 و7z وTAR وGZIP وTAR.GZIP وBZIP2 وTAR.BZIP2 وXZ وTAR.XZ وLZMA وLZ4 وISO ملفات ZIP وRAR و7z المقسمة إلى أجزاء أو المحمية بكلمة سر النظر داخل الأرشيف من دون استخراجه معاينة الصور والفيديو وملفات PDF والنصوص والشيفرة استخراج ملف واحد أو مجموعة مختارة أو المحتوى كاملا الفتح من تطبيق الملفات وتنزيلات سفاري والبريد وقائمة المشاركة إنشاء ZIP و7z بتشفير AES-256 وتقسيم إلى أجزاء استخراج عدة أرشيفات بالتتابع، مع متابعة الدفعة إذا تعذّر أحدها بحث في أسماء الملفات وفي النصوص داخل الأرشيف؛ وملفات PDF بالاسم فقط النقل وإعادة التسمية والترتيب والتصدير إلى الملفات وiCloud Drive وإنشاء أرشيف (اختصارات Siri) Zipbox تطبيق مدفوع من App Store. شراء التطبيق يشمل كل الميزات، بلا مشتريات داخل التطبيق أو اشتراكات أو إعلانات. تُعالج 13 صيغة محليًا على جهازك. إن لم يُفتح ملف أو نقصت صيغة تودّ دعمها، راسلنا على hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "المزيد",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "تحميل مدفوع",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "دون اتصال",
+        "بدون حساب",
+        "بدون إعلانات",
+        "بدون تتبع",
+        "خاص / على الجهاز"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "المزيد",
+        "تحميل مدفوع",
+        "دون اتصال",
+        "بدون حساب",
+        "بدون إعلانات",
+        "بدون تتبع",
+        "خاص / على الجهاز",
+        "App Store · SAR 19.99"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ar-SA/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ar-SA/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Far-SA%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "احصل على Zipbox: فك ضغط RAR وZIP و7z من App Store",
+      "storefront_facts": {
+        "price": "19.99",
+        "currency": "SAR",
+        "formatted_price": "SAR 19.99"
+      },
+      "guide_cta_label": "اقرأ الدليل الكامل",
+      "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

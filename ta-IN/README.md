@@ -4,7 +4,7 @@
 
 ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.
 
-46 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
+47 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
 
 **உள்ளூர் மொழி:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · **ta-IN** · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: நெட்வொர்க் சிக்கல்** | WiFi Aid: நெட்வொர்க் சிக்கல் — இணைப்பு கண்டறிதல் & சான்று \| iOS App | தனி DNS, TCP, TLS மற்றும் நிலைத்தன்மை சோதனைகள் மூலம் இணைப்புப் பிரச்சனை கண்டறியுங்கள். ஒரு முறை மட்டும் கட்டணம்—சந்தா, விளம்பரம், கண்காணிப்பு இல்லை. | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/wifiaid.html) | [App Store-இல் WiFi Aid: நெட்வொர்க் சிக்கல்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: ஆங்கிலம் கற்க** | Wordmate Lite: ஆங்கிலம் கற்க — தினமும் 5 சொற்கள், ஒரு நிமிடம் \| iOS App | நாளொன்றுக்கு நூறு சொல் கற்கும் திட்டம் மூன்றாம் நாளிலேயே நின்றுவிடும். முதல் நாளே நூறு அட்டைகள் முன்னால் வந்தால் பழக்கம் தொடராது. Wordmate Lite அதைச் | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/wordmatelite.html) | [App Store-இல் Wordmate Lite: ஆங்கிலம் கற்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch உடன் பயணிக்கும் நேரமில்லா பயணிகளுக்கான சிறந்த சொற்பொருள் செயலி | நேரமில்லா பயணிகளுக்கு முழு பாடம், புதிய கணக்கு அல்லது ஒவ்வொரு மீள்பார்வைக்கும் கைபேசி தேவையில்லாமல் சொற்பொருள் பயிற்சி தேவை. Wordmate: Learn 44 Languages தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான். | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Learn 44 Languages-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z திறக்க** | Zipbox: ZIP, RAR, 7z திறக்க — விளம்பரமின்றி உள்ளே பாருங்கள் \| iOS App | Zipbox App Store-இல் கட்டண app. ஒரே வாங்குதலில் எல்லா அம்சங்களும் கிடைக்கும்; in-app வாங்குதல், சந்தா, விளம்பரம் இல்லை. 13 வடிவங்களும் சாதனத்திலேயே | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/zipbox.html) | [App Store-இல் Zipbox: ZIP, RAR, 7z திறக்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## முழு தரவுத்தொகுப்பை பதிவிறக்கவும்
 
-JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,300 பதிவுகளை கொண்டுள்ளன.
+JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,350 பதிவுகளை கொண்டுள்ளன.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,300 பத�
 
 [முகப்பு](https://open.cait518.cc/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://open.cait518.cc/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-09-05
+புதுப்பிக்கப்பட்டது: 2026-09-10
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

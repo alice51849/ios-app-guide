@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 46 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 47 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **WiFi Aid Lite** | WiFi Aid Lite — ネット接続診断・原因を特定 \| iOS App | 「またネットが遅い」——原因はルーター?DNS?プロバイダ?それともサイト側?WiFi Aid Lite は複数の独立した経路で DNS・TCP・TLS・応答時間・安定性を同時にチェックし、証拠を突き合わせて最も可能性の高い原因を提示します。勘に頼って再起動を繰り返す必要はもうありません。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/wifiaidlite.html) | [App Store で WiFi Aid Lite を入手](https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite 1日5単語** | Wordmate Lite 1日5単語 — 毎日1分、44言語の語彙トレーニング \| iOS App | 単語帳を作るところで力尽きて、勉強そのものが止まってしまう。Wordmate Lite は、その「作る手間」をなくすために生まれた語彙アプリです。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/wordmatelite.html) | [App Store で Wordmate Lite 1日5単語 を入手](https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch対応・通勤中におすすめの語彙アプリ | 忙しい通勤者には、フルレッスンや新規アカウント、毎回スマホを手に取る必要なく、すき間時間に語彙練習できるアプリが必要です。Wordmate: Learn 44 Languagesはまさにその困りごとから始まりました。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [App StoreでWordmate: Learn 44 Languagesを入手 →](https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox 解凍：ZIP RAR 7z対応** | Zipbox 解凍：ZIP RAR 7z対応 — 広告なしで圧縮ファイルをすぐ開く \| iOS App | ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/zipbox.html) | [App Store で Zipbox 解凍：ZIP RAR 7z対応 を入手](https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,300件のレコードを含みます。
+JSON、JSONL、CSVは同じ2,350件のレコードを含みます。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON、JSONL、CSVは同じ2,300件のレコードを含みます。
 
 [ホーム](https://open.cait518.cc/ios-app-guide/ja/index.html) · [オープンデータ](https://open.cait518.cc/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-09-05
+更新日: 2026-09-10
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

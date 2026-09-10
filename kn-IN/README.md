@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-46 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+47 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ** | WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ \| iOS App | ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html) | [App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ** | Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ — ದಿನಕ್ಕೆ 5 ಪದಗಳು, ಒಂದೇ ನಿಮಿಷ \| iOS App | ದೊಡ್ಡ ಕೋರ್ಸ್ ಒಂದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ ಎರಡು ದಿನಕ್ಕೇ ಮುಚ್ಚಿಟ್ಟ ಅನುಭವ ಬಹಳ ಜನರಿಗಿದೆ. ಮೊದಲ ದಿನವೇ ನೂರು ಕಾರ್ಡ್ ಮುಂದಿಟ್ಟರೆ ಅಭ್ಯಾಸ ನಿಲ್ಲುವುದು ಸಹಜ. Wordmate Lite ಅದನ್ನು | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/wordmatelite.html) | [App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ** | Apple Watch ಹೊಂದಿರುವ ಬ್ಯುಸಿ ಪ್ರಯಾಣಿಕರಿಗೆ ಅತ್ಯುತ್ತಮ ಪದಕೋಶ ಅಪ್ಲಿಕೇಶನ್ | ಬ್ಯುಸಿ ಪ್ರಯಾಣಿಕರಿಗೆ ಪದಕೋಶ ಅಭ್ಯಾಸ spare ಕ್ಷಣಗಳಲ್ಲಿ ಪೂರೈಸಬೇಕು, ಪೂರ್ಣ ಪಾಠ, ಹೊಸ ಖಾತೆ ಅಥವಾ ಪ್ರತಿಯೊಂದು ಪುನರಾವೃತಕ್ಕೆ ಫೋನ್ ಅಗತ್ಯವಿಲ್ಲ. Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ ಶುರುವಾಗಿದ್ದೇ ಈ ಸಮಸ್ಯೆಯಿಂದ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: 44 ಭಾಷೆ ಕಲಿಯಿರಿ ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z ತೆರೆಯಿರಿ** | Zipbox: ZIP, RAR, 7z ತೆರೆಯಿರಿ — ಜಾಹೀರಾತಿಲ್ಲ, ಮೊದಲೇ ನೋಡಿ \| iOS App | Zipbox App Storeನ ಪೇಯ್ಡ್ ಆಪ್. ಒಮ್ಮೆ ಖರೀದಿಸಿದರೆ ಎಲ್ಲ ಸೌಲಭ್ಯಗಳೂ ಸಿಗುತ್ತವೆ; ಆಪ್ ಒಳಗೆ ಖರೀದಿ, ಸಬ್‌ಸ್ಕ್ರಿಪ್ಶನ್ ಅಥವಾ ಜಾಹೀರಾತು ಇಲ್ಲ. 13 ಸ್ವರೂಪಗಳನ್ನೂ ಸಾಧನದಲ್ಲೇ | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/zipbox.html) | [App Store ನಲ್ಲಿ Zipbox: ZIP, RAR, 7z ತೆರೆಯಿರಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,300 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,350 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,300 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://open.cait518.cc/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://open.cait518.cc/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-09-05
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-09-10
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

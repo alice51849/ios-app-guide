@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 46
+      "const": 47
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2300
+      "const": 2350
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2300,
-      "maxItems": 2300,
+      "minItems": 2350,
+      "maxItems": 2350,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -399,7 +399,8 @@
             "wifiaid",
             "wifiaidlite",
             "wordmate",
-            "wordmatelite"
+            "wordmatelite",
+            "zipbox"
           ]
         },
         "app_name": {

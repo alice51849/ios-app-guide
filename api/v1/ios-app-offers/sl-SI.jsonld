@@ -6,8 +6,8 @@
   "name": "Katalog iskalnih namenov založnika Lumi Studio",
   "description": "Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.",
   "inLanguage": "sl-SI",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "SI"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: odpri RAR, ZIP, 7z",
+        "description": "Zipbox je plačljiva aplikacija iz trgovine App Store. En nakup da vse funkcije, brez nakupov v aplikaciji, naročnin in oglasov. Zipbox vseh 13 formatov",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: odpri RAR, ZIP, 7z",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/sl-SI/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "sl-SI",
+          "description": "Zipbox je plačljiva aplikacija iz trgovine App Store. En nakup da vse funkcije, brez nakupov v aplikaciji, naročnin in oglasov. Zipbox vseh 13 formatov",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

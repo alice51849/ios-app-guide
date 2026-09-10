@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Vergleiche mehrere Einkäufe anhand deines Nettostundenlohns und lade deine CSV herunter. Gesamt = Menge × Endpreis. Arbeitsstunden = Gesamt ÷ Nettostundenlohn. Arbeitstage = Arbeitsstunden ÷ Stunden pro Arbeitstag. Gib Preise inklusive Steuern ein. Keine Währungsumrechnung, Lohnabrechnung, Sparprognose oder Kaufberatung. Die Anzeige rundet auf zwei Dezimalstellen; Summen verwenden ungerundete Werte.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/purchase-worktime-sheet.html",
       "language": "de-DE",
       "title": "Einkäufe in Arbeitszeit vergleichen",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Trage ein, wann du Haushalts-, Auto- oder Gesundheitsaufgaben zuletzt erledigt hast und wie oft sie sich wiederholen. Du erhältst nächstes Fälligkeitsdatum, Resttage und überfällige Aufgaben als Tabelle. Nächste Fälligkeit = zuletzt erledigt + Intervall. Bei Monaten bleibt der Kalendertag gleich; fehlt er, gilt der letzte Tag des Monats (auch in Schaltjahren). Resttage = nächste Fälligkeit − heute. Unter 0 überfällig, 0 bis 7 bald fällig. Intervalle von 1 bis 3650 Tagen, Wochen oder Monaten. Daten zwischen 1900-01-01 und 2999-12-31. Bis zu 30 Aufgaben. Keine Erinnerungen, Benachrichtigungen oder Kalendersynchronisierung; nichts verlässt diese Seite.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/maintenance-next-due-sheet.html",
       "language": "de-DE",
       "title": "Wartungsplan mit nächster Fälligkeit",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Tragen Sie ein, was ein Freelance-Projekt oder kleiner Auftrag eingebracht und gekostet hat, und laden Sie eine Tabelle mit Rohgewinn, Marge und Netto pro Stunde herunter. Gewinn = Summe Einnahmen − Summe Ausgaben. Marge = Gewinn ÷ Summe Einnahmen. Netto pro Stunde = Gewinn ÷ Stunden. Beträge werden in ganzen Cent addiert, Summen driften nicht. Beträge von 0 bis 100.000.000 mit höchstens zwei Nachkommastellen, bis zu 20 Einnahme- und 20 Ausgabezeilen, Stunden von 0,25 bis 2000 in Viertelstundenschritten. Eine Währung, keine Umrechnung, keine Steuer- oder Buchhaltungsberatung.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/project-profit-sheet.html",
       "language": "de-DE",
       "title": "Projektgewinn-Übersicht",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Tragen Sie die maximale Kapazität aus den iPhone-Einstellungen und, falls vorhanden, die Ladezyklen ein und laden Sie ein Blatt mit der Verschleißspanne pro Monat und den Monaten bis 80 % herunter – immer als Spanne, nie als Punktzahl. Verschleiß pro Monat = (100 − Kapazität) ÷ Alter in Monaten, als ±25-%-Spanne. Monate bis 80 % = (Kapazität − 80) ÷ Verschleiß; Untergrenze aus der hohen, Obergrenze aus der niedrigen Rate. Zyklen pro Monat = Zyklen ÷ Alter. Kapazität 60 bis 100 als ganze Prozentzahl, Zyklen 0 bis 3000, Kaufmonat zwischen 2007 und 2099 bei 1 bis 240 Monaten Alter, bis zu 10 Geräte. Monate als JJJJ-MM. Eingaben bleiben in diesem Tab; nichts wird am Telefon gemessen oder ausgelesen.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/battery-wear-range-sheet.html",
       "language": "de-DE",
       "title": "Akkuverschleiß-Spanne",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Trage ein, was zu Hause gleichzeitig online passiert und wie viele Geräte beteiligt sind, und lade eine Tabelle mit dem Mbps-Bedarf und der Reserve deines Tarifs herunter. Summe je Zeile = Geräte × Wert pro Gerät. Bedarf = Summe der Zeilen. Reserve = Tarif − Bedarf; unter 20 % des Tarifs ist knapp, unter null zu wenig. Gerechnet wird in Zehntel-Mbit/s als ganze Zahlen, die Summen driften nie. Tarifgeschwindigkeiten von 0,5 bis 10000 Mbit/s mit höchstens einer Nachkommastelle, 1 bis 50 Geräte pro Zeile, bis zu 20 Zeilen. WLAN-Abdeckung, Latenz und die tatsächlich gelieferte Geschwindigkeit sind nicht Teil dieser Tabelle.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/bandwidth-need-sheet.html",
       "language": "de-DE",
       "title": "Bandbreitenbedarf zu Hause",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Trage das Gesamtbudget einer Reise, die Tage, die Personen und die schon bekannten Fixkosten ein und lade eine Tabelle herunter: Was jede Person pro Tag ausgeben kann und wie es sich auf Essen, Verkehr, Tickets und Einkaufen verteilt. Frei verfügbar = Gesamtbudget − Fixkosten. Pro Tag = frei verfügbar ÷ Tage. Pro Person und Tag = pro Tag ÷ Personen. Jede Kategorie = pro Tag × ihr Anteil. Beträge werden in ganzen Cent addiert; Tageswerte werden nur bei der Anzeige gerundet. Beträge von 0 bis 100.000.000 mit höchstens zwei Nachkommastellen, 1 bis 120 Tage, 1 bis 20 Personen, bis zu 15 Fixkosten, vier Anteile mit genau 100 in Summe. Durchgehend dieselbe Währung, keine Wechselkurse, keine Preis- oder Buchungsempfehlung.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/trip-budget-sheet.html",
       "language": "de-DE",
       "title": "Reisebudget pro Tag",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Trage die Orte eines Tages mit Aufenthaltsdauer und Wegzeit zum nächsten Ort ein und lade eine Tabelle mit Ankunfts- und Abfahrtszeiten herunter, die zeigt, ob alles zwischen Start und Ende passt. Ankunft = vorherige Abfahrt + Weg. Abfahrt = Ankunft + Aufenthalt. Gesamt = alle Aufenthalte + alle Wege. Verfügbar = Ende − Start; eine Endzeit vor der Startzeit zählt als nächster Tag. Darüber = Gesamt − Verfügbar; alles über null ist zu lang. Reine Minutenrechnung, keine Zeitzonen. Zeiten als 24-Stunden-HH:MM, Aufenthalte von 5 bis 720 Minuten, Wege von 0 bis 600 Minuten, bis zu 25 Orte. Öffnungszeiten, echter Verkehr, Karten, Routing und Buchungen sind nicht Teil dieser Tabelle.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/day-itinerary-sheet.html",
       "language": "de-DE",
       "title": "Tagesplan-Zeitbudget",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Mach aus unordentlichen Meeting-Notizen einen Einseiter: eine Überschrift, drei bis zwölf Kernpunkte, ein nächster Schritt und optional eine Kennzahl, als Tabelle zum Einfügen in eine Folie oder Zusammenfassung. Die Tabelle behält deine Worte: Überschrift, dann die Punkte in deiner Reihenfolge, dann der nächste Schritt, dann die Kennzahl. Sie zählt die Punkte und entfernt Leerzeichen am Rand; nichts wird umformuliert, zusammengefasst oder bewertet. Überschrift bis 80 Zeichen, 3 bis 12 Punkte mit je bis zu 160 Zeichen, nächster Schritt bis 160 Zeichen, Kennzahl bis 60 Zeichen. Jede Zeile muss einzeilig sein. Dateien, Aufnahmen oder Kalender werden nicht gelesen.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/one-page-outline-sheet.html",
       "language": "de-DE",
       "title": "Meeting-Notizen als Einseiter",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Trag ein, was jede Person bestellt hat, ergänze Steuer und Trinkgeld in Prozent, und du siehst, wer wie viel schuldet. Steuer und Trinkgeld werden centgenau nach Bestellwert verteilt, das Blatt lädst du als CSV herunter. Zwischensumme = alles Bestellte zusammengerechnet. Steuer = Zwischensumme × Steuersatz. Trinkgeld = Zwischensumme × Trinkgeldsatz. Der Anteil jeder Person ist ihr Bestellwert ÷ Zwischensumme; übrige Cents gehen an die größten Nachkommateile zuerst, damit die Summe der Anteile exakt den Rechnungsbetrag ergibt. Eine einzige Währung, Steuer und Trinkgeld als Prozent der Zwischensumme. Keine Währungsumrechnung, keine Regeln für Servicezuschläge, keine Empfehlung zur Trinkgeldhöhe und keine Zahlung. Angezeigt wird auf zwei Nachkommastellen, gerechnet wird in ganzen Cent.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/bill-split-sheet.html",
       "language": "de-DE",
       "title": "Rechnung fair aufteilen",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Trag ein, was du gespeichert hast und wie lange es dauert, leg fest, wie viele Minuten du täglich wirklich liest, und du siehst, an welchem Tag jeder Eintrag fertig ist. Der Plan lädt als CSV. Laufende Summe = Minuten dieses Eintrags plus alles darüber. Tag = laufende Summe ÷ Minuten pro Tag, aufgerundet. Fertig am = Startdatum + Tag − 1. Freie Minuten = Tage × Minuten pro Tag − Minuten gesamt. Die Reihenfolge der Eingabe ist die Lesereihenfolge: nichts wird umsortiert, übersprungen oder zusammengelegt. Eine Sitzung pro Tag mit genau deinem Budget, ohne freie Tage, ohne Links zu öffnen oder zu laden und ohne geschätzte Lesegeschwindigkeit.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/reading-backlog-sheet.html",
       "language": "de-DE",
       "title": "Leseliste abarbeiten",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Trag ein, wann du jede Notiz geschrieben hast, und du bekommst die fünf folgenden Wiederholungstermine samt Resttagen und dem, was schon vorbei ist. Der Plan lädt als CSV. Wiederholung am = Schreibdatum + 1, 3, 7, 16 und 35 Tage. Tage übrig = Termin − heute; ein negativer Wert ist ein Datum, das schon vorbei ist. Nächste Wiederholung = der erste Termin ab heute. Eine feste Abstandsleiter, kein Gedächtnismodell: Hier wird nichts vorhergesagt, keine Notiz bewertet und keine Antwort korrigiert. Nur Daten, ohne Uhrzeiten, Zeitzonen, Erinnerungen oder Benachrichtigungen.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/de-DE/tools/review-schedule-sheet.html",
       "language": "de-DE",
       "title": "Wiederholungsplan",

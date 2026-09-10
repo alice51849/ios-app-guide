@@ -4,7 +4,7 @@
 
 Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
 
-Ý định tìm kiếm do nhà phát hành biên soạn cho 46 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
+Ý định tìm kiếm do nhà phát hành biên soạn cho 47 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
 
 **Vùng:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · **vi** · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | **WiFi Aid Lite** | WiFi Aid Lite — Chẩn đoán mạng có bằng chứng \| iOS App | Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đầy đủ miễn phí. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html) | [Tải WiFi Aid Lite trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite 5 từ mỗi ngày** | Wordmate Lite 5 từ mỗi ngày — Học 44 ngôn ngữ trong 1 phút \| iOS App | Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ từ vẫn chưa soạn xong. Wordmate Lite bỏ hẳn bước đó đi. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/wordmatelite.html) | [Tải Wordmate Lite 5 từ mỗi ngày trên App Store](https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch | Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời gian rảnh mà không cần bài học đầy đủ, tài khoản mới hoặc cầm điện thoại cho mỗi lần ôn tập. Wordmate: Learn 44 Languages khởi đi đúng từ vấn đề này. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Tải Wordmate: Learn 44 Languages trên App Store →](https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: Giải nén RAR, ZIP, 7z** | Zipbox: Giải nén RAR, ZIP, 7z — Mở file nén, không quảng cáo \| iOS App | Zipbox là app trả phí trên App Store. Mua một lần có đủ mọi tính năng; không mua trong app, không thuê bao, không quảng cáo. Cả 13 định dạng đều được xử lý | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/zipbox.html) | [Tải Zipbox: Giải nén RAR, ZIP, 7z trên App Store](https://apps.apple.com/vn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Tải xuống toàn bộ dữ liệu
 
-JSON, JSONL và CSV chứa cùng 2.300 bản ghi.
+JSON, JSONL và CSV chứa cùng 2.350 bản ghi.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL và CSV chứa cùng 2.300 bản ghi.
 
 [Trang chủ](https://open.cait518.cc/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://open.cait518.cc/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-09-05
+Cập nhật: 2026-09-10
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "el",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/el.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/el.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Δωρεάν για αρχή",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Χωρίς λογαριασμό"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Περισσότερα",
         "Δωρεάν για αρχή",
-        "Χωρίς λογαριασμό",
         "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "Οδηγός γραμμένος από τη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των κατόχων τους και χρησιμοποιούνται μόνο για αναγνώριση. Για αποφάσεις που αφορούν έγγραφα, υγεία, σχολείο και παραγωγικότητα, ελέγξτε τις επίσημες απαιτήσεις όπου χρειάζεται.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "el:zipbox",
+      "locale": "el",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: άνοιγμα RAR, ZIP, 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: άνοιγμα RAR, ZIP, 7z — Αποσυμπίεση χωρίς διαφημίσεις | iOS App",
+      "decision_context": "Το Zipbox είναι επί πληρωμή στο App Store. Μία αγορά δίνει τα πάντα, χωρίς αγορές εντός εφαρμογής, συνδρομές ή διαφημίσεις. Και οι 13 μορφές επεξεργάζονται στη συσκευή. Καμία διαφήμιση, ποτέ. Ούτε μπάνερ, ούτε βίντεο σε πλήρη οθόνη, ούτε αντίστροφη μέτρηση ανάμεσα σε σένα και το δικό σου αρχείο. Εξαγωγή ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 και ISO Δες πρώτα, αποσυμπίεσε μετά. Περιηγήσου στη λίστα, δες σε προεπισκόπηση φωτογραφίες, βίντεο, PDF, κείμενο και κώδικα και βγάλε μόνο το αρχείο που πραγματικά χρειάζεσαι. Όλα γίνονται στη συσκευή. Το Zipbox δεν κάνει αιτήματα δικτύου, δεν έχει λογαριασμό ούτε σύνδεση και δεν περιέχει κώδικα ανάλυσης ή παρακολούθησης. ZIP, RAR και 7z χωρισμένα σε μέρη ή με κωδικό Άνοιξε απευθείας από τα Αρχεία, από μια λήψη στο Safari, από το Mail ή από οποιοδήποτε μενού κοινής χρήσης και στείλε το αποτέλεσμα πίσω από τον ίδιο δρόμο. Ένα συμπιεσμένο αρχείο της δουλειάς φτάνει με email και στο τρένο χρειάζεσαι ένα μόνο PDF από τα σαράντα. Ένα RAR που κατέβασες στο Safari κάθεται στα Αρχεία και τίποτα στο τηλέφωνο δεν το ανοίγει. Κάποιος στέλνει ένα 7z με κωδικό και φωτογραφίες διακοπών και εσύ θέλεις απλώς να τις δεις. Τι κάνει το Zipbox Εξαγωγή ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 και ISO ZIP, RAR και 7z χωρισμένα σε μέρη ή με κωδικό Ματιά μέσα σε ένα αρχείο χωρίς εξαγωγή Προεπισκόπηση φωτογραφιών, βίντεο, PDF, κειμένου και κώδικα Εξαγωγή ενός αρχείου, μιας επιλογής ή όλων Άνοιγμα από τα Αρχεία, τις λήψεις του Safari, το Mail και το μενού κοινής χρήσης Δημιουργία ZIP και 7z με κρυπτογράφηση AES-256 και χωρισμό σε τόμους Διαδοχική αποσυμπίεση πολλών αρχείων· μία αποτυχία δεν σταματά τα υπόλοιπα Αναζήτηση σε ονόματα αρχείων και σε κείμενο μέσα στο αρχείο· τα PDF μόνο με βάση το όνομα Μετακίνηση, μετονομασία, τακτοποίηση, εξαγωγή σε Αρχεία και iCloud Drive, Δημιουργία αρχείου (συντομεύσεις Siri) Το Zipbox είναι επί πληρωμή στο App Store. Μία αγορά δίνει τα πάντα, χωρίς αγορές εντός εφαρμογής, συνδρομές ή διαφημίσεις. Και οι 13 μορφές επεξεργάζονται στη συσκευή. Για αρχείο που δεν ανοίγει ή μορφή που λείπει: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "Περισσότερα",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Λήψη με χρέωση",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Εκτός σύνδεσης",
+        "Χωρίς λογαριασμό",
+        "Χωρίς διαφημίσεις",
+        "Χωρίς παρακολούθηση",
+        "Ιδιωτικό / στη συσκευή"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Περισσότερα",
+        "Λήψη με χρέωση",
+        "Εκτός σύνδεσης",
+        "Χωρίς λογαριασμό",
+        "Χωρίς διαφημίσεις",
+        "Χωρίς παρακολούθηση",
+        "Ιδιωτικό / στη συσκευή",
+        "App Store · 5,99 €"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/el/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/el/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fel%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/el.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/gr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Αποκτήστε το Zipbox: άνοιγμα RAR, ZIP, 7z από το App Store",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
+      "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
+      "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

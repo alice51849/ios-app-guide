@@ -1,25 +1,25 @@
 {
-  "abstained_pairs": 2249,
-  "app_count": 46,
-  "candidate_app_locale_pairs": 2300,
-  "creative_count": 46,
+  "abstained_pairs": 2298,
+  "app_count": 47,
+  "candidate_app_locale_pairs": 2350,
+  "creative_count": 47,
   "current_inventory": {
-    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
-    "copy_sha256": "2c0e9803c3fdcb8e39051bf79c6eb19f1d782c197f2eabb8c7016773cc24984b",
+    "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
+    "copy_sha256": "40bcac9ea3a85d6c175df08e5c1043339a015d929c7c223e5b86148479467bb1",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 46
+    "public_apps": 47
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "d5f927c7e7d56ea57402a0fa5792b74b76dba78e658249eb6b5531330df611e2",
+      "generated_sha256": "cc5b3e3da3fc4e4869da00b0d3f3b6450d054632d9f81e296f1ebb531d0e3924",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "b8c3acd85910d932e83094accc240d98a68f67a55601d3b17c76e5541e260420",
+      "generated_sha256": "a2ae9543ffee6207178b654a38cb2992139dde358859f62cf93c05cf53566972",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -239,7 +239,7 @@
       "relative_path": "en-US/decide/wifiaid/separate-wifi-dns-and-website-failure.html"
     },
     {
-      "generated_sha256": "99a8bd3c16fcef149808a693b7bc613dcc49c20438d9481c1b1cf66cc1545377",
+      "generated_sha256": "1d93ca3b44de1af7b7ba44c709fac17293658a380fb27f14ffa992bdc9389ff5",
       "kind": "route_html",
       "relative_path": "en-US/decide/wifiaidlite/free-check-wifi-versus-website.html"
     },
@@ -254,7 +254,12 @@
       "relative_path": "en-US/decide/wordmatelite/five-words-without-building-decks.html"
     },
     {
-      "generated_sha256": "29b55a34d5f37ce27636655ed88326e07435d024668e065f4dc015dbbd8f6545",
+      "generated_sha256": "32f63918c2281a5ec3e1854033c02cd3154f169e490574f23b9f68a215dcaacb",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
+    },
+    {
+      "generated_sha256": "513a5c990c7d4250b8ee009634cdf7ee6e4cfd5b81e4386d4d178125081cdc56",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -286,17 +291,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
-    "copy_sha256": "2c0e9803c3fdcb8e39051bf79c6eb19f1d782c197f2eabb8c7016773cc24984b",
+    "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
+    "copy_sha256": "40bcac9ea3a85d6c175df08e5c1043339a015d929c7c223e5b86148479467bb1",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 46,
+    "public_apps": 47,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "0572bb77febabddfffe850d8d1abec6ea09b0de15a6c880ae6084683b5e10a8b",
+  "manifest_digest": "efc64dba44ea81e0a626a62ef86845816784b39d34f4e826c373ff88ba1e594b",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "d370024ac258764bf224db5c86844c92a955b370c328a8aa81d14166663906b0",
+  "release_contract_digest": "3341c7122a07cf4652eaf5e954666fa6f3f6892d00f280ab514924b4bc6c9347",
   "release_state": "exact",
-  "route_count": 51,
+  "route_count": 52,
   "routes": [
     {
       "app_key": "aibriefpack",
@@ -1039,7 +1044,7 @@
       "creative_id": "wifiaidlite:free-check-wifi-versus-website:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "99a8bd3c16fcef149808a693b7bc613dcc49c20438d9481c1b1cf66cc1545377",
+      "output_sha256": "1d93ca3b44de1af7b7ba44c709fac17293658a380fb27f14ffa992bdc9389ff5",
       "record_digest": "8da353b601322fb527860f3d362a66f2d1bdb926cab51474a6b846272db2983b",
       "relative_path": "en-US/decide/wifiaidlite/free-check-wifi-versus-website.html",
       "route_id": "en-US:wifiaidlite:free-check-wifi-versus-website",
@@ -1079,6 +1084,23 @@
       "route_id": "en-US:wordmatelite:five-words-without-building-decks",
       "route_slug": "five-words-without-building-decks",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/wordmatelite/five-words-without-building-decks.html"
+    },
+    {
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "app_store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "campaign_token": "geo_pick",
+      "content_type": "privacy_pay_once",
+      "creative_digest": "f2e8d1c8143911a2aa3879e86e226e9eeced82c2e5496ca9244a5f735906185e",
+      "creative_id": "zipbox:open-encrypted-and-split-archives-on-iphone:privacy_pay_once",
+      "intent_type": "privacy_pay_once",
+      "locale": "en-US",
+      "output_sha256": "32f63918c2281a5ec3e1854033c02cd3154f169e490574f23b9f68a215dcaacb",
+      "record_digest": "8899ebcd4c5b286de5d78df67ac6e0e975de55463d7c6933daf9c87f692a9237",
+      "relative_path": "en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html",
+      "route_id": "en-US:zipbox:open-encrypted-and-split-archives-on-iphone",
+      "route_slug": "open-encrypted-and-split-archives-on-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
     },
     {
       "app_key": "battai",
@@ -1168,5 +1190,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "42cbd5426a63e94fa05d797780e5728fe0eb8fe72af3390a7b72f15468bf8fb3"
+  "source_contract_digest": "fde2e04a6edd572a28b8b0f31dffe975df54d272968a5b7115616767fc04bd66"
 }

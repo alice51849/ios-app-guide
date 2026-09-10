@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-46 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+47 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **WiFi Aid Lite** | WiFi Aid Lite — Kanıta dayalı ağ tanısı \| iOS App | Gerçek sorunu bulun. Her araç bir kez ücretsiz tam kullanım içerir. Sınırsız kullanım için isteğe bağlı tek seferlik ömür boyu kilit açma—abonelik | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/wifiaidlite.html) | [WiFi Aid Lite uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: Kelime Ezberle** | Wordmate Lite: Kelime Ezberle — Günde beş sözcük, bir dakika \| iOS App | Çoğu dil planı, daha ilk günden fazla büyük olduğu için ikinci haftada biter. Wordmate Lite tam tersinden başlar: bir dakika, beş kelime ve patikada | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/wordmatelite.html) | [Wordmate Lite: Kelime Ezberle uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch ile yoğun yolculuklarda kelime öğrenmeye en uygun uygulama | Yoğun yolculuklarda kelime pratiği, tam ders, yeni hesap veya her tekrar için telefon gerektirmeden boş zamanlara sığmalı. Wordmate: Learn 44 Languages tam olarak bu sorundan doğdu. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Learn 44 Languages’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: RAR, ZIP, 7z Açma** | Zipbox: RAR, ZIP, 7z Açma — Reklamsız dosya çıkarma \| iOS App | Zipbox, App Store'da ücretli bir uygulamadır. Tek satın alımla tüm özellikler gelir; uygulama içi satın alma, abonelik veya reklam yoktur. 13 biçim cihazda | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/zipbox.html) | [Zipbox: RAR, ZIP, 7z Açma uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 2.300 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.350 kaydı içerir.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL ve CSV aynı 2.300 kaydı içerir.
 
 [Ana Sayfa](https://open.cait518.cc/ios-app-guide/tr/index.html) · [Açık veri](https://open.cait518.cc/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-09-05
+Güncellendi: 2026-09-10
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

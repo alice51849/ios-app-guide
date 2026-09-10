@@ -4,7 +4,7 @@
 
 A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 46 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 47 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · **en-US** · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alphabetical by app name — never a ranking.
 | **WiFi Aid Lite** | how to tell if the wifi or the website is down free app | WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html) | [Get WiFi Aid Lite on the App Store →](https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite** | best free vocabulary app for adults one minute a day no flashcard decks | Wordmate Lite — Five words. Free to start · One-time unlock · No subscription. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html) | [Get Wordmate Lite on the App Store →](https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | best vocabulary app for busy commuters with apple watch | Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review. Wordmate: Learn 44 Languages started from exactly that problem. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: Unzip RAR, ZIP & 7z** | Zipbox: Unzip RAR, ZIP & 7z — Preview and extract, no ads \| iOS App | Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-US/zipbox.html) | [Get Zipbox: Unzip RAR, ZIP & 7z on the App Store](https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,300 records.
+JSON, JSONL and CSV contain the same 2,350 records.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL and CSV contain the same 2,300 records.
 
 [Home](https://open.cait518.cc/ios-app-guide/en-US/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/en-US/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-09-05
+Updated: 2026-09-10
 
 CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners.

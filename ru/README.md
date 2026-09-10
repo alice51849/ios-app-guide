@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 46 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 47 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: Поиск проблем сети** | WiFi Aid: Поиск проблем сети — Точная диагностика сети \| iOS App | Найдите вероятную причину с помощью независимых проверок маршрутов, DNS, TCP, TLS, времени отклика и стабильности. Разовая оплата, без подписки, рекламы | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/wifiaid.html) | [Установить WiFi Aid: Поиск проблем сети в App Store](https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: 5 слов в день** | Wordmate Lite: 5 слов в день — Учим языки без зубрёжки \| iOS App | Большинство планов по изучению языка срывается просто потому, что они слишком большие. Wordmate Lite начинает с другого конца: одна минута, пять слов и | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/wordmatelite.html) | [Установить Wordmate Lite: 5 слов в день в App Store](https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: изучение 44 языков** | лучшее приложение для изучения словарного запаса для занятых пассажиров с Apple Watch | Занятым пассажирам нужна практика словарного запаса, которая помещается в свободные минуты без полного урока, нового аккаунта или телефона в руках для каждого повторения. Wordmate: изучение 44 языков вырос как раз из этой проблемы. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Скачать Wordmate: изучение 44 языков в App Store →](https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: открыть RAR, ZIP, 7z** | Zipbox: открыть RAR, ZIP, 7z — Распаковка без рекламы \| iOS App | Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/zipbox.html) | [Установить Zipbox: открыть RAR, ZIP, 7z в App Store](https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 2300 записей.
+JSON, JSONL и CSV содержат одинаковые 2350 записей.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL и CSV содержат одинаковые 2300 записей.
 
 [Главная](https://open.cait518.cc/ios-app-guide/ru/index.html) · [Открытые данные](https://open.cait518.cc/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-09-05
+Обновлено: 2026-09-10
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

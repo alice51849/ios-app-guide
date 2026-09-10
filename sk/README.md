@@ -4,7 +4,7 @@
 
 Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
 
-Zámery vyhľadávania vytvorené vydavateľom pre 46 overených aktívnych iOS aplikácií a 50 lokalít Apple.
+Zámery vyhľadávania vytvorené vydavateľom pre 47 overených aktívnych iOS aplikácií a 50 lokalít Apple.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · **sk** · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 | **WiFi Aid: Nájdite chyby siete** | WiFi Aid: Nájdite chyby siete — Diagnostika siete s dôkazmi \| iOS App | Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS, TCP, TLS, odozvy a stability. Jedna platba vopred, bez predplatného, reklám a | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/wifiaid.html) | [Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: slovíčka denne** | Wordmate Lite: slovíčka denne — Jedna minúta, päť nových slov \| iOS App | Chcete sa v cudzom jazyku konečne pohnúť, no večer zase ubehne a nové slovíčka nikde. Wordmate Lite skracuje učenie na jednu minútu denne, ktorú si | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/wordmatelite.html) | [Stiahnuť Wordmate Lite: slovíčka denne v App Store](https://apps.apple.com/sk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | najlepšia aplikácia na slovnú zásobu pre zaneprázdnených cestujúcich s Apple Watch | Zaneprázdnení cestujúci potrebujú precvičovanie slovnej zásoby, ktoré sa zmestí do voľných minút bez nutnosti celej lekcie, nového účtu alebo telefónu v ruke pri každom opakovaní. Wordmate: Learn 44 Languages vznikol presne z tohto problému. | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Získajte Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/sk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: otvoriť RAR, ZIP, 7z** | Zipbox: otvoriť RAR, ZIP, 7z — Rozbaľte bez reklám \| iOS App | Zipbox je platená aplikácia z App Storu. Jedna kúpa zahŕňa všetky funkcie, bez nákupov v aplikácii, predplatného a reklám. Všetkých 13 formátov sa spracuje | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/zipbox.html) | [Stiahnuť Zipbox: otvoriť RAR, ZIP, 7z v App Store](https://apps.apple.com/sk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Stiahnite si kompletný súbor údajov
 
-Formáty JSON, JSONL a CSV obsahujú rovnakých 2 300 záznamov.
+Formáty JSON, JSONL a CSV obsahujú rovnakých 2 350 záznamov.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 2 300 záznamov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sk/index.html) · [Otvárame dáta](https://open.cait518.cc/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-09-05
+Aktualizované: 2026-09-10
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

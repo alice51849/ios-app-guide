@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 46 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 47 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: Εντοπισμός βλαβών** | WiFi Aid: Εντοπισμός βλαβών — Διάγνωση δικτύου με στοιχεία \| iOS App | Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/wifiaid.html) | [Αποκτήστε το WiFi Aid: Εντοπισμός βλαβών από το App Store](https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: λεξιλόγιο** | Wordmate Lite: λεξιλόγιο — Πέντε νέες λέξεις κάθε μέρα \| iOS App | Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/wordmatelite.html) | [Αποκτήστε το Wordmate Lite: λεξιλόγιο από το App Store](https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | καλύτερη εφαρμογή λεξιλογίου για πολυάσχολους μετακινούμενους με apple watch | Οι πολυάσχολοι μετακινούμενοι χρειάζονται εξάσκηση λεξιλογίου που ταιριάζει σε ελεύθερα λεπτά χωρίς να απαιτεί πλήρες μάθημα, νέο λογαριασμό ή τηλέφωνο στο χέρι για κάθε επανάληψη. Το Wordmate: Learn 44 Languages ξεκίνησε ακριβώς από αυτό το πρόβλημα. | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Αποκτήστε το Wordmate: Learn 44 Languages στο App Store →](https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: άνοιγμα RAR, ZIP, 7z** | Zipbox: άνοιγμα RAR, ZIP, 7z — Αποσυμπίεση χωρίς διαφημίσεις \| iOS App | Το Zipbox είναι επί πληρωμή στο App Store. Μία αγορά δίνει τα πάντα, χωρίς αγορές εντός εφαρμογής, συνδρομές ή διαφημίσεις. Και οι 13 μορφές επεξεργάζονται | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/zipbox.html) | [Αποκτήστε το Zipbox: άνοιγμα RAR, ZIP, 7z από το App Store](https://apps.apple.com/gr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.300 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.350 εγγραφές.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://open.cait518.cc/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://open.cait518.cc/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-09-05
+Ενημερώθηκε: 2026-09-10
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

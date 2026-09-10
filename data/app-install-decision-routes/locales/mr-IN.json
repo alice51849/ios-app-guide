@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "mr-IN",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/mr-IN.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/mr-IN.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "सुरुवात करण्यासाठी मोफत",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "खाते नाही"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "अधिक",
         "सुरुवात करण्यासाठी मोफत",
-        "खाते नाही",
         "App Store · मोफत"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "ॲप बनवणाऱ्या Lumi Studio ने लिहिलेले मार्गदर्शक. ॲपची नावे त्यांच्या मालकांची ट्रेडमार्क आहेत आणि ती केवळ ओळखीसाठी वापरली आहेत. कागदपत्रे, आरोग्य, शाळा आणि कामाच्या निर्णयांबाबत जिथे आवश्यक असेल तिथे अधिकृत नियम तपासून घ्या.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "mr-IN:zipbox",
+      "locale": "mr-IN",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: ZIP, RAR, 7z अनझिप",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: ZIP, RAR, 7z अनझिप — जाहिरात नाही, आधी आत पाहा | iOS App",
+      "decision_context": "Zipbox हे App Store वरील सशुल्क app आहे. एकदा घेतल्यावर सर्व सुविधा मिळतात; app मधील खरेदी, सबस्क्रिप्शन किंवा जाहिरात नाही. 13 स्वरूपांवरची प्रक्रिया डिव्हाइसवरच होते. जाहिरात मुळीच नाही. बॅनर नाही, पूर्ण पडद्याचा व्हिडिओ नाही, 'स्किप'साठी उलटी गणतीही नाही. तुमच्या आणि तुमच्याच फाइलमध्ये काहीही येत नाही. ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 आणि ISO काढणे आधी पाहा, मग काढा. आतील यादी पाहा, फोटो, व्हिडिओ, PDF, मजकूर आणि कोडचे पूर्वावलोकन करा, आणि खरोखर हवी असलेली तेवढीच फाइल बाहेर काढा. अनेक भागांत विभागलेल्या किंवा पासवर्डने सुरक्षित ZIP, RAR आणि 7z अनेक भागांत विभागलेल्या किंवा पासवर्डने सुरक्षित ZIP, RAR आणि 7z फाइल्स ॲप, Safari चे डाउनलोड, मेल किंवा कोणत्याही शेअर मेनूमधून थेट उघडा, आणि निकाल त्याच वाटेने परत पाठवा. चॅटवर आलेल्या कामाच्या ZIP मध्ये चाळीस फाइल्स आहेत आणि तुम्हाला फक्त एकच PDF हवी आहे. Safari मधून उतरवलेली RAR फाइल्समध्ये पडून आहे आणि लोकलमध्ये फोनवर तिला काहीच उघडत नाही. मित्राने सुट्टीचे फोटो पासवर्ड असलेल्या 7z मध्ये पाठवले आहेत आणि तुम्हाला ते फक्त पाहायचे आहेत. Zipbox काय करतो ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 आणि ISO काढणे अनेक भागांत विभागलेल्या किंवा पासवर्डने सुरक्षित ZIP, RAR आणि 7z न काढता आर्काइव्हच्या आत पाहणे फोटो, व्हिडिओ, PDF, मजकूर आणि कोडचे पूर्वावलोकन एक फाइल, निवडलेल्या फाइल्स किंवा सर्व काही बाहेर काढणे फाइल्स, Safari डाउनलोड, मेल आणि शेअर मेनूमधून उघडणे AES-256 एन्क्रिप्शन आणि भागांत विभागून ZIP व 7z तयार करणे अनेक आर्काइव्ह क्रमाने काढणे; एक अयशस्वी झाले तरी उरलेली कामे सुरू राहतात आर्काइव्हच्या आत फाइलची नावे आणि मजकूर शोधणे; PDF फक्त फाइलच्या नावाने दुसऱ्या फोल्डरमध्ये हलवणे, नाव बदलणे, व्यवस्थित लावणे, फाइल्स व iCloud Drive मध्ये पाठवणे, संग्रहण तयार करा (Siri शॉर्टकट) Zipbox हे App Store वरील सशुल्क app आहे. एकदा घेतल्यावर सर्व सुविधा मिळतात; app मधील खरेदी, सबस्क्रिप्शन किंवा जाहिरात नाही. 13 स्वरूपांवरची प्रक्रिया डिव्हाइसवरच होते. एखादी फाइल उघडत नसेल किंवा एखादे स्वरूप हवे असेल तर लिहा: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "अधिक",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "पैसे देऊन डाउनलोड करा",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ऑफलाइन",
+        "खाते नाही",
+        "जाहिराती नाहीत",
+        "ट्रॅकिंग नाही",
+        "खाजगी / उपकरणावर"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "अधिक",
+        "पैसे देऊन डाउनलोड करा",
+        "ऑफलाइन",
+        "खाते नाही",
+        "जाहिराती नाहीत",
+        "ट्रॅकिंग नाही",
+        "खाजगी / उपकरणावर",
+        "App Store · ₹ 499"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/mr-IN/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/mr-IN/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fmr-IN%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store वरून Zipbox: ZIP, RAR, 7z अनझिप मिळवा",
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
+      "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
+      "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

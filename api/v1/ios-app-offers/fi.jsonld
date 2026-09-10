@@ -6,8 +6,8 @@
   "name": "Lumi Studio Julkaisijan Hakutarkoitusluettelo",
   "description": "Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.",
   "inLanguage": "fi",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "FI"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: avaa RAR, ZIP, 7z",
+        "description": "Zipbox on maksullinen App Store -appi. Yksi osto sisältää kaikki ominaisuudet: ei sovelluksen sisäisiä ostoja, tilauksia eikä mainoksia. 13 muotoa",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: avaa RAR, ZIP, 7z",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fi/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "fi",
+          "description": "Zipbox on maksullinen App Store -appi. Yksi osto sisältää kaikki ominaisuudet: ei sovelluksen sisäisiä ostoja, tilauksia eikä mainoksia. 13 muotoa",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

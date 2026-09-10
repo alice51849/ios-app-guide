@@ -2,7 +2,7 @@
 title: "how to tell if the wifi or the website is down free app"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/en-GB/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No 
 
 - More
 - Free to start · one-time unlock
-- No account
 - App Store · Free
 
 [Get WiFi Aid Lite on the App Store →](https://apps.apple.com/gb/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

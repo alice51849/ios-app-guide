@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-05",
-  "content_digest": "c8a40169d75be98e3dfbf2d274a9b81c2ad35cfc78aba01287c127b0fd530985",
+  "date_modified": "2026-09-10",
+  "content_digest": "fb3e26b4673a673405cba8ca3d19589e8784effef7c56e927930918faf8c9595",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 46,
+  "record_count": 47,
   "apps": [
     {
       "key": "notesstudio100",
@@ -870,8 +870,8 @@
         "price": "0",
         "currency": "JPY",
         "formatted_price": "無料",
-        "rating_value": 5.0,
-        "rating_count": 1,
+        "rating_value": 4.0,
+        "rating_count": 2,
         "storefront_url": "https://apps.apple.com/jp/app/id6773017109"
       }
     },
@@ -2441,7 +2441,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -2557,6 +2557,45 @@
         "currency": "JPY",
         "formatted_price": "¥1,500",
         "storefront_url": "https://apps.apple.com/jp/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox 解凍：ZIP RAR 7z対応",
+      "summary": "ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。",
+      "category": "utility",
+      "search_terms": [
+        "圧縮",
+        "圧縮解凍",
+        "展開",
+        "アーカイブ",
+        "パスワード",
+        "暗号化",
+        "分割",
+        "文字化け",
+        "一括",
+        "7zip"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ja/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "800",
+        "currency": "JPY",
+        "formatted_price": "¥800",
+        "storefront_url": "https://apps.apple.com/jp/app/id6806776579"
       }
     }
   ]

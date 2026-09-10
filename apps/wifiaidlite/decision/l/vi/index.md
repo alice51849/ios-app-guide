@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Chẩn đoán mạng có bằng chứng | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/vi/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đ�
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
-- Không tài khoản
 - App Store · Miễn phí
 
 [Tải WiFi Aid Lite trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

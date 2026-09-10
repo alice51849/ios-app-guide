@@ -6,8 +6,8 @@
   "name": "Lumi Studio வெளியீட்டாளர் தேடல் நோக்கக் குறியீட்டு அட்டவணை",
   "description": "ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.",
   "inLanguage": "ta-IN",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: ZIP, RAR, 7z திறக்க",
+        "description": "Zipbox App Store-இல் கட்டண app. ஒரே வாங்குதலில் எல்லா அம்சங்களும் கிடைக்கும்; in-app வாங்குதல், சந்தா, விளம்பரம் இல்லை. 13 வடிவங்களும் சாதனத்திலேயே",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: ZIP, RAR, 7z திறக்க",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "ta-IN",
+          "description": "Zipbox App Store-இல் கட்டண app. ஒரே வாங்குதலில் எல்லா அம்சங்களும் கிடைக்கும்; in-app வாங்குதல், சந்தா, விளம்பரம் இல்லை. 13 வடிவங்களும் சாதனத்திலேயே",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — നെറ്റ് തകരാർ കണ്ടെത്തി തീർക്കൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ml-IN/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - കൂടുതൽ
 - സൗജന്യമായി ആരംഭിക്കുക
-- അക്കൗണ്ട് ഇല്ല
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് WiFi Aid Lite നേടൂ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

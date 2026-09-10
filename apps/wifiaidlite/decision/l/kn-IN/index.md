@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — ನೆಟ್ ದೋಷ ಪತ್ತೆ ಮಾಡಿ ಸರಿಪಡಿಸಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/kn-IN/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - ಇನ್ನಷ್ಟು
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
-- ಖಾತೆ ಇಲ್ಲ
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ WiFi Aid Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

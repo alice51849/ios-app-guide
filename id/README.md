@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.
 
-Niat pencarian yang ditulis penerbit untuk 46 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
+Niat pencarian yang ditulis penerbit untuk 47 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · **id** · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 | **WiFi Aid Lite** | WiFi Aid Lite — Diagnosis jaringan berbukti \| iOS App | Temukan masalah aslinya. Setiap alat mencakup satu penggunaan penuh gratis. Buka kunci seumur hidup sekali bayar opsional untuk penggunaan tanpa | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/wifiaidlite.html) | [Dapatkan WiFi Aid Lite di App Store](https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite 5 Kata Sehari** | Wordmate Lite 5 Kata Sehari — 44 bahasa, satu menit per hari \| iOS App | Banyak orang berhenti belajar bahasa tepat di titik kartu hafalannya belum juga rampung. Wordmate Lite menghapus langkah itu. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/wordmatelite.html) | [Dapatkan Wordmate Lite 5 Kata Sehari di App Store](https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | aplikasi kosakata terbaik untuk komuter sibuk dengan Apple Watch | Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu pelajaran penuh, akun baru, atau ponsel di tangan setiap kali mengulang. Wordmate: Learn 44 Languages berangkat persis dari masalah ini. | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: Ekstrak RAR, ZIP, 7z** | Zipbox: Ekstrak RAR, ZIP, 7z — Buka arsip tanpa iklan \| iOS App | Zipbox adalah app berbayar di App Store. Sekali beli, semua fitur tersedia; tanpa pembelian dalam app, langganan, atau iklan. Semua 13 format diproses di | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/zipbox.html) | [Dapatkan Zipbox: Ekstrak RAR, ZIP, 7z di App Store](https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Unduh dataset lengkap
 
-JSON, JSONL, dan CSV memuat 2.300 catatan yang sama.
+JSON, JSONL, dan CSV memuat 2.350 catatan yang sama.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL, dan CSV memuat 2.300 catatan yang sama.
 
 [Beranda](https://open.cait518.cc/ios-app-guide/id/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/id/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisensi](https://creativecommons.org/licenses/by/4.0/)
 
-Diperbarui: 2026-09-05
+Diperbarui: 2026-09-10
 
 CC BY 4.0 berlaku untuk kompilasi katalog asli; nama aplikasi dan merek App Store adalah milik pemiliknya masing-masing.

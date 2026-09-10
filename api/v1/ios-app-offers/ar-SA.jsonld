@@ -6,8 +6,8 @@
   "name": "كتالوج نوايا البحث للناشر Lumi Studio",
   "description": "كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.",
   "inLanguage": "ar-SA",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "39.99",
+        "priceCurrency": "SAR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "SA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: فك ضغط RAR وZIP و7z",
+        "description": "Zipbox تطبيق مدفوع من App Store. شراء التطبيق يشمل كل الميزات، بلا مشتريات داخل التطبيق أو اشتراكات أو إعلانات. تُعالج 13 صيغة محليًا على جهازك.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: فك ضغط RAR وZIP و7z",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ar-SA/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "ar-SA",
+          "description": "Zipbox تطبيق مدفوع من App Store. شراء التطبيق يشمل كل الميزات، بلا مشتريات داخل التطبيق أو اشتراكات أو إعلانات. تُعالج 13 صيغة محليًا على جهازك.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "19.99",
         "priceCurrency": "SAR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

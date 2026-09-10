@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-05",
-  "content_digest": "c8a40169d75be98e3dfbf2d274a9b81c2ad35cfc78aba01287c127b0fd530985",
+  "date_modified": "2026-09-10",
+  "content_digest": "fb3e26b4673a673405cba8ca3d19589e8784effef7c56e927930918faf8c9595",
   "locale": "sk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 46,
+  "record_count": 47,
   "apps": [
     {
       "key": "notesstudio100",
@@ -2124,7 +2124,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": true,
+        "no_account": false,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -2217,6 +2217,48 @@
         "currency": "EUR",
         "formatted_price": "9,99 €",
         "storefront_url": "https://apps.apple.com/sk/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox: otvoriť RAR, ZIP, 7z",
+      "summary": "Zipbox je platená aplikácia z App Storu. Jedna kúpa zahŕňa všetky funkcie, bez nákupov v aplikácii, predplatného a reklám. Všetkých 13 formátov sa spracuje v zariadení.",
+      "category": "utility",
+      "search_terms": [
+        "rozbaliť",
+        "archív",
+        "heslo",
+        "šifrovanie",
+        "priečinok",
+        "správca",
+        "súbory",
+        "7zip",
+        "unrar",
+        "tar",
+        "gz",
+        "iso",
+        "kompresia"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/sk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sk/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/sk/app/id6806776579"
       }
     }
   ]

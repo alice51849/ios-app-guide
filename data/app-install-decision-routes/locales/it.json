@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "it",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/it.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/it.rss.xml",
@@ -2205,18 +2205,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis per iniziare · sblocco unico",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Nessun account"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Altro",
         "Gratis per iniziare · sblocco unico",
-        "Nessun account",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/wifiaidlite.html",
@@ -2350,6 +2345,68 @@
       "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "it:zipbox",
+      "locale": "it",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: aprire RAR, ZIP e 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: aprire RAR, ZIP e 7z — Decomprimi senza pubblicità | iOS App",
+      "decision_context": "Zipbox è un’app a pagamento su App Store. Un acquisto include tutto, senza acquisti in-app, abbonamenti o pubblicità. I 13 formati sono gestiti sul dispositivo. Nessuna pubblicità, mai. Niente banner, niente video a schermo intero, niente conto alla rovescia tra te e un file tuo. Estrarre ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 e ISO Prima guardi, poi estrai. Scorri l'elenco, vedi in anteprima foto, video, PDF, testo e codice, poi tiri fuori solo il file che ti serve davvero. Tutto avviene sul dispositivo. Zipbox non fa richieste di rete, non ha account né accesso e non contiene codice di analisi o tracciamento. Aprire archivi ZIP, RAR e 7z divisi in più parti o protetti da password Apri direttamente da File, da un download di Safari, da Mail o da qualsiasi menu di condivisione, e rimandi indietro il risultato dallo stesso punto. Un archivio di lavoro arriva per posta e in treno ti serve un solo PDF su quaranta. Un RAR scaricato con Safari resta in File e sul telefono non c'è niente che lo apra. Un amico manda un 7z protetto da password con le foto delle vacanze e tu vuoi solo guardarle. Cosa fa Zipbox Estrarre ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 e ISO Aprire archivi ZIP, RAR e 7z divisi in più parti o protetti da password Guardare dentro un archivio senza estrarlo Vedere in anteprima foto, video, PDF, testo e codice Estrarre un solo file, una selezione o tutto Aprire da File, dai download di Safari, da Mail e dal menu di condivisione Creare ZIP e 7z con crittografia AES-256 e suddivisione in più volumi Estrarre più archivi in sequenza; un errore non interrompe gli altri Cercare nei nomi dei file e nel testo dentro gli archivi; i PDF solo per nome Spostare, rinominare, ordinare, esportare in File e iCloud Drive, Crea archivio (comandi rapidi) Zipbox è un’app a pagamento su App Store. Un acquisto include tutto, senza acquisti in-app, abbonamenti o pubblicità. I 13 formati sono gestiti sul dispositivo. Se un file non si apre o manca un formato, scrivi a hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "Altro",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Scaricamento a pagamento",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nessun account",
+        "Nessuna pubblicità",
+        "Nessun tracciamento",
+        "Privato / su dispositivo"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Altro",
+        "Scaricamento a pagamento",
+        "Offline",
+        "Nessun account",
+        "Nessuna pubblicità",
+        "Nessun tracciamento",
+        "Privato / su dispositivo",
+        "App Store · 5,99 €"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/it/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/it/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/it/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Scarica Zipbox: aprire RAR, ZIP e 7z sull'App Store",
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €"
+      },
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

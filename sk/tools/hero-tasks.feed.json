@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Porovnajte nákupy podľa čistého hodinového príjmu a stiahnite si vlastný CSV. Spolu = počet × konečná cena. Hodiny = celková suma ÷ čistý hodinový príjem. Dni = hodiny ÷ hodiny za pracovný deň. Zadajte ceny vrátane dane. Bez prevodu mien, výpočtu mzdy, predpovede úspor a nákupných rád. Zobrazenie má dve desatinné miesta; súčty používajú nezaokrúhlené hodnoty.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/purchase-worktime-sheet.html",
       "language": "sk",
       "title": "Porovnajte nákupy v hodinách práce",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Zapíšte, kedy ste naposledy urobili každú úlohu v domácnosti, pri aute alebo pre zdravie a ako často sa opakuje: získate ďalší termín, zostávajúce dni a to, čo je po termíne, v tabuľke na stiahnutie. Ďalší termín = naposledy + interval. Pri mesiacoch zostáva rovnaký deň; ak neexistuje, použije sa posledný deň mesiaca (vrátane priestupných rokov). Zostáva dní = termín − dnes. Pod 0 po termíne; 0 až 7 čoskoro. Intervaly 1 až 3650 dní, týždňov alebo mesiacov. Dátumy medzi 1900-01-01 a 2999-12-31. Najviac 30 úloh. Žiadne pripomienky, upozornenia ani synchronizácia s kalendárom; nič neopúšťa túto stránku.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/maintenance-next-due-sheet.html",
       "language": "sk",
       "title": "Prehľad termínov údržby",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Vypíšte, čo zákazka na voľnej nohe alebo malý projekt priniesli a koľko stáli, a stiahnite si prehľad s hrubým ziskom, maržou a čistým zárobkom na hodinu. Zisk = príjmy spolu − výdavky spolu. Marža = zisk ÷ príjmy spolu. Čistý zárobok na hodinu = zisk ÷ odpracované hodiny. Sumy sa sčítavajú v celých centoch, takže súčty neujdú. Sumy od 0 do 100 000 000 s najviac dvoma desatinnými miestami, až 20 riadkov príjmov a 20 výdavkov, hodiny od 0,25 do 2000 po štvrťhodinách. Jedna mena, bez prepočtu, bez daňového či účtovného poradenstva.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/project-profit-sheet.html",
       "language": "sk",
       "title": "Prehľad zisku projektu",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Zadajte maximálnu kapacitu z Nastavení iPhonu a, ak ho poznáte, počet cyklov, a stiahnite si tabuľku s rozsahom opotrebenia za mesiac a počtom mesiacov do 80 % – vždy ako rozsah, nikdy ako skóre. Opotrebenie za mesiac = (100 − kapacita) ÷ vek v mesiacoch, zobrazené s pásmom ±25 %. Mesiacov do 80 % = (kapacita − 80) ÷ opotrebenie; dolná hranica z vysokého tempa, horná z nízkeho. Cyklov za mesiac = cykly ÷ vek. Kapacita 60 až 100 ako celé percento, cykly 0 až 3000, mesiac nákupu medzi 2007 a 2099 pri veku 1 až 240 mesiacov, až 10 zariadení. Mesiace v tvare RRRR-MM. Údaje zostávajú v tejto karte; z telefónu sa nič nemeria ani nečíta.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/battery-wear-range-sheet.html",
       "language": "sk",
       "title": "Rozsah opotrebenia batérie",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Spíšte, čo doma robíte online naraz a na koľkých zariadeniach, a stiahnite si tabuľku s potrebnými Mb/s a rezervou, ktorá vám v paušáli zostáva. Spolu v riadku = zariadenia × hodnota na zariadenie. Potreba = súčet riadkov. Rezerva = paušál − potreba; pod 20 % paušálu je to tesné, pod nulou nestačí. Sčíta sa v celých desatinách Mb/s, súčty sa nikdy nerozídu. Rýchlosti paušálu 0,5 až 10000 Mb/s s najviac jedným desatinným miestom, 1 až 50 zariadení na riadok, najviac 20 riadkov. Pokrytie Wi‑Fi, odozva a skutočne dodávaná rýchlosť do tabuľky nepatria.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/bandwidth-need-sheet.html",
       "language": "sk",
       "title": "Potrebná rýchlosť internetu doma",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Zadajte celkový rozpočet cesty, dni, cestujúcich a náklady, ktoré už poznáte, a stiahnite si tabuľku s tým, koľko môže každý minúť za deň a ako sa to delí medzi jedlo, dopravu, vstupenky a nákupy. Na minutie = celkový rozpočet − pevné náklady. Na deň = na minutie ÷ dni. Na osobu a deň = na deň ÷ cestujúci. Každá kategória = na deň × jej podiel. Sumy sa sčítavajú v celých centoch; denné hodnoty sa zaokrúhľujú len pri zobrazení. Sumy 0 až 100 000 000 s najviac dvoma desatinnými miestami, 1 až 120 dní, 1 až 20 cestujúcich, najviac 15 pevných nákladov, štyri podiely, ktoré dávajú presne 100. Všade rovnaká mena, žiadne kurzy, žiadne rady k cenám ani rezerváciám.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/trip-budget-sheet.html",
       "language": "sk",
       "title": "Cestovný rozpočet na deň",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Spíšte miesta jedného dňa s tým, ako dlho tam ostanete a ako dlho trvá cesta k ďalšiemu, a stiahnite si tabuľku s časmi príchodu a odchodu, ktorá ukáže, či sa všetko zmestí medzi váš začiatok a koniec. Príchod = predchádzajúci odchod + cesta. Odchod = príchod + pobyt. Spolu = všetky pobyty + všetky cesty. K dispozícii = koniec − začiatok; koniec skorší než začiatok sa počíta ako ďalší deň. Presah = spolu − k dispozícii; čokoľvek nad nulou preťahuje. Čistá minútová aritmetika, žiadne časové pásma. Časy v 24-hodinovom formáte HH:MM, pobyty 5 až 720 minút, cesty 0 až 600 minút, najviac 25 miest. Otváracie hodiny, skutočná premávka, mapy, trasovanie a rezervácie do tabuľky nepatria.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/day-itinerary-sheet.html",
       "language": "sk",
       "title": "Časový plán jedného dňa",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Premeňte neusporiadané poznámky zo stretnutia na jednostranovú osnovu: jeden titulok, tri až dvanásť kľúčových bodov, jeden ďalší krok a voliteľnú metriku, a stiahnite si to ako tabuľku, ktorú vložíte do snímky alebo zhrnutia. Tabuľka zachováva vaše slová tak, ako sú: titulok, potom body v poradí, v akom ste ich napísali, potom ďalší krok a nakoniec metrika. Spočíta body a odstráni medzery na okrajoch; nič sa neprepisuje, nezhŕňa ani nehodnotí. Titulok do 80 znakov, 3 až 12 bodov po najviac 160 znakov, ďalší krok do 160 znakov, metrika do 60 znakov. Každý riadok musí byť jednoriadkový text. Tabuľka nečíta súbory, nahrávky ani kalendáre.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/one-page-outline-sheet.html",
       "language": "sk",
       "title": "Zo stretnutia na jednu stranu",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Napíš, za koľko si kto objednal, doplň percentá dane a prepitného a uvidíš, koľko má kto presne zaplatiť. Daň aj prepitné sa rozdelia na centy podľa objednávky a tabuľku si stiahneš ako CSV. Medzisúčet = všetky objednávky spolu. Daň = medzisúčet × sadzba dane. Prepitné = medzisúčet × sadzba prepitného. Podiel každého je jeho objednávka ÷ medzisúčet; zvyšné centy pripadnú najskôr najväčším desatinným zvyškom, takže podiely vždy dajú presne sumu účtu. Používaj jednu menu a daň aj prepitné zadávaj ako percento z medzisúčtu. Žiadny prepočet mien, žiadne pravidlá pre servisný poplatok, žiadne odporúčanie, koľko dať, a žiadne platenie. Na obrazovke sa zaokrúhľuje na dve desatinné miesta; samotné delenie počíta v celých centoch.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/bill-split-sheet.html",
       "language": "sk",
       "title": "Rozdelenie účtu",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Vypíš, čo si uložil a ako dlho to trvá, zadaj, koľko minút denne naozaj čítaš, a uvidíš, ktorý deň každú vec dočítaš. Plán si stiahneš ako CSV. Priebežný súčet = minúty tejto položky plus všetko nad ňou. Deň = priebežný súčet ÷ minúty za deň, zaokrúhlené nahor. Hotové = počiatočný dátum + deň − 1. Voľné minúty = dni × minúty za deň − minút spolu. Poradie, v akom píšeš, je poradie čítania: nič sa nepresúva, nepreskakuje ani nespája. Jedno čítanie denne, ktoré presne vyčerpá tvoj limit, bez voľných dní, bez otvárania či sťahovania odkazov a bez odhadovania rýchlosti čítania.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/reading-backlog-sheet.html",
       "language": "sk",
       "title": "Plán «prečítať neskôr»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Zadaj, kedy si ktorú poznámku písal, a dostaneš päť nasledujúcich termínov opakovania, koľko dní zostáva a ktoré už máš za sebou. Plán si stiahneš ako CSV. Dátum opakovania = dátum napísania + 1, 3, 7, 16 a 35 dní. Zostáva dní = dátum opakovania − dnes; záporné číslo znamená termín, ktorý už uplynul. Najbližšie opakovanie = prvý termín, ktorý je dnes alebo neskôr. Je to pevný rebrík odstupov, nie model pamäti: nič tu nepredpovedá, čo si zapamätáš, nehodnotí poznámku ani neopravuje odpovede. Len dátumy, bez časov, časových pásem, pripomienok a upozornení.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sk/tools/review-schedule-sheet.html",
       "language": "sk",
       "title": "Plán opakovania",

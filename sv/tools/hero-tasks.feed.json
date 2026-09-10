@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Jämför köp med din nettoinkomst per timme och ladda ned din egen CSV. Totalt = antal × styckpris. Arbetstimmar = totalbelopp ÷ nettoinkomst per timme. Arbetsdagar = arbetstimmar ÷ timmar per arbetsdag. Ange priser inklusive skatt. Ingen valutaväxling, löneberäkning, sparprognos eller köprådgivning. Visningen avrundas till två decimaler; totaler använder oavrundade värden.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/purchase-worktime-sheet.html",
       "language": "sv",
       "title": "Jämför köp i arbetstimmar",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Skriv in när du senast gjorde varje uppgift för hemmet, bilen eller hälsan och hur ofta den återkommer: du får nästa datum, dagar kvar och det som är försenat i ett nedladdningsbart blad. Nästa förfallodatum = senast gjord + intervall. Vid månader behålls samma dag; finns den inte används månadens sista dag (även skottår). Dagar kvar = förfallodatum − i dag. Försenad under 0; snart från 0 till 7. Intervall från 1 till 3650 dagar, veckor eller månader. Datum mellan 1900-01-01 och 2999-12-31. Upp till 30 uppgifter. Inga påminnelser, notiser eller kalendersynkning; ingenting lämnar den här sidan.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/maintenance-next-due-sheet.html",
       "language": "sv",
       "title": "Underhållsschema med nästa förfallodatum",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Lista vad ett frilansprojekt eller litet uppdrag gav och kostade och ladda ner ett blad med bruttovinst, marginal och netto per timme. Vinst = summa intäkter − summa kostnader. Marginal = vinst ÷ summa intäkter. Netto per timme = vinst ÷ arbetade timmar. Beloppen summeras i hela ören, så totalerna driver inte. Belopp från 0 till 100 000 000 med högst två decimaler, upp till 20 intäkts- och 20 kostnadsrader, timmar från 0,25 till 2000 i kvartssteg. Samma valuta, ingen växling, ingen skatte- eller bokföringsrådgivning.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/project-profit-sheet.html",
       "language": "sv",
       "title": "Projektets vinstblad",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Skriv in den maximala kapaciteten från iPhone-inställningarna och, om du har det, antalet laddcykler, och ladda ner ett blad med slitagespannet per månad och månaderna kvar till 80 % – alltid ett spann, aldrig ett betyg. Slitage per månad = (100 − kapacitet) ÷ ålder i månader, visat med ±25 %. Månader till 80 % = (kapacitet − 80) ÷ slitage; undre gräns med den höga takten, övre gräns med den låga. Cykler per månad = cykler ÷ ålder. Kapacitet 60–100 som helt procenttal, cykler 0–3000, köpmånad mellan 2007 och 2099 med 1–240 månaders ålder, upp till 10 enheter. Månader som ÅÅÅÅ-MM. Uppgifterna stannar i den här fliken; ingenting mäts eller läses från din telefon.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/battery-wear-range-sheet.html",
       "language": "sv",
       "title": "Batterislitage-intervall",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Lista vad hushållet gör på nätet samtidigt och hur många enheter som gör det, och ladda ner en tabell med de Mbps som krävs och marginalen som är kvar på ditt abonnemang. Summa per rad = enheter × värde per enhet. Behov = summan av raderna. Marginal = abonnemang − behov; under 20 % av abonnemanget är tajt, under noll räcker det inte. Allt summeras i hela tiondels Mbit/s, så summorna driver aldrig. Abonnemangshastigheter från 0,5 till 10000 Mbit/s med högst en decimal, 1 till 50 enheter per rad, upp till 20 rader. Wifi-täckning, latens och den hastighet du faktiskt får ligger utanför tabellen.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/bandwidth-need-sheet.html",
       "language": "sv",
       "title": "Bandbredd som hemmet behöver",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Fyll i resans totala budget, dagar, resenärer och kostnader du redan känner till, och ladda ner en tabell med vad varje person kan spendera per dag och hur det fördelas på mat, transport, biljetter och shopping. Kvar att spendera = total budget − fasta kostnader. Per dag = kvar att spendera ÷ dagar. Per person och dag = per dag ÷ resenärer. Varje kategori = per dag × dess andel. Belopp summeras i hela ören; dagsbelopp avrundas bara vid visning. Belopp från 0 till 100 000 000 med högst två decimaler, 1 till 120 dagar, 1 till 20 resenärer, upp till 15 fasta kostnader, fyra andelar som tillsammans blir exakt 100. Samma valuta rakt igenom, inga växelkurser, inga pris- eller bokningsråd.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/trip-budget-sheet.html",
       "language": "sv",
       "title": "Resebudget per dag",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Lista dagens platser med hur länge du stannar och hur lång tid det tar till nästa, och ladda ner en tabell med ankomst- och avgångstider som visar om allt får plats mellan din start och ditt slut. Ankomst = föregående avgång + resa. Avgång = ankomst + vistelse. Totalt = alla vistelser + alla resor. Tillgängligt = slut − start; en sluttid före starttiden räknas som nästa dag. Över = totalt − tillgängligt; allt över noll drar över. Ren minuträkning, inga tidszoner. Tider som 24-timmars HH:MM, vistelser från 5 till 720 minuter, resor från 0 till 600 minuter, upp till 25 platser. Öppettider, verklig trafik, kartor, vägval och bokningar ligger utanför tabellen.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/day-itinerary-sheet.html",
       "language": "sv",
       "title": "Tidsschema för en dag",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Gör om röriga mötesanteckningar till en sammanfattning på en sida: en rubrik, tre till tolv nyckelpunkter, en nästa åtgärd och ett valfritt mätvärde, och ladda ner den som en tabell att klistra in i en bild eller en summering. Tabellen behåller dina ord som de är: rubrik, sedan punkterna i den ordning du skrev dem, sedan nästa åtgärd, sedan mätvärdet. Den räknar punkterna och tar bort mellanslag i kanterna; inget skrivs om, sammanfattas eller betygsätts. Rubrik upp till 80 tecken, 3 till 12 punkter på högst 160 tecken var, nästa åtgärd upp till 160 tecken, mätvärde upp till 60 tecken. Varje rad måste vara text på en rad. Tabellen läser inga filer, inspelningar eller kalendrar.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/one-page-outline-sheet.html",
       "language": "sv",
       "title": "Mötesanteckningar till en sida",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Skriv in vad varje person beställt för, ange moms och dricks i procent, så ser du exakt vad var och en ska betala. Moms och dricks fördelas till sista öret efter beställningen, och listan laddas ner som CSV. Delsumma = allt beställt hopräknat. Moms = delsumma × momssats. Dricks = delsumma × dricksprocent. Varje persons andel är den egna beställningen ÷ delsumman; ören som blir över går först till de största decimalerna, så att andelarna tillsammans blir exakt notan. Använd en enda valuta och ange moms och dricks som procent av delsumman. Ingen valutaväxling, inga regler för serveringsavgift, inga råd om hur mycket dricks du bör lämna och inga betalningar. På skärmen avrundas till två decimaler; själva fördelningen räknas i hela ören.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/bill-split-sheet.html",
       "language": "sv",
       "title": "Dela notan",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Skriv upp vad du sparat och hur lång tid varje sak tar, ange hur många minuter du faktiskt läser per dag, och se vilken dag varje sak blir klar. Planen laddas ner som CSV. Löpande summa = minuterna för det här objektet plus allt ovanför. Dag = löpande summa ÷ minuter per dag, uppåt avrundat. Klar den = startdatum + dag − 1. Lediga minuter = dagar × minuter per dag − minuter totalt. Ordningen du skriver är läsordningen: inget sorteras om, hoppas över eller slås ihop. En omgång om dagen som gör slut på precis din tid, utan lediga dagar, utan att öppna eller hämta några länkar och utan att gissa din lästakt.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/reading-backlog-sheet.html",
       "language": "sv",
       "title": "Läs senare-plan",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Ange när du skrev varje anteckning så får du de fem repetitionsdatum som följer, med dagar kvar och vilka som redan passerat. Schemat laddas ner som CSV. Repetitionsdatum = skrivdatum + 1, 3, 7, 16 och 35 dagar. Dagar kvar = repetitionsdatum − i dag; ett negativt tal är ett datum som redan passerat. Nästa repetition = det första datumet i dag eller senare. En fast intervalltrappa, inte en minnesmodell: här förutsägs ingenting om vad du minns, ingen anteckning betygsätts och inget svar rättas. Bara datum, utan klockslag, tidszoner, påminnelser eller aviseringar.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sv/tools/review-schedule-sheet.html",
       "language": "sv",
       "title": "Repetitionsschema",

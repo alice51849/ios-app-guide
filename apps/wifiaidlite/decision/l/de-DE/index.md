@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Netzdiagnose mit Belegen | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/de-DE/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Das echte Problem. Jedes Tool bietet eine kostenlose vollständige Nutzung. Opti
 
 - Mehr
 - Kostenloser Einstieg · einmalige Freischaltung
-- Kein Konto
 - App Store · Kostenlos
 
 [WiFi Aid Lite im App Store laden](https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

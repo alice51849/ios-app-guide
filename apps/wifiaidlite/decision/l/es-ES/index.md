@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Diagnóstico de red fiable | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/es-ES/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un 
 
 - Más
 - Gratis para empezar · desbloqueo único
-- Sin cuenta
 - App Store · Gratis
 
 [Consigue WiFi Aid Lite en el App Store](https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 46 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 47 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **WiFi Aid: Löydä verkon viat** | WiFi Aid: Löydä verkon viat — Verkon vianmääritys näytöin \| iOS App | Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/wifiaid.html) | [Lataa WiFi Aid: Löydä verkon viat App Storesta](https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: Sanasto** | Wordmate Lite: Sanasto — Viisi uutta sanaa päivässä \| iOS App | Viisi sanaa. Yksi minuutti. Polku, jonka todella näet. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/wordmatelite.html) | [Lataa Wordmate Lite: Sanasto App Storesta](https://apps.apple.com/fi/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | paras sanastoharjoitussovellus kiireisille Apple Watch -käyttäjille | Kiireiset työmatkalaiset tarvitsevat sanastoharjoituksia, jotka mahtuvat vapaisiin hetkiin ilman kokonaista oppituntia, uutta tiliä tai puhelinta kädessä joka kerta. Wordmate: Learn 44 Languages lähti liikkeelle juuri tuosta ongelmasta. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Hanki Wordmate: Learn 44 Languages App Storesta →](https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: avaa RAR, ZIP, 7z** | Zipbox: avaa RAR, ZIP, 7z — Pura ilman mainoksia \| iOS App | Zipbox on maksullinen App Store -appi. Yksi osto sisältää kaikki ominaisuudet: ei sovelluksen sisäisiä ostoja, tilauksia eikä mainoksia. 13 muotoa | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/zipbox.html) | [Lataa Zipbox: avaa RAR, ZIP, 7z App Storesta](https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 2 300 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 2 350 tietuetta.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL ja CSV sisältävät samat 2 300 tietuetta.
 
 [Etusivu](https://open.cait518.cc/ios-app-guide/fi/index.html) · [Avoin data](https://open.cait518.cc/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-09-05
+Päivitetty: 2026-09-10
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

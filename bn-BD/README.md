@@ -4,7 +4,7 @@
 
 প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।
 
-৪৬টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৪৭টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: নেটওয়ার্ক সমস্যা** | WiFi Aid: নেটওয়ার্ক সমস্যা — নেটওয়ার্ক পরীক্ষা ও প্রমাণ \| iOS App | স্বাধীন পথ, DNS, TCP, TLS, টাইমিং ও স্থিতিশীলতা পরীক্ষায় সংযোগ সমস্যার সম্ভাব্য কারণ খুঁজুন। একবার কিনুন—কোনো সাবস্ক্রিপশন, বিজ্ঞাপন বা ট্র্যাকিং নেই। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html) | [App Store থেকে WiFi Aid: নেটওয়ার্ক সমস্যা ডাউনলোড করুন](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: ইংরেজি শেখা** | Wordmate Lite: ইংরেজি শেখা — প্রতিদিন ৫টি নতুন শব্দ \| iOS App | নতুন শব্দ শেখার ইচ্ছা প্রায় সবারই থাকে, কিন্তু বেশিরভাগ অ্যাপ প্রথম দিনেই এত কার্ড সামনে ফেলে দেয় যে এক সপ্তাহ পেরোনোর আগেই সব বন্ধ হয়ে যায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/wordmatelite.html) | [App Store থেকে Wordmate Lite: ইংরেজি শেখা ডাউনলোড করুন](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch সহ ব্যস্ত যাত্রীদের জন্য সেরা শব্দভাণ্ডার অ্যাপ | ব্যস্ত যাত্রীদের দরকার শব্দভাণ্ডার অনুশীলন, যা ফাঁকা সময়ে সম্পূর্ণ পাঠ, নতুন অ্যাকাউন্ট বা প্রতিটি পুনরালোচনার জন্য ফোন না চায়। Wordmate: Learn 44 Languages-এর শুরুটা ঠিক এই সমস্যা থেকেই। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [App Store-এ Wordmate: Learn 44 Languages পান →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z আনজিপ** | Zipbox: ZIP, RAR, 7z আনজিপ — বিজ্ঞাপন ছাড়া, আগে দেখে নিন \| iOS App | Zipbox হলো App Store-এর পেইড অ্যাপ। একবার কিনলেই সব ফিচার থাকে; অ্যাপের ভেতরে আর কেনাকাটা, সাবস্ক্রিপশন বা বিজ্ঞাপন নেই। ১৩টি ফরম্যাট ফোনেই চলে। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html) | [App Store থেকে Zipbox: ZIP, RAR, 7z আনজিপ ডাউনলোড করুন](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৩০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৩৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL এবং CSV একই ২,৩০০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-09-05
+আপডেট: 2026-09-10
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

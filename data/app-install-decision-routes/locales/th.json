@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/th.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/th.rss.xml",
@@ -2202,18 +2202,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "ไม่มีบัญชี"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
-        "ไม่มีบัญชี",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html",
@@ -2347,6 +2342,68 @@
       "publisher_disclosure": "คู่มือนี้จัดทำโดย Lumi Studio ซึ่งเป็นผู้พัฒนาแอป ชื่อแอปทั้งหมดเป็นเครื่องหมายการค้าของเจ้าของแต่ละราย และใช้เพื่อการอ้างอิงเท่านั้น สำหรับการตัดสินใจที่เกี่ยวกับเอกสาร สุขภาพ การเรียน และการทำงาน โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการที่เกี่ยวข้องด้วย",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "th:zipbox",
+      "locale": "th",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: แตกไฟล์ RAR ZIP 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: แตกไฟล์ RAR ZIP 7z — เปิดไฟล์บีบอัด ไม่มีโฆษณา | iOS App",
+      "decision_context": "Zipbox เป็นแอปแบบชำระเงินบน App Store ซื้อครั้งเดียวได้ทุกฟีเจอร์ ไม่มีการซื้อในแอป การสมัครสมาชิก หรือโฆษณา รองรับ 13 รูปแบบและประมวลผลบนเครื่องเท่านั้น ไม่มีโฆษณา ไม่ว่าเมื่อไร ไม่มีแบนเนอร์ ไม่มีวิดีโอเต็มจอ ไม่มีการนับถอยหลังมาขวางระหว่างคุณกับไฟล์ของคุณเอง แตกไฟล์ ZIP RAR/RAR5 7z TAR GZIP TAR.GZIP BZIP2 TAR.BZIP2 XZ TAR.XZ LZMA LZ4 และ ISO ดูก่อนแล้วค่อยแตก เลื่อนดูรายการข้างใน พรีวิวรูปภาพ วิดีโอ PDF ข้อความ และโค้ด แล้วดึงออกมาเฉพาะไฟล์ที่ต้องการจริง ๆ ทุกอย่างทำบนเครื่อง Zipbox ไม่ส่งคำขอผ่านเครือข่าย ไม่มีบัญชี ไม่ต้องลงชื่อเข้าใช้ และไม่มีโค้ดวิเคราะห์หรือติดตามผู้ใช้ ZIP RAR 7z ที่แบ่งเป็นหลายส่วนหรือตั้งรหัสผ่าน เปิดได้จากแอปไฟล์ จากรายการดาวน์โหลดใน Safari จากอีเมล หรือจากเมนูแชร์ใดก็ได้ แล้วส่งผลลัพธ์กลับออกไปทางเดิม ไฟล์งานส่งมาทางอีเมล แต่บนรถไฟฟ้าคุณต้องการ PDF เพียงไฟล์เดียวจากสี่สิบไฟล์ ไฟล์ RAR ที่โหลดจาก Safari ค้างอยู่ในแอปไฟล์ และไม่มีอะไรในเครื่องเปิดได้เลย เพื่อนส่งไฟล์ 7z ที่ตั้งรหัสผ่านซึ่งมีรูปเที่ยวอยู่ข้างใน แต่คุณแค่อยากดูเฉย ๆ Zipbox ทำอะไรได้บ้าง แตกไฟล์ ZIP RAR/RAR5 7z TAR GZIP TAR.GZIP BZIP2 TAR.BZIP2 XZ TAR.XZ LZMA LZ4 และ ISO ZIP RAR 7z ที่แบ่งเป็นหลายส่วนหรือตั้งรหัสผ่าน ดูข้างในโดยไม่ต้องแตกไฟล์ พรีวิวรูปภาพ วิดีโอ PDF ข้อความ และโค้ด ดึงออกมาไฟล์เดียว เลือกหลายไฟล์ หรือทั้งหมด เปิดจากแอปไฟล์ รายการดาวน์โหลดใน Safari อีเมล และเมนูแชร์ สร้าง ZIP และ 7z พร้อมการเข้ารหัส AES-256 และแบ่งเป็นหลายส่วน แตกไฟล์บีบอัดหลายรายการตามลำดับ รายการหนึ่งล้มเหลวก็ไม่หยุดรายการที่เหลือ ค้นหาชื่อไฟล์และข้อความภายในไฟล์บีบอัด ส่วน PDF ค้นหาจากชื่อไฟล์เท่านั้น ย้าย เปลี่ยนชื่อ จัดระเบียบ ส่งออกไปยังแอปไฟล์และ iCloud Drive และสร้างไฟล์บีบอัด (คำสั่งลัด Siri) Zipbox เป็นแอปแบบชำระเงินบน App Store ซื้อครั้งเดียวได้ทุกฟีเจอร์ ไม่มีการซื้อในแอป การสมัครสมาชิก หรือโฆษณา รองรับ 13 รูปแบบและประมวลผลบนเครื่องเท่านั้น ถ้ามีไฟล์ที่เปิดไม่ได้ หรืออยากให้รองรับรูปแบบใดเพิ่ม เขียนมาที่ hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "เพิ่มเติม",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "เพิ่มเติม",
+        "ดาวน์โหลดแบบชำระเงิน",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "App Store · ฿199.00"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/th/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/th/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/th.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/th/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "ดาวน์โหลด Zipbox: แตกไฟล์ RAR ZIP 7z บน App Store",
+      "storefront_facts": {
+        "price": "199",
+        "currency": "THB",
+        "formatted_price": "฿199.00"
+      },
+      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
+      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

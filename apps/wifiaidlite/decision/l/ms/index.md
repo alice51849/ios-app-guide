@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Diagnosis rangkaian tepat | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ms/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Cari punca sebenar. Setiap alat termasuk satu penggunaan penuh percuma. Buka kun
 
 - Lagi
 - Percuma untuk bermula · buka kunci sekali sahaja
-- Tiada akaun
 - App Store · Percuma
 
 [Dapatkan WiFi Aid Lite di App Store](https://apps.apple.com/my/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

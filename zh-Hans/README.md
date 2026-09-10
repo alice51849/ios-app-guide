@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 46 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 47 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid：找出网络问题·诊断** | WiFi Aid：找出网络问题·诊断 — 网络诊断与连接证据 \| iOS App | 通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html) | [在 App Store 获取 WiFi Aid：找出网络问题·诊断](https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite 每天五个单词** | Wordmate Lite 每天五个单词 — 44 种语言，一分钟记词习惯 \| iOS App | 很多人的外语进度，都卡在「卡片还没做完」这一步。Wordmate Lite 想去掉的就是这一步。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/wordmatelite.html) | [在 App Store 获取 Wordmate Lite 每天五个单词](https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate：学习44种语言** | 适合通勤族和Apple Watch用户的最佳词汇App | 通勤族要的是零碎时间就能背几个词，不必上完整课程、不必注册账号，也不必每次都得把手机拿出来复习。Wordmate：学习44种语言 就是从这个问题开始做的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox 解压缩：RAR ZIP 7z** | Zipbox 解压缩：RAR ZIP 7z — 零广告，内容先看再处理 \| iOS App | Zipbox 是 App Store 付费下载 App，一次购买就包含全部功能，没有 App 内购买、订阅或广告。13 种格式都在设备本地处理。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/zipbox.html) | [在 App Store 获取 Zipbox 解压缩：RAR ZIP 7z](https://apps.apple.com/cn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,300 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,350 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,300 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-09-05
+更新日期: 2026-09-10
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

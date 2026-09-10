@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Vertaa ostoksia nettotuntitulosi avulla ja lataa oma CSV-tiedostosi. Yhteensä = määrä × yksikköhinta. Työtunnit = summa ÷ nettotuntitulo. Työpäivät = työtunnit ÷ työtunnit päivässä. Sisällytä verot hintoihin. Ei valuutanvaihtoa, palkanlaskentaa, säästöennusteita tai ostosuosituksia. Näyttö pyöristää kahteen desimaaliin; summat lasketaan pyöristämättömistä arvoista.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/purchase-worktime-sheet.html",
       "language": "fi",
       "title": "Vertaa ostoksia työtunteina",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Kirjaa, milloin teit kodin, auton tai terveyden tehtävän viimeksi ja kuinka usein se toistuu: saat seuraavan eräpäivän, jäljellä olevat päivät ja myöhässä olevat tehtävät ladattavana taulukkona. Seuraava eräpäivä = viimeksi tehty + väli. Kuukausissa päivä pysyy samana; jos sitä ei ole, käytetään kuun viimeistä päivää (myös karkausvuosina). Päiviä jäljellä = eräpäivä − tänään. Myöhässä alle 0; pian 0–7. Välit 1–3650 päivää, viikkoa tai kuukautta. Päivämäärät 1900-01-01–2999-12-31. Enintään 30 tehtävää. Ei muistutuksia, ilmoituksia tai kalenterisynkronointia; mikään ei poistu tältä sivulta.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/maintenance-next-due-sheet.html",
       "language": "fi",
       "title": "Huoltoaikataulu ja seuraava eräpäivä",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Listaa, mitä freelance-projekti tai pieni työ tuotti ja maksoi, ja lataa taulukko, jossa on bruttovoitto, marginaali ja netto per tunti. Voitto = tulot yhteensä − menot yhteensä. Marginaali = voitto ÷ tulot yhteensä. Netto per tunti = voitto ÷ käytetyt tunnit. Summat lasketaan yhteen kokonaisina sentteinä, joten loppusummat eivät ajaudu. Summat 0–100 000 000 enintään kahdella desimaalilla, enintään 20 tulo- ja 20 menoriviä, tunnit 0,25–2000 varttitunnin askelin. Sama valuutta, ei valuutanvaihtoa, ei vero- tai kirjanpitoneuvontaa.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/project-profit-sheet.html",
       "language": "fi",
       "title": "Projektin tuloslaskelma",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Syötä iPhonen asetuksista enimmäiskapasiteetti ja, jos tiedät sen, latausjaksojen määrä, ja lataa taulukko, jossa on kuluminen kuukaudessa välinä ja kuukaudet 80 prosenttiin – aina välinä, ei koskaan pisteinä. Kuluminen kuukaudessa = (100 − kapasiteetti) ÷ ikä kuukausina, ±25 prosentin vyöhykkeenä. Kuukaudet 80 prosenttiin = (kapasiteetti − 80) ÷ kuluminen; alaraja korkeasta ja yläraja matalasta kulumisesta. Jaksoja kuukaudessa = jaksot ÷ ikä. Kapasiteetti 60–100 kokonaisena prosenttina, jaksot 0–3000, ostokuukausi 2007–2099 ja ikä 1–240 kuukautta, enintään 10 laitetta. Kuukaudet muodossa VVVV-KK. Syötteet pysyvät tässä välilehdessä; puhelimesta ei mitata eikä lueta mitään.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/battery-wear-range-sheet.html",
       "language": "fi",
       "title": "Akun kulumisväli",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Listaa, mitä kotona tehdään verkossa samaan aikaan ja kuinka monella laitteella, ja lataa taulukko tarvittavista Mbps-lukemista ja liittymäsi jäljellä olevasta varasta. Rivin summa = laitteet × laitekohtainen arvo. Tarve = rivien summa. Vara = liittymä − tarve; alle 20 % liittymästä on tiukka, alle nollan ei riitä. Luvut lasketaan kokonaisina Mbit/s-kymmenesosina, joten summat eivät koskaan ajaudu. Liittymän nopeudet 0,5–10000 Mbit/s enintään yhdellä desimaalilla, 1–50 laitetta riviä kohti, enintään 20 riviä. Wi‑Fi-kuuluvuus, viive ja todellisuudessa toimitettu nopeus eivät kuulu tähän taulukkoon.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/bandwidth-need-sheet.html",
       "language": "fi",
       "title": "Kodin kaistantarve",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Syötä matkan kokonaisbudjetti, päivät, matkustajat ja jo tiedossa olevat kulut, ja lataa taulukko siitä, paljonko kukin voi käyttää päivässä ja miten se jakautuu ruokaan, liikkumiseen, lippuihin ja ostoksiin. Vapaasti käytettävissä = kokonaisbudjetti − kiinteät kulut. Päivässä = vapaasti käytettävissä ÷ päivät. Henkilöä kohti päivässä = päivässä ÷ matkustajat. Kukin luokka = päivässä × sen osuus. Summat lasketaan kokonaisina sentteinä; päiväluvut pyöristetään vain näytettäessä. Summat 0–100 000 000 enintään kahdella desimaalilla, 1–120 päivää, 1–20 matkustajaa, enintään 15 kiinteää kulua, neljä osuutta, joiden summa on tasan 100. Sama valuutta koko ajan, ei valuuttakursseja, ei hinta- tai varausneuvoja.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/trip-budget-sheet.html",
       "language": "fi",
       "title": "Matkabudjetti per päivä",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Listaa päivän kohteet, viipymä kussakin ja siirtymäaika seuraavaan, ja lataa taulukko saapumis- ja lähtöajoista, joka kertoo, mahtuuko kaikki alkamis- ja päättymisajan väliin. Saapuminen = edellinen lähtö + siirtymä. Lähtö = saapuminen + viipymä. Yhteensä = kaikki viipymät + kaikki siirtymät. Käytettävissä = päättyminen − alkaminen; alkamista aikaisempi päättymisaika lasketaan seuraavaksi päiväksi. Ylitys = yhteensä − käytettävissä; nollan ylittävä osa ylittyy. Pelkkää minuuttilaskentaa, ei aikavyöhykkeitä. Ajat 24 tunnin muodossa HH:MM, viipymät 5–720 minuuttia, siirtymät 0–600 minuuttia, enintään 25 kohdetta. Aukioloajat, todellinen liikenne, kartat, reititys ja varaukset eivät kuulu tähän taulukkoon.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/day-itinerary-sheet.html",
       "language": "fi",
       "title": "Yhden päivän aikataulu",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Muuta sekavat kokousmuistiinpanot yhden sivun tiivistelmäksi: yksi otsikko, kolmesta kahteentoista avainkohtaa, yksi seuraava toimenpide ja valinnainen mittari, ja lataa se taulukkona, jonka voit liittää diaan tai yhteenvetoon. Taulukko säilyttää sanasi sellaisinaan: otsikko, sitten kohdat kirjoittamassasi järjestyksessä, sitten seuraava toimenpide ja lopuksi mittari. Se laskee kohdat ja poistaa reunojen välilyönnit; mitään ei kirjoiteta uudelleen, tiivistetä tai pisteytetä. Otsikko enintään 80 merkkiä, 3–12 kohtaa enintään 160 merkkiä kukin, seuraava toimenpide enintään 160 merkkiä, mittari enintään 60 merkkiä. Jokaisen rivin on oltava yksirivistä tekstiä. Taulukko ei lue tiedostoja, tallenteita tai kalentereita.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/one-page-outline-sheet.html",
       "language": "fi",
       "title": "Kokousmuistiot yhdelle sivulle",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Kirjoita, paljonko kukin tilasi, lisää vero- ja tippiprosentti, niin näet kenelle jää mitäkin maksettavaa. Vero ja tippi jaetaan sentilleen tilauksen suhteessa, ja taulukon saa CSV-tiedostona. Välisumma = kaikki tilattu yhteenlaskettuna. Vero = välisumma × veroprosentti. Tippi = välisumma × tippiprosentti. Kunkin osuus on oma tilaus ÷ välisumma; yli jäävät sentit menevät ensin suurimmille desimaaleille, joten osuudet summautuvat tarkalleen laskun loppusummaksi. Käytä yhtä valuuttaa ja anna vero ja tippi prosentteina välisummasta. Ei valuuttamuunnosta, ei palvelumaksusääntöjä, ei suositusta tipin määrästä eikä maksamista. Näytöllä pyöristetään kahteen desimaaliin; jako lasketaan kokonaisina sentteinä.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/bill-split-sheet.html",
       "language": "fi",
       "title": "Laskun jako",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Listaa tallentamasi jutut ja niiden kesto, kerro montako minuuttia oikeasti luet päivässä, niin näet minä päivänä kukin tulee luettua. Suunnitelman saa CSV-tiedostona. Kertymä = tämän jutun minuutit plus kaikki yläpuolella. Päivä = kertymä ÷ päivän minuutit, pyöristettynä ylöspäin. Valmis = aloituspäivä + päivä − 1. Vapaat minuutit = päivät × päivän minuutit − minuutit yhteensä. Kirjoittamasi järjestys on lukujärjestys: mitään ei järjestetä uudelleen, ohiteta tai yhdistetä. Yksi lukuhetki päivässä, joka käyttää päivän ajan tarkalleen, ilman vapaapäiviä, avaamatta tai hakematta yhtään linkkiä ja arvaamatta lukunopeuttasi.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/reading-backlog-sheet.html",
       "language": "fi",
       "title": "Lukulistan purkuplan",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Kerro, milloin kirjoitit kunkin muistiinpanon, niin saat viisi seuraavaa kertauspäivää, jäljellä olevat päivät ja sen, mitkä ovat jo menneet. Aikataulun saa CSV-tiedostona. Kertauspäivä = kirjoituspäivä + 1, 3, 7, 16 ja 35 päivää. Päiviä jäljellä = kertauspäivä − tänään; negatiivinen luku tarkoittaa jo mennyttä päivää. Seuraava kertaus = ensimmäinen päivä, joka on tänään tai myöhemmin. Tämä on kiinteä väliportaikko, ei muistimalli: mitään ei ennusteta, muistiinpanoja ei pisteytetä eikä vastauksia tarkisteta. Vain päivämäärät, ei kellonaikoja, aikavyöhykkeitä, muistutuksia tai ilmoituksia.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/fi/tools/review-schedule-sheet.html",
       "language": "fi",
       "title": "Kertausaikataulu",

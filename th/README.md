@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 46 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 47 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid Lite** | WiFi Aid Lite — วินิจฉัยเครือข่ายด้วยหลักฐาน \| iOS App | ค้นหาปัญหาที่แท้จริง. เครื่องมือแต่ละอย่างใช้ครบได้ฟรี 1 ครั้ง ปลดล็อกตลอดชีพแบบจ่ายครั้งเดียวเสริม เพื่อใช้งานไม่จำกัด—ไม่มีการสมัครสมาชิก โฆษณา | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html) | [ดาวน์โหลด WiFi Aid Lite บน App Store](https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite วันละ 5 คำ** | Wordmate Lite วันละ 5 คำ — 44 ภาษา 14 หมวด ใน 1 นาที \| iOS App | หลายคนหยุดเรียนภาษาตรงจุดที่ยังทำการ์ดคำศัพท์ไม่เสร็จ Wordmate Lite ตัดขั้นตอนนั้นทิ้งไปเลย | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/wordmatelite.html) | [ดาวน์โหลด Wordmate Lite วันละ 5 คำ บน App Store](https://apps.apple.com/th/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | แอปเรียนศัพท์สำหรับคนเดินทางที่ใช้ Apple Watch ที่ดีที่สุด | คนเดินทางต้องการฝึกศัพท์ในเวลาว่างโดยไม่ต้องเปิดบทเรียนเต็ม ไม่ต้องสมัครบัญชี หรือถือโทรศัพท์ทุกครั้ง Wordmate: Learn 44 Languages เริ่มต้นจากปัญหานี้พอดี | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [ดาวน์โหลด Wordmate: Learn 44 Languages ใน App Store →](https://apps.apple.com/th/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: แตกไฟล์ RAR ZIP 7z** | Zipbox: แตกไฟล์ RAR ZIP 7z — เปิดไฟล์บีบอัด ไม่มีโฆษณา \| iOS App | Zipbox เป็นแอปแบบชำระเงินบน App Store ซื้อครั้งเดียวได้ทุกฟีเจอร์ ไม่มีการซื้อในแอป การสมัครสมาชิก หรือโฆษณา รองรับ 13 รูปแบบและประมวลผลบนเครื่องเท่านั้น | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/zipbox.html) | [ดาวน์โหลด Zipbox: แตกไฟล์ RAR ZIP 7z บน App Store](https://apps.apple.com/th/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,300 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,350 รายการเหมือนกัน
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://open.cait518.cc/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://open.cait518.cc/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-09-05
+อัปเดตเมื่อ: 2026-09-10
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

@@ -4,7 +4,7 @@
 
 En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.
 
-Utgivarens sökintentioner för 46 verifierade aktiva iOS-appar och 50 Apple-lokaler.
+Utgivarens sökintentioner för 47 verifierade aktiva iOS-appar och 50 Apple-lokaler.
 
 **Lokal:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · **sv** · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 | **WiFi Aid: Hitta nätverksfel** | WiFi Aid: Hitta nätverksfel — Nätverksdiagnos med bevis \| iOS App | Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svarstid och stabilitet. En betalning i förskott, utan abonnemang, reklam | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/wifiaid.html) | [Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: Ordförråd** | Wordmate Lite: Ordförråd — Fem nya ord om dagen \| iOS App | Fem ord. En minut. En stig du faktiskt ser. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/wordmatelite.html) | [Hämta Wordmate Lite: Ordförråd i App Store](https://apps.apple.com/se/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | bästa vokabulärappen för upptagna pendlare med Apple Watch | Upptagna pendlare behöver vokabulärträning som passar in i lediga minuter utan att kräva en hel lektion, ett nytt konto eller en telefon i handen för varje repetition. Wordmate: Learn 44 Languages växte fram just ur det problemet. | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Hämta Wordmate: Learn 44 Languages på App Store →](https://apps.apple.com/se/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: öppna RAR, ZIP, 7z** | Zipbox: öppna RAR, ZIP, 7z — Packa upp utan reklam \| iOS App | Zipbox är en betalapp i App Store. Ett köp ger alla funktioner, utan köp i appen, abonnemang eller reklam. Alla 13 format behandlas på enheten. | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/zipbox.html) | [Hämta Zipbox: öppna RAR, ZIP, 7z i App Store](https://apps.apple.com/se/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Ladda ner hela datasetet
 
-JSON, JSONL och CSV innehåller samma 2 300 poster.
+JSON, JSONL och CSV innehåller samma 2 350 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL och CSV innehåller samma 2 300 poster.
 
 [Hem](https://open.cait518.cc/ios-app-guide/sv/index.html) · [Öppna data](https://open.cait518.cc/ios-app-guide/sv/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Uppdaterad: 2026-09-05
+Uppdaterad: 2026-09-10
 
 CC BY 4.0 gäller för den ursprungliga katalogsammanställningen; appnamn och App Store-märken tillhör sina respektive ägare.

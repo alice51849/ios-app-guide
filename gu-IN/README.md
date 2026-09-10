@@ -4,7 +4,7 @@
 
 વિકાસકર્તા દ્વારા સીધો પ્રકાશિત કેટલોગ, જે દરેક એપ કોના માટે બનાવાઈ છે, વપરાશકર્તા કયું કામ પૂર્ણ કરવા માંગે છે અને App Store સુધીનો સીધો માર્ગ શું છે તે સમજાવે છે.
 
-46 ચકાસાયેલ અને App Store પર ઉપલબ્ધ iOS એપ્સ તથા Appleનાં 50 ભાષા-પ્રદેશ માટે પ્રકાશક દ્વારા લખાયેલા શોધ ઇરાદા.
+47 ચકાસાયેલ અને App Store પર ઉપલબ્ધ iOS એપ્સ તથા Appleનાં 50 ભાષા-પ્રદેશ માટે પ્રકાશક દ્વારા લખાયેલા શોધ ઇરાદા.
 
 **ભાષા-પ્રદેશ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · **gu-IN** · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: નેટવર્ક સમસ્યા શોધો** | WiFi Aid: નેટવર્ક સમસ્યા શોધો — નેટવર્ક ડાયગ્નોસિસ અને પુરાવા \| iOS App | સ્વતંત્ર પાથ, DNS, TCP, TLS, ટાઇમિંગ અને સ્થિરતાની ચકાસણીથી સૌથી સંભવિત કનેક્શન સમસ્યા શોધો. એક જ વાર ખરીદો—કોઈ સબ્સ્ક્રિપ્શન, જાહેરાત કે ટ્રૅકિંગ નહીં. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/wifiaid.html) | [App Store પરથી WiFi Aid: નેટવર્ક સમસ્યા શોધો મેળવો](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: અંગ્રેજી શીખો** | Wordmate Lite: અંગ્રેજી શીખો — રોજ 5 નવા શબ્દો, એક મિનિટ \| iOS App | શબ્દભંડોળ વધારવાનું નક્કી તો દર વખતે થાય છે, પણ મોટો કોર્સ ખોલતાંવેંત લાગે છે કે આટલો સમય ક્યાંથી કાઢવો. Wordmate Lite વાતને નાની રાખે છે. એક બેઠકે પાંચ | મફત શરૂઆત · એક વખતની ખરીદીથી અનલૉક | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/wordmatelite.html) | [App Store પરથી Wordmate Lite: અંગ્રેજી શીખો મેળવો](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch સાથે વ્યસ્ત કમ્યુટર્સ માટે શ્રેષ્ઠ વોકેબ્યુલરી એપ | વ્યસ્ત કમ્યુટર્સને એવી વોકેબ્યુલરી પ્રેક્ટિસ જોઈએ છે જે ફાળવેલા મિનિટોમાં ફિટ થાય, સંપૂર્ણ પાઠ, નવા એકાઉન્ટ અથવા દરેક રિવ્યુ માટે ફોનની જરૂરિયાત વિના. Wordmate: Learn 44 Languages ની શરૂઆત બરાબર આ જ મુશ્કેલીથી થઈ. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Learn 44 Languages App Store પર મેળવો →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z અનઝિપ** | Zipbox: ZIP, RAR, 7z અનઝિપ — જાહેરાત વગર, પહેલાં જુઓ \| iOS App | Zipbox App Store પરની પેઇડ એપ છે. એક ખરીદીમાં બધાં ફીચર મળે છે; એપમાં બીજી ખરીદી, સબ્સ્ક્રિપ્શન કે જાહેરાત નથી. 13 ફોર્મેટ તમારા ઉપકરણ પર જ સંભાળાય છે. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/zipbox.html) | [App Store પરથી Zipbox: ZIP, RAR, 7z અનઝિપ મેળવો](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## પૂર્ણ ડેટાસેટ ડાઉનલોડ કરો
 
-JSON, JSONL અને CSVમાં સમાન 2,300 રેકોર્ડ્સ છે.
+JSON, JSONL અને CSVમાં સમાન 2,350 રેકોર્ડ્સ છે.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL અને CSVમાં સમાન 2,300 રેકોર્ડ્�
 
 [હોમ](https://open.cait518.cc/ios-app-guide/gu-IN/index.html) · [ખુલ્લા ડેટા](https://open.cait518.cc/ios-app-guide/gu-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [લાઇસન્સ](https://creativecommons.org/licenses/by/4.0/)
 
-અપડેટ થયેલ: 2026-09-05
+અપડેટ થયેલ: 2026-09-10
 
 CC BY 4.0 મૂળ કેટલોગ સંકલન પર લાગુ પડે છે; એપનાં નામ અને App Store ચિહ્નો તેમના માલિકોના છે.

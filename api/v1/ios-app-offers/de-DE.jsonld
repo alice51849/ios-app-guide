@@ -6,8 +6,8 @@
   "name": "Lumi Studio – Katalog der Suchintentionen des Herausgebers",
   "description": "Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.",
   "inLanguage": "de-DE",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "DE"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: RAR, ZIP & 7z öffnen",
+        "description": "Zipbox ist eine kostenpflichtige App im App Store. Ein Kauf enthält alle Funktionen, ohne In-App-Käufe, Abos oder Werbung. 13 Formate werden auf dem",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: RAR, ZIP & 7z öffnen",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/de-DE/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "de-DE",
+          "description": "Zipbox ist eine kostenpflichtige App im App Store. Ein Kauf enthält alle Funktionen, ohne In-App-Käufe, Abos oder Werbung. 13 Formate werden auf dem",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

@@ -6,8 +6,8 @@
   "name": "Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ",
   "description": "ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔",
   "inLanguage": "ur-PK",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "2500",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: RAR, ZIP, 7z کھولیں",
+        "description": "Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: RAR, ZIP, 7z کھولیں",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "ur-PK",
+          "description": "Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1300",
         "priceCurrency": "PKR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

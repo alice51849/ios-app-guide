@@ -4,7 +4,7 @@
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-Door uitgevers opgestelde zoekintenties voor 46 geverifieerde actieve iOS-apps en 50 Apple-regio's.
+Door uitgevers opgestelde zoekintenties voor 47 geverifieerde actieve iOS-apps en 50 Apple-regio's.
 
 **Regio:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · **nl-NL** · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **WiFi Aid: Vind netwerkfouten** | WiFi Aid: Vind netwerkfouten — Netwerkdiagnose met bewijs \| iOS App | Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking | Betaalde aanschaf | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/wifiaid.html) | [Download WiFi Aid: Vind netwerkfouten in de App Store](https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: Woordenschat** | Wordmate Lite: Woordenschat — Vijf nieuwe woorden per dag \| iOS App | Vijf woorden. Eén minuut. Een pad dat je echt ziet liggen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/wordmatelite.html) | [Download Wordmate Lite: Woordenschat in de App Store](https://apps.apple.com/nl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Leer 44 Talen** | beste vocabulaire-app voor drukke forenzen met Apple Watch | Drukke forenzen hebben vocabulaire-oefening nodig die in vrije minuten past zonder een volledige les, een nieuw account of een telefoon voor elke herhaling. Wordmate: Leer 44 Talen is precies uit dat probleem ontstaan. | Betaalde aanschaf | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Leer 44 Talen downloaden in de App Store →](https://apps.apple.com/nl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: RAR, ZIP en 7z openen** | Zipbox: RAR, ZIP en 7z openen — Uitpakken zonder reclame \| iOS App | Zipbox is een betaalde app uit de App Store. Eén aankoop geeft alle functies, zonder in-app aankopen, abonnementen of reclame. 13 formaten worden lokaal | Betaalde aanschaf | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/zipbox.html) | [Download Zipbox: RAR, ZIP en 7z openen in de App Store](https://apps.apple.com/nl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Haal de volledige dataset binnen
 
-JSON, JSONL en CSV bevatten dezelfde 2.300 gegevensitems.
+JSON, JSONL en CSV bevatten dezelfde 2.350 gegevensitems.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL en CSV bevatten dezelfde 2.300 gegevensitems.
 
 [Startpagina](https://open.cait518.cc/ios-app-guide/nl-NL/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-09-05
+Bijgewerkt: 2026-09-10
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

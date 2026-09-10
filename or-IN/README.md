@@ -4,7 +4,7 @@
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 46ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
+ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 47ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
 
 **ଅଞ୍ଚଳ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · **or-IN** · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା** | WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା — ନେଟୱର୍କ ନିଦାନ ଓ ପ୍ରମାଣ \| iOS App | ସ୍ୱାଧୀନ ପଥ, DNS, TCP, TLS, ସମୟ ଓ ସ୍ଥିରତା ପରୀକ୍ଷା ଦ୍ୱାରା ସଂଯୋଗ ସମସ୍ୟାର ସମ୍ଭାବ୍ୟ କାରଣ ଖୋଜନ୍ତୁ। ଥରେ କିଣନ୍ତୁ—ସବସ୍କ୍ରିପ୍ସନ, ବିଜ୍ଞାପନ ବା ଟ୍ରାକିଂ ନାହିଁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/wifiaid.html) | [App Store ରୁ WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ** | Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ — ଦିନକୁ 5 ନୂଆ ଶବ୍ଦ, ଏକ ମିନିଟ୍ \| iOS App | ନୂଆ ଶବ୍ଦ ଶିଖିବାର ଇଚ୍ଛା ଥାଏ, ମାତ୍ର ଅଧିକାଂଶ ଆପ୍ ପ୍ରଥମ ଦିନରେ ଏତେ କାର୍ଡ ଆଗରେ ରଖିଦିଏ ଯେ ଏକ ସପ୍ତାହ ଭିତରେ ସବୁ ବନ୍ଦ ହୋଇଯାଏ। Wordmate Lite ଠିକ୍ ଓଲଟା ବାଟରେ ଯାଏ। ଥରକେ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/wordmatelite.html) | [App Store ରୁ Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch ସହ ବ୍ୟସ୍ତ ଯାତ୍ରୀମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଶବ୍ଦକୋଷ ଆପ୍ | ବ୍ୟସ୍ତ ଯାତ୍ରୀମାନେ ପାଇଁ ଶବ୍ଦକୋଷ ଅଭ୍ୟାସ ଅତିରିକ୍ତ ସମୟରେ ଏକ ପାଠ, ନୂତନ ଆକାଉଣ୍ଟ କିମ୍ବା ପ୍ରତ୍ୟେକ ପୁନଃପ୍ରୟୋଗ ପାଇଁ ଫୋନ୍ ଦରକା ନାହିଁ। Wordmate: Learn 44 Languagesର ଆରମ୍ଭ ଠିକ୍ ଏହି ସମସ୍ୟାରୁ ହିଁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [App Store ରେ Wordmate: Learn 44 Languages ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ** | Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ — ବିଜ୍ଞାପନ ନାହିଁ, ଆଗେ ଦେଖନ୍ତୁ \| iOS App | Zipbox App Storeର ପେଡ୍ ଆପ୍। ଥରେ କିଣିଲେ ସବୁ ସୁବିଧା ମିଳେ; ଆପ୍ ଭିତରେ ଆଉ କିଣାକିଣି, ସବସ୍କ୍ରିପସନ କିମ୍ବା ବିଜ୍ଞାପନ ନାହିଁ। 13ଟି ଫର୍ମାଟ ଡିଭାଇସରେ ହିଁ ଚାଲେ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/zipbox.html) | [App Store ରୁ Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## ସମ୍ପୂର୍ଣ୍ଣ ତଥ୍ୟସେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ
 
-JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,300 ରେକର୍ଡ ସମାନ ରଖେ।
+JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,350 ରେକର୍ଡ ସମାନ ରଖେ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,300 ରେକର୍ଡ ସ
 
 [ହୋମ୍](https://open.cait518.cc/ios-app-guide/or-IN/index.html) · [ଖୋଲା ତଥ୍ୟ](https://open.cait518.cc/ios-app-guide/or-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ଲାଇସେନ୍ସ](https://creativecommons.org/licenses/by/4.0/)
 
-ଅଦ୍ୟତିତ: 2026-09-05
+ଅଦ୍ୟତିତ: 2026-09-10
 
 CC BY 4.0 ମୂଳ ସୂଚୀ ସଂଗ୍ରହ ପାଇଁ ପ୍ରୟୋଗ ହୁଏ; ଆପ୍ ନାମ ଏବଂ App Store ଚିହ୍ନଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଅଟୁଟ ଅଧିକାର।

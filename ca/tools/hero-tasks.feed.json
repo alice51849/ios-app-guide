@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Compara diverses compres amb els teus ingressos nets per hora i baixa el teu CSV. Total = quantitat × preu final. Hores = total ÷ ingressos nets per hora. Jornades = hores ÷ hores per jornada. Inclou els impostos en els preus. Sense canvi de divises, nòmines, previsions d’estalvi ni consells de compra. Es mostren dos decimals; els totals fan servir valors sense arrodonir.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/purchase-worktime-sheet.html",
       "language": "ca",
       "title": "Compara compres en hores de feina",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Anota quan vas fer per última vegada cada tasca de casa, cotxe o salut i cada quant es repeteix: obtindràs la propera data, els dies que queden i el que està endarrerit en un full per descarregar. Propera data = última vegada + interval. En mesos es manté el mateix dia; si no existeix, s’agafa l’últim dia del mes (també en anys de traspàs). Dies restants = data − avui. Endarrerida per sota de 0; propera de 0 a 7. Intervals d’1 a 3650 dies, setmanes o mesos. Dates entre 1900-01-01 i 2999-12-31. Fins a 30 tasques. Sense recordatoris, notificacions ni sincronització de calendari; res no surt d’aquesta pàgina.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/maintenance-next-due-sheet.html",
       "language": "ca",
       "title": "Full de properes dates de manteniment",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Apunta què ha ingressat i què ha costat un projecte freelance o una feina petita i descarrega un full amb el benefici brut, el marge i el net per hora. Benefici = total d’ingressos − total de despeses. Marge = benefici ÷ total d’ingressos. Net per hora = benefici ÷ hores dedicades. Els imports se sumen en cèntims enters, així que els totals no es desvien. Imports de 0 a 100.000.000 amb dos decimals com a màxim, fins a 20 files d’ingressos i 20 de despeses, hores de 0,25 a 2000 en quarts d’hora. Mateixa moneda, sense conversió, sense assessorament fiscal ni comptable.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/project-profit-sheet.html",
       "language": "ca",
       "title": "Full de guanys del projecte",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Escriu la capacitat màxima que mostra la Configuració de l’iPhone i, si el tens, el nombre de cicles, i descarrega un full amb l’interval de desgast mensual i els mesos que queden fins al 80 %: sempre un interval, mai una puntuació. Desgast al mes = (100 − capacitat) ÷ antiguitat en mesos, mostrat amb una banda de ±25 %. Mesos fins al 80 % = (capacitat − 80) ÷ desgast; límit baix amb la taxa alta i límit alt amb la taxa baixa. Cicles al mes = cicles ÷ antiguitat. Capacitat de 60 a 100 en percentatge enter, cicles de 0 a 3000, mes de compra entre 2007 i 2099 amb una antiguitat d’1 a 240 mesos, fins a 10 dispositius. Mesos en format AAAA-MM. Les dades es queden en aquesta pestanya; no es mesura ni es llegeix res del teu telèfon.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/battery-wear-range-sheet.html",
       "language": "ca",
       "title": "Full d'interval de desgast",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Apunta què fa la teva llar en línia alhora i amb quants dispositius, i baixa una taula amb els Mbps que necessites i el marge que li queda a la teva tarifa. Total per fila = dispositius × valor per dispositiu. Necessari = suma de les files. Marge = tarifa − necessari; per sota del 20 % de la tarifa és just, per sota de zero és insuficient. Se sumen dècimes de Mbps senceres, els totals mai no es desvien. Velocitats de la tarifa de 0,5 a 10000 Mbps amb un decimal com a màxim, d'1 a 50 dispositius per fila, fins a 20 files. La cobertura Wi‑Fi, la latència i la velocitat realment lliurada queden fora d'aquesta taula.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/bandwidth-need-sheet.html",
       "language": "ca",
       "title": "Ample de banda que cal a casa",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Introdueix el pressupost total del viatge, els dies, els viatgers i les despeses que ja coneixes, i baixa una taula amb el que pot gastar cada persona al dia i com es reparteix entre menjar, transport, entrades i compres. Disponible = pressupost total − despeses fixes. Per dia = disponible ÷ dies. Per persona i dia = per dia ÷ viatgers. Cada categoria = per dia × la seva part. Els imports se sumen en cèntims sencers; les xifres diàries només s'arrodoneixen en mostrar-les. Imports de 0 a 100.000.000 amb dos decimals com a màxim, d'1 a 120 dies, d'1 a 20 viatgers, fins a 15 despeses fixes i quatre parts que sumin exactament 100. La mateixa moneda a tot arreu, sense tipus de canvi, sense consells de preu ni de reserva.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/trip-budget-sheet.html",
       "language": "ca",
       "title": "Pressupost de viatge per dia",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Apunta els llocs d'un dia amb el temps que t'hi estaràs i el que es triga fins al següent, i baixa una taula amb hores d'arribada i sortida que diu si tot cap entre el teu inici i el teu final. Arribada = sortida anterior + trajecte. Sortida = arribada + estada. Total = totes les estades + tots els trajectes. Disponible = final − inici; un final anterior a l'inici compta com l'endemà. Excés = total − disponible; per sobre de zero es passa. Aritmètica simple en minuts, sense fusos horaris. Hores en format de 24 h HH:MM, estades de 5 a 720 minuts, trajectes de 0 a 600 minuts, fins a 25 llocs. Horaris d'obertura, trànsit real, mapes, rutes i reserves queden fora d'aquesta taula.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/day-itinerary-sheet.html",
       "language": "ca",
       "title": "Full horari d'un dia",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Converteix unes notes de reunió desordenades en un esquema d'una pàgina: un titular, de tres a dotze punts clau, una acció següent i una mètrica opcional, i baixa-ho com a taula per enganxar en una diapositiva o un resum. La taula conserva les teves paraules tal com són: titular, després els punts en l'ordre que els has escrit, després l'acció següent i finalment la mètrica. Compta els punts i treu els espais dels extrems; no reescriu, resumeix ni puntua res. Titular de fins a 80 caràcters, de 3 a 12 punts de fins a 160 caràcters cadascun, acció següent de fins a 160 caràcters, mètrica de fins a 60 caràcters. Cada línia ha de ser text d'una sola línia. La taula no llegeix fitxers, gravacions ni calendaris.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/one-page-outline-sheet.html",
       "language": "ca",
       "title": "Notes de reunió en una pàgina",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Escriu què ha demanat cada persona, afegeix els percentatges d'impostos i de propina i veuràs quant ha de pagar cadascú. Els impostos i la propina es reparteixen al cèntim segons la comanda, i el full es descarrega en CSV. Subtotal = la suma de tot el que s'ha demanat. Impostos = subtotal × percentatge d'impostos. Propina = subtotal × percentatge de propina. La part de cadascú és la seva comanda ÷ subtotal; els cèntims que sobren van primer als decimals més grans, de manera que la suma de les parts dona exactament el compte. Fes servir una sola moneda i posa impostos i propina com a percentatge del subtotal. Sense conversió de divises, sense regles de servei inclòs, sense consells sobre quanta propina deixar i sense cobraments. A la pantalla s'arrodoneix a dos decimals; el repartiment es calcula en cèntims sencers.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/bill-split-sheet.html",
       "language": "ca",
       "title": "Repartir el compte",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Fes una llista del que has desat i quant triga cadascun, indica els minuts que llegeixes de debò cada dia i veuràs quin dia acabes cada cosa. El pla es descarrega en CSV. Acumulat = els minuts d'aquest element més tot el que hi ha a sobre. Dia = acumulat ÷ minuts al dia, arrodonit cap amunt. Acabat el = data d'inici + dia − 1. Minuts lliures = dies × minuts al dia − minuts en total. L'ordre que escrius és l'ordre de lectura: no es reordena, se salta ni s'ajunta res. Una sessió al dia que gasta exactament el teu temps, sense dies de descans, sense obrir ni descarregar cap enllaç i sense estimar la teva velocitat de lectura.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/reading-backlog-sheet.html",
       "language": "ca",
       "title": "Pla de «llegir més tard»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Posa la data en què vas escriure cada apunt i obtindràs les cinc dates de repàs següents, amb els dies que falten i les que ja han passat. El calendari es descarrega en CSV. Data de repàs = data d'escriptura + 1, 3, 7, 16 i 35 dies. Dies que falten = data de repàs − avui; un número negatiu és una data que ja ha passat. Pròxim repàs = la primera data que cau avui o més endavant. És una escala d'intervals fixa, no un model de memòria: aquí no es prediu què recordaràs, no es puntua cap apunt ni es corregeix cap resposta. Només dates, sense hores, fusos, recordatoris ni notificacions.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ca/tools/review-schedule-sheet.html",
       "language": "ca",
       "title": "Calendari de repàs",

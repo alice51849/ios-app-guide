@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Точная диагностика сети | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ru/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - Ещё
 - Бесплатно начать · разовая разблокировка
-- Без учётной записи
 - App Store · Бесплатно
 
 [Установить WiFi Aid Lite в App Store](https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

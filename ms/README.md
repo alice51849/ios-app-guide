@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap aplikasi, tugasan yang mahu diselesaikan dan akses terus ke App Store.
 
-Niat carian yang ditulis penerbit untuk 46 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
+Niat carian yang ditulis penerbit untuk 47 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · **ms** · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 | **WiFi Aid Lite** | WiFi Aid Lite — Diagnosis rangkaian tepat \| iOS App | Cari punca sebenar. Setiap alat termasuk satu penggunaan penuh percuma. Buka kunci seumur hidup sekali bayar pilihan untuk penggunaan tanpa had—tanpa | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/wifiaidlite.html) | [Dapatkan WiFi Aid Lite di App Store](https://apps.apple.com/my/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite Seminit Sehari** | Wordmate Lite Seminit Sehari — Lima perkataan, 44 bahasa \| iOS App | Ramai yang tersekat belajar bahasa pada titik kad hafalan masih belum siap disusun. Wordmate Lite membuang langkah itu terus. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/wordmatelite.html) | [Dapatkan Wordmate Lite Seminit Sehari di App Store](https://apps.apple.com/my/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | aplikasi pembelajaran kosa kata terbaik untuk komuter sibuk dengan Apple Watch | Komuter sibuk perlukan latihan kosa kata yang sesuai untuk masa terluang tanpa perlu pelajaran penuh, akaun baru atau telefon di tangan setiap kali semakan. Wordmate: Learn 44 Languages bermula tepat daripada masalah ini. | Muat turun berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/my/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: Buka RAR, ZIP, 7z** | Zipbox: Buka RAR, ZIP, 7z — Nyahzip fail tanpa iklan \| iOS App | Zipbox ialah app berbayar di App Store. Satu pembelian merangkumi semua ciri, tanpa pembelian dalam app, langganan atau iklan. Kesemua 13 format diproses | Muat turun berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/ms/zipbox.html) | [Dapatkan Zipbox: Buka RAR, ZIP, 7z di App Store](https://apps.apple.com/my/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Muat turun set data lengkap
 
-JSON, JSONL dan CSV mengandungi 2,300 rekod yang sama.
+JSON, JSONL dan CSV mengandungi 2,350 rekod yang sama.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL dan CSV mengandungi 2,300 rekod yang sama.
 
 [Laman Utama](https://open.cait518.cc/ios-app-guide/ms/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-09-05
+Dikemas kini: 2026-09-10
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

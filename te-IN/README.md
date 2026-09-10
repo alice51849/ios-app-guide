@@ -4,7 +4,7 @@
 
 ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.
 
-46 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
+47 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
 
 **స్థానికీకరణ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · **te-IN** · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: నెట్వర్క్ సమస్య** | WiFi Aid: నెట్వర్క్ సమస్య — నెట్వర్క్ నిర్ధారణ & సాక్ష్యం \| iOS App | స్వతంత్ర DNS, TCP, TLS, టైమింగ్, స్థిరత్వ పరీక్షల ద్వారా సంభావ్య కనెక్షన్ సమస్యను గుర్తించండి. ఒకే ఒక్క కొనుగోలు—చందా, ప్రకటనలు, ట్రాకింగ్ లేదు. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/wifiaid.html) | [App Store నుంచి WiFi Aid: నెట్వర్క్ సమస్య పొందండి](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: రోజూ 5 పదాలు** | Wordmate Lite: రోజూ 5 పదాలు — ఇంగ్లీషుతో సహా 44 భాషలు \| iOS App | చాలా భాషా ప్రణాళికలు మొదట్లోనే మరీ పెద్దవిగా ఉంటాయి, అందుకే రెండో వారానికే ఆగిపోతాయి. Wordmate Lite దీనికి పూర్తి విరుద్ధంగా పనిచేస్తుంది: ఒక నిమిషం, ఐదు | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/wordmatelite.html) | [App Store నుంచి Wordmate Lite: రోజూ 5 పదాలు పొందండి](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch ఉన్న బిజీ ప్రయాణికులకు ఉత్తమ పూర్తి పదకోశ యాప్ | బిజీ ప్రయాణికులకు పదకోశ అభ్యాసం పూర్తిగా పాఠాన్ని ప్రారంభించాల్సిన అవసరం లేకుండా, కొత్త ఖాతా లేదా ఫోన్ అవసరం లేకుండా ఖాళీ సమయాల్లో సరిపోవాలి. Wordmate: Learn 44 Languages మొదలైంది సరిగ్గా ఈ ఇబ్బంది నుంచే. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Learn 44 Languages ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z తెరవండి** | Zipbox: ZIP, RAR, 7z తెరవండి — ప్రకటనలు లేవు, ముందే చూడండి \| iOS App | Zipbox App Storeలో చెల్లింపు app. ఒక్క కొనుగోలుతో అన్ని ఫీచర్లు లభిస్తాయి; appలో మరో కొనుగోలు, సబ్‌స్క్రిప్షన్ లేదా ప్రకటనలు లేవు. 13 ఫార్మాట్లు పరికరంలోనే | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/zipbox.html) | [App Store నుంచి Zipbox: ZIP, RAR, 7z తెరవండి పొందండి](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## పూర్తి డేటాసెట్‌ను డౌన్లోడ్ చేసుకోండి
 
-JSON, JSONL మరియు CSV లో అదే 2,300 రికార్డులు ఉన్నాయి.
+JSON, JSONL మరియు CSV లో అదే 2,350 రికార్డులు ఉన్నాయి.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL మరియు CSV లో అదే 2,300 రికార్డు�
 
 [హోమ్](https://open.cait518.cc/ios-app-guide/te-IN/index.html) · [ఓపెన్ డేటా](https://open.cait518.cc/ios-app-guide/te-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [లైసెన్స్](https://creativecommons.org/licenses/by/4.0/)
 
-నవీకరించబడింది: 2026-09-05
+నవీకరించబడింది: 2026-09-10
 
 CC BY 4.0 అసలు క్యాటలాగ్ సంకలనం పై వర్తిస్తుంది; యాప్ పేర్లు మరియు App Store గుర్తులు వాటి యజమానులకు చెందుతాయి.

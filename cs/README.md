@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 46 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 47 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **WiFi Aid: Najděte chyby sítě** | WiFi Aid: Najděte chyby sítě — Diagnostika sítě s důkazy \| iOS App | Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/wifiaid.html) | [Stáhněte si WiFi Aid: Najděte chyby sítě v App Storu](https://apps.apple.com/cz/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: slovíčka denně** | Wordmate Lite: slovíčka denně — Jedna minuta, pět nových slov \| iOS App | Chcete se konečně pohnout v cizím jazyce, jenže večer zase uteče a nová slovíčka nikde. Wordmate Lite zkracuje učení na jednu minutu denně, kterou skutečně | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/wordmatelite.html) | [Stáhněte si Wordmate Lite: slovíčka denně v App Storu](https://apps.apple.com/cz/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | nejlepší aplikace na slovní zásobu pro vytížené cestující s Apple Watch | Vytížení cestující potřebují procvičování slovní zásoby, které se vejde do volných chvilek bez nutnosti celé lekce, nového účtu nebo držení telefonu při každém opakování. Wordmate: Learn 44 Languages vznikl přesně z tohohle problému. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Stáhněte si Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: otevřít RAR, ZIP, 7z** | Zipbox: otevřít RAR, ZIP, 7z — Rozbalte bez reklam \| iOS App | Zipbox je placená aplikace z App Storu. Jedna koupě zahrnuje všechny funkce, bez nákupů v aplikaci, předplatného a reklam. Všech 13 formátů se zpracuje v | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/zipbox.html) | [Stáhněte si Zipbox: otevřít RAR, ZIP, 7z v App Storu](https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 2 300 záznamů.
+JSON, JSONL a CSV obsahují stejných 2 350 záznamů.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL a CSV obsahují stejných 2 300 záznamů.
 
 [Domů](https://open.cait518.cc/ios-app-guide/cs/index.html) · [Otevřená data](https://open.cait518.cc/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-09-05
+Aktualizováno: 2026-09-10
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

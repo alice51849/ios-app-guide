@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-46 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+47 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **WiFi Aid: نیٹ ورک مسائل تلاش** | WiFi Aid: نیٹ ورک مسائل تلاش — نیٹ ورک تشخیص اور ثبوت \| iOS App | آزادانہ راستے، DNS، TCP، TLS، وقت اور استحکام کی جانچ سے کنکشن کا سب سے ممکنہ مسئلہ دریافت کریں۔ ایک بار ادائیگی — کوئی سبسکرپشن، اشتہار یا ٹریکنگ نہیں۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/wifiaid.html) | [App Store سے WiFi Aid: نیٹ ورک مسائل تلاش حاصل کریں](https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: روزانہ الفاظ** | Wordmate Lite: روزانہ الفاظ — انگریزی سمیت 44 زبانیں \| iOS App | زیادہ تر منصوبے اس لیے ٹوٹ جاتے ہیں کہ وہ شروع ہی سے بہت بڑے ہوتے ہیں۔ Wordmate Lite دوسری طرف سے شروع کرتا ہے: ایک منٹ، پانچ الفاظ، اور راستے پر ایک نظر | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/wordmatelite.html) | [App Store سے Wordmate Lite: روزانہ الفاظ حاصل کریں](https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | Apple Watch کے ساتھ مصروف سفر کرنے والوں کے لیے بہترین وکیبلری ایپ | مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے۔ Wordmate: Learn 44 Languages کی شروعات بالکل اسی مسئلے سے ہوئی۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: Learn 44 Languages App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: RAR, ZIP, 7z کھولیں** | Zipbox: RAR, ZIP, 7z کھولیں — اشتہار کے بغیر فائل نکالیں \| iOS App | Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/zipbox.html) | [App Store سے Zipbox: RAR, ZIP, 7z کھولیں حاصل کریں](https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 2,300 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 2,350 ریکارڈز شامل ہیں۔
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON، JSONL اور CSV میں وہی 2,300 ریکارڈز شامل ہیں۔
 
 [ہوم](https://open.cait518.cc/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://open.cait518.cc/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-09-05
+اپ ڈیٹ کیا گیا: 2026-09-10
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

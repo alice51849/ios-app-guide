@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Verkon vianmääritys näytöin | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/fi/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käy
 
 - Lisää
 - Ilmainen aloitus
-- Ei tiliä
 - App Store · Ilmainen
 
 [Lataa WiFi Aid Lite App Storesta](https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

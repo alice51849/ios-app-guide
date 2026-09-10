@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Hálózatdiagnosztika tényekkel | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/hu/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Találd meg a valódi problémát. Minden eszköz egy ingyenes teljes használat
 
 - Továbbiak
 - Ingyenes kezdés
-- Nincs fiók
 - App Store · Ingyenes
 
 [Töltse le a(z) WiFi Aid Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

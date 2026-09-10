@@ -4,7 +4,7 @@
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-46 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
+47 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
 
 **ലൊക്കൽ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · **ml-IN** · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **WiFi Aid: കണക്ഷൻ പ്രശ്നം** | WiFi Aid: കണക്ഷൻ പ്രശ്നം — കണക്ഷൻ പരിശോധന & തെളിവ് \| iOS App | സ്വതന്ത്ര DNS, TCP, TLS, ടൈമിംഗ്, സ്ഥിരത പരിശോധനകൾ ഉപയോഗിച്ച് കണക്ഷൻ പ്രശ്‌നം കണ്ടെത്തുക. ഒരു തവണ മാത്രം—സബ്‌സ്ക്രിപ്ഷൻ, പരസ്യം, ട്രാക്കിംഗ് ഇല്ല. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/wifiaid.html) | [App Store-ൽ നിന്ന് WiFi Aid: കണക്ഷൻ പ്രശ്നം നേടൂ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: ഇംഗ്ലീഷ് പഠനം** | Wordmate Lite: ഇംഗ്ലീഷ് പഠനം — ദിവസം 5 വാക്ക്, ഒരു മിനിറ്റ് \| iOS App | പുതിയ വാക്കുകൾ പഠിക്കണം എന്ന് കരുതി വലിയൊരു കോഴ്സ് ഇൻസ്റ്റാൾ ചെയ്ത്, മൂന്നാം ദിവസം അത് അടച്ചുവെച്ച അനുഭവം പലർക്കുമുണ്ട്. ആദ്യ ദിവസം തന്നെ നൂറ് കാർഡ് | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/wordmatelite.html) | [App Store-ൽ നിന്ന് Wordmate Lite: ഇംഗ്ലീഷ് പഠനം നേടൂ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: 44 ഭാഷകൾ പഠിക്കുക** | Apple Watch ഉപയോഗിക്കുന്ന തിരക്കുള്ള യാത്രക്കാരുടെ വാക്ക് പഠനത്തിന് മികച്ച ആപ്പ് | തിരക്കുള്ള യാത്രക്കാർക്ക് പൂർണ്ണ പാഠമോ പുതിയ അക്കൗണ്ടോ ഓരോ ആവർത്തനത്തിനും ഫോൺ കൈയിൽ പിടിക്കേണ്ട ആവശ്യമോ ഇല്ലാതെ, ഒഴിഞ്ഞുകിട്ടുന്ന കുറച്ച് മിനിറ്റുകളിൽ ഒതുങ്ങുന്ന വാക്കുപരിശീലനം വേണം. Wordmate: 44 ഭാഷകൾ പഠിക്കുക തുടങ്ങിയത് ഈ പ്രശ്നത്തിൽ നിന്നു തന്നെയാണ്. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Wordmate: 44 ഭാഷകൾ പഠിക്കുക App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: ZIP, RAR, 7z തുറക്കുക** | Zipbox: ZIP, RAR, 7z തുറക്കുക — പരസ്യമില്ല, ഉള്ളിൽ നോക്കാം \| iOS App | Zipbox App Store-ലെ പണമടച്ചുള്ള ആപ്പാണ്. ഒരിക്കൽ വാങ്ങിയാൽ എല്ലാ സൗകര്യവും ലഭിക്കും; ഇൻ-ആപ്പ് വാങ്ങലോ സബ്സ്ക്രിപ്ഷനോ പരസ്യമോ ഇല്ല. 13 ഫോർമാറ്റും ഉപകരണത്തിൽ | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/zipbox.html) | [App Store-ൽ നിന്ന് Zipbox: ZIP, RAR, 7z തുറക്കുക നേടൂ](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## പൂർണ്ണ ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യുക
 
-JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,300 രേഖകൾ ഉൾക്കൊള്ളുന്നു
+JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,350 രേഖകൾ ഉൾക്കൊള്ളുന്നു
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,300 രേഖകൾ ഉ
 
 [ഹോം](https://open.cait518.cc/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://open.cait518.cc/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-09-05
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-09-10
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

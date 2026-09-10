@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — تشخيص الشبكة بالأدلة | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ar-SA/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - المزيد
 - بدء مجاني · فتح مرة واحدة
-- بدون حساب
 - App Store · مجاني
 
 [احصل على WiFi Aid Lite من App Store](https://apps.apple.com/sa/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ru",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ru.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ru.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Бесплатно начать · разовая разблокировка",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Без учётной записи"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Ещё",
         "Бесплатно начать · разовая разблокировка",
-        "Без учётной записи",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "Руководство подготовлено издателем Lumi Studio, разработчиком приложения. Названия приложений являются товарными знаками их владельцев и используются только для идентификации. Принимая решения, связанные с документами, здоровьем, учёбой и работой, сверяйтесь с официальными требованиями там, где это важно.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ru:zipbox",
+      "locale": "ru",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: открыть RAR, ZIP, 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: открыть RAR, ZIP, 7z — Распаковка без рекламы | iOS App",
+      "decision_context": "Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на устройстве. Никакой рекламы, никогда. Ни баннера, ни видео на весь экран, ни отсчёта между вами и вашим собственным файлом. Распаковка ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 и ISO Сначала посмотрите, потом распакуйте. Пролистайте список, посмотрите фото, видео, PDF, текст и код, а затем достаньте только тот файл, который действительно нужен. Всё происходит на устройстве. Zipbox не делает сетевых запросов, у него нет аккаунта и входа, и в нём нет аналитики и трекеров. ZIP, RAR и 7z, разбитые на части или с паролем Открывайте прямо из Файлов, из загрузки в Safari, из Почты или из любого меню «Поделиться», а результат передайте обратно тем же путём. Рабочий архив приходит на почту, а в метро вам нужен один-единственный PDF из сорока. Скачанный в Safari RAR лежит в Файлах, и на телефоне его нечем открыть. Кто-то присылает 7z с паролем и фотографиями из отпуска, а вы просто хотите их посмотреть. Что умеет Zipbox Распаковка ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 и ISO ZIP, RAR и 7z, разбитые на части или с паролем Просмотр содержимого архива без распаковки Предпросмотр фото, видео, PDF, текста и кода Извлечение одного файла, выбранных файлов или всего целиком Открытие из Файлов, загрузок Safari, Почты и меню «Поделиться» Создание ZIP и 7z с шифрованием AES-256 и разбиением на тома Последовательная распаковка нескольких архивов; одна ошибка не остановит остальные Поиск по именам файлов и тексту внутри архива; PDF только по имени файла Перемещение, переименование, наведение порядка, экспорт в Файлы и iCloud Drive, Создать архив (команды Siri) Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на устройстве. Если файл не открывается или не хватает формата, напишите на hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "Ещё",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Платное скачивание",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Автономно",
+        "Без учётной записи",
+        "Без рекламы",
+        "Без отслеживания",
+        "Лично / на устройстве"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Ещё",
+        "Платное скачивание",
+        "Автономно",
+        "Без учётной записи",
+        "Без рекламы",
+        "Без отслеживания",
+        "Лично / на устройстве",
+        "App Store · 449,00 ₽"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ru/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ru/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fru%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Установить Zipbox: открыть RAR, ZIP, 7z в App Store",
+      "storefront_facts": {
+        "price": "449",
+        "currency": "RUB",
+        "formatted_price": "449,00 ₽"
+      },
+      "guide_cta_label": "Прочитать полное руководство",
+      "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

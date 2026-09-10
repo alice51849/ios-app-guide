@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — 网络诊断与连接证据 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/zh-Hans/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - 更多
 - 免费开始使用 · 一次性解锁
-- 无需账户
 - App Store · 免费
 
 [在 App Store 获取 WiFi Aid Lite](https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-05",
+  "dateModified": "2026-09-10",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,269 +10,269 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "27529f729c8a96a9f22e2573ab78cc2dfd23b30f6c4291b356fc8cf0db980b48",
-  "content_digest": "80601cb3625fac1afb8384c58db14ecc9998618c16d8e61a60ffb1a7070f293e",
-  "generation_digest": "03c28f4baa27e16b61ac00e24c710b4915bf87df384bb3cf65abfcf631f53ce0",
+  "source_sha256": "2bb03a4c916327184c5971965722f39563bdd455a1a60593c2924b21c3362d47",
+  "content_digest": "898327eb20ca282e3255900978910ecc1855618f4bdae3c61bdda9b37adbe16a",
+  "generation_digest": "f80e7c8fd0d622f756d8efc9274f827fdf9a096d6a3bf6f167175728cf4db93e",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 46,
+  "app_count": 47,
   "locale_count": 50,
-  "image_count": 2300,
+  "image_count": 2350,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "f3112376ebdc8182a1808048bd99d09f313aee6c8eeba37990d1fae6da04b00f"
+      "sha256": "bcf635d68bc0d2e576115f3f82febc2af1d7f9703790c9cc043d6ff5162498ba"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "a82b1c9c63d7f26f9e6fe1381e29cc1e11342f11b3c5ffde6bd267b3b44791f9"
+      "sha256": "dc7cfd1d5782d64fb37ee75726bb0903d83e036e8e613ea960b10e2055056878"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "f247406c46825891b9f5aedb6ddce05c38657dbf6bf63fd7ffd06ea28fcea916"
+      "sha256": "699bd476b40a426be1de55a8bb4ef0e423cfef066c61ef3bc586cef0a1a0471e"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "e4fe9cca34568d84ceead924b8a5d472c9d8a50e61766a99a6a0ee49033f14ff"
+      "sha256": "dd37a12e34e7c08d385dafa85a8ddb83dbf4fd1400143736a0bd243832b7e710"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "c226888bd98e4beeef7ec69541a9581cff7f0c6e7e20f39cdfd8d37f8ee7ff36"
+      "sha256": "0798f44700ccdc1f20e59d51c6df791b5f6df98933574113ad21642e3fbba957"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "390c81eaf40fce3690ca122305454b09e38b7a807c9093b188c5792fc68ced1a"
+      "sha256": "54254059e53c08fafb2fda183b614f073243d0aaaeadb47fa99b17febc00adda"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "8fde76f61b148fcd76ad2b2dbaf607fd84e389e652adf704b4ea3399506c353c"
+      "sha256": "41646a708211f9aa3e812d740a0f6446257d36d098faf2dc959bdd527a786961"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "a9f3aef153e6b894f4023880a2a3b9a1a1257858fc940f6ae6a83a2bae943473"
+      "sha256": "f511ee36146db9b2664bbb89aa9ff14c5829c6024fbd433232337fc12f07cf09"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "95a6c31e0f2a3a2840be83ff59eba804163ead22892e43e2b957ff7860991517"
+      "sha256": "93f6ac5ee65e518ce3c673d667b8718e78fbf901a79169ebfc70e5b5f98a8eb5"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "40db20da2e9d11156002507e5155ac1a1ce2bd50cdde6608bccbd6d552eae716"
+      "sha256": "31c3060e73a4b8d214c207d0d2bf9512b7b4b68445e67a834687a3c98ddfdeb7"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "64c3a92f382abfb63947f33aa8d0a799458e4688e7e3eeb5e1e850fa4dddb546"
+      "sha256": "3238e5f358fe3ee8397110ca2d9908253edb693cc82ae90d86b1e82ed0227b39"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "5ae40f281096cdd78ab74389af00a1ff073cff751c56c4cdf848b2c46cb10d06"
+      "sha256": "d54bcb6976075bdaff1878096577ef83947a8a5a8a9133e9bba45023ae81456a"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "e17b73b8371fef70cf92cf39567c140abfb7cb2b2afacd32f7073ae8e3af8e52"
+      "sha256": "0d508f947139dcf3b78f606d6e1084f51611c140f7afeb7d3f7b224e84ca8f07"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "3bb96825010455db68e0d0ce829b8d94d25f1ecebde4ccba146a0ff154a1a841"
+      "sha256": "531716ac3652d380aca703e5dac3052c2cb4a4f02c4c4b5e3957ed14b8b87e5e"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "1c6e068eb3d6df97fd037a162dc0e64fb3efebf8fa797dcac8142ba4012a3fa9"
+      "sha256": "f5c19da807bc23fd6379662c8a309c160bf37220b29dad16fa9518f7f52025fa"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "660dfa650f06e4cecc1b8ac2cfa6531965c300da07289a46cc1d55712aca8fd8"
+      "sha256": "de1742eaaa171eefb651b64f32f5363fcad56650a99f438e843cf2da34a4413d"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "a34be6c63f1a7a42e2583cd5f7db27b3bcad9c227826fef32f7aba5c307198b4"
+      "sha256": "5060fb43aeb14ca643d62ee0ead8c1ddd8735c43a7afbb977ec424b104dcbbd4"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "d7c89d6a6244b025355f99ef0b544b5af3552053c793f4be2f1093aa954c5add"
+      "sha256": "db45e0f695d122571ec930a4743c8789ac3ce38d1ac0d9b27cb1fa0f9d49b291"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "2fc0ba9bf559ed4e8bc800e58e43606c3861bb52f8da9a1d21711bb69d3fdaa1"
+      "sha256": "bf34c3a47ba397419407efd637a839199c04227af0b42f633e49b618e2cd307b"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "3fd92638391d5dba77687c39f67b70c8022a0cfa5c6c78e2f53a8797025708b5"
+      "sha256": "8827ffcacf1f38470816f47664bbbf0000895242df79836c0ba08db086d35717"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "5237789bc2d216da37cde03a0421545e6f299a54a4ef770a4e92476976d98e4e"
+      "sha256": "9540fb1f5be0dc995dd776e8967ac25a36834208cc950c97447702178516a039"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "25c5d90c5dfc4697f09a7b41253471298af604dbb72142c4dedd3cb6c0e9edd2"
+      "sha256": "ef4c87b61377314ba8fa138fe7bc0b38471d6e2db133636190dca9e5d29e6d4e"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "1bcc33efebb7d841eeb6fb2976e77cb44e0fa7956c6575c4a7d3a116a96bded0"
+      "sha256": "60573baba126b21f40aa22a57c8962c29ec5634ce3dfdf6c5589931622e11e28"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "a5d0990e879798076479be94c16cbcfe13d94678cff973285ec4070423fcc9aa"
+      "sha256": "4a9d6f27042b6fc47b7fdb89a6ddda1165a382e521cc7755343c24bd45a26800"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "055e4eebfa9b180974aa38b5753effcabac36ed011af124f27eb55400cf7b5d6"
+      "sha256": "5cd9aba5c1e9c1a32313700b6713f562390ce7d7de09b0693bd6bf1858489423"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "d53315169aa72721ca7012905aa962dff4888456753dcf0d2d00fb532dcd36bc"
+      "sha256": "9cad050f16152710882122938c64e7fe0ff33d9e47c1a7ef4bf80ae794891c34"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "1623fce8c383eb1d674d22032437ff186491e575bb2a1629fa508860bed0b8ab"
+      "sha256": "b7783e6c7b6fe02129a0703579894ab0f9ad8d91f57b9a4904412ec1128d52b4"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "4647cc1e5e0298e0a05485956fcd104fd152e5cb5e4f745e2c375d3b730758bd"
+      "sha256": "5469b3ba07c8ffb299004937c4d48b7b485ae880f1a593652c4c2b4aa29348c2"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "e26d32994ff55c4fed01193d35ff3560441bf8638142ca84bc05318a668772e9"
+      "sha256": "747f3ad3b3c05cfa707b1191e2b68784919ab8217b0a3011d30f2237319a1783"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "ab3b37a600da03ccee5ffe1ae617cdf4349633348d54225ec5599e00d619481f"
+      "sha256": "904ff372e88bd9857000b196828642fb51a3e1aaf4ce3ad1ec592a6d389079f1"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "791c24b6219253eb210cde6c2f8893a7cdcca0e72bbb593d48b0fa30dadadd08"
+      "sha256": "4fe25c5a2db83e29804fec3b1eec9a8900fdc10b24bf83689ec0074e403eba10"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "0001152a84d6cb212387034ffc1891151da8b2f94402dca45d023b5265230d1c"
+      "sha256": "4b7bdadc2c862e3b0b98c6735b23b2f0c5fad1c42ae533faffef840595e40ddf"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "c5a61072332f3a184108a8901da896932ecaa94930f9d351da9ea96f3a9007ec"
+      "sha256": "58b01dbff9b4a8dea0a15d07d2cd250b5d99181d76419d43bdf8802c6184047e"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "59d1feb62e0fb8644fcb2679b4b305d6da900a97f732ff5f621bc83b031881af"
+      "sha256": "d9d6cda43b5b6e504e2267ebbd43ed9493057732f1a66449580a49367021dcb0"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "314eba9448e095961f98596f1ef6b99e9436a685eeb87d46deedc084b77d63b1"
+      "sha256": "c83f7b54d125bd00d26cb936d692ffe681c5761244504cec18d5d24271dc3900"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "8d462d6a79c99180c3c663b0b2075672644720ecb74bcfe3495ae456f8c204f3"
+      "sha256": "51826f98f8d447eef2aa0f5f8f08f172d3a13d5a0bcf5946dcf3705f813b0d55"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "7a95370cf5348fb26cb773ae87dae6da55918d04e84002cc4c123d817550ef63"
+      "sha256": "9cca633a85a01eba1d4f1f7c58f0791b21b37f34af7f61a90944b21138307863"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "72a15c1b846442693bea83f1dc5b435e9153d3766c79c7f65ef793f321e3b7cc"
+      "sha256": "57ee00a123cbb1cb24de8b7419d8fb0972133075f17a79d355e74f1f42742ee8"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "416f6914af89f4b20ddfd2fd3412f990b19258ecff303dbb7c44a817581ff205"
+      "sha256": "eb2d1a484705cde1f949ad969485888adfb816716f50c8a85e6aa6427d3f0e8b"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "8bf3a3bed8ec2c560425cde51d0397b42cde0035dd471a0e70a3e27f5cefa1f2"
+      "sha256": "d6e2dd9b5c12d352e2ca88fe98535c3f6b16d0e393e80d29e63280039d9377d8"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "064cdf035cfdc83e4ef16c2960b410f1e3511531933509db82df65e6a7aeebfb"
+      "sha256": "97460e67070dc31dd63329a04e7e6f694676d2845ac34b036709de8b63aa38d3"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "9fa2c093a5787ee3059f46defd3c13e23d2a99a96273f3e099a6521884431f05"
+      "sha256": "0549828c7c0ac9c06ec8b15132970f7ce36caa43f06a593ba2d29d8f054f4dcc"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "7b9c16ca75ed31841b1b5ba44d556397b9ea49f679d6fb5b3b9686be586059bc"
+      "sha256": "e620e6a3002b62dbbc4001e04aeec5ffc11b70886755472abee406ea5630b40b"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "a9fe04879554cd5de96bfc92cd1d3fd3fbf405d0e731867f4f3e46dce6b3d188"
+      "sha256": "a8361b889cb190db235795c95eb6078ddfe8c8534e3e39d0543e2ee747ee748b"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "6597f15dc09b651669330a0039e55882dbb7de442b4be5e5a52bb89028887259"
+      "sha256": "008d5ba46a68b1286495df6db5cb679c24286390a952e7cf3b6f20e56f100a1f"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "5edc95ed9266d239e8f5a834b2e129ecbc19577a351034e79b2d182c05d6692d"
+      "sha256": "ab80f0990b7d4989976f8655cacc6c6d2c1fb20a36cffd4ae96c390a04b18835"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "fb2048208ea9909b65e66c6e664ea113971bcad5a1bf40fd0b3e868ad719663a"
+      "sha256": "1c33b517a724e461c7161d13c9b6b841b23fc74ee4afb346fc7a8c71b2e7c0d4"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "fb06e330407b0291a51eb23ba3b3d73381b9c6a67d68154d9126b454160aaea7"
+      "sha256": "161e17c281c05ada89471d26301523bb6e3e839648564f261f27822aef90fb94"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "d5ec7505b42f13fb24a29585f324ea96ecb1e9b6859481f934653a935bed31c0"
+      "sha256": "e6308a66e6b5872e79ea445a7496ba3122d25072d406453eb0c5aedcbf59b709"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "67fdfa80e7389d5377e4927da200754b48f0b400d58ed456c023b70022b738de"
+      "sha256": "16415559a7b37859234fd598c524d19056caac762070e7b9cecbbcf26bebcc27"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "e3ee39656ceec90d01696005a4c5d11ca393bc68c5fe6e1ab70557acd52b27bf"
+      "sha256": "2bbfa18df37d31c00b90e934d42fbfb77f4422522d4c4bb5aa8b73a1eed432ab"
     }
   ],
   "publisher_authored": true,
@@ -749,6 +749,16 @@
       "sha256": "5b4a2a23b5bad606ed1d20c981169d2d557ae74e4dc61cc9207d8452f85b738f"
     },
     {
+      "locale": "ar-SA",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/zipbox.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "852bb5b0b3816673c20ebd853220e15b2e055d1c40538b578d8abb0f2781be03"
+    },
+    {
       "locale": "bn-BD",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -1207,6 +1217,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_visual_bn_bd&mt=8",
       "sha256": "a37de80eba27fa369cd5287648f2e66d20abaec0630073b059193bd03a0de789"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_bn_bd&mt=8",
+      "sha256": "31cab17fae4ab9dba1c507606014bb8078f622d0ce3734a012791125f4e26d72"
     },
     {
       "locale": "ca",
@@ -1669,6 +1689,16 @@
       "sha256": "c7b29149a9f050fafd5358f677f2da82630d080453b9b5db28c4beaf7306fd1b"
     },
     {
+      "locale": "ca",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/zipbox.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "b4d8d2fed42b424dd0df42fd17b2a6d78f4f8e33b6ced70b9d3526a6bfa78671"
+    },
+    {
       "locale": "cs",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -2127,6 +2157,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "93d8a36a907c576ed7bdb3a597d7fc729a7ff026dce5e734b44ed18af6579aa4"
+    },
+    {
+      "locale": "cs",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/zipbox.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "7088599c351db92e68a385def09eba47189a609f238966f33bb6804df75a5c0a"
     },
     {
       "locale": "da",
@@ -2589,6 +2629,16 @@
       "sha256": "9fcdcaf882bd2e74c444ae45355dff951b4028eec2d145749721fb93f42ffd4f"
     },
     {
+      "locale": "da",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/zipbox.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6806776579?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "779aa1a0a9e5aca8be5aae4b698a121f23286ed3ef2b0b6a0cff959b5f4e1712"
+    },
+    {
       "locale": "de-DE",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -3047,6 +3097,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/de/app/id6789917808?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "0dd150b92f34ef380006b01a166fa29295892a5c71ffc284b072633f2262a953"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/zipbox.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "da6e81536d431e7a537aeb0a3277e90279411476b062411d2ef5a1542681bf93"
     },
     {
       "locale": "el",
@@ -3509,6 +3569,16 @@
       "sha256": "e93e72774f03e7b2063aeeafbf71e412786066fed7a1537096c63f5ee07f4420"
     },
     {
+      "locale": "el",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/zipbox.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6806776579?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "13dc9ac3839a6813ae7622aa5bd882e323922a4f8c2bf8a5712ed213e2fea4e7"
+    },
+    {
       "locale": "en-AU",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -3967,6 +4037,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/au/app/id6789917808?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "61c30889f2175955b26febf7de187535017b6af646193ad1ea06524a0c511bd0"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/zipbox.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6806776579?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "d15e95121fc1dc0750aab868945b06654fcca71b9498fa369e166aef403df5ba"
     },
     {
       "locale": "en-CA",
@@ -4429,6 +4509,16 @@
       "sha256": "ce3d146e2d23bd74031b79109d269a688199e5fdcd4be20bb0ec33d4dd547611"
     },
     {
+      "locale": "en-CA",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/zipbox.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "5ce1256d904fb5b61502ff9568eb5a0ccd2d10ecb8e5d8ce4ac7f560b32707fe"
+    },
+    {
       "locale": "en-GB",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -4887,6 +4977,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6789917808?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "d64d5cfb3b7599e657ecaa24d17adb206493cdbad44e69190bbc57141ee899b6"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/zipbox.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6806776579?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "77af469931ea2a3ea81e1f845daafb12fb2e4b5106d816ee025af49485252d0d"
     },
     {
       "locale": "en-US",
@@ -5349,6 +5449,16 @@
       "sha256": "d1278c8fa7802d8678d1487e943088b3f7fdc665e8782459895b6ae18d6321c9"
     },
     {
+      "locale": "en-US",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "5f10f44466371e1e6434afd946561a0f56976b3d4ba1a05424fdd6ca8ed32fc4"
+    },
+    {
       "locale": "es-ES",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -5807,6 +5917,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "95f5c66ee6c0426b41f18bd3c8ca1df6b5beedd057ff7608acd7210ce952a1b6"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/zipbox.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "42e8c20a23c69d40b7d647d320a39cfea1db5bd24134feb16e29134a6eb5413e"
     },
     {
       "locale": "es-MX",
@@ -6269,6 +6389,16 @@
       "sha256": "06bc41913c03b3eaca172a840178c59b99fa8140df5c7e543cf3b78fd10cbd46"
     },
     {
+      "locale": "es-MX",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/zipbox.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6806776579?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "3f50451b31e0d9e3071c410596e5ac9d57533580f6e35a9392e761f484a72b44"
+    },
+    {
       "locale": "fi",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -6727,6 +6857,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "b7e53696068afa32cd62bad33714b90b694b5936c178874078aa3d7cc38f4393"
+    },
+    {
+      "locale": "fi",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/zipbox.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "c254c4134a52709ee18ee352528a9ea2b4c1472e9263dca80447d1aee074d70c"
     },
     {
       "locale": "fr-CA",
@@ -7189,6 +7329,16 @@
       "sha256": "106fe111e0ee5570e10473043410c544c21d4889a626400c7b38cc7ad8d648c3"
     },
     {
+      "locale": "fr-CA",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/zipbox.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "6b0ecfd09d81dd9e948fc461d850122b9f586199a7df17bc21ba65b5df696318"
+    },
+    {
       "locale": "fr-FR",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -7647,6 +7797,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "8b6c40921bb3f558749d3147193423d8327a9b88f2b944b5d63297f3a9ddea22"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/zipbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6806776579?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "6ca9be9b6d0244663dd03c18da43112ab711624227274fe56f52502e2f1cd997"
     },
     {
       "locale": "gu-IN",
@@ -8109,6 +8269,16 @@
       "sha256": "3df590ea2f57496faa520ea26d98dfd2933868dcb73ce7d643eeb57091e31b45"
     },
     {
+      "locale": "gu-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "dae745974acf763bc6ca418c9005a01516dcdc8bf982cbeed0eb4bd7461b4431"
+    },
+    {
       "locale": "he",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -8567,6 +8737,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/il/app/id6789917808?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "1a3abaf3db360e44d04d5a81347f2e8342e4cddb61d2e73abafa8b0677f50542"
+    },
+    {
+      "locale": "he",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/zipbox.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6806776579?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "e4ce2557abb29dec8f4f96247ee914d909e37d416d4bea8d197c630349a2ae05"
     },
     {
       "locale": "hi",
@@ -9029,6 +9209,16 @@
       "sha256": "90746ec4c8320ae97c19c94ccc3887c47c751cb05cb8c7e6dd9e26f324576653"
     },
     {
+      "locale": "hi",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "e311ccd8c5f30d9ba4b18d3ff35a3b5a6fc15672e5a651a313f530cd0c3f8e9f"
+    },
+    {
       "locale": "hr",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -9487,6 +9677,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "871d5891e60d328e2e7c1b6dd6c4a9d6cbc81f24fcb9dbf7fe9b4e52fe009b33"
+    },
+    {
+      "locale": "hr",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/zipbox.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "f19e63f7f63be16192ffd8df3af6a45a057b234914720ac3bbf12f79985e20ba"
     },
     {
       "locale": "hu",
@@ -9949,6 +10149,16 @@
       "sha256": "99e47cf83ea4c41eadb0e84aaf6fd88e89224740de4828787cde2cbbb3017bfb"
     },
     {
+      "locale": "hu",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/zipbox.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6806776579?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "91dc80ce41b6693122d6251cba817f0204358760359ac5eb87a2ba61b83f11bd"
+    },
+    {
       "locale": "id",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -10407,6 +10617,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "a0848891865591389744ec7162eef42e5c90b47dd6e0ccdf4f3e8bbfabad1c65"
+    },
+    {
+      "locale": "id",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/zipbox.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "ec9a0346300be8c3444e38106171a5da0218dbe1fe1f660992f1e0af4e366202"
     },
     {
       "locale": "it",
@@ -10869,6 +11089,16 @@
       "sha256": "b3d36a2f60d37c2a04d67f3e7e835ae817bd41a8e9d3701e563675b77d24d1d7"
     },
     {
+      "locale": "it",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/zipbox.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6806776579?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "08b840b271e7411501d401c28b7b16b6dcf73e03a7c391e85d8fa9dc2e125aa0"
+    },
+    {
       "locale": "ja",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -11327,6 +11557,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "8d3346f886d8962721f5cc652b8e96ace299c4e37a39898fc039ab56e3d98e90"
+    },
+    {
+      "locale": "ja",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/zipbox.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "1d7c1168025c9be319086fc0af487c996a3ab4b56cac88653f89771035ce88fb"
     },
     {
       "locale": "kn-IN",
@@ -11789,6 +12029,16 @@
       "sha256": "197e743430e4314f6225b8e277e9cd47ff95bd9b4f98e8c7f88bd92aff281af7"
     },
     {
+      "locale": "kn-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "7d74a4ceab3530875fc804519c321ec15f9881e6fb760a46eb2a27ebe0faca9c"
+    },
+    {
       "locale": "ko",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -12247,6 +12497,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "c0db36a2aa27eaa58f8b1a82d2b56c17251d40f161c125e8f5008d2d11d32300"
+    },
+    {
+      "locale": "ko",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/zipbox.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "3d7e577898973bd712e9905f6fcb066a69f11348171e9aa758741db855edcbc4"
     },
     {
       "locale": "ml-IN",
@@ -12709,6 +12969,16 @@
       "sha256": "f6fcee6d7f2eda88461ee2cd4f908528bb922bbca6facf396d4958c0782e1a91"
     },
     {
+      "locale": "ml-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "d9d6b3dd095f8d7307e8ec997550310fca315c6ef3c39349153935c54329bead"
+    },
+    {
       "locale": "mr-IN",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -13167,6 +13437,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "90a500f73de8d7b186c3035ea125cb601afe8f9873560538dbd2e94fa6099d23"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "48ed9135eac12c2a5845b44e1ce1b78c7e0b30bc2408f5c21b7ef6cca18f1c99"
     },
     {
       "locale": "ms",
@@ -13629,6 +13909,16 @@
       "sha256": "f6004a7b8a5580c937dafe736e61579d08735ff09fe5e878eaa32ce9ea1cf2d7"
     },
     {
+      "locale": "ms",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/zipbox.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6806776579?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "f6c193e3efae84266e3b1156798e47fe948aee51a87883f6ce20100551804ce8"
+    },
+    {
       "locale": "nl-NL",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -14087,6 +14377,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6789917808?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "3198beb867fbc16adbde4bd0f13be0b9df10cb7185f8abce354bd54b7d3aacfe"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/zipbox.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6806776579?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "f8ae01ad59671d35798caf91a921bc106d1c3daf613c52bea6136e9883ba63d4"
     },
     {
       "locale": "no",
@@ -14549,6 +14849,16 @@
       "sha256": "4d08cbc65835dd68e7c65a8efa1df2e6962045336e935ad9950fab4fc4963418"
     },
     {
+      "locale": "no",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/zipbox.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6806776579?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "8b011f5e9d1d79111a46a0902561d96589de6af6006a95e831c983509d106826"
+    },
+    {
       "locale": "or-IN",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -15007,6 +15317,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "1aa4da6f3be773ebd9d979876563ac3d095c64dc3c05b7294ca1bf9680304f83"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "87033cd99f0d8d4025505cdc501288ba93009ed94c74b283af66a72db634da0d"
     },
     {
       "locale": "pa-IN",
@@ -15469,6 +15789,16 @@
       "sha256": "f28a1addf2fb3424d3e93427899d75c70e55a9f0eab56716129b7a9c76f58088"
     },
     {
+      "locale": "pa-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "a00122b513d3ad557f0d7d1247802e05b69c4880d05ee66aa7875f62eff761dd"
+    },
+    {
       "locale": "pl",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -15927,6 +16257,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6789917808?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "57a87168d0e09df236322bdb3bbd263b914b97cd3d7abfb0cca232483473861d"
+    },
+    {
+      "locale": "pl",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/zipbox.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6806776579?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "97bfb0e4e505b0182f7194de028764d2995f8294931aa26320eaaafa635b35ee"
     },
     {
       "locale": "pt-BR",
@@ -16389,6 +16729,16 @@
       "sha256": "52050c2f08d40715a607eb6ee14db0006ad81daea963451b93956a0bd1004973"
     },
     {
+      "locale": "pt-BR",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/zipbox.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6806776579?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "5ae142420fce28ff83da5171535b0d03b8b021e9d8d33f3ff2ce8d813d8e95ac"
+    },
+    {
       "locale": "pt-PT",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -16847,6 +17197,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6789917808?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "5af84fe5b64412fe407a17f97719a8b5aa41c754492a16e00c37dbe735f018a5"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/zipbox.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6806776579?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "0c147e7358d4d3cc63cde9976536b53ceb4158b90788196b1c701f92f956b93e"
     },
     {
       "locale": "ro",
@@ -17309,6 +17669,16 @@
       "sha256": "c7c4f3a08b8676419291929da27c2e36d6d1414bfc652ff6f7dd41288126d9aa"
     },
     {
+      "locale": "ro",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/zipbox.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6806776579?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "8ca0cba68e14ec245649a138cf764f428006203e464660c9688fed864c908769"
+    },
+    {
       "locale": "ru",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -17767,6 +18137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "a8ae0d7f6771d11fae8f95df7188a17be7ef99d64f60866563bc15c9fa2318c5"
+    },
+    {
+      "locale": "ru",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/zipbox.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "50d02d3ee2bb173511fa956eab2045f043f7a2c702fe154bc5324b63aa137f1e"
     },
     {
       "locale": "sk",
@@ -18229,6 +18609,16 @@
       "sha256": "a24bff2b0ba52a8cd20a46d15c9e6a1eb0872db63435abd70967ac37aef219b2"
     },
     {
+      "locale": "sk",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/zipbox.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6806776579?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "bd590b98ef49885217b64e634266fbdd2c08ae54078cf040110f5f6003e0813f"
+    },
+    {
       "locale": "sl-SI",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -18687,6 +19077,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "928c12195cf76ea34be61e40c0af9078c5d0bd874fd30b2c76214f6e68057eed"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/zipbox.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "1a21bc086471f36bcf73f407538fe5734272dc64f88b1605366fc9952cccd5a3"
     },
     {
       "locale": "sv",
@@ -19149,6 +19549,16 @@
       "sha256": "9b4cdbd2fe1fc79fdb009fe86be1420f149576afd03680af0cf2ebd271cd1804"
     },
     {
+      "locale": "sv",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/zipbox.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6806776579?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "f843e85148cc7bccb5a4a6cb68a136992688f8c0c81c7cfdb454382bd5daf8a1"
+    },
+    {
       "locale": "ta-IN",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -19607,6 +20017,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "088b53e9448c9bec0fe8f013ee492f987201bf7d3bf73e388bc4085898ca02ed"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "8c03784e9bf63f70fae82865cb7944c41a33abe385c26882ece5f9b62aa32abc"
     },
     {
       "locale": "te-IN",
@@ -20069,6 +20489,16 @@
       "sha256": "25f9b67845e82e84c542ee60bd811ee9948e7e22ece6e25e35d95781d039e2c0"
     },
     {
+      "locale": "te-IN",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/zipbox.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "b530683c659c9644684d621c147af644382e8767989384c0b280faaa4a60531b"
+    },
+    {
       "locale": "th",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -20527,6 +20957,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/th/app/id6789917808?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "d793d80e071a79434973c6cec968ae62630f172d5bbe71d1f6254a2241ac84a7"
+    },
+    {
+      "locale": "th",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/zipbox.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6806776579?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "d34522ed64d32a9361aafa7c63bdda334ba9376a726d270fb00b0b5d041eece6"
     },
     {
       "locale": "tr",
@@ -20989,6 +21429,16 @@
       "sha256": "c222ef47ce311b7d4dd8b0b0ee8cb2046cc7f4be3c37c75fce3ac3440a741370"
     },
     {
+      "locale": "tr",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/zipbox.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6806776579?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "e8de6ac87bfa65052a25876a019b970380f7b543722b3111b547906d07899831"
+    },
+    {
       "locale": "uk",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -21447,6 +21897,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6789917808?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "797efc2b9ae2cf0b74f73352d238614d36028ef3d9a4de70b07975c5f48260a9"
+    },
+    {
+      "locale": "uk",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/zipbox.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6806776579?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "d92eb9f9c0fcd31f2ea17f0103fdefc187a137be3fbce769a77756f898dcd983"
     },
     {
       "locale": "ur-PK",
@@ -21909,6 +22369,16 @@
       "sha256": "fa9883ac15eb85e16d1269541eb3c0fdda62127ac8e358ae448aa3c1a6bbb42b"
     },
     {
+      "locale": "ur-PK",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/zipbox.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "115c9fdf66bc2e5eaff9dfcccb6c146bc747d835b2af95fe1fcae2c3926c6693"
+    },
+    {
       "locale": "vi",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -22367,6 +22837,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "682fc130eb4a92df686818fb61e49c02ef62bd7f91530422b1d034b95d1fe889"
+    },
+    {
+      "locale": "vi",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/zipbox.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6806776579?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "ca4b98a61598eebf1baeebb0a7c37ecbed333cfb0bcde3417bdd9b80a7c6693c"
     },
     {
       "locale": "zh-Hans",
@@ -22829,6 +23309,16 @@
       "sha256": "d09eac50e8babcbdf57aba0540d502a082b30494809ef17906facb1da35a2d36"
     },
     {
+      "locale": "zh-Hans",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/zipbox.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6806776579?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "e291420158630e92748884cffe48e8d383a442f2eefbe9128ae3b6b17f4c4fc8"
+    },
+    {
       "locale": "zh-Hant",
       "app_key": "notesstudio100",
       "app_store_id": "6798813048",
@@ -23287,6 +23777,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "7ff185787a545c4367799c7462ca60c8cd5465a1dd40de213f9fb840a99790a8"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "zipbox",
+      "app_store_id": "6806776579",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/zipbox.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/zipbox.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "bfb6e3840e65fe94d646ce0222ccbc2030b5d6c385698becdde972942ce5f3ed"
     }
   ]
 }

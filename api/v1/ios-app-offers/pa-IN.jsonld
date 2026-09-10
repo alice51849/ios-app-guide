@@ -6,8 +6,8 @@
   "name": "Lumi Studio ਪ੍ਰਕਾਸ਼ਕ ਖੋਜ ਇਰਾਦਾ ਕੈਟਾਲੌਗ",
   "description": "ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।",
   "inLanguage": "pa-IN",
-  "dateModified": "2026-09-06",
-  "numberOfItems": 46,
+  "dateModified": "2026-09-10",
+  "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -3038,6 +3038,72 @@
           "isAccessibleForFree": false
         },
         "price": "999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ",
+        "description": "Zipbox App Store ਉੱਤੇ ਪੇਡ ਐਪ ਹੈ। ਇੱਕ ਵਾਰ ਖਰੀਦਣ ਨਾਲ ਸਾਰੇ ਫੀਚਰ ਮਿਲਦੇ ਹਨ; ਐਪ ਅੰਦਰ ਹੋਰ ਖਰੀਦ, ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਜਾਂ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ। 13 ਫਾਰਮੈਟ ਡਿਵਾਈਸ ਉੱਤੇ ਹੀ ਚੱਲਦੇ ਹਨ।",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/pa-IN/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "pa-IN",
+          "description": "Zipbox App Store ਉੱਤੇ ਪੇਡ ਐਪ ਹੈ। ਇੱਕ ਵਾਰ ਖਰੀਦਣ ਨਾਲ ਸਾਰੇ ਫੀਚਰ ਮਿਲਦੇ ਹਨ; ਐਪ ਅੰਦਰ ਹੋਰ ਖਰੀਦ, ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਜਾਂ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ। 13 ਫਾਰਮੈਟ ਡਿਵਾਈਸ ਉੱਤੇ ਹੀ ਚੱਲਦੇ ਹਨ।",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

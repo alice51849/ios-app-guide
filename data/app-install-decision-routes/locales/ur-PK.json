@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ur-PK",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ur-PK.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ur-PK.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "مفت آغاز",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "کوئی اکاؤنٹ نہیں"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "مزید",
         "مفت آغاز",
-        "کوئی اکاؤنٹ نہیں",
         "App Store · مفت"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "ایپ بنانے والے Lumi Studio کی لکھی ہوئی رہنمائی۔ ایپس کے نام اُن کے مالکان کے ٹریڈ مارک ہیں اور صرف شناخت کے لیے استعمال ہوئے ہیں۔ دستاویزات، صحت، تعلیم اور کام سے متعلق فیصلوں میں جہاں ضرورت ہو وہاں سرکاری یا ادارہ جاتی تقاضے ضرور دیکھ لیں۔",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ur-PK:zipbox",
+      "locale": "ur-PK",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: RAR, ZIP, 7z کھولیں",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: RAR, ZIP, 7z کھولیں — اشتہار کے بغیر فائل نکالیں | iOS App",
+      "decision_context": "Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی پروسیس ہوتے ہیں۔ کوئی اشتہار نہیں، کبھی نہیں۔ نہ بینر، نہ پوری اسکرین کی ویڈیو، نہ آپ اور آپ کی اپنی فائل کے درمیان کھڑی الٹی گنتی۔ ZIP، RAR/RAR5، 7z، TAR، GZIP، TAR.GZIP، BZIP2، TAR.BZIP2، XZ، TAR.XZ، LZMA، LZ4 اور ISO نکالنا پہلے دیکھیں، پھر نکالیں۔ فہرست دیکھیں، تصاویر، ویڈیو، PDF، متن اور کوڈ کا پیش نظارہ کریں، پھر صرف وہی فائل نکالیں جس کی واقعی ضرورت ہے۔ سب کچھ آلے پر ہوتا ہے۔ Zipbox کوئی نیٹ ورک درخواست نہیں بھیجتا، اس میں اکاؤنٹ اور لاگ اِن نہیں، اور نہ ہی کوئی تجزیاتی یا ٹریکنگ کوڈ ہے۔ کئی حصوں میں بٹی یا پاس ورڈ سے محفوظ ZIP، RAR اور 7z فائلیں فائلز ایپ، سفاری کی ڈاؤن لوڈ، میل یا کسی بھی شیئر مینو سے براہ راست کھولیں، اور نتیجہ اسی راستے سے واپس بھیج دیں۔ دفتر کا آرکائیو ای میل پر آتا ہے اور ٹرین میں آپ کو چالیس میں سے صرف ایک PDF چاہیے۔ سفاری سے ڈاؤن لوڈ کیا ہوا RAR فائلز میں پڑا ہے اور فون میں کوئی چیز اسے نہیں کھولتی۔ کوئی دوست چھٹیوں کی تصاویر پاس ورڈ والے 7z میں بھیجتا ہے اور آپ صرف انہیں دیکھنا چاہتے ہیں۔ Zipbox کیا کرتا ہے ZIP، RAR/RAR5، 7z، TAR، GZIP، TAR.GZIP، BZIP2، TAR.BZIP2، XZ، TAR.XZ، LZMA، LZ4 اور ISO نکالنا کئی حصوں میں بٹی یا پاس ورڈ سے محفوظ ZIP، RAR اور 7z فائلیں آرکائیو کے اندر بغیر نکالے جھانکنا تصاویر، ویڈیو، PDF، متن اور کوڈ کا پیش نظارہ ایک فائل، منتخب فائلیں یا سب کچھ نکالنا فائلز، سفاری کی ڈاؤن لوڈز، میل اور شیئر مینو سے کھولنا AES-256 خفیہ کاری اور حصوں میں تقسیم کے ساتھ ZIP اور 7z بنانا کئی آرکائیوز کو باری باری نکالنا؛ ایک ناکام ہو تو بھی باقی کام جاری رہتا ہے آرکائیو کے اندر فائل کے ناموں اور متن میں تلاش؛ PDF صرف فائل کے نام سے منتقلی، نام کی تبدیلی، ترتیب، فائلز اور iCloud Drive میں بھیجنا، آرکائیو بنائیں (Siri شارٹ کٹس) Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی پروسیس ہوتے ہیں۔ کوئی فائل نہ کھلے یا کوئی فارمیٹ درکار ہو تو لکھیں: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "مزید",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "ادا شدہ ڈاؤن لوڈ",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "آف لائن",
+        "کوئی اکاؤنٹ نہیں",
+        "کوئی اشتہار نہیں",
+        "کوئی نگرانی نہیں",
+        "نجی / آلہ پر"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "مزید",
+        "ادا شدہ ڈاؤن لوڈ",
+        "آف لائن",
+        "کوئی اکاؤنٹ نہیں",
+        "کوئی اشتہار نہیں",
+        "کوئی نگرانی نہیں",
+        "نجی / آلہ پر",
+        "App Store · Rs 1,300.00"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ur-PK/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ur-PK/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fur-PK%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store سے Zipbox: RAR, ZIP, 7z کھولیں حاصل کریں",
+      "storefront_facts": {
+        "price": "1300",
+        "currency": "PKR",
+        "formatted_price": "Rs 1,300.00"
+      },
+      "guide_cta_label": "مکمل رہنمائی پڑھیں",
+      "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

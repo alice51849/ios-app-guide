@@ -4,7 +4,7 @@
 
 Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
 
-Søgeintentioner skrevet af udgiveren for 46 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
+Søgeintentioner skrevet af udgiveren for 47 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
 
 **Sprog og region:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · **da** · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alfabetisk efter appnavn — aldrig en rangering.
 | **WiFi Aid: Find netværksfejl** | WiFi Aid: Find netværksfejl — Netværksdiagnose med beviser \| iOS App | Find den mest sandsynlige årsag med uafhængige test af ruter, DNS, TCP, TLS, svartid og stabilitet. Én forudbetaling, intet abonnement, reklamer eller | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/wifiaid.html) | [Hent WiFi Aid: Find netværksfejl i App Store](https://apps.apple.com/dk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: Ordforråd** | Wordmate Lite: Ordforråd — Fem nye ord hver eneste dag \| iOS App | Fem ord. Ét minut. En sti du rent faktisk kan se. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/wordmatelite.html) | [Hent Wordmate Lite: Ordforråd i App Store](https://apps.apple.com/dk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | bedste ordforrådsapp til travle pendlere med Apple Watch | Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutter uden at kræve en hel lektion, ny konto eller telefon i hånden til hver gentagelse. Wordmate: Learn 44 Languages er opstået præcis af det problem. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Hent Wordmate: Learn 44 Languages i App Store →](https://apps.apple.com/dk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: åbn RAR, ZIP og 7z** | Zipbox: åbn RAR, ZIP og 7z — Pak ud uden reklamer \| iOS App | Zipbox er en betalt app i App Store. Ét køb omfatter alle funktioner uden køb i appen, abonnementer eller reklamer. Alle 13 formater behandles på din enhed | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/zipbox.html) | [Hent Zipbox: åbn RAR, ZIP og 7z i App Store](https://apps.apple.com/dk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Hent det komplette datasæt
 
-JSON, JSONL og CSV indeholder de samme 2.300 poster.
+JSON, JSONL og CSV indeholder de samme 2.350 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL og CSV indeholder de samme 2.300 poster.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/da/index.html) · [Åbne data](https://open.cait518.cc/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-09-05
+Opdateret: 2026-09-10
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

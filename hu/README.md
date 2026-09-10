@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 46 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 47 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **WiFi Aid: Hálózati hibák** | WiFi Aid: Hálózati hibák — Hálózatdiagnosztika tényekkel \| iOS App | Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/wifiaid.html) | [Töltse le a(z) WiFi Aid: Hálózati hibák appot az App Store-ból](https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: szótanulás** | Wordmate Lite: szótanulás — Napi öt szó egyetlen percben \| iOS App | Szeretnél végre haladni egy nyelvvel, de estére megint elfogy a nap, és egyetlen új szó sem ragadt meg. A Wordmate Lite napi egy percre rövidíti a tanulást | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/wordmatelite.html) | [Töltse le a(z) Wordmate Lite: szótanulás appot az App Store-ból](https://apps.apple.com/hu/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | legjobb szókincs alkalmazás elfoglalt ingázóknak Apple Watch-csal | Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad percekbe, nem igényel teljes leckét, új fiókot vagy telefont minden áttekintéshez. A Wordmate: Learn 44 Languages pontosan ebből a problémából indult. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Szerezd be a Wordmate: Learn 44 Languages-t az App Store-ban →](https://apps.apple.com/hu/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: RAR, ZIP, 7z kibontó** | Zipbox: RAR, ZIP, 7z kibontó — Kicsomagolás reklám nélkül \| iOS App | A Zipbox fizetős app az App Store-ban. Egy vásárlás minden funkciót ad, alkalmazáson belüli vásárlás, előfizetés és reklám nélkül. A Zipbox 13 formátumot | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/zipbox.html) | [Töltse le a(z) Zipbox: RAR, ZIP, 7z kibontó appot az App Store-ból](https://apps.apple.com/hu/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 300 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 350 rekordot tartalmazza.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ A JSON, JSONL és CSV ugyanazt az 2 300 rekordot tartalmazza.
 
 [Kezdőlap](https://open.cait518.cc/ios-app-guide/hu/index.html) · [Nyílt adatok](https://open.cait518.cc/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-09-05
+Frissítve: 2026-09-10
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

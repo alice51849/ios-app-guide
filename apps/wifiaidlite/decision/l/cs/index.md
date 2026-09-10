@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Diagnostika sítě s důkazy | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/cs/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Najděte skutečný problém. Každý nástroj zahrnuje jedno bezplatné plné p
 
 - Více
 - Zdarma na začátek
-- Bez účtu
 - App Store · Zdarma
 
 [Stáhněte si WiFi Aid Lite v App Storu](https://apps.apple.com/cz/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

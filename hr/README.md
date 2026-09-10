@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 46 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 47 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **WiFi Aid: Dijagnostika mreže** | WiFi Aid: Dijagnostika mreže — Dijagnostika mreže s dokazima \| iOS App | Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/wifiaid.html) | [Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: vokabular** | Wordmate Lite: vokabular — Pet novih riječi svaki dan \| iOS App | Želiš napokon pomaknuti strani jezik s mrtve točke, ali večer opet prođe bez ijedne nove riječi. Wordmate Lite svodi učenje na jednu minutu dnevno | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/wordmatelite.html) | [Preuzmite Wordmate Lite: vokabular u App Storeu](https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | najbolja aplikacija za vokabular za zaposlene putnike s Apple Watchom | Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje. Wordmate: Learn 44 Languages je nastao točno iz tog problema. | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Preuzmite Wordmate: Learn 44 Languages na App Storeu →](https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: otvori RAR, ZIP, 7z** | Zipbox: otvori RAR, ZIP, 7z — Raspakiraj bez reklama \| iOS App | Zipbox se plaća pri preuzimanju s App Storea. Sve su funkcije uključene, bez kupnji u aplikaciji, pretplata i oglasa. Svih 13 formata obrađuje se na | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/zipbox.html) | [Preuzmite Zipbox: otvori RAR, ZIP, 7z u App Storeu](https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 2.300 zapisa.
+JSON, JSONL i CSV sadrže istih 2.350 zapisa.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL i CSV sadrže istih 2.300 zapisa.
 
 [Početna](https://open.cait518.cc/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://open.cait518.cc/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-09-05
+Ažurirano: 2026-09-10
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

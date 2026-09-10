@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-Intenções de pesquisa redigidas pelo editor para 46 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
+Intenções de pesquisa redigidas pelo editor para 47 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · **pt-PT** · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -135,10 +135,11 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 | **WiFi Aid Lite** | WiFi Aid Lite — Diagnóstico de rede fiável \| iOS App | Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/wifiaidlite.html) | [Baixe WiFi Aid Lite na App Store](https://apps.apple.com/pt/app/id6793414462?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate Lite: vocabulário** | Wordmate Lite: vocabulário — Cinco palavras, um minuto \| iOS App | Cinco palavras, um minuto, um passo que se vê no teu percurso. O Wordmate Lite pega naquela intenção vaga de aprender finalmente uma língua e reduz o | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/wordmatelite.html) | [Baixe Wordmate Lite: vocabulário na App Store](https://apps.apple.com/pt/app/id6797601720?pt=118326163&ct=geo_pick&mt=8) |
 | **Wordmate: Learn 44 Languages** | melhor app de vocabulário para utilizadores em deslocação com Apple Watch | Utilizadores em deslocação precisam de prática de vocabulário que encaixe em minutos livres sem exigir uma lição completa, uma nova conta ou o telefone na mão para cada revisão. Wordmate: Learn 44 Languages nasceu precisamente desse problema. | Descarregamento pago | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html) | [Obtenha Wordmate: Learn 44 Languages na App Store →](https://apps.apple.com/pt/app/id6789917808?pt=118326163&ct=geo_pick&mt=8) |
+| **Zipbox: abrir RAR, ZIP e 7z** | Zipbox: abrir RAR, ZIP e 7z — Descomprimir sem publicidade \| iOS App | Zipbox é uma app paga na App Store. Uma compra inclui todas as funções, sem compras na app, subscrições ou publicidade. Os 13 formatos são processados no | Descarregamento pago | [Guia](https://open.cait518.cc/ios-app-guide/pt-PT/zipbox.html) | [Baixe Zipbox: abrir RAR, ZIP e 7z na App Store](https://apps.apple.com/pt/app/id6806776579?pt=118326163&ct=geo_pick&mt=8) |
 
 ## Descarregar o conjunto de dados completo
 
-JSON, JSONL e CSV contêm os mesmos 2.300 registos.
+JSON, JSONL e CSV contêm os mesmos 2.350 registos.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -146,6 +147,6 @@ JSON, JSONL e CSV contêm os mesmos 2.300 registos.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-09-05
+Atualizado: 2026-09-10
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

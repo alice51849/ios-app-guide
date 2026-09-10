@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — सबूत के साथ नेटवर्क जाँच | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/hi/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - और अधिक
 - मुफ़्त शुरुआत · एक बार अनलॉक
-- कोई खाता नहीं
 - App Store · मुफ़्त
 
 [App Store पर WiFi Aid Lite पाएँ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

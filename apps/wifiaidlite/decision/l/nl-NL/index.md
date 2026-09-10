@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Netwerkdiagnose met bewijs | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/nl-NL/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Vind het echte probleem. Elke tool bevat één gratis volledig gebruik. Optionel
 
 - Meer
 - Gratis te starten · eenmalige ontgrendeling
-- Geen account
 - App Store · Gratis
 
 [Download WiFi Aid Lite in de App Store](https://apps.apple.com/nl/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

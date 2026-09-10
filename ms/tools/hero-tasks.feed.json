@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Bandingkan belian menggunakan pendapatan bersih sejam, kemudian muat turun CSV anda. Jumlah = kuantiti × harga akhir. Jam = jumlah ÷ pendapatan bersih sejam. Hari = jam ÷ jam sehari bekerja. Masukkan harga termasuk cukai. Tiada pertukaran mata wang, pengiraan gaji, ramalan simpanan atau nasihat membeli. Paparan dibundarkan kepada dua perpuluhan; jumlah menggunakan nilai tanpa pembundaran.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/purchase-worktime-sheet.html",
       "language": "ms",
       "title": "Bandingkan belian dalam jam bekerja",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Catat bila anda terakhir kali melakukan setiap tugasan rumah, kereta atau kesihatan dan berapa kerap ia berulang: dapatkan tarikh akhir seterusnya, baki hari dan yang tertunggak dalam helaian untuk dimuat turun. Tarikh akhir seterusnya = terakhir dilakukan + selang. Untuk bulan, hari yang sama dikekalkan; jika tiada, hari terakhir bulan itu digunakan (termasuk tahun lompat). Baki hari = tarikh akhir − hari ini. Bawah 0 tertunggak; 0 hingga 7 tidak lama lagi. Selang 1 hingga 3650 hari, minggu atau bulan. Tarikh antara 1900-01-01 dan 2999-12-31. Sehingga 30 tugasan. Tiada peringatan, pemberitahuan atau penyegerakan kalendar; tiada data keluar dari halaman ini.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/maintenance-next-due-sheet.html",
       "language": "ms",
       "title": "Helaian jadual tarikh akhir penyelenggaraan",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Senaraikan apa yang dihasilkan dan dibelanjakan oleh projek bebas atau kerja kecil, kemudian muat turun helaian dengan untung kasar, margin dan bersih sejam. Untung = jumlah pendapatan − jumlah perbelanjaan. Margin = untung ÷ jumlah pendapatan. Bersih sejam = untung ÷ jam digunakan. Amaun dijumlahkan dalam sen penuh supaya jumlah tidak terpesong. Amaun dari 0 hingga 100,000,000 dengan paling banyak dua tempat perpuluhan, hingga 20 baris pendapatan dan 20 perbelanjaan, jam dari 0.25 hingga 2000 dalam langkah suku jam. Satu mata wang, tiada penukaran, tiada nasihat cukai atau perakaunan.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/project-profit-sheet.html",
       "language": "ms",
       "title": "Helaian untung projek",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Masukkan kapasiti maksimum daripada Tetapan iPhone dan, jika ada, bilangan kitaran, kemudian muat turun helaian dengan julat kehausan sebulan dan bulan yang tinggal sebelum 80% — sentiasa julat, bukan skor. Kehausan sebulan = (100 − kapasiti) ÷ umur dalam bulan, dipaparkan dengan jalur ±25%. Bulan hingga 80% = (kapasiti − 80) ÷ kehausan; had bawah daripada kadar tinggi, had atas daripada kadar rendah. Kitaran sebulan = kitaran ÷ umur. Kapasiti 60 hingga 100 dalam peratus bulat, kitaran 0 hingga 3000, bulan pembelian antara 2007 dan 2099 dengan umur 1 hingga 240 bulan, hingga 10 peranti. Bulan dalam format YYYY-MM. Input kekal dalam tab ini; tiada apa-apa diukur atau dibaca daripada telefon anda.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/battery-wear-range-sheet.html",
       "language": "ms",
       "title": "Helaian julat haus bateri",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Senaraikan apa yang dilakukan isi rumah dalam talian pada masa yang sama dan berapa peranti yang terlibat, kemudian muat turun helaian dengan Mbps yang diperlukan dan baki ruang pelan anda. Jumlah setiap baris = peranti × nilai setiap peranti. Keperluan = jumlah semua baris. Baki ruang = pelan − keperluan; di bawah 20% pelan bermakna ketat, di bawah sifar bermakna tidak cukup. Dijumlahkan dalam persepuluh Mbps bulat, jadi jumlahnya tidak pernah tersasar. Kelajuan pelan 0.5 hingga 10000 Mbps dengan paling banyak satu tempat perpuluhan, 1 hingga 50 peranti setiap baris, sehingga 20 baris. Liputan Wi‑Fi, kependaman dan kelajuan sebenar daripada penyedia berada di luar helaian ini.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/bandwidth-need-sheet.html",
       "language": "ms",
       "title": "Keperluan jalur lebar rumah",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Masukkan jumlah bajet perjalanan, bilangan hari, bilangan orang dan kos yang sudah diketahui, kemudian muat turun helaian yang menunjukkan berapa setiap orang boleh belanja sehari dan pembahagiannya untuk makanan, pengangkutan, tiket dan beli-belah. Baki = jumlah bajet − kos tetap. Sehari = baki ÷ hari. Seorang sehari = sehari ÷ bilangan orang. Setiap kategori = sehari × bahagiannya. Amaun dijumlahkan dalam sen bulat; angka harian hanya dibundarkan semasa dipaparkan. Amaun 0 hingga 100,000,000 dengan paling banyak dua tempat perpuluhan, 1 hingga 120 hari, 1 hingga 20 orang, sehingga 15 kos tetap, empat bahagian yang berjumlah tepat 100. Mata wang yang sama sepanjang helaian, tiada kadar tukaran, tiada nasihat harga atau tempahan.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/trip-budget-sheet.html",
       "language": "ms",
       "title": "Helaian bajet perjalanan sehari",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Senaraikan tempat yang ingin dilawati dalam sehari, berapa lama di setiap tempat dan berapa lama untuk ke tempat seterusnya, kemudian muat turun helaian dengan waktu tiba dan bertolak yang menunjukkan sama ada semuanya muat antara waktu mula dan waktu tamat anda. Tiba = bertolak sebelumnya + perjalanan. Bertolak = tiba + tempoh di tempat. Jumlah = semua tempoh di tempat + semua perjalanan. Tersedia = tamat − mula; waktu tamat yang lebih awal daripada waktu mula dikira sebagai hari berikutnya. Lebihan = jumlah − tersedia; melebihi sifar bermakna melebihi masa. Kiraan minit semata-mata, tiada zon waktu. Waktu dalam format 24 jam HH:MM, tempoh di tempat 5 hingga 720 minit, perjalanan 0 hingga 600 minit, sehingga 25 tempat. Waktu buka, trafik sebenar, peta, laluan dan tempahan berada di luar helaian ini.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/day-itinerary-sheet.html",
       "language": "ms",
       "title": "Helaian masa perjalanan sehari",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Tukar nota mesyuarat yang bersepah menjadi rangka satu muka: satu tajuk, tiga hingga dua belas perkara utama, satu tindakan seterusnya dan satu metrik pilihan, kemudian muat turun sebagai helaian untuk ditampal ke slaid atau ringkasan. Helaian ini mengekalkan kata-kata anda seadanya: tajuk, kemudian perkara mengikut urutan yang anda taip, kemudian tindakan seterusnya, kemudian metrik. Ia mengira perkara dan membuang ruang di tepi; tiada apa yang ditulis semula, diringkaskan atau dinilai. Tajuk maksimum 80 aksara, 3 hingga 12 perkara masing-masing maksimum 160 aksara, tindakan seterusnya maksimum 160 aksara, metrik maksimum 60 aksara. Setiap baris mesti teks satu baris. Helaian ini tidak membaca fail, rakaman atau kalendar.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/one-page-outline-sheet.html",
       "language": "ms",
       "title": "Nota mesyuarat satu muka",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Tulis berapa yang dipesan setiap orang, isi peratus cukai dan tip, dan lihat berapa sebenarnya perlu dibayar oleh setiap orang. Cukai dan tip dibahagi hingga sen terakhir mengikut pesanan, dan jadualnya boleh dimuat turun sebagai CSV. Jumlah kecil = semua pesanan dicampur. Cukai = jumlah kecil × kadar cukai. Tip = jumlah kecil × kadar tip. Bahagian setiap orang ialah pesanannya ÷ jumlah kecil; sen yang berbaki diberikan dahulu kepada pecahan perpuluhan terbesar, jadi semua bahagian sentiasa mencukupkan jumlah bil. Guna satu mata wang sahaja, dan masukkan cukai serta tip sebagai peratus daripada jumlah kecil. Tiada penukaran mata wang, tiada peraturan caj perkhidmatan, tiada nasihat berapa tip patut diberi, dan tiada pembayaran. Paparan dibundarkan kepada dua tempat perpuluhan; pembahagian dikira dalam sen penuh.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/bill-split-sheet.html",
       "language": "ms",
       "title": "Bahagi bil",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Senaraikan apa yang anda simpan dan berapa lama setiap satu, isi minit yang benar-benar anda baca sehari, dan lihat pada hari keberapa setiap satu selesai. Pelan boleh dimuat turun sebagai CSV. Jumlah berjalan = minit item ini campur semua di atasnya. Hari = jumlah berjalan ÷ minit sehari, dibundarkan ke atas. Selesai pada = tarikh mula + hari − 1. Baki minit = hari × minit sehari − jumlah minit. Susunan yang anda taip ialah susunan bacaan: tiada apa-apa disusun semula, dilangkau atau digabung. Satu sesi sehari yang menghabiskan tepat peruntukan anda, tanpa hari cuti, tanpa membuka atau mengambil sebarang pautan, dan tanpa meneka kelajuan bacaan anda.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/reading-backlog-sheet.html",
       "language": "ms",
       "title": "Pelan «baca kemudian»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Isi tarikh anda menulis setiap nota, dan dapatkan lima tarikh ulang kaji seterusnya, berapa hari lagi, dan mana yang sudah berlalu. Jadual boleh dimuat turun sebagai CSV. Tarikh ulang kaji = tarikh ditulis + 1, 3, 7, 16 dan 35 hari. Baki hari = tarikh ulang kaji − hari ini; nombor negatif bermakna tarikh itu sudah berlalu. Ulang kaji seterusnya = tarikh pertama yang jatuh hari ini atau selepasnya. Ini tangga selang tetap, bukan model ingatan: tiada apa-apa di sini meramal apa yang anda akan ingat, memberi markah kepada nota, atau menyemak jawapan. Tarikh sahaja, tanpa waktu, zon waktu, peringatan atau pemberitahuan.",
-      "date_modified": "2026-09-08T00:00:00Z",
+      "date_modified": "2026-09-10T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/ms/tools/review-schedule-sheet.html",
       "language": "ms",
       "title": "Jadual ulang kaji nota",

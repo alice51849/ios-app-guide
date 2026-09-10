@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — નેટ સમસ્યા શોધો અને સુધારો | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/gu-IN/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - વધુ
 - મફત શરૂઆત
-- કોઈ ખાતું નથી
 - App Store · મફત
 
 [App Store પરથી WiFi Aid Lite મેળવો](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

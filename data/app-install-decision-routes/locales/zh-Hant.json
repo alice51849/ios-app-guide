@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.rss.xml",
@@ -2265,18 +2265,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "免帳號"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
-        "免帳號",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaidlite.html",
@@ -2413,6 +2408,68 @@
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "zh-Hant:zipbox",
+      "locale": "zh-Hant",
+      "app_key": "zipbox",
+      "app_name": "Zipbox 解壓縮：RAR ZIP 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox 解壓縮：RAR ZIP 7z — 零廣告，內容先看再處理 | iOS App",
+      "decision_context": "Zipbox 是 App Store 付費下載 App，一次購買就包含全部功能，沒有 App 內購買、訂閱或廣告。13 種格式全都在裝置本機處理。 永遠零廣告。沒有橫幅、沒有全螢幕影片、沒有「還剩 5 秒」擋在你和自己的檔案中間。 解壓 ZIP、RAR/RAR5、7z、TAR、GZIP、TAR.GZIP、BZIP2、TAR.BZIP2、XZ、TAR.XZ、LZMA、LZ4、ISO 先看再解壓。直接瀏覽壓縮檔裡的清單，預覽照片、影片、PDF、文字和程式碼，只把真正需要的那一個檔案取出來。 全部在裝置上完成。Zipbox 不連網、沒有帳號、不用登入，也沒有任何分析或追蹤程式碼。 ZIP、RAR、7z 的分卷與密碼保護壓縮檔 從檔案 App、Safari 下載項目、郵件或任何分享選單直接開啟，處理完再沿原路分享出去。 工作用的 ZIP 寄到信箱，你在捷運上只想要裡面那一份 PDF。 用 Safari 下載的 RAR 躺在檔案 App 裡，手機上卻沒有一個 App 打得開。 朋友傳來設了密碼的 7z 旅遊照片，你只是想看一眼。 Zipbox 做得到的事 解壓 ZIP、RAR/RAR5、7z、TAR、GZIP、TAR.GZIP、BZIP2、TAR.BZIP2、XZ、TAR.XZ、LZMA、LZ4、ISO ZIP、RAR、7z 的分卷與密碼保護壓縮檔 不解壓也能直接看壓縮檔內容 預覽照片、影片、PDF、文字與程式碼 取出單一檔案、勾選多個檔案，或整包解開 從檔案 App、Safari 下載、郵件與分享選單開啟 建立 ZIP 與 7z 壓縮檔，支援 AES-256 加密與分卷輸出 依序批次解壓多個壓縮檔，單一項目失敗也會繼續處理其餘項目 搜尋壓縮檔內的檔名與文字內容；PDF 僅比對檔名 移動、重新命名、整理檔案，匯出到檔案 App 與 iCloud 雲碟，建立壓縮檔（Siri 捷徑） Zipbox 是 App Store 付費下載 App，一次購買就包含全部功能，沒有 App 內購買、訂閱或廣告。13 種格式全都在裝置本機處理。 有打不開的檔案，或希望我們支援的格式，歡迎來信 hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "更多",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "付費下載",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "更多",
+        "付費下載",
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
+        "App Store · $150.00"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/zh-Hant/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "在 App Store 取得 Zipbox 解壓縮：RAR ZIP 7z",
+      "storefront_facts": {
+        "price": "150",
+        "currency": "TWD",
+        "formatted_price": "$150.00"
+      },
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

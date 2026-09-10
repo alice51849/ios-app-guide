@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "vi",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/vi.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/vi.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Bắt đầu miễn phí · mở khóa một lần",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Không tài khoản"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Khác",
         "Bắt đầu miễn phí · mở khóa một lần",
-        "Không tài khoản",
         "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "Hướng dẫn do Lumi Studio, nhà phát triển ứng dụng, biên soạn. Tên các ứng dụng là thương hiệu của chủ sở hữu tương ứng và chỉ được dùng để nhận diện. Với những quyết định liên quan đến giấy tờ, sức khỏe, học tập và công việc, hãy kiểm tra các yêu cầu chính thức tương ứng khi cần.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "vi:zipbox",
+      "locale": "vi",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: Giải nén RAR, ZIP, 7z",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: Giải nén RAR, ZIP, 7z — Mở file nén, không quảng cáo | iOS App",
+      "decision_context": "Zipbox là app trả phí trên App Store. Mua một lần có đủ mọi tính năng; không mua trong app, không thuê bao, không quảng cáo. Cả 13 định dạng đều được xử lý trên thiết bị. Không quảng cáo, không bao giờ. Không banner, không video toàn màn hình, không đếm ngược chen giữa bạn và tệp của chính bạn. Giải nén ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 và ISO Xem trước rồi hãy giải nén. Lướt danh sách, xem thử ảnh, video, PDF, văn bản và mã nguồn, rồi lấy ra đúng một tệp bạn thật sự cần. Mọi thứ diễn ra trên máy. Zipbox không gửi yêu cầu mạng nào, không có tài khoản và không cần đăng nhập, cũng không chứa mã phân tích hay theo dõi. ZIP, RAR, 7z chia nhiều phần hoặc đặt mật khẩu Mở thẳng từ Tệp, từ mục tải xuống trong Safari, từ Mail hay bất kỳ trình đơn chia sẻ nào, rồi gửi kết quả đi theo đúng cách đó. Một tệp nén công việc gửi qua thư và trên tàu bạn chỉ cần một tệp PDF trong bốn mươi tệp. Tệp RAR tải bằng Safari nằm im trong Tệp mà không có ứng dụng nào trên máy mở được. Một người bạn gửi tệp 7z có mật khẩu chứa ảnh du lịch, còn bạn chỉ muốn xem chúng. Zipbox làm được gì Giải nén ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 và ISO ZIP, RAR, 7z chia nhiều phần hoặc đặt mật khẩu Xem bên trong mà không cần giải nén Xem thử ảnh, video, PDF, văn bản và mã nguồn Lấy ra một tệp, một nhóm tệp chọn sẵn hoặc toàn bộ Mở từ Tệp, mục tải xuống Safari, Mail và trình đơn chia sẻ Tạo ZIP và 7z với mã hóa AES-256 và chia thành nhiều phần Giải nén nhiều tệp theo thứ tự; một tệp lỗi cũng không dừng các tệp còn lại Tìm theo tên tệp và văn bản bên trong tệp nén; PDF chỉ tìm theo tên tệp Di chuyển, đổi tên, sắp xếp, xuất sang Tệp và iCloud Drive, Tạo tệp nén (phím tắt Siri) Zipbox là app trả phí trên App Store. Mua một lần có đủ mọi tính năng; không mua trong app, không thuê bao, không quảng cáo. Cả 13 định dạng đều được xử lý trên thiết bị. Nếu có tệp không mở được hoặc thiếu định dạng bạn cần: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "Khác",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "Tải xuống trả phí",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Ngoại tuyến",
+        "Không tài khoản",
+        "Không quảng cáo",
+        "Không theo dõi",
+        "Riêng tư / trên thiết bị"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Khác",
+        "Tải xuống trả phí",
+        "Ngoại tuyến",
+        "Không tài khoản",
+        "Không quảng cáo",
+        "Không theo dõi",
+        "Riêng tư / trên thiết bị",
+        "App Store · 149.000đ"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/vi/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/vi/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fvi%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/vn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Tải Zipbox: Giải nén RAR, ZIP, 7z trên App Store",
+      "storefront_facts": {
+        "price": "149000",
+        "currency": "VND",
+        "formatted_price": "149.000đ"
+      },
+      "guide_cta_label": "Đọc toàn bộ hướng dẫn",
+      "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

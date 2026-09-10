@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "te-IN",
-  "dateModified": "2026-09-05",
-  "content_digest": "b94822bd8aaacadba92ec151e48d82b3ea0883ea45a290c19ff8961a94bdd7e0",
-  "generation_digest": "b7ddbcc2a9cdaa504864b906042cfa87264a19ae0898ec53481f6e275fd8be47",
+  "dateModified": "2026-09-10",
+  "content_digest": "bf332687e4b1da29e644b0b147ea3e2c606e1b1a8b056ff6c625a8ef8a84aee7",
+  "generation_digest": "4ef43ac21b55a26791f7b41878ded8616ad85d905e4ff3b23b376bd59f61d69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 46,
+  "record_count": 47,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/te-IN.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/te-IN.rss.xml",
@@ -2199,18 +2199,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [
-        "no_account"
-      ],
-      "privacy_labels": [
-        "ఖాతా అవసరం లేదు"
-      ],
+      "privacy_facts": [],
+      "privacy_labels": [],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
-        "ఖాతా అవసరం లేదు",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/wifiaidlite.html",
@@ -2344,6 +2339,68 @@
       "publisher_disclosure": "యాప్ డెవలపర్ Lumi Studio రాసిన గైడ్. యాప్‌ల పేర్లు వాటి యజమానుల ట్రేడ్‌మార్కులు; గుర్తింపు కోసం మాత్రమే వాడాం. పత్రాలు, ఆరోగ్యం, చదువు, ఉత్పాదకతకు సంబంధించిన నిర్ణయాల్లో అవసరమైన చోట అధికారిక నిబంధనలను సరిచూసుకోండి.",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "te-IN:zipbox",
+      "locale": "te-IN",
+      "app_key": "zipbox",
+      "app_name": "Zipbox: ZIP, RAR, 7z తెరవండి",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Zipbox: ZIP, RAR, 7z తెరవండి — ప్రకటనలు లేవు, ముందే చూడండి | iOS App",
+      "decision_context": "Zipbox App Storeలో చెల్లింపు app. ఒక్క కొనుగోలుతో అన్ని ఫీచర్లు లభిస్తాయి; appలో మరో కొనుగోలు, సబ్‌స్క్రిప్షన్ లేదా ప్రకటనలు లేవు. 13 ఫార్మాట్లు పరికరంలోనే పనిచేస్తాయి. ప్రకటనలే లేవు. బ్యానర్ లేదు, పూర్తి తెర వీడియో లేదు, 'స్కిప్' కోసం లెక్కపెట్టడం లేదు. మీకూ మీ సొంత ఫైల్‌కూ మధ్య ఏదీ అడ్డు నిలవదు. ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 మరియు ISO తీయడం ముందు చూడండి, తర్వాత తీయండి. లోపలి జాబితా చూడండి, ఫొటోలు, వీడియో, PDF, పాఠ్యం, కోడ్ ప్రివ్యూ చేయండి, ఆపై నిజంగా కావలసిన ఫైల్‌ను మాత్రమే బయటకు తీయండి. అనేక భాగాలుగా విడిపోయిన లేదా పాస్‌వర్డ్ ఉన్న ZIP, RAR, 7z అనేక భాగాలుగా విడిపోయిన లేదా పాస్‌వర్డ్ ఉన్న ZIP, RAR, 7z ఫైల్స్ యాప్, Safari డౌన్‌లోడ్, మెయిల్ లేదా ఏ షేర్ మెనూ నుంచైనా నేరుగా తెరవండి, ఫలితాన్ని అదే దారిలో తిరిగి పంపండి. చాట్‌లో వచ్చిన ఆఫీసు ZIP లో నలభై ఫైళ్లు ఉన్నాయి, మీకు కావలసింది ఒక్క PDF మాత్రమే. Safari లో దించిన RAR ఫైల్స్ యాప్‌లో పడి ఉంటుంది, ఫోన్‌లో దాన్ని ఏదీ తెరవదు. స్నేహితుడు సెలవుల ఫొటోలను పాస్‌వర్డ్ ఉన్న 7z లో పంపాడు, మీకు వాటిని చూడాలని మాత్రమే ఉంది. Zipbox చేసేది ZIP, RAR/RAR5, 7z, TAR, GZIP, TAR.GZIP, BZIP2, TAR.BZIP2, XZ, TAR.XZ, LZMA, LZ4 మరియు ISO తీయడం అనేక భాగాలుగా విడిపోయిన లేదా పాస్‌వర్డ్ ఉన్న ZIP, RAR, 7z తీయకుండానే ఆర్కైవ్ లోపల చూడటం ఫొటోలు, వీడియో, PDF, పాఠ్యం, కోడ్ ప్రివ్యూ ఒక ఫైల్, ఎంచుకున్నవి లేదా అన్నీ బయటకు తీయడం ఫైల్స్, Safari డౌన్‌లోడ్, మెయిల్, షేర్ మెనూ నుంచి తెరవడం AES-256 ఎన్‌క్రిప్షన్‌తో, భాగాలుగా విభజించి ZIP, 7z తయారు చేయడం అనేక ఆర్కైవ్‌లను వరుసగా తీయడం; ఒకటి విఫలమైనా మిగతావి కొనసాగుతాయి ఆర్కైవ్ లోపల ఫైల్ పేర్లు, పాఠ్యంలో శోధన; PDF ఫైల్ పేరుతో మాత్రమే వేరే ఫోల్డర్‌కు తరలించడం, పేరు మార్చడం, సర్దడం, ఫైల్స్ మరియు iCloud Drive కు పంపడం, ఆర్కైవ్ సృష్టించు (Siri షార్ట్‌కట్‌లు) Zipbox App Storeలో చెల్లింపు app. ఒక్క కొనుగోలుతో అన్ని ఫీచర్లు లభిస్తాయి; appలో మరో కొనుగోలు, సబ్‌స్క్రిప్షన్ లేదా ప్రకటనలు లేవు. 13 ఫార్మాట్లు పరికరంలోనే పనిచేస్తాయి. ఏదైనా ఫైల్ తెరుచుకోకపోతే లేదా ఏదైనా ఫార్మాట్ కావాలంటే రాయండి: hourstag.app@gmail.com",
+      "category": "utility",
+      "category_label": "ఇంకా",
+      "purchase_model": "paid_upfront",
+      "purchase_label": "చెల్లింపు డౌన్లోడ్",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "ఇంకా",
+        "చెల్లింపు డౌన్లోడ్",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "App Store · ₹ 499"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/zipbox.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/te-IN/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/te-IN/zipbox.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fzipbox%2Fdecision%2Fl%2Fte-IN%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
+      "app_store_id": "6806776579",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6806776579",
+      "app_store_url": "https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store నుంచి Zipbox: ZIP, RAR, 7z తెరవండి పొందండి",
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
+      "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
+      "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
+      "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

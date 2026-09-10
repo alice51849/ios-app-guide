@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Nätverksdiagnos med bevis | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/sv/index.html"
-modified: "2026-09-05"
+modified: "2026-09-10"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Hitta det riktiga problemet. Varje verktyg innehåller en gratis fullständig an
 
 - Mer
 - Gratis att börja · engångsupplåsning
-- Inget konto
 - App Store · Gratis
 
 [Hämta WiFi Aid Lite i App Store](https://apps.apple.com/se/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)

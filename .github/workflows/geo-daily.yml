@@ -305,6 +305,7 @@ jobs:
             python3 add_related_answers.py $loc
           done
           python3 add_related_tools.py --all-official-locales
+          python3 gen_tool_email_capture.py
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_webstories_i18n.py

@@ -182,6 +182,11 @@ UI = {
         "alternative": "When another route is better",
         "evidence": "First-party product evidence",
         "vocabulary": "Published task vocabulary",
+        "candidate_queries": "Task search phrases under testing",
+        "candidate_queries_note": (
+            "These are unverified candidate phrases. Search volume, rankings "
+            "and published sources have not been verified."
+        ),
         "verify": "Verify before installing",
         "store": "View on the App Store",
         "source": "Source",
@@ -226,6 +231,8 @@ UI = {
         "alternative": "何時應改選其他方案",
         "evidence": "第一方產品依據",
         "vocabulary": "已發布的任務用語",
+        "candidate_queries": "正在測試的任務搜尋語句",
+        "candidate_queries_note": "這些候選語句尚未驗證，未查證搜尋量、排名或已發布來源。",
         "verify": "安裝前確認",
         "store": "前往 App Store 查看",
         "source": "來源",
@@ -266,16 +273,21 @@ UI = {
         "alternative": "Quand choisir une autre solution",
         "evidence": "Informations produit de première main",
         "vocabulary": "Les usages décrits",
+        "candidate_queries": "Requêtes liées à ces tâches en cours de test",
+        "candidate_queries_note": (
+            "Ces requêtes sont des pistes non vérifiées. Aucun volume de "
+            "recherche, classement ni source publiée n’a été confirmé."
+        ),
         "verify": "Avant de vous lancer",
         "store": "Voir sur l’App Store",
         "source": "Source",
         "purchase_model": {
-            "free_with_lifetime_unlock": "Démarrage gratuit, déblocage par achat unique",
+            "free_with_lifetime_unlock": "Démarrage gratuit, puis déblocage avec un achat unique",
         },
         "one_time_option": "Le catalogue de l’éditeur confirme une option d’achat unique.",
         "feature_labels": {
             "Free to start": "Vous pouvez commencer gratuitement",
-            "One-time unlock": "Déblocage par achat unique",
+            "One-time unlock": "Déblocage avec un achat unique",
             "No subscription": "Sans abonnement",
         },
         "capabilities": {
@@ -302,6 +314,8 @@ UI = {
         "alternative": "ほかの方法が向いている場合",
         "evidence": "開発元が公開している製品情報",
         "vocabulary": "公開されている用途",
+        "candidate_queries": "検証中のタスク検索フレーズ",
+        "candidate_queries_note": "これらは未検証の候補です。検索数、順位、公開済みの出典は確認できていません。",
         "verify": "使い始める前に",
         "store": "App Store で見る",
         "source": "出典",
@@ -588,6 +602,25 @@ def _validate_inventory_binding(
     return expectations, extra
 
 
+def _validate_native_text(
+    locale: str,
+    text: object,
+    *,
+    minimum: int = 1,
+    field: str = "copy",
+) -> None:
+    patterns = {
+        "en-US": r"[A-Za-z]+",
+        "zh-Hant": r"[\u3400-\u9fff]",
+        "ja": r"[\u3040-\u30ff]",
+        "fr-FR": r"\b(?:les|des|une|pour|sans|avec|vous|votre|vos|de|un)\b",
+    }
+    if locale not in patterns:
+        raise ValueError(f"No native-copy validator for {locale}")
+    if not isinstance(text, str) or len(re.findall(patterns[locale], text, re.I)) < minimum:
+        raise ValueError(f"{locale}: {field} is not substantively native")
+
+
 def _native_copy(locale: str, copy: dict[str, Any]) -> None:
     expected_language = LOCALE_LANGUAGE.get(locale)
     if expected_language is None:
@@ -603,14 +636,11 @@ def _native_copy(locale: str, copy: dict[str, Any]) -> None:
         + [str(item) for item in copy.get("workflow_checks", [])]
         + [str(item) for item in copy.get("verify_before_install", [])]
     )
-    if locale == "zh-Hant" and len(re.findall(r"[\u3400-\u9fff]", joined)) < 80:
-        raise ValueError(f"{locale}: copy is not substantively native")
-    if locale == "en-US" and len(re.findall(r"[A-Za-z]+", joined)) < 90:
-        raise ValueError(f"{locale}: copy is not substantively native")
-    if locale == "ja" and len(re.findall(r"[\u3040-\u30ff]", joined)) < 100:
-        raise ValueError(f"{locale}: copy is not substantively native")
-    if locale == "fr-FR" and len(re.findall(r"\b(?:les|des|une|pour|sans|avec|vous|votre|vos|de|un)\b", joined, re.I)) < 20:
-        raise ValueError(f"{locale}: copy is not substantively native")
+    _validate_native_text(
+        locale,
+        joined,
+        minimum={"en-US": 90, "zh-Hant": 80, "ja": 100, "fr-FR": 20}[locale],
+    )
     if not any(
         marker in str(copy["culture_route"])
         for marker in CULTURE_MARKERS[locale]
@@ -669,6 +699,8 @@ def _validate_locale_copy(
                 f"{app_key}/{locale}.{field} contains an unsourced product claim"
             )
     _native_copy(locale, copy)
+    for label, text in UI[locale]["feature_labels"].items():
+        _validate_native_text(locale, text, field=f"feature_labels[{label}]")
     return copy
 
 
@@ -848,6 +880,7 @@ def _evidence(
         source_value = True
     else:
         raise ValueError(f"{key}/{locale}: unsupported evidence ref {reference}")
+    _validate_native_text(locale, value, field=f"{key}.{reference} evidence")
     return {
         "reference": reference,
         "inventory_pointer": pointer,
@@ -1091,7 +1124,6 @@ def _build_record(
     }
     if route.get("_conversion") is not None:
         record["store_label"] = UI[locale]["store"]
-        record["source_vocabulary"] = list(route["_conversion"]["localized"][locale]["queries"])
         record["alternates"] = {
             native_locale: route_url(str(app["key"]), str(route["route_slug"]), native_locale)
             for native_locale in sorted(route["locales"])
@@ -1443,6 +1475,15 @@ def render_html(record: dict[str, Any]) -> str:
             f"<h2>{html.escape(str(ui['vocabulary']))}</h2>\n"
             f"<ul>{_list(record['source_vocabulary'])}</ul>"
         )
+    candidate_queries_section = ""
+    if record.get("conversion_contract"):
+        candidate_queries_section = (
+            '\n<section data-query-status="candidate" data-query-verification="unverified">'
+            f"<h2>{html.escape(str(ui['candidate_queries']))}</h2>"
+            f"<p>{html.escape(str(ui['candidate_queries_note']))}</p>"
+            f"<ul>{_list(record['conversion_contract']['copy']['queries'])}</ul>"
+            "</section>"
+        )
     store_url = html.escape(str(record["app_store_url"]), quote=True)
     store_label = html.escape(str(ui["store"]))
     app_name = html.escape(str(record["app_name"]))
@@ -1525,7 +1566,7 @@ footer{{margin-top:1rem;font-size:.92rem}}
 <p>{html.escape(str(record['alternative_lens']))}</p>
 {conversion_details}<h2>{html.escape(str(ui['evidence']))}</h2>
 {evidence}
-{vocabulary_section}
+{vocabulary_section}{candidate_queries_section}
 <h2>{html.escape(str(ui['verify']))}</h2>
 <ul>{_list(record['verify_before_install'])}</ul>
 {bottom_cta}

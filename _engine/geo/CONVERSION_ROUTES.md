@@ -15,6 +15,10 @@
 
 `BLOCKED_EVIDENCE` 不代表功能不存在：它阻止把未驗證的診斷、搜尋命中、完整 iPad 成果或可編輯 PPTX sample 當成已完成的 proof。BattAI 的 report-export 付費範圍亦維持 blocked。Aim990 固定使用已上架 1.4.2，不操作或宣傳待審 1.4.3。
 
+`published_claim_ids`、`free_feature_ids` 與 `paid_feature_ids` 都不得引用 blocked ID，即使另一筆 verified proof 同時列出相同 ID，仍須 fail closed。
+
+原「已發布的任務用語」區塊只保留經 `keyword_refs` 綁定的 catalog keywords；沒有母語 catalog keywords 時不以英文補齊。Conversion queries 另以母語「正在測試的任務搜尋語句」呈現，公開 contract／schema 的 `query_evidence` 固定為 `candidate`／`unverified`，搜尋量、排名與已發布來源一律 `unknown`，不得當成 proof。UI feature labels 與每筆 evidence text 必須通過和 route 文案共用的母語字元／虛詞驗證，英文 fallback 不得發布。
+
 Storefront 金額是帶時間戳的歷史 readback，**不在可見文案或 schema.org Offers 硬編全球價格**；沒有法國／日本 readback 時保持 `unknown`，不套美國價。`APPROVED` 不等於 runtime 購買已驗證。
 
 `effective_at_utc` 在首次 exact production GET 前保持 `unknown`；本機 GET、產檔及 feature branch push 不算曝光。公開 contract 的 `generated_not_deployed` 是 producer 狀態，實際發布由既有 `.well-known/deployment.json` 與獨立 exact GET receipt 證明。不要為改寫曝光日期再觸發一次部署。

@@ -51,6 +51,7 @@
                 "type": "string"
               },
               "queries": {
+                "description": "Unverified candidate task search phrases, not published catalog keywords or evidence of search volume, rankings or published sources.",
                 "items": {
                   "type": "string"
                 },
@@ -122,6 +123,16 @@
             "minItems": 1,
             "type": "array"
           },
+          "query_evidence": {
+            "const": {
+              "published_source": "unknown",
+              "ranking": "unknown",
+              "search_volume": "unknown",
+              "status": "candidate",
+              "verification_status": "unverified"
+            },
+            "type": "object"
+          },
           "route_id": {
             "minLength": 1,
             "type": "string"
@@ -144,6 +155,7 @@
           "offer_readback_at",
           "outcome",
           "proofs",
+          "query_evidence",
           "route_id",
           "scaling_allowed"
         ],

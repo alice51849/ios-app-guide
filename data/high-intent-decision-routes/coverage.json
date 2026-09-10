@@ -674,7 +674,7 @@
         "passed": true
       },
       "non_thin": {
-        "detail": "minimum=203 units; threshold=180",
+        "detail": "minimum=200 units; threshold=180",
         "passed": true
       },
       "primary_intent_coverage": {
@@ -696,7 +696,7 @@
       "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "en-US:lumibopomofopro:complete-zhuyin-path-for-heritage-family"
     ],
-    "minimum_content_units": 203
+    "minimum_content_units": 200
   },
   "release_contract_digest": "dd82827f2ba9c9f7461e6a7c6d23b9138db32dae9c132145cc60952943b85c72",
   "release_state": "exact",

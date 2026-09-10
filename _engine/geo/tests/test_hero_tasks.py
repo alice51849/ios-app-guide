@@ -13,7 +13,6 @@ import subprocess
 import sys
 import unittest
 from unittest import mock
-from urllib.error import HTTPError
 import uuid
 import xml.etree.ElementTree as ET
 
@@ -28,6 +27,12 @@ import indexnow_submit  # noqa: E402
 
 
 class HeroReadbackRequestTests(unittest.TestCase):
+    def setUp(self):
+        readback._close_client()
+
+    def tearDown(self):
+        readback._close_client()
+
     def response(self, url):
         response = mock.MagicMock()
         response.__enter__.return_value = response
@@ -40,30 +45,45 @@ class HeroReadbackRequestTests(unittest.TestCase):
     def test_get_identifies_the_same_first_party_verifier_as_deployment(self):
         url = "https://open.cait518.cc/ios-app-guide/en-US/tools/example.html"
         response = self.response(url)
-        with mock.patch.object(readback.urllib.request, "urlopen", return_value=response) as open_url:
+        client = mock.MagicMock()
+        client.getresponse.return_value = response
+        with mock.patch.object(readback.http.client, "HTTPSConnection", return_value=client) as connect:
             self.assertEqual(b"<html>exact</html>", readback.fetch(url))
-        request = open_url.call_args.args[0]
-        self.assertEqual("GET", request.get_method())
-        self.assertEqual("Lumi-Deployment-Generation/1", request.get_header("User-agent"))
-        self.assertEqual("no-cache", request.get_header("Cache-control"))
-        response.read.assert_called_once_with(2_000_001)
+            self.assertEqual(b"<html>exact</html>", readback.fetch(url))
+        connect.assert_called_once_with("open.cait518.cc", 443, timeout=20)
+        method, target = client.request.call_args.args
+        self.assertEqual("GET", method)
+        self.assertEqual("/ios-app-guide/en-US/tools/example.html", target)
+        headers = client.request.call_args.kwargs["headers"]
+        self.assertEqual("Lumi-Deployment-Generation/1", headers["User-Agent"])
+        self.assertEqual("no-cache", headers["Cache-Control"])
+        self.assertEqual(2, response.read.call_count)
 
     def test_forbidden_or_redirected_content_is_never_accepted(self):
         url = "https://open.cait518.cc/ios-app-guide/en-US/tools/example.html"
+        for status in (403, 302):
+            response = self.response(url)
+            response.status = status
+            client = mock.MagicMock()
+            client.getresponse.return_value = response
+            with self.subTest(status=status), mock.patch.object(readback.time, "sleep"), mock.patch.object(
+                readback.http.client, "HTTPSConnection", return_value=client,
+            ):
+                with self.assertRaises(RuntimeError):
+                    readback.fetch(url)
+            self.assertEqual(3, client.request.call_count)
+            response.read.assert_not_called()
+
+    def test_disconnected_keepalive_retries_a_fresh_connection(self):
+        url = "https://open.cait518.cc/ios-app-guide/en-US/tools/example.html"
+        client = mock.MagicMock()
+        client.getresponse.return_value = self.response(url)
+        client.request.side_effect = [readback.http.client.RemoteDisconnected("closed"), None]
         with mock.patch.object(readback.time, "sleep"), mock.patch.object(
-            readback.urllib.request, "urlopen",
-            side_effect=HTTPError(url, 403, "Forbidden", None, None),
-        ) as open_url:
-            with self.assertRaises(RuntimeError):
-                readback.fetch(url)
-            self.assertEqual(3, open_url.call_count)
-        response = self.response("https://example.com/redirect")
-        with mock.patch.object(readback.time, "sleep"), mock.patch.object(
-            readback.urllib.request, "urlopen", return_value=response,
-        ):
-            with self.assertRaises(RuntimeError):
-                readback.fetch(url)
-        response.read.assert_not_called()
+            readback.http.client, "HTTPSConnection", return_value=client,
+        ) as connect:
+            self.assertEqual(b"<html>exact</html>", readback.fetch(url))
+        self.assertEqual(2, connect.call_count)
 
 
 class HeroTaskTests(unittest.TestCase):

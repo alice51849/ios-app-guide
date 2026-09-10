@@ -26368,11 +26368,12 @@ class GeneratorTests(unittest.TestCase):
                 answers = localized / "answers"
                 answers.mkdir(parents=True)
                 (localized / f"{key}.html").write_text(
-                    "<head>"
+                    f'<html lang="{locale}"><head>'
                     f'<meta name="description" content="{locale} description">'
+                    f'<link rel="canonical" href="{gen_hubs.SITE}/{locale}/{key}.html">'
                     "</head><body>"
                     f"<h1>{locale} HoursTag</h1>"
-                    "</body>",
+                    "</body></html>",
                     encoding="utf-8",
                 )
                 (answers / f"{slug}.html").write_text(
@@ -26386,26 +26387,32 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             hubs = pages / "hubs"
+            fixture_apps = {
+                key: {
+                    "app_id": str(gen_hubs.APPSTORE[key]),
+                    "name": gen_hubs.APPS[key]["name"],
+                }
+            }
 
             with (
                 mock.patch.object(gen_hubs, "PAGES", str(pages)),
                 mock.patch.object(gen_hubs, "HUBS", str(hubs)),
                 mock.patch.object(gen_hubs, "OFFICIAL_LOCALES", locales),
-                mock.patch.object(
-                    gen_hubs,
-                    "live_app_keys",
-                    return_value={key},
+                mock.patch.dict(
+                    os.environ,
+                    {gen_hubs.PROVIDER_TOKEN_ENV: "118326163"},
+                    clear=False,
                 ),
                 mock.patch("builtins.print"),
             ):
-                gen_hubs.main()
+                gen_hubs._generate(fixture_apps, locales)
                 generated = [
                     hubs / f"{key}.html",
                     *(pages / locale / "hubs" / f"{key}.html" for locale in locales),
                     pages / "sitemap_hubs.xml",
                 ]
                 first = {path: path.read_bytes() for path in generated}
-                gen_hubs.main()
+                gen_hubs._generate(fixture_apps, locales)
 
             self.assertEqual(
                 first,

@@ -541,6 +541,8 @@ jobs:
             --root "$GITHUB_WORKSPACE" \
             --output "$attestation" \
             --suite geo-full-suite
+          python3 _engine/geo/check_hub_coverage.py \
+            --pages-dir "$GITHUB_WORKSPACE"
           python3 _engine/geo/parallel_unittest.py --jobs 3
           python3 _engine/geo/verified_tree.py seal \
             --root "$GITHUB_WORKSPACE" \

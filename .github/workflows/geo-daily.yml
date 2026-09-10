@@ -510,6 +510,7 @@ jobs:
           # indexable path + canonical URL set; convergence still runs.
           python3 dedupe_locale_meta.py --apply
           python3 live_app_guard.py --site-root pages
+          python3 alternatives_i18n.py --pages-dir "$GITHUB_WORKSPACE"
           python3 high_intent_decision_routes.py \
             --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
             --output-dir "$GITHUB_WORKSPACE" \
@@ -541,6 +542,8 @@ jobs:
             --root "$GITHUB_WORKSPACE" \
             --output "$attestation" \
             --suite geo-full-suite
+          python3 _engine/geo/check_hub_coverage.py \
+            --pages-dir "$GITHUB_WORKSPACE"
           python3 _engine/geo/parallel_unittest.py --jobs 3
           python3 _engine/geo/verified_tree.py seal \
             --root "$GITHUB_WORKSPACE" \
@@ -573,6 +576,7 @@ jobs:
                 cd _engine/geo
                 python3 dedupe_locale_meta.py --apply
                 python3 live_app_guard.py --site-root pages
+                python3 alternatives_i18n.py --pages-dir "$GITHUB_WORKSPACE"
                 python3 high_intent_decision_routes.py \
                   --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
                   --output-dir "$GITHUB_WORKSPACE" \

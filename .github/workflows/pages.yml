@@ -38,10 +38,29 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: _engine/geo/requirements-validation.txt
+      - name: Install canonical generator dependencies
+        run: python3 -m pip install --requirement _engine/geo/requirements-validation.txt
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
       - name: Refuse pages that still identify themselves on the Pages origin
         run: python3 _engine/geo/audit_public_host_html.py --site-root .
+      - name: Materialize and gate canonical discovery surfaces
+        env:
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
+          GEO_PAGES: ${{ github.workspace }}
+          APP_STORE_PROVIDER_TOKEN: "118326163"
+        run: |
+          set -euo pipefail
+          python3 _engine/geo/alternatives_i18n.py --pages-dir .
+          python3 _engine/geo/alternatives_i18n.py --pages-dir . --check
+          python3 _engine/geo/gen_hubs.py
+          python3 _engine/geo/check_hub_coverage.py --pages-dir .
+          python3 _engine/geo/gen_tool_email_capture.py
       - name: Prepare externally bound high-intent deployment
         env:
           # The route pages, manifest and deployment record this step writes are

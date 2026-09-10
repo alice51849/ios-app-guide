@@ -139,7 +139,8 @@ def is_store_url(value: str) -> bool:
 
 
 def identity_field(field: str, parent: dict | None = None) -> bool:
-    field = field.casefold()
+    # Croissant example records qualify columns as "recordSet/field".
+    field = field.rsplit("/", 1)[-1].casefold()
     return field in IDENTITY_FIELDS or field.startswith("canonical")
 
 

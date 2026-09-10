@@ -8,7 +8,7 @@
 
 誠實鐵則(寫死在程式裡,不可設定):
   * 沒有預設勾選的同意框(整個表單就只有一個 email 欄位 + 一顆按鈕)。
-  * 旁邊直接寫清楚用途、不會轉給第三方、可一鍵取消。
+  * 直接揭露只寄新工具通知、Buttondown 代處理訂閱、可一鍵取消。
   * 不用「輸入 email 才能下載」這種誘餌 — 工具本來就是免費直接用。
 
 停用時(`enabled:false` 或 `endpoint` 空白)會把先前注入的區塊**移除**,
@@ -28,7 +28,7 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PAGES = os.path.join(HERE, "pages")
+PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 CONFIG = os.path.join(HERE, "tool_email_capture.json")
 MARKER = "tool-email-capture"
 BLOCK_RE = re.compile(
@@ -81,7 +81,7 @@ def _block(config, lang):
         f'target="_blank" style="display:flex;gap:8px;flex-wrap:wrap">'
         f'<label for="tec-email" class="visually-hidden" '
         f'style="position:absolute;left:-9999px">'
-        f'{html.escape(text.get("placeholder", "email"))}</label>'
+        f'{html.escape(text.get("email_label", "Email"))}</label>'
         f'<input id="tec-email" type="email" required '
         f'name="{html.escape(config.get("email_field", "email"))}" '
         f'placeholder="{html.escape(text.get("placeholder", ""))}" '
@@ -111,6 +111,18 @@ def _tool_pages():
     )
 
 
+def apply_capture(page, config):
+    stripped = BLOCK_RE.sub("", page)
+    if not config.get("enabled") or not config.get("endpoint"):
+        return stripped
+    match = LANG_RE.search(page)
+    block = _block(config, match.group(1) if match else "en-US")
+    for closing in ("</main>", "</body>"):
+        if closing in stripped:
+            return stripped.replace(closing, block + closing, 1)
+    return page
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry", action="store_true")
@@ -124,20 +136,9 @@ def main():
     for path in pages:
         with open(path, encoding="utf-8") as handle:
             page = handle.read()
-        stripped = BLOCK_RE.sub("", page)          # 先移除舊區塊 = 冪等
-        if active:
-            match = LANG_RE.search(page)
-            block = _block(config, match.group(1) if match else "en-US")
-            if "</main>" in stripped:
-                updated = stripped.replace("</main>", block + "</main>", 1)
-            elif "</body>" in stripped:
-                updated = stripped.replace("</body>", block + "</body>", 1)
-            else:
-                continue
-        else:
-            updated = stripped
-            if updated != page:
-                removed += 1
+        updated = apply_capture(page, config)
+        if not active and updated != page:
+            removed += 1
         if updated != page:
             changed += 1
             if not args.dry:

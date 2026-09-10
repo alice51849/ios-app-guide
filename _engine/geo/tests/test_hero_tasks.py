@@ -110,6 +110,26 @@ class HeroTaskTests(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(self.folder)
 
+    def test_buttondown_is_localized_idempotent_and_bound_before_output_hashes(self):
+        config = hero.email_capture._load_config()
+        self.assertTrue(config["enabled"])
+        manifest, outputs = hero.plan(self.pages, **self.options)
+        for row in manifest["records"]:
+            source = outputs[row["path"]].decode()
+            blocks = hero.email_capture.BLOCK_RE.findall(source)
+            self.assertEqual([hero.email_capture._block(config, row["locale"])], blocks)
+            self.assertEqual(source, hero.email_capture.apply_capture(source, config))
+            self.assertEqual(hero.digest(outputs[row["path"]]), manifest["outputs"][row["path"]])
+            label = re.search(r"<label\b[^>]*>(.*?)</label>", blocks[0]).group(1)
+            self.assertNotIn("@", label)
+            self.assertIn('name="email"', blocks[0])
+            self.assertIn('name="embed" value="1"', blocks[0])
+        with mock.patch.object(hero.email_capture, "_load_config", return_value={**config, "enabled": False}):
+            disabled, disabled_outputs = hero.plan(self.pages, **self.options)
+        self.assertNotEqual(manifest["content_digest"], disabled["content_digest"])
+        for row in disabled["records"]:
+            self.assertNotIn(b"tool-email-capture", disabled_outputs[row["path"]])
+
     def write(self, relative, payload):
         target = self.pages / relative
         target.parent.mkdir(parents=True, exist_ok=True)

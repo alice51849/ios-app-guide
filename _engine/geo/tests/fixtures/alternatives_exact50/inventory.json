@@ -1,0 +1,55 @@
+{
+  "record_count": 1,
+  "apps": [
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "name": "ScanTo Pro",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "The scanner that does everything on your device — including reading the text — and proves it by never going online.",
+        "zh-Hant": "一款連「讀文件裡的字」都在你手機上完成、而且永不連網的掃描器。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次性解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "No subscription",
+        "On-device"
+      ],
+      "keywords": [
+        "pdf scanner",
+        "document scanner",
+        "scan to pdf",
+        "ocr app",
+        "scan documents",
+        "paperless",
+        "iphone tips"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "verified_live": true,
+      "app_store_url": "https://apps.apple.com/app/id6779977651?pt=118326163&ct=geo_learn&mt=8",
+      "verified_at": "2026-09-06T16:42:17.234896+00:00",
+      "metadata_status": "verified",
+      "availability_status": "verified",
+      "availability_issues": []
+    }
+  ]
+}

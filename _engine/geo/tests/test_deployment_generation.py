@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 import hashlib
 from http.client import IncompleteRead
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -43,6 +44,74 @@ def _git(root: Path, *args: str) -> None:
 def _commit(root: Path) -> None:
     _git(root, "add", "-A")
     _git(root, "commit", "--quiet", "-m", "固定測試來源")
+
+
+class ExactEdgeRepresentationTests(unittest.TestCase):
+    SOURCE = b"<!doctype html>\n<body><main>Exact source</main>\n</body>\n</html>\n"
+    PATH = "en-US/decide/test/route.html"
+
+    def check(self, body, *, site=generation.EDGE_SITE, relative=PATH):
+        return generation.verify_output_bytes(
+            body, site=site, relative=relative,
+            expected_sha256=hashlib.sha256(self.SOURCE).hexdigest(),
+        )
+
+    def edge_body(self, tag=generation.EDGE_BEACON):
+        return self.SOURCE.replace(b"</body>", tag + b"\n</body>")
+
+    def test_raw_bytes_remain_the_default_contract(self):
+        self.assertNotIn("edge_transform", self.check(self.SOURCE))
+
+    def test_only_pinned_beacon_records_both_response_and_application_hashes(self):
+        body = self.edge_body()
+        check = self.check(body)
+        self.assertEqual(generation.EDGE_TRANSFORM, check["edge_transform"])
+        self.assertEqual(hashlib.sha256(body).hexdigest(), check["response_sha256"])
+        self.assertEqual(hashlib.sha256(self.SOURCE).hexdigest(), check["sha256"])
+
+    def test_unknown_hosts_and_non_html_never_accept_the_transform(self):
+        for kwargs in (
+            {"site": "https://alice51849.github.io/ios-app-guide"},
+            {"site": generation.EDGE_SITE + ".evil.test"},
+            {"relative": "data/catalog.json"},
+        ):
+            with self.subTest(kwargs=kwargs), self.assertRaises(generation.GenerationError):
+                self.check(self.edge_body(), **kwargs)
+
+    def test_unknown_beacons_and_arbitrary_html_changes_fail_closed(self):
+        bodies = (
+            self.edge_body().replace(b"Exact source", b"Altered source"),
+            self.edge_body(generation.EDGE_BEACON.replace(b'"spa":2', b'"spa":3')),
+            self.edge_body(generation.EDGE_BEACON.replace(b"module", b"text/javascript")),
+            self.edge_body().replace(b"</main>", b"</main><script>alert(1)</script>"),
+            self.edge_body(generation.EDGE_BEACON + b"\n" + generation.EDGE_BEACON),
+            self.edge_body().replace(b"</body>\n</html>\n", b"</body></html>\n"),
+        )
+        for body in bodies:
+            with self.subTest(body=hashlib.sha256(body).hexdigest()):
+                with self.assertRaises(generation.GenerationError):
+                    self.check(body)
+
+
+class PagesPublicationBoundaryTests(unittest.TestCase):
+    def test_discovery_and_subscriptions_are_closed_before_deployment_sealing(self):
+        default = GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"
+        guide = Path(os.environ.get("ALTERNATIVES_GUIDE_REPOSITORY")
+                     or os.environ.get("GEO_PAGES") or default)
+        source = (guide / ".github/workflows/pages.yml").read_text()
+        materialize = source.index("name: Materialize and gate canonical discovery surfaces")
+        dependencies = source.index("python3 -m pip install --requirement _engine/geo/requirements-validation.txt")
+        seal = source.index("name: Prepare externally bound high-intent deployment")
+        hero = source.index("name: Require complete local-only hero results before upload")
+        upload = source.index("name: Upload artifact")
+        self.assertLess(materialize, seal)
+        self.assertLess(dependencies, materialize)
+        self.assertIn("actions/setup-python@v6", source[:dependencies])
+        self.assertLess(seal, hero)
+        self.assertLess(hero, upload)
+        self.assertIn("python3 _engine/geo/alternatives_i18n.py --pages-dir . --check", source[materialize:seal])
+        self.assertIn("python3 _engine/geo/check_hub_coverage.py --pages-dir .", source[materialize:seal])
+        self.assertIn("python3 _engine/geo/gen_tool_email_capture.py", source[materialize:seal])
 
 
 class DeploymentGenerationTests(unittest.TestCase):
@@ -501,6 +570,7 @@ class DeploymentWorkflowGenerationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         pages = GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"
+        pages = Path(os.environ.get("GEO_PAGES") or pages)
         cls.workflow = (pages / ".github/workflows/pages.yml").read_text(encoding="utf-8")
 
     def test_prepare_pins_both_sources_and_the_exact_workflow_attempt(self):

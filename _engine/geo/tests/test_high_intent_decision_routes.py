@@ -1246,6 +1246,9 @@ class HighIntentManagedOutputTests(unittest.TestCase):
                 routes.gen_store_attribution.PROVIDER_TOKEN_ENV:
                     TEST_PROVIDER_TOKEN
             },
+        ), mock.patch(
+            "live_app_guard.live_apps",
+            return_value={"fixture": "1234567890"},
         ):
             stamped = routes.gen_store_attribution.generate(
                 self.pages,

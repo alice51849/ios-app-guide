@@ -45,6 +45,13 @@ CONTRACT_FIELDS = {
 }
 VERIFIED = {"VERIFIED_PUBLIC_ASSET", "VERIFIED_SHIPPING_DESCRIPTION"}
 UNKNOWN = "unknown"
+QUERY_EVIDENCE = {
+    "status": "candidate",
+    "verification_status": "unverified",
+    "search_volume": UNKNOWN,
+    "ranking": UNKNOWN,
+    "published_source": UNKNOWN,
+}
 UI = {
     "en-US": {
         "free": "Free to start", "paid": "One-time purchase",
@@ -237,7 +244,8 @@ def validate(
                 raise ValueError(f"{key}: shipping description must name the same stable App")
         else:
             raise ValueError(f"{key}: unsupported proof status")
-    if (set(claims) | set(free) | set(paid)) - supported or set(claims) & blocked:
+    declared = set(claims) | set(free) | set(paid)
+    if declared - supported or declared & blocked:
         raise ValueError(f"{key}: BLOCKED_EVIDENCE claims cannot be published")
     for locale, copy in contract["localized"].items():
         if locale not in UI or not isinstance(copy, dict) or set(copy) != COPY_FIELDS:
@@ -317,6 +325,7 @@ def materialize(contract: dict[str, Any], record: dict[str, Any]) -> dict[str, A
         "paid_scope_status": contract["paid_scope_status"],
         "exclude_intents": list(contract["exclude_intents"]),
         "published_claim_ids": list(contract["published_claim_ids"]),
+        "query_evidence": deepcopy(QUERY_EVIDENCE),
         "proofs": proof_rows,
         "localized_visual_status": "VERIFIED_PUBLIC_ASSET" if has_native_asset else "BLOCKED_EVIDENCE",
         "copy": deepcopy(contract["localized"][locale]),
@@ -410,13 +419,20 @@ def render_schema() -> str:
         "offer_readback": {"type": "object"},
         "exclude_intents": {"type": "array", "minItems": 3, "items": {"type": "string"}},
         "proofs": {"type": "array", "minItems": 1},
+        "query_evidence": {"type": "object", "const": deepcopy(QUERY_EVIDENCE)},
         "copy": {
             "type": "object", "required": sorted(COPY_FIELDS),
             "additionalProperties": False,
             "properties": {
                 **{key: {"type": "string", "minLength": 1} for key in COPY_FIELDS - {"limitations", "asset_captions", "queries"}},
                 "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-                "queries": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+                "queries": {
+                    "type": "array", "minItems": 1, "items": {"type": "string"},
+                    "description": (
+                        "Unverified candidate task search phrases, not published catalog "
+                        "keywords or evidence of search volume, rankings or published sources."
+                    ),
+                },
                 "asset_captions": {"type": "object", "additionalProperties": {"type": "string"}},
             },
         },

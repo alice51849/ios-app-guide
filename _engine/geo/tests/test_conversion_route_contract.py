@@ -1,6 +1,7 @@
 """Targeted contract and actual HTTP GET tests; no App/ASC writes or live posting."""
 
 from copy import deepcopy
+import html
 from html.parser import HTMLParser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -152,11 +153,18 @@ class ConversionRouteContractTests(unittest.TestCase):
 
     def test_blocked_proofs_cannot_support_published_claims(self):
         for key in ("lumibopomofo", "scanto", "aim990", "lumiweather", "battai", "notesstudio100", "onepageppt"):
-            changed = deepcopy(self.contracts)
-            blocked = next(p for p in changed[key]["proofs"] if p["status"] == "BLOCKED_EVIDENCE")
-            changed[key]["published_claim_ids"].append(blocked["claim_ids"][0])
-            with self.subTest(key=key), self.assertRaisesRegex(ValueError, "BLOCKED_EVIDENCE"):
-                self.validate(key, changed)
+            for field in ("published_claim_ids", "free_feature_ids", "paid_feature_ids"):
+                for also_supported in (False, True):
+                    with self.subTest(key=key, field=field, also_supported=also_supported):
+                        changed = deepcopy(self.contracts)
+                        blocked = next(p for p in changed[key]["proofs"] if p["status"] == "BLOCKED_EVIDENCE")
+                        claim = blocked["claim_ids"][0]
+                        if also_supported:
+                            supported = next(p for p in changed[key]["proofs"] if p["status"] in conversion.VERIFIED)
+                            supported["claim_ids"].append(claim)
+                        changed[key][field].append(claim)
+                        with self.assertRaisesRegex(ValueError, "BLOCKED_EVIDENCE"):
+                            self.validate(key, changed)
 
     def test_unapproved_asset_host_and_unbound_thumbnail_are_rejected(self):
         changed = deepcopy(self.contracts)
@@ -263,13 +271,62 @@ class ConversionRouteContractTests(unittest.TestCase):
             {p["id"] for p in self.contracts["battai"]["proofs"] if p["asset"]},
         )
 
+    def test_candidate_queries_do_not_replace_published_catalog_vocabulary(self):
+        headings = {
+            "en-US": "Task search phrases under testing",
+            "zh-Hant": "正在測試的任務搜尋語句",
+            "fr-FR": "Requêtes liées à ces tâches en cours de test",
+            "ja": "検証中のタスク検索フレーズ",
+        }
+        for row in self.converted:
+            with self.subTest(route=row["route_id"]):
+                raw = self.raw_routes[row["app_key"]]
+                keywords = [
+                    self.apps[row["app_key"]]["keywords"][index]
+                    for index in raw["keyword_refs"]
+                ] if row["locale"] == "en-US" else []
+                self.assertEqual(keywords, row["source_vocabulary"])
+                text = self.html[row["route_id"]]
+                published_heading = f"<h2>{html.escape(routes.UI[row['locale']]['vocabulary'])}</h2>"
+                if keywords:
+                    published = re.search(re.escape(published_heading) + r"\s*<ul>(.*?)</ul>", text, re.S)
+                    self.assertIsNotNone(published)
+                    self.assertEqual(keywords, Page(published.group(1)).visible)
+                else:
+                    self.assertNotIn(published_heading, text)
+                candidate = re.search(
+                    r'<section[^>]*data-query-status="candidate"[^>]*data-query-verification="unverified"[^>]*>(.*?)</section>',
+                    text, re.S,
+                )
+                self.assertIsNotNone(candidate)
+                self.assertIn(f"<h2>{html.escape(headings[row['locale']])}</h2>", candidate.group(1))
+                queries = re.search(r"<ul>(.*?)</ul>", candidate.group(1), re.S)
+                self.assertIsNotNone(queries)
+                self.assertEqual(
+                    row["conversion_contract"]["copy"]["queries"],
+                    Page(queries.group(1)).visible,
+                )
+
     def test_schema_and_public_observation_artifact(self):
         data = json.loads(conversion.render_document(self.records, routes.SITE))
         schema = json.loads(conversion.render_schema())
         self.assertEqual(18, len(data["routes"]))
         required = schema["properties"]["routes"]["items"]["required"]
+        query_evidence = {
+            "status": "candidate",
+            "verification_status": "unverified",
+            "search_volume": "unknown",
+            "ranking": "unknown",
+            "published_source": "unknown",
+        }
+        self.assertIn("query_evidence", required)
+        self.assertEqual(
+            query_evidence,
+            schema["properties"]["routes"]["items"]["properties"]["query_evidence"]["const"],
+        )
         for row in data["routes"]:
             self.assertTrue(set(required) <= set(row))
+            self.assertEqual(query_evidence, row["query_evidence"])
         self.assertTrue(data["measurement_policy"]["unknown_is_not_zero"])
         self.assertFalse(data["measurement_policy"]["automatic_scale"])
         self.assertEqual("generated_not_deployed", data["state"])

@@ -1897,6 +1897,11 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
         )
 
     def test_localized_feature_evidence_never_falls_back_to_english(self) -> None:
+        for locale, ui in routes.UI.items():
+            if locale != "en-US":
+                for label in ui["feature_labels"].values():
+                    with self.subTest(locale=locale, label=label):
+                        routes._validate_native_text(locale, label)
         localized_features = [
             (record["locale"], evidence)
             for record in self.records
@@ -1919,10 +1924,64 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
                 str(evidence["source_value"]).casefold(),
                 str(evidence["text"]).casefold(),
             )
-            self.assertEqual(
-                routes.UI[locale]["feature_labels"][evidence["source_value"]],
-                evidence["text"],
+            routes._validate_native_text(locale, evidence["text"])
+        for record in self.records:
+            for evidence in record["evidence"]:
+                with self.subTest(route=record["route_id"], reference=evidence["reference"]):
+                    routes._validate_native_text(record["locale"], evidence["text"])
+
+    def test_native_text_validator_rejects_english_fallback(self) -> None:
+        native = {
+            "en-US": "Free to start",
+            "zh-Hant": "可免費開始使用",
+            "ja": "無料で始められます",
+            "fr-FR": "Vous pouvez commencer gratuitement",
+        }
+        for locale, text in native.items():
+            with self.subTest(locale=locale):
+                routes._validate_native_text(locale, text)
+                if locale != "en-US":
+                    with self.assertRaisesRegex(ValueError, "not substantively native"):
+                        routes._validate_native_text(locale, "Start with free access")
+
+    def test_english_feature_labels_fail_closed_in_source_validator(self) -> None:
+        fallbacks = {
+            "Free to start": "Start with free access",
+            "One-time unlock": "Unlock with a single payment",
+            "No subscription": "No recurring payment plan",
+        }
+        for locale in ("zh-Hant", "ja", "fr-FR"):
+            for label, fallback in fallbacks.items():
+                with self.subTest(locale=locale, label=label):
+                    with mock.patch.dict(routes.UI[locale]["feature_labels"], {label: fallback}):
+                        with self.assertRaisesRegex(ValueError, "not substantively native"):
+                            routes._validate_source_binding(
+                                self.source, self.apps, allow_new_live_apps=True,
+                            )
+
+    def test_localized_evidence_english_fallback_fails_closed(self) -> None:
+        fallback = "Start with free access"
+        for locale, key in (("zh-Hant", "lumibopomofo"), ("ja", "lumiweather"), ("fr-FR", "aim990")):
+            app = deepcopy(self.apps[key])
+            summary = routes.LOCALE_LANGUAGE[locale]
+            app["summaries"][summary] = "A useful published description of the app."
+            with self.subTest(locale=locale, reference="summary"):
+                with self.assertRaisesRegex(ValueError, "not substantively native"):
+                    routes._evidence(app, locale, f"summary.{summary}")
+            feature = len(app["features"])
+            app["features"].append("Free to start")
+            app["capabilities"]["offline"] = True
+            mutations = (
+                (f"feature.{feature}", routes.UI[locale]["feature_labels"], app["features"][feature]),
+                ("fact.purchase_model", routes.UI[locale]["purchase_model"], app["purchase_model"]),
+                ("fact.one_time_option", routes.UI[locale], "one_time_option"),
+                ("capability.offline", routes.UI[locale]["capabilities"], "offline"),
             )
+            for reference, labels, label in mutations:
+                with self.subTest(locale=locale, reference=reference):
+                    with mock.patch.dict(labels, {label: fallback}):
+                        with self.assertRaisesRegex(ValueError, "not substantively native"):
+                            routes._evidence(app, locale, reference)
 
     def test_routes_are_substantive_and_editorially_distinct(self) -> None:
         self.assertGreaterEqual(

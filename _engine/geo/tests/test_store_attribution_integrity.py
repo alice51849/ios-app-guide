@@ -83,6 +83,32 @@ class AttributionIntegrityTests(unittest.TestCase):
             source, relative, provider=PROVIDER, availability=AVAILABILITY, **kwargs
         )
 
+    def test_croissant_qualified_identity_stays_clean_but_cta_is_required(self):
+        canonical = f"https://apps.apple.com/app/id{APP_ID}"
+        example = {
+            "publisher_intents/canonical_app_store_url": canonical,
+            "publisher_intents/app_store_url": store_url(),
+        }
+        payload = {"recordSet": [{"examples": [example]}]}
+        relative = "data/publisher.croissant.jsonld"
+        self.audit(json.dumps(payload), relative)
+        example["publisher_intents/app_store_url"] = canonical
+        with self.assertRaises(ValueError):
+            self.audit(json.dumps(payload), relative)
+        example["publisher_intents/app_store_url"] = store_url()
+        example["publisher_intents/canonical_app_store_url"] = store_url()
+        with self.assertRaises(ValueError):
+            self.audit(json.dumps(payload), relative)
+
+    def test_zhuyin_dataset_related_app_has_real_campaign_attribution(self):
+        import gen_data_hub
+
+        payload = gen_data_hub.zhuyin_json()
+        query = urllib.parse.parse_qs(urllib.parse.urlsplit(payload["relatedApp"]).query)
+        self.assertEqual([PROVIDER], query["pt"])
+        self.assertEqual(["geo_pick"], query["ct"])
+        self.audit(json.dumps(payload), "data/zhuyin-bopomofo.json")
+
     def test_full_live_roster_50_locales_across_all_text_delivery_formats(self):
         import portfolio_app_catalog_api as api
         import gen_github_discovery_readmes as discovery

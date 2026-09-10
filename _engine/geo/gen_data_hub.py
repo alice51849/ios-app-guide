@@ -26,6 +26,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
+from app_store_storefronts import required_campaign_app_store_url
 from family_travel_dataset import build as build_family_travel_dataset
 from official_locales import OFFICIAL_LOCALES
 from publisher_intent_catalog import (
@@ -186,7 +187,7 @@ def zhuyin_json():
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "creator": "Lumi Apps",
         "isBasedOn": "https://en.wikipedia.org/wiki/Bopomofo",
-        "relatedApp": BOPOMOFO_APP,
+        "relatedApp": required_campaign_app_store_url(BOPOMOFO_APP, "geo_pick"),
         "dateModified": TODAY,
         "counts": {"initials": 21, "medials": 3, "finals": 13, "total": 37},
         "symbols": recs,

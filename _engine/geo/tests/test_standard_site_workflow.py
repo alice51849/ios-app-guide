@@ -118,7 +118,9 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 "best-private-app-to-organize-screenshots-and-documents-"
                 "into-context-before-using-ai.html",
                 "/answers/best-organize-context-for-ai-app.html",
-                "/answers/best-turn-screenshots-into-ai-brief-app.html",
+                "/answers/"
+                "app-to-prepare-context-for-ai-prompts-from-screenshots-and-"
+                "documents.html",
             },
             {document["path"] for document in documents},
         )
@@ -153,8 +155,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 "travel-expense-tracker-with-saved-or-manual-exchange-rates-"
                 "offline.html",
                 "/answers/"
-                "travel-budget-app-with-category-statistics-and-one-time-"
-                "lifetime-unlock.html",
+                "budget-app-for-going-abroad-that-works-offline-with-saved-"
+                "rates.html",
             },
             {document["path"] for document in documents},
         )
@@ -163,7 +165,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         ).casefold()
         self.assertIn("one trip and up to three saved expenses", combined)
         self.assertIn("saved or manually set exchange rate", combined)
-        self.assertIn("category statistics remain available", combined)
+        self.assertIn("category statistics are free", combined)
         self.assertIn("one optional purchase", combined)
         self.assertIn("publisher disclosure:", combined)
 
@@ -186,12 +188,10 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 "/answers/"
                 "best-on-device-file-redaction-app-for-freelancers-sharing-"
                 "client-documents.html",
+                "/answers/app-to-black-out-text-in-a-pdf-on-iphone.html",
                 "/answers/"
-                "how-to-permanently-redact-a-pdf-on-iphone-and-verify-the-"
-                "protected-copy.html",
-                "/answers/"
-                "batch-redact-the-same-private-text-from-up-to-100-files-on-"
-                "iphone.html",
+                "app-to-blur-out-personal-data-in-screenshots-before-sharing."
+                "html",
             },
             {document["path"] for document in documents},
         )

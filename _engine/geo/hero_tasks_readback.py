@@ -11,6 +11,8 @@ import time
 from urllib.parse import urlsplit
 import urllib.request
 
+from deployment_generation import GenerationError, verify_output_bytes
+
 
 def fetch(url: str) -> bytes:
     error = None
@@ -18,6 +20,8 @@ def fetch(url: str) -> bytes:
         try:
             request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
             with urllib.request.urlopen(request, timeout=20) as response:
+                if response.status != 200 or response.geturl() != url:
+                    raise ValueError("Published artifact HTTP status or endpoint differs")
                 accepted = {
                     ".html": {"text/html"}, ".js": {"text/javascript", "application/javascript"},
                     ".css": {"text/css"}, ".csv": {"text/csv", "application/octet-stream"},
@@ -55,14 +59,21 @@ def verify(manifest_path: Path, base_url: str, *, fetcher=fetch) -> dict:
 
     def check(item):
         relative, expected = item
-        actual = hashlib.sha256(fetcher(f"{base_url}/{relative}")).hexdigest()
-        if actual != expected:
-            raise ValueError(f"Published artifact digest mismatch: {relative}")
-        return relative
+        try:
+            return verify_output_bytes(
+                fetcher(f"{base_url}/{relative}"),
+                site=base_url, relative=relative, expected_sha256=expected,
+            )
+        except GenerationError as error:
+            raise ValueError(f"Published artifact digest mismatch: {relative}") from error
 
     with ThreadPoolExecutor(max_workers=4) as pool:
         verified = list(pool.map(check, sorted(outputs.items())))
-    return {"verified_artifacts": len(verified), "locales": 50, "content_digest": manifest["content_digest"]}
+    return {
+        "verified_artifacts": len(verified), "locales": 50,
+        "content_digest": manifest["content_digest"],
+        "pinned_edge_transform_count": sum("edge_transform" in row for row in verified),
+    }
 
 
 def main() -> None:

@@ -16,6 +16,7 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 from app_store_storefronts import campaign_app_store_url
+import gen_tool_email_capture as email_capture
 from hero_task_html import (
     generated_index, insert_resource, require_retirable_index,
     useful_navigation, without_resource,
@@ -2286,6 +2287,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         raise ValueError("Invalid build date")
     tasks, copy = load_registry(registry), load_i18n(i18n)
     task_copies = load_task_i18n(i18n)
+    capture_config = email_capture._load_config()
     inventory, apps = catalogs(pages, tasks, site, provider)
     previous_path = safe_path(pages, MANIFEST)
     previous = json.loads(previous_path.read_text()) if previous_path.is_file() else {}
@@ -2304,9 +2306,11 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
         "sources": {
             str(path.name): digest(path.read_bytes())
             for path in (Path(__file__), registry, i18n, *ASSET_FILES,
-                         HERE / "hero_task_html.py", HERE / "sync_standard_site.py")
+                         HERE / "hero_task_html.py", HERE / "sync_standard_site.py",
+                         HERE / "gen_tool_email_capture.py")
         },
         "inventory": sorted(inventory), "bindings": list(apps.values()),
+        "email_capture": capture_config,
         "site": site, "provider": provider, "navigation": navigation, "retired_indexes": retired,
     }).encode())
     modified = today
@@ -2332,6 +2336,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
             existing_path = safe_path(pages, relative)
             existing = existing_path.read_text(encoding="utf-8") if existing_path.is_file() else ""
             page = preserve_managed_links(existing, page, label=relative)
+            page = email_capture.apply_capture(page, capture_config)
             outputs[relative] = page.encode()
             csv_path = example_path(task, locale)
             outputs[csv_path] = sample["csv"].encode()

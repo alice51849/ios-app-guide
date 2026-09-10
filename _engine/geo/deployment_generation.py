@@ -30,6 +30,18 @@ DEPLOYMENT_PATH = ".well-known/deployment.json"
 MANIFEST_PATH = "data/high-intent-decision-routes/expected-output-manifest.json"
 CATALOG_PATH = "data/verified-ios-app-finder-catalog.json"
 MAX_BYTES = 16 * 1024 * 1024
+EDGE_SITE = "https://open.cait518.cc/ios-app-guide"
+# Cloudflare appends this public, integrity-pinned analytics tag after upload.
+# Only this exact suffix is reversible; all application bytes still match SHA-256.
+EDGE_BEACON = (
+    b'<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/'
+    b'v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" '
+    b'integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" '
+    b'data-cf-beacon=\'{"version":"2024.11.0","token":"34d707e33e364ac582d0cb00e4243bc0",'
+    b'"r":1,"spa":2}\' crossorigin="anonymous"></script>'
+)
+EDGE_TRANSFORM = "cloudflare-beacon-sha256:" + hashlib.sha256(EDGE_BEACON).hexdigest()
+EDGE_READBACK_METHOD = "https_get_exact_source_bytes_with_pinned_edge_beacon"
 SOURCE_FIELDS = {
     "source_sha", "source_tree", "generator_digest", "dependency_lock_digest",
 }
@@ -391,7 +403,9 @@ def validate_receipt(
     if (
         receipt.get("schema_version") != VERSION
         or receipt.get("status") != "verified"
-        or receipt.get("observation_method") != "https_get_exact_bytes"
+        or receipt.get("observation_method") not in {
+            "https_get_exact_bytes", EDGE_READBACK_METHOD,
+        }
         or receipt.get("receipt_digest") != digest({
             key: value for key, value in receipt.items() if key != "receipt_digest"
         })
@@ -399,6 +413,7 @@ def validate_receipt(
         or not receipt["observations"]
     ):
         raise GenerationError("invalid live readback receipt")
+    edge_checks = False
     for observation in receipt["observations"]:
         if (
             not isinstance(observation, dict)
@@ -410,6 +425,21 @@ def validate_receipt(
                    or row.get("method") != "GET" for row in observation["checks"])
         ):
             raise GenerationError("live observations mix generations or lack exact GETs")
+        for row in observation["checks"]:
+            if "edge_transform" not in row:
+                if "response_sha256" in row:
+                    raise GenerationError("undeclared edge representation")
+                continue
+            edge_checks = True
+            if (
+                observation.get("site") != EDGE_SITE
+                or not str(row.get("path", "")).endswith(".html")
+                or row["edge_transform"] != EDGE_TRANSFORM
+                or re.fullmatch(r"[0-9a-f]{64}", str(row.get("response_sha256", ""))) is None
+            ):
+                raise GenerationError("unrecognized edge representation")
+    if edge_checks != (receipt["observation_method"] == EDGE_READBACK_METHOD):
+        raise GenerationError("readback method hides its edge representation")
     if source_root is not None:
         validate_current_source(generation, source_root)
     return generation
@@ -481,6 +511,27 @@ def get_bytes(url: str, *, timeout: int, maximum: int) -> tuple[bytes, str, int]
     return result
 
 
+def verify_output_bytes(
+    body: bytes, *, site: str, relative: str, expected_sha256: str,
+) -> dict[str, Any]:
+    check = {
+        "path": relative, "sha256": expected_sha256, "http_status": 200, "method": "GET",
+    }
+    actual = hashlib.sha256(body).hexdigest()
+    if actual == expected_sha256:
+        return check
+    inserted = EDGE_BEACON + b"\n"
+    position = body.rfind(inserted + b"</body>")
+    if (
+        site == EDGE_SITE and relative.endswith(".html")
+        and position >= 0 and body.count(EDGE_BEACON) == 1
+    ):
+        application = body[:position] + body[position + len(inserted):]
+        if hashlib.sha256(application).hexdigest() == expected_sha256:
+            return {**check, "response_sha256": actual, "edge_transform": EDGE_TRANSFORM}
+    raise GenerationError(f"live output digest drift: {relative}")
+
+
 def live_readback(
     deployment: dict[str, Any], *, sites: list[str], now: datetime,
     timeout: int = 20, fetch: Callable[..., tuple[bytes, str, int]] = get_bytes,
@@ -531,10 +582,9 @@ def live_readback(
         checks = []
         for row in [*outputs, {"path": CATALOG_PATH, "sha256": generation["catalog_digest"]}]:
             body = read(site, row["path"], "output")
-            actual = hashlib.sha256(body).hexdigest()
-            if actual != row["sha256"]:
-                raise GenerationError(f"live output digest drift: {row['path']}")
-            checks.append({**row, "http_status": 200, "method": "GET"})
+            checks.append(verify_output_bytes(
+                body, site=site, relative=row["path"], expected_sha256=row["sha256"],
+            ))
         observations.append({
             "site": site.rstrip("/"), "generation_id": generation["generation_id"],
             "observed_at": observed_at, "checks": checks,
@@ -561,7 +611,12 @@ def live_readback(
         "engine_source_revision": deployment["engine_source_revision"],
         "route_manifest_digest": deployment["route_manifest_digest"],
         "deployment_id": deployment["deployment_id"],
-        "observation_method": "https_get_exact_bytes",
+        "observation_method": (
+            EDGE_READBACK_METHOD
+            if any("edge_transform" in check for observation in observations
+                   for check in observation["checks"])
+            else "https_get_exact_bytes"
+        ),
         "observations": observations,
     }
     receipt["receipt_digest"] = digest(receipt)

@@ -6,12 +6,16 @@
 純本機、無 OpenAI、無 App/App Store 變更。輸出 geo/pages/hubs/<key>.html + sitemap_hubs.xml。
 """
 import html
+import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
-import time
+import tempfile
+from datetime import date, datetime, timezone
 from pathlib import Path
+from xml.etree import ElementTree
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -19,12 +23,20 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 sys.path.insert(0, HERE)
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
+    PROVIDER_TOKEN_ENV,
+    PROVIDER_TOKEN_RE,
     campaign_app_store_url,
     load_storefront_availability,
+    resolve_provider_token,
     verified_app_store_url,
 )
-from appstore_live import live_app_keys  # noqa: E402
-from official_locales import OFFICIAL_LOCALES, open_graph_locale  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402,F401 - legacy test API only
+from live_app_manifest import canonical_manifest  # noqa: E402
+from official_locales import (  # noqa: E402
+    OFFICIAL_LOCALES,
+    OFFICIAL_LOCALE_SET,
+    open_graph_locale,
+)
 from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
 import gen_store_attribution  # noqa: E402
@@ -48,6 +60,21 @@ HREF_ATTR_RE = re.compile(
     r'\bhref\s*=\s*(?P<quote>["\'])(?P<value>.*?)(?P=quote)',
     re.IGNORECASE | re.DOTALL,
 )
+HTML_LANG_RE = re.compile(
+    r'<html\b[^>]*\blang\s*=\s*(?P<quote>["\'])(?P<value>.*?)(?P=quote)',
+    re.IGNORECASE | re.DOTALL,
+)
+LINK_TAG_RE = re.compile(r"<link\b(?P<attrs>[^>]*)>", re.IGNORECASE | re.DOTALL)
+REL_ATTR_RE = re.compile(
+    r'\brel\s*=\s*(?P<quote>["\'])(?P<value>.*?)(?P=quote)',
+    re.IGNORECASE | re.DOTALL,
+)
+SOURCE_DIGEST_META = "iag-hub-source-sha256"
+SOURCE_DIGEST_RE = re.compile(
+    rf'<meta name="{SOURCE_DIGEST_META}" content="(?P<digest>[0-9a-f]{{64}})">\n'
+)
+LASTMOD_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+ENGLISH_LOCALES = frozenset({"en-AU", "en-CA", "en-GB", "en-US"})
 
 
 def slugify(q):
@@ -67,6 +94,242 @@ def page_title(path, fallback):
 
 def exists(rel):
     return os.path.exists(os.path.join(PAGES, rel))
+
+
+def authority_apps():
+    """Return the canonical live roster and reject registry drift."""
+    apps = canonical_manifest()["apps"]
+    if apps.get("zipbox", {}).get("app_id") != "6806776579":
+        raise ValueError("Canonical live_app_manifest must include verified Zipbox")
+    missing_apps = sorted(set(apps) - set(APPS))
+    missing_ids = sorted(set(apps) - set(APPSTORE))
+    extra_details = []
+    for key, app in apps.items():
+        registry_id = str(APPSTORE.get(key) or "")
+        registry_name = str(APPS.get(key, {}).get("name") or "").strip()
+        if registry_id and registry_id != app["app_id"]:
+            extra_details.append(
+                f"{key}:manifest_id={app['app_id']},registry_id={registry_id}"
+            )
+        if registry_name and registry_name != app["name"]:
+            extra_details.append(
+                f"{key}:manifest_name={app['name']!r},registry_name={registry_name!r}"
+            )
+    if missing_apps or missing_ids or extra_details:
+        details = []
+        if missing_apps:
+            details.append(f"missing APPS={','.join(missing_apps)}")
+        if missing_ids:
+            details.append(f"missing APPSTORE={','.join(missing_ids)}")
+        details.extend(extra_details)
+        raise ValueError(
+            "Canonical live_app_manifest and registry disagree: "
+            + "; ".join(details)
+        )
+    return apps
+
+
+def official_locales():
+    """Return the exact canonical locale sequence, never a discovered subset."""
+    locales = tuple(OFFICIAL_LOCALES)
+    if (
+        len(locales) != 50
+        or len(OFFICIAL_LOCALE_SET) != 50
+        or len(locales) != len(OFFICIAL_LOCALE_SET)
+        or len(locales) != len(set(locales))
+        or frozenset(locales) != OFFICIAL_LOCALE_SET
+    ):
+        raise ValueError("Topic hubs require the exact official locale roster")
+    return locales
+
+
+def _canonical_link(source, path):
+    values = []
+    for match in LINK_TAG_RE.finditer(source):
+        attrs = match.group("attrs")
+        rel = REL_ATTR_RE.search(attrs)
+        href = HREF_ATTR_RE.search(attrs)
+        if (
+            rel is not None
+            and "canonical" in rel.group("value").casefold().split()
+            and href is not None
+        ):
+            values.append(html.unescape(href.group("value")).strip())
+    if len(values) != 1:
+        raise ValueError(f"Expected one canonical link in localized hub source: {path}")
+    return values[0]
+
+
+def _looks_like_english_fallback(localized, english):
+    if localized.strip() != english.strip():
+        return False
+    return len(english.strip()) >= 24 and len(re.findall(r"[A-Za-z]+", english)) >= 4
+
+
+def _localized_page_copy(key, locale):
+    path = Path(PAGES) / locale / f"{key}.html"
+    source = _page_source(path)
+    language = HTML_LANG_RE.search(source)
+    if language is None or language.group("value") != locale:
+        raise ValueError(
+            f"Localized hub source has wrong language ownership: {path}"
+        )
+    expected_canonical = f"{SITE}/{locale}/{key}.html"
+    if _canonical_link(source, path) != expected_canonical:
+        raise ValueError(
+            f"Localized hub source has wrong canonical ownership: {path}"
+        )
+    name = _text_match(source, r"<h1[^>]*>(.*?)</h1>", "app heading", path)
+    description = _text_match(
+        source,
+        r'<meta\s+name="description"\s+content="([^"]*)"',
+        "app description",
+        path,
+    )
+    return name, description
+
+
+def preflight_localized_sources(keys, locales):
+    """Read every owned locale source before any public hub is mutated."""
+    copies = {}
+    for locale in locales:
+        for ui_key in ("faq_title", "guide", "why", "store"):
+            _ui_text(locale, ui_key)
+        for key in keys:
+            copies[(key, locale)] = _localized_page_copy(key, locale)
+    for key in keys:
+        english = copies[(key, "en-US")]
+        for locale in locales:
+            if locale in ENGLISH_LOCALES:
+                continue
+            localized = copies[(key, locale)]
+            if _looks_like_english_fallback(localized[1], english[1]):
+                raise ValueError(
+                    f"English fallback in localized hub source: {locale}/{key}.html"
+                )
+    return copies
+
+
+def _stamp_source_digest(source):
+    if SOURCE_DIGEST_META in source or "</head>" not in source:
+        raise ValueError("Hub output cannot be content-stamped safely")
+    digest = hashlib.sha256(source.encode("utf-8")).hexdigest()
+    marker = f'<meta name="{SOURCE_DIGEST_META}" content="{digest}">\n'
+    return source.replace("</head>", marker + "</head>", 1)
+
+
+def embedded_source_digest(source):
+    matches = list(SOURCE_DIGEST_RE.finditer(source))
+    if len(matches) != 1:
+        raise ValueError("Hub page must contain exactly one source digest")
+    match = matches[0]
+    unstamped = source[:match.start()] + source[match.end():]
+    actual = hashlib.sha256(unstamped.encode("utf-8")).hexdigest()
+    if match.group("digest") != actual:
+        raise ValueError("Generated hub source digest does not match its source")
+    return actual
+
+
+def _existing_source_digest(path):
+    try:
+        source = Path(path).read_text(encoding="utf-8")
+        match = SOURCE_DIGEST_RE.search(source)
+        return match.group("digest") if match else None
+    except (OSError, UnicodeError):
+        return None
+
+
+def _bound_build_date():
+    epoch = os.environ.get("SOURCE_DATE_EPOCH")
+    if epoch is not None:
+        try:
+            seconds = int(epoch)
+            if seconds < 0 or str(seconds) != epoch.strip():
+                raise ValueError
+        except ValueError as error:
+            raise ValueError("SOURCE_DATE_EPOCH must be a non-negative integer") from error
+        return datetime.fromtimestamp(seconds, timezone.utc).date().isoformat()
+    configured = os.environ.get("GEO_BUILD_DATE")
+    if configured is not None:
+        try:
+            return date.fromisoformat(configured).isoformat()
+        except ValueError as error:
+            raise ValueError("GEO_BUILD_DATE must be YYYY-MM-DD") from error
+    completed = subprocess.run(
+        ["git", "-C", ROOT, "show", "-s", "--format=%ct", "HEAD"],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    try:
+        seconds = int(completed.stdout.strip())
+    except ValueError as error:
+        raise ValueError(
+            "Set SOURCE_DATE_EPOCH or GEO_BUILD_DATE outside a Git checkout"
+        ) from error
+    if completed.returncode != 0 or seconds < 0:
+        raise ValueError("Unable to derive a deterministic hub build date")
+    return datetime.fromtimestamp(seconds, timezone.utc).date().isoformat()
+
+
+def _previous_lastmods(path):
+    path = Path(path)
+    if not path.exists():
+        return {}
+    try:
+        root = ElementTree.fromstring(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, ElementTree.ParseError) as error:
+        raise ValueError(f"Invalid existing hub sitemap: {path}") from error
+    values = {}
+    for node in root:
+        loc = node.findtext("{*}loc")
+        lastmod = node.findtext("{*}lastmod")
+        if not loc or not lastmod or LASTMOD_RE.fullmatch(lastmod) is None:
+            raise ValueError(f"Invalid existing hub sitemap row: {path}")
+        try:
+            date.fromisoformat(lastmod)
+        except ValueError as error:
+            raise ValueError(f"Invalid existing hub sitemap lastmod: {lastmod}") from error
+        if loc in values:
+            raise ValueError(f"Duplicate existing hub sitemap URL: {loc}")
+        values[loc] = lastmod
+    return values
+
+
+def _atomic_write_text(path, source):
+    path = Path(path)
+    data = source.encode("utf-8")
+    try:
+        if path.read_bytes() == data:
+            return False
+    except FileNotFoundError:
+        pass
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary = tempfile.mkstemp(
+        prefix=f".{path.name}.",
+        suffix=".tmp",
+        dir=path.parent,
+    )
+    temporary_path = Path(temporary)
+    try:
+        with os.fdopen(descriptor, "wb") as handle:
+            handle.write(data)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.chmod(temporary_path, 0o644)
+        os.replace(temporary_path, path)
+    finally:
+        temporary_path.unlink(missing_ok=True)
+    return True
+
+
+def _sync_directories(paths):
+    for path in sorted({Path(value).parent for value in paths}):
+        descriptor = os.open(path, os.O_RDONLY)
+        try:
+            os.fsync(descriptor)
+        finally:
+            os.close(descriptor)
 
 
 STYLE = (":root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2}"
@@ -129,16 +392,7 @@ def _text_match(source, pattern, label, path):
 
 
 def localized_page_copy(key, locale):
-    path = Path(PAGES) / locale / f"{key}.html"
-    source = _page_source(path)
-    name = _text_match(source, r"<h1[^>]*>(.*?)</h1>", "app heading", path)
-    description = _text_match(
-        source,
-        r'<meta\s+name="description"\s+content="([^"]*)"',
-        "app description",
-        path,
-    )
-    return name, description
+    return _localized_page_copy(key, locale)
 
 
 def _primary_answer_app_ids(source):
@@ -287,11 +541,11 @@ def _social_metadata(key, title, description, canonical, image_alt, locale):
     )
 
 
-def build_localized_hub(key, locale, availability=None):
+def build_localized_hub(key, locale, availability=None, page_copy=None):
     if locale not in OFFICIAL_LOCALES:
         raise ValueError(f"Unsupported hub locale: {locale}")
     e = html.escape
-    name, description = localized_page_copy(key, locale)
+    name, description = page_copy or localized_page_copy(key, locale)
     answers = localized_answer_links(key, locale, required=False)
     questions_label = _ui_text(locale, "faq_title")
     guide_label = _ui_text(locale, "guide")
@@ -375,6 +629,9 @@ def build_localized_hub(key, locale, availability=None):
 <html lang="{locale}"{dir_attr}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
+<meta name="iag-hub-app" content="{e(key)}">
+<meta name="iag-hub-locale" content="{e(locale)}">
+<meta name="iag-hub-source" content="{e(locale)}/{e(key)}.html">
 <link rel="canonical" href="{canon}">
 {hreflang_links(key)}
 {social_metadata}
@@ -487,6 +744,8 @@ def build_hub(key):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
+<meta name="iag-hub-app" content="{e(key)}">
+<meta name="iag-hub-locale" content="x-default">
 <link rel="canonical" href="{canon}">
 {hreflang_links(key)}
 {social_metadata}
@@ -504,66 +763,146 @@ def build_hub(key):
 </body></html>'''
 
 
-def main():
-    os.makedirs(HUBS, exist_ok=True)
-    live_keys = live_app_keys(APPSTORE, PAGES, refresh=False)
-    keys = [k for k in APPS if k in live_keys]
-    expected = set(keys)
-    for filename in os.listdir(HUBS):
-        if (
-            filename.endswith(".html")
-            and filename != "index.html"
-            and filename.removesuffix(".html") not in expected
-        ):
-            os.remove(os.path.join(HUBS, filename))
-    for k in keys:
-        Path(HUBS, f"{k}.html").write_text(
-            build_hub(k),
-            encoding="utf-8",
+def _render_outputs(apps, locales, copies, availability):
+    keys = tuple(apps)
+    outputs = {}
+    for key in keys:
+        outputs[Path(HUBS, f"{key}.html")] = _stamp_source_digest(
+            build_hub(key)
         )
-    localized_count = 0
-    availability = load_storefront_availability(Path(PAGES))
-    for locale in OFFICIAL_LOCALES:
-        localized_dir = os.path.join(PAGES, locale, "hubs")
-        os.makedirs(localized_dir, exist_ok=True)
-        for filename in os.listdir(localized_dir):
-            if (
-                filename.endswith(".html")
-                and filename != "index.html"
-                and filename.removesuffix(".html") not in expected
-            ):
-                os.remove(os.path.join(localized_dir, filename))
+    for locale in locales:
         for key in keys:
-            target = Path(localized_dir, f"{key}.html")
-            target.write_text(
-                build_localized_hub(key, locale, availability),
-                encoding="utf-8",
+            outputs[Path(PAGES, locale, "hubs", f"{key}.html")] = (
+                _stamp_source_digest(
+                    build_localized_hub(
+                        key,
+                        locale,
+                        availability,
+                        page_copy=copies[(key, locale)],
+                    )
+                )
             )
-            localized_count += 1
-    # index
     e = html.escape
-    cards = "".join(f'<a class="pill" href="{SITE}/hubs/{k}.html">{e(APPS[k]["name"])}</a>' for k in keys)
-    idx = (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-           f'<title>iOS App Guides — topic hubs</title><link rel="canonical" href="{SITE}/hubs/">'
-           f'<style>{STYLE}</style></head><body><main class="wrap"><h1 style="margin-top:30px">App topic hubs</h1>'
-           f'<div style="margin-top:16px">{cards}</div></main></body></html>')
-    Path(HUBS, "index.html").write_text(idx, encoding="utf-8")
-    # sitemap
-    lm = time.strftime("%Y-%m-%d", time.gmtime())
-    rows = [f'  <url><loc>{SITE}/hubs/{k}.html</loc><lastmod>{lm}</lastmod></url>' for k in keys]
-    rows.extend(
-        f'  <url><loc>{hub_url(key, locale)}</loc><lastmod>{lm}</lastmod></url>'
-        for locale in OFFICIAL_LOCALES
+    cards = "".join(
+        f'<a class="pill" href="{SITE}/hubs/{key}.html">'
+        f'{e(apps[key]["name"])}</a>'
         for key in keys
     )
-    rows.append(f'  <url><loc>{SITE}/hubs/</loc><lastmod>{lm}</lastmod></url>')
-    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-           + "\n".join(rows) + "\n</urlset>\n")
-    Path(PAGES, "sitemap_hubs.xml").write_text(xml, encoding="utf-8")
-    print(
-        f"\u2713 {len(keys)} topic hubs + {localized_count} localized hubs "
-        "+ index + sitemap_hubs.xml"
+    idx = (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+           f'<title>iOS App Guides — topic hubs</title><meta name="iag-hub-index" content="canonical-live-app-manifest">'
+           f'<link rel="canonical" href="{SITE}/hubs/">'
+           f'<style>{STYLE}</style></head><body><main class="wrap"><h1 style="margin-top:30px">App topic hubs</h1>'
+           f'<div style="margin-top:16px">{cards}</div></main></body></html>')
+    outputs[Path(HUBS, "index.html")] = _stamp_source_digest(idx)
+    expected_count = len(apps) * (len(locales) + 1) + 1
+    if len(outputs) != expected_count:
+        raise ValueError(
+            f"Hub render set is incomplete: {len(outputs)} != {expected_count}"
+        )
+    return outputs
+
+
+def _sitemap_targets(apps, locales, outputs):
+    targets = []
+    for key in apps:
+        targets.append((hub_url(key), Path(HUBS, f"{key}.html")))
+    for locale in locales:
+        for key in apps:
+            targets.append(
+                (
+                    hub_url(key, locale),
+                    Path(PAGES, locale, "hubs", f"{key}.html"),
+                )
+            )
+    targets.append((f"{SITE}/hubs/", Path(HUBS, "index.html")))
+    if {path for _, path in targets} != set(outputs):
+        raise ValueError("Hub sitemap and rendered output sets disagree")
+    return targets
+
+
+def _render_sitemap(apps, locales, outputs, previous, build_date):
+    rows = []
+    for url, path in _sitemap_targets(apps, locales, outputs):
+        digest = embedded_source_digest(outputs[path])
+        unchanged = _existing_source_digest(path) == digest
+        lastmod = previous.get(url) if unchanged else None
+        if lastmod is None:
+            lastmod = build_date
+        rows.append(
+            f"  <url><loc>{url}</loc><lastmod>{lastmod}</lastmod></url>"
+        )
+    expected_count = len(apps) * (len(locales) + 1) + 1
+    if len(rows) != expected_count or len({url for url, _ in _sitemap_targets(apps, locales, outputs)}) != expected_count:
+        raise ValueError("Hub sitemap must contain the exact rendered URL set")
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(rows)
+        + "\n</urlset>\n"
     )
+
+
+def _prune_stale(apps, locales):
+    expected_root = {f"{key}.html" for key in apps} | {"index.html"}
+    directories = [(Path(HUBS), expected_root)]
+    expected_localized = {f"{key}.html" for key in apps}
+    directories.extend(
+        (Path(PAGES, locale, "hubs"), expected_localized)
+        for locale in locales
+    )
+    directories.extend(
+        (directory, set())
+        for directory in Path(PAGES).glob("*/hubs")
+        if directory.parent.name not in locales
+    )
+    removed = 0
+    for directory, expected in directories:
+        directory.mkdir(parents=True, exist_ok=True)
+        for path in directory.glob("*.html"):
+            if path.name not in expected:
+                path.unlink()
+                removed += 1
+    return removed
+
+
+def _require_attribution_provider():
+    provider = resolve_provider_token()
+    if PROVIDER_TOKEN_RE.fullmatch(provider) is None:
+        raise ValueError(
+            f"{PROVIDER_TOKEN_ENV} must be configured for topic hub attribution"
+        )
+    os.environ[PROVIDER_TOKEN_ENV] = provider
+    return provider
+
+
+def _generate(apps, locales):
+    _require_attribution_provider()
+    copies = preflight_localized_sources(tuple(apps), locales)
+    availability = load_storefront_availability(Path(PAGES))
+    outputs = _render_outputs(apps, locales, copies, availability)
+    sitemap_path = Path(PAGES, "sitemap_hubs.xml")
+    previous = _previous_lastmods(sitemap_path)
+    sitemap = _render_sitemap(
+        apps,
+        locales,
+        outputs,
+        previous,
+        _bound_build_date(),
+    )
+    for path in sorted(outputs, key=lambda value: value.as_posix()):
+        _atomic_write_text(path, outputs[path])
+    removed = _prune_stale(apps, locales)
+    _atomic_write_text(sitemap_path, sitemap)
+    _sync_directories((*outputs, sitemap_path))
+    localized_count = len(apps) * len(locales)
+    print(
+        f"\u2713 {len(apps)} topic hubs + {localized_count} localized hubs "
+        f"+ index + sitemap_hubs.xml; pruned={removed}"
+    )
+
+
+def main():
+    _generate(authority_apps(), official_locales())
 
 
 if __name__ == "__main__":

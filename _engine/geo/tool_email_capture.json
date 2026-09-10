@@ -19,6 +19,7 @@
   "manage_url": "",
   "copy": {
     "en-US": {
+      "email_label": "Email address",
       "heading": "Get told when a new free tool goes up",
       "body": "I build these tools one at a time and put them here for free. If you want an email when a new one is ready, leave your address — that is the only thing it is used for.",
       "placeholder": "you@example.com",
@@ -26,6 +27,7 @@
       "promise": "New free tools only. Buttondown processes the subscription to deliver these notices; no app marketing or address sale. Unsubscribe in one click."
     },
     "zh-Hant": {
+      "email_label": "電子郵件",
       "heading": "新工具上線時通知我",
       "body": "這些小工具是一個一個做的,做好就免費放上來。想在有新工具時收到通知,留個信箱就好——只會用在這件事。",
       "placeholder": "you@example.com",
@@ -33,6 +35,7 @@
       "promise": "只寄新工具上線通知。訂閱由 Buttondown 代為處理;不做 App 行銷、不出售信箱,隨時一鍵取消。"
     },
     "ja": {
+      "email_label": "メールアドレス",
       "heading": "新しい無料ツールができたら知らせる",
       "body": "ツールは一つずつ作って、できたら無料で置いています。新しいものができたときにお知らせします。メールアドレスはこの用途にのみ使います。",
       "placeholder": "you@example.com",
@@ -40,6 +43,7 @@
       "promise": "新しい無料ツールのお知らせのみ。配信のため Buttondown が購読情報を処理します。アプリ広告やアドレスの販売は行わず、いつでも解除できます。"
     },
     "ko": {
+      "email_label": "이메일 주소",
       "heading": "새 무료 도구가 나오면 알려드립니다",
       "body": "도구는 하나씩 만들어 무료로 올리고 있습니다. 새 도구가 준비되면 알려드릴게요. 이메일은 이 용도로만 사용합니다.",
       "placeholder": "you@example.com",
@@ -47,6 +51,7 @@
       "promise": "새 무료 도구 알림만 보냅니다. 발송을 위해 Buttondown이 구독 정보를 처리하며, 앱 마케팅이나 주소 판매는 하지 않습니다. 언제든 수신 거부할 수 있습니다."
     },
     "de-DE": {
+      "email_label": "E-Mail-Adresse",
       "heading": "Bescheid bekommen, wenn ein neues kostenloses Tool online geht",
       "body": "Die Tools entstehen eines nach dem anderen und sind kostenlos nutzbar. Wir sagen Bescheid, wenn ein neues dazukommt. Die Adresse wird ausschließlich dafür verwendet.",
       "placeholder": "du@example.com",

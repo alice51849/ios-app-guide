@@ -1,5 +1,5 @@
 {
-  "abstained_pairs": 2298,
+  "abstained_pairs": 2293,
   "app_count": 47,
   "candidate_app_locale_pairs": 2350,
   "creative_count": 47,
@@ -14,12 +14,22 @@
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "cc5b3e3da3fc4e4869da00b0d3f3b6450d054632d9f81e296f1ebb531d0e3924",
+      "generated_sha256": "8b38939c940b4de0bde73f7b1b7c9531833cfc3e9305e9cb58b7734f6f4cf50d",
+      "kind": "conversion_contracts",
+      "relative_path": "data/high-intent-decision-routes/conversion-contracts.json"
+    },
+    {
+      "generated_sha256": "0d8d1aacb2010ad5b2669da9e4472539e87120d5568a8728a70207f362139023",
+      "kind": "conversion_schema",
+      "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
+    },
+    {
+      "generated_sha256": "a011985d17fcfde04e1cc8af6293ceac86ea570521a0041f3c30e54b2abb3a0b",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "a2ae9543ffee6207178b654a38cb2992139dde358859f62cf93c05cf53566972",
+      "generated_sha256": "b4a62cfbaf17cbbc265cbcd58f48d1c44b569a9c13289de45076c09a57e735a0",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -29,7 +39,7 @@
       "relative_path": "en-US/decide/aibriefpack/organize-source-context-before-ai.html"
     },
     {
-      "generated_sha256": "c8ca35376569aaced80a65ad6281a627cf659108bf269f0b13a59471aeaeec47",
+      "generated_sha256": "84db6151eb85830de26a23edaaf36e5e6df44d953a0eb4108c95b4b725bfebd1",
       "kind": "route_html",
       "relative_path": "en-US/decide/aim990/toeic-part-five-time-pressure.html"
     },
@@ -39,7 +49,7 @@
       "relative_path": "en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html"
     },
     {
-      "generated_sha256": "6f4f6f0f3df41506b8750e87aee3fb0cb1ef8f753b9e0ce163a693360dc300f8",
+      "generated_sha256": "3648ab7199c0ee8b21a35f4c4f57f940f3fff30401d3310c11ec6965b8ccd3c5",
       "kind": "route_html",
       "relative_path": "en-US/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
@@ -54,7 +64,7 @@
       "relative_path": "en-US/decide/cvdesk/ats-resume-on-iphone-without-upload.html"
     },
     {
-      "generated_sha256": "473702902c0246a3009cb53f003334f79eb31b558be5944bc1d621bf3e8f7519",
+      "generated_sha256": "1bdf07414fe28d36bafac48ac0df0112136b3e3386cbe36e9cc5ff29505c789a",
       "kind": "route_html",
       "relative_path": "en-US/decide/cyca/private-cycle-patterns-without-account.html"
     },
@@ -94,7 +104,7 @@
       "relative_path": "en-US/decide/lockhour/stop-social-apps-during-study-blocks.html"
     },
     {
-      "generated_sha256": "8935ff54283bb53a0ca19aa2b77e9b3ff183677f67ffca826d80ca098f22ff5e",
+      "generated_sha256": "1237e15954b14c40c997cbc8861c24999b2d5d2b10f18b2c1f477fe315f4ed9d",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
@@ -134,7 +144,7 @@
       "relative_path": "en-US/decide/lumimissionpro/complete-morning-and-bedtime-routine.html"
     },
     {
-      "generated_sha256": "bb354c03ae04bfb1761137963d1c82dd2ca8406f81b5f5d8ad98b06f5138b1e1",
+      "generated_sha256": "25341d0efb5e76be3846c80e6fa300611074ed8ee1c7759ee566735e0d7a7301",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumiweather/decide-what-child-wears-outside.html"
     },
@@ -144,12 +154,12 @@
       "relative_path": "en-US/decide/maskmyfile/redact-client-files-before-sharing.html"
     },
     {
-      "generated_sha256": "06afb9580c6b50dfbb7b5e51d41f84c70e8f885ff885ad6dc63ee7db961ab84e",
+      "generated_sha256": "b730cad4c6b19dc15cb7cb3a2c3fffb06eb95bd9fa75b06497931ad70c0963f3",
       "kind": "route_html",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
     {
-      "generated_sha256": "e13c6660bdc3dfb29f77727c10969a3cb11fb15bcdb644b1f814c7f1bb04bbf8",
+      "generated_sha256": "7a030b8ce4c249539f153909d004cbe7d06b70eb533a6d734446582681b127ab",
       "kind": "route_html",
       "relative_path": "en-US/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
@@ -159,12 +169,12 @@
       "relative_path": "en-US/decide/moneytag/measure-profit-by-freelance-project.html"
     },
     {
-      "generated_sha256": "f9232eff83a33784f1135940c184227781f348ac733c03adb5d5496f95542cc8",
+      "generated_sha256": "f5a0f24bfaad92aac1f18e36a4dbb63eb078ae7bad3d42ec51937ea860c4a497",
       "kind": "route_html",
       "relative_path": "en-US/decide/notesstudio100/handwrite-mark-up-and-review-offline.html"
     },
     {
-      "generated_sha256": "5ab2cb3d382f349446477d4141f1ce1dbf673ee6d439155d8c668ec67943c236",
+      "generated_sha256": "0e28adeb74845ea2c1b50035be004b89f1949b712fed76a0bdf48fc584a8cdae",
       "kind": "route_html",
       "relative_path": "en-US/decide/onepageppt/turn-meeting-notes-into-one-slide.html"
     },
@@ -184,7 +194,7 @@
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html"
     },
     {
-      "generated_sha256": "434ed2ddb09e45b16098e784ae32f926ab504805b52d3ae9bf61685e3955052d",
+      "generated_sha256": "3f3864f5afa9a7359b1a0fa2e9ed58b6341b3c8c90313019e29f2f80cf72b873",
       "kind": "route_html",
       "relative_path": "en-US/decide/scanto/scan-and-read-documents-on-device.html"
     },
@@ -229,7 +239,7 @@
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html"
     },
     {
-      "generated_sha256": "ce6a1020a2730e8565b84bace389580b980c999da5353bcca20682cf28d93d49",
+      "generated_sha256": "f95126d6f79d7f5e1b3d2955e2813291b08c10175c786cc04ff8fc8260d5a8ff",
       "kind": "route_html",
       "relative_path": "en-US/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
@@ -259,17 +269,32 @@
       "relative_path": "en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
     },
     {
-      "generated_sha256": "513a5c990c7d4250b8ee009634cdf7ee6e4cfd5b81e4386d4d178125081cdc56",
+      "generated_sha256": "9c03dd5af58ebaad654ad08e2b1338df26f1751d43660de3fdec68f4dffe9b89",
+      "kind": "route_html",
+      "relative_path": "fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
+    },
+    {
+      "generated_sha256": "e1cdb0dc9f8fe9a3b790ca8284941ce48740475fde6e17985a61f70e6c06b666",
+      "kind": "route_html",
+      "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html"
+    },
+    {
+      "generated_sha256": "ec5abcc5641ae4edc9e58dafdef948ac2bac94d1ff2a0cee76b31648fe09d9da",
+      "kind": "route_html",
+      "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
+    },
+    {
+      "generated_sha256": "b664f2018447519890c6919e7cf08b29b1ad84eef05dab6be17d75625c0d3d79",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
     {
-      "generated_sha256": "6371f7a92ad2fba888be3b11f85acff2a221fae7c8074740c0d4ecc2c6612398",
+      "generated_sha256": "f45de5e18bfecd04cab84a3738633a905c8e60dc59004632e26a645d3e7d15af",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
     {
-      "generated_sha256": "f29c37ae1507b8a26583a1c8e6807f9fd022ef489ef391cdabd0c12e885add88",
+      "generated_sha256": "bf0a570d648788c279783e90f7cd69f2efdf1001bd58facde86c8e129980b521",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
@@ -277,6 +302,16 @@
       "generated_sha256": "00fdf3efab48da9ac3d2aec38911cb2a6d0bffc72a270957b0626e56fa93f382",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
+    },
+    {
+      "generated_sha256": "e126f99da4ba211cbd6e34ba568215031f3d40b56b608c308cb1e3a613ef667d",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
+    },
+    {
+      "generated_sha256": "29d42f28cbf0d04bd568adcf7ddd2218eb795f8330ffcd7f8d2146da1a407622",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
     {
       "generated_sha256": "137d0617c108a9f8714d8cbb6b6d3be46dcfd91c50a1ac6f0918f155ba30dad1",
@@ -297,11 +332,11 @@
     "public_apps": 47,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "efc64dba44ea81e0a626a62ef86845816784b39d34f4e826c373ff88ba1e594b",
+  "manifest_digest": "cf0ac0b130cfd319223975293797dbebba9522148cf19eb3ae35e3f79982c079",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "3341c7122a07cf4652eaf5e954666fa6f3f6892d00f280ab514924b4bc6c9347",
+  "release_contract_digest": "dd82827f2ba9c9f7461e6a7c6d23b9138db32dae9c132145cc60952943b85c72",
   "release_state": "exact",
-  "route_count": 52,
+  "route_count": 57,
   "routes": [
     {
       "app_key": "aibriefpack",
@@ -330,8 +365,8 @@
       "creative_id": "aim990:toeic-part-five-time-pressure:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "c8ca35376569aaced80a65ad6281a627cf659108bf269f0b13a59471aeaeec47",
-      "record_digest": "409b9f6365c8562eeaebe74818ce5e02ab5e4f263365b88c9f7df1addd8463b5",
+      "output_sha256": "84db6151eb85830de26a23edaaf36e5e6df44d953a0eb4108c95b4b725bfebd1",
+      "record_digest": "5584a001e1ae0a74a778b18a163d07d895f117fcb34dafcbbe6c128c48eb8ae3",
       "relative_path": "en-US/decide/aim990/toeic-part-five-time-pressure.html",
       "route_id": "en-US:aim990:toeic-part-five-time-pressure",
       "route_slug": "toeic-part-five-time-pressure",
@@ -364,8 +399,8 @@
       "creative_id": "battai:decide-when-an-iphone-battery-needs-service:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "6f4f6f0f3df41506b8750e87aee3fb0cb1ef8f753b9e0ce163a693360dc300f8",
-      "record_digest": "63dd75f094ebacc865d7d8c98525abd28f0d4ddc0c01a623d37a35373b517527",
+      "output_sha256": "3648ab7199c0ee8b21a35f4c4f57f940f3fff30401d3310c11ec6965b8ccd3c5",
+      "record_digest": "c8038ffae2ae63ee93be09d53ffafe3eaccf461fcb1daf68bdb0dcf917002ca1",
       "relative_path": "en-US/decide/battai/decide-when-an-iphone-battery-needs-service.html",
       "route_id": "en-US:battai:decide-when-an-iphone-battery-needs-service",
       "route_slug": "decide-when-an-iphone-battery-needs-service",
@@ -415,8 +450,8 @@
       "creative_id": "cyca:private-cycle-patterns-without-account:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "473702902c0246a3009cb53f003334f79eb31b558be5944bc1d621bf3e8f7519",
-      "record_digest": "1b55bb9b5fb24054f72bf950418335bce5f10399883234b3228099589507dd9a",
+      "output_sha256": "1bdf07414fe28d36bafac48ac0df0112136b3e3386cbe36e9cc5ff29505c789a",
+      "record_digest": "38331c0f7aee07389451577a1ecb09c2d7f3eba10f46c24ac71bb5cdaab0c943",
       "relative_path": "en-US/decide/cyca/private-cycle-patterns-without-account.html",
       "route_id": "en-US:cyca:private-cycle-patterns-without-account",
       "route_slug": "private-cycle-patterns-without-account",
@@ -551,8 +586,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "8935ff54283bb53a0ca19aa2b77e9b3ff183677f67ffca826d80ca098f22ff5e",
-      "record_digest": "b8ef0b660b339d6ba947e0190b3cf29b39fb58148a6353490b4834c2f7801070",
+      "output_sha256": "1237e15954b14c40c997cbc8861c24999b2d5d2b10f18b2c1f477fe315f4ed9d",
+      "record_digest": "1653f54385924c1cc593790746bae9cf7d60663a35455b621c74a799c19b8056",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -687,8 +722,8 @@
       "creative_id": "lumiweather:decide-what-child-wears-outside:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "bb354c03ae04bfb1761137963d1c82dd2ca8406f81b5f5d8ad98b06f5138b1e1",
-      "record_digest": "b5a0f503ac3ac6d4f8f6e50de3e14915ecab75605860b708822002df5c51a9f7",
+      "output_sha256": "25341d0efb5e76be3846c80e6fa300611074ed8ee1c7759ee566735e0d7a7301",
+      "record_digest": "3cd1c0a7e8904eccc2f478253da67092d3fba7a9af6cf52fcdc7ffc431387c8f",
       "relative_path": "en-US/decide/lumiweather/decide-what-child-wears-outside.html",
       "route_id": "en-US:lumiweather:decide-what-child-wears-outside",
       "route_slug": "decide-what-child-wears-outside",
@@ -721,8 +756,8 @@
       "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "06afb9580c6b50dfbb7b5e51d41f84c70e8f885ff885ad6dc63ee7db961ab84e",
-      "record_digest": "711cb38b356e5ad4b96d01162183df18b67b314485d48b77653b352bc7c0ef46",
+      "output_sha256": "b730cad4c6b19dc15cb7cb3a2c3fffb06eb95bd9fa75b06497931ad70c0963f3",
+      "record_digest": "84896cfdc242e95e645ceb51af3637d9dd130b51d72d3a12ae1bcbe6f40cd55f",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html",
       "route_id": "en-US:mochi:cozy-checklist-without-project-overhead",
       "route_slug": "cozy-checklist-without-project-overhead",
@@ -738,8 +773,8 @@
       "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "e13c6660bdc3dfb29f77727c10969a3cb11fb15bcdb644b1f814c7f1bb04bbf8",
-      "record_digest": "fd87ac3fb7a383621cbff51724e98855ef39c25ae30b60a172596bee5e03dcdf",
+      "output_sha256": "7a030b8ce4c249539f153909d004cbe7d06b70eb533a6d734446582681b127ab",
+      "record_digest": "49b9b3869754c48fcd0421a6f348790654fb7c51614d99664fe6eef2cae61dee",
       "relative_path": "en-US/decide/mochidonestamp/remember-when-household-task-was-done.html",
       "route_id": "en-US:mochidonestamp:remember-when-household-task-was-done",
       "route_slug": "remember-when-household-task-was-done",
@@ -772,8 +807,8 @@
       "creative_id": "notesstudio100:handwrite-mark-up-and-review-offline:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "f9232eff83a33784f1135940c184227781f348ac733c03adb5d5496f95542cc8",
-      "record_digest": "33e39b1dda829609cd6649ed7863a7d028e4352fb2b1b5d9489bcc838a8952cc",
+      "output_sha256": "f5a0f24bfaad92aac1f18e36a4dbb63eb078ae7bad3d42ec51937ea860c4a497",
+      "record_digest": "489cf00881cff23c31888c73c1da776b1990fed175174f9555f8175880e1964d",
       "relative_path": "en-US/decide/notesstudio100/handwrite-mark-up-and-review-offline.html",
       "route_id": "en-US:notesstudio100:handwrite-mark-up-and-review-offline",
       "route_slug": "handwrite-mark-up-and-review-offline",
@@ -789,8 +824,8 @@
       "creative_id": "onepageppt:turn-meeting-notes-into-one-slide:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "5ab2cb3d382f349446477d4141f1ce1dbf673ee6d439155d8c668ec67943c236",
-      "record_digest": "c1de90a57149dac0c58ad5159d5054b2eb103a6b55f97cff432721ccb098c6af",
+      "output_sha256": "0e28adeb74845ea2c1b50035be004b89f1949b712fed76a0bdf48fc584a8cdae",
+      "record_digest": "7d436b15a4c25a9f4080fc016c38d92d5ee0956473ad0f71a9872aa76d611236",
       "relative_path": "en-US/decide/onepageppt/turn-meeting-notes-into-one-slide.html",
       "route_id": "en-US:onepageppt:turn-meeting-notes-into-one-slide",
       "route_slug": "turn-meeting-notes-into-one-slide",
@@ -857,8 +892,8 @@
       "creative_id": "scanto:scan-and-read-documents-on-device:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "434ed2ddb09e45b16098e784ae32f926ab504805b52d3ae9bf61685e3955052d",
-      "record_digest": "09456f09a89391f412be53ea76f3bb63abd2c3ea98d4353e08ea5eac359df2ec",
+      "output_sha256": "3f3864f5afa9a7359b1a0fa2e9ed58b6341b3c8c90313019e29f2f80cf72b873",
+      "record_digest": "371e7b68bebadf8702dd1f81e918359309d0e0885fd9fe9e292c5b1aff2cdd50",
       "relative_path": "en-US/decide/scanto/scan-and-read-documents-on-device.html",
       "route_id": "en-US:scanto:scan-and-read-documents-on-device",
       "route_slug": "scan-and-read-documents-on-device",
@@ -1010,8 +1045,8 @@
       "creative_id": "unblurry:improve-soft-family-photo-realistically:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "ce6a1020a2730e8565b84bace389580b980c999da5353bcca20682cf28d93d49",
-      "record_digest": "96876651137e3cd91375bbaabc77a3950d0240b19ff2c18f4539e9994bf1a3cd",
+      "output_sha256": "f95126d6f79d7f5e1b3d2955e2813291b08c10175c786cc04ff8fc8260d5a8ff",
+      "record_digest": "482f7490adafc7fee7fd2753c0b8a0bd1e0d067e28c5a7a3cc21fe685bb7ba12",
       "relative_path": "en-US/decide/unblurry/improve-soft-family-photo-realistically.html",
       "route_id": "en-US:unblurry:improve-soft-family-photo-realistically",
       "route_slug": "improve-soft-family-photo-realistically",
@@ -1103,6 +1138,57 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
     },
     {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "app_store_url": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "36e62422a16ed019499dfeb665c62f42bdd3c5cb13ecec0734fa17e56fc1e594",
+      "creative_id": "aim990:toeic-part-five-time-pressure:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "fr-FR",
+      "output_sha256": "9c03dd5af58ebaad654ad08e2b1338df26f1751d43660de3fdec68f4dffe9b89",
+      "record_digest": "c65e499b3cbfc762b629475e52c718d0b3b3b811eb8ff34034c7a9d5894bf766",
+      "relative_path": "fr-FR/decide/aim990/toeic-part-five-time-pressure.html",
+      "route_id": "fr-FR:aim990:toeic-part-five-time-pressure",
+      "route_slug": "toeic-part-five-time-pressure",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "app_store_url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "c37c72991ce0adcf8266bbebcbc9c0806530b468d72763e018e754482e497823",
+      "creative_id": "lumiweather:decide-what-child-wears-outside:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "ja",
+      "output_sha256": "e1cdb0dc9f8fe9a3b790ca8284941ce48740475fde6e17985a61f70e6c06b666",
+      "record_digest": "a22f1592fcaf995fa6972f7efb23d2045c432e7967cc6d330b9d342fa85a0f14",
+      "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html",
+      "route_id": "ja:lumiweather:decide-what-child-wears-outside",
+      "route_slug": "decide-what-child-wears-outside",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/lumiweather/decide-what-child-wears-outside.html"
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "app_store_url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "3f16f20888fc25f46331ed3eda52125302255885a11dd9254a50b62924e1cf17",
+      "creative_id": "unblurry:improve-soft-family-photo-realistically:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "ja",
+      "output_sha256": "ec5abcc5641ae4edc9e58dafdef948ac2bac94d1ff2a0cee76b31648fe09d9da",
+      "record_digest": "4b6265ed530183d5b93e8f125a55abd5778d9b21f2a66394eece1c41584b7596",
+      "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html",
+      "route_id": "ja:unblurry:improve-soft-family-photo-realistically",
+      "route_slug": "improve-soft-family-photo-realistically",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/unblurry/improve-soft-family-photo-realistically.html"
+    },
+    {
       "app_key": "battai",
       "app_store_id": "6802423998",
       "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_ask&mt=8",
@@ -1112,8 +1198,8 @@
       "creative_id": "battai:decide-when-an-iphone-battery-needs-service:problem_aware",
       "intent_type": "problem_aware",
       "locale": "zh-Hant",
-      "output_sha256": "6371f7a92ad2fba888be3b11f85acff2a221fae7c8074740c0d4ecc2c6612398",
-      "record_digest": "581c85ea02d0970121c8be1c6f87c4b41d7a822366703dd3f3eb4c544d4900e7",
+      "output_sha256": "f45de5e18bfecd04cab84a3738633a905c8e60dc59004632e26a645d3e7d15af",
+      "record_digest": "f271e3c7fa31a43240dbce7f514217e400bcfc6905cb644e91839043bbc5bca8",
       "relative_path": "zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html",
       "route_id": "zh-Hant:battai:decide-when-an-iphone-battery-needs-service",
       "route_slug": "decide-when-an-iphone-battery-needs-service",
@@ -1129,8 +1215,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "f29c37ae1507b8a26583a1c8e6807f9fd022ef489ef391cdabd0c12e885add88",
-      "record_digest": "1a482368a95c9f490d816b8094ec943deae96750a1a13ec5f425ba6805b62c99",
+      "output_sha256": "bf0a570d648788c279783e90f7cd69f2efdf1001bd58facde86c8e129980b521",
+      "record_digest": "253f21debfb19b348124b3145c0424c583af4194df5d515f53a1cf33a655a249",
       "relative_path": "zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "zh-Hant:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -1152,6 +1238,40 @@
       "route_id": "zh-Hant:lumibopomofopro:complete-zhuyin-path-for-heritage-family",
       "route_slug": "complete-zhuyin-path-for-heritage-family",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "app_store_url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "campaign_token": "geo_pick",
+      "content_type": "alternative",
+      "creative_digest": "f0fe27ecf4c3ea9fc9224aa0752936b65666688db84b9b7ecba9064b4bd28915",
+      "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
+      "intent_type": "alternative",
+      "locale": "zh-Hant",
+      "output_sha256": "e126f99da4ba211cbd6e34ba568215031f3d40b56b608c308cb1e3a613ef667d",
+      "record_digest": "a2f458d65a19f3bf444dc16c28baf46c1a35c2b2782756c195ac083faec9e65c",
+      "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html",
+      "route_id": "zh-Hant:mochi:cozy-checklist-without-project-overhead",
+      "route_slug": "cozy-checklist-without-project-overhead",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "app_store_url": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "4bdc5918abb5092ff9393fbf82d99f4667d16031d238843c36bfea2b337998ae",
+      "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "29d42f28cbf0d04bd568adcf7ddd2218eb795f8330ffcd7f8d2146da1a407622",
+      "record_digest": "74c5a9d39db34b6bed6f22b39cf1a628c9bb72746c772ee873857bda1bfd0514",
+      "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html",
+      "route_id": "zh-Hant:mochidonestamp:remember-when-household-task-was-done",
+      "route_slug": "remember-when-household-task-was-done",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
     {
       "app_key": "savetag",
@@ -1190,5 +1310,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "fde2e04a6edd572a28b8b0f31dffe975df54d272968a5b7115616767fc04bd66"
+  "source_contract_digest": "0d5f6430a42ccfadd77b178a943792e03e10dc9953cb8c2cedbbf7813acd1b3c"
 }

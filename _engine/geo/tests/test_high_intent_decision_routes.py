@@ -574,6 +574,8 @@ class HighIntentRouteSourceTests(unittest.TestCase):
             [
                 "_engine/geo/high_intent_decision_routes.py",
                 "_engine/geo/data/high_intent_decision_routes_v2.json",
+                "_engine/geo/conversion_route_contract.py",
+                "_engine/geo/data/high_intent_conversion_contracts_v1.json",
                 "_engine/geo/gen_store_attribution.py",
                 "_engine/geo/official_locales.py",
                 "_engine/geo/publish.py",
@@ -929,6 +931,26 @@ class HighIntentManagedOutputTests(unittest.TestCase):
             },
             "quality": {"all_gates_passed": True},
         }
+
+    def test_old_manifest_upgrades_without_weakening_current_release_contract(self):
+        record = self.record("alpha")
+        routes.write_outputs([record], self.report(1), self.pages)
+        path = self.pages / routes.MANIFEST_RELATIVE
+        legacy = json.loads(path.read_text())
+        added = set(routes.FIXED_MANAGED_OUTPUTS) - set(routes.LEGACY_FIXED_MANAGED_OUTPUTS)
+        legacy["expected_outputs"] = [
+            row for row in legacy["expected_outputs"] if row["relative_path"] not in added
+        ]
+        legacy["manifest_digest"] = routes._sha256_json(routes._manifest_without_digest(legacy))
+        for relative in added:
+            (self.pages / relative).unlink()
+        path.write_text(json.dumps(legacy))
+        with self.assertRaisesRegex(ValueError, "fixed outputs"):
+            routes._validate_manifest(legacy)
+        result = routes.write_outputs([record], self.report(1), self.pages)
+        self.assertEqual(0, result["stale_routes_removed"])
+        routes._validate_manifest(json.loads(path.read_text()))
+        self.assertTrue(all((self.pages / relative).is_file() for relative in added))
 
     def assert_manifest_rejected_before_output_io(
         self,
@@ -1389,6 +1411,7 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             inventory["apps"].append(app_template)
             new_keys.append(key)
             if include_route_copy:
+                route_template.pop("conversion_contract", None)
                 route_template["app_key"] = key
                 route_template["route_slug"] = (
                     f"future-fixture-workflow-{offset + 1}"
@@ -1785,14 +1808,13 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             for record in self.records
         }
         self.assertEqual(expected_pairs, actual_pairs)
-        self.assertFalse(
-            any(record["locale"] == "ja" for record in self.records)
-        )
+        native_ja = sum("ja" in route["locales"] for route in self.source["routes"])
         self.assertEqual(
-            self.release["app_count"],
+            self.release["app_count"] - native_ja,
             self.report["locales"]["ja"]["abstained"],
         )
-        self.assertEqual(0, self.report["locales"]["ja"]["emitted"])
+        self.assertEqual(native_ja, self.report["locales"]["ja"]["emitted"])
+        self.assertEqual(0, self.report["locales"]["de-DE"]["emitted"])
 
     def test_product_evidence_resolves_only_from_inventory(self) -> None:
         for record in self.records:
@@ -1866,26 +1888,41 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
         zh_records = [
             record for record in self.records if record["locale"] == "zh-Hant"
         ]
-        self.assertEqual(5, len(zh_records))
+        self.assertEqual(
+            sum("zh-Hant" in route["locales"] for route in self.source["routes"]),
+            len(zh_records),
+        )
         self.assertTrue(
             all("開發者" in record["publisher_disclosure"] for record in zh_records)
         )
 
     def test_localized_feature_evidence_never_falls_back_to_english(self) -> None:
         localized_features = [
-            evidence
+            (record["locale"], evidence)
             for record in self.records
             if record["locale"] != "en-US"
             for evidence in record["evidence"]
             if evidence["reference"].startswith("feature.")
         ]
-        self.assertEqual(3, len(localized_features))
-        for evidence in localized_features:
+        self.assertEqual(
+            sum(
+                ref.startswith("feature.")
+                for route in self.source["routes"]
+                for locale, copy in route["locales"].items()
+                if locale != "en-US"
+                for ref in copy["evidence_refs"]
+            ),
+            len(localized_features),
+        )
+        for locale, evidence in localized_features:
             self.assertNotEqual(
                 str(evidence["source_value"]).casefold(),
                 str(evidence["text"]).casefold(),
             )
-            self.assertRegex(str(evidence["text"]), r"[\u3400-\u9fff]")
+            self.assertEqual(
+                routes.UI[locale]["feature_labels"][evidence["source_value"]],
+                evidence["text"],
+            )
 
     def test_routes_are_substantive_and_editorially_distinct(self) -> None:
         self.assertGreaterEqual(

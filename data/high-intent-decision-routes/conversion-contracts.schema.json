@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "measurement_policy": {
+      "type": "object"
+    },
+    "routes": {
+      "items": {
+        "properties": {
+          "app_id": {
+            "enum": [
+              "6785004775",
+              "6773017109",
+              "6779977651",
+              "6784974530",
+              "6779552704",
+              "6790800323",
+              "6782251621",
+              "6782275018",
+              "6802423998",
+              "6798813048",
+              "6798814385"
+            ]
+          },
+          "copy": {
+            "additionalProperties": false,
+            "properties": {
+              "asset_captions": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "type": "object"
+              },
+              "free": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "limitations": {
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "paid": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "proof_note": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "queries": {
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "result": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "task": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "asset_captions",
+              "free",
+              "limitations",
+              "paid",
+              "proof_note",
+              "queries",
+              "result",
+              "task"
+            ],
+            "type": "object"
+          },
+          "creative_version": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "effective_at_utc": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "exclude_intents": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 3,
+            "type": "array"
+          },
+          "experiment_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "experiment_type": {
+            "const": "directional_observation"
+          },
+          "live_app_version": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "locale": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "offer_readback": {
+            "type": "object"
+          },
+          "offer_readback_at": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "outcome": {
+            "const": "unknown"
+          },
+          "proofs": {
+            "minItems": 1,
+            "type": "array"
+          },
+          "route_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "scaling_allowed": {
+            "const": false
+          }
+        },
+        "required": [
+          "app_id",
+          "copy",
+          "creative_version",
+          "effective_at_utc",
+          "exclude_intents",
+          "experiment_id",
+          "experiment_type",
+          "live_app_version",
+          "locale",
+          "offer_readback",
+          "offer_readback_at",
+          "outcome",
+          "proofs",
+          "route_id",
+          "scaling_allowed"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "state": {
+      "const": "generated_not_deployed"
+    }
+  },
+  "required": [
+    "schema_version",
+    "state",
+    "routes",
+    "measurement_policy"
+  ],
+  "title": "First-party conversion route observation contract",
+  "type": "object"
+}

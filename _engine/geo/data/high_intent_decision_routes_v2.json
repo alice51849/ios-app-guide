@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
@@ -13,7 +13,9 @@
     "relationship": "developer_of_every_listed_app",
     "disclosures": {
       "en-US": "This decision guide is published by Lumi Studio, the developer of the app discussed. It is first-party decision support, not an independent review or ranking.",
-      "zh-Hant": "本決策指南由所介紹 App 的開發者 Lumi Studio 發布，屬第一方決策資訊，並非獨立評測或排行榜。"
+      "zh-Hant": "本決策指南由所介紹 App 的開發者 Lumi Studio 發布，屬第一方決策資訊，並非獨立評測或排行榜。",
+      "fr-FR": "Ce guide est publié par Lumi Studio, le développeur de l’application présentée. Il s’agit d’informations de première main pour vous aider à choisir, et non d’un avis ou d’un classement indépendant.",
+      "ja": "このガイドは、紹介しているアプリの開発元である Lumi Studio が公開しています。製品選びの参考情報であり、独立した第三者によるレビューやランキングではありません。"
     }
   },
   "routes": [
@@ -22,7 +24,11 @@
       "route_slug": "handwrite-mark-up-and-review-offline",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -30,7 +36,7 @@
           "culture_route": "US college, certification, and continuing-education workflows often mix lecture PDFs, Apple Pencil notes, and recorded review material.",
           "query": "How can I handwrite on lecture PDFs and review everything offline on iPad?",
           "buyer_problem": "A class or study session becomes fragmented when handwriting, typed notes, PDF markup, and review audio live in separate places. The buying decision is whether one calm workspace can reduce that switching without requiring an account.",
-          "decision_rule": "Prioritize a unified study flow and offline access over collaboration or a large cloud workspace. Treat export, backup, and the exact free limit as items to confirm before moving existing coursework.",
+          "decision_rule": "One active notebook, unlimited pages and two styles are free. Upgrade once when you need more notebooks and styles.",
           "workflow_checks": [
             "Can the study flow begin with a lecture PDF and keep annotations close to the source?",
             "Can handwriting and typed follow-up notes stay useful when campus Wi-Fi is unreliable?",
@@ -41,16 +47,25 @@
             "Confirm the current iPad and Apple Pencil requirements on the App Store listing.",
             "Test one real lecture packet before importing a semester of material."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         }
-      }
+      },
+      "conversion_contract": "notesstudio100"
     },
     {
       "app_key": "aibriefpack",
       "route_slug": "organize-source-context-before-ai",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 5],
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -69,7 +84,12 @@
             "Run a small mixed-source brief and inspect the exported structure.",
             "Review the destination AI service's separate privacy terms before sending the brief."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -78,15 +98,19 @@
       "route_slug": "toeic-part-five-time-pressure",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
           "market": "United States",
           "culture_route": "English learners using the US storefront may be preparing for TOEIC for an overseas employer, transfer, or return-to-Asia career path rather than a US admissions test.",
-          "query": "TOEIC Part 5 takes too long: which iPhone study workflow targets weak spots daily?",
+          "query": "How can I practise TOEIC-style English offline a little each day?",
           "buyer_problem": "Incomplete-sentence questions feel short but repeatedly consume time when grammar and business vocabulary are not automatic. A useful decision route starts with the learner's weak pattern, not a promise of a particular score.",
-          "decision_rule": "Prefer a repeatable daily plan with visible weak-spot practice when consistency is the bottleneck. Do not treat any app, schedule, or score tracker as a guarantee of an ETS exam result.",
+          "decision_rule": "Start with the available free practice. One purchase unlocks the complete training.",
           "workflow_checks": [
             "Does the daily workload fit the actual number of minutes available?",
             "Can weak areas be revisited instead of receiving only a broad mixed quiz?",
@@ -97,16 +121,48 @@
             "Confirm the current content scope and purchase terms on the listing.",
             "Pair any study plan with current official TOEIC test information."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "fr-FR": {
+          "language": "fr",
+          "market": "France",
+          "culture_route": "En France, préparer une candidature, une mobilité interne ou un diplôme peut amener à travailler l’anglais en parallèle d’un emploi ou des cours. Une pratique courte et régulière peut alors être plus réaliste qu’une longue séance le week-end.",
+          "query": "Comment préparer le TOEIC hors ligne avec une pratique quotidienne ?",
+          "buyer_problem": "Vous souhaitez vous entraîner dans les transports ou entre deux rendez-vous, sans dépendre d’une connexion. L’enjeu est de choisir des exercices adaptés au temps disponible, puis de garder une routine que vous pouvez réellement suivre.",
+          "decision_rule": "Commencez gratuitement avec les exercices proposés. Un achat unique débloque l’entraînement complet.",
+          "workflow_checks": [
+            "Pouvez-vous intégrer une courte séance d’anglais à une journée de travail ou d’études ?",
+            "Les exercices proposés correspondent-ils aux compétences que vous voulez travailler ?",
+            "La pratique hors ligne répond-elle à votre besoin pendant les trajets ?"
+          ],
+          "alternative_lens": "Si vous cherchez les sujets officiels ou une préparation encadrée par un enseignant, privilégiez les ressources officielles ou un cours adapté. Des exercices originaux peuvent compléter ce travail, mais ne remplacent ni un accompagnement personnalisé ni une évaluation officielle.",
+          "verify_before_install": [
+            "Vérifiez la compatibilité indiquée sur l’App Store avant de commencer votre préparation.",
+            "Essayez une séance gratuite et consultez les consignes officielles de l’examen pour son format et ses conditions."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         }
-      }
+      },
+      "conversion_contract": "aim990"
     },
     {
       "app_key": "aim990plus",
       "route_slug": "exam-decisions-under-listening-pressure",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -125,7 +181,12 @@
             "Confirm that the current exercise scope matches the target exam section.",
             "Use official exam sources for rules, dates, and score interpretation."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -134,15 +195,19 @@
       "route_slug": "decide-when-an-iphone-battery-needs-service",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
           "market": "United States",
           "culture_route": "US iPhone owners often notice shorter runtime before a trip, trade-in, or workday and need to separate ordinary aging from a battery that may justify service.",
-          "query": "How can I judge whether my iPhone battery needs replacement without trusting impossible sensor claims?",
+          "query": "How can I understand recorded iPhone battery behaviour without guessing at sensors?",
           "buyer_problem": "Battery percentage alone does not explain long-term condition, while an impressive temperature, voltage, or cycle-count screen may rely on data ordinary iPhone apps cannot directly read. The decision is whether a transparent review can organize observable behavior and user-provided evidence without creating false precision.",
-          "decision_rule": "Use a battery-health report as decision support, then compare it with iOS Battery Health, recent runtime, charging behavior, and Apple's current service guidance. Prefer an authorized diagnostic when shutdowns, swelling, damage, or safety concerns appear.",
+          "decision_rule": "Start with the basic battery readings. Lifetime Pro is an optional one-time purchase; its export scope is unverified here.",
           "workflow_checks": [
             "Does every value distinguish direct observation, estimation, and information supplied by the owner?",
             "Can a trend be reviewed over time instead of treating one battery percentage as a diagnosis?",
@@ -153,7 +218,11 @@
             "Confirm the current free scope and one-time unlock details on the App Store listing.",
             "Do not rely on any third-party iPhone app that claims direct access to unavailable private battery sensors."
           ],
-          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.0", "feature.1"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         },
         "zh-Hant": {
           "language": "zh-Hant",
@@ -161,7 +230,7 @@
           "culture_route": "台灣 iPhone 使用者常在出國、換機估價或一整天外出前，察覺續航縮短，這時需要把正常老化、使用情境與可能值得送修的訊號分開判斷。",
           "query": "如何判斷 iPhone 電池是否該更換，又不被 App 無法直接量到的數值誤導？",
           "buyer_problem": "單看剩餘電量無法說明長期健康狀況，但若畫面直接宣稱能讀取溫度、電壓、電流或循環次數，也可能製造不實的精準感；真正的選擇是能否把可觀察變化與使用者提供的資料清楚分層。",
-          "decision_rule": "先把電池報告當成決策輔助，再交叉查看 iOS 的「電池健康度與充電」、近期續航、充電表現與 Apple 最新維修建議；若有膨脹、損傷、異常關機或安全疑慮，直接尋求授權檢測。",
+          "decision_rule": "可先從基本電池讀值開始。 Lifetime Pro 是可選的一次性購買；本頁尚未核實其報告匯出範圍。",
           "workflow_checks": [
             "每一個數值是否清楚區分直接量測、推估與使用者提供？",
             "是否能看一段時間的趨勢，而不是把單次電量當成診斷？",
@@ -172,16 +241,25 @@
             "先在 App Store 確認目前免費範圍與一次性解鎖內容。",
             "不要信任任何宣稱可直接取得 iPhone 私有電池感測數值的第三方 App。"
           ],
-          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.2"]
+          "evidence_refs": [
+            "feature.0",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
         }
-      }
+      },
+      "conversion_contract": "battai"
     },
     {
       "app_key": "caldaily",
       "route_slug": "save-name-search-calculation-history",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -200,7 +278,12 @@
             "Try naming and finding one real household or client calculation.",
             "Confirm the current free limit and export behavior on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -209,7 +292,11 @@
       "route_slug": "ats-resume-on-iphone-without-upload",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -228,7 +315,12 @@
             "Test an exported sample with the actual application portal before a deadline.",
             "Confirm current export formats and any free limits on the App Store listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -237,7 +329,11 @@
       "route_slug": "private-cycle-patterns-without-account",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -245,7 +341,7 @@
           "culture_route": "US users making post-Dobbs privacy choices may weigh account creation and data handling alongside ordinary cycle awareness.",
           "query": "Which private iPhone cycle tracker avoids an account and recurring subscription?",
           "buyer_problem": "Cycle history is intimate, and a friendly forecast is not enough if the user cannot understand where data is handled. The purchase decision should separate personal pattern awareness from medical advice or guaranteed fertility predictions.",
-          "decision_rule": "Prioritize an on-device, low-account workflow when privacy is the first filter. Seek clinical guidance when symptoms, contraception, fertility treatment, or pregnancy decisions require medical interpretation.",
+          "decision_rule": "Start with cycle recording without creating an account. Optional lifetime Pro unlocks future planning and fuller history.",
           "workflow_checks": [
             "Is the minimum data needed for a useful pattern clear before logging begins?",
             "Can the privacy model be understood without accepting vague wellness claims?",
@@ -256,16 +352,25 @@
             "Read the current privacy policy and App Privacy label before entering history.",
             "Do not use a consumer tracker as a substitute for diagnosis or emergency care."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         }
-      }
+      },
+      "conversion_contract": "cyca"
     },
     {
       "app_key": "dailymate",
       "route_slug": "complete-travel-sentences-on-watch",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -284,7 +389,12 @@
             "Confirm the current language list and Apple Watch requirements.",
             "Practice critical phrases before travel instead of relying on first use at the counter."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -293,7 +403,11 @@
       "route_slug": "free-situational-phrasebook-before-trip",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 3],
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -312,7 +426,12 @@
             "Check whether the needed destination language is currently included.",
             "Test one complete dialogue before considering the lifetime option."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -321,7 +440,11 @@
       "route_slug": "convert-and-log-travel-spending-offline",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -340,7 +463,12 @@
             "Confirm how saved exchange rates are updated before departure.",
             "Test the workflow in airplane mode with a sample trip."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -349,7 +477,11 @@
       "route_slug": "test-multi-currency-trip-budget-free",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -368,7 +500,13 @@
             "Check the listed free allowance and lifetime-unlock terms.",
             "Confirm rate behavior offline before relying on it during travel."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -377,7 +515,11 @@
       "route_slug": "translate-price-into-life-hours",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 3, 5],
+      "keyword_refs": [
+        0,
+        3,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -396,7 +538,12 @@
             "Set a realistic work-hour value before comparing purchases.",
             "Confirm current privacy and purchase details on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -405,7 +552,11 @@
       "route_slug": "pause-impulse-buy-with-work-hours",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -424,7 +575,13 @@
             "Use after-tax earning power for a more realistic comparison.",
             "Confirm widget, watch, and lifetime-unlock availability on the current listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -433,7 +590,11 @@
       "route_slug": "stop-social-apps-during-study-blocks",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -452,7 +613,12 @@
             "Confirm current iOS permission requirements for app blocking.",
             "Test the strictness with a short session before relying on it for an exam or deadline."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -461,7 +627,11 @@
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 5],
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -469,7 +639,7 @@
           "culture_route": "US heritage-Chinese families may balance English-dominant school days with weekend or home Zhuyin practice for communication with relatives and Taiwan materials.",
           "query": "What is a gentle, ad-free Zhuyin practice alternative for a young bilingual child?",
           "buyer_problem": "A child can recognize spoken Mandarin yet feel lost when Bopomofo symbols appear in books or family learning materials. The decision is whether playful, short practice fits better than worksheets or an English-first phonics app.",
-          "decision_rule": "Prioritize comfort, age-appropriate repetition, and an ad-free setting for an early learner. Use a teacher or structured heritage-language program when pronunciation feedback and a broader curriculum are required.",
+          "decision_rule": "Try the sound and tracing activities for ㄅ. Parents can unlock all 37 Zhuyin companions once. No ads or subscriptions.",
           "workflow_checks": [
             "Does the child meet Zhuyin symbols in sessions short enough to end positively?",
             "Can a caregiver connect practice to familiar Mandarin words at home?",
@@ -480,7 +650,11 @@
             "Try the free starting experience with the child rather than deciding from screenshots alone.",
             "Confirm the current parent-gate and lifetime-unlock details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         },
         "zh-Hant": {
           "language": "zh-Hant",
@@ -488,7 +662,7 @@
           "culture_route": "適合台灣學齡前與低年級家庭，把注音練習接到親子共讀、聯絡簿與日常看字情境，而不是只背單一符號。",
           "query": "台灣家長如何挑選溫和、無廣告的幼兒注音學習 App？",
           "buyer_problem": "孩子聽得懂中文，看到注音符號卻容易失去耐心；家長需要判斷短時間遊戲練習是否比反覆寫紙本更適合目前階段。",
-          "decision_rule": "先看孩子是否願意主動完成短練習，再看內容能否銜接共讀與生活用字；若需要即時糾音或完整識字課程，應搭配真人教學。",
+          "decision_rule": "先試玩確認是否符合需求，再依實際免費與買斷範圍決定。先試 ㄅ 的聽音與描寫。 喜歡再一次解鎖 37 個注音小夥伴；無廣告、無訂閱。",
           "workflow_checks": [
             "一次練習能否在孩子仍有成就感時結束？",
             "家長能否把當天符號接到熟悉的中文詞語？",
@@ -499,16 +673,25 @@
             "先陪孩子實際試玩免費內容，再判斷是否需要一次性解鎖。",
             "於目前 App Store 頁面確認家長閘門與購買方式。"
           ],
-          "evidence_refs": ["summary.zh-Hant", "fact.purchase_model", "fact.one_time_option", "capability.no_ads"]
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
         }
-      }
+      },
+      "conversion_contract": "lumibopomofo"
     },
     {
       "app_key": "lumibopomofopro",
       "route_slug": "complete-zhuyin-path-for-heritage-family",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 6],
+      "keyword_refs": [
+        0,
+        1,
+        6
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -527,7 +710,12 @@
             "Confirm device compatibility and current included content.",
             "Compare the paid-upfront edition with the free-to-start edition before purchase."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         },
         "zh-Hant": {
           "language": "zh-Hant",
@@ -546,7 +734,12 @@
             "購買前確認目前版本所含內容與支援裝置。",
             "先比較完整版與免費開始版的現行 App Store 說明。"
           ],
-          "evidence_refs": ["summary.zh-Hant", "fact.purchase_model", "fact.one_time_option", "capability.no_ads"]
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.no_ads"
+          ]
         }
       }
     },
@@ -555,7 +748,11 @@
       "route_slug": "try-phonics-before-one-time-unlock",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -574,7 +771,14 @@
             "Try the available free content with the child present.",
             "Confirm the current lifetime-unlock scope and parental controls."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -583,7 +787,11 @@
       "route_slug": "complete-phonics-for-home-kindergarten",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 5],
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -602,7 +810,12 @@
             "Check current content coverage against the child's learning stage.",
             "Compare the paid edition and free-to-start edition before buying."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -611,7 +824,11 @@
       "route_slug": "replace-math-resistance-with-short-play",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -630,7 +847,13 @@
             "Observe one free session rather than judging only completion.",
             "Confirm current age guidance and unlock terms on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -639,7 +862,11 @@
       "route_slug": "complete-math-thinking-space-adventure",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 3, 5],
+      "keyword_refs": [
+        0,
+        3,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -658,7 +885,12 @@
             "Check the current content range against the child's stage.",
             "Compare both Lumi Math editions before an upfront purchase."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -667,7 +899,11 @@
       "route_slug": "end-daily-routine-battles-with-play",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 3],
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -686,7 +922,13 @@
             "Test one routine for several days before adding more tasks.",
             "Confirm current free content, parent controls, and lifetime-unlock details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -695,7 +937,11 @@
       "route_slug": "complete-morning-and-bedtime-routine",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 3, 4],
+      "keyword_refs": [
+        0,
+        3,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -714,7 +960,12 @@
             "Compare included content and current device support with the free edition.",
             "Start with one transition and expand only after it feels calm."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -723,7 +974,11 @@
       "route_slug": "turn-family-travel-waiting-into-observation",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -742,7 +997,12 @@
             "Try one activity before departure so the interaction is familiar.",
             "Confirm current free content and parent-gated purchase details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -751,7 +1011,11 @@
       "route_slug": "decide-what-child-wears-outside",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 2, 3],
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -759,7 +1023,7 @@
           "culture_route": "US families may face large temperature swings between daycare drop-off, recess, and the afternoon pickup, making a raw forecast hard to translate for a small child.",
           "query": "Is it too cold, hot, or wet to take my toddler outside, and what should they wear?",
           "buyer_problem": "A forecast number does not directly answer the parent standing by the door with a wriggling child. The decision is whether a family-oriented view can turn conditions into a calmer outing conversation.",
-          "decision_rule": "Use weather guidance as one input alongside the child's health, local alerts, shade, activity level, and caregiver judgment. Never treat a simplified presentation as an official safety warning.",
+          "decision_rule": "The Today home screen is free. Unlock hourly and weekly forecasts, checklists, more locations and widgets once.",
           "workflow_checks": [
             "Can the caregiver understand the immediate outing decision at a glance?",
             "Can clothing choices be adjusted for the child's activity and local conditions?",
@@ -770,16 +1034,48 @@
             "Check official local alerts before severe-weather outings.",
             "Confirm location, data-source, and purchase details on the current listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "ja": {
+          "language": "ja",
+          "market": "日本",
+          "culture_route": "日本では、登園前や公園へ出かける前に、雨だけでなく紫外線や風、気温に合わせて持ち物を考える場面があります。親子の外遊びは、予報と実際の様子を合わせて判断することが大切です。",
+          "query": "子どもの外遊びと服装を、天気予報からどう考える？",
+          "buyer_problem": "短い時間で出発の準備をするとき、気温だけでは上着や持ち物を決めにくいことがあります。いくつかの気象要因をまとめて見られると、家族の予定に合わせて準備を考えやすくなります。",
+          "decision_rule": "「今日」のホーム画面は無料です。 時間別・週間予報、チェックリスト、複数の場所、ウィジェットは一度の購入で使えます。",
+          "workflow_checks": [
+            "気温だけでなく、雨・紫外線・風も確認して準備を考えられますか？",
+            "子どもの服装や持ち物を、予報と実際の体調に合わせて見直せますか？",
+            "出発前に予報の変化と現地の様子をもう一度確かめられますか？"
+          ],
+          "alternative_lens": "雨雲の細かな動きを調べたい場合は、専門的なレーダーや公的な気象情報が向いています。暑さへの対応や体調については、天気アプリだけで判断せず、公的機関や医療の案内も参考にしてください。",
+          "verify_before_install": [
+            "予報の提供元は Apple WeatherKit です。更新時刻と現地の状況も確認してください。",
+            "対応端末と購入内容は App Store で確認し、まず無料の「今日」画面を試してください。"
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.no_ads"
+          ]
         }
-      }
+      },
+      "conversion_contract": "lumiweather"
     },
     {
       "app_key": "maskmyfile",
       "route_slug": "redact-client-files-before-sharing",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -798,7 +1094,12 @@
             "Test a disposable sample and attempt text selection on the exported result.",
             "Confirm supported file formats and the current lifetime-unlock terms."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -807,7 +1108,11 @@
       "route_slug": "cozy-checklist-without-project-overhead",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 5],
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -815,7 +1120,7 @@
           "culture_route": "US students and home users may want a visually comforting daily list without importing a workplace project-management system into personal life.",
           "query": "What is a simple, cozy alternative to a complex task manager on iPhone?",
           "buyer_problem": "A productivity system can become another project when every small task needs dates, priorities, contexts, and team fields. The decision is whether a satisfying lightweight checklist is enough to support follow-through.",
-          "decision_rule": "Choose simplicity when the main need is seeing and completing a short personal list. Choose a project platform when dependencies, collaboration, files, and reporting are essential.",
+          "decision_rule": "Checklists and Home Screen check-offs are free. Premium skins are optional and unlock with one purchase.",
           "workflow_checks": [
             "Can today's list be understood without configuring a methodology?",
             "Does completion feedback encourage return without creating pressure?",
@@ -826,16 +1131,48 @@
             "Try one normal week before moving every recurring task.",
             "Confirm the current free limit and one-time purchase scope."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣的日常待辦常是下班順路買菜、打電話或澆花；把幾件小事留在 iPhone 主畫面，比開一套專案系統更順手，也更容易隨手完成。",
+          "query": "想用可愛待辦小工具，在 iPhone 桌面直接勾選清單？",
+          "buyer_problem": "事情不多，卻散在訊息和腦中時，重點是隨時看得到、做完就能勾選。若還得先設定專案、指派人員或研究複雜看板，反而容易放棄記錄。",
+          "decision_rule": "基本清單與主畫面小工具勾選都免費。 Premium 主題是可選的一次性購買，不影響免費清單。",
+          "workflow_checks": [
+            "主畫面清單能否幫你記住今天真正要做的小事？",
+            "事情完成後，直接勾選是否比打開專案工具更方便？",
+            "只使用免費清單時，是否已能完成你的日常整理？"
+          ],
+          "alternative_lens": "若需要多人指派、專案依賴或企業報表，應改看專案管理工具；若重點是日期行程，行事曆更合適；若想分析習慣連勝，也應選擇專門的紀錄方式。",
+          "verify_before_install": [
+            "先確認 App Store 列出的 iPhone、iPad 與小工具相容條件。",
+            "用自己的短清單試一次主畫面操作，再決定是否選購喜歡的主題。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
         }
-      }
+      },
+      "conversion_contract": "mochi"
     },
     {
       "app_key": "mochidonestamp",
       "route_slug": "remember-when-household-task-was-done",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -843,7 +1180,7 @@
           "culture_route": "US households juggle filters, smoke-alarm checks, bedding, pet care, photo backups, and family calls whose timing matters but rarely belongs on a fixed weekly checklist.",
           "query": "When did I last replace the filter, wash the sheets, or back up photos?",
           "buyer_problem": "A recurring reminder assumes life happens on schedule, while many maintenance tasks should restart from the day they were actually completed. The decision is whether an event history answers the real question better than another to-do list.",
-          "decision_rule": "Choose last-done tracking when elapsed time and completion history matter more than a fixed calendar. Use a regulated maintenance system when inspections, warranties, or safety records require formal documentation.",
+          "decision_rule": "One active event and unlimited history are free. Unlock more active events with a one-time purchase.",
           "workflow_checks": [
             "Can completion be recorded quickly enough that the habit survives?",
             "Can an overdue rhythm restart from the actual completion date?",
@@ -854,16 +1191,48 @@
             "Start with one meaningful household event and inspect its history.",
             "Confirm current free limits, backup behavior, and lifetime-unlock details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣家庭的換濾芯、洗冷氣濾網和更換床單，不一定需要每天打卡；比較實際的問題，是上次到底什麼時候做過，以及下一次該從哪一天算起。",
+          "query": "上次換濾芯是什麼時候？如何在完成後重新計算提醒？",
+          "buyer_problem": "家事常是想起來才做，固定星期幾的通知未必反映真正的完成時間。能回看最後一次和歷史紀錄，通常比維持每日連勝更有用，也比較沒有壓力。",
+          "decision_rule": "先試玩確認是否符合需求，再依實際免費與買斷範圍決定。1 個使用中事件、無限歷史紀錄免費。 需要更多使用中事件時，再一次購買解鎖。",
+          "workflow_checks": [
+            "記錄的時間是否真的是這次家事完成的時間？",
+            "下次提醒是否適合從實際完成時間重新計算？",
+            "回看不限筆數的歷史，是否足以回答上次何時做過？"
+          ],
+          "alternative_lens": "需要固定工作班表或複雜專案排程時，應選排程工具；想追求每日連勝時，習慣追蹤器更合適。這裡聚焦生活事件的完成時間，不額外承諾未核對的家庭同步能力。",
+          "verify_before_install": [
+            "先以換濾芯或床單等真實事件測試記錄與回看流程。",
+            "通知仍受系統權限與設定影響，安裝後應確認所需權限。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
         }
-      }
+      },
+      "conversion_contract": "mochidonestamp"
     },
     {
       "app_key": "moneytag",
       "route_slug": "measure-profit-by-freelance-project",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -882,7 +1251,13 @@
             "Test one completed project against records you already trust.",
             "Confirm export, backup, free-limit, and lifetime-unlock details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3"
+          ]
         }
       }
     },
@@ -891,15 +1266,19 @@
       "route_slug": "turn-meeting-notes-into-one-slide",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 5],
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
           "market": "United States",
           "culture_route": "US managers and consultants often need a single executive-summary slide that can survive a meeting, email, or PowerPoint handoff without becoming a miniature report.",
-          "query": "How do I turn meeting notes or a report into one editable presentation slide?",
+          "query": "How do I turn meeting notes into one 16:9 slide, not a whole deck?",
           "buyer_problem": "Copying paragraphs into a deck produces a wall of text, while aggressive trimming can remove the decision, evidence, or owner. The buying question is whether a one-slide constraint creates a clearer handoff.",
-          "decision_rule": "Use a one-page slide when the audience needs the key message, support, and next step at once. Use a full deck when sequencing, appendix detail, or multiple decisions cannot be compressed honestly.",
+          "decision_rule": "Try the slide-making workflow free. PPTX export is a one-time Pro feature.",
           "workflow_checks": [
             "Can the source material be reduced to one governing message?",
             "Can evidence and next action remain visible without shrinking into unreadable text?",
@@ -910,16 +1289,25 @@
             "Test a real meeting recap and open the exported file in the target presentation app.",
             "Confirm current input and export support on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         }
-      }
+      },
+      "conversion_contract": "onepageppt"
     },
     {
       "app_key": "photocream",
       "route_slug": "film-look-editor-without-watermark",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 5],
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -938,7 +1326,12 @@
             "Export one detailed image and inspect it at full size.",
             "Confirm current unlock scope, output resolution, and watermark policy."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -947,7 +1340,11 @@
       "route_slug": "recover-storage-from-photo-clutter",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -966,7 +1363,12 @@
             "Back up irreplaceable photos before a large cleanup.",
             "Start with screenshots or one small group and verify the Recently Deleted result."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -975,15 +1377,19 @@
       "route_slug": "scan-and-read-documents-on-device",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 2, 3],
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
           "market": "United States",
           "culture_route": "US nurses, field workers, students, and small offices may scan forms or notes in places where cloud upload is undesirable or connectivity is unreliable.",
-          "query": "Which iPhone document scanner creates PDFs and reads text on-device without cloud processing?",
+          "query": "How can I scan a contract to PDF and extract text on my iPhone without uploading it?",
           "buyer_problem": "A quick scan can contain patient, client, school, or identity information that should not be sent to an unknown server. The decision joins capture quality, OCR needs, offline use, and the destination's document rules.",
-          "decision_rule": "Choose an on-device scanner when local processing and a simple PDF workflow are central. Use an approved enterprise capture system when retention, access controls, audit trails, or regulated records are involved.",
+          "decision_rule": "Try your first scan and preview free. Unlock unlimited scanning and advanced exports with one purchase.",
           "workflow_checks": [
             "Can the page be captured and checked before it becomes a PDF?",
             "Can needed text be read without requiring a cloud round trip?",
@@ -994,16 +1400,25 @@
             "Test a non-sensitive sample with the final destination.",
             "Confirm supported formats, OCR scope, and current purchase details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         }
-      }
+      },
+      "conversion_contract": "scanto"
     },
     {
       "app_key": "savetag",
       "route_slug": "turn-saved-links-into-a-readable-queue",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 2, 5],
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1022,7 +1437,12 @@
             "Save a few real links from different sources and test whether retrieval feels faster.",
             "Confirm the current free limit, export options, and lifetime-unlock scope on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         },
         "zh-Hant": {
           "language": "zh-Hant",
@@ -1041,7 +1461,11 @@
             "先用幾個不同來源的真實連結測試保存與找回流程。",
             "在 App Store 確認目前免費額度、匯出方式與一次性解鎖範圍。"
           ],
-          "evidence_refs": ["summary.zh-Hant", "fact.purchase_model", "feature.2"]
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1050,7 +1474,11 @@
       "route_slug": "offline-sleep-sounds-without-subscription",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1069,7 +1497,14 @@
             "Test volume and looping at the bedside before relying on it overnight.",
             "Protect hearing and seek medical advice for persistent sleep or tinnitus concerns."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -1078,7 +1513,11 @@
       "route_slug": "sort-search-and-finish-screenshot-backlog",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 5],
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1097,7 +1536,12 @@
             "Test search and classification on a varied sample before relying on a bulk workflow.",
             "Confirm the current free history and lifetime-unlock scope on the App Store listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         },
         "zh-Hant": {
           "language": "zh-Hant",
@@ -1116,7 +1560,11 @@
             "先用內容差異大的實際截圖測試分類與搜尋效果。",
             "在 App Store 確認目前免費歷史範圍與一次性解鎖內容。"
           ],
-          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1125,7 +1573,11 @@
       "route_slug": "make-passport-photo-at-home",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 5],
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1144,7 +1596,12 @@
             "Check the destination government's current official photo rules.",
             "Confirm current supported formats and device requirements on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1153,7 +1610,11 @@
       "route_slug": "test-passport-photo-layout-free",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 4],
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1172,7 +1633,12 @@
             "Use only the issuing authority's current requirements.",
             "Confirm the free allowance and lifetime-unlock terms on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1181,7 +1647,11 @@
       "route_slug": "speak-then-shape-usable-notes",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1200,7 +1670,12 @@
             "Test with the accent, room noise, and vocabulary typical of real use.",
             "Get required consent and confirm current transcription and export details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1209,7 +1684,11 @@
       "route_slug": "plan-one-upcoming-trip-without-clutter",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 3],
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1228,7 +1707,12 @@
             "Build one real day of the upcoming trip before importing everything.",
             "Confirm free limits, export, and lifetime-unlock details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1237,7 +1721,11 @@
       "route_slug": "private-offline-family-trip-plan",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 3],
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1256,7 +1744,14 @@
             "Test offline access before leaving reliable connectivity.",
             "Keep official booking confirmations and emergency details in their authoritative sources."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4"
+          ]
         }
       }
     },
@@ -1265,7 +1760,11 @@
       "route_slug": "improve-soft-family-photo-realistically",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 3, 5],
+      "keyword_refs": [
+        0,
+        3,
+        5
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1273,7 +1772,7 @@
           "culture_route": "US parents often discover a soft birthday, sports, or school photo only after the moment cannot be recreated, making privacy and realistic expectations important.",
           "query": "Can I improve a blurry photo of my child on iPhone without uploading it?",
           "buyer_problem": "A cherished image may be soft from motion, focus, or low light, but no enhancer can recover detail the camera never captured. The decision is whether a private enhancement produces a more usable version without pretending to restore ground truth.",
-          "decision_rule": "Use enhancement for careful visual improvement, then compare the result with the original at normal viewing size. Do not use invented detail for identity, evidence, medical, or other high-stakes interpretation.",
+          "decision_rule": "Start by comparing the enhancement preview. Full-resolution, watermark-free export requires a one-time Pro unlock.",
           "workflow_checks": [
             "Can the original remain available for side-by-side comparison?",
             "Does the result look natural at the size where it will be viewed or printed?",
@@ -1284,16 +1783,48 @@
             "Test one representative image before unlocking or batch work.",
             "Inspect faces, text, and fine edges closely for generated-looking artifacts."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "ja": {
+          "language": "ja",
+          "market": "日本",
+          "culture_route": "日本の家族写真では、室内の光や子どもの動きで少しぼけてしまうことがあります。大切な一枚を残したいときも、加工した部分と元の情報を区別しながら仕上がりを見ることが大切です。",
+          "query": "少しぼけた家族写真を、購入前に補正プレビューで比較できる？",
+          "buyer_problem": "残したい写真が少し柔らかく写っていると、補正が役立つか判断しにくいものです。購入前に同じ写真の前後を見比べられれば、顔や細部が自然に見えるか、自分で確かめられます。",
+          "decision_rule": "補正プレビューの比較から試せます。 元の解像度・透かしなしでの書き出しには、一度の Pro 購入が必要です。",
+          "workflow_checks": [
+            "同じ写真の補正前と補正後を見比べて、違いを確認できますか？",
+            "顔や細部が不自然になっていないか、自分で判断できますか？",
+            "元の解像度と透かしなしの書き出しが、本当に必要ですか？"
+          ],
+          "alternative_lens": "手ぶれが強い場合や細部が記録されていない場合は、撮り直せるなら撮り直すほうが適切です。記録の正確さが重要な本人確認や鑑識では、補正画像ではなく元データと専門的な手続きを優先してください。",
+          "verify_before_install": [
+            "大切な元写真は残したまま、一枚でプレビューを試してください。",
+            "App Store の対応端末と、実際の購入画面に表示される内容を確認してください。"
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.private_or_on_device"
+          ]
         }
-      }
+      },
+      "conversion_contract": "unblurry"
     },
     {
       "app_key": "wifiaid",
       "route_slug": "separate-wifi-dns-and-website-failure",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1312,7 +1843,12 @@
             "Run checks against more than one destination before concluding a site is down.",
             "Confirm current diagnostic scope and purchase terms on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1321,7 +1857,11 @@
       "route_slug": "free-check-wifi-versus-website",
       "intent_type": "problem_aware",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1340,7 +1880,12 @@
             "Compare at least two websites and another device when possible.",
             "Confirm each tool's free-use allowance and lifetime-unlock scope."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1349,7 +1894,11 @@
       "route_slug": "open-encrypted-and-split-archives-on-iphone",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1368,7 +1917,15 @@
             "Match the sender's exact format, encryption and split-volume requirements against the supported list.",
             "Confirm the current paid download price and remember that RAR and RAR5 are extraction-only."
           ],
-          "evidence_refs": ["summary.en", "fact.purchase_model", "feature.0", "feature.1", "feature.2", "feature.3", "capability.no_ads"]
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "capability.no_ads"
+          ]
         }
       }
     },
@@ -1377,7 +1934,11 @@
       "route_slug": "five-words-without-building-decks",
       "intent_type": "alternative",
       "primary": true,
-      "keyword_refs": [0, 1, 2],
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1396,7 +1957,12 @@
             "Try the daily rhythm for a week before unlocking more.",
             "Confirm current language coverage and lifetime-unlock terms."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
         }
       }
     },
@@ -1405,7 +1971,11 @@
       "route_slug": "vocabulary-on-widget-and-watch",
       "intent_type": "privacy_pay_once",
       "primary": true,
-      "keyword_refs": [0, 1, 3],
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -1424,7 +1994,15 @@
             "Confirm the needed language and current Apple Watch requirements.",
             "Test whether glance-based review fits the learner before replacing another study method."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4", "feature.5"]
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4",
+            "feature.5"
+          ]
         }
       }
     }

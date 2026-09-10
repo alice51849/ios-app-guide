@@ -1,0 +1,1664 @@
+{
+  "schema_version": 1,
+  "scope": "first_party_outreach_only",
+  "evidence_report": "asc-conversion-surface-review:2026-09-10:sections-4-and-7",
+  "evidence_report_sha256": "04f10e91f364e93b619a62c52bd55575c5dad3d5adca3f6e2ae83f56189c671e",
+  "apps": {
+    "mochi": {
+      "app_id": "6785004775",
+      "route_slug": "cozy-checklist-without-project-overhead",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0.10",
+      "live_readback_at": "2026-09-10T16:59:22.811605+00:00",
+      "offer_readback_at": "2026-09-10T17:09:33.042986+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.MochiTodo.premium",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "3.99",
+            "readback_at": "2026-09-10T17:09:32.391603+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "120",
+            "readback_at": "2026-09-10T17:09:33.042986+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6785004775-v1",
+      "free_feature_ids": [
+        "basic_checklist",
+        "home_screen_checkoff"
+      ],
+      "paid_feature_ids": [
+        "premium_skins"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "enterprise project management",
+        "calendar replacement",
+        "habit streak analytics"
+      ],
+      "published_claim_ids": [
+        "basic_checklist",
+        "home_screen_checkoff",
+        "premium_skins",
+        "100_theme_collection"
+      ],
+      "proofs": [
+        {
+          "id": "mochi-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "basic_checklist",
+            "home_screen_checkoff",
+            "premium_skins",
+            "100_theme_collection"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T16:59:22.811605+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6785004775",
+          "source_sha256": "31322790b0c951eaa007524a099ff449f4e545786422f7451bd8a6128dd47cb1"
+        },
+        {
+          "id": "mochi-widget",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_mochi_widget"
+          ],
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/04/5c/d3/045cd375-a4d2-d432-3ac3-1dd71fb13c61/en_widget.png/480x640bb.jpg",
+          "source_sha256": "27da5ce968cbac3f0aaa42d2687fe355e6d13cfe836d34b83df63c8de01339ad",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "7cfd59a1fc0a452edcaf8ffcc8e8e00ffb9396f410e8941cd2f2302f107ab17f",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "mochi-checkoff",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_mochi_checkoff"
+          ],
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/60/de/d660dead-d404-bf46-47cd-17fff152acc9/en_home.png/480x640bb.jpg",
+          "source_sha256": "18d0a030b97a86c7257e6e6390c7221f60fcfbb6af6db0edca6f2c28737492f5",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "479d0c8b2531379a5f7617c19c932f0237765a6edf7ed1d76f76cbf027b8dae5",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "mochi-widget-tw",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_mochi_widget_tw"
+          ],
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/0f/86/a80f8639-f7fd-f1d4-6c36-87ea74a48d33/zh-Hant_widget.png/480x640bb.jpg",
+          "source_sha256": "e121fb20e6bc12bd5432c82e0592f2dd406b9ffd81bea7ec540bfe16f9f5fc93",
+          "asset": {
+            "locale": "zh-Hant",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "91b7006aedfe147e261b73e31c79cab08414dbd33564b629f96efc137a6109ed",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "A cozy checklist on your Home Screen",
+          "result": "Check off everyday to-dos without opening a project workspace.",
+          "free": "Checklists and Home Screen check-offs are free.",
+          "paid": "Premium skins are optional and unlock with one purchase.",
+          "queries": [
+            "cute checklist widget iphone",
+            "check off to do home screen"
+          ],
+          "limitations": [
+            "The 100-theme collection includes optional Premium skins; not every theme is free.",
+            "This is not enterprise project management, a calendar replacement, or habit-streak analytics."
+          ],
+          "proof_note": "The published screens show a Home Screen checklist and checked-off tasks, not a paid-only widget.",
+          "asset_captions": {
+            "mochi-widget": "Published Home Screen checklist; basic widget use is free.",
+            "mochi-checkoff": "Published checklist with completed tasks."
+          }
+        },
+        "zh-Hant": {
+          "task": "把可愛待辦清單放在主畫面",
+          "result": "直接在主畫面勾選日常待辦，不必打開複雜的專案工具。",
+          "free": "基本清單與主畫面小工具勾選都免費。",
+          "paid": "Premium 主題是可選的一次性購買，不影響免費清單。",
+          "queries": [
+            "可愛待辦小工具",
+            "桌面直接勾選清單"
+          ],
+          "limitations": [
+            "100 種主題中包含可選購的 Premium 主題，並非每款主題都免費。",
+            "適合日常待辦，不取代企業專案管理、行事曆或習慣連勝分析。"
+          ],
+          "proof_note": "已核對的台灣商店圖片展示主畫面清單；小工具不是付費限定功能。",
+          "asset_captions": {
+            "mochi-widget-tw": "已發布的台灣主畫面清單；基本小工具免費。"
+          }
+        }
+      }
+    },
+    "lumibopomofo": {
+      "app_id": "6773017109",
+      "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
+      "primary_locale": "zh-Hant",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0.11",
+      "live_readback_at": "2026-09-10T16:57:21.751132+00:00",
+      "offer_readback_at": "2026-09-10T17:09:28.366814+00:00",
+      "offer_readback": {
+        "product_id": "full_unlock_lifetime",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "8.99",
+            "readback_at": "2026-09-10T17:09:27.737494+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "290",
+            "readback_at": "2026-09-10T17:09:28.366814+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6773017109-v1",
+      "free_feature_ids": [
+        "b_sound_tracing_trial"
+      ],
+      "paid_feature_ids": [
+        "37_zhuyin_companions"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "Latin-letter Hanyu Pinyin",
+        "complete Chinese-character course",
+        "official curriculum endorsement"
+      ],
+      "published_claim_ids": [
+        "b_sound_tracing_trial",
+        "37_zhuyin_companions",
+        "no_ads",
+        "no_subscription",
+        "tone_practice",
+        "sound_building"
+      ],
+      "proofs": [
+        {
+          "id": "lumibopomofo-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "b_sound_tracing_trial",
+            "37_zhuyin_companions",
+            "no_ads",
+            "no_subscription",
+            "tone_practice",
+            "sound_building"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0.11",
+          "observed_at": "2026-09-10T16:57:21.751132+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6773017109",
+          "source_sha256": "5060f882e4f1b3019a56317a3592321a29428d172c7d6995e7f702037a978403"
+        },
+        {
+          "id": "bopomofo-tones",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_bopomofo_tones"
+          ],
+          "live_app_version": "1.0.11",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/6f/02/126f026b-2c28-4451-2ac8-68149b8e6c6a/01.png/480x640bb.jpg",
+          "source_sha256": "86e071c8843dee4559a06bfbdd182997931119bba5c0fcf3bf0039b066e14277",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "62ee2da5938e53e8794f049983bbc9a9bd61737a63971c1c539df9556f3bc7df",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "bopomofo-sounds",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_bopomofo_sounds"
+          ],
+          "live_app_version": "1.0.11",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ca/e0/66/cae06610-4668-ab81-8f77-e8eeebdb519c/02.png/480x640bb.jpg",
+          "source_sha256": "e4ec98904a492e07df7fe49fcf0ce6b8a9392ab046942246bfbff4ed0a1b6d00",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "6793a248456adf68f829d30a1857f42002884949d9b0f02586d4f0bbb3c4ae13",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "bopomofo-map-tw",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_bopomofo_map_tw"
+          ],
+          "live_app_version": "1.0.11",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/7e/e3/8d7ee39b-8844-0380-9eac-9773be1e3023/00.png/480x640bb.jpg",
+          "source_sha256": "3a96a936c2130beffd7ac70c64fde73c6d475cb3f1390f47f772e68205dfa033",
+          "asset": {
+            "locale": "zh-Hant",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "032cc73aef97513f853b3df9084179048cd7b5ec15bba8517410a8fcc3fe249d",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "bopomofo-tracing-result",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "completed_b_tracing_proof"
+          ],
+          "asset": null,
+          "reason": "Reviewed images do not show a completed ㄅ tracing result.",
+          "live_app_version": "1.0.11",
+          "observed_at": "2026-09-10T16:57:21.751132+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6773017109",
+          "source_sha256": "5060f882e4f1b3019a56317a3592321a29428d172c7d6995e7f702037a978403"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Start Taiwanese Zhuyin together",
+          "result": "Listen to ㄅ, try tracing it, and explore how Zhuyin sounds fit together.",
+          "free": "Try the sound and tracing activities for ㄅ.",
+          "paid": "Parents can unlock all 37 Zhuyin companions once. No ads or subscriptions.",
+          "queries": [
+            "bopomofo practice for Taiwanese heritage kids"
+          ],
+          "limitations": [
+            "This teaches Taiwanese Zhuyin, not Latin-letter Hanyu Pinyin or a complete Chinese-character course.",
+            "It is not an officially endorsed curriculum. Purchases are a parent's choice behind the in-app parental gate."
+          ],
+          "proof_note": "Published screens show tone and sound-building activities. A completed ㄅ tracing result is not verified in this evidence set.",
+          "asset_captions": {
+            "bopomofo-tones": "Published tone activity; this is Taiwanese Zhuyin.",
+            "bopomofo-sounds": "Published sound-building activity, not Latin-letter Pinyin."
+          }
+        },
+        "zh-Hant": {
+          "task": "陪孩子從 ㄅ 開始練注音",
+          "result": "先聽聲音、試著描寫，再一起認識注音怎麼拼讀。",
+          "free": "先試 ㄅ 的聽音與描寫。",
+          "paid": "喜歡再一次解鎖 37 個注音小夥伴；無廣告、無訂閱。",
+          "queries": [
+            "幼兒注音筆順練習",
+            "ㄅㄆㄇ親子學習"
+          ],
+          "limitations": [
+            "這是台灣注音入門，不是拉丁字母漢語拼音教材，也不是完整漢字識字課程。",
+            "不宣稱官方教材背書。是否購買由家長決定，App 內購買須通過家長閘門。"
+          ],
+          "proof_note": "已核對的台灣商店圖展示注音地圖。這批資料尚未證明 ㄅ 描寫的完成成果，因此不把地圖當作描寫成果展示。",
+          "asset_captions": {
+            "bopomofo-map-tw": "台灣公開注音地圖，不當作描寫完成成果。"
+          }
+        }
+      }
+    },
+    "scanto": {
+      "app_id": "6779977651",
+      "route_slug": "scan-and-read-documents-on-device",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.2.1",
+      "live_readback_at": "2026-09-10T17:00:12.280609+00:00",
+      "offer_readback_at": "2026-09-10T17:09:40.109241+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.OfflineScannerPro.fullunlock",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "2.99",
+            "readback_at": "2026-09-10T17:09:39.503670+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "90",
+            "readback_at": "2026-09-10T17:09:40.109241+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6779977651-v1",
+      "free_feature_ids": [
+        "first_scan_preview"
+      ],
+      "paid_feature_ids": [
+        "unlimited_scans",
+        "advanced_exports"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "unlimited free exports",
+        "document compliance guarantee",
+        "medical regulatory certification"
+      ],
+      "published_claim_ids": [
+        "first_scan_preview",
+        "unlimited_scans",
+        "advanced_exports",
+        "on_device_ocr",
+        "document_organization"
+      ],
+      "proofs": [
+        {
+          "id": "scanto-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "first_scan_preview",
+            "unlimited_scans",
+            "advanced_exports",
+            "on_device_ocr",
+            "document_organization"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.2.1",
+          "observed_at": "2026-09-10T17:00:12.280609+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6779977651",
+          "source_sha256": "766f1352357259466e6ead65ca26b509e13cdc7fef056c42be8fadc6a09ab1c0"
+        },
+        {
+          "id": "scanto-library",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_scanto_library"
+          ],
+          "live_app_version": "1.2.1",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/15/3b/31153b51-668b-0d61-d65c-3bbea9debe3d/01.png/480x640bb.jpg",
+          "source_sha256": "a888a1dbba65aa685cda0a76972d4191650da3dada94e5acb293e6d0d4640f3a",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "5b1ae798353677edc876cae5bc9c8b46acf06d12add67e265442084ca7ac44ed",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "scanto-receipt-search",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "verified_receipt_search_hit"
+          ],
+          "asset": null,
+          "reason": "The OCR screen repeats a heading four times; it does not prove a receipt-body search hit.",
+          "live_app_version": "1.2.1",
+          "observed_at": "2026-09-10T17:00:12.280609+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6779977651",
+          "source_sha256": "766f1352357259466e6ead65ca26b509e13cdc7fef056c42be8fadc6a09ab1c0"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Keep a scan without uploading it",
+          "result": "Organize scanned documents and extract text on your device.",
+          "free": "Try your first scan and preview free.",
+          "paid": "Unlock unlimited scanning and advanced exports with one purchase.",
+          "queries": [
+            "scan contract PDF without upload",
+            "offline receipt OCR iphone"
+          ],
+          "limitations": [
+            "OCR runs on the device, but the reviewed images do not demonstrate a real receipt-text search hit.",
+            "Unlimited clean exports are not promised for free. No legal, document-compliance or medical certification is claimed."
+          ],
+          "proof_note": "The published library and folders show document organization. The repeated four-line OCR title is excluded as search-result proof.",
+          "asset_captions": {
+            "scanto-library": "Published document folders; no OCR search hit is claimed by this image."
+          }
+        }
+      }
+    },
+    "aim990": {
+      "app_id": "6784974530",
+      "route_slug": "toeic-part-five-time-pressure",
+      "primary_locale": "fr-FR",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.4.2",
+      "live_readback_at": "2026-09-10T16:56:13.844595+00:00",
+      "offer_readback_at": "2026-09-10T17:09:18.965076+00:00",
+      "offer_readback": {
+        "product_id": "aim990.fullunlock",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "5.99",
+            "readback_at": "2026-09-10T17:09:18.277069+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "190",
+            "readback_at": "2026-09-10T17:09:18.965076+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6784974530-v1",
+      "free_feature_ids": [
+        "practice_trial"
+      ],
+      "paid_feature_ids": [
+        "complete_training"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "real past exam questions",
+        "official or licensed TOEIC",
+        "guaranteed 990 in 30 days",
+        "Aim990 Plus",
+        "pending 1.4.3 features"
+      ],
+      "published_claim_ids": [
+        "practice_trial",
+        "complete_training",
+        "original_offline_practice"
+      ],
+      "proofs": [
+        {
+          "id": "aim990-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "practice_trial",
+            "complete_training",
+            "original_offline_practice"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.4.2",
+          "observed_at": "2026-09-10T16:56:13.844595+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6784974530",
+          "source_sha256": "b9c2299a9e87c966e409f2104e3671d76825408d37cabb25b94dac64d7933840"
+        },
+        {
+          "id": "aim990-practice",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_aim990_practice"
+          ],
+          "live_app_version": "1.4.2",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/e9/0a/55e90a85-db34-4bad-c17d-ccfd9586536e/2_2_practice.png/480x640bb.jpg",
+          "source_sha256": "500f63a16982f2a846526122d3d6ad35b2b0f9015f81b7ffc6d7342e6ce8a994",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "c07dffb6f00348ce9e88f3e532c2d4e15938d629fdcd9124119e7774bf36c712",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "aim990-completed-diagnosis",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "completed_weakness_diagnosis"
+          ],
+          "asset": null,
+          "reason": "Shipping 1.4.2 screenshot says more answers are needed. Pending 1.4.3 is excluded.",
+          "live_app_version": "1.4.2",
+          "observed_at": "2026-09-10T16:56:13.844595+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6784974530",
+          "source_sha256": "b9c2299a9e87c966e409f2104e3671d76825408d37cabb25b94dac64d7933840"
+        },
+        {
+          "id": "aim990-native-fr-result",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "native_french_visual_result"
+          ],
+          "asset": null,
+          "reason": "No reviewed French result asset in the report.",
+          "live_app_version": "1.4.2",
+          "observed_at": "2026-09-10T16:56:13.844595+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6784974530",
+          "source_sha256": "b9c2299a9e87c966e409f2104e3671d76825408d37cabb25b94dac64d7933840"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Make room for daily English practice",
+          "result": "Practise offline with original TOEIC-style exercises.",
+          "free": "Start with the available free practice.",
+          "paid": "One purchase unlocks the complete training.",
+          "queries": [
+            "offline TOEIC daily practice",
+            "TOEIC Part 5 time pressure practice"
+          ],
+          "limitations": [
+            "Original practice, not official, licensed or past ETS test questions. TOEIC is a trademark of ETS; no score is guaranteed.",
+            "This route uses shipping version 1.4.2 only. It does not present a completed weakness diagnosis or features from pending 1.4.3."
+          ],
+          "proof_note": "The verified public screen shows the practice choices. The incomplete weakness screen is not evidence of a finished diagnosis.",
+          "asset_captions": {
+            "aim990-practice": "Shipping 1.4.2 practice choices, not a completed weakness diagnosis."
+          }
+        },
+        "fr-FR": {
+          "task": "Un peu d’anglais, chaque jour",
+          "result": "Entraînez-vous hors ligne avec des exercices originaux de type TOEIC.",
+          "free": "Commencez gratuitement avec les exercices proposés.",
+          "paid": "Un achat unique débloque l’entraînement complet.",
+          "queries": [
+            "préparation TOEIC hors ligne",
+            "exercices TOEIC quotidiens"
+          ],
+          "limitations": [
+            "Les exercices sont originaux : ce ne sont ni des sujets officiels, ni des annales, ni des contenus agréés par ETS. TOEIC est une marque d’ETS. Aucun score n’est garanti.",
+            "Ce guide porte uniquement sur la version commercialisée 1.4.2. Il ne présente pas de diagnostic terminé ni de nouveauté de la version 1.4.3 en attente d’examen."
+          ],
+          "proof_note": "La capture vérifiée montre les choix d’entraînement, mais pas un diagnostic abouti. Aucune capture française vérifiée ne figure dans ce dossier ; nous n’affichons pas une image anglaise à sa place.",
+          "asset_captions": {}
+        }
+      }
+    },
+    "lumiweather": {
+      "app_id": "6779552704",
+      "route_slug": "decide-what-child-wears-outside",
+      "primary_locale": "ja",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.7.3",
+      "live_readback_at": "2026-09-10T16:58:21.099050+00:00",
+      "offer_readback_at": "2026-09-10T17:09:31.849111+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.LumiWeather.unlock",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "3.99",
+            "readback_at": "2026-09-10T17:09:31.241844+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "120",
+            "readback_at": "2026-09-10T17:09:31.849111+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6779552704-v1",
+      "free_feature_ids": [
+        "today_dashboard"
+      ],
+      "paid_feature_ids": [
+        "hourly_forecast",
+        "weekly_forecast",
+        "checklists",
+        "multiple_locations",
+        "widgets"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "professional radar",
+        "medical safety certification",
+        "guaranteed safe time for a baby"
+      ],
+      "published_claim_ids": [
+        "today_dashboard",
+        "hourly_forecast",
+        "weekly_forecast",
+        "checklists",
+        "multiple_locations",
+        "widgets",
+        "weatherkit_outlook",
+        "clothing_suggestions"
+      ],
+      "proofs": [
+        {
+          "id": "lumiweather-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "today_dashboard",
+            "hourly_forecast",
+            "weekly_forecast",
+            "checklists",
+            "multiple_locations",
+            "widgets",
+            "weatherkit_outlook",
+            "clothing_suggestions"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.7.3",
+          "observed_at": "2026-09-10T16:58:21.099050+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6779552704",
+          "source_sha256": "4222c233a6b48770d0f6c77be45d1e3b0b634ba9bfa9d971e58f159d609806e9"
+        },
+        {
+          "id": "weather-clothing",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_weather_clothing"
+          ],
+          "live_app_version": "1.7.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/35/be/8b35be74-3e9a-81f9-417a-f84bc5f3207c/02.png/480x640bb.jpg",
+          "source_sha256": "a6e581d14d643081ca20ee8ad26f5c144de4e22ee203eedea09761f4fdb3baf7",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "9510ecb300b6463c6efa4dcb215def5ef34b0a268b6e23f1182df2ab9a8f88de",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "weather-factors",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_weather_factors"
+          ],
+          "live_app_version": "1.7.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/fb/b6/90fbb6ce-f4d8-624f-818c-da48af8e006d/03.png/480x640bb.jpg",
+          "source_sha256": "d44d364df76a70a80ab6ca56c6e2919d44665ac2b38a8edcf0466fe8391c9d98",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "d74af4a645f251f1f42c9334de52b63e893560dd5c9768f893a35208a3c5a6cc",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "weather-native-ja-result",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "native_japanese_weather_result"
+          ],
+          "asset": null,
+          "reason": "No reviewed Japanese result asset in the report.",
+          "live_app_version": "1.7.3",
+          "observed_at": "2026-09-10T16:58:21.099050+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6779552704",
+          "source_sha256": "4222c233a6b48770d0f6c77be45d1e3b0b634ba9bfa9d971e58f159d609806e9"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Plan outdoor play and what to wear",
+          "result": "Use the weather outlook to think through a child's outing and clothing.",
+          "free": "The Today home screen is free.",
+          "paid": "Unlock hourly and weekly forecasts, checklists, more locations and widgets once.",
+          "queries": [
+            "weather for kids outdoor play clothing",
+            "family weather outing checklist"
+          ],
+          "limitations": [
+            "Apple WeatherKit supplies forecasts, not a guarantee of safe conditions or a perfect time to play.",
+            "This is not a professional radar tool, a medical assessment or infant-safety certification. No unverified claim about location never leaving the device is made."
+          ],
+          "proof_note": "Published screens show clothing suggestions and the temperature, rain, UV and wind factors behind the outing outlook.",
+          "asset_captions": {
+            "weather-clothing": "Published clothing checklist, offered within the one-time unlock.",
+            "weather-factors": "Weather factors explain a forecast-based outlook, not guaranteed safety."
+          }
+        },
+        "ja": {
+          "task": "外遊びと服装を、天気から考える",
+          "result": "天気の見通しを参考に、子どもの外遊びと服装を考えられます。",
+          "free": "「今日」のホーム画面は無料です。",
+          "paid": "時間別・週間予報、チェックリスト、複数の場所、ウィジェットは一度の購入で使えます。",
+          "queries": [
+            "子ども 外遊び 天気 服装"
+          ],
+          "limitations": [
+            "予報の提供元は Apple WeatherKit です。予報は変わることがあり、安全な外出時刻を保証するものではありません。",
+            "専門的な雨雲レーダーや医療判断、乳幼児の安全認証を目的としたものではありません。位置情報が端末の外に出ないという未確認の説明もしません。"
+          ],
+          "proof_note": "確認済みの英語版公開画像には、服装の提案と気温・雨・紫外線・風の要因が表示されています。この資料では日本語の成果画像を確認できていないため、英語画像で代用せず掲載を控えています。",
+          "asset_captions": {}
+        }
+      }
+    },
+    "mochidonestamp": {
+      "app_id": "6790800323",
+      "route_slug": "remember-when-household-task-was-done",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0.3",
+      "live_readback_at": "2026-09-10T16:59:24.800206+00:00",
+      "offer_readback_at": "2026-09-10T17:09:33.712452+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.MochiDoneStamp.lifetime",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "3.99",
+            "readback_at": "2026-09-10T17:09:33.108683+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "120",
+            "readback_at": "2026-09-10T17:09:33.712452+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6790800323-v1",
+      "free_feature_ids": [
+        "one_active_event",
+        "unlimited_history"
+      ],
+      "paid_feature_ids": [
+        "more_active_events"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "work scheduling",
+        "daily habit streak",
+        "unverified new family sync"
+      ],
+      "published_claim_ids": [
+        "one_active_event",
+        "unlimited_history",
+        "more_active_events",
+        "last_done_dates",
+        "completion_undo",
+        "reminder_from_completion"
+      ],
+      "proofs": [
+        {
+          "id": "mochidonestamp-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "one_active_event",
+            "unlimited_history",
+            "more_active_events",
+            "last_done_dates",
+            "completion_undo",
+            "reminder_from_completion"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T16:59:24.800206+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6790800323",
+          "source_sha256": "ee6bba371d87215799fe44eefb5ca2b26bb0ee459b3227464a91fbe5f1ff09e3"
+        },
+        {
+          "id": "donestamp-last-time",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_donestamp_last_time"
+          ],
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/95/ab/6895ab19-2d81-15ce-c265-4f0697e03749/01.png/480x640bb.jpg",
+          "source_sha256": "b4280e5ca8acd26c0bbcae4f771a781750feca10e6ba5b81209835ab14d3408f",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "49811489a1148e6115b2a197cf0458b4b8b88bab6c876f230173de7c37f11a10",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "donestamp-undo",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_donestamp_undo"
+          ],
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/a2/4b/b0a24ba7-a32e-f41b-bd9f-f10b6f4aa54d/02.png/480x640bb.jpg",
+          "source_sha256": "00fd9bb2b15890861291bde2538fd6c0bce2b97bee5a79e73b6bf74d0544230e",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "d5e0507ca475a4c7659c32a01fbae99778ddbf7987d7c48064d88d14cef64e1e",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "donestamp-history",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_donestamp_history"
+          ],
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cd/b0/a1/cdb0a17b-b1c3-4b0a-91ea-dac1127764e2/03.png/480x640bb.jpg",
+          "source_sha256": "d601bf45dea6968b8e127d6a699c0f1af95fd21d3177e8e9f64d9f447f2aa39e",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "7a9208a683efdd57105a03cc1c03805373ed88442887d202e38dbe3845c58e47",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "donestamp-last-time-tw",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_donestamp_last_time_tw"
+          ],
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/38/b4/4338b451-06c1-f03b-2801-e3346a301e6e/01.png/480x640bb.jpg",
+          "source_sha256": "6163877b81c15dbbd2db67cd157d3ce5f775b6c140e4c1abb3510441fd7644be",
+          "asset": {
+            "locale": "zh-Hant",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "085108c211d63648c8d99c9643dcf2d8d35e7954f1347ca7104cde7b4c6a297b",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Remember the last time, not a streak",
+          "result": "Record when a household task was done and look back at its history.",
+          "free": "One active event and unlimited history are free.",
+          "paid": "Unlock more active events with a one-time purchase.",
+          "queries": [
+            "when did I last replace water filter",
+            "last done tracker not habit streak"
+          ],
+          "limitations": [
+            "This is a last-done memory aid, not a work scheduler or daily streak tracker.",
+            "Reminders count from the recorded completion. No new family-sync claim is made by this route."
+          ],
+          "proof_note": "The existing screens show last-done dates, a completion acknowledgement with Undo, and the event timeline.",
+          "asset_captions": {
+            "donestamp-last-time": "Published last-done event dates.",
+            "donestamp-undo": "Published completion acknowledgement and Undo.",
+            "donestamp-history": "Published history timeline for a household event."
+          }
+        },
+        "zh-Hant": {
+          "task": "記住上次何時，不再追著連勝跑",
+          "result": "換完濾芯或做完家事後記一下，之後就能回看完成時間與歷史。",
+          "free": "1 個使用中事件、無限歷史紀錄免費。",
+          "paid": "需要更多使用中事件時，再一次購買解鎖。",
+          "queries": [
+            "上次換濾芯時間",
+            "完成後重新計算提醒"
+          ],
+          "limitations": [
+            "這是「上次何時」的生活事件記憶器，不是工作排程器或每日習慣連勝工具。",
+            "提醒依記錄的實際完成時間重新計算。本頁不新增未核對的家庭同步承諾。"
+          ],
+          "proof_note": "台灣公開圖顯示事件與最後完成時間；英文公開組另有完成提示、復原與歷史畫面，不把英文圖當成繁中成果。",
+          "asset_captions": {
+            "donestamp-last-time-tw": "已發布的事件清單與上次完成時間。"
+          }
+        }
+      }
+    },
+    "cyca": {
+      "app_id": "6782251621",
+      "route_slug": "private-cycle-patterns-without-account",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0.10",
+      "live_readback_at": "2026-09-10T16:56:39.604089+00:00",
+      "offer_readback_at": "2026-09-10T17:09:24.718061+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.Cyca.pro.lifetime",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "4.99",
+            "readback_at": "2026-09-10T17:09:24.098017+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "150",
+            "readback_at": "2026-09-10T17:09:24.718061+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6782251621-v1",
+      "free_feature_ids": [
+        "cycle_diary"
+      ],
+      "paid_feature_ids": [
+        "future_planning",
+        "fuller_history"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "guaranteed fertile day",
+        "pregnancy prevention",
+        "clinical accuracy"
+      ],
+      "published_claim_ids": [
+        "cycle_diary",
+        "future_planning",
+        "fuller_history",
+        "no_account",
+        "estimated_forecast"
+      ],
+      "proofs": [
+        {
+          "id": "cyca-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "cycle_diary",
+            "future_planning",
+            "fuller_history",
+            "no_account",
+            "estimated_forecast"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T16:56:39.604089+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6782251621",
+          "source_sha256": "b43afe78410129853de3a7eedcd8d5b10e48bfbf0a256df6d7282e4d4e8d2aba"
+        },
+        {
+          "id": "cyca-calendar",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_cyca_calendar"
+          ],
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/e6/b2/d4e6b2a3-2257-1807-c523-60f4ecd7f8fa/02.png/480x640bb.jpg",
+          "source_sha256": "0a8b2d11a7c5d92474a82c017e1875ecc03086c398f119492fff41e5b94d073c",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "6b2c5fa1c4f66db4bb5eb20aab1d062e20ba9ece418c1d921667a44c6bd951f5",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Keep a private cycle diary",
+          "result": "Record your cycle. Forecasts are estimates, not contraception.",
+          "free": "Start with cycle recording without creating an account.",
+          "paid": "Optional lifetime Pro unlocks future planning and fuller history.",
+          "queries": [
+            "private period diary no account",
+            "cycle tracker one time purchase"
+          ],
+          "limitations": [
+            "Predicted dates and fertile windows are planning estimates, not a method of pregnancy prevention.",
+            "No guaranteed fertile day, clinical accuracy or medical diagnosis is claimed. Consult a qualified clinician for medical concerns."
+          ],
+          "proof_note": "The published calendar distinguishes recorded entries and predicted dates. It is not evidence of clinical prediction accuracy.",
+          "asset_captions": {
+            "cyca-calendar": "Published calendar with recorded and predicted dates; predictions are estimates."
+          }
+        }
+      }
+    },
+    "unblurry": {
+      "app_id": "6782275018",
+      "route_slug": "improve-soft-family-photo-realistically",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0.8",
+      "live_readback_at": "2026-09-10T17:00:30.088951+00:00",
+      "offer_readback_at": "2026-09-10T17:09:44.861814+00:00",
+      "offer_readback": {
+        "product_id": "com.unblurry.app.pro",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "2.99",
+            "readback_at": "2026-09-10T17:09:44.250924+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "90",
+            "readback_at": "2026-09-10T17:09:44.861814+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6782275018-v1",
+      "free_feature_ids": [
+        "comparison_preview"
+      ],
+      "paid_feature_ids": [
+        "full_resolution_export",
+        "watermark_free_export"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "rescue every photo",
+        "reconstruct unknown true detail",
+        "identity verification",
+        "forensic evidence"
+      ],
+      "published_claim_ids": [
+        "comparison_preview",
+        "full_resolution_export",
+        "watermark_free_export",
+        "photo_enhancement"
+      ],
+      "proofs": [
+        {
+          "id": "unblurry-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "comparison_preview",
+            "full_resolution_export",
+            "watermark_free_export",
+            "photo_enhancement"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0.8",
+          "observed_at": "2026-09-10T17:00:30.088951+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6782275018",
+          "source_sha256": "8c018e959abe5d2ad1bc52895f6b415747652d024b312c10f218066fe2b8b154"
+        },
+        {
+          "id": "unblurry-comparison",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_unblurry_comparison"
+          ],
+          "live_app_version": "1.0.8",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/89/57/51895706-b61f-d68d-015a-b43a1331cf2c/00.png/480x640bb.jpg",
+          "source_sha256": "101caa79e05fd89dac1f7aac85e7f7238da2a1d033873b35809c9369fc5315a5",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "0fccd177c3820a7cbbd3f9cebff29d79926423b6018b3e358fecb4aa48e1a855",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "unblurry-comparison-ja",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_unblurry_comparison_ja"
+          ],
+          "live_app_version": "1.0.8",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/17/b7/5317b799-870e-18ef-aee7-472365dd39ce/00.png/480x640bb.jpg",
+          "source_sha256": "b64c7bcea9dc0771bd1c74ecd1626db6ab411d70a3117f98cf68b1ffaebf1794",
+          "asset": {
+            "locale": "ja",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "0a56cf50dcd4996619ab9bfcebe3f7d02f60e6a657be63aa8c000aceba463eb8",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Compare your photo before paying",
+          "result": "Check the real before-and-after preview first; decide whether the result helps.",
+          "free": "Start by comparing the enhancement preview.",
+          "paid": "Full-resolution, watermark-free export requires a one-time Pro unlock.",
+          "queries": [
+            "sharpen soft family photo offline iphone",
+            "photo enhancer preview before paying"
+          ],
+          "limitations": [
+            "Enhancement cannot recover information the camera never captured, and some photos will remain soft.",
+            "Do not use generated detail as identity, forensic or legal evidence. No promise is made to rescue every photo."
+          ],
+          "proof_note": "The current published image compares the same photo with a split slider. It demonstrates that example, not a guarantee for your photo.",
+          "asset_captions": {
+            "unblurry-comparison": "Published comparison of the same photo; results vary by source image."
+          }
+        },
+        "ja": {
+          "task": "購入前に、写真の仕上がりを比較",
+          "result": "まずは補正前と補正後を見比べて、その写真に合う仕上がりか確認できます。",
+          "free": "補正プレビューの比較から試せます。",
+          "paid": "元の解像度・透かしなしでの書き出しには、一度の Pro 購入が必要です。",
+          "queries": [
+            "家族写真 ぼけ 補正 iPhone",
+            "写真 高画質化 購入前 プレビュー"
+          ],
+          "limitations": [
+            "カメラが記録していない情報を取り戻すことはできません。写真によっては、ぼけが残ることもあります。",
+            "補正で生まれた細部を本人確認や鑑識、法的な証拠に使わないでください。どの写真でも同じ結果になるわけではありません。"
+          ],
+          "proof_note": "確認済みの日本語公開画像では、同じ写真の補正前後を分割表示しています。これは掲載された一例であり、手元の写真の仕上がりを保証するものではありません。",
+          "asset_captions": {
+            "unblurry-comparison-ja": "同じ写真の補正前後を示す公開画像。仕上がりは元の写真によって異なります。"
+          }
+        }
+      }
+    },
+    "battai": {
+      "app_id": "6802423998",
+      "route_slug": "decide-when-an-iphone-battery-needs-service",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0",
+      "live_readback_at": "2026-09-10T16:56:16.616888+00:00",
+      "offer_readback_at": "2026-09-10T17:09:18.968548+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.BattAI.pro",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "5.99",
+            "readback_at": "2026-09-10T17:09:18.282137+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "190",
+            "readback_at": "2026-09-10T17:09:18.968548+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6802423998-v1",
+      "free_feature_ids": [
+        "basic_battery_readings"
+      ],
+      "paid_feature_ids": [],
+      "paid_scope_status": "BLOCKED_EVIDENCE",
+      "exclude_intents": [
+        "battery repair",
+        "battery boost",
+        "real battery temperature",
+        "per-app battery drain"
+      ],
+      "published_claim_ids": [
+        "basic_battery_readings",
+        "measured_vs_estimated"
+      ],
+      "proofs": [
+        {
+          "id": "battai-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "basic_battery_readings",
+            "measured_vs_estimated"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T16:56:16.616888+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6802423998",
+          "source_sha256": "c7b793cfa084ea1e6ba9fb9fa1a1b01ccce227b648917c8f5c44f6d7d72e8433"
+        },
+        {
+          "id": "battai-readings",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_battai_readings"
+          ],
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3b/57/89/3b5789ab-d69b-2880-dcc6-ca4b3c1d01d9/01-today-analysis.png/480x640bb.jpg",
+          "source_sha256": "baa9b26a62d0604d3e26163bf8da0389cd40b45da6dc4d14bd2a6cda4bb3cbc2",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "cc5ac8b91dc18fb691fc8746b7ea7964c6c87f7cab7faeb93e56abc1a31e324b",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "battai-readings-tw",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_battai_readings_tw"
+          ],
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/ce/e3/becee38c-f0b9-03cc-78a6-85f033859ca8/01-today-analysis.png/480x640bb.jpg",
+          "source_sha256": "4cc1ae255a0b07135f0d07437142511dc90e9927f20a17a95a6558d5abc44138",
+          "asset": {
+            "locale": "zh-Hant",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "e989432687c1bf712265e18036929e5083c6ac7cfecc7f7e6408e2982000ae2a",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "battai-report-scope",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "verified_pro_report_export_scope"
+          ],
+          "asset": null,
+          "reason": "The reviewed public evidence does not establish the free/Pro report-export boundary.",
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T16:56:16.616888+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6802423998",
+          "source_sha256": "c7b793cfa084ea1e6ba9fb9fa1a1b01ccce227b648917c8f5c44f6d7d72e8433"
+        },
+        {
+          "id": "battai-measured-caption",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "measured_charge_care_score"
+          ],
+          "asset": null,
+          "reason": "Screenshot 3 caption says Measured while the score is Estimated; it is excluded.",
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T16:56:16.616888+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6802423998",
+          "source_sha256": "c7b793cfa084ea1e6ba9fb9fa1a1b01ccce227b648917c8f5c44f6d7d72e8433"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Understand recorded battery behaviour",
+          "result": "Keep measured battery readings separate from estimated scores.",
+          "free": "Start with the basic battery readings.",
+          "paid": "Lifetime Pro is an optional one-time purchase; its export scope is unverified here.",
+          "queries": [
+            "battery behaviour log iphone",
+            "measured versus estimated battery readings"
+          ],
+          "limitations": [
+            "Measured public readings include battery level, charge state, Low Power Mode, whole-device thermal state and time. Other results are estimates or user-provided.",
+            "Whole-device thermal state is not battery temperature. No repair, battery boost, per-app drain reading or sensor-based replacement diagnosis is promised.",
+            "The reviewed evidence does not establish the free/Pro report-export boundary, so this route does not call reports included or free."
+          ],
+          "proof_note": "Only the published basic-readings screen is used. The conflicting 'Measured' score-breakdown caption and claimed capacity-trend image are excluded.",
+          "asset_captions": {
+            "battai-readings": "Published battery readings; measured values and estimates must remain distinct."
+          }
+        },
+        "zh-Hant": {
+          "task": "看懂電池使用紀錄，先分清資料來源",
+          "result": "把系統實測讀值與推估分數分開看，不把推估當感測結果。",
+          "free": "可先從基本電池讀值開始。",
+          "paid": "Lifetime Pro 是可選的一次性購買；本頁尚未核實其報告匯出範圍。",
+          "queries": [
+            "iPhone 電池使用趨勢紀錄",
+            "電池實測讀值與推估分數"
+          ],
+          "limitations": [
+            "公開 API 可提供電量、充放電狀態、低耗電模式、整機熱狀態與時間；其他結果屬推估或使用者提供。",
+            "整機熱狀態不是電池溫度。不宣稱能修復或加強電池、讀取每個 App 耗電，或直接診斷何時一定該換電池。",
+            "現有證據不足以確認報告匯出的免費／Pro 界線，因此不宣稱報告免費或已包含。"
+          ],
+          "proof_note": "只採用已發布的基本讀值畫面，不使用把推估標成 Measured 的第三張圖，也不把健康分數當成容量趨勢。",
+          "asset_captions": {
+            "battai-readings-tw": "已發布的基本電池讀值畫面；推估分數不等於實測值。"
+          }
+        }
+      }
+    },
+    "notesstudio100": {
+      "app_id": "6798813048",
+      "route_slug": "handwrite-mark-up-and-review-offline",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0.2",
+      "live_readback_at": "2026-09-10T16:56:13.698967+00:00",
+      "offer_readback_at": "2026-09-10T17:09:18.960839+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.NotesStudio100.lifetime",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "5.99",
+            "readback_at": "2026-09-10T17:09:18.328458+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "190",
+            "readback_at": "2026-09-10T17:09:18.960839+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6798813048-v1",
+      "free_feature_ids": [
+        "one_active_notebook",
+        "unlimited_pages",
+        "two_styles"
+      ],
+      "paid_feature_ids": [
+        "more_notebooks",
+        "more_styles"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "line-by-line audio synchronisation",
+        "unverified cloud co-editing",
+        "five free notebooks",
+        "twelve free styles"
+      ],
+      "published_claim_ids": [
+        "one_active_notebook",
+        "unlimited_pages",
+        "two_styles",
+        "more_notebooks",
+        "more_styles",
+        "handwriting",
+        "pdf_markup",
+        "page_audio"
+      ],
+      "proofs": [
+        {
+          "id": "notesstudio100-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "one_active_notebook",
+            "unlimited_pages",
+            "two_styles",
+            "more_notebooks",
+            "more_styles",
+            "handwriting",
+            "pdf_markup",
+            "page_audio"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0.2",
+          "observed_at": "2026-09-10T16:56:13.698967+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6798813048",
+          "source_sha256": "1d10510c555c20b2416e28ed532c95748f0c51c1d83bf352b228b015e96cdeea"
+        },
+        {
+          "id": "notes-handwriting",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_notes_handwriting"
+          ],
+          "live_app_version": "1.0.2",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/aa/20/45aa20c1-2c28-3bc1-ad2e-43064414568a/02-handwriting.png/480x640bb.jpg",
+          "source_sha256": "488476e5b43f72ec9c9742982aa6cc25b96065e174af7df2f1ada56686d6c7d7",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "7d777b6da0d1d49ac2e0cd1dfd0e31877ebfc39a7c20adc53f87983a4c72b685",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "notes-styles",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_notes_styles"
+          ],
+          "live_app_version": "1.0.2",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b3/92/0d/b3920df3-2674-821f-f910-06bc9cd566d7/03-styles.png/480x640bb.jpg",
+          "source_sha256": "7dcc8bdd8ab861d44e6c426f58f266e823596f726861530cea3f9e183458767d",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "c583a5d2db7f6e82ad85aa1318a8c367a3ea2c8effd98da9ec019e3caec0d20c",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "notes-ipad-complete-result",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "verified_ipad_pdf_ink_audio_result"
+          ],
+          "asset": null,
+          "reason": "Reviewed iPad screen is the shelf; no complete PDF, handwriting and page-audio result is verified.",
+          "live_app_version": "1.0.2",
+          "observed_at": "2026-09-10T16:56:13.698967+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6798813048",
+          "source_sha256": "1d10510c555c20b2416e28ed532c95748f0c51c1d83bf352b228b015e96cdeea"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Keep handwriting close to your notes",
+          "result": "Handwrite and mark up PDFs, with audio kept on the same page.",
+          "free": "One active notebook, unlimited pages and two styles are free.",
+          "paid": "Upgrade once when you need more notebooks and styles.",
+          "queries": [
+            "offline PDF handwriting notes iPad",
+            "Apple Pencil notes no subscription"
+          ],
+          "limitations": [
+            "Page audio does not establish line-by-line recording synchronisation. No live cloud co-editing is claimed.",
+            "The free allowance is one notebook and two styles, not the older five-notebook or twelve-style offer."
+          ],
+          "proof_note": "Verified public images show handwriting and the style gallery. A complete iPad PDF-plus-handwriting-plus-audio result is not available in this evidence set, so no such composite is presented.",
+          "asset_captions": {
+            "notes-handwriting": "Published handwriting page, not a complete iPad PDF-and-audio result.",
+            "notes-styles": "Published style gallery; the free allowance is two styles."
+          }
+        }
+      }
+    },
+    "onepageppt": {
+      "app_id": "6798814385",
+      "route_slug": "turn-meeting-notes-into-one-slide",
+      "primary_locale": "en-US",
+      "creative_version": "cv-20260910-01",
+      "effective_at_utc": "unknown",
+      "live_app_version": "1.0",
+      "live_readback_at": "2026-09-10T16:59:26.800967+00:00",
+      "offer_readback_at": "2026-09-10T17:09:36.559725+00:00",
+      "offer_readback": {
+        "product_id": "com.alice51849.OnePagePPT.lifetime",
+        "type": "NON_CONSUMABLE",
+        "status": "APPROVED",
+        "storefronts": {
+          "USA": {
+            "currency": "USD",
+            "amount": "5.99",
+            "readback_at": "2026-09-10T17:09:35.928504+00:00"
+          },
+          "TWN": {
+            "currency": "TWD",
+            "amount": "190",
+            "readback_at": "2026-09-10T17:09:36.559725+00:00"
+          }
+        },
+        "runtime_purchase": "unknown"
+      },
+      "experiment_id": "conversion-20260910-6798814385-v1",
+      "free_feature_ids": [
+        "slide_workflow_trial"
+      ],
+      "paid_feature_ids": [
+        "pptx_export"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "exclude_intents": [
+        "whole pitch deck",
+        "unlimited free PPTX",
+        "fabricated chart data"
+      ],
+      "published_claim_ids": [
+        "slide_workflow_trial",
+        "pptx_export",
+        "single_16_9_slide",
+        "in_app_editing"
+      ],
+      "proofs": [
+        {
+          "id": "onepageppt-shipping-description",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION",
+          "claim_ids": [
+            "slide_workflow_trial",
+            "pptx_export",
+            "single_16_9_slide",
+            "in_app_editing"
+          ],
+          "asset": null,
+          "reason": "",
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T16:59:26.800967+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6798814385",
+          "source_sha256": "eabce66b3c4a42cfd0c9ce1b62907385d4f3c9b428adfbfe80796c382e779b96"
+        },
+        {
+          "id": "onepage-input",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_onepage_input"
+          ],
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/7e/c3/9a7ec306-6e56-0abb-f79e-9eb906d99a65/02-sources.png/480x640bb.jpg",
+          "source_sha256": "46ae47750c6a4bec299020a4a54eefd1e2219127813d05200f2e28514e4f4fef",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "dc93784afc20d142ec091b112a9884399f9b30d8d8f694df0ac14b71304a7714",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "onepage-editor",
+          "status": "VERIFIED_PUBLIC_ASSET",
+          "claim_ids": [
+            "public_screen_onepage_editor"
+          ],
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ab/cb/ceabcb12-07c3-d55c-d253-79fb1686252c/03-editor.png/480x640bb.jpg",
+          "source_sha256": "392778ef7c930ba55e2130667ca5aec941fce4bb5ab9d8553cee22a61d16b9c5",
+          "asset": {
+            "locale": "en-US",
+            "width": 295,
+            "height": 640,
+            "reviewed_thumbnail_sha256": "26452a77744289cf23a469b32b916976517f338cf8f0e2b0ccb4bac9e9ef993a",
+            "normalization": "rgb-thumbnail-640-jpeg90"
+          },
+          "reason": ""
+        },
+        {
+          "id": "onepage-editable-pptx-sample",
+          "status": "BLOCKED_EVIDENCE",
+          "claim_ids": [
+            "verified_editable_pptx_sample"
+          ],
+          "asset": null,
+          "reason": "No same-live-version PPTX sample with inspected editable text and shapes is available; no synthetic substitute.",
+          "live_app_version": "1.0",
+          "observed_at": "2026-09-10T16:59:26.800967+00:00",
+          "source_url": "https://apps.apple.com/us/app/id6798814385",
+          "source_sha256": "eabce66b3c4a42cfd0c9ce1b62907385d4f3c9b428adfbfe80796c382e779b96"
+        }
+      ],
+      "localized": {
+        "en-US": {
+          "task": "Turn notes into one 16:9 slide",
+          "result": "Arrange your content on a single slide and adjust it in the editor—not a whole deck.",
+          "free": "Try the slide-making workflow free.",
+          "paid": "PPTX export is a one-time Pro feature.",
+          "queries": [
+            "meeting notes to one slide",
+            "CSV to single slide report iphone"
+          ],
+          "limitations": [
+            "This makes one 16:9 slide, not a complete pitch deck. Unlimited free PPTX export is not promised.",
+            "A same-live-version PPTX sample with independently checked editable text and shapes is not available here. No synthetic file or image-only PPTX is offered as proof.",
+            "Charts must use your actual source data; this page does not invent figures."
+          ],
+          "proof_note": "The published content tray and editor show the source-to-single-slide workflow. They are not downloadable editable-export proof.",
+          "asset_captions": {
+            "onepage-input": "Published source-content tray for one exact 16:9 slide.",
+            "onepage-editor": "Published single-slide editor; not proof of a downloadable editable PPTX sample."
+          }
+        }
+      }
+    }
+  }
+}

@@ -22,6 +22,7 @@ from typing import Any, Iterable
 from urllib.parse import parse_qsl, urlsplit
 
 import app_store_storefronts
+import conversion_route_contract
 import gen_store_attribution
 from official_locales import OFFICIAL_LOCALES
 import sync_standard_site
@@ -40,6 +41,8 @@ SYNC_CONTRACT_SCHEMA_VERSION = 1
 SYNC_ENGINE_FILES = (
     Path("high_intent_decision_routes.py"),
     Path("data") / "high_intent_decision_routes_v2.json",
+    Path("conversion_route_contract.py"),
+    Path("data") / "high_intent_conversion_contracts_v1.json",
     Path("gen_store_attribution.py"),
     Path("official_locales.py"),
     Path("publish.py"),
@@ -64,10 +67,15 @@ COVERAGE_RELATIVE = (
 FEED_RELATIVE = Path("data") / "high-intent-decision-routes" / "feed.json"
 SITEMAP_RELATIVE = Path("sitemap-high-intent-decision-routes.xml")
 SITEMAP_INDEX_RELATIVE = Path("sitemap_index.xml")
-FIXED_MANAGED_OUTPUTS = {
+LEGACY_FIXED_MANAGED_OUTPUTS = {
     COVERAGE_RELATIVE.as_posix(): "coverage_report",
     FEED_RELATIVE.as_posix(): "json_feed",
     SITEMAP_RELATIVE.as_posix(): "sitemap",
+}
+FIXED_MANAGED_OUTPUTS = {
+    **LEGACY_FIXED_MANAGED_OUTPUTS,
+    conversion_route_contract.OUTPUT_RELATIVE.as_posix(): "conversion_contracts",
+    conversion_route_contract.SCHEMA_RELATIVE.as_posix(): "conversion_schema",
 }
 MANAGED_OUTPUT_KINDS = frozenset(
     {"route_html", *FIXED_MANAGED_OUTPUTS.values()}
@@ -113,10 +121,14 @@ EDITORIAL_FIELDS = (
 LOCALE_LANGUAGE = {
     "en-US": "en",
     "zh-Hant": "zh-Hant",
+    "fr-FR": "fr",
+    "ja": "ja",
 }
 CULTURE_MARKERS = {
     "en-US": ("US", "United States"),
     "zh-Hant": ("台灣", "臺灣"),
+    "fr-FR": ("France", "français"),
+    "ja": ("日本",),
 }
 COPY_FIELDS = frozenset(
     {
@@ -238,6 +250,78 @@ UI = {
             "private_or_on_device": "第一方 inventory 標示隱私優先或裝置端處理。",
             "widget": "第一方 inventory 標示支援主畫面小工具。",
             "apple_watch": "第一方 inventory 標示支援 Apple Watch。",
+        },
+    },
+    "fr-FR": {
+        "eyebrow": "Guide publié par le développeur",
+        "intent_types": {
+            "problem_aware": "Votre besoin",
+            "alternative": "Autres solutions",
+            "workflow": "Méthode de travail",
+            "privacy_pay_once": "Confidentialité et achat unique",
+        },
+        "situation": "Votre situation",
+        "rule": "Comment choisir",
+        "checks": "Les points à vérifier",
+        "alternative": "Quand choisir une autre solution",
+        "evidence": "Informations produit de première main",
+        "vocabulary": "Les usages décrits",
+        "verify": "Avant de vous lancer",
+        "store": "Voir sur l’App Store",
+        "source": "Source",
+        "purchase_model": {
+            "free_with_lifetime_unlock": "Démarrage gratuit, déblocage par achat unique",
+        },
+        "one_time_option": "Le catalogue de l’éditeur confirme une option d’achat unique.",
+        "feature_labels": {
+            "Free to start": "Vous pouvez commencer gratuitement",
+            "One-time unlock": "Déblocage par achat unique",
+            "No subscription": "Sans abonnement",
+        },
+        "capabilities": {
+            "offline": "Le catalogue de l’éditeur indique une utilisation hors ligne.",
+            "no_account": "Le catalogue indique qu’aucun compte n’est nécessaire.",
+            "no_ads": "Le catalogue indique l’absence de publicité.",
+            "no_tracking": "Le catalogue indique l’absence de suivi publicitaire.",
+            "private_or_on_device": "Le catalogue décrit un traitement privé ou sur l’appareil.",
+            "widget": "Le catalogue indique la présence d’un widget d’écran d’accueil.",
+            "apple_watch": "Le catalogue indique la prise en charge de l’Apple Watch.",
+        },
+    },
+    "ja": {
+        "eyebrow": "開発元による選び方ガイド",
+        "intent_types": {
+            "problem_aware": "困りごとから選ぶ",
+            "alternative": "ほかの選択肢",
+            "workflow": "使い方から選ぶ",
+            "privacy_pay_once": "プライバシーと買い切り",
+        },
+        "situation": "こんなときに",
+        "rule": "選ぶときのポイント",
+        "checks": "使い方の確認",
+        "alternative": "ほかの方法が向いている場合",
+        "evidence": "開発元が公開している製品情報",
+        "vocabulary": "公開されている用途",
+        "verify": "使い始める前に",
+        "store": "App Store で見る",
+        "source": "出典",
+        "purchase_model": {
+            "free_with_lifetime_unlock": "無料で始めて、一度の購入で機能を解除",
+        },
+        "one_time_option": "開発元のカタログで、一度の購入による機能解除を確認しています。",
+        "feature_labels": {
+            "Free to start": "無料で始められます",
+            "One-time unlock": "一度の購入で機能を解除できます",
+            "No subscription": "定期購読ではありません",
+        },
+        "capabilities": {
+            "offline": "開発元のカタログでは、オフラインで利用できると案内しています。",
+            "no_account": "開発元のカタログでは、アカウントは不要と案内しています。",
+            "no_ads": "開発元のカタログでは、広告はないと案内しています。",
+            "no_tracking": "開発元のカタログでは、追跡はしないと案内しています。",
+            "private_or_on_device": "開発元のカタログでは、プライバシーに配慮した処理を案内しています。",
+            "widget": "開発元のカタログでは、ホーム画面のウィジェットに対応しています。",
+            "apple_watch": "開発元のカタログでは、Apple Watch に対応しています。",
         },
     },
 }
@@ -436,8 +520,8 @@ def load_inventory(path: Path) -> dict[str, dict[str, Any]]:
 
 def load_route_source(path: Path = SOURCE_PATH) -> dict[str, Any]:
     payload = _read_json(path)
-    if payload.get("schema_version") != 3:
-        raise ValueError("High-intent route data must use schema_version 3")
+    if payload.get("schema_version") != 4:
+        raise ValueError("High-intent route data must use schema_version 4")
     if not isinstance(payload.get("routes"), list):
         raise ValueError("High-intent route data must contain routes")
     publisher = payload.get("publisher")
@@ -522,6 +606,10 @@ def _native_copy(locale: str, copy: dict[str, Any]) -> None:
     if locale == "zh-Hant" and len(re.findall(r"[\u3400-\u9fff]", joined)) < 80:
         raise ValueError(f"{locale}: copy is not substantively native")
     if locale == "en-US" and len(re.findall(r"[A-Za-z]+", joined)) < 90:
+        raise ValueError(f"{locale}: copy is not substantively native")
+    if locale == "ja" and len(re.findall(r"[\u3040-\u30ff]", joined)) < 100:
+        raise ValueError(f"{locale}: copy is not substantively native")
+    if locale == "fr-FR" and len(re.findall(r"\b(?:les|des|une|pour|sans|avec|vous|votre|vos|de|un)\b", joined, re.I)) < 20:
         raise ValueError(f"{locale}: copy is not substantively native")
     if not any(
         marker in str(copy["culture_route"])
@@ -609,6 +697,7 @@ def _validate_source_binding(
     )
     expected_keys = set(expectations["app_keys"])
     routes: dict[str, dict[str, Any]] = {}
+    conversion_contracts = conversion_route_contract.load_contracts()
     slugs: set[str] = set()
     queries: set[tuple[str, str]] = set()
     for raw in source["routes"]:
@@ -622,6 +711,8 @@ def _validate_source_binding(
             "keyword_refs",
             "locales",
         }
+        if raw.get("app_key") in conversion_route_contract.TARGETS:
+            expected_fields.add("conversion_contract")
         if set(raw) != expected_fields:
             raise ValueError("Route fields differ from contract")
         key = _single_line(raw["app_key"], "route app_key")
@@ -664,7 +755,10 @@ def _validate_source_binding(
                 raise ValueError(f"Duplicate localized decision query: {query_key}")
             queries.add(query_key)
             validated_copies[locale] = validated
-        routes[key] = {**raw, "locales": validated_copies}
+        conversion = conversion_route_contract.validate(
+            raw, apps[key], conversion_contracts,
+        )
+        routes[key] = {**raw, "locales": validated_copies, "_conversion": conversion}
     if set(routes) != expected_keys:
         raise ValueError(
             "Versioned inventory contract needs exactly one primary route: "
@@ -685,6 +779,8 @@ def _evidence(
     key = str(app["key"])
     if reference.startswith("summary."):
         summary_key = reference.split(".", 1)[1]
+        if summary_key != LOCALE_LANGUAGE[locale]:
+            raise ValueError(f"{key}/{locale}: summary evidence fell back to source locale")
         summaries = app["summaries"]
         if summary_key not in summaries:
             raise ValueError(f"{key}/{locale}: missing {reference}")
@@ -853,8 +949,8 @@ def _content_units(record: dict[str, Any]) -> int:
         + [str(item) for item in record["source_vocabulary"]]
     )
     latin_words = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9]+(?:['’_-][A-Za-z0-9]+)*", visible)
-    han = re.findall(r"[\u3400-\u9fff]", visible)
-    return len(latin_words) + len(han)
+    cjk = re.findall(r"[\u3040-\u30ff\u3400-\u9fff]", visible)
+    return len(latin_words) + len(cjk)
 
 
 def _editorial_tokens(record: dict[str, Any]) -> set[str]:
@@ -993,6 +1089,16 @@ def _build_record(
         "is_independent_review": False,
         "is_ranking": False,
     }
+    if route.get("_conversion") is not None:
+        record["store_label"] = UI[locale]["store"]
+        record["source_vocabulary"] = list(route["_conversion"]["localized"][locale]["queries"])
+        record["alternates"] = {
+            native_locale: route_url(str(app["key"]), str(route["route_slug"]), native_locale)
+            for native_locale in sorted(route["locales"])
+        }
+        record["conversion_contract"] = conversion_route_contract.materialize(
+            route["_conversion"], record,
+        )
     record["content_units"] = _content_units(record)
     if record["content_units"] < MIN_CONTENT_UNITS:
         raise ValueError(
@@ -1341,6 +1447,40 @@ def render_html(record: dict[str, Any]) -> str:
     store_label = html.escape(str(ui["store"]))
     app_name = html.escape(str(record["app_name"]))
     disclosure = html.escape(str(record["publisher_disclosure"]))
+    hero, conversion_details, conversion_metadata = conversion_route_contract.render_sections(record)
+    alternates = "".join(
+        f'<link rel="alternate" hreflang="{html.escape(native, quote=True)}" '
+        f'href="{html.escape(url, quote=True)}">\n'
+        for native, url in record.get("alternates", {}).items()
+    )
+    if record.get("alternates"):
+        default = record["alternates"].get("en-US")
+        if default:
+            alternates += f'<link rel="alternate" hreflang="x-default" href="{html.escape(default, quote=True)}">\n'
+    lead = hero or (
+        f"<h1>{html.escape(str(record['query']))}</h1>\n"
+        f"<p>{html.escape(str(record['culture_route']))}</p>"
+    )
+    context = f"<p>{html.escape(str(record['culture_route']))}</p>" if hero else ""
+    bottom_cta = "" if hero else (
+        f'<a class="cta" rel="noopener" href="{store_url}">{store_label}: {app_name}</a>'
+    )
+    conversion_style = """
+body.conversion-route{background:#fff}
+.conversion-route main{padding:16px 0}
+.conversion-route article{padding:clamp(16px,3vw,30px)}
+.conversion-route .eyebrow{font-size:.78rem;margin:0 0 .5rem}
+.conversion-hero h1{font-size:clamp(1.5rem,4vw,2.15rem);line-height:1.16;margin:.4rem 0 .65rem}
+.conversion-hero p{font-size:.95rem;line-height:1.4;margin:.5rem 0}
+.conversion-offer p{font-size:.87rem}
+.conversion-hero .cta{margin-top:.4rem;min-height:44px;box-sizing:border-box;
+display:inline-flex;align-items:center;padding:.65rem 1rem;font-weight:600}
+.conversion-hero .price-note{font-size:.75rem;margin:.4rem 0 0}
+.conversion-proof figure{margin:1.25rem 0}
+.conversion-proof img{display:block;max-width:100%;width:auto;height:auto;max-height:640px}
+.conversion-proof figcaption{font-size:.9rem;margin-top:.5rem}
+""" if hero else ""
+    body_class = ' class="conversion-route"' if hero else ""
     return f"""<!doctype html>
 <html lang="{language}">
 <head>
@@ -1350,7 +1490,7 @@ def render_html(record: dict[str, Any]) -> str:
 <meta name="description" content="{description}">
 <meta name="growth-attribution-intent" content="{html.escape(str(record['intent_type']), quote=True)}">
 <link rel="canonical" href="{canonical}">
-<link rel="alternate" type="application/feed+json" title="High-intent decision routes" href="{SITE}/{FEED_RELATIVE.as_posix()}">
+{alternates}<link rel="alternate" type="application/feed+json" title="High-intent decision routes" href="{SITE}/{FEED_RELATIVE.as_posix()}">
 <script type="application/ld+json">{schema_json}</script>
 <style>
 body{{font:17px/1.65 system-ui,sans-serif;color:#17202a;
@@ -1366,34 +1506,33 @@ background:#f7faff}}
 border-radius:999px;background:#163f72;color:#fff;text-decoration:none;
 font-weight:700}}
 footer{{margin-top:1rem;font-size:.92rem}}
-</style>
+{conversion_style}</style>
 </head>
-<body data-managed-route="{html.escape(str(record['route_id']), quote=True)}"
+<body{body_class} data-managed-route="{html.escape(str(record['route_id']), quote=True)}"
  data-record-digest="{_record_digest(record)}">
 <main>
 <article>
 <p class="eyebrow">{html.escape(str(ui['eyebrow']))} · {intent_label} ·
 {html.escape(str(record['market']))}</p>
-<h1>{html.escape(str(record['query']))}</h1>
-<p>{html.escape(str(record['culture_route']))}</p>
+{lead}
 <h2>{html.escape(str(ui['situation']))}</h2>
-<p>{html.escape(str(record['buyer_problem']))}</p>
+{context}<p>{html.escape(str(record['buyer_problem']))}</p>
 <h2>{html.escape(str(ui['rule']))}</h2>
 <p>{html.escape(str(record['decision_rule']))}</p>
 <h2>{html.escape(str(ui['checks']))}</h2>
 <ul>{_list(record['workflow_checks'])}</ul>
 <h2>{html.escape(str(ui['alternative']))}</h2>
 <p>{html.escape(str(record['alternative_lens']))}</p>
-<h2>{html.escape(str(ui['evidence']))}</h2>
+{conversion_details}<h2>{html.escape(str(ui['evidence']))}</h2>
 {evidence}
 {vocabulary_section}
 <h2>{html.escape(str(ui['verify']))}</h2>
 <ul>{_list(record['verify_before_install'])}</ul>
-<a class="cta" rel="noopener" href="{store_url}">{store_label}: {app_name}</a>
+{bottom_cta}
 </article>
 <footer data-publisher-disclosure="true">{disclosure}</footer>
 </main>
-</body>
+{conversion_metadata}</body>
 </html>
 """
 
@@ -1561,8 +1700,7 @@ def _sha256_text(value: str) -> str:
 
 
 def _record_digest(record: dict[str, Any]) -> str:
-    return _sha256_json(
-        {
+    fields = {
             key: record[key]
             for key in (
                 "route_id",
@@ -1585,8 +1723,13 @@ def _record_digest(record: dict[str, Any]) -> str:
                 "verify_before_install",
                 "evidence",
             )
-        }
-    )
+    }
+    if record.get("conversion_contract"):
+        fields.update({
+            "conversion_contract": record["conversion_contract"],
+            "alternates": record["alternates"],
+        })
+    return _sha256_json(fields)
 
 
 def render_feed(records: Iterable[dict[str, Any]]) -> str:
@@ -1695,7 +1838,9 @@ def _validated_managed_outputs(
     entries: object,
     *,
     output_dir: Path | None = None,
+    fixed_output_contract: dict[str, str] | None = None,
 ) -> dict[PurePosixPath, dict[str, Any]]:
+    expected_fixed = FIXED_MANAGED_OUTPUTS if fixed_output_contract is None else fixed_output_contract
     if not isinstance(entries, list):
         raise ValueError("Managed high-intent outputs must be a list")
     outputs: dict[PurePosixPath, dict[str, Any]] = {}
@@ -1721,7 +1866,7 @@ def _validated_managed_outputs(
             safe = _is_managed_route(relative)
         else:
             safe = (
-                FIXED_MANAGED_OUTPUTS.get(relative.as_posix()) == kind
+                expected_fixed.get(relative.as_posix()) == kind
             )
             if safe:
                 fixed_outputs[relative.as_posix()] = kind
@@ -1737,7 +1882,7 @@ def _validated_managed_outputs(
                 f"Duplicate managed output entry: {relative}"
             )
         outputs[relative] = entry
-    if fixed_outputs != FIXED_MANAGED_OUTPUTS:
+    if fixed_outputs != expected_fixed:
         raise ValueError(
             "Managed fixed outputs do not exactly match the contract"
         )
@@ -1770,6 +1915,7 @@ def _validate_manifest(
     document: dict[str, Any],
     *,
     output_dir: Path | None = None,
+    fixed_output_contract: dict[str, str] | None = None,
 ) -> None:
     if (
         document.get("schema_version") != MANIFEST_SCHEMA_VERSION
@@ -1840,6 +1986,7 @@ def _validate_manifest(
     outputs = _validated_managed_outputs(
         document["expected_outputs"],
         output_dir=output_dir,
+        fixed_output_contract=fixed_output_contract,
     )
     route_paths: list[PurePosixPath] = []
     for position, route in enumerate(document["routes"]):
@@ -1879,7 +2026,21 @@ def _previous_managed_routes(output_dir: Path) -> set[Path]:
     if not path.exists():
         return set()
     document = _read_json(path)
-    _validate_manifest(document, output_dir=output_dir)
+    # Only stale-route ownership accepts the former three-output manifest.
+    # Current release verification still requires both conversion artifacts.
+    entries = document.get("expected_outputs", [])
+    previous_fixed = {
+        entry.get("relative_path"): entry.get("kind")
+        for entry in entries if isinstance(entry, dict) and entry.get("kind") != "route_html"
+    } if isinstance(entries, list) else {}
+    _validate_manifest(
+        document,
+        output_dir=output_dir,
+        fixed_output_contract=(
+            LEGACY_FIXED_MANAGED_OUTPUTS
+            if previous_fixed == LEGACY_FIXED_MANAGED_OUTPUTS else None
+        ),
+    )
     managed: set[Path] = set()
     for entry in document["expected_outputs"]:
         if entry.get("kind") != "route_html":
@@ -2021,6 +2182,12 @@ def _rendered_outputs(
     )
     rendered[FEED_RELATIVE] = ("json_feed", render_feed(records))
     rendered[SITEMAP_RELATIVE] = ("sitemap", render_sitemap(records))
+    rendered[conversion_route_contract.OUTPUT_RELATIVE] = (
+        "conversion_contracts", conversion_route_contract.render_document(records, SITE),
+    )
+    rendered[conversion_route_contract.SCHEMA_RELATIVE] = (
+        "conversion_schema", conversion_route_contract.render_schema(),
+    )
     return rendered, _expected_manifest(records, report, rendered)
 
 

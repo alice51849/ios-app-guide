@@ -99,6 +99,11 @@ class PagesPublicationBoundaryTests(unittest.TestCase):
         guide = Path(os.environ.get("ALTERNATIVES_GUIDE_REPOSITORY")
                      or os.environ.get("GEO_PAGES") or default)
         source = (guide / ".github/workflows/pages.yml").read_text()
+        push = source[source.index("  push:"):source.index("  workflow_run:")]
+        self.assertIn("'!_engine/**'", push)
+        self.assertIn("'_engine/geo/deployment_generation.py'", push)
+        self.assertIn("'_engine/geo/hero_tasks_readback.py'", push)
+        self.assertNotIn("paths-ignore", push)
         materialize = source.index("name: Materialize and gate canonical discovery surfaces")
         dependencies = source.index("python3 -m pip install --requirement _engine/geo/requirements-validation.txt")
         seal = source.index("name: Prepare externally bound high-intent deployment")

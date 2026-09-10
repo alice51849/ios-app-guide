@@ -11,14 +11,16 @@ import time
 from urllib.parse import urlsplit
 import urllib.request
 
-from deployment_generation import GenerationError, verify_output_bytes
+from deployment_generation import GenerationError, READBACK_USER_AGENT, verify_output_bytes
 
 
 def fetch(url: str) -> bytes:
     error = None
     for attempt in range(3):
         try:
-            request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
+            request = urllib.request.Request(url, headers={
+                "Cache-Control": "no-cache", "User-Agent": READBACK_USER_AGENT,
+            })
             with urllib.request.urlopen(request, timeout=20) as response:
                 if response.status != 200 or response.geturl() != url:
                     raise ValueError("Published artifact HTTP status or endpoint differs")

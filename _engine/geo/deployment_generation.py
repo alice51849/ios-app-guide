@@ -30,6 +30,7 @@ DEPLOYMENT_PATH = ".well-known/deployment.json"
 MANIFEST_PATH = "data/high-intent-decision-routes/expected-output-manifest.json"
 CATALOG_PATH = "data/verified-ios-app-finder-catalog.json"
 MAX_BYTES = 16 * 1024 * 1024
+READBACK_USER_AGENT = "Lumi-Deployment-Generation/1"
 EDGE_SITE = "https://open.cait518.cc/ios-app-guide"
 # Cloudflare appends this public, integrity-pinned analytics tag after upload.
 # Only this exact suffix is reversible; all application bytes still match SHA-256.
@@ -498,7 +499,7 @@ def prepare(
 
 def get_bytes(url: str, *, timeout: int, maximum: int) -> tuple[bytes, str, int]:
     request = Request(url, method="GET", headers={
-        "Cache-Control": "no-cache", "User-Agent": "Lumi-Deployment-Generation/1",
+        "Cache-Control": "no-cache", "User-Agent": READBACK_USER_AGENT,
     })
     try:
         with urlopen(request, timeout=timeout) as response:

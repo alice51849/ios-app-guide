@@ -13,6 +13,7 @@ import subprocess
 import sys
 import unittest
 from unittest import mock
+from urllib.error import HTTPError
 import uuid
 import xml.etree.ElementTree as ET
 
@@ -24,6 +25,45 @@ import hero_tasks_readback as readback  # noqa: E402
 import sync_standard_site as sync  # noqa: E402
 from hero_task_html import Document, without_resource  # noqa: E402
 import indexnow_submit  # noqa: E402
+
+
+class HeroReadbackRequestTests(unittest.TestCase):
+    def response(self, url):
+        response = mock.MagicMock()
+        response.__enter__.return_value = response
+        response.status = 200
+        response.geturl.return_value = url
+        response.headers.get_content_type.return_value = "text/html"
+        response.read.return_value = b"<html>exact</html>"
+        return response
+
+    def test_get_identifies_the_same_first_party_verifier_as_deployment(self):
+        url = "https://open.cait518.cc/ios-app-guide/en-US/tools/example.html"
+        response = self.response(url)
+        with mock.patch.object(readback.urllib.request, "urlopen", return_value=response) as open_url:
+            self.assertEqual(b"<html>exact</html>", readback.fetch(url))
+        request = open_url.call_args.args[0]
+        self.assertEqual("GET", request.get_method())
+        self.assertEqual("Lumi-Deployment-Generation/1", request.get_header("User-agent"))
+        self.assertEqual("no-cache", request.get_header("Cache-control"))
+        response.read.assert_called_once_with(2_000_001)
+
+    def test_forbidden_or_redirected_content_is_never_accepted(self):
+        url = "https://open.cait518.cc/ios-app-guide/en-US/tools/example.html"
+        with mock.patch.object(readback.time, "sleep"), mock.patch.object(
+            readback.urllib.request, "urlopen",
+            side_effect=HTTPError(url, 403, "Forbidden", None, None),
+        ) as open_url:
+            with self.assertRaises(RuntimeError):
+                readback.fetch(url)
+            self.assertEqual(3, open_url.call_count)
+        response = self.response("https://example.com/redirect")
+        with mock.patch.object(readback.time, "sleep"), mock.patch.object(
+            readback.urllib.request, "urlopen", return_value=response,
+        ):
+            with self.assertRaises(RuntimeError):
+                readback.fetch(url)
+        response.read.assert_not_called()
 
 
 class HeroTaskTests(unittest.TestCase):

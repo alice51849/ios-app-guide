@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-10",
-  "content_digest": "fb3e26b4673a673405cba8ca3d19589e8784effef7c56e927930918faf8c9595",
+  "date_modified": "2026-09-11",
+  "content_digest": "3f6c357937c2647c8a9c715ba5f54992a14881e61b7b8552b2aba90c5e93573d",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -388,7 +388,8 @@
         "spanish",
         "french",
         "german",
-        "japanese"
+        "japanese",
+        "everyday phrases"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -780,7 +781,8 @@
         "characters",
         "sounds",
         "language",
-        "early learning"
+        "early learning",
+        "learn zhuyin"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1268,7 +1270,8 @@
         "forecast",
         "outing",
         "穿搭",
-        "外出"
+        "外出",
+        "family weather"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1349,7 +1352,8 @@
         "agenda",
         "calendar",
         "widget",
-        "tasks"
+        "tasks",
+        "checklist"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1469,7 +1473,8 @@
         "pdf",
         "report",
         "meeting",
-        "csv"
+        "csv",
+        "one page summary"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

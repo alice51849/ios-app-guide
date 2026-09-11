@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-10",
-  "content_digest": "fb3e26b4673a673405cba8ca3d19589e8784effef7c56e927930918faf8c9595",
+  "date_modified": "2026-09-11",
+  "content_digest": "3f6c357937c2647c8a9c715ba5f54992a14881e61b7b8552b2aba90c5e93573d",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -93,7 +93,8 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件"
+        "读文件",
+        "提示词管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -631,7 +632,8 @@
         "生活记账",
         "出国花费",
         "离线记账",
-        "自定义汇率"
+        "自定义汇率",
+        "出国预算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1293,7 +1295,8 @@
         "整理",
         "责任",
         "孩子",
-        "놀이"
+        "놀이",
+        "奖励 贴纸"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1479,7 +1482,10 @@
         "비",
         "자외선",
         "육아",
-        "服装"
+        "服装",
+        "儿童 天气",
+        "亲子 天气",
+        "宝宝 天气"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1693,7 +1699,9 @@
         "活动收支",
         "出租账本",
         "摊位账本",
-        "班费管理"
+        "班费管理",
+        "自由职业 记账",
+        "副业 记账"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

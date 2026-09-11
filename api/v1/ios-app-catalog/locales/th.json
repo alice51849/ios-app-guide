@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-10",
-  "content_digest": "fb3e26b4673a673405cba8ca3d19589e8784effef7c56e927930918faf8c9595",
+  "date_modified": "2026-09-11",
+  "content_digest": "3f6c357937c2647c8a9c715ba5f54992a14881e61b7b8552b2aba90c5e93573d",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -27,7 +27,8 @@
         "สเก็ตช์",
         "วาดรูป",
         "ออฟไลน์",
-        "จัดระเบียบ"
+        "จัดระเบียบ",
+        "จดโน้ตด้วยลายมือ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -68,7 +69,8 @@
         "OCR",
         "พรอมต์",
         "จัดระเบียบข้อมูล",
-        "ช่วยเขียน"
+        "ช่วยเขียน",
+        "จัดการพรอมต์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -469,7 +471,8 @@
         "ท่องเที่ยว",
         "กระเป๋า",
         "offline",
-        "csv"
+        "csv",
+        "บันทึกค่าใช้จ่ายเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -507,7 +510,8 @@
         "รายรับรายจ่าย",
         "ออมเงิน",
         "จัดการเงิน",
-        "csv"
+        "csv",
+        "งบท่องเที่ยว"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -965,7 +969,8 @@
         "ทักษะ",
         "พื้นฐาน",
         "learning",
-        "puzzle"
+        "puzzle",
+        "คณิต อนุบาล"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1390,7 +1395,8 @@
         "รดน้ำ",
         "ผ้าปูที่นอน",
         "ไส้กรอง",
-        "รถ"
+        "รถ",
+        "บันทึกงานบ้าน"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1633,7 +1639,8 @@
         "ท่องเที่ยว",
         "ช้อปปิ้ง",
         "โน้ต",
-        "ส่วนตัว"
+        "ส่วนตัว",
+        "บุ๊กมาร์ก"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

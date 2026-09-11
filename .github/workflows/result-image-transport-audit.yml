@@ -38,11 +38,11 @@ jobs:
       - name: Observe source images using public GET only
         run: |
           python3 _engine/geo/image_transport_evidence.py \
-            --output-dir .image-transport-observations --context github-actions
+            --output-dir image-transport-observations --context github-actions
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: result-image-transport-${{ github.run_id }}
-          path: .image-transport-observations
+          path: image-transport-observations
           if-no-files-found: error
           retention-days: 30

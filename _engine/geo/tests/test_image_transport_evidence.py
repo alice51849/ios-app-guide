@@ -21,6 +21,15 @@ def png(color="white"):
 
 
 class ImageTransportEvidenceTests(unittest.TestCase):
+    def test_cloud_observation_artifact_is_visible_and_never_deploys(self):
+        guide = GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"
+        workflow = (guide / ".github/workflows/result-image-transport-audit.yml").read_text()
+        self.assertIn("--output-dir image-transport-observations", workflow)
+        self.assertIn("path: image-transport-observations", workflow)
+        self.assertNotIn("pages: write", workflow)
+        self.assertNotIn("contents: write", workflow)
+        self.assertNotIn("actions/deploy-pages", workflow)
+
     def test_reversible_transport_preserves_exact_entity_and_pixels(self):
         source = png()
         expected = transport.pixel_evidence(source)

@@ -1,0 +1,91 @@
+{
+  "schema": "lumi.index-entry-canary/v1",
+  "version": 1,
+  "created_at": "2026-09-12",
+  "created_by": "worker4",
+  "purpose": "把 8 個既有高資訊量答案頁從 depth≥2 提到 depth 1,測試是否能解除 E0 索引入口阻塞。",
+  "diagnosis": {
+    "only_indexed_page": "index.html(URL Inspection = 'Submitted and indexed',lastCrawl 2026-09-07)",
+    "deep_pages": "抽樣皆為 'URL is unknown to Google' 或 'Crawled - currently not indexed'",
+    "sitemap": "sitemap_index.xml 於 2026-09-11 提交後仍 isPending=true、lastDownloaded=null",
+    "not_an_orphan_problem": "這 8 頁站內 inbound link 已有 48–476 條,不是孤兒;問題是它們都不在首頁既有的 24 條 depth-1 answers 連結裡。",
+    "change_rationale": "唯一被索引的頁面是首頁,因此把 canary 提到 depth 1 是可觀測、可逆、且不新增任何頁面的最小結構性改動。"
+  },
+  "source_binding": {
+    "selection_commit": "cfa33b69",
+    "selection_tool": "00_GrowthEngine geo/e0_index_gate.py select_canaries()",
+    "selection_evidence": "00_GrowthEngine reports/index_entry_canaries.json",
+    "selection_criteria": "既有答案頁中 word_count + 200×FAQ/HowTo 區塊數最高的前 8 名,且實測 HTTP 200"
+  },
+  "change": {
+    "file": "_engine/geo/build_pages_i18n.py",
+    "added_symbols": ["INDEX_ENTRY_CANARY_ANSWERS", "_answer_link_items", "index_entry_canary_links"],
+    "rendered_markers": ["<!-- index-entry-canary:start -->", "<!-- index-entry-canary:end -->"],
+    "target_page": "index.html",
+    "artifact_not_committed": "本分支**不提交**重生的 index.html。已發布的 index.html 由完整雲端管線產生,中間有上百支產生器會注入 guide-design CSS 與 Atom/RSS/JSON feed link;只在本機跑 build_root_index() 會把那些注入洗掉。已實測確認此風險並還原 artifact,只提交產生器原始碼。正式區塊會在下一次正常 geo-daily 全量發布時出現。",
+    "bytes_added_measured": 692,
+    "new_urls_created": 0,
+    "deep_page_content_modified": false,
+    "sitemap_modified": false,
+    "hreflang_locales_before": 50,
+    "hreflang_locales_after": 50
+  },
+  "canaries": [
+    "best-app-to-save-links-from-other-apps-on-iphone",
+    "best-app-blocker-app",
+    "best-app-for-tracking-fertile-window-trying-to-conceive-no-subscription",
+    "best-app-to-track-ovulation-and-fertile-window-iphone",
+    "best-app-to-sort-screenshots-on-iphone-offline",
+    "best-aesthetic-to-do-list-app-iphone-no-subscription",
+    "best-ats-resume-app",
+    "best-app-to-track-daily-spending-abroad-multiple-currencies"
+  ],
+  "locale_policy": {
+    "measured_2026_09_12": {
+      "best-app-to-save-links-from-other-apps-on-iphone": {"variants": 4, "en_hreflang_entries": 6},
+      "best-app-blocker-app": {"variants": 26, "en_hreflang_entries": 28},
+      "best-app-for-tracking-fertile-window-trying-to-conceive-no-subscription": {"variants": 18, "en_hreflang_entries": 20},
+      "best-app-to-track-ovulation-and-fertile-window-iphone": {"variants": 18, "en_hreflang_entries": 20},
+      "best-app-to-sort-screenshots-on-iphone-offline": {"variants": 4, "en_hreflang_entries": 6},
+      "best-aesthetic-to-do-list-app-iphone-no-subscription": {"variants": 18, "en_hreflang_entries": 20},
+      "best-ats-resume-app": {"variants": 26, "en_hreflang_entries": 28},
+      "best-app-to-track-daily-spending-abroad-multiple-currencies": {"variants": 18, "en_hreflang_entries": 20}
+    },
+    "rule": "這 8 頁都有在地化版本(4–26 個),而且每個英文頁的 hreflang 數正好等於『變體數 + en + x-default』,hreflang 圖是完整且自洽的。首頁 index.html 是 en / x-default hub,因此只連**英文版本**——那是這個 hub 的合法版本;在地化版本由英文頁自身的 hreflang alternate 宣告,搜尋引擎可由此發現,不需要也不應該從英文 hub 直連母語頁。",
+    "forbidden": "不得為了湊 exact50 而生成英文假母語版本,也不得宣稱某頁有它實際沒有的在地化版本。首頁的 50 locale hreflang 集合維持不變。",
+    "localized_hubs_untouched": "50 個 `<locale>/index.html` 完全未改,不把英文連結塞進母語頁;母語使用者的入口仍由各自語系的 hub 提供。"
+  },
+  "accessibility_and_layout": {
+    "visible": true,
+    "hidden_link_techniques_used": false,
+    "markup": "<nav aria-label=\"App picks\"> + <h2> + <ul><li><a>,與既有 'Common questions' 區塊同構",
+    "anchor_text_source": "各頁自己的 <title>,與既有 24 條同一套規則,描述性且不堆砌關鍵字",
+    "inline_styles_added": false,
+    "cta_competition": "無 —— 純文字連結,不是按鈕,不與主 CTA 競爭",
+    "touch_target": "沿用站台既有 CSS 的清單連結樣式,未覆寫任何尺寸或間距",
+    "rtl": "首頁為 lang=\"en\",未加入任何 dir 或方向性樣式;50 個母語頁未被改動,RTL 行為不受影響",
+    "page_length": "+692 bytes / 8 個項目,未把首頁變成長頁"
+  },
+  "rollback": {
+    "fully_reversible": true,
+    "steps": [
+      "1. 在 _engine/geo/build_pages_i18n.py 刪除 INDEX_ENTRY_CANARY_ANSWERS、_answer_link_items、index_entry_canary_links 三個符號。",
+      "2. 在 build_root_index() 內刪除 canary_links / canary_block 兩個區域變數,並把樣板裡的 `{canary_block}` 那一行移除。",
+      "3. 重跑 build_root_index(),index.html 會回到與改動前 byte 相同的內容。"
+    ],
+    "alternative_immediate_rollback": "直接刪掉已發布 index.html 中 `<!-- index-entry-canary:start -->` 到 `<!-- index-entry-canary:end -->` 之間(含標記)的區塊即可,不影響其他任何內容。",
+    "blast_radius": "只有 index.html 一個檔案;沒有新增 URL、沒有改深層頁、沒有改 sitemap、沒有改 50 個母語頁。"
+  },
+  "e0_gate_still_applies": {
+    "rule": "本改動**不**代表 E0 解除。E1(software schema)與 E2(image alt)仍必須等到 GSC URL Inspection 對代表性深層頁回報 verdict=PASS 且 coverageState 含 indexed,並且 sitemap isPending=false 且 lastDownloaded 非空,才可起算。",
+    "gate_tool": "00_GrowthEngine geo/e0_index_gate.py(exit 0 = 放行,exit 2 = 仍阻塞)",
+    "not_claimable": "在 GSC 出現實際索引變化前,不得宣稱本改動有效;也不得宣稱它會帶來下載或購買。"
+  },
+  "explicitly_not_done": [
+    "未提交 sitemap、未送 IndexNow、未呼叫任何 GSC 寫入 API",
+    "未改 main、未部署、未觸發任何 workflow",
+    "未新增任何頁面、未建立 doorway 或薄頁",
+    "未改動 8 個 canary 頁本身的任何內容",
+    "未改動 00_GrowthEngine 的 geo/build_pages_i18n.py 上游副本(見 handoff 的同步注意事項)"
+  ]
+}

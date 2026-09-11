@@ -2253,8 +2253,77 @@ def verified_demand_links():
     return items
 
 
+# index-entry canary(2026-09-12,worker4)
+#
+# 為什麼是這八個:站台首頁是目前**唯一**被 Google 索引的頁面
+# (URL Inspection:index.html = "Submitted and indexed",lastCrawl 2026-09-07),
+# 而深層答案頁不是 "URL is unknown to Google" 就是 "Crawled - currently not indexed"。
+# 這八頁各有 733–812 字與兩個 FAQ/HowTo 區塊,是既有頁面中資訊量最高的一批,
+# 且實測全部回 HTTP 200;但它們**都不在**首頁既有那 24 條 answers 連結裡,
+# 也就是距離唯一被索引的頁面至少兩層。把它們提到 depth 1 是可逆、不新增頁面、
+# 也不改動深層內容的最小結構性改動。
+#
+# 選取證據與凍結來源:00_GrowthEngine commit `cfa33b69`
+# (geo/e0_index_gate.py 的 select_canaries + reports/index_entry_canaries.json)。
+#
+# 與 VERIFIED_DEMAND_ANSWERS 同樣只放 slug:標題一律從該頁自己的 <title> 取,
+# 頁面被改名或刪除就自動掉出清單,不會留下 404。
+INDEX_ENTRY_CANARY_ANSWERS = (
+    "best-app-to-save-links-from-other-apps-on-iphone",
+    "best-app-blocker-app",
+    "best-app-for-tracking-fertile-window-trying-to-conceive-no-subscription",
+    "best-app-to-track-ovulation-and-fertile-window-iphone",
+    "best-app-to-sort-screenshots-on-iphone-offline",
+    "best-aesthetic-to-do-list-app-iphone-no-subscription",
+    "best-ats-resume-app",
+    "best-app-to-track-daily-spending-abroad-multiple-currencies",
+)
+
+
+def _answer_link_items(slugs, seen=None):
+    """從各頁自己的 <title> 產生 <li> 連結;檔案不存在就跳過,不發 404。"""
+    items = []
+    seen = seen if seen is not None else set()
+    for slug in slugs:
+        if slug in seen:
+            continue  # 同一個 slug 不在首頁出現兩次,避免重複 anchor
+        path = os.path.join(PAGES, "answers", f"{slug}.html")
+        try:
+            with open(path, encoding="utf-8") as fh:
+                head = fh.read(4096)
+        except OSError:
+            continue
+        match = _ANSWER_TITLE_RE.search(head)
+        if not match:
+            continue
+        title = match.group(1).split(" | ")[0].split(" — ")[0].strip()
+        title = re.sub(r":\s*honest iPhone app buying guide$", "", title,
+                       flags=re.IGNORECASE).strip(" :")
+        if not title:
+            continue
+        title = title[0].upper() + title[1:]
+        seen.add(slug)
+        items.append(
+            f'      <li><a href="{SITE}/answers/{slug}.html">{html.escape(title)}</a></li>'
+        )
+    return items
+
+
+def index_entry_canary_links():
+    """首頁 index-entry canary 區塊的 <li>。
+
+    只連英文版本,因為 index.html 是 en / x-default hub —— 那是這個 hub 的合法版本。
+    這 8 頁都有在地化版本(2026-09-12 實測 4–26 個),而且每個英文頁的 hreflang 數
+    正好等於「實際變體數 + en + x-default」,hreflang 圖已經完整自洽;在地化版本由
+    英文頁自己的 alternate 宣告,搜尋引擎可由此發現,不需要也不該從英文 hub 直連母語頁。
+    絕不為了湊 exact50 去生成英文假母語版本。
+
+    已出現在 VERIFIED_DEMAND_ANSWERS 的 slug 會被排除,首頁不會有重複 anchor。
+    """
+    return _answer_link_items(INDEX_ENTRY_CANARY_ANSWERS, seen=set(VERIFIED_DEMAND_ANSWERS))
+
+
 def build_root_index(locales):
-    e = html.escape
     lang_links = "\n".join(
         f'    <li><a href="{lc}/index.html" hreflang="{lc}">{lc}</a></li>' for lc in locales)
     demand_links = verified_demand_links()
@@ -2264,6 +2333,15 @@ def build_root_index(locales):
         + "\n".join(demand_links)
         + '\n    </ul>\n  </nav>'
     ) if demand_links else ""
+    canary_links = index_entry_canary_links()
+    canary_block = (
+        '<!-- index-entry-canary:start -->\n'
+        '  <nav aria-label="App picks">\n'
+        '    <h2>Popular app picks people compare</h2>\n    <ul>\n'
+        + "\n".join(canary_links)
+        + '\n    </ul>\n  </nav>\n'
+        '  <!-- index-entry-canary:end -->'
+    ) if canary_links else ""
     idx = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -2275,6 +2353,7 @@ def build_root_index(locales):
   <h1>iOS Apps — choose your language</h1>
   <p><a href="{SITE}/apps/index.html">Browse all verified apps by category</a></p>
   {answers_block}
+  {canary_block}
   <nav aria-label="Sections">
     <ul>
       <li><a href="{SITE}/answers/index.html">Answers — buying guides by question</a></li>

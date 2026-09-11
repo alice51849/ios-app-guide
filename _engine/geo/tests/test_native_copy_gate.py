@@ -138,6 +138,29 @@ class PurchaseModelTests(unittest.TestCase):
         )
         self.assertTrue(hard)
 
+    def test_negation_is_bound_to_the_free_word(self):
+        """否定詞必須真的在否定「免費」,而不是同一句裡否定別的東西。"""
+        claims = (
+            ("bn-BD", "বিনামূল্যে শুরু করুন।"),          # 免費詞自己含 `না`
+            ("bn-BD", "নাম লিখুন, ফ্রি ট্রায়াল নিন।"),   # `নাম` 不是否定詞
+            ("hi", "no ads, free trial."),               # 否定的是廣告
+            ("hi", "Works without ads, try free today."),
+        )
+        for locale, text in claims:
+            with self.subTest(text=text):
+                hard, _soft = gate.purchase_model_defects(text, locale, "paid_upfront")
+                self.assertTrue(hard, text)
+
+        honest = (
+            ("hi", "No free trial; buy once."),
+            ("or-IN", "ଏହା ମାଗଣା ନୁହେଁ; ଥରେ କିଣନ୍ତୁ।"),
+            ("hi", "विज्ञापन-मुक्त ऐप"),
+        )
+        for locale, text in honest:
+            with self.subTest(text=text):
+                hard, _soft = gate.purchase_model_defects(text, locale, "paid_upfront")
+                self.assertEqual([], hard, text)
+
     def test_odia_ad_free_is_not_a_price_claim(self):
         hard, _soft = gate.purchase_model_defects(
             "ବିଜ୍ଞାପନ ମୁକ୍ତ ଶିଶୁ ଆପ୍", "or-IN", "paid_upfront"
@@ -222,13 +245,26 @@ class IndicMatrixTests(unittest.TestCase):
         }
         cls.verdicts = {}
         for key in sorted(APPS):
+            model = APPS[key].get("purchase_model") or ""
             try:
                 localizations = pages.load_app_locales(key)
-            except Exception:  # 沒有策展資料的 App 不在這個矩陣裡
+            except Exception as error:
+                # 讀不到策展資料不是「跳過」的理由:整支 App 的 10 格會一起消失,
+                # 測試必須紅燈而不是默默縮小矩陣。
+                for locale in gate.INDIC_LOCALES:
+                    cls.verdicts[(key, locale)] = {
+                        "ok": False,
+                        "failures": [f"load_error:{error}"],
+                        "ratio": 0.0,
+                    }
                 continue
-            model = APPS[key].get("purchase_model") or ""
             for locale in gate.INDIC_LOCALES:
                 if locale not in localizations:
+                    cls.verdicts[(key, locale)] = {
+                        "ok": False,
+                        "failures": ["missing_locale"],
+                        "ratio": 0.0,
+                    }
                     continue
                 try:
                     values = pages.external_localized_values(key, locale, localizations)
@@ -251,27 +287,25 @@ class IndicMatrixTests(unittest.TestCase):
                     assembled, locale, brand=name, purchase_model=model
                 )
 
-    def test_every_app_with_indic_data_has_all_ten_locales(self):
-        """只要求「至少 N 格」的測試,會在整片 locale 消失時照樣綠燈。"""
-        seen = {}
-        for app, locale in self.verdicts:
-            seen.setdefault(app, set()).add(locale)
-        self.assertTrue(seen, "Indic 矩陣是空的")
-        incomplete = {
-            app: sorted(set(gate.INDIC_LOCALES) - locales)
-            for app, locales in seen.items()
-            if len(locales) != len(gate.INDIC_LOCALES)
+    def test_matrix_covers_every_registry_app_times_ten_locales(self):
+        """分母以 registry 全集為準:少一支 App 或少一個 locale 都要紅燈。
+
+        只要求「至少 N 格」或「有資料的 App 才算」的測試,會在整支 App 的
+        策展資料消失時照樣綠燈,那正是這個閘門要防的事。
+        """
+        expected = {
+            (app, locale) for app in APPS for locale in gate.INDIC_LOCALES
         }
-        self.assertEqual({}, incomplete)
+        self.assertEqual(expected, set(self.verdicts))
+        self.assertEqual(len(APPS) * len(gate.INDIC_LOCALES), len(self.verdicts))
 
     def test_scope_apps_are_fully_native(self):
         for app in ("aim990", "lumibopomofo", "lumiletterspro", "lumimissionpro",
                     "tripplanet"):
             for locale in gate.INDIC_LOCALES:
-                verdict = self.verdicts.get((app, locale))
-                if verdict is None:
-                    continue
                 with self.subTest(app=app, locale=locale):
+                    verdict = self.verdicts.get((app, locale))
+                    self.assertIsNotNone(verdict, "本次負責的 cell 不可以從矩陣消失")
                     self.assertEqual([], verdict["failures"])
                     self.assertGreaterEqual(verdict["ratio"], gate.NATIVE_RATIO_FLOOR)
 

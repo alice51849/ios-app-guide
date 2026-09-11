@@ -265,10 +265,12 @@ SUBSCRIPTION_WORDS = {
     "te-IN": ("సబ్‌స్క్రిప్షన్", "సబ్స్క్రిప్షన్", "చందా"),
 }
 NEGATION_MARKERS = (
-    "नहीं", "बिना", "नाही", "নেই", "না", "ছাড়া", "இல்லை", "இன்றி", "ಇಲ್ಲ",
-    "ഇല്ല", "ഇല്ലാതെ", "లేదు", "లేకుండా", "ਨਹੀਂ", "ਬਿਨਾਂ", "નથી", "વગર",
-    "ନାହିଁ", "ବିନା", "no ", "without", "-free",
+    "नहीं", "बिना", "नाही", "নেই", "না", "নয়", "ছাড়া", "இல்லை", "இன்றி",
+    "ಇಲ್ಲ", "ಅಲ್ಲ", "ഇല്ല", "ഇല്ലാതെ", "അല്ല", "లేదు", "లేకుండా", "కాదు",
+    "ਨਹੀਂ", "ਬਿਨਾਂ", "નથી", "વગર", "ନାହିଁ", "ନୁହେଁ", "ବିନା",
 )
+# 拉丁字否定詞需要單字邊界:`no` 不可以命中 `note`,`not` 不可以命中 `nothing`。
+LATIN_NEGATION_RE = re.compile(r"\b(?:no|not|never|without)\b")
 HYPHENS = "-\u2010\u2011\u2012\u2013\u2014"
 PAID_UPFRONT_MODELS = frozenset({"paid_upfront", "paid"})
 FREE_TO_START_MODELS = frozenset(
@@ -276,15 +278,16 @@ FREE_TO_START_MODELS = frozenset(
 )
 
 
-CLAUSE_BOUNDARY_RE = re.compile(r"[।॥.!?;:\n•|]+")
+# 逗號也算段落界線:`no ads, free trial` 的否定講的是廣告,不是價格。
+CLAUSE_BOUNDARY_RE = re.compile(r"[。।॥.!?;:,、,\n•|]+")
 
 
 def _clause_bounds(text: str, index: int) -> tuple[int, int]:
-    """找出 index 所在的子句範圍。
+    """找出 index 所在的子句範圍(以句號、逗號等界線切分)。
 
     否定詞只有在**同一個子句**裡才真的否定了免費訴求:
-    「कोई विज्ञापन नहीं। मुफ़्त आज़माएँ।」的「नहीं」否定的是廣告,不是價格,
-    用前後 45 字的滑動視窗會把這種假免費訴求整個放掉。
+    「कोई विज्ञापन नहीं। मुफ़्त आज़माएँ।」與「no ads, free trial」的否定講的都是
+    廣告,不是價格,用前後 45 字的滑動視窗會把這種假免費訴求整個放掉。
     """
     start = 0
     end = len(text)
@@ -311,8 +314,17 @@ def free_claim_spans(text: str, locale: str) -> list[tuple[int, int, str]]:
             end = start + len(needle)
             preceded_by_hyphen = start > 0 and text[start - 1] in HYPHENS
             clause_start, clause_end = _clause_bounds(text, start)
-            clause = text[clause_start:clause_end]
-            negated = any(marker in clause for marker in NEGATION_MARKERS)
+            # 把免費詞本身從否定詞搜尋範圍挖掉:孟加拉語的 `বিনামূল্যে`
+            # 字面上就含有否定詞 `না`,不挖掉的話永遠判不出假免費訴求。
+            clause = (
+                text[clause_start:start]
+                + " " * (end - start)
+                + text[end:clause_end]
+            )
+            folded_clause = clause.casefold()
+            negated = any(
+                marker in clause for marker in NEGATION_MARKERS
+            ) or bool(LATIN_NEGATION_RE.search(folded_clause))
             if not preceded_by_hyphen and not negated:
                 spans.append((start, end, word))
             start = folded.find(needle, end)
@@ -342,8 +354,14 @@ def purchase_model_defects(
             index = text.find(word)
             while index != -1:
                 clause_start, clause_end = _clause_bounds(text, index)
-                clause = text[clause_start:clause_end]
-                if not any(marker in clause for marker in NEGATION_MARKERS):
+                clause = (
+                    text[clause_start:index]
+                    + " " * len(word)
+                    + text[index + len(word):clause_end]
+                )
+                if not any(
+                    marker in clause for marker in NEGATION_MARKERS
+                ) and not LATIN_NEGATION_RE.search(clause.casefold()):
                     soft.append(f"ambiguous_subscription_mention:{word}")
                     break
                 index = text.find(word, index + len(word))

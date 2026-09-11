@@ -1552,6 +1552,10 @@ def native_first_keywords(keywords, locale):
     泰米爾語或印地語家長覺得整頁是機器產生的。這裡只重排顯示順序,
     不刪任何關鍵字——英文詞仍留在 meta/schema 供搜尋引擎使用。
     """
+    if locale not in native_copy_gate.INDIC_SCRIPTS:
+        # 只處理本次負責的 10 個 Indic locale:其他語系的 chip 順序由各自的
+        # locale owner 決定,不在這裡順手改動。
+        return list(keywords)
     pattern = NATIVE_SCRIPT_PATTERNS.get(locale)
     if not pattern:
         return list(keywords)

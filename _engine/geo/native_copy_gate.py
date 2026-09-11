@@ -133,17 +133,17 @@ TOKEN_TRIM = "().,:;!?\"'[]{}|/\u0964\u0965\u2022\u2013\u2014-"
 def _fragment_kind(token: str, script: str, low: int, high: int, virama: int):
     """這個 token 是不是被切斷的詞素,而不是一個完整的詞。
 
-    只保留**高精準**的三個訊號。刻意不把「字尾 virama」當缺陷:
-    `ಸ್ಕ್ಯಾನ್`、`ୱିଜେଟ୍`、`உங்கள்` 都以 virama 結尾而且完全正確,
-    2026-09-11 的稽核就是被這條規則誤報了 330 個 cell。
+    只保留**高精準**的兩個訊號:以組合符號開頭的孤兒 matra,以及不可能單獨
+    成詞的單一子音字母。刻意不把「字尾 virama」當缺陷:`ಸ್ಕ್ಯಾನ್`、`ୱିଜେଟ୍`、
+    `உங்கள்` 都以 virama 結尾而且完全正確,2026-09-11 的稽核就是被這條規則誤報
+    了 330 個 cell;同理 `device ல் review` 這種把格位後綴分開寫的 code-switching
+    雖然排版不漂亮,但渲染完全正常,不是破字。
     """
     core = token.strip(TOKEN_TRIM)
     if not core or not any(_is_native_letter(ch, low, high) for ch in core):
         return None
     if _combining(core[0]):
         return "orphan_combining_mark"
-    if len(core) == 2 and ord(core[1]) == virama:
-        return "consonant_halant_only"
     if (
         len(core) == 1
         and not _is_independent_vowel(core[0], low)
@@ -153,8 +153,15 @@ def _fragment_kind(token: str, script: str, low: int, high: int, virama: int):
     return None
 
 
+# 馬拉雅拉姆語的 chillu 字母(ൻ ൽ ർ ൾ ൺ ൿ)可以單獨當格位後綴寫,
+# 例如 `device ൽ`,不是被切斷的詞素。
+STANDALONE_LETTERS = frozenset("\u0d7a\u0d7b\u0d7c\u0d7d\u0d7e\u0d7f")
+
+
 def _is_independent_vowel(ch: str, low: int) -> bool:
     """Indic block 的排列:獨立母音固定排在子音之前。"""
+    if ch in STANDALONE_LETTERS:
+        return True
     offset = ord(ch) - low
     if low == 0x0B80:  # Tamil
         return offset <= 0x14
@@ -175,26 +182,31 @@ def latin_intrusions(text: str, locale: str) -> list[str]:
         core = token.strip(TOKEN_TRIM)
         if not core or not re.fullmatch(r"[A-Za-z]+", core):
             continue
-        if core.casefold() in LATIN_PRODUCT_TERMS:
-            continue
         left = tokens[index - 1] if index else ""
         right = tokens[index + 1] if index + 1 < len(tokens) else ""
         if not _letters_in(left, low, high) or not _letters_in(right, low, high):
             continue
-        if _fragment_kind(left, script, low, high, virama) or _fragment_kind(
-            right, script, low, high, virama
-        ):
-            found.append(f"{left} {core} {right}")
+        # 印度語系的格位後綴寫在名詞**之後**(`ETS ର`、`ETS ನ` = 「ETS 的」),
+        # 所以右側的單一子音是合法的 code-switching;真正壞掉的樣態是
+        # 左側被切成碎片(`କ ads ଣସି`)或右側以孤兒 matra 開頭(`ଦ୍ SA ାରା`)。
+        left_kind = _fragment_kind(left, script, low, high, virama)
+        right_kind = _fragment_kind(right, script, low, high, virama)
+        broken = left_kind or (right_kind == "orphan_combining_mark")
+        if not broken:
+            continue
+        # 產品詞白名單只用來放行「兩側都是完整詞」的正常 code-switching;
+        # 一旦旁邊是破碎詞素,`କ iOS ଣସି` 這種一樣是壞掉的字串。
+        found.append(f"{left} {core} {right}")
     return found
 
 
 def fragment_defects(text: str, locale: str) -> list[str]:
-    """文字裡出現不可能單獨存在的詞素(孤兒 matra、只有子音+halant)。"""
+    """文字裡出現不可能單獨存在的詞素(以組合符號開頭的孤兒 matra)。"""
     script, low, high, virama = INDIC_SCRIPTS[locale]
     defects = []
     for token in _tokens(_strip_noise(text)):
         kind = _fragment_kind(token, script, low, high, virama)
-        if kind in {"orphan_combining_mark", "consonant_halant_only"}:
+        if kind == "orphan_combining_mark":
             defects.append(f"{kind}:{token}")
     return defects
 
@@ -233,7 +245,8 @@ FREE_WORDS = {
     "kn-IN": ("ಉಚಿತ", "ಫ್ರೀ"),
     "ml-IN": ("സൗജന്യ", "ഫ്രീ"),
     "mr-IN": ("मोफत", "फुकट", "फ्री"),
-    "or-IN": ("ମାଗଣା", "ମୁକ୍ତ"),
+    # `ମୁକ୍ତ` 是「免於…」(`ବିଜ୍ଞାପନ ମୁକ୍ତ` = 無廣告),不是價格上的免費。
+    "or-IN": ("ମାଗଣା", "ନିଃଶୁଳ୍କ"),
     "pa-IN": ("ਮੁਫ਼ਤ", "ਮੁਫਤ"),
     "ta-IN": ("இலவச",),
     "te-IN": ("ఉచిత", "ఫ్రీ"),
@@ -263,21 +276,46 @@ FREE_TO_START_MODELS = frozenset(
 )
 
 
+CLAUSE_BOUNDARY_RE = re.compile(r"[।॥.!?;:\n•|]+")
+
+
+def _clause_bounds(text: str, index: int) -> tuple[int, int]:
+    """找出 index 所在的子句範圍。
+
+    否定詞只有在**同一個子句**裡才真的否定了免費訴求:
+    「कोई विज्ञापन नहीं। मुफ़्त आज़माएँ।」的「नहीं」否定的是廣告,不是價格,
+    用前後 45 字的滑動視窗會把這種假免費訴求整個放掉。
+    """
+    start = 0
+    end = len(text)
+    for match in CLAUSE_BOUNDARY_RE.finditer(text):
+        if match.end() <= index:
+            start = match.end()
+        elif match.start() >= index:
+            end = match.start()
+            break
+    return start, end
+
+
 def free_claim_spans(text: str, locale: str) -> list[tuple[int, int, str]]:
-    """真正在宣稱「免費」的位置(排除 `-free` 複合詞與被否定詞包住的用法)。"""
+    """真正在宣稱「免費」的位置(排除 `-free` 複合詞與同一子句內被否定的用法)。"""
     text = str(text or "")
-    words = list(FREE_WORDS.get(locale, ())) + list(ENGLISH_FREE_WORDS)
+    # 一律用 casefold 後的字串搜尋:Indic 文字沒有大小寫,英文的
+    # 「Free trial」不可以因為首字大寫就漏掉。
+    folded = text.casefold()
     spans = []
-    for word in words:
-        start = text.find(word)
+    for word in list(FREE_WORDS.get(locale, ())) + list(ENGLISH_FREE_WORDS):
+        needle = word.casefold()
+        start = folded.find(needle)
         while start != -1:
-            end = start + len(word)
+            end = start + len(needle)
             preceded_by_hyphen = start > 0 and text[start - 1] in HYPHENS
-            window = text[max(0, start - 45): end + 45]
-            negated = any(marker in window for marker in NEGATION_MARKERS)
+            clause_start, clause_end = _clause_bounds(text, start)
+            clause = text[clause_start:clause_end]
+            negated = any(marker in clause for marker in NEGATION_MARKERS)
             if not preceded_by_hyphen and not negated:
                 spans.append((start, end, word))
-            start = text.find(word, end)
+            start = folded.find(needle, end)
     return sorted(spans)
 
 
@@ -303,8 +341,9 @@ def purchase_model_defects(
         for word in SUBSCRIPTION_WORDS.get(locale, ()):
             index = text.find(word)
             while index != -1:
-                window = text[max(0, index - 45): index + len(word) + 45]
-                if not any(marker in window for marker in NEGATION_MARKERS):
+                clause_start, clause_end = _clause_bounds(text, index)
+                clause = text[clause_start:clause_end]
+                if not any(marker in clause for marker in NEGATION_MARKERS):
                     soft.append(f"ambiguous_subscription_mention:{word}")
                     break
                 index = text.find(word, index + len(word))

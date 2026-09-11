@@ -67,6 +67,11 @@ class ShapingFalsePositiveTests(unittest.TestCase):
         ("hi", "यह ऐप स्क्रीन-फ्री समय बढ़ाता है।"),
         ("mr-IN", "impulse buying थांबवा. goals व खर्च एकाच ठिकाणी."),
         ("bn-BD", "অ্যাপটি সম্পূর্ণ বিজ্ঞাপনমুক্ত। কোনো সাইন-আপ নেই।"),
+        # 格位後綴寫在拉丁詞之後是合法的 code-switching,不是破字。
+        ("or-IN", "TOEIC ହେଉଛି ETS ର ଟ୍ରେଡମାର୍କ।"),
+        ("kn-IN", "TOEIC ಎಂಬುದು ETS ನ ವ್ಯಾಪಾರ ಚಿಹ್ನೆ."),
+        ("ml-IN", "ചെയ്യുന്നതിന് മുമ്പ് device ൽ review ചെയ്യാം."),
+        ("ta-IN", "Delete முன் device ல் review செய்யவும்."),
     ]
 
     def test_correct_orthography_is_never_flagged(self):
@@ -92,6 +97,10 @@ class ShapingDefectTests(unittest.TestCase):
     def test_danda_shared_across_scripts_is_not_foreign(self):
         self.assertEqual([], gate.shaping_defects("ଏହା ଏକ ପରୀକ୍ଷା ଅଟେ।", "or-IN"))
 
+    def test_product_term_glued_to_a_broken_fragment_is_still_broken(self):
+        defects = gate.shaping_defects("ଏହା କ iOS ଣସି ଆପ୍", "or-IN")
+        self.assertTrue(any(d.startswith("latin_inside_word") for d in defects), defects)
+
     def test_dotted_circle_is_a_defect(self):
         self.assertIn("dotted_circle", gate.shaping_defects("क\u25ccि", "hi"))
 
@@ -114,6 +123,24 @@ class PurchaseModelTests(unittest.TestCase):
             "இது இலவசம் இல்லை; ஒரு முறை மட்டும் பணம் செலுத்துங்கள்.",
             "ta-IN",
             "paid_upfront",
+        )
+        self.assertEqual([], hard)
+
+    def test_english_free_claim_is_case_insensitive(self):
+        hard, _soft = gate.purchase_model_defects(
+            "Free trial, then buy once.", "hi", "paid_upfront"
+        )
+        self.assertTrue(hard)
+
+    def test_negation_in_a_different_clause_does_not_excuse_a_free_claim(self):
+        hard, _soft = gate.purchase_model_defects(
+            "कोई विज्ञापन नहीं। मुफ़्त आज़माएँ।", "hi", "paid_upfront"
+        )
+        self.assertTrue(hard)
+
+    def test_odia_ad_free_is_not_a_price_claim(self):
+        hard, _soft = gate.purchase_model_defects(
+            "ବିଜ୍ଞାପନ ମୁକ୍ତ ଶିଶୁ ଆପ୍", "or-IN", "paid_upfront"
         )
         self.assertEqual([], hard)
 
@@ -190,8 +217,8 @@ class IndicMatrixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.waivers = _load(WAIVER_PATH)
-        cls.waived = {
-            (cell["app"], cell["locale"]) for cell in cls.waivers["cells"]
+        cls.recorded = {
+            (cell["app"], cell["locale"]): cell for cell in cls.waivers["cells"]
         }
         cls.verdicts = {}
         for key in sorted(APPS):
@@ -224,8 +251,18 @@ class IndicMatrixTests(unittest.TestCase):
                     assembled, locale, brand=name, purchase_model=model
                 )
 
-    def test_matrix_is_not_empty(self):
-        self.assertGreaterEqual(len(self.verdicts), 300)
+    def test_every_app_with_indic_data_has_all_ten_locales(self):
+        """只要求「至少 N 格」的測試,會在整片 locale 消失時照樣綠燈。"""
+        seen = {}
+        for app, locale in self.verdicts:
+            seen.setdefault(app, set()).add(locale)
+        self.assertTrue(seen, "Indic 矩陣是空的")
+        incomplete = {
+            app: sorted(set(gate.INDIC_LOCALES) - locales)
+            for app, locales in seen.items()
+            if len(locales) != len(gate.INDIC_LOCALES)
+        }
+        self.assertEqual({}, incomplete)
 
     def test_scope_apps_are_fully_native(self):
         for app in ("aim990", "lumibopomofo", "lumiletterspro", "lumimissionpro",
@@ -242,7 +279,7 @@ class IndicMatrixTests(unittest.TestCase):
         unexpected = {
             cell: verdict["failures"]
             for cell, verdict in self.verdicts.items()
-            if not verdict["ok"] and cell not in self.waived
+            if not verdict["ok"] and cell not in self.recorded
         }
         self.assertEqual({}, unexpected)
 
@@ -250,10 +287,35 @@ class IndicMatrixTests(unittest.TestCase):
         """修好的 cell 必須從 ledger 移除,否則債務清單會永遠不縮。"""
         stale = [
             cell
-            for cell in sorted(self.waived)
+            for cell in sorted(self.recorded)
             if cell in self.verdicts and self.verdicts[cell]["ok"]
         ]
         self.assertEqual([], stale)
+
+    def test_waived_cells_may_not_get_worse(self):
+        """已列管的 cell 只能維持原缺陷類型,而且母語比例不可再下降。
+
+        少了這一條,ledger 會變成「這格以後隨便壞」的通行證。
+        """
+        regressions = {}
+        for cell, recorded in sorted(self.recorded.items()):
+            verdict = self.verdicts.get(cell)
+            if verdict is None:
+                continue
+            kinds = {f.split("(")[0] for f in verdict["failures"]}
+            new_kinds = sorted(kinds - set(recorded["defects"]))
+            if new_kinds:
+                regressions[cell] = f"新缺陷 {new_kinds}"
+            elif verdict["ratio"] + 1e-6 < recorded["ratio_when_recorded"]:
+                regressions[cell] = (
+                    f"母語比例下降 {recorded['ratio_when_recorded']} -> {verdict['ratio']}"
+                )
+        self.assertEqual({}, regressions)
+
+    def test_ledger_has_no_ghost_cells(self):
+        """ledger 不可以留下已經不存在的 app/locale,否則會遮蔽真正的缺口。"""
+        ghosts = [cell for cell in sorted(self.recorded) if cell not in self.verdicts]
+        self.assertEqual([], ghosts)
 
     def test_paid_upfront_pages_never_promise_free(self):
         for (app, locale), verdict in self.verdicts.items():
@@ -290,6 +352,15 @@ class KeywordOrderingTests(unittest.TestCase):
     def test_latin_locales_keep_their_order(self):
         keywords = ["to do list", "checklist"]
         self.assertEqual(keywords, pages.native_first_keywords(keywords, "en-US"))
+
+    def test_non_indic_locales_are_out_of_scope(self):
+        """其他語系的 chip 順序由各自的 locale owner 決定,本次不得順手改。"""
+        keywords = ["zhuyin", "ボポモフォ", "bopomofo", "中文"]
+        for locale in ("ja", "zh-Hant", "ko", "ar-SA", "he", "ru", "th", "el", "uk"):
+            with self.subTest(locale=locale):
+                self.assertEqual(
+                    keywords, pages.native_first_keywords(keywords, locale)
+                )
 
 
 if __name__ == "__main__":

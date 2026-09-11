@@ -4,7 +4,7 @@
     {
       "app": "aibriefpack",
       "defects": [
-        "latin_fallback(ratio=0.65)"
+        "latin_fallback"
       ],
       "locale": "ml-IN",
       "owner": "aibriefpack 文案 owner",
@@ -14,7 +14,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.67)"
+        "latin_fallback"
       ],
       "locale": "gu-IN",
       "owner": "mochi 文案 owner",
@@ -24,7 +24,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.68)"
+        "latin_fallback"
       ],
       "locale": "hi",
       "owner": "mochi 文案 owner",
@@ -34,7 +34,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.64)"
+        "latin_fallback"
       ],
       "locale": "kn-IN",
       "owner": "mochi 文案 owner",
@@ -44,7 +44,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.65)"
+        "latin_fallback"
       ],
       "locale": "ml-IN",
       "owner": "mochi 文案 owner",
@@ -54,7 +54,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.60)"
+        "latin_fallback"
       ],
       "locale": "mr-IN",
       "owner": "mochi 文案 owner",
@@ -64,7 +64,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.63)"
+        "latin_fallback"
       ],
       "locale": "or-IN",
       "owner": "mochi 文案 owner",
@@ -74,7 +74,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.59)"
+        "latin_fallback"
       ],
       "locale": "pa-IN",
       "owner": "mochi 文案 owner",
@@ -84,7 +84,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.64)"
+        "latin_fallback"
       ],
       "locale": "ta-IN",
       "owner": "mochi 文案 owner",
@@ -94,7 +94,7 @@
     {
       "app": "mochi",
       "defects": [
-        "latin_fallback(ratio=0.60)"
+        "latin_fallback"
       ],
       "locale": "te-IN",
       "owner": "mochi 文案 owner",
@@ -104,7 +104,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.60)"
+        "latin_fallback"
       ],
       "locale": "bn-BD",
       "owner": "zafe 文案 owner",
@@ -114,7 +114,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.59)"
+        "latin_fallback"
       ],
       "locale": "gu-IN",
       "owner": "zafe 文案 owner",
@@ -124,7 +124,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.43)"
+        "latin_fallback"
       ],
       "locale": "hi",
       "owner": "zafe 文案 owner",
@@ -134,7 +134,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.54)"
+        "latin_fallback"
       ],
       "locale": "kn-IN",
       "owner": "zafe 文案 owner",
@@ -144,7 +144,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.56)"
+        "latin_fallback"
       ],
       "locale": "ml-IN",
       "owner": "zafe 文案 owner",
@@ -154,7 +154,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.49)"
+        "latin_fallback"
       ],
       "locale": "mr-IN",
       "owner": "zafe 文案 owner",
@@ -164,7 +164,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.46)"
+        "latin_fallback"
       ],
       "locale": "or-IN",
       "owner": "zafe 文案 owner",
@@ -174,7 +174,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.46)"
+        "latin_fallback"
       ],
       "locale": "pa-IN",
       "owner": "zafe 文案 owner",
@@ -184,7 +184,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.54)"
+        "latin_fallback"
       ],
       "locale": "ta-IN",
       "owner": "zafe 文案 owner",
@@ -194,7 +194,7 @@
     {
       "app": "zafe",
       "defects": [
-        "latin_fallback(ratio=0.47)"
+        "latin_fallback"
       ],
       "locale": "te-IN",
       "owner": "zafe 文案 owner",
@@ -203,7 +203,7 @@
     }
   ],
   "recorded": "2026-09-11",
-  "rule": "這是 ratchet ledger,不是豁免許可:清單外的任何 cell 失敗就是測試失敗;清單內的 cell 一旦修好也必須從這裡移除,否則同樣是測試失敗。",
-  "schema_version": 1,
+  "rule": "這是 ratchet ledger,不是豁免許可:清單外的任何 cell 失敗就是測試失敗;清單內的 cell 只允許出現已記錄的缺陷類型,母語比例不得低於記錄值,修好之後也必須從這裡移除。",
+  "schema_version": 2,
   "scope": "geo 來源層組裝文案(subtitle + description + 顯示中的 keyword chip + 定價句)"
 }

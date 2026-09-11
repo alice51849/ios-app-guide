@@ -1,0 +1,209 @@
+{
+  "audit": "locale-audit-indic(47 App × 10 Indic locale)",
+  "cells": [
+    {
+      "app": "aibriefpack",
+      "defects": [
+        "latin_fallback(ratio=0.65)"
+      ],
+      "locale": "ml-IN",
+      "owner": "aibriefpack 文案 owner",
+      "ratio_when_recorded": 0.6473,
+      "reason": "ASC 描述保留 AI/prompt/context 等英文技術詞,母語比例不足;屬 aibriefpack 文案 owner 的範圍(稽核 P0-3 owned 面)。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.67)"
+      ],
+      "locale": "gu-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.665,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.68)"
+      ],
+      "locale": "hi",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.6841,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.64)"
+      ],
+      "locale": "kn-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.6424,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.65)"
+      ],
+      "locale": "ml-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.6516,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.60)"
+      ],
+      "locale": "mr-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.6005,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.63)"
+      ],
+      "locale": "or-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.6289,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.59)"
+      ],
+      "locale": "pa-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.5903,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.64)"
+      ],
+      "locale": "ta-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.6441,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "mochi",
+      "defects": [
+        "latin_fallback(ratio=0.60)"
+      ],
+      "locale": "te-IN",
+      "owner": "mochi 文案 owner",
+      "ratio_when_recorded": 0.5987,
+      "reason": "外部策展文案(EXTERNAL_APP_LOCALES)在這些 locale 仍混入大量英文產品詞;屬 mochi 文案 owner 的範圍。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.60)"
+      ],
+      "locale": "bn-BD",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.5953,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.59)"
+      ],
+      "locale": "gu-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.5863,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.43)"
+      ],
+      "locale": "hi",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.4341,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.54)"
+      ],
+      "locale": "kn-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.5413,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.56)"
+      ],
+      "locale": "ml-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.5626,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.49)"
+      ],
+      "locale": "mr-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.4869,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.46)"
+      ],
+      "locale": "or-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.4637,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.46)"
+      ],
+      "locale": "pa-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.4587,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.54)"
+      ],
+      "locale": "ta-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.5401,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    },
+    {
+      "app": "zafe",
+      "defects": [
+        "latin_fallback(ratio=0.47)"
+      ],
+      "locale": "te-IN",
+      "owner": "zafe 文案 owner",
+      "ratio_when_recorded": 0.4735,
+      "reason": "ASC 描述大量技術英文(JSON、SwiftData、coordinates、bytes),當地讀者看到的是英文規格書;需要該 App 的文案 owner 重寫母語版本。"
+    }
+  ],
+  "recorded": "2026-09-11",
+  "rule": "這是 ratchet ledger,不是豁免許可:清單外的任何 cell 失敗就是測試失敗;清單內的 cell 一旦修好也必須從這裡移除,否則同樣是測試失敗。",
+  "schema_version": 1,
+  "scope": "geo 來源層組裝文案(subtitle + description + 顯示中的 keyword chip + 定價句)"
+}

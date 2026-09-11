@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """Curated external-guide copy that is never applied to App Store metadata."""
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+NATIVE_COPY_PACKS = os.path.join(HERE, "native_copy_packs")
 
 EXTERNAL_APP_LOCALES = {
     "mochi": {
@@ -407,3 +412,36 @@ EXTERNAL_APP_LOCALE_OVERRIDES = {
         },
     },
 }
+
+
+def _load_native_copy_packs(directory=NATIVE_COPY_PACKS):
+    """把外宣專用的母語文案包讀進來(source-level,不改 ASC metadata)。
+
+    2026-09-11 的 47 App × 10 Indic locale 稽核發現:ASC 從未在地化的英文
+    description/keywords 會直接變成 GEO 頁與社群語料的價值訴求,讓當地讀者
+    看到整段英文。文案包就是這些 cell 的母語 source of truth,由
+    `geo/native_copy_gate.py` 的閘門與測試守住,不是逐頁手改產出的 HTML。
+    """
+    packs = {}
+    if not os.path.isdir(directory):
+        return packs
+    for name in sorted(os.listdir(directory)):
+        if not name.endswith(".json"):
+            continue
+        with open(os.path.join(directory, name), encoding="utf-8") as handle:
+            document = json.load(handle)
+        for app_key, locales in (document.get("apps") or {}).items():
+            for locale, surfaces in locales.items():
+                fields = (surfaces or {}).get("geo") or {}
+                if not fields:
+                    continue
+                packs.setdefault(app_key, {}).setdefault(locale, {}).update(fields)
+    return packs
+
+
+NATIVE_COPY_OVERRIDES = _load_native_copy_packs()
+
+for _app_key, _locales in NATIVE_COPY_OVERRIDES.items():
+    _app_overrides = EXTERNAL_APP_LOCALE_OVERRIDES.setdefault(_app_key, {})
+    for _locale, _fields in _locales.items():
+        _app_overrides.setdefault(_locale, {}).update(_fields)

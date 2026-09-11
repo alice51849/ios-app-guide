@@ -43,6 +43,7 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
 from gen_feed import feed_discovery_links  # noqa: E402
+import native_copy_gate  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
     require_official_locale_coverage,
@@ -1186,6 +1187,39 @@ HOURSTAG_WEB_DESCRIPTION_OVERRIDES = {
 }
 
 
+# 付費上架的 App 不可以在任何語言裡暗示「免費」:英文樣板只擋得住英文,
+# 2026-09-11 的稽核就抓到 lumimissionpro 的印地語頁寫著「मुफ़्त आज़माएँ」。
+# 正確價格語意一律由 pricing_text_for() 產生,永遠不寫死幣別金額。
+PAID_UPFRONT_FALSE_MARKERS = (
+    "free to download",
+    "free-to-start",
+    "free to start",
+    "free trial",
+    "try for free",
+    "one-time unlock",
+)
+
+
+def _claims_free_on_paid_app(line, locale):
+    if any(marker in line.casefold() for marker in PAID_UPFRONT_FALSE_MARKERS):
+        return True
+    if locale in native_copy_gate.INDIC_SCRIPTS:
+        return bool(native_copy_gate.free_claim_spans(line, locale))
+    return False
+
+
+def _has_native_shaping_defect(locale, value):
+    """機器翻譯把英文塞進母語詞中間 / 孤兒 matra / 跨 script 混排。
+
+    `ଦ୍ SA ାରା`、`କ ads ଣସି` 這種字串在真機上會渲染成破字,拿它當價值訴求
+    比缺一個 locale 還糟,所以視為「不是母語文案」,交給既有的 fallback 鏈
+    去挑乾淨的來源。字尾 virama、danda 等正確正字法不在此列。
+    """
+    if locale not in native_copy_gate.INDIC_SCRIPTS:
+        return False
+    return bool(native_copy_gate.shaping_defects(str(value or ""), locale))
+
+
 def sanitize_description(key, locale, description):
     if not description:
         return description
@@ -1193,17 +1227,11 @@ def sanitize_description(key, locale, description):
         return HOURSTAG_WEB_DESCRIPTION_OVERRIDES[locale]
     model = APPS[key].get("purchase_model")
     if model == "paid_upfront":
-        false_markers = (
-            "free to download",
-            "free-to-start",
-            "free to start",
-            "one-time unlock",
-        )
         accurate_pricing = pricing_text_for(key, locale)
         lines = []
         inserted_pricing = False
         for line in description.splitlines():
-            if any(marker in line.casefold() for marker in false_markers):
+            if _claims_free_on_paid_app(line, locale):
                 if not inserted_pricing:
                     prefix = "• " if line.lstrip().startswith("•") else ""
                     lines.append(f"{prefix}{accurate_pricing}")
@@ -1431,6 +1459,8 @@ def _is_native_copy(locale, field, value, localizations):
     pattern = NATIVE_SCRIPT_PATTERNS.get(locale)
     if pattern and not re.search(pattern, text):
         return False
+    if _has_native_shaping_defect(locale, text):
+        return False
     english_values = {
         _single_line(values.get(field)).casefold()
         for code, values in localizations.items()
@@ -1513,6 +1543,23 @@ def external_localized_values(key, locale, localizations=None):
     return values
 
 
+def native_first_keywords(keywords, locale):
+    """非拉丁語系的頁面上,功能 chip 先顯示當地文字寫的詞。
+
+    ASC 的 keywords 欄位是照 ASO 流量排序的,英文核心詞常排在最前面
+    (`localization.md` 也認可印度使用者搜工具類 App 會直接打英文)。
+    但落地頁上顯示的前 8 個 chip 是給當地讀者看的:整排英文會讓
+    泰米爾語或印地語家長覺得整頁是機器產生的。這裡只重排顯示順序,
+    不刪任何關鍵字——英文詞仍留在 meta/schema 供搜尋引擎使用。
+    """
+    pattern = NATIVE_SCRIPT_PATTERNS.get(locale)
+    if not pattern:
+        return list(keywords)
+    native = [kw for kw in keywords if re.search(pattern, kw)]
+    other = [kw for kw in keywords if not re.search(pattern, kw)]
+    return native + other
+
+
 def build_faq(locale, name, sub, kws):
     b = base_lang(locale)
     qtpl = QTPL.get(b)
@@ -1567,7 +1614,7 @@ def build_one(key, locale, all_locales):
     is_rtl = base_lang(locale) in RTL
     e = html.escape
 
-    feats = kws[:8]
+    feats = native_first_keywords(kws, locale)[:8]
     faq = build_faq(locale, name, sub, kws)
     short_desc = _word_bounded_excerpt(
         desc.split("\n")[0] if desc else sub, 155

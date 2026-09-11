@@ -15,7 +15,8 @@
       "en-US": "This decision guide is published by Lumi Studio, the developer of the app discussed. It is first-party decision support, not an independent review or ranking.",
       "zh-Hant": "本決策指南由所介紹 App 的開發者 Lumi Studio 發布，屬第一方決策資訊，並非獨立評測或排行榜。",
       "fr-FR": "Ce guide est publié par Lumi Studio, le développeur de l’application présentée. Il s’agit d’informations de première main pour vous aider à choisir, et non d’un avis ou d’un classement indépendant.",
-      "ja": "このガイドは、紹介しているアプリの開発元である Lumi Studio が公開しています。製品選びの参考情報であり、独立した第三者によるレビューやランキングではありません。"
+      "ja": "このガイドは、紹介しているアプリの開発元である Lumi Studio が公開しています。製品選びの参考情報であり、独立した第三者によるレビューやランキングではありません。",
+      "de-DE": "Diese Entscheidungshilfe veröffentlicht Lumi Studio, der Entwickler der vorgestellten App. Sie bietet Produktinformationen aus erster Hand und ist weder eine unabhängige Bewertung noch eine Rangliste."
     }
   },
   "routes": [
@@ -357,6 +358,25 @@
             "fact.one_time_option",
             "feature.0"
           ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣使用者希望用繁體中文記錄經期，先看清楚資料處理與免費範圍，再決定是否需要一次性解鎖；不應把週期預測當成醫療結論。",
+          "query": "想記錄經期與週期變化，有哪些不必訂閱的 iPhone App？",
+          "buyer_problem": "經期資料是私密紀錄。挑選工具時，除了能否回看日期與變化，也需要知道哪些功能免費、哪些需要解鎖，以及資料如何處理。",
+          "decision_rule": "先看清楚免費與進階功能的界線：不用先建立帳號，就能開始記錄經期。 進階規劃與更完整歷史，可選擇一次性 Pro 解鎖。",
+          "workflow_checks": [
+            "能否容易記下日期，並回看自己的週期變化？",
+            "免費功能與需要解鎖的項目是否分得清楚？",
+            "是否理解資料處理方式，並避免將預測當作醫療建議？"
+          ],
+          "alternative_lens": "如果目的是診斷、治療或與照護團隊合作，應先詢問醫療專業人員；只需要簡單日期紀錄時，也可以使用紙本月曆。",
+          "verify_before_install": [
+            "輸入紀錄前，先閱讀目前的隱私政策與 App 隱私標示。",
+            "確認目前免費與一次性解鎖的界線；不要把一般追蹤工具當成診斷或緊急照護。"
+          ],
+          "evidence_refs": ["summary.zh-Hant", "fact.purchase_model", "fact.one_time_option"]
         }
       },
       "conversion_contract": "cyca"
@@ -1219,6 +1239,25 @@
             "fact.purchase_model",
             "fact.one_time_option"
           ]
+        },
+        "de-DE": {
+          "language": "de",
+          "market": "Deutschland",
+          "culture_route": "In Haushalten in Deutschland geht es bei Filtern, Bettwäsche und Datensicherungen oft nicht um tägliche Serien, sondern um die letzte tatsächliche Erledigung und einen passenden nächsten Termin.",
+          "query": "Wann habe ich zuletzt den Filter gewechselt, und welche App merkt sich das?",
+          "buyer_problem": "Ein wiederkehrender Kalendereintrag sagt nicht, wann etwas wirklich erledigt wurde. Für unregelmäßige Aufgaben ist ein Verlauf der tatsächlichen Erledigungen oft hilfreicher als eine weitere To-do-Liste.",
+          "decision_rule": "Ein aktives Ereignis und ein unbegrenzter Verlauf sind kostenlos. Weitere aktive Ereignisse lassen sich mit einem einmaligen Kauf freischalten.",
+          "workflow_checks": [
+            "Lässt sich die tatsächliche Erledigung schnell mit Datum festhalten?",
+            "Kann die nächste Erinnerung von der wirklichen Erledigung ausgehen?",
+            "Können frühere Einträge überprüft werden, ohne den Verlauf zu verlieren?"
+          ],
+          "alternative_lens": "Ein Kalender eignet sich für feste Termine. Ein Aufgabenmanager ist besser, wenn Zuweisungen und Projektplanung benötigt werden; hier steht die Frage nach der letzten Erledigung im Mittelpunkt.",
+          "verify_before_install": [
+            "Beginnen Sie mit einem konkreten Haushaltsereignis und prüfen Sie den Verlauf.",
+            "Prüfen Sie die aktuellen Gratisgrenzen, den einmaligen Kauf und die Mitteilungseinstellungen."
+          ],
+          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.0"]
         }
       },
       "conversion_contract": "mochidonestamp"

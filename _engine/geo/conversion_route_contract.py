@@ -77,6 +77,12 @@ UI = {
         "limits": "ご利用前に知っておきたいこと", "proof": "確認できた公開資料",
         "source": "公開済みのスクリーンショット",
     },
+    "de-DE": {
+        "free": "Kostenlos starten", "paid": "Einmaliger Kauf",
+        "price": "Den lokalen Preis finden Sie im App Store.",
+        "limits": "Wichtige Grenzen", "proof": "Was die veröffentlichten Nachweise zeigen",
+        "source": "Veröffentlichte Bildschirmaufnahme",
+    },
 }
 PRICE_RE = re.compile(r"(?:[$＄€£¥￥]|\b(?:USD|TWD|EUR|JPY)\b)\s*\d|\d[.,]\d{2}\s*(?:dollars?|euros?)", re.I)
 UNSAFE_MESSAGES = re.compile(
@@ -274,6 +280,8 @@ def validate(
             raise ValueError(f"{key}/{locale}: English fallback is forbidden")
         if locale == "fr-FR" and len(re.findall(r"\b(?:les|des|une|pour|sans|avec|vous|votre|vos|de|un)\b", visible, re.I)) < 12:
             raise ValueError(f"{key}/{locale}: English fallback is forbidden")
+        if locale == "de-DE" and len(re.findall(r"\b(?:der|die|das|ein|eine|und|mit|für|ohne|Sie|sich|den|ist|werden|kann)\b", visible, re.I)) < 12:
+            raise ValueError(f"{key}/{locale}: English fallback is forbidden")
         expected_assets = {
             proof["id"] for proof in proofs
             if proof["id"] in asset_ids and proof["asset"]["locale"] == locale
@@ -289,7 +297,7 @@ def validate(
 def materialize(contract: dict[str, Any], record: dict[str, Any]) -> dict[str, Any]:
     locale = record["locale"]
     prices = contract["offer_readback"]["storefronts"]
-    territory = {"en-US": "USA", "zh-Hant": "TWN", "fr-FR": "FRA", "ja": "JPN"}[locale]
+    territory = {"en-US": "USA", "zh-Hant": "TWN", "fr-FR": "FRA", "ja": "JPN", "de-DE": "DEU"}[locale]
     proof_rows = deepcopy(contract["proofs"])
     has_native_asset = any(
         proof["asset"] and proof["asset"]["locale"] == locale for proof in proof_rows

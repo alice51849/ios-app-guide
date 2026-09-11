@@ -838,7 +838,6 @@ def render_sitemap(modified: str, page_modified: dict[str, str]) -> str:
     entries = (
         (LANDING_URL, page_modified["en"]),
         (ZH_LANDING_URL, page_modified["zh-Hant"]),
-        (SOURCE_DESCRIPTION_URL, modified),
         (SOURCE_DESCRIPTION_COPY_URL, modified),
         (CAPABILITY_LIST_URL, modified),
         (RESOURCE_LIST_URL, modified),

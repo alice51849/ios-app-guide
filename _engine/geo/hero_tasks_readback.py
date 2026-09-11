@@ -3,26 +3,53 @@
 from __future__ import annotations
 
 import argparse
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import hashlib
+import http.client
 import json
 from pathlib import Path, PurePosixPath
+import threading
 import time
-from urllib.parse import urlsplit
-import urllib.request
+from urllib.parse import urlsplit, urlunsplit
 
 from deployment_generation import GenerationError, READBACK_USER_AGENT, verify_output_bytes
 
+_CLIENTS = threading.local()
+
+
+def _close_client():
+    client = getattr(_CLIENTS, "client", None)
+    if client is not None:
+        client.close()
+    _CLIENTS.client = None
+
 
 def fetch(url: str) -> bytes:
+    parsed = urlsplit(url)
+    if (
+        parsed.scheme != "https" or not parsed.hostname or parsed.fragment
+        or parsed.username is not None or parsed.password is not None
+    ):
+        raise ValueError("Artifact GET requires a credential-free HTTPS URL")
+    authority = (parsed.hostname, parsed.port or 443)
+    target = urlunsplit(("", "", parsed.path or "/", parsed.query, ""))
     error = None
     for attempt in range(3):
         try:
-            request = urllib.request.Request(url, headers={
-                "Cache-Control": "no-cache", "User-Agent": READBACK_USER_AGENT,
+            if (
+                getattr(_CLIENTS, "client", None) is None
+                or getattr(_CLIENTS, "authority", None) != authority
+            ):
+                _close_client()
+                _CLIENTS.client = http.client.HTTPSConnection(*authority, timeout=20)
+                _CLIENTS.authority = authority
+            _CLIENTS.client.request("GET", target, headers={
+                "Cache-Control": "no-cache",
+                "User-Agent": READBACK_USER_AGENT,
+                "Accept-Encoding": "identity",
             })
-            with urllib.request.urlopen(request, timeout=20) as response:
-                if response.status != 200 or response.geturl() != url:
+            with _CLIENTS.client.getresponse() as response:
+                if response.status != 200:
                     raise ValueError("Published artifact HTTP status or endpoint differs")
                 accepted = {
                     ".html": {"text/html"}, ".js": {"text/javascript", "application/javascript"},
@@ -36,7 +63,8 @@ def fetch(url: str) -> bytes:
                 if len(payload) > 2_000_000:
                     raise ValueError("Artifact exceeds the readback size limit")
                 return payload
-        except (OSError, ValueError) as exc:
+        except (OSError, ValueError, http.client.HTTPException) as exc:
+            _close_client()
             error = exc
             if attempt < 2:
                 time.sleep(attempt + 1)
@@ -69,8 +97,14 @@ def verify(manifest_path: Path, base_url: str, *, fetcher=fetch) -> dict:
         except GenerationError as error:
             raise ValueError(f"Published artifact digest mismatch: {relative}") from error
 
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        verified = list(pool.map(check, sorted(outputs.items())))
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = [pool.submit(check, item) for item in sorted(outputs.items())]
+        try:
+            verified = [future.result() for future in as_completed(futures)]
+        except Exception:
+            for future in futures:
+                future.cancel()
+            raise
     return {
         "verified_artifacts": len(verified), "locales": 50,
         "content_digest": manifest["content_digest"],

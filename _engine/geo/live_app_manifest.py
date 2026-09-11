@@ -676,7 +676,16 @@ def refresh_manifest(
 
 def snapshot_destination(path: Path | str) -> Path:
     path = Path(path)
-    if path.resolve() == DEFAULT_ROSTER.resolve():
+    try:
+        aliases_source = path.resolve() == DEFAULT_ROSTER.resolve()
+        if not aliases_source:
+            try:
+                aliases_source = path.samefile(DEFAULT_ROSTER)
+            except FileNotFoundError:
+                aliases_source = False
+    except OSError as error:
+        raise ManifestError(f"Cannot verify observation output identity: {path}") from error
+    if aliases_source:
         raise ManifestError("Availability snapshots cannot overwrite the versioned roster")
     return path
 

@@ -208,7 +208,11 @@ class CurrentSourceTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             alias = Path(directory) / "source-link.json"
             alias.symlink_to(manifest.DEFAULT_ROSTER)
-            for target in (manifest.DEFAULT_ROSTER, alias):
+            targets = [manifest.DEFAULT_ROSTER, alias]
+            case_alias = manifest.DEFAULT_ROSTER.with_name(manifest.DEFAULT_ROSTER.name.upper())
+            if case_alias.exists() and case_alias.samefile(manifest.DEFAULT_ROSTER):
+                targets.append(case_alias)
+            for target in targets:
                 with mock.patch.object(manifest.os, "replace", side_effect=AssertionError("No source mutation")):
                     for write in (
                         lambda: manifest.write_manifest(target, self.document),
@@ -230,6 +234,25 @@ class CurrentSourceTests(unittest.TestCase):
                         "--live-state-output", str(target),
                     ]))
             self.assertEqual(original, manifest.DEFAULT_ROSTER.read_bytes())
+
+    def test_filesystem_identity_rejects_case_aliases_even_when_resolve_differs(self):
+        target = manifest.DEFAULT_ROSTER.with_name(manifest.DEFAULT_ROSTER.name.upper())
+        with (
+            mock.patch.object(Path, "samefile", return_value=True) as samefile,
+            mock.patch.object(manifest.os, "replace", side_effect=AssertionError("No source mutation")),
+        ):
+            for write in (
+                lambda: manifest.write_manifest(target, self.document),
+                lambda: manifest.write_legacy_live_state(target, self.document),
+                lambda: appstore_live._write_state(
+                    target, set(APPSTORE.values()), {},
+                    observed_at=self.document["observed_at"],
+                    source_sha256=self.document["source_sha256"],
+                ),
+            ):
+                with self.assertRaisesRegex(manifest.ManifestError, "cannot overwrite"):
+                    write()
+            self.assertTrue(samefile.called)
 
     def test_reviewed_app_id_replacement_can_refresh_without_old_cache_blocking(self):
         with tempfile.TemporaryDirectory() as directory:

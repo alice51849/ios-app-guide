@@ -132,8 +132,10 @@ def ping(
                     )
                     return message
                 last_error = f"service rejected ping: {message or 'unknown'}"
-                break
-            last_error = f"HTTP {status}"
+                if "error reading the resource at url" not in message.casefold():
+                    break
+            else:
+                last_error = f"HTTP {status}"
         except urllib.error.HTTPError as error:
             last_error = f"HTTP {error.code} {error.reason}"
             if 400 <= error.code < 500 and error.code != 429:

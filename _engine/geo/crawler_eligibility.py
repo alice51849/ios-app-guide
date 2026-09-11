@@ -170,7 +170,7 @@ def scan_public_frontend(pages: Path, root_site: Path) -> dict:
                 for literal in references:
                     target = urljoin(base, unquote(literal))
                     if (urlsplit(target).netloc == urlsplit(PUBLIC_ROOT).netloc
-                            and urlsplit(target).path.startswith("/scripts/")):
+                            and unquote(urlsplit(target).path).startswith("/scripts/")):
                         dependency = {"source": url, "target": target}
                         if dependency not in dependencies:
                             dependencies.append(dependency)

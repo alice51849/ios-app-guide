@@ -341,6 +341,18 @@ class ScriptsDependencyTests(unittest.TestCase):
                          [{"source": f"{PUBLIC_SITE}/app.js",
                            "target": f"{PUBLIC_ROOT}/scripts/shared.js"}])
 
+    def test_percent_encoded_base_is_not_missed(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as work:
+            root, guide = Path(work) / "root", Path(work) / "guide"
+            root.mkdir()
+            guide.mkdir()
+            (root / "index.html").write_text(
+                '<base href=/%73cripts/><script src=a.js></script>')
+            report = audit.scan_public_frontend(guide, root)
+        self.assertEqual(report["scripts_dependencies"],
+                         [{"source": f"{PUBLIC_ROOT}/index.html",
+                           "target": f"{PUBLIC_ROOT}/%73cripts/a.js"}])
+
 
 class PublicReadbackTests(unittest.TestCase):
     def test_official_search_ips_are_not_training_ips(self):

@@ -67,6 +67,25 @@ CLI 發布前要求所有 `APPROVED_PUBLIC` 圖片通過；失敗不得先產出
 receipt 綁定當次 deployment generation、Guide SHA、verifier 與 manifest bytes；
 不得以新 main 的 reader 假裝舊 generation 仍有效。
 
+## 全 production HTML 的公開 email Gate
+
+2026-09-12 全量掃描 66,390 份 HTML，找出 1,152 份未保護的聯絡資訊；
+不只四個英語抽樣，還包含相同 guide 的 50 locale 與匯入的 support/privacy。
+`build_pages_i18n.build_one` 與 `app_install_decision_routes.render_page` 在 source
+呼叫共同 `public_email.render_html`；Pages 再以同一 source rendering pass
+處理既有／匯入頁面，防止下輪 generator 重建時復發。
+
+Renderer 只加入 Cloudflare 官方控制註解，不更動任何非 directive bytes、
+可見文字或 `mailto:`。`public_email.py` 的唯讀 Gate 掃全部 production HTML，
+任何未受保護的可見 email／anchor href、未配對、空或巢狀 directive 均拒絕。
+Head、JSON/script 及官方不會改寫的屬性不是可見聯絡資訊，不以字串全域替換污染。
+
+`data/public-email-output-manifest.json` 由 renderer 產生，逐頁封存 source 與
+canonical SHA；後者僅消耗 source 自己宣告的控制註解，內容 bytes 全數保留。
+Manifest 屬於同一 Guide commit/tree；readback 必須先核對 manifest 與
+generation，再驗完整 source／canonical SHA。不得清除 response 裡的 email、
+未知 script、文字、其他註解或任意 markup 讓 Gate 變綠。
+
 保留 canonical host 已有的 Cloudflare 訓練拒絕選擇：GPTBot、
 Applebot-Extended、Google-Extended 等訓練產品不取得 Allow；
 尤其不可把 GPTBot 的拒絕擴大成 OAI-SearchBot 的拒絕。

@@ -7,6 +7,7 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import html
+import public_email
 import json
 import os
 from pathlib import Path
@@ -1037,7 +1038,7 @@ def render_page(
         include_hero_style=False,
         oembed_href=str(record["oembed_url"]),
     )
-    return f"""<!doctype html>
+    return public_email.render_html(f"""<!doctype html>
 <html lang="{html.escape(locale)}" dir="{dir_attr}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="apple-itunes-app" content="app-id={html.escape(str(record["app_store_id"]), quote=True)}">
@@ -1207,7 +1208,7 @@ footer {{
 </section>
 <footer class="card">{html.escape(str(record["publisher_disclosure"]))}</footer>
 </main></body></html>
-"""
+""")
 
 
 def _markdown_text(value: Any) -> str:

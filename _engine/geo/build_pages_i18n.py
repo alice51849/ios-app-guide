@@ -22,6 +22,7 @@ import os
 import re
 import sys
 import unicodedata
+import public_email
 from functools import lru_cache
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -1682,7 +1683,7 @@ def build_one(key, locale, all_locales):
     outdir = os.path.join(PAGES, locale)
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, f"{key}.html")
-    write_text_if_changed(out, page)
+    write_text_if_changed(out, public_email.render_html(page))
     return out
 
 

@@ -95,6 +95,14 @@ jobs:
           python3 _engine/geo/gen_hubs.py
           python3 _engine/geo/check_hub_coverage.py --pages-dir .
           python3 _engine/geo/gen_tool_email_capture.py
+      - name: Render source-owned public email protection
+        env:
+          TZ: UTC
+        run: |
+          set -euo pipefail
+          python3 -m unittest _engine.geo.tests.test_public_email -q
+          python3 _engine/geo/public_email.py --pages-dir . --render \
+            --manifest data/public-email-output-manifest.json
       - name: Prepare externally bound high-intent deployment
         env:
           # The route pages, manifest and deployment record this step writes are
@@ -178,6 +186,21 @@ jobs:
             -s _engine/geo/tests -p test_result_image_index.py -q
           python3 _engine/geo/result_image_index.py --pages .
           python3 _engine/geo/result_image_index.py --pages . --check
+      - name: Require all production HTML email protection
+        run: |
+          python3 _engine/geo/public_email.py --pages-dir . \
+            --manifest data/public-email-output-manifest.json \
+            --generation-file .well-known/deployment.json \
+            --report public-email-rendered-receipt.json
+      - name: Preserve generation-bound rendered email receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-email-rendered-${{ github.run_id }}-${{ github.run_attempt }}
+          path: public-email-rendered-receipt.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Remove private rendered-email receipt before public upload
+        run: rm public-email-rendered-receipt.json
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"

@@ -130,6 +130,34 @@ class RootAndPrecedenceTests(unittest.TestCase):
         self.assertTrue(parsed.allowed("Googlebot", f"{PUBLIC_SITE}/%E6%96%87/a", ROOT_ROBOTS))
         self.assertFalse(parsed.allowed("Googlebot", f"{PUBLIC_SITE}/%2Fllms.txt", ROOT_ROBOTS))
 
+    def test_google_documented_rule_length_precedence(self):
+        cases = (
+            ("/x", "/x$", "/x", False),
+            ("/x", "/x$", "/x?query=1", True),
+            ("/", "/$", "/", False),
+            ("/p", "/", "/page", True),
+            ("/folder", "/folder", "/folder/page", True),
+            ("/page", "/*.htm", "/page.htm", False),
+            ("/page", "/*.ph", "/page.php5", True),
+            ("/$", "/", "/", True),
+            ("/$", "/", "/page.htm", False),
+            ("/page*", "/page$", "/page", True),
+        )
+        for allow, deny, path, expected in cases:
+            with self.subTest(allow=allow, deny=deny, path=path):
+                parsed = RobotsPolicy(
+                    f"User-agent: Googlebot\nAllow: {allow}\nDisallow: {deny}\n")
+                self.assertEqual(parsed.allowed(
+                    "Googlebot", PUBLIC_ROOT + path, ROOT_ROBOTS), expected)
+
+    def test_terminal_disallow_cannot_receive_an_eligibility_pass(self):
+        url = f"{PUBLIC_SITE}/x"
+        text = policy() + (
+            "\nUser-agent: Googlebot\nAllow: /ios-app-guide/x\n"
+            "Disallow: /ios-app-guide/x$\n")
+        self.assertIn(f"disallowed:Googlebot:{url}",
+                      audit.check_policy(text, [url], ROOT_ROBOTS))
+
     def test_sitemap_and_blank_lines_do_not_split_unfinished_agent_group(self):
         parsed = RobotsPolicy("User-agent: Applebot\n\nSitemap: https://example.test/s.xml\n"
                               "User-agent: Googlebot\nDisallow: /\n")

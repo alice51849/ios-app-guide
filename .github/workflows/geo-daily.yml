@@ -201,6 +201,7 @@ jobs:
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+          python3 _engine/geo/buyer_job_guides.py --pages "$GITHUB_WORKSPACE"
       - name: Verify zero-cost growth infrastructure
         env:
           # The hero browser test shares this runner with ~900 parallel
@@ -356,6 +357,7 @@ jobs:
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+           python3 _engine/geo/buyer_job_guides.py --pages "$GITHUB_WORKSPACE"
       - name: Commit English content first (fast, before slow localization)
         run: |
           git config user.name "github-actions[bot]"
@@ -401,6 +403,7 @@ jobs:
                 --today "$GEO_BUILD_DATE" \
                 --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
                 --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+              python3 _engine/geo/buyer_job_guides.py --pages "$GITHUB_WORKSPACE"
               python3 _engine/geo/parallel_unittest.py --jobs 3
               cd _engine/geo
               python3 outreach_scorecard.py --require-complete
@@ -534,6 +537,8 @@ jobs:
         run: |
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
+          # Bind RSS and syndication to the final authored HTML, not an earlier pass.
+          python3 _engine/geo/buyer_job_guides.py --pages "$GITHUB_WORKSPACE"
       - name: Verify localized output before commit
         run: |
           attestation="$RUNNER_TEMP/localized-verified-tree.json"
@@ -597,6 +602,7 @@ jobs:
                   --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
+                python3 _engine/geo/buyer_job_guides.py --pages "$GITHUB_WORKSPACE"
                 python3 _engine/geo/parallel_unittest.py --jobs 3
               fi
               cd _engine/geo

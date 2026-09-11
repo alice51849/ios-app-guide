@@ -44,3 +44,27 @@ canonical HTML digest** before accepting it, preserve its 72-hour cadence, and
 deduplicate by title or canonical URL. Do not run a second local publisher.
 GET success, a screenshot, and publication are not evidence of impressions,
 attributed downloads, purchases, or causal lift.
+
+## Buyer-only independent publication
+
+`traffic_scope=buyer_decision_only` requires every title and query to name the
+app and a buying/unlock decision. Each app also declares excluded general
+information intents. Purchase summaries and the model-specific App Store CTA
+remain distinct for paid downloads and freemium apps. The real published
+interface image precedes the purchase action in HTML and Markdown; narrow
+screens retain one reachable purchase action rather than adding duplicate CTAs.
+
+The standalone exporter is used by the existing `awesome-ios-pay-once` topical
+repository, without updating the shared conversion deployment or gitlink:
+
+```sh
+GEO_SITE=https://alice51849.github.io/awesome-ios-pay-once \
+  python3 geo/buyer_job_guides.py --standalone \
+  --catalog-pages /read-only/portfolio --pages /independent/site
+```
+
+The catalog input and output must be different directories. Standalone output
+does not patch portfolio App pages or create a Dev.to queue; original App detail
+and publisher links retain their original owner. The independent repository
+ships the same source/data, a public catalog snapshot with its digest, tests,
+source-managed README links, and a Pages workflow that deploys only its `docs/`.

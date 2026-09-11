@@ -1,18 +1,26 @@
-# Reconcile travel and everyday spending in one home currency
+# Buy G+Money for offline expense totals?
 
 Published by Lumi Studio, the developer of these apps. This is a first-party guide, not an independent review or ranking. Screenshots are published App Store examples, not measured customer outcomes.
 
-You have expenses in several currencies and want to understand the total without connecting a bank account.
+Deciding whether G+Money's paid download can replace your multi-currency expense sheet? Inspect the category summary first.
 
 ## What you can check
 
 A spending summary grouped by category or trip, expressed in your home currency so you can check where the money went.
 
+![Published interface evidence](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/76/50/ba76500d-2dad-fa7d-aa13-cb6611206225/01.png/320x480bb.jpg)
+
+Published App Store example; not a measured customer outcome.
+
+Evidence checked: 2026-09-11 · App version: 2.1.10
+
 ## Before you buy
+
+Paid download. Currency conversion, expense totals and exports are included; no in-app upgrade.
 
 G+Money is a paid download. Currency conversion, expense categories, trip or event grouping, summaries, and text or CSV export are included; there is no later in-app unlock. No subscription. Current local pricing is shown by Apple; no fixed price is quoted here.
 
-[Buy on the App Store](https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
+[Buy this app on the App Store](https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 ## A practical workflow
 
@@ -26,11 +34,7 @@ G+Money is a paid download. Currency conversion, expense categories, trip or eve
 
 The published summary screen shows category totals and trip filters. It demonstrates the reporting interface, not a verified CSV export or bank reconciliation.
 
-![Published interface evidence](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/76/50/ba76500d-2dad-fa7d-aa13-cb6611206225/01.png/320x480bb.jpg)
-
 App Store screenshot, not a downloadable output sample or an independent performance test.
-
-Evidence checked: 2026-09-11 · App version: 2.1.10
 
 ## Know the limits
 
@@ -58,10 +62,10 @@ Use the App Store button on this page for G+Money. It is a paid download, with t
 
 ## Related jobs, different decisions
 
-- [See a possible purchase in work hours before deciding](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/hourstag-see-a-purchase-in-work-hours.html)
+- [HoursTag paid download: prices in work hours](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/hourstag-see-a-purchase-in-work-hours.html)
 
-- [Remember what a bill-split result means a week later](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/caldaily-remember-what-a-bill-split-result-means.html)
+- [CalDaily Premium: what stays free?](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/caldaily-remember-what-a-bill-split-result-means.html)
 
-[All job guides](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/index.html)
+[Buying guides](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/index.html)
 
-[Reconcile travel and everyday spending in one home currency](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/gmoney-reconcile-multi-currency-spending.html)
+[Buy G+Money for offline expense totals?](https://open.cait518.cc/ios-app-guide/buyer-guides/en-US/gmoney-reconcile-multi-currency-spending.html)

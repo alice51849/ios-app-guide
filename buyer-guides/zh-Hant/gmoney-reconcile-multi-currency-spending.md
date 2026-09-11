@@ -1,18 +1,26 @@
-# 外幣花費換成台幣看，月底再按類別核對
+# G+Money 買斷前，先看外幣支出摘要
 
 本文由這些 App 的開發者 Lumi Studio 撰寫，並非獨立評測或排名。圖片取自公開 App Store 示範畫面，不代表使用者的實際成效。
 
-旅途中用外幣付款，回家後卻想不起來總共花了多少；你需要的是清楚的分類與合計，而不是再綁一個銀行帳號。
+正在評估 G+Money 能否取代多幣別記帳表？先確認分類合計的畫面與付費下載所含功能。
 
 ## 可以檢查的結果
 
 以本位幣顯示的支出摘要，可按分類、旅程或活動核對，保留每筆花費原本的情境。
 
+![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2d/e3/65/2de365f8-1001-d101-9e0f-984702bdacab/01.png/320x480bb.jpg)
+
+公開 App Store 示範畫面，不代表使用者成效。
+
+證據查核日期: 2026-09-11 · App 版本: 2.1.10
+
 ## 下載或購買前先看
+
+一次付費下載，包含幣別換算、支出合計與匯出，不另設 App 內升級。
 
 G+Money 採一次付費下載，包含匯率換算、支出分類、旅程或活動標記、摘要，以及文字／CSV 匯出，不另設 App 內解鎖。 不採訂閱制；實際在地價格以 Apple 購買畫面為準，本文不寫死價格。
 
-[在 App Store 購買](https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 一次購買](https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 
 ## 實際使用時這樣做
 
@@ -26,11 +34,7 @@ G+Money 採一次付費下載，包含匯率換算、支出分類、旅程或活
 
 公開摘要畫面可見分類合計與旅程篩選，證明此報表介面的樣貌；這不是已驗證的 CSV 成品，也不是銀行對帳結果。
 
-![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2d/e3/65/2de365f8-1001-d101-9e0f-984702bdacab/01.png/320x480bb.jpg)
-
 這是 App Store 截圖，不是可下載的匯出範例，也不是獨立效能測試。
-
-證據查核日期: 2026-09-11 · App 版本: 2.1.10
 
 ## 先知道它不適合什麼
 
@@ -58,10 +62,10 @@ G+Money 採一次付費下載，包含匯率換算、支出分類、旅程或活
 
 ## 接下來可能要處理的事
 
-- [想買的東西，等於你幾小時的工作？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/hourstag-see-a-purchase-in-work-hours.html)
+- [HoursTag 付費下載，多了哪些工時換算功能？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/hourstag-see-a-purchase-in-work-hours.html)
 
-- [聚餐分帳算完，別忘了這個數字代表什麼](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/caldaily-remember-what-a-bill-split-result-means.html)
+- [CalDaily Premium 升級前，先看免費界線](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/caldaily-remember-what-a-bill-split-result-means.html)
 
-[全部需求指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
+[購買指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
 
-[外幣花費換成台幣看，月底再按類別核對](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/gmoney-reconcile-multi-currency-spending.html)
+[G+Money 買斷前，先看外幣支出摘要](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/gmoney-reconcile-multi-currency-spending.html)

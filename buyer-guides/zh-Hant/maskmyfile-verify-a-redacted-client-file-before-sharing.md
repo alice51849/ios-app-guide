@@ -1,18 +1,26 @@
-# 寄出客戶 PDF 前：不要只蓋黑框，要驗證清理副本
+# Mask My File 免費預覽，匯出如何解鎖？
 
 本文由這些 App 的開發者 Lumi Studio 撰寫，並非獨立評測或排名。圖片取自公開 App Store 示範畫面，不代表使用者的實際成效。
 
-你要傳送客戶 PDF 或圖片，希望只移除對方不需要的私人資訊，保留文件仍有用的內容。
+正在評估 Mask My File 是否適合反覆處理客戶檔案？先看清理副本示例與第一次匯出的免費界線。
 
 ## 可以檢查的結果
 
 產生新的遮蔽副本，再重新開啟檢查；不是只在原始資訊上方放一個仍可編輯的形狀。
 
+![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/b5/a4/1bb5a416-1059-1f11-de07-537778df5cae/06-verified-output.png/320x480bb.jpg)
+
+公開 App Store 示範畫面，不代表使用者成效。
+
+證據查核日期: 2026-09-11 · App 版本: 1.0.3
+
 ## 下載或購買前先看
+
+任何檔案皆可免費預覽，首次真實清理匯出免費；後續匯出需要一次購買。
 
 匯入、偵測、標記與預覽可免費使用，第一次真實檔案清理匯出也免費。 之後可選擇一次解鎖，使用後續驗證輸出與解鎖後的批次處理流程。 不採訂閱制；實際在地價格以 Apple 購買畫面為準，本文不寫死價格。
 
-[在 App Store 查看免費下載版](https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 免費下載](https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 
 ## 實際使用時這樣做
 
@@ -28,11 +36,7 @@
 
 公開的 Private Ready 完成畫面顯示 App 驗證步驟後的實心遮蔽示例；這個標記不是法律合規或獨立資安認證。
 
-![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/b5/a4/1bb5a416-1059-1f11-de07-537778df5cae/06-verified-output.png/320x480bb.jpg)
-
 這是 App Store 截圖，不是可下載的匯出範例，也不是獨立效能測試。
-
-證據查核日期: 2026-09-11 · App 版本: 1.0.3
 
 ## 先知道它不適合什麼
 
@@ -60,8 +64,8 @@
 
 ## 接下來可能要處理的事
 
-- [外幣花費換成台幣看，月底再按類別核對](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/gmoney-reconcile-multi-currency-spending.html)
+- [G+Money 買斷前，先看外幣支出摘要](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/gmoney-reconcile-multi-currency-spending.html)
 
-[全部需求指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
+[購買指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
 
-[寄出客戶 PDF 前：不要只蓋黑框，要驗證清理副本](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/maskmyfile-verify-a-redacted-client-file-before-sharing.html)
+[Mask My File 免費預覽，匯出如何解鎖？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/maskmyfile-verify-a-redacted-client-file-before-sharing.html)

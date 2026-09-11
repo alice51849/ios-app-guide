@@ -1,18 +1,26 @@
-# 照片想統一色調？先看預覽，再決定是否去浮水印
+# PhotoCream 免費預覽，去浮水印才需要解鎖
 
 本文由這些 App 的開發者 Lumi Studio 撰寫，並非獨立評測或排名。圖片取自公開 App Store 示範畫面，不代表使用者的實際成效。
 
-旅行或咖啡店照片想有一致的感覺，但你希望先親眼確認調色結果，再決定是否升級。
+先用 PhotoCream 預覽自己的調色結果，再判斷去浮水印與高級套件是否值得一次購買。
 
 ## 可以檢查的結果
 
 可以查看的編輯預覽與色彩控制，讓你判斷畫面風格及匯出界線是否符合需求。
 
+![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0e/9c/30/0e9c30cf-aa53-b842-9d15-a2f511e79fb4/03_color.png/320x480bb.jpg)
+
+公開 App Store 示範畫面，不代表使用者成效。
+
+證據查核日期: 2026-09-11 · App 版本: 1.0.7
+
 ## 下載或購買前先看
+
+編輯與預覽免費；一次購買可移除浮水印，並開啟高級套件。
 
 可免費下載，使用照片編輯與風格預覽流程；不代表所有高級套件或無浮水印匯出都免費。 可選擇一次性解鎖，移除浮水印並開啟高級套件。 不採訂閱制；實際在地價格以 Apple 購買畫面為準，本文不寫死價格。
 
-[在 App Store 查看免費下載版](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 免費下載](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
 
 ## 實際使用時這樣做
 
@@ -26,11 +34,7 @@
 
 公開調色畫面顯示咖啡店照片與 HSL 控制項，是編輯介面示例，不是獨立量測的前後對照測試。
 
-![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0e/9c/30/0e9c30cf-aa53-b842-9d15-a2f511e79fb4/03_color.png/320x480bb.jpg)
-
 這是 App Store 截圖，不是可下載的匯出範例，也不是獨立效能測試。
-
-證據查核日期: 2026-09-11 · App 版本: 1.0.7
 
 ## 先知道它不適合什麼
 
@@ -58,8 +62,8 @@
 
 ## 接下來可能要處理的事
 
-- [寄出客戶 PDF 前：不要只蓋黑框，要驗證清理副本](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/maskmyfile-verify-a-redacted-client-file-before-sharing.html)
+- [Mask My File 免費預覽，匯出如何解鎖？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/maskmyfile-verify-a-redacted-client-file-before-sharing.html)
 
-[全部需求指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
+[購買指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
 
-[照片想統一色調？先看預覽，再決定是否去浮水印](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/photocream-preview-a-consistent-photo-color-style.html)
+[PhotoCream 免費預覽，去浮水印才需要解鎖](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/photocream-preview-a-consistent-photo-color-style.html)

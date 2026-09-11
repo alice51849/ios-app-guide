@@ -97,6 +97,21 @@ class BuyerGuideTests(unittest.TestCase):
                 self.assertGreater(len(copy["limits"]), 1)
                 self.assertGreater(len(copy["faq"]), 1)
 
+    def test_general_information_traffic_is_not_an_allowed_scope(self):
+        self.rejected(lambda c, l, e, b: c.update(traffic_scope="general_information"))
+
+    def test_each_app_has_explicit_excluded_information_intents(self):
+        self.rejected(lambda c, l, e, b: c["apps"][0].update(exclude_intents=[]))
+
+    def test_generic_titles_cannot_replace_buying_decisions(self):
+        self.rejected(lambda c, l, e, b: l["en-US"]["apps"]["gmoney"].update(title="How to save more money"))
+
+    def test_brand_without_purchase_intent_is_not_enough(self):
+        self.rejected(lambda c, l, e, b: l["en-US"]["apps"]["gmoney"].update(title="G+Money currency tips"))
+
+    def test_generic_queries_cannot_enter_the_feed(self):
+        self.rejected(lambda c, l, e, b: l["en-US"]["apps"]["gmoney"]["queries"].append("currency rates today"))
+
     def test_missing_baseline_locale_is_blocking(self):
         self.rejected(lambda c, l, e, b: b["records"].pop())
 
@@ -232,6 +247,48 @@ class BuyerGuideTests(unittest.TestCase):
                 self.assertEqual(1, len([link for link in page.links if "apps.apple.com/" in link]))
                 self.assertEqual(1, len(page.images))
                 self.assertIn(self.copies[locale]["ui"]["disclosure"], body)
+
+    def test_real_evidence_precedes_the_single_purchase_action(self):
+        generated, _ = guides.build_outputs(self.pages)
+        for app in self.config["apps"]:
+            for locale in self.config["locales"]:
+                body = generated[guides.guide_path(app, locale)]
+                self.assertLess(body.index('<figure class="hero-proof">'), body.index('<a class="cta"'))
+                self.assertLess(body.index('<img '), body.index('<a class="cta"'))
+                self.assertIn('loading="eager"', body)
+                self.assertIn(self.copies[locale]["apps"][app["key"]]["purchase_summary"], body)
+                self.assertIn(self.copies[locale]["ui"]["proof_badge"], body)
+                md = generated[guides.guide_path(app, locale)[:-5] + ".md"]
+                self.assertLess(md.index("!["), md.index("https://apps.apple.com/"))
+
+    def test_standalone_surface_never_mutates_portfolio_or_old_devto_queue(self):
+        catalog_root = self.fixture()
+        output = catalog_root / "standalone-site"
+        output.mkdir()
+        before = (catalog_root / "en-US/gmoney.html").read_bytes()
+        site = "https://alice51849.github.io/awesome-ios-pay-once"
+        generated, backlinks = guides.build_outputs(output, site=site, catalog_pages=catalog_root, standalone=True)
+        self.assertFalse(backlinks)
+        self.assertNotIn(guides.DEVTO_QUEUE, generated)
+        self.assertIn("index.html", generated)
+        body = generated[guides.guide_path(self.config["apps"][0], "en-US")]
+        self.assertIn(f'{guides.PUBLIC_SITE}/en-US/gmoney.html', body)
+        self.assertIn(f'{site}/buyer-guides/style.css', body)
+        guides.materialize(output, site=site, catalog_pages=catalog_root, standalone=True)
+        result = guides.materialize(output, check=True, site=site, catalog_pages=catalog_root, standalone=True)
+        self.assertFalse(result["changed"])
+        self.assertEqual(0, result["devto_drafts"])
+        self.assertEqual(before, (catalog_root / "en-US/gmoney.html").read_bytes())
+
+    def test_standalone_cannot_overwrite_its_source_catalog(self):
+        with self.assertRaises(guides.ContractError):
+            guides.build_outputs(self.pages, site="https://example.com/topic", catalog_pages=self.pages, standalone=True)
+
+    def test_standalone_cannot_impersonate_the_portfolio_origin(self):
+        root = self.fixture()
+        output = root / "standalone-site"
+        with self.assertRaises(guides.ContractError):
+            guides.build_outputs(output, site=guides.PUBLIC_SITE, catalog_pages=root, standalone=True)
 
     def test_hreflang_advertises_only_authored_pages(self):
         generated, _ = guides.build_outputs(self.pages)

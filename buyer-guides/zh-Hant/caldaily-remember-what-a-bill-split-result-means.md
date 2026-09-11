@@ -1,18 +1,26 @@
-# 聚餐分帳算完，別忘了這個數字代表什麼
+# CalDaily Premium 升級前，先看免費界線
 
 本文由這些 App 的開發者 Lumi Studio 撰寫，並非獨立評測或排名。圖片取自公開 App Store 示範畫面，不代表使用者的實際成效。
 
-當下很容易算出結果，但過一週就忘了那是哪一餐、哪次折扣或哪個比較。
+先看 CalDaily 的已命名結果，再區分免費基本功能與不限次數的進階工具，不為用不到的功能升級。
 
 ## 可以檢查的結果
 
 替計算結果留下名稱與類型，之後能找到對應的事情，不必從一個孤單的數字重新推算。
 
+![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/d6/1a/5cd61a15-ff94-ecf3-677c-354ba67846c8/05.jpg/320x480bb.jpg)
+
+公開 App Store 示範畫面，不代表使用者成效。
+
+證據查核日期: 2026-09-11 · App 版本: 1.0.2
+
 ## 下載或購買前先看
+
+基本計算、歷史與小工具免費；各進階工具免費三次，Premium 再解鎖更多主題與不限次數工具。
 
 基本計算、歷史、互動式計算機小工具與預設主題免費；每項進階工具可免費完成三次成功計算。 可選擇一次購買 Premium，解鎖其他主題與不限次數的進階工具。 不採訂閱制；實際在地價格以 Apple 購買畫面為準，本文不寫死價格。
 
-[在 App Store 查看免費下載版](https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 免費下載](https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
 ## 實際使用時這樣做
 
@@ -26,11 +34,7 @@
 
 公開結果頁顯示一筆附名稱與類型的聚餐計算，是紀錄功能的示例，不是銀行交易或付款證明。
 
-![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/d6/1a/5cd61a15-ff94-ecf3-677c-354ba67846c8/05.jpg/320x480bb.jpg)
-
 這是 App Store 截圖，不是可下載的匯出範例，也不是獨立效能測試。
-
-證據查核日期: 2026-09-11 · App 版本: 1.0.2
 
 ## 先知道它不適合什麼
 
@@ -58,10 +62,10 @@
 
 ## 接下來可能要處理的事
 
-- [外幣花費換成台幣看，月底再按類別核對](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/gmoney-reconcile-multi-currency-spending.html)
+- [G+Money 買斷前，先看外幣支出摘要](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/gmoney-reconcile-multi-currency-spending.html)
 
-- [想買的東西，等於你幾小時的工作？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/hourstag-see-a-purchase-in-work-hours.html)
+- [HoursTag 付費下載，多了哪些工時換算功能？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/hourstag-see-a-purchase-in-work-hours.html)
 
-[全部需求指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
+[購買指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
 
-[聚餐分帳算完，別忘了這個數字代表什麼](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/caldaily-remember-what-a-bill-split-result-means.html)
+[CalDaily Premium 升級前，先看免費界線](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/caldaily-remember-what-a-bill-split-result-means.html)

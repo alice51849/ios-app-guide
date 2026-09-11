@@ -1,18 +1,26 @@
-# 用圖像題練習數感，再從進度頁挑下一題
+# Lumi Math Planet 免費哪些？何時需要解鎖？
 
 本文由這些 App 的開發者 Lumi Studio 撰寫，並非獨立評測或排名。圖片取自公開 App Store 示範畫面，不代表使用者的實際成效。
 
-你想陪孩子做一小段數學練習，並知道接下來該回看哪一類題目，而不是一直增加練習卷。
+想知道 Lumi Math Planet 的免費練習是否已足夠？先看進度紀錄，再比較一次解鎖的完整內容。
 
 ## 可以檢查的結果
 
 看得見的圖像題與進度紀錄，幫助家長安排下一次練習；App 分數不等於學校評量。
 
+![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/a6/4f/cca64f82-137f-7b2e-de0e-a64f35376629/05.png/320x480bb.jpg)
+
+公開 App Store 示範畫面，不代表使用者成效。
+
+證據查核日期: 2026-09-11 · App 版本: 1.0.13
+
 ## 下載或購買前先看
+
+入門星球與每日挑戰免費；需要完整星系時，再選擇一次解鎖。
 
 入門星球與每日挑戰可免費開始。 需要更完整的內容時，可選擇一次解鎖整個星系，不採訂閱制。 不採訂閱制；實際在地價格以 Apple 購買畫面為準，本文不寫死價格。
 
-[在 App Store 查看免費下載版](https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
+[在 App Store 免費下載](https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 
 ## 實際使用時這樣做
 
@@ -26,11 +34,7 @@
 
 公開進度頁呈現能力分類與練習紀錄；它是 App 內的紀錄畫面，不是學習成效的研究證據。
 
-![公開畫面與證據範圍](https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/a6/4f/cca64f82-137f-7b2e-de0e-a64f35376629/05.png/320x480bb.jpg)
-
 這是 App Store 截圖，不是可下載的匯出範例，也不是獨立效能測試。
-
-證據查核日期: 2026-09-11 · App 版本: 1.0.13
 
 ## 先知道它不適合什麼
 
@@ -58,10 +62,10 @@
 
 ## 接下來可能要處理的事
 
-- [在家練注音：聽一聲、看筆順，再描一次](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/lumibopomofopro-listen-and-trace-zhuyin-at-home.html)
+- [Lumi Bopomofo Pro 買斷，37 個注音都包含嗎？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/lumibopomofopro-listen-and-trace-zhuyin-at-home.html)
 
-- [讓晚間例行活動，留下看得見的完成紀錄](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/lumimissionpro-keep-a-visible-family-routine-record.html)
+- [Lumi Mission Planet Pro 付費後能做什麼？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/lumimissionpro-keep-a-visible-family-routine-record.html)
 
-[全部需求指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
+[購買指南](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/index.html)
 
-[用圖像題練習數感，再從進度頁挑下一題](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/lumimath-choose-the-next-visual-math-practice.html)
+[Lumi Math Planet 免費哪些？何時需要解鎖？](https://open.cait518.cc/ios-app-guide/buyer-guides/zh-Hant/lumimath-choose-the-next-visual-math-practice.html)

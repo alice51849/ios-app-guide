@@ -107,6 +107,27 @@ if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("Free labels must cover 50 official locales")
 
 
+# 這些 locale 的公開 App Store 連結必須走該語系宣告的 storefront,**不得**使用無
+# 國別的全球 URL。這是本模組的單一權威,產生器(build_pages_i18n)與資料驗證
+# (alternatives_i18n)都必須讀這一份,否則就會像 2026-09-11 的 Indic 商店路由遷移
+# 那樣:一邊改成 /bd/,另一邊還在硬性要求無國別,兩支測試互相矛盾。
+#
+# 對應的通過中契約:geo/tests/test_storefront_validity.py 的
+# `test_bengali_rejects_countryless_and_india_urls`。
+STOREFRONT_ROUTED_LOCALES = ("bn-BD",)
+
+
+def canonical_app_store_url_for(app_id: str, locale: str) -> str:
+    """該 locale 的公開 canonical App Store URL(無 tracking 參數)。
+
+    storefront-routed 的 locale 回該國路徑,其餘回全球無國別形式。
+    """
+    countryless = f"https://apps.apple.com/app/id{app_id}"
+    if locale in STOREFRONT_ROUTED_LOCALES:
+        return localized_app_store_url(countryless, locale)
+    return countryless
+
+
 def localized_app_store_url(value: str, locale: str) -> str:
     """Return a direct App Store URL without wrappers or tracking parameters."""
     if locale not in LOCALE_STOREFRONTS:

@@ -18,8 +18,35 @@ import re
 import sys
 import unittest
 
-GEO = Path(__file__).resolve().parent.parent          # _engine/geo
-PAGES = GEO.parent.parent                              # 站台根目錄
+GEO = Path(__file__).resolve().parent.parent
+
+
+def _site_root(geo: Path) -> Path:
+    """站台根目錄在兩種 checkout 佈局下位置不同,兩邊都探一次。
+
+    雲端跑的是 Guide repo 的鏡像副本 ``<site>/_engine/geo/tests/...``,站台根在上兩層;
+    00_GrowthEngine 的權威副本是 ``geo/tests/...``,站台在 ``geo/pages``。
+    探測而不是寫死,這個檔案才能在兩個 repo 之間保持 byte 相同。
+    """
+    override = os.environ.get("GEO_PAGES", "").strip()
+    if override:
+        return Path(override).resolve()
+    mirrored = geo.parent.parent                 # <site>/_engine/geo -> <site>
+    if (mirrored / "index.html").is_file():
+        return mirrored
+    authoritative = geo / "pages"                # 00_GrowthEngine/geo/pages
+    if (authoritative / "index.html").is_file():
+        return authoritative
+    return mirrored
+
+
+PAGES = _site_root(GEO)
+# 00_GrowthEngine 的權威副本裡,站台 (geo/pages) 是 gitignored 的巢狀 repo,
+# 隔離 worktree 不會有它。沒有站台就跳過需要站台的檢查,而不是假裝失敗;
+# 有站台(雲端鏡像 checkout)時這些檢查一定要真的跑並且會失敗。
+SITE_AVAILABLE = (PAGES / "index.html").is_file()
+requires_site = unittest.skipUnless(
+    SITE_AVAILABLE, f"此 checkout 沒有站台樹({PAGES});跨 repo 同步由 sync contract 保證")
 MANIFEST = json.loads((GEO / "index_entry_canary_manifest.json").read_text(encoding="utf-8"))
 CANARIES = MANIFEST["canaries"]
 
@@ -59,6 +86,11 @@ def _block(html: str) -> str:
 
 def _load_generator():
     sys.path.insert(0, str(GEO))
+    # 產生器用 GEO_PAGES 決定站台根,預設是 `<geo>/pages`。雲端鏡像靠一條
+    # `_engine/geo/pages -> <site>` 的 symlink 讓預設值成立,但 sparse checkout
+    # 或權威副本(站台是 gitignored 的巢狀 repo)不一定有那條 symlink。
+    # 這裡直接把已解析出來的站台根餵進去,兩種佈局才會指到同一棵樹。
+    os.environ["GEO_PAGES"] = str(PAGES)
     spec = importlib.util.spec_from_file_location("build_pages_i18n", GEO / "build_pages_i18n.py")
     if spec is None or spec.loader is None:  # pragma: no cover
         raise unittest.SkipTest("產生器不在此 checkout")
@@ -71,11 +103,42 @@ def _load_generator():
     return module
 
 
-class CanaryTargetsTest(unittest.TestCase):
+class ManifestContractTest(unittest.TestCase):
+    """只依賴 manifest,不需要站台樹 —— 兩個 repo 都一定會真的跑。"""
+
     def test_exactly_eight_canaries(self) -> None:
         self.assertEqual(len(CANARIES), 8)
         self.assertEqual(len(set(CANARIES)), 8, "canary slug 不得重複")
 
+    def test_deep_page_content_is_untouched(self) -> None:
+        self.assertFalse(MANIFEST["change"]["deep_page_content_modified"])
+
+    def test_sitemap_untouched(self) -> None:
+        self.assertFalse(MANIFEST["change"]["sitemap_modified"])
+
+    def test_no_new_urls_declared(self) -> None:
+        self.assertEqual(MANIFEST["change"]["new_urls_created"], 0)
+
+    def test_hreflang_invariant_declared(self) -> None:
+        change = MANIFEST["change"]
+        self.assertEqual(change["hreflang_locales_before"], change["hreflang_locales_after"])
+        self.assertEqual(change["hreflang_locales_after"], 50)
+
+    def test_rollback_contract_is_documented(self) -> None:
+        rollback = MANIFEST["rollback"]
+        self.assertTrue(rollback["fully_reversible"])
+        self.assertGreaterEqual(len(rollback["steps"]), 3)
+        self.assertIn("index.html", rollback["blast_radius"])
+
+    def test_e0_gate_still_blocks_e1_e2(self) -> None:
+        gate = MANIFEST["e0_gate_still_applies"]
+        self.assertIn("verdict=PASS", gate["rule"])
+        self.assertIn("lastDownloaded", gate["rule"])
+        self.assertIn("不得宣稱", gate["not_claimable"])
+
+
+@requires_site
+class CanaryTargetsTest(unittest.TestCase):
     def test_all_eight_target_files_exist(self) -> None:
         """對應 8/8 target 200:檔案存在才會被 GitHub Pages 以 200 供應。"""
         missing = [s for s in CANARIES if not (PAGES / "answers" / f"{s}.html").is_file()]
@@ -117,6 +180,7 @@ class CanaryTargetsTest(unittest.TestCase):
                         "canary 在首頁以外完全沒有入連,等於把它們變成只靠首頁的孤兒")
 
 
+@requires_site
 class BlockQualityTest(unittest.TestCase):
     def test_block_is_visible_and_labelled(self) -> None:
         block = _rendered_block()
@@ -167,6 +231,7 @@ class BlockQualityTest(unittest.TestCase):
                 self.assertNotIn(needle, block.lower())
 
 
+@requires_site
 class NoNewUrlTest(unittest.TestCase):
     def test_block_creates_no_new_pages(self) -> None:
         self.assertEqual(MANIFEST["change"]["new_urls_created"], 0)
@@ -177,13 +242,8 @@ class NoNewUrlTest(unittest.TestCase):
                 self.assertIn("/answers/", href, "canary 區塊只連既有答案頁")
                 self.assertIn(slug, CANARIES)
 
-    def test_deep_page_content_is_untouched(self) -> None:
-        self.assertFalse(MANIFEST["change"]["deep_page_content_modified"])
 
-    def test_sitemap_untouched(self) -> None:
-        self.assertFalse(MANIFEST["change"]["sitemap_modified"])
-
-
+@requires_site
 class InvariantsTest(unittest.TestCase):
     def test_exact50_hreflang_unchanged(self) -> None:
         html = _index_html()
@@ -257,6 +317,7 @@ class InvariantsTest(unittest.TestCase):
         self.assertIn("英文假母語", MANIFEST["locale_policy"]["forbidden"])
 
 
+@requires_site
 class ByteStabilityTest(unittest.TestCase):
     def test_regenerating_twice_is_byte_stable(self) -> None:
         module = _load_generator()
@@ -276,18 +337,6 @@ class ByteStabilityTest(unittest.TestCase):
             self.assertIn(START.encode(), first)
         finally:
             index_path.write_bytes(original)
-
-    def test_rollback_contract_is_documented(self) -> None:
-        rollback = MANIFEST["rollback"]
-        self.assertTrue(rollback["fully_reversible"])
-        self.assertGreaterEqual(len(rollback["steps"]), 3)
-        self.assertIn("index.html", rollback["blast_radius"])
-
-    def test_e0_gate_still_blocks_e1_e2(self) -> None:
-        gate = MANIFEST["e0_gate_still_applies"]
-        self.assertIn("verdict=PASS", gate["rule"])
-        self.assertIn("lastDownloaded", gate["rule"])
-        self.assertIn("不得宣稱", gate["not_claimable"])
 
 
 if __name__ == "__main__":  # pragma: no cover

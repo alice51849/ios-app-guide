@@ -19,16 +19,25 @@
   },
   "change": {
     "file": "_engine/geo/build_pages_i18n.py",
-    "added_symbols": ["INDEX_ENTRY_CANARY_ANSWERS", "_answer_link_items", "index_entry_canary_links"],
-    "rendered_markers": ["<!-- index-entry-canary:start -->", "<!-- index-entry-canary:end -->"],
+    "added_symbols": [
+      "INDEX_ENTRY_CANARY_ANSWERS",
+      "_answer_link_items",
+      "index_entry_canary_links"
+    ],
+    "rendered_markers": [
+      "<!-- index-entry-canary:start -->",
+      "<!-- index-entry-canary:end -->"
+    ],
     "target_page": "index.html",
     "artifact_not_committed": "本分支**不提交**重生的 index.html。已發布的 index.html 由完整雲端管線產生,中間有上百支產生器會注入 guide-design CSS 與 Atom/RSS/JSON feed link;只在本機跑 build_root_index() 會把那些注入洗掉。已實測確認此風險並還原 artifact,只提交產生器原始碼。正式區塊會在下一次正常 geo-daily 全量發布時出現。",
-    "bytes_added_measured": 692,
     "new_urls_created": 0,
     "deep_page_content_modified": false,
     "sitemap_modified": false,
     "hreflang_locales_before": 50,
-    "hreflang_locales_after": 50
+    "hreflang_locales_after": 50,
+    "bytes_added_measured": 1564,
+    "bytes_added_method": "受控 A/B:同一個 build_root_index() renderer、同一組 50 locale、同一棵站台樹,只把 INDEX_ENTRY_CANARY_ANSWERS 由空清單換成 8 個 slug,16891 -> 18455 bytes。",
+    "bytes_added_correction": "先前記錄的 +692 是錯的:那是拿『雲端完整管線產生的 index.html』去比『本機只跑 build_root_index() 的結果』,而本機那一份少了其他產生器注入的 guide-design CSS 與 Atom/RSS/JSON feed link(共約 878 bytes)。1564 − 878 = 686,正好解釋了那個假數字。唯一有效的比較必須固定 renderer,只變動 canary 清單。"
   },
   "canaries": [
     "best-app-to-save-links-from-other-apps-on-iphone",
@@ -42,14 +51,38 @@
   ],
   "locale_policy": {
     "measured_2026_09_12": {
-      "best-app-to-save-links-from-other-apps-on-iphone": {"variants": 4, "en_hreflang_entries": 6},
-      "best-app-blocker-app": {"variants": 26, "en_hreflang_entries": 28},
-      "best-app-for-tracking-fertile-window-trying-to-conceive-no-subscription": {"variants": 18, "en_hreflang_entries": 20},
-      "best-app-to-track-ovulation-and-fertile-window-iphone": {"variants": 18, "en_hreflang_entries": 20},
-      "best-app-to-sort-screenshots-on-iphone-offline": {"variants": 4, "en_hreflang_entries": 6},
-      "best-aesthetic-to-do-list-app-iphone-no-subscription": {"variants": 18, "en_hreflang_entries": 20},
-      "best-ats-resume-app": {"variants": 26, "en_hreflang_entries": 28},
-      "best-app-to-track-daily-spending-abroad-multiple-currencies": {"variants": 18, "en_hreflang_entries": 20}
+      "best-app-to-save-links-from-other-apps-on-iphone": {
+        "variants": 4,
+        "en_hreflang_entries": 6
+      },
+      "best-app-blocker-app": {
+        "variants": 26,
+        "en_hreflang_entries": 28
+      },
+      "best-app-for-tracking-fertile-window-trying-to-conceive-no-subscription": {
+        "variants": 18,
+        "en_hreflang_entries": 20
+      },
+      "best-app-to-track-ovulation-and-fertile-window-iphone": {
+        "variants": 18,
+        "en_hreflang_entries": 20
+      },
+      "best-app-to-sort-screenshots-on-iphone-offline": {
+        "variants": 4,
+        "en_hreflang_entries": 6
+      },
+      "best-aesthetic-to-do-list-app-iphone-no-subscription": {
+        "variants": 18,
+        "en_hreflang_entries": 20
+      },
+      "best-ats-resume-app": {
+        "variants": 26,
+        "en_hreflang_entries": 28
+      },
+      "best-app-to-track-daily-spending-abroad-multiple-currencies": {
+        "variants": 18,
+        "en_hreflang_entries": 20
+      }
     },
     "rule": "這 8 頁都有在地化版本(4–26 個),而且每個英文頁的 hreflang 數正好等於『變體數 + en + x-default』,hreflang 圖是完整且自洽的。首頁 index.html 是 en / x-default hub,因此只連**英文版本**——那是這個 hub 的合法版本;在地化版本由英文頁自身的 hreflang alternate 宣告,搜尋引擎可由此發現,不需要也不應該從英文 hub 直連母語頁。",
     "forbidden": "不得為了湊 exact50 而生成英文假母語版本,也不得宣稱某頁有它實際沒有的在地化版本。首頁的 50 locale hreflang 集合維持不變。",

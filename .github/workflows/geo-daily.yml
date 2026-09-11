@@ -360,6 +360,8 @@ jobs:
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
         run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir .
+          python3 _engine/geo/owned_app_feeds.py --pages-dir . --check
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -404,6 +406,8 @@ jobs:
                 --today "$GEO_BUILD_DATE" \
                 --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
                 --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+              python3 _engine/geo/owned_app_feeds.py --pages-dir .
+              python3 _engine/geo/owned_app_feeds.py --pages-dir . --check
               python3 _engine/geo/parallel_unittest.py --jobs 3
               cd _engine/geo
               python3 outreach_scorecard.py --require-complete
@@ -538,6 +542,10 @@ jobs:
         run: |
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
+      - name: Seal localized owned feeds with source catalog
+        run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir .
+          python3 _engine/geo/owned_app_feeds.py --pages-dir . --check
       - name: Verify localized output before commit
         run: |
           attestation="$RUNNER_TEMP/localized-verified-tree.json"
@@ -556,6 +564,7 @@ jobs:
           echo "LOCALIZED_VERIFIED_TREE=$attestation" >> "$GITHUB_ENV"
       - name: Commit localized pages if any
         run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir . --check
           git add -A
           if git diff --cached --quiet; then
             echo "No localized changes."
@@ -602,10 +611,14 @@ jobs:
                   --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
+                python3 _engine/geo/owned_app_feeds.py --pages-dir .
+                python3 _engine/geo/owned_app_feeds.py --pages-dir . --check
                 python3 _engine/geo/parallel_unittest.py --jobs 3
               fi
               cd _engine/geo
               python3 outreach_scorecard.py --require-complete
+              cd "$GITHUB_WORKSPACE"
+              python3 _engine/geo/owned_app_feeds.py --pages-dir . --check
             }
             export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile localized tree after origin merge"
             if ! remote_first_publish reconcile_localized_phase origin main 5; then

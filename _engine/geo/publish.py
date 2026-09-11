@@ -414,6 +414,8 @@ def main():
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     require([PY, os.path.join(HERE, "hero_tasks.py")], env=env)
     require([PY, os.path.join(HERE, "hero_tasks.py"), "--check"], env=env)
+    require([PY, os.path.join(HERE, "owned_app_feeds.py")], env=env)
+    require([PY, os.path.join(HERE, "owned_app_feeds.py"), "--check"], env=env)
     require([PY, os.path.join(HERE, "audit_store_attribution.py")], env=env)
     # 發布前的硬閘門:可索引頁一頁都不可以從首頁點不到。這是量測不是產生 ——
     # 它擋的是「某支下游產生器把連結圖洗掉,結果我們把孤兒站推上線」。

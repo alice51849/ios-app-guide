@@ -32,6 +32,7 @@ from app_store_storefronts import (
 from gen_feed import feed_discovery_links
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE  # noqa: E402
+import pt_pt_outreach_copy  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
@@ -1153,10 +1154,13 @@ def _page_record(
         "app_key": key,
         "app_name": _localized_app_name(source, app_id),
         "app_store_id": app_id,
-        "publisher_query": _extract(
-            source,
-            r"<h1[^>]*>(.*?)</h1>" if answer_page else r"<title>(.*?)</title>",
-            "localized publisher query",
+        "publisher_query": pt_pt_outreach_copy.answer_title(
+            key, locale, page_slug,
+            _extract(
+                source,
+                r"<h1[^>]*>(.*?)</h1>" if answer_page else r"<title>(.*?)</title>",
+                "localized publisher query",
+            ),
         ),
         "decision_context": _decision_context(source, answer_page, app_id),
         "purchase_model": str(app["purchase_model"]),

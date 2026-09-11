@@ -42,6 +42,8 @@ import gen_mobile_app_identity  # noqa: E402
 import gen_store_attribution  # noqa: E402
 import queries  # noqa: E402
 import rank_opportunity_pages  # noqa: E402
+from bopomofo_hub_titles import resource_title  # noqa: E402
+import pt_pt_outreach_copy  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -436,7 +438,10 @@ def localized_answer_links(key, locale, required=True):
         rel = f"{locale}/answers/{slug}.html"
         answer = _owned_answer_link(key, rel, question)
         if answer is not None:
-            answers.append(answer)
+            url, title = answer
+            title = resource_title(key, locale, slug, title)
+            title = pt_pt_outreach_copy.answer_title(key, locale, slug, title)
+            answers.append((url, title))
     unique = list(dict(answers).items())
     if required and not unique:
         raise ValueError(f"No localized answers for {key} in {locale}")

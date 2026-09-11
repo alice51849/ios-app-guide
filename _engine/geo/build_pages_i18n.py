@@ -49,6 +49,7 @@ from official_locales import (  # noqa: E402
 )
 from site_config import PUBLIC_SITE  # noqa: E402
 import rank_opportunity_pages  # noqa: E402
+import pt_pt_outreach_copy  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 DATA = os.path.join(ROOT, "data")
@@ -933,7 +934,7 @@ FLEXIBLE_FALSE_PRICING_MARKERS = {
     "no": ("ingen abonnementer", "eller abonnement"),
     "pl": ("martwić się o subskrypcje",),
     "pt-BR": ("assinaturas recorrentes",),
-    "pt-PT": ("Sem assinaturas",),
+    "pt-PT": ("Sem assinaturas", "Sem subscrição", "Sem subscrições"),
     "ro": ("fără abonamente recurente",),
     "ru": ("без подписок",),
     "sk": ("obávať predplatného",),
@@ -1115,6 +1116,8 @@ ATPL = {
 
 
 def get_ui(locale):
+    if locale == "pt-PT":
+        return pt_pt_outreach_copy.UI
     b = base_lang(locale)
     return UI.get(b, UI["en"])
 
@@ -1137,12 +1140,18 @@ def json_for_script(value, **kwargs):
 def pricing_text_for(key, locale):
     profile = pricing_profile(key)
     if APPS[key].get("purchase_model") == "paid_upfront":
+        if locale == "pt-PT":
+            return pt_pt_outreach_copy.PAID_UPFRONT_PRICING
         return PAID_UPFRONT_PRICING.get(
             base_lang(locale), PAID_UPFRONT_PRICING["en"]
         )
     if profile in {"pay_once", "free_to_start"}:
         return get_ui(locale)["ptxt"]
-    localized = PROFILE_PRICING.get(base_lang(locale), PROFILE_PRICING["en"])
+    localized = (
+        pt_pt_outreach_copy.PROFILE_PRICING
+        if locale == "pt-PT"
+        else PROFILE_PRICING.get(base_lang(locale), PROFILE_PRICING["en"])
+    )
     return localized.get(
         profile,
         PROFILE_PRICING["en"].get(profile, PROFILE_PRICING["en"]["neutral"]),
@@ -1465,6 +1474,7 @@ def external_localized_values(key, locale, localizations=None):
     values.update(
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
+    values = pt_pt_outreach_copy.external_values(key, locale, values)
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1515,8 +1525,14 @@ def external_localized_values(key, locale, localizations=None):
 
 def build_faq(locale, name, sub, kws):
     b = base_lang(locale)
-    qtpl = QTPL.get(b)
-    atpl = ATPL.get(b)
+    qtpl = (
+        pt_pt_outreach_copy.QUESTION_TEMPLATES
+        if locale == "pt-PT" else QTPL.get(b)
+    )
+    atpl = (
+        pt_pt_outreach_copy.ANSWER_TEMPLATE
+        if locale == "pt-PT" else ATPL.get(b)
+    )
     if not qtpl or not atpl:
         return []
     subc = sub.rstrip(".。!! ")

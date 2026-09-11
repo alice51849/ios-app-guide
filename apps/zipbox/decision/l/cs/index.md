@@ -2,7 +2,7 @@
 title: "Zipbox: otevřít RAR, ZIP, 7z — Rozbalte bez reklam | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/cs/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

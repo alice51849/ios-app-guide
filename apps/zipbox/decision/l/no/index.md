@@ -2,7 +2,7 @@
 title: "Zipbox: åpne RAR, ZIP og 7z — Pakk ut uten reklame | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/no/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

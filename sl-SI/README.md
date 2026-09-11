@@ -147,6 +147,6 @@ JSON, JSONL in CSV vsebujejo enakih 2.350 zapisov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://open.cait518.cc/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-09-10
+Posodobljeno: 2026-09-11
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

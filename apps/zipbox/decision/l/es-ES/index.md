@@ -2,7 +2,7 @@
 title: "Zipbox: abrir RAR, ZIP y 7z — Descomprime sin anuncios | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/es-ES/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

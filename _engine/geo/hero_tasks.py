@@ -7,6 +7,8 @@ from datetime import date, datetime, timezone
 import hashlib
 import html
 import json
+import market_availability as market
+import market_surface_policy
 import math
 import os
 from pathlib import Path, PurePosixPath
@@ -362,8 +364,9 @@ def catalogs(pages: Path, tasks: list[dict], site: str, provider: str) -> tuple[
                     or source.get("source_persona_query") != task["evidence"]["intent_queries"][key]
                 ):
                     raise ValueError(f"Missing verified native intent: {key}/{locale}")
-                link = campaign_app_store_url(source["app_store_url"], TOKEN, provider_token=provider)
-                if not re.search(rf"/id{app_id}(?:\?|$)", link):
+                available = market.validate_record(source, url_fields=("app_store_url",))
+                link = campaign_app_store_url(source["app_store_url"], TOKEN, provider_token=provider) if available else None
+                if available and not re.search(rf"/id{app_id}(?:\?|$)", link):
                     raise ValueError("App Store link has the wrong owner")
                 parsed = urlsplit(source["canonical_guide_url"])
                 prefix = urlsplit(site).path.rstrip("/") + "/"
@@ -380,6 +383,7 @@ def catalogs(pages: Path, tasks: list[dict], site: str, provider: str) -> tuple[
                     "app_store_url": link, "cta": source["app_store_cta_label"],
                     "answer_path": answer, "purchase_model": app["purchase_model"],
                     "source_kind": "answer" if is_answer else "app_guide",
+                    **({"locale": locale, **market.record_fields(locale)} if not available else {}),
                 }
     return inventory, selected
 
@@ -543,10 +547,7 @@ def render_page(task: dict, locale: str, copy: dict, sample: dict, apps: list[di
         },
         "publisher": {"@type": "Organization", "name": "Lumi Studio", "url": site},
     }
-    buttons = "".join(
-        f'<a class="button" href="{esc(app["app_store_url"], quote=True)}" rel="nofollow noopener">{esc(app["cta"])}</a>'
-        for app in apps
-    )
+    buttons = app_buttons(apps)
     prefix = urlsplit(site).path.rstrip("/")
     asset = {key: f"{prefix}/{value}" for key, value in assets.items()}
     direction = "rtl" if locale in RTL else "ltr"
@@ -735,10 +736,7 @@ def render_maintenance_page(task: dict, locale: str, copy: dict, sample: dict, a
         },
         "publisher": {"@type": "Organization", "name": "Lumi Studio", "url": site},
     }
-    buttons = "".join(
-        f'<a class="button" href="{esc(app["app_store_url"], quote=True)}" rel="nofollow noopener">{esc(app["cta"])}</a>'
-        for app in apps
-    )
+    buttons = app_buttons(apps)
     prefix = urlsplit(site).path.rstrip("/")
     asset = {key: f"{prefix}/{value}" for key, value in assets.items()}
     direction = "rtl" if locale in RTL else "ltr"
@@ -929,6 +927,8 @@ def tool_schema(task: dict, locale: str, copy: dict, site: str, modified: str) -
 
 def app_buttons(apps: list[dict]) -> str:
     return "".join(
+        f'<span data-app-store-id="id{html.escape(str(app["app_store_id"]), quote=True)}">N/A</span>'
+        + market.note_html(app["locale"], app["name"]) if market.is_unavailable(app.get("locale")) else
         f'<a class="button" href="{html.escape(app["app_store_url"], quote=True)}" rel="nofollow noopener">{html.escape(app["cta"])}</a>'
         for app in apps
     )
@@ -2200,6 +2200,8 @@ def integrate(pages: Path, tasks: list[dict], copy: dict, apps: dict, site: str,
         path = safe_path(pages, index)
         if path.is_file():
             source = path.read_text(encoding="utf-8")
+            if market.is_unavailable(locale):
+                source = market_surface_policy.enforce_html(source, locale)
             if not generated_index(source):
                 block = resource_block(locale, tasks, copy[locale], site, task_copies)
                 changes[index] = (
@@ -2213,6 +2215,8 @@ def integrate(pages: Path, tasks: list[dict], copy: dict, apps: dict, site: str,
             for key in task["apps"]:
                 answer = apps[(locale, key)]["answer_path"]
                 source = changes.get(answer) or safe_path(pages, answer).read_text(encoding="utf-8")
+                if market.is_unavailable(locale):
+                    source = market_surface_policy.enforce_html(source, locale)
                 changes[answer] = insert_block(source, own_block, label=answer)
                 for relative in secondary_answers(card_index, apps[(locale, key)]["app_store_id"], answer):
                     if relative in changes:
@@ -2336,6 +2340,7 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
             existing_path = safe_path(pages, relative)
             existing = existing_path.read_text(encoding="utf-8") if existing_path.is_file() else ""
             page = preserve_managed_links(existing, page, label=relative)
+            page = market_surface_policy.enforce_html(page, locale)
             page = email_capture.apply_capture(page, capture_config)
             outputs[relative] = page.encode()
             csv_path = example_path(task, locale)
@@ -2345,7 +2350,8 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
                 "url": f"{site}/{relative}", "path": relative,
                 "example_url": f"{site}/{csv_path}",
                 "navigation_url": f"{site}/{navigation[locale]['path']}" if navigation[locale] else None,
-                "apps": [{"key": app["key"], "app_store_url": app["app_store_url"]} for app in optional],
+                "apps": [{"key": app["key"], "app_store_url": app["app_store_url"], **market.record_fields(locale)} for app in optional],
+                **market.record_fields(locale),
             }
             records.append(record)
             feed_items.append({
@@ -2363,7 +2369,10 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
                 else f"{site}/{resource_path(tasks[0], locale)}"
             ),
             "feed_url": f"{site}/{feed_path(locale)}",
-            "language": locale, "authors": [{"name": "Lumi Studio", "url": site}], "items": feed_items,
+            "language": locale, "authors": [{"name": "Lumi Studio", "url": site}],
+            "items": [] if market.is_unavailable(locale) else feed_items,
+            **market.record_fields(locale),
+            **({"_market_availability": market.record_fields(locale)["market_availability"]} if market.is_unavailable(locale) else {}),
         }).encode()
     outputs[SITEMAP] = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -2378,6 +2387,8 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
     root_xml = root_path.read_text() if root_path.exists() else f'<sitemapindex xmlns="{NAMESPACE}"></sitemapindex>'
     integrations["sitemap_index.xml"] = sitemap_index(root_xml, site, modified)
     supported = sorted({key for task in tasks for key in task["apps"]})
+    from gen_market_availability import rewrite_document
+    records = rewrite_document(records)
     manifest = {
         "$schema": f"{site}/{SCHEMA}", "schema_version": 1,
         "content_digest": source_digest, "date_modified": modified, "locale_count": 50,

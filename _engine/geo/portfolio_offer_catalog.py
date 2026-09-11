@@ -7,6 +7,8 @@ import argparse
 from datetime import date, datetime, timezone
 import hashlib
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -142,6 +144,17 @@ def offer_item(
 ) -> dict[str, Any]:
     app_id = str(record["app_store_id"])
     locale = str(record["locale"])
+    if not market.validate_record(record):
+        application = gen_mobile_app_identity.mobile_app_schema(
+            app_id, str(record["app_name"]), str(app["category"]),
+            str(record["canonical_guide_url"]),
+        )
+        return {
+            "@type": "ListItem", "position": position,
+            "url": record["canonical_guide_url"],
+            "item": market_surface_policy.unavailable_json(application, locale),
+            **market.record_fields(locale),
+        }
     store_url = validated_app_store_url(
         str(record["app_store_url"]),
         expected_app_id=app_id,
@@ -240,7 +253,7 @@ def catalog_payload(
     for position, record in enumerate(ordered, start=1):
         app_id = str(record["app_store_id"])
         detail = details.get(country, {}).get(app_id)
-        price_verified += int(detail is not None)
+        price_verified += int(detail is not None and not market.is_unavailable(locale))
         items.append(
             offer_item(
                 record,
@@ -251,7 +264,7 @@ def catalog_payload(
         )
     payload = {
         "@context": "https://schema.org",
-        "@type": "OfferCatalog",
+        "@type": "ItemList" if market.is_unavailable(locale) else "OfferCatalog",
         "@id": f"{catalog_url(locale)}#catalog",
         "url": catalog_url(locale),
         "name": localized_ui[publisher_intent_catalog.NAME],
@@ -261,6 +274,7 @@ def catalog_payload(
         "numberOfItems": len(items),
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
         "itemListElement": items,
+        **market.record_fields(locale),
     }
     return payload, price_verified
 
@@ -296,8 +310,9 @@ def build_payloads(
             {
                 "locale": locale,
                 "url": catalog_url(locale),
-                "offer_count": len(catalog["itemListElement"]),
+                "offer_count": 0 if market.is_unavailable(locale) else len(catalog["itemListElement"]),
                 "price_verified_offer_count": verified_prices,
+                **market.record_fields(locale),
             }
         )
 
@@ -319,7 +334,8 @@ def build_payloads(
         "locale_count": len(catalogs),
         "app_count": len(apps),
         "offer_count": sum(
-            len(catalog["itemListElement"]) for catalog in catalogs.values()
+            len(catalog["itemListElement"]) for locale, catalog in catalogs.items()
+            if not market.is_unavailable(locale)
         ),
         "price_verified_offer_count": total_verified_prices,
         "locales": locale_entries,

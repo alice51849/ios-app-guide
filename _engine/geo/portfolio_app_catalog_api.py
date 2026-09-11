@@ -7,6 +7,7 @@ import datetime as dt
 import hashlib
 import html
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import re
@@ -335,13 +336,16 @@ def localized_record(
         "purchase_model": record["purchase_model"],
         "one_time_option": record["one_time_option"],
         "capabilities": record["capabilities"],
-        "app_store_url": campaign_app_store_url(
+        "app_store_url": None if market.is_unavailable(locale) else campaign_app_store_url(
             direct_store,
             _campaign(locale),
         ),
         "guide_url": f"{SITE}/{locale}/{record['key']}.html",
         "verified_live": True,
     }
+    if market.is_unavailable(locale):
+        localized.update({"locale": locale, **market.record_fields(locale)})
+        return localized
     if storefront_details is None:
         storefront_details = load_storefront_details(pages)
     country = LOCALE_STOREFRONTS[locale]
@@ -440,6 +444,9 @@ def feed_payload(
     previous_items: list[dict[str, object]] | None = None,
     timestamp: str | None = None,
 ) -> dict[str, object]:
+    if market.is_unavailable(locale):
+        for app in apps:
+            market.validate_record({**app, "locale": locale}, url_fields=("app_store_url",))
     timestamp = timestamp or _utc_timestamp()
     previous = {
         str(item.get("id")): item
@@ -447,7 +454,7 @@ def feed_payload(
         if isinstance(item, dict) and item.get("id")
     }
     items = []
-    for app in apps:
+    for app in ([] if market.is_unavailable(locale) else apps):
         identifier = f"https://apps.apple.com/app/id{app['app_store_id']}"
         if locale == "bn-BD":
             identifier = localized_app_store_url(identifier, locale)
@@ -488,6 +495,7 @@ def feed_payload(
             "license": LICENSE_URL,
             "ordering": "alphabetical_by_app_name_not_a_ranking",
             "recordCount": len(apps),
+            **market.record_fields(locale),
         },
         "items": items,
     }
@@ -659,7 +667,7 @@ def catalog_schema() -> dict[str, object]:
         "widget",
         "apple_watch",
     )
-    return {
+    schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": api_url("catalog.schema.json"),
         "title": "Localized verified iOS app catalog",
@@ -805,8 +813,14 @@ def catalog_schema() -> dict[str, object]:
     }
 
 
+    item = schema["properties"]["apps"]["items"]
+    item["properties"]["locale"] = {"enum": list(OFFICIAL_LOCALES)}
+    market.add_schema_contract(item, url_fields=("app_store_url",))
+    return schema
+
+
 def feed_schema() -> dict[str, object]:
-    return {
+    schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": api_url("feed.schema.json"),
         "title": "Localized verified iOS app JSON Feed",
@@ -919,6 +933,25 @@ def feed_schema() -> dict[str, object]:
             },
         },
     }
+
+
+    metadata = schema["properties"]["_lumi_catalog"]
+    metadata["properties"]["market_availability"] = {
+        "enum": [market.record_fields(locale)["market_availability"] for locale in market.UNAVAILABLE_MARKETS]
+    }
+    schema["properties"]["items"]["minItems"] = 0
+    schema["allOf"] = [{
+        "if": {"properties": {"language": {"enum": list(market.UNAVAILABLE_MARKETS)}}},
+        "then": {"properties": {
+            "items": {"maxItems": 0},
+            "_lumi_catalog": {"required": ["market_availability"]},
+        }},
+        "else": {"properties": {
+            "items": {"minItems": 1},
+            "_lumi_catalog": {"not": {"required": ["market_availability"]}},
+        }},
+    }]
+    return schema
 
 
 def openapi_document() -> dict[str, object]:
@@ -1222,12 +1255,13 @@ def validate_artifacts(
         for app in apps:
             app_id = str(app["app_store_id"])
             try:
-                validated_app_store_url(
-                    str(app["app_store_url"]),
-                    expected_app_id=app_id,
-                    expected_locale=locale,
-                    require_campaign=True,
-                )
+                if market.validate_record({**app, "locale": locale}, url_fields=("app_store_url",)):
+                    validated_app_store_url(
+                        str(app["app_store_url"]),
+                        expected_app_id=app_id,
+                        expected_locale=locale,
+                        require_campaign=True,
+                    )
             except ValueError as error:
                 raise ValueError(
                     f"Invalid direct App Store link: {locale}/{app['key']}"
@@ -1250,9 +1284,14 @@ def validate_artifacts(
         ):
             raise ValueError(f"JSON Feed catalog metadata mismatch: {locale}")
         items = feed["items"]
-        if [str(item["id"]) for item in items] != expected_ids:
+        feed_apps = apps
+        if market.is_unavailable(locale):
+            if extension.get("market_availability") != market.record_fields(locale)["market_availability"]:
+                raise ValueError(f"Missing blocked feed evidence: {locale}")
+            feed_apps = []
+        if [str(item["id"]) for item in items] != ([] if market.is_unavailable(locale) else expected_ids):
             raise ValueError(f"JSON Feed app order or coverage mismatch: {locale}")
-        for app, item in zip(apps, items, strict=True):
+        for app, item in zip(feed_apps, items, strict=True):
             if item["language"] != locale:
                 raise ValueError(f"JSON Feed item language mismatch: {locale}")
             if item["url"] != app["guide_url"]:

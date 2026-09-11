@@ -9,6 +9,8 @@ from datetime import datetime, timezone
 import hashlib
 import html
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -100,8 +102,10 @@ def visual_campaign_token(locale: str) -> str:
     return token
 
 
-def visual_store_url(record: dict[str, Any]) -> str:
+def visual_store_url(record: dict[str, Any]) -> str | None:
     locale = str(record["locale"])
+    if not market.validate_record(record, url_fields=("app_store_url",)):
+        return None
     app_id = str(record["app_store_id"])
     source = normalize_app_store_campaign_url(
         str(record["app_store_url"])
@@ -242,7 +246,7 @@ def render_svg(
     app_name = _single_line(record["app_name"])
     query = _single_line(record["publisher_query"])
     context = _single_line(record["decision_context"])
-    purchase = _single_line(purchase_label)
+    purchase = "বাংলাদেশে অনুপলব্ধ" if market.is_unavailable(locale) else _single_line(purchase_label)
     app_id = _single_line(record["app_store_id"])
     rtl = locale in catalog.RTL_LOCALES
     app_anchor = "end" if rtl else "start"
@@ -598,7 +602,7 @@ def render_gallery(
                     '<article class="visual-card">',
                     (
                         f'<a class="visual-link" rel="nofollow noopener" '
-                        f'href="{html.escape(store, quote=True)}" '
+                        f'href="{html.escape(store or guide, quote=True)}" '
                         f'aria-label="{html.escape(str(record["app_store_cta_label"]), quote=True)}">'
                     ),
                     (
@@ -624,7 +628,7 @@ def render_gallery(
                         f'<a href="{html.escape(guide, quote=True)}">'
                         f'{html.escape(ui["Guide"])}</a>'
                     ),
-                    (
+                    (market.note_html(asset_locale, app_name) if store is None else
                         f'<a rel="nofollow noopener" '
                         f'href="{html.escape(store, quote=True)}">'
                         f'{html.escape(str(record["app_store_cta_label"]))}</a>'
@@ -636,7 +640,7 @@ def render_gallery(
         )
     direction = ' dir="rtl"' if asset_locale in catalog.RTL_LOCALES else ""
     root_prefix = "" if locale == "en" else f"/{locale}"
-    return f"""<!doctype html>
+    document = f"""<!doctype html>
 <html lang="{html.escape(locale)}"{direction}>
 <head>
 <meta charset="utf-8">
@@ -696,6 +700,9 @@ h1{{margin:16px 0 8px;overflow:hidden;text-overflow:ellipsis;font-size:clamp(28p
 """
 
 
+    return market_surface_policy.enforce_html(document, asset_locale)
+
+
 def _manifest_record(
     record: dict[str, Any],
     svg: str,
@@ -712,6 +719,7 @@ def _manifest_record(
         "canonical_guide_url": str(record["canonical_guide_url"]),
         "app_store_url": visual_store_url(record),
         "sha256": hashlib.sha256(svg.encode("utf-8")).hexdigest(),
+        **market.record_fields(locale),
     }
 
 

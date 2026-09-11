@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Vergelijk aankopen met je netto-uurinkomen en download je eigen CSV. Totaal = aantal × eindprijs. Werkuren = totaal ÷ netto-uurinkomen. Werkdagen = werkuren ÷ uren per werkdag. Gebruik prijzen inclusief belasting. Geen valutaomrekening, loonberekening, spaarprognose of aankoopadvies. Weergave op twee decimalen; totalen gebruiken niet-afgeronde waarden.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/purchase-worktime-sheet.html",
       "language": "nl-NL",
       "title": "Aankopen vergelijken in werkuren",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Noteer wanneer je elke taak voor huis, auto of gezondheid het laatst hebt gedaan en hoe vaak die terugkomt: je krijgt de volgende vervaldatum, resterende dagen en achterstallige taken in een downloadbaar overzicht. Volgende vervaldatum = laatst gedaan + interval. Bij maanden blijft de dag gelijk; bestaat die niet, dan geldt de laatste dag van de maand (ook in schrikkeljaren). Dagen resterend = vervaldatum − vandaag. Achterstallig onder 0; binnenkort van 0 tot 7. Intervallen van 1 tot 3650 dagen, weken of maanden. Datums tussen 1900-01-01 en 2999-12-31. Maximaal 30 taken. Geen herinneringen, meldingen of agendasynchronisatie; niets verlaat deze pagina.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/maintenance-next-due-sheet.html",
       "language": "nl-NL",
       "title": "Onderhoudsplanning met volgende vervaldatum",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Zet op een rij wat een freelanceproject of kleine klus heeft opgebracht en gekost, en download een overzicht met brutowinst, marge en netto per uur. Winst = totaal inkomsten − totaal uitgaven. Marge = winst ÷ totaal inkomsten. Netto per uur = winst ÷ bestede uren. Bedragen worden in hele centen opgeteld, dus totalen verschuiven niet. Bedragen van 0 tot 100.000.000 met hoogstens twee decimalen, tot 20 inkomsten- en 20 uitgavenregels, uren van 0,25 tot 2000 in kwartieren. Eén valuta, geen omrekening, geen belasting- of boekhoudadvies.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/project-profit-sheet.html",
       "language": "nl-NL",
       "title": "Projectwinstoverzicht",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Vul de maximumcapaciteit uit de iPhone-instellingen in en, als je die hebt, het aantal laadcycli, en download een blad met het slijtagebereik per maand en de maanden tot 80% – altijd een bereik, nooit een score. Slijtage per maand = (100 − capaciteit) ÷ leeftijd in maanden, getoond met een band van ±25%. Maanden tot 80% = (capaciteit − 80) ÷ slijtage; ondergrens met het hoge tempo, bovengrens met het lage tempo. Cycli per maand = cycli ÷ leeftijd. Capaciteit van 60 tot 100 als heel percentage, cycli van 0 tot 3000, aankoopmaand tussen 2007 en 2099 bij 1 tot 240 maanden oud, tot 10 toestellen. Maanden als JJJJ-MM. Invoer blijft in dit tabblad; er wordt niets op je telefoon gemeten of uitgelezen.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/battery-wear-range-sheet.html",
       "language": "nl-NL",
       "title": "Accuslijtage-bereikblad",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Zet op een rij wat er thuis tegelijk online gebeurt en met hoeveel apparaten, en download een tabel met de benodigde Mbps en de ruimte die je abonnement nog overhoudt. Totaal per rij = apparaten × waarde per apparaat. Nodig = som van de rijen. Ruimte = abonnement − nodig; onder 20% van het abonnement is krap, onder nul te weinig. Er wordt in hele tienden van een Mbps opgeteld, dus totalen verschuiven nooit. Abonnementssnelheden van 0,5 tot 10000 Mbps met hoogstens één decimaal, 1 tot 50 apparaten per rij, maximaal 20 rijen. Wifi-bereik, latentie en de werkelijk geleverde snelheid vallen buiten deze tabel.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/bandwidth-need-sheet.html",
       "language": "nl-NL",
       "title": "Bandbreedte voor thuis",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Vul het totale reisbudget, de dagen, de reizigers en de kosten die je al kent in, en download een tabel met wat iedereen per dag kan uitgeven en hoe dat verdeeld is over eten, vervoer, tickets en winkelen. Vrij te besteden = totaal budget − vaste kosten. Per dag = vrij te besteden ÷ dagen. Per persoon per dag = per dag ÷ reizigers. Elke categorie = per dag × haar aandeel. Bedragen worden in hele centen opgeteld; dagbedragen worden alleen bij weergave afgerond. Bedragen van 0 tot 100.000.000 met hoogstens twee decimalen, 1 tot 120 dagen, 1 tot 20 reizigers, maximaal 15 vaste kosten, vier aandelen die samen precies 100 zijn. Overal dezelfde valuta, geen wisselkoersen, geen prijs- of boekingsadvies.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/trip-budget-sheet.html",
       "language": "nl-NL",
       "title": "Reisbudget per dag",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Zet de plekken van één dag op een rij met hoelang je blijft en hoelang je naar de volgende reist, en download een tabel met aankomst- en vertrektijden die laat zien of alles tussen je begin en einde past. Aankomst = vorig vertrek + reis. Vertrek = aankomst + verblijf. Totaal = alle verblijven + alle reizen. Beschikbaar = einde − begin; een eindtijd vóór de begintijd telt als de volgende dag. Te veel = totaal − beschikbaar; alles boven nul loopt uit. Simpel rekenen in minuten, zonder tijdzones. Tijden als 24-uurs HH:MM, verblijven van 5 tot 720 minuten, reizen van 0 tot 600 minuten, maximaal 25 plekken. Openingstijden, echt verkeer, kaarten, routes en reserveringen vallen buiten deze tabel.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/day-itinerary-sheet.html",
       "language": "nl-NL",
       "title": "Tijdschema voor één dag",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Maak van rommelige vergadernotities een overzicht van één pagina: één kop, drie tot twaalf kernpunten, één volgende actie en een optionele meetwaarde, en download het als tabel om in een slide of samenvatting te plakken. De tabel houdt je woorden zoals ze zijn: kop, dan de punten in de volgorde waarin je ze typte, dan de volgende actie, dan de meetwaarde. Hij telt de punten en verwijdert spaties aan de randen; niets wordt herschreven, samengevat of beoordeeld. Kop tot 80 tekens, 3 tot 12 punten van elk maximaal 160 tekens, volgende actie tot 160 tekens, meetwaarde tot 60 tekens. Elke regel moet tekst op één regel zijn. De tabel leest geen bestanden, opnames of agenda's.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/one-page-outline-sheet.html",
       "language": "nl-NL",
       "title": "Vergadernotities naar één pagina",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Vul in wat elke persoon besteld heeft, geef de btw en de fooi in procenten op en je ziet precies wie wat betaalt. Btw en fooi worden tot op de cent naar rato verdeeld, en het overzicht download je als CSV. Subtotaal = alles wat besteld is, bij elkaar. Btw = subtotaal × btw-percentage. Fooi = subtotaal × fooipercentage. Ieders deel is de eigen bestelling ÷ subtotaal; overgebleven centen gaan eerst naar de grootste decimalen, zodat de delen samen precies de rekening vormen. Gebruik één valuta en vul btw en fooi in als percentage van het subtotaal. Geen valutaomrekening, geen regels voor bedieningsgeld, geen advies over hoeveel fooi je geeft en geen betalingen. Op het scherm wordt op twee decimalen afgerond; de verdeling zelf rekent in hele centen.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/bill-split-sheet.html",
       "language": "nl-NL",
       "title": "Rekening splitsen",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Zet op een rij wat je bewaard hebt en hoe lang het duurt, geef aan hoeveel minuten je echt per dag leest, en je ziet op welke dag alles af is. Het plan download je als CSV. Lopend totaal = de minuten van dit item plus alles erboven. Dag = lopend totaal ÷ minuten per dag, naar boven afgerond. Klaar op = startdatum + dag − 1. Vrije minuten = dagen × minuten per dag − minuten in totaal. De volgorde die je typt is de leesvolgorde: er wordt niets herschikt, overgeslagen of samengevoegd. Eén sessie per dag die precies je tijd opmaakt, zonder vrije dagen, zonder links te openen of op te halen en zonder je leessnelheid te schatten.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/reading-backlog-sheet.html",
       "language": "nl-NL",
       "title": "Leeslijst wegwerken",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Vul in wanneer je elke aantekening hebt geschreven en je krijgt de vijf herhaalmomenten die erop volgen, met de resterende dagen en wat al voorbij is. Het schema download je als CSV. Herhaaldatum = schrijfdatum + 1, 3, 7, 16 en 35 dagen. Dagen te gaan = herhaaldatum − vandaag; een negatief getal is een datum die al voorbij is. Volgende herhaling = de eerste datum die vandaag of later valt. Een vaste reeks intervallen, geen geheugenmodel: hier wordt niets voorspeld, geen aantekening beoordeeld en geen antwoord nagekeken. Alleen data, zonder tijdstippen, tijdzones, herinneringen of meldingen.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/nl-NL/tools/review-schedule-sheet.html",
       "language": "nl-NL",
       "title": "Herhaalschema",

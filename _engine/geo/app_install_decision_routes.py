@@ -9,6 +9,8 @@ import hashlib
 import html
 import public_email
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -249,7 +251,7 @@ def _record(
             raw_storefront_facts,
             locale,
         )
-        if raw_storefront_facts is not None
+        if raw_storefront_facts is not None and not market.is_unavailable(locale)
         else None
     )
     if storefront_facts is not None:
@@ -319,8 +321,8 @@ def _record(
         "oembed_url": decision_oembed_url(key, locale),
         "locale_index_url": locale_index_url(locale),
         "app_store_id": app_store_id,
-        "canonical_app_store_url": str(intent["canonical_app_store_url"]),
-        "app_store_url": str(intent["app_store_url"]),
+        "canonical_app_store_url": intent["canonical_app_store_url"],
+        "app_store_url": intent["app_store_url"],
         "app_store_cta_label": str(intent["app_store_cta_label"]),
         "storefront_facts": storefront_facts,
         "guide_cta_label": str(portfolio_app_finder.UI[locale]["guide"]),
@@ -331,7 +333,9 @@ def _record(
         "measured_search_volume": bool(intent["measured_search_volume"]),
         "is_ranking": bool(intent["is_ranking"]),
         "verified_live": bool(intent["verified_live"]),
+        **market.record_fields(locale),
     }
+    market.validate_record(record)
     if not record["verified_live"] or record["is_ranking"]:
         raise ValueError(f"Unsafe install decision record: {record['record_id']}")
     return record
@@ -454,7 +458,7 @@ def _payload(
 
 
 def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
-    return {
+    schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": schema_url(),
         "title": "Lumi Studio App Install Decision Routes",
@@ -746,6 +750,10 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+    market.add_schema_contract(schema["$defs"]["record"])
+    return schema
+
+
 def locale_payload(
     locale: str,
     records: list[dict[str, Any]],
@@ -901,7 +909,7 @@ def _oembed_document(
         str(record["publisher_query"]),
         _share_image_url(record),
         str(record["decision_page_url"]),
-        str(record["app_store_url"]),
+        record["app_store_url"],
         locale,
         SITE,
         storefront=(
@@ -919,13 +927,13 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
         str(record["category"]),
         str(record["decision_page_url"]),
     )
-    app["url"] = str(record["app_store_url"])
-    app["installUrl"] = str(record["app_store_url"])
-    app["downloadUrl"] = str(record["app_store_url"])
+    app["url"] = record["app_store_url"]
+    app["installUrl"] = record["app_store_url"]
+    app["downloadUrl"] = record["app_store_url"]
     app["description"] = str(record["decision_context"])
     app["potentialAction"] = {
         "@type": "InstallAction",
-        "target": str(record["app_store_url"]),
+        "target": record["app_store_url"],
     }
     storefront_facts = record.get("storefront_facts")
     if isinstance(storefront_facts, dict):
@@ -957,7 +965,7 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
         ],
     ]
     image_url = _share_image_url(record)
-    return {
+    schema = {
         "@context": "https://schema.org",
         "@graph": [
             app,
@@ -968,9 +976,9 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
                 "name": str(record["publisher_query"]),
                 "description": str(record["decision_context"]),
                 "inLanguage": str(record["locale"]),
-                "about": {"@id": str(record["canonical_app_store_url"])},
+                "about": {"@id": record["canonical_app_store_url"] or f"urn:apple:app:id{record['app_store_id']}"},
                 "isPartOf": {"@id": data_url()},
-                "mainEntity": {"@id": str(record["canonical_app_store_url"])},
+                "mainEntity": {"@id": record["canonical_app_store_url"] or f"urn:apple:app:id{record['app_store_id']}"},
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
                     "@id": f"{image_url}#primaryimage",
@@ -1002,12 +1010,22 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+    return market_surface_policy.unavailable_json(schema, str(record["locale"]))
+
+
 def render_page(
     record: dict[str, Any],
     modified: str,
     feed_title: str,
 ) -> str:
     locale = str(record["locale"])
+    available = market.validate_record(record)
+    store_action = (
+        f'<a class="button primary" rel="nofollow noopener" '
+        f'href="{html.escape(record["app_store_url"], quote=True)}">'
+        f'{html.escape(str(record["app_store_cta_label"]))}</a>'
+        if available else market.note_html(locale, str(record["app_name"]))
+    )
     icon = Path("stories") / "img" / f"{record['app_key']}-icon.jpg"
     icon_url = f"{SITE}/{icon.as_posix()}" if (PAGES / icon).is_file() else ""
     badge_html = "".join(
@@ -1038,7 +1056,7 @@ def render_page(
         include_hero_style=False,
         oembed_href=str(record["oembed_url"]),
     )
-    return public_email.render_html(f"""<!doctype html>
+    document = public_email.render_html(f"""<!doctype html>
 <html lang="{html.escape(locale)}" dir="{dir_attr}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="apple-itunes-app" content="app-id={html.escape(str(record["app_store_id"]), quote=True)}">
@@ -1202,13 +1220,14 @@ footer {{
 </section>
 <section class="card">
   <div class="actions">
-    <a class="button primary" rel="nofollow noopener" href="{html.escape(str(record["app_store_url"]), quote=True)}">{html.escape(str(record["app_store_cta_label"]))}</a>
+    {store_action}
     <a class="button" href="{html.escape(str(record["canonical_guide_url"]), quote=True)}">{html.escape(str(record["guide_cta_label"]))}</a>
   </div>
 </section>
 <footer class="card">{html.escape(str(record["publisher_disclosure"]))}</footer>
 </main></body></html>
 """)
+    return market_surface_policy.enforce_html(document, locale)
 
 
 def _markdown_text(value: Any) -> str:
@@ -1234,7 +1253,13 @@ def render_markdown(record: dict[str, Any], modified: str) -> str:
         "verified_live": bool(record["verified_live"]),
         "purchase_model": str(record["purchase_model"]),
         "publisher": "Lumi Studio",
+        **market.record_fields(str(record["locale"])),
     }
+    store_line = (
+        market.note(str(record["locale"]), str(record["app_name"]))
+        if market.is_unavailable(str(record["locale"]))
+        else f"[{app_store_label}]({record['app_store_url']})"
+    )
     metadata = "\n".join(
         f"{key}: {json.dumps(value, ensure_ascii=False)}"
         for key, value in frontmatter.items()
@@ -1244,7 +1269,7 @@ def render_markdown(record: dict[str, Any], modified: str) -> str:
         f"# {title}\n\n"
         f"{description}\n\n"
         f"{facts}\n\n"
-        f"[{app_store_label}]({record['app_store_url']})\n\n"
+        f"{store_line}\n\n"
         f"[{guide_label}]({record['canonical_guide_url']})\n\n"
         f"> {disclosure}\n"
     )

@@ -138,12 +138,35 @@
         "recordCount": {
           "type": "integer",
           "minimum": 1
+        },
+        "market_availability": {
+          "enum": [
+            {
+              "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+              "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+              "evidence": {
+                "source_url": "https://support.apple.com/en-us/118205",
+                "observed_at": "2026-09-12",
+                "country": "BD",
+                "apple_media_services_markets": 174,
+                "country_listed": false,
+                "lookup_app_results": 0,
+                "lookup_control_results": 0,
+                "redirect_market": "US"
+              },
+              "value": "N/A",
+              "content_retained": true,
+              "publishable": false,
+              "facts_allowed": false,
+              "outbox_count": 0
+            }
+          ]
         }
       }
     },
     "items": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "uniqueItems": true,
       "items": {
         "type": "object",
@@ -251,5 +274,44 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "language": {
+            "enum": [
+              "bn-BD"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "maxItems": 0
+          },
+          "_lumi_catalog": {
+            "required": [
+              "market_availability"
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "items": {
+            "minItems": 1
+          },
+          "_lumi_catalog": {
+            "not": {
+              "required": [
+                "market_availability"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
 }

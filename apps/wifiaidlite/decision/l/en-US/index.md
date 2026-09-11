@@ -2,7 +2,7 @@
 title: "how to tell if the wifi or the website is down free app"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/en-US/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-11",
-  "content_digest": "e0dccfb562b5d31cc80611621764f9f843ecea25ad20a2742c166fee39eac68b",
+  "content_digest": "266ac807a366a3a713ff9f5a251ae8ee35f9280a6aa44c2cc44340103cf9d3fb",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1480,48 +1480,6 @@
       }
     },
     {
-      "key": "tripplanet",
-      "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet 環球旅行",
-      "summary": "Trip Planet 幫助您的家人將旅行時刻變成每個人都可以分享的神奇任務。創建一次旅行，選擇智慧任務包，然後觀看您的旅程就像電影星雲中的發光星座一樣。每個人都會收到現實世界的小任務，而不是另一個清單：嘗試一種新食物，在機場勇敢地說聲謝謝，在博物館發現三種顏色，拍一張紀念照片，或幫忙收拾飯店行李。小任務。燦爛的笑容。",
-      "category": "kids",
-      "search_terms": [
-        "家庭旅行",
-        "旅行計劃",
-        "公路旅行",
-        "雜誌",
-        "冒險",
-        "使命",
-        "獎勵",
-        "假期",
-        "回憶",
-        "地圖",
-        "小孩 旅行"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": true,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tripplanet.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1,
-        "storefront_url": "https://apps.apple.com/tw/app/id6787193643"
-      }
-    },
-    {
       "key": "lumiweather",
       "app_store_id": "6779552704",
       "name": "Lumi天氣星球 親子出遊指數",
@@ -2413,6 +2371,48 @@
         "rating_value": 5.0,
         "rating_count": 2,
         "storefront_url": "https://apps.apple.com/tw/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Lumi Trip Planet 環球旅行",
+      "summary": "Trip Planet 幫助您的家人將旅行時刻變成每個人都可以分享的神奇任務。創建一次旅行，選擇智慧任務包，然後觀看您的旅程就像電影星雲中的發光星座一樣。每個人都會收到現實世界的小任務，而不是另一個清單：嘗試一種新食物，在機場勇敢地說聲謝謝，在博物館發現三種顏色，拍一張紀念照片，或幫忙收拾飯店行李。小任務。燦爛的笑容。",
+      "category": "kids",
+      "search_terms": [
+        "家庭旅行",
+        "旅行計劃",
+        "公路旅行",
+        "雜誌",
+        "冒險",
+        "使命",
+        "獎勵",
+        "假期",
+        "回憶",
+        "地圖",
+        "小孩 旅行"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tripplanet.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/tw/app/id6787193643"
       }
     },
     {

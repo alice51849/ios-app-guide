@@ -16,6 +16,8 @@ import hashlib
 import html
 from html.parser import HTMLParser
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path, PurePosixPath
 import re
@@ -46,6 +48,9 @@ SYNC_ENGINE_FILES = (
     Path("conversion_route_contract.py"),
     Path("data") / "high_intent_conversion_contracts_v1.json",
     Path("gen_store_attribution.py"),
+    Path("market_availability.py"),
+    Path("market_surface_policy.py"),
+    Path("gen_market_availability.py"),
     Path("official_locales.py"),
     Path("publish.py"),
     Path("sync_standard_site.py"),
@@ -952,6 +957,8 @@ def _campaign_url(
     intent_type: str,
     provider_token: str,
 ) -> str:
+    if market.is_unavailable(locale):
+        return None
     if not provider_token:
         raise ValueError(
             "A real Apple provider token is required; a partial campaign URL "
@@ -1168,6 +1175,7 @@ def _build_record(
         "publisher_disclosure": disclosure,
         "is_independent_review": False,
         "is_ranking": False,
+        **market.record_fields(locale),
     }
     if route.get("_conversion") is not None:
         record["store_label"] = UI[locale]["store"]
@@ -1294,7 +1302,7 @@ def build(
             "geo_learn",
         }
         and len(str(record["campaign_token"])) <= 30
-        for record in records
+        for record in records if not market.is_unavailable(str(record["locale"]))
     )
     gates = {
         "exact_release_cardinality": _gate(
@@ -1550,7 +1558,7 @@ def render_html(record: dict[str, Any]) -> str:
         f"<p>{html.escape(str(record['culture_route']))}</p>"
     )
     context = f"<p>{html.escape(str(record['culture_route']))}</p>" if hero else ""
-    bottom_cta = "" if hero else (
+    bottom_cta = market.note_html(str(record["locale"]), str(record["app_name"])) if market.is_unavailable(str(record["locale"])) else "" if hero else (
         f'<a class="cta" rel="noopener" href="{store_url}">{store_label}: {app_name}</a>'
     )
     conversion_style = """
@@ -1569,7 +1577,7 @@ display:inline-flex;align-items:center;padding:.65rem 1rem;font-weight:600}
 .conversion-proof figcaption{font-size:.9rem;margin-top:.5rem}
 """ if hero else ""
     body_class = ' class="conversion-route"' if hero else ""
-    return f"""<!doctype html>
+    document = f"""<!doctype html>
 <html lang="{language}">
 <head>
 <meta charset="utf-8">
@@ -1623,6 +1631,9 @@ footer{{margin-top:1rem;font-size:.92rem}}
 {conversion_metadata}</body>
 </html>
 """
+
+
+    return market_surface_policy.enforce_html(document, str(record["locale"]))
 
 
 def _json_text(value: object) -> str:
@@ -1821,7 +1832,10 @@ def _record_digest(record: dict[str, Any]) -> str:
 
 
 def render_feed(records: Iterable[dict[str, Any]]) -> str:
-    ordered = sorted(records, key=lambda item: str(item["route_id"]))
+    ordered = sorted(
+        (record for record in records if market.validate_record(record, url_fields=("app_store_url",))),
+        key=lambda item: str(item["route_id"]),
+    )
     document = {
         "version": "https://jsonfeed.org/version/1.1",
         "title": "Lumi Studio high-intent app decision routes",
@@ -2173,6 +2187,7 @@ def _expected_manifest(
             "app_key": record["app_key"],
             "app_store_id": record["app_store_id"],
             "app_store_url": record["app_store_url"],
+            **market.record_fields(str(record["locale"])),
             "locale": record["locale"],
             "intent_type": record["intent_type"],
             "campaign_token": record["campaign_token"],
@@ -2258,7 +2273,7 @@ def _rendered_outputs(
             ),
             "managed_owner": MANAGED_OWNER,
             "expected_route_pages": len(records),
-            "feed_items": len(records),
+            "feed_items": sum(not market.is_unavailable(str(record["locale"])) for record in records),
             "sitemap_urls": len(records),
             "fallback_records": report["coverage"]["fallback_records"],
             "abstained_pairs": report["coverage"]["abstained_pairs"],
@@ -2325,7 +2340,7 @@ def _validate_release_cardinality(
     output_by_path = _validated_managed_outputs(outputs)
     validated_route_paths: list[PurePosixPath] = []
     for position, route in enumerate(routes):
-        if not isinstance(route, dict) or set(route) != MANIFEST_ROUTE_FIELDS:
+        if not isinstance(route, dict) or set(route) != MANIFEST_ROUTE_FIELDS | set(market.record_fields(str(route.get("locale")))):
             raise ValueError(
                 f"High-intent route {position} fields differ from contract"
             )
@@ -2442,6 +2457,7 @@ def _validate_release_cardinality(
         campaign = str(route["campaign_token"])
         creative_id = str(route["creative_id"])
         output = output_by_path.get(relative)
+        available = market.validate_record(route, url_fields=("app_store_url",))
         parsed_store = urlsplit(str(route["app_store_url"]))
         store_parameters = parse_qsl(
             parsed_store.query,
@@ -2470,18 +2486,18 @@ def _validate_release_cardinality(
             or output is None
             or output.get("kind") != "route_html"
             or output.get("generated_sha256") != route["output_sha256"]
-            or [key for key, _ in store_parameters] != ["pt", "ct", "mt"]
-            or not store_parameters[0][1]
-            or store_parameters[1][1] != campaign
-            or store_parameters[2][1] != "8"
+            or (available and [key for key, _ in store_parameters] != ["pt", "ct", "mt"])
+            or (available and not store_parameters[0][1])
+            or (available and store_parameters[1][1] != campaign)
+            or (available and store_parameters[2][1] != "8")
         ):
             raise ValueError(
                 f"High-intent route {position} identity or attribution drifted"
             )
-        app_store_storefronts.validated_app_store_url(
-            str(route["app_store_url"]),
-            expected_app_id=app_id,
-        )
+        if available:
+            app_store_storefronts.validated_app_store_url(
+                str(route["app_store_url"]), expected_app_id=app_id,
+            )
         if app in app_ids and app_ids[app] != app_id:
             raise ValueError(f"High-intent App ID drifted across routes: {app}")
         if app in app_creatives and app_creatives[app] != creative_id:
@@ -2578,7 +2594,7 @@ def verify_production_closure(
         if isinstance(item, dict)
     }
     route_ids = {str(route["route_id"]) for route in routes}
-    if feed_ids != route_ids:
+    if feed_ids != {str(route["route_id"]) for route in routes if not market.is_unavailable(str(route["locale"]))}:
         raise ValueError("High-intent feed does not exactly cover managed routes")
 
     sitemap_text = (output_dir / SITEMAP_RELATIVE).read_text(encoding="utf-8")
@@ -2619,6 +2635,11 @@ def verify_production_closure(
                 page,
             )
         ]
+        if market.is_unavailable(str(route["locale"])):
+            market.validate_record(route, url_fields=("app_store_url",))
+            if ctas or "apps.apple.com" in page or market.market_state(str(route["locale"])) not in page or market.unavailable_reason(str(route["locale"])) not in page:
+                raise ValueError(f"Unavailable route is not a blocked content surface: {relative}")
+            continue
         if len(ctas) != 1:
             raise ValueError(f"Route must have exactly one direct CTA: {relative}")
         cta = ctas[0]

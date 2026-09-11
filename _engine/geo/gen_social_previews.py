@@ -8,6 +8,7 @@ from html.parser import HTMLParser
 import html
 from io import BytesIO
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import re
@@ -485,6 +486,20 @@ def _enrich_oembed_document(
 ) -> dict[str, object]:
     title = document.get("title")
     app_store_url = document.get("_lumi_app_store_url")
+    locale = str(document.get("_lumi_locale", ""))
+    if market.is_unavailable(locale):
+        market.validate_record(
+            {**document, "locale": locale, "app_store_url": app_store_url},
+            url_fields=("app_store_url",),
+        )
+        document.update({
+            "type": "rich",
+            "html": f'<img src="{html.escape(buyer_intent_url, quote=True)}" alt="{html.escape(str(title), quote=True)}">'
+                    + market.note_html(locale),
+            "width": OEMBED_SIZE[0], "height": OEMBED_SIZE[1],
+            "_lumi_buyer_intent_image_url": buyer_intent_url,
+        })
+        return document
     if not isinstance(title, str) or not title:
         raise ValueError("Rich oEmbed response has no title")
     if not isinstance(app_store_url, str) or not app_store_url:
@@ -519,7 +534,7 @@ def oembed_document(
 ) -> dict[str, object]:
     if source_kind not in {"guide", "decision"}:
         raise ValueError(f"Unsupported oEmbed source kind: {source_kind!r}")
-    campaign_store_url = _campaign_store_url(
+    campaign_store_url = None if market.is_unavailable(locale) else _campaign_store_url(
         store_url,
         _oembed_campaign(locale),
     )
@@ -538,8 +553,9 @@ def oembed_document(
         "_lumi_locale": locale,
         f"_lumi_{source_kind}_url": canonical,
         "_lumi_app_store_url": campaign_store_url,
+        **market.record_fields(locale),
     }
-    if storefront is not None:
+    if storefront is not None and not market.is_unavailable(locale):
         document.update(
             {
                 "_lumi_app_store_price": storefront["price"],

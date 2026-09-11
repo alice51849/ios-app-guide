@@ -38,6 +38,7 @@ import datetime as _dt
 import hashlib
 import io
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import html
@@ -206,6 +207,8 @@ def build_rows(pages: Path = PAGES) -> tuple[list[dict[str, Any]], str]:
         key=lambda item: (str(item["app_key"]), str(item["locale"])),
     ):
         locale = str(record["locale"])
+        if not market.validate_record(record):
+            continue
         app_key = str(record["app_key"])
         app_id = str(record["app_store_id"])
         country = LOCALE_STOREFRONTS[locale]
@@ -327,6 +330,10 @@ def index_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
         "app_count": len(apps),
         "locale_count": len(locales),
         "official_locale_count": len(OFFICIAL_LOCALES),
+        "blocked_markets": {
+            locale: market.record_fields(locale)["market_availability"]
+            for locale in market.UNAVAILABLE_MARKETS
+        },
         "locales": locales,
         "app_keys": apps,
         "fields": list(FEED_FIELDS),

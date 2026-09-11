@@ -6,7 +6,7 @@
   "name": "Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ്",
   "description": "ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്",
   "inLanguage": "ml-IN",
-  "dateModified": "2026-09-10",
+  "dateModified": "2026-09-11",
   "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1531,72 +1531,6 @@
     {
       "@type": "ListItem",
       "position": 24,
-      "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Trip Planet",
-        "description": "ചെറിയ കുട്ടികളുമായി യാത്ര ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് പാക്കിംഗ്, കാത്തിരിപ്പ്, പുതിയ സ്ഥലം കണ്ടെത്തൽ എന്നിവയെ അധിക സമ്മർദമാക്കാതെ സാഹസികയാത്രയുടെ ഭാഗമാക്കുന്ന പ്രവർത്തനങ്ങൾ വേണം. അതിനുവേണ്ടിയാണ് Lumi Trip Planet ഉണ്ടാക്കിയത്.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6787193643",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6787193643"
-          },
-          "name": "Lumi Trip Planet",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6787193643",
-          "inLanguage": "ml-IN",
-          "description": "ചെറിയ കുട്ടികളുമായി യാത്ര ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് പാക്കിംഗ്, കാത്തിരിപ്പ്, പുതിയ സ്ഥലം കണ്ടെത്തൽ എന്നിവയെ അധിക സമ്മർദമാക്കാതെ സാഹസികയാത്രയുടെ ഭാഗമാക്കുന്ന പ്രവർത്തനങ്ങൾ വേണം. അതിനുവേണ്ടിയാണ് Lumi Trip Planet ഉണ്ടാക്കിയത്.",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-tripplanet"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "IN"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 25,
       "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 25,
       "url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 26,
       "url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2560,6 +2494,72 @@
           "description": "ഒരു കോൾ കഴിഞ്ഞ് നിങ്ങൾക്ക് ഒരു കച്ചവട ട്രാൻസ്ക്രിപ്റ്റ് വേണ്ട, സംഗ്രഹവും പ്രവർത്തന കാര്യങ്ങളും, ഡ്രാഫ്റ്റ് ഫോളോ-അപ്പും വേണം. ഈ വിടവാണ് Sono Note നികത്താൻ ശ്രമിക്കുന്നത്.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-sononote"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "ചെറിയ കുട്ടികളുമായി യാത്ര ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് പാക്കിംഗ്, കാത്തിരിപ്പ്, പുതിയ സ്ഥലം കണ്ടെത്തൽ എന്നിവയെ അധിക സമ്മർദമാക്കാതെ സാഹസികയാത്രയുടെ ഭാഗമാക്കുന്ന പ്രവർത്തനങ്ങൾ വേണം. അതിനുവേണ്ടിയാണ് Trip Planet: Kids Quest ഉണ്ടാക്കിയത്.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "ml-IN",
+          "description": "ചെറിയ കുട്ടികളുമായി യാത്ര ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് പാക്കിംഗ്, കാത്തിരിപ്പ്, പുതിയ സ്ഥലം കണ്ടെത്തൽ എന്നിവയെ അധിക സമ്മർദമാക്കാതെ സാഹസികയാത്രയുടെ ഭാഗമാക്കുന്ന പ്രവർത്തനങ്ങൾ വേണം. അതിനുവേണ്ടിയാണ് Trip Planet: Kids Quest ഉണ്ടാക്കിയത്.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {

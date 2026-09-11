@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import re
@@ -149,6 +150,8 @@ def validate_dataset(payload: dict[str, object]) -> list[dict[str, Any]]:
             )
         record = dict(raw)
         for field in TEXT_FIELDS:
+            if market.is_unavailable(record.get("locale")) and field in {"canonical_app_store_url", "app_store_url"}:
+                continue
             record[field] = _single_line(record[field], field)
         locale = record.get("locale")
         if not isinstance(locale, str) or locale not in OFFICIAL_LOCALES:
@@ -178,10 +181,12 @@ def validate_dataset(payload: dict[str, object]) -> list[dict[str, Any]]:
         if previous_app_id != app_id:
             raise ValueError(f"App Store ID changed within catalog: {key}")
         canonical_store = f"https://apps.apple.com/app/id{app_id}"
-        if record["canonical_app_store_url"] != canonical_store:
+        available = market.validate_record(record)
+        if available and record["canonical_app_store_url"] != canonical_store:
             raise ValueError(f"Wrong canonical App Store URL: {key}/{locale}")
         _validate_guide_url(record["canonical_guide_url"], locale, key)
-        validated_app_store_url(record["app_store_url"], app_id)
+        if available:
+            validated_app_store_url(record["app_store_url"], app_id)
         pairs.add(pair)
         validated.append(record)
 
@@ -206,7 +211,9 @@ def campaign_token(locale: str) -> str:
     return surface_campaign_token("apps/README.md")
 
 
-def github_store_url(record: dict[str, Any]) -> str:
+def github_store_url(record: dict[str, Any]) -> str | None:
+    if not market.validate_record(record, url_fields=("app_store_url",)):
+        return None
     return required_campaign_app_store_url(
         record["app_store_url"],
         campaign_token(record["locale"]),
@@ -304,7 +311,7 @@ def _render_readme(
                         ui["Guide"],
                         record["canonical_guide_url"],
                     ),
-                    _markdown_link(
+                    "N/A" if market.is_unavailable(locale) else _markdown_link(
                         record["app_store_cta_label"],
                         github_store_url(record),
                     ),
@@ -320,6 +327,7 @@ def _render_readme(
         f"# {_markdown_text(ui[catalog.NAME])}",
         "",
         _markdown_text(ui[catalog.DESCRIPTION]),
+        *([market.note(locale), "market_availability: " + json.dumps(market.record_fields(locale)["market_availability"], ensure_ascii=False)] if market.is_unavailable(locale) else []),
         "",
         _markdown_text(ui[catalog.LEAD]),
         "",

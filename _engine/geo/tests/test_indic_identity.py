@@ -17,6 +17,7 @@ from external_app_identity import (
 )
 from regen_indic_identity import STORE_URL, path_locale, repair_document, repair_text
 from app_store_storefronts import LOCALE_STOREFRONTS
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 
 
 class _PageIdentity(HTMLParser):
@@ -51,9 +52,7 @@ class IndicIdentityTests(unittest.TestCase):
                 availability={"in": frozenset({TRIP_PLANET_ID})},
                 app_id=TRIP_PLANET_ID,
             )
-            self.assertEqual(
-                urlsplit(result).path, f"/bd/app/id{TRIP_PLANET_ID}"
-            )
+            self.assertIsNone(result)
         with self.assertRaises(ValueError):
             attribution.final_store_url(
                 f"https://apps.apple.com/xx/app/id{TRIP_PLANET_ID}",
@@ -71,23 +70,42 @@ class IndicIdentityTests(unittest.TestCase):
         import gen_app_store_qr_ctas as qr
 
         pages = Path(os.environ.get("GEO_PAGES", Path(__file__).resolve().parents[1] / "pages"))
-        checked = 0
+        primary = list((pages / "bn-BD").glob("*.html"))
+        self.assertEqual(len(primary), 51)
+        apps = json.loads((pages / "data/verified-ios-app-finder-catalog.json").read_text())["apps"]
+        self.assertEqual(len(apps), 47)
         for path in (pages / "bn-BD").rglob("*.html"):
-            source = path.read_text()
-            link = attribution.QR_CARD_LINK_RE.search(source)
-            if link is None:
-                continue
             with self.subTest(page=str(path)):
-                self.assertIsNone(attribution.qr_card_desync(source))
-                image = attribution.QR_CARD_IMAGE_RE.search(source)
-                href = html.unescape(link["href"])
-                self.assertIn("apps.apple.com/bd/app/", href)
-                asset = pages / qr.qr_asset_relative(image["app"], href)
-                svg = asset.read_text()
-                self.assertEqual(ET.fromstring(svg).find("{http://www.w3.org/2000/svg}desc").text, href)
-                self.assertEqual(svg, qr.qr_svg(image["app"], href))
-                checked += 1
-        self.assertGreaterEqual(checked, 146)
+                source = path.read_text()
+                assert_blocked_page(self, source)
+                self.assertIsNone(attribution.QR_CARD_LINK_RE.search(source))
+                self.assertIsNone(attribution.QR_CARD_IMAGE_RE.search(source))
+        self.assertEqual(sum(
+            (pages / "bn-BD" / f"{app['key']}.html").read_text().count('class="market-availability"')
+            for app in apps
+        ), 47)
+        for locale in (locale for locale in INDIC_LOCALES if locale != "bn-BD"):
+            checked = 0
+            primary_ids = set()
+            for path in (pages / locale).rglob("*.html"):
+                source = path.read_text()
+                link = attribution.QR_CARD_LINK_RE.search(source)
+                if link is None:
+                    continue
+                with self.subTest(locale=locale, page=str(path)):
+                    self.assertIsNone(attribution.qr_card_desync(source))
+                    image = attribution.QR_CARD_IMAGE_RE.search(source)
+                    self.assertIsNotNone(image)
+                    href = html.unescape(link["href"])
+                    asset = pages / qr.qr_asset_relative(image["app"], href)
+                    svg = asset.read_text()
+                    self.assertEqual(ET.fromstring(svg).find("{http://www.w3.org/2000/svg}desc").text, href)
+                    self.assertEqual(svg, qr.qr_svg(image["app"], href))
+                    if path.parent == pages / locale:
+                        primary_ids.add(image["app"])
+                    checked += 1
+            self.assertEqual(primary_ids, {str(app["app_store_id"]) for app in apps}, locale)
+            self.assertGreaterEqual(checked, len(primary_ids), locale)
 
     def test_api_feed_identity_changes_advance_only_the_changed_timestamp(self):
         import portfolio_app_catalog_api as api
@@ -95,18 +113,18 @@ class IndicIdentityTests(unittest.TestCase):
         app = {
             "app_store_id": TRIP_PLANET_ID,
             "name": TRIP_PLANET_NAME,
-            "guide_url": f"https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
-            "app_store_url": f"https://apps.apple.com/bd/app/id{TRIP_PLANET_ID}",
+            "guide_url": f"https://open.cait518.cc/ios-app-guide/hi/tripplanet.html",
+            "app_store_url": f"https://apps.apple.com/in/app/id{TRIP_PLANET_ID}",
             "summary": "ভ্রমণে শিশুদের সঙ্গে মজার ছোট কাজ।",
             "search_terms": ["ভ্রমণ"],
         }
-        first = api.feed_payload("bn-BD", "Apps", [app], "2026-09-10", "a" * 64, timestamp="2026-09-10T00:00:00Z")
+        first = api.feed_payload("hi", "Apps", [app], "2026-09-10", "a" * 64, timestamp="2026-09-10T00:00:00Z")
         previous = first["items"]
         previous[0]["title"] = "Lumi Trip Planet"
-        second = api.feed_payload("bn-BD", "Apps", [app], "2026-09-11", "b" * 64, previous_items=previous, timestamp="2026-09-11T00:00:00Z")
+        second = api.feed_payload("hi", "Apps", [app], "2026-09-11", "b" * 64, previous_items=previous, timestamp="2026-09-11T00:00:00Z")
         self.assertEqual(second["items"][0]["date_modified"], "2026-09-11T00:00:00Z")
-        self.assertEqual(second["items"][0]["id"], f"https://apps.apple.com/bd/app/id{TRIP_PLANET_ID}")
-        third = api.feed_payload("bn-BD", "Apps", [app], "2026-09-11", "b" * 64, previous_items=second["items"], timestamp="2026-09-11T01:00:00Z")
+        self.assertEqual(second["items"][0]["id"], f"https://apps.apple.com/app/id{TRIP_PLANET_ID}")
+        third = api.feed_payload("hi", "Apps", [app], "2026-09-11", "b" * 64, previous_items=second["items"], timestamp="2026-09-11T01:00:00Z")
         self.assertEqual(second["items"], third["items"])
 
     def test_47_by_10_geo_owned_feed_cta_storefront_app_id_and_brand(self):
@@ -131,6 +149,30 @@ class IndicIdentityTests(unittest.TestCase):
         for key, app_id in apps.items():
             for locale in INDIC_LOCALES:
                 with self.subTest(app=key, locale=locale):
+                    if locale == "bn-BD":
+                        record = owned[(key, locale)]
+                        self.assertEqual(record["app_store_id"], app_id)
+                        assert_blocked_record(self, record)
+                        self.assertEqual(api_feeds[locale]["items"], [])
+                        self.assertEqual(api_feeds[locale]["_lumi_catalog"]["market_availability"]["outbox_count"], 0)
+                        for relative in (f"{locale}/{key}.html", f"apps/{key}/decision/l/{locale}/index.html"):
+                            source = (pages / relative).read_text()
+                            assert_blocked_page(self, source)
+                            parsed = _PageIdentity(source)
+                            self.assertEqual(parsed.locale, locale)
+                            self.assertEqual(len(parsed.canonicals), 1)
+                            self.assertTrue(urlsplit(parsed.canonicals[0]).path.endswith("/" + relative))
+                            self.assertFalse({"gu", "kn", "ml"} & set(parsed.hreflangs))
+                            if key == "tripplanet":
+                                self.assertIn(TRIP_PLANET_NAME, source)
+                                self.assertNotIn("Lumi Trip Planet", source)
+                                self.assertEqual(record["app_name"], TRIP_PLANET_NAME)
+                        for feed in feeds[locale]:
+                            self.assertNotIn("apps.apple.com", feed)
+                            self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", feed)
+                            self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", feed)
+                        checked += 1
+                        continue
                     expected_store = f"https://apps.apple.com/{LOCALE_STOREFRONTS[locale]}/app/id{app_id}"
                     record = owned[(key, locale)]
                     self.assertEqual(record["app_store_id"], app_id)
@@ -237,9 +279,9 @@ class IndicIdentityTests(unittest.TestCase):
             "?pt=118326163&ct=geo_pick&mt=8"
         )
         result = repair_text(source, "bn-BD", {TRIP_PLANET_ID})
-        self.assertEqual(
-            result, source.replace("/in/app/kids/", "/bd/app/")
-        )
+        self.assertEqual(result, "মূল্য ₹299 বা ৳৫৯৯। ")
+        self.assertNotIn("?pt=", result)
+        self.assertEqual(repair_text(source, "hi", {TRIP_PLANET_ID}), source)
         self.assertEqual(repair_text(result, "bn-BD", {TRIP_PLANET_ID}), result)
 
     def test_headline_repair_is_idempotent_and_does_not_extend_complete_words(self):
@@ -261,8 +303,11 @@ class IndicIdentityTests(unittest.TestCase):
             "canonical_app_store_url": f"https://apps.apple.com/app/id{TRIP_PLANET_ID}",
         }
         result = repair_document(record, {TRIP_PLANET_ID})
-        self.assertEqual(result["storefront_facts"], facts)
-        self.assertIn("/bd/", result["canonical_app_store_url"])
+        self.assertNotIn("storefront_facts", result)
+        assert_blocked_record(self, result, ("canonical_app_store_url",))
+        self.assertEqual(record["storefront_facts"], facts)
+        self.assertEqual(facts["currency"], "INR")
+        self.assertEqual(facts["formatted_price"], "₹299")
 
     def test_product_locale_detection_never_introduces_bare_codes(self):
         for locale in INDIC_LOCALES:

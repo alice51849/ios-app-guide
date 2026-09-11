@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import re
@@ -192,14 +193,11 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                 site=site,
             )
 
-            self.assertEqual(1, stats["fallbacks"])
-            self.assertEqual(
-                f"https://apps.apple.com/app/id{app_id}"
-                "?pt=123456789&ct=geo_pick&mt=8",
-                _payload(path.read_text(encoding="utf-8"))[
-                    "app_store_url"
-                ],
-            )
+            self.assertEqual(0, stats["fallbacks"])
+            self.assertEqual(0, stats["localized_storefronts"])
+            self.assertEqual(0, stats["storefront_facts"])
+            assert_blocked_page(self, path.read_text())
+            assert_blocked_record(self, _payload(path.read_text()), ("app_store_url",))
 
     def test_missing_locale_page_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -275,6 +273,10 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                         str(APPS[key]["name"]),
                         payload["app_name"],
                     )
+                    if locale == "bn-BD":
+                        assert_blocked_page(self, source)
+                        assert_blocked_record(self, payload, ("app_store_url",))
+                        continue
                     validated_app_store_url(
                         payload["app_store_url"],
                         str(APPSTORE[key]), expected_locale=locale, require_campaign=True,

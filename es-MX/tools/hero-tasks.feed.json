@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Compara varias compras con tu ingreso neto por hora y descarga tu CSV. Total = cantidad × precio final. Horas = total ÷ ingreso neto por hora. Jornadas = horas ÷ horas por jornada. Incluye los impuestos en los precios. Sin conversión de monedas, cálculo de nómina, pronósticos de ahorro ni consejos de compra. Se muestran dos decimales; los totales usan valores sin redondear.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/purchase-worktime-sheet.html",
       "language": "es-MX",
       "title": "Comparar compras en horas de trabajo",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Anota cuándo hiciste por última vez cada tarea de la casa, el auto o tu salud y cada cuánto se repite: obtendrás la próxima fecha, los días que faltan y lo atrasado en una hoja descargable. Próximo vencimiento = última vez + intervalo. En meses se conserva el mismo día; si no existe, se usa el último día del mes (incluidos años bisiestos). Días restantes = vencimiento − hoy. Atrasada si es menor que 0; próxima de 0 a 7. Intervalos de 1 a 3650 días, semanas o meses. Fechas entre 1900-01-01 y 2999-12-31. Hasta 30 tareas. Sin recordatorios, notificaciones ni sincronización con el calendario; nada sale de esta página.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/maintenance-next-due-sheet.html",
       "language": "es-MX",
       "title": "Hoja de próximos vencimientos de mantenimiento",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Anota lo que un proyecto freelance o un trabajo pequeño generó y costó, y descarga una hoja con la utilidad bruta, el margen y el neto por hora. Utilidad = total de ingresos − total de gastos. Margen = utilidad ÷ total de ingresos. Neto por hora = utilidad ÷ horas dedicadas. Los montos se suman en centavos enteros, así que los totales no se desvían. Montos de 0 a 100,000,000 con máximo dos decimales, hasta 20 filas de ingresos y 20 de gastos, horas de 0.25 a 2000 en cuartos de hora. Misma moneda, sin conversión, sin asesoría fiscal ni contable.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/project-profit-sheet.html",
       "language": "es-MX",
       "title": "Hoja de ganancia del proyecto",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Escribe la capacidad máxima que muestra Configuración en tu iPhone y, si lo tienes, el número de ciclos, y descarga una hoja con el rango de desgaste mensual y los meses que faltan para llegar al 80 %: siempre un rango, nunca una calificación. Desgaste al mes = (100 − capacidad) ÷ antigüedad en meses, mostrado con una banda de ±25 %. Meses para 80 % = (capacidad − 80) ÷ desgaste; límite bajo con la tasa alta y límite alto con la tasa baja. Ciclos al mes = ciclos ÷ antigüedad. Capacidad de 60 a 100 en porcentaje entero, ciclos de 0 a 3000, mes de compra entre 2007 y 2099 con antigüedad de 1 a 240 meses, hasta 10 dispositivos. Meses en formato AAAA-MM. Los datos se quedan en esta pestaña; no se mide ni se lee nada de tu teléfono.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/battery-wear-range-sheet.html",
       "language": "es-MX",
       "title": "Rango de desgaste de batería",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Anota lo que en tu casa hacen en línea al mismo tiempo y cuántos dispositivos lo hacen, y descarga una tabla con los Mbps que necesitas y el margen que le queda a tu plan. Total por fila = dispositivos × valor por dispositivo. Necesario = suma de las filas. Margen = plan − necesario; abajo del 20 % del plan está apretado, abajo de cero no alcanza. Se suman décimas de Mbps enteras, los totales nunca se desfasan. Velocidades del plan de 0.5 a 10000 Mbps con máximo un decimal, de 1 a 50 dispositivos por fila, hasta 20 filas. La cobertura Wi‑Fi, la latencia y la velocidad real que entrega tu proveedor quedan fuera de esta tabla.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/bandwidth-need-sheet.html",
       "language": "es-MX",
       "title": "Ancho de banda para tu casa",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Anota el presupuesto total del viaje, los días, los viajeros y los gastos que ya conoces, y descarga una tabla con lo que puede gastar cada persona al día y cómo se reparte entre comida, transporte, boletos y compras. Disponible = presupuesto total − gastos fijos. Por día = disponible ÷ días. Por persona al día = por día ÷ viajeros. Cada categoría = por día × su porcentaje. Los montos se suman en centavos enteros; las cifras diarias solo se redondean al mostrarse. Montos de 0 a 100,000,000 con máximo dos decimales, de 1 a 120 días, de 1 a 20 viajeros, hasta 15 gastos fijos y cuatro porcentajes que sumen exactamente 100. La misma moneda en todo, sin tipo de cambio, sin consejos de precio ni de reservación.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/trip-budget-sheet.html",
       "language": "es-MX",
       "title": "Presupuesto de viaje por día",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Anota los lugares de un día con el tiempo que te quedarás en cada uno y lo que se hace al siguiente, y descarga una tabla con horas de llegada y salida que dice si todo cabe entre tu inicio y tu final. Llegada = salida anterior + traslado. Salida = llegada + estancia. Total = todas las estancias + todos los traslados. Disponible = fin − inicio; un fin anterior al inicio cuenta como el día siguiente. Exceso = total − disponible; arriba de cero se pasa. Aritmética simple en minutos, sin zonas horarias. Horas en formato de 24 h HH:MM, estancias de 5 a 720 minutos, traslados de 0 a 600 minutos, hasta 25 lugares. Horarios, tráfico real, mapas, rutas y reservaciones quedan fuera de esta tabla.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/day-itinerary-sheet.html",
       "language": "es-MX",
       "title": "Hoja de horarios de un día",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Convierte notas de junta desordenadas en un esquema de una página: un titular, de tres a doce puntos clave, una siguiente acción y una métrica opcional, y descárgalo como tabla para pegar en una diapositiva o un resumen. La tabla conserva tus palabras tal cual: titular, luego los puntos en el orden en que los escribiste, después la siguiente acción y al final la métrica. Cuenta los puntos y quita los espacios de los extremos; no reescribe, resume ni califica nada. Titular de hasta 80 caracteres, de 3 a 12 puntos de hasta 160 caracteres cada uno, siguiente acción de hasta 160 caracteres, métrica de hasta 60 caracteres. Cada línea debe ser texto de una sola línea. La tabla no lee archivos, grabaciones ni calendarios.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/one-page-outline-sheet.html",
       "language": "es-MX",
       "title": "Notas de junta en una página",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Anota lo que pidió cada persona, agrega el porcentaje de impuesto y de propina, y verás cuánto le toca pagar a cada quien. El impuesto y la propina se reparten al centavo según lo que pidió cada uno, y la hoja se descarga en CSV. Subtotal = todo lo que se pidió, sumado. Impuesto = subtotal × porcentaje de impuesto. Propina = subtotal × porcentaje de propina. La parte de cada quien es lo suyo ÷ subtotal; los centavos que sobran se dan primero a los decimales más altos, así que la suma de las partes da exactamente la cuenta. Usa una sola moneda y captura impuesto y propina como porcentaje del subtotal. No hay conversión de divisas, ni reglas de servicio incluido, ni sugerencias de cuánto dejar de propina, ni cobros. En pantalla se redondea a dos decimales; el reparto se calcula en centavos enteros.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/bill-split-sheet.html",
       "language": "es-MX",
       "title": "Dividir la cuenta",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Anota lo que guardaste y cuánto tarda cada cosa, pon los minutos que de verdad lees al día y verás qué día terminas cada una. El plan se descarga en CSV. Acumulado = los minutos de este elemento más todo lo de arriba. Día = acumulado ÷ minutos al día, redondeado hacia arriba. Terminado el = fecha de inicio + día − 1. Minutos libres = días × minutos al día − minutos en total. El orden en que capturas es el orden en que lees: nada se reordena, se brinca ni se junta. Una sesión al día que usa justo tu tiempo, sin días de descanso, sin abrir ni descargar ningún enlace y sin estimar tu velocidad de lectura.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/reading-backlog-sheet.html",
       "language": "es-MX",
       "title": "Plan para «leer después»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Escribe la fecha en que hiciste cada apunte y verás las cinco fechas de repaso que siguen, con los días que faltan y las que ya se pasaron. El calendario se descarga en CSV. Fecha de repaso = fecha en que se escribió + 1, 3, 7, 16 y 35 días. Días que faltan = fecha de repaso − hoy; un número negativo es una fecha que ya pasó. Siguiente repaso = la primera fecha que cae hoy o después. Es una escalera de intervalos fija, no un modelo de memoria: aquí nada predice lo que vas a recordar, ni califica un apunte, ni revisa respuestas. Solo fechas, sin horas, sin zonas horarias, sin recordatorios ni notificaciones.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/es-MX/tools/review-schedule-sheet.html",
       "language": "es-MX",
       "title": "Calendario de repaso",

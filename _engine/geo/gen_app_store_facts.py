@@ -6,6 +6,8 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import market_availability as market
+import market_surface_policy
 from pathlib import Path
 import re
 from typing import Any
@@ -335,6 +337,13 @@ def generate(
             canonical_store = (
                 gen_mobile_app_identity.canonical_store_url(app_id)
             )
+            if market.is_unavailable(locale):
+                source = path.read_text(encoding="utf-8")
+                updated = market_surface_policy.enforce_html(source, locale, app_id=app_id)
+                if updated != source:
+                    path.write_text(updated, encoding="utf-8")
+                    changed += 1
+                continue
             store_url = verified_app_store_url(
                 canonical_store,
                 locale,

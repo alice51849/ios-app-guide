@@ -5,6 +5,9 @@ import csv
 import html
 import io
 import json
+import market_availability as market
+import market_surface_policy
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import re
@@ -138,6 +141,8 @@ class HeroTaskTests(unittest.TestCase):
                     f'<p>Preserve this original page: {locale}/{key}.</p></section>\n'
                     '</main></div></div></body></html>'
                 )
+                if locale == "bn-BD":
+                    source = market_surface_policy.enforce_html(source, locale)
                 path.write_text(source, encoding="utf-8")
                 self.original_pages[relative] = source
                 home_links.append(f'<a href="{self.site}/{relative}">{key}</a>')
@@ -146,8 +151,9 @@ class HeroTaskTests(unittest.TestCase):
                     "app_name": key, "verified_live": True,
                     "source_persona_query": hero.task_for_app(self.tasks, key)["evidence"]["intent_queries"][key],
                     "canonical_guide_url": f"{self.site}/{relative}",
-                    "app_store_url": f"https://apps.apple.com/us/app/id{app['app_store_id']}",
+                    "app_store_url": None if locale == "bn-BD" else f"https://apps.apple.com/us/app/id{app['app_store_id']}",
                     "app_store_cta_label": f"App Store · {key}",
+                    **market.record_fields(locale),
                 })
             self.navigation_page(
                 f"{locale}/index.html", locale, "".join(home_links), title="Existing app catalogue"
@@ -329,7 +335,8 @@ class HeroTaskTests(unittest.TestCase):
         for relative, original in self.original_indexes.items():
             updated = (self.pages / relative).read_text()
             with self.subTest(relative=relative):
-                self.assertEqual(original, without_resource(updated, hero.MARKER))
+                expected = market_surface_policy.enforce_html(original, "bn-BD") if relative.startswith("bn-BD/") else original
+                self.assertEqual(expected, without_resource(updated, hero.MARKER))
                 self.assertEqual(original.split("</head>")[0], updated.split("</head>")[0])
                 self.assertEqual(1, updated.count(f"<!-- {hero.MARKER}:start -->"))
                 self.assertLess(updated.index("</h1>"), updated.index(f"<!-- {hero.MARKER}:start -->"))
@@ -377,7 +384,11 @@ class HeroTaskTests(unittest.TestCase):
                 self.assertEqual(original, without_resource(updated, hero.MARKER))
                 self.assertLess(updated.index('id="primary-heading"'), marker)
                 self.assertLess(updated.index('id="primary-summary"'), marker)
-                self.assertLess(updated.index("</a>", updated.index('id="primary-cta"')), marker)
+                if relative.startswith("bn-BD/"):
+                    assert_blocked_page(self, updated)
+                    self.assertLess(updated.index('class="market-availability"'), marker)
+                else:
+                    self.assertLess(updated.index("</a>", updated.index('id="primary-cta"')), marker)
                 if "<!-- app-decision-card:end -->" in updated:
                     self.assertLess(updated.index("<!-- app-decision-card:end -->"), marker)
                 tree = Document(updated)
@@ -425,8 +436,12 @@ class HeroTaskTests(unittest.TestCase):
                 self.assertEqual(1, len(resources))
                 resource = resources[0]
                 self.assertLess(heading.end, resource.start)
-                store = next(node for node in tree.nodes if node.tag == "a" and node.start > heading.end
-                             and (node.attrs.get("href") or "").startswith("https://apps.apple.com/"))
+                if relative.startswith("bn-BD/"):
+                    assert_blocked_page(self, source)
+                    store = next(node for node in tree.nodes if "market-availability" in node.classes)
+                else:
+                    store = next(node for node in tree.nodes if node.tag == "a" and node.start > heading.end
+                                 and (node.attrs.get("href") or "").startswith("https://apps.apple.com/"))
                 self.assertLess(store.end, resource.start)
                 for node in tree.nodes:
                     if "p-summary" in node.classes and node.start < store.start:
@@ -1505,17 +1520,30 @@ class HeroTaskTests(unittest.TestCase):
                 self.assertNotIn("noindex", document)
                 feed = json.loads((self.pages / hero.feed_path(locale)).read_text())
                 self.assertEqual(locale, feed["language"])
-                self.assertIn("pt=118326163&ct=geo_learn&mt=8", json.dumps(feed))
+                task_index = next(i for i, task in enumerate(self.tasks) if task["id"] == record["task_id"])
+                expected_apps = len(self.tasks[task_index]["apps"])
+                expected_title = hero.task_copy(self.copy, self.task_copies, self.tasks[task_index], locale)["title"]
+                if locale == "bn-BD":
+                    assert_blocked_page(self, document)
+                    self.assertEqual(feed["items"], [])
+                    self.assertEqual(feed["market_availability"]["outbox_count"], 0)
+                    self.assertEqual(len(record["apps"]), expected_apps)
+                    for app in record["apps"]:
+                        assert_blocked_record(self, app, ("app_store_url",))
+                else:
+                    self.assertIn("pt=118326163&ct=geo_learn&mt=8", json.dumps(feed))
+                    item = feed["items"][task_index]
+                    self.assertEqual(record["url"], item["id"])
+                    self.assertEqual(expected_title, item["title"])
+                    self.assertEqual(expected_apps, len(item["_hero_task"]["optional_apps"]))
                 if record["task_id"] == "purchase-worktime":
                     self.assertIn(self.copy[locale]["formula"], document)
                     self.assertIn("300.00", document)
                     self.assertIn("15.00", document)
                     self.assertIn("1.88", document)
-                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 2, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     example = (self.pages / hero.example_path(self.tasks[0], locale)).read_text()
                     self.assertIn(self.copy[locale]["item"], example)
-                    self.assertEqual(record["url"], feed["items"][0]["id"])
-                    self.assertEqual(2, len(feed["items"][0]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "project-profit":
                     own = hero.task_copy(self.copy, self.task_copies, profit, locale)
                     self.assertIn(own["formula"], document)
@@ -1523,14 +1551,11 @@ class HeroTaskTests(unittest.TestCase):
                     for value in ("1500.00", "400.39", "1099.61", "73.3%", "87.97"):
                         self.assertIn(value, document)
                     self.assertIn('id="profit-rows"', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6801956402", document)
                     example = (self.pages / hero.example_path(profit, locale)).read_text()
                     self.assertIn(own["profit"], example)
                     self.assertIn("1099.61", example)
-                    self.assertEqual(record["url"], feed["items"][2]["id"])
-                    self.assertEqual(own["title"], feed["items"][2]["title"])
-                    self.assertEqual(1, len(feed["items"][2]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "battery-wear":
                     own = hero.task_copy(self.copy, self.task_copies, battery, locale)
                     self.assertIn(own["formula"], document)
@@ -1542,7 +1567,7 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="soonest-80" dir="ltr">' + own["at_or_below_80"], document)
                     self.assertIn('id="lowest-capacity">79<', document)
                     self.assertIn('id="device-count">3<', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6802423998", document)
                     example = (self.pages / hero.example_path(battery, locale)).read_text()
                     self.assertIn(own["marker_provided"], example)
@@ -1551,9 +1576,6 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn(own["at_or_below_80"], example)
                     if locale == "en-US":
                         self.assertNotIn("score", example.lower())
-                    self.assertEqual(record["url"], feed["items"][3]["id"])
-                    self.assertEqual(own["title"], feed["items"][3]["title"])
-                    self.assertEqual(1, len(feed["items"][3]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "bandwidth-need":
                     own = hero.task_copy(self.copy, self.task_copies, bandwidth, locale)
                     self.assertIn(own["formula"], document)
@@ -1565,14 +1587,11 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="status-total" data-status="ok"', document)
                     # The free door (WiFi Aid Lite) is listed before the paid sibling.
                     self.assertLess(document.index("id6793414462"), document.index("id6790467886"))
-                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 2, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     example = (self.pages / hero.example_path(bandwidth, locale)).read_text()
                     self.assertIn(own["status_ok"], example)
                     self.assertIn("25.0", example)
                     self.assertIn(own["activity_video_call"], example)
-                    self.assertEqual(record["url"], feed["items"][4]["id"])
-                    self.assertEqual(own["title"], feed["items"][4]["title"])
-                    self.assertEqual(2, len(feed["items"][4]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "trip-budget":
                     own = hero.task_copy(self.copy, self.task_copies, trip, locale)
                     self.assertIn(own["formula"], document)
@@ -1583,14 +1602,11 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="share-food"', document)
                     # The free door (G+Money Lite) is listed before the paid sibling.
                     self.assertLess(document.index("id6793436548"), document.index("id6755782939"))
-                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 2, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     example = (self.pages / hero.example_path(trip, locale)).read_text()
                     self.assertIn(own["variable"], example)
                     self.assertIn("124.95", example)
                     self.assertIn("40%", example)
-                    self.assertEqual(record["url"], feed["items"][5]["id"])
-                    self.assertEqual(own["title"], feed["items"][5]["title"])
-                    self.assertEqual(2, len(feed["items"][5]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "day-itinerary":
                     own = hero.task_copy(self.copy, self.task_copies, itinerary, locale)
                     self.assertIn(own["formula"], document)
@@ -1601,14 +1617,11 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="status-total" data-status="fits"', document)
                     # The free door (TripBee Lite) is listed before the paid sibling.
                     self.assertLess(document.index("id6791299610"), document.index("id6787754435"))
-                    self.assertEqual(2, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 2, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     example = (self.pages / hero.example_path(itinerary, locale)).read_text()
                     self.assertIn(own["status_fits"], example)
                     self.assertIn("13:05", example)
                     self.assertIn(own["place"] + " 1", example)
-                    self.assertEqual(record["url"], feed["items"][6]["id"])
-                    self.assertEqual(own["title"], feed["items"][6]["title"])
-                    self.assertEqual(2, len(feed["items"][6]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "one-page-outline":
                     own = hero.task_copy(self.copy, self.task_copies, outline, locale)
                     self.assertIn(own["formula"], document)
@@ -1621,15 +1634,12 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="point-rows"', document)
                     self.assertIn('id="preview-headline"', document)
                     self.assertIn('id="point-count">3<', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6798814385", document)
                     example = (self.pages / hero.example_path(outline, locale)).read_text()
                     self.assertIn(own["headline"], example)
                     self.assertIn(own["example_action"], example)
                     self.assertIn(own["example_metric"], example)
-                    self.assertEqual(record["url"], feed["items"][7]["id"])
-                    self.assertEqual(own["title"], feed["items"][7]["title"])
-                    self.assertEqual(1, len(feed["items"][7]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "bill-split":
                     own = hero.task_copy(self.copy, self.task_copies, split, locale)
                     self.assertIn(own["formula"], document)
@@ -1638,14 +1648,11 @@ class HeroTaskTests(unittest.TestCase):
                         self.assertIn(html.escape(value), document)
                     self.assertIn('id="split-rows"', document)
                     self.assertIn('id="grand-total-value">94.04<', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6794178671", document)
                     example = (self.pages / hero.example_path(split, locale)).read_text()
                     self.assertIn(own["grand_total"], example)
                     self.assertIn("94.04", example)
-                    self.assertEqual(record["url"], feed["items"][8]["id"])
-                    self.assertEqual(own["title"], feed["items"][8]["title"])
-                    self.assertEqual(1, len(feed["items"][8]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "reading-backlog":
                     own = hero.task_copy(self.copy, self.task_copies, backlog, locale)
                     self.assertIn(own["formula"], document)
@@ -1655,14 +1662,11 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="backlog-rows"', document)
                     self.assertIn('id="total-minutes">95<', document)
                     self.assertIn('id="total-days">5<', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6802505528", document)
                     example = (self.pages / hero.example_path(backlog, locale)).read_text()
                     self.assertIn(own["leftover"], example)
                     self.assertIn("2026-09-11", example)
-                    self.assertEqual(record["url"], feed["items"][9]["id"])
-                    self.assertEqual(own["title"], feed["items"][9]["title"])
-                    self.assertEqual(1, len(feed["items"][9]["_hero_task"]["optional_apps"]))
                 elif record["task_id"] == "review-schedule":
                     own = hero.task_copy(self.copy, self.task_copies, review, locale)
                     self.assertIn(own["formula"], document)
@@ -1672,14 +1676,11 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn('id="note-rows"', document)
                     self.assertIn('id="review-count">15<', document)
                     self.assertIn('id="next-review">2026-09-07<', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6798813048", document)
                     example = (self.pages / hero.example_path(review, locale)).read_text()
                     self.assertIn(own["status_passed"], example)
                     self.assertIn("2026-09-24", example)
-                    self.assertEqual(record["url"], feed["items"][10]["id"])
-                    self.assertEqual(own["title"], feed["items"][10]["title"])
-                    self.assertEqual(1, len(feed["items"][10]["_hero_task"]["optional_apps"]))
                 else:
                     self.assertEqual("maintenance-next-due", record["task_id"])
                     own = hero.task_copy(self.copy, self.task_copies, maintenance, locale)
@@ -1688,14 +1689,11 @@ class HeroTaskTests(unittest.TestCase):
                     self.assertIn("2026-09-01", document)
                     self.assertIn("2026-11-30", document)
                     self.assertIn('id="today-date"', document)
-                    self.assertEqual(1, document.count("&amp;ct=geo_learn&amp;mt=8"))
+                    self.assertEqual(0 if locale == "bn-BD" else 1, document.count("&amp;ct=geo_learn&amp;mt=8"))
                     self.assertIn("id6790800323", document)
                     example = (self.pages / hero.example_path(maintenance, locale)).read_text()
                     self.assertIn(own["status_overdue"], example)
                     self.assertIn("-4", example)
-                    self.assertEqual(record["url"], feed["items"][1]["id"])
-                    self.assertEqual(own["title"], feed["items"][1]["title"])
-                    self.assertEqual(1, len(feed["items"][1]["_hero_task"]["optional_apps"]))
         sitemap = ET.parse(self.pages / hero.SITEMAP)
         self.assertEqual(550, len(sitemap.getroot()))
         index = (self.pages / "sitemap_index.xml").read_text()

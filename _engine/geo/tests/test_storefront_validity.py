@@ -29,10 +29,7 @@ class StorefrontValidityTest(unittest.TestCase):
         expected = "https://apps.apple.com/bd/app/id6798814385"
         for availability in ({}, {"in": frozenset({"6798814385"})}):
             with self.subTest(availability=availability):
-                self.assertEqual(
-                    storefronts.verified_app_store_url(canonical, "bn-BD", availability),
-                    expected,
-                )
+                self.assertIsNone(storefronts.verified_app_store_url(canonical, "bn-BD", availability))
                 self.assertEqual(
                     storefronts.validated_app_store_url(
                         expected, "6798814385", expected_locale="bn-BD",

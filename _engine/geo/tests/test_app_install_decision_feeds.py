@@ -6,6 +6,7 @@ from __future__ import annotations
 from datetime import datetime
 import html
 import json
+from market_contract_assertions import assert_blocked_record
 import os
 from pathlib import Path
 import sys
@@ -89,6 +90,22 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             )
             for path in (atom_path, rss_path, json_path):
                 self.assertTrue(path.is_file(), path)
+            if locale == "bn-BD":
+                self.assertEqual(len(records), 47)
+                for record in records:
+                    assert_blocked_record(self, record)
+                for path in (atom_path, rss_path, json_path):
+                    source = path.read_text()
+                    self.assertNotIn("apps.apple.com", source)
+                    self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
+                    self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", source)
+                    self.assertIn("https://support.apple.com/en-us/118205", source)
+                self.assertEqual(ET.parse(atom_path).getroot().findall(f"{atom_ns}entry"), [])
+                self.assertEqual(ET.parse(rss_path).getroot().findall("channel/item"), [])
+                payload = json.loads(json_path.read_text())
+                self.assertEqual(payload["items"], [])
+                self.assertEqual(payload["_market_availability"]["outbox_count"], 0)
+                continue
 
             atom = ET.parse(atom_path).getroot()
             atom_entries = atom.findall(f"{atom_ns}entry")

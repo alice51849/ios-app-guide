@@ -194,9 +194,16 @@
             }
           },
           "app_store_url": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^https://apps\\.apple\\.com/(?:[a-z]{2}/)?app/id[0-9]+"
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://apps\\.apple\\.com/(?:[a-z]{2}/)?app/id[0-9]+"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "guide_url": {
             "type": "string",
@@ -251,8 +258,125 @@
                 "minimum": 1
               }
             }
+          },
+          "locale": {
+            "enum": [
+              "ar-SA",
+              "bn-BD",
+              "ca",
+              "cs",
+              "da",
+              "de-DE",
+              "el",
+              "en-AU",
+              "en-CA",
+              "en-GB",
+              "en-US",
+              "es-ES",
+              "es-MX",
+              "fi",
+              "fr-CA",
+              "fr-FR",
+              "gu-IN",
+              "he",
+              "hi",
+              "hr",
+              "hu",
+              "id",
+              "it",
+              "ja",
+              "kn-IN",
+              "ko",
+              "ml-IN",
+              "mr-IN",
+              "ms",
+              "nl-NL",
+              "no",
+              "or-IN",
+              "pa-IN",
+              "pl",
+              "pt-BR",
+              "pt-PT",
+              "ro",
+              "ru",
+              "sk",
+              "sl-SI",
+              "sv",
+              "ta-IN",
+              "te-IN",
+              "th",
+              "tr",
+              "uk",
+              "ur-PK",
+              "vi",
+              "zh-Hans",
+              "zh-Hant"
+            ]
+          },
+          "market_availability": {
+            "enum": [
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+                "evidence": {
+                  "source_url": "https://support.apple.com/en-us/118205",
+                  "observed_at": "2026-09-12",
+                  "country": "BD",
+                  "apple_media_services_markets": 174,
+                  "country_listed": false,
+                  "lookup_app_results": 0,
+                  "lookup_control_results": 0,
+                  "redirect_market": "US"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              }
+            ]
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "locale": {
+                  "enum": [
+                    "bn-BD"
+                  ]
+                }
+              },
+              "required": [
+                "locale"
+              ]
+            },
+            "then": {
+              "required": [
+                "market_availability",
+                "app_store_url"
+              ],
+              "properties": {
+                "app_store_url": {
+                  "type": "null"
+                }
+              }
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "market_availability"
+                ]
+              },
+              "properties": {
+                "app_store_url": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
       }
     }
   }

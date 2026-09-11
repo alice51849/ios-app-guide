@@ -147,6 +147,6 @@ JSON, JSONL en CSV bevatten dezelfde 2.350 gegevensitems.
 
 [Startpagina](https://open.cait518.cc/ios-app-guide/nl-NL/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-09-10
+Bijgewerkt: 2026-09-11
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

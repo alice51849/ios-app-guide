@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 import json
+from market_contract_assertions import assert_blocked_record
 import os
 from pathlib import Path
 import sys
@@ -170,7 +171,7 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
         self.assertEqual(expected_locale_count, self.index["locale_count"])
         self.assertEqual(expected_app_count, self.index["app_count"])
         self.assertEqual(
-            expected_app_count * expected_locale_count,
+            expected_app_count * (expected_locale_count - 1),
             self.index["offer_count"],
         )
         self.assertEqual(set(OFFICIAL_LOCALES), set(self.catalogs))
@@ -183,7 +184,7 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
         verified_prices = 0
         for locale, catalog in self.catalogs.items():
             self.assertEqual("https://schema.org", catalog["@context"])
-            self.assertEqual("OfferCatalog", catalog["@type"])
+            self.assertEqual("ItemList" if locale == "bn-BD" else "OfferCatalog", catalog["@type"])
             self.assertEqual(locale, catalog["inLanguage"])
             self.assertEqual(expected_app_count, catalog["numberOfItems"])
             items = catalog["itemListElement"]
@@ -201,6 +202,16 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
             observed_ids = set()
             country = app_store_storefronts.LOCALE_STOREFRONTS[locale]
             for item in items:
+                if locale == "bn-BD":
+                    application = item["item"]
+                    app_id = application["identifier"]["value"]
+                    observed_ids.add(app_id)
+                    assert_blocked_record(self, expected_records[app_id])
+                    self.assertEqual(item["market_availability"], expected_records[app_id]["market_availability"])
+                    self.assertNotIn("offers", application)
+                    self.assertNotIn("apps.apple.com", json.dumps(item))
+                    self.assertEqual(item["url"], expected_records[app_id]["canonical_guide_url"])
+                    continue
                 offer = item["item"]
                 application = offer["itemOffered"]
                 app_id = application["identifier"]["value"]

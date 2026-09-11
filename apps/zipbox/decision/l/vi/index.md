@@ -2,7 +2,7 @@
 title: "Zipbox: Giải nén RAR, ZIP, 7z — Mở file nén, không quảng cáo | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/vi/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

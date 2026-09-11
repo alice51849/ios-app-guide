@@ -25,6 +25,7 @@ import html
 from html.parser import HTMLParser
 import io
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import re
@@ -179,6 +180,24 @@ def json_references(value: object, *, locale: str | None = None,
             None,
         )
         locale = _locale(local, locale)
+        blocked_fields = {
+            key for key in value
+            if key in {"canonical_app_store_url", "app_store_url", "_lumi_app_store_url", "storefront_url"}
+        } if market.is_unavailable(locale) else set()
+        if blocked_fields:
+            normalized = {**value, "locale": locale}
+            evidence = normalized.get("market_availability")
+            if isinstance(evidence, str):
+                try:
+                    normalized["market_availability"] = json.loads(evidence)
+                except ValueError as error:
+                    raise AttributionError("Invalid CSV market evidence") from error
+                for key in blocked_fields:
+                    if normalized[key] == "":
+                        normalized[key] = None
+            market.validate_record(normalized, url_fields=tuple(blocked_fields))
+            if value.get("storefront_facts"):
+                raise AttributionError("Unavailable market cannot publish storefront facts")
         own_id = value.get("app_store_id", value.get("appStoreId"))
         if own_id is None and any(key in value for key in ("external_url", "content_html", "content_text")):
             metadata_ids = {
@@ -222,6 +241,8 @@ def json_references(value: object, *, locale: str | None = None,
             canonical = validated_app_store_url(value["id"])
             app_id = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(canonical).path)["app_id"]
         for key, child in value.items():
+            if key in blocked_fields:
+                continue
             if schema and key.casefold() in SCHEMA_VALUE_FIELDS:
                 continue
             child_identity = identity or identity_field(key, value)
@@ -435,6 +456,8 @@ def normalized_reference(ref: Reference) -> Reference:
 def validate_reference(ref: Reference, *, provider: str,
                        availability: dict[str, frozenset[str]] | None = None) -> str | None:
     ref = normalized_reference(ref)
+    if market.is_unavailable(ref.locale):
+        raise AttributionError(f"Unavailable market cannot publish App Store URLs: {ref.locale}")
     if ref.identity:
         _clean_identity(ref.url, ref.field)
         if not is_clean_app_store_developer_url(ref.url):
@@ -740,13 +763,24 @@ def audit_tree(pages: Path, *, provider: str | None = None,
             errors.append(error)
         elif relative.startswith("api/v1/ios-app-catalog/locales/") and relative.endswith(".json"):
             catalog_coverage[Path(relative).stem] = app_ids
-    missing = {(app_id, locale) for app_id in expected_app_ids for locale in OFFICIAL_LOCALES} - coverage
+    missing = {(app_id, locale) for app_id in expected_app_ids for locale in market.publishable_locales(OFFICIAL_LOCALES)} - coverage
     if missing:
         errors.append(f"Missing App/locale CTA coverage: {len(missing)} cells; {sorted(missing)[:5]}")
     if missing_surfaces := required_surfaces - counts.keys():
         errors.append(f"Missing attribution surfaces: {sorted(missing_surfaces)}")
     if "api" in required_surfaces:
         for locale in OFFICIAL_LOCALES:
+            if market.is_unavailable(locale):
+                path = pages / "api/v1/ios-app-catalog/locales" / f"{locale}.json"
+                if not path.is_file():
+                    errors.append(f"Missing unavailable-market retained catalog: {locale}")
+                    continue
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                if {str(app["app_store_id"]) for app in payload.get("apps", [])} != expected_app_ids:
+                    errors.append(f"Unavailable-market content coverage mismatch: {locale}")
+                if catalog_coverage.get(locale, set()):
+                    errors.append(f"Unavailable-market catalog still has App Store URLs: {locale}")
+                continue
             if catalog_coverage.get(locale) != expected_app_ids:
                 errors.append(f"App Store API catalog CTA coverage mismatch: {locale}")
     summary = {

@@ -60,6 +60,8 @@ class ResultImagesTests(unittest.TestCase):
             body = stream.getvalue()
             asset["sha256"] = images.digest(body)
             asset["evidence"]["source_sha256"] = asset["sha256"]
+            asset["decoded_evidence"] = images.pixel_evidence(body)
+            asset.pop("transport_reversal", None)
             self.responses[asset["canonical_asset_url"]] = images.Response(
                 200, asset["canonical_asset_url"], {"content-type": "image/jpeg"}, body
             )
@@ -125,6 +127,14 @@ class ResultImagesTests(unittest.TestCase):
                     for row in report["coverage"] if row["locale"] == locale
                 ))
         self.assertEqual("ELIGIBLE_IS_NOT_INDEXED", result["indexing_state"])
+
+    def test_release_mode_rejects_approved_pixel_or_byte_drift_before_writes(self):
+        before = (self.root / "index.html").read_bytes()
+        self.rewrite_response(body=b"not the approved source")
+        with self.assertRaisesRegex(ValueError, "blocks publication"):
+            self.generate(require_approved=True)
+        self.assertEqual(before, (self.root / "index.html").read_bytes())
+        self.assertFalse((self.root / images.COVERAGE).exists())
 
     def test_real_img_src_caption_dimensions_and_canonical(self):
         self.generate()
@@ -360,9 +370,11 @@ class ResultImagesTests(unittest.TestCase):
 
     def test_wrong_dimensions_and_mime_are_not_eligible(self):
         self.manifest["images"][0]["width"] = 296
+        self.manifest["images"][0]["decoded_evidence"]["width"] = 296
         result = self.generate()
         self.assertIn("dimensions", result["public_check_failures"]["notes-handwriting"])
         self.manifest["images"][0]["width"] = 295
+        self.manifest["images"][0]["decoded_evidence"]["width"] = 295
         self.rewrite_response(headers={"content-type": "image/png"})
         result = self.generate()
         self.assertIn("MIME", result["public_check_failures"]["notes-handwriting"])
@@ -683,6 +695,7 @@ class ResultImagesTests(unittest.TestCase):
         (runtime / "data").mkdir(parents=True)
         for relative in (
             "result_image_index.py", "deployment_generation.py",
+            "image_transport_evidence.py",
             "crawler_policy.py", "official_locales.py", "site_config.py",
             "data/result_image_evidence_v1.json",
         ):

@@ -38,13 +38,34 @@ frontend scan 必須確認 HTML／CSS／JS 沒有指向它，公開 client JS �
 Content-Encoding、RGBA 像素／尺寸、EXIF／ICC 與實際 decoder 版本，分開記錄
 本機與 GitHub runner。`result-image-transport-audit.yml` 只上傳診斷 artifact，
 沒有 Pages、ASC 或社群寫入權限；audit 成功不代表圖片驗證或 indexing 成功。
-相同像素不是忽略原始 SHA 的理由；僅能精確解開有界、可逆的 HTTP transport。
+相同像素不是忽略原始 SHA 的理由。Schema 2 同時固定原始 canonical SHA、
+RGBA 像素／尺寸、EXIF／ICC 與 orientation；不得重新採樣或更新 SHA 迎合漂移。
+
+2026-09-12 的跨區診斷（run `34626594183`）證明兩圖的差異只在
+ExifIFD `UserComment`（type 7、34 bytes）中的 26 字元 Apple correlation key；
+其餘 JPEG bytes、像素與尺寸完全相同，沒有 Content-Encoding 或影像重壓縮。
+只允許 `apple-daiquiri-user-comment-v1`：結構化解析唯一 EXIF 欄位，要求
+`daiquiri/5` 與兩個 Apple correlation headers 都等於實際 comment，再以
+source 固定 key 還原原始 bytes。必須通過完整 canonical SHA、往返還原及
+解碼證據；其他 metadata、pixel、ICC、orientation、offset 或缺少 headers
+一律 fail closed。這不是清除 EXIF 或以 pixel hash 取代原始 SHA。
 
 結果頁與 noindex 隔離頁的聯絡信箱均保持可見的
 `hourstag.app@gmail.com` 與原 `mailto:`；以 Cloudflare 官方
 `<!--email_off-->…<!--/email_off-->` 包住整個連結，避免 edge 修改 bytes。
 不接受隱藏文字、替代信箱或把任意 email-decode 改寫放入 exact GET allowlist。
 官方依據：https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/
+
+同網域 `/app/` 的 GET 已證實 edge 會消耗這兩個控制註解但完整保留信箱。
+Producer 因此封存 `html_sha256` 與 `canonical_html_sha256`：後者只由 source
+中唯一、固定、完整的聯絡 footer 推導。Reader 仍驗完整 source 或 canonical
+SHA 與既有 pinned beacon；其他 HTML、文字、信箱或 script 改寫都拒絕。
+`deployment_generation.verify_output_bytes` 的通用 Gate 保持不變。
+
+CLI 發布前要求所有 `APPROVED_PUBLIC` 圖片通過；失敗不得先產出、上傳空白
+隔離頁。明確撤回 source approval 仍可產生原生 noindex 退役頁。圖片 live
+receipt 綁定當次 deployment generation、Guide SHA、verifier 與 manifest bytes；
+不得以新 main 的 reader 假裝舊 generation 仍有效。
 
 保留 canonical host 已有的 Cloudflare 訓練拒絕選擇：GPTBot、
 Applebot-Extended、Google-Extended 等訓練產品不取得 Allow；

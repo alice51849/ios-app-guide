@@ -8470,7 +8470,7 @@
       "status": "BLOCKED_EVIDENCE"
     }
   ],
-  "evidence_manifest_sha256": "b0915982ac64ba2dac9a5212af34e0e986bd1cebc9dde39a65462a2a54265c72",
+  "evidence_manifest_sha256": "0ece62f089d68d3b93279e201864f6d9fcd600a081c327613997dce48b4d7acb",
   "expected_locales": [
     "ar-SA",
     "bn-BD",
@@ -8526,7 +8526,9 @@
   "indexing_state": "ELIGIBLE_IS_NOT_INDEXED",
   "pages": {
     "en-US/results/index.html": {
-      "content_sha256": "df8cb02d84939a2f66571c5c3feac1316abae2a4b1282e50faa5e09e403df388",
+      "canonical_html_sha256": "71de7976661468511204e7394b4a3a77f62e4930c8a5aa8b7be77c0083e16903",
+      "content_sha256": "572a129990c8e176ba0643d30e7775d0b0e4f48d2a292b3435689bfac3c6cb12",
+      "html_sha256": "4dd93ac707e5a160f72eaa233aeda6716cc8e5e2f34e81f66e596612a5eea1fe",
       "image_ids": [
         "notes-handwriting",
         "onepage-editor"

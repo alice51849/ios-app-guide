@@ -235,6 +235,7 @@ jobs:
           set -euo pipefail
           git restore --source=HEAD -- \
             _engine/geo/result_image_index.py \
+            _engine/geo/image_transport_evidence.py \
             _engine/geo/deployment_generation.py \
             _engine/geo/crawler_policy.py \
             _engine/geo/official_locales.py \

@@ -15,6 +15,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import time
 from typing import Callable
 from urllib.error import HTTPError, URLError
@@ -24,8 +25,13 @@ import xml.etree.ElementTree as ET
 
 from PIL import Image, UnidentifiedImageError
 
+import image_transport_evidence as image_transport
 from crawler_policy import RobotsPolicy
-from deployment_generation import GenerationError, verify_output_bytes
+from deployment_generation import GenerationError, parse_json, validate_binding, verify_output_bytes
+from image_transport_evidence import (
+    APPLE_COMMENT_TRANSFORM, CORRELATION, canonical_asset_bytes, decode_content,
+    pixel_evidence, verify_decoded_evidence,
+)
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE
 
@@ -140,7 +146,7 @@ def _native_copy(value: dict, locale: str, fields: tuple[str, ...]) -> None:
 
 def validate_manifest(manifest: dict) -> None:
     _no_ratings(manifest)
-    if manifest.get("schema_version") != 1 or manifest.get("scope") != "public_result_images_only":
+    if manifest.get("schema_version") != 2 or manifest.get("scope") != "public_result_images_only":
         raise ValueError("Unsupported result-image evidence contract")
     if manifest.get("expected_locales") != list(OFFICIAL_LOCALES):
         raise ValueError("Expected locales must be the exact official 50")
@@ -201,6 +207,32 @@ def validate_manifest(manifest: dict) -> None:
             or not evidence.get("published_version")
         ):
             raise ValueError("Publication, rights or visible-result proof is missing")
+        decoded = asset.get("decoded_evidence")
+        decoded_fields = {
+            "format", "mode", "width", "height", "pixel_algorithm", "pixels_sha256",
+            "rgb_sha256", "exif_sha256", "icc_sha256", "orientation",
+        }
+        if (
+            not isinstance(decoded, dict) or set(decoded) != decoded_fields
+            or decoded["pixel_algorithm"] != "sha256-rgba8-dimensions-v1"
+            or any(type(decoded[key]) is not int or decoded[key] != asset[key]
+                   for key in ("width", "height"))
+            or type(decoded["orientation"]) is not int or decoded["orientation"] not in range(1, 9)
+            or any(re.fullmatch(r"[0-9a-f]{64}", str(decoded[key])) is None
+                   for key in ("pixels_sha256", "rgb_sha256", "exif_sha256", "icc_sha256"))
+            or not isinstance(decoded["format"], str) or not isinstance(decoded["mode"], str)
+        ):
+            raise ValueError("Explicit source-bound decoded pixel and dimension evidence is required")
+        reversal = asset.get("transport_reversal")
+        if reversal is not None and (
+            not isinstance(reversal, dict)
+            or set(reversal) != {"algorithm", "source_correlation_key", "comment_offset", "evidence_ref"}
+            or reversal["algorithm"] != APPLE_COMMENT_TRANSFORM
+            or CORRELATION.fullmatch(str(reversal["source_correlation_key"])) is None
+            or type(reversal["comment_offset"]) is not int or reversal["comment_offset"] < 8
+            or not reversal["evidence_ref"] or decoded["format"] != "JPEG"
+        ):
+            raise ValueError("Invalid source-bound reversible CDN transport")
         if date.fromisoformat(evidence["reviewed_on"]) > date.today():
             raise ValueError("Future image evidence")
         if type(asset.get("contains_text")) is not bool:
@@ -279,6 +311,10 @@ def fetch(url: str, limit: int) -> Response:
             status = response.status
             headers = {key.lower(): value for key, value in response.headers.items()}
             headers["x-robots-tag"] = tuple(response.headers.get_all("X-Robots-Tag", []))
+            for name in ("content-encoding", "x-correlation-key", "x-apple-jingle-correlation-key"):
+                values = response.headers.get_all(name, [])
+                if values:
+                    headers[name] = ", ".join(values)
             result = Response(
                 status, response.geturl(), headers, body,
             )
@@ -349,15 +385,15 @@ class PublicVerifier:
         if any(_header_blocks(response.headers.get("x-robots-tag", ""), agent)
                for agent in ("Googlebot", "Googlebot-Image")):
             raise ValueError("image X-Robots-Tag prevents indexing")
-        if digest(response.body) != asset["sha256"]:
-            raise ValueError("public image SHA-256 drift")
+        entity = decode_content(response.body, response.headers.get("content-encoding", ""))
+        canonical, reversal = canonical_asset_bytes(entity, asset, response.headers)
         media_type = response.headers.get("content-type", "").split(";", 1)[0].strip().lower()
         if not media_type.startswith("image/"):
             raise ValueError("public asset is not served as an image")
         try:
-            with Image.open(io.BytesIO(response.body)) as image:
+            with Image.open(io.BytesIO(entity)) as image:
                 image.verify()
-            with Image.open(io.BytesIO(response.body)) as image:
+            with Image.open(io.BytesIO(entity)) as image:
                 formats = {
                     "PNG": ("image/png", {".png"}),
                     "JPEG": ("image/jpeg", {".jpg", ".jpeg"}),
@@ -374,9 +410,18 @@ class PublicVerifier:
                 if media_type != expected_type or Path(urlsplit(url).path).suffix.lower() not in extensions:
                     raise ValueError("image format, MIME type and canonical extension disagree")
                 image.load()
+            decoded = verify_decoded_evidence(entity, canonical, asset)
         except (UnidentifiedImageError, OSError, Image.DecompressionBombError) as error:
             raise ValueError("public image cannot be decoded") from error
-        return {"http_status": 200, "sha256": asset["sha256"], "decoded": True}
+        return {
+            "http_status": 200, "sha256": asset["sha256"], "decoded": True,
+            "wire_sha256": digest(response.body), "entity_sha256": digest(entity),
+            "canonical_sha256": digest(canonical),
+            "decoded_pixels_sha256": decoded["pixels_sha256"],
+            "width": decoded["width"], "height": decoded["height"],
+            "content_encoding": response.headers.get("content-encoding", "identity"),
+            **reversal,
+        }
 
     def landing(self, url: str, expected: str, *, indexable: bool = True) -> dict:
         if not url.startswith(f"{PUBLIC_SITE}/"):
@@ -397,10 +442,26 @@ class PublicVerifier:
         if not relative or relative.endswith("/"):
             relative += "index.html"
         try:
-            return verify_output_bytes(
-                response.body, site=PUBLIC_SITE, relative=relative,
-                expected_sha256=digest(expected.encode("utf-8")),
-            )
+            canonical = canonical_gallery_source(expected)
+            directive = "none"
+            try:
+                check = verify_output_bytes(
+                    response.body, site=PUBLIC_SITE, relative=relative,
+                    expected_sha256=digest(expected.encode("utf-8")),
+                )
+            except GenerationError:
+                if canonical == expected:
+                    raise
+                check = verify_output_bytes(
+                    response.body, site=PUBLIC_SITE, relative=relative,
+                    expected_sha256=digest(canonical.encode("utf-8")),
+                )
+                directive = "cloudflare-email-off-v1"
+            return {
+                **check, "source_sha256": digest(expected.encode("utf-8")),
+                "canonical_sha256": digest(canonical.encode("utf-8")),
+                "source_directive": directive,
+            }
         except GenerationError as error:
             raise ValueError("published landing does not match the generated result page") from error
 
@@ -454,6 +515,17 @@ def render_gallery(locale: str, assets: list[dict], labels: dict, apps: dict, si
         '<footer><!--email_off--><a href="mailto:hourstag.app@gmail.com">'
         'hourstag.app@gmail.com</a><!--/email_off--></footer></main></body></html>\n'
     )
+
+
+def canonical_gallery_source(source: str) -> str:
+    """Derive the published SHA from a source-owned directive, not an edge wildcard."""
+    if "email_off" not in source:
+        return source
+    contact = '<a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>'
+    protected = f"<footer><!--email_off-->{contact}<!--/email_off--></footer>"
+    if source.count(protected) != 1 or source.count("email_off") != 2:
+        raise ValueError("Unbound or ambiguous email_off source directive")
+    return source.replace(protected, f"<footer>{contact}</footer>", 1)
 
 
 class GalleryParser(HTMLParser):
@@ -528,6 +600,7 @@ def generate(
     verifier: PublicVerifier | None = None,
     today: str | None = None,
     check: bool = False,
+    require_approved: bool = False,
 ) -> dict:
     validate_manifest(manifest)
     site = _url(site.rstrip("/"), hosts={urlsplit(PUBLIC_SITE).hostname})
@@ -548,9 +621,10 @@ def generate(
             raise ValueError("Previous image coverage contains an unmanaged page")
     ready: dict[str, list[dict]] = {}
     failed: dict[str, str] = {}
+    image_readbacks = {}
     for asset in manifest["images"]:
         try:
-            verifier.image(asset)
+            image_readbacks[asset["id"]] = verifier.image(asset)
             for locale in asset["localizations"]:
                 url = gallery_url(locale, site)
                 verifier.crawlable(url, "Googlebot")
@@ -559,6 +633,8 @@ def generate(
                 ready.setdefault(locale, []).append(asset)
         except (ValueError, UnicodeError) as error:
             failed[asset["id"]] = str(error)
+    if require_approved and failed:
+        raise ValueError("Approved image verification blocks publication: " + canonical_json(failed))
     outputs: dict[str, str] = {}
     page_records: dict[str, dict] = {}
     retired_records: dict[str, dict] = {}
@@ -581,6 +657,7 @@ def generate(
             retired_records[relative] = {
                 "url": gallery_url(locale, site), "locale": locale, "labels": labels,
                 "html_sha256": digest(content.encode()),
+                "canonical_html_sha256": digest(canonical_gallery_source(content).encode()),
                 "status": BLOCKED,
             }
             continue
@@ -594,6 +671,8 @@ def generate(
             "content_sha256": fingerprint, "lastmod": lastmod,
             "image_ids": [asset["id"] for asset in assets],
             "labels": labels,
+            "html_sha256": digest(content.encode()),
+            "canonical_html_sha256": digest(canonical_gallery_source(content).encode()),
         }
     entries = []
     matrix = []
@@ -712,6 +791,7 @@ def generate(
             target.write_text(outputs[relative], encoding="utf-8")
     return {
         **report["counts"], "public_check_failures": failed,
+        "image_readbacks": image_readbacks,
         "changed_files": changed,
         "changed_pages": [
             f"{site}/{relative.removesuffix('index.html')}" if relative.endswith("index.html")
@@ -720,6 +800,32 @@ def generate(
         ],
         "indexing_state": report["indexing_state"],
     }
+
+
+def image_readback_generation(pages: Path, manifest_path: Path) -> dict:
+    document = parse_json((pages / ".well-known/deployment.json").read_bytes())
+    generation = validate_binding(document)
+    revision = subprocess.check_output(
+        ["git", "-C", str(pages), "rev-parse", "HEAD"], text=True, timeout=15,
+    ).strip()
+    if (
+        generation["pages_source_sha"] != revision
+        or document["source_commit"] != revision
+        or document["engine_source_revision"] != generation["source_sha"]
+    ):
+        raise ValueError("Image readback cannot reuse an older deployment generation")
+    for relative, actual in (
+        ("result_image_index.py", Path(__file__)),
+        ("image_transport_evidence.py", Path(image_transport.__file__)),
+        ("data/result_image_evidence_v1.json", manifest_path),
+    ):
+        committed = subprocess.check_output(
+            ["git", "-C", str(pages), "show", f"{revision}:_engine/geo/{relative}"],
+            timeout=15,
+        )
+        if committed != actual.read_bytes():
+            raise ValueError(f"Image readback source is not the sealed generation: {relative}")
+    return generation
 
 
 def main() -> None:
@@ -732,7 +838,10 @@ def main() -> None:
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
     verifier = PublicVerifier()
-    result = generate(args.pages, manifest, verifier=verifier, check=args.check)
+    generation = image_readback_generation(args.pages, args.manifest) if args.verify_live else None
+    result = generate(
+        args.pages, manifest, verifier=verifier, check=args.check, require_approved=True,
+    )
     if args.verify_live:
         coverage = json.loads((args.pages / COVERAGE).read_text(encoding="utf-8"))
         readback_pages = {
@@ -754,6 +863,8 @@ def main() -> None:
         result["live_landing_pages_verified"] = len(coverage["pages"])
         result["live_retired_pages_verified"] = len(coverage.get("retired_pages", {}))
         result["live_readbacks"] = readbacks
+        result["deployment_generation"] = generation
+        result["image_evidence_manifest_sha256"] = digest(args.manifest.read_bytes())
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(canonical_json(result), encoding="utf-8")

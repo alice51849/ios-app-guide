@@ -11,6 +11,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import re
 import subprocess
 import sys
 from urllib.error import HTTPError
@@ -27,7 +28,10 @@ HEADERS = (
     "cache-control", "vary", "etag", "last-modified", "date", "age", "server",
     "via", "x-cache", "x-cdn", "x-served-by", "cf-cache-status", "cf-polished",
     "cf-resized", "cf-mirage", "accept-ranges",
+    "x-correlation-key", "x-apple-jingle-correlation-key",
 )
+CORRELATION = re.compile(r"[A-Z2-7]{26}")
+APPLE_COMMENT_TRANSFORM = "apple-daiquiri-user-comment-v1"
 VARIANTS = {
     "production": {"Accept-Encoding": "identity"},
     "no-cache": {"Accept-Encoding": "identity", "Cache-Control": "no-cache"},
@@ -85,6 +89,128 @@ def pixel_evidence(body: bytes) -> dict:
         }
 
 
+def apple_correlation_comment(body: bytes) -> tuple[int, str]:
+    """Locate one ExifIFD UserComment structurally, never scan/strip arbitrary metadata."""
+    if not body.startswith(b"\xff\xd8"):
+        raise ValueError("Correlation transport requires a JPEG")
+    cursor, exif = 2, None
+    while cursor + 4 <= len(body):
+        if body[cursor] != 0xFF:
+            raise ValueError("Invalid JPEG marker before image data")
+        marker = body[cursor + 1]
+        if marker in {0xDA, 0xD9}:
+            break
+        length = int.from_bytes(body[cursor + 2:cursor + 4], "big")
+        end = cursor + 2 + length
+        if length < 2 or end > len(body):
+            raise ValueError("Truncated JPEG metadata")
+        start = cursor + 4
+        if marker == 0xE1 and body[start:start + 6] == b"Exif\0\0":
+            if exif is not None:
+                raise ValueError("Multiple EXIF segments are ambiguous")
+            exif = (start + 6, end)
+        cursor = end
+    if exif is None:
+        raise ValueError("Missing source-bound EXIF correlation comment")
+    base, end = exif
+    order = {b"II": "little", b"MM": "big"}.get(body[base:base + 2])
+    if order is None:
+        raise ValueError("Invalid TIFF byte order")
+
+    def integer(offset: int, count: int) -> int:
+        if offset < base or offset + count > end:
+            raise ValueError("EXIF offset escapes its APP1 segment")
+        return int.from_bytes(body[offset:offset + count], order)
+
+    def entries(offset: int) -> dict[int, tuple[int, int, int]]:
+        if offset < base + 8:
+            raise ValueError("Invalid EXIF directory offset")
+        count = integer(offset, 2)
+        if count > 128 or offset + 2 + count * 12 + 4 > end:
+            raise ValueError("Invalid bounded EXIF directory")
+        result = {}
+        for index in range(count):
+            entry = offset + 2 + index * 12
+            tag = integer(entry, 2)
+            if tag in result:
+                raise ValueError("Duplicate EXIF tag")
+            result[tag] = (integer(entry + 2, 2), integer(entry + 4, 4),
+                           integer(entry + 8, 4))
+        return result
+
+    if integer(base + 2, 2) != 42:
+        raise ValueError("Invalid TIFF signature")
+    pointer = entries(base + integer(base + 4, 4)).get(0x8769)
+    if pointer is None or pointer[:2] != (4, 1):
+        raise ValueError("Missing unique ExifIFD pointer")
+    comment = entries(base + pointer[2]).get(0x9286)
+    if comment is None or comment[:2] != (7, 34):
+        raise ValueError("Not a fixed ASCII Apple correlation comment")
+    offset = base + comment[2]
+    integer(offset, 34)
+    if body[offset:offset + 8] != b"ASCII\0\0\0":
+        raise ValueError("Unexpected EXIF UserComment encoding")
+    key = body[offset + 8:offset + 34].decode("ascii")
+    if CORRELATION.fullmatch(key) is None:
+        raise ValueError("Not an Apple correlation key")
+    return offset, key
+
+
+def canonical_asset_bytes(entity: bytes, asset: dict, headers: dict) -> tuple[bytes, dict]:
+    """Reverse only a header-bound CDN trace key, then require the original full SHA."""
+    wire_digest = sha256(entity)
+    contract = asset.get("transport_reversal")
+    if contract is None:
+        if wire_digest != asset["sha256"]:
+            raise ValueError("public image SHA-256 drift")
+        return entity, {}
+    if (
+        not isinstance(contract, dict)
+        or set(contract) != {"algorithm", "source_correlation_key", "comment_offset", "evidence_ref"}
+        or contract["algorithm"] != APPLE_COMMENT_TRANSFORM
+        or CORRELATION.fullmatch(str(contract["source_correlation_key"])) is None
+        or type(contract["comment_offset"]) is not int
+        or not contract["evidence_ref"]
+    ):
+        raise ValueError("Invalid source-bound correlation transport contract")
+    offset, observed_key = apple_correlation_comment(entity)
+    if offset != contract["comment_offset"]:
+        raise ValueError("Source-bound EXIF correlation offset drift")
+    source_key = contract["source_correlation_key"]
+    if wire_digest == asset["sha256"]:
+        if observed_key != source_key:
+            raise ValueError("Canonical source correlation binding drift")
+        return entity, {}
+    if (
+        headers.get("server") != "daiquiri/5"
+        or headers.get("x-correlation-key") != observed_key
+        or headers.get("x-apple-jingle-correlation-key") != observed_key
+    ):
+        raise ValueError("CDN correlation comment is not bound to both Apple response headers")
+    start = offset + 8
+    canonical = entity[:start] + source_key.encode("ascii") + entity[start + 26:]
+    restored = canonical[:start] + observed_key.encode("ascii") + canonical[start + 26:]
+    if restored != entity or sha256(canonical) != asset["sha256"]:
+        raise ValueError("public image SHA-256 drift outside the reversible CDN correlation")
+    return canonical, {
+        "transport_transform": APPLE_COMMENT_TRANSFORM,
+        "observed_correlation_key": observed_key,
+        "source_correlation_key": source_key,
+        "comment_offset": offset, "roundtrip_verified": True,
+    }
+
+
+def verify_decoded_evidence(entity: bytes, canonical: bytes, asset: dict) -> dict:
+    expected = asset.get("decoded_evidence")
+    canonical_pixels = pixel_evidence(canonical)
+    actual = pixel_evidence(entity)
+    if canonical_pixels != expected:
+        raise ValueError("Source-bound decoded pixel or metadata evidence drift")
+    if any(actual[key] != expected[key] for key in expected if key != "exif_sha256"):
+        raise ValueError("Decoded image pixels, dimensions or color interpretation drift")
+    return actual
+
+
 class NoRedirect(HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         return None
@@ -123,6 +249,12 @@ def observe(asset: dict, variant: str, output: Path) -> dict:
             source_bytes_match=sha256(entity) == asset["sha256"],
             decoded=pixel_evidence(entity),
         )
+        if asset.get("decoded_evidence"):
+            canonical, reversal = canonical_asset_bytes(entity, asset, result["headers"])
+            result.update(
+                canonical_sha256=sha256(canonical), canonical_source_verified=True,
+                decoded_verified=verify_decoded_evidence(entity, canonical, asset), **reversal,
+            )
     except (OSError, ValueError, zlib.error) as error:
         result["decode_error"] = str(error)
     return result
@@ -135,6 +267,7 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, default=MANIFEST)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--context", required=True)
+    parser.add_argument("--require-source-evidence", action="store_true")
     args = parser.parse_args()
     body = args.manifest.read_bytes()
     manifest = json.loads(body)
@@ -172,6 +305,11 @@ def main() -> None:
         json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2) + "\n",
         encoding="utf-8",
     )
+    if args.require_source_evidence and any(
+        row.get("canonical_source_verified") is not True or not row.get("decoded_verified")
+        for row in rows
+    ):
+        raise ValueError("Cloud image observation did not satisfy canonical SHA and decoded evidence")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "scope": "public_result_images_only",
   "expected_locales": [
     "ar-SA", "bn-BD", "ca", "cs", "da", "de-DE", "el", "en-AU", "en-CA",
@@ -88,6 +88,24 @@
       "status": "APPROVED_PUBLIC",
       "canonical_asset_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/aa/20/45aa20c1-2c28-3bc1-ad2e-43064414568a/02-handwriting.png/480x640bb.jpg",
       "sha256": "488476e5b43f72ec9c9742982aa6cc25b96065e174af7df2f1ada56686d6c7d7",
+      "decoded_evidence": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 295,
+        "height": 640,
+        "pixel_algorithm": "sha256-rgba8-dimensions-v1",
+        "pixels_sha256": "0b03c40fdfc29a6b88a30f938e32b5fdcbad74fde82827d72ea3e9fc15a51d0a",
+        "rgb_sha256": "036fbfe30088eef7be506abcf927b8352604c124e71b295d13e01e4ea9bc0d2f",
+        "exif_sha256": "6032d10ac78865c464949eb911fbe49564abe56c759c59d160345c7d9fecd274",
+        "icc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "orientation": 1
+      },
+      "transport_reversal": {
+        "algorithm": "apple-daiquiri-user-comment-v1",
+        "source_correlation_key": "I6X4ZDWWLHYQWRWS4FA5W5545A",
+        "comment_offset": 110,
+        "evidence_ref": "https://github.com/alice51849/ios-app-guide/actions/runs/34626594183"
+      },
       "width": 295,
       "height": 640,
       "contains_text": true,
@@ -124,6 +142,24 @@
       "status": "APPROVED_PUBLIC",
       "canonical_asset_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ab/cb/ceabcb12-07c3-d55c-d253-79fb1686252c/03-editor.png/480x640bb.jpg",
       "sha256": "392778ef7c930ba55e2130667ca5aec941fce4bb5ab9d8553cee22a61d16b9c5",
+      "decoded_evidence": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 295,
+        "height": 640,
+        "pixel_algorithm": "sha256-rgba8-dimensions-v1",
+        "pixels_sha256": "c04d5a01ff2cf78d833a3aa8871c08362ecf4311a97da605b2c1fe447a401ad6",
+        "rgb_sha256": "7e5eecfd20afcffca0a340669e1b0371264570feb14529686490bee82c122c38",
+        "exif_sha256": "6c83467f664264a820265d17c9ca4d75624d6b4e9d1a33acf18b5124c8365f1d",
+        "icc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "orientation": 1
+      },
+      "transport_reversal": {
+        "algorithm": "apple-daiquiri-user-comment-v1",
+        "source_correlation_key": "7IOPMM77JXPNEARVFFBBQTJWM4",
+        "comment_offset": 110,
+        "evidence_ref": "https://github.com/alice51849/ios-app-guide/actions/runs/34626594183"
+      },
       "width": 295,
       "height": 640,
       "contains_text": true,

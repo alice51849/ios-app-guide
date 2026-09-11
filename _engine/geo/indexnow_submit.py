@@ -7,6 +7,7 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import html
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
@@ -181,6 +182,21 @@ def git_head_sha(
     return sha
 
 
+class _ResultImageContentParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.images: list[dict[str, str]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = dict(attrs)
+        if tag != "img" or not DIGEST_RE.fullmatch(values.get("data-result-image-sha256") or ""):
+            return
+        self.images.append({
+            key: _WHITESPACE_RE.sub(" ", values.get(key) or "").strip()
+            for key in ("src", "srcset", "alt", "title", "data-result-image-sha256")
+        })
+
+
 def indexable_content_digest(path: Path) -> str:
     """Digest only what a search engine would treat as the page's content.
 
@@ -192,6 +208,9 @@ def indexable_content_digest(path: Path) -> str:
     five to one.  This digest deliberately covers the title, meta description,
     meta robots, canonical target, and visible body text — the parts that change
     what a result would say — and deliberately ignores the rest of ``<head>``.
+    Evidence-bound result images additionally include their source, alt text and
+    pixel hash. The explicit marker avoids rebaselining legacy page digests and
+    falsely notifying every old decorative image after this algorithm update.
 
     Non-HTML public files keep a whole-file digest: there is no meaningful way
     to separate their "content" from their bytes.
@@ -218,6 +237,12 @@ def indexable_content_digest(path: Path) -> str:
     normalized = "\n".join(
         _WHITESPACE_RE.sub(" ", html.unescape(part)).strip() for part in parts
     )
+    image_parser = _ResultImageContentParser()
+    image_parser.feed(_HEAD_RE.sub(" ", markup))
+    if image_parser.images:
+        normalized += "\n" + json.dumps(
+            image_parser.images, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        )
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 

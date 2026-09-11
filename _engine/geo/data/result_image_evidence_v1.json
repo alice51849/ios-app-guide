@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "scope": "public_result_images_only",
+  "expected_locales": [
+    "ar-SA", "bn-BD", "ca", "cs", "da", "de-DE", "el", "en-AU", "en-CA",
+    "en-GB", "en-US", "es-ES", "es-MX", "fi", "fr-CA", "fr-FR", "gu-IN",
+    "he", "hi", "hr", "hu", "id", "it", "ja", "kn-IN", "ko", "ml-IN",
+    "mr-IN", "ms", "nl-NL", "no", "or-IN", "pa-IN", "pl", "pt-BR",
+    "pt-PT", "ro", "ru", "sk", "sl-SI", "sv", "ta-IN", "te-IN", "th",
+    "tr", "uk", "ur-PK", "vi", "zh-Hans", "zh-Hant"
+  ],
+  "inventory": {
+    "reviewed_on": "2026-09-11",
+    "scope": "Tracked Guide images and the existing, byte-pinned public App Store evidence for the priority apps; not a claim that unreviewed App Store images do not exist.",
+    "family_definition": "Priority cohorts are outreach inventory labels, not declarations of enrollment in Apple's Kids Category.",
+    "excluded_existing_assets": [
+      {
+        "path": "social/img/*.jpg",
+        "count": 94,
+        "reason": "Promotional share cards are not proof of an in-app result."
+      },
+      {
+        "path": "stories/img/*.jpg",
+        "count": 95,
+        "reason": "App icons and promotional posters are not proof of an in-app result."
+      },
+      {
+        "path": "visuals/*/*.svg",
+        "count": 2350,
+        "reason": "Generated intent cards must not be presented as actual app outputs."
+      },
+      {
+        "path": "iiif/3/bopomofo/images/*.svg",
+        "count": 37,
+        "reason": "Published phonetic-symbol resources do not prove a completed app activity."
+      }
+    ],
+    "public_candidate_count": 10,
+    "source_policy": "Keep each image at its original byte-pinned public URL. No screenshot manufacture, crop, compositing, generation API, App mutation or ASC mutation.",
+    "search_console_state": "No claim of Google indexing or ownership verification for Apple's CDN."
+  },
+  "apps": [
+    {"key": "photocream", "app_id": "6781808054", "name": "PhotoCream", "family": "photo6", "missing_evidence": "No reviewed native result image with source-photo rights evidence."},
+    {"key": "picclear", "app_id": "6780223070", "name": "PicClear", "family": "photo6", "missing_evidence": "No reviewed native cleanup-result image without private photo or device data."},
+    {"key": "snapport", "app_id": "6780575828", "name": "Snapport", "family": "photo6", "missing_evidence": "No reviewed native ID-photo result with documented likeness rights."},
+    {"key": "snapportlite", "app_id": "6792856304", "name": "Snapport Lite", "family": "photo6", "missing_evidence": "No reviewed native ID-photo result with documented likeness rights."},
+    {"key": "unblurry", "app_id": "6782275018", "name": "Unblurry", "family": "photo6", "missing_evidence": "The public comparison contains a person's likeness; no source-photo licence or model-release proof is available."},
+    {"key": "shotinbox", "app_id": "6802166527", "name": "ShotInbox AI", "family": "photo6", "missing_evidence": "No reviewed native result image with private screenshot data and third-party content cleared."},
+    {"key": "aim990plus", "app_id": "6792483140", "name": "Aim990 Plus", "family": "kids14", "missing_evidence": "No reviewed native completed learning result; a practice interface is not a demonstrated outcome."},
+    {"key": "dailymate", "app_id": "6790418321", "name": "DailyMate", "family": "kids14", "missing_evidence": "No reviewed native completed routine image with child and demonstration-data rights cleared."},
+    {"key": "dailymatelite", "app_id": "6794725568", "name": "DailyMate Lite", "family": "kids14", "missing_evidence": "No reviewed native completed routine image with child and demonstration-data rights cleared."},
+    {"key": "lumibopomofo", "app_id": "6773017109", "name": "Lumi Bopomofo", "family": "kids14", "missing_evidence": "Reviewed activity and map screens do not show a completed tracing result; other locales have no reviewed native result."},
+    {"key": "lumibopomofopro", "app_id": "6775773117", "name": "Lumi Bopomofo Pro", "family": "kids14", "missing_evidence": "No reviewed native completed learning result with illustration and demonstration-data rights cleared."},
+    {"key": "lumiletters", "app_id": "6778748533", "name": "Lumi Letters", "family": "kids14", "missing_evidence": "No reviewed native completed learning result with illustration and demonstration-data rights cleared."},
+    {"key": "lumiletterspro", "app_id": "6778491147", "name": "Lumi Letters Pro", "family": "kids14", "missing_evidence": "No reviewed native completed learning result with illustration and demonstration-data rights cleared."},
+    {"key": "lumimath", "app_id": "6778269699", "name": "Lumi Math Planet", "family": "kids14", "missing_evidence": "No reviewed native completed math result with illustration and demonstration-data rights cleared."},
+    {"key": "lumimathpro", "app_id": "6776958488", "name": "Lumi Math Pro", "family": "kids14", "missing_evidence": "No reviewed native completed math result with illustration and demonstration-data rights cleared."},
+    {"key": "lumimission", "app_id": "6779750237", "name": "Lumi Mission Planet", "family": "kids14", "missing_evidence": "No reviewed native completed mission image with child and demonstration-data rights cleared."},
+    {"key": "lumimissionpro", "app_id": "6779745474", "name": "Lumi Mission Planet Pro", "family": "kids14", "missing_evidence": "No reviewed native completed mission image with child and demonstration-data rights cleared."},
+    {"key": "tripplanet", "app_id": "6787193643", "name": "Lumi Trip Planet", "family": "kids14", "missing_evidence": "No reviewed native completed travel-learning result with child and source-photo rights cleared."},
+    {"key": "lumiweather", "app_id": "6779552704", "name": "Lumi Weather", "family": "kids14", "missing_evidence": "No reviewed native result image with illustration-rights evidence for this image inventory."},
+    {"key": "wordmatelite", "app_id": "6797601720", "name": "Wordmate Lite", "family": "kids14", "missing_evidence": "No reviewed native completed vocabulary result with source-content rights cleared."},
+    {"key": "scanto", "app_id": "6779977651", "name": "ScanTo Pro", "family": "scanner_pdf2", "missing_evidence": "The reviewed library image does not prove readable scan output or a receipt-body OCR search hit."},
+    {"key": "maskmyfile", "app_id": "6792850916", "name": "Mask My File", "family": "scanner_pdf2", "missing_evidence": "No reviewed native redacted document result with source-document rights and private data cleared."},
+    {"key": "notesstudio100", "app_id": "6798813048", "name": "100 Notes Studio", "family": "notes_onepage", "missing_evidence": "No reviewed result image and native caption for this locale; the English screenshot must not substitute."},
+    {"key": "onepageppt", "app_id": "6798814385", "name": "OnePage PPT", "family": "notes_onepage", "missing_evidence": "No reviewed result image and native caption for this locale; the English screenshot must not substitute."}
+  ],
+  "labels": {
+    "en-US": {
+      "title": "Published note and slide examples",
+      "intro": "These first-party App Store screenshots show a handwritten note page and a composed slide layout. They are published app examples, not customer testimonials, independent tests or verified export samples.",
+      "source_label": "Published App Store source",
+      "store_label": "View the app on the App Store",
+      "unavailable": "No reviewed public image currently passes the evidence and crawlability checks.",
+      "home_label": "Back to the app guide",
+      "native_review": {
+        "locale": "en-US",
+        "copy_sha256": "0d0a5596448f3f74d4b7bdb34a7918f59a336bea0cf801138eaf415f5db693b3",
+        "review_ref": "publisher-image-copy-review:2026-09-11:en-US"
+      }
+    }
+  },
+  "images": [
+    {
+      "id": "notes-handwriting",
+      "app_key": "notesstudio100",
+      "kind": "published_app_result",
+      "status": "APPROVED_PUBLIC",
+      "canonical_asset_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/aa/20/45aa20c1-2c28-3bc1-ad2e-43064414568a/02-handwriting.png/480x640bb.jpg",
+      "sha256": "488476e5b43f72ec9c9742982aa6cc25b96065e174af7df2f1ada56686d6c7d7",
+      "width": 295,
+      "height": 640,
+      "contains_text": true,
+      "content_locale": "en-US",
+      "evidence": {
+        "app_store_url": "https://apps.apple.com/us/app/id6798813048",
+        "published_version": "1.0.2",
+        "source_sha256": "488476e5b43f72ec9c9742982aa6cc25b96065e174af7df2f1ada56686d6c7d7",
+        "rights_status": "FIRST_PARTY_INTERFACE_REVIEWED",
+        "rights_basis": "The publisher's already-public app screenshot contains its note interface, short factual study notes and a simple hand-drawn diagram; no identifiable person, private patient record, third-party photograph or borrowed review is present. This is not a new licence grant for the image.",
+        "result_status": "VISIBLE_PUBLISHED_RESULT_ONLY",
+        "reviewed_on": "2026-09-11",
+        "review_ref": "public-image-review:2026-09-11:notes-handwriting",
+        "original_evidence_ref": "asc-conversion-surface-review:2026-09-10:notes-handwriting"
+      },
+      "localizations": {
+        "en-US": {
+          "alt": "A 100 Notes Studio page titled Neurology Lecture Notes, with handwritten study notes, checkboxes and a small diagram.",
+          "caption": "The published example shows a filled note page with handwriting, a checklist and a drawing on the same canvas.",
+          "nearby_text": "For lecture notes that mix writing and sketches, this 100 Notes Studio screenshot shows the resulting page rather than an empty notebook cover.",
+          "limitation": "This screenshot shows the note canvas only. It does not verify PDF export, audio playback, an iPad workflow or a particular free-versus-paid entitlement.",
+          "native_review": {
+            "locale": "en-US",
+            "copy_sha256": "dcd3b6ccbabbaaf81affe106f6199b350cefad5074b9becf4d2eb9a6044b8b2d",
+            "review_ref": "publisher-image-copy-review:2026-09-11:notes-handwriting:en-US"
+          }
+        }
+      }
+    },
+    {
+      "id": "onepage-editor",
+      "app_key": "onepageppt",
+      "kind": "published_app_result",
+      "status": "APPROVED_PUBLIC",
+      "canonical_asset_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/ab/cb/ceabcb12-07c3-d55c-d253-79fb1686252c/03-editor.png/480x640bb.jpg",
+      "sha256": "392778ef7c930ba55e2130667ca5aec941fce4bb5ab9d8553cee22a61d16b9c5",
+      "width": 295,
+      "height": 640,
+      "contains_text": true,
+      "content_locale": "en-US",
+      "evidence": {
+        "app_store_url": "https://apps.apple.com/us/app/id6798814385",
+        "published_version": "1.0",
+        "source_sha256": "392778ef7c930ba55e2130667ca5aec941fce4bb5ab9d8553cee22a61d16b9c5",
+        "rights_status": "FIRST_PARTY_INTERFACE_REVIEWED",
+        "rights_basis": "The publisher's already-public app screenshot contains its slide editor and an illustrative coffee-launch layout made from text and simple charts. It contains no identifiable person, third-party photograph or customer testimonial. The example's figures are not presented as business results.",
+        "result_status": "VISIBLE_PUBLISHED_RESULT_ONLY",
+        "reviewed_on": "2026-09-11",
+        "review_ref": "public-image-review:2026-09-11:onepage-editor",
+        "original_evidence_ref": "asc-conversion-surface-review:2026-09-10:onepage-editor"
+      },
+      "localizations": {
+        "en-US": {
+          "alt": "OnePage PPT's editor displaying an illustrative coffee-launch slide with a headline, timeline and charts.",
+          "caption": "The published example shows a composed slide layout in the editor, above the layout and export controls.",
+          "nearby_text": "For turning an outline into a visual brief, this OnePage PPT screenshot shows the composed slide on screen. The coffee-launch content is an example, not a real business case study.",
+          "limitation": "A visible Export button does not prove an editable PPTX export. No downloaded file, round-trip edit test or measured productivity benefit is claimed here.",
+          "native_review": {
+            "locale": "en-US",
+            "copy_sha256": "91374a26d269168ee61a2ed9b391152c331e32fc0ce4d2bc4a25524c07e2d5fc",
+            "review_ref": "publisher-image-copy-review:2026-09-11:onepage-editor:en-US"
+          }
+        }
+      }
+    }
+  ],
+  "rejected_candidates": [
+    {"id": "unblurry-comparison", "app_key": "unblurry", "locale": "en-US", "status": "BLOCKED_EVIDENCE", "reason": "Published portrait comparison lacks source-photo licence and model-release proof; do not imply independently measured restoration."},
+    {"id": "unblurry-comparison-ja", "app_key": "unblurry", "locale": "ja", "status": "BLOCKED_EVIDENCE", "reason": "A native Japanese caption does not replace missing source-photo licence and likeness-rights evidence."},
+    {"id": "bopomofo-tones", "app_key": "lumibopomofo", "locale": "en-US", "status": "BLOCKED_EVIDENCE", "reason": "An activity interface is not a completed tracing or learning result; illustration rights are not documented in this inventory."},
+    {"id": "bopomofo-sounds", "app_key": "lumibopomofo", "locale": "en-US", "status": "BLOCKED_EVIDENCE", "reason": "A sound-selection interface does not demonstrate a completed learner result."},
+    {"id": "bopomofo-map-tw", "app_key": "lumibopomofo", "locale": "zh-Hant", "status": "BLOCKED_EVIDENCE", "reason": "A localized phonetic map does not prove the completed tracing result sought by the image task."},
+    {"id": "scanto-library", "app_key": "scanto", "locale": "en-US", "status": "BLOCKED_EVIDENCE", "reason": "Document thumbnails do not prove readable exported scans or a receipt-body search hit."},
+    {"id": "notes-styles", "app_key": "notesstudio100", "locale": "en-US", "status": "BLOCKED_EVIDENCE", "reason": "The notebook-style picker is not a completed note or export result."},
+    {"id": "onepage-input", "app_key": "onepageppt", "locale": "en-US", "status": "BLOCKED_EVIDENCE", "reason": "The content tray is an input state, not a composed or exported slide."}
+  ],
+  "unproven_claims": [
+    {"app_key": "lumibopomofo", "claim": "Completed tracing result", "status": "BLOCKED_EVIDENCE"},
+    {"app_key": "scanto", "claim": "Receipt-body OCR search hit", "status": "BLOCKED_EVIDENCE"},
+    {"app_key": "notesstudio100", "claim": "Complete iPad PDF, handwriting and page-audio result", "status": "BLOCKED_EVIDENCE"},
+    {"app_key": "onepageppt", "claim": "Exported PPTX with inspected editable text and shapes", "status": "BLOCKED_EVIDENCE"}
+  ]
+}

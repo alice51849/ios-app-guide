@@ -125,12 +125,14 @@ LOCALE_LANGUAGE = {
     "zh-Hant": "zh-Hant",
     "fr-FR": "fr",
     "ja": "ja",
+    "de-DE": "de",
 }
 CULTURE_MARKERS = {
     "en-US": ("US", "United States"),
     "zh-Hant": ("台灣", "臺灣"),
     "fr-FR": ("France", "français"),
     "ja": ("日本",),
+    "de-DE": ("Deutschland", "deutsch"),
 }
 COPY_FIELDS = frozenset(
     {
@@ -170,6 +172,48 @@ INVENTORY_CONTRACT_FIELDS = frozenset(
     }
 )
 UI = {
+    "de-DE": {
+        "eyebrow": "Entscheidungshilfe vom Entwickler",
+        "intent_types": {
+            "problem_aware": "Konkretes Problem",
+            "alternative": "Alternative",
+            "workflow": "Arbeitsablauf",
+            "privacy_pay_once": "Datenschutz und Einmalkauf",
+        },
+        "situation": "Ihre Situation",
+        "rule": "So treffen Sie die Entscheidung",
+        "checks": "Den Ablauf prüfen",
+        "alternative": "Wann eine andere Lösung besser passt",
+        "evidence": "Produktnachweise aus erster Hand",
+        "vocabulary": "Veröffentlichte Aufgabenbegriffe",
+        "candidate_queries": "Suchbegriffe für Aufgaben im Test",
+        "candidate_queries_note": "Diese Begriffe sind noch nicht überprüft. Suchvolumen, Platzierungen und veröffentlichte Quellen sind nicht nachgewiesen.",
+        "verify": "Vor der Installation prüfen",
+        "store": "Im App Store ansehen",
+        "source": "Quelle",
+        "purchase_model": {
+            "paid_upfront": "Kostenpflichtiger Download",
+            "free_with_lifetime_unlock": "Kostenlos starten, einmalig freischalten",
+            "free": "Kostenlos",
+            "flexible": "Aktuelles Kaufmodell prüfen",
+            "neutral": "Aktuelles Kaufmodell prüfen",
+        },
+        "one_time_option": "Das Verzeichnis des Entwicklers nennt eine Option mit einmaligem Kauf.",
+        "feature_labels": {
+            "Free to start": "Kostenlos starten",
+            "One-time unlock": "Einmalige Freischaltung",
+            "No subscription": "Ohne Abonnement",
+        },
+        "capabilities": {
+            "offline": "Das Entwicklerverzeichnis nennt die Nutzung ohne Internet.",
+            "no_account": "Laut Entwicklerverzeichnis ist kein Konto erforderlich.",
+            "no_ads": "Das Entwicklerverzeichnis nennt die Nutzung ohne Werbung.",
+            "no_tracking": "Das Entwicklerverzeichnis nennt die Nutzung ohne Tracking.",
+            "private_or_on_device": "Das Entwicklerverzeichnis nennt eine private oder lokale Verarbeitung.",
+            "widget": "Das Entwicklerverzeichnis nennt ein Widget für den Home-Bildschirm.",
+            "apple_watch": "Das Entwicklerverzeichnis nennt die Unterstützung für Apple Watch.",
+        },
+    },
     "en-US": {
         "eyebrow": "First-party decision route",
         "intent_types": {
@@ -616,6 +660,7 @@ def _validate_native_text(
         "zh-Hant": r"[\u3400-\u9fff]",
         "ja": r"[\u3040-\u30ff]",
         "fr-FR": r"\b(?:les|des|une|pour|sans|avec|vous|votre|vos|de|un)\b",
+        "de-DE": r"\b(?:der|die|das|ein|eine|und|mit|für|ohne|Sie|sich|den|ist|werden|kann|kostenlos|freischaltung)\b",
     }
     if locale not in patterns:
         raise ValueError(f"No native-copy validator for {locale}")
@@ -641,7 +686,7 @@ def _native_copy(locale: str, copy: dict[str, Any]) -> None:
     _validate_native_text(
         locale,
         joined,
-        minimum={"en-US": 90, "zh-Hant": 80, "ja": 100, "fr-FR": 20}[locale],
+        minimum={"en-US": 90, "zh-Hant": 80, "ja": 100, "fr-FR": 20, "de-DE": 20}[locale],
     )
     if not any(
         marker in str(copy["culture_route"])

@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -109,18 +110,63 @@ class AlternativesExact50Tests(unittest.TestCase):
 
     @staticmethod
     def _production_guide() -> Path:
+        """解析出要驗的 Guide checkout;**絕不**默默退回一棵沒人綁定的工作樹。
+
+        原本最後會退回 `~/00_GrowthEngine/geo/pages`。那是多個 session 共用的巢狀
+        checkout,實測可以落後遠端數百個 commit(2026-09-12 當下落後 291 個),
+        於是這裡會拿**過期內容**去驗「production」:canonical 還停在遷移前的
+        github.io、geo-daily.yml 還沒有 producer 區塊,測試失敗指向的卻是早就修好的
+        東西。沉默地驗錯一棵樹,比不驗還糟。
+
+        現在:repo 內找得到就用;否則必須由 `ALTERNATIVES_GUIDE_REPOSITORY` 明確
+        綁定;都沒有就回 None,由呼叫端 skip 並講清楚原因。
+        """
         repository_or_worktrees = Path(__file__).resolve().parents[3]
-        guide = repository_or_worktrees
-        if not (guide / "data" / "verified-ios-app-finder-catalog.json").is_file():
-            guide = repository_or_worktrees / "guide-alternatives-a"
-        if not (guide / "data" / "verified-ios-app-finder-catalog.json").is_file():
-            guide = Path(
-                os.environ.get(
-                    "ALTERNATIVES_GUIDE_REPOSITORY",
-                    Path.home() / "00_GrowthEngine" / "geo" / "pages",
-                )
+        for candidate in (
+            repository_or_worktrees,
+            repository_or_worktrees / "guide-alternatives-a",
+        ):
+            if (candidate / "data" / "verified-ios-app-finder-catalog.json").is_file():
+                return candidate
+        override = os.environ.get("ALTERNATIVES_GUIDE_REPOSITORY", "").strip()
+        if override:
+            return Path(override).expanduser()
+        return None
+
+    def _require_production_guide(self) -> Path:
+        """取得 Guide checkout,並確認它不是過期的樹。"""
+        guide = self._production_guide()
+        if guide is None:
+            self.skipTest(
+                "沒有綁定 Guide checkout:請設 ALTERNATIVES_GUIDE_REPOSITORY 指向"
+                "目前的 ios-app-guide 工作樹。刻意不再默默退回共用的 geo/pages,"
+                "那棵樹可能落後遠端數百個 commit,會驗出假的失敗。"
+            )
+        stale = self._guide_commits_behind(guide)
+        if stale:
+            self.fail(
+                f"Guide checkout 落後其 origin/main {stale} 個 commit({guide});"
+                "用過期內容驗 production 只會產生假結果。請先更新該 checkout,"
+                "或用 ALTERNATIVES_GUIDE_REPOSITORY 指向最新的工作樹。"
             )
         return guide
+
+    @staticmethod
+    def _guide_commits_behind(guide: Path) -> int:
+        """回傳落後 origin/main 幾個 commit;無法判斷時回 0(不阻擋)。"""
+        try:
+            result = subprocess.run(
+                ["git", "-C", str(guide), "rev-list", "--count", "HEAD..origin/main"],
+                capture_output=True, text=True, timeout=60, check=False,
+            )
+        except (OSError, subprocess.SubprocessError):
+            return 0
+        if result.returncode != 0:
+            return 0
+        try:
+            return int(result.stdout.strip() or "0")
+        except ValueError:
+            return 0
 
     def test_production_manifest_is_fixed_by_ranked_and_curated_evidence(self) -> None:
         manifest = alternatives.load_manifest(alternatives.DEFAULT_MANIFEST)
@@ -210,7 +256,7 @@ class AlternativesExact50Tests(unittest.TestCase):
             )
 
     def test_production_render_has_exact_urls_attribution_and_no_fallback(self) -> None:
-        guide = self._production_guide()
+        guide = self._require_production_guide()
         catalog = guide / alternatives.DEFAULT_CATALOG_RELATIVE
         inventory = guide / alternatives.DEFAULT_INVENTORY_RELATIVE
         if not catalog.is_file() or not inventory.is_file():
@@ -253,7 +299,7 @@ class AlternativesExact50Tests(unittest.TestCase):
 
     def test_geo_daily_wires_producer_before_sitemap_closure(self) -> None:
         workflow = (
-            self._production_guide()
+            self._require_production_guide()
             / ".github"
             / "workflows"
             / "geo-daily.yml"

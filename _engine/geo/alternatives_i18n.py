@@ -19,6 +19,8 @@ import re
 from typing import Any, Iterable
 from urllib.parse import parse_qsl, urlsplit
 from uuid import uuid4
+
+import app_store_storefronts
 from xml.sax.saxutils import escape as xml_escape
 
 from official_locales import OFFICIAL_LOCALES
@@ -416,7 +418,7 @@ def load_catalog(
             or raw.get("is_ranking") is not False
             or raw.get("verified_live") is not True
             or raw.get("canonical_app_store_url")
-            != f"https://apps.apple.com/app/id{app_id}"
+            != app_store_storefronts.canonical_app_store_url_for(app_id, locale)
         ):
             raise ValueError(f"Untruthful publisher intent record: {identity}")
         guide_prefix = f"{site}/{locale}/"

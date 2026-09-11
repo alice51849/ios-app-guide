@@ -32,6 +32,7 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     LOCALE_STOREFRONTS,
+    STOREFRONT_ROUTED_LOCALES,
     campaign_app_store_url,
     load_storefront_availability,
     load_storefront_details,
@@ -1574,7 +1575,7 @@ def build_one(key, locale, all_locales):
     # button beside it.  Mint the final token from the same authority instead.
     campaign = gen_store_attribution.campaign_token(f"{locale}/{key}.html")
     url = appstore_url(key, campaign) or f"{SITE}/{locale}/{key}.html"
-    if key in APPSTORE and locale == "bn-BD":
+    if key in APPSTORE and locale in STOREFRONT_ROUTED_LOCALES:
         url = campaign_app_store_url(
             localized_app_store_url(
                 f"https://apps.apple.com/app/id{APPSTORE[key]}", locale

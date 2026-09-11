@@ -148,6 +148,19 @@ def _update_schema(
                 matches.append(node)
         records.append((match, document, nodes))
     if len(matches) != 1:
+        if detail is None:
+            # 沒有可驗證的商店資料時,這支的職責是**移除**頁面上不實的 facts。
+            # 此時若找不到預期的 MobileApplication 節點(例如該語系頁還沒完成身分
+            # schema 遷移),硬性 raise 只會讓不可驗證的 facts 區塊**繼續留在已發布
+            # 頁面上**,與 fail-closed 的目的正好相反 —— 實測 bn-BD 就是這個狀況:
+            # 2026-09-11 把 bn-BD 改路由到 bd storefront 後,Apple 對 BD 沒有任何
+            # 資料(公開 lookup resultCount=0),詳情快照因此沒有 bd,而 47 個
+            # bn-BD 頁面仍掛著遷移前的 facts 區塊,這支卻在移除它們之前就先爆掉。
+            #
+            # 只放寬「移除」這條路徑:沒有節點可改就不改,呼叫端照樣會把 facts 與
+            # style 區塊拿掉。要**寫入** facts 時(detail 不為 None)維持嚴格要求,
+            # 因為那時 schema 必須存在才能接收 offers。
+            return source
         raise ValueError(
             f"Expected one MobileApplication for {app_id} in {path}: "
             f"{len(matches)}"

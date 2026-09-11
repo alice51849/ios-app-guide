@@ -1,0 +1,95 @@
+name: Deploy owned surface discovery only
+
+on:
+  workflow_dispatch:
+    inputs:
+      expected_guide_sha:
+        description: "已通過獨立審查的 Guide commit"
+        required: true
+        type: string
+      base_deploy_run:
+        description: "目前已上線 Pages artifact 的 workflow run ID"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.expected_guide_sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Verify reviewed source and current deployed baseline
+        env:
+          EXPECTED_GUIDE_SHA: ${{ inputs.expected_guide_sha }}
+          BASE_DEPLOY_RUN: ${{ inputs.base_deploy_run }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          [[ "$EXPECTED_GUIDE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$BASE_DEPLOY_RUN" =~ ^[0-9]+$ ]]
+          test "$(git rev-parse HEAD)" = "$EXPECTED_GUIDE_SHA"
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+          sys.path.insert(0, "_engine/geo")
+          from owned_app_surfaces_deploy import current_baseline
+          repo = os.environ["GITHUB_REPOSITORY"]
+          def api(path):
+              return json.loads(subprocess.check_output(["gh", "api", path], text=True))
+          current_baseline(
+              api(f"repos/{repo}/deployments?environment=github-pages&per_page=20"),
+              lambda identifier: api(f"repos/{repo}/deployments/{identifier}/statuses?per_page=1"),
+              repository=repo, expected_run=os.environ["BASE_DEPLOY_RUN"],
+              current_run=os.environ["GITHUB_RUN_ID"],
+          )
+          print("Current deployed artifact verified.")
+          PY
+          python3 -m unittest discover -s _engine/geo/tests -p test_owned_app_surfaces.py -q
+          python3 _engine/geo/owned_app_surfaces.py \
+            --pages . \
+            --output data/owned-app-surfaces-cee.json \
+            --review _engine/geo/owned_app_surfaces_native_review.json \
+            --check
+      - name: Download current production artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: github-pages
+          run-id: ${{ inputs.base_deploy_run }}
+          github-token: ${{ github.token }}
+          path: .owned-overlay/baseline
+      - name: Overlay discovery without rebuilding feeds or conversion pages
+        run: |
+          python3 _engine/geo/owned_app_surfaces_deploy.py \
+            --archive .owned-overlay/baseline/artifact.tar \
+            --manifest data/owned-app-surfaces-cee.json \
+            --output .owned-overlay/site \
+            --evidence .owned-overlay/unchanged-byte-evidence.json
+      - name: Save preservation evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: owned-surface-preservation
+          path: .owned-overlay/unchanged-byte-evidence.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .owned-overlay/site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

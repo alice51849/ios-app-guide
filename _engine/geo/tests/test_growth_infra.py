@@ -12376,6 +12376,29 @@ class GeneratorTests(unittest.TestCase):
             )
         zhuyin_dcat_catalog.build(pages, app_public=False)
 
+    def test_zhuyin_resourcesync_sitemap_stays_in_verified_prefix(self):
+        document = ET.fromstring(zhuyin_resourcesync.render_sitemap(
+            "2026-09-11", {"en": "2026-09-09", "zh-Hant": "2026-09-10"}
+        ))
+        namespace = {"s": zhuyin_resourcesync.SITEMAP_NAMESPACE}
+        locations = [node.text for node in document.findall("s:url/s:loc", namespace)]
+        self.assertEqual({
+            zhuyin_resourcesync.LANDING_URL,
+            zhuyin_resourcesync.ZH_LANDING_URL,
+            zhuyin_resourcesync.SOURCE_DESCRIPTION_COPY_URL,
+            zhuyin_resourcesync.CAPABILITY_LIST_URL,
+            zhuyin_resourcesync.RESOURCE_LIST_URL,
+            zhuyin_resourcesync.COLLECTION_URL,
+        }, set(locations))
+        self.assertEqual(6, len(locations))
+        self.assertNotIn(zhuyin_resourcesync.SOURCE_DESCRIPTION_URL, locations)
+        prefix = urllib.parse.urlsplit(zhuyin_resourcesync.SITE.rstrip("/") + "/")
+        for location in locations:
+            with self.subTest(location=location):
+                actual = urllib.parse.urlsplit(location)
+                self.assertEqual((prefix.scheme, prefix.netloc), (actual.scheme, actual.netloc))
+                self.assertTrue(actual.path.startswith(prefix.path))
+
     def test_zhuyin_resourcesync_is_complete_verifiable_and_discoverable(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

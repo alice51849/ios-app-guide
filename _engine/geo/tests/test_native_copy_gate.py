@@ -138,26 +138,51 @@ class PurchaseModelTests(unittest.TestCase):
         )
         self.assertTrue(hard)
 
-    def test_negation_is_bound_to_the_free_word(self):
-        """否定詞必須真的在否定「免費」,而不是同一句裡否定別的東西。"""
-        claims = (
-            ("bn-BD", "বিনামূল্যে শুরু করুন।"),          # 免費詞自己含 `না`
-            ("bn-BD", "নাম লিখুন, ফ্রি ট্রায়াল নিন।"),   # `নাম` 不是否定詞
-            ("hi", "no ads, free trial."),               # 否定的是廣告
-            ("hi", "Works without ads, try free today."),
-        )
-        for locale, text in claims:
-            with self.subTest(text=text):
+    FALSE_FREE_CLAIMS = (
+        ("bn-BD", "বিনামূল্যে শুরু করুন।"),            # 免費詞自己含 `না`
+        ("bn-BD", "নাম লিখুন, ফ্রি ট্রায়াল নিন।"),     # `নাম` 不是否定詞
+        ("hi", "no ads, free trial."),                 # 否定的是廣告
+        ("hi", "Works without ads, try free today."),
+        ("hi", "Free trial, then buy once."),          # 首字大寫
+        ("hi", "कोई विज्ञापन नहीं। मुफ़्त आज़माएँ।"),
+        ("hi", "बिना विज्ञापन मुफ़्त आज़माएँ।"),          # 否定貼著「廣告」
+        ("hi", "बिना किसी शुल्क के आज़माएँ।"),           # 「不用付費」也是免費訴求
+        ("hi", "पहले मुफ़्त आज़माएँ, फिर एक बार खरीदें।"),
+        ("or-IN", "ଆରମ୍ଭ ମାଗଣା"),
+        ("te-IN", "ఎలాంటి రుసుము లేకుండా ప్రయత్నించండి."),
+        ("kn-IN", "ಶುಲ್ಕವಿಲ್ಲದೆ ಪ್ರಯತ್ನಿಸಿ."),
+        ("ml-IN", "സൗജന്യമായി തുടങ്ങാം."),
+        ("gu-IN", "મફત અજમાવો."),
+        ("mr-IN", "विनाशुल्क वापरून पहा."),
+        ("ta-IN", "இலவசமாக முயற்சிக்கவும்."),
+    )
+    HONEST_STATEMENTS = (
+        ("hi", "No free trial; buy once."),
+        ("hi", "मुफ़्त नहीं है, एक बार खरीदें।"),
+        ("hi", "विज्ञापन-मुक्त ऐप"),
+        ("hi", "यह ऐप ad-free है"),
+        ("or-IN", "ଏହା ମାଗଣା ନୁହେଁ; ଥରେ କିଣନ୍ତୁ।"),
+        ("or-IN", "ବିଜ୍ଞାପନ ମୁକ୍ତ ଶିଶୁ ଆପ୍"),
+        ("ta-IN", "இது இலவசம் இல்லை; ஒரு முறை மட்டும் பணம்."),
+        ("ta-IN", "இலவசம் அல்ல"),
+        ("ta-IN", "இலவசமல்ல"),          # 否定黏在同一個詞裡
+        ("ml-IN", "ഇത് സൗജന്യമല്ല."),
+        ("kn-IN", "ಇದು ಉಚಿತವಲ್ಲ."),
+        ("te-IN", "ఇది ఉచితం కాదు."),
+        ("gu-IN", "આ મફત નથી."),
+        ("pa-IN", "ਇਹ ਮੁਫ਼ਤ ਨਹੀਂ ਹੈ।"),
+    )
+
+    def test_false_free_claims_on_a_paid_app_are_caught(self):
+        for locale, text in self.FALSE_FREE_CLAIMS:
+            with self.subTest(locale=locale, text=text):
                 hard, _soft = gate.purchase_model_defects(text, locale, "paid_upfront")
                 self.assertTrue(hard, text)
 
-        honest = (
-            ("hi", "No free trial; buy once."),
-            ("or-IN", "ଏହା ମାଗଣା ନୁହେଁ; ଥରେ କିଣନ୍ତୁ।"),
-            ("hi", "विज्ञापन-मुक्त ऐप"),
-        )
-        for locale, text in honest:
-            with self.subTest(text=text):
+    def test_honest_pricing_statements_are_not_flagged(self):
+        """否定必須貼著免費詞才算數,否則誠實文案會被閘門逼著改錯。"""
+        for locale, text in self.HONEST_STATEMENTS:
+            with self.subTest(locale=locale, text=text):
                 hard, _soft = gate.purchase_model_defects(text, locale, "paid_upfront")
                 self.assertEqual([], hard, text)
 

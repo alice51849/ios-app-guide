@@ -251,7 +251,24 @@ FREE_WORDS = {
     "ta-IN": ("இலவச",),
     "te-IN": ("ఉచిత", "ఫ్రీ"),
 }
-ENGLISH_FREE_WORDS = ("free download", "free trial", "free to start", "try free")
+ENGLISH_FREE_WORDS = (
+    "free download", "free trial", "free to start", "try free",
+    "free of charge", "at no cost", "no cost",
+)
+# 「不用付錢」也是免費訴求,只是寫成否定句;整個片語要當成一個免費詞比對,
+# 否則片語裡的 `बिना`／`ବିନା` 會被誤認成在否定免費。
+NO_COST_PHRASES = {
+    "bn-BD": ("বিনা খরচে", "কোনো খরচ ছাড়াই"),
+    "gu-IN": ("વિના મૂલ્યે", "કોઈ ખર્ચ વગર"),
+    "hi": ("बिना किसी शुल्क", "बिना शुल्क", "बिना पैसे"),
+    "kn-IN": ("ಶುಲ್ಕವಿಲ್ಲದೆ", "ಯಾವುದೇ ಶುಲ್ಕವಿಲ್ಲ"),
+    "ml-IN": ("ഫീസില്ലാതെ", "പണം നൽകാതെ"),
+    "mr-IN": ("विनाशुल्क", "कोणतेही शुल्क न"),
+    "or-IN": ("ବିନା ଶୁଳ୍କ", "କୌଣସି ଶୁଳ୍କ ନାହିଁ"),
+    "pa-IN": ("ਬਿਨਾਂ ਫ਼ੀਸ", "ਕੋਈ ਫ਼ੀਸ ਨਹੀਂ"),
+    "ta-IN": ("கட்டணமின்றி", "கட்டணம் இல்லாமல்"),
+    "te-IN": ("రుసుము లేకుండా", "ఎలాంటి రుసుము లేకుండా"),
+}
 SUBSCRIPTION_WORDS = {
     "bn-BD": ("সাবস্ক্রিপশন", "সদস্যতা"),
     "gu-IN": ("સબસ્ક્રિપ્શન",),
@@ -265,12 +282,16 @@ SUBSCRIPTION_WORDS = {
     "te-IN": ("సబ్‌స్క్రిప్షన్", "సబ్స్క్రిప్షన్", "చందా"),
 }
 NEGATION_MARKERS = (
-    "नहीं", "बिना", "नाही", "নেই", "না", "নয়", "ছাড়া", "இல்லை", "இன்றி",
+    "नहीं", "बिना", "नाही", "নেই", "না", "নয়", "ছাড়া", "இல்லை", "இன்றி", "அல்ல",
     "ಇಲ್ಲ", "ಅಲ್ಲ", "ഇല്ല", "ഇല്ലാതെ", "അല്ല", "లేదు", "లేకుండా", "కాదు",
     "ਨਹੀਂ", "ਬਿਨਾਂ", "નથી", "વગર", "ନାହିଁ", "ନୁହେଁ", "ବିନା",
 )
 # 拉丁字否定詞需要單字邊界:`no` 不可以命中 `note`,`not` 不可以命中 `nothing`。
 LATIN_NEGATION_RE = re.compile(r"\b(?:no|not|never|without)\b")
+# 達羅毗荼語系會把否定黏在同一個詞裡(`സൗജന്യമല്ല`、`ಉಚಿತವಲ್ಲ`、`இலவசமல்ல`
+# = 「不是免費的」)。只看免費詞**之後**的詞尾,才不會被 `বিনামূল্যে` 這種
+# 字面含否定音節的免費詞騙到。
+FUSED_NEGATION_SUFFIXES = ("ല്ല", "ಲ್ಲ", "ல்ல", "కాదు", "లేదు", "ಅಲ್ಲ")
 HYPHENS = "-\u2010\u2011\u2012\u2013\u2014"
 PAID_UPFRONT_MODELS = frozenset({"paid_upfront", "paid"})
 FREE_TO_START_MODELS = frozenset(
@@ -300,32 +321,74 @@ def _clause_bounds(text: str, index: int) -> tuple[int, int]:
     return start, end
 
 
+def _is_negated_free_claim(text: str, start: int, end: int) -> bool:
+    """免費詞是不是真的被否定了。
+
+    否定必須**貼著**免費詞:`No free trial`、`இலவசம் இல்லை`、`ମାଗଣା ନୁହେଁ`
+    是誠實說明;`बिना विज्ञापन मुफ़्त आज़माएँ`、`no ads, free trial` 的否定講的
+    是廣告,後面的免費訴求依然成立,用整個子句判斷會把後者一起放掉。
+    另外達羅毗荼語系會把否定黏進同一個詞(`സൗജന്യമല്ല`、`ಉಚಿತವಲ್ಲ`、
+    `இலவசமல்ல`),所以也要看免費詞**之後**的詞尾;只看詞尾才不會被
+    `বিনামূল্যে` 這種字面含否定音節的免費詞騙到。
+    """
+    needle_end = end
+    while start > 0 and not text[start - 1].isspace():
+        start -= 1
+    while end < len(text) and not text[end].isspace():
+        end += 1
+    token_suffix = text[needle_end:end]
+    if any(suffix in token_suffix for suffix in FUSED_NEGATION_SUFFIXES):
+        return True
+
+    neighbours = []
+    before = text[:start]
+    after = text[end:]
+    gap_before = before[len(before.rstrip()):]
+    trimmed_before = before.rstrip()
+    if not CLAUSE_BOUNDARY_RE.search(gap_before) and trimmed_before:
+        previous = trimmed_before.split()[-1]
+        if not CLAUSE_BOUNDARY_RE.search(previous[-1:]):
+            neighbours.append(previous)
+    gap_after = after[: len(after) - len(after.lstrip())]
+    trimmed_after = after.lstrip()
+    if not CLAUSE_BOUNDARY_RE.search(gap_after) and trimmed_after:
+        neighbours.append(trimmed_after.split()[0])
+
+    for neighbour in neighbours:
+        if any(marker in neighbour for marker in NEGATION_MARKERS):
+            return True
+        if LATIN_NEGATION_RE.search(neighbour.casefold()):
+            return True
+    return False
+
+
 def free_claim_spans(text: str, locale: str) -> list[tuple[int, int, str]]:
-    """真正在宣稱「免費」的位置(排除 `-free` 複合詞與同一子句內被否定的用法)。"""
+    """真正在宣稱「免費」的位置。
+
+    排除 `-free` 複合詞(`स्क्रीन-फ्री`、`ad-free`)與緊鄰否定詞的誠實說明。
+    """
     text = str(text or "")
     # 一律用 casefold 後的字串搜尋:Indic 文字沒有大小寫,英文的
     # 「Free trial」不可以因為首字大寫就漏掉。
     folded = text.casefold()
+    words = (
+        list(NO_COST_PHRASES.get(locale, ()))
+        + list(FREE_WORDS.get(locale, ()))
+        + list(ENGLISH_FREE_WORDS)
+    )
     spans = []
-    for word in list(FREE_WORDS.get(locale, ())) + list(ENGLISH_FREE_WORDS):
+    for word in words:
         needle = word.casefold()
         start = folded.find(needle)
         while start != -1:
             end = start + len(needle)
             preceded_by_hyphen = start > 0 and text[start - 1] in HYPHENS
-            clause_start, clause_end = _clause_bounds(text, start)
-            # 把免費詞本身從否定詞搜尋範圍挖掉:孟加拉語的 `বিনামূল্যে`
-            # 字面上就含有否定詞 `না`,不挖掉的話永遠判不出假免費訴求。
-            clause = (
-                text[clause_start:start]
-                + " " * (end - start)
-                + text[end:clause_end]
+            negated = _is_negated_free_claim(text, start, end)
+            covered = any(
+                other_start <= start and end <= other_end
+                for other_start, other_end, _other in spans
             )
-            folded_clause = clause.casefold()
-            negated = any(
-                marker in clause for marker in NEGATION_MARKERS
-            ) or bool(LATIN_NEGATION_RE.search(folded_clause))
-            if not preceded_by_hyphen and not negated:
+            if not preceded_by_hyphen and not negated and not covered:
                 spans.append((start, end, word))
             start = folded.find(needle, end)
     return sorted(spans)
@@ -353,15 +416,7 @@ def purchase_model_defects(
         for word in SUBSCRIPTION_WORDS.get(locale, ()):
             index = text.find(word)
             while index != -1:
-                clause_start, clause_end = _clause_bounds(text, index)
-                clause = (
-                    text[clause_start:index]
-                    + " " * len(word)
-                    + text[index + len(word):clause_end]
-                )
-                if not any(
-                    marker in clause for marker in NEGATION_MARKERS
-                ) and not LATIN_NEGATION_RE.search(clause.casefold()):
+                if not _is_negated_free_claim(text, index, index + len(word)):
                     soft.append(f"ambiguous_subscription_mention:{word}")
                     break
                 index = text.find(word, index + len(word))

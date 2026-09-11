@@ -40,6 +40,7 @@ from app_store_storefronts import (  # noqa: E402
     localized_storefront_detail,
     verified_app_store_url,
 )
+import market_availability  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import gen_store_attribution  # noqa: E402
 from external_app_locales import (  # noqa: E402
@@ -94,6 +95,21 @@ KEY2DATA = {
     "tripbee": "tripbee_full.json",
     "tripplanet": "tripplanet_full.json",
 }
+
+# 沒有可驗證市場時顯示的母語說明。只放**有證據**的 locale;其餘語言以 en-US 兜底,
+# 且只有在同樣沒有市場時才用得到(目前只有 bn-BD)。文案直述事實,不做承諾。
+MARKET_UNAVAILABLE_NOTES = {
+    "bn-BD": (
+        "Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে "
+        "{name}-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। "
+        "অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।"
+    ),
+    "en-US": (
+        "The Apple App Store is not available in this country or region yet, "
+        "so we cannot provide a direct download link for {name} here."
+    ),
+}
+
 
 SCHEMA_CAT = {
     "photo-utility": "PhotographyApplication",
@@ -1582,7 +1598,29 @@ def build_one(key, locale, all_locales):
             ),
             campaign,
         )
+    # 沒有可驗證市場的 locale 一律不給連結。權威在 market_availability;
+    # bn-BD 的依據是 Apple 官方 174 國清單沒有 Bangladesh、/bd/ 會 301 到 /us/、
+    # lookup 與 search country=BD 皆 0。這裡回 None 之後,頁面改渲染母語的
+    # availability 說明,而不是一個指向別國商店的連結,也不是 disabled 死鈕。
+    if market_availability.is_unavailable(locale):
+        url = None
     ui = get_ui(locale)
+    # 沒有市場連結時渲染母語 availability 說明。刻意**不用** disabled 按鈕:
+    # 一個點不動的下載鈕只會讓人以為壞掉,一句說清楚原因的話才是誠實的。
+    if url is None:
+        note = MARKET_UNAVAILABLE_NOTES.get(
+            locale, MARKET_UNAVAILABLE_NOTES["en-US"]
+        ).format(name=name)
+        store_block = (
+            f'<p class="market-availability" '
+            f'data-market-state="{market_availability.MARKET_UNAVAILABLE_OR_UNVERIFIED}">'
+            f"{html.escape(note)}</p>"
+        )
+    else:
+        store_block = (
+            f'<p><a href="{html.escape(url)}">'
+            f'{html.escape(ui["get"].format(name=name))}</a></p>'
+        )
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
     e = html.escape
@@ -1614,8 +1652,7 @@ def build_one(key, locale, all_locales):
         "applicationCategory": cat,
         "inLanguage": locale,
         "description": desc or sub,
-        "url": url,
-        "installUrl": url,
+        **({"url": url, "installUrl": url} if url else {}),
         "featureList": feats,
         "keywords": ", ".join(kws),
     }
@@ -1676,7 +1713,7 @@ def build_one(key, locale, all_locales):
   <p>{e(pricing_text)}</p>
 {faq_section}
   <h2>{e(ui["dl"])}</h2>
-  <p><a href="{e(url)}">{e(ui["get"].format(name=name))}</a></p>
+  {store_block}
 </main>
 </body>
 </html>
@@ -1753,6 +1790,10 @@ def localized_directory_records(locale, keys):
             raise ValueError(
                 f"Missing localized directory subtitle: {key}/{locale}"
             )
+        if market_availability.is_unavailable(locale):
+            # 語系 hub 與 app 頁走同一條判準:沒有可驗證市場就不列商店連結。
+            # 否則 hub 會留下 /bd/ 連結,把讀者送進美國商店 —— 這正是要解除的風險。
+            continue
         canonical_store = appstore_url(key)
         if not canonical_store:
             raise ValueError(f"Live app has no App Store URL: {key}")

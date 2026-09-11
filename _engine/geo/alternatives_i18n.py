@@ -403,7 +403,6 @@ def load_catalog(
             "decision_context",
             "source_persona_query",
             "canonical_guide_url",
-            "canonical_app_store_url",
             "app_store_cta_label",
             "publisher_disclosure",
         ):
@@ -419,6 +418,8 @@ def load_catalog(
             or raw.get("verified_live") is not True
             or raw.get("canonical_app_store_url")
             != app_store_storefronts.canonical_app_store_url_for(app_id, locale)
+            # 沒有可驗證市場時權威回 None,紀錄也必須是 null:寧可沒有連結,
+            # 也不可放一個會把讀者送去別國商店的 URL。
         ):
             raise ValueError(f"Untruthful publisher intent record: {identity}")
         guide_prefix = f"{site}/{locale}/"

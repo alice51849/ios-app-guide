@@ -1808,13 +1808,16 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
             for record in self.records
         }
         self.assertEqual(expected_pairs, actual_pairs)
-        native_ja = sum("ja" in route["locales"] for route in self.source["routes"])
-        self.assertEqual(
-            self.release["app_count"] - native_ja,
-            self.report["locales"]["ja"]["abstained"],
-        )
-        self.assertEqual(native_ja, self.report["locales"]["ja"]["emitted"])
-        self.assertEqual(0, self.report["locales"]["de-DE"]["emitted"])
+        for locale in routes.OFFICIAL_LOCALES:
+            native_count = sum(
+                locale in route["locales"] for route in self.source["routes"]
+            )
+            with self.subTest(locale=locale):
+                self.assertEqual(
+                    self.release["app_count"] - native_count,
+                    self.report["locales"][locale]["abstained"],
+                )
+                self.assertEqual(native_count, self.report["locales"][locale]["emitted"])
 
     def test_product_evidence_resolves_only_from_inventory(self) -> None:
         for record in self.records:

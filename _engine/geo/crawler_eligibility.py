@@ -7,20 +7,23 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import hashlib
+from html import unescape
 import ipaddress
 import json
+import os
 from pathlib import Path
 import re
 import sys
 import time
 import urllib.error
 import urllib.request
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import quote, unquote, urljoin, urlsplit
 import xml.etree.ElementTree as ET
 
 from crawler_policy import (
-    CRAWLER_SOURCES, OFFICIAL_FEED_REDIRECTS, PageSignals, RobotsPolicy, SEARCH_CRAWLERS,
-    TRAINING_CRAWLERS, require_root_scope,
+    CRAWLER_SOURCES, OFFICIAL_FEED_REDIRECTS, PageSignals as PolicyPageSignals,
+    RobotsPolicy, SEARCH_CRAWLERS,
+    PRIVATE_PATHS, TRAINING_CRAWLERS, require_root_scope,
 )
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_ROOT, PUBLIC_SITE
@@ -102,22 +105,96 @@ def check_root_catalog(document: dict) -> list[str]:
     return errors
 
 
-def check_policy(body: str, urls: list[str], root_url: str) -> list[str]:
+def _check_single_policy(policy: RobotsPolicy, urls: list[str], root_url: str) -> list[str]:
     errors = []
-    policy = RobotsPolicy(body)
     for bot in (*SEARCH_CRAWLERS, "UnlistedSearchCrawler"):
         if policy.conflicts(bot):
             errors.append(f"conflicting_rules:{bot}")
         for url in urls:
             if not policy.allowed(bot, url, root_url):
                 errors.append(f"disallowed:{bot}:{url}")
+        for path in PRIVATE_PATHS:
+            if policy.allowed(bot, PUBLIC_ROOT + path, root_url):
+                errors.append(f"private_path_allowed:{bot}:{path}")
     for bot in TRAINING_CRAWLERS:
-        if policy.conflicts(bot) or any(policy.allowed(bot, url, root_url)
-                                       for url in (PUBLIC_SITE + "/", *urls)):
+        if (policy.conflicts(bot)
+                or any(rule.allow and rule.path for rule in policy.rules_for(bot))
+                or any(policy.allowed(bot, url, root_url)
+                       for url in (PUBLIC_ROOT + "/", PUBLIC_SITE + "/", *urls))):
             errors.append(f"training_opt_out_conflict:{bot}")
     if f"{PUBLIC_SITE}/sitemap_index.xml" not in policy.sitemaps:
         errors.append("root_missing_guide_sitemap_index")
     return errors
+
+
+def check_policy(body: str, urls: list[str], root_url: str, *, child_body: str) -> list[str]:
+    """Require a current child mirror without granting it independent authority."""
+    root, child = RobotsPolicy(body), RobotsPolicy(child_body)
+    errors = _check_single_policy(root, urls, root_url)
+    errors.extend(f"child:{error}" for error in _check_single_policy(child, urls, root_url))
+    for bot in (*SEARCH_CRAWLERS, *TRAINING_CRAWLERS, "UnlistedSearchCrawler"):
+        root_rules = {(rule.allow, rule.path) for rule in root.rules_for(bot) if rule.path}
+        child_rules = {(rule.allow, rule.path) for rule in child.rules_for(bot) if rule.path}
+        if root_rules != child_rules:
+            errors.append(f"root_child_policy_mismatch:{bot}")
+    return errors
+
+
+class PageSignals(PolicyPageSignals):
+    """Audit rendering dependencies without changing the deployed root policy."""
+
+    def __init__(self, text: str) -> None:
+        self.base_href: str | None = None
+        super().__init__(text)
+
+    def handle_starttag(self, tag, attrs):
+        data = dict(attrs)
+        if tag == "base" and self.base_href is None and data.get("href"):
+            self.base_href = data["href"]
+        if tag == "link":
+            rel = set((data.get("rel") or "").split())
+            if rel & {"preload", "modulepreload", "manifest"} and not rel & {"stylesheet", "icon"}:
+                self.assets.append(data.get("href") or "")
+        super().handle_starttag(tag, attrs)
+
+
+def scan_public_frontend(pages: Path, root_site: Path) -> dict:
+    """Check published frontend literals before blocking the root tooling folder."""
+    dependencies = []
+    scripts = set()
+    checked = 0
+    for folder, site in ((pages, PUBLIC_SITE), (root_site, PUBLIC_ROOT)):
+        for directory, names, files in os.walk(folder):
+            names[:] = [name for name in names if name not in {
+                ".git", ".github", "_engine", "node_modules",
+            } and not (Path(directory) == root_site and name == "scripts")]
+            for name in files:
+                path = Path(directory) / name
+                if path.suffix not in {".html", ".js", ".mjs", ".css"}:
+                    continue
+                checked += 1
+                url = site + "/" + quote(path.relative_to(folder).as_posix())
+                if path.suffix in {".js", ".mjs"}:
+                    scripts.add(url)
+                text = path.read_text(encoding="utf-8")
+                normalized = unquote(unescape(text)).replace("\\/", "/")
+                if "scripts/" not in normalized:
+                    continue
+                references = re.findall(r"""["'`(]\s*([^"'`()\s<>]+)""", normalized)
+                base = url
+                if path.suffix == ".html":
+                    signals = PageSignals(text)
+                    base = urljoin(url, signals.base_href or "")
+                    references.extend(signals.assets)
+                for literal in references:
+                    target = urljoin(base, unquote(literal))
+                    if (urlsplit(target).netloc == urlsplit(PUBLIC_ROOT).netloc
+                            and unquote(urlsplit(target).path).startswith("/scripts/")):
+                        dependency = {"source": url, "target": target}
+                        if dependency not in dependencies:
+                            dependencies.append(dependency)
+    return {"files_checked": checked, "scripts_dependencies": dependencies,
+            "public_js_urls": sorted(scripts)}
 
 
 def _sitemap_locations(body: str) -> set[str]:
@@ -170,8 +247,14 @@ def local_audit(pages: Path, root_site: Path, app_key: str) -> dict:
         if not path.is_file():
             errors.append(f"missing_asset:{url}")
     urls += sorted(assets)
+    frontend = scan_public_frontend(pages, root_site)
+    errors.extend(f"scripts_frontend_dependency:{item['source']}:{item['target']}"
+                  for item in frontend["scripts_dependencies"])
+    urls += frontend["public_js_urls"]
     root_robots = (root_site / "robots.txt").read_text()
-    errors.extend(check_policy(root_robots, urls, root_url))
+    child_robots = (pages / "robots.txt").read_text()
+    policy_errors = check_policy(root_robots, urls, root_url, child_body=child_robots)
+    errors.extend(policy_errors)
     errors.extend(check_root_catalog(json.loads(
         (root_site / ".well-known/ai-catalog.json").read_text())))
     root_llms = (root_site / "llms.txt").read_text()
@@ -185,6 +268,9 @@ def local_audit(pages: Path, root_site: Path, app_key: str) -> dict:
         "page_count": len(page_urls), "asset_count": len(assets),
         "app_key": app_key, "root_robots_url": root_url,
         "root_robots_sha256": hashlib.sha256(root_robots.encode()).hexdigest(),
+        "child_robots_sha256": hashlib.sha256(child_robots.encode()).hexdigest(),
+        "root_child_policy_parity": not policy_errors,
+        "frontend_scan": frontend,
         "urls": list(dict.fromkeys(urls)),
         "evidence_type": "source_contract_not_crawler_receipt",
     }
@@ -242,7 +328,7 @@ def public_get(url: str) -> dict:
 
 def live_audit(local: dict) -> dict:
     root_url = f"{PUBLIC_ROOT}/robots.txt"
-    # The child copy is inspected but never used to compute crawl permission.
+    # Compare the mirror under root scope; the child URL itself is not authoritative.
     child_url = f"{PUBLIC_SITE}/robots.txt"
     urls = list(dict.fromkeys([
         root_url, child_url, f"{PUBLIC_ROOT}/llms.txt",
@@ -261,10 +347,15 @@ def live_audit(local: dict) -> dict:
             errors.append(f"waf_challenge:{response['url']}")
     root = by_url[root_url]
     root_body = root.get("body", "")
+    child = by_url[child_url]
+    child_body = child.get("body", "")
     if "text/plain" not in dict(root.get("headers", [])).get("content-type", ""):
         errors.append("root_robots_not_text_plain")
+    if "text/plain" not in dict(child.get("headers", [])).get("content-type", ""):
+        errors.append("child_robots_not_text_plain")
+    policy_errors = check_policy(root_body, local["urls"], root_url, child_body=child_body)
+    errors.extend(policy_errors)
     if root["status"] == 200:
-        errors.extend(check_policy(root_body, local["urls"], root_url))
         # Cloudflare may prepend its managed section. The reviewed source must
         # still be present verbatim, not merely an older superficially valid file.
         marker = f"# Authoritative robots URL: {root_url}"
@@ -313,6 +404,13 @@ def live_audit(local: dict) -> dict:
     return {
         "passed": not errors, "errors": errors,
         "root_scope": "origin_root_only", "child_robots_authoritative": False,
+        "root_child_policy_parity": not policy_errors,
+        "scripts_policy": (
+            "blocked_or_unverified" if policy_errors else
+            "allow" if RobotsPolicy(root_body).allowed(
+                "UnlistedSearchCrawler", PUBLIC_ROOT + "/scripts/", root_url,
+            ) else "disallow"
+        ),
         "user_agent": AUDIT_USER_AGENT,
         "crawler_eligibility": {
             bot: "eligible_for_tested_public_urls" if not errors else "blocked_or_unverified"
@@ -324,6 +422,7 @@ def live_audit(local: dict) -> dict:
         "requests": [{key: value for key, value in response.items() if key != "body"}
                      for response in responses],
         "root_robots_body": root_body,
+        "child_robots_body": child_body,
     }
 
 

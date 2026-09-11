@@ -3,7 +3,7 @@
 ## 單一來源
 
 - `data/high_intent_decision_routes_v2.json` schema 4：47 款既有 stable routes、原生決策文案與 11 個 `conversion_contract` 引用。
-- `data/high_intent_conversion_contracts_v1.json`：11 款的 18 組母語首屏、free／paid 界線、排除意圖、live-version 證據與有時間戳的 storefront offer。
+- `data/high_intent_conversion_contracts_v1.json`：11 款的 20 組母語首屏、free／paid 界線、排除意圖、live-version 證據與有時間戳的 storefront offer；完整保留原 18 組，另加 Cyca 台灣與 DoneStamp 德國入口。
 - `conversion_route_contract.py`：fail-closed schema、首屏及可讀取的公開 observation contract。
 - `high_intent_guide_sync_contract.json` 同時封存上述來源與 renderer 的 SHA；部署副本必須逐 byte 相同。
 
@@ -37,9 +37,9 @@ Storefront 金額是帶時間戳的歷史 readback，**不在可見文案或 sch
 
 增量模式仍使用完整非 sparse checkout，但不呼叫 `SiteTreeIndex.scan`、
 `close_sitemap_graph` 或任何整站 HTML 重建。來源推導出的完整 generation
-（目前 57 routes＋5 fixed outputs＝62）先通過 cardinality、canonical、
+（目前 59 routes＋5 fixed outputs＝64，包含原有 62 項）先通過 cardinality、canonical、
 hreflang、source/sync 與 fragment preflight，才以既有 generator materialize；
-之後逐 byte 驗證完整 62 outputs、feed、sitemap 與 attribution closure。
+之後逐 byte 驗證完整 64 outputs、feed、sitemap 與 attribution closure。
 
 `deployment_generation.py materialize-incremental --output-dir . --inventory
 data/verified-ios-app-finder-catalog.json --previous-guide-revision <完整已審 Guide SHA>`
@@ -63,3 +63,15 @@ Regression：既有 controller／collector 81、Guide 110，加上
 `rglob`、full-site inventory 和 full closer 一經呼叫即失敗。Remote 前進時，
 重取 delta 並只重跑受影響測試與必需 Gates；未實際部署前的 `effective_at_utc`
 仍為 unknown，不以本機產檔或 feature push 取代 live receipt。
+
+Daily GEO 在產檔前先跑 `test_publication_source_preflight`，核對完整同步契約、
+canonical47 與 registry 身分，以及 directory 的官方 50 locale。修改任何被
+`SYNC_ENGINE_FILES` 列出的來源後，須由 `high_intent_decision_routes.py
+--write-sync-contract` 重建契約並逐 byte 同步到 `_engine`；不可只更新單一
+`publish.py` digest。已上架名稱變更亦須同步 canonical roster 與其 digest，
+不能放寬 registry drift Gate。
+
+舊 directory 的 `da-DK` 等非官方 alternate 只能用 `build_pages_i18n` 的
+`build_root_index`／`build_locale_index` 與 `OFFICIAL_LOCALES` 重生；保留公開
+頁面、設計與 feed discovery，再跑增量 canonical／hreflang Gate。不得把
+alias 加入 `INDEXABLE_LOCALES`，也不得手改 generated head 讓 Gate 過關。

@@ -69,7 +69,8 @@ jobs:
       - name: Verify pre-materialization contracts
         run: |
           python3 -m unittest \
-            _engine.geo.tests.test_publisher_intent_catalog.PublisherIntentLocalizationTests.test_purchase_labels_exist_in_i18n_strings
+            _engine.geo.tests.test_publisher_intent_catalog.PublisherIntentLocalizationTests.test_purchase_labels_exist_in_i18n_strings \
+            _engine.geo.tests.test_publication_source_preflight
       - name: Snapshot truthful sitemap baseline
         run: |
           state="$RUNNER_TEMP/sitemap-lastmod-intermediate.json"

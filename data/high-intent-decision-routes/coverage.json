@@ -53,9 +53,10 @@
     "cyca": {
       "intent_type": "privacy_pay_once",
       "native_locales": [
-        "en-US"
+        "en-US",
+        "zh-Hant"
       ],
-      "record_count": 1,
+      "record_count": 2,
       "route_slug": "private-cycle-patterns-without-account"
     },
     "dailymate": {
@@ -209,10 +210,11 @@
     "mochidonestamp": {
       "intent_type": "problem_aware",
       "native_locales": [
+        "de-DE",
         "en-US",
         "zh-Hant"
       ],
-      "record_count": 2,
+      "record_count": 3,
       "route_slug": "remember-when-household-task-was-done"
     },
     "moneytag": {
@@ -388,9 +390,9 @@
     }
   },
   "coverage": {
-    "abstained_pairs": 2293,
+    "abstained_pairs": 2291,
     "abstention_reasons": {
-      "missing_curated_native_copy": 2293
+      "missing_curated_native_copy": 2291
     },
     "app_coverage_percent": 100.0,
     "candidate_app_locale_pairs": 2350,
@@ -405,9 +407,9 @@
     "mapped_apps": 47,
     "missing_route_app_keys": [],
     "missing_route_apps": 0,
-    "native_locale_pair_coverage_percent": 2.43,
-    "native_locale_records": 57,
-    "native_locales_with_records": 4,
+    "native_locale_pair_coverage_percent": 2.51,
+    "native_locale_records": 59,
+    "native_locales_with_records": 5,
     "official_locales_considered": 50,
     "primary_routes": 47
   },
@@ -448,8 +450,8 @@
       "emitted": 0
     },
     "de-DE": {
-      "abstained": 47,
-      "emitted": 0
+      "abstained": 46,
+      "emitted": 1
     },
     "el": {
       "abstained": 47,
@@ -624,29 +626,29 @@
       "emitted": 0
     },
     "zh-Hant": {
-      "abstained": 40,
-      "emitted": 7
+      "abstained": 39,
+      "emitted": 8
     }
   },
   "publication": {
-    "abstained_pairs": 2293,
+    "abstained_pairs": 2291,
     "deployment_eligible": true,
-    "expected_route_pages": 57,
+    "expected_route_pages": 59,
     "fallback_records": 0,
-    "feed_items": 57,
+    "feed_items": 59,
     "managed_owner": "high_intent_decision_routes",
-    "sitemap_urls": 57,
+    "sitemap_urls": 59,
     "state": "exact"
   },
   "quality": {
     "all_gates_passed": true,
     "gates": {
       "complete_app_store_cta": {
-        "detail": "57/57 URLs use ordered pt/ct/mt=8",
+        "detail": "59/59 URLs use ordered pt/ct/mt=8",
         "passed": true
       },
       "cultural_route": {
-        "detail": "57/57 emitted records",
+        "detail": "59/59 emitted records",
         "passed": true
       },
       "current_inventory_coverage": {
@@ -654,7 +656,7 @@
         "passed": true
       },
       "exact_release_cardinality": {
-        "detail": "57 routes; 47 apps; 2350 pairs; 2293 abstentions",
+        "detail": "59 routes; 47 apps; 2350 pairs; 2291 abstentions",
         "passed": true
       },
       "intent_diversity": {
@@ -662,15 +664,15 @@
         "passed": true
       },
       "inventory_bound_claims": {
-        "detail": "225 evidence references resolved from inventory",
+        "detail": "231 evidence references resolved from inventory",
         "passed": true
       },
       "native_copy_or_abstain": {
-        "detail": "57 emitted; 2293 explicit abstentions; 0 fallbacks",
+        "detail": "59 emitted; 2291 explicit abstentions; 0 fallbacks",
         "passed": true
       },
       "non_template": {
-        "detail": "57/57 unique signatures; max Jaccard=0.263",
+        "detail": "59/59 unique signatures; max Jaccard=0.263",
         "passed": true
       },
       "non_thin": {
@@ -682,7 +684,7 @@
         "passed": true
       },
       "truthful_publisher_disclosure": {
-        "detail": "57/57 records disclose developer authorship",
+        "detail": "59/59 records disclose developer authorship",
         "passed": true
       },
       "versioned_app_coverage": {
@@ -698,7 +700,7 @@
     ],
     "minimum_content_units": 200
   },
-  "release_contract_digest": "dd82827f2ba9c9f7461e6a7c6d23b9138db32dae9c132145cc60952943b85c72",
+  "release_contract_digest": "218aa7721786c999b902b350f5c130f1bcb451145e1d15233927cffbf4a33337",
   "release_state": "exact",
   "schema_version": 1
 }

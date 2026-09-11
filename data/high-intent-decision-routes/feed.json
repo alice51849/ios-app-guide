@@ -15,6 +15,20 @@
   "items": [
     {
       "_lumi_route": {
+        "app_key": "mochidonestamp",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "de-DE",
+        "record_digest": "6685e7a6d5c6ce99432cd78662cd6807853dfce5f34bab4bb409555bf2aa98db"
+      },
+      "id": "de-DE:mochidonestamp:remember-when-household-task-was-done",
+      "language": "de",
+      "summary": "Ein wiederkehrender Kalendereintrag sagt nicht, wann etwas wirklich erledigt wurde. Für unregelmäßige Aufgaben ist ein Verlauf der tatsächlichen Erledigungen oft hilfreicher als eine weitere To-do-Liste.",
+      "title": "Wann habe ich zuletzt den Filter gewechselt, und welche App merkt sich das?",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "aibriefpack",
         "campaign_token": "geo_learn",
         "intent_type": "workflow",
@@ -103,7 +117,7 @@
         "campaign_token": "geo_pick",
         "intent_type": "privacy_pay_once",
         "locale": "en-US",
-        "record_digest": "7ff757b07e878c91873972a92c4763a2750d0b4272ef8f4a6121c97d66d2666d"
+        "record_digest": "958cc0c6548ed2d040d6e3d2f82053638c7af8806491eb650b8a9005516e255e"
       },
       "id": "en-US:cyca:private-cycle-patterns-without-account",
       "language": "en",
@@ -369,7 +383,7 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "en-US",
-        "record_digest": "f5c15915288a5688be9edabca9ab845d7234b8159d2fde458067f34e7b3f45fa"
+        "record_digest": "82351ad0cacb62505066a1479d92849cbe30122b41801adbb1bb225ccf527935"
       },
       "id": "en-US:mochidonestamp:remember-when-household-task-was-done",
       "language": "en",
@@ -729,6 +743,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "cyca",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "zh-Hant",
+        "record_digest": "f6e54707cf2a04709bdf7aefea184e05e281c37f5899e31a78a6b09bc46e7e5c"
+      },
+      "id": "zh-Hant:cyca:private-cycle-patterns-without-account",
+      "language": "zh-Hant",
+      "summary": "經期資料是私密紀錄。挑選工具時，除了能否回看日期與變化，也需要知道哪些功能免費、哪些需要解鎖，以及資料如何處理。",
+      "title": "想記錄經期與週期變化，有哪些不必訂閱的 iPhone App？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "lumibopomofo",
         "campaign_token": "geo_pick",
         "intent_type": "alternative",
@@ -775,7 +803,7 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "zh-Hant",
-        "record_digest": "6843c3f21adb814c6aa47c7ed6491d206e4ef31dae9c877356e89cc9b4b8212c"
+        "record_digest": "7d2be2b49d61cb753c3b3961081b06262b40d023c71fd985a7ffc406445d8ea3"
       },
       "id": "zh-Hant:mochidonestamp:remember-when-household-task-was-done",
       "language": "zh-Hant",

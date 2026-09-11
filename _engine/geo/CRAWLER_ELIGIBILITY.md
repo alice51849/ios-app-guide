@@ -3,22 +3,34 @@
 ## 部署歸屬
 
 - 唯一有效 robots：`https://open.cait518.cc/robots.txt`。
-- `/ios-app-guide/robots.txt` 是子目錄參考副本，不能授予或拒絕抓取權限。
+- `/ios-app-guide/robots.txt` 不能授予或拒絕抓取權限，但必須是當前 root 政策的
+  mirror；非 authoritative 不代表可以保留過期的訓練 opt-in。
 - 根站真正來源：`alice51849/alice51849.github.io` 的
   `scripts/gen_link_hub.py`，不是 Guide 的 generated robots。
 - `geo/crawler_policy.py` 是共用政策來源；須逐位元組同步至
   Guide 的 `_engine/geo/crawler_policy.py` 與根站的
   `scripts/crawler_policy.py`。兩個 Guide robots generator 共用此政策。
-- 本次公開變動僅在根站；Guide／Growth 是 engine-only 同步。
-  隔離 feature 上完成測試及獨立審查，再 fetch／安全整合並非 force push。
-  不觸發 `geo-daily`、社群、ASC、IndexNow 或任何付費模型 API；
-  只由根站 `main` 的一次 push 觸發一次 Pages 部署。
+- 隔離 feature 上完成測試及獨立審查，再 fetch／安全整合並非 force push。
+  Guide `robots.txt` 必須以 `gen_llms.build_robots()` 呼叫共用
+  `crawler_policy.render_robots()` 重生，不得只更新 `_engine` 卻留下舊檔。
+  使用既有 `[paired-high-intent]` push gate 與 exact-SHA incremental Pages
+  dispatch，只執行一次 Guide 部署，避免觸發社群／WebSub／rssCloud；
+  不執行 `geo-daily`、ASC writer 或付費模型 API。
+  本次根站 source／generated robots 與共用 `crawler_policy.py` 完全不變；
+  frontend 額外解析只放在 auditor，不為了恢復 Guide 另觸發根站部署。
 
 ## 搜尋、訓練與 WAF
 
 `OAI-SearchBot`、`PerplexityBot`、`Applebot`、`Googlebot`、`Bingbot`
 以及一般搜尋 crawler 可抓公開頁、50 locale URL、sitemap 與 rendering assets。
 工具來源目錄的 Disallow 不是安全認證機制，不可存放秘密。
+`/scripts/` 是根站 Python／Node 建置工具，不是公開頁面的 rendering assets；
+frontend scan 必須確認 HTML／CSS／JS 沒有指向它，公開 client JS 保留在
+`/assets/` 等路徑且仍可抓取。若日後出現真實功能依賴，Gate 必須先失敗，
+不可為了去除索引噪音直接破壞功能；應調整架構或改採 noindex。
+本次 parity 修復保留已部署根站的 private-path 與搜尋／訓練政策，不夾帶
+尚未部署的 `/scripts/` 新 Disallow；readback 依正式 root 的實際結果回報，
+不可把 child-only 規則或通過其他 Gate 宣稱成 root 已封鎖。
 
 保留 canonical host 已有的 Cloudflare 訓練拒絕選擇：GPTBot、
 Applebot-Extended、Google-Extended 等訓練產品不取得 Allow；
@@ -55,6 +67,10 @@ python3 geo/crawler_eligibility.py \
 `--live` 只送公開 GET，UA 固定為 `LumiCrawlerEligibilityAudit/1.0`，
 核對 root／child robots、50 語代表性公開 App 頁的 self-canonical／hreflang／noindex、
 discovery、assets、官方 IP JSON 與 Cloudflare 回應 headers。
+`check_policy` 的 `child_body` 為必填；root／child 各自驗全部 training/search
+crawler，並比較各 bot 去重後的完整 effective rules，而非只抽查幾個 URL。
+Cloudflare 的重複同值群組可合併，Sitemap 清單可依站點不同，但訓練 opt-in、
+search Disallow 或 `/scripts/` 的差異一律 blocking。
 所有結果限定於報告列出的 URL；不是全站所有頁面均可索引的宣稱。
 報告永久區分 `crawler_eligibility` 與 `actual_crawl_receipt`、
 `actual_indexing`、`actual_citation`；後三者沒有可信 provider 證據時皆為 `unknown`。

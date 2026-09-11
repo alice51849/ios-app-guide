@@ -11,6 +11,178 @@
   },
   "routes": [
     {
+      "app_id": "6790800323",
+      "app_store_url": "https://apps.apple.com/de/app/id6790800323?pt=118326163&ct=geo_ask&mt=8",
+      "attribution": {
+        "campaign": "unknown",
+        "purchases": "unknown",
+        "source": "unknown"
+      },
+      "canonical_url": "https://open.cait518.cc/ios-app-guide/de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html",
+      "copy": {
+        "asset_captions": {},
+        "free": "Ein aktives Ereignis und ein unbegrenzter Verlauf sind kostenlos.",
+        "limitations": [
+          "Dies ist eine Erinnerung an die letzte Erledigung, keine Arbeitsplanung und kein täglicher Gewohnheitswettbewerb.",
+          "Erinnerungen folgen der gespeicherten Erledigungszeit. Es werden keine neuen, ungeprüften Synchronisierungsfunktionen zugesagt."
+        ],
+        "paid": "Weitere aktive Ereignisse lassen sich mit einem einmaligen Kauf freischalten.",
+        "proof_note": "Die Angaben folgen der veröffentlichten Funktionsbeschreibung. Englische Bildschirmbilder werden hier nicht als deutsche Nachweise ausgegeben.",
+        "queries": [
+          "wann zuletzt Filter gewechselt",
+          "Erinnerung ab tatsächlicher Erledigung"
+        ],
+        "result": "Erledigungen mit Datum speichern und später im Verlauf nachsehen.",
+        "task": "Das letzte Mal festhalten, nicht eine Serie"
+      },
+      "creative_version": "cv-20260910-01",
+      "diagnostic_window_days": 14,
+      "effective_at_utc": "unknown",
+      "exclude_intents": [
+        "work scheduling",
+        "daily habit streak",
+        "unverified new family sync"
+      ],
+      "experiment_id": "conversion-20260910-6790800323-v1",
+      "experiment_type": "directional_observation",
+      "free_feature_ids": [
+        "one_active_event",
+        "unlimited_history"
+      ],
+      "live_app_version": "1.0.3",
+      "live_readback_at": "2026-09-10T16:59:24.800206+00:00",
+      "locale": "de-DE",
+      "localized_visual_status": "BLOCKED_EVIDENCE",
+      "offer_readback": {
+        "observed_price": "unknown",
+        "product_id": "com.alice51849.MochiDoneStamp.lifetime",
+        "runtime_purchase": "unknown",
+        "status": "APPROVED",
+        "territory": "DEU",
+        "type": "NON_CONSUMABLE"
+      },
+      "offer_readback_at": "2026-09-10T17:09:33.712452+00:00",
+      "outcome": "unknown",
+      "paid_feature_ids": [
+        "more_active_events"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "primary_locale": "en-US",
+      "proofs": [
+        {
+          "asset": null,
+          "claim_ids": [
+            "one_active_event",
+            "unlimited_history",
+            "more_active_events",
+            "last_done_dates",
+            "completion_undo",
+            "reminder_from_completion"
+          ],
+          "id": "mochidonestamp-shipping-description",
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T16:59:24.800206+00:00",
+          "reason": "",
+          "source_sha256": "ee6bba371d87215799fe44eefb5ca2b26bb0ee459b3227464a91fbe5f1ff09e3",
+          "source_url": "https://apps.apple.com/us/app/id6790800323",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION"
+        },
+        {
+          "asset": {
+            "height": 640,
+            "locale": "en-US",
+            "normalization": "rgb-thumbnail-640-jpeg90",
+            "reviewed_thumbnail_sha256": "49811489a1148e6115b2a197cf0458b4b8b88bab6c876f230173de7c37f11a10",
+            "width": 295
+          },
+          "claim_ids": [
+            "public_screen_donestamp_last_time"
+          ],
+          "id": "donestamp-last-time",
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "reason": "",
+          "source_sha256": "b4280e5ca8acd26c0bbcae4f771a781750feca10e6ba5b81209835ab14d3408f",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/95/ab/6895ab19-2d81-15ce-c265-4f0697e03749/01.png/480x640bb.jpg",
+          "status": "VERIFIED_PUBLIC_ASSET"
+        },
+        {
+          "asset": {
+            "height": 640,
+            "locale": "en-US",
+            "normalization": "rgb-thumbnail-640-jpeg90",
+            "reviewed_thumbnail_sha256": "d5e0507ca475a4c7659c32a01fbae99778ddbf7987d7c48064d88d14cef64e1e",
+            "width": 295
+          },
+          "claim_ids": [
+            "public_screen_donestamp_undo"
+          ],
+          "id": "donestamp-undo",
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "reason": "",
+          "source_sha256": "00fd9bb2b15890861291bde2538fd6c0bce2b97bee5a79e73b6bf74d0544230e",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/a2/4b/b0a24ba7-a32e-f41b-bd9f-f10b6f4aa54d/02.png/480x640bb.jpg",
+          "status": "VERIFIED_PUBLIC_ASSET"
+        },
+        {
+          "asset": {
+            "height": 640,
+            "locale": "en-US",
+            "normalization": "rgb-thumbnail-640-jpeg90",
+            "reviewed_thumbnail_sha256": "7a9208a683efdd57105a03cc1c03805373ed88442887d202e38dbe3845c58e47",
+            "width": 295
+          },
+          "claim_ids": [
+            "public_screen_donestamp_history"
+          ],
+          "id": "donestamp-history",
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "reason": "",
+          "source_sha256": "d601bf45dea6968b8e127d6a699c0f1af95fd21d3177e8e9f64d9f447f2aa39e",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cd/b0/a1/cdb0a17b-b1c3-4b0a-91ea-dac1127764e2/03.png/480x640bb.jpg",
+          "status": "VERIFIED_PUBLIC_ASSET"
+        },
+        {
+          "asset": {
+            "height": 640,
+            "locale": "zh-Hant",
+            "normalization": "rgb-thumbnail-640-jpeg90",
+            "reviewed_thumbnail_sha256": "085108c211d63648c8d99c9643dcf2d8d35e7954f1347ca7104cde7b4c6a297b",
+            "width": 295
+          },
+          "claim_ids": [
+            "public_screen_donestamp_last_time_tw"
+          ],
+          "id": "donestamp-last-time-tw",
+          "live_app_version": "1.0.3",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "reason": "",
+          "source_sha256": "6163877b81c15dbbd2db67cd157d3ce5f775b6c140e4c1abb3510441fd7644be",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/38/b4/4338b451-06c1-f03b-2801-e3346a301e6e/01.png/480x640bb.jpg",
+          "status": "VERIFIED_PUBLIC_ASSET"
+        }
+      ],
+      "published_claim_ids": [
+        "one_active_event",
+        "unlimited_history",
+        "more_active_events",
+        "last_done_dates",
+        "completion_undo",
+        "reminder_from_completion"
+      ],
+      "query_evidence": {
+        "published_source": "unknown",
+        "ranking": "unknown",
+        "search_volume": "unknown",
+        "status": "candidate",
+        "verification_status": "unverified"
+      },
+      "route_id": "de-DE:mochidonestamp:remember-when-household-task-was-done",
+      "scaling_allowed": false
+    },
+    {
       "app_id": "6784974530",
       "app_store_url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=geo_ask&mt=8",
       "attribution": {
@@ -2253,6 +2425,123 @@
         "verification_status": "unverified"
       },
       "route_id": "zh-Hant:battai:decide-when-an-iphone-battery-needs-service",
+      "scaling_allowed": false
+    },
+    {
+      "app_id": "6782251621",
+      "app_store_url": "https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "attribution": {
+        "campaign": "unknown",
+        "purchases": "unknown",
+        "source": "unknown"
+      },
+      "canonical_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html",
+      "copy": {
+        "asset_captions": {},
+        "free": "不用先建立帳號，就能開始記錄經期。",
+        "limitations": [
+          "預測日期與受孕期僅供規劃參考，不能作為避孕或懷孕預防方法。",
+          "不保證受孕日、臨床準確率或醫療診斷；有健康疑慮時應諮詢合格醫療專業人員。"
+        ],
+        "paid": "進階規劃與更完整歷史，可選擇一次性 Pro 解鎖。",
+        "proof_note": "功能依據目前公開版本說明核對。這裡不把英文公開圖當成繁中畫面，也不把日曆預測當成臨床準確性證明。",
+        "queries": [
+          "經期記錄不用帳號",
+          "週期追蹤一次買斷"
+        ],
+        "result": "記錄經期日期並回看週期變化；預測只是估計，不是避孕方法。",
+        "task": "用自己的步調記錄經期"
+      },
+      "creative_version": "cv-20260910-01",
+      "diagnostic_window_days": 14,
+      "effective_at_utc": "unknown",
+      "exclude_intents": [
+        "guaranteed fertile day",
+        "pregnancy prevention",
+        "clinical accuracy"
+      ],
+      "experiment_id": "conversion-20260910-6782251621-v1",
+      "experiment_type": "directional_observation",
+      "free_feature_ids": [
+        "cycle_diary"
+      ],
+      "live_app_version": "1.0.10",
+      "live_readback_at": "2026-09-10T16:56:39.604089+00:00",
+      "locale": "zh-Hant",
+      "localized_visual_status": "BLOCKED_EVIDENCE",
+      "offer_readback": {
+        "observed_price": {
+          "amount": "150",
+          "currency": "TWD",
+          "readback_at": "2026-09-10T17:09:24.718061+00:00"
+        },
+        "product_id": "com.alice51849.Cyca.pro.lifetime",
+        "runtime_purchase": "unknown",
+        "status": "APPROVED",
+        "territory": "TWN",
+        "type": "NON_CONSUMABLE"
+      },
+      "offer_readback_at": "2026-09-10T17:09:24.718061+00:00",
+      "outcome": "unknown",
+      "paid_feature_ids": [
+        "future_planning",
+        "fuller_history"
+      ],
+      "paid_scope_status": "VERIFIED",
+      "primary_locale": "en-US",
+      "proofs": [
+        {
+          "asset": null,
+          "claim_ids": [
+            "cycle_diary",
+            "future_planning",
+            "fuller_history",
+            "no_account",
+            "estimated_forecast"
+          ],
+          "id": "cyca-shipping-description",
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T16:56:39.604089+00:00",
+          "reason": "",
+          "source_sha256": "b43afe78410129853de3a7eedcd8d5b10e48bfbf0a256df6d7282e4d4e8d2aba",
+          "source_url": "https://apps.apple.com/us/app/id6782251621",
+          "status": "VERIFIED_SHIPPING_DESCRIPTION"
+        },
+        {
+          "asset": {
+            "height": 640,
+            "locale": "en-US",
+            "normalization": "rgb-thumbnail-640-jpeg90",
+            "reviewed_thumbnail_sha256": "6b2c5fa1c4f66db4bb5eb20aab1d062e20ba9ece418c1d921667a44c6bd951f5",
+            "width": 295
+          },
+          "claim_ids": [
+            "public_screen_cyca_calendar"
+          ],
+          "id": "cyca-calendar",
+          "live_app_version": "1.0.10",
+          "observed_at": "2026-09-10T17:17:23.740586+00:00",
+          "reason": "",
+          "source_sha256": "0a8b2d11a7c5d92474a82c017e1875ecc03086c398f119492fff41e5b94d073c",
+          "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/e6/b2/d4e6b2a3-2257-1807-c523-60f4ecd7f8fa/02.png/480x640bb.jpg",
+          "status": "VERIFIED_PUBLIC_ASSET"
+        }
+      ],
+      "published_claim_ids": [
+        "cycle_diary",
+        "future_planning",
+        "fuller_history",
+        "no_account",
+        "estimated_forecast"
+      ],
+      "query_evidence": {
+        "published_source": "unknown",
+        "ranking": "unknown",
+        "search_volume": "unknown",
+        "status": "candidate",
+        "verification_status": "unverified"
+      },
+      "route_id": "zh-Hant:cyca:private-cycle-patterns-without-account",
       "scaling_allowed": false
     },
     {

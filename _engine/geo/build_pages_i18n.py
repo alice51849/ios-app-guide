@@ -1541,6 +1541,13 @@ def hreflang_block(key, locales):
 
 
 def directory_hreflang_block(locales):
+    locales = tuple(locales)
+    unsupported = sorted(set(locales) - set(OFFICIAL_LOCALES))
+    if not locales or unsupported or len(locales) != len(set(locales)):
+        raise ValueError(
+            "Directory hreflang requires unique official locales: "
+            + ", ".join(unsupported or locales)
+        )
     out = [
         f'<link rel="alternate" hreflang="{lc}" '
         f'href="{SITE}/{lc}/index.html">'

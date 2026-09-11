@@ -4,6 +4,7 @@
 from email.message import Message
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -11,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import crawler_eligibility as audit
 from crawler_policy import (
-    CRAWLER_SOURCES, PageSignals, RobotsPolicy, SEARCH_CRAWLERS,
+    CRAWLER_SOURCES, PRIVATE_PATHS, PageSignals, RobotsPolicy, SEARCH_CRAWLERS,
     TRAINING_CRAWLERS, render_robots, require_root_scope,
 )
 from official_locales import OFFICIAL_LOCALES
@@ -85,7 +86,7 @@ class RootAndPrecedenceTests(unittest.TestCase):
     def test_specific_training_allow_on_a_public_page_fails_gate(self):
         text = policy() + "\nUser-agent: GPTBot\nAllow: /ios-app-guide/en-US/\n"
         self.assertIn("training_opt_out_conflict:GPTBot",
-                      audit.check_policy(text, [PAGE], ROOT_ROBOTS))
+                      audit.check_policy(text, [PAGE], ROOT_ROBOTS, child_body=policy()))
 
     def test_duplicate_specific_groups_merge_and_specific_path_wins(self):
         parsed = RobotsPolicy("User-agent: bingbot\nAllow: /\n"
@@ -98,26 +99,32 @@ class RootAndPrecedenceTests(unittest.TestCase):
         self.assertTrue(parsed.allowed("GPTBot", PAGE, ROOT_ROBOTS))
         self.assertEqual(parsed.conflicts("GPTBot"), ["/"])
         self.assertIn("training_opt_out_conflict:GPTBot", audit.check_policy(
-            policy() + "\nUser-agent: GPTBot\nAllow: /\n", [PAGE], ROOT_ROBOTS))
+            policy() + "\nUser-agent: GPTBot\nAllow: /\n", [PAGE], ROOT_ROBOTS,
+            child_body=policy()))
 
     def test_cloudflare_training_prefix_cannot_block_search(self):
         managed = ("User-agent: *\nContent-Signal: search=yes,ai-train=no\nAllow: /\n"
                    "User-agent: GPTBot\nDisallow: /\n"
                    "User-agent: Applebot-Extended\nDisallow: /\n")
-        self.assertEqual(audit.check_policy(managed + policy(), [PAGE], ROOT_ROBOTS), [])
+        self.assertEqual(audit.check_policy(
+            managed + policy(), [PAGE], ROOT_ROBOTS, child_body=policy()), [])
 
     def test_conflicting_search_disallow_fails_gate(self):
         text = policy() + "\nUser-agent: PerplexityBot\nDisallow: /ios-app-guide/\n"
         self.assertTrue(any("disallowed:PerplexityBot" in error
-                            for error in audit.check_policy(text, [PAGE], ROOT_ROBOTS)))
+                            for error in audit.check_policy(
+                                text, [PAGE], ROOT_ROBOTS, child_body=policy())))
 
     def test_private_tooling_block_does_not_block_assets_or_catalogs(self):
         parsed = RobotsPolicy(policy())
         for bot in SEARCH_CRAWLERS:
-            for path in ("assets/icon.png", "llms/index.json", "sitemap.xml",
+            for path in ("assets/icon.png", "assets/app-store-share-v1.js",
+                         "llms/index.json", "sitemap.xml",
                          "bn-BD/notesstudio100.html"):
                 self.assertTrue(parsed.allowed(bot, f"{PUBLIC_SITE}/{path}", ROOT_ROBOTS))
             self.assertFalse(parsed.allowed(bot, f"{PUBLIC_SITE}/_engine/source.py", ROOT_ROBOTS))
+            self.assertTrue(parsed.allowed(
+                bot, f"{PUBLIC_ROOT}/scripts/crawler_policy.py", ROOT_ROBOTS))
             self.assertTrue(parsed.allowed(
                 bot, f"{PUBLIC_ROOT}/.well-known/ai-catalog.json", ROOT_ROBOTS))
 
@@ -156,7 +163,7 @@ class RootAndPrecedenceTests(unittest.TestCase):
             "\nUser-agent: Googlebot\nAllow: /ios-app-guide/x\n"
             "Disallow: /ios-app-guide/x$\n")
         self.assertIn(f"disallowed:Googlebot:{url}",
-                      audit.check_policy(text, [url], ROOT_ROBOTS))
+                      audit.check_policy(text, [url], ROOT_ROBOTS, child_body=policy()))
 
     def test_sitemap_and_blank_lines_do_not_split_unfinished_agent_group(self):
         parsed = RobotsPolicy("User-agent: Applebot\n\nSitemap: https://example.test/s.xml\n"
@@ -206,13 +213,147 @@ class DiscoveryAndNoindexTests(unittest.TestCase):
         self.assertEqual(len([error for error in errors if error.startswith("noindex:")]), 5)
 
     def test_allow_does_not_cancel_noindex(self):
-        self.assertEqual(audit.check_policy(policy(), [PAGE], ROOT_ROBOTS), [])
+        self.assertEqual(audit.check_policy(
+            policy(), [PAGE], ROOT_ROBOTS, child_body=policy()), [])
         self.assertTrue(audit.check_page(PAGE, page(extra='<meta name="robots" content="noindex">')))
 
     def test_canonical_and_hreflang_mismatch_are_not_eligible(self):
         source = page().replace(f'{PUBLIC_SITE}/bn-BD/', 'https://wrong.example/bn-BD/')
         self.assertIn("hreflang:bn-BD", audit.check_page(PAGE, source, app_key="notesstudio100"))
         self.assertIn("canonical_mismatch", audit.check_page(PAGE, page(PAGE + "?duplicate=1")))
+
+
+class RootChildParityTests(unittest.TestCase):
+    def test_child_body_cannot_be_omitted(self):
+        with self.assertRaises(TypeError):
+            audit.check_policy(policy(), [PAGE], ROOT_ROBOTS)
+
+    def test_stale_child_training_opt_ins_fail_for_every_training_bot(self):
+        stale = "User-agent: *\nAllow: /\n"
+        stale += "".join(f"\nUser-agent: {bot}\nAllow: /\n" for bot in TRAINING_CRAWLERS)
+        stale += f"\nSitemap: {PUBLIC_SITE}/sitemap_index.xml\n"
+        errors = audit.check_policy(policy(), [PAGE], ROOT_ROBOTS, child_body=stale)
+        for bot in TRAINING_CRAWLERS:
+            self.assertIn(f"child:training_opt_out_conflict:{bot}", errors)
+            self.assertIn(f"root_child_policy_mismatch:{bot}", errors)
+
+    def test_child_search_disallow_fails_for_every_search_bot(self):
+        for bot in SEARCH_CRAWLERS:
+            with self.subTest(bot=bot):
+                stale = policy() + f"\nUser-agent: {bot}\nDisallow: /ios-app-guide/\n"
+                errors = audit.check_policy(policy(), [PAGE], ROOT_ROBOTS, child_body=stale)
+                self.assertIn(f"child:disallowed:{bot}:{PAGE}", errors)
+                self.assertIn(f"root_child_policy_mismatch:{bot}", errors)
+
+    def test_identically_bad_copies_do_not_pass_merely_because_they_match(self):
+        bad = policy() + "\nUser-agent: GPTBot\nAllow: /unlisted/\n"
+        errors = audit.check_policy(bad, [PAGE], ROOT_ROBOTS, child_body=bad)
+        self.assertIn("training_opt_out_conflict:GPTBot", errors)
+        self.assertIn("child:training_opt_out_conflict:GPTBot", errors)
+
+    def test_rule_parity_covers_paths_outside_the_http_sample(self):
+        stale = policy() + "\nUser-agent: Applebot\nDisallow: /unlisted/\n"
+        errors = audit.check_policy(policy(), [PAGE], ROOT_ROBOTS, child_body=stale)
+        self.assertIn("root_child_policy_mismatch:Applebot", errors)
+
+    def test_private_paths_must_be_blocked_in_both_copies(self):
+        for path in PRIVATE_PATHS:
+            stale = policy().replace(f"Disallow: {path}\n", "")
+            errors = audit.check_policy(policy(), [PAGE], ROOT_ROBOTS, child_body=stale)
+            for bot in SEARCH_CRAWLERS:
+                with self.subTest(path=path, bot=bot):
+                    self.assertIn(f"child:private_path_allowed:{bot}:{path}", errors)
+
+    def test_live_readback_does_not_ignore_a_stale_child_response(self):
+        import hashlib
+
+        local = {
+            "urls": audit.locale_page_urls("notesstudio100") + [
+                f"{PUBLIC_SITE}/{path}" for path in audit.DISCOVERY_PATHS
+            ] + [f"{PUBLIC_ROOT}/.well-known/ai-catalog.json"],
+            "app_key": "notesstudio100",
+            "root_robots_sha256": hashlib.sha256(policy().encode()).hexdigest(),
+        }
+
+        def get(url):
+            body = "{}"
+            if url == ROOT_ROBOTS:
+                body = policy()
+            elif url == f"{PUBLIC_SITE}/robots.txt":
+                body = "User-agent: *\nAllow: /\n"
+            return {"url": url, "method": "GET", "status": 200, "body": body,
+                    "headers": [("content-type", "text/plain")]}
+
+        with patch.object(audit, "public_get", side_effect=get):
+            result = audit.live_audit(local)
+        self.assertFalse(result["root_child_policy_parity"])
+        self.assertFalse(result["passed"])
+        self.assertIn("child:training_opt_out_conflict:GPTBot", result["errors"])
+        self.assertFalse(result["child_robots_authoritative"])
+        self.assertEqual(result["actual_crawl_receipt"], "unknown")
+
+
+class ScriptsDependencyTests(unittest.TestCase):
+    def test_functional_html_and_js_scripts_dependencies_are_rejected(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as work:
+            root, guide = Path(work) / "root", Path(work) / "guide"
+            root.mkdir()
+            guide.mkdir()
+            (root / "index.html").write_text('<script src=/scripts/app.js></script>')
+            (guide / "app.js").write_text('import(`/scripts/shared.js`);')
+            report = audit.scan_public_frontend(guide, root)
+        self.assertEqual({item["target"] for item in report["scripts_dependencies"]},
+                         {f"{PUBLIC_ROOT}/scripts/app.js", f"{PUBLIC_ROOT}/scripts/shared.js"})
+
+    def test_public_assets_remain_checked_and_tooling_is_not_a_frontend(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as work:
+            root, guide = Path(work) / "root", Path(work) / "guide"
+            (root / "scripts").mkdir(parents=True)
+            (guide / "assets").mkdir(parents=True)
+            (root / "scripts" / "build.mjs").write_text('import "/scripts/helper.mjs";')
+            (guide / "assets" / "app.js").write_text('console.log("public");')
+            (guide / "index.html").write_text('<script src="assets/app.js"></script>')
+            report = audit.scan_public_frontend(guide, root)
+        self.assertEqual(report["scripts_dependencies"], [])
+        self.assertEqual(report["public_js_urls"], [f"{PUBLIC_SITE}/assets/app.js"])
+        self.assertEqual(report["files_checked"], 2)
+
+    def test_html_base_entities_and_unquoted_modulepreload_are_not_missed(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as work:
+            root, guide = Path(work) / "root", Path(work) / "guide"
+            root.mkdir()
+            guide.mkdir()
+            (root / "index.html").write_text(
+                '<base href=/scripts/><script src=app.js></script>'
+                '<link rel=modulepreload href=/scripts/module.js>'
+                '<script src="&#47;&#115;cripts/entity.js"></script>')
+            report = audit.scan_public_frontend(guide, root)
+        targets = {item["target"] for item in report["scripts_dependencies"]}
+        self.assertTrue({f"{PUBLIC_ROOT}/scripts/{name}" for name in
+                         ("app.js", "module.js", "entity.js")} <= targets)
+
+    def test_escaped_js_slashes_are_not_missed(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as work:
+            root, guide = Path(work) / "root", Path(work) / "guide"
+            root.mkdir()
+            guide.mkdir()
+            (guide / "app.js").write_text(r'import("\/scripts\/shared.js");')
+            report = audit.scan_public_frontend(guide, root)
+        self.assertEqual(report["scripts_dependencies"],
+                         [{"source": f"{PUBLIC_SITE}/app.js",
+                           "target": f"{PUBLIC_ROOT}/scripts/shared.js"}])
+
+    def test_percent_encoded_base_is_not_missed(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as work:
+            root, guide = Path(work) / "root", Path(work) / "guide"
+            root.mkdir()
+            guide.mkdir()
+            (root / "index.html").write_text(
+                '<base href=/%73cripts/><script src=a.js></script>')
+            report = audit.scan_public_frontend(guide, root)
+        self.assertEqual(report["scripts_dependencies"],
+                         [{"source": f"{PUBLIC_ROOT}/index.html",
+                           "target": f"{PUBLIC_ROOT}/%73cripts/a.js"}])
 
 
 class PublicReadbackTests(unittest.TestCase):
@@ -337,7 +478,7 @@ class GeneratorWiringTests(unittest.TestCase):
         import gen_llms
 
         self.assertEqual(audit.check_policy(
-            gen_llms.build_robots(), [PAGE], ROOT_ROBOTS), [])
+            policy(), [PAGE], ROOT_ROBOTS, child_body=gen_llms.build_robots()), [])
 
     def test_locale_generator_uses_the_same_policy(self):
         import build_pages_i18n
@@ -346,7 +487,7 @@ class GeneratorWiringTests(unittest.TestCase):
             with patch.object(build_pages_i18n.os.path, "exists", return_value=True):
                 build_pages_i18n.build_robots()
         self.assertEqual(audit.check_policy(
-            writer.call_args.args[1], [PAGE], ROOT_ROBOTS), [])
+            policy(), [PAGE], ROOT_ROBOTS, child_body=writer.call_args.args[1]), [])
 
 
 if __name__ == "__main__":

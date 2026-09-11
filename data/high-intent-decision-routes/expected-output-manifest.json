@@ -1,5 +1,5 @@
 {
-  "abstained_pairs": 2293,
+  "abstained_pairs": 2291,
   "app_count": 47,
   "candidate_app_locale_pairs": 2350,
   "creative_count": 47,
@@ -14,7 +14,7 @@
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "87966f99415d5e64b98eb50388439523bb76176e690b94f33b20a0f75a6d70f0",
+      "generated_sha256": "84d77233afc8fd7d0f535d2da8e18b755eef5aa1a32f0b5f7e8e926e1a6ed4f5",
       "kind": "conversion_contracts",
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.json"
     },
@@ -24,14 +24,19 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "c941c1a30ff5d594b725a36f1cb638df51c15f14774c148f6eaf0a012af573ea",
+      "generated_sha256": "77126023226be1c27b267af3e8aec09cbb2396a198663e1113ea176ae2c8c950",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "c40274260cbcf41e1dcb483799f49ae35ff7e03504e5f5b4bec71d52331eb090",
+      "generated_sha256": "855ef5b4d5895f29a666564d63d4c1539dc8dd6eccecd2b0cba9409341c130a9",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
+    },
+    {
+      "generated_sha256": "a3945dc223a057cbe45e9a9314735a74efa1a37940fabc746201e677fd549d4a",
+      "kind": "route_html",
+      "relative_path": "de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
     {
       "generated_sha256": "7acbfc141a31d7ae552ca4cf4a3df031cc05f3a7c2da4dfbf35ec455c66222bd",
@@ -64,7 +69,7 @@
       "relative_path": "en-US/decide/cvdesk/ats-resume-on-iphone-without-upload.html"
     },
     {
-      "generated_sha256": "c20fb76e42c043c03d32b5f71bbe233870b02d844411a63aaf62da89799cd49c",
+      "generated_sha256": "f4dfb565e315780565f20115e747dd588b18168bbded073665d3cba46a8b2077",
       "kind": "route_html",
       "relative_path": "en-US/decide/cyca/private-cycle-patterns-without-account.html"
     },
@@ -159,7 +164,7 @@
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
     {
-      "generated_sha256": "02133564629cffcc8ed37ecc82a287aa9df0700320d176ea97073c091f0ab574",
+      "generated_sha256": "b16c4fc4677675b5d212d553b9733b5faedc830095ecf6ddfd984577496e9304",
       "kind": "route_html",
       "relative_path": "en-US/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
@@ -284,7 +289,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "b664f2018447519890c6919e7cf08b29b1ad84eef05dab6be17d75625c0d3d79",
+      "generated_sha256": "00b38a7958c4aca4b3dbf858604530221008d8193601d3507c36dfc4245c9105",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -292,6 +297,11 @@
       "generated_sha256": "71ecd59b9a769d79980ee064fe61309e688248c5c9bb5f54fbb5e57f59aac0d8",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
+    },
+    {
+      "generated_sha256": "a49482234e354fa298e856e2d25e2df9e451994d747b442879b6419dbff18ec2",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
     },
     {
       "generated_sha256": "a3c111092d81c5615006346f124bc64193f7feede02fbf6a40ef1c4279d29c77",
@@ -309,7 +319,7 @@
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
     {
-      "generated_sha256": "de543ffa9b8e56418374cb1959fb437bb9d87b07c66c942baa622e69c80f8580",
+      "generated_sha256": "c145afd5e5842c7bd1bb841603921ed3cf1a4a9f0854f6bf086284a6c662c414",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
@@ -332,12 +342,29 @@
     "public_apps": 47,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "193d44828c8bcaa4282fd27e7acc01963643db39d9c584266a325f1310802e69",
+  "manifest_digest": "8b558bdd8bf2376a52fae02410e1118d04a9a722688771fc3268591137a5b54b",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "dd82827f2ba9c9f7461e6a7c6d23b9138db32dae9c132145cc60952943b85c72",
+  "release_contract_digest": "218aa7721786c999b902b350f5c130f1bcb451145e1d15233927cffbf4a33337",
   "release_state": "exact",
-  "route_count": 57,
+  "route_count": 59,
   "routes": [
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "app_store_url": "https://apps.apple.com/de/app/id6790800323?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "4bdc5918abb5092ff9393fbf82d99f4667d16031d238843c36bfea2b337998ae",
+      "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "de-DE",
+      "output_sha256": "a3945dc223a057cbe45e9a9314735a74efa1a37940fabc746201e677fd549d4a",
+      "record_digest": "6685e7a6d5c6ce99432cd78662cd6807853dfce5f34bab4bb409555bf2aa98db",
+      "relative_path": "de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html",
+      "route_id": "de-DE:mochidonestamp:remember-when-household-task-was-done",
+      "route_slug": "remember-when-household-task-was-done",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html"
+    },
     {
       "app_key": "aibriefpack",
       "app_store_id": "6791658210",
@@ -450,8 +477,8 @@
       "creative_id": "cyca:private-cycle-patterns-without-account:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "c20fb76e42c043c03d32b5f71bbe233870b02d844411a63aaf62da89799cd49c",
-      "record_digest": "7ff757b07e878c91873972a92c4763a2750d0b4272ef8f4a6121c97d66d2666d",
+      "output_sha256": "f4dfb565e315780565f20115e747dd588b18168bbded073665d3cba46a8b2077",
+      "record_digest": "958cc0c6548ed2d040d6e3d2f82053638c7af8806491eb650b8a9005516e255e",
       "relative_path": "en-US/decide/cyca/private-cycle-patterns-without-account.html",
       "route_id": "en-US:cyca:private-cycle-patterns-without-account",
       "route_slug": "private-cycle-patterns-without-account",
@@ -773,8 +800,8 @@
       "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "02133564629cffcc8ed37ecc82a287aa9df0700320d176ea97073c091f0ab574",
-      "record_digest": "f5c15915288a5688be9edabca9ab845d7234b8159d2fde458067f34e7b3f45fa",
+      "output_sha256": "b16c4fc4677675b5d212d553b9733b5faedc830095ecf6ddfd984577496e9304",
+      "record_digest": "82351ad0cacb62505066a1479d92849cbe30122b41801adbb1bb225ccf527935",
       "relative_path": "en-US/decide/mochidonestamp/remember-when-household-task-was-done.html",
       "route_id": "en-US:mochidonestamp:remember-when-household-task-was-done",
       "route_slug": "remember-when-household-task-was-done",
@@ -1206,6 +1233,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
     {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "app_store_url": "https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "campaign_token": "geo_pick",
+      "content_type": "privacy_pay_once",
+      "creative_digest": "a9d6963fee3b28c7ebd3d741279b5ec8124085526201fa0d4b5d4b0286f51204",
+      "creative_id": "cyca:private-cycle-patterns-without-account:privacy_pay_once",
+      "intent_type": "privacy_pay_once",
+      "locale": "zh-Hant",
+      "output_sha256": "a49482234e354fa298e856e2d25e2df9e451994d747b442879b6419dbff18ec2",
+      "record_digest": "f6e54707cf2a04709bdf7aefea184e05e281c37f5899e31a78a6b09bc46e7e5c",
+      "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html",
+      "route_id": "zh-Hant:cyca:private-cycle-patterns-without-account",
+      "route_slug": "private-cycle-patterns-without-account",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
       "app_key": "lumibopomofo",
       "app_store_id": "6773017109",
       "app_store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
@@ -1266,8 +1310,8 @@
       "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
       "intent_type": "problem_aware",
       "locale": "zh-Hant",
-      "output_sha256": "de543ffa9b8e56418374cb1959fb437bb9d87b07c66c942baa622e69c80f8580",
-      "record_digest": "6843c3f21adb814c6aa47c7ed6491d206e4ef31dae9c877356e89cc9b4b8212c",
+      "output_sha256": "c145afd5e5842c7bd1bb841603921ed3cf1a4a9f0854f6bf086284a6c662c414",
+      "record_digest": "7d2be2b49d61cb753c3b3961081b06262b40d023c71fd985a7ffc406445d8ea3",
       "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html",
       "route_id": "zh-Hant:mochidonestamp:remember-when-household-task-was-done",
       "route_slug": "remember-when-household-task-was-done",
@@ -1310,5 +1354,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "fd05a2e3b31fe31563b52572b942bde702cfad4669c9559f03b289de3e693ba2"
+  "source_contract_digest": "0fa45c7bb9719f5a28d61a3d51746f474e39b741b261f56d55544838b0ac9272"
 }

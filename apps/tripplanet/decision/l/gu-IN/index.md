@@ -11,14 +11,14 @@ publisher: "Lumi Studio"
 
 # ફેમિલી ટ્રિપ્સ માટે બાળકો માટે શ્રેષ્ઠ ટ્રાવેલ એક્ટિવિટી એપ
 
-યંગ બાળકો સાથે મુસાફરી કરતા માતાપિતાને એવી એક્ટિવિટીઝ જોઈએ છે જે પેકિંગ, વેટિંગ અને નવી જગ્યા શોધવાનું એડવેન્ચર બનાવે, વધુ તણાવનું કારણ નહીં. એટલા માટે જ Lumi Trip Planet બન્યું.
+યંગ બાળકો સાથે મુસાફરી કરતા માતાપિતાને એવી એક્ટિવિટીઝ જોઈએ છે જે પેકિંગ, વેટિંગ અને નવી જગ્યા શોધવાનું એડવેન્ચર બનાવે, વધુ તણાવનું કારણ નહીં. એટલા માટે જ Trip Planet: Kids Quest બન્યું.
 
 - બાળકો અને અભ્યાસ
 - મફત શરૂઆત
 - કોઈ જાહેરાત નથી
 - App Store · મફત
 
-[Lumi Trip Planet App Store પર મેળવો →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Trip Planet: Kids Quest App Store પર મેળવો →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

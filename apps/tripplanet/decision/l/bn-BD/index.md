@@ -11,14 +11,14 @@ publisher: "Lumi Studio"
 
 # পরিবারিক ভ্রমণে শিশুদের জন্য সেরা ট্রাভেল অ্যাক্টিভিটি অ্যাপ
 
-ছোট শিশুদের নিয়ে ভ্রমণ করা অভিভাবকদের দরকার কার্যক্রম, যা প্যাকিং, অপেক্ষা ও নতুন স্থান আবিষ্কারকে অ্যাডভেঞ্চারের অংশ করে, আরেকটি চাপের উৎস নয়। এ জন্যই Lumi Trip Planet তৈরি হয়েছে।
+ছোট শিশুদের নিয়ে ভ্রমণ করা অভিভাবকদের দরকার কার্যক্রম, যা প্যাকিং, অপেক্ষা ও নতুন স্থান আবিষ্কারকে অ্যাডভেঞ্চারের অংশ করে, আরেকটি চাপের উৎস নয়। এ জন্যই Trip Planet: Kids Quest তৈরি হয়েছে।
 
 - শিশু ও শেখা
 - বিনামূল্যে শুরু
 - কোনও বিজ্ঞাপন নেই
 - App Store · বিনামূল্যে
 
-[App Store-এ Lumi Trip Planet পান →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[App Store-এ Trip Planet: Kids Quest পান →](https://apps.apple.com/bd/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

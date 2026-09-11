@@ -31,8 +31,10 @@ from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     LOCALE_STOREFRONTS,
+    campaign_app_store_url,
     load_storefront_availability,
     load_storefront_details,
+    localized_app_store_url,
     localized_storefront_detail,
     verified_app_store_url,
 )
@@ -42,6 +44,7 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALES,
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
+from external_app_identity import external_identity  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -1465,6 +1468,7 @@ def external_localized_values(key, locale, localizations=None):
     values.update(
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
+    values = external_identity(key, locale, values)
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1562,6 +1566,13 @@ def build_one(key, locale, all_locales):
     # button beside it.  Mint the final token from the same authority instead.
     campaign = gen_store_attribution.campaign_token(f"{locale}/{key}.html")
     url = appstore_url(key, campaign) or f"{SITE}/{locale}/{key}.html"
+    if key in APPSTORE and locale == "bn-BD":
+        url = campaign_app_store_url(
+            localized_app_store_url(
+                f"https://apps.apple.com/app/id{APPSTORE[key]}", locale
+            ),
+            campaign,
+        )
     ui = get_ui(locale)
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
@@ -1595,7 +1606,7 @@ def build_one(key, locale, all_locales):
         "inLanguage": locale,
         "description": desc or sub,
         "url": url,
-        "installUrl": appstore_url(key, campaign) or url,
+        "installUrl": url,
         "featureList": feats,
         "keywords": ", ".join(kws),
     }
@@ -1656,7 +1667,7 @@ def build_one(key, locale, all_locales):
   <p>{e(pricing_text)}</p>
 {faq_section}
   <h2>{e(ui["dl"])}</h2>
-  <p><a href="{e(appstore_url(key, campaign) or url)}">{e(ui["get"].format(name=name))}</a></p>
+  <p><a href="{e(url)}">{e(ui["get"].format(name=name))}</a></p>
 </main>
 </body>
 </html>

@@ -11,14 +11,14 @@ publisher: "Lumi Studio"
 
 # కుటుంబ ప్రయాణాల్లో పిల్లలకు ఉత్తమ ట్రావెల్ కార్యకలాప యాప్
 
-యువ పిల్లలతో ప్రయాణించే తల్లిదండ్రులకు ప్యాకింగ్, వేచి ఉండడం మరియు కొత్త ప్రదేశాన్ని అన్వేషించడం అనుభవంలో భాగంగా మారే కార్యకలాపాలు అవసరం, అదనపు ఒత్తిడిగా కాకుండా. అందుకే Lumi Trip Planet తయారైంది.
+యువ పిల్లలతో ప్రయాణించే తల్లిదండ్రులకు ప్యాకింగ్, వేచి ఉండడం మరియు కొత్త ప్రదేశాన్ని అన్వేషించడం అనుభవంలో భాగంగా మారే కార్యకలాపాలు అవసరం, అదనపు ఒత్తిడిగా కాకుండా. అందుకే Trip Planet: Kids Quest తయారైంది.
 
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 
-[Lumi Trip Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Trip Planet: Kids Quest ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

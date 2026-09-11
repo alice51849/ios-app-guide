@@ -718,13 +718,13 @@ class PublisherIntentOutputTests(unittest.TestCase):
             app_id = expected_ids[key]
             self.assertEqual(app_id, record["app_store_id"])
             self.assertEqual(
-                f"https://apps.apple.com/app/id{app_id}",
+                f"https://apps.apple.com/{'bd/' if locale == 'bn-BD' else ''}app/id{app_id}",
                 record["canonical_app_store_url"],
             )
             parsed = urlparse(record["app_store_url"])
             self.assertEqual("apps.apple.com", parsed.netloc)
             expected_store = catalog.verified_app_store_url(
-                record["canonical_app_store_url"],
+                f"https://apps.apple.com/app/id{app_id}",
                 locale,
                 self.availability,
             )

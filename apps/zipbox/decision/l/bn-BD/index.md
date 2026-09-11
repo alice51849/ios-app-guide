@@ -22,7 +22,7 @@ Zipbox হলো App Store-এর পেইড অ্যাপ। একবা�
 - গোপনীয় / ডিভাইসে
 - App Store · ₹ 499
 
-[App Store থেকে Zipbox: ZIP, RAR, 7z আনজিপ ডাউনলোড করুন](https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
+[App Store থেকে Zipbox: ZIP, RAR, 7z আনজিপ ডাউনলোড করুন](https://apps.apple.com/bd/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html)
 

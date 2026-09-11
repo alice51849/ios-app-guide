@@ -690,6 +690,11 @@ def _schema_payload(apps: dict[str, Any]) -> dict[str, Any]:
                             "formatted_price",
                         ],
                         "properties": {
+                            "source_country": {
+                                "type": "string",
+                                "pattern": r"^[a-z]{2}$",
+                                "description": "Original price-evidence market, not a claim of availability in the CTA market.",
+                            },
                             "price": {
                                 "type": "string",
                                 "pattern": r"^\d+(?:\.\d+)?$",

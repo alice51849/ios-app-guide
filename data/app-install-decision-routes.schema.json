@@ -537,6 +537,11 @@
             "formatted_price"
           ],
           "properties": {
+            "source_country": {
+              "type": "string",
+              "pattern": "^[a-z]{2}$",
+              "description": "Original price-evidence market, not a claim of availability in the CTA market."
+            },
             "price": {
               "type": "string",
               "pattern": "^\\d+(?:\\.\\d+)?$"

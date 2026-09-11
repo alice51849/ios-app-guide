@@ -24,10 +24,12 @@ import urllib.parse
 import urllib.request
 
 from answer_personas import PERSONAS
+from answer_app_store_links import direct_app_store_ids
 from app_store_storefronts import (
     required_campaign_app_store_url,
     load_storefront_availability,
     verified_app_store_url,
+    localized_app_store_url,
 )
 from gen_feed import feed_discovery_links
 from official_locales import OFFICIAL_LOCALES
@@ -1130,7 +1132,7 @@ def _page_record(
         path = pages / locale / f"{key}.html"
     source = path.read_text(encoding="utf-8")
     app_id = str(app["app_store_id"])
-    if f"apps.apple.com/app/id{app_id}" not in source:
+    if app_id not in direct_app_store_ids(source, path):
         raise ValueError(f"Wrong App Store owner in {path}")
     canonical = _extract(
         source,
@@ -1164,7 +1166,9 @@ def _page_record(
         "source_persona_query": source_query,
         "canonical_guide_url": canonical,
         "canonical_app_store_url": (
-            f"https://apps.apple.com/app/id{app_id}"
+            localized_app_store_url(f"https://apps.apple.com/app/id{app_id}", locale)
+            if locale == "bn-BD"
+            else f"https://apps.apple.com/app/id{app_id}"
         ),
         "app_store_url": _app_store_url(app_id, locale, availability),
         "app_store_cta_label": cta_label,

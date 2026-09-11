@@ -11,14 +11,14 @@ publisher: "Lumi Studio"
 
 # ପରିବାର ଯାତ୍ରାରେ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଭ୍ରମଣ କାର୍ଯ୍ୟ ଆପ୍
 
-ଅପରିପକ୍ୱ ଶିଶୁ ସହ ପ୍ରବାସ କରୁଥିବା ଅଭିଭାବକମାନେ ପାଇଁ ପ୍ୟାକିଂ, ଅପେକ୍ଷା ଏବଂ ନୂତନ ସ୍ଥାନ ଅନ୍ୱେଷଣକୁ ଅଭିଯାନର ଅଂଶ କରିବା ଦରକା, ଅନ୍ୟ ଚାପ ଉତ୍ପନ୍ନ କରିବା ନୁହେଁ। ସେଥିପାଇଁ ହିଁ Lumi Trip Planet ତିଆରି ହେଲା।
+ଅପରିପକ୍ୱ ଶିଶୁ ସହ ପ୍ରବାସ କରୁଥିବା ଅଭିଭାବକମାନେ ପାଇଁ ପ୍ୟାକିଂ, ଅପେକ୍ଷା ଏବଂ ନୂତନ ସ୍ଥାନ ଅନ୍ୱେଷଣକୁ ଅଭିଯାନର ଅଂଶ କରିବା ଦରକା, ଅନ୍ୟ ଚାପ ଉତ୍ପନ୍ନ କରିବା ନୁହେଁ। ସେଥିପାଇଁ ହିଁ Trip Planet: Kids Quest ତିଆରି ହେଲା।
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - App Store · ମାଗଣା
 
-[App Store ରେ Lumi Trip Planet ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[App Store ରେ Trip Planet: Kids Quest ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

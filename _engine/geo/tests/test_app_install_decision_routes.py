@@ -147,6 +147,13 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
             country = app_store_storefronts.LOCALE_STOREFRONTS[
                 record["locale"]
             ]
+            stored_facts = dict(record["storefront_facts"] or {})
+            source_country = stored_facts.pop("source_country", None)
+            if source_country is not None:
+                self.assertEqual(record["locale"], "bn-BD")
+                self.assertEqual(country, "bd")
+                self.assertEqual(source_country, "in")
+                country = source_country
             expected_facts = self.storefront_details.get(country, {}).get(
                 record["app_store_id"]
             )
@@ -159,7 +166,7 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                     record["locale"],
                 )
             )
-            self.assertEqual(expected_facts, record["storefront_facts"])
+            self.assertEqual(expected_facts, stored_facts)
             self.assertTrue(
                 any(
                     str(expected_facts["formatted_price"]) in label

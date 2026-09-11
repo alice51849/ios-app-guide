@@ -394,7 +394,7 @@ APPS = {
                   "secret photos", "face id vault", "hide pictures"],
     ),
     "tripplanet": dict(
-        name="Lumi Trip Planet", search="Lumi Trip Planet", category="kids",
+        name="Trip Planet: Kids Quest", search="Trip Planet: Kids Quest", category="kids",
         icon="~/23_LumiTripPlanet/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png", shots_dir="~/00_GrowthEngine/social/assets/tripplanet", locale="", shots=["01", "02", "03", "04"],
         kicker="AGES 4–10",
         title="Turn every trip into\na kid's adventure",

@@ -27,64 +27,12 @@ PROVIDER_TOKEN_FILES = (
 )
 PROMOTIONAL_RATING_MIN_VALUE = 4.0
 PROMOTIONAL_RATING_MIN_COUNT = 2
-LOCALE_STOREFRONTS = {
-    "ar-SA": "sa",
-    # Bengali readers are served by the India storefront. Apple has no "bd"
-    # storefront at all -- apps.apple.com/bd/... 301s to /us, and an iTunes
-    # lookup with country=bd returns 0 results for *every* app, including
-    # Facebook and WhatsApp. Pointing bn-BD at "bd" silently redirected all
-    # Bengali store links to the US store, where the apps are not purchasable.
-    # See NON_STOREFRONTS below for the guard that keeps this from recurring.
-    "bn-BD": "in",
-    "ca": "es",
-    "cs": "cz",
-    "da": "dk",
-    "de-DE": "de",
-    "el": "gr",
-    "en-AU": "au",
-    "en-CA": "ca",
-    "en-GB": "gb",
-    "en-US": "us",
-    "es-ES": "es",
-    "es-MX": "mx",
-    "fi": "fi",
-    "fr-CA": "ca",
-    "fr-FR": "fr",
-    "gu-IN": "in",
-    "he": "il",
-    "hi": "in",
-    "hr": "hr",
-    "hu": "hu",
-    "id": "id",
-    "it": "it",
-    "ja": "jp",
-    "kn-IN": "in",
-    "ko": "kr",
-    "ml-IN": "in",
-    "mr-IN": "in",
-    "ms": "my",
-    "nl-NL": "nl",
-    "no": "no",
-    "or-IN": "in",
-    "pa-IN": "in",
-    "pl": "pl",
-    "pt-BR": "br",
-    "pt-PT": "pt",
-    "ro": "ro",
-    "ru": "ru",
-    "sk": "sk",
-    "sl-SI": "si",
-    "sv": "se",
-    "ta-IN": "in",
-    "te-IN": "in",
-    "th": "th",
-    "tr": "tr",
-    "uk": "ua",
-    "ur-PK": "pk",
-    "vi": "vn",
-    "zh-Hans": "cn",
-    "zh-Hant": "tw",
-}
+LOCALE_STOREFRONTS = json.loads(
+    Path(__file__).with_name("locale_storefronts.json").read_text(encoding="utf-8")
+)
+# Routing is separate from availability/price evidence. A missing lookup may
+# not silently move Bangladesh readers to India or a countryless URL.
+REQUIRED_LOCALE_STOREFRONTS = frozenset({"bn-BD"})
 FREE_LABELS = {
     "ar-SA": "مجاني",
     "bn-BD": "বিনামূল্যে",
@@ -148,28 +96,13 @@ APP_STORE_DEVELOPER_PATH_RE = re.compile(
     r"(?:[-A-Za-z0-9._~%]+/)?id[0-9]{1,20}"
 )
 
-# Two-letter codes that look like plausible storefronts but are not ones Apple
-# operates. A locale mapped here produces links that 301 to /us, sending readers
-# to a storefront where the app is usually not for sale -- a silent failure, so
-# it is rejected at import time instead. Verified with a control app that ships
-# in every real storefront (Facebook, id284882215): a storefront is real if the
-# control app resolves there. Re-check with ``verify_storefronts_live()``.
-NON_STOREFRONTS = frozenset({"bd"})
-
 if set(LOCALE_STOREFRONTS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("App Store storefront mapping must cover 50 official locales")
-_dead = {
-    locale: country
-    for locale, country in LOCALE_STOREFRONTS.items()
-    if country in NON_STOREFRONTS
-}
-if _dead:
-    raise RuntimeError(
-        "App Store storefront mapping points at storefronts Apple does not "
-        f"operate: {_dead}. Links to these 301 to /us. Map the locale to the "
-        "storefront that actually serves those readers."
-    )
-del _dead
+if any(
+    not isinstance(country, str) or re.fullmatch(r"[a-z]{2}", country) is None
+    for country in LOCALE_STOREFRONTS.values()
+):
+    raise RuntimeError("App Store storefront countries must be two-letter codes")
 if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("Free labels must cover 50 official locales")
 
@@ -253,13 +186,25 @@ def validated_app_store_url(
         )
     ):
         raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if (
+        expected_locale in REQUIRED_LOCALE_STOREFRONTS
+        and country != LOCALE_STOREFRONTS[expected_locale]
+    ):
+        raise ValueError(
+            f"App Store storefront mismatch for {expected_locale}: {value!r}"
+        )
     if country is not None:
         if expected_locale is not None and country != LOCALE_STOREFRONTS[expected_locale]:
             raise ValueError(
                 f"App Store storefront mismatch for {expected_locale}: {value!r}"
             )
-        if availability is not None and path.group("app_id") not in availability.get(
-            country, frozenset()
+        if (
+            availability is not None
+            and country not in {
+                LOCALE_STOREFRONTS[locale]
+                for locale in REQUIRED_LOCALE_STOREFRONTS
+            }
+            and path.group("app_id") not in availability.get(country, frozenset())
         ):
             raise ValueError(f"Unverified App Store storefront: {value!r}")
     try:
@@ -556,11 +501,14 @@ def verified_app_store_url(
     locale: str,
     availability: dict[str, frozenset[str]],
 ) -> str:
-    """Use a country URL only when Apple verified that exact storefront."""
+    """Choose a declared route without inventing availability or price facts."""
     localized = localized_app_store_url(value, locale)
     app_id = APP_STORE_URL_RE.fullmatch(value.strip()).group("app_id")
     country = LOCALE_STOREFRONTS[locale]
-    if app_id in availability.get(country, frozenset()):
+    if (
+        locale in REQUIRED_LOCALE_STOREFRONTS
+        or app_id in availability.get(country, frozenset())
+    ):
         return localized
     return value.strip()
 
@@ -572,11 +520,7 @@ STOREFRONT_CONTROL_APP_ID = "284882215"
 
 
 def verify_storefronts_live(control_app_id: str = STOREFRONT_CONTROL_APP_ID):
-    """Return the storefront codes in LOCALE_STOREFRONTS Apple does not operate.
-
-    Network call, so this is a maintenance helper rather than an import-time
-    check; NON_STOREFRONTS carries the result. Run it when adding a locale.
-    """
+    """Report empty control lookups without changing the declared routing map."""
     import json
     import time
     import urllib.request

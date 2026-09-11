@@ -12,11 +12,19 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+if __package__:
+    from . import live_app_manifest as manifest
+    from .current_source import validate_consumer
+else:
+    import live_app_manifest as manifest
+    from current_source import validate_consumer
+
 LOOKUP_URL = "https://itunes.apple.com/lookup"
 LOOKUP_COUNTRIES = ("us", "tw", "jp", "gb")
 RETRYABLE_HTTP = {429, 500, 502, 503, 504}
 RETIRE_AFTER_MISSES = 3
 STATE_FILE = ".appstore_live_state.json"
+STATE_SCHEMA = "lumi.live-state/v2"
 STATE_SOURCE = "Apple iTunes Lookup API (US, TW, JP, GB)"
 UA = "Mozilla/5.0 (Lumi Apps availability checker)"
 _IPV4_RESOLUTION_LOCK = threading.Lock()
@@ -79,48 +87,61 @@ def fetch_live_ids(ids):
     return live & wanted
 
 
-def _read_state(path, *, strict=False):
+def _read_state(path, *, strict=False, now=None):
     try:
-        with open(path, encoding="utf-8") as handle:
-            raw = json.load(handle)
-        if not isinstance(raw, dict):
-            raise ValueError("state must be a JSON object")
-        live_values = raw.get("live_ids")
-        miss_values = raw.get("miss_counts")
-        if not isinstance(live_values, list) or not isinstance(
-            miss_values, dict
-        ):
-            raise ValueError("state must include live_ids and miss_counts")
-        live_ids = {str(value) for value in live_values}
-        miss_counts = {
-            str(key): int(value)
-            for key, value in miss_values.items()
-        }
+        raw = manifest._read(path)
+        source = manifest.current_source()
+        expected_ids = {app["app_id"] for app in source["apps"].values()}
         if (
-            raw.get("source") != STATE_SOURCE
+            not isinstance(raw, dict)
+            or raw.get("schema") != STATE_SCHEMA
+            or raw.get("source_sha256") != source["source_sha256"]
+            or raw.get("roster_digest") != source["roster_digest"]
+            or raw.get("locale_roster_sha256") != source["locale_roster_sha256"]
+            or type(raw.get("ttl_seconds")) is not int
+            or not 0 < raw["ttl_seconds"] <= manifest.MAX_TTL_SECONDS
+            or not isinstance(raw.get("live_ids"), list)
+            or len(raw["live_ids"]) != len(expected_ids)
+            or set(raw["live_ids"]) != expected_ids
+            or raw.get("miss_counts") != {}
+            or raw.get("source") != STATE_SOURCE
             or raw.get("retire_after_consecutive_misses")
             != RETIRE_AFTER_MISSES
-            or any(not value.isdigit() for value in live_ids)
-            or any(
-                key not in live_ids
-                or value < 0
-                or value >= RETIRE_AFTER_MISSES
-                for key, value in miss_counts.items()
-            )
         ):
-            raise ValueError("state metadata or values are invalid")
-        return {"live_ids": live_ids, "miss_counts": miss_counts}
-    except FileNotFoundError:
-        return {"live_ids": set(), "miss_counts": {}}
+            raise ValueError("legacy snapshot or current-source identity drift")
+        age = (
+            manifest._now(now) - manifest.timestamp(raw.get("observed_at"))
+        ).total_seconds()
+        if not 0 <= age < raw["ttl_seconds"]:
+            raise ValueError("snapshot observed_at is stale or in the future")
+        return {"live_ids": expected_ids, "miss_counts": {}, **{
+            field: raw[field] for field in ("source_sha256", "observed_at")
+        }}
     except (OSError, ValueError, TypeError, json.JSONDecodeError) as error:
-        if strict:
-            raise RuntimeError(f"Invalid App Store live state: {path}") from error
-        return {"live_ids": set(), "miss_counts": {}}
+        raise RuntimeError(
+            f"Invalid current-source App Store live state: {path}: {error}; "
+            "no registry or legacy-state fallback is permitted"
+        ) from error
 
 
-def _write_state(path, live_ids, miss_counts):
+def _write_state(path, live_ids, miss_counts, *, observed_at, source_sha256):
+    source = manifest.current_source()
+    if (
+        set(live_ids) != {app["app_id"] for app in source["apps"].values()}
+        or miss_counts != {} or source_sha256 != source["source_sha256"]
+    ):
+        raise RuntimeError("Cannot write a partial or mismatched current-source live state")
+    age = (manifest._now(None) - manifest.timestamp(observed_at)).total_seconds()
+    if not 0 <= age < manifest.MAX_TTL_SECONDS:
+        raise RuntimeError("Cannot write a stale or future current-source observation")
     payload = {
+        "schema": STATE_SCHEMA,
         "source": STATE_SOURCE,
+        "source_sha256": source_sha256,
+        "roster_digest": source["roster_digest"],
+        "locale_roster_sha256": source["locale_roster_sha256"],
+        "observed_at": observed_at,
+        "ttl_seconds": manifest.MAX_TTL_SECONDS,
         "retire_after_consecutive_misses": RETIRE_AFTER_MISSES,
         "live_ids": sorted(live_ids),
         "miss_counts": dict(sorted(miss_counts.items())),
@@ -165,66 +186,18 @@ def live_app_keys(
     seed_state_path=None,
     strict_state=False,
 ):
-    """Return public app keys, retaining a formerly-live app until 3 clean misses."""
+    """Use one complete source-bound observation; never infer a new denominator."""
+    validate_consumer(appstore)
     state_path = os.path.join(pages_dir, STATE_FILE)
-    known_ids = {str(value) for value in appstore.values() if value}
-    state_exists = os.path.exists(state_path)
-    state = _read_state(state_path, strict=strict_state)
-    if not state_exists and seed_state_path:
-        if not os.path.exists(seed_state_path):
-            raise RuntimeError(
-                "Verified App Store live-state baseline is missing: "
-                f"{seed_state_path}"
-            )
-        seed = _read_state(seed_state_path, strict=True)
-        seed_live = seed["live_ids"] & known_ids
-        if not seed_live:
-            raise RuntimeError(
-                "Verified App Store live-state baseline has no current apps"
-            )
-        seed_misses = {
-            app_id: count
-            for app_id, count in seed["miss_counts"].items()
-            if app_id in seed_live
-        }
-        _write_state(state_path, seed_live, seed_misses)
-        state = {"live_ids": seed_live, "miss_counts": seed_misses}
-
-    if refresh:
-        try:
-            observed = fetch_live_ids(known_ids)
-            if known_ids and not observed:
-                raise RuntimeError("App Store lookup unexpectedly returned zero apps")
-            if (
-                state["live_ids"]
-                and len(observed) < max(1, len(state["live_ids"]) // 2)
-            ):
-                raise RuntimeError(
-                    "App Store lookup returned an implausibly small portfolio"
-                )
-        except Exception as exc:  # Keep the last verified snapshot on transient failure.
-            if not state["live_ids"]:
-                raise
-            print(f"App Store lookup unavailable; using verified cache: {exc}")
-        else:
-            previous_live = state["live_ids"] & known_ids
-            live_ids = set(observed)
-            misses = {}
-            for app_id in previous_live - observed:
-                count = state["miss_counts"].get(app_id, 0) + 1
-                if count < RETIRE_AFTER_MISSES:
-                    live_ids.add(app_id)
-                    misses[app_id] = count
-            state = {"live_ids": live_ids, "miss_counts": misses}
-            _write_state(state_path, live_ids, misses)
-
-    if not state["live_ids"]:
-        observed = fetch_live_ids(known_ids)
-        state = {"live_ids": observed, "miss_counts": {}}
-        _write_state(state_path, observed, {})
-
-    return {
-        key
-        for key, app_id in appstore.items()
-        if str(app_id) in state["live_ids"]
-    }
+    if os.environ.get("GROWTH_LIVE_MANIFEST"):
+        document = manifest.require_public_inventory(manifest.load_manifest())
+    elif refresh:
+        document = manifest.require_public_inventory(manifest.refresh_manifest())
+        manifest.write_legacy_live_state(state_path, document)
+    else:
+        selected = state_path
+        if not os.path.exists(selected) and seed_state_path:
+            selected = seed_state_path
+        _read_state(selected, strict=True)
+        return set(appstore)
+    return set(document["apps"])

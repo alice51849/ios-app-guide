@@ -1,5 +1,11 @@
 {
+  "schema": "lumi.live-state/v2",
   "source": "Apple iTunes Lookup API (US, TW, JP, GB)",
+  "source_sha256": "cb5eb21eea744b4c8a854dbc24cea2a41a39d877a55e4b8858faa9d284b520df",
+  "roster_digest": "40d77eea74d7ce9f9bf9a8b61196552e25cd1d43ea9fa123b9212af17a9d38b6",
+  "locale_roster_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
+  "observed_at": "2026-09-11T05:47:28.011980+00:00",
+  "ttl_seconds": 86400,
   "retire_after_consecutive_misses": 3,
   "live_ids": [
     "6754218117",

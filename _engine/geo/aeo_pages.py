@@ -544,11 +544,11 @@ def pricing_profile(key):
         "free_with_lifetime_unlock": "free_to_start",
         "free": "free",
         "flexible": "flexible",
-    }.get(APPS[key].get("purchase_model"), "neutral")
+    }.get(APPS.get(key, {}).get("purchase_model"), "neutral")
 
 
 def has_one_time_access(key):
-    return APPS[key].get("purchase_model") in {
+    return APPS.get(key, {}).get("purchase_model") in {
         "paid_upfront",
         "free_with_lifetime_unlock",
         "flexible",

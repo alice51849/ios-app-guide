@@ -167,11 +167,15 @@ def load_live_app_keys(
     appstore: Mapping[str, object],
     apps: Mapping[str, Mapping[str, object]],
 ) -> tuple[list[str], str]:
-    """Read the last verified App Store snapshot without making a network call."""
+    """Validate the exact current source and its fresh evidence without a lookup."""
+    from appstore_live import _read_state
+    from current_source import validate_consumer
+
     state_path = Path(pages) / LIVE_STATE_NAME
     try:
+        validate_consumer(dict(appstore), dict(apps))
         raw = state_path.read_bytes()
-        payload = json.loads(raw)
+        _read_state(state_path, strict=True)
     except FileNotFoundError as error:
         raise ManifestError(
             f"Verified live-app catalog is missing: {state_path}"
@@ -180,20 +184,9 @@ def load_live_app_keys(
         raise ManifestError(
             f"Verified live-app catalog is unreadable: {state_path}"
         ) from error
-    live_ids = payload.get("live_ids")
-    if not isinstance(live_ids, list) or not live_ids:
-        raise ManifestError("Verified live-app catalog has no live_ids")
-    wanted = {str(value) for value in live_ids if str(value).strip()}
-    live = sorted(
-        key
-        for key, app_id in appstore.items()
-        if key in apps and str(app_id) in wanted
-    )
-    if not live:
-        raise ManifestError(
-            "Verified live-app catalog does not match the maintained registry"
-        )
-    return live, hashlib.sha256(raw).hexdigest()
+    except (RuntimeError, ValueError) as error:
+        raise ManifestError(f"Current-source live evidence is invalid: {error}") from error
+    return sorted(appstore), hashlib.sha256(raw).hexdigest()
 
 
 def canonical_path(canonical_url: str, site: str) -> str:

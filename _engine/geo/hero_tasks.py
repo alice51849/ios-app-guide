@@ -332,13 +332,15 @@ def task_for_app(tasks: list[dict], key: str) -> dict:
 
 
 def catalogs(pages: Path, tasks: list[dict], site: str, provider: str) -> tuple[dict, dict]:
+    from appstore_live import _read_state
+
     if not re.fullmatch(r"\d+", provider):
         raise ValueError("APP_STORE_PROVIDER_TOKEN is required; partial attribution is forbidden")
     finder = json.loads(safe_path(pages, FINDER).read_text(encoding="utf-8"))
     inventory = {app["key"]: app for app in finder["apps"]}
     if len(inventory) != len(finder["apps"]):
         raise ValueError("Duplicate inventory Apps")
-    state = json.loads(safe_path(pages, ".appstore_live_state.json").read_text(encoding="utf-8"))
+    state = _read_state(safe_path(pages, ".appstore_live_state.json"), strict=True)
     if {str(app["app_store_id"]) for app in inventory.values()} != set(state["live_ids"]):
         raise ValueError("Cached-live and Finder inventories disagree")
     intents = json.loads(safe_path(pages, INTENTS).read_text(encoding="utf-8"))

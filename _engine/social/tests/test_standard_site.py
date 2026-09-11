@@ -198,6 +198,28 @@ class ProjectScratchCase(unittest.TestCase):
 
 
 class StandardSiteGeneratorTests(ProjectScratchCase):
+    def test_live_state_requires_the_exact_current_source_and_fresh_evidence(self):
+        import live_app_manifest
+
+        pages = self.scratch / "current-source"
+        document = live_app_manifest.create_manifest(
+            live_app_manifest.canonical_manifest()["apps"],
+        )
+        path = pages / generator.LIVE_STATE_NAME
+        live_app_manifest.write_legacy_live_state(path, document)
+        keys, digest = generator.load_live_app_keys(pages, generator.APPSTORE, generator.APPS)
+        self.assertEqual(47, len(keys))
+        self.assertEqual(set(document["apps"]), set(keys))
+        self.assertEqual(64, len(digest))
+        state = json.loads(path.read_text())
+        state["observed_at"] = (datetime.now(timezone.utc) - timedelta(days=2)).isoformat()
+        path.write_text(json.dumps(state))
+        with self.assertRaisesRegex(generator.ManifestError, "stale"):
+            generator.load_live_app_keys(pages, generator.APPSTORE, generator.APPS)
+        live_app_manifest.write_legacy_live_state(path, document)
+        with self.assertRaisesRegex(generator.ManifestError, "identity drift"):
+            generator.load_live_app_keys(pages, {"alpha": "101"}, {"alpha": {"name": "Alpha"}})
+
     def _canonical(self, pages: Path, relative: str, site: str) -> None:
         path = pages / relative
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -207,7 +229,7 @@ class StandardSiteGeneratorTests(ProjectScratchCase):
             encoding="utf-8",
         )
 
-    def test_manifest_uses_verified_live_catalog_and_substantive_disclosure(
+    def test_manifest_preserves_verified_inventory_and_substantive_disclosure(
         self,
     ) -> None:
         pages = self.scratch / "pages"
@@ -270,15 +292,17 @@ class StandardSiteGeneratorTests(ProjectScratchCase):
                 ],
             }
         ]
-        manifest = generator.build_manifest(
-            pages=pages,
-            site=site,
-            apps=apps,
-            appstore={"alpha": "101", "beta": "202", "not-live": "303"},
-            deep_items=deep,
-            max_per_app=1,
-            now=datetime(2026, 7, 27, 14, tzinfo=timezone.utc),
-        )
+        # Formatting fixtures receive a verified inventory from the source boundary.
+        with mock.patch.object(generator, "load_live_app_keys", return_value=(["alpha", "beta"], "a" * 64)):
+            manifest = generator.build_manifest(
+                pages=pages,
+                site=site,
+                apps=apps,
+                appstore={"alpha": "101", "beta": "202", "not-live": "303"},
+                deep_items=deep,
+                max_per_app=1,
+                now=datetime(2026, 7, 27, 14, tzinfo=timezone.utc),
+            )
         self.assertEqual(["alpha", "beta"], manifest["source"]["live_app_keys"])
         self.assertEqual(
             {"alpha", "beta"},
@@ -2273,13 +2297,13 @@ class StandardSitePublisherTests(ProjectScratchCase):
 
     def test_live_document_republish_drains_for_all_limits(self) -> None:
         manifest = generator.build_manifest(
-            pages=SOCIAL.parents[1],
+            pages=SOCIAL.parent / "geo" / "pages",
             site=generator.DEFAULT_SITE,
             max_per_app=3,
             now=self.NOW,
         )
         expected_keys, _ = generator.load_live_app_keys(
-            SOCIAL.parents[1],
+            SOCIAL.parent / "geo" / "pages",
             generator.APPSTORE,
             generator.APPS,
         )
@@ -3252,12 +3276,13 @@ class HeroToolDocumentTests(ProjectScratchCase):
                  "bullets": ["Write down the required outcome"],
                  "where_app_fits": "Alpha is optional.",
                  "faq": [{"q": "Is this a ranking?", "a": "No."}]}]
-        manifest = generator.build_manifest(
-            pages=pages, site=site, apps=apps,
-            appstore={"alpha": "101", "beta": "202", "not-live": "303"},
-            deep_items=deep, max_per_app=1,
-            now=datetime(2026, 9, 6, 8, tzinfo=timezone.utc),
-        )
+        with mock.patch.object(generator, "load_live_app_keys", return_value=(["alpha", "beta"], "a" * 64)):
+            manifest = generator.build_manifest(
+                pages=pages, site=site, apps=apps,
+                appstore={"alpha": "101", "beta": "202", "not-live": "303"},
+                deep_items=deep, max_per_app=1,
+                now=datetime(2026, 9, 6, 8, tzinfo=timezone.utc),
+            )
         by_url = {document["canonical_url"]: document for document in manifest["documents"]}
         self.assertIn(canonical, by_url)
         tool = by_url[f"{site}/en-US/tools/purchase-worktime-sheet.html"]

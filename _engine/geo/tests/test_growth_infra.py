@@ -301,6 +301,21 @@ process.stdout.write(JSON.stringify(context.RESULT));
 
 
 class AppStoreAvailabilityTests(unittest.TestCase):
+    def setUp(self):
+        self.apps = dict(build_pages_i18n.APPSTORE)
+        self.ids = set(self.apps.values())
+        self.document = appstore_live.manifest.create_manifest(
+            appstore_live.manifest.canonical_manifest()["apps"],
+        )
+        environment = mock.patch.dict(os.environ, {"GROWTH_LIVE_MANIFEST": ""})
+        environment.start()
+        self.addCleanup(environment.stop)
+
+    def write_state(self, directory):
+        path = Path(directory) / appstore_live.STATE_FILE
+        appstore_live.manifest.write_legacy_live_state(path, self.document)
+        return path
+
     def test_lookup_prefers_ipv4_when_dns_returns_both_families(self):
         addresses = [
             (appstore_live.socket.AF_INET6, 1, 6, "", ("::1", 443, 0, 0)),
@@ -338,108 +353,90 @@ class AppStoreAvailabilityTests(unittest.TestCase):
         self.assertEqual([appstore_live.socket.AF_INET], observed_families)
         resolver.assert_called_once()
 
-    def test_new_unlisted_apps_are_omitted_and_live_apps_are_cached(self):
+    def test_complete_current_source_is_cached_without_legacy_apps(self):
         with tempfile.TemporaryDirectory() as pages:
             with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value={"1"}
+                appstore_live, "_lookup_country", return_value=self.ids
             ):
                 keys = appstore_live.live_app_keys(
-                    {"live": "1", "pending": "2"}, pages
+                    self.apps, pages
                 )
-            self.assertEqual({"live"}, keys)
+            self.assertEqual(set(self.apps), keys)
+            self.assertFalse({"zafe", "zodira"} & keys)
             with open(
                 os.path.join(pages, appstore_live.STATE_FILE), encoding="utf-8"
             ) as handle:
                 state = json.load(handle)
-            self.assertEqual(["1"], state["live_ids"])
+            self.assertEqual(self.ids, set(state["live_ids"]))
+            self.assertEqual(self.document["source_sha256"], state["source_sha256"])
 
-    def test_formerly_live_app_requires_three_consecutive_misses(self):
+    def test_missing_app_blocks_the_batch_without_shrinking_cached_membership(self):
         with tempfile.TemporaryDirectory() as pages:
-            apps = {"first": "1", "second": "2"}
-            with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value={"1", "2"}
-            ):
-                self.assertEqual(
-                    {"first", "second"},
-                    appstore_live.live_app_keys(apps, pages),
-                )
-            for miss in (1, 2):
+            path = self.write_state(pages)
+            before = path.read_bytes()
+            for miss in (1, 2, 3):
                 with mock.patch.object(
-                    appstore_live, "fetch_live_ids", return_value={"2"}
+                    appstore_live, "_lookup_country",
+                    return_value=self.ids - {self.apps["battai"]},
                 ):
-                    keys = appstore_live.live_app_keys(apps, pages)
-                self.assertIn("first", keys)
-                with open(
-                    os.path.join(pages, appstore_live.STATE_FILE), encoding="utf-8"
-                ) as handle:
-                    state = json.load(handle)
-                self.assertEqual(miss, state["miss_counts"]["1"])
-            with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value={"2"}
-            ):
-                keys = appstore_live.live_app_keys(apps, pages)
-            self.assertEqual({"second"}, keys)
+                    with self.assertRaisesRegex(ValueError, "denominator drift"):
+                        appstore_live.live_app_keys(self.apps, pages)
+                self.assertEqual(before, path.read_bytes())
 
-    def test_seeded_baseline_protects_the_first_private_miss(self):
+    def test_fresh_source_bound_seed_can_be_read_without_network(self):
         with tempfile.TemporaryDirectory() as directory:
             public = os.path.join(directory, "public")
             private = os.path.join(directory, "private")
             os.makedirs(public)
-            appstore_live._write_state(
-                os.path.join(public, appstore_live.STATE_FILE),
-                {"1", "2"},
-                {},
-            )
+            seed = self.write_state(public)
             with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value={"2"}
-            ):
+                appstore_live, "_lookup_country", side_effect=AssertionError("No network"),
+            ) as lookup:
                 keys = appstore_live.live_app_keys(
-                    {"first": "1", "second": "2"},
+                    self.apps,
                     private,
-                    seed_state_path=os.path.join(
-                        public, appstore_live.STATE_FILE
-                    ),
+                    refresh=False,
+                    seed_state_path=seed,
                     strict_state=True,
                 )
-            self.assertEqual({"first", "second"}, keys)
+            self.assertEqual(set(self.apps), keys)
+            lookup.assert_not_called()
             state = appstore_live._read_state(
-                os.path.join(private, appstore_live.STATE_FILE),
+                seed,
                 strict=True,
             )
-            self.assertEqual(1, state["miss_counts"]["1"])
+            self.assertEqual(self.ids, state["live_ids"])
 
     def test_existing_private_state_wins_over_malformed_seed(self):
         with tempfile.TemporaryDirectory() as directory:
             private = os.path.join(directory, "private")
             os.makedirs(private)
-            appstore_live._write_state(
-                os.path.join(private, appstore_live.STATE_FILE),
-                {"1", "2"},
-                {},
-            )
+            self.write_state(private)
             seed = os.path.join(directory, "malformed.json")
             with open(seed, "w", encoding="utf-8") as handle:
                 handle.write("{}")
             with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value={"1", "2"}
+                appstore_live, "_lookup_country", side_effect=AssertionError("No network"),
             ):
                 keys = appstore_live.live_app_keys(
-                    {"first": "1", "second": "2"},
+                    self.apps,
                     private,
+                    refresh=False,
                     seed_state_path=seed,
                     strict_state=True,
                 )
-            self.assertEqual({"first", "second"}, keys)
+            self.assertEqual(set(self.apps), keys)
 
     def test_malformed_seed_fails_closed(self):
         with tempfile.TemporaryDirectory() as directory:
             seed = os.path.join(directory, "malformed.json")
             with open(seed, "w", encoding="utf-8") as handle:
                 handle.write("{}")
-            with self.assertRaisesRegex(RuntimeError, "Invalid App Store"):
+            with self.assertRaisesRegex(RuntimeError, "Invalid current-source"):
                 appstore_live.live_app_keys(
-                    {"first": "1"},
+                    self.apps,
                     os.path.join(directory, "private"),
+                    refresh=False,
                     seed_state_path=seed,
                     strict_state=True,
                 )
@@ -448,15 +445,16 @@ class AppStoreAvailabilityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             with mock.patch.object(
                 appstore_live,
-                "fetch_live_ids",
-                return_value={"2"},
+                "_lookup_country",
+                side_effect=AssertionError("No network"),
             ) as fetch:
                 with self.assertRaisesRegex(
-                    RuntimeError, "baseline is missing"
+                    RuntimeError, "unavailable"
                 ):
                     appstore_live.live_app_keys(
-                        {"first": "1", "second": "2"},
+                        self.apps,
                         os.path.join(directory, "private"),
+                        refresh=False,
                         seed_state_path=os.path.join(
                             directory, "missing-state.json"
                         ),
@@ -464,25 +462,21 @@ class AppStoreAvailabilityTests(unittest.TestCase):
                     )
             fetch.assert_not_called()
 
-    def test_transient_lookup_failure_keeps_verified_snapshot(self):
+    def test_transient_lookup_failure_preserves_but_never_reuses_old_snapshot(self):
         with tempfile.TemporaryDirectory() as pages:
-            apps = {"live": "1"}
+            path = self.write_state(pages)
+            before = path.read_bytes()
             with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value={"1"}
+                appstore_live, "_lookup_country", side_effect=TimeoutError("offline")
             ):
-                appstore_live.live_app_keys(apps, pages)
+                with self.assertRaisesRegex(ValueError, "denominator drift"):
+                    appstore_live.live_app_keys(self.apps, pages)
             with mock.patch.object(
-                appstore_live, "fetch_live_ids", side_effect=TimeoutError("offline")
+                appstore_live, "_lookup_country", return_value=set()
             ):
-                self.assertEqual(
-                    {"live"}, appstore_live.live_app_keys(apps, pages)
-                )
-            with mock.patch.object(
-                appstore_live, "fetch_live_ids", return_value=set()
-            ):
-                self.assertEqual(
-                    {"live"}, appstore_live.live_app_keys(apps, pages)
-                )
+                with self.assertRaisesRegex(ValueError, "denominator drift"):
+                    appstore_live.live_app_keys(self.apps, pages)
+            self.assertEqual(before, path.read_bytes())
 
 
 class GeneratorTests(unittest.TestCase):
@@ -22044,10 +22038,8 @@ class GeneratorTests(unittest.TestCase):
             "lumimission",
             "lumiweather",
             "lumibopomofo",
-            "zodira",
             "aim990",
             "mochi",
-            "zafe",
             "tripplanet",
             "sereno",
             "tripbeelite",
@@ -22173,7 +22165,7 @@ class GeneratorTests(unittest.TestCase):
             (localized_alt / "gmoney-no-subscription.html").write_text(
                 "accurate pricing", encoding="utf-8"
             )
-            (localized / "zodira.html").write_text("unlisted", encoding="utf-8")
+            (localized / "battai.html").write_text("unlisted", encoding="utf-8")
             localized_guides = localized / "guides"
             localized_guides.mkdir()
             localized_guide = localized_guides / "snapport.html"
@@ -22215,11 +22207,11 @@ class GeneratorTests(unittest.TestCase):
                 '"priceCurrency":"USD"},"featureList":[]}</script>',
                 encoding="utf-8",
             )
-            (guides / "zodira.html").write_text(
+            (guides / "battai.html").write_text(
                 "unlisted guide", encoding="utf-8"
             )
             unlisted_answer = pages / "answers" / "unlisted.html"
-            unlisted_id = cleanup_localized_assets.APPSTORE["zodira"]
+            unlisted_id = cleanup_localized_assets.APPSTORE["battai"]
             unlisted_answer.write_text(
                 f"https://apps.apple.com/app/id{unlisted_id} "
                 f"https://apps.apple.com/app/id{unlisted_id}",
@@ -22228,7 +22220,7 @@ class GeneratorTests(unittest.TestCase):
             unlisted_schema_answer = pages / "answers" / "astrology.html"
             unlisted_schema_answer.write_text(
                 '<script type="application/ld+json">'
-                '{"@type":"SoftwareApplication","name":"Zodira"}'
+                '{"@type":"SoftwareApplication","name":"BattAI"}'
                 "</script>",
                 encoding="utf-8",
             )
@@ -22249,25 +22241,25 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             (localized / "index.html").write_text(
-                '<ul><li><a href="zodira.html">Zodira</a></li></ul>',
+                '<ul><li><a href="battai.html">BattAI</a></li></ul>',
                 encoding="utf-8",
             )
             (pages / "sitemap.xml").write_text(
                 '<?xml version="1.0"?><urlset>'
-                f"<url><loc>{cleanup_localized_assets.SITE}/zh-Hant/zodira.html</loc></url>"
+                f"<url><loc>{cleanup_localized_assets.SITE}/zh-Hant/battai.html</loc></url>"
                 f"<url><loc>{cleanup_localized_assets.SITE}/zh-Hant/answers/passport.html</loc></url>"
                 "</urlset>",
                 encoding="utf-8",
             )
 
-            live = set(cleanup_localized_assets.APPSTORE) - {"zodira"}
+            live = set(cleanup_localized_assets.APPSTORE) - {"battai"}
             stats = cleanup_localized_assets.cleanup(pages, live)
 
             self.assertFalse(
                 (localized_alt / "snapport-private-alternative.html").exists()
             )
             self.assertTrue((localized_alt / "gmoney-no-subscription.html").exists())
-            self.assertFalse((localized / "zodira.html").exists())
+            self.assertFalse((localized / "battai.html").exists())
             self.assertFalse(stale_roundup.exists())
             self.assertFalse(unlisted_answer.exists())
             self.assertFalse(unlisted_schema_answer.exists())
@@ -22429,26 +22421,26 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             (locale / "snapport.html").write_text("public", encoding="utf-8")
-            zodira_id = cleanup_localized_assets.APPSTORE["zodira"]
+            battai_id = cleanup_localized_assets.APPSTORE["battai"]
             tool = pages / "tools" / "zodiac-compatibility-checker.html"
             tool.write_text(
                 '<script type="application/ld+json">{"@type":'
-                f'"SoftwareApplication","name":"Zodira","url":"/id{zodira_id}"'
+                f'"SoftwareApplication","name":"BattAI","url":"/id{battai_id}"'
                 "}</script>"
-                f'<p><a href="https://apps.apple.com/app/id{zodira_id}">'
-                "Download Zodira</a></p>"
+                f'<p><a href="https://apps.apple.com/app/id{battai_id}">'
+                "Download BattAI</a></p>"
                 "<p>Generic zodiac tool remains useful.</p>"
-                "<ul><li>Zodira comparison</li><li>Other resource</li></ul>"
-                "<aside><h2>Why download Zodira?</h2></aside>",
+                "<ul><li>BattAI comparison</li><li>Other resource</li></ul>"
+                "<aside><h2>Why download BattAI?</h2></aside>",
                 encoding="utf-8",
             )
             (pages / "apps.json").write_text(
                 json.dumps(
                     [
                         {
-                            "name": "Zodira",
-                            "appStoreUrl": f"/id{zodira_id}",
-                            "guideUrl": "/en-US/zodira.html",
+                            "name": "BattAI",
+                            "appStoreUrl": f"/id{battai_id}",
+                            "guideUrl": "/en-US/battai.html",
                         },
                         {
                             "name": "Snapport",
@@ -22472,8 +22464,8 @@ class GeneratorTests(unittest.TestCase):
                             {
                                 "@type": "ListItem",
                                 "position": 1,
-                                "name": "Zodira",
-                                "url": "/en-US/zodira.html",
+                                "name": "BattAI",
+                                "url": "/en-US/battai.html",
                             },
                             {
                                 "@type": "ListItem",
@@ -22485,9 +22477,9 @@ class GeneratorTests(unittest.TestCase):
                     }
                 )
                 + "</script>"
-                '<a href="#zodira">Zodira</a>'
-                '<article id="zodira">Zodira app</article>'
-                "<p><strong>Astrology:</strong> Zodira. "
+                '<a href="#battai">BattAI</a>'
+                '<article id="battai">BattAI app</article>'
+                "<p><strong>Astrology:</strong> BattAI. "
                 "<strong>Photos:</strong> Snapport.</p>",
                 encoding="utf-8",
             )
@@ -22502,7 +22494,7 @@ class GeneratorTests(unittest.TestCase):
             )
 
             live = set(cleanup_localized_assets.APPSTORE) - {
-                "zodira",
+                "battai",
                 "tripplanet",
             }
             cleanup_localized_assets.cleanup(pages, live)
@@ -22518,8 +22510,8 @@ class GeneratorTests(unittest.TestCase):
             )
             tool_text = tool.read_text(encoding="utf-8")
             self.assertIn("Generic zodiac tool remains useful.", tool_text)
-            self.assertNotIn("Zodira", tool_text)
-            self.assertNotIn(zodira_id, tool_text)
+            self.assertNotIn("BattAI", tool_text)
+            self.assertNotIn(battai_id, tool_text)
             apps = json.loads((pages / "apps.json").read_text(encoding="utf-8"))
             self.assertEqual(["Snapport"], [item["name"] for item in apps])
             self.assertIn(
@@ -22527,7 +22519,7 @@ class GeneratorTests(unittest.TestCase):
                 apps[0]["resources"][0],
             )
             finder = (pages / "find-app.html").read_text(encoding="utf-8")
-            self.assertNotIn("Zodira", finder)
+            self.assertNotIn("BattAI", finder)
             self.assertIn("Snapport", finder)
 
     def test_sitemap_only_declares_existing_app_locales(self):
@@ -22567,7 +22559,10 @@ class GeneratorTests(unittest.TestCase):
             )
 
     def test_profile_aware_roundups_and_cost_assets(self):
-        self.assertTrue(set(gen_roundups.TOPICS) <= set(gen_roundups.APPS))
+        retired = set(json.loads(
+            (Path(__file__).parent / "fixtures/live47_observation_20260911.json").read_text()
+        )["removed_identities"])
+        self.assertTrue(set(gen_roundups.TOPICS) - set(gen_roundups.APPS) <= retired)
         self.assertEqual(
             "vocabulary learning", gen_roundups.TOPICS["wordmate"]
         )
@@ -26482,9 +26477,7 @@ class GeneratorTests(unittest.TestCase):
             "lumimath": ("free_to_start", "lumimath-free-to-start"),
             "lumimission": ("free_to_start", "lumimission-free-to-start"),
             "lumiweather": ("free_to_start", "lumiweather-free-to-start"),
-            "zodira": ("free_to_start", "zodira-free-to-start"),
             "aim990": ("free_to_start", "aim990-free-to-start"),
-            "zafe": ("free_to_start", "zafe-free-to-start"),
             "tripplanet": ("free_to_start", "tripplanet-free-to-start"),
             "sereno": ("free_to_start", "sereno-free-to-start"),
             "gmoney": ("pay_once", "gmoney-no-subscription"),
@@ -26619,7 +26612,7 @@ class GeneratorTests(unittest.TestCase):
             public,
         )
         self.assertEqual([], keys)
-        self.assertEqual({"zafe"}, managed)
+        self.assertEqual(set(), managed)
 
     def test_deep_meta_keeps_the_final_word_when_no_truncation_is_needed(self):
         lead = (
@@ -27510,7 +27503,7 @@ class GeneratorTests(unittest.TestCase):
                 ["lumibopomofo", "snapport", "sononote"],
                 first_seen,
             )
-            with self.assertRaisesRegex(SystemExit, "not public"):
+            with self.assertRaisesRegex(SystemExit, "not public|Unknown app key"):
                 aeo_answers.question_plan(["zafe"])
             self.assertEqual(2, live_keys.call_count)
             self.assertTrue(
@@ -27526,8 +27519,10 @@ class GeneratorTests(unittest.TestCase):
         by_key = {row["key"]: row for row in rows}
         self.assertTrue(by_key["lumibopomofo"]["public"])
         self.assertGreater(by_key["lumibopomofo"]["coverage_score"], 0)
-        self.assertFalse(by_key["zafe"]["public"])
-        self.assertEqual("", by_key["zafe"]["appstore"])
+        self.assertNotIn("zafe", by_key)
+        self.assertNotIn("zodira", by_key)
+        self.assertFalse(by_key["battai"]["public"])
+        self.assertEqual("", by_key["battai"]["appstore"])
 
     def test_scorecard_completion_gate_only_blocks_incomplete_public_apps(self):
         rows = [

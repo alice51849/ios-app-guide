@@ -22,6 +22,7 @@ from uuid import uuid4
 from xml.sax.saxutils import escape as xml_escape
 
 from official_locales import OFFICIAL_LOCALES
+from current_source import validate_consumer
 from site_config import PUBLIC_SITE
 
 
@@ -332,6 +333,7 @@ def load_inventory(path: Path, manifest: dict[str, Any]) -> dict[str, dict[str, 
             raise ValueError(f"Verified app inventory repeats {key}")
         apps[key] = raw
 
+    validate_consumer({key: str(app.get("app_store_id", "")) for key, app in apps.items()})
     for route in manifest["routes"]:
         key = route["app_key"]
         app = apps.get(key)

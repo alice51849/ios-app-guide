@@ -157,7 +157,8 @@ class LiveManifestTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "manifest.json"
             text = json.dumps(self.document)
-            path.write_text(text.replace('"version": 2', '"version": 2, "version": 2'), encoding="utf-8")
+            token = f'"version": {manifest.VERSION}'
+            path.write_text(text.replace(token, f"{token}, {token}"), encoding="utf-8")
             with self.assertRaisesRegex(manifest.ManifestError, "Duplicate"):
                 manifest.load_manifest(path, now=NOW)
 
@@ -179,10 +180,12 @@ class LiveManifestTests(unittest.TestCase):
         states = manifest.app_statuses(result, now=NOW)
         self.assertEqual({"unknown"}, {row["inventory_status"] for row in states.values()})
 
-    def test_registered_new_apps_wait_for_explicit_multisource_adoption(self):
+    def test_registry_is_the_exact_source_without_removed_adoptions(self):
         observed = set(APPSTORE.values())
         result = manifest.refresh_manifest(APPSTORE, APPS, now=NOW, lookup=lambda ids: observed)
-        self.assertEqual({"zafe", "zodira"}, {row["key"] for row in result["pending_adoptions"]})
+        self.assertEqual([], result["pending_adoptions"])
+        self.assertEqual(set(self.apps), set(APPSTORE))
+        self.assertFalse({"zafe", "zodira"} & set(APPSTORE))
         self.assertEqual(self.apps, result["apps"])
         changed = dict(APPSTORE, battai="12345")
         with self.assertRaisesRegex(manifest.ManifestError, "Registry roster drift: battai"):

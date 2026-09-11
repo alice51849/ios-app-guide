@@ -1,0 +1,34 @@
+name: Current source contract
+
+on:
+  push:
+    paths:
+      - '_engine/geo/current_source.py'
+      - '_engine/geo/live_app_manifest.*'
+      - '_engine/geo/official_locales.py'
+      - '_engine/geo/appstore_live.py'
+      - '_engine/geo/live_app_guard.py'
+      - '_engine/geo/sync_current_source.py'
+      - '_engine/geo/tests/test_current_source.py'
+      - '_engine/geo/tests/fixtures/live47_observation_20260911.json'
+      - '_engine/social/videogen/registry*'
+      - '.github/workflows/current-source-contract.yml'
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate the deployed source without lookups or publishing
+        working-directory: _engine
+        run: |
+          mkdir -p .validation
+          TMPDIR="$PWD/.validation" \
+            python3 -m unittest geo.tests.test_current_source geo.tests.test_live_app_manifest

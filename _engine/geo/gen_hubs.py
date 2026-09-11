@@ -99,8 +99,6 @@ def exists(rel):
 def authority_apps():
     """Return the canonical live roster and reject registry drift."""
     apps = canonical_manifest()["apps"]
-    if apps.get("zipbox", {}).get("app_id") != "6806776579":
-        raise ValueError("Canonical live_app_manifest must include verified Zipbox")
     missing_apps = sorted(set(apps) - set(APPS))
     missing_ids = sorted(set(apps) - set(APPSTORE))
     extra_details = []

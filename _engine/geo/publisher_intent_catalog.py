@@ -24,6 +24,7 @@ import urllib.parse
 import urllib.request
 
 from answer_personas import PERSONAS
+from current_source import validate_consumer
 from app_store_storefronts import (
     required_campaign_app_store_url,
     load_storefront_availability,
@@ -1100,6 +1101,11 @@ def _finder_records(pages: Path) -> dict[str, dict[str, Any]]:
         for app in apps
         if isinstance(app, dict) and app.get("key")
     }
+    if len(records) != len(apps):
+        raise ValueError("Finder catalog contains duplicate or malformed current-source identities")
+    validate_consumer({
+        key: str(app.get("app_store_id", "")) for key, app in records.items()
+    })
     expected = set(PERSONAS)
     if set(records) != expected:
         raise ValueError(

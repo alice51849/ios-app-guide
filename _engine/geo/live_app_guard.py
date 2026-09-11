@@ -65,14 +65,12 @@ EXCLUDED_PARTS = {".git", "_engine", "node_modules", "__pycache__"}
 
 
 def live_apps() -> dict[str, str]:
-    from live_app_manifest import app_statuses, load_manifest
+    from live_app_manifest import load_manifest, require_public_inventory
 
-    manifest = load_manifest(require_fresh=False)
-    states = app_statuses(manifest)
+    manifest = require_public_inventory(load_manifest())
     apps = {
         key: app["app_id"]
         for key, app in manifest["apps"].items()
-        if states[key]["public_eligible"]
     }
     if not apps:
         raise RuntimeError("Verified live inventory contains no eligible App Store IDs")

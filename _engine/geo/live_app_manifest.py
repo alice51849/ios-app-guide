@@ -3,9 +3,7 @@
 from __future__ import annotations
 
 import argparse
-from contextlib import contextmanager
 from datetime import datetime, timezone
-import fcntl
 import hashlib
 import importlib.util
 import json
@@ -16,12 +14,17 @@ import re
 import sys
 import uuid
 
+if __package__:
+    from .current_source import APP_COUNT, SourceError, load_source
+else:
+    from current_source import APP_COUNT, SourceError, load_source
 
-SCHEMA = "lumi.live-app-manifest/v2"
-VERSION = 2
+
+SCHEMA = "lumi.live-app-manifest/v3"
+VERSION = 3
 ROSTER_SCHEMA = "lumi.live-app-roster/v1"
 MAX_TTL_SECONDS = 24 * 60 * 60
-MIN_APP_COUNT = 47
+MIN_APP_COUNT = APP_COUNT
 DEFAULT_MANIFEST = Path(__file__).with_suffix(".json")
 DEFAULT_ROSTER = DEFAULT_MANIFEST
 LOOKUP_COUNTRIES = ("us", "tw", "jp", "gb")
@@ -31,6 +34,8 @@ _SHA256 = re.compile(r"[0-9a-f]{64}")
 _FIELDS = {
     "schema", "version", "generated_at", "ttl_seconds", "source",
     "roster_digest", "live_state_sha256", "apps", "observations",
+    "source_sha256", "observed_at", "locale_count", "pair_count",
+    "locale_roster_sha256",
 }
 _ROSTER_FIELDS = {"schema", "version", "revision", "roster_digest", "apps"}
 _OBSERVATION_FIELDS = {"status", "checked_at", "reason"}
@@ -214,7 +219,15 @@ def _validate_roster(document: object) -> dict:
 
 def canonical_manifest() -> dict:
     """Load timeless identity, never availability or a current verification claim."""
+    current_source()
     return _validate_roster(_read(DEFAULT_ROSTER))
+
+
+def current_source() -> dict:
+    try:
+        return load_source(DEFAULT_ROSTER)
+    except SourceError as error:
+        raise ManifestError(str(error)) from error
 
 
 def runtime_manifest_path() -> Path:
@@ -245,7 +258,7 @@ def _statuses(document: dict, now: datetime) -> dict[str, dict]:
             "inventory_last_verified_at": observation.get(
                 "last_verified_at", checked if observation["status"] == "live" else None,
             ),
-            "public_eligible": observation["status"] != "unavailable",
+            "public_eligible": not expired and observation["status"] == "live" and not stale,
             "consecutive_misses": observation.get("consecutive_misses", 0),
         }
     return rows
@@ -256,6 +269,19 @@ def validate_manifest(
 ) -> dict:
     normalized = _validate_envelope(document)
     baseline = canonical_manifest()
+    source = current_source()
+    if (
+        normalized["source_sha256"] != source["source_sha256"]
+        or normalized["locale_roster_sha256"] != source["locale_roster_sha256"]
+        or type(normalized["locale_count"]) is not int
+        or normalized["locale_count"] != source["locale_count"]
+        or type(normalized["pair_count"]) is not int
+        or normalized["pair_count"] != source["pair_count"]
+    ):
+        raise ManifestError("Live manifest current-source SHA or exact-50 denominator drift")
+    observed = timestamp(normalized["observed_at"])
+    if observed != timestamp(normalized["generated_at"]):
+        raise ManifestError("Live manifest observed_at must identify the same observation run")
     if normalized["roster_digest"] != baseline["roster_digest"]:
         missing = sorted(set(baseline["apps"]) - set(normalized["apps"]))
         extra = sorted(set(normalized["apps"]) - set(baseline["apps"]))
@@ -273,7 +299,8 @@ def validate_manifest(
             raise ManifestError("Unregistered pending adoption identity")
     states = _statuses(normalized, _now(now))
     stale = [key for key, state in states.items() if state["inventory_status"] == "stale"]
-    if require_fresh and stale:
+    expired = (_now(now) - observed).total_seconds() >= normalized["ttl_seconds"]
+    if require_fresh and (stale or expired):
         raise ManifestError("Live manifest TTL expired (stale): " + ", ".join(sorted(stale)))
     return normalized
 
@@ -284,16 +311,9 @@ def load_manifest(
 ) -> dict:
     path = Path(path) if path is not None else runtime_manifest_path()
     if not path.exists():
-        now = _now(now)
-        return create_manifest(
-            canonical_manifest()["apps"], now=now,
-            observations={
-                key: {
-                    "status": "unknown", "checked_at": None,
-                    "reason": "Availability snapshot is missing; versioned roster retained",
-                }
-                for key in canonical_manifest()["apps"]
-            },
+        raise ManifestError(
+            f"Current-source observation snapshot is missing: {path}; "
+            "refresh read-only evidence, never fall back to a registry"
         )
     return validate_manifest(
         _read(path),
@@ -306,13 +326,29 @@ def app_statuses(document: dict, *, now: datetime | None = None) -> dict[str, di
     return _statuses(validate_manifest(document, now=now, require_fresh=False), now)
 
 
+def require_public_inventory(document: dict, *, now: datetime | None = None) -> dict:
+    """Fail the whole generation rather than silently publishing a smaller roster."""
+    document = validate_manifest(document, now=now)
+    states = app_statuses(document, now=now)
+    gaps = sorted(key for key, row in states.items() if not row["public_eligible"])
+    if gaps:
+        raise ManifestError(
+            "Current-source observation is incomplete; refusing denominator drift: "
+            + ", ".join(gaps)
+        )
+    return document
+
+
 def manifest_fingerprint(document: dict, *, now: datetime | None = None) -> dict:
     document = validate_manifest(document, now=now, require_fresh=False)
     # Verification times expire evidence, but must not force an expensive full
     # acquisition refresh when the verified identities and availability are unchanged.
     return {
         key: document[key]
-        for key in ("schema", "version", "roster_digest", "live_state_sha256", "apps")
+        for key in (
+            "schema", "version", "source_sha256", "roster_digest",
+            "locale_roster_sha256", "live_state_sha256", "locale_count", "pair_count", "apps",
+        )
     } | {
         "availability": {
             key: value["status"]
@@ -391,6 +427,7 @@ def create_manifest(
 ) -> dict:
     now = _now(now)
     apps = _apps(apps)
+    source = current_source()
     if observations is None:
         observations = {
             key: {"status": "live", "checked_at": now.isoformat(), "reason": ""}
@@ -405,6 +442,11 @@ def create_manifest(
         "version": VERSION,
         "source": SOURCE,
         "generated_at": now.isoformat(),
+        "observed_at": now.isoformat(),
+        "source_sha256": source["source_sha256"],
+        "locale_roster_sha256": source["locale_roster_sha256"],
+        "locale_count": source["locale_count"],
+        "pair_count": source["pair_count"],
         "ttl_seconds": MAX_TTL_SECONDS,
         "roster_digest": roster_digest(apps),
         "live_state_sha256": live_state_sha256 or _digest(state),
@@ -478,22 +520,8 @@ def _atomic_json(path, document, *, mode):
         staged.unlink(missing_ok=True)
 
 
-@contextmanager
-def _roster_lock(path):
-    directory = runtime_manifest_path().parent
-    directory.mkdir(parents=True, exist_ok=True, mode=0o700)
-    name = hashlib.sha256(str(Path(path).resolve()).encode()).hexdigest()[:16]
-    descriptor = os.open(directory / f"roster-{name}.lock", os.O_CREAT | os.O_RDWR, 0o600)
-    try:
-        fcntl.flock(descriptor, fcntl.LOCK_EX)
-        yield
-    finally:
-        fcntl.flock(descriptor, fcntl.LOCK_UN)
-        os.close(descriptor)
-
-
 def adopt_registered_live_apps(results, *, appstore=None, registry=None):
-    """Add only registry-owned IDs freshly confirmed by two Apple storefronts."""
+    """Reject runtime roster mutations, including apparently verified additions."""
     appstore, registry = _registry(appstore, registry)
     if not isinstance(results, dict) or any(source not in (*LOOKUP_COUNTRIES, "aggregate") for source in results):
         raise ManifestError("Adoption requires identified Apple storefront sources")
@@ -513,34 +541,43 @@ def adopt_registered_live_apps(results, *, appstore=None, registry=None):
             or not registry[key]["name"].strip()
         ):
             raise ManifestError(f"App must be registered in both APPSTORE and APPS: {key}")
-    with _roster_lock(DEFAULT_ROSTER):
-        roster = canonical_manifest()
-        apps = dict(roster["apps"])
-        if any(
-            str(appstore.get(key, "")) != app["app_id"]
-            or registry.get(key, {}).get("name") != app["name"]
-            for key, app in apps.items()
-        ):
-            raise ManifestError("Registry roster drift blocks automatic adoption")
-        added = []
-        for key, app_id in appstore.items():
-            sources = [source for source in LOOKUP_COUNTRIES if str(app_id) in (results.get(source) or set())]
-            if key not in apps and len(sources) >= 2:
-                apps[key] = {"app_id": str(app_id), "name": registry[key]["name"]}
-                added.append(key)
-        if added:
-            candidate = _validate_roster({
-                **roster, "revision": roster["revision"] + 1,
-                "apps": apps, "roster_digest": roster_digest(apps),
-            })
-            _atomic_json(DEFAULT_ROSTER, candidate, mode=0o644)
-        return sorted(added)
+    apps = canonical_manifest()["apps"]
+    if any(
+        str(appstore.get(key, "")) != app["app_id"]
+        or registry.get(key, {}).get("name") != app["name"]
+        for key, app in apps.items()
+    ):
+        raise ManifestError("Registry roster drift blocks automatic adoption")
+    added = sorted(
+        key for key, app_id in appstore.items()
+        if key not in apps and any(
+            str(app_id) in (results.get(source) or set()) for source in LOOKUP_COUNTRIES
+        )
+    )
+    if added:
+        raise ManifestError(
+            "Current-source identity is immutable at runtime; reviewed source "
+            "migration required before adopting: " + ", ".join(added)
+        )
+    return []
 
 
 def _previous_snapshot(path, apps, now, *, registered_ids):
     if path is None or not Path(path).exists():
         return None
-    previous = _validate_envelope(_read(path))
+    raw = _read(path)
+    if (
+        isinstance(raw, dict)
+        and raw.get("schema") == "lumi.live-app-manifest/v2"
+        and raw.get("version") == 2
+    ):
+        print(
+            "Discarding legacy v2 observation; only a new complete Apple GET "
+            "may produce a current-source snapshot",
+            file=sys.stderr,
+        )
+        return None
+    previous = _validate_envelope(raw)
     _statuses(previous, now)
     snapshot_ids = {app["app_id"] for app in previous["apps"].values()}
     snapshot_ids.update(entry["app_id"] for entry in previous.get("pending_adoptions", []))
@@ -550,10 +587,15 @@ def _previous_snapshot(path, apps, now, *, registered_ids):
             "Unregistered App IDs in last-good availability snapshot: "
             + ", ".join(sorted(unregistered))
         )
-    if any(apps.get(key) != app for key, app in previous["apps"].items()):
+    source = current_source()
+    if (
+        previous["source_sha256"] != source["source_sha256"]
+        or previous["locale_roster_sha256"] != source["locale_roster_sha256"]
+        or any(apps.get(key) != app for key, app in previous["apps"].items())
+    ):
         print(
             "Availability advisory: discarding stale last-good snapshot with outdated "
-            "roster identity; rebuilding without cached availability history",
+            "source/roster identity; rebuilding without cached availability history",
             file=sys.stderr,
         )
         return None
@@ -638,19 +680,17 @@ def write_manifest(path: Path | str, document: dict, *, private: bool = False) -
 
 
 def write_legacy_live_state(path, document):
-    """Compatibility membership only; no runtime timestamps enter the Pages tree."""
+    """Migrate compatibility readers to a source-bound, expiring observation."""
     if __package__:
         from .appstore_live import _write_state
     else:
         from appstore_live import _write_state
-    states = app_statuses(document)
-    ids = {document["apps"][key]["app_id"] for key, row in states.items() if row["public_eligible"]}
-    misses = {
-        document["apps"][key]["app_id"]: row["consecutive_misses"]
-        for key, row in states.items()
-        if row["public_eligible"] and row["consecutive_misses"]
-    }
-    _write_state(str(path), ids, misses)
+    document = require_public_inventory(document)
+    ids = {app["app_id"] for app in document["apps"].values()}
+    _write_state(
+        str(path), ids, {}, observed_at=document["observed_at"],
+        source_sha256=document["source_sha256"],
+    )
 
 
 def main(argv=None) -> int:
@@ -666,7 +706,8 @@ def main(argv=None) -> int:
     if args.adopt and not args.refresh:
         parser.error("--adopt requires --refresh")
     try:
-        document = refresh_manifest(previous_path=args.output, adopt=args.adopt) if args.refresh else load_manifest(args.manifest, require_fresh=False)
+        document = refresh_manifest(previous_path=args.output, adopt=args.adopt) if args.refresh else load_manifest(args.manifest)
+        require_public_inventory(document)
         if args.output:
             write_manifest(args.output, document, private=True)
         if args.live_state_output:
@@ -675,6 +716,8 @@ def main(argv=None) -> int:
         gaps = sorted(key for key, row in states.items() if row["inventory_status"] != "live")
         print(
             f"Live manifest: {len(states)} apps; {len(gaps)} unknown/stale; "
+            f"source_sha256={document['source_sha256']}; "
+            f"observed_at={document['observed_at']}; "
             f"roster={document['roster_digest']}"
         )
         if gaps:

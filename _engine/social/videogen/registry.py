@@ -8,7 +8,14 @@ Hooks are pain-point / savings / before-after angles — the virality lever.
 """
 import hashlib
 import os
+from pathlib import Path
 import re
+import sys
+
+_ROOT = Path(__file__).resolve().parents[2]
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+from geo.current_source import appstore_ids, load_source, validate_consumer
 
 
 VALID_PURCHASE_MODELS = frozenset(
@@ -407,35 +414,8 @@ APPS = {
     ),
 }
 
-# App Store numeric IDs (from ASC list_apps) -> used to build direct
-# https://apps.apple.com/app/id… links in captions & YouTube descriptions.
-APPSTORE = {
-    "snapport": "6780575828",
-    "sononote": "6782139553",
-    "cvdesk": "6781337213",
-    "picclear": "6780223070",
-    "scanto": "6779977651",
-    "cyca": "6782251621",
-    "gmoney": "6755782939",
-    "hourstag": "6754218117",
-    "lockhour": "6780107485",
-    "unblurry": "6782275018",
-    "photocream": "6781808054",
-    "lumiletters": "6778748533",
-    "lumimath": "6778269699",
-    "lumimission": "6779750237",
-    "lumiweather": "6779552704",
-    "lumiletterspro": "6778491147",
-    "lumimathpro": "6776958488",
-    "lumimissionpro": "6779745474",
-    "lumibopomofo": "6773017109",
-    "lumibopomofopro": "6775773117",
-    "aim990": "6784974530",
-    "zodira": "6783609555",
-    "mochi": "6785004775",
-    "zafe": "6787344033",
-    "tripplanet": "6787193643",
-}
+_CURRENT_SOURCE = load_source(_ROOT / "geo" / "live_app_manifest.json")
+APPSTORE = appstore_ids(_CURRENT_SOURCE)
 
 LONGFORM_CAMPAIGN_TOKEN = "yt_longform"
 
@@ -526,7 +506,7 @@ def longform_appstore_url(key, provider_token=None):
     )
 
 
-# --- 自動偵測的新 App(由 new_app_catchup.py 維護,免手動改碼即自動納入全部宣傳)---
+# Creative details may be discovered automatically; publication membership may not.
 _AUTO_PATH = os.path.join(os.path.dirname(__file__), "registry_auto.json")
 if os.path.exists(_AUTO_PATH):
     try:
@@ -534,9 +514,12 @@ if os.path.exists(_AUTO_PATH):
         with open(_AUTO_PATH, encoding="utf-8") as _handle:
             _automatic_apps = _json.load(_handle)
         for _k, _v in _automatic_apps.items():
+            if _k not in APPSTORE:
+                continue
+            if _v.get("appstore_id") != APPSTORE[_k]:
+                raise ValueError(f"Automatic creative identity drift: {_k}")
             if _k in APPS:
                 continue
-            APPSTORE.setdefault(_k, _v["appstore_id"])
             APPS[_k] = dict(
                 name=_v["name"], search=_v.get("search", _v["name"]),
                 category=_v.get("category", "other"),
@@ -551,6 +534,9 @@ if os.path.exists(_AUTO_PATH):
             )
     except (OSError, TypeError, ValueError) as exc:
         raise RuntimeError(f"Invalid automatic app registry: {_AUTO_PATH}") from exc
+
+APPS = {key: APPS[key] for key in APPSTORE if key in APPS}
+validate_consumer(APPSTORE, APPS, source=_CURRENT_SOURCE)
 
 for _key, _app in APPS.items():
     _model = _app.setdefault("purchase_model", "neutral")

@@ -14,7 +14,7 @@ if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
 import live_app_guard
-from live_app_manifest import canonical_manifest
+from live_app_manifest import canonical_manifest, create_manifest, write_manifest
 
 
 class LiveAppGuardTests(unittest.TestCase):
@@ -109,11 +109,16 @@ class LiveAppGuardTests(unittest.TestCase):
         before = {path: path.read_bytes() for path in live_pages}
         dead = self.page("abr/reviews/zafe.html", self.link(self.dead_id))
         roster_before = canonical_manifest()
-        # A missing/unknown availability observation retains versioned identity;
-        # it must not turn the 47-app roster into an older generated subset.
+        dead_before = dead.read_bytes()
         with mock.patch.dict(os.environ, {
             "GROWTH_LIVE_MANIFEST": str(self.site / "missing-runtime-manifest.json"),
         }):
+            with self.assertRaisesRegex(ValueError, "snapshot is missing"):
+                live_app_guard.quarantine_nonlive_pages(self.site, apply=True)
+        self.assertEqual(dead_before, dead.read_bytes())
+        runtime = self.site / "current-observation.json"
+        write_manifest(runtime, create_manifest(roster_before["apps"]))
+        with mock.patch.dict(os.environ, {"GROWTH_LIVE_MANIFEST": str(runtime)}):
             self.assertEqual(self.live, set(live_app_guard.live_apps().values()))
             live_app_guard.quarantine_nonlive_pages(self.site, apply=True)
         self.assertNotIn(self.dead_id, dead.read_text())

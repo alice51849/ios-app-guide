@@ -76,6 +76,14 @@ jobs:
           cache-dependency-path: _engine/geo/requirements-validation.txt
       - name: Install canonical generator dependencies
         run: python3 -m pip install --requirement _engine/geo/requirements-validation.txt
+      - name: Verify the current source with read-only Apple evidence
+        if: inputs.incremental_high_intent != true
+        run: |
+          manifest="$RUNNER_TEMP/current-source-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json"
+          python3 _engine/geo/live_app_manifest.py --refresh \
+            --output "$manifest" \
+            --live-state-output "$GITHUB_WORKSPACE/.appstore_live_state.json"
+          echo "GROWTH_LIVE_MANIFEST=$manifest" >> "$GITHUB_ENV"
       - name: Quarantine unavailable App Store pages
         if: inputs.incremental_high_intent != true
         run: python3 _engine/geo/live_app_guard.py --site-root .

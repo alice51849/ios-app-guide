@@ -243,6 +243,7 @@ REVIEW_APPS = [
     {"key": "snapport", "emoji": "📷", "slug_suffix": "review-2026"},
     {"key": "maskmyfile", "emoji": "📋", "slug_suffix": "review-2026"},
 ]
+REVIEW_APPS = [app for app in REVIEW_APPS if app["key"] in APPS]
 
 def lang_display(code):
     return LANG_NAMES.get(code, code)

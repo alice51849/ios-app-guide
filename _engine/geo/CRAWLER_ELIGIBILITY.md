@@ -32,6 +32,20 @@ frontend scan 必須確認 HTML／CSS／JS 沒有指向它，公開 client JS �
 尚未部署的 `/scripts/` 新 Disallow；readback 依正式 root 的實際結果回報，
 不可把 child-only 規則或通過其他 Gate 宣稱成 root 已封鎖。
 
+## 結果圖傳輸與公開聯絡信箱
+
+`image_transport_evidence.py` 只用公開 GET 保存 wire/entity SHA、原始標頭、
+Content-Encoding、RGBA 像素／尺寸、EXIF／ICC 與實際 decoder 版本，分開記錄
+本機與 GitHub runner。`result-image-transport-audit.yml` 只上傳診斷 artifact，
+沒有 Pages、ASC 或社群寫入權限；audit 成功不代表圖片驗證或 indexing 成功。
+相同像素不是忽略原始 SHA 的理由；僅能精確解開有界、可逆的 HTTP transport。
+
+結果頁與 noindex 隔離頁的聯絡信箱均保持可見的
+`hourstag.app@gmail.com` 與原 `mailto:`；以 Cloudflare 官方
+`<!--email_off-->…<!--/email_off-->` 包住整個連結，避免 edge 修改 bytes。
+不接受隱藏文字、替代信箱或把任意 email-decode 改寫放入 exact GET allowlist。
+官方依據：https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/
+
 保留 canonical host 已有的 Cloudflare 訓練拒絕選擇：GPTBot、
 Applebot-Extended、Google-Extended 等訓練產品不取得 Allow；
 尤其不可把 GPTBot 的拒絕擴大成 OAI-SearchBot 的拒絕。

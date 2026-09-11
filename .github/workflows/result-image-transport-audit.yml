@@ -1,0 +1,48 @@
+name: Read-only result image transport audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      expected_guide_sha:
+        description: "唯讀診斷的精確 Guide SHA"
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.expected_guide_sha }}
+      - name: Require the selected immutable source
+        env:
+          EXPECTED_GUIDE_SHA: ${{ inputs.expected_guide_sha }}
+        run: |
+          set -euo pipefail
+          [[ "$EXPECTED_GUIDE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git rev-parse HEAD)" = "$EXPECTED_GUIDE_SHA"
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: _engine/geo/requirements-validation.txt
+      - name: Install declared validation dependencies
+        run: python3 -m pip install --requirement _engine/geo/requirements-validation.txt
+      - name: Test bounded reversible transport
+        run: python3 -m unittest _engine.geo.tests.test_image_transport_evidence -q
+      - name: Observe source images using public GET only
+        run: |
+          python3 _engine/geo/image_transport_evidence.py \
+            --output-dir .image-transport-observations --context github-actions
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: result-image-transport-${{ github.run_id }}
+          path: .image-transport-observations
+          if-no-files-found: error
+          retention-days: 30

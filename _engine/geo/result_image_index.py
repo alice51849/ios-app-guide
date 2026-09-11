@@ -451,8 +451,8 @@ def render_gallery(locale: str, assets: list[dict], labels: dict, apps: dict, si
         'a{display:inline-block;min-height:44px}p{max-width:75ch}</style></head><body>'
         f'<main><nav><a href="{site}/">{esc(labels["home_label"])}</a></nav>'
         f'<h1>{esc(labels["title"])}</h1><p>{esc(intro)}</p>{content}'
-        '<footer><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>'
-        '</footer></main></body></html>\n'
+        '<footer><!--email_off--><a href="mailto:hourstag.app@gmail.com">'
+        'hourstag.app@gmail.com</a><!--/email_off--></footer></main></body></html>\n'
     )
 
 

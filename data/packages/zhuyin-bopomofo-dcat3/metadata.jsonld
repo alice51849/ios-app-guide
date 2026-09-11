@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-09-05T06:19:36Z",
+  "dateModified": "2026-09-10T23:27:50Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -48,7 +48,7 @@
       "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols",
       "name": "Complete 37-symbol Bopomofo reference data",
       "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.html",
-      "dateModified": "2026-07-11"
+      "dateModified": "2026-09-10"
     },
     {
       "@type": "Dataset",
@@ -111,7 +111,7 @@
       "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oai-ore",
       "name": "Bopomofo OAI-ORE 1.0 Resource Map",
       "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
-      "dateModified": "2026-09-04T14:41:43Z"
+      "dateModified": "2026-09-10T23:27:50Z"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28778 bytes",
-      "sha256": "171d84bf61ba90e46fc63494ddb7f4e7d887e5a8b41218de3553ebff4b2f0bd3"
+      "contentSize": "28801 bytes",
+      "sha256": "31b457e547225277369cc098f4498bac1925ccaa5d7eb61da8848b31177912be"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "215134 bytes",
-      "sha256": "c08fcce54d4417c1ecebd0e5a74fd3c10871971ecd9d84317fb818e805a308a6"
+      "sha256": "439e726a622af28dac9184977d63e88f9e3525b51756744f9762ca0ca6b10421"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "144953 bytes",
-      "sha256": "e5d8530264835a1ed94b978f3863ea370bc192094f872df502f3979be44f8241"
+      "sha256": "13630f1af9168d60858f09f2f382f43c3297554ba70676f94bc8d2be047c430d"
     }
   ]
 }

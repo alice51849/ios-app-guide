@@ -56,7 +56,7 @@
   <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf">
     <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-11T00:00:00Z</dcterms:created>
     <dcterms:creator rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-04T14:41:43Z</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-10T23:27:50Z</dcterms:modified>
     <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
     <ore:describes rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap" />
@@ -228,11 +228,11 @@
     <dcterms:title xml:lang="en">Canonical 37-symbol Bopomofo JSON</dcterms:title>
     <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256" />
     <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
-    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9670</dcat:byteSize>
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9700</dcat:byteSize>
   </rdf:Description>
   <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256">
     <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
-    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">42dd00e51fe23acc67ca33cf642a73133be7b9655829ccb8900a97b1084abe5f</spdx:checksumValue>
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">81b1a221d2e85e6df40f7b66f75b8905567e974aef5b50d7d0646b0feea1aac9</spdx:checksumValue>
     <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
   </rdf:Description>
 </rdf:RDF>

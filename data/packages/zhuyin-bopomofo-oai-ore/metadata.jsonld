@@ -12,7 +12,7 @@
   "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-09-04T14:41:43Z",
+  "dateModified": "2026-09-10T23:27:50Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -44,7 +44,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf",
       "encodingFormat": "application/rdf+xml",
       "contentSize": 22950,
-      "sha256": "4b5ae24032017cd6870e04833f7f9bcb34adc72ef4a9cc754ea87e520d05dc86"
+      "sha256": "1800aa209461cda1dc3ce6a40eab2118818ee1c540fcd89a3b44d93e2c5f75ef"
     },
     {
       "@type": "DataDownload",
@@ -52,7 +52,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl",
       "encodingFormat": "text/turtle",
       "contentSize": 34036,
-      "sha256": "fd213423db69816818f2ae717fde9d19f5d0d4302a00d8ea99f31d436dd95d2f"
+      "sha256": "dd373e3c6bb63a7b35fd223465a3a44779e2e2d0f140cf0a9286eade1c8b3412"
     },
     {
       "@type": "DataDownload",
@@ -60,7 +60,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld",
       "encodingFormat": "application/ld+json",
       "contentSize": 26940,
-      "sha256": "fa76a5164de36a09fe878dc59bf033fe1444ba11af738bb17dcb9dd40cb33ca7"
+      "sha256": "bbc033de9b2d65c472c21e3698485bcbb06eb055453dfffcbe7ce2683dd8c1dd"
     },
     {
       "@type": "DataDownload",
@@ -68,7 +68,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "contentSize": 446,
-      "sha256": "fe70af132539d1122bae5ebe0fb386d8994fbd3c262f4b13256c0baf954023a5"
+      "sha256": "d8453c050eda5f7cb4f7b00efd76e3c9747b5a4098819fc20669f8c9f243c304"
     },
     {
       "@type": "DataDownload",
@@ -76,7 +76,7 @@
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/README.txt",
       "encodingFormat": "text/plain",
       "contentSize": 1977,
-      "sha256": "05c7b700d960a5c25fbf5944f8f1aae421d6164ec190f3b33ee3e35408416882"
+      "sha256": "ba703851cc41695fbcc2207408765113ad917a88bfb68112aa16b7c592dd3143"
     },
     {
       "@type": "DataDownload",
@@ -91,8 +91,8 @@
       "name": "Complete deterministic bundle",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-37-symbols-oai-ore-bundle.zip",
       "encodingFormat": "application/zip",
-      "contentSize": 10713,
-      "sha256": "f3424777324fce03a48deac2c4cc4b8b77d7ed8edd703b7b7cd35619a0be39e1"
+      "contentSize": 10704,
+      "sha256": "a863fba7ba8e4497a963abbe52f1c4d0615335ee901c159d1e2690c65588b1df"
     }
   ],
   "hasPart": [
@@ -101,8 +101,8 @@
       "name": "Canonical 37-symbol Bopomofo JSON",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json",
       "encodingFormat": "application/json",
-      "contentSize": 9670,
-      "sha256": "42dd00e51fe23acc67ca33cf642a73133be7b9655829ccb8900a97b1084abe5f"
+      "contentSize": 9700,
+      "sha256": "81b1a221d2e85e6df40f7b66f75b8905567e974aef5b50d7d0646b0feea1aac9"
     },
     {
       "@type": "DataDownload",

@@ -1568,7 +1568,27 @@ class StandardSitePublisherTests(ProjectScratchCase):
         self.assertEqual(2, result["native_records"]["app_count"])
         return json.loads(state_path.read_text()), manifest, client
 
-    def test_readback_preserves_native_proof_while_content_remains_pending(self):
+    def test_report_cannot_replace_state_before_any_publisher_call(self):
+        state, _, _ = self.paths()
+        state.write_text("protected state")
+        alias = state.with_name("report-hardlink.json")
+        alias.hardlink_to(state)
+        with mock.patch.object(publisher, "run", side_effect=AssertionError):
+            for report in (state, state.with_name(state.name.upper()), alias):
+                with self.assertRaises(publisher.ConfigurationError):
+                    publisher.main([
+                        "--publish", "--state", str(state), "--report", str(report),
+                    ])
+            missing_state = state.with_name("café.json")
+            with self.assertRaises(publisher.ConfigurationError):
+                publisher.main([
+                    "--publish", "--state", str(missing_state),
+                    "--report", str(state.with_name("CAFE\u0301.JSON")),
+                ])
+            self.assertFalse(missing_state.exists())
+        self.assertEqual("protected state", state.read_text())
+
+    def test_native_report_survives_missing_cache_without_state_merge_fields(self):
         state, manifest, client = self.native_fixture()
         for document in manifest["documents"][:2]:
             entry = state["documents"][document["canonical_url"]]
@@ -1579,11 +1599,7 @@ class StandardSitePublisherTests(ProjectScratchCase):
         records_before = deepcopy(client.records)
         daily_before = deepcopy(state["daily"])
         timestamp = publisher.utc_timestamp(self.NOW + timedelta(days=2))
-        for attempt in range(2):
-            if attempt:
-                for entry in state["documents"].values():
-                    if not entry["published"]:
-                        entry.pop("native_record")
+        for _ in range(2):
             report = publisher.reconcile_remote_state(
                 state, manifest, client=client, did=self.DID,
                 verified_at=timestamp, repair_after_day="2026-07-29",
@@ -1591,6 +1607,9 @@ class StandardSitePublisherTests(ProjectScratchCase):
             )
             self.assertEqual(3, report["document_count"])
             self.assertEqual(2, report["app_count"])
+            self.assertEqual(
+                "independent_readback_report", report["persistence"]
+            )
             self.assertEqual({"status": "not_checked"}, report["renderer_support"])
             pending = [
                 entry for entry in state["documents"].values()
@@ -1599,15 +1618,18 @@ class StandardSitePublisherTests(ProjectScratchCase):
             self.assertEqual(2, len(pending))
             for entry in pending:
                 self.assertNotIn("at_uri", entry)
-                self.assertEqual("verified", entry["native_record"]["status"])
+                self.assertNotIn("native_record", entry)
                 self.assertTrue(
-                    entry["native_record"]["at_uri"].endswith("/" + entry["rkey"])
+                    any(
+                        row["uri"].endswith("/" + entry["rkey"])
+                        for row in report["documents"]
+                    )
                 )
             self.assertEqual(daily_before, state["daily"])
             self.assertEqual(puts_before, client.puts)
             self.assertEqual(records_before, client.records)
 
-    def test_missing_readback_invalidates_native_proof_without_recreation(self):
+    def test_missing_record_is_absent_from_readback_without_recreation(self):
         state, manifest, client = self.native_fixture()
         canonical = manifest["documents"][0]["canonical_url"]
         rkey = state["documents"][canonical]["rkey"]
@@ -1619,7 +1641,10 @@ class StandardSitePublisherTests(ProjectScratchCase):
             repair_after_day="2026-07-29", daily_limit=2,
         )
         self.assertEqual(2, report["document_count"])
-        self.assertEqual("missing", state["documents"][canonical]["native_record"]["status"])
+        self.assertNotIn("native_record", state["documents"][canonical])
+        self.assertFalse(any(
+            row["uri"].endswith("/" + rkey) for row in report["documents"]
+        ))
         self.assertEqual(rkey, state["documents"][canonical]["rkey"])
         self.assertNotIn((publisher.DOCUMENT_COLLECTION, rkey), client.records)
         self.assertEqual(puts_before, client.puts)

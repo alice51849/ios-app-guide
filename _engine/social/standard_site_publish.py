@@ -22,6 +22,7 @@ import re
 import secrets
 import sys
 import time
+import unicodedata
 from typing import Any, Callable, Iterator, Mapping, MutableMapping, Sequence
 import urllib.error
 from urllib.parse import urlencode, urlsplit
@@ -275,28 +276,6 @@ def validate_state(state: Mapping[str, object]) -> None:
             raise StateError(f"Document state contains an invalid TID: {canonical}")
         if entry.get("published_at"):
             parse_timestamp(entry["published_at"])
-        native = entry.get("native_record")
-        if native is not None:
-            if not isinstance(native, Mapping) or native.get("status") not in {
-                "verified", "missing",
-            }:
-                raise StateError(f"Invalid native readback: {canonical}")
-            parse_timestamp(native.get("checked_at"))
-            if native["status"] == "verified":
-                uri = str(native.get("at_uri") or "")
-                validate_at_uri(uri, DOCUMENT_COLLECTION)
-                if (
-                    not uri.endswith("/" + str(entry.get("rkey") or ""))
-                    or not isinstance(native.get("cid"), str)
-                    or not native["cid"]
-                    or not isinstance(native.get("record_hash"), str)
-                    or len(native["record_hash"]) != 64
-                    or any(
-                        character not in "0123456789abcdef"
-                        for character in native["record_hash"]
-                    )
-                ):
-                    raise StateError(f"Invalid native identity: {canonical}")
         try:
             pending_state.validate_pending_entry(
                 entry, label=canonical
@@ -1147,7 +1126,7 @@ def reconcile_remote_state(
     repair_after_day: str,
     daily_limit: int = DEFAULT_DAILY_LIMIT,
 ) -> dict[str, object]:
-    """Keep native readback distinct from desired-content confirmation."""
+    """Keep fresh native evidence outside the content-state merge contract."""
     validate_state(state)
     migrate_publication_origin(state, manifest)
     _migrate_legacy_pending_state(
@@ -1248,9 +1227,6 @@ def reconcile_remote_state(
                         f"Durable document rkey is occupied by another record: "
                         f"{canonical}"
                     )
-            entry["native_record"] = {
-                "status": "missing", "checked_at": verified_at,
-            }
             kind = pending_state.pending_kind(entry)
             if kind is None and entry.get("published_at"):
                 _mark_ordinary_republish_pending(
@@ -1270,7 +1246,6 @@ def reconcile_remote_state(
         entry["rkey"] = remote_rkey
         entry["app_key"] = document["app_key"]
         remote_record = dict(remote["value"])
-        _mark_native_document(entry, remote, remote_record, verified_at)
         published_at = remote_record.get("publishedAt")
         parse_timestamp(published_at)
         entry["published_at"] = published_at
@@ -1358,7 +1333,7 @@ def reconcile_remote_state(
             "app_key": app_key,
             "uri": remote["uri"],
             "cid": remote["cid"],
-            "content_confirmed": entry.get("published") is True,
+            "cached_content_confirmed": entry.get("published") is True,
         })
     apps = sorted({
         entry["app_key"] for entry in native_documents if entry["app_key"]
@@ -1367,6 +1342,7 @@ def reconcile_remote_state(
     return {
         "status": "verified",
         "scope": "native_record_existence_only",
+        "persistence": "independent_readback_report",
         "checked_at": verified_at,
         "document_count": len(native_documents),
         "app_count": len(apps),
@@ -1601,21 +1577,6 @@ def _mark_publication(
     )
 
 
-def _mark_native_document(
-    entry: MutableMapping[str, object],
-    remote: Mapping[str, object],
-    record: Mapping[str, object],
-    verified_at: str,
-) -> None:
-    entry["native_record"] = {
-        "status": "verified",
-        "at_uri": remote["uri"],
-        "cid": remote["cid"],
-        "record_hash": record_hash(record),
-        "checked_at": verified_at,
-    }
-
-
 def _mark_document(
     state: MutableMapping[str, object],
     document: Mapping[str, object],
@@ -1626,7 +1587,6 @@ def _mark_document(
     published_hash: str | None = None,
 ) -> None:
     entry = state["documents"][document["canonical_url"]]
-    _mark_native_document(entry, remote, record, verified_at)
     entry.update(
         {
             "at_uri": remote["uri"],
@@ -1895,7 +1855,10 @@ def _parser() -> argparse.ArgumentParser:
         "--well-known", type=Path, default=DEFAULT_WELL_KNOWN
     )
     parser.add_argument("--limit", type=int, default=DEFAULT_DAILY_LIMIT)
-    parser.add_argument("--report", type=Path)
+    parser.add_argument(
+        "--report", type=Path,
+        help="Write independent evidence, never merge it into publisher state.",
+    )
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument(
         "--publish",
@@ -1912,6 +1875,25 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = _parser().parse_args(argv)
+    if args.report is not None:
+        report_key = unicodedata.normalize(
+            "NFC", str(args.report.resolve())
+        ).casefold()
+        for path in (
+            args.manifest, args.state, args.contract, args.well_known
+        ):
+            aliases_input = (
+                report_key
+                == unicodedata.normalize("NFC", str(path.resolve())).casefold()
+            )
+            try:
+                aliases_input = aliases_input or args.report.samefile(path)
+            except FileNotFoundError:
+                pass
+            if aliases_input:
+                raise ConfigurationError(
+                    "--report must not replace publisher inputs or state"
+                )
     manifest = load_manifest(args.manifest)
     result = run(
         manifest,

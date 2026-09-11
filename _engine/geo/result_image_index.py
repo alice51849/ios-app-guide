@@ -24,6 +24,7 @@ import xml.etree.ElementTree as ET
 
 from PIL import Image, UnidentifiedImageError
 
+from crawler_policy import RobotsPolicy
 from deployment_generation import GenerationError, verify_output_bytes
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE
@@ -291,47 +292,11 @@ def fetch(url: str, limit: int) -> Response:
 
 
 def robots_allowed(body: str, url: str, agent: str) -> bool:
-    """Use Google's most-specific group and longest matching allow/disallow rule."""
-    groups: list[tuple[list[str], list[tuple[str, str]]]] = []
-    agents: list[str] = []
-    rules: list[tuple[str, str]] = []
-    for line in body.splitlines() + ["User-agent: __end__"]:
-        line = line.split("#", 1)[0].strip()
-        if ":" not in line:
-            continue
-        key, value = (part.strip() for part in line.split(":", 1))
-        key = key.lower()
-        if key == "user-agent":
-            if rules:
-                groups.append((agents, rules))
-                agents, rules = [], []
-            agents.append(value.lower())
-        elif key in ("allow", "disallow") and agents:
-            rules.append((key, value))
+    """Share the canonical crawler parser, including wildcard/end-anchor priority."""
     parts = urlsplit(url)
-    path = parts.path + (f"?{parts.query}" if parts.query else "")
-    scored = []
-    for names, group_rules in groups:
-        matches = [0 if name == "*" else len(name) for name in names
-                   if name == "*" or name in agent.lower()]
-        if matches:
-            scored.append((max(matches), group_rules))
-    if not scored:
-        return True
-    specificity = max(score for score, _ in scored)
-    matches = []
-    for score, group_rules in scored:
-        if score != specificity:
-            continue
-        for kind, rule in group_rules:
-            if not rule:
-                continue
-            pattern = re.escape(rule).replace(r"\*", ".*")
-            if rule.endswith("$"):
-                pattern = pattern[:-2] + "$"
-            if re.match(pattern, path):
-                matches.append((len(rule.replace("*", "").rstrip("$")), kind == "allow"))
-    return max(matches, default=(0, True))[1]
+    return RobotsPolicy(body).allowed(
+        agent, url, f"{parts.scheme}://{parts.netloc}/robots.txt",
+    )
 
 
 def _header_blocks(value: str | tuple[str, ...], agent: str) -> bool:

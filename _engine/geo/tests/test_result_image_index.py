@@ -471,6 +471,21 @@ class ResultImagesTests(unittest.TestCase):
             "https://a/same", "Googlebot-Image",
         ))
 
+    def test_canonical_robots_length_counts_wildcards_and_end_anchors(self):
+        cases = (
+            ("/x", "/x$", "/x", False),
+            ("/x", "/x$", "/x?query=1", True),
+            ("/page", "/*.htm", "/page.htm", False),
+            ("/page*", "/page$", "/page", True),
+            ("/public/a", "/public/", "/public/%61", True),
+        )
+        for allow, deny, path, expected in cases:
+            with self.subTest(allow=allow, deny=deny, path=path):
+                self.assertEqual(expected, images.robots_allowed(
+                    f"User-agent: Googlebot-Image\nAllow: {allow}\nDisallow: {deny}\n",
+                    "https://example.com" + path, "Googlebot-Image",
+                ))
+
     def test_no_assets_means_empty_sitemap_and_noindex_previous_gallery(self):
         self.generate()
         for asset in self.manifest["images"]:
@@ -660,7 +675,7 @@ class ResultImagesTests(unittest.TestCase):
         (runtime / "data").mkdir(parents=True)
         for relative in (
             "result_image_index.py", "deployment_generation.py",
-            "official_locales.py", "site_config.py",
+            "crawler_policy.py", "official_locales.py", "site_config.py",
             "data/result_image_evidence_v1.json",
         ):
             shutil.copyfile(GEO / relative, runtime / relative)

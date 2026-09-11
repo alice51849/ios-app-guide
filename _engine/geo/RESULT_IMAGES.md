@@ -29,6 +29,8 @@ python3 -m unittest discover -s geo/tests -p test_result_image_index.py
 替代 canonical URL。HTTP 200、SHA-256、MIME／格式、尺寸、完整解碼、
 圖片 `X-Robots-Tag` 與**網域根目錄** robots 均須符合。Google 將 robots
 的 4xx（429 除外）視為不存在；429、5xx、不可判定回應不放行。
+robots 判定共用 `crawler_policy.RobotsPolicy` 的 canonical 規則，包含
+wildcard、end-anchor 與 percent-encoding 優先序，不另維護漂移的 parser。
 
 來源層產生 `<img src>`、width／height、母語 figcaption／上下文、canonical
 頁面與 `sitemap_result_images.xml`，不產生評分或 JSON-LD。圖片保留原始

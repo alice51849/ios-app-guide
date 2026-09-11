@@ -236,6 +236,7 @@ jobs:
           git restore --source=HEAD -- \
             _engine/geo/result_image_index.py \
             _engine/geo/deployment_generation.py \
+            _engine/geo/crawler_policy.py \
             _engine/geo/official_locales.py \
             _engine/geo/site_config.py \
             _engine/geo/data/result_image_evidence_v1.json

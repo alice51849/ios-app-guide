@@ -20,6 +20,7 @@ sys.path.insert(0, str(GEO))
 
 import check_hub_coverage as coverage  # noqa: E402
 import gen_hubs  # noqa: E402
+import live_app_manifest  # noqa: E402
 
 
 class CanonicalAuthorityTests(unittest.TestCase):
@@ -35,6 +36,7 @@ class CanonicalAuthorityTests(unittest.TestCase):
     def test_main_never_uses_generated_site_inventory_as_its_denominator(self):
         source = inspect.getsource(gen_hubs.main)
         self.assertIn("authority_apps()", source)
+        self.assertIn("require_public_inventory(load_manifest())", source)
         self.assertNotIn("live_app_keys", source)
         self.assertNotIn("apps.json", source)
 
@@ -55,7 +57,7 @@ class CanonicalAuthorityTests(unittest.TestCase):
             "canonical_manifest",
             return_value={"apps": apps},
         ):
-            with self.assertRaisesRegex(ValueError, "Zipbox"):
+            with self.assertRaisesRegex(ValueError, "zipbox"):
                 gen_hubs.authority_apps()
         with mock.patch.object(
             gen_hubs,
@@ -141,6 +143,15 @@ class FullHubCollectionTests(unittest.TestCase):
             cls.addClassCleanup(patcher.stop)
         cls.apps = gen_hubs.authority_apps()
         cls.locales = gen_hubs.official_locales()
+        observation = cls.workspace / "current-observation.json"
+        live_app_manifest.write_manifest(
+            observation, live_app_manifest.create_manifest(cls.apps),
+        )
+        snapshot_environment = mock.patch.dict(
+            os.environ, {"GROWTH_LIVE_MANIFEST": str(observation)},
+        )
+        snapshot_environment.start()
+        cls.addClassCleanup(snapshot_environment.stop)
         cls._write_source_fixture()
         gen_hubs.main()
 

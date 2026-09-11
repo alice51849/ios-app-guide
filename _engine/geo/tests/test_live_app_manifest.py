@@ -210,6 +210,7 @@ class LiveManifestTests(unittest.TestCase):
 
         with (
             mock.patch.object(sys, "argv", ["publish.py", "--no-push"]),
+            mock.patch.dict(publish.os.environ, {"APP_STORE_PROVIDER_TOKEN": "123456"}),
             mock.patch.object(publish, "require", side_effect=RuntimeError("stop preflight")) as require,
         ):
             with self.assertRaisesRegex(RuntimeError, "stop preflight"):

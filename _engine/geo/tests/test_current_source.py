@@ -203,6 +203,59 @@ class CurrentSourceTests(unittest.TestCase):
                 with self.assertRaisesRegex(manifest.ManifestError, "denominator drift"):
                     manifest.require_public_inventory(refreshed, now=self.now)
 
+    def test_every_snapshot_writer_protects_canonical_source_and_symlink_aliases(self):
+        original = manifest.DEFAULT_ROSTER.read_bytes()
+        with tempfile.TemporaryDirectory() as directory:
+            alias = Path(directory) / "source-link.json"
+            alias.symlink_to(manifest.DEFAULT_ROSTER)
+            for target in (manifest.DEFAULT_ROSTER, alias):
+                with mock.patch.object(manifest.os, "replace", side_effect=AssertionError("No source mutation")):
+                    for write in (
+                        lambda: manifest.write_manifest(target, self.document),
+                        lambda: manifest.write_legacy_live_state(target, self.document),
+                        lambda: appstore_live._write_state(
+                            target, set(APPSTORE.values()), {},
+                            observed_at=self.document["observed_at"],
+                            source_sha256=self.document["source_sha256"],
+                        ),
+                    ):
+                        with self.assertRaisesRegex(manifest.ManifestError, "cannot overwrite"):
+                            write()
+                with (
+                    mock.patch.object(manifest, "refresh_manifest", side_effect=AssertionError("No GET")),
+                    redirect_stderr(io.StringIO()),
+                ):
+                    self.assertEqual(1, manifest.main([
+                        "--refresh", "--output", str(Path(directory) / "observation.json"),
+                        "--live-state-output", str(target),
+                    ]))
+            self.assertEqual(original, manifest.DEFAULT_ROSTER.read_bytes())
+
+    def test_reviewed_app_id_replacement_can_refresh_without_old_cache_blocking(self):
+        with tempfile.TemporaryDirectory() as directory:
+            roster = json.loads(manifest.DEFAULT_ROSTER.read_text())
+            roster["apps"]["battai"]["app_id"] = "9999999999"
+            roster["revision"] += 1
+            roster["roster_digest"] = manifest.roster_digest(roster["apps"])
+            source_path = Path(directory) / "source.json"
+            source_path.write_text(json.dumps(roster))
+            previous_path = Path(directory) / "previous.json"
+            previous_path.write_text(json.dumps(self.document))
+            appstore = {**APPSTORE, "battai": "9999999999"}
+            lookup = mock.Mock(return_value=set(appstore.values()))
+            with (
+                mock.patch.object(manifest, "DEFAULT_ROSTER", source_path),
+                redirect_stderr(io.StringIO()),
+            ):
+                refreshed = manifest.refresh_manifest(
+                    appstore, APPS, now=self.now, previous_path=previous_path,
+                    lookup_country=lookup,
+                )
+                manifest.require_public_inventory(refreshed, now=self.now)
+            self.assertEqual(4, lookup.call_count)
+            self.assertEqual("9999999999", refreshed["apps"]["battai"]["app_id"])
+            self.assertEqual(47, len(refreshed["apps"]))
+
 
 if __name__ == "__main__":
     unittest.main()

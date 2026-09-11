@@ -125,6 +125,7 @@ def _read_state(path, *, strict=False, now=None):
 
 
 def _write_state(path, live_ids, miss_counts, *, observed_at, source_sha256):
+    path = manifest.snapshot_destination(path)
     source = manifest.current_source()
     if (
         set(live_ids) != {app["app_id"] for app in source["apps"].values()}

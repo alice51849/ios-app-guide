@@ -579,6 +579,17 @@ def _previous_snapshot(path, apps, now, *, registered_ids):
         return None
     previous = _validate_envelope(raw)
     _statuses(previous, now)
+    source = current_source()
+    if (
+        previous["source_sha256"] != source["source_sha256"]
+        or previous["locale_roster_sha256"] != source["locale_roster_sha256"]
+    ):
+        print(
+            "Availability advisory: discarding stale last-good snapshot with outdated "
+            "source/roster identity; rebuilding without cached availability history",
+            file=sys.stderr,
+        )
+        return None
     snapshot_ids = {app["app_id"] for app in previous["apps"].values()}
     snapshot_ids.update(entry["app_id"] for entry in previous.get("pending_adoptions", []))
     unregistered = snapshot_ids - registered_ids
@@ -587,18 +598,10 @@ def _previous_snapshot(path, apps, now, *, registered_ids):
             "Unregistered App IDs in last-good availability snapshot: "
             + ", ".join(sorted(unregistered))
         )
-    source = current_source()
-    if (
-        previous["source_sha256"] != source["source_sha256"]
-        or previous["locale_roster_sha256"] != source["locale_roster_sha256"]
-        or any(apps.get(key) != app for key, app in previous["apps"].items())
-    ):
-        print(
-            "Availability advisory: discarding stale last-good snapshot with outdated "
-            "source/roster identity; rebuilding without cached availability history",
-            file=sys.stderr,
+    if any(apps.get(key) != app for key, app in previous["apps"].items()):
+        raise ManifestError(
+            "Last-good observation identity contradicts the current source"
         )
-        return None
     return previous
 
 
@@ -671,16 +674,22 @@ def refresh_manifest(
     return validate_manifest(document, now=now, require_fresh=False)
 
 
-def write_manifest(path: Path | str, document: dict, *, private: bool = False) -> None:
-    document = validate_manifest(document, require_fresh=False)
+def snapshot_destination(path: Path | str) -> Path:
     path = Path(path)
     if path.resolve() == DEFAULT_ROSTER.resolve():
         raise ManifestError("Availability snapshots cannot overwrite the versioned roster")
+    return path
+
+
+def write_manifest(path: Path | str, document: dict, *, private: bool = False) -> None:
+    path = snapshot_destination(path)
+    document = validate_manifest(document, require_fresh=False)
     _atomic_json(path, document, mode=0o600 if private else 0o644)
 
 
 def write_legacy_live_state(path, document):
     """Migrate compatibility readers to a source-bound, expiring observation."""
+    path = snapshot_destination(path)
     if __package__:
         from .appstore_live import _write_state
     else:
@@ -706,6 +715,15 @@ def main(argv=None) -> int:
     if args.adopt and not args.refresh:
         parser.error("--adopt requires --refresh")
     try:
+        if args.output:
+            snapshot_destination(args.output)
+        if args.live_state_output:
+            snapshot_destination(args.live_state_output)
+        if (
+            args.output and args.live_state_output
+            and args.output.resolve() == args.live_state_output.resolve()
+        ):
+            raise ManifestError("Manifest and live-state outputs must be distinct")
         document = refresh_manifest(previous_path=args.output, adopt=args.adopt) if args.refresh else load_manifest(args.manifest)
         require_public_inventory(document)
         if args.output:

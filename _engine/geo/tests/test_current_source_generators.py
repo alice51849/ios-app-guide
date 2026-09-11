@@ -1,4 +1,7 @@
 from contextlib import ExitStack
+from copy import deepcopy
+from datetime import datetime, timedelta, timezone
+import json
 import os
 from pathlib import Path
 import sys
@@ -14,6 +17,7 @@ import app_install_decision_routes
 import build_pages_i18n
 import current_source
 import gen_hubs
+import live_app_manifest
 from answer_personas import PERSONAS
 from videogen.registry import APPS, APPSTORE
 
@@ -22,6 +26,32 @@ INVENTORY = PAGES / "data" / "verified-ios-app-finder-catalog.json"
 
 
 class CurrentSourceGeneratorTests(unittest.TestCase):
+    def test_public_hub_entrypoint_rejects_bad_observation_before_writing(self):
+        now = datetime.now(timezone.utc)
+        source = current_source.load_source()
+        valid = live_app_manifest.create_manifest(source["apps"], now=now)
+        stale = live_app_manifest.create_manifest(source["apps"], now=now - timedelta(days=2))
+        wrong_source = deepcopy(valid)
+        wrong_source["source_sha256"] = "f" * 64
+        unknown = deepcopy(valid)
+        unknown["observations"]["zipbox"].update(status="unknown", reason="Lookup incomplete")
+        with tempfile.TemporaryDirectory() as directory:
+            observation = Path(directory) / "observation.json"
+            with (
+                mock.patch.dict(os.environ, {"GROWTH_LIVE_MANIFEST": str(observation)}),
+                mock.patch.object(gen_hubs, "_generate") as generate,
+            ):
+                for document in (None, stale, wrong_source, unknown):
+                    if document is not None:
+                        observation.write_text(json.dumps(document))
+                    with self.assertRaises(ValueError):
+                        gen_hubs.main()
+                    generate.assert_not_called()
+                observation.write_text(json.dumps(valid))
+                gen_hubs.main()
+                self.assertEqual(source["apps"], generate.call_args.args[0])
+                self.assertEqual(source["locales"], generate.call_args.args[1])
+
     def test_all_five_families_use_the_exact_47_by_50_eligibility(self):
         source = current_source.load_source()
         expected = set(current_source.campaign_pairs())

@@ -30,8 +30,8 @@ from app_store_storefronts import (  # noqa: E402
     resolve_provider_token,
     verified_app_store_url,
 )
-from appstore_live import live_app_keys  # noqa: E402,F401 - legacy test API only
-from live_app_manifest import canonical_manifest  # noqa: E402
+from appstore_live import live_app_keys  # noqa: E402,F401 - compatibility for older callers
+from live_app_manifest import canonical_manifest, load_manifest, require_public_inventory  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
     OFFICIAL_LOCALE_SET,
@@ -99,6 +99,12 @@ def exists(rel):
 def authority_apps():
     """Return the canonical live roster and reject registry drift."""
     apps = canonical_manifest()["apps"]
+    if set(apps) != set(APPSTORE):
+        raise ValueError(
+            "Canonical live_app_manifest and registry disagree: "
+            f"missing_source={sorted(set(APPSTORE) - set(apps))}, "
+            f"missing_registry={sorted(set(apps) - set(APPSTORE))}"
+        )
     missing_apps = sorted(set(apps) - set(APPS))
     missing_ids = sorted(set(apps) - set(APPSTORE))
     extra_details = []
@@ -900,6 +906,7 @@ def _generate(apps, locales):
 
 
 def main():
+    require_public_inventory(load_manifest())
     _generate(authority_apps(), official_locales())
 
 

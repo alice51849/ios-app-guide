@@ -30,14 +30,15 @@ from family_travel_dataset import (  # noqa: E402
 )
 from gen_feed import ensure_site_feed_discovery, feed_discovery_links  # noqa: E402
 from videogen.registry import APPSTORE, appstore_url  # noqa: E402
+from site_config import PUBLIC_ROOT, PUBLIC_SITE, public_reference_text  # noqa: E402
 from zhuyin_croissant_dataset import (  # noqa: E402
     APP_ID,
     APP_KEY,
     APP_NAME,
     LICENSE,
-    SITE,
 )
 
+SITE = PUBLIC_SITE
 
 PAGES = HERE / "pages"
 INITIAL_DATE = "2026-07-11"
@@ -123,7 +124,7 @@ LDES_REQUIRED_PATHS = (
     Path("zh-Hant") / LDES_PATH / "index.html",
 )
 
-SOURCE_DESCRIPTION_URL = "https://alice51849.github.io/.well-known/resourcesync"
+SOURCE_DESCRIPTION_URL = f"{PUBLIC_ROOT}/.well-known/resourcesync"
 SOURCE_DESCRIPTION_COPY_URL = f"{SITE}/{SOURCE_DESCRIPTION_COPY_PATH.as_posix()}"
 CAPABILITY_LIST_URL = f"{SITE}/{CAPABILITY_LIST_PATH.as_posix()}"
 RESOURCE_LIST_URL = f"{SITE}/{RESOURCE_LIST_PATH.as_posix()}"
@@ -625,6 +626,35 @@ def render_source_description() -> str:
   </url>
 </urlset>
 """
+
+
+def export_root_discovery(directory: Path) -> dict[str, str]:
+    """Produce the origin-root deployment payload without publishing the root site."""
+    target = directory / ".well-known" / "resourcesync"
+    if target.is_symlink():
+        raise ValueError("ResourceSync root export cannot replace a symlink")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    content = render_source_description()
+    write_text_if_changed(target, content)
+    return {"url": SOURCE_DESCRIPTION_URL, "path": ".well-known/resourcesync",
+            "sha256": hashlib.sha256(content.encode()).hexdigest()}
+
+
+def refresh_public_roots(pages: Path = PAGES) -> list[str]:
+    """Update only this generator's root references and their ResourceSync checksums."""
+    changed = []
+    for relative in (LANDING_PATH, ZH_LANDING_PATH, COLLECTION_PATH, CAPABILITY_LIST_PATH):
+        target = pages / relative
+        original = target.read_text(encoding="utf-8")
+        if write_text_if_changed(target, public_reference_text(original)):
+            changed.append(relative.as_posix())
+    resources = discover_resources(pages)
+    validate_resources(resources)
+    snapshot = _snapshot(pages, resources)
+    resource_list = render_resource_list(resources, snapshot["at"])
+    if write_text_if_changed(pages / RESOURCE_LIST_PATH, resource_list):
+        changed.append(RESOURCE_LIST_PATH.as_posix())
+    return changed
 
 
 def render_capability_list() -> str:

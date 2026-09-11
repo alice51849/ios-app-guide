@@ -60,7 +60,7 @@ from rsscloud_config import (  # noqa: E402
 )
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
 from websub_config import WEBSUB_HUBS  # noqa: E402
-from site_config import PUBLIC_SITE  # noqa: E402
+from site_config import PUBLIC_ROOT, PUBLIC_SITE, public_reference_text  # noqa: E402
 from crawler_policy import render_robots as render_crawler_robots  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -92,7 +92,7 @@ ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 ZHUYIN_METS_PREMIS = "zhuyin-bopomofo-mets2-premis3"
 ZHUYIN_ORE = "zhuyin-bopomofo-oai-ore"
 ZHUYIN_LDES = "zhuyin-bopomofo-ldes"
-RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
+RESOURCE_SYNC_SOURCE = f"{PUBLIC_ROOT}/.well-known/resourcesync"
 WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
 WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
 PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
@@ -1979,7 +1979,7 @@ def build_llms(comp_map, live_keys):
         f"  - {RSSCLOUD_WEBSUB_HUB}",
     ]
     lines.append("")
-    return demote_optional_sections("\n".join(lines))
+    return public_reference_text(demote_optional_sections("\n".join(lines)))
 
 
 HERO_MANIFEST = os.path.join(PAGES, "data", "hero-tasks", "manifest.json")
@@ -5815,7 +5815,20 @@ def build_llms_full(comp_map, live_keys):
     lines += high_intent_decision_route_lines(full=True)
     lines += localized_llms_discovery_lines()
     lines.append("")
-    return "\n".join(lines)
+    return public_reference_text("\n".join(lines))
+
+
+def refresh_public_roots(pages: Path) -> list[str]:
+    """Regenerate only public root references without changing the existing app inventory."""
+    changed = []
+    for relative in ("llms.txt", "llms-full.txt"):
+        path = pages / relative
+        original = path.read_text(encoding="utf-8")
+        updated = public_reference_text(original)
+        if updated != original:
+            path.write_text(updated, encoding="utf-8")
+            changed.append(relative)
+    return changed
 
 
 def build_robots():
@@ -9143,12 +9156,18 @@ def publish(urls):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--publish", action="store_true")
+    ap.add_argument("--refresh-public-roots", action="store_true")
     ap.add_argument(
         "--cached-live",
         action="store_true",
         help="Use the verified availability snapshot without refreshing it.",
     )
     args = ap.parse_args()
+    if args.refresh_public_roots:
+        if args.publish:
+            ap.error("--refresh-public-roots is local-only and cannot publish")
+        print(json.dumps({"changed_files": refresh_public_roots(Path(PAGES))}))
+        return
     publisher_intent_catalog.use_frozen_mcp_distribution(Path(PAGES))
     comp_map = load_competitors()
     live_keys = live_app_keys(

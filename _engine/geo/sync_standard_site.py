@@ -24,14 +24,15 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
+from site_config import PUBLIC_ROOT, PUBLIC_SITE
 
 HERE = Path(__file__).resolve().parent
-PUBLICATION_URL = "https://alice51849.github.io/ios-app-guide"
+PUBLICATION_URL = PUBLIC_SITE
 EXPECTED_DID = "did:plc:kboucnzkxzmqmatvhes4xlt4"
 PUBLICATION_COLLECTION = "site.standard.publication"
 DOCUMENT_COLLECTION = "site.standard.document"
 WELL_KNOWN_PATH = "/.well-known/site.standard.publication/ios-app-guide"
-WELL_KNOWN_URL = f"https://alice51849.github.io{WELL_KNOWN_PATH}"
+WELL_KNOWN_URL = f"{PUBLIC_ROOT}{WELL_KNOWN_PATH}"
 DEFAULT_STATE_RELATIVE = Path("_engine/geo/standard_site_sync_state.json")
 MAX_CONTRACT_BYTES = 2 * 1024 * 1024
 MAX_DOCUMENTS = 5_000

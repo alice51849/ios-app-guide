@@ -12427,7 +12427,7 @@ class GeneratorTests(unittest.TestCase):
                         ),
                     )
             self.assertEqual(
-                "https://alice51849.github.io/.well-known/resourcesync",
+                gen_llms.PUBLIC_ROOT + "/.well-known/resourcesync",
                 zhuyin_resourcesync.SOURCE_DESCRIPTION_URL,
             )
 

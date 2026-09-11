@@ -12,7 +12,7 @@ from urllib.parse import urlsplit
 from xml.sax.saxutils import escape as xml_escape
 
 from family_travel_dataset import write_text_if_changed
-from site_config import PUBLIC_SITE  # noqa: E402
+from site_config import PUBLIC_ROOT, PUBLIC_SITE, public_reference_text  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
@@ -22,7 +22,7 @@ SITE = os.environ.get(
 ).rstrip("/")
 ROOT_API_CATALOG = os.environ.get(
     "GEO_ROOT_API_CATALOG",
-    "https://alice51849.github.io/.well-known/api-catalog",
+    f"{PUBLIC_ROOT}/.well-known/api-catalog",
 )
 OPENAPI_MEDIA_TYPE = "application/vnd.oai.openapi+json;version=3.1"
 CONTENT_MODIFIED_RE = re.compile(
@@ -289,6 +289,14 @@ def render_api_catalog(pages: Path = PAGES) -> str:
 <body><main><p class="tag">OPEN DATA &middot; NO API KEYS</p><h1>Open APIs</h1><p>Stable, cacheable JSON interfaces for free reference datasets.</p>
 {''.join(cards)}</main></body></html>
 """
+
+
+def refresh_public_roots(pages: Path = PAGES) -> bool:
+    """Regenerate public root URLs without removing later discovery adornments."""
+    target = pages / "api/index.html"
+    return write_text_if_changed(
+        target, public_reference_text(target.read_text(encoding="utf-8"))
+    )
 
 
 def build_api_discovery(pages: Path = PAGES) -> list[str]:

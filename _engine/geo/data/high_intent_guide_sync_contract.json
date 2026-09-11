@@ -1,5 +1,5 @@
 {
-  "contract_digest": "0fa45c7bb9719f5a28d61a3d51746f474e39b741b261f56d55544838b0ac9272",
+  "contract_digest": "da2468e749025fdfd56d4f70e5d1e7d820240c18030ef1f01b2dd62c422cda6c",
   "copy_mode": "byte_for_byte",
   "files": [
     {
@@ -46,13 +46,13 @@
     },
     {
       "engine_relative_path": "sync_standard_site.py",
-      "sha256": "bc238490f7f348dbb1e39cca0fb9b7cf1f7e6f2ef7724c83181a6363d8d39549",
+      "sha256": "2187cfcf3664f55024c83fee0484cae6c207f5a0da4c3a1887bcd24b61bc5976",
       "source_path": "geo/sync_standard_site.py",
       "target_path": "_engine/geo/sync_standard_site.py"
     },
     {
       "engine_relative_path": "site_config.py",
-      "sha256": "8dc7ec9af39264dfdf0090c0b6ed7439e4a3dd7cca57188bf38c442aa93b6868",
+      "sha256": "9321b633dfb6b0ec5005a114519a080794392312413b045afc0017be7bc8ba67",
       "source_path": "geo/site_config.py",
       "target_path": "_engine/geo/site_config.py"
     },

@@ -25,6 +25,11 @@ GEO_PAGES=/path/to/guide python3 geo/result_image_index.py --check --verify-live
 python3 -m unittest discover -s geo/tests -p test_result_image_index.py
 ```
 
+變更 `publish.py` hook 後，須由既有
+`high_intent_decision_routes.write_sync_contract(engine_root=canonical_geo)`
+重建並同步 `data/high_intent_guide_sync_contract.json`，再以獨立 Growth
+checkout 驗證；不能只複製 Python 檔而留下舊 SHA，也不能放寬部署 Gate。
+
 每次真實 GET 都有 timeout、最多三次重試、大小上限，且不接受 redirect
 替代 canonical URL。HTTP 200、SHA-256、MIME／格式、尺寸、完整解碼、
 圖片 `X-Robots-Tag` 與**網域根目錄** robots 均須符合。Google 將 robots

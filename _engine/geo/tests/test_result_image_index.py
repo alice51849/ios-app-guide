@@ -623,6 +623,14 @@ class ResultImagesTests(unittest.TestCase):
         self.assertLess(source.rindex('os.path.join(HERE, "gen_feed.py")'), last_mile)
         self.assertLess(last_mile, source.rindex('os.path.join(HERE, "gen_sitemap_lastmod.py")'))
 
+    def test_publish_hook_has_a_current_source_generated_sync_contract(self):
+        from high_intent_decision_routes import build_sync_contract, validate_sync_contract
+
+        contract = validate_sync_contract(
+            GEO / "data/high_intent_guide_sync_contract.json", engine_root=GEO,
+        )
+        self.assertEqual(build_sync_contract(GEO), contract)
+
     def test_live_readback_checks_exact_html_and_headers(self):
         self.generate()
         url = images.gallery_url("en-US", images.PUBLIC_SITE)

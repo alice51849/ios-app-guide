@@ -68,3 +68,19 @@ GET 200 只證明路由可達，不代表候選已上線。
    核對鏡像、既有 conversion64／47×50、email/image/crawler 與全量 leak inventory。
 4. Guide 先 commit/push，再由 Growth gitlink 釘選，最後按授權部署；本 feature
    只保存來源及候選產物，不能作為 deploy、通知或索引提交授權。
+
+## Root 前置已完成（第七輪配對發布）
+
+上文記錄的是初次 feature 稽核狀態。Root owner 已以
+`7b44f70d2f71b76efd26b14532f1e410b37515ac`／Pages run `34651941627`
+完成正式修復：ResourceSync root body SHA 為
+`0aa42115aff3eaf4908f2117ad0a0705ba9f33faa57c23367b1657f6f3f9df80`，
+canonical Standard.site contract SHA 為
+`2592154b1fb35c524a0b6233dc064fad58edf1bfb5726d2cfb7b0936683b811e`；
+42 份 document 已通過本 consumer，公開 publication 本來就已是 canonical，
+無須修改任何 ATProto／社群紀錄。
+
+第七輪按當次明確授權整合原 paired feature，使用既有精確雙 SHA 發布流程，
+不修改、停用或放寬任何 workflow Gate。先在 feature 封存配對 release commits，
+Guide main 與 Growth gitlink/source 全部一致後才進行一次有效 Pages 部署。
+初次稽核列出的 331 份歷史 support/library 內容保持原 bytes，不混入其他修復。

@@ -80,9 +80,9 @@ class ConversionRouteContractTests(unittest.TestCase):
             raw or self.raw_routes[key], app or self.apps[key], contracts or self.contracts,
         )
 
-    def test_eleven_stable_ids_and_eighteen_native_routes(self):
+    def test_stable_ids_and_source_derived_native_routes(self):
         self.assertEqual(IDS, {key: row["app_id"] for key, row in self.contracts.items()})
-        self.assertEqual(18, len(self.converted))
+        self.assertEqual(sum(len(row["localized"]) for row in self.contracts.values()), len(self.converted))
         self.assertEqual(47, len(self.source["routes"]))
         self.assertEqual(2350, self.report["coverage"]["candidate_app_locale_pairs"])
         self.assertEqual(0, self.report["coverage"]["fallback_records"])
@@ -97,7 +97,8 @@ class ConversionRouteContractTests(unittest.TestCase):
         for key in ("mochi", "mochidonestamp", "battai"):
             self.assertIn("zh-Hant", self.contracts[key]["localized"])
         self.assertIn("ja", self.contracts["unblurry"]["localized"])
-        self.assertFalse(any(row["locale"] == "de-DE" for row in self.records))
+        self.assertIn("zh-Hant", self.contracts["cyca"]["localized"])
+        self.assertIn("de-DE", self.contracts["mochidonestamp"]["localized"])
 
     def test_existing_47_by_50_install_decision_baseline_is_intact(self):
         baseline = json.loads((self.pages / "data/app-install-decision-routes.json").read_text())
@@ -299,7 +300,7 @@ class ConversionRouteContractTests(unittest.TestCase):
                     text, re.S,
                 )
                 self.assertIsNotNone(candidate)
-                self.assertIn(f"<h2>{html.escape(headings[row['locale']])}</h2>", candidate.group(1))
+                self.assertIn(f"<h2>{html.escape(routes.UI[row['locale']]['candidate_queries'])}</h2>", candidate.group(1))
                 queries = re.search(r"<ul>(.*?)</ul>", candidate.group(1), re.S)
                 self.assertIsNotNone(queries)
                 self.assertEqual(
@@ -310,7 +311,7 @@ class ConversionRouteContractTests(unittest.TestCase):
     def test_schema_and_public_observation_artifact(self):
         data = json.loads(conversion.render_document(self.records, routes.SITE))
         schema = json.loads(conversion.render_schema())
-        self.assertEqual(18, len(data["routes"]))
+        self.assertEqual(len(self.converted), len(data["routes"]))
         required = schema["properties"]["routes"]["items"]["required"]
         query_evidence = {
             "status": "candidate",

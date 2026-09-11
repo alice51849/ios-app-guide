@@ -22,6 +22,7 @@ import re
 import secrets
 import sys
 import time
+import unicodedata
 from typing import Any, Callable, Iterator, Mapping, MutableMapping, Sequence
 import urllib.error
 from urllib.parse import urlencode, urlsplit
@@ -1124,8 +1125,8 @@ def reconcile_remote_state(
     verified_at: str,
     repair_after_day: str,
     daily_limit: int = DEFAULT_DAILY_LIMIT,
-) -> None:
-    """Recover stable identities and invalidate stale local confirmations."""
+) -> dict[str, object]:
+    """Keep fresh native evidence outside the content-state merge contract."""
     validate_state(state)
     migrate_publication_origin(state, manifest)
     _migrate_legacy_pending_state(
@@ -1317,6 +1318,40 @@ def reconcile_remote_state(
         updated_at=verified_at,
     )
     validate_state(state)
+    native_documents = []
+    for canonical, (remote_rkey, remote) in sorted(active_documents.items()):
+        entry = state["documents"].get(canonical, {})
+        app_key = entry.get("app_key")
+        if (
+            not isinstance(app_key, str)
+            or not app_key
+            or entry.get("rkey") != remote_rkey
+        ):
+            app_key = None
+        native_documents.append({
+            "canonical_url": canonical,
+            "app_key": app_key,
+            "uri": remote["uri"],
+            "cid": remote["cid"],
+            "cached_content_confirmed": entry.get("published") is True,
+        })
+    apps = sorted({
+        entry["app_key"] for entry in native_documents if entry["app_key"]
+    })
+    unmapped = sum(entry["app_key"] is None for entry in native_documents)
+    return {
+        "status": "verified",
+        "scope": "native_record_existence_only",
+        "persistence": "independent_readback_report",
+        "checked_at": verified_at,
+        "document_count": len(native_documents),
+        "app_count": len(apps),
+        "app_keys": apps,
+        "unmapped_document_count": unmapped,
+        "app_mapping_status": "blocked" if unmapped else "verified",
+        "documents": native_documents,
+        "renderer_support": {"status": "not_checked"},
+    }
 
 
 def _document_semantics(record: Mapping[str, object]) -> dict[str, object]:
@@ -1766,7 +1801,7 @@ def run(
                     }
                 )
 
-        reconcile_remote_state(
+        plan["native_records"] = reconcile_remote_state(
             working,
             manifest,
             client=client,
@@ -1820,6 +1855,10 @@ def _parser() -> argparse.ArgumentParser:
         "--well-known", type=Path, default=DEFAULT_WELL_KNOWN
     )
     parser.add_argument("--limit", type=int, default=DEFAULT_DAILY_LIMIT)
+    parser.add_argument(
+        "--report", type=Path,
+        help="Write independent evidence, never merge it into publisher state.",
+    )
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument(
         "--publish",
@@ -1836,6 +1875,25 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = _parser().parse_args(argv)
+    if args.report is not None:
+        report_key = unicodedata.normalize(
+            "NFC", str(args.report.resolve())
+        ).casefold()
+        for path in (
+            args.manifest, args.state, args.contract, args.well_known
+        ):
+            aliases_input = (
+                report_key
+                == unicodedata.normalize("NFC", str(path.resolve())).casefold()
+            )
+            try:
+                aliases_input = aliases_input or args.report.samefile(path)
+            except FileNotFoundError:
+                pass
+            if aliases_input:
+                raise ConfigurationError(
+                    "--report must not replace publisher inputs or state"
+                )
     manifest = load_manifest(args.manifest)
     result = run(
         manifest,
@@ -1845,6 +1903,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         limit=args.limit,
         publish=args.publish,
     )
+    if args.report is not None:
+        atomic_write_json(args.report, result)
     print(
         f"Standard.site {result['mode']}: "
         f"{len(result['selected_urls'])} document(s), "

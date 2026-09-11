@@ -171,6 +171,13 @@ jobs:
         run: |
           python3 _engine/geo/hero_tasks.py --pages-dir .
           python3 _engine/geo/hero_tasks.py --pages-dir . --check
+      - name: Gate evidenced native result images
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover \
+            -s _engine/geo/tests -p test_result_image_index.py -q
+          python3 _engine/geo/result_image_index.py --pages .
+          python3 _engine/geo/result_image_index.py --pages . --check
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"
@@ -222,6 +229,27 @@ jobs:
             --attempts 30 \
             --retry-delay 25
           echo "Exact deployment is live: $(jq -er '.generation.generation_id' .well-known/deployment.json)"
+      - name: Verify published result images without claiming indexing
+        if: steps.verify_live.outcome == 'success'
+        run: |
+          set -euo pipefail
+          git restore --source=HEAD -- \
+            _engine/geo/result_image_index.py \
+            _engine/geo/deployment_generation.py \
+            _engine/geo/crawler_policy.py \
+            _engine/geo/official_locales.py \
+            _engine/geo/site_config.py \
+            _engine/geo/data/result_image_evidence_v1.json
+          python3 _engine/geo/result_image_index.py --pages . --check --verify-live \
+            --report .result-image-reports/live-readback.json
+      - name: Preserve result-image live readback
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: result-image-readback-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .result-image-reports/live-readback.json
+          if-no-files-found: warn
+          retention-days: 30
       - name: Preserve generation-bound live readback
         if: always() && steps.verify_live.outcome != 'skipped'
         uses: actions/upload-artifact@v4

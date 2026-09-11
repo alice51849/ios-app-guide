@@ -191,6 +191,7 @@ jobs:
           python3 gen_store_attribution.py
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
+          python3 result_image_index.py
           python3 audit_link_depth.py --max-indexable-orphans 0
           python3 high_intent_decision_routes.py \
             --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
@@ -352,6 +353,7 @@ jobs:
             --retry-delay 2
            python3 _engine/geo/publisher_intent_visuals.py \
              --today "$GEO_BUILD_DATE"
+           python3 _engine/geo/result_image_index.py --pages "$GITHUB_WORKSPACE"
            python3 _engine/geo/gen_sitemap_lastmod.py \
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
@@ -391,6 +393,7 @@ jobs:
               python3 gen_store_attribution.py
               python3 hero_tasks.py --today "$GEO_BUILD_DATE"
               python3 gen_feed.py
+              python3 result_image_index.py
               python3 audit_link_depth.py --max-indexable-orphans 0
               python3 high_intent_decision_routes.py \
                 --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
@@ -520,6 +523,7 @@ jobs:
           python3 gen_store_attribution.py
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
+          python3 result_image_index.py
           python3 audit_link_depth.py --max-indexable-orphans 0
           python3 high_intent_decision_routes.py \
             --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
@@ -586,6 +590,7 @@ jobs:
                 python3 gen_store_attribution.py
                 python3 hero_tasks.py --today "$GEO_BUILD_DATE"
                 python3 gen_feed.py
+                python3 result_image_index.py
                 python3 audit_link_depth.py --max-indexable-orphans 0
                 python3 high_intent_decision_routes.py \
                   --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \

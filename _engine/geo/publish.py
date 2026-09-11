@@ -410,6 +410,7 @@ def main():
     sync_standard_site(env)
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
+    require([PY, os.path.join(HERE, "result_image_index.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     require([PY, os.path.join(HERE, "hero_tasks.py")], env=env)
     require([PY, os.path.join(HERE, "hero_tasks.py"), "--check"], env=env)

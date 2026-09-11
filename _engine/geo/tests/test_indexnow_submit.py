@@ -466,6 +466,52 @@ class IndexNowTests(unittest.TestCase):
         )
         self.assertEqual({"kept.html", "edited.html"}, set(measured))
 
+    def test_result_image_source_alt_srcset_and_pixel_hash_are_real_changes(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "result.html"
+            original = (
+                '<html><head><title>Published result</title></head><body>'
+                '<img src="https://images.example/result.jpg" alt="A filled note page" '
+                f'data-result-image-sha256="{"a" * 64}" '
+                'width="295" height="640" loading="lazy"></body></html>'
+            )
+            target.write_text(original, encoding="utf-8")
+            baseline = indexnow.indexable_content_digest(target)
+            for changed in (
+                original.replace("result.jpg", "updated-result.jpg"),
+                original.replace("A filled note page", "A handwritten note and diagram"),
+                original.replace('width="295"', 'srcset="https://images.example/result-2x.jpg 2x" width="295"'),
+                original.replace("a" * 64, "b" * 64),
+            ):
+                with self.subTest(markup=changed):
+                    target.write_text(changed, encoding="utf-8")
+                    selected, measured = indexnow.select_content_changed_urls(
+                        root, "https://example.com", ["https://example.com/result.html"],
+                        {"result.html": baseline},
+                    )
+                    self.assertEqual(["https://example.com/result.html"], selected)
+                    self.assertNotEqual(baseline, measured["result.html"])
+            target.write_text(
+                original.replace('loading="lazy"', 'loading="eager" style="border:0"')
+                .replace('width="295"', 'width="590"'), encoding="utf-8",
+            )
+            self.assertEqual(baseline, indexnow.indexable_content_digest(target))
+
+    def test_result_image_attribute_order_and_encoding_are_normalized_once(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "result.html"
+            first = f'<img src="result.jpg" alt="Notes &amp; sketches" data-result-image-sha256="{"a" * 64}">'
+            target.write_text(first, encoding="utf-8")
+            baseline = indexnow.indexable_content_digest(target)
+            target.write_text(
+                f"<IMG data-result-image-sha256='{'a' * 64}' alt='Notes &#38; sketches' src='result.jpg'>",
+                encoding="utf-8",
+            )
+            self.assertEqual(baseline, indexnow.indexable_content_digest(target))
+            target.write_text(first.replace("&amp;", "&amp;amp;"), encoding="utf-8")
+            self.assertNotEqual(baseline, indexnow.indexable_content_digest(target))
+
     def test_content_state_round_trips_and_rejects_foreign_documents(
         self,
     ) -> None:

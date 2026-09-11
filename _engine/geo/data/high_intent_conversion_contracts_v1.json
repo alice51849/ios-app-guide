@@ -956,6 +956,19 @@
           "asset_captions": {
             "donestamp-last-time-tw": "已發布的事件清單與上次完成時間。"
           }
+        },
+        "de-DE": {
+          "task": "Das letzte Mal festhalten, nicht eine Serie",
+          "result": "Erledigungen mit Datum speichern und später im Verlauf nachsehen.",
+          "free": "Ein aktives Ereignis und ein unbegrenzter Verlauf sind kostenlos.",
+          "paid": "Weitere aktive Ereignisse lassen sich mit einem einmaligen Kauf freischalten.",
+          "queries": ["wann zuletzt Filter gewechselt", "Erinnerung ab tatsächlicher Erledigung"],
+          "limitations": [
+            "Dies ist eine Erinnerung an die letzte Erledigung, keine Arbeitsplanung und kein täglicher Gewohnheitswettbewerb.",
+            "Erinnerungen folgen der gespeicherten Erledigungszeit. Es werden keine neuen, ungeprüften Synchronisierungsfunktionen zugesagt."
+          ],
+          "proof_note": "Die Angaben folgen der veröffentlichten Funktionsbeschreibung. Englische Bildschirmbilder werden hier nicht als deutsche Nachweise ausgegeben.",
+          "asset_captions": {}
         }
       }
     },
@@ -1063,6 +1076,19 @@
           "asset_captions": {
             "cyca-calendar": "Published calendar with recorded and predicted dates; predictions are estimates."
           }
+        },
+        "zh-Hant": {
+          "task": "用自己的步調記錄經期",
+          "result": "記錄經期日期並回看週期變化；預測只是估計，不是避孕方法。",
+          "free": "不用先建立帳號，就能開始記錄經期。",
+          "paid": "進階規劃與更完整歷史，可選擇一次性 Pro 解鎖。",
+          "queries": ["經期記錄不用帳號", "週期追蹤一次買斷"],
+          "limitations": [
+            "預測日期與受孕期僅供規劃參考，不能作為避孕或懷孕預防方法。",
+            "不保證受孕日、臨床準確率或醫療診斷；有健康疑慮時應諮詢合格醫療專業人員。"
+          ],
+          "proof_note": "功能依據目前公開版本說明核對。這裡不把英文公開圖當成繁中畫面，也不把日曆預測當成臨床準確性證明。",
+          "asset_captions": {}
         }
       }
     },

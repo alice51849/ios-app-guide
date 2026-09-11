@@ -46,6 +46,7 @@ sys.path.insert(0, str(HERE))
 from app_store_storefronts import (  # noqa: E402
     APP_STORE_PATH_RE,
     LOCALE_STOREFRONTS,
+    REQUIRED_LOCALE_STOREFRONTS,
     PROVIDER_TOKEN_ENV,
     PROVIDER_TOKEN_RE,
     is_clean_app_store_developer_url,
@@ -288,21 +289,29 @@ def align_storefront(url: str, locale: str | None, availability=None) -> str:
     that as a storefront mismatch, so the single stamper authority moves the
     link onto the page locale's storefront when the app is verified there and
     otherwise falls back to the global (country-less) link. Pages outside the
-    official locales and links without a country are left untouched.
+    official locales are left untouched. Bangladesh's declared routing also
+    applies to countryless generator input, independently of lookup results.
     """
     if locale not in LOCALE_STOREFRONTS:
         return url
     parsed = urllib.parse.urlsplit(url)
     match = APP_STORE_PATH_RE.fullmatch(parsed.path)
-    if match is None or match["country"] is None:
+    if match is None:
+        return url
+    if match["country"] is None and locale not in REQUIRED_LOCALE_STOREFRONTS:
         return url
     target = LOCALE_STOREFRONTS[locale]
-    if match["country"] == target or match["country"] not in LOCALE_STOREFRONTS.values():
+    if match["country"] == target or (
+        match["country"] is not None and match["country"] not in LOCALE_STOREFRONTS.values()
+    ):
         # Only a *known* foreign storefront is re-homed; an unknown country code
         # is corrupt input and must keep failing closed downstream.
         return url
     app_id = match["app_id"]
-    if availability is None or app_id in availability.get(target, frozenset()):
+    if (
+        locale in REQUIRED_LOCALE_STOREFRONTS
+        or availability is None or app_id in availability.get(target, frozenset())
+    ):
         path = f"/{target}/app/id{app_id}"
     else:
         path = f"/app/id{app_id}"

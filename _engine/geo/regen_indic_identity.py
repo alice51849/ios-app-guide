@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 from datetime import datetime, timezone
 import hashlib
+import html
 import json
 import re
 import sys
@@ -46,6 +47,26 @@ FULL_HEADLINES = {
     "ଯାତ୍ରା ମୁଦ୍ରା ଓ ଖର୍ଚ୍ଚ ନିୟନ୍ତ୍": SOURCE_HEADLINES["gmoney"]["or-IN"]["subtitle"],
 }
 TEXT_SUFFIXES = frozenset({".html", ".json", ".xml", ".md", ".txt", ".webmanifest"})
+
+
+def repair_qr(source: str, pages: Path, assets: dict[Path, str]) -> str:
+    import gen_app_store_qr_ctas as qr
+    import gen_store_attribution as attribution
+
+    link = attribution.QR_CARD_LINK_RE.search(source)
+    image = attribution.QR_CARD_IMAGE_RE.search(source)
+    if link is None and image is None:
+        return source
+    if link is None or image is None:
+        raise ValueError("Cannot repair an incomplete App Store QR card")
+    href = html.unescape(link["href"])
+    relative = qr.qr_asset_relative(image["app"], href)
+    svg_path = pages / relative
+    svg = qr.qr_svg(image["app"], href)
+    if not svg_path.exists() or svg_path.read_text(encoding="utf-8") != svg:
+        assets[svg_path] = svg
+    digest = relative.stem.split("-", 1)[1]
+    return source[:image.start("digest")] + digest + source[image.end("digest"):]
 
 
 def path_locale(value: str) -> str | None:
@@ -177,6 +198,8 @@ def regenerate(pages: Path, social: Path, *, write: bool = False) -> dict:
                 documents[path] = (document, source)
         else:
             content = repair_text(source, locale, app_ids)
+            if locale == "bn-BD" and path.suffix == ".html":
+                content = repair_qr(content, pages, changes)
             if content != source:
                 changes[path] = content
 
@@ -264,6 +287,28 @@ def regenerate(pages: Path, social: Path, *, write: bool = False) -> dict:
             if old_digest:
                 digests[old_digest] = digest
                 modified_dates[old_digest] = today
+
+    import portfolio_app_catalog_api as catalog_api
+
+    for path in api_paths:
+        document = documents[path][0]
+        locale = path.stem
+        feed_path = api_root / "feeds" / f"{locale}.json"
+        previous_source = documents[feed_path][1]
+        previous = json.loads(previous_source)
+        digest = digests.get(document["content_digest"], document["content_digest"])
+        payload = catalog_api.feed_payload(
+            locale, previous["title"], document["apps"],
+            document["date_modified"], digest, previous_items=previous["items"],
+        )
+        content = _json_text(payload, previous_source)
+        if content != previous_source:
+            changes[feed_path] = content
+    schema_path = api_root / "feed.schema.json"
+    schema_source = schema_path.read_text(encoding="utf-8")
+    schema_content = _json_text(catalog_api.feed_schema(), schema_source)
+    if schema_content != schema_source:
+        changes[schema_path] = schema_content
 
     for path, (document, source) in documents.items():
         modified = modified_dates.get(document.get("content_digest"))
@@ -403,6 +448,7 @@ def regenerate(pages: Path, social: Path, *, write: bool = False) -> dict:
         changes[apps_path] = apps_content
     if write:
         for path, content in changes.items():
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content, encoding="utf-8")
     return {
         "mode": "offline-identity-only",

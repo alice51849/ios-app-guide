@@ -448,8 +448,11 @@ def feed_payload(
     }
     items = []
     for app in apps:
+        identifier = f"https://apps.apple.com/app/id{app['app_store_id']}"
+        if locale == "bn-BD":
+            identifier = localized_app_store_url(identifier, locale)
         item = {
-            "id": f"https://apps.apple.com/app/id{app['app_store_id']}",
+            "id": identifier,
             "url": app["guide_url"],
             "external_url": _retarget_app_store_campaign(
                 app,
@@ -886,7 +889,7 @@ def feed_schema() -> dict[str, object]:
                             "type": "string",
                             "format": "uri",
                             "pattern": (
-                                "^https://apps\\.apple\\.com/app/id[0-9]+$"
+                                "^https://apps\\.apple\\.com/(?:bd/)?app/id[0-9]+$"
                             ),
                         },
                         "url": {"type": "string", "format": "uri"},

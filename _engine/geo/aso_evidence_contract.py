@@ -152,6 +152,7 @@ def live_roster() -> dict[str, dict[str, str]]:
             sys.path.insert(0, str(path))
     from answer_personas import PERSONAS
     from live_app_manifest import canonical_manifest
+    from external_app_identity import registry_name
     from videogen.registry import APPS, APPSTORE
 
     canonical_apps = canonical_manifest()["apps"]
@@ -168,7 +169,8 @@ def live_roster() -> dict[str, dict[str, str]]:
             key not in APPS
             or not app_id.isdigit()
             or app_id != str(canonical.get("app_id") or "")
-            or APPS[key]["name"] != canonical.get("name")
+            or not canonical.get("name")
+            or APPS[key]["name"] != registry_name(key, app_id, canonical["name"])
         ):
             raise ContractError(f"live_roster_identity_missing:{key}")
         roster[key] = {"name": APPS[key]["name"], "track_id": app_id}

@@ -1,4 +1,5 @@
 import json
+import html
 from html.parser import HTMLParser
 import os
 from pathlib import Path
@@ -6,6 +7,7 @@ import re
 import sys
 import unittest
 from urllib.parse import urlsplit
+import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
@@ -39,6 +41,74 @@ class _PageIdentity(HTMLParser):
 
 
 class IndicIdentityTests(unittest.TestCase):
+    def test_countryless_identity_generator_is_aligned_before_strict_validation(self):
+        import gen_store_attribution as attribution
+
+        for prefix in ("", "in/"):
+            result = attribution.final_store_url(
+                f"https://apps.apple.com/{prefix}app/id{TRIP_PLANET_ID}",
+                "geo_pick", "118326163", locale="bn-BD",
+                availability={"in": frozenset({TRIP_PLANET_ID})},
+                app_id=TRIP_PLANET_ID,
+            )
+            self.assertEqual(
+                urlsplit(result).path, f"/bd/app/id{TRIP_PLANET_ID}"
+            )
+        with self.assertRaises(ValueError):
+            attribution.final_store_url(
+                f"https://apps.apple.com/xx/app/id{TRIP_PLANET_ID}",
+                "geo_pick", "118326163", locale="bn-BD",
+            )
+        with self.assertRaises(ValueError):
+            attribution.final_store_url(
+                f"https://apps.apple.com/app/id{TRIP_PLANET_ID}",
+                "geo_pick", "118326163", locale="bn-BD",
+                app_id="1234567890",
+            )
+
+    def test_every_bangladesh_qr_encodes_its_download_cta(self):
+        import gen_store_attribution as attribution
+        import gen_app_store_qr_ctas as qr
+
+        pages = Path(os.environ.get("GEO_PAGES", Path(__file__).resolve().parents[1] / "pages"))
+        checked = 0
+        for path in (pages / "bn-BD").rglob("*.html"):
+            source = path.read_text()
+            link = attribution.QR_CARD_LINK_RE.search(source)
+            if link is None:
+                continue
+            with self.subTest(page=str(path)):
+                self.assertIsNone(attribution.qr_card_desync(source))
+                image = attribution.QR_CARD_IMAGE_RE.search(source)
+                href = html.unescape(link["href"])
+                self.assertIn("apps.apple.com/bd/app/", href)
+                asset = pages / qr.qr_asset_relative(image["app"], href)
+                svg = asset.read_text()
+                self.assertEqual(ET.fromstring(svg).find("{http://www.w3.org/2000/svg}desc").text, href)
+                self.assertEqual(svg, qr.qr_svg(image["app"], href))
+                checked += 1
+        self.assertGreaterEqual(checked, 146)
+
+    def test_api_feed_identity_changes_advance_only_the_changed_timestamp(self):
+        import portfolio_app_catalog_api as api
+
+        app = {
+            "app_store_id": TRIP_PLANET_ID,
+            "name": TRIP_PLANET_NAME,
+            "guide_url": f"https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
+            "app_store_url": f"https://apps.apple.com/bd/app/id{TRIP_PLANET_ID}",
+            "summary": "ভ্রমণে শিশুদের সঙ্গে মজার ছোট কাজ।",
+            "search_terms": ["ভ্রমণ"],
+        }
+        first = api.feed_payload("bn-BD", "Apps", [app], "2026-09-10", "a" * 64, timestamp="2026-09-10T00:00:00Z")
+        previous = first["items"]
+        previous[0]["title"] = "Lumi Trip Planet"
+        second = api.feed_payload("bn-BD", "Apps", [app], "2026-09-11", "b" * 64, previous_items=previous, timestamp="2026-09-11T00:00:00Z")
+        self.assertEqual(second["items"][0]["date_modified"], "2026-09-11T00:00:00Z")
+        self.assertEqual(second["items"][0]["id"], f"https://apps.apple.com/bd/app/id{TRIP_PLANET_ID}")
+        third = api.feed_payload("bn-BD", "Apps", [app], "2026-09-11", "b" * 64, previous_items=second["items"], timestamp="2026-09-11T01:00:00Z")
+        self.assertEqual(second["items"], third["items"])
+
     def test_47_by_10_geo_owned_feed_cta_storefront_app_id_and_brand(self):
         pages = Path(os.environ.get("GEO_PAGES", Path(__file__).resolve().parents[1] / "pages"))
         finder = json.loads((pages / "data/verified-ios-app-finder-catalog.json").read_text())
@@ -53,6 +123,10 @@ class IndicIdentityTests(unittest.TestCase):
             ]
             for locale in INDIC_LOCALES
         }
+        api_feeds = {
+            locale: json.loads((pages / f"api/v1/ios-app-catalog/feeds/{locale}.json").read_text())
+            for locale in INDIC_LOCALES
+        }
         checked = 0
         for key, app_id in apps.items():
             for locale in INDIC_LOCALES:
@@ -63,6 +137,17 @@ class IndicIdentityTests(unittest.TestCase):
                     self.assertTrue(record["app_store_url"].startswith(expected_store + "?"))
                     if locale == "bn-BD":
                         self.assertEqual(record["canonical_app_store_url"], expected_store)
+                    api_item = next(
+                        item for item in api_feeds[locale]["items"]
+                        if item["id"].endswith(f"/id{app_id}")
+                    )
+                    self.assertEqual(urlsplit(api_item["external_url"]).path, urlsplit(expected_store).path)
+                    if locale == "bn-BD":
+                        self.assertEqual(api_item["id"], expected_store)
+                        self.assertGreaterEqual(api_item["date_modified"][:10], "2026-09-11")
+                    if key == "tripplanet":
+                        self.assertEqual(api_item["title"], TRIP_PLANET_NAME)
+                        self.assertGreaterEqual(api_item["date_modified"][:10], "2026-09-11")
                     for relative in (
                         f"{locale}/{key}.html",
                         f"apps/{key}/decision/l/{locale}/index.html",
@@ -136,9 +221,11 @@ class IndicIdentityTests(unittest.TestCase):
 
     def test_registry_brand_rejects_wrong_app_id(self):
         import gen_webstories
+        import aso_evidence_contract
 
         self.assertEqual(gen_webstories.APPS["tripplanet"]["name"], TRIP_PLANET_NAME)
         self.assertEqual(str(gen_webstories.APPSTORE["tripplanet"]), TRIP_PLANET_ID)
+        self.assertEqual(aso_evidence_contract.live_roster()["tripplanet"]["name"], TRIP_PLANET_NAME)
         self.assertEqual(registry_name("tripplanet", TRIP_PLANET_ID, "old"), TRIP_PLANET_NAME)
         with self.assertRaises(ValueError):
             registry_name("tripplanet", "1234567890", "old")

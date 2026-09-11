@@ -2,11 +2,12 @@
 title: "Zipbox: ZIP, RAR, 7z আনজিপ — বিজ্ঞাপন ছাড়া, আগে দেখে নিন | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/bn-BD/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
+market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 ---
 
 # Zipbox: ZIP, RAR, 7z আনজিপ — বিজ্ঞাপন ছাড়া, আগে দেখে নিন | iOS App
@@ -20,9 +21,8 @@ Zipbox হলো App Store-এর পেইড অ্যাপ। একবা�
 - কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
-- App Store · ₹ 499
 
-[App Store থেকে Zipbox: ZIP, RAR, 7z আনজিপ ডাউনলোড করুন](https://apps.apple.com/bd/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
+Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Zipbox: ZIP, RAR, 7z আনজিপ-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 
 [সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html)
 

@@ -41,6 +41,7 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 import market_availability  # noqa: E402
+import market_surface_policy  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import gen_store_attribution  # noqa: E402
 from external_app_locales import (  # noqa: E402
@@ -1608,13 +1609,9 @@ def build_one(key, locale, all_locales):
     # 沒有市場連結時渲染母語 availability 說明。刻意**不用** disabled 按鈕:
     # 一個點不動的下載鈕只會讓人以為壞掉,一句說清楚原因的話才是誠實的。
     if url is None:
-        note = MARKET_UNAVAILABLE_NOTES.get(
-            locale, MARKET_UNAVAILABLE_NOTES["en-US"]
-        ).format(name=name)
         store_block = (
-            f'<p class="market-availability" '
-            f'data-market-state="{market_availability.MARKET_UNAVAILABLE_OR_UNVERIFIED}">'
-            f"{html.escape(note)}</p>"
+            market_availability.note_html(locale, name)
+            + f'<p><a href="{html.escape(SITE, quote=True)}/alternatives/">বিকল্প অ্যাপ</a></p>'
         )
     else:
         store_block = (
@@ -1656,6 +1653,15 @@ def build_one(key, locale, all_locales):
         "featureList": feats,
         "keywords": ", ".join(kws),
     }
+    if market_availability.is_unavailable(locale):
+        app_schema.update({
+            "@id": f"urn:apple:app:id{APPSTORE[key]}",
+            "identifier": {
+                "@type": "PropertyValue", "propertyID": "Apple App Store ID",
+                "value": str(APPSTORE[key]),
+            },
+            **market_availability.record_fields(locale),
+        })
     schemas = [app_schema]
     if faq:
         schemas.append({
@@ -1721,6 +1727,7 @@ def build_one(key, locale, all_locales):
     outdir = os.path.join(PAGES, locale)
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, f"{key}.html")
+    page = market_surface_policy.enforce_html(page, locale, app_id=APPSTORE.get(key), name=name)
     write_text_if_changed(out, public_email.render_html(page))
     return out
 
@@ -1790,10 +1797,6 @@ def localized_directory_records(locale, keys):
             raise ValueError(
                 f"Missing localized directory subtitle: {key}/{locale}"
             )
-        if market_availability.is_unavailable(locale):
-            # 語系 hub 與 app 頁走同一條判準:沒有可驗證市場就不列商店連結。
-            # 否則 hub 會留下 /bd/ 連結,把讀者送進美國商店 —— 這正是要解除的風險。
-            continue
         canonical_store = appstore_url(key)
         if not canonical_store:
             raise ValueError(f"Live app has no App Store URL: {key}")
@@ -1805,7 +1808,7 @@ def localized_directory_records(locale, keys):
         )
         country = LOCALE_STOREFRONTS[locale]
         storefront = None
-        if app_id in availability.get(country, frozenset()):
+        if not market_availability.is_unavailable(locale) and app_id in availability.get(country, frozenset()):
             detail = details.get(country, {}).get(app_id)
             if detail is not None:
                 storefront = localized_storefront_detail(detail, locale)
@@ -1832,13 +1835,14 @@ def localized_directory_records(locale, keys):
                 "icon_url": icon_url,
                 "guide_url": f"{SITE}/{locale}/{key}.html",
                 "store_url": store_url,
-                "canonical_store": canonical_store,
-                "storefront_verified": store_url != canonical_store,
+                "canonical_store": None if market_availability.is_unavailable(locale) else canonical_store,
+                "storefront_verified": store_url is not None and store_url != canonical_store,
                 "storefront": storefront,
                 "category": SCHEMA_CAT.get(
                     APPS[key].get("category", "utility"),
                     "UtilitiesApplication",
                 ),
+                **({"locale": locale, **market_availability.record_fields(locale)} if market_availability.is_unavailable(locale) else {}),
             }
         )
     records.sort(
@@ -1851,6 +1855,15 @@ def localized_directory_records(locale, keys):
 
 
 def localized_directory_schema_item(record):
+    if market_availability.is_unavailable(record.get("locale")):
+        return {
+            "@type": "MobileApplication", "@id": f"urn:apple:app:id{record['app_id']}",
+            "identifier": {"@type": "PropertyValue", "propertyID": "Apple App Store ID", "value": record["app_id"]},
+            "name": record["name"], "description": record["subtitle"],
+            "operatingSystem": "iOS", "applicationCategory": record["category"],
+            "image": record["icon_url"], "url": record["guide_url"],
+            **market_availability.record_fields(record["locale"]),
+        }
     item = {
         "@type": "MobileApplication",
         "@id": record["canonical_store"],
@@ -2137,10 +2150,12 @@ def build_locale_index(locale, keys, locales):
             f'<p class="app-price"><strong>{e(ui["price"])}:</strong> '
             f'{e(record["pricing"])}</p>'
             f'{localized_directory_storefront_proof(record)}</div>'
+            + (f'<span data-market-state="{market_availability.market_state(locale)}">N/A</span>'
+            if market_availability.is_unavailable(locale) else
             f'<a class="store-cta" href="{e(record["store_url"])}" '
             'referrerpolicy="no-referrer" '
             f'aria-label="{e(ui["get"].format(name=record["name"]))}">'
-            f'{e(ui["dl"])}</a></li>'
+            f'{e(ui["dl"])}</a>') + '</li>'
         )
         for record in records
     ]
@@ -2190,6 +2205,7 @@ def build_locale_index(locale, keys, locales):
     dest = os.path.join(outdir, "index.html")
     # 一定要先讀舊檔再開 "w":open(..., "w") 會先截斷,顛倒過來就永遠讀到空檔。
     idx = carry_over_link_hub_blocks(dest, idx)
+    idx = market_surface_policy.enforce_html(idx, locale)
     write_text_if_changed(dest, idx)
 
 

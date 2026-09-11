@@ -7,9 +7,20 @@
   let data;
   try {
     data = JSON.parse(node.textContent);
+    if (data.page_language === "bn-BD") {
+      const unavailable = data.market_availability;
+      if (data.app_store_url !== null ||
+          unavailable?.state !== "MARKET_UNAVAILABLE_OR_UNVERIFIED" ||
+          unavailable?.reason !== "MARKET_NOT_IN_APPLE_MEDIA_SERVICES" ||
+          unavailable?.evidence?.source_url !== "https://support.apple.com/en-us/118205" ||
+          unavailable?.publishable !== false || unavailable?.outbox_count !== 0) {
+        throw new TypeError("Invalid market availability evidence.");
+      }
+      return;
+    }
     const store = new URL(data.app_store_url);
     const facts = data.storefront_facts;
-    const storefronts = {"ar-SA": "sa", "bn-BD": "in", "ca": "es", "cs": "cz", "da": "dk", "de-DE": "de", "el": "gr", "en-AU": "au", "en-CA": "ca", "en-GB": "gb", "en-US": "us", "es-ES": "es", "es-MX": "mx", "fi": "fi", "fr-CA": "ca", "fr-FR": "fr", "gu-IN": "in", "he": "il", "hi": "in", "hr": "hr", "hu": "hu", "id": "id", "it": "it", "ja": "jp", "kn-IN": "in", "ko": "kr", "ml-IN": "in", "mr-IN": "in", "ms": "my", "nl-NL": "nl", "no": "no", "or-IN": "in", "pa-IN": "in", "pl": "pl", "pt-BR": "br", "pt-PT": "pt", "ro": "ro", "ru": "ru", "sk": "sk", "sl-SI": "si", "sv": "se", "ta-IN": "in", "te-IN": "in", "th": "th", "tr": "tr", "uk": "ua", "ur-PK": "pk", "vi": "vn", "zh-Hans": "cn", "zh-Hant": "tw"};
+    const storefronts = {"ar-SA": "sa", "bn-BD": "bd", "ca": "es", "cs": "cz", "da": "dk", "de-DE": "de", "el": "gr", "en-AU": "au", "en-CA": "ca", "en-GB": "gb", "en-US": "us", "es-ES": "es", "es-MX": "mx", "fi": "fi", "fr-CA": "ca", "fr-FR": "fr", "gu-IN": "in", "he": "il", "hi": "in", "hr": "hr", "hu": "hu", "id": "id", "it": "it", "ja": "jp", "kn-IN": "in", "ko": "kr", "ml-IN": "in", "mr-IN": "in", "ms": "my", "nl-NL": "nl", "no": "no", "or-IN": "in", "pa-IN": "in", "pl": "pl", "pt-BR": "br", "pt-PT": "pt", "ro": "ro", "ru": "ru", "sk": "sk", "sl-SI": "si", "sv": "se", "ta-IN": "in", "te-IN": "in", "th": "th", "tr": "tr", "uk": "ua", "ur-PK": "pk", "vi": "vn", "zh-Hans": "cn", "zh-Hant": "tw"};
     const country = storefronts[data.page_language];
     const campaign = [...store.searchParams];
     if (

@@ -6,6 +6,8 @@ from __future__ import annotations
 import argparse
 from html.parser import HTMLParser
 import json
+import market_availability as market
+import market_surface_policy
 from pathlib import Path
 import re
 
@@ -51,6 +53,17 @@ ASSET_SOURCE = r"""(() => {
   let data;
   try {
     data = JSON.parse(node.textContent);
+    if (data.page_language === "bn-BD") {
+      const unavailable = data.market_availability;
+      if (data.app_store_url !== null ||
+          unavailable?.state !== "MARKET_UNAVAILABLE_OR_UNVERIFIED" ||
+          unavailable?.reason !== "MARKET_NOT_IN_APPLE_MEDIA_SERVICES" ||
+          unavailable?.evidence?.source_url !== "https://support.apple.com/en-us/118205" ||
+          unavailable?.publishable !== false || unavailable?.outbox_count !== 0) {
+        throw new TypeError("Invalid market availability evidence.");
+      }
+      return;
+    }
     const store = new URL(data.app_store_url);
     const facts = data.storefront_facts;
     const storefronts = __LOCALE_STOREFRONTS__;
@@ -358,11 +371,13 @@ def generate(
                 locale,
                 availability,
             )
-            if store_url == canonical_store:
+            if market.is_unavailable(locale):
+                store_url = None
+            elif store_url == canonical_store:
                 fallbacks += 1
             else:
                 localized_storefronts += 1
-            store_url = required_campaign_app_store_url(
+            store_url = None if market.is_unavailable(locale) else required_campaign_app_store_url(
                 store_url, campaign_token(f"{locale}/{key}.html"),
                 expected_locale=locale, expected_app_id=app_id,
                 availability=availability,
@@ -376,11 +391,12 @@ def generate(
                 "localized_description": _localized_tool_description(
                     description
                 ),
+                **market.record_fields(locale),
             }
             country = LOCALE_STOREFRONTS[locale]
             detail = details.get(country, {}).get(app_id)
             if (
-                detail is not None
+                detail is not None and not market.is_unavailable(locale)
                 and app_id in availability.get(country, frozenset())
             ):
                 detail = localized_storefront_detail(detail, locale)
@@ -390,6 +406,11 @@ def generate(
             changed += int(
                 ensure_page_tool(path, payload, site=site)
             )
+            if market.is_unavailable(locale):
+                source = path.read_text(encoding="utf-8")
+                updated = market_surface_policy.enforce_html(source, locale)
+                if source != updated:
+                    path.write_text(updated, encoding="utf-8")
 
     return {
         "apps": len(live_keys),

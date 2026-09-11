@@ -12,6 +12,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from urllib.parse import parse_qsl, urlsplit
 
 
@@ -21,6 +22,7 @@ if str(GEO) not in sys.path:
 
 import alternatives_i18n as alternatives  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
+from market_contract_assertions import assert_blocked_page
 
 
 FIXTURE = GEO / "tests" / "fixtures" / "alternatives_exact50"
@@ -144,8 +146,9 @@ class AlternativesExact50Tests(unittest.TestCase):
             )
         stale = self._guide_commits_behind(guide)
         if stale:
+            reference = os.environ.get("ALTERNATIVES_GUIDE_BASE_REF", "origin/main")
             self.fail(
-                f"Guide checkout 落後其 origin/main {stale} 個 commit({guide});"
+                f"Guide checkout 落後其 {reference} {stale} 個 commit({guide});"
                 "用過期內容驗 production 只會產生假結果。請先更新該 checkout,"
                 "或用 ALTERNATIVES_GUIDE_REPOSITORY 指向最新的工作樹。"
             )
@@ -153,20 +156,38 @@ class AlternativesExact50Tests(unittest.TestCase):
 
     @staticmethod
     def _guide_commits_behind(guide: Path) -> int:
-        """回傳落後 origin/main 幾個 commit;無法判斷時回 0(不阻擋)。"""
+        """Default to main; an explicitly requested paired stack can pin a full SHA."""
+        pinned = os.environ.get("ALTERNATIVES_GUIDE_BASE_REF", "").strip()
+        if pinned and re.fullmatch(r"[0-9a-f]{40}", pinned) is None:
+            raise AssertionError("Pinned Guide base must be an exact full commit SHA")
+        reference = pinned or "origin/main"
         try:
             result = subprocess.run(
-                ["git", "-C", str(guide), "rev-list", "--count", "HEAD..origin/main"],
+                ["git", "-C", str(guide), "rev-list", "--count", f"HEAD..{reference}"],
                 capture_output=True, text=True, timeout=60, check=False,
             )
         except (OSError, subprocess.SubprocessError):
+            if pinned:
+                raise AssertionError("Cannot verify pinned Guide ancestry")
             return 0
         if result.returncode != 0:
+            if pinned:
+                raise AssertionError("Unknown pinned Guide commit")
             return 0
         try:
             return int(result.stdout.strip() or "0")
         except ValueError:
+            if pinned:
+                raise AssertionError("Invalid pinned Guide ancestry result")
             return 0
+
+    def test_explicit_stack_binding_rejects_mutable_or_unknown_base(self):
+        guide = self._require_production_guide()
+        for reference in ("main", "origin/main", "337ce28e7f8", "0" * 40):
+            with self.subTest(reference=reference):
+                with mock.patch.dict(os.environ, {"ALTERNATIVES_GUIDE_BASE_REF": reference}):
+                    with self.assertRaises(AssertionError):
+                        self._guide_commits_behind(guide)
 
     def test_production_manifest_is_fixed_by_ranked_and_curated_evidence(self) -> None:
         manifest = alternatives.load_manifest(alternatives.DEFAULT_MANIFEST)
@@ -226,6 +247,9 @@ class AlternativesExact50Tests(unittest.TestCase):
             self.assertEqual(expected_hreflang, hreflang)
             self.assertIn(html.escape(record["publisher_query"]), document)
             self.assertIn(html.escape(record["decision_context"]), document)
+            if locale == "bn-BD":
+                assert_blocked_page(self, document)
+                continue
             self.assertIn(html.escape(record["app_store_cta_label"]), document)
             store_links = re.findall(
                 r'href="(https://apps\.apple\.com/[^"]+)"', document
@@ -281,7 +305,14 @@ class AlternativesExact50Tests(unittest.TestCase):
             for locale in OFFICIAL_LOCALES
         }
         self.assertEqual(expected_urls, actual_urls)
+        blocked = 0
+        available = 0
         for relative, document in rendered.items():
+            if relative.parts[0] == "bn-BD":
+                assert_blocked_page(self, document)
+                blocked += 1
+                continue
+            available += 1
             store_links = re.findall(
                 r'href="(https://apps\.apple\.com/[^"]+)"', document
             )
@@ -296,6 +327,8 @@ class AlternativesExact50Tests(unittest.TestCase):
                 relative.as_posix(),
             )
             self.assertEqual("8", pairs[-1][1], relative.as_posix())
+        self.assertEqual(blocked, 41)
+        self.assertEqual(available, 41 * 49)
 
     def test_geo_daily_wires_producer_before_sitemap_closure(self) -> None:
         workflow = (

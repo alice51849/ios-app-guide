@@ -7,6 +7,9 @@ import hashlib
 import html
 import io
 import json
+import re
+import market_availability as market
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import subprocess
@@ -54,13 +57,19 @@ def store_url(app_id=APP_ID, locale="en-US", campaign="geo_pick"):
 def record(app_id=APP_ID, locale="en-US"):
     return {
         "app_store_id": app_id, "locale": locale,
-        "canonical_app_store_url": f"https://apps.apple.com/app/id{app_id}",
-        "app_store_url": store_url(app_id, locale),
+        "canonical_app_store_url": None if market.is_unavailable(locale) else f"https://apps.apple.com/app/id{app_id}",
+        "app_store_url": None if market.is_unavailable(locale) else store_url(app_id, locale),
+        **market.record_fields(locale),
     }
 
 
 def document(url, locale="en-US", key="app"):
     canonical = f"https://example.com/{locale}/{key}.html"
+    if url is None:
+        return (
+            f'<html lang="{locale}"><head><link rel="canonical" href="{canonical}"></head>'
+            f'<body>{market.note_html(locale)}</body></html>'
+        )
     return (
         f'<html lang="{locale}"><head><link rel="canonical" href="{canonical}">'
         f'<link rel="alternate" hreflang="{locale}" href="{canonical}"></head>'
@@ -123,6 +132,38 @@ class AttributionIntegrityTests(unittest.TestCase):
         for key, app_id in LIVE_APPS.items():
             for locale in OFFICIAL_LOCALES:
                 payload = record(app_id, locale)
+                if locale == "bn-BD":
+                    assert_blocked_record(self, payload)
+                    app = {**payload, "key": key, "name": key, "summary": "Verified app.",
+                           "search_terms": ["app"], "guide_url": f"https://example.com/{locale}/{key}.html"}
+                    feed = api.feed_payload(locale, "Catalog", [app], "2026-09-05", "a" * 64)
+                    self.assertEqual(feed["items"], [])
+                    csv_file = io.StringIO()
+                    writer = csv.DictWriter(csv_file, fieldnames=list(payload))
+                    writer.writeheader()
+                    writer.writerow({**payload, "market_availability": json.dumps(payload["market_availability"])})
+                    note = market.note(locale) + "\nmarket_availability: " + json.dumps(payload["market_availability"])
+                    documents = {
+                        f"{locale}/apps/app.html": document(None, locale),
+                        f"api/v1/catalog/locales/{locale}.json": json.dumps(api.catalog_payload(locale, [app], "2026-09-05", "a" * 64)),
+                        f"api/v1/catalog/feeds/{locale}.json": json.dumps(feed),
+                        f"{locale}/feed.jsonl": json.dumps(payload) + "\n",
+                        f"{locale}/feed.csv": csv_file.getvalue(),
+                        f"{locale}/feed.xml": "<feed><availability>" + html.escape(json.dumps(payload["market_availability"])) + "</availability></feed>",
+                        f"{locale}/rss.xml": "<rss><channel><description>" + html.escape(note) + "</description></channel></rss>",
+                        f"{locale}/downloads/plan.txt": note,
+                        f"{locale}/downloads/plan.md": note,
+                        f"{locale}/README.md": note,
+                        f"{locale}/downloads/plan.ics": "BEGIN:VCALENDAR\nDESCRIPTION:" + note + "\nEND:VCALENDAR",
+                        f"{locale}/tools/result.js": "const result=" + json.dumps(payload) + ";",
+                    }
+                    for relative, source in documents.items():
+                        with self.subTest(app=app_id, locale=locale, output=relative):
+                            self.assertNotIn("apps.apple.com", source)
+                            self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
+                            self.assertEqual(self.audit(source, relative), [])
+                    cells += 1
+                    continue
                 url = payload["app_store_url"]
                 canonical = payload["canonical_app_store_url"]
                 escaped = html.escape(url, quote=True)
@@ -174,6 +215,11 @@ class AttributionIntegrityTests(unittest.TestCase):
             for locale in OFFICIAL_LOCALES:
                 with self.subTest(app=app_id, locale=locale):
                     url = store_url(app_id, locale)
+                    if locale == "bn-BD":
+                        with self.assertRaises(ValueError):
+                            self.audit(document(url, locale), f"{locale}/apps/app.html")
+                        self.assertEqual(self.audit(document(None, locale), f"{locale}/apps/app.html"), [])
+                        continue
                     relative = qr.qr_asset_relative(app_id, url)
                     digest = hashlib.sha256(url.encode()).hexdigest()[:20]
                     self.assertEqual(f"id{app_id}-{digest}.svg", relative.name)
@@ -479,7 +525,7 @@ class AttributionIntegrityTests(unittest.TestCase):
             path.write_text(json.dumps(payload))
         with self.assertRaisesRegex(ValueError, "Missing attribution surfaces"):
             audit.audit_tree(self.pages, provider=PROVIDER, expected_app_ids=set(LIVE_APPS.values()))
-        self.assertEqual(APP_LOCALE_COUNT, audit.audit_tree(
+        self.assertEqual(len(LIVE_APPS) * 49, audit.audit_tree(
             self.pages, provider=PROVIDER, expected_app_ids=set(LIVE_APPS.values()),
             required_surfaces=frozenset({"api"}),
         )["app_locale_cells"])
@@ -497,7 +543,7 @@ class AttributionIntegrityTests(unittest.TestCase):
         (self.pages / "download.txt").write_text(url)
         report = audit.audit_tree(self.pages, provider=PROVIDER, expected_app_ids=set(LIVE_APPS.values()))
         self.assertEqual(audit.REQUIRED_SURFACES, set(report["links_by_surface"]))
-        self.assertEqual(APP_LOCALE_COUNT, report["app_locale_cells"])
+        self.assertEqual(len(LIVE_APPS) * 49, report["app_locale_cells"])
         self.assertEqual(report, audit.audit_tree(
             self.pages, provider=PROVIDER, expected_app_ids=set(LIVE_APPS.values()), workers=2,
         ))
@@ -695,6 +741,14 @@ class AttributionIntegrityTests(unittest.TestCase):
             for key, app_id in LIVE_APPS.items():
                 source = (self.pages / locale / f"{key}.html").read_text()
                 refs = self.audit(source, f"{locale}/{key}.html")
+                if locale == "bn-BD":
+                    assert_blocked_page(self, source)
+                    self.assertEqual(refs, [])
+                    block = re.search(r'<script[^>]*id="iag-webmcp-install-data"[^>]*>(.*?)</script>', source, re.S)
+                    self.assertIsNotNone(block)
+                    data = json.loads(block[1])
+                    assert_blocked_record(self, data, ("app_store_url",))
+                    continue
                 self.assertEqual([store_url(app_id, locale)], [ref.url for ref in refs])
                 payloads.append({
                     "app_store_id": app_id, "app_name": key,
@@ -703,6 +757,10 @@ class AttributionIntegrityTests(unittest.TestCase):
                     "localized_description": "Verified app.",
                 })
         invalid = []
+        invalid.extend({
+            "page_language": "bn-BD", "app_store_id": app_id,
+            "app_store_url": None, **market.record_fields("bn-BD"),
+        } for app_id in LIVE_APPS.values())
         for bad_url in (
             store_url().split("?")[0],
             store_url().replace("&ct=geo_pick", ""),
@@ -750,7 +808,7 @@ const script = new vm.Script(input.source);
             capture_output=True, text=True, timeout=120,
         )
         self.assertEqual(0, result.returncode, result.stderr)
-        self.assertEqual(str(APP_LOCALE_COUNT), result.stdout)
+        self.assertEqual(str(len(LIVE_APPS) * 49), result.stdout)
 
     def test_xml_language_inheritance_calendar_folding_and_template_literals(self):
         with self.assertRaisesRegex(ValueError, "storefront mismatch"):

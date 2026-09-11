@@ -17,6 +17,7 @@ import gen_app_store_facts as facts
 import gen_mobile_app_identity
 from official_locales import OFFICIAL_LOCALES
 from videogen.registry import APPSTORE
+from market_contract_assertions import assert_blocked_page
 
 
 def _page(site: str, locale: str, key: str, app_id: str) -> str:
@@ -146,7 +147,7 @@ class AppStoreFactsTests(unittest.TestCase):
                     "facts": 1,
                     "rated": 1,
                     "without_facts": 1,
-                    "changed": 1,
+                    "changed": 2,
                     "asset_changed": 1,
                 },
                 first,
@@ -243,6 +244,7 @@ class AppStoreFactsTests(unittest.TestCase):
         )
         self.assertEqual(verified, live)
         checked = 0
+        blocked = 0
         for locale in OFFICIAL_LOCALES:
             country = app_store_storefronts.LOCALE_STOREFRONTS[locale]
             for key in live:
@@ -250,6 +252,12 @@ class AppStoreFactsTests(unittest.TestCase):
                 source = (
                     pages / locale / f"{key}.html"
                 ).read_text(encoding="utf-8")
+                if locale == "bn-BD":
+                    assert_blocked_page(self, source)
+                    self.assertNotIn('"offers"', source)
+                    self.assertNotIn('"aggregateRating"', source)
+                    blocked += 1
+                    continue
                 detail = details.get(country, {}).get(app_id)
                 schema = _mobile_schema(source)
                 if detail is None:
@@ -296,6 +304,7 @@ class AppStoreFactsTests(unittest.TestCase):
                             source,
                         )
         self.assertGreater(checked, 1200)
+        self.assertEqual(blocked, 47)
 
 
 if __name__ == "__main__":

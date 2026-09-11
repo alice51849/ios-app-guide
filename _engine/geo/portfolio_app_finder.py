@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import html
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -530,10 +532,12 @@ def finder_campaign_token(locale: str) -> str:
     return surface_campaign_token(f"{locale}/tools/ios-app-finder.html")
 
 
-def localized_app_store_url(record: dict[str, object], locale: str) -> str:
+def localized_app_store_url(record: dict[str, object], locale: str) -> str | None:
     if locale == "en":
         return _campaign_url(str(record["key"]))
     intent = localized_intent(record, locale)
+    if not market.validate_record({**intent, "locale": locale}, url_fields=("app_store_url",)):
+        return None
     return campaign_app_store_url(
         str(intent["app_store_url"]),
         finder_campaign_token(locale),
@@ -717,8 +721,9 @@ def localized_intent(
             "canonical_guide_url": (
                 f"{SITE}/{guide_locale}/{record['key']}.html"
             ),
-            "app_store_url": _campaign_url(str(record["key"])),
+            "app_store_url": None if market.is_unavailable(locale) else _campaign_url(str(record["key"])),
             "app_store_cta_label": UI[locale]["store"],
+            **market.record_fields(locale),
         }
     localized = record.get("localized_intents")
     if not isinstance(localized, dict) or locale not in localized:
@@ -1406,6 +1411,7 @@ def webmcp_records(
                 record, locale
             )["decision_context"],
             "app_store_url": localized_app_store_url(record, locale),
+            **market.record_fields(locale),
         }
         for record in records
     ]
@@ -1464,9 +1470,10 @@ def app_cards(
             f'<div class="app-actions"><a class="guide" '
             f'href="{html.escape(intent["canonical_guide_url"])}">'
             f'{html.escape(copy["guide"])}</a>'
+            + ('<span class="market-blocked">N/A</span>' if market.is_unavailable(locale) else
             f'<a class="store" rel="nofollow noopener" '
             f'href="{html.escape(localized_app_store_url(record, locale))}">'
-            f'{html.escape(intent["app_store_cta_label"])}</a></div></article>'
+            f'{html.escape(intent["app_store_cta_label"])}</a>') + '</div></article>'
         )
     return "\n".join(cards)
 
@@ -1575,6 +1582,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 const I18N=__JS_COPY__;
 const WEBMCP_INPUT_SCHEMA=__WEBMCP_INPUT_SCHEMA__;
 const WEBMCP_RECORDS=__WEBMCP_RECORDS__;
+const WEBMCP_MARKET_FIELDS=__WEBMCP_MARKET_FIELDS__;
 const WEBMCP_TOOL_DESCRIPTION=__WEBMCP_DESCRIPTION__;
 const cards=[...document.querySelectorAll("[data-app-card]")];
 const fields=["search","category","purchase","privacy","device"].map(id=>document.getElementById(id));
@@ -1673,7 +1681,11 @@ async function registerWebMcp(){
         result_type:"verified_ios_app_matches",
         ordering:"alphabetical_by_app_name_not_a_ranking",
         match_count:matches.length,
-        matches:matches.map(({name,why_it_may_fit,app_store_url})=>({name,why_it_may_fit,app_store_url}))
+        ...WEBMCP_MARKET_FIELDS,
+        matches:matches.map(({name,why_it_may_fit,app_store_url,market_availability})=>({
+          name,why_it_may_fit,app_store_url,
+          ...(market_availability?{market_availability}:{})
+        }))
       });
     }
   });
@@ -1792,6 +1804,7 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
             ensure_ascii=False,
             separators=(",", ":"),
         ),
+        "__WEBMCP_MARKET_FIELDS__": json.dumps(market.record_fields(locale), ensure_ascii=False),
         "__WEBMCP_DESCRIPTION__": json.dumps(
             webmcp_description(locale),
             ensure_ascii=False,
@@ -1802,7 +1815,7 @@ registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",e
     unresolved = sorted(set(re.findall(r"__[A-Z][A-Z_]+__", page)))
     if unresolved:
         raise ValueError(f"Unresolved template markers: {unresolved}")
-    return page
+    return market_surface_policy.enforce_html(page, locale)
 
 
 def write_text_if_changed(path: Path, content: str) -> bool:

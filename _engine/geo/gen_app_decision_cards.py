@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import html
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -598,6 +600,9 @@ def ensure_card(
         raise ValueError(f"Decision-card icon is missing: {icon}")
     locale = gen_smart_app_banners._page_language(path, pages)
     locale = "en-US" if locale == "en" else locale
+    if market.is_unavailable(locale):
+        updated = market_surface_policy.enforce_html(source, locale, app_id=app_id)
+        return _write_if_changed(path, updated, previous=source)
     if locale not in OFFICIAL_LOCALE_SET:
         raise ValueError(f"Unsupported decision-card locale: {locale}")
     content = _page_content(

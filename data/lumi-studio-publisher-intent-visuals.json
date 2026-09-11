@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-10",
+  "dateModified": "2026-09-11",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,9 +10,9 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "2bb03a4c916327184c5971965722f39563bdd455a1a60593c2924b21c3362d47",
-  "content_digest": "898327eb20ca282e3255900978910ecc1855618f4bdae3c61bdda9b37adbe16a",
-  "generation_digest": "f80e7c8fd0d622f756d8efc9274f827fdf9a096d6a3bf6f167175728cf4db93e",
+  "source_sha256": "2f2882955ab9a198b276f48aa26ce1afb32905d37b68de6158b794db352fe802",
+  "content_digest": "b3e1d93a6863242ddcd665f19ffcc31027080fe558831bf1b1bfc4c5c527b106",
+  "generation_digest": "db96bdf0e64a2c5589f4db252099f0449cee9f0957946fd3ed7dd6f342545fe4",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 47,
   "locale_count": 50,
@@ -22,257 +22,257 @@
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "bcf635d68bc0d2e576115f3f82febc2af1d7f9703790c9cc043d6ff5162498ba"
+      "sha256": "1bb7ff81bb9c6ca3ffc50ecb46a94cc00dd3ef9d145dfeeb8609f585ac67c1f6"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "dc7cfd1d5782d64fb37ee75726bb0903d83e036e8e613ea960b10e2055056878"
+      "sha256": "1530060e1acc998deec995c73d1c7b4f6d593396bc733103e99f60ba0762d9d2"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "699bd476b40a426be1de55a8bb4ef0e423cfef066c61ef3bc586cef0a1a0471e"
+      "sha256": "aac78bda9d7a2d2db3cb4f80dec1854ee4541ebb511f844b3895b175b930bc7a"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "dd37a12e34e7c08d385dafa85a8ddb83dbf4fd1400143736a0bd243832b7e710"
+      "sha256": "0ea4f00dd8183cf51db089c71155d7257c53056b2dce087a75ebde9d95d02e1c"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "0798f44700ccdc1f20e59d51c6df791b5f6df98933574113ad21642e3fbba957"
+      "sha256": "3f7de2a51da43868211ece0264716fd588b0a998c1bcb3ce91dc8c675755f822"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "54254059e53c08fafb2fda183b614f073243d0aaaeadb47fa99b17febc00adda"
+      "sha256": "70ec4d10a3c15d8e772d740c28fc212df0664aa55c47aeb64cb0ac93fce08e30"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "41646a708211f9aa3e812d740a0f6446257d36d098faf2dc959bdd527a786961"
+      "sha256": "c343c948bdcd8ad56cdf2a11986245b997a974e7ae6c5e404a9e841bee3b8270"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "f511ee36146db9b2664bbb89aa9ff14c5829c6024fbd433232337fc12f07cf09"
+      "sha256": "d62eb0818fb5638cb6b41550d42710f3f24fc5f4877053967b8c686d5a9ccb37"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "93f6ac5ee65e518ce3c673d667b8718e78fbf901a79169ebfc70e5b5f98a8eb5"
+      "sha256": "2319761fd80432df77b8a4178861887497def1386cc68661d82b75dce2e0d6e7"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "31c3060e73a4b8d214c207d0d2bf9512b7b4b68445e67a834687a3c98ddfdeb7"
+      "sha256": "e0ef103e4dd9485b994f3d6119f64e442fb96f0ad0fab674add86768f98b2794"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "3238e5f358fe3ee8397110ca2d9908253edb693cc82ae90d86b1e82ed0227b39"
+      "sha256": "62daf04d63c076a1f511a7e82108f3df74be513d79d65d012f845d564e1de3d3"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "d54bcb6976075bdaff1878096577ef83947a8a5a8a9133e9bba45023ae81456a"
+      "sha256": "88ef2f9131dfa884aa319de2b24213897a2fdefdf38304262a5ec8ce15214733"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "0d508f947139dcf3b78f606d6e1084f51611c140f7afeb7d3f7b224e84ca8f07"
+      "sha256": "3aaecc19d505fafbea32a50fc6401718080a2bf22e3ae1240bcd71eb2ba80180"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "531716ac3652d380aca703e5dac3052c2cb4a4f02c4c4b5e3957ed14b8b87e5e"
+      "sha256": "3145c048647c250b292a10339778927a8651b992b536e00b5490c197cbbc0ac8"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "f5c19da807bc23fd6379662c8a309c160bf37220b29dad16fa9518f7f52025fa"
+      "sha256": "f6d1575f1efa62e23069db5e3afe78e5bc8fd8352350460b7cea4fba02f3586a"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "de1742eaaa171eefb651b64f32f5363fcad56650a99f438e843cf2da34a4413d"
+      "sha256": "e46eb76163157ceee5f07ddee1e5e414548ff2498f1c315322c779cc7adce763"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "5060fb43aeb14ca643d62ee0ead8c1ddd8735c43a7afbb977ec424b104dcbbd4"
+      "sha256": "25d597f8338bacd8cda9daa15eb34d49d2523082e639eb427dafb04b548d8aeb"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "db45e0f695d122571ec930a4743c8789ac3ce38d1ac0d9b27cb1fa0f9d49b291"
+      "sha256": "c5d66c7e1d2b0f8b781b6dfd1b531d4432ed443efa76e280aec2bec8c0e5120b"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "bf34c3a47ba397419407efd637a839199c04227af0b42f633e49b618e2cd307b"
+      "sha256": "71269946e225ddfb3caa2e5c33c5fb8f3e21cbfefb05800470014d88d51127ad"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "8827ffcacf1f38470816f47664bbbf0000895242df79836c0ba08db086d35717"
+      "sha256": "c0afedcc4fa2fc1e422c3f72f74e4736cd0d6db9a582655b2ed566812943a7da"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "9540fb1f5be0dc995dd776e8967ac25a36834208cc950c97447702178516a039"
+      "sha256": "2d4af3e3cdd653955f8a33aaa5c85327a4a9401b7d3443143cd9c7113e2ec793"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "ef4c87b61377314ba8fa138fe7bc0b38471d6e2db133636190dca9e5d29e6d4e"
+      "sha256": "c6b634f0fda3d35810af1a8bef26fc7a340bbe2f4cf4aff85e4a22bb46f66d37"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "60573baba126b21f40aa22a57c8962c29ec5634ce3dfdf6c5589931622e11e28"
+      "sha256": "cf7d6ee5c9069ffcce046da9fbd09db5fea0d3c001c030de467007527003bde2"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "4a9d6f27042b6fc47b7fdb89a6ddda1165a382e521cc7755343c24bd45a26800"
+      "sha256": "afddabd883dfd3bc1ea95a1f408367e64374e5375c48ff3bf0e23b5369b327ef"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "5cd9aba5c1e9c1a32313700b6713f562390ce7d7de09b0693bd6bf1858489423"
+      "sha256": "37d0a41b7a7f64fcd38d6f9a6c92539eafa04706b95348b269abaf51bd4b9184"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "9cad050f16152710882122938c64e7fe0ff33d9e47c1a7ef4bf80ae794891c34"
+      "sha256": "155da1e6e88445cb314cd5cf289fdb589b975e069a1022c91fa7d643deda0d5c"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "b7783e6c7b6fe02129a0703579894ab0f9ad8d91f57b9a4904412ec1128d52b4"
+      "sha256": "29c13a75b48db8e49dc329a1406ce1d70afe8e4c3d0f1052902087c85d74c091"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "5469b3ba07c8ffb299004937c4d48b7b485ae880f1a593652c4c2b4aa29348c2"
+      "sha256": "fcc458808d17f1402c086d41ddd298cf0056cc029c16dc3584d7278edd47d9e3"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "747f3ad3b3c05cfa707b1191e2b68784919ab8217b0a3011d30f2237319a1783"
+      "sha256": "9b1d8b909ce596eff45fdbcac58cfeca99be17d0ef72f4a1ca82eba95df78e3f"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "904ff372e88bd9857000b196828642fb51a3e1aaf4ce3ad1ec592a6d389079f1"
+      "sha256": "da54bc714850c3e1fc8b9777cbdf50a6f10caddcb7fedcba1f22cfce8fe4e680"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "4fe25c5a2db83e29804fec3b1eec9a8900fdc10b24bf83689ec0074e403eba10"
+      "sha256": "98e7d4023a3325e2e314bf42ba9e001b26fa76ea624bc65276427de11d01ef3b"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "4b7bdadc2c862e3b0b98c6735b23b2f0c5fad1c42ae533faffef840595e40ddf"
+      "sha256": "4c80e3a7259f8f8010afd24270474d63c63754d3d345b347bd9ff83dd49d9fef"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "58b01dbff9b4a8dea0a15d07d2cd250b5d99181d76419d43bdf8802c6184047e"
+      "sha256": "21806010dc846debdd20b54d5974d239196b9a511a9d1ea003fe6b52840abf0a"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "d9d6cda43b5b6e504e2267ebbd43ed9493057732f1a66449580a49367021dcb0"
+      "sha256": "01e88db4ce8e26a11e5f0891c834816ddf3c38024abd6a3fc265917d734cfa61"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "c83f7b54d125bd00d26cb936d692ffe681c5761244504cec18d5d24271dc3900"
+      "sha256": "adbf043ad5ca451964752e93daa13f61c8c42c7fb200e02c665d5bfb29c461ef"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "51826f98f8d447eef2aa0f5f8f08f172d3a13d5a0bcf5946dcf3705f813b0d55"
+      "sha256": "1e7e910dd73ce16fe5264a4a47efa1f566471d4002eafc99d9d05562381deedf"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "9cca633a85a01eba1d4f1f7c58f0791b21b37f34af7f61a90944b21138307863"
+      "sha256": "d589550af40e3ed2798e277b324e7b67488e78b598a8e9f94a75c30e5d5af90a"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "57ee00a123cbb1cb24de8b7419d8fb0972133075f17a79d355e74f1f42742ee8"
+      "sha256": "9f9347e1861e024c738ee5a3d84bd43065f89467db9d92892e87ac39981fdb5d"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "eb2d1a484705cde1f949ad969485888adfb816716f50c8a85e6aa6427d3f0e8b"
+      "sha256": "546425e449c19318018769df508f62ed80870c752eea4dbc0090ec579c804cf5"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "d6e2dd9b5c12d352e2ca88fe98535c3f6b16d0e393e80d29e63280039d9377d8"
+      "sha256": "e249c55a7188887ce7298699717ac0517f23eb51a980cc37b43ed0ad69796833"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "97460e67070dc31dd63329a04e7e6f694676d2845ac34b036709de8b63aa38d3"
+      "sha256": "bb9e6570dc8e4bea2bdef5bd5cca72a5523b9ea52750da997e0fcce6d184312b"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "0549828c7c0ac9c06ec8b15132970f7ce36caa43f06a593ba2d29d8f054f4dcc"
+      "sha256": "0d9b98e653cee990d49a416e07c217f5214bff0438ab502aa82c42ea1bdc8880"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "e620e6a3002b62dbbc4001e04aeec5ffc11b70886755472abee406ea5630b40b"
+      "sha256": "0a319ec891d4a9d69ac13fd33d66e3e88f4d13aa93b1d306cf24a0b96f4882ae"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "a8361b889cb190db235795c95eb6078ddfe8c8534e3e39d0543e2ee747ee748b"
+      "sha256": "eb86b66c3c32acaa6ff604bffd1babc935573e189dd8cdcfb08674c2751b33ee"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "008d5ba46a68b1286495df6db5cb679c24286390a952e7cf3b6f20e56f100a1f"
+      "sha256": "4b2e30cade02c393ff919f834baae9fe05a9e1e6277b7586a60f526e6050d658"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "ab80f0990b7d4989976f8655cacc6c6d2c1fb20a36cffd4ae96c390a04b18835"
+      "sha256": "685e7f85eda67c23a39f95ffb3b182ad3911770f06714cd0075a5b4139825030"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "1c33b517a724e461c7161d13c9b6b841b23fc74ee4afb346fc7a8c71b2e7c0d4"
+      "sha256": "eee85e097d2ebf44abf192459f412356b024a0376717b01e1e00bcac7733cfa9"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "161e17c281c05ada89471d26301523bb6e3e839648564f261f27822aef90fb94"
+      "sha256": "1232dea30c3aa50a3814b6f0c00020fcb37f60f2998b380636bf32e6ccddc475"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "e6308a66e6b5872e79ea445a7496ba3122d25072d406453eb0c5aedcbf59b709"
+      "sha256": "3424ce33a93ecfe1080483f297af58328a2a1663296ad031256d215efb26a3eb"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "16415559a7b37859234fd598c524d19056caac762070e7b9cecbbcf26bebcc27"
+      "sha256": "6cd7353bc5abbfc1f1326483284209b2526d1d779c4dc0db9b96691c9b4803e4"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "2bbfa18df37d31c00b90e934d42fbfb77f4422522d4c4bb5aa8b73a1eed432ab"
+      "sha256": "2b47ad9e29aa2118735aeb445652901b2b8af22b44754857aa8303918c54d953"
     }
   ],
   "publisher_authored": true,
@@ -765,8 +765,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/notesstudio100.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/notesstudio100.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6798813048?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "55a6d81532dd84fca5e0f87ae0c85129b64601893aac3d5d27620e787a172f1e"
+      "app_store_url": null,
+      "sha256": "c0404e055d4af488f3e1fea131a37b5e2d380c3a5bf595a717eb499050d82702",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -775,8 +794,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/aibriefpack.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/aibriefpack.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6791658210?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "7da909b64526f248c88466c7bb738de62f72ee8ca42d49c428d40b10b1017d0d"
+      "app_store_url": null,
+      "sha256": "aa750cbdbfd1d47d8a6c0fc3cb87ce21994f007d9be4df5f10ddb626cb9e4c25",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -784,9 +822,28 @@
       "app_store_id": "6784974530",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/aim990.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6784974530?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "60612ddcdcc79a073a547362a11250a36f841362699a33732e1fbc4bbbb21477"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/aim990.html",
+      "app_store_url": null,
+      "sha256": "18bcad4cadc2b3ab490d898b4429c9964dab611f1dcb5aad4aeb2955047f04d6",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -795,8 +852,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/aim990plus.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/aim990plus.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6792483140?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "a9e7028ef908a881377f8595b74f58690595eec9f64cea763509a9283ccd84f5"
+      "app_store_url": null,
+      "sha256": "43d2584fad30fc7d23d3165e55293941f5a602151e059ad3df4e539d66247496",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -805,8 +881,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/battai.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/battai.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6802423998?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "b1b09aa5977b1e2dc1f41173462580fe59ef91e33697747bdf7fa5b88af93a7b"
+      "app_store_url": null,
+      "sha256": "f587d1c8b9b29afa565cb2eaf3c1081c2cd0594695e7ca54a549c0e32435d185",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -815,8 +910,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/caldaily.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/caldaily.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6794178671?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "8441aca4f6a18842ddd31b555053b400c506213616e7104b25851b8ef95ff23d"
+      "app_store_url": null,
+      "sha256": "d0198518b32abfa2b409ca7486ac1014b392ebd52108217eb3c77f2b8c1602ee",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -824,9 +938,28 @@
       "app_store_id": "6781337213",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/cvdesk.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-resume-builder-app-for-career-changers-2026.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6781337213?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "5e770ec693b119458d70025f1659913065971aad6fd06916767ac3f1d88de6bc"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/cvdesk.html",
+      "app_store_url": null,
+      "sha256": "8dfdaba4438e6bdecd5285721d571a5070455e9440c209c17dea496f0059bcdb",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -834,9 +967,28 @@
       "app_store_id": "6782251621",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/cyca.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-period-tracker-app-no-account-required-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6782251621?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "8aea13a1df38a82998afa9908971715caa44a261b9c2a8a0134e1cc61d79966c"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/cyca.html",
+      "app_store_url": null,
+      "sha256": "29fd3db34b627732a61bdb4ecbe5375faa78cc9aa21bbb684f3fe2c60716d1ff",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -844,9 +996,28 @@
       "app_store_id": "6790418321",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/dailymate.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6790418321?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "c4aac23271f62928112bdfe940b80f16d1bdf4a0e44facc8532e3494c2745a25"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dailymate.html",
+      "app_store_url": null,
+      "sha256": "b37f13efc3cecaa31aea60c10d4471583505db43375034bb687b522e8779dc9c",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -855,8 +1026,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/dailymatelite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dailymatelite.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6794725568?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "c8414be8571f84d0319499d9bc2d65fe5bab1e4e3689d1e7e8b07e11c0a8c934"
+      "app_store_url": null,
+      "sha256": "b990fb9e9a7492e68979dd3a21dd104f77e182acccd3d13c49be059104cce347",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -864,9 +1054,28 @@
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/gmoney.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6755782939?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "dfe8e4e970d12160fde2af2844204cbc33d306ee27555c3639ac51076da0ba12"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/gmoney.html",
+      "app_store_url": null,
+      "sha256": "fe151df9fc1e5e038b48435faee028224b8545d37e9d463f9df8116a5dae8490",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -875,8 +1084,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/gmoneylite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/gmoneylite.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6793436548?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "5d1c025f4ac5975ac7b084c25294e27e85cbb29d11edd7dcb72c5efac10375a7"
+      "app_store_url": null,
+      "sha256": "16c8ccd9fdc69d32eb2943427614dc983c5b37e4a9f894e619f187d48a63c196",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -885,8 +1113,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/hourstaglite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6794039979?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "e5146da40dc7964b872bda5421c043c511d2f14f583a73d1ff8d39901429be18"
+      "app_store_url": null,
+      "sha256": "9a7a6941ad6785704ad268e3bb648c124e6ccc3dfdbbf7a685d1461ef1d76752",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -895,8 +1142,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/hourstag.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6754218117?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "32b591b3e4807d4c9657a59f72e0052044d88464efd43cfbabc8450931e3e2af"
+      "app_store_url": null,
+      "sha256": "1c7bc9c85ffa7032ad8619963b3cfc3e8bd84beb9b15781f894e126553b5236f",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -904,9 +1170,28 @@
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lockhour.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-app-to-block-social-media-while-studying-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6780107485?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "b9ec7efcb7db87b2f5b45d8840a7fbd14035430051a3806b216a1071ac2a0937"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lockhour.html",
+      "app_store_url": null,
+      "sha256": "2b0c6927b55100f989c0884bd6a856f0e4912fbc71818700daf7498959f15338",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -914,9 +1199,28 @@
       "app_store_id": "6773017109",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumibopomofo.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6773017109?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "a8ac1f86b941c8e1d0eb1245f352e5077d183a09a8c4e882cac985836188c1ee"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofo.html",
+      "app_store_url": null,
+      "sha256": "9ee3ed952882ea37472c361fd53cd854360521a5ea87abb2987609348918047f",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -924,9 +1228,28 @@
       "app_store_id": "6775773117",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumibopomofopro.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-complete-zhuyin-app-for-bilingual-children.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6775773117?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "8f57e7865be3a4d59518f579c70940e0f99b19db28d107b791ade727a96a7e33"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofopro.html",
+      "app_store_url": null,
+      "sha256": "b98283db656bad66a34f695de25cdc8087fe13113b8a52eda32c437f20bf0118",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -934,9 +1257,28 @@
       "app_store_id": "6778748533",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumiletters.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6778748533?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "693eea3f8a3471a03f8726d12cffa82b656045aa66f478e0955e2f9680fb7a12"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiletters.html",
+      "app_store_url": null,
+      "sha256": "adabba6034be71d26c8921c1e1f7403b7c0b3b775660825ec2271ca41a65da78",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -944,9 +1286,28 @@
       "app_store_id": "6778491147",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumiletterspro.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6778491147?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "b29ae9154b246cdb579c0245b05548e18cdf7e1f9945f252c1eff364ad1d5581"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiletterspro.html",
+      "app_store_url": null,
+      "sha256": "b9f82b3cbbf8aa1e6acc41a7624ead3ce21b386f42cd36709370f435552d567c",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -954,9 +1315,28 @@
       "app_store_id": "6778269699",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumimath.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6778269699?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "ba9fc177d6a1b549382ba5e107ccba6e83da8c57253861ac35ff1d276991539a"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimath.html",
+      "app_store_url": null,
+      "sha256": "d66eea07240cfd8dbc2d874c543715ca2f69ab3f00ecae3e3fdaa61cded45b68",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -964,9 +1344,28 @@
       "app_store_id": "6776958488",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumimathpro.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6776958488?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "f90e3c88e4abd7f93bfa1ac0d33dd40083da80412206ffaae765d34e12551d2b"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimathpro.html",
+      "app_store_url": null,
+      "sha256": "1621e87bb60bd677a9c20671dd99ae076a7f2004dba5e9828382cba228329131",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -974,9 +1373,28 @@
       "app_store_id": "6779750237",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumimission.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6779750237?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "1f04e5fc74c295b9f01eb314a8e2ce8b2410e948d8215427df16577163b1253e"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimission.html",
+      "app_store_url": null,
+      "sha256": "a77a63064b6224bbc3c592eb98af50db7c08ce1eead80c30e4608d4d35c3054f",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -984,9 +1402,28 @@
       "app_store_id": "6779745474",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumimissionpro.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6779745474?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "2cb17657b342dd20d7383dca94284ad7567c438ca8b18fcd1191151e7d3a4ae0"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimissionpro.html",
+      "app_store_url": null,
+      "sha256": "5650076b8e80acd11e2b93feda48d0b3e70e9d2b8d2bbb8f1bca037a4dba65d2",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -994,9 +1431,28 @@
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/tripplanet.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6787193643?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "5aa24182c817fa8b60086059b340b3b028607975f9d9d273e71b51587ffba8fc"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
+      "app_store_url": null,
+      "sha256": "3eaf64cac69be840f747d4eddd1909faca18d7a23d95f115653d52f1689ced18",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1004,9 +1460,28 @@
       "app_store_id": "6779552704",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/lumiweather.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6779552704?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "6390771c27fb957bdb007f60070a5c2a4c9c52b06953ab34a67ec9227d408a32"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiweather.html",
+      "app_store_url": null,
+      "sha256": "dcdc5df4d3463d2ffd3eb953b4be152cb0036b0d583212cc042da76075e39adf",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1015,8 +1490,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/maskmyfile.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/maskmyfile.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6792850916?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "569bbb8cbc3e9b9d005b485642e8ebd7d0d50c6927aac39ee52cd108282659ad"
+      "app_store_url": null,
+      "sha256": "676e947e8e4f1162fa07477aaa1ce99d805276bb94ddfe59f867eb252b6b9037",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1024,9 +1518,28 @@
       "app_store_id": "6785004775",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/mochi.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6785004775?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "ed9c16ccfa06f69009a6ea348cd0e003462f03029f19498c94ddefea74486604"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/mochi.html",
+      "app_store_url": null,
+      "sha256": "9d52b2d11577b19fa2eb50d996448fa3ec3a1dca38ae483be8b18fae12d32fb2",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1035,8 +1548,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/mochidonestamp.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/mochidonestamp.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6790800323?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "a978010bbe5281ce80c0c539d7c3739754dc5a5e2fcfe46d696a7e9ee2df5661"
+      "app_store_url": null,
+      "sha256": "4b6fed2e70f89d405a583de642930fda704d5e73a4886fdfc6b3dfb4e8e32bcb",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1045,8 +1577,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/moneytag.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/moneytag.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6801956402?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "54ab99e8d0cb13b4dd001abcd032b915648fc72bad138196fdbb9d7986c9e18f"
+      "app_store_url": null,
+      "sha256": "910939e6d78b9a0a5cf706b4fd8fbb96761351e4287010369d0cfde99dedc038",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1055,8 +1606,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/onepageppt.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/onepageppt.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6798814385?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "487368876ce2ca5b8d01b46d33b1d76ca04bc990602b1a0b73f2e9c2749aca80"
+      "app_store_url": null,
+      "sha256": "4f9c826190876792477c52de8cea62ddbbd654bc194bbb8492903f9162facf59",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1064,9 +1634,28 @@
       "app_store_id": "6781808054",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/photocream.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6781808054?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "b9a37535662075d3b12c634e281161ee72e0dca6d0eaf35e6c2f4f6a89450b88"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/photocream.html",
+      "app_store_url": null,
+      "sha256": "a202f4f086f3e9c201aa6b263e51e6b2f45b386ed156dedd741cebc3e96ec9ae",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1074,9 +1663,28 @@
       "app_store_id": "6780223070",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/picclear.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6780223070?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "37d8d4452a06b3db1287ed852ea5291681bcc381018d3db7f2d805b794bf5913"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/picclear.html",
+      "app_store_url": null,
+      "sha256": "19418e11d02f16bba97a5b8344ddbec9536ec310235aa9a438ddbfa74a166a1c",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1085,8 +1693,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/savetag.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/savetag.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6802505528?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "7141d8e6f21a9806b5af59d8d9c9b626eabf7ea4bc46a119d63332ecc5bd8f2b"
+      "app_store_url": null,
+      "sha256": "29cfb00c903a18fe6ae2a8ced6e248c93736fb67c5978db6b1d3f2dca7ca6cab",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1094,9 +1721,28 @@
       "app_store_id": "6779977651",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/scanto.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6779977651?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "b5907ee9a70ed8923ed67587639b9cac5e2c5d794a56a7e21789dd3ac644cebb"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/scanto.html",
+      "app_store_url": null,
+      "sha256": "e60a9f8af787b54452309fbbe9784453ff6d15660c1bba09c1c8dc6b48730df4",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1104,9 +1750,28 @@
       "app_store_id": "6788236641",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/sereno.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6788236641?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "8ba8ee177607110a449b96b1ede6298f7a10f534cd62c12c7bb9bf61cad32041"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/sereno.html",
+      "app_store_url": null,
+      "sha256": "9a9d3d04bd976380038d382be9c824896b2b0d49c73d7383b6b5067bd8ec645b",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1115,8 +1780,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/shotinbox.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/shotinbox.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6802166527?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "16a025186e183feaf1cb020192660698951d671f020424d6d39c9e7a1d5b7930"
+      "app_store_url": null,
+      "sha256": "f171d5fd5c149d5c538a5a4a5f546a6e2df918b2ec179b578dc13d4a8a5fcc09",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1124,9 +1808,28 @@
       "app_store_id": "6780575828",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/snapport.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6780575828?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "2824a92f4fa346c107b1afa46ff57234f7d98b58e971b71e6f4dcb2333f8c543"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/snapport.html",
+      "app_store_url": null,
+      "sha256": "4dc0baf82d5a21c6b7abd3fbf3041ab871e2335623d3b5bae51ec46677be1f79",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1135,8 +1838,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/snapportlite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/snapportlite.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6792856304?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "cc142a0a733fc8a494b5652d85b96c384089ef2912fac298fc9e2cf12e314f26"
+      "app_store_url": null,
+      "sha256": "b4c2144dd679dff35585372dad80eb4009d2e5f0e988e1b23671d6c16d4330f1",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1144,9 +1866,28 @@
       "app_store_id": "6782139553",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/sononote.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6782139553?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "9c85cc2390f663b4af8183208a399b51cb21b5c70c3a180c032ed3398e24f69a"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html",
+      "app_store_url": null,
+      "sha256": "ec70d461f52e9c423e38734537803042a1138362fbe22a88dd6b5d29a5f4e4bb",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1154,9 +1895,28 @@
       "app_store_id": "6791299610",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/tripbeelite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6791299610?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "4b3bfc7f6854f0012707a6738eed330f9461bfd8afbaa61d79cc8f12d5aad3a8"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbeelite.html",
+      "app_store_url": null,
+      "sha256": "aada4e50f0af14b4065eeeacec71e13fc0cfe6535aad3cf472be67d0d2332fc3",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1164,9 +1924,28 @@
       "app_store_id": "6787754435",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/tripbee.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-trip-itinerary-planner-app-for-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6787754435?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "025dde1b310fb588795aa170f97a9f25704145da8ffa3600d3bd62e21df1dae3"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbee.html",
+      "app_store_url": null,
+      "sha256": "ba991a9afd42a6fa47e667d0e483e55e5a77bc82a146cb914c4de94a0ce45872",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1174,9 +1953,28 @@
       "app_store_id": "6782275018",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/unblurry.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6782275018?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "5a891cddc81ac709427189e296b991b797bb0da27d0f6e5231bcaf099de08fb8"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/unblurry.html",
+      "app_store_url": null,
+      "sha256": "9dc2fb88ffe57bdbf457935460116a9f5ffe2f251a2833f8bff3d7b0ceaaeda1",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1185,8 +1983,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/wifiaid.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6790467886?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "d2139ff3a31fab06e16b0e6fc75d99ecdb13ed3ab327588c0375ca5055d7e902"
+      "app_store_url": null,
+      "sha256": "05cedbefb8705b8ea0fe5494cddfed17c85dbb6d7ba71299d17557e28e804d50",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1195,8 +2012,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/wifiaidlite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaidlite.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6793414462?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "77a2bfbd32d910c2f130af4aabbea75766c2ac1a58be3ca785990c511c06fdbe"
+      "app_store_url": null,
+      "sha256": "59960f7fb4b036f77e8bad6116ed0d17f00f0e4a9e0b6bd625427f43601b729c",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1205,8 +2041,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/wordmatelite.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmatelite.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6797601720?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "9fb28e7f6caf66f194db877e07478c44cfd6ba889c0aededb596c88541885556"
+      "app_store_url": null,
+      "sha256": "d28ed203cf1ac491cb1e17ec6b3d11fcd532b65d539fdee2af53a7885532fd4c",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1214,9 +2069,28 @@
       "app_store_id": "6789917808",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/wordmate.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6789917808?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "a37de80eba27fa369cd5287648f2e66d20abaec0630073b059193bd03a0de789"
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmate.html",
+      "app_store_url": null,
+      "sha256": "c3fb2b77a1725b2a94eea6c2af747cee5647c286e6840246056df3a0bae23e8d",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "bn-BD",
@@ -1225,8 +2099,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/zipbox.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html",
-      "app_store_url": "https://apps.apple.com/bd/app/id6806776579?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "31cab17fae4ab9dba1c507606014bb8078f622d0ce3734a012791125f4e26d72"
+      "app_store_url": null,
+      "sha256": "5480e8eeef7c163e3485d7c063fb54d85942841fd1b8acdcb8d28eb6a86c8a81",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "ca",
@@ -8046,7 +8939,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_gu_in&mt=8",
-      "sha256": "ef28d2f9fc48ee6a9454d4ca513333a21b14f018a84700b8ada97a9ac360c70f"
+      "sha256": "a94c68be2d73530f63da96ad06d0ab7632388b5c0713882080e2fa01ed6d073b"
     },
     {
       "locale": "gu-IN",
@@ -8986,7 +9879,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_hi&mt=8",
-      "sha256": "0ad7079550fd18bfbac42eccececa66ee27efab0e150d50340228939bf09c85d"
+      "sha256": "b95c17831db86cafd55c3d7a886f9ce06be6af614b6b1879dfdd8472f980b08a"
     },
     {
       "locale": "hi",
@@ -11806,7 +12699,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_kn_in&mt=8",
-      "sha256": "9af8dac03af4932186e238cb176fce5e609f37df5b3caddfb5ba26f56e189e19"
+      "sha256": "8914986a9262bd05052d35cee5e0ac01580dcf33842ba9ed6bbd1d7b5e3869c9"
     },
     {
       "locale": "kn-IN",
@@ -12746,7 +13639,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_ml_in&mt=8",
-      "sha256": "e89ca8f6d14803584cc9a753ac8fdbca7bc1b283e9f95939330571482819111b"
+      "sha256": "e7fa294212cc4bc922f7679ca56bee73e697ae0028f9ac7d15dbc2bc8f2498f8"
     },
     {
       "locale": "ml-IN",
@@ -13216,7 +14109,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_mr_in&mt=8",
-      "sha256": "1858042f48cb107d946033bc2ba3667d194629d26e37d4984f5bf224fcbf918e"
+      "sha256": "f4de9c956db0d2c12b499d43f2268fa6764a057277e55355ccef7838136aba55"
     },
     {
       "locale": "mr-IN",
@@ -15096,7 +15989,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_or_in&mt=8",
-      "sha256": "97cf92131c643ed609177f5b67bffe776663435ae63ce9564ea298c9ac6a6587"
+      "sha256": "b81807911b40fa18fec0955059fb02df34cd224b653f9786ebc8b30c4b81ebff"
     },
     {
       "locale": "or-IN",
@@ -15566,7 +16459,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_pa_in&mt=8",
-      "sha256": "f7abc48206bf17d157b59cb92c86402e94657c39d8c720bf141cac98cae54f06"
+      "sha256": "9a0ea8237244aa1daed95d5e0931d1e78688d5f5df23b41dd4a4664030554fa9"
     },
     {
       "locale": "pa-IN",
@@ -19796,7 +20689,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_ta_in&mt=8",
-      "sha256": "309ca99265e5aa00f42d50bd220df6bf5fbca6af3ceea3851884212569bb8f28"
+      "sha256": "2789b28d005f5f0f31aa4c0e695e56166245f898e046ab72fa0d9cf45bfa31e2"
     },
     {
       "locale": "ta-IN",
@@ -20266,7 +21159,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_visual_te_in&mt=8",
-      "sha256": "f8cbe8011673e3b6c9cbae7a30e9991208fcec96e6fb9991a4f3cc48e4f85188"
+      "sha256": "f74165ac55796677e47e0797427c95af3b2d89f937829c106f788d4e1bda2e9c"
     },
     {
       "locale": "te-IN",

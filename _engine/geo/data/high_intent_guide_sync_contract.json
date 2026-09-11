@@ -1,10 +1,10 @@
 {
-  "contract_digest": "0fa45c7bb9719f5a28d61a3d51746f474e39b741b261f56d55544838b0ac9272",
+  "contract_digest": "1a62c46793a284e3f85bc600790670890a5ccb6f8c182e0aadc16f1c08588ca1",
   "copy_mode": "byte_for_byte",
   "files": [
     {
       "engine_relative_path": "high_intent_decision_routes.py",
-      "sha256": "8adf4c8c9c6f724e1ecffcd374718b9c735a0915caf04e9c2de5c5e9458e41ad",
+      "sha256": "ada665cc8238cd07ebbc35133f4f035c6bb0a1eae1d3f3accdd689b26086089d",
       "source_path": "geo/high_intent_decision_routes.py",
       "target_path": "_engine/geo/high_intent_decision_routes.py"
     },
@@ -28,9 +28,27 @@
     },
     {
       "engine_relative_path": "gen_store_attribution.py",
-      "sha256": "02bc644000406e82764bdd9c6a02d986a5a08d8d4c34bfac5536b47a46c6e4a4",
+      "sha256": "104092dbfbc0c09330adeba9cf44b0cc6226804a6d3c9a97858a4730e53c6363",
       "source_path": "geo/gen_store_attribution.py",
       "target_path": "_engine/geo/gen_store_attribution.py"
+    },
+    {
+      "engine_relative_path": "market_availability.py",
+      "sha256": "cf1544c5c96df0a8989c1ca403a3fa957f75623ea301b46333582a0dec20cef8",
+      "source_path": "geo/market_availability.py",
+      "target_path": "_engine/geo/market_availability.py"
+    },
+    {
+      "engine_relative_path": "market_surface_policy.py",
+      "sha256": "38f2c65c642368cc16248a938376ef4025bf67287a037848abbf85c3751ff0d7",
+      "source_path": "geo/market_surface_policy.py",
+      "target_path": "_engine/geo/market_surface_policy.py"
+    },
+    {
+      "engine_relative_path": "gen_market_availability.py",
+      "sha256": "865f2487891496a7e199a2d4c8621af736827b571fbabfbb26e0678a9610bd44",
+      "source_path": "geo/gen_market_availability.py",
+      "target_path": "_engine/geo/gen_market_availability.py"
     },
     {
       "engine_relative_path": "official_locales.py",

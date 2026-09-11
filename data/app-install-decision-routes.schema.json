@@ -514,12 +514,26 @@
           "pattern": "^[0-9]{9,12}$"
         },
         "canonical_app_store_url": {
-          "type": "string",
-          "format": "uri"
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "app_store_url": {
-          "type": "string",
-          "format": "uri"
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "app_store_cta_label": {
           "type": "string",
@@ -594,8 +608,79 @@
         },
         "verified_live": {
           "const": true
+        },
+        "market_availability": {
+          "enum": [
+            {
+              "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+              "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+              "evidence": {
+                "source_url": "https://support.apple.com/en-us/118205",
+                "observed_at": "2026-09-12",
+                "country": "BD",
+                "apple_media_services_markets": 174,
+                "country_listed": false,
+                "lookup_app_results": 0,
+                "lookup_control_results": 0,
+                "redirect_market": "US"
+              },
+              "value": "N/A",
+              "content_retained": true,
+              "publishable": false,
+              "facts_allowed": false,
+              "outbox_count": 0
+            }
+          ]
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "locale": {
+                "enum": [
+                  "bn-BD"
+                ]
+              }
+            },
+            "required": [
+              "locale"
+            ]
+          },
+          "then": {
+            "required": [
+              "market_availability",
+              "canonical_app_store_url",
+              "app_store_url"
+            ],
+            "properties": {
+              "canonical_app_store_url": {
+                "type": "null"
+              },
+              "app_store_url": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "not": {
+              "required": [
+                "market_availability"
+              ]
+            },
+            "properties": {
+              "canonical_app_store_url": {
+                "type": "string",
+                "minLength": 1
+              },
+              "app_store_url": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
     }
   }
 }

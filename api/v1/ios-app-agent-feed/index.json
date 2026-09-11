@@ -18,13 +18,33 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2342,
+  "row_count": 2295,
   "app_count": 47,
-  "locale_count": 50,
+  "locale_count": 49,
   "official_locale_count": 50,
+  "blocked_markets": {
+    "bn-BD": {
+      "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+      "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+      "evidence": {
+        "source_url": "https://support.apple.com/en-us/118205",
+        "observed_at": "2026-09-12",
+        "country": "BD",
+        "apple_media_services_markets": 174,
+        "country_listed": false,
+        "lookup_app_results": 0,
+        "lookup_control_results": 0,
+        "redirect_market": "US"
+      },
+      "value": "N/A",
+      "content_retained": true,
+      "publishable": false,
+      "facts_allowed": false,
+      "outbox_count": 0
+    }
+  },
   "locales": [
     "ar-SA",
-    "bn-BD",
     "ca",
     "cs",
     "da",
@@ -151,5 +171,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:07ed03d03eea846058a6742989b9aa18896cbf4174e401fc8cf6cb3adeaeb9f0"
+  "content_digest": "sha256:83da137e73cc9480fb7ddac9e3abd75c8128028c31077d32fc642efe9b688ae3"
 }

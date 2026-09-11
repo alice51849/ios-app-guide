@@ -9,6 +9,7 @@ import email.utils
 import hashlib
 import html
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import re
@@ -359,13 +360,10 @@ def _group_records(
         record_ids.add(record_id)
         page_urls.add(page_url)
         app_id = _single_line(record.get("app_store_id"), "App Store ID")
-        app_store_url = _single_line(
-            record.get("app_store_url"),
-            "App Store URL",
-        )
-        validated_app_store_url(
-            app_store_url, app_id, expected_locale=locale, require_campaign=True
-        )
+        if market.validate_record(record, url_fields=("app_store_url",)):
+            validated_app_store_url(
+                record["app_store_url"], app_id, expected_locale=locale, require_campaign=True
+            )
         if (
             not app_id.isdigit()
             or record.get("verified_live") is not True
@@ -432,10 +430,10 @@ def render_atom(
     previews: dict[str, dict[str, Any]],
 ) -> str:
     e = html.escape
-    updated = max(
+    updated = max([
         _timestamp(modified),
         *(state["date_modified"] for state in item_state.values()),
-    )
+    ])
     urls = feed_urls(locale)
     hub_links = "".join(
         f'  <link rel="hub" href="{e(hub, quote=True)}"/>\n'
@@ -499,10 +497,10 @@ def render_rss(
     previews: dict[str, dict[str, Any]],
 ) -> str:
     e = html.escape
-    feed_updated = max(
+    feed_updated = max([
         _timestamp(modified),
         *(state["date_modified"] for state in item_state.values()),
-    )
+    ])
     published = _rss_item_timestamp(feed_updated)
     urls = feed_urls(locale)
     items = []
@@ -667,6 +665,8 @@ def build(
     )
     for locale in OFFICIAL_LOCALES:
         context = _context(contexts, locale)
+        if market.is_unavailable(locale):
+            grouped[locale] = []
         state = _item_state(
             pages / feed_relative(locale, "json_feed"),
             grouped[locale],
@@ -700,6 +700,16 @@ def build(
                 previews,
             ),
         }
+        if market.is_unavailable(locale):
+            payload = json.loads(rendered["json_feed"])
+            payload["_market_availability"] = market.record_fields(locale)["market_availability"]
+            rendered["json_feed"] = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+            for format_name in ("atom", "rss"):
+                document = ET.fromstring(rendered[format_name])
+                parent = document.find("channel") if format_name == "rss" else document
+                availability = ET.SubElement(parent, "{" + SITE + "/market-availability}availability")
+                availability.text = json.dumps(market.record_fields(locale)["market_availability"], ensure_ascii=False)
+                rendered[format_name] = ET.tostring(document, encoding="unicode") + "\n"
         ET.fromstring(rendered["atom"])
         ET.fromstring(rendered["rss"])
         json.loads(rendered["json_feed"])

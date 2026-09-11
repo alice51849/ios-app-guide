@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z തുറക്കുക — പരസ്യമില്ല, ഉള്ളിൽ നോക്കാം | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ml-IN/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

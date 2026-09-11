@@ -17,6 +17,8 @@ from datetime import datetime, timezone
 import hashlib
 import html
 import json
+import market_availability as market
+import market_surface_policy
 import re
 import sys
 from pathlib import Path
@@ -78,13 +80,7 @@ def repair_text(source: str, locale: str | None, app_ids: set[str]) -> str:
     if locale not in INDIC_LOCALES:
         return source
     if locale == "bn-BD":
-        source = STORE_URL.sub(
-            lambda match: (
-                f"https://apps.apple.com/{LOCALE_STOREFRONTS[locale]}/app/id{match['id']}"
-                if match["id"] in app_ids else match.group()
-            ),
-            source,
-        )
+        source = market_surface_policy.enforce_html(source, locale) if "<html" in source else market_surface_policy.STORE.sub("", source)
     for alias in TRIP_PLANET_ALIASES:
         source = source.replace(alias, TRIP_PLANET_NAME)
     for truncated, complete in FULL_HEADLINES.items():
@@ -136,6 +132,9 @@ def repair_document(value, app_ids: set[str], locale: str | None = None):
                 row["app_name"].casefold(),
                 row["app_key"],
             ))
+        if market.is_unavailable(locale):
+            from gen_market_availability import rewrite_document
+            repaired = rewrite_document(repaired, locale)
         return repaired
     if isinstance(value, str):
         return repair_text(value, locale, app_ids)

@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ — ବିଜ୍ଞାପନ ନାହିଁ, ଆଗେ ଦେଖନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/or-IN/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

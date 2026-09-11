@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import market_availability as market
 import io
 from pathlib import Path
 import re
@@ -374,6 +375,8 @@ def render_qr_card(
     if "</head>" not in source or "</body>" not in source:
         raise ValueError(f"App Store QR page is missing head or body: {path}")
     cleaned = HEAD_BLOCK_RE.sub("\n", CARD_BLOCK_RE.sub("\n", source))
+    if market.is_unavailable(locale):
+        return cleaned
     head_index = cleaned.index("</head>")
     for anchor in (DECISION_STYLE_ANCHOR, FEED_DISCOVERY_ANCHOR):
         anchor_index = cleaned.find(anchor)
@@ -518,8 +521,12 @@ def generate(
     availability = load_storefront_availability(pages) or None
     provider = resolve_provider_token() or None
     for path, app_id in sorted(qr_targets.items()):
+        if market.is_unavailable(page_locale(path, pages)):
+            continue
         source = path.read_text(encoding="utf-8")
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
+        if cta is None:
+            raise ValueError(f"App Store QR page has no direct app link: {path}")
         # Hash the link the stamper will actually leave on the page (storefront
         # aligned to the page locale, page campaign applied), never the
         # pre-stamp CTA, otherwise gen_store_attribution's QR desync gate
@@ -537,7 +544,8 @@ def generate(
         prepared[path] = (app_id, *cta, source)
 
     app_ids = {app_id for app_id, _, _, _ in prepared.values()}
-    if len(app_ids) != app_count:
+    available_ids = {app_id for path, app_id in qr_targets.items() if not market.is_unavailable(page_locale(path, pages))}
+    if app_ids != available_ids:
         raise ValueError(
             f"App Store QR coverage mismatch: {len(app_ids)}/{app_count} apps"
         )

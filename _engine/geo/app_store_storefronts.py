@@ -524,9 +524,11 @@ def verified_app_store_url(
     value: str,
     locale: str,
     availability: dict[str, frozenset[str]],
-) -> str:
+) -> str | None:
     """Choose a declared route without inventing availability or price facts."""
     localized = localized_app_store_url(value, locale)
+    if market_availability.is_unavailable(locale):
+        return None
     app_id = APP_STORE_URL_RE.fullmatch(value.strip()).group("app_id")
     country = LOCALE_STOREFRONTS[locale]
     if (

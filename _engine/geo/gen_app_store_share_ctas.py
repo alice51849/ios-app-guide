@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import html
+import market_availability as market
+import market_surface_policy
 import json
 from pathlib import Path
 import re
@@ -269,6 +271,9 @@ def render_share(
 ) -> str:
     if "</body>" not in source:
         raise ValueError(f"App Store share page has no closing body: {path}")
+    locale = market_surface_policy.document_locale(source, path)
+    if market.is_unavailable(locale):
+        return market_surface_policy.enforce_html(BLOCK_RE.sub("\n", source), locale, app_id=app_id)
     if store_url is None:
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
         if cta is None:

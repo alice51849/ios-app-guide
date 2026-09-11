@@ -160,6 +160,12 @@ def visible(node: Element) -> bool:
 
 
 def is_primary_action(node: Element) -> bool:
+    if (
+        node.tag == "p" and "market-availability" in node.classes and visible(node)
+        and node.attrs.get("data-market-state") == "MARKET_UNAVAILABLE_OR_UNVERIFIED"
+        and node.attrs.get("data-market-reason") == "MARKET_NOT_IN_APPLE_MEDIA_SERVICES"
+    ):
+        return True
     return (
         node.tag in {"a", "button"} and visible(node)
         and "ghost" not in node.classes
@@ -218,7 +224,12 @@ def insert_resource(source: str, block: str, marker: str, *, index: bool = False
         and (node.parent is scope or node.classes & {"lead", "p-summary", "entry-summary"})
     )
     if not index:
-        action = next(
+        market_notice = next(
+            (node for node in document.nodes if "market-availability" in node.classes
+             and node.start >= heading.end and node.within(scope) and is_primary_action(node)),
+            None,
+        )
+        action = market_notice or next(
             (node for node in document.nodes
              if heading.end <= node.start < boundary and node.within(scope) and is_primary_action(node)),
             None,

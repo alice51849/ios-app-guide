@@ -16,6 +16,7 @@
 import argparse
 import html
 import json
+import market_availability as market
 import os
 from pathlib import Path
 import re
@@ -1110,9 +1111,10 @@ def _localized_app_record(key, locale, pages, availability):
             build_pages_i18n.pricing_text_for(key, locale)
         ),
         "guide": f"{SITE}/{locale}/{key}.html",
-        "store": _catalog_store_url(
+        "store": None if market.is_unavailable(locale) else _catalog_store_url(
             verified_app_store_url(canonical, locale, availability)
         ),
+        **market.record_fields(locale),
     }
 
 
@@ -1209,10 +1211,12 @@ def build_localized_llms(locale, live_keys, pages=None):
                 f"{record['subtitle']}",
                 f"  - {record['promotional']}",
                 f"  - {ui['price']}: {record['pricing']}",
-                f"  - App Store: {record['store']}",
+                f"  - App Store: {market.note(locale) if market.is_unavailable(locale) else record['store']}",
             )
         )
     lines.append("")
+    if market.is_unavailable(locale):
+        lines.append("market_availability: " + json.dumps(market.record_fields(locale)["market_availability"], ensure_ascii=False))
     return "\n".join(lines)
 
 

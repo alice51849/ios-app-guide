@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-11",
-  "content_digest": "e0dccfb562b5d31cc80611621764f9f843ecea25ad20a2742c166fee39eac68b",
+  "content_digest": "266ac807a366a3a713ff9f5a251ae8ee35f9280a6aa44c2cc44340103cf9d3fb",
   "locale": "hr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1158,43 +1158,6 @@
       }
     },
     {
-      "key": "tripplanet",
-      "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet: Putovanja",
-      "summary": "Pretvorite svako obiteljsko putovanje u malu svemirsku avanturu.",
-      "category": "kids",
-      "search_terms": [
-        "obiteljsko putovanje",
-        "planer putovanja",
-        "cestovno putovanje",
-        "časopis",
-        "avantura",
-        "misije",
-        "nagrade",
-        "odmor"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": true,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/tripplanet.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Besplatno",
-        "storefront_url": "https://apps.apple.com/hr/app/id6787193643"
-      }
-    },
-    {
       "key": "lumiweather",
       "app_store_id": "6779552704",
       "name": "Lumi Weather: Obitelj",
@@ -1881,6 +1844,43 @@
         "currency": "EUR",
         "formatted_price": "Besplatno",
         "storefront_url": "https://apps.apple.com/hr/app/id6782139553"
+      }
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Lumi Trip Planet: Putovanja",
+      "summary": "Pretvorite svako obiteljsko putovanje u malu svemirsku avanturu.",
+      "category": "kids",
+      "search_terms": [
+        "obiteljsko putovanje",
+        "planer putovanja",
+        "cestovno putovanje",
+        "časopis",
+        "avantura",
+        "misije",
+        "nagrade",
+        "odmor"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/tripplanet.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6787193643"
       }
     },
     {

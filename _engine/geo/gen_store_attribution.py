@@ -33,6 +33,8 @@ import argparse
 import hashlib
 import html
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -321,14 +323,19 @@ def align_storefront(url: str, locale: str | None, availability=None) -> str:
 def final_store_url(
     url: str, token: str, provider: str | None, *,
     locale: str | None = None, availability=None, app_id: str | None = None,
-) -> str:
+) -> str | None:
     """The exact link the stamper will leave on a page: storefront aligned to
     the page locale, then the page campaign (protected campaigns kept).
     Generators that hash a link (QR cards) must mint from this, never from
     the pre-stamp CTA, or the QR desync gate rejects the whole tree."""
     if is_clean_app_store_developer_url(url):
-        return url
+        return None if market.is_unavailable(locale) else url
     url = align_storefront(url, locale, availability)
+    if market.is_unavailable(locale):
+        from app_store_storefronts import validated_app_store_url
+        validated_app_store_url(url, expected_app_id=app_id)
+        storefront_locale_for_url(url, locale)
+        return None
     existing = existing_campaign(url)
     campaign = existing if existing in PROTECTED_CAMPAIGNS else token
     return required_campaign_app_store_url(
@@ -368,6 +375,9 @@ def rewrite(
             if candidate in LOCALE_STOREFRONTS:
                 locale = candidate
     changes = 0
+    if market.is_unavailable(locale):
+        updated = market_surface_policy.enforce_html(text, locale)
+        return updated, int(updated != text)
 
     def retarget(url: str, local=locale, app_id=None) -> str:
         return final_store_url(
@@ -559,7 +569,7 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
     pending = []
     for rel, path in iter_html(pages):
         text = path.read_text(encoding="utf-8")
-        if not any(marker in text for marker in (
+        if not market.is_unavailable(locale_of(rel)) and not any(marker in text for marker in (
             "apps.apple.com", "apple-itunes-app", "data-app-store-url",
             "app_store_url", "app-store-qr-card",
         )):
@@ -582,7 +592,7 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
             # that gen_mobile_app_identity emits clean; stamp those with the
             # story campaign so the page has exactly one attributable token.
             # Publisher visuals mint per-locale atomic campaigns and stay untouched.
-            updated, changes = (sanitized, 0) if protected and token is None else rewrite(
+            updated, changes = (sanitized, 0) if protected and token is None and not market.is_unavailable(locale_of(rel)) else rewrite(
                 sanitized, token, provider, locale=locale_of(rel), availability=availability
             )
             desync = qr_card_desync(updated)
@@ -624,7 +634,7 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         try:
             sanitized = sanitize_nonlive_html(text, live_ids)
             token = page_token(rel, text)
-            if PROTECTED_PARTS.intersection(Path(rel).parts) and token is None:
+            if PROTECTED_PARTS.intersection(Path(rel).parts) and token is None and not market.is_unavailable(locale_of(rel)):
                 updated = sanitized
             else:
                 updated, _ = rewrite(
@@ -634,6 +644,10 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         except ValueError as error:
             raise ValueError(f"{rel}: {error}") from error
         path.write_text(updated, encoding="utf-8")
+    from gen_market_availability import generate as enforce_markets
+    market_report = enforce_markets(pages, check=check)
+    if check and market_report["changed"]:
+        raise ValueError(f"Unmaterialized unavailable-market surfaces: {market_report['paths'][:5]}")
     return {
         "provider_token_configured": bool(provider),
         "pages_with_store_anchors": files_with_links,

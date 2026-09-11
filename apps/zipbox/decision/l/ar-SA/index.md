@@ -2,7 +2,7 @@
 title: "Zipbox: فك ضغط RAR وZIP و7z — استخراج ومعاينة بلا إعلانات | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ar-SA/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

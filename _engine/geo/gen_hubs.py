@@ -8,6 +8,8 @@
 import html
 import hashlib
 import json
+import market_availability as market
+import market_surface_policy
 import os
 import re
 import subprocess
@@ -565,7 +567,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
     # afterwards, so a token minted here that the attribution pass disagrees
     # with silently makes the QR code scan to a different campaign than the
     # button beside it.  Mint the final token from the same authority instead.
-    store_href = campaign_app_store_url(
+    store_href = None if market.is_unavailable(locale) else campaign_app_store_url(
         store_url,
         gen_store_attribution.campaign_token(f"{locale}/hubs/{key}.html"),
     )
@@ -625,7 +627,11 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
         },
     }
     dir_attr = ' dir="rtl"' if locale in RTL_LOCALES else ""
-    return f'''<!DOCTYPE html>
+    store_action = (
+        market.note_html(locale, name) if store_href is None else
+        f'<a class="cta" href="{e(store_href)}" rel="nofollow noopener">{e(store_label)}</a>'
+    )
+    document = f'''<!DOCTYPE html>
 <html lang="{locale}"{dir_attr}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
@@ -640,11 +646,12 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{e(guide_url)}">{e(guide_label)}</a></div></header>
 <main class="wrap">
-<section class="hero">{_preview_html(key, store_href, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p><a class="cta" href="{e(store_href)}" rel="nofollow noopener">{e(store_label)}</a></section>
+<section class="hero">{_preview_html(key, store_href or guide_url, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p>{store_action}</section>
 <section class="card"><h2>{e(section_label)}</h2><div class="ll">{resources_html}</div></section>{searched_as}
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
 </body></html>'''
+    return market_surface_policy.enforce_html(document, locale)
 
 
 def build_hub(key):

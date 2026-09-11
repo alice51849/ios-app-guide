@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z अनज़िप — बिना विज्ञापन, अंदर झाँकिए | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/hi/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

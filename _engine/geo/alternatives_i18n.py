@@ -13,6 +13,8 @@ import hashlib
 import html
 from html.parser import HTMLParser
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path, PurePosixPath
 import re
@@ -425,7 +427,8 @@ def load_catalog(
         guide_prefix = f"{site}/{locale}/"
         if not str(raw["canonical_guide_url"]).startswith(guide_prefix):
             raise ValueError(f"Wrong localized guide canonical: {identity}")
-        _validated_campaign_url(raw["app_store_url"], app_id)
+        if market.validate_record(raw):
+            _validated_campaign_url(raw["app_store_url"], app_id)
         records[identity] = raw
 
     expected = {
@@ -627,6 +630,7 @@ def render_page(
     alternatives_label: str,
     site: str,
 ) -> str:
+    available = market.validate_record(record)
     canonical = f"{site}/{locale}/alternatives/{route['slug']}.html"
     title = (
         f"{route['competitor_name']} · {alternatives_label}: "
@@ -656,7 +660,17 @@ def render_page(
         separators=(",", ":"),
     ).replace("</", "<\\/")
     direction = ' dir="rtl"' if locale in RTL_LOCALES else ""
-    return f"""<!DOCTYPE html>
+    if not available:
+        schema.pop("sameAs")
+        schema.pop("installUrl")
+        schema.update(market.record_fields(locale))
+        schema_text = json.dumps(schema, ensure_ascii=False, sort_keys=True, separators=(",", ":")).replace("</", "<\\/")
+    store_block = (
+        f'<p><a class="cta" href="{html.escape(record["app_store_url"], quote=True)}" '
+        f'rel="nofollow noopener">{html.escape(record["app_store_cta_label"])}</a></p>'
+        if available else market.note_html(locale, record["app_name"])
+    )
+    document = f"""<!DOCTYPE html>
 <html lang="{html.escape(locale)}"{direction}>
 <head>
 <meta charset="utf-8">
@@ -696,7 +710,7 @@ h1{{font-size:clamp(2rem,6vw,3.75rem);line-height:1.08;margin:.25em 0 .55em}}
 <div class="facts">
 <div class="fact"><strong>{html.escape(ui["Purchase model"])}</strong>{html.escape(purchase_label)}</div>
 </div>
-<p><a class="cta" href="{html.escape(record["app_store_url"], quote=True)}" rel="nofollow noopener">{html.escape(record["app_store_cta_label"])}</a></p>
+{store_block}
 <p><a href="{html.escape(record["canonical_guide_url"], quote=True)}">{html.escape(ui["Guide"])}</a></p>
 <p class="disclosure">{html.escape(record["publisher_disclosure"])}</p>
 <script type="application/json" data-lumi-verified-capabilities>{capabilities}</script>
@@ -704,6 +718,7 @@ h1{{font-size:clamp(2rem,6vw,3.75rem);line-height:1.08;margin:.25em 0 .55em}}
 </body>
 </html>
 """
+    return market_surface_policy.enforce_html(document, locale)
 
 
 def render_sitemap(urls: Iterable[str]) -> str:

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import base64
 import json
+from market_contract_assertions import assert_blocked_record
 import os
 from pathlib import Path
 import re
@@ -436,6 +437,16 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 r"(?:[a-z]{2}/)?app/id[0-9]{9,12}(?:\?[^)\s]+)?",
                 source,
             )
+            if locale == "bn-BD":
+                self.assertEqual(len(urls), 0)
+                self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
+                self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", source)
+                self.assertIn("Apple App Store এখনো বাংলাদেশে", source)
+                for (language, app_id), record in source_by_pair.items():
+                    if language == locale:
+                        assert_blocked_record(self, record)
+                        self.assertIn(record["canonical_guide_url"], source)
+                continue
             self.assertEqual(catalog.EXPECTED_APP_COUNT, len(urls))
             for url in urls:
                 parsed = urlparse(url)
@@ -452,12 +463,12 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 discovery.validated_app_store_url(url, app_id)
                 generic += parsed.path == f"/app/id{app_id}"
                 seen_pairs.add((locale, app_id))
-        self.assertEqual(catalog.EXPECTED_RECORD_COUNT, len(seen_pairs))
+        self.assertEqual(catalog.EXPECTED_APP_COUNT * 49, len(seen_pairs))
         self.assertEqual(
             sum(
                 urlparse(record["app_store_url"]).path
                 == f"/app/id{record['app_store_id']}"
-                for record in self.records
+                for record in self.records if record["locale"] != "bn-BD"
             ),
             generic,
         )

@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import sys
@@ -83,6 +85,13 @@ def generate(
 
     for path, app_id in sorted(targets.items()):
         source = path.read_text(encoding="utf-8")
+        locale = gen_app_store_qr_ctas.page_locale(path, pages)
+        if market.is_unavailable(locale):
+            cleaned = market_surface_policy.enforce_html(source, locale, app_id=app_id)
+            if cleaned != source:
+                path.write_text(cleaned, encoding="utf-8")
+                smart_changed += 1
+            continue
         current = gen_smart_app_banners.render_banner(
             path,
             source,
@@ -183,9 +192,9 @@ def generate(
     expected_ids = {
         app_id
         for path, app_id in conversion_targets.items()
-        if path in guide_pages
+        if path in guide_pages and not market.is_unavailable(gen_app_store_qr_ctas.page_locale(path, pages))
     }
-    if installed_ids != expected_ids or len(installed_ids) != inventory.app_count:
+    if installed_ids != expected_ids:
         missing = ", ".join(sorted(expected_ids - installed_ids)) or "unknown"
         raise ValueError(f"Live apps have no conversion surface: {missing}")
     qr_changed += gen_app_store_qr_ctas.sync_assets(pages, qr_assets)

@@ -9,6 +9,7 @@ import html
 import importlib.util
 import io
 import json
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import re
@@ -717,24 +718,20 @@ class PublisherIntentOutputTests(unittest.TestCase):
             per_app[key].add(locale)
             app_id = expected_ids[key]
             self.assertEqual(app_id, record["app_store_id"])
-            self.assertEqual(
-                f"https://apps.apple.com/{'bd/' if locale == 'bn-BD' else ''}app/id{app_id}",
-                record["canonical_app_store_url"],
-            )
-            parsed = urlparse(record["app_store_url"])
-            self.assertEqual("apps.apple.com", parsed.netloc)
-            expected_store = catalog.verified_app_store_url(
-                f"https://apps.apple.com/app/id{app_id}",
-                locale,
-                self.availability,
-            )
-            self.assertEqual(urlparse(expected_store).path, parsed.path)
-            # Campaign attribution is stamped when a provider token exists;
-            # the validator still rejects any partial or foreign query.
-            self.assertEqual(
-                record["app_store_url"],
-                validated_app_store_url(record["app_store_url"]),
-            )
+            if locale == "bn-BD":
+                assert_blocked_record(self, record)
+            else:
+                self.assertEqual(
+                    f"https://apps.apple.com/app/id{app_id}",
+                    record["canonical_app_store_url"],
+                )
+                parsed = urlparse(record["app_store_url"])
+                self.assertEqual("apps.apple.com", parsed.netloc)
+                expected_store = catalog.verified_app_store_url(
+                    f"https://apps.apple.com/app/id{app_id}", locale, self.availability,
+                )
+                self.assertEqual(urlparse(expected_store).path, parsed.path)
+                self.assertEqual(record["app_store_url"], validated_app_store_url(record["app_store_url"]))
             self.assertFalse(record["measured_search_volume"])
             self.assertFalse(record["is_ranking"])
             self.assertTrue(record["verified_live"])
@@ -821,7 +818,11 @@ class PublisherIntentOutputTests(unittest.TestCase):
                     if isinstance(source[field], bool)
                     else str(source[field])
                 )
+                if source[field] is None:
+                    expected = ""
                 self.assertEqual(expected, exported[field])
+            if source["locale"] == "bn-BD":
+                self.assertEqual(json.loads(exported["market_availability"]), source["market_availability"])
 
     def test_schema_declares_non_ranking_non_measured_contract(self) -> None:
         from jsonschema import Draft202012Validator, FormatChecker
@@ -1028,7 +1029,12 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 r'(?:[a-z]{2}/)?app/id[0-9]+(?:\?[^"]*)?)"',
                 table_body.group(1),
             )
-            self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))
+            if locale == "bn-BD":
+                assert_blocked_page(self, source)
+                self.assertEqual(len(store_urls), 0)
+                self.assertEqual(table_body.group(1).count(">N/A</td>"), catalog.EXPECTED_APP_COUNT)
+            else:
+                self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))
             for url in store_urls:
                 decoded = html.unescape(url)
                 self.assertEqual(decoded, validated_app_store_url(decoded))

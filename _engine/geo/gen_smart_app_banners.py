@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import market_availability as market
+import market_surface_policy
 from dataclasses import dataclass
 import os
 from pathlib import Path
@@ -242,6 +244,9 @@ def render_banner(path: Path, source: str, app_id: str) -> str:
     if "</head>" not in source:
         raise ValueError(f"Smart App Banner guide has no closing head: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
+    locale = market_surface_policy.document_locale(source, path)
+    if market.is_unavailable(locale):
+        return market_surface_policy.enforce_html(cleaned, locale, app_id=app_id)
     if FREE_RESOURCE_FIRST_META in cleaned:
         return cleaned
     linkset_match = gen_linkset.DISCOVERY_RE.search(cleaned)

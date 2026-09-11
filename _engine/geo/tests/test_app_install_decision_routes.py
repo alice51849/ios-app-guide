@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import sys
@@ -135,6 +136,16 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 ),
                 record["locale_index_url"],
             )
+            if record["locale"] == "bn-BD":
+                assert_blocked_record(self, record)
+                self.assertIsNone(record["storefront_facts"])
+                self.assertTrue(record["badge_labels"])
+                self.assertEqual(len(record["badge_labels"]), len(set(record["badge_labels"])))
+                structured = app_install_decision_routes._structured_data(record)
+                self.assertNotIn("offers", structured["@graph"][0])
+                self.assertNotIn("aggregateRating", structured["@graph"][0])
+                self.assertNotIn("apps.apple.com", json.dumps(structured))
+                continue
             app_store_storefronts.validated_app_store_url(
                 record["app_store_url"],
                 expected_app_id=record["app_store_id"],
@@ -267,10 +278,14 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 f'href="{app_install_decision_routes.decision_markdown_url(record["app_key"], record["locale"])}">',
                 source,
             )
-            self.assertIn(record["app_store_url"], source)
+            if record["locale"] == "bn-BD":
+                assert_blocked_page(self, source)
+            else:
+                self.assertIn(record["app_store_url"], source)
             self.assertIn(record["canonical_guide_url"], source)
             self.assertIn('id="decision-record"', source)
-            self.assertIn(record["app_store_cta_label"], source)
+            if record["locale"] != "bn-BD":
+                self.assertIn(record["app_store_cta_label"], source)
             if record["storefront_facts"] is not None:
                 self.assertIn(
                     str(record["storefront_facts"]["formatted_price"]),
@@ -306,7 +321,13 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 source,
             )
             self.assertIn(record["decision_page_url"], source)
-            self.assertIn(record["app_store_url"], source)
+            if record["locale"] == "bn-BD":
+                self.assertNotIn("apps.apple.com", source)
+                self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
+                self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", source)
+                self.assertIn("সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়।", source)
+            else:
+                self.assertIn(record["app_store_url"], source)
             self.assertIn(record["canonical_guide_url"], source)
             self.assertIn(
                 app_install_decision_routes._markdown_text(
@@ -408,10 +429,15 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 embed["_lumi_decision_url"],
             )
             self.assertNotIn("_lumi_guide_url", embed)
-            self.assertIn(
-                f"id{record['app_store_id']}",
-                embed["_lumi_app_store_url"],
-            )
+            if record["locale"] == "bn-BD":
+                assert_blocked_record(self, embed, ("_lumi_app_store_url",))
+                self.assertNotIn("apps.apple.com", json.dumps(embed))
+                self.assertIn("Apple App Store এখনো বাংলাদেশে", embed["html"])
+            else:
+                self.assertIn(
+                    f"id{record['app_store_id']}",
+                    embed["_lumi_app_store_url"],
+                )
 
             structured = app_install_decision_routes._structured_data(record)
             webpage = structured["@graph"][1]

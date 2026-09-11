@@ -6,6 +6,8 @@ from __future__ import annotations
 import argparse
 from html.parser import HTMLParser
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -566,6 +568,11 @@ def ensure_mobile_identity(
 ) -> tuple[bool, int, bool]:
     source = path.read_text(encoding="utf-8")
     page_url, language = _page_metadata(source, path, site)
+    if market.is_unavailable(language):
+        updated = market_surface_policy.enforce_html(source, language, app_id=app_id, name=app_name)
+        if updated != source:
+            path.write_text(updated, encoding="utf-8")
+        return updated != source, 0, False
     relation = _page_relation(page_url)
     records: list[
         tuple[

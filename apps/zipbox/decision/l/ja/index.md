@@ -2,7 +2,7 @@
 title: "Zipbox 解凍：ZIP RAR 7z対応 — 広告なしで圧縮ファイルをすぐ開く | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ja/index.html"
-modified: "2026-09-10"
+modified: "2026-09-11"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

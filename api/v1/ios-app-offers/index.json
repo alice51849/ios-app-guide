@@ -7,12 +7,12 @@
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
   },
-  "date_modified": "2026-09-10",
-  "content_digest": "sha256:65794bd19c9d1bf5dbf0ce12da980a24c9eb3f464614bde2129ad8c26fbb980a",
+  "date_modified": "2026-09-11",
+  "content_digest": "sha256:7bc7c2f9dae6962467509de4d1420570ef9bfae4348b10389dd9cf064849aefd",
   "locale_count": 50,
   "app_count": 47,
-  "offer_count": 2350,
-  "price_verified_offer_count": 2342,
+  "offer_count": 2303,
+  "price_verified_offer_count": 2295,
   "locales": [
     {
       "locale": "ar-SA",
@@ -23,8 +23,27 @@
     {
       "locale": "bn-BD",
       "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld",
-      "offer_count": 47,
-      "price_verified_offer_count": 47
+      "offer_count": 0,
+      "price_verified_offer_count": 0,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "ca",

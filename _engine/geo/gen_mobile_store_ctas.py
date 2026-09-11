@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import html
+import market_availability as market
+import market_surface_policy
 import re
 from pathlib import Path
 import urllib.parse
@@ -193,6 +195,9 @@ def render_mobile_cta(
     if "</body>" not in source:
         raise ValueError(f"Mobile App Store CTA page has no closing body: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
+    locale = market_surface_policy.document_locale(source, path)
+    if market.is_unavailable(locale):
+        return market_surface_policy.enforce_html(cleaned, locale, app_id=app_id)
     if gen_smart_app_banners.FREE_RESOURCE_FIRST_META in cleaned:
         return cleaned
     cta = app_store_cta(cleaned, app_id)

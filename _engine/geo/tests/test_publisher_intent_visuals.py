@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 import hashlib
 import html
 import json
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import re
@@ -259,16 +260,15 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
             self.assertTrue(root.findtext(f"{namespace}title"))
             self.assertTrue(root.findtext(f"{namespace}desc"))
             self.assertNotIn("<script", content)
-            parsed_store = urlparse(str(record["app_store_url"]))
-            self.assertEqual("apps.apple.com", parsed_store.netloc)
-            self.assertIn(
-                f"id{record['app_store_id']}",
-                parsed_store.path,
-            )
-            self.assertEqual(
-                str(record["app_store_url"]),
-                validated_app_store_url(str(record["app_store_url"])),
-            )
+            if locale == "bn-BD":
+                assert_blocked_record(self, record, ("app_store_url",))
+                self.assertNotIn("apps.apple.com", content)
+                self.assertIn("বাংলাদেশে অনুপলব্ধ", content)
+            else:
+                parsed_store = urlparse(str(record["app_store_url"]))
+                self.assertEqual("apps.apple.com", parsed_store.netloc)
+                self.assertIn(f"id{record['app_store_id']}", parsed_store.path)
+                self.assertEqual(str(record["app_store_url"]), validated_app_store_url(str(record["app_store_url"])))
             self.assertEqual(
                 visuals.gallery_url(locale),
                 record["gallery_url"],
@@ -304,10 +304,11 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 r'(?:[a-z]{2}/)?app/id[0-9]+(?:\?[^"]*)?)"',
                 source,
             )
-            self.assertEqual(
-                catalog.EXPECTED_APP_COUNT * 2,
-                len(store_urls),
-            )
+            if locale == "bn-BD":
+                assert_blocked_page(self, source)
+                self.assertEqual(len(store_urls), 0)
+            else:
+                self.assertEqual(catalog.EXPECTED_APP_COUNT * 2, len(store_urls))
             for url in store_urls:
                 decoded = html.unescape(url)
                 self.assertEqual(decoded, validated_app_store_url(decoded))

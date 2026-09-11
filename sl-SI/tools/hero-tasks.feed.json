@@ -31,7 +31,7 @@
         }
       ],
       "content_text": "Primerjajte nakupe z neto urnim dohodkom in prenesite svoj CSV. Skupaj = količina × končna cena. Ure = skupni znesek ÷ neto urni dohodek. Dnevi = ure ÷ ure na delovni dan. Vnesite cene z davkom. Brez pretvorbe valut, obračuna plač, napovedi prihrankov ali nakupnih nasvetov. Prikaz je zaokrožen na dve decimalki; vsote uporabljajo nezaokrožene vrednosti.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/purchase-worktime-sheet.html",
       "language": "sl-SI",
       "title": "Primerjajte nakupe v delovnih urah",
@@ -56,7 +56,7 @@
         }
       ],
       "content_text": "Zapišite, kdaj ste nazadnje opravili vsako opravilo za dom, avto ali zdravje in kako pogosto se ponavlja: dobite naslednji rok, preostale dneve in zamude v preglednici za prenos. Naslednji rok = nazadnje + razmik. Pri mesecih ostane isti dan; če ne obstaja, se vzame zadnji dan meseca (tudi v prestopnih letih). Preostalo dni = rok − danes. Pod 0 zamuja; od 0 do 7 kmalu. Razmiki od 1 do 3650 dni, tednov ali mesecev. Datumi med 1900-01-01 in 2999-12-31. Do 30 opravil. Brez opomnikov, obvestil ali sinhronizacije s koledarjem; nič ne zapusti te strani.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/maintenance-next-due-sheet.html",
       "language": "sl-SI",
       "title": "Preglednica rokov vzdrževanja",
@@ -81,7 +81,7 @@
         }
       ],
       "content_text": "Zapiši, kaj je samostojni projekt ali manjše delo prineslo in koliko je stalo, nato prenesi preglednico z bruto dobičkom, maržo in netom na uro. Dobiček = prihodki skupaj − odhodki skupaj. Marža = dobiček ÷ prihodki skupaj. Neto na uro = dobiček ÷ porabljene ure. Zneski se seštevajo v celih centih, zato seštevki ne odstopajo. Zneski od 0 do 100.000.000 z največ dvema decimalkama, do 20 vrstic prihodkov in 20 odhodkov, ure od 0,25 do 2000 po četrt ure. Ista valuta, brez pretvorbe, brez davčnih ali računovodskih nasvetov.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/project-profit-sheet.html",
       "language": "sl-SI",
       "title": "List dobička projekta",
@@ -106,7 +106,7 @@
         }
       ],
       "content_text": "Vnesi največjo zmogljivost iz nastavitev iPhona in, če jo imaš, število ciklov, nato prenesi preglednico z razponom obrabe na mesec in meseci do 80 % – vedno kot razpon, nikoli kot oceno. Obraba na mesec = (100 − zmogljivost) ÷ starost v mesecih, prikazana s pasom ±25 %. Mesecev do 80 % = (zmogljivost − 80) ÷ obraba; spodnja meja iz visoke stopnje, zgornja iz nizke. Ciklov na mesec = cikli ÷ starost. Zmogljivost od 60 do 100 kot cel odstotek, cikli od 0 do 3000, mesec nakupa med 2007 in 2099 pri starosti 1 do 240 mesecev, do 10 naprav. Meseci v obliki LLLL-MM. Vnosi ostanejo v tem zavihku; s telefona se nič ne meri ali bere.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/battery-wear-range-sheet.html",
       "language": "sl-SI",
       "title": "Razpon obrabe baterije",
@@ -135,7 +135,7 @@
         }
       ],
       "content_text": "Zapiši, kaj gospodinjstvo počne na spletu hkrati in na koliko napravah, nato prenesi tabelo s potrebnimi Mbps in rezervo, ki ti ostane v paketu. Skupaj v vrstici = naprave × vrednost na napravo. Potreba = vsota vrstic. Rezerva = paket − potreba; pod 20 % paketa je tesno, pod nič premalo. Seštevamo v celih desetinkah Mbps, zato vsote nikoli ne odstopajo. Hitrosti paketa od 0,5 do 10000 Mbps z največ eno decimalko, 1 do 50 naprav na vrstico, največ 20 vrstic. Pokritost Wi‑Fi, zakasnitev in dejansko dobavljena hitrost niso del tabele.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/bandwidth-need-sheet.html",
       "language": "sl-SI",
       "title": "Potrebna hitrost interneta doma",
@@ -164,7 +164,7 @@
         }
       ],
       "content_text": "Vnesi celoten proračun potovanja, dneve, potnike in stroške, ki jih že poznaš, nato prenesi tabelo s tem, koliko lahko vsak porabi na dan in kako se to deli na hrano, prevoz, vstopnice in nakupe. Za porabo = celoten proračun − fiksni stroški. Na dan = za porabo ÷ dnevi. Na osebo na dan = na dan ÷ potniki. Vsaka kategorija = na dan × njen delež. Zneski se seštevajo v celih centih; dnevne številke se zaokrožijo le pri prikazu. Zneski od 0 do 100.000.000 z največ dvema decimalkama, 1 do 120 dni, 1 do 20 potnikov, največ 15 fiksnih stroškov, štirje deleži, ki dajo natanko 100. Povsod ista valuta, brez tečajev, brez nasvetov o cenah ali rezervacijah.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/trip-budget-sheet.html",
       "language": "sl-SI",
       "title": "Potovalni proračun na dan",
@@ -193,7 +193,7 @@
         }
       ],
       "content_text": "Zapiši kraje enega dne s tem, koliko časa ostaneš in koliko traja pot do naslednjega, nato prenesi tabelo s časi prihoda in odhoda, ki pokaže, ali se vse uvrsti med tvoj začetek in konec. Prihod = prejšnji odhod + pot. Odhod = prihod + postanek. Skupaj = vsi postanki + vse poti. Na voljo = konec − začetek; konec pred začetkom šteje kot naslednji dan. Prekoračitev = skupaj − na voljo; vse nad nič prekoračuje. Preprosto računanje v minutah, brez časovnih pasov. Časi v 24-urni obliki HH:MM, postanki od 5 do 720 minut, poti od 0 do 600 minut, največ 25 krajev. Odpiralni časi, dejanski promet, zemljevidi, načrtovanje poti in rezervacije niso del tabele.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/day-itinerary-sheet.html",
       "language": "sl-SI",
       "title": "Časovni načrt enega dne",
@@ -218,7 +218,7 @@
         }
       ],
       "content_text": "Spremeni neurejene zapiske s sestanka v oris na eni strani: en naslov, tri do dvanajst ključnih točk, en naslednji korak in neobvezen kazalnik, nato prenesi tabelo, ki jo prilepiš v diapozitiv ali povzetek. Tabela ohrani tvoje besede takšne, kot so: naslov, nato točke v vrstnem redu, kot si jih vnesel, nato naslednji korak in nazadnje kazalnik. Prešteje točke in odstrani presledke na robovih; nič se ne prepisuje, povzema ali ocenjuje. Naslov do 80 znakov, 3 do 12 točk po največ 160 znakov, naslednji korak do 160 znakov, kazalnik do 60 znakov. Vsaka vrstica mora biti enovrstično besedilo. Tabela ne bere datotek, posnetkov ali koledarjev.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/one-page-outline-sheet.html",
       "language": "sl-SI",
       "title": "Zapiski s sestanka na eno stran",
@@ -243,7 +243,7 @@
         }
       ],
       "content_text": "Vpiši, za koliko je vsak naročil, dodaj odstotka davka in napitnine in videl boš, koliko točno mora kdo plačati. Davek in napitnina se razdelita do centa glede na naročilo, preglednico pa preneseš kot CSV. Vmesni seštevek = vsa naročila skupaj. Davek = vmesni seštevek × stopnja davka. Napitnina = vmesni seštevek × stopnja napitnine. Delež posameznika je njegovo naročilo ÷ vmesni seštevek; preostali centi gredo najprej k največjim decimalnim ostankom, zato se deleži vedno seštejejo natanko v znesek računa. Uporabljaj eno valuto, davek in napitnino pa vnesi kot odstotek vmesnega seštevka. Brez menjave valut, brez pravil o strežbi, brez nasvetov, koliko napitnine dati, in brez plačevanja. Na zaslonu zaokrožujemo na dve decimalki; sama delitev računa v celih centih.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/bill-split-sheet.html",
       "language": "sl-SI",
       "title": "Delitev računa",
@@ -268,7 +268,7 @@
         }
       ],
       "content_text": "Naštej, kaj si shranil in koliko časa vzame, vpiši, koliko minut na dan res prebereš, in videl boš, kateri dan boš vsako stvar končal. Načrt preneseš kot CSV. Tekoča vsota = minute tega vnosa plus vse nad njim. Dan = tekoča vsota ÷ minute na dan, zaokroženo navzgor. Končano = začetni datum + dan − 1. Proste minute = dnevi × minute na dan − minut skupaj. Vrstni red vpisa je vrstni red branja: nič se ne prerazporeja, preskakuje ali združuje. Eno branje na dan, ki natanko porabi tvoj čas, brez prostih dni, brez odpiranja ali prenašanja povezav in brez ocenjevanja tvoje hitrosti branja.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/reading-backlog-sheet.html",
       "language": "sl-SI",
       "title": "Načrt «preberi pozneje»",
@@ -293,7 +293,7 @@
         }
       ],
       "content_text": "Vpiši, kdaj si kateri zapisek napisal, in dobiš pet naslednjih datumov ponavljanja, koliko dni je še in kateri so že mimo. Načrt preneseš kot CSV. Datum ponovitve = datum pisanja + 1, 3, 7, 16 in 35 dni. Dni do roka = datum ponovitve − danes; negativno število pomeni datum, ki je že mimo. Naslednja ponovitev = prvi datum, ki je danes ali pozneje. To je stalna lestvica razmikov, ne model spomina: nič tu ne napoveduje, česa se boš spomnil, ne ocenjuje zapiska in ne popravlja odgovorov. Samo datumi, brez ur, časovnih pasov, opomnikov in obvestil.",
-      "date_modified": "2026-09-10T00:00:00Z",
+      "date_modified": "2026-09-11T00:00:00Z",
       "id": "https://open.cait518.cc/ios-app-guide/sl-SI/tools/review-schedule-sheet.html",
       "language": "sl-SI",
       "title": "Načrt ponavljanja",

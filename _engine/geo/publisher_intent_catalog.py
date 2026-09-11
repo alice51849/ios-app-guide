@@ -11,6 +11,8 @@ import hashlib
 import html
 import io
 import json
+import market_availability as market
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -1127,12 +1129,16 @@ def _page_record(
     source_query = str(PERSONAS[key][0]["query"])
     page_slug = slugify(source_query)
     path = pages / locale / "answers" / f"{page_slug}.html"
-    answer_page = path.is_file()
+    answer_page = path.is_file() and not market.is_unavailable(locale)
     if not answer_page:
         path = pages / locale / f"{key}.html"
     source = path.read_text(encoding="utf-8")
     app_id = str(app["app_store_id"])
-    if app_id not in direct_app_store_ids(source, path):
+    owner_ids = (
+        market_surface_policy.application_ids(source)
+        if market.is_unavailable(locale) else direct_app_store_ids(source, path)
+    )
+    if app_id not in owner_ids:
         raise ValueError(f"Wrong App Store owner in {path}")
     canonical = _extract(
         source,
@@ -1148,8 +1154,8 @@ def _page_record(
         raise ValueError(
             f"Unexpected canonical in {path}: {canonical}"
         )
-    cta_label = _app_store_cta_label(source, app_id)
-    return {
+    cta_label = market.note(locale) if market.is_unavailable(locale) else _app_store_cta_label(source, app_id)
+    record = {
         "record_id": f"{locale}:{key}:{page_slug}",
         "locale": locale,
         "app_key": key,
@@ -1166,11 +1172,11 @@ def _page_record(
         "source_persona_query": source_query,
         "canonical_guide_url": canonical,
         "canonical_app_store_url": (
-            localized_app_store_url(f"https://apps.apple.com/app/id{app_id}", locale)
-            if locale == "bn-BD"
+            None
+            if market.is_unavailable(locale)
             else f"https://apps.apple.com/app/id{app_id}"
         ),
-        "app_store_url": _app_store_url(app_id, locale, availability),
+        "app_store_url": None if market.is_unavailable(locale) else _app_store_url(app_id, locale, availability),
         "app_store_cta_label": cta_label,
         "publisher_disclosure": _publisher_disclosure(
             source,
@@ -1181,7 +1187,10 @@ def _page_record(
         "measured_search_volume": False,
         "is_ranking": False,
         "verified_live": True,
+        **market.record_fields(locale),
     }
+    market.validate_record(record)
+    return record
 
 
 def build_records(
@@ -1294,7 +1303,7 @@ def dataset_payload(
 def schema_payload(
     apps: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
-    return {
+    schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": f"{SITE}/data/{SLUG}.schema.json",
         "title": NAME,
@@ -1427,11 +1436,15 @@ def schema_payload(
     }
 
 
+    market.add_schema_contract(schema["properties"]["records"]["items"])
+    return schema
+
+
 def _csv_text(records: list[dict[str, Any]]) -> str:
     output = io.StringIO(newline="")
     writer = csv.DictWriter(
         output,
-        fieldnames=CSV_FIELDS,
+        fieldnames=(*CSV_FIELDS, "market_availability"),
         extrasaction="ignore",
         lineterminator="\n",
     )
@@ -1445,7 +1458,7 @@ def _csv_text(records: list[dict[str, Any]]) -> str:
                     else record[field]
                 )
                 for field in CSV_FIELDS
-            }
+            } | {"market_availability": json.dumps(record["market_availability"], ensure_ascii=False) if "market_availability" in record else ""}
         )
     return output.getvalue()
 
@@ -1840,9 +1853,13 @@ def _page(
         f'<td>{escape(purchase_labels[str(record["purchase_model"])])}</td>'
         f'<td><a href="{escape(str(record["canonical_guide_url"]), quote=True)}">'
         f'{escape(ui["Guide"])}</a></td>'
-        f'<td><a rel="nofollow noopener" href="'
-        f'{escape(str(record["app_store_url"]), quote=True)}">'
-        f'{escape(str(record["app_store_cta_label"]))}</a></td>'
+        + (
+            f'<td data-market-state="{market.market_state(locale)}" '
+            f'data-market-reason="{market.unavailable_reason(locale)}">N/A</td>'
+            if market.is_unavailable(locale) else
+            f'<td><a rel="nofollow noopener" href="{escape(str(record["app_store_url"]), quote=True)}">'
+            f'{escape(str(record["app_store_cta_label"]))}</a></td>'
+        ) +
         "</tr>"
         for record in records
     )
@@ -1888,7 +1905,7 @@ def _page(
             ("Gemini CLI", "gemini_cli"),
         )
     )
-    return f"""<!doctype html>
+    document = f"""<!doctype html>
 <html lang="{escape(locale)}"{direction}>
 <head>
 <meta charset="utf-8">
@@ -1947,6 +1964,9 @@ tr:last-child td{{border-bottom:0}}
 </body>
 </html>
 """
+
+
+    return market_surface_policy.enforce_html(document, locale)
 
 
 def build(pages: Path = PAGES, today: str | None = None) -> str:

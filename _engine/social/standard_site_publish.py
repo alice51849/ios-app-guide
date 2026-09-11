@@ -275,6 +275,28 @@ def validate_state(state: Mapping[str, object]) -> None:
             raise StateError(f"Document state contains an invalid TID: {canonical}")
         if entry.get("published_at"):
             parse_timestamp(entry["published_at"])
+        native = entry.get("native_record")
+        if native is not None:
+            if not isinstance(native, Mapping) or native.get("status") not in {
+                "verified", "missing",
+            }:
+                raise StateError(f"Invalid native readback: {canonical}")
+            parse_timestamp(native.get("checked_at"))
+            if native["status"] == "verified":
+                uri = str(native.get("at_uri") or "")
+                validate_at_uri(uri, DOCUMENT_COLLECTION)
+                if (
+                    not uri.endswith("/" + str(entry.get("rkey") or ""))
+                    or not isinstance(native.get("cid"), str)
+                    or not native["cid"]
+                    or not isinstance(native.get("record_hash"), str)
+                    or len(native["record_hash"]) != 64
+                    or any(
+                        character not in "0123456789abcdef"
+                        for character in native["record_hash"]
+                    )
+                ):
+                    raise StateError(f"Invalid native identity: {canonical}")
         try:
             pending_state.validate_pending_entry(
                 entry, label=canonical
@@ -1124,8 +1146,8 @@ def reconcile_remote_state(
     verified_at: str,
     repair_after_day: str,
     daily_limit: int = DEFAULT_DAILY_LIMIT,
-) -> None:
-    """Recover stable identities and invalidate stale local confirmations."""
+) -> dict[str, object]:
+    """Keep native readback distinct from desired-content confirmation."""
     validate_state(state)
     migrate_publication_origin(state, manifest)
     _migrate_legacy_pending_state(
@@ -1226,6 +1248,9 @@ def reconcile_remote_state(
                         f"Durable document rkey is occupied by another record: "
                         f"{canonical}"
                     )
+            entry["native_record"] = {
+                "status": "missing", "checked_at": verified_at,
+            }
             kind = pending_state.pending_kind(entry)
             if kind is None and entry.get("published_at"):
                 _mark_ordinary_republish_pending(
@@ -1245,6 +1270,7 @@ def reconcile_remote_state(
         entry["rkey"] = remote_rkey
         entry["app_key"] = document["app_key"]
         remote_record = dict(remote["value"])
+        _mark_native_document(entry, remote, remote_record, verified_at)
         published_at = remote_record.get("publishedAt")
         parse_timestamp(published_at)
         entry["published_at"] = published_at
@@ -1317,6 +1343,39 @@ def reconcile_remote_state(
         updated_at=verified_at,
     )
     validate_state(state)
+    native_documents = []
+    for canonical, (remote_rkey, remote) in sorted(active_documents.items()):
+        entry = state["documents"].get(canonical, {})
+        app_key = entry.get("app_key")
+        if (
+            not isinstance(app_key, str)
+            or not app_key
+            or entry.get("rkey") != remote_rkey
+        ):
+            app_key = None
+        native_documents.append({
+            "canonical_url": canonical,
+            "app_key": app_key,
+            "uri": remote["uri"],
+            "cid": remote["cid"],
+            "content_confirmed": entry.get("published") is True,
+        })
+    apps = sorted({
+        entry["app_key"] for entry in native_documents if entry["app_key"]
+    })
+    unmapped = sum(entry["app_key"] is None for entry in native_documents)
+    return {
+        "status": "verified",
+        "scope": "native_record_existence_only",
+        "checked_at": verified_at,
+        "document_count": len(native_documents),
+        "app_count": len(apps),
+        "app_keys": apps,
+        "unmapped_document_count": unmapped,
+        "app_mapping_status": "blocked" if unmapped else "verified",
+        "documents": native_documents,
+        "renderer_support": {"status": "not_checked"},
+    }
 
 
 def _document_semantics(record: Mapping[str, object]) -> dict[str, object]:
@@ -1542,6 +1601,21 @@ def _mark_publication(
     )
 
 
+def _mark_native_document(
+    entry: MutableMapping[str, object],
+    remote: Mapping[str, object],
+    record: Mapping[str, object],
+    verified_at: str,
+) -> None:
+    entry["native_record"] = {
+        "status": "verified",
+        "at_uri": remote["uri"],
+        "cid": remote["cid"],
+        "record_hash": record_hash(record),
+        "checked_at": verified_at,
+    }
+
+
 def _mark_document(
     state: MutableMapping[str, object],
     document: Mapping[str, object],
@@ -1552,6 +1626,7 @@ def _mark_document(
     published_hash: str | None = None,
 ) -> None:
     entry = state["documents"][document["canonical_url"]]
+    _mark_native_document(entry, remote, record, verified_at)
     entry.update(
         {
             "at_uri": remote["uri"],
@@ -1766,7 +1841,7 @@ def run(
                     }
                 )
 
-        reconcile_remote_state(
+        plan["native_records"] = reconcile_remote_state(
             working,
             manifest,
             client=client,
@@ -1820,6 +1895,7 @@ def _parser() -> argparse.ArgumentParser:
         "--well-known", type=Path, default=DEFAULT_WELL_KNOWN
     )
     parser.add_argument("--limit", type=int, default=DEFAULT_DAILY_LIMIT)
+    parser.add_argument("--report", type=Path)
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument(
         "--publish",
@@ -1845,6 +1921,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         limit=args.limit,
         publish=args.publish,
     )
+    if args.report is not None:
+        atomic_write_json(args.report, result)
     print(
         f"Standard.site {result['mode']}: "
         f"{len(result['selected_urls'])} document(s), "

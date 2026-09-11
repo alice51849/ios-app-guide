@@ -1552,6 +1552,78 @@ class StandardSitePublisherTests(ProjectScratchCase):
             random_clock_id=lambda: 2,
         )
 
+    def native_fixture(self):
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 2, "beta": 1})
+        for day in range(2):
+            result = publisher.run(
+                manifest, state_path=state_path, contract_path=contract_path,
+                well_known_path=well_known_path, limit=2, publish=True,
+                environment=self.ENV, client_factory=lambda *_: client,
+                expected_did=self.DID, tid_generator=self.deterministic_tids(),
+                now=self.NOW + timedelta(days=day),
+            )
+        self.assertEqual(3, result["native_records"]["document_count"])
+        self.assertEqual(2, result["native_records"]["app_count"])
+        return json.loads(state_path.read_text()), manifest, client
+
+    def test_readback_preserves_native_proof_while_content_remains_pending(self):
+        state, manifest, client = self.native_fixture()
+        for document in manifest["documents"][:2]:
+            entry = state["documents"][document["canonical_url"]]
+            client.records[
+                (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+            ]["value"]["textContent"] += "\nProvider content drift"
+        puts_before = deepcopy(client.puts)
+        records_before = deepcopy(client.records)
+        daily_before = deepcopy(state["daily"])
+        timestamp = publisher.utc_timestamp(self.NOW + timedelta(days=2))
+        for attempt in range(2):
+            if attempt:
+                for entry in state["documents"].values():
+                    if not entry["published"]:
+                        entry.pop("native_record")
+            report = publisher.reconcile_remote_state(
+                state, manifest, client=client, did=self.DID,
+                verified_at=timestamp, repair_after_day="2026-07-29",
+                daily_limit=2,
+            )
+            self.assertEqual(3, report["document_count"])
+            self.assertEqual(2, report["app_count"])
+            self.assertEqual({"status": "not_checked"}, report["renderer_support"])
+            pending = [
+                entry for entry in state["documents"].values()
+                if not entry["published"]
+            ]
+            self.assertEqual(2, len(pending))
+            for entry in pending:
+                self.assertNotIn("at_uri", entry)
+                self.assertEqual("verified", entry["native_record"]["status"])
+                self.assertTrue(
+                    entry["native_record"]["at_uri"].endswith("/" + entry["rkey"])
+                )
+            self.assertEqual(daily_before, state["daily"])
+            self.assertEqual(puts_before, client.puts)
+            self.assertEqual(records_before, client.records)
+
+    def test_missing_readback_invalidates_native_proof_without_recreation(self):
+        state, manifest, client = self.native_fixture()
+        canonical = manifest["documents"][0]["canonical_url"]
+        rkey = state["documents"][canonical]["rkey"]
+        del client.records[(publisher.DOCUMENT_COLLECTION, rkey)]
+        puts_before = deepcopy(client.puts)
+        report = publisher.reconcile_remote_state(
+            state, manifest, client=client, did=self.DID,
+            verified_at=publisher.utc_timestamp(self.NOW + timedelta(days=2)),
+            repair_after_day="2026-07-29", daily_limit=2,
+        )
+        self.assertEqual(2, report["document_count"])
+        self.assertEqual("missing", state["documents"][canonical]["native_record"]["status"])
+        self.assertEqual(rkey, state["documents"][canonical]["rkey"])
+        self.assertNotIn((publisher.DOCUMENT_COLLECTION, rkey), client.records)
+        self.assertEqual(puts_before, client.puts)
+
     def test_origin_migration_updates_existing_records_without_duplication(
         self,
     ) -> None:
@@ -2272,14 +2344,15 @@ class StandardSitePublisherTests(ProjectScratchCase):
         )
 
     def test_live_document_republish_drains_for_all_limits(self) -> None:
+        pages = Path(os.environ.get("STANDARD_SITE_TEST_PAGES", SOCIAL.parents[1]))
         manifest = generator.build_manifest(
-            pages=SOCIAL.parents[1],
+            pages=pages,
             site=generator.DEFAULT_SITE,
             max_per_app=3,
             now=self.NOW,
         )
         expected_keys, _ = generator.load_live_app_keys(
-            SOCIAL.parents[1],
+            pages,
             generator.APPSTORE,
             generator.APPS,
         )

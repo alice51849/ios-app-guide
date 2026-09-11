@@ -2,6 +2,7 @@ _engine/**/__pycache__/
 **/__pycache__/
 *.pyc
 _engine/geo/pages
+.github/owned-feed-runtime/
 
 # Availability evidence and scorecards are runtime measurements, not site source.
 **/.growth-runtime/

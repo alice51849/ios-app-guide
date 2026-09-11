@@ -1,0 +1,4366 @@
+{
+  "schema": "lumi.owned-app-feeds/v1",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/feeds/index.html",
+  "roster_digest": "40d77eea74d7ce9f9bf9a8b61196552e25cd1d43ea9fa123b9212af17a9d38b6",
+  "generation_digest": "5bccff2a2156abae11bd409a1b359d84361d3dcc7bdee44a2f2c5cffbeff78d4",
+  "last_modified": "2026-09-11T06:25:53Z",
+  "app_count": 47,
+  "locale_count": 50,
+  "record_count": 2350,
+  "purchase_models": {
+    "free_with_lifetime_unlock": 34,
+    "paid_upfront": 13
+  },
+  "feeds": {
+    "ar-SA": {
+      "language": "ar-SA",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ar-SA.json",
+      "source_digest": "a5cd5c1c026f45b7dd98be5442f111c1fe8eb1dea938250d8d1344a72daac67f",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/feed.xml",
+          "sha256": "d415a0bc06233cdb5771e47869a7374c478abd896a86f936fc4bd66b7176f0b0",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/rss.xml",
+          "sha256": "44b89ce2d737ad52b75999b04ce8ed42eb40b0cd1fc73b26e3244352b9966f65",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ar-SA/feed.json",
+          "sha256": "f4ee57dbb237b525224deba818627a9e923794858e4e50bc002d01a8f630f7d6",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "bn-BD": {
+      "language": "bn-BD",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/bn-BD.json",
+      "source_digest": "6d4059ece6fc7b60ba2377971eb429e058d5c707a67c6704b3775da9a1f6e8c0",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml",
+          "sha256": "18a4cc2972da435793c67bd1f17b905884e481fdf0050e73f6ae26c5648c6ba3",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml",
+          "sha256": "05a666a713b755811f839fba8423cc38fe982b30aaa60d52425b535c5c731d26",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json",
+          "sha256": "2434df38fae0daceb01331030df9b12a4202b5e64b8b9f5b8037875f55cfc1a8",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ca": {
+      "language": "ca",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ca.json",
+      "source_digest": "c5fc60d83aed13852c0bd5b38288955a689de8ae8a75b7c8630389a63517578c",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ca/feed.xml",
+          "sha256": "899cb6b7e438db9bdac65db5899de44447f2e203b155b4ebf8174cd8425bb990",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ca/rss.xml",
+          "sha256": "8c7cd0f43ab18758a1e307b335e748033c8ef5a664ae0a096baff9a7650915fa",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ca/feed.json",
+          "sha256": "bc79f1f42f62a3734cf37f023d58b2d0c7540ca8b08eaf3817b3a45cb39e4b9d",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "cs": {
+      "language": "cs",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/cs.json",
+      "source_digest": "2c650976786a11d27fbbdf7b3a67ca1f5e7c9dec3d1c8c8d26152de9bfe39da9",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/cs/feed.xml",
+          "sha256": "2e402b5133319694306ff1d61e2f3a382002a6e84b0e3eaf5d60cb74b383cf52",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/cs/rss.xml",
+          "sha256": "404305c57752940b8c4a9541fc68626ebeaaa7ba945e1beb12af46cc312b252c",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/cs/feed.json",
+          "sha256": "a3d80fec65db19d1d49166aa3a34c36cf5b93e00dde37fa9163be5b83b9cddb8",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "da": {
+      "language": "da",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/da.json",
+      "source_digest": "c09f137c28be106b388efba681055fb745b74cc2d0e26a21a6f8d6bacbf7f3b8",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/da/feed.xml",
+          "sha256": "aa832e0cc94c0106cdfc8155ab1d5334dcc56771f6df46a5e63f586e39c39e92",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/da/rss.xml",
+          "sha256": "34005d8b8f64a549232c0a07076ecd3a430a15a3a2d57904b592f67a2509576b",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/da/feed.json",
+          "sha256": "0bcdd66308371ed53020751196ccaab4b8782959e9b9283f77d3dd7fb6511b84",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "de-DE": {
+      "language": "de-DE",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/de-DE.json",
+      "source_digest": "1384c58a1fd36202ea4a1ee2367d4e1577e79853eda3cf1999259705ac4c038c",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/feed.xml",
+          "sha256": "ca18aa79e922831c9304a376448a6c08b2486569bea149a74c4d77d3a6248e9d",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/rss.xml",
+          "sha256": "147e76bb232cbe96462a1bbda9e2884d7f764f83da6eaca500b0f719492307e3",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/de-DE/feed.json",
+          "sha256": "0fdab9ef6068eb00b51d7dd887c8c35cc123604d40ff4d21cd3b8a2ded70bc77",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "el": {
+      "language": "el",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/el.json",
+      "source_digest": "ba1fc5913aecca41e59d16192b36aa39da3712321ad8edc29cddfdc9bec7fcbf",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/el/feed.xml",
+          "sha256": "4aa13261398792333187bebf8e51aee6ffb80b4412673884869d4753a5720eb7",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/el/rss.xml",
+          "sha256": "a4c24f0e0e05135faef481a97eec7e04946b7942d109e13889baa48307d70a08",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/el/feed.json",
+          "sha256": "0e8f4f9deb92bf40e420c1140d1a260b67769c5baba894bcef29b06af5b1efd8",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "en-AU": {
+      "language": "en-AU",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/en-AU.json",
+      "source_digest": "06e2314c0b0853de79b9fc49bdb58495c8ff8e548a23b92800a12a3baeef4c94",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/feed.xml",
+          "sha256": "25585f21552d246898f59e500f21ee5c84c690401fe598daf228c2991384fc37",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/rss.xml",
+          "sha256": "bcf27005de52dde9be47cf1d7f9da7bbedd1d3281aa4f37cc649703a390ba6bd",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-AU/feed.json",
+          "sha256": "ba170d8996c34431e7342cb3d147cc9d862afdbb9bf4e9b6fd15716a3e279d04",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "en-CA": {
+      "language": "en-CA",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/en-CA.json",
+      "source_digest": "89e5bef159dd7c4c0a88278ef5e93abf0474d2ad953c1e8cbaf1c84939d5bd00",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-CA/feed.xml",
+          "sha256": "838011640b6a57ecbc58b38ddfb39d692191c3c2cad2f143abb8f4667c7dc8f0",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-CA/rss.xml",
+          "sha256": "9e3f28d1e81a2463f2f0b3dbfd3111f81a06b84ca06f627919bcf2d6e48d8f2b",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-CA/feed.json",
+          "sha256": "b0473eae500cd77238636a3dfe859299de18a5e8a3950a62ab3c181ada06e396",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "en-GB": {
+      "language": "en-GB",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/en-GB.json",
+      "source_digest": "f2a45be0795b1f2e3ce26dd4708128fee59ad70a49d00e8f6787050ede5533a7",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-GB/feed.xml",
+          "sha256": "aec12fc8edc36ddbb0b309b7cd45c58523648622d3fb66264a28ba8db32a2df3",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-GB/rss.xml",
+          "sha256": "6ab207c6109d5c6786030598f19e976e01429b850ffc2f495eb4374e6e48cd58",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-GB/feed.json",
+          "sha256": "15bd5b47ad68edc547806b86e60a99bcc1c0a1b0af30eca8bc4e1736bce9c630",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "en-US": {
+      "language": "en-US",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/en-US.json",
+      "source_digest": "68842d709af24679a50d11f854fa8bdbd37c691a03e3c566bbf6929f413924b5",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-US/feed.xml",
+          "sha256": "686db8c89381a57ad6f494626fd5d640c9423d5b261c47f7b74e60948d31ace3",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-US/rss.xml",
+          "sha256": "f3eb9711fcf0bac087be317595b220a7acaeb48c4d9a46ea7ae797baea8ee0b4",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/en-US/feed.json",
+          "sha256": "23009f2a49e5037616a16452945c24eb83e73addb2d61bb4e7084be2e5c863f3",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "es-ES": {
+      "language": "es-ES",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/es-ES.json",
+      "source_digest": "2c44f5bb29dd932b08501eeb3e7017b05896eaf13f497f6c140fbc4d1e917190",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/es-ES/feed.xml",
+          "sha256": "83e414ce12f428484b0c97cff2399959e7288050d6974339bfbcae9d4547885b",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/es-ES/rss.xml",
+          "sha256": "164ba9416f199169b09c8884b8f1b90abf1916881ec9f81d28452089e3668cff",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/es-ES/feed.json",
+          "sha256": "72d312c46e5be97973f00769515dfd538b567f06d87248dacb559f7904a2a324",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "es-MX": {
+      "language": "es-MX",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/es-MX.json",
+      "source_digest": "6922dd6baa0e894e3933add751d3f4cf9e238b2fe723d45d51933949015e001a",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/es-MX/feed.xml",
+          "sha256": "5d35d44ab30660ed7109b94776582444c6eab48eb26a5aa33e0bd8a82646a9ec",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/es-MX/rss.xml",
+          "sha256": "eb0e56cf8018c26c7899891488d1df779363e8ba3f17e6bcac873c11a72f5168",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/es-MX/feed.json",
+          "sha256": "c4d2f8de757df5133d68891f72a74744781c24a4147680e9c908fbaefe5705e7",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "fi": {
+      "language": "fi",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/fi.json",
+      "source_digest": "fd9bbf06106bb9ea69292117f5572e603d71da25f9cb10cf74df71b6db6c76c4",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/fi/feed.xml",
+          "sha256": "479084f81b903a629256a3a95924bf73c552728beb4cd35cd92a7c1be2d2f81b",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/fi/rss.xml",
+          "sha256": "4e870f2b66e86de418bffa983b04f4e61fb95bc7d7022a76f67ea2fb0eeca354",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/fi/feed.json",
+          "sha256": "2b00909d5761558d025bacdcece0a27dba0cd21fd03674e50c25e7efeebf240f",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "fr-CA": {
+      "language": "fr-CA",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/fr-CA.json",
+      "source_digest": "8fc9fb6d136718a27b06e08364b3c0fac8357ffc9811f427df86340ef5abd5ac",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/feed.xml",
+          "sha256": "1790363805a6e7a9623ca09d78a2aa6a07a00bc64e9696f1d0cb6815457be850",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/rss.xml",
+          "sha256": "20fdd24acff7ed1c1906223b922be7514f773cf7d28d4f48f7f3f001828315cf",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/fr-CA/feed.json",
+          "sha256": "b4fc336c58167827d310fd8db80b948b633435d5de2a0d8c873a53dba0ccf2d2",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "fr-FR": {
+      "language": "fr-FR",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/fr-FR.json",
+      "source_digest": "1b36a767e3f1f09e9e43d852a8af1601678f52e568d679fbe66091df4f2492a9",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/fr-FR/feed.xml",
+          "sha256": "dc16f41e5ac0e9130f952e12bf7afe883725b0804f565f3e242f2d4aa93f3d27",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/fr-FR/rss.xml",
+          "sha256": "dbf1291258bdf7f5a6ef97dc6e8620fd7761da628cfb0099d23e9ef6d57a8ffe",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/fr-FR/feed.json",
+          "sha256": "f20c0158eb216b1e0b3ead5b2d7b41c9ff8fd9b90dbc6c17e97af608d0f9b3ec",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "gu-IN": {
+      "language": "gu-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/gu-IN.json",
+      "source_digest": "a46a125d2b98b5c4894fbad6aa46feef629002e999e7be212f0ae3f4d93a7c4b",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/feed.xml",
+          "sha256": "04e628a039bd02373cc4330de0fe63fc243b7cfbcc22940673500a95a12511a5",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/rss.xml",
+          "sha256": "4b6432d10e6a1111dee4654cb80c73e893eb0bbb7080c47f21fe5d6b59645df3",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/gu-IN/feed.json",
+          "sha256": "a06f45e2a97d44406971c25d81e5fd0f00ffd708eeac3adeb06fcb9ff2377c18",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "he": {
+      "language": "he",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/he.json",
+      "source_digest": "180d0d757a0256a623ce25648e12eda0fc954779eca5700cbbefd77ff0d4c94d",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/he/feed.xml",
+          "sha256": "69c08709ce9c554cb807359cff7aa4bda0f228c06c36b38155b07d48532af8d6",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/he/rss.xml",
+          "sha256": "8a740d16d799642dad7fa85e588f9885eb9ac96ae9a044efbf694c2b8812965a",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/he/feed.json",
+          "sha256": "f0a0d517ca41bb44d7a306481ec4d7a835f19d3f65154babd3a62b7bf5abd124",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "hi": {
+      "language": "hi",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/hi.json",
+      "source_digest": "650c88121a9765e5d25af6fdd009d3701483236b93b9c6674badf2713563c5c3",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/hi/feed.xml",
+          "sha256": "e65b3c5734916f12b65f7cb55e4d4bb09db977f768471d6388a138ca75fb81cf",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/hi/rss.xml",
+          "sha256": "d1bffb08296b7b7035dbfac9b3ae809081898dbc2b7437848e6e7377914278a4",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/hi/feed.json",
+          "sha256": "d53556c2a46ecab2619adcc96212586cc5df6e7a6c4e7835a652b712c5e78728",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "hr": {
+      "language": "hr",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/hr.json",
+      "source_digest": "2eecee932222269154fdbd71796c1e2b2b8b48ed7a7d8a69bb84713323ebeba9",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/hr/feed.xml",
+          "sha256": "e0bbc1604d00f1daa7692c4f33f7086716bf3c36e94850f5c0d41943e2e1889a",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/hr/rss.xml",
+          "sha256": "82aecb841cd72216b91f540658d3e5a86093e214863b16a26e4a2248c7830ead",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/hr/feed.json",
+          "sha256": "a97c73e1883d1fdbe4c74f9b5cefa63ca6f182faaf6cae4890900fd1d8a4fb37",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "hu": {
+      "language": "hu",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/hu.json",
+      "source_digest": "a44d44179d422f49d9a1a33d992ed035d956b84dd2302ee6efbc8112132fd66a",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/hu/feed.xml",
+          "sha256": "97c3b7eab1409b451be44a5ec410cf343729984724291602792655550f1410ca",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/hu/rss.xml",
+          "sha256": "3753cf48a910fd0b9df89f1b492df7cd9f486e50c554c29a148b9eef0033a7dd",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/hu/feed.json",
+          "sha256": "462900d844c71a1bb2bffa17a4f44207b3f045d64082fdb4a62154df2153b30f",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "id": {
+      "language": "id",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/id.json",
+      "source_digest": "0e39140d3c32b483fba5d717ca9fb83517e44ae5abfeaf45b10aac8e4e22c9c9",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/id/feed.xml",
+          "sha256": "6052fab7e087dd129603f03b37e59d5e0b3e248cb372de9e7f429381471f5f3a",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/id/rss.xml",
+          "sha256": "70187943c7b790c1a758e87e4f17900eeeba8541614639016b417067261ccc7a",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/id/feed.json",
+          "sha256": "8ce1161f988a968b845a21d261595fb9440eb7a10b0d3c6491d76a12ba7a56e2",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "it": {
+      "language": "it",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/it.json",
+      "source_digest": "111c50dd574de460fe42adedc61383af9e059041c45ff59fb753ae282dc58584",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/it/feed.xml",
+          "sha256": "c31b1691dca72b2a11ba35db11109effa4d994fb81586d0e37e2b18858840dd0",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/it/rss.xml",
+          "sha256": "50b1333d650fd8469f569f4d68c4c686388ab1ef15f256c5e484712595dee57f",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/it/feed.json",
+          "sha256": "b2050aa64e411270928169d28a728eb1f0788395e22e8aab96547a6944f4d519",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ja": {
+      "language": "ja",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ja.json",
+      "source_digest": "12a9f0acfa1282dd4d9635695f5e8c4008237d1be38d457b0e21b92df7dbb20a",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ja/feed.xml",
+          "sha256": "98a23810871d5c45abbe36df3cf2e0cf9adceddcc2a288fd0c687810a5ee2807",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ja/rss.xml",
+          "sha256": "cc443e7e877ee146b1b67cf202b1aa571d09b5431cea5e46c6b1a8ddae7f65d1",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ja/feed.json",
+          "sha256": "e4b5813bcd89ebbf477d6f2ce36e01fed959bc84b9de593ba838bd7b3675f5aa",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "kn-IN": {
+      "language": "kn-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/kn-IN.json",
+      "source_digest": "251b66e1434d02e7ae99adc55453dd34250badac0a9323b6ecca39b4090b77ab",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/feed.xml",
+          "sha256": "89fe68ad8f9fbd3f45c02e3b9c33dd87716fcddac3271a76e6230bd926b0a58e",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/rss.xml",
+          "sha256": "7626075e2327a50103901b2cb88885387aff3bd68aaa3e39dfe0e2863d6216bd",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/kn-IN/feed.json",
+          "sha256": "1a8415ce6909aae205276c30fb7ee5289b386487026f19a69a311ee2d9fb7931",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ko": {
+      "language": "ko",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ko.json",
+      "source_digest": "6519337da987fdb53be1549ed7bbf60132807e5cb2d45dc6eecd65fdd266d442",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ko/feed.xml",
+          "sha256": "fcbe177192628dbf25b794dc5ef0de9e88ace48ae1f860e0af9e10c0d1d07534",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ko/rss.xml",
+          "sha256": "7d39098da39ee30ce71a31e77c39994c51dd74dc132f07c6f2792b6bc15b7100",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ko/feed.json",
+          "sha256": "cc376e9af3a952dea2d412a53d4d51c78e06f7599a6f6a646bd4a4d44ff5304c",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ml-IN": {
+      "language": "ml-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ml-IN.json",
+      "source_digest": "bcdff82d405187b52ac90be745c3b0d75e20fe37892ffb75581761733f0b4ca7",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/feed.xml",
+          "sha256": "01a0ab85421e7b70f4b84befa2160c5de6e96e49854c19505288fb4d393141d8",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/rss.xml",
+          "sha256": "b25a0a10123fa092b957235f1c289eb26e75e0e6d1e3e334829fed83814b9d4d",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ml-IN/feed.json",
+          "sha256": "045fcb950a790b5a945060ac50c5294b4117e4e65513a9138c3572ccac7f63f8",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "mr-IN": {
+      "language": "mr-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/mr-IN.json",
+      "source_digest": "ba4c3b20299b577fbba4c2af0b731facd1d326911ade8e06e7dfa41f8af0c25e",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/feed.xml",
+          "sha256": "77d345bd78c9b4d6ef0fa27c460a011ddd3027fe495f5305012c16b7b36f2ace",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/rss.xml",
+          "sha256": "f628ac323ba1234a5bc5f6be0456395b8fd98a5b400b96ac8aa73b599f44424c",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/mr-IN/feed.json",
+          "sha256": "2e0c2adc4301d20ebc12f6144793be5537149fc5c1a02c7d129bacd3b6b74058",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ms": {
+      "language": "ms",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ms.json",
+      "source_digest": "0772cee6ce1a43394d150c9dea0a75fe6e007ec1e4a50732ea4c2db8162b332f",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ms/feed.xml",
+          "sha256": "991025e00c41b15e1c5e064e8514b982138ca4d8eb039c927e16cd61f1a28cb9",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ms/rss.xml",
+          "sha256": "fa90b67b3e0531ab0a491f836b42953929f6e1d9b193db91ab6b720130d8a10a",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ms/feed.json",
+          "sha256": "89bda1be7dbae39380dbf561bd8d8ea836e6e6403d2885ca3bf9cc4f4af26574",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "nl-NL": {
+      "language": "nl-NL",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/nl-NL.json",
+      "source_digest": "7002ae75fc28f83ceeb77ba469212c475acea324843c04265d122f55d8c22a89",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/feed.xml",
+          "sha256": "22f9f6c46e0486569254de8222aa558cadf5491d26b3f8bb5be47d82c0d96ff9",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/rss.xml",
+          "sha256": "ffff1ea45de511f17c370ee37438ae1001b6e06f7f2878b8a258e0ba8a398edb",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/nl-NL/feed.json",
+          "sha256": "a7b3728ef3fb6b94d2324d69e379f3bb27b5d6016a4350a2aa1b27f80b4d19aa",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "no": {
+      "language": "no",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/no.json",
+      "source_digest": "accd5693bd2f53191239f8953b687cf46ef66007cd6f5796dcaa4ccde00aa486",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/no/feed.xml",
+          "sha256": "7a6d06bec0d26fb11a69dbc8dbca3c7a81f094c5f212f98812ca3e33dcd9b6ac",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/no/rss.xml",
+          "sha256": "67842e3a777f71fa6822d6cb7025993d0f6b696d0ab9ad1a661801c59f1ac119",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/no/feed.json",
+          "sha256": "99c45ef2d1266d1db9129b69c2d7aef6e987921663d3050bbfc35115d9e88696",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "or-IN": {
+      "language": "or-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/or-IN.json",
+      "source_digest": "26baf9b3f54b7415833bd826ffcef5fb6de0dc08ef574bbb2ed117bdb5cebb0d",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/feed.xml",
+          "sha256": "cf58980144687b6b0702fb358702dd2755345cb32313e66694b545c8e9188d82",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/rss.xml",
+          "sha256": "715b4d5ca08d550d81f508888c551acb487ec54274253285c1b2803f67b22970",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/or-IN/feed.json",
+          "sha256": "e4e23fa7dfadc9523e7008989dceb9c1f11df668d95bbd004a0b27ca7fb7a7aa",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "pa-IN": {
+      "language": "pa-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/pa-IN.json",
+      "source_digest": "318e142a90dc7f9bb4cd5167b7100dcd3430ceb3766bdb167d9f97661d7631f1",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/feed.xml",
+          "sha256": "447ddb6f8e7b016bbc0ff172da6c2cc60aed468a39ae774c37c253700734f0e0",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/rss.xml",
+          "sha256": "47c90af9a6f8bcf08a23af07fb540c49e50f59034bcda32802db668c6acaf567",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/pa-IN/feed.json",
+          "sha256": "b1baa09be4ba6f42019e8d7573bd732f8360e7936e36fe8a2467fd4839f6819e",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "pl": {
+      "language": "pl",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/pl.json",
+      "source_digest": "9241d91120b5723e9586998ee7989408b9da928cae650ffeab700db3670b1845",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/pl/feed.xml",
+          "sha256": "bb2efda436ab99a88e2115e8ff247eefb0b6eba5e1bdebf8c4c76d853d22ccd5",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/pl/rss.xml",
+          "sha256": "2f5f6673962e42d940b95fbf934143f08c9660e18a4eb83e24c47f581111f805",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/pl/feed.json",
+          "sha256": "103ad9ba14bde7fa920d3db3bfb94f60cb0fbebef2f3f1b97fabfbd7a5b7e054",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "pt-BR": {
+      "language": "pt-BR",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/pt-BR.json",
+      "source_digest": "feea78fd42f50a5a0380def02cf23db151e752f2fc6bab7aee9e20c06257099e",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/feed.xml",
+          "sha256": "c2235a6819e66415319ddf2262e8fa6f19149ca53e9cfee6062f3b18ea6a70ae",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/rss.xml",
+          "sha256": "3f9046ce1c023578b98e52337da18db540a42d2c033100c4d233cfa50fee3d8a",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/pt-BR/feed.json",
+          "sha256": "621dca3cced92a265e83c0fa41eb719686ed830fc3727c96ea75980cad4bf4bd",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "pt-PT": {
+      "language": "pt-PT",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/pt-PT.json",
+      "source_digest": "bda095d0a80eed466fdfce05c6531b672ea2947be400e6d4116210d972f940b3",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/feed.xml",
+          "sha256": "ab0d90b6003cbd95cc2263ea4d9c7ab239bc4b2ad5ad9404df4e4235fab4ff20",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/rss.xml",
+          "sha256": "6fd0f64e4e711c4bd11377a19eb486026a984e5a03437a6608356aa5d21a3fa2",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/pt-PT/feed.json",
+          "sha256": "8818d03bded58140fd36502011482ef6dce757c2257d28ef59bc784904a523a4",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ro": {
+      "language": "ro",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ro.json",
+      "source_digest": "0ffda6273cf2ecd5cbfeefe97531dad35f81a7d7551c5dfe333387851766edff",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ro/feed.xml",
+          "sha256": "fba0933e0a46fd58b3a0bc422345c1e44dd86c7b9834715f164ce676b94865a6",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ro/rss.xml",
+          "sha256": "5d941bb527c649e02ac761950d29796b2f2fcc164c040e820c8efcc3729e41ca",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ro/feed.json",
+          "sha256": "54268a06804b68506e5ffb79eb4288eaf6518fba4c79b5bef6b99b0c8eff4925",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ru": {
+      "language": "ru",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ru.json",
+      "source_digest": "2bd7f016016af1730d0c1b42ef8da1c849bbfc8e37f9dbb51dc65d0c59166932",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ru/feed.xml",
+          "sha256": "2238e6402ae6f42235143397b61ea1a9150d1ecace162145af1ffdc296850316",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ru/rss.xml",
+          "sha256": "01764ce66b08e0a70d057215643406050ec7c94047583b7708b4b607d42d7788",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ru/feed.json",
+          "sha256": "57ee113440c24441ae991aa72da471185b976f5769ba8f1e71865524aca5b840",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "sk": {
+      "language": "sk",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/sk.json",
+      "source_digest": "3816abd4b74dc5a3288e9e72be41ceda3951e309ba03ce743fc08e98e1289a27",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/sk/feed.xml",
+          "sha256": "d80c9572eb6efcc49104e8acb3cd3230d7fca96c6e7943e09ca9ec0b7731d2d3",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/sk/rss.xml",
+          "sha256": "1a8315e45b1361074dfceafb9a396169bf547b1b894d76b00788712de6a61cbe",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/sk/feed.json",
+          "sha256": "02b6e21587c04629713a45d5d7f1b0e528a0445aa04f02b97994009ada3800b0",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "sl-SI": {
+      "language": "sl-SI",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/sl-SI.json",
+      "source_digest": "d2bda85686a89389a9f884c101f1282afef62a5b3099875de52fc96e9e1f650e",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/sl-SI/feed.xml",
+          "sha256": "20643f3d164e7925d4d33c9500b913f1516b59f5be8eedd322831765dae1f71f",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/sl-SI/rss.xml",
+          "sha256": "eb6ef30b771c9e1948840269d1db937e4567135ebeb2fb5567d1393054e19f8b",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/sl-SI/feed.json",
+          "sha256": "f184ee72c6c488553d5224e2939ae2d38a3897486e646c181c5ab28e2c0ffa3b",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "sv": {
+      "language": "sv",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/sv.json",
+      "source_digest": "1eaadaed1f01eb379aee1bcfa960f6bb3f22812a6ad051f67b16c45e5dd8b5e2",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/sv/feed.xml",
+          "sha256": "6d7ef8d7aada29f436f986729230967faab3d4d5a45eeefc9d67bc5cac9404c7",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/sv/rss.xml",
+          "sha256": "17f55daa9b43ef724fecf340e0e8e4be234b98414028333bfa300f4ea4b33497",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/sv/feed.json",
+          "sha256": "d14bd81822e03e20f080adfd675f7e9b5ea4fdfc544246619ddbc32b8ece47b7",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ta-IN": {
+      "language": "ta-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ta-IN.json",
+      "source_digest": "b181fd37a95cac6486d8e398ba489359c82dcd78f48dfe19ef14b9bbfbdeb655",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/feed.xml",
+          "sha256": "f11d5575f23b535399425048cd310e0416c6dd65070b5a441dd32faa467ce96b",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/rss.xml",
+          "sha256": "3d3a4a5a9ca73dfef38d18d752716e29982cf569682f5da0d90a049794a77a6e",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ta-IN/feed.json",
+          "sha256": "26175e72e86d77a76ab42fc4a6596b22d5efdc1e553b4baba0c8e1670e3e4571",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "te-IN": {
+      "language": "te-IN",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/te-IN.json",
+      "source_digest": "f4fae8e15999368a6dfa2c3995158f60c7642a148abce8c93b7899f4bda94dc9",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/feed.xml",
+          "sha256": "23356901a03b2a3bde0c38216b0db739d20811de156932846ecded1d1dfdc156",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/rss.xml",
+          "sha256": "98ffd0408912d123c9253acc5317591fcee2c6c448a8c44688aba5dca9e90098",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/te-IN/feed.json",
+          "sha256": "a17c0b99578e8783a40fea3c01eeedef231caafa1e315a350a75dbe6f1c38e8d",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "th": {
+      "language": "th",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/th.json",
+      "source_digest": "8b9b061c06eb0907703d4f8d0e7d2574f29dbf0a54ba7363d1d28ef4b7482f5b",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/th/feed.xml",
+          "sha256": "2671414c1fe69e8fd7ffebdb654c7a03c4dc2da4f049af11551ee88cad68b594",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/th/rss.xml",
+          "sha256": "7d922cb5d30cd23b876f8c539cec32525fd5ab0ec2b37135ad72df4180558441",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/th/feed.json",
+          "sha256": "90ab5f77e415fbda50cd2757a810ce909550bf4b2adeb4523af60adccfc4a399",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "tr": {
+      "language": "tr",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/tr.json",
+      "source_digest": "7d6713e632bdeedf5698f136ec2c11a7aff734c8dff64dfab0dcc60c3d650541",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/tr/feed.xml",
+          "sha256": "166101f844f4e7658fc26c508141daf02a504bfb8061eb8ed56b602eed714341",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/tr/rss.xml",
+          "sha256": "392511d8813b12668a4ef8912db875ecf4370661a148ccea0b899eb0e8db13ee",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/tr/feed.json",
+          "sha256": "339f96c8c863aa59c950b5ef797da5e7e06b38a430441edaaa32652296e30c19",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "uk": {
+      "language": "uk",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/uk.json",
+      "source_digest": "14537ad08b33fe0b3b108538005bac487b21cfc6d8637635225ca88e4f0b1cd8",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/uk/feed.xml",
+          "sha256": "df9652379cf56e0d9d1d69d96a95c3c9b6d0517f6cc1464c2545b1f74e1508e7",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/uk/rss.xml",
+          "sha256": "14b02ff84a8c9ffa1e959bd34435d50bd01c48f2a2c5feae0acb6ac225e77716",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/uk/feed.json",
+          "sha256": "3049d7c3bc20adaebc1f69f1f4f972911b0b8e3056d162bc47b22dd6cb3b5851",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "ur-PK": {
+      "language": "ur-PK",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/ur-PK.json",
+      "source_digest": "b3f550a71baaa7e9993bd76adc2c2a992f76865485819f9741dfd83740403ca5",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/feed.xml",
+          "sha256": "ec32294f5ef189e5baa4690ab62ed9d605f1157ef2ff96edbefdb9f4e91b0d9d",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/rss.xml",
+          "sha256": "b91d12671d0a223b6cd8f33c7572fe36b1eee21d5460877f5959097e66d3ffa1",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/ur-PK/feed.json",
+          "sha256": "2e3673ce78a1d4b2032fea6f144da2431ee8cc1e37cf231925fe1df4647da049",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "vi": {
+      "language": "vi",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/vi.json",
+      "source_digest": "ca13bdb0272d19167faa8117f1d0d173ff3cb56ef87ef180559503ee75906376",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/vi/feed.xml",
+          "sha256": "7a09d6cbfb7fe7c6b4c9af39694e3c4cd9668a38e615af310cdbf40c289e73d9",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/vi/rss.xml",
+          "sha256": "2be443fe7e8612331e9e3ab488b3bbe34577bd73a16e54e3a193d624c2bf147e",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/vi/feed.json",
+          "sha256": "dcab0e59a5297bdc9bb83b7dce2394e7ea5adbbb9f93c51a288a26a21f9664a0",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "zh-Hans": {
+      "language": "zh-Hans",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hans.json",
+      "source_digest": "9b9d3071f457efd2f45a1f89a00914ce494edb0b07c0728159118fd815b37947",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/feed.xml",
+          "sha256": "57a0c1200d02ab8c51ce9d0e6bff31a8de9b5e4085b67de25f9982017fb14b30",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/rss.xml",
+          "sha256": "e45d8ac5e83fefd268723f01b75abe7d22138b1009fdbcd018b4213549303b9b",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/feed.json",
+          "sha256": "7091fe9cf9ec708b46b3c488974af868e43f799a9d48114beafbb83b2dd021a3",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    },
+    "zh-Hant": {
+      "language": "zh-Hant",
+      "record_count": 47,
+      "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/zh-Hant.json",
+      "source_digest": "e5dd40af00e401a647bdda8abab1045831ce02f16810702f89ef1c8a94cce57c",
+      "last_modified": "2026-09-11T06:25:53Z",
+      "app_keys": [
+        "aibriefpack",
+        "aim990",
+        "aim990plus",
+        "battai",
+        "caldaily",
+        "cvdesk",
+        "cyca",
+        "dailymate",
+        "dailymatelite",
+        "gmoney",
+        "gmoneylite",
+        "hourstag",
+        "hourstaglite",
+        "lockhour",
+        "lumibopomofo",
+        "lumibopomofopro",
+        "lumiletters",
+        "lumiletterspro",
+        "lumimath",
+        "lumimathpro",
+        "lumimission",
+        "lumimissionpro",
+        "lumiweather",
+        "maskmyfile",
+        "mochi",
+        "mochidonestamp",
+        "moneytag",
+        "notesstudio100",
+        "onepageppt",
+        "photocream",
+        "picclear",
+        "savetag",
+        "scanto",
+        "sereno",
+        "shotinbox",
+        "snapport",
+        "snapportlite",
+        "sononote",
+        "tripbee",
+        "tripbeelite",
+        "tripplanet",
+        "unblurry",
+        "wifiaid",
+        "wifiaidlite",
+        "wordmate",
+        "wordmatelite",
+        "zipbox"
+      ],
+      "formats": {
+        "atom": {
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/feed.xml",
+          "sha256": "e5dc2375a234fe0231f580e2c4fc9e8f7e6dacad2232cf28209285aa5353b535",
+          "media_type": "application/atom+xml",
+          "accepted_content_types": [
+            "application/atom+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "rss": {
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/rss.xml",
+          "sha256": "ce252e98c2bf87a33eb44227ae9e4c796c8e2039176131b24d0bd9889d6edf68",
+          "media_type": "application/rss+xml",
+          "accepted_content_types": [
+            "application/rss+xml",
+            "application/xml",
+            "text/xml"
+          ]
+        },
+        "json_feed": {
+          "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/feed.json",
+          "sha256": "9a32addc0d4d65dc60729dc0217a44b3032cfd2a5fab3953e8a6923da6bb5777",
+          "media_type": "application/feed+json",
+          "accepted_content_types": [
+            "application/feed+json",
+            "application/json"
+          ]
+        }
+      }
+    }
+  }
+}

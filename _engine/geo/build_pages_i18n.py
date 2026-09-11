@@ -2324,24 +2324,13 @@ def build_sitemap(keys, locales):
 
 
 def build_robots():
-    # 明確歡迎各大 AI/搜尋爬蟲(GEO/AEO 核心)+ 列出全部 sitemap + 指向 llms.txt。
-    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User",
-               "Claude-SearchBot", "anthropic-ai", "Claude-Web", "PerplexityBot",
-               "Perplexity-User", "BraveSearchBot", "Google-Extended",
-               "Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "CCBot",
-               "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot",
-               "cohere-ai", "YandexBot", "PetalBot"]
-    out = ["# AI assistants and search crawlers are welcome to index and cite this site.",
-           f"# AI index: {SITE}/llms.txt", ""]
-    for bot in ai_bots:
-        out += [f"User-agent: {bot}", "Allow: /", ""]
-    out += ["User-agent: *", "Allow: /", ""]
-    for sm in ("sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
+    from crawler_policy import render_robots
+
+    sitemaps = ("sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml",
                "sitemap_guides.xml", "sitemap_stories.xml", "sitemap_images.xml",
                "sitemap_linkset.xml", "sitemap_oembed.xml", "sitemap_hubs.xml",
-               "sitemap_tools.xml", "sitemap_apps.xml", "sitemap_index.xml"):
-        out.append(f"Sitemap: {SITE}/{sm}")
-    txt = "\n".join(out) + "\n"
+               "sitemap_tools.xml", "sitemap_apps.xml", "sitemap_index.xml")
+    txt = render_robots((f"{SITE}/{sm}" for sm in sitemaps), SITE)
     write_text_if_changed(os.path.join(PAGES, "robots.txt"), txt)
     # .nojekyll:GitHub Pages 原樣提供所有檔案(不跑 Jekyll)
     nojekyll = os.path.join(PAGES, ".nojekyll")

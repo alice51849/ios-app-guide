@@ -5,7 +5,7 @@ on:
     - cron: "0 1 * * *"    # 09:00 台灣 / 亞洲早
     - cron: "0 9 * * *"    # 歐洲早 / 中東
     - cron: "0 15 * * *"   # 美洲
-  workflow_dispatch:        # 可手動觸發(測試用)
+  # 僅由自然 slot 發文；本機／feature branch 只跑 --self-test。
 
 permissions:
   actions: read
@@ -17,7 +17,12 @@ concurrency:
 
 jobs:
   post:
+    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: read
+      contents: write # 僅供 telegram-native-ledger 孤立資料分支的 CAS 寫入。
     env:
       ASC_GROWTH_SIGNALS_B64: ${{ secrets.ASC_GROWTH_SIGNALS_B64 }}
     steps:
@@ -36,11 +41,26 @@ jobs:
       - name: Verify social automation
         if: steps.slot.outputs.should_post == 'true'
         run: |
+          mkdir -p .tel-test-work
+          export TMPDIR="$GITHUB_WORKSPACE/.tel-test-work"
+          python3 .github/scripts/telegram_post.py --self-test
           python3 .github/scripts/test_social_slot_gate.py -q
           python3 .github/scripts/test_social_posting.py -q -b
       - name: Post to Telegram channel (free, no OpenAI)
         if: steps.slot.outputs.should_post == 'true'
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_SLOT: ${{ steps.slot.outputs.slot }}
+          TELEGRAM_SCHEDULE: ${{ github.event.schedule }}
         run: python3 .github/scripts/telegram_post.py
+      - name: Preserve native response and ledger recovery evidence
+        if: always() && steps.slot.outputs.should_post == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: telegram-native-ledger-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .telegram-ledger-run/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 90

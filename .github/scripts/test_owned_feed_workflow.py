@@ -82,6 +82,48 @@ class OwnedFeedWorkflowTests(unittest.TestCase):
         self.assertIn('".github/owned-feed-runtime/$source"', prune)
         self.assertLess(prune.index("cp "), prune.index("rm -rf _engine"))
 
+    def daily_steps(self):
+        workflow = yaml.safe_load(
+            (ROOT / ".github/workflows/geo-daily.yml").read_text(encoding="utf-8"))
+        return next(job["steps"] for job in workflow["jobs"].values()
+                    if any(s.get("name") == "Commit localized pages if any"
+                           for s in job.get("steps", [])))
+
+    def test_daily_catalog_and_owned_feeds_are_committed_in_the_same_generation(self):
+        steps = self.daily_steps()
+        by_name = {step["name"]: step for step in steps if "name" in step}
+        build = "python3 _engine/geo/owned_app_feeds.py --pages-dir .\n"
+        check = "python3 _engine/geo/owned_app_feeds.py --pages-dir . --check"
+        english = by_name["Commit English content first (fast, before slow localization)"]["run"]
+        self.assertLess(english.index(build), english.index(check))
+        self.assertLess(english.index(check), english.index("git add -A"))
+        localized = by_name["Seal localized owned feeds with source catalog"]
+        self.assertIn(build, localized["run"])
+        self.assertIn(check, localized["run"])
+        self.assertLess(steps.index(localized),
+                        steps.index(by_name["Verify localized output before commit"]))
+        commit = by_name["Commit localized pages if any"]["run"]
+        self.assertLess(commit.index(check), commit.index("git add -A"))
+
+    def test_daily_remote_reconciliation_rebuilds_and_checks_before_tests_and_push(self):
+        by_name = {step["name"]: step for step in self.daily_steps() if "name" in step}
+        for name, callback in (
+            ("Commit English content first (fast, before slow localization)", "reconcile_english_phase"),
+            ("Commit localized pages if any", "reconcile_localized_phase"),
+        ):
+            with self.subTest(phase=callback):
+                script = by_name[name]["run"]
+                body = script.split(callback + "() {", 1)[1].split(
+                    "export REMOTE_FIRST_RECONCILE_MESSAGE", 1)[0]
+                build = body.index("owned_app_feeds.py --pages-dir .\n")
+                check = body.index("owned_app_feeds.py --pages-dir . --check")
+                suite = body.index("parallel_unittest.py")
+                self.assertLess(build, check)
+                self.assertLess(check, suite)
+                self.assertIn("remote_first_publish " + callback, script)
+                subprocess.run(["bash", "-n"], input=script, text=True,
+                               capture_output=True, check=True)
+
 
 if __name__ == "__main__":
     unittest.main()

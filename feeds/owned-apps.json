@@ -2,8 +2,8 @@
   "schema": "lumi.owned-app-feeds/v1",
   "home_page_url": "https://open.cait518.cc/ios-app-guide/feeds/index.html",
   "roster_digest": "40d77eea74d7ce9f9bf9a8b61196552e25cd1d43ea9fa123b9212af17a9d38b6",
-  "generation_digest": "5bccff2a2156abae11bd409a1b359d84361d3dcc7bdee44a2f2c5cffbeff78d4",
-  "last_modified": "2026-09-11T06:25:53Z",
+  "generation_digest": "4398c824b21032da14b0ca8bf8019a02c7b291861f6978ffe03f8b657bbe5335",
+  "last_modified": "2026-09-11T10:55:11Z",
   "app_count": 47,
   "locale_count": 50,
   "record_count": 2350,
@@ -2104,8 +2104,8 @@
       "language": "kn-IN",
       "record_count": 47,
       "source_catalog": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/locales/kn-IN.json",
-      "source_digest": "251b66e1434d02e7ae99adc55453dd34250badac0a9323b6ecca39b4090b77ab",
-      "last_modified": "2026-09-11T06:25:53Z",
+      "source_digest": "a3fa5d87be0391b5cc889bcdf0e6fd377efdf84d444bf8decb00711fd04ed453",
+      "last_modified": "2026-09-11T10:55:11Z",
       "app_keys": [
         "aibriefpack",
         "aim990",
@@ -2158,7 +2158,7 @@
       "formats": {
         "atom": {
           "url": "https://open.cait518.cc/ios-app-guide/kn-IN/feed.xml",
-          "sha256": "89fe68ad8f9fbd3f45c02e3b9c33dd87716fcddac3271a76e6230bd926b0a58e",
+          "sha256": "3a4e2b230077fa0c470bd10ea4cf8b872ac8619e7d75440785dee13d2bf767a1",
           "media_type": "application/atom+xml",
           "accepted_content_types": [
             "application/atom+xml",
@@ -2168,7 +2168,7 @@
         },
         "rss": {
           "url": "https://open.cait518.cc/ios-app-guide/kn-IN/rss.xml",
-          "sha256": "7626075e2327a50103901b2cb88885387aff3bd68aaa3e39dfe0e2863d6216bd",
+          "sha256": "42673de3e3b67607028c0ccadd81e0f4131f828938924baff241e8ce429b5bd1",
           "media_type": "application/rss+xml",
           "accepted_content_types": [
             "application/rss+xml",
@@ -2178,7 +2178,7 @@
         },
         "json_feed": {
           "url": "https://open.cait518.cc/ios-app-guide/kn-IN/feed.json",
-          "sha256": "1a8415ce6909aae205276c30fb7ee5289b386487026f19a69a311ee2d9fb7931",
+          "sha256": "60c7766ac4a522434327f00ae323d396eba399fd95b345f61c65e05d410967d0",
           "media_type": "application/feed+json",
           "accepted_content_types": [
             "application/feed+json",

@@ -1,17 +1,24 @@
 import copy
 from email.message import Message
 from html.parser import HTMLParser
+import hashlib
+import json
 from pathlib import Path
 import re
 import shutil
 import sys
 import unittest
 from unittest import mock
+import urllib.parse
 import uuid
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import owned_app_feeds as feeds
+import owned_feed_delivery as delivery
+
+PRODUCTION_FIXTURE = Path(__file__).parent / "fixtures/owned_feed_production_kn_IN.json"
+KANNADA_SUMMARY = "Lumi ಕರಡಿಯೊಂದಿಗೆ ಗಣಿತದ ಲೋಕವನ್ನು ಅನ್ವೇಷಿಸಿ."
 
 
 class OwnedAppFeedsTests(unittest.TestCase):
@@ -220,7 +227,7 @@ class OwnedAppFeedsTests(unittest.TestCase):
                 self.source().write_bytes(original)
 
     def test_unicode_html_escaping_and_full_content_survive_all_formats(self):
-        native = '照片、文字 & <隱私>：「一行」 مرحبًا — 👩🏽‍💻'
+        native = 'Lumi 照片、文字 & <隱私>：「一行」 — 👩🏽‍💻'
         self.change_source(lambda c: c["apps"][0].update(summary=native), "zh-Hant")
         feeds.build(self.root, now="2026-09-02T00:00:00Z")
         data = feeds.read_json(self.root / feeds.relative("zh-Hant", "json_feed"))
@@ -229,6 +236,87 @@ class OwnedAppFeedsTests(unittest.TestCase):
         for fmt in ("atom", "rss"):
             ET.fromstring((self.root / feeds.relative("zh-Hant", fmt)).read_bytes())
         feeds.validate(self.root)
+
+    def test_real_production_kannada_catalog_rejects_pollution_and_accepts_source_fix(self):
+        catalog = feeds.read_json(PRODUCTION_FIXTURE)["catalog"]
+        path = self.source("kn-IN")
+        path.write_bytes(feeds.json_bytes(catalog))
+        with self.assertRaisesRegex(feeds.FeedError, "Foreign script in kn-IN/lumimathpro"):
+            feeds.load_sources(self.root)
+        row = next(a for a in catalog["apps"] if a["key"] == "lumimathpro")
+        row["summary"] = KANNADA_SUMMARY
+        path.write_bytes(feeds.json_bytes(catalog))
+        _, channels = feeds.load_sources(self.root)
+        result = next(i for i in channels["kn-IN"]["items"]
+                      if i["_owned_app"]["app_key"] == "lumimathpro")
+        self.assertEqual(KANNADA_SUMMARY, result["summary"])
+        self.assertEqual(47, len(channels["kn-IN"]["items"]))
+
+    def test_catalog_changes_once_then_two_generations_and_notifications_are_noops(self):
+        initial = delivery.inventory(self.root)
+        baseline = {url: spec["sha256"] for url, spec in initial["topics"].items()}
+        self.change_source(lambda c: c["apps"][0].update(summary="Une description vraiment nouvelle."))
+        feeds.build(self.root, now="2026-09-02T00:00:00Z")
+        materialized = {
+            p.relative_to(self.root): p.read_bytes()
+            for p in self.root.rglob("*") if p.is_file()
+        }
+        modified = {
+            locale: [i["date_modified"] for i in feeds.read_json(
+                self.root / feeds.relative(locale, "json_feed"))["items"]]
+            for locale in feeds.OFFICIAL_LOCALES
+        }
+        state = self.root / ".outbox/state.json"
+        source_sha = "a" * 40
+        plan = delivery.prepare(self.root, state, source_sha, baseline=baseline)
+        self.assertEqual(7, plan["pending_notifications"])
+
+        def acknowledge(*, receipt_sink, topics=None, topic=None, **kwargs):
+            fields = ([("hub.mode", "publish")] + [("hub.url", t) for t in topics]
+                      if topics is not None else [("url", topic)])
+            request = urllib.parse.urlencode(fields).encode("ascii")
+            receipt_sink({
+                "http_status": 200, "accepted_at": "2026-09-02T00:00:00Z",
+                "request_sha256": hashlib.sha256(request).hexdigest(),
+                "response_sha256": hashlib.sha256(b"accepted").hexdigest(),
+            })
+
+        with (
+            mock.patch.object(delivery.notify_websub, "notify", side_effect=acknowledge) as web,
+            mock.patch.object(delivery.notify_rsscloud, "ping", side_effect=acknowledge) as rss,
+        ):
+            opener = lambda req, timeout: self.response(req)
+            for protocol in ("websub", "rsscloud"):
+                self.assertEqual(0, delivery.deliver(
+                    self.root, state, source_sha, protocol, opener=opener)["pending"])
+            current = delivery.inventory(self.root)
+            accepted = feeds.read_json(state)["accepted"]
+            self.assertEqual(7, len(accepted))
+            for receipt in accepted.values():
+                self.assertEqual(source_sha, receipt["source_sha"])
+                self.assertEqual(current["topics"][receipt["topic"]]["sha256"],
+                                 receipt["content_sha256"])
+            for day, new_sha in ((3, "b" * 40), (4, "c" * 40)):
+                result = feeds.build(self.root, now=f"2026-09-{day:02d}T00:00:00Z")
+                self.assertEqual(0, result["changed_files"])
+                self.assertEqual(materialized, {
+                    relative: (self.root / relative).read_bytes()
+                    for relative in materialized
+                })
+                self.assertEqual(modified, {
+                    locale: [i["date_modified"] for i in feeds.read_json(
+                        self.root / feeds.relative(locale, "json_feed"))["items"]]
+                    for locale in feeds.OFFICIAL_LOCALES
+                })
+                same = {url: spec["sha256"] for url, spec in current["topics"].items()}
+                self.assertEqual(0, delivery.prepare(
+                    self.root, state, new_sha, baseline=same)["pending_notifications"])
+                for protocol in ("websub", "rsscloud"):
+                    result = delivery.deliver(self.root, state, new_sha, protocol, opener=opener)
+                    self.assertTrue(result["unchanged"])
+                    self.assertEqual(0, result["accepted"])
+            self.assertEqual(2, web.call_count)
+            self.assertEqual(1, rss.call_count)
 
     def test_discovery_and_sitemap_are_idempotent_without_changing_buyer_pages(self):
         buyer = self.root / "fr-FR" / "wordmate.html"
@@ -340,6 +428,68 @@ class OwnedAppFeedsTests(unittest.TestCase):
         ]))
         self.assertEqual({"baseline_rss_owned_failures": 2, "resolved": 2, "remaining": 0},
                          feeds.western_readback(self.root, matrix))
+
+
+class ProductionCatalogScriptTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.fixture = feeds.read_json(PRODUCTION_FIXTURE)
+        cls.roster = feeds.canonical_manifest()["apps"]
+
+    def test_fixture_is_real_47_record_production_catalog_not_synthetic_copy(self):
+        catalog = self.fixture["catalog"]
+        self.assertEqual("1ebc4bc2ae0ebe9b9103bf8eb76aba5548ee1ee4",
+                         self.fixture["source_guide_commit"])
+        self.assertEqual("api/v1/ios-app-catalog/locales/kn-IN.json",
+                         self.fixture["source_path"])
+        self.assertEqual(set(self.roster), {a["key"] for a in catalog["apps"]})
+        failures = []
+        for app in catalog["apps"]:
+            try:
+                feeds.require_locale_script(
+                    app["summary"], "kn-IN", app["key"],
+                    brands=(self.roster[app["key"]]["name"], app["name"]),
+                )
+            except feeds.FeedError:
+                failures.append(app["key"])
+        self.assertEqual(["lumimathpro"], failures)
+        bad = next(a for a in catalog["apps"] if a["key"] == "lumimathpro")
+        self.assertEqual("Lumi ಕರಡಿ与你一起探索数学的宇宙。", bad["summary"])
+
+    def test_canonical_source_first_paragraph_is_native_kannada(self):
+        source = feeds.read_json(feeds.HERE.parent / "data/math_pro_full.json")
+        paragraph = source["kn-IN"]["description"].split("\n\n")[0]
+        self.assertEqual(KANNADA_SUMMARY, paragraph)
+        self.assertEqual(1.0, feeds.require_locale_script(paragraph, "kn-IN", "source"))
+
+    def test_latin_brand_exception_does_not_exempt_english_body(self):
+        value = "Lumi Math Pro ಗಣಿತ ಕಲಿಕೆ"
+        with self.assertRaisesRegex(feeds.FeedError, "Native script ratio"):
+            feeds.require_locale_script(value, "kn-IN", "brand")
+        self.assertEqual(1.0, feeds.require_locale_script(
+            value, "kn-IN", "brand", brands=("Lumi Math Pro",)))
+        with self.assertRaisesRegex(feeds.FeedError, "Native script ratio"):
+            feeds.require_locale_script(
+                "Lumi Math Pro is the best way to explore fun mathematics ಗಣಿತ.",
+                "kn-IN", "english body", brands=("Lumi Math Pro",))
+        with self.assertRaisesRegex(feeds.FeedError, "Foreign script"):
+            feeds.require_locale_script(
+                value + " 数学", "kn-IN", "brand injection",
+                brands=(value + " 数学",))
+
+    def test_production_chinese_phonetics_and_japanese_scripts_are_native(self):
+        for app in self.fixture["native_multi_script_examples"]:
+            with self.subTest(locale=app["locale"], key=app["app_key"]):
+                ratio = feeds.require_locale_script(
+                    app["summary"], app["locale"], app["app_key"],
+                    brands=(self.roster[app["app_key"]]["name"], app["name"]),
+                )
+                self.assertGreaterEqual(ratio, feeds.MIN_NATIVE_SCRIPT_RATIO)
+        for value in ("ಗಣಿತ ಕಲಿಕೆ 中文", "ಗಣಿತ ಕಲಿಕೆ Ж", "ಗಣಿತ ಕಲಿಕೆ ㄅ"):
+            with self.subTest(value=value), self.assertRaisesRegex(feeds.FeedError, "Foreign script"):
+                feeds.require_locale_script(value, "kn-IN", "foreign")
+        with self.assertRaisesRegex(feeds.FeedError, "Foreign script"):
+            feeds.require_locale_script("French text 與", "fr-FR", "foreign")
 
 
 if __name__ == "__main__":

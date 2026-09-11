@@ -32,6 +32,12 @@ buyer-page 或 conversion-route 內容。
    每筆包含母語 publisher disclosure 與 App Store CTA。
 4. 不允許英文 body/wrapper fallback、不正確 locale、重複 JSON key／App ID、
    偷換產品身分、寫死金額、站外 canonical 或錯誤 App Store ID。
+   `regex` 的 Unicode Script 屬性逐 locale 驗證：非 Latin 語系至少 60%
+   有效字母屬目標 script，且禁止其他非 Latin script；只有明確 Latin 品牌
+   不計入比例，不可拿品牌例外藏異種 script。日文允許 Han／Hiragana／Katakana，
+   中文允許 Han／Bopomofo（真實注音教學內容），不是把漢字放行給 Kannada。
+   真 production Kannada catalog fixture 保留原混入中文的反例，
+   正式 `math_pro_full.json`、HTML、catalog 與 feed 改用完整 Kannada 摘要。
 5. XML 宣告 UTF-8，JSON 以 UTF-8 寫入。GitHub Pages 的 XML 目前實際回傳
    `application/xml`；JSON 回傳 `application/json; charset=utf-8`。這些是合法
    可解析的相容 MIME，不假裝伺服器回傳 `application/rss+xml`。
@@ -43,6 +49,10 @@ buyer-page 或 conversion-route 內容。
   item 的 `date_modified`；ID 與 `date_published` 保留。
 - Snapshot 查核時間、售價快取、source 排序與 Git commit 本身不造成 feed churn。
   無變更重跑必須是 **0 changed files**，包含 bytes、mtime 與日期。
+- `geo-daily.yml` 英文與在地化兩段提交都在 commit 前生成及驗證 owned feeds；
+  localized attestation 必須在 feed 生成後才封存，commit 前再做唯讀 check。
+  Remote reconciliation 同樣先重建及 check，再跑原測試與 push，避免 catalog
+  已提交、feed 卻只在 Pages runner 暫時生成而令下一次部署重新改日期。
 - `owned_feed_delivery.py prepare` 在部署前讀取原公開 index／legacy feed，
   將真正內容改變寫入私有 durable outbox；不是看 workflow 日期或 commit 新舊。
 - `notify` 先驗所有待發 topic 已上線且與當次 source SHA／inventory digest 一致。

@@ -11,6 +11,7 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import email.utils
+from functools import lru_cache
 import hashlib
 import html
 import json
@@ -18,10 +19,13 @@ import os
 from pathlib import Path
 import re
 import sys
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+
+import regex
 
 from live_app_manifest import canonical_manifest
 from official_locales import OFFICIAL_LOCALES, require_official_locale_coverage
@@ -73,6 +77,23 @@ PRICE = re.compile(
     r"[$€£¥₹₩₽₺₫₱]\s*\d|\d[\d.,]*\s*(?:USD|EUR|GBP|CAD|AUD|€|\$)\b"
 )
 SHA256 = re.compile(r"[0-9a-f]{64}")
+MIN_NATIVE_SCRIPT_RATIO = 0.60
+NATIVE_SCRIPTS = {
+    "ar-SA": ("Arabic",), "bn-BD": ("Bengali",), "el": ("Greek",),
+    "gu-IN": ("Gujarati",), "he": ("Hebrew",), "hi": ("Devanagari",),
+    "ja": ("Han", "Hiragana", "Katakana"), "kn-IN": ("Kannada",),
+    "ko": ("Hangul",), "ml-IN": ("Malayalam",), "mr-IN": ("Devanagari",),
+    "or-IN": ("Oriya",), "pa-IN": ("Gurmukhi",), "ru": ("Cyrillic",),
+    "ta-IN": ("Tamil",), "te-IN": ("Telugu",), "th": ("Thai",),
+    "uk": ("Cyrillic",), "ur-PK": ("Arabic",),
+    "zh-Hans": ("Han", "Bopomofo"), "zh-Hant": ("Han", "Bopomofo"),
+}
+LATIN_BRANDS = ("Lumi Studio", "Lumi", "App Store", "Apple Watch",
+                "iPhone", "iPad", "iOS", "Apple")
+SCRIPT_NEUTRAL = regex.compile(r"[\p{Script=Common}\p{Script=Inherited}]")
+SCRIPT_LETTERS = regex.compile(r"\p{L}")
+SCRIPT_TEXT = regex.compile(r"[\p{L}\p{M}]")
+LATIN_BRAND = regex.compile(r"[\p{Script=Latin}\p{N}\p{P}\p{Zs}\p{S}]+")
 PAID_FREE_TERMS = {
     "ar": r"مجاني|مجانًا", "bn": r"বিনামূল্য|বিনা মূল্যে",
     "ca": r"\bgratuït", "cs": r"\bzdarma\b", "da": r"\bgratis\b",
@@ -134,6 +155,52 @@ def text(value, field: str) -> str:
     return " ".join(value.split())
 
 
+@lru_cache(maxsize=8192)
+def _script_assessment(value: str, scripts: tuple[str, ...],
+                       brands: tuple[str, ...], calculate_ratio: bool):
+    native = regex.compile("[" + "".join(r"\p{Script=" + s + "}" for s in scripts) + "]")
+    allowed = regex.compile(
+        r"[\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}"
+        + "".join(r"\p{Script=" + s + "}" for s in scripts) + "]"
+    )
+    normalized = unicodedata.normalize("NFKC", value)
+    foreign = tuple(sorted({c for c in SCRIPT_TEXT.findall(normalized)
+                            if not allowed.fullmatch(c)}))
+    if foreign or not calculate_ratio:
+        return foreign, None
+    # Brand exemptions affect the ratio only; they cannot hide foreign script.
+    for brand in brands:
+        brand = unicodedata.normalize("NFKC", brand).strip()
+        if brand and LATIN_BRAND.fullmatch(brand):
+            normalized = re.sub(
+                r"(?<![A-Za-z0-9])" + re.escape(brand) + r"(?![A-Za-z0-9])",
+                "", normalized, flags=re.I,
+            )
+    letters = [c for c in SCRIPT_LETTERS.findall(normalized) if not SCRIPT_NEUTRAL.fullmatch(c)]
+    ratio = sum(bool(native.fullmatch(c)) for c in letters) / len(letters) if letters else 0.0
+    return foreign, ratio
+
+
+def require_locale_script(value: str, locale: str, field: str, *,
+                          brands=(), require_native: bool = True) -> float | None:
+    if locale not in OFFICIAL_LOCALES:
+        raise FeedError(f"Unsupported script-gate locale: {locale}")
+    scripts = NATIVE_SCRIPTS.get(locale, ("Latin",))
+    brand_key = tuple(sorted(set((*LATIN_BRANDS, *brands)), key=lambda v: (-len(v), v)))
+    foreign, ratio = _script_assessment(
+        value, scripts, brand_key, locale in NATIVE_SCRIPTS and require_native,
+    )
+    if foreign:
+        codes = ",".join(f"U+{ord(c):04X}" for c in foreign[:8])
+        raise FeedError(f"Foreign script in {locale}/{field}: {codes}")
+    if ratio is not None and ratio < MIN_NATIVE_SCRIPT_RATIO:
+        raise FeedError(
+            f"Native script ratio below {MIN_NATIVE_SCRIPT_RATIO:.0%} in "
+            f"{locale}/{field}: {ratio:.1%}"
+        )
+    return ratio
+
+
 def timestamp(value: str) -> str:
     if not isinstance(value, str) or not re.fullmatch(
         r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", value
@@ -185,6 +252,10 @@ def _copy(source: Path) -> dict:
             or result[locale]["cta"] == "View on the App Store"
         ):
             raise FeedError(f"English wrapper fallback: {locale}")
+        for field in ("disclosure", "cta"):
+            require_locale_script(result[locale][field], locale, field)
+        for model, label in result[locale]["purchase_labels"].items():
+            require_locale_script(label, locale, model)
     return result
 
 
@@ -242,6 +313,10 @@ def load_sources(pages: Path, source: Path = HERE) -> tuple[dict, dict]:
             if app.get("guide_url") != canonical:
                 raise FeedError(f"Canonical locale drift: {locale}/{key}")
             summary = text(app.get("summary"), f"{locale}/{key}/summary")
+            name = text(app.get("name"), f"{locale}/{key}/name")
+            brands = (roster["apps"][key]["name"], APPS[key]["name"], name)
+            require_locale_script(summary, locale, f"{key}/summary", brands=brands)
+            require_locale_script(name, locale, f"{key}/name", require_native=False)
             if PRICE.search(summary):
                 raise FeedError(f"Literal price in native summary: {locale}/{key}")
             if model == "paid_upfront" and re.search(
@@ -253,7 +328,7 @@ def load_sources(pages: Path, source: Path = HERE) -> tuple[dict, dict]:
                 "id": item_id(app_id, locale),
                 "url": canonical,
                 "external_url": _app_store_url(app.get("app_store_url"), app_id),
-                "title": text(app.get("name"), f"{locale}/{key}/name"),
+                "title": name,
                 "summary": summary,
                 "language": locale,
                 "_owned_app": {
@@ -278,6 +353,8 @@ def load_sources(pages: Path, source: Path = HERE) -> tuple[dict, dict]:
             "disclosure": copies[locale]["disclosure"],
             "items": [by_key[key] for key in sorted(by_key)],
         }
+        require_locale_script(result[locale]["title"], locale, "feed title",
+                              require_native=False)
     english = {i["_owned_app"]["app_key"]: i["summary"]
                for i in result["en-US"]["items"]}
     for locale, channel in result.items():

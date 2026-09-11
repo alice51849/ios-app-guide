@@ -15,6 +15,7 @@ if GEO not in sys.path:
     sys.path.insert(0, GEO)
 
 import app_store_storefronts as storefronts
+import market_availability
 import build_pages_i18n as pages
 from external_app_locales import EXTERNAL_APP_LOCALES
 from official_locales import OFFICIAL_LOCALE_SET
@@ -160,7 +161,12 @@ class ExternalAppLocaleTests(unittest.TestCase):
                         countryless = (
                             f"https://apps.apple.com/app/id{APPSTORE[key]}"
                         )
-                        if locale in pages.STOREFRONT_ROUTED_LOCALES:
+                        if market_availability.is_unavailable(locale):
+                            # 沒有可驗證市場:整頁不得出現任何 App Store 連結,
+                            # 也不得出現 /us/ 或 /in/ 之類的替代國家。
+                            self.assertNotIn("apps.apple.com", content)
+                            self.assertIn("market-availability", content)
+                        elif locale in pages.STOREFRONT_ROUTED_LOCALES:
                             # 該語系宣告了自己的 storefront:必須連那個 storefront,
                             # 而且**不得**出現無國別 URL。這與
                             # test_storefront_validity.test_bengali_rejects_countryless_and_india_urls

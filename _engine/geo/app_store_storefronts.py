@@ -11,6 +11,8 @@ import urllib.parse
 
 from official_locales import OFFICIAL_LOCALE_SET
 
+import market_availability
+
 
 STATE_FILE = ".appstore_storefront_state.json"
 PRICE_RE = re.compile(r"(?:0|[1-9][0-9]*)(?:\.[0-9]+)?")
@@ -107,21 +109,22 @@ if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("Free labels must cover 50 official locales")
 
 
-# 這些 locale 的公開 App Store 連結必須走該語系宣告的 storefront,**不得**使用無
-# 國別的全球 URL。這是本模組的單一權威,產生器(build_pages_i18n)與資料驗證
-# (alternatives_i18n)都必須讀這一份,否則就會像 2026-09-11 的 Indic 商店路由遷移
-# 那樣:一邊改成 /bd/,另一邊還在硬性要求無國別,兩支測試互相矛盾。
-#
-# 對應的通過中契約:geo/tests/test_storefront_validity.py 的
-# `test_bengali_rejects_countryless_and_india_urls`。
-STOREFRONT_ROUTED_LOCALES = ("bn-BD",)
+# storefront-routed locale:公開連結必須走該語系宣告的 storefront,不得用無國別
+# 全球 URL。2026-09-11 曾把 bn-BD 放在這裡,但 2026-09-12 的 Apple 一手證據顯示
+# Apple 在孟加拉沒有 Media Services(官方 174 國清單無 Bangladesh;/bd/ 會 301 到
+# /us/;lookup 與 search country=BD 皆 0),所以 bn-BD 不是「路由到別的 storefront」,
+# 而是「沒有可驗證市場」—— 由 market_availability 處理,不再列在這裡。
+STOREFRONT_ROUTED_LOCALES: tuple[str, ...] = ()
 
 
-def canonical_app_store_url_for(app_id: str, locale: str) -> str:
+def canonical_app_store_url_for(app_id: str, locale: str) -> str | None:
     """該 locale 的公開 canonical App Store URL(無 tracking 參數)。
 
-    storefront-routed 的 locale 回該國路徑,其餘回全球無國別形式。
+    沒有可驗證市場的 locale 回 ``None`` —— 那是唯一誠實的答案,呼叫端必須渲染成
+    不可點的 availability 狀態,**不得**用 US、India 或無國別 URL 補位。
     """
+    if market_availability.is_unavailable(locale):
+        return None
     countryless = f"https://apps.apple.com/app/id{app_id}"
     if locale in STOREFRONT_ROUTED_LOCALES:
         return localized_app_store_url(countryless, locale)

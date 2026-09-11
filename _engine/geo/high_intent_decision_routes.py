@@ -14,12 +14,14 @@ from collections import Counter
 from datetime import datetime, timezone
 import hashlib
 import html
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path, PurePosixPath
 import re
 from typing import Any, Iterable
-from urllib.parse import parse_qsl, urlsplit
+from urllib.parse import parse_qsl, unquote, urlsplit
+import xml.etree.ElementTree as ET
 
 import app_store_storefronts
 import conversion_route_contract
@@ -2650,6 +2652,227 @@ def verify_materialization_closure(
     }
 
 
+SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
+
+
+class _IncrementalHead(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.canonicals: list[str] = []
+        self.alternates: dict[str, str] = {}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "link":
+            return
+        values = dict(attrs)
+        rel = (values.get("rel") or "").split()
+        href = values.get("href") or ""
+        if "canonical" in rel:
+            self.canonicals.append(href)
+        if "alternate" in rel and values.get("hreflang"):
+            locale = str(values["hreflang"])
+            if locale in self.alternates:
+                raise ValueError(f"Duplicate incremental hreflang: {locale}")
+            self.alternates[locale] = href
+
+
+def _incremental_target(root: Path, relative: PurePosixPath) -> Path:
+    target = root / Path(*relative.parts)
+    if any((root / Path(*relative.parts[:index])).is_symlink()
+           for index in range(1, len(relative.parts) + 1)):
+        raise ValueError(f"Symlink in incremental target: {relative}")
+    return target
+
+
+def _incremental_url_path(value: str) -> PurePosixPath:
+    parsed, base = urlsplit(value), urlsplit(SITE)
+    prefix = base.path.rstrip("/") + "/"
+    if (
+        parsed.scheme != base.scheme or parsed.netloc != base.netloc
+        or parsed.query or parsed.fragment
+        or not (parsed.path.startswith(prefix) or parsed.path == base.path)
+    ):
+        raise ValueError(f"Incremental URL is outside the canonical site: {value}")
+    relative = unquote(parsed.path[len(prefix):]) if parsed.path.startswith(prefix) else ""
+    if not relative or relative.endswith("/"):
+        relative += "index.html"
+    return _validated_relative_path(relative)
+
+
+def _incremental_xml(text: str, relative: PurePosixPath) -> ET.Element:
+    if "<!DOCTYPE" in text.upper() or "<!ENTITY" in text.upper():
+        raise ValueError(f"Declarations are forbidden in incremental XML: {relative}")
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError as error:
+        raise ValueError(f"Invalid incremental sitemap: {relative}") from error
+    if root.tag not in {
+        f"{{{SITEMAP_NAMESPACE}}}urlset", f"{{{SITEMAP_NAMESPACE}}}sitemapindex",
+    }:
+        raise ValueError(f"Unexpected incremental sitemap root: {relative}")
+    return root
+
+
+def incremental_fragment_paths(changed_paths: Iterable[str]) -> tuple[PurePosixPath, ...]:
+    if isinstance(changed_paths, (str, bytes)):
+        raise ValueError("Incremental changed paths must be a sequence of paths")
+    selected = {
+        PurePosixPath(SITEMAP_RELATIVE.as_posix()),
+        PurePosixPath(SITEMAP_INDEX_RELATIVE.as_posix()),
+    }
+    for raw in changed_paths:
+        relative = _validated_relative_path(raw)
+        if relative.parts[0] in {"_engine", ".github", ".git"}:
+            continue
+        if (relative.name.startswith("sitemap") and relative.suffix == ".xml"
+                or relative.name == "index.html"):
+            selected.add(relative)
+    return tuple(sorted(selected, key=str))
+
+
+def _incremental_fragment_plan(
+    output_dir: Path,
+    rendered: dict[Path, tuple[str, str]],
+    changed_paths: Iterable[str],
+) -> tuple[dict[PurePosixPath, str], dict[str, int]]:
+    """Never feed a partial inventory into the destructive full-site closer."""
+    from gen_locale_indexation import INDEXABLE_LOCALES
+
+    selected = incremental_fragment_paths(changed_paths)
+    virtual = {PurePosixPath(path.as_posix()): text for path, (_, text) in rendered.items()}
+    index_relative = PurePosixPath(SITEMAP_INDEX_RELATIVE.as_posix())
+    index_path = _incremental_target(output_dir, index_relative)
+    if not index_path.is_file():
+        raise ValueError("Incremental publication requires the existing sitemap index")
+    original = index_path.read_text(encoding="utf-8")
+    index = _incremental_xml(original, index_relative)
+    if index.tag != f"{{{SITEMAP_NAMESPACE}}}sitemapindex":
+        raise ValueError("Incremental sitemap index must be a sitemapindex")
+    loc_tag = f"{{{SITEMAP_NAMESPACE}}}loc"
+    entry_tag = f"{{{SITEMAP_NAMESPACE}}}sitemap"
+    changed = False
+    own_url = f"{SITE}/{SITEMAP_RELATIVE.as_posix()}"
+    seen_own = False
+    deleted = {
+        path for path in selected if path != index_relative and path not in virtual
+        and not _incremental_target(output_dir, path).exists()
+    }
+    for entry in list(index):
+        location = entry.find(loc_tag)
+        if entry.tag != entry_tag or location is None or not location.text:
+            raise ValueError("Malformed incremental sitemap index entry")
+        relative = _incremental_url_path(location.text)
+        if relative in deleted or location.text == own_url and seen_own:
+            index.remove(entry)
+            changed = True
+        elif location.text == own_url:
+            seen_own = True
+    indexed = {entry.findtext(loc_tag) for entry in index}
+    for relative in selected:
+        if (relative == index_relative or relative in deleted
+                or relative.suffix != ".xml"):
+            continue
+        url = f"{SITE}/{relative.as_posix()}"
+        if url not in indexed:
+            entry = ET.SubElement(index, entry_tag)
+            ET.SubElement(entry, loc_tag).text = url
+            indexed.add(url)
+            changed = True
+    if changed:
+        ET.register_namespace("", SITEMAP_NAMESPACE)
+        ET.indent(index, space="  ")
+        virtual[index_relative] = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            + ET.tostring(index, encoding="unicode") + "\n"
+        )
+    else:
+        virtual[index_relative] = original
+    stats = {"sitemap_fragments": 0, "sitemap_locations": 0, "index_fragments": 0}
+    for relative in selected:
+        if relative in deleted:
+            continue
+        text = virtual.get(relative)
+        if text is None:
+            text = _incremental_target(output_dir, relative).read_text(encoding="utf-8")
+        if relative.suffix == ".xml":
+            document = _incremental_xml(text, relative)
+            locations = [node.text or "" for node in document.iter(loc_tag)]
+            if len(locations) != len(set(locations)):
+                raise ValueError(f"Duplicate incremental sitemap locations: {relative}")
+            for location in locations:
+                target_relative = _incremental_url_path(location)
+                if (target_relative not in virtual and
+                        not _incremental_target(output_dir, target_relative).is_file()):
+                    raise ValueError(f"Missing incremental sitemap target: {target_relative}")
+            stats["sitemap_fragments"] += 1
+            stats["sitemap_locations"] += len(locations)
+        else:
+            head = _IncrementalHead()
+            head.feed(text)
+            if (len(head.canonicals) != 1
+                    or _incremental_url_path(head.canonicals[0]) != relative):
+                raise ValueError(f"Incremental index canonical drift: {relative}")
+            for locale, url in head.alternates.items():
+                target_relative = _incremental_url_path(url)
+                if (locale != "x-default" and locale not in INDEXABLE_LOCALES
+                        or not _incremental_target(output_dir, target_relative).is_file()):
+                    raise ValueError(
+                        f"Incremental index hreflang drift: {relative}: {locale} -> {url}"
+                    )
+            stats["index_fragments"] += 1
+    updates = {index_relative: virtual[index_relative]} if changed else {}
+    return updates, stats
+
+
+def _verify_incremental_route_heads(
+    records: list[dict[str, Any]], rendered: dict[Path, tuple[str, str]],
+) -> dict[str, int]:
+    localized = 0
+    for record in records:
+        head = _IncrementalHead()
+        head.feed(rendered[route_relative(record)][1])
+        expected = dict(record.get("alternates", {}))
+        if expected.get("en-US"):
+            expected["x-default"] = expected["en-US"]
+        if head.canonicals != [record["canonical_url"]] or head.alternates != expected:
+            raise ValueError(f"Incremental canonical/hreflang drift: {record['route_id']}")
+        localized += bool(expected)
+    return {"canonical_routes": len(records), "hreflang_routes": localized}
+
+
+def _write_incremental_outputs(
+    records: list[dict[str, Any]], report: dict[str, Any], output_dir: Path,
+    *, source_path: Path, changed_paths: Iterable[str],
+) -> dict[str, Any]:
+    output_dir = output_dir.resolve()
+    rendered, manifest = _rendered_outputs(records, report, output_dir)
+    _validate_release_cardinality(manifest, source_path=source_path)
+    heads = _verify_incremental_route_heads(records, rendered)
+    updates, fragments = _incremental_fragment_plan(output_dir, rendered, changed_paths)
+    written = write_outputs(records, report, output_dir)
+    for relative, text in updates.items():
+        _atomic_write_text(output_dir / Path(*relative.parts), text)
+    closure = verify_production_closure(
+        output_dir, expected_manifest=manifest, source_path=source_path,
+    )
+    return {**written, **closure, **heads, **fragments,
+            "managed_outputs": len(rendered), "site_scan": False,
+            "updated_fragments": [path.as_posix() for path in updates]}
+
+
+def materialize_incremental(
+    output_dir: Path, *, inventory_path: Path, source_path: Path = SOURCE_PATH,
+    provider_token: str, changed_paths: Iterable[str] = (),
+) -> dict[str, Any]:
+    records, report = build(
+        inventory_path=inventory_path, source_path=source_path, provider_token=provider_token,
+    )
+    return _write_incremental_outputs(
+        sorted(records, key=lambda item: str(item["route_id"])), report, output_dir,
+        source_path=source_path, changed_paths=changed_paths,
+    )
+
+
 def prepare_pages_deployment(
     output_dir: Path,
     *,
@@ -2659,6 +2882,8 @@ def prepare_pages_deployment(
     source_commit: str,
     current_source_root: Path,
     engine_source_revision: str,
+    incremental: bool = False,
+    changed_paths: Iterable[str] = (),
 ) -> dict[str, Any]:
     """Regenerate and verify the exact immutable release before Pages upload."""
     if re.fullmatch(r"[0-9a-f]{40,64}", source_commit) is None:
@@ -2698,17 +2923,23 @@ def prepare_pages_deployment(
             )
         except (OSError, ValueError):
             generation_was_current = False
-    write_stats = write_outputs(ordered, report, output_dir)
+    if incremental:
+        write_stats = _write_incremental_outputs(
+            ordered, report, output_dir, source_path=source_path, changed_paths=changed_paths,
+        )
+        closure = {}
+    else:
+        write_stats = write_outputs(ordered, report, output_dir)
 
-    from close_sitemap_graph import close_graph  # noqa: PLC0415
+        from close_sitemap_graph import close_graph  # noqa: PLC0415
 
-    close_graph(output_dir.resolve())
-    closure = verify_production_closure(
-        output_dir,
-        strict_release=True,
-        expected_manifest=expected_manifest,
-        source_path=source_path,
-    )
+        close_graph(output_dir.resolve())
+        closure = verify_production_closure(
+            output_dir,
+            strict_release=True,
+            expected_manifest=expected_manifest,
+            source_path=source_path,
+        )
     deployment = {
         "version": DEPLOYMENT_SCHEMA_VERSION,
         "generated_at": (

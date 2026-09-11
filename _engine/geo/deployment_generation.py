@@ -462,14 +462,45 @@ def atomic_json(path: Path, value: dict[str, Any]) -> None:
         staged.unlink(missing_ok=True)
 
 
+def incremental_changed_paths(site_root: Path, previous_guide_revision: str) -> list[str]:
+    if not re.fullmatch(r"[0-9a-f]{40,64}", previous_guide_revision):
+        raise GenerationError("incremental baseline must be a full Guide commit SHA")
+    _git(site_root, "cat-file", "-e", f"{previous_guide_revision}^{{commit}}")
+    committed = _git(
+        site_root, "diff", "--name-only", "-z", "--no-renames",
+        previous_guide_revision, "HEAD", "--",
+    )
+    working = _git(site_root, "diff", "--name-only", "-z", "HEAD", "--")
+    paths = sorted(set(filter(None, (committed + "\0" + working).split("\0"))))
+    for relative in paths:
+        path = PurePosixPath(relative)
+        if (path.is_absolute() or ".." in path.parts or "\\" in relative
+                or path.as_posix() != relative):
+            raise GenerationError("unsafe incremental changed path")
+    return paths
+
+
 def prepare(
     *, source_root: Path, site_root: Path, inventory: Path,
     source_commit: str, engine_source_revision: str, run_id: str, run_attempt: str,
+    incremental: bool = False, previous_guide_revision: str | None = None,
 ) -> dict[str, Any]:
     settings = {
         "GEO_SITE": os.environ.get("GEO_SITE", ""),
         "APP_STORE_PROVIDER_TOKEN": os.environ.get("APP_STORE_PROVIDER_TOKEN", ""),
     }
+    changed_paths: list[str] = []
+    if incremental:
+        if previous_guide_revision is None:
+            raise GenerationError("incremental preparation requires a reviewed Guide baseline")
+        changed_paths = incremental_changed_paths(site_root, previous_guide_revision)
+        settings.update({
+            "BUILD_SCOPE": "high_intent_incremental",
+            "PREVIOUS_GUIDE_REVISION": previous_guide_revision,
+            "INCREMENTAL_CHANGED_PATHS_DIGEST": digest(changed_paths),
+        })
+    elif previous_guide_revision is not None:
+        raise GenerationError("Guide baseline requires incremental preparation")
     before = build_identity(source_root, site_root, run_id=run_id,
                             run_attempt=run_attempt, settings=settings)
     if (before["source_sha"] != engine_source_revision
@@ -482,6 +513,7 @@ def prepare(
         provider_token=settings["APP_STORE_PROVIDER_TOKEN"],
         source_commit=source_commit, current_source_root=source_root / "geo",
         engine_source_revision=engine_source_revision,
+        incremental=incremental, changed_paths=changed_paths,
     )
     outputs = output_identity(site_root)
     after = build_identity(source_root, site_root, run_id=run_id,
@@ -637,6 +669,12 @@ def main(argv: list[str] | None = None) -> int:
     build.add_argument("--engine-source-revision", required=True)
     build.add_argument("--run-id", required=True)
     build.add_argument("--run-attempt", required=True)
+    build.add_argument("--incremental", action="store_true")
+    build.add_argument("--previous-guide-revision")
+    materialize = sub.add_parser("materialize-incremental")
+    materialize.add_argument("--output-dir", type=Path, required=True)
+    materialize.add_argument("--inventory", type=Path, required=True)
+    materialize.add_argument("--previous-guide-revision", required=True)
     live = sub.add_parser("verify-live")
     live.add_argument("--deployment", type=Path, required=True)
     live.add_argument("--receipt", type=Path, required=True)
@@ -646,6 +684,21 @@ def main(argv: list[str] | None = None) -> int:
     live.add_argument("--retry-delay", type=int, default=10, choices=range(0, 61))
     args = parser.parse_args(argv)
     try:
+        if args.command == "materialize-incremental":
+            import high_intent_decision_routes as routes
+
+            paths = incremental_changed_paths(
+                args.output_dir.resolve(), args.previous_guide_revision,
+            )
+            provider = routes.app_store_storefronts.resolve_provider_token()
+            if not provider:
+                raise GenerationError("incremental materialization requires a provider token")
+            result = routes.materialize_incremental(
+                args.output_dir.resolve(), inventory_path=args.inventory,
+                provider_token=provider, changed_paths=paths,
+            )
+            print(json.dumps(result, sort_keys=True))
+            return 0
         if args.command == "prepare":
             result = prepare(
                 source_root=args.current_source_root.resolve().parent,
@@ -653,6 +706,8 @@ def main(argv: list[str] | None = None) -> int:
                 source_commit=args.source_commit,
                 engine_source_revision=args.engine_source_revision,
                 run_id=args.run_id, run_attempt=args.run_attempt,
+                incremental=args.incremental,
+                previous_guide_revision=args.previous_guide_revision,
             )
             print(f"Sealed generation: {result['generation']['generation_id']}")
             return 0
@@ -670,7 +725,7 @@ def main(argv: list[str] | None = None) -> int:
                 if attempt + 1 == args.attempts:
                     raise error
                 time.sleep(args.retry_delay)
-    except (OSError, GenerationError) as error:
+    except (OSError, ValueError) as error:
         if args.command == "verify-live":
             atomic_json(args.receipt, {"schema_version": VERSION, "status": "blocked",
                                       "reason": str(error)})

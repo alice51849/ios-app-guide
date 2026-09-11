@@ -13,6 +13,20 @@ on:
     workflows: ["Daily GEO content"]
     types: [completed]
   workflow_dispatch:
+    inputs:
+      incremental_high_intent:
+        description: "只部署已驗證的 high-intent manifest 與變更索引"
+        type: boolean
+        default: false
+      expected_guide_sha:
+        description: "已驗證的 Guide commit（增量模式必填）"
+        type: string
+      expected_growth_sha:
+        description: "已驗證且精確釘選 Guide 的 Growth commit（增量模式必填）"
+        type: string
+      previous_guide_revision:
+        description: "計算受影響 sitemap/index 的已審 Guide 基線"
+        type: string
 
 permissions:
   contents: read
@@ -22,21 +36,34 @@ permissions:
 concurrency:
   # A failed/cancelled Daily GEO run creates a skipped workflow_run job. Give
   # that no-op event a unique group so it cannot cancel a valid push deploy.
-  group: pages-${{ github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success' && github.run_id || 'deploy' }}
+  group: pages-${{ ((github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[paired-high-intent]'))) && github.run_id || 'deploy' }}
   cancel-in-progress: true
 
 jobs:
   deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: >-
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') &&
+      (github.event_name != 'push' || !contains(github.event.head_commit.message, '[paired-high-intent]'))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Validate paired incremental release
+        if: inputs.incremental_high_intent == true
+        env:
+          EXPECTED_GUIDE_SHA: ${{ inputs.expected_guide_sha }}
+          EXPECTED_GROWTH_SHA: ${{ inputs.expected_growth_sha }}
+          PREVIOUS_GUIDE_REVISION: ${{ inputs.previous_guide_revision }}
+        run: |
+          set -euo pipefail
+          [[ "$EXPECTED_GUIDE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$EXPECTED_GROWTH_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$PREVIOUS_GUIDE_REVISION" =~ ^[0-9a-f]{40}$ ]]
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ inputs.incremental_high_intent && inputs.expected_guide_sha || 'main' }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
@@ -50,10 +77,13 @@ jobs:
       - name: Install canonical generator dependencies
         run: python3 -m pip install --requirement _engine/geo/requirements-validation.txt
       - name: Quarantine unavailable App Store pages
+        if: inputs.incremental_high_intent != true
         run: python3 _engine/geo/live_app_guard.py --site-root .
       - name: Refuse pages that still identify themselves on the Pages origin
+        if: inputs.incremental_high_intent != true
         run: python3 _engine/geo/audit_public_host_html.py --site-root .
       - name: Materialize and gate canonical discovery surfaces
+        if: inputs.incremental_high_intent != true
         env:
           GEO_SITE: https://open.cait518.cc/ios-app-guide
           GEO_PAGES: ${{ github.workspace }}
@@ -74,8 +104,18 @@ jobs:
           APP_STORE_PROVIDER_TOKEN: "118326163"
           GITHUB_TOKEN: ${{ github.token }}
           GROWTH_ENGINE_DEPLOY_KEY: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
+          INCREMENTAL_HIGH_INTENT: ${{ inputs.incremental_high_intent }}
+          EXPECTED_GUIDE_SHA: ${{ inputs.expected_guide_sha }}
+          EXPECTED_GROWTH_SHA: ${{ inputs.expected_growth_sha }}
+          PREVIOUS_GUIDE_REVISION: ${{ inputs.previous_guide_revision }}
         run: |
           set -euo pipefail
+          incremental_args=()
+          if [[ "$INCREMENTAL_HIGH_INTENT" == "true" ]]; then
+            test "$(git rev-parse HEAD)" = "$EXPECTED_GUIDE_SHA"
+            git fetch --no-tags --depth=1 origin "$PREVIOUS_GUIDE_REVISION"
+            incremental_args=(--incremental --previous-guide-revision "$PREVIOUS_GUIDE_REVISION")
+          fi
           source_dir="$GITHUB_WORKSPACE/.high-intent-growth-source"
           key_file="$RUNNER_TEMP/growth-deploy-key-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           known_hosts="$RUNNER_TEMP/growth-known-hosts-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
@@ -96,9 +136,16 @@ jobs:
             https://api.github.com/meta \
             | jq -er '.ssh_keys[] | "github.com " + .' > "$known_hosts"
           unset GITHUB_TOKEN
-          GIT_SSH_COMMAND="ssh -i $key_file -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$known_hosts" \
-            git clone --depth 1 --branch main --single-branch --no-tags \
-              git@github.com:alice51849/00_GrowthEngine.git "$source_dir"
+          export GIT_SSH_COMMAND="ssh -i $key_file -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$known_hosts"
+          git clone --depth 1 --branch main --single-branch --no-tags \
+            git@github.com:alice51849/00_GrowthEngine.git "$source_dir"
+          if [[ "$INCREMENTAL_HIGH_INTENT" == "true" ]]; then
+            git -C "$source_dir" fetch --no-tags --depth=1 origin "$EXPECTED_GROWTH_SHA"
+            git -C "$source_dir" checkout --detach "$EXPECTED_GROWTH_SHA"
+            test "$(git -C "$source_dir" rev-parse HEAD)" = "$EXPECTED_GROWTH_SHA"
+            test "$(git -C "$source_dir" ls-tree HEAD geo/pages | awk '{print $3}')" = "$EXPECTED_GUIDE_SHA"
+          fi
+          unset GIT_SSH_COMMAND
           engine_revision="$(git -C "$source_dir" rev-parse HEAD)"
           rm -f "$key_file" "$known_hosts"
           python3 _engine/geo/deployment_generation.py prepare \
@@ -109,10 +156,12 @@ jobs:
             --current-source-root "$source_dir/geo" \
             --engine-source-revision "$engine_revision" \
             --run-id "$GITHUB_RUN_ID" \
-            --run-attempt "$GITHUB_RUN_ATTEMPT"
+            --run-attempt "$GITHUB_RUN_ATTEMPT" \
+            "${incremental_args[@]}"
           rm -rf "$source_dir"
           trap - EXIT
       - name: Require complete local-only hero results before upload
+        if: inputs.incremental_high_intent != true
         env:
           GEO_SITE: https://open.cait518.cc/ios-app-guide
           APP_STORE_PROVIDER_TOKEN: "118326163"
@@ -183,7 +232,7 @@ jobs:
           retention-days: 30
       - name: Verify every hero result on the public host
         id: verify_hero
-        if: steps.verify_live.outcome == 'success'
+        if: steps.verify_live.outcome == 'success' && inputs.incremental_high_intent != true
         timeout-minutes: 10
         run: >-
           python3 "$RUNNER_TEMP/hero_tasks_readback.py"
@@ -193,6 +242,7 @@ jobs:
         id: notify_websub
         if: >-
           always() &&
+          inputs.incremental_high_intent != true &&
           (steps.deployment.outcome == 'success' ||
           steps.deployment_retry.outcome == 'success') &&
           steps.verify_live.outcome == 'success' &&
@@ -208,6 +258,7 @@ jobs:
         id: notify_rsscloud
         if: >-
           always() &&
+          inputs.incremental_high_intent != true &&
           (steps.deployment.outcome == 'success' ||
           steps.deployment_retry.outcome == 'success') &&
           steps.verify_live.outcome == 'success' &&
@@ -222,6 +273,7 @@ jobs:
       - name: Enforce syndication notification results
         if: >-
           always() &&
+          inputs.incremental_high_intent != true &&
           (steps.deployment.outcome == 'success' ||
           steps.deployment_retry.outcome == 'success') &&
           steps.verify_live.outcome == 'success' &&

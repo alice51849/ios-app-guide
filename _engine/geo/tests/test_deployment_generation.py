@@ -379,6 +379,49 @@ class DeploymentGenerationTests(unittest.TestCase):
                     run_id="wrapper-test", run_attempt="1",
                 )
 
+    def test_incremental_delta_is_bound_to_an_exact_reviewed_commit(self):
+        baseline = self.identity["pages_source_sha"]
+        _write(self.site, "sitemap-changed.xml", b"<urlset />\n")
+        _commit(self.site)
+        _write(self.site, "en-US/index.html", b"<html></html>\n")
+        _git(self.site, "add", "en-US/index.html")
+        changed = generation.incremental_changed_paths(self.site, baseline)
+        self.assertIn("sitemap-changed.xml", changed)
+        self.assertIn("en-US/index.html", changed)
+        for invalid in ("main", "HEAD", "f" * 40):
+            with self.subTest(revision=invalid), self.assertRaises(generation.GenerationError):
+                generation.incremental_changed_paths(self.site, invalid)
+
+    def test_incremental_prepare_binds_scope_and_forwards_only_the_delta(self):
+        import high_intent_decision_routes as routes
+        baseline = self.identity["pages_source_sha"]
+        legacy = {key: value for key, value in self.deployment.items() if key != "generation"}
+
+        def generate(*args, **kwargs):
+            _write(self.site, generation.DEPLOYMENT_PATH, json.dumps(legacy).encode())
+
+        with mock.patch.object(routes, "prepare_pages_deployment", side_effect=generate) as emit:
+            sealed = generation.prepare(
+                source_root=self.source, site_root=self.site,
+                inventory=self.site / generation.CATALOG_PATH,
+                source_commit=baseline, engine_source_revision=self.identity["source_sha"],
+                run_id="incremental-test", run_attempt="1", incremental=True,
+                previous_guide_revision=baseline,
+            )
+        self.assertTrue(emit.call_args.kwargs["incremental"])
+        self.assertEqual([], emit.call_args.kwargs["changed_paths"])
+        self.assertNotEqual(
+            self.identity["build_config_digest"], sealed["generation"]["build_config_digest"],
+        )
+        generation.validate_binding(sealed)
+        with self.assertRaisesRegex(generation.GenerationError, "reviewed Guide baseline"):
+            generation.prepare(
+                source_root=self.source, site_root=self.site,
+                inventory=self.site / generation.CATALOG_PATH,
+                source_commit=baseline, engine_source_revision=self.identity["source_sha"],
+                run_id="incremental-test", run_attempt="1", incremental=True,
+            )
+
     def test_seal_rejects_missing_and_malformed_provenance(self):
         for key in sorted(generation.GENERATION_FIELDS):
             with self.subTest(key=key):
@@ -585,6 +628,29 @@ class DeploymentWorkflowGenerationTests(unittest.TestCase):
         for field in ("--current-source-root", "--source-commit",
                       "--engine-source-revision", "--run-id", "--run-attempt"):
             self.assertIn(field, self.workflow[prepare:upload])
+
+    def test_paired_incremental_dispatch_is_pinned_without_full_site_or_social_work(self):
+        self.assertIn("[paired-high-intent]", self.workflow)
+        self.assertIn("inputs.expected_guide_sha || 'main'", self.workflow)
+        self.assertIn('checkout --detach "$EXPECTED_GROWTH_SHA"', self.workflow)
+        self.assertIn('ls-tree HEAD geo/pages', self.workflow)
+        self.assertIn('--incremental --previous-guide-revision "$PREVIOUS_GUIDE_REVISION"', self.workflow)
+        for name in (
+            "Quarantine unavailable App Store pages",
+            "Refuse pages that still identify themselves on the Pages origin",
+            "Materialize and gate canonical discovery surfaces",
+            "Require complete local-only hero results before upload",
+        ):
+            block = self.workflow.split(f"- name: {name}", 1)[1].split("- name:", 1)[0]
+            self.assertIn("if: inputs.incremental_high_intent != true", block)
+        for name in ("Notify WebSub subscribers", "Notify rssCloud subscribers",
+                     "Enforce syndication notification results"):
+            block = self.workflow.split(f"- name: {name}", 1)[1].split("- name:", 1)[0]
+            self.assertIn("inputs.incremental_high_intent != true", block)
+        readback = self.workflow.split("- name: Verify exact deployment is live", 1)[1]
+        readback = readback.split("- name:", 1)[0]
+        self.assertNotIn("incremental_high_intent != true", readback)
+        self.assertIn("verify-live", readback)
 
     def test_readback_is_exact_on_origin_and_public_host_and_keeps_the_receipt(self):
         self.assertIn('"$RUNNER_TEMP/deployment_generation.py" verify-live', self.workflow)

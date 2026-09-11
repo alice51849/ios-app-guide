@@ -31,4 +31,35 @@ Storefront 金額是帶時間戳的歷史 readback，**不在可見文案或 sch
 
 使用既有 generator 產生 route HTML、coverage、feed、sitemap、conversion JSON／schema 與 expected-output manifest，不手改 HTML。部署前須通過 materialization／production closure 與來源同步 Gate。
 
-先在兩個隔離 feature branch 提交；GrowthEngine 的 `geo/pages` gitlink 最後綁定對應 Guide commit。只有 main 穩定且環境 Gates 通過時才依序整合 source、Guide，讓一次 Pages push 觸發一次部署，再 exact GET；不得另跑社群或重複 dispatch。
+先在兩個隔離 feature branch 提交；GrowthEngine 的 `geo/pages` gitlink 最後綁定對應 Guide commit。只有 main 穩定且環境 Gates 通過時，才非 force 依序整合 Guide、Growth。配對發布的 Guide commit 使用 `[paired-high-intent]` 標記，push 只產生獨立 concurrency group 的 no-op，不取消其他有效部署。兩個 main 精確配對後，只 dispatch 一次 `pages.yml` 的 `incremental_high_intent=true`，指定完整的 `expected_guide_sha`、`expected_growth_sha`、`previous_guide_revision`。workflow 精確 checkout 兩個來源並核對 gitlink，不能把新 Guide 配舊 Growth；不得另跑社群或重複 dispatch。
+
+## Manifest 驅動的增量發布
+
+增量模式仍使用完整非 sparse checkout，但不呼叫 `SiteTreeIndex.scan`、
+`close_sitemap_graph` 或任何整站 HTML 重建。來源推導出的完整 generation
+（目前 57 routes＋5 fixed outputs＝62）先通過 cardinality、canonical、
+hreflang、source/sync 與 fragment preflight，才以既有 generator materialize；
+之後逐 byte 驗證完整 62 outputs、feed、sitemap 與 attribution closure。
+
+`deployment_generation.py materialize-incremental --output-dir . --inventory
+data/verified-ios-app-finder-catalog.json --previous-guide-revision <完整已審 Guide SHA>`
+會根據 Git delta（含已追蹤的 working diff）只選擇受影響的 `sitemap*.xml`、
+`index.html`，再加固定的 high-intent sitemap 與 sitemap index。其他頁面／
+sitemap 不重建；只有明確已刪除的受影響 sitemap 才移除其 index entry。
+不完整 baseline、foreign URL、缺失 target、symlink、canonical／hreflang 漂移
+均在寫入 managed files 前 fail closed，不能拿 partial site inventory 跑完整
+closer，也不能手改 generated HTML／JSON 讓 Gate 變綠。
+
+乾淨且已提交的來源使用既有 `deployment_generation.py prepare`，加上
+`--incremental --previous-guide-revision <同一基線>`，仍執行完整 source identity
+前後夾驗、mirror/dependency/config digest、generation sealing 與雙 host exact
+GET；增量 mode 與 delta digest 亦綁入 build config。Scoped route availability、
+canonical／hreflang 和完整 byte closure 取代本次不相關的全站 quarantine、
+discovery／hero rebuild；不重發 WebSub、rssCloud 或社群。一般完整發布模式
+保留不變。
+
+Regression：既有 controller／collector 81、Guide 110，加上
+`test_high_intent_incremental` 與 `test_deployment_generation`；前者明確令
+`rglob`、full-site inventory 和 full closer 一經呼叫即失敗。Remote 前進時，
+重取 delta 並只重跑受影響測試與必需 Gates；未實際部署前的 `effective_at_utc`
+仍為 unknown，不以本機產檔或 feature push 取代 live receipt。

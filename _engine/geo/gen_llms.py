@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 """GEO 機器可讀層生成器 — llms.txt + llms-full.txt + robots + sitemap index。
 
-讓 LLM 爬蟲(GPTBot/ClaudeBot/PerplexityBot/Google-Extended…)最容易「讀懂並引用」你:
+讓搜尋 crawler 易於讀取公開內容；搜尋資格不代表訓練同意或實際引用:
   • llms.txt:AI 爬蟲索引 — 已公開 app 一句話價值 + App Store 連結。
   • llms-full.txt:從真實頁面與 registry 重建的完整 crawler map,不再手動過期。
-  • robots.txt:明確歡迎各 AI bot,並列出全部 sitemap(含 alternatives/answers)。
+  • robots.txt:搜尋與訓練分離；只有 canonical host 根目錄的 robots 才有效。
   • sitemap_index.xml:把三張 sitemap 串成索引,讓爬蟲一次抓全。
 
 不碰 app code。沿用 registry + aeo_sov.json。
@@ -61,6 +61,7 @@ from rsscloud_config import (  # noqa: E402
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
 from websub_config import WEBSUB_HUBS  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
+from crawler_policy import render_robots as render_crawler_robots  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
@@ -5818,17 +5819,7 @@ def build_llms_full(comp_map, live_keys):
 
 
 def build_robots():
-    out = [
-        "# AI assistants and search crawlers are welcome to index and cite this site.",
-        f"# Localized AI app catalogs: {SITE}/llms/index.json",
-        "",
-    ]
-    for bot in AI_BOTS:
-        out.append(f"User-agent: {bot}")
-        out.append("Allow: /")
-        out.append("")
-    out += ["User-agent: *", "Allow: /", "",
-            f"Sitemap: {SITE}/sitemap.xml",
+    out = [f"Sitemap: {SITE}/sitemap.xml",
             f"Sitemap: {SITE}/sitemap_alternatives.xml",
             f"Sitemap: {SITE}/sitemap_answers.xml",
             f"Sitemap: {SITE}/sitemap_guides.xml",
@@ -5871,7 +5862,10 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_resourcesync.xml",
             f"Sitemap: {SITE}/resourcesync/resourcelist.xml",
             f"Sitemap: {SITE}/sitemap_index.xml", ""]
-    return "\n".join(out)
+    return render_crawler_robots(
+        (line.removeprefix("Sitemap: ") for line in out if line),
+        SITE, extra_allowed=AI_BOTS,
+    )
 
 
 SITEMAP_ENTRY_RE = re.compile(

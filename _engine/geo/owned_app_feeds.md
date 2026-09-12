@@ -87,6 +87,50 @@
 
 ## 離線驗證與配對交付
 
+### 第3輪：先對帳 production，缺 cache 不等於內容有變
+
+`owned_feed_public_capture.py` 以至多每秒一次的 GET 讀取 exact 150 endpoints，
+不跟隨 redirect，並在前後讀取、驗證同一份 production deployment generation。
+`owned_feed_reconciliation.py` 再驗 HTTP、Content-Type、UTF-8、body hash、
+47 GUID／locale、日期、canonical、完整內容與 first-party metadata；
+404、redirect、錯 MIME／GUID／日期或 hash 都不能算公開 feed 覆蓋。
+
+343 是147個可通知 topics × 兩個 WebSub providers ＋49個 RSS topics 的
+**候選 provider/topic 分母**，不是觀察到的343次內容變更。對帳必須逐項分類：
+
+- `endpoint_not_live`：未公開或 wire contract 無效；不建立 notification intent。
+- `content_changed`：已公開且 valid，但與候選語意不同；只列為 release-held 意圖。
+- `missing_ack`：語意相同、沒有可用 provider ACK；body hash 相同仍不算 ACK。
+- `stale_generation`：有真實歷史 ACK，但 topic／provider／feed hash 或完整
+  Guide／Growth／deployment／generation binding 已不相符；保留歷史，不升格 current。
+- `already_acked_current`：有效 private durable receipt 的全部 binding 精確符合
+  production，且已有 candidate/public semantic-equivalence proof，才可遷移 current。
+
+語意 proof 固定使用 `lumi.owned-feed-semantic-equivalence/v1`，保留 GUID、
+canonical、title、summary、全文及 publisher／purchase／market metadata；
+只排除日期與衍生 item digest。proof 同時保存兩邊 body SHA 與 semantic SHA，
+**不以 workflow success、歷史 HTTP 摘要或 public body hash 冒充 provider ACK**。
+只接受既有 notifier 維護、mode0600且有完整 state／receipt checksum 的 durable state；
+裸 receipt、未封存摘要、v2不完整狀態及 mock／fixture 均不得作為 current ACK。
+這是本機已保存 wire observations 的一致性驗證，不是 provider 數位簽章。
+
+Importer 只寫新指定的隔離 state；migration ID 綁定 production、候選 bytes、
+觀察結果與歷史來源。相同輸入重跑連 bytes／mtime 都不變，不同輸入不得覆蓋舊遷移。
+沿用v3原子0600、前一 state SHA與可恢復 staging journal，原始歷史保留。
+**所有輸入結果都設 `release_hold=true`，locale/layout release 前不可通知。**
+CLI 缺 state／缺 production migration 時直接 fail closed，不再把空 runner cache
+當作343個新內容事件；import 本身不授權 release、部署或解除 hold。
+
+```sh
+python3 geo/owned_feed_public_capture.py --pages-dir <Guide-feature> --output-dir <private-capture>
+python3 geo/owned_feed_reconciliation.py --pages-dir <Guide-feature> \
+  --capture-dir <private-capture> --history-state <private-durable-state> \
+  --report <private-report.json> --import-state <new-private-held-state.json>
+```
+
+不存在有效歷史 state 時省略 `--history-state`，不得拿測試 fixture 補位。
+Capture／plan／真實 receipts／migration state 全部留在私有 evidence，不進 repo。
+
 ```sh
 python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --refresh-catalog
 python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --check \
@@ -94,6 +138,7 @@ python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --check \
 OWNED_FEED_GUIDE_ROOT=<Guide-feature> python3 -m unittest -q \
   geo.tests.test_owned_app_feeds geo.tests.test_owned_feed_delivery
 python3 -m unittest -q geo.tests.test_owned_feed_receipts
+python3 -m unittest -q geo.tests.test_owned_feed_reconciliation
 python3 geo/owned_feed_pair_gate.py --growth <Growth-feature> --guide <Guide-feature>
 ```
 

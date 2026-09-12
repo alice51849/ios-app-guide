@@ -316,6 +316,8 @@ def prepare(pages: Path, state_path: Path, source_sha: str, *,
         raise ValueError("Baseline does not cover the exact current topics")
     wanted = tasks(current)
     with locked_state(state_path) as state:
+        if state.get("migration", {}).get("release_hold"):
+            raise ValueError("Reconciled state is held until the locale/layout release authorizes dispatch")
         pending, accepted, historical, new_intents, retry_intents = {}, {}, 0, 0, 0
         by_content = {}
         for record in state["records"].values():
@@ -432,6 +434,8 @@ def deliver(pages: Path, state_path: Path, source_sha: str, protocol: str, *,
     def stamp():
         return datetime.fromtimestamp(clock(), timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with locked_state(state_path) as state:
+        if state.get("migration", {}).get("release_hold"):
+            raise ValueError("Reconciled state is held until the locale/layout release authorizes dispatch")
         prepared = state.get("prepared", {})
         try:
             current = inventory(pages, include_legacy=prepared.get("include_legacy", False))
@@ -546,6 +550,14 @@ def main(argv=None) -> int:
     parser.add_argument("--protocol", choices=("websub", "rsscloud"))
     parser.add_argument("--execute", action="store_true")
     args = parser.parse_args(argv)
+    # A lost runner cache is not proof that every public feed changed.
+    if not args.state.exists():
+        parser.error("Missing durable state: reconcile production feeds/ACKs and import a held baseline first")
+    with locked_state(args.state) as state:
+        if not state.get("migration"):
+            parser.error("CLI dispatch requires a production reconciliation migration, not an unbound cache")
+        if state["migration"].get("release_hold"):
+            parser.error("Locale/layout release hold: reconciliation does not authorize notifications")
     if args.operation == "prepare":
         result = prepare(
             args.pages_dir, args.state, args.source_sha, include_legacy=args.include_legacy,

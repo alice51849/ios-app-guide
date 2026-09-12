@@ -14,6 +14,7 @@ MIRRORS = (
     "tests/owned_feed_fixtures.py", "tests/test_owned_app_feeds.py",
     "tests/test_owned_feed_delivery.py",
     "tests/test_owned_feed_receipts.py",
+    "tests/test_owned_feed_reconciliation.py",
     "tests/fixtures/owned_feed_receipts/websub-204.json",
     "tests/fixtures/owned_feed_receipts/rsscloud-200.json",
 )

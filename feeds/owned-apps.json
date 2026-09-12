@@ -2194,7 +2194,7 @@
       "record_count": 47
     }
   },
-  "generation_digest": "3d53db98236dbcd09a63f9353a69c8775b1351ce12f5eb7f3a4a52db85c9824d",
+  "generation_digest": "9602f05ab3af675db7aad217ba60673cd65d31ab11324bd836c38b2b48272bd5",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2219,11 +2219,13 @@
       "locale_storefronts.json": "1b9d27a304b0b2031fbdbb26e816e0bc416d0a8df8d9cf5a1593d72fdaaab5de",
       "market_availability.py": "cf1544c5c96df0a8989c1ca403a3fa957f75623ea301b46333582a0dec20cef8",
       "official_locales.py": "576457e2c5b19b9b6e78f644397b27e177f3b195ce7ecc3ac83ef3a39b8d498a",
-      "owned_app_feeds.py": "a99ec4b8edce194bd8eb7701372914ef8657b4e2c3a539ab898d33c5f192dca3",
-      "owned_feed_delivery.py": "18fb7a781516e1ed46d72eeba8e362f29383b38241419cf996004201b40a6880",
+      "owned_app_feeds.py": "95a20f279b6146c573122b3f2ddd2d6c5b03be5353cc65f89883ea045e4debfa",
+      "owned_feed_delivery.py": "54f88f3094947beeb4008ea7d7dd181a57b7ac8c79ad01fcbdce56c60b2932fd",
       "owned_feed_locale_gate.py": "5a6474d0af445110da41074c48f06b99464fa1c5d53bc21f4602ef1dff3c65d7",
+      "owned_feed_public_capture.py": "14fa3142d58097b5f2e548b075131ecc7d7280c82494b01adcb271a0fa4d57c6",
       "owned_feed_receipt.schema.json": "1c00a1175b07380ccfd9c1a1e7ae97b920aba9121898418db402b0eb6afc877e",
       "owned_feed_receipts.py": "fc6cf034ae56f1a55f04e5681e0e81e3238a5597eddc7b78191b9b97b0cba490",
+      "owned_feed_reconciliation.py": "305a95c5ccb92cd179d9f4730a6e576220c13b92e0b51ef3780b312a425e24e6",
       "portfolio_app_catalog_api.py": "397633bd3165b927ca53e1c68ce8e1b36e1d0e5dd1b415218f2754a7b4d39770",
       "portfolio_app_finder_i18n.json": "22dea261ee2efb7b964adfb0d1a84942bc1ca5408039cce791a22b71f6eb99d0",
       "publisher_intent_catalog_i18n.json": "b7546d5a1762155a3c233845cd716b3d6b26aa47d9952743ba717803bca30049",

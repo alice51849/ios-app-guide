@@ -56,6 +56,7 @@ from cee_locale_copy import reviewed_values as cee_reviewed_values  # noqa: E402
 from hebrew_bidi import html_text  # noqa: E402
 from external_app_identity import external_identity  # noqa: E402
 import western_romance_copy  # noqa: E402
+import cjk_geo_p002  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -1501,6 +1502,11 @@ def external_localized_values(key, locale, localizations=None):
     values = external_identity(key, locale, values)
     values = cee_reviewed_values(key, locale, values)
     values = western_romance_copy.external_values(key, locale, values, APPS[key])
+    values = cjk_geo_p002.external_values(
+        key, locale, values,
+        app_id=APPSTORE.get(key),
+        purchase_model=APPS[key].get("purchase_model"),
+    )
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1619,6 +1625,12 @@ def build_one(key, locale, all_locales):
     if market_availability.is_unavailable(locale):
         url = None
     ui = get_ui(locale)
+
+    def t(value):
+        if (key, locale) in cjk_geo_p002.TARGET_CELLS:
+            return cjk_geo_p002.html_text(key, locale, value)
+        return html_text(value, locale)
+
     # 沒有市場連結時渲染母語 availability 說明。刻意**不用** disabled 按鈕:
     # 一個點不動的下載鈕只會讓人以為壞掉,一句說清楚原因的話才是誠實的。
     if url is None:
@@ -1629,14 +1641,11 @@ def build_one(key, locale, all_locales):
     else:
         store_block = (
             f'<p><a href="{html.escape(url)}">'
-            f'{html_text(ui["get"].format(name=name), locale)}</a></p>'
+            f'{t(ui["get"].format(name=name))}</a></p>'
         )
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
     e = html.escape
-
-    def t(value):
-        return html_text(value, locale)
 
     feats = kws[:8]
     faq = build_faq(locale, name, sub, kws)

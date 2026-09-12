@@ -49,6 +49,7 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
 from external_app_identity import external_identity  # noqa: E402
+import cjk_geo_p002  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -1488,6 +1489,11 @@ def external_localized_values(key, locale, localizations=None):
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
     values = external_identity(key, locale, values)
+    values = cjk_geo_p002.external_values(
+        key, locale, values,
+        app_id=APPSTORE.get(key),
+        purchase_model=APPS[key].get("purchase_model"),
+    )
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1616,11 +1622,14 @@ def build_one(key, locale, all_locales):
     else:
         store_block = (
             f'<p><a href="{html.escape(url)}">'
-            f'{html.escape(ui["get"].format(name=name))}</a></p>'
+            f'{cjk_geo_p002.html_text(key, locale, ui["get"].format(name=name))}</a></p>'
         )
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
     e = html.escape
+
+    def text(value):
+        return cjk_geo_p002.html_text(key, locale, value)
 
     feats = kws[:8]
     faq = build_faq(locale, name, sub, kws)
@@ -1678,15 +1687,15 @@ def build_one(key, locale, all_locales):
         for s in schemas
     )
 
-    feat_li = "\n".join(f"    <li>{e(f)}</li>" for f in feats) or "    <li>iOS app</li>"
+    feat_li = "\n".join(f"    <li>{text(f)}</li>" for f in feats) or "    <li>iOS app</li>"
     faq_html = "\n".join(
         f'    <div itemscope itemtype="https://schema.org/Question">\n'
-        f'      <h3 itemprop="name">{e(q)}</h3>\n'
+        f'      <h3 itemprop="name">{text(q)}</h3>\n'
         f'      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">\n'
-        f'        <p itemprop="text">{e(ans)}</p>\n      </div>\n    </div>'
+        f'        <p itemprop="text">{text(ans)}</p>\n      </div>\n    </div>'
         for q, ans in faq)
-    faq_section = (f'\n  <h2>{e(ui["faq"])}</h2>\n{faq_html}\n' if faq else "")
-    desc_html = "".join(f"  <p>{e(line)}</p>\n" for line in desc.split("\n") if line.strip())
+    faq_section = (f'\n  <h2>{text(ui["faq"])}</h2>\n{faq_html}\n' if faq else "")
+    desc_html = "".join(f"  <p>{text(line)}</p>\n" for line in desc.split("\n") if line.strip())
 
     dir_attr = ' dir="rtl"' if is_rtl else ""
     page = f"""<!DOCTYPE html>
@@ -1704,21 +1713,21 @@ def build_one(key, locale, all_locales):
 </head>
 <body>
 <main>
-  <h1>{e(name)}</h1>
-  <p><strong>{e(sub)}</strong></p>
+  <h1>{text(name)}</h1>
+  <p><strong>{text(sub)}</strong></p>
 
-  <h2>{e(ui["what"].format(name=name))}</h2>
-  <p>{e(ui["is"].format(name=name))} {e(sub)}</p>
+  <h2>{text(ui["what"].format(name=name))}</h2>
+  <p>{text(ui["is"].format(name=name))} {text(sub)}</p>
 {desc_html}
-  <h2>{e(ui["feat"])}</h2>
+  <h2>{text(ui["feat"])}</h2>
   <ul>
 {feat_li}
   </ul>{searched_as}
 
-  <h2>{e(ui["price"])}</h2>
-  <p>{e(pricing_text)}</p>
+  <h2>{text(ui["price"])}</h2>
+  <p>{text(pricing_text)}</p>
 {faq_section}
-  <h2>{e(ui["dl"])}</h2>
+  <h2>{text(ui["dl"])}</h2>
   {store_block}
 </main>
 </body>

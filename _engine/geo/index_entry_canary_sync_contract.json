@@ -1,0 +1,43 @@
+{
+  "schema": "lumi.cross-repo-sync-contract/v1",
+  "version": 1,
+  "created_at": "2026-09-12",
+  "created_by": "paired-integration-owner",
+  "why": "Guide(ios-app-guide)的 `_engine/geo/` 是 00_GrowthEngine `geo/` 的鏡像,雲端跑的是鏡像那一份。過去只靠口頭約定『改完要同步』,只要有人忘記,Growth 改了而 Guide 沒改(或相反),雲端就會跑到舊邏輯,而且**不會有任何東西失敗**。這份契約把同步關係變成會 fail 的檢查。",
+  "authoritative_side": "00_GrowthEngine",
+  "mirror_side": "ios-app-guide",
+  "mirror_root_from_growth": "geo/pages/_engine/geo",
+  "parity_mode": "byte",
+  "parity_ration": "本輪以最新 Growth f2f6b68d／Guide 4c4d1451 為基準，只移植 canary 符號與測試，未覆蓋 main 其他改動；三檔均重新計算 SHA-256，兩側實際 checkout 執行 byte parity，MirrorSideTest 不可 skip。",
+  "pairs": [
+    {
+      "growth": "geo/build_pages_i18n.py",
+      "guide": "_engine/geo/build_pages_i18n.py",
+      "sha256": "e9d95def108468cc025580792870c80c030d92676e6c4bbd45c64cb3f27669c4",
+      "role": "唯一 renderer:首頁 index-entry canary 區塊由這支的 build_root_index() 產生"
+    },
+    {
+      "growth": "geo/index_entry_canary_manifest.json",
+      "guide": "_engine/geo/index_entry_canary_manifest.json",
+      "sha256": "6364ba06655fa504b3e6da20e0a44cd7d103ced9fa65d2a17acc125830be14a6",
+      "role": "canary 清單、在地化實測值、回退步驟與 E0 Gate 契約"
+    },
+    {
+      "growth": "geo/tests/test_index_entry_canary.py",
+      "guide": "_engine/geo/tests/test_index_entry_canary.py",
+      "sha256": "b58ab8c7a8c853bee93105961896b41f1368bb075a749eba56fa698e93f39d37",
+      "role": "契約測試;以 _site_root() 同時支援兩種佈局,因此兩邊可維持 byte 相同"
+    }
+  ],
+  "enforcement": {
+    "test": "geo/tests/test_index_entry_canary_sync.py",
+    "authoritative_side_rule": "本 repo 的三個檔案 sha256 必須等於契約值,否則 FAIL —— 改了程式碼就必須同時更新契約,契約才不會變成一張過期的紙。",
+    "mirror_side_rule": "若 `geo/pages/_engine/geo/` 存在,鏡像三檔的 sha256 必須等於同一組值,否則 FAIL(這就是『未同步時 fail』)。",
+    "mirror_absent_rule": "鏡像不存在時 SKIP 並明講原因;隔離 worktree 沒有巢狀站台 repo 是正常情況,不得因此假裝通過,也不得因此改成永遠通過。"
+  },
+  "known_limitations": [
+    "契約只證明三檔一致，不能單獨證明首頁已重新產生；本輪另以同 renderer A/B、root artifact與部署後raw表示hash驗證。",
+    "sha256 是人工更新的:改動這三個檔案時必須同步更新本契約,否則測試會 fail(這是刻意的設計,不是缺陷)。",
+    "本契約不涵蓋 gitlink;Growth 何時把 geo/pages 的 gitlink 指到哪個 Guide SHA 由整合流程決定,見 handoff。"
+  ]
+}

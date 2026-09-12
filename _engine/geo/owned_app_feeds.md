@@ -50,17 +50,39 @@
 `owned_feed_delivery.py prepare` 只做 GET readback 與本機狀態保存；
 `notify` CLI **必須明確帶 `--execute`**。預設不會發送。
 
+- 第2輪 state 使用 `lumi.owned-feed-delivery/v3`；每個 provider × topic × attempt
+  以不可變 `lumi.owned-feed-receipt/v1` 保存，規格為 `owned_feed_receipt.schema.json`。
+  `intent_id` 綁定 protocol／endpoint／topic／feed content SHA，與每日 run／日期無關。
+  每份 receipt 保存 request generation、feed generation／feed SHA、Guide source SHA、
+  Growth engine SHA、deployment SHA、inventory SHA、完整表單 request body／SHA，
+  以及 HTTP status、原始 ACK body／SHA、observed_at、Retry-After 與錯誤類型。
+- WebSub `204`（空 body）及合法 `200/202`，或 rssCloud `200` 且 JSON/XML
+  明確 `success=true`，**只代表 publisher accepted ACK**。
+  `subscriber_delivery_verified=false`、`indexing_verified=false` 永遠保留；
+  不可用 workflow success、HTTP 2xx 或先前 run 的成功宣稱 subscriber delivery／索引。
 - Outbox 同時綁定完整 Guide SHA、既有 `deployment_generation.validate_binding`、
   feed manifest、每個 topic SHA-256；通知前 GET 驗證 **全部 feeds**（含不通知的 bn-BD）
   與部署 generation，並再讀 generation 防中途切代。Partial deploy 一律零 POST。
 - ACK 以 `(protocol, endpoint, topic, content hash)` 去重，不以 commit／日期去重。
   無內容更新重跑或換 source SHA 都是 **0 通知**；未 ACK 的 pending 可恢復。
   既有 54 legacy topics 也納入相同 outbox，其中 bn-BD decision feed 不通知。
+- `accepted` 只指向**目前完整 generation**仍適用的 receipt。source／deployment／feed SHA
+  漂移即使舊 receipt 失效，`records` 仍保留不可變歷史；相同 feed bytes 的歷史 ACK
+  只用於 **content deduplication**，絕不偽裝成目前 generation 的新 ACK。
+  `new_notification_intents` 與 `retry_intents` 分開：重跑只重試缺少 ACK 的 provider/topic，
+  不新建相同內容意圖。v2 未綁定的舊狀態保留於 `legacy_history`，不當成有效 receipt。
 - 一個 owner 持有非阻塞 `flock`；mode `0600` 的原子 state 每收到 ACK 立即保存。
-  hub 交錯批次、有限退避與每 provider 90 秒軟預算，單一故障不阻塞其他 provider。
-  無 ACK 的網路故障只能提供 at-least-once，不能宣稱分散式 exactly-once。
-- Pages workflow 在 artifact prune 前保存執行器；`.github/owned-feed-runtime/state.json`
-  由 Actions cache 恢復且失敗後仍保存，不進 git 或 Pages artifact。
+  hub 交錯批次，每批至多3次嘗試，指數退避／Retry-After 上限300秒，
+  每 provider 90秒軟預算；單一故障不阻塞其他 provider。
+  request 開始前保存 in-flight journal；ACK 落盤後才開始下一批。
+  state 以 revision＋previous-state SHA＋state digest 封存，fsync 檔案與父目錄；
+  crash 若發生在 ACK 已 fsync、尚未 rename，下一 owner 只接回唯一可驗證的直接後繼。
+  若只有 in-flight、沒有持久化 ACK，只記 `indeterminate` 後有界重試，不能宣稱
+  分散式 exactly-once 或憑空補出 ACK。
+- Pages workflow 在 artifact prune 前保存執行器；`.github/owned-feed-runtime/`
+  （state 及可恢復 staging journal）由 Actions cache 恢復且失敗後仍保存，
+  不進 git 或 Pages artifact。repo 只收 schema、程式與明確 `fixture=true` 範例；
+  fixtures 永遠不能作為真實 ACK authorization。
   整合驗證只用 mocked GET/provider，不實際通知 WebSub、rssCloud 或 IndexNow。
 
 ## 離線驗證與配對交付
@@ -71,6 +93,7 @@ python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --check \
   --reference-source <Guide-feature>/_engine/geo
 OWNED_FEED_GUIDE_ROOT=<Guide-feature> python3 -m unittest -q \
   geo.tests.test_owned_app_feeds geo.tests.test_owned_feed_delivery
+python3 -m unittest -q geo.tests.test_owned_feed_receipts
 python3 geo/owned_feed_pair_gate.py --growth <Growth-feature> --guide <Guide-feature>
 ```
 

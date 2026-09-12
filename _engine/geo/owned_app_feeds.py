@@ -61,6 +61,7 @@ PURCHASE_LABELS = {
 }
 SOURCE_FILES = (
     "owned_app_feeds.py", "owned_feed_locale_gate.py", "owned_feed_delivery.py",
+    "owned_feed_receipts.py", "owned_feed_receipt.schema.json",
     "deployment_generation.py", "gen_sitemap_lastmod.py",
     "portfolio_app_catalog_api.py", "build_pages_i18n.py", "external_app_locales.py",
     "publisher_intent_catalog_i18n.json", "portfolio_app_finder_i18n.json",

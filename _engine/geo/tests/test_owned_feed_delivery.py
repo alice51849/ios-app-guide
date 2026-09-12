@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import contextlib
+from datetime import datetime, timezone
 import io
 from pathlib import Path
 import sys
@@ -22,6 +23,7 @@ class DeliveryTests(FeedFixture):
         self.current = delivery.inventory(self.pages)
         self.baseline = dict.fromkeys(self.current["topics"], None)
         self.sent = []
+        self.time = 1788264000.0
 
     def prepare(self, **kwargs):
         return delivery.prepare(
@@ -30,13 +32,22 @@ class DeliveryTests(FeedFixture):
 
     def sender(self, protocol, endpoint, topics):
         self.sent.extend((protocol, endpoint, topic) for topic in topics)
-        return {"http_status": 202, "endpoint": endpoint, "request_sha256": feeds.digest(topics)}
+        return delivery.response_record(
+            protocol, endpoint, topics, 204 if protocol == "websub" else 200,
+            "" if protocol == "websub" else '{"success":true}',
+            observed_at=datetime.fromtimestamp(self.time, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        )
+
+    def advance(self, seconds):
+        self.time += seconds
 
     def deliver(self, protocol="websub", **kwargs):
+        self.advance(600)
         return delivery.deliver(
             self.pages, self.state, SOURCE, protocol,
             opener=kwargs.pop("opener", self.opener),
-            sender=kwargs.pop("sender", self.sender), **kwargs,
+            sender=kwargs.pop("sender", self.sender), clock=lambda: self.time,
+            sleeper=self.advance, **kwargs,
         )
 
     def test_initial_notifications_cover_49_markets_but_never_bengali(self):

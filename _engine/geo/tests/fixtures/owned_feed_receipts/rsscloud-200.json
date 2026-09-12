@@ -1,0 +1,45 @@
+{
+  "accepted_ack": true,
+  "attempt_id": "cccccccccccccccccccccccccccccccc",
+  "endpoint": "https://rpc.rsscloud.io/ping",
+  "fixture": true,
+  "indexing_verified": false,
+  "intent_id": "a35c158e2e538dff633311431a359c570fa06ac200a046f3f24d6c261eac7e2d",
+  "outcome": "accepted_ack",
+  "protocol": "rsscloud",
+  "receipt_id": "36f85d8a2581f542d359557bc22b2b0736f0140fb61cea1f75b4ebdbfdf7a25d",
+  "request": {
+    "content_type": "application/x-www-form-urlencoded; charset=utf-8",
+    "deployment_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "engine_source_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "feed_generation_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "feed_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "generation_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "inventory_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "method": "POST",
+    "request_body": "url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fen-US%2Frss.xml",
+    "request_sha256": "d082873aafb185736f743bd7b3f59ca70a0e78de61e83f8ad6a7ac1b58945653",
+    "source_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "started_at": "2026-09-01T00:00:00Z",
+    "topics": [
+      "https://open.cait518.cc/ios-app-guide/en-US/rss.xml"
+    ]
+  },
+  "response": {
+    "ack_body": "{\"success\":true,\"msg\":\"fixture ACK only\"}",
+    "ack_body_sha256": "2cd0ad67a3d351948fe8c87ba8a9b7c543db0a2aa4386e9dcc54182a4702bae7",
+    "endpoint": "https://rpc.rsscloud.io/ping",
+    "final_url": "https://rpc.rsscloud.io/ping",
+    "http_status": 200,
+    "observed_at": "2026-09-01T00:00:01Z",
+    "request_sha256": "d082873aafb185736f743bd7b3f59ca70a0e78de61e83f8ad6a7ac1b58945653",
+    "retry_after_seconds": null,
+    "topics": [
+      "https://open.cait518.cc/ios-app-guide/en-US/rss.xml"
+    ],
+    "transport_error": null
+  },
+  "schema": "lumi.owned-feed-receipt/v1",
+  "subscriber_delivery_verified": false,
+  "topic": "https://open.cait518.cc/ios-app-guide/en-US/rss.xml"
+}

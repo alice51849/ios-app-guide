@@ -2194,7 +2194,7 @@
       "record_count": 47
     }
   },
-  "generation_digest": "06905ca08731d56a9ae2976db2aee3e6984159e567f5abbf752df6bfca46b512",
+  "generation_digest": "3d53db98236dbcd09a63f9353a69c8775b1351ce12f5eb7f3a4a52db85c9824d",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2211,7 +2211,7 @@
     "source_files": {
       "../social/videogen/registry.py": "bd5d5863fe0798a4dc8ce10b050059c0604acaa0d9e98ccc5c25d84979ae0a23",
       "app_store_storefronts.py": "6d859f5785c1c6e92e392272cb2ce0b7e9b2c6ef39567d7b0ddd353545a40bb7",
-      "build_pages_i18n.py": "b092b45e85c64bd49e93b88c4dd5a90f7020716500c20adff33f94bfeb04e037",
+      "build_pages_i18n.py": "e9d95def108468cc025580792870c80c030d92676e6c4bbd45c64cb3f27669c4",
       "deployment_generation.py": "9b7220f693d072928e17b59975333e299c8891905a4088037e6da19cf591d554",
       "external_app_locales.py": "931182b43719e712ca3573f9b2ce22fb60cce34acc23909c5b63660624737f35",
       "gen_sitemap_lastmod.py": "814c3b9f06a398f6441542e3116da83a3a7b2ac1667bf7a899ffabd8352e669d",
@@ -2219,9 +2219,11 @@
       "locale_storefronts.json": "1b9d27a304b0b2031fbdbb26e816e0bc416d0a8df8d9cf5a1593d72fdaaab5de",
       "market_availability.py": "cf1544c5c96df0a8989c1ca403a3fa957f75623ea301b46333582a0dec20cef8",
       "official_locales.py": "576457e2c5b19b9b6e78f644397b27e177f3b195ce7ecc3ac83ef3a39b8d498a",
-      "owned_app_feeds.py": "e054060a663c1112f75e6b91480a97bb044b7c52defbbe4ecbd6de8493d0a717",
-      "owned_feed_delivery.py": "14a9373adb221da7ed0cd5d7813564b1282ea2540298aa8595824ce3c29e3f1b",
+      "owned_app_feeds.py": "a99ec4b8edce194bd8eb7701372914ef8657b4e2c3a539ab898d33c5f192dca3",
+      "owned_feed_delivery.py": "18fb7a781516e1ed46d72eeba8e362f29383b38241419cf996004201b40a6880",
       "owned_feed_locale_gate.py": "5a6474d0af445110da41074c48f06b99464fa1c5d53bc21f4602ef1dff3c65d7",
+      "owned_feed_receipt.schema.json": "1c00a1175b07380ccfd9c1a1e7ae97b920aba9121898418db402b0eb6afc877e",
+      "owned_feed_receipts.py": "fc6cf034ae56f1a55f04e5681e0e81e3238a5597eddc7b78191b9b97b0cba490",
       "portfolio_app_catalog_api.py": "397633bd3165b927ca53e1c68ce8e1b36e1d0e5dd1b415218f2754a7b4d39770",
       "portfolio_app_finder_i18n.json": "22dea261ee2efb7b964adfb0d1a84942bc1ca5408039cce791a22b71f6eb99d0",
       "publisher_intent_catalog_i18n.json": "b7546d5a1762155a3c233845cd716b3d6b26aa47d9952743ba717803bca30049",

@@ -10,6 +10,9 @@ import subprocess
 import owned_app_feeds as feeds
 
 MIRRORS = (
+    "paid_upfront_surfaces.py", "data/paid_upfront_surface_repairs.json",
+    "gen_review_pages.py", "aeo_answers.py", "aeo_answers_i18n.py",
+    "tests/test_paid_upfront_surfaces.py",
     "owned_feed_pair_gate.py", "owned_app_feeds.md", "publish.py",
     "tests/owned_feed_fixtures.py", "tests/test_owned_app_feeds.py",
     "tests/test_owned_feed_delivery.py",

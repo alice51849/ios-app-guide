@@ -21,6 +21,7 @@ from typing import Any
 
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE  # noqa: E402
+import paid_upfront_surfaces  # noqa: E402
 
 
 ROOT = Path(
@@ -2722,7 +2723,8 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
     # Metadata must never fall back to the byte-identical English title/
     # description (duplicate_metadata_share); frames only fire when the
     # translation mapping left the English title in place.
-    return ensure_locale_meta(source, lang, slug)
+    source = ensure_locale_meta(source, lang, slug)
+    return paid_upfront_surfaces.rewrite(source, f"{lang}/answers/{slug}.html", ROOT)
 
 
 def render_localized(

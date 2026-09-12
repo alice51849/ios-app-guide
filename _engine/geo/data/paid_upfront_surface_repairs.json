@@ -1,0 +1,224 @@
+{
+  "schema": "lumi.paid-upfront-existing-surfaces/v1",
+  "scope": "Existing first-party URLs only; no App Store metadata, new pages, campaigns or notifications.",
+  "evidence": {
+    "observed_at": "2026-09-12T22:59:09.364795+00:00",
+    "kind": "Apple public product descriptions and positive download prices; not independent testing or sales evidence",
+    "country": "us",
+    "response_sha256": "d2f8d13bd594e3ffd5f7d24f8d8bc546031b043da1374dccd09b5ed493ceff06"
+  },
+  "apps": {
+    "aim990plus": {"app_id": "6792483140", "business_model": "paid_upfront", "description_sha256": "7873cf25716f0a2650e3e33e648fa28cf8308fc15480f1187b7d2402831c7204"},
+    "dailymate": {"app_id": "6790418321", "business_model": "paid_upfront", "description_sha256": "da02259a3fa3a195f7a208734fab15642578702e03522589b45b5877677fc8bb"},
+    "gmoney": {"app_id": "6755782939", "business_model": "paid_upfront", "description_sha256": "789296f6c574d8e23e56a363547d9a10ed6c6a0e279ebe4aaa7ef8d0d3d9ae67"},
+    "hourstag": {"app_id": "6754218117", "business_model": "paid_upfront", "description_sha256": "197139c25ebd6b37893d72dc552182f6d084c012a77436577ec5565179e411f3"},
+    "lumimathpro": {"app_id": "6776958488", "business_model": "paid_upfront", "description_sha256": "46a076c640163a45c76959447cbe1038ce367ad0b46676225edc5b6ae16795f3"},
+    "lumimissionpro": {"app_id": "6779745474", "business_model": "paid_upfront", "description_sha256": "d014fe5a98cbad67320a680b55c7b06e51d99bc70cff84299f45027f061249ee"},
+    "snapport": {"app_id": "6780575828", "business_model": "paid_upfront", "description_sha256": "68804980d772dd9f5c86cec9a3a6984243ad55064b2dbf26299e451f7e25c74d"},
+    "wifiaid": {"app_id": "6790467886", "business_model": "paid_upfront", "description_sha256": "144210117e51b6ab74fb961041d9b98c6cb9ee203785d1f9583b2f10e7b7ef1a"},
+    "wordmate": {"app_id": "6789917808", "business_model": "paid_upfront", "description_sha256": "81017d6f8131a7925bd3c70f500f05a16eb536b514674dffccd3853c88c0a362"}
+  },
+  "reviews": {
+    "reviews/dailymate-habit-tracker-review-2026.html": "dailymate",
+    "reviews/hourstag-review-2026-is-it-worth-it.html": "hourstag",
+    "reviews/gmoney-travel-budget-app-review-2026.html": "gmoney",
+    "reviews/snapport-passport-photo-app-review-2026.html": "snapport"
+  },
+  "labels": {
+    "en-US": {
+      "short": "What the paid download includes",
+      "look": "Before choosing",
+      "steps": "A practical workflow",
+      "compare": "Check the result you actually need",
+      "need": "Need",
+      "check": "What to check",
+      "why": "Boundary",
+      "fits": "Who this fits",
+      "faq": "Frequently asked questions",
+      "disclosure": "First-party product guide from Lumi Studio, the app developer, based on the public App Store listing. This is not an independent review, a rating or a guarantee. Confirm the current listing and the receiving authority's requirements before purchase."
+    },
+    "ja": {
+      "short": "購入すると何が使える？",
+      "look": "購入前に確かめたいこと",
+      "steps": "8問から始める練習の流れ",
+      "compare": "目的と機能の対応",
+      "need": "やりたいこと",
+      "check": "使う機能",
+      "why": "知っておきたい限界",
+      "fits": "こんな人に向いています",
+      "faq": "よくある質問",
+      "disclosure": "このページは開発元の Lumi Studio が公開 App Store 情報に基づいて作成した製品ガイドです。第三者による評価や効果の保証ではありません。購入前に現在の配信内容をご確認ください。"
+    },
+    "zh-Hant": {
+      "short": "一次付費包含什麼",
+      "look": "購買前先確認",
+      "steps": "實際使用流程",
+      "compare": "需求與功能對照",
+      "need": "需求",
+      "check": "可以怎麼做",
+      "why": "使用界線",
+      "fits": "適合的使用情境",
+      "faq": "常見問題",
+      "disclosure": "這是開發團隊 Lumi Studio 根據公開 App Store 說明撰寫的第一方產品指南，不是獨立評測、評分或成效保證。購買前請確認商店目前提供的功能與裝置需求。"
+    },
+    "ko": {
+      "short": "한 번 구매하면 포함되는 기능",
+      "look": "구매 전에 확인할 점",
+      "steps": "기록부터 월말 확인까지",
+      "compare": "필요한 작업과 기능",
+      "need": "하려는 일",
+      "check": "사용할 기능",
+      "why": "알아둘 한계",
+      "fits": "이런 용도에 맞습니다",
+      "faq": "자주 묻는 질문",
+      "disclosure": "개발사 Lumi Studio가 공개 App Store 설명을 바탕으로 작성한 제품 안내입니다. 독립적인 리뷰나 평점, 효과 보장이 아닙니다. 구매 전에 현재 제공되는 기능과 기기 요건을 확인하세요."
+    }
+  },
+  "answers": [
+    {
+      "key": "aim990plus",
+      "locale": "ja",
+      "slug": "best-offline-english-listening-and-reading-exam-trainer-for-iphone",
+      "mode": "replace",
+      "heading": "Aim990 Plus：英語の時間制限練習を8問の準備から始める",
+      "lead": "Aim990 Plus は、英語の基礎がある大人向けの有料ダウンロードです。8問の Warm-up → 20問・15分の Pressure Set → Mistake Replay で、時間内に解き、間違いを振り返る練習を繰り返せます。追加のアプリ内課金やサブスクリプションはありません。",
+      "paras": [
+        "一度の購入で、7パート各90問、合計630問のオリジナル問題と90枚の異なる写真、模擬テスト、ディクテーション、スピード練習、語彙、弱点分析を利用できます。iPhone と iPad でオフライン練習ができ、進捗は端末内に保存されます。",
+        "まず8問で調子を確かめ、次に20問を15分以内で解きます。終わったら Mistake Replay で誤答を解き直し、弱点分析を見て次の練習を選びます。長めに取り組みたい日は、短縮・半分・全体の模擬形式を選べます。"
+      ],
+      "look": [
+        "英語の基礎があり、リスニングとリーディングの時間配分を練習したい人向けです。",
+        "有料ダウンロード後は全機能を利用でき、無料体験や追加アンロックを前提にしません。",
+        "問題は独自制作です。公式問題集や試験主催者が認定した教材ではありません。",
+        "学習成果や得点は保証しません。試験への申し込みや実際の受験は別です。"
+      ],
+      "steps": [
+        "8問の Warm-up で準備します。",
+        "20問・15分の Pressure Set に取り組みます。",
+        "Mistake Replay で間違えた問題を解き直します。",
+        "弱点分析で次に練習するパートを選びます。",
+        "必要に応じて模擬テストやディクテーションを組み合わせます。"
+      ],
+      "rows": [
+        ["短時間の練習", "8問の準備と20問・15分のセット", "15分はセットの制限時間で、得点が伸びるまでの時間ではありません。"],
+        ["間違いの復習", "誤答の解き直しと弱点分析", "公式の成績証明や得点保証ではありません。"],
+        ["オフライン利用", "端末内の問題と進捗", "購入時には App Store への接続が必要です。"]
+      ],
+      "fits": "独学中の大人が、毎回の練習を「解く→時間を意識する→誤答を振り返る」まで続けたい場合に向いています。子ども向け入門教材でも、Aim990 の追加課金でもなく、独立した買い切りアプリです。",
+      "faq": [
+        ["購入後に追加料金はかかりますか？", "Aim990 Plus は有料ダウンロードです。一度の購入に全機能が含まれ、アプリ内課金、サブスクリプション、追加のペイウォールはありません。"],
+        ["公式 TOEIC 問題ですか？", "いいえ。630問はこのアプリ向けのオリジナル問題です。TOEIC は ETS の商標で、Aim990 Plus は ETS と提携しておらず、承認や推奨を受けた教材ではありません。"],
+        ["初心者でも得点を保証してもらえますか？", "得点の保証はありません。英語の基礎がある大人の聴解・読解練習向けです。基礎から学ぶ教材が必要かどうかも購入前に確認してください。"]
+      ]
+    },
+    {
+      "key": "hourstag",
+      "locale": "zh-Hant",
+      "slug": "best-app-to-track-where-my-money-goes-and-save-more",
+      "mode": "replace",
+      "heading": "HoursTag：把花費換成工時，月底看懂自己的支出紀錄",
+      "lead": "HoursTag 是付費下載的原版 App：設定時薪或月薪，把花費換成工作時間，再保存紀錄、標記必要／想要／衝動、查看分類洞察與目標進度。買到的不只是一次除法，而是之後還能回頭看的花費歷史。",
+      "paras": [
+        "例如時薪 NT$200、一筆 NT$600 的消費，相當於3小時工作。這只是計算示例，不是 App 售價或省錢保證；結果取決於你填入的收入與價格。",
+        "把這筆花費記下來，選擇分類及必要／想要／衝動標籤，月底就能按分類看花費，並用實際工時追蹤目標與願望清單。原版包含自訂分類、備份與還原，沒有訂閱或隱藏升級費用。",
+        "這一頁的免費工時比較表是網站工具，能另行下載自己的計算 CSV；它不是 HoursTag 的免費版，也不取代 App 的紀錄、洞察與備份。"
+      ],
+      "look": ["需要的是花費紀錄與分類回顧，不只是購物前算一次工時。", "收入與支出由你輸入，不會自動讀取銀行交易。", "原版付費下載，不套用 HoursTag Lite 的免費額度或工作流。", "資料留在裝置上；換機前請自行備份。"],
+      "steps": ["設定自己的時薪或月薪。", "輸入花費，查看工時及占工作日的比例。", "保存紀錄並標記分類與必要／想要／衝動。", "月底查看分類洞察及目標進度。", "需要換機或保留副本時使用備份與還原。"],
+      "rows": [["知道花費的時間成本", "收入設定加上價格換算", "輸入不同，結果也會不同。"], ["回顧已經花掉的錢", "保存的歷史、分類與每月洞察", "不是銀行自動同步服務。"], ["持續追蹤目標", "以工時呈現目標及願望清單進度", "不保證改變消費習慣或存到特定金額。"]],
+      "fits": "適合想用自己的工作時間理解既有支出、保留歷史並追蹤目標的人。完整原版功能保留，不把產品改成只在購物前使用的單次計算器。",
+      "faq": [["HoursTag 會保存花費歷史嗎？", "會。原版可保存花費，使用必要／想要／衝動標籤及自訂分類，查看分類洞察、每月明細和目標進度。"], ["是免費下載後再解鎖嗎？", "不是。這裡介紹的是付費下載的 HoursTag 原版，一次購買，沒有訂閱或隱藏升級。"], ["計算出工時就一定能省錢嗎？", "不保證。工時換算和歷史只是幫你看清花費，仍要由你決定怎麼使用資料。"]]
+    },
+    {
+      "key": "hourstag",
+      "locale": "ko",
+      "slug": "best-app-to-track-where-my-money-goes-and-save-more",
+      "mode": "replace",
+      "heading": "HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기",
+      "lead": "HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다.",
+      "paras": [
+        "예를 들어 시급이 10,000원이고 지출이 30,000원이면 3시간에 해당합니다. 계산을 설명하기 위한 예시이며 앱 가격이나 절약 효과를 뜻하지 않습니다. 결과는 직접 입력한 수입과 금액에 따라 달라집니다.",
+        "지출을 저장하고 분류와 태그를 붙인 다음, 월말에 어디에 시간을 썼는지 확인하세요. 목표와 위시리스트, 사용자 지정 분류, 백업과 복원도 원본 유료 앱에 포함됩니다. 구독이나 숨겨진 업그레이드는 없습니다.",
+        "이 페이지의 무료 근무 시간 비교표와 CSV 다운로드는 웹 도구입니다. HoursTag의 무료 버전이 아니며, 앱에 저장하는 지출 기록과 분석, 백업을 대신하지 않습니다."
+      ],
+      "look": ["이미 쓴 돈을 기록하고 돌아보는 용도까지 필요한지 확인하세요.", "수입과 지출을 직접 입력하며 은행 거래를 자동으로 가져오지 않습니다.", "HoursTag Lite의 무료 범위나 구매 전 판단 흐름을 원본 앱과 혼동하지 마세요.", "데이터는 기기에 저장되므로 기기를 바꾸기 전에 백업하세요."],
+      "steps": ["본인의 시급이나 월급을 설정합니다.", "지출 금액을 입력해 필요한 근무 시간과 하루에서 차지하는 비율을 봅니다.", "기록을 저장하고 분류와 필요·원함·충동 태그를 붙입니다.", "월별 분류 분석과 목표 진행 상황을 확인합니다.", "기기를 바꿀 때는 백업과 복원을 이용합니다."],
+      "rows": [["지출의 시간 비용 알기", "수입 설정과 금액 환산", "입력한 수치에 따라 결과가 달라집니다."], ["지난 지출 돌아보기", "저장된 기록과 분류별 월간 분석", "은행 자동 연동 서비스가 아닙니다."], ["목표 확인하기", "근무 시간으로 보는 목표와 위시리스트", "절약 금액이나 행동 변화를 보장하지 않습니다."]],
+      "fits": "본인의 근무 시간을 기준으로 지출을 이해하고 기록과 목표를 꾸준히 확인하려는 사람에게 맞습니다. 원본 앱의 기록 기능을 빼고 구매 전 계산기로만 소개하지 않습니다.",
+      "faq": [["지출 기록이 저장되나요?", "네. 원본 HoursTag는 지출을 저장하고 필요·원함·충동 태그, 사용자 지정 분류, 월별 분석과 목표 진행 상황을 제공합니다."], ["무료로 받은 뒤 결제하는 앱인가요?", "아닙니다. 여기서 소개하는 원본 HoursTag는 유료 다운로드입니다. 한 번 구매하며 구독이나 숨겨진 업그레이드는 없습니다."], ["사용하면 반드시 돈을 아낄 수 있나요?", "그런 보장은 없습니다. 시간 환산과 기록은 지출을 이해하는 도구이며 실제 결정은 사용자가 합니다."]]
+    },
+    {
+      "key": "lumimathpro",
+      "locale": "zh-Hant",
+      "slug": "best-complete-math-learning-app-for-preschool-and-early-grades",
+      "mode": "replace",
+      "heading": "Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單",
+      "lead": "Lumi Math Pro 一次付費包含完整數學內容、弱項練習與進度；家長還能在家長專區產生20題附解答的 PDF／列印學習單及一頁能力報告。不是只買加法題，也不需要每次另購學習單。",
+      "paras": ["孩子可在14個星球接觸46種題型，包括加減乘除、位值、規律、邏輯、幾何與生活應用；另有每日挑戰、限時練習、徽章與角色。公開產品說明以5–8歲為主要對象，幼兒是否適合仍應由家長依能力陪同判斷。", "想把螢幕上的練習接到紙本時，先看五項能力與常錯題型，再由家長通過家長閘門進入專區，產生符合目前程度的20題學習單及解答。可以存成 PDF 或列印，也能匯出一頁學習報告供家長或老師查看。", "原有課程、語音引導、進度與本機匯出／匯入功能都保留。這是付費下載的完整 Pro，沒有廣告、App 內購買或訂閱。"],
+      "look": ["想要的是完整數學練習，加上可回顧的弱項與紙本延伸。", "學習單和報告由家長專區操作，不把兒童帶往付款或外部服務。", "題型參考競賽風格，但不是競賽官方教材，也不保證成績。", "網站的50個內容語系不代表 App 內有50種題目與語音；請查商店目前的支援語言。"],
+      "steps": ["完成一段符合孩子程度的數學練習。", "查看五項能力及常錯題型，選擇弱項練習。", "由家長通過家長閘門進入家長專區。", "產生20題附解答學習單，存成 PDF 或列印。", "匯出一頁能力報告，作為之後練習與溝通的參考。"],
+      "rows": [["練完知道卡在哪裡", "題型弱項與五項能力進度", "不是學校成績單或專業能力診斷。"], ["離開螢幕也能練習", "家長專區的20題學習單與解答", "列印需要自己的列印方式與設備。"], ["保留完整學習內容", "完整 Pro 課程、挑戰、角色與進度", "不保證比賽名次、學業或發展效果。"]],
+      "fits": "適合家長想把完整遊戲式數學、弱項複習與可列印練習串在一起的家庭。題單與報告是完整產品的一部分，不取代原有數學冒險。",
+      "faq": [["學習單需要另外付費嗎？", "不需要。一次付費下載的完整 Pro 已包含家長專區的20題附答案學習單，可存成 PDF 或列印，另有一頁學習報告。"], ["誰可以操作報告與匯出？", "由家長通過家長閘門後在家長專區操作；本機進度匯出與匯入功能也保留。"], ["只有數數或簡單加法嗎？", "不是。完整內容也包含其他基本運算、位值、規律、邏輯、幾何及生活應用，並提供弱項練習與進度。"]]
+    },
+    {
+      "key": "snapport",
+      "locale": "en-US",
+      "slug": "best-passport-photo-app-for-babies-and-toddlers-at-home",
+      "include_root": true,
+      "mode": "replace",
+      "heading": "Snapport for a baby's photo: prepare the crop and print sheet, then check the rules",
+      "lead": "Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. paper-photo application, choose a 2×2-inch crop and arrange copies on a 4×6 sheet with cut guides. A correct-sized file is not a guarantee that a passport authority will accept the photo.",
+      "paras": ["One purchase includes size templates, face-alignment guides, optional background and adjustment tools, and multiple-copy layouts for 4×6, A4 or Letter. Processing is on the device; there is no per-export purchase, account or subscription. The optional template-update check downloads a public size list and needs a connection.", "Start with the receiving authority's current rules for the child's age and application type. Capture an evenly lit photo with the required real background and no other person visible. Keep the original. Choosing a crop and arranging a print sheet is different from changing a face or digitally replacing a background: only use editing that the authority explicitly permits.", "For a U.S. paper submission, prepare the required 2×2-inch image, export a 4×6 layout and print at actual size on the required photo paper. A4 and Letter layouts remain available for suitable uses. Where an authority requires an approved digital submission channel, a self-printed sheet is not a substitute."],
+      "look": ["Verify the country, agency, application type and current baby-photo rules before editing.", "A background tool being available in the app does not mean it is allowed for an official document.", "Do not retouch facial features or rely on a template as proof of acceptance.", "Check final print dimensions and the printer's scaling setting.", "All export formats belong to the paid Snapport app; Snapport Lite's free limits or watermarks do not apply."],
+      "steps": ["Read the official requirements for this child's application.", "Take the photo with the required lighting, pose and real background; preserve the original.", "Choose the required size and check face alignment without prohibited alterations.", "For a U.S. paper photo, arrange 2×2-inch copies on a 4×6 sheet and export JPEG, PNG or PDF.", "Print at actual size where paper submission is allowed, measure the result and check it again before submitting."],
+      "rows": [["Create a print-ready file", "2×2 crop plus 4×6 multiple-copy layout and cut guides", "Print settings and the receiving authority still need checking."], ["Keep the photo private", "On-device processing and retained original", "Only share or export to a destination you choose."], ["Use an official document photo", "Country- and application-specific rules", "No acceptance guarantee; some applications require approved digital delivery."]],
+      "fits": "Parents who need a private way to prepare and print a correctly sized photo, and are willing to check the receiving authority's requirements. Snapport supplies editing and output tools, not government approval or a guaranteed result in a fixed number of seconds.",
+      "faq": [["What does one purchase include?", "The paid Snapport download includes size and alignment tools, JPEG/PNG/PDF export, and 4×6, A4 and Letter multiple-copy print layouts. There is no subscription or extra charge per export."], ["Can I digitally replace my baby's background?", "Do not assume that you can. Photograph the required background at capture time and follow the receiving authority's rules. Use digital background or touch-up tools for an official document only when that authority explicitly permits the change."], ["Are all baby-photo rules the same?", "No. Age-related exceptions and submission methods vary by authority and application. Check the current official instructions rather than applying another country's rule."], ["Will the photo definitely be accepted?", "No. Snapport is not affiliated with a government and does not guarantee acceptance. Check lighting, pose, permitted editing, dimensions, print quality and submission method."]],
+      "sources": [["U.S. Department of State: passport photo requirements", "https://travel.state.gov/content/travel/en/passports/how-apply/photos.html"]]
+    },
+    {
+      "key": "wordmate",
+      "locale": "zh-Hant",
+      "slug": "best-vocabulary-app-for-busy-commuters-with-apple-watch",
+      "mode": "clarify",
+      "lead": "Wordmate 的互動主畫面 Widget 可直接查看下一個單字、切換與收藏；通勤時先存下想複習的字，稍後再集中學習。一次付費包含44個學習語言、全部等級、例句、進度、Widget 與 Apple Watch，沒有額外升級。",
+      "addition": "例如先在主畫面切到下一字，將不熟的字加入收藏，再於 iPhone、iPad 或 Apple Watch 複習。發音由這三種裝置上的相符系統語音提供；不要把 Widget 的查看／切換／收藏說成 Widget 也能播放語音。44是學習語言數，並不是本網站50個內容語系的另一種計數。",
+      "faq": [["不用開 App，Widget 可以做什麼？", "互動主畫面 Widget 可以查看單字、切換到下一字及加入收藏。稍後可在 iPhone、iPad 或 Apple Watch 集中複習，並使用相符的系統語音聽發音。完整 Widget 與 Watch 體驗已包含在付費下載內。"]]
+    }
+  ],
+  "landings": [
+    {
+      "key": "lumimissionpro",
+      "locale": "nl-NL",
+      "intro": "Lumi Mission Planet Pro is een betaalde download: één aankoop bevat de volledige app, zonder proefperiode, in-app aankopen of abonnement. Ouders en kinderen kunnen samen een visuele routine afwerken, met directe feedback en bewaarde voortgang.",
+      "what": "Wat is Lumi Mission Planet Pro?",
+      "features": "Belangrijkste functies",
+      "faq_label": "Veelgestelde vragen",
+      "download_label": "Downloaden",
+      "description": [
+        "Lumi Mission Planet Pro is de volledige routine-app voor ouders met kinderen van ongeveer drie tot zeven jaar. Vijf vaste missies behandelen eten, tandenpoetsen, bedtijd, opruimen en schoolvoorbereiding. Je kunt ook onbeperkt eigen missies maken met een eigen pictogram en scène.",
+        "Bijvoorbeeld: kies samen de tandenpoetsmissie, laat je kind de kleine stappen aantikken en bekijk na afloop de viering. Anders dan op een losse papieren stickerkaart blijft de voortgang bewaard in het ouderoverzicht, met een zevendaagse kalender en de geschiedenis van elke tik.",
+        "De aankoop bevat zes vriendjes, honderd prestatiestickers, overwinningskaarten, instellingen en optionele dagelijkse herinneringen. CSV-export en een back-up helpen ouders de voortgang te bewaren. De ouderfuncties blijven achter de oudercontrole; gegevens en de optionele bijnaam blijven op het apparaat.",
+        "Dit is Pro, niet de gratis editie met een latere ontgrendeling. Er zijn geen advertenties, in-app aankopen, abonnementen of accountvereisten. De app ondersteunt een dagelijkse routine, maar biedt geen behandeling of garantie op slaap of gedragsverandering."
+      ],
+      "faq": [["Is dit een gratis proefversie?", "Nee. Lumi Mission Planet Pro is een betaalde download. De volledige missies, beloningen, instellingen en voortgang zijn bij één aankoop inbegrepen, zonder in-app aankopen of abonnement."], ["Wat voegt de app toe aan een papieren stickerkaart?", "Een kind kan stappen aantikken en krijgt meteen feedback. Ouders kunnen de bewaarde voortgang, zevendaagse kalender en tikgeschiedenis bekijken, eigen missies maken en de gegevens exporteren of back-uppen."], ["Garandeert de app dat mijn kind beter slaapt?", "Nee. De app is een hulpmiddel om samen routines te oefenen, geen slaapbehandeling of garantie op gedragsverandering."]]
+    },
+    {
+      "key": "wifiaid",
+      "locale": "zh-Hans",
+      "intro": "手机显示已连接，但某个网站打不开？WiFi Aid 先检查整体连接，再检查指定网站，结合 DNS、TCP、TLS、响应时间和稳定性证据，显示最可能的原因与信心程度。它是一次付费下载、首次启动即开放完整诊断的 App，不是加速器或路由器控制器。",
+      "what": "WiFi Aid：找出网络问题·诊断 是什么?",
+      "features": "主要功能",
+      "faq_label": "常见问题",
+      "download_label": "下载",
+      "description": [
+        "先运行整体连接检查，确认是普遍断网还是只有一个目标失败；再使用网站检查，查看指定地址的 DNS、TCP、TLS、HTTP、响应时间与其他独立证据。需要更多样本时使用深度检查，不凭一次超时就下定论。",
+        "结果说明最可能的原因及信心程度，检查记录只保存在本机。iPhone、iPad、Widget 和 Apple Watch 的既有功能保留；购买原版后不需要另外解锁、订阅或恢复购买。",
+        "WiFi Aid 不读取 iOS 无法提供的 RSSI、附近 Wi-Fi 频道拥堵或其他设备的带宽，不改变路由器设置，也不是 VPN。网络探测需要可用连接，无法完成的检查不能当成确定诊断；不保证修复或提高网速。",
+        "本页另有家庭带宽需求表，适合估算多台设备同时使用时的套餐容量。它是免费的网站工具，不是故障诊断结果，也不表示 WiFi Aid 可以免费下载。"
+      ],
+      "faq": [["已连接 Wi-Fi，为什么只有一个网站打不开？", "先用整体检查建立连接基线，再检查该网站，比较 DNS、TCP、TLS 和 HTTP 等证据。WiFi Aid 只报告最可能的原因和信心，不把一次失败当成确定结论。"], ["可以扫描附近频道、读取其他设备的带宽或控制路由器吗？", "不可以。WiFi Aid 不宣称能取得 iOS 无法提供的这些数据，也不控制路由器或充当 VPN。"], ["是免费下载后再解锁吗？", "不是。原版 WiFi Aid 是付费下载，首次启动即开放完整功能，没有 App 内购买、订阅或升级。"], ["没有网络也能完成所有检查吗？", "不能。网络探测需要连接；无法完成时应查看失败或不确定的证据。已有检查记录保存在本机，可供之后回看。"]]
+    }
+  ]
+}

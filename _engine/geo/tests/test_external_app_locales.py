@@ -161,7 +161,9 @@ class ExternalAppLocaleTests(unittest.TestCase):
                         countryless = (
                             f"https://apps.apple.com/app/id{APPSTORE[key]}"
                         )
-                        if market_availability.is_unavailable(locale):
+                        if market_availability.is_unavailable(
+                            locale, APPSTORE[key]
+                        ):
                             # 沒有可驗證市場:整頁不得出現任何 App Store 連結,
                             # 也不得出現 /us/ 或 /in/ 之類的替代國家。
                             self.assertNotIn("apps.apple.com", content)

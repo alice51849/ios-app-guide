@@ -46,6 +46,8 @@ SYNC_ENGINE_FILES = (
     Path("high_intent_decision_routes.py"),
     Path("data") / "high_intent_decision_routes_v2.json",
     Path("conversion_route_contract.py"),
+    Path("paid_upfront_surfaces.py"),
+    Path("data") / "paid_upfront_surface_repairs.json",
     Path("data") / "high_intent_conversion_contracts_v1.json",
     Path("gen_store_attribution.py"),
     Path("market_availability.py"),

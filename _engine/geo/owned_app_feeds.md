@@ -183,6 +183,27 @@ manifest防中途換代。只有雙host均150/150才標記技術readback PASS；
 下一步eligibility仍為 `dispatch_authorized=false`，需另次明確通知release授權及
 新的production ACK對帳。404／partial／任何不一致都保持hold，不能靠重送provider解決。
 
+### 既有 paid-upfront exact9 內容修復
+
+`paid_upfront_surfaces.py` 與 `data/paid_upfront_surface_repairs.json` 只修復明列的
+13 個既有 URL，涵蓋 9 款付費下載 App；不新增頁面、改 App Store metadata、
+擴增 cadence 或通知 provider。四篇舊 review 保留 URL，但改為具第一方揭露的
+產品指南，移除自評與假免費價格；其餘只補核實的母語工作流與限制。
+App Store 可用性必須由該市場的既有 snapshot 證明，未知即阻擋，不能補無國別 URL。
+兩款 landing 的修正透過 `build_pages_i18n.load_app_locales` 同步至 catalog/feed；
+原始 ASC metadata 檔不改。答案與 landing 產生器會重套同一份修正，避免重生復發。
+
+```sh
+PYTHONPATH=geo:social python3 geo/paid_upfront_surfaces.py --pages <Guide>
+PYTHONPATH=geo:social python3 geo/paid_upfront_surfaces.py --pages <Guide> --check
+GEO_PAGES=<Guide> PYTHONPATH=geo:social python3 -m unittest -q \
+  geo.tests.test_paid_upfront_surfaces
+```
+
+新來源與測試須 mirror，重建 catalog、2350 records 與 150 份 feeds 後再跑 paired
+integration Gate。47×50、bn-BD content-only 及既有四個 UNKNOWN 不變；
+技術部署、索引、真人造訪與成交各自需要證據，不能互相代替。
+
 ```sh
 python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --refresh-catalog
 python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --check \

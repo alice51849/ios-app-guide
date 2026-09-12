@@ -23,6 +23,7 @@ import re
 import sys
 import unicodedata
 import public_email
+import paid_upfront_surfaces
 from functools import lru_cache
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -1295,6 +1296,7 @@ def load_app_locales(key):
         }
         for locale in dict.fromkeys((*curated, *stored))
     }
+    result = paid_upfront_surfaces.localized_descriptions(key, result)
     _APP_LOCALE_CACHE[key] = (signature, result)
     return result
 
@@ -1734,6 +1736,7 @@ def build_one(key, locale, all_locales, *, copy_by_locale=None):
     out = os.path.join(outdir, f"{key}.html")
     page = market_surface_policy.enforce_html(page, locale, app_id=APPSTORE.get(key), name=name)
     page = ensure_landing_disclosure(page, locale, copy_by_locale=copy_by_locale)
+    page = paid_upfront_surfaces.rewrite(page, f"{locale}/{key}.html", PAGES)
     write_text_if_changed(out, public_email.render_html(page))
     return out
 

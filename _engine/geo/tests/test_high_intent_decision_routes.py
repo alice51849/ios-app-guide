@@ -575,6 +575,8 @@ class HighIntentRouteSourceTests(unittest.TestCase):
                 "_engine/geo/high_intent_decision_routes.py",
                 "_engine/geo/data/high_intent_decision_routes_v2.json",
                 "_engine/geo/conversion_route_contract.py",
+                "_engine/geo/paid_upfront_surfaces.py",
+                "_engine/geo/data/paid_upfront_surface_repairs.json",
                 "_engine/geo/data/high_intent_conversion_contracts_v1.json",
                 "_engine/geo/gen_store_attribution.py",
                 "_engine/geo/market_availability.py",
@@ -594,12 +596,15 @@ class HighIntentRouteSourceTests(unittest.TestCase):
         "Separate current GrowthEngine source checkout is not mounted",
     )
     def test_review_repro_mirror_matches_separate_current_source(self) -> None:
+        mirror = GUIDE_REPOSITORY / "_engine" / "geo"
         contract = routes.validate_sync_contract(
+            mirror / "data" / routes.SYNC_CONTRACT_PATH.name,
+            engine_root=mirror,
             current_source_root=CURRENT_SOURCE_ROOT,
             require_external_source=True,
         )
         self.assertEqual(
-            routes.build_sync_contract(),
+            routes.build_sync_contract(CURRENT_SOURCE_ROOT),
             contract,
         )
 

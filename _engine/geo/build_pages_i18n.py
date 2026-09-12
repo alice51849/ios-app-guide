@@ -5,6 +5,8 @@
 重用 data/<app>_full.json 內已策展的 50 語文案(name/subtitle/description/
 keywords/promotionalText),不重譯。每頁含 Schema.org SoftwareApplication + FAQPage
 的 JSON-LD(LLM 最愛的結構化來源),並用 hreflang 互連各語版本。
+外宣校正由 external_app_locales / cee_locale_copy 提供，絕不回寫 metadata。
+CEE 的離線 inventory 與候選可用 cee_content_candidates.py 產生；不發文或部署。
 
 輸出:
     geo/pages/<locale>/<key>.html   每 app 每語一頁
@@ -48,6 +50,8 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALES,
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
+from cee_locale_copy import reviewed_values as cee_reviewed_values  # noqa: E402
+from hebrew_bidi import html_text  # noqa: E402
 from external_app_identity import external_identity  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
@@ -1488,6 +1492,7 @@ def external_localized_values(key, locale, localizations=None):
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
     values = external_identity(key, locale, values)
+    values = cee_reviewed_values(key, locale, values)
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1616,11 +1621,14 @@ def build_one(key, locale, all_locales):
     else:
         store_block = (
             f'<p><a href="{html.escape(url)}">'
-            f'{html.escape(ui["get"].format(name=name))}</a></p>'
+            f'{html_text(ui["get"].format(name=name), locale)}</a></p>'
         )
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
     e = html.escape
+
+    def t(value):
+        return html_text(value, locale)
 
     feats = kws[:8]
     faq = build_faq(locale, name, sub, kws)
@@ -1678,15 +1686,15 @@ def build_one(key, locale, all_locales):
         for s in schemas
     )
 
-    feat_li = "\n".join(f"    <li>{e(f)}</li>" for f in feats) or "    <li>iOS app</li>"
+    feat_li = "\n".join(f"    <li>{t(f)}</li>" for f in feats) or "    <li>iOS app</li>"
     faq_html = "\n".join(
         f'    <div itemscope itemtype="https://schema.org/Question">\n'
-        f'      <h3 itemprop="name">{e(q)}</h3>\n'
+        f'      <h3 itemprop="name">{t(q)}</h3>\n'
         f'      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">\n'
-        f'        <p itemprop="text">{e(ans)}</p>\n      </div>\n    </div>'
+        f'        <p itemprop="text">{t(ans)}</p>\n      </div>\n    </div>'
         for q, ans in faq)
-    faq_section = (f'\n  <h2>{e(ui["faq"])}</h2>\n{faq_html}\n' if faq else "")
-    desc_html = "".join(f"  <p>{e(line)}</p>\n" for line in desc.split("\n") if line.strip())
+    faq_section = (f'\n  <h2>{t(ui["faq"])}</h2>\n{faq_html}\n' if faq else "")
+    desc_html = "".join(f"  <p>{t(line)}</p>\n" for line in desc.split("\n") if line.strip())
 
     dir_attr = ' dir="rtl"' if is_rtl else ""
     page = f"""<!DOCTYPE html>
@@ -1704,21 +1712,21 @@ def build_one(key, locale, all_locales):
 </head>
 <body>
 <main>
-  <h1>{e(name)}</h1>
-  <p><strong>{e(sub)}</strong></p>
+  <h1>{t(name)}</h1>
+  <p><strong>{t(sub)}</strong></p>
 
-  <h2>{e(ui["what"].format(name=name))}</h2>
-  <p>{e(ui["is"].format(name=name))} {e(sub)}</p>
+  <h2>{t(ui["what"].format(name=name))}</h2>
+  <p>{t(ui["is"].format(name=name))} {t(sub)}</p>
 {desc_html}
-  <h2>{e(ui["feat"])}</h2>
+  <h2>{t(ui["feat"])}</h2>
   <ul>
 {feat_li}
   </ul>{searched_as}
 
-  <h2>{e(ui["price"])}</h2>
-  <p>{e(pricing_text)}</p>
+  <h2>{t(ui["price"])}</h2>
+  <p>{t(pricing_text)}</p>
 {faq_section}
-  <h2>{e(ui["dl"])}</h2>
+  <h2>{t(ui["dl"])}</h2>
   {store_block}
 </main>
 </body>

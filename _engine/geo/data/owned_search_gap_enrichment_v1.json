@@ -1,0 +1,137 @@
+{
+  "schema": "lumi.owned-search-gap-enrichment/v1",
+  "generation": "public-search-20260912-round4",
+  "guide_base": "05f08c583d06ab358ddb7c6b3d54d7a1f6b8e829",
+  "search_snapshot_sha256": "4577318b4edb60027ab595186f6b174b887c47fdd7b657a301e69902cd624839",
+  "dedupe_corpus_sha256": "f9d31c8e6c3d7ef405c6802c841d51fd112b77b1de9dbc3b88d191c0bc1af136",
+  "signal_limit": "Public iTunes Search absence is a weak sample signal, not App Store rank repair, search volume, downloads or conversion.",
+  "product_source": {
+    "commit": "f020f3683a9c00024873e66b9c0cca31263c5d46",
+    "path": "geo/data/high_intent_conversion_contracts_v1.json",
+    "sha256": "f04caa537614e5d72e10417f6d1d8bfda2281aa91b28bbfee5f9b0341dc5204d"
+  },
+  "classifications": [
+    {"query_id": "aim990-JP-intent-1", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "ja/answers/app-to-practice-toeic-listening-and-reading-on-my-commute.html", "brief": "在既有通勤答案加入自我區分聽音、理解、選項誤判的方法；明示這是學習者手動復盤，不虛構自動弱點診斷。"},
+    {"query_id": "aim990-JP-intent-2", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "ja/answers/app-to-practice-toeic-listening-and-reading-on-my-commute.html", "brief": "同頁補足短時段備考與完整模擬練習的選擇界線，以及通勤安全、原創題與 ETS 非關係限制；不新增第二 URL。"},
+    {"query_id": "aim990-US-intent-1", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "answers/offline-toeic-practice-app-that-works-without-internet.html", "brief": "既有離線標題主要談 Part 5；補上出門前的實際離線可用性檢查與離線練習不等於離線購買／還原。"},
+    {"query_id": "aim990-US-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "Part 5 時間分配已被既有 answer／persona 覆蓋；本次沒有新的計時功能證據，不因公開搜尋未見再擴寫同義文案或假裝修 ASC 排名。"},
+    {"query_id": "cyca-DE-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "與已選 Periodenkalender 同一任務且同一既有頁；保留 brief，避免為同義詞重複加段或另建頁。"},
+    {"query_id": "cyca-DE-intent-1", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "de-DE/answers/best-period-tracker-app-no-account-required-iphone.html", "brief": "補上已記錄日期與估計日期如何區分、資料變動時不猜確定日、無帳號不代表有雲端可恢復副本；不做醫療或避孕保證。"},
+    {"query_id": "cyca-JP-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "既有日文 cycle/calendar answer 與替代方案已覆蓋同類選擇問題；只有 sample 未見，沒有新增獨立產品資訊，故不加重複日文頁段。"},
+    {"query_id": "cyca-JP-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "廣義生理週期入口已有 Guide／answer；不把索引樣本缺席當作必須改商店或重寫頁面的依據。"},
+    {"query_id": "cyca-TW-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "不用帳號的既有繁中 high-intent 契約與私密經期內容已直接回答；無新的可驗證功能差異，不再堆同句。"},
+    {"query_id": "cyca-TW-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "既有繁中內容已區分免費記錄與可選一次性 Pro；只因 API 未見再寫買斷詞沒有新增資訊，且不動任何價格或 metadata。"},
+    {"query_id": "aim990-DE-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "德文練習類 Guide／answer 已有原創 TOEIC-style 練習定位；本次沒有獨立於現有練習流程的新證據。"},
+    {"query_id": "aim990-TW-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "多益單字與既有原創練習／persona 重疊；不新增沒有教材證據的單字清單或把別語言教材當繁中功能。"},
+    {"query_id": "cyca-US-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "既有 no-account privacy answer 與高意圖契約已直接回覆；不從搜尋缺席推論下載、需求或應改 metadata。"},
+    {"query_id": "lumibopomofo-TW-intent-2", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "zh-Hant/answers/app-to-teach-a-4-year-old-zhuyin-bopomofo-at-home.html", "brief": "補上家長先示範、孩子聽辨、再描寫的一輪陪玩流程，以及遇到挫折怎麼停；區分注音、漢語拼音與完整識字課程。"},
+    {"query_id": "mochi-US-intent-2", "classification": "OWNED_CONTENT_MATCH", "selected": true, "page": "answers/best-cute-to-do-list-app-for-everyday-tasks-iphone.html", "brief": "既有簡單待辦頁未解釋如何辨識可勾選 widget 與一般入口；加入一筆低風險測試與免費清單／可選外觀的區分。"},
+    {"query_id": "mochi-DE-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "廣義 Aufgabenliste 已有德文 Guide／answer，品牌 sample 也未見；沒有足夠資訊增益，不做排名修復式文案。"},
+    {"query_id": "mochi-DE-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "Checkliste 與同市場 Aufgabenliste 是同一現有任務；只保留 brief，不增添同義詞密度。"},
+    {"query_id": "mochi-JP-intent-1", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "日文一般待辦在既有 Guide／answer 已有入口；缺少新的產品情境證據，不能只靠未見 sample 追加內容。"},
+    {"query_id": "mochi-JP-intent-2", "classification": "ASC_ONLY_NOT_ACTIONABLE", "selected": false, "brief": "與同市場やることリスト重複，現有替代方案亦覆蓋；不建立另一段同義回答或 doorway。"}
+  ],
+  "pages": [
+    {
+      "path": "ja/answers/app-to-practice-toeic-listening-and-reading-on-my-commute.html",
+      "base_sha256": "8ece52eb05eee63d87fca05f1bf0c5bf16abaf06f04fb9e833fd15f859c6d161",
+      "app_key": "aim990", "app_id": "6784974530", "locale": "ja", "country": "jp",
+      "query_ids": ["aim990-JP-intent-1", "aim990-JP-intent-2"],
+      "before_heading": "よくある質問",
+      "heading": "通勤の短い時間を、聞き直し方を選ぶ時間に",
+      "disclosure": "この補足は開発元の Lumi Studio が作成しています。独立したランキングや公式試験団体の推奨ではありません。",
+      "paragraphs": [
+        "TOEICのリスニング対策では、正解数だけを見ると次に何を練習するか決めにくくなります。間違えた設問を一つ選び、「音を聞き分けられなかった」「文の意味を取り違えた」「選択肢を急いで選んだ」のどれに近いか、自分の言葉で整理してみてください。これは学習者が行う振り返りで、アプリが自動で原因を診断するという意味ではありません。",
+        "音の問題なら短い部分をもう一度聞く、意味の問題なら分からなかった語句を確認する、選択肢の問題なら決め手になった情報を説明する、というように次の一手を変えます。一度にすべてをやり直すより、次回の練習で確かめたいことを一つ残すと、短い通勤時間でも目的がはっきりします。",
+        "Aim990は独自に作成したTOEIC形式の英語練習を使うための選択肢です。乗車前に使いたい練習を開き、通信を切った状態でも必要な設問や音声を利用できるか手元の端末で確認しましょう。歩行中や乗り換え中は操作せず、安全に画面を見られるときだけ取り組んでください。"
+      ],
+      "faqs": [
+        {"q": "短い通勤練習を、模擬試験の代わりにできますか？", "a": "目的が違います。短い時間は聞き直しや語句の確認に使い、試験全体の時間配分を確かめたいときは、落ち着いて継続できる別の時間を確保してください。このページは特定の練習時間や得点上昇を保証しません。"},
+        {"q": "TOEIC対策をしているのに同じ間違いを繰り返すときは？", "a": "同じ設問を解く前に、前回の理由を一言で説明できるか確かめます。理由が曖昧なら音・意味・選択肢のどこで迷ったかに戻りましょう。アプリ内の結果と、本番の公式スコアは同じものではありません。"},
+        {"q": "公式の過去問や、試験団体公認の教材ですか？", "a": "いいえ。Aim990は独立した非公式の学習ツールです。TOEICはETSの登録商標であり、ETSとの提携や承認を意味しません。練習には独自の問題を用い、公式の過去問や得点保証をうたいません。"}
+      ],
+      "limitations": "使える練習と解除範囲は、現在のアプリ内表示で確認してください。未提供の診断画面や審査中の機能を、このページの約束には含めません。",
+      "information_gain": ["manual-listening-error-triage", "short-practice-versus-full-session", "offline-readiness-and-commute-safety"]
+    },
+    {
+      "path": "answers/offline-toeic-practice-app-that-works-without-internet.html",
+      "base_sha256": "7bcaaedbd82b0bb1fa4731ef045850de8cd0ce3e96f3c538ef4415a1ce3ad22a",
+      "app_key": "aim990", "app_id": "6784974530", "locale": "en-US", "country": "us",
+      "query_ids": ["aim990-US-intent-1"], "before_heading": "FAQ",
+      "heading": "Check your offline study setup before the connection disappears",
+      "disclosure": "Lumi Studio, the developer of Aim990, wrote this practical supplement. It is not an independent ranking or an endorsement by a testing organisation.",
+      "paragraphs": [
+        "Offline daily practice works best when the next action is already decided. Before a flight or an unreliable commute, choose one exercise you can use now and open it on the device you will carry. Then disconnect and check that the exercise and any audio you intend to use still open. This is a practical check of your installed setup, not a promise that every feature or locked item is available offline.",
+        "Keep the study goal smaller than the session: understand one missed sentence, review a few unfamiliar words, or explain why a distractor was wrong. Leave yourself one question to revisit next time. You can use a separate note for that question; this guide is not claiming a new automatic review or note-taking feature inside Aim990.",
+        "Treat practice access and App Store transactions as separate tasks. If you need to make or restore a purchase, do that while connected and check the resulting access before relying on the app away from a network. A tool can support offline exercises without making Apple account or purchase services work offline."
+      ],
+      "faqs": [
+        {"q": "What should I do if my intended exercise does not open after disconnecting?", "a": "Reconnect when it is convenient, check whether the exercise is already available to you, and choose a verified working activity before leaving again. Do not assume a blank or locked screen is a completed study session, and do not buy solely because this page mentions offline practice."},
+        {"q": "Does a daily practice habit prove that my test score will improve?", "a": "No. It provides a way to keep practising, not a score prediction. Review what you understood and plan longer test-format practice separately when needed. A short commute session is not equivalent to a full test."},
+        {"q": "Are these official TOEIC past questions?", "a": "No. Aim990 uses original TOEIC-style practice and is an independent, unofficial study tool. TOEIC is a trademark of ETS. Aim990 is not affiliated with ETS, offers no licensed past-question collection and does not guarantee a score."}
+      ],
+      "limitations": "Use the current app to confirm available free practice and optional one-time unlocks. This supplement does not rely on features from a pending release and does not quote a fixed price.",
+      "information_gain": ["offline-installation-preflight", "offline-practice-versus-transactions", "one-next-review-question"]
+    },
+    {
+      "path": "de-DE/answers/best-period-tracker-app-no-account-required-iphone.html",
+      "base_sha256": "b87bc5783362746f7ef2af867018587a11fb127ed25836b0f3022e9bd88ed253",
+      "app_key": "cyca", "app_id": "6782251621", "locale": "de-DE", "country": "de",
+      "query_ids": ["cyca-DE-intent-1"], "before_heading": "FAQ",
+      "heading": "Im Periodenkalender Einträge und Schätzungen auseinanderhalten",
+      "disclosure": "Diese Ergänzung stammt von Lumi Studio, dem Entwickler von Cyca. Sie ist keine unabhängige Bewertung und ersetzt keine medizinische Beratung.",
+      "paragraphs": [
+        "Ein eingetragener Beginn der Blutung beschreibt etwas, das Sie beobachtet haben. Ein vorhergesagter Termin ist dagegen eine Schätzung aus den vorhandenen Angaben. Prüfen Sie deshalb zuerst, ob Sie einen tatsächlichen Eintrag oder eine Vorhersage ansehen, bevor Sie daraus einen Plan für die nächsten Tage machen.",
+        "Wenn Ihre Aufzeichnungen unvollständig sind oder sich Ihr Alltag verändert, lässt sich daraus kein sicherer Termin ableiten. Tragen Sie nach, was Sie wirklich wissen, statt fehlende Tage passend zur Vorhersage zu erfinden. Wenn Sie einen Eintrag ändern, betrachten Sie eine veränderte Schätzung als Reaktion auf andere Angaben, nicht als Bestätigung eines medizinischen Befunds.",
+        "Cyca bietet einen Einstieg in die Zyklusaufzeichnung ohne eigenes Benutzerkonto. Das ist nicht dasselbe wie ein Onlinekonto, über das Sie verlorene Aufzeichnungen später automatisch wiederherstellen können. Klären Sie vor einem Gerätewechsel anhand der aktuellen App und Ihrer Gerätesicherung, welche Möglichkeiten tatsächlich verfügbar sind."
+      ],
+      "faqs": [
+        {"q": "Kann ich einen geschätzten fruchtbaren Tag zur Verhütung verwenden?", "a": "Nein. Zyklus- und Fruchtbarkeitsprognosen sind Planungshilfen, keine verlässliche Methode zur Schwangerschaftsverhütung. Verwenden Sie dafür eine geeignete, fachlich besprochene Methode und verlassen Sie sich nicht auf eine farbige Markierung im Kalender."},
+        {"q": "Muss ich die App weiter ausfüllen, wenn meine Beschwerden ungewöhnlich sind?", "a": "Eine Aufzeichnung kann helfen, Beobachtungen festzuhalten; sie stellt keine Diagnose. Bei ungewöhnlichen Beschwerden, starken Schmerzen oder Unsicherheit wenden Sie sich an eine qualifizierte medizinische Fachperson, statt eine App-Schätzung als Entwarnung zu deuten."},
+        {"q": "Bedeutet ohne Konto auch, dass alle Funktionen kostenlos sind?", "a": "Nein. Ein Konto und eine Freischaltung sind unterschiedliche Fragen. Prüfen Sie die aktuell verfügbare Aufzeichnung und die optionalen einmaligen Pro-Funktionen in der App. Diese Seite nennt weder einen festen Preis noch verspricht sie kostenlosen Zugriff auf jede Ansicht."}
+      ],
+      "limitations": "Die Ergänzung erklärt den Umgang mit Aufzeichnungen und Unsicherheit. Sie verspricht keine klinische Genauigkeit, Diagnose, sichere Empfängnisprognose oder automatische Cloud-Wiederherstellung.",
+      "information_gain": ["recorded-versus-estimated-dates", "incomplete-records-without-invention", "no-account-versus-recovery"]
+    },
+    {
+      "path": "zh-Hant/answers/app-to-teach-a-4-year-old-zhuyin-bopomofo-at-home.html",
+      "base_sha256": "381c3db19aa24e61b8c3eecc6b11bfd8e9ef654e223ef817421475fa9c0864e4",
+      "app_key": "lumibopomofo", "app_id": "6773017109", "locale": "zh-Hant", "country": "tw",
+      "query_ids": ["lumibopomofo-TW-intent-2"], "before_heading": "常見問題",
+      "heading": "把ㄅㄆㄇ親子學習拆成一輪輕鬆的陪玩",
+      "disclosure": "這段補充由 Lumi Bopomofo 的開發團隊 Lumi Studio 撰寫，不是獨立評比，也不代表學校或教材單位背書。",
+      "paragraphs": [
+        "先選孩子目前能使用的一個符號，不急著把整張注音表教完。家長先一起聽聲音，再請孩子指認或說說看；願意繼續時，再試著描寫。聽辨、描寫與拼讀是不同練習，不必用一次完成全部項目來判斷孩子有沒有學會。",
+        "若孩子一直猜、手指描不順或開始不耐煩，先停在容易完成的一小步。家長可以示範一次，再換孩子試；也可以把螢幕放下，用口頭找聲音的遊戲結束這一輪。這是陪玩的做法，不是 App 自動評估孩子能力，也不承諾在特定天數內學會。",
+        "Lumi Bopomofo 提供聽音選符號、描寫、聲調與拼讀活動。先確認目前開放的免費練習，再由家長決定是否需要一次性解鎖更多內容。把可看見的符號與已可操作的範圍分開看，才不會把整張地圖誤認為全部已免費開放。"
+      ],
+      "faqs": [
+        {"q": "注音和漢語拼音可以直接當成同一套教材嗎？", "a": "不能。這裡練習的是台灣常用的注音符號，不是以拉丁字母表示發音的漢語拼音。若學校使用不同系統，先確認老師的教材安排，再決定怎麼搭配。"},
+        {"q": "會描符號，就代表能自己讀完整句子嗎？", "a": "不一定。描寫、聽音、拼讀與理解文字是不同能力；這款 App 的注音練習不等於完整漢字識字課程。可以觀察孩子是否願意聽、找出同一個符號，再慢慢加入其他活動。"},
+        {"q": "孩子卡住時，需要立刻解鎖更多內容嗎？", "a": "不需要把卡關解讀成必須購買。先用目前能操作的練習確認孩子是否喜歡這種方式；需要更多內容時，也應由家長在家長閘門後自行決定，不由孩子承擔購買選擇。"}
+      ],
+      "limitations": "這是親子陪伴與選擇練習的建議，不宣稱診斷學習能力、治療發展問題、保證進度或得到官方教材認證。",
+      "information_gain": ["listen-identify-trace-separation", "parent-scaffolding-and-stop-signals", "visible-content-versus-unlocked-activities"]
+    },
+    {
+      "path": "answers/best-cute-to-do-list-app-for-everyday-tasks-iphone.html",
+      "base_sha256": "1751cf5c8ccd154724d48326890fccd0adc03f69f4bd69c5150879d73cb7150d",
+      "app_key": "mochi", "app_id": "6785004775", "locale": "en-US", "country": "us",
+      "query_ids": ["mochi-US-intent-2"], "before_heading": "FAQ",
+      "heading": "Test the Home Screen check-off, not just the shortcut",
+      "disclosure": "This supplement is written by Lumi Studio, the developer of Mochi. It is a practical product explanation, not an independent comparison or a ranking claim.",
+      "paragraphs": [
+        "A Home Screen icon that opens a list and a widget that lets you complete an item solve different problems. If your goal is to check off a to-do from the Home Screen, test that exact action rather than judging only the preview image. Create one low-stakes test item, place the checklist widget you intend to use, and try its completion control.",
+        "Then open the list in Mochi and confirm that the same item is marked complete. This small round trip checks the workflow you actually care about: an action on the Home Screen followed by the expected result in your list. If the layout only takes you into the app, check the widget or app setup before assuming every widget style behaves identically.",
+        "Keep practical access separate from appearance. Basic checklists and Home Screen check-offs are free; optional Premium skins are a separate one-time choice. A skin you have not unlocked does not mean that the basic checklist workflow itself requires a purchase."
+      ],
+      "faqs": [
+        {"q": "How much should I put on the widget?", "a": "Start with the few items you need next, such as an errand or a simple routine. Keep the full list in the app when it is easier to read there. This is a way to choose what belongs in your immediate view, not a claim that Mochi automatically chooses tasks for you."},
+        {"q": "Does a checklist replace a calendar or a team project tool?", "a": "Not necessarily. A check-off records completion; it is not the same as reserving a calendar time, assigning work to a team or analysing habit streaks. Use the tool that matches the decision you need to make rather than expecting a simple list to do all three."},
+        {"q": "Should I buy a theme before checking whether the widget suits me?", "a": "Try the basic list and Home Screen completion first. Consider an optional skin only after that workflow is useful to you. Check current choices inside the app; this guide does not quote a fixed price or promise that every theme is free."}
+      ],
+      "limitations": "The steps describe a low-risk check of the current installed experience. They do not promise identical behaviour for every widget size, device version or theme, and do not claim automated project management.",
+      "information_gain": ["interactive-widget-versus-launcher", "home-screen-to-list-roundtrip", "free-workflow-versus-optional-skin"]
+    }
+  ]
+}

@@ -1,0 +1,734 @@
+{
+  "changes_contract": false,
+  "credential_discovery": {
+    "configured_names_found": [],
+    "keychain_authentication_ui": "FORBIDDEN",
+    "keychain_statuses": {
+      "api.buttondown.com": -25300,
+      "api.buttondown.email": -25300,
+      "buttondown.com": -25300,
+      "buttondown.email": -25300,
+      "generic_metadata_only": 0
+    },
+    "private_store_name_matches": [],
+    "scope": "Buttondown names only in environment, Keychain metadata and .growth-private",
+    "secret_values_read": 0
+  },
+  "default_inactive": true,
+  "existing_cookie_check": {
+    "buttondown_cookie_names_found": 0,
+    "chrome_profiles_checked": 4,
+    "cookie_values_read": 0,
+    "safari": "PERMISSION_BLOCKED_NO_BYPASS"
+  },
+  "independent_browser": {
+    "attempted_url": "https://buttondown.com/settings/subscribing",
+    "blocked_requests": [
+      {
+        "method": "GET",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      },
+      {
+        "method": "GET",
+        "url": "https://cdn.seline.com/seline.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://cdn.seline.com/seline.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/image"
+      }
+    ],
+    "blocker": "LOGIN",
+    "final_url": "https://buttondown.com/login",
+    "headless_context_closed": true,
+    "initial_http_status": 200,
+    "method": "independent_headless_JS_GET_only_network_guard",
+    "redacted_dom": [
+      {
+        "action": "https://buttondown.com/login",
+        "controls": [
+          {
+            "name": "",
+            "tag": "BUTTON",
+            "type": "button"
+          },
+          {
+            "name": "username",
+            "tag": "INPUT",
+            "type": "text"
+          },
+          {
+            "name": "[REDACTED_CREDENTIAL_FIELD]",
+            "tag": "INPUT",
+            "type": "password"
+          },
+          {
+            "name": "",
+            "tag": "BUTTON",
+            "type": "submit"
+          }
+        ],
+        "method": "get"
+      }
+    ],
+    "redacted_text": "Just launched:\nExport not just an email's aggregate numbers, but every individual event and timestamp behind them.\nWelcome back.\nAre you a reader trying to manage your subscription? Sign in here.\nLog in with Apple\nLog in with Google\nLog in with a passkey\nOR\nUsername\nDon't have an account?\n\n[REDACTED_CREDENTIAL_FIELD]\nForgot your [REDACTED_CREDENTIAL_FIELD]\n\nLog in with username",
+    "redacted_title": "Login — Buttondown",
+    "stopped_on_auth_barrier": true,
+    "visited_gets": [
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/settings/subscribing"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/chevron-down-micro-CLEW-ASO.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Menu-D7ggmyW9.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Value-CbzTD3Py.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Dialog-BGnsS0ET.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/400-italic-CdeZb2Gn.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/400-Bv1nVImn.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/500-CtaRQaEM.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/600-B8NIfvdC.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/700-D4EW8MY6.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/source-serif-4-BNFfHtQZ.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/main-DPYfZ3ZW.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/assets-H6LkTwBs.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/inter-XoUwWNNM.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/main-jSuFaqms.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/openapi-Bgo-gmWi.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/asyncToGenerator-yUs_GEPb.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/objectSpread2-BbITUX7C.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/objectWithoutProperties-L3JJ70Fm.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/_plugin-vue_export-helper-DrNERvh6.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/modulepreload-polyfill-C0pF1tNy.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/preload-helper-w1nX6X-3.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/account-MO3eWIYr.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/urls-DcUHq-M6.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/chevron-down-micro-D9ahg_CV.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Portal-BKUhxLO6.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/routes-CypcPzzR.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Menu-D2kyOPiu.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/ActionButton-Dbt1IOvl.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Value-NkFHFxUH.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Dialog-Bx12Ntil.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/zapier-CasBJHuf.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/icon-mapping-micro-DfbnO6yW.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/bars-3-micro-C_d6oFGK.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/check-circle-micro-DmigsU07.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/utils-Bjr4MWu2.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/internal-base-BNkew_DB.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/batch-fetch-CTE-o5W5.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/generic-L4AGeQj9.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/color-utils-Dba84o0e.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/debounced-ref-zI9Jcmxh.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/event-listener-TirrgWqF.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/stable-pending-C21-TLIz.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/template-DWG96Dls.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/depot-B4FsDmgH.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/dirty-D07IRbcF.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Draggable-Dduld74M.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/time-CPae8o2T.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/redirect-DhKb0Vdm.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/bulk-actions-zyC4t6n-.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/ui-states-DMDsYaYn.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/400-italic-8-c5oRz2.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/400-Bvl8Oz4s.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/500-CvwBsCN9.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/600-CcT97lAY.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/700-CzUAVj9S.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/source-serif-4-BPboi608.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/exports-CbQ6vZwc.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/useMutation-D-Wl8Lw8.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/vueQueryPlugin-D2jXezpV.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/vue.runtime.esm-bundler-Bv2kRmpc.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/vue-router-CPM4BE6e.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/chunk-C4lslasY.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/defineProperty-Dkhusyaf.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/infiniteQueryBehavior-BEr1GdoT.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/sun-micro-PpDuYbx1.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/archive-box-micro-B9C9Pu39.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/brand-icon-mapping-BvyoD_LB.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/key-micro-X6E1ytr1.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/timing-BTxxGxnL.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/carrd-Cm58hsLd.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/assets/sprite.0adb07cc.svg"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/login"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/subscribing-DBBq-ANC.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Form-CjkKGyom.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Pill-DhoH-pNo.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/document-micro-bHiB4lX_.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/dropzone-Bw6tfb6n.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/textarea-autosize-Bc0UlW_V.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/fonts-Dwmpj4DW.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/fast-deep-equal-F7OENy34.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/useSingleOrMultipleValue-CKpWkIAD.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/use-showing-preview-BDXHSPiD.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/DraftPreview-CgByXw30.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/PendingIndicator-BaDVKLuX.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/events-ubAheyeX.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/nanomorph-DFmMR4vK.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/merge-CnP6nxWi.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/ContextMenu-Qgq8n0BE.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Drawer-DCkJae2t.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Formisch-CR3-hqrS.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Tray-D7qohES7.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Form-BabhkoXt.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/openapi-errors-CF_Z-EmY.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/link-checker-CIbnIIYn.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Page-jX1zuF99.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/tanstack-table-BUU6wlPJ.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/arrow-path-mini-BYOMvaVe.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/calendar-mini-B48_TeGB.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/arrow-down-micro-n0o-mL1N.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/arrow-path-outline-yXBbD5Rx.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/random-BxNBZP82.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/strings-DegGWmeM.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/GhostButton-zM_W19NZ.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/PlanUpsell-CN2rlRKO.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Detail-E1A_ciE1.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/account-XO_Sm1_6.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/detail-Dn8qQHrw.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/useQueries-Da128Nwr.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/ContextMenu-Bd5YHDQ7.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/list-CdLsliJj.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/ordering-BELN2foz.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/newsletter-draft-DeDS7R0Y.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/subscribe-page-DgqsmqvE.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Drawer-tnDMM-ve.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/newsletter-settings-form-BVh2cmlQ.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/page-title-COGGTwlu.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/DragPreview-CtU2I-qB.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/ReorderHandle-CoeTIEkP.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/PreviewableSettingsPage-DPgA5ve1.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Page-C-OMsmYg.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/Detail-BPDUpWe_.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://static-assets.buttondown.com/subscribing-DurkbbnJ.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/15xmg6d0d2ga4.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/1g0bjgxog8btf.css"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/181lkga554h8i.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/2nzfd4k38r76s.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/29xm_enopyaqt.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/2y9fh7ly5vv73.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/turbopack-1hb4t-htmg12f.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/2_yzgjw_rlwnl.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/2bh9fs6npovt2.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/0qvueibmyodp4.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/3km3y43cvikui.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/0r1_r3axjj8so.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/21cp39epyvvm6.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/3br2-kk62-22s.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/1iw0ydsb9sfzt.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/05s_3o_u2_uim.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/21wc1p64tazrt.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/3dwk0wusgsfbg.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/0hhbgx2o8igel.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/05q68r6bo2y9n.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/0um2bjdc7acoh.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/3a2hx-4-9h1_2.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/08j39dlysa7yw.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/335ormoq9ll9o.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/2vnrgjjvar-h4.js"
+      },
+      {
+        "method": "GET",
+        "url": "https://buttondown.com/_next/static/chunks/43qa6n43iqkyo.js"
+      }
+    ]
+  },
+  "native_verified": 0,
+  "observed_at": "2026-09-12T08:01:20.995Z",
+  "official_api_retry": {
+    "authenticated": false,
+    "body_sha256": "b53f6fcc9817f71bdc7e1c68aa5711b01443e88a6467888733a0146830b4ae26",
+    "configured_credential_found": false,
+    "final_url": "https://api.buttondown.com/v1/accounts/me",
+    "http_status": 401,
+    "location": null,
+    "method": "GET",
+    "observed_at": "2026-09-12T07:52:40.205145+00:00",
+    "retry_count": 1,
+    "secret_values_read": 0,
+    "url": "https://api.buttondown.com/v1/accounts/me"
+  },
+  "prior_regressions": {
+    "growth": 93,
+    "guide": 92,
+    "rerun_required_for_receipt_only": false,
+    "source_files_unchanged": 31
+  },
+  "privacy": "No secrets, cookie values, input values, authenticated settings or full unredacted DOM were persisted.",
+  "prohibited_actions": {
+    "activate_browser": 0,
+    "email_sends": 0,
+    "key_rotation": 0,
+    "new_workers": 0,
+    "save_clicks": 0,
+    "settings_mutations": 0,
+    "subscription_posts": 0,
+    "toggle_clicks": 0,
+    "user_tabs_accessed": 0
+  },
+  "schema": "lumi.buttondown-settings-diagnostic/v1",
+  "settings": {
+    "confirmation": "UNKNOWN",
+    "double_opt_in": "UNKNOWN",
+    "newsletter_id": "UNKNOWN",
+    "privacy": "UNKNOWN",
+    "sender_identity": "UNKNOWN",
+    "suppression": "UNKNOWN",
+    "unsubscribe": "UNKNOWN"
+  },
+  "source_baseline": {
+    "growth": "6f5d88ce6f477b10257f2e10b80f2a1f03c34ca6",
+    "guide": "e5b59039f7a9dd39118c9c6032e6b3003a26096d"
+  },
+  "status": "BLOCKED",
+  "subscriber_count": "UNKNOWN",
+  "usable_as_consent_policy": false,
+  "verified_subscribers": 0
+}

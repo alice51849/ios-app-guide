@@ -1,31 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""在免費工具頁加一個誠實的「新工具上線通知」訂閱區塊。
-
-為什麼:站上 26+ 個免費工具頁是**唯一有真實使用者**的自有資產,但使用者
-用完就走,我們手上什麼都沒留下。一個只承諾「有新免費工具時通知你」的訂閱,
-是把一次性流量變成可以再觸及的名單、而且不必說任何不實的話。
-
-誠實鐵則(寫死在程式裡,不可設定):
-  * 沒有預設勾選的同意框(整個表單就只有一個 email 欄位 + 一顆按鈕)。
-  * 直接揭露只寄新工具通知、Buttondown 代處理訂閱、可一鍵取消。
-  * 不用「輸入 email 才能下載」這種誘餌 — 工具本來就是免費直接用。
-
-停用時(`enabled:false` 或 `endpoint` 空白)會把先前注入的區塊**移除**,
-所以絕不會有壞掉的表單留在線上。
-
-這支必須註冊在 `geo/publish.py` 的管線裡(產生器之後、sitemap 之前):
-直接改 `geo/pages` 的 HTML 會在下一次發布時被重新產生的頁面覆蓋掉。
-
-用法:
-    python3 gen_tool_email_capture.py [--dry]
-"""
+"""Official-50, explicit new-tools-only consent. No subscriptions or sends."""
 import argparse
 import glob
 import html
 import json
 import os
 import re
+
+from owned_email_contract import ENDPOINT, PRIVACY_URL, digest, load_copy
+from site_config import PUBLIC_SITE
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -36,64 +20,95 @@ BLOCK_RE = re.compile(
 )
 LANG_RE = re.compile(r'<html[^>]*\blang="([^"]+)"', re.I)
 STYLE = (
-    "border:1px solid rgba(120,100,70,.25);border-radius:14px;"
-    "padding:18px 20px;margin:28px 0;background:rgba(255,250,240,.55)"
+    "border:1px solid #d8c9ff;border-radius:14px;"
+    "padding:18px 20px;margin:28px 0;background:#fffafd;color:#302057"
 )
 
 
 def _load_config():
     with open(CONFIG, encoding="utf-8") as handle:
-        return json.load(handle)
+        config = json.load(handle)
+    if config.get("copy_file") != "owned_email_copy.json":
+        raise ValueError("official-50 copy source is required")
+    config["copy"] = {
+        locale: {
+            **text, "heading": text["tools_title"], "body": text["confirmation"],
+            "consent": text["tools_consent"], "placeholder": "you@example.com",
+            "promise": text["privacy"] + " " + text["unsubscribe"],
+        }
+        for locale, text in load_copy(os.path.join(HERE, config["copy_file"])).items()
+    }
+    if config.get("enabled") and config.get("endpoint") and (
+        config.get("provider") != "buttondown" or config["endpoint"] != ENDPOINT
+        or config.get("email_field") != "email"
+        or config.get("extra_fields") != {"buttondown": {"embed": "1"}}
+        or config.get("sender_enabled") is not False
+    ):
+        raise ValueError("capture must be Buttondown-only and sender-disabled")
+    return config
 
 
 def _copy_for(config, lang):
-    copy = config.get("copy") or {}
-    for candidate in (lang, lang.split("-")[0],
-                      {"zh": "zh-Hant", "en": "en-US"}.get(
-                          lang.split("-")[0], ""), "en-US"):
-        if candidate and candidate in copy:
-            return copy[candidate]
-    return copy.get("en-US", {})
+    return (config.get("copy") or {}).get(_locale(lang), {})
+
+
+def _locale(lang):
+    return {
+        "en": "en-US", "de": "de-DE", "fr": "fr-FR", "es": "es-ES",
+        "nl": "nl-NL", "ar": "ar-SA", "sl": "sl-SI",
+    }.get(lang, lang)
 
 
 def _block(config, lang):
+    if config.get("endpoint") != ENDPOINT:
+        raise ValueError("only the declared Buttondown capture endpoint is allowed")
     text = _copy_for(config, lang)
     if not text:
         return ""
+    locale = _locale(lang)
+    metadata = {
+        "embed": "1", "metadata__owned_campaign": "new_free_tools_v1",
+        "metadata__owned_locale": locale, "metadata__owned_consent_version": "new-tools-only-v1",
+        "metadata__owned_consent_digest": digest({
+            "locale": locale, "campaign": "new_free_tools_v1",
+            **{key: text[key] for key in ("consent", "privacy", "unsubscribe", "disclosure")},
+        }),
+    }
     hidden = "".join(
         f'<input type="hidden" name="{html.escape(str(name))}" '
         f'value="{html.escape(str(value))}">'
-        for name, value in (
-            (config.get("extra_fields") or {}).get(
-                config.get("provider", "custom"), {}) or {}
-        ).items()
-    )
-    manage = config.get("manage_url") or ""
-    manage_link = (
-        f' <a href="{html.escape(manage)}">'
-        f'{html.escape(text.get("button", "Manage"))}</a>' if manage else ""
+        for name, value in metadata.items()
     )
     return (
         f'<section class="wrap {MARKER}" style="{STYLE}">'
         f'<h2>{html.escape(text.get("heading", ""))}</h2>'
         f'<p>{html.escape(text.get("body", ""))}</p>'
         f'<form action="{html.escape(config["endpoint"])}" method="post" '
-        f'target="_blank" style="display:flex;gap:8px;flex-wrap:wrap">'
-        f'<label for="tec-email" class="visually-hidden" '
-        f'style="position:absolute;left:-9999px">'
-        f'{html.escape(text.get("email_label", "Email"))}</label>'
+        f'target="_blank" rel="noopener noreferrer" '
+        f'style="display:flex;gap:12px;flex-wrap:wrap" dir="{"rtl" if locale in {"ar-SA", "he", "ur-PK"} else "ltr"}">'
+        f'<label for="tec-email" style="flex-basis:100%">'
+        f'{html.escape(text["email_label"])}</label>'
         f'<input id="tec-email" type="email" required '
         f'name="{html.escape(config.get("email_field", "email"))}" '
         f'placeholder="{html.escape(text.get("placeholder", ""))}" '
         f'style="flex:1 1 220px;padding:10px 12px;border-radius:10px;'
         f'border:1px solid rgba(120,100,70,.35)">'
-        f'{hidden}'
+        f'{hidden}<label for="tec-consent" style="flex-basis:100%;min-height:44px">'
+        f'<input id="tec-consent" type="checkbox" required '
+        f'name="metadata__owned_consent" value="yes" '
+        f'style="width:24px;height:24px;vertical-align:middle">'
+        f' {html.escape(text["consent"])}</label>'
         f'<button type="submit" style="padding:10px 18px;border-radius:10px;'
-        f'border:0;background:#7a5c2e;color:#fff;cursor:pointer">'
+        f'min-height:44px;border:0;background:#6240a7;color:#fff;cursor:pointer">'
         f'{html.escape(text.get("button", ""))}</button>'
         f'</form>'
-        f'<p><small>{html.escape(text.get("promise", ""))}{manage_link}'
-        f'</small></p>'
+        f'<p>{html.escape(text["promise"])} '
+        f'<a href="{PRIVACY_URL}">Buttondown</a></p>'
+        f'<p>{html.escape(text["disclosure"])}</p>'
+        + (f'<p><a href="{PUBLIC_SITE}/{locale}/email/index.html">'
+           f'{html.escape(text["preferences"])}</a></p>'
+           if config.get("app_capture_enabled") else "")
+        +
         f'</section>'
     )
 

@@ -44,9 +44,8 @@ FACT_RE = re.compile(
 HEAD_END_RE = re.compile(r"</head\s*>", flags=re.IGNORECASE)
 MAIN_END_RE = re.compile(r"</main\s*>", flags=re.IGNORECASE)
 
-ASSET_SOURCE = """.iag-store-facts{margin:1rem 0 0;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.iag-store-facts::-webkit-scrollbar{display:none}
-.iag-store-facts__link{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.7rem .9rem;border:1px solid rgba(148,163,184,.32);border-radius:999px;background:rgba(255,255,255,.72);box-shadow:0 10px 28px rgba(15,23,42,.08);color:#0f172a;font-size:.9rem;font-weight:700;line-height:1;text-decoration:none;white-space:nowrap}
+ASSET_SOURCE = """.iag-store-facts{margin:1rem 0 0;min-inline-size:0;max-width:100%;overflow:visible}
+.iag-store-facts__link{display:inline-flex;align-items:center;flex-wrap:wrap;gap:.45rem;min-inline-size:0;max-inline-size:100%;min-height:44px;padding:.7rem .9rem;border:1px solid rgba(148,163,184,.32);border-radius:999px;background:rgba(255,255,255,.72);box-shadow:0 10px 28px rgba(15,23,42,.08);color:#0f172a;font-size:.9rem;font-weight:700;line-height:1.3;text-decoration:none;white-space:normal;overflow-wrap:anywhere}
 .iag-store-facts__link:focus-visible{outline:3px solid #2563eb;outline-offset:3px}
 @media(hover:hover){.iag-store-facts__link:hover{border-color:rgba(37,99,235,.55);box-shadow:0 12px 32px rgba(15,23,42,.13)}}
 @media(prefers-color-scheme:dark){.iag-store-facts__link{background:rgba(15,23,42,.82);border-color:rgba(148,163,184,.38);color:#f8fafc}}

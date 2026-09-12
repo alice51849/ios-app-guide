@@ -49,6 +49,7 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
 from external_app_identity import external_identity  # noqa: E402
+import indic_native_copy  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -1488,6 +1489,10 @@ def external_localized_values(key, locale, localizations=None):
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
     values = external_identity(key, locale, values)
+    values = indic_native_copy.reviewed_values(
+        key, locale, values, app_id=APPSTORE.get(key),
+        purchase_model=APPS[key].get("purchase_model"),
+    )
 
     description = values.get("description")
     if not _is_native_copy(

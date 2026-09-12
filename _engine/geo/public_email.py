@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Source-owned public email directives and a strict rendered HTML gate."""
+"""Source-owned email/code-pin directives with an unchanged strict byte gate.
+
+Cloudflare also mistakes visible CLI ``package@1.2.3`` pins for email addresses.
+Those pins are not contacts: only visible ``code`` text can justify protecting
+them with the official email_off directive. Commands remain copyable without JS;
+real contact addresses and all hash/readback validation stay unchanged.
+"""
 
 from __future__ import annotations
 
@@ -18,6 +24,11 @@ PUBLIC_CONTACT = "hourstag.app@gmail.com"
 EMAIL = re.compile(
     r"(?<![A-Za-z0-9.!#$%&'*+/=?^_`{|}~-])"
     r"[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]{1,64}@[A-Za-z0-9.-]{1,253}\.[A-Za-z]{2,63}"
+)
+PACKAGE_PIN = re.compile(
+    r"(?<![A-Za-z0-9._/@-])(?:@[a-z0-9][a-z0-9._-]*/)?"
+    r"[a-z0-9][a-z0-9._-]*@v?[0-9]+\.[0-9]+\.[0-9]+"
+    r"(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?(?![0-9A-Za-z._-])"
 )
 OPEN = "<!--email_off-->"
 CLOSE = "<!--/email_off-->"
@@ -39,6 +50,12 @@ def email_text(value: str) -> str:
     return "".join(output)
 
 
+def code_text(value: str) -> str:
+    """Keep copyable CLI version syntax visible while opting out of email rewriting."""
+    escaped = html.escape(value)
+    return OPEN + escaped + CLOSE if EMAIL.search(value) or PACKAGE_PIN.search(value) else escaped
+
+
 class EmailMarkup(HTMLParser):
     def __init__(self, source: str):
         super().__init__(convert_charrefs=True)
@@ -53,6 +70,7 @@ class EmailMarkup(HTMLParser):
         self.visible_emails = []
         self.render_spans = []
         self.pending_text = None
+        self.code_depth = 0
         self.feed(source)
         self.close()
         self.finish_text(len(source))
@@ -79,11 +97,22 @@ class EmailMarkup(HTMLParser):
                 })
             else:
                 self.active["emails"].append(email)
+        if self.code_depth and context == "visible_text":
+            for match in PACKAGE_PIN.finditer(value):
+                if self.active is None:
+                    self.issues.append({
+                        "kind": "unprotected_package_pin", "package_pin": match.group(),
+                        "offset": self.source_offset(), "context": "code_text",
+                    })
+                else:
+                    self.active["package_pins"].append(match.group())
 
     def handle_starttag(self, tag, attrs):
         self.finish_text(self.source_offset())
         if tag in EXCLUDED:
             self.excluded.append(tag)
+        if tag == "code" and not self.excluded:
+            self.code_depth += 1
         if not self.excluded and tag == "a":
             hrefs = [value for key, value in attrs if key == "href"]
             if len(hrefs) > 1:
@@ -96,6 +125,8 @@ class EmailMarkup(HTMLParser):
 
     def handle_endtag(self, tag):
         self.finish_text(self.source_offset())
+        if tag == "code" and not self.excluded:
+            self.code_depth = max(0, self.code_depth - 1)
         if tag in self.excluded:
             index = len(self.excluded) - 1 - self.excluded[::-1].index(tag)
             self.excluded = self.excluded[:index]
@@ -103,7 +134,7 @@ class EmailMarkup(HTMLParser):
     def handle_data(self, data):
         self.finish_text(self.source_offset())
         if not self.excluded:
-            if self.active is None and EMAIL.search(data):
+            if self.active is None and (EMAIL.search(data) or self.code_depth and PACKAGE_PIN.search(data)):
                 self.pending_text = self.source_offset()
             self.inspect(data, "visible_text")
 
@@ -120,12 +151,12 @@ class EmailMarkup(HTMLParser):
             if self.active is not None:
                 self.issues.append({"kind": "nested_email_off", "offset": offset})
             else:
-                self.active = {"start": offset, "open_end": offset + len(OPEN), "emails": []}
+                self.active = {"start": offset, "open_end": offset + len(OPEN), "emails": [], "package_pins": []}
         elif self.active is None:
             self.issues.append({"kind": "unmatched_email_off_close", "offset": offset})
         else:
             region = {**self.active, "close_start": offset, "end": offset + len(CLOSE)}
-            if not region["emails"]:
+            if not region["emails"] and not region["package_pins"]:
                 self.issues.append({"kind": "email_off_without_visible_email", "offset": region["start"]})
             self.regions.append(region)
             self.active = None
@@ -134,7 +165,7 @@ class EmailMarkup(HTMLParser):
 def render_html(source: str) -> str:
     """The publisher's deterministic final rendering pass; it never changes content."""
     parsed = EmailMarkup(source)
-    invalid = [issue for issue in parsed.issues if issue["kind"] != "unprotected_public_email"]
+    invalid = [issue for issue in parsed.issues if issue["kind"] not in {"unprotected_public_email", "unprotected_package_pin"}]
     if invalid:
         raise ValueError("Cannot render malformed email directives: " + json.dumps(invalid[:4]))
     result = source
@@ -150,7 +181,7 @@ def render_html(source: str) -> str:
 
 def canonical_html_unchecked(source: str) -> str:
     parsed = EmailMarkup(source)
-    invalid = [issue for issue in parsed.issues if issue["kind"] != "unprotected_public_email"]
+    invalid = [issue for issue in parsed.issues if issue["kind"] not in {"unprotected_public_email", "unprotected_package_pin"}]
     if invalid:
         raise ValueError("Malformed source email directives")
     result = source
@@ -229,7 +260,8 @@ def scan(pages: Path, *, render: bool = False) -> dict:
                 failures.append({"path": relative, "issues": [{"kind": "symlink_html"}]})
                 continue
             source = path.read_text(encoding="utf-8")
-            if "email_off" not in source and EMAIL.search(html.unescape(source)) is None:
+            visible = html.unescape(source)
+            if "email_off" not in source and EMAIL.search(visible) is None and PACKAGE_PIN.search(visible) is None:
                 continue
             parsed = EmailMarkup(source)
             if render and parsed.issues:

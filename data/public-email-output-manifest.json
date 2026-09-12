@@ -1,6 +1,6 @@
 {
   "html_checked": 68392,
-  "manifest_sha256": "05e6f40e3997bff498ff384ba495839c79e5d35d70bb753e6fc566a1efaaa71f",
+  "manifest_sha256": "a27b26a307e296a4664e30a7039d62fc234565213ff889f4cf2c7e91b6bd18a4",
   "policy": "source-email-off-v1",
   "protected_html": {
     "apps/aibriefpack/privacy.html": {
@@ -5427,6 +5427,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "fc5af1bcf2c359a6f937f7217e17f18309e4f99b402d95555f981fbf68ce263d"
     },
+    "ar-SA/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "18cbe8fa7f414a324388e230db28595639502cf87176dd211c0ad4eb47af9a92",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "310369dd43f0cd190fdd6f6c16191c8f66e024b01b66ea6c81ee390941d063ea"
+    },
     "ar-SA/savetag.html": {
       "canonical_sha256": "bedd401170fbe80e29bd4c9ccdf34958cdf1877c500efd24d6e52ce0c7238112",
       "directive_count": 1,
@@ -5456,6 +5462,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "0b7ab008c2dcd3db97bc8922cd239f078b636da4d7c7e3a6c0f4fe3bcfc81437"
+    },
+    "bn-BD/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "46e2379d376db8e6eda4c1be39776ffaee84c17c470326f0387f6ad55be459b0",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "51ef797039f0cef152edb677e0c16ea81d278547ef184ce45bfa46f09c1f22a5"
     },
     "bn-BD/savetag.html": {
       "canonical_sha256": "6cc66ea0c493a5c08b1ccb0347cf25564390cfbe5f2b6b55a5fc07aeaa2b89f4",
@@ -5487,6 +5499,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "58335587fa63b323bd2c0710f79d2e67420553d0374790138130ccd4150a01ed"
     },
+    "ca/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "1a5698dcf39631356392c3926041cb97172791d527ae477886be3784b1bc1736",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "ed0fd4b1908854ca18f8f84bf0d5655814121ef083671488a7a669b9b4076771"
+    },
     "ca/savetag.html": {
       "canonical_sha256": "d1ede17ea4839a3144146bf7408bc6926fbd6fc850f32937b0c250afbf616b43",
       "directive_count": 1,
@@ -5516,6 +5534,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "351d6c1d0b5053a9ca6a1f563570f7fe74d5aba84495daa2bbe0b3d653eac745"
+    },
+    "cs/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "ad95cac009993f729b94c931876471b5696ed18b33d382066c59bec7d97ef366",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "1f4114b1616465e9a0f0d003f65d51bfcaeb1525be16ab6bab9a00ff352f1d4e"
     },
     "cs/savetag.html": {
       "canonical_sha256": "0487a31a87fa74349d047b83975494dafb3597fd13906935aa48e87ca39772ff",
@@ -5547,6 +5571,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "a31594000232434a94f5124cb90ff3e767c52ddb09e5326ae4e4ca486e901325"
     },
+    "da/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "b72bb2d82fdc303f2c14407b38332b8800e343a81aa82710d3dd6e70b727d2c6",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "222583e513316f6ce3f8ad078ef9015651acbd0b727df58e431a92d86c5a80ca"
+    },
     "da/savetag.html": {
       "canonical_sha256": "fe77c9f0165f1fd29984c01a259481f9997ec3c8a1992dfae956c570e1cbe40a",
       "directive_count": 1,
@@ -5565,6 +5595,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "ca6fc00aa060e0e3d45655675f2476c683a79f707a95949f47e576cbb5f8b7a1"
     },
+    "data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "6fc6612f445e84f4a3990f724843d13f23871a4813597a7ac59b3d71216f3ec6",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "a6aa1cbbd6fd8dc18e550120202a8aa16e5f1087e31096d6f71c53a9c424ad68"
+    },
     "de-DE/aim990plus-privacy.html": {
       "canonical_sha256": "5e590ba7fa81a7f7879c1612daf60513f08dae78bf85a5d04ba3ee295099c9cc",
       "directive_count": 3,
@@ -5576,6 +5612,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "fd52e11c59b232adadb8489e90e4f1910de52b0955d4fc417586331b872dd0b3"
+    },
+    "de-DE/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "b8198bcddb2607ddf3f05d6f9ce96883cdb2d68aaf1e1d621d43b35844ec1132",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "5f953c1d016053498c0a9f12f39f8a71ba593acbb5242528eacea030f7f1b88b"
     },
     "de-DE/savetag.html": {
       "canonical_sha256": "89aa95998edd86d23573e11455bc0d645f9c4a564d1fe4665667e5d48f4f5621",
@@ -5607,6 +5649,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "0f12372238864ccae4627de72a6e89667df4ce819965c47cad701043f4513e2f"
     },
+    "el/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "a1d5bb77d0bb2dceb74d68f93d14408482ae93ad11d9c50fe023b5764870ff52",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "e6d474955955a67329f0cf04e73f436b54db681627803a7317bc19ba5daa06b0"
+    },
     "el/savetag.html": {
       "canonical_sha256": "f6da10f3364436b79e5fac8bc96dffbbb0971adf44e62ac316132af8cbd153ec",
       "directive_count": 1,
@@ -5636,6 +5684,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "cbf855fa4151f48d88a172946deaf2b0d6fd6e08e94be7f14539194c0b05c5a2"
+    },
+    "en-AU/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "63b9fff214acdab8b0d382f281dd2ae32c062191c64254c1329f1b248c97980a",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "718610ce5ff5f5efaa01aa6f94938b4314c35506cee876709f99e3a33057e8c9"
     },
     "en-AU/savetag.html": {
       "canonical_sha256": "74c3809926133ad3ba8bbd05692e6d6f94f45c19489f8c2b4ad5b4136110c5c9",
@@ -5667,6 +5721,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "668f4b764d6d634a03c63595701bf97bff13d30aaab3f2e23bb937f90d8de086"
     },
+    "en-CA/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "f3258bd2ad50300ac8c11538d4407db6a75f38589f5aa2bafae01440ac00a683",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "0fbb18ad251ce90d6d1c0299e6cb3c542d0d13f674e3177148863c0682d4b849"
+    },
     "en-CA/savetag.html": {
       "canonical_sha256": "845049033396018ed6c2f59f3ebaaacd471514a579592a490410694769b61880",
       "directive_count": 1,
@@ -5697,6 +5757,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "81fa1aabc4a8a30b44220ce7c9d9239f2ecb41ad796eb3563919f7b7bfd048f3"
     },
+    "en-GB/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "a720677cd0d8ec0b6cb6c8701d710ab1ad3b413538f4f1af62e4306f9f921267",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "caa24ebd7fa76873a0290a1545daaad7725ad764607907e465cd78e8093a7f29"
+    },
     "en-GB/savetag.html": {
       "canonical_sha256": "eb0ca5f874eba82e78185037fd93a241e6dcdbae914f4a2126debf40683f8abe",
       "directive_count": 1,
@@ -5726,6 +5792,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "fea1c0b0ee6f421421c1c5bdd68ebf8a739f5b0ac7e41fceb7115e4a227a3a5d"
+    },
+    "en-US/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "badf8450d4c11feb858d8491a95a5d9332fdaa6ca4d548e9e0513d2e49b16cb1",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "3f38f08de0369199b1ca465bb7122dabfbfbdec48ec44b551003c84f9c676a47"
     },
     "en-US/results/index.html": {
       "canonical_sha256": "71de7976661468511204e7394b4a3a77f62e4930c8a5aa8b7be77c0083e16903",
@@ -5763,6 +5835,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "ddf5061e0ef2204b623cc4fa0411c8da730863a5c09c0ffcca5f6a2afb60ef60"
     },
+    "es-ES/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "7219af3c093b8473f67db24917f1268b7faebbbe82c586cff234b15e58f66801",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "879b8e8c8943ab95d3e70cd397b5ed3e26490a1877066f3c6b593b4e23d63e72"
+    },
     "es-ES/savetag.html": {
       "canonical_sha256": "084a082d335bb76b3d07077fd7d395370b72f73a45b2b3662fadc52ccde32111",
       "directive_count": 1,
@@ -5792,6 +5870,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "cee98747e3160bccff1730a0c9b35d8a090905666433a1b1674597277a90582e"
+    },
+    "es-MX/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "7fdad2ad014bbdf1adc9513607e5fe78f1da899be41f4d2e798d18b89d0c10c7",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "6b23211350aa090aa2087dd6282763129c71e8a7ca22912be381bdc6370db53e"
     },
     "es-MX/savetag.html": {
       "canonical_sha256": "b15566605cb0ac64e734a007bfdced57b2fc1eb642f1df5fb34232806af5fe89",
@@ -5823,6 +5907,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "4289260924b574ad06e36edc8223adfdc09463dcc6730afad47ef90e93db905e"
     },
+    "fi/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "c3ebb6aaa68972e55b8c58daaf4695d3d63ad25e92dbd3b717511d66fd92213e",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "cb3b0cbf56d0c58451eb5226c49a25f416b6ebaf4eea34d5ec6639fce49087aa"
+    },
     "fi/savetag.html": {
       "canonical_sha256": "c0af4191ea8a528fce6808215c0b86edf55d1b1b0dda07e98ce1d102ce52aa45",
       "directive_count": 1,
@@ -5852,6 +5942,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "7e93486243ed16b0ceaf05b3133896455f4ba9de0c994b8d2d89ff47bf8cc3b3"
+    },
+    "fr-CA/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "220d668ae6108e4480463da1f361f60cb1983dd0a5668b7e99e1556e82e5abe1",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "4f0937b7b6463cd570b81069643c35d38496f80f1556474ac74f26cdd7468ae1"
     },
     "fr-CA/savetag.html": {
       "canonical_sha256": "89dee015c6af1b4a051b9127a19d68c8605b2a2b62e222fd6af11adf76694a28",
@@ -5883,6 +5979,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "a058ac57ef61aef3d31528e5fc4dfee8e9811f327143c79f771e242d80b7d3ec"
     },
+    "fr-FR/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "d6c604601ae73d3fc849a3df282bff8a8fc98b0fb5899e1ca85275e57c230f90",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "fdee0e2a5c5db156741351b5ff53034c24d23d79761bb20ad5282b767e02b8d5"
+    },
     "fr-FR/savetag.html": {
       "canonical_sha256": "e0d691a9ff3e758e3a11e0bc48ad48fee12cc7efd7bd70c994db429410b817dc",
       "directive_count": 1,
@@ -5912,6 +6014,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "b45d6e7d5d69aa3097a75e9660dab0837606a31ea534c695ed1867bee80e1ba5"
+    },
+    "gu-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "46f4856f2e14b89c74e0e0306d0fc2ef0ca79f56e908a9b41c44c4d9aecfd3de",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "5b2c485be57bf96cae2a5f545432e5267bd40828dfd6da4dc3c84adfb3b83e51"
     },
     "gu-IN/savetag.html": {
       "canonical_sha256": "a880f0d19c57d365cf95ea2b33628776238ab572d70863b637b8d64b27075e1c",
@@ -5943,6 +6051,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "6746ee752077281f97dbc8e1fa1d5340fd93ef9b4d9228c43eb04d9b6087956b"
     },
+    "he/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "d471a4d2607e73bec94c18f770fe9971ec79473ac3bb1d2955f4c83794a38144",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "b880cf632e6542a00624ff646ac16469eda64ecc9029121e9442adbe308c06bd"
+    },
     "he/savetag.html": {
       "canonical_sha256": "47b7c9dc6483da5ed66fccfba219d0ee39e276ab6bdb7f289fed2246f562b77c",
       "directive_count": 1,
@@ -5972,6 +6086,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "e7219149142bfeb1ed1a2a56870d6955fe8c4b7adab7712020d6fab369d555b0"
+    },
+    "hi/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "8c9593d2c68f89b863bf7bb842608a01703a1c755c9bf4bdbea6d33da1a5a386",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "d09e4b35a187121651e20323d7bcc893cab9f57197137ef100aaac6e7304242a"
     },
     "hi/savetag.html": {
       "canonical_sha256": "194f839af74d30be68d09693d2c481521f1dabde7cc03d8ee8f11cdfdf454ca6",
@@ -6003,6 +6123,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "2195feed872dfe40a1aafbfe513808e84ef2b47c86fad713a3b5e8fa13e800e9"
     },
+    "hr/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "f97708f146848a5e6fe93b530898867a7927a23de80fea4ca32e75ffa083ecc8",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "d75e6d0065808e2791cac4bfc0aa20be188ff7035c60faf55b68c0dba58da6f6"
+    },
     "hr/savetag.html": {
       "canonical_sha256": "ac9e2b30aa440c3bbed29cdacefe7a17b10f3ad21807608c1fd7248319956386",
       "directive_count": 1,
@@ -6032,6 +6158,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "4e0b1629a398ec79c0efba418e0981e0f4b3715c378699452c424a7cdd77b842"
+    },
+    "hu/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "0e41b8c82b0cafdd190928c0a1ce03b89a2f62aeba7a31275e77841db7f148e2",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "47c2fd96271952dfaf12cafdff01796179a486e0b770473306d619834c370561"
     },
     "hu/savetag.html": {
       "canonical_sha256": "11a27789574d9d3071ca384743716f62a1fbdc7b80733577c47c8094ed0202ca",
@@ -6063,6 +6195,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "0ca58fc3cecc2e358ee81e327a2c811c9d92403a8d67ec045aa224a1a2cafcb4"
     },
+    "id/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "3723f5d773e013d9786b1034a82279f0557c2be8f65352c36a02a091413ee9c5",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "a1c0132c10ce886242744257b4ac9ddf49286b2651f2205a6d9eeb678fd5bbb5"
+    },
     "id/savetag.html": {
       "canonical_sha256": "4d809ed60f0a1f33e37ef46369ea9f8840d69fc2bc1d828020893c176ed875df",
       "directive_count": 1,
@@ -6092,6 +6230,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "f1d71f9c1476fca9d5e4c8e9d2178e145dcdef33daf5563d9d1c503d3b343be6"
+    },
+    "it/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "4dd1d2ae22d73a290b350d44e3cf1ed08188995a653160a5df0c1a6c2396597a",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "2eb16c9f2826a32be756736db69f119e9725028c3ba5bb18c107fec41e0c214a"
     },
     "it/savetag.html": {
       "canonical_sha256": "1f4b24cee8996bc3f06658440dafc416dfb3b2161b318ddba0671837ffe1a06b",
@@ -6123,6 +6267,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "b9c06106464abb6bd7fc82a0dc7dc1025c3d3d22f238b7b3ddb1415eca1cc7c6"
     },
+    "ja/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "03d42dab9b8a19c32ae2b6298c266cd9d7ef641db57c5477fadffe9c8d88dd39",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "59a4b40fcbaed580230ea6c69a66348727210e426165bbbf458efb303be835af"
+    },
     "ja/savetag.html": {
       "canonical_sha256": "619a9c4e8c957f090b75a75c8464475e46c91fc2a8b0d629a6cdf0001dc821a4",
       "directive_count": 1,
@@ -6152,6 +6302,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "8a9e64c32dc018d92cd99546a77b529e31fa3ae3470425202dccb227a775a2a9"
+    },
+    "kn-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "d4bd11f6295786fa1c96418550500deaa771940d2031fc366ae6db3059af9801",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "bdf9a9ad596a0c61ea301269bab7bfb48db8a14dc4818f010f4a1e66fb4ab204"
     },
     "kn-IN/savetag.html": {
       "canonical_sha256": "50c228de53c5f38dbc886563b885941c3a820e0de50f4904d45076ad84e0daa5",
@@ -6183,6 +6339,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "fbe8fb9ff01f74fb6831d6b6e17c74f93623dccbd1fcd5d19303004c387a406b"
     },
+    "ko/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "448db8cc191a8920afdea6e8aa9a70816a20c97395c08848e85078670ded1467",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "4fc65b54fa4f5dcb8f059792ccb6fd315de4f24bf5c5c87ff84c6c462e7f9d65"
+    },
     "ko/savetag.html": {
       "canonical_sha256": "14410e80b1116b05c94c7f50cf3057c3fd0bdbfab882967b18778f7dd41c3353",
       "directive_count": 1,
@@ -6212,6 +6374,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "57f846d96b42f2106d661965ff3d2f9c7325e014b2d62dff31b96c3724def232"
+    },
+    "ml-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "38281de211461105614f0e2e9c9589b399460f83eec32ffc09e543a075a014e3",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "2559e4919d2cf5058a61cf444bc940035a9377b9cdbdb83c08f254c6c6aa0453"
     },
     "ml-IN/savetag.html": {
       "canonical_sha256": "596085163b36c3250fb3890dec3453c3c6cd3f0030e2b94a142792d34ace8370",
@@ -6243,6 +6411,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "7031e7bc3e1aea98572acdb36257f60448f6b60682679458cb4c2e00e062aa77"
     },
+    "mr-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "9eae34781cbcb9ce76f30b55772735867f89a296689fa6bdf810e4b8508383a4",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "aa31e7c26a8e59ba20b752b5a19ccb92349f847f0d7613c02d196b7d11f83fcf"
+    },
     "mr-IN/savetag.html": {
       "canonical_sha256": "f6452804fc1b813e086d5113144356dbce46b484744e3eb97dab74c469cb8c79",
       "directive_count": 1,
@@ -6272,6 +6446,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "09281cc8b5d42990bfb1f95600db4b09a5162b9843e74123390d3f640fdcff4e"
+    },
+    "ms/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "749e27be89d01b7ccf4199feead26d110639dcf73be3247df0186f281759f6e8",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "49d2ffe1d8487c52ae74c60236bbdcc017998b36b9e43a52e9ec63dd63b6349f"
     },
     "ms/savetag.html": {
       "canonical_sha256": "80dadd4e41be21f00fd5321ad983f0ab9d91a596fd74b98a55cab42156954a75",
@@ -6303,6 +6483,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "5d0fba55b08969cbc8c6ce441742a5d031194f4605235bd944e645ff4c25a3dd"
     },
+    "nl-NL/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "a1684baba652a272322694af298c73faf13f9050d439d8ee499d5ba6461f93fb",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "8cdb78b053389ca6da68349130a9e29ac6bd2cd2cfe703e44357175b0ee098fb"
+    },
     "nl-NL/savetag.html": {
       "canonical_sha256": "2984327a94aa9c8215770c9e326b6c4d40436fd83e9170eacf2f3a6e19a0432b",
       "directive_count": 1,
@@ -6332,6 +6518,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "fd1d12e9eacfdab9b4f12be77e55513caed8f4f58e35758c56d93030a8f5ee40"
+    },
+    "no/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "eb33dc266ddd018751e49f082f634633e66a503668076cc89c23665188c94abc",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "ea1e6eea89dbd6b85cfe3b9909bddbbb2b27bf4690bda480e09bb2f146bbdeac"
     },
     "no/savetag.html": {
       "canonical_sha256": "6133c634ff4815f648c9f3332c54386df74c6a817eba63218aeb017232110d70",
@@ -6363,6 +6555,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "c19641e6292b1d348ba974b55a304fe7947fcd30f42512bdbf60e89c08529725"
     },
+    "or-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "08e4fc023401011ecffe7246c5d01f739260df435042be6c6ca929e9e4aceb68",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "db222e3758b40f3c64fbd3370ea48e368d47b0c628987ce12af965d6662fb55e"
+    },
     "or-IN/savetag.html": {
       "canonical_sha256": "e428978febeaa67eb0a14db88e77807483a8cecb7aa2ded4088eae0cd5bd8a59",
       "directive_count": 1,
@@ -6392,6 +6590,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "8a11d62b841e442072c75ffa712bfe4df1a99a0fb836a78c4b18f8bd49702bd4"
+    },
+    "pa-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "258b9a1f2702babf378cde3db2e885f42df5e0fc0d488840a3b5bcd1ae07b7f9",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "771e8f4a89789a40f9946837ac95ab0403f55ede547f7619532db45cb396ea00"
     },
     "pa-IN/savetag.html": {
       "canonical_sha256": "b85cbc04628be3f0c280ef3191bd37971295d9a4fff2411f6cdce5395a8e55e6",
@@ -6423,6 +6627,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "91e0f83ad58e2c5b9603e896c1d4fe18ff0234f2113a6ab24a65e0243fd902c1"
     },
+    "pl/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "3956b6597ec34e1707fac864bb8468dccea4998c0422998a01ab907a47af4794",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "f8ef864086ae2d74449d7c06c28a80cd6d9c9d8dd9f3f95e6426df7b4b50feea"
+    },
     "pl/savetag.html": {
       "canonical_sha256": "85d41c6f3ab31d05796983fab76ef4da944e4b5caebec194606ebe1469ba0b6d",
       "directive_count": 1,
@@ -6452,6 +6662,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "044fef5ba6443b3ed78e64296c5e151ea008535700405a48c5ba01ce98d03190"
+    },
+    "pt-BR/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "4c1f7570d0bf2a3c807a4b3ef9c9c2a044d642bcdf1dcc400f7a752e80db762b",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "3d8ec97f379045431e65f9fc3e2f5e4b28bd6ed4aacc61118e750367e94f05e3"
     },
     "pt-BR/savetag.html": {
       "canonical_sha256": "2bdfd96a8aa353770eaf54ac849f7c1f003af0caf895e3ea0fa5bad22b9715a5",
@@ -6483,6 +6699,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "58a9431605d260d432fb747c0c73f394bb43324dd7d5bc9dbf44377ccd9f1d34"
     },
+    "pt-PT/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "c6bacaec94e68e96fa7f8f7515619c52227cf9ba3bfbee101073e7c2247625ff",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "22edf78fbd3e1d8e6c28c525e7c8a7c340df7ddec2a52f410ac646793e1fe161"
+    },
     "pt-PT/savetag.html": {
       "canonical_sha256": "a6ab0699c53f846961cbce4ffca7a4895afeb297a121c543055b8ec776af69cb",
       "directive_count": 1,
@@ -6512,6 +6734,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "4d8be7fbc278d00787cad6622363a69267e060c3b90ed98b9eff526b2ebc5204"
+    },
+    "ro/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "3e92fcba82d2074fa3ff6dd4b4207a81279dc9b29dfd8ff50d61e983a1e420ef",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "c54027755064455be07167a9a6b6cd8531e218adfdc1bb0d1044cde248e825ca"
     },
     "ro/savetag.html": {
       "canonical_sha256": "54d9b8b654dec43296aa07b53858a6178376416f6aa53515695a35ef7b821102",
@@ -6543,6 +6771,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "ec03a3b05d0a1501e34ea54d84150aba6f91a38c10ea3e4f51188e11555c9b79"
     },
+    "ru/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "422e66dac79470d2ef1f059849581965a6327074f7a76a387fd23170c36bdeb3",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "8877e7211483e25b2782bf3afcb4662dcc2795543738884c45c71e6d2d20c623"
+    },
     "ru/savetag.html": {
       "canonical_sha256": "c24b18f83ae88e45b262d66a0c0910db0c7d2631b9ec3d26346f564f9b738522",
       "directive_count": 1,
@@ -6572,6 +6806,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "72fcd2f3a27a8cc40d07817b6feba1c737a4e7189e4db6ab1d27a2b3672a9e22"
+    },
+    "sk/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "c35210021af628cfbcada73ca730988cd80ac15beb82e18ad94930913ad9f528",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "c73fac35902fa009e347b5281d737bf06148b067cd2220418ace6a1b9e41aff4"
     },
     "sk/savetag.html": {
       "canonical_sha256": "2ddefefb917415ddb788253d76c5773986fd36fc17046901d4ae03be3e226f4c",
@@ -6603,6 +6843,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "4090497df751edfd61ccc07486dd0bf96cf57294ccdef8043a8af4ffe9743c23"
     },
+    "sl-SI/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "e20852b97e36d58a5bf915d0aa0c576d6f81619f19d9ea5eabe3ac21e17c3047",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "2e82a5425d5eab2c9a416d37e4143a8693e3497f676ecf425fa446c60759ec18"
+    },
     "sl-SI/savetag.html": {
       "canonical_sha256": "a40d1b17c851bfb4bfb2e918751bef45a6c1596881ef8b37eac5855fae4c8a2a",
       "directive_count": 1,
@@ -6632,6 +6878,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "d68daa085e7907b127e81a003cc300f48869a5f75530ed9ee30340df2311a64e"
+    },
+    "sv/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "683505193a658136c90d31417e129f492c03d48d28ab8c60298ffccfc7c9d12f",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "30b631ba7ee7cffb10f1723d416f02a0f35747313007b813e2da10cae5c34e10"
     },
     "sv/savetag.html": {
       "canonical_sha256": "bca4e929d8670933aa53f3d8e99d5e4cd3cdf4985d1b7040e9b75f55a14b0939",
@@ -6663,6 +6915,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "0f1c103e4ca27573890fc59570e6c6962cbad9578ce05775415efc6a9ba7487c"
     },
+    "ta-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "c8fc265416757081e0011ac5aec036084deb0fcf9f95c7752f1628cada4dff58",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "8b5cfe8b25f49b2ee8d52afa57563e55e7f1bc4816a86d7a41dd07ea9489cef9"
+    },
     "ta-IN/savetag.html": {
       "canonical_sha256": "d3863ce59013b77f9272801ba159bcca2622bd64c0d84299e22e310da45bb4ac",
       "directive_count": 1,
@@ -6692,6 +6950,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "66b44ea30ac3f1b50b6f5403be2abdc043e5e3c76cd6bd695c5270c5b790584b"
+    },
+    "te-IN/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "9fa36ccda5d10741b8736cd99031dd8f3c0bb892e4751134dca8e3ac1070cec3",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "c8e82afc053f94f1ed0a318c8297cb97a11fb3386c58c275c74cba486372ebfd"
     },
     "te-IN/savetag.html": {
       "canonical_sha256": "ea9ded0d870501f39d46c24f558ffa74efaa453c4b4243a170ef1c25ca2739b4",
@@ -6723,6 +6987,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "f60fd7a0c782711ed7c96e727ebede52eba10687d834f7b6b6350c67f9632e62"
     },
+    "th/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "916c32a8163580af46c14f129172b0d08920d36a18d16b9e16bc849df49cb68d",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "3ae409e70d351ff755fd04e1bc522164264485581ce3fc409a128fbba98511d8"
+    },
     "th/savetag.html": {
       "canonical_sha256": "1d9368a5b4ce08ce9ccda54664d96b140b5c8376d940b6e201b4ad92042b65b9",
       "directive_count": 1,
@@ -6752,6 +7022,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "be41fb6bc6221498e94fefd492b60417fe5e666794e3e4552b0ced8346597009"
+    },
+    "tr/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "04a0453bbda0defaa0e79bca622e93cc6acb3520deb5f876f72e8311c9a090ad",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "a8753d52cf0510c55242dfe85e515187cbfaabd34d3daec86bbca4bc2f2bfe56"
     },
     "tr/savetag.html": {
       "canonical_sha256": "b54167da8ea19fa7853a0ecb16a55ffee4af599915a063405c26b51be9439de8",
@@ -6783,6 +7059,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "017a5a8c6c382e6d10c83c5391a789fecbedccdb668d9a11c01570df8bcd5411"
     },
+    "uk/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "aeb5b004aa44d665e9632998f240ff42bee525af39415ac30747539d69cc0484",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "cfe99ba1214ea61c2c8fe427f896d4144904363a713bf5bb797ad5f7797f3b1c"
+    },
     "uk/savetag.html": {
       "canonical_sha256": "a21e52a4f29f69da21f1ad45c1d78f22e5aadb1ce37c338d28cb21a93952dcf0",
       "directive_count": 1,
@@ -6812,6 +7094,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "dd21c83b86407228c50dd926301763366771b9e66512127c1e597cb8c88485d0"
+    },
+    "ur-PK/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "8d151217498ff21cf57c93b2b19c3cf5228927135c9b889e4df3c8b2d863a9ec",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "5c3eccaa5330e73bc2433ddac89399cc9596d03358b7718c50d8c2e84e6c67d1"
     },
     "ur-PK/savetag.html": {
       "canonical_sha256": "787d84da03a261f1ce0266b92a764bc2eacc72a7db01c492738c5d8f7ac36c65",
@@ -6843,6 +7131,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "d40563aaa04baa5fe839db199c10be41e970c68a64f2f7fe95637237323ab939"
     },
+    "vi/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "dcfcdd8a2a9aab5308797a5472dbc07737e729bb31d8e004dfc0f5314256d4f3",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "034a27e228d141f1323b7010e6c433f32f08a29d32a21bd6c8deca2acf2c2aea"
+    },
     "vi/savetag.html": {
       "canonical_sha256": "2ae4e057ba34c24ace7f39fa436f9ec91baf206b4e13dc65e6efb3492a05c0aa",
       "directive_count": 1,
@@ -6873,6 +7167,12 @@
       "policy": "source-email-off-v1",
       "source_sha256": "c27d7c93e0f12e88b5c21ae485dba263f66f7578aea18ee43314519884e43376"
     },
+    "zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "3a2e49e7c7d58b6b73b71efb391f0aaa3b89b3604aee2238c8da8aa23703ac5e",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "149e0490d5811ace2a899c2078baa40a3be63c69ae4fc0b9b6273823e3378353"
+    },
     "zh-Hans/savetag.html": {
       "canonical_sha256": "4065d64788bd6f4d944e8d823bdcde77bd5d211e116a50cb8cf67f8e659081d0",
       "directive_count": 1,
@@ -6902,6 +7202,12 @@
       "directive_count": 3,
       "policy": "source-email-off-v1",
       "source_sha256": "8c99633ae576440e4ae8daa356d3277cd99ec72c9d0143b2aa0bb153bbb8a748"
+    },
+    "zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html": {
+      "canonical_sha256": "066dac14adeb4f72dc6b22e81b5d3bed0c9af5b3ebffcc2db89b4d0abd914fb8",
+      "directive_count": 6,
+      "policy": "source-email-off-v1",
+      "source_sha256": "065ef22b4a312e5b20765acd3e66d6d61b4a177dd7f9bfcc50ad39a453ef09df"
     },
     "zh-Hant/savetag.html": {
       "canonical_sha256": "2ff097d4e49cca6bccf58700fe75528b3538916471bc4c8a7cf53b2874d3cdd3",

@@ -13,6 +13,7 @@ import io
 import json
 import market_availability as market
 import market_surface_policy
+import public_email
 import os
 from pathlib import Path
 import re
@@ -1886,7 +1887,7 @@ def _page(
     )
     skill_commands = "".join(
         f"<p><strong>Agent Skill · {escape(label)}</strong> "
-        f"<code>{escape(AGENT_SKILL_INSTALL_COMMANDS[key])}</code></p>"
+        f"<code>{public_email.code_text(AGENT_SKILL_INSTALL_COMMANDS[key])}</code></p>"
         for label, key in (
             ("GitHub Copilot", "github_copilot"),
             ("Claude Code", "claude_code"),
@@ -1898,7 +1899,7 @@ def _page(
     )
     mcp_commands = "".join(
         f"<p><strong>{escape(label)}</strong> "
-        f"<code>{escape(MCP_INSTALL_COMMANDS[key])}</code></p>"
+        f"<code>{public_email.code_text(MCP_INSTALL_COMMANDS[key])}</code></p>"
         for label, key in (
             ("Claude Code", "claude_code"),
             ("Codex", "codex"),
@@ -1967,6 +1968,37 @@ tr:last-child td{{border-bottom:0}}
 
 
     return market_surface_policy.enforce_html(document, locale)
+
+
+def refresh_install_command_protection(pages: Path = PAGES) -> dict[str, object]:
+    """Regenerate only the authoritative install-command DOM, preserving catalog bytes."""
+    commands = set(AGENT_SKILL_INSTALL_COMMANDS.values()) | set(MCP_INSTALL_COMMANDS.values())
+    expected = {command for command in commands if public_email.PACKAGE_PIN.search(command)}
+    paths = [Path("data") / f"{SLUG}.html", *(
+        Path(locale) / "data" / f"{SLUG}.html" for locale in OFFICIAL_LOCALES
+    )]
+    changed = []
+    for relative in paths:
+        path = pages / relative
+        source = path.read_text(encoding="utf-8")
+        seen = set()
+        def render_command(match):
+            body = match[1]
+            plain = html.unescape(body.replace(public_email.OPEN, "").replace(public_email.CLOSE, ""))
+            if plain not in commands:
+                return match[0]
+            if plain in expected:
+                seen.add(plain)
+            return "<code>" + public_email.code_text(plain) + "</code>"
+        rendered = re.sub(r"<code>(.*?)</code>", render_command, source, flags=re.S)
+        if seen != expected:
+            raise ValueError(f"Publisher command source drift: {relative}")
+        if public_email.canonical_html(rendered) != public_email.canonical_html_unchecked(source):
+            raise ValueError(f"Command protection changed non-directive bytes: {relative}")
+        if rendered != source:
+            write_text_if_changed(path, rendered)
+            changed.append(relative.as_posix())
+    return {"pages": len(paths), "changed": changed}
 
 
 def build(pages: Path = PAGES, today: str | None = None) -> str:

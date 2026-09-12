@@ -298,12 +298,17 @@ def _content_html(
                 f"{int(storefront_facts['rating_count'])}"
             )
         storefront = f"<p>{' \u00b7 '.join(labels)}</p>"
+    disclosure = ""
+    from western_romance_copy import LOCALES
+    if record.get("locale") in LOCALES:
+        from western_romance_surface_copy import for_locale
+        disclosure = f'<p>{html.escape(for_locale(record["locale"])["disclosure"])}</p>'
     return (
         f'<p><a href="{store_url}"><img src="{image_url}" '
         f'alt="{image_alt}" width="{int(preview["width"])}" '
         f'height="{int(preview["height"])}"></a></p>'
         f"<p>{context}</p>{storefront}"
-        f'<p><a href="{store_url}">{cta}</a></p>'
+        f'<p><a href="{store_url}">{cta}</a></p>{disclosure}'
     )
 
 
@@ -333,6 +338,10 @@ def _content_text(record: dict[str, Any]) -> str:
     parts.append(
         f"{record['app_store_cta_label']}: {record['app_store_url']}"
     )
+    from western_romance_copy import LOCALES
+    if record.get("locale") in LOCALES:
+        from western_romance_surface_copy import for_locale
+        parts.append(for_locale(record["locale"])["disclosure"])
     return " \u00b7 ".join(parts)
 
 

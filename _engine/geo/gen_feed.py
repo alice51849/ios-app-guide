@@ -85,7 +85,15 @@ class _OpenGraphImageParser(HTMLParser):
             self.images.append(values["content"])
 
 
-def feed_discovery_links():
+def feed_discovery_links(locale=None):
+    if locale is not None:
+        from western_romance_copy import LOCALES
+
+        if locale in LOCALES:
+            from app_install_decision_feeds import discovery_links
+            from western_romance_surface_copy import for_locale
+
+            return discovery_links(locale, for_locale(locale)["feed_title"])
     return "\n".join(
         (
             f'<link rel="alternate" type="application/atom+xml" '

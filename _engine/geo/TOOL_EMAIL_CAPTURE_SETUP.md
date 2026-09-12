@@ -33,7 +33,9 @@ capture inventory 恰好 **2350** 格；原有五語免費工具通知不可轉�
 - 原有 `gen_tool_email_capture.py` 保留 `new_free_tools_v1` scope；
   App 表單使用獨立的 `app_updates_v1`。舊名單不遷移、不擴權、不自動補同意。
 - `<locale>/email/<app_key>.html` 一 App × 一 locale × 一 campaign，
-  共 2350 張。另有 50 個語系目錄與 1 個語言入口，不算 capture 格。
+  共 2350 張內容契約。**第2輪 production default 為 inactive：實際表單為 0**，
+  不是 2350 位讀者，也不是 2350 個已啟用入口。
+  另有 50 個語系目錄與 1 個語言入口，不算 capture 格。
   這些偏好頁是 `noindex,follow`，不冒充 2350 篇搜尋內容。
 - 表單只收 email 與 scope metadata，使用官方 `metadata__<key>` 欄位。
   唯一的 `metadata__owned_consent=yes` 來自**未預選、required 的 checkbox**。
@@ -114,6 +116,118 @@ python3 geo/owned_email_readback.py --subscriber-count
 hero 的 `content_digest` 包含展開後的 50 語設定。禁止封存後直接改 hero HTML。
 `enabled=false` 或清空 endpoint 仍會移除舊工具區塊；App capture 關閉時
 產生器 fail closed，不自行部署或刪除已存在的公開素材。
+
+## 第2輪：production-readiness，不搶 App Store 轉換
+
+2026-09-12 再次獨立檢查上一輪候選：2350 張中，2303 個可轉換市場的
+form 全部排在 App Store CTA 之前；五尺寸 × 50 語最長標籤的 250 個
+Playwright baseline 中，196 個主 CTA 離開首屏。因此不沿用「content-ready」
+作為上線許可，**全 App 同步保持 inactive**，不按轉換結果挑成功 App。
+來源：同 Session 第2輪使用者要求「production-readiness Gate／不傷害 App
+Store 轉換／不混 shared layout」。
+
+### 非干擾與隱私邊界
+
+- `.oe-core[data-primary-answer]` 包含原產品名稱與主要 App Store CTA，
+  永遠先於 capture；active／inactive／rollback 的 core HTML、URL、DOM 順序、
+  首屏位置與 hit target 必須一致。bn-BD 不產商店 CTA，保留真實市場說明；
+  純 newsletter 契約只談產品資訊，不暗示在孟加拉可下載。
+- inactive 頁面不輸出 form、email input、checkbox 或 disabled 假按鈕，
+  以 50 語明確說明尚未開放；完整 consent 文案仍保存在 source contract。
+  `tool_email_capture.json` 的 `enabled`／`app_capture_enabled` 表示內容能力，
+  **不能覆蓋 `owned_email_rollout.json` 的實際啟用策略**。
+- 可啟用候選使用原生、預設收合的 `<details>`，只有讀者自選後才展開；
+  無 modal、sticky、interstitial、autofocus、預勾、JS submit 或誘導文案。
+  寄送確認按鈕為安靜的 secondary control，不能搶主 CTA。
+- Owned HTML 不載入產品 JS、pixel、iframe 或外部資產，也不新增
+  cookie／storage／beacon；這不冒充 Buttondown 尚未驗證的服務端設定。
+  `pt/ct` 只保留既有 Apple 聚合 campaign 歸因，沒有個人 tracking ID。
+  email、checkbox、summary、按鈕及連結的有效點擊範圍至少 44 CSS px。
+- 既有頁面的 `apply_capture()` 只在最後的核心答案與 App Store CTA 之後注入；
+  移除 capture 區塊後，非 capture HTML 必須逐 byte 相同。遇到 ID 衝突或
+  找不到安全插入點直接 blocking，不偷偷更動 shared CSS／答案或 CTA。
+
+### 事前固定、對所有 App 公平的 rollout
+
+| stage | locale cohort | 每 App 入口 | 全部入口 |
+|---|---|---:|---:|
+| inactive（目前） | 無 | 0 | 0 |
+| pilot（僅預先規劃） | en-US | 1 | 47 |
+| expanded（僅預先規劃） | en-US、zh-Hant、ja、ar-SA | 4 | 188 |
+| all（僅預先規劃） | 官方 50 locale | 50 | 2350 |
+
+每個 cohort 必須全部 47 App 一起驗收；禁止挑高轉換、已成功或漂亮的 App
+先上。任何一個 blocking 問題都保持整個 cohort inactive。這些表格不是啟用
+授權；本輪 release Gate 只接受 active count=0，`activation_ready=false`，
+sender 仍永久 no-send，不能因 geometry PASS 自行寄信、訂閱 POST 或部署。
+
+### 可重跑的 browser／a11y／privacy Gate
+
+鎖定 Playwright `1.63.0` 與 axe-core `4.13.0`，依 `package-lock.json`
+安裝；瀏覽器與 runtime 只放在 project `.local/`，不使用系統暫存目錄。
+
+```bash
+mkdir -p geo/browser-tests/.local/runtime
+export TMPDIR="$PWD/geo/browser-tests/.local/runtime"
+export PLAYWRIGHT_BROWSERS_PATH="$PWD/geo/browser-tests/.local/browsers"
+npm --prefix geo/browser-tests ci --no-audit --no-fund
+node geo/browser-tests/node_modules/playwright/cli.js install chromium
+
+python3 geo/owned_email_readiness.py --prepare-geometry <private-fixtures>
+node geo/browser-tests/owned-email-geometry.mjs \
+  --fixtures <private-fixtures> --output <private-evidence>/geometry.json
+
+python3 geo/owned_email_readiness.py \
+  --prepare-compatibility <private-layout-fixtures> \
+  --growth-root <isolated-growth> --guide-root <isolated-guide>
+node geo/browser-tests/owned-email-compatibility.mjs \
+  --fixtures <private-layout-fixtures> --output <private-evidence>/layout.json
+
+python3 geo/owned_email_readiness.py --health-only > <private-evidence>/health.json
+python3 geo/owned_email_readiness.py --pages-dir <isolated-guide> \
+  --geometry <private-evidence>/geometry.json --health <private-evidence>/health.json \
+  --dependencies <private-evidence>/layout.json
+```
+
+完整矩陣是 **47 App × 50 locale × 5 viewport = 11750 組**：
+`320×568`、`375×667`、`390×844`、`768×1024`、`1024×768`。
+每組驗 inactive、active 收合／展開、no-JS 原生操作及 rollback；CLS 實測
+23500 次，axe 另驗每語最長 App 名稱 × 5 尺寸 × 2 狀態，共 500 組。
+axe violations **及 incomplete** 都 blocking。`--smoke` 只作預檢，
+即使全綠也不符合 release Gate 的完整矩陣分母。
+
+No-JS 使用獨立關閉 JS 的 browser context；axe／PerformanceObserver 是
+另一個稽核 context 的測量工具，不是產品必要腳本。所有 browser request
+一律攔截，任何新外部 request 或 POST 都 blocking，絕不以真實訂閱驗表單。
+Buttondown 只 GET form endpoint（可能 302 至公開 profile）及 archive；
+導向只允許同一 newsletter 的安全公開 URL。200／302 都不是訂閱或 native
+delivery 證據，無法取得真實 census 時保持 `UNKNOWN/0`。
+
+`rollout-manifest.json` 綁 committed source SHA、source／content digest、
+完整 case identity、geometry／a11y／no-JS／rollback、5 分鐘內 GET health
+與最新 main 的 shared-layout dependency digest。缺例、重複、stale、
+錯誤 source、未審查 a11y、非預期 request 或 main 前進都 fail closed。
+
+### Shared-layout 依賴與 rollback
+
+本輪只讀 latest mains 的 `publish.py`、`hero_task_html.py`、
+`deployment_generation.py` 與 50 個已存在 App 頁；**不合併或複製其他正在
+進行的 shared-layout feature**。目前相容性抽查 250 組：inactive／active
+都未改動既有 CTA 順序或 geometry，但既有 main 自身有 51 組主 CTA 不在
+首屏，交由 shared-layout owner 的正式整合處理。本 feature 不偷修。
+shared-layout 最終 main SHA 改變後必須重跑相容性；Buttondown metadata
+保存／signed confirmation intake 尚未有真實證據，也維持 activation blocker。
+
+**Rollback 不是 revert 回上一輪搶 CTA 的頁面。** 固定方法是把 rollout
+policy 設為 inactive、commit 配對來源，再用相同 generator 的 `--rollback`
+重新產生 owned outputs。只有 capture 被關閉，core／App Store CTA 完整
+保留，不刪 consent ledger、不改 App、不部署、不發任何 provider mutation：
+
+```bash
+python3 geo/gen_owned_email_capture.py --rollback \
+  --pages-dir <isolated-guide> --growth-geo <isolated-growth>/geo \
+  --guide-geo <isolated-guide>/_engine/geo --availability <fresh-readonly-availability>
+```
 
 ## 官方依據（2026-09-12 GET）
 

@@ -175,7 +175,7 @@ class OwnedEmailTests(unittest.TestCase):
         self.assertEqual(set(copies), set(c.OFFICIAL_LOCALES))
         self.assertEqual(len(legacy._load_config()["copy"]), 50)
         for locale in c.OFFICIAL_LOCALES:
-            block = legacy._block(legacy._load_config(), locale)
+            block = legacy._block(legacy._load_config(), locale, preview=True)
             self.assertIn(copies[locale]["email_label"], block)
             self.assertIn('name="metadata__owned_campaign" value="new_free_tools_v1"', block)
             self.assertNotIn(c.CAMPAIGN, block)
@@ -191,9 +191,11 @@ class OwnedEmailTests(unittest.TestCase):
     def test_legacy_capture_is_idempotent_and_disabled_removes_old_form(self):
         config = legacy._load_config()
         page = '<html lang="bn-BD"><body><main>Existing tool</main></body></html>'
-        updated = legacy.apply_capture(page, config)
-        self.assertEqual(updated, legacy.apply_capture(updated, config))
-        self.assertEqual(page, legacy.apply_capture(updated, {**config, "enabled": False}))
+        with mock.patch.object(legacy.readiness, "is_active", return_value=True):
+            updated = legacy.apply_capture(page, config)
+            self.assertEqual(updated, legacy.apply_capture(updated, config))
+            self.assertEqual(page, legacy.apply_capture(updated, {**config, "enabled": False}))
+        self.assertEqual(legacy.apply_capture(updated, config), page)
         with self.assertRaises(ValueError):
             legacy._block({**config, "endpoint": "https://example.invalid/subscribe"}, "en-US")
 
@@ -203,7 +205,7 @@ class OwnedEmailTests(unittest.TestCase):
         copies = c.load_copy()
         for row in self.inventory["rows"]:
             with self.subTest(app=row["app_key"], locale=row["locale"]):
-                source = self.outputs[row["capture_path"]].decode()
+                source = capture.render_capture(row, copies, active=True).decode()
                 form = Form(source)
                 self.assertEqual(len(form.forms), 1)
                 self.assertEqual(form.forms[0]["action"], c.ENDPOINT)
@@ -718,7 +720,9 @@ class OwnedEmailTests(unittest.TestCase):
             checked = capture.check(directory, now=NOW)
             self.assertEqual(checked["content_digest"], self.inventory["content_digest"])
             target = directory / self.row["capture_path"]
-            target.write_bytes(target.read_bytes().replace(b"metadata__owned_app", b"metadata__wrong_app", 1))
+            original = target.read_bytes()
+            self.assertIn(b"data-owned-email-slot", original)
+            target.write_bytes(original.replace(b"data-owned-email-slot", b"data-wrong-slot", 1))
             with self.assertRaises(c.ContractError):
                 capture.check(directory, now=NOW)
         finally:

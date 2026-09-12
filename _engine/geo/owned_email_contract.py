@@ -41,6 +41,9 @@ SOURCE_FILES = (
     "official_locales.py", "live_app_manifest.py", "live_app_manifest.json",
     "app_store_storefronts.py", "locale_storefronts.json",
     "market_availability.py", "site_config.py",
+    "owned_email_readiness.py", "owned_email_rollout.json", "owned_email_readiness_i18n.json",
+    "browser-tests/owned-email-geometry.mjs", "browser-tests/package.json",
+    "browser-tests/package-lock.json", "browser-tests/owned-email-compatibility.mjs",
 )
 HEX = re.compile(r"[0-9a-f]{64}")
 SHA = re.compile(r"[0-9a-f]{40}")
@@ -340,6 +343,7 @@ def verified_conversion_cells(availability):
 
 
 def make_inventory(provider, sources, availability, content_hashes, *, now=None):
+    from owned_email_readiness import rollout
     now = now or utcnow()
     validate_sources(sources)
     validate_availability(availability, now)
@@ -356,6 +360,7 @@ def make_inventory(provider, sources, availability, content_hashes, *, now=None)
         "unverified_conversion_cells": 2303 - verified_conversion_cells(availability),
         "evidence_level": "content_ready_not_subscriber_or_delivery",
         "verified_subscribers": 0, "subscriber_count": "UNKNOWN", "native_email_count": 0,
+        "rollout": rollout(),
         "rows": records,
     }
     result["content_digest"] = digest(result)
@@ -363,6 +368,7 @@ def make_inventory(provider, sources, availability, content_hashes, *, now=None)
 
 
 def validate_inventory(document, availability, *, now=None, geo=HERE):
+    from owned_email_readiness import rollout
     now = now or utcnow()
     if not isinstance(document, dict) or document.get("schema") != SCHEMA:
         raise ContractError("invalid capture inventory schema")
@@ -378,6 +384,8 @@ def validate_inventory(document, availability, *, now=None, geo=HERE):
     if type(document.get("ttl_seconds")) is not int or not 0 < document["ttl_seconds"] <= MAX_AGE:
         raise ContractError("invalid inventory TTL")
     fresh(document.get("generated_at"), now, document["ttl_seconds"])
+    if document.get("rollout") != rollout():
+        raise ContractError("inventory rollout differs from the committed inactive-first policy")
     if timestamp(document["generated_at"]) < timestamp(availability["generated_at"]):
         raise ContractError("inventory predates its availability source")
     for field, value in {

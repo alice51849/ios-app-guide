@@ -1,0 +1,15 @@
+{
+  "schema": "lumi.owned-email-rollout-policy/v1",
+  "stage": "inactive",
+  "default_active": false,
+  "app_selection": "all_canonical_47_equally",
+  "selection_basis": "predeclared_locale_cohorts_not_conversion_results",
+  "bn_newsletter": "information_only_explicit_consent_no_download_claim",
+  "sender_enabled": false,
+  "stages": {
+    "inactive": [],
+    "pilot": ["en-US"],
+    "expanded": ["en-US", "zh-Hant", "ja", "ar-SA"],
+    "all": "official_50"
+  }
+}

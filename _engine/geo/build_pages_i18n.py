@@ -5,6 +5,8 @@
 重用 data/<app>_full.json 內已策展的 50 語文案(name/subtitle/description/
 keywords/promotionalText),不重譯。每頁含 Schema.org SoftwareApplication + FAQPage
 的 JSON-LD(LLM 最愛的結構化來源),並用 hreflang 互連各語版本。
+Western/Romance 外宣修正獨立於 metadata；western_romance_candidates.py
+以相同 generators 產未發布候選，不修改既有頁面、社群或 ASC。
 
 輸出:
     geo/pages/<locale>/<key>.html   每 app 每語一頁
@@ -49,6 +51,7 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
 from external_app_identity import external_identity  # noqa: E402
+import western_romance_copy  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -1137,6 +1140,8 @@ ATPL = {
 
 
 def get_ui(locale):
+    if locale == "pt-PT":
+        return western_romance_copy.PT_PT_UI
     b = base_lang(locale)
     return UI.get(b, UI["en"])
 
@@ -1157,6 +1162,8 @@ def json_for_script(value, **kwargs):
 
 
 def pricing_text_for(key, locale):
+    if locale == "pt-PT" and key in western_romance_copy.PT_PT_COPY:
+        return western_romance_copy.purchase_note(locale, APPS[key]["purchase_model"])
     profile = pricing_profile(key)
     if APPS[key].get("purchase_model") == "paid_upfront":
         return PAID_UPFRONT_PRICING.get(
@@ -1488,6 +1495,7 @@ def external_localized_values(key, locale, localizations=None):
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
     values = external_identity(key, locale, values)
+    values = western_romance_copy.external_values(key, locale, values, APPS[key])
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1538,8 +1546,8 @@ def external_localized_values(key, locale, localizations=None):
 
 def build_faq(locale, name, sub, kws):
     b = base_lang(locale)
-    qtpl = QTPL.get(b)
-    atpl = ATPL.get(b)
+    qtpl = western_romance_copy.PT_PT_QUESTIONS if locale == "pt-PT" else QTPL.get(b)
+    atpl = western_romance_copy.PT_PT_ANSWER if locale == "pt-PT" else ATPL.get(b)
     if not qtpl or not atpl:
         return []
     subc = sub.rstrip(".。!! ")
@@ -1698,7 +1706,7 @@ def build_one(key, locale, all_locales):
 <meta name="description" content="{e(short_desc)}">
 <meta name="keywords" content="{e(', '.join(meta_keywords))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">
-{feed_discovery_links()}
+{feed_discovery_links(locale)}
 {hreflang_block(key, all_locales)}
 {ld}{searched_as_css}
 </head>
@@ -2179,7 +2187,7 @@ def build_locale_index(locale, keys, locales):
 <title>{e(ui["dir_dir"])} | iOS</title>
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
-{feed_discovery_links()}
+{feed_discovery_links(locale)}
 {directory_hreflang_block(locales)}
 <script type="application/ld+json" data-iag="localized-install-directory">{schema}</script>
 {DIRECTORY_STYLE}

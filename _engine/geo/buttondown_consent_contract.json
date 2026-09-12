@@ -1,0 +1,42 @@
+{
+  "schema": "lumi.buttondown-consent-contract/v1",
+  "newsletter_username": "hourstag",
+  "public_form_url": "https://buttondown.com/api/emails/embed-subscribe/hourstag",
+  "public_profile_url": "https://buttondown.com/hourstag",
+  "public_archive_url": "https://buttondown.com/hourstag/archive/",
+  "reply_to_address": "hourstag.app@gmail.com",
+  "ttl_seconds": 300,
+  "domain_ttl_seconds": 86400,
+  "confirmation_tokens": [
+    "confirmation_url",
+    "subscriber.metadata.owned_app_id",
+    "subscriber.metadata.owned_locale",
+    "subscriber.metadata.owned_campaign"
+  ],
+  "required_settings": [
+    "account_binding",
+    "newsletter_binding",
+    "double_opt_in",
+    "scoped_confirmation",
+    "unsubscribe_configuration",
+    "tracking_disabled",
+    "sender_identity"
+  ],
+  "sender_enabled": false,
+  "official_sources": {
+    "double_opt_in": "https://docs.buttondown.com/double-opt-in",
+    "confirmation_event": "https://docs.buttondown.com/event-types",
+    "confirmation_template": "https://docs.buttondown.com/transactional-emails-confirmation",
+    "account_get": "https://docs.buttondown.com/api-accounts-me",
+    "newsletter_get": "https://docs.buttondown.com/api-newsletters-retrieve",
+    "newsletter_schema": "https://docs.buttondown.com/api-newsletters-introduction",
+    "sender_domain": "https://docs.buttondown.com/api-newsletters-sending-domain",
+    "sender_status": "https://docs.buttondown.com/api-newsletters-sending-domain-status",
+    "subscriber_schema": "https://docs.buttondown.com/api-subscribers-introduction",
+    "subscriber_types": "https://docs.buttondown.com/api-subscribers-type",
+    "unsubscribe": "https://docs.buttondown.com/building-your-subscriber-base",
+    "webhook_hmac": "https://docs.buttondown.com/api-webhooks-introduction",
+    "open_tracking": "https://docs.buttondown.com/open-tracking",
+    "click_tracking": "https://docs.buttondown.com/click-tracking"
+  }
+}

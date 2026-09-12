@@ -1118,6 +1118,11 @@ def main() -> None:
         ),
     )
     args = parser.parse_args()
+    from notification_release import held_result
+    held = held_result("indexnow", receipt_file=args.receipt_file)
+    if held:
+        print(json.dumps(held, sort_keys=True))
+        return
 
     run(
         args.pages_dir,

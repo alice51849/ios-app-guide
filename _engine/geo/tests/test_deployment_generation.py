@@ -644,7 +644,8 @@ class DeploymentWorkflowGenerationTests(unittest.TestCase):
         ):
             block = self.workflow.split(f"- name: {name}", 1)[1].split("- name:", 1)[0]
             self.assertIn("if: inputs.incremental_high_intent != true", block)
-        for name in ("Notify WebSub subscribers", "Notify rssCloud subscribers",
+        for name in ("Observe WebSub publisher ACKs (not subscriber delivery)",
+                     "Observe rssCloud publisher ACKs (not subscriber delivery)",
                      "Enforce syndication notification results"):
             block = self.workflow.split(f"- name: {name}", 1)[1].split("- name:", 1)[0]
             self.assertIn("inputs.incremental_high_intent != true", block)
@@ -652,6 +653,9 @@ class DeploymentWorkflowGenerationTests(unittest.TestCase):
         readback = readback.split("- name:", 1)[0]
         self.assertNotIn("incremental_high_intent != true", readback)
         self.assertIn("verify-live", readback)
+        self.assertIn("notification_release_hold", self.workflow)
+        self.assertLess(self.workflow.index("owned_feed_release.py seal"),
+                        self.workflow.index("actions/upload-pages-artifact@"))
 
     def test_readback_is_exact_on_origin_and_public_host_and_keeps_the_receipt(self):
         self.assertIn('"$RUNNER_TEMP/deployment_generation.py" verify-live', self.workflow)

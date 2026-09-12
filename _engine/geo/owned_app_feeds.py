@@ -64,6 +64,8 @@ SOURCE_FILES = (
     "owned_feed_receipts.py", "owned_feed_receipt.schema.json",
     "owned_feed_reconciliation.py",
     "owned_feed_public_capture.py",
+    "owned_feed_release.py", "notification_release.py", "notification_policy.json",
+    "notify_websub.py", "notify_rsscloud.py", "indexnow_submit.py",
     "deployment_generation.py", "gen_sitemap_lastmod.py",
     "portfolio_app_catalog_api.py", "build_pages_i18n.py", "external_app_locales.py",
     "publisher_intent_catalog_i18n.json", "portfolio_app_finder_i18n.json",

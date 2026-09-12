@@ -15,6 +15,10 @@ MIRRORS = (
     "tests/test_owned_feed_delivery.py",
     "tests/test_owned_feed_receipts.py",
     "tests/test_owned_feed_reconciliation.py",
+    "tests/test_owned_feed_release.py", "tests/test_notification_release.py",
+    "tests/test_deployment_generation.py",
+    "data/high_intent_guide_sync_contract.json",
+    "tests/test_public_host_single_source.py",
     "tests/fixtures/owned_feed_receipts/websub-204.json",
     "tests/fixtures/owned_feed_receipts/rsscloud-200.json",
 )

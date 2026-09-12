@@ -14,6 +14,14 @@ on:
     types: [completed]
   workflow_dispatch:
     inputs:
+      owned_feed_release:
+        description: "單次配對 feeds 發布；provider notifications 維持 release hold"
+        type: boolean
+        default: false
+      notification_release_hold:
+        description: "本輪必須為 true，不授權 WebSub／rssCloud／IndexNow"
+        type: boolean
+        default: true
       incremental_high_intent:
         description: "只部署已驗證的 high-intent manifest 與變更索引"
         type: boolean
@@ -48,6 +56,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      NOTIFICATION_RELEASE_HOLD: "true"
     steps:
       - name: Validate paired incremental release
         if: inputs.incremental_high_intent == true
@@ -64,6 +74,22 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ inputs.incremental_high_intent && inputs.expected_guide_sha || 'main' }}
+      - name: Read held publication policy
+        id: release_policy
+        env:
+          EXPLICIT_HELD_RELEASE: ${{ github.event_name == 'workflow_dispatch' && inputs.owned_feed_release == true && inputs.incremental_high_intent == true && inputs.notification_release_hold == true }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=json.loads(Path("_engine/geo/notification_policy.json").read_text())
+          assert p["notification_release_hold"] is True
+          allowed=os.environ["EXPLICIT_HELD_RELEASE"] == "true"
+          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
+              f.write(f"allow_upload={str(allowed).lower()}\n")
+          print(json.dumps({"notification_release_hold":True,"provider_intents":0,
+                            "provider_requests":0,"explicit_paired_upload":allowed}))
+          PY
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
@@ -76,6 +102,14 @@ jobs:
           cache-dependency-path: _engine/geo/requirements-validation.txt
       - name: Install canonical generator dependencies
         run: python3 -m pip install --requirement _engine/geo/requirements-validation.txt
+      - name: Verify held notification boundary and feed release contract
+        env:
+          GEO_PAGES: ${{ github.workspace }}
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
+          PYTHONPATH: ${{ github.workspace }}/_engine/geo:${{ github.workspace }}/_engine/geo/tests
+        run: |
+          python3 -m unittest _engine.geo.tests.test_notification_release \
+            _engine.geo.tests.test_owned_feed_release -q
       - name: Quarantine unavailable App Store pages
         if: inputs.incremental_high_intent != true
         run: python3 _engine/geo/live_app_guard.py --site-root .
@@ -204,6 +238,14 @@ jobs:
           retention-days: 30
       - name: Remove private rendered-email receipt before public upload
         run: rm public-email-rendered-receipt.json
+      - name: Seal generation-bound held feed release
+        env:
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
+        run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
+          python3 _engine/geo/owned_feed_release.py seal --pages-dir "$GITHUB_WORKSPACE" \
+            --report "$RUNNER_TEMP/owned-feed-pre-upload.json"
       - name: Restore durable feed acknowledgement state
         if: inputs.incremental_high_intent != true
         uses: actions/cache/restore@v4
@@ -227,7 +269,7 @@ jobs:
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"
-          for source in owned_app_feeds.py owned_feed_delivery.py owned_feed_receipts.py owned_feed_receipt.schema.json owned_feed_locale_gate.py market_availability.py site_config.py; do
+          for source in owned_app_feeds.py owned_feed_delivery.py owned_feed_receipts.py owned_feed_receipt.schema.json owned_feed_locale_gate.py owned_feed_release.py owned_feed_reconciliation.py owned_feed_public_capture.py notification_release.py notification_policy.json market_availability.py site_config.py; do
             cp "_engine/geo/$source" "$RUNNER_TEMP/$source"
           done
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
@@ -238,19 +280,21 @@ jobs:
           cp _engine/geo/hero_tasks_readback.py "$RUNNER_TEMP/hero_tasks_readback.py"
           rm -rf _engine
       - name: Upload artifact
+        if: steps.release_policy.outputs.allow_upload == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
       - name: Deploy to GitHub Pages
+        if: steps.release_policy.outputs.allow_upload == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
-        continue-on-error: true
+        continue-on-error: ${{ env.NOTIFICATION_RELEASE_HOLD != 'true' }}
       - name: Wait before retry
-        if: steps.deployment.outcome == 'failure'
+        if: steps.deployment.outcome == 'failure' && env.NOTIFICATION_RELEASE_HOLD != 'true'
         run: sleep 20
       - name: Deploy to GitHub Pages (retry transient CDN failure)
         id: deployment_retry
-        if: steps.deployment.outcome == 'failure'
+        if: steps.deployment.outcome == 'failure' && env.NOTIFICATION_RELEASE_HOLD != 'true'
         uses: actions/deploy-pages@v4
       - name: Verify exact deployment is live
         id: verify_live
@@ -278,6 +322,32 @@ jobs:
             --attempts 30 \
             --retry-delay 25
           echo "Exact deployment is live: $(jq -er '.generation.generation_id' .well-known/deployment.json)"
+      - name: Verify exact held feeds on both public hosts
+        id: verify_owned_feeds
+        if: steps.verify_live.outcome == 'success'
+        env:
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
+        run: |
+          python3 "$RUNNER_TEMP/owned_feed_release.py" verify --pages-dir "$GITHUB_WORKSPACE" \
+            --report "$RUNNER_TEMP/owned-feed-live-readback.json"
+          PYTHONPATH="$RUNNER_TEMP" python3 - <<'PY'
+          import json
+          from notification_release import held_result
+          for protocol in ("websub", "rsscloud", "indexnow"):
+              result=held_result(protocol)
+              assert result and result["provider_intents"] == result["provider_requests"] == 0
+              print(json.dumps(result,sort_keys=True))
+          PY
+      - name: Preserve held feed publication evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: owned-feed-held-release-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/owned-feed-pre-upload.json
+            ${{ runner.temp }}/owned-feed-live-readback.json
+          if-no-files-found: warn
+          retention-days: 90
       - name: Verify published result images without claiming indexing
         if: steps.verify_live.outcome == 'success'
         run: |

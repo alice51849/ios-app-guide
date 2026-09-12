@@ -550,6 +550,13 @@ def main(argv=None) -> int:
     parser.add_argument("--protocol", choices=("websub", "rsscloud"))
     parser.add_argument("--execute", action="store_true")
     args = parser.parse_args(argv)
+    if args.operation == "notify" and (not args.execute or not args.protocol):
+        parser.error("notify requires --execute and --protocol")
+    from notification_release import held_result
+    held = held_result(args.protocol or "owned-feeds", source_sha=args.source_sha)
+    if held:
+        print(json.dumps(held, sort_keys=True))
+        return 0
     # A lost runner cache is not proof that every public feed changed.
     if not args.state.exists():
         parser.error("Missing durable state: reconcile production feeds/ACKs and import a held baseline first")

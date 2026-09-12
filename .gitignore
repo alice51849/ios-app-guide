@@ -13,3 +13,4 @@ _engine/geo/.hero-validation/
 # Notification receipts and offline test work must never enter the Pages artifact.
 /.github/owned-feed-runtime/
 **/.owned-feed-test-work/
+/.well-known/owned-feed-release.json

@@ -1,0 +1,6 @@
+{
+  "schema": "lumi.notification-release-policy/v1",
+  "notification_release_hold": true,
+  "providers": ["websub", "rsscloud", "indexnow"],
+  "reason": "Owned-feed publication is authorized; provider notifications require a separate release."
+}

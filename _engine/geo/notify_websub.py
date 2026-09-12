@@ -264,6 +264,12 @@ def main():
     parser.add_argument("--receipt-file", type=Path)
     parser.add_argument("--source-sha", default=os.environ.get("GITHUB_SHA"))
     args = parser.parse_args()
+    from notification_release import held_result
+    held = held_result("websub", receipt_file=args.receipt_file, source_sha=args.source_sha)
+    if held:
+        import json
+        print(json.dumps(held, sort_keys=True))
+        return
     topics = discover_topics(args.feed_dir)
     responses = []
     if args.receipt_file is not None:

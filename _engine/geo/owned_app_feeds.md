@@ -131,6 +131,30 @@ python3 geo/owned_feed_reconciliation.py --pages-dir <Guide-feature> \
 不存在有效歷史 state 時省略 `--history-state`，不得拿測試 fixture 補位。
 Capture／plan／真實 receipts／migration state 全部留在私有 evidence，不進 repo。
 
+### 第4輪：單次公開部署，provider release 仍上鎖
+
+`notification_policy.json` 是本次部署的單一通知政策，固定
+`notification_release_hold=true`，同時涵蓋 WebSub、rssCloud、IndexNow。
+`notification_release.py` 在四個 CLI 的 inventory／readback／state準備／POST之前
+返回 typed hold outcome；`provider_intents=0`、`provider_requests=0`、
+`accepted_ack=0`，不把 held／workflow success 算作 ACK 或 indexed。
+既有測試與 workflows 保留；IndexNow後續workflow照樣測試、保存held outcome，
+但不提交URL。本輪沒有解除migration hold或授權任何手動provider通知。
+
+Pages 在hold期間只接受明確 `owned_feed_release=true`、
+`incremental_high_intent=true`、`notification_release_hold=true` 及精確配對
+Guide/Growth SHA的單次dispatch作upload；自動事件可跑preflight但不另行部署。
+保留完整來源／preservation Gates，且第一個 deploy action 失敗時不盲目建立第二次部署。
+
+`owned_feed_release.py seal` 在同代 catalog／feed Gate通過後產生
+`.well-known/owned-feed-release.json`，綁定實際deployment generation、
+Guide/Growth來源、catalog digest、150份feed hashes、2,350 entries及hold。
+`verify` 在 owned host及GitHub Pages origin各自GET完整150份feed，驗200、MIME、
+UTF-8、無redirect、parse／GUID／日期／canonical及exact bytes，再重讀同一release
+manifest防中途換代。只有雙host均150/150才標記技術readback PASS；
+下一步eligibility仍為 `dispatch_authorized=false`，需另次明確通知release授權及
+新的production ACK對帳。404／partial／任何不一致都保持hold，不能靠重送provider解決。
+
 ```sh
 python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --refresh-catalog
 python3 geo/owned_app_feeds.py --pages-dir <Guide-feature> --check \
@@ -139,6 +163,7 @@ OWNED_FEED_GUIDE_ROOT=<Guide-feature> python3 -m unittest -q \
   geo.tests.test_owned_app_feeds geo.tests.test_owned_feed_delivery
 python3 -m unittest -q geo.tests.test_owned_feed_receipts
 python3 -m unittest -q geo.tests.test_owned_feed_reconciliation
+python3 -m unittest -q geo.tests.test_notification_release geo.tests.test_owned_feed_release
 python3 geo/owned_feed_pair_gate.py --growth <Growth-feature> --guide <Guide-feature>
 ```
 

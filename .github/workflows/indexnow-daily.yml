@@ -91,7 +91,7 @@ jobs:
             --receipt-file "$receipt_file" \
             --content-state "$content_state" \
             "${mode[@]}"
-      - name: Preserve accepted delivery receipt
+      - name: Preserve IndexNow outcome (held is not accepted or indexed)
         if: success()
         uses: actions/upload-artifact@v4
         with:

@@ -221,12 +221,15 @@ class ReconciliationTests(FeedFixture):
         with patch.object(delivery, "inventory", side_effect=AssertionError("Hold must precede readback")):
             with self.assertRaisesRegex(ValueError, "held"):
                 delivery.deliver(self.pages, self.state, SOURCE, "websub")
-        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
             delivery.main(["notify", "--pages-dir", str(self.pages), "--state", str(self.state),
                            "--source-sha", SOURCE, "--protocol", "websub", "--execute"])
+        self.assertTrue(json.loads(output.getvalue())["notification_release_hold"])
 
     def test_lost_local_cache_cannot_bootstrap_343_intents_via_cli(self):
-        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+        with patch("notification_release.held_result", return_value=None), \
+             contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
             delivery.main(["prepare", "--pages-dir", str(self.pages),
                            "--state", str(self.state), "--source-sha", SOURCE])
         self.assertFalse(self.state.exists())

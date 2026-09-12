@@ -58,6 +58,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NOTIFICATION_RELEASE_HOLD: "true"
+      GEO_SITE: https://open.cait518.cc/ios-app-guide
+      GEO_PAGES: ${{ github.workspace }}
+      APP_STORE_PROVIDER_TOKEN: "118326163"
     steps:
       - name: Validate paired incremental release
         if: inputs.incremental_high_intent == true

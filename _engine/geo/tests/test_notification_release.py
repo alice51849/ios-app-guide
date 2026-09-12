@@ -1,6 +1,7 @@
 import contextlib
 import io
 import json
+import os
 from pathlib import Path
 import shutil
 import sys
@@ -31,6 +32,15 @@ class NotificationReleaseTests(unittest.TestCase):
         policy = release.read_policy()
         self.assertIs(policy["notification_release_hold"], True)
         self.assertEqual({"websub", "rsscloud", "indexnow"}, set(policy["providers"]))
+        import yaml
+        guide = Path(os.environ.get("OWNED_FEED_GUIDE_ROOT", os.environ.get(
+            "GEO_PAGES", str(GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages")
+        )))
+        job = yaml.safe_load((guide / ".github/workflows/pages.yml").read_text())["jobs"]["deploy"]
+        self.assertEqual("118326163", job["env"]["APP_STORE_PROVIDER_TOKEN"])
+        self.assertEqual("https://open.cait518.cc/ios-app-guide", job["env"]["GEO_SITE"])
+        self.assertEqual("${{ github.workspace }}", job["env"]["GEO_PAGES"])
+        self.assertEqual("true", job["env"]["NOTIFICATION_RELEASE_HOLD"])
 
     def test_all_notification_cli_entrypoints_return_zero_without_network_or_inventory(self):
         cases = (

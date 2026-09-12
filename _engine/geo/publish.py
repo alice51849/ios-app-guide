@@ -78,6 +78,7 @@ def reconcile_lastmod_after_rebase(env):
     require([PY, os.path.join(HERE, "close_sitemap_graph.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
+    reconcile_owned_feeds(env)
     # Feeds, publisher visuals and downloadable results are emitted after the
     # HTML stamper. Audit the final tree before any commit, push or IndexNow.
     require([PY, os.path.join(HERE, "audit_store_attribution.py")], env=env)
@@ -106,6 +107,12 @@ def reconcile_lastmod_after_rebase(env):
         ],
         cwd=PAGES,
     )
+
+
+def reconcile_owned_feeds(env):
+    command = [PY, os.path.join(HERE, "owned_app_feeds.py"), "--pages-dir", PAGES]
+    require(command + ["--refresh-catalog"], env=env)
+    require(command + ["--check"], env=env)
 
 
 def main():
@@ -440,6 +447,7 @@ def main():
         ],
         env=env,
     )
+    reconcile_owned_feeds(env)
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return

@@ -166,6 +166,9 @@ jobs:
             --run-id "$GITHUB_RUN_ID" \
             --run-attempt "$GITHUB_RUN_ATTEMPT" \
             "${incremental_args[@]}"
+          python3 _engine/geo/owned_app_feeds.py \
+            --pages-dir "$GITHUB_WORKSPACE" --check \
+            --reference-source "$source_dir/geo"
           rm -rf "$source_dir"
           trap - EXIT
       - name: Require complete local-only hero results before upload
@@ -201,9 +204,30 @@ jobs:
           retention-days: 30
       - name: Remove private rendered-email receipt before public upload
         run: rm public-email-rendered-receipt.json
+      - name: Restore durable feed acknowledgement state
+        if: inputs.incremental_high_intent != true
+        uses: actions/cache/restore@v4
+        with:
+          path: .github/owned-feed-runtime/state.json
+          key: owned-feed-v2-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: owned-feed-v2-
+      - name: Prepare content-addressed feed notifications
+        id: prepare_owned_feeds
+        if: inputs.incremental_high_intent != true
+        env:
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
+        run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
+          python3 _engine/geo/owned_feed_delivery.py prepare \
+            --pages-dir "$GITHUB_WORKSPACE" \
+            --state "$GITHUB_WORKSPACE/.github/owned-feed-runtime/state.json" \
+            --source-sha "$(git rev-parse HEAD)" --include-legacy
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/deployment_generation.py "$RUNNER_TEMP/deployment_generation.py"
+          for source in owned_app_feeds.py owned_feed_delivery.py owned_feed_locale_gate.py market_availability.py site_config.py; do
+            cp "_engine/geo/$source" "$RUNNER_TEMP/$source"
+          done
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
           cp _engine/geo/websub_config.py "$RUNNER_TEMP/websub_config.py"
           cp _engine/geo/official_locales.py "$RUNNER_TEMP/official_locales.py"
@@ -304,8 +328,10 @@ jobs:
         env:
           GEO_SITE: https://open.cait518.cc/ios-app-guide
         run: >-
-          python3 "$RUNNER_TEMP/notify_websub.py"
-          --feed-dir "$GITHUB_WORKSPACE"
+          python3 "$RUNNER_TEMP/owned_feed_delivery.py" notify
+          --pages-dir "$GITHUB_WORKSPACE"
+          --state "$GITHUB_WORKSPACE/.github/owned-feed-runtime/state.json"
+          --source-sha "$(git rev-parse HEAD)" --protocol websub --execute
       - name: Notify rssCloud subscribers
         id: notify_rsscloud
         if: >-
@@ -320,8 +346,16 @@ jobs:
         env:
           GEO_SITE: https://open.cait518.cc/ios-app-guide
         run: >-
-          python3 "$RUNNER_TEMP/notify_rsscloud.py"
-          --feed-dir "$GITHUB_WORKSPACE"
+          python3 "$RUNNER_TEMP/owned_feed_delivery.py" notify
+          --pages-dir "$GITHUB_WORKSPACE"
+          --state "$GITHUB_WORKSPACE/.github/owned-feed-runtime/state.json"
+          --source-sha "$(git rev-parse HEAD)" --protocol rsscloud --execute
+      - name: Save durable feed acknowledgement state
+        if: always() && steps.prepare_owned_feeds.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: .github/owned-feed-runtime/state.json
+          key: owned-feed-v2-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Enforce syndication notification results
         if: >-
           always() &&

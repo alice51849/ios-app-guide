@@ -1427,6 +1427,8 @@ def build(
 def main() -> None:
     live = live_app_keys(APPSTORE, str(PAGES), refresh=False)
     urls = build(live_keys=live)
+    import owned_app_feeds
+    owned_app_feeds.build(PAGES)
     print(
         f"verified iOS app catalog API -> {len(live)} apps × "
         f"{len(OFFICIAL_LOCALES)} locales ({len(urls)} URLs)"

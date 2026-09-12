@@ -9,3 +9,7 @@ _engine/geo/pages
 
 # Hero-task validation fixtures are throwaway build inputs, never site content.
 _engine/geo/.hero-validation/
+
+# Notification receipts and offline test work must never enter the Pages artifact.
+/.github/owned-feed-runtime/
+**/.owned-feed-test-work/

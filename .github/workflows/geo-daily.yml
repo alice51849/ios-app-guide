@@ -361,6 +361,8 @@ jobs:
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
         run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -394,6 +396,8 @@ jobs:
               python3 gen_store_attribution.py
               python3 hero_tasks.py --today "$GEO_BUILD_DATE"
               python3 gen_feed.py
+              python3 owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
+              python3 owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
               python3 result_image_index.py
               python3 audit_link_depth.py --max-indexable-orphans 0
               python3 high_intent_decision_routes.py \
@@ -541,6 +545,8 @@ jobs:
           python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
       - name: Verify localized output before commit
         run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
           attestation="$RUNNER_TEMP/localized-verified-tree.json"
           rm -f "$attestation"
           python3 _engine/geo/verified_tree.py prepare \
@@ -557,6 +563,7 @@ jobs:
           echo "LOCALIZED_VERIFIED_TREE=$attestation" >> "$GITHUB_ENV"
       - name: Commit localized pages if any
         run: |
+          python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
           git add -A
           if git diff --cached --quiet; then
             echo "No localized changes."
@@ -591,6 +598,8 @@ jobs:
                 python3 gen_store_attribution.py
                 python3 hero_tasks.py --today "$GEO_BUILD_DATE"
                 python3 gen_feed.py
+                python3 owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
+                python3 owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
                 python3 result_image_index.py
                 python3 audit_link_depth.py --max-indexable-orphans 0
                 python3 high_intent_decision_routes.py \

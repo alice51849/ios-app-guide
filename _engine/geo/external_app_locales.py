@@ -335,9 +335,17 @@ EXTERNAL_APP_LOCALES = {
 }
 
 
-# External-site copy only. These seven App Store records currently contain
-# English copy, so the public guides must not inherit it as localized text.
+# External-site copy only; never write these corrections back to App Store Connect.
 EXTERNAL_APP_LOCALE_OVERRIDES = {
+    "lumimathpro": {
+        "kn-IN": {
+            "description": (
+                "Lumi ಕರಡಿಯೊಂದಿಗೆ ಗಣಿತದ ಬಾಹ್ಯಾಕಾಶ ಸಾಹಸಕ್ಕೆ ಹೊರಡಿ. "
+                "ಮಕ್ಕಳಿಗಾಗಿ ಸಂಖ್ಯೆಗಳ ಮಾದರಿ, ತರ್ಕ ಮತ್ತು ಲೆಕ್ಕಾಚಾರವನ್ನು "
+                "ಆಟಗಳ ಮೂಲಕ ಅಭ್ಯಾಸ ಮಾಡಿ."
+            ),
+        },
+    },
     "aim990": {
         "ca": {
             "subtitle": "Pla de 30 dies per preparar el TOEIC",

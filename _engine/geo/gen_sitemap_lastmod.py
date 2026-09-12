@@ -136,7 +136,8 @@ def _sitemap_paths(pages: Path) -> list[Path]:
             *pages.glob("sitemap*.xml"),
             *pages.glob("*/sitemap.xml"),
         )
-        if path.name != "sitemap_index.xml"
+        # Owned feeds derive lastmod from persistent item content, not Git dates.
+        if path.name not in {"sitemap_index.xml", "sitemap_owned_feeds.xml"}
     }
     return sorted(paths)
 

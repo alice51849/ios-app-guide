@@ -68,6 +68,7 @@ SOURCE_FILES = (
     "notify_websub.py", "notify_rsscloud.py", "indexnow_submit.py",
     "deployment_generation.py", "gen_sitemap_lastmod.py",
     "portfolio_app_catalog_api.py", "build_pages_i18n.py", "external_app_locales.py",
+    "gen_publisher_disclosures.py",
     "publisher_intent_catalog_i18n.json", "portfolio_app_finder_i18n.json",
     "live_app_manifest.json", "market_availability.py", "official_locales.py",
     "app_store_storefronts.py", "locale_storefronts.json",

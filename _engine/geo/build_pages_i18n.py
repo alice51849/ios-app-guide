@@ -44,6 +44,9 @@ import market_availability  # noqa: E402
 import market_surface_policy  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import gen_store_attribution  # noqa: E402
+from gen_publisher_disclosures import (  # noqa: E402
+    ensure_landing_disclosure, load_landing_disclosures,
+)
 from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALES,
     EXTERNAL_APP_LOCALE_OVERRIDES,
@@ -1579,7 +1582,9 @@ def directory_hreflang_block(locales):
     return "\n".join(out)
 
 
-def build_one(key, locale, all_locales):
+def build_one(key, locale, all_locales, *, copy_by_locale=None):
+    if copy_by_locale is None:
+        copy_by_locale = load_landing_disclosures()
     a = APPS[key]
     locdata = load_app_locales(key)
     loc = external_localized_values(key, locale, locdata)
@@ -1728,6 +1733,7 @@ def build_one(key, locale, all_locales):
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, f"{key}.html")
     page = market_surface_policy.enforce_html(page, locale, app_id=APPSTORE.get(key), name=name)
+    page = ensure_landing_disclosure(page, locale, copy_by_locale=copy_by_locale)
     write_text_if_changed(out, public_email.render_html(page))
     return out
 
@@ -2570,6 +2576,7 @@ if __name__ == "__main__":
     if not keys and not missing_apps:
         raise SystemExit("No publicly available app pages matched the request.")
 
+    disclosure_copy = load_landing_disclosures()
     n = 0
     for k in keys:
         app_locales = sorted(all_locales_for(k) or ["en-US"])
@@ -2579,7 +2586,7 @@ if __name__ == "__main__":
             if locale in render_locales
         ]
         for lc in use:
-            build_one(k, lc, app_locales)
+            build_one(k, lc, app_locales, copy_by_locale=disclosure_copy)
             n += 1
         # 每語 index 只在做全部 app 時重建
     if missing_apps or set(keys) == set(available_keys):

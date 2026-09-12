@@ -6,14 +6,17 @@ from __future__ import annotations
 import argparse
 from collections import defaultdict
 import html
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
 import re
 import subprocess
-from typing import Iterable
+from types import MappingProxyType
+from typing import Iterable, Mapping
 
-from official_locales import OFFICIAL_LOCALES
+from official_locales import OFFICIAL_LOCALES, require_official_locale_coverage
+from owned_feed_locale_gate import validate_text
 from site_config import PUBLIC_SITE  # noqa: E402
 
 
@@ -106,6 +109,10 @@ DISCLOSURE_NEEDLES = (
 CONTENT_PATHSPECS = (":(glob)**/*.html",)
 ANSWER_ARTICLE_MARKER = '<article class="card two answer">'
 PUBLISHER_MARKER = 'data-publisher-disclosure="true"'
+LANDING_DISCLOSURE = (
+    "This is first-party material published by Lumi Studio, "
+    "the developer of every listed app."
+)
 NOTICE_RE = re.compile(r'<p class="notice">(?P<text>[^<]*)</p>')
 FOOTER_RE = re.compile(
     r'<footer class="footer">.*?</footer>',
@@ -140,6 +147,147 @@ ENGLISH_APP_GUIDE_RE = re.compile(
     + r".+?"
     + re.escape(OLD_APP_GUIDE_SUFFIX)
 )
+
+
+def _validate_landing_disclosure(locale: str, value: str) -> None:
+    validate_text(locale, value, "publisher_disclosure")
+    if value != value.strip() or any(
+        character in value for character in "\r\n\t\v\f\u0085\u2028\u2029"
+    ):
+        raise ValueError(f"Landing disclosure must be a single line: {locale}")
+    if not locale.startswith("en-") and value == LANDING_DISCLOSURE:
+        raise ValueError(f"English disclosure fallback: {locale}")
+
+
+def load_landing_disclosures(
+    copy_path: Path = HERE / "publisher_intent_catalog_i18n.json",
+) -> Mapping[str, str]:
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError(f"Duplicate disclosure copy key: {key}")
+            result[key] = value
+        return result
+
+    document = json.loads(
+        copy_path.read_text(encoding="utf-8"), object_pairs_hook=unique_object
+    )
+    if not isinstance(document, dict) or document.get("schema_version") != 1:
+        raise ValueError("Unexpected landing disclosure schema")
+    localizations = document.get("localizations")
+    if not isinstance(localizations, dict):
+        raise ValueError("Missing landing disclosure localizations")
+    require_official_locale_coverage("landing disclosures", localizations)
+    copies = {}
+    for locale in OFFICIAL_LOCALES:
+        localized = localizations[locale]
+        if not isinstance(localized, dict) or LANDING_DISCLOSURE not in localized:
+            raise ValueError(f"Missing landing disclosure: {locale}")
+        value = localized[LANDING_DISCLOSURE]
+        _validate_landing_disclosure(locale, value)
+        copies[locale] = value
+    return MappingProxyType(copies)
+
+
+class _LandingDisclosureAnchors(HTMLParser):
+    VOID_ELEMENTS = {
+        "area", "base", "br", "col", "embed", "hr", "img", "input",
+        "link", "meta", "param", "source", "track", "wbr",
+    }
+
+    def __init__(self, source: str) -> None:
+        super().__init__(convert_charrefs=True)
+        self.offsets = [0, *(match.end() for match in re.finditer("\n", source))]
+        self.stack = []
+        self.mains = []
+        self.markers = []
+        self.feed(source)
+        self.close()
+
+    def absolute_offset(self) -> int:
+        line, column = self.getpos()
+        return self.offsets[line - 1] + column
+
+    def handle_starttag(self, tag, attrs) -> None:
+        values = dict(attrs)
+        classes = set((values.get("class") or "").split())
+        style = re.sub(r"\s+", "", values.get("style") or "").lower()
+        hidden = (
+            any(entry["hidden"] for entry in self.stack)
+            or tag in {"template", "script", "style", "noscript"}
+            or "hidden" in values
+            or (values.get("aria-hidden") or "").lower() == "true"
+            or bool(classes & {"hidden", "sr-only", "visually-hidden"})
+            or any(value in style for value in (
+                "display:none", "visibility:hidden", "content-visibility:hidden",
+                "opacity:0",
+            ))
+        )
+        if hidden and any(marker in self.stack for marker in self.markers):
+            raise ValueError("Hidden landing disclosure content")
+        entry = {"tag": tag, "hidden": hidden, "start": self.absolute_offset(), "end": None}
+        if tag == "main":
+            self.mains.append(entry)
+        if any(key == "data-publisher-disclosure" for key, _ in attrs):
+            if (
+                len([key for key, _ in attrs if key == "data-publisher-disclosure"]) != 1
+                or values.get("data-publisher-disclosure") != "true"
+                or tag != "p" or "publisher-disclosure" not in classes
+                or hidden or not any(item["tag"] == "main" for item in self.stack)
+            ):
+                raise ValueError("Landing disclosure must be a visible managed paragraph in main")
+            self.markers.append(entry)
+        if tag not in self.VOID_ELEMENTS:
+            self.stack.append(entry)
+
+    def handle_startendtag(self, tag, attrs) -> None:
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID_ELEMENTS:
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag) -> None:
+        for index in range(len(self.stack) - 1, -1, -1):
+            entry = self.stack[index]
+            if entry["tag"] == tag:
+                entry["end"] = self.absolute_offset()
+                del self.stack[index:]
+                break
+
+
+def ensure_landing_disclosure(
+    source: str, locale: str, *, copy_by_locale: Mapping[str, str],
+) -> str:
+    if locale not in OFFICIAL_LOCALES or locale not in copy_by_locale:
+        raise ValueError(f"Unsupported landing disclosure locale: {locale}")
+    copy = copy_by_locale[locale]
+    _validate_landing_disclosure(locale, copy)
+    anchors = _LandingDisclosureAnchors(source)
+    if (
+        len(anchors.mains) != 1 or anchors.mains[0]["end"] is None
+        or anchors.mains[0]["hidden"]
+        or not re.match(r"</main\s*>", source[anchors.mains[0]["end"]:], re.IGNORECASE)
+    ):
+        raise ValueError("Landing page must have exactly one visible, closed main")
+    if len(anchors.markers) > 1:
+        raise ValueError("Duplicate landing disclosure marker")
+    paragraph = (
+        f'<p class="publisher-disclosure" {PUBLISHER_MARKER}>'
+        f"<small>{html.escape(copy, quote=False)}</small></p>"
+    )
+    if anchors.markers:
+        marker = anchors.markers[0]
+        if marker["end"] is None or marker["end"] >= anchors.mains[0]["end"]:
+            raise ValueError("Unclosed landing disclosure paragraph")
+        closing = re.match(r"</p\s*>", source[marker["end"]:], re.IGNORECASE)
+        if closing is None:
+            raise ValueError("Invalid landing disclosure paragraph")
+        end = marker["end"] + closing.end()
+        if source[marker["start"]:end] == paragraph:
+            return source
+        return source[:marker["start"]] + paragraph + source[end:]
+    anchor = anchors.mains[0]["end"]
+    return source[:anchor] + paragraph + "\n" + source[anchor:]
 
 
 def _locale_for(path: Path, pages: Path) -> str:

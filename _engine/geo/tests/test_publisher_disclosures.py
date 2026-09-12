@@ -3,10 +3,12 @@
 
 from __future__ import annotations
 
+import html
 import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import gen_publisher_disclosures as disclosures
 
@@ -294,6 +296,152 @@ class PublisherDisclosureTests(unittest.TestCase):
             materialize.index("python3 zhuyin_readiness_tool.py"),
             materialize.index("python3 gen_publisher_disclosures.py"),
         )
+
+
+class LandingDisclosureTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.copies = disclosures.load_landing_disclosures()
+
+    def document(self):
+        return {
+            "schema_version": 1,
+            "localizations": {
+                locale: {disclosures.LANDING_DISCLOSURE: value}
+                for locale, value in self.copies.items()
+            },
+        }
+
+    def load_document(self, document):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "copy.json"
+            path.write_text(json.dumps(document, ensure_ascii=False), encoding="utf-8")
+            return disclosures.load_landing_disclosures(path)
+
+    def test_exact50_copy_is_native_single_line_and_immutable(self):
+        self.assertEqual(set(disclosures.OFFICIAL_LOCALES), set(self.copies))
+        self.assertEqual(50, len(self.copies))
+        with self.assertRaises(TypeError):
+            self.copies["en-US"] = "changed"
+        for locale, value in self.copies.items():
+            with self.subTest(locale=locale):
+                disclosures._validate_landing_disclosure(locale, value)
+                self.assertEqual([value], value.splitlines())
+                if not locale.startswith("en-"):
+                    self.assertNotEqual(disclosures.LANDING_DISCLOSURE, value)
+
+    def test_invalid_copy_fails_closed(self):
+        for kind in ("schema", "missing-locale", "extra-locale", "missing-key",
+                     "empty", "fallback", "linebreak", "foreign-script"):
+            with self.subTest(kind=kind):
+                document = self.document()
+                localized = document["localizations"]
+                if kind == "schema":
+                    document["schema_version"] = 2
+                elif kind == "missing-locale":
+                    localized.pop("bn-BD")
+                elif kind == "extra-locale":
+                    localized["xx"] = localized["en-US"]
+                elif kind == "missing-key":
+                    localized["fr-FR"] = {}
+                else:
+                    localized["fr-FR"][disclosures.LANDING_DISCLOSURE] = {
+                        "empty": "",
+                        "fallback": disclosures.LANDING_DISCLOSURE,
+                        "linebreak": self.copies["fr-FR"] + "\n",
+                        "foreign-script": "這不是法文。",
+                    }[kind]
+                with self.assertRaises(ValueError):
+                    self.load_document(document)
+
+    def test_duplicate_json_keys_fail_closed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "copy.json"
+            path.write_text('{"schema_version":1,"schema_version":1}', encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Duplicate"):
+                disclosures.load_landing_disclosures(path)
+
+    def test_all50_insertions_are_exact_visible_idempotent_and_body_preserving(self):
+        source = (
+            '<!doctype html><html><head><link rel="canonical" href="https://example.test/">'
+            '</head><body><main><h1>Product</h1><p>Unchanged &amp; complete.</p>\n'
+            '</main></body></html>'
+        )
+        for locale, value in self.copies.items():
+            with self.subTest(locale=locale):
+                updated = disclosures.ensure_landing_disclosure(
+                    source, locale, copy_by_locale=self.copies
+                )
+                expected = (
+                    f'<p class="publisher-disclosure" {disclosures.PUBLISHER_MARKER}>'
+                    f"<small>{html.escape(value, quote=False)}</small></p>\n"
+                )
+                self.assertEqual(1, updated.count(expected))
+                self.assertEqual(source, updated.replace(expected, "", 1))
+                self.assertLess(updated.index(expected), updated.index("</main>"))
+                self.assertEqual(updated, disclosures.ensure_landing_disclosure(
+                    updated, locale, copy_by_locale=self.copies
+                ))
+                self.assertNotIn("apps.apple.com", updated)
+
+    def test_wrong_locale_updates_only_its_managed_paragraph(self):
+        source = "<main><p>Product remains.</p></main>"
+        english = disclosures.ensure_landing_disclosure(
+            source, "en-US", copy_by_locale=self.copies
+        )
+        bengali = disclosures.ensure_landing_disclosure(
+            english, "bn-BD", copy_by_locale=self.copies
+        )
+        self.assertEqual(english.replace(self.copies["en-US"], self.copies["bn-BD"]), bengali)
+        self.assertEqual(1, bengali.count(disclosures.PUBLISHER_MARKER))
+
+    def test_ambiguous_missing_hidden_or_duplicate_markers_fail_closed(self):
+        paragraph = (
+            f'<p class="publisher-disclosure" {disclosures.PUBLISHER_MARKER}>'
+            "<small>Wrong locale.</small></p>"
+        )
+        invalid = [
+            "<body>No main.</body>",
+            "<main>Unclosed",
+            "<main/>",
+            "<main></main><main></main>",
+            "<main hidden></main>",
+            '<div style="display: none"><main></main></div>',
+            f"<main>{paragraph}{paragraph}</main>",
+            f"{paragraph}<main></main>",
+            f'<main>{paragraph.replace("<p ", "<p hidden ")}</main>',
+            f'<main>{paragraph.replace("<small>", "<small hidden>")}</main>',
+            f'<main>{paragraph.replace("</p>", "")}</main>',
+            f'<main>{paragraph.replace("publisher-disclosure", "other", 1)}</main>',
+        ]
+        for source in invalid:
+            with self.subTest(source=source), self.assertRaises(ValueError):
+                disclosures.ensure_landing_disclosure(
+                    source, "en-US", copy_by_locale=self.copies
+                )
+        with self.assertRaises(ValueError):
+            disclosures.ensure_landing_disclosure(
+                "<main></main>", "xx", copy_by_locale=self.copies
+            )
+
+    def test_builder_preserves_bn_content_without_purchase_actions(self):
+        import build_pages_i18n as builder
+
+        with tempfile.TemporaryDirectory() as directory, patch.object(
+            builder, "PAGES", directory
+        ), patch.object(builder, "load_landing_disclosures", side_effect=AssertionError):
+            for locale in ("en-US", "bn-BD"):
+                path = Path(builder.build_one(
+                    "caldaily", locale, disclosures.OFFICIAL_LOCALES,
+                    copy_by_locale=self.copies,
+                ))
+                content = path.read_text(encoding="utf-8")
+                self.assertEqual(1, content.count(disclosures.PUBLISHER_MARKER))
+                self.assertIn(html.escape(self.copies[locale], quote=False), content)
+                if locale == "bn-BD":
+                    self.assertNotIn("apps.apple.com", content)
+                    self.assertNotIn("InstallAction", content)
+                    self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", content)
 
 
 if __name__ == "__main__":

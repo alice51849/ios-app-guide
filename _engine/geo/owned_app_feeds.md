@@ -48,6 +48,17 @@ Lumi Math Pro 的完整課程 persona 另以 `answer_owner=lumimathpro` 固定
 
 ## 同代與不 churn
 
+- App landing builder 與精準 migration 共用
+  `gen_publisher_disclosures.ensure_landing_disclosure`。每次 generation 先以
+  `load_landing_disclosures` 凍結既有 catalog 的 exact50 母語聲明，拒絕缺語、
+  英文 fallback、換行與重複 marker；只在唯一可見 `<main>` 內輸出一次。
+  揭露是開發者身分，不是購買 CTA，bn-BD 的內容頁同樣保留揭露。
+  Feed source digest 包含此 renderer，不得僅更新 manifest checksum。
+- 已有 root 英文頁依既定 en-US policy 綁定有證據的 `/us/` 商店；
+  精準 replay 前逐 App／locale 區分可售、已知 N/A 與 UNKNOWN。
+  UNKNOWN 不建立新 CTA、不冒充 N/A，也不得以 US／countryless fallback
+  修補。QR、mobile、share 與 InstallAction 必須沿用同一終局 URL，
+  subset replay 不刪除其他頁的 QR 資產，也不新增 HTML 頁面。
 - 正常 `portfolio_app_catalog_api.py` CLI 在 catalog 後生成 owned feeds。
   `--refresh-catalog` 也呼叫同一正常 catalog builder，無測試捷徑、fixture 覆蓋或網路 mutation。
 - 逐語 gate 驗 native script／跨 script、母語 source 與 catalog 的 name／summary 精確一致、

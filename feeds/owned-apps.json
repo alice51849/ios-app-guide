@@ -2194,7 +2194,7 @@
       "record_count": 47
     }
   },
-  "generation_digest": "51dcb0d5e8cb116cb98531ed4f0b4afb8146302d22b70ab6e5f5a0ced9ee9504",
+  "generation_digest": "896fad4e470106bcc0aec67b513b303f67222d7dce423712c670697de980b329",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2211,9 +2211,10 @@
     "source_files": {
       "../social/videogen/registry.py": "bd5d5863fe0798a4dc8ce10b050059c0604acaa0d9e98ccc5c25d84979ae0a23",
       "app_store_storefronts.py": "218e4c15034023bdc0c1481fed4d74d5f88e51380b761efca955e8a8810026d0",
-      "build_pages_i18n.py": "79144eca2cc05ea723ab8d6e967bff88ae8adbbaed7adc213ba09e6cc5feccc6",
+      "build_pages_i18n.py": "0db0fbb325656758ce622a055c5e64cfea4d3cfcb4690cbbaade1e04671386bd",
       "deployment_generation.py": "9b7220f693d072928e17b59975333e299c8891905a4088037e6da19cf591d554",
       "external_app_locales.py": "931182b43719e712ca3573f9b2ce22fb60cce34acc23909c5b63660624737f35",
+      "gen_publisher_disclosures.py": "a004b645115dec91c4e8ec79b55f25d2919b3f3cfbe2b65dd3ecdad69b6e8393",
       "gen_sitemap_lastmod.py": "814c3b9f06a398f6441542e3116da83a3a7b2ac1667bf7a899ffabd8352e669d",
       "indexnow_submit.py": "8450a4b40b7d420c99dcb51ade0e6643c7bd867d550bdaf72087a6a4d9dec258",
       "live_app_manifest.json": "092c2f0d636438f44b25fe1fca44619fd5640e518430f07ba3ec6a8aa11403e6",
@@ -2224,7 +2225,7 @@
       "notify_rsscloud.py": "38a644424c666ca9aaf10b9b6dffdb9800829fa6adc8cb3295522c5adc8b599c",
       "notify_websub.py": "1b0abe01f176d0b3ed56be3f12616ddac395dc38abd497e923718e7c925735f6",
       "official_locales.py": "576457e2c5b19b9b6e78f644397b27e177f3b195ce7ecc3ac83ef3a39b8d498a",
-      "owned_app_feeds.py": "10a679c6fec08db3b0fedba8beb903485349e62fefe11f7694bb4b611c2628ce",
+      "owned_app_feeds.py": "85ca7e19c85395accd2dfb9c422d47ec1ddb9d9a2067058444a7c96a59a301a7",
       "owned_feed_delivery.py": "621d8ad56bade69dc183a77d9a20561e2b1cd51bba3b920b9201a86f7304dae9",
       "owned_feed_locale_gate.py": "5a6474d0af445110da41074c48f06b99464fa1c5d53bc21f4602ef1dff3c65d7",
       "owned_feed_public_capture.py": "14fa3142d58097b5f2e548b075131ecc7d7280c82494b01adcb271a0fa4d57c6",

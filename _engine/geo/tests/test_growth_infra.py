@@ -2659,7 +2659,7 @@ class GeneratorTests(unittest.TestCase):
                 generated_source,
             )
             self.assertIn("defer", generated_source)
-            self.assertIn("white-space:nowrap", gen_mobile_store_ctas.SCRIPT)
+            self.assertIn("white-space:normal", gen_mobile_store_ctas.SCRIPT)
             self.assertNotIn(
                 "text-overflow:ellipsis", gen_mobile_store_ctas.SCRIPT
             )
@@ -2669,7 +2669,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("overflow-x:auto", gen_mobile_store_ctas.SCRIPT)
             self.assertNotIn("scrollbar", gen_mobile_store_ctas.SCRIPT)
             self.assertIn(
-                ".mobile-store-cta__label{margin-inline:auto}",
+                ".mobile-store-cta__label{margin-inline:auto;",
                 gen_mobile_store_ctas.SCRIPT,
             )
             self.assertIn("min-height:48px", gen_mobile_store_ctas.SCRIPT)
@@ -2853,7 +2853,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn("display:none", source)
             self.assertIn(
-                "white-space: nowrap", gen_app_store_qr_ctas.CSS
+                "white-space: normal", gen_app_store_qr_ctas.CSS
             )
             self.assertNotIn(
                 "text-overflow: ellipsis", gen_app_store_qr_ctas.CSS
@@ -3794,8 +3794,9 @@ class GeneratorTests(unittest.TestCase):
                 "margin-inline",
                 "padding-inline",
                 "text-align: center",
-                "white-space: nowrap",
-                "text-overflow: ellipsis",
+                "white-space: normal",
+                "text-overflow: clip",
+                "overflow-wrap: anywhere",
                 "unicode-bidi: plaintext",
                 ":focus-visible",
                 "@media screen and (prefers-color-scheme: dark)",
@@ -3805,7 +3806,7 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn(feature, css)
             print_css = css.split("@media print", 1)[1]
             self.assertIn(
-                'main p > a[href^="https://apps.apple.com/app/id"]:visited',
+                'main p > a[href^="https://apps.apple.com/"][href*="/app/"]:visited',
                 print_css,
             )
             self.assertNotIn(".iag-app-preview__link", css)
@@ -23133,7 +23134,7 @@ class GeneratorTests(unittest.TestCase):
                 localized.index(gen_app_decision_cards.CARD_START),
             )
             self.assertIn(
-                "white-space: nowrap",
+                "white-space: normal",
                 gen_app_decision_cards.STYLESHEET,
             )
             self.assertNotIn(
@@ -26025,7 +26026,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertNotIn("hourstag-share.jpg", hub)
         self.assertNotIn("hourstag-icon.jpg", hub)
-        self.assertIn("white-space:nowrap", hub)
+        self.assertIn("white-space:normal", hub)
         self.assertNotIn('"price"', hub)
         self.assertEqual(
             len(OFFICIAL_LOCALES) + 1,

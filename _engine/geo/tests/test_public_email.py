@@ -2,6 +2,7 @@
 
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
 import re
 import sys
@@ -16,7 +17,7 @@ import build_pages_i18n as guides
 import app_install_decision_routes as decisions
 import deployment_generation as generation
 
-PAGES = GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"
+PAGES = Path(os.environ.get("GEO_GUIDE_ROOT", GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"))
 FOUR = (
     "en-US/savetag.html", "en-US/shotinbox.html", "en-US/zipbox.html",
     "apps/zipbox/decision/l/en-US/index.html",

@@ -1126,11 +1126,13 @@ def _page_record(
     app: dict[str, Any],
     availability: dict[str, frozenset[str]],
     localized_disclosure: str,
+    *,
+    prefer_app_page: bool = False,
 ) -> dict[str, Any]:
     source_query = str(PERSONAS[key][0]["query"])
     page_slug = slugify(source_query)
     path = pages / locale / "answers" / f"{page_slug}.html"
-    answer_page = path.is_file() and not market.is_unavailable(locale)
+    answer_page = path.is_file() and not prefer_app_page and not market.is_unavailable(locale)
     if not answer_page:
         path = pages / locale / f"{key}.html"
     source = path.read_text(encoding="utf-8")

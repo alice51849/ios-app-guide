@@ -5,6 +5,10 @@
 重用 data/<app>_full.json 內已策展的 50 語文案(name/subtitle/description/
 keywords/promotionalText),不重譯。每頁含 Schema.org SoftwareApplication + FAQPage
 的 JSON-LD(LLM 最愛的結構化來源),並用 hreflang 互連各語版本。
+外宣校正由 external_app_locales / cee_locale_copy 提供，絕不回寫 metadata。
+CEE 的離線 inventory 與候選可用 cee_content_candidates.py 產生；不發文或部署。
+Western/Romance 外宣修正獨立於 metadata；western_romance_candidates.py
+以相同 generators 產未發布候選，不修改既有頁面、社群或 ASC。
 
 輸出:
     geo/pages/<locale>/<key>.html   每 app 每語一頁
@@ -48,7 +52,11 @@ from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALES,
     EXTERNAL_APP_LOCALE_OVERRIDES,
 )
+from cee_locale_copy import reviewed_values as cee_reviewed_values  # noqa: E402
+from hebrew_bidi import html_text  # noqa: E402
 from external_app_identity import external_identity  # noqa: E402
+import western_romance_copy  # noqa: E402
+import cjk_geo_p002  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
@@ -1137,6 +1145,8 @@ ATPL = {
 
 
 def get_ui(locale):
+    if locale == "pt-PT":
+        return western_romance_copy.PT_PT_UI
     b = base_lang(locale)
     return UI.get(b, UI["en"])
 
@@ -1157,6 +1167,8 @@ def json_for_script(value, **kwargs):
 
 
 def pricing_text_for(key, locale):
+    if locale == "pt-PT" and key in western_romance_copy.PT_PT_COPY:
+        return western_romance_copy.purchase_note(locale, APPS[key]["purchase_model"])
     profile = pricing_profile(key)
     if APPS[key].get("purchase_model") == "paid_upfront":
         return PAID_UPFRONT_PRICING.get(
@@ -1488,6 +1500,13 @@ def external_localized_values(key, locale, localizations=None):
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
     values = external_identity(key, locale, values)
+    values = cee_reviewed_values(key, locale, values)
+    values = western_romance_copy.external_values(key, locale, values, APPS[key])
+    values = cjk_geo_p002.external_values(
+        key, locale, values,
+        app_id=APPSTORE.get(key),
+        purchase_model=APPS[key].get("purchase_model"),
+    )
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1538,8 +1557,8 @@ def external_localized_values(key, locale, localizations=None):
 
 def build_faq(locale, name, sub, kws):
     b = base_lang(locale)
-    qtpl = QTPL.get(b)
-    atpl = ATPL.get(b)
+    qtpl = western_romance_copy.PT_PT_QUESTIONS if locale == "pt-PT" else QTPL.get(b)
+    atpl = western_romance_copy.PT_PT_ANSWER if locale == "pt-PT" else ATPL.get(b)
     if not qtpl or not atpl:
         return []
     subc = sub.rstrip(".。!! ")
@@ -1606,6 +1625,12 @@ def build_one(key, locale, all_locales):
     if market_availability.is_unavailable(locale):
         url = None
     ui = get_ui(locale)
+
+    def t(value):
+        if (key, locale) in cjk_geo_p002.TARGET_CELLS:
+            return cjk_geo_p002.html_text(key, locale, value)
+        return html_text(value, locale)
+
     # 沒有市場連結時渲染母語 availability 說明。刻意**不用** disabled 按鈕:
     # 一個點不動的下載鈕只會讓人以為壞掉,一句說清楚原因的話才是誠實的。
     if url is None:
@@ -1616,7 +1641,7 @@ def build_one(key, locale, all_locales):
     else:
         store_block = (
             f'<p><a href="{html.escape(url)}">'
-            f'{html.escape(ui["get"].format(name=name))}</a></p>'
+            f'{t(ui["get"].format(name=name))}</a></p>'
         )
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
@@ -1678,15 +1703,15 @@ def build_one(key, locale, all_locales):
         for s in schemas
     )
 
-    feat_li = "\n".join(f"    <li>{e(f)}</li>" for f in feats) or "    <li>iOS app</li>"
+    feat_li = "\n".join(f"    <li>{t(f)}</li>" for f in feats) or "    <li>iOS app</li>"
     faq_html = "\n".join(
         f'    <div itemscope itemtype="https://schema.org/Question">\n'
-        f'      <h3 itemprop="name">{e(q)}</h3>\n'
+        f'      <h3 itemprop="name">{t(q)}</h3>\n'
         f'      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">\n'
-        f'        <p itemprop="text">{e(ans)}</p>\n      </div>\n    </div>'
+        f'        <p itemprop="text">{t(ans)}</p>\n      </div>\n    </div>'
         for q, ans in faq)
-    faq_section = (f'\n  <h2>{e(ui["faq"])}</h2>\n{faq_html}\n' if faq else "")
-    desc_html = "".join(f"  <p>{e(line)}</p>\n" for line in desc.split("\n") if line.strip())
+    faq_section = (f'\n  <h2>{t(ui["faq"])}</h2>\n{faq_html}\n' if faq else "")
+    desc_html = "".join(f"  <p>{t(line)}</p>\n" for line in desc.split("\n") if line.strip())
 
     dir_attr = ' dir="rtl"' if is_rtl else ""
     page = f"""<!DOCTYPE html>
@@ -1698,27 +1723,27 @@ def build_one(key, locale, all_locales):
 <meta name="description" content="{e(short_desc)}">
 <meta name="keywords" content="{e(', '.join(meta_keywords))}">
 <link rel="canonical" href="{SITE}/{locale}/{key}.html">
-{feed_discovery_links()}
+{feed_discovery_links(locale)}
 {hreflang_block(key, all_locales)}
 {ld}{searched_as_css}
 </head>
 <body>
 <main>
-  <h1>{e(name)}</h1>
-  <p><strong>{e(sub)}</strong></p>
+  <h1>{t(name)}</h1>
+  <p><strong>{t(sub)}</strong></p>
 
-  <h2>{e(ui["what"].format(name=name))}</h2>
-  <p>{e(ui["is"].format(name=name))} {e(sub)}</p>
+  <h2>{t(ui["what"].format(name=name))}</h2>
+  <p>{t(ui["is"].format(name=name))} {t(sub)}</p>
 {desc_html}
-  <h2>{e(ui["feat"])}</h2>
+  <h2>{t(ui["feat"])}</h2>
   <ul>
 {feat_li}
   </ul>{searched_as}
 
-  <h2>{e(ui["price"])}</h2>
-  <p>{e(pricing_text)}</p>
+  <h2>{t(ui["price"])}</h2>
+  <p>{t(pricing_text)}</p>
 {faq_section}
-  <h2>{e(ui["dl"])}</h2>
+  <h2>{t(ui["dl"])}</h2>
   {store_block}
 </main>
 </body>
@@ -2179,7 +2204,7 @@ def build_locale_index(locale, keys, locales):
 <title>{e(ui["dir_dir"])} | iOS</title>
 <meta name="description" content="{e(ui["dir_lead"])}">
 <link rel="canonical" href="{SITE}/{locale}/index.html">
-{feed_discovery_links()}
+{feed_discovery_links(locale)}
 {directory_hreflang_block(locales)}
 <script type="application/ld+json" data-iag="localized-install-directory">{schema}</script>
 {DIRECTORY_STYLE}

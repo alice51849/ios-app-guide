@@ -44,7 +44,9 @@ import gen_mobile_app_identity  # noqa: E402
 import gen_store_attribution  # noqa: E402
 import queries  # noqa: E402
 import rank_opportunity_pages  # noqa: E402
+from western_bopomofo_titles import resource_title  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
+from outreach_bidi import isolate_document
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 HUBS = os.path.join(PAGES, "hubs")
@@ -339,20 +341,32 @@ STYLE = (":root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e
          "background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.6}a{color:#3840d0}"
          ".wrap{width:min(1040px,100% - 32px);margin:auto}.top{padding:16px 0;border-bottom:1px solid var(--line);"
          "background:rgba(255,255,255,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:3}.nav{display:flex;gap:16px}"
-         ".nav{overflow-x:auto}.nav a{text-decoration:none;font-weight:700;white-space:nowrap}.hero{padding:40px 0 16px}"
-         "h1{font-size:clamp(1.8rem,5vw,3rem);margin:.2em 0}h1,h2,p.lead{white-space:nowrap;overflow-x:auto}"
+         ".nav{flex-wrap:wrap;min-inline-size:0}.nav a{display:inline-block;min-block-size:44px;text-decoration:none;font-weight:700;white-space:normal;overflow-wrap:anywhere}.hero{padding:40px 0 16px}"
+         "h1{font-size:clamp(1.8rem,5vw,3rem);margin:.2em 0}h1,h2,p.lead{white-space:normal;overflow-wrap:anywhere;overflow:visible}"
          "h2{font-size:1.3rem;margin:1.4em 0 .5em}p.lead{font-size:1.12rem;color:var(--muted);max-width:100%}"
          ".card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 8px 30px rgba(31,34,78,.06)}"
-         ".ll a{display:block;padding:9px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600;"
-         "white-space:nowrap;overflow-x:auto}"
+         ".ll a{display:block;min-block-size:44px;padding:9px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600;"
+         "white-space:normal;overflow-wrap:anywhere;overflow:visible}"
          ".cta{display:inline-block;border-radius:999px;background:linear-gradient(135deg,#5b5ff2,#8b5cf6);color:#fff!important;"
-         "text-decoration:none;font-weight:800;padding:12px 20px;margin-top:8px;white-space:nowrap;max-width:100%;overflow-x:auto}"
+         "text-decoration:none;font-weight:800;min-block-size:44px;padding:12px 20px;margin-top:8px;white-space:normal;max-width:100%;overflow-wrap:anywhere;overflow:visible}"
          ".hub-preview{display:block;margin:0 0 24px;border-radius:24px;overflow:hidden;box-shadow:0 18px 50px rgba(31,34,78,.14)}"
          ".hub-preview__image{display:block;width:100%;height:auto}"
-         ".pill{display:inline-block;border:1px solid var(--line);white-space:nowrap;"
+         ".pill{display:inline-block;max-inline-size:100%;min-block-size:44px;border:1px solid var(--line);white-space:normal;overflow-wrap:anywhere;"
          "background:#fff;border-radius:999px;padding:6px 12px;margin:3px;font-weight:700;text-decoration:none}"
          ".footer{margin-top:36px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;"
-         "white-space:nowrap;overflow-x:auto}")
+         "white-space:normal;overflow-wrap:anywhere;overflow:visible}")
+
+
+def regenerate_layout(source):
+    """Use the normal hub stylesheet without rebuilding editorial content."""
+    if 'name="iag-hub-app"' not in source:
+        return source
+    styles = list(re.finditer(r"<style>(.*?)</style>", source, re.S))
+    matches = [match for match in styles if ".hub-preview__image" in match[1] and ".ll a{" in match[1]]
+    if len(matches) != 1:
+        raise ValueError("Hub layout must have exactly one owned stylesheet")
+    match = matches[0]
+    return source[:match.start(1)] + STYLE + source[match.end(1):]
 
 
 def hub_url(key, locale=None):
@@ -438,7 +452,8 @@ def localized_answer_links(key, locale, required=True):
         rel = f"{locale}/answers/{slug}.html"
         answer = _owned_answer_link(key, rel, question)
         if answer is not None:
-            answers.append(answer)
+            url, title = answer
+            answers.append((url, resource_title(key, locale, slug, title)))
     unique = list(dict(answers).items())
     if required and not unique:
         raise ValueError(f"No localized answers for {key} in {locale}")
@@ -446,6 +461,8 @@ def localized_answer_links(key, locale, required=True):
 
 
 def _ui_text(locale, key):
+    if locale == "pt-PT" and key == "no_tracking":
+        return "Sem rastreio"
     value = UI.get(locale, {}).get(key)
     if not isinstance(value, str) or not value.strip():
         raise ValueError(f"Missing localized hub UI text: {locale}.{key}")
@@ -651,7 +668,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
 </body></html>'''
-    return market_surface_policy.enforce_html(document, locale)
+    return isolate_document(market_surface_policy.enforce_html(document, locale))
 
 
 def build_hub(key):

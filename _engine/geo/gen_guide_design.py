@@ -20,6 +20,7 @@ from appstore_live import live_app_keys  # noqa: E402
 import gen_smart_app_banners  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
+from outreach_bidi import isolate_document  # noqa: E402
 
 
 PAGES = HERE / "pages"
@@ -55,6 +56,20 @@ STYLESHEET = """\
   --guide-border: rgba(15, 23, 42, 0.13);
   --guide-focus: #155eef;
   --guide-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+}
+
+html:lang(th),
+html:lang(ar),
+html:lang(ur),
+html:lang(vi) {
+  --guide-heading-leading: 1.5;
+  --guide-cta-leading: 1.65;
+  --guide-card-title-leading: 1.5;
+  --guide-card-copy-leading: 1.7;
+}
+
+:is(html:lang(th), html:lang(ar), html:lang(ur), html:lang(vi)) :is(h1, h2, h3) {
+  letter-spacing: normal;
 }
 
 *,
@@ -106,7 +121,7 @@ main {
   color: var(--guide-heading);
   font-weight: 780;
   letter-spacing: -0.025em;
-  line-height: 1.14;
+  line-height: var(--guide-heading-leading, 1.14);
   overflow-wrap: anywhere;
   text-wrap: balance;
 }
@@ -188,49 +203,65 @@ a:visited {
   color: var(--guide-accent-strong);
 }
 
+main a.button,
+main a.cta {
+  display: inline-block;
+  min-inline-size: 44px;
+  max-inline-size: 100%;
+  min-block-size: 44px;
+  padding: 0.65rem 0.5rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: var(--guide-cta-leading, 1.4);
+}
+
 :where(a, button, [tabindex]):focus-visible {
   outline: 3px solid var(--guide-focus);
   outline-offset: 4px;
 }
 
-main p > a[href^="https://apps.apple.com/app/id"] {
-  display: inline-flex;
+main p > a[href^="https://apps.apple.com/"][href*="/app/"] {
+  display: inline-block;
+  min-inline-size: 0;
   min-block-size: 3rem;
   max-inline-size: 100%;
   align-items: center;
   justify-content: center;
   padding-block: 0.78rem;
   padding-inline: clamp(1rem, 4vw, 1.5rem);
-  overflow: hidden;
+  overflow: visible;
+  overflow-wrap: anywhere;
   color: #fff;
   background: linear-gradient(135deg, #1849a9, #6938c6);
   border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: 999px;
   box-shadow: 0 12px 28px rgba(55, 48, 163, 0.24);
   font-weight: 760;
-  line-height: 1.2;
+  line-height: var(--guide-cta-leading, 1.2);
   text-align: center;
   text-decoration: none;
-  text-overflow: ellipsis;
+  text-overflow: clip;
   unicode-bidi: isolate;
   vertical-align: middle;
-  white-space: nowrap;
+  white-space: normal;
   transition:
     transform 160ms ease,
     box-shadow 160ms ease,
     filter 160ms ease;
 }
 
-main p > a[href^="https://apps.apple.com/app/id"]:visited {
+main p > a[href^="https://apps.apple.com/"][href*="/app/"]:visited {
   color: #fff;
 }
 
-main p > a[href^="https://apps.apple.com/app/id"] > strong {
+main p > a[href^="https://apps.apple.com/"][href*="/app/"] > strong {
   display: block;
   min-inline-size: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-inline-size: 100%;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  white-space: normal;
 }
 
 main > div[itemscope][itemtype="https://schema.org/Question"] {
@@ -339,6 +370,9 @@ main > p:last-child {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+  main p > a[href^="https://apps.apple.com/"][href*="/app/"] {
+    transform: none;
+  }
 }
 
 @media (forced-colors: active) {
@@ -368,8 +402,8 @@ main > p:last-child {
     box-shadow: none;
   }
 
-  main p > a[href^="https://apps.apple.com/app/id"],
-  main p > a[href^="https://apps.apple.com/app/id"]:visited {
+  main p > a[href^="https://apps.apple.com/"][href*="/app/"],
+  main p > a[href^="https://apps.apple.com/"][href*="/app/"]:visited {
     min-block-size: 0;
     padding-block: 0.25rem;
     color: #000;
@@ -436,7 +470,7 @@ def ensure_design(path: Path, href: str) -> bool:
         + "\n"
         + cleaned[insert_index:].lstrip()
     )
-    return _write_if_changed(path, updated, previous=source)
+    return _write_if_changed(path, isolate_document(updated), previous=source)
 
 
 def remove_design(path: Path) -> bool:

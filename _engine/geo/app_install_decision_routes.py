@@ -27,6 +27,7 @@ from official_locales import OFFICIAL_LOCALES
 import portfolio_app_finder
 import publisher_intent_catalog
 from site_config import PUBLIC_SITE  # noqa: E402
+from outreach_bidi import isolate_document
 
 
 HERE = Path(__file__).resolve().parent
@@ -1106,6 +1107,9 @@ main {{
   padding: 2rem 0;
 }}
 .card {{
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 1.75rem;
@@ -1122,10 +1126,13 @@ main {{
   font-weight: 850;
   letter-spacing: .05em;
   color: var(--brand);
-  white-space: nowrap;
-  overflow-x: auto;
+  min-inline-size: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }}
+.eyebrow span {{ min-inline-size: 0; }}
 .icon {{
+  flex-shrink: 0;
   inline-size: 2.6rem;
   block-size: 2.6rem;
   border-radius: 22%;
@@ -1134,7 +1141,7 @@ main {{
 h1 {{
   margin: .65rem 0 0;
   font-size: clamp(1.9rem, 5vw, 3.8rem);
-  line-height: 1.02;
+  line-height: 1.15;
   letter-spacing: -.04em;
 }}
 .lead {{
@@ -1148,7 +1155,8 @@ h1 {{
   gap: .55rem;
 }}
 .fact {{
-  display: inline-flex;
+  display: inline-block;
+  min-inline-size: 0;
   max-inline-size: 100%;
   padding: .42rem .72rem;
   border-radius: 999px;
@@ -1156,26 +1164,43 @@ h1 {{
   background: rgba(79,70,229,.08);
   font-size: .82rem;
   font-weight: 760;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }}
 .actions {{
   display: flex;
+  min-inline-size: 0;
   flex-wrap: wrap;
   gap: .8rem;
 }}
 .button {{
-  display: inline-flex;
+  display: inline-block;
+  min-inline-size: 0;
+  max-inline-size: 100%;
   align-items: center;
   justify-content: center;
   min-height: 3rem;
-  padding: 0 .95rem;
+  padding: .65rem .95rem;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(255,255,255,.72);
   color: var(--ink);
   font-weight: 820;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  line-height: 1.4;
+}}
+:is(html:lang(th), html:lang(ar), html:lang(ur)) h1 {{
+  line-height: 1.5;
+  letter-spacing: normal;
+}}
+:is(html:lang(th), html:lang(ar), html:lang(ur)) .button {{
+  line-height: 1.65;
+}}
+:is(html:lang(th), html:lang(ar), html:lang(ur)) :is(.lead, .fact, .eyebrow, footer) {{
+  line-height: 1.7;
 }}
 .button.primary {{
   color: #fff;
@@ -1227,7 +1252,27 @@ footer {{
 <footer class="card">{html.escape(str(record["publisher_disclosure"]))}</footer>
 </main></body></html>
 """)
-    return market_surface_policy.enforce_html(document, locale)
+    return isolate_document(market_surface_policy.enforce_html(document, locale))
+
+
+def regenerate_layout(source):
+    """Take only the CSS from the normal renderer; keep the saved copy intact."""
+    record_match = re.search(r'<script\b[^>]*id="decision-record"[^>]*>(.*?)</script>', source, re.S)
+    if record_match is None:
+        return source
+    record = json.loads(record_match[1])
+    modified = re.search(r'<meta name="content-modified" content="([^"]+)"', source)
+    if modified is None:
+        raise ValueError("Decision layout source has no content timestamp")
+    rendered = render_page(record, modified[1], str(record["app_name"]))
+    owned = lambda document: [
+        match for match in re.finditer(r"<style>(.*?)</style>", document, re.S)
+        if ".button.primary" in match[1] and ".eyebrow" in match[1]
+    ]
+    before, after = owned(source), owned(rendered)
+    if len(before) != 1 or len(after) != 1:
+        raise ValueError("Decision layout must have exactly one owned stylesheet")
+    return source[:before[0].start(1)] + after[0][1] + source[before[0].end(1):]
 
 
 def _markdown_text(value: Any) -> str:

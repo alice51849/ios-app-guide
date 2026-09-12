@@ -11,7 +11,7 @@ import tempfile
 import unittest
 
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
+REPO_ROOT = Path(os.environ.get("GEO_GUIDE_ROOT", Path(__file__).resolve().parents[3]))
 HELPER = REPO_ROOT / ".github" / "scripts" / "remote-first-publish.sh"
 
 

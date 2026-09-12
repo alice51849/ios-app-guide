@@ -21,6 +21,7 @@ from app_store_storefronts import (
     validated_app_store_url,
 )
 import gen_mobile_store_ctas
+from outreach_bidi import isolate_document
 import gen_smart_app_banners
 from appstore_live import live_app_keys
 from official_locales import OFFICIAL_LOCALES
@@ -148,6 +149,7 @@ CSS = """\
   .app-store-qr-card__copy {
     display: grid;
     min-inline-size: 0;
+    max-inline-size: 100%;
     gap: 0.55rem;
   }
 
@@ -155,9 +157,10 @@ CSS = """\
   .app-store-qr-card__url {
     display: block;
     max-inline-size: 100%;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    white-space: nowrap;
+    min-inline-size: 0;
+    overflow: visible;
+    overflow-wrap: anywhere;
+    white-space: normal;
     text-overflow: clip;
   }
 
@@ -165,14 +168,16 @@ CSS = """\
     color: #172033;
     font-size: clamp(1rem, 1.6vw, 1.28rem);
     font-weight: 850;
-    line-height: 1.2;
+    line-height: var(--guide-cta-leading, 1.2);
   }
 
   .app-store-qr-card__url {
     color: #667085;
     font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
     font-size: clamp(0.72rem, 1.2vw, 0.88rem);
-    line-height: 1;
+    line-height: 1.3;
+    direction: ltr;
+    unicode-bidi: isolate;
   }
 
   .app-store-qr-card__url::before {
@@ -411,7 +416,7 @@ def render_qr_card(
         + "\n"
         + with_style[main_index:].lstrip()
     )
-    return updated
+    return isolate_document(updated)
 
 
 def ensure_qr_card(

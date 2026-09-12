@@ -591,13 +591,19 @@ def validate_legacy_routes(
 
 
 def _hreflang(route: dict[str, Any], site: str) -> str:
+    locales = tuple(route.get("locales", OFFICIAL_LOCALES))
+    if (
+        not locales or len(locales) != len(set(locales))
+        or set(locales) - set(OFFICIAL_LOCALES) or "en-US" not in locales
+    ):
+        raise ValueError("Alternative hreflang must match real generated locales")
     links = [
         (
             f'<link rel="alternate" hreflang="{html.escape(locale)}" '
             f'href="{html.escape(site)}/{html.escape(locale)}/alternatives/'
             f'{html.escape(route["slug"])}.html">'
         )
-        for locale in OFFICIAL_LOCALES
+        for locale in locales
     ]
     links.append(
         f'<link rel="alternate" hreflang="x-default" '
@@ -631,6 +637,11 @@ def render_page(
     site: str,
 ) -> str:
     available = market.validate_record(record)
+    owner = (
+        "lumi-western-workflow-alternatives-v1"
+        if route.get("comparison_kind") == "workflow"
+        else OWNER
+    )
     canonical = f"{site}/{locale}/alternatives/{route['slug']}.html"
     title = (
         f"{route['competitor_name']} · {alternatives_label}: "
@@ -675,7 +686,7 @@ def render_page(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="{OWNER}">
+<meta name="generator" content="{owner}">
 <meta name="lumi-query-family" content="{html.escape(route["query_family"])}">
 <meta name="lumi-privacy-source" content="verified-ios-app-finder-catalog">
 <title>{html.escape(title)}</title>
@@ -697,7 +708,7 @@ h1{{font-size:clamp(2rem,6vw,3.75rem);line-height:1.08;margin:.25em 0 .55em}}
 </style>
 </head>
 <body>
-<main {OWNER_MARKER}
+<main data-alternatives-owner="{owner}"
  data-route-id="{html.escape(route["route_id"])}"
  data-app-key="{html.escape(route["app_key"])}"
  data-app-store-id="{html.escape(route["app_store_id"])}"

@@ -31,6 +31,7 @@ import gen_store_attribution  # noqa: E402
 from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
+from outreach_bidi import isolate_document, transparent_bidi  # noqa: E402
 
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
@@ -148,14 +149,17 @@ STYLESHEET = """\
 .iag-decision-card__fact,
 .iag-decision-card__cta {
   min-inline-size: 0;
-  white-space: nowrap;
+  max-inline-size: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
 }
 
 .iag-decision-card__title {
   color: #fff;
   font-size: clamp(1.2rem, 1rem + 1vw, 1.85rem);
   font-weight: 850;
-  line-height: 1.1;
+  line-height: var(--guide-card-title-leading, 1.1);
 }
 
 .iag-decision-card__promise,
@@ -163,7 +167,7 @@ STYLESHEET = """\
   margin: 0;
   color: rgba(248, 250, 252, 0.84);
   font-size: clamp(0.68rem, 0.62rem + 0.7vw, 1rem);
-  line-height: 1.35;
+  line-height: var(--guide-card-copy-leading, 1.35);
 }
 
 .iag-decision-card__facts {
@@ -179,6 +183,7 @@ STYLESHEET = """\
   inline-size: fit-content;
   max-inline-size: 100%;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.35rem;
   padding: 0.32rem 0.58rem;
   color: #f5f3ff;
@@ -195,7 +200,7 @@ STYLESHEET = """\
 }
 
 .iag-decision-card__fact {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   padding: 0.28rem 0.55rem;
   color: #eef2ff;
   background: rgba(255, 255, 255, 0.1);
@@ -206,7 +211,7 @@ STYLESHEET = """\
 }
 
 .iag-decision-card__cta {
-  display: inline-flex;
+  display: inline-block;
   inline-size: fit-content;
   max-inline-size: 100%;
   min-block-size: 2.75rem;
@@ -218,8 +223,9 @@ STYLESHEET = """\
   border-radius: 999px;
   box-shadow: 0 9px 24px rgba(0, 0, 0, 0.2);
   font-weight: 820;
-  line-height: 1.2;
+  line-height: var(--guide-cta-leading, 1.2);
   text-decoration: none;
+  text-align: center;
 }
 
 .iag-decision-card__cta:visited {
@@ -255,8 +261,10 @@ STYLESHEET = """\
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .iag-decision-card__cta {
+  .iag-decision-card__cta,
+  .iag-decision-card__cta:hover {
     transition: none;
+    transform: none;
   }
 }
 
@@ -303,7 +311,7 @@ def page_campaign(path: Path, pages: Path) -> str:
 
 
 def _plain_text(fragment: str) -> str:
-    return " ".join(html.unescape(TAG_RE.sub(" ", fragment)).split())
+    return " ".join(html.unescape(TAG_RE.sub(" ", transparent_bidi(fragment))).split())
 
 
 def _campaign_url(
@@ -602,7 +610,7 @@ def ensure_card(
     locale = "en-US" if locale == "en" else locale
     if market.is_unavailable(locale):
         updated = market_surface_policy.enforce_html(source, locale, app_id=app_id)
-        return _write_if_changed(path, updated, previous=source)
+        return _write_if_changed(path, isolate_document(updated), previous=source)
     if locale not in OFFICIAL_LOCALE_SET:
         raise ValueError(f"Unsupported decision-card locale: {locale}")
     content = _page_content(

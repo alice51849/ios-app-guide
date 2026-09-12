@@ -3,6 +3,7 @@
 import gzip
 import io
 import copy
+import os
 import struct
 from pathlib import Path
 import sys
@@ -24,7 +25,7 @@ def png(color="white"):
 
 class ImageTransportEvidenceTests(unittest.TestCase):
     def test_cloud_observation_artifact_is_visible_and_never_deploys(self):
-        guide = GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"
+        guide = Path(os.environ.get("GEO_GUIDE_ROOT", GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"))
         workflow = (guide / ".github/workflows/result-image-transport-audit.yml").read_text()
         self.assertIn("--output-dir image-transport-observations", workflow)
         self.assertIn("path: image-transport-observations", workflow)

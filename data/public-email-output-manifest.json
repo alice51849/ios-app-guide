@@ -1,6 +1,6 @@
 {
-  "html_checked": 66390,
-  "manifest_sha256": "718f4a145ed00d99f1c5bc3724ec4beba4613ef847d34af294b01dcb2384baa7",
+  "html_checked": 68392,
+  "manifest_sha256": "05e6f40e3997bff498ff384ba495839c79e5d35d70bb753e6fc566a1efaaa71f",
   "policy": "source-email-off-v1",
   "protected_html": {
     "apps/aibriefpack/privacy.html": {
@@ -34,22 +34,22 @@
       "source_sha256": "9a44f49cc94b3750d080628b88eb9d69c2cd1f646d904c578898dabaafd58e74"
     },
     "apps/countdaysnow/l/bn-BD/index.html": {
-      "canonical_sha256": "0eed7c852c682de838cc6411b4025d0f39acb523fefc98a08d7dfa56fb52c4f1",
+      "canonical_sha256": "acff4618a3e72cca01b58d5c11c4e08e9fb15fee6b26731f037d9b9ec1d1e4b0",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "69331d3aab07027e8ef707068638e0ab215d2d99ed305cc761b1fd62258064e4"
+      "source_sha256": "fdb9ff776d5d071a7b01d08ef487fa7300cf8fb0fa81ffc8f0679b606e778c45"
     },
     "apps/countdaysnow/l/bn-BD/privacy.html": {
-      "canonical_sha256": "1d143e917d87a62fa772ed93a05f869152999b25261c8af4afc879e5da3791df",
+      "canonical_sha256": "430befe82fe35e5549fdd68df7f4379c8657dbe723959911589169517ff3313b",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "8c91d38994ba76c0890f5afe6b06b11214bef9b6792ffda3ee34c8f10da79f2d"
+      "source_sha256": "438e1caedb088cded95fec16b6fe21899be437dddcd5d1403c09d5b2397237f0"
     },
     "apps/countdaysnow/l/bn-BD/support.html": {
-      "canonical_sha256": "7298b169a4cc8b0622929aaf2b016a3c433290cdac1f2fefbd776d5c4e7b88b5",
+      "canonical_sha256": "cf032225f1269d545b60faa7e741721a525a7ec8b39ca67885b2d560b96f406a",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "9065daf48e892e496779e381442a34a2f5af6c10282e63ba3de5ae38f4335288"
+      "source_sha256": "0356893c81dcf5330e05d86668200f9a79bc620ba863fa4ea69595af04668ccd"
     },
     "apps/countdaysnow/l/ca/index.html": {
       "canonical_sha256": "54cec9e21f5b644f30f4f1280f81975f496628e21a38e15286ca52f8d7a3b503",
@@ -934,10 +934,10 @@
       "source_sha256": "b01d8d2fe2e020397b901d65dd79a947e482b8d01a81cac27a279851fbe59156"
     },
     "apps/gmoneylite/l/bn-BD/support.html": {
-      "canonical_sha256": "1afb6754b88cf9b3e586df90a6908a00cf888a822f675aaa8d8927da530271ab",
+      "canonical_sha256": "6e8c22ab3332bd915e2c7730ad6e546770aa621d82de6da18cbc51a8a4875fbf",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "cf7e2429959c9ef6054168d5e6ea245c194904728e442cd21aa989140bc6d8c3"
+      "source_sha256": "93242f841bfd43d1c3f99a1ec12376a6d9d0d066b0e421d2deb49f88e57d8400"
     },
     "apps/gmoneylite/l/ca/support.html": {
       "canonical_sha256": "6f9809c4497682f12958871d087c734b71d6a6216057ca7cf008daa011ab276e",
@@ -1240,16 +1240,16 @@
       "source_sha256": "99d96ea504b28dce310c01a570526c4dafabfcf65c7a397972965c619aeb9d28"
     },
     "apps/hourstag/l/bn-BD/privacy.html": {
-      "canonical_sha256": "010103e361c0a7dbbd053b3af40b81e9f95894fc92192004ba1431c959b30509",
+      "canonical_sha256": "6fafef3ee297cade7fd4a40fda1bc682cf68287ed958dde703d0f4b54263901e",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "569e80f66aefdcd06562ebcee5782f996cce6fbffac071ed07d5482880ba89a4"
+      "source_sha256": "3f74858ea927427478c40e6f008dde23c0b0856a4a79602af7d03df89b3b49d8"
     },
     "apps/hourstag/l/bn-BD/support.html": {
-      "canonical_sha256": "4f48e7d6e1216a0e477bcd05fff5306c8320e9df11e5624875c21f0e22836697",
+      "canonical_sha256": "7c5649928805b7b903f06e7d5696473efb62d33ed209d540f05e22fc337e0019",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "814e03ff72e5ab2eaa52593a726a55d4a39f4a80cb00fd1264470e39e7216ff0"
+      "source_sha256": "cc4e35bfbff5a261a17b80b602a5abcc57ccc18e6029947269b505f40c59c11e"
     },
     "apps/hourstag/l/ca/privacy.html": {
       "canonical_sha256": "eade9cac273262e34204d4f8185510fc0c623f955edeb9e6540fd8acdb169afa",
@@ -1834,10 +1834,10 @@
       "source_sha256": "f9e6843e2d2d811f638c6907f01dc0aced46ea5dc46e78cef5b8878fa2e767f6"
     },
     "apps/hourstaglite/l/bn-BD/support.html": {
-      "canonical_sha256": "8066032d94b02ba02880612e7a3ed8bca6e1a3d5e30b90f40a4284f4958ff905",
+      "canonical_sha256": "e04d2d4809a2de1fec662d3c2981c4a3e75cab86bae05b5c39c83436b6d016b2",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "13e2151c90329e337684b8babb1562b56f6c287a718b9b34beed93fc00603618"
+      "source_sha256": "7b99eeb73abd1b5d5e67af61b519e418f67aa30f042f6d504b4341ca71ea91d6"
     },
     "apps/hourstaglite/l/ca/support.html": {
       "canonical_sha256": "a6c9896710021890c0080129487327d66d90ee4b04e57b44ab629b2e48d253df",
@@ -2134,10 +2134,10 @@
       "source_sha256": "64f41b0463547ba064453a737ee36b737d5ea4a4ec72477c3c38f1a4eb279604"
     },
     "apps/maskmyfile/l/bn-BD/support.html": {
-      "canonical_sha256": "f32d00d16ec9ff717b7d91264e40c3844fa7b186bfe6c9181b8ed6682842ce84",
+      "canonical_sha256": "982f5203b376a6ee40c02d90e107d3091692e9177a0bfc017d05239734a3c530",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "47cc32d226142d57398ef5215b149dfd6fc4eff10b4dee2ffe710b6e536acb30"
+      "source_sha256": "5b93f291e1b3f8da04ebc58a155cc881187c9cf36a6ef6b0b8f99c7c9688f050"
     },
     "apps/maskmyfile/l/ca/support.html": {
       "canonical_sha256": "8f0a26c793ae1395e2dae04f89811630aaf89e1b103e89e5bdc1918a887ddc32",
@@ -2428,556 +2428,556 @@
       "source_sha256": "1f22f285544a978d362ac7f67d14a08f0a054fea03de086bd516b2c4d14210ca"
     },
     "apps/savetag/decision/l/ar-SA/index.html": {
-      "canonical_sha256": "5dddf1411deb74e014d82056cab71920c2ada7b57cb59d9626b3a0a3c97ddcb5",
+      "canonical_sha256": "e862179c93395bd0ccab504d7ede813fa665e6d900a1e18307fcc8a86dc4eada",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0355d725bec1d3573c9dfd94e73969fa61794ac8dcbfadb0495bda2d241bcec5"
+      "source_sha256": "ad3d8d4f131113d26f6e5482be46c66e14639c5a23fdf4e7b6414eb8db8fd945"
     },
     "apps/savetag/decision/l/bn-BD/index.html": {
-      "canonical_sha256": "175eff3658feaaafb9c27e0dba2b33ebade26084f1f2e1377709ef532bcdd032",
+      "canonical_sha256": "f697553e4b826449768d46b4849c53d64a2675bf5bcd0f58995864f5cdd13023",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ccb0f8b8423350a306835e9aadf1d4754c323797ef2635b4fd909e82b51092e0"
+      "source_sha256": "02cfb2d17c018a3fe7ea7a09994f8a5c3ed09f4f94fe97c5d98c215dff3145f5"
     },
     "apps/savetag/decision/l/ca/index.html": {
-      "canonical_sha256": "322323a93f0602bde9dee9e16c7fbb37a6c2025e6a00071c1f8f5abbb6c27996",
+      "canonical_sha256": "2ea81b1b0b4312925e38ba55f9c52d59d3342890c25f2e253abf4d527b02dc05",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0405a94839bad6387e1ce352a5379d944cf79f06af4f14c2a679c37134fac4af"
+      "source_sha256": "a881cb85f36d4c1b30288eaa749aa2c4989ead1228977a6ea15650fd8590a581"
     },
     "apps/savetag/decision/l/cs/index.html": {
-      "canonical_sha256": "e44aed45bb1f54093e3b68712bc95588f9a88557650c9c55ecb82e3eeb7d4cf0",
+      "canonical_sha256": "b7468724db9239d0a7e59023f060815213cf94dddc50a9dba8de895f5fa1fea4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "fac09833dc14d94ffb6554f3c1bb167dbb55b64542e600ea812fa09d47fb19bc"
+      "source_sha256": "871e27418763b9c3ff981424409162848c1204fafb24c97852e6055873fb056c"
     },
     "apps/savetag/decision/l/da/index.html": {
-      "canonical_sha256": "65c825f3b474f6078874b8fd12cbeb07c28bda1041fc365168e135627101c4b3",
+      "canonical_sha256": "18230b360974cdf5556216f8c0b4764176b617c58471cd57d1c5be891fa2f44b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "3e88ca28f7195eefe87830641e7b98ab3757e1d51352a955b213faf5f9205fce"
+      "source_sha256": "0985a0fbf4bcbc655ef8dbf271f1af49feca3320682f33e3efc258ef26c2c57e"
     },
     "apps/savetag/decision/l/de-DE/index.html": {
-      "canonical_sha256": "958921e8b84a45fe7063023d8677ed2eaf2da628e408ce4d0892f302e89e0dd0",
+      "canonical_sha256": "c2cb5a4f4d534ba636b68fcc3180cb3028f55b20def6afab2c8de143dc9668eb",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "fe459ad386ecdcebb779dabd990a05fa20de84c16230fd30aa12e7661b0ec1b2"
+      "source_sha256": "68b0ee620e97d9ad568c5f09a49e4073a4b39c23767195767dc07132dd3c0fe7"
     },
     "apps/savetag/decision/l/el/index.html": {
-      "canonical_sha256": "0d486c32a546e7cbda3e47dba704a2ece307052b501a9bc00ceb26354bdd1bc7",
+      "canonical_sha256": "c4e7e243e3e45ea0e77fbfa2f947ab887eb56ebaaea322680d20d9f21521b8a0",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "3a99f5269b246a0170c450175e1e7f49f29a33a7e8a1923f4de4cd106ba77e41"
+      "source_sha256": "20b5bdf45bdb84ee3bce1db60163b8f3bd9df74b495b1e42d29cbf25b5e6efeb"
     },
     "apps/savetag/decision/l/es-ES/index.html": {
-      "canonical_sha256": "9294eacd9b23770f667f8ec40912c9fac83c582d9e1d3cad1866ca41079a8b00",
+      "canonical_sha256": "2b7eb445a3e82d07f0072f56871628fbf881ee403844302acd4629010fc1d85e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d5841ed347d999b1e2e1cb4cca9410c655cf04b2dcaa90b1045f34d5108c6d46"
+      "source_sha256": "f5497928e5ed01a302b23e206a3578426697afa04e2b72df01170eac395dce74"
     },
     "apps/savetag/decision/l/es-MX/index.html": {
-      "canonical_sha256": "5274513a7d27ec884fc4d0a5fcd05656f8a0aadad5ee05ba191497ad203b612a",
+      "canonical_sha256": "0ccd3a0ee1e38f2ccc17057bb5d4989a13b7e85ffd8913aea1d8f85b43975720",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "37114c11173470a65b67d5a712dbd792a466ced994cdc0a550e38077063be41f"
+      "source_sha256": "1f05b919a2984a85add152ab42b93408fda2ee69d178644a573108bde912dff5"
     },
     "apps/savetag/decision/l/fi/index.html": {
-      "canonical_sha256": "db49156ddace9180d075c8309eb486c0ff7c5186f4be5b9604002e89c54f8c4a",
+      "canonical_sha256": "7edf4fa2861ca88f9d3fcd36153510f5ea095999181e495caf2fbf015e4145c2",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "b82f7af84e8e8aa0632487c0a73d52126ab945019bd903a0979a89c049520900"
+      "source_sha256": "85117d592c68c82585c79388d8659aa99e2081095196c157eba30dfc2e83b254"
     },
     "apps/savetag/decision/l/fr-CA/index.html": {
-      "canonical_sha256": "d0996dde9e203de7573bd596a9692919d5e8874ab83f3f01b7c07b2c68d1cf73",
+      "canonical_sha256": "7d94caf06d389f7bb9188dfe6be15a6408d973c95ed6a7051666aeacdab5327b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "6f7a396dcc85ba9926ce5ac791fbb30ed18bb83715c1f5fb166fca0f354ce589"
+      "source_sha256": "cf9c3d61ec276ca6b21c720e1636847af0f105a7f5b22b2dc20c7c4529effe11"
     },
     "apps/savetag/decision/l/fr-FR/index.html": {
-      "canonical_sha256": "276a7cee617ba812780170944370cd58656bc673f98b8439c465381164c524f8",
+      "canonical_sha256": "27b9cd20892257d73843c8e7750f093b2da6f3686175a962fe5d64726f5384ee",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "f984e3fefc4e391e1dcf0d97ae4d59babaa4b01724242c0ba7465b38f22d3ae6"
+      "source_sha256": "f66529021d05b0804dde05541c29a85a75117978bdfb49d43c7a6144cd4cd5d7"
     },
     "apps/savetag/decision/l/gu-IN/index.html": {
-      "canonical_sha256": "2eb856f1031165f39884e86aa7d9dfcd8cad6a04f40733cc7723db0dbed409c7",
+      "canonical_sha256": "1f0b2b56b4f55a865ef4467c1ffca35abc98a638f9cc8a9191e370ea2a54c2b3",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "18662e9054162a86d6fab483a12cfb45bb667964b1e8d09fb30f5fb383897025"
+      "source_sha256": "1d0c2f4bee338337f71fd68777176677f293f055600b0ccd9678a5c5e31d93c4"
     },
     "apps/savetag/decision/l/he/index.html": {
-      "canonical_sha256": "ed992317fb04b4e43af159360d754e7a1f9faf30d0862b03b96e0989a8cb3bfe",
+      "canonical_sha256": "6c5dafda2da24b1be14c7d9acc380d0e193a6431b5e887725a86cff4fcb6f881",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "55feac79058b5671e4bdda9d298ef7720b040e6b8e9701b79f0fa022be8558f6"
+      "source_sha256": "a839affc1855b864d297e759e7584f702cbc454e1d3dc5bea2e053a5574a257a"
     },
     "apps/savetag/decision/l/hi/index.html": {
-      "canonical_sha256": "4b9f88c65878a25f74df8c185d02519940cd723e39717a6763671ddd2d30b985",
+      "canonical_sha256": "9ffed960a3d9bf7b8ca854ac868bded65996534626d0777f1c473b6d5bd32eaf",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "871818afb4bad35443c9ef8ce7a8b302ffa8ebb1d8e334822445a9dae79dd0d3"
+      "source_sha256": "704ff1ab0e9abb6919233a36d15586c48ab39eebc46fe925982ba7064bfb5a60"
     },
     "apps/savetag/decision/l/hr/index.html": {
-      "canonical_sha256": "345eef9c80b3e7b1ee0c017c50f5fa9c24145c5f7cef2366a2fee05961be50be",
+      "canonical_sha256": "8e78cc9c64beb3135ac6e7b110f651a8af3becbea7f8a8afb8c682b46b6576d4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "bed2a3fe7b8e352efb230bd53aaef326983dca8e2fb1303039d8eefb451f7914"
+      "source_sha256": "2a2684ec15b63d1893bf0741075c2cdcdd66b365a42553d4f3dac28549721ef6"
     },
     "apps/savetag/decision/l/hu/index.html": {
-      "canonical_sha256": "e5ce64ebfd0f561536d748f8687e8ed05b9e3b5be5a6fe8eb8be614fed395ba8",
+      "canonical_sha256": "e703dcc16dc62cde4f40bb1cc592ca4fac2648169efe0332f15740e515d44238",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "898c1f14d9b56088c3f9d889489a8529ba5a80f6fbfd7562048efda6d7b3f3fa"
+      "source_sha256": "363d0375501ea7b5f5ae0aaceef2add11123a1f28665b33ada1a2c2649adb398"
     },
     "apps/savetag/decision/l/id/index.html": {
-      "canonical_sha256": "ee31f03d90edf3dad311dae2e4a9fecf177ce54346eea25e26b1d80a5c4c4bad",
+      "canonical_sha256": "0f051ae5bc0cedf1c409c308f291e07f521459bc9a1487758b64fd0e927dac0a",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "881ec5f82db3427df5658df66f8fb33f454689402f4ec4e0a4c13e8b82b50a0c"
+      "source_sha256": "3c858cfddd588a729a97ceb04dff32da41ef6d7654d2a64286046285221055ac"
     },
     "apps/savetag/decision/l/it/index.html": {
-      "canonical_sha256": "58788c9d363c9fa4dea2a6d354cad3d4090e2901c3ed0b532bb6346fc5b577fa",
+      "canonical_sha256": "d8d568941b1aa352502153a92fb312f2c9c488b5c141b6e159f08f1f5b8c255e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a2823002f6728b505e268909bc06b0d222bd5933f922120de7947f27c2d31f19"
+      "source_sha256": "1de85decbf8bd653c0e09f0f89879ebe93c85ec4a0a9954c7bba8b3db523eabd"
     },
     "apps/savetag/decision/l/ja/index.html": {
-      "canonical_sha256": "74cb5adae7ef2e28aae17271ff06d07794dc213ecae12b4f6080ebbe5248324d",
+      "canonical_sha256": "348dd7df742a260ca9696a8ceb0c7bf818a21190e0886591136d943c52e7e085",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "f070ecee407fc720571513c17b87e83a071f155346b3a81b685b861817589339"
+      "source_sha256": "f4cb309611e6b17d2a49690b871ebbf0507885e52fe0e99db2a942c8443b9fb2"
     },
     "apps/savetag/decision/l/kn-IN/index.html": {
-      "canonical_sha256": "7432743ca4e8a34807bd66606a996c49ae3cf0180572790bedb9ecdc1f60c4ce",
+      "canonical_sha256": "4c0f199e76a76fb320de32b11695b8eee2a95c6b4220699488aed8cdc88e85ae",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "6e4b3e89b3691a4fe419840cb0d29b7e68a16e91b17a43ac6d4d624059f132fc"
+      "source_sha256": "845e372dcfca1e4e220b9b3e68137ebf3daaca8627c5022654d08d49857a754d"
     },
     "apps/savetag/decision/l/ko/index.html": {
-      "canonical_sha256": "28d8e5ae6378fd62df42a1100f16d0328126bdfe64acd9c0fcd64f1965263664",
+      "canonical_sha256": "8209074b84d5d8f0caa330a52529cfd44698b9f453ff8ba1f96bdb0a4ecb1783",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c4d73118bfd5f3ea89890e3c378facc0905f7aca9d6988a88327bd58adec6d70"
+      "source_sha256": "7c983f0093536a6b8a4787ddcfaa9c72105ba8804f29ef97366f90984ea6805b"
     },
     "apps/savetag/decision/l/ml-IN/index.html": {
-      "canonical_sha256": "c952c08313cc313b4941d8823f5ca908afe0f3665245057511344bf2213ab455",
+      "canonical_sha256": "109e05d23341e95a5f754784db68fb62d649ddfdaea7522d3091dc298417014c",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "33fe70a8c1535b0c9ba204a255de4d233195f3008d43e0a636d90f579f3547db"
+      "source_sha256": "1a6265435b98d9e702eaa7255518a76d5b66beff4c13ad7bcf735470a6292ed9"
     },
     "apps/savetag/decision/l/mr-IN/index.html": {
-      "canonical_sha256": "8efbb7866ef986956253eefa35b05e127dfd169d4d7dfb0a7098d743fb4e58ec",
+      "canonical_sha256": "718ae94676518bc213d11ac68fa4b548f4614244ed2c94590cade50d0b1fae27",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d89a00dc65e49d3b3fc0628b9607cd03a7c59d8a583390a1b7339a948302af49"
+      "source_sha256": "1a4f2d46b78be8350e2b4e439ed4e3bc9a7a073638929d740f0d591dd5b17288"
     },
     "apps/savetag/decision/l/ms/index.html": {
-      "canonical_sha256": "5c8aae12e34b716c82f312d27d6b29d6787d8d3a16204adb69bc5f9c934b5a1b",
+      "canonical_sha256": "594cdd190700d9e9a1f291eb92130e5673f967780afbeab988efe6f609f2d4e7",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "55314c45e45ffe33fb8f219ea59854f7062f5246dbb7bf9bd0ae36d621ccb526"
+      "source_sha256": "b0d7f5cc72400de1335a912e196ec971a4c3dcb99a67d8d79ed74564fb1597bd"
     },
     "apps/savetag/decision/l/nl-NL/index.html": {
-      "canonical_sha256": "e1fd0d0682cf4f07d5e0b9b3cb39d6a5e77b0bd581197638eedf9034bdc204e1",
+      "canonical_sha256": "f2d40193e06a7bc6257cd13d16d68334f785db43b9658dc66a2a40f555afef72",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "5c6b737520c162779b97ee3fdfa4fe0816012fd8a34f77f817fa70f723405850"
+      "source_sha256": "097b3c8dd0859c37da10798dfa76aa709877631cc532caf310adc11cc9503542"
     },
     "apps/savetag/decision/l/no/index.html": {
-      "canonical_sha256": "62166c6edae1f8d5dddc251080adeaa2ae8aaabc9622037652c134181d42d6ca",
+      "canonical_sha256": "d7bc3e5e6b6ae3081f9fd91021dfb657d26fb26cea19b61fbaedae6cdc8162fc",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d2e6c68101ea6004ace19292d6a9dddb971c8a81cdc4d6f0993c71bf045f4570"
+      "source_sha256": "db63473fbb09972e1790c9c7b4cc74ff6fd3950bbdf1f300691c5fb744b6e417"
     },
     "apps/savetag/decision/l/or-IN/index.html": {
-      "canonical_sha256": "12791294239a54df63a456030b22d0baf1767142c1f0b32bd975e89e1c7a3e76",
+      "canonical_sha256": "9483a57ed55283fc8aa91033986f01330b3236bfabf8ef71ed2f42dafc12ed13",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a774775ef151248ee75acb3a2eae27318924cedecda1d75c19d7342d6c6f4dba"
+      "source_sha256": "b68a5a55364493ff0ec2c93953c2f00e663bdf73b9816720986b141ad61c4596"
     },
     "apps/savetag/decision/l/pa-IN/index.html": {
-      "canonical_sha256": "32983573094723b655a92739c808938f13ca986cefab407dee128c75ef0e5e70",
+      "canonical_sha256": "4f17b876212347b4197a7e783160c5ac26ec53f056ccf3008468ba283d448ca1",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ea3d9a8a61c50010f02426034227e129594344cefcff3e26d9b846ea30daeb56"
+      "source_sha256": "9169d4e4816211f1eaaf953f2fef9f1dfd7400bf9342670c3bf727819b1bbcf5"
     },
     "apps/savetag/decision/l/pl/index.html": {
-      "canonical_sha256": "a798ecd3cd2ec42f0274999e0925df02b1cb27ef392f1534784bd2e49dd9a99c",
+      "canonical_sha256": "495cbf0fd5204588e46785fdcbfef6738f3c9c94f41dadedc125429125dcff43",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "e66b6d800c50ac7b445ea6a0fd0d99c86f433f4f5c450f67cfb5e09f048524c6"
+      "source_sha256": "f6de51c878a7ab7d437cd389ee2b30b0f304794a519c4588ebbd79d4b17a511e"
     },
     "apps/savetag/decision/l/pt-BR/index.html": {
-      "canonical_sha256": "f3b65fd700a129c7db4f41edf4bcf045e2b57326d7dd71f205e5978b49272945",
+      "canonical_sha256": "ed6964bd6515f535b8b06e225a52317dc405ce1bf2ceb7419e26ad463ed66756",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a402d0d6fd28aaa75de3cabe9c4fdfd3b77a035b39a7c0168253473bc3a0df09"
+      "source_sha256": "159665258614b6221f11fc709379ac764a7a72f72030c3283497393793c48413"
     },
     "apps/savetag/decision/l/pt-PT/index.html": {
-      "canonical_sha256": "495fbf6828c8242866efa788aa85e04f518ad18cf102afa6896e02dce2963ece",
+      "canonical_sha256": "ce188603d4bfbfddf9cd3af58ff592c84d9901f6f985f359893649472c51be37",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "dd26b9989530b368bd1a32c6ac28240cd434e85685b8973f61d8aeb4cd55d319"
+      "source_sha256": "bff2f2da8096ad823cc8699e7df879049aa5780301e5f5aff0cad901a58176d4"
     },
     "apps/savetag/decision/l/ro/index.html": {
-      "canonical_sha256": "96a21ba5e2b3f5277d20b531b1b73b231e032419e6a9ce17978072a77ea95449",
+      "canonical_sha256": "f0857735f1a0df25863852df3fa195abee0bcecfac4489b152910dd7320cfa04",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "fa40cd89ad4564e2e455f2b6ef4f8749c602fd51008ab4ec658987798b114bde"
+      "source_sha256": "c9878895a678e34a4f9a516c35da5eab52fa2cdc05e5e8125f5801f0ed4c0d2c"
     },
     "apps/savetag/decision/l/ru/index.html": {
-      "canonical_sha256": "9c3d3d840f553ae846c8a37a192539da0c3251dafd8ec28bd8720dd0dcc4c971",
+      "canonical_sha256": "2b0d11e476c5d6c1be008bc5d750e8824329f0090c8461207e0815f8c873f012",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "da6b8a4d38706c8f375c6974454edd8d11134568f643d2bc43ed8dd3908688a2"
+      "source_sha256": "26c3f051dbb9895db655b1e0e946592f0749a405ec2e2a3351af4cd2d5bd9276"
     },
     "apps/savetag/decision/l/sk/index.html": {
-      "canonical_sha256": "f4f600721a1bee6176363ea0b0e9d6b1763ebd41046b7323b0933449614106fd",
+      "canonical_sha256": "f645546f02bbbbb32202e5536f37137108e004a7ba52cb1e39c3bd42c2419209",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a630e7f38ceed6057f1979446b1de7fd43c0961b9bb8d716408e8fa4330dd606"
+      "source_sha256": "a416883aa97619e9e084be1077c8cb682f535e3b0440c1bcc0d014a22f78f090"
     },
     "apps/savetag/decision/l/sl-SI/index.html": {
-      "canonical_sha256": "994021d1332abb04f13c635a283ba30f4c4e5fc7e1575dec1fa9da14cc193d99",
+      "canonical_sha256": "be15d765a0aa0ee41b94af461e62d2b377405ca0346cfcc09114774eef9dcbe3",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "e481fa5b98fff4b378cd183f29fb9dfeffae5c169e8efd036935cc8f3c239610"
+      "source_sha256": "c1c691e277b439070d75f1fc4cb442feb63f00c82fc860a477704c1def1206ed"
     },
     "apps/savetag/decision/l/sv/index.html": {
-      "canonical_sha256": "a472fe1bcbd49eca8ce2f161b581b186310de58eef2f48b9a2bc4d0ed2190fd3",
+      "canonical_sha256": "a6259d3041b0cc0ed3f78022550b7f6647cfcc54b32c4b71a6b6ad2fb4609dc0",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "15060f8c6724e9c862745b923102c368cc6f4bef54a69a3c96e660aad4f637b5"
+      "source_sha256": "f8e295d202a418dcb244f9663e1cb04d32ada77e0baa5aa72264d4c3fc6415c6"
     },
     "apps/savetag/decision/l/ta-IN/index.html": {
-      "canonical_sha256": "b4c393d72086179757202f95338a3d12a740e816646b11305d818c955ac8d703",
+      "canonical_sha256": "d8ae0dc322f2015a01c329ac0b3bb665c7fdfd1ca5fd541677e969749de17938",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "2baed3919d35f103098ae487910520f27bc7f8964e4cdac644b24f88793b0d57"
+      "source_sha256": "0892cb72c819f5464aacf8b6292d4e2a1d8cb662e779944eb499719f48b43ca9"
     },
     "apps/savetag/decision/l/te-IN/index.html": {
-      "canonical_sha256": "f1a961e575d1b27887f946c0be0830fc3c98ff1141546384361295443d1f6af4",
+      "canonical_sha256": "d6c78192748066943efd81b3bbd7efe7df68fb318aa7a02dd1d56e8e3453fc1d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "6187265c5bc829c7cf9c3bb5a03b39323d65cdf8115f5895c105869ed1613a45"
+      "source_sha256": "969ccffc18e53d6a8bdb640f635ee1f32061b68867a224cace4704477d68cacb"
     },
     "apps/savetag/decision/l/th/index.html": {
-      "canonical_sha256": "5e244ac3433b74e95ce32fe3dc6d560506b27ea11101f38924b10824b2e43567",
+      "canonical_sha256": "7e869843338124002be259dedc042c31c2a6d055ce84ee92db8a62bb45e4a266",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "005350ebba52c21294a74acda470ebd85cfd26ebdd72b5912b03c26a5e5aa596"
+      "source_sha256": "fe92e84d55b100bc3b3740b27985b20ecd6a31e3df7422eaae768d752bd18259"
     },
     "apps/savetag/decision/l/tr/index.html": {
-      "canonical_sha256": "959d17b23ed9268942a05304906f86bbf3d7bfd1073438a37c838f5c168a2993",
+      "canonical_sha256": "22fcc48b95a5e212520cbb2e901494164e23be34768ec88e9641a3fdbb62e871",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0c1bbbcae92fefcb594cb31ae2334bab73f35c8bf566c94ac4cfe668aa157f09"
+      "source_sha256": "b1a78e081d317480b86c53bb1db4eb515c4efbdfd7dabe9d4d2c95d98c37436d"
     },
     "apps/savetag/decision/l/uk/index.html": {
-      "canonical_sha256": "a59e861a1e2d1df526d35723b241d1a22f4a05ce39192f7b03b5581e591ef364",
+      "canonical_sha256": "e37e502e1e7e16ac04e2b13434a068629117705c45e1bd9e51db01b221486a75",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0048f9724aa61aad0ee1cd64d262bd8bab503b699b0113575da63e45e752046e"
+      "source_sha256": "905888d5d441f586771b258dad49fc5565bd476dd7dd7a507d10d5c083ab353a"
     },
     "apps/savetag/decision/l/ur-PK/index.html": {
-      "canonical_sha256": "84602fae577280eaea57baed9ea8cca4042b38b6482e5d02d3df5450b9bd9cd1",
+      "canonical_sha256": "c288dc269b6159b3148aa2b7a0d1fa51be31bccd65a3d59ec4b7a6265ecbf282",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "8781a733527ed72d812c23fd6d598ee14235c844dc73e70e659057f19c060f3d"
+      "source_sha256": "8ec4564faf696f03fd719fc28d9196e9114415778e93bebf902de5fbd89dc61c"
     },
     "apps/savetag/decision/l/vi/index.html": {
-      "canonical_sha256": "ac12a1ae81ac979f8ab5897d9f27ffb940490a39eadc16bcdf4320cabc3291a1",
+      "canonical_sha256": "cad39655362374bf4527ed51e2bd59de7f8c5d34afd3e80f4680784a6ccfb2e1",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "7b690470c85900e2307762ae7fa583b4982a81f3426e34bf4039e971294d064b"
+      "source_sha256": "0d2ef02943e3158ef0f241221c4804b54e941322003fb3a96357b6a24da6cb67"
     },
     "apps/savetag/decision/l/zh-Hans/index.html": {
-      "canonical_sha256": "0b89a1258f92c6e09510a3cc912c81176b32e09f4f75a198f576c3ce84ee07ad",
+      "canonical_sha256": "45561305d00c6ac5fc56909e52cf947e1ec94240e873e304ca79d419c2da7a31",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "e64239092ac5979a8f7d54d76901e587fe778c21a96356cf5784fa66f50e1863"
+      "source_sha256": "611d59816ea37b2e721d596de4f90fc529accca304493e026b8555539d2997be"
     },
     "apps/savetag/decision/l/zh-Hant/index.html": {
-      "canonical_sha256": "2db2c162558347cd4b44268ea5daa6317bb537190af3893f4ad082d6dca53597",
+      "canonical_sha256": "5f084fb3977f970cd594460afb96a5ce66be17267953b5823c2d9c582ae663c1",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "1340dd9125a494e3b98956491b7592660095b2158823198cb8f5ba99e7b51d2d"
+      "source_sha256": "96aa0113302582cb1211d148f991cbbde503494e7450ab3cbe0ea31144eb4a6b"
     },
     "apps/shotinbox/decision/l/ar-SA/index.html": {
-      "canonical_sha256": "71a412c62ca55fb353b71b2abee324bb851ed4a432d1d54ccda98b09dd30e46b",
+      "canonical_sha256": "c283e6de735ee9d501fc4e9049db7a5f6d7570ce78fc60b48fc47f79d1b520e4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "41e458d22e320964c5d68f19eb2ca765e2ee1915500b4b8bd65ee676a29172d6"
+      "source_sha256": "da7e6802baa41414959816100426a3df8c1994ceb5a60e5f5ac69ab39ad1ecb4"
     },
     "apps/shotinbox/decision/l/bn-BD/index.html": {
-      "canonical_sha256": "302624e8102f2a9b280fa8b212ffdf609050ae2d6565cac9b812d3dd74fa1cbd",
+      "canonical_sha256": "e6e7e31e0e334e204c5d6ed929bccedba3e3a69a17edc167fd8c199a61581d8b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "88bfaeedabdeeb778ba509e94edd8b2022bf72120b4f5c71b7467227c9a71cce"
+      "source_sha256": "5ea0c0e0fec2a71c615b32a3710a32b3da7db731055749c99c905edf8661f590"
     },
     "apps/shotinbox/decision/l/ca/index.html": {
-      "canonical_sha256": "d93c507f2dbf62f5dc3bdeff6196e9a5145ca1dc70b9bdd2ad0ffdfe92c36fb5",
+      "canonical_sha256": "7d7490ff5e740100b4aec11e7317d1b81b954684eacc4540dc62382ac8d5547b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "775cc1bd8f6c350d554e1fa80fe783d70f3f1a0e387ee2f1754566f1b2bd9224"
+      "source_sha256": "c5978ac6230796152288da5486271ac4ef6bccb38da4614ae27d0e8c5fb3159e"
     },
     "apps/shotinbox/decision/l/cs/index.html": {
-      "canonical_sha256": "7a5e94c9e9d920a4dae5caa3f2a43ce2eedd208762c1b6e6e909244a04dd73dc",
+      "canonical_sha256": "0c9f7c9947a927b4f6e9720d3ecea48c21d07e212a84090bc4470b6af3636f8e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "8b4dc9e14867c7d3711b4118e24e701fe0dbbea57ccae90553fd4c05f67922d9"
+      "source_sha256": "073188b03071976a0dc91081f0fb5133e3d7f4edd6073809ead69ec6c59e35a3"
     },
     "apps/shotinbox/decision/l/da/index.html": {
-      "canonical_sha256": "549df7a8a81bf490a10be8cca48bf54db0ed289aaf7c616602be120a6db84137",
+      "canonical_sha256": "1f4700b95d7561627df698d84d7dffe97f1a79fa525c60e9b3c678c2ecdb454c",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "2c9c1e196ea30bd2d3172c04c0ad5cf4dfe993fa514c76d69bb3d3230d10870f"
+      "source_sha256": "3d27a31a3731974db5900fd774b12120cc721654285a93d1ef784d4c664ac1e7"
     },
     "apps/shotinbox/decision/l/de-DE/index.html": {
-      "canonical_sha256": "7d48f78efc592d6cd2c60743a061d340abc3f5f2e75f3b1160084a3e02e02171",
+      "canonical_sha256": "9da0946b58924f37e9d535b2a3f9f600fddc250621f98cefb30effaf32e0d17b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d1e209b142918760052eb3714862e47e92bc61f7e07d0197467716a6c7288d75"
+      "source_sha256": "9faf244e48d75a98b806fbdfd2d2fb09bb9047fe55ae1666e7d3c8a93c82c162"
     },
     "apps/shotinbox/decision/l/el/index.html": {
-      "canonical_sha256": "0d7ba52f49287da77269f5f14a17fc38e152d94a715d46dbd6dec270ce1e788c",
+      "canonical_sha256": "e313394e8c0fabbc4c3527f7afe33699cfbf0b3d6b0b16f4e85fd5d29baf8013",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "325c646b6e7e2f319783947a11e899eb7d9908de4efb3b81c4b0e2342ca77e15"
+      "source_sha256": "08f496b78cc2120d60b7a5b3703de0e31a144fbcc514f2b23158439f6c623b79"
     },
     "apps/shotinbox/decision/l/es-ES/index.html": {
-      "canonical_sha256": "4bf3780c28a2b05a2f2b44a1516b1cf8fbb56603db6cbdbe0733d20ee49b1265",
+      "canonical_sha256": "12a5430ba0ce49b5a7948ad2887f31d487c04f22e916ce0b24f388064696829f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "95363809eca2d42d223989d41c1a43676faa6e9af9877e6ac4042d9033ee6b8c"
+      "source_sha256": "69c6d24d365338dc5248b80fe9e6e8e2cb2cbed4b20cc8e257d570f8f8b0d508"
     },
     "apps/shotinbox/decision/l/es-MX/index.html": {
-      "canonical_sha256": "8585ceb8d883b12fd6c35596c39f6d92a645f15ce41d09ffdc3a9549ef80816f",
+      "canonical_sha256": "d770d7b45ab1baa161399acc49dc7f07060673f4f07f6de436d3861c32efe29f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "35ca371476ca179e71748f37af86b33b846ab07df210f94076cb7bb28c30ad76"
+      "source_sha256": "3a80453f2e92fdf33d24da661dce12d08a6e8a5ec5f4c39daced221de4e26bc9"
     },
     "apps/shotinbox/decision/l/fi/index.html": {
-      "canonical_sha256": "03c85dac9d061acd061bf784154ac2450318fede25ae90351b9de4ac953b2bd7",
+      "canonical_sha256": "dc0500aada6dd4a7dcdd85c2d153f09be6777cc8929a85d1dc151b5267c8f0ee",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "7d084ada0b346055e691c75f3be94dee412630d123895f38e58f2c11185882e9"
+      "source_sha256": "19087d4469d48d152152dba861458f83d7f16ca4dc469a5ab5fe975902526a2b"
     },
     "apps/shotinbox/decision/l/fr-CA/index.html": {
-      "canonical_sha256": "35c3e89ff88dd66ec17a234080be7e70578189b652d60ee5466b065f2ef30787",
+      "canonical_sha256": "c6f3beb3e855ae07efe14d10891a21b4908dbd226602ca505267939061128ca3",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "28eb15e5b1977548c7e7e607faaef5cc7abf3453d96ed98a0cdc90189bdd303e"
+      "source_sha256": "2084e27c2948b00105d46cf88c218b50e23e258be4946fb639f5b59da92bb5e4"
     },
     "apps/shotinbox/decision/l/fr-FR/index.html": {
-      "canonical_sha256": "bc00427dace38b93bc552d9322cdb96c530e8bc8e542467079fadab07cc5a63a",
+      "canonical_sha256": "feb779f7294540bcd2e3a940f83f471bfe7922a2cff900280883683bcd03700e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d1f2d41a91e22a6ac54cf031e2925ee278e64123fec9b36a9f85cf361a3607f5"
+      "source_sha256": "f3d923970b56cb29879af6d16024eed0ac767ce2c43739171a8fdeb1eec95fc7"
     },
     "apps/shotinbox/decision/l/gu-IN/index.html": {
-      "canonical_sha256": "05ebf7abab8bc24b4b365490fb12b1ed61f0db3d7b23da812afe763a158ade6b",
+      "canonical_sha256": "85f0d7ab1a749919de010226c7f3cbaefb23f857fc1183fbc0220ed6dc7b599c",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "23ff46da96a72fb90be6f7c4816dad44454571b53c16326402e9ad270187d65c"
+      "source_sha256": "9935e6de5c63e279ee5720b01c67ec918769df034f7e09654f826f80024f3a10"
     },
     "apps/shotinbox/decision/l/he/index.html": {
-      "canonical_sha256": "3064d54fb4e18e72d31b7f2d0d07e5ac330c7e0dbf61ae9b6c9ecf9c8f387024",
+      "canonical_sha256": "8a4afbd4997c8ccd97677bc1a67b513d805109e0c9be6b2a817a5f0c89fef4e7",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "8842082497023ba88a09490fe9b22d0c599f887305e7813a32ddf6648d7c3587"
+      "source_sha256": "db239fb6f62115dac5caa0147f6b12544cad10350dfc68e39afaadc2ee4a8785"
     },
     "apps/shotinbox/decision/l/hi/index.html": {
-      "canonical_sha256": "1b16b51de21a13b86121152448fe65c996b2b96b3dc598b3f9ab35e75b6955a4",
+      "canonical_sha256": "a66a67ecb8ff6eeab376016d5d028ca41e23352689b8afd5b7138341a5e4b402",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c3663ed79e791bcced98138f7ea6643d24588ec4c70b8746a221c58a933b0a0f"
+      "source_sha256": "0d6939f14b83d3dd1b7a77dbecc62d9094702ed43dc4969f0022a3cf32996f32"
     },
     "apps/shotinbox/decision/l/hr/index.html": {
-      "canonical_sha256": "dc8baca888ebf5634e7730ff15f8060e2519a9f61a9b59a6155a3309eb8a887d",
+      "canonical_sha256": "af3c69fadcedf1857f05391f2856a5188dbe4b16ece57dd320ebc58d106c78dc",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "4e13079ef62d6f338cccd9153fc986f4456cd1bd12c7e13ce62bc02342540802"
+      "source_sha256": "a92c5c096f4e7f5d6b4fff904cca9614020e524325ca368e029154ed20aa1a2c"
     },
     "apps/shotinbox/decision/l/hu/index.html": {
-      "canonical_sha256": "e6e683fad812701fb1de5b58b6f0c3fd1e37383db2d5a5fce15e4383d64e375b",
+      "canonical_sha256": "86bfdccc1344a8c21d9e97463d395ef68e122efc1792f152b45606b74dbbc092",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "5ff59a96a200bed417581bbb2ebf24a4b0be7efd4421f49aa4b1afd180a300db"
+      "source_sha256": "65ccc47ab61d3ad87d89748443018719f4012b8828e6ab24d753e59d1d72f152"
     },
     "apps/shotinbox/decision/l/id/index.html": {
-      "canonical_sha256": "b96931f2d4d663034a6b7156807de0f6e5f4c4c72f0adb64dce2cd80dd513c9a",
+      "canonical_sha256": "f2762071cedca0c3859012936df3c577a36ed003aac47bdc884ad61805a73cbd",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "7a4373966354147b772a2bd21dc0681e2187510d98c425f1f5348eec81bc9194"
+      "source_sha256": "d317b4112eddea334f7c2ed0d55ea5f4146bcb71a81153729e3c686eaaaf49eb"
     },
     "apps/shotinbox/decision/l/it/index.html": {
-      "canonical_sha256": "99d03dd0f63a1db26d723676414f149886b0a7b49a3dfb1e4ab5d0b22b9dd014",
+      "canonical_sha256": "4722d82677f93ce3f63cec6bfc176d8d538510f97929fbc70ae541571a29c7a8",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c60594a3e21a548ac38f9a8be736140a8a9cc25654897f1cdb5ea8d5be7916ad"
+      "source_sha256": "e223e0a48e785e8d496276ac025466d469866b5104fdb863a816371ec629980a"
     },
     "apps/shotinbox/decision/l/ja/index.html": {
-      "canonical_sha256": "43a09da3862c8fc34eb1d6f5e7dba1ead52a7c4eb598c98eacc126880924c321",
+      "canonical_sha256": "248e5e0bd57af3cd7bc250431524e70db4c105689e7ad0df76e7e2aabebb708f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "30ad91460c79b79e0a0076eac798b9d8f6aff38cfafd304aa063f597fd38b2d3"
+      "source_sha256": "f7cc7d0ad34a6db3b53235d2e36dcd02d7338f0bcc98559758141b9a29d02399"
     },
     "apps/shotinbox/decision/l/kn-IN/index.html": {
-      "canonical_sha256": "6c4eb0a3e8147e8f81832e3a952d54664c37ee8f5dc879b1883f186985b4d13c",
+      "canonical_sha256": "6522e8834b751d22cfbdb943e90682d41f3c2c9195d130a68b505492dab237e4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "72518ea22c9745df6bd53beb9fc6a289e65b8765b8cf6bf25615c659c63750f4"
+      "source_sha256": "96e8229f026e2d9480f2239d21cb2a1fe7fcb0ee9aa0c6bba84d7ba9f7750feb"
     },
     "apps/shotinbox/decision/l/ko/index.html": {
-      "canonical_sha256": "154d14bd6eb41696ec2ce4551ac857f30cf9bef2dbf884cd9ee221aeabf808f9",
+      "canonical_sha256": "5632b19bed0af795ed1e39a4e5ab5bcf1a098197f4fc92da1f6107d291019eb7",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "bbdaf5c4020e761073b54061ddadc132d2cb9b71104dcc26296bec727353f31a"
+      "source_sha256": "7202a35aa01250c8a62a6a3cd3c7dd66541d4f8e14553053e2af4affad530587"
     },
     "apps/shotinbox/decision/l/ml-IN/index.html": {
-      "canonical_sha256": "15324faf66aa379d64d90bf3a4b39a36fc641c310d9cd2b07320215207ba19ba",
+      "canonical_sha256": "ce1d6158e8160f8e40698608d1c49270dfb7aa64adfe97fb8909c463d9dde290",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "88cf3608cf2befc03997e6a235627a67ba2e6d1debfdc29c56c6c84846d23fa2"
+      "source_sha256": "254f25a034684380416345f16ac72c567e5bafd5f7daee286a5b2ea5b3d6d3e0"
     },
     "apps/shotinbox/decision/l/mr-IN/index.html": {
-      "canonical_sha256": "a11d4d8fe37a03e3b9d49d748e4d745d40ab68f700687af3364e41f6688626e5",
+      "canonical_sha256": "ddb8688b69ed77efdbb4c71d10f2502dc1048ad81dba3257518d209bb74ef45d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "e9efbcf2a187d288af8f192a5b4cd52fe1f5c5b6e17d355565590bc2b1868e47"
+      "source_sha256": "db8a6fb26f923d917898e94e82fbcb59872770f9a598e66680c174dafae2e60c"
     },
     "apps/shotinbox/decision/l/ms/index.html": {
-      "canonical_sha256": "2940849e4704cc6772474d72f3dc5932254adfd0cbf70f45fe0aaae07a040504",
+      "canonical_sha256": "1eab6f4b752a39e4c69c932bb92854c7f5ddf6755eee26606fe9d1bb5784537b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0e74780e84435713cfc51d7f338ddc5a7741946991e9de6b3b90d9ebb4a6ebda"
+      "source_sha256": "f15437ac827bf86257cda9de777f72161bd00681f38e21134c4724f59e2d0410"
     },
     "apps/shotinbox/decision/l/nl-NL/index.html": {
-      "canonical_sha256": "5ab376a659d4a1371e41b2feace6e3287cd69bfa129c4c1f8c770d2c2ba49276",
+      "canonical_sha256": "6c302cf9029634c10e41d4ac8c98b4cbe3ec76e8fccf1812f87e4b0d55de81db",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "29897f83e4dae66bf3594b8a71127022ef264fc6b2f8b02fb2311510fa0f7b5f"
+      "source_sha256": "08cba722620aefdb291b9906321430b3e9ee5957d9d473db7f20cb2ea0b0117f"
     },
     "apps/shotinbox/decision/l/no/index.html": {
-      "canonical_sha256": "dd7073240a4733cf9f8b240bd3e979d6fb38923aa6a50e983b42d25b84168767",
+      "canonical_sha256": "916c355250818d9ad8d25e746925f3c5ed24f4267b143ef9ff8f56d96beaeaea",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "63a746f47f028c7d8f2fb89f001fb7d3edb9d70376ba658bb16e3de837fcce0a"
+      "source_sha256": "9ff0e35ddb5b8a7f61d62313eac48bb24a9bcb8d1747d97f8bb0b6dd1491cec1"
     },
     "apps/shotinbox/decision/l/or-IN/index.html": {
-      "canonical_sha256": "5b8198427b62909207d0ed744cfcb9f57ccb173acb086476d0bd7053685cb838",
+      "canonical_sha256": "c6b3fdc9be2d10d3a5f346f1a386f210cb381e70adc4b3503f8f3e5a0a95cc6e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "65b845260dbdb1cf5480cb40f93489bb7bd9af3084f33f46164d58edca3887b6"
+      "source_sha256": "d743c4ee785ec7b3fbcd1bfd929d0829f108e2589bf5aeb2ca1a64d912429de9"
     },
     "apps/shotinbox/decision/l/pa-IN/index.html": {
-      "canonical_sha256": "077ede8e30aca4b2c58ddb4018fcc060f172e4ca8c9eb571f32aefa4382e426a",
+      "canonical_sha256": "58966c2f1c55da472c863392dda7ca7357ee5ad19d67284dc9d5e879539a6a6a",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "26597348c041a5efb2942c0c070a76d6590a1fa4b9e366125cc6e1ee6a47d9a3"
+      "source_sha256": "e81e01f5cf37618036bf10c24fd9599e9157ef7588ffae0cb90c2d552738f746"
     },
     "apps/shotinbox/decision/l/pl/index.html": {
-      "canonical_sha256": "67e891688f5821eb96a856615f22cc1b65b2889ca951c2ff1b79045d1bd52668",
+      "canonical_sha256": "7e439efc5e06d5eced811724064d6b3695fba94f570732ff9882045509555d08",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "17469480d6441d4a68beed1476844ce8b3170ee01ad02c94f0c2b571b96bbf5c"
+      "source_sha256": "d0ca9e691e4be94bbddc81a279c9fc33937b564cbdde329ffbfa107512d21963"
     },
     "apps/shotinbox/decision/l/pt-BR/index.html": {
-      "canonical_sha256": "de41e8a8290a4f2d732f37a74929a481606bce71300882f144c78a7a72dc91d1",
+      "canonical_sha256": "2486c9ccd18b71557006b0176a0d1aa066cc4d054218491c6f33163a9eadfffe",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0fe0d133570e58e3f57711e035b748678561065ebad0d01054f8175319793424"
+      "source_sha256": "65b15493b8c4df0de8a21c159814dcac9a1f423b063c20ad7b0736402366dd55"
     },
     "apps/shotinbox/decision/l/pt-PT/index.html": {
-      "canonical_sha256": "cbd4ae3f622da80fbf1fdb24749155042857e935364d3b8d3b4832213565ba70",
+      "canonical_sha256": "fc0e8dfc3aa00861b0515b43be7c2df44a1e8780037cd1317ba10074bc03d7c2",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a05ee45c648d32909572276add8e1191113928a8ec212e699762930218194ddc"
+      "source_sha256": "88936a680b43169196c46de4e4a68a20fcd6bf4953ba733c8a414adea7e546eb"
     },
     "apps/shotinbox/decision/l/ro/index.html": {
-      "canonical_sha256": "c9622a530fa10d3375dc2503e002650d8bdaf8e519c2512891125b8b8f49fec7",
+      "canonical_sha256": "427fc359f14761881093e9fcb30db586f8a14d5fb264695f761ca508aabfb0db",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "b13fd447eaafecdc208a0e804f8aa72744ae40a3074b5be45ea1b41227773672"
+      "source_sha256": "5c0053fd7742b07ae370df8395c53c2cffd81e3ba47f1f8412f5dbc6016798ba"
     },
     "apps/shotinbox/decision/l/ru/index.html": {
-      "canonical_sha256": "653319ac35b955b8aec641e9002a7e9467ce6b1313ab151b89a6d39a7e7b6690",
+      "canonical_sha256": "b00221bced256e24391d483a0a16e1bf468edac60d7bc1ca29ddb2198518de5d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "85135d7003c2754faa046f3ec2a1e952c5609a54ea56e38462356006176bb342"
+      "source_sha256": "b9bec59d24732f64a9c97ff7f0a146910336a956b005ec9b78433fcef31c2a55"
     },
     "apps/shotinbox/decision/l/sk/index.html": {
-      "canonical_sha256": "a49ed926761017d513e8ceed572407eb69c8aa1d62dc4e287ccee13cbbd5611c",
+      "canonical_sha256": "9e9419fa9c5d3cebe91144ede5f8e753a2cbf6620a6fb5a3bd30a631ec738787",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "afaefca981676500d6160f74f61900c77227d2a613bc1255140b82be1fa3d161"
+      "source_sha256": "b9134125eaa2ed4e1a05937b1ada763c4e1a53bb257537047b4a1d201234dec3"
     },
     "apps/shotinbox/decision/l/sl-SI/index.html": {
-      "canonical_sha256": "1ba4dfae98cf494475999aaae6ea909d398760020b616e9aeb41da38f5cb8ed0",
+      "canonical_sha256": "14dddb03480d31ea3da56b654c83aef0da0671fc4314c1b3c0b859b2c871869a",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "eb09ff4775347cd0de7d0a6592f2a89febb047928b614fff26918b56b2d3f56a"
+      "source_sha256": "518628d136327f12ae36bf8e311732c552eecf19c76b791efcb8ed09fa9b5102"
     },
     "apps/shotinbox/decision/l/sv/index.html": {
-      "canonical_sha256": "4ee4a63d540b9f9b08100ae8d01e59d38b53753f761c91b845cc7fa4a1f789a0",
+      "canonical_sha256": "a74b9bd2b0f0dfc24abb79166d8bc5fabe0f8ad00d04520462213d45e93c8175",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "2b14641e7da412039607166fe1afeaa35b14fbb311097c0e407054e9c4837390"
+      "source_sha256": "a6b1e19222b8ea28070aaa3eecfaf47dd85ff02ef25c63fb5f1a3376dd211743"
     },
     "apps/shotinbox/decision/l/ta-IN/index.html": {
-      "canonical_sha256": "b674462d228f6acfa2f029348bcf31352a63bffeaa9baf9fd9f284ee414784ef",
+      "canonical_sha256": "bbcdb52243802e475a028d962349e9c6951d30e86899f79871e79f58a28ba26f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "3527ae018299105071a9da5dc617d934d366eda936ed0043d310cfb86f5bcf68"
+      "source_sha256": "4270b765820f52f1f353dc6e61527d57edf7f3ad213874fda6144d9dae99155d"
     },
     "apps/shotinbox/decision/l/te-IN/index.html": {
-      "canonical_sha256": "090ef0ccf490c27c17c467cac44e09b21ee84736ba6eea1c201d4277507b9876",
+      "canonical_sha256": "9f27d9bc1c62aa05741ab0cae55845ad3fd294fb77c20868943834bfa15fa707",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "1ba40c123a791c128542f7e57e1e1c1038b07a035dbd238da530236d607178c6"
+      "source_sha256": "a201153e2b9e05be91a49e899ef5b9e1ec65fd15f46b86b0359e9342813d33e4"
     },
     "apps/shotinbox/decision/l/th/index.html": {
-      "canonical_sha256": "3a80f37a41e04bcb8825da672f4598a229e5d4f42b0b7d3f13bb2ca7791e4f76",
+      "canonical_sha256": "cf57941765b169b1029873368be59f9d0ce107bf23126291e709fef661fa75d4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "15839bebc69eaf9eec84cdc2e49c79b91e3548a156d9fe7129720f8e81a13d82"
+      "source_sha256": "7f8f70ec016bbf4bf51bda0d80eaddcc3526cb445590bf86487998d6d961be44"
     },
     "apps/shotinbox/decision/l/tr/index.html": {
-      "canonical_sha256": "15ba838d1104e4b6be564a8beeed6a5047d3c93d2a4553bf6886ed30694c9200",
+      "canonical_sha256": "60350422a48660c8cbc0f4436c815a85fdd70bf71f10f2504fcb9cdedae8a298",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "f79cf7fefa43cfc709a74fb46ef5dcd00b1d1c44c484490b8daab477b0cda4e2"
+      "source_sha256": "44306df934c43de678d7dec5efe59dbe210f54946fa11e6c51b7c246c27873cb"
     },
     "apps/shotinbox/decision/l/uk/index.html": {
-      "canonical_sha256": "13588c6a5f374de019a9fb9872d045259594c97aa8e2966ae14c77aec43f0048",
+      "canonical_sha256": "715f04b9e58124aed561c6da3cd8b9bbcef24205ac40425f1ca7989151168fff",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "bab40d26f225db69587b5df2db274356d09a5df7fe3e4a2c7d3b968d7a893e73"
+      "source_sha256": "6fdba10b166a15a306dad1146cdd08d18d17faa08ded7de900361885ce633a3b"
     },
     "apps/shotinbox/decision/l/ur-PK/index.html": {
-      "canonical_sha256": "e92f3107b8eb0972b0d40d13c28c1bc192969c77dcea48b8ed23a516700131a2",
+      "canonical_sha256": "5469503d81fba5883c2f6310869882ec31a825b36c55932e171aee5e21bef17d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ae76d24615c4473e13727817c35a4f5176726e0a8026309f232a935ae7ff7212"
+      "source_sha256": "c8f9222489ed0e49aa2b0083ff1c8159ad93bf768e05c2faeec9921cf291bded"
     },
     "apps/shotinbox/decision/l/vi/index.html": {
-      "canonical_sha256": "6d4d3072b9db9eab5c409287b5319677fdf1c03646d1661e9709cec58781d233",
+      "canonical_sha256": "4d8fb0bde0110ee5cabc15522208771ec781db9b11745762df4be8aabd8332e5",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "bf7797f34a21180516dc67d4b44edd674a079d97d3071504ceca5daabb3af443"
+      "source_sha256": "686058b173e4884cd9074d97a60da01a8ced43861f8f557b15a0d457e222cfd2"
     },
     "apps/shotinbox/decision/l/zh-Hans/index.html": {
-      "canonical_sha256": "b968af65f95cd67d2540e6888802d4ab9195f8ee1b23d51d698c95b318a22b71",
+      "canonical_sha256": "aa663d600fef120de2c3cf24bd7463df641a85c409a098b6f18cd2f23f41b06a",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "8068c2d10aec3a21ae9ca3edb9dd33bd0a7e1f7d7ab646b3d3cbe8ec135f4288"
+      "source_sha256": "8ca4e566a506668c5004aa47be05634254f2f64237cbdb2781baa1abe2eb5979"
     },
     "apps/shotinbox/decision/l/zh-Hant/index.html": {
-      "canonical_sha256": "fb3ecb8a262854358cc602c168bbabbf9c45ed4334143161b35b75389d59a0d8",
+      "canonical_sha256": "f05bb774f893c676270437a73d5fc2f39a00805efad6ddb7b7ddde96182c9f38",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "7484ca5b08abd639e0b71bd53886e83d50f361b120924167bfa2c783da651126"
+      "source_sha256": "9fd868b9432ca359daae0c35514295d8fba8f58ce5b15bc3dffbb1e461b98294"
     },
     "apps/shotinbox/l/ar-SA/contact.html": {
       "canonical_sha256": "f024754238c265714c44c5d76e93650d576b3256fcc4a20ab938f5b719311c63",
@@ -2998,22 +2998,22 @@
       "source_sha256": "2686af40516e0608e18500523241712f5ff11f7e9e52f768f36f909e6cfcdc6e"
     },
     "apps/shotinbox/l/bn-BD/contact.html": {
-      "canonical_sha256": "00b787813c5fd971197daf5db05b04fcd59cc4fc5a63e357a9acd819478e4a7a",
+      "canonical_sha256": "ef07ccac0834babfb6d9431cfd00ff236e6138b43c5a50254b841fc321f14938",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "e715a261149122795af7393694ce89f65bf78b81ec14ac8efad7588e4c7c3d89"
+      "source_sha256": "3269346f475fadf5cd4ae15ef6e3ecf217bccb437200fd52f92e9fb8a55b9348"
     },
     "apps/shotinbox/l/bn-BD/privacy.html": {
-      "canonical_sha256": "a057ffe9404978d48d90e2f3fd294a1b58de8f479f97506553789ffa5720ceb7",
+      "canonical_sha256": "f25966ecc2c75e24694aba55a17607377ebb0732e093ec691734d491d9d99f36",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "9f459643d7e44a73a2133671e8ff3c6b9be5ceefcbfe385cfe052a6e11fa26be"
+      "source_sha256": "f3b27e33421c532ca88bdab2562ecc225a22454548844844d8e08a8c3e49c466"
     },
     "apps/shotinbox/l/bn-BD/support.html": {
-      "canonical_sha256": "c4b24c0ccbfe5fee3576151cfa7d53a03f6917b31816014c731d51e0d0a39350",
+      "canonical_sha256": "f77f031f745999710cb2b10d04b0faeb4cc8d6a89a863432d3e720bea8468f69",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "2554e7490544e8e647e9526c18c5aff4bc9918384fa8b3788d0ac0714b0ea2c4"
+      "source_sha256": "2065c647d6f4cf9e5af50b8eb5803d69b378c07560d1da45d5e107994a4f8b84"
     },
     "apps/shotinbox/l/ca/contact.html": {
       "canonical_sha256": "e45eb9b3a8b7c2351633bc8d5a78f93e26c0a7cdcc99c9c6b734a2fd9cdf546a",
@@ -3904,16 +3904,16 @@
       "source_sha256": "01c72f6db35d211b202b7708765240b145ccd46698ecb475920ba0d8bcc0d59d"
     },
     "apps/tripplanet/l/bn-BD/privacy.html": {
-      "canonical_sha256": "31d3913f18c231e72fd52e92e86b1efef4ebb81b076d7671d07bba2b27d4ed0a",
+      "canonical_sha256": "e8c98bc602cdf3e0792682e9d2ea7e0a4d989ab2e0cf1e802022dfe83a4634f5",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "6d53583a01500f4220eb4b4064d051a1d6b66346c28a14fed569c4687a84ea58"
+      "source_sha256": "0975f2639dbf8213ff186c7c22c8478b1918a11af7b26da95c3d61a311caa587"
     },
     "apps/tripplanet/l/bn-BD/support.html": {
-      "canonical_sha256": "a3f95099837044d087a28704d35460f2006cd6632290cc2781e2d749e513295c",
+      "canonical_sha256": "ab59ca06496a2b62cc7845ebf6c8b739b5c1bc5dc348a07554420a0d7f150ffa",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "3af5d478993357bbff3c229db0e3a1104a3fbbed608766151348f0e862aa1742"
+      "source_sha256": "7daf18b93b9331739b509c13bcf31273d526120f8d7780e92580ad71cea9546d"
     },
     "apps/tripplanet/l/ca/privacy.html": {
       "canonical_sha256": "0805521e26e05839af7770e307d8d5e0e8be6d391e7bff2b157e64bbe5d777ac",
@@ -4504,16 +4504,16 @@
       "source_sha256": "b939608e45bae53e502bb7e922896f45f70cfa6c298569d6b82982e04fcf95b0"
     },
     "apps/wifi-aid/l/bn-BD/privacy.html": {
-      "canonical_sha256": "7aa8a327bb3f0646a31d13bddd4bf9163ae1b220cd1da6d50f5b7c64eb5e4b05",
+      "canonical_sha256": "acff3030d0a8969e2055254e147c404c70a180a663bb0363015170fb06bdffff",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "07f4bad0b89756a2b77b7d7dcdb590caa389df4e66e907f9ebb8ee52cebdeff6"
+      "source_sha256": "af002e8929c98605456e451225d1e049d21fda891b5fc145ce9ff17609851f19"
     },
     "apps/wifi-aid/l/bn-BD/support.html": {
-      "canonical_sha256": "d58ba4ded8efbe24270f9294b7d83fae6f5bfe0abda211c65ff9839ef6d6bd75",
+      "canonical_sha256": "0785c046f2c8edc9ae7119bcf4574643257eac6e1148b40607c8656e56fceeeb",
       "directive_count": 2,
       "policy": "source-email-off-v1",
-      "source_sha256": "a49ee363d3e47b475eeed4ddc1c399dfeba3676d7a992f5ebc6d2f320af42aee"
+      "source_sha256": "fec7e78cd3243bb0769c562203e70aa5a143018e6f718c337c0038b1d31162db"
     },
     "apps/wifi-aid/l/ca/privacy.html": {
       "canonical_sha256": "443188ee43fec194531e40c74a733c88859ce64bac213b1ff1802055717080dd",
@@ -5116,304 +5116,304 @@
       "source_sha256": "0d4e106e78c4a9dae664e01cb5812267804dd72e275cd7f5baf21b06a69b22f8"
     },
     "apps/zipbox/decision/l/ar-SA/index.html": {
-      "canonical_sha256": "15fda6b28eebf428d260877ed065ea9f29a9e70ed3aecc208953e951a037e6fd",
+      "canonical_sha256": "0250eb5002b3427ea396d8040d39cd3448da865c5e65ec9e68483c3f7c3851ab",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a128b08e09fdc3ef508ceeb3fee16f3b15a4b990574cf87e268ac0bd52daa3f7"
+      "source_sha256": "fd82f5ea190d374daea31393b48ed18c761fbde8e3074373b64b52c4f2d11874"
     },
     "apps/zipbox/decision/l/bn-BD/index.html": {
-      "canonical_sha256": "b1ebe4eb4c7adb4b092c9402a0dbfe17cce38fd99a6c756609c40d24ed6411df",
+      "canonical_sha256": "49e68abf3017bee7bc8ed6c649a6c50649ff4c29d6918e53f22bf2abe2004e8e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "04a1f3caeb0b46fbb66c4747fbaf4ec4fbf113d0a520b5d49198a6afc2a21505"
+      "source_sha256": "4b3fe365af5ad473047875c2fad6067555f861d7dd495e3b17685403ef910aca"
     },
     "apps/zipbox/decision/l/ca/index.html": {
-      "canonical_sha256": "d5bbea8024e3c4d01a3bb7c84c90638e27d9909939042df9130d6be265c89a84",
+      "canonical_sha256": "bd92ad0d4bb0f1f17550dffc7ba726cb165bd841501566b6a0a883991dcc36c5",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ccd54061ae234f3ac9c93fdff703aaa9d1ca2468c8edff8b2ce651184717cf7e"
+      "source_sha256": "8afd4b1f5928dacfd09a7af6cddfd441236331ae02733690203a43c25f4cffaf"
     },
     "apps/zipbox/decision/l/cs/index.html": {
-      "canonical_sha256": "19d18d48020cc8b0d0dae7b638c958f34fd3c7678c260f004bdfa6318a6d958d",
+      "canonical_sha256": "328f9a62d75688f96d47b04d71a67376eb8eda2cfbfae439b148579b0056156d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "218f6a45dc13aba5723021605a55275e33583a4f728897b5463b38b82b78b1d9"
+      "source_sha256": "2640e1fa3dfcb2637d67ff126f5f55bb41d56f816d310b6bd35ff83cd3917012"
     },
     "apps/zipbox/decision/l/da/index.html": {
-      "canonical_sha256": "b36d2d5f49e36f406b8d15f405fc3a2f97b2deb31fb2d6c66e49117253a00b7d",
+      "canonical_sha256": "8a7f677981c5fd1dbb9f866f347abf7fd8cfd8abc412e836a85c3407134b0e44",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "132020f04d1088e7713debb762a6269fcf25d4e2b751e7b45f595033937382bb"
+      "source_sha256": "3372bf7ed66d78fcd26efcdfecc07a1fd7ef707ef0465a3a7e8242d070980b1f"
     },
     "apps/zipbox/decision/l/de-DE/index.html": {
-      "canonical_sha256": "772242cb95a3631e1341b28533848835c302e4557abb3a2bfaa9b56f72b8a0d8",
+      "canonical_sha256": "aba4633699ffe81eae2cd53480686590b1e9d0567c8ecc9abe58d41af701dbe2",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "b53e1a72f32265911d7e062aa9aafdde4f0c5101f322a16bb1972d93a3387327"
+      "source_sha256": "daf805e28a29b3a8a5d16998052c169ef9dc8b47e2b14de2611d74ff36e1cb00"
     },
     "apps/zipbox/decision/l/el/index.html": {
-      "canonical_sha256": "a4a57aaf213b92ebc67d831685736bef0bb1ecc8aece9bfab86c8b2c12163bf5",
+      "canonical_sha256": "0dcd6eeefca712ba83c59aaf2df7a1dccfdbf7009faeee48693287aa8cce7deb",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d81c35e82cbe194b8dc80061ec1cfdc2ca4f571754a930a9d9bdcd32c99abce7"
+      "source_sha256": "55ac45966585e297cc9ae87f0f66c04b190a75e1ebf17ff6be73ded97de2b407"
     },
     "apps/zipbox/decision/l/en-AU/index.html": {
-      "canonical_sha256": "e018aa3af253b6d5fdd837ef41f2e86bd08c2fada6b7e6cc4d0f2b15e5d571a7",
+      "canonical_sha256": "4320c10675c344eab0555ffea686aa1bc1cdf3d9962a6a3797673c52e9f9082b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "fd6f81ee26903b34d4f3371b832aac74217f9c6c0958aaeee901d007791d017c"
+      "source_sha256": "8784914e3d0c5a465c7944aa2aed7f0b8b0a8bab87eb021ae9ab0451d5830803"
     },
     "apps/zipbox/decision/l/en-CA/index.html": {
-      "canonical_sha256": "53a24bc19740afdecf9a4b57968c9ccbbcbeae3c93cdaf5cb0ea4bb8f3b38e05",
+      "canonical_sha256": "b0eb71f1660f93f2e56dfd0831802d6a6195900779768c738f30c5e5e3235c62",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "496777eed117c4a7e2f56e8a47535fcb33adf821dc2463e27baea57d6cc544f5"
+      "source_sha256": "fc12274d64d9d2fd931cdbb2f995d9033b4b38e043ac2fb0bddd4c4a024fba1b"
     },
     "apps/zipbox/decision/l/en-GB/index.html": {
-      "canonical_sha256": "244bc2056aee8ddb005f20d02e07ac03f9d571ee74d3eec4417cbaac5b94485c",
+      "canonical_sha256": "671ede3f958e2de11352ee7ea833174b152355d89cbb7db08c8e75a3a85d7ed2",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "601923d68438fcc681a31f86277f59f74cd790948fe988b46aee717eec86813a"
+      "source_sha256": "7c234f5b128d994cb617134b7adfe840db1cb1f5ba467db23f4a99ff6ba70267"
     },
     "apps/zipbox/decision/l/en-US/index.html": {
-      "canonical_sha256": "e737f554cab903ec5bb7d3a464f1b352fded41bd906366f091bac210f7510c5a",
+      "canonical_sha256": "39cdcb6e7da27173596f93b6c8905fd15d0f02e420b713eb8d8cf4e4186742f2",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "68499abfde0dd6e705f7d35b72e83d1cc5734dbf63c75122b7d6777fc579e564"
+      "source_sha256": "5bd0d6778640b1c0e3e50cc7ce92415f1f08677ea35e03bc5ec740e5454addbe"
     },
     "apps/zipbox/decision/l/es-ES/index.html": {
-      "canonical_sha256": "f5dac521d3651424e556512f881bdd8a1b2608e3d252a78a8f3bea0e400c761a",
+      "canonical_sha256": "0b9afd69df96388af6c6981cf5e044b035e33d82383f5166e0f5e1a25d20774e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "846ee5aff8cb743987d626563c7a18cfe4471d5fee103f49fbdb2a5a6b86a44d"
+      "source_sha256": "fe413baba715717369201f298192cb5afe1a4bf038104e9b5da0b4e47fb4d18a"
     },
     "apps/zipbox/decision/l/es-MX/index.html": {
-      "canonical_sha256": "4f75bbd1f6927494836434aa3dbb8ab88cb6f4c1c6cbabf7da4d038b61d38838",
+      "canonical_sha256": "a00c01ef04d1bb382480aa897ea95a07131587c181040472edbe56e01bcbbd34",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "5035b986f984820c8c9ea16e584b0b9ed9a47cb2d65cef66b11305e4c447526c"
+      "source_sha256": "34e93497cd099e909fc71feba5479e8c3b0a7e12d49de5cda443fcdab86ed5d8"
     },
     "apps/zipbox/decision/l/fi/index.html": {
-      "canonical_sha256": "5d8f6ae8fcf6bac05e96ee1ba1801743362f208f381186c67a0d0889899fe328",
+      "canonical_sha256": "2264b2adcf1bb0575058f862dab07853fa5c14adc6373eaa5001f495c96ed8de",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "5e46d9438829faea2fdcab4cd3c2f29189bcb26c8e1d4803cc3bcfd4172fec40"
+      "source_sha256": "c8d5acc8964540611dfa9edcb66100d38c04a4221386885be5dab2cc5f897017"
     },
     "apps/zipbox/decision/l/fr-CA/index.html": {
-      "canonical_sha256": "26a45f45a99e63864329d21edd20847b26dcdeee6fe3f1110bbfb8359d2db934",
+      "canonical_sha256": "d63e2b1b57b3d3ac65c93c5f1fe7a4569b2372e11505ebbc4d24410473f845ba",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a13f6c7a68b73261f3b71e8a965141751c39dd275e12f281916761dfac4305c1"
+      "source_sha256": "6938ab3b4e0452efa9f41ef474e789768747f3cd5430ca1a128881993ad64a7b"
     },
     "apps/zipbox/decision/l/fr-FR/index.html": {
-      "canonical_sha256": "2e86e60c2e0cc0b14e50549761949bf7151d63660b89b25d1f6ce9a5e599b43e",
+      "canonical_sha256": "451b644d3fa9cfabebcec2bf7faa44b4e8cac4ef14e56ca467951d97aa451d3f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d6e2b2275bd9bfd649f59b04d6b49badf9baee12291a179852b43e185ea14619"
+      "source_sha256": "719436c78c261dc9081154dd3897fb11175cbe170780cfacd393a6100c7f75ce"
     },
     "apps/zipbox/decision/l/gu-IN/index.html": {
-      "canonical_sha256": "7bf938be523d02d844008f50bc85001b9aedb265435acb87136ac44a36ec1dda",
+      "canonical_sha256": "6f7144d96d055f4c9dd4dd6c9d16dc01b26b6211134473db709c8a583beb9bad",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "777d4de51b91b8fd4caed95b8161bef95e09111f7f6e00a0396b0df64cea162c"
+      "source_sha256": "ca083ed0344c22cfe3fc48fe4f9b44e3258a48550592803cb6532ff0bf28ccbb"
     },
     "apps/zipbox/decision/l/he/index.html": {
-      "canonical_sha256": "ba7eebf4f9f91beb55a4466c9a92c96d5fe79b76eefda821ce0820528f5a18b7",
+      "canonical_sha256": "8db811d8fe254cccb8351ade99e2b27b6def27321684a951ea6eb2704dfe15fa",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "fc0bea7cfc0462b336820a0d81d0dfe2c4e193522c29f8e077f2cada53373d5b"
+      "source_sha256": "0122489bbf90bd70411b261b644eb14a0833f5ef7459644e6d721f2078ec239e"
     },
     "apps/zipbox/decision/l/hi/index.html": {
-      "canonical_sha256": "d6cc16bf8a517df58e7b9700c8e26297f3ac6d829c40934263995ed0dc78cdf7",
+      "canonical_sha256": "14c6d4d5d0b62a11debb47b1630705bb1f98de1cc5c104969267433249d47aaa",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "a7a6c3a93b70426ad8131a4cb3f2328dbce66b8dcc4864db424efb4ac201e5fe"
+      "source_sha256": "f5b03c4ebec4727c345de0d541b14c7eddb4c0f4d2b988d80d8cd93cfb32a498"
     },
     "apps/zipbox/decision/l/hr/index.html": {
-      "canonical_sha256": "d852242e1f2db765dc7a485741c50fd1e8b1688976726e55257c8d3e2425750a",
+      "canonical_sha256": "d5e0e70c5fbbc3c6813f0d025201261d22377da6f797bc75bac6f01242e67d2d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "5649d54fc16a21d3f9ea40ef24485af4b6154b6987759ebbb188913703c69df0"
+      "source_sha256": "16a1085153f3f597af0c21635a5ede6b12509a0714069a91a7bc3ff9ba42a52d"
     },
     "apps/zipbox/decision/l/hu/index.html": {
-      "canonical_sha256": "4977702799f5273c30c3ca22b88002dba33938b09725d2d8b1e268e25820ad5b",
+      "canonical_sha256": "5f33f3ef9fd842ee56773237d6532aaa2c89b921fb533d31e705e84c213721bc",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "6c603aef15ed89d17a064c8956da72a3fafca38fed3f89a1295e2a70f01554c6"
+      "source_sha256": "7af238706425937dc4f2639c57e2a931ddf86d74ea902d1457e58f3b91ea761e"
     },
     "apps/zipbox/decision/l/id/index.html": {
-      "canonical_sha256": "c129cf0701bcc3e6b583af411219cdd630207ef9799db894305ca38a6bce1ccd",
+      "canonical_sha256": "06b43973d7027dcb8fa93b347a29f685923e3e8566bc565b6a76016b583f1130",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "f56ddb5490387e67fdad6816a2449dcfd603c675993ac34369605e3236517310"
+      "source_sha256": "babf5ee691b60d1e67f05f8bd06519f3940ff75ca2fea848cff86ec1fa1b79d4"
     },
     "apps/zipbox/decision/l/it/index.html": {
-      "canonical_sha256": "4bf233e0b6c0e068dadac62a5a4ee3c9840bb1897ae08228ea934de7fb4b6457",
+      "canonical_sha256": "5efaaae36e3d03a660e095bd81181e60cdc07a38bddea59ebab8250cfa5975f7",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "d6095b897883c0bed84eadf059252125599ee0fe6f879811dcbed9d304a40760"
+      "source_sha256": "646855fdc55b121dd0c724cc19480e7d5f2c11bf306087193e88643ff266a232"
     },
     "apps/zipbox/decision/l/ja/index.html": {
-      "canonical_sha256": "4b9ab8990477bc36d2e9109c6bc274c88120622d6c7f4472d6e6bef294508afc",
+      "canonical_sha256": "d8e543e148f5ec9dfd791c5f2e2d4efb348938c492768e332e18ecb3ebeb2a6b",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "45637c940bb05339fadf455eb1d8a41edda36a8b2514adbb7d560829f298d827"
+      "source_sha256": "8181982cb200d550185004a5c5e183884773fb19ed6e609b143929c383503b67"
     },
     "apps/zipbox/decision/l/kn-IN/index.html": {
-      "canonical_sha256": "17c37e5604b21bf0eb42a48ec19c5845a5df41a7d79c29a01d69e3e61f51eac7",
+      "canonical_sha256": "ed0df545953f7d60fe99995e2c7e1233d67732c16f08b1b45ae5f0c4773c5b68",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "dae723d19784b4a45d3350dea418e56813835189b7793e5b2c8a3e64400ba57d"
+      "source_sha256": "83a91b6f32d87dff52ef0acaeb619657e8ccb98729155c6a9a915a43a9e1111c"
     },
     "apps/zipbox/decision/l/ko/index.html": {
-      "canonical_sha256": "778deae9a88e366852339abd484dc66f7123a0b7f256a6a644e0fb00cc956f72",
+      "canonical_sha256": "fdfc28deb0bf9dc1a3dd12457756e5381f120f88a0ca3e8caffb36ec486d030e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "56b6f2e56cf3ac21af70e8603a26389227e9efcbb14498c53ff3d274cd075458"
+      "source_sha256": "06daa576ea0e47268981d8be7f61a0f09a04b89b65300b23eecff81789930243"
     },
     "apps/zipbox/decision/l/ml-IN/index.html": {
-      "canonical_sha256": "606ac961b493ee39c3e4e5a06585cc40969dc3d124c4862a529b533d11754bc8",
+      "canonical_sha256": "8b5b6e78589ac897f97839e6bde4497a7c6bb58026c834eec6bb7baeb768fa22",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "98d6d61b3f49961fd71525a1ef76978de6b196bbed8e167f8155afe655153f74"
+      "source_sha256": "65be36dbe6ec60659938bf60d7b568ff220b5dfc076e16c0345c050d0c8c9930"
     },
     "apps/zipbox/decision/l/mr-IN/index.html": {
-      "canonical_sha256": "69a2390498ff6ca0749bd0b6eeab0a32c52f6543593be062f0bcc82e44b24108",
+      "canonical_sha256": "b3ce831f349fefdd285e2b441c14f3c955ae095aa56c365c8ae637bae41f61d5",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c65031aeec9bc1998a2a911eceae7e5454dff166ec9c191c5cd1bf7c952bdd16"
+      "source_sha256": "34a9aa72240b0fc6af905f093fd4218ce5e4cd3470e444bd8ff9aa8dad70a13c"
     },
     "apps/zipbox/decision/l/ms/index.html": {
-      "canonical_sha256": "7e889b94f2381864002e33fbf2e8be995cf376f56c679e53e3195bb7003a67d7",
+      "canonical_sha256": "b3df797bfca575f43128464bc3259f0c46c5b43842ebbd84fe743822779406d4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "0bd1edd64a68a90ae7d0ae825be8b9f9d1375e71562ab85776940f45de750337"
+      "source_sha256": "97ded60cd7ac5e7fb3b16214b452937d04acf055eafaeeae92732e352671e630"
     },
     "apps/zipbox/decision/l/nl-NL/index.html": {
-      "canonical_sha256": "4bc5d132df4c11a579a3b52521de4670e3bafcbca6205ff52be6bfc5665cd3c8",
+      "canonical_sha256": "45e086181c55ff0dc0b2132b71d6253695c804beee3213b11195f0155d70c725",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "9a9c565d79798d796759b1fbb96b3747e05f7f3c58ed0d2a4a629b21602d0fdd"
+      "source_sha256": "6120d5942aab9e0db2b9355d6b9dc56347b9454269f0990d1906fd1597695a0f"
     },
     "apps/zipbox/decision/l/no/index.html": {
-      "canonical_sha256": "7ecd8a44e986aefb39ff55a4e757208a4675ac33d528bff5e02a439792a9f6da",
+      "canonical_sha256": "767972e20c07ba9c5aa86fc3a5c771b936605b72566503368aff21801558858f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "e2213f39e8d19959e298c4318e793f07189078e84ff24398bdfc50794391a8ae"
+      "source_sha256": "f86b69424d5d7e0868a006b3821ae533c12b6baf67a140dce1b11cbbf8724ee6"
     },
     "apps/zipbox/decision/l/or-IN/index.html": {
-      "canonical_sha256": "e62a5389f8491143bec88e6d7e750ff106d8f1aa9ea4f35ddc717c7a7eaebf04",
+      "canonical_sha256": "a902e3d10fe7ff6229a6278218644b0cd07cb4b4d51a2254cde1411228a6f333",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c7364cc789ec38ec26b753dd939c1890d9e207296810dd19e1c28b983a4f1a54"
+      "source_sha256": "434b9fef19910080868ce887ed7c5cbe50dd68c697f2612992f3ef3819d5177d"
     },
     "apps/zipbox/decision/l/pa-IN/index.html": {
-      "canonical_sha256": "a9e3463ac1549a0ef27b85e9896f469aebc70e5948da32cb32b9f6da37f8aead",
+      "canonical_sha256": "b7a479dfe44d06518d13853e01e6b08097561a3222250883782cd74508c4736f",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "cb75d0641d2bab3e5e5f6794f72f648ff4d1c681e731d266f34defd5f1efebf1"
+      "source_sha256": "7235b74971df15e9e8268080573952944c265eab301c6eff38665f3aee0508f0"
     },
     "apps/zipbox/decision/l/pl/index.html": {
-      "canonical_sha256": "688365e12a8bdba1b99e0c56618e1c18f8301bbaf93442d210b28bce590be42f",
+      "canonical_sha256": "e1b9b190d37ae934fe7f6a0b956f90c12e92b67b649f564eab7e8b4e45c2335d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ba34f1d019a8fddc8c202ffdcfccbb03e5b324c32444c82c9277ca4a1dc8ee2d"
+      "source_sha256": "9064853bcf3a319eec6cc3218a86db26335d5b3741ce66d5f6081a447479168e"
     },
     "apps/zipbox/decision/l/pt-BR/index.html": {
-      "canonical_sha256": "ba605e78aa9dda7aafa1eba5955e5288d29f8a819d9e1e50f9e33a093bb2a6b5",
+      "canonical_sha256": "58b7156b50d4f487d4c641292f9de77d5469630f4f0cbccaef264dfa8053dc86",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "70bfb81e68fb9fb5f1dc5105a4fc55c121ec1255bc2cf084131c85c08aeb622d"
+      "source_sha256": "1024e6e53c92108fc699781e80cafb659b7ecca280657895ed1ead412461c284"
     },
     "apps/zipbox/decision/l/pt-PT/index.html": {
-      "canonical_sha256": "8a4ac849fd8afd8816a874c3e05188f98b6abad5eb101f215e751a3e80bdb432",
+      "canonical_sha256": "8935b76797bcf5edd3a076d7206c992545bf85d40f275dd4148f61aa3a78b460",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "11f8f3da2919d0af0156a635b3670d533408decc039b3d50d860aaf859af5ae3"
+      "source_sha256": "50135a77d24ce9cc87c13e58bb8a01108c86516aa3416b152860de08fcc48e44"
     },
     "apps/zipbox/decision/l/ro/index.html": {
-      "canonical_sha256": "0323d7a5ffd2b29412a8f117453ce63895cf6a6a107bf85b245388a2653348f4",
+      "canonical_sha256": "fa4bb1a52fed0bfa9869be1b103d077007a72a24f393e18150c885a1159d54b6",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "3c89c05135cd2a79afc6bb91d4b0acd26d2a82e870a13c9d41442cab044bbdd1"
+      "source_sha256": "72d6b3349da9e936ef67b2c142c134ef4619263442678b98f3783b5a94d58537"
     },
     "apps/zipbox/decision/l/ru/index.html": {
-      "canonical_sha256": "1266c1274c9a9031333cda4e4da12208a4c11dd6011a1d4698d6350ca47a4fc3",
+      "canonical_sha256": "810b3d67bb72fb62b6e6471fe9f2f23060348dfe21651d1dd655f9d6b82c1f48",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "7a2243a30e958c5e2dc19f89b633d1993662d281a850c9c60b66f34e97d4d4e7"
+      "source_sha256": "cc6630b343e7d2ef28e2f2cd906e1315d9063344d86f3b6fba880749260f8104"
     },
     "apps/zipbox/decision/l/sk/index.html": {
-      "canonical_sha256": "a714586ecb62d1f13dc18b77c131ef8158da5024e2036657974db7c3864877aa",
+      "canonical_sha256": "fd73917fcd7c03f5100290618fc11b7a2313805fd673547016744fb753a38c7d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c130fb87650ccc4aa046e5690e1266990c42c8fba240210eb6cbd67c7e142280"
+      "source_sha256": "820b638c19773f24ef31732657b09bd4a64f40d5c350286345529d5efcc96819"
     },
     "apps/zipbox/decision/l/sl-SI/index.html": {
-      "canonical_sha256": "04c30c83ee3f9aa40cda51ad003c1e3f4b1f1309f837dcda471f5cae31f8310f",
+      "canonical_sha256": "008a26999779dc9efb188b9da3631d4b0e30c28cfd629869c9523785659c0c6e",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "26dbb075a29c0fa760170f40a3f7c8be32bc5ec9d04d8613fe3dcbcbf24bc15f"
+      "source_sha256": "4d8f6c52007dc2d30d79d718b912745908dc6b523c69bea79ceab82ceddf5fc2"
     },
     "apps/zipbox/decision/l/sv/index.html": {
-      "canonical_sha256": "97df07b0e0359efaeb4782b9f27efc7f1c1ac913c14bd201bdbd8181b2501802",
+      "canonical_sha256": "e1ea5815b3c3bcb7ed6795696c7842718af440c4cbf148de914317e6cea7e827",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "e83802089b569aed848096bbe71170694f29f3884978a73298380bc55f319f23"
+      "source_sha256": "71a8c02e2e5a16890a7eb34f38f2c9b109e32b6e96e2730a13f1886838f9d765"
     },
     "apps/zipbox/decision/l/ta-IN/index.html": {
-      "canonical_sha256": "8ad62b3c62037d9e49a99a4abdf27658e055f8c943cc0f0cd12a345fb836f33a",
+      "canonical_sha256": "e104f13d683e11e644005c28a371a537149b6b5974a07f2c707837bdcc59a413",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "463caeaeea87abf168c96a33c0cf75c1c69532f636eb9b8fa5eb1e4f5ea45394"
+      "source_sha256": "fc4b6a8c5abc5330131d8e2dbb13bb51f719c3d937eb9e6d0e0bbff32edfc6e8"
     },
     "apps/zipbox/decision/l/te-IN/index.html": {
-      "canonical_sha256": "61e22746baac102fd15f3b1e7a6240fd7dedacf78477ff69d4b07c6286fe79d9",
+      "canonical_sha256": "5f93a5285732e1d691ef11d572f5f9168621b8dfc5a938c6ff027e1ebd438a54",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "bbaeb0cd3f587478d67e8df55548ffe7f07314c0545f37fa7df4fc77f6a1eec4"
+      "source_sha256": "836584ec1a5f51ce4bf8f3b45f00316d7f3aba860a3a105655bbf37bd8e5786d"
     },
     "apps/zipbox/decision/l/th/index.html": {
-      "canonical_sha256": "e05ec12d794f536fda685fba886625f87b50c2ddd616b5b157e05e1fcc0faa58",
+      "canonical_sha256": "04c3293899707758653d81c3e318f486adc4c2a4b6fe10e0e261b37cbd6dd2d5",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "2ac40cd5bb2f88700cb1f18bf2aa77bac072e66d4684c3a615214c14eaf5e1ee"
+      "source_sha256": "32dd6d5cd4a36719148299f5802e24674e3372b1ca51a6caba94dd5d92f6a7ab"
     },
     "apps/zipbox/decision/l/tr/index.html": {
-      "canonical_sha256": "b60fd52e3ef7306abdf3c0cce1d4d53c095f20343a06e7404aed11a9c8cb7b16",
+      "canonical_sha256": "d8fd6d98dbf72d763ff890645c53b6ff617955465b64061461c6c8862bad7a62",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "756cb56b4aa923a46b746b1660bffa1b8a9c9c2636181e4a3c3f4f363c56d20c"
+      "source_sha256": "4307ae20c1fa10ff4d143d3b047b22d58a0dd84e330ed05ea2c6d1f3c55ddae3"
     },
     "apps/zipbox/decision/l/uk/index.html": {
-      "canonical_sha256": "54ab1830203137bac1423765fc6a05774b15ccd0f2215817fe03403206b5ac85",
+      "canonical_sha256": "094f783b0a3ddcc7012e8081caa4d92311249af096e719cf548b3ca930a8501d",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "b45d7a19af7085b3d3db4e71733482572c76b7ff005cb5ec94b94529cc577b20"
+      "source_sha256": "2733fe058d7aa21e20777239e594e0dd4817ace943073304a02e1f50d2d79602"
     },
     "apps/zipbox/decision/l/ur-PK/index.html": {
-      "canonical_sha256": "c9e73bd8acb2a1293b6ac683b81fdceebb50e40c631fa3b4a53d281815b25911",
+      "canonical_sha256": "e58582a8a2174c273bb40ec2775dcda1d2ab9ab697992f6c0906fadb61c597cf",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "39d1d0c62f9bb1463a6a4edf4269eaa380ff801d2f7d3185fe0e6ea9ed35831e"
+      "source_sha256": "a533bdb171093871c8292b3d3c3a2201bd93135f57f40e407d01bd4ad3d4d451"
     },
     "apps/zipbox/decision/l/vi/index.html": {
-      "canonical_sha256": "f816027a0f6d2dcab585ea43d40f05544aa48938482693d7ab4e0ab454f0c53e",
+      "canonical_sha256": "e8039ecec46ef85cd9575d33c1b1a9f70b238e0d80ea4c5fd838e47f669c1537",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "3c0ced4095c9d4c87993434181ff7910d986fe0e921f97abdcbb84dc883afcd7"
+      "source_sha256": "7cce97ca255e6df945f1240db972a0d470dffa8b3c3629ea7fe7ee24a2de3a31"
     },
     "apps/zipbox/decision/l/zh-Hans/index.html": {
-      "canonical_sha256": "5398113acdf5eafb4334a6326cafc14441207cb004baf1e10e8b8522e2c97647",
+      "canonical_sha256": "ffac19b6aa928eb40e6cd5b8cf7eb277a24b91003b38f7842a4a23755c2cedc9",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ead4a6ebb24c8bfc8a6b7c102bb40f92bc921e9572c080b0239afe11634769b0"
+      "source_sha256": "7eda875a994f3c80c3c3774721ef88fdd0d15b96e48ac4828b2dffe058352a16"
     },
     "apps/zipbox/decision/l/zh-Hant/index.html": {
-      "canonical_sha256": "f5d490c8002d61d8d036d414a6b7385741b80072075442d3c1acda3040e8c891",
+      "canonical_sha256": "28197fd564ff6cf967da847a6358bc60e6723b9114191966c5b760cfabef3451",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "bfa1c0235ada2f7138ede205ea1407e5445b9eb4a2a31a291254a14ca748d571"
+      "source_sha256": "909504c56d353bc765cd3d09d1fba0d2ac53ec6182cb0581f14e118b6abdc57e"
     },
     "ar-SA/aim990plus-privacy.html": {
       "canonical_sha256": "cea3e541ffd23efc9d23444b690984b5126a986b627b80b1fe75561ccf32ab7d",
@@ -5446,34 +5446,34 @@
       "source_sha256": "e2470b6b134e9739675f0b165bb7b0ccfd5e548ef4fed1a95d0f20d097df38f8"
     },
     "bn-BD/aim990plus-privacy.html": {
-      "canonical_sha256": "429190c986af37e911f632f31eca06259eb88773d6c69a48ee3455caf33f0aa0",
+      "canonical_sha256": "2cb0701e7b0494bb29d6ca20f781aaac28b04548417a0ea93e9f86601992b88f",
       "directive_count": 3,
       "policy": "source-email-off-v1",
-      "source_sha256": "130266d74603565d73ea34b557a73181cc0d2ec6602a2d82338648168c10aad6"
+      "source_sha256": "52e167909f01774563bd3e73af08240c2bdd527c982796ffd3fd48c11aa6a5ae"
     },
     "bn-BD/aim990plus-support.html": {
-      "canonical_sha256": "f26c4abd78e4145721084b75cf655c9b1ab12564d8807e67847bfd3d8069865e",
+      "canonical_sha256": "765df1f439d9cd28fb2d262342f6152e706a03a425bbdc24d3cfb11099dc0dab",
       "directive_count": 3,
       "policy": "source-email-off-v1",
-      "source_sha256": "0c6ed62a82f37fce8a2d8a567d8cb8176d43f1a2a07f16a95f7bf4fc1fb419cb"
+      "source_sha256": "0b7ab008c2dcd3db97bc8922cd239f078b636da4d7c7e3a6c0f4fe3bcfc81437"
     },
     "bn-BD/savetag.html": {
-      "canonical_sha256": "266ba8fbcd662e0ed437be68e45baad69ca5cc6c228b3bc8363cdf757ec67db1",
+      "canonical_sha256": "6cc66ea0c493a5c08b1ccb0347cf25564390cfbe5f2b6b55a5fc07aeaa2b89f4",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "c5a8af8991862438168f70751c3973960b1e59147e9367e1c8130d40a0f0c92b"
+      "source_sha256": "cae6b6e2f92ed27421d447d5a983b40da6c43ceafe88bc05263fe1a63273cb75"
     },
     "bn-BD/shotinbox.html": {
-      "canonical_sha256": "7371f184b78d08ea0dbfad1d208564f373ef815effc46b4b9bb3a1cca1e494a9",
+      "canonical_sha256": "0c2cd51aee3c2a2b1e28dfcca542aaef2e03ac512ac9beafea0018c3fccec361",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "ea92bf071730ccb0b3d48d5a9ef5638f009329d3a14b0fe5e9384fc826ea933a"
+      "source_sha256": "c029f7b81b755cf4c522ec6574a67358fb9275fe01825a4fa6c8253e60997702"
     },
     "bn-BD/zipbox.html": {
-      "canonical_sha256": "87abe57ca46b5701f5bfe236f551ed8796eca6fa69bba871c5ef7d53221b8f34",
+      "canonical_sha256": "aaebd0cd1f050aea1dc3ba980ee4ac1d955179d09f344f02371184f158842d05",
       "directive_count": 1,
       "policy": "source-email-off-v1",
-      "source_sha256": "db7575b8d31c7d02acf97241a6416f0d272fe34a83aaca0c37de7ebb94efdbfa"
+      "source_sha256": "112d1654f0d41a7856c86616592ef65ec67e3e372178408f6f25d29f5c1dd726"
     },
     "ca/aim990plus-privacy.html": {
       "canonical_sha256": "e8b0e29fea8c0ca8cccec2eddf8470be084df58886fe9aeaac419641e58f66c5",

@@ -10,26 +10,34 @@ from app_store_storefronts import resolve_provider_token
 import gen_tool_email_capture as legacy
 import market_availability as market
 import owned_email_contract as contract
+import owned_email_readiness as readiness
 
 MARKER = '<meta name="owned-email-capture" content="v1">'
 STYLE = (
-    ":root{color-scheme:light}*{box-sizing:border-box}"
+    ":root{color-scheme:light;scrollbar-gutter:stable}*{box-sizing:border-box}"
     "body{margin:0;background:linear-gradient(145deg,#fffafd,#f1edff);color:#302057;"
     "font:17px/1.65 system-ui,-apple-system,sans-serif}"
     "main{width:96%;max-width:1120px;margin:3vh auto;padding:clamp(18px,4vw,44px);"
     "background:#fff;border:1px solid #e0d0ff;border-radius:24px}"
-    "h1{font-size:clamp(24px,4vw,42px);font-weight:500;line-height:1.3}"
-    "a{color:#5032a4;text-underline-offset:3px}p{margin:16px 0}"
-    "form{display:grid;gap:16px;margin:24px 0}label{display:block}"
+    "h1{font-size:clamp(24px,4vw,42px);font-weight:500;line-height:1.3;margin:0 0 20px}"
+    "h2{font-size:21px;font-weight:500;margin:18px 0}"
+    "a{color:#5032a4;text-underline-offset:3px;display:inline-flex;align-items:center;"
+    "min-height:44px;min-width:44px;overflow-wrap:anywhere}p{margin:16px 0}"
+    ".oe-slot{margin-top:28px;border-top:1px solid #e4d8fa;padding-top:12px}"
+    ".oe-slot form{display:grid;gap:16px;margin:20px 0}.oe-slot label{display:block}"
     "input[type=email]{width:100%;min-height:48px;padding:12px;font:inherit;"
     "border:1px solid #a790d0;border-radius:10px}"
-    ".consent{display:flex;gap:12px;align-items:flex-start;cursor:pointer;min-height:44px}"
+    ".oe-slot label.consent{display:flex;gap:12px;align-items:flex-start;cursor:pointer;min-height:44px}"
     "input[type=checkbox]{flex:0 0 24px;width:24px;height:24px;margin:5px 0}"
-    "button,.store{min-height:48px;padding:12px 20px;border:0;border-radius:12px;"
+    ".store{min-height:48px;padding:12px 20px;border:0;border-radius:12px;"
     "font:inherit;font-weight:500;background:#6541ab;color:#fff;text-align:center}"
-    "button{cursor:pointer}button:active{transform:translateY(1px)}"
+    ".oe-slot button{min-height:48px;padding:12px 16px;border:1px solid #bca4de;"
+    "border-radius:10px;font:inherit;background:#fff;color:#5032a4;cursor:pointer}"
+    "button:active{transform:translateY(1px)}"
     "a:focus-visible,input:focus-visible,button:focus-visible{outline:3px solid #335dec;outline-offset:4px}"
-    ".store{display:inline-flex;align-items:center;text-decoration:none}"
+    ".store{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;max-width:100%}"
+    ".oe-slot summary{min-height:44px;padding:10px 0;cursor:pointer;font-weight:400}"
+    ".oe-slot summary:focus-visible{outline:3px solid #335dec;outline-offset:4px}"
     ".scope{overflow-wrap:anywhere;font-size:14px}ul{padding-inline-start:24px}"
     "li a{display:block;padding:10px 0;min-height:44px}"
     "@media(prefers-reduced-motion:reduce){button:active{transform:none}}"
@@ -50,9 +58,11 @@ def _document(locale, title, url, content):
     ).encode("utf-8")
 
 
-def render_capture(row, copies=None):
+def render_capture(row, copies=None, *, active=None):
     copies = copies or contract.load_copy()
     text = copies[row["locale"]]
+    labels = readiness.localized(row["locale"])
+    active = readiness.is_active(row["locale"]) if active is None else active
     consent = contract.consent_copy(row, copies)
     title = text["app_title"].format(app=row["app_name"])
     metadata = contract.capture_metadata(row)
@@ -61,14 +71,16 @@ def render_capture(row, copies=None):
         for key, value in metadata.items() if key != "owned_consent"
     )
     store = (
-        f'<a class="store" href="{html.escape(row["app_store_url"], quote=True)}">'
+        f'<a class="store" data-primary-app-store-cta="true" href="{html.escape(row["app_store_url"], quote=True)}">'
         f'{html.escape(text["store"])}</a>'
         if row["app_store_url"] else market.note_html(row["locale"], row["app_name"])
     )
-    content = (
-        f'<nav><a href="{contract.PUBLIC_SITE}/{row["locale"]}/email/index.html">'
-        f'{html.escape(text["preferences"])}</a></nav>'
-        f'<h1>{html.escape(title)}</h1><p>{html.escape(consent["disclosure"])}</p>'
+    core = (
+        '<header class="oe-core" data-primary-answer="true">'
+        f'<h1><bdi>{html.escape(row["app_name"])}</bdi></h1>{store}</header>'
+    )
+    form = (
+        f'<p>{html.escape(consent["disclosure"])}</p>'
         f'<p class="scope"><bdi>{row["app_id"]} · {row["locale"]} · {row["campaign"]}</bdi></p>'
         f'<form action="{contract.ENDPOINT}" method="post" target="_blank" rel="noopener noreferrer">'
         f'<label for="owned-email-address">{html.escape(text["email_label"])}</label>'
@@ -81,8 +93,22 @@ def render_capture(row, copies=None):
         f'<button type="submit">{html.escape(text["button"])}</button></form>'
         f'<p id="owned-email-privacy">{html.escape(consent["privacy"])} '
         f'<a href="{contract.PRIVACY_URL}">Buttondown</a></p>'
-        f'<p>{html.escape(consent["unsubscribe"])}</p>{store}'
-        '<p><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a></p>'
+        f'<p>{html.escape(consent["unsubscribe"])}</p>'
+    )
+    slot = (
+        f'<details><summary>{html.escape(labels["optional"])}</summary>{form}</details>'
+        if active else
+        f'<h2>{html.escape(labels["optional"])}</h2>'
+        f'<p data-capture-inactive="true">{html.escape(labels["inactive"])}</p>'
+        f'<p>{html.escape(consent["disclosure"])}</p>'
+        f'<p>{html.escape(consent["privacy"])} <a href="{contract.PRIVACY_URL}">Buttondown</a></p>'
+    )
+    content = (
+        core + f'<section class="oe-slot" data-owned-email-slot="{"active" if active else "inactive"}">'
+        + slot + '</section>'
+        f'<nav><a href="{contract.PUBLIC_SITE}/{row["locale"]}/email/index.html">'
+        f'{html.escape(text["preferences"])}</a></nav>'
+        '<footer><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a></footer>'
     )
     return _document(row["locale"], title, row["capture_url"], content)
 
@@ -102,7 +128,7 @@ def supporting_pages(records, copies):
             f'<h1>{html.escape(text["preferences"])}</h1>'
             f'<p>{html.escape(text["disclosure"])}</p>'
             f'<p>{html.escape(text["confirmation"])}</p><ul>{links}</ul>'
-            f'<a href="{contract.PUBLIC_SITE}/email/index.html">🌐</a>',
+            f'<a href="{contract.PUBLIC_SITE}/email/index.html">{html.escape(text["preferences"])}</a>',
         )
     path = "email/index.html"
     links = "".join(
@@ -189,7 +215,10 @@ def main(argv=None):
     parser.add_argument("--availability", type=Path)
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--rollback", action="store_true")
     args = parser.parse_args(argv)
+    if args.rollback and readiness.load_policy()["stage"] != "inactive":
+        raise contract.ContractError("rollback requires the inactive policy to be committed first")
     if args.check:
         inventory = check(args.pages_dir)
         if args.growth_geo or args.guide_geo:

@@ -68,7 +68,7 @@ def make_catalog(pages: Path) -> None:
                 (" ".join(p.split()) for p in re.split(r"\n\s*\n", values["description"])
                  if len(" ".join(p.split())) >= 20), "",
             )
-            direct = None if market.is_unavailable(locale) else (
+            direct = None if market.is_unavailable(locale, app["app_id"]) else (
                 f"https://apps.apple.com/{LOCALE_STOREFRONTS[locale]}/app/id{app['app_id']}"
                 "?pt=118326163&ct=owned_test&mt=8"
             )
@@ -78,7 +78,7 @@ def make_catalog(pages: Path) -> None:
                 "purchase_model": APPS[key]["purchase_model"], "one_time_option": True,
                 "app_store_url": direct, "verified_live": True,
                 "guide_url": feeds.url(f"{locale}/{key}.html"),
-                **market.record_fields(locale),
+                **market.record_fields(locale, app["app_id"]),
             })
         write_json(pages / feeds.CATALOG / "locales" / f"{locale}.json", {
             "locale": locale, "record_count": 47, "apps": apps,

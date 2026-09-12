@@ -123,7 +123,7 @@ def canonical_app_store_url_for(app_id: str, locale: str) -> str | None:
     沒有可驗證市場的 locale 回 ``None`` —— 那是唯一誠實的答案,呼叫端必須渲染成
     不可點的 availability 狀態,**不得**用 US、India 或無國別 URL 補位。
     """
-    if market_availability.is_unavailable(locale):
+    if market_availability.is_unavailable(locale, app_id):
         return None
     countryless = f"https://apps.apple.com/app/id{app_id}"
     if locale in STOREFRONT_ROUTED_LOCALES:
@@ -210,6 +210,13 @@ def validated_app_store_url(
         )
     ):
         raise ValueError(f"Invalid direct App Store URL: {value!r}")
+    if (
+        expected_locale in market_availability.UNAVAILABLE_APP_MARKETS
+        and market_availability.is_unavailable(expected_locale, path.group("app_id"))
+    ):
+        raise market_availability.MarketUnavailable(
+            f"Unavailable App Store market: {expected_locale}/{path.group('app_id')}"
+        )
     if (
         expected_locale in REQUIRED_LOCALE_STOREFRONTS
         and country != LOCALE_STOREFRONTS[expected_locale]
@@ -527,9 +534,9 @@ def verified_app_store_url(
 ) -> str | None:
     """Choose a declared route without inventing availability or price facts."""
     localized = localized_app_store_url(value, locale)
-    if market_availability.is_unavailable(locale):
-        return None
     app_id = APP_STORE_URL_RE.fullmatch(value.strip()).group("app_id")
+    if market_availability.is_unavailable(locale, app_id):
+        return None
     country = LOCALE_STOREFRONTS[locale]
     if (
         locale in REQUIRED_LOCALE_STOREFRONTS

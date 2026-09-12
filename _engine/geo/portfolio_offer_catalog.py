@@ -152,8 +152,8 @@ def offer_item(
         return {
             "@type": "ListItem", "position": position,
             "url": record["canonical_guide_url"],
-            "item": market_surface_policy.unavailable_json(application, locale),
-            **market.record_fields(locale),
+            "item": market_surface_policy.unavailable_json(application, locale, app_id),
+            **market.record_fields(locale, app_id),
         }
     store_url = validated_app_store_url(
         str(record["app_store_url"]),
@@ -253,7 +253,7 @@ def catalog_payload(
     for position, record in enumerate(ordered, start=1):
         app_id = str(record["app_store_id"])
         detail = details.get(country, {}).get(app_id)
-        price_verified += int(detail is not None and not market.is_unavailable(locale))
+        price_verified += int(detail is not None and not market.is_unavailable(locale, app_id))
         items.append(
             offer_item(
                 record,
@@ -310,7 +310,7 @@ def build_payloads(
             {
                 "locale": locale,
                 "url": catalog_url(locale),
-                "offer_count": 0 if market.is_unavailable(locale) else len(catalog["itemListElement"]),
+                "offer_count": sum(item["item"]["@type"] == "Offer" for item in catalog["itemListElement"]),
                 "price_verified_offer_count": verified_prices,
                 **market.record_fields(locale),
             }
@@ -334,7 +334,7 @@ def build_payloads(
         "locale_count": len(catalogs),
         "app_count": len(apps),
         "offer_count": sum(
-            len(catalog["itemListElement"]) for locale, catalog in catalogs.items()
+            sum(item["item"]["@type"] == "Offer" for item in catalog["itemListElement"]) for locale, catalog in catalogs.items()
             if not market.is_unavailable(locale)
         ),
         "price_verified_offer_count": total_verified_prices,
@@ -344,17 +344,29 @@ def build_payloads(
     modified = _stable_modified(pages, digest, build_date)
     index["date_modified"] = modified
     index["content_digest"] = f"sha256:{digest}"
-    for payload in catalogs.values():
+    for locale, payload in catalogs.items():
         payload["dateModified"] = modified
+        path = pages / catalog_relative(locale)
+        if path.is_file():
+            previous = json.loads(path.read_text(encoding="utf-8"))
+            old_date = previous.get("dateModified")
+            if (
+                _valid_date(old_date)
+                and old_date <= build_date
+                and {k: v for k, v in previous.items() if k != "dateModified"}
+                == {k: v for k, v in payload.items() if k != "dateModified"}
+            ):
+                payload["dateModified"] = old_date
     return index, catalogs
 
 
-def sitemap_text(modified: str) -> str:
+def sitemap_text(modified: str, dates=None) -> str:
     urls = [index_url(), *(catalog_url(locale) for locale in OFFICIAL_LOCALES)]
+    dates = dates or {}
     body = "\n".join(
         "  <url>"
         f"<loc>{escape(url)}</loc>"
-        f"<lastmod>{modified}</lastmod>"
+        f"<lastmod>{dates.get(url, modified)}</lastmod>"
         "</url>"
         for url in urls
     )
@@ -387,7 +399,10 @@ def build(
     changed += int(
         publisher_intent_catalog.write_text_if_changed(
             pages / SITEMAP_NAME,
-            sitemap_text(str(index["date_modified"])),
+            sitemap_text(str(index["date_modified"]), {
+                catalog_url(locale): payload["dateModified"]
+                for locale, payload in catalogs.items()
+            }),
         )
     )
     return {

@@ -487,15 +487,16 @@ def _enrich_oembed_document(
     title = document.get("title")
     app_store_url = document.get("_lumi_app_store_url")
     locale = str(document.get("_lumi_locale", ""))
-    if market.is_unavailable(locale):
+    app_id = document.get("_lumi_app_store_id")
+    if market.is_unavailable(locale, app_id):
         market.validate_record(
-            {**document, "locale": locale, "app_store_url": app_store_url},
+            {**document, "locale": locale, "app_store_id": app_id, "app_store_url": app_store_url},
             url_fields=("app_store_url",),
         )
         document.update({
             "type": "rich",
             "html": f'<img src="{html.escape(buyer_intent_url, quote=True)}" alt="{html.escape(str(title), quote=True)}">'
-                    + market.note_html(locale),
+                    + market.note_html(locale, app_id=app_id),
             "width": OEMBED_SIZE[0], "height": OEMBED_SIZE[1],
             "_lumi_buyer_intent_image_url": buyer_intent_url,
         })
@@ -531,10 +532,12 @@ def oembed_document(
     storefront: dict[str, object] | None = None,
     buyer_intent_url: str | None = None,
     source_kind: str = "guide",
+    app_store_id: str | None = None,
 ) -> dict[str, object]:
     if source_kind not in {"guide", "decision"}:
         raise ValueError(f"Unsupported oEmbed source kind: {source_kind!r}")
-    campaign_store_url = None if market.is_unavailable(locale) else _campaign_store_url(
+    blocked = market.is_unavailable(locale, app_store_id)
+    campaign_store_url = None if blocked else _campaign_store_url(
         store_url,
         _oembed_campaign(locale),
     )
@@ -553,9 +556,11 @@ def oembed_document(
         "_lumi_locale": locale,
         f"_lumi_{source_kind}_url": canonical,
         "_lumi_app_store_url": campaign_store_url,
-        **market.record_fields(locale),
+        **market.record_fields(locale, app_store_id),
     }
-    if storefront is not None and not market.is_unavailable(locale):
+    if blocked and locale in market.UNAVAILABLE_APP_MARKETS:
+        document["_lumi_app_store_id"] = app_store_id
+    if storefront is not None and not blocked:
         document.update(
             {
                 "_lumi_app_store_price": storefront["price"],
@@ -1213,6 +1218,7 @@ def generate(
                         record["store"],
                         "en",
                         site,
+                        app_store_id=str(APPSTORE[key]),
                         buyer_intent_url=available_buyer_intent_image(
                             pages,
                             key,
@@ -1274,6 +1280,7 @@ def generate(
                             localized_store_url,
                             locale,
                             site,
+                            app_store_id=str(APPSTORE[key]),
                             storefront=storefront,
                             buyer_intent_url=available_buyer_intent_image(
                                 pages,

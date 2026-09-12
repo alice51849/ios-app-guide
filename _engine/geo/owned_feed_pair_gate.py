@@ -46,9 +46,12 @@ def gitlink(growth: Path, revision: str) -> str:
     return fields[2]
 
 
-def validate(growth: Path, guide: Path, *, growth_base="origin/main", guide_base="origin/main") -> dict:
+def validate(growth: Path, guide: Path, *, growth_base="origin/main", guide_base="origin/main", integration=False) -> dict:
     for repo in (growth, guide):
-        if not git(repo, "branch", "--show-current").startswith("feature/"):
+        branch = git(repo, "branch", "--show-current")
+        if integration and branch not in {"", "main"}:
+            raise ValueError("Main integration requires main or an isolated detached worktree")
+        if not integration and not branch.startswith("feature/"):
             raise ValueError("This delivery must stay on paired feature branches")
         if git(repo, "status", "--porcelain", "--untracked-files=no"):
             raise ValueError(f"Uncommitted paired source: {repo.name}")
@@ -73,8 +76,9 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--growth", type=Path, required=True)
     parser.add_argument("--guide", type=Path, required=True)
+    parser.add_argument("--integration", action="store_true", help="Validate an authorized forward-only main integration.")
     args = parser.parse_args(argv)
-    print(json.dumps(validate(args.growth, args.guide), sort_keys=True))
+    print(json.dumps(validate(args.growth, args.guide, integration=args.integration), sort_keys=True))
 
 
 if __name__ == "__main__":

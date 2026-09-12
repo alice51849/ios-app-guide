@@ -260,10 +260,10 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
             self.assertTrue(root.findtext(f"{namespace}title"))
             self.assertTrue(root.findtext(f"{namespace}desc"))
             self.assertNotIn("<script", content)
-            if locale == "bn-BD":
+            if visuals.market.is_unavailable(locale, str(record["app_store_id"])):
                 assert_blocked_record(self, record, ("app_store_url",))
                 self.assertNotIn("apps.apple.com", content)
-                self.assertIn("বাংলাদেশে অনুপলব্ধ", content)
+                self.assertIn("বাংলাদেশে অনুপলব্ধ" if locale == "bn-BD" else "中国大陆下载状态未确认", content)
             else:
                 parsed_store = urlparse(str(record["app_store_url"]))
                 self.assertEqual("apps.apple.com", parsed_store.netloc)
@@ -308,7 +308,8 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 assert_blocked_page(self, source)
                 self.assertEqual(len(store_urls), 0)
             else:
-                self.assertEqual(catalog.EXPECTED_APP_COUNT * 2, len(store_urls))
+                unavailable = visuals.market.UNAVAILABLE_APP_MARKETS.get(locale, ())
+                self.assertEqual((catalog.EXPECTED_APP_COUNT - len(unavailable)) * 2, len(store_urls))
             for url in store_urls:
                 decoded = html.unescape(url)
                 self.assertEqual(decoded, validated_app_store_url(decoded))
@@ -354,9 +355,14 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                         today=max_date,
                     )
                 )
-                self.assertGreaterEqual(
+                location = url.findtext(f"{sitemap_ns}loc")
+                locale = next(locale for locale in ("en", *OFFICIAL_LOCALES) if visuals.gallery_url(locale) == location)
+                source = (self.pages / visuals.gallery_relative_path(locale)).read_text()
+                published = re.search(r'(?:name="content-modified" content="|"dateModified"\s*:\s*")(\d{4}-\d{2}-\d{2})', source)
+                self.assertIsNotNone(published)
+                self.assertEqual(
                     str(lastmod),
-                    self.manifest["dateModified"],
+                    published[1],
                 )
         image_locations = [
             image.findtext(f"{image_ns}loc")

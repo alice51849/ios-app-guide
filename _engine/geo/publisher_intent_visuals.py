@@ -246,8 +246,12 @@ def render_svg(
     app_name = _single_line(record["app_name"])
     query = _single_line(record["publisher_query"])
     context = _single_line(record["decision_context"])
-    purchase = "বাংলাদেশে অনুপলব্ধ" if market.is_unavailable(locale) else _single_line(purchase_label)
     app_id = _single_line(record["app_store_id"])
+    purchase = (
+        "বাংলাদেশে অনুপলব্ধ" if market.is_unavailable(locale) else
+        "中国大陆下载状态未确认" if market.is_unavailable(locale, app_id) else
+        _single_line(purchase_label)
+    )
     rtl = locale in catalog.RTL_LOCALES
     app_anchor = "end" if rtl else "start"
     body_anchor = "start"
@@ -628,7 +632,7 @@ def render_gallery(
                         f'<a href="{html.escape(guide, quote=True)}">'
                         f'{html.escape(ui["Guide"])}</a>'
                     ),
-                    (market.note_html(asset_locale, app_name) if store is None else
+                    (market.note_html(asset_locale, app_name, str(record["app_store_id"])) if store is None else
                         f'<a rel="nofollow noopener" '
                         f'href="{html.escape(store, quote=True)}">'
                         f'{html.escape(str(record["app_store_cta_label"]))}</a>'
@@ -719,7 +723,7 @@ def _manifest_record(
         "canonical_guide_url": str(record["canonical_guide_url"]),
         "app_store_url": visual_store_url(record),
         "sha256": hashlib.sha256(svg.encode("utf-8")).hexdigest(),
-        **market.record_fields(locale),
+        **market.record_fields(locale, str(record["app_store_id"])),
     }
 
 
@@ -793,6 +797,7 @@ def render_sitemap(
     records_by_locale: dict[str, list[dict[str, Any]]],
     modified: str,
     site: str = SITE,
+    dates: dict[str, str] | None = None,
 ) -> str:
     if TODAY_RE.fullmatch(modified) is None:
         raise ValueError(f"Invalid visual sitemap date: {modified}")
@@ -807,7 +812,7 @@ def render_sitemap(
             gallery_locale,
             site,
         )
-        ET.SubElement(url, f"{{{SITEMAP_NS}}}lastmod").text = modified
+        ET.SubElement(url, f"{{{SITEMAP_NS}}}lastmod").text = (dates or {}).get(gallery_locale, modified)
         for record in records_by_locale[asset_locale]:
             image = ET.SubElement(url, f"{{{IMAGE_NS}}}image")
             ET.SubElement(image, f"{{{IMAGE_NS}}}loc").text = visual_url(
@@ -837,6 +842,22 @@ def validate_icons(pages: Path, app_keys: Iterable[str]) -> None:
     if invalid:
         joined = ", ".join(str(path) for path in invalid)
         raise ValueError(f"Publisher visual icons are missing or empty: {joined}")
+
+
+def _gallery_modified(path, locale, records, ui, modified, site):
+    if path.is_file():
+        previous = path.read_text(encoding="utf-8")
+        match = re.search(
+            r'(?:name="content-modified" content="|"dateModified"\s*:\s*")(\d{4}-\d{2}-\d{2})',
+            previous,
+        )
+        if match and match[1] <= modified:
+            candidate = _final_gallery_content(
+                path, render_gallery(locale, records, ui, match[1], site)
+            )
+            if candidate == previous:
+                return match[1]
+    return modified
 
 
 def build(
@@ -904,13 +925,16 @@ def build(
     manifest_galleries: list[dict[str, str]] = []
     root_records = records_by_locale["en-US"]
     root_gallery_path = pages / gallery_relative_path("en")
+    gallery_dates = {
+        "en": _gallery_modified(root_gallery_path, "en", root_records, ui_i18n["en-US"], modified, site)
+    }
     root_gallery_source = _final_gallery_content(
         root_gallery_path,
         render_gallery(
             "en",
             root_records,
             ui_i18n["en-US"],
-            modified,
+            gallery_dates["en"],
             site,
         ),
     )
@@ -922,13 +946,16 @@ def build(
     )
     for locale in OFFICIAL_LOCALES:
         gallery_path = pages / gallery_relative_path(locale)
+        gallery_dates[locale] = _gallery_modified(
+            gallery_path, locale, records_by_locale[locale], ui_i18n[locale], modified, site
+        )
         gallery_source = _final_gallery_content(
             gallery_path,
             render_gallery(
                 locale,
                 records_by_locale[locale],
                 ui_i18n[locale],
-                modified,
+                gallery_dates[locale],
                 site,
             ),
         )
@@ -982,7 +1009,7 @@ def build(
     changed += int(
         write_text_if_changed(
             pages / SITEMAP_NAME,
-            render_sitemap(records_by_locale, modified, site),
+            render_sitemap(records_by_locale, modified, site, gallery_dates),
         )
     )
     result = {

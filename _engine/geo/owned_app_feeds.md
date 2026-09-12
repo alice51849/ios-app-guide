@@ -29,6 +29,23 @@
 不宣稱孟加拉可購買。市場狀態 `publishable=false`、`facts_allowed=false`、
 `outbox_count=0`；三份 bn-BD feed 不廣告 hub、不送通知。其他 **49 語／147 feeds** 正常。
 
+### App 層級的中國市場 N/A
+
+2026-09-12 的公開 `lookup country=cn` 對 Lumi Letters、Lumi Math、
+Lumi Math Pro、Trip Planet 四個精確 App ID 均未返回商品；同批控制商品
+AI Brief 正常返回 `/cn/`，不能把 App 未返回誤稱中國沒有 App Store。
+`market_availability.UNAVAILABLE_APP_MARKETS` 保存這四個有證據的例外，
+不影響其他 App 或這四款的其他可驗證市場。未返回者的 catalog、
+owned feeds、install records 與既有中文頁保留內容／GUID／canonical，
+但 App Store CTA 為 N/A、沒有價格 facts、`outbox_count=0`；禁止
+countryless／US fallback。中國可售商品仍由 `locale_storefronts.json`
+與公開快照路由到 `cn`。50 個 locale、150 feeds 與 2,350 entries 不減少。
+
+Lumi Math Pro 的完整課程 persona 另以 `answer_owner=lumimathpro` 固定
+付費完整版本身分；`free_first_ownership` 不得再用泛用品類配對覆寫它。
+既有 root answer 與 localized counterpart 都指向 `6776958488`；
+免費 Lumi Math 仍是 `6778269699`，其他免費門規則不變。
+
 ## 同代與不 churn
 
 - 正常 `portfolio_app_catalog_api.py` CLI 在 catalog 後生成 owned feeds。
@@ -170,6 +187,9 @@ python3 geo/owned_feed_pair_gate.py --growth <Growth-feature> --guide <Guide-fea
 測試工作檔只放 checkout 內 `.owned-feed-test-work/` 並由 producer 清理。
 配對 Gate 檢查最新 fetched mains 的 ancestry、乾淨 feature branches、精確 Guide gitlink、
 source／tests／文件 parity，以及生成零差異。**舊候選不能作基線，也不能把 gitlink 倒退。**
+已有當次 main 整合授權時，可在 `main` 或全新 detached worktree 使用
+`--integration`；仍強制 fetched-main ancestry、乾淨來源、精確 gitlink、
+完整 parity 與重生零差異，不鬆動任何內容或通知 Gate。
 
 交付先推 Guide feature，再推指向它的 Growth feature；不 push main、不 dispatch deployment。
 日後由整合者協調 **Growth source → Guide → Growth 最終 gitlink**，以成對來源封閉整合窗口，

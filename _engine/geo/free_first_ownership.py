@@ -49,6 +49,24 @@ def paid_only_intent(question: str) -> bool:
     return bool(PAID_ONLY_INTENT_RE.search(question))
 
 
+def declared_answer_owner(question: str) -> str | None:
+    """An explicit edition contract outranks the generic free-sibling heuristic."""
+    from answer_personas import PERSONAS
+
+    normalized = " ".join(question.casefold().split())
+    owners = set()
+    for key, personas in PERSONAS.items():
+        for persona in personas:
+            owner = persona.get("answer_owner")
+            if owner and " ".join(persona["query"].casefold().split()) == normalized:
+                if owner != key or owner not in APPS:
+                    raise ValueError(f"Invalid declared answer owner: {key}/{owner}")
+                owners.add(owner)
+    if len(owners) > 1:
+        raise ValueError(f"Ambiguous declared answer owner: {question}")
+    return next(iter(owners), None)
+
+
 def facts_text(facts) -> str:
     """把 answer_facts 的覆蓋層攤平成純文字,供付費模式偵測。"""
     parts = []
@@ -78,7 +96,8 @@ def free_sibling_facts(question: str, free_key: str):
 
 def free_answers_honestly(question: str, free_key: str) -> bool:
     """免費版能不能**誠實**回答這題:有專屬事實、且事實不斷言付費購買模式。"""
-    if paid_only_intent(question):
+    owner = declared_answer_owner(question)
+    if paid_only_intent(question) or (owner is not None and owner != free_key):
         return False
     facts = free_sibling_facts(question, free_key)
     if not facts:
@@ -149,7 +168,7 @@ def apply_free_first_ownership(all_queries: dict) -> tuple[dict, dict]:
             continue
         keep = []
         for question in result[free]:
-            if paid_only_intent(question):
+            if paid_only_intent(question) or declared_answer_owner(question) == paid:
                 moves["to_paid"].setdefault(free, []).append(question)
                 add(paid, question)
                 continue

@@ -263,6 +263,14 @@ def _content_html(
     context = html.escape(
         _single_line(record["decision_context"], "decision context")
     )
+    if not market.validate_record(record, url_fields=("app_store_url",)):
+        return (
+            f'<p><img src="{html.escape(str(preview["url"]), quote=True)}" '
+            f'alt="{html.escape(str(record["publisher_query"]), quote=True)}" '
+            f'width="{int(preview["width"])}" height="{int(preview["height"])}"></p>'
+            f"<p>{context}</p>"
+            + market.note_html(record["locale"], record["app_name"], record["app_store_id"])
+        )
     store_url = html.escape(
         _single_line(record["app_store_url"], "App Store URL"),
         quote=True,
@@ -309,6 +317,10 @@ def _content_html(
 
 def _content_text(record: dict[str, Any]) -> str:
     parts = [str(record["decision_context"])]
+    if not market.validate_record(record, url_fields=("app_store_url",)):
+        return " \u00b7 ".join([
+            *parts, market.note(record["locale"], record["app_name"], record["app_store_id"])
+        ])
     storefront_facts = record.get("storefront_facts")
     if isinstance(storefront_facts, dict):
         parts.extend(
@@ -445,6 +457,12 @@ def render_atom(
         preview = previews[record_id]
         content = e(_content_html(record, preview), quote=False)
         item_updated = item_state[record_id]["date_modified"]
+        related = (
+            f'    <link rel="related" type="text/html" '
+            f'href="{e(str(record["app_store_url"]), quote=True)}" '
+            f'title="{e(str(record["app_store_cta_label"]), quote=True)}"/>\n'
+            if market.validate_record(record, url_fields=("app_store_url",)) else ""
+        )
         entries.append(
             "  <entry>\n"
             f"    <title>{e(str(record['publisher_query']))}</title>\n"
@@ -455,9 +473,7 @@ def render_atom(
             f'href="{e(str(preview["url"]), quote=True)}" '
             f'length="{int(preview["length"])}" '
             f'title="{e(str(record["publisher_query"]), quote=True)}"/>\n'
-            f'    <link rel="related" type="text/html" '
-            f'href="{e(str(record["app_store_url"]), quote=True)}" '
-            f'title="{e(str(record["app_store_cta_label"]), quote=True)}"/>\n'
+            f"{related}"
             f"    <updated>{item_updated}</updated>\n"
             f"    <summary>{e(str(record['decision_context']))}</summary>\n"
             f'    <content type="html">{content}</content>\n'
@@ -511,6 +527,12 @@ def render_rss(
         item_published = _rss_item_timestamp(
             item_state[record_id]["date_modified"]
         )
+        related = (
+            f'      <atom:link rel="related" type="text/html" '
+            f'href="{e(str(record["app_store_url"]), quote=True)}" '
+            f'title="{e(str(record["app_store_cta_label"]), quote=True)}"/>\n'
+            if market.validate_record(record, url_fields=("app_store_url",)) else ""
+        )
         items.append(
             "    <item>\n"
             f"      <title>{e(str(record['publisher_query']))}</title>\n"
@@ -519,9 +541,7 @@ def render_rss(
             f"{e(str(record['decision_page_url']))}</guid>\n"
             f"      <pubDate>{item_published}</pubDate>\n"
             f"      <description>{description}</description>\n"
-            f'      <atom:link rel="related" type="text/html" '
-            f'href="{e(str(record["app_store_url"]), quote=True)}" '
-            f'title="{e(str(record["app_store_cta_label"]), quote=True)}"/>\n'
+            f"{related}"
             f'      <media:content url="{e(str(preview["url"]), quote=True)}" '
             f'fileSize="{int(preview["length"])}" '
             f'type="{e(str(preview["mime"]), quote=True)}" '
@@ -578,7 +598,11 @@ def render_json_feed(
             {
                 "id": record_id,
                 "url": str(record["decision_page_url"]),
-                "external_url": str(record["app_store_url"]),
+                **(
+                    {"external_url": str(record["app_store_url"])}
+                    if market.validate_record(record, url_fields=("app_store_url",))
+                    else {"_market_availability": record["market_availability"]}
+                ),
                 "title": str(record["publisher_query"]),
                 "content_html": _content_html(record, preview),
                 "content_text": _content_text(record),
@@ -648,6 +672,18 @@ def render_json_feed(
     )
 
 
+def _market_xml(document: str, locale: str, format_name: str) -> str:
+    closing = "</channel>" if format_name == "rss" else "</feed>"
+    if document.count(closing) != 1:
+        raise ValueError("Expected one feed container for market metadata")
+    evidence = json.dumps(market.record_fields(locale)["market_availability"], ensure_ascii=False)
+    extension = (
+        f'<market:availability xmlns:market="{html.escape(SITE, quote=True)}/market-availability">'
+        f'{html.escape(evidence, quote=False)}</market:availability>'
+    )
+    return document.replace(closing, extension + closing, 1)
+
+
 def build(
     pages: Path,
     records: list[dict[str, Any]],
@@ -674,11 +710,21 @@ def build(
             changed_timestamp,
             previews,
         )
+        previous_atom = pages / feed_relative(locale, "atom")
+        previous_date = None
+        if previous_atom.is_file():
+            previous_date = ET.fromstring(previous_atom.read_text(encoding="utf-8")).findtext(
+                "{http://www.w3.org/2005/Atom}updated"
+            )
+        dates = [item["date_modified"][:10] for item in state.values()]
+        if previous_date and previous_date[:10] <= modified:
+            dates.append(previous_date[:10])
+        locale_modified = max(dates) if dates else modified
         rendered = {
             "atom": render_atom(
                 locale,
                 grouped[locale],
-                modified,
+                locale_modified,
                 context,
                 state,
                 previews,
@@ -686,7 +732,7 @@ def build(
             "rss": render_rss(
                 locale,
                 grouped[locale],
-                modified,
+                locale_modified,
                 context,
                 state,
                 previews,
@@ -705,11 +751,7 @@ def build(
             payload["_market_availability"] = market.record_fields(locale)["market_availability"]
             rendered["json_feed"] = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
             for format_name in ("atom", "rss"):
-                document = ET.fromstring(rendered[format_name])
-                parent = document.find("channel") if format_name == "rss" else document
-                availability = ET.SubElement(parent, "{" + SITE + "/market-availability}availability")
-                availability.text = json.dumps(market.record_fields(locale)["market_availability"], ensure_ascii=False)
-                rendered[format_name] = ET.tostring(document, encoding="unicode") + "\n"
+                rendered[format_name] = _market_xml(rendered[format_name], locale, format_name)
         ET.fromstring(rendered["atom"])
         ET.fromstring(rendered["rss"])
         json.loads(rendered["json_feed"])

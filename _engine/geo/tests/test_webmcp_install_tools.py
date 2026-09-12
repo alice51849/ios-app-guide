@@ -239,7 +239,7 @@ class WebMcpInstallToolsTests(unittest.TestCase):
         )
 
     def test_every_official_locale_and_live_app_has_one_tool(self):
-        pages = tools.PAGES
+        pages = Path(os.environ.get("GEO_PAGES", tools.PAGES))
         if not (pages / "en-US").is_dir():
             self.skipTest("Generated Pages tree is not linked")
         live = {
@@ -273,8 +273,8 @@ class WebMcpInstallToolsTests(unittest.TestCase):
                         str(APPS[key]["name"]),
                         payload["app_name"],
                     )
-                    if locale == "bn-BD":
-                        assert_blocked_page(self, source)
+                    if tools.market.is_unavailable(locale, str(APPSTORE[key])):
+                        assert_blocked_page(self, source, locale)
                         assert_blocked_record(self, payload, ("app_store_url",))
                         continue
                     validated_app_store_url(

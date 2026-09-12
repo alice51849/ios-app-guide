@@ -272,7 +272,7 @@ def render_share(
     if "</body>" not in source:
         raise ValueError(f"App Store share page has no closing body: {path}")
     locale = market_surface_policy.document_locale(source, path)
-    if market.is_unavailable(locale):
+    if market.is_unavailable(locale, app_id):
         return market_surface_policy.enforce_html(BLOCK_RE.sub("\n", source), locale, app_id=app_id)
     if store_url is None:
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)

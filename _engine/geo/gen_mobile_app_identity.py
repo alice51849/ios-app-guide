@@ -568,7 +568,7 @@ def ensure_mobile_identity(
 ) -> tuple[bool, int, bool]:
     source = path.read_text(encoding="utf-8")
     page_url, language = _page_metadata(source, path, site)
-    if market.is_unavailable(language):
+    if market.is_unavailable(language, app_id):
         updated = market_surface_policy.enforce_html(source, language, app_id=app_id, name=app_name)
         if updated != source:
             path.write_text(updated, encoding="utf-8")

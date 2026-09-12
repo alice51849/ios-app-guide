@@ -956,8 +956,8 @@ def _campaign_url(
     locale: str,
     intent_type: str,
     provider_token: str,
-) -> str:
-    if market.is_unavailable(locale):
+) -> str | None:
+    if market.is_unavailable(locale, str(app["app_store_id"])):
         return None
     if not provider_token:
         raise ValueError(
@@ -1175,7 +1175,7 @@ def _build_record(
         "publisher_disclosure": disclosure,
         "is_independent_review": False,
         "is_ranking": False,
-        **market.record_fields(locale),
+        **market.record_fields(locale, str(app["app_store_id"])),
     }
     if route.get("_conversion") is not None:
         record["store_label"] = UI[locale]["store"]
@@ -1302,7 +1302,7 @@ def build(
             "geo_learn",
         }
         and len(str(record["campaign_token"])) <= 30
-        for record in records if not market.is_unavailable(str(record["locale"]))
+        for record in records if not market.is_unavailable(str(record["locale"]), str(record["app_store_id"]))
     )
     gates = {
         "exact_release_cardinality": _gate(
@@ -1558,7 +1558,7 @@ def render_html(record: dict[str, Any]) -> str:
         f"<p>{html.escape(str(record['culture_route']))}</p>"
     )
     context = f"<p>{html.escape(str(record['culture_route']))}</p>" if hero else ""
-    bottom_cta = market.note_html(str(record["locale"]), str(record["app_name"])) if market.is_unavailable(str(record["locale"])) else "" if hero else (
+    bottom_cta = market.note_html(str(record["locale"]), str(record["app_name"]), str(record["app_store_id"])) if market.is_unavailable(str(record["locale"]), str(record["app_store_id"])) else "" if hero else (
         f'<a class="cta" rel="noopener" href="{store_url}">{store_label}: {app_name}</a>'
     )
     conversion_style = """
@@ -1633,7 +1633,7 @@ footer{{margin-top:1rem;font-size:.92rem}}
 """
 
 
-    return market_surface_policy.enforce_html(document, str(record["locale"]))
+    return market_surface_policy.enforce_html(document, str(record["locale"]), app_id=str(record["app_store_id"]), name=str(record["app_name"]))
 
 
 def _json_text(value: object) -> str:
@@ -2187,7 +2187,7 @@ def _expected_manifest(
             "app_key": record["app_key"],
             "app_store_id": record["app_store_id"],
             "app_store_url": record["app_store_url"],
-            **market.record_fields(str(record["locale"])),
+            **market.record_fields(str(record["locale"]), str(record["app_store_id"])),
             "locale": record["locale"],
             "intent_type": record["intent_type"],
             "campaign_token": record["campaign_token"],
@@ -2273,7 +2273,7 @@ def _rendered_outputs(
             ),
             "managed_owner": MANAGED_OWNER,
             "expected_route_pages": len(records),
-            "feed_items": sum(not market.is_unavailable(str(record["locale"])) for record in records),
+            "feed_items": sum(not market.is_unavailable(str(record["locale"]), str(record["app_store_id"])) for record in records),
             "sitemap_urls": len(records),
             "fallback_records": report["coverage"]["fallback_records"],
             "abstained_pairs": report["coverage"]["abstained_pairs"],
@@ -2340,7 +2340,7 @@ def _validate_release_cardinality(
     output_by_path = _validated_managed_outputs(outputs)
     validated_route_paths: list[PurePosixPath] = []
     for position, route in enumerate(routes):
-        if not isinstance(route, dict) or set(route) != MANIFEST_ROUTE_FIELDS | set(market.record_fields(str(route.get("locale")))):
+        if not isinstance(route, dict) or set(route) != MANIFEST_ROUTE_FIELDS | set(market.record_fields(str(route.get("locale")), str(route.get("app_store_id")))):
             raise ValueError(
                 f"High-intent route {position} fields differ from contract"
             )
@@ -2594,7 +2594,7 @@ def verify_production_closure(
         if isinstance(item, dict)
     }
     route_ids = {str(route["route_id"]) for route in routes}
-    if feed_ids != {str(route["route_id"]) for route in routes if not market.is_unavailable(str(route["locale"]))}:
+    if feed_ids != {str(route["route_id"]) for route in routes if not market.is_unavailable(str(route["locale"]), str(route["app_store_id"]))}:
         raise ValueError("High-intent feed does not exactly cover managed routes")
 
     sitemap_text = (output_dir / SITEMAP_RELATIVE).read_text(encoding="utf-8")
@@ -2635,9 +2635,9 @@ def verify_production_closure(
                 page,
             )
         ]
-        if market.is_unavailable(str(route["locale"])):
+        if market.is_unavailable(str(route["locale"]), str(route["app_store_id"])):
             market.validate_record(route, url_fields=("app_store_url",))
-            if ctas or "apps.apple.com" in page or market.market_state(str(route["locale"])) not in page or market.unavailable_reason(str(route["locale"])) not in page:
+            if ctas or "apps.apple.com" in page or market.market_state(str(route["locale"]), str(route["app_store_id"])) not in page or market.unavailable_reason(str(route["locale"]), str(route["app_store_id"])) not in page:
                 raise ValueError(f"Unavailable route is not a blocked content surface: {relative}")
             continue
         if len(ctas) != 1:

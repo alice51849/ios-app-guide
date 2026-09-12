@@ -2,11 +2,12 @@
 title: "iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/zh-Hans/index.html"
-modified: "2026-09-11"
+modified: "2026-09-12"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
+market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_APP_NOT_SOLD", "evidence": {"source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software", "observed_at": "2026-09-12", "country": "CN", "lookup_app_results": 0, "lookup_control_app_id": "6791658210", "lookup_control_results": 1, "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db", "app_store_id": "6778269699"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 ---
 
 # iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力
@@ -17,7 +18,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 一次性解锁
 - 无广告
 
-[在 App Store 获取 Lumi Math Planet →](https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
+Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。
 
 [阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

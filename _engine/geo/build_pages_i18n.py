@@ -1603,15 +1603,15 @@ def build_one(key, locale, all_locales):
     # bn-BD 的依據是 Apple 官方 174 國清單沒有 Bangladesh、/bd/ 會 301 到 /us/、
     # lookup 與 search country=BD 皆 0。這裡回 None 之後,頁面改渲染母語的
     # availability 說明,而不是一個指向別國商店的連結,也不是 disabled 死鈕。
-    if market_availability.is_unavailable(locale):
+    if market_availability.is_unavailable(locale, APPSTORE.get(key)):
         url = None
     ui = get_ui(locale)
     # 沒有市場連結時渲染母語 availability 說明。刻意**不用** disabled 按鈕:
     # 一個點不動的下載鈕只會讓人以為壞掉,一句說清楚原因的話才是誠實的。
     if url is None:
         store_block = (
-            market_availability.note_html(locale, name)
-            + f'<p><a href="{html.escape(SITE, quote=True)}/alternatives/">বিকল্প অ্যাপ</a></p>'
+            market_availability.note_html(locale, name, APPSTORE.get(key))
+            + (f'<p><a href="{html.escape(SITE, quote=True)}/alternatives/">বিকল্প অ্যাপ</a></p>' if locale == "bn-BD" else "")
         )
     else:
         store_block = (
@@ -1653,14 +1653,14 @@ def build_one(key, locale, all_locales):
         "featureList": feats,
         "keywords": ", ".join(kws),
     }
-    if market_availability.is_unavailable(locale):
+    if market_availability.is_unavailable(locale, APPSTORE.get(key)):
         app_schema.update({
             "@id": f"urn:apple:app:id{APPSTORE[key]}",
             "identifier": {
                 "@type": "PropertyValue", "propertyID": "Apple App Store ID",
                 "value": str(APPSTORE[key]),
             },
-            **market_availability.record_fields(locale),
+            **market_availability.record_fields(locale, APPSTORE.get(key)),
         })
     schemas = [app_schema]
     if faq:
@@ -1808,7 +1808,7 @@ def localized_directory_records(locale, keys):
         )
         country = LOCALE_STOREFRONTS[locale]
         storefront = None
-        if not market_availability.is_unavailable(locale) and app_id in availability.get(country, frozenset()):
+        if not market_availability.is_unavailable(locale, app_id) and app_id in availability.get(country, frozenset()):
             detail = details.get(country, {}).get(app_id)
             if detail is not None:
                 storefront = localized_storefront_detail(detail, locale)
@@ -1835,14 +1835,14 @@ def localized_directory_records(locale, keys):
                 "icon_url": icon_url,
                 "guide_url": f"{SITE}/{locale}/{key}.html",
                 "store_url": store_url,
-                "canonical_store": None if market_availability.is_unavailable(locale) else canonical_store,
+                "canonical_store": None if market_availability.is_unavailable(locale, app_id) else canonical_store,
                 "storefront_verified": store_url is not None and store_url != canonical_store,
                 "storefront": storefront,
                 "category": SCHEMA_CAT.get(
                     APPS[key].get("category", "utility"),
                     "UtilitiesApplication",
                 ),
-                **({"locale": locale, **market_availability.record_fields(locale)} if market_availability.is_unavailable(locale) else {}),
+                **({"locale": locale, **market_availability.record_fields(locale, app_id)} if market_availability.is_unavailable(locale, app_id) else {}),
             }
         )
     records.sort(
@@ -1855,14 +1855,14 @@ def localized_directory_records(locale, keys):
 
 
 def localized_directory_schema_item(record):
-    if market_availability.is_unavailable(record.get("locale")):
+    if market_availability.is_unavailable(record.get("locale"), record["app_id"]):
         return {
             "@type": "MobileApplication", "@id": f"urn:apple:app:id{record['app_id']}",
             "identifier": {"@type": "PropertyValue", "propertyID": "Apple App Store ID", "value": record["app_id"]},
             "name": record["name"], "description": record["subtitle"],
             "operatingSystem": "iOS", "applicationCategory": record["category"],
             "image": record["icon_url"], "url": record["guide_url"],
-            **market_availability.record_fields(record["locale"]),
+            **market_availability.record_fields(record["locale"], record["app_id"]),
         }
     item = {
         "@type": "MobileApplication",
@@ -2150,8 +2150,8 @@ def build_locale_index(locale, keys, locales):
             f'<p class="app-price"><strong>{e(ui["price"])}:</strong> '
             f'{e(record["pricing"])}</p>'
             f'{localized_directory_storefront_proof(record)}</div>'
-            + (f'<span data-market-state="{market_availability.market_state(locale)}">N/A</span>'
-            if market_availability.is_unavailable(locale) else
+            + (f'<span data-market-state="{market_availability.market_state(locale, record["app_id"])}">N/A</span>'
+            if market_availability.is_unavailable(locale, record["app_id"]) else
             f'<a class="store-cta" href="{e(record["store_url"])}" '
             'referrerpolicy="no-referrer" '
             f'aria-label="{e(ui["get"].format(name=record["name"]))}">'

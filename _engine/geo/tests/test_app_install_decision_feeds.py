@@ -70,7 +70,7 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                 record["decision_page_url"] for record in records
             }
             expected_store_urls = {
-                record["app_store_url"] for record in records
+                record["app_store_url"] for record in records if record["app_store_url"]
             }
 
             atom_path = (
@@ -163,12 +163,12 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                 content_html = entry.find(f"{atom_ns}content").text
                 # The embedded HTML keeps its entities, so a campaign URL
                 # arrives here as "&amp;" between pt/ct/mt.
-                self.assertIn(
-                    '<a href="'
-                    + html.escape(record["app_store_url"], quote=True)
-                    + '"><img ',
-                    content_html,
-                )
+                if record["app_store_url"]:
+                    self.assertIn('<a href="' + html.escape(record["app_store_url"], quote=True) + '"><img ', content_html)
+                else:
+                    assert_blocked_record(self, record)
+                    self.assertNotIn("apps.apple.com", content_html)
+                    self.assertIn("MARKET_APP_NOT_SOLD", content_html)
                 self.assertIn(f'src="{image_url}"', content_html)
                 self.assertIn('width="1200" height="675"', content_html)
 
@@ -227,12 +227,11 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     },
                     item.find(f"{media_ns}thumbnail").attrib,
                 )
-                self.assertIn(
-                    'href="'
-                    + html.escape(record["app_store_url"], quote=True)
-                    + '"><img ',
-                    item.find("description").text,
-                )
+                if record["app_store_url"]:
+                    self.assertIn('href="' + html.escape(record["app_store_url"], quote=True) + '"><img ', item.find("description").text)
+                else:
+                    assert_blocked_record(self, record)
+                    self.assertNotIn("apps.apple.com", item.find("description").text)
 
             json_feed = json.loads(json_path.read_text(encoding="utf-8"))
             self.assertEqual(
@@ -247,7 +246,7 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             )
             self.assertEqual(
                 expected_store_urls,
-                {item["external_url"] for item in json_feed["items"]},
+                {item["external_url"] for item in json_feed["items"] if "external_url" in item},
             )
             self.assertFalse(json_feed["_meta"]["is_ranking"])
             self.assertFalse(
@@ -257,7 +256,11 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                 record["record_id"]: record for record in records
             }
             for item in json_feed["items"]:
-                self.assertIn(item["external_url"], item["content_text"])
+                if "external_url" in item:
+                    self.assertIn(item["external_url"], item["content_text"])
+                else:
+                    assert_blocked_record(self, records_by_id[item["id"]])
+                    self.assertNotIn("apps.apple.com", item["content_text"])
                 self.assertNotIn("\n", item["content_text"])
                 record = records_by_id[item["id"]]
                 image_url = (
@@ -283,12 +286,11 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     ],
                     item["attachments"],
                 )
-                self.assertIn(
-                    '<a href="'
-                    + html.escape(record["app_store_url"], quote=True)
-                    + '"><img ',
-                    item["content_html"],
-                )
+                if record["app_store_url"]:
+                    self.assertIn('<a href="' + html.escape(record["app_store_url"], quote=True) + '"><img ', item["content_html"])
+                else:
+                    self.assertNotIn("apps.apple.com", item["content_html"])
+                    self.assertIn("MARKET_APP_NOT_SOLD", item["content_html"])
                 storefront_facts = record["storefront_facts"]
                 if storefront_facts is not None:
                     formatted_price = str(

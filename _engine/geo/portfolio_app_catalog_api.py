@@ -336,15 +336,15 @@ def localized_record(
         "purchase_model": record["purchase_model"],
         "one_time_option": record["one_time_option"],
         "capabilities": record["capabilities"],
-        "app_store_url": None if market.is_unavailable(locale) else campaign_app_store_url(
+        "app_store_url": None if market.is_unavailable(locale, str(record["app_store_id"])) else campaign_app_store_url(
             direct_store,
             _campaign(locale),
         ),
         "guide_url": f"{SITE}/{locale}/{record['key']}.html",
         "verified_live": True,
     }
-    if market.is_unavailable(locale):
-        localized.update({"locale": locale, **market.record_fields(locale)})
+    if market.is_unavailable(locale, str(record["app_store_id"])):
+        localized.update({"locale": locale, **market.record_fields(locale, str(record["app_store_id"]))})
         return localized
     if storefront_details is None:
         storefront_details = load_storefront_details(pages)
@@ -461,15 +461,18 @@ def feed_payload(
         item = {
             "id": identifier,
             "url": app["guide_url"],
-            "external_url": _retarget_app_store_campaign(
-                app,
-                _feed_campaign(locale),
-            ),
+            "external_url": None,
             "title": app["name"],
             "content_text": app["summary"],
             "tags": app["search_terms"],
             "language": locale,
         }
+        if market.validate_record({**app, "locale": locale}, url_fields=("app_store_url",)):
+            item["external_url"] = _retarget_app_store_campaign(app, _feed_campaign(locale))
+        else:
+            item.pop("external_url")
+            item["_market_availability"] = app["market_availability"]
+            item["content_text"] += " " + market.note(locale, app_id=str(app["app_store_id"]))
         old = previous.get(str(item["id"]))
         old_timestamp = old.get("date_modified") if old else None
         comparable = dict(old or {})
@@ -940,6 +943,32 @@ def feed_schema() -> dict[str, object]:
         "enum": [market.record_fields(locale)["market_availability"] for locale in market.UNAVAILABLE_MARKETS]
     }
     schema["properties"]["items"]["minItems"] = 0
+    item = schema["properties"]["items"]["items"]
+    item["required"].remove("external_url")
+    item["properties"]["_market_availability"] = {
+        "enum": [
+            market.record_fields(locale, app_id)["market_availability"]
+            for locale, app_ids in market.UNAVAILABLE_APP_MARKETS.items()
+            for app_id in sorted(app_ids)
+        ]
+    }
+    item["allOf"] = [{
+        "if": {"anyOf": [{
+            "properties": {
+                "language": {"const": locale},
+                "id": {"enum": [f"https://apps.apple.com/app/id{app_id}" for app_id in sorted(app_ids)]},
+            },
+            "required": ["language", "id"],
+        } for locale, app_ids in market.UNAVAILABLE_APP_MARKETS.items()]},
+        "then": {
+            "required": ["_market_availability"],
+            "not": {"required": ["external_url"]},
+        },
+        "else": {
+            "required": ["external_url"],
+            "not": {"required": ["_market_availability"]},
+        },
+    }]
     schema["allOf"] = [{
         "if": {"properties": {"language": {"enum": list(market.UNAVAILABLE_MARKETS)}}},
         "then": {"properties": {
@@ -1296,8 +1325,16 @@ def validate_artifacts(
                 raise ValueError(f"JSON Feed item language mismatch: {locale}")
             if item["url"] != app["guide_url"]:
                 raise ValueError(f"JSON Feed guide mismatch: {locale}")
-            if item["content_text"] != app["summary"]:
+            available = market.validate_record({**app, "locale": locale}, url_fields=("app_store_url",))
+            expected_summary = app["summary"] if available else (
+                app["summary"] + " " + market.note(locale, app_id=str(app["app_store_id"]))
+            )
+            if item["content_text"] != expected_summary:
                 raise ValueError(f"JSON Feed summary mismatch: {locale}")
+            if not available:
+                if "external_url" in item or item.get("_market_availability") != app["market_availability"]:
+                    raise ValueError(f"Unavailable JSON Feed item contains a store link: {locale}")
+                continue
             try:
                 validated_app_store_url(
                     str(item["external_url"]),

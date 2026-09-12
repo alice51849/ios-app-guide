@@ -1137,7 +1137,7 @@ def _page_record(
     app_id = str(app["app_store_id"])
     owner_ids = (
         market_surface_policy.application_ids(source)
-        if market.is_unavailable(locale) else direct_app_store_ids(source, path)
+        if market.is_unavailable(locale, app_id) else direct_app_store_ids(source, path)
     )
     if app_id not in owner_ids:
         raise ValueError(f"Wrong App Store owner in {path}")
@@ -1155,7 +1155,7 @@ def _page_record(
         raise ValueError(
             f"Unexpected canonical in {path}: {canonical}"
         )
-    cta_label = market.note(locale) if market.is_unavailable(locale) else _app_store_cta_label(source, app_id)
+    cta_label = market.note(locale, app_id=app_id) if market.is_unavailable(locale, app_id) else _app_store_cta_label(source, app_id)
     record = {
         "record_id": f"{locale}:{key}:{page_slug}",
         "locale": locale,
@@ -1174,10 +1174,10 @@ def _page_record(
         "canonical_guide_url": canonical,
         "canonical_app_store_url": (
             None
-            if market.is_unavailable(locale)
+            if market.is_unavailable(locale, app_id)
             else f"https://apps.apple.com/app/id{app_id}"
         ),
-        "app_store_url": None if market.is_unavailable(locale) else _app_store_url(app_id, locale, availability),
+        "app_store_url": None if market.is_unavailable(locale, app_id) else _app_store_url(app_id, locale, availability),
         "app_store_cta_label": cta_label,
         "publisher_disclosure": _publisher_disclosure(
             source,
@@ -1188,7 +1188,7 @@ def _page_record(
         "measured_search_volume": False,
         "is_ranking": False,
         "verified_live": True,
-        **market.record_fields(locale),
+        **market.record_fields(locale, app_id),
     }
     market.validate_record(record)
     return record
@@ -1855,9 +1855,9 @@ def _page(
         f'<td><a href="{escape(str(record["canonical_guide_url"]), quote=True)}">'
         f'{escape(ui["Guide"])}</a></td>'
         + (
-            f'<td data-market-state="{market.market_state(locale)}" '
-            f'data-market-reason="{market.unavailable_reason(locale)}">N/A</td>'
-            if market.is_unavailable(locale) else
+            f'<td data-market-state="{market.market_state(locale, record["app_store_id"])}" '
+            f'data-market-reason="{market.unavailable_reason(locale, record["app_store_id"])}">N/A</td>'
+            if market.is_unavailable(locale, record["app_store_id"]) else
             f'<td><a rel="nofollow noopener" href="{escape(str(record["app_store_url"]), quote=True)}">'
             f'{escape(str(record["app_store_cta_label"]))}</a></td>'
         ) +

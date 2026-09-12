@@ -31,17 +31,18 @@ def rewrite_document(value, locale=None):
         if isinstance(value.get(field), str)
     ), None)
     local = declared or locale
+    app_id = value.get("app_store_id", value.get("app_id"))
     result = {
         key: rewrite_document(child, key if key in market.UNAVAILABLE_MARKETS else local)
         for key, child in value.items()
     }
-    if market.is_unavailable(local):
-        result = policy.unavailable_json(result, local)
+    if market.is_unavailable(local, app_id):
+        result = policy.unavailable_json(result, local, app_id)
         if URL_FIELDS.intersection(value):
             for field in URL_FIELDS.intersection(value):
                 result[field] = None
-            result.update(market.record_fields(local))
-        if isinstance(value.get("version"), str) and "jsonfeed.org" in value["version"]:
+            result.update(market.record_fields(local, app_id))
+        if market.is_unavailable(local) and isinstance(value.get("version"), str) and "jsonfeed.org" in value["version"]:
             result["items"] = []
             if "_lumi_catalog" in result:
                 result["_lumi_catalog"].update(market.record_fields(local))
@@ -63,10 +64,13 @@ def _paths(pages):
                 yield path
 
 
-def generate(pages: Path, *, check=False):
+def generate(pages: Path, *, check=False, paths=None):
     changed = []
     checked = 0
-    for path in _paths(pages):
+    candidates_to_check = [pages / path for path in paths] if paths is not None else _paths(pages)
+    for path in candidates_to_check:
+        if not path.is_file() or path.is_symlink() or not path.resolve().is_relative_to(pages.resolve()):
+            raise ValueError(f"Not an existing owned file: {path}")
         relative = path.relative_to(pages)
         locale = market.locale_from_path(relative)
         if path.suffix not in {".html", ".json", ".jsonld", ".xml", ".md", ".txt", ".csv"}:
@@ -74,7 +78,11 @@ def generate(pages: Path, *, check=False):
         if locale is None and path.suffix not in {".json", ".jsonld", ".csv"}:
             continue
         source = path.read_text(encoding="utf-8")
-        if locale is None and "bn-BD" not in source:
+        if locale is None and "bn-BD" not in source and not (
+            "zh-Hans" in source and any(
+                app_id in source for app_id in market.UNAVAILABLE_APP_MARKETS["zh-Hans"]
+            )
+        ):
             continue
         checked += 1
         updated = source
@@ -106,7 +114,7 @@ def generate(pages: Path, *, check=False):
                 writer.writeheader()
                 writer.writerows(rows)
                 updated = output.getvalue()
-        elif locale:
+        elif market.is_unavailable(locale):
             if path.suffix == ".xml":
                 root = ET.fromstring(source)
                 for node in root.iter():
@@ -153,8 +161,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages", type=Path, required=True)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--path", action="append", help="Only refresh these existing relative paths.")
     args = parser.parse_args()
-    report = generate(args.pages, check=args.check)
+    report = generate(args.pages, check=args.check, paths=args.path)
     print(json.dumps(report, ensure_ascii=False))
     return int(args.check and report["changed"] > 0)
 

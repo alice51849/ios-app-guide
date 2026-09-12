@@ -4,9 +4,9 @@
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
   "url": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
-  "dateModified": "2026-09-11",
-  "content_digest": "79e684484f3f27eb40af6602daf04dd3367393cd2bfda2befa7e2296582886a1",
-  "generation_digest": "2e2a785deab7afac63bddedf44699b648d3a6c2beae1a7d2d792c2af89fca4a0",
+  "dateModified": "2026-09-12",
+  "content_digest": "30ba8e65d17838e85dec20a6e3a8fe2715227667f97d4343836b78ff7093bde5",
+  "generation_digest": "afdad26b6083c17c09534055e97f7c4acae8157bb3ee44da9c96984201f3ce47",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -48713,14 +48713,33 @@
       "one_time_option": true,
       "source_persona_query": "best educational game app for kids no ads iphone",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "在 App Store 获取 Lumi Letters →",
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "publisher_disclosure": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
-      "verified_live": true
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778748533"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "record_id": "zh-Hans:lumiletterspro:best-complete-phonics-app-for-homeschool-kindergarten-prep",
@@ -48755,14 +48774,33 @@
       "one_time_option": true,
       "source_persona_query": "best math game app for kids to build logic skills iphone",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "在 App Store 获取 Lumi Math Planet →",
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "publisher_disclosure": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
-      "verified_live": true
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778269699"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "record_id": "zh-Hans:lumimathpro:best-complete-math-learning-app-for-preschool-and-early-grades",
@@ -48776,14 +48814,33 @@
       "one_time_option": true,
       "source_persona_query": "best complete math learning app for preschool and early grades",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "在App Store获取Lumi Math Pro →",
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "publisher_disclosure": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
-      "verified_live": true
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6776958488"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "record_id": "zh-Hans:lumimission:best-bedtime-routine-app-for-preschoolers-with-no-ads",
@@ -48839,14 +48896,33 @@
       "one_time_option": true,
       "source_persona_query": "best travel activity app for kids on family trips",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "在App Store获取Lumi Trip Planet →",
+      "canonical_app_store_url": null,
+      "app_store_url": null,
+      "app_store_cta_label": "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "publisher_disclosure": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
-      "verified_live": true
+      "verified_live": true,
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6787193643"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "record_id": "zh-Hans:lumiweather:best-weather-app-to-help-parents-plan-outdoor-time-with-kids",

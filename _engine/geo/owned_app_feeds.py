@@ -272,8 +272,8 @@ def load_sources(pages: Path, source: Path) -> tuple[dict, dict, dict]:
             else:
                 if any(field in app for field in ("storefront_facts", "price", "currency")):
                     raise ValueError(f"Storefront facts in unavailable market: {locale}/{key}")
-                metadata.update(market.record_fields(locale))
-                metadata["availability_note"] = market.note(locale)
+                metadata.update(market.record_fields(locale, app_id))
+                metadata["availability_note"] = market.note(locale, app_id=app_id)
                 validate_text(locale, metadata["availability_note"], "market notice")
             parts = [summary, copy[model]]
             markup = [f"<p>{html.escape(part)}</p>" for part in parts]
@@ -651,10 +651,10 @@ def read_manifest(pages: Path) -> dict:
             validate_text(locale, item["title"], "title", require_native=False)
             validate_text(locale, facts["publisher_disclosure"], "disclosure")
             validate_text(locale, facts["purchase_label"], "purchase label")
-            if market.is_unavailable(locale):
+            if market.is_unavailable(locale, facts["app_store_id"]):
                 if (
                     "apps.apple.com" in json.dumps(item, ensure_ascii=False).casefold()
-                    or facts.get("market_availability") != market.record_fields(locale)["market_availability"]
+                    or facts.get("market_availability") != market.record_fields(locale, facts["app_store_id"])["market_availability"]
                     or any(name in facts for name in ("price", "currency", "storefront_facts"))
                 ):
                     raise ValueError("Unavailable-market feed contains store claims")

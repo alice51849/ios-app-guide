@@ -600,7 +600,7 @@ def ensure_card(
         raise ValueError(f"Decision-card icon is missing: {icon}")
     locale = gen_smart_app_banners._page_language(path, pages)
     locale = "en-US" if locale == "en" else locale
-    if market.is_unavailable(locale):
+    if market.is_unavailable(locale, app_id):
         updated = market_surface_policy.enforce_html(source, locale, app_id=app_id)
         return _write_if_changed(path, updated, previous=source)
     if locale not in OFFICIAL_LOCALE_SET:

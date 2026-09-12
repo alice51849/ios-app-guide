@@ -718,7 +718,7 @@ class PublisherIntentOutputTests(unittest.TestCase):
             per_app[key].add(locale)
             app_id = expected_ids[key]
             self.assertEqual(app_id, record["app_store_id"])
-            if locale == "bn-BD":
+            if catalog.market.is_unavailable(locale, app_id):
                 assert_blocked_record(self, record)
             else:
                 self.assertEqual(
@@ -1034,7 +1034,9 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 self.assertEqual(len(store_urls), 0)
                 self.assertEqual(table_body.group(1).count(">N/A</td>"), catalog.EXPECTED_APP_COUNT)
             else:
-                self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))
+                unavailable = catalog.market.UNAVAILABLE_APP_MARKETS.get(locale, ())
+                self.assertEqual(catalog.EXPECTED_APP_COUNT - len(unavailable), len(store_urls))
+                self.assertEqual(len(unavailable), table_body.group(1).count(">N/A</td>"))
             for url in store_urls:
                 decoded = html.unescape(url)
                 self.assertEqual(decoded, validated_app_store_url(decoded))

@@ -175,17 +175,41 @@ def json_references(value: object, *, locale: str | None = None,
         schema = schema_node(value, schema)
         local = next(
             (value[name] for name in ("locale", "page_language", "content_language",
-                                     "language", "inLanguage")
+                                     "language", "inLanguage", "_lumi_locale")
              if isinstance(value.get(name), str)),
             None,
         )
         locale = _locale(local, locale)
+        own_id = value.get("app_store_id", value.get("appStoreId", value.get("_lumi_app_store_id")))
+        metadata = [
+            child for key, child in value.items()
+            if key.startswith("_") and isinstance(child, dict) and child.get("app_store_id")
+        ]
+        metadata_ids = {str(child["app_store_id"]) for child in metadata}
+        if len(metadata_ids) > 1:
+            raise AttributionError("Conflicting JSON Feed App Store IDs")
+        if own_id is None:
+            own_id = next(iter(metadata_ids), None)
+        urn_identity = re.fullmatch(r"urn:apple:app:id(\d+)", str(value.get("@id", "")))
+        if own_id is None and urn_identity:
+            own_id = urn_identity[1]
+        feed_identity = value.get("id")
+        if own_id is None and isinstance(feed_identity, str) and is_store_url(feed_identity):
+            match = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(feed_identity).path)
+            if match:
+                own_id = match["app_id"]
+        blocked = market.is_unavailable(locale, own_id or app_id)
+        market_evidence = value.get("market_availability", value.get("_market_availability"))
+        if market_evidence is None:
+            market_evidence = next((child["market_availability"] for child in metadata if "market_availability" in child), None)
         blocked_fields = {
             key for key in value
-            if key in {"canonical_app_store_url", "app_store_url", "_lumi_app_store_url", "storefront_url"}
-        } if market.is_unavailable(locale) else set()
-        if blocked_fields:
-            normalized = {**value, "locale": locale}
+            if key in {"canonical_app_store_url", "app_store_url", "_lumi_app_store_url", "storefront_url", "external_url"}
+        } if blocked else set()
+        if blocked_fields or (blocked and market_evidence is not None):
+            normalized = {**value, "locale": locale, "app_store_id": own_id or app_id}
+            normalized.setdefault("market_availability", market_evidence)
+            normalized.setdefault("app_store_url", None)
             evidence = normalized.get("market_availability")
             if isinstance(evidence, str):
                 try:
@@ -195,19 +219,10 @@ def json_references(value: object, *, locale: str | None = None,
                 for key in blocked_fields:
                     if normalized[key] == "":
                         normalized[key] = None
-            market.validate_record(normalized, url_fields=tuple(blocked_fields))
+            market.validate_record(normalized, url_fields=tuple(blocked_fields) or ("app_store_url",))
+            blocked_fields.update(("market_availability", "_market_availability", "_lumi_app_store_id"))
             if value.get("storefront_facts"):
                 raise AttributionError("Unavailable market cannot publish storefront facts")
-        own_id = value.get("app_store_id", value.get("appStoreId"))
-        if own_id is None and any(key in value for key in ("external_url", "content_html", "content_text")):
-            metadata_ids = {
-                str(child["app_store_id"])
-                for key, child in value.items()
-                if key.startswith("_") and isinstance(child, dict) and child.get("app_store_id")
-            }
-            if len(metadata_ids) > 1:
-                raise AttributionError("Conflicting JSON Feed App Store IDs")
-            own_id = next(iter(metadata_ids), None)
         if value.get("platform") == "itunes":
             own_id = value.get("id")
             if not isinstance(value.get("url"), str) or not value["url"]:
@@ -225,7 +240,7 @@ def json_references(value: object, *, locale: str | None = None,
             }.issubset(value)
             if not has_link and linked_app_id not in {None, app_id}:
                 raise AttributionError("Conflicting nested App Store record ID")
-            if value.get("platform") != "itunes" and not has_link and linked_app_id != app_id and not site_descriptor:
+            if value.get("platform") != "itunes" and not has_link and linked_app_id != app_id and not site_descriptor and not blocked_fields:
                 raise AttributionError(f"Missing App Store link in record {app_id}")
             if has_link:
                 linked_app_id = app_id
@@ -236,7 +251,7 @@ def json_references(value: object, *, locale: str | None = None,
             has_destination = any(key.casefold() in ACTION_FIELDS for key in value) or (
                 isinstance(value.get("url"), str) and is_store_url(value["url"])
             )
-            if not identity and not has_destination:
+            if not identity and not has_destination and not blocked_fields:
                 raise AttributionError("App Store feed item is missing a destination link")
             canonical = validated_app_store_url(value["id"])
             app_id = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(canonical).path)["app_id"]
@@ -763,14 +778,18 @@ def audit_tree(pages: Path, *, provider: str | None = None,
             errors.append(error)
         elif relative.startswith("api/v1/ios-app-catalog/locales/") and relative.endswith(".json"):
             catalog_coverage[Path(relative).stem] = app_ids
-    missing = {(app_id, locale) for app_id in expected_app_ids for locale in market.publishable_locales(OFFICIAL_LOCALES)} - coverage
+    missing = {
+        (app_id, locale) for app_id in expected_app_ids for locale in OFFICIAL_LOCALES
+        if not market.is_unavailable(locale, app_id)
+    } - coverage
     if missing:
         errors.append(f"Missing App/locale CTA coverage: {len(missing)} cells; {sorted(missing)[:5]}")
     if missing_surfaces := required_surfaces - counts.keys():
         errors.append(f"Missing attribution surfaces: {sorted(missing_surfaces)}")
     if "api" in required_surfaces:
         for locale in OFFICIAL_LOCALES:
-            if market.is_unavailable(locale):
+            eligible = {app_id for app_id in expected_app_ids if not market.is_unavailable(locale, app_id)}
+            if eligible != expected_app_ids:
                 path = pages / "api/v1/ios-app-catalog/locales" / f"{locale}.json"
                 if not path.is_file():
                     errors.append(f"Missing unavailable-market retained catalog: {locale}")
@@ -778,8 +797,8 @@ def audit_tree(pages: Path, *, provider: str | None = None,
                 payload = json.loads(path.read_text(encoding="utf-8"))
                 if {str(app["app_store_id"]) for app in payload.get("apps", [])} != expected_app_ids:
                     errors.append(f"Unavailable-market content coverage mismatch: {locale}")
-                if catalog_coverage.get(locale, set()):
-                    errors.append(f"Unavailable-market catalog still has App Store URLs: {locale}")
+                if catalog_coverage.get(locale, set()) != eligible:
+                    errors.append(f"Unavailable-market catalog CTA coverage mismatch: {locale}")
                 continue
             if catalog_coverage.get(locale) != expected_app_ids:
                 errors.append(f"App Store API catalog CTA coverage mismatch: {locale}")

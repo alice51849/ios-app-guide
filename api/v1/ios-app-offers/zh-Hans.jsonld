@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-09-11",
+  "dateModified": "2026-09-12",
   "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1119,59 +1119,61 @@
     {
       "@type": "ListItem",
       "position": 18,
-      "url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumiletters",
-        "url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Letters",
-        "description": "对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学。所以才有了 Lumi Letters。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6778748533",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6778748533"
         },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6778748533",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6778748533"
+        "name": "Lumi Letters",
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_APP_NOT_SOLD",
+          "evidence": {
+            "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+            "observed_at": "2026-09-12",
+            "country": "CN",
+            "lookup_app_results": 0,
+            "lookup_control_app_id": "6791658210",
+            "lookup_control_results": 1,
+            "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+            "app_store_id": "6778748533"
           },
-          "name": "Lumi Letters",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6778748533",
-          "inLanguage": "zh-Hans",
-          "description": "对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学。所以才有了 Lumi Letters。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumiletters"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ]
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
         }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778748533"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
       }
     },
     {
@@ -1235,117 +1237,121 @@
     {
       "@type": "ListItem",
       "position": 20,
-      "url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumimath",
-        "url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Math Planet",
-        "description": "最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中。所以才有了 Lumi Math Planet。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6778269699",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6778269699"
         },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6778269699",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6778269699"
+        "name": "Lumi Math Planet",
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_APP_NOT_SOLD",
+          "evidence": {
+            "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+            "observed_at": "2026-09-12",
+            "country": "CN",
+            "lookup_app_results": 0,
+            "lookup_control_app_id": "6791658210",
+            "lookup_control_results": 1,
+            "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+            "app_store_id": "6778269699"
           },
-          "name": "Lumi Math Planet",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6778269699",
-          "inLanguage": "zh-Hans",
-          "description": "最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中。所以才有了 Lumi Math Planet。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumimath"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ]
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
         }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778269699"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
       }
     },
     {
       "@type": "ListItem",
       "position": 21,
-      "url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumimathpro",
-        "url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Math Pro",
-        "description": "完整的早期数学App应让计数、数字感和基础运算成为一个连贯的冒险，而不是孤立的练习。所以才有了 Lumi Math Pro。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6776958488",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6776958488"
         },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6776958488",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6776958488"
+        "name": "Lumi Math Pro",
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_APP_NOT_SOLD",
+          "evidence": {
+            "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+            "observed_at": "2026-09-12",
+            "country": "CN",
+            "lookup_app_results": 0,
+            "lookup_control_app_id": "6791658210",
+            "lookup_control_results": 1,
+            "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+            "app_store_id": "6776958488"
           },
-          "name": "Lumi Math Pro",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6776958488",
-          "inLanguage": "zh-Hans",
-          "description": "完整的早期数学App应让计数、数字感和基础运算成为一个连贯的冒险，而不是孤立的练习。所以才有了 Lumi Math Pro。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumimathpro"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ]
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
         }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6776958488"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
       }
     },
     {
@@ -1483,59 +1489,61 @@
     {
       "@type": "ListItem",
       "position": 24,
-      "url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Trip Planet",
-        "description": "带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源。所以才有了 Lumi Trip Planet。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6787193643",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6787193643"
         },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6787193643",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6787193643"
+        "name": "Lumi Trip Planet",
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_APP_NOT_SOLD",
+          "evidence": {
+            "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+            "observed_at": "2026-09-12",
+            "country": "CN",
+            "lookup_app_results": 0,
+            "lookup_control_app_id": "6791658210",
+            "lookup_control_results": 1,
+            "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+            "app_store_id": "6787193643"
           },
-          "name": "Lumi Trip Planet",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6787193643",
-          "inLanguage": "zh-Hans",
-          "description": "带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源。所以才有了 Lumi Trip Planet。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-tripplanet"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ]
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
         }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6787193643"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
       }
     },
     {

@@ -375,7 +375,7 @@ def render_qr_card(
     if "</head>" not in source or "</body>" not in source:
         raise ValueError(f"App Store QR page is missing head or body: {path}")
     cleaned = HEAD_BLOCK_RE.sub("\n", CARD_BLOCK_RE.sub("\n", source))
-    if market.is_unavailable(locale):
+    if market.is_unavailable(locale, app_id):
         return cleaned
     head_index = cleaned.index("</head>")
     for anchor in (DECISION_STYLE_ANCHOR, FEED_DISCOVERY_ANCHOR):
@@ -521,7 +521,7 @@ def generate(
     availability = load_storefront_availability(pages) or None
     provider = resolve_provider_token() or None
     for path, app_id in sorted(qr_targets.items()):
-        if market.is_unavailable(page_locale(path, pages)):
+        if market.is_unavailable(page_locale(path, pages), app_id):
             continue
         source = path.read_text(encoding="utf-8")
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
@@ -544,7 +544,7 @@ def generate(
         prepared[path] = (app_id, *cta, source)
 
     app_ids = {app_id for app_id, _, _, _ in prepared.values()}
-    available_ids = {app_id for path, app_id in qr_targets.items() if not market.is_unavailable(page_locale(path, pages))}
+    available_ids = {app_id for path, app_id in qr_targets.items() if not market.is_unavailable(page_locale(path, pages), app_id)}
     if app_ids != available_ids:
         raise ValueError(
             f"App Store QR coverage mismatch: {len(app_ids)}/{app_count} apps"

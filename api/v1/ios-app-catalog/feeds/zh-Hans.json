@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-09-12",
-    "contentDigest": "c0cc0f9b1ac6da26dcda66f0d27f46336654866309258d413c833dcbd6068af3",
+    "contentDigest": "453b895ccfd918762f0c20ea0748c135fd8983b3c4b88af56af03e2820b83e97",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 47
@@ -661,9 +661,8 @@
     {
       "id": "https://apps.apple.com/app/id6778748533",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/lumiletters.html",
-      "external_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
       "title": "Lumi Letters Lite: ABC Kids",
-      "content_text": "温柔可爱的英语 ABC 启蒙游戏。Lumi Letters Lite 用星球闯关、描写练习和清晰发音，陪伴 3–6 岁孩子轻松认识英文字母，适合学前、幼儿园和亲子共学。",
+      "content_text": "温柔可爱的英语 ABC 启蒙游戏。Lumi Letters Lite 用星球闯关、描写练习和清晰发音，陪伴 3–6 岁孩子轻松认识英文字母，适合学前、幼儿园和亲子共学。 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "tags": [
         "abc",
         "英文字母",
@@ -711,7 +710,26 @@
         "5岁"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "_market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778748533"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      },
+      "date_modified": "2026-09-12T14:51:00Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -771,9 +789,8 @@
     {
       "id": "https://apps.apple.com/app/id6778269699",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/lumimath.html",
-      "external_url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
       "title": "Lumi Math Planet: Explorer",
-      "content_text": "让 3–6 岁孩子在温暖的星球冒险里爱上数学。Lumi Math Planet 把数数、数感、加法和逻辑题变成会发光的小宇宙，孩子答对一题，星球就更亮一点。",
+      "content_text": "让 3–6 岁孩子在温暖的星球冒险里爱上数学。Lumi Math Planet 把数数、数感、加法和逻辑题变成会发光的小宇宙，孩子答对一题，星球就更亮一点。 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "tags": [
         "幼儿数学",
         "儿童数学",
@@ -847,14 +864,32 @@
         "课程"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "_market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778269699"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      },
+      "date_modified": "2026-09-12T14:51:00Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/lumimathpro.html",
-      "external_url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
       "title": "Lumi 数学星球：儿童数字",
-      "content_text": "把高质量数学思维训练，变成孩子愿意反复玩的星球冒险。Lumi Math Pro 适合 3–6 岁孩子，在可爱的太空任务中练习数数、数感、加减、规律、图形与逻辑。",
+      "content_text": "把高质量数学思维训练，变成孩子愿意反复玩的星球冒险。Lumi Math Pro 适合 3–6 岁孩子，在可爱的太空任务中练习数数、数感、加减、规律、图形与逻辑。 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "tags": [
         "心算",
         "数学游戏",
@@ -908,7 +943,26 @@
         "图形"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "_market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6776958488"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      },
+      "date_modified": "2026-09-12T14:51:00Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -1651,9 +1705,8 @@
     {
       "id": "https://apps.apple.com/app/id6787193643",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/tripplanet.html",
-      "external_url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "title": "Lumi Trip Planet 环球旅行",
-      "content_text": "Trip Planet 帮助您的家人将旅行时刻变成每个人都可以分享的神奇任务。创建一次旅行，选择智能任务包，然后观看您的旅程就像电影星云中的发光星座一样。每个人都会收到现实世界的小任务，而不是另一个清单：尝试一种新食物，在机场勇敢地说声谢谢，在博物馆发现三种颜色，拍一张纪念照片，或者帮忙收拾酒店行李。小任务。灿烂的笑容。",
+      "content_text": "Trip Planet 帮助您的家人将旅行时刻变成每个人都可以分享的神奇任务。创建一次旅行，选择智能任务包，然后观看您的旅程就像电影星云中的发光星座一样。每个人都会收到现实世界的小任务，而不是另一个清单：尝试一种新食物，在机场勇敢地说声谢谢，在博物馆发现三种颜色，拍一张纪念照片，或者帮忙收拾酒店行李。小任务。灿烂的笑容。 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。",
       "tags": [
         "家庭旅行",
         "旅行计划",
@@ -1667,7 +1720,26 @@
         "地图"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "_market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6787193643"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      },
+      "date_modified": "2026-09-12T14:51:00Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",

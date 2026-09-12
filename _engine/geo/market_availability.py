@@ -96,6 +96,23 @@ UNAVAILABLE_MARKETS: Final[dict[str, dict[str, str]]] = {
     },
 }
 
+UNAVAILABLE_APP_MARKETS: Final = {
+    "zh-Hans": frozenset({"6778748533", "6778269699", "6776958488", "6787193643"}),
+}
+APP_MARKET_LOOKUP_EVIDENCE: Final = {
+    "source_url": (
+        "https://itunes.apple.com/lookup?"
+        "id=6791658210,6778748533,6778269699,6776958488,6787193643"
+        "&country=cn&entity=software"
+    ),
+    "observed_at": "2026-09-12",
+    "country": "CN",
+    "lookup_app_results": 0,
+    "lookup_control_app_id": "6791658210",
+    "lookup_control_results": 1,
+    "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+}
+
 #: 這些形式永遠不得用來代替缺少的市場連結。
 FORBIDDEN_SUBSTITUTIONS: Final = ("us", "in", "countryless")
 
@@ -104,17 +121,22 @@ class MarketUnavailable(ValueError):
     """試圖為沒有可驗證市場的 locale 產生 App Store 連結。"""
 
 
-def market_state(locale: str) -> str:
-    return UNAVAILABLE_MARKETS.get(locale, {}).get("state", MARKET_AVAILABLE)
+def market_state(locale: str, app_id: str | None = None) -> str:
+    return MARKET_UNAVAILABLE_OR_UNVERIFIED if is_unavailable(locale, app_id) else MARKET_AVAILABLE
 
 
-def is_unavailable(locale: str) -> bool:
-    return isinstance(locale, str) and locale in UNAVAILABLE_MARKETS
+def is_unavailable(locale: str, app_id: str | None = None) -> bool:
+    return isinstance(locale, str) and (
+        locale in UNAVAILABLE_MARKETS
+        or str(app_id) in UNAVAILABLE_APP_MARKETS.get(locale, ())
+    )
 
 
-def unavailable_reason(locale: str) -> str | None:
+def unavailable_reason(locale: str, app_id: str | None = None) -> str | None:
     entry = UNAVAILABLE_MARKETS.get(locale)
-    return entry["reason"] if entry else None
+    if entry:
+        return entry["reason"]
+    return REASON_APP_NOT_SOLD if is_unavailable(locale, app_id) else None
 
 
 def market_evidence(locale: str) -> dict[str, str] | None:
@@ -130,7 +152,7 @@ def canonical_app_store_url_for(app_id: str, locale: str, storefront: str | None
     呼叫端必須把它渲染成不可點的 ``MARKET_UNAVAILABLE_OR_UNVERIFIED`` 狀態,
     **不得**改用 US、India 或 countryless 連結補位。
     """
-    if is_unavailable(locale):
+    if is_unavailable(locale, app_id):
         return None
     if not storefront:
         return None
@@ -146,7 +168,7 @@ def cta_for(app_id: str, locale: str, storefront: str | None) -> dict[str, objec
             "locale": locale,
             "url": None,
             "state": MARKET_UNAVAILABLE_OR_UNVERIFIED,
-            "reason": unavailable_reason(locale) or REASON_LOOKUP_UNSUPPORTED,
+            "reason": unavailable_reason(locale, app_id) or REASON_LOOKUP_UNSUPPORTED,
             "renderable_link": False,
         }
     return {
@@ -179,9 +201,22 @@ def publishable_locales(locales) -> list[str]:
     return [locale for locale in locales if not is_unavailable(locale)]
 
 
-def record_fields(locale: str) -> dict[str, object]:
-    if not is_unavailable(locale):
+def record_fields(locale: str, app_id: str | None = None) -> dict[str, object]:
+    if not is_unavailable(locale, app_id):
         return {}
+    if locale not in UNAVAILABLE_MARKETS:
+        return {
+            "market_availability": {
+                "state": MARKET_UNAVAILABLE_OR_UNVERIFIED,
+                "reason": REASON_APP_NOT_SOLD,
+                "evidence": {**APP_MARKET_LOOKUP_EVIDENCE, "app_store_id": str(app_id)},
+                "value": "N/A",
+                "content_retained": True,
+                "publishable": False,
+                "facts_allowed": False,
+                "outbox_count": 0,
+            }
+        }
     evidence = market_evidence(locale)
     return {
         "market_availability": {
@@ -209,9 +244,10 @@ def record_fields(locale: str) -> dict[str, object]:
 def validate_record(record, *, url_fields=("canonical_app_store_url", "app_store_url")) -> bool:
     """Null is a verified market decision, never a missing-field fallback."""
     locale = record.get("locale")
-    if is_unavailable(locale):
+    app_id = record.get("app_store_id", record.get("app_id"))
+    if is_unavailable(locale, app_id):
         actual = json.dumps(record.get("market_availability"), sort_keys=True)
-        expected = json.dumps(record_fields(locale)["market_availability"], sort_keys=True)
+        expected = json.dumps(record_fields(locale, app_id)["market_availability"], sort_keys=True)
         if actual != expected:
             raise ValueError(f"Missing or invalid market state/reason/evidence: {locale}")
         if any(field not in record or record[field] is not None for field in url_fields):
@@ -224,9 +260,14 @@ def validate_record(record, *, url_fields=("canonical_app_store_url", "app_store
     return True
 
 
-def note(locale: str, name: str | None = None) -> str:
-    if not is_unavailable(locale):
+def note(locale: str, name: str | None = None, app_id: str | None = None) -> str:
+    if not is_unavailable(locale, app_id):
         raise ValueError(f"Market is available: {locale}")
+    if locale == "zh-Hans":
+        return (
+            "Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。"
+            "这里保留产品介绍，不提供跨区下载链接。"
+        )
     subject = f"{name}-এর" if name else "অ্যাপের"
     return (
         f"Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে {subject} "
@@ -235,20 +276,20 @@ def note(locale: str, name: str | None = None) -> str:
     )
 
 
-def note_html(locale: str, name: str | None = None) -> str:
-    evidence = record_fields(locale)["market_availability"]["evidence"]
+def note_html(locale: str, name: str | None = None, app_id: str | None = None) -> str:
+    evidence = record_fields(locale, app_id)["market_availability"]["evidence"]
     return (
-        f'<p class="market-availability" data-market-state="{market_state(locale)}" '
-        f'data-market-reason="{unavailable_reason(locale)}" '
+        f'<p class="market-availability" data-market-state="{market_state(locale, app_id)}" '
+        f'data-market-reason="{unavailable_reason(locale, app_id)}" '
         f'data-market-evidence="{html.escape(evidence["source_url"], quote=True)}">'
-        f"{html.escape(note(locale, name))}</p>"
+        f"{html.escape(note(locale, name, app_id))}</p>"
     )
 
 
 def locale_from_path(path) -> str | None:
     parts = str(path).replace("\\", "/").split("/")
     for part in parts:
-        for locale in UNAVAILABLE_MARKETS:
+        for locale in {*UNAVAILABLE_MARKETS, *UNAVAILABLE_APP_MARKETS}:
             if part == locale or part.startswith(locale + "."):
                 return locale
     return None
@@ -258,16 +299,32 @@ def add_schema_contract(schema, *, url_fields=("canonical_app_store_url", "app_s
     """Keep the available-market schema strict while describing nullable cells."""
     properties = schema["properties"]
     properties["market_availability"] = {
-        "enum": [record_fields(locale)["market_availability"] for locale in UNAVAILABLE_MARKETS]
+        "enum": [
+            *[record_fields(locale)["market_availability"] for locale in UNAVAILABLE_MARKETS],
+            *[
+                record_fields(locale, app_id)["market_availability"]
+                for locale, app_ids in UNAVAILABLE_APP_MARKETS.items()
+                for app_id in sorted(app_ids)
+            ],
+        ]
     }
+    unavailable_conditions = [{
+        "properties": {"locale": {"enum": list(UNAVAILABLE_MARKETS)}},
+        "required": ["locale"],
+    }]
+    if "app_store_id" in properties:
+        unavailable_conditions.extend({
+            "properties": {
+                "locale": {"const": locale},
+                "app_store_id": {"enum": sorted(app_ids)},
+            },
+            "required": ["locale", "app_store_id"],
+        } for locale, app_ids in UNAVAILABLE_APP_MARKETS.items())
     for field in url_fields:
         previous = properties[field]
         properties[field] = {"anyOf": [previous, {"type": "null"}]}
     schema.setdefault("allOf", []).append({
-        "if": {
-            "properties": {"locale": {"enum": list(UNAVAILABLE_MARKETS)}},
-            "required": ["locale"],
-        },
+        "if": {"anyOf": unavailable_conditions},
         "then": {
             "required": ["market_availability", *url_fields],
             "properties": {field: {"type": "null"} for field in url_fields},

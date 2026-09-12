@@ -663,12 +663,12 @@ def render_page(
     if not available:
         schema.pop("sameAs")
         schema.pop("installUrl")
-        schema.update(market.record_fields(locale))
+        schema.update(market.record_fields(locale, record["app_store_id"]))
         schema_text = json.dumps(schema, ensure_ascii=False, sort_keys=True, separators=(",", ":")).replace("</", "<\\/")
     store_block = (
         f'<p><a class="cta" href="{html.escape(record["app_store_url"], quote=True)}" '
         f'rel="nofollow noopener">{html.escape(record["app_store_cta_label"])}</a></p>'
-        if available else market.note_html(locale, record["app_name"])
+        if available else market.note_html(locale, record["app_name"], record["app_store_id"])
     )
     document = f"""<!DOCTYPE html>
 <html lang="{html.escape(locale)}"{direction}>

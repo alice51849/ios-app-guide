@@ -12,8 +12,28 @@
   "thumbnail_height": 675,
   "_lumi_locale": "zh-Hans",
   "_lumi_decision_url": "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/zh-Hans/index.html",
-  "_lumi_app_store_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_oembed_zh_hans&mt=8",
-  "html": "<a href=\"https://apps.apple.com/app/id6778748533?pt=118326163&amp;ct=iag_oembed_zh_hans&amp;mt=8\" rel=\"nofollow noopener\"><img src=\"https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/lumiletters.svg\" alt=\"iPhone 上最佳无广告儿童教育游戏应用\" width=\"600\" height=\"315\" style=\"display:block;width:100%;height:auto;max-width:600px;margin:0;padding:0;border:0\" /></a>",
+  "_lumi_app_store_url": null,
+  "market_availability": {
+    "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+    "reason": "MARKET_APP_NOT_SOLD",
+    "evidence": {
+      "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+      "observed_at": "2026-09-12",
+      "country": "CN",
+      "lookup_app_results": 0,
+      "lookup_control_app_id": "6791658210",
+      "lookup_control_results": 1,
+      "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+      "app_store_id": "6778748533"
+    },
+    "value": "N/A",
+    "content_retained": true,
+    "publishable": false,
+    "facts_allowed": false,
+    "outbox_count": 0
+  },
+  "_lumi_app_store_id": "6778748533",
+  "html": "<img src=\"https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/lumiletters.svg\" alt=\"iPhone 上最佳无广告儿童教育游戏应用\"><p class=\"market-availability\" data-market-state=\"MARKET_UNAVAILABLE_OR_UNVERIFIED\" data-market-reason=\"MARKET_APP_NOT_SOLD\" data-market-evidence=\"https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&amp;country=cn&amp;entity=software\">Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。</p>",
   "width": 600,
   "height": 315,
   "_lumi_buyer_intent_image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/lumiletters.svg"

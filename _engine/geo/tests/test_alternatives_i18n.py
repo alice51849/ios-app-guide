@@ -307,9 +307,12 @@ class AlternativesExact50Tests(unittest.TestCase):
         self.assertEqual(expected_urls, actual_urls)
         blocked = 0
         available = 0
+        by_slug = {route["slug"]: route for route in alternatives.load_manifest()["routes"]}
         for relative, document in rendered.items():
-            if relative.parts[0] == "bn-BD":
-                assert_blocked_page(self, document)
+            locale = relative.parts[0]
+            app_id = by_slug[relative.stem]["app_store_id"]
+            if alternatives.market.is_unavailable(locale, app_id):
+                assert_blocked_page(self, document, locale)
                 blocked += 1
                 continue
             available += 1
@@ -327,8 +330,12 @@ class AlternativesExact50Tests(unittest.TestCase):
                 relative.as_posix(),
             )
             self.assertEqual("8", pairs[-1][1], relative.as_posix())
-        self.assertEqual(blocked, 41)
-        self.assertEqual(available, 41 * 49)
+        expected_blocked = sum(
+            alternatives.market.is_unavailable(locale, route["app_store_id"])
+            for route in by_slug.values() for locale in OFFICIAL_LOCALES
+        )
+        self.assertEqual(blocked, expected_blocked)
+        self.assertEqual(available, 2050 - expected_blocked)
 
     def test_geo_daily_wires_producer_before_sitemap_closure(self) -> None:
         workflow = (

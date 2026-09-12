@@ -20,6 +20,7 @@ import app_install_decision_feeds
 import app_install_decision_routes
 import app_store_storefronts
 import gen_social_previews
+import market_availability as market
 from official_locales import OFFICIAL_LOCALES, open_graph_locale
 import portfolio_app_finder
 import publisher_intent_catalog
@@ -136,7 +137,7 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 ),
                 record["locale_index_url"],
             )
-            if record["locale"] == "bn-BD":
+            if market.is_unavailable(record["locale"], record["app_store_id"]):
                 assert_blocked_record(self, record)
                 self.assertIsNone(record["storefront_facts"])
                 self.assertTrue(record["badge_labels"])
@@ -278,13 +279,13 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 f'href="{app_install_decision_routes.decision_markdown_url(record["app_key"], record["locale"])}">',
                 source,
             )
-            if record["locale"] == "bn-BD":
-                assert_blocked_page(self, source)
+            if market.is_unavailable(record["locale"], record["app_store_id"]):
+                assert_blocked_page(self, source, record["locale"])
             else:
                 self.assertIn(record["app_store_url"], source)
             self.assertIn(record["canonical_guide_url"], source)
             self.assertIn('id="decision-record"', source)
-            if record["locale"] != "bn-BD":
+            if not market.is_unavailable(record["locale"], record["app_store_id"]):
                 self.assertIn(record["app_store_cta_label"], source)
             if record["storefront_facts"] is not None:
                 self.assertIn(
@@ -321,11 +322,11 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 source,
             )
             self.assertIn(record["decision_page_url"], source)
-            if record["locale"] == "bn-BD":
+            if market.is_unavailable(record["locale"], record["app_store_id"]):
                 self.assertNotIn("apps.apple.com", source)
                 self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
-                self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", source)
-                self.assertIn("সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়।", source)
+                self.assertIn(market.unavailable_reason(record["locale"], record["app_store_id"]), source)
+                self.assertIn(market.note(record["locale"], record["app_name"], record["app_store_id"]), source)
             else:
                 self.assertIn(record["app_store_url"], source)
             self.assertIn(record["canonical_guide_url"], source)
@@ -429,10 +430,10 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 embed["_lumi_decision_url"],
             )
             self.assertNotIn("_lumi_guide_url", embed)
-            if record["locale"] == "bn-BD":
+            if market.is_unavailable(record["locale"], record["app_store_id"]):
                 assert_blocked_record(self, embed, ("_lumi_app_store_url",))
                 self.assertNotIn("apps.apple.com", json.dumps(embed))
-                self.assertIn("Apple App Store এখনো বাংলাদেশে", embed["html"])
+                self.assertIn(market.note(record["locale"], app_id=record["app_store_id"]), embed["html"])
             else:
                 self.assertIn(
                     f"id{record['app_store_id']}",

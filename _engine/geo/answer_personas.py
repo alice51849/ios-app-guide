@@ -1736,6 +1736,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
     "lumimathpro": [
         {
             "query": "best complete math learning app for preschool and early grades",
+            "answer_owner": "lumimathpro",
             "triggers": ["complete math learning app", "preschool and early grades", "full kids math app"],
             "persona": "families building early number confidence",
             "lead": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills.",

@@ -371,13 +371,13 @@ def generate(
                 locale,
                 availability,
             )
-            if market.is_unavailable(locale):
+            if market.is_unavailable(locale, app_id):
                 store_url = None
             elif store_url == canonical_store:
                 fallbacks += 1
             else:
                 localized_storefronts += 1
-            store_url = None if market.is_unavailable(locale) else required_campaign_app_store_url(
+            store_url = None if market.is_unavailable(locale, app_id) else required_campaign_app_store_url(
                 store_url, campaign_token(f"{locale}/{key}.html"),
                 expected_locale=locale, expected_app_id=app_id,
                 availability=availability,
@@ -391,12 +391,12 @@ def generate(
                 "localized_description": _localized_tool_description(
                     description
                 ),
-                **market.record_fields(locale),
+                **market.record_fields(locale, app_id),
             }
             country = LOCALE_STOREFRONTS[locale]
             detail = details.get(country, {}).get(app_id)
             if (
-                detail is not None and not market.is_unavailable(locale)
+                detail is not None and not market.is_unavailable(locale, app_id)
                 and app_id in availability.get(country, frozenset())
             ):
                 detail = localized_storefront_detail(detail, locale)
@@ -406,9 +406,9 @@ def generate(
             changed += int(
                 ensure_page_tool(path, payload, site=site)
             )
-            if market.is_unavailable(locale):
+            if market.is_unavailable(locale, app_id):
                 source = path.read_text(encoding="utf-8")
-                updated = market_surface_policy.enforce_html(source, locale)
+                updated = market_surface_policy.enforce_html(source, locale, app_id=app_id)
                 if source != updated:
                     path.write_text(updated, encoding="utf-8")
 

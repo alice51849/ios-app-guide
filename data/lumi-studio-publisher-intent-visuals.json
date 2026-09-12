@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-11",
+  "dateModified": "2026-09-12",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,9 +10,9 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "2f2882955ab9a198b276f48aa26ce1afb32905d37b68de6158b794db352fe802",
-  "content_digest": "b3e1d93a6863242ddcd665f19ffcc31027080fe558831bf1b1bfc4c5c527b106",
-  "generation_digest": "6b8b5f78b5cbdcc3f04940fb31a2360dd1ed7ce0aae3d994002a24ce09c70360",
+  "source_sha256": "edaf3bc6b71018c84eda019221ce8078245e15db9ef00d0674e4d21749b7ba07",
+  "content_digest": "325b36c3fad6adb088c325536ed55f06bddbb984cad0e7d5d0e6b118283de6b1",
+  "generation_digest": "5466b29a58cb1783bbfbb32c9beba7218c67b56dce583bddc6a51b5dea339166",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 47,
   "locale_count": 50,
@@ -267,7 +267,7 @@
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "6cd7353bc5abbfc1f1326483284209b2526d1d779c4dc0db9b96691c9b4803e4"
+      "sha256": "ff6fa8440327a2a81e349b515a23539c71e13aad0f709ec80c952a26e6ed2f56"
     },
     {
       "locale": "zh-Hant",
@@ -23918,8 +23918,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/lumiletters.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
-      "app_store_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "59a336567ceb68572182e269478df57cd016c65f785ac620de17918703b09e32"
+      "app_store_url": null,
+      "sha256": "e464c802c5c4b1904f6820f310c443a959cb41eea34630d8a065436fa5c7dd17",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778748533"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "zh-Hans",
@@ -23938,8 +23957,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/lumimath.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
-      "app_store_url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "e3c7ee55dc6c8e8b35a70a898500426e107c5a60d6a50b866c9b031476c33da3"
+      "app_store_url": null,
+      "sha256": "7fa42c9a6b0dd79fec50c041970e3c21d6d8e8103fb079b9ac12d9968b833fc6",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6778269699"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "zh-Hans",
@@ -23948,8 +23986,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/lumimathpro.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
-      "app_store_url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "836c420c4208d88f5f5c7e583f24b3919a313001f93568599df8f50f79e1f7e2"
+      "app_store_url": null,
+      "sha256": "61bbd7346fc84c6e77b48ee088366f758a1f76646619cf6d9f822764b6323bdc",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6776958488"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "zh-Hans",
@@ -23978,8 +24035,27 @@
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/tripplanet.svg",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "app_store_url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "999f109d0ac1d5c7bce8fa03270b335a77456f17a8fab734f97dbdfe70e815e6"
+      "app_store_url": null,
+      "sha256": "0d0bdfdca3779c10d39fb19c60a8e383c1f7639c8b383e785a67a3879e4a2d11",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_APP_NOT_SOLD",
+        "evidence": {
+          "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+          "observed_at": "2026-09-12",
+          "country": "CN",
+          "lookup_app_results": 0,
+          "lookup_control_app_id": "6791658210",
+          "lookup_control_results": 1,
+          "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+          "app_store_id": "6787193643"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
     },
     {
       "locale": "zh-Hans",

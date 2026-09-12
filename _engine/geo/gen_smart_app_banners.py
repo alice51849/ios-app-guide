@@ -245,7 +245,7 @@ def render_banner(path: Path, source: str, app_id: str) -> str:
         raise ValueError(f"Smart App Banner guide has no closing head: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
     locale = market_surface_policy.document_locale(source, path)
-    if market.is_unavailable(locale):
+    if market.is_unavailable(locale, app_id):
         return market_surface_policy.enforce_html(cleaned, locale, app_id=app_id)
     if FREE_RESOURCE_FIRST_META in cleaned:
         return cleaned

@@ -86,7 +86,7 @@ def generate(
     for path, app_id in sorted(targets.items()):
         source = path.read_text(encoding="utf-8")
         locale = gen_app_store_qr_ctas.page_locale(path, pages)
-        if market.is_unavailable(locale):
+        if market.is_unavailable(locale, app_id):
             cleaned = market_surface_policy.enforce_html(source, locale, app_id=app_id)
             if cleaned != source:
                 path.write_text(cleaned, encoding="utf-8")

@@ -174,7 +174,6 @@
         "required": [
           "id",
           "url",
-          "external_url",
           "title",
           "content_text",
           "date_modified",
@@ -270,8 +269,135 @@
               "zh-Hans",
               "zh-Hant"
             ]
+          },
+          "_market_availability": {
+            "enum": [
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6776958488"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6778269699"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6778748533"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6787193643"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              }
+            ]
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "anyOf": [
+                {
+                  "properties": {
+                    "language": {
+                      "const": "zh-Hans"
+                    },
+                    "id": {
+                      "enum": [
+                        "https://apps.apple.com/app/id6776958488",
+                        "https://apps.apple.com/app/id6778269699",
+                        "https://apps.apple.com/app/id6778748533",
+                        "https://apps.apple.com/app/id6787193643"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "language",
+                    "id"
+                  ]
+                }
+              ]
+            },
+            "then": {
+              "required": [
+                "_market_availability"
+              ],
+              "not": {
+                "required": [
+                  "external_url"
+                ]
+              }
+            },
+            "else": {
+              "required": [
+                "external_url"
+              ],
+              "not": {
+                "required": [
+                  "_market_availability"
+                ]
+              }
+            }
+          }
+        ]
       }
     }
   },

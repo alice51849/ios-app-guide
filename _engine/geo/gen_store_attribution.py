@@ -291,8 +291,8 @@ def align_storefront(url: str, locale: str | None, availability=None) -> str:
     that as a storefront mismatch, so the single stamper authority moves the
     link onto the page locale's storefront when the app is verified there and
     otherwise falls back to the global (country-less) link. Pages outside the
-    official locales are left untouched. Bangladesh's declared routing also
-    applies to countryless generator input, independently of lookup results.
+    official locales are left untouched. Countryless input is localized only
+    when the snapshot verifies that exact app in the declared storefront.
     """
     if locale not in LOCALE_STOREFRONTS:
         return url
@@ -300,9 +300,13 @@ def align_storefront(url: str, locale: str | None, availability=None) -> str:
     match = APP_STORE_PATH_RE.fullmatch(parsed.path)
     if match is None:
         return url
-    if match["country"] is None and locale not in REQUIRED_LOCALE_STOREFRONTS:
-        return url
     target = LOCALE_STOREFRONTS[locale]
+    if (
+        match["country"] is None
+        and locale not in REQUIRED_LOCALE_STOREFRONTS
+        and (availability is None or match["app_id"] not in availability.get(target, frozenset()))
+    ):
+        return url
     if match["country"] == target or (
         match["country"] is not None and match["country"] not in LOCALE_STOREFRONTS.values()
     ):
@@ -330,12 +334,15 @@ def final_store_url(
     the pre-stamp CTA, or the QR desync gate rejects the whole tree."""
     if is_clean_app_store_developer_url(url):
         return None if market.is_unavailable(locale) else url
-    url = align_storefront(url, locale, availability)
-    if market.is_unavailable(locale):
+    if app_id is None:
+        match = re.search(r"/id(\d+)(?:[?#]|$)", url)
+        app_id = match[1] if match else None
+    if market.is_unavailable(locale, app_id):
         from app_store_storefronts import validated_app_store_url
         validated_app_store_url(url, expected_app_id=app_id)
         storefront_locale_for_url(url, locale)
         return None
+    url = align_storefront(url, locale, availability)
     existing = existing_campaign(url)
     campaign = existing if existing in PROTECTED_CAMPAIGNS else token
     return required_campaign_app_store_url(
@@ -375,8 +382,8 @@ def rewrite(
             if candidate in LOCALE_STOREFRONTS:
                 locale = candidate
     changes = 0
-    if market.is_unavailable(locale):
-        updated = market_surface_policy.enforce_html(text, locale)
+    updated = market_surface_policy.enforce_html(text, locale)
+    if market.is_unavailable(locale) or updated != text:
         return updated, int(updated != text)
 
     def retarget(url: str, local=locale, app_id=None) -> str:

@@ -721,9 +721,9 @@ def localized_intent(
             "canonical_guide_url": (
                 f"{SITE}/{guide_locale}/{record['key']}.html"
             ),
-            "app_store_url": None if market.is_unavailable(locale) else _campaign_url(str(record["key"])),
+            "app_store_url": None if market.is_unavailable(locale, str(record["app_store_id"])) else _campaign_url(str(record["key"])),
             "app_store_cta_label": UI[locale]["store"],
-            **market.record_fields(locale),
+            **market.record_fields(locale, str(record["app_store_id"])),
         }
     localized = record.get("localized_intents")
     if not isinstance(localized, dict) or locale not in localized:
@@ -1411,7 +1411,7 @@ def webmcp_records(
                 record, locale
             )["decision_context"],
             "app_store_url": localized_app_store_url(record, locale),
-            **market.record_fields(locale),
+            **market.record_fields(locale, str(record["app_store_id"])),
         }
         for record in records
     ]
@@ -1470,7 +1470,7 @@ def app_cards(
             f'<div class="app-actions"><a class="guide" '
             f'href="{html.escape(intent["canonical_guide_url"])}">'
             f'{html.escape(copy["guide"])}</a>'
-            + ('<span class="market-blocked">N/A</span>' if market.is_unavailable(locale) else
+            + ('<span class="market-blocked">N/A</span>' if market.is_unavailable(locale, str(record["app_store_id"])) else
             f'<a class="store" rel="nofollow noopener" '
             f'href="{html.escape(localized_app_store_url(record, locale))}">'
             f'{html.escape(intent["app_store_cta_label"])}</a>') + '</div></article>'

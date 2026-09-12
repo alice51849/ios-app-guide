@@ -171,7 +171,7 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
         self.assertEqual(expected_locale_count, self.index["locale_count"])
         self.assertEqual(expected_app_count, self.index["app_count"])
         self.assertEqual(
-            expected_app_count * (expected_locale_count - 1),
+            expected_app_count * (expected_locale_count - 1) - 4,
             self.index["offer_count"],
         )
         self.assertEqual(set(OFFICIAL_LOCALES), set(self.catalogs))
@@ -202,10 +202,11 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
             observed_ids = set()
             country = app_store_storefronts.LOCALE_STOREFRONTS[locale]
             for item in items:
-                if locale == "bn-BD":
+                if item["item"]["@type"] != "Offer":
                     application = item["item"]
                     app_id = application["identifier"]["value"]
                     observed_ids.add(app_id)
+                    self.assertTrue(portfolio_offer_catalog.market.is_unavailable(locale, app_id))
                     assert_blocked_record(self, expected_records[app_id])
                     self.assertEqual(item["market_availability"], expected_records[app_id]["market_availability"])
                     self.assertNotIn("offers", application)
@@ -312,6 +313,13 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
             datetime.now(timezone.utc)
             + gen_sitemap_lastmod.MAX_CLOCK_SKEW
         ).date().isoformat()
+        expected_dates = {
+            portfolio_offer_catalog.index_url(): self.index["date_modified"],
+            **{
+                portfolio_offer_catalog.catalog_url(locale): payload["dateModified"]
+                for locale, payload in self.catalogs.items()
+            },
+        }
         for node in sitemap.findall(f"{namespace}url"):
             lastmod = node.findtext(f"{namespace}lastmod")
             with self.subTest(location=node.findtext(f"{namespace}loc")):
@@ -321,9 +329,9 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
                         today=max_date,
                     )
                 )
-                self.assertGreaterEqual(
+                self.assertEqual(
                     str(lastmod),
-                    self.index["date_modified"],
+                    expected_dates[node.findtext(f"{namespace}loc")],
                 )
         sitemap_index = ET.parse(self.pages / "sitemap_index.xml").getroot()
         self.assertIn(

@@ -251,7 +251,7 @@ def _record(
             raw_storefront_facts,
             locale,
         )
-        if raw_storefront_facts is not None and not market.is_unavailable(locale)
+        if raw_storefront_facts is not None and not market.is_unavailable(locale, app_store_id)
         else None
     )
     if storefront_facts is not None:
@@ -333,7 +333,7 @@ def _record(
         "measured_search_volume": bool(intent["measured_search_volume"]),
         "is_ranking": bool(intent["is_ranking"]),
         "verified_live": bool(intent["verified_live"]),
-        **market.record_fields(locale),
+        **market.record_fields(locale, app_store_id),
     }
     market.validate_record(record)
     if not record["verified_live"] or record["is_ranking"]:
@@ -838,10 +838,16 @@ def sitemap_entries(
     return entries
 
 
-def render_sitemap(records: list[dict[str, Any]], modified: str) -> str:
+def render_sitemap(records: list[dict[str, Any]], modified: str, record_dates=None) -> str:
     entries = sitemap_entries(records)
+    record_dates = record_dates or {}
+    dates = {
+        url: record_dates[record["record_id"]]
+        for record in records if record["record_id"] in record_dates
+        for url in (record["decision_page_url"], record["oembed_url"])
+    }
     body = "\n".join(
-        f"  <url><loc>{html.escape(url)}</loc><lastmod>{modified}</lastmod></url>"
+        f"  <url><loc>{html.escape(url)}</loc><lastmod>{dates.get(url, modified)}</lastmod></url>"
         for url in entries
     )
     return (
@@ -917,6 +923,7 @@ def _oembed_document(
         ),
         buyer_intent_url=buyer_intent_url,
         source_kind="decision",
+        app_store_id=str(record["app_store_id"]),
     )
 
 
@@ -1010,7 +1017,7 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-    return market_surface_policy.unavailable_json(schema, str(record["locale"]))
+    return market_surface_policy.unavailable_json(schema, str(record["locale"]), str(record["app_store_id"]))
 
 
 def render_page(
@@ -1024,7 +1031,7 @@ def render_page(
         f'<a class="button primary" rel="nofollow noopener" '
         f'href="{html.escape(record["app_store_url"], quote=True)}">'
         f'{html.escape(str(record["app_store_cta_label"]))}</a>'
-        if available else market.note_html(locale, str(record["app_name"]))
+        if available else market.note_html(locale, str(record["app_name"]), str(record["app_store_id"]))
     )
     icon = Path("stories") / "img" / f"{record['app_key']}-icon.jpg"
     icon_url = f"{SITE}/{icon.as_posix()}" if (PAGES / icon).is_file() else ""
@@ -1253,11 +1260,11 @@ def render_markdown(record: dict[str, Any], modified: str) -> str:
         "verified_live": bool(record["verified_live"]),
         "purchase_model": str(record["purchase_model"]),
         "publisher": "Lumi Studio",
-        **market.record_fields(str(record["locale"])),
+        **market.record_fields(str(record["locale"]), str(record["app_store_id"])),
     }
     store_line = (
-        market.note(str(record["locale"]), str(record["app_name"]))
-        if market.is_unavailable(str(record["locale"]))
+        market.note(str(record["locale"]), str(record["app_name"]), str(record["app_store_id"]))
+        if market.is_unavailable(str(record["locale"]), str(record["app_store_id"]))
         else f"[{app_store_label}]({record['app_store_url']})"
     )
     metadata = "\n".join(
@@ -1318,10 +1325,6 @@ def build(pages: Path = PAGES) -> list[str]:
         pages / SCHEMA_RELATIVE,
         json.dumps(_schema_payload(apps), ensure_ascii=False, indent=2) + "\n",
     )
-    _write_text(
-        pages / SITEMAP_NAME,
-        render_sitemap(records, modified),
-    )
     locale_urls = []
     for locale in OFFICIAL_LOCALES:
         locale_records = [
@@ -1352,6 +1355,7 @@ def build(pages: Path = PAGES) -> list[str]:
     )
     expected_oembed_paths: set[Path] = set()
     expected_markdown_paths: set[Path] = set()
+    record_dates = {}
     for record in records:
         oembed_path = pages / decision_oembed_relative(
             str(record["app_key"]),
@@ -1367,24 +1371,27 @@ def build(pages: Path = PAGES) -> list[str]:
             )
             + "\n",
         )
-        _write_text(
-            pages
-            / decision_page_relative(
-                str(record["app_key"]),
-                str(record["locale"]),
-            ),
-            render_page(
-                record,
-                modified,
-                feed_contexts[str(record["locale"])]["title"],
-            ),
+        page_path = pages / decision_page_relative(
+            str(record["app_key"]), str(record["locale"]),
         )
+        page_modified = modified
+        previous = page_path.read_text(encoding="utf-8") if page_path.is_file() else ""
+        previous_date = re.search(r'<meta name="content-modified" content="(\d{4}-\d{2}-\d{2})">', previous)
+        title = feed_contexts[str(record["locale"])]["title"]
+        if previous_date and previous_date[1] <= modified and render_page(record, previous_date[1], title) == previous:
+            page_modified = previous_date[1]
+        _write_text(page_path, render_page(record, page_modified, title))
+        record_dates[record["record_id"]] = page_modified
         markdown_path = pages / decision_markdown_relative(
             str(record["app_key"]),
             str(record["locale"]),
         )
         expected_markdown_paths.add(markdown_path)
-        _write_text(markdown_path, render_markdown(record, modified))
+        _write_text(markdown_path, render_markdown(record, page_modified))
+    _write_text(
+        pages / SITEMAP_NAME,
+        render_sitemap(records, modified, record_dates),
+    )
     oembed_root = pages / OEMBED_DIR
     for stale in (
         oembed_root.rglob("*.json") if oembed_root.is_dir() else ()

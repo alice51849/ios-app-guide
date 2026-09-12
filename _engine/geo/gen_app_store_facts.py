@@ -337,7 +337,7 @@ def generate(
             canonical_store = (
                 gen_mobile_app_identity.canonical_store_url(app_id)
             )
-            if market.is_unavailable(locale):
+            if market.is_unavailable(locale, app_id):
                 source = path.read_text(encoding="utf-8")
                 updated = market_surface_policy.enforce_html(source, locale, app_id=app_id)
                 if updated != source:

@@ -8,6 +8,8 @@ from datetime import date
 import html
 from html.parser import HTMLParser
 import json
+import market_availability as market
+import market_surface_policy
 from pathlib import Path
 import re
 import urllib.parse
@@ -163,6 +165,7 @@ def _validate_hub(
     *,
     locale=None,
     provider_token=None,
+    attributed=False,
 ):
     if locale is None:
         relative = f"hubs/{key}.html"
@@ -220,12 +223,39 @@ def _validate_hub(
     expected_store = gen_hubs.gen_mobile_app_identity.canonical_store_url(
         app["app_id"]
     )
+    if market.is_unavailable(language):
+        market.validate_record({**about, "locale": language}, url_fields=())
+        if (
+            about.get("@type") != "MobileApplication"
+            or about.get("@id") != f"urn:apple:app:id{app['app_id']}"
+            or app["app_id"] not in market_surface_policy.application_ids(source)
+            or "apps.apple.com" in source.lower()
+            or any(about.get(field) is not None for field in ("installUrl", "downloadUrl", "offers", "aggregateRating", "potentialAction"))
+            or 'data-market-state="MARKET_UNAVAILABLE_OR_UNVERIFIED"' not in source
+            or 'data-market-reason="MARKET_NOT_IN_APPLE_MEDIA_SERVICES"' not in source
+            or 'data-market-evidence="https://support.apple.com/en-us/118205"' not in source
+            or "Apple App Store এখনো বাংলাদেশে" not in source
+        ):
+            raise HubContractError(f"{relative}: invalid blocked-market content or proof")
+        description = _one(parser.metas["description"], "description", relative)
+        return source, description, set()
+    action_store = expected_store
+    if attributed:
+        if provider_token is None:
+            raise HubContractError(f"{relative}: published validation requires an exact provider")
+        action_store = gen_hubs.gen_store_attribution.final_store_url(
+            expected_store,
+            gen_hubs.gen_store_attribution.page_token(relative, source),
+            provider_token,
+            locale="en-US" if locale is None else locale,
+            app_id=app["app_id"],
+        )
     if (
         about.get("@type") != "MobileApplication"
         or about.get("@id") != expected_store
-        or about.get("url") != expected_store
-        or about.get("installUrl") != expected_store
-        or about.get("downloadUrl") != expected_store
+        or about.get("url") != action_store
+        or about.get("installUrl") != action_store
+        or about.get("downloadUrl") != action_store
     ):
         raise HubContractError(f"{relative}: wrong App Store JSON-LD ownership")
     providers = _attributed_store_links(parser, app["app_id"], relative)
@@ -254,7 +284,7 @@ def _sitemap_rows(path):
     return rows
 
 
-def audit(pages):
+def audit(pages, *, attributed=False):
     pages = Path(pages)
     apps = gen_hubs.authority_apps()
     locales = gen_hubs.official_locales()
@@ -302,6 +332,7 @@ def audit(pages):
             app,
             locales,
             provider_token=expected_provider,
+            attributed=attributed,
         )
         providers.update(found)
         _, description, found = _validate_hub(
@@ -311,6 +342,7 @@ def audit(pages):
             locales,
             locale="en-US",
             provider_token=expected_provider,
+            attributed=attributed,
         )
         english_descriptions[key] = description
         providers.update(found)
@@ -325,6 +357,7 @@ def audit(pages):
                 locales,
                 locale=locale,
                 provider_token=expected_provider,
+                attributed=attributed,
             )
             providers.update(found)
             if (
@@ -400,13 +433,14 @@ def audit(pages):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--attributed", action="store_true", help="Require the exact final campaign URLs instead of pre-stamp canonical URLs")
     parser.add_argument(
         "--pages-dir",
         type=Path,
         default=Path(gen_hubs.PAGES),
     )
     args = parser.parse_args()
-    result = audit(args.pages_dir)
+    result = audit(args.pages_dir, attributed=args.attributed)
     print(
         "PASS topic hubs: "
         f"apps={result['apps']} locales={result['locales']} "

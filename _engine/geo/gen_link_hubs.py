@@ -23,6 +23,7 @@
 """
 import argparse
 import html
+import market_surface_policy
 import os
 from pathlib import Path
 import re
@@ -474,7 +475,7 @@ def render_browse(parent, locale, groups, page_no, page_urls, parent_index_url):
         if parent_index_url
         else ""
     )
-    return (
+    document = (
         f'<!DOCTYPE html>\n<html lang="{e(lang)}"{dir_attr}><head>'
         f"{BROWSE_MARKER}"
         '<meta charset="utf-8">\n'
@@ -492,6 +493,7 @@ def render_browse(parent, locale, groups, page_no, page_urls, parent_index_url):
         + "\n".join(body)
         + f"\n{pager}</main></body></html>\n"
     )
+    return market_surface_policy.enforce_html(document, lang)
 
 
 def write_if_changed(path, content, state, tree=None, pages=None):

@@ -908,6 +908,51 @@ def _generate(apps, locales):
     )
 
 
+def regenerate_unavailable_hubs():
+    """Use the ordinary renderer/digests while preserving published available markets."""
+    apps, locales = authority_apps(), official_locales()
+    blocked = tuple(locale for locale in locales if market.is_unavailable(locale))
+    _require_attribution_provider()
+    copies = preflight_localized_sources(tuple(apps), tuple(dict.fromkeys(("en-US", *blocked))))
+    availability = load_storefront_availability(Path(PAGES))
+    outputs = {}
+    for key in apps:
+        path = Path(HUBS, f"{key}.html")
+        outputs[path] = path.read_text(encoding="utf-8")
+    for locale in locales:
+        for key in apps:
+            path = Path(PAGES, locale, "hubs", f"{key}.html")
+            outputs[path] = (
+                _stamp_source_digest(build_localized_hub(key, locale, availability, copies[(key, locale)]))
+                if locale in blocked else path.read_text(encoding="utf-8")
+            )
+    index = Path(HUBS, "index.html")
+    outputs[index] = index.read_text(encoding="utf-8")
+    sitemap_path = Path(PAGES, "sitemap_hubs.xml")
+    previous = _previous_lastmods(sitemap_path)
+    targets = _sitemap_targets(apps, locales, outputs)
+    if set(previous) != {url for url, _ in targets}:
+        raise ValueError("Market-only regeneration requires the complete existing hub sitemap")
+    rows = []
+    for url, path in targets:
+        lastmod = previous[url]
+        if path.parent.parent.name in blocked:
+            generated = embedded_source_digest(outputs[path])
+            if _existing_source_digest(path) != generated:
+                lastmod = _bound_build_date()
+        rows.append(f"  <url><loc>{url}</loc><lastmod>{lastmod}</lastmod></url>")
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(rows) + "\n</urlset>\n"
+    )
+    for path, source in outputs.items():
+        if path.parent.parent.name in blocked:
+            _atomic_write_text(path, source)
+    _atomic_write_text(sitemap_path, sitemap)
+    return {"apps": len(apps), "blocked_locales": len(blocked), "regenerated": len(apps) * len(blocked)}
+
+
 def main():
     _generate(authority_apps(), official_locales())
 

@@ -255,6 +255,38 @@ process.stdout.write(JSON.stringify(result));
         with self.assertRaisesRegex(ValueError, "state/reason/evidence"):
             alternatives.load_catalog(path, manifest, inventory, alternatives.PUBLIC_SITE)
 
+    def test_browse_regeneration_preserves_blocked_evidence_and_navigation(self):
+        import gen_link_hubs
+        page = gen_link_hubs.render_browse(
+            "bn-BD", "bn-BD", [("apps", [("bn-BD/scanto.html", "ScanTo")])], 1,
+            ["https://example.com/bn-BD/browse.html"], "https://example.com/bn-BD/index.html",
+        )
+        assert_blocked_page(self, page)
+        self.assertIn("scanto.html", page)
+        self.assertIn('content="noindex,follow"', page)
+        self.assertIn('href="https://example.com/bn-BD/browse.html"', page)
+
+    def test_published_hub_gate_requires_exact_attribution_and_rejects_wrong_provider(self):
+        import os
+        import gen_hubs
+        import check_hub_coverage as hubs
+        pages = Path(os.environ["GEO_PAGES"])
+        app = gen_hubs.authority_apps()["scanto"]
+        locales = gen_hubs.official_locales()
+        source, _, providers = hubs._validate_hub(
+            pages, "scanto", app, locales, provider_token="118326163", attributed=True
+        )
+        self.assertEqual(providers, {"118326163"})
+        scratch = tempfile.TemporaryDirectory(prefix=".published-hub-", dir=GEO / "tests")
+        self.addCleanup(scratch.cleanup)
+        root = Path(scratch.name)
+        (root / "hubs").mkdir()
+        (root / "hubs/scanto.html").write_text(source.replace("pt=118326163", "pt=999999999"))
+        with self.assertRaises(hubs.HubContractError):
+            hubs._validate_hub(
+                root, "scanto", app, locales, provider_token="118326163", attributed=True
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

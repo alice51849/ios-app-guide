@@ -21,6 +21,7 @@ GEO = Path(__file__).resolve().parents[1]
 if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 import deployment_generation as generation
+from site_config import ORIGIN_SITE
 
 
 NOW = datetime(2026, 9, 5, 6, 0, tzinfo=timezone.utc)
@@ -71,7 +72,7 @@ class ExactEdgeRepresentationTests(unittest.TestCase):
 
     def test_unknown_hosts_and_non_html_never_accept_the_transform(self):
         for kwargs in (
-            {"site": "https://alice51849.github.io/ios-app-guide"},
+            {"site": ORIGIN_SITE},
             {"site": generation.EDGE_SITE + ".evil.test"},
             {"relative": "data/catalog.json"},
         ):

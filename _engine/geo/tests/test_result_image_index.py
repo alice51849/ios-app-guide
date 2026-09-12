@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import copy
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from email.message import Message
 import io
 import json
@@ -554,11 +554,12 @@ class ResultImagesTests(unittest.TestCase):
                 dirty_paths={p.relative_to(self.root).as_posix() for p in self.root.rglob("*") if p.is_file()},
             )
 
-        self.today = (date.today() - timedelta(days=1)).isoformat()
+        utc_today = datetime.now(timezone.utc).date()
+        self.today = (utc_today - timedelta(days=1)).isoformat()
         self.generate()
         global_lastmod()
         self.assertEqual([], self.generate(check=True)["changed_files"])
-        self.today = date.today().isoformat()
+        self.today = utc_today.isoformat()
         self.manifest["images"] = []
         self.manifest["labels"] = {}
         self.generate()

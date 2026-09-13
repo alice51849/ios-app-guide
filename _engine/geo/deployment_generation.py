@@ -396,6 +396,22 @@ def same_generation(*documents: dict[str, Any]) -> dict[str, Any]:
     return expected
 
 
+def validate_edge_check(check: dict[str, Any], *, site: str) -> bool:
+    if "edge_transform" not in check:
+        if "response_sha256" in check:
+            raise GenerationError("undeclared edge representation")
+        return False
+    if (
+        site != EDGE_SITE
+        or not str(check.get("path", "")).endswith(".html")
+        or check["edge_transform"] != EDGE_TRANSFORM
+        or re.fullmatch(r"[0-9a-f]{64}", str(check.get("response_sha256", ""))) is None
+        or check.get("response_sha256") == check.get("sha256")
+    ):
+        raise GenerationError("unrecognized edge representation")
+    return True
+
+
 def validate_receipt(
     receipt: dict[str, Any], deployment: dict[str, Any], *,
     source_root: Path | None = None,
@@ -427,18 +443,7 @@ def validate_receipt(
         ):
             raise GenerationError("live observations mix generations or lack exact GETs")
         for row in observation["checks"]:
-            if "edge_transform" not in row:
-                if "response_sha256" in row:
-                    raise GenerationError("undeclared edge representation")
-                continue
-            edge_checks = True
-            if (
-                observation.get("site") != EDGE_SITE
-                or not str(row.get("path", "")).endswith(".html")
-                or row["edge_transform"] != EDGE_TRANSFORM
-                or re.fullmatch(r"[0-9a-f]{64}", str(row.get("response_sha256", ""))) is None
-            ):
-                raise GenerationError("unrecognized edge representation")
+            edge_checks |= validate_edge_check(row, site=observation.get("site"))
     if edge_checks != (receipt["observation_method"] == EDGE_READBACK_METHOD):
         raise GenerationError("readback method hides its edge representation")
     if source_root is not None:
@@ -544,15 +549,13 @@ def get_bytes(url: str, *, timeout: int, maximum: int) -> tuple[bytes, str, int]
     return result
 
 
-def verify_output_bytes(
+def verified_output_representation(
     body: bytes, *, site: str, relative: str, expected_sha256: str,
-) -> dict[str, Any]:
-    check = {
-        "path": relative, "sha256": expected_sha256, "http_status": 200, "method": "GET",
-    }
+) -> tuple[bytes, dict[str, str]]:
+    """Return pinned application bytes without losing the edge response hash."""
     actual = hashlib.sha256(body).hexdigest()
     if actual == expected_sha256:
-        return check
+        return body, {}
     inserted = EDGE_BEACON + b"\n"
     position = body.rfind(inserted + b"</body>")
     if (
@@ -561,8 +564,22 @@ def verify_output_bytes(
     ):
         application = body[:position] + body[position + len(inserted):]
         if hashlib.sha256(application).hexdigest() == expected_sha256:
-            return {**check, "response_sha256": actual, "edge_transform": EDGE_TRANSFORM}
+            return application, {
+                "response_sha256": actual, "edge_transform": EDGE_TRANSFORM,
+            }
     raise GenerationError(f"live output digest drift: {relative}")
+
+
+def verify_output_bytes(
+    body: bytes, *, site: str, relative: str, expected_sha256: str,
+) -> dict[str, Any]:
+    _, representation = verified_output_representation(
+        body, site=site, relative=relative, expected_sha256=expected_sha256,
+    )
+    return {
+        "path": relative, "sha256": expected_sha256, "http_status": 200,
+        "method": "GET", **representation,
+    }
 
 
 def live_readback(

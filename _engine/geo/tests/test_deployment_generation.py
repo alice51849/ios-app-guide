@@ -70,6 +70,41 @@ class ExactEdgeRepresentationTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(body).hexdigest(), check["response_sha256"])
         self.assertEqual(hashlib.sha256(self.SOURCE).hexdigest(), check["sha256"])
 
+    def test_shared_representation_returns_the_exact_application_bytes(self):
+        for body in (self.SOURCE, self.edge_body()):
+            with self.subTest(response_sha256=hashlib.sha256(body).hexdigest()):
+                application, representation = generation.verified_output_representation(
+                    body, site=generation.EDGE_SITE, relative=self.PATH,
+                    expected_sha256=hashlib.sha256(self.SOURCE).hexdigest(),
+                )
+                self.assertEqual(self.SOURCE, application)
+                check = self.check(body)
+                self.assertEqual(
+                    {key: check[key] for key in ("response_sha256", "edge_transform")
+                     if key in check},
+                    representation,
+                )
+                self.assertEqual(bool(representation), generation.validate_edge_check(
+                    check, site=generation.EDGE_SITE,
+                ))
+
+    def test_edge_evidence_requires_both_hashes_and_the_pinned_transform(self):
+        check = self.check(self.edge_body())
+        mutations = (
+            {"response_sha256": None},
+            {"response_sha256": check["sha256"]},
+            {"edge_transform": "unreviewed-transform"},
+            {"path": "data/catalog.json"},
+        )
+        for changes in mutations:
+            with self.subTest(changes=changes), self.assertRaises(generation.GenerationError):
+                generation.validate_edge_check({**check, **changes}, site=generation.EDGE_SITE)
+        undeclared = {key: value for key, value in check.items() if key != "edge_transform"}
+        with self.assertRaisesRegex(generation.GenerationError, "undeclared"):
+            generation.validate_edge_check(undeclared, site=generation.EDGE_SITE)
+        with self.assertRaisesRegex(generation.GenerationError, "unrecognized"):
+            generation.validate_edge_check(check, site=ORIGIN_SITE)
+
     def test_unknown_hosts_and_non_html_never_accept_the_transform(self):
         for kwargs in (
             {"site": ORIGIN_SITE},

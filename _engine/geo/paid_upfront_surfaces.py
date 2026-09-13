@@ -11,9 +11,9 @@ import re
 
 import app_store_storefronts as stores
 from answer_text import concise_meta
+from live_app_manifest import canonical_manifest
 import market_availability as market
 from site_config import PUBLIC_SITE
-from videogen.registry import APPS, APPSTORE
 
 
 HERE = Path(__file__).resolve().parent
@@ -50,8 +50,9 @@ def contract():
         raise ValueError("Unknown paid-upfront surface contract")
     if {key: row["app_id"] for key, row in document["apps"].items()} != EXACT_IDS:
         raise ValueError("The paid-upfront repair must retain exact9 identities")
+    roster = canonical_manifest()["apps"]
     for key, row in document["apps"].items():
-        if APPSTORE.get(key) != row["app_id"] or APPS[key].get("purchase_model") != "paid_upfront":
+        if roster.get(key, {}).get("app_id") != row["app_id"]:
             raise ValueError(f"Paid-upfront registry identity changed: {key}")
         if row["business_model"] != "paid_upfront" or not re.fullmatch(r"[0-9a-f]{64}", row["description_sha256"]):
             raise ValueError(f"Invalid public product evidence: {key}")

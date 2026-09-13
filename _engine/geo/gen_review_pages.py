@@ -20,33 +20,35 @@ DEVELOPER_NOTE = "This review is written by the developer of the app being revie
 REVIEWS = [
     {
         "key": "zafe",
+        # Existing URL kept for continuity; the retired "Private Photo Vault"
+        # name must not appear in visible copy (ASC 1.0 name: Verifiable Archive).
         "slug": "zafe-private-photo-vault-review-2026",
-        "title": "Zafe: Private Photo Vault Review 2026 — Is It Worth It?",
-        "desc": "Honest review of Zafe Private Photo Vault for iPhone. What it does well, its real limitations, pricing, and who should (and shouldn't) download it.",
-        "rating": 4,
-        "verdict": "A straightforward, privacy-first photo vault that does exactly what it says. Best for users who want photos off the main camera roll without paying monthly.",
+        "title": "Zafe: Verifiable Archive Review 2026 — What It Does and Doesn't",
+        "desc": "What Zafe: Verifiable Archive does on iPhone: on-device AES-256-GCM sealing and SHA-256 integrity checks, what it deliberately does not do, and who it fits.",
+        "rating": None,
+        "verdict": "Zafe is built to show that a file has not changed since you sealed it. It keeps photos, videos, documents and notes encrypted on your iPhone and checks them again before anything opens or leaves the app.",
         "pros": [
-            "One-time purchase — no subscription",
-            "Face ID / Touch ID protection with encrypted storage",
-            "No account or cloud upload required",
-            "Clean, simple interface that doesn't get in the way",
+            "Each import becomes a sealed record, encrypted on the device with AES-256-GCM",
+            "A SHA-256 digest is recalculated before content opens or a copy leaves Zafe; a mismatch blocks the action",
+            "Controlled export re-verifies the copy and can attach a JSON integrity record",
+            "No account, ads, analytics or tracking, and no developer-operated server",
         ],
         "cons": [
-            "No cloud backup — if you delete the app or lose your phone, vault photos are gone unless you export them first",
-            "Import is manual; no auto-import from camera roll",
-            "No video recording inside the app",
+            "It keeps content exactly as imported: no OCR, redaction, masking or metadata removal",
+            "The free tier covers 1 album with up to 10 items; unlimited albums and items need the one-time Pro purchase",
+            "Files stay on this device, so keeping an exported backup is up to you",
         ],
-        "who_for": "Anyone who wants a private space for sensitive photos — personal documents, private photos, screenshots of passwords — without a subscription.",
-        "who_not_for": "Users who primarily want cloud backup of private photos; iCloud Private folder (iOS 16+) may be sufficient for some.",
+        "who_for": "People who want receipts, contracts, evidence photos or personal documents kept privately on their iPhone, with a way to show a copy still matches what they sealed.",
+        "who_not_for": "Anyone who needs to hide or remove personal details before sharing a file (Mask My File does that), or who expects automatic cloud backup.",
         "faqs": [
-            ("Is Zafe: Private Photo Vault safe?",
-             "Photos in Zafe are encrypted and protected by Face ID or PIN on your device. The app does not connect to the internet or upload any photos to a server."),
-            ("What happens to my photos if I delete Zafe?",
-             "If you delete the app without first exporting your photos, they are gone. Always export important photos before uninstalling."),
-            ("Is there a free version of Zafe?",
-             "There is no separate free version. The app is available as a one-time purchase on the App Store."),
-            ("Does Zafe back up photos to iCloud?",
-             "No. Zafe deliberately does not use iCloud backup. Photos stay only on the device unless you manually share or export them."),
+            ("What does Zafe: Verifiable Archive do?",
+             "It seals the photos, videos, documents and notes you pick with AES-256-GCM on your device and records a SHA-256 fingerprint. Before an item opens or a copy leaves Zafe, the fingerprint is checked again and a mismatch stops the action."),
+            ("Is Zafe a redaction app?",
+             "No. Zafe preserves content as-is and does not run OCR, mask regions or strip metadata. Mask My File is the app for removing personal details before sharing."),
+            ("Is Zafe a subscription?",
+             "No. Pro is a one-time purchase that unlocks unlimited albums and items, a Decoy Vault with its own passcode, opt-in Intruder Capture and alternate Zafe icons."),
+            ("Does Zafe upload my files?",
+             "Zafe has no developer-operated server, account, ads or analytics. Apple StoreKit handles purchase and restore details."),
         ],
     },
     {
@@ -517,7 +519,13 @@ def render(r, *, pages=None):
         badge = "Paid download · One upfront purchase · No subscription"
         store_url = f"{base_url}?pt=118326163&ct=geo_pick&mt=8"
     else:
-        badge = "Free" if not price else f"${price:.2f} · one-time purchase"
+        model = app.get("purchase_model")
+        if model == "paid_upfront":
+            badge = "Paid download · No subscription"
+        elif model == "free_with_lifetime_unlock":
+            badge = "Free download · Optional one-time unlock"
+        else:
+            badge = "Check the App Store for current pricing"
         store_url = f"https://apps.apple.com/app/id{aid}?ct=iag_review" if aid else "#"
     store_url = html_lib.escape(store_url, quote=True)
     disclosure = (
@@ -527,7 +535,8 @@ def render(r, *, pages=None):
         "current features, device requirements and local download price on the App Store."
         if first_party else DEVELOPER_NOTE
     )
-    rating_html = "" if first_party else f"  <span>{r['rating']}/5</span>"
+    # Developer-written pages must never publish a self-assigned score.
+    rating_html = ""
 
     pros_html = "".join(f"<li>{p}</li>" for p in r["pros"])
     cons_html = "".join(f"<li>{c}</li>" for c in r["cons"])
@@ -540,20 +549,13 @@ def render(r, *, pages=None):
         faqs_html += f'<details class="faq"><summary><strong>{visible_q}</strong></summary><p>{visible_a}</p></details>\n'
         faqs_ld.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
 
-    editorial = (
-        {"@context": "https://schema.org", "@type": "Article",
-         "headline": r["title"], "description": r["desc"],
-         "url": f"{GEO_SITE}/reviews/{r['slug']}.html",
-         "mainEntityOfPage": f"{GEO_SITE}/reviews/{r['slug']}.html",
-         "author": {"@type": "Organization", "name": "Lumi Studio"}}
-        if first_party else
-        {"@context": "https://schema.org", "@type": "Review",
-         "itemReviewed": {"@type": "MobileApplication", "name": name,
-                          "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication",
-                          "offers": {"@type": "Offer", "price": str(price or 0), "priceCurrency": "USD"}},
-         "reviewRating": {"@type": "Rating", "ratingValue": r["rating"], "bestRating": 5},
-         "author": {"@type": "Organization", "name": "iOS App Guide"}}
-    )
+    editorial = {
+        "@context": "https://schema.org", "@type": "Article",
+        "headline": r["title"], "description": r["desc"],
+        "url": f"{GEO_SITE}/reviews/{r['slug']}.html",
+        "mainEntityOfPage": f"{GEO_SITE}/reviews/{r['slug']}.html",
+        "author": {"@type": "Organization", "name": "Lumi Studio"},
+    }
     ld = json.dumps([
         editorial,
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs_ld}

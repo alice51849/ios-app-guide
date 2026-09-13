@@ -45,6 +45,9 @@ NON_BROWSE_PARENTS = {
     "llms", "oembed", "opds", "resourcesync", "iiif", "media", "social",
     "publications",
 }
+# Human-readable singleton directories do not qualify for a generated browse
+# page, but their index still needs an inbound path from the site root.
+ROOT_SINGLETON_INDEXES = ("feeds/index.html",)
 BROWSE_BASENAME = "browse"
 BROWSE_RE = re.compile(r"^browse(-\d+)?\.html$")
 # 產出的 browse 頁一定帶這個註記。刪除舊檔前先確認它有這個記號,才不會誤刪
@@ -858,6 +861,21 @@ def process_root(parents, state, tree=None, pages=None):
                 page_title(path, name.replace("-", " "), tree),
             ))
             break
+    planned = {
+        url[len(SITE) + 1 :]
+        for url, _ in links
+        if url.startswith(SITE + "/")
+    }
+    for rel in ROOT_SINGLETON_INDEXES:
+        if rel in already or rel in planned:
+            continue
+        path = os.path.join(pages, *rel.split("/"))
+        if not os.path.isfile(path) or is_noindex(path, tree):
+            continue
+        links.append((
+            f"{SITE}/{rel}",
+            page_title(path, slug_title(rel), tree),
+        ))
     # 根目錄下的單頁(find-app.html 之類)也要有入口,否則永遠是孤兒。
     for name in sorted(os.listdir(pages)):
         if not name.endswith(".html") or name == "index.html":

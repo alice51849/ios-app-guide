@@ -9,6 +9,7 @@ from pathlib import Path
 import re
 import shutil
 import sys
+import tempfile
 import unittest
 from unittest import mock
 import uuid
@@ -92,6 +93,53 @@ class CanonicalAuthorityTests(unittest.TestCase):
                 gen_hubs._atomic_write_text(target, "new")
         self.assertEqual(b"last-good", target.read_bytes())
         self.assertEqual([], list(directory.glob(".hub.html.*.tmp")))
+
+    def test_app_specific_unavailable_hub_has_no_cross_store_cta(self):
+        key = "lumiletters"
+        locale = "zh-Hans"
+        app = gen_hubs.authority_apps()[key]
+        with (
+            mock.patch.object(
+                gen_hubs,
+                "localized_answer_links",
+                return_value=[],
+            ),
+            mock.patch.object(
+                gen_hubs.rank_opportunity_pages,
+                "searched_as_block",
+                return_value="",
+            ),
+            mock.patch.object(
+                gen_hubs.rank_opportunity_pages,
+                "phrases_for",
+                return_value=[],
+            ),
+        ):
+            source = gen_hubs.build_localized_hub(
+                key,
+                locale,
+                availability={},
+                page_copy=("Lumi Letters", "中文產品指南與功能說明。"),
+            )
+        self.assertNotIn("apps.apple.com", source)
+        self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
+        self.assertIn(f"urn:apple:app:id{app['app_id']}", source)
+
+        with tempfile.TemporaryDirectory(dir=HERE) as directory:
+            target = Path(directory) / locale / "hubs" / f"{key}.html"
+            target.parent.mkdir(parents=True)
+            target.write_text(
+                gen_hubs._stamp_source_digest(source),
+                encoding="utf-8",
+            )
+            coverage._validate_hub(
+                Path(directory),
+                key,
+                app,
+                gen_hubs.official_locales(),
+                locale=locale,
+                provider_token="118326163",
+            )
 
 
 class FullHubCollectionTests(unittest.TestCase):

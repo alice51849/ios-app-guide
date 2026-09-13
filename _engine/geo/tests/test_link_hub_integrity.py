@@ -162,6 +162,30 @@ def inspect_source(module, func_name):
     return inspect.getsource(getattr(module, func_name))
 
 
+class RootSingletonDiscoveryTests(unittest.TestCase):
+    def test_feed_directory_index_is_linked_from_the_root(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = os.path.join(directory, "pages")
+            root = os.path.join(pages, "index.html")
+            feed = os.path.join(pages, "feeds", "index.html")
+            write(root, page("home"))
+            write(feed, page("App feeds in 50 locales"))
+
+            first = gen_link_hubs.run_link_hubs(pages)
+            with open(root, encoding="utf-8") as handle:
+                source = handle.read()
+            second = gen_link_hubs.run_link_hubs(pages)
+
+        self.assertIn(
+            f'{gen_link_hubs.SITE}/feeds/index.html',
+            source,
+        )
+        self.assertTrue(
+            any(change.endswith("index.html") for change in first["changed"])
+        )
+        self.assertEqual([], second["changed"])
+
+
 class IndexableOrphanGateTests(unittest.TestCase):
     """在合成的小站上跑真正的稽核腳本(子行程,連 CLI 一起驗)。"""
 

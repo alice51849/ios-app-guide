@@ -223,18 +223,34 @@ def _validate_hub(
     expected_store = gen_hubs.gen_mobile_app_identity.canonical_store_url(
         app["app_id"]
     )
-    if market.is_unavailable(language):
-        market.validate_record({**about, "locale": language}, url_fields=())
+    if market.is_unavailable(language, app["app_id"]):
+        expected_market = market.record_fields(
+            language,
+            app["app_id"],
+        )["market_availability"]
+        market.validate_record(
+            {
+                **about,
+                "locale": language,
+                "app_store_id": app["app_id"],
+            },
+            url_fields=(),
+        )
         if (
             about.get("@type") != "MobileApplication"
             or about.get("@id") != f"urn:apple:app:id{app['app_id']}"
             or app["app_id"] not in market_surface_policy.application_ids(source)
             or "apps.apple.com" in source.lower()
             or any(about.get(field) is not None for field in ("installUrl", "downloadUrl", "offers", "aggregateRating", "potentialAction"))
-            or 'data-market-state="MARKET_UNAVAILABLE_OR_UNVERIFIED"' not in source
-            or 'data-market-reason="MARKET_NOT_IN_APPLE_MEDIA_SERVICES"' not in source
-            or 'data-market-evidence="https://support.apple.com/en-us/118205"' not in source
-            or "Apple App Store এখনো বাংলাদেশে" not in source
+            or f'data-market-state="{expected_market["state"]}"' not in source
+            or f'data-market-reason="{expected_market["reason"]}"' not in source
+            or (
+                f'data-market-evidence="'
+                f'{html.escape(expected_market["evidence"]["source_url"], quote=True)}"'
+            ) not in source
+            or html.escape(
+                market.note(language, about.get("name"), app["app_id"])
+            ) not in source
         ):
             raise HubContractError(f"{relative}: invalid blocked-market content or proof")
         description = _one(parser.metas["description"], "description", relative)

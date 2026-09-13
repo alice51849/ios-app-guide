@@ -547,6 +547,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
     if locale not in OFFICIAL_LOCALES:
         raise ValueError(f"Unsupported hub locale: {locale}")
     e = html.escape
+    app_id = str(APPSTORE[key])
     name, description = page_copy or localized_page_copy(key, locale)
     answers = localized_answer_links(key, locale, required=False)
     questions_label = _ui_text(locale, "faq_title")
@@ -558,7 +559,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
     if availability is None:
         availability = load_storefront_availability(Path(PAGES))
     store_url = verified_app_store_url(
-        f"https://apps.apple.com/app/id{APPSTORE[key]}",
+        f"https://apps.apple.com/app/id{app_id}",
         locale,
         availability,
     )
@@ -567,7 +568,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
     # afterwards, so a token minted here that the attribution pass disagrees
     # with silently makes the QR code scan to a different campaign than the
     # button beside it.  Mint the final token from the same authority instead.
-    store_href = None if market.is_unavailable(locale) else campaign_app_store_url(
+    store_href = None if market.is_unavailable(locale, app_id) else campaign_app_store_url(
         store_url,
         gen_store_attribution.campaign_token(f"{locale}/hubs/{key}.html"),
     )
@@ -628,7 +629,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
     }
     dir_attr = ' dir="rtl"' if locale in RTL_LOCALES else ""
     store_action = (
-        market.note_html(locale, name) if store_href is None else
+        market.note_html(locale, name, app_id) if store_href is None else
         f'<a class="cta" href="{e(store_href)}" rel="nofollow noopener">{e(store_label)}</a>'
     )
     document = f'''<!DOCTYPE html>
@@ -651,7 +652,12 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
 </body></html>'''
-    return market_surface_policy.enforce_html(document, locale)
+    return market_surface_policy.enforce_html(
+        document,
+        locale,
+        app_id=app_id,
+        name=name,
+    )
 
 
 def build_hub(key):

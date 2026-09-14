@@ -13,6 +13,8 @@ persona label. Honesty rules applied:
 
 Consumed by answer_facts._persona_facts(); queries fed from queries.py.
 """
+import json
+from pathlib import Path
 from typing import Any
 
 import persona_closers
@@ -3434,11 +3436,568 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         }
     ],
+    # --- Launch candidates staged 2026-09-14 (all still in App Review). ---
+    # Every claim below was checked against the app repository; markets and
+    # forbidden claims are recorded per app and pinned by
+    # geo/tests/test_pending_persona_promotion.py. Prices are left out on
+    # purpose: the store shows the current localized price.
+    #
+    # dB Halo (6806826699, IN_REVIEW). Free download; each Pro tool has a small
+    # number of free successful uses (three; Spectrum, Noise Dose and Sleep
+    # Journal one each), then the one-time Lifetime Pro purchase. Markets:
+    # US-first (NIOSH/OSHA wording), 50 locales. Never call it a free sound
+    # meter, a certified or Class 1 meter, compliance-grade or medical.
+    "dbhalo": [
+        {
+            "query": "sound meter app for iphone with frequency spectrum and noise dose",
+            "guide_title": "Checking noise levels on an iPhone: what to look for",
+            "triggers": [
+                "decibel meter app iphone",
+                "measure noise level at home",
+                "spl meter with spectrum analyzer",
+                "noise dose niosh osha app",
+                "rta octave band analyzer iphone",
+                "sleep sound journal app",
+            ],
+            "persona": (
+                "people who want to know how loud a room, workshop, gym or "
+                "bedroom really is before deciding what to change"
+            ),
+            "lead": (
+                "A phone microphone will not replace a certified sound level "
+                "meter, but it can show whether a noise is getting worse, which "
+                "frequencies dominate and how long you were exposed."
+            ),
+            "paras": [
+                "Look at what the app actually reports. A useful meter shows the "
+                "current, minimum, average, maximum and peak level with A, C or Z "
+                "weighting, and lets you move from one number to an FFT spectrum "
+                "or octave bands when you need to know whether the problem is a "
+                "low hum or a high whine.",
+                "Exposure is a separate question from loudness. An estimate of "
+                "noise dose against the NIOSH (85 dBA, 3 dB exchange) and OSHA "
+                "(90 dBA, 5 dB exchange) references helps you judge a long shift "
+                "or a concert, as long as the app is clear that it is an estimate "
+                "and not an occupational safety determination.",
+            ],
+            "look": [
+                "Live level with A, C and Z weighting plus minimum, average, maximum and peak.",
+                "FFT spectrum, octave and 1/3-octave bands and a spectrogram.",
+                "Noise dose estimates against the NIOSH and OSHA references.",
+                "Your own calibration offset and optional external microphone input.",
+                "On-device processing with no account, analytics or tracking.",
+            ],
+            "steps": [
+                "Measure the same spot at the same time of day before comparing results.",
+                "Use A weighting for everyday noise and C or Z for low-frequency sound.",
+                "Open the spectrum to see which frequency band carries the noise.",
+                "Record a longer session to estimate exposure, then export CSV or PDF.",
+                "Treat every number as an estimate and use a certified meter for compliance decisions.",
+            ],
+            "fits": (
+                "fits people who want spectrum views, noise-dose estimates and a "
+                "private sleep sound journal on iPhone and iPad, with level "
+                "readings on Apple Watch, and who would rather try each tool "
+                "before a one-time Pro unlock than pay for a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Is dB Halo free?",
+                    "a": (
+                        "The download is free and each Pro tool includes a small "
+                        "number of free uses. Continued use needs the one-time "
+                        "Lifetime Pro purchase; there is no subscription."
+                    ),
+                },
+                {
+                    "q": "Is it a certified sound level meter?",
+                    "a": (
+                        "No. It is not a certified professional, medical or "
+                        "workplace safety instrument, and its readings are "
+                        "estimates limited by the device microphone."
+                    ),
+                },
+                {
+                    "q": "Does the Sleep Journal keep recordings of my bedroom?",
+                    "a": (
+                        "It classifies sound events on the device with Apple's "
+                        "built-in sound analysis and does not keep raw audio for "
+                        "the journal."
+                    ),
+                },
+            ],
+        }
+    ],
+    # QR Code Halo (6806779853, WAITING_FOR_REVIEW). Free download: creating
+    # nine QR types, history and CSV export are free; each device gets three
+    # free successful scans, then the one-time Lifetime Pro purchase unlocks
+    # unlimited scanning, styles, high-resolution export, backup restore and
+    # batch actions. Markets: en-US source, 175 storefronts, 50 locales.
+    # Never claim it detects, blocks or guarantees protection from phishing,
+    # checks link reputation online, or scans for free without limit.
+    "qrcodehalo": [
+        {
+            "query": "qr code scanner app that shows the link before opening it",
+            "guide_title": "Scanning QR codes safely on iPhone: what to check",
+            "triggers": [
+                "qr scanner that does not open links automatically",
+                "check qr code link before opening",
+                "qr code scanner no ads iphone",
+                "suspicious qr code link checker",
+                "create wifi qr code iphone",
+                "batch scan qr codes to csv",
+            ],
+            "persona": (
+                "people who scan codes on posters, parking meters, parcels and "
+                "menus and want to see what a code contains before anything opens"
+            ),
+            "lead": (
+                "The risky moment with a QR code is the tap after the scan. A "
+                "careful scanner shows the full payload first, points out anything "
+                "unusual about it and leaves the decision to open it with you."
+            ),
+            "paras": [
+                "Check how the app treats a result. A code can carry a web link, "
+                "Wi-Fi credentials, a contact, a phone number or a script-like "
+                "scheme, and a scanner that jumps straight into a browser or dialer "
+                "takes away your chance to notice a strange host, a plain http "
+                "link or an encoded character that should not be there.",
+                "Be realistic about on-device checks. Fixed local rules can flag "
+                "formats that deserve caution and block dangerous schemes, but "
+                "they cannot know whether a normally spelled domain is malicious "
+                "or where a short link finally leads, so the final call stays yours.",
+            ],
+            "look": [
+                "Results that never open on their own; you tap Open when you are ready.",
+                "Safe, Caution or Blocked findings from fixed on-device rules, with no online lookup.",
+                "Camera and photo scanning for QR and common barcode formats.",
+                "QR creation for links, Wi-Fi, contacts, email, phone, SMS, location and events.",
+                "No account, ads or tracking, with history kept on the device.",
+            ],
+            "steps": [
+                "Scan the code and read the full payload, not just a preview title.",
+                "Look at the host name, the http or https prefix and any Caution finding.",
+                "Skip links that ask for a payment or login you did not expect.",
+                "Save codes you trust to history so you can find them again.",
+                "When in doubt, type the organisation's address yourself instead of opening the code.",
+            ],
+            "fits": (
+                "fits people who want to inspect a code before acting on it, "
+                "create their own QR codes for free, and unlock unlimited scanning "
+                "with a single Lifetime Pro purchase rather than a subscription."
+            ),
+            "faq": [
+                {
+                    "q": "Is scanning free?",
+                    "a": (
+                        "Each device includes three free successful scans. "
+                        "Unlimited scanning comes with the one-time Lifetime Pro "
+                        "purchase; creating QR codes and viewing history stay free."
+                    ),
+                },
+                {
+                    "q": "Can it catch every phishing QR code?",
+                    "a": (
+                        "No. It applies fixed on-device rules and shows the "
+                        "payload before anything opens, but it does not look up "
+                        "link reputation and cannot recognise every malicious site."
+                    ),
+                },
+                {
+                    "q": "Does it send my scans anywhere?",
+                    "a": (
+                        "No account is needed, scan history stays on the device "
+                        "and the app has no analytics or tracking."
+                    ),
+                },
+            ],
+        }
+    ],
+    # LED Moving Text (6806639602, WAITING_FOR_REVIEW). Free download: typing,
+    # full-screen display, still and left/right scrolling, speed, size,
+    # colours and one saved board are free; the one-time Lifetime Pro purchase
+    # adds more motion modes, effects, fonts, gradients, backgrounds,
+    # countdown, beat reaction, unlimited boards and MP4/GIF export. Markets:
+    # 50 locales, fan culture in JA/KO/ZH (concert cheering, airport pickups).
+    # Never claim a typeface count, brightness beyond the device maximum, or
+    # sound and haptics as features.
+    "ledmovingtext": [
+        {
+            "query": "led scrolling text app for concerts and airport pickups",
+            "guide_title": "Turning an iPhone into a scrolling sign: what to check",
+            "triggers": [
+                "led banner app iphone",
+                "scrolling text sign app",
+                "concert sign app for phone",
+                "airport pickup sign on phone",
+                "marquee text full screen iphone",
+                "digital cheer board app",
+            ],
+            "persona": (
+                "fans, drivers and staff who need a message that reads across a "
+                "crowd, an arrivals hall or a noisy room in a few seconds"
+            ),
+            "lead": (
+                "When you hold a phone above a crowd, what matters is whether the "
+                "words are big, bright and moving at a speed people can actually read."
+            ),
+            "paras": [
+                "Test readability rather than decoration. Type the message, go "
+                "full screen and look at it from a few metres away: letter size, "
+                "scroll speed and colour contrast decide whether a name at "
+                "arrivals or a cheer at a concert gets noticed.",
+                "Check what works without paying and without a connection. Venues "
+                "and airports often have weak signal, so the sign should run "
+                "offline, and typing, full screen, scrolling, speed and colour "
+                "should not sit behind a paywall.",
+            ],
+            "look": [
+                "Full-screen display that raises brightness and keeps the screen awake.",
+                "Scroll speed, text size, blink and colour controls you can change quickly.",
+                "Clear rendering for the scripts you actually need to show.",
+                "Offline use with no account, ads or tracking.",
+                "Optional extras such as effects, more motion modes and video or GIF export.",
+            ],
+            "steps": [
+                "Type the name or message and keep it short.",
+                "Go full screen and check it from where the reader will stand.",
+                "Adjust scroll speed and size until the whole message reads in one pass.",
+                "Pick a colour with strong contrast for dark venues or bright halls.",
+                "Save the board so it is ready before you arrive.",
+            ],
+            "fits": (
+                "fits people who need a bright scrolling sign for concerts, "
+                "airport pickups or quiet communication, want the basics free and "
+                "offline, and prefer a one-time Pro purchase for extra effects, "
+                "boards and export."
+            ),
+            "faq": [
+                {
+                    "q": "What is free in LED Moving Text?",
+                    "a": (
+                        "Typing, full-screen display, still and left/right "
+                        "scrolling, speed, size, colours and one saved board are "
+                        "free. More motion modes, effects, fonts, backgrounds, "
+                        "unlimited boards and MP4/GIF export come with the "
+                        "one-time Lifetime Pro purchase."
+                    ),
+                },
+                {
+                    "q": "Does it work without internet?",
+                    "a": "Yes. It runs offline and needs no account.",
+                },
+                {
+                    "q": "Can it make the screen brighter than usual?",
+                    "a": (
+                        "It raises brightness to the device maximum while the "
+                        "sign is showing and restores it afterwards; it cannot go "
+                        "beyond what the screen hardware allows."
+                    ),
+                },
+            ],
+        }
+    ],
+    # CountDaysNow (6807079789, WAITING_FOR_REVIEW). Free download: three
+    # active events, one reminder per event and widgets that show one chosen
+    # event; the one-time Lifetime Pro purchase unlocks unlimited events,
+    # multi-event widgets, iCloud sync and sharing, skins and extra calendars.
+    # Markets: en-US source with East Asian local keywords (exams,
+    # anniversaries, lunar dates). Never claim offline-only storage (iCloud
+    # sync exists), working-day maths, a dedicated StandBy mode or a
+    # second-by-second Live Activity.
+    "countdaysnow": [
+        {
+            "query": "countdown widget app for iphone without ads or subscription",
+            "guide_title": "Countdown and days-since apps on iPhone: what to check",
+            "triggers": [
+                "days until countdown widget",
+                "days since counter app",
+                "anniversary countdown iphone",
+                "exam countdown widget",
+                "countdown on lock screen iphone",
+                "birthday countdown app no ads",
+            ],
+            "persona": (
+                "people who keep a trip, exam, anniversary or quit date in mind "
+                "and want the number of days in view every time they pick up the phone"
+            ),
+            "lead": (
+                "A countdown only helps if you see it without opening anything, so "
+                "the widget matters more than the app screen."
+            ),
+            "paras": [
+                "Start with where the number appears. Home Screen and Lock Screen "
+                "widgets, a Live Activity on the day and an Apple Watch "
+                "complication decide whether the date stays in view, and a good "
+                "app handles both counting down to what is ahead and counting up "
+                "from something that already happened.",
+                "Then check the details that break simple counters: yearly repeats "
+                "for birthdays and anniversaries, reminders a few days before, "
+                "time zones for trips, and a second calendar such as the lunar "
+                "calendar when a family date does not follow the Gregorian one.",
+            ],
+            "look": [
+                "Countdowns to future dates and days-since counters in one timeline.",
+                "Home Screen, Lock Screen and Apple Watch widgets.",
+                "Repeats and milestone reminders so recurring dates roll forward on their own.",
+                "Optional second calendars and per-event time zones.",
+                "No account, ads or tracking, with optional iCloud sync.",
+            ],
+            "steps": [
+                "Add the one date you check most often first.",
+                "Place a widget where you will see it every day.",
+                "Turn on a reminder the day before so the date never surprises you.",
+                "Set a yearly repeat for birthdays and anniversaries.",
+                "Add a days-since counter for a habit or milestone you want to keep going.",
+            ],
+            "fits": (
+                "fits people who want countdowns and days-since counters on the "
+                "Home Screen, Lock Screen and Apple Watch, can start with three "
+                "events for free, and would rather pay once for unlimited events "
+                "than subscribe."
+            ),
+            "faq": [
+                {
+                    "q": "How many events are free?",
+                    "a": (
+                        "Three active events are free, each with a reminder. The "
+                        "one-time Lifetime Pro purchase unlocks unlimited events, "
+                        "multi-event widgets, iCloud sync and sharing."
+                    ),
+                },
+                {
+                    "q": "Does my data leave the phone?",
+                    "a": (
+                        "Events are stored on the device. If you turn on iCloud "
+                        "sync or share a countdown, that data goes through Apple's "
+                        "iCloud; there is no account, analytics or tracking."
+                    ),
+                },
+                {
+                    "q": "Can it count working days?",
+                    "a": (
+                        "No. It counts calendar days and includes a date "
+                        "calculator for the difference between two dates."
+                    ),
+                },
+            ],
+        }
+    ],
+    # GBAGo (6804564400, WAITING_FOR_REVIEW). Paid upfront: one purchase with
+    # no in-app purchases, subscription, account, ads or analytics; built on
+    # the open-source mGBA core (MPL-2.0). Markets: US base, 175 storefronts,
+    # nostalgia-led copy in JA/ZH/KO. Never name or show commercial games,
+    # imply that games or ROMs are included or downloadable, imply Nintendo
+    # endorsement, or claim hold-to-rewind, button remapping, keyboard support
+    # or ROM sync.
+    "gbago": [
+        {
+            "query": "paid gba emulator for iphone with save states and controller support",
+            "guide_title": "Playing your own GBA backups on iPhone: what to check",
+            "triggers": [
+                "gba emulator iphone",
+                "gba emulator with save states",
+                "emulator with controller support iphone",
+                "offline emulator no ads",
+                "gba cheat codes emulator",
+                "gbc emulator ipad",
+            ],
+            "persona": (
+                "adults who kept their old cartridges and want to play their own "
+                "legally made backups on an iPhone or iPad during a commute or a long flight"
+            ),
+            "lead": (
+                "An emulator worth trusting ships with no games, points you to no "
+                "download sites and runs the files you already own entirely on the device."
+            ),
+            "paras": [
+                "Check how saving works before anything else. Handheld games were "
+                "built for short sessions, so automatic saving when you leave, "
+                "several save-state slots with thumbnails and a way back to a "
+                "moment a few minutes earlier matter more than a long settings list.",
+                "Then look at comfort and cost. Support for MFi, Xbox and "
+                "PlayStation controllers, adjustable touch buttons, screen filters "
+                "and fast-forward make long sessions pleasant, and a single upfront "
+                "price with no ads or in-app purchases keeps play uninterrupted.",
+            ],
+            "look": [
+                "No bundled games, ROM downloads or links to ROM sites.",
+                "Auto-save plus up to 12 save-state slots with thumbnails.",
+                "Automatic snapshots every two minutes, keeping the last 15.",
+                "MFi, Xbox and PlayStation controllers, turbo and fast-forward.",
+                "Offline play with no account, ads, analytics or in-app purchases.",
+            ],
+            "steps": [
+                "Start with a backup file of a cartridge you own, saved in the Files app.",
+                "Import it from Files or open it from the share sheet.",
+                "Pair a controller or adjust the size and opacity of the touch buttons.",
+                "Use a save slot before a hard section and let auto-save cover the rest.",
+                "Turn on optional iCloud sync for save states if you play on more than one device.",
+            ],
+            "fits": (
+                "fits people who want to play their own GBA, GB and GBC backups "
+                "offline on iPhone or iPad with save states, controllers and "
+                "cheats, for one upfront price with no ads or in-app purchases."
+            ),
+            "faq": [
+                {
+                    "q": "Does GBAGo include any games?",
+                    "a": (
+                        "No. It contains no games, ROMs or BIOS files and links to "
+                        "no ROM sites. You import backups of cartridges you "
+                        "legally own."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription or in-app purchase?",
+                    "a": (
+                        "No. GBAGo is a one-time paid download with no in-app "
+                        "purchases, subscription, ads or account."
+                    ),
+                },
+                {
+                    "q": "Is GBAGo affiliated with Nintendo?",
+                    "a": (
+                        "No. It is not affiliated with, endorsed by or sponsored "
+                        "by Nintendo; system names are used only to describe file "
+                        "compatibility."
+                    ),
+                },
+            ],
+        }
+    ],
+    # Studydown (6807335593, WAITING_FOR_REVIEW). Free download that works as a
+    # trial: three activities and five minutes of recorded time in total; the
+    # one-time Lifetime Pro purchase removes those limits and adds monthly and
+    # custom stats, weekly goals, deadlines, widgets and Apple Watch. Audience
+    # is wider than students (work, reading, everyday goals); competitors are
+    # subscription focus timers. Never claim it blocks apps or uses Screen
+    # Time, keeps timing in the background, uses the proximity sensor, syncs
+    # through iCloud or offers unlimited free timing.
+    "studydown": [
+        {
+            "query": "focus timer that starts when you put your phone face down",
+            "guide_title": "Face-down focus timers on iPhone: what to check",
+            "triggers": [
+                "turn phone over to focus timer",
+                "face down phone timer app",
+                "study time tracker no subscription",
+                "focus hours log by activity",
+                "phone down timer for reading",
+                "log focused hours on iphone",
+            ],
+            "persona": (
+                "people who study, read or do focused work in blocks and want an "
+                "honest record of the hours without starting and stopping a timer by hand"
+            ),
+            "lead": (
+                "Putting the phone face down is a small physical signal that you "
+                "have started, and a timer built around that gesture records the "
+                "time without asking you to remember anything else."
+            ),
+            "paras": [
+                "Check what happens when you pick the phone up. A fair timer gives "
+                "a short grace period to put it back, ignores sessions too short "
+                "to count and keeps the time already recorded even if the app is "
+                "closed unexpectedly.",
+                "Be clear about the limits. A face-down timer records effort; it "
+                "does not lock other apps or replace Screen Time, and it has to "
+                "stay open on screen while timing, so it suits a desk or a library "
+                "table better than a pocket.",
+            ],
+            "look": [
+                "Timing that starts when the phone lies face down after you tap Start.",
+                "An adjustable grace period and minimum session length.",
+                "Activities with daily and weekly totals and a streak.",
+                "A Live Activity while timing and reminders to come back.",
+                "Data kept on the device with no account, ads or tracking.",
+            ],
+            "steps": [
+                "Create an activity for the thing you want to spend time on.",
+                "Tap Start, then lay the phone face down on the table.",
+                "Pick it up when you are done; a short grace period covers a quick glance.",
+                "Check today's and this week's totals for each activity.",
+                "Set a daily reminder so the habit has a fixed place in your day.",
+            ],
+            "fits": (
+                "fits people who want to log focused hours for study, work or "
+                "reading by turning the phone over, can try it free, and prefer a "
+                "one-time Pro purchase to a subscription focus app."
+            ),
+            "faq": [
+                {
+                    "q": "What does the free version include?",
+                    "a": (
+                        "It works as a trial: up to three activities and five "
+                        "minutes of recorded time in total. The one-time Lifetime "
+                        "Pro purchase removes those limits and adds monthly stats, "
+                        "weekly goals, deadlines, widgets and Apple Watch."
+                    ),
+                },
+                {
+                    "q": "Does Studydown block other apps?",
+                    "a": (
+                        "No. It records the time your phone stays face down; it "
+                        "does not use Screen Time or lock other apps."
+                    ),
+                },
+                {
+                    "q": "Does it keep timing if I switch apps?",
+                    "a": (
+                        "No. Keep Studydown open while timing; leaving the app "
+                        "ends the session and saves the time recorded so far."
+                    ),
+                },
+            ],
+        }
+    ],
 }
 
 # Zipbox has entered the canonical live roster; its reviewed pre-publication
 # persona now participates in every live-roster consumer.
 PERSONAS["zipbox"] = PENDING_PERSONAS.pop("zipbox")
+
+AUTO_REGISTRY_PATH = (
+    Path(__file__).resolve().parents[1] / "social" / "videogen" / "registry_auto.json"
+)
+
+
+def promote_registered_personas(
+    pending: dict[str, list[dict[str, Any]]],
+    personas: dict[str, list[dict[str, Any]]],
+    registered: set[str] | frozenset[str],
+) -> list[str]:
+    """Move staged personas into ``personas`` once catch-up registers the app.
+
+    new_app_catchup writes an app into registry_auto.json only after Apple
+    Lookup shows it publicly and catalog_audit has accepted its reviewed
+    persona, and every live-roster consumer (portfolio_app_finder,
+    publisher_intent_catalog) then requires the live set to equal PERSONAS.
+    Promoting on that same registration lets launch day proceed without a
+    manual edit, while apps still in review stay staged and change no
+    published output.
+    """
+    promoted = sorted((set(pending) & set(registered)) - set(personas))
+    for key in promoted:
+        personas[key] = pending.pop(key)
+    return promoted
+
+
+def _registered_auto_keys(path: Path = AUTO_REGISTRY_PATH) -> frozenset[str]:
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return frozenset()
+    except (OSError, UnicodeError, json.JSONDecodeError) as error:
+        raise RuntimeError(f"Invalid automatic app registry: {path}") from error
+    if not isinstance(document, dict):
+        raise RuntimeError(f"Invalid automatic app registry: {path}")
+    return frozenset(document)
+
+
+PROMOTED_PENDING_PERSONAS = promote_registered_personas(
+    PENDING_PERSONAS, PERSONAS, _registered_auto_keys()
+)
 
 
 def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:

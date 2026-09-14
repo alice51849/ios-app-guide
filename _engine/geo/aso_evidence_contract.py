@@ -75,6 +75,10 @@ READING_FRESH_DAYS = 4
 OFFSITE_ONLY = "offsite_topics_only"
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 MAX_DOCUMENT_BYTES = 8 * 1024 * 1024
+# ~/.growth-private/asc-acquisition-feedback.json（0600，自家 runner 產生）是 47 款 ×
+# 領地 × 來源的 30 天明細，2026-09-12 起超過 8 MiB（09-13 實測 62.9 MB），
+# rank-topics 因此每天 document_exceeds_size_cap。只對這份私有文件放寬，其餘仍 8 MiB。
+FEEDBACK_MAX_DOCUMENT_BYTES = 128 * 1024 * 1024
 
 
 class ContractError(ValueError):
@@ -126,8 +130,8 @@ def _unique_object(pairs):
     return result
 
 
-def decode_document(raw: bytes | str) -> dict:
-    if len(raw) > MAX_DOCUMENT_BYTES:
+def decode_document(raw: bytes | str, *, max_bytes: int = MAX_DOCUMENT_BYTES) -> dict:
+    if len(raw) > max_bytes:
         raise ContractError("document_exceeds_size_cap")
     try:
         document = json.loads(raw, object_pairs_hook=_unique_object)
@@ -139,9 +143,9 @@ def decode_document(raw: bytes | str) -> dict:
     return document
 
 
-def read_document(path: Path) -> dict:
+def read_document(path: Path, *, max_bytes: int = MAX_DOCUMENT_BYTES) -> dict:
     with path.open("rb") as handle:
-        return decode_document(handle.read(MAX_DOCUMENT_BYTES + 1))
+        return decode_document(handle.read(max_bytes + 1), max_bytes=max_bytes)
 
 
 def live_roster() -> dict[str, dict[str, str]]:

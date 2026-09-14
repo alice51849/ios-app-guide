@@ -327,6 +327,17 @@ def atomic_write_json(
     )
 
 
+def write_report_json(
+    path: Path, payload: Mapping[str, object], mode: int = 0o600
+) -> None:
+    """--report 是獨立存證，不是 publisher state；不可套用 state schema 驗證。"""
+    atomic_write_text(
+        Path(path),
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        mode=mode,
+    )
+
+
 @contextmanager
 def publisher_lock(state_path: Path) -> Iterator[None]:
     state_path = Path(state_path)
@@ -1904,7 +1915,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         publish=args.publish,
     )
     if args.report is not None:
-        atomic_write_json(args.report, result)
+        write_report_json(args.report, result)
     print(
         f"Standard.site {result['mode']}: "
         f"{len(result['selected_urls'])} document(s), "

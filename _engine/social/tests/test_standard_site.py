@@ -1588,6 +1588,23 @@ class StandardSitePublisherTests(ProjectScratchCase):
             self.assertFalse(missing_state.exists())
         self.assertEqual("protected state", state.read_text())
 
+    def test_report_is_written_as_evidence_not_validated_as_state(self):
+        # 2026-09-12 起 --report 被當成 publisher state 驗證，報表沒有 version
+        # 欄位而每輪 StateError，standard_site.yml 連續失敗。
+        state, _, _ = self.paths()
+        report = state.with_name("standard-site-report.json")
+        result = {
+            "mode": "check_only", "selected_urls": [], "documents_changed": 0,
+            "legacy_unattributed": [], "errors": [],
+        }
+        with mock.patch.object(publisher, "load_manifest", return_value={}), \
+                mock.patch.object(publisher, "run", return_value=result):
+            self.assertEqual(0, publisher.main([
+                "--state", str(state), "--report", str(report),
+            ]))
+        self.assertEqual(result, json.loads(report.read_text(encoding="utf-8")))
+        self.assertEqual(0o600, report.stat().st_mode & 0o777)
+
     def test_native_report_survives_missing_cache_without_state_merge_fields(self):
         state, manifest, client = self.native_fixture()
         for document in manifest["documents"][:2]:

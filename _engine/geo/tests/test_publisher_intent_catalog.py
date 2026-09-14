@@ -9,7 +9,14 @@ import html
 import importlib.util
 import io
 import json
-from market_contract_assertions import assert_blocked_page, assert_blocked_record
+try:
+    from market_contract_assertions import assert_blocked_page, assert_blocked_record
+except ModuleNotFoundError as error:
+    # geo-daily 以點路徑從 repo 根目錄執行本模組，此時 tests 目錄不在 sys.path；
+    # 從 tests 目錄 discover 仍走上面的頂層匯入。
+    if error.name != "market_contract_assertions" or not __package__:
+        raise
+    from .market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
 import re

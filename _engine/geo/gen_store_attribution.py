@@ -445,6 +445,29 @@ def rewrite(
         updated = STORE_TEXT_RE.sub(replacement, value)
         return None if blocked and not updated.strip() else updated
 
+    def object_app_id(value, inherited=None):
+        direct = value.get(
+            "app_store_id",
+            value.get("appStoreId", value.get("_lumi_app_store_id")),
+        )
+        if direct is not None and str(direct).isdigit():
+            return str(direct)
+        identifier = value.get("identifier")
+        if (
+            isinstance(identifier, dict)
+            and identifier.get("propertyID")
+            in {"Apple App Store ID", "App Store ID"}
+            and str(identifier.get("value", "")).isdigit()
+        ):
+            return str(identifier["value"])
+        identity = str(value.get("@id", ""))
+        found = re.search(
+            r"(?:urn:apple:app:id|(?:apps|itunes)\.apple\.com/[^\"'\s]*/id)"
+            r"(\d+)",
+            identity,
+        )
+        return found[1] if found else inherited
+
     def json_value(value, *, field="", parent=None, local=locale, app_id=None, schema=False):
         nonlocal changes
         # Provenance/identity fields and JSON Schema sample or regex keywords
@@ -455,7 +478,15 @@ def rewrite(
             schema = schema_node(value, schema)
             local = value.get("locale", value.get("page_language", local))
             local = "en-US" if local == "en" else local
-            app_id = str(value["app_store_id"]) if "app_store_id" in value else app_id
+            app_id = object_app_id(value, app_id)
+            if market.is_unavailable(local, app_id):
+                updated = market_surface_policy.unavailable_json(
+                    value,
+                    local,
+                    app_id,
+                )
+                changes += int(updated != value)
+                return updated
             return {
                 key: json_value(
                     child, field=key, parent=value, local=local, app_id=app_id, schema=schema

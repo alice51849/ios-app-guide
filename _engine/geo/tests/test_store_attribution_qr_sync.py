@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 import gen_app_decision_cards  # noqa: E402
 import gen_app_store_qr_ctas  # noqa: E402
 import gen_store_attribution  # noqa: E402
+from audit_store_attribution import audit_source  # noqa: E402
 
 
 def _page(href: str, digest: str) -> str:
@@ -87,6 +88,10 @@ class AppSpecificUnavailableMarketTests(unittest.TestCase):
     def test_mixed_locale_removes_only_the_blocked_app_destinations(self):
         app_id = "6778748533"
         store_url = f"https://apps.apple.com/cn/app/id{app_id}"
+        available_id = "6791658210"
+        available_url = (
+            f"https://apps.apple.com/cn/app/id{available_id}"
+        )
         source = (
             '<html lang="zh-Hans"><head>'
             f'<meta name="apple-itunes-app" content="app-id={app_id}">'
@@ -94,7 +99,13 @@ class AppSpecificUnavailableMarketTests(unittest.TestCase):
             f'<a class="download" href="{store_url}">保留 App 名稱</a>'
             f'<button data-app-store-url="{store_url}">分享</button>'
             '<script type="application/json">'
-            f'{{"app_store_id":"{app_id}","app_store_url":"{store_url}"}}'
+            '{"@context":"https://schema.org","@type":"ItemList",'
+            '"itemListElement":['
+            '{"@type":"SoftwareApplication",'
+            f'"@id":"{store_url}","installUrl":"{store_url}"}},'
+            '{"@type":"SoftwareApplication",'
+            f'"@id":"{available_url}","installUrl":"{available_url}"}}'
+            "]}"
             "</script>"
             f'<script>window.destination="{store_url}";</script>'
             "</body></html>"
@@ -108,13 +119,30 @@ class AppSpecificUnavailableMarketTests(unittest.TestCase):
         )
 
         self.assertGreaterEqual(changes, 5)
-        self.assertNotIn("apps.apple.com", updated)
+        self.assertNotIn(store_url, updated)
+        self.assertIn(
+            f"https://apps.apple.com/cn/app/id{available_id}?",
+            updated,
+        )
         self.assertNotIn("apple-itunes-app", updated)
         self.assertNotIn("data-app-store-url", updated)
         self.assertNotIn("<a", updated)
         self.assertIn("保留 App 名稱", updated)
-        self.assertIn('"app_store_url":null', updated)
+        self.assertIn(f"urn:apple:app:id{app_id}", updated)
+        self.assertIn('"market_availability"', updated)
+        self.assertEqual(1, updated.count('"installUrl"'))
         self.assertIn("window.destination=null", updated)
+        refs = audit_source(
+            updated,
+            "zh-CN/index.html",
+            provider="118326163",
+        )
+        self.assertTrue(
+            any(
+                available_id in ref.url and not ref.identity
+                for ref in refs
+            )
+        )
 
 
 class QrEligiblePageFamilyTests(unittest.TestCase):

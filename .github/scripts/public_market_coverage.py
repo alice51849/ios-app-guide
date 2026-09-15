@@ -25,6 +25,7 @@ if str(GEO_ENGINE) not in sys.path:
     sys.path.insert(0, str(GEO_ENGINE))
 
 from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
+import market_availability as market  # noqa: E402
 
 DEPLOYMENT_SCHEMA_VERSION = 4
 # The producer (_engine/geo/high_intent_decision_routes.py) binds the
@@ -163,7 +164,12 @@ def fetch_json(
     raise CoverageError(f"cannot fetch public JSON {url}: {last_error}")
 
 
-def _app_store_identity(url: object, *, field: str) -> tuple[str, str]:
+def _app_store_identity(
+    url: object,
+    *,
+    field: str,
+    require_campaign: bool = True,
+) -> tuple[str, str]:
     text = _text(url, field)
     parsed = urllib.parse.urlsplit(text)
     match = APP_STORE_PATH_RE.fullmatch(parsed.path)
@@ -178,10 +184,13 @@ def _app_store_identity(url: object, *, field: str) -> tuple[str, str]:
     ):
         raise CoverageError(f"{field} is not a trusted App Store URL")
     query = urllib.parse.parse_qs(parsed.query, strict_parsing=True)
-    if query.get("mt") != ["8"] or query.get("pt") != ["118326163"]:
-        raise CoverageError(f"{field} lacks the reviewed campaign identity")
-    if len(query.get("ct", [])) != 1:
-        raise CoverageError(f"{field} lacks one campaign code")
+    if require_campaign:
+        if query.get("mt") != ["8"] or query.get("pt") != ["118326163"]:
+            raise CoverageError(f"{field} lacks the reviewed campaign identity")
+        if len(query.get("ct", [])) != 1:
+            raise CoverageError(f"{field} lacks one campaign code")
+    elif query:
+        raise CoverageError(f"{field} must be a stable App Store identity")
     country = parsed.path.strip("/").split("/", 1)[0]
     return match.group(1), country
 
@@ -396,7 +405,7 @@ def _validate_catalog(
     digest: str,
     site: str,
     expected_apps: int,
-) -> dict[str, dict[str, str]]:
+) -> dict[str, dict[str, Any]]:
     if document.get("locale") != locale:
         raise CoverageError(f"{locale} catalog language identity changed")
     if document.get("record_count") != expected_apps:
@@ -406,7 +415,7 @@ def _validate_catalog(
     apps = _array(document.get("apps"), f"{locale} catalog apps")
     if len(apps) != expected_apps:
         raise CoverageError(f"{locale} catalog App rows are incomplete")
-    records: dict[str, dict[str, str]] = {}
+    records: dict[str, dict[str, Any]] = {}
     app_ids: set[str] = set()
     for raw in apps:
         app = _object(raw, f"{locale} catalog App")
@@ -426,12 +435,23 @@ def _validate_catalog(
         )
         if guide_url != f"{site}/{locale}/{key}.html":
             raise CoverageError(f"{locale}/{key} guide URL is not canonical")
-        observed_id, country = _app_store_identity(
-            app.get("app_store_url"),
-            field=f"{locale}/{key} App Store URL",
-        )
-        if observed_id != app_id:
-            raise CoverageError(f"{locale}/{key} App Store identity mismatch")
+        try:
+            available = market.validate_record(
+                {**app, "locale": locale},
+                url_fields=("app_store_url",),
+            )
+        except ValueError as error:
+            raise CoverageError(
+                f"{locale}/{key} market availability is invalid: {error}"
+            ) from error
+        country = None
+        if available:
+            observed_id, country = _app_store_identity(
+                app.get("app_store_url"),
+                field=f"{locale}/{key} App Store URL",
+            )
+            if observed_id != app_id:
+                raise CoverageError(f"{locale}/{key} App Store identity mismatch")
         if not _has_expected_script(locale, f"{name} {summary}"):
             raise CoverageError(f"{locale}/{key} lacks native-script copy")
         records[key] = {
@@ -440,6 +460,8 @@ def _validate_catalog(
             "summary": summary,
             "guide_url": guide_url,
             "country": country,
+            "available": available,
+            "market_availability": app.get("market_availability"),
         }
         app_ids.add(app_id)
     return records
@@ -450,9 +472,9 @@ def _validate_feed(
     *,
     locale: str,
     digest: str,
-    catalog: dict[str, dict[str, str]],
+    catalog: dict[str, dict[str, Any]],
     expected_apps: int,
-) -> dict[str, str]:
+) -> tuple[dict[str, str], int, int]:
     if document.get("language") != locale:
         raise CoverageError(f"{locale} feed language identity changed")
     metadata = _object(document.get("_lumi_catalog"), f"{locale} feed metadata")
@@ -461,35 +483,82 @@ def _validate_feed(
     if metadata.get("contentDigest") != digest:
         raise CoverageError(f"{locale} feed digest drifted from index")
     items = _array(document.get("items"), f"{locale} feed items")
+    locale_unavailable = market.is_unavailable(locale)
+    if locale_unavailable:
+        expected_market = market.record_fields(locale)["market_availability"]
+        if (
+            metadata.get("market_availability") != expected_market
+            or any(record["available"] for record in catalog.values())
+        ):
+            raise CoverageError(
+                f"{locale} feed market-unavailable contract is invalid"
+            )
+        if items:
+            raise CoverageError(
+                f"{locale} unavailable-market feed must not expose outbound items"
+            )
+        return (
+            {key: record["summary"] for key, record in catalog.items()},
+            0,
+            len(catalog),
+        )
+    if metadata.get("market_availability") is not None:
+        raise CoverageError(f"{locale} feed has an unverified market exception")
     if len(items) != expected_apps:
         raise CoverageError(f"{locale} feed items are incomplete")
     by_id = {record["app_id"]: key for key, record in catalog.items()}
     result: dict[str, str] = {}
+    native_cells = 0
+    not_applicable_cells = 0
     for raw in items:
         item = _object(raw, f"{locale} feed item")
         if item.get("language") != locale:
             raise CoverageError(f"{locale} feed item has wrong language")
-        app_id, country = _app_store_identity(
-            item.get("external_url"),
-            field=f"{locale} feed App Store URL",
+        app_id, _ = _app_store_identity(
+            item.get("id"),
+            field=f"{locale} feed App Store identity",
+            require_campaign=False,
         )
         key = by_id.get(app_id)
         if key is None or key in result:
             raise CoverageError(f"{locale} feed App identity is missing or repeated")
         record = catalog[key]
-        if country != record["country"]:
-            raise CoverageError(f"{locale}/{key} storefront country mismatch")
         if item.get("url") != record["guide_url"]:
             raise CoverageError(f"{locale}/{key} feed guide URL mismatch")
         content = _text(item.get("content_text"), f"{locale}/{key} feed copy")
-        if content != record["summary"]:
-            raise CoverageError(f"{locale}/{key} feed and catalog copy differ")
+        if record["available"]:
+            observed_id, country = _app_store_identity(
+                item.get("external_url"),
+                field=f"{locale} feed App Store URL",
+            )
+            if observed_id != app_id:
+                raise CoverageError(
+                    f"{locale} feed App identity is missing or repeated"
+                )
+            if country != record["country"]:
+                raise CoverageError(f"{locale}/{key} storefront country mismatch")
+            if item.get("_market_availability") is not None:
+                raise CoverageError(f"{locale}/{key} has an unverified market exception")
+            if content != record["summary"]:
+                raise CoverageError(f"{locale}/{key} feed and catalog copy differ")
+            native_cells += 1
+        else:
+            if (
+                "external_url" in item
+                or item.get("_market_availability")
+                != record["market_availability"]
+                or not content.startswith(record["summary"] + " ")
+            ):
+                raise CoverageError(
+                    f"{locale}/{key} unavailable-market feed contract is invalid"
+                )
+            not_applicable_cells += 1
         if not _has_expected_script(locale, content):
             raise CoverageError(f"{locale}/{key} feed copy lacks native script")
         result[key] = content
     if set(result) != set(catalog):
         raise CoverageError(f"{locale} feed and catalog App sets differ")
-    return result
+    return result, native_cells, not_applicable_cells
 
 
 def audit_public_market_coverage(
@@ -552,6 +621,7 @@ def audit_public_market_coverage(
     baseline_ids: dict[str, str] | None = None
     english_copy: dict[str, str] | None = None
     native_cells = 0
+    not_applicable_cells = 0
     for row in locale_rows:
         locale = row["locale"]
         catalog_document, feed_document = loaded[locale]
@@ -562,7 +632,7 @@ def audit_public_market_coverage(
             site=site,
             expected_apps=observed_apps,
         )
-        feed = _validate_feed(
+        feed, locale_native_cells, locale_not_applicable_cells = _validate_feed(
             feed_document,
             locale=locale,
             digest=digest,
@@ -578,7 +648,8 @@ def audit_public_market_coverage(
             raise CoverageError(f"{locale} changed the reviewed App denominator")
         if locale == "en-US":
             english_copy = feed
-        native_cells += len(feed)
+        native_cells += locale_native_cells
+        not_applicable_cells += locale_not_applicable_cells
 
     if english_copy is None:
         raise CoverageError("en-US native-copy baseline is missing")
@@ -596,7 +667,7 @@ def audit_public_market_coverage(
             site=site,
             expected_apps=observed_apps,
         )
-        localized = _validate_feed(
+        localized, _, _ = _validate_feed(
             feed_document,
             locale=locale,
             digest=digest,
@@ -608,9 +679,11 @@ def audit_public_market_coverage(
                 raise CoverageError(f"{locale}/{key} reuses the en-US feed copy")
 
     expected_cells = observed_apps * expected_locales
-    if native_cells != expected_cells:
+    if native_cells + not_applicable_cells != expected_cells:
         raise CoverageError(
-            f"public market coverage is {native_cells}, expected {expected_cells}"
+            "public market coverage is "
+            f"{native_cells} native + {not_applicable_cells} N/A, "
+            f"expected {expected_cells}"
         )
     return {
         "schema_version": 1,
@@ -629,6 +702,8 @@ def audit_public_market_coverage(
         "minimum_apps": expected_apps,
         "locales": expected_locales,
         "native_public_cells": native_cells,
+        "not_applicable_public_cells": not_applicable_cells,
+        "total_public_cells": native_cells + not_applicable_cells,
         "verified_public_endpoints": 2 + expected_locales * 2,
     }
 
@@ -651,6 +726,7 @@ def append_summary(path: Path, report: dict[str, Any]) -> None:
             f"- Apps: **{report['apps']}**\n"
             f"- Apple locales: **{report['locales']}**\n"
             f"- Native public cells: **{report['native_public_cells']}**\n"
+            f"- Market N/A cells: **{report['not_applicable_public_cells']}**\n"
             f"- Deployment: `{report['deployment_source_commit']}`\n"
             f"- Observed: `{report['observed_at']}`\n"
         )

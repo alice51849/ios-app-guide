@@ -105,6 +105,8 @@ jobs:
           key: live-availability-v2-${{ hashFiles('_engine/geo/live_app_manifest.json', '_engine/social/videogen/registry*.json', '_engine/social/videogen/registry.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Materialize newly live app surfaces
         run: |
+          python3 _engine/geo/public_origin_audit.py \
+            --site-root "$GITHUB_WORKSPACE" --repair
           cd _engine/geo
           python3 build_pages_i18n.py --cached-live --missing-apps
           python3 aeo_guide.py --missing

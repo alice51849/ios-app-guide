@@ -175,12 +175,16 @@ def replace_locale(
 
 
 class PublicMarketCoverageTests(unittest.TestCase):
-    def audit(self, documents: dict[str, dict]) -> dict:
+    def audit(
+        self,
+        documents: dict[str, dict],
+        official_locales: frozenset[str] = frozenset({"en-US", "zh-Hant"}),
+    ) -> dict:
         return coverage.audit_public_market_coverage(
             expected_apps=2,
-            expected_locales=2,
+            expected_locales=len(official_locales),
             reviewed_app_ids=frozenset({"1234567", "7654321"}),
-            official_locales=frozenset({"en-US", "zh-Hant"}),
+            official_locales=official_locales,
             workers=2,
             fetcher=lambda url: copy.deepcopy(documents[url]),
         )
@@ -189,12 +193,64 @@ class PublicMarketCoverageTests(unittest.TestCase):
         report = self.audit(fixture())
         self.assertEqual("READY", report["status"])
         self.assertEqual(4, report["native_public_cells"])
+        self.assertEqual(0, report["not_applicable_public_cells"])
+        self.assertEqual(4, report["total_public_cells"])
         self.assertEqual(6, report["verified_public_endpoints"])
         self.assertEqual(COMMIT, report["deployment_source_commit"])
         self.assertEqual(DEPLOYMENT_ID, report["deployment_id"])
         self.assertEqual(ENGINE_REVISION, report["engine_source_revision"])
         self.assertEqual(CONTRACT_DIGEST, report["source_contract_digest"])
         self.assertEqual(ROUTE_DIGEST, report["route_manifest_digest"])
+
+    def test_verified_unavailable_locale_keeps_content_without_outbound_links(self):
+        documents = fixture()
+        replace_locale(
+            documents,
+            old="zh-Hant",
+            new="bn-BD",
+            country="in",
+        )
+        catalog = documents[
+            f"{SITE}/api/v1/ios-app-catalog/locales/bn-BD.json"
+        ]
+        for row, summary in zip(
+            catalog["apps"],
+            ("ব্যক্তিগত নোট", "নিরাপদ ফাইল"),
+        ):
+            row["summary"] = summary
+            row["locale"] = "bn-BD"
+            row["app_store_url"] = None
+            row.update(
+                coverage.market.record_fields("bn-BD", row["app_store_id"])
+            )
+        feed = documents[
+            f"{SITE}/api/v1/ios-app-catalog/feeds/bn-BD.json"
+        ]
+        feed["_lumi_catalog"].update(
+            coverage.market.record_fields("bn-BD")
+        )
+        feed["items"] = []
+
+        report = self.audit(
+            documents,
+            frozenset({"en-US", "bn-BD"}),
+        )
+
+        self.assertEqual(2, report["native_public_cells"])
+        self.assertEqual(2, report["not_applicable_public_cells"])
+        self.assertEqual(4, report["total_public_cells"])
+
+    def test_null_store_url_without_verified_market_contract_fails_closed(self):
+        documents = fixture()
+        documents[
+            f"{SITE}/api/v1/ios-app-catalog/locales/zh-Hant.json"
+        ]["apps"][0]["app_store_url"] = None
+
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "market availability is invalid",
+        ):
+            self.audit(documents)
 
     def test_missing_feed_cell_fails_closed(self):
         documents = fixture()

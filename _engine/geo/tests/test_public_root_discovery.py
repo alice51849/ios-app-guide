@@ -93,6 +93,37 @@ class PublicRootDiscoveryTests(unittest.TestCase):
         self.assertEqual(site_config.PUBLIC_SITE + "/en-US/zipbox.html",
                          site_config.public_reference_url(site_config.ORIGIN_SITE + "/en-US/zipbox.html"))
 
+    def test_origin_repair_is_bounded_audited_and_idempotent(self):
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as work:
+            root = Path(work)
+            source = (
+                f'<link rel="canonical" href="{site_config.ORIGIN_SITE}/en-US/zipbox.html">'
+                " External https://example.org/a?q=1#x"
+            )
+            page = root / "index.html"
+            page.write_text(source)
+            (root / "_engine").mkdir()
+            internal = root / "_engine/source.txt"
+            internal.write_text(site_config.ORIGIN_SITE)
+
+            first = public_origin_audit.repair_public_artifacts(root)
+            second = public_origin_audit.repair_public_artifacts(root)
+
+            self.assertEqual(
+                {"files_changed": 1, "origin_occurrences_replaced": 1},
+                first,
+            )
+            self.assertEqual(
+                {"files_changed": 0, "origin_occurrences_replaced": 0},
+                second,
+            )
+            self.assertIn(site_config.PUBLIC_SITE, page.read_text())
+            self.assertIn("https://example.org/a?q=1#x", page.read_text())
+            self.assertEqual(site_config.ORIGIN_SITE, internal.read_text())
+            self.assertTrue(
+                public_origin_audit.audit_public_artifacts(root)["passed"]
+            )
+
     def test_partial_normal_generators_preserve_all_non_host_bytes(self):
         with tempfile.TemporaryDirectory(dir=GEO / "tests") as work:
             pages = Path(work)

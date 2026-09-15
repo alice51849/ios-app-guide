@@ -144,6 +144,30 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
         for locale in OFFICIAL_LOCALES:
             self.assertIn(f'hreflang="{locale}"', alternates)
 
+    def test_gallery_schema_omits_blocked_download_and_binds_evidence(self) -> None:
+        app_id = "6778748533"
+        record = {
+            "locale": "zh-Hans",
+            "app_name": "LumiLetters",
+            "app_store_id": app_id,
+            "app_store_url": None,
+            "canonical_guide_url": "https://example.com/zh-Hans/lumiletters.html",
+            **visuals.market.record_fields("zh-Hans", app_id),
+        }
+
+        application = visuals._application_schema(
+            record,
+            "购买方式",
+            "一次性购买",
+        )
+
+        self.assertEqual(f"urn:apple:app:id{app_id}", application["@id"])
+        self.assertNotIn("downloadUrl", application)
+        self.assertEqual(
+            visuals.market.record_fields("zh-Hans", app_id),
+            {"market_availability": application["market_availability"]},
+        )
+
     def test_near_capacity_text_uses_horizontal_fit_transform(self) -> None:
         value = "ನರ್ಸುಗಳಿಗೆ ಕ್ಲೌಡ್ ಇಲ್ಲದ ಉತ್ತಮ ಆಫ್‌ಲೈನ್ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್ ಆಪ್"
         size = visuals._fitted_size(
@@ -329,6 +353,26 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
             for item in schema["mainEntity"]["itemListElement"]:
                 application = item["item"]["about"]
                 self.assertNotIn("offers", application)
+                app_id = str(application["identifier"]["value"])
+                if visuals.market.is_unavailable(locale, app_id):
+                    self.assertEqual(
+                        f"urn:apple:app:id{app_id}",
+                        application["@id"],
+                    )
+                    self.assertNotIn("downloadUrl", application)
+                    self.assertEqual(
+                        visuals.market.record_fields(locale, app_id),
+                        {
+                            "market_availability":
+                                application["market_availability"],
+                        },
+                    )
+                else:
+                    self.assertIn(
+                        f"/id{app_id}",
+                        application["downloadUrl"],
+                    )
+                    self.assertNotIn("market_availability", application)
                 purchase = application["additionalProperty"]
                 self.assertEqual("PropertyValue", purchase["@type"])
                 self.assertTrue(purchase["name"])

@@ -476,6 +476,38 @@ def _alternates(site: str = SITE) -> str:
     return "\n".join(links)
 
 
+def _application_schema(
+    record: dict[str, Any],
+    purchase_name: str,
+    purchase_label: str,
+) -> dict[str, Any]:
+    app_id = str(record["app_store_id"])
+    locale = str(record["locale"])
+    application = {
+        "@type": "MobileApplication",
+        "name": record["app_name"],
+        "operatingSystem": "iOS",
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "App Store ID",
+            "value": app_id,
+        },
+        "url": record["canonical_guide_url"],
+        "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": purchase_name,
+            "value": purchase_label,
+        },
+    }
+    store_url = visual_store_url(record)
+    if store_url is None:
+        application["@id"] = f"urn:apple:app:id{app_id}"
+        application.update(market.record_fields(locale, app_id))
+    else:
+        application["downloadUrl"] = store_url
+    return application
+
+
 def _gallery_schema(
     locale: str,
     canonical: str,
@@ -524,25 +556,11 @@ def _gallery_schema(
                         "caption": record["publisher_query"],
                         "description": record["decision_context"],
                         "license": LICENSE_URL,
-                        "about": {
-                            "@type": "MobileApplication",
-                            "name": record["app_name"],
-                            "operatingSystem": "iOS",
-                            "identifier": {
-                                "@type": "PropertyValue",
-                                "propertyID": "App Store ID",
-                                "value": record["app_store_id"],
-                            },
-                            "url": record["canonical_guide_url"],
-                            "downloadUrl": visual_store_url(record),
-                            "additionalProperty": {
-                                "@type": "PropertyValue",
-                                "name": purchase_name,
-                                "value": purchase_labels[
-                                    str(record["purchase_model"])
-                                ],
-                            },
-                        },
+                        "about": _application_schema(
+                            record,
+                            purchase_name,
+                            purchase_labels[str(record["purchase_model"])],
+                        ),
                     },
                 }
                 for position, record in enumerate(records, start=1)

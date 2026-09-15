@@ -410,6 +410,32 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.assertEqual([url], [ref.url for ref in refs])
         self.assertEqual(["en-US"], [ref.locale for ref in refs])
 
+    def test_unavailable_page_allows_identity_without_a_fake_destination(self):
+        app = {
+            "@type": "SoftwareApplication",
+            "@id": f"urn:apple:app:id{APP_ID}",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "Apple App Store ID",
+                "value": APP_ID,
+            },
+        }
+        source = (
+            '<html lang="bn-BD"><head>'
+            '<script type="application/ld+json">'
+            f"{json.dumps(app)}</script></head><body></body></html>"
+        )
+        source = market_surface_policy.enforce_html(
+            source,
+            "bn-BD",
+            app_id=APP_ID,
+        )
+        assert_blocked_page(self, source)
+        self.assertEqual(
+            [],
+            self.audit(source, "bn-BD/app-with-identity-only.html"),
+        )
+
     def test_supplemental_languages_use_only_global_verified_app_fallback(self):
         global_url = f"https://apps.apple.com/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8"
         source = f'<html lang="aa"><a href="{html.escape(global_url)}">Get</a></html>'

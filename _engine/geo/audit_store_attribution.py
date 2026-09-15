@@ -243,7 +243,14 @@ def json_references(value: object, *, locale: str | None = None,
             }.issubset(value)
             if not has_link and linked_app_id not in {None, app_id}:
                 raise AttributionError("Conflicting nested App Store record ID")
-            if value.get("platform") != "itunes" and not has_link and linked_app_id != app_id and not site_descriptor and not blocked_fields:
+            if (
+                value.get("platform") != "itunes"
+                and not has_link
+                and linked_app_id != app_id
+                and not site_descriptor
+                and not blocked
+                and not blocked_fields
+            ):
                 raise AttributionError(f"Missing App Store link in record {app_id}")
             if has_link:
                 linked_app_id = app_id

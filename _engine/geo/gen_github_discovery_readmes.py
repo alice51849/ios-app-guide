@@ -150,7 +150,13 @@ def validate_dataset(payload: dict[str, object]) -> list[dict[str, Any]]:
             )
         record = dict(raw)
         for field in TEXT_FIELDS:
-            if market.is_unavailable(record.get("locale")) and field in {"canonical_app_store_url", "app_store_url"}:
+            if (
+                field in {"canonical_app_store_url", "app_store_url"}
+                and market.is_unavailable(
+                    record.get("locale"),
+                    record.get("app_store_id"),
+                )
+            ):
                 continue
             record[field] = _single_line(record[field], field)
         locale = record.get("locale")
@@ -311,10 +317,22 @@ def _render_readme(
                         ui["Guide"],
                         record["canonical_guide_url"],
                     ),
-                    "N/A" if market.is_unavailable(locale) else _markdown_link(
+                    (
+                        "N/A ("
+                        + market.unavailable_reason(
+                            locale,
+                            record["app_store_id"],
+                        )
+                        + ")"
+                    )
+                    if market.is_unavailable(
+                        locale,
+                        record["app_store_id"],
+                    )
+                    else _markdown_link(
                         record["app_store_cta_label"],
                         github_store_url(record),
-                    ),
+                    )
                 )
             )
             + " |"

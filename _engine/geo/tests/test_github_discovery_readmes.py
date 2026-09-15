@@ -437,17 +437,38 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 r"(?:[a-z]{2}/)?app/id[0-9]{9,12}(?:\?[^)\s]+)?",
                 source,
             )
+            blocked_records = [
+                record
+                for (language, _app_id), record in source_by_pair.items()
+                if language == locale
+                and discovery.market.is_unavailable(
+                    locale,
+                    record["app_store_id"],
+                )
+            ]
+            if blocked_records:
+                self.assertEqual(
+                    len(urls),
+                    catalog.EXPECTED_APP_COUNT - len(blocked_records),
+                )
+                for record in blocked_records:
+                    assert_blocked_record(self, record)
+                    self.assertIn(record["canonical_guide_url"], source)
+                    self.assertIn(
+                        discovery.market.unavailable_reason(
+                            locale,
+                            record["app_store_id"],
+                        ),
+                        source,
+                    )
             if locale == "bn-BD":
                 self.assertEqual(len(urls), 0)
                 self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
                 self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", source)
                 self.assertIn("Apple App Store এখনো বাংলাদেশে", source)
-                for (language, app_id), record in source_by_pair.items():
-                    if language == locale:
-                        assert_blocked_record(self, record)
-                        self.assertIn(record["canonical_guide_url"], source)
                 continue
-            self.assertEqual(catalog.EXPECTED_APP_COUNT, len(urls))
+            if not blocked_records:
+                self.assertEqual(catalog.EXPECTED_APP_COUNT, len(urls))
             for url in urls:
                 parsed = urlparse(url)
                 app_id_match = re.search(r"/app/id([0-9]{9,12})$", parsed.path)
@@ -463,12 +484,16 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 discovery.validated_app_store_url(url, app_id)
                 generic += parsed.path == f"/app/id{app_id}"
                 seen_pairs.add((locale, app_id))
-        self.assertEqual(catalog.EXPECTED_APP_COUNT * 49, len(seen_pairs))
+        self.assertEqual(2299, len(seen_pairs))
         self.assertEqual(
             sum(
                 urlparse(record["app_store_url"]).path
                 == f"/app/id{record['app_store_id']}"
-                for record in self.records if record["locale"] != "bn-BD"
+                for record in self.records
+                if not discovery.market.is_unavailable(
+                    record["locale"],
+                    record["app_store_id"],
+                )
             ),
             generic,
         )

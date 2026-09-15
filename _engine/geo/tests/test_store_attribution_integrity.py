@@ -395,6 +395,21 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.audit(root_page, "answers/compare.html")
         self.assertEqual(foreign, attribution.align_storefront(foreign, "aa", AVAILABILITY))
 
+    def test_embedded_app_language_does_not_override_the_page_storefront(self):
+        url = store_url(locale="en-US")
+        schema = {
+            "@type": "SoftwareApplication",
+            "inLanguage": "zh-Hant",
+            "url": url,
+        }
+        source = (
+            '<html lang="en"><script type="application/ld+json">'
+            f"{json.dumps(schema)}</script></html>"
+        )
+        refs = self.audit(source, "tools/zhuyin-bopomofo-chart.html")
+        self.assertEqual([url], [ref.url for ref in refs])
+        self.assertEqual(["en-US"], [ref.locale for ref in refs])
+
     def test_supplemental_languages_use_only_global_verified_app_fallback(self):
         global_url = f"https://apps.apple.com/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8"
         source = f'<html lang="aa"><a href="{html.escape(global_url)}">Get</a></html>'

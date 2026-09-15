@@ -168,14 +168,17 @@ def _text_references(value: str, field: str, locale: str | None,
 def json_references(value: object, *, locale: str | None = None,
                     app_id: str | None = None, field: str = "",
                     identity: bool = False, linked_app_id: str | None = None,
-                    schema: bool = False):
+                    schema: bool = False,
+                    locale_fields: tuple[str, ...] = (
+                        "locale", "page_language", "content_language",
+                        "language", "inLanguage", "_lumi_locale",
+                    )):
     if isinstance(value, dict):
         if any(not isinstance(key, str) for key in value):
             raise AttributionError("Malformed object or CSV column count")
         schema = schema_node(value, schema)
         local = next(
-            (value[name] for name in ("locale", "page_language", "content_language",
-                                     "language", "inLanguage", "_lumi_locale")
+            (value[name] for name in locale_fields
              if isinstance(value.get(name), str)),
             None,
         )
@@ -272,12 +275,14 @@ def json_references(value: object, *, locale: str | None = None,
             yield from json_references(
                 child, locale=locale, app_id=app_id, field=key, identity=child_identity,
                 linked_app_id=linked_app_id, schema=schema,
+                locale_fields=locale_fields,
             )
     elif isinstance(value, list):
         for child in value:
             yield from json_references(
                 child, locale=locale, app_id=app_id, field=field, identity=identity,
                 linked_app_id=linked_app_id, schema=schema,
+                locale_fields=locale_fields,
             )
     elif isinstance(value, str):
         if identity:
@@ -438,7 +443,11 @@ class _HTMLReferences(HTMLParser):
         if tag == "script" and self.script_type is not None:
             source = "".join(self.script_parts)
             if self.script_type in {"application/json", "application/ld+json"}:
-                refs = json_references(json.loads(source), locale=self.locale or "en-US")
+                refs = json_references(
+                    json.loads(source),
+                    locale=self.locale or "en-US",
+                    locale_fields=("locale", "page_language"),
+                )
             else:
                 refs = js_references(source, self.locale or "en-US")
             surface = "tool" if self.script_type != "application/ld+json" else "html"

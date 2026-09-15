@@ -466,7 +466,38 @@ def rewrite(
             r"(\d+)",
             identity,
         )
-        return found[1] if found else inherited
+        if found:
+            return found[1]
+        types = value.get("@type", [])
+        types = [types] if isinstance(types, str) else types
+        if (
+            isinstance(types, list)
+            and market_surface_policy.APP_TYPES.intersection(types)
+        ):
+            destinations = json.dumps(
+                [
+                    value.get(key)
+                    for key in (
+                        "@id",
+                        "url",
+                        "sameAs",
+                        "installUrl",
+                        "downloadUrl",
+                    )
+                ],
+                ensure_ascii=False,
+            )
+            app_ids = set(re.findall(
+                r"(?:apps|itunes)\.apple\.com/[^\"'\s]*/id(\d+)",
+                destinations,
+            ))
+            if len(app_ids) > 1:
+                raise ValueError(
+                    "SoftwareApplication has conflicting App Store IDs"
+                )
+            if app_ids:
+                return next(iter(app_ids))
+        return inherited
 
     def json_value(value, *, field="", parent=None, local=locale, app_id=None, schema=False):
         nonlocal changes

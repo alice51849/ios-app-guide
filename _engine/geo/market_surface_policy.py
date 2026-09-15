@@ -99,6 +99,7 @@ def unavailable_json(value, locale: str, app_id=None):
             result[key] = unavailable_json(child, locale, app_id)
     if application:
         if app_ids:
+            result["@id"] = f"urn:apple:app:id{app_ids[0]}"
             result["identifier"] = {
                 "@type": "PropertyValue", "propertyID": "Apple App Store ID", "value": app_ids[0],
             }

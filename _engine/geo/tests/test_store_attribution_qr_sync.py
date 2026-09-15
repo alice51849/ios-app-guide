@@ -102,9 +102,9 @@ class AppSpecificUnavailableMarketTests(unittest.TestCase):
             '{"@context":"https://schema.org","@type":"ItemList",'
             '"itemListElement":['
             '{"@type":"SoftwareApplication",'
-            f'"@id":"{store_url}","installUrl":"{store_url}"}},'
+            f'"installUrl":"{store_url}"}},'
             '{"@type":"SoftwareApplication",'
-            f'"@id":"{available_url}","installUrl":"{available_url}"}}'
+            f'"installUrl":"{available_url}"}}'
             "]}"
             "</script>"
             f'<script>window.destination="{store_url}";</script>'
@@ -143,6 +143,25 @@ class AppSpecificUnavailableMarketTests(unittest.TestCase):
                 for ref in refs
             )
         )
+
+    def test_conflicting_application_destinations_fail_closed(self):
+        source = (
+            '<html lang="zh-Hans"><script type="application/json">'
+            '{"@type":"SoftwareApplication",'
+            '"url":"https://apps.apple.com/cn/app/id6778748533",'
+            '"installUrl":"https://apps.apple.com/cn/app/id6791658210"}'
+            "</script></html>"
+        )
+        with self.assertRaisesRegex(
+            ValueError,
+            "conflicting App Store IDs",
+        ):
+            gen_store_attribution.rewrite(
+                source,
+                "geo_pick",
+                "118326163",
+                locale="zh-Hans",
+            )
 
 
 class QrEligiblePageFamilyTests(unittest.TestCase):

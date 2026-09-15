@@ -20,6 +20,13 @@ MANAGED = re.compile(
     r".*?<!-- \1:end -->", re.S,
 )
 APP_TYPES = {"MobileApplication", "SoftwareApplication"}
+RECORD_URL_FIELDS = {
+    "canonical_app_store_url",
+    "app_store_url",
+    "_lumi_app_store_url",
+    "storefront_url",
+    "external_url",
+}
 
 
 def document_locale(source: str, path=None) -> str | None:
@@ -74,6 +81,7 @@ def unavailable_json(value, locale: str, app_id=None):
     types = value.get("@type", [])
     types = [types] if isinstance(types, str) else types
     application = isinstance(types, list) and bool(APP_TYPES.intersection(types))
+    record_url_fields = RECORD_URL_FIELDS.intersection(value)
     destinations = [value.get(key) for key in ("@id", "url", "sameAs", "installUrl", "downloadUrl")]
     app_ids = re.findall(r"(?:apps|itunes)\.apple\.com/[^\"\s]*?/id(\d+)", json.dumps(destinations, ensure_ascii=False)) if application else []
     identifier = value.get("identifier")
@@ -82,6 +90,9 @@ def unavailable_json(value, locale: str, app_id=None):
     ) or str(value.get("@id", "")).startswith("urn:apple:app:id")
     application = application and bool(app_ids or apple_identity)
     for key, child in value.items():
+        if key in record_url_fields:
+            result[key] = None
+            continue
         if (application and key in {"offers", "aggregateRating"}) or (
             key in {"storefront_facts", "app_store_facts"} and child is not None
         ):
@@ -103,6 +114,7 @@ def unavailable_json(value, locale: str, app_id=None):
             result["identifier"] = {
                 "@type": "PropertyValue", "propertyID": "Apple App Store ID", "value": app_ids[0],
             }
+    if application or record_url_fields:
         result.update(market.record_fields(locale, app_id))
     return result
 

@@ -15,6 +15,7 @@ token `iag_decision`,於是 QR 圖鎖在 `ct=iag_decision`、按鈕卻被改成
 2. 萬一又有人鑄造出會被改寫的 token,`gen_store_attribution` 必須在**製造出
    失步的當下**就炸掉並指名頁面,而不是留給下游閘門去猜。
 """
+import json
 import os
 import pathlib
 import sys
@@ -85,6 +86,48 @@ class DecisionCardCampaignTests(unittest.TestCase):
 
 
 class AppSpecificUnavailableMarketTests(unittest.TestCase):
+    def test_global_unavailable_market_binds_evidence_to_nested_store_record(self):
+        source = (
+            '<html lang="bn-BD"><head></head><body><main>'
+            "<p>স্থানীয় পারিবারিক আবহাওয়া পরিকল্পনাকারী</p>"
+            '<script type="application/json" id="outing-config">'
+            '{"optionalApp":{"name":"LumiWeather",'
+            '"app_store_url":"https://apps.apple.com/us/app/id6779552704"}}'
+            "</script></main></body></html>"
+        )
+
+        updated, changes = gen_store_attribution.rewrite(
+            source,
+            "geo_pick",
+            "118326163",
+            locale="bn-BD",
+        )
+
+        self.assertEqual(1, changes)
+        self.assertNotIn("apps.apple.com", updated)
+        self.assertIn("স্থানীয় পারিবারিক আবহাওয়া পরিকল্পনাকারী", updated)
+        config = json.loads(
+            updated.split(
+                '<script type="application/json" id="outing-config">',
+                1,
+            )[1].split("</script>", 1)[0]
+        )
+        optional_app = config["optionalApp"]
+        self.assertIsNone(optional_app["app_store_url"])
+        self.assertEqual(
+            "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+            optional_app["market_availability"]["reason"],
+        )
+        self.assertFalse(optional_app["market_availability"]["publishable"])
+        self.assertEqual(
+            [],
+            audit_source(
+                updated,
+                "bn-BD/tools/family-outing-weather-planner.html",
+                provider="118326163",
+            ),
+        )
+
     def test_mixed_locale_removes_only_the_blocked_app_destinations(self):
         app_id = "6778748533"
         store_url = f"https://apps.apple.com/cn/app/id{app_id}"

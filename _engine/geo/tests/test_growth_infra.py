@@ -25372,6 +25372,20 @@ class GeneratorTests(unittest.TestCase):
             rewritten,
             Path("route.html"),
         )
+        feed_json = (
+            '{"content_text":"'
+            + json_campaign
+            + r"\n\nToto je další odstavec." + '"}'
+        )
+        rewritten, changed = normalize_app_store_links.normalize_source(
+            feed_json
+        )
+        self.assertEqual(0, changed)
+        self.assertEqual(feed_json, rewritten)
+        normalize_app_store_links.assert_no_partial_campaigns(
+            rewritten,
+            Path("feed.json"),
+        )
         with self.assertRaisesRegex(
             ValueError, "Partial or invalid App Store campaign URL"
         ):

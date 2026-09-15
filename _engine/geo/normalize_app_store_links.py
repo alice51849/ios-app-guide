@@ -45,7 +45,8 @@ APP_STORE_URL_RE = re.compile(
     # Refuse to stop inside a query value. With a bare "(?![?&])" the engine
     # backtracks into the middle of "pt=118326163", matches a truncated URL
     # and rewrites it — that is what shredded the decision feeds.
-    r"(?![?&\\A-Za-z0-9_/%+-])",
+    r"(?![?&A-Za-z0-9_/%+-])"
+    r"(?!\\u0026)",
     flags=re.IGNORECASE,
 )
 QUERY_APP_STORE_URL_RE = re.compile(
@@ -59,7 +60,8 @@ QUERY_APP_STORE_URL_RE = re.compile(
     # ...and sentence punctuation right after the link (".", ";", ":", "!")
     # belongs to the prose: the last character must be one a query value can
     # legitimately end with.
-    r"\?[-A-Za-z0-9._~%+=&;/:!*$#\\]*[-A-Za-z0-9_~%+=&/]",
+    r"\?(?:[-A-Za-z0-9._~%+=&;/:!*$#]|\\u0026)*"
+    r"[-A-Za-z0-9_~%+=&/]",
     flags=re.IGNORECASE,
 )
 

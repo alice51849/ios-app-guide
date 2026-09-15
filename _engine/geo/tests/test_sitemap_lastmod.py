@@ -19,6 +19,7 @@ if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
 import gen_sitemap_lastmod  # noqa: E402
+import market_availability as market  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 
 
@@ -612,7 +613,9 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                                 f"{SITE}/apps/sample.html"
                             ),
                             "app_store_url": (
-                                "https://apps.apple.com/app/id1"
+                                None
+                                if market.is_unavailable(locale, "1")
+                                else "https://apps.apple.com/app/id1"
                             ),
                             "sha256": gen_sitemap_lastmod._sha256(
                                 pages
@@ -620,6 +623,7 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                                 / locale
                                 / "sample.svg"
                             ),
+                            **market.record_fields(locale, "1"),
                         }
                         for locale in locales
                     ],
@@ -811,6 +815,38 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
             with self.assertRaisesRegex(
                 ValueError,
                 "Invalid publisher visual manifest contract",
+            ):
+                gen_sitemap_lastmod.generate(
+                    pages,
+                    state_path=state,
+                    today=modified,
+                    validation_time=datetime(
+                        2026,
+                        8,
+                        29,
+                        0,
+                        21,
+                        tzinfo=timezone.utc,
+                    ),
+                    history_dates={},
+                    dirty_paths=set(),
+                )
+            manifest.write_text(manifest_source, encoding="utf-8")
+
+            invalid_market = json.loads(manifest_source)
+            blocked_record = next(
+                record
+                for record in invalid_market["records"]
+                if record["locale"] == "bn-BD"
+            )
+            blocked_record.pop("market_availability")
+            manifest.write_text(
+                json.dumps(invalid_market),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "Invalid publisher visual manifest record",
             ):
                 gen_sitemap_lastmod.generate(
                     pages,

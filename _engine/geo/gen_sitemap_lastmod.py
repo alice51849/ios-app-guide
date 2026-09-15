@@ -16,6 +16,7 @@ import subprocess
 from typing import Any
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
+import market_availability as market
 from site_config import ORIGIN_HOST, PUBLIC_SITE  # noqa: E402
 
 
@@ -546,8 +547,13 @@ def _validate_publisher_visual_sitemap(
             gallery_url,
             image_url,
             item.get("canonical_guide_url"),
-            item.get("app_store_url"),
         )
+        try:
+            market.validate_record(item, url_fields=("app_store_url",))
+        except ValueError as error:
+            raise ValueError(
+                "Invalid publisher visual manifest record"
+            ) from error
         if (
             any(
                 not isinstance(value, str) or not value

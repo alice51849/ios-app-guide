@@ -85,6 +85,12 @@ SHARE_URL_RE = re.compile(
     r"(?P<suffix>(?P=quote))",
     flags=re.IGNORECASE,
 )
+FULL_STORE_ANCHOR_RE = re.compile(
+    r"""<a\b[^>]*?\bhref\s*=\s*(?P<quote>["']?)"""
+    r"""(?P<url>(?:https?://|itms-apps://|//)apps\.apple\.com[^\s"'<>]*)"""
+    r"""(?P=quote)[^>]*>(?P<body>.*?)</a\s*>""",
+    flags=re.IGNORECASE | re.DOTALL,
+)
 STORE_URL_PATTERNS = (ANCHOR_HREF_RE, SHARE_URL_RE)
 CAMPAIGN_SAFE_RE = re.compile(r"[^A-Za-z0-9_]")
 MAX_TOKEN = 30
@@ -386,10 +392,22 @@ def rewrite(
     if market.is_unavailable(locale) or updated != text:
         return updated, int(updated != text)
 
-    def retarget(url: str, local=locale, app_id=None) -> str:
+    def retarget(url: str, local=locale, app_id=None) -> str | None:
         return final_store_url(
             url, token, provider, locale=local, availability=availability, app_id=app_id,
         )
+
+    def anchor(match: re.Match[str]) -> str:
+        nonlocal changes
+        url = html.unescape(match.group("url"))
+        app = re.search(r"/id(\d+)(?:[?#]|$)", url)
+        app_id = app[1] if app else None
+        if not market.is_unavailable(locale, app_id):
+            return match.group(0)
+        if retarget(url, app_id=app_id) is not None:
+            raise ValueError("Unavailable App Store anchor was not blocked")
+        changes += 1
+        return match.group("body")
 
     def replace(match: re.Match[str]) -> str:
         nonlocal changes
@@ -399,12 +417,33 @@ def rewrite(
         escaped = html.unescape(raw) != raw
         url = html.unescape(raw)
         updated = retarget(url)
+        if updated is None:
+            if match.re is ANCHOR_HREF_RE:
+                raise ValueError(
+                    "Unavailable App Store anchor escaped complete-link cleanup"
+                )
+            changes += 1
+            return ""
         if escaped:
             updated = updated.replace("&", "&amp;")
         if updated == raw:
             return match.group(0)
         changes += 1
         return match.group("prefix") + updated + match.group("suffix")
+
+    def retarget_text(value, *, local=locale, app_id=None):
+        blocked = False
+
+        def replacement(match):
+            nonlocal blocked
+            updated = retarget(match.group(), local, app_id)
+            if updated is None:
+                blocked = True
+                return ""
+            return updated
+
+        updated = STORE_TEXT_RE.sub(replacement, value)
+        return None if blocked and not updated.strip() else updated
 
     def json_value(value, *, field="", parent=None, local=locale, app_id=None, schema=False):
         nonlocal changes
@@ -429,9 +468,7 @@ def rewrite(
                 for child in value
             ]
         if isinstance(value, str) and is_store_url(value):
-            updated = STORE_TEXT_RE.sub(
-                lambda match: retarget(match.group(), local, app_id), value
-            )
+            updated = retarget_text(value, local=local, app_id=app_id)
             changes += int(updated != value)
             return updated
         return value
@@ -449,7 +486,7 @@ def rewrite(
             for literal, value, field in js_strings(body):
                 if not is_store_url(value) or identity_field(field):
                     continue
-                updated = STORE_TEXT_RE.sub(lambda item: retarget(item.group()), value)
+                updated = retarget_text(value)
                 if updated != value:
                     changes += 1
                     replacements.append((literal.start(), literal.end(), json.dumps(updated, ensure_ascii=False)))
@@ -470,7 +507,16 @@ def rewrite(
             for item in html.unescape(content["value"]).split(",") if "=" in item
         )
         app_id = fields.get("app-id", "")
-        url = retarget(f"https://apps.apple.com/app/id{app_id}")
+        if market.is_unavailable(locale, app_id):
+            changes += 1
+            return ""
+        url = retarget(
+            f"https://apps.apple.com/app/id{app_id}",
+            app_id=app_id,
+        )
+        if url is None:
+            changes += 1
+            return ""
         fields["affiliate-data"] = urllib.parse.urlsplit(url).query
         updated = html.escape(", ".join(f"{key}={value}" for key, value in fields.items()), quote=True)
         if updated != content["value"]:
@@ -479,6 +525,7 @@ def rewrite(
         return source
 
     def markup(source):
+        source = FULL_STORE_ANCHOR_RE.sub(anchor, source)
         for pattern in STORE_URL_PATTERNS:
             source = pattern.sub(replace, source)
         return re.sub(r"<meta\b[^>]*>", banner, source, flags=re.I)

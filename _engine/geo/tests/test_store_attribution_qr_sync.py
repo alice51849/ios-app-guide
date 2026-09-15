@@ -83,6 +83,40 @@ class DecisionCardCampaignTests(unittest.TestCase):
                 )
 
 
+class AppSpecificUnavailableMarketTests(unittest.TestCase):
+    def test_mixed_locale_removes_only_the_blocked_app_destinations(self):
+        app_id = "6778748533"
+        store_url = f"https://apps.apple.com/cn/app/id{app_id}"
+        source = (
+            '<html lang="zh-Hans"><head>'
+            f'<meta name="apple-itunes-app" content="app-id={app_id}">'
+            "</head><body>"
+            f'<a class="download" href="{store_url}">保留 App 名稱</a>'
+            f'<button data-app-store-url="{store_url}">分享</button>'
+            '<script type="application/json">'
+            f'{{"app_store_id":"{app_id}","app_store_url":"{store_url}"}}'
+            "</script>"
+            f'<script>window.destination="{store_url}";</script>'
+            "</body></html>"
+        )
+
+        updated, changes = gen_store_attribution.rewrite(
+            source,
+            "geo_pick",
+            "118326163",
+            locale="zh-Hans",
+        )
+
+        self.assertGreaterEqual(changes, 5)
+        self.assertNotIn("apps.apple.com", updated)
+        self.assertNotIn("apple-itunes-app", updated)
+        self.assertNotIn("data-app-store-url", updated)
+        self.assertNotIn("<a", updated)
+        self.assertIn("保留 App 名稱", updated)
+        self.assertIn('"app_store_url":null', updated)
+        self.assertIn("window.destination=null", updated)
+
+
 class QrEligiblePageFamilyTests(unittest.TestCase):
     """QR 卡只長在這五個頁面家族;每個家族的產生器都必須用最終 token。
 

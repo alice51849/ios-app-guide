@@ -1261,10 +1261,6 @@ def validate_artifacts(
     require_official_locale_coverage("ios-app-catalog-api", catalogs)
     require_official_locale_coverage("ios-app-catalog-feeds", feeds)
     expected_keys = [str(record["key"]) for record in records]
-    expected_ids = [
-        f"https://apps.apple.com/app/id{record['app_store_id']}"
-        for record in records
-    ]
     if index["locale_count"] != len(OFFICIAL_LOCALES):
         raise ValueError("API locale count does not match official locales")
     if [item["locale"] for item in index["locales"]] != list(
@@ -1324,7 +1320,17 @@ def validate_artifacts(
             if extension.get("market_availability") != market.record_fields(locale)["market_availability"]:
                 raise ValueError(f"Missing blocked feed evidence: {locale}")
             feed_apps = []
-        if [str(item["id"]) for item in items] != ([] if market.is_unavailable(locale) else expected_ids):
+        expected_item_ids = [
+            (
+                f"urn:apple:app:id{app['app_store_id']}"
+                if market.is_unavailable(locale, str(app["app_store_id"]))
+                else f"https://apps.apple.com/app/id{app['app_store_id']}"
+            )
+            for app in apps
+        ]
+        if [str(item["id"]) for item in items] != (
+            [] if market.is_unavailable(locale) else expected_item_ids
+        ):
             raise ValueError(f"JSON Feed app order or coverage mismatch: {locale}")
         for app, item in zip(feed_apps, items, strict=True):
             if item["language"] != locale:

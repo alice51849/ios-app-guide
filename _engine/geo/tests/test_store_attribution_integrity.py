@@ -144,6 +144,11 @@ class AttributionIntegrityTests(unittest.TestCase):
                     feed = api.feed_payload(locale, "Catalog", [app], "2026-09-05", "a" * 64)
                     self.assertEqual(len(feed["items"]), 0 if locale == "bn-BD" else 1)
                     self.assertTrue(all("external_url" not in item for item in feed["items"]))
+                    if locale == "zh-Hans":
+                        self.assertEqual(
+                            f"urn:apple:app:id{app_id}",
+                            feed["items"][0]["id"],
+                        )
                     csv_file = io.StringIO()
                     writer = csv.DictWriter(csv_file, fieldnames=list(payload))
                     writer.writeheader()

@@ -339,6 +339,31 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
             catalog._decision_context(source, False, app_id),
         )
 
+    def test_localized_name_accepts_exact_identifier_without_store_url(
+        self,
+    ) -> None:
+        app_id = "6781337213"
+        source = (
+            '<script type="application/ld+json">'
+            + json.dumps(
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "CV Desk: ATS রিজিউম নির্মাতা",
+                    "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "Apple App Store ID",
+                        "value": app_id,
+                    },
+                },
+                ensure_ascii=False,
+            )
+            + "</script>"
+        )
+        self.assertEqual(
+            "CV Desk: ATS রিজিউম নির্মাতা",
+            catalog._localized_app_name(source, app_id),
+        )
+
     def test_dynamic_counts_preserve_localized_numerals(self) -> None:
         arabic_digits = str.maketrans("0123456789,", "٠١٢٣٤٥٦٧٨٩٬")
         record_count = f"{catalog.EXPECTED_RECORD_COUNT:,}".translate(

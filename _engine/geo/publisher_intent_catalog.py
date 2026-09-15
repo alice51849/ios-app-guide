@@ -1029,7 +1029,17 @@ def _localized_app_name(source: str, app_id: str) -> str:
             )
             if not types & {"MobileApplication", "SoftwareApplication"}:
                 continue
-            if f"id{app_id}" not in json.dumps(node, ensure_ascii=False):
+            identifier = node.get("identifier")
+            identifier_value = (
+                str(identifier.get("value"))
+                if isinstance(identifier, dict)
+                and identifier.get("value") is not None
+                else None
+            )
+            if (
+                f"id{app_id}" not in json.dumps(node, ensure_ascii=False)
+                and identifier_value != app_id
+            ):
                 continue
             name = node.get("name")
             if isinstance(name, str) and single_line(name):

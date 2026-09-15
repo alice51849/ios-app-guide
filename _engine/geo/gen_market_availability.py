@@ -98,16 +98,27 @@ def generate(pages: Path, *, check=False, paths=None):
             reader = csv.DictReader(io.StringIO(source))
             fields = reader.fieldnames or []
             rows = list(reader)
-            if "locale" in fields and any(market.is_unavailable(row["locale"]) for row in rows):
+            def row_app_id(row):
+                return row.get("app_store_id", row.get("app_id"))
+
+            if "locale" in fields and any(
+                market.is_unavailable(row["locale"], row_app_id(row))
+                for row in rows
+            ):
                 if "market_availability" not in fields:
                     fields = [*fields, "market_availability"]
                 for row in rows:
-                    if not market.is_unavailable(row["locale"]):
+                    app_id = row_app_id(row)
+                    if not market.is_unavailable(row["locale"], app_id):
                         continue
                     for field in URL_FIELDS.intersection(row):
                         row[field] = ""
                     row["market_availability"] = json.dumps(
-                        market.record_fields(row["locale"])["market_availability"], ensure_ascii=False
+                        market.record_fields(
+                            row["locale"],
+                            app_id,
+                        )["market_availability"],
+                        ensure_ascii=False,
                     )
                 output = io.StringIO(newline="")
                 writer = csv.DictWriter(output, fieldnames=fields, lineterminator="\n")

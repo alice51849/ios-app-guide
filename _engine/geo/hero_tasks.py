@@ -383,7 +383,10 @@ def catalogs(pages: Path, tasks: list[dict], site: str, provider: str) -> tuple[
                     "app_store_url": link, "cta": source["app_store_cta_label"],
                     "answer_path": answer, "purchase_model": app["purchase_model"],
                     "source_kind": "answer" if is_answer else "app_guide",
-                    **({"locale": locale, **market.record_fields(locale)} if not available else {}),
+                    **({
+                        "locale": locale,
+                        **market.record_fields(locale, app_id),
+                    } if not available else {}),
                 }
     return inventory, selected
 
@@ -928,7 +931,14 @@ def tool_schema(task: dict, locale: str, copy: dict, site: str, modified: str) -
 def app_buttons(apps: list[dict]) -> str:
     return "".join(
         f'<span data-app-store-id="id{html.escape(str(app["app_store_id"]), quote=True)}">N/A</span>'
-        + market.note_html(app["locale"], app["name"]) if market.is_unavailable(app.get("locale")) else
+        + market.note_html(
+            app["locale"],
+            app["name"],
+            str(app["app_store_id"]),
+        ) if market.is_unavailable(
+            app.get("locale"),
+            str(app["app_store_id"]),
+        ) else
         f'<a class="button" href="{html.escape(app["app_store_url"], quote=True)}" rel="nofollow noopener">{html.escape(app["cta"])}</a>'
         for app in apps
     )
@@ -2350,7 +2360,11 @@ def plan(pages: Path, *, site: str = DEFAULT_SITE, provider: str,
                 "url": f"{site}/{relative}", "path": relative,
                 "example_url": f"{site}/{csv_path}",
                 "navigation_url": f"{site}/{navigation[locale]['path']}" if navigation[locale] else None,
-                "apps": [{"key": app["key"], "app_store_url": app["app_store_url"], **market.record_fields(locale)} for app in optional],
+                "apps": [{
+                    "key": app["key"],
+                    "app_store_url": app["app_store_url"],
+                    **market.record_fields(locale, app["app_store_id"]),
+                } for app in optional],
                 **market.record_fields(locale),
             }
             records.append(record)

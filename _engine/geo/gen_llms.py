@@ -1099,6 +1099,7 @@ def _localized_app_record(key, locale, pages, availability):
     canonical = appstore_url(key)
     if not canonical:
         raise ValueError(f"Live app has no App Store URL: {key}")
+    app_id = _app_store_id(key)
     promotional = build_pages_i18n.sanitize_description(
         key, locale, values["promotionalText"]
     )
@@ -1111,10 +1112,14 @@ def _localized_app_record(key, locale, pages, availability):
             build_pages_i18n.pricing_text_for(key, locale)
         ),
         "guide": f"{SITE}/{locale}/{key}.html",
-        "store": None if market.is_unavailable(locale) else _catalog_store_url(
-            verified_app_store_url(canonical, locale, availability)
+        "store": (
+            None
+            if market.is_unavailable(locale, app_id)
+            else _catalog_store_url(
+                verified_app_store_url(canonical, locale, availability)
+            )
         ),
-        **market.record_fields(locale),
+        **market.record_fields(locale, app_id),
     }
 
 
@@ -1205,13 +1210,19 @@ def build_localized_llms(locale, live_keys, pages=None):
         "",
     ]
     for record in records:
+        app_id = _app_store_id(record["key"])
         lines.extend(
             (
                 f"- [{record['name']}]({record['guide']}) — "
                 f"{record['subtitle']}",
                 f"  - {record['promotional']}",
                 f"  - {ui['price']}: {record['pricing']}",
-                f"  - App Store: {market.note(locale) if market.is_unavailable(locale) else record['store']}",
+                "  - App Store: "
+                + (
+                    market.note(locale, record["name"], app_id)
+                    if market.is_unavailable(locale, app_id)
+                    else record["store"]
+                ),
             )
         )
     lines.append("")

@@ -1,4 +1,5 @@
 import copy
+import csv
 import json
 from pathlib import Path
 import sys
@@ -142,6 +143,44 @@ class MarketConsumerTests(unittest.TestCase):
         self.assertEqual((root / "hi/index.html").read_bytes(), before)
         assert_blocked_page(self, (root / "bn-BD/index.html").read_text())
 
+    def test_surface_boundary_repairs_only_app_specific_csv_cells(self):
+        scratch = tempfile.TemporaryDirectory(
+            prefix=".market-consumer-",
+            dir=GEO / "tests",
+        )
+        self.addCleanup(scratch.cleanup)
+        root = Path(scratch.name)
+        path = root / "catalog.csv"
+        rows = [
+            {
+                "locale": "zh-Hans",
+                "app_store_id": "6778748533",
+                "app_store_url": (
+                    "https://apps.apple.com/cn/app/id6778748533"
+                ),
+            },
+            {
+                "locale": "zh-Hans",
+                "app_store_id": "6791658210",
+                "app_store_url": (
+                    "https://apps.apple.com/cn/app/id6791658210"
+                ),
+            },
+        ]
+        with path.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=rows[0])
+            writer.writeheader()
+            writer.writerows(rows)
+        report = boundary.generate(root, paths=[Path("catalog.csv")])
+        self.assertEqual(1, report["changed"])
+        self.assertEqual(["catalog.csv"], report["paths"])
+        with path.open(encoding="utf-8", newline="") as handle:
+            repaired = list(csv.DictReader(handle))
+        self.assertEqual("", repaired[0]["app_store_url"])
+        self.assertIn("MARKET_APP_NOT_SOLD", repaired[0]["market_availability"])
+        self.assertEqual(rows[1]["app_store_url"], repaired[1]["app_store_url"])
+        self.assertEqual("", repaired[1]["market_availability"])
+
     def test_publisher_feed_keeps_content_catalog_but_outbox_empty(self):
         import portfolio_app_catalog_api as api
         app = {
@@ -186,6 +225,24 @@ class MarketConsumerTests(unittest.TestCase):
         self.assertNotIn("App Store: None", source)
         self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
         self.assertIn("https://support.apple.com/en-us/118205", source)
+
+    def test_llms_blocks_only_the_unavailable_app_in_china(self):
+        import os
+        import gen_llms
+        pages = Path(os.environ["GEO_PAGES"])
+        blocked = gen_llms.build_localized_llms(
+            "zh-Hans",
+            ["lumiletters"],
+            pages,
+        )
+        available = gen_llms.build_localized_llms(
+            "zh-Hans",
+            ["mochi"],
+            pages,
+        )
+        self.assertIn("MARKET_APP_NOT_SOLD", blocked)
+        self.assertNotIn("apps.apple.com", blocked)
+        self.assertIn("apps.apple.com", available)
 
     def test_shopping_ingestion_excludes_blocked_market_without_losing_apps(self):
         import os

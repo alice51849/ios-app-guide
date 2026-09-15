@@ -471,8 +471,11 @@ def normalized_reference(ref: Reference) -> Reference:
 def validate_reference(ref: Reference, *, provider: str,
                        availability: dict[str, frozenset[str]] | None = None) -> str | None:
     ref = normalized_reference(ref)
-    if market.is_unavailable(ref.locale):
-        raise AttributionError(f"Unavailable market cannot publish App Store URLs: {ref.locale}")
+    if market.is_unavailable(ref.locale, ref.app_id):
+        raise AttributionError(
+            "Unavailable App market cannot publish App Store URLs: "
+            f"{ref.locale}/{ref.app_id or 'unknown'}"
+        )
     if ref.identity:
         _clean_identity(ref.url, ref.field)
         if not is_clean_app_store_developer_url(ref.url):

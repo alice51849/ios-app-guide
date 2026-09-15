@@ -18,9 +18,15 @@ sys.path.insert(0, str(ROOT / "social"))
 
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 
+from app_store_storefronts import (  # noqa: E402
+    load_storefront_availability,
+    resolve_provider_token,
+)
 from appstore_live import live_app_keys  # noqa: E402
 from build_pages_i18n import RTL, base_lang, get_ui  # noqa: E402
+from gen_store_attribution import STORY_CAMPAIGN, final_store_url  # noqa: E402
 from gen_webstories_i18n import validated_localizations  # noqa: E402
+import market_availability as market  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
@@ -93,7 +99,7 @@ def require_alternates(document, expected, label):
         )
 
 
-def require_mobile_identity(document, key, canonical, label):
+def require_mobile_identity(document, key, canonical, label, locale, action_url):
     objects = []
     for source in JSON_LD_RE.findall(document):
         payload = json.loads(source)
@@ -106,27 +112,53 @@ def require_mobile_identity(document, key, canonical, label):
     if len(apps) != 1:
         raise ValueError(f"{label}: expected one MobileApplication, found {len(apps)}")
     app = apps[0]
-    store_url = f"https://apps.apple.com/app/id{APPSTORE[key]}"
-    # @id stays the clean identity; the actionable fields carry the same
-    # iag_story campaign as the visible CTA (gen_store_attribution stamps them).
-    campaign_url = appstore_url(key, "iag_story")
-    expected = {
-        "@id": store_url,
-        "url": campaign_url,
-        "installUrl": campaign_url,
-        "downloadUrl": campaign_url,
-    }
-    for field, value in expected.items():
-        if app.get(field) != value:
-            raise ValueError(f"{label}: invalid MobileApplication.{field}")
+    app_id = APPSTORE[key]
+    if market.is_unavailable(locale, app_id):
+        expected = {
+            "@id": f"urn:apple:app:id{app_id}",
+            "url": None,
+            **market.record_fields(locale, app_id),
+        }
+        for field, value in expected.items():
+            if app.get(field) != value:
+                raise ValueError(f"{label}: invalid MobileApplication.{field}")
+        for field in (
+            "installUrl",
+            "downloadUrl",
+            "offers",
+            "aggregateRating",
+            "potentialAction",
+        ):
+            if field in app:
+                raise ValueError(
+                    f"{label}: blocked MobileApplication retains {field}"
+                )
+    else:
+        expected = {
+            "@id": f"https://apps.apple.com/app/id{app_id}",
+            "url": action_url,
+            "installUrl": action_url,
+            "downloadUrl": action_url,
+        }
+        for field, value in expected.items():
+            if app.get(field) != value:
+                raise ValueError(f"{label}: invalid MobileApplication.{field}")
     identifier = app.get("identifier", {})
-    if identifier.get("value") != APPSTORE[key]:
+    if identifier.get("value") != app_id:
         raise ValueError(f"{label}: invalid App Store identifier")
     if app.get("mainEntityOfPage") != {"@id": f"{canonical}#webpage"}:
         raise ValueError(f"{label}: invalid mainEntityOfPage")
 
 
-def validate_story(path, key, locale=None, localization=None):
+def validate_story(
+    path,
+    key,
+    locale=None,
+    localization=None,
+    *,
+    availability=None,
+    provider=None,
+):
     label = f"{locale or 'root'}/{key}"
     if not path.is_file() or path.stat().st_size == 0:
         raise FileNotFoundError(f"{label}: missing or empty Story")
@@ -145,27 +177,49 @@ def validate_story(path, key, locale=None, localization=None):
     # gen_store_attribution appends affiliate-data (the campaign query) to
     # every Smart App Banner so the read-only audit can attribute it; when
     # present it must be exactly this Story's iag_story query.
-    campaign_url = appstore_url(key, "iag_story")
-    campaign_query = urllib.parse.urlsplit(campaign_url).query
+    campaign_url = appstore_url(key, STORY_CAMPAIGN)
+    action_url = (
+        final_store_url(
+            campaign_url,
+            STORY_CAMPAIGN,
+            provider,
+            locale=locale or "en-US",
+            availability=availability,
+            app_id=APPSTORE[key],
+        )
+        if provider
+        else campaign_url
+    )
+    blocked = market.is_unavailable(locale, APPSTORE[key])
+    campaign_query = urllib.parse.urlsplit(action_url or campaign_url).query
     meta_matches = [
         (app_id, html.unescape(argument), html.unescape(affiliate) if affiliate else None)
         for app_id, argument, affiliate in APP_META_RE.findall(document)
     ]
-    if [(app_id, argument) for app_id, argument, _ in meta_matches] != [(APPSTORE[key], campaign_url)]:
+    expected_meta = [] if blocked else [(APPSTORE[key], campaign_url)]
+    if [(app_id, argument) for app_id, argument, _ in meta_matches] != expected_meta:
         raise ValueError(f"{label}: invalid Smart App Banner campaign URL")
-    if meta_matches[0][2] not in (None, campaign_query):
+    if meta_matches and meta_matches[0][2] not in (None, campaign_query):
         raise ValueError(f"{label}: Smart App Banner affiliate-data does not match the Story campaign")
     cta_urls = [
         html.unescape(match[1])
         for layer in CTA_LAYER_RE.findall(document)
         for match in CTA_HREF_RE.findall(layer)
     ]
-    if cta_urls != [campaign_url]:
+    expected_ctas = [] if blocked else [action_url]
+    if cta_urls != expected_ctas:
         raise ValueError(
             f"{label}: direct App Store CTA differs: "
-            f"expected={campaign_url!r} actual={cta_urls!r}"
+            f"expected={expected_ctas!r} actual={cta_urls!r}"
         )
-    require_mobile_identity(document, key, canonical, label)
+    require_mobile_identity(
+        document,
+        key,
+        canonical,
+        label,
+        locale,
+        action_url,
+    )
 
     if "<html amp " not in document:
         raise ValueError(f"{label}: missing AMP html attribute")
@@ -233,6 +287,8 @@ def validate_sitemap(keys):
 
 
 def validate_site():
+    availability = load_storefront_availability(PAGES) or None
+    provider = resolve_provider_token() or None
     live_keys = live_app_keys(APPSTORE, str(PAGES), refresh=False)
     keys = [key for key in APPS if key in live_keys and appstore_url(key)]
     expected_keys = set(keys)
@@ -257,7 +313,12 @@ def validate_site():
     }
     validate_index(PAGES / "stories" / "index.html", keys)
     for key in keys:
-        validate_story(PAGES / "stories" / f"{key}.html", key)
+        validate_story(
+            PAGES / "stories" / f"{key}.html",
+            key,
+            availability=availability,
+            provider=provider,
+        )
     for locale in OFFICIAL_LOCALES:
         stories = PAGES / locale / "stories"
         locale_keys = {
@@ -274,6 +335,8 @@ def validate_site():
                 key,
                 locale,
                 localizations_by_key[key][locale],
+                availability=availability,
+                provider=provider,
             )
     if not (PAGES / "stories" / "img" / "publisher-logo.jpg").is_file():
         raise FileNotFoundError("Missing Web Story publisher logo")

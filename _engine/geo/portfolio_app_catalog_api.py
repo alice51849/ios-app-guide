@@ -455,9 +455,15 @@ def feed_payload(
     }
     items = []
     for app in ([] if market.is_unavailable(locale) else apps):
-        identifier = f"https://apps.apple.com/app/id{app['app_store_id']}"
-        if locale == "bn-BD":
-            identifier = localized_app_store_url(identifier, locale)
+        publishable = market.validate_record(
+            {**app, "locale": locale},
+            url_fields=("app_store_url",),
+        )
+        identifier = (
+            f"https://apps.apple.com/app/id{app['app_store_id']}"
+            if publishable
+            else f"urn:apple:app:id{app['app_store_id']}"
+        )
         item = {
             "id": identifier,
             "url": app["guide_url"],
@@ -467,7 +473,7 @@ def feed_payload(
             "tags": app["search_terms"],
             "language": locale,
         }
-        if market.validate_record({**app, "locale": locale}, url_fields=("app_store_url",)):
+        if publishable:
             item["external_url"] = _retarget_app_store_campaign(app, _feed_campaign(locale))
         else:
             item.pop("external_url")

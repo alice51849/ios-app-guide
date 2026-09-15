@@ -9,6 +9,7 @@ import io
 import json
 import re
 import market_availability as market
+import market_surface_policy
 from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
@@ -164,8 +165,7 @@ class AttributionIntegrityTests(unittest.TestCase):
                     }
                     for relative, source in documents.items():
                         with self.subTest(app=app_id, locale=locale, output=relative):
-                            if "/catalog/feeds/" not in relative:
-                                self.assertNotIn("apps.apple.com", source)
+                            self.assertNotIn("apps.apple.com", source)
                             self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
                             refs = self.audit(source, relative)
                             self.assertTrue(all(ref.identity for ref in refs))

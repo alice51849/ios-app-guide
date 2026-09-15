@@ -46,6 +46,14 @@ APP_META_RE = re.compile(
     r'(?:,\s*affiliate-data=([^"]*))?">',
     re.IGNORECASE,
 )
+CTA_LAYER_RE = re.compile(
+    r"<amp-story-cta-layer\b[^>]*>(.*?)</amp-story-cta-layer>",
+    re.IGNORECASE | re.DOTALL,
+)
+CTA_HREF_RE = re.compile(
+    r'<a\b[^>]*\bhref=(["\'])(.*?)\1',
+    re.IGNORECASE | re.DOTALL,
+)
 PAGE_ID_RE = re.compile(r'<amp-story-page\s+id="([^"]+)">', re.IGNORECASE)
 
 
@@ -147,8 +155,16 @@ def validate_story(path, key, locale=None, localization=None):
         raise ValueError(f"{label}: invalid Smart App Banner campaign URL")
     if meta_matches[0][2] not in (None, campaign_query):
         raise ValueError(f"{label}: Smart App Banner affiliate-data does not match the Story campaign")
-    if f'href="{html.escape(campaign_url, quote=True)}"' not in document:
-        raise ValueError(f"{label}: missing direct App Store CTA")
+    cta_urls = [
+        html.unescape(match[1])
+        for layer in CTA_LAYER_RE.findall(document)
+        for match in CTA_HREF_RE.findall(layer)
+    ]
+    if cta_urls != [campaign_url]:
+        raise ValueError(
+            f"{label}: direct App Store CTA differs: "
+            f"expected={campaign_url!r} actual={cta_urls!r}"
+        )
     require_mobile_identity(document, key, canonical, label)
 
     if "<html amp " not in document:

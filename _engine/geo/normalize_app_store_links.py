@@ -40,11 +40,12 @@ APP_STORE_URL_RE = re.compile(
     # sentence period right after "mt=8" belongs to the prose, not the URL
     # (stamped links inside JSON-LD descriptions are followed by one).
     r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_/%+-]+(?:\.[A-Za-z0-9_/%+-]+)*"
-    r"(?:&(?:amp;)*(?:pt|ct|mt)=[A-Za-z0-9_/%+-]+(?:\.[A-Za-z0-9_/%+-]+)*)*)?"
+    r"(?:(?:&(?:amp;)*|\\u0026)(?:pt|ct|mt)=[A-Za-z0-9_/%+-]+"
+    r"(?:\.[A-Za-z0-9_/%+-]+)*)*)?"
     # Refuse to stop inside a query value. With a bare "(?![?&])" the engine
     # backtracks into the middle of "pt=118326163", matches a truncated URL
     # and rewrites it — that is what shredded the decision feeds.
-    r"(?![?&A-Za-z0-9_/%+-])",
+    r"(?![?&\\A-Za-z0-9_/%+-])",
     flags=re.IGNORECASE,
 )
 QUERY_APP_STORE_URL_RE = re.compile(
@@ -58,18 +59,20 @@ QUERY_APP_STORE_URL_RE = re.compile(
     # ...and sentence punctuation right after the link (".", ";", ":", "!")
     # belongs to the prose: the last character must be one a query value can
     # legitimately end with.
-    r"\?[-A-Za-z0-9._~%+=&;/:!*$#]*[-A-Za-z0-9_~%+=&/]",
+    r"\?[-A-Za-z0-9._~%+=&;/:!*$#\\]*[-A-Za-z0-9_~%+=&/]",
     flags=re.IGNORECASE,
 )
 
 
-def _decode_ampersands(value: str) -> tuple[str, int]:
-    """Undo every layer of "&amp;" escaping and report how many there were."""
+def _decode_ampersands(value: str) -> tuple[str, int, bool]:
+    """Decode HTML and JSON ampersands without losing their source form."""
     depth = 0
     while "&amp;" in value:
         value = value.replace("&amp;", "&")
         depth += 1
-    return value, depth
+    json_escaped = r"\u0026" in value
+    value = value.replace(r"\u0026", "&")
+    return value, depth, json_escaped
 
 
 def normalize_source(source: str) -> tuple[str, int]:
@@ -78,7 +81,7 @@ def normalize_source(source: str) -> tuple[str, int]:
     def replace(match: re.Match[str]) -> str:
         nonlocal changed
         raw = match.group(0)
-        decoded, escape_depth = _decode_ampersands(raw)
+        decoded, escape_depth, json_escaped = _decode_ampersands(raw)
         parsed = urllib.parse.urlsplit(decoded)
         country = match.group("country")
         canonical_path = (
@@ -90,8 +93,11 @@ def normalize_source(source: str) -> tuple[str, int]:
             parsed._replace(path=canonical_path, fragment="")
         )
         normalized = normalize_app_store_campaign_url(canonical)
-        for _ in range(escape_depth):
-            normalized = normalized.replace("&", "&amp;")
+        if json_escaped:
+            normalized = normalized.replace("&", r"\u0026")
+        else:
+            for _ in range(escape_depth):
+                normalized = normalized.replace("&", "&amp;")
         changed += int(normalized != raw)
         return normalized
 
@@ -100,7 +106,7 @@ def normalize_source(source: str) -> tuple[str, int]:
 
 def assert_no_partial_campaigns(source: str, path: Path) -> None:
     for match in QUERY_APP_STORE_URL_RE.finditer(source):
-        url, _ = _decode_ampersands(match.group(0))
+        url, _, _ = _decode_ampersands(match.group(0))
         try:
             validated_app_store_url(url)
         except ValueError as error:

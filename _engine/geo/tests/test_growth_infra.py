@@ -25357,6 +25357,21 @@ class GeneratorTests(unittest.TestCase):
             rewritten,
             Path("feed.xml"),
         )
+        json_campaign = markdown_campaign.replace("&", r"\u0026")
+        json_fragment = (
+            '<script type="application/ld+json">'
+            f'{{"installUrl":"{json_campaign}"}}'
+            "</script>"
+        )
+        rewritten, changed = normalize_app_store_links.normalize_source(
+            json_fragment
+        )
+        self.assertEqual(0, changed)
+        self.assertEqual(json_fragment, rewritten)
+        normalize_app_store_links.assert_no_partial_campaigns(
+            rewritten,
+            Path("route.html"),
+        )
         with self.assertRaisesRegex(
             ValueError, "Partial or invalid App Store campaign URL"
         ):

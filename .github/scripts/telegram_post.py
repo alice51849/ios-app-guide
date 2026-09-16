@@ -36,6 +36,12 @@ from social_post_common import (
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = Path(HERE).parents[1]
+GEO_ENGINE = REPO_ROOT / "_engine" / "geo"
+if str(GEO_ENGINE) not in sys.path:
+    sys.path.insert(0, str(GEO_ENGINE))
+
+import market_availability as market  # noqa: E402
+
 INTENT_CATALOG_PATH = (
     REPO_ROOT
     / "data"
@@ -569,6 +575,10 @@ def _load_intent_pool(live_apps):
             or re.fullmatch(r"[a-z0-9]+", key) is None
         ):
             raise ValueError(f"invalid publisher intent social record: {pair}")
+        publishable = market.validate_record(record)
+        observed.add(pair)
+        if not publishable:
+            continue
         canonical = canonical_app_store_url(
             record.get("canonical_app_store_url")
         )
@@ -604,7 +614,6 @@ def _load_intent_pool(live_apps):
                 "source": "publisher_intent_catalog",
             }
         )
-        observed.add(pair)
     if observed != expected:
         missing = sorted(expected - observed)
         unexpected = sorted(observed - expected)

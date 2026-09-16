@@ -157,7 +157,7 @@ class RotationTests(unittest.TestCase):
             )
         self.assertEqual(expected, observed)
 
-    def test_all_50_locales_are_published_within_13_days(self):
+    def test_all_market_eligible_locales_are_published_within_13_days(self):
         routes = (
             (telegram_post.pick, 1),
             (threads_post.pick, 3),
@@ -181,8 +181,17 @@ class RotationTests(unittest.TestCase):
                 )
                 for picker, hour in routes
             )
+        app_ids = {str(item["app"]) for item in self.pool}
+        eligible_locales = {
+            locale
+            for locale in common.OFFICIAL_SOCIAL_LOCALES
+            if any(
+                not telegram_post.market.is_unavailable(locale, app_id)
+                for app_id in app_ids
+            )
+        }
         self.assertEqual(
-            set(common.OFFICIAL_SOCIAL_LOCALES),
+            eligible_locales,
             {item["lang"] for item in selected},
         )
         self.assertTrue(
@@ -870,22 +879,25 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                 with self.subTest(app_id=app_id, channel=channel):
                     self.assertTrue(languages.intersection(spec["langs"]))
 
-    def test_intent_pool_covers_every_live_app_in_all_50_locales(self):
+    def test_intent_pool_covers_every_market_eligible_live_app(self):
         pool = [
             item
             for item in telegram_post.load_pool()
             if item.get("source") == "publisher_intent_catalog"
         ]
         selected_ids = {app.app_id for app in self.apps}
-        self.assertEqual(len(selected_ids) * 50, len(pool))
+        expected = {
+            (app_id, locale)
+            for app_id in selected_ids
+            for locale in common.OFFICIAL_SOCIAL_LOCALES
+            if not telegram_post.market.is_unavailable(locale, app_id)
+        }
+        self.assertEqual(len(expected), len(pool))
         self.assertEqual(
-            {
-                (app_id, locale)
-                for app_id in selected_ids
-                for locale in common.OFFICIAL_SOCIAL_LOCALES
-            },
+            expected,
             {(str(item["app"]), item["lang"]) for item in pool},
         )
+        self.assertNotIn("bn-BD", {item["lang"] for item in pool})
         for item in pool:
             self.assertLessEqual(
                 len(threads_post.compose_text(item)),

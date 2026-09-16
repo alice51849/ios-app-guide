@@ -173,6 +173,37 @@ class HeroTaskTests(unittest.TestCase):
         self.write(hero.INTENTS, {"records": records})
         self.options = {"provider": "118326163", "today": "2026-09-05", "site": self.site}
 
+    def test_app_buttons_apply_app_specific_market_availability(self):
+        source = hero.app_buttons([
+            {
+                "locale": "zh-Hans",
+                "key": "lumiletters",
+                "name": "Lumi Letters",
+                "app_store_id": "6778748533",
+                "app_store_url": None,
+                "cta": "下载",
+            },
+            {
+                "locale": "zh-Hans",
+                "key": "mochi",
+                "name": "Mochi",
+                "app_store_id": "6791658210",
+                "app_store_url": (
+                    "https://apps.apple.com/cn/app/id6791658210"
+                ),
+                "cta": "下载",
+            },
+        ])
+        self.assertIn("MARKET_APP_NOT_SOLD", source)
+        self.assertNotIn(
+            "https://apps.apple.com/cn/app/id6778748533",
+            source,
+        )
+        self.assertIn(
+            "https://apps.apple.com/cn/app/id6791658210",
+            source,
+        )
+
     def tearDown(self):
         shutil.rmtree(self.folder)
 

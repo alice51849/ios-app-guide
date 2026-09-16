@@ -9,6 +9,7 @@ import io
 import json
 import re
 import market_availability as market
+import market_surface_policy
 from market_contract_assertions import assert_blocked_page, assert_blocked_record
 import os
 from pathlib import Path
@@ -143,6 +144,11 @@ class AttributionIntegrityTests(unittest.TestCase):
                     feed = api.feed_payload(locale, "Catalog", [app], "2026-09-05", "a" * 64)
                     self.assertEqual(len(feed["items"]), 0 if locale == "bn-BD" else 1)
                     self.assertTrue(all("external_url" not in item for item in feed["items"]))
+                    if locale == "zh-Hans":
+                        self.assertEqual(
+                            f"urn:apple:app:id{app_id}",
+                            feed["items"][0]["id"],
+                        )
                     csv_file = io.StringIO()
                     writer = csv.DictWriter(csv_file, fieldnames=list(payload))
                     writer.writeheader()
@@ -164,8 +170,7 @@ class AttributionIntegrityTests(unittest.TestCase):
                     }
                     for relative, source in documents.items():
                         with self.subTest(app=app_id, locale=locale, output=relative):
-                            if "/catalog/feeds/" not in relative:
-                                self.assertNotIn("apps.apple.com", source)
+                            self.assertNotIn("apps.apple.com", source)
                             self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
                             refs = self.audit(source, relative)
                             self.assertTrue(all(ref.identity for ref in refs))
@@ -394,6 +399,47 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.assertIn(f"https://apps.apple.com/us/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8", root_page)
         self.audit(root_page, "answers/compare.html")
         self.assertEqual(foreign, attribution.align_storefront(foreign, "aa", AVAILABILITY))
+
+    def test_embedded_app_language_does_not_override_the_page_storefront(self):
+        url = store_url(locale="en-US")
+        schema = {
+            "@type": "SoftwareApplication",
+            "inLanguage": "zh-Hant",
+            "url": url,
+        }
+        source = (
+            '<html lang="en"><script type="application/ld+json">'
+            f"{json.dumps(schema)}</script></html>"
+        )
+        refs = self.audit(source, "tools/zhuyin-bopomofo-chart.html")
+        self.assertEqual([url], [ref.url for ref in refs])
+        self.assertEqual(["en-US"], [ref.locale for ref in refs])
+
+    def test_unavailable_page_allows_identity_without_a_fake_destination(self):
+        app = {
+            "@type": "SoftwareApplication",
+            "@id": f"urn:apple:app:id{APP_ID}",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "Apple App Store ID",
+                "value": APP_ID,
+            },
+        }
+        source = (
+            '<html lang="bn-BD"><head>'
+            '<script type="application/ld+json">'
+            f"{json.dumps(app)}</script></head><body></body></html>"
+        )
+        source = market_surface_policy.enforce_html(
+            source,
+            "bn-BD",
+            app_id=APP_ID,
+        )
+        assert_blocked_page(self, source)
+        self.assertEqual(
+            [],
+            self.audit(source, "bn-BD/app-with-identity-only.html"),
+        )
 
     def test_supplemental_languages_use_only_global_verified_app_fallback(self):
         global_url = f"https://apps.apple.com/app/id{APP_ID}?pt={PROVIDER}&ct=geo_pick&mt=8"

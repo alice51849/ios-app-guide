@@ -5410,6 +5410,34 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(2, len(api_catalog["linkset"]))
             static_api_catalog.validate_api_catalog_linkset(api_catalog, 2)
 
+    def test_static_api_catalog_rebuild_preserves_graph_closure_hub(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            zhuyin_static_api.build(pages, app_public=False)
+            browse = pages / "api" / "browse.html"
+            browse.write_text(
+                '<a href="/api/v1/ios-app-agent-feed/">Product feed</a>',
+                encoding="utf-8",
+            )
+
+            static_api_catalog.build_api_discovery(pages)
+            catalog = (pages / "api" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn(
+                f'href="{static_api_catalog.SITE}/api/browse.html"',
+                catalog,
+            )
+
+            family_travel_static_api.build(pages, app_public=False)
+            rebuilt = (pages / "api" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn(
+                f'href="{static_api_catalog.SITE}/api/browse.html"',
+                rebuilt,
+            )
+
     @unittest.skipUnless(
         importlib.util.find_spec("jsonschema")
         and importlib.util.find_spec("openapi_spec_validator"),

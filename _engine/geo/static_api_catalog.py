@@ -262,6 +262,14 @@ def render_api_catalog(pages: Path = PAGES) -> str:
                 feed=feed_link,
             )
         )
+    browse_link = (
+        '<p><a href="{url}">Browse all API and machine-readable feed '
+        "pages &rarr;</a></p>".format(
+            url=html.escape(f"{SITE}/api/browse.html", quote=True),
+        )
+        if (pages / "api" / "browse.html").is_file()
+        else ""
+    )
     modified = max(modified_dates, default="2026-07-11")
     schema = json.dumps(
         {
@@ -287,7 +295,7 @@ def render_api_catalog(pages: Path = PAGES) -> str:
 <link rel="canonical" href="{SITE}/api/"><link rel="api-catalog" type="application/linkset+json" href="{ROOT_API_CATALOG}"><script type="application/ld+json">{schema}</script>
 <style>body{{margin:0;background:#f5f8fc;color:#142036;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}}main{{max-width:820px;margin:auto;padding:52px 20px}}a{{color:#315fc4;font-weight:750;text-decoration:none}}article{{background:#fff;border:1px solid #dce4ef;border-radius:18px;padding:22px;margin-top:24px;box-shadow:0 12px 30px rgba(27,44,79,.05)}}h1{{font-size:clamp(30px,6vw,48px);line-height:1.1}}p{{color:#5b687d}}.tag{{font-size:13px;font-weight:700}}.links{{display:flex;flex-wrap:wrap;gap:16px}}</style></head>
 <body><main><p class="tag">OPEN DATA &middot; NO API KEYS</p><h1>Open APIs</h1><p>Stable, cacheable JSON interfaces for free reference datasets.</p>
-{''.join(cards)}</main></body></html>
+{browse_link}{''.join(cards)}</main></body></html>
 """
 
 

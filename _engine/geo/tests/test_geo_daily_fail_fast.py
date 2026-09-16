@@ -87,7 +87,13 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
             index for index, command in enumerate(commands)
             if "publisher_intent_catalog.py" in command
         )
-        self.assertLess(paid_repair, intent_catalog)
+        social_preview = next(
+            index
+            for index in range(paid_repair + 1, intent_catalog)
+            if commands[index] == "python3 gen_social_previews.py"
+        )
+        self.assertLess(paid_repair, social_preview)
+        self.assertLess(social_preview, intent_catalog)
         self.assertLess(intent_catalog, generator)
 
     def test_high_intent_routes_close_all_four_mutation_paths(self):

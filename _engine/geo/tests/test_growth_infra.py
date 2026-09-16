@@ -23553,10 +23553,10 @@ class GeneratorTests(unittest.TestCase):
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
         )
-        # 22 generator passes + 11 hero_tasks.py build/check passes (the hero
+        # 24 generator passes + 11 hero_tasks.py build/check passes (the hero
         # task system re-materialises after every body-rewriting phase).
         self.assertEqual(
-            33,
+            35,
             workflow.count('--today "$GEO_BUILD_DATE"'),
         )
         self.assertEqual(
@@ -23862,7 +23862,7 @@ class GeneratorTests(unittest.TestCase):
             workflow.count("refresh_storefront_availability.py"),
         )
         self.assertEqual(3, workflow.count("portfolio_app_catalog_api.py"))
-        self.assertEqual(3, workflow.count("publisher_intent_catalog.py"))
+        self.assertEqual(5, workflow.count("publisher_intent_catalog.py"))
         self.assertEqual(3, workflow.count("portfolio_offer_catalog.py"))
         self.assertEqual(8, workflow.count("publisher_intent_visuals.py"))
         self.assertEqual(3, workflow.count("app_video_lessons.py"))

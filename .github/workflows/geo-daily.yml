@@ -134,6 +134,7 @@ jobs:
           # that exact-coverage intent dataset, so they cannot bootstrap first.
           python3 portfolio_app_finder.py
           python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
+          python3 gen_social_previews.py
           # The buyer-intent catalog requires exact Finder/persona coverage,
           # so every Finder-dependent surface must follow the rebuild above.
           python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
@@ -392,6 +393,7 @@ jobs:
               python3 _engine/geo/reconcile_answer_semantics.py --repair
               cd _engine/geo
               python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
+              python3 gen_social_previews.py
               python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
               python3 dedupe_locale_meta.py --apply
               python3 live_app_guard.py --site-root pages
@@ -492,6 +494,7 @@ jobs:
           # Rebuild every dependent surface before sealing the tested tree.
           python3 portfolio_app_catalog_api.py
           python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
+          python3 gen_social_previews.py
           python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
           python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
@@ -603,6 +606,7 @@ jobs:
                 python3 _engine/geo/reconcile_answer_semantics.py --repair
                 cd _engine/geo
                 python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
+                python3 gen_social_previews.py
                 python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
                 python3 dedupe_locale_meta.py --apply
                 python3 live_app_guard.py --site-root pages

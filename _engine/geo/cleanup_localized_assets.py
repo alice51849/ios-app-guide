@@ -23,6 +23,7 @@ from aeo_pages import pricing_profile  # noqa: E402
 import live_app_guard  # noqa: E402
 from build_pages_i18n import pricing_text_for  # noqa: E402
 from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402
+from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
@@ -828,12 +829,17 @@ def repair_html_hreflang(
                 )
                 if english_url:
                     candidates.append(("en", english, english_url))
+        hreflang_locales = (
+            set(OFFICIAL_LOCALE_SET) & locale_names
+            if is_directory_index
+            else locale_names
+        )
         localized_targets = (
-            tree.localized_variants(suffix, locale_names)
+            tree.localized_variants(suffix, hreflang_locales)
             if tree is not None
             else tuple(
                 (locale, pages.joinpath(locale, *suffix))
-                for locale in sorted(locale_names)
+                for locale in sorted(hreflang_locales)
                 if (pages.joinpath(locale, *suffix)).exists()
             )
         )

@@ -159,6 +159,10 @@ class ExistingSurfaceContract(unittest.TestCase):
                 self.assertNotIn("apps.apple.com", document["html"])
                 self.assertIn("preview.png", document["html"])
                 self.assertFalse(document["market_availability"]["publishable"])
+                ET.fromstring(
+                    '<div xmlns="http://www.w3.org/1999/xhtml">'
+                    f'{document["html"]}</div>'
+                )
 
     def page(self, app_id):
         software = {

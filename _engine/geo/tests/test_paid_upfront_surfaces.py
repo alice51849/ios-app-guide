@@ -160,6 +160,14 @@ class PaidUpfrontSurfaces(unittest.TestCase):
                 for forbidden in ("Most users find", "take a compliant photo", "30 seconds"):
                     self.assertNotIn(forbidden, source)
                 self.assertIn("does not guarantee", source)
+                lead = re.search(
+                    r'<p class="lead[^"]*">(.*?)</p>',
+                    source,
+                    flags=re.IGNORECASE | re.DOTALL,
+                )
+                self.assertIsNotNone(lead)
+                self.assertIn("does not certify", lead.group(1))
+                self.assertNotIn("guarantee", lead.group(1).casefold())
 
     def test_aim990plus_has_native_adult_timed_loop_and_limits(self):
         _, source = self.rendered("ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html")

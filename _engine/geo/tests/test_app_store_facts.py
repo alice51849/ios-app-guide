@@ -254,7 +254,7 @@ class AppStoreFactsTests(unittest.TestCase):
                     pages / locale / f"{key}.html"
                 ).read_text(encoding="utf-8")
                 if market_availability.is_unavailable(locale, app_id):
-                    assert_blocked_page(self, source)
+                    assert_blocked_page(self, source, locale)
                     self.assertNotIn('"offers"', source)
                     self.assertNotIn('"aggregateRating"', source)
                     blocked += 1

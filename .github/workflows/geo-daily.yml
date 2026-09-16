@@ -133,6 +133,7 @@ jobs:
           # and rebuilds publisher intents from it. Decision routes consume
           # that exact-coverage intent dataset, so they cannot bootstrap first.
           python3 portfolio_app_finder.py
+          python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
           # The buyer-intent catalog requires exact Finder/persona coverage,
           # so every Finder-dependent surface must follow the rebuild above.
           python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
@@ -213,6 +214,11 @@ jobs:
           HERO_STATE_TIMEOUT_MS: "180000"
           HERO_CDP_TIMEOUT_MS: "180000"
         run: |
+          python3 _engine/geo/shotinbox_public_site.py
+          python3 _engine/geo/owned_app_feeds.py \
+            --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
+          python3 _engine/geo/owned_app_feeds.py \
+            --pages-dir "$GITHUB_WORKSPACE" --check
           python3 _engine/geo/parallel_unittest.py --jobs 3
           STANDARD_SITE_ENGINE_ROOT="$GITHUB_WORKSPACE/_engine" \
             python3 -m unittest discover \
@@ -385,6 +391,8 @@ jobs:
                 --retry-delay 2
               python3 _engine/geo/reconcile_answer_semantics.py --repair
               cd _engine/geo
+              python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
+              python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
               python3 dedupe_locale_meta.py --apply
               python3 live_app_guard.py --site-root pages
               python3 gen_locale_indexation.py
@@ -483,6 +491,7 @@ jobs:
           # Localization changes the answer text consumed by these catalogs.
           # Rebuild every dependent surface before sealing the tested tree.
           python3 portfolio_app_catalog_api.py
+          python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
           python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
           python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
@@ -553,6 +562,7 @@ jobs:
         run: |
           python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
           python3 _engine/geo/owned_app_feeds.py --pages-dir "$GITHUB_WORKSPACE" --check
+          python3 _engine/geo/shotinbox_public_site.py
           attestation="$RUNNER_TEMP/localized-verified-tree.json"
           rm -f "$attestation"
           python3 _engine/geo/verified_tree.py prepare \
@@ -592,6 +602,8 @@ jobs:
                   --retry-delay 2
                 python3 _engine/geo/reconcile_answer_semantics.py --repair
                 cd _engine/geo
+                python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
+                python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
                 python3 dedupe_locale_meta.py --apply
                 python3 live_app_guard.py --site-root pages
                 python3 alternatives_i18n.py --pages-dir "$GITHUB_WORKSPACE"

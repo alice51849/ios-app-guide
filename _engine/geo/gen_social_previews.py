@@ -454,15 +454,29 @@ def available_buyer_intent_image(
     return url
 
 
+def rich_oembed_image(
+    title: str,
+    buyer_intent_url: str,
+) -> str:
+    visual = urllib.parse.urlsplit(buyer_intent_url)
+    if visual.scheme != "https" or not visual.hostname or visual.username:
+        raise ValueError("Rich oEmbed visual URL must be public HTTPS")
+    esc = lambda value: html.escape(str(value), quote=True)
+    return (
+        f'<img src="{esc(buyer_intent_url)}" alt="{esc(title)}" '
+        f'width="{OEMBED_SIZE[0]}" height="{OEMBED_SIZE[1]}" '
+        f'style="display:block;width:100%;height:auto;'
+        f'max-width:{OEMBED_SIZE[0]}px;'
+        'margin:0;padding:0;border:0" />'
+    )
+
+
 def rich_oembed_html(
     title: str,
     buyer_intent_url: str,
     app_store_url: str,
 ) -> str:
-    visual = urllib.parse.urlsplit(buyer_intent_url)
     store = urllib.parse.urlsplit(app_store_url)
-    if visual.scheme != "https" or not visual.hostname or visual.username:
-        raise ValueError("Rich oEmbed visual URL must be public HTTPS")
     if (
         store.scheme != "https"
         or store.hostname != "apps.apple.com"
@@ -472,11 +486,7 @@ def rich_oembed_html(
     esc = lambda value: html.escape(str(value), quote=True)
     return (
         f'<a href="{esc(app_store_url)}" rel="nofollow noopener">'
-        f'<img src="{esc(buyer_intent_url)}" alt="{esc(title)}" '
-        f'width="{OEMBED_SIZE[0]}" height="{OEMBED_SIZE[1]}" '
-        f'style="display:block;width:100%;height:auto;'
-        f'max-width:{OEMBED_SIZE[0]}px;'
-        'margin:0;padding:0;border:0" /></a>'
+        f'{rich_oembed_image(title, buyer_intent_url)}</a>'
     )
 
 
@@ -488,6 +498,8 @@ def _enrich_oembed_document(
     app_store_url = document.get("_lumi_app_store_url")
     locale = str(document.get("_lumi_locale", ""))
     app_id = document.get("_lumi_app_store_id")
+    if not isinstance(title, str) or not title:
+        raise ValueError("Rich oEmbed response has no title")
     if market.is_unavailable(locale, app_id):
         market.validate_record(
             {**document, "locale": locale, "app_store_id": app_id, "app_store_url": app_store_url},
@@ -495,14 +507,12 @@ def _enrich_oembed_document(
         )
         document.update({
             "type": "rich",
-            "html": f'<img src="{html.escape(buyer_intent_url, quote=True)}" alt="{html.escape(str(title), quote=True)}">'
+            "html": rich_oembed_image(title, buyer_intent_url)
                     + market.note_html(locale, app_id=app_id),
             "width": OEMBED_SIZE[0], "height": OEMBED_SIZE[1],
             "_lumi_buyer_intent_image_url": buyer_intent_url,
         })
         return document
-    if not isinstance(title, str) or not title:
-        raise ValueError("Rich oEmbed response has no title")
     if not isinstance(app_store_url, str) or not app_store_url:
         raise ValueError("Rich oEmbed response has no App Store URL")
     document.update(

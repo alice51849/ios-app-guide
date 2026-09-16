@@ -133,6 +133,38 @@ class CleanupPerformanceTests(unittest.TestCase):
         self.assertEqual(3, sum(reads.values()))
         self.assertTrue(all(reads[path] == 1 for path in paths))
 
+    def test_directory_hreflang_excludes_supplemental_locales(self):
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            pages = Path(directory)
+            root = pages / "index.html"
+            for locale in ("en-US", "ja", "de"):
+                path = pages / locale / "index.html"
+                path.parent.mkdir(parents=True)
+                path.write_text(
+                    '<html><head><link rel="canonical" href="'
+                    f'{cleanup_localized_assets.SITE}/{locale}/index.html">'
+                    "</head><body></body></html>",
+                    encoding="utf-8",
+                )
+            source = (
+                '<html><head><link rel="canonical" href="'
+                f'{cleanup_localized_assets.SITE}/index.html">'
+                '<link rel="alternate" hreflang="de" href="'
+                f'{cleanup_localized_assets.SITE}/de/index.html">'
+                "</head><body></body></html>"
+            )
+            root.write_text(source, encoding="utf-8")
+            tree = cleanup_localized_assets.SiteTreeIndex(pages)
+
+            updated = cleanup_localized_assets.repair_html_hreflang(
+                root, source, pages, {"en-US", "ja", "de"}, tree
+            )
+
+        self.assertIn('hreflang="en-US"', updated)
+        self.assertIn('hreflang="ja"', updated)
+        self.assertIn('hreflang="x-default"', updated)
+        self.assertNotIn('hreflang="de"', updated)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -79,6 +79,16 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
         feed = next_command("gen_feed.py", attribution)
         audit = next_command("audit_link_depth.py", feed)
         self.assertLess(audit, closure)
+        paid_repair = next(
+            index for index, command in enumerate(commands)
+            if "paid_upfront_surfaces.py" in command
+        )
+        intent_catalog = next(
+            index for index, command in enumerate(commands)
+            if "publisher_intent_catalog.py" in command
+        )
+        self.assertLess(paid_repair, intent_catalog)
+        self.assertLess(intent_catalog, generator)
 
     def test_high_intent_routes_close_all_four_mutation_paths(self):
         segments = (
@@ -241,6 +251,18 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
             zero_cost,
         )
         self.assertNotIn("-s _engine/geo/tests", zero_cost)
+        first_suite = zero_cost.index(
+            "python3 _engine/geo/parallel_unittest.py --jobs 3"
+        )
+        self.assertLess(
+            zero_cost.index("owned_app_feeds.py"),
+            first_suite,
+        )
+        self.assertLess(zero_cost.index("--refresh-catalog"), first_suite)
+        self.assertLess(
+            zero_cost.index("python3 _engine/geo/shotinbox_public_site.py"),
+            first_suite,
+        )
 
         english = self.source.split("reconcile_english_phase() {", 1)[1].split(
             "export REMOTE_FIRST_RECONCILE_MESSAGE",
@@ -270,6 +292,8 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
         prepare = final_gate.index("verified_tree.py prepare")
         tests = final_gate.index("parallel_unittest.py --jobs 3")
         seal = final_gate.index("verified_tree.py seal")
+        shotinbox = final_gate.index("shotinbox_public_site.py")
+        self.assertLess(shotinbox, prepare)
         self.assertLess(prepare, tests)
         self.assertLess(tests, seal)
 

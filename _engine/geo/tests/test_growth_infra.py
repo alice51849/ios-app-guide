@@ -24183,8 +24183,6 @@ class GeneratorTests(unittest.TestCase):
             "app_install_decision_routes.py",
             "zhuyin_resourcesync.py",
             "gen_app_decision_cards.py",
-            "cleanup_localized_assets.py --cached-live",
-            "gen_app_store_conversion_surfaces.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
             "reconcile_answer_semantics.py",
@@ -24192,6 +24190,27 @@ class GeneratorTests(unittest.TestCase):
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
         self.assertEqual(sorted(final_positions), final_positions)
+        final_body = final_cleanup_block.rindex(
+            "publisher_intent_visuals.py"
+        )
+        final_cleanup = final_cleanup_block.rindex(
+            "cleanup_localized_assets.py --cached-live"
+        )
+        final_conversion = final_cleanup_block.rindex(
+            "gen_app_store_conversion_surfaces.py"
+        )
+        final_attribution = final_cleanup_block.rindex(
+            "gen_store_attribution.py"
+        )
+        self.assertLess(final_body, final_cleanup)
+        self.assertLess(final_cleanup, final_conversion)
+        self.assertLess(final_conversion, final_attribution)
+        self.assertLess(
+            final_attribution,
+            final_cleanup_block.rindex(
+                "audit_link_depth.py --max-indexable-orphans 0"
+            ),
+        )
         self.assertLess(
             final_cleanup_block.rindex("publisher_intent_visuals.py"),
             final_cleanup_block.rindex(
@@ -24237,16 +24256,17 @@ class GeneratorTests(unittest.TestCase):
             materialize_positions,
         )
         self.assertEqual(
-            3,
+            5,
             workflow.count("gen_app_store_conversion_surfaces.py"),
         )
         stable_lastmod_chain = (
             *stable_surface_chain,
             "gen_sitemap_lastmod.py",
         )
-        for block in (refresh_block, final_cleanup_block):
-            positions = [block.index(item) for item in stable_lastmod_chain]
-            self.assertEqual(sorted(positions), positions)
+        positions = [
+            refresh_block.index(item) for item in stable_lastmod_chain
+        ]
+        self.assertEqual(sorted(positions), positions)
         english_commit_block = workflow.split(
             "- name: Commit English content first", 1
         )[1].split("- name: Localize from curated dictionaries", 1)[0]
@@ -24525,7 +24545,7 @@ class GeneratorTests(unittest.TestCase):
         ).read_text(encoding="utf-8")
         self.assertIn("force=True", refresh_script)
         self.assertEqual(
-            3,
+            5,
             workflow.count("cleanup_localized_assets.py --cached-live"),
         )
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")

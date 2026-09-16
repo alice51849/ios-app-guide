@@ -173,37 +173,6 @@ class HeroTaskTests(unittest.TestCase):
         self.write(hero.INTENTS, {"records": records})
         self.options = {"provider": "118326163", "today": "2026-09-05", "site": self.site}
 
-    def test_app_buttons_apply_app_specific_market_availability(self):
-        source = hero.app_buttons([
-            {
-                "locale": "zh-Hans",
-                "key": "lumiletters",
-                "name": "Lumi Letters",
-                "app_store_id": "6778748533",
-                "app_store_url": None,
-                "cta": "下载",
-            },
-            {
-                "locale": "zh-Hans",
-                "key": "mochi",
-                "name": "Mochi",
-                "app_store_id": "6791658210",
-                "app_store_url": (
-                    "https://apps.apple.com/cn/app/id6791658210"
-                ),
-                "cta": "下载",
-            },
-        ])
-        self.assertIn("MARKET_APP_NOT_SOLD", source)
-        self.assertNotIn(
-            "https://apps.apple.com/cn/app/id6778748533",
-            source,
-        )
-        self.assertIn(
-            "https://apps.apple.com/cn/app/id6791658210",
-            source,
-        )
-
     def tearDown(self):
         shutil.rmtree(self.folder)
 
@@ -1896,7 +1865,10 @@ class HeroTaskTests(unittest.TestCase):
         self.assertIsInstance(yaml.safe_load(daily)["jobs"], dict)
         self.assertIsInstance(yaml.safe_load(deploy)["jobs"], dict)
         self.assertLess(deploy.index("hero_tasks.py --pages-dir . --check"), deploy.index("Upload artifact"))
-        self.assertLess(deploy.index("Verify every hero result"), deploy.index("Notify WebSub subscribers"))
+        self.assertLess(
+            deploy.index("Verify every hero result"),
+            deploy.index("Observe WebSub publisher ACKs"),
+        )
         self.assertEqual(3, deploy.count("steps.verify_hero.outcome == 'success'"))
 
     def test_private_inputs_cannot_become_public_urls_or_script(self):

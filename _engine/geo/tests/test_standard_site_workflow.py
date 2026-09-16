@@ -50,10 +50,10 @@ MIRROR_SHA256 = {
         "bb5360a9861abe6e20d49b65b2501a2317ec4ffac6178d7246e827c13f75a95a"
     ),
     "_engine/social/standard_site_publish.py": (
-        "04f0d5eb43a075b2ad2cc8752e0fcc92bc37f9e2f1612ff651dd55108e911679"
+        "aa60fddd59f875149398dc989c20a967628fca79f9ba817e37149ed7a7a1a252"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "faad26aceffa6c8eff3344d842b705f52cef1d999ae4aa51e1dd54805584d5b9"
+        "0ac50883d75ecb7639f7b1bea6baaac77e8fc5f0a55e448e7117b43ebceea029"
     ),
 }
 
@@ -398,7 +398,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             edition = "WiFi Aid Lite" if door == "6793414462" else "WiFi Aid"
             self.assertRegex(
                 html,
-                r'<a class="cta" href="https://apps\.apple\.com/app/'
+                r'<a class="cta" href="https://apps\.apple\.com/us/app/'
                 rf'id{door}(?:\?[^"]*)?" rel="nofollow noopener">'
                 rf"Get {edition} on the App Store →</a>",
             )

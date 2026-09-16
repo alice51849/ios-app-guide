@@ -537,6 +537,7 @@ def rewrite(
 
     def script(match):
         nonlocal changes
+        opening = SHARE_URL_RE.sub(replace, match["open"])
         body = match["body"]
         if re.search(r"""type\s*=\s*["']application/(?:ld\+)?json["']""", match["open"], re.I):
             payload = json.loads(body)
@@ -554,7 +555,7 @@ def rewrite(
                     replacements.append((literal.start(), literal.end(), json.dumps(updated, ensure_ascii=False)))
             for start, end, replacement in reversed(replacements):
                 body = body[:start] + replacement + body[end:]
-        return match["open"] + body + match["close"]
+        return opening + body + match["close"]
 
     def banner(match):
         nonlocal changes

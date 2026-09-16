@@ -16,7 +16,7 @@ SCRIPT = re.compile(
 )
 NOTE = re.compile(r'<p\b[^>]*class=["\']market-availability["\'][^>]*>.*?</p>', re.I | re.S)
 MANAGED = re.compile(
-    r"<!-- (app-store-facts(?:-style)?|app-store-qr(?:-card|-head|-style)?|mobile-store-cta|smart-app-banner):start -->"
+    r"<!-- (app-store-facts(?:-style)?|app-store-qr(?:-card|-head|-style)?|app-store-share|mobile-store-cta|smart-app-banner):start -->"
     r".*?<!-- \1:end -->", re.S,
 )
 APP_TYPES = {"MobileApplication", "SoftwareApplication"}

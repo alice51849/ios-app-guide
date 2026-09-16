@@ -7,7 +7,6 @@
 """
 from __future__ import annotations
 
-import importlib.util
 from pathlib import Path
 import sys
 import unittest
@@ -16,18 +15,7 @@ GEO = Path(__file__).resolve().parent.parent
 if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
-
-def _load(name: str):
-    spec = importlib.util.spec_from_file_location(name, GEO / f"{name}.py")
-    if spec is None or spec.loader is None:  # pragma: no cover
-        raise unittest.SkipTest(f"{name}.py 不在此 checkout")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-market = _load("market_availability")
+import market_availability as market
 APP_ID = "6785004775"
 FIFTY = [f"l{i}" for i in range(50)]
 

@@ -209,7 +209,7 @@ class ExistingSurfaceContract(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual(1, len(first["items"]))
         item = first["items"][0]
-        self.assertEqual(f"https://apps.apple.com/app/id{app_id}", item["id"])
+        self.assertEqual(f"urn:apple:app:id{app_id}", item["id"])
         self.assertNotIn("external_url", item)
         self.assertIn(app["summary"], item["content_text"])
         self.assertEqual(app["market_availability"], item["_market_availability"])

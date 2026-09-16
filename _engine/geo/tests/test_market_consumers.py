@@ -106,6 +106,9 @@ class MarketConsumerTests(unittest.TestCase):
             '{"@type":"SoftwareApplication","name":"ScanTo","@id":"https://apps.apple.com/app/id6779977651",'
             '"installUrl":"https://apps.apple.com/us/app/id6779977651","offers":{"price":"5"}}'
             '</script></head><body><h1>ডকুমেন্ট স্ক্যান</h1><p>মূল তথ্য</p>'
+            '<!-- app-store-share:start --><script '
+            'data-app-store-url="https://apps.apple.com/app/id6779977651">'
+            '</script><!-- app-store-share:end -->'
             '<a href="https://apps.apple.com/bd/app/id6779977651">ScanTo</a>'
             '<a href="https://apps.apple.com/in/app/id6779977651">ScanTo</a>'
             '<a href="https://apps.apple.com/app/id6779977651">ScanTo</a>'
@@ -116,6 +119,7 @@ class MarketConsumerTests(unittest.TestCase):
         self.assertIn("মূল তথ্য", result)
         self.assertEqual(policy.application_ids(result), {"6779977651"})
         self.assertNotIn('"offers"', result)
+        self.assertNotIn("data-app-store-share", result)
         self.assertEqual(policy.enforce_html(result, "bn-BD"), result)
         self.assertEqual(policy.enforce_html(source, "hi"), source)
 
@@ -338,6 +342,11 @@ process.stdout.write(JSON.stringify(result));
         self.addCleanup(scratch.cleanup)
         root = Path(scratch.name)
         (root / "hubs").mkdir()
+        snapshot = pages / ".appstore_storefront_state.json"
+        if snapshot.is_file():
+            target = root / snapshot.name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(snapshot.read_bytes())
         (root / "hubs/scanto.html").write_text(source.replace("pt=118326163", "pt=999999999"))
         with self.assertRaises(hubs.HubContractError):
             hubs._validate_hub(

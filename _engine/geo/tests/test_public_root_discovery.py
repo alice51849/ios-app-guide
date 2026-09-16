@@ -17,7 +17,7 @@ import site_config
 import static_api_catalog
 import sync_standard_site
 import zhuyin_resourcesync
-from . import test_sync_standard_site as contract_tests
+import test_sync_standard_site as contract_tests
 
 
 class PublicRootDiscoveryTests(unittest.TestCase):

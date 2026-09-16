@@ -13,19 +13,19 @@
     {
       "growth": "geo/build_pages_i18n.py",
       "guide": "_engine/geo/build_pages_i18n.py",
-      "sha256": "e9d95def108468cc025580792870c80c030d92676e6c4bbd45c64cb3f27669c4",
+      "sha256": "689b7fe8140aca5369f06b27b0535b4d9be2aca916b1c1387e769e262eb25108",
       "role": "唯一 renderer:首頁 index-entry canary 區塊由這支的 build_root_index() 產生"
     },
     {
       "growth": "geo/index_entry_canary_manifest.json",
       "guide": "_engine/geo/index_entry_canary_manifest.json",
-      "sha256": "6364ba06655fa504b3e6da20e0a44cd7d103ced9fa65d2a17acc125830be14a6",
+      "sha256": "aba552e137d7d7d7bdec4db37c286b4d455de7045d1cbff0ec2491477184dc8d",
       "role": "canary 清單、在地化實測值、回退步驟與 E0 Gate 契約"
     },
     {
       "growth": "geo/tests/test_index_entry_canary.py",
       "guide": "_engine/geo/tests/test_index_entry_canary.py",
-      "sha256": "b58ab8c7a8c853bee93105961896b41f1368bb075a749eba56fa698e93f39d37",
+      "sha256": "4c021dc8f9103a9694827975dad66a8bd8fc659eb251ad66420ece96eb7123f1",
       "role": "契約測試;以 _site_root() 同時支援兩種佈局,因此兩邊可維持 byte 相同"
     }
   ],

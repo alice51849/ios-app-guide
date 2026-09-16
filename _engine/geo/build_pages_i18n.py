@@ -1735,8 +1735,8 @@ def build_one(key, locale, all_locales, *, copy_by_locale=None):
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, f"{key}.html")
     page = market_surface_policy.enforce_html(page, locale, app_id=APPSTORE.get(key), name=name)
-    page = ensure_landing_disclosure(page, locale, copy_by_locale=copy_by_locale)
     page = paid_upfront_surfaces.rewrite(page, f"{locale}/{key}.html", PAGES)
+    page = ensure_landing_disclosure(page, locale, copy_by_locale=copy_by_locale)
     write_text_if_changed(out, public_email.render_html(page))
     return out
 

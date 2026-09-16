@@ -265,6 +265,7 @@ def _validate_hub(
             provider_token,
             locale="en-US" if locale is None else locale,
             app_id=app["app_id"],
+            availability=gen_hubs.load_storefront_availability(pages),
         )
     if (
         about.get("@type") != "MobileApplication"

@@ -1211,6 +1211,7 @@ def build_localized_llms(locale, live_keys, pages=None):
     ]
     for record in records:
         app_id = _app_store_id(record["key"])
+        unavailable = market.is_unavailable(locale, app_id)
         lines.extend(
             (
                 f"- [{record['name']}]({record['guide']}) — "
@@ -1220,11 +1221,20 @@ def build_localized_llms(locale, live_keys, pages=None):
                 "  - App Store: "
                 + (
                     market.note(locale, record["name"], app_id)
-                    if market.is_unavailable(locale, app_id)
+                    if unavailable
                     else record["store"]
                 ),
             )
         )
+        if unavailable and not market.is_unavailable(locale):
+            lines.append(
+                "  - market_availability: "
+                + json.dumps(
+                    record["market_availability"],
+                    ensure_ascii=False,
+                    sort_keys=True,
+                )
+            )
     lines.append("")
     if market.is_unavailable(locale):
         lines.append("market_availability: " + json.dumps(market.record_fields(locale)["market_availability"], ensure_ascii=False))

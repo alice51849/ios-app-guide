@@ -51,7 +51,7 @@
     "bytes_added_measured": 1560,
     "bytes_added_method": "本輪最新 renderer 的受控 A/B：相同 50 locale、相同站台與現有首頁輸入，只將 canary 清單由空改為 8 個；16891 -> 18451 bytes，唯一 insert=1560 bytes。完整既有首頁 17769 -> 19329 bytes，其他所有 bytes 保留。",
     "bytes_added_correction": "舊 +692 是不同 pipeline 的錯誤比較；舊同-renderer +1564 也不可沿用。本輪標題改為不暗示熱門量的 Explore practical app guides，已重新量測 +1560。",
-    "renderer_source_sha256": "e9d95def108468cc025580792870c80c030d92676e6c4bbd45c64cb3f27669c4",
+    "renderer_source_sha256": "689b7fe8140aca5369f06b27b0535b4d9be2aca916b1c1387e769e262eb25108",
     "homepage_before_bytes": 17769,
     "homepage_after_bytes": 19329
   },

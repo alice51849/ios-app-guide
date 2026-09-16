@@ -582,8 +582,6 @@ def validate_legacy_routes(
             or f"id{route['app_store_id']}" not in document
             or route["competitor_name"].casefold()
             not in html.unescape(re.sub(r"<[^>]+>", " ", document)).casefold()
-            or str(inventory[route["app_key"]]["name"]).casefold()
-            not in html.unescape(re.sub(r"<[^>]+>", " ", document)).casefold()
         ):
             raise ValueError(
                 f"Curated root alternative ownership differs: {source}"

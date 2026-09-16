@@ -10,7 +10,7 @@ import tempfile
 import unittest
 from unittest import mock
 
-from . import test_high_intent_decision_routes as fixtures
+import test_high_intent_decision_routes as fixtures
 
 
 routes = fixtures.routes

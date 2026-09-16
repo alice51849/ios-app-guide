@@ -18,6 +18,7 @@ from typing import Iterable, Mapping
 from official_locales import OFFICIAL_LOCALES, require_official_locale_coverage
 from owned_feed_locale_gate import validate_text
 from site_config import PUBLIC_SITE  # noqa: E402
+import live_app_manifest
 
 
 HERE = Path(__file__).resolve().parent
@@ -741,6 +742,14 @@ def migrate(
             and path.name == "index.html"
         )
     )
+    landing_pages = {
+        candidate
+        for key in live_app_manifest.canonical_manifest()["apps"]
+        for locale in OFFICIAL_LOCALES
+        if (candidate := pages / locale / f"{key}.html").is_file()
+    }
+    candidate_set.update(landing_pages)
+    landing_disclosures = load_landing_disclosures()
 
     for path in sorted(candidate_set):
         source = path.read_text(encoding="utf-8")
@@ -825,6 +834,14 @@ def migrate(
             replacements += count
             if footer_fallback:
                 fallback_locales.add(locale)
+        elif path in landing_pages:
+            landing_updated = ensure_landing_disclosure(
+                updated,
+                locale,
+                copy_by_locale=landing_disclosures,
+            )
+            replacements += int(landing_updated != updated)
+            updated = landing_updated
 
         if updated != source:
             path.write_text(updated, encoding="utf-8")

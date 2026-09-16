@@ -2021,41 +2021,6 @@ class GeneratorTests(unittest.TestCase):
                     gen_social_previews.OEMBED_SIZE[1],
                     payload["height"],
                 )
-                parsed_store = urllib.parse.urlsplit(
-                    payload["_lumi_app_store_url"]
-                )
-                self.assertEqual("https", parsed_store.scheme)
-                self.assertEqual("apps.apple.com", parsed_store.netloc)
-                self.assertRegex(
-                    parsed_store.path,
-                    r"^/(?:[a-z]{2}/)?app/id\d+$",
-                )
-                expected_store = (
-                    app_store_storefronts.verified_app_store_url(
-                        f"https://apps.apple.com/app/id{app_id}",
-                        locale,
-                        availability,
-                    )
-                )
-                expected_store_urls.add(
-                    app_store_storefronts.campaign_app_store_url(
-                        expected_store,
-                        gen_social_previews._oembed_campaign(locale),
-                    )
-                )
-                self.assertEqual(
-                    urllib.parse.urlsplit(expected_store).path,
-                    parsed_store.path,
-                )
-                # Attribution is stamped per locale when a provider token is
-                # configured; anything else in the query is rejected.
-                self.assertEqual(
-                    app_store_storefronts.campaign_app_store_url(
-                        expected_store,
-                        gen_social_previews._oembed_campaign(locale),
-                    ),
-                    urllib.parse.urlunsplit(parsed_store),
-                )
                 expected_visual = (
                     gen_social_previews.buyer_intent_image_url(
                         key,
@@ -2071,10 +2036,6 @@ class GeneratorTests(unittest.TestCase):
                     f'src="{html.escape(expected_visual, quote=True)}"',
                     embed_html,
                 )
-                self.assertIn(
-                    f'href="{html.escape(payload["_lumi_app_store_url"], quote=True)}"',
-                    embed_html,
-                )
                 self.assertEqual(1, embed_html.count("<img "))
                 self.assertNotIn("<script", embed_html.casefold())
                 self.assertNotRegex(
@@ -2085,7 +2046,58 @@ class GeneratorTests(unittest.TestCase):
                     '<div xmlns="http://www.w3.org/1999/xhtml">'
                     f"{embed_html}</div>"
                 )
-                store_urls.add(payload["_lumi_app_store_url"])
+                blocked_market = gen_social_previews.market.is_unavailable(
+                    locale,
+                    app_id,
+                )
+                if blocked_market:
+                    self.assertIsNone(payload["_lumi_app_store_url"])
+                    self.assertEqual(
+                        gen_social_previews.market.record_fields(
+                            locale,
+                            app_id,
+                        )["market_availability"],
+                        payload["market_availability"],
+                    )
+                    self.assertNotIn("href=", embed_html)
+                    self.assertNotIn("apps.apple.com", embed_html)
+                else:
+                    parsed_store = urllib.parse.urlsplit(
+                        payload["_lumi_app_store_url"]
+                    )
+                    self.assertEqual("https", parsed_store.scheme)
+                    self.assertEqual("apps.apple.com", parsed_store.netloc)
+                    self.assertRegex(
+                        parsed_store.path,
+                        r"^/(?:[a-z]{2}/)?app/id\d+$",
+                    )
+                    expected_store = (
+                        app_store_storefronts.verified_app_store_url(
+                            f"https://apps.apple.com/app/id{app_id}",
+                            locale,
+                            availability,
+                        )
+                    )
+                    expected_campaign = (
+                        app_store_storefronts.campaign_app_store_url(
+                            expected_store,
+                            gen_social_previews._oembed_campaign(locale),
+                        )
+                    )
+                    expected_store_urls.add(expected_campaign)
+                    self.assertEqual(
+                        urllib.parse.urlsplit(expected_store).path,
+                        parsed_store.path,
+                    )
+                    self.assertEqual(
+                        expected_campaign,
+                        urllib.parse.urlunsplit(parsed_store),
+                    )
+                    self.assertIn(
+                        f'href="{html.escape(payload["_lumi_app_store_url"], quote=True)}"',
+                        embed_html,
+                    )
+                    store_urls.add(payload["_lumi_app_store_url"])
 
                 source = page.read_text(encoding="utf-8")
                 expected_discovery = html.escape(
@@ -3936,9 +3948,25 @@ class GeneratorTests(unittest.TestCase):
                     1, len(gen_guide_design.VIEWPORT_RE.findall(source))
                 )
             if path in targets:
+                app_id = targets[path]
+                locale = gen_app_store_qr_ctas.page_locale(path, pages)
                 cta = gen_mobile_store_ctas.app_store_cta(
-                    source, targets[path]
+                    source, app_id
                 )
+                if gen_mobile_store_ctas.market.is_unavailable(
+                    locale,
+                    app_id,
+                ):
+                    self.assertIsNone(cta)
+                    for marker in (
+                        gen_smart_app_banners.BLOCK_START,
+                        gen_mobile_store_ctas.BLOCK_START,
+                        gen_app_store_qr_ctas.HEAD_BLOCK_START,
+                        gen_app_store_qr_ctas.CARD_BLOCK_START,
+                        gen_app_store_share_ctas.BLOCK_START,
+                    ):
+                        self.assertNotIn(marker, source)
+                    continue
                 self.assertIsNotNone(cta)
                 self.assertEqual(
                     1,
@@ -3969,9 +3997,25 @@ class GeneratorTests(unittest.TestCase):
         surface_drift = []
         for path in sorted(buyer_intent_targets):
             source = path.read_text(encoding="utf-8")
+            app_id = targets[path]
+            locale = gen_app_store_qr_ctas.page_locale(path, pages)
             cta = gen_mobile_store_ctas.app_store_cta(
-                source, targets[path]
+                source, app_id
             )
+            if gen_mobile_store_ctas.market.is_unavailable(
+                locale,
+                app_id,
+            ):
+                self.assertIsNone(cta)
+                for marker in (
+                    gen_smart_app_banners.BLOCK_START,
+                    gen_mobile_store_ctas.BLOCK_START,
+                    gen_app_store_qr_ctas.HEAD_BLOCK_START,
+                    gen_app_store_qr_ctas.CARD_BLOCK_START,
+                    gen_app_store_share_ctas.BLOCK_START,
+                ):
+                    self.assertNotIn(marker, source)
+                continue
             if cta is None:
                 surface_drift.append(
                     "no App Store CTA: "
@@ -3980,7 +4024,7 @@ class GeneratorTests(unittest.TestCase):
                 continue
             # The attribution stamper appends ", affiliate-data=..." inside the
             # banner content, so match the generator's banner up to its app-id.
-            banner = gen_smart_app_banners.banner_block(targets[path])
+            banner = gen_smart_app_banners.banner_block(app_id)
             if source.count(banner.split('">', 1)[0]) != 1:
                 surface_drift.append(
                     "no Smart App Banner: "
@@ -4783,10 +4827,8 @@ class GeneratorTests(unittest.TestCase):
         )
         prune = workflow.index("rm -rf _engine")
         deploy = workflow.index("uses: actions/deploy-pages@v4")
-        notify = workflow.rindex('python3 \"$RUNNER_TEMP/notify_websub.py\"')
-        notify_rsscloud = workflow.rindex(
-            'python3 \"$RUNNER_TEMP/notify_rsscloud.py\"'
-        )
+        notify = workflow.rindex("--protocol websub --execute")
+        notify_rsscloud = workflow.rindex("--protocol rsscloud --execute")
         enforce = workflow.index("Enforce syndication notification results")
         self.assertLess(preserve, prune)
         self.assertLess(preserve_config, prune)
@@ -4797,7 +4839,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(deploy, notify)
         self.assertLess(notify, notify_rsscloud)
         self.assertLess(notify_rsscloud, enforce)
-        self.assertIn("--feed-dir \"$GITHUB_WORKSPACE\"", workflow)
+        self.assertIn("--pages-dir \"$GITHUB_WORKSPACE\"", workflow)
         self.assertIn("timeout-minutes: 6", workflow)
         self.assertIn(
             'test "${{ steps.notify_websub.outcome }}" = "success"',
@@ -12894,7 +12936,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             page.index("Open the free private travel mission-card generator"),
-            page.index("Get Lumi Trip Planet on the App Store"),
+            page.index(f"Get {APPS['tripplanet']['name']} on the App Store"),
         )
         self.assertIn("Airport cards contain no photo tasks", page)
         self.assertIn("driver never reads, answers or operates", page)
@@ -25870,7 +25912,20 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(image_reference, collection["image"])
         self.assertEqual(image_reference, collection["about"]["image"])
         app_id = str(gen_hubs.APPSTORE[key])
-        app_entity_id = gen_mobile_app_identity.canonical_store_url(app_id)
+        locale = next(
+            (
+                candidate
+                for candidate in OFFICIAL_LOCALES
+                if f"/{candidate}/hubs/" in canonical
+            ),
+            "en-US",
+        )
+        blocked_market = gen_hubs.market.is_unavailable(locale, app_id)
+        app_entity_id = (
+            f"urn:apple:app:id{app_id}"
+            if blocked_market
+            else gen_mobile_app_identity.canonical_store_url(app_id)
+        )
         app = collection["about"]
         self.assertEqual("MobileApplication", app["@type"])
         self.assertEqual(app_entity_id, app["@id"])
@@ -25903,7 +25958,21 @@ class GeneratorTests(unittest.TestCase):
             source,
         )
         self.assertIsNotNone(preview)
-        self.assertIn(f"id{gen_hubs.APPSTORE[key]}", preview.group(1))
+        if blocked_market:
+            self.assertEqual(
+                f"{gen_hubs.SITE}/{locale}/{key}.html",
+                preview.group(1),
+            )
+            self.assertNotIn("apps.apple.com", source)
+            self.assertEqual(
+                gen_hubs.market.record_fields(
+                    locale,
+                    app_id,
+                )["market_availability"],
+                app["market_availability"],
+            )
+        else:
+            self.assertIn(f"id{gen_hubs.APPSTORE[key]}", preview.group(1))
         self.assertEqual(image_url, preview.group(2))
         self.assertEqual(
             {key},

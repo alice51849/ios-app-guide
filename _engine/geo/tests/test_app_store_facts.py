@@ -15,6 +15,7 @@ if str(GEO) not in sys.path:
 import app_store_storefronts
 import gen_app_store_facts as facts
 import gen_mobile_app_identity
+import market_availability
 from official_locales import OFFICIAL_LOCALES
 from videogen.registry import APPSTORE
 from market_contract_assertions import assert_blocked_page
@@ -252,7 +253,7 @@ class AppStoreFactsTests(unittest.TestCase):
                 source = (
                     pages / locale / f"{key}.html"
                 ).read_text(encoding="utf-8")
-                if locale == "bn-BD":
+                if market_availability.is_unavailable(locale, app_id):
                     assert_blocked_page(self, source)
                     self.assertNotIn('"offers"', source)
                     self.assertNotIn('"aggregateRating"', source)
@@ -304,7 +305,7 @@ class AppStoreFactsTests(unittest.TestCase):
                             source,
                         )
         self.assertGreater(checked, 1200)
-        self.assertEqual(blocked, 47)
+        self.assertEqual(blocked, 51)
 
 
 if __name__ == "__main__":

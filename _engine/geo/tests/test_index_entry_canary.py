@@ -10,7 +10,7 @@
 """
 from __future__ import annotations
 
-import importlib.util
+import importlib
 import json
 import os
 from pathlib import Path
@@ -85,22 +85,23 @@ def _block(html: str) -> str:
 
 
 def _load_generator():
-    sys.path.insert(0, str(GEO))
+    if str(GEO) not in sys.path:
+        sys.path.insert(0, str(GEO))
     # 產生器用 GEO_PAGES 決定站台根,預設是 `<geo>/pages`。雲端鏡像靠一條
     # `_engine/geo/pages -> <site>` 的 symlink 讓預設值成立,但 sparse checkout
     # 或權威副本(站台是 gitignored 的巢狀 repo)不一定有那條 symlink。
     # 這裡直接把已解析出來的站台根餵進去,兩種佈局才會指到同一棵樹。
+    previous = os.environ.get("GEO_PAGES")
     os.environ["GEO_PAGES"] = str(PAGES)
-    spec = importlib.util.spec_from_file_location("build_pages_i18n", GEO / "build_pages_i18n.py")
-    if spec is None or spec.loader is None:  # pragma: no cover
-        raise unittest.SkipTest("產生器不在此 checkout")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules["build_pages_i18n"] = module
     try:
-        spec.loader.exec_module(module)
+        return importlib.import_module("build_pages_i18n")
     except Exception as exc:  # pragma: no cover
         raise AssertionError(f"產生器無法載入:{type(exc).__name__}") from exc
-    return module
+    finally:
+        if previous is None:
+            os.environ.pop("GEO_PAGES", None)
+        else:
+            os.environ["GEO_PAGES"] = previous
 
 
 class ManifestContractTest(unittest.TestCase):
@@ -249,7 +250,16 @@ class NoNewUrlTest(unittest.TestCase):
 class InvariantsTest(unittest.TestCase):
     def test_exact50_hreflang_unchanged(self) -> None:
         html = _index_html()
-        locales = {l for l in re.findall(r'hreflang="([^"]+)"', html) if l != "x-default"}
+        locales = {
+            locale
+            for locale in re.findall(
+                r'<link\b(?=[^>]*\brel="alternate")'
+                r'(?=[^>]*\bhreflang="([^"]+)")[^>]*>',
+                html,
+                re.IGNORECASE,
+            )
+            if locale != "x-default"
+        }
         self.assertEqual(len(locales), 50, "首頁 hreflang 必須維持 exact50")
         self.assertEqual(MANIFEST["change"]["hreflang_locales_before"],
                          MANIFEST["change"]["hreflang_locales_after"])

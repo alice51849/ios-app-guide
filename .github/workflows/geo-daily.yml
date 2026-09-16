@@ -126,6 +126,7 @@ jobs:
           # a source-only copy update leaves the prior HTML claim in place.
           python3 zhuyin_readiness_tool.py
           python3 gen_publisher_disclosures.py
+          python3 shotinbox_public_site.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
           # The Finder first writes the newly live app's raw catalogue record
@@ -326,6 +327,7 @@ jobs:
           python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
+          python3 shotinbox_public_site.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
           python3 app_install_decision_routes.py
@@ -411,6 +413,7 @@ jobs:
                 --today "$GEO_BUILD_DATE" \
                 --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
                 --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+              python3 _engine/geo/shotinbox_public_site.py
               python3 _engine/geo/parallel_unittest.py --jobs 3
               cd _engine/geo
               python3 outreach_scorecard.py --require-complete
@@ -487,6 +490,7 @@ jobs:
           python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
+          python3 shotinbox_public_site.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
           python3 normalize_app_store_links.py
@@ -614,6 +618,7 @@ jobs:
                   --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
+                python3 _engine/geo/shotinbox_public_site.py
                 python3 _engine/geo/parallel_unittest.py --jobs 3
               fi
               cd _engine/geo

@@ -152,7 +152,8 @@ REVIEWS = [
         "title": "Snapport Product Guide — Paid Photo Exports and Print Layouts",
         "desc": "First-party guide to the paid Snapport app: size and alignment tools, JPEG/PNG/PDF exports and print sheets, with no government acceptance guarantee.",
         "rating": None,
-        "verdict": "One paid Snapport download includes photo sizing, alignment, optional background tools, JPEG/PNG/PDF export and 4×6, A4 or Letter multiple-copy layouts. The app prepares files; it does not certify a photo or guarantee acceptance.",
+        "lead": "One paid Snapport download includes photo sizing, alignment, optional background tools, JPEG/PNG/PDF export and 4×6, A4 or Letter multiple-copy layouts. The app prepares files; it does not certify a photo.",
+        "verdict": "Official acceptance still depends on the receiving authority's current rules, lighting, pose, final dimensions and required digital submission channel. Snapport is independent of those authorities and does not guarantee acceptance.",
         "pros": [
             "Common size templates and custom dimensions with face-alignment guides",
             "On-device processing, with the original photo kept safe",
@@ -537,6 +538,10 @@ def render(r, *, pages=None):
     )
     # Developer-written pages must never publish a self-assigned score.
     rating_html = ""
+    lead_html = (
+        f'<p class="lead">{html_lib.escape(r["lead"])}</p>'
+        if r.get("lead") else ""
+    )
 
     pros_html = "".join(f"<li>{p}</li>" for p in r["pros"])
     cons_html = "".join(f"<li>{c}</li>" for c in r["cons"])
@@ -573,6 +578,7 @@ def render(r, *, pages=None):
 <style>
 body{{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}}
 h1{{font-size:1.4rem;line-height:1.3}}
+.lead{{font-size:1.05rem;line-height:1.55;color:#333}}
 .meta{{display:flex;align-items:center;gap:1rem;margin:.5rem 0 1.5rem;font-size:.9rem;color:#555}}
 .stars{{color:#f5a623;font-size:1.2rem}}
 .badge{{color:#007aff}}
@@ -596,6 +602,7 @@ li{{margin:.4rem 0;font-size:.9rem}}
 <p><a href="{GEO_SITE}/en-US/">← App Guide</a></p>
 <h1>{r['title']}</h1>
 {f'<p class="disclosure">{disclosure}</p>' if first_party else ''}
+{lead_html}
 <div class="meta">
 {rating_html}
   <span class="badge">{badge}</span>

@@ -1,17 +1,17 @@
 ---
-title: "best passport photo app for babies and toddlers at home"
+title: "Snapport for a baby's photo: prepare the crop and print sheet, then check the rules"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/en-US/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# best passport photo app for babies and toddlers at home
+# Snapport for a baby's photo: prepare the crop and print sheet, then check the rules
 
-For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open.
+Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. paper-photo application, choose a 2×2-inch crop and arrange copies on a 4×6 sheet with cut guides. A correctly sized file does not certify that a passport authority will accept the photo.
 
 - Photo & utility
 - Paid download

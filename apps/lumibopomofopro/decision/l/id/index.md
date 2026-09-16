@@ -2,7 +2,7 @@
 title: "aplikasi zhuyin lengkap terbaik untuk anak dwibahasa"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Anak dwibahasa yang belajar Zhuyin di rumah butuh jalur lengkap melalui suara, s
 - Anak & pembelajaran
 - Unduhan berbayar
 - Tanpa iklan
-- App Store · Rp 149ribu
+- App Store · Rp 179ribu
 
 [Dapatkan Lumi Bopomofo Pro di App Store →](https://apps.apple.com/id/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)
 

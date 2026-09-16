@@ -2,7 +2,7 @@
 title: "aplikasi fonik lengkap terbaik untuk persiapan homeschool TK"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Keluarga yang mempersiapkan TK butuh jalur membaca awal lengkap yang menghubungk
 - Anak & pembelajaran
 - Unduhan berbayar
 - Tanpa iklan
-- App Store · Rp 149ribu
+- App Store · Rp 179ribu
 
 [Dapatkan Lumi Letters Pro di App Store →](https://apps.apple.com/id/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 

@@ -1,17 +1,17 @@
 ---
-title: "適合學齡前與低年級的最佳完整數學學習 App"
+title: "Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/zh-Hant/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# 適合學齡前與低年級的最佳完整數學學習 App
+# Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單
 
-完整早期數學 App 應讓數數、數感與基礎運算成為連貫冒險，而非分散練習。所以才有了 Lumi Math Pro。
+Lumi Math Pro 一次付費包含完整數學內容、弱項練習與進度；家長還能在家長專區產生20題附解答的 PDF／列印學習單及一頁能力報告。不是只買加法題，也不需要每次另購學習單。
 
 - 兒童與學習
 - 付費下載

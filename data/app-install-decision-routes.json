@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-09-12",
-  "content_digest": "d497604b89b5cf4d293086b8e4dc5b484bc491f40f6befcc67358b84128db2a6",
-  "generation_digest": "0a993581859253aa8854c78e848493bc9d336894d095ab4a2a2496d85a2ab3c5",
+  "dateModified": "2026-09-16",
+  "content_digest": "c5a023b2c5fc60589faeb7a5df5ae50140411a49c1f5c332f87e91f794b61500",
+  "generation_digest": "d1b10553ff9176a8c819235cd3a87f8e3655199dbb675ec990f5eab9c712f60f",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -25344,7 +25344,8 @@
       "badge_labels": [
         "Productivity",
         "Free to start · one-time unlock",
-        "App Store · Free"
+        "App Store · Free",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/en-US/index.html",
@@ -25357,7 +25358,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "USD",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -26336,7 +26339,7 @@
         "Free to start · one-time unlock",
         "No ads",
         "App Store · Free",
-        "★ 4.4/5 · 7"
+        "★ 4.4/5 · 10"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -26351,7 +26354,7 @@
         "currency": "USD",
         "formatted_price": "Free",
         "rating_value": 4.4,
-        "rating_count": 7
+        "rating_count": 10
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -26775,8 +26778,8 @@
       "app_name": "Snapport",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "best passport photo app for babies and toddlers at home",
-      "decision_context": "For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open.",
+      "publisher_query": "Snapport for a baby's photo: prepare the crop and print sheet, then check the rules",
+      "decision_context": "Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. paper-photo application, choose a 2×2-inch crop and arrange copies on a 4×6 sheet with cut guides. A correctly sized file does not certify that a passport authority will accept the photo.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",
@@ -42272,7 +42275,7 @@
         "הורדה בתשלום",
         "לא מקוון",
         "ללא חשבון",
-        "App Store · ₪17.90"
+        "App Store · ₪14.90"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/he/index.html",
@@ -42283,9 +42286,9 @@
       "app_store_url": "https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "קבל את G+Money ב-App Store →",
       "storefront_facts": {
-        "price": "17.9",
+        "price": "14.9",
         "currency": "ILS",
-        "formatted_price": "₪17.90"
+        "formatted_price": "₪14.90"
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "מדריך שנכתב על ידי Lumi Studio, מפתחת האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהם ומופיעים לצורכי זיהוי בלבד. בהחלטות שנוגעות למסמכים, בריאות, לימודים ופרודוקטיביות כדאי לבדוק את הדרישות הרשמיות היכן שזה רלוונטי.",
@@ -42456,7 +42459,7 @@
         "הורדה בתשלום",
         "ללא מעקב",
         "פרטי / במכשיר",
-        "App Store · ₪17.90"
+        "App Store · ₪14.90"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/hourstag.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/he/index.html",
@@ -42467,9 +42470,9 @@
       "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "הורידו את HoursTag: שעות לקנייה מה-App Store",
       "storefront_facts": {
-        "price": "17.9",
+        "price": "14.9",
         "currency": "ILS",
-        "formatted_price": "₪17.90"
+        "formatted_price": "₪14.90"
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
@@ -43987,7 +43990,7 @@
         "ללא פרסומות",
         "ללא מעקב",
         "פרטי / במכשיר",
-        "App Store · ₪17.90"
+        "App Store · ₪14.90"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/zipbox.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/he/index.html",
@@ -43998,9 +44001,9 @@
       "app_store_url": "https://apps.apple.com/il/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "הורידו את Zipbox: חילוץ RAR, ZIP, 7z מה-App Store",
       "storefront_facts": {
-        "price": "17.9",
+        "price": "14.9",
         "currency": "ILS",
-        "formatted_price": "₪17.90"
+        "formatted_price": "₪14.90"
       },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
@@ -51249,7 +51252,7 @@
       "badge_labels": [
         "Foto & utilitas",
         "Unduhan berbayar",
-        "App Store · Rp 99ribu"
+        "App Store · Rp 119ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/id/index.html",
@@ -51260,9 +51263,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan WiFi Aid di App Store →",
       "storefront_facts": {
-        "price": "99000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu"
+        "formatted_price": "Rp 119ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -51490,7 +51493,7 @@
       "badge_labels": [
         "Anak & pembelajaran",
         "Unduhan berbayar",
-        "App Store · Rp 99ribu"
+        "App Store · Rp 119ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/id/index.html",
@@ -51501,9 +51504,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Aim990 Plus di App Store →",
       "storefront_facts": {
-        "price": "99000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu"
+        "formatted_price": "Rp 119ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -51730,7 +51733,7 @@
         "Anak & pembelajaran",
         "Unduhan berbayar",
         "Apple Watch",
-        "App Store · Rp 199ribu"
+        "App Store · Rp 229ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/id/index.html",
@@ -51741,9 +51744,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan DailyMate di App Store →",
       "storefront_facts": {
-        "price": "199000",
+        "price": "229000",
         "currency": "IDR",
-        "formatted_price": "Rp 199ribu"
+        "formatted_price": "Rp 229ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -51828,7 +51831,7 @@
         "Unduhan berbayar",
         "Offline",
         "Tanpa akun",
-        "App Store · Rp 89ribu"
+        "App Store · Rp 99ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/id/index.html",
@@ -51839,9 +51842,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan G+Money di App Store →",
       "storefront_facts": {
-        "price": "89000",
+        "price": "99000",
         "currency": "IDR",
-        "formatted_price": "Rp 89ribu"
+        "formatted_price": "Rp 99ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -51948,7 +51951,7 @@
         "Unduhan berbayar",
         "Tanpa pelacakan",
         "Privat / di perangkat",
-        "App Store · Rp 89ribu"
+        "App Store · Rp 99ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/id/index.html",
@@ -51959,9 +51962,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan HoursTag di App Store →",
       "storefront_facts": {
-        "price": "89000",
+        "price": "99000",
         "currency": "IDR",
-        "formatted_price": "Rp 89ribu"
+        "formatted_price": "Rp 99ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -52165,7 +52168,7 @@
         "Anak & pembelajaran",
         "Unduhan berbayar",
         "Tanpa iklan",
-        "App Store · Rp 149ribu"
+        "App Store · Rp 179ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/id/index.html",
@@ -52176,9 +52179,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Lumi Bopomofo Pro di App Store →",
       "storefront_facts": {
-        "price": "149000",
+        "price": "179000",
         "currency": "IDR",
-        "formatted_price": "Rp 149ribu"
+        "formatted_price": "Rp 179ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -52265,7 +52268,7 @@
         "Anak & pembelajaran",
         "Unduhan berbayar",
         "Tanpa iklan",
-        "App Store · Rp 149ribu"
+        "App Store · Rp 179ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/id/index.html",
@@ -52276,9 +52279,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Lumi Letters Pro di App Store →",
       "storefront_facts": {
-        "price": "149000",
+        "price": "179000",
         "currency": "IDR",
-        "formatted_price": "Rp 149ribu"
+        "formatted_price": "Rp 179ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -52465,7 +52468,7 @@
         "Anak & pembelajaran",
         "Unduhan berbayar",
         "Tanpa iklan",
-        "App Store · Rp 99ribu"
+        "App Store · Rp 119ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/id/index.html",
@@ -52476,9 +52479,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Lumi Mission Planet Pro di App Store →",
       "storefront_facts": {
-        "price": "99000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu"
+        "formatted_price": "Rp 119ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -53071,7 +53074,7 @@
         "Foto & utilitas",
         "Unduhan berbayar",
         "Privat / di perangkat",
-        "App Store · Rp 99ribu"
+        "App Store · Rp 119ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/id/index.html",
@@ -53082,9 +53085,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Snapport di App Store →",
       "storefront_facts": {
-        "price": "99000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu"
+        "formatted_price": "Rp 119ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -53272,7 +53275,7 @@
         "Offline",
         "Tanpa akun",
         "Privat / di perangkat",
-        "App Store · Rp 99ribu"
+        "App Store · Rp 119ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/id/index.html",
@@ -53283,9 +53286,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan TripBee Pro: Trip Planner di App Store →",
       "storefront_facts": {
-        "price": "99000",
+        "price": "119000",
         "currency": "IDR",
-        "formatted_price": "Rp 99ribu"
+        "formatted_price": "Rp 119ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -53481,7 +53484,7 @@
         "Tanpa pelacakan",
         "Widget",
         "Apple Watch",
-        "App Store · Rp 149ribu"
+        "App Store · Rp 179ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/id/index.html",
@@ -53492,9 +53495,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Wordmate: Learn 44 Languages di App Store →",
       "storefront_facts": {
-        "price": "149000",
+        "price": "179000",
         "currency": "IDR",
-        "formatted_price": "Rp 149ribu"
+        "formatted_price": "Rp 179ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
@@ -53543,7 +53546,7 @@
         "Tanpa iklan",
         "Tanpa pelacakan",
         "Privat / di perangkat",
-        "App Store · Rp 89ribu"
+        "App Store · Rp 99ribu"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/zipbox.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/id/index.html",
@@ -53554,9 +53557,9 @@
       "app_store_url": "https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "app_store_cta_label": "Dapatkan Zipbox: Ekstrak RAR, ZIP, 7z di App Store",
       "storefront_facts": {
-        "price": "89000",
+        "price": "99000",
         "currency": "IDR",
-        "formatted_price": "Rp 89ribu"
+        "formatted_price": "Rp 99ribu"
       },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
@@ -56260,8 +56263,8 @@
       "app_name": "Aim990 Plus",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "best offline English listening and reading exam trainer for iPhone",
-      "decision_context": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
+      "publisher_query": "Aim990 Plus：英語の時間制限練習を8問の準備から始める",
+      "decision_context": "Aim990 Plus は、英語の基礎がある大人向けの有料ダウンロードです。8問の Warm-up → 20問・15分の Pressure Set → Mistake Replay で、時間内に解き、間違いを振り返る練習を繰り返せます。追加のアプリ内課金やサブスクリプションはありません。",
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "paid_upfront",
@@ -61497,8 +61500,8 @@
       "app_name": "HoursTag",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "best app to track where my money goes and save more",
-      "decision_context": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
+      "publisher_query": "HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기",
+      "decision_context": "HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다.",
       "category": "finance",
       "category_label": "금융 & 여행",
       "purchase_model": "paid_upfront",
@@ -115766,7 +115769,7 @@
       "priority_rank": 2,
       "priority_group": "launch_boost",
       "publisher_query": "WiFi Aid：找出网络问题·诊断 — 网络诊断与连接证据 | iOS App",
-      "decision_context": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。 • 运行检查 — 一键检查 Wi-Fi、DNS 和网络连接 • 深度检查 — 更多证据与稳定性测试 • 网站检查 — 查看是单一目标或整体网络失败 • 证据 — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • 连接似乎不稳定 — 抖动变化 • 检查记录 — 仅存本机的隐私记录 • Apple Watch — 运行检查 • Widget · iPad — 已连接 · 运行检查 免账号，无广告、分析或追踪. 仅存本机的隐私记录. App Store 一次付费买断，绝无订阅。",
+      "decision_context": "手机显示已连接，但某个网站打不开？WiFi Aid 先检查整体连接，再检查指定网站，结合 DNS、TCP、TLS、响应时间和稳定性证据，显示最可能的原因与信心程度。它是一次付费下载、首次启动即开放完整诊断的 App，不是加速器或路由器控制器。 先运行整体连接检查，确认是普遍断网还是只有一个目标失败；再使用网站检查，查看指定地址的 DNS、TCP、TLS、HTTP、响应时间与其他独立证据。需要更多样本时使用深度检查，不凭一次超时就下定论。 结果说明最可能的原因及信心程度，检查记录只保存在本机。iPhone、iPad、Widget 和 Apple Watch 的既有功能保留；购买原版后不需要另外解锁、订阅或恢复购买。 WiFi Aid 不读取 iOS 无法提供的 RSSI、附近 Wi-Fi 频道拥堵或其他设备的带宽，不改变路由器设置，也不是 VPN。网络探测需要可用连接，无法完成的检查不能当成确定诊断；不保证修复或提高网速。 本页另有家庭带宽需求表，适合估算多台设备同时使用时的套餐容量。它是免费的网站工具，不是故障诊断结果，也不表示 WiFi Aid 可以免费下载。",
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "paid_upfront",
@@ -118650,7 +118653,7 @@
         "免費開始 · 一次性解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/zh-Hant/index.html",
@@ -118665,7 +118668,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -118901,8 +118904,8 @@
       "app_name": "HoursTag",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "best app to track where my money goes and save more",
-      "decision_context": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
+      "publisher_query": "HoursTag：把花費換成工時，月底看懂自己的支出紀錄",
+      "decision_context": "HoursTag 是付費下載的原版 App：設定時薪或月薪，把花費換成工作時間，再保存紀錄、標記必要／想要／衝動、查看分類洞察與目標進度。買到的不只是一次除法，而是之後還能回頭看的花費歷史。",
       "category": "finance",
       "category_label": "理財與旅行",
       "purchase_model": "paid_upfront",
@@ -119203,7 +119206,7 @@
         "免費開始 · 一次性解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 4.5/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/zh-Hant/index.html",
@@ -119217,8 +119220,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "rating_value": 4.5,
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -119339,8 +119342,8 @@
       "app_name": "Lumi Math Pro",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "適合學齡前與低年級的最佳完整數學學習 App",
-      "decision_context": "完整早期數學 App 應讓數數、數感與基礎運算成為連貫冒險，而非分散練習。所以才有了 Lumi Math Pro。",
+      "publisher_query": "Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單",
+      "decision_context": "Lumi Math Pro 一次付費包含完整數學內容、弱項練習與進度；家長還能在家長專區產生20題附解答的 PDF／列印學習單及一頁能力報告。不是只買加法題，也不需要每次另購學習單。",
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "paid_upfront",
@@ -119696,7 +119699,8 @@
         "隱私優先／裝置端",
         "主畫面小工具",
         "Apple Watch",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/moneytag.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html",
@@ -119709,7 +119713,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -120475,7 +120481,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "適合通勤族搭配 Apple Watch 的最佳單字學習 App",
-      "decision_context": "通勤族要的是零碎時間就能背幾個字，不必上完整課程、不必註冊帳號，也不必每次都得把手機拿出來複習。Wordmate：學習 44 種語言 就是從這個問題開始做的。",
+      "decision_context": "Wordmate 的互動主畫面 Widget 可直接查看下一個單字、切換與收藏；通勤時先存下想複習的字，稍後再集中學習。一次付費包含44個學習語言、全部等級、例句、進度、Widget 與 Apple Watch，沒有額外升級。",
       "category": "education",
       "category_label": "學習",
       "purchase_model": "paid_upfront",

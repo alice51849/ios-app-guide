@@ -2,7 +2,7 @@
 title: "best resume builder app for career changers 2026"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/en-US/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ When you're switching fields, the resume problem is different: your experience i
 - Productivity
 - Free to start · one-time unlock
 - App Store · Free
+- ★ 5.0/5 · 1
 
 [Get CV Desk on the App Store →](https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
 

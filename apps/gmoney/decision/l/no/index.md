@@ -2,7 +2,7 @@
 title: "beste reisebudsjettsporerapp uten abonnement for iPhone"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/no/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

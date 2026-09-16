@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-12",
-  "content_digest": "164c0cf34b9a959c8cc5fa4e687935a0a2b0d41096daa88e8689eba97ac9758a",
+  "date_modified": "2026-09-16",
+  "content_digest": "90759b7397c3fa1c27371bc7655d27587d2e231f83cb1ff2ec4a10f52559aaf2",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1355,8 +1355,7 @@
         "整理",
         "责任",
         "孩子",
-        "놀이",
-        "奖励 贴纸"
+        "놀이"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1509,10 +1508,7 @@
         "비",
         "자외선",
         "육아",
-        "服装",
-        "儿童 天气",
-        "亲子 天气",
-        "宝宝 天气"
+        "服装"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1727,6 +1723,7 @@
         "出租账本",
         "摊位账本",
         "班费管理",
+        "项目支出",
         "自由职业 记账",
         "副业 记账"
       ],

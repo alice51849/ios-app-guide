@@ -2,7 +2,7 @@
 title: "最佳無需帳號的生理期追蹤應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/zh-Hant/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次性解鎖
 - 隱私優先／裝置端
 - App Store · 免費
-- ★ 5.0/5 · 1
+- ★ 5.0/5 · 2
 
 [在 App Store 取得 Cyca →](https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 

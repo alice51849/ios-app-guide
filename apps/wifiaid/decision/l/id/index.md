@@ -2,7 +2,7 @@
 title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 
 - Foto & utilitas
 - Unduhan berbayar
-- App Store · Rp 99ribu
+- App Store · Rp 119ribu
 
 [Dapatkan WiFi Aid di App Store →](https://apps.apple.com/id/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
 

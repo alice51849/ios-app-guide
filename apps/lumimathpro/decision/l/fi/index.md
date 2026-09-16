@@ -2,7 +2,7 @@
 title: "paras kattava matikkasovellus varhaiskasvatukseen ja alakoulun alkuun"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/fi/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

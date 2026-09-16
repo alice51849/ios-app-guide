@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-US",
-  "dateModified": "2026-09-12",
-  "content_digest": "d497604b89b5cf4d293086b8e4dc5b484bc491f40f6befcc67358b84128db2a6",
-  "generation_digest": "0a993581859253aa8854c78e848493bc9d336894d095ab4a2a2496d85a2ab3c5",
+  "dateModified": "2026-09-16",
+  "content_digest": "c5a023b2c5fc60589faeb7a5df5ae50140411a49c1f5c332f87e91f794b61500",
+  "generation_digest": "d1b10553ff9176a8c819235cd3a87f8e3655199dbb675ec990f5eab9c712f60f",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -472,7 +472,8 @@
       "badge_labels": [
         "Productivity",
         "Free to start · one-time unlock",
-        "App Store · Free"
+        "App Store · Free",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/en-US/index.html",
@@ -485,7 +486,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "USD",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -1464,7 +1467,7 @@
         "Free to start · one-time unlock",
         "No ads",
         "App Store · Free",
-        "★ 4.4/5 · 7"
+        "★ 4.4/5 · 10"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -1479,7 +1482,7 @@
         "currency": "USD",
         "formatted_price": "Free",
         "rating_value": 4.4,
-        "rating_count": 7
+        "rating_count": 10
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -1903,8 +1906,8 @@
       "app_name": "Snapport",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "best passport photo app for babies and toddlers at home",
-      "decision_context": "For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open.",
+      "publisher_query": "Snapport for a baby's photo: prepare the crop and print sheet, then check the rules",
+      "decision_context": "Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. paper-photo application, choose a 2×2-inch crop and arrange copies on a 4×6 sheet with cut guides. A correctly sized file does not certify that a passport authority will accept the photo.",
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "paid_upfront",

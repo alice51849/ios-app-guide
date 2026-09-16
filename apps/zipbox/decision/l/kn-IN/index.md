@@ -2,7 +2,7 @@
 title: "Zipbox: ZIP, RAR, 7z ತೆರೆಯಿರಿ — ಜಾಹೀರಾತಿಲ್ಲ, ಮೊದಲೇ ನೋಡಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/kn-IN/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

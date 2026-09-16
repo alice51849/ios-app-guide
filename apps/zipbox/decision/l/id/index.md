@@ -2,7 +2,7 @@
 title: "Zipbox: Ekstrak RAR, ZIP, 7z — Buka arsip tanpa iklan | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Zipbox adalah app berbayar di App Store. Sekali beli, semua fitur tersedia; tanp
 - Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
-- App Store · Rp 89ribu
+- App Store · Rp 99ribu
 
 [Dapatkan Zipbox: Ekstrak RAR, ZIP, 7z di App Store](https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-12",
-  "content_digest": "164c0cf34b9a959c8cc5fa4e687935a0a2b0d41096daa88e8689eba97ac9758a",
+  "date_modified": "2026-09-16",
+  "content_digest": "90759b7397c3fa1c27371bc7655d27587d2e231f83cb1ff2ec4a10f52559aaf2",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -132,7 +132,8 @@
         "練習",
         "學習計劃",
         "成績追蹤",
-        "多益"
+        "多益",
+        "英文檢定"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -340,8 +341,7 @@
         "工讀",
         "求才",
         "履歷封面",
-        "自傳範本",
-        "ats 履歷"
+        "自傳範本"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -411,7 +411,8 @@
         "好朋友",
         "生理紀錄",
         "白帶",
-        "經期 追蹤"
+        "經期 追蹤",
+        "月經 app"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -432,7 +433,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1,
+        "rating_count": 2,
         "storefront_url": "https://apps.apple.com/tw/app/id6782251621"
       }
     },
@@ -591,8 +592,7 @@
         "旅費",
         "海外消費",
         "港幣",
-        "理財app",
-        "出國預算"
+        "理財app"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -646,7 +646,9 @@
         "生活記帳",
         "出國花費",
         "離線記帳",
-        "自訂匯率"
+        "自訂匯率",
+        "出國預算",
+        "花費追蹤"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -966,7 +968,9 @@
         "教育遊戲",
         "寶寶",
         "益智",
-        "語言啟蒙"
+        "語言啟蒙",
+        "幼兒 注音",
+        "注音 學習"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1067,8 +1071,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1,
+        "rating_value": 4.5,
+        "rating_count": 2,
         "storefront_url": "https://apps.apple.com/tw/app/id6778748533"
       }
     },
@@ -1374,7 +1378,10 @@
         "上學",
         "整理",
         "責任感",
-        "星星"
+        "星星",
+        "獎勵 貼紙",
+        "睡前 習慣",
+        "兒童 習慣"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1698,7 +1705,8 @@
         "電話",
         "車輛保養",
         "家電維護",
-        "重複事項"
+        "重複事項",
+        "上次 記錄"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1768,6 +1776,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6801956402"
       }
     },
@@ -2000,7 +2010,9 @@
         "捷徑",
         "美食",
         "購物",
-        "網頁"
+        "網頁",
+        "收藏 連結",
+        "連結 整理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2612,6 +2624,7 @@
         "IPv6",
         "DNS",
         "Ping",
+        "wifi 診斷",
         "網路 檢查"
       ],
       "purchase_model": "paid_upfront",
@@ -2665,7 +2678,8 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "wifi 診斷"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

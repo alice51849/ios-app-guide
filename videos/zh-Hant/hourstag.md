@@ -1,8 +1,8 @@
 ---
-title: "best app to track where my money goes and save more"
+title: "HoursTag：把花費換成工時，月底看懂自己的支出紀錄"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/hourstag.html"
-modified: "2026-09-04"
+modified: "2026-09-16"
 video_url: "https://files.catbox.moe/wp5abu.mp4"
 duration: "PT16S"
 app_store_id: "6754218117"
@@ -10,9 +10,9 @@ verified_live: true
 publisher: "Lumi Studio"
 ---
 
-# best app to track where my money goes and save more
+# HoursTag：把花費換成工時，月底看懂自己的支出紀錄
 
-If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.
+HoursTag 是付費下載的原版 App：設定時薪或月薪，把花費換成工作時間，再保存紀錄、標記必要／想要／衝動、查看分類洞察與目標進度。買到的不只是一次除法，而是之後還能回頭看的花費歷史。
 
 [觀看影片](https://files.catbox.moe/wp5abu.mp4)
 

@@ -2,7 +2,7 @@
 title: "aplikasi pelacak anggaran perjalanan terbaik tanpa langganan untuk iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Saat bepergian Anda butuh pelacak anggaran yang bekerja offline di negara tanpa 
 - Unduhan berbayar
 - Offline
 - Tanpa akun
-- App Store · Rp 89ribu
+- App Store · Rp 99ribu
 
 [Dapatkan G+Money di App Store →](https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)
 

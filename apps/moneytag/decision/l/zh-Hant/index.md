@@ -2,7 +2,7 @@
 title: "MoneyTag: 收入與支出 — 專案 · 標籤 · 報表 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,6 +23,7 @@ publisher: "Lumi Studio"
 - 主畫面小工具
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 MoneyTag: 收入與支出](https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 

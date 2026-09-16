@@ -2,7 +2,7 @@
 title: "広告なしの子供向け教育ゲームアプリiPhone版おすすめ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ja/lumiletters.html"
-modified: "2026-09-04"
+modified: "2026-09-16"
 video_url: "https://files.catbox.moe/7kka4d.mp4"
 duration: "PT16S"
 app_store_id: "6778748533"

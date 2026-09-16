@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-09-12",
-  "content_digest": "d497604b89b5cf4d293086b8e4dc5b484bc491f40f6befcc67358b84128db2a6",
-  "generation_digest": "0a993581859253aa8854c78e848493bc9d336894d095ab4a2a2496d85a2ab3c5",
+  "dateModified": "2026-09-16",
+  "content_digest": "c5a023b2c5fc60589faeb7a5df5ae50140411a49c1f5c332f87e91f794b61500",
+  "generation_digest": "d1b10553ff9176a8c819235cd3a87f8e3655199dbb675ec990f5eab9c712f60f",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -529,7 +529,7 @@
         "免費開始 · 一次性解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/zh-Hant/index.html",
@@ -544,7 +544,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -780,8 +780,8 @@
       "app_name": "HoursTag",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "best app to track where my money goes and save more",
-      "decision_context": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
+      "publisher_query": "HoursTag：把花費換成工時，月底看懂自己的支出紀錄",
+      "decision_context": "HoursTag 是付費下載的原版 App：設定時薪或月薪，把花費換成工作時間，再保存紀錄、標記必要／想要／衝動、查看分類洞察與目標進度。買到的不只是一次除法，而是之後還能回頭看的花費歷史。",
       "category": "finance",
       "category_label": "理財與旅行",
       "purchase_model": "paid_upfront",
@@ -1082,7 +1082,7 @@
         "免費開始 · 一次性解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 4.5/5 · 2"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/zh-Hant/index.html",
@@ -1096,8 +1096,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "rating_value": 4.5,
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -1218,8 +1218,8 @@
       "app_name": "Lumi Math Pro",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "適合學齡前與低年級的最佳完整數學學習 App",
-      "decision_context": "完整早期數學 App 應讓數數、數感與基礎運算成為連貫冒險，而非分散練習。所以才有了 Lumi Math Pro。",
+      "publisher_query": "Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單",
+      "decision_context": "Lumi Math Pro 一次付費包含完整數學內容、弱項練習與進度；家長還能在家長專區產生20題附解答的 PDF／列印學習單及一頁能力報告。不是只買加法題，也不需要每次另購學習單。",
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "paid_upfront",
@@ -1575,7 +1575,8 @@
         "隱私優先／裝置端",
         "主畫面小工具",
         "Apple Watch",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/moneytag.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html",
@@ -1588,7 +1589,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -2354,7 +2357,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "適合通勤族搭配 Apple Watch 的最佳單字學習 App",
-      "decision_context": "通勤族要的是零碎時間就能背幾個字，不必上完整課程、不必註冊帳號，也不必每次都得把手機拿出來複習。Wordmate：學習 44 種語言 就是從這個問題開始做的。",
+      "decision_context": "Wordmate 的互動主畫面 Widget 可直接查看下一個單字、切換與收藏；通勤時先存下想複習的字，稍後再集中學習。一次付費包含44個學習語言、全部等級、例句、進度、Widget 與 Apple Watch，沒有額外升級。",
       "category": "education",
       "category_label": "學習",
       "purchase_model": "paid_upfront",

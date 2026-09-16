@@ -2,7 +2,7 @@
 title: "aplikasi perencana rencana perjalanan terbaik untuk iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Aplikasi rencana perjalanan yang baik mengubah perjalanan yang berantakan menjad
 - Offline
 - Tanpa akun
 - Privat / di perangkat
-- App Store · Rp 99ribu
+- App Store · Rp 119ribu
 
 [Dapatkan TripBee Pro: Trip Planner di App Store →](https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 

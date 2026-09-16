@@ -234,7 +234,7 @@
       "record_count": 47
     },
     "bn-BD": {
-      "date_modified": "2026-09-12T04:40:18Z",
+      "date_modified": "2026-09-16T16:16:13Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -244,7 +244,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "45e168087fa9cb7b65b6361ce9ace751f5909d62548005773cad471ec398a390",
+          "sha256": "a85fe04edec7f98ef2980efca76abdbf5013154b8e5de3940f58000b40cc8406",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -254,7 +254,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "94aa8ca917554735816ee6490668e93122cafc172ee929efda13d3660b662ba3",
+          "sha256": "fca09542217b1611029499befcd5e087b52a45fca3bb113ea7c256f53abd3f02",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -265,7 +265,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "a83dae2da3181443dfe03ca530d864861cb96cd68ff160f9a4cfe082634b2b09",
+          "sha256": "116e8ec7b52ff83df9f741e2d0af1a7f547ed9405625f76fe96cb3801750aa02",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2194,7 +2194,7 @@
       "record_count": 47
     }
   },
-  "generation_digest": "1a70e817a5a05e7fbd07a5aa4549da9b71ef880ccba20a68c047e8944cd0e842",
+  "generation_digest": "098bfc62364d4983402641e1808157e6a226955ed854a63bf9a835aff80cf6be",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2204,19 +2204,19 @@
   "record_count": 2350,
   "schema": "lumi.owned-app-feeds/v2",
   "site": "https://open.cait518.cc/ios-app-guide",
-  "sitemap_sha256": "5b276d90b10f9e5b392a155d6f748320a0a0362f7b50c1cd88e9fa6ec7fc4fd7",
+  "sitemap_sha256": "b6d27f3dc366675a0032e6dd9011a813ca127db2b16d897d36ec7196cb6e8ada",
   "source": {
-    "catalog_content_digest": "164c0cf34b9a959c8cc5fa4e687935a0a2b0d41096daa88e8689eba97ac9758a",
+    "catalog_content_digest": "90759b7397c3fa1c27371bc7655d27587d2e231f83cb1ff2ec4a10f52559aaf2",
     "roster_digest": "a8b6e20d55d2a8b89f5ddc98ffa760b72de8d917924dc43e8270cd16b905bd03",
     "source_files": {
       "../social/videogen/registry.py": "bd5d5863fe0798a4dc8ce10b050059c0604acaa0d9e98ccc5c25d84979ae0a23",
       "app_store_storefronts.py": "218e4c15034023bdc0c1481fed4d74d5f88e51380b761efca955e8a8810026d0",
-      "build_pages_i18n.py": "caf27f363c48f831f7e4297faeae9f76638543bf590e6f306acd8ab97f57a9eb",
-      "data/paid_upfront_surface_repairs.json": "336a3c17baa842013484287ec31b1fca69345aca6d8a7761222f852befba3c84",
+      "build_pages_i18n.py": "689b7fe8140aca5369f06b27b0535b4d9be2aca916b1c1387e769e262eb25108",
+      "data/paid_upfront_surface_repairs.json": "b1fb9e766bf5456de9cec3524a6b3f352fda9f3b104aac15b612986113978559",
       "deployment_generation.py": "37486117e9e159750853d308d84fb3059d2c195e42d159e422a5d22fc700a169",
       "external_app_locales.py": "931182b43719e712ca3573f9b2ce22fb60cce34acc23909c5b63660624737f35",
-      "gen_publisher_disclosures.py": "a004b645115dec91c4e8ec79b55f25d2919b3f3cfbe2b65dd3ecdad69b6e8393",
-      "gen_sitemap_lastmod.py": "814c3b9f06a398f6441542e3116da83a3a7b2ac1667bf7a899ffabd8352e669d",
+      "gen_publisher_disclosures.py": "449f7328a32562fbb7d4ca5e3886b4ab1c7b0b2820d2b8a802c91a4f12aa5727",
+      "gen_sitemap_lastmod.py": "281d5086ece6367443b96e0fd2a8ce21883c45af5e0b73ca9b95e0c58894fc91",
       "indexnow_submit.py": "8450a4b40b7d420c99dcb51ade0e6643c7bd867d550bdaf72087a6a4d9dec258",
       "live_app_manifest.json": "092c2f0d636438f44b25fe1fca44619fd5640e518430f07ba3ec6a8aa11403e6",
       "locale_storefronts.json": "1b9d27a304b0b2031fbdbb26e816e0bc416d0a8df8d9cf5a1593d72fdaaab5de",
@@ -2235,7 +2235,7 @@
       "owned_feed_reconciliation.py": "305a95c5ccb92cd179d9f4730a6e576220c13b92e0b51ef3780b312a425e24e6",
       "owned_feed_release.py": "81807f88f4f57da3b7e254e4d49d225ef07fec411361f31516540edee0428597",
       "paid_upfront_surfaces.py": "c18e9324884b5696f1a4de9dcf85d94f4f7ea1d166a6379f5bf291d5c9c6bf10",
-      "portfolio_app_catalog_api.py": "eebfe1973da82aed85f98d2173716d791bc5745c3d211ff54ac567f8053087fd",
+      "portfolio_app_catalog_api.py": "55c44ed4027706d0b4a3ba8c9196136f0a978504002572b42795c54fa13627f5",
       "portfolio_app_finder_i18n.json": "22dea261ee2efb7b964adfb0d1a84942bc1ca5408039cce791a22b71f6eb99d0",
       "publisher_intent_catalog_i18n.json": "b7546d5a1762155a3c233845cd716b3d6b26aa47d9952743ba717803bca30049",
       "rsscloud_config.py": "dbbbe7734797f150e3f428b102cf59e78edb12f151d9def9cb53c6c18cc8b98b",

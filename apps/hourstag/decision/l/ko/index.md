@@ -1,17 +1,17 @@
 ---
-title: "best app to track where my money goes and save more"
+title: "HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ko/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# best app to track where my money goes and save more
+# HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기
 
-If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.
+HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다.
 
 - 금융 & 여행
 - 유료 다운로드

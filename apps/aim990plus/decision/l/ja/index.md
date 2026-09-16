@@ -1,17 +1,17 @@
 ---
-title: "best offline English listening and reading exam trainer for iPhone"
+title: "Aim990 Plus：英語の時間制限練習を8問の準備から始める"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ja/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# best offline English listening and reading exam trainer for iPhone
+# Aim990 Plus：英語の時間制限練習を8問の準備から始める
 
-Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.
+Aim990 Plus は、英語の基礎がある大人向けの有料ダウンロードです。8問の Warm-up → 20問・15分の Pressure Set → Mistake Replay で、時間内に解き、間違いを振り返る練習を繰り返せます。追加のアプリ内課金やサブスクリプションはありません。
 
 - 子ども・学習
 - 有料ダウンロード

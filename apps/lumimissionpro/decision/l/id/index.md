@@ -2,7 +2,7 @@
 title: "aplikasi rutinitas pagi dan tidur lengkap terbaik untuk anak"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/id/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Sikat gigi dan waktu tidur sering gagal di saat yang sama setiap malam: anak lel
 - Anak & pembelajaran
 - Unduhan berbayar
 - Tanpa iklan
-- App Store · Rp 99ribu
+- App Store · Rp 119ribu
 
 [Dapatkan Lumi Mission Planet Pro di App Store →](https://apps.apple.com/id/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)
 

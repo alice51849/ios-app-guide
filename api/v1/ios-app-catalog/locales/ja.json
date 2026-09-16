@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-12",
-  "content_digest": "164c0cf34b9a959c8cc5fa4e687935a0a2b0d41096daa88e8689eba97ac9758a",
+  "date_modified": "2026-09-16",
+  "content_digest": "90759b7397c3fa1c27371bc7655d27587d2e231f83cb1ff2ec4a10f52559aaf2",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -850,7 +850,8 @@
         "台湾",
         "書き順",
         "読み方",
-        "注音符号"
+        "注音符号",
+        "注音 学習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1415,7 +1416,10 @@
         "寒さ対策",
         "梅雨",
         "洗濯指数",
-        "お出かけ日和"
+        "お出かけ日和",
+        "家族 天気",
+        "こども 天気",
+        "子供 天気 アプリ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1468,7 +1472,9 @@
         "ローカル処理",
         "一括",
         "PDF",
-        "OCR"
+        "OCR",
+        "個人情報 マスク",
+        "pdf 黒塗り"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2227,7 +2233,8 @@
         "チケット",
         "リマインダー",
         "ホテル",
-        "航空券"
+        "航空券",
+        "旅程"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2341,8 +2348,7 @@
         "くっきり",
         "高解像度",
         "ぼやけ修正",
-        "古い写真",
-        "ぼかし 除去"
+        "古い写真"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2576,7 +2582,9 @@
         "分割",
         "文字化け",
         "一括",
-        "7zip"
+        "7zip",
+        "rarファイルを開く",
+        "7zを解凍"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

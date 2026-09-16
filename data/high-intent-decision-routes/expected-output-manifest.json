@@ -5,7 +5,7 @@
   "creative_count": 47,
   "current_inventory": {
     "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
-    "copy_sha256": "40bcac9ea3a85d6c175df08e5c1043339a015d929c7c223e5b86148479467bb1",
+    "copy_sha256": "5439fa3d547559a9e04824b6e65292c9ffaf5c476a3a1e5f9d7c044686f11b09",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 47
@@ -24,7 +24,7 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "77126023226be1c27b267af3e8aec09cbb2396a198663e1113ea176ae2c8c950",
+      "generated_sha256": "c59beec225686e4334ca9fb4f6e9886b0aaadd4489cdf116735689a7a2217620",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
@@ -34,7 +34,7 @@
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
     {
-      "generated_sha256": "a3945dc223a057cbe45e9a9314735a74efa1a37940fabc746201e677fd549d4a",
+      "generated_sha256": "326c069f6933a3d4f92517563595cb89972075842bf6f92148df9fcd00241c27",
       "kind": "route_html",
       "relative_path": "de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
@@ -239,7 +239,7 @@
       "relative_path": "en-US/decide/tripbeelite/plan-one-upcoming-trip-without-clutter.html"
     },
     {
-      "generated_sha256": "a361f63f3794cf48e174f50db7a74274a781a7423673981b5cef1da7d877672e",
+      "generated_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html"
     },
@@ -274,17 +274,17 @@
       "relative_path": "en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
     },
     {
-      "generated_sha256": "afe54f095614473ce503a2fc8ef44d284b78ed7d41f0d3e8598b57f29e9a67c0",
+      "generated_sha256": "d45b88e1e45114b2f804cf092f5bffc1a4fd61446fe81d59d1e1131f9190ab7e",
       "kind": "route_html",
       "relative_path": "fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
     },
     {
-      "generated_sha256": "25dfc3f70701e79ce10dce97539685782fe76c0dcd3bdb1a08b79b47d2fce8b8",
+      "generated_sha256": "5b9c7a57768b16954be9d22d594c58bcf1915a4098cd3ac137848f2491c93403",
       "kind": "route_html",
       "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html"
     },
     {
-      "generated_sha256": "ad7e5e0f31f829c1a3edd91f25ef633019f5ea36abf2e23734d70eaa1e52c763",
+      "generated_sha256": "1b57e010cb7511b55e0dfc4c58dda910360236db250479584e611325985db883",
       "kind": "route_html",
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
@@ -299,7 +299,7 @@
       "relative_path": "zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
     {
-      "generated_sha256": "a49482234e354fa298e856e2d25e2df9e451994d747b442879b6419dbff18ec2",
+      "generated_sha256": "5cebc9ccb1aa3ccd4a79ff1e1bba51f8579db40fd603312374e1d7e13c925f4a",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
     },
@@ -314,12 +314,12 @@
       "relative_path": "zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
-      "generated_sha256": "22dbf03d78f47be11e2a1cfb3198f3d44d3f361433817224eafe4c4bd5aebc74",
+      "generated_sha256": "66627da64d129d66d2f5159c69ae54f3e60bc290df570fab8d80b7ffe3edc501",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
     {
-      "generated_sha256": "c145afd5e5842c7bd1bb841603921ed3cf1a4a9f0854f6bf086284a6c662c414",
+      "generated_sha256": "c1fbec8a6ed89d151d2d7cbd1ec0b1ccb6c4efbf7f1a986c8655ca8f23390588",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
@@ -337,14 +337,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
-    "copy_sha256": "40bcac9ea3a85d6c175df08e5c1043339a015d929c7c223e5b86148479467bb1",
+    "copy_sha256": "5439fa3d547559a9e04824b6e65292c9ffaf5c476a3a1e5f9d7c044686f11b09",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 47,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "d6ac9ef5feafca70a662ef43005f338c363f45a22bb9ddb870f2c540b73a9c00",
+  "manifest_digest": "286d6384be1950120d05e8f414baa77f9cafaa923ba4563261c795ae2af411f6",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "218aa7721786c999b902b350f5c130f1bcb451145e1d15233927cffbf4a33337",
+  "release_contract_digest": "592f079b9973ed04ecebec5dd8058522f29bdf6d9e62ee63ee8b40bbfa04daa8",
   "release_state": "exact",
   "route_count": 59,
   "routes": [
@@ -358,7 +358,7 @@
       "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
       "intent_type": "problem_aware",
       "locale": "de-DE",
-      "output_sha256": "a3945dc223a057cbe45e9a9314735a74efa1a37940fabc746201e677fd549d4a",
+      "output_sha256": "326c069f6933a3d4f92517563595cb89972075842bf6f92148df9fcd00241c27",
       "record_digest": "6685e7a6d5c6ce99432cd78662cd6807853dfce5f34bab4bb409555bf2aa98db",
       "relative_path": "de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html",
       "route_id": "de-DE:mochidonestamp:remember-when-household-task-was-done",
@@ -1055,7 +1055,7 @@
       "creative_id": "tripplanet:turn-family-travel-waiting-into-observation:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "a361f63f3794cf48e174f50db7a74274a781a7423673981b5cef1da7d877672e",
+      "output_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
       "record_digest": "b8415ebc9cc40678827d135915917adc6c2bd323a7062e0ddd5922422e5fdd2e",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html",
       "route_id": "en-US:tripplanet:turn-family-travel-waiting-into-observation",
@@ -1174,7 +1174,7 @@
       "creative_id": "aim990:toeic-part-five-time-pressure:problem_aware",
       "intent_type": "problem_aware",
       "locale": "fr-FR",
-      "output_sha256": "afe54f095614473ce503a2fc8ef44d284b78ed7d41f0d3e8598b57f29e9a67c0",
+      "output_sha256": "d45b88e1e45114b2f804cf092f5bffc1a4fd61446fe81d59d1e1131f9190ab7e",
       "record_digest": "0d772a0b7e4517a3cadb75dad962f208b1b48c35301136bc3748ad8813c16fce",
       "relative_path": "fr-FR/decide/aim990/toeic-part-five-time-pressure.html",
       "route_id": "fr-FR:aim990:toeic-part-five-time-pressure",
@@ -1191,7 +1191,7 @@
       "creative_id": "lumiweather:decide-what-child-wears-outside:problem_aware",
       "intent_type": "problem_aware",
       "locale": "ja",
-      "output_sha256": "25dfc3f70701e79ce10dce97539685782fe76c0dcd3bdb1a08b79b47d2fce8b8",
+      "output_sha256": "5b9c7a57768b16954be9d22d594c58bcf1915a4098cd3ac137848f2491c93403",
       "record_digest": "51ad47fb75143bab7ede4745e51fc4bf446be22d8ca6d46a6cf0551b21a42082",
       "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html",
       "route_id": "ja:lumiweather:decide-what-child-wears-outside",
@@ -1208,7 +1208,7 @@
       "creative_id": "unblurry:improve-soft-family-photo-realistically:problem_aware",
       "intent_type": "problem_aware",
       "locale": "ja",
-      "output_sha256": "ad7e5e0f31f829c1a3edd91f25ef633019f5ea36abf2e23734d70eaa1e52c763",
+      "output_sha256": "1b57e010cb7511b55e0dfc4c58dda910360236db250479584e611325985db883",
       "record_digest": "8e61c6332b9a70765e82c5d0328264f188bebbda98a6c1f34cb5eb12f2a64eb3",
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html",
       "route_id": "ja:unblurry:improve-soft-family-photo-realistically",
@@ -1242,7 +1242,7 @@
       "creative_id": "cyca:private-cycle-patterns-without-account:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "zh-Hant",
-      "output_sha256": "a49482234e354fa298e856e2d25e2df9e451994d747b442879b6419dbff18ec2",
+      "output_sha256": "5cebc9ccb1aa3ccd4a79ff1e1bba51f8579db40fd603312374e1d7e13c925f4a",
       "record_digest": "f6e54707cf2a04709bdf7aefea184e05e281c37f5899e31a78a6b09bc46e7e5c",
       "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html",
       "route_id": "zh-Hant:cyca:private-cycle-patterns-without-account",
@@ -1293,7 +1293,7 @@
       "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "22dbf03d78f47be11e2a1cfb3198f3d44d3f361433817224eafe4c4bd5aebc74",
+      "output_sha256": "66627da64d129d66d2f5159c69ae54f3e60bc290df570fab8d80b7ffe3edc501",
       "record_digest": "076fdd6f2fdd671ccfa23a1616ed5aca5b01921f084d23f5fa1cf7a7afd6ae34",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html",
       "route_id": "zh-Hant:mochi:cozy-checklist-without-project-overhead",
@@ -1310,7 +1310,7 @@
       "creative_id": "mochidonestamp:remember-when-household-task-was-done:problem_aware",
       "intent_type": "problem_aware",
       "locale": "zh-Hant",
-      "output_sha256": "c145afd5e5842c7bd1bb841603921ed3cf1a4a9f0854f6bf086284a6c662c414",
+      "output_sha256": "c1fbec8a6ed89d151d2d7cbd1ec0b1ccb6c4efbf7f1a986c8655ca8f23390588",
       "record_digest": "7d2be2b49d61cb753c3b3961081b06262b40d023c71fd985a7ffc406445d8ea3",
       "relative_path": "zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html",
       "route_id": "zh-Hant:mochidonestamp:remember-when-household-task-was-done",
@@ -1354,5 +1354,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "12ceac24b69d5424ab50d37f202b39bf176b113c8766088969d5657762187bfb"
+  "source_contract_digest": "194a20de7e87a93e3a1775a7d48b37b9753091056ac2d91ccb775f8a62eaf3b3"
 }

@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-09-12",
+  "dateModified": "2026-09-16",
   "numberOfItems": 47,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2809,7 +2809,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid：找出网络问题·诊断",
-        "description": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。",
+        "description": "手机显示已连接，但某个网站打不开？WiFi Aid 先检查整体连接，再检查指定网站，结合 DNS、TCP、TLS、响应时间和稳定性证据，显示最可能的原因与信心程度。它是一次付费下载、首次启动即开放完整诊断的 App，不是加速器或路由器控制器。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2839,7 +2839,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "zh-Hans",
-          "description": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。",
+          "description": "手机显示已连接，但某个网站打不开？WiFi Aid 先检查整体连接，再检查指定网站，结合 DNS、TCP、TLS、响应时间和稳定性证据，显示最可能的原因与信心程度。它是一次付费下载、首次启动即开放完整诊断的 App，不是加速器或路由器控制器。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wifiaid"
           },

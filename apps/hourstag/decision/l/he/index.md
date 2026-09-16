@@ -2,7 +2,7 @@
 title: "HoursTag: שעות לקנייה — תקציב, חיסכון והוצאות | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/he/index.html"
-modified: "2026-09-11"
+modified: "2026-09-16"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - ללא מעקב
 - פרטי / במכשיר
-- App Store · ₪17.90
+- App Store · ₪14.90
 
 [הורידו את HoursTag: שעות לקנייה מה-App Store](https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
 

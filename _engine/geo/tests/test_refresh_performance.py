@@ -225,17 +225,41 @@ class RefreshPerformanceTests(unittest.TestCase):
             gen_app_store_share_ctas.BLOCK_RE.search(combined_answer)
         )
 
-    def test_workflow_uses_shared_conversion_inventory_three_times(self):
+    def test_workflow_repairs_conversion_inventory_after_remote_merges(self):
         workflow = guide_workflow()
-        sequence = (
-            "          python3 cleanup_localized_assets.py --cached-live\n"
-            "          python3 gen_app_store_conversion_surfaces.py"
-        )
-        self.assertEqual(3, workflow.count(sequence))
         self.assertEqual(
-            3,
+            5,
+            workflow.count(
+                "python3 cleanup_localized_assets.py --cached-live"
+            ),
+        )
+        self.assertEqual(
+            5,
             workflow.count("gen_app_store_conversion_surfaces.py"),
         )
+        for phase in ("reconcile_english_phase", "reconcile_localized_phase"):
+            segment = workflow.split(f"{phase}() {{", 1)[1].split(
+                "remote_first_publish",
+                1,
+            )[0]
+            cleanup = segment.index(
+                "python3 cleanup_localized_assets.py --cached-live"
+            )
+            conversion = segment.index(
+                "python3 gen_app_store_conversion_surfaces.py",
+                cleanup,
+            )
+            attribution = segment.index(
+                "python3 gen_store_attribution.py",
+                conversion,
+            )
+            tests = segment.index(
+                "python3 _engine/geo/parallel_unittest.py --jobs 3",
+                attribution,
+            )
+            self.assertLess(cleanup, conversion)
+            self.assertLess(conversion, attribution)
+            self.assertLess(attribution, tests)
         for legacy_cli in (
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",

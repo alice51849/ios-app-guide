@@ -407,6 +407,8 @@ jobs:
                 --materialize-current-inventory
               python3 close_sitemap_graph.py
               python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+              python3 cleanup_localized_assets.py --cached-live
+              python3 gen_app_store_conversion_surfaces.py
               python3 gen_store_attribution.py
               python3 hero_tasks.py --today "$GEO_BUILD_DATE"
               python3 gen_feed.py
@@ -511,12 +513,6 @@ jobs:
           # final attribution pass.
           python3 zhuyin_resourcesync.py
           python3 gen_app_decision_cards.py
-          # Full-tree cleanup 3/3 runs after every localized body generator.
-          python3 cleanup_localized_assets.py --cached-live
-          python3 gen_app_store_conversion_surfaces.py
-          # Must stay after every generator that rewrites page bodies: those
-          # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
-          python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
@@ -543,6 +539,11 @@ jobs:
             --materialize-current-inventory
           python3 close_sitemap_graph.py
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+          # Full-tree cleanup 3/3 runs after every localized body generator.
+          python3 cleanup_localized_assets.py --cached-live
+          python3 gen_app_store_conversion_surfaces.py
+          # Must stay after every generator that rewrites page bodies: those
+          # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
           python3 gen_store_attribution.py
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
@@ -617,6 +618,8 @@ jobs:
                   --materialize-current-inventory
                 python3 close_sitemap_graph.py
                 python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+                python3 cleanup_localized_assets.py --cached-live
+                python3 gen_app_store_conversion_surfaces.py
                 python3 gen_store_attribution.py
                 python3 hero_tasks.py --today "$GEO_BUILD_DATE"
                 python3 gen_feed.py

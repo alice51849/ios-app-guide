@@ -254,7 +254,7 @@ class RefreshPerformanceTests(unittest.TestCase):
                 conversion,
             )
             tests = segment.index(
-                "python3 _engine/geo/parallel_unittest.py --jobs 3",
+                "python3 _engine/geo/parallel_unittest.py --jobs 5",
                 attribution,
             )
             self.assertLess(cleanup, conversion)

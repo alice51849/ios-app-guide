@@ -224,7 +224,7 @@ jobs:
             --pages-dir "$GITHUB_WORKSPACE" --refresh-catalog
           python3 _engine/geo/owned_app_feeds.py \
             --pages-dir "$GITHUB_WORKSPACE" --check
-          python3 _engine/geo/parallel_unittest.py --jobs 3
+          python3 _engine/geo/parallel_unittest.py --jobs 5
           STANDARD_SITE_ENGINE_ROOT="$GITHUB_WORKSPACE/_engine" \
             python3 -m unittest discover \
               -s _engine/social/tests \
@@ -430,7 +430,7 @@ jobs:
                 --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
                 --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
               python3 _engine/geo/shotinbox_public_site.py
-              python3 _engine/geo/parallel_unittest.py --jobs 3
+              python3 _engine/geo/parallel_unittest.py --jobs 5
               cd _engine/geo
               python3 outreach_scorecard.py --require-complete
             }
@@ -583,7 +583,7 @@ jobs:
           # final campaign/storefront URLs rather than pre-stamp canonicals.
           python3 _engine/geo/check_hub_coverage.py \
             --pages-dir "$GITHUB_WORKSPACE" --attributed
-          python3 _engine/geo/parallel_unittest.py --jobs 3
+          python3 _engine/geo/parallel_unittest.py --jobs 5
           python3 _engine/geo/verified_tree.py seal \
             --root "$GITHUB_WORKSPACE" \
             --output "$attestation" \
@@ -646,7 +646,7 @@ jobs:
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE"
                 python3 _engine/geo/hero_tasks.py --pages-dir "$GITHUB_WORKSPACE" --today "$GEO_BUILD_DATE" --check
                 python3 _engine/geo/shotinbox_public_site.py
-                python3 _engine/geo/parallel_unittest.py --jobs 3
+                python3 _engine/geo/parallel_unittest.py --jobs 5
               fi
               cd _engine/geo
               python3 outreach_scorecard.py --require-complete

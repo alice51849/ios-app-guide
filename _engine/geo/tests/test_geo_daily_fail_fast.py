@@ -245,7 +245,7 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
             "Rebuild availability-dependent surfaces",
         )
         self.assertIn(
-            "python3 _engine/geo/parallel_unittest.py --jobs 3",
+            "python3 _engine/geo/parallel_unittest.py --jobs 5",
             zero_cost,
         )
         self.assertIn(
@@ -258,7 +258,7 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
         )
         self.assertNotIn("-s _engine/geo/tests", zero_cost)
         first_suite = zero_cost.index(
-            "python3 _engine/geo/parallel_unittest.py --jobs 3"
+            "python3 _engine/geo/parallel_unittest.py --jobs 5"
         )
         self.assertLess(
             zero_cost.index("owned_app_feeds.py"),
@@ -275,19 +275,19 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
             1,
         )[0]
         self.assertIn(
-            "python3 _engine/geo/parallel_unittest.py --jobs 3",
+            "python3 _engine/geo/parallel_unittest.py --jobs 5",
             english,
         )
         self.assertNotIn("python3 -m unittest discover", english)
         self.assertEqual(
             4,
             self.source.count(
-                "python3 _engine/geo/parallel_unittest.py --jobs 3"
+                "python3 _engine/geo/parallel_unittest.py --jobs 5"
             ),
         )
         self.assertNotRegex(
             self.source,
-            r"parallel_unittest\.py\s+--jobs\s+(?:[4-9]|\d{2,})",
+            r"parallel_unittest\.py\s+--jobs\s+(?:[6-9]|\d{2,})",
         )
 
         final_gate = workflow_step(
@@ -296,7 +296,7 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
             "Commit localized pages if any",
         )
         prepare = final_gate.index("verified_tree.py prepare")
-        tests = final_gate.index("parallel_unittest.py --jobs 3")
+        tests = final_gate.index("parallel_unittest.py --jobs 5")
         seal = final_gate.index("verified_tree.py seal")
         shotinbox = final_gate.index("shotinbox_public_site.py")
         self.assertLess(shotinbox, prepare)

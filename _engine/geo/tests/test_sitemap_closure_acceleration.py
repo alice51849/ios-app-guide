@@ -301,6 +301,24 @@ class ParallelSuiteTests(unittest.TestCase):
         self.assertEqual((heavy[0],), lanes[0].tests)
         self.assertEqual((heavy[1],), lanes[1].tests)
 
+    def test_daily_five_lane_partition_keeps_every_test_exactly_once(self):
+        heavy = parallel_unittest.HEAVY_TESTS
+        tests = [f"suite.fast_{index:02d}" for index in range(23)]
+        tests[5:5] = [heavy[0]]
+        tests[17:17] = [heavy[1]]
+        lanes = parallel_unittest.partition_tests(tests, 5, heavy)
+        self.assertEqual(5, len(lanes))
+        self.assertEqual(["heavy-1", "heavy-2", "remainder-1", "remainder-2", "remainder-3"],
+                         [lane.name for lane in lanes])
+        self.assertEqual((heavy[0],), lanes[0].tests)
+        self.assertEqual((heavy[1],), lanes[1].tests)
+        flattened = [test for lane in lanes for test in lane.tests]
+        self.assertEqual(len(tests), len(flattened))
+        self.assertEqual(set(tests), set(flattened))
+        sizes = [len(lane.tests) for lane in lanes[2:]]
+        self.assertLessEqual(max(sizes) - min(sizes), 1)
+        self.assertTrue(all(test not in heavy for lane in lanes[2:] for test in lane.tests))
+
     def test_partition_fails_closed_when_a_heavy_gate_disappears(self):
         with self.assertRaisesRegex(
             RuntimeError,

@@ -24365,7 +24365,7 @@ class GeneratorTests(unittest.TestCase):
             depth_gate,
         )
         final_tests = english_commit_block.index(
-            "python3 _engine/geo/parallel_unittest.py --jobs 3",
+            "python3 _engine/geo/parallel_unittest.py --jobs 5",
             reconcile,
         )
         scorecard = english_commit_block.index(
@@ -24455,7 +24455,7 @@ class GeneratorTests(unittest.TestCase):
             depth_gate,
         )
         final_tests = localized_commit_block.index(
-            "python3 _engine/geo/parallel_unittest.py --jobs 3",
+            "python3 _engine/geo/parallel_unittest.py --jobs 5",
             reconcile,
         )
         scorecard = localized_commit_block.index(
@@ -24521,7 +24521,7 @@ class GeneratorTests(unittest.TestCase):
             1,
         )[1].split("- name: Commit localized pages if any", 1)[0]
         prepare = verification_block.index("verified_tree.py prepare")
-        tests = verification_block.index("parallel_unittest.py --jobs 3")
+        tests = verification_block.index("parallel_unittest.py --jobs 5")
         seal = verification_block.index("verified_tree.py seal")
         self.assertLess(prepare, tests)
         self.assertLess(tests, seal)

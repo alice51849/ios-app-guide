@@ -34,6 +34,7 @@ import hashlib
 import html
 import json
 import market_availability as market
+import multiprocessing
 import market_surface_policy
 import os
 from pathlib import Path
@@ -41,6 +42,7 @@ import re
 import sys
 import urllib.parse
 from collections import Counter
+from concurrent.futures import ProcessPoolExecutor
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -667,9 +669,154 @@ def page_token(rel: str, text: str) -> str | None:
     return campaign_token(rel, text)
 
 
-def generate(pages: Path, check: bool) -> dict[str, object]:
+# Whole-tree runs touch ~70k pages several times per Daily GEO; each page is
+# independent, so the per-page work fans out over processes. Results are merged
+# in the exact iteration order, so statistics, campaign census order and the
+# first reported failure are identical to a serial run. Small trees (tests,
+# fixtures) and single-CPU hosts stay in-process. Only Linux (the cloud
+# runner) fans out by default: it forks, so callers need no __main__ guard.
+# Elsewhere the platform start method re-imports __main__, so fan-out there is
+# opt-in through GEO_ATTRIBUTION_WORKERS.
+ATTRIBUTION_WORKERS_ENV = "GEO_ATTRIBUTION_WORKERS"
+PARALLEL_MIN_PAGES = 512
+PARALLEL_CHUNK_PAGES = 64
+# Hosted runners have 4 vCPUs; more processes only add memory pressure.
+DEFAULT_MAX_WORKERS = 4
+_WORKER_CONTEXT: tuple | None = None
+
+
+def attribution_workers() -> int:
+    configured = os.environ.get(ATTRIBUTION_WORKERS_ENV, "").strip()
+    if configured:
+        if not configured.isdigit() or int(configured) < 1:
+            raise ValueError(f"{ATTRIBUTION_WORKERS_ENV} must be a positive integer")
+        return int(configured)
+    if not sys.platform.startswith("linux"):
+        return 1
+    return max(1, min(DEFAULT_MAX_WORKERS, os.cpu_count() or 1))
+
+
+def _pool_context():
+    if sys.platform.startswith("linux"):
+        return multiprocessing.get_context("fork")
+    return multiprocessing.get_context()
+
+
+def _init_worker(context: tuple) -> None:
+    global _WORKER_CONTEXT
+    _WORKER_CONTEXT = context
+
+
+def _skip_protected_page(rel: str, token: str | None, locale: str | None) -> bool:
+    return bool(
+        PROTECTED_PARTS.intersection(Path(rel).parts)
+        and token is None
+        and not market.is_unavailable(locale)
+    )
+
+
+def _preflight_page(item: tuple[str, Path], context: tuple | None = None):
+    """Validate one page; ``None`` when it carries no store surface.
+
+    Returns ``(has_links, anchors, census, changed, changes, digest)`` where
+    ``census`` lists the campaign of every attributable reference in order.
+    """
     from audit_store_attribution import audit_source, locale_of
-    from live_app_guard import live_apps, sanitize_nonlive_html
+    from live_app_guard import sanitize_nonlive_html
+
+    provider, availability, live_ids = context or _WORKER_CONTEXT
+    rel, path = item
+    text = path.read_text(encoding="utf-8")
+    if not market.is_unavailable(locale_of(rel)) and not any(marker in text for marker in (
+        "apps.apple.com", "apple-itunes-app", "data-app-store-url",
+        "app_store_url", "app-store-qr-card",
+    )):
+        return None
+    anchors = [
+        match
+        for pattern in STORE_URL_PATTERNS
+        for match in pattern.findall(text)
+    ]
+    protected = bool(PROTECTED_PARTS.intersection(Path(rel).parts))
+    token = page_token(rel, text)
+    # Every failure names the page: a whole-tree run must point straight at
+    # the offending file instead of leaving the operator to bisect 80k pages.
+    try:
+        sanitized = sanitize_nonlive_html(text, live_ids)
+        # Web Stories keep their own iag_story campaign but still carry
+        # machine-readable MobileApplication url/installUrl/downloadUrl
+        # that gen_mobile_app_identity emits clean; stamp those with the
+        # story campaign so the page has exactly one attributable token.
+        # Publisher visuals mint per-locale atomic campaigns and stay untouched.
+        updated, changes = (sanitized, 0) if _skip_protected_page(rel, token, locale_of(rel)) else rewrite(
+            sanitized, token, provider, locale=locale_of(rel), availability=availability
+        )
+        desync = qr_card_desync(updated)
+    except QrCardDesyncError as error:
+        raise QrCardDesyncError(f"{rel}: {error}") from error
+    except (ValueError, RuntimeError) as error:
+        raise ValueError(f"{rel}: {error}") from error
+    if desync:
+        href, stale, expected = desync
+        raise QrCardDesyncError(
+            "store attribution would outdate the App Store QR image on "
+            f"{rel}: the card now links to {href} (sha {expected}) but its "
+            f"QR image still encodes sha {stale}. Whichever generator "
+            "minted that link must use gen_store_attribution."
+            "campaign_token() so the URL is already final before "
+            "gen_app_store_qr_ctas.py hashes it."
+        )
+    # Census the token for every anchor on the page, not just the ones this
+    # run had to touch — otherwise a second (idempotent) run reports zero
+    # campaigns and the taxonomy looks empty.
+    try:
+        refs = audit_source(updated, rel, provider=provider, availability=availability)
+    except ValueError as error:
+        raise ValueError(f"{rel}: {error}") from error
+    census = tuple(existing_campaign(ref.url) for ref in refs if not ref.identity)
+    changed = updated != text
+    digest = hashlib.sha256(text.encode("utf-8")).digest() if changed else None
+    return (
+        int(bool(anchors) and not protected), len(anchors), census,
+        changed, changes, digest,
+    )
+
+
+def _write_page(item: tuple[str, Path, bytes], context: tuple | None = None) -> None:
+    from audit_store_attribution import locale_of
+    from live_app_guard import sanitize_nonlive_html
+
+    provider, availability, live_ids = context or _WORKER_CONTEXT
+    rel, path, digest = item
+    text = path.read_text(encoding="utf-8")
+    if hashlib.sha256(text.encode("utf-8")).digest() != digest:
+        raise ValueError(f"Page changed during attribution preflight: {rel}")
+    try:
+        sanitized = sanitize_nonlive_html(text, live_ids)
+        token = page_token(rel, text)
+        if _skip_protected_page(rel, token, locale_of(rel)):
+            updated = sanitized
+        else:
+            updated, _ = rewrite(
+                sanitized, token, provider,
+                locale=locale_of(rel), availability=availability,
+            )
+    except ValueError as error:
+        raise ValueError(f"{rel}: {error}") from error
+    path.write_text(updated, encoding="utf-8")
+
+
+def _ordered(function, items, context, pool):
+    """Yield ``function(item)`` in input order, in-process or over ``pool``."""
+    if pool is None:
+        for item in items:
+            yield function(item, context)
+        return
+    yield from pool.map(function, items, chunksize=PARALLEL_CHUNK_PAGES)
+
+
+def generate(pages: Path, check: bool) -> dict[str, object]:
+    from live_app_guard import live_apps
 
     provider = resolve_provider_token() or None
     if provider is None or PROVIDER_TOKEN_RE.fullmatch(provider) is None:
@@ -678,89 +825,43 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         raise ValueError(f"Missing generated pages directory: {pages}")
     live_ids = set(live_apps().values())
     availability = load_storefront_availability(pages) or None
-    files_with_links = 0
-    files_changed = 0
-    links_total = 0
-    links_stamped = 0
-    tokens: Counter = Counter()
-    pending = []
-    for rel, path in iter_html(pages):
-        text = path.read_text(encoding="utf-8")
-        if not market.is_unavailable(locale_of(rel)) and not any(marker in text for marker in (
-            "apps.apple.com", "apple-itunes-app", "data-app-store-url",
-            "app_store_url", "app-store-qr-card",
-        )):
-            continue
-        anchors = [
-            match
-            for pattern in STORE_URL_PATTERNS
-            for match in pattern.findall(text)
-        ]
-        protected = bool(PROTECTED_PARTS.intersection(Path(rel).parts))
-        files_with_links += int(bool(anchors) and not protected)
-        links_total += len(anchors)
-        token = page_token(rel, text)
-        # Every failure names the page: a whole-tree run must point straight at
-        # the offending file instead of leaving the operator to bisect 80k pages.
-        try:
-            sanitized = sanitize_nonlive_html(text, live_ids)
-            # Web Stories keep their own iag_story campaign but still carry
-            # machine-readable MobileApplication url/installUrl/downloadUrl
-            # that gen_mobile_app_identity emits clean; stamp those with the
-            # story campaign so the page has exactly one attributable token.
-            # Publisher visuals mint per-locale atomic campaigns and stay untouched.
-            updated, changes = (sanitized, 0) if protected and token is None and not market.is_unavailable(locale_of(rel)) else rewrite(
-                sanitized, token, provider, locale=locale_of(rel), availability=availability
-            )
-            desync = qr_card_desync(updated)
-        except QrCardDesyncError as error:
-            raise QrCardDesyncError(f"{rel}: {error}") from error
-        except (ValueError, RuntimeError) as error:
-            raise ValueError(f"{rel}: {error}") from error
-        if desync:
-            href, stale, expected = desync
-            raise QrCardDesyncError(
-                "store attribution would outdate the App Store QR image on "
-                f"{rel}: the card now links to {href} (sha {expected}) but its "
-                f"QR image still encodes sha {stale}. Whichever generator "
-                "minted that link must use gen_store_attribution."
-                "campaign_token() so the URL is already final before "
-                "gen_app_store_qr_ctas.py hashes it."
-            )
-        # Census the token for every anchor on the page, not just the ones this
-        # run had to touch — otherwise a second (idempotent) run reports zero
-        # campaigns and the taxonomy looks empty.
-        try:
-            refs = audit_source(updated, rel, provider=provider, availability=availability)
-        except ValueError as error:
-            raise ValueError(f"{rel}: {error}") from error
-        for ref in refs:
-            if not ref.identity:
-                tokens[existing_campaign(ref.url)] += 1
-        if updated != text:
-            links_stamped += changes
-            files_changed += 1
-            if not check:
-                pending.append((rel, path, hashlib.sha256(text.encode("utf-8")).digest()))
-    # Validate the entire input before changing any page. Do not retain a whole
-    # site's HTML in memory, and never overwrite a concurrently changed page.
-    for rel, path, digest in pending:
-        text = path.read_text(encoding="utf-8")
-        if hashlib.sha256(text.encode("utf-8")).digest() != digest:
-            raise ValueError(f"Page changed during attribution preflight: {rel}")
-        try:
-            sanitized = sanitize_nonlive_html(text, live_ids)
-            token = page_token(rel, text)
-            if PROTECTED_PARTS.intersection(Path(rel).parts) and token is None and not market.is_unavailable(locale_of(rel)):
-                updated = sanitized
-            else:
-                updated, _ = rewrite(
-                    sanitized, token, provider,
-                    locale=locale_of(rel), availability=availability,
-                )
-        except ValueError as error:
-            raise ValueError(f"{rel}: {error}") from error
-        path.write_text(updated, encoding="utf-8")
+    context = (provider, availability, live_ids)
+    workers = attribution_workers()
+    items = list(iter_html(pages))
+    pool = None
+    if workers > 1 and len(items) >= PARALLEL_MIN_PAGES:
+        pool = ProcessPoolExecutor(
+            max_workers=workers, mp_context=_pool_context(),
+            initializer=_init_worker, initargs=(context,),
+        )
+    try:
+        files_with_links = 0
+        files_changed = 0
+        links_total = 0
+        links_stamped = 0
+        tokens: Counter = Counter()
+        pending = []
+        for (rel, path), result in zip(items, _ordered(_preflight_page, items, context, pool)):
+            if result is None:
+                continue
+            has_links, anchors, census, changed, changes, digest = result
+            files_with_links += has_links
+            links_total += anchors
+            for campaign in census:
+                tokens[campaign] += 1
+            if changed:
+                links_stamped += changes
+                files_changed += 1
+                if not check:
+                    pending.append((rel, path, digest))
+        # Validate the entire input before changing any page. Do not retain a whole
+        # site's HTML in memory, and never overwrite a concurrently changed page.
+        write_pool = pool if len(pending) >= PARALLEL_MIN_PAGES else None
+        for _ in _ordered(_write_page, pending, context, write_pool):
+            pass
+    finally:
+        if pool is not None:
+            pool.shutdown(wait=True, cancel_futures=True)
     from gen_market_availability import generate as enforce_markets
     market_report = enforce_markets(pages, check=check)
     if check and market_report["changed"]:

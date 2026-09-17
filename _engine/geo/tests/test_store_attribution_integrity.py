@@ -1136,5 +1136,134 @@ const script = new vm.Script(input.source);
             self.assertEqual(4, attribution.generate(self.pages, check=False)["pages_changed"])
 
 
+class ParallelAttributionEquivalenceTests(unittest.TestCase):
+    """Process fan-out must be byte-for-byte identical to the serial pass."""
+
+    def setUp(self):
+        self.environment = mock.patch.dict(os.environ, {stores.PROVIDER_TOKEN_ENV: PROVIDER})
+        self.environment.start()
+        self.addCleanup(self.environment.stop)
+        (GEO / "pages").mkdir(exist_ok=True)
+        self.directory = tempfile.TemporaryDirectory(prefix="attribution-parallel-", dir=GEO / "pages")
+        self.addCleanup(self.directory.cleanup)
+        self.root = Path(self.directory.name)
+
+    def build_tree(self, root, *, poison=False):
+        apps = sorted(LIVE_APPS.values())
+        clean = lambda app_id: f"https://apps.apple.com/app/id{app_id}"
+        pages = {}
+        # Equal counts per campaign make the census order observable.
+        for index, app_id in enumerate(apps[:3]):
+            pages[f"en-US/answers/a{index}.html"] = document(clean(app_id), key=f"a{index}")
+            pages[f"ja/hubs/h{index}.html"] = document(clean(app_id), locale="ja", key=f"h{index}")
+        pages["en-US/guides/stamped.html"] = document(store_url(campaign="geo_learn"), key="stamped")
+        pages["de-DE/compare/foreign.html"] = document(
+            f"https://apps.apple.com/jp/app/id{APP_ID}", locale="de-DE", key="foreign",
+        )
+        pages["en-US/plain.html"] = '<html lang="en-US"><body>No store link.</body></html>'
+        pages["bn-BD/answers/blocked.html"] = document(None, locale="bn-BD", key="blocked", app_id=APP_ID)
+        story_cta = f"{clean(APP_ID)}?pt={PROVIDER}&ct=iag_story&mt=8"
+        pages["stories/app.html"] = (
+            '<html lang="en-US"><body>'
+            f'<a href="{html.escape(story_cta)}">Get</a>'
+            '<script type="application/ld+json">'
+            + json.dumps({"@type": "MobileApplication", "@id": clean(APP_ID), "url": clean(APP_ID),
+                          "installUrl": clean(APP_ID), "downloadUrl": clean(APP_ID)})
+            + "</script></body></html>"
+        )
+        pages["visuals/app.html"] = (
+            f'<html lang="en-US"><body><a href="{html.escape(clean(APP_ID))}?pt={PROVIDER}'
+            '&amp;ct=iag_visual_en_us&amp;mt=8">Get</a></body></html>'
+        )
+        final = attribution.final_store_url(
+            clean(APP_ID), "geo_pick", PROVIDER, locale="en-US", availability=AVAILABILITY, app_id=APP_ID,
+        )
+        pages["en-US/apps/qr.html"] = (
+            f'<html lang="en-US"><body><a class="app-store-qr-card__link" href="{html.escape(final)}">'
+            f'<img class="app-store-qr-card__image" src="/{qr.qr_asset_relative(APP_ID, final)}"></a></body></html>'
+        )
+        if poison:
+            unknown = store_url().replace("/us/", "/xx/")
+            pages["en-US/answers/poison-a.html"] = document(unknown, key="poison-a")
+            pages["ja/hubs/poison-b.html"] = document(unknown, locale="ja", key="poison-b")
+        for relative, source in pages.items():
+            path = root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(source, encoding="utf-8")
+
+    def snapshot(self, root):
+        return {
+            path.relative_to(root).as_posix(): path.read_bytes()
+            for path in sorted(root.rglob("*")) if path.is_file()
+        }
+
+    def run_mode(self, root, *, workers, check=False):
+        patches = [
+            mock.patch.dict(os.environ, {attribution.ATTRIBUTION_WORKERS_ENV: str(workers)}),
+            mock.patch.object(attribution, "load_storefront_availability", return_value=AVAILABILITY),
+            mock.patch.object(attribution, "PARALLEL_MIN_PAGES", 1),
+            mock.patch.object(attribution, "PARALLEL_CHUNK_PAGES", 2),
+        ]
+        for patch in patches:
+            patch.start()
+        try:
+            return attribution.generate(root, check=check)
+        finally:
+            for patch in reversed(patches):
+                patch.stop()
+
+    def test_parallel_output_and_statistics_match_serial(self):
+        serial, parallel = self.root / "serial", self.root / "parallel"
+        for root in (serial, parallel):
+            self.build_tree(root)
+        self.assertEqual(self.snapshot(serial), self.snapshot(parallel))
+        for check in (True, False):
+            with self.subTest(check=check):
+                expected = self.run_mode(serial, workers=1, check=check)
+                actual = self.run_mode(parallel, workers=2, check=check)
+                self.assertEqual(expected, actual)
+                self.assertEqual(
+                    list(expected["links_by_campaign"].items()),
+                    list(actual["links_by_campaign"].items()),
+                )
+                self.assertEqual(self.snapshot(serial), self.snapshot(parallel))
+        self.assertGreater(expected["pages_changed"], 1)
+        self.assertEqual(
+            self.run_mode(serial, workers=1), self.run_mode(parallel, workers=2),
+        )
+
+    def test_parallel_reports_the_same_first_failure_and_writes_nothing(self):
+        serial, parallel = self.root / "serial", self.root / "parallel"
+        for root in (serial, parallel):
+            self.build_tree(root, poison=True)
+        before = self.snapshot(parallel)
+        with self.assertRaises(ValueError) as expected:
+            self.run_mode(serial, workers=1)
+        with self.assertRaises(ValueError) as actual:
+            self.run_mode(parallel, workers=2)
+        self.assertIs(type(expected.exception), type(actual.exception))
+        self.assertEqual(str(expected.exception), str(actual.exception))
+        self.assertIn("poison-", str(actual.exception))
+        self.assertEqual(before, self.snapshot(parallel))
+
+    def test_worker_setting_is_validated_and_capped_by_default(self):
+        with mock.patch.dict(os.environ, {attribution.ATTRIBUTION_WORKERS_ENV: ""}):
+            self.assertLessEqual(attribution.attribution_workers(), attribution.DEFAULT_MAX_WORKERS)
+            self.assertGreaterEqual(attribution.attribution_workers(), 1)
+            with mock.patch.object(attribution.sys, "platform", "darwin"):
+                self.assertEqual(1, attribution.attribution_workers())
+            with mock.patch.object(attribution.sys, "platform", "linux"), \
+                    mock.patch.object(attribution.os, "cpu_count", return_value=16):
+                self.assertEqual(attribution.DEFAULT_MAX_WORKERS, attribution.attribution_workers())
+                self.assertEqual("fork", attribution._pool_context().get_start_method())
+        with mock.patch.dict(os.environ, {attribution.ATTRIBUTION_WORKERS_ENV: "3"}), \
+                mock.patch.object(attribution.sys, "platform", "darwin"):
+            self.assertEqual(3, attribution.attribution_workers())
+        for bad in ("0", "-1", "two"):
+            with self.subTest(bad=bad), mock.patch.dict(os.environ, {attribution.ATTRIBUTION_WORKERS_ENV: bad}):
+                with self.assertRaisesRegex(ValueError, attribution.ATTRIBUTION_WORKERS_ENV):
+                    attribution.attribution_workers()
+
+
 if __name__ == "__main__":
     unittest.main()

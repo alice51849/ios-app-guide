@@ -2,7 +2,7 @@
 title: "Snapport for a baby's photo: prepare the crop and print sheet, then check the rules"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/en-US/index.html"
-modified: "2026-09-16"
+modified: "2026-09-17"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

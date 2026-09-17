@@ -2,7 +2,7 @@
 title: "Zipbox: חילוץ RAR, ZIP, 7z — פתיחת ארכיונים בלי פרסומות | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/he/index.html"
-modified: "2026-09-16"
+modified: "2026-09-17"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

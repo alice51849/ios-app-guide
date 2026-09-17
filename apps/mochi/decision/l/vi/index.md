@@ -17,6 +17,7 @@ Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứ
 - Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
+- ★ 1.0/5 · 1
 
 [Tải Mochi trên App Store →](https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

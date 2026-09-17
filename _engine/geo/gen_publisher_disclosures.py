@@ -713,6 +713,7 @@ def migrate(
     pages = pages.resolve()
     translations_dir = translations_dir.resolve()
     cache: dict[str, dict[str, str]] = {}
+    targets_cache: dict[str, list[tuple[str, str]]] = {}
     changed_files = 0
     replacements = 0
     fallback_locales: set[str] = set()
@@ -755,15 +756,22 @@ def migrate(
         source = path.read_text(encoding="utf-8")
         updated = source
         locale = _locale_for(path, pages)
-        translations = cache.setdefault(
-            locale,
-            _translations(locale, translations_dir),
-        )
-        for old, new in _targets_for_locale(
-            locale,
-            translations,
-            structural,
-        ):
+        # Load each locale's dictionary and replacement table once: the loop
+        # never changes either, and setdefault() evaluated the loader for
+        # every page (~35k reloads per run).
+        translations = cache.get(locale)
+        if translations is None:
+            translations = cache[locale] = _translations(
+                locale, translations_dir,
+            )
+        locale_targets = targets_cache.get(locale)
+        if locale_targets is None:
+            locale_targets = targets_cache[locale] = _targets_for_locale(
+                locale,
+                translations,
+                structural,
+            )
+        for old, new in locale_targets:
             if old not in updated:
                 continue
             localized, fallback = _localized(new, locale, translations)

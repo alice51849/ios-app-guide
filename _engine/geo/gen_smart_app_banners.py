@@ -7,6 +7,7 @@ import argparse
 import market_availability as market
 import market_surface_policy
 from dataclasses import dataclass
+from functools import partial
 import os
 from pathlib import Path
 import re
@@ -26,6 +27,7 @@ from answer_app_store_links import (  # noqa: E402
     unmanaged_app_store_source,
 )
 import gen_linkset  # noqa: E402
+import parallel_pages  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
@@ -132,15 +134,27 @@ def _unmanaged_source(path: Path) -> str:
     return unmanaged_app_store_source(path.read_text(encoding="utf-8"))
 
 
+def _single_app_target(path: Path, live_ids: set[str]) -> str | None:
+    source = path.read_text(encoding="utf-8")
+    app_id = single_app_id(path, live_ids, source)
+    if app_id is None or _is_noindex_redirect(path, source):
+        return None
+    return app_id
+
+
 def _add_single_app_targets(
     targets: dict[Path, str],
     paths: set[Path],
     live_ids: set[str],
 ) -> None:
-    for path in paths:
-        source = path.read_text(encoding="utf-8")
-        app_id = single_app_id(path, live_ids, source)
-        if app_id is None or _is_noindex_redirect(path, source):
+    # Reading and classifying each page is independent and dominates whole-tree
+    # runs (~30k answer pages); the conflict check below stays in path order.
+    paths = list(paths)
+    resolved = parallel_pages.ordered_map(
+        partial(_single_app_target, live_ids=live_ids), paths,
+    )
+    for path, app_id in zip(paths, resolved, strict=True):
+        if app_id is None:
             continue
         existing = targets.get(path)
         if existing and existing != app_id:

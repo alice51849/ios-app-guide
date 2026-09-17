@@ -234,7 +234,7 @@
       "record_count": 47
     },
     "bn-BD": {
-      "date_modified": "2026-09-17T17:54:51Z",
+      "date_modified": "2026-09-17T18:13:40Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -244,7 +244,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "1a3a6351b53378e68c6b33816374e0e7544068b791e2c2ed5305adfdc57f90ec",
+          "sha256": "229de85ac742d6c839e333852e2c0dc3ade2d04ceb301f7c3ccc3dba31e6be09",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -254,7 +254,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "11cef189280e22da64849ea30cbb1a334fc55b47539b230fd3cf2269cce46f68",
+          "sha256": "7833d3efdcad75c279300efe1e55ae985ff6d8a2397f7599c1061e96b5d753d0",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -265,7 +265,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "a9564ea0a57dc3abaa9f9403c8db2e9cd8e8e1d147840d66e96bb2463a5648f4",
+          "sha256": "4f35db46f9b8a80a3f3f135e63d462d4540d756f9831a867743ab4d10f70534e",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2194,7 +2194,7 @@
       "record_count": 47
     }
   },
-  "generation_digest": "9fbc2468cd40b7d6dad2713e0d09f125e747802f85b5ff0fdaf3a7e17033f488",
+  "generation_digest": "473005e4c43434b6d873f4319c2aebd2c3e441d204621c869d937b36b546b1c6",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2215,7 +2215,7 @@
       "data/paid_upfront_surface_repairs.json": "b1fb9e766bf5456de9cec3524a6b3f352fda9f3b104aac15b612986113978559",
       "deployment_generation.py": "37486117e9e159750853d308d84fb3059d2c195e42d159e422a5d22fc700a169",
       "external_app_locales.py": "931182b43719e712ca3573f9b2ce22fb60cce34acc23909c5b63660624737f35",
-      "gen_publisher_disclosures.py": "449f7328a32562fbb7d4ca5e3886b4ab1c7b0b2820d2b8a802c91a4f12aa5727",
+      "gen_publisher_disclosures.py": "0e5c124806e6d8e2e419561e63d82c9a1d8afb99eb8912fa5ca49ba4c8a90677",
       "gen_sitemap_lastmod.py": "281d5086ece6367443b96e0fd2a8ce21883c45af5e0b73ca9b95e0c58894fc91",
       "indexnow_submit.py": "8450a4b40b7d420c99dcb51ade0e6643c7bd867d550bdaf72087a6a4d9dec258",
       "live_app_manifest.json": "092c2f0d636438f44b25fe1fca44619fd5640e518430f07ba3ec6a8aa11403e6",

@@ -24205,6 +24205,17 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(final_body, final_cleanup)
         self.assertLess(final_cleanup, final_conversion)
         self.assertLess(final_conversion, final_attribution)
+        # gen_webstories.py reruns in this block with clean campaign URLs, and
+        # validate_webstories.py checks the final storefront CTA, so the
+        # validation must follow the last attribution pass.
+        self.assertLess(
+            final_cleanup_block.rindex("gen_webstories.py"),
+            final_attribution,
+        )
+        self.assertLess(
+            final_attribution,
+            final_cleanup_block.rindex("validate_webstories.py"),
+        )
         self.assertLess(
             final_attribution,
             final_cleanup_block.rindex(

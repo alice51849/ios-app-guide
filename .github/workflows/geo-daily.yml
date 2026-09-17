@@ -517,7 +517,6 @@ jobs:
           # final attribution pass.
           python3 zhuyin_resourcesync.py
           python3 gen_app_decision_cards.py
-          python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
@@ -549,6 +548,9 @@ jobs:
           # Must stay after every generator that rewrites page bodies: those
           # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
           python3 gen_store_attribution.py
+          # Stories were regenerated above with clean campaign URLs; their CTA
+          # contract is the final storefront URL, which only exists from here.
+          python3 validate_webstories.py
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 result_image_index.py

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from functools import partial
 from html.parser import HTMLParser
 import json
 import market_availability as market
@@ -15,6 +16,7 @@ from typing import Any, Iterator
 from urllib.parse import urlsplit
 
 import gen_smart_app_banners
+import parallel_pages
 from appstore_live import live_app_keys
 from videogen.registry import APPS, APPSTORE
 
@@ -566,13 +568,32 @@ def ensure_mobile_identity(
     category: str,
     site: str = gen_smart_app_banners.SITE,
 ) -> tuple[bool, int, bool]:
+    updated, changed, entities, inserted = _mobile_identity_update(
+        path, app_id, app_name, category, site,
+    )
+    if updated is not None:
+        path.write_text(updated, encoding="utf-8")
+    return changed, entities, inserted
+
+
+def _mobile_identity_update(
+    path: Path,
+    app_id: str,
+    app_name: str,
+    category: str,
+    site: str = gen_smart_app_banners.SITE,
+) -> tuple[str | None, bool, int, bool]:
+    """Compute one page's identity update without writing it.
+
+    Returns ``(text_to_write, changed, entities, inserted)``; ``text_to_write``
+    is ``None`` whenever the serial generator would not write the page.
+    """
     source = path.read_text(encoding="utf-8")
     page_url, language = _page_metadata(source, path, site)
     if market.is_unavailable(language, app_id):
         updated = market_surface_policy.enforce_html(source, language, app_id=app_id, name=app_name)
-        if updated != source:
-            path.write_text(updated, encoding="utf-8")
-        return updated != source, 0, False
+        changed = updated != source
+        return updated if changed else None, changed, 0, False
     relation = _page_relation(page_url)
     records: list[
         tuple[
@@ -716,7 +737,7 @@ def ensure_mobile_identity(
         )
 
     if not changed_nodes and not inserts:
-        return False, 1, False
+        return None, False, 1, False
 
     parts: list[str] = []
     cursor = 0
@@ -745,8 +766,7 @@ def ensure_mobile_identity(
             "\n".join([*inserts, "</head>"]),
             1,
         )
-    path.write_text(updated, encoding="utf-8")
-    return True, 1, inserted
+    return updated, True, 1, inserted
 
 
 def _without_managed_install_actions(
@@ -811,6 +831,15 @@ def _sanitize_unmanaged_identity(
 
 
 def remove_managed_identity(path: Path) -> bool:
+    updated = _managed_identity_removal(path)
+    if updated is None:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def _managed_identity_removal(path: Path) -> str | None:
+    """Return the page without managed identity, or ``None`` if unchanged."""
     source = path.read_text(encoding="utf-8")
     cleaned = gen_smart_app_banners.MOBILE_APP_IDENTITY_BLOCK_RE.sub(
         "\n", source
@@ -840,9 +869,21 @@ def remove_managed_identity(path: Path) -> bool:
     parts.append(cleaned[cursor:])
     updated = "".join(parts)
     if updated == source:
-        return False
-    path.write_text(updated, encoding="utf-8")
-    return True
+        return None
+    return updated
+
+
+def _target_identity_update(
+    item: tuple[Path, str],
+    *,
+    app_by_id: dict[str, tuple[str, str]],
+    site: str,
+) -> tuple[str | None, bool, int, bool]:
+    path, app_id = item
+    if app_id not in app_by_id:
+        raise ValueError(f"No registry identity for App Store ID {app_id}")
+    app_name, category = app_by_id[app_id]
+    return _mobile_identity_update(path, app_id, app_name, category, site)
 
 
 def generate(
@@ -865,17 +906,19 @@ def generate(
     changed = 0
     entities = 0
     inserted = 0
-    for path, app_id in sorted(targets.items()):
-        if app_id not in app_by_id:
-            raise ValueError(f"No registry identity for App Store ID {app_id}")
-        app_name, category = app_by_id[app_id]
-        page_changed, page_entities, page_inserted = ensure_mobile_identity(
-            path,
-            app_id,
-            app_name,
-            category,
-            site,
-        )
+    # Per-page identity rendering is independent and side-effect free; pages
+    # are written here, in the original order, so a failure leaves exactly the
+    # serial state behind.
+    target_items = sorted(targets.items())
+    updates = parallel_pages.ordered_map(
+        partial(_target_identity_update, app_by_id=app_by_id, site=site),
+        target_items,
+    )
+    for (path, _app_id), (updated, page_changed, page_entities, page_inserted) in zip(
+        target_items, updates, strict=True,
+    ):
+        if updated is not None:
+            path.write_text(updated, encoding="utf-8")
         changed += int(page_changed)
         entities += page_entities
         inserted += int(page_inserted)
@@ -883,8 +926,15 @@ def generate(
         gen_smart_app_banners._guide_pages(pages)
         | gen_smart_app_banners._buyer_intent_pages(pages)
     )
-    for path in sorted(managed_pages - set(targets)):
-        changed += int(remove_managed_identity(path))
+    unmanaged = sorted(managed_pages - set(targets))
+    for path, updated in zip(
+        unmanaged,
+        parallel_pages.ordered_map(_managed_identity_removal, unmanaged),
+        strict=True,
+    ):
+        if updated is not None:
+            path.write_text(updated, encoding="utf-8")
+            changed += 1
     return {
         "apps": app_count,
         "pages": len(targets),

@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import argparse
-from functools import lru_cache
+from functools import lru_cache, partial
 import html
 import json
 import os
@@ -13,6 +13,7 @@ import re
 from urllib.parse import unquote, urlsplit
 
 from app_store_storefronts import APP_STORE_PATH_RE
+import parallel_pages
 
 
 APP_ID_RE = re.compile(r"(?:app-id=|/id)(\d{8,})", re.IGNORECASE)
@@ -290,6 +291,29 @@ def _remove_sitemap_urls(source: str, paths: set[str], *, public_paths: set[str]
     return re.sub(r"(?m)^[ \t]+$", "", updated) if updated != source else source
 
 
+def _scan_page(
+    page: Path,
+    *,
+    site_root: Path,
+    live_ids: frozenset[str],
+    app_roots: tuple[Path, ...],
+) -> tuple[set[str], bool, str | None]:
+    """Return ``(blocked_ids, quarantined, sanitized_or_None)`` for one page."""
+    source = page.read_text(encoding="utf-8")
+    blocked = _store_ids(source) - live_ids
+    try:
+        sanitized = sanitize_nonlive_html(
+            source, set(live_ids), quarantine=any(root in page.parents for root in app_roots),
+        )
+    except (ValueError, RuntimeError) as error:
+        raise RuntimeError(f"{page.relative_to(site_root)}: {error}") from error
+    return (
+        blocked,
+        QUARANTINE_META in sanitized,
+        sanitized if sanitized != source else None,
+    )
+
+
 def quarantine_nonlive_pages(
     site_root: Path, *, apply: bool, live_ids: set[str] | None = None,
 ) -> dict[str, int]:
@@ -313,20 +337,26 @@ def quarantine_nonlive_pages(
     blocked_ids: set[str] = set()
     quarantined: set[str] = set()
     html_changes: dict[Path, str] = {}
-    for page in files:
-        if page.suffix.lower() not in {".html", ".htm", ".xhtml"}:
-            continue
-        source = page.read_text(encoding="utf-8")
-        blocked_ids.update(_store_ids(source) - live_ids)
-        try:
-            sanitized = sanitize_nonlive_html(
-                source, live_ids, quarantine=any(root in page.parents for root in app_roots),
-            )
-        except (ValueError, RuntimeError) as error:
-            raise RuntimeError(f"{page.relative_to(site_root)}: {error}") from error
-        if QUARANTINE_META in sanitized:
+    # Scanning is per page and side-effect free; merge in file order so the
+    # collected changes and the first reported failure match a serial scan.
+    pages = [
+        page for page in files
+        if page.suffix.lower() in {".html", ".htm", ".xhtml"}
+    ]
+    scans = parallel_pages.ordered_map(
+        partial(
+            _scan_page,
+            site_root=site_root,
+            live_ids=frozenset(live_ids),
+            app_roots=tuple(app_roots),
+        ),
+        pages,
+    )
+    for page, (blocked, is_quarantined, sanitized) in zip(pages, scans, strict=True):
+        blocked_ids.update(blocked)
+        if is_quarantined:
             quarantined.add(page.relative_to(site_root).as_posix())
-        if sanitized != source:
+        if sanitized is not None:
             html_changes[page] = sanitized
 
     sitemap_changes: dict[Path, str] = {}

@@ -579,8 +579,10 @@ jobs:
             --root "$GITHUB_WORKSPACE" \
             --output "$attestation" \
             --suite geo-full-suite
+          # The final cleanup already stamped every hub, so verify the exact
+          # final campaign/storefront URLs rather than pre-stamp canonicals.
           python3 _engine/geo/check_hub_coverage.py \
-            --pages-dir "$GITHUB_WORKSPACE"
+            --pages-dir "$GITHUB_WORKSPACE" --attributed
           python3 _engine/geo/parallel_unittest.py --jobs 3
           python3 _engine/geo/verified_tree.py seal \
             --root "$GITHUB_WORKSPACE" \

@@ -24216,6 +24216,16 @@ class GeneratorTests(unittest.TestCase):
             final_attribution,
             final_cleanup_block.rindex("validate_webstories.py"),
         )
+        # The localized verification runs on that stamped tree, so the hub
+        # audit must require the exact final URLs.
+        localized_verify_block = workflow.split(
+            "- name: Verify localized output before commit", 1
+        )[1].split("- name: Commit localized pages if any", 1)[0]
+        self.assertIn(
+            'check_hub_coverage.py \\\n'
+            '            --pages-dir "$GITHUB_WORKSPACE" --attributed',
+            localized_verify_block,
+        )
         self.assertLess(
             final_attribution,
             final_cleanup_block.rindex(

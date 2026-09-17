@@ -291,20 +291,31 @@ class _NoRedirect(HTTPRedirectHandler):
         return None
 
 
+# The owned host is a tunnel on a single Mac; a restart or brief overload
+# answers 5xx or drops the connection for tens of seconds. Retry only those
+# transient outcomes over ~a minute; the evidence still has to be a real 200.
+FETCH_ATTEMPTS = 6
+FETCH_MAX_BACKOFF_SECONDS = 30
+
+
+def _fetch_backoff(attempt: int) -> None:
+    time.sleep(min(2 ** attempt, FETCH_MAX_BACKOFF_SECONDS))
+
+
 def fetch(url: str, limit: int) -> Response:
     request = Request(url, headers={
         "User-Agent": "Lumi-Public-Image-Check/1.0", "Accept-Encoding": "identity",
     })
     opener = build_opener(_NoRedirect())
-    for attempt in range(3):
+    for attempt in range(FETCH_ATTEMPTS):
         try:
             response = opener.open(request, timeout=20)
         except HTTPError as error:
             response = error
         except (URLError, TimeoutError, OSError):
-            if attempt == 2:
+            if attempt == FETCH_ATTEMPTS - 1:
                 raise ValueError("public GET unavailable") from None
-            time.sleep(2 ** attempt)
+            _fetch_backoff(attempt)
             continue
         with response:
             body = response.read(limit + 1)
@@ -322,8 +333,8 @@ def fetch(url: str, limit: int) -> Response:
             raise ValueError("public response exceeds the bounded size limit")
         if status != 429 and status < 500:
             return result
-        if attempt < 2:
-            time.sleep(2 ** attempt)
+        if attempt < FETCH_ATTEMPTS - 1:
+            _fetch_backoff(attempt)
     return result
 
 

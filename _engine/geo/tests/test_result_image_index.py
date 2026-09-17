@@ -436,6 +436,50 @@ class ResultImagesTests(unittest.TestCase):
         self.assertTrue(images._header_blocks(result.headers["x-robots-tag"], "Googlebot-Image"))
         self.assertEqual("GET", opener.open.call_args.args[0].get_method())
 
+    def _robots_response(self, status):
+        headers = Message()
+        headers.add_header("Content-Type", "text/plain")
+        response = MagicMock()
+        response.status = status
+        response.headers = headers
+        response.geturl.return_value = f"{images.PUBLIC_SITE}/robots.txt"
+        response.read.return_value = b"User-agent: *\nAllow: /\n"
+        return response
+
+    def test_fetch_rides_out_a_transient_owned_host_outage(self):
+        url = f"{images.PUBLIC_SITE}/robots.txt"
+        opener = MagicMock()
+        opener.open.side_effect = [
+            images.URLError("tunnel restarting"),
+            self._robots_response(530),
+            self._robots_response(502),
+            images.URLError("connection reset"),
+            self._robots_response(200),
+        ]
+        with patch.object(images, "build_opener", return_value=opener), \
+                patch.object(images.time, "sleep") as sleep:
+            result = images.fetch(url, images.MAX_ROBOTS_BYTES)
+        self.assertEqual(200, result.status)
+        self.assertEqual(5, opener.open.call_count)
+        self.assertEqual([1, 2, 4, 8], [call.args[0] for call in sleep.call_args_list])
+
+    def test_fetch_still_fails_closed_when_the_outage_persists(self):
+        url = f"{images.PUBLIC_SITE}/robots.txt"
+        opener = MagicMock()
+        opener.open.side_effect = [self._robots_response(530)] * images.FETCH_ATTEMPTS
+        with patch.object(images, "build_opener", return_value=opener), \
+                patch.object(images.time, "sleep") as sleep:
+            result = images.fetch(url, images.MAX_ROBOTS_BYTES)
+        self.assertEqual(530, result.status)
+        self.assertEqual(images.FETCH_ATTEMPTS, opener.open.call_count)
+        self.assertLessEqual(max(call.args[0] for call in sleep.call_args_list),
+                             images.FETCH_MAX_BACKOFF_SECONDS)
+        opener.open.side_effect = [images.URLError("down")] * images.FETCH_ATTEMPTS
+        with patch.object(images, "build_opener", return_value=opener), \
+                patch.object(images.time, "sleep"):
+            with self.assertRaisesRegex(ValueError, "public GET unavailable"):
+                images.fetch(url, images.MAX_ROBOTS_BYTES)
+
     def test_authoritative_origin_robots_not_project_path_controls_crawling(self):
         url = "https://is1-ssl.mzstatic.com/robots.txt"
         self.responses[url] = images.Response(

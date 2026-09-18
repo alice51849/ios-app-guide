@@ -14,12 +14,6 @@ import unittest
 from unittest import mock
 import uuid
 
-from live_app_manifest import canonical_manifest
-
-# The roster is the single source of truth for how many public Apps exist;
-# spelling the count out here goes stale the day a new App ships.
-ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
-
 
 HERE = Path(__file__).resolve().parent
 GEO = HERE.parent
@@ -27,6 +21,15 @@ sys.path.insert(0, str(GEO))
 
 import check_hub_coverage as coverage  # noqa: E402
 import gen_hubs  # noqa: E402
+from live_app_manifest import canonical_manifest  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+# One root hub plus one localized hub per official locale for every App, plus
+# the single index page.  Spelled out, it goes stale the day a new App ships.
+HUB_SITEMAP_URL_COUNT = ROSTER_APP_COUNT * (len(OFFICIAL_LOCALES) + 1) + 1
 
 
 class CanonicalAuthorityTests(unittest.TestCase):
@@ -36,7 +39,7 @@ class CanonicalAuthorityTests(unittest.TestCase):
         self.assertEqual("6806776579", apps["zipbox"]["app_id"])
         self.assertEqual(
             len(apps) * (len(gen_hubs.official_locales()) + 1) + 1,
-            2398,
+            HUB_SITEMAP_URL_COUNT,
         )
 
     def test_main_never_uses_generated_site_inventory_as_its_denominator(self):
@@ -288,7 +291,7 @@ class FullHubCollectionTests(unittest.TestCase):
                 "root_hubs": ROSTER_APP_COUNT,
                 "localized_hubs": ROSTER_APP_COUNT * 50,
                 "index_pages": 1,
-                "sitemap_urls": 2398,
+                "sitemap_urls": HUB_SITEMAP_URL_COUNT,
                 "provider_token": "118326163",
             },
             result,

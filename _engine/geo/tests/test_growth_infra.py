@@ -2500,29 +2500,19 @@ class GeneratorTests(unittest.TestCase):
                 gen_smart_app_banners.banner_block("not-an-id")
 
     def test_blocked_market_page_is_not_a_missing_mobile_cta(self):
-        """A market with no verifiable storefront must stay CTA-less."""
+        """A market policy keeps those pages link-free; that is not a defect."""
         blocked = sorted(market_availability.UNAVAILABLE_MARKETS)[0]
+        app, *_ = sorted(market_availability.UNAVAILABLE_APP_MARKETS)
+        blocked_app = sorted(market_availability.UNAVAILABLE_APP_MARKETS[app])[0]
 
         self.assertFalse(
-            gen_mobile_store_ctas.app_is_sold(blocked, "6773017109", {}),
+            gen_mobile_store_ctas.carries_store_cta(blocked, "6773017109"),
         )
-        self.assertTrue(
-            gen_mobile_store_ctas.app_is_sold("en-US", "6773017109", {}),
-        )
-
-    def test_storefront_that_does_not_carry_the_app_is_not_a_missing_cta(self):
-        """Apple not selling an App somewhere is not a defect in our pages."""
-        availability = {"us": frozenset({"6773017109"}), "gb": frozenset()}
-
         self.assertFalse(
-            gen_mobile_store_ctas.app_is_sold("en-US", "6806639602", availability),
+            gen_mobile_store_ctas.carries_store_cta(app, blocked_app),
         )
         self.assertTrue(
-            gen_mobile_store_ctas.app_is_sold("en-US", "6773017109", availability),
-        )
-        # A storefront the snapshot never observed proves nothing either way.
-        self.assertTrue(
-            gen_mobile_store_ctas.app_is_sold("ja", "6806639602", availability),
+            gen_mobile_store_ctas.carries_store_cta("en-US", "6773017109"),
         )
 
     def test_mobile_store_ctas_reuse_localized_links_and_prune_stale_blocks(self):

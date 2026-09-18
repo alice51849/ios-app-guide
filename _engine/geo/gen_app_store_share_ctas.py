@@ -13,7 +13,6 @@ import re
 import urllib.parse
 
 from app_store_storefronts import (
-    load_storefront_availability,
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
@@ -360,28 +359,22 @@ def generate(
     }
     script_href = asset_href(site)
     changed = int(_write_if_changed(pages / ASSET_RELATIVE, SCRIPT))
-    availability = load_storefront_availability(pages)
     installed: set[Path] = set()
     installed_ids: set[str] = set()
-    unsold: set[Path] = set()
+    blocked: set[Path] = set()
     for path, app_id in sorted(share_targets.items()):
         source = path.read_text(encoding="utf-8")
         locale = market_surface_policy.document_locale(source, path)
-        if not gen_mobile_store_ctas.app_is_sold(locale, app_id, availability):
-            # Apple does not sell this App in that storefront, so the page
-            # carries no store CTA to share and must never invent one.
-            stripped = BLOCK_RE.sub("\n", source)
-            updated = (
-                market_surface_policy.enforce_html(
-                    stripped, locale, app_id=app_id
-                )
-                if market.is_unavailable(locale, app_id)
-                else stripped
+        if not gen_mobile_store_ctas.carries_store_cta(locale, app_id):
+            # The market policy keeps this page link-free, so there is no
+            # store CTA to share and none may be invented.
+            updated = market_surface_policy.enforce_html(
+                BLOCK_RE.sub("\n", source), locale, app_id=app_id,
             )
             changed += int(
                 _write_if_changed(path, updated, previous=source)
             )
-            unsold.add(path)
+            blocked.add(path)
             continue
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
         if cta is None:
@@ -415,9 +408,9 @@ def generate(
     expected_ids = {
         app_id
         for path, app_id in share_targets.items()
-        if path in guide_pages and path not in unsold
+        if path in guide_pages and path not in blocked
     }
-    missing_pages = set(share_targets) - installed - unsold
+    missing_pages = set(share_targets) - installed - blocked
     if missing_pages:
         sample = ", ".join(str(path) for path in sorted(missing_pages)[:5])
         raise ValueError(f"Pages have no native App Store share action: {sample}")

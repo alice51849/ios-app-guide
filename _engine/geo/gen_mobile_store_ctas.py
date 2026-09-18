@@ -12,6 +12,8 @@ from pathlib import Path
 import urllib.parse
 
 from app_store_storefronts import (
+    LOCALE_STOREFRONTS,
+    load_storefront_availability,
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
@@ -186,6 +188,20 @@ def mobile_cta_block(
 {BLOCK_END}"""
 
 
+def app_is_sold(locale: str, app_id: str, availability) -> bool:
+    """Is this App on sale in the storefront this locale reads?
+
+    A blocked market and a storefront Apple simply does not carry the App in
+    both leave the page honestly CTA-less; neither is a missing CTA.  An empty
+    or silent snapshot proves nothing, so the App still counts as on sale.
+    """
+    if market.is_unavailable(locale, app_id):
+        return False
+    storefront = LOCALE_STOREFRONTS.get(locale)
+    sold = availability.get(storefront) if storefront else None
+    return sold is None or app_id in sold
+
+
 def render_mobile_cta(
     path: Path,
     source: str,
@@ -267,9 +283,11 @@ def generate(
         path: app_id for path, app_id in targets.items() if path in eligible_pages
     }
     script_href = asset_href(site)
+    availability = load_storefront_availability(pages)
     changed = int(_write_if_changed(pages / ASSET_RELATIVE, SCRIPT))
     installed: set[Path] = set()
     installed_ids: set[str] = set()
+    unsold: set[Path] = set()
     for path, app_id in sorted(mobile_targets.items()):
         source = path.read_text(encoding="utf-8")
         updated = render_mobile_cta(path, source, app_id, script_href)
@@ -279,6 +297,12 @@ def generate(
         if BLOCK_RE.search(updated):
             installed.add(path)
             installed_ids.add(app_id)
+        elif not app_is_sold(
+            market_surface_policy.document_locale(updated, path),
+            app_id,
+            availability,
+        ):
+            unsold.add(path)
 
     for path in sorted(eligible_pages - set(mobile_targets)):
         source = path.read_text(encoding="utf-8")
@@ -292,9 +316,11 @@ def generate(
             )
 
     expected_ids = {
-        app_id for path, app_id in mobile_targets.items() if path in guide_pages
+        app_id
+        for path, app_id in mobile_targets.items()
+        if path in guide_pages and path not in unsold
     }
-    missing_pages = set(mobile_targets) - installed
+    missing_pages = set(mobile_targets) - installed - unsold
     if missing_pages:
         sample = ", ".join(str(path) for path in sorted(missing_pages)[:5])
         raise ValueError(f"Pages have no direct mobile App Store CTA: {sample}")

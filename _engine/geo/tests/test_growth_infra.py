@@ -186,6 +186,7 @@ import gen_hubs
 import gen_image_sitemap
 import gen_linkset
 import gen_llms
+import market_availability
 import gen_mobile_app_identity
 import gen_mobile_store_ctas
 import gen_publisher_disclosures
@@ -2497,6 +2498,32 @@ class GeneratorTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(ValueError, "app ID"):
                 gen_smart_app_banners.banner_block("not-an-id")
+
+    def test_blocked_market_page_is_not_a_missing_mobile_cta(self):
+        """A market with no verifiable storefront must stay CTA-less."""
+        blocked = sorted(market_availability.UNAVAILABLE_MARKETS)[0]
+
+        self.assertFalse(
+            gen_mobile_store_ctas.app_is_sold(blocked, "6773017109", {}),
+        )
+        self.assertTrue(
+            gen_mobile_store_ctas.app_is_sold("en-US", "6773017109", {}),
+        )
+
+    def test_storefront_that_does_not_carry_the_app_is_not_a_missing_cta(self):
+        """Apple not selling an App somewhere is not a defect in our pages."""
+        availability = {"us": frozenset({"6773017109"}), "gb": frozenset()}
+
+        self.assertFalse(
+            gen_mobile_store_ctas.app_is_sold("en-US", "6806639602", availability),
+        )
+        self.assertTrue(
+            gen_mobile_store_ctas.app_is_sold("en-US", "6773017109", availability),
+        )
+        # A storefront the snapshot never observed proves nothing either way.
+        self.assertTrue(
+            gen_mobile_store_ctas.app_is_sold("ja", "6806639602", availability),
+        )
 
     def test_mobile_store_ctas_reuse_localized_links_and_prune_stale_blocks(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 3,
-  "roster_digest": "a8b6e20d55d2a8b89f5ddc98ffa760b72de8d917924dc43e8270cd16b905bd03",
+  "revision": 4,
+  "roster_digest": "87be77d97d7b66cb1844453b07bd861c1cef5808e89204ae5f6065bb4a44f544",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -55,6 +55,10 @@
     "hourstaglite": {
       "app_id": "6794039979",
       "name": "HoursTag Lite"
+    },
+    "ledmovingtext": {
+      "app_id": "6806639602",
+      "name": "LED Moving Text"
     },
     "lockhour": {
       "app_id": "6780107485",

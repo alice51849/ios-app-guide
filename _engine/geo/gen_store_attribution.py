@@ -177,6 +177,44 @@ SECTION_BUCKETS = {
 STORY_CAMPAIGN = "iag_story"
 PROTECTED_CAMPAIGNS = frozenset({STORY_CAMPAIGN})
 
+# Publisher-owned atomic endpoints.  This stamping pass only rewrites *.html,
+# so the JSON/JSON-LD collections below keep the campaign their own generator
+# minted.  They are first-party attribution for surfaces that predate the three
+# -bucket contract, not new buckets, so the taxonomy enumerates them one
+# generator at a time instead of widening the bucket contract or accepting any
+# iag_* string.  Each entry names the generator that mints it.
+ATOMIC_CAMPAIGNS = frozenset({
+    "iag_linkset",                       # gen_linkset.py: one RFC 9264 linkset
+})
+# Minted once per official locale, as <prefix><locale with - replaced by _>.
+ATOMIC_LOCALE_CAMPAIGN_PREFIXES = (
+    "iag_visual_",                       # publisher_intent_visuals.py
+    "iag_video_",                        # app_video_lessons.py
+)
+# gen_social_previews.py publishes the English oEmbed document at the tree root,
+# where the campaign carries the bare language subtag instead of the storefront
+# locale the audit resolves that document to.
+ATOMIC_OEMBED_CAMPAIGN_PREFIX = "iag_oembed_"
+ATOMIC_OEMBED_ROOT_LOCALE = "en-US"
+ATOMIC_OEMBED_ROOT_SLUG = "en"
+# result_image_index.py stamps one campaign per App key, truncated the same way.
+ATOMIC_APP_CAMPAIGN_PREFIX = "img_"
+
+
+def atomic_locale_campaigns(locale: str) -> frozenset[str]:
+    """Enumerate the atomic campaigns a single locale is allowed to publish."""
+    slug = locale.replace("-", "_").lower()
+    tokens = {prefix + slug for prefix in ATOMIC_LOCALE_CAMPAIGN_PREFIXES}
+    tokens.add(ATOMIC_OEMBED_CAMPAIGN_PREFIX + slug)
+    if locale == ATOMIC_OEMBED_ROOT_LOCALE:
+        tokens.add(ATOMIC_OEMBED_CAMPAIGN_PREFIX + ATOMIC_OEMBED_ROOT_SLUG)
+    return frozenset(token for token in tokens if len(token) <= MAX_TOKEN)
+
+
+def atomic_app_campaign(app_key: str) -> str:
+    """The campaign result_image_index.py stamps for one App key."""
+    return f"{ATOMIC_APP_CAMPAIGN_PREFIX}{app_key}"[:MAX_TOKEN]
+
 # Historical tokens -> the bucket they roll up into, so the report keeps one
 # continuous series across the 2026-08-20 change instead of starting at zero.
 # Legacy geo_<section>_<market> tokens are reversed through SECTION_BUCKETS;

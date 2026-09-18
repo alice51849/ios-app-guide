@@ -45,7 +45,8 @@ def reseal_catalog(pages: Path) -> None:
         "localized": {locale: doc["apps"] for locale, doc in catalogs.items()},
     })
     write_json(pages / feeds.CATALOG / "index.json", {
-        "api_version": "1.2.0", "locale_count": 50, "record_count": 47,
+        "api_version": "1.2.0", "locale_count": 50,
+        "record_count": len(canonical_manifest()["apps"]),
         "content_digest": content, "date_modified": OLD[:10],
     })
     copies = feeds.load_copy(GEO)
@@ -81,7 +82,7 @@ def make_catalog(pages: Path) -> None:
                 **market.record_fields(locale, app["app_id"]),
             })
         write_json(pages / feeds.CATALOG / "locales" / f"{locale}.json", {
-            "locale": locale, "record_count": 47, "apps": apps,
+            "locale": locale, "record_count": len(roster["apps"]), "apps": apps,
         })
         (pages / locale).mkdir(parents=True, exist_ok=True)
         (pages / locale / "index.html").write_text(

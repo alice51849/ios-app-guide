@@ -145,6 +145,7 @@ SITUATIONS: dict[str, str] = {
     "wifiaid": "utility",
     "wifiaidlite": "utility",
     "zipbox": "utility",
+    "ledmovingtext": "utility",
 }
 DEFAULT_SITUATION = "utility"
 

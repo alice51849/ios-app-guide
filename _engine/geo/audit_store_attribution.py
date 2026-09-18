@@ -20,6 +20,7 @@ from collections.abc import Callable
 from concurrent.futures import ProcessPoolExecutor
 import csv
 from dataclasses import dataclass
+import functools
 import hashlib
 import html
 from html.parser import HTMLParser
@@ -484,6 +485,26 @@ def normalized_reference(ref: Reference) -> Reference:
     return Reference(ref.url, ref.field, ref.locale, None, True, ref.surface)
 
 
+@functools.cache
+def _roster_campaign_by_app_id() -> dict[str, str]:
+    """Map every canonical App id onto the one result-image campaign it owns."""
+    from gen_store_attribution import atomic_app_campaign
+    from live_app_manifest import canonical_manifest
+
+    return {
+        str(app["app_id"]): atomic_app_campaign(key)
+        for key, app in canonical_manifest()["apps"].items()
+    }
+
+
+def _app_result_campaign(url: str) -> str | None:
+    """The result-image campaign the linked App is allowed to publish, if any."""
+    match = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(url).path)
+    if match is None:
+        return None
+    return _roster_campaign_by_app_id().get(match["app_id"])
+
+
 def validate_reference(ref: Reference, *, provider: str,
                        availability: dict[str, frozenset[str]] | None = None) -> str | None:
     ref = normalized_reference(ref)
@@ -503,12 +524,21 @@ def validate_reference(ref: Reference, *, provider: str,
         require_campaign=True, provider_token=provider, availability=availability,
     )
     campaign = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(normalized).query))["ct"]
-    from gen_store_attribution import BUCKETS, PROTECTED_CAMPAIGNS, TOKEN_PREFIX
+    from gen_store_attribution import (
+        ATOMIC_CAMPAIGNS, BUCKETS, PROTECTED_CAMPAIGNS, TOKEN_PREFIX,
+        atomic_locale_campaigns,
+    )
 
     allowed = {TOKEN_PREFIX + bucket for bucket in BUCKETS} | PROTECTED_CAMPAIGNS
-    # These are existing publisher-owned atomic collections, not new buckets.
+    # These are existing publisher-owned atomic collections, not new buckets:
+    # the stamping pass only rewrites *.html, so a JSON collection keeps the
+    # campaign its own generator minted.  Every one is enumerated by generator.
+    allowed |= ATOMIC_CAMPAIGNS
     if ref.locale in LOCALE_STOREFRONTS:
-        allowed.add("iag_visual_" + ref.locale.replace("-", "_").lower())
+        allowed |= atomic_locale_campaigns(ref.locale)
+    app_campaign = _app_result_campaign(normalized)
+    if app_campaign is not None:
+        allowed.add(app_campaign)
     if campaign not in allowed:
         raise AttributionError(f"Campaign outside the existing taxonomy: {campaign}")
     return campaign

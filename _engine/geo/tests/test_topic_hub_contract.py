@@ -14,6 +14,12 @@ import unittest
 from unittest import mock
 import uuid
 
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+
 
 HERE = Path(__file__).resolve().parent
 GEO = HERE.parent
@@ -24,9 +30,9 @@ import gen_hubs  # noqa: E402
 
 
 class CanonicalAuthorityTests(unittest.TestCase):
-    def test_authority_is_the_47_app_manifest_and_includes_zipbox(self):
+    def test_authority_is_the_canonical_app_manifest_and_includes_zipbox(self):
         apps = gen_hubs.authority_apps()
-        self.assertEqual(47, len(apps))
+        self.assertEqual(ROSTER_APP_COUNT, len(apps))
         self.assertEqual("6806776579", apps["zipbox"]["app_id"])
         self.assertEqual(
             len(apps) * (len(gen_hubs.official_locales()) + 1) + 1,
@@ -277,10 +283,10 @@ class FullHubCollectionTests(unittest.TestCase):
         result = coverage.audit(self.workspace)
         self.assertEqual(
             {
-                "apps": 47,
+                "apps": ROSTER_APP_COUNT,
                 "locales": 50,
-                "root_hubs": 47,
-                "localized_hubs": 2350,
+                "root_hubs": ROSTER_APP_COUNT,
+                "localized_hubs": ROSTER_APP_COUNT * 50,
                 "index_pages": 1,
                 "sitemap_urls": 2398,
                 "provider_token": "118326163",

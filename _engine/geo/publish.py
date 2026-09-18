@@ -301,6 +301,10 @@ def main():
     require([PY, os.path.join(HERE, "gen_webmcp_install_tools.py")], env=env)
     require([PY, os.path.join(HERE, "portfolio_app_catalog_api.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_catalog.py")], env=env)
+    # 這支從沒被排程呼叫過,線上 data/ios-app-decision-matrix.* 停留在 2026-09-03
+    # 的手動產物,sameAs 還帶著早已淘汰的 ct/pt 追蹤參數。schema.org 的 sameAs 是
+    # 身分欄位不是 CTA,產生器早就改成輸出乾淨 URL,但沒登記就永遠不會重產。
+    require([PY, os.path.join(HERE, "app_decision_matrix.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
     require([PY, os.path.join(HERE, "app_video_lessons.py")], env=env)
     require(

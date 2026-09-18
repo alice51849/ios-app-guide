@@ -13,6 +13,12 @@ import unittest
 from urllib.parse import parse_qs, urlsplit
 
 import app_store_storefronts as stores
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+
 import gen_app_store_qr_ctas as qr
 import gen_publisher_disclosures as disclosures
 import gen_store_attribution as attribution
@@ -256,7 +262,7 @@ class ShortZeroSurfaceContract(unittest.TestCase):
         self.assertNotIn("6778269699", source)
         self.assertIn("paid-upfront", source.lower())
 
-    def test_47_apps_50_locales_150_feeds_and_na_items_stay_in_denominator(self):
+    def test_every_app_50_locales_150_feeds_and_na_items_stay_in_denominator(self):
         import owned_app_feeds as feeds
 
         self.assertEqual(50, len(OFFICIAL_LOCALES))
@@ -264,7 +270,7 @@ class ShortZeroSurfaceContract(unittest.TestCase):
         cells = set()
         for locale in OFFICIAL_LOCALES:
             document = json.loads((PAGES / locale / "feed.json").read_text())
-            self.assertEqual(47, len(document["items"]))
+            self.assertEqual(ROSTER_APP_COUNT, len(document["items"]))
             for item in document["items"]:
                 owned = item["_owned_app"]
                 cells.add((owned["app_store_id"], locale))
@@ -277,7 +283,7 @@ class ShortZeroSurfaceContract(unittest.TestCase):
                     self.assertEqual(0, owned["market_availability"]["outbox_count"])
             if locale == "bn-BD":
                 self.assertNotIn("apps.apple.com", json.dumps(document))
-        self.assertEqual(2350, len(cells))
+        self.assertEqual(ROSTER_APP_COUNT * 50, len(cells))
 
 
 if __name__ == "__main__":

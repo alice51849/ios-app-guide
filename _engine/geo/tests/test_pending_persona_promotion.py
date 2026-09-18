@@ -117,7 +117,12 @@ class PendingPersonaTests(unittest.TestCase):
         self.assertIn("gbago", personas)
         self.assertNotIn("gbago", pending)
         self.assertEqual({"query": "q"}, personas["existing"][0])
-        for key in set(LAUNCH_CANDIDATES) - {"gbago"}:
+        # Only the candidates that are still staged can stay staged: once a
+        # candidate is registered in the automatic registry its persona is
+        # promoted at import time and is no longer in PENDING_PERSONAS.
+        staged = set(LAUNCH_CANDIDATES) & set(answer_personas.PENDING_PERSONAS)
+        self.assertIn("gbago", staged)
+        for key in staged - {"gbago"}:
             self.assertIn(key, pending)
         self.assertEqual([], answer_personas.promote_registered_personas(
             pending, personas, frozenset()

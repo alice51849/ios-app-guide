@@ -19,6 +19,15 @@ import market_availability
 from official_locales import OFFICIAL_LOCALES
 from videogen.registry import APPSTORE
 from market_contract_assertions import assert_blocked_page
+from live_app_manifest import canonical_manifest
+
+# Derived from the canonical roster, not spelled out: a new App changes this
+# count the day it ships, and a hand-written number silently goes stale.
+BLOCKED_CELL_COUNT = sum(
+    market_availability.is_unavailable(locale, app["app_id"])
+    for locale in OFFICIAL_LOCALES
+    for app in canonical_manifest()["apps"].values()
+)
 
 
 def _page(site: str, locale: str, key: str, app_id: str) -> str:
@@ -305,7 +314,7 @@ class AppStoreFactsTests(unittest.TestCase):
                             source,
                         )
         self.assertGreater(checked, 1200)
-        self.assertEqual(blocked, 51)
+        self.assertEqual(blocked, BLOCKED_CELL_COUNT)
 
 
 if __name__ == "__main__":

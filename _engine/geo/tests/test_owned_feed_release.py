@@ -5,6 +5,11 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from owned_feed_fixtures import FeedFixture, Response, feeds
 import owned_feed_release as release
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
 
 
 class OwnedFeedReleaseTests(FeedFixture):
@@ -28,7 +33,7 @@ class OwnedFeedReleaseTests(FeedFixture):
         self.assertEqual(before, (path.read_bytes(), path.stat().st_mtime_ns))
         self.assertTrue(manifest["notification_release_hold"])
         self.assertEqual(150, manifest["feed_count"])
-        self.assertEqual(2350, manifest["record_count"])
+        self.assertEqual(ROSTER_APP_COUNT * 50, manifest["record_count"])
         self.assertEqual(0, manifest["provider_requests"])
 
     def test_both_hosts_require_all_150_exact_feeds_without_authorizing_notifications(self):

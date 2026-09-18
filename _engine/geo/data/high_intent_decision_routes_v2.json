@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 47,
-    "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
-    "copy_sha256": "5439fa3d547559a9e04824b6e65292c9ffaf5c476a3a1e5f9d7c044686f11b09",
+    "expected_app_count": 48,
+    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
+    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2041,6 +2041,40 @@
             "feature.3",
             "feature.4",
             "feature.5"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "ledmovingtext",
+      "route_slug": "hold-up-a-message-people-can-read-across-a-crowd",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [0, 2, 4],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US arrivals halls, standing-room venues and busy service counters all need a name or an instruction that reads from far away, and the phone already in hand is usually the only screen there.",
+          "query": "How do I turn an iPhone screen into a sign people can read from across a crowd?",
+          "buyer_problem": "A note typed into a notes app stops being readable past the first row, and a printed card cannot be changed once the name, gate or order number changes. The decision is whether a phone screen can carry one message at a readable size, and whether the next message can be queued instead of retyped between moments.",
+          "decision_rule": "Choose a full-screen scrolling board when the message has to be read at a distance and is likely to change during the same event. The board itself is free to try, and the extra controls for running several prepared messages are one one-time unlock, not a subscription.",
+          "workflow_checks": [
+            "Can the message still be read from the back of the room or the far end of an arrivals hall?",
+            "Can several prepared messages be stepped through without leaving the full-screen board?",
+            "Can a message be corrected on the spot when a name, gate or order number changes?"
+          ],
+          "alternative_lens": "A printed sign is still better in outdoor daylight, or when the phone has to stay free for calls. A dedicated LED panel is better when one unchanging message has to run unattended for hours.",
+          "verify_before_install": [
+            "Check the current listing for which controls are free and which need the one-time unlock.",
+            "Try one real message at the distance it actually has to be read from before the event."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.1"
           ]
         }
       }

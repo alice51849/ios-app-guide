@@ -21,6 +21,11 @@ if str(GEO) not in sys.path:
 import app_install_decision_feeds
 import app_install_decision_routes
 from official_locales import OFFICIAL_LOCALES
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
 
 
 class AppInstallDecisionFeedTests(unittest.TestCase):
@@ -91,7 +96,7 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
             for path in (atom_path, rss_path, json_path):
                 self.assertTrue(path.is_file(), path)
             if locale == "bn-BD":
-                self.assertEqual(len(records), 47)
+                self.assertEqual(len(records), ROSTER_APP_COUNT)
                 for record in records:
                     assert_blocked_record(self, record)
                 for path in (atom_path, rss_path, json_path):

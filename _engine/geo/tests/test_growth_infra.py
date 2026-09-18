@@ -22160,6 +22160,10 @@ class GeneratorTests(unittest.TestCase):
             # Free core, one $5.99 Lifetime Pro purchase, no subscription
             # (App Store listing and approved IAP, checked 2026-08-27).
             "battai",
+            # Free download, one non-consumable unlock and no subscription
+            # (App Store listing free, EntitlementStore ships a single
+            # .nonConsumable product, checked 2026-09-19).
+            "ledmovingtext",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

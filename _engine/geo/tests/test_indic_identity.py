@@ -16,6 +16,11 @@ from external_app_identity import (
     external_identity, registry_name,
 )
 from regen_indic_identity import STORE_URL, path_locale, repair_document, repair_text
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
 from app_store_storefronts import LOCALE_STOREFRONTS
 from market_contract_assertions import assert_blocked_page, assert_blocked_record
 
@@ -71,9 +76,15 @@ class IndicIdentityTests(unittest.TestCase):
 
         pages = Path(os.environ.get("GEO_PAGES", Path(__file__).resolve().parents[1] / "pages"))
         primary = list((pages / "bn-BD").glob("*.html"))
-        self.assertEqual(len(primary), 51)
         apps = json.loads((pages / "data/verified-ios-app-finder-catalog.json").read_text())["apps"]
-        self.assertEqual(len(apps), 47)
+        self.assertEqual(len(apps), ROSTER_APP_COUNT)
+        # One page per App plus the four fixed non-App pages of the tree; a
+        # count spelled out here goes stale the day a new App ships.
+        self.assertEqual(
+            {path.stem for path in primary} - {str(app["key"]) for app in apps},
+            {"index", "browse", "aim990plus-privacy", "aim990plus-support"},
+        )
+        self.assertEqual(len(primary), ROSTER_APP_COUNT + 4)
         for path in (pages / "bn-BD").rglob("*.html"):
             with self.subTest(page=str(path)):
                 source = path.read_text()
@@ -83,7 +94,7 @@ class IndicIdentityTests(unittest.TestCase):
         self.assertEqual(sum(
             (pages / "bn-BD" / f"{app['key']}.html").read_text().count('class="market-availability"')
             for app in apps
-        ), 47)
+        ), ROSTER_APP_COUNT)
         for locale in (locale for locale in INDIC_LOCALES if locale != "bn-BD"):
             checked = 0
             primary_ids = set()
@@ -127,11 +138,11 @@ class IndicIdentityTests(unittest.TestCase):
         third = api.feed_payload("hi", "Apps", [app], "2026-09-11", "b" * 64, previous_items=second["items"], timestamp="2026-09-11T01:00:00Z")
         self.assertEqual(second["items"], third["items"])
 
-    def test_47_by_10_geo_owned_feed_cta_storefront_app_id_and_brand(self):
+    def test_every_app_by_10_geo_owned_feed_cta_storefront_app_id_and_brand(self):
         pages = Path(os.environ.get("GEO_PAGES", Path(__file__).resolve().parents[1] / "pages"))
         finder = json.loads((pages / "data/verified-ios-app-finder-catalog.json").read_text())
         apps = {row["key"]: str(row["app_store_id"]) for row in finder["apps"]}
-        self.assertEqual(len(apps), 47)
+        self.assertEqual(len(apps), ROSTER_APP_COUNT)
         rows = json.loads((pages / "data/app-install-decision-routes.json").read_text())["records"]
         owned = {(row["app_key"], row["locale"]): row for row in rows}
         feeds = {
@@ -226,7 +237,7 @@ class IndicIdentityTests(unittest.TestCase):
                         if locale == "bn-BD":
                             self.assertNotRegex(feed, r"apps\.apple\.com/(?:in/)?app/id")
                     checked += 1
-        self.assertEqual(checked, 470)
+        self.assertEqual(checked, ROSTER_APP_COUNT * len(INDIC_LOCALES))
 
     def test_trip_planet_identity_is_exact_in_all_ten_locales(self):
         for locale in INDIC_LOCALES:

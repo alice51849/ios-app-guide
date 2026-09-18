@@ -23,6 +23,15 @@ if str(GEO) not in sys.path:
 import gen_github_discovery_readmes as discovery
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog as catalog
+from live_app_manifest import canonical_manifest
+
+# Derived from the canonical roster, not spelled out: a new App changes this
+# count the day it ships, and a hand-written number silently goes stale.
+PUBLISHABLE_CELL_COUNT = sum(
+    not discovery.market.is_unavailable(locale, app["app_id"])
+    for locale in OFFICIAL_LOCALES
+    for app in canonical_manifest()["apps"].values()
+)
 
 
 class GitHubDiscoveryContractTests(unittest.TestCase):
@@ -484,7 +493,7 @@ class GitHubDiscoveryOutputTests(unittest.TestCase):
                 discovery.validated_app_store_url(url, app_id)
                 generic += parsed.path == f"/app/id{app_id}"
                 seen_pairs.add((locale, app_id))
-        self.assertEqual(2299, len(seen_pairs))
+        self.assertEqual(PUBLISHABLE_CELL_COUNT, len(seen_pairs))
         self.assertEqual(
             sum(
                 urlparse(record["app_store_url"]).path

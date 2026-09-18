@@ -16,6 +16,7 @@ from owned_feed_fixtures import (
     OFFICIAL_LOCALES, reseal_catalog, write_json,
 )
 import owned_feed_locale_gate as locale_gate
+from live_app_manifest import canonical_manifest
 
 
 class LocaleGateTests(unittest.TestCase):
@@ -54,13 +55,22 @@ class LocaleGateTests(unittest.TestCase):
         locale_gate.validate_summary("en-US", "Ad-free math puzzles", "paid_upfront")
 
 
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+
+
 class OwnedFeedTests(FeedFixture):
-    def test_exact_150_feeds_2350_records_and_cross_format_identity(self):
+    def test_exact_150_feeds_every_app_locale_record_and_cross_format_identity(self):
         manifest = feeds.read_manifest(self.pages)
-        self.assertEqual((47, 50, 2350, 150, 147), tuple(manifest[k] for k in (
-            "app_count", "locale_count", "record_count", "feed_count", "notification_feed_count"
-        )))
-        self.assertEqual({"paid_upfront": 13, "free_with_lifetime_unlock": 34},
+        self.assertEqual(
+            (ROSTER_APP_COUNT, 50, ROSTER_APP_COUNT * 50, 150, 147),
+            tuple(manifest[k] for k in (
+                "app_count", "locale_count", "record_count", "feed_count",
+                "notification_feed_count",
+            )),
+        )
+        self.assertEqual({"paid_upfront": 13, "free_with_lifetime_unlock": 35},
                          manifest["purchase_models"])
         paths, pairs = set(), set()
         for locale in OFFICIAL_LOCALES:
@@ -80,7 +90,7 @@ class OwnedFeedTests(FeedFixture):
                   for p in (self.pages / locale).iterdir()
                   if p.name in {spec[0] for spec in feeds.FORMATS.values()}}
         self.assertEqual(paths, actual)
-        self.assertEqual(2350, len(pairs))
+        self.assertEqual(ROSTER_APP_COUNT * 50, len(pairs))
 
     def test_normal_generator_twice_and_next_day_are_byte_and_mtime_identical(self):
         before = self.fingerprints()
@@ -137,7 +147,7 @@ class OwnedFeedTests(FeedFixture):
             self.assertNotIn('rel="hub"', raw)
             self.assertNotIn("<cloud", raw)
         document = feeds.read_json(self.pages / "bn-BD/feed.json")
-        self.assertEqual(47, len(document["items"]))
+        self.assertEqual(ROSTER_APP_COUNT, len(document["items"]))
         for item in document["items"]:
             self.assertNotIn("external_url", item)
             self.assertEqual(

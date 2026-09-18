@@ -19,6 +19,11 @@ GEO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GEO))
 import conversion_route_contract as conversion  # noqa: E402
 import high_intent_decision_routes as routes  # noqa: E402
+from live_app_manifest import canonical_manifest  # noqa: E402
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
 
 IDS = {
     "mochi": "6785004775", "lumibopomofo": "6773017109", "scanto": "6779977651",
@@ -83,8 +88,11 @@ class ConversionRouteContractTests(unittest.TestCase):
     def test_stable_ids_and_source_derived_native_routes(self):
         self.assertEqual(IDS, {key: row["app_id"] for key, row in self.contracts.items()})
         self.assertEqual(sum(len(row["localized"]) for row in self.contracts.values()), len(self.converted))
-        self.assertEqual(47, len(self.source["routes"]))
-        self.assertEqual(2350, self.report["coverage"]["candidate_app_locale_pairs"])
+        self.assertEqual(ROSTER_APP_COUNT, len(self.source["routes"]))
+        self.assertEqual(
+            ROSTER_APP_COUNT * 50,
+            self.report["coverage"]["candidate_app_locale_pairs"],
+        )
         self.assertEqual(0, self.report["coverage"]["fallback_records"])
         for key in IDS:
             self.assertEqual(IDS[key], self.apps[key]["app_store_id"])
@@ -100,12 +108,12 @@ class ConversionRouteContractTests(unittest.TestCase):
         self.assertIn("zh-Hant", self.contracts["cyca"]["localized"])
         self.assertIn("de-DE", self.contracts["mochidonestamp"]["localized"])
 
-    def test_existing_47_by_50_install_decision_baseline_is_intact(self):
+    def test_existing_every_app_by_50_install_decision_baseline_is_intact(self):
         baseline = json.loads((self.pages / "data/app-install-decision-routes.json").read_text())
-        self.assertEqual((47, 50, 2350), (
+        self.assertEqual((ROSTER_APP_COUNT, 50, ROSTER_APP_COUNT * 50), (
             baseline["app_count"], baseline["locale_count"], baseline["record_count"],
         ))
-        self.assertEqual(2350, len(baseline["records"]))
+        self.assertEqual(ROSTER_APP_COUNT * 50, len(baseline["records"]))
         self.assertEqual(50, len(set(baseline["locales"])))
 
     def test_missing_reference_and_wrong_app_id_fail_closed(self):

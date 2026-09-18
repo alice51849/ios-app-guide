@@ -12,6 +12,12 @@ from urllib.parse import parse_qs, urlsplit
 import aeo_answers
 import aeo_answers_i18n
 import app_store_storefronts as stores
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+
 import build_pages_i18n
 import gen_review_pages
 import market_availability as market
@@ -256,9 +262,9 @@ class PaidUpfrontSurfaces(unittest.TestCase):
         self.assertIn("4×6", source)
         self.assertNotIn("take a compliant photo", source)
 
-    def test_47_by_50_floor_bn_content_only_and_four_unknowns_are_untouched(self):
+    def test_every_app_by_50_floor_bn_content_only_and_four_unknowns_are_untouched(self):
         catalog = json.loads((PAGES / "data/verified-ios-app-finder-catalog.json").read_text())
-        self.assertEqual(47, len(catalog["apps"]))
+        self.assertEqual(ROSTER_APP_COUNT, len(catalog["apps"]))
         self.assertEqual(50, len(OFFICIAL_LOCALES))
         for row in catalog["apps"]:
             key = row["key"]

@@ -14,6 +14,12 @@ import gen_market_availability as boundary
 import market_availability as market
 import market_surface_policy as policy
 from official_locales import OFFICIAL_LOCALES
+from live_app_manifest import canonical_manifest
+
+# The roster is the single source of truth for how many public Apps exist;
+# spelling the count out here goes stale the day a new App ships.
+ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
+
 from market_contract_assertions import assert_blocked_page, assert_blocked_record
 
 
@@ -204,11 +210,11 @@ class MarketConsumerTests(unittest.TestCase):
         pages = Path(os.environ.get("GEO_PAGES", primary.PAGES))
         apps = json.loads((pages / "data/verified-ios-app-finder-catalog.json").read_text())["apps"]
         records = primary.localized_directory_records("bn-BD", [app["key"] for app in apps])
-        self.assertEqual(len(records), 47)
+        self.assertEqual(len(records), ROSTER_APP_COUNT)
         self.assertEqual({record["app_id"] for record in records}, {str(app["app_store_id"]) for app in apps})
         source = (pages / "bn-BD/index.html").read_text()
         assert_blocked_page(self, source)
-        self.assertEqual(source.count('class="app-card"'), 47)
+        self.assertEqual(source.count('class="app-card"'), ROSTER_APP_COUNT)
         for record in records:
             assert_blocked_record(self, record, ("canonical_store", "store_url"))
             self.assertIsNone(record["storefront"])
@@ -276,7 +282,7 @@ class MarketConsumerTests(unittest.TestCase):
         assert_blocked_page(self, source)
         data = json.loads(re.search(r"const WEBMCP_RECORDS=(.*);\n", source)[1])
         context = json.loads(re.search(r"const WEBMCP_MARKET_FIELDS=(.*);\n", source)[1])
-        self.assertEqual(len(data), 47)
+        self.assertEqual(len(data), ROSTER_APP_COUNT)
         expression = re.search(
             r"return JSON.stringify\((\{.*?\})\);\s*\}",
             source[source.index("async function registerWebMcp"):],
@@ -294,7 +300,7 @@ process.stdout.write(JSON.stringify(result));
             text=True, capture_output=True, timeout=30, check=True,
         )
         payload = json.loads(result.stdout)
-        self.assertEqual(payload["match_count"], 47)
+        self.assertEqual(payload["match_count"], ROSTER_APP_COUNT)
         self.assertEqual(payload["market_availability"]["outbox_count"], 0)
         for match in payload["matches"]:
             assert_blocked_record(self, match, ("app_store_url",))

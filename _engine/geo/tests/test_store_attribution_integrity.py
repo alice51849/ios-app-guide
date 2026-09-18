@@ -1265,5 +1265,91 @@ class ParallelAttributionEquivalenceTests(unittest.TestCase):
                     attribution.attribution_workers()
 
 
+class AtomicCampaignTaxonomyTests(unittest.TestCase):
+    """The atomic JSON endpoints are inside the taxonomy; neighbours are not.
+
+    ``gen_store_attribution`` only re-stamps ``*.html``, so an oEmbed document,
+    the linkset, the video-lesson collection and the result-image gallery keep
+    the campaign their own generator minted.  Enumerating them must not turn
+    the check into ``startswith("iag_")``: every case below pairs an accepted
+    campaign with the nearest campaign that still has to fail.
+    """
+
+    def setUp(self):
+        self.environment = mock.patch.dict(
+            os.environ, {stores.PROVIDER_TOKEN_ENV: PROVIDER}
+        )
+        self.environment.start()
+        self.addCleanup(self.environment.stop)
+
+    def campaign(self, campaign, locale="en-US", app_id=APP_ID):
+        url = store_url(app_id=app_id, locale=locale, campaign=campaign)
+        audit.audit_source(
+            document(url, locale=locale, app_id=app_id),
+            f"{locale}/app.html",
+            provider=PROVIDER,
+            availability=AVAILABILITY,
+        )
+
+    def test_every_atomic_generator_campaign_is_inside_the_taxonomy(self):
+        for campaign, locale in (
+            ("iag_linkset", "en-US"),          # gen_linkset.py
+            ("iag_oembed_en", "en-US"),        # gen_social_previews.py, root tree
+            ("iag_oembed_en_us", "en-US"),
+            ("iag_oembed_ar_sa", "ar-SA"),
+            ("iag_oembed_zh_hant", "zh-Hant"),
+            ("iag_video_de_de", "de-DE"),      # app_video_lessons.py
+            ("iag_video_ja", "ja"),
+            ("iag_visual_fr_fr", "fr-FR"),     # publisher_intent_visuals.py
+            ("geo_pick", "en-US"),             # the unchanged bucket contract
+            ("geo_ask", "ja"),
+            ("geo_learn", "de-DE"),
+            ("iag_story", "en-US"),            # the pre-existing protected token
+        ):
+            with self.subTest(campaign=campaign, locale=locale):
+                self.campaign(campaign, locale=locale)
+
+    def test_result_image_campaign_is_bound_to_the_app_it_links_to(self):
+        key, app_id = next(iter(LIVE_APPS.items()))
+        other = next(k for k in LIVE_APPS if k != key)
+        self.campaign(attribution.atomic_app_campaign(key), app_id=app_id)
+        with self.assertRaises(audit.AttributionError):
+            # Control: another App's result-image campaign on this App's link.
+            self.campaign(attribution.atomic_app_campaign(other), app_id=app_id)
+
+    def test_campaigns_outside_the_enumerated_patterns_still_fail(self):
+        for campaign, locale in (
+            ("iag_oembed", "en-US"),           # prefix alone is not a campaign
+            ("iag_oembed_", "en-US"),
+            ("iag_oembed_xx_yy", "en-US"),     # not an official locale
+            ("iag_oembed_ja", "ar-SA"),        # right family, wrong locale
+            ("iag_visual_en", "en-US"),        # bare subtag is oEmbed-only
+            ("iag_video_en", "en-US"),
+            ("iag_linkset_extra", "en-US"),    # not the single linkset
+            ("iag_linkse", "en-US"),
+            ("img_", "en-US"),                 # not a canonical App key
+            ("img_notanapp", "en-US"),
+            ("iag_ans_en", "en-US"),           # legacy tokens are re-stamped
+            ("iag_anything", "en-US"),
+            ("geo_pickk", "en-US"),
+            ("geo", "en-US"),
+        ):
+            with self.subTest(campaign=campaign, locale=locale):
+                with self.assertRaises(audit.AttributionError):
+                    self.campaign(campaign, locale=locale)
+
+    def test_atomic_locale_campaigns_stay_within_the_token_budget(self):
+        for locale in OFFICIAL_LOCALES:
+            for token in attribution.atomic_locale_campaigns(locale):
+                with self.subTest(token=token):
+                    self.assertLessEqual(len(token), attribution.MAX_TOKEN)
+                    self.assertRegex(token, r"^[a-z0-9_]+$")
+        for key in LIVE_APPS:
+            token = attribution.atomic_app_campaign(key)
+            with self.subTest(token=token):
+                self.assertLessEqual(len(token), attribution.MAX_TOKEN)
+                self.assertRegex(token, r"^[a-z0-9_]+$")
+
+
 if __name__ == "__main__":
     unittest.main()

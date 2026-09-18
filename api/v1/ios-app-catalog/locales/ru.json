@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-17",
-  "content_digest": "8c8cffcf8d99cd61b0f1bf39b8441cdc5885060d2afcdfd065f31069e21d38b0",
+  "date_modified": "2026-09-18",
+  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -26,8 +26,7 @@
         "учёба",
         "экзамен",
         "офлайн",
-        "документы",
-        "аннотации pdf"
+        "документы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -147,8 +146,7 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы",
-        "toeic аудирование"
+        "фразы"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -469,8 +467,7 @@
         "курс",
         "офлайн",
         "csv",
-        "счета",
-        "деньги в путешествии"
+        "счета"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -507,8 +504,7 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов",
-        "расходы в путешествии"
+        "контроль расходов"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -876,8 +872,7 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн",
-        "фонетика для детей"
+        "офлайн"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1578,9 +1573,7 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив",
-        "сохранить статьи",
-        "читать позже"
+        "архив"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2107,8 +2100,7 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping",
-        "диагностика wifi"
+        "ping"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2222,9 +2214,7 @@
         "файлы",
         "7zip",
         "unrar",
-        "gz",
-        "распаковать 7z",
-        "открыть файлы rar"
+        "gz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-17",
-  "content_digest": "8c8cffcf8d99cd61b0f1bf39b8441cdc5885060d2afcdfd065f31069e21d38b0",
+  "date_modified": "2026-09-18",
+  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -106,10 +106,7 @@
         "écoute",
         "lecture",
         "score",
-        "pratique",
-        "toeic écoute",
-        "vocabulaire toeic",
-        "entraînement toeic"
+        "pratique"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -147,8 +144,7 @@
         "écoute",
         "grammaire",
         "révisions",
-        "minuteur",
-        "toeic lecture"
+        "minuteur"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -184,9 +180,7 @@
         "Bonnes pratiques",
         "Plage de recharge",
         "Rythme de recharge",
-        "Exporter les données",
-        "capacité batterie",
-        "santé batterie"
+        "Exporter les données"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -553,9 +547,7 @@
         "finances",
         "achats impulsifs",
         "épargne",
-        "gérer argent",
-        "dépenses conscientes",
-        "achat impulsif"
+        "gérer argent"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -613,8 +605,7 @@
         "impulsion",
         "revenu",
         "paie",
-        "valeur",
-        "achat impulsif"
+        "valeur"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

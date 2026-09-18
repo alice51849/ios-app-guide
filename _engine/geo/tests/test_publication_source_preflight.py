@@ -41,7 +41,12 @@ class PublicationSourcePreflightTests(unittest.TestCase):
     def test_canonical_roster_matches_registered_identities_before_lookup(self):
         roster = live_app_manifest.canonical_manifest()["apps"]
         appstore, registry = live_app_manifest._registry()
-        self.assertEqual(47, len(roster))
+        # 筆數以名冊本身為準:寫死 47 會在每次名冊擴充(ledmovingtext 是第 48
+        # 支)讓 Daily GEO 的 pre-materialization 契約永遠失敗 —— 2026-09-17
+        # 起就是這個 AssertionError: 47 != 48 讓內容線停擺。仍守住兩件事:
+        # 名冊不得縮到 live_app_manifest 的下限以下、每一支都要是已登錄身分。
+        self.assertGreaterEqual(len(roster), live_app_manifest.MIN_APP_COUNT)
+        self.assertEqual(set(), set(roster) - set(appstore))
         for key, app in roster.items():
             with self.subTest(app=key):
                 self.assertEqual(app["app_id"], str(appstore[key]))

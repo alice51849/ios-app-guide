@@ -104,6 +104,8 @@ COST_COMPARE_RE = re.compile(r"-subscription-cost-vs-pay-once(?:-|$)")
 # 所以它**不是**這題的答案。這種 slug 沒有 pro/plus 字樣,既有 exempt 抓不到,
 # 而且答案文字未必寫出 `paid download`,所以獨立成一條意圖判準。
 from free_first_ownership import PAID_ONLY_INTENT_RE  # noqa: E402
+# 市場可用性(免費門在該語系有沒有可驗證的商店頁)的單一權威。
+import market_availability as market  # noqa: E402
 
 
 def _persona_page_basenames():
@@ -609,6 +611,20 @@ def paid_copy_page(rel, swap):
 def exempt(rel, name, swap):
     base = os.path.basename(rel)
     stem = base[:-5] if base.endswith(".html") else base
+    # 免費門在這一語系沒有可驗證市場 —— 換過去等於把讀者送到一個我們無法證明
+    # 他買得到的商店頁(market_availability 的一手證據:zh-Hans 的 4 支 App
+    # iTunes lookup country=cn resultCount=0,對照組 App 卻查得到)。
+    # 2026-09-17 起 zh-Hans/visuals/index.html 就是這樣被換上 id6778748533,
+    # gen_store_attribution fail-closed(MarketUnavailable),Daily GEO 與
+    # new-app catch-up 連鎖停擺。只在「免費門被封鎖、付費門沒被封鎖」時成立:
+    # 整個 locale 都沒有市場(bn-BD)時兩邊一樣不可購買,換門與否不影響誠實性,
+    # 維持既有行為不動,免得為了修一支 App 去翻動 50 語的既有身份。
+    locale = locale_of(rel)
+    if (
+        market.is_unavailable(locale, swap["free_id"])
+        and not market.is_unavailable(locale, swap["paid_id"])
+    ):
+        return True
     if SLUG_EXEMPT.search(stem):
         return True
     # slug 直接點名付費 App(`lumimathpro-no-subscription`、`snapport-vs-…`)。

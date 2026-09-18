@@ -521,7 +521,11 @@ def generate(
     availability = load_storefront_availability(pages) or None
     provider = resolve_provider_token() or None
     for path, app_id in sorted(qr_targets.items()):
-        if market.is_unavailable(page_locale(path, pages), app_id):
+        # Blocked markets and storefronts Apple does not carry this App in
+        # have no link to encode; a QR to a dead page is worse than none.
+        if not gen_mobile_store_ctas.app_is_sold(
+            page_locale(path, pages), app_id, availability or {},
+        ):
             continue
         source = path.read_text(encoding="utf-8")
         cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
@@ -544,7 +548,13 @@ def generate(
         prepared[path] = (app_id, *cta, source)
 
     app_ids = {app_id for app_id, _, _, _ in prepared.values()}
-    available_ids = {app_id for path, app_id in qr_targets.items() if not market.is_unavailable(page_locale(path, pages), app_id)}
+    available_ids = {
+        app_id
+        for path, app_id in qr_targets.items()
+        if gen_mobile_store_ctas.app_is_sold(
+            page_locale(path, pages), app_id, availability or {},
+        )
+    }
     if app_ids != available_ids:
         raise ValueError(
             f"App Store QR coverage mismatch: {len(app_ids)}/{app_count} apps"

@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 from functools import partial
 import json
-import market_availability as market
 import market_surface_policy
 import os
 from pathlib import Path
@@ -56,7 +55,10 @@ def _render_target(
     path, app_id = item
     source = path.read_text(encoding="utf-8")
     locale = gen_app_store_qr_ctas.page_locale(path, pages)
-    if market.is_unavailable(locale, app_id):
+    # A blocked market and a storefront Apple does not carry this App in both
+    # leave the page honestly store-link-free; enforce_html is a no-op for the
+    # latter, which simply keeps its content without a conversion surface.
+    if not gen_mobile_store_ctas.app_is_sold(locale, app_id, availability or {}):
         cleaned = market_surface_policy.enforce_html(source, locale, app_id=app_id)
         changed = cleaned != source
         return "blocked", cleaned if changed else None, int(changed), 0, 0, 0, None
@@ -263,7 +265,12 @@ def generate(
     expected_ids = {
         app_id
         for path, app_id in conversion_targets.items()
-        if path in guide_pages and not market.is_unavailable(gen_app_store_qr_ctas.page_locale(path, pages))
+        if path in guide_pages
+        and gen_mobile_store_ctas.app_is_sold(
+            gen_app_store_qr_ctas.page_locale(path, pages),
+            app_id,
+            availability or {},
+        )
     }
     if installed_ids != expected_ids:
         missing = ", ".join(sorted(expected_ids - installed_ids)) or "unknown"

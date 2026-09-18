@@ -26,14 +26,23 @@ a{color:#315fc3;font-weight:750}nav{display:flex;gap:18px;flex-wrap:wrap;margin-
 share salary, working-time, purchase, category, history or goal data. It has no
 developer-operated account, analytics, advertising or tracking service.</p>
 <p><strong>Storage and backup.</strong> App data is stored in the app's local
-container. Export Backup creates a local backup file and opens Apple's system
-share sheet; Restore Backup reads only the file the user explicitly selects.
+container on the device. Export Backup creates a local backup file and opens the
+system share sheet — Apple's on iPhone and iPad, Android's share menu on Android;
+Restore Backup reads only the file the user explicitly selects.
 The developer cannot access either file.</p>
-<p><strong>Purchases and network use.</strong> HoursTag is a paid App Store
-download, not an in-app purchase or subscription. Apple processes the purchase.
-Core calculations work offline; the app does not upload user content.</p>
+<p><strong>Purchases and network use.</strong> HoursTag is a paid download — from
+the App Store on iPhone and iPad, and from Google Play on Android — not an in-app
+purchase or subscription. Apple processes the purchase on iOS and Google Play
+processes it on Android; the developer never receives or stores payment details,
+an Apple Account or a Google Account. The app works offline, makes no network
+requests of its own, and does not upload user content.</p>
+<p><strong>Permissions.</strong> HoursTag asks for no runtime permissions on either
+platform: no camera, microphone, location, contacts, photo library or
+notifications. On Android the only network use comes from Google Play's own
+purchase and in-app rating services, and vibration is used for light haptic
+feedback.</p>
 <p><strong>Retention and deletion.</strong> Data remains until the user removes
-it or deletes the app. Deleting the app removes its local container, subject to
-any device backup the user controls through Apple.</p>
+it or deletes the app. Deleting the app removes its local data, subject to
+any device backup the user controls through Apple or Google.</p>
 </section>
 <section><h2>פנייה לתמיכה</h2><p><!--email_off--><a href="mailto:hourstag.app@gmail.com?subject=HoursTag%20Privacy"><!--/email_off--><!--email_off-->hourstag.app@gmail.com<!--/email_off--></a></p></section><nav><a href="index.html">HoursTag: שעות לקנייה</a><a href="support.html">תמיכה</a></nav></main></body></html>

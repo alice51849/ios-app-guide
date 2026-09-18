@@ -2,7 +2,7 @@
 title: "Cyca: পিরিয়ড ও সাইকেল ট্র্যাক — পরিচিত হোন Cyca-এর সাথে— আপনার সাইকেল বোঝার নিরিবিলি ও | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/bn-BD/index.html"
-modified: "2026-09-17"
+modified: "2026-09-18"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

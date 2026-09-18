@@ -2,7 +2,7 @@
 title: "Zipbox: RAR, ZIP en 7z openen — Uitpakken zonder reclame | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/nl-NL/index.html"
-modified: "2026-09-17"
+modified: "2026-09-18"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -187,5 +187,53 @@ class OutreachScorecardTests(unittest.TestCase):
         )
 
 
+class NewAppOutreachInputsTests(unittest.TestCase):
+    """A newly published App must have the two inputs that cannot self-heal.
+
+    ``--require-complete`` fails the daily line when any public App scores
+    below 100%.  Two components of that score come from reviewed inputs that
+    no generator can invent: competitor rows (which mint the alternatives
+    pages) and the multi-language social post pool.  ledmovingtext shipped on
+    2026-09-18 without either and stalled Daily GEO eight hours later, so this
+    test fails in seconds instead.
+    """
+
+    def test_every_roster_app_has_reviewed_competitor_rows(self):
+        import aeo_pages
+
+        evidence = json.loads(Path(aeo_pages.SOV).read_text(encoding="utf-8"))
+        covered = {
+            str(row["key"]) for row in evidence["results"]
+        } | set(aeo_pages.CURATED_FALLBACK)
+        roster = set(manifest.canonical_manifest()["apps"])
+        self.assertEqual(set(), roster - covered)
+        for key in roster:
+            row = aeo_pages.CURATED_FALLBACK.get(key)
+            if row is None:
+                continue
+            with self.subTest(key=key):
+                # min(alt_count / 2, 1.0) is the scored component, so one
+                # competitor page plus the hub is the floor that still scores.
+                self.assertGreaterEqual(len(row["top_competitors"]), 1)
+                self.assertTrue(row["gap_queries"])
+
+    def test_every_roster_app_has_social_posts_in_three_languages(self):
+        from videogen.registry import APPSTORE
+
+        pool = Path(scorecard.PAGES) / ".github" / "scripts" / "telegram_posts.json"
+        if not pool.is_file():
+            self.skipTest("Telegram post pool is only present in the Guide tree")
+        posts = json.loads(pool.read_text(encoding="utf-8"))
+        languages = {}
+        for post in posts:
+            languages.setdefault(str(post.get("app")), set()).add(post.get("lang"))
+        for key in sorted(manifest.canonical_manifest()["apps"]):
+            app_id = str(APPSTORE.get(key) or "")
+            with self.subTest(key=key):
+                # portfolio-daily contributes zh-Hant on its own, so the pool
+                # has to carry at least two more to reach the scored three.
+                self.assertGreaterEqual(len(languages.get(app_id, set())), 2)
+
+
 if __name__ == "__main__":
     unittest.main()

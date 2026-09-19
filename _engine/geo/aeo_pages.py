@@ -380,6 +380,24 @@ CURATED_FALLBACK = {
             ["toeic vocabulary builder", 0],
         ],
     },
+    "ledmovingtext": {
+        "key": "ledmovingtext",
+        "gap_queries": [
+            "led scrolling text app for iphone with no ads or subscription",
+            "full screen marquee sign app for concerts and airport pickup",
+            "app to queue several led banner messages during an event",
+            "led banner app with a one time unlock instead of a subscription",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "led scroller banner" on 2026-09-19; rank 0 means the position was
+        # not measured, exactly as for the other curated fallbacks.
+        "top_competitors": [
+            ["led banner - ledit", 0],
+            ["led scroller and text banner", 0],
+            ["led marquee - scrolling text", 0],
+            ["led banner - big text maker", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

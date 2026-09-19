@@ -211,6 +211,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "ledmovingtext",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "13d332ecca30677d978413d208219c5eaa8fd0e3f6abe52a3de83190c30ae1eb"
+      },
+      "id": "en-US:ledmovingtext:hold-up-a-message-people-can-read-across-a-crowd",
+      "language": "en",
+      "summary": "A note typed into a notes app stops being readable past the first row, and a printed card cannot be changed once the name, gate or order number changes. The decision is whether a phone screen can carry one message at a readable size, and whether the next message can be queued instead of retyped between moments.",
+      "title": "How do I turn an iPhone screen into a sign people can read from across a crowd?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "lockhour",
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",

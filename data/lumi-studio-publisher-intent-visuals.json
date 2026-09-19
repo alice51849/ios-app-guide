@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-16",
+  "dateModified": "2026-09-19",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,269 +10,269 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "aedbe2f3e5ace2fea4691bc2bdcdccb7d1ffece889eaac7c06750a15af2c6edc",
-  "content_digest": "8b7b6515ab005dcff3a37e921e3e0fcb3db5a77caeddb886f0206cba9119d0aa",
-  "generation_digest": "931c0069e604eca092a1ba5aba380f4dfb55e1977b350a3f2ee22bf3f587f13c",
+  "source_sha256": "c40c0cbf767457114bd4b8033b384918bea44796b04431aeac3311a03e7c786d",
+  "content_digest": "a2b31786e8071bc5f59b52ab8c89b15adc4fe877693d4f2fa234d20e61d55cb2",
+  "generation_digest": "ba350ca2c3520641cf82fb4ab1c66ca53d5b1da403ef81a0d5d88034c3a5c304",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 47,
+  "app_count": 48,
   "locale_count": 50,
-  "image_count": 2350,
+  "image_count": 2400,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "e78a002a6ff963b4bc217caa077f0921296aed68d49c19808b91fe6592e501d4"
+      "sha256": "a53e61ac63fd59234ee35821243b385e15e2d3c31d7ab5b2927ea7a24ebcb20f"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "5d0e7ca6814d7f1b995c9b18c9773779dc8be91db511079e19809279279007b3"
+      "sha256": "0545538ce5bf5808f3fa85bb711f0a870737a21a541c8d4f71922cfa919ea8ea"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "5abedfbecdf4dc59da0b7e6abdf4c4d7da7e4f4a1bccedfabbb95efba8763c60"
+      "sha256": "d6603999e3b08cf5fe42edfec914d5a8ce4dae3a304c2c1e2b91304b20f17acc"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "7c9e15d31f2bee633adb5dcc5e850659866f5fae6863ef6bb9008d4f4bf751ed"
+      "sha256": "b970b3069df0fddaf72c4985da77fdeb0ecc1afb4221b89e81ad5e55ed5d6f26"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "6e6829f75e3e79a54978ec39e4b3a87cf4d16dea679210e118d8681be61b64fc"
+      "sha256": "2700d3389f74349accbf386e5bb6be69d20aa5f438c3331f02c0182ebdef38a4"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "e785a07b8c81dd0e74f31233ce602fc32ff845e65fd06ebce09b613df6cc0e76"
+      "sha256": "61efc71aa4051cc5121bb9d3e38eb29680bf456abcc202295326f8fbc3abedf8"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "8699a3e98e8022dbbe77d410769338f15ebf1f051c5290f54fca855c1f2c1e93"
+      "sha256": "d33d350a37a5c3854687e23d6b787e5017a52ed1f268ac472bb9baab9eeb9133"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "ee0e1c7bbb55491c82f147e64b6e252799530e9c7fbe16052a84a5481e3026b3"
+      "sha256": "87800e2ce1319d6a9e6907fa7def6c0178a682cfebe4ff5f5444a98ac81897f2"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "ea46ddccc571b162fb4734c93bd5beedf9d42d34fc54a720111fa71fbee72f0d"
+      "sha256": "2618d8d42a872c90790197c80c855e6fe5b21e41259d45ed346f82867b64013a"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "9ec3d884756442dab28dbc69eabee5e3366d025977a387549d6f27eb0dd92753"
+      "sha256": "4c1d7cee4e768893fe3fb11298f41058c22d17cd1d9e147b35bfbfbdf682b433"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "dfcaa43297d86157d9977a1171e842a421ae569d8884f8495ec63b16b9973dd4"
+      "sha256": "53ed030bb132684355eea30c048d72b32c977b954b5d2fb09d616e00dce8875d"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "0c0179ae5a04df25c2cfd598f2a08a00b1c65ac1c9ae9807af976be0f98f23b7"
+      "sha256": "b45197e502c2f73a08714019665b3b0458049df67364765608e40f0657040a2a"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "2445f490cb726c11dfd07e7590da6f7d3cd5bee04b3ab6717a902475c3614b89"
+      "sha256": "cf8e52be6ac25cbd997e699b54d0453be28909e287db5c00b61187f80411fa59"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "65acfbf7899c56be3713c06203431134f12707228ba2f954d2dbdce05feae483"
+      "sha256": "be003805cbfdd6b047ca262b4296e6f6d31dfc87c83560b59ee99ebee771bca9"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "f102aed7222d31b8dfbc26d0387d78d1413c9cc48ce358fc67178e410b96aad7"
+      "sha256": "5b74127d1728d0b8ddb594754a53f9b2b139c8fa794124dd0c2104aa6f5ca859"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "1f5c7c24551329e73414a25810084426b4ce5426b592b6d7541c3b3a3f7fb8aa"
+      "sha256": "930b7793461e0d663a283d27c299a30e0a10fd9be15bab09ff3c6f647b593700"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "a7fc72bbb343c983b1d7ad8d1b23e37483e9633619d8de4378f0d86e736725b4"
+      "sha256": "b5414c8aa63dbf0c21a8f954e1485aa33f3197474b99ad252bae5db7e8d5ee9b"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "87df25ef69cbae5c1f15ee50153b351f507a84d43f4b2cca968ad1ba1c39c23f"
+      "sha256": "a4baf4335b54e24b758e71e014babe755e4dfbb5fe37098e33520df43d0a4207"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "a4089c615ab18e66832a3836f7bdecd8fbfac08aa7f356f3b4e5527d2b02d3ea"
+      "sha256": "6bf18a22ecc8dc96e46837298bc020e6d6188eff3814444c280560622ecaedf7"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "4df8fa292d72975bb416d9e47eeca61fe4d0e904114c235d6d7c146269414af8"
+      "sha256": "eb563d14f9ba7a08c83a62c93853f9daeed26a194d4c57a71c26e6f42718375c"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "5d6a141142a786da205e22ef2ebc9b0aa4c2c72ca041f6062f4cc51000869c9c"
+      "sha256": "3b67f1cfefb80cdbe50a7c72c470029f753f3fc4cf4e259504f894d88ec88e01"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "a53d2a19ef16fb9665d66b758a1fcf856fad7be1aaf6519a45ab8726c16c6826"
+      "sha256": "1e37d79b9e43419a14847fcfacf51374f7cb5453b4dc10809604b063f16ea620"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "51fe034e88a6b29517674642e7d35aca5dc1073d070cfad63a9311771020a076"
+      "sha256": "945cb7bb4f7ca7ee090e413938d3b100d57fb071cf9a7751e9a42680b8542e67"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "ab7903daaf3b4cffe4c8a12d630b1de37ff98b9a6060d71b03d9627a43e54a45"
+      "sha256": "b145aaf71e31d58e3f1fb658e32ec93395c1b9ef9cad8a77dfa5a3769bbbb002"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "0a63ff8948c747ff4e0fe87becfe13d808d892d5534fd9c3aa61d868c37a8483"
+      "sha256": "1e4c1dfb108b81b9d654cb205fad7dec0fa499c3acc4dee0c90013e98a0ec5aa"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "b4bc94834385a9573915c55b81bcc8b93ab49de4e84be2844450f6d487e6b30d"
+      "sha256": "4a0b627dee9f0f9089dd2bdb34ff32a405e0f662adf1b312869dc92daa8e610d"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "f87820eb3dc11c6260ae3b0d548017757c3c54158ed8a3e9f5f122b4697f0d36"
+      "sha256": "7ddb42e212b5fac59710554fd5869f48801446659b93349f87f6a8a28a36195a"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "ce402997cdf3f624218b4a44c5814a0e55b270fe9558dc58f878dd444369e5f5"
+      "sha256": "7e8cdd7d06349061cd4701f10bf9d638db21bb94d54305eb5ffe56dd8e8a6772"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "14a774fc7189d9a77b9b6c30a802a380ba6310b47697dc2d14519b140f6b6277"
+      "sha256": "3cc9d59884d986c5c1493805a66718f8c1c74c55e1d8e5bd94d92c75be934e70"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "c2f3131cac4c4bb28273f6f882aecc3295b4846487493a11846d765e3545e11c"
+      "sha256": "941eb18c60a9d2b4b784afe2c3345cb7dc947f6e7687b22f01ec8e5a24ba0b70"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "0f53d682a1962c55377c7cc37ffe3221add232b0d659b41ef9c08c9b0ad0ca3d"
+      "sha256": "d6fa0bc7c41271cd2de7b3470cefdc9f23102829e91e665a3e75ee74e0328790"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "9b1658f1a9650f64e6ec74070f70dd6824abba64425bc38cabf59ea00ecab9f6"
+      "sha256": "a35ab5f777404ab9577c278db6dc83335db3c0cbd3da3209539e7a5bfbe4a2ee"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "3e01083346fe58ce67da1432441a63e4d5dd3e70177ad4c4ff6dcdfb13ebd365"
+      "sha256": "cc0215031b598211c4bce79b8f82ef9dfa0381fc297024461616f0ec840465e0"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "ede0e3f1b9aa95ed3504a5ee22724ad7ed066d297ee288f31d89b61efd9dce5e"
+      "sha256": "00880b963d111ead565f60ed8f4f98cd13d80d8df4751673e6e8e9d585b73f75"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "339e8e49c15d12d61e84c6383749fc86ebe6fe364ccb90717096258c0bf4acb7"
+      "sha256": "bc4100f24ba31b81739c10e7f760503bb660bc90c13422cccfa178ee0541b9e2"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "3caf2908460335a713ab9918dd6b0a5ec09c940afc3d5c48307292ba6ea86183"
+      "sha256": "5c9ae267a88fb0b857048c2ab80beb9f7dbb98264edb6a101da1c64ed062891b"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "1ab6c684d53989b4383b4808174759c26b323022bc24efe7cecb36c8b400fe5d"
+      "sha256": "623af93cce5fb00e541e830f96eae20eb8bc3cab42e05cdb5e2e1592bf0611e4"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "cd3656e7370a46f0f6fbd839f1f198a6a688d9970f1a2e32edf9dd9c0994a33e"
+      "sha256": "04235a1c73e7fcd1a2342d8916cef8e07bb962d771f28298c0737fe5a72d98f7"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "775050037deee5195d183c1541681acc9ca38af7eac82896834a75cccd0d131c"
+      "sha256": "4ce193007ebd705b6cb83dfee9c25c7719701e0e5aa3d2ceab0d19d6407b7443"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "11cd6f96284808fc3ce763daa7bd2fbdc6736d1b3275b05a6a118bb897fff925"
+      "sha256": "29cbf3d200f9d91241bcce1f4f5e439c8b268aa760fe15269ca37747f3d174c4"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "92e962d9a2c779677663780bbc2e9a809393cf0b510b5b4c18d807e8eb3f1684"
+      "sha256": "f1075be0e46da2eeaf7f003661e224968e05173b6ad3209c035410c295c9dee1"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "0bd2dcf55c8533b2adb81d83de64f778d664fb355cb206912022c277c34a0fed"
+      "sha256": "ebeb383c7b4774ebd75903d5784a3e9cd72aaead181dd19274661c2d80fe9c68"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "076ed836c597178997aa3bfdabe13169173615626d4b1f6cb41e9082d8701f2b"
+      "sha256": "8f37d4d19988daf8155eac2000ee2d9dd5bc108dfa362bea0bc850619b9292a6"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "6a65f07c03392bac24872708f8411419b6ac6798c1dcdb5ffdab57ecdd2a6726"
+      "sha256": "597aa51d980a87c2b4425111b2273f3449fb1be97cb29f31ace3ee77df229de9"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "13c61ed3ee1ee954376925a7ed8a40a2a4d3120e068d48829520f7d1ca3e3be1"
+      "sha256": "bddeb8a981e8c32b47a94c4ff421b0a243fe6b121501e3f4a06c32f83cb1a912"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "3cbb844459479c5e33331ebaabacb73a4290ab8d552b87decbbd119f4473a621"
+      "sha256": "d11a572b25c8fb1478ea36c1435a9a99d8defec353136be704157d702e098c31"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "f9ec7b03e6d3615c8ac028c03b2a805e858b922e8fb61e1414f4906d108593e4"
+      "sha256": "be83845013a924181e1f1017d54ea91a9cc9aaa03ef9d5a578f20b6b31d0870a"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "fe39482701ed4748037814db5ce0b5fc779d9276d05886cc50316d2922bb26a7"
+      "sha256": "a430fe8eef2733103980906b6939a33fecf6f2d541f6d5d54dfab0d240b62b34"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "df45735829181a16b2adb96f085ff892eb5ee2666253b89e4567c6ee71753675"
+      "sha256": "043294f1c1773b5405ef4246207ea6e83da475bf913c8d033f11a3dd2627eecc"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "59c893cb65ed85fac42985f75b95d27f8d888d5fd55ac6fc49b1a902b3529bca"
+      "sha256": "345a1054fc818f37cbf94194556da9b632c91d7f04f37b955a99fc2a7cfdc390"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "064b8451fc47ab7f1fd7d22200f6a29b5d3ac99afd29ddb542214507bfa7a946"
+      "sha256": "6e133e0423a0ba11dcbfcaeb7046c2b5e88736328ec080fc95293834a5926d5f"
     }
   ],
   "publisher_authored": true,
@@ -427,6 +427,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "5e405336242d16f2e11169f3744117a38110f4d09338e9e2a5d1f82849d94f13"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6806639602?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "1699e0dd783684d5e87e2d74bb60db5be04f08c3e282913eb923e6d282c03920"
     },
     {
       "locale": "ar-SA",
@@ -1144,6 +1154,35 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
       "app_store_url": null,
       "sha256": "1c7bc9c85ffa7032ad8619963b3cfc3e8bd84beb9b15781f894e126553b5236f",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html",
+      "app_store_url": null,
+      "sha256": "58d024ab5e8c86a6b2abd125b8c60570f455ce94361dcf14c1634831586c186b",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
@@ -2263,6 +2302,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "c67fc859d4804c656666b48d14dfae302e7f5dfe570757db00cc372af84ac3d2"
+    },
+    {
+      "locale": "ca",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/lockhour.svg",
@@ -2730,6 +2779,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/hourstag.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "dc687f350aab5e446c8b25037e2787f49fa78dc1ff2067c70aa052a17357e6d1"
+    },
+    {
+      "locale": "cs",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6806639602?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "fc52e245d830d9794bc523605f16cec9d939506fd6f2c70adf4fd398872a6164"
     },
     {
       "locale": "cs",
@@ -3203,6 +3262,16 @@
     },
     {
       "locale": "da",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6806639602?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "b7220bb291f6daeeb2f504ec894e75ae499d11d8b25edc253b4c6d165ea9d5c0"
+    },
+    {
+      "locale": "da",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/lockhour.svg",
@@ -3670,6 +3739,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "399f6c257eabaa7e61db6cb68d81c7e77cb52cef2f3d4fd75b6c8af93cdeb9bf"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "7a2b7c91ad2fbc696f9cbde2dff690149bc03df13909c7fbd9a3fce8384a50b2"
     },
     {
       "locale": "de-DE",
@@ -4143,6 +4222,16 @@
     },
     {
       "locale": "el",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6806639602?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "5d6cbb04131198e016923b57982d54f40fe11f8575e564b13b946fe01d88cadf"
+    },
+    {
+      "locale": "el",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/lockhour.svg",
@@ -4610,6 +4699,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "964acd40949ef9cc9edda595c74c6b8eefb14b2332ada0b5b01dbee4a9390713"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6806639602?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "f58fbbba2009378ad9a3cb9a24cd6805f022932a3fb237b58df698b397777305"
     },
     {
       "locale": "en-AU",
@@ -5083,6 +5182,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "52610d9c5e1cbaf9dbb2a5a1d12461c1e808df8ebe61f3c05bb7fe732210a3a7"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/lockhour.svg",
@@ -5550,6 +5659,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "712c1d3c9890b4c167220d6450284d6b523c86c6386ea0fcc14d7ac2dc906d90"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6806639602?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "05a09c1905360c451eab47c7c5a8e24326c905f486ee315a793dfeb6776049b2"
     },
     {
       "locale": "en-GB",
@@ -6023,6 +6142,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "ff7c46a6d893159efe7303fbff7c84aa30c28221b48a25fe4236afb48709237a"
+    },
+    {
+      "locale": "en-US",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/lockhour.svg",
@@ -6490,6 +6619,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "7a2ff672fce3ff0246a5cf0977c640c890ada00a9c542e9dfb2ed83cffcf0f7f"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "444ab5d2996b7b3f64acec78bb70487cf3e9f3a2a8b359cfd841245cb922107d"
     },
     {
       "locale": "es-ES",
@@ -6963,6 +7102,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6806639602?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "3d4412946c463387cc01a692ab6248536762a8c1e8b5fcbb5644a05d50403430"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/lockhour.svg",
@@ -7430,6 +7579,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/hourstag.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "408408438ee720b9538e1c35dbc5cac3a1a453f22584d519f5c6221af52377d6"
+    },
+    {
+      "locale": "fi",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6806639602?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "1dcfbe946d89a1a44d86dde9037ee7cd10aee7f5275dfec2008b9b1a224156f4"
     },
     {
       "locale": "fi",
@@ -7903,6 +8062,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "29f438de8ea8d917c308887a58d7af43d04570c8f898bbcd0e11a094ff07dd34"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/lockhour.svg",
@@ -8370,6 +8539,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "1679a2e624bb51b9327e394e789fddcec014d90c25b9b8b13c0256393f6aef59"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6806639602?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "ecf52b81cab3f01d6524d3fa65161f8fde84fd38ff092a7c65bd1ff13e298e6f"
     },
     {
       "locale": "fr-FR",
@@ -8843,6 +9022,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "b84983c56fee0b3813cecc0a67e0f2563f33e49b2a521cb6a58d5e3fdfb32b29"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/lockhour.svg",
@@ -9310,6 +9499,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/hourstag.html",
       "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "1aaded1f186020e4b0ce0b522f907f592610212b8145237e803767103f6816c6"
+    },
+    {
+      "locale": "he",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6806639602?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "3344c520c5a7de4b989d0db5e1e8c3d1c6b60237c7778df217c1c6a1705b09cf"
     },
     {
       "locale": "he",
@@ -9783,6 +9982,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "46b32b406a1f4b2c081a9a29980c109f5c0cb73a6c81aa88da4fc69ec59f2ef5"
+    },
+    {
+      "locale": "hi",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/lockhour.svg",
@@ -10250,6 +10459,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/hourstag.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "66bc3a0bb20b10f8e84b2d70ab6e2fdab2122b55c17cd43f47691d6913f12c44"
+    },
+    {
+      "locale": "hr",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "96af36b03fa21c228bc4b5f476053c9792ec522aadd5b8cf3483e0576a082bad"
     },
     {
       "locale": "hr",
@@ -10723,6 +10942,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6806639602?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "ce620bd2c19f041cdb8d25ba999014322a57abc0da316ce497b44c382fbe029b"
+    },
+    {
+      "locale": "hu",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/lockhour.svg",
@@ -11190,6 +11419,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "f21c6633c2c13db81770ae86750c64cff85fbfa2413710f2ad0e6ddde102023c"
+    },
+    {
+      "locale": "id",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6806639602?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "393af2f762084f8c54d68b04339c632dee6cf880f21b79bf81e00216758749a6"
     },
     {
       "locale": "id",
@@ -11663,6 +11902,16 @@
     },
     {
       "locale": "it",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6806639602?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "dc8791452811d3f3ee00a92b4e5269406132756f5fe5942fa3f365d9fc4bf7e4"
+    },
+    {
+      "locale": "it",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/lockhour.svg",
@@ -12130,6 +12379,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "cba55dbdb33441fcef11e0c662f9e7fe96a8191bf0e680500969ff7ae469c7fc"
+    },
+    {
+      "locale": "ja",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6806639602?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "6e3dd8b9a1b8634261f9e7d2ada439062d31da1a7bd5fe3c7b08bc71b759a1ba"
     },
     {
       "locale": "ja",
@@ -12603,6 +12862,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "94e608edd5e09eb567ab7d4ec5cc9a89e4e06eaa4ca78c95420960f7b7de3b7e"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/lockhour.svg",
@@ -13070,6 +13339,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "a53070f2b191737b316d268c71e2a65f2dbeee5e8df0b441a397ff327a678a81"
+    },
+    {
+      "locale": "ko",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "5c99e9f3563f7d7c72a9c6feeda4e98810c34bc01068e72f8aadc34eb79c72c1"
     },
     {
       "locale": "ko",
@@ -13543,6 +13822,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "7ee3c0ab944064303de37dc45a7804069fa7cb96828be827083d2568d0d798ec"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/lockhour.svg",
@@ -14010,6 +14299,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "1c14b2704e3d20bd1e6cf7e30c9831ab64ec13e099537e24218ba5ef5fbf19ed"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "86418260c59fe8f2dcf94fd85bf57d87a4537d6eeb3d2c6b7f8c0e4c3c548147"
     },
     {
       "locale": "mr-IN",
@@ -14483,6 +14782,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6806639602?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "b55cf3772a7f50d44631ad1a914b908f49cf80493e3a51dd1f04edb64fd08650"
+    },
+    {
+      "locale": "ms",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/lockhour.svg",
@@ -14950,6 +15259,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/hourstag.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "3806e98abbd03ba0541f67f52bd6f69da1e17687eaff0ebb38efea1aa0955019"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6806639602?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "735660c718f92bfaa01c51c78665ff1eabdd17a3f577d401551e821154e1fb15"
     },
     {
       "locale": "nl-NL",
@@ -15423,6 +15742,16 @@
     },
     {
       "locale": "no",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6806639602?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "b759ac1fcc8816fe17303f172f0c29791e0fc5b6913e66b4a62473a31ffec7ba"
+    },
+    {
+      "locale": "no",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/lockhour.svg",
@@ -15890,6 +16219,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "0cf3af0e817373eab348fa9ba19d46c5be1b9868b84387ab2b924501268d1870"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "3c19b564c62951d5d5a57db0a5a9eb20ed0ef42a5ac0e4454e4242a4e720d12f"
     },
     {
       "locale": "or-IN",
@@ -16363,6 +16702,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "aaa184134c24e77e0125417c7973b85e8ad507d336cf717c4bd76f8f7fb40369"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/lockhour.svg",
@@ -16830,6 +17179,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/hourstag.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "083fc368bf82cea5751c3c260f4d060cbc792b7464519d2572606957a93475f4"
+    },
+    {
+      "locale": "pl",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6806639602?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "d88787f50c91e1ce40c7e37c37f502de13e4a5ce9de8046c11cd6b11d535b456"
     },
     {
       "locale": "pl",
@@ -17303,6 +17662,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6806639602?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "d6ddcf77838eeb8153488b2c65188bf69af19f5d3f5ea2cec28babb42fc1ee2f"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/lockhour.svg",
@@ -17770,6 +18139,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "ce8830b1ad0726ce62a1b08490830516e1dbc03542a6774a0a04a2f60b87307f"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6806639602?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "3942b335ab03d0207b7e7103cf49735fbcead92481cbaba8660842df8afe825b"
     },
     {
       "locale": "pt-PT",
@@ -18243,6 +18622,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6806639602?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "06a87069bcd9b6ae1cf475e947063d7385933e3cfc49313e97a9f436171773b7"
+    },
+    {
+      "locale": "ro",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/lockhour.svg",
@@ -18710,6 +19099,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/hourstag.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "165507c6dc8b1e909d84041899940686f02b30ed9e59124590735907f18901bc"
+    },
+    {
+      "locale": "ru",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "662385072bdcfb1a9ca21e4d0a76522b445a0c640baad7cbb806c0111094cb08"
     },
     {
       "locale": "ru",
@@ -19183,6 +19582,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6806639602?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "ae95556a270fac836664fb1d6fc7a81e94245e38d455a6c5853328d8f92c7aae"
+    },
+    {
+      "locale": "sk",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/lockhour.svg",
@@ -19650,6 +20059,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/hourstag.html",
       "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "52bc8189b52294e90f9acd1056cf51a84708f13dbc142c70dd37da4f4ffb2d21"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6806639602?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "57190539e0d4080996e55a5bb8bfd8e0ad676f0804acd6589dd40f947086811f"
     },
     {
       "locale": "sl-SI",
@@ -20123,6 +20542,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6806639602?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "b107ea7305794e67151336a3d37f9c1d17db34afa6aa947453788e0bfb970535"
+    },
+    {
+      "locale": "sv",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/lockhour.svg",
@@ -20590,6 +21019,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "b7d73f3c9558532418d1c723a058461bcebcd1e32db566dff5c9709f9018412e"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "77417a6435d0edcd7a2c1d6ad1d5bf475d648ef43e7bce1f6cc4e704d273ff3c"
     },
     {
       "locale": "ta-IN",
@@ -21063,6 +21502,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "610a93985573b321cf278e2010be935c412f90f10864065b752f6ca983b9fbe5"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/lockhour.svg",
@@ -21530,6 +21979,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "ce1f08233952616adac054f156cd70cdd7e18667f3b90a202e504da8ade8c0cd"
+    },
+    {
+      "locale": "th",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6806639602?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "a8fabc4fbc92b3a75a490dc0bacf3cf70dcf49e8f6b28743ecd230ad26663401"
     },
     {
       "locale": "th",
@@ -22003,6 +22462,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6806639602?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "c834bf60ff8dfac0f3ceb31a63f4b59f03f01446fcb249e6f5247f4b76f69ec8"
+    },
+    {
+      "locale": "tr",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/lockhour.svg",
@@ -22470,6 +22939,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/hourstag.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "966e66ea3d02bccd83e7662c0627d939e52b61b6364590fefde34fadfe98d863"
+    },
+    {
+      "locale": "uk",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6806639602?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "880a8822f02f47ceefdd88ecaac7f626f62ef2c8409fe007f9848995d3c1c1cd"
     },
     {
       "locale": "uk",
@@ -22943,6 +23422,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "9dfed8a29095cddd6664a8a17f30162ab7c7680852292d93c3741d9cae0d9e90"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/lockhour.svg",
@@ -23413,6 +23902,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6806639602?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "bb9ee5a9234b64e0b3fbd6a8352b70882c858f58884819ce6e69d2334bb7f579"
+    },
+    {
+      "locale": "vi",
       "app_key": "lockhour",
       "app_store_id": "6780107485",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/lockhour.svg",
@@ -23880,6 +24379,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "78284aa9145a0b0d6adcd985f9e1d908819e4322ea93441d47ff3fed5ce585b9"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "2a7c47f80bb070f17bd796bba9d3b8f87a0fba11b952bd097e83a52736356234"
     },
     {
       "locale": "zh-Hans",
@@ -24426,6 +24935,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "921a5e52617b74e1d62a09d0e4a1055ac2f245b4bcd48547c2f440e99e52624a"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/ledmovingtext.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/ledmovingtext.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "b33255be6ee960dac14a4d86b058f8aae65c7dedeb15382c7f9f497c6750c8be"
     },
     {
       "locale": "zh-Hant",

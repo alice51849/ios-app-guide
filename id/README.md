@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.
 
-Niat pencarian yang ditulis penerbit untuk 47 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
+Niat pencarian yang ditulis penerbit untuk 48 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · **id** · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Dapatkan G+Money Lite di App Store →](https://apps.apple.com/id/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Dapatkan HoursTag di App Store →](https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Dapatkan HoursTag Lite di App Store →](https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Papan teks menyala di layar \| iOS App | Ketik satu kalimat lalu angkat iPhone. Dari barisan paling belakang, dari ujung lain ruang kedatangan, atau dari balik meja, semua bisa membacanya sekali | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/ledmovingtext.html) | [Dapatkan LED Moving Text di App Store](https://apps.apple.com/id/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone | Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah. Untuk itulah LockHour Pro dibuat. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Dapatkan LockHour Pro di App Store →](https://apps.apple.com/id/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | aplikasi bopomofo terbaik untuk anak belajar zhuyin di iPhone | Untuk anak yang baru belajar Zhuyin, aplikasi harus mencakup semua 37 simbol melalui menelusuri dan permainan — dirancang untuk rentang belajar usia 4–7 tahun, tanpa iklan, tanpa pengumpulan data. Celah itulah yang ingin ditutup Lumi Bopomofo. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/id/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | aplikasi zhuyin lengkap terbaik untuk anak dwibahasa | Anak dwibahasa yang belajar Zhuyin di rumah butuh jalur lengkap melalui suara, simbol, nada, dan penggabungan, dengan cukup pengulangan menyenangkan agar sistem jadi akrab. Celah itulah yang ingin ditutup Lumi Bopomofo Pro. | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Dapatkan Lumi Bopomofo Pro di App Store →](https://apps.apple.com/id/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 
 ## Unduh dataset lengkap
 
-JSON, JSONL, dan CSV memuat 2.350 catatan yang sama.
+JSON, JSONL, dan CSV memuat 2.400 catatan yang sama.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL, dan CSV memuat 2.350 catatan yang sama.
 
 [Beranda](https://open.cait518.cc/ios-app-guide/id/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/id/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisensi](https://creativecommons.org/licenses/by/4.0/)
 
-Diperbarui: 2026-09-16
+Diperbarui: 2026-09-19
 
 CC BY 4.0 berlaku untuk kompilasi katalog asli; nama aplikasi dan merek App Store adalah milik pemiliknya masing-masing.

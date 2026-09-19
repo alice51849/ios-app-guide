@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 47 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 48 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **G+Money Lite：旅行记账·汇率换算** | G+Money Lite：旅行记账·汇率换算 — 旅行记账・预算・汇率 \| iOS App | G+Money Lite — 聪明的旅行汇率记账 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gmoneylite.html) | [在 App Store 获取 G+Money Lite：旅行记账·汇率换算](https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite：买前先算工时** | HoursTag Lite：买前先算工时 — 看见每样东西的真实代价 \| iOS App | HoursTag Lite - 看见每样东西的真实代价 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag：价格换工时** | HoursTag：价格换工时 — 预算、记账、省钱与储蓄 \| iOS App | 这真正要花你多少？不是多少钱——是你生命中的几个小时。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html) | [在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — 手机立刻变成应援灯牌 \| iOS App | 打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html) | [在 App Store 获取 LED Moving Text](https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | 学习时阻断社交媒体的最佳应用 iPhone | 考试期间，意志力不是工具——硬性定时屏蔽才是。所以才有了 LockHour Pro。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 获取 LockHour Pro →](https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | 让孩子在 iPhone 上学注音的最佳注音 App | 对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据。这个缺口，正是 Lumi Bopomofo 想补上的。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | 适合双语儿童的最佳完整注音App | 双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉。这个缺口，正是 Lumi Bopomofo Pro 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,350 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,400 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,350 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-09-16
+更新日期: 2026-09-19
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

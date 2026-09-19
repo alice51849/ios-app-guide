@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-18",
-  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
+  "date_modified": "2026-09-19",
+  "content_digest": "059c114e41ad490171be41c8b9aee73008a972d56ed797693dee908c3dac4b89",
   "locale": "he",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 47,
+  "record_count": 48,
   "apps": [
     {
       "key": "notesstudio100",
@@ -649,6 +649,51 @@
         "currency": "ILS",
         "formatted_price": "₪14.90",
         "storefront_url": "https://apps.apple.com/il/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "כתבו משפט והרימו את האייפון. מהשורה האחורית, מהצד השני של אולם הנוסעים הנכנסים או מעל דלפק, קוראים אותו במבט אחד.",
+      "category": "utility",
+      "search_terms": [
+        "כרזה",
+        "לוח",
+        "הופעה",
+        "עידוד",
+        "הודעה",
+        "ניאון",
+        "שדה תעופה",
+        "איסוף",
+        "מודעה",
+        "אותיות",
+        "במה",
+        "קהל",
+        "תור",
+        "שילוט",
+        "אצטדיון",
+        "חלון ראווה"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/il/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/he/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם",
+        "storefront_url": "https://apps.apple.com/il/app/id6806639602"
       }
     },
     {

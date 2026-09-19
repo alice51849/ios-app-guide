@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-18",
-  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
+  "date_modified": "2026-09-19",
+  "content_digest": "059c114e41ad490171be41c8b9aee73008a972d56ed797693dee908c3dac4b89",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 47,
+  "record_count": 48,
   "apps": [
     {
       "key": "notesstudio100",
@@ -93,7 +93,8 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件"
+        "读文件",
+        "提示词管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -631,7 +632,8 @@
         "生活记账",
         "出国花费",
         "离线记账",
-        "自定义汇率"
+        "自定义汇率",
+        "出国预算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -770,6 +772,65 @@
         "currency": "CNY",
         "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "打上一句话，手机就变成一块会发光、会滚动的大字牌，隔着整个场馆、站台或人群都看得清楚。",
+      "category": "utility",
+      "search_terms": [
+        "手持弹幕",
+        "滚动字幕",
+        "跑马灯",
+        "电子横幅",
+        "举牌",
+        "接机牌",
+        "广告牌",
+        "霓虹字",
+        "追星",
+        "演唱会",
+        "打气",
+        "门店",
+        "告示",
+        "排队",
+        "柜台",
+        "生日",
+        "毕业",
+        "婚礼",
+        "粉丝",
+        "招牌",
+        "大字",
+        "灯光",
+        "提示",
+        "静音",
+        "活动",
+        "应援",
+        "接送",
+        "手幅",
+        "公告",
+        "演出"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6806639602"
       }
     },
     {
@@ -1720,7 +1781,8 @@
         "活动收支",
         "出租账本",
         "摊位账本",
-        "班费管理"
+        "班费管理",
+        "项目支出"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

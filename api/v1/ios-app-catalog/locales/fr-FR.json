@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-18",
-  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
+  "date_modified": "2026-09-19",
+  "content_digest": "059c114e41ad490171be41c8b9aee73008a972d56ed797693dee908c3dac4b89",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 47,
+  "record_count": 48,
   "apps": [
     {
       "key": "notesstudio100",
@@ -106,7 +106,9 @@
         "écoute",
         "lecture",
         "score",
-        "pratique"
+        "pratique",
+        "toeic lecture",
+        "vocabulaire toeic"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -144,7 +146,8 @@
         "écoute",
         "grammaire",
         "révisions",
-        "minuteur"
+        "minuteur",
+        "toeic lecture"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -547,7 +550,9 @@
         "finances",
         "achats impulsifs",
         "épargne",
-        "gérer argent"
+        "gérer argent",
+        "dépenses conscientes",
+        "achat impulsif"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -605,7 +610,8 @@
         "impulsion",
         "revenu",
         "paie",
-        "valeur"
+        "valeur",
+        "achat impulsif"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -626,6 +632,47 @@
         "currency": "EUR",
         "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/fr/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "Tapez une phrase et levez votre iPhone. Depuis le fond de la salle, à travers le hall d'arrivée ou par-dessus un comptoir, elle se lit d'un seul coup d'œil.",
+      "category": "utility",
+      "search_terms": [
+        "pancarte",
+        "banderole",
+        "enseigne",
+        "écriteau",
+        "affichage",
+        "concert",
+        "supporter",
+        "aéroport",
+        "accueil",
+        "néon",
+        "vitrine",
+        "scène"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/fr/app/id6806639602"
       }
     },
     {

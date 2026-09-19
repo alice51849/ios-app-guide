@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.
 
-Intenções de busca redigidas pela publicadora para 47 apps iOS verificados e disponíveis em 50 idiomas e regiões da Apple.
+Intenções de busca redigidas pela publicadora para 48 apps iOS verificados e disponíveis em 50 idiomas e regiões da Apple.
 
 **Localidade:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · **pt-BR** · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Baixar G+Money Lite na App Store →](https://apps.apple.com/br/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Baixa paga | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Baixar HoursTag na App Store →](https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Baixar HoursTag Lite na App Store →](https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Letreiro luminoso animado \| iOS App | Digite uma frase e levante o iPhone. Do fundo da pista, do outro lado do saguão de desembarque ou por cima de um balcão, dá para ler de um olhar só. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/ledmovingtext.html) | [Baixe LED Moving Text na App Store](https://apps.apple.com/br/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | melhor app para bloquear redes sociais enquanto estuda no iPhone | Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é. É por isso que o LockHour Pro existe. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Baixe o LockHour Pro na App Store →](https://apps.apple.com/br/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | melhor app de bopomofo para crianças aprenderem zhuyin no iPhone | Para uma criança que está aprendendo Zhuyin pela primeira vez, o app deve cobrir todos os 37 símbolos com traçado e jogos — projetado para a faixa de 4 a 7 anos, sem anúncios e sem coleta de dados. É justamente essa lacuna que o Lumi Bopomofo quer preencher. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Baixe o Lumi Bopomofo na App Store →](https://apps.apple.com/br/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | melhor app completo de zhuyin para crianças bilíngues | Crianças bilíngues aprendendo Zhuyin em casa precisam de um caminho completo por sons, símbolos, tons e combinação, com repetição lúdica suficiente para tornar o sistema familiar. É justamente essa lacuna que o Lumi Bopomofo Pro quer preencher. | Baixa paga | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Baixe Lumi Bopomofo Pro na App Store →](https://apps.apple.com/br/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 
 ## Baixe o conjunto completo de dados
 
-JSON, JSONL e CSV contêm os mesmos 2.350 registros.
+JSON, JSONL e CSV contêm os mesmos 2.400 registros.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL e CSV contêm os mesmos 2.350 registros.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-BR/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-BR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-09-16
+Atualizado: 2026-09-19
 
 A licença CC BY 4.0 se aplica à compilação original do catálogo; nomes de apps e marcas da App Store pertencem aos seus proprietários.

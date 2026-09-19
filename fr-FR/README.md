@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque application est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 47 applications iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 48 applications iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · **fr-FR** · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Classement alphabétique par nom d’app — jamais un classement.
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Télécharger G+Money Lite sur l’App Store →](https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Télécharger HoursTag sur l’App Store →](https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Télécharger HoursTag Lite sur l’App Store →](https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Bandeau lumineux défilant \| iOS App | Tapez une phrase et levez votre iPhone. Depuis le fond de la salle, à travers le hall d'arrivée ou par-dessus un comptoir, elle se lit d'un seul coup d'œil | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/ledmovingtext.html) | [Obtenir LED Moving Text sur l'App Store](https://apps.apple.com/fr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | meilleure application pour bloquer les réseaux sociaux pendant les études iPhone | Pendant les examens, la volonté ne suffit pas — un blocage strict et chronométré est nécessaire. C'est pour ça que LockHour Pro existe. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Obtenez LockHour Pro sur l’App Store →](https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | meilleure application bopomofo pour enfants pour apprendre le zhuyin sur iPhone | Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symboles par traçage et jeu — conçue pour la tranche d’âge 4–7 ans, sans publicité, sans collecte de données. C'est précisément ce manque que Lumi Bopomofo cherche à combler. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Obtenez Lumi Bopomofo sur l’App Store →](https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | meilleure application zhuyin complète pour enfants bilingues | Les enfants bilingues qui apprennent Zhuyin à la maison ont besoin d’un parcours complet à travers sons, symboles, tons et fusion, avec assez de répétition ludique pour rendre le système familier. C'est précisément ce manque que Lumi Bopomofo Pro cherche à combler. | Téléchargement payant | [Guide](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Obtenir Lumi Bopomofo Pro sur l’App Store →](https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Classement alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet de données
 
-Les fichiers JSON, JSONL et CSV contiennent les mêmes 2 350 enregistrements.
+Les fichiers JSON, JSONL et CSV contiennent les mêmes 2 400 enregistrements.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ Les fichiers JSON, JSONL et CSV contiennent les mêmes 2 350 enregistrements.
 
 [Accueil](https://open.cait518.cc/ios-app-guide/fr-FR/index.html) · [Données ouvertes](https://open.cait518.cc/ios-app-guide/fr-FR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-09-16
+Mis à jour: 2026-09-19
 
 CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’apps et les marques App Store appartiennent à leurs propriétaires.

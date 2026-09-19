@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2291,
-  "app_count": 47,
-  "candidate_app_locale_pairs": 2350,
-  "creative_count": 47,
+  "abstained_pairs": 2340,
+  "app_count": 48,
+  "candidate_app_locale_pairs": 2400,
+  "creative_count": 48,
   "current_inventory": {
-    "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
-    "copy_sha256": "5439fa3d547559a9e04824b6e65292c9ffaf5c476a3a1e5f9d7c044686f11b09",
+    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
+    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 47
+    "public_apps": 48
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "c59beec225686e4334ca9fb4f6e9886b0aaadd4489cdf116735689a7a2217620",
+      "generated_sha256": "10d6eb7e1c6799c1f58149f52ad9a94605b9d4638f0447be574a705a2375de84",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "855ef5b4d5895f29a666564d63d4c1539dc8dd6eccecd2b0cba9409341c130a9",
+      "generated_sha256": "7a869555089eed1a13ff86f4905b7d938376b1f67f82618c8392b381706317bd",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -102,6 +102,11 @@
       "generated_sha256": "c74ddae0e7421703b4b40efb99f4c1aca6be6b911dc7818589c8afa63ba48055",
       "kind": "route_html",
       "relative_path": "en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "generated_sha256": "c129a65475987f01bcb3c243e4187c5f53ca3396b03b821790ad9a94c368b593",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html"
     },
     {
       "generated_sha256": "7827253c01a293b37dd48eb85ab6081802a02ecc281c6caf1a83eb6715ce7514",
@@ -289,7 +294,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "00b38a7958c4aca4b3dbf858604530221008d8193601d3507c36dfc4245c9105",
+      "generated_sha256": "6a8b1e0fbbdf929365e012f671911282069ee5458560fb79f102d6e559331eba",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -336,17 +341,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "05fff892c5915e9609545521b0c09000cb11c812990a1df70dcca337c6a8d037",
-    "copy_sha256": "5439fa3d547559a9e04824b6e65292c9ffaf5c476a3a1e5f9d7c044686f11b09",
+    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
+    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 47,
+    "public_apps": 48,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "d32343bdf1efbad4d32b306b1367cfddbcac4df7a5ca2524b76900ad473818c8",
+  "manifest_digest": "31bb35917b93d4cb1cdf57e6a089dc955347da0f601b65db36b6095fdb5b3e0b",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "592f079b9973ed04ecebec5dd8058522f29bdf6d9e62ee63ee8b40bbfa04daa8",
+  "release_contract_digest": "e0f6eaa208548b9e47112629ab8f2f057ed262262bb1d015ab3420280ffb11e4",
   "release_state": "exact",
-  "route_count": 59,
+  "route_count": 60,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -585,6 +590,23 @@
       "route_id": "en-US:hourstaglite:pause-impulse-buy-with-work-hours",
       "route_slug": "pause-impulse-buy-with-work-hours",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "app_store_url": "https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_learn&mt=8",
+      "campaign_token": "geo_learn",
+      "content_type": "workflow",
+      "creative_digest": "e60f0a6057dce8dd9aa0363b3322b4a59a0555f2981fca513741c1b1bd23bc91",
+      "creative_id": "ledmovingtext:hold-up-a-message-people-can-read-across-a-crowd:workflow",
+      "intent_type": "workflow",
+      "locale": "en-US",
+      "output_sha256": "c129a65475987f01bcb3c243e4187c5f53ca3396b03b821790ad9a94c368b593",
+      "record_digest": "13d332ecca30677d978413d208219c5eaa8fd0e3f6abe52a3de83190c30ae1eb",
+      "relative_path": "en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html",
+      "route_id": "en-US:ledmovingtext:hold-up-a-message-people-can-read-across-a-crowd",
+      "route_slug": "hold-up-a-message-people-can-read-across-a-crowd",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html"
     },
     {
       "app_key": "lockhour",
@@ -1354,5 +1376,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "8cd625b1ad53be2f70f440ab13efd0a634d11d019f99d9e8d8bc72b9f417e9cf"
+  "source_contract_digest": "78c4b8afa98ca41b05818fb7e13f0523ea7d692f1c41aff4529e061000da2c40"
 }

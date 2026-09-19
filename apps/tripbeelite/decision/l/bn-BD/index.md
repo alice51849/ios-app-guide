@@ -2,7 +2,7 @@
 title: "TripBee Lite: ভ্রমণ পরিকল্পনা — একটি সফর, সুন্দর গোছানো | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html"
-modified: "2026-09-18"
+modified: "2026-09-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

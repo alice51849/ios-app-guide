@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-18",
-  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
+  "date_modified": "2026-09-19",
+  "content_digest": "059c114e41ad490171be41c8b9aee73008a972d56ed797693dee908c3dac4b89",
   "locale": "it",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 47,
+  "record_count": 48,
   "apps": [
     {
       "key": "notesstudio100",
@@ -630,6 +630,48 @@
         "currency": "EUR",
         "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/it/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "Scrivi una frase e alza l'iPhone. Dal fondo del parterre, dall'altra parte della sala arrivi o al di sopra di un bancone si legge con un colpo d'occhio.",
+      "category": "utility",
+      "search_terms": [
+        "cartello",
+        "striscione",
+        "targa",
+        "concerto",
+        "tifo",
+        "aeroporto",
+        "ritiro",
+        "neon",
+        "vetrina",
+        "avviso",
+        "lettere",
+        "palco",
+        "folla"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6806639602"
       }
     },
     {

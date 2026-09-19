@@ -4,7 +4,7 @@
 
 קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.
 
-כוונות חיפוש שנכתבו על ידי המפרסם עבור 47 אפליקציות iOS מאומתות ו-50 לוקאלים של Apple.
+כוונות חיפוש שנכתבו על ידי המפרסם עבור 48 אפליקציות iOS מאומתות ו-50 לוקאלים של Apple.
 
 **לוקאל:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · **he** · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **G+Money Lite: הוצאות טיול** | G+Money Lite: הוצאות טיול — הוצאות, תקציב והמרת מטבע \| iOS App | G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן נסיעות | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/gmoneylite.html) | [הורידו את G+Money Lite: הוצאות טיול מה-App Store](https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: מחיר בשעות** | HoursTag Lite: מחיר בשעות — ראה את המחיר האמיתי של דברים \| iOS App | HoursTag Lite - ראה את המחיר האמיתי של דברים | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/hourstaglite.html) | [הורידו את HoursTag Lite: מחיר בשעות מה-App Store](https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: שעות לקנייה** | HoursTag: שעות לקנייה — תקציב, חיסכון והוצאות \| iOS App | כמה זה באמת עולה? לא רק בשקלים — אלא בשעות מהחיים שלך. | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/hourstag.html) | [הורידו את HoursTag: שעות לקנייה מה-App Store](https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — שלט אור נע על המסך \| iOS App | כתבו משפט והרימו את האייפון. מהשורה האחורית, מהצד השני של אולם הנוסעים הנכנסים או מעל דלפק, קוראים אותו במבט אחד. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/ledmovingtext.html) | [הורידו את LED Moving Text מה-App Store](https://apps.apple.com/il/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | האפליקציה הטובה ביותר לחסימת רשתות חברתיות בזמן לימודים לאייפון | במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא. בשביל זה LockHour Pro נבנה. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-app-to-block-social-media-while-studying-iphone.html) | [קבל את LockHour Pro ב-App Store →](https://apps.apple.com/il/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | האפליקציה הטובה ביותר ללימוד בופומופו לילדים באייפון | לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים. בדיוק את הפער הזה Lumi Bopomofo מנסה לסגור. | התחלה ללא תשלום · פתיחה ברכישה חד-פעמית | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [קבל את Lumi Bopomofo ב-App Store →](https://apps.apple.com/il/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | אפליקציית Zhuyin מלאה לילדים דו-לשוניים | ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת. בדיוק את הפער הזה Lumi Bopomofo Pro מנסה לסגור. | הורדה בתשלום | [מדריך](https://open.cait518.cc/ios-app-guide/he/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [קבל את Lumi Bopomofo Pro ב-App Store →](https://apps.apple.com/il/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## הורד את מערך הנתונים המלא
 
-קבצי JSON, JSONL ו-CSV כוללים את אותן 2,350 רשומות.
+קבצי JSON, JSONL ו-CSV כוללים את אותן 2,400 רשומות.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [בית](https://open.cait518.cc/ios-app-guide/he/index.html) · [נתונים פתוחים](https://open.cait518.cc/ios-app-guide/he/data/lumi-studio-publisher-search-intent-catalog.html) · [רישיון](https://creativecommons.org/licenses/by/4.0/)
 
-עודכן: 2026-09-16
+עודכן: 2026-09-19
 
 רישיון CC BY 4.0 חל על הרכב הקטלוג המקורי; שמות האפליקציות וסימני App Store שייכים לבעליהם.

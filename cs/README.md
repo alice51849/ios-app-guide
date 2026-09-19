@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 47 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 48 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **G+Money Lite: Výdaje na cesty** | G+Money Lite: Výdaje na cesty — Výdaje, rozpočet a měny \| iOS App | G+Money Lite — Chytrý převodník měn a sledovač výdajů | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/gmoneylite.html) | [Stáhněte si G+Money Lite: Výdaje na cesty v App Storu](https://apps.apple.com/cz/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Cena v hodinách** | HoursTag Lite: Cena v hodinách — Uvidíte skutečnou cenu věcí \| iOS App | HoursTag Lite - Uvidíte skutečnou cenu věcí | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstaglite.html) | [Stáhněte si HoursTag Lite: Cena v hodinách v App Storu](https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Hodiny na nákup** | HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory \| iOS App | Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstag.html) | [Stáhněte si HoursTag: Hodiny na nákup v App Storu](https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Běžící text na displeji \| iOS App | Napište větu a zvedněte iPhone. Ze zadní řady, přes celou příletovou halu nebo přes pult ji každý přečte jediným pohledem. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/ledmovingtext.html) | [Stáhněte si LED Moving Text v App Storu](https://apps.apple.com/cz/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | nejlepší aplikace na blokování sociálních sítí při studiu pro iPhone | Během zkoušek není vůle nástrojem — je to tvrdá časová blokace. Právě proto LockHour Pro vznikl. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Stáhněte LockHour Pro v App Store →](https://apps.apple.com/cz/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | nejlepší aplikace pro děti na učení bopomofo (zhuyin) na iPhonu | Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 symbolů trasováním a hrou — navrženo pro věk 4–7 let, bez reklam, bez sběru dat. Přesně tuhle mezeru má Lumi Bopomofo zaplnit. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Stáhněte Lumi Bopomofo v App Store →](https://apps.apple.com/cz/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | nejlepší kompletní aplikace na zhuyin pro bilingvní děti | Bilingvní děti, které se učí Zhuyin doma, potřebují kompletní cestu přes zvuky, symboly, tóny a skládání, s dostatkem hravého opakování, aby se systém stal známým. Přesně tuhle mezeru má Lumi Bopomofo Pro zaplnit. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Stáhněte si Lumi Bopomofo Pro v App Store →](https://apps.apple.com/cz/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 2 350 záznamů.
+JSON, JSONL a CSV obsahují stejných 2 400 záznamů.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL a CSV obsahují stejných 2 350 záznamů.
 
 [Domů](https://open.cait518.cc/ios-app-guide/cs/index.html) · [Otevřená data](https://open.cait518.cc/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-09-16
+Aktualizováno: 2026-09-19
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 47 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 48 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **G+Money Lite: Έξοδα ταξιδιού** | G+Money Lite: Έξοδα ταξιδιού — Έξοδα, προϋπολογισμός & FX \| iOS App | G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/gmoneylite.html) | [Αποκτήστε το G+Money Lite: Έξοδα ταξιδιού από το App Store](https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Τιμή σε ώρες** | HoursTag Lite: Τιμή σε ώρες — Γνωρίστε το πρίσμα αξίας σας \| iOS App | HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/hourstaglite.html) | [Αποκτήστε το HoursTag Lite: Τιμή σε ώρες από το App Store](https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ώρες αγοράς** | HoursTag: Ώρες αγοράς — Έξοδα, αποταμίευση & budget \| iOS App | Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου. | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/hourstag.html) | [Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store](https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Φωτεινή κυλιόμενη πινακίδα \| iOS App | Γράψε μια φράση και σήκωσε το iPhone. Από την τελευταία σειρά, από την άλλη άκρη της αίθουσας αφίξεων ή πάνω από έναν πάγκο διαβάζεται με μία ματιά. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/ledmovingtext.html) | [Αποκτήστε το LED Moving Text από το App Store](https://apps.apple.com/gr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | καλύτερη εφαρμογή για αποκλεισμό κοινωνικών δικτύων κατά τη μελέτη iPhone | Κατά τη διάρκεια εξετάσεων, η θέληση δεν αρκεί — χρειάζεται αυστηρό χρονικό μπλοκάρισμα. Γι' αυτό υπάρχει το LockHour Pro. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Κατεβάστε το LockHour Pro από το App Store →](https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | η καλύτερη εφαρμογή bopomofo για παιδιά να μάθουν zhuyin στο iPhone | Για παιδί που μαθαίνει Zhuyin για πρώτη φορά, η εφαρμογή πρέπει να καλύπτει όλα τα 37 σύμβολα μέσω σχεδίασης και παιχνιδιού — σχεδιασμένη για την ηλικία 4–7, χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Bopomofo. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Κατεβάστε το Lumi Bopomofo από το App Store →](https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | καλύτερη πλήρης εφαρμογή zhuyin για δίγλωσσα παιδιά | Δίγλωσσα παιδιά που μαθαίνουν Zhuyin στο σπίτι χρειάζονται πλήρη διαδρομή μέσα από ήχους, σύμβολα, τόνους και συνδυασμό, με αρκετή παιχνιδιάρικη επανάληψη ώστε το σύστημα να γίνει οικείο. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Bopomofo Pro. | Λήψη με χρέωση | [Οδηγός](https://open.cait518.cc/ios-app-guide/el/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Αποκτήστε το Lumi Bopomofo Pro στο App Store →](https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.350 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.400 εγγραφές.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://open.cait518.cc/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://open.cait518.cc/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-09-16
+Ενημερώθηκε: 2026-09-19
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

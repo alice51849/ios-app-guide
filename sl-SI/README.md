@@ -4,7 +4,7 @@
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-Iskalni nameni, ki jih je pripravil založnik, za 47 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
+Iskalni nameni, ki jih je pripravil založnik, za 48 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
 
 **Lokalizacija:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · **sl-SI** · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | **G+Money Lite: Potni stroški** | G+Money Lite: Potni stroški — Stroški, proračun & valute \| iOS App | G+Money Lite — Pametna potovalna valuta in sledilnik stroškov | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/gmoneylite.html) | [Prenesite G+Money Lite: Potni stroški iz trgovine App Store](https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Koliko ur dela** | HoursTag Lite: Koliko ur dela — Oglejte si pravo ceno stvari \| iOS App | HoursTag Lite - Oglejte si pravo ceno stvari | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/hourstaglite.html) | [Prenesite HoursTag Lite: Koliko ur dela iz trgovine App Store](https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Cena v Urah** | HoursTag: Cena v Urah — Proračun, stroški & prihranki \| iOS App | Kaj te resnično stane? Ne v evrih — v urah tvojega življenja. | Plačljiv prenos | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/hourstag.html) | [Prenesite HoursTag: Cena v Urah iz trgovine App Store](https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Svetleči napis, ki se premika \| iOS App | Vtipkaj poved in dvigni iPhone. Iz zadnje vrste, čez celotno prihodno dvorano ali prek pulta jo preberejo z enim pogledom. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/ledmovingtext.html) | [Prenesite LED Moving Text iz trgovine App Store](https://apps.apple.com/si/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | najboljša aplikacija za blokado družbenih omrežij med učenjem na iPhone | Med izpiti volja ni orodje — trda časovno omejena blokada je. Prav zato LockHour Pro obstaja. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Prenesite LockHour Pro iz App Store →](https://apps.apple.com/si/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | najboljša aplikacija za učenje bopomofo za otroke za učenje zhuyin na iPhonu | Za otroka, ki se prvič uči Zhuyin, mora aplikacija pokrivati vseh 37 simbolov z risanjem in igro — zasnovano za starost 4–7 let, brez oglasov in brez zbiranja podatkov. Prav to vrzel želi Lumi Bopomofo zapolniti. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Prenesite Lumi Bopomofo iz App Store →](https://apps.apple.com/si/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | najboljša celovita aplikacija za zhuyin za dvojezične otroke | Dvojezični otroci, ki se doma učijo Zhuyin, potrebujejo celovito pot skozi glasove, simbole, tone in združevanje, z dovolj igrivega ponavljanja, da sistem postane domač. Prav to vrzel želi Lumi Bopomofo Pro zapolniti. | Plačljiv prenos | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Pridobite Lumi Bopomofo Pro v trgovini App Store →](https://apps.apple.com/si/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 ## Prenesite celoten podatkovni niz
 
-JSON, JSONL in CSV vsebujejo enakih 2.350 zapisov.
+JSON, JSONL in CSV vsebujejo enakih 2.400 zapisov.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL in CSV vsebujejo enakih 2.350 zapisov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://open.cait518.cc/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-09-16
+Posodobljeno: 2026-09-19
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

@@ -4,7 +4,7 @@
 
 ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.
 
-47 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
+48 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
 
 **స్థానికీకరణ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · **te-IN** · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **G+Money Lite: ప్రయాణ ఖర్చులు** | G+Money Lite: ప్రయాణ ఖర్చులు — ప్రయాణ ఖర్చులు, కరెన్సీ \| iOS App | G+Money Lite — స్మార్ట్ ట్రావెల్ కరెన్సీ & ఖర్చుల ట్రాకర్ | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/gmoneylite.html) | [App Store నుంచి G+Money Lite: ప్రయాణ ఖర్చులు పొందండి](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ధర గంటల్లో** | HoursTag Lite: ధర గంటల్లో — వస్తువుల నిజమైన ధరను చూడండి \| iOS App | HoursTag Lite - వస్తువుల నిజమైన ధరను చూడండి | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/hourstaglite.html) | [App Store నుంచి HoursTag Lite: ధర గంటల్లో పొందండి](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: కొనుగోలు సమయం** | HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? \| iOS App | మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? డాలర్లలో కాదు — మీ జీవితంలో గంటల్లో. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/hourstag.html) | [App Store నుంచి HoursTag: కొనుగోలు సమయం పొందండి](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — స్క్రీన్‌పై కదిలే బోర్డు \| iOS App | ఒక వాక్యం టైప్ చేసి ఐఫోన్ పైకి ఎత్తండి. గుంపు వెనుక నుంచి, రాక హాలు అవతలి చివరి నుంచి లేదా కౌంటర్ మీద నుంచి ఒక్క చూపులోనే చదవగలరు. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/ledmovingtext.html) | [App Store నుంచి LED Moving Text పొందండి](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | అధ్యయనం సమయంలో సోషల్ మీడియాను బ్లాక్ చేయడానికి ఉత్తమ యాప్ iPhone కోసం | పరీక్షల సమయంలో, సంకల్పశక్తి సాధనం కాదు — కఠిన సమయపాలన బ్లాక్ అవసరం. అందుకే LockHour Pro తయారైంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-app-to-block-social-media-while-studying-iphone.html) | [App Storeలో LockHour Pro పొందండి →](https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | iPhoneలో పిల్లలు Zhuyin నేర్చుకోవడానికి ఉత్తమ Bopomofo యాప్ | Zhuyin మొదటిసారిగా నేర్చుకునే పిల్లల కోసం, యాప్ 37 చిహ్నాలను ట్రేసింగ్ మరియు ఆట ద్వారా కవర్ చేయాలి — 4–7 వయస్సు కోసం రూపొందించబడింది, ప్రకటనల లేని, డేటా సేకరణ లేని. ఈ ఖాళీనే Lumi Bopomofo పూరించాలనుకుంటుంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [App Storeలో Lumi Bopomofo పొందండి →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | ద్విభాషా పిల్లలకు ఉత్తమ పూర్తి జుయిన్ యాప్ | ఇంట్లో జుయిన్ నేర్చుకుంటున్న ద్విభాషా పిల్లలకు ధ్వనులు, చిహ్నాలు, స్వరాలు మరియు కలపడం ద్వారా పూర్తి మార్గం అవసరం, సరిపడిన ఆటపాటల పునరావృతంతో వ్యవస్థను పరిచయం చేయాలి. ఈ ఖాళీనే Lumi Bopomofo Pro పూరించాలనుకుంటుంది. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Lumi Bopomofo Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## పూర్తి డేటాసెట్‌ను డౌన్లోడ్ చేసుకోండి
 
-JSON, JSONL మరియు CSV లో అదే 2,350 రికార్డులు ఉన్నాయి.
+JSON, JSONL మరియు CSV లో అదే 2,400 రికార్డులు ఉన్నాయి.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL మరియు CSV లో అదే 2,350 రికార్డు�
 
 [హోమ్](https://open.cait518.cc/ios-app-guide/te-IN/index.html) · [ఓపెన్ డేటా](https://open.cait518.cc/ios-app-guide/te-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [లైసెన్స్](https://creativecommons.org/licenses/by/4.0/)
 
-నవీకరించబడింది: 2026-09-16
+నవీకరించబడింది: 2026-09-19
 
 CC BY 4.0 అసలు క్యాటలాగ్ సంకలనం పై వర్తిస్తుంది; యాప్ పేర్లు మరియు App Store గుర్తులు వాటి యజమానులకు చెందుతాయి.

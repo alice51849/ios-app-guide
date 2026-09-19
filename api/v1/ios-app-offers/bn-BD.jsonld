@@ -6,8 +6,8 @@
   "name": "Lumi Studio প্রকাশক অনুসন্ধান উদ্দেশ্য ক্যাটালগ",
   "description": "প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।",
   "inLanguage": "bn-BD",
-  "dateModified": "2026-09-16",
-  "numberOfItems": 47,
+  "dateModified": "2026-09-19",
+  "numberOfItems": 48,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -853,6 +853,66 @@
     {
       "@type": "ListItem",
       "position": 15,
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html",
+      "item": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6806639602",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6806639602"
+        },
+        "name": "LED Moving Text",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+          "evidence": {
+            "source_url": "https://support.apple.com/en-us/118205",
+            "observed_at": "2026-09-12",
+            "country": "BD",
+            "apple_media_services_markets": 174,
+            "country_listed": false,
+            "lookup_app_results": 0,
+            "lookup_control_results": 0,
+            "redirect_market": "US"
+          },
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
+        }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lockhour.html",
       "item": {
         "@context": "https://schema.org",
@@ -912,7 +972,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofo.html",
       "item": {
         "@context": "https://schema.org",
@@ -972,7 +1032,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofopro.html",
       "item": {
         "@context": "https://schema.org",
@@ -1032,7 +1092,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiletters.html",
       "item": {
         "@context": "https://schema.org",
@@ -1092,7 +1152,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiletterspro.html",
       "item": {
         "@context": "https://schema.org",
@@ -1152,7 +1212,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimath.html",
       "item": {
         "@context": "https://schema.org",
@@ -1212,7 +1272,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimathpro.html",
       "item": {
         "@context": "https://schema.org",
@@ -1272,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimission.html",
       "item": {
         "@context": "https://schema.org",
@@ -1332,7 +1392,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimissionpro.html",
       "item": {
         "@context": "https://schema.org",
@@ -1392,7 +1452,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiweather.html",
       "item": {
         "@context": "https://schema.org",
@@ -1452,7 +1512,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/maskmyfile.html",
       "item": {
         "@context": "https://schema.org",
@@ -1512,7 +1572,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/mochidonestamp.html",
       "item": {
         "@context": "https://schema.org",
@@ -1572,7 +1632,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/mochi.html",
       "item": {
         "@context": "https://schema.org",
@@ -1632,7 +1692,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/moneytag.html",
       "item": {
         "@context": "https://schema.org",
@@ -1692,7 +1752,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/onepageppt.html",
       "item": {
         "@context": "https://schema.org",
@@ -1752,7 +1812,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/photocream.html",
       "item": {
         "@context": "https://schema.org",
@@ -1812,7 +1872,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/picclear.html",
       "item": {
         "@context": "https://schema.org",
@@ -1872,7 +1932,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/savetag.html",
       "item": {
         "@context": "https://schema.org",
@@ -1932,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/scanto.html",
       "item": {
         "@context": "https://schema.org",
@@ -1992,7 +2052,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/sereno.html",
       "item": {
         "@context": "https://schema.org",
@@ -2052,7 +2112,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/shotinbox.html",
       "item": {
         "@context": "https://schema.org",
@@ -2112,7 +2172,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/snapportlite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2172,7 +2232,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/snapport.html",
       "item": {
         "@context": "https://schema.org",
@@ -2232,7 +2292,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html",
       "item": {
         "@context": "https://schema.org",
@@ -2292,7 +2352,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
       "item": {
         "@context": "https://schema.org",
@@ -2352,7 +2412,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbeelite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2412,7 +2472,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbee.html",
       "item": {
         "@context": "https://schema.org",
@@ -2472,7 +2532,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/unblurry.html",
       "item": {
         "@context": "https://schema.org",
@@ -2532,7 +2592,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaidlite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2592,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html",
       "item": {
         "@context": "https://schema.org",
@@ -2652,7 +2712,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmatelite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2712,7 +2772,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmate.html",
       "item": {
         "@context": "https://schema.org",
@@ -2772,7 +2832,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html",
       "item": {
         "@context": "https://schema.org",

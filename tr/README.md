@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-47 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+48 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [G+Money Lite uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [HoursTag uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [HoursTag Lite'ı App Store'dan alın →](https://apps.apple.com/tr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Ekranında kayan ışıklı yazı \| iOS App | Bir cümle yaz ve iPhone'unu kaldır. Arka sıradan, geliş salonunun öbür ucundan ya da tezgâhın üstünden tek bakışta okunur. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/ledmovingtext.html) | [LED Moving Text uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | ders çalışırken sosyal medyayı engellemek için en iyi uygulama iphone | Sınavlarda irade gücü yeterli değildir — kesin zamanlı engelleme gerekir. İşte LockHour Pro bu yüzden ortaya çıktı. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-app-to-block-social-media-while-studying-iphone.html) | [LockHour Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | iPhone'da çocuklar için en iyi bopomofo uygulaması, zhuyin öğrenmek için | Zhuyin'i ilk kez öğrenen bir çocuk için, uygulama tüm 37 sembolü çizerek ve oynayarak kapsamalıdır — 4–7 yaş aralığı için tasarlanmış, reklamsız, veri toplanmayan. Lumi Bopomofo tam da bu boşluğu kapatmak için var. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Lumi Bopomofo'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | İki dilli çocuklar için en iyi tam Zhuyin uygulaması | Evde Zhuyin öğrenen iki dilli çocuklar, sesler, semboller, tonlar ve harmanlamadan geçen tam bir yol ister; sistemi tanıdık kılacak kadar eğlenceli tekrar gerekir. Lumi Bopomofo Pro tam da bu boşluğu kapatmak için var. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Lumi Bopomofo Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 2.350 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.400 kaydı içerir.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL ve CSV aynı 2.350 kaydı içerir.
 
 [Ana Sayfa](https://open.cait518.cc/ios-app-guide/tr/index.html) · [Açık veri](https://open.cait518.cc/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-09-16
+Güncellendi: 2026-09-19
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

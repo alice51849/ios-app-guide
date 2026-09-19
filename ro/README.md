@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 47 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 48 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **G+Money Lite: Bani de vacanță** | G+Money Lite: Bani de vacanță — Cheltuieli, buget & valută \| iOS App | G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/gmoneylite.html) | [Descarcă G+Money Lite: Bani de vacanță din App Store](https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Preț în ore** | HoursTag Lite: Preț în ore — Descoperă prisma valorii \| iOS App | HoursTag Lite - Vezi adevărata valoare a lucrurilor | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstaglite.html) | [Descarcă HoursTag Lite: Preț în ore din App Store](https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Ore pentru cumpărat** | HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii \| iOS App | Cât costă cu adevărat? Nu în lei, ci în ore din viața ta. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstag.html) | [Descarcă HoursTag: Ore pentru cumpărat din App Store](https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Text luminos care se mișcă \| iOS App | Scrie o frază și ridică iPhone-ul. De pe ultimul rând, din capătul celălalt al sălii de sosiri sau peste tejghea, se citește dintr-o singură privire. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/ledmovingtext.html) | [Descarcă LED Moving Text din App Store](https://apps.apple.com/ro/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | cea mai bună aplicație pentru blocarea rețelelor sociale în timpul studiului pentru iPhone | În timpul examenelor, voința nu este instrumentul — un blocaj ferm temporizat este. De aceea există LockHour Pro. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Descarcă LockHour Pro din App Store →](https://apps.apple.com/ro/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | cea mai bună aplicație bopomofo pentru copii să învețe zhuyin pe iPhone | Pentru un copil care învață Zhuyin pentru prima dată, aplicația trebuie să acopere toate cele 37 de simboluri prin trasare și joc — concepută pentru fereastra de învățare 4–7 ani, fără reclame, fără colectare de date. Exact acest gol vrea să îl acopere Lumi Bopomofo. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Descarcă Lumi Bopomofo din App Store →](https://apps.apple.com/ro/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | cea mai bună aplicație completă de zhuyin pentru copii bilingvi | Copiii bilingvi care învață Zhuyin acasă au nevoie de o cale completă prin sunete, simboluri, tonuri și combinare, cu suficientă repetiție jucăușă pentru a face sistemul familiar. Exact acest gol vrea să îl acopere Lumi Bopomofo Pro. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Descarcă Lumi Bopomofo Pro din App Store →](https://apps.apple.com/ro/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.350 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.400 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL și CSV conțin aceleași 2.350 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-09-16
+Actualizat: 2026-09-19
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

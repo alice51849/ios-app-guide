@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 47 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 48 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **G+Money Lite: Траты в поездке** | G+Money Lite: Траты в поездке — Расходы, бюджет и валюта \| iOS App | G+Money Lite — Умный трекер валюты и расходов для путешествий | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/gmoneylite.html) | [Установить G+Money Lite: Траты в поездке в App Store](https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Цена в часах** | HoursTag Lite: Цена в часах — Увидьте настоящую цену вещей \| iOS App | HoursTag Lite - Увидьте настоящую цену вещей | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstaglite.html) | [Установить HoursTag Lite: Цена в часах в App Store](https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Часы для покупки** | HoursTag: Часы для покупки — Бюджет, расходы и экономия \| iOS App | Сколько это стоит на самом деле? Не в рублях, а в часах вашей жизни. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstag.html) | [Установить HoursTag: Часы для покупки в App Store](https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Бегущая строка на экране \| iOS App | Наберите фразу и поднимите iPhone. Из последнего ряда, через весь зал прилёта или поверх стойки её прочитают с одного взгляда. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html) | [Установить LED Moving Text в App Store](https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | лучшее приложение для блокировки соцсетей во время учёбы на iPhone | Во время экзаменов сила воли — не инструмент, нужен жёсткий тайм-блок. Ради этого LockHour Pro и сделан. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Скачайте LockHour Pro в App Store →](https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | лучшее приложение для детей для изучения чжуинь (bopomofo) на iPhone | Для ребёнка, который впервые учит чжуинь, приложение должно охватывать все 37 символов через трассировку и игру — для возраста 4–7 лет, без рекламы и сбора данных. Именно этот пробел и закрывает Lumi Bopomofo. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Скачайте Lumi Bopomofo в App Store →](https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | лучшее полное приложение для изучения чжуинь для билингвальных детей | Билингвальные дети, изучающие Zhuyin дома, нуждаются в полном пути через звуки, символы, тоны и смешивание, с достаточной игровой повторяемостью для освоения системы. Именно этот пробел и закрывает Lumi Bopomofo Pro. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Скачать Lumi Bopomofo Pro в App Store →](https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 2350 записей.
+JSON, JSONL и CSV содержат одинаковые 2400 записей.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL и CSV содержат одинаковые 2350 записей.
 
 [Главная](https://open.cait518.cc/ios-app-guide/ru/index.html) · [Открытые данные](https://open.cait518.cc/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-09-16
+Обновлено: 2026-09-19
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

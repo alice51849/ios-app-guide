@@ -4,7 +4,7 @@
 
 Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
 
-Søgeintentioner skrevet af udgiveren for 47 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
+Søgeintentioner skrevet af udgiveren for 48 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
 
 **Sprog og region:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · **da** · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 | **G+Money Lite: Rejseudgifter** | G+Money Lite: Rejseudgifter — Budget, udgifter & valuta \| iOS App | G+Money Lite — Smart rejsevaluta- & udgiftstracker | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/gmoneylite.html) | [Hent G+Money Lite: Rejseudgifter i App Store](https://apps.apple.com/dk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Pris i timer** | HoursTag Lite: Pris i timer — Den sande pris på ting \| iOS App | HoursTag Lite - Den sande pris på ting | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/hourstaglite.html) | [Hent HoursTag Lite: Pris i timer i App Store](https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Timer at købe** | HoursTag: Timer at købe — Budget, udgifter & opsparing \| iOS App | Hvad koster det egentlig? Ikke i kroner – i timer af dit liv. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/hourstag.html) | [Hent HoursTag: Timer at købe i App Store](https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Rullende lysskilt i mobilen \| iOS App | Skriv en sætning, og hold din iPhone op. Fra bagerste række, tværs over ankomsthallen eller hen over en disk kan den læses på ét blik. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/ledmovingtext.html) | [Hent LED Moving Text i App Store](https://apps.apple.com/dk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | bedste app til at blokere sociale medier under studier på iPhone | Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er. Det er derfor LockHour Pro findes. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Hent LockHour Pro i App Store →](https://apps.apple.com/dk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | bedste bopomofo-app til børn til at lære zhuyin på iPhone | For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem skriveøvelser og leg — designet til 4–7 års læringsvindue, reklamefri, uden dataindsamling. Det er præcis det hul, Lumi Bopomofo skal lukke. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Hent Lumi Bopomofo i App Store →](https://apps.apple.com/dk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | bedste komplette zhuyin-app til tosprogede børn | Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt. Det er præcis det hul, Lumi Bopomofo Pro skal lukke. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Hent Lumi Bopomofo Pro i App Store →](https://apps.apple.com/dk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 
 ## Hent det komplette datasæt
 
-JSON, JSONL og CSV indeholder de samme 2.350 poster.
+JSON, JSONL og CSV indeholder de samme 2.400 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL og CSV indeholder de samme 2.350 poster.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/da/index.html) · [Åbne data](https://open.cait518.cc/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-09-16
+Opdateret: 2026-09-19
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

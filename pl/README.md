@@ -4,7 +4,7 @@
 
 Pierwotny katalog określający, dla kogo jest przeznaczona każda aplikacja, jakie zadanie ma wykonać oraz bezpośrednią ścieżkę do App Store.
 
-Zamiary wyszukiwania tworzone przez wydawcę dla 47 zweryfikowanych działających aplikacji iOS oraz 50 lokalizacji Apple.
+Zamiary wyszukiwania tworzone przez wydawcę dla 48 zweryfikowanych działających aplikacji iOS oraz 50 lokalizacji Apple.
 
 **Lokalizacja:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · **pl** · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alfabetycznie według nazwy aplikacji — nigdy porządek według popularności.
 | **G+Money Lite: Koszty podróży** | G+Money Lite: Koszty podróży — Wydatki, budżet i waluty \| iOS App | G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/gmoneylite.html) | [Pobierz G+Money Lite: Koszty podróży z App Store](https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Cena to godziny** | HoursTag Lite: Cena to godziny — Prawdziwa cena rzeczy \| iOS App | HoursTag Lite - Prawdziwa cena rzeczy | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/hourstaglite.html) | [Pobierz HoursTag Lite: Cena to godziny z App Store](https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Godziny zakupu** | HoursTag: Godziny zakupu — Budżet, wydatki, oszczędzanie \| iOS App | Ile to naprawdę kosztuje? Nie w złotówkach – w godzinach twojego życia. | Płatne do pobrania | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/hourstag.html) | [Pobierz HoursTag: Godziny zakupu z App Store](https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Ruchomy napis na ekranie \| iOS App | Wpisz zdanie i unieś iPhone'a. Z ostatniego rzędu, przez całą halę przylotów albo ponad ladą przeczyta je każdy jednym rzutem oka. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/ledmovingtext.html) | [Pobierz LED Moving Text z App Store](https://apps.apple.com/pl/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | najlepsza aplikacja do blokowania mediów społecznościowych podczas nauki na iPhone | Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na czas. Po to właśnie powstał LockHour Pro. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Pobierz LockHour Pro z App Store →](https://apps.apple.com/pl/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | najlepsza aplikacja do nauki bopomofo dla dzieci na iPhonie | Dla dziecka uczącego się Zhuyin po raz pierwszy aplikacja powinna obejmować wszystkie 37 symboli przez naukę pisania i zabawę — zaprojektowana dla wieku 4–7 lat, bez reklam, bez zbierania danych. To właśnie tę lukę ma wypełnić Lumi Bopomofo. | Darmowe na start · odblokowanie jednorazowym zakupem | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Pobierz Lumi Bopomofo z App Store →](https://apps.apple.com/pl/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | najlepsza kompletna aplikacja zhuyin dla dzieci dwujęzycznych | Dzieci dwujęzyczne uczące się Zhuyin w domu potrzebują kompletnej ścieżki przez dźwięki, symbole, tony i łączenie, z wystarczającą ilością zabawnych powtórzeń, by system stał się znajomy. To właśnie tę lukę ma wypełnić Lumi Bopomofo Pro. | Płatne do pobrania | [Przewodnik](https://open.cait518.cc/ios-app-guide/pl/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Pobierz Lumi Bopomofo Pro z App Store →](https://apps.apple.com/pl/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Alfabetycznie według nazwy aplikacji — nigdy porządek według popularności.
 
 ## Pobierz kompletny zestaw danych
 
-Formaty JSON, JSONL i CSV zawierają te same 2 350 rekordów.
+Formaty JSON, JSONL i CSV zawierają te same 2 400 rekordów.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ Formaty JSON, JSONL i CSV zawierają te same 2 350 rekordów.
 
 [Strona główna](https://open.cait518.cc/ios-app-guide/pl/index.html) · [Otwarta baza danych](https://open.cait518.cc/ios-app-guide/pl/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencja](https://creativecommons.org/licenses/by/4.0/)
 
-Zaktualizowano: 2026-09-16
+Zaktualizowano: 2026-09-19
 
 Licencja CC BY 4.0 dotyczy oryginalnego zestawu katalogowego; nazwy aplikacji i znaki App Store należą do ich właścicieli.

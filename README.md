@@ -4,7 +4,7 @@
 
 A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 47 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 48 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](./ar-SA/) · [bn-BD](./bn-BD/) · [ca](./ca/) · [cs](./cs/) · [da](./da/) · [de-DE](./de-DE/) · [el](./el/) · [en-AU](./en-AU/) · [en-CA](./en-CA/) · [en-GB](./en-GB/) · [en-US](./en-US/) · [es-ES](./es-ES/) · [es-MX](./es-MX/) · [fi](./fi/) · [fr-CA](./fr-CA/) · [fr-FR](./fr-FR/) · [gu-IN](./gu-IN/) · [he](./he/) · [hi](./hi/) · [hr](./hr/) · [hu](./hu/) · [id](./id/) · [it](./it/) · [ja](./ja/) · [kn-IN](./kn-IN/) · [ko](./ko/) · [ml-IN](./ml-IN/) · [mr-IN](./mr-IN/) · [ms](./ms/) · [nl-NL](./nl-NL/) · [no](./no/) · [or-IN](./or-IN/) · [pa-IN](./pa-IN/) · [pl](./pl/) · [pt-BR](./pt-BR/) · [pt-PT](./pt-PT/) · [ro](./ro/) · [ru](./ru/) · [sk](./sk/) · [sl-SI](./sl-SI/) · [sv](./sv/) · [ta-IN](./ta-IN/) · [te-IN](./te-IN/) · [th](./th/) · [tr](./tr/) · [uk](./uk/) · [ur-PK](./ur-PK/) · [vi](./vi/) · [zh-Hans](./zh-Hans/) · [zh-Hant](./zh-Hant/)
 
@@ -103,6 +103,7 @@ Alphabetical by app name — never a ranking.
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That is the gap G+Money Lite was built to close. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Get G+Money Lite on the App Store →](https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Get HoursTag on the App Store →](https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [Get HoursTag Lite on the App Store →](https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Cue flows and marquee signs \| iOS App | Cue Flow handles moments that need more than one sign. Put one message on each line, then step backward or forward live, or choose a 2–20 second timer with | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/ledmovingtext.html) | [Get LED Moving Text on the App Store](https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | best app to block social media while studying iphone | During exams, willpower isn't the tool — a hard timed block is. That is why LockHour Pro exists. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Get LockHour Pro on the App Store →](https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | best bopomofo app for kids to learn zhuyin on iphone | For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected. That is the gap Lumi Bopomofo was built to close. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Get Lumi Bopomofo on the App Store →](https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | best complete zhuyin app for bilingual children | Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar. That is the gap Lumi Bopomofo Pro was built to close. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Get Lumi Bopomofo Pro on the App Store →](https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,350 records.
+JSON, JSONL and CSV contain the same 2,400 records.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ JSON, JSONL and CSV contain the same 2,350 records.
 
 [Home](https://open.cait518.cc/ios-app-guide/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-09-16
+Updated: 2026-09-19
 
 CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners.

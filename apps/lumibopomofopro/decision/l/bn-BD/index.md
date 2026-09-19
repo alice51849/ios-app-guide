@@ -2,7 +2,7 @@
 title: "Lumi Bopomofo Pro: Zhuyin — চীনা ফোনিক্স গেম | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/bn-BD/index.html"
-modified: "2026-09-18"
+modified: "2026-09-19"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 47 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 48 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -103,6 +103,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **G+Money Lite: Utazási kiadások** | G+Money Lite: Utazási kiadások — Kiadások, költségvetés & FX \| iOS App | G+Money Lite — Okos utazási pénznem- és költségkövető | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/gmoneylite.html) | [Töltse le a(z) G+Money Lite: Utazási kiadások appot az App Store-ból](https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Ár munkaórában** | HoursTag Lite: Ár munkaórában — Lásd a dolgok valódi árát \| iOS App | HoursTag Lite - Lásd a dolgok valódi árát | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/hourstaglite.html) | [Töltse le a(z) HoursTag Lite: Ár munkaórában appot az App Store-ból](https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag: Órák a vásárláshoz** | HoursTag: Órák a vásárláshoz — Költségvetés & spórolás \| iOS App | Mennyibe kerül valójában? Nem forintban, hanem az életed óráiban. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/hourstag.html) | [Töltse le a(z) HoursTag: Órák a vásárláshoz appot az App Store-ból](https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
+| **LED Moving Text** | LED Moving Text — Fényújság a kijelződön \| iOS App | Írj be egy mondatot, és emeld fel az iPhone-t. A hátsó sorból, az érkezési csarnok túloldaláról vagy a pult fölött is egy pillantásra elolvasható. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/ledmovingtext.html) | [Töltse le a(z) LED Moving Text appot az App Store-ból](https://apps.apple.com/hu/app/id6806639602?pt=118326163&ct=geo_pick&mt=8) |
 | **LockHour Pro** | legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on | Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell. Ezért készült a LockHour Pro. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-app-to-block-social-media-while-studying-iphone.html) | [Szerezze be a LockHour Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6780107485?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo** | legjobb bopomofo alkalmazás gyerekeknek zhuyin tanulásához iPhone-on | Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [Szerezze be a Lumi Bopomofo-t az App Store-ból →](https://apps.apple.com/hu/app/id6773017109?pt=118326163&ct=geo_pick&mt=8) |
 | **Lumi Bopomofo Pro** | legjobb teljes zhuyin alkalmazás kétnyelvű gyerekeknek | A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hangokon, szimbólumokon, tónusokon és összekeverésen keresztül, elég játékos ismétléssel, hogy a rendszer ismerős legyen. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo Pro. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [Szerezd be a Lumi Bopomofo Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6775773117?pt=118326163&ct=geo_pick&mt=8) |
@@ -139,7 +140,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 350 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 400 rekordot tartalmazza.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -147,6 +148,6 @@ A JSON, JSONL és CSV ugyanazt az 2 350 rekordot tartalmazza.
 
 [Kezdőlap](https://open.cait518.cc/ios-app-guide/hu/index.html) · [Nyílt adatok](https://open.cait518.cc/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-09-16
+Frissítve: 2026-09-19
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

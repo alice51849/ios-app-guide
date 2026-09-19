@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App</title>
+<meta name="description" content="একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।">
+<meta name="keywords" content="banner, marquee, scroller, signboard, নিয়ন, কনসার্ট, বিমানবন্দর, বিজ্ঞপ্তি, মঞ্চ, ভিড়, বিয়ে, দোকান, সারি">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html">
+<!-- social-preview:start -->
+<meta property="og:title" content="LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App">
+<meta property="og:description" content="একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।">
+<meta property="og:locale" content="bn_BD">
+<meta property="og:site_name" content="iOS App Guide">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">{"@context":"https://schema.org","@type":"WebPage","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html#webpage","url":"https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html","name":"LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App","description":"একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।","inLanguage":"bn-BD","primaryImageOfPage":{"@type":"ImageObject","@id":"https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg#primaryimage","contentUrl":"https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg","url":"https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg","width":1200,"height":675,"encodingFormat":"image/jpeg","caption":"LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App","representativeOfPage":true},"mainEntity":{"@id":"urn:apple:app:id6806639602"}}</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App">
+<meta name="twitter:description" content="একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg">
+<meta name="twitter:image:alt" content="LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App">
+<meta name="twitter:app:name:iphone" content="LED Moving Text">
+<meta name="twitter:app:id:iphone" content="6806639602">
+<meta name="twitter:app:name:ipad" content="LED Moving Text">
+<meta name="twitter:app:id:ipad" content="6806639602">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/bn-BD/ledmovingtext.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fbn-BD%2Fledmovingtext.html&amp;format=json" title="LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/ledmovingtext.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/ledmovingtext.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/ledmovingtext.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/ledmovingtext.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/ledmovingtext.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/ledmovingtext.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/ledmovingtext.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/ledmovingtext.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/ledmovingtext.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/ledmovingtext.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/ledmovingtext.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/ledmovingtext.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/ledmovingtext.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/ledmovingtext.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/ledmovingtext.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/ledmovingtext.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/ledmovingtext.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/ledmovingtext.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/ledmovingtext.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/ledmovingtext.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/ledmovingtext.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/ledmovingtext.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/ledmovingtext.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/ledmovingtext.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/ledmovingtext.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/ledmovingtext.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/ledmovingtext.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/ledmovingtext.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/ledmovingtext.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/ledmovingtext.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/ledmovingtext.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/ledmovingtext.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/ledmovingtext.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/ledmovingtext.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/ledmovingtext.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/ledmovingtext.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/ledmovingtext.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/ledmovingtext.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/ledmovingtext.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/ledmovingtext.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/ledmovingtext.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LED Moving Text","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","inLanguage":"bn-BD","description":"একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।\n\nঅ্যাপটি সরাসরি একটি জীবন্ত ক্যানভাসে খোলে। প্রিভিউটাই সম্পাদক, তাই লেখা, গতি, আকার আর রং ঠিক সেই মুহূর্তেই বদলায় যখন আপনি সেগুলো ছোঁন। এক টোকায় পুরো পর্দা: টোকা দিলে নিয়ন্ত্রণগুলো দেখা বা লুকানো যায়, আর স্পষ্ট বিরাম বোতামে প্রদর্শন থামে, সোয়াইপে গতি আর দিক বদলায়, দুই আঙুলে অক্ষরের আকার, আর নব্বই ডিগ্রি ঘোরালে লেখা পর্দার পুরো উচ্চতা পায়।\n\nযেসব মুহূর্তে গলার আওয়াজ পৌঁছায় না, এটি তাদের জন্য। গলা না ফাটিয়ে প্রিয় গানের জন্য উৎসাহ জানান। আগমনী হলে নাম তুলে ধরুন যাতে দূর থেকেই আপনাকে খুঁজে পাওয়া যায়। ফুটপাতে বা কাউন্টারে পিকআপের বার্তা দেখান। যেখানে কথা বলা কঠিন সেখানে শান্ত টেবিল বা ধীরে বলার অনুরোধ জানান। একটু উঠে যাওয়ার সময় টেবিলে ছোট বার্তা রেখে যান।\n\nযা বিনামূল্যে তা বিনামূল্যেই থাকে, কোনো নিবন্ধন ছাড়াই: সীমাহীন লেখা আর পূর্ণ পর্দায় প্রদর্শন, স্থির আর চলমান গতি, বাঁয়ে আর ডানে দিক, গতি আর অক্ষরের আকার, লেখার একশ আটটি রংই, কাচ বা উইন্ডস্ক্রিনের জন্য উল্টো লেখা, নব্বই ডিগ্রি ঘোরানো খাড়া ধরন, সমন্বয়যোগ্য ঝিলিক, সদ্য লেখা বাক্য এক টোকা দূরে, টর্চের স্পন্দন, সেই সঙ্গে পরখ করার জন্য একটি তৈরি নকশা ও একটি LED ফ্রেম, আর নিজের একটি সংরক্ষিত বোর্ড।\n\nএকবারের আনলক যোগ করে: সীমাহীন সংরক্ষিত বোর্ড ও নিজের নকশা, একশোর বেশি ইংরেজি হরফ, রূপরেখা, ছায়া, দীপ্তি, ঝিলিক, স্পন্দন, ঢেউ, টাইপরাইটার ও বিন্দুজাল-সহ বিশটি প্রভাব, দৈনন্দিন ছয় পরিস্থিতির বাকি ঊনষাটটি তৈরি নকশা, পাতা, ভেতরে ভেসে আসা, আগে-পিছে, দোলনা ও ধীর ভাসার গতি, ওপরে ও নিচে দিক, রামধনু ও ক্রমরঙা অক্ষর, বাকি LED ফ্রেম ও তাদের রং, অক্ষরের ফাঁক ও পুনরাবৃত্তির ব্যবধান, ছবি ও মেরুজ্যোতির পটভূমি, সুরের তালে নড়াচড়া, উল্টো গণনা, আর MP4 ও GIF হিসেবে সংরক্ষণ।\n\nসবকিছু ডিভাইসেই চলে। কোনো অ্যাকাউন্ট নেই, ক্লাউড নেই, বিজ্ঞাপন নেই, বিশ্লেষণ নেই, নজরদারি নেই। আপনার বাক্য, আপনার বোর্ড আর বেছে নেওয়া প্রতিটি ছবি আপনার আইফোনেই থাকে। মাইক্রোফোন কেবল তালে নড়াচড়া চালু থাকা অবস্থায় ব্যবহৃত হয়, আর শব্দ কখনো রেকর্ড বা সংরক্ষণ করা হয় না।\n\nপঞ্চাশটি ভাষা, আর প্রতিটি ভাষার নকশা শব্দে শব্দে অনুবাদ না করে নতুন করে লেখা। আইফোন ও আইপ্যাড দুটোর জন্যই, খাড়া, আড়াআড়ি ও Split View-তে আলাদা বিন্যাস নিয়ে।","featureList":["banner","marquee","scroller","signboard","নিয়ন","কনসার্ট","বিমানবন্দর","বিজ্ঞপ্তি"],"keywords":"banner, marquee, scroller, signboard, নিয়ন, কনসার্ট, বিমানবন্দর, বিজ্ঞপ্তি, মঞ্চ, ভিড়, বিয়ে, দোকান, সারি","@id":"urn:apple:app:id6806639602","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806639602"},"market_availability":{"state":"MARKET_UNAVAILABLE_OR_UNVERIFIED","reason":"MARKET_NOT_IN_APPLE_MEDIA_SERVICES","evidence":{"source_url":"https://support.apple.com/en-us/118205","observed_at":"2026-09-12","country":"BD","apple_media_services_markets":174,"country_listed":false,"lookup_app_results":0,"lookup_control_results":0,"redirect_market":"US"},"value":"N/A","content_retained":true,"publishable":false,"facts_allowed":false,"outbox_count":0}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"bn-BD","mainEntity":[{"@type":"Question","name":"banner-এর জন্য সেরা অ্যাপ কোনটি?","acceptedAnswer":{"@type":"Answer","text":"LED Moving Text banner-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।"}},{"@type":"Question","name":"marquee-এর জন্য কোনো iOS অ্যাপ আছে কি?","acceptedAnswer":{"@type":"Answer","text":"LED Moving Text marquee-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।"}},{"@type":"Question","name":"iPhone-এ scroller-এর জন্য কোন অ্যাপটি ভালো?","acceptedAnswer":{"@type":"Answer","text":"LED Moving Text scroller-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।"}},{"@type":"Question","name":"signboard-এর জন্য মানুষ কোন অ্যাপ ব্যবহার করে?","acceptedAnswer":{"@type":"Answer","text":"LED Moving Text signboard-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।"}},{"@type":"Question","name":"নিয়ন-এর জন্য একটি অ্যাপ সুপারিশ করবেন?","acceptedAnswer":{"@type":"Answer","text":"LED Moving Text নিয়ন-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।"}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>LED Moving Text</h1>
+  <p><strong>পর্দায় চলন্ত আলোর বোর্ড</strong></p>
+
+  <h2>LED Moving Text কী?</h2>
+  <p>LED Moving Text একটি iOS অ্যাপ। পর্দায় চলন্ত আলোর বোর্ড</p>
+  <p>একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।</p>
+  <p>অ্যাপটি সরাসরি একটি জীবন্ত ক্যানভাসে খোলে। প্রিভিউটাই সম্পাদক, তাই লেখা, গতি, আকার আর রং ঠিক সেই মুহূর্তেই বদলায় যখন আপনি সেগুলো ছোঁন। এক টোকায় পুরো পর্দা: টোকা দিলে নিয়ন্ত্রণগুলো দেখা বা লুকানো যায়, আর স্পষ্ট বিরাম বোতামে প্রদর্শন থামে, সোয়াইপে গতি আর দিক বদলায়, দুই আঙুলে অক্ষরের আকার, আর নব্বই ডিগ্রি ঘোরালে লেখা পর্দার পুরো উচ্চতা পায়।</p>
+  <p>যেসব মুহূর্তে গলার আওয়াজ পৌঁছায় না, এটি তাদের জন্য। গলা না ফাটিয়ে প্রিয় গানের জন্য উৎসাহ জানান। আগমনী হলে নাম তুলে ধরুন যাতে দূর থেকেই আপনাকে খুঁজে পাওয়া যায়। ফুটপাতে বা কাউন্টারে পিকআপের বার্তা দেখান। যেখানে কথা বলা কঠিন সেখানে শান্ত টেবিল বা ধীরে বলার অনুরোধ জানান। একটু উঠে যাওয়ার সময় টেবিলে ছোট বার্তা রেখে যান।</p>
+  <p>যা বিনামূল্যে তা বিনামূল্যেই থাকে, কোনো নিবন্ধন ছাড়াই: সীমাহীন লেখা আর পূর্ণ পর্দায় প্রদর্শন, স্থির আর চলমান গতি, বাঁয়ে আর ডানে দিক, গতি আর অক্ষরের আকার, লেখার একশ আটটি রংই, কাচ বা উইন্ডস্ক্রিনের জন্য উল্টো লেখা, নব্বই ডিগ্রি ঘোরানো খাড়া ধরন, সমন্বয়যোগ্য ঝিলিক, সদ্য লেখা বাক্য এক টোকা দূরে, টর্চের স্পন্দন, সেই সঙ্গে পরখ করার জন্য একটি তৈরি নকশা ও একটি LED ফ্রেম, আর নিজের একটি সংরক্ষিত বোর্ড।</p>
+  <p>একবারের আনলক যোগ করে: সীমাহীন সংরক্ষিত বোর্ড ও নিজের নকশা, একশোর বেশি ইংরেজি হরফ, রূপরেখা, ছায়া, দীপ্তি, ঝিলিক, স্পন্দন, ঢেউ, টাইপরাইটার ও বিন্দুজাল-সহ বিশটি প্রভাব, দৈনন্দিন ছয় পরিস্থিতির বাকি ঊনষাটটি তৈরি নকশা, পাতা, ভেতরে ভেসে আসা, আগে-পিছে, দোলনা ও ধীর ভাসার গতি, ওপরে ও নিচে দিক, রামধনু ও ক্রমরঙা অক্ষর, বাকি LED ফ্রেম ও তাদের রং, অক্ষরের ফাঁক ও পুনরাবৃত্তির ব্যবধান, ছবি ও মেরুজ্যোতির পটভূমি, সুরের তালে নড়াচড়া, উল্টো গণনা, আর MP4 ও GIF হিসেবে সংরক্ষণ।</p>
+  <p>সবকিছু ডিভাইসেই চলে। কোনো অ্যাকাউন্ট নেই, ক্লাউড নেই, বিজ্ঞাপন নেই, বিশ্লেষণ নেই, নজরদারি নেই। আপনার বাক্য, আপনার বোর্ড আর বেছে নেওয়া প্রতিটি ছবি আপনার আইফোনেই থাকে। মাইক্রোফোন কেবল তালে নড়াচড়া চালু থাকা অবস্থায় ব্যবহৃত হয়, আর শব্দ কখনো রেকর্ড বা সংরক্ষণ করা হয় না।</p>
+  <p>পঞ্চাশটি ভাষা, আর প্রতিটি ভাষার নকশা শব্দে শব্দে অনুবাদ না করে নতুন করে লেখা। আইফোন ও আইপ্যাড দুটোর জন্যই, খাড়া, আড়াআড়ি ও Split View-তে আলাদা বিন্যাস নিয়ে।</p>
+
+  <h2>মূল বৈশিষ্ট্য</h2>
+  <ul>
+    <li>banner</li>
+    <li>marquee</li>
+    <li>scroller</li>
+    <li>signboard</li>
+    <li>নিয়ন</li>
+    <li>কনসার্ট</li>
+    <li>বিমানবন্দর</li>
+    <li>বিজ্ঞপ্তি</li>
+  </ul>
+
+  <h2>মূল্য</h2>
+  <p>বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।</p>
+
+  <h2>সাধারণ প্রশ্ন</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">banner-এর জন্য সেরা অ্যাপ কোনটি?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">LED Moving Text banner-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">marquee-এর জন্য কোনো iOS অ্যাপ আছে কি?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">LED Moving Text marquee-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">iPhone-এ scroller-এর জন্য কোন অ্যাপটি ভালো?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">LED Moving Text scroller-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">signboard-এর জন্য মানুষ কোন অ্যাপ ব্যবহার করে?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">LED Moving Text signboard-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">নিয়ন-এর জন্য একটি অ্যাপ সুপারিশ করবেন?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">LED Moving Text নিয়ন-এর জন্য দারুণ একটি পছন্দ। পর্দায় চলন্ত আলোর বোর্ড এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।</p>
+      </div>
+    </div>
+
+  <h2>ডাউনলোড</h2>
+  <p class="market-availability" data-market-state="MARKET_UNAVAILABLE_OR_UNVERIFIED" data-market-reason="MARKET_NOT_IN_APPLE_MEDIA_SERVICES" data-market-evidence="https://support.apple.com/en-us/118205">Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে LED Moving Text-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।</p><p><a href="https://open.cait518.cc/ios-app-guide/alternatives/">বিকল্প অ্যাপ</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।</small></p>
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6806639602","app_name":"LED Moving Text","page_language":"bn-BD","page_url":"https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html","app_store_url":null,"localized_description":"একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।","market_availability":{"state":"MARKET_UNAVAILABLE_OR_UNVERIFIED","reason":"MARKET_NOT_IN_APPLE_MEDIA_SERVICES","evidence":{"source_url":"https://support.apple.com/en-us/118205","observed_at":"2026-09-12","country":"BD","apple_media_services_markets":174,"country_listed":false,"lookup_app_results":0,"lookup_control_results":0,"redirect_market":"US"},"value":"N/A","content_retained":true,"publishable":false,"facts_allowed":false,"outbox_count":0}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+</body>
+</html>

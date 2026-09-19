@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-18",
-  "content_digest": "3bd5b2c9b4b2fe84c3c1d90e167402cf6e336ef85c5d463cf53dfb66ec366bad",
+  "date_modified": "2026-09-19",
+  "content_digest": "059c114e41ad490171be41c8b9aee73008a972d56ed797693dee908c3dac4b89",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 47,
+  "record_count": 48,
   "apps": [
     {
       "key": "notesstudio100",
@@ -817,6 +817,62 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়।",
+      "category": "utility",
+      "search_terms": [
+        "banner",
+        "marquee",
+        "scroller",
+        "signboard",
+        "নিয়ন",
+        "কনসার্ট",
+        "বিমানবন্দর",
+        "বিজ্ঞপ্তি",
+        "মঞ্চ",
+        "ভিড়",
+        "বিয়ে",
+        "দোকান",
+        "সারি"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

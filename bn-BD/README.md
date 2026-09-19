@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৪৭টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৪৮টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -105,6 +105,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **G+Money: দৈনিক খরচ ও বাজেট** | G+Money: দৈনিক খরচ ও বাজেট — G+Money আপনার দৈনন্দিন জীবন ও ভ্রমণের জন্য দুটি অপরিহার্য \| iOS App | G+Money আপনার দৈনন্দিন জীবন ও ভ্রমণের জন্য দুটি অপরিহার্য টুল—দ্রুতগতির মুদ্রা রূপান্তরকারী ও সুন্দর ব্যয় ট্র্যাকার। সম্পূর্ণ অফলাইন। ব্যক্তিগতভাবে নিরাপদ | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/gmoney.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **HoursTag Lite: দাম কর্মঘণ্টায়** | HoursTag Lite: দাম কর্মঘণ্টায় — বিষয়ের আসল দাম দেখুন \| iOS App | HoursTag Lite - বিষয়ের আসল দাম দেখুন | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/hourstaglite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **HoursTag: সময়ে কেনাকাটা** | HoursTag: সময়ে কেনাকাটা — আসল খরচ কত? \| iOS App | আসল খরচ কত? ডলারে নয় — আপনার জীবনের ঘন্টায়। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/hourstag.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **LED Moving Text** | LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড \| iOS App | একটি লাইন লিখুন আর আইফোনটা তুলে ধরুন। ভিড়ের পেছন থেকে, আগমনী হলের অন্য প্রান্ত থেকে বা কাউন্টারের ওপর দিয়ে এক নজরেই পড়া যায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **LockHour Pro: অ্যাপ ব্লকার** | LockHour Pro: অ্যাপ ব্লকার — App Blocker・ফোকাস টাইমার \| iOS App | যে অ্যাপগুলো আপনার সময় চুরি করে, সেগুলো ব্লক করুন এবং মনোযোগ ফিরিয়ে আনুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/lockhour.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Lumi Bopomofo** | Lumi Bopomofo — Zhuyin: চীনা ফোনিক্স \| iOS App | Lumi Bopomofo আপনার শিশুর জন্য ঝুয়িন ফোনেটিক সিস্টেম শিখতে এক মজার ও স্নেহময় উপায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofo.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Lumi Bopomofo Pro: Zhuyin** | Lumi Bopomofo Pro: Zhuyin — চীনা ফোনিক্স গেম \| iOS App | আপনার শিশুকে চীনা ফোনিক্সের প্রেমে পড়াতে সাহায্য করুন এক মজার মহাকাশ অভিযানের মাধ্যমে। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofopro.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৩৫০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৪০০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL এবং CSV একই ২,৩৫০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-09-16
+আপডেট: 2026-09-19
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

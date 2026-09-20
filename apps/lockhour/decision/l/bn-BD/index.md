@@ -2,7 +2,7 @@
 title: "LockHour Pro: অ্যাপ ব্লকার — App Blocker・ফোকাস টাইমার | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/bn-BD/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

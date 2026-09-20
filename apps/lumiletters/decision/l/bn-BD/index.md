@@ -2,7 +2,7 @@
 title: "Lumi Letters Lite: ABC শিশু — ABC লেখা ও ফোনিক্স গেম | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/bn-BD/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

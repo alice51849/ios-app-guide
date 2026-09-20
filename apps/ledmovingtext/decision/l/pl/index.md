@@ -2,7 +2,7 @@
 title: "LED Moving Text — Ruchomy napis na ekranie | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/pl/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

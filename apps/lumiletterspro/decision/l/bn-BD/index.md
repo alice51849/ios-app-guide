@@ -2,7 +2,7 @@
 title: "Lumi Letters Pro: ABC Phonics — ABC ফোনিক্স: পড়া-লেখা | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/bn-BD/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

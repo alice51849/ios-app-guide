@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-09-19",
-  "content_digest": "5a0d5a8f1d7c38287c0bd4fa4ecfc3ac447f802be53f2f90e97891d1da2fdd66",
-  "generation_digest": "aded856a2bed26910a1235faad805201ea326e485d9d7c049548382373d806e6",
+  "dateModified": "2026-09-20",
+  "content_digest": "f75935b5b3c3f850d66aecd6bafd13d3aea232c6f649bd3d4199e87685df4368",
+  "generation_digest": "0240af44d40f3eef83dcd6420881783d14f4a05f93c2246048abe80673a626a8",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -91459,7 +91459,8 @@
       "badge_labels": [
         "Ещё",
         "Бесплатно начать · разовая разблокировка",
-        "App Store · Бесплатно"
+        "App Store · Бесплатно",
+        "★ 3.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/battai.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ru/index.html",
@@ -91472,7 +91473,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "RUB",
-        "formatted_price": "Бесплатно"
+        "formatted_price": "Бесплатно",
+        "rating_value": 3.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",

@@ -138,7 +138,18 @@ def _sitemap_paths(pages: Path) -> list[Path]:
             *pages.glob("*/sitemap.xml"),
         )
         # Owned feeds derive lastmod from persistent item content, not Git dates.
-        if path.name not in {"sitemap_index.xml", "sitemap_owned_feeds.xml"}
+        # sitemap-high-intent-decision-routes.xml is hashed byte-for-byte against
+        # a lastmod-free render by high_intent_decision_routes.verify_production_
+        # _closure() later in publish.py; injecting <lastmod> here made that
+        # closure check fail-closed on every run once real Git history existed
+        # for the routes (2026-09-18, blocked GEO publish for every new App
+        # queued behind it, LED Moving Text/dB Halo included). Keep it excluded
+        # like the other contract-owned sitemaps above.
+        if path.name not in {
+            "sitemap_index.xml",
+            "sitemap_owned_feeds.xml",
+            "sitemap-high-intent-decision-routes.xml",
+        }
     }
     return sorted(paths)
 

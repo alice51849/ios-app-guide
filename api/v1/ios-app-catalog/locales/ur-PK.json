@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-19",
-  "content_digest": "d4621d07a1941d1e6caaa3c9fcce0da4540be634af8a78a9c011697d5d555645",
+  "date_modified": "2026-09-20",
+  "content_digest": "d5d147a6edf9c8d63c27a515ed61c7a27a9c664a544f213f7d62bea60eeaccc6",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -460,6 +460,51 @@
         "currency": "PKR",
         "formatted_price": "مفت",
         "storefront_url": "https://apps.apple.com/pk/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: صوتی سطح میٹر",
+      "summary": "فوراً جانیں کہ آس پاس کی آواز کتنی بلند ہے اور اندازاً محفوظ وقت کتنا باقی ہے۔ dB Halo iPhone، iPad اور Apple Watch کے لیے مکمل طور پر ڈیوائس پر چلنے والا آواز کی سطح ناپنے کا میٹر اور آڈیو تجزیہ ٹول ہے۔",
+      "category": "utility",
+      "search_terms": [
+        "decibel",
+        "noise",
+        "level",
+        "analyzer",
+        "sound",
+        "meter",
+        "SPL",
+        "FFT",
+        "RTA",
+        "LAeq",
+        "spectrum",
+        "ریکارڈر",
+        "پیمائش",
+        "ایکسپوژر",
+        "نیند",
+        "آڈیو"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت",
+        "storefront_url": "https://apps.apple.com/pk/app/id6806826699"
       }
     },
     {

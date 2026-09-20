@@ -2,7 +2,7 @@
 title: "aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ms/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

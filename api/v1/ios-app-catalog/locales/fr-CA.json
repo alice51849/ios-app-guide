@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-19",
-  "content_digest": "d4621d07a1941d1e6caaa3c9fcce0da4540be634af8a78a9c011697d5d555645",
+  "date_modified": "2026-09-20",
+  "content_digest": "d5d147a6edf9c8d63c27a515ed61c7a27a9c664a544f213f7d62bea60eeaccc6",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -434,6 +434,48 @@
         "currency": "CAD",
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ca/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Sonomètre",
+      "summary": "Que ce soit au sous-sol, à la garderie, à l’aréna ou au chalet, dB Halo vous aide à garder le niveau sonore à l’œil, même près d’une motoneige ou sur un chantier hivernal. Sur iPhone ou iPad, son grand anneau de sécurité Halo affiche les dB en direct, les valeurs minimale, moyenne, maximale et de crête, ainsi qu’un journal d’événements horodaté. Sélectionnez la pondération A/C/Z, utilisez un microphone externe et sauvegardez plusieurs profils d’étalonnage adaptés à votre équipement.",
+      "category": "utility",
+      "search_terms": [
+        "décibel",
+        "bruit",
+        "mesure",
+        "acoustique",
+        "fréquence",
+        "octave",
+        "audition",
+        "microphone",
+        "spectre",
+        "OSHA",
+        "RTA",
+        "FFT",
+        "étalonnage"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6806826699"
       }
     },
     {

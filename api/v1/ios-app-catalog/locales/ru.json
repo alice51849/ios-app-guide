@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-19",
-  "content_digest": "d4621d07a1941d1e6caaa3c9fcce0da4540be634af8a78a9c011697d5d555645",
+  "date_modified": "2026-09-20",
+  "content_digest": "d5d147a6edf9c8d63c27a515ed61c7a27a9c664a544f213f7d62bea60eeaccc6",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -105,7 +105,8 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель"
+        "самоучитель",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -146,7 +147,8 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы"
+        "фразы",
+        "toeic аудирование"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -434,6 +436,49 @@
       }
     },
     {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Шумомер",
+      "summary": "dB Halo — шумомер для iPhone, iPad и Apple Watch. Все данные обрабатываются на устройстве. Кольцо Halo помогает сразу оценить текущий уровень звука в дБ. Во время измерения отображаются текущий уровень, минимум, среднее, максимум и пиковое значение, а журнал событий содержит записи с отметками времени.",
+      "category": "utility",
+      "search_terms": [
+        "децибелы",
+        "уровень",
+        "шума",
+        "громкость",
+        "акустика",
+        "частота",
+        "спектра",
+        "FFT",
+        "RTA",
+        "SPL",
+        "LAeq",
+        "октавы",
+        "микрофон",
+        "калибровка"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно",
+        "storefront_url": "https://apps.apple.com/ru/app/id6806826699"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: Расходы и бюджет",
@@ -467,7 +512,8 @@
         "курс",
         "офлайн",
         "csv",
-        "счета"
+        "счета",
+        "деньги в путешествии"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -504,7 +550,8 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов"
+        "контроль расходов",
+        "расходы в путешествии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -914,7 +961,8 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн"
+        "офлайн",
+        "фонетика для детей"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1615,7 +1663,9 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив"
+        "архив",
+        "сохранить статьи",
+        "читать позже"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2142,7 +2192,8 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping"
+        "ping",
+        "диагностика wifi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2256,7 +2307,9 @@
         "файлы",
         "7zip",
         "unrar",
-        "gz"
+        "gz",
+        "распаковать 7z",
+        "открыть файлы rar"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

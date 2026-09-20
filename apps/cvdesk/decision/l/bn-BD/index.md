@@ -2,7 +2,7 @@
 title: "CV Desk: ATS রিজিউম নির্মাতা — ATS রেজিউমে · CV বিল্ডার | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/bn-BD/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

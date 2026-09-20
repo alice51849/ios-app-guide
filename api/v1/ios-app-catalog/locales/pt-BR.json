@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-19",
-  "content_digest": "d4621d07a1941d1e6caaa3c9fcce0da4540be634af8a78a9c011697d5d555645",
+  "date_modified": "2026-09-20",
+  "content_digest": "d5d147a6edf9c8d63c27a515ed61c7a27a9c664a544f213f7d62bea60eeaccc6",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,7 +27,8 @@
         "offline",
         "estudo",
         "prova",
-        "rascunho"
+        "rascunho",
+        "notas à mão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -181,7 +182,8 @@
         "Cuidado na carga",
         "Faixa de carga",
         "Velocidade de carga",
-        "Exportar dados"
+        "Exportar dados",
+        "saúde da bateria"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -276,7 +278,8 @@
         "docx",
         "cartaapresentação",
         "vaga",
-        "profissional"
+        "profissional",
+        "currículo ats"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -415,7 +418,8 @@
         "japonês",
         "coreano",
         "iniciante",
-        "áudio"
+        "áudio",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -436,6 +440,47 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "storefront_url": "https://apps.apple.com/br/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Decibelímetro",
+      "summary": "No celular ou no iPad, use o dB Halo como medidor de decibéis em condomínios, no trânsito, em oficinas, obras ou festas. A tela do Halo indica a zona sonora enquanto o aplicativo está monitorando o ambiente. Veja a leitura atual, mínima, média, máxima e de pico, além do registro de eventos com horário e nível.",
+      "category": "utility",
+      "search_terms": [
+        "medidor",
+        "sonômetro",
+        "RTA",
+        "frequência",
+        "oitavas",
+        "dosímetro",
+        "audição",
+        "sono",
+        "gravador",
+        "microfone",
+        "analisador",
+        "sonoro"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6806826699"
       }
     },
     {
@@ -603,7 +648,8 @@
         "impulso",
         "renda",
         "valor",
-        "horas"
+        "horas",
+        "compra por impulso"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -752,7 +798,8 @@
         "fonética",
         "pré-escola",
         "pequenos",
-        "idioma"
+        "idioma",
+        "mandarim crianças"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1334,7 +1381,9 @@
         "compras",
         "calendário",
         "widget",
-        "organização"
+        "organização",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1412,7 +1461,8 @@
         "margem lucro",
         "rentabilidade cliente",
         "rateio de custos",
-        "análise cruzada"
+        "análise cruzada",
+        "despesas do projeto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1737,7 +1787,8 @@
         "categorias",
         "semelhantes",
         "linha do tempo",
-        "compra única"
+        "compra única",
+        "organizar capturas de tela"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1923,7 +1974,8 @@
         "missões",
         "recompensas",
         "férias",
-        "memórias"
+        "memórias",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

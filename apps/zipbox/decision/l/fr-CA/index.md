@@ -2,7 +2,7 @@
 title: "Zipbox : décompresser RAR, ZIP — Ouvrez vos archives, sans pub | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/fr-CA/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

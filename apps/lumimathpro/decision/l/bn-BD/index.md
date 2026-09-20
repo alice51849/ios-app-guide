@@ -2,7 +2,7 @@
 title: "Lumi Math Pro: শিশুদের সংখ্যা — শিশুদের গণিত: নামতা ৫-৮ | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/bn-BD/index.html"
-modified: "2026-09-19"
+modified: "2026-09-20"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

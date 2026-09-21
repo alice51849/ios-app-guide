@@ -2,7 +2,7 @@
 title: "LED Moving Text — 화면이 그대로 전광판으로 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ko/index.html"
-modified: "2026-09-20"
+modified: "2026-09-21"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

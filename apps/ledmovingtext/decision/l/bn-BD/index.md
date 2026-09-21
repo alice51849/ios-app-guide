@@ -2,7 +2,7 @@
 title: "LED Moving Text — পর্দায় চলন্ত আলোর বোর্ড | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/bn-BD/index.html"
-modified: "2026-09-20"
+modified: "2026-09-21"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

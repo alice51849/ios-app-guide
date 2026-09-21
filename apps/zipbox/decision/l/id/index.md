@@ -2,7 +2,7 @@
 title: "Zipbox: Ekstrak RAR, ZIP, 7z — Buka arsip tanpa iklan | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/id/index.html"
-modified: "2026-09-20"
+modified: "2026-09-21"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

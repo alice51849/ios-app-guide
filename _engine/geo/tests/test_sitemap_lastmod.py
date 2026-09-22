@@ -1202,6 +1202,55 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                 sitemap.read_text(encoding="utf-8"),
             )
 
+    def test_high_intent_decision_route_sitemap_is_left_byte_exact(self) -> None:
+        """high_intent_decision_routes.verify_production_closure() hashes this
+        file against a lastmod-free render later in publish.py; if this
+        generator touched it too, that closure check fails-closed on every
+        run once real Git history exists (2026-09-18 regression: blocked GEO
+        publish for every new App behind LED Moving Text/dB Halo in the
+        roster). It must stay excluded like the other contract-owned
+        sitemaps."""
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            (pages / "guides").mkdir()
+            (pages / "guides/app.html").write_text(
+                "<h1>ordinary page</h1>", encoding="utf-8"
+            )
+            ordinary_sitemap = pages / "sitemap.xml"
+            ordinary_sitemap.write_text(
+                urlset(f"<loc>{SITE}/guides/app.html</loc>"),
+                encoding="utf-8",
+            )
+            high_intent_content = urlset(
+                f"<loc>{SITE}/en-US/decide/aibriefpack/some-route.html</loc>",
+            )
+            high_intent_sitemap = pages / "sitemap-high-intent-decision-routes.xml"
+            high_intent_sitemap.write_text(high_intent_content, encoding="utf-8")
+
+            gen_sitemap_lastmod.generate(
+                pages,
+                state_path=pages / "state.json",
+                today="2026-07-10",
+                history_dates={
+                    "guides/app.html": "2026-07-01",
+                    "en-US/decide/aibriefpack/some-route.html": "2026-07-01",
+                },
+                dirty_paths=set(),
+            )
+
+            self.assertIn(
+                "<lastmod>2026-07-01</lastmod>",
+                ordinary_sitemap.read_text(encoding="utf-8"),
+            )
+            self.assertEqual(
+                high_intent_content,
+                high_intent_sitemap.read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                "<lastmod>",
+                high_intent_sitemap.read_text(encoding="utf-8"),
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

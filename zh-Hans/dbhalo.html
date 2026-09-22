@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App</title>
+<meta name="description" content="周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。">
+<meta name="keywords" content="分贝仪, 分贝测量, 音量测试, 噪音检测, 环境噪声, 声压测量, 频率分析, 实时分析仪, 声谱图, 倍频程, 噪声剂量, 听力保护, 麦克风校准, 鼾声监测, 睡眠声音, FFT, RTA, SPL, NIOSH, OSHA, 录音机">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6806826699, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App">
+<meta property="og:description" content="App Store · 免费. 周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="0">
+<meta property="product:price:currency" content="CNY">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html",
+  "name": "dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App",
+  "description": "周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。",
+  "inLanguage": "zh-Hans",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg#primaryimage",
+    "contentUrl": "https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg",
+    "url": "https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6806826699"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App">
+<meta name="twitter:description" content="App Store · 免费. 周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg">
+<meta name="twitter:image:alt" content="dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App">
+<meta name="twitter:app:name:iphone" content="dB Halo">
+<meta name="twitter:app:id:iphone" content="6806826699">
+<meta name="twitter:app:name:ipad" content="dB Halo">
+<meta name="twitter:app:id:ipad" content="6806826699">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="免费">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/zh-Hans/dbhalo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fzh-Hans%2Fdbhalo.html&amp;format=json" title="dB Halo：声级计 — 噪声检测、频谱与睡眠日志 | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/dbhalo.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/dbhalo.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/dbhalo.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/dbhalo.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/dbhalo.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/dbhalo.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/dbhalo.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/dbhalo.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/dbhalo.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/dbhalo.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/dbhalo.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/dbhalo.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/dbhalo.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/dbhalo.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/dbhalo.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/dbhalo.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/dbhalo.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/dbhalo.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/dbhalo.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/dbhalo.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/dbhalo.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/dbhalo.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/dbhalo.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/dbhalo.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/dbhalo.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/dbhalo.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/dbhalo.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/dbhalo.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/dbhalo.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/dbhalo.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/dbhalo.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/dbhalo.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/dbhalo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/dbhalo.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/dbhalo.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/dbhalo.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/dbhalo.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/dbhalo.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/dbhalo.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/dbhalo.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/dbhalo.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/dbhalo.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/dbhalo.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/dbhalo.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/dbhalo.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/dbhalo.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/dbhalo.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"dB Halo：声级计","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。\n\n实时声级，清晰易读\n• 大号 dB 读数搭配 Halo 安全区，直观显示当前声音状态\n• 当前、最低、平均、最高和峰值\n• 带时间戳的声音事件记录\n• A/C/Z 计权、外置麦克风与多套校准配置\n\n一次测量，三种分析\nFFT 频谱、实时分析仪（RTA）的倍频程频带和声谱图共享同一条实时测量时间轴。切换视图不会中断测量，也不会割裂记录。主导频率、LAeq、声压级、动态范围、峰值因数、采样率等详细数据一并呈现，并附有简明说明。不同外置麦克风可分别保存校准值，便于按场所或设备整理测量条件。\n\n噪声剂量与安全时长\n选择 NIOSH 或 OSHA 标准，查看估算的当前剂量、每日暴露与剩余时间。结果用于了解趋势，不替代专业判断。\n\n设备端睡眠日志\n识别并分类鼾声、呼吸声、说话声、咳嗽等事件，按发生时间整理声级与统计。睡眠日志不会保存原始麦克风音频；只有主动开始录音时，才会创建 AAC 文件。\n\n历史记录与导出\n从历史记录中选择测量，生成带图表的 PDF 报告或导出 CSV 数据。还可导出主动录制的 AAC，并将 dB 信息叠加到照片和视频。\n\n融入 Apple 生态\n将选定的 A 计权环境音量写入“健康” App；通过主屏幕和锁定屏幕小组件查看状态，用 App Intents 或快捷指令快速打开功能。Apple Watch 可脱离 iPhone 独立开始、停止测量，并查看实时 dB、峰值和暴露状态。\n\n隐私从设计开始\n无需注册账号，没有广告、使用情况分析或跟踪。测量、声音识别与数据处理全部在设备端完成。\n\n一般功能各可成功使用 3 次；频谱、噪声剂量和睡眠日志各可成功使用 1 次。仅在成功生成结果后计次，取消、拒绝权限或失败均不计次；已有结果可随时查看。Lifetime Pro 通过一次购买永久移除使用次数限制，包含全部现有功能和后续更新，不含订阅。\n\n重要提示：测量结果仅为估算值。dB Halo 并非经认证的专业声级计，不能替代医疗建议或职业安全判定。","url":"https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","featureList":["分贝仪","分贝测量","音量测试","噪音检测","环境噪声","声压测量","频率分析","实时分析仪"],"keywords":"分贝仪, 分贝测量, 音量测试, 噪音检测, 环境噪声, 声压测量, 频率分析, 实时分析仪, 声谱图, 倍频程, 噪声剂量, 听力保护, 麦克风校准, 鼾声监测, 睡眠声音, FFT, RTA, SPL, NIOSH, OSHA, 录音机","@id":"https://apps.apple.com/app/id6806826699","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806826699"},"downloadUrl":"https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY","url":"https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "zh-Hans",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "分贝仪 最好用的 App 是哪个?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "有没有 分贝测量 的 iOS App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhone 上 音量测试 推荐哪个 App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "噪音检测 用什么 App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "推荐一个 环境噪声 的 App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。"
+      }
+    }
+  ]
+}
+</script>
+<!-- app-store-facts-style:start -->
+<link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
+<!-- app-store-facts-style:end -->
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>dB Halo：声级计</h1>
+  <p><strong>噪声检测、频谱与睡眠日志</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6806826699" aria-label="dB Halo：声级计">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/dbhalo-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="dB Halo：声级计">dB Halo：声级计</strong>
+    <p class="iag-decision-card__promise" title="噪声检测、频谱与睡眠日志">噪声检测、频谱与睡眠日志</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="分贝仪">分贝仪</span><span class="iag-decision-card__fact" title="分贝测量">分贝测量</span><span class="iag-decision-card__fact" title="音量测试">音量测试</span><span class="iag-decision-card__fact" title="噪音检测">噪音检测</span></div>
+    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">免费</data></div>
+    <p class="iag-decision-card__terms" title="免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。">免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/cn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="在 App Store 获取 dB Halo：声级计" title="在 App Store 获取 dB Halo：声级计">在 App Store 获取 dB Halo：声级计</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="在 App Store 获取 dB Halo：声级计">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/cn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6806826699-c40dd16fb72fb643b3c8.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">在 App Store 获取 dB Halo：声级计</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/cn/app/id6806826699" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<h2>dB Halo：声级计 是什么?</h2>
+  <p>dB Halo：声级计 是一款 iOS App。 噪声检测、频谱与睡眠日志</p>
+  <p>周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。</p>
+  <p>实时声级，清晰易读</p>
+  <p>• 大号 dB 读数搭配 Halo 安全区，直观显示当前声音状态</p>
+  <p>• 当前、最低、平均、最高和峰值</p>
+  <p>• 带时间戳的声音事件记录</p>
+  <p>• A/C/Z 计权、外置麦克风与多套校准配置</p>
+  <p>一次测量，三种分析</p>
+  <p>FFT 频谱、实时分析仪（RTA）的倍频程频带和声谱图共享同一条实时测量时间轴。切换视图不会中断测量，也不会割裂记录。主导频率、LAeq、声压级、动态范围、峰值因数、采样率等详细数据一并呈现，并附有简明说明。不同外置麦克风可分别保存校准值，便于按场所或设备整理测量条件。</p>
+  <p>噪声剂量与安全时长</p>
+  <p>选择 NIOSH 或 OSHA 标准，查看估算的当前剂量、每日暴露与剩余时间。结果用于了解趋势，不替代专业判断。</p>
+  <p>设备端睡眠日志</p>
+  <p>识别并分类鼾声、呼吸声、说话声、咳嗽等事件，按发生时间整理声级与统计。睡眠日志不会保存原始麦克风音频；只有主动开始录音时，才会创建 AAC 文件。</p>
+  <p>历史记录与导出</p>
+  <p>从历史记录中选择测量，生成带图表的 PDF 报告或导出 CSV 数据。还可导出主动录制的 AAC，并将 dB 信息叠加到照片和视频。</p>
+  <p>融入 Apple 生态</p>
+  <p>将选定的 A 计权环境音量写入“健康” App；通过主屏幕和锁定屏幕小组件查看状态，用 App Intents 或快捷指令快速打开功能。Apple Watch 可脱离 iPhone 独立开始、停止测量，并查看实时 dB、峰值和暴露状态。</p>
+  <p>隐私从设计开始</p>
+  <p>无需注册账号，没有广告、使用情况分析或跟踪。测量、声音识别与数据处理全部在设备端完成。</p>
+  <p>一般功能各可成功使用 3 次；频谱、噪声剂量和睡眠日志各可成功使用 1 次。仅在成功生成结果后计次，取消、拒绝权限或失败均不计次；已有结果可随时查看。Lifetime Pro 通过一次购买永久移除使用次数限制，包含全部现有功能和后续更新，不含订阅。</p>
+  <p>重要提示：测量结果仅为估算值。dB Halo 并非经认证的专业声级计，不能替代医疗建议或职业安全判定。</p>
+
+  <h2>主要功能</h2>
+  <ul>
+    <li>分贝仪</li>
+    <li>分贝测量</li>
+    <li>音量测试</li>
+    <li>噪音检测</li>
+    <li>环境噪声</li>
+    <li>声压测量</li>
+    <li>频率分析</li>
+    <li>实时分析仪</li>
+  </ul>
+
+  <h2>价格</h2>
+  <p>免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。</p>
+
+  <h2>常见问题</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">分贝仪 最好用的 App 是哪个?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">有没有 分贝测量 的 iOS App?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">iPhone 上 音量测试 推荐哪个 App?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">噪音检测 用什么 App?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">推荐一个 环境噪声 的 App?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo：声级计 是很好的选择。噪声检测、频谱与睡眠日志。这是一款可在 App Store 下载的 iOS App。</p>
+      </div>
+    </div>
+
+  <h2>下载</h2>
+  <p><a href="https://apps.apple.com/cn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8">在 App Store 获取 dB Halo：声级计</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</small></p>
+<!-- app-store-facts:start -->
+<aside class="iag-store-facts" aria-label="App Store">
+<a class="iag-store-facts__link" href="https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8" rel="nofollow noopener">
+<span>App Store</span><span aria-hidden="true">&middot;</span><data value="0">免费</data>
+</a>
+</aside>
+<!-- app-store-facts:end -->
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6806826699","app_name":"dB Halo","page_language":"zh-Hans","page_url":"https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html","app_store_url":"https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","localized_description":"周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。","storefront_facts":{"price":"0","currency":"CNY","formatted_price":"免费"}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/cn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="在 App Store 获取 dB Halo：声级计" title="在 App Store 获取 dB Halo：声级计"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6806826699" data-app-store-url="https://apps.apple.com/cn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
 
-Søgeintentioner skrevet af udgiveren for 48 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
+Søgeintentioner skrevet af udgiveren for 49 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
 
 **Sprog og region:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · **da** · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 | **Cyca** | bedste menstruationscyklus-app uden konto til iPhone | I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk. Cyca gør kun det ene og lader resten være. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-period-tracker-app-no-account-required-iphone.html) | [Hent Cyca i App Store →](https://apps.apple.com/dk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | bedste praktiske sprogfrase-app til rejsende med Apple Watch | Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres. DailyMate er opstået præcis af det problem. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Hent DailyMate i App Store →](https://apps.apple.com/dk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Tal i dag** | DailyMate Lite: Tal i dag — 50 sprog, ægte dialoger \| iOS App | Tal, når det gælder. Med DailyMate Lite øver du komplette replikskift i hverdagens situationer: en naturlig indledning og det svar, der passer. Du lærer | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/dailymatelite.html) | [Hent DailyMate Lite: Tal i dag i App Store](https://apps.apple.com/dk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Lydniveaumåler** | dB Halo: Lydniveaumåler — Decibel, støj og spektrum \| iOS App | Se med det samme, hvor højt lydniveauet er omkring dig, hvilke frekvenser der dominerer, og hvor meget anslået sikker tid der er tilbage. dB Halo er en | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/dbhalo.html) | [Hent dB Halo: Lydniveaumåler i App Store](https://apps.apple.com/dk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | bedste rejsebudget-app uden abonnement til iPhone | På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat. Det er præcis det hul, G+Money skal lukke. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Hent G+Money i App Store →](https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Rejseudgifter** | G+Money Lite: Rejseudgifter — Budget, udgifter & valuta \| iOS App | G+Money Lite — Smart rejsevaluta- & udgiftstracker | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/gmoneylite.html) | [Hent G+Money Lite: Rejseudgifter i App Store](https://apps.apple.com/dk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Pris i timer** | HoursTag Lite: Pris i timer — Den sande pris på ting \| iOS App | HoursTag Lite - Den sande pris på ting | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/hourstaglite.html) | [Hent HoursTag Lite: Pris i timer i App Store](https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 
 ## Hent det komplette datasæt
 
-JSON, JSONL og CSV indeholder de samme 2.400 poster.
+JSON, JSONL og CSV indeholder de samme 2.450 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL og CSV indeholder de samme 2.400 poster.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/da/index.html) · [Åbne data](https://open.cait518.cc/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-09-19
+Opdateret: 2026-09-22
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

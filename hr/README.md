@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 48 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 49 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **Cyca** | najbolja aplikacija za praćenje menstruacije bez potrebe za računom za iPhone | U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku. Cyca radi samo to jedno i ostalo izostavlja. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-period-tracker-app-no-account-required-iphone.html) | [Preuzmite Cyca u App Storeu →](https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | najbolja praktična aplikacija za fraze na jeziku za putnike s Apple Watchom | Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom. DailyMate je nastao točno iz tog problema. | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Preuzmite DailyMate u App Storeu →](https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Govori danas** | DailyMate Lite: Govori danas — 50 jezika, stvarni dijalozi \| iOS App | Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe s korisnom replikom i prirodnim odgovorom na 50 jezika. Besplatno započni | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/dailymatelite.html) | [Preuzmite DailyMate Lite: Govori danas u App Storeu](https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Mjerač razine zvuka** | dB Halo: Mjerač razine zvuka — Decibeli, buka i spektar \| iOS App | Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i koliko je procijenjenog sigurnog vremena ostalo. dB Halo mjeri razinu zvuka i | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/dbhalo.html) | [Preuzmite dB Halo: Mjerač razine zvuka u App Storeu](https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone | Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban. Upravo tu prazninu G+Money želi popuniti. | Plaćeno preuzimanje | [Vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Preuzmite G+Money u App Storeu →](https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Putni troškovi** | G+Money Lite: Putni troškovi — Troškovi, budžet i valute \| iOS App | G+Money Lite — Pametan putni konverter valuta i praćenje troškova | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/gmoneylite.html) | [Preuzmite G+Money Lite: Putni troškovi u App Storeu](https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Cijena u satima** | HoursTag Lite: Cijena u satima — Pogledaj pravu cijenu stvari \| iOS App | HoursTag Lite - Pogledaj pravu cijenu stvari | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://open.cait518.cc/ios-app-guide/hr/hourstaglite.html) | [Preuzmite HoursTag Lite: Cijena u satima u App Storeu](https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 2.400 zapisa.
+JSON, JSONL i CSV sadrže istih 2.450 zapisa.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL i CSV sadrže istih 2.400 zapisa.
 
 [Početna](https://open.cait518.cc/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://open.cait518.cc/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-09-19
+Ažurirano: 2026-09-22
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

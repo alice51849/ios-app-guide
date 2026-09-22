@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-48 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+49 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **Cyca** | hesap gerektirmeyen en iyi adet takibi uygulaması iphone | Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar. Cyca sadece bunu yapar, gerisini bırakır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-period-tracker-app-no-account-required-iphone.html) | [Cyca'yı App Store'dan edinin →](https://apps.apple.com/tr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | Apple Watch destekli, gezginler için en iyi pratik dil ifadeleri uygulaması | Seyahatten önce, gerçek durumlar için tam ifadeler, baskı altında hâlâ bir araya getirmeniz gereken tekil kelimelerden daha faydalıdır. DailyMate tam olarak bu sorundan doğdu. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Bugün Konuşun** | DailyMate Lite: Bugün Konuşun — 50 Dil, Gerçek Diyaloglar \| iOS App | İhtiyacınız olduğunda doğal biçimde konuşun. DailyMate Lite, günlük durumları 50 dilde kısa ifade ve yanıt alıştırmalarına dönüştürür. Seyahat konusunun | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/dailymatelite.html) | [DailyMate Lite: Bugün Konuşun uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Desibel Ölçer** | dB Halo: Desibel Ölçer — Ses seviyesi, tayf ve doz \| iOS App | Çevredeki gürültüyü ve tahmini kalan güvenli süreyi anında görün. dB Halo, iPhone ve iPad için anlaşılır, kapsamlı bir ses seviyesi ölçerdir; Apple | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/dbhalo.html) | [dB Halo: Desibel Ölçer uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | abonelik gerektirmeyen en iyi seyahat bütçe takip uygulaması iphone | Sinyal olmayan bir ülkede çevrimdışı çalışan, birden fazla para birimini yöneten ve hesap istemeyen bir bütçe takip uygulamasına ihtiyacınız var — seyahat bazlı düzenlenmiş, böylece her tatil ayrı. G+Money tam da bu boşluğu kapatmak için var. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [G+Money'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [G+Money Lite uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [HoursTag uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 2.400 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.450 kaydı içerir.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL ve CSV aynı 2.400 kaydı içerir.
 
 [Ana Sayfa](https://open.cait518.cc/ios-app-guide/tr/index.html) · [Açık veri](https://open.cait518.cc/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-09-19
+Güncellendi: 2026-09-22
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

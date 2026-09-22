@@ -474,8 +474,13 @@ def main():
         if rc == 0:
             pushed = True
             break
-        rc2, _ = run(["git", "-c", CRED, "pull", "--rebase",
-                      "-q", "origin", "main"], cwd=PAGES)
+        # These pages are regenerated in full every run, so a conflict with a
+        # concurrently published tree is not a real disagreement: origin's copy
+        # is simply newer.  Without -X theirs every push race left the run
+        # stuck ("rebase 衝突已中止") and the catch-up never published.
+        # aeo_guide_i18n / aeo_pages / auto_batch_runner already do this.
+        rc2, _ = run(["git", "-c", CRED, "pull", "--rebase", "--autostash",
+                      "-X", "theirs", "-q", "origin", "main"], cwd=PAGES)
         if rc2 != 0:
             run(["git", "rebase", "--abort"], cwd=PAGES)
             print("⚠️ rebase 衝突已中止；本機提交保留，等待下次重試。")

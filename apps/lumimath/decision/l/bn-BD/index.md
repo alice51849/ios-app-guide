@@ -2,7 +2,7 @@
 title: "Lumi Math Planet: অভিযাত্রী — শিশুদের গণিত ৩-৬ | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/bn-BD/index.html"
-modified: "2026-09-21"
+modified: "2026-09-22"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-09-20",
-    "contentDigest": "3ea4eee68a0410c4ce83807695befdb4b3cd34b6ae3657c450510736e8dc97aa",
+    "dateModified": "2026-09-22",
+    "contentDigest": "76c7923b566eb05c1bacf6b6aeba1529def63fbd23d269810e2e538982bc8054",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 48
+    "recordCount": 49
   },
   "items": [
     {
@@ -85,10 +85,11 @@
         "文件掃描",
         "文字辨識",
         "論文閱讀",
-        "讀文件"
+        "讀文件",
+        "提示詞管理"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6784974530",
@@ -105,10 +106,12 @@
         "考試準備",
         "練習",
         "學習計劃",
-        "成績追蹤"
+        "成績追蹤",
+        "多益",
+        "英文檢定"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792483140",
@@ -154,10 +157,13 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料"
+        "匯出資料",
+        "電池檢測",
+        "電池健康度",
+        "電池壽命"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -288,10 +294,11 @@
         "月事",
         "好朋友",
         "生理紀錄",
-        "白帶"
+        "白帶",
+        "經期 追蹤"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -370,6 +377,38 @@
       "date_modified": "2026-09-05T16:20:42Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6806826699",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html",
+      "external_url": "https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "title": "dB Halo：分貝計",
+      "content_text": "周遭聲音有多大？能量集中在哪些頻段？依所選標準預估，安全時長還剩多少？dB Halo 把即時聲級、聲學分析、噪音劑量與睡眠聲音紀錄整合在同一個 App，所有處理都在裝置端完成。支援 iPhone、iPad 與 Apple Watch。",
+      "tags": [
+        "噪音計",
+        "分貝測量",
+        "音量測試",
+        "環境噪音",
+        "聲壓測量",
+        "頻率分析",
+        "即時分析儀",
+        "聲譜圖",
+        "倍頻程",
+        "噪音劑量",
+        "每日暴露",
+        "聽力保護",
+        "麥克風校正",
+        "打鼾偵測",
+        "睡眠聲音",
+        "FFT",
+        "RTA",
+        "SPL",
+        "NIOSH",
+        "OSHA",
+        "錄音機"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-09-22T07:49:34Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6755782939",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/gmoney.html",
       "external_url": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
@@ -446,10 +485,11 @@
         "生活記帳",
         "出國花費",
         "離線記帳",
-        "自訂匯率"
+        "自訂匯率",
+        "出國預算"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -1020,10 +1060,12 @@
         "上學",
         "整理",
         "責任感",
-        "星星"
+        "星星",
+        "睡前 習慣",
+        "獎勵 貼紙"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1134,10 +1176,12 @@
         "氣溫",
         "保暖",
         "野餐",
-        "出遊"
+        "出遊",
+        "天氣 穿搭",
+        "穿搭 天氣"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -1245,10 +1289,11 @@
         "電話",
         "車輛保養",
         "家電維護",
-        "重複事項"
+        "重複事項",
+        "上次 記錄"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6801956402",
@@ -1276,10 +1321,11 @@
         "活動收支",
         "出租帳本",
         "攤位帳本",
-        "現金流"
+        "現金流",
+        "副業 記帳"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6798814385",
@@ -1317,10 +1363,12 @@
         "數據",
         "心智圖",
         "海報",
-        "大綱"
+        "大綱",
+        "簡報 製作",
+        "重點摘要"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",
@@ -1453,10 +1501,11 @@
         "捷徑",
         "美食",
         "購物",
-        "網頁"
+        "網頁",
+        "收藏 連結"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1710,10 +1759,11 @@
         "獎勵",
         "假期",
         "回憶",
-        "地圖"
+        "地圖",
+        "小孩 旅行"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1771,10 +1821,11 @@
         "雨天",
         "提醒",
         "家庭遊",
-        "露營"
+        "露營",
+        "度假 規劃"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782275018",
@@ -1852,10 +1903,12 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "網路 檢查",
+        "wifi 診斷"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -1978,10 +2031,11 @@
         "全文搜尋",
         "加密",
         "預覽",
-        "離線"
+        "離線",
+        "密碼保護 zip"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-19T07:11:51Z"
+      "date_modified": "2026-09-22T07:49:34Z"
     }
   ]
 }

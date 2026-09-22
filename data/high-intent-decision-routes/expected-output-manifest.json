@@ -4,11 +4,13 @@
   "candidate_app_locale_pairs": 2400,
   "creative_count": 48,
   "current_inventory": {
-    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
-    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
-    "missing_route_app_keys": [],
-    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 48
+    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
+    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
+    "missing_route_app_keys": [
+      "dbhalo"
+    ],
+    "missing_route_app_keys_sha256": "77d874edddeb315b26e8f9da68ec2011ee83ab21e5aa5e9bf313939631cd306e",
+    "public_apps": 49
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,7 +26,7 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "10d6eb7e1c6799c1f58149f52ad9a94605b9d4638f0447be574a705a2375de84",
+      "generated_sha256": "dc9d9801a78f7780939732dc8fd573908765442b5a14bf79e1bcaae506d71f5f",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
@@ -347,10 +349,10 @@
     "public_apps": 48,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "31bb35917b93d4cb1cdf57e6a089dc955347da0f601b65db36b6095fdb5b3e0b",
+  "manifest_digest": "66106439086fe26f255e6978679ce64d3e027cd5cc0e32fbf48536944348fde7",
   "owner": "high_intent_decision_routes",
   "release_contract_digest": "e0f6eaa208548b9e47112629ab8f2f057ed262262bb1d015ab3420280ffb11e4",
-  "release_state": "exact",
+  "release_state": "degraded_missing_route_copy",
   "route_count": 60,
   "routes": [
     {
@@ -1376,5 +1378,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "78c4b8afa98ca41b05818fb7e13f0523ea7d692f1c41aff4529e061000da2c40"
+  "source_contract_digest": "d5409401106ce97b278b59238eed2728c0abb407c666a583dd158eaf4956d07e"
 }

@@ -402,9 +402,9 @@
     "abstention_reasons": {
       "missing_curated_native_copy": 2340
     },
-    "app_coverage_percent": 100.0,
+    "app_coverage_percent": 97.96,
     "candidate_app_locale_pairs": 2400,
-    "current_public_apps": 48,
+    "current_public_apps": 49,
     "fallback_records": 0,
     "intent_type_counts": {
       "alternative": 12,
@@ -413,8 +413,10 @@
       "workflow": 15
     },
     "mapped_apps": 48,
-    "missing_route_app_keys": [],
-    "missing_route_apps": 0,
+    "missing_route_app_keys": [
+      "dbhalo"
+    ],
+    "missing_route_apps": 1,
     "native_locale_pair_coverage_percent": 2.5,
     "native_locale_records": 60,
     "native_locales_with_records": 5,
@@ -422,11 +424,13 @@
     "primary_routes": 48
   },
   "current_inventory": {
-    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
-    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
-    "missing_route_app_keys": [],
-    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 48
+    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
+    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
+    "missing_route_app_keys": [
+      "dbhalo"
+    ],
+    "missing_route_app_keys_sha256": "77d874edddeb315b26e8f9da68ec2011ee83ab21e5aa5e9bf313939631cd306e",
+    "public_apps": 49
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
@@ -640,16 +644,16 @@
   },
   "publication": {
     "abstained_pairs": 2340,
-    "deployment_eligible": true,
+    "deployment_eligible": false,
     "expected_route_pages": 60,
     "fallback_records": 0,
     "feed_items": 60,
     "managed_owner": "high_intent_decision_routes",
     "sitemap_urls": 60,
-    "state": "exact"
+    "state": "degraded_missing_route_copy"
   },
   "quality": {
-    "all_gates_passed": true,
+    "all_gates_passed": false,
     "gates": {
       "complete_app_store_cta": {
         "detail": "60/60 URLs use ordered pt/ct/mt=8",
@@ -660,8 +664,8 @@
         "passed": true
       },
       "current_inventory_coverage": {
-        "detail": "48/48 current public apps mapped; missing route copy=[]",
-        "passed": true
+        "detail": "48/49 current public apps mapped; missing route copy=['dbhalo']",
+        "passed": false
       },
       "exact_release_cardinality": {
         "detail": "60 routes; 48 apps; 2400 pairs; 2340 abstentions",
@@ -688,7 +692,7 @@
         "passed": true
       },
       "primary_intent_coverage": {
-        "detail": "48/48 apps have one primary route",
+        "detail": "48/49 apps have one primary route",
         "passed": true
       },
       "truthful_publisher_disclosure": {
@@ -709,6 +713,6 @@
     "minimum_content_units": 200
   },
   "release_contract_digest": "e0f6eaa208548b9e47112629ab8f2f057ed262262bb1d015ab3420280ffb11e4",
-  "release_state": "exact",
+  "release_state": "degraded_missing_route_copy",
   "schema_version": 1
 }

@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-20",
-  "content_digest": "3ea4eee68a0410c4ce83807695befdb4b3cd34b6ae3657c450510736e8dc97aa",
+  "date_modified": "2026-09-22",
+  "content_digest": "76c7923b566eb05c1bacf6b6aeba1529def63fbd23d269810e2e538982bc8054",
   "locale": "ar-SA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -462,6 +462,55 @@
         "currency": "SAR",
         "formatted_price": "مجاني",
         "storefront_url": "https://apps.apple.com/sa/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: مقياس الديسيبل",
+      "summary": "اعرف مستوى الصوت وتكوينه الترددي والمدة الآمنة المقدّرة المتبقية من نظرة واحدة، من دون إرسال البيانات إلى أي جهة. يعمل تطبيق dB Halo بالكامل على الجهاز كمقياس لمستوى الصوت وأداة لتحليل الطيف على أجهزة iPhone وiPad وساعة Apple Watch أيضًا.",
+      "category": "utility",
+      "search_terms": [
+        "صوت",
+        "شدة",
+        "تردد",
+        "هرتز",
+        "FFT",
+        "RTA",
+        "SPL",
+        "NIOSH",
+        "OSHA",
+        "شخير",
+        "تسجيل",
+        "AAC",
+        "CSV",
+        "PDF",
+        "معايرة",
+        "ميكروفون",
+        "تعرض",
+        "سلامة",
+        "LAeq",
+        "ضجيج"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/sa/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني",
+        "storefront_url": "https://apps.apple.com/sa/app/id6806826699"
       }
     },
     {

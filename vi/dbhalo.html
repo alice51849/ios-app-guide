@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App</title>
+<meta name="description" content="Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone">
+<meta name="keywords" content="decibel, sound, meter, noise, recorder, RTA, FFT, spectrogram, dBA, LAeq, spectrum, micrô, hiệu, chuẩn, phơi, nhiễm">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/vi/dbhalo.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6806826699, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/vi/dbhalo.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App">
+<meta property="og:description" content="App Store · Miễn phí. Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="0">
+<meta property="product:price:currency" content="VND">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/vi/dbhalo.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/vi/dbhalo.html",
+  "name": "dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App",
+  "description": "Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone",
+  "inLanguage": "vi",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg#primaryimage",
+    "contentUrl": "https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg",
+    "url": "https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6806826699"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App">
+<meta name="twitter:description" content="App Store · Miễn phí. Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg">
+<meta name="twitter:image:alt" content="dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App">
+<meta name="twitter:app:name:iphone" content="dB Halo">
+<meta name="twitter:app:id:iphone" content="6806826699">
+<meta name="twitter:app:name:ipad" content="dB Halo">
+<meta name="twitter:app:id:ipad" content="6806826699">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="Miễn phí">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/vi/dbhalo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fvi%2Fdbhalo.html&amp;format=json" title="dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/dbhalo.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/dbhalo.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/dbhalo.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/dbhalo.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/dbhalo.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/dbhalo.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/dbhalo.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/dbhalo.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/dbhalo.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/dbhalo.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/dbhalo.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/dbhalo.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/dbhalo.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/dbhalo.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/dbhalo.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/dbhalo.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/dbhalo.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/dbhalo.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/dbhalo.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/dbhalo.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/dbhalo.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/dbhalo.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/dbhalo.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/dbhalo.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/dbhalo.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/dbhalo.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/dbhalo.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/dbhalo.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/dbhalo.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/dbhalo.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/dbhalo.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/dbhalo.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/dbhalo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/dbhalo.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/dbhalo.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/dbhalo.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/dbhalo.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/dbhalo.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/dbhalo.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/dbhalo.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/dbhalo.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/dbhalo.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/dbhalo.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/dbhalo.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/dbhalo.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/dbhalo.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/dbhalo.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"dB Halo: Máy đo mức âm thanh","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone và iPad. Vòng Halo lớn hiển thị mức áp suất âm theo thời gian thực, vùng cảnh báo, mức hiện tại, tối thiểu, trung bình, tối đa, đỉnh và nhật ký sự kiện có dấu thời gian.\n\nMở phổ FFT, dải quãng tám trong bộ phân tích thời gian thực (RTA) và phổ đồ trong cùng một phiên đo. Ba chế độ dùng chung dữ liệu và một dòng thời gian đo trực tiếp, nên có thể chuyển qua lại mà không cần bắt đầu lại hoặc mất phần đã đo. Khi cần phân tích sâu hơn, tần số trội, hệ số đỉnh, tần số lấy mẫu và các thông số khác cũng được hiển thị.\n\nLiều tiếng ồn ước tính mức phơi nhiễm hằng ngày và thời gian an toàn còn lại theo NIOSH hoặc OSHA.\n\nNhật ký giấc ngủ nhận dạng và phân loại các sự kiện âm thanh ngay trên thiết bị, gồm tiếng ngáy, hơi thở, lời nói, tiếng ho, báo thức, tiếng động vật, va chạm, âm thanh xung quanh và tiếng khóc. Các sự kiện được xếp theo dòng thời gian riêng tư. Dữ liệu âm thanh gốc từ micrô không được lưu; bản ghi AAC chỉ được tạo khi người dùng chủ động bắt đầu ghi âm.\n\nTrong Lịch sử, mở lại từng phiên rồi xuất phép đo đã chọn thành báo cáo PDF trực quan hoặc dữ liệu CSV. Bản ghi AAC đã tạo cũng có thể được xuất từ đây. Có thể phủ thông tin dB lên ảnh và video khi xuất.\n\nChọn trọng số A, C hoặc Z, dùng micrô ngoài và lưu nhiều hồ sơ hiệu chuẩn. Lưu mức âm thanh môi trường đã chọn vào ứng dụng Sức khỏe, xem nhanh qua Tiện ích ở Màn hình chính hoặc Màn hình khóa, dùng App Intents với Phím tắt, hoặc đo độc lập trên Apple Watch.\n\nMọi quá trình xử lý đều diễn ra trên thiết bị. Không cần tài khoản, không quảng cáo, không dùng công cụ phân tích và không theo dõi.\n\nMỗi tính năng thông thường có 3 lượt tạo kết quả miễn phí; riêng Phổ tần số, Liều tiếng ồn và Giấc ngủ có 1 lượt cho mỗi tính năng. Chỉ lượt tạo ra kết quả thành công mới được tính. Thao tác hủy, từ chối quyền hoặc lỗi không làm mất lượt; kết quả đã có vẫn luôn xem được. Lifetime Pro chỉ cần mua một lần để dùng không giới hạn, không có gói đăng ký.\n\nCác phép đo chỉ là ước tính. dB Halo không phải máy đo mức âm thanh chuyên nghiệp đã được chứng nhận và không thay thế tư vấn y tế hay đánh giá an toàn lao động.","url":"https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","featureList":["decibel","sound","meter","noise","recorder","RTA","FFT","spectrogram"],"keywords":"decibel, sound, meter, noise, recorder, RTA, FFT, spectrogram, dBA, LAeq, spectrum, micrô, hiệu, chuẩn, phơi, nhiễm","@id":"https://apps.apple.com/app/id6806826699","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806826699"},"downloadUrl":"https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/vi/dbhalo.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"VND","url":"https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "vi",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ứng dụng nào tốt nhất cho decibel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Có ứng dụng iOS cho sound không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ứng dụng iPhone nào cho meter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dùng ứng dụng nào cho noise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gợi ý ứng dụng cho recorder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store."
+      }
+    }
+  ]
+}
+</script>
+<!-- app-store-facts-style:start -->
+<link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
+<!-- app-store-facts-style:end -->
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>dB Halo: Máy đo mức âm thanh</h1>
+  <p><strong>Phổ tần số và liều tiếng ồn</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6806826699" aria-label="dB Halo: Máy đo mức âm thanh">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/dbhalo-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="dB Halo: Máy đo mức âm thanh">dB Halo: Máy đo mức âm thanh</strong>
+    <p class="iag-decision-card__promise" title="Phổ tần số và liều tiếng ồn">Phổ tần số và liều tiếng ồn</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="decibel">decibel</span><span class="iag-decision-card__fact" title="sound">sound</span><span class="iag-decision-card__fact" title="meter">meter</span><span class="iag-decision-card__fact" title="noise">noise</span></div>
+    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Miễn phí</data></div>
+    <p class="iag-decision-card__terms" title="Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.">Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/vn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Tải dB Halo: Máy đo mức âm thanh trên App Store" title="Tải dB Halo: Máy đo mức âm thanh trên App Store">Tải dB Halo: Máy đo mức âm thanh trên App Store</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="Tải dB Halo: Máy đo mức âm thanh trên App Store">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/vn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6806826699-cdc45f1027ef338d7fba.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">Tải dB Halo: Máy đo mức âm thanh trên App Store</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/vn/app/id6806826699" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/vi-vn?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<h2>dB Halo: Máy đo mức âm thanh là gì?</h2>
+  <p>dB Halo: Máy đo mức âm thanh là ứng dụng iOS. Phổ tần số và liều tiếng ồn</p>
+  <p>Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone và iPad. Vòng Halo lớn hiển thị mức áp suất âm theo thời gian thực, vùng cảnh báo, mức hiện tại, tối thiểu, trung bình, tối đa, đỉnh và nhật ký sự kiện có dấu thời gian.</p>
+  <p>Mở phổ FFT, dải quãng tám trong bộ phân tích thời gian thực (RTA) và phổ đồ trong cùng một phiên đo. Ba chế độ dùng chung dữ liệu và một dòng thời gian đo trực tiếp, nên có thể chuyển qua lại mà không cần bắt đầu lại hoặc mất phần đã đo. Khi cần phân tích sâu hơn, tần số trội, hệ số đỉnh, tần số lấy mẫu và các thông số khác cũng được hiển thị.</p>
+  <p>Liều tiếng ồn ước tính mức phơi nhiễm hằng ngày và thời gian an toàn còn lại theo NIOSH hoặc OSHA.</p>
+  <p>Nhật ký giấc ngủ nhận dạng và phân loại các sự kiện âm thanh ngay trên thiết bị, gồm tiếng ngáy, hơi thở, lời nói, tiếng ho, báo thức, tiếng động vật, va chạm, âm thanh xung quanh và tiếng khóc. Các sự kiện được xếp theo dòng thời gian riêng tư. Dữ liệu âm thanh gốc từ micrô không được lưu; bản ghi AAC chỉ được tạo khi người dùng chủ động bắt đầu ghi âm.</p>
+  <p>Trong Lịch sử, mở lại từng phiên rồi xuất phép đo đã chọn thành báo cáo PDF trực quan hoặc dữ liệu CSV. Bản ghi AAC đã tạo cũng có thể được xuất từ đây. Có thể phủ thông tin dB lên ảnh và video khi xuất.</p>
+  <p>Chọn trọng số A, C hoặc Z, dùng micrô ngoài và lưu nhiều hồ sơ hiệu chuẩn. Lưu mức âm thanh môi trường đã chọn vào ứng dụng Sức khỏe, xem nhanh qua Tiện ích ở Màn hình chính hoặc Màn hình khóa, dùng App Intents với Phím tắt, hoặc đo độc lập trên Apple Watch.</p>
+  <p>Mọi quá trình xử lý đều diễn ra trên thiết bị. Không cần tài khoản, không quảng cáo, không dùng công cụ phân tích và không theo dõi.</p>
+  <p>Mỗi tính năng thông thường có 3 lượt tạo kết quả miễn phí; riêng Phổ tần số, Liều tiếng ồn và Giấc ngủ có 1 lượt cho mỗi tính năng. Chỉ lượt tạo ra kết quả thành công mới được tính. Thao tác hủy, từ chối quyền hoặc lỗi không làm mất lượt; kết quả đã có vẫn luôn xem được. Lifetime Pro chỉ cần mua một lần để dùng không giới hạn, không có gói đăng ký.</p>
+  <p>Các phép đo chỉ là ước tính. dB Halo không phải máy đo mức âm thanh chuyên nghiệp đã được chứng nhận và không thay thế tư vấn y tế hay đánh giá an toàn lao động.</p>
+
+  <h2>Tính năng chính</h2>
+  <ul>
+    <li>decibel</li>
+    <li>sound</li>
+    <li>meter</li>
+    <li>noise</li>
+    <li>recorder</li>
+    <li>RTA</li>
+    <li>FFT</li>
+    <li>spectrogram</li>
+  </ul>
+
+  <h2>Giá</h2>
+  <p>Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.</p>
+
+  <h2>Câu hỏi thường gặp</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Ứng dụng nào tốt nhất cho decibel?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Có ứng dụng iOS cho sound không?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Ứng dụng iPhone nào cho meter?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Dùng ứng dụng nào cho noise?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Gợi ý ứng dụng cho recorder?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">dB Halo: Máy đo mức âm thanh là lựa chọn tuyệt vời. Phổ tần số và liều tiếng ồn. Đây là ứng dụng iOS trên App Store.</p>
+      </div>
+    </div>
+
+  <h2>Tải xuống</h2>
+  <p><a href="https://apps.apple.com/vn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8">Tải dB Halo: Máy đo mức âm thanh trên App Store</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.</small></p>
+<!-- app-store-facts:start -->
+<aside class="iag-store-facts" aria-label="App Store">
+<a class="iag-store-facts__link" href="https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8" rel="nofollow noopener">
+<span>App Store</span><span aria-hidden="true">&middot;</span><data value="0">Miễn phí</data>
+</a>
+</aside>
+<!-- app-store-facts:end -->
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6806826699","app_name":"dB Halo","page_language":"vi","page_url":"https://open.cait518.cc/ios-app-guide/vi/dbhalo.html","app_store_url":"https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","localized_description":"Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu.","storefront_facts":{"price":"0","currency":"VND","formatted_price":"Miễn phí"}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/vn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="Tải dB Halo: Máy đo mức âm thanh trên App Store" title="Tải dB Halo: Máy đo mức âm thanh trên App Store"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6806826699" data-app-store-url="https://apps.apple.com/vn/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

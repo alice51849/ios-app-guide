@@ -8,7 +8,7 @@
   "csv_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv",
   "schema_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-09-21",
+  "dateModified": "2026-09-22",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2344,
-  "app_count": 48,
+  "row_count": 2393,
+  "app_count": 49,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -104,6 +104,7 @@
     "cyca",
     "dailymate",
     "dailymatelite",
+    "dbhalo",
     "gmoney",
     "gmoneylite",
     "hourstag",
@@ -172,5 +173,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:e8027860c3c7aa2e421adaa6a242359016a982b9d1b2b6908dd095728edf4cce"
+  "content_digest": "sha256:389170fa401f5b0bfed5432d2ea67a25b93b50958ccf549d6dfb579818a2671b"
 }

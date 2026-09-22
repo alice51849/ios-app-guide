@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 4,
-  "roster_digest": "87be77d97d7b66cb1844453b07bd861c1cef5808e89204ae5f6065bb4a44f544",
+  "revision": 5,
+  "roster_digest": "ca6f3a6668b1c6129aaa052c4941daaee33d23a5e902844827e715ec2b865481",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -39,6 +39,10 @@
     "dailymatelite": {
       "app_id": "6794725568",
       "name": "DailyMate Lite"
+    },
+    "dbhalo": {
+      "app_id": "6806826699",
+      "name": "dB Halo"
     },
     "gmoney": {
       "app_id": "6755782939",

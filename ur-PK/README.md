@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-48 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+49 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **Cyca** | iPhone کے لیے بہترین پیریڈ ٹریکر ایپ بغیر اکاؤنٹ کے | ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے۔ Cyca صرف یہی ایک کام کرتا ہے، باقی چھوڑ دیتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-period-tracker-app-no-account-required-iphone.html) | [Cyca ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | ایپل واچ کے ساتھ مسافروں کے لیے بہترین عملی زبان کے جملوں کی ایپ | سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے۔ DailyMate کی شروعات بالکل اسی مسئلے سے ہوئی۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store سے DailyMate حاصل کریں →](https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: آج ہی بولیں** | DailyMate Lite: آج ہی بولیں — 50 زبانیں، حقیقی گفتگو \| iOS App | موقع آئے تو اعتماد سے بولیں۔ DailyMate Lite روزمرہ حالات کو مختصر مشق میں بدلتا ہے: ایک عملی جملہ اور اس کا قدرتی جواب۔ 50 زبانوں میں سے کوئی بھی منتخب | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/dailymatelite.html) | [App Store سے DailyMate Lite: آج ہی بولیں حاصل کریں](https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: صوتی سطح میٹر** | dB Halo: صوتی سطح میٹر — ڈیسی بل، طیف اور شور کی خوراک \| iOS App | فوراً جانیں کہ آس پاس کی آواز کتنی بلند ہے اور اندازاً محفوظ وقت کتنا باقی ہے۔ dB Halo iPhone، iPad اور Apple Watch کے لیے مکمل طور پر ڈیوائس پر چلنے | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/dbhalo.html) | [App Store سے dB Halo: صوتی سطح میٹر حاصل کریں](https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | iPhone کے لیے بہترین ٹریول بجٹ ٹریکر ایپ بغیر سبسکرپشن کے | سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو۔ یہی خلا G+Money پُر کرنا چاہتا ہے۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [G+Money ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: سفری اخراجات** | G+Money Lite: سفری اخراجات — سفری خرچ اور کرنسی \| iOS App | G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/gmoneylite.html) | [App Store سے G+Money Lite: سفری اخراجات حاصل کریں](https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: قیمت گھنٹوں میں** | HoursTag Lite: قیمت گھنٹوں میں — چیزوں کی اصل قیمت دیکھیں \| iOS App | HoursTag Lite - چیزوں کی اصل قیمت دیکھیں | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://open.cait518.cc/ios-app-guide/ur-PK/hourstaglite.html) | [App Store سے HoursTag Lite: قیمت گھنٹوں میں حاصل کریں](https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 2,400 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 2,450 ریکارڈز شامل ہیں۔
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON، JSONL اور CSV میں وہی 2,400 ریکارڈز شامل ہیں۔
 
 [ہوم](https://open.cait518.cc/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://open.cait518.cc/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-09-19
+اپ ڈیٹ کیا گیا: 2026-09-22
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

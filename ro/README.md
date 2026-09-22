@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 48 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 49 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **Cyca** | cea mai bună aplicație de urmărire a ciclului fără cont necesar pentru iPhone | Într-o categorie unde sensibilitatea datelor este esențială, următorul ciclu păstrează totul — flux, stare de spirit, simptome, temperatură, intimitate — pe dispozitiv, fără cont și fără sincronizare în cloud. Cyca face doar atât și lasă restul deoparte. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-period-tracker-app-no-account-required-iphone.html) | [Obține Cyca din App Store →](https://apps.apple.com/ro/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch | Înainte de o călătorie, expresiile complete pentru situații reale sunt mai utile decât vocabularul izolat pe care trebuie să-l asamblezi sub presiune. DailyMate a pornit exact de la această problemă. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Obține DailyMate din App Store →](https://apps.apple.com/ro/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Vorbește azi** | DailyMate Lite: Vorbește azi — 50 de limbi, dialoguri reale \| iOS App | Vorbește când contează. DailyMate Lite transformă situațiile reale în exerciții scurte, cu o replică utilă și un răspuns firesc, în 50 de limbi. Începe | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/dailymatelite.html) | [Descarcă DailyMate Lite: Vorbește azi din App Store](https://apps.apple.com/ro/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Sonometru** | dB Halo: Sonometru — Decibeli, doză și expunere \| iOS App | dB Halo transformă iPhone sau iPad într-un sonometru cu analizor audio și procesare integrală pe dispozitiv. Inelul Halo afișează în timp real nivelul | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/dbhalo.html) | [Descarcă dB Halo: Sonometru din App Store](https://apps.apple.com/ro/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | cea mai bună aplicație de urmărire buget de călătorie fără abonament pentru iPhone | Într-o călătorie ai nevoie de un tracker de buget care să funcționeze offline într-o țară fără date, să gestioneze mai multe valute și să nu ceară cont — organizat pe călătorii ca fiecare vacanță să fie separată. Exact acest gol vrea să îl acopere G+Money. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Bani de vacanță** | G+Money Lite: Bani de vacanță — Cheltuieli, buget & valută \| iOS App | G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/gmoneylite.html) | [Descarcă G+Money Lite: Bani de vacanță din App Store](https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Preț în ore** | HoursTag Lite: Preț în ore — Descoperă prisma valorii \| iOS App | HoursTag Lite - Vezi adevărata valoare a lucrurilor | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/hourstaglite.html) | [Descarcă HoursTag Lite: Preț în ore din App Store](https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.400 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.450 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL și CSV conțin aceleași 2.400 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-09-19
+Actualizat: 2026-09-22
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

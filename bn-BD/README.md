@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৪৮টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৪৯টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -101,6 +101,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca: পিরিয়ড ও সাইকেল ট্র্যাক** | Cyca: পিরিয়ড ও সাইকেল ট্র্যাক — পরিচিত হোন Cyca-এর সাথে— আপনার সাইকেল বোঝার নিরিবিলি ও \| iOS App | পরিচিত হোন Cyca-এর সাথে— আপনার সাইকেল বোঝার নিরিবিলি ও উষ্ণ উপায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/cyca.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **DailyMate Lite: রোজ কথা বলুন** | DailyMate Lite: রোজ কথা বলুন — ৫০ ভাষায় স্বাভাবিক কথোপকথন \| iOS App | যখন কথা বলার সময় আসে, ঠিক কথাটি যেন হাতের কাছে থাকে। DailyMate Lite বাস্তব জীবনের পরিস্থিতিকে ছোট, স্বাভাবিক কথার সূত্র ও জবাবের অনুশীলনে সাজায়—৫০টি | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/dailymatelite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **DailyMate: জীবনের বাক্য** | DailyMate: জীবনের বাক্য — ৪৭ ভাষায় বাস্তব কথোপকথন \| iOS App | আলাদা আলাদা শব্দ মুখস্থ করেও ঠিক সময়ে কথা খুঁজে পান না? DailyMate শেখায় বাস্তব জীবনে বলার মতো ৮,৪০০টি পূর্ণ বাক্য। শব্দের তালিকা নয়—প্রসঙ্গসহ সম্পূর্ণ | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/dailymate.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **dB Halo: শব্দমাত্রা মাপক** | dB Halo: শব্দমাত্রা মাপক — বর্ণালী ও শব্দের ডোজ \| iOS App | চারপাশের শব্দ এখন কতটা জোরে এবং আনুমানিক নিরাপদ সময় আর কত বাকি—dB Halo এক নজরেই দেখায়। iPhone, iPad ও Apple Watch-এর জন্য তৈরি এই শব্দমাত্রা মাপক ও | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/dbhalo.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **G+Money Lite: ভ্রমণ খরচ** | G+Money Lite: ভ্রমণ খরচ — ভ্রমণ খরচ ও মুদ্রা \| iOS App | G+Money Lite — স্মার্ট ভ্রমণ মুদ্রা ও খরচ ট্র্যাকার | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/gmoneylite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **G+Money: দৈনিক খরচ ও বাজেট** | G+Money: দৈনিক খরচ ও বাজেট — G+Money আপনার দৈনন্দিন জীবন ও ভ্রমণের জন্য দুটি অপরিহার্য \| iOS App | G+Money আপনার দৈনন্দিন জীবন ও ভ্রমণের জন্য দুটি অপরিহার্য টুল—দ্রুতগতির মুদ্রা রূপান্তরকারী ও সুন্দর ব্যয় ট্র্যাকার। সম্পূর্ণ অফলাইন। ব্যক্তিগতভাবে নিরাপদ | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/gmoney.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **HoursTag Lite: দাম কর্মঘণ্টায়** | HoursTag Lite: দাম কর্মঘণ্টায় — বিষয়ের আসল দাম দেখুন \| iOS App | HoursTag Lite - বিষয়ের আসল দাম দেখুন | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/hourstaglite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -142,7 +143,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৪০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৪৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -150,6 +151,6 @@ JSON, JSONL এবং CSV একই ২,৪০০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-09-19
+আপডেট: 2026-09-22
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

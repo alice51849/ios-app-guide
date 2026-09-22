@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 48 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 49 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **Cyca** | paras kuukautiskierron seurantasovellus ilman tiliä iPhonelle | Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukautiskierron seurantasovellus pitää kaiken — vuodon, mielialan, oireet, lämpötilan, läheisyyden — laitteellasi ilman tiliä tai pilvisynkronointia. Cyca tekee vain sen yhden asian ja jättää muun pois. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-period-tracker-app-no-account-required-iphone.html) | [Hanki Cyca App Storesta →](https://apps.apple.com/fi/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | paras käytännöllinen kielilauseiden sovellus matkailijoille, jossa Apple Watch -tuki | Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä kuin irralliset sanastot, jotka pitää vielä koota paineen alla. DailyMate lähti liikkeelle juuri tuosta ongelmasta. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Hanki DailyMate App Storesta →](https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Puhu tänään** | DailyMate Lite: Puhu tänään — 50 kieltä, aitoja keskusteluja \| iOS App | Puhu luontevasti silloin, kun tilanne tulee vastaan. DailyMate Lite auttaa harjoittelemaan kokonaisia keskusteluvuoroja arjen tilanteissa – luontevia | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/dailymatelite.html) | [Lataa DailyMate Lite: Puhu tänään App Storesta](https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Äänitasomittari** | dB Halo: Äänitasomittari — Spektri, meluannos ja uni \| iOS App | Tee iPhonesta tai iPadista selkeä ja yksityinen äänitasomittari. Suuri Halo-rengas näyttää reaaliaikaisen äänitason ja turva-alueen sekä pienimmän | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/dbhalo.html) | [Lataa dB Halo: Äänitasomittari App Storesta](https://apps.apple.com/fi/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | paras matkabudjetin seurantasovellus ilman tilausta iPhonelle | Matkalla tarvitset budjettiseurannan, joka toimii offline-tilassa maassa ilman dataa, käsittelee useita valuuttoja ja ei vaadi tiliä — järjestetty matkoittain, jotta jokainen loma on erillinen. Juuri tuon aukon G+Money on tarkoitus täyttää. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Hanki G+Money App Storesta →](https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Matkakulut** | G+Money Lite: Matkakulut — Budjetti, menot & valuutta \| iOS App | G+Money Lite — Älykäs matkavaluutta- & kululaskuri | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/gmoneylite.html) | [Lataa G+Money Lite: Matkakulut App Storesta](https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Hinta tunteina** | HoursTag Lite: Hinta tunteina — Asioiden todellinen hinta \| iOS App | HoursTag Lite - Asioiden todellinen hinta | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/hourstaglite.html) | [Lataa HoursTag Lite: Hinta tunteina App Storesta](https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 2 400 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 2 450 tietuetta.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL ja CSV sisältävät samat 2 400 tietuetta.
 
 [Etusivu](https://open.cait518.cc/ios-app-guide/fi/index.html) · [Avoin data](https://open.cait518.cc/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-09-19
+Päivitetty: 2026-09-22
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

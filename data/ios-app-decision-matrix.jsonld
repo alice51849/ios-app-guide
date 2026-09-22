@@ -6,24 +6,24 @@
   "name": "Lumi Studio verified iOS app decision matrix",
   "description": "Every verified live Lumi Studio iOS app with identical comparison fields. Alphabetical by app key; this is not a ranking.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-08-25",
-  "numberOfItems": 43,
+  "dateModified": "2026-09-22",
+  "numberOfItems": 49,
   "itemListOrder": "https://schema.org/ItemListUnordered",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/aibriefpack.html",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#aibriefpack",
         "name": "AI Brief",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/aibriefpack.html",
-        "sameAs": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
+        "sameAs": "https://apps.apple.com/us/app/id6791658210",
+        "installUrl": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "Better context. Better answers.",
+        "description": "A private AI-context workflow should let you assemble the complete source set, inspect what was extracted and decide what leaves the device instead of silently uploading files or removing detected details. AI Brief — Better context, better answers. Turn screenshots, files, notes and documents into one clear brief.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -61,7 +61,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -79,8 +79,8 @@
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#aim990",
         "name": "Aim990",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6784974530",
+        "installUrl": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Study and exam practice",
         "operatingSystem": "iOS",
         "description": "Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic.",
@@ -121,7 +121,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -133,17 +133,17 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/aim990plus.html",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#aim990plus",
         "name": "Aim990 Plus",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/aim990plus.html",
-        "sameAs": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
+        "sameAs": "https://apps.apple.com/us/app/id6792483140",
+        "installUrl": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Train for clear decisions under exam pressure",
+        "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -181,7 +181,7 @@
           "price": "5.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -193,17 +193,77 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/caldaily.html",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#battai",
+        "name": "BattAI",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+        "sameAs": "https://apps.apple.com/us/app/id6802423998",
+        "installUrl": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for best iphone battery health app with honest estimates and report, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#caldaily",
-        "name": "CalDaily: Calculator & Themes",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/caldaily.html",
-        "sameAs": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "CalDaily",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
+        "sameAs": "https://apps.apple.com/us/app/id6794178671",
+        "installUrl": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "iPhone utilities",
         "operatingSystem": "iOS",
-        "description": "A calculator you will actually keep using, because it remembers the thinking",
+        "description": "CalDaily — A calculator you will actually keep using, because it remembers the thinking behind each number. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -241,7 +301,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -252,18 +312,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
+      "position": 6,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#cvdesk",
         "name": "CV Desk",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html",
-        "sameAs": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6781337213",
+        "installUrl": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it — CV Desk is built for this.",
+        "description": "When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it. That is the gap CV Desk was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -301,7 +361,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -312,18 +372,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-period-tracker-app-no-account-required-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#cyca",
         "name": "Cyca",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-period-tracker-app-no-account-required-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6782251621",
+        "installUrl": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Personal health tracking",
         "operatingSystem": "iOS",
-        "description": "In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync — Cyca is built for this.",
+        "description": "In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync. Cyca sticks to that one job and leaves the rest out.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -361,7 +421,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -372,18 +432,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#dailymate",
         "name": "DailyMate",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
-        "sameAs": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6790418321",
+        "installUrl": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure — DailyMate is built for this.",
+        "description": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure. DailyMate started from exactly that problem.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -421,7 +481,7 @@
           "price": "11.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -432,18 +492,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/dailymatelite.html",
+      "position": 9,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#dailymatelite",
-        "name": "DailyMate Lite: Speak Today",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/dailymatelite.html",
-        "sameAs": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "DailyMate Lite",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html",
+        "sameAs": "https://apps.apple.com/us/app/id6794725568",
+        "installUrl": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the",
+        "description": "DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -481,7 +541,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -492,18 +552,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#dbhalo",
+        "name": "dB Halo: Sound Meter",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+        "sameAs": "https://apps.apple.com/us/app/id6806826699",
+        "installUrl": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for sound meter app for iphone with frequency spectrum and noise dose, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#gmoney",
         "name": "G+Money",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6755782939",
+        "installUrl": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Money, billing and time tracking",
         "operatingSystem": "iOS",
-        "description": "On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate — G+Money is built for this.",
+        "description": "On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate. That is the gap G+Money was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -541,7 +661,7 @@
           "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -552,18 +672,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/gmoneylite.html",
+      "position": 12,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#gmoneylite",
         "name": "G+Money Lite",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/gmoneylite.html",
-        "sameAs": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
+        "sameAs": "https://apps.apple.com/us/app/id6793436548",
+        "installUrl": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Money, billing and time tracking",
         "operatingSystem": "iOS",
-        "description": "G+Money Lite — Smart travel currency & expense tracker",
+        "description": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That is the gap G+Money Lite was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -601,7 +721,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -612,18 +732,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/hourstag.html",
+      "position": 13,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#hourstag",
-        "name": "HoursTag: Hours to Buy",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/hourstag.html",
-        "sameAs": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "HoursTag",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+        "sameAs": "https://apps.apple.com/us/app/id6754218117",
+        "installUrl": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Money, billing and time tracking",
         "operatingSystem": "iOS",
-        "description": "What does it really cost? Not in dollars — in hours of your life.",
+        "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -661,7 +781,7 @@
           "price": "4.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -672,18 +792,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/hourstaglite.html",
+      "position": 14,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#hourstaglite",
         "name": "HoursTag Lite",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/hourstaglite.html",
-        "sameAs": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+        "sameAs": "https://apps.apple.com/us/app/id6794039979",
+        "installUrl": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Money, billing and time tracking",
         "operatingSystem": "iOS",
-        "description": "HoursTag Lite - See the real price of things",
+        "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -721,7 +841,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -732,18 +852,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 15,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#ledmovingtext",
+        "name": "LED Moving Text",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html",
+        "sameAs": "https://apps.apple.com/us/app/id6806639602",
+        "installUrl": "https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "LED Moving Text — Cue Flow handles moments that need more than one sign. Free to start · One-time unlock · No subscription.",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for led scrolling text app for concerts and airport pickups, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lockhour",
         "name": "LockHour Pro",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6780107485",
+        "installUrl": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.",
+        "description": "During exams, willpower isn't the tool — a hard timed block is. That is why LockHour Pro exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -781,7 +961,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -792,18 +972,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 17,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumibopomofo",
         "name": "Lumi Bopomofo",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6773017109",
+        "installUrl": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected — Lumi Bopomofo is built for this.",
+        "description": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected. That is the gap Lumi Bopomofo was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -841,7 +1021,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -852,18 +1032,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 18,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumibopomofopro",
         "name": "Lumi Bopomofo Pro",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-zhuyin-app-for-bilingual-children.html",
-        "sameAs": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6775773117",
+        "installUrl": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar — Lumi Bopomofo Pro is built for this.",
+        "description": "Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar. That is the gap Lumi Bopomofo Pro was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -901,7 +1081,7 @@
           "price": "8.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -912,18 +1092,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 19,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumiletters",
         "name": "Lumi Letters",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6778748533",
+        "installUrl": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust — Lumi Letters is built for this.",
+        "description": "For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust. That is why Lumi Letters exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -961,7 +1141,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -972,18 +1152,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 20,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumiletterspro",
         "name": "Lumi Letters Pro",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
-        "sameAs": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6778491147",
+        "installUrl": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games — Lumi Letters Pro is built for this.",
+        "description": "Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games. That is the gap Lumi Letters Pro was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1021,7 +1201,7 @@
           "price": "8.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1032,18 +1212,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 21,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumimath",
         "name": "Lumi Math Planet",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6778269699",
+        "installUrl": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play — Lumi Math Planet is built for this.",
+        "description": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play. That is why Lumi Math Planet exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1081,7 +1261,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1092,18 +1272,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 22,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumimathpro",
         "name": "Lumi Math Pro",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
-        "sameAs": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6776958488",
+        "installUrl": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills — Lumi Math Pro is built for this.",
+        "description": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills. That is why Lumi Math Pro exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1141,7 +1321,7 @@
           "price": "8.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1152,18 +1332,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 23,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumimission",
         "name": "Lumi Mission Planet",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
-        "sameAs": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6779750237",
+        "installUrl": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders — Lumi Mission Planet is built for this.",
+        "description": "For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders. If that is your situation, Lumi Mission Planet is worth a look.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1201,7 +1381,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1212,15 +1392,15 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 24,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumimissionpro",
         "name": "Lumi Mission Planet Pro",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
-        "sameAs": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6779745474",
+        "installUrl": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
         "description": "Tooth brushing and bedtime often fail at the same moment every night: the child is tired, the parent is tired, and the next step is not visible enough.",
@@ -1261,7 +1441,7 @@
           "price": "5.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1272,18 +1452,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 25,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumiweather",
         "name": "Lumi Weather",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-        "sameAs": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6779552704",
+        "installUrl": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense — Lumi Weather is built for this.",
+        "description": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense. That is why Lumi Weather exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1321,7 +1501,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1332,18 +1512,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/maskmyfile.html",
+      "position": 26,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#maskmyfile",
         "name": "Mask My File",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/maskmyfile.html",
-        "sameAs": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
+        "sameAs": "https://apps.apple.com/us/app/id6792850916",
+        "installUrl": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
-        "description": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you",
+        "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1381,7 +1561,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1392,18 +1572,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 27,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#mochi",
         "name": "Mochi",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
-        "sameAs": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6785004775",
+        "installUrl": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery — Mochi is built for this.",
+        "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That is why Mochi exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1441,7 +1621,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1452,18 +1632,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/mochidonestamp.html",
+      "position": 28,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#mochidonestamp",
-        "name": "Mochi DoneStamp: Last Time",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/mochidonestamp.html",
-        "sameAs": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "Mochi DoneStamp",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+        "sameAs": "https://apps.apple.com/us/app/id6790800323",
+        "installUrl": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Everyday habits",
         "operatingSystem": "iOS",
-        "description": "When did you last change the sheets, water a plant, call family, back up photos, or replace a filter?",
+        "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1501,7 +1681,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1512,18 +1692,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/moneytag.html",
+      "position": 29,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#moneytag",
         "name": "MoneyTag: Income & Expense",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/moneytag.html",
-        "sameAs": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
+        "sameAs": "https://apps.apple.com/us/app/id6801956402",
+        "installUrl": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Money, billing and time tracking",
         "operatingSystem": "iOS",
-        "description": "Income & Expense Every project keeps its own books: income minus expenses is its net result. Here are the questions people ask most. If yours is not answered, write to us — a real person reads every message.",
+        "description": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result. MoneyTag: Income & Expense started from exactly that problem.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1561,7 +1741,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1572,18 +1752,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/notesstudio100.html",
+      "position": 30,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#notesstudio100",
-        "name": "100 Notes Studio: Pen & Paper",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/notesstudio100.html",
-        "sameAs": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "100 Notes Studio",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html",
+        "sameAs": "https://apps.apple.com/us/app/id6798813048",
+        "installUrl": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study.",
+        "description": "100 Notes Studio — 100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1621,7 +1801,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1632,15 +1812,15 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 31,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#onepageppt",
         "name": "OnePage PPT",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html",
-        "sameAs": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6798814385",
+        "installUrl": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
         "description": "OnePage PPT — Turn a wall of text into ONE slide people actually read. Free to start · One-time unlock · No subscription.",
@@ -1681,7 +1861,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1692,18 +1872,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 32,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#photocream",
         "name": "PhotoCream",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6781808054",
+        "installUrl": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
-        "description": "Travel creators need a repeatable film look that adds grain, halation and color character without reducing every destination to the same flat filter — PhotoCream is built for this.",
+        "description": "Travel creators need a repeatable film look that adds grain, halation and color character without reducing every destination to the same flat filter",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1741,7 +1921,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1752,15 +1932,15 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 33,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#picclear",
         "name": "PicClear",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
-        "sameAs": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6780223070",
+        "installUrl": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
         "description": "To free up space fast, target the biggest wins first: exact-duplicate photos, near-identical burst shots, blurry rejects, and large videos — PicClear helps you do it on your iPhone.",
@@ -1801,7 +1981,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1812,18 +1992,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 34,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-save-links-from-other-apps-on-iphone.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#savetag",
+        "name": "SaveTag",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-save-links-from-other-apps-on-iphone.html",
+        "sameAs": "https://apps.apple.com/us/app/id6802505528",
+        "installUrl": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "Notes, documents and focus",
+        "operatingSystem": "iOS",
+        "description": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for best app to save links from other apps on iphone, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#scanto",
         "name": "ScanTo Pro",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
-        "sameAs": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6779977651",
+        "installUrl": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud — ScanTo Pro is built for this.",
+        "description": "If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud. ScanTo Pro started from exactly that problem.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1861,7 +2101,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1872,18 +2112,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 36,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#sereno",
         "name": "Sereno",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
-        "sameAs": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6788236641",
+        "installUrl": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Sleep and ambient sound",
         "operatingSystem": "iOS",
-        "description": "For sleep, a subscription that nags you every month is the opposite of restful — Sereno is built for this.",
+        "description": "For sleep, a subscription that nags you every month is the opposite of restful. If that is your situation, Sereno is worth a look.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1921,7 +2161,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1932,18 +2172,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 37,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-sort-screenshots-on-iphone-offline.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#shotinbox",
+        "name": "ShotInbox AI",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-sort-screenshots-on-iphone-offline.html",
+        "sameAs": "https://apps.apple.com/us/app/id6802166527",
+        "installUrl": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "Photo, document and file utilities",
+        "operatingSystem": "iOS",
+        "description": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for best app to sort screenshots on iphone offline, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#snapport",
         "name": "Snapport",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
-        "sameAs": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6780575828",
+        "installUrl": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
-        "description": "For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open.",
+        "description": "Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. paper-photo application, choose a 2×2-inch crop and arrange copies on a 4×6 sheet with cut guides. A correctly sized file does not certify that a passport authority will accept the photo.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1981,7 +2281,7 @@
           "price": "5.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -1992,18 +2292,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/snapportlite.html",
+      "position": 39,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#snapportlite",
         "name": "Snapport Lite",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/snapportlite.html",
-        "sameAs": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html",
+        "sameAs": "https://apps.apple.com/us/app/id6792856304",
+        "installUrl": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
-        "description": "Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export.",
+        "description": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2041,7 +2341,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2052,18 +2352,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 40,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#sononote",
         "name": "Sono Note",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6782139553",
+        "installUrl": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up — Sono Note is built for this.",
+        "description": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. That is the gap Sono Note was built to close.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2101,7 +2401,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2112,18 +2412,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 41,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#tripbee",
         "name": "TripBee Pro: Trip Planner",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-trip-itinerary-planner-app-for-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6787754435",
+        "installUrl": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Travel planning",
         "operatingSystem": "iOS",
-        "description": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance — TripBee Pro: Trip Planner is built for this.",
+        "description": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that is your situation, TripBee Pro: Trip Planner is worth a look.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2161,7 +2461,7 @@
           "price": "5.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2172,18 +2472,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 42,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#tripbeelite",
         "name": "TripBee Lite",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6791299610",
+        "installUrl": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Travel planning",
         "operatingSystem": "iOS",
-        "description": "If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday — TripBee Lite is built for this.",
+        "description": "If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday. If that is your situation, TripBee Lite is worth a look.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2221,7 +2521,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2232,18 +2532,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 43,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#tripplanet",
         "name": "Lumi Trip Planet",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-        "sameAs": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6787193643",
+        "installUrl": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Parents traveling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress — Lumi Trip Planet is built for this.",
+        "description": "Parents traveling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress. That is why Lumi Trip Planet exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2281,7 +2581,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2292,18 +2592,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 44,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#unblurry",
         "name": "Unblurry",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6782275018",
+        "installUrl": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
-        "description": "Kids never hold still, so soft-focus and camera-shake shots are inevitable — Unblurry is built for this.",
+        "description": "Kids never hold still, so soft-focus and camera-shake shots are inevitable",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2341,7 +2641,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2352,18 +2652,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaid.html",
+      "position": 45,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#wifiaid",
         "name": "WiFi Aid",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaid.html",
-        "sameAs": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
+        "sameAs": "https://apps.apple.com/us/app/id6790467886",
+        "installUrl": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Photo, document and file utilities",
         "operatingSystem": "iOS",
-        "description": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or",
+        "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2401,7 +2701,7 @@
           "price": "5.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2412,18 +2712,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html",
+      "position": 46,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#wifiaidlite",
-        "name": "WiFi Aid Lite: Network Check",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html",
-        "sameAs": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "WiFi Aid Lite",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
+        "sameAs": "https://apps.apple.com/us/app/id6793414462",
+        "installUrl": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "iPhone utilities",
         "operatingSystem": "iOS",
-        "description": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+        "description": "WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2461,7 +2761,7 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2472,18 +2772,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 47,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#wordmate",
         "name": "Wordmate: Learn 44 Languages",
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
-        "sameAs": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=iag_data_en_us&mt=8",
+        "sameAs": "https://apps.apple.com/us/app/id6789917808",
+        "installUrl": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Study and exam practice",
         "operatingSystem": "iOS",
-        "description": "Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review — Wordmate: Learn 44 Languages is built for this.",
+        "description": "Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review. Wordmate: Learn 44 Languages started from exactly that problem.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2521,7 +2821,7 @@
           "price": "8.99",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
@@ -2532,18 +2832,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/wordmatelite.html",
+      "position": 48,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#wordmatelite",
-        "name": "Wordmate Lite: Vocabulary",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/wordmatelite.html",
-        "sameAs": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",
-        "installUrl": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "Wordmate Lite",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
+        "sameAs": "https://apps.apple.com/us/app/id6797601720",
+        "installUrl": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Five words. One minute. A trail you can actually see.",
+        "description": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2581,13 +2881,73 @@
           "price": "0",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",
+          "url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
           "eligibleRegion": {
             "@type": "Country",
             "identifier": "US"
           }
         },
         "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#zipbox",
+        "name": "Zipbox: Unzip RAR, ZIP & 7z",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+        "sameAs": "https://apps.apple.com/us/app/id6806776579",
+        "installUrl": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "paid_upfront"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for paid app to open RAR and 7z files on iPhone without ads, and you want pay once, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want to try the app before paying — this edition is a paid download with no free tier."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 38
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "4.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": false
       }
     }
   ]

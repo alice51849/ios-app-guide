@@ -180,7 +180,7 @@
     "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-09-19",
+  "dateModified": "2026-09-22",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,29 +261,29 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "2627826 B",
+      "contentSize": "2673080 B",
       "encodingFormat": "text/csv",
-      "sha256": "bd44def6a33f77d1649057758c91f13d7821b4d62457e65134b5f56123ffac73"
+      "sha256": "85575c390e56dab76d4d0f0e202e69df37d326fe2cadc3a10f423e95c2ff0aa3"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
-      "description": "The same 2,400 records serialized as newline-delimited JSON.",
+      "description": "The same 2,450 records serialized as newline-delimited JSON.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "3622270 B",
+      "contentSize": "3688586 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "ea97e39b46b5433eca744e40bb47ad49629dbcf692f707ab3edcbc5cae74f164"
+      "sha256": "04e0bce927d9c31b25661ac980805fce30de1b06f5ff9e546ab49fe1b0a7a7f2"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.json",
       "name": "lumi-studio-publisher-search-intent-catalog.json",
-      "description": "Dataset envelope with provenance, coverage and all 2,400 records.",
+      "description": "Dataset envelope with provenance, coverage and all 2,450 records.",
       "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "4023599 B",
+      "contentSize": "4098215 B",
       "encodingFormat": "application/json",
-      "sha256": "0f130f8f81c9ada218a321fc1f789c7e03c504f467708a9f6fc76231254ad031"
+      "sha256": "43dab9f40890855d2a06368ed2f0f27422feea28f0d59710bb68bbe4f2aafc19"
     }
   ],
   "recordSet": [

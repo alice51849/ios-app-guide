@@ -4,7 +4,7 @@
 
 ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।
 
-48 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
+49 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
 
 **ਸਥਾਨਕ ਭਾਸ਼ਾ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · **pa-IN** · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪੀਰੀਅਡ ਟ੍ਰੈਕਰ ਐਪ ਬਿਨਾਂ ਖਾਤੇ ਦੀ ਲੋੜ | ਜਿੱਥੇ ਡੇਟਾ ਸੰਵੇਦਨਸ਼ੀਲਤਾ ਮੁੱਖ ਗੱਲ ਹੈ, ਠੀਕ ਪੀਰੀਅਡ ਟ੍ਰੈਕਰ ਸਭ ਕੁਝ — ਫਲੋ, ਮੂਡ, ਲੱਛਣ, ਤਾਪਮਾਨ, ਨਜ਼ਦੀਕੀ — ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ, ਕੋਈ ਖਾਤਾ ਜਾਂ ਕਲਾਉਡ ਸਿੰਕ ਨਹੀਂ। Cyca ਸਿਰਫ਼ ਇਹੀ ਇੱਕ ਕੰਮ ਕਰਦਾ ਹੈ, ਬਾਕੀ ਛੱਡ ਦਿੰਦਾ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store ਤੋਂ Cyca ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | ਸੈਲਾਨੀਆਂ ਲਈ ਐਪਲ ਵਾਚ ਨਾਲ ਸਭ ਤੋਂ ਵਧੀਆ ਪ੍ਰਯੋਗਿਕ ਭਾਸ਼ਾ ਵਾਕਾਂਸ਼ ਐਪ | ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ, ਅਸਲੀ ਸਥਿਤੀਆਂ ਲਈ ਪੂਰੇ ਵਾਕਾਂਸ਼ ਅਲੱਗ-ਅਲੱਗ ਸ਼ਬਦਾਂ ਨਾਲੋਂ ਜ਼ਿਆਦਾ ਲਾਭਦਾਇਕ ਹੁੰਦੇ ਹਨ। DailyMate ਦੀ ਸ਼ੁਰੂਆਤ ਠੀਕ ਇਸੇ ਦਿੱਕਤ ਤੋਂ ਹੋਈ। | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store 'ਤੇ ਡੇਲੀਮੇਟ ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: ਅੱਜ ਬੋਲੋ** | DailyMate Lite: ਅੱਜ ਬੋਲੋ — ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਅਭਿਆਸ \| iOS App | ਸਹੀ ਵੇਲੇ ਸਹੀ ਗੱਲ ਕਹੋ। DailyMate Lite ਰੋਜ਼ਾਨਾ ਹਾਲਾਤਾਂ ਨੂੰ 50 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਛੋਟੇ ਸੰਕੇਤ-ਜਵਾਬ ਅਭਿਆਸ ਵਿੱਚ ਬਦਲਦਾ ਹੈ। ਕੋਈ ਵੀ ਭਾਸ਼ਾ ਚੁਣੋ ਅਤੇ ਯਾਤਰਾ ਵਿਸ਼ੇ ਦਾ | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/dailymatelite.html) | [App Store ਤੋਂ DailyMate Lite: ਅੱਜ ਬੋਲੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ** | dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ — FFT, RTA ਅਤੇ ਸ਼ੋਰ ਦੀ ਖੁਰਾਕ \| iOS App | dB Halo ਪੂਰੀ ਤਰ੍ਹਾਂ ਡਿਵਾਈਸ ਉੱਤੇ ਚੱਲਣ ਵਾਲਾ ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ ਅਤੇ ਆਡੀਓ ਵਿਸ਼ਲੇਸ਼ਣ ਟੂਲ ਹੈ। ਵੱਡਾ Halo ਸੁਰੱਖਿਆ ਘੇਰਾ ਲਾਈਵ dB ਦਿਖਾਉਂਦਾ ਹੈ, ਤਾਂ ਜੋ ਮੌਜੂਦਾ, ਘੱਟੋ-ਘੱਟ | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/dbhalo.html) | [App Store ਤੋਂ dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਯਾਤਰਾ ਬਜਟ ਟ੍ਰੈਕਰ ਐਪ ਬਿਨਾਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ | ਇੱਕ ਯਾਤਰਾ 'ਤੇ ਤੁਹਾਨੂੰ ਇੱਕ ਬਜਟ ਟ੍ਰੈਕਰ ਚਾਹੀਦਾ ਹੈ ਜੋ ਕਿਸੇ ਦੇਸ਼ ਵਿੱਚ ਬਿਨਾਂ ਡੇਟਾ ਦੇ ਆਫਲਾਈਨ ਕੰਮ ਕਰੇ, ਕਈ ਮੁਦਰਾਵਾਂ ਨੂੰ ਸੰਭਾਲੇ, ਅਤੇ ਖਾਤਾ ਨਾ ਮੰਗੇ — ਹਰ ਛੁੱਟੀ ਵੱਖਰੀ। ਇਹੀ ਘਾਟ G+Money ਪੂਰੀ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ। | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store ਤੋਂ G+Money ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: ਯਾਤਰਾ ਖਰਚ** | G+Money Lite: ਯਾਤਰਾ ਖਰਚ — ਯਾਤਰਾ ਖਰਚ ਤੇ ਮੁਦਰਾ \| iOS App | G+Money Lite — ਸਮਾਰਟ ਯਾਤਰਾ ਮੁਦਰਾ ਅਤੇ ਖਰਚ ਟ੍ਰੈਕਰ | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/gmoneylite.html) | [App Store ਤੋਂ G+Money Lite: ਯਾਤਰਾ ਖਰਚ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ਕੀਮਤ ਘੰਟਿਆਂ ਵਿਚ** | HoursTag Lite: ਕੀਮਤ ਘੰਟਿਆਂ ਵਿਚ — ਚੀਜ਼ਾਂ ਦੀ ਅਸਲ ਕੀਮਤ ਵੇਖੋ \| iOS App | HoursTag Lite - ਚੀਜ਼ਾਂ ਦੀ ਅਸਲ ਕੀਮਤ ਵੇਖੋ | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/hourstaglite.html) | [App Store ਤੋਂ HoursTag Lite: ਕੀਮਤ ਘੰਟਿਆਂ ਵਿਚ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ਪੂਰਾ ਡੇਟਾਸੈੱਟ ਡਾਊਨਲੋਡ ਕਰੋ
 
-JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,400 ਰਿਕਾਰਡ ਹਨ।
+JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,450 ਰਿਕਾਰਡ ਹਨ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,400 ਰਿਕਾਰਡ ਹਨ
 
 [ਮੁੱਖ ਪੰਨਾ](https://open.cait518.cc/ios-app-guide/pa-IN/index.html) · [ਖੁੱਲਾ ਡੇਟਾ](https://open.cait518.cc/ios-app-guide/pa-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ਲਾਇਸੈਂਸ](https://creativecommons.org/licenses/by/4.0/)
 
-ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-09-19
+ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-09-22
 
 CC BY 4.0 ਮੂਲ ਕੈਟਾਲੌਗ ਸੰਕਲਨ 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ; ਐਪ ਨਾਮ ਅਤੇ App Store ਨਿਸ਼ਾਨ ਆਪਣੇ ਮਾਲਕਾਂ ਦੇ ਹਨ।

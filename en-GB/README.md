@@ -4,7 +4,7 @@
 
 A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 48 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 49 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · **en-GB** · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Alphabetical by app name — never a ranking.
 | **Cyca** | best period tracker app no account required iphone | In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync. Cyca sticks to that one job and leaves the rest out. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-period-tracker-app-no-account-required-iphone.html) | [Get Cyca on the App Store →](https://apps.apple.com/gb/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | best practical language phrase app for travelers with apple watch | Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure. DailyMate began with exactly that problem. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Get DailyMate on the App Store →](https://apps.apple.com/gb/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite** | best free travel phrasebook app with real dialogues for iphone | DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-time unlock · No subscription. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html) | [Get DailyMate Lite on the App Store →](https://apps.apple.com/gb/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Sound Level Meter** | dB Halo: Sound Level Meter — Noise Dose, Spectrum & Sleep \| iOS App | Whether you are keeping an eye on building works, a noisy flat, the commute or a rehearsal room, dB Halo gives you a clear view of the sound around you | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/dbhalo.html) | [Get dB Halo: Sound Level Meter on the App Store](https://apps.apple.com/gb/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | best travel budget tracker app no subscription iphone | On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate. That's the gap G+Money was built to close. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Get G+Money on the App Store →](https://apps.apple.com/gb/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That's the gap G+Money Lite was built to close. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Get G+Money Lite on the App Store →](https://apps.apple.com/gb/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that sounds like your situation, HoursTag is worth a look. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Get HoursTag on the App Store →](https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,400 records.
+JSON, JSONL and CSV contain the same 2,450 records.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL and CSV contain the same 2,400 records.
 
 [Home](https://open.cait518.cc/ios-app-guide/en-GB/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/en-GB/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-09-19
+Updated: 2026-09-22
 
 CC BY 4.0 applies to the original catalogue compilation; app names and App Store marks belong to their owners.

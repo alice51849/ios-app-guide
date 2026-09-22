@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-20",
-  "content_digest": "3ea4eee68a0410c4ce83807695befdb4b3cd34b6ae3657c450510736e8dc97aa",
+  "date_modified": "2026-09-22",
+  "content_digest": "76c7923b566eb05c1bacf6b6aeba1529def63fbd23d269810e2e538982bc8054",
   "locale": "ta-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -438,6 +438,48 @@
         "currency": "INR",
         "formatted_price": "இலவசம்",
         "storefront_url": "https://apps.apple.com/in/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: ஒலி அளவுமானி",
+      "summary": "சுற்றியுள்ள ஒலி எவ்வளவு சத்தமாக உள்ளது, அந்தச் சூழலில் எவ்வளவு நேரம் இருப்பது பாதுகாப்பானது என்பதை உடனே புரிந்துகொள்ளுங்கள். dB Halo உங்கள் iPhone-ஐ தெளிவான ஒலி அளவு மீட்டராக மாற்றுகிறது. பெரிய Halo வளையம் தற்போதைய ஒலி அளவையும் அதன் பாதுகாப்பு மண்டலத்தையும் ஒரே பார்வையில் காட்டுகிறது; தற்போதைய, குறைந்தபட்ச, சராசரி, அதிகபட்ச, உச்ச dB அளவுகளையும் நேரத்துடன் பதிவான நிகழ்வுகளையும் பார்க்கலாம்.",
+      "category": "utility",
+      "search_terms": [
+        "decibel",
+        "noise",
+        "meter",
+        "analyzer",
+        "FFT",
+        "RTA",
+        "octave",
+        "microphone",
+        "calibration",
+        "சத்தமானி",
+        "வெளிப்பாடு",
+        "அதிர்வெண்",
+        "dBA"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்",
+        "storefront_url": "https://apps.apple.com/in/app/id6806826699"
       }
     },
     {

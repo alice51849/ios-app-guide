@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-19",
+  "dateModified": "2026-09-22",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,269 +10,269 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "0f130f8f81c9ada218a321fc1f789c7e03c504f467708a9f6fc76231254ad031",
-  "content_digest": "98c1939bacbff265d17649890519cabb99aaaa7b7bda12591d952e47a75e4186",
-  "generation_digest": "6ae5d81f600484a59f8ccc8ea5d7af12565f298bea96c012999e4bd21ce38c6a",
+  "source_sha256": "43dab9f40890855d2a06368ed2f0f27422feea28f0d59710bb68bbe4f2aafc19",
+  "content_digest": "049c9da1f4ea2d40bcc4c3c3e98ac2e1f216f25d92f6bf0a836796ebec4ae73a",
+  "generation_digest": "4d282bf3fd0178232a0812f8507470ba656ee8d99f21695282afa24eddd53b88",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 48,
+  "app_count": 49,
   "locale_count": 50,
-  "image_count": 2400,
+  "image_count": 2450,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "072e976f2fd4f622d72f51060bdd96d361665cce1248fb4e7ae0ed47b091de54"
+      "sha256": "90e568bd30e675cd658d5a573ce60588c266bb12a9367e8b43a29efbf36fbc58"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "0545538ce5bf5808f3fa85bb711f0a870737a21a541c8d4f71922cfa919ea8ea"
+      "sha256": "b6c7f466099f517dbe3467c4a46f641992ddec7623039074307e1f0ff1785701"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "d6603999e3b08cf5fe42edfec914d5a8ce4dae3a304c2c1e2b91304b20f17acc"
+      "sha256": "9dcb4967c8af5938a2194b13f02cfdf07a536d939ffdb111b61bbad06b9bf881"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "b970b3069df0fddaf72c4985da77fdeb0ecc1afb4221b89e81ad5e55ed5d6f26"
+      "sha256": "0944c8908122a74e67ac635d788a89838fc072dee5b330cb5a01abe1ad8e9933"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "2700d3389f74349accbf386e5bb6be69d20aa5f438c3331f02c0182ebdef38a4"
+      "sha256": "b50d569c0f72de78fd501bf318484a902af893eeaa436a28468c7e0881a72584"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "61efc71aa4051cc5121bb9d3e38eb29680bf456abcc202295326f8fbc3abedf8"
+      "sha256": "e274b59c14b535bcc3e23f2d970576a1d9e1ac404cdcb64a6b09d7a3f11b9707"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "d33d350a37a5c3854687e23d6b787e5017a52ed1f268ac472bb9baab9eeb9133"
+      "sha256": "689c0c34a6d7253a976244a8f77be25c39d5f558807e2ce7c2e461683f948206"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "87800e2ce1319d6a9e6907fa7def6c0178a682cfebe4ff5f5444a98ac81897f2"
+      "sha256": "c30958aeb436e923f7830967facce3201ffa3b2026e8bcde6e571f9c89f6e5a7"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "9a751ded9b32fd0b5f76c7c72857db4160cdaa3c576ffd350496d1b8c7f2f6ca"
+      "sha256": "fe86fe975a216b43d751534c5cf6df23cba96747f9bd2e1efccd7ba9e35108df"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "3f2ccf49bd74db3a530660883ef34c4ad0342d7f76566283f798a520c60cbf66"
+      "sha256": "28924394eea9353f94f5ab4605d3261e774d03afaadeb6862e1ece1fe14e9fc3"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "f59218e4b021015e66f57007c2dd5ff6e304014daa105fd238366f77fc08b061"
+      "sha256": "df623395b60725680f5de8d57173196e5a2a7fd2c9a1876255fb1240340884de"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "f07683c84c5290f2f573909e43aff6321d1292edab1edbd6b9615b293bf5718a"
+      "sha256": "7eb0437a7618f08f9a9d6959f0d34b2640f0d87b467c9d371299d02c0f82fa34"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "cf8e52be6ac25cbd997e699b54d0453be28909e287db5c00b61187f80411fa59"
+      "sha256": "f3a7fdd20b3fc168ba6ecc191e1c0c1603a1550a4db43a0d7f8bdd31a8cc9347"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "be003805cbfdd6b047ca262b4296e6f6d31dfc87c83560b59ee99ebee771bca9"
+      "sha256": "4a02b5ee1be9695ce6ca210e39ff01ca45d73a18b8343bcd307dccff47c76aa6"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "5b74127d1728d0b8ddb594754a53f9b2b139c8fa794124dd0c2104aa6f5ca859"
+      "sha256": "d5dec5848ada60e2226ccf7fea35c46c2fd9b001a868987afe1a127e696718c2"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "930b7793461e0d663a283d27c299a30e0a10fd9be15bab09ff3c6f647b593700"
+      "sha256": "4d8f2314e9e382923cb6b6abc9ce73447037da3071bc9052ccb97bb9d1cfb6ef"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "b5414c8aa63dbf0c21a8f954e1485aa33f3197474b99ad252bae5db7e8d5ee9b"
+      "sha256": "5032ea81937117a1318846f22c5ea6d9a47e313c9c2531aea87820d11911b2c6"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "a4baf4335b54e24b758e71e014babe755e4dfbb5fe37098e33520df43d0a4207"
+      "sha256": "7eceb02e828fb54a2f79b163a72daa923c5cd04879d1517e3fdaa59d9d8da72f"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "6bf18a22ecc8dc96e46837298bc020e6d6188eff3814444c280560622ecaedf7"
+      "sha256": "a1acd6df67356f393e1775492cf0ac666de4979a248dfeb7a58e41c629990112"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "eb563d14f9ba7a08c83a62c93853f9daeed26a194d4c57a71c26e6f42718375c"
+      "sha256": "bcf5adddab0f3eac2e345c3caddd4783fb09f221d93473bd2fc1f33d2cef09a6"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "3b67f1cfefb80cdbe50a7c72c470029f753f3fc4cf4e259504f894d88ec88e01"
+      "sha256": "c867dd5274b3208c71ac25473ac3715a51948d6069ab6c2ba659849fbea82404"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "1e37d79b9e43419a14847fcfacf51374f7cb5453b4dc10809604b063f16ea620"
+      "sha256": "f8c586cbffb0e43f5da6365e4437a2fbdd4728136d312f5d2071f3001e7b9bd8"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "945cb7bb4f7ca7ee090e413938d3b100d57fb071cf9a7751e9a42680b8542e67"
+      "sha256": "8e3a29bfa7fc06333400daf95f2263b029e570c58a1dab799cc08d6ab2997447"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "b145aaf71e31d58e3f1fb658e32ec93395c1b9ef9cad8a77dfa5a3769bbbb002"
+      "sha256": "eda51e1cc9bb19bc853894d9d1e08a7ab40edebef96e570da19eeb6780707415"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "1e4c1dfb108b81b9d654cb205fad7dec0fa499c3acc4dee0c90013e98a0ec5aa"
+      "sha256": "d7529e7fe10e9b33ea2121d4cb1a2379b3460af3907bd5250b0a4fff27bb53ed"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "4a0b627dee9f0f9089dd2bdb34ff32a405e0f662adf1b312869dc92daa8e610d"
+      "sha256": "561c2f03337288914c6bc017e21f7f51961bc87c1125559deae7efc848a680f8"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "7ddb42e212b5fac59710554fd5869f48801446659b93349f87f6a8a28a36195a"
+      "sha256": "5e601d38065e6bd6ca1cf4b9e1f4d59ac36b3adbe845cb1fd20f0f387afa6d3c"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "7e8cdd7d06349061cd4701f10bf9d638db21bb94d54305eb5ffe56dd8e8a6772"
+      "sha256": "6936bed9c70e14e35041a53f2af408c37f44dd54127e5c582702813c42188068"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "3cc9d59884d986c5c1493805a66718f8c1c74c55e1d8e5bd94d92c75be934e70"
+      "sha256": "37027ea1b918eb23984e66a650b106c23b777d10aea1649ee1f015f0de3a42a2"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "941eb18c60a9d2b4b784afe2c3345cb7dc947f6e7687b22f01ec8e5a24ba0b70"
+      "sha256": "793e4e9306da34bc7f33a085afc53d0a4f6ba84d2a93c1b7a239f3ab5f91d52b"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "d6fa0bc7c41271cd2de7b3470cefdc9f23102829e91e665a3e75ee74e0328790"
+      "sha256": "62cb983f5bbc8f63f3777e2b3e9fa4daf51a25a7751ce2d420005107e4b3e894"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "a35ab5f777404ab9577c278db6dc83335db3c0cbd3da3209539e7a5bfbe4a2ee"
+      "sha256": "25320df8d579daac6141f78e31334e255014432cdd0cc2ee31e775c5998b617c"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "cc0215031b598211c4bce79b8f82ef9dfa0381fc297024461616f0ec840465e0"
+      "sha256": "a63e2e5dc40ee492d90afb3788d02f7586231322fc7296a9e0905e44fe4d3eb2"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "00880b963d111ead565f60ed8f4f98cd13d80d8df4751673e6e8e9d585b73f75"
+      "sha256": "3a3488b549cbbdff3715dfaff17f3b8d9d063bf088aa8c09890a928b22f77ec0"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "bc4100f24ba31b81739c10e7f760503bb660bc90c13422cccfa178ee0541b9e2"
+      "sha256": "6739fcf44f51fbf6faefdafc2f583375a55e1e924747d70f90bc54ad9118dbdc"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "5c9ae267a88fb0b857048c2ab80beb9f7dbb98264edb6a101da1c64ed062891b"
+      "sha256": "83599f4b4ff9b44bc97e9b13bc7a98c7fde97ad00bc521fbb45b5cb3a7619dd3"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "623af93cce5fb00e541e830f96eae20eb8bc3cab42e05cdb5e2e1592bf0611e4"
+      "sha256": "8f8cbf2cd4c54f797912ad80e5e6352f651cc8aec1b62c744d12c7b705ee6790"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "04235a1c73e7fcd1a2342d8916cef8e07bb962d771f28298c0737fe5a72d98f7"
+      "sha256": "6a97820cf7c764040ec5cfcb77daf44f6dd287c1e7038e5ae4454937579a6c8a"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "4ce193007ebd705b6cb83dfee9c25c7719701e0e5aa3d2ceab0d19d6407b7443"
+      "sha256": "745553d7aabf008850a6f181ecd872e3c14e1c1e57a0c12070c0dd89fbf7aba4"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "29cbf3d200f9d91241bcce1f4f5e439c8b268aa760fe15269ca37747f3d174c4"
+      "sha256": "965d39b87fb3c758ba8995b53c6473986902d7cd937256b0180399a9102be505"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "f1075be0e46da2eeaf7f003661e224968e05173b6ad3209c035410c295c9dee1"
+      "sha256": "37be63d03616ad0f134e158268cffcc783430ceb91f21d042d97c03f07c3c4fa"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "ebeb383c7b4774ebd75903d5784a3e9cd72aaead181dd19274661c2d80fe9c68"
+      "sha256": "36b5d45d200d545cec6af4a97180a7b7494898a7f39a2e8fe800c371489dcfd9"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "8f37d4d19988daf8155eac2000ee2d9dd5bc108dfa362bea0bc850619b9292a6"
+      "sha256": "d9a002e4c0788e45be9de898fb968ba509ea11bebcda53e740bacd9ad1d58ea4"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "597aa51d980a87c2b4425111b2273f3449fb1be97cb29f31ace3ee77df229de9"
+      "sha256": "48f784fcde0650a5c9aa82c350606e6db6fde7f9fee13daaf4e305fd6c63dc39"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "bddeb8a981e8c32b47a94c4ff421b0a243fe6b121501e3f4a06c32f83cb1a912"
+      "sha256": "50154f1f2beb1d2ac2cde8b8147e6ba9b55df2a587c51ce7fda72af48eb7e8ff"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "d11a572b25c8fb1478ea36c1435a9a99d8defec353136be704157d702e098c31"
+      "sha256": "38026af84b361a36386b2dd7cc5d4af9a98a7aea7b7ec716ca83292f70d016e0"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "be83845013a924181e1f1017d54ea91a9cc9aaa03ef9d5a578f20b6b31d0870a"
+      "sha256": "6be9469229f248cdfce965d9345fd407bf127e6e9d4fb4076e406220a8686b82"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "a430fe8eef2733103980906b6939a33fecf6f2d541f6d5d54dfab0d240b62b34"
+      "sha256": "4dce6d7df2c7e1311d87b7e69e03145591538a7251f4464281bc569447243903"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "043294f1c1773b5405ef4246207ea6e83da475bf913c8d033f11a3dd2627eecc"
+      "sha256": "1ec37906aaeb437a0dbcf9570378ecbff7af0e58f1aef7a9bc426fc419be542f"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "345a1054fc818f37cbf94194556da9b632c91d7f04f37b955a99fc2a7cfdc390"
+      "sha256": "2c865b817f47d854eeda93aec3e67f23c701106239388bc11b55ffcf7753df41"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "6e133e0423a0ba11dcbfcaeb7046c2b5e88736328ec080fc95293834a5926d5f"
+      "sha256": "7e09c6812382d1c51789e971f2a2c10c5e71b7f794e8315ae76711c714ed5600"
     }
   ],
   "publisher_authored": true,
@@ -387,6 +387,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6794725568?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "4496a6678d14764c86b125e3b17b0f4d46aec5fcdc73c6f11ca6c74e1d31610f"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6806826699?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "7466a93d8d847dbc793dba49d5eac64e0bd159fd651f768f75f2345da5aec94d"
     },
     {
       "locale": "ar-SA",
@@ -1038,6 +1048,35 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dailymatelite.html",
       "app_store_url": null,
       "sha256": "b990fb9e9a7492e68979dd3a21dd104f77e182acccd3d13c49be059104cce347",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dbhalo.html",
+      "app_store_url": null,
+      "sha256": "443c657a262f91ea10f620e14ab7567603229724fbd0590df1e9bfa3b886280e",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
@@ -2262,6 +2301,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "8f05b8f97f7318f6dd9522d350cf1ec00d75333bd9ba063f18fe759e6f6a0f9a"
+    },
+    {
+      "locale": "ca",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/gmoney.svg",
@@ -2739,6 +2788,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "ad2359fdd53512b6bb9bcc6691ac1574b4b6a692d8f4540b1520321c02888b96"
+    },
+    {
+      "locale": "cs",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6806826699?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "505e51eb64a785f8b079eb38fcc02c13668991d274234a3851a0970881269d68"
     },
     {
       "locale": "cs",
@@ -3222,6 +3281,16 @@
     },
     {
       "locale": "da",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6806826699?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "32d7e384bd4d2f2ec78a52c50dfc9d7a96c2a55add713209e6899537e1361329"
+    },
+    {
+      "locale": "da",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/gmoney.svg",
@@ -3699,6 +3768,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "0f2b1540759e76e0c615e92e8b97493ec90b23d0a6d92ac6e37925f14666ec74"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6806826699?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "ef01f7b09c3e5e1b3a2fdf2958c1bc3e840750111df3609b7fe14c501bfcb993"
     },
     {
       "locale": "de-DE",
@@ -4182,6 +4261,16 @@
     },
     {
       "locale": "el",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6806826699?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "fb04a19335a832bf6f8634fac542890df577dfbf720b8d7b23ff315bfb46eb0f"
+    },
+    {
+      "locale": "el",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/gmoney.svg",
@@ -4659,6 +4748,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html",
       "app_store_url": "https://apps.apple.com/au/app/id6794725568?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "8e7b4156a1aad87317c0647efb4e475766c7ad469656cdaf856ad6c57956b3d1"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6806826699?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "45961e1422efb4e25efed0a987a7c1ec41c68b78b1e8ae9e85e786d38bf0a472"
     },
     {
       "locale": "en-AU",
@@ -5142,6 +5241,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "058771e1dd27638a1e254c9cc5304cc9d42041705a1e4e2c0fbeca58fe1de6bb"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/gmoney.svg",
@@ -5619,6 +5728,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6794725568?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "11fea8d9cddb782ff83bb65b057aba4117326c2a1c743d16a589ebd87b38a311"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6806826699?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "8e45e419487c06abe6c35d55c26336e7c376e815ad9b4e8335c1a6ffa0ed9732"
     },
     {
       "locale": "en-GB",
@@ -6102,6 +6221,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "a983e54e6e40c07765db5adf97f9de7973fbbbb14d3d74137506359cf8879771"
+    },
+    {
+      "locale": "en-US",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/gmoney.svg",
@@ -6579,6 +6708,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "e4928c4e35ed2480b6218193e7a51535acae381340c8ca1f2fa4f4eb8788d014"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "5558169988d22934728923ea0ebabd7996b5449d33cfd62f39bb807076c9df43"
     },
     {
       "locale": "es-ES",
@@ -7062,6 +7201,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6806826699?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "e3a3fcf9b24bcdac5be6a1035faec14fe5eb6f474e3687c2dd3fb2d0ae0cfeb4"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/gmoney.svg",
@@ -7539,6 +7688,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "f5517e573ba9c3f3d44910f16fa581b02b1cc0eab40f4822f369d7c884e323c0"
+    },
+    {
+      "locale": "fi",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6806826699?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "d157929dbbea29f43336c157432ab77a49f83d03e95d214cdb0e24db28d78637"
     },
     {
       "locale": "fi",
@@ -8022,6 +8181,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "a41c77751d715364442823d581732814d4fff01f8e7ee7bb928082ee8362fb2c"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/gmoney.svg",
@@ -8499,6 +8668,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "9c981bbfae8abc100f6c7d23b7c6ac39dd3041a70c805a6bf6b08059ecf66e24"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6806826699?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "85ec8c52322022d57a53ce03237390c25c745143d69f310b3259b7c46b7d3c4d"
     },
     {
       "locale": "fr-FR",
@@ -8982,6 +9161,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "80dc45ddf74fda0eed8ac04cac2bef1e0acc5e0c319d79c4b285516fd67177fd"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/gmoney.svg",
@@ -9459,6 +9648,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/il/app/id6794725568?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "45f4dd8cdb4cf252506954d61830193e19ee540bb7a7a00bfa07d8990db5707a"
+    },
+    {
+      "locale": "he",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6806826699?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "30c9495b9dbcc02e44c153f97e53c17f5273fd6c94bdeb6c309f9a945d9e76f1"
     },
     {
       "locale": "he",
@@ -9942,6 +10141,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "265eed8679d69d03652c27c7b0e7af11fc4f7001c82d77930b1e616b9c4906fb"
+    },
+    {
+      "locale": "hi",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/gmoney.svg",
@@ -10419,6 +10628,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "94a3f96bb7ffcaca42738f0006796b7f4cf9f229fabef57f147ba0a80c17edda"
+    },
+    {
+      "locale": "hr",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "95d5922ceeae8a64e8d80573db63b2bc04b1ff937c9a0d7e458beb52542a79f3"
     },
     {
       "locale": "hr",
@@ -10902,6 +11121,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6806826699?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "980e048f747e1e843b479968af8fa7f073e387bf9f75b298031242310a8b1f5a"
+    },
+    {
+      "locale": "hu",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/gmoney.svg",
@@ -11379,6 +11608,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/id/app/id6794725568?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "3e0b1d1a5c9f436a7c8e0953f9192c07a6af06e6cbc9743a306d4dea4722f3da"
+    },
+    {
+      "locale": "id",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6806826699?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "236424ec82f33a192d23ba4a6da45e9e090058f768514f446daa9128975cfd4d"
     },
     {
       "locale": "id",
@@ -11862,6 +12101,16 @@
     },
     {
       "locale": "it",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6806826699?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "142550c7b45bb045cf3e3cae16bc80c47368088df608c5b7b3d11e1f4bdf73c9"
+    },
+    {
+      "locale": "it",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/gmoney.svg",
@@ -12339,6 +12588,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "0aa5c5e55bf81142421dd871dc04063fe109318180b0eb957aa791c8ccba9a78"
+    },
+    {
+      "locale": "ja",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6806826699?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "99358d1d38f26f2d2f7fe682b6242171f42f8614fe636ddcf36f9739a9d214dd"
     },
     {
       "locale": "ja",
@@ -12822,6 +13081,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "34924e30b47002660343a6bf036fb1c1208581ce990160f2ba66d193b4a181c1"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/gmoney.svg",
@@ -13299,6 +13568,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "cc35eaaac332599345f6ef10f9045ebe14dcdfd46197f6dc1354f5708a76a6ea"
+    },
+    {
+      "locale": "ko",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "52d602e64fa99a49ae408a07a726b6c5671924769b9e9659831975835148e0c5"
     },
     {
       "locale": "ko",
@@ -13782,6 +14061,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "9e4c56a1060782dff9759d97da183c49283e1329c38c71d29c749a340581f6df"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/gmoney.svg",
@@ -14259,6 +14548,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "ddb3024aa55b48593a39a173642ca94fd4e4294ad465cfe761d3eafde5d9e29b"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "e4bd98ed27cfd8d11fc2a8bf32375c2a574c5c022d92de2daa5cd324bf3ef336"
     },
     {
       "locale": "mr-IN",
@@ -14742,6 +15041,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6806826699?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "d608536a5c6b623bcc9f7bf724037cd8cbb6963053d58c13323d1c956c2bff5c"
+    },
+    {
+      "locale": "ms",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/gmoney.svg",
@@ -15219,6 +15528,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6794725568?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "75ebd224c61349b99f7738cdfad3670f3136af73a3c840ce4ac4e786252590e7"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6806826699?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "d8966b18a586abb82f3afcd2a6459f5642116c7e8d93d0125452784a8268632c"
     },
     {
       "locale": "nl-NL",
@@ -15702,6 +16021,16 @@
     },
     {
       "locale": "no",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6806826699?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "c8127c92aebfcc92a666e4cb7d5ba78251b67eb2918316a5cbde9856310db015"
+    },
+    {
+      "locale": "no",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/gmoney.svg",
@@ -16179,6 +16508,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "6dcb23c728b4db739890aac65da548afa2e945b27a275c19626da7e5eaf20cc2"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "13fa2bc61ee51ab91457e3c4c6361cbfdd528e7c240d9b763435095d9819d272"
     },
     {
       "locale": "or-IN",
@@ -16662,6 +17001,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "1e0b27d58ca5610c9bf93434ca16534e446b507a59f39444336ee0ad3b9d41d1"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/gmoney.svg",
@@ -17139,6 +17488,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6794725568?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "3d3c68321b3fb1d5705ba1fe614d750a4e0d8d5d4fc6d1565db315f9bf9a184f"
+    },
+    {
+      "locale": "pl",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6806826699?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "fae4ebd0920ea65709ec551cb123f5a4592cc36a520d855af52a0a70f3c10eb9"
     },
     {
       "locale": "pl",
@@ -17622,6 +17981,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6806826699?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "0b2c25d9e5a5415f9c583c02f232b4fcddaf76639cb2747122523b074130fdb1"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/gmoney.svg",
@@ -18099,6 +18468,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6794725568?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "f9a2d5dbee7fb6a39c46afc5f3f896c0518d41f1a873c54eb24c716050bf1989"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6806826699?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "1abc28da25aa7305555a785693ad9871c76d4258258d90e0ec233de565c19b14"
     },
     {
       "locale": "pt-PT",
@@ -18582,6 +18961,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6806826699?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "25df1a8265ddfb02268f759b8ef98f80fa8ff88ed525b8d8e63d63ea334bc398"
+    },
+    {
+      "locale": "ro",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/gmoney.svg",
@@ -19059,6 +19448,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "1d6e21bf4759fba429f05cda6c01d5dc0f7a241f9d23e4354147ec74bf23fa8c"
+    },
+    {
+      "locale": "ru",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "b1b78e6a59d215c2325b6191b5e9ce2cc19e91dfd13143a52cad0fcf4fc7727a"
     },
     {
       "locale": "ru",
@@ -19542,6 +19941,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6806826699?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "f151fb6b2ee12a8860930564b77da3219c59246c1020f8bb34cd73e8ad216ac3"
+    },
+    {
+      "locale": "sk",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/gmoney.svg",
@@ -20019,6 +20428,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/si/app/id6794725568?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "7ee03fec3391a3043fdb847016ea030ec09e7e7abb02f8645ee1301767f1cff8"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6806826699?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "7c673e7304af90dfa622cc5ce69735f7a6b05d6b01590753d14071adf2dde43a"
     },
     {
       "locale": "sl-SI",
@@ -20502,6 +20921,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6806826699?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "91f15eaf99948f1997f09ee59eaa9ed51a4ebc0f5d39395915a7b05b1dd78517"
+    },
+    {
+      "locale": "sv",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/gmoney.svg",
@@ -20979,6 +21408,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "bba22c85845d5bb591d15a413ab4bc4586a09127afa8e05677fbcd0facad7dc8"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "d9237d0e8424f5e3c1c0dd67c8930beca5cb35c6681a4018f2d1fea30c69ecd2"
     },
     {
       "locale": "ta-IN",
@@ -21462,6 +21901,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "3b9c7566365e09146aad400bb2e66aaa1650e34c49ca562b114a50dba1e544dc"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/gmoney.svg",
@@ -21939,6 +22388,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/th/app/id6794725568?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "106a56b8ef8ac68ea04984befec8a4143862d2584f9863c90b147a90f8e6d94b"
+    },
+    {
+      "locale": "th",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "099946ffa0fa1d373346451745ccf77167292cff0be005ec44f41894be5857e1"
     },
     {
       "locale": "th",
@@ -22422,6 +22881,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6806826699?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "3a77ceee6c3e200a79dfa01f3aac7d95a4ae642ae41ccacc836a40bcea728d09"
+    },
+    {
+      "locale": "tr",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/gmoney.svg",
@@ -22899,6 +23368,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "8ebecd3caac163818a1406ea116c30778724e8e575aeefe027516ec6ac83e3c5"
+    },
+    {
+      "locale": "uk",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6806826699?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "86d606d4ef7e1b1ca2da85d0fc33bb95e52c53459b9456a1c6e269031476c29d"
     },
     {
       "locale": "uk",
@@ -23382,6 +23861,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "fba776cb14c170d2c1d33217e471d619d9a9c598b935380c16f65d8a1ff143c2"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/gmoney.svg",
@@ -23862,6 +24351,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "d1c10dd11cf5b88b178be3060524f72862440e1c970124af54988c245b527b81"
+    },
+    {
+      "locale": "vi",
       "app_key": "gmoney",
       "app_store_id": "6755782939",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/gmoney.svg",
@@ -24339,6 +24838,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6794725568?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "76fae972dce39ffa5960e97e3a132b3cdc03eb8e85b4ece1d866eeb65ae176fc"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "1463248772ff0a2b9f92da4be94a4cf383b44a2fac99b705a0e11bc871bd84e1"
     },
     {
       "locale": "zh-Hans",
@@ -24895,6 +25404,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "e6d2e37bbf0b17bdc4a4fc298c95a9740932d239e2d8e79952a0cfda02e85ce8"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/dbhalo.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "46212520f2730b9084457ad82d899682d19adb3fd1a372de0f38b329b62b4f70"
     },
     {
       "locale": "zh-Hant",

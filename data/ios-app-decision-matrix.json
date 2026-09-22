@@ -6,7 +6,7 @@
   "identifier": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json",
   "url": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-08-25",
+  "dateModified": "2026-09-22",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,7 +18,7 @@
   "price_source": "Apple App Store public lookup snapshot",
   "price_storefront": "US",
   "official_locale_count": 50,
-  "app_count": 43,
+  "app_count": 49,
   "columns": [
     {
       "name": "app_key",
@@ -203,11 +203,12 @@
     {
       "category": "photo-utility",
       "label": "Photo, document and file utilities",
-      "app_count": 7,
+      "app_count": 8,
       "app_keys": [
         "maskmyfile",
         "photocream",
         "picclear",
+        "shotinbox",
         "snapport",
         "snapportlite",
         "unblurry",
@@ -217,7 +218,7 @@
     {
       "category": "productivity",
       "label": "Notes, documents and focus",
-      "app_count": 8,
+      "app_count": 9,
       "app_keys": [
         "aibriefpack",
         "cvdesk",
@@ -225,6 +226,7 @@
         "mochi",
         "notesstudio100",
         "onepageppt",
+        "savetag",
         "scanto",
         "sononote"
       ]
@@ -249,10 +251,14 @@
     {
       "category": "utility",
       "label": "iPhone utilities",
-      "app_count": 2,
+      "app_count": 6,
       "app_keys": [
+        "battai",
         "caldaily",
-        "wifiaidlite"
+        "dbhalo",
+        "ledmovingtext",
+        "wifiaidlite",
+        "zipbox"
       ]
     }
   ],
@@ -264,7 +270,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best private app to organize screenshots and documents into context before using AI",
-      "decision_context": "Better context. Better answers.",
+      "decision_context": "A private AI-context workflow should let you assemble the complete source set, inspect what was extracted and decide what leaves the device instead of silently uploading files or removing detected details. AI Brief — Better context, better answers. Turn screenshots, files, notes and documents into one clear brief.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -276,8 +282,8 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for best private app to organize screenshots and documents into context before using AI, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/aibriefpack.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6791658210?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "aim990",
@@ -301,7 +307,7 @@
       "choose_when": "You are looking for best toeic prep app offline study plan for iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: aim990plus.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "aim990plus",
@@ -310,7 +316,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best offline English listening and reading exam trainer for iPhone",
-      "decision_context": "Train for clear decisions under exam pressure",
+      "decision_context": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -324,17 +330,39 @@
       ],
       "choose_when": "You are looking for best offline English listening and reading exam trainer for iPhone, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: aim990.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/aim990plus.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "battai",
+      "app_name": "BattAI",
+      "app_store_id": "6802423998",
+      "category": "utility",
+      "category_label": "iPhone utilities",
+      "buyer_intent": "best iphone battery health app with honest estimates and report",
+      "decision_context": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for best iphone battery health app with honest estimates and report, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "caldaily",
-      "app_name": "CalDaily: Calculator & Themes",
+      "app_name": "CalDaily",
       "app_store_id": "6794178671",
       "category": "utility",
       "category_label": "iPhone utilities",
       "buyer_intent": "best calculator app iphone that saves history you can name and search",
-      "decision_context": "A calculator you will actually keep using, because it remembers the thinking",
+      "decision_context": "CalDaily — A calculator you will actually keep using, because it remembers the thinking behind each number. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -346,8 +374,8 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for best calculator app iphone that saves history you can name and search, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/caldaily.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "cvdesk",
@@ -356,7 +384,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best resume builder app for career changers 2026",
-      "decision_context": "When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it — CV Desk is built for this.",
+      "decision_context": "When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it. That is the gap CV Desk was built to close.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -369,7 +397,7 @@
       "choose_when": "You are looking for best resume builder app for career changers 2026, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "cyca",
@@ -378,7 +406,7 @@
       "category": "health",
       "category_label": "Personal health tracking",
       "buyer_intent": "best period tracker app no account required iphone",
-      "decision_context": "In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync — Cyca is built for this.",
+      "decision_context": "In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync. Cyca sticks to that one job and leaves the rest out.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -391,7 +419,7 @@
       "choose_when": "You are looking for best period tracker app no account required iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-period-tracker-app-no-account-required-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "dailymate",
@@ -400,7 +428,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best practical language phrase app for travelers with apple watch",
-      "decision_context": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure — DailyMate is built for this.",
+      "decision_context": "Before a trip, complete phrases for real situations are more useful than isolated vocabulary you still have to assemble under pressure. DailyMate started from exactly that problem.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -415,16 +443,16 @@
       "choose_when": "You are looking for best practical language phrase app for travelers with apple watch, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: dailymatelite.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "dailymatelite",
-      "app_name": "DailyMate Lite: Speak Today",
+      "app_name": "DailyMate Lite",
       "app_store_id": "6794725568",
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best free travel phrasebook app with real dialogues for iphone",
-      "decision_context": "Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the",
+      "decision_context": "DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -438,8 +466,30 @@
       ],
       "choose_when": "You are looking for best free travel phrasebook app with real dialogues for iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: dailymate.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/dailymatelite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "dbhalo",
+      "app_name": "dB Halo: Sound Meter",
+      "app_store_id": "6806826699",
+      "category": "utility",
+      "category_label": "iPhone utilities",
+      "buyer_intent": "sound meter app for iphone with frequency spectrum and noise dose",
+      "decision_context": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for sound meter app for iphone with frequency spectrum and noise dose, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "gmoney",
@@ -448,7 +498,7 @@
       "category": "finance",
       "category_label": "Money, billing and time tracking",
       "buyer_intent": "best travel budget tracker app no subscription iphone",
-      "decision_context": "On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate — G+Money is built for this.",
+      "decision_context": "On a trip you need a budget tracker that works offline in a country with no data, handles multiple currencies, and doesn't demand an account — organised by trip so each holiday is separate. That is the gap G+Money was built to close.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -463,7 +513,7 @@
       "choose_when": "You are looking for best travel budget tracker app no subscription iphone, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: gmoneylite.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "gmoneylite",
@@ -472,7 +522,7 @@
       "category": "finance",
       "category_label": "Money, billing and time tracking",
       "buyer_intent": "best free travel expense tracker with currency conversion for iphone",
-      "decision_context": "G+Money Lite — Smart travel currency & expense tracker",
+      "decision_context": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That is the gap G+Money Lite was built to close.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -486,17 +536,17 @@
       ],
       "choose_when": "You are looking for best free travel expense tracker with currency conversion for iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: gmoney.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/gmoneylite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "hourstag",
-      "app_name": "HoursTag: Hours to Buy",
+      "app_name": "HoursTag",
       "app_store_id": "6754218117",
       "category": "finance",
       "category_label": "Money, billing and time tracking",
       "buyer_intent": "best app to track where my money goes and save more",
-      "decision_context": "What does it really cost? Not in dollars — in hours of your life.",
+      "decision_context": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -510,8 +560,8 @@
       ],
       "choose_when": "You are looking for best app to track where my money goes and save more, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: hourstaglite.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/hourstag.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "hourstaglite",
@@ -520,7 +570,7 @@
       "category": "finance",
       "category_label": "Money, billing and time tracking",
       "buyer_intent": "best app to convert prices into work hours before buying",
-      "decision_context": "HoursTag Lite - See the real price of things",
+      "decision_context": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -534,8 +584,30 @@
       ],
       "choose_when": "You are looking for best app to convert prices into work hours before buying, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: hourstag.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "app_name": "LED Moving Text",
+      "app_store_id": "6806639602",
+      "category": "utility",
+      "category_label": "iPhone utilities",
+      "buyer_intent": "led scrolling text app for concerts and airport pickups",
+      "decision_context": "LED Moving Text — Cue Flow handles moments that need more than one sign. Free to start · One-time unlock · No subscription.",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for led scrolling text app for concerts and airport pickups, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lockhour",
@@ -544,7 +616,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best app to block social media while studying iphone",
-      "decision_context": "During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.",
+      "decision_context": "During exams, willpower isn't the tool — a hard timed block is. That is why LockHour Pro exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -557,7 +629,7 @@
       "choose_when": "You are looking for best app to block social media while studying iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumibopomofo",
@@ -566,7 +638,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best bopomofo app for kids to learn zhuyin on iphone",
-      "decision_context": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected — Lumi Bopomofo is built for this.",
+      "decision_context": "For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected. That is the gap Lumi Bopomofo was built to close.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -581,7 +653,7 @@
       "choose_when": "You are looking for best bopomofo app for kids to learn zhuyin on iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: lumibopomofopro.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumibopomofopro",
@@ -590,7 +662,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best complete zhuyin app for bilingual children",
-      "decision_context": "Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar — Lumi Bopomofo Pro is built for this.",
+      "decision_context": "Bilingual children learning Zhuyin at home need a complete path through sounds, symbols, tones and blending, with enough playful repetition to make the system familiar. That is the gap Lumi Bopomofo Pro was built to close.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -605,7 +677,7 @@
       "choose_when": "You are looking for best complete zhuyin app for bilingual children, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: lumibopomofo.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-zhuyin-app-for-bilingual-children.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumiletters",
@@ -614,7 +686,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best educational game app for kids no ads iphone",
-      "decision_context": "For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust — Lumi Letters is built for this.",
+      "decision_context": "For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust. That is why Lumi Letters exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -629,7 +701,7 @@
       "choose_when": "You are looking for best educational game app for kids no ads iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: lumiletterspro.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumiletterspro",
@@ -638,7 +710,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best complete phonics app for homeschool kindergarten prep",
-      "decision_context": "Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games — Lumi Letters Pro is built for this.",
+      "decision_context": "Families preparing for kindergarten need a complete early-reading path that connects letter sounds, tracing and word building instead of a collection of unrelated alphabet games. That is the gap Lumi Letters Pro was built to close.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -653,7 +725,7 @@
       "choose_when": "You are looking for best complete phonics app for homeschool kindergarten prep, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: lumiletters.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumimath",
@@ -662,7 +734,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best math game app for kids to build logic skills iphone",
-      "decision_context": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play — Lumi Math Planet is built for this.",
+      "decision_context": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play. That is why Lumi Math Planet exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -677,7 +749,7 @@
       "choose_when": "You are looking for best math game app for kids to build logic skills iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: lumimathpro.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumimathpro",
@@ -686,7 +758,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best complete math learning app for preschool and early grades",
-      "decision_context": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills — Lumi Math Pro is built for this.",
+      "decision_context": "A complete early-math app should make counting, number sense and first operations feel like one connected adventure rather than isolated drills. That is why Lumi Math Pro exists.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -701,7 +773,7 @@
       "choose_when": "You are looking for best complete math learning app for preschool and early grades, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: lumimath.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumimission",
@@ -710,7 +782,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best bedtime routine app for preschoolers with no ads",
-      "decision_context": "For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders — Lumi Mission Planet is built for this.",
+      "decision_context": "For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders. If that is your situation, Lumi Mission Planet is worth a look.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -725,7 +797,7 @@
       "choose_when": "You are looking for best bedtime routine app for preschoolers with no ads, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: lumimissionpro.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumimissionpro",
@@ -749,7 +821,7 @@
       "choose_when": "You are looking for best complete morning and bedtime routine app for kids, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: lumimission.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "lumiweather",
@@ -758,7 +830,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best weather app to help parents plan outdoor time with kids",
-      "decision_context": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense — Lumi Weather is built for this.",
+      "decision_context": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense. That is why Lumi Weather exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -771,7 +843,7 @@
       "choose_when": "You are looking for best weather app to help parents plan outdoor time with kids, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "maskmyfile",
@@ -780,7 +852,7 @@
       "category": "photo-utility",
       "category_label": "Photo, document and file utilities",
       "buyer_intent": "best on-device file redaction app for freelancers sharing client documents",
-      "decision_context": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you",
+      "decision_context": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -792,8 +864,8 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for best on-device file redaction app for freelancers sharing client documents, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/maskmyfile.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "mochi",
@@ -802,7 +874,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best simple to do list app iphone no subscription",
-      "decision_context": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery — Mochi is built for this.",
+      "decision_context": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That is why Mochi exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -815,16 +887,16 @@
       "choose_when": "You are looking for best simple to do list app iphone no subscription, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "mochidonestamp",
-      "app_name": "Mochi DoneStamp: Last Time",
+      "app_name": "Mochi DoneStamp",
       "app_store_id": "6790800323",
       "category": "lifestyle",
       "category_label": "Everyday habits",
       "buyer_intent": "best last time tracker app for household maintenance without a subscription",
-      "decision_context": "When did you last change the sheets, water a plant, call family, back up photos, or replace a filter?",
+      "decision_context": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -836,8 +908,8 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for best last time tracker app for household maintenance without a subscription, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/mochidonestamp.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "moneytag",
@@ -846,7 +918,7 @@
       "category": "finance",
       "category_label": "Money, billing and time tracking",
       "buyer_intent": "best income and expense tracker for freelance projects no subscription",
-      "decision_context": "Income & Expense Every project keeps its own books: income minus expenses is its net result. Here are the questions people ask most. If yours is not answered, write to us — a real person reads every message.",
+      "decision_context": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result. MoneyTag: Income & Expense started from exactly that problem.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -858,17 +930,17 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for best income and expense tracker for freelance projects no subscription, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/moneytag.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "notesstudio100",
-      "app_name": "100 Notes Studio: Pen & Paper",
+      "app_name": "100 Notes Studio",
       "app_store_id": "6798813048",
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best offline handwriting notes app for ipad with pdf markup no subscription",
-      "decision_context": "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study.",
+      "decision_context": "100 Notes Studio — 100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -880,8 +952,8 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for best offline handwriting notes app for ipad with pdf markup no subscription, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/notesstudio100.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "onepageppt",
@@ -903,7 +975,7 @@
       "choose_when": "You are looking for app that turns meeting notes into one presentation slide, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "photocream",
@@ -912,7 +984,7 @@
       "category": "photo-utility",
       "category_label": "Photo, document and file utilities",
       "buyer_intent": "best pay once film photo editor for travel creators on iphone",
-      "decision_context": "Travel creators need a repeatable film look that adds grain, halation and color character without reducing every destination to the same flat filter — PhotoCream is built for this.",
+      "decision_context": "Travel creators need a repeatable film look that adds grain, halation and color character without reducing every destination to the same flat filter",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -925,7 +997,7 @@
       "choose_when": "You are looking for best pay once film photo editor for travel creators on iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "picclear",
@@ -947,7 +1019,29 @@
       "choose_when": "You are looking for best app to free up iphone storage deleting duplicate photos, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "savetag",
+      "app_name": "SaveTag",
+      "app_store_id": "6802505528",
+      "category": "productivity",
+      "category_label": "Notes, documents and focus",
+      "buyer_intent": "best app to save links from other apps on iphone",
+      "decision_context": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for best app to save links from other apps on iphone, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-save-links-from-other-apps-on-iphone.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "scanto",
@@ -956,7 +1050,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best offline document scanner app no cloud for nurses",
-      "decision_context": "If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud — ScanTo Pro is built for this.",
+      "decision_context": "If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud. ScanTo Pro started from exactly that problem.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -969,7 +1063,7 @@
       "choose_when": "You are looking for best offline document scanner app no cloud for nurses, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "sereno",
@@ -978,7 +1072,7 @@
       "category": "sleep-sound",
       "category_label": "Sleep and ambient sound",
       "buyer_intent": "best white noise app for falling asleep no subscription",
-      "decision_context": "For sleep, a subscription that nags you every month is the opposite of restful — Sereno is built for this.",
+      "decision_context": "For sleep, a subscription that nags you every month is the opposite of restful. If that is your situation, Sereno is worth a look.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -991,7 +1085,29 @@
       "choose_when": "You are looking for best white noise app for falling asleep no subscription, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "shotinbox",
+      "app_name": "ShotInbox AI",
+      "app_store_id": "6802166527",
+      "category": "photo-utility",
+      "category_label": "Photo, document and file utilities",
+      "buyer_intent": "best app to sort screenshots on iphone offline",
+      "decision_context": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for best app to sort screenshots on iphone offline, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-sort-screenshots-on-iphone-offline.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "snapport",
@@ -1000,7 +1116,7 @@
       "category": "photo-utility",
       "category_label": "Photo, document and file utilities",
       "buyer_intent": "best passport photo app for babies and toddlers at home",
-      "decision_context": "For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open.",
+      "decision_context": "Snapport is a paid download with JPEG, PNG and PDF export included. For a U.S. paper-photo application, choose a 2×2-inch crop and arrange copies on a 4×6 sheet with cut guides. A correctly sized file does not certify that a passport authority will accept the photo.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -1015,7 +1131,7 @@
       "choose_when": "You are looking for best passport photo app for babies and toddlers at home, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: snapportlite.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "snapportlite",
@@ -1024,7 +1140,7 @@
       "category": "photo-utility",
       "category_label": "Photo, document and file utilities",
       "buyer_intent": "best free passport photo app for iphone that works offline",
-      "decision_context": "Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export.",
+      "decision_context": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1038,8 +1154,8 @@
       ],
       "choose_when": "You are looking for best free passport photo app for iphone that works offline, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: snapport.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/snapportlite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "sononote",
@@ -1048,7 +1164,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best voice notes app that summarizes meetings on iphone",
-      "decision_context": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up — Sono Note is built for this.",
+      "decision_context": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. That is the gap Sono Note was built to close.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1061,7 +1177,7 @@
       "choose_when": "You are looking for best voice notes app that summarizes meetings on iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "tripbee",
@@ -1070,7 +1186,7 @@
       "category": "travel",
       "category_label": "Travel planning",
       "buyer_intent": "best trip itinerary planner app for iphone",
-      "decision_context": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance — TripBee Pro: Trip Planner is built for this.",
+      "decision_context": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that is your situation, TripBee Pro: Trip Planner is worth a look.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -1085,7 +1201,7 @@
       "choose_when": "You are looking for best trip itinerary planner app for iphone, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: tripbeelite.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-trip-itinerary-planner-app-for-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "tripbeelite",
@@ -1094,7 +1210,7 @@
       "category": "travel",
       "category_label": "Travel planning",
       "buyer_intent": "best simple trip planner app for one upcoming trip iphone",
-      "decision_context": "If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday — TripBee Lite is built for this.",
+      "decision_context": "If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday. If that is your situation, TripBee Lite is worth a look.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1109,7 +1225,7 @@
       "choose_when": "You are looking for best simple trip planner app for one upcoming trip iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: tripbee.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "tripplanet",
@@ -1118,7 +1234,7 @@
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best travel activity app for kids on family trips",
-      "decision_context": "Parents traveling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress — Lumi Trip Planet is built for this.",
+      "decision_context": "Parents traveling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress. That is why Lumi Trip Planet exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1131,7 +1247,7 @@
       "choose_when": "You are looking for best travel activity app for kids on family trips, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "unblurry",
@@ -1140,7 +1256,7 @@
       "category": "photo-utility",
       "category_label": "Photo, document and file utilities",
       "buyer_intent": "best app to fix blurry photos of kids on iphone",
-      "decision_context": "Kids never hold still, so soft-focus and camera-shake shots are inevitable — Unblurry is built for this.",
+      "decision_context": "Kids never hold still, so soft-focus and camera-shake shots are inevitable",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1153,7 +1269,7 @@
       "choose_when": "You are looking for best app to fix blurry photos of kids on iphone, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "wifiaid",
@@ -1162,7 +1278,7 @@
       "category": "photo-utility",
       "category_label": "Photo, document and file utilities",
       "buyer_intent": "best wifi troubleshooting app for remote workers with connected but no internet",
-      "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or",
+      "decision_context": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -1176,17 +1292,17 @@
       ],
       "choose_when": "You are looking for best wifi troubleshooting app for remote workers with connected but no internet, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: wifiaidlite.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaid.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "wifiaidlite",
-      "app_name": "WiFi Aid Lite: Network Check",
+      "app_name": "WiFi Aid Lite",
       "app_store_id": "6793414462",
       "category": "utility",
       "category_label": "iPhone utilities",
       "buyer_intent": "how to tell if the wifi or the website is down free app",
-      "decision_context": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+      "decision_context": "WiFi Aid Lite — Find the real problem. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1200,8 +1316,8 @@
       ],
       "choose_when": "You are looking for how to tell if the wifi or the website is down free app, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: wifiaid.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "wordmate",
@@ -1210,7 +1326,7 @@
       "category": "education",
       "category_label": "Study and exam practice",
       "buyer_intent": "best vocabulary app for busy commuters with apple watch",
-      "decision_context": "Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review — Wordmate: Learn 44 Languages is built for this.",
+      "decision_context": "Busy commuters need vocabulary practice that fits into spare minutes without requiring a full lesson, a new account or a phone in hand for every review. Wordmate: Learn 44 Languages started from exactly that problem.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -1225,16 +1341,16 @@
       "choose_when": "You are looking for best vocabulary app for busy commuters with apple watch, and you want pay once, no subscription.",
       "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: wordmatelite.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=iag_data_en_us&mt=8"
+      "app_store_url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "wordmatelite",
-      "app_name": "Wordmate Lite: Vocabulary",
+      "app_name": "Wordmate Lite",
       "app_store_id": "6797601720",
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "best free vocabulary app for adults one minute a day no flashcard decks",
-      "decision_context": "Five words. One minute. A trail you can actually see.",
+      "decision_context": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1248,9 +1364,31 @@
       ],
       "choose_when": "You are looking for best free vocabulary app for adults one minute a day no flashcard decks, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: wordmate.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/wordmatelite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8"
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "zipbox",
+      "app_name": "Zipbox: Unzip RAR, ZIP & 7z",
+      "app_store_id": "6806776579",
+      "category": "utility",
+      "category_label": "iPhone utilities",
+      "buyer_intent": "paid app to open RAR and 7z files on iPhone without ads",
+      "decision_context": "Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on",
+      "purchase_model": "paid_upfront",
+      "purchase_model_label": "pay once, no subscription",
+      "one_time_option": true,
+      "free_to_download": false,
+      "subscription": false,
+      "us_price": "4.99",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 38,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for paid app to open RAR and 7z files on iPhone without ads, and you want pay once, no subscription.",
+      "consider_instead_when": "Consider a different app when you want to try the app before paying — this edition is a paid download with no free tier.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
     }
   ],
-  "content_digest": "sha256:1f58a4f5e811c50cead1769618039d694b210f0cdfe2f6d7446c8afb0bbc8209"
+  "content_digest": "sha256:65812fc58147996e2c66b8c825f594997a05dbdda225b970d6891fa9507c01f5"
 }

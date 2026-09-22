@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 48
+      "const": 49
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2400
+      "const": 2450
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2400,
-      "maxItems": 2400,
+      "minItems": 2450,
+      "maxItems": 2450,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -240,6 +240,7 @@
               "cyca",
               "dailymate",
               "dailymatelite",
+              "dbhalo",
               "gmoney",
               "gmoneylite",
               "hourstag",

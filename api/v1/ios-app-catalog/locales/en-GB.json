@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-20",
-  "content_digest": "3ea4eee68a0410c4ce83807695befdb4b3cd34b6ae3657c450510736e8dc97aa",
+  "date_modified": "2026-09-22",
+  "content_digest": "76c7923b566eb05c1bacf6b6aeba1529def63fbd23d269810e2e538982bc8054",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -388,7 +388,8 @@
         "spanish",
         "french",
         "german",
-        "japanese"
+        "japanese",
+        "everyday phrases"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -449,6 +450,49 @@
         "currency": "GBP",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/gb/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Sound Level Meter",
+      "summary": "Whether you are keeping an eye on building works, a noisy flat, the commute or a rehearsal room, dB Halo gives you a clear view of the sound around you while processing stays on your devices. The large Halo safety ring shows live dB at a glance, alongside minimum, average, maximum and peak readings and a time-stamped event log. Select A, C or Z weighting, use an external microphone and save several calibration profiles for different setups.",
+      "category": "utility",
+      "search_terms": [
+        "decibel",
+        "analyser",
+        "spl",
+        "rta",
+        "fft",
+        "frequency",
+        "octave",
+        "hearing",
+        "exposure",
+        "workplace",
+        "laeq",
+        "logger",
+        "calibration",
+        "dba"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/gb/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/gb/app/id6806826699"
       }
     },
     {
@@ -824,7 +868,8 @@
         "characters",
         "sounds",
         "language",
-        "early learning"
+        "early learning",
+        "learn zhuyin"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2095,7 +2140,8 @@
         "quality",
         "repair",
         "clear",
-        "pixel"
+        "pixel",
+        "unblur photo"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

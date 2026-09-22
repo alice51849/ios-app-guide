@@ -2,7 +2,7 @@
 title: "Lumi Weather: পরিবারের আবহাওয় — আবহাওয়ার পূর্বাভাস ও বৃষ্টি | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/bn-BD/index.html"
-modified: "2026-09-21"
+modified: "2026-09-22"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

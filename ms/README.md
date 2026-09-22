@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap aplikasi, tugasan yang mahu diselesaikan dan akses terus ke App Store.
 
-Niat carian yang ditulis penerbit untuk 48 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
+Niat carian yang ditulis penerbit untuk 49 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · **ms** · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 | **Cyca** | aplikasi penjejak haid terbaik tanpa akaun diperlukan iPhone | Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang betul menyimpan semuanya — aliran, mood, simptom, suhu, keintiman — di dalam peranti anda, tanpa akaun dan tanpa penyelarasan awan. Cyca buat satu perkara itu sahaja dan tinggalkan yang lain. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-period-tracker-app-no-account-required-iphone.html) | [Dapatkan Cyca di App Store →](https://apps.apple.com/my/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | aplikasi frasa bahasa praktikal terbaik untuk pelancong dengan Apple Watch | Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada kosa kata terpencil yang masih perlu anda susun di bawah tekanan. DailyMate bermula tepat daripada masalah ini. | Muat turun berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Cakap Hari Ini** | DailyMate Lite: Cakap Hari Ini — 50 Bahasa, Dialog Sebenar \| iOS App | Bercakap secara semula jadi apabila tiba masanya. DailyMate Lite mengubah situasi harian menjadi latihan ringkas ungkapan dan balasan dalam 50 bahasa | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/dailymatelite.html) | [Dapatkan DailyMate Lite: Cakap Hari Ini di App Store](https://apps.apple.com/my/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Meter aras bunyi** | dB Halo: Meter aras bunyi — Dos hingar dan jurnal tidur \| iOS App | Di rumah teres, ketika menaiki LRT, berhampiran tapak pembinaan atau semasa aktiviti komuniti di surau dan masjid, aras bunyi boleh berubah mengikut | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/dbhalo.html) | [Dapatkan dB Halo: Meter aras bunyi di App Store](https://apps.apple.com/my/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone | Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di negara tanpa data, mengendalikan pelbagai mata wang, dan tidak memerlukan akaun — diatur mengikut perjalanan supaya setiap percutian berasingan. Itulah jurang yang cuba ditutup oleh G+Money. | Muat turun berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Dapatkan G+Money di App Store →](https://apps.apple.com/my/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone | A useful free perjalanan-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Percuma untuk bermula · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Dapatkan G+Money Lite di App Store →](https://apps.apple.com/my/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Muat turun berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Dapatkan HoursTag di App Store →](https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 
 ## Muat turun set data lengkap
 
-JSON, JSONL dan CSV mengandungi 2,400 rekod yang sama.
+JSON, JSONL dan CSV mengandungi 2,450 rekod yang sama.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL dan CSV mengandungi 2,400 rekod yang sama.
 
 [Laman Utama](https://open.cait518.cc/ios-app-guide/ms/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-09-19
+Dikemas kini: 2026-09-22
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

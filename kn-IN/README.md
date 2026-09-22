@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-48 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+49 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | ಅಕೌಂಟ್ ಅಗತ್ಯವಿಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪೀರಿಯಡ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone | ಡೇಟಾ ಸಂವೇದನಶೀಲತೆ ಮುಖ್ಯವಾಗಿರುವ ವರ್ಗದಲ್ಲಿ, ಸರಿಯಾದ ಪೀರಿಯಡ್ ಟ್ರ್ಯಾಕರ್ ಎಲ್ಲವನ್ನೂ — ಹರಿವು, ಮನೋಭಾವ, ಲಕ್ಷಣಗಳು, ತಾಪಮಾನ, ಹತ್ತಿರತೆ — ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಇಡುತ್ತದೆ, ಯಾವುದೇ ಅಕೌಂಟ್ ಅಥವಾ ಕ್ಲೌಡ್ ಸಿಂಕ್ ಇಲ್ಲದೆ. Cyca ಈ ಒಂದೇ ಕೆಲಸ ಮಾಡುತ್ತದೆ, ಉಳಿದದ್ದನ್ನು ಬಿಟ್ಟುಬಿಡುತ್ತದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store ನಲ್ಲಿ Cyca ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | ಆಪಲ್ ವಾಚ್ ಹೊಂದಿರುವ ಪ್ರಯಾಣಿಕರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ರಾಯೋಗಿಕ ಭಾಷಾ ವಾಕ್ಯಗಳು ಅಪ್ಲಿಕೇಶನ್ | ಪ್ರಯಾಣದ ಮೊದಲು, ಒತ್ತಡದಡಿಯಲ್ಲಿ ಸಂಯೋಜಿಸಬೇಕಾಗಿರುವ ಪ್ರತ್ಯೇಕ ಪದಗಳಿಗಿಂತ ನೈಜ ಪರಿಸ್ಥಿತಿಗಳಿಗಾಗಿ ಪೂರ್ಣ ವಾಕ್ಯಗಳು ಹೆಚ್ಚು ಉಪಯುಕ್ತವಾಗಿವೆ. DailyMate ಶುರುವಾಗಿದ್ದೇ ಈ ಸಮಸ್ಯೆಯಿಂದ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store ನಲ್ಲಿ ಡೇಲಿಮೇಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ** | DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ — 50 ಭಾಷೆಗಳಲ್ಲಿ ಸಹಜ ಸಂಭಾಷಣೆ \| iOS App | ಮಾತನಾಡಬೇಕಾದ ಕ್ಷಣದಲ್ಲಿ ಸರಿಯಾದ ಪದಗಳು ಸಿದ್ಧವಾಗಿರಲಿ. DailyMate Lite ನೈಜ ಜೀವನದ ಸಂದರ್ಭಗಳನ್ನು ಚಿಕ್ಕ, ಸಹಜ ಮಾತಿನ ಸುಳಿವು–ಉತ್ತರ ಅಭ್ಯಾಸಗಳಾಗಿ ನೀಡುತ್ತದೆ—50 ಭಾಷೆಗಳಲ್ಲಿ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/dailymatelite.html) | [App Store ನಲ್ಲಿ DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: ಧ್ವನಿ ಮಟ್ಟ ಮಾಪಕ** | dB Halo: ಧ್ವನಿ ಮಟ್ಟ ಮಾಪಕ — ವರ್ಣಪಟ ಮತ್ತು ಶಬ್ದದ ಡೋಸ್ \| iOS App | ಈ ಕ್ಷಣದ ಶಬ್ದ ಎಷ್ಟು ಜೋರಾಗಿದೆ ಮತ್ತು ಅಂದಾಜು ಸುರಕ್ಷಿತ ಒಡ್ಡಿಕೊಳ್ಳುವಿಕೆ ಸಮಯ ಎಷ್ಟು ಉಳಿದಿದೆ ಎಂಬುದನ್ನು dB Halo ಒಂದೇ ನೋಟದಲ್ಲಿ ತೋರಿಸುತ್ತದೆ. ಇದು iPhone, iPad ಮತ್ತು | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/dbhalo.html) | [App Store ನಲ್ಲಿ dB Halo: ಧ್ವನಿ ಮಟ್ಟ ಮಾಪಕ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | ಅಕೌಂಟ್ ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone | ಪ್ರತಿ ಹಾಲಿಡೇ ಪ್ರತ್ಯೇಕವಾಗಿರುವಂತೆ ಪ್ರಯಾಣದ ಪ್ರಕಾರ ಸಂಘಟಿತವಾಗಿರುವ, ಡೇಟಾ ಇಲ್ಲದ ದೇಶದಲ್ಲಿ ಆಫ್‌ಲೈನ್ ಕೆಲಸ ಮಾಡುವ, ಬಹು ಕರೆನ್ಸಿಗಳನ್ನು ನಿರ್ವಹಿಸುವ ಮತ್ತು ಅಕೌಂಟ್ ಬೇಡದ ಬಜೆಟ್ ಟ್ರ್ಯಾಕರ್. ಈ ಕೊರತೆಯನ್ನೇ G+Money ತುಂಬಲು ಬಯಸುತ್ತದೆ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store ನಲ್ಲಿ G+Money ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ** | G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ — ಪ್ರಯಾಣ ವೆಚ್ಚ ಮತ್ತು ಕರೆನ್ಸಿ \| iOS App | G+Money Lite — ಚಾತುರ್ಯಯುತ ಪ್ರವಾಸ ನಾಣ್ಯ ಮತ್ತು ಖರ್ಚು ಟ್ರ್ಯಾಕರ್ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/gmoneylite.html) | [App Store ನಲ್ಲಿ G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ** | HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ — ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ \| iOS App | HoursTag Lite - ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/hourstaglite.html) | [App Store ನಲ್ಲಿ HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,400 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,450 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,400 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://open.cait518.cc/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://open.cait518.cc/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-09-19
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-09-22
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

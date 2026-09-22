@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.
 
-Intenções de busca redigidas pela publicadora para 48 apps iOS verificados e disponíveis em 50 idiomas e regiões da Apple.
+Intenções de busca redigidas pela publicadora para 49 apps iOS verificados e disponíveis em 50 idiomas e regiões da Apple.
 
 **Localidade:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · **pt-BR** · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 | **Cyca** | melhor app de rastreamento de ciclo menstrual sem necessidade de conta para iPhone | Em uma categoria onde a sensibilidade dos dados é tudo, o rastreador certo mantém tudo — fluxo, humor, sintomas, temperatura, intimidade — no seu dispositivo, sem conta e sem sincronização na nuvem. Cyca faz só isso e deixa o resto de fora. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-period-tracker-app-no-account-required-iphone.html) | [Baixe Cyca na App Store →](https://apps.apple.com/br/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | melhor app de frases úteis para viagens com Apple Watch | Antes da viagem, frases completas para situações reais são mais úteis do que vocabulário isolado que você ainda precisa montar sob pressão. DailyMate nasceu exatamente desse problema. | Baixa paga | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Baixe o DailyMate na App Store →](https://apps.apple.com/br/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Fale agora** | DailyMate Lite: Fale agora — 50 idiomas, diálogos reais \| iOS App | Fale com mais confiança quando a conversa acontecer. DailyMate Lite transforma situações de viagem, trabalho, alimentação, saúde e vida social em | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/dailymatelite.html) | [Baixe DailyMate Lite: Fale agora na App Store](https://apps.apple.com/br/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: Decibelímetro** | dB Halo: Decibelímetro — Espectro, dose de ruído e FFT \| iOS App | No celular ou no iPad, use o dB Halo como medidor de decibéis em condomínios, no trânsito, em oficinas, obras ou festas. A tela do Halo indica a zona | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/dbhalo.html) | [Baixe dB Halo: Decibelímetro na App Store](https://apps.apple.com/br/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | melhor app de controle de orçamento de viagem sem assinatura para iPhone | Em uma viagem, você precisa de um controle de orçamento que funcione offline em país sem dados, lide com múltiplas moedas e não exija conta — organizado por viagem para que cada férias seja separada. É justamente essa lacuna que o G+Money quer preencher. | Baixa paga | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Baixe G+Money na App Store →](https://apps.apple.com/br/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | Grátis para começar · desbloqueio com compra única | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Baixar G+Money Lite na App Store →](https://apps.apple.com/br/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Baixa paga | [Guia](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Baixar HoursTag na App Store →](https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 
 ## Baixe o conjunto completo de dados
 
-JSON, JSONL e CSV contêm os mesmos 2.400 registros.
+JSON, JSONL e CSV contêm os mesmos 2.450 registros.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL e CSV contêm os mesmos 2.400 registros.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-BR/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-BR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-09-19
+Atualizado: 2026-09-22
 
 A licença CC BY 4.0 se aplica à compilação original do catálogo; nomes de apps e marcas da App Store pertencem aos seus proprietários.

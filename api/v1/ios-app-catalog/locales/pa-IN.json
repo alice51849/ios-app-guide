@@ -1,12 +1,12 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-20",
-  "content_digest": "3ea4eee68a0410c4ce83807695befdb4b3cd34b6ae3657c450510736e8dc97aa",
+  "date_modified": "2026-09-22",
+  "content_digest": "76c7923b566eb05c1bacf6b6aeba1529def63fbd23d269810e2e538982bc8054",
   "locale": "pa-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 48,
+  "record_count": 49,
   "apps": [
     {
       "key": "notesstudio100",
@@ -457,6 +457,48 @@
         "currency": "INR",
         "formatted_price": "ਮੁਫ਼ਤ",
         "storefront_url": "https://apps.apple.com/in/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ",
+      "summary": "dB Halo ਪੂਰੀ ਤਰ੍ਹਾਂ ਡਿਵਾਈਸ ਉੱਤੇ ਚੱਲਣ ਵਾਲਾ ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ ਅਤੇ ਆਡੀਓ ਵਿਸ਼ਲੇਸ਼ਣ ਟੂਲ ਹੈ। ਵੱਡਾ Halo ਸੁਰੱਖਿਆ ਘੇਰਾ ਲਾਈਵ dB ਦਿਖਾਉਂਦਾ ਹੈ, ਤਾਂ ਜੋ ਮੌਜੂਦਾ, ਘੱਟੋ-ਘੱਟ, ਔਸਤ, ਵੱਧ ਤੋਂ ਵੱਧ ਅਤੇ ਸਿਖਰ ਪੱਧਰ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਸਮਝ ਆ ਜਾਣ।",
+      "category": "utility",
+      "search_terms": [
+        "decibel",
+        "meter",
+        "spectrogram",
+        "noise",
+        "sound",
+        "LAeq",
+        "ਸਪੈਕਟ੍ਰਮ",
+        "ਆਵਿਰਤੀ",
+        "ਰਿਕਾਰਡਰ",
+        "ਨੀਂਦ",
+        "ਕੈਲੀਬ੍ਰੇਸ਼ਨ",
+        "analyzer",
+        "snoring"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ",
+        "storefront_url": "https://apps.apple.com/in/app/id6806826699"
       }
     },
     {

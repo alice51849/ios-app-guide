@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 48 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 49 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | 无需账户的最佳经期追踪应用 iPhone | 在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步。Cyca 只做这一件事，其余一概不加。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-period-tracker-app-no-account-required-iphone.html) | [在 App Store 获取 Cyca →](https://apps.apple.com/cn/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | 适用于配备 Apple Watch 旅行者的最佳实用语言短语应用 | 旅行前，针对真实场景的完整短语比需要在压力下拼凑的零散词汇更实用。DailyMate 就是从这个问题开始做的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [在 App Store 获取 DailyMate →](https://apps.apple.com/cn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite：开口练习** | DailyMate Lite：开口练习 — 50 种语言场景短句 \| iOS App | 想开口时，不必先在脑中拼凑单词。DailyMate Lite 将旅行、工作、餐饮、健康等生活场景整理成简短提示与自然回复，让你用完整的一问一答练习 50 种语言。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/dailymatelite.html) | [在 App Store 获取 DailyMate Lite：开口练习](https://apps.apple.com/cn/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo：声级计** | dB Halo：声级计 — 噪声检测、频谱与睡眠日志 \| iOS App | 周围声音有多响？主要能量集中在哪些频段？按所选标准估算，安全时长还剩多久？dB Halo 将实时声级、专业声学分析、噪声剂量与睡眠声音记录集中在一处，所有处理均在设备端完成。支持 iPhone、iPad 和 Apple Watch。 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html) | [在 App Store 获取 dB Halo：声级计](https://apps.apple.com/cn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 无需订阅的最佳旅行预算追踪应用 iPhone | 旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立。这个缺口，正是 G+Money 想补上的。 | 付费下载 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite：旅行记账·汇率换算** | G+Money Lite：旅行记账·汇率换算 — 旅行记账・预算・汇率 \| iOS App | G+Money Lite — 聪明的旅行汇率记账 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/gmoneylite.html) | [在 App Store 获取 G+Money Lite：旅行记账·汇率换算](https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite：买前先算工时** | HoursTag Lite：买前先算工时 — 看见每样东西的真实代价 \| iOS App | HoursTag Lite - 看见每样东西的真实代价 | 免费开始使用 · 一次购买解锁 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite：买前先算工时](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,400 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,450 条记录。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,400 条记录。
 
 [首页](https://open.cait518.cc/ios-app-guide/zh-Hans/index.html) · [开放数据](https://open.cait518.cc/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-09-19
+更新日期: 2026-09-22
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

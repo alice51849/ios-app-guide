@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 48 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 49 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | แอปติดตามรอบเดือนที่ดีที่สุด ไม่ต้องมีบัญชีสำหรับ iPhone | ในหมวดหมู่ที่ข้อมูลมีความละเอียดอ่อนสูง แอปติดตามรอบเดือนที่เหมาะสมเก็บทุกอย่าง — ประจำเดือน อารมณ์ อาการ อุณหภูมิ ความสัมพันธ์ — ไว้ในอุปกรณ์ของคุณ ไม่มีบัญชีและไม่มีการซิงค์คลาวด์ Cyca ทำแค่เรื่องนี้เรื่องเดียว ที่เหลือไม่ยุ่ง | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-period-tracker-app-no-account-required-iphone.html) | [รับ Cyca ใน App Store →](https://apps.apple.com/th/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | แอปวลีภาษาที่ใช้งานได้จริงดีที่สุดสำหรับนักเดินทางที่ใช้แอปเปิลวอทช์ | ก่อนเดินทาง วลีสมบูรณ์สำหรับสถานการณ์จริงมีประโยชน์กว่าคำศัพท์แยกที่คุณต้องประกอบเองภายใต้ความกดดัน DailyMate เริ่มต้นจากปัญหานี้พอดี | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [ดาวน์โหลด DailyMate จาก App Store →](https://apps.apple.com/th/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: พร้อมคุย** | DailyMate Lite: พร้อมคุย — 50 ภาษา ใช้ได้ในชีวิตจริง \| iOS App | พร้อมพูดเมื่อเจอสถานการณ์จริง DailyMate Lite เปลี่ยนเหตุการณ์ในชีวิตประจำวันให้เป็นแบบฝึกสั้น ๆ ที่จับคู่ประโยคเริ่มบทสนทนากับคำตอบที่เป็นธรรมชาติใน 50 | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/dailymatelite.html) | [ดาวน์โหลด DailyMate Lite: พร้อมคุย บน App Store](https://apps.apple.com/th/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: เครื่องวัดระดับเสียง** | dB Halo: เครื่องวัดระดับเสียง — สเปกตรัมและปริมาณเสียงรบกวน \| iOS App | รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/dbhalo.html) | [ดาวน์โหลด dB Halo: เครื่องวัดระดับเสียง บน App Store](https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | แอปติดตามงบประมาณการเดินทางที่ดีที่สุด ไม่มีการสมัครสมาชิกสำหรับ iPhone | เมื่อเดินทาง คุณต้องการแอปติดตามงบประมาณที่ใช้งานออฟไลน์ในประเทศที่ไม่มีข้อมูล รองรับหลายสกุลเงิน และไม่ต้องมีบัญชี จัดระเบียบตามทริปเพื่อแยกวันหยุดแต่ละทริป ช่องว่างตรงนี้แหละที่ G+Money อยากอุด | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [ดาวน์โหลด G+Money Lite บน App Store →](https://apps.apple.com/th/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [ดาวน์โหลด HoursTag บน App Store →](https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,400 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,450 รายการเหมือนกัน
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://open.cait518.cc/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://open.cait518.cc/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-09-19
+อัปเดตเมื่อ: 2026-09-22
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

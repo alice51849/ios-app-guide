@@ -4,7 +4,7 @@
 
 ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.
 
-48 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
+49 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
 
 **స్థానికీకరణ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · **te-IN** · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -99,6 +99,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Cyca** | అకౌంట్ అవసరం లేని ఉత్తమ పీరియడ్ ట్రాకర్ యాప్ iPhone కోసం | డేటా సున్నితత్వం ప్రధానమైన విభాగంలో, సరైన పీరియడ్ ట్రాకర్ అన్నీ — ఫ్లో, మూడ్, లక్షణాలు, ఉష్ణోగ్రత, సన్నిహిత సంబంధాలు — మీ డివైస్‌లో, అకౌంట్ లేకుండా, క్లౌడ్ సింక్ లేకుండా ఉంచుతుంది. Cyca ఈ ఒక్క పనే చేస్తుంది, మిగతావి వదిలేస్తుంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-period-tracker-app-no-account-required-iphone.html) | [App Store నుండి Cyca పొందండి →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | యాపిల్ వాచ్‌తో ప్రయాణికుల కోసం ఉత్తమ ప్రాక్టికల్ భాషా వాక్యాల యాప్ | ప్రయాణానికి ముందు, ఒత్తిడిలో కూడగట్టాల్సిన వేరే పదజాలం కంటే వాస్తవ పరిస్థితుల కోసం పూర్తి వాక్యాలు ఎక్కువ ఉపయోగకరంగా ఉంటాయి. DailyMate మొదలైంది సరిగ్గా ఈ ఇబ్బంది నుంచే. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Storeలో డైలీమేట్ పొందండి →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite** | DailyMate Lite — రోజువారీ సంభాషణ అభ్యాసం \| iOS App | అవసరమైన క్షణంలో సరైన మాట చెప్పండి. DailyMate Lite రోజువారీ పరిస్థితులను 50 భాషల్లో చిన్న సంభాషణ సంకేతం–జవాబు అభ్యాసంగా మారుస్తుంది. ఏ భాషనైనా ఎంచుకుని | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/dailymatelite.html) | [App Store నుంచి DailyMate Lite పొందండి](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
+| **dB Halo: ధ్వని స్థాయి మీటర్** | dB Halo: ధ్వని స్థాయి మీటర్ — వర్ణపటం, శబ్ద మోతాదు \| iOS App | మీ చుట్టూ ఉన్న శబ్దం ఎంత గట్టిగా ఉంది, ఆ స్థాయిలో ఎంతసేపు ఉండటం సురక్షితమో వెంటనే తెలుసుకోండి. dB Haloతో మీ iPhone స్పష్టమైన ధ్వని స్థాయి కొలిచే పరికరంగా | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/dbhalo.html) | [App Store నుంచి dB Halo: ధ్వని స్థాయి మీటర్ పొందండి](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | అకౌంట్ లేకుండా ఉత్తమ ట్రావెల్ బడ్జెట్ ట్రాకర్ యాప్ iPhone కోసం | ప్రయాణంలో మీరు డేటా లేని దేశంలో ఆఫ్‌లైన్ పనిచేసే, బహుళ కరెన్సీలను నిర్వహించే, అకౌంట్ అవసరం లేని బడ్జెట్ ట్రాకర్ అవసరం — ప్రతి సెలవు వేరుగా ఉండేలా ప్రయాణం వారీగా ఏర్పాటు. ఈ ఖాళీనే G+Money పూరించాలనుకుంటుంది. | చెల్లింపు డౌన్లోడ్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store నుండి G+Money పొందండి →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: ప్రయాణ ఖర్చులు** | G+Money Lite: ప్రయాణ ఖర్చులు — ప్రయాణ ఖర్చులు, కరెన్సీ \| iOS App | G+Money Lite — స్మార్ట్ ట్రావెల్ కరెన్సీ & ఖర్చుల ట్రాకర్ | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/gmoneylite.html) | [App Store నుంచి G+Money Lite: ప్రయాణ ఖర్చులు పొందండి](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ధర గంటల్లో** | HoursTag Lite: ధర గంటల్లో — వస్తువుల నిజమైన ధరను చూడండి \| iOS App | HoursTag Lite - వస్తువుల నిజమైన ధరను చూడండి | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://open.cait518.cc/ios-app-guide/te-IN/hourstaglite.html) | [App Store నుంచి HoursTag Lite: ధర గంటల్లో పొందండి](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -140,7 +141,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## పూర్తి డేటాసెట్‌ను డౌన్లోడ్ చేసుకోండి
 
-JSON, JSONL మరియు CSV లో అదే 2,400 రికార్డులు ఉన్నాయి.
+JSON, JSONL మరియు CSV లో అదే 2,450 రికార్డులు ఉన్నాయి.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -148,6 +149,6 @@ JSON, JSONL మరియు CSV లో అదే 2,400 రికార్డు�
 
 [హోమ్](https://open.cait518.cc/ios-app-guide/te-IN/index.html) · [ఓపెన్ డేటా](https://open.cait518.cc/ios-app-guide/te-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [లైసెన్స్](https://creativecommons.org/licenses/by/4.0/)
 
-నవీకరించబడింది: 2026-09-19
+నవీకరించబడింది: 2026-09-22
 
 CC BY 4.0 అసలు క్యాటలాగ్ సంకలనం పై వర్తిస్తుంది; యాప్ పేర్లు మరియు App Store గుర్తులు వాటి యజమానులకు చెందుతాయి.

@@ -2,7 +2,7 @@
 title: "LED Moving Text — اسکرین پر چلتی روشن تحریر | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ur-PK/index.html"
-modified: "2026-09-21"
+modified: "2026-09-22"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ko/index.html"
-modified: "2026-09-21"
+modified: "2026-09-22"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

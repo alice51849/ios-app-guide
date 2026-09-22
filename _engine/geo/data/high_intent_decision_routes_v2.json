@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 48,
-    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
-    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
+    "expected_app_count": 49,
+    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
+    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -376,7 +376,11 @@
             "輸入紀錄前，先閱讀目前的隱私政策與 App 隱私標示。",
             "確認目前免費與一次性解鎖的界線；不要把一般追蹤工具當成診斷或緊急照護。"
           ],
-          "evidence_refs": ["summary.zh-Hant", "fact.purchase_model", "fact.one_time_option"]
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
         }
       },
       "conversion_contract": "cyca"
@@ -1257,7 +1261,11 @@
             "Beginnen Sie mit einem konkreten Haushaltsereignis und prüfen Sie den Verlauf.",
             "Prüfen Sie die aktuellen Gratisgrenzen, den einmaligen Kauf und die Mitteilungseinstellungen."
           ],
-          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.0"]
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
         }
       },
       "conversion_contract": "mochidonestamp"
@@ -2050,7 +2058,11 @@
       "route_slug": "hold-up-a-message-people-can-read-across-a-crowd",
       "intent_type": "workflow",
       "primary": true,
-      "keyword_refs": [0, 2, 4],
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
       "locales": {
         "en-US": {
           "language": "en",
@@ -2068,6 +2080,44 @@
           "verify_before_install": [
             "Check the current listing for which controls are free and which need the one-time unlock.",
             "Try one real message at the distance it actually has to be read from before the event."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.1"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "dbhalo",
+      "route_slug": "measure-room-noise-without-sending-audio-off-device",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US workshop owners, gym-goers and concertgoers checking whether a loud space is still safe to stay in often want the reading and the exposure estimate to stay on the phone, not travel to a server they cannot see.",
+          "query": "How do I check if a room is too loud without sending audio to the cloud?",
+          "buyer_problem": "A phone that only shows one number cannot say whether staying in a loud room for another hour is still within a recognized safety guideline, and many meter apps require an account or upload audio to work at all. The decision is whether a local, on-device reading with a NIOSH or OSHA based dose estimate is enough, or whether a certified handheld meter is required instead.",
+          "decision_rule": "Choose a local dB reading with a NIOSH or OSHA based Noise Dose estimate when the goal is everyday awareness of how loud a space is and how long it stays safer to remain in it. The live meter, spectrum views and sleep journal are free to try, and the full toolkit unlocks with one one-time purchase, not a subscription.",
+          "workflow_checks": [
+            "Does the live reading update instantly without creating an account first?",
+            "Can the Noise Dose estimate be checked against a NIOSH or OSHA basis before trusting it?",
+            "Does a session or sleep log stay on the device instead of uploading raw audio automatically?"
+          ],
+          "alternative_lens": "A certified handheld sound level meter is still required for occupational compliance reporting or legal documentation. A hearing-protection fit test from an audiologist is better when the question is about an individual's hearing health rather than the space itself.",
+          "verify_before_install": [
+            "Check the current listing for which views and logs are free and which need the one-time unlock.",
+            "Compare a live reading against a known reference source before relying on it for a safety decision."
           ],
           "evidence_refs": [
             "summary.en",

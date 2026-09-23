@@ -398,6 +398,24 @@ CURATED_FALLBACK = {
             ["led banner - big text maker", 0],
         ],
     },
+    "dbhalo": {
+        "key": "dbhalo",
+        "gap_queries": [
+            "decibel meter app for iphone that keeps all data on the device",
+            "sound level meter with fft spectrum rta and spectrogram on iphone",
+            "noise dose app with niosh or osha criteria and remaining time",
+            "sound meter app with a one time unlock instead of a subscription",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "decibel meter" and "sound meter" on 2026-09-23; rank 0 means the
+        # position was not measured, exactly as for the other curated fallbacks.
+        "top_competitors": [
+            ["decibel x: db sound level meter", 0],
+            ["niosh sound level meter", 0],
+            ["sound meter (decibel)", 0],
+            ["decibel meter sound detector", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

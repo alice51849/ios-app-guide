@@ -22164,6 +22164,10 @@ class GeneratorTests(unittest.TestCase):
             # (App Store listing free, EntitlementStore ships a single
             # .nonConsumable product, checked 2026-09-19).
             "ledmovingtext",
+            # Free download with limited free uses, one non-consumable
+            # com.alice51849.dBHalo.lifetime unlock and no subscription (App
+            # Store listing free, repository README/AGENTS, checked 2026-09-23).
+            "dbhalo",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

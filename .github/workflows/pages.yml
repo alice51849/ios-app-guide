@@ -226,6 +226,18 @@ jobs:
             -s _engine/geo/tests -p test_result_image_index.py -q
           python3 _engine/geo/result_image_index.py --pages .
           python3 _engine/geo/result_image_index.py --pages . --check
+      - name: Re-render public email protection after deployment preparation
+        # The high-intent route/hero/result-image steps above can add or touch
+        # HTML after the earlier render step, so the manifest it wrote can be
+        # stale by the time we reach the strict, non-rendering check below.
+        # Render again here (same command as the earlier step) so the final
+        # check always compares against the fully-materialized tree instead
+        # of failing on drift introduced within this same run.
+        env:
+          TZ: UTC
+        run: |
+          python3 _engine/geo/public_email.py --pages-dir . --render \
+            --manifest data/public-email-output-manifest.json
       - name: Require all production HTML email protection
         run: |
           python3 _engine/geo/public_email.py --pages-dir . \

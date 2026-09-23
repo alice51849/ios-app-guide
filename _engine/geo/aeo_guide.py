@@ -69,6 +69,53 @@ SCHEMA_CAT = {"photo-utility": "MultimediaApplication", "productivity": "Busines
               "finance": "FinanceApplication", "health": "HealthApplication",
               "education": "EducationalApplication", "kids": "EducationalApplication"}
 
+# 2026-09-23:JSON-LD 加真實 price/rating(AEO 優化 —— AI 助理引用時更容易判斷「這是
+# 可信的實際商品」)。資料只認 ~/.growth-private/app_store_facts_cache.json(來源
+# itunes.apple.com/lookup 的真實回應,見該檔 "source" 欄位),絕不捏造。快取不存在、
+# 該 app 沒有條目、或資料超過 60 天沒更新,一律不寫這兩個欄位(寧可缺,不可假)。
+FACTS_CACHE_PATH = os.path.expanduser("~/.growth-private/app_store_facts_cache.json")
+FACTS_MAX_AGE_DAYS = 60
+
+
+def _load_facts_cache():
+    try:
+        with open(FACTS_CACHE_PATH, encoding="utf-8") as fh:
+            return json.load(fh).get("entries", {})
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+_FACTS = _load_facts_cache()
+
+
+def real_offer_and_rating(key):
+    """回傳 (offers, aggregateRating) — 皆為 dict 或 None。只用實測快取,絕不捏造。"""
+    app_id = APPSTORE.get(key, "")
+    entry = _FACTS.get(f"{app_id}|US") if app_id else None
+    if not entry or not entry.get("live"):
+        return None, None
+    retrieved = entry.get("retrieved_at", "")
+    try:
+        age_days = (date.today() - date.fromisoformat(retrieved[:10])).days
+    except ValueError:
+        age_days = FACTS_MAX_AGE_DAYS + 1
+    if age_days > FACTS_MAX_AGE_DAYS:
+        return None, None
+    offers = None
+    price = entry.get("app_binary_price")
+    currency = entry.get("currency")
+    if price is not None and currency:
+        offers = {"@type": "Offer", "price": price, "priceCurrency": currency,
+                  "availability": "https://schema.org/InStock"}
+    rating = None
+    rv, rc = entry.get("rating_value"), entry.get("rating_count")
+    # 門檻 rc>=5:n=1 的「真實」評分在統計上是雜訊,可能是單一 1 星或 5 星,
+    # 發布出去對 AI 助理判讀是誤導而非幫助(這不是造假,是不發布沒有代表性的樣本)。
+    if isinstance(rv, (int, float)) and isinstance(rc, int) and rc >= 5:
+        rating = {"@type": "AggregateRating", "ratingValue": round(rv, 2),
+                  "ratingCount": rc, "bestRating": 5, "worstRating": 1}
+    return offers, rating
+
 
 def en_desc(key):
     # 新 app 不必逐一登記:預設用 <key>_full.json,KEY2DATA 只保留檔名不同的例外
@@ -190,6 +237,11 @@ def render(key, c):
                   "name": a["name"], "operatingSystem": "iOS", "applicationCategory": scat,
                   "url": url, "installUrl": url, "description": meta,
                   "featureList": a.get("cta_bullets", []) + a.get("keywords", [])[:5]}
+    offers, rating = real_offer_and_rating(key)
+    if offers:
+        app_schema["offers"] = offers
+    if rating:
+        app_schema["aggregateRating"] = rating
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in faqs]}

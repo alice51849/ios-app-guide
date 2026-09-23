@@ -28,6 +28,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.request
 from collections import Counter
 from datetime import date
@@ -54,6 +55,15 @@ SYS = (
     "names, best first. Only list apps you genuinely believe exist on the iOS App Store. "
     "Never invent names. If unsure, list fewer apps."
 )
+
+
+class OpenAIBillingInactive(RuntimeError):
+    """OpenAI 帳號回報 billing_not_active(429)。
+
+    鐵則(見記憶檔 local-flux-imagegen-pipeline.md):遇到 429/額度不足絕不
+    請 Caitlyn 儲值,只能降量或停。呼叫端看到這個例外要直接乾淨停手,
+    不可重試(重試只會用一樣的方式再失敗,純浪費時間)。
+    """
 
 
 def _openai_key():
@@ -137,6 +147,14 @@ def openai_json(system, user, max_tokens=600, retries=3):
             with urllib.request.urlopen(req, timeout=30) as r:
                 msg = json.loads(r.read().decode())["choices"][0]["message"]["content"]
             return json.loads(msg)
+        except urllib.error.HTTPError as e:
+            payload = e.read().decode("utf-8", errors="replace")
+            if e.code == 429 and "billing_not_active" in payload:
+                raise OpenAIBillingInactive(
+                    "OpenAI 帳號 billing_not_active(429)— 依鐵則不重試、不儲值,直接停手"
+                ) from e
+            last = e
+            time.sleep(1.5 * (attempt + 1))
         except Exception as e:  # noqa: BLE001
             last = e
             time.sleep(1.5 * (attempt + 1))

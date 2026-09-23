@@ -1,15 +1,13 @@
 {
-  "abstained_pairs": 2340,
-  "app_count": 48,
-  "candidate_app_locale_pairs": 2400,
-  "creative_count": 48,
+  "abstained_pairs": 2389,
+  "app_count": 49,
+  "candidate_app_locale_pairs": 2450,
+  "creative_count": 49,
   "current_inventory": {
     "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
     "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
-    "missing_route_app_keys": [
-      "dbhalo"
-    ],
-    "missing_route_app_keys_sha256": "77d874edddeb315b26e8f9da68ec2011ee83ab21e5aa5e9bf313939631cd306e",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 49
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
@@ -26,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "dc9d9801a78f7780939732dc8fd573908765442b5a14bf79e1bcaae506d71f5f",
+      "generated_sha256": "ee88d8484210d89886126aa38acd943449b17d0f56ef14661bc8f237045006cd",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "7a869555089eed1a13ff86f4905b7d938376b1f67f82618c8392b381706317bd",
+      "generated_sha256": "2fee9d6d72cddaec688f561c3965436496001c1cebbac59e1c5f5e854498f89e",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -84,6 +82,11 @@
       "generated_sha256": "3f58d7d5e2cdbf9e7a806b12bd0f93bb29b6540fa5871c146504b891bd97e9e4",
       "kind": "route_html",
       "relative_path": "en-US/decide/dailymatelite/free-situational-phrasebook-before-trip.html"
+    },
+    {
+      "generated_sha256": "c11992631a5daa8a89645f60406ba290935937ae5e57d21a605e454f2a62afa9",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
     },
     {
       "generated_sha256": "5ed2d2b48723db99715c50c7309b1a85d88b91cc66abf4d60610d254bf61d1ed",
@@ -296,7 +299,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "6a8b1e0fbbdf929365e012f671911282069ee5458560fb79f102d6e559331eba",
+      "generated_sha256": "aa9dd42bff680df9238900aa505c4f428bfda84d5ff2181c7464314a94f196fe",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -343,17 +346,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
-    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
+    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
+    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 48,
+    "public_apps": 49,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "66106439086fe26f255e6978679ce64d3e027cd5cc0e32fbf48536944348fde7",
+  "manifest_digest": "6b39b3fe6a94d79d155181474f9e2bcd26beb61e4ec0960c100b859479b4f61f",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "e0f6eaa208548b9e47112629ab8f2f057ed262262bb1d015ab3420280ffb11e4",
-  "release_state": "degraded_missing_route_copy",
-  "route_count": 60,
+  "release_contract_digest": "dcf150e546fdd32139fe25ff4201d98098a2c09944e097427f74758b950d39e8",
+  "release_state": "exact",
+  "route_count": 61,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -524,6 +527,23 @@
       "route_id": "en-US:dailymatelite:free-situational-phrasebook-before-trip",
       "route_slug": "free-situational-phrasebook-before-trip",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dailymatelite/free-situational-phrasebook-before-trip.html"
+    },
+    {
+      "app_key": "dbhalo",
+      "app_store_id": "6806826699",
+      "app_store_url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "campaign_token": "geo_pick",
+      "content_type": "privacy_pay_once",
+      "creative_digest": "4ad2c91150a6a98a0633c4f19751707731134cbc92d2aff539545b8614b840ac",
+      "creative_id": "dbhalo:measure-room-noise-without-sending-audio-off-device:privacy_pay_once",
+      "intent_type": "privacy_pay_once",
+      "locale": "en-US",
+      "output_sha256": "c11992631a5daa8a89645f60406ba290935937ae5e57d21a605e454f2a62afa9",
+      "record_digest": "f76bc09f5dedf770f8d40e166d1bccbdb337b86df6b1aee79c40a735d16f5313",
+      "relative_path": "en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html",
+      "route_id": "en-US:dbhalo:measure-room-noise-without-sending-audio-off-device",
+      "route_slug": "measure-room-noise-without-sending-audio-off-device",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
     },
     {
       "app_key": "gmoney",
@@ -1378,5 +1398,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "d5409401106ce97b278b59238eed2728c0abb407c666a583dd158eaf4956d07e"
+  "source_contract_digest": "0f279c2765a5644c96bbe5dfac72f4ec4bd17b7931f3887909747970e8e1b9c7"
 }

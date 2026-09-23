@@ -2,7 +2,7 @@
 title: "Unblurry Pro: ঝাপসা দূর — ঝাপসা ছবি HD পরিষ্কার | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/bn-BD/index.html"
-modified: "2026-09-22"
+modified: "2026-09-23"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

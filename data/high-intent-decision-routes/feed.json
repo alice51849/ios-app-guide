@@ -155,6 +155,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "dbhalo",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "f76bc09f5dedf770f8d40e166d1bccbdb337b86df6b1aee79c40a735d16f5313"
+      },
+      "id": "en-US:dbhalo:measure-room-noise-without-sending-audio-off-device",
+      "language": "en",
+      "summary": "A phone that only shows one number cannot say whether staying in a loud room for another hour is still within a recognized safety guideline, and many meter apps require an account or upload audio to work at all. The decision is whether a local, on-device reading with a NIOSH or OSHA based dose estimate is enough, or whether a certified handheld meter is required instead.",
+      "title": "How do I check if a room is too loud without sending audio to the cloud?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "gmoney",
         "campaign_token": "geo_learn",
         "intent_type": "workflow",

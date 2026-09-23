@@ -75,6 +75,14 @@
       "record_count": 1,
       "route_slug": "free-situational-phrasebook-before-trip"
     },
+    "dbhalo": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "measure-room-noise-without-sending-audio-off-device"
+    },
     "gmoney": {
       "intent_type": "workflow",
       "native_locales": [
@@ -398,293 +406,289 @@
     }
   },
   "coverage": {
-    "abstained_pairs": 2340,
+    "abstained_pairs": 2389,
     "abstention_reasons": {
-      "missing_curated_native_copy": 2340
+      "missing_curated_native_copy": 2389
     },
-    "app_coverage_percent": 97.96,
-    "candidate_app_locale_pairs": 2400,
+    "app_coverage_percent": 100.0,
+    "candidate_app_locale_pairs": 2450,
     "current_public_apps": 49,
     "fallback_records": 0,
     "intent_type_counts": {
       "alternative": 12,
-      "privacy_pay_once": 7,
+      "privacy_pay_once": 8,
       "problem_aware": 14,
       "workflow": 15
     },
-    "mapped_apps": 48,
-    "missing_route_app_keys": [
-      "dbhalo"
-    ],
-    "missing_route_apps": 1,
-    "native_locale_pair_coverage_percent": 2.5,
-    "native_locale_records": 60,
+    "mapped_apps": 49,
+    "missing_route_app_keys": [],
+    "missing_route_apps": 0,
+    "native_locale_pair_coverage_percent": 2.49,
+    "native_locale_records": 61,
     "native_locales_with_records": 5,
     "official_locales_considered": 50,
-    "primary_routes": 48
+    "primary_routes": 49
   },
   "current_inventory": {
     "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
     "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
-    "missing_route_app_keys": [
-      "dbhalo"
-    ],
-    "missing_route_app_keys_sha256": "77d874edddeb315b26e8f9da68ec2011ee83ab21e5aa5e9bf313939631cd306e",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 49
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
-    "app_keys_sha256": "f9f60214ebed4696ec8e0648f358d3852088687b1d4d450583709092c6cba0dc",
-    "copy_sha256": "5a8c80f161e7dd2e2fe0d408d7e6c56d51951399a83c445725bb9ca8a7fd2631",
+    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
+    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 48,
+    "public_apps": 49,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
   "locales": {
     "ar-SA": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "bn-BD": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ca": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "cs": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "da": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "de-DE": {
-      "abstained": 47,
+      "abstained": 48,
       "emitted": 1
     },
     "el": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "en-AU": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "en-CA": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "en-GB": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "en-US": {
       "abstained": 0,
-      "emitted": 48
+      "emitted": 49
     },
     "es-ES": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "es-MX": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "fi": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "fr-CA": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "fr-FR": {
-      "abstained": 47,
+      "abstained": 48,
       "emitted": 1
     },
     "gu-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "he": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "hi": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "hr": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "hu": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "id": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "it": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ja": {
-      "abstained": 46,
+      "abstained": 47,
       "emitted": 2
     },
     "kn-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ko": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ml-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "mr-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ms": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "nl-NL": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "no": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "or-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "pa-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "pl": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "pt-BR": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "pt-PT": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ro": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ru": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "sk": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "sl-SI": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "sv": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ta-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "te-IN": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "th": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "tr": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "uk": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "ur-PK": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "vi": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "zh-Hans": {
-      "abstained": 48,
+      "abstained": 49,
       "emitted": 0
     },
     "zh-Hant": {
-      "abstained": 40,
+      "abstained": 41,
       "emitted": 8
     }
   },
   "publication": {
-    "abstained_pairs": 2340,
-    "deployment_eligible": false,
-    "expected_route_pages": 60,
+    "abstained_pairs": 2389,
+    "deployment_eligible": true,
+    "expected_route_pages": 61,
     "fallback_records": 0,
-    "feed_items": 60,
+    "feed_items": 61,
     "managed_owner": "high_intent_decision_routes",
-    "sitemap_urls": 60,
-    "state": "degraded_missing_route_copy"
+    "sitemap_urls": 61,
+    "state": "exact"
   },
   "quality": {
-    "all_gates_passed": false,
+    "all_gates_passed": true,
     "gates": {
       "complete_app_store_cta": {
-        "detail": "60/60 URLs use ordered pt/ct/mt=8",
+        "detail": "61/61 URLs use ordered pt/ct/mt=8",
         "passed": true
       },
       "cultural_route": {
-        "detail": "60/60 emitted records",
+        "detail": "61/61 emitted records",
         "passed": true
       },
       "current_inventory_coverage": {
-        "detail": "48/49 current public apps mapped; missing route copy=['dbhalo']",
-        "passed": false
+        "detail": "49/49 current public apps mapped; missing route copy=[]",
+        "passed": true
       },
       "exact_release_cardinality": {
-        "detail": "60 routes; 48 apps; 2400 pairs; 2340 abstentions",
+        "detail": "61 routes; 49 apps; 2450 pairs; 2389 abstentions",
         "passed": true
       },
       "intent_diversity": {
-        "detail": "{\"alternative\": 12, \"privacy_pay_once\": 7, \"problem_aware\": 14, \"workflow\": 15}",
+        "detail": "{\"alternative\": 12, \"privacy_pay_once\": 8, \"problem_aware\": 14, \"workflow\": 15}",
         "passed": true
       },
       "inventory_bound_claims": {
-        "detail": "236 evidence references resolved from inventory",
+        "detail": "241 evidence references resolved from inventory",
         "passed": true
       },
       "native_copy_or_abstain": {
-        "detail": "60 emitted; 2340 explicit abstentions; 0 fallbacks",
+        "detail": "61 emitted; 2389 explicit abstentions; 0 fallbacks",
         "passed": true
       },
       "non_template": {
-        "detail": "60/60 unique signatures; max Jaccard=0.263",
+        "detail": "61/61 unique signatures; max Jaccard=0.263",
         "passed": true
       },
       "non_thin": {
@@ -692,15 +696,15 @@
         "passed": true
       },
       "primary_intent_coverage": {
-        "detail": "48/49 apps have one primary route",
+        "detail": "49/49 apps have one primary route",
         "passed": true
       },
       "truthful_publisher_disclosure": {
-        "detail": "60/60 records disclose developer authorship",
+        "detail": "61/61 records disclose developer authorship",
         "passed": true
       },
       "versioned_app_coverage": {
-        "detail": "48/48 contracted apps mapped",
+        "detail": "49/49 contracted apps mapped",
         "passed": true
       }
     },
@@ -712,7 +716,7 @@
     ],
     "minimum_content_units": 200
   },
-  "release_contract_digest": "e0f6eaa208548b9e47112629ab8f2f057ed262262bb1d015ab3420280ffb11e4",
-  "release_state": "degraded_missing_route_copy",
+  "release_contract_digest": "dcf150e546fdd32139fe25ff4201d98098a2c09944e097427f74758b950d39e8",
+  "release_state": "exact",
   "schema_version": 1
 }

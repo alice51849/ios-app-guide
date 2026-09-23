@@ -2,7 +2,7 @@
 title: "LED Moving Text — 手机立刻变成应援灯牌 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/zh-Hans/index.html"
-modified: "2026-09-22"
+modified: "2026-09-23"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

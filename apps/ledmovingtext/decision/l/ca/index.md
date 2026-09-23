@@ -2,7 +2,7 @@
 title: "LED Moving Text — Rètol lluminós en moviment | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ca/index.html"
-modified: "2026-09-22"
+modified: "2026-09-23"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

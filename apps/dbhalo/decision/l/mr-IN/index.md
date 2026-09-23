@@ -2,7 +2,7 @@
 title: "dB Halo: ध्वनी पातळी मापक — वर्णपट आणि आवाजाचा डोस | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/mr-IN/index.html"
-modified: "2026-09-22"
+modified: "2026-09-23"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

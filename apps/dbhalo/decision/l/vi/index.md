@@ -2,7 +2,7 @@
 title: "dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/vi/index.html"
-modified: "2026-09-23"
+modified: "2026-09-24"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

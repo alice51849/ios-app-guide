@@ -2,7 +2,7 @@
 title: "LED Moving Text — Letrero luminoso animado | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/es-ES/index.html"
-modified: "2026-09-23"
+modified: "2026-09-24"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

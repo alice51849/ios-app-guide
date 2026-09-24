@@ -2,7 +2,7 @@
 title: "Zipbox: แตกไฟล์ RAR ZIP 7z — เปิดไฟล์บีบอัด ไม่มีโฆษณา | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/th/index.html"
-modified: "2026-09-23"
+modified: "2026-09-24"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

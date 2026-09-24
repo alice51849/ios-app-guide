@@ -6,8 +6,8 @@
   "name": "Lumi Studio প্রকাশক অনুসন্ধান উদ্দেশ্য ক্যাটালগ",
   "description": "প্রতিটি অ্যাপ কার জন্য তৈরি, তারা কোন কাজ সম্পন্ন করতে চায়, এবং সরাসরি App Store পথের প্রথম পক্ষের ক্যাটালগ।",
   "inLanguage": "bn-BD",
-  "dateModified": "2026-09-23",
-  "numberOfItems": 49,
+  "dateModified": "2026-09-24",
+  "numberOfItems": 50,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -2413,6 +2413,66 @@
     {
       "@type": "ListItem",
       "position": 41,
+      "url": "https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html",
+      "item": {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "@id": "urn:apple:app:id6814035888",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "Apple App Store ID",
+          "value": "6814035888"
+        },
+        "name": "Stay Clock: ডেস্ক ঘড়ি",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "url": null,
+        "mainEntityOfPage": {
+          "@id": "https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html#webpage"
+        },
+        "market_availability": {
+          "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+          "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+          "evidence": {
+            "source_url": "https://support.apple.com/en-us/118205",
+            "observed_at": "2026-09-12",
+            "country": "BD",
+            "apple_media_services_markets": 174,
+            "country_listed": false,
+            "lookup_app_results": 0,
+            "lookup_control_results": 0,
+            "redirect_market": "US"
+          },
+          "value": "N/A",
+          "content_retained": true,
+          "publishable": false,
+          "facts_allowed": false,
+          "outbox_count": 0
+        }
+      },
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
       "item": {
         "@context": "https://schema.org",
@@ -2472,7 +2532,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbeelite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2532,7 +2592,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbee.html",
       "item": {
         "@context": "https://schema.org",
@@ -2592,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/unblurry.html",
       "item": {
         "@context": "https://schema.org",
@@ -2652,7 +2712,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaidlite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2712,7 +2772,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html",
       "item": {
         "@context": "https://schema.org",
@@ -2772,7 +2832,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmatelite.html",
       "item": {
         "@context": "https://schema.org",
@@ -2832,7 +2892,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmate.html",
       "item": {
         "@context": "https://schema.org",
@@ -2892,7 +2952,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://open.cait518.cc/ios-app-guide/bn-BD/zipbox.html",
       "item": {
         "@context": "https://schema.org",

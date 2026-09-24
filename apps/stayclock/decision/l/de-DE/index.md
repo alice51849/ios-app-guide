@@ -16,7 +16,6 @@ Stay Clock verwandelt dein iPhone oder iPad in eine dauerhaft leuchtende Tischuh
 - Mehr
 - Kostenloser Einstieg · einmalige Freischaltung
 - Keine Werbung
-- Apple Watch
 - App Store · Kostenlos
 
 [Stay Clock: Klapp-Tischuhr im App Store laden](https://apps.apple.com/de/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

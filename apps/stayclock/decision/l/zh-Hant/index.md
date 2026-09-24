@@ -16,7 +16,6 @@ Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也
 - 更多
 - 免費開始 · 一次性解鎖
 - 無廣告
-- Apple Watch
 - App Store · 免費
 
 [在 App Store 取得 Stay Clock:翻頁桌鐘](https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

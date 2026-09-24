@@ -16,7 +16,6 @@ Stay Clock zmienia iPhone'a lub iPada w zegar biurkowy widoczny bez przerwy, czy
 - Więcej
 - Darmowe na start · jednorazowe odblokowanie
 - Bez reklam
-- Apple Watch
 - App Store · Bezpłatnie
 
 [Pobierz Stay Clock: zegar z klapkami z App Store](https://apps.apple.com/pl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

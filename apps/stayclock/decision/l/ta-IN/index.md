@@ -16,7 +16,6 @@ Stay Clock உங்கள் iPhone அல்லது iPadஐ, அறையி
 - மேலும்
 - இலவசமாக தொடங்கவும்
 - விளம்பரங்கள் இல்லை
-- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் Stay Clock: மடக்கு கடிகாரம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

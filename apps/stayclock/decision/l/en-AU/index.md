@@ -16,7 +16,6 @@ Stay Clock turns your iPhone or iPad into an always-on desk clock you can read f
 - More
 - Free to start · one-time unlock
 - No ads
-- Apple Watch
 - App Store · Free
 
 [Get Stay Clock: Flip Desk Clock on the App Store](https://apps.apple.com/au/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

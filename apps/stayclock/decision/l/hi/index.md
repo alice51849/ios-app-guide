@@ -16,7 +16,6 @@ Stay Clock आपके iPhone या iPad को एक ऐसी हमेश�
 - और अधिक
 - मुफ़्त शुरुआत · एक बार अनलॉक
 - कोई विज्ञापन नहीं
-- Apple Watch
 - App Store · मुफ़्त
 
 [App Store पर Stay Clock: फ़्लिप डेस्क क्लॉक पाएँ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

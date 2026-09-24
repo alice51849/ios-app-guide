@@ -16,7 +16,6 @@ Stay Clock آپ کے آئی فون یا آئی پیڈ کو ایک ایسی ہم�
 - مزید
 - مفت آغاز
 - کوئی اشتہار نہیں
-- Apple Watch
 - App Store · مفت
 
 [App Store سے Stay Clock: ڈیسک گھڑی حاصل کریں](https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

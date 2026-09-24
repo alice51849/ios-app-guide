@@ -16,7 +16,6 @@ Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני
 - עוד
 - התחלה ללא תשלום
 - ללא פרסומות
-- Apple Watch
 - App Store · בחינם
 
 [הורידו את Stay Clock: שעון קלפים מה-App Store](https://apps.apple.com/il/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

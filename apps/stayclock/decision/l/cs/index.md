@@ -16,7 +16,6 @@ Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní 
 - Více
 - Zdarma na začátek
 - Bez reklam
-- Apple Watch
 - App Store · Zdarma
 
 [Stáhněte si Stay Clock: sklápěcí hodiny v App Storu](https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณใ�
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
 - ไม่มีโฆษณา
-- Apple Watch
 - App Store · ฟรี
 
 [ดาวน์โหลด Stay Clock: นาฬิกาตั้งโต๊ะพลิก บน App Store](https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

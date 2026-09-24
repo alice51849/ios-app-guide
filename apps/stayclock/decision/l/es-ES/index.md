@@ -16,7 +16,6 @@ Stay Clock convierte tu iPhone o iPad en un reloj de mesa siempre encendido que 
 - Más
 - Gratis para empezar · desbloqueo único
 - Sin anuncios
-- Apple Watch
 - App Store · Gratis
 
 [Consigue Stay Clock: reloj flip en el App Store](https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

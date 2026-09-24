@@ -16,7 +16,6 @@ Stay Clock spremeni vaš iPhone ali iPad v namizno uro, ki je vedno prižgana in
 - Več
 - Brezplačen začetek
 - Brez oglasov
-- Apple Watch
 - App Store · Brezplačno
 
 [Prenesite Stay Clock: prekucna ura iz trgovine App Store](https://apps.apple.com/si/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och
 - Mer
 - Gratis att börja · engångsupplåsning
 - Inga annonser
-- Apple Watch
 - App Store · Gratis
 
 [Hämta Stay Clock: Bordsklocka i App Store](https://apps.apple.com/se/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

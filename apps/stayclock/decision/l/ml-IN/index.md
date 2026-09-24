@@ -16,7 +16,6 @@ Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ, �
 - കൂടുതൽ
 - സൗജന്യമായി ആരംഭിക്കുക
 - വ്യാപനങ്ങൾ ഇല്ല
-- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് Stay Clock: മേശ ക്ലോക്ക് നേടൂ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

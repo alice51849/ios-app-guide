@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
   "dateModified": "2026-09-24",
-  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
-  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
+  "content_digest": "6138c73b7212857daae6187cb158fc9d63172dcee81d80dc2276600093782ceb",
+  "generation_digest": "b61aedb7af75f52cbf13c256e289d5ddd80e7e3e82643a3ab2889d2fd78b6bec",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2144,17 +2144,12 @@
       "privacy_labels": [
         "Fără reclame"
       ],
-      "device_surfaces": [
-        "apple_watch"
-      ],
-      "device_labels": [
-        "Apple Watch"
-      ],
+      "device_surfaces": [],
+      "device_labels": [],
       "badge_labels": [
         "Mai mult",
         "Început gratuit",
         "Fără reclame",
-        "Apple Watch",
         "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/stayclock.html",

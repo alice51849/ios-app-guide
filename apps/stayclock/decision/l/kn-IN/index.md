@@ -16,7 +16,6 @@ Stay Clock ನಿಮ್ಮ iPhone ಅಥವಾ iPad ಅನ್ನು ಕೋಣೆ
 - ಇನ್ನಷ್ಟು
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
-- Apple Watch
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ Stay Clock: ಡೆಸ್ಕ್ ಗಡಿಯಾರ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ Stay Clock તમારા iPhone કે iPadને એવી હંમેશા
 - વધુ
 - મફત શરૂઆત
 - કોઈ જાહેરાત નથી
-- Apple Watch
 - App Store · મફત
 
 [App Store પરથી Stay Clock: ડેસ્ક ઘડિયાળ મેળવો](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

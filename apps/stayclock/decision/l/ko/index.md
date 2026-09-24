@@ -16,7 +16,6 @@ Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
 - 광고 없음
-- Apple Watch
 - App Store · 무료
 
 [App Store에서 Stay Clock: 플립 탁상시계 받기](https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

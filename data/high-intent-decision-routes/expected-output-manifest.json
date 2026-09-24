@@ -1,15 +1,13 @@
 {
-  "abstained_pairs": 2389,
-  "app_count": 49,
-  "candidate_app_locale_pairs": 2450,
-  "creative_count": 49,
+  "abstained_pairs": 2438,
+  "app_count": 50,
+  "candidate_app_locale_pairs": 2500,
+  "creative_count": 50,
   "current_inventory": {
     "app_keys_sha256": "b12fe0f67492e1b359d1e7349b2e502ecb99a8be9f0e40be1bc1817fe0b9ced3",
-    "copy_sha256": "f1035b02ad5e981933fe2f866d933949956814596a7949269e384c5d0b2c3d31",
-    "missing_route_app_keys": [
-      "stayclock"
-    ],
-    "missing_route_app_keys_sha256": "8b7cd37d918e65f8d0f2afb391d707a44e51e4cb6781aa029544eb2c3c74844b",
+    "copy_sha256": "c9aab4b3df22e4e600237b064557d68cb42f71ee05ac56f2ae3748b18c4a1d5a",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 50
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
@@ -26,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "c1ecb1f52aef5d8c9468f166a4e58821d7d1a98748dd276a6f5b8fed9bc4943c",
+      "generated_sha256": "2cc8d5ea83bb85f54bdeaa3f35d300c222dbbf5dbb4a2d5f0595f86db3e0503b",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "2fee9d6d72cddaec688f561c3965436496001c1cebbac59e1c5f5e854498f89e",
+      "generated_sha256": "91d155c6032579e42b00c812e72530b110bef6ec9be9fce1a7d3804ba4020fa1",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -241,6 +239,11 @@
       "relative_path": "en-US/decide/sononote/speak-then-shape-usable-notes.html"
     },
     {
+      "generated_sha256": "8b738689372260bd21a1e398999c8391a86ac3dfcc8b72aae4cca2f64d0a5c9b",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
+    },
+    {
       "generated_sha256": "71fda9f634c6de2f67fe0d4f6a7ce91bd8c81f7dcd656180d49443404f913ded",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html"
@@ -301,7 +304,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "aa9dd42bff680df9238900aa505c4f428bfda84d5ff2181c7464314a94f196fe",
+      "generated_sha256": "ad319003422e01f144a86512f304e31e91d54cc9685403396b6ab6c1f76a811f",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -348,17 +351,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
-    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
+    "app_keys_sha256": "b12fe0f67492e1b359d1e7349b2e502ecb99a8be9f0e40be1bc1817fe0b9ced3",
+    "copy_sha256": "c9aab4b3df22e4e600237b064557d68cb42f71ee05ac56f2ae3748b18c4a1d5a",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 49,
+    "public_apps": 50,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "5c29c3116dd39aefdcfb260b5ec083dc73cd72c45745e27686f497c4dff517af",
+  "manifest_digest": "d02420fd4761a6892d98d8e19b16558c985a21da4d37dd3066e2c4e1624832f2",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "dcf150e546fdd32139fe25ff4201d98098a2c09944e097427f74758b950d39e8",
-  "release_state": "degraded_missing_route_copy",
-  "route_count": 61,
+  "release_contract_digest": "4bfee1aad3775eba3983cb1cb6da31d5534cc7562021f0255debcd1cc4a66ee2",
+  "release_state": "exact",
+  "route_count": 62,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -1058,6 +1061,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/sononote/speak-then-shape-usable-notes.html"
     },
     {
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "app_store_url": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "campaign_token": "geo_pick",
+      "content_type": "alternative",
+      "creative_digest": "60f39fba351b0d6cdf89fce4f32f373c9468d8f9912cb5c5986ff5790be58089",
+      "creative_id": "stayclock:always-on-bedside-clock-beyond-standby:alternative",
+      "intent_type": "alternative",
+      "locale": "en-US",
+      "output_sha256": "8b738689372260bd21a1e398999c8391a86ac3dfcc8b72aae4cca2f64d0a5c9b",
+      "record_digest": "d091f7bad1c8a4c935a812e37f7af60e3e3b00240345bfd44c7556ba5d489401",
+      "relative_path": "en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html",
+      "route_id": "en-US:stayclock:always-on-bedside-clock-beyond-standby",
+      "route_slug": "always-on-bedside-clock-beyond-standby",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
+    },
+    {
       "app_key": "tripbee",
       "app_store_id": "6787754435",
       "app_store_url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
@@ -1400,5 +1420,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "0f279c2765a5644c96bbe5dfac72f4ec4bd17b7931f3887909747970e8e1b9c7"
+  "source_contract_digest": "f3f77add8261413186dd58b5f7451afed1c4bbae434f7757e733c94d217e36c5"
 }

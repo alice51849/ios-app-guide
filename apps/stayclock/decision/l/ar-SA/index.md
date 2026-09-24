@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - المزيد
 - بدء مجاني · فتح مرة واحدة
 - بدون إعلانات
-- Apple Watch
 - App Store · مجاني
 
 [احصل على Stay Clock: ساعة مكتب رقمية من App Store](https://apps.apple.com/sa/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

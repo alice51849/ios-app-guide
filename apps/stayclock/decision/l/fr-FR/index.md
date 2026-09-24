@@ -16,7 +16,6 @@ Stay Clock transforme votre iPhone ou iPad en horloge toujours allumée, lisible
 - Plus
 - Gratuit au départ · déblocage unique
 - Sans publicité
-- Apple Watch
 - App Store · Gratuit
 
 [Obtenir Stay Clock : horloge flip sur l'App Store](https://apps.apple.com/fr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

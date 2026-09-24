@@ -6,8 +6,8 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-09-23",
-  "numberOfItems": 49,
+  "dateModified": "2026-09-24",
+  "numberOfItems": 50,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -2719,6 +2719,72 @@
     {
       "@type": "ListItem",
       "position": 42,
+      "url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-stayclock",
+        "url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Stay Clock:パタパタ卓上時計",
+        "description": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6814035888",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6814035888"
+          },
+          "name": "Stay Clock:パタパタ卓上時計",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6814035888",
+          "inLanguage": "ja",
+          "description": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-stayclock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "JP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
       "url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2850,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2916,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2982,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

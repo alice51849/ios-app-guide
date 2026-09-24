@@ -16,7 +16,6 @@ Stay Clock 将你的 iPhone 或 iPad 变成一款常亮桌面时钟,即使隔着
 - 更多
 - 免费开始使用 · 一次性解锁
 - 无广告
-- Apple Watch
 - App Store · 免费
 
 [在 App Store 获取 Stay Clock:翻页桌面时钟](https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

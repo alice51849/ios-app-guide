@@ -16,7 +16,6 @@ Stay Clock ଆପଣଙ୍କ iPhone କିମ୍ବା iPad କୁ ଏକ ସ�
 - ଅଧିକ
 - ମୁକ୍ତ ଆରମ୍ଭ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
-- Apple Watch
 - App Store · ମାଗଣା
 
 [App Store ରୁ Stay Clock: ଡେସ୍କ ଘଡ଼ି ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

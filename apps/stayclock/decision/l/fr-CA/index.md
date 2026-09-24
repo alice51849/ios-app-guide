@@ -16,7 +16,6 @@ Avec Stay Clock, votre iPhone ou iPad devient une horloge de bureau toujours all
 - Plus
 - Gratuit au départ · déblocage unique
 - Aucune publicité
-- Apple Watch
 - App Store · Gratuit
 
 [Obtenir Stay Clock : horloge flip sur l'App Store](https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

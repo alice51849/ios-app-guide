@@ -16,7 +16,6 @@ Stay Clock तुमच्या iPhone किंवा iPad ला खोली
 - अधिक
 - सुरुवात करण्यासाठी मोफत
 - जाहिराती नाहीत
-- Apple Watch
 - App Store · मोफत
 
 [App Store वरून Stay Clock: डेस्क घड्याळ मिळवा](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

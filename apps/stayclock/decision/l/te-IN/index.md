@@ -16,7 +16,6 @@ Stay Clock మీ iPhone లేదా iPadని గది అవతలి వ�
 - ఇంకా
 - ఉచితంగా ప్రారంభించండి
 - ప్రకటనలు లేవు
-- Apple Watch
 - App Store · ఉచితం
 
 [App Store నుంచి Stay Clock: మడత గడియారం పొందండి](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

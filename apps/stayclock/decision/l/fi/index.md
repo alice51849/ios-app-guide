@@ -16,7 +16,6 @@ Stay Clock muuttaa iPhonesi tai iPadisi pöytäkelloksi, joka on aina päällä 
 - Lisää
 - Ilmainen aloitus
 - Ei mainoksia
-- Apple Watch
 - App Store · Ilmainen
 
 [Lataa Stay Clock: Pöytäkello App Storesta](https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida 
 - Više
 - Besplatno za početak
 - Bez oglasa
-- Apple Watch
 - App Store · Besplatno
 
 [Preuzmite Stay Clock: preklopni sat u App Storeu](https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

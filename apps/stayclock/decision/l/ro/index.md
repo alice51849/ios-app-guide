@@ -16,7 +16,6 @@ Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de bir
 - Mai mult
 - Început gratuit
 - Fără reclame
-- Apple Watch
 - App Store · Gratuit
 
 [Descarcă Stay Clock: Ceas de Birou din App Store](https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

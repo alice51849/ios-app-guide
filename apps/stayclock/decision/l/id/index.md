@@ -16,7 +16,6 @@ Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan
 - Lainnya
 - Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
-- Apple Watch
 - App Store · Gratis
 
 [Dapatkan Stay Clock: Jam Meja Flip di App Store](https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

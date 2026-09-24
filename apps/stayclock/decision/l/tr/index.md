@@ -16,7 +16,6 @@ Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen,
 - Daha fazla
 - Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
-- Apple Watch
 - App Store · Ücretsiz
 
 [Stay Clock: Çevirmeli Saat uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ Stay Clock converteix el teu iPhone o iPad en un rellotge de taula sempre actiu,
 - Més
 - Inici gratuït
 - Sense anuncis
-- Apple Watch
 - App Store · Gratis
 
 [Descarrega Stay Clock: Rellotge de Taula a l’App Store](https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ O Stay Clock transforma o seu iPhone ou iPad num relógio de mesa sempre ativo, 
 - Mais
 - Grátis para começar · desbloqueio único
 - Sem anúncios
-- Apple Watch
 - App Store · Grátis
 
 [Baixe Stay Clock: Relógio de Mesa na App Store](https://apps.apple.com/pt/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

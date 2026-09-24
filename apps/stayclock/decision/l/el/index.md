@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - Περισσότερα
 - Δωρεάν για αρχή
 - Χωρίς διαφημίσεις
-- Apple Watch
 - App Store · Δωρεάν
 
 [Αποκτήστε το Stay Clock: ρολόι flip από το App Store](https://apps.apple.com/gr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

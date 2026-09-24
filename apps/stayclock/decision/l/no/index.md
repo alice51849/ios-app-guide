@@ -16,7 +16,6 @@ Stay Clock gjør iPhone eller iPad om til en bordklokke som alltid er på, og so
 - Mer
 - Gratis å starte
 - Ingen annonser
-- Apple Watch
 - App Store · Gratis
 
 [Last ned Stay Clock: Skrivebordsklokke fra App Store](https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

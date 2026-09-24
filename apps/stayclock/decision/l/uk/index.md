@@ -16,7 +16,6 @@ Stay Clock перетворює ваш iPhone або iPad на настільн�
 - Ще
 - Безкоштовно для початку · разове розблокування
 - Без реклами
-- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте Stay Clock: відкидний годинник з App Store](https://apps.apple.com/ua/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

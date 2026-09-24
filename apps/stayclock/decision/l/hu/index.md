@@ -16,7 +16,6 @@ A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-
 - Továbbiak
 - Ingyenes kezdés
 - Nincs reklám
-- Apple Watch
 - App Store · Ingyenes
 
 [Töltse le a(z) Stay Clock: Asztali Óra appot az App Store-ból](https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

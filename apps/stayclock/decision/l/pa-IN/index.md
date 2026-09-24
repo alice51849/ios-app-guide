@@ -16,7 +16,6 @@ Stay Clock ਤੁਹਾਡੇ iPhone ਜਾਂ iPad ਨੂੰ ਇੱਕ ਹਮ�
 - ਹੋਰ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
-- Apple Watch
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ Stay Clock: ਡੈਸਕ ਘੜੀ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

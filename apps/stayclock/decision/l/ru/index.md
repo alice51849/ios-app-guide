@@ -16,7 +16,6 @@ Stay Clock превращает ваш iPhone или iPad в настольны�
 - Ещё
 - Бесплатно начать · разовая разблокировка
 - Без рекламы
-- Apple Watch
 - App Store · Бесплатно
 
 [Установить Stay Clock: перекидные часы в App Store](https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

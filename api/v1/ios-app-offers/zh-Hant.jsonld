@@ -6,8 +6,8 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-09-23",
-  "numberOfItems": 49,
+  "dateModified": "2026-09-24",
+  "numberOfItems": 50,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -2719,6 +2719,72 @@
     {
       "@type": "ListItem",
       "position": 42,
+      "url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-stayclock",
+        "url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Stay Clock:翻頁桌鐘",
+        "description": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6814035888",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6814035888"
+          },
+          "name": "Stay Clock:翻頁桌鐘",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6814035888",
+          "inLanguage": "zh-Hant",
+          "description": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-stayclock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "TW"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
       "url": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2850,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2916,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2982,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",

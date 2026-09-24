@@ -16,7 +16,6 @@ Stay Clock convierte tu iPhone o iPad en un reloj de buró siempre encendido, f�
 - Más
 - Gratis para empezar · desbloqueo único
 - Sin anuncios
-- Apple Watch
 - App Store · Gratis
 
 [Consigue Stay Clock: reloj flip en el App Store](https://apps.apple.com/mx/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

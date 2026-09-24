@@ -16,7 +16,6 @@ Stay Clock biến iPhone hoặc iPad của bạn thành một chiếc đồng h�
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
-- Apple Watch
 - App Store · Miễn phí
 
 [Tải Stay Clock: Đồng hồ lật để bàn trên App Store](https://apps.apple.com/vn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

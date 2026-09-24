@@ -16,7 +16,6 @@ Stay Clock maakt van je iPhone of iPad een klok die altijd aan blijft en van ver
 - Meer
 - Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
-- Apple Watch
 - App Store · Gratis
 
 [Download Stay Clock: Bureauklok in de App Store](https://apps.apple.com/nl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -16,7 +16,6 @@ Stay Clock trasforma il tuo iPhone o iPad in un orologio da tavolo sempre acceso
 - Altro
 - Gratis per iniziare · sblocco unico
 - Nessuna pubblicità
-- Apple Watch
 - App Store · Gratis
 
 [Scarica Stay Clock: orologio flip sull'App Store](https://apps.apple.com/it/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

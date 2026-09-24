@@ -589,6 +589,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "stayclock",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "d091f7bad1c8a4c935a812e37f7af60e3e3b00240345bfd44c7556ba5d489401"
+      },
+      "id": "en-US:stayclock:always-on-bedside-clock-beyond-standby",
+      "language": "en",
+      "summary": "StandBy only takes over while the phone charges on its side, offers a small set of faces, and on iPhone models without an always-on display it turns off after a short time. The decision is whether a dedicated full-screen clock that stays lit, protects an OLED panel and matches the Lock Screen and watch is worth adding for that one job.",
+      "title": "What is a better always-on bedside clock than iPhone StandBy, without a subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "tripbee",
         "campaign_token": "geo_learn",
         "intent_type": "workflow",

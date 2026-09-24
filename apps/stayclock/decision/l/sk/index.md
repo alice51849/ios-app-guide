@@ -16,7 +16,6 @@ Stay Clock zmení váš iPhone alebo iPad na nepretržite svietiace stolové hod
 - Viac
 - Zadarmo na začiatok
 - Bez reklám
-- Apple Watch
 - App Store · Zadarmo
 
 [Stiahnuť Stay Clock: sklápacie hodiny v App Store](https://apps.apple.com/sk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

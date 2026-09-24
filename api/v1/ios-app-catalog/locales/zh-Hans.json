@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-23",
-  "content_digest": "b4606ec5a19219f13433cacc4af2cc55ac7941eddb6b2ff4ca740bf2003730b4",
+  "date_modified": "2026-09-24",
+  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -93,8 +93,7 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件",
-        "提示词管理"
+        "读文件"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1830,8 +1829,7 @@
         "活动收支",
         "出租账本",
         "摊位账本",
-        "班费管理",
-        "项目支出"
+        "班费管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

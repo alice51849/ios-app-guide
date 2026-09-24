@@ -4,7 +4,7 @@
 
 En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.
 
-Utgivarens sökintentioner för 49 verifierade aktiva iOS-appar och 50 Apple-lokaler.
+Utgivarens sökintentioner för 50 verifierade aktiva iOS-appar och 50 Apple-lokaler.
 
 **Lokal:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · **sv** · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 | **Snapport** | bästa appen för passfoto för bebisar och småbarn hemma | För bebisens passfoto får ingen annan synas och bakgrunden måste vara enfärgad. Snapport växte fram just ur det problemet. | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Skaffa Snapport i App Store →](https://apps.apple.com/se/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Passfoto hemma** | Snapport Lite: Passfoto hemma — Skapa ID-foton hemma \| iOS App | Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrundsverktyg och utskriftsklar export. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/snapportlite.html) | [Hämta Snapport Lite: Passfoto hemma i App Store](https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | bästa appen för röstanteckningar som sammanfattar möten på iPhone | Efter ett samtal vill du inte ha en rå transkription – du vill ha sammanfattningen, åtgärdspunkterna och ett utkast till uppföljning. Det är precis den luckan Sono Note ska fylla. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Skaffa Sono Note i App Store →](https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Bordsklocka** | Stay Clock: Bordsklocka — Tid och kalender, alltid på \| iOS App | Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och går att läsa tvärs över rummet. Stor tid, en kalender som passar varje | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/stayclock.html) | [Hämta Stay Clock: Bordsklocka i App Store](https://apps.apple.com/se/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | bästa enkla reseplaneraren för en kommande resa på iPhone | Om du planerar en kommande resa är en lugn tidslinje för just den resan mer användbar än ett överfullt arkiv med alla resor du kanske gör någon gång. Känner du igen dig, ta en titt på TripBee Lite. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Hämta TripBee Lite i App Store →](https://apps.apple.com/se/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Resplanerare** | bästa appen för reseplanering på iPhone | En bra reseplanerare förvandlar en rörig resa till en tydlig dag-för-dag-tidslinje – flyg, hotell, aktiviteter, restauranger och transport – med tydliga typikoner så du kan läsa din dag på en blick. Känner du igen dig, ta en titt på TripBee Pro: Resplanerare. | Betald nedladdning | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Skaffa TripBee Pro: Resplanerare i App Store →](https://apps.apple.com/se/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | bästa appen för att fixa suddiga bilder på barn på iPhone | Barn står aldrig stilla, så mjuk fokus och kameraskakning är oundvikligt | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://open.cait518.cc/ios-app-guide/sv/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Skaffa Unblurry i App Store →](https://apps.apple.com/se/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 
 ## Ladda ner hela datasetet
 
-JSON, JSONL och CSV innehåller samma 2 450 poster.
+JSON, JSONL och CSV innehåller samma 2 500 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL och CSV innehåller samma 2 450 poster.
 
 [Hem](https://open.cait518.cc/ios-app-guide/sv/index.html) · [Öppna data](https://open.cait518.cc/ios-app-guide/sv/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Uppdaterad: 2026-09-22
+Uppdaterad: 2026-09-24
 
 CC BY 4.0 gäller för den ursprungliga katalogsammanställningen; appnamn och App Store-märken tillhör sina respektive ägare.

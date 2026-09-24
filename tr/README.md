@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-49 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+50 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **Snapport** | bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması | Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıdır. Snapport tam olarak bu sorundan doğdu. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Snapport’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Evde vesikalık** | Snapport Lite: Evde vesikalık — Vesikalık fotoğrafı evde çekin \| iOS App | Snapport Lite - Boyut, arka plan ve baskı kılavuzlarıyla pasaport, vize ve kimlik fotoğrafları oluşturun. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/snapportlite.html) | [Snapport Lite: Evde vesikalık uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone’da toplantıları özetleyen en iyi sesli not uygulaması | Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip e-postasına ihtiyacınız vardır. Sono Note tam da bu boşluğu kapatmak için var. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Sono Note’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Çevirmeli Saat** | Stay Clock: Çevirmeli Saat — Her An Açık Saat ve Takvim \| iOS App | Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen, her an açık bir masa saatine dönüştürür. Büyük saat, her kadrana uyan bir | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/stayclock.html) | [Stay Clock: Çevirmeli Saat uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | Yaklaşan tek bir seyahat için en iyi basit seyahat planlayıcı uygulaması iPhone | Yaklaşan tek bir yolculuğu planlıyorsanız, o seyahat için sakin bir zaman çizelgesi, bir gün yapabileceğiniz her seyahatin kalabalık arşivinden daha faydalıdır. Tanıdık geldiyse TripBee Lite uygulamasına bir göz atın. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [TripBee Lite'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Seyahat Planlayıcı** | iPhone için en iyi seyahat güzergah planlayıcı uygulaması | İyi bir güzergah uygulaması, karmaşık bir seyahati net günlük zaman çizelgesine dönüştürür — uçuşlar, oteller, aktiviteler, restoranlar ve ulaşım — tür simgeleriyle gününüzü bir bakışta okuyabilmeniz için. Tanıdık geldiyse TripBee Pro: Seyahat Planlayıcı uygulamasına bir göz atın. | Ücretli indirme | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-trip-itinerary-planner-app-for-iphone.html) | [TripBee Pro: Seyahat Planlayıcı’yı App Store’dan edinin →](https://apps.apple.com/tr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | iPhone’da çocukların bulanık fotoğraflarını düzeltmek için en iyi uygulama | Çocuklar asla hareketsiz durmaz, bu yüzden yumuşak odak ve kamera titremesi çekimleri kaçınılmazdır | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://open.cait518.cc/ios-app-guide/tr/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Unblurry’yi App Store’dan edinin →](https://apps.apple.com/tr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 2.450 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.500 kaydı içerir.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL ve CSV aynı 2.450 kaydı içerir.
 
 [Ana Sayfa](https://open.cait518.cc/ios-app-guide/tr/index.html) · [Açık veri](https://open.cait518.cc/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-09-22
+Güncellendi: 2026-09-24
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

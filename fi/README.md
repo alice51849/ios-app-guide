@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 49 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 50 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **Snapport** | paras passikuvien sovellus vauvoille ja taaperoille kotona | Vauvan passikuvassa ei saa olla muita ihmisiä eikä taustan saa olla kuvioitu. Snapport lähti liikkeelle juuri tuosta ongelmasta. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Hanki Snapport App Storesta →](https://apps.apple.com/fi/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Tee passikuvat** | Snapport Lite: Tee passikuvat — Luo ID-valokuvia kotona \| iOS App | Snapport Lite - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/snapportlite.html) | [Lataa Snapport Lite: Tee passikuvat App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | paras äänimuistiinpanojen sovellus, joka tiivistää kokoukset iPhonella | Puhelun jälkeen et halua raakatekstiä — haluat tiivistelmän, toimintakohdat ja jatkoseurannan luonnoksen. Juuri tuon aukon Sono Note on tarkoitus täyttää. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Hanki Sono Note App Storesta →](https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Pöytäkello** | Stay Clock: Pöytäkello — Aika ja kalenteri, aina päällä \| iOS App | Stay Clock muuttaa iPhonesi tai iPadisi pöytäkelloksi, joka on aina päällä ja luettavissa huoneen toiselta puolelta. Suuri kellonaika, jokaiseen | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/stayclock.html) | [Lataa Stay Clock: Pöytäkello App Storesta](https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | paras yksinkertainen matkan suunnittelu -sovellus yhdelle tulevalle matkalle iPhonelle | Jos suunnittelet yhtä tulevaa matkaa, rauhallinen aikajana tälle matkalle on hyödyllisempi kuin täynnä oleva arkisto kaikista mahdollisista tulevista matkoistasi. Jos tunnistat tilanteen, katso TripBee Lite. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Hanki TripBee Lite App Storesta →](https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Matkasuunnittelija** | paras matka-aikataulusuunnittelusovellus iPhonelle | Hyvä aikataulusovellus muuttaa sekavan matkan selkeäksi päiväkohtaiseksi aikajanaksi — lennot, hotellit, aktiviteetit, ravintolat ja kuljetukset — selkeillä tyyppikuvakkeilla, jotta näet päivän yhdellä silmäyksellä. Jos tunnistat tilanteen, katso TripBee Pro: Matkasuunnittelija. | Maksullinen ladattavaksi | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Hanki TripBee Pro: Matkasuunnittelija App Storesta →](https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | paras sovellus epäselvien lasten kuvien korjaamiseen iPhonella | Lapset eivät koskaan pysy paikallaan, joten pehmeät ja tärähtäneet kuvat ovat väistämättömiä | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Hanki Unblurry App Storesta →](https://apps.apple.com/fi/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 2 450 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 2 500 tietuetta.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL ja CSV sisältävät samat 2 450 tietuetta.
 
 [Etusivu](https://open.cait518.cc/ios-app-guide/fi/index.html) · [Avoin data](https://open.cait518.cc/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-09-22
+Päivitetty: 2026-09-24
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

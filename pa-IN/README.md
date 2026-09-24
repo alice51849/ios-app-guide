@@ -4,7 +4,7 @@
 
 ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।
 
-49 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
+50 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
 
 **ਸਥਾਨਕ ਭਾਸ਼ਾ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · **pa-IN** · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -129,6 +129,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | ਘਰ 'ਤੇ ਬੱਚਿਆਂ ਅਤੇ ਨੰਨੇ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪਾਸਪੋਰਟ ਫੋਟੋ ਐਪ | ਬੱਚੇ ਦੀ ਪਾਸਪੋਰਟ ਫੋਟੋ ਲਈ, ਹੋਰ ਕੋਈ ਵੀ ਫੋਟੋ ਵਿੱਚ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਅਤੇ ਪਿਛੋਕੜ ਸਾਫ਼ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ। Snapport ਦੀ ਸ਼ੁਰੂਆਤ ਠੀਕ ਇਸੇ ਦਿੱਕਤ ਤੋਂ ਹੋਈ। | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store 'ਤੇ Snapport ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ID ਫੋਟੋ ਬਣਾਓ** | Snapport Lite: ID ਫੋਟੋ ਬਣਾਓ — ਘਰ ਵਿੱਚ ID ਫੋਟੋਆਂ ਬਣਾਓ \| iOS App | Snapport Lite - ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਫੋਟੋਆਂ ਬਣਾਓ, ਜਿਸ ਵਿੱਚ ਮਾਰਗਦਰਸ਼ਿਤ ਆਕਾਰ, ਪਿਛੋਕੜ ਦੇ ਸਾਧਨ ਅਤੇ ਪ੍ਰਿੰਟ ਲਈ ਤਿਆਰ ਨਿਕਾਸ ਸ਼ਾਮਲ ਹਨ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/snapportlite.html) | [App Store ਤੋਂ Snapport Lite: ID ਫੋਟੋ ਬਣਾਓ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵੌਇਸ ਨੋਟਸ ਐਪ ਜੋ ਮੀਟਿੰਗਾਂ ਦਾ ਸਾਰ ਸੰਖੇਪ ਕਰਦਾ ਹੈ | ਕਾਲ ਤੋਂ ਬਾਅਦ ਤੁਸੀਂ ਸਿਰਫ ਕੱਚਾ ਟ੍ਰਾਂਸਕ੍ਰਿਪਟ ਨਹੀਂ ਚਾਹੁੰਦੇ — ਤੁਸੀਂ ਸਾਰ, ਕਾਰਵਾਈ ਆਈਟਮ ਅਤੇ ਫਾਲੋ-ਅਪ ਦਾ ਡਰਾਫਟ ਚਾਹੁੰਦੇ ਹੋ। ਇਹੀ ਘਾਟ Sono Note ਪੂਰੀ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store 'ਤੇ Sono Note ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: ਡੈਸਕ ਘੜੀ** | Stay Clock: ਡੈਸਕ ਘੜੀ — ਹਮੇਸ਼ਾ ਚਾਲੂ ਸਮਾਂ ਤੇ ਕੈਲੰਡਰ \| iOS App | Stay Clock ਤੁਹਾਡੇ iPhone ਜਾਂ iPad ਨੂੰ ਇੱਕ ਹਮੇਸ਼ਾ ਚਾਲੂ ਡੈਸਕ ਘੜੀ ਬਣਾ ਦਿੰਦੀ ਹੈ, ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਕਮਰੇ ਦੇ ਦੂਜੇ ਸਿਰੇ ਤੋਂ ਵੀ ਆਸਾਨੀ ਨਾਲ ਪੜ੍ਹ ਸਕਦੇ ਹੋ। ਵੱਡਾ ਸਮਾਂ, ਹਰ | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/stayclock.html) | [App Store ਤੋਂ Stay Clock: ਡੈਸਕ ਘੜੀ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | ਪਰਿਵਾਰਕ ਯਾਤਰਾ 'ਤੇ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਗਤੀਵਿਧੀ ਐਪ | ਨੌਜਵਾਨ ਬੱਚਿਆਂ ਨਾਲ ਯਾਤਰਾ ਕਰ ਰਹੇ ਮਾਪਿਆਂ ਨੂੰ ਐਕਟਿਵਿਟੀਆਂ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ ਜੋ ਪੈਕਿੰਗ, ਉਡੀਕ ਅਤੇ ਨਵੇਂ ਟਿਕਾਣੇ ਦੀ ਖੋਜ ਨੂੰ ਸਫਰ ਦਾ ਹਿੱਸਾ ਬਣਾਉਂਦੇ ਹਨ, ਨਾ ਕਿ ਹੋਰ ਤਣਾਅ। ਇਸੇ ਲਈ Trip Planet: Kids Quest ਬਣਿਆ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਧਾਰਣ ਯਾਤਰਾ ਯੋਜਕ ਐਪ iPhone ਲਈ | ਜੇ ਤੁਸੀਂ ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾ ਰਹੇ ਹੋ, ਤਾਂ ਉਸ ਯਾਤਰਾ ਲਈ ਇੱਕ ਸ਼ਾਂਤ ਟਾਈਮਲਾਈਨ ਹਰ ਇੱਕ ਸੰਭਵ ਯਾਤਰਾ ਦੇ ਭਰੇ ਹੋਏ ਆਰਕਾਈਵ ਨਾਲੋਂ ਵਧੀਆ ਹੈ। ਜਾਣੀ-ਪਛਾਣੀ ਗੱਲ ਲੱਗੇ ਤਾਂ TripBee Lite ਇੱਕ ਵਾਰ ਵੇਖੋ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store 'ਤੇ TripBee Lite ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: ਯਾਤਰਾ ਯੋਜਨਾਕਾਰ** | iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਯਾਤਰਾ ਯੋਜਨਾ ਬਣਾਉਣ ਵਾਲਾ ਐਪ | ਇੱਕ ਵਧੀਆ ਯਾਤਰਾ ਐਪ ਗੰਦੇ ਯਾਤਰਾ ਨੂੰ ਸਾਫ਼ ਦਿਨ-ਬਾਈ-ਦਿਨ ਟਾਈਮਲਾਈਨ ਵਿੱਚ ਬਦਲਦਾ ਹੈ — ਉਡਾਣਾਂ, ਹੋਟਲ, ਗਤੀਵਿਧੀਆਂ, ਰੈਸਟੋਰੈਂਟ ਅਤੇ ਆਵਾਜਾਈ — ਸਾਫ਼ ਟਾਈਪ ਆਈਕਾਨਾਂ ਨਾਲ ਤਾਂ ਜੋ ਤੁਸੀਂ ਆਪਣਾ ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਪੜ੍ਹ ਸਕੋ। ਜਾਣੀ-ਪਛਾਣੀ ਗੱਲ ਲੱਗੇ ਤਾਂ TripBee Pro: ਯਾਤਰਾ ਯੋਜਨਾਕਾਰ ਇੱਕ ਵਾਰ ਵੇਖੋ। | ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ | [ਗਾਈਡ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store 'ਤੇ TripBee Pro: Trip Planner ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ਪੂਰਾ ਡੇਟਾਸੈੱਟ ਡਾਊਨਲੋਡ ਕਰੋ
 
-JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,450 ਰਿਕਾਰਡ ਹਨ।
+JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,500 ਰਿਕਾਰਡ ਹਨ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,450 ਰਿਕਾਰਡ ਹਨ
 
 [ਮੁੱਖ ਪੰਨਾ](https://open.cait518.cc/ios-app-guide/pa-IN/index.html) · [ਖੁੱਲਾ ਡੇਟਾ](https://open.cait518.cc/ios-app-guide/pa-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ਲਾਇਸੈਂਸ](https://creativecommons.org/licenses/by/4.0/)
 
-ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-09-22
+ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-09-24
 
 CC BY 4.0 ਮੂਲ ਕੈਟਾਲੌਗ ਸੰਕਲਨ 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ; ਐਪ ਨਾਮ ਅਤੇ App Store ਨਿਸ਼ਾਨ ਆਪਣੇ ਮਾਲਕਾਂ ਦੇ ਹਨ।

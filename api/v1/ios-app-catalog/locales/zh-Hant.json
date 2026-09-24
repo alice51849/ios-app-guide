@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+  "content_digest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 49,
+  "record_count": 50,
   "apps": [
     {
       "key": "notesstudio100",
@@ -92,7 +92,8 @@
         "文件掃描",
         "文字辨識",
         "論文閱讀",
-        "讀文件"
+        "讀文件",
+        "提示詞管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -130,7 +131,9 @@
         "考試準備",
         "練習",
         "學習計劃",
-        "成績追蹤"
+        "成績追蹤",
+        "多益",
+        "英文檢定"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -217,7 +220,10 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料"
+        "匯出資料",
+        "電池檢測",
+        "電池健康度",
+        "電池壽命"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -407,7 +413,8 @@
         "月事",
         "好朋友",
         "生理紀錄",
-        "白帶"
+        "白帶",
+        "經期 追蹤"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -691,7 +698,8 @@
         "生活記帳",
         "出國花費",
         "離線記帳",
-        "自訂匯率"
+        "自訂匯率",
+        "出國預算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1477,7 +1485,9 @@
         "上學",
         "整理",
         "責任感",
-        "星星"
+        "星星",
+        "睡前 習慣",
+        "獎勵 貼紙"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1629,7 +1639,9 @@
         "氣溫",
         "保暖",
         "野餐",
-        "出遊"
+        "出遊",
+        "天氣 穿搭",
+        "穿搭 天氣"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1798,7 +1810,8 @@
         "電話",
         "車輛保養",
         "家電維護",
-        "重複事項"
+        "重複事項",
+        "上次 記錄"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1847,7 +1860,8 @@
         "活動收支",
         "出租帳本",
         "攤位帳本",
-        "現金流"
+        "現金流",
+        "副業 記帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1908,7 +1922,9 @@
         "數據",
         "心智圖",
         "海報",
-        "大綱"
+        "大綱",
+        "簡報 製作",
+        "重點摘要"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2100,7 +2116,8 @@
         "捷徑",
         "美食",
         "購物",
-        "網頁"
+        "網頁",
+        "收藏 連結"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2474,6 +2491,54 @@
       }
     },
     {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock:翻頁桌鐘",
+      "summary": "Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。",
+      "category": "utility",
+      "search_terms": [
+        "數位時鐘",
+        "床頭時鐘",
+        "翻頁時鐘",
+        "充電座擺飾",
+        "桌面小工具",
+        "夜燈時鐘",
+        "世界時間",
+        "農民曆",
+        "萬年曆",
+        "字體切換",
+        "主題時鐘",
+        "放大時間",
+        "防烙印",
+        "護眼夜間模式",
+        "平板時鐘",
+        "手錶錶面",
+        "整點報時",
+        "跨時區",
+        "鎖定畫面時鐘"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6814035888"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet 環球旅行",
@@ -2489,7 +2554,8 @@
         "獎勵",
         "假期",
         "回憶",
-        "地圖"
+        "地圖",
+        "小孩 旅行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2590,7 +2656,8 @@
         "雨天",
         "提醒",
         "家庭遊",
-        "露營"
+        "露營",
+        "度假 規劃"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2711,7 +2778,9 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "網路 檢查",
+        "wifi 診斷"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2913,7 +2982,8 @@
         "全文搜尋",
         "加密",
         "預覽",
-        "離線"
+        "離線",
+        "密碼保護 zip"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 49 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 50 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **Snapport** | legjobb útlevélfotó alkalmazás babáknak és kisgyermekeknek otthon | Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie. A Snapport pontosan ebből a problémából indult. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Szerezd be a Snapportot az App Store-ból →](https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Igazolványkép** | Snapport Lite: Igazolványkép — Útlevél vízum igazolvány \| iOS App | Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/snapportlite.html) | [Töltse le a(z) Snapport Lite: Igazolványkép appot az App Store-ból](https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | legjobb hangjegyzet alkalmazás, amely összefoglalja a megbeszéléseket iPhone-on | Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet. Pontosan ezt a hiányt szeretné betölteni a Sono Note. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Szerezd be a Sono Note-ot az App Store-ból →](https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Asztali Óra** | Stay Clock: Asztali Óra — Idő és naptár, mindig látható \| iOS App | A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Nagy idő, minden számlaphoz | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/stayclock.html) | [Töltse le a(z) Stay Clock: Asztali Óra appot az App Store-ból](https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | legjobb egyszerű utiterv-tervező alkalmazás egy közelgő utazáshoz iPhone-ra | Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról. Ha ismerős a helyzet, nézd meg a TripBee Lite appot. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Szerezd be a TripBee Lite-ot az App Store-ból →](https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Utazástervező** | legjobb útiterv tervező alkalmazás iPhone-ra | Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalra alakítja — repülőjegyek, szállások, programok, éttermek és közlekedés — egyértelmű típusikonokkal, hogy egy pillantással lásd a napodat. Ha ismerős a helyzet, nézd meg a TripBee Pro: Utazástervező appot. | Fizetős letöltés | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Szerezd be a TripBee Pro: Utazástervezőt az App Store-ból →](https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | legjobb alkalmazás elmosódott gyerekfotók javítására iPhone-on | A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos képek elkerülhetetlenek | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://open.cait518.cc/ios-app-guide/hu/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Szerezd be az Unblurry-t az App Store-ból →](https://apps.apple.com/hu/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 450 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 500 rekordot tartalmazza.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ A JSON, JSONL és CSV ugyanazt az 2 450 rekordot tartalmazza.
 
 [Kezdőlap](https://open.cait518.cc/ios-app-guide/hu/index.html) · [Nyílt adatok](https://open.cait518.cc/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-09-22
+Frissítve: 2026-09-24
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

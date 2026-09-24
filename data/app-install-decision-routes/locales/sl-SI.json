@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sl-SI",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/sl-SI.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/sl-SI.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sl-SI:stayclock",
+      "locale": "sl-SI",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: prekucna ura",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: prekucna ura — Ura in koledar vedno prižgana | iOS App",
+      "decision_context": "Stay Clock spremeni vaš iPhone ali iPad v namizno uro, ki je vedno prižgana in čitljiva tudi z druge strani sobe. Velik čas, koledar, prilagojen vsaki številčnici, in en videz, ki vas spremlja v stanju pripravljenosti, na zaklenjenem zaslonu, v pripomočkih na začetnem zaslonu in na Apple Watch. Ustvarjen za mizo, polico in nočno omarico. Čas čez cel zaslon, čitljiv tudi od daleč, pokončno in ležeče, na iPhonu in iPadu. Ohrani budno razume polnjenje. Zaslon je prižgan med polnjenjem, vedno prižgan nad izbrano mejo baterije, ali sledi sistemu – ura vas nikoli ne preseneti. Zaščita zaslona za OLED. Nežno premikanje slikovnih pik, pomirjeni podrobnosti v mirovanju in zatemnjena rdeča nočna številčnica na resnično črnem ozadju za spalnico. Ena številčnica povsod. Izbrana številčnica se prikaže na celozaslonski uri, v stanju pripravljenosti, na zaklenjenem zaslonu, v pripomočkih na začetnem zaslonu in na Apple Watch – povsod enako. Koledar po meri vsake številčnice. Izberite Izklopljeno, Preprosto z datumom in dnevom v tednu, ali celoten pogled Mesec, ločeno za vsako številčnico. Vaš jezik in vaš časovni pas. Takoj preklopite jezik aplikacije, izberite poljubno mesto ali časovni pas ter izberite 12- ali 24-urni prikaz in svoje številke. Zasebnost že v zasnovi. Brez računa, brez oglasov, brez sledenja in brez omrežja. Vse ostane na vaši napravi. Priklopna postaja na mizi: telefon med polnjenjem sveti in prikazuje čas v izbrani številčnici. Spalnica ponoči: zaslon se zatemni v tiho rdečo uro na resnično črnem ozadju in varuje vaš OLED zaslon. Dan stran od mize: ista številčnica je na zaklenjenem zaslonu, na začetnem zaslonu in na vašem zapestju. Kaj zmore Stay Clock Celozaslonska ura, vedno prižgana, z velikim čitljivim časom Ena brezplačna številčnica v videzu ročno napisanega papirja Trajni dostop doda še 100 številčnic v drugih barvah, slogih in pisavah Koledar Izklopljeno, Preprosto ali Mesec, shranjen ločeno za vsako številčnico Pripomočki za stanje pripravljenosti, zaklenjeni zaslon in začetni zaslon, usklajeni z aplikacijo Številčnica za Apple Watch v enakem slogu Ohrani budno med polnjenjem, z mejo baterije in sistemskimi možnostmi Nočni urnik, zatemnjena rdeča številčnica in premikanje slikovnih pik za OLED zaslone Urno bitje in preprost alarm Jezik aplikacije in časovni pas izbrana kar v aplikaciji Postavitve za iPhone in iPad za vsako velikost zaslona Stay Clock je brezplačen prenos z eno popolno številčnico. En neobvezen nakup trajnega dostopa za vedno odklene še 100 številčnic, brez naročnine. Vse teče na vaši napravi. Brez računa, brez oglasov, brez analitike in brez sledenja.",
+      "category": "utility",
+      "category_label": "Več",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Brezplačen začetek",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Brez oglasov"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Več",
+        "Brezplačen začetek",
+        "Brez oglasov",
+        "Apple Watch",
+        "App Store · Brezplačno"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/sl-SI/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/sl-SI/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fsl-SI%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/si/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Prenesite Stay Clock: prekucna ura iz trgovine App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
+      "guide_cta_label": "Preberite celoten vodnik",
+      "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

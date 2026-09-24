@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৪৯টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৫০টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -131,6 +131,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport Lite: আইডি ছবি তৈরি** | Snapport Lite: আইডি ছবি তৈরি — বাড়িতে আইডি ছবি তৈরি করুন \| iOS App | Snapport Lite - নির্দেশিত আকার, পটভূমি টুল এবং প্রিন্টের জন্য প্রস্তুত রপ্তানির সাথে পাসপোর্ট, ভিসা এবং নথির ছবি তৈরি করুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/snapportlite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Snapport: পাসপোর্ট ও আইডি ফটো** | Snapport: পাসপোর্ট ও আইডি ফটো — ঘরে বসেই তৈরি করুন পাসপোর্ট, ভিসা ও আইডি ফটো—শান্তি ও \| iOS App | ঘরে বসেই তৈরি করুন পাসপোর্ট, ভিসা ও আইডি ফটো—শান্তি ও গোপনীয়তার সাথে। Snapport আপনার iPhone-এ দেয় সাধারণ আকারের টেমপ্লেট, মুখের অবস্থান নির্দেশিকা | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/snapport.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Sono Note** | Sono Note — ভয়েস টু টেক্সট · নোট \| iOS App | স্বাভাবিকভাবে কথা বলুন। গর্বিত হওয়ার মতো লেখা নিয়ে ফিরে আসুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **Stay Clock: ডেস্ক ঘড়ি** | Stay Clock: ডেস্ক ঘড়ি — অবিরাম সময় ও ক্যালেন্ডার \| iOS App | Stay Clock আপনার iPhone বা iPad-কে বানিয়ে দেয় এমন এক সবসময় জ্বলে থাকা ডেস্ক ঘড়ি, যা ঘরের অন্য প্রান্ত থেকেও স্পষ্ট পড়া যায়। বড় আকারের সময় | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Trip Planet: Kids Quest** | Trip Planet: Kids Quest — পারিবারিক ভ্রমণ অ্যাডভেঞ্চার \| iOS App | প্রতিটি পারিবারিক ভ্রমণকে একটি ক্ষুদ্র মহাকাশ অভিযানে পরিণত করুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **TripBee Lite: ভ্রমণ পরিকল্পনা** | TripBee Lite: ভ্রমণ পরিকল্পনা — একটি সফর, সুন্দর গোছানো \| iOS App | পরবর্তী সফরটিতেই পুরো মন দিন। TripBee Lite একটি শান্ত ও পরিপাটি পরিকল্পনাকারী, যা একটি সক্রিয় ভ্রমণকে ঘিরে তৈরি। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/tripbeelite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **TripBee: ট্রিপ প্ল্যানার** | TripBee: ট্রিপ প্ল্যানার — ভ্রমণ রুট ও প্যাকিং লিস্ট \| iOS App | TripBee Pro-এর মাধ্যমে এক সুন্দর, ব্যক্তিগত ও অফলাইন অ্যাপে আপনার সমস্ত ট্রিপ প্ল্যান করুন। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/tripbee.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -143,7 +144,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৪৫০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৫০০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -151,6 +152,6 @@ JSON, JSONL এবং CSV একই ২,৪৫০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-09-22
+আপডেট: 2026-09-24
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

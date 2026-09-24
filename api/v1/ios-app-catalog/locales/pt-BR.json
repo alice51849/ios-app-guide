@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+  "content_digest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 49,
+  "record_count": 50,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,7 +27,8 @@
         "offline",
         "estudo",
         "prova",
-        "rascunho"
+        "rascunho",
+        "notas à mão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -276,7 +277,8 @@
         "docx",
         "cartaapresentação",
         "vaga",
-        "profissional"
+        "profissional",
+        "currículo ats"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -415,7 +417,8 @@
         "japonês",
         "coreano",
         "iniciante",
-        "áudio"
+        "áudio",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -644,7 +647,8 @@
         "impulso",
         "renda",
         "valor",
-        "horas"
+        "horas",
+        "compra por impulso"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -793,7 +797,8 @@
         "fonética",
         "pré-escola",
         "pequenos",
-        "idioma"
+        "idioma",
+        "mandarim crianças"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -848,7 +853,8 @@
         "pequenos",
         "idioma",
         "mandarin",
-        "chinese"
+        "chinese",
+        "mandarim crianças"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1334,7 +1340,8 @@
         "foto",
         "pdf",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1375,7 +1382,9 @@
         "compras",
         "calendário",
         "widget",
-        "organização"
+        "organização",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1453,7 +1462,8 @@
         "margem lucro",
         "rentabilidade cliente",
         "rateio de custos",
-        "análise cruzada"
+        "análise cruzada",
+        "despesas do projeto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1778,7 +1788,8 @@
         "categorias",
         "semelhantes",
         "linha do tempo",
-        "compra única"
+        "compra única",
+        "organizar capturas de tela"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1950,6 +1961,44 @@
       }
     },
     {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: Relógio de Mesa",
+      "summary": "O Stay Clock transforma seu iPhone ou iPad em um relógio de mesa sempre ativo, legível do outro lado do quarto. Hora grande, um calendário que se adapta a cada mostrador e um visual que acompanha você no StandBy, na Tela Bloqueada, nos widgets da Tela de Início e no Apple Watch.",
+      "category": "utility",
+      "search_terms": [
+        "oled",
+        "apple watch",
+        "widgets",
+        "carregador",
+        "modo noturno",
+        "tela bloqueada",
+        "criado-mudo",
+        "fuso horário",
+        "24 horas"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6814035888"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: Viagens",
@@ -1964,7 +2013,8 @@
         "missões",
         "recompensas",
         "férias",
-        "memórias"
+        "memórias",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-GB",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/en-GB.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/en-GB.rss.xml",
@@ -2122,6 +2122,61 @@
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "en-GB:stayclock",
+      "locale": "en-GB",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Flip Desk Clock",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Flip Desk Clock — Always-on time and calendar | iOS App",
+      "decision_context": "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big time, a calendar that fits each face, and one look that follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch. Made for the desk, the shelf and the nightstand. Full screen time that stays readable from far away, in portrait or landscape, on iPhone and iPad. Keep Awake that understands charging. Stay on while charging, always on with a battery floor, or follow the system, so your clock never surprises you. Panel Care for OLED screens. Gentle pixel shifting, details that soften when idle, and a dim red night face on true black for the bedroom. One face everywhere. The face you pick appears on the full screen clock, StandBy, Lock Screen and Home Screen widgets and Apple Watch, and looks the same on every one. A calendar that suits each face. Choose Off, Simple with the date and weekday, or a full Month view separately for every face. Your language and your time zone. Switch the app language instantly, pick any city or time zone, and choose 12 or 24 hour time and your own digits. Private by design. No account, no ads, no tracking and no network. Everything stays on your device. A dock on the desk: your phone stays lit while it charges, showing the time in a face you chose. A bedroom at night: the screen dims to a quiet red clock on true black and saves your OLED panel. A day away from the desk: the same face sits on your Lock Screen, your Home Screen and your wrist. What Stay Clock does Full screen always-on clock with large, readable time One free face included, with a handwritten paper look Lifetime unlock adds 100 more faces in different colours, styles and fonts Off, Simple or Month calendar saved separately for each face StandBy, Lock Screen and Home Screen widgets that match the app Apple Watch face that follows the same design Keep Awake while charging, with battery floor and system options Night schedule, dim red face and pixel shifting for OLED screens Hourly chime and a simple alarm App language and time zone chosen inside the app iPhone and iPad layouts for every screen size Stay Clock is a free download with one complete face. One optional Lifetime purchase unlocks 100 more faces for good, with no subscription. Everything runs on your device. No account, no ads, no analytics and no tracking.",
+      "category": "utility",
+      "category_label": "More",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Free to start · one-time unlock",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "No adverts"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "More",
+        "Free to start · one-time unlock",
+        "No adverts",
+        "Apple Watch",
+        "App Store · Free"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/en-GB/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/en-GB/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fen-GB%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/gb/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Get Stay Clock: Flip Desk Clock on the App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
+      "guide_cta_label": "Read the full guide",
+      "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

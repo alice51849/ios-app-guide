@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "es-MX",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/es-MX.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/es-MX.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Guía escrita por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas de sus dueños y se usan solo para identificarlas. Para decisiones sobre documentos, salud, escuela y productividad, revisa los requisitos oficiales cuando aplique.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "es-MX:stayclock",
+      "locale": "es-MX",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: reloj flip",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: reloj flip — Hora y calendario permanentes | iOS App",
+      "decision_context": "Stay Clock convierte tu iPhone o iPad en un reloj de buró siempre encendido, fácil de leer incluso desde el otro lado del cuarto. Una hora grande, un calendario que se ajusta a cada esfera, y un mismo estilo que te acompaña en StandBy, la pantalla bloqueada, los widgets de la pantalla de inicio y el Apple Watch. Pensado para el escritorio, el librero y el buró. Una hora a pantalla completa que se sigue leyendo bien desde lejos, en vertical u horizontal, en iPhone y iPad. Mantener activa entiende cuándo se está cargando. Se queda encendida mientras carga, siempre activa por arriba de un límite de batería, o sigue el ajuste del sistema: tu reloj nunca te toma por sorpresa. Cuidado del panel para pantallas OLED. Desplazamiento suave de píxeles, detalles que se suavizan en reposo, y una esfera nocturna roja y tenue sobre negro puro para el cuarto. Una esfera en todos lados. La esfera que elijas aparece en el reloj a pantalla completa, en StandBy, en la pantalla bloqueada, en los widgets de la pantalla de inicio y en el Apple Watch, igual en todos. Un calendario que se ajusta a cada esfera. Elige Desactivado, Sencillo con la fecha y el día de la semana, o la vista de Mes completa, por separado para cada esfera. Tu idioma y tu zona horaria. Cambia el idioma de la app al instante, elige cualquier ciudad o zona horaria, y opta por el formato de 12 o 24 horas con tus propios dígitos. Privada desde su diseño. Sin cuenta, sin publicidad, sin rastreo y sin red. Todo se queda en tu dispositivo. Un dock en el escritorio: tu teléfono se mantiene encendido mientras carga, mostrando la hora en la esfera que elegiste. Un cuarto de noche: la pantalla baja de intensidad hasta un reloj rojo discreto sobre negro puro y cuida tu panel OLED. Un día lejos del escritorio: la misma esfera está en tu pantalla bloqueada, tu pantalla de inicio y en tu muñeca. Qué puede hacer Stay Clock Reloj a pantalla completa siempre encendido, con una hora grande y fácil de leer Una esfera gratuita incluida, con un estilo de papel escrito a mano El acceso de por vida agrega 100 esferas más, en distintos colores, estilos y tipografías Calendario Desactivado, Sencillo o Mes, guardado por separado para cada esfera Widgets de StandBy, pantalla bloqueada y pantalla de inicio a juego con la app Esfera de Apple Watch con el mismo diseño Mantener activa mientras carga, con límite de batería y opciones del sistema Horario nocturno, esfera roja tenue y desplazamiento de píxeles para pantallas OLED Campanada cada hora y una alarma sencilla Idioma y zona horaria de la app, elegidos dentro de la misma app Diseños para iPhone y iPad en cualquier tamaño de pantalla Stay Clock se descarga gratis con una esfera completa. Una compra opcional de por vida desbloquea 100 esferas más para siempre, sin suscripción. Todo funciona en tu dispositivo. Sin cuenta, sin publicidad, sin análisis y sin rastreo.",
+      "category": "utility",
+      "category_label": "Más",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis para empezar · desbloqueo único",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Sin anuncios"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Más",
+        "Gratis para empezar · desbloqueo único",
+        "Sin anuncios",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/es-MX/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/es-MX/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fes-MX%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/mx/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Consigue Stay Clock: reloj flip en el App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Lee la guía completa",
+      "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

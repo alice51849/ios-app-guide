@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+  "content_digest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 49,
+  "record_count": 50,
   "apps": [
     {
       "key": "notesstudio100",
@@ -2536,6 +2536,62 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: ডেস্ক ঘড়ি",
+      "summary": "Stay Clock আপনার iPhone বা iPad-কে বানিয়ে দেয় এমন এক সবসময় জ্বলে থাকা ডেস্ক ঘড়ি, যা ঘরের অন্য প্রান্ত থেকেও স্পষ্ট পড়া যায়। বড় আকারের সময়, প্রতিটি মুখের সাথে মানানসই ক্যালেন্ডার, আর একই রূপ যা আপনার সাথে যায় স্ট্যান্ডবাই, লক স্ক্রিন, হোম স্ক্রিন উইজেট আর Apple Watch পর্যন্ত।",
+      "category": "utility",
+      "search_terms": [
+        "অ্যালার্ম",
+        "স্ট্যান্ডবাই",
+        "OLED",
+        "উইজেট",
+        "চার্জিং",
+        "ডিজিটাল",
+        "নাইট মোড",
+        "লক স্ক্রিন",
+        "থিম",
+        "ফন্ট",
+        "বেডসাইড",
+        "ডক",
+        "বার্ন-ইন"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

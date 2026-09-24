@@ -4,7 +4,7 @@
   "name": "Lumi Studio iOS app catalog",
   "description": "Every verified live Lumi Studio iOS app, with the price and store link Apple publishes for it. Structured form of the agent product feed published alongside it.",
   "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/",
-  "numberOfItems": 49,
+  "numberOfItems": 50,
   "dateModified": "2026-09-24",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "provider": {
@@ -2972,6 +2972,80 @@
       "position": 41,
       "item": {
         "@type": "MobileApplication",
+        "name": "Stay Clock: Flip Desk Clock",
+        "description": "Stay Clock: Flip Desk Clock — Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big time, a calendar that fits each face, and one look",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS",
+        "url": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "inLanguage": [
+          "ar-SA",
+          "ca",
+          "cs",
+          "da",
+          "de-DE",
+          "el",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "es-ES",
+          "es-MX",
+          "fi",
+          "fr-CA",
+          "fr-FR",
+          "gu-IN",
+          "he",
+          "hi",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn-IN",
+          "ko",
+          "ml-IN",
+          "mr-IN",
+          "ms",
+          "nl-NL",
+          "no",
+          "or-IN",
+          "pa-IN",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "ro",
+          "ru",
+          "sk",
+          "sl-SI",
+          "sv",
+          "ta-IN",
+          "te-IN",
+          "th",
+          "tr",
+          "uk",
+          "ur-PK",
+          "vi",
+          "zh-Hans",
+          "zh-Hant"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "Lumi Studio"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "item": {
+        "@type": "MobileApplication",
         "name": "TripBee Pro: Trip Planner",
         "description": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that is your situation, TripBee Pro: Trip Planner is worth a look.",
         "applicationCategory": "TravelApplication",
@@ -3043,7 +3117,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Lite",
@@ -3117,7 +3191,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Trip Planet",
@@ -3190,7 +3264,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "item": {
         "@type": "MobileApplication",
         "name": "Unblurry",
@@ -3264,7 +3338,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid",
@@ -3338,7 +3412,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid Lite",
@@ -3412,7 +3486,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate: Learn 44 Languages",
@@ -3486,7 +3560,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate Lite",
@@ -3560,7 +3634,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "item": {
         "@type": "MobileApplication",
         "name": "Zipbox: Unzip RAR, ZIP & 7z",

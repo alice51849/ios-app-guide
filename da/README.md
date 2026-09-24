@@ -4,7 +4,7 @@
 
 Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.
 
-Søgeintentioner skrevet af udgiveren for 49 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
+Søgeintentioner skrevet af udgiveren for 50 verificerede iOS-apps, der er tilgængelige i App Store, på tværs af 50 Apple-sprog- og regionsvarianter.
 
 **Sprog og region:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · **da** · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 | **Snapport** | bedste pasfoto-app til babyer og småbørn derhjemme | Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet. Snapport er opstået præcis af det problem. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Hent Snapport i App Store →](https://apps.apple.com/dk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Pasfoto hjemme** | Snapport Lite: Pasfoto hjemme — Lav ID-fotos derhjemme \| iOS App | Snapport Lite - Tag pas-, visum- og dokumentfotos med vejledende størrelser, baggrundsværktøjer og klar til print eksport. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/snapportlite.html) | [Hent Snapport Lite: Pasfoto hjemme i App Store](https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | bedste app til stemme-noter, der opsummerer møder på iPhone | Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning. Det er præcis det hul, Sono Note skal lukke. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Skrivebordsur** | Stay Clock: Skrivebordsur — Tid og kalender, altid tændt \| iOS App | Stay Clock gør din iPhone eller iPad til et bordur, der altid er tændt, og som kan læses tværs gennem rummet. Stort klokkeslæt, en kalender der passer | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/stayclock.html) | [Hent Stay Clock: Skrivebordsur i App Store](https://apps.apple.com/dk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | bedste simple rejseplanlægningsapp til én kommende rejse til iPhone | Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag. Lyder det bekendt, så kig på TripBee Lite. | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Hent TripBee Lite i App Store →](https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Rejseplanlægger** | bedste rejseplanlægningsapp til iPhone | En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag tidslinje — fly, hoteller, aktiviteter, restauranter og transport — med klare typeikoner, så du kan læse din dag med et blik. Lyder det bekendt, så kig på TripBee Pro: Rejseplanlægger. | Betalt hentning | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Hent TripBee Pro: Rejseplanlægger i App Store →](https://apps.apple.com/dk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | bedste app til at rette slørede billeder af børn på iPhone | Børn står aldrig stille, så bløde og rystede billeder er uundgåelige | Gratis at komme i gang · oplåsning med et engangskøb | [Guide](https://open.cait518.cc/ios-app-guide/da/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Hent Unblurry i App Store →](https://apps.apple.com/dk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alfabetisk efter appnavn — aldrig en rangering.
 
 ## Hent det komplette datasæt
 
-JSON, JSONL og CSV indeholder de samme 2.450 poster.
+JSON, JSONL og CSV indeholder de samme 2.500 poster.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL og CSV indeholder de samme 2.450 poster.
 
 [Hjem](https://open.cait518.cc/ios-app-guide/da/index.html) · [Åbne data](https://open.cait518.cc/ios-app-guide/da/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Opdateret: 2026-09-22
+Opdateret: 2026-09-24
 
 CC BY 4.0 gælder for den oprindelige katalogsamling; app-navne og App Store-mærker tilhører deres ejere.

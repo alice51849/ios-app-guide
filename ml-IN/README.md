@@ -4,7 +4,7 @@
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-49 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
+50 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
 
 **ലൊക്കൽ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · **ml-IN** · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -129,6 +129,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | വീട്ടിൽ കുഞ്ഞുങ്ങളുടെയും ചെറുപ്പക്കാരുടെയും പാസ്പോർട്ട് ഫോട്ടോയ്ക്ക് മികച്ച ആപ്പ് | കുഞ്ഞിന്റെ പാസ്പോർട്ട് ഫോട്ടോയ്ക്ക് മറ്റാരും ഷോട്ടിൽ ഉണ്ടാകരുത്, പശ്ചാത്തലം ലളിതമായിരിക്കണം. Snapport തുടങ്ങിയത് ഈ പ്രശ്നത്തിൽ നിന്നു തന്നെയാണ്. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store-ൽ നിന്ന് Snapport നേടുക →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ഐഡി ഫോട്ടോ** | Snapport Lite: ഐഡി ഫോട്ടോ — Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ \| iOS App | Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ, പ്രിന്റ്-റെഡി എക്സ്പോർട്ട് ഉപയോഗിച്ച് പാസ്പോർട്ട്, വിസ, ഡോക്യുമെന്റ് ഫോട്ടോകൾ ഉണ്ടാക്കുക. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/snapportlite.html) | [App Store-ൽ നിന്ന് Snapport Lite: ഐഡി ഫോട്ടോ നേടൂ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone-ൽ മീറ്റിംഗുകൾ സംഗ്രഹിക്കുന്ന മികച്ച വോയ്സ് നോട്ട്സ് ആപ്പ് | ഒരു കോൾ കഴിഞ്ഞ് നിങ്ങൾക്ക് ഒരു കച്ചവട ട്രാൻസ്ക്രിപ്റ്റ് വേണ്ട, സംഗ്രഹവും പ്രവർത്തന കാര്യങ്ങളും, ഡ്രാഫ്റ്റ് ഫോളോ-അപ്പും വേണം. ഈ വിടവാണ് Sono Note നികത്താൻ ശ്രമിക്കുന്നത്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store-ൽ നിന്ന് Sono Note നേടുക →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: മേശ ക്ലോക്ക്** | Stay Clock: മേശ ക്ലോക്ക് — എപ്പോഴുമുള്ള സമയവും കലണ്ടറും \| iOS App | Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ, മുറിക്ക് അപ്പുറത്ത് നിന്ന് പോലും വായിക്കാവുന്ന എപ്പോഴും ഓണായ ഒരു മേശ ക്ലോക്കാക്കി മാറ്റുന്നു. വലിയ സമയം, ഓരോ | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/stayclock.html) | [App Store-ൽ നിന്ന് Stay Clock: മേശ ക്ലോക്ക് നേടൂ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | കുടുംബ യാത്രകളിൽ കുട്ടികൾക്കായി മികച്ച യാത്രാ പ്രവർത്തന ആപ്പ് | ചെറിയ കുട്ടികളുമായി യാത്ര ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് പാക്കിംഗ്, കാത്തിരിപ്പ്, പുതിയ സ്ഥലം കണ്ടെത്തൽ എന്നിവയെ അധിക സമ്മർദമാക്കാതെ സാഹസികയാത്രയുടെ ഭാഗമാക്കുന്ന പ്രവർത്തനങ്ങൾ വേണം. അതിനുവേണ്ടിയാണ് Trip Planet: Kids Quest ഉണ്ടാക്കിയത്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ഒരു വരാനിരിക്കുന്ന യാത്രയ്ക്കായി ഏറ്റവും മികച്ച ലളിതമായ യാത്രാ പദ്ധതിയിടുന്ന ആപ്പ് iPhone-ന് | നിങ്ങൾ ഒരു വരാനിരിക്കുന്ന യാത്ര പദ്ധതിയിടുകയാണെങ്കിൽ, ആ യാത്രയ്ക്ക് ശാന്തമായ ടൈംലൈൻ ഒരിക്കൽ എപ്പോഴും നിങ്ങൾക്ക് പോകാവുന്ന എല്ലാ യാത്രകളുടെ തിരക്കുള്ള ആർക്കൈവിനേക്കാൾ ഉപകാരപ്രദമാണ്. പരിചിതമായി തോന്നുന്നെങ്കിൽ TripBee Lite ഒന്നു നോക്കൂ. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store-ൽ നിന്ന് ട്രിപ്പ്‌ബി ലൈറ്റ് നേടുക →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: യാത്രാ പ്ലാനർ** | iPhone-ക്കുള്ള മികച്ച യാത്രാ യാത്രാമാർഗ്ഗം പ്ലാനർ ആപ്പ് | ഒരു നല്ല യാത്രാമാർഗ്ഗം ആപ്പ് ഒരു അഴുക്കുള്ള യാത്രയെ വ്യക്തമായ ദിനംപ്രതി ടൈംലൈൻ ആക്കുന്നു — ഫ്ലൈറ്റുകൾ, ഹോട്ടലുകൾ, പ്രവർത്തനങ്ങൾ, റസ്റ്റോറന്റുകൾ, ഗതാഗതം — വ്യക്തമായ ടൈപ്പ് ഐക്കണുകളോടെ, നിങ്ങൾക്ക് നിങ്ങളുടെ ദിവസം ഒരു നോട്ടത്തിൽ വായിക്കാൻ കഴിയുന്ന വിധം. പരിചിതമായി തോന്നുന്നെങ്കിൽ TripBee Pro: യാത്രാ പ്ലാനർ ഒന്നു നോക്കൂ. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store-ൽ നിന്ന് TripBee Pro: Trip Planner നേടുക →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## പൂർണ്ണ ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യുക
 
-JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,450 രേഖകൾ ഉൾക്കൊള്ളുന്നു
+JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,500 രേഖകൾ ഉൾക്കൊള്ളുന്നു
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,450 രേഖകൾ ഉ
 
 [ഹോം](https://open.cait518.cc/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://open.cait518.cc/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-09-22
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-09-24
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

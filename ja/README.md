@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 49 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 50 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Snapport** | 赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ | 赤ちゃんのパスポート写真は他の人が写ってはいけず背景は無地でなければなりませんが、乳児の場合は目が完全に開いていなくても構いません。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite：自宅で証明写真** | Snapport Lite：自宅で証明写真 — 自宅でID写真を作成 \| iOS App | Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/snapportlite.html) | [App Store で Snapport Lite：自宅で証明写真 を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhoneで会議を要約する最高のボイスノートアプリ | 通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App StoreでSono Noteを入手 →](https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock:パタパタ卓上時計** | Stay Clock:パタパタ卓上時計 — 常時点灯の時計とカレンダー \| iOS App | Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/stayclock.html) | [App Store で Stay Clock:パタパタ卓上時計 を入手](https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | iPhone向けのシンプルで使いやすい、次の旅行に最適な旅行プランナーアプリ | 次の旅行1つを計画しているなら、いつか行くかもしれないすべての旅行を詰め込んだ混雑したアーカイブよりも、その旅行の落ち着いたタイムラインの方が役立ちます。心当たりがあるなら、TripBee Liteを試してみてください。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: 旅行プランナー** | iPhone用最高の旅行日程プランナーアプリ | 優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします。心当たりがあるなら、TripBee Pro: 旅行プランナーを試してみてください。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App StoreでTripBee Pro: Trip Plannerを入手 →](https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | iPhoneで子どものぼやけた写真を修正する最高のアプリ | 子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,450件のレコードを含みます。
+JSON、JSONL、CSVは同じ2,500件のレコードを含みます。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON、JSONL、CSVは同じ2,450件のレコードを含みます。
 
 [ホーム](https://open.cait518.cc/ios-app-guide/ja/index.html) · [オープンデータ](https://open.cait518.cc/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-09-22
+更新日: 2026-09-24
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

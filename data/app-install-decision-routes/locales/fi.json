@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "fi",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/fi.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/fi.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Oppaan on kirjoittanut sovelluksen kehittäjä Lumi Studio. Sovellusten nimet ovat omistajiensa tavaramerkkejä, ja niitä käytetään vain tunnistamiseen. Asiakirjoihin, terveyteen, kouluun ja työn tuottavuuteen liittyvissä päätöksissä kannattaa tarkistaa viralliset vaatimukset silloin, kun niillä on merkitystä.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "fi:stayclock",
+      "locale": "fi",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Pöytäkello",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Pöytäkello — Aika ja kalenteri, aina päällä | iOS App",
+      "decision_context": "Stay Clock muuttaa iPhonesi tai iPadisi pöytäkelloksi, joka on aina päällä ja luettavissa huoneen toiselta puolelta. Suuri kellonaika, jokaiseen kellotauluun sopiva kalenteri ja yksi ilme, joka seuraa mukana StandBy-tilaan, lukittuun näyttöön, aloitusnäytön widgetteihin ja Apple Watchiin. Tehty pöydälle, hyllylle ja yöpöydälle. Kellonaika koko näytöllä, luettavissa kaukaa, pysty- tai vaakasuunnassa, iPhonessa ja iPadissa. Pidä näyttö päällä ymmärtää lataamisen. Pysyy päällä latauksen aikana, aina päällä akkurajalla, tai seuraa järjestelmää — ei ikinä yllätyksiä. Näytön suojaus OLED-näytöille. Lempeä pikselinsiirto, yksityiskohdat himmenevät levossa, ja himmeä punainen yökellotaulu täysin mustalla makuuhuoneeseen. Yksi kellotaulu kaikkialla. Valitsemasi kellotaulu näkyy koko näytöllä, StandByssä, lukitussa näytössä sekä aloitusnäytön widgeteissä ja Apple Watchissa — samanlaisena joka paikassa. Jokaiseen kellotauluun sopiva kalenteri. Valitse Pois, Yksinkertainen päivämäärällä ja viikonpäivällä, tai koko Kuukausinäkymä, erikseen jokaiselle kellotaululle. Oma kielesi ja aikavyöhykkeesi. Vaihda sovelluksen kieli heti, valitse mikä tahansa kaupunki tai aikavyöhyke, ja valitse 12 tai 24 tunnin kello omilla numeroillasi. Yksityinen suunnittelultaan. Ei tiliä, ei mainoksia, ei seurantaa eikä verkkoyhteyttä. Kaikki pysyy laitteessasi. Telakassa pöydällä: laite pysyy valaistuna latauksen ajan ja näyttää ajan valitsemassasi kellotaulussa. Makuuhuoneessa yöllä: näyttö himmenee hiljaiseksi punaiseksi kelloksi täysin mustalla ja säästää OLED-paneeliasi. Päivä poissa pöydältä: sama kellotaulu näkyy lukitussa näytössä, aloitusnäytössä ja ranteessasi. Tätä Stay Clock tekee Koko näytön kello, aina päällä, suurella ja selkeällä kellonajalla Yksi ilmainen kellotaulu mukana, käsinkirjoitetulla paperi-ilmeellä Pysyvä käyttöoikeus lisää 100 kellotaulua muissa väreissä, tyyleissä ja fonteissa Kalenteri Pois, Yksinkertainen tai Kuukausi tallennetaan erikseen jokaiselle kellotaululle StandBy-, lukitun näytön ja aloitusnäytön widgetit, jotka sopivat sovellukseen Apple Watch -kellotaulu, joka seuraa samaa muotoilua Pidä näyttö päällä latauksen ajan, akkurajalla ja järjestelmäasetuksilla Yöaikataulu, himmeä punainen kellotaulu ja pikselinsiirto OLED-näytöille Tuntimerkki ja yksinkertainen herätys Sovelluksen kieli ja aikavyöhyke valitaan sovelluksen sisällä iPhone- ja iPad-asettelut jokaiselle näytön koolle Stay Clock on ilmainen lataus, jossa on yksi täydellinen kellotaulu. Yksi valinnainen pysyvä käyttöoikeus avaa 100 kellotaulua lisää, ilman tilausta. Kaikki toimii laitteessasi. Ei tiliä, ei mainoksia, ei analytiikkaa eikä seurantaa.",
+      "category": "utility",
+      "category_label": "Lisää",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ilmainen aloitus",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Ei mainoksia"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Lisää",
+        "Ilmainen aloitus",
+        "Ei mainoksia",
+        "Apple Watch",
+        "App Store · Ilmainen"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/fi/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/fi/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Ffi%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Lataa Stay Clock: Pöytäkello App Storesta",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
+      "guide_cta_label": "Lue koko opas",
+      "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

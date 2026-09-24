@@ -4,7 +4,7 @@
 
 Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.
 
-Intenciones de búsqueda redactadas por el desarrollador para 49 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
+Intenciones de búsqueda redactadas por el desarrollador para 50 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
 
 **Región:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · **es-MX** · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Orden alfabético por nombre de app — nunca es una posición.
 | **Snapport** | mejor app para fotos de pasaporte de bebés y niños pequeños en casa | Para la foto de pasaporte de un bebé, nadie más puede aparecer y el fondo debe ser liso. Snapport nació justo de ese problema. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Obtén Snapport en la App Store →](https://apps.apple.com/mx/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Fotos de carnet** | Snapport Lite: Fotos de carnet — Crea fotos de carnet en casa \| iOS App | Snapport Lite - Haz fotos de pasaporte, visado y documentos con guías de tamaño, fondo e impresión. | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/snapportlite.html) | [Consigue Snapport Lite: Fotos de carnet en el App Store](https://apps.apple.com/mx/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | mejor app de notas de voz que resume reuniones en iPhone | Después de una llamada no quieres una transcripción cruda — quieres el resumen, las tareas y un borrador de seguimiento. Ese es justo el hueco que Sono Note busca cubrir. | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Obtén Sono Note en la App Store →](https://apps.apple.com/mx/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: reloj flip** | Stay Clock: reloj flip — Hora y calendario permanentes \| iOS App | Stay Clock convierte tu iPhone o iPad en un reloj de buró siempre encendido, fácil de leer incluso desde el otro lado del cuarto. Una hora grande, un | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/stayclock.html) | [Consigue Stay Clock: reloj flip en el App Store](https://apps.apple.com/mx/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | mejor app sencilla para planear un viaje en iPhone | Si planeas un solo viaje próximo, una línea de tiempo tranquila para ese viaje es más útil que un archivo saturado de todos los viajes que podrías hacer algún día. Si te suena conocido, échale un ojo a TripBee Lite. | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Consigue TripBee Lite en la App Store →](https://apps.apple.com/mx/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Planificador de Viajes** | mejor app para planificar itinerarios de viaje para iPhone | Una buena app de itinerarios convierte un viaje desordenado en una línea de tiempo clara día a día — vuelos, hoteles, actividades, restaurantes y transporte — con íconos claros por tipo para que leas tu día de un vistazo. Si te suena conocido, échale un ojo a TripBee Pro: Planificador de Viajes. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Obtén TripBee Pro: Planificador de Viajes en la App Store →](https://apps.apple.com/mx/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | mejor app para arreglar fotos borrosas de niños en iPhone | Los niños nunca se quedan quietos, así que fotos con enfoque suave y movimiento de cámara son inevitables | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Obtén Unblurry en la App Store →](https://apps.apple.com/mx/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Orden alfabético por nombre de app — nunca es una posición.
 
 ## Descargar el conjunto de datos completo
 
-JSON, JSONL y CSV contienen los mismos 2,450 registros.
+JSON, JSONL y CSV contienen los mismos 2,500 registros.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL y CSV contienen los mismos 2,450 registros.
 
 [Inicio](https://open.cait518.cc/ios-app-guide/es-MX/index.html) · [Datos abiertos](https://open.cait518.cc/ios-app-guide/es-MX/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizado: 2026-09-22
+Actualizado: 2026-09-24
 
 CC BY 4.0 aplica a la compilación original del catálogo; los nombres de las apps y las marcas de App Store pertenecen a sus propietarios.

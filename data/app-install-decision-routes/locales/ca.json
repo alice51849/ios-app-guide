@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ca",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ca.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ca.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ca:stayclock",
+      "locale": "ca",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Rellotge de Taula",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Rellotge de Taula — Hora i calendari sempre actius | iOS App",
+      "decision_context": "Stay Clock converteix el teu iPhone o iPad en un rellotge de taula sempre actiu, llegible des de l'altra punta de l'habitació. Hora gran, un calendari que s'adapta a cada esfera i un aspecte que t'acompanya a l'En Repòs, la pantalla bloquejada, els widgets de la pantalla d'inici i l'Apple Watch. Fet per a la taula, el prestatge i la tauleta de nit. Hora a pantalla completa, llegible de lluny, en vertical o horitzontal, a l'iPhone i l'iPad. Mantén la pantalla activa entén la càrrega. Es manté activa mentre carrega, sempre activa amb un límit de bateria, o segueix el sistema, així que mai et sorprèn. Protecció del panell per a pantalles OLED. Desplaçament suau de píxels, detalls que s'atenuen en repòs, i una esfera vermella tènue en negre pur per a l'habitació. Una esfera a tot arreu. L'esfera que tries apareix a la pantalla completa, a l'En Repòs, a la pantalla bloquejada i als widgets de la pantalla d'inici i l'Apple Watch, sempre igual. Un calendari per a cada esfera. Tria Desactivat, Simple amb la data i el dia de la setmana, o un Mes complet, per separat per a cada esfera. El teu idioma i el teu fus horari. Canvia l'idioma de l'app a l'instant, tria qualsevol ciutat o fus horari, i decideix entre 12 o 24 hores amb les teves pròpies xifres. Privat per disseny. Sense compte, sense anuncis, sense seguiment i sense xarxa. Tot es queda al teu dispositiu. En una base a la taula: el dispositiu es manté encès mentre carrega, mostrant l'hora en l'esfera que has triat. A l'habitació de nit: la pantalla s'atenua a un rellotge vermell tènue en negre pur i estalvia el teu panell OLED. Un dia lluny de la taula: la mateixa esfera és a la pantalla bloquejada, la pantalla d'inici i el teu canell. Què fa Stay Clock Rellotge a pantalla completa sempre actiu, amb hora gran i llegible Una esfera gratuïta inclosa, amb aspecte de paper escrit a mà L'accés per sempre afegeix 100 esferes més en colors, estils i tipus de lletra diferents Calendari Desactivat, Simple o Mes, desat per separat per a cada esfera Widgets d'En Repòs, pantalla bloquejada i pantalla d'inici a joc amb l'app Esfera de l'Apple Watch que segueix el mateix disseny Mantén la pantalla activa mentre carrega, amb límit de bateria i opcions del sistema Horari nocturn, esfera vermella tènue i desplaçament de píxels per a pantalles OLED Campanada horària i una alarma senzilla Idioma de l'app i fus horari triats dins de l'app Dissenys per a iPhone i iPad, per a cada mida de pantalla Stay Clock es descarrega gratis amb una esfera completa. Una compra opcional d'accés per sempre desbloqueja 100 esferes més, sense subscripció. Tot funciona al teu dispositiu. Sense compte, sense anuncis, sense anàlisi i sense seguiment.",
+      "category": "utility",
+      "category_label": "Més",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Inici gratuït",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Sense anuncis"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Més",
+        "Inici gratuït",
+        "Sense anuncis",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ca/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ca/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fca%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Descarrega Stay Clock: Rellotge de Taula a l’App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Llegeix la guia completa",
+      "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

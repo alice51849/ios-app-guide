@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+  "content_digest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 49,
+  "record_count": 50,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,7 +27,8 @@
         "สเก็ตช์",
         "วาดรูป",
         "ออฟไลน์",
-        "จัดระเบียบ"
+        "จัดระเบียบ",
+        "จดโน้ตด้วยลายมือ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -68,7 +69,8 @@
         "OCR",
         "พรอมต์",
         "จัดระเบียบข้อมูล",
-        "ช่วยเขียน"
+        "ช่วยเขียน",
+        "พรอมต์ ai"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -221,7 +223,8 @@
         "วิทยาศาสตร์",
         "นับวัน",
         "วันทำการ",
-        "ค่าน้ำมัน"
+        "ค่าน้ำมัน",
+        "เครื่องคิดเลข วิดเจ็ต"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -275,7 +278,8 @@
         "docx",
         "แบบฟอร์ม",
         "ตำแหน่งงาน",
-        "ประวัติส่วนตัว"
+        "ประวัติส่วนตัว",
+        "เรซูเม่ ats"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -512,7 +516,8 @@
         "ท่องเที่ยว",
         "กระเป๋า",
         "offline",
-        "csv"
+        "csv",
+        "บันทึกค่าใช้จ่ายเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -956,7 +961,8 @@
         "สมาธิ",
         "มอนเตสซอรี",
         "ออฟไลน์",
-        "alphabet"
+        "alphabet",
+        "โฟนิกส์เด็ก"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1517,7 +1523,9 @@
         "ประชุม",
         "การบ้าน",
         "ข้อมูล",
-        "กราฟ"
+        "กราฟ",
+        "ทำสไลด์",
+        "สรุปการประชุม"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1680,7 +1688,9 @@
         "ท่องเที่ยว",
         "ช้อปปิ้ง",
         "โน้ต",
-        "ส่วนตัว"
+        "ส่วนตัว",
+        "บุ๊กมาร์ก",
+        "อ่านทีหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1972,6 +1982,43 @@
       }
     },
     {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: นาฬิกาตั้งโต๊ะพลิก",
+      "summary": "Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณให้เป็นนาฬิกาตั้งโต๊ะที่เปิดค้างตลอด อ่านได้แม้อยู่อีกฝั่งของห้อง ตัวเลขเวลาขนาดใหญ่ ปฏิทินที่เข้ากับหน้าปัดแต่ละแบบ และดีไซน์เดียวที่ตามไปปรากฏใน StandBy หน้าจอล็อค วิดเจ็ตหน้าจอโฮม และ Apple Watch",
+      "category": "utility",
+      "search_terms": [
+        "นาฬิกาดิจิทัล",
+        "นาฬิกาหัวเตียง",
+        "นาฬิกาตั้งโต๊ะ",
+        "แท่นชาร์จ",
+        "วิดเจ็ตนาฬิกา",
+        "จอโอแอลอีดี",
+        "นาฬิกาปลุก",
+        "ธีมนาฬิกา"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6814035888"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: เที่ยว",
@@ -2019,7 +2066,8 @@
         "ทริป",
         "เดินทาง",
         "ตั๋ว",
-        "เตือน"
+        "เตือน",
+        "แผนการเดินทาง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2060,7 +2108,8 @@
         "โรงแรม",
         "เที่ยวบิน",
         "ที่เที่ยว",
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "แผนเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2123,7 +2172,8 @@
         "กู้คืน",
         "โฟกัส",
         "4k",
-        "ai"
+        "ai",
+        "เพิ่มความคมชัดรูป"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2164,7 +2214,8 @@
         "ipv4",
         "ipv6",
         "http",
-        "ping"
+        "ping",
+        "วิเคราะห์ wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 49 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 50 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -130,6 +130,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | 最佳在家拍攝嬰幼兒護照照片App | 嬰兒護照照片中不得有其他人，背景必須純色。Snapport 就是從這個問題開始做的。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite：在家製作證件照** | Snapport Lite：在家製作證件照 — 在家製作證件照 \| iOS App | Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護照、簽證與證件照。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html) | [在 App Store 取得 Snapport Lite：在家製作證件照](https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | 最佳 iPhone 會議語音筆記摘要App | 通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續。這個缺口，就是 Sono Note 想補上的。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [在 App Store 取得 Sono Note →](https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock:翻頁桌鐘** | Stay Clock:翻頁桌鐘 — 全天顯示時間與行事曆 \| iOS App | Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也看得清楚。大大的時間顯示、配合每款錶面的行事曆,還有一款同步出現在 StandBy、鎖定畫面、主畫面小工具與 Apple Watch 的錶面設計。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html) | [在 App Store 取得 Stay Clock:翻頁桌鐘](https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | 適合即將出行的最佳簡易行程規劃 iPhone 應用程式 | 如果您只規劃一趟即將出行的旅程，專注且清晰的行程時間軸比起堆積如山的歷史行程更實用。如果你也是這種狀況，可以看看 TripBee Lite。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [於 App Store 取得 TripBee Lite →](https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro：旅遊規劃師** | 最佳 iPhone 旅遊行程規劃App | 好的行程 App 會把散亂的旅程整理成一天一頁的時間軸，航班、飯店、活動、餐廳、交通各有清楚的圖示，一眼就看得出今天要做什麼。如果你也是這種狀況，可以看看 TripBee Pro：旅遊規劃師。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-trip-itinerary-planner-app-for-iphone.html) | [在 App Store 取得 TripBee Pro：旅遊規劃師 →](https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | 最佳 iPhone 修復兒童模糊照片App | 孩子總是不停動，輕微失焦與手震照片難免。Unblurry 只做這一件事，其他一律不加。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [在 App Store 取得 Unblurry →](https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 2,450 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 2,500 筆紀錄。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 2,450 筆紀錄。
 
 [首頁](https://open.cait518.cc/ios-app-guide/zh-Hant/index.html) · [開放資料](https://open.cait518.cc/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-09-22
+更新日期: 2026-09-24
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-49 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+50 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -129,6 +129,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | ಮಕ್ಕಳು ಮತ್ತು ಬಾಲಕರಿಗೆ ಮನೆಮೇಲೆ ಉತ್ತಮ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋ ಅಪ್ಲಿಕೇಶನ್ | ಮಗುವಿನ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋಗೆ, ಇನ್ನೊಬ್ಬರು ಫೋಟೋದಲ್ಲಿ ಇರಬಾರದು ಮತ್ತು ಹಿನ್ನೆಲೆ ಸರಳವಾಗಿರಬೇಕು. Snapport ಶುರುವಾಗಿದ್ದೇ ಈ ಸಮಸ್ಯೆಯಿಂದ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store ನಲ್ಲಿ Snapport ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ಐಡಿ ಫೋಟೋ ರಚನೆ** | Snapport Lite: ಐಡಿ ಫೋಟೋ ರಚನೆ — ಮನೆದಲ್ಲಿ ಐಡಿ ಫೋಟೋಗಳನ್ನು ರಚಿಸಿ \| iOS App | Snapport Lite - ಮಾರ್ಗದರ್ಶನದ ಗಾತ್ರ, ಹಿನ್ನೆಲೆ ಸಾಧನಗಳು ಮತ್ತು ಮುದ್ರಣಕ್ಕೆ ತಯಾರಾದ ರಫ್ತಿನೊಂದಿಗೆ ಪಾಸ್ಪೋರ್ಟ್, ವೀಸಾ ಮತ್ತು ದಾಖಲೆ ಫೋಟೋಗಳನ್ನು ಮಾಡಿ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/snapportlite.html) | [App Store ನಲ್ಲಿ Snapport Lite: ಐಡಿ ಫೋಟೋ ರಚನೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone ನಲ್ಲಿ ಸಭೆಗಳನ್ನು ಸಾರಾಂಶಗೊಳಿಸುವ ಉತ್ತಮ ಧ್ವನಿ ಟಿಪ್ಪಣಿಗಳು ಅಪ್ಲಿಕೇಶನ್ | ಕರೆ ನಂತರ ನೀವು ಕಚ್ಚಾ ಲಿಪ್ಯಂತರಣೆಯನ್ನು ಬಯಸುವುದಿಲ್ಲ — ನೀವು ಸಾರಾಂಶ, ಕಾರ್ಯಪಟ್ಟಿ ಮತ್ತು ಡ್ರಾಫ್ಟ್ ಅನುಸರಿಸುವ ಇಮೇಲ್ ಬಯಸುತ್ತೀರಿ. ಈ ಕೊರತೆಯನ್ನೇ Sono Note ತುಂಬಲು ಬಯಸುತ್ತದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store ನಲ್ಲಿ Sono Note ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: ಡೆಸ್ಕ್ ಗಡಿಯಾರ** | Stay Clock: ಡೆಸ್ಕ್ ಗಡಿಯಾರ — ಸದಾ ಆನ್ ಸಮಯ ಮತ್ತು ಕ್ಯಾಲೆಂಡರ್ \| iOS App | Stay Clock ನಿಮ್ಮ iPhone ಅಥವಾ iPad ಅನ್ನು ಕೋಣೆಯ ಇನ್ನೊಂದು ತುದಿಯಿಂದಲೂ ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣುವ, ಸದಾ ಆನ್ ಡೆಸ್ಕ್ ಗಡಿಯಾರವಾಗಿ ಬದಲಾಯಿಸುತ್ತದೆ. ದೊಡ್ಡ ಅಂಕಿಗಳ ಸಮಯ, ಪ್ರತಿ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/stayclock.html) | [App Store ನಲ್ಲಿ Stay Clock: ಡೆಸ್ಕ್ ಗಡಿಯಾರ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | ಕುಟುಂಬ ಪ್ರಯಾಣಗಳಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಚಟುವಟಿಕೆ ಅಪ್ಲಿಕೇಶನ್ | ಯುವ ಮಕ್ಕಳೊಂದಿಗೆ ಪ್ರಯಾಣಿಸುವ ಪೋಷಕರು ಪ್ಯಾಕಿಂಗ್, ಕಾಯುವುದು ಮತ್ತು ಹೊಸ ಸ್ಥಳ ಅನ್ವೇಷಣೆಯನ್ನು ಸಾಹಸದ ಭಾಗವಾಗಿ ಪರಿವರ್ತಿಸುವ ಚಟುವಟಿಕೆಗಳನ್ನು ಬೇಕು. ಅದಕ್ಕಾಗಿಯೇ Trip Planet: Kids Quest ರೂಪುಗೊಂಡಿತು. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ಒಂದು ಬರುವ ಪ್ರಯಾಣಕ್ಕಾಗಿ ಅತ್ಯುತ್ತಮ ಸರಳ ಪ್ರಯಾಣ ಯೋಜಕ ಆಪ್ iPhone ಗೆ | ನೀವು ಒಂದು ಬರುವ ಪ್ರಯಾಣವನ್ನು ಯೋಜಿಸುತ್ತಿದ್ದರೆ, ಆ ಪ್ರಯಾಣದ ಶಾಂತ ಟೈಮ್‌ಲೈನ್ ಪ್ರತಿಯೊಂದು ಪ್ರಯಾಣದ ಗದ್ದಲದ ಸಂಗ್ರಹಕ್ಕಿಂತ ಹೆಚ್ಚು ಉಪಯುಕ್ತವಾಗಿದೆ. ಪರಿಚಿತ ಎನಿಸಿದರೆ TripBee Lite ಒಮ್ಮೆ ನೋಡಿ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store ನಲ್ಲಿ ಟ್ರಿಪ್‌ಬೀ ಲೈಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: ಪ್ರವಾಸ ಯೋಜಕ** | iPhone ಗೆ ಉತ್ತಮ ಪ್ರವಾಸ ಯೋಜನಾ ಅಪ್ಲಿಕೇಶನ್ | ಒಂದು ಉತ್ತಮ ಯೋಜನಾ ಅಪ್ಲಿಕೇಶನ್ ಗೊಂದಲದ ಪ್ರವಾಸವನ್ನು ಸ್ಪಷ್ಟ ದಿನನಿತ್ಯ ಟೈಮ್‌ಲೈನ್ ಆಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ — ವಿಮಾನಗಳು, ಹೋಟೆಲ್‌ಗಳು, ಚಟುವಟಿಕೆಗಳು, ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು ಮತ್ತು ಸಾರಿಗೆ — ಸ್ಪಷ್ಟ ಟೈಪ್ ಐಕಾನ್‌ಗಳೊಂದಿಗೆ ನೀವು ನಿಮ್ಮ ದಿನವನ್ನು ಒಂದು ನೋಟದಲ್ಲಿ ಓದಬಹುದು. ಪರಿಚಿತ ಎನಿಸಿದರೆ TripBee Pro: ಪ್ರವಾಸ ಯೋಜಕ ಒಮ್ಮೆ ನೋಡಿ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store ನಲ್ಲಿ TripBee Pro: ಪ್ರವಾಸ ಯೋಜಕ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,450 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,500 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,450 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://open.cait518.cc/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://open.cait518.cc/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-09-22
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-09-24
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

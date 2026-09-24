@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "fr-CA",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/fr-CA.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/fr-CA.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "fr-CA:stayclock",
+      "locale": "fr-CA",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock : horloge flip",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock : horloge flip — Heure et calendrier permanents | iOS App",
+      "decision_context": "Avec Stay Clock, votre iPhone ou iPad devient une horloge de bureau toujours allumée, facile à lire même de l’autre bout de la pièce. Une heure grande et bien visible, un calendrier propre à chaque cadran, et un même style qui vous suit dans StandBy, l’écran verrouillé, les widgets de l’écran d’accueil et l’Apple Watch. Conçue pour le bureau, l’étagère et la table de chevet. Une heure plein écran qui reste lisible de loin, à la verticale comme à l’horizontale, sur iPhone et iPad. Maintien de l’écran qui tient compte de la charge. L’écran reste allumé pendant la charge, toujours allumé au-dessus d’un seuil de batterie, ou selon le réglage du système : votre horloge ne vous surprend jamais. Protection de l’écran, pensée pour l’OLED. Déplacement discret des pixels, détails adoucis à l’arrêt, et un cadran de nuit rouge et sombre sur fond noir pur pour la chambre. Un cadran, partout pareil. Le cadran choisi apparaît sur l’horloge plein écran, dans StandBy, sur l’écran verrouillé, dans les widgets de l’écran d’accueil et sur l’Apple Watch, toujours identique. Un calendrier propre à chaque cadran. Choisissez Désactivé, Simple avec la date et le jour de la semaine, ou la vue Mois au complet, séparément pour chaque cadran. Votre langue, votre fuseau horaire. Changez la langue de l’app en un instant, choisissez n’importe quelle ville ou fuseau horaire, et optez pour l’affichage 12 ou 24 heures avec vos propres chiffres. Privée dès la conception. Aucun compte, aucune publicité, aucun pistage, aucun réseau. Tout reste sur votre appareil. Sur un dock, au bureau : le téléphone reste allumé pendant la charge et affiche l’heure dans le cadran choisi. Dans la chambre, la nuit : l’écran s’assombrit en une horloge rouge discrète sur fond noir pur, ce qui préserve votre écran OLED. Une journée loin du bureau : le même cadran reste sur l’écran verrouillé, l’écran d’accueil et au poignet. Ce que Stay Clock permet de faire Horloge plein écran toujours allumée, avec une heure grande et facile à lire Un cadran gratuit inclus, avec un style papier écrit à la main L’accès à vie ajoute 100 cadrans de plus, dans différentes couleurs, différents styles et polices Calendrier Désactivé, Simple ou Mois, enregistré séparément pour chaque cadran Widgets StandBy, écran verrouillé et écran d’accueil assortis à l’app Cadran Apple Watch qui reprend le même design Maintien de l’écran pendant la charge, avec seuil de batterie et réglages du système Horaire de nuit, cadran rouge sombre et déplacement des pixels pour l’OLED Carillon chaque heure et une alarme toute simple Langue de l’app et fuseau horaire à choisir directement dans l’app Mises en page pour iPhone et iPad, quelle que soit la taille d’écran Stay Clock se télécharge gratuitement avec un cadran complet. Un achat à vie facultatif débloque 100 cadrans de plus, sans abonnement. Tout se passe sur votre appareil. Aucun compte, aucune publicité, aucune mesure d’audience, aucun pistage.",
+      "category": "utility",
+      "category_label": "Plus",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratuit au départ · déblocage unique",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Aucune publicité"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Plus",
+        "Gratuit au départ · déblocage unique",
+        "Aucune publicité",
+        "Apple Watch",
+        "App Store · Gratuit"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/fr-CA/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/fr-CA/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Ffr-CA%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Obtenir Stay Clock : horloge flip sur l'App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
+      "guide_cta_label": "Lire le guide complet",
+      "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

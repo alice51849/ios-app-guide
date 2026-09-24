@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.
 
-Niat pencarian yang ditulis penerbit untuk 49 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
+Niat pencarian yang ditulis penerbit untuk 50 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · **id** · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 | **Snapport** | aplikasi foto paspor terbaik untuk bayi dan balita di rumah | Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang harus polos. Snapport berangkat persis dari masalah ini. | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Dapatkan Snapport di App Store →](https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Buat pasfoto** | Snapport Lite: Buat pasfoto — Buat pasfoto di rumah \| iOS App | Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/snapportlite.html) | [Dapatkan Snapport Lite: Buat pasfoto di App Store](https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | aplikasi catatan suara terbaik yang merangkum rapat di iPhone | Setelah panggilan, Anda tidak ingin transkrip mentah — Anda ingin ringkasan, item tindakan, dan draf tindak lanjut. Celah itulah yang ingin ditutup Sono Note. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Dapatkan Sono Note di App Store →](https://apps.apple.com/id/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Jam Meja Flip** | Stay Clock: Jam Meja Flip — Jam dan kalender selalu aktif \| iOS App | Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan bisa dibaca dari seberang ruangan. Waktu besar, kalender yang menyesuaikan | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/stayclock.html) | [Dapatkan Stay Clock: Jam Meja Flip di App Store](https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | aplikasi perencana perjalanan sederhana terbaik untuk satu perjalanan mendatang di iPhone | Jika Anda merencanakan satu perjalanan mendatang, garis waktu yang tenang untuk perjalanan itu lebih berguna daripada arsip penuh dari setiap perjalanan yang mungkin Anda lakukan suatu hari nanti. Kalau terasa familier, coba lihat TripBee Lite. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Dapatkan TripBee Lite di App Store →](https://apps.apple.com/id/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Perencana Perjalanan** | aplikasi perencana rencana perjalanan terbaik untuk iPhone | Aplikasi rencana perjalanan yang baik mengubah perjalanan yang berantakan menjadi garis waktu harian yang jelas — penerbangan, hotel, aktivitas, restoran, dan transportasi — dengan ikon tipe yang jelas agar Anda bisa membaca hari Anda sekilas. Kalau terasa familier, coba lihat TripBee Pro: Perencana Perjalanan. | Unduhan berbayar | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Dapatkan TripBee Pro: Trip Planner di App Store →](https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | aplikasi terbaik untuk memperbaiki foto anak yang buram di iPhone | Anak-anak tidak pernah diam, jadi foto dengan fokus lembut dan goyangan kamera tidak terhindarkan | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://open.cait518.cc/ios-app-guide/id/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Dapatkan Unblurry di App Store →](https://apps.apple.com/id/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 
 ## Unduh dataset lengkap
 
-JSON, JSONL, dan CSV memuat 2.450 catatan yang sama.
+JSON, JSONL, dan CSV memuat 2.500 catatan yang sama.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL, dan CSV memuat 2.450 catatan yang sama.
 
 [Beranda](https://open.cait518.cc/ios-app-guide/id/index.html) · [Data terbuka](https://open.cait518.cc/ios-app-guide/id/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisensi](https://creativecommons.org/licenses/by/4.0/)
 
-Diperbarui: 2026-09-22
+Diperbarui: 2026-09-24
 
 CC BY 4.0 berlaku untuk kompilasi katalog asli; nama aplikasi dan merek App Store adalah milik pemiliknya masing-masing.

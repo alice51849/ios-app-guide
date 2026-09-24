@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "no",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/no.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/no.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "no:stayclock",
+      "locale": "no",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Skrivebordsklokke",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Skrivebordsklokke — Tid og kalender, alltid på | iOS App",
+      "decision_context": "Stay Clock gjør iPhone eller iPad om til en bordklokke som alltid er på, og som kan leses tvers over rommet. Stort klokkeslett, en kalender som passer til hver urskive, og ett utseende som følger deg til Ventemodus, låst skjerm, widgeter på hjemskjermen og Apple Watch. Laget for skrivebordet, hyllen og nattbordet. Klokkeslett i fullskjerm, lesbart på avstand, stående eller liggende, på iPhone og iPad. Hold våken forstår lading. Forblir på under lading, alltid på med en batterigrense, eller følger systemet — så du aldri blir overrasket. Innbrenningsvern for OLED-skjermer. Skånsom pikselforskyvning, detaljer som dempes i ro, og en dempet rød naturskive på ekte sort til soverommet. Én urskive overalt. Urskiven du velger vises i fullskjerm, i Ventemodus, på låst skjerm og i widgeter på hjemskjermen og Apple Watch — lik overalt. En kalender som passer til hver urskive. Velg Av, Enkel med dato og ukedag, eller en hel Månedsvisning, hver for seg for hver urskive. Ditt språk og din tidssone. Bytt appens språk med én gang, velg hvilken som helst by eller tidssone, og velg 12- eller 24-timersformat med dine egne tall. Privat av natur. Ingen konto, ingen reklame, ingen sporing og ingen nettverkstilkobling. Alt blir på enheten din. På en dock på skrivebordet: enheten din lyser mens den lader, og viser tiden i urskiven du valgte. På soverommet om natten: skjermen dempes til en rolig rød klokke på ekte sort og skåner OLED-panelet ditt. En dag borte fra skrivebordet: samme urskive ligger på låst skjerm, hjemskjermen og håndleddet ditt. Dette gjør Stay Clock Klokke i fullskjerm, alltid på, med stort, tydelig klokkeslett Én gratis urskive inkludert, med et håndskrevet papirpreg Fullversjon legger til 100 flere urskiver i andre farger, stiler og skrifttyper Kalenderen Av, Enkel eller Måned lagres separat for hver urskive Widgeter for Ventemodus, låst skjerm og hjemskjerm som matcher appen Apple Watch-urskive som følger samme design Hold våken under lading, med batterigrense og systemvalg Nattplan, dempet rød urskive og pikselforskyvning for OLED-skjermer Timeslag og en enkel alarm Appens språk og tidssone velges inne i appen Oppsett for iPhone og iPad, for alle skjermstørrelser Stay Clock er gratis å laste ned med én komplett urskive. Ett valgfritt engangskjøp av fullversjonen låser opp 100 flere urskiver for alltid, uten abonnement. Alt kjører på enheten din. Ingen konto, ingen reklame, ingen analyse og ingen sporing.",
+      "category": "utility",
+      "category_label": "Mer",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis å starte",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Ingen annonser"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Mer",
+        "Gratis å starte",
+        "Ingen annonser",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/no/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/no/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fno%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/no.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Last ned Stay Clock: Skrivebordsklokke fra App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Les hele veiledningen",
+      "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

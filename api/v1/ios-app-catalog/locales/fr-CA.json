@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+  "content_digest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 49,
+  "record_count": 50,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1931,6 +1931,46 @@
         "currency": "CAD",
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ca/app/id6782139553"
+      }
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock : horloge flip",
+      "summary": "Avec Stay Clock, votre iPhone ou iPad devient une horloge de bureau toujours allumée, facile à lire même de l’autre bout de la pièce. Une heure grande et bien visible, un calendrier propre à chaque cadran, et un même style qui vous suit dans StandBy, l’écran verrouillé, les widgets de l’écran d’accueil et l’Apple Watch.",
+      "category": "utility",
+      "search_terms": [
+        "chevet",
+        "veille",
+        "chargeur",
+        "rémanence",
+        "oled",
+        "widgets",
+        "numérique",
+        "polices",
+        "écran verrouillé",
+        "format 24h",
+        "carillon"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6814035888"
       }
     },
     {

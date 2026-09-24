@@ -4,7 +4,7 @@
 
 A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 49 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 50 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · **en-GB** · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alphabetical by app name — never a ranking.
 | **Snapport** | best passport photo app for babies and toddlers at home | For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Get Snapport on the App Store →](https://apps.apple.com/gb/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite** | best free passport photo app for iphone that works offline | A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html) | [Get Snapport Lite on the App Store →](https://apps.apple.com/gb/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | best voice notes app that summarizes meetings on iphone | After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. That's the gap Sono Note was built to close. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Get Sono Note on the App Store →](https://apps.apple.com/gb/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Flip Desk Clock** | Stay Clock: Flip Desk Clock — Always-on time and calendar \| iOS App | Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big time, a calendar that fits each face, and one look | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/stayclock.html) | [Get Stay Clock: Flip Desk Clock on the App Store](https://apps.apple.com/gb/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | best simple trip planner app for one upcoming trip iphone | If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday. If that sounds like your situation, TripBee Lite is worth a look. | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Get TripBee Lite on the App Store →](https://apps.apple.com/gb/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Trip Planner** | best trip itinerary planner app for iphone | A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that sounds like your situation, TripBee Pro: Trip Planner is worth a look. | Paid download | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Get TripBee Pro: Trip Planner on the App Store →](https://apps.apple.com/gb/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | best app to fix blurry photos of kids on iphone | Kids never hold still, so soft-focus and camera-shake shots are inevitable | Free to start · one-time unlock | [Guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Get Unblurry on the App Store →](https://apps.apple.com/gb/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,450 records.
+JSON, JSONL and CSV contain the same 2,500 records.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL and CSV contain the same 2,450 records.
 
 [Home](https://open.cait518.cc/ios-app-guide/en-GB/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/en-GB/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-09-22
+Updated: 2026-09-24
 
 CC BY 4.0 applies to the original catalogue compilation; app names and App Store marks belong to their owners.

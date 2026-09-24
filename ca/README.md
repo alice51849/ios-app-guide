@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 49 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 50 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **Snapport** | Millor app per fer fotos de passaport a nadons i infants a casa | Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme. Snapport va néixer precisament d'aquest problema. | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Descarrega Snapport a l’App Store →](https://apps.apple.com/es/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Fotos de carnet** | Snapport Lite: Fotos de carnet — Crea fotos d'ID a casa \| iOS App | Snapport Lite - Fes fotos de passaport, visat i documents amb dimensions guiades, eines de fons i exportació llesta per imprimir. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/snapportlite.html) | [Descarrega Snapport Lite: Fotos de carnet a l’App Store](https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | Millor app de notes de veu que resumeix reunions a l’iPhone | Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment. Aquest és el buit que Sono Note vol cobrir. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Descarrega Sono Note a l’App Store →](https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Rellotge de Taula** | Stay Clock: Rellotge de Taula — Hora i calendari sempre actius \| iOS App | Stay Clock converteix el teu iPhone o iPad en un rellotge de taula sempre actiu, llegible des de l'altra punta de l'habitació. Hora gran, un calendari | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/stayclock.html) | [Descarrega Stay Clock: Rellotge de Taula a l’App Store](https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | millor app senzilla per planificar un viatge a l'iPhone | Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Lite. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Descarrega TripBee Lite a l’App Store →](https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Planificador de Viatges** | Millor app per planificar itineraris de viatge per iPhone | Una bona app d’itineraris converteix un viatge desordenat en una línia de temps clara dia a dia — vols, hotels, activitats, restaurants i transport — amb icones clares per tipus perquè puguis llegir el teu dia d’un cop d’ull. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Pro: Planificador de Viatges. | Descarrega de pagament | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Descarrega TripBee Pro: Planificador de Viatges a l’App Store →](https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | Millor app per arreglar fotos borroses de nens a l’iPhone | Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables | Inici gratuït · desbloqueig amb una compra única | [Guia](https://open.cait518.cc/ios-app-guide/ca/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Descarrega Unblurry a l’App Store →](https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 2.450 registres.
+JSON, JSONL i CSV contenen els mateixos 2.500 registres.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL i CSV contenen els mateixos 2.450 registres.
 
 [Inici](https://open.cait518.cc/ios-app-guide/ca/index.html) · [Dades obertes](https://open.cait518.cc/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-09-22
+Actualitzat: 2026-09-24
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

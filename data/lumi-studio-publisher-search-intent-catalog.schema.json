@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 49
+      "const": 50
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2450
+      "const": 2500
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2450,
-      "maxItems": 2450,
+      "minItems": 2500,
+      "maxItems": 2500,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -271,6 +271,7 @@
               "snapport",
               "snapportlite",
               "sononote",
+              "stayclock",
               "tripbee",
               "tripbeelite",
               "tripplanet",

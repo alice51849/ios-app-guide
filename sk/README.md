@@ -4,7 +4,7 @@
 
 Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
 
-Zámery vyhľadávania vytvorené vydavateľom pre 49 overených aktívnych iOS aplikácií a 50 lokalít Apple.
+Zámery vyhľadávania vytvorené vydavateľom pre 50 overených aktívnych iOS aplikácií a 50 lokalít Apple.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · **sk** · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 | **Snapport** | najlepšia aplikácia na pasové fotografie pre bábätká a batoľatá doma | Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie musí byť jednoliate. Snapport vznikol presne z tohto problému. | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Stiahnite si Snapport v App Store →](https://apps.apple.com/sk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Foto na doklady** | Snapport Lite: Foto na doklady — Vytvorte ID fotografie doma \| iOS App | Snapport Lite - Vytvorte pasové, vízové a dokumentové fotografie s usmernením na veľkosť, nástroje na pozadie a export pripravený na tlač. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/snapportlite.html) | [Stiahnuť Snapport Lite: Foto na doklady v App Store](https://apps.apple.com/sk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | najlepšia aplikácia na hlasové poznámky, ktorá zhrňuje stretnutia na iPhone | Po hovore nechcete surový prepis — chcete zhrnutie, úlohy a návrh pokračovania. Presne túto medzeru má Sono Note zaplniť. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Stiahnite si Sono Note v App Store →](https://apps.apple.com/sk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: sklápacie hodiny** | Stay Clock: sklápacie hodiny — Nepretržitý čas a kalendár \| iOS App | Stay Clock zmení váš iPhone alebo iPad na nepretržite svietiace stolové hodiny, čitateľné aj z druhého konca miestnosti. Veľký čas, kalendár, ktorý sadne | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/stayclock.html) | [Stiahnuť Stay Clock: sklápacie hodiny v App Store](https://apps.apple.com/sk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | najlepšia jednoduchá aplikácia na plánovanie jednej nadchádzajúcej cesty pre iPhone | Ak plánujete jednu nadchádzajúcu cestu, pokojný časový plán pre túto cestu je užitočnejší než preplnený archív všetkých ciest, ktoré by ste mohli niekedy absolvovať. Ak to poznáte, pozrite sa na TripBee Lite. | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Stiahnite si TripBee Lite v App Store →](https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Plánovač ciest** | najlepšia aplikácia na plánovanie itinerára cesty pre iPhone | Dobrá aplikácia na itinerár premení chaotickú cestu na jasný denný harmonogram — lety, hotely, aktivity, reštaurácie a doprava — s jasnými ikonami typov, aby ste svoj deň videli na prvý pohľad. Ak to poznáte, pozrite sa na TripBee Pro: Plánovač ciest. | Platené stiahnutie | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Stiahnite si TripBee Pro: Plánovač ciest v App Store →](https://apps.apple.com/sk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | najlepšia aplikácia na opravu rozmazaných fotiek detí na iPhone | Deti sa nikdy nehýbu pokojne, takže jemné rozostrenie a trasenie kamery sú nevyhnutné | Zadarmo na začiatok · odomknutie jednorazovým nákupom | [Sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Stiahnite si Unblurry v App Store →](https://apps.apple.com/sk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 
 ## Stiahnite si kompletný súbor údajov
 
-Formáty JSON, JSONL a CSV obsahujú rovnakých 2 450 záznamov.
+Formáty JSON, JSONL a CSV obsahujú rovnakých 2 500 záznamov.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 2 450 záznamov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sk/index.html) · [Otvárame dáta](https://open.cait518.cc/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-09-22
+Aktualizované: 2026-09-24
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

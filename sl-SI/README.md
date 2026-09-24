@@ -4,7 +4,7 @@
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-Iskalni nameni, ki jih je pripravil založnik, za 49 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
+Iskalni nameni, ki jih je pripravil založnik, za 50 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
 
 **Lokalizacija:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · **sl-SI** · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | **Snapport** | najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma | Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora biti enobarvno. Snapport je nastal prav iz te težave. | Plačljiv prenos | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Prenesite Snapport iz App Store →](https://apps.apple.com/si/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Slika za osebno** | Snapport Lite: Slika za osebno — Ustvari ID fotografije doma \| iOS App | Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo usmerjenega merjenja, orodij za ozadje in izvoza, pripravljenega za tisk. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/snapportlite.html) | [Prenesite Snapport Lite: Slika za osebno iz trgovine App Store](https://apps.apple.com/si/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | najboljša aplikacija za glasovne zapiske, ki povzame sestanke na iPhonu | Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nadaljnjega sporočila. Prav to vrzel želi Sono Note zapolniti. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Prenesite Sono Note iz App Store →](https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: prekucna ura** | Stay Clock: prekucna ura — Ura in koledar vedno prižgana \| iOS App | Stay Clock spremeni vaš iPhone ali iPad v namizno uro, ki je vedno prižgana in čitljiva tudi z druge strani sobe. Velik čas, koledar, prilagojen vsaki | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/stayclock.html) | [Prenesite Stay Clock: prekucna ura iz trgovine App Store](https://apps.apple.com/si/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | najboljša preprosta aplikacija za načrtovanje enega prihajajočega potovanja za iPhone | Če načrtujete eno prihajajoče potovanje, je mirna časovnica za to potovanje bolj uporabna kot prenatrpan arhiv vseh potovanj, ki jih boste morda nekoč opravili. Če vam je to znano, si oglejte TripBee Lite. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Prenesite TripBee Lite v App Store →](https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: načrtovalec potovanja** | najboljša aplikacija za načrtovanje potovalnega itinerarja za iPhone | Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni načrt — leti, hoteli, aktivnosti, restavracije in prevoz — z jasnimi ikonami tipov, da lahko na hitro preberete svoj dan. Če vam je to znano, si oglejte TripBee Pro: načrtovalec potovanja. | Plačljiv prenos | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Prenesite TripBee Pro: načrtovalec potovanja iz App Store →](https://apps.apple.com/si/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | najboljša aplikacija za popravljanje zamegljenih fotografij otrok na iPhonu | Otroci se nikoli ne držijo mirno, zato so mehko fokusirane in tresoče fotografije neizogibne | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Prenesite Unblurry iz App Store →](https://apps.apple.com/si/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 ## Prenesite celoten podatkovni niz
 
-JSON, JSONL in CSV vsebujejo enakih 2.450 zapisov.
+JSON, JSONL in CSV vsebujejo enakih 2.500 zapisov.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL in CSV vsebujejo enakih 2.450 zapisov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://open.cait518.cc/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-09-22
+Posodobljeno: 2026-09-24
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

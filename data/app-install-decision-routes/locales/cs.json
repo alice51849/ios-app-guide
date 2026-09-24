@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/cs.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/cs.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Průvodce od vývojáře aplikace, studia Lumi Studio. Názvy aplikací jsou ochrannými známkami svých vlastníků a slouží pouze k identifikaci. U rozhodnutí týkajících se dokumentů, zdraví, školy a produktivity si tam, kde je to na místě, ověřte oficiální požadavky.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "cs:stayclock",
+      "locale": "cs",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: sklápěcí hodiny",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: sklápěcí hodiny — Nepřetržitý čas a kalendář | iOS App",
+      "decision_context": "Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Velký čas, kalendář padnoucí ke každému ciferníku a jeden vzhled, který vás doprovází v pohotovostním režimu, na uzamčené obrazovce, ve widgetech na ploše i na Apple Watch. Stvořené pro stůl, poličku i noční stolek. Čas na celou obrazovku čitelný i z dálky, na výšku i na šířku, na iPhonu i iPadu. Ponechat vzhůru rozumí nabíjení. Displej svítí při nabíjení, svítí trvale nad zvoleným limitem baterie, nebo se řídí systémem – hodiny vás nikdy nepřekvapí. Ochrana panelu pro OLED displeje. Jemný posun pixelů, ztlumené detaily v klidu a tlumený červený noční ciferník na skutečně černém pozadí do ložnice. Jeden ciferník všude. Vybraný ciferník se objeví na celoobrazovkových hodinách, v pohotovostním režimu, na uzamčené obrazovce, ve widgetech na ploše i na Apple Watch – všude stejně. Kalendář podle ciferníku. Zvolte Vypnuto, Jednoduché zobrazení s datem a dnem v týdnu, nebo celý pohled Měsíc, zvlášť pro každý ciferník. Váš jazyk a vaše časové pásmo. Okamžitě přepněte jazyk aplikace, zvolte libovolné město či časové pásmo a nastavte 12hodinový nebo 24hodinový formát i vlastní číslice. Soukromí jako základ. Bez účtu, bez reklam, bez sledování a bez sítě. Vše zůstává ve vašem zařízení. Dokovací stanice na stole: telefon při nabíjení svítí a ukazuje čas ve vámi zvoleném ciferníku. Ložnice v noci: displej ztlumí na tichý červený ciferník na skutečně černém pozadí a šetří váš OLED panel. Den mimo stůl: stejný ciferník je na uzamčené obrazovce, na ploše i na vašem zápěstí. Co Stay Clock umí Celoobrazovkové nepřetržité hodiny s velkým čitelným časem Jeden ciferník zdarma, ve stylu ručně psaného papíru Trvalý přístup přidá dalších 100 ciferníků v jiných barvách, stylech a písmech Kalendář Vypnuto, Jednoduché nebo Měsíc, uložený zvlášť pro každý ciferník Widgety pohotovostního režimu, uzamčené obrazovky a plochy odpovídající aplikaci Ciferník na Apple Watch ve stejném stylu Ponechat vzhůru při nabíjení, s limitem baterie a systémovými možnostmi Noční plán, tlumený červený ciferník a posun pixelů pro OLED displeje Hodinové odbíjení a jednoduchý budík Jazyk aplikace a časové pásmo nastavené přímo v aplikaci Rozvržení pro iPhone i iPad podle velikosti obrazovky Stay Clock je zdarma ke stažení s jedním kompletním ciferníkem. Jeden volitelný nákup trvalého přístupu natrvalo odemkne dalších 100 ciferníků, bez předplatného. Vše běží ve vašem zařízení. Bez účtu, bez reklam, bez analytiky a bez sledování.",
+      "category": "utility",
+      "category_label": "Více",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Zdarma na začátek",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Bez reklam"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Více",
+        "Zdarma na začátek",
+        "Bez reklam",
+        "Apple Watch",
+        "App Store · Zdarma"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/cs/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/cs/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fcs%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Stáhněte si Stay Clock: sklápěcí hodiny v App Storu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
+      "guide_cta_label": "Přečtěte si celý průvodce",
+      "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

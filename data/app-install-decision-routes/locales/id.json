@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "id",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/id.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/id.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "id:stayclock",
+      "locale": "id",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Jam Meja Flip",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Jam Meja Flip — Jam dan kalender selalu aktif | iOS App",
+      "decision_context": "Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan bisa dibaca dari seberang ruangan. Waktu besar, kalender yang menyesuaikan tiap tampilan, dan satu gaya yang mengikuti Anda ke StandBy, Layar Terkunci, widget Layar Utama, dan Apple Watch. Dibuat untuk meja, rak, dan meja samping tempat tidur. Waktu layar penuh tetap jelas dibaca dari jauh, dalam mode potret atau lanskap, di iPhone dan iPad. Tetap Terjaga yang memahami pengisian daya. Aktif terus saat mengisi daya, selalu aktif dengan batas baterai, atau mengikuti sistem, sehingga layar Anda tidak pernah mati mendadak. Perawatan panel untuk layar OLED. Pergeseran piksel yang lembut, detail yang memudar saat diam, dan tampilan malam merah redup di atas hitam pekat untuk kamar tidur. Satu tampilan di mana saja. Tampilan pilihan Anda muncul di jam layar penuh, StandBy, widget Layar Terkunci dan Layar Utama, serta Apple Watch, dengan wujud yang sama di semua tempat. Kalender yang menyesuaikan setiap tampilan. Pilih Nonaktif, Sederhana dengan tanggal dan hari, atau tampilan Bulan penuh secara terpisah untuk tiap tampilan. Bahasa dan zona waktu Anda sendiri. Ganti bahasa aplikasi seketika, pilih kota atau zona waktu mana pun, dan pilih format 12 atau 24 jam beserta gaya angka Anda. Privat sejak dirancang. Tanpa akun, tanpa iklan, tanpa pelacakan, dan tanpa jaringan. Semuanya tetap di perangkat Anda. Di dok atas meja: ponsel Anda tetap menyala saat mengisi daya, menampilkan waktu dalam tampilan pilihan Anda. Di kamar tidur malam hari: layar meredup menjadi jam merah yang tenang di atas hitam pekat, menjaga panel OLED Anda. Di hari saat jauh dari meja: tampilan yang sama ada di Layar Terkunci, Layar Utama, dan pergelangan tangan Anda. Yang bisa dilakukan Stay Clock Jam layar penuh yang selalu aktif dengan waktu besar dan mudah dibaca Satu tampilan gratis disertakan, dengan gaya kertas tulisan tangan Pembukaan Lifetime menambah 100 tampilan lain dengan warna, gaya, dan font berbeda Kalender Nonaktif, Sederhana, atau Bulan disimpan terpisah untuk tiap tampilan Widget StandBy, Layar Terkunci, dan Layar Utama yang serasi dengan aplikasi Tampilan Apple Watch yang mengikuti desain yang sama Tetap Terjaga saat mengisi daya, dengan batas baterai dan opsi sistem Jadwal malam, tampilan malam merah, dan pergeseran piksel untuk layar OLED Lonceng setiap jam dan alarm sederhana Bahasa aplikasi dan zona waktu dipilih di dalam aplikasi Tata letak iPhone dan iPad untuk setiap ukuran layar Stay Clock adalah unduhan gratis dengan satu tampilan lengkap. Satu pembelian Lifetime opsional membuka 100 tampilan lain untuk selamanya, tanpa langganan. Semuanya berjalan di perangkat Anda. Tanpa akun, tanpa iklan, tanpa analitik, dan tanpa pelacakan.",
+      "category": "utility",
+      "category_label": "Lainnya",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis untuk mulai · buka kunci sekali bayar",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Tanpa iklan"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Lainnya",
+        "Gratis untuk mulai · buka kunci sekali bayar",
+        "Tanpa iklan",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/id/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/id/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fid%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/id.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Dapatkan Stay Clock: Jam Meja Flip di App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Baca panduan lengkap",
+      "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

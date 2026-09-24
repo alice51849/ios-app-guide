@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pt-PT",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pt-PT.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pt-PT.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "pt-PT:stayclock",
+      "locale": "pt-PT",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Relógio de Mesa",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Relógio de Mesa — Sempre com hora e calendário | iOS App",
+      "decision_context": "O Stay Clock transforma o seu iPhone ou iPad num relógio de mesa sempre ativo, legível do outro lado do quarto. Hora grande, um calendário que se adapta a cada mostrador e um visual que o acompanha no Em Espera, no Ecrã Bloqueado, nos widgets do Ecrã Principal e no Apple Watch. Feito para a secretária, a prateleira e a mesa de cabeceira. Hora em ecrã inteiro, legível à distância, na vertical ou horizontal, em iPhone e iPad. Manter ecrã ativo entende o carregamento. Fica ativo durante o carregamento, sempre ativo com um limite de bateria, ou segue o sistema — sem surpresas. Proteção do painel para ecrãs OLED. Deslocamento suave de pixels, detalhes que suavizam quando inativo e um mostrador vermelho discreto em preto absoluto para o quarto. Um mostrador em todo o lado. O mostrador escolhido aparece no ecrã inteiro, no Em Espera, no Ecrã Bloqueado, nos widgets do Ecrã Principal e no Apple Watch — sempre igual. Um calendário para cada mostrador. Escolha Desligado, Simples com data e dia da semana, ou o Mês completo, em separado para cada mostrador. O seu idioma e o seu fuso. Mude o idioma da app na hora, escolha qualquer cidade ou fuso horário, e prefira 12 ou 24 horas com os seus próprios algarismos. Privado por natureza. Sem conta, sem anúncios, sem monitorização e sem rede. Tudo fica no seu aparelho. Numa base de carregamento: o aparelho fica aceso enquanto carrega, a mostrar a hora no mostrador escolhido. No quarto à noite: o ecrã escurece para um relógio vermelho discreto em preto absoluto e poupa o painel OLED. Longe da secretária: o mesmo mostrador aparece no Ecrã Bloqueado, no Ecrã Principal e no seu pulso. O que o Stay Clock faz Relógio em ecrã inteiro sempre ativo, com hora grande e legível Um mostrador gratuito incluído, com aspeto de papel escrito à mão O acesso vitalício acrescenta mais 100 mostradores em cores, estilos e tipos de letra diferentes Calendário Desligado, Simples ou Mês guardado em separado para cada mostrador Widgets do Em Espera, Ecrã Bloqueado e Ecrã Principal a condizer com a app Mostrador do Apple Watch que segue o mesmo design Manter ecrã ativo durante o carregamento, com limite de bateria e opções do sistema Horário noturno, mostrador vermelho discreto e deslocamento de pixels para ecrãs OLED Badalada horária e um alarme simples Idioma da app e fuso horário escolhidos dentro da app Esquemas para iPhone e iPad em cada tamanho de ecrã O Stay Clock é uma transferência gratuita, com um mostrador completo. Uma compra vitalícia opcional desbloqueia mais 100 mostradores para sempre, sem subscrição. Tudo funciona no aparelho. Sem conta, sem anúncios, sem análises e sem monitorização.",
+      "category": "utility",
+      "category_label": "Mais",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Grátis para começar · desbloqueio único",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Sem anúncios"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Mais",
+        "Grátis para começar · desbloqueio único",
+        "Sem anúncios",
+        "Apple Watch",
+        "App Store · Grátis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/pt-PT/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/pt-PT/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fpt-PT%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/pt/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Baixe Stay Clock: Relógio de Mesa na App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
+      "guide_cta_label": "Leia o guia completo",
+      "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-09-24",
-    "contentDigest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+    "contentDigest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 49
+    "recordCount": 50
   },
   "items": [
     {
@@ -153,10 +153,11 @@
         "充電ケア",
         "充電範囲",
         "充電速度",
-        "データを書き出す"
+        "データを書き出す",
+        "バッテリー 寿命"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -655,10 +656,11 @@
         "台湾",
         "書き順",
         "読み方",
-        "注音符号"
+        "注音符号",
+        "注音 学習"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -973,10 +975,12 @@
         "保育園",
         "ごはん",
         "身支度",
-        "知育"
+        "知育",
+        "ごほうび シール",
+        "寝る前 ルーティン"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1105,10 +1109,12 @@
         "ローカル処理",
         "一括",
         "PDF",
-        "OCR"
+        "OCR",
+        "個人情報 マスク",
+        "pdf 黒塗り"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6785004775",
@@ -1559,6 +1565,33 @@
       "date_modified": "2026-09-16T15:36:42Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6814035888",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html",
+      "external_url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "title": "Stay Clock:パタパタ卓上時計",
+      "content_text": "Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。",
+      "tags": [
+        "置き時計",
+        "デジタル時計",
+        "目覚まし時計",
+        "ナイトスタンド",
+        "充電スタンド",
+        "ウィジェット",
+        "壁紙時計",
+        "世界時計",
+        "24時間表示",
+        "フォント",
+        "文字盤",
+        "ロック画面",
+        "焼き付き防止",
+        "ナイトモード",
+        "大きい文字",
+        "北欧デザイン"
+      ],
+      "language": "ja",
+      "date_modified": "2026-09-24T08:17:22Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6787193643",
       "url": "https://open.cait518.cc/ios-app-guide/ja/tripplanet.html",
       "external_url": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
@@ -1594,10 +1627,11 @@
         "チケット",
         "リマインダー",
         "ホテル",
-        "航空券"
+        "航空券",
+        "旅程"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787754435",
@@ -1816,10 +1850,12 @@
         "分割",
         "文字化け",
         "一括",
-        "7zip"
+        "7zip",
+        "rarファイルを開く",
+        "7zを解凍"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     }
   ]
 }

@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+  "content_digest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 49,
+  "record_count": 50,
   "apps": [
     {
       "key": "notesstudio100",
@@ -105,7 +105,8 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель"
+        "самоучитель",
+        "toeic аудирование"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -146,7 +147,8 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы"
+        "фразы",
+        "toeic аудирование"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -512,7 +514,8 @@
         "курс",
         "офлайн",
         "csv",
-        "счета"
+        "счета",
+        "деньги в путешествии"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -549,7 +552,8 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов"
+        "контроль расходов",
+        "расходы в путешествии"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -959,7 +963,8 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн"
+        "офлайн",
+        "фонетика для детей"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1660,7 +1665,9 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив"
+        "архив",
+        "сохранить статьи",
+        "читать позже"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1951,6 +1958,45 @@
       }
     },
     {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: перекидные часы",
+      "summary": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Крупное время, календарь, подобранный под каждый циферблат, и единый облик, который сопровождает вас в режиме «Ожидание», на экране блокировки, в виджетах на экране «Домой» и на Apple Watch.",
+      "category": "utility",
+      "search_terms": [
+        "прикроватная тумба",
+        "режим ожидания",
+        "док-станция",
+        "зарядка",
+        "у кровати",
+        "oled",
+        "виджеты",
+        "цифровые",
+        "темы",
+        "шрифты"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно",
+        "storefront_url": "https://apps.apple.com/ru/app/id6814035888"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: Путешествия",
@@ -2187,7 +2233,8 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping"
+        "ping",
+        "диагностика wifi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2301,7 +2348,9 @@
         "файлы",
         "7zip",
         "unrar",
-        "gz"
+        "gz",
+        "распаковать 7z",
+        "открыть файлы rar"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -4,7 +4,7 @@
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-Door uitgevers opgestelde zoekintenties voor 49 geverifieerde actieve iOS-apps en 50 Apple-regio's.
+Door uitgevers opgestelde zoekintenties voor 50 geverifieerde actieve iOS-apps en 50 Apple-regio's.
 
 **Regio:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · **nl-NL** · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **Snapport** | beste pasfoto-app voor baby's en peuters thuis | Voor een pasfoto van een baby mag er niemand anders op de foto staan en moet de achtergrond effen zijn. Snapport is precies uit dat probleem ontstaan. | Betaalde aanschaf | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Download Snapport in de App Store →](https://apps.apple.com/nl/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Pasfoto's maken** | Snapport Lite: Pasfoto's maken — Maak ID-foto's thuis \| iOS App | Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen, achtergrondtools en export klaar voor afdrukken. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/snapportlite.html) | [Download Snapport Lite: Pasfoto's maken in de App Store](https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | beste app voor spraaknotities die vergaderingen samenvat op iPhone | Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de actiepunten en een concept opvolgmail. Precies dat gat wil Sono Note dichten. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Download Sono Note in de App Store →](https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Bureauklok** | Stay Clock: Bureauklok — Tijd en kalender, altijd aan \| iOS App | Stay Clock maakt van je iPhone of iPad een klok die altijd aan blijft en van ver leesbaar is. Grote tijd, een kalender die bij elke wijzerplaat past, en | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/stayclock.html) | [Download Stay Clock: Bureauklok in de App Store](https://apps.apple.com/nl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | beste eenvoudige reisplanner-app voor één aankomende reis iPhone | Als je één aankomende reis plant, is een rustige tijdlijn voor die reis nuttiger dan een overvol archief van elke reis die je ooit zou kunnen maken. Herken je dat, kijk dan eens naar TripBee Lite. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Download TripBee Lite in de App Store →](https://apps.apple.com/nl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Reisplanner** | beste reisrouteplanner-app voor iPhone | Een goede routeplanner verandert een rommelige reis in een duidelijke dag-tot-dag tijdlijn — vluchten, hotels, activiteiten, restaurants en vervoer — met duidelijke type-iconen zodat je je dag in één oogopslag leest. Herken je dat, kijk dan eens naar TripBee Pro: Reisplanner. | Betaalde aanschaf | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Download TripBee Pro: Reisplanner in de App Store →](https://apps.apple.com/nl/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | beste app om wazige foto's van kinderen op iPhone te verbeteren | Kinderen blijven nooit stilzitten, dus zachte focus en cameratrilling zijn onvermijdelijk | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Download Unblurry in de App Store →](https://apps.apple.com/nl/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 
 ## Haal de volledige dataset binnen
 
-JSON, JSONL en CSV bevatten dezelfde 2.450 gegevensitems.
+JSON, JSONL en CSV bevatten dezelfde 2.500 gegevensitems.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL en CSV bevatten dezelfde 2.450 gegevensitems.
 
 [Startpagina](https://open.cait518.cc/ios-app-guide/nl-NL/index.html) · [Open data](https://open.cait518.cc/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-09-22
+Bijgewerkt: 2026-09-24
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

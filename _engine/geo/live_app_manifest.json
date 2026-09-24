@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 5,
-  "roster_digest": "ca6f3a6668b1c6129aaa052c4941daaee33d23a5e902844827e715ec2b865481",
+  "revision": 6,
+  "roster_digest": "2c8a8bcc7e4660a4fa51fb82ee06f9cd4e9de69e90b0e2217c29d274da1bd467",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -163,6 +163,10 @@
     "sononote": {
       "app_id": "6782139553",
       "name": "Sono Note"
+    },
+    "stayclock": {
+      "app_id": "6814035888",
+      "name": "Stay Clock"
     },
     "tripbee": {
       "app_id": "6787754435",

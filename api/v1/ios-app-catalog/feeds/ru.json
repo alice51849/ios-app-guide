@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-09-24",
-    "contentDigest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+    "contentDigest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 49
+    "recordCount": 50
   },
   "items": [
     {
@@ -80,10 +80,11 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель"
+        "самоучитель",
+        "toeic аудирование"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792483140",
@@ -103,10 +104,11 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы"
+        "фразы",
+        "toeic аудирование"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802423998",
@@ -323,10 +325,11 @@
         "курс",
         "офлайн",
         "csv",
-        "счета"
+        "счета",
+        "деньги в путешествии"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -342,10 +345,11 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов"
+        "контроль расходов",
+        "расходы в путешествии"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -608,10 +612,11 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн"
+        "офлайн",
+        "фонетика для детей"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -1075,10 +1080,12 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив"
+        "архив",
+        "сохранить статьи",
+        "читать позже"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1240,6 +1247,27 @@
       "date_modified": "2026-09-16T15:36:42Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6814035888",
+      "url": "https://open.cait518.cc/ios-app-guide/ru/stayclock.html",
+      "external_url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "title": "Stay Clock: перекидные часы",
+      "content_text": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Крупное время, календарь, подобранный под каждый циферблат, и единый облик, который сопровождает вас в режиме «Ожидание», на экране блокировки, в виджетах на экране «Домой» и на Apple Watch.",
+      "tags": [
+        "прикроватная тумба",
+        "режим ожидания",
+        "док-станция",
+        "зарядка",
+        "у кровати",
+        "oled",
+        "виджеты",
+        "цифровые",
+        "темы",
+        "шрифты"
+      ],
+      "language": "ru",
+      "date_modified": "2026-09-24T08:17:22Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6787193643",
       "url": "https://open.cait518.cc/ios-app-guide/ru/tripplanet.html",
       "external_url": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
@@ -1386,10 +1414,11 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping"
+        "ping",
+        "диагностика wifi"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",
@@ -1446,10 +1475,12 @@
         "файлы",
         "7zip",
         "unrar",
-        "gz"
+        "gz",
+        "распаковать 7z",
+        "открыть файлы rar"
       ],
       "language": "ru",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     }
   ]
 }

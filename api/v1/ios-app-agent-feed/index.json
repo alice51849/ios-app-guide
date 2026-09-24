@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2393,
-  "app_count": 49,
+  "row_count": 2442,
+  "app_count": 50,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -135,6 +135,7 @@
     "snapport",
     "snapportlite",
     "sononote",
+    "stayclock",
     "tripbee",
     "tripbeelite",
     "tripplanet",
@@ -173,5 +174,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:389170fa401f5b0bfed5432d2ea67a25b93b50958ccf549d6dfb579818a2671b"
+  "content_digest": "sha256:c2b7c332fad38990c90eae513281b00ae173bd4af484836dc9cb66268b4f0a57"
 }

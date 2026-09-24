@@ -410,9 +410,9 @@
     "abstention_reasons": {
       "missing_curated_native_copy": 2389
     },
-    "app_coverage_percent": 100.0,
+    "app_coverage_percent": 98.0,
     "candidate_app_locale_pairs": 2450,
-    "current_public_apps": 49,
+    "current_public_apps": 50,
     "fallback_records": 0,
     "intent_type_counts": {
       "alternative": 12,
@@ -421,8 +421,10 @@
       "workflow": 15
     },
     "mapped_apps": 49,
-    "missing_route_app_keys": [],
-    "missing_route_apps": 0,
+    "missing_route_app_keys": [
+      "stayclock"
+    ],
+    "missing_route_apps": 1,
     "native_locale_pair_coverage_percent": 2.49,
     "native_locale_records": 61,
     "native_locales_with_records": 5,
@@ -430,11 +432,13 @@
     "primary_routes": 49
   },
   "current_inventory": {
-    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
-    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
-    "missing_route_app_keys": [],
-    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 49
+    "app_keys_sha256": "b12fe0f67492e1b359d1e7349b2e502ecb99a8be9f0e40be1bc1817fe0b9ced3",
+    "copy_sha256": "f1035b02ad5e981933fe2f866d933949956814596a7949269e384c5d0b2c3d31",
+    "missing_route_app_keys": [
+      "stayclock"
+    ],
+    "missing_route_app_keys_sha256": "8b7cd37d918e65f8d0f2afb391d707a44e51e4cb6781aa029544eb2c3c74844b",
+    "public_apps": 50
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
@@ -648,16 +652,16 @@
   },
   "publication": {
     "abstained_pairs": 2389,
-    "deployment_eligible": true,
+    "deployment_eligible": false,
     "expected_route_pages": 61,
     "fallback_records": 0,
     "feed_items": 61,
     "managed_owner": "high_intent_decision_routes",
     "sitemap_urls": 61,
-    "state": "exact"
+    "state": "degraded_missing_route_copy"
   },
   "quality": {
-    "all_gates_passed": true,
+    "all_gates_passed": false,
     "gates": {
       "complete_app_store_cta": {
         "detail": "61/61 URLs use ordered pt/ct/mt=8",
@@ -668,8 +672,8 @@
         "passed": true
       },
       "current_inventory_coverage": {
-        "detail": "49/49 current public apps mapped; missing route copy=[]",
-        "passed": true
+        "detail": "49/50 current public apps mapped; missing route copy=['stayclock']",
+        "passed": false
       },
       "exact_release_cardinality": {
         "detail": "61 routes; 49 apps; 2450 pairs; 2389 abstentions",
@@ -696,7 +700,7 @@
         "passed": true
       },
       "primary_intent_coverage": {
-        "detail": "49/49 apps have one primary route",
+        "detail": "49/50 apps have one primary route",
         "passed": true
       },
       "truthful_publisher_disclosure": {
@@ -717,6 +721,6 @@
     "minimum_content_units": 200
   },
   "release_contract_digest": "dcf150e546fdd32139fe25ff4201d98098a2c09944e097427f74758b950d39e8",
-  "release_state": "exact",
+  "release_state": "degraded_missing_route_copy",
   "schema_version": 1
 }

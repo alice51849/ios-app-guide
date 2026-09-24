@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-09-24",
-    "contentDigest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+    "contentDigest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 49
+    "recordCount": 50
   },
   "items": [
     {
@@ -81,10 +81,12 @@
         "écoute",
         "lecture",
         "score",
-        "pratique"
+        "pratique",
+        "toeic lecture",
+        "vocabulaire toeic"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792483140",
@@ -101,10 +103,11 @@
         "écoute",
         "grammaire",
         "révisions",
-        "minuteur"
+        "minuteur",
+        "toeic lecture"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802423998",
@@ -366,10 +369,12 @@
         "finances",
         "achats impulsifs",
         "épargne",
-        "gérer argent"
+        "gérer argent",
+        "dépenses conscientes",
+        "achat impulsif"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6754218117",
@@ -406,10 +411,11 @@
         "impulsion",
         "revenu",
         "paie",
-        "valeur"
+        "valeur",
+        "achat impulsif"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6806639602",
@@ -534,10 +540,11 @@
         "enfants",
         "phonétique",
         "lecture",
-        "écriture"
+        "écriture",
+        "apprendre zhuyin"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -854,10 +861,11 @@
         "dossier médical",
         "métadonnées",
         "rgpd",
-        "vie privée"
+        "vie privée",
+        "masquer données"
       ],
       "language": "fr-FR",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6785004775",
@@ -1210,6 +1218,28 @@
       ],
       "language": "fr-FR",
       "date_modified": "2026-09-16T15:36:42Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6814035888",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/stayclock.html",
+      "external_url": "https://apps.apple.com/fr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "title": "Stay Clock : horloge flip",
+      "content_text": "Stay Clock transforme votre iPhone ou iPad en horloge toujours allumée, lisible depuis l’autre bout de la pièce. Une heure grande et lisible, un calendrier adapté à chaque cadran, et un même style qui vous suit sur StandBy, l’écran verrouillé, les widgets de l’écran d’accueil et l’Apple Watch.",
+      "tags": [
+        "chevet",
+        "veille",
+        "chargeur",
+        "rémanence",
+        "oled",
+        "widgets",
+        "numérique",
+        "polices",
+        "écran verrouillé",
+        "format 24h",
+        "réveil"
+      ],
+      "language": "fr-FR",
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",

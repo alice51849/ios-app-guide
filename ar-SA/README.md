@@ -4,7 +4,7 @@
 
 كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.
 
-نوايا بحث كتبها الناشر لـ 49 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
+نوايا بحث كتبها الناشر لـ 50 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
 
 **الإعداد اللغوي والإقليمي:** **ar-SA** · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | أفضل تطبيق صور جواز السفر للأطفال والرضع في المنزل | لصورة جواز سفر الطفل، لا يجب أن يكون هناك أي شخص آخر في الصورة ويجب أن تكون الخلفية بسيطة. Snapport انطلق من هذه المشكلة بالذات. | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: إنشاء صور وثائق** | Snapport Lite: إنشاء صور وثائق — أنشئ صور الوثائق في المنزل \| iOS App | Snapport Lite - أنشئ صور جواز السفر والتأشيرة والهوية مع إرشادات المقاس والخلفية والطباعة. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/snapportlite.html) | [احصل على Snapport Lite: إنشاء صور وثائق من App Store](https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | أفضل تطبيق ملاحظات صوتية يلخص الاجتماعات على iPhone | بعد المكالمة، لا تريد نصًا خامًا — تريد الملخص، عناصر العمل، ومسودة المتابعة. هذه الفجوة بالذات هي ما يسعى Sono Note لسدّها. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [احصل على Sono Note من متجر التطبيقات →](https://apps.apple.com/sa/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: ساعة مكتب رقمية** | Stay Clock: ساعة مكتب رقمية — الوقت والتقويم بلا انقطاع \| iOS App | يحوّل Stay Clock آيفون أو آيباد إلى ساعة مكتب مضيئة بلا توقف، تُقرأ بوضوح من طرف الغرفة. وقت كبير، وتقويم يناسب كل وجه، ومظهر واحد يرافقك إلى وضع الاستعداد | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/stayclock.html) | [احصل على Stay Clock: ساعة مكتب رقمية من App Store](https://apps.apple.com/sa/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | أفضل تطبيق تخطيط رحلة بسيط لرحلة قادمة واحدة على iPhone | إذا كنت تخطط لرحلة قادمة واحدة، فإن جدولًا زمنيًا هادئًا لتلك الرحلة أكثر فائدة من أرشيف مزدحم لكل الرحلات التي قد تقوم بها يومًا ما. إن كان هذا حالك، فألقِ نظرة على TripBee Lite. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [احصل على TripBee Lite من App Store →](https://apps.apple.com/sa/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: مخطط الرحلات** | أفضل تطبيق مخطط مسار الرحلة على iPhone | تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة. إن كان هذا حالك، فألقِ نظرة على TripBee Pro: مخطط الرحلات. | تحميل مدفوع | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-trip-itinerary-planner-app-for-iphone.html) | [احصل على TripBee Pro: مخطط الرحلات من متجر التطبيقات →](https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | أفضل تطبيق لإصلاح الصور الضبابية للأطفال على iPhone | الأطفال لا يثبتون أبدًا، لذا الصور ذات التركيز الناعم والاهتزاز الخفيف أمر لا مفر منه | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [احصل على Unblurry من متجر التطبيقات →](https://apps.apple.com/sa/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## تحميل مجموعة البيانات الكاملة
 
-تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٤٥٠ سجل.
+تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٥٠٠ سجل.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://open.cait518.cc/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://open.cait518.cc/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-09-22
+آخر تحديث: 2026-09-24
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

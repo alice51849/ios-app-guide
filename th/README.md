@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 49 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 50 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | แอปถ่ายรูปหนังสือเดินทางสำหรับเด็กทารกและเด็กเล็กที่บ้านที่ดีที่สุด | สำหรับรูปหนังสือเดินทางเด็ก ไม่มีคนอื่นในภาพและพื้นหลังต้องเรียบ แต่สำหรับทารก ดวงตาไม่จำเป็นต้องเปิดเต็มที่ | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [ดาวน์โหลด Snapport ใน App Store →](https://apps.apple.com/th/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ทำรูปติดบัตร** | Snapport Lite: ทำรูปติดบัตร — ถ่ายรูปติดบัตรที่บ้าน \| iOS App | Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/snapportlite.html) | [ดาวน์โหลด Snapport Lite: ทำรูปติดบัตร บน App Store](https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | แอปบันทึกเสียงที่สรุปการประชุมบน iPhone ที่ดีที่สุด | หลังการโทร คุณไม่ต้องการแค่ถอดเสียงดิบ — คุณต้องการสรุป รายการงาน และร่างติดตามผล ช่องว่างตรงนี้แหละที่ Sono Note อยากอุด | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [ดาวน์โหลด Sono Note ใน App Store →](https://apps.apple.com/th/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: นาฬิกาตั้งโต๊ะพลิก** | Stay Clock: นาฬิกาตั้งโต๊ะพลิก — เวลาและปฏิทินที่เปิดค้างตลอด \| iOS App | Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณให้เป็นนาฬิกาตั้งโต๊ะที่เปิดค้างตลอด อ่านได้แม้อยู่อีกฝั่งของห้อง ตัวเลขเวลาขนาดใหญ่ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/stayclock.html) | [ดาวน์โหลด Stay Clock: นาฬิกาตั้งโต๊ะพลิก บน App Store](https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | แอปวางแผนทริปง่ายๆ ที่ดีที่สุดสำหรับทริปเดียวที่กำลังจะมาถึงบน iPhone | ถ้าคุณกำลังวางแผนทริปเดียว ไทม์ไลน์ที่เรียบง่ายสำหรับทริปนั้นจะมีประโยชน์กว่าการเก็บถาวรทริปที่อัดแน่นทุกทริปที่คุณอาจจะไปในอนาคต ถ้าฟังดูคุ้น ๆ ลองดู TripBee Lite | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [ดาวน์โหลด TripBee Lite ได้ที่ App Store →](https://apps.apple.com/th/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: วางแผนการเดินทาง** | แอปวางแผนเส้นทางท่องเที่ยวที่ดีที่สุดสำหรับ iPhone | แอปวางแผนเที่ยวที่ดีเปลี่ยนทริปที่ยุ่งเหยิงเป็นไทม์ไลน์รายวันที่ชัดเจน — เที่ยวบิน โรงแรม กิจกรรม ร้านอาหาร และการเดินทาง — พร้อมไอคอนประเภทที่ชัดเจนเพื่อให้คุณอ่านวันของคุณได้ทันที ถ้าฟังดูคุ้น ๆ ลองดู TripBee Pro: วางแผนการเดินทาง | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-trip-itinerary-planner-app-for-iphone.html) | [ดาวน์โหลด TripBee Pro: Trip Planner ใน App Store →](https://apps.apple.com/th/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | แอปแก้ภาพเบลอของเด็กที่ดีที่สุดบน iPhone | เด็กไม่เคยอยู่นิ่ง ภาพโฟกัสนุ่มและสั่นจากกล้องจึงหลีกเลี่ยงไม่ได้ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://open.cait518.cc/ios-app-guide/th/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [ดาวน์โหลด Unblurry ใน App Store →](https://apps.apple.com/th/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,450 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,500 รายการเหมือนกัน
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://open.cait518.cc/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://open.cait518.cc/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-09-22
+อัปเดตเมื่อ: 2026-09-24
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

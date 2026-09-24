@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-22",
+  "dateModified": "2026-09-24",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,269 +10,269 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "43dab9f40890855d2a06368ed2f0f27422feea28f0d59710bb68bbe4f2aafc19",
-  "content_digest": "049c9da1f4ea2d40bcc4c3c3e98ac2e1f216f25d92f6bf0a836796ebec4ae73a",
-  "generation_digest": "4d282bf3fd0178232a0812f8507470ba656ee8d99f21695282afa24eddd53b88",
+  "source_sha256": "1900249890a4c4069733118dc67289c46afc64a2a3bba8e0f518e79095e68c74",
+  "content_digest": "29347ac88112c2d5e064f384e6d8a2e083a057a28c578919e751b9be3871b960",
+  "generation_digest": "e1365c92bd125cc3cce030f3c1baa6671381856512936010ee10effded860f27",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 49,
+  "app_count": 50,
   "locale_count": 50,
-  "image_count": 2450,
+  "image_count": 2500,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "90e568bd30e675cd658d5a573ce60588c266bb12a9367e8b43a29efbf36fbc58"
+      "sha256": "475cdd955a73e14f5cd99049d4e690b16ac0a0d7280cc84e0ca52299c5b9c9b1"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "b6c7f466099f517dbe3467c4a46f641992ddec7623039074307e1f0ff1785701"
+      "sha256": "6d2fd6f19b3faef77206dc889f0492872fcc367ef5de2a1b04e8c644510b106e"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "9dcb4967c8af5938a2194b13f02cfdf07a536d939ffdb111b61bbad06b9bf881"
+      "sha256": "0b5fc19b0f44c18bf1c302112bfe745e13e0a6a3e2b6fd8601f4d73cb7c31e37"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "0944c8908122a74e67ac635d788a89838fc072dee5b330cb5a01abe1ad8e9933"
+      "sha256": "5bf25ef95e90aad787b88ec3305a8dd2f257bd631521bec12652e10f11d4afa4"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "b50d569c0f72de78fd501bf318484a902af893eeaa436a28468c7e0881a72584"
+      "sha256": "21c06d2d606b1bf4215efd5eff32c9d2222a75c2395206ed4be46cadc410e85d"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "e274b59c14b535bcc3e23f2d970576a1d9e1ac404cdcb64a6b09d7a3f11b9707"
+      "sha256": "6968d735ffb5fa53a95fe3bd9b1b0af2778c3da5c67f4369a04c0bb5c88207e0"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "689c0c34a6d7253a976244a8f77be25c39d5f558807e2ce7c2e461683f948206"
+      "sha256": "295d12a6d06537e29fe11982be73e73716a1ae950a0aa77e48856344a63006c7"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "c30958aeb436e923f7830967facce3201ffa3b2026e8bcde6e571f9c89f6e5a7"
+      "sha256": "c33c38a38c79726846b9e37718fc81bd00f5bb7a348fb55e01aa1793ef05e2b3"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "fe86fe975a216b43d751534c5cf6df23cba96747f9bd2e1efccd7ba9e35108df"
+      "sha256": "14978cd2776211807458783f8442ae2ef7b2704862a506365eedde6873d69f1c"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "28924394eea9353f94f5ab4605d3261e774d03afaadeb6862e1ece1fe14e9fc3"
+      "sha256": "6488f44dd7b56fbc45060a8636d91ab38bd6b5ded0c8a69b87749badcf41e751"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "df623395b60725680f5de8d57173196e5a2a7fd2c9a1876255fb1240340884de"
+      "sha256": "196579fe8682353692bd1ca0ee72a94335059449afa332eb96eec89fd909d912"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "7eb0437a7618f08f9a9d6959f0d34b2640f0d87b467c9d371299d02c0f82fa34"
+      "sha256": "e8e3b11c7dcc011521a5ff67424585d18eac86660b91897ff7e17c5d8feb2f46"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "f3a7fdd20b3fc168ba6ecc191e1c0c1603a1550a4db43a0d7f8bdd31a8cc9347"
+      "sha256": "791508a9cd28aec85c1cc382015b8911b3841c13e25ef1daea81fcd6993fb725"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "4a02b5ee1be9695ce6ca210e39ff01ca45d73a18b8343bcd307dccff47c76aa6"
+      "sha256": "74b2db831a3058ea65f91d6d5a8f458aa2270005ae1210e958b788755d98f796"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "d5dec5848ada60e2226ccf7fea35c46c2fd9b001a868987afe1a127e696718c2"
+      "sha256": "b8d025dd646ff01e54ef05f5c26f78f4b616cc08798c160e9fa8b0720ad8b270"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "4d8f2314e9e382923cb6b6abc9ce73447037da3071bc9052ccb97bb9d1cfb6ef"
+      "sha256": "9068e36502947fe886b225d1799b452581ef58e2dcbf8f6dc71bde821fcf24e3"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "5032ea81937117a1318846f22c5ea6d9a47e313c9c2531aea87820d11911b2c6"
+      "sha256": "436fb02bb75e0f410196a12bd13c3368184212be144647f3eefc0db1a3475825"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "7eceb02e828fb54a2f79b163a72daa923c5cd04879d1517e3fdaa59d9d8da72f"
+      "sha256": "3e2890ffcce7b9d3a978466e3569c1572139eb1bd4ffccc02149552468c77d96"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "a1acd6df67356f393e1775492cf0ac666de4979a248dfeb7a58e41c629990112"
+      "sha256": "a8c3f4cc79f275c845d487215185d862bf96f776a47909274b91319afa74b02a"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "bcf5adddab0f3eac2e345c3caddd4783fb09f221d93473bd2fc1f33d2cef09a6"
+      "sha256": "054d1c46ade8de7d3df17e42329e9e428947de810400958d9cab06a880db075c"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "c867dd5274b3208c71ac25473ac3715a51948d6069ab6c2ba659849fbea82404"
+      "sha256": "b429c7dc1f13ae0e1c7b57f8e7b69b82e7a0b209ba3a8ef535d6e0a6f454c883"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "f8c586cbffb0e43f5da6365e4437a2fbdd4728136d312f5d2071f3001e7b9bd8"
+      "sha256": "dc094a7f03398f551a23c223e62535f236ac302181cfd6f8fbd468b8585ea1d2"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "8e3a29bfa7fc06333400daf95f2263b029e570c58a1dab799cc08d6ab2997447"
+      "sha256": "0773ec2c0e49652dd7eaf0f96814b3380516090d0594a0a0d66cdfb54b99a0a7"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "eda51e1cc9bb19bc853894d9d1e08a7ab40edebef96e570da19eeb6780707415"
+      "sha256": "ea6a324b285edd64907bae0c74a5bca50d78bdc63eed504b1d67d00d55132ad1"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "d7529e7fe10e9b33ea2121d4cb1a2379b3460af3907bd5250b0a4fff27bb53ed"
+      "sha256": "128aa33b67de24d0ac1a227d7571f37ae0c3eb37b605d2e2e08a8133e289dee3"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "561c2f03337288914c6bc017e21f7f51961bc87c1125559deae7efc848a680f8"
+      "sha256": "7bb872bc6d3b45afd178c20d6c47f839638ba65000d83359e5a03bb72ad39025"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "5e601d38065e6bd6ca1cf4b9e1f4d59ac36b3adbe845cb1fd20f0f387afa6d3c"
+      "sha256": "0e25c2d1aaa0d2bada102a673ebba9f75e31a35a460754bdd48328902a77d6c1"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "6936bed9c70e14e35041a53f2af408c37f44dd54127e5c582702813c42188068"
+      "sha256": "29994147d0a5b0e2ee509510d54f9801416440a3d7d015d00e188c5a0587d7e6"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "37027ea1b918eb23984e66a650b106c23b777d10aea1649ee1f015f0de3a42a2"
+      "sha256": "230fed5ee6d5b241ae449b207418f1b58f353908ab1222909802406a96dd3fe9"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "793e4e9306da34bc7f33a085afc53d0a4f6ba84d2a93c1b7a239f3ab5f91d52b"
+      "sha256": "34a2d1cbbe6da6b7ec4c8e5ef58ef7e1126b63c4e5a83857ec00ce0adad1970e"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "62cb983f5bbc8f63f3777e2b3e9fa4daf51a25a7751ce2d420005107e4b3e894"
+      "sha256": "e9c7d221ea5630d89f913518af938aeaf9ec941ec21e56aabc51fd02da0d809b"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "25320df8d579daac6141f78e31334e255014432cdd0cc2ee31e775c5998b617c"
+      "sha256": "ebfd99fe2d584d16416ef2f9c20bc6aafdcf115dd1eb6fad0bfe51328640b49b"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "a63e2e5dc40ee492d90afb3788d02f7586231322fc7296a9e0905e44fe4d3eb2"
+      "sha256": "6b7b806fee21a93d3d0671ff2f686c5a58c0432309201644bd7153d8c6ab5e5a"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "3a3488b549cbbdff3715dfaff17f3b8d9d063bf088aa8c09890a928b22f77ec0"
+      "sha256": "a432709cf4941734f42fe7751dbe7cd91fdbe06c620c077eb5cfa603688fc6c7"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "6739fcf44f51fbf6faefdafc2f583375a55e1e924747d70f90bc54ad9118dbdc"
+      "sha256": "0a6617b7f200d74b6d7cdcdfdd68eb8e58ddabb9d7898655d51274b10beea534"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "83599f4b4ff9b44bc97e9b13bc7a98c7fde97ad00bc521fbb45b5cb3a7619dd3"
+      "sha256": "fa16bdaaba0db479751ddfb5fc402527bbd2a2d5c37e06b037a8e92940074105"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "8f8cbf2cd4c54f797912ad80e5e6352f651cc8aec1b62c744d12c7b705ee6790"
+      "sha256": "0dead9318da5b6e13b09a4a0b6e1f5364cf732a561227e0bd0303c19fbd25e9c"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "6a97820cf7c764040ec5cfcb77daf44f6dd287c1e7038e5ae4454937579a6c8a"
+      "sha256": "d9b468217a10c3261dd8e455d3d14ce6161dd37022acb7ae465c0bcb4b542c24"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "745553d7aabf008850a6f181ecd872e3c14e1c1e57a0c12070c0dd89fbf7aba4"
+      "sha256": "de6a54e645cc39d498797d1572b40db635cd068d545a4a05eca0ac94eceea5ec"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "965d39b87fb3c758ba8995b53c6473986902d7cd937256b0180399a9102be505"
+      "sha256": "7524265ffdefd6bcdb37da963ee15735fb957254d9684b481f966bbcddee3453"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "37be63d03616ad0f134e158268cffcc783430ceb91f21d042d97c03f07c3c4fa"
+      "sha256": "f58808822aee1de73d0fa81e980b02e403374dd76f652e3581a61c49a1f3a346"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "36b5d45d200d545cec6af4a97180a7b7494898a7f39a2e8fe800c371489dcfd9"
+      "sha256": "dcb59f7f4582eee4d09768412991197c2ac87e7b79be6792a1ba423e54c73529"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "d9a002e4c0788e45be9de898fb968ba509ea11bebcda53e740bacd9ad1d58ea4"
+      "sha256": "3bfa0062dd4627b5f335e3ff7e90f9d93a8526edc5dbcc2bfe75c61c2f46f4ff"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "48f784fcde0650a5c9aa82c350606e6db6fde7f9fee13daaf4e305fd6c63dc39"
+      "sha256": "06617e96da9b4c98666fed2f6606a8339d256a7c5f13f7b7f27e2b241fc5a4da"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "50154f1f2beb1d2ac2cde8b8147e6ba9b55df2a587c51ce7fda72af48eb7e8ff"
+      "sha256": "7f709bf846d960ff43701c13f407eeea8676dfe4eee2cb5a2a57cf3cb034cfa8"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "38026af84b361a36386b2dd7cc5d4af9a98a7aea7b7ec716ca83292f70d016e0"
+      "sha256": "f76b3bca0ee195bbc0c1332650b2520f8c0328b62233b99caf5f7c8108ec02ae"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "6be9469229f248cdfce965d9345fd407bf127e6e9d4fb4076e406220a8686b82"
+      "sha256": "453b175c08d45db5c794c43520ecb18d793012814c5cb2549d363438fce04d1d"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "4dce6d7df2c7e1311d87b7e69e03145591538a7251f4464281bc569447243903"
+      "sha256": "75fe372d6264e333f26381b747aaabc8ca71c3673027c36dc0e4fb377facb38b"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "1ec37906aaeb437a0dbcf9570378ecbff7af0e58f1aef7a9bc426fc419be542f"
+      "sha256": "9057f0cff59c5e86b5bf49737e194414b3001067023d8e5665378546604bf577"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "2c865b817f47d854eeda93aec3e67f23c701106239388bc11b55ffcf7753df41"
+      "sha256": "7e39bc9ccd67d76f3ee2a6f3cf6adb208c4602fe042647424f258211f251df7b"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "7e09c6812382d1c51789e971f2a2c10c5e71b7f794e8315ae76711c714ed5600"
+      "sha256": "d1aad8adbe7cb924234e6b2ceb2255caa31f2e73d2c075511874b0ce7359515d"
     }
   ],
   "publisher_authored": true,
@@ -687,6 +687,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6782139553?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "d68bc70d4a357db723d0298f05286c5b78c541a719e8249767c38df1f7201128"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/stayclock.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6814035888?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "1054038994ab65ad52c2f4fd60fd9bd1048f35ceb67b84f967de8f6976e64cdc"
     },
     {
       "locale": "ar-SA",
@@ -1940,6 +1950,35 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html",
+      "app_store_url": null,
+      "sha256": "bee78c7e49475450dd8e015485444f06a05eab83f4dc806e09fca73f4fff3dd8",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/tripplanet.svg",
@@ -2601,6 +2640,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/stayclock.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "d883d828c91af1e1b9f2f17358497d4c4295d76c2113c2f6293e31865f979916"
+    },
+    {
+      "locale": "ca",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/tripplanet.svg",
@@ -3088,6 +3137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "2eeb0aad19d4fdaee3cf6c469b5c67ea416b318c5dc5d003391944c73c313611"
+    },
+    {
+      "locale": "cs",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/stayclock.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "99ad5a5baa8adba9728893188f03aefa6378df346bf59d0ce7ba9268631b7931"
     },
     {
       "locale": "cs",
@@ -3581,6 +3640,16 @@
     },
     {
       "locale": "da",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/stayclock.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6814035888?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "c2fa7f18cf2e1c00fc0001d3e61968c9460691ba4da7c87ed0c23c96dc465cf4"
+    },
+    {
+      "locale": "da",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/tripplanet.svg",
@@ -4068,6 +4137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/de/app/id6782139553?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "42402e5bafdf2975c9db24a0470523ad928827a655bd44c58cbc71fe4087a85b"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/stayclock.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6814035888?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "fb84bd87716e154f388cdee565dbe34c346a445d52b9f8d02d27078670505090"
     },
     {
       "locale": "de-DE",
@@ -4561,6 +4640,16 @@
     },
     {
       "locale": "el",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/stayclock.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6814035888?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "135f791c8c3c6f11d4417f9d06ff75c3992147a4867a235aa1a3ee03ebce62d5"
+    },
+    {
+      "locale": "el",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/tripplanet.svg",
@@ -5048,6 +5137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/au/app/id6782139553?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "b07c786e5fd9331a133448d2963f71bbdd2330bb7d6de9b9561f3e630087b37c"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/stayclock.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6814035888?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "93a3ec5913163ee1126d696fc108330752357f25d0e9e90bb8a07e82b60f6db8"
     },
     {
       "locale": "en-AU",
@@ -5541,6 +5640,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/stayclock.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "c85f346c28a949be99c0410c77d0d3c6d124a9e6acc5f069e2d7c174ed243872"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/tripplanet.svg",
@@ -6028,6 +6137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6782139553?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "a65dc081bd11514a29a50a5c3f130ed165b27883ae7872907930aa009eb293a6"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/stayclock.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6814035888?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "9734a68cf440c2053cd0dc31c64198c9dccbe9222753c9219bb0ba36d563d0e5"
     },
     {
       "locale": "en-GB",
@@ -6521,6 +6640,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/stayclock.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "4faa1b214622be96c1e53252cc948f8f68f4cf82d1f464fbfbefaf1a5a5f50f9"
+    },
+    {
+      "locale": "en-US",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/tripplanet.svg",
@@ -7008,6 +7137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "17dadaa7c6a3aba3f26960b349265d0e0084e256d66f54e4358f029d14058722"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/stayclock.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "7b96fbec0a0ded87b9ef0d1290bfaa585b2bcfbcde9011dceb6e925036c40f84"
     },
     {
       "locale": "es-ES",
@@ -7501,6 +7640,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/stayclock.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6814035888?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "25183e17b8afe2da6d26491bbe24e9e9dbc21aa9c5be3a8516c6183ef4bd1073"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/tripplanet.svg",
@@ -7988,6 +8137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "f331f043bb3253712516579f11472594c6ed389754d259a07848a8daa687d4db"
+    },
+    {
+      "locale": "fi",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/stayclock.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "7895e3b5fdfa9c822c95eb01137f411f110972f70bcda5c49b7e0af706037a77"
     },
     {
       "locale": "fi",
@@ -8481,6 +8640,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/stayclock.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "f9a8e518249b08cc7e22d8d5a783ad4293b8c7659b787f1f6359f708ee103219"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/tripplanet.svg",
@@ -8968,6 +9137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "cbad2a7d2e4acd1ef253198522819a9caf69397f6b3b7871a6ed355234761dea"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/stayclock.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6814035888?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "8e343f1151d300d7207dbdcc2a6e0ce8ba2933d0907f7ac7d37f5e9127b34367"
     },
     {
       "locale": "fr-FR",
@@ -9461,6 +9640,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "80c4025564bebd57851dd13182af5f938ec47a5be6b29ad141a12a494abbf782"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/tripplanet.svg",
@@ -9948,6 +10137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/il/app/id6782139553?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "2820022b08bf7ecf992e70942c4fe4e091fa5bc84befde3806ba20992249da4a"
+    },
+    {
+      "locale": "he",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/stayclock.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6814035888?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "75ec18ac835090ca1f39073ef76b5dddaa28c2fadfcfcc84e2ff9af87ffdd5f3"
     },
     {
       "locale": "he",
@@ -10441,6 +10640,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "94034c6901899073a1f1ffcf7c9dbb9d9969e764c2496a2306a6271a62703aac"
+    },
+    {
+      "locale": "hi",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/tripplanet.svg",
@@ -10928,6 +11137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "f0bfd495b3183cebc9f9190d6c15bde730fd10855ecd34a0a2a3c4934b33d330"
+    },
+    {
+      "locale": "hr",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/stayclock.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "6d5b7054682f6a617d696f9e2b476f411e3f090a7c9de71b1bf91bef87aa0d4d"
     },
     {
       "locale": "hr",
@@ -11421,6 +11640,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/stayclock.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "3e2fa194d6cbd2ac9645809094482d28b5922a5a3f0671238e7405b4bf5098ee"
+    },
+    {
+      "locale": "hu",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/tripplanet.svg",
@@ -11908,6 +12137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/id/app/id6782139553?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "633315f53d6809092302816785788e1a6b039f0e647f7f0cd4caf0bffdffcc2b"
+    },
+    {
+      "locale": "id",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/stayclock.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "8abf42f0ce960549dad575659d4cf5734af150947e19614e0dbde57b4bb4a2b0"
     },
     {
       "locale": "id",
@@ -12401,6 +12640,16 @@
     },
     {
       "locale": "it",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/stayclock.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6814035888?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "b98fd6fbb8ccfecc628eb2487ead2b5973db9c957c9ede71d9df334e2d1a101f"
+    },
+    {
+      "locale": "it",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/tripplanet.svg",
@@ -12888,6 +13137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "b75f64310328a9e2b8bde66857408a62d567feb61ba77a4d97eafd75a695f0bb"
+    },
+    {
+      "locale": "ja",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "1b7f9ba407824f455dcea318ea68a66fa23ae8560c3ae2120a5be0ba73612388"
     },
     {
       "locale": "ja",
@@ -13381,6 +13640,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "46d42fa426b264af327382702222baca862fea1a23fd3999aa9571b737d5fdaf"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/tripplanet.svg",
@@ -13868,6 +14137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "d2879507123205a0a96b8ac49da3db4d79345357e60689a119e38514e9b9458a"
+    },
+    {
+      "locale": "ko",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/stayclock.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "543a560f848b7d0e853712cd4723c3118d01075b5ef067df66a98dd0194eac67"
     },
     {
       "locale": "ko",
@@ -14361,6 +14640,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "8e021f45794600217003f06244331824226591b26aa2cb8474d7e5cd417890b9"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/tripplanet.svg",
@@ -14848,6 +15137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "17e3f00e21a6b85d470228b6e754a39c0d8363716c0e2e8a2a6925ac3d23b85a"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "3d0ac38e2f0a08ce9c7942ac07ff63dfa18911f25986f3e198b95eb97e895f69"
     },
     {
       "locale": "mr-IN",
@@ -15341,6 +15640,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/stayclock.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6814035888?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "271e405460a9b07f27d1c5351964e1a135c09190b0e3511600a9e139b2fe68ff"
+    },
+    {
+      "locale": "ms",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/tripplanet.svg",
@@ -15828,6 +16137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "cb36e26a1b9edb7e5ffc82759014c3d73d1bf6c59b65c910996e2a08c9698995"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/stayclock.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6814035888?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "908a25dbdfc7e7092d2bb68161ed7653aac7761f116e2ce729213650edfd9dc4"
     },
     {
       "locale": "nl-NL",
@@ -16321,6 +16640,16 @@
     },
     {
       "locale": "no",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/stayclock.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "461ab41e8b94f6e039d466458de51590e538bba914298016d7b75a64e31c291b"
+    },
+    {
+      "locale": "no",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/tripplanet.svg",
@@ -16808,6 +17137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "f99564cea7df02d6a90c5a3baa0c450d59d714aadc93e2daaa37c3912fbf7b41"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "f6f482327bad6cb7ff4b101e455bd79229a2f1a3370d98abbe7b5259f33381b8"
     },
     {
       "locale": "or-IN",
@@ -17301,6 +17640,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "fff767846ed66d6a5746084bbb0e692332cb8f02d9ea451d579e5bb81527a470"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/tripplanet.svg",
@@ -17788,6 +18137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6782139553?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "eede99d818d88fc7d2d419f87c5ad955d0cb1a43e268d52fbfcb8b8650ef6141"
+    },
+    {
+      "locale": "pl",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/stayclock.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6814035888?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "b7b21e2e6d7ea52e5e381bc90ac5bd5fb6a3fe69210951a16bb7cfbd38d4855f"
     },
     {
       "locale": "pl",
@@ -18281,6 +18640,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/stayclock.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6814035888?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "fc97f39f97f84f2ef099784d0c53cbdfda6c2af1c5dff859c79364c168258658"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/tripplanet.svg",
@@ -18768,6 +19137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6782139553?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "1a66609b3866c20ce631ef8a296615807bb9c55cf698e7a6833dfa6b4a473977"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/stayclock.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6814035888?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "bdda997182ecd3ab03d9a57006a2be6f8069550355ab08e4116ddd9c14ba13ef"
     },
     {
       "locale": "pt-PT",
@@ -19261,6 +19640,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/stayclock.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "e40ba3a825b25e131b84c56661401e3a646643211ff09280cd04e63e4cbde8e8"
+    },
+    {
+      "locale": "ro",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/tripplanet.svg",
@@ -19748,6 +20137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "d81c0dda159f817bd92fc99fb5e05af3445a90c67488a95465b198ecc04040ae"
+    },
+    {
+      "locale": "ru",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/stayclock.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "c381f89601998ead4fe627785a545192a7d686769270b1446e0027e5ac19d263"
     },
     {
       "locale": "ru",
@@ -20241,6 +20640,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/stayclock.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6814035888?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "9b1fcac58c973bf7274ead394be07c98d58abb88a582f874907669399706e63c"
+    },
+    {
+      "locale": "sk",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/tripplanet.svg",
@@ -20728,6 +21137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "f9d2ac8b9de1d72def3662a6f26d560d5b9db324c81afad911375eb0320c8e11"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/stayclock.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6814035888?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "6509c28c9dbdadc668fb0009ca61f6f195cce4ff089ff4a484ed437570b5bbf8"
     },
     {
       "locale": "sl-SI",
@@ -21221,6 +21640,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/stayclock.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6814035888?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "549c50e6f4b1a70e5e66a61ebea4aa171e2bf2f89d859358ff2b208828cf984a"
+    },
+    {
+      "locale": "sv",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/tripplanet.svg",
@@ -21708,6 +22137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "bf70aaae5c5136836696758e892665ba81eff59d39ee0e18a32a796e500246aa"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "e6db05cbc4a1bf07d919b9afb7fbbff01226f3cd2d3a0846f80bf4a6581fd387"
     },
     {
       "locale": "ta-IN",
@@ -22201,6 +22640,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/stayclock.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "c50e2ad3d6ab27eab519243982ac259583416315f1b919693cbc704c95bb632b"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/tripplanet.svg",
@@ -22688,6 +23137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/th/app/id6782139553?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "67c289cd1adc9b444f67d0844185b00229d992c01a4ab7d8d25965cecb3c9611"
+    },
+    {
+      "locale": "th",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/stayclock.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "578a843d5d0510f7b26df8b14084190d924183003389e9c6e58c479afaf520fd"
     },
     {
       "locale": "th",
@@ -23181,6 +23640,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/stayclock.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6814035888?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "a9d959cc1d4fc4a27fe246d320f0f324edc0617b74de510f2d1ccd4869d3e283"
+    },
+    {
+      "locale": "tr",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/tripplanet.svg",
@@ -23668,6 +24137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6782139553?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "a251eca3a0325fe8b171395d531f61898ba154472084eb50149c7619d5ae0dbe"
+    },
+    {
+      "locale": "uk",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/stayclock.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6814035888?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "85999f0d8ae236e750bf429c9add69732f76d6df34318ced40379061d5faa568"
     },
     {
       "locale": "uk",
@@ -24161,6 +24640,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/stayclock.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "021668a0021e10febed7a84942d5e5b7cf287329e0a361e2f906b948c905a84b"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/tripplanet.svg",
@@ -24648,6 +25137,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "b9a8cda709c3047ac0324cff6de643e4261ee60bebb3ae82a7b6cee314b7976d"
+    },
+    {
+      "locale": "vi",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/stayclock.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6814035888?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "de250fd6b9d98a26c3c5808654b4dd5f1a07c20d15f7f7e7fbe66ef1eab9fd97"
     },
     {
       "locale": "vi",
@@ -25198,6 +25697,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/stayclock.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "f391783e1abc92ffaada18343b53b7878cd23a9909c37eed2c4112aef044b347"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/tripplanet.svg",
@@ -25704,6 +26213,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "ffdaadfc324740554149c28d99cad1c5bb87a2658081aab3f66f1877ce40310b"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/stayclock.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "46c63198ddf9706a2a92001aea8316a9be011a032ba6859c7e69d66c4f62c337"
     },
     {
       "locale": "zh-Hant",

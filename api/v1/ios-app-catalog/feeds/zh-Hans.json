@@ -13,10 +13,10 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-09-24",
-    "contentDigest": "012823d4b7712e4cf38d62b52a24ff9a5a299f5bfd62ea701473c44cc84e11de",
+    "contentDigest": "3812c3c64dde4395b8018065c4938772acbfb64617293cef9ecc3d704ead7e2b",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 49
+    "recordCount": 50
   },
   "items": [
     {
@@ -86,10 +86,11 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件"
+        "读文件",
+        "提示词管理"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6784974530",
@@ -1348,10 +1349,11 @@
         "活动收支",
         "出租账本",
         "摊位账本",
-        "班费管理"
+        "班费管理",
+        "项目支出"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "https://apps.apple.com/app/id6798814385",
@@ -1766,6 +1768,36 @@
       ],
       "language": "zh-Hans",
       "date_modified": "2026-09-16T15:36:42Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6814035888",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/stayclock.html",
+      "external_url": "https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "title": "Stay Clock:翻页桌面时钟",
+      "content_text": "Stay Clock 将你的 iPhone 或 iPad 变成一款常亮桌面时钟,即使隔着房间也能看清时间。大号时间数字、与每款表盘搭配的日历,以及一款可以同步出现在 StandBy、锁定屏幕、主屏幕小组件和 Apple Watch 上的统一设计。",
+      "tags": [
+        "数字时钟",
+        "床头时钟",
+        "翻页时钟",
+        "充电底座摆件",
+        "小组件时钟",
+        "夜灯时钟",
+        "世界时间",
+        "万年历",
+        "桌面摆件",
+        "进制时间",
+        "字体切换",
+        "主题时钟",
+        "防烧屏",
+        "护眼夜间模式",
+        "大字时钟",
+        "平板时钟",
+        "手表表盘",
+        "整点报时",
+        "跨时区"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-09-24T08:17:22Z"
     },
     {
       "id": "urn:apple:app:id6787193643",

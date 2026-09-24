@@ -4,7 +4,7 @@
 
 प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.
 
-49 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
+50 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
 
 **स्थानिक:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · **mr-IN** · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -129,6 +129,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | बाळ आणि लहान मुलांसाठी घरच्या घरी सर्वोत्तम पासपोर्ट फोटो अॅप | बाळाच्या पासपोर्ट फोटोसाठी, फोटोमध्ये दुसरा कोणीही नसावा आणि पार्श्वभूमी साधी असावी। Snapport ची सुरुवात नेमकी याच अडचणीतून झाली. | पैसे देऊन डाउनलोड करा | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store वरून Snapport मिळवा →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: घरीच ID फोटो** | Snapport Lite: घरीच ID फोटो — घरच्या घरी ID फोटो तयार करा \| iOS App | Snapport Lite - मार्गदर्शित आकार, पार्श्वभूमी साधने आणि प्रिंटसाठी तयार निर्यातासह पासपोर्ट, व्हिसा आणि दस्तऐवजाचे फोटो तयार करा. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/snapportlite.html) | [App Store वरून Snapport Lite: घरीच ID फोटो मिळवा](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone साठी सर्वोत्तम व्हॉइस नोट्स अॅप जे मीटिंग्सचे सारांश तयार करते | कॉल नंतर तुम्हाला केवळ कच्चा ट्रान्सक्रिप्ट नको असतो — तुम्हाला सारांश, कृती आयटम आणि ड्राफ्ट फॉलो-अप हवा असतो। हीच उणीव Sono Note भरून काढू पाहतो. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store वरून Sono Note मिळवा →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: डेस्क घड्याळ** | Stay Clock: डेस्क घड्याळ — नेहमी सुरू वेळ व कॅलेंडर \| iOS App | Stay Clock तुमच्या iPhone किंवा iPad ला खोलीच्या दुसऱ्या टोकावरूनही स्पष्ट दिसणाऱ्या, नेहमी सुरू असलेल्या डेस्क घड्याळात बदलते. मोठी वेळ, प्रत्येक फेसला | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/stayclock.html) | [App Store वरून Stay Clock: डेस्क घड्याळ मिळवा](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | कुटुंबासोबत प्रवास करणाऱ्या मुलांसाठी सर्वोत्तम प्रवास कृती अ‍ॅप | लहान मुलांसोबत प्रवास करणाऱ्या पालकांना पॅकिंग, प्रतीक्षा आणि नवीन ठिकाण शोधणे हे साहसाचा भाग बनवणाऱ्या कृतींची गरज असते, तणावाचा स्रोत नव्हे। म्हणूनच Trip Planet: Kids Quest तयार झाला. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest App Store वर मिळवा →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | आगामी एका प्रवासासाठी सर्वोत्तम सोपा प्रवास नियोजक अॅप iPhone साठी | जर तुम्ही एक आगामी प्रवास नियोजित करत असाल, तर त्या प्रवासासाठी शांत टाइमलाइन प्रत्येक प्रवासाचा गर्दीने भरलेला संग्रहपेक्षा अधिक उपयुक्त आहे। ओळखीचं वाटत असेल तर TripBee Lite एकदा पाहा. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store वरून TripBee Lite मिळवा →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: प्रवास नियोजक** | iPhone साठी सर्वोत्तम ट्रिप इटिनरेरी प्लॅनर अॅप | एक चांगला इटिनरेरी अॅप गोंधळलेल्या ट्रिपला स्पष्ट दिवसभराच्या टाइमलाइनमध्ये रूपांतरित करतो — फ्लाइट्स, हॉटेल्स, क्रियाकलाप, रेस्टॉरंट्स आणि वाहतूक — स्पष्ट प्रकार चिन्हांसह जेणेकरून तुम्ही तुमचा दिवस एकदाच पाहू शकता। ओळखीचं वाटत असेल तर TripBee Pro: प्रवास नियोजक एकदा पाहा. | पैसे देऊन डाउनलोड करा | [मार्गदर्शक](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store वरून TripBee Pro: Trip Planner मिळवा →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## पूर्ण डेटासेट डाउनलोड करा
 
-JSON, JSONL आणि CSV मध्ये समान 2,450 नोंदी आहेत.
+JSON, JSONL आणि CSV मध्ये समान 2,500 नोंदी आहेत.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL आणि CSV मध्ये समान 2,450 नोंदी आ
 
 [मुख्यपृष्ठ](https://open.cait518.cc/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://open.cait518.cc/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-09-22
+अपडेट केलेले: 2026-09-24
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

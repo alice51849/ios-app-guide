@@ -3951,6 +3951,92 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         }
     ],
+    # Claims here are held to Stay Clock's verified feature set (App Store
+    # copy + AGENTS.md, 2026-09-23): on-device only clock/calendar display,
+    # no account/ads/network, Keep Awake tied to charging state, OLED panel
+    # care, and one identical face synced across the full-screen canvas,
+    # StandBy, Lock Screen, Home Screen widgets and Apple Watch.
+    "stayclock": [
+        {
+            "query": "best app to turn an old iPhone into an always-on desk clock",
+            "guide_title": "Always-on desk clock apps for iPhone and iPad: what to check",
+            "triggers": [
+                "always on desk clock app",
+                "turn iphone into nightstand clock",
+                "charging dock clock display app",
+                "oled screen burn in clock app",
+                "full screen digital clock no ads",
+                "flip clock app for iphone",
+            ],
+            "persona": "people repurposing a spare or older iPhone or iPad as a dedicated desk, shelf or nightstand clock display",
+            "lead": (
+                "An always-on clock app has to survive hours of continuous "
+                "screen time without burning an OLED panel or draining a "
+                "battery that is not charging, and it should not need an "
+                "account or a subscription just to show the time."
+            ),
+            "paras": [
+                (
+                    "The two things that separate a real always-on display "
+                    "from a plain full-screen clock are burn-in protection and "
+                    "charge-aware behaviour: a dimmed night face with pixel "
+                    "shifting on OLED, and a Keep Awake setting tied to "
+                    "charging state or a battery floor rather than one that "
+                    "forces the screen on regardless of power."
+                ),
+                (
+                    "The display should also earn its spot on a shelf or "
+                    "nightstand by staying legible from across the room: "
+                    "large digits, a calendar that fits the face, and the "
+                    "same design following you to StandBy, Lock Screen, "
+                    "Home Screen widgets and Apple Watch instead of living "
+                    "only inside the app."
+                ),
+            ],
+            "look": [
+                "Keep Awake tied to charging state, with a battery floor instead of always forcing the screen on.",
+                "OLED panel care: pixel shifting and a dimmed red night face on true black.",
+                "One face that matches across the full-screen clock, StandBy, Lock Screen, widgets and Apple Watch.",
+                "Calendar shown as Off, a simple date, or a full month, chosen per face.",
+                "No account, ads, tracking or network access — everything stays on the device.",
+                "One-time purchase for extra faces rather than a subscription.",
+            ],
+            "steps": [
+                "Prop the phone up on a charger and confirm the screen stays on only while charging, or above your chosen battery floor.",
+                "Leave it running after dark and check the night face dims and the panel-care pixel shifting is visibly active.",
+                "Check the same clock face actually appears on StandBy, Lock Screen and a Home Screen widget, not only the full-screen view.",
+                "Switch the calendar mode per face and confirm the date or month displays without cropping.",
+                "Turn off Wi-Fi and confirm the clock keeps working — a real on-device clock needs no network.",
+            ],
+            "fits": "fits anyone turning a spare iPhone or iPad into a dedicated desk, shelf or bedside clock who wants it to survive constant charging and screen-on time without an account or subscription.",
+            "faq": [
+                {
+                    "q": "Will an always-on clock damage my screen?",
+                    "a": (
+                        "Look for explicit OLED panel care — pixel shifting "
+                        "and a dimmed night face — rather than a plain static "
+                        "display left on for hours."
+                    ),
+                },
+                {
+                    "q": "Does it drain the battery when it is not charging?",
+                    "a": (
+                        "A well-behaved desk clock ties Keep Awake to "
+                        "charging state or a battery floor, so it does not "
+                        "silently drain an unplugged device."
+                    ),
+                },
+                {
+                    "q": "Do I need an account or subscription?",
+                    "a": (
+                        "No — check that the app works fully on-device with "
+                        "no account, and prefer a one-time unlock over a "
+                        "recurring subscription for extra faces."
+                    ),
+                },
+            ],
+        }
+    ],
 }
 
 # Zipbox has entered the canonical live roster; its reviewed pre-publication

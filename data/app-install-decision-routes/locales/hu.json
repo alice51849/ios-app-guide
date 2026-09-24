@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:stayclock",
+      "locale": "hu",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Asztali Óra",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Asztali Óra — Idő és naptár, mindig látható | iOS App",
+      "decision_context": "A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-jét, amely a szoba túlsó végéből is olvasható. Nagy idő, minden számlaphoz illő naptár, és egyetlen megjelenés, amely elkíséri Készenlétbe, a zárolási képernyőre, a kezdőképernyő widgeteire és az Apple Watchra. Az asztalra, a polcra és az éjjeliszekrényre tervezve. Teljes képernyős idő, messziről is olvasható, álló vagy fekvő tájolásban, iPhone-on és iPadon. Az Ébren tartás érti a töltést. Töltés közben bekapcsolva marad, akkumulátor-küszöbbel mindig bekapcsolva, vagy a rendszert követi — sosem ér meglepetés. Panelvédelem OLED-kijelzőkhöz. Finom pixeleltolás, tétlenségkor elhalványuló részletek, és halvány vörös éjszakai számlap valódi feketén a hálószobához. Egy számlap mindenhol. A kiválasztott számlap megjelenik a teljes képernyőn, Készenlétben, a zárolási képernyőn és a kezdőképernyő widgetjein, valamint az Apple Watchon — mindenhol ugyanaz. Minden számlaphoz illő naptár. Válasszon a Kikapcsolva, az Egyszerű (dátummal és a hét napjával) vagy a teljes Havi nézet közül, külön minden számlaphoz. Az Ön nyelve és időzónája. Váltson app-nyelvet azonnal, válasszon bármely várost vagy időzónát, és döntsön a 12 vagy 24 órás formátum és a saját számjegyei mellett. Eleve privát. Nincs fiók, nincs hirdetés, nincs nyomkövetés és nincs hálózat. Minden a készüléken marad. Egy dokkolóban az asztalon: a készülék világít töltés közben, és a kiválasztott számlapon mutatja az időt. A hálószobában éjjel: a kijelző halvány vörös órává sötétül valódi feketén, és kíméli az OLED-panelt. Egy nap távol az asztaltól: ugyanaz a számlap jelenik meg a zárolási képernyőn, a kezdőképernyőn és a csuklóján. Mit tud a Stay Clock Teljes képernyős, mindig bekapcsolt óra, nagy és jól olvasható idővel Egy ingyenes számlap jár hozzá, kézzel írt papír hatással Az élethosszig tartó hozzáférés 100 további számlapot ad, más színekben, stílusokban és betűtípusokban A Kikapcsolva, Egyszerű vagy Havi naptár külön mentve minden számlaphoz Készenléti, zárolási képernyő és kezdőképernyő widgetek, amelyek illenek az apphoz Apple Watch számlap, amely ugyanazt a designt követi Ébren tartás töltés közben, akkumulátor-küszöbbel és rendszerbeállításokkal Éjszakai ütemezés, halvány vörös számlap és pixeleltolás OLED-kijelzőkhöz Óránkénti hang és egyszerű ébresztő Az app nyelve és időzónája az alkalmazáson belül választható iPhone- és iPad-elrendezések minden képernyőmérethez A Stay Clock ingyenesen letölthető, egy teljes számlappal. Egy opcionális, élethosszig tartó vásárlás 100 további számlapot old fel, előfizetés nélkül. Minden a készüléken fut. Nincs fiók, nincs hirdetés, nincs analitika és nincs nyomkövetés.",
+      "category": "utility",
+      "category_label": "Továbbiak",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Nincs reklám"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Továbbiak",
+        "Ingyenes kezdés",
+        "Nincs reklám",
+        "Apple Watch",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/hu/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Töltse le a(z) Stay Clock: Asztali Óra appot az App Store-ból",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

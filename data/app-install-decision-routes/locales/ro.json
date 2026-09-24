@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
   "dateModified": "2026-09-24",
-  "content_digest": "e114895b4e502be5bcffcd0b9f09000e18a28c6033ffe2f324a95d2b41caed9d",
-  "generation_digest": "9a3a61fb5450510570a04e69334068936cddd27439454cb2ed341a3590b7172c",
+  "content_digest": "507df8fd46716bca2f374fee12554979324fece46deefc1fa75374a1082a9d54",
+  "generation_digest": "9c7f594ba56e9b212365e94b21dc10f1ec96eee882e202577a07dcf21a131894",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 49,
+  "record_count": 50,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ro.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/ro.rss.xml",
@@ -2119,6 +2119,61 @@
       "publisher_disclosure": "Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ro:stayclock",
+      "locale": "ro",
+      "app_key": "stayclock",
+      "app_name": "Stay Clock: Ceas de Birou",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Stay Clock: Ceas de Birou — Ora și calendarul mereu activi | iOS App",
+      "decision_context": "Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de birou mereu pornit, care se poate citi din cealaltă parte a camerei. Oră mare, un calendar potrivit pentru fiecare cadran și un aspect care vă însoțește în modul În repaus, pe ecranul de blocare, în widgeturile de pe ecranul principal și pe Apple Watch. Făcut pentru birou, raft și noptieră. Oră pe ecran complet, lizibilă de la distanță, pe verticală sau orizontală, pe iPhone și iPad. Menține aprins înțelege încărcarea. Rămâne pornit în timpul încărcării, mereu pornit cu un prag de baterie, sau urmează sistemul — fără surprize. Protecția ecranului pentru afișaje OLED. Deplasare ușoară a pixelilor, detalii care se estompează în repaus și un cadran roșu discret pe negru veritabil pentru dormitor. Un cadran peste tot. Cadranul ales apare pe ecranul complet, în modul În repaus, pe ecranul de blocare și în widgeturile de pe ecranul principal și pe Apple Watch — identic peste tot. Un calendar potrivit pentru fiecare cadran. Alegeți Dezactivat, Simplu cu data și ziua săptămânii, sau vizualizarea completă pe Lună, separat pentru fiecare cadran. Limba și fusul orar, alese de dumneavoastră. Schimbați limba aplicației instantaneu, alegeți orice oraș sau fus orar și optați pentru 12 sau 24 de ore cu cifrele preferate. Privat prin design. Fără cont, fără reclame, fără urmărire și fără rețea. Totul rămâne pe dispozitivul dumneavoastră. Pe o bază de încărcare pe birou: dispozitivul rămâne luminat cât timp se încarcă, arătând ora în cadranul ales. În dormitor, noaptea: ecranul se estompează într-un ceas roșu discret pe negru veritabil și protejează panoul OLED. O zi departe de birou: același cadran apare pe ecranul de blocare, pe ecranul principal și la încheietura mâinii. Ce face Stay Clock Ceas pe ecran complet, mereu pornit, cu oră mare și lizibilă Un cadran gratuit inclus, cu aspect de hârtie scrisă de mână Accesul pe viață adaugă 100 de cadrane în plus, în culori, stiluri și fonturi diferite Calendar Dezactivat, Simplu sau Lună, salvat separat pentru fiecare cadran Widgeturi pentru modul În repaus, ecranul de blocare și ecranul principal, potrivite cu aplicația Cadran de Apple Watch care urmează același design Menține aprins în timpul încărcării, cu prag de baterie și opțiuni de sistem Program de noapte, cadran roșu discret și deplasare a pixelilor pentru ecrane OLED Semnal orar și o alarmă simplă Limba aplicației și fusul orar, alese direct din aplicație Machete pentru iPhone și iPad, pentru fiecare dimensiune de ecran Stay Clock se descarcă gratuit, cu un cadran complet. O achiziție opțională de acces pe viață deblochează 100 de cadrane în plus, fără abonament. Totul rulează pe dispozitivul dumneavoastră. Fără cont, fără reclame, fără analize și fără urmărire.",
+      "category": "utility",
+      "category_label": "Mai mult",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Început gratuit",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Fără reclame"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Mai mult",
+        "Început gratuit",
+        "Fără reclame",
+        "Apple Watch",
+        "App Store · Gratuit"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/stayclock.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ro/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ro/stayclock.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fstayclock%2Fdecision%2Fl%2Fro%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
+      "app_store_id": "6814035888",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6814035888",
+      "app_store_url": "https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Descarcă Stay Clock: Ceas de Birou din App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
+      "guide_cta_label": "Citește ghidul complet",
+      "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
+      "source_persona_query": "best app to turn an old iPhone into an always-on desk clock",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

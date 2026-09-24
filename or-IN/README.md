@@ -4,7 +4,7 @@
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 49ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
+ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 50ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
 
 **ଅଞ୍ଚଳ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · **or-IN** · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -129,6 +129,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | ବାଳକ ଏବଂ ଶିଶୁଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ପାସପୋର୍ଟ ଫଟୋ ଆପ୍ ଘରେ | ଶିଶୁଙ୍କର ପାସପୋର୍ଟ ଫଟୋ ପାଇଁ, ଅନ୍ୟ କୌଣସି ବ୍ୟକ୍ତି ଫଟୋରେ ଥିବା ନାହିଁ ଏବଂ ପୃଷ୍ଠଭୂମି ସାଧାରଣ ହେବା ଆବଶ୍ୟକ। Snapportର ଆରମ୍ଭ ଠିକ୍ ଏହି ସମସ୍ୟାରୁ ହିଁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store ରୁ Snapport ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ** | Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ — ବାସାରେ ID ଫଟୋ ସୃଷ୍ଟି କରନ୍ତୁ \| iOS App | Snapport Lite - ପାସପୋର୍ଟ, ଭିସା, ଓ ଡକ୍ୟୁମେଣ୍ଟ ଫଟୋଗୁଡିକୁ ମାର୍ଗଦର୍ଶକ ଆକାର, ପୃଷ୍ଠଭୂମି ଉପକରଣ, ଓ ପ୍ରିଣ୍ଟ-ରେଡି ନିର୍ୟାତ ସହିତ ତିଆରି କରନ୍ତୁ. | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/snapportlite.html) | [App Store ରୁ Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone ରେ ସଭା ସାରାଂଶ କରୁଥିବା ସର୍ବୋତ୍ତମ ଭଏସ୍ ନୋଟ୍ ଆପ୍ | କଲ୍ ପରେ ଆପଣ କେବଳ କଚ୍ଛା ଟ୍ରାନ୍ସକ୍ରିପ୍ଟ ଚାହାଁନ୍ତି ନାହିଁ — ଆପଣ ସାରାଂଶ, କାର୍ଯ୍ୟ ଆଇଟମ୍ ଏବଂ ଏକ ଡ୍ରାଫ୍ଟ ଫଲୋ-ଅପ୍ ଚାହାଁନ୍ତି। ଏହି ଅଭାବକୁ ହିଁ Sono Note ପୂରଣ କରିବାକୁ ଚାହେଁ। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store ରୁ Sono Note ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: ଡେସ୍କ ଘଡ଼ି** | Stay Clock: ଡେସ୍କ ଘଡ଼ି — ସବୁବେଳେ ସମୟ ଓ କ୍ୟାଲେଣ୍ଡର୍ \| iOS App | Stay Clock ଆପଣଙ୍କ iPhone କିମ୍ବା iPad କୁ ଏକ ସବୁବେଳେ ଚାଲୁ ଥିବା ଡେସ୍କ ଘଡ଼ିରେ ପରିଣତ କରିଦିଏ, ଯାହାକୁ ଆପଣ କୋଠରୀର ଅନ୍ୟ ପ୍ରାନ୍ତରୁ ମଧ୍ୟ ପଢ଼ିପାରିବେ। ବଡ଼ ସମୟ, ପ୍ରତ୍ୟେକ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/stayclock.html) | [App Store ରୁ Stay Clock: ଡେସ୍କ ଘଡ଼ି ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | ପରିବାର ଯାତ୍ରାରେ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଭ୍ରମଣ କାର୍ଯ୍ୟ ଆପ୍ | ଅପରିପକ୍ୱ ଶିଶୁ ସହ ପ୍ରବାସ କରୁଥିବା ଅଭିଭାବକମାନେ ପାଇଁ ପ୍ୟାକିଂ, ଅପେକ୍ଷା ଏବଂ ନୂତନ ସ୍ଥାନ ଅନ୍ୱେଷଣକୁ ଅଭିଯାନର ଅଂଶ କରିବା ଦରକା, ଅନ୍ୟ ଚାପ ଉତ୍ପନ୍ନ କରିବା ନୁହେଁ। ସେଥିପାଇଁ ହିଁ Trip Planet: Kids Quest ତିଆରି ହେଲା। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [App Store ରେ Trip Planet: Kids Quest ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | ଏକ ଆସନ୍ତା ଯାତ୍ରା ପାଇଁ ସରଳ ଟ୍ରିପ୍ ପ୍ଲାନର୍ ଆଇଫୋନ୍ ଆପ୍‌ର ସର୍ବୋତ୍ତମ | ଯଦି ଆପଣ ଗୋଟିଏ ଆସନ୍ତା ଯାତ୍ରା ପ୍ରଣାଳୀବଦ୍ଧ କରୁଛନ୍ତି, ତେବେ ସେହି ଯାତ୍ରା ପାଇଁ ଏକ ସାନ୍ତ୍ୱନାଦାୟକ ସମୟରେଖା ଆପଣଙ୍କ ପାଇଁ ଅଧିକ ଉପଯୋଗୀ ହେବ ତୁଳନାରେ ସମସ୍ତ ଯାତ୍ରାର ଭର୍ତ୍ତି ହୋଇଥିବା ଆର୍କାଇଭ୍। ପରିଚିତ ଲାଗିଲେ TripBee Lite ଥରେ ଦେଖନ୍ତୁ। | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store ରୁ ଟ୍ରିପ୍ବି ଲାଇଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: ଯାତ୍ରା ଯୋଜନାକାରୀ** | iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ଟ୍ରିପ୍ ଇଟିନେରାରୀ ପ୍ଲାନର୍ ଆପ୍ | ଭଲ ଇଟିନେରାରୀ ଆପ୍ ଏକ ଅସ୍ପଷ୍ଟ ଯାତ୍ରାକୁ ସ୍ପଷ୍ଟ ଦିନ ପ୍ରତି ଦିନ ଟାଇମ୍ଲାଇନ୍ ରୂପେ ପରିଣତ କରେ — ଫ୍ଲାଇଟ୍, ହୋଟେଲ୍, କାର୍ଯ୍ୟକଳାପ, ରେଷ୍ଟୁରାଣ୍ଟ ଏବଂ ପରିବହନ — ସ୍ପଷ୍ଟ ଟାଇପ୍ ଆଇକନ୍ ସହିତ ଯାହା ଆପଣଙ୍କୁ ଏକ ଦୃଷ୍ଟିରେ ଆପଣଙ୍କର ଦିନ ପଢ଼ିବାକୁ ସହାୟ କରେ। ପରିଚିତ ଲାଗିଲେ TripBee Pro: ଯାତ୍ରା ଯୋଜନାକାରୀ ଥରେ ଦେଖନ୍ତୁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store ରୁ TripBee Pro: Trip Planner ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ସମ୍ପୂର୍ଣ୍ଣ ତଥ୍ୟସେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ
 
-JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,450 ରେକର୍ଡ ସମାନ ରଖେ।
+JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,500 ରେକର୍ଡ ସମାନ ରଖେ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,450 ରେକର୍ଡ ସ
 
 [ହୋମ୍](https://open.cait518.cc/ios-app-guide/or-IN/index.html) · [ଖୋଲା ତଥ୍ୟ](https://open.cait518.cc/ios-app-guide/or-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ଲାଇସେନ୍ସ](https://creativecommons.org/licenses/by/4.0/)
 
-ଅଦ୍ୟତିତ: 2026-09-22
+ଅଦ୍ୟତିତ: 2026-09-24
 
 CC BY 4.0 ମୂଳ ସୂଚୀ ସଂଗ୍ରହ ପାଇଁ ପ୍ରୟୋଗ ହୁଏ; ଆପ୍ ନାମ ଏବଂ App Store ଚିହ୍ନଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଅଟୁଟ ଅଧିକାର।

@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 49개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 50개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **Snapport** | 집에서 아기와 유아용 여권 사진 앱 추천 | 아기 여권 사진은 다른 사람이 나오면 안 되고 배경은 단색이어야 하지만, 영아는 눈을 완전히 뜨지 않아도 됩니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite：집에서 증명사진** | Snapport Lite：집에서 증명사진 — 집에서 ID 사진 만들기 \| iOS App | Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/snapportlite.html) | [App Store에서 Snapport Lite：집에서 증명사진 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | 아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱 | 통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: 플립 탁상시계** | Stay Clock: 플립 탁상시계 — 항상 켜지는 시계와 캘린더 \| iOS App | Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있는 상시 켜짐 탁상시계로 바꿔줍니다. 큼직한 시간, 각 페이스에 맞는 캘린더, 그리고 StandBy, 잠금 화면, 홈 화면 위젯, Apple Watch까지 그대로 이어지는 하나의 디자인. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/stayclock.html) | [App Store에서 Stay Clock: 플립 탁상시계 받기](https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | 다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용 | 다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다. 이런 상황이라면 TripBee Lite 한번 살펴보세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [앱 스토어에서 트립비 라이트 받기 →](https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: 여행 플래너** | 아이폰용 최고의 여행 일정 계획 앱 | 좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | 아이폰에서 아이들 흐릿한 사진을 보정하는 최고의 앱 | 아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App Store에서 Unblurry 받기 →](https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,450개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 2,500개 기록을 포함합니다.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL, CSV 모두 동일한 2,450개 기록을 포함합니다.
 
 [홈](https://open.cait518.cc/ios-app-guide/ko/index.html) · [오픈 데이터](https://open.cait518.cc/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-09-22
+업데이트 날짜: 2026-09-24
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

@@ -6,8 +6,8 @@
   "name": "Lumi Studio verified iOS app decision matrix",
   "description": "Every verified live Lumi Studio iOS app with identical comparison fields. Alphabetical by app key; this is not a ranking.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-09-22",
-  "numberOfItems": 49,
+  "dateModified": "2026-09-24",
+  "numberOfItems": 50,
   "itemListOrder": "https://schema.org/ItemListUnordered",
   "itemListElement": [
     {
@@ -2413,6 +2413,66 @@
     {
       "@type": "ListItem",
       "position": 41,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/stayclock.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#stayclock",
+        "name": "Stay Clock: Flip Desk Clock",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/stayclock.html",
+        "sameAs": "https://apps.apple.com/us/app/id6814035888",
+        "installUrl": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big time, a calendar that fits each face, and one look",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for best app to turn an old iPhone into an always-on desk clock, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2472,7 +2532,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2532,7 +2592,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2592,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2652,7 +2712,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2712,7 +2772,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2772,7 +2832,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2832,7 +2892,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2892,7 +2952,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
       "item": {
         "@type": "SoftwareApplication",

@@ -4,7 +4,7 @@
 
 Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.
 
-Наміри пошуку, створені видавцем, охоплюють 49 перевірених активних iOS-додатків і 50 локалей Apple.
+Наміри пошуку, створені видавцем, охоплюють 50 перевірених активних iOS-додатків і 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · **uk** · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | найкращий додаток для фото на паспорт для немовлят і малюків вдома | Для фото на паспорт дитини ніхто інший не повинен бути в кадрі, а фон має бути однотонним. Snapport виріс саме з цієї проблеми. | Платне завантаження | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Отримайте Snapport в App Store →](https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ID-фото вдома** | Snapport Lite: ID-фото вдома — Створіть ID-фотографії вдома \| iOS App | Snapport Lite - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/snapportlite.html) | [Завантажте Snapport Lite: ID-фото вдома з App Store](https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | найкращий додаток для голосових нотаток, що підсумовує наради на iPhone | Після дзвінка вам не потрібен сирий транскрипт — вам потрібен підсумок, завдання і чернетка листа. Саме цю прогалину й закриває Sono Note. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Отримайте Sono Note в App Store →](https://apps.apple.com/ua/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: відкидний годинник** | Stay Clock: відкидний годинник — Час і календар без перерви \| iOS App | Stay Clock перетворює ваш iPhone або iPad на настільний годинник, що світиться без перерви і читається з іншого кінця кімнати. Великий час, календар під | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/stayclock.html) | [Завантажте Stay Clock: відкидний годинник з App Store](https://apps.apple.com/ua/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | найкращий простий додаток для планування однієї майбутньої поїздки для iPhone | Якщо ви плануєте одну майбутню подорож, спокійна хронологія для неї корисніша за переповнений архів усіх поїздок, які ви могли б колись здійснити. Якщо це про вас, погляньте на TripBee Lite. | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Отримайте TripBee Lite в App Store →](https://apps.apple.com/ua/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: планувальник подорожей** | найкращий додаток для планування маршруту подорожі на iPhone | Хороший додаток для маршруту перетворює хаотичну подорож на чіткий розклад по днях — рейси, готелі, активності, ресторани та транспорт — із чіткими іконками типів, щоб ви могли швидко переглянути свій день. Якщо це про вас, погляньте на TripBee Pro: планувальник подорожей. | Платне завантаження | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Отримайте TripBee Pro: планувальник подорожей в App Store →](https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | найкращий додаток для виправлення розмитих фото дітей на iPhone | Діти ніколи не сидять спокійно, тому м’який фокус і тремтіння камери неминучі | Безкоштовно для початку · розблокування за одну покупку | [Путівник](https://open.cait518.cc/ios-app-guide/uk/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Отримайте Unblurry в App Store →](https://apps.apple.com/ua/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Завантажити повний набір даних
 
-JSON, JSONL і CSV містять однакові 2 450 записів.
+JSON, JSONL і CSV містять однакові 2 500 записів.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL і CSV містять однакові 2 450 записів.
 
 [Головна](https://open.cait518.cc/ios-app-guide/uk/index.html) · [Відкриті дані](https://open.cait518.cc/ios-app-guide/uk/data/lumi-studio-publisher-search-intent-catalog.html) · [Ліцензія](https://creativecommons.org/licenses/by/4.0/)
 
-Оновлено: 2026-09-22
+Оновлено: 2026-09-24
 
 CC BY 4.0 застосовується до оригінального складання каталогу; назви додатків і знаки App Store належать їх власникам.

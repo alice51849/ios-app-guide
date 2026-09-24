@@ -4,7 +4,7 @@
 
 વિકાસકર્તા દ્વારા સીધો પ્રકાશિત કેટલોગ, જે દરેક એપ કોના માટે બનાવાઈ છે, વપરાશકર્તા કયું કામ પૂર્ણ કરવા માંગે છે અને App Store સુધીનો સીધો માર્ગ શું છે તે સમજાવે છે.
 
-49 ચકાસાયેલ અને App Store પર ઉપલબ્ધ iOS એપ્સ તથા Appleનાં 50 ભાષા-પ્રદેશ માટે પ્રકાશક દ્વારા લખાયેલા શોધ ઇરાદા.
+50 ચકાસાયેલ અને App Store પર ઉપલબ્ધ iOS એપ્સ તથા Appleનાં 50 ભાષા-પ્રદેશ માટે પ્રકાશક દ્વારા લખાયેલા શોધ ઇરાદા.
 
 **ભાષા-પ્રદેશ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · **gu-IN** · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -129,6 +129,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport** | બાળકો અને ટોડલર્સ માટે શ્રેષ્ઠ પાસપોર્ટ ફોટો એપ ઘરમાં | બાળકના પાસપોર્ટ ફોટો માટે, શોટમાં બીજો કોઈ ન હોઈ શકે અને પૃષ્ઠભૂમિ સાદી હોવી જોઈએ. Snapport ની શરૂઆત બરાબર આ જ મુશ્કેલીથી થઈ. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store પર Snapport મેળવો →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: ઘરે ઓળખ ફોટા** | Snapport Lite: ઘરે ઓળખ ફોટા — ઘરે ID ફોટા બનાવો \| iOS App | Snapport Lite - માર્ગદર્શિત કદ, પૃષ્ઠભૂમિ સાધનો અને પ્રિન્ટ માટે તૈયાર નિકાસ સાથે પાસપોર્ટ, વિઝા અને દસ્તાવેજોના ફોટા બનાવો. | મફત શરૂઆત · એક વખતની ખરીદીથી અનલૉક | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/snapportlite.html) | [App Store પરથી Snapport Lite: ઘરે ઓળખ ફોટા મેળવો](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhone પર મીટિંગ્સનું સારાંશ આપતી શ્રેષ્ઠ વોઇસ નોટ્સ એપ | કોલ પછી તમે કાચા ટ્રાન્સક્રિપ્ટ નહીં માંગો — તમે સારાંશ, એક્શન આઇટમ્સ અને અનુસરણ ડ્રાફ્ટ માંગો છો. આ જ ખાલીપો Sono Note ભરવા માગે છે. | મફત શરૂઆત · એક વખતની ખરીદીથી અનલૉક | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store પર Sono Note મેળવો →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: ડેસ્ક ઘડિયાળ** | Stay Clock: ડેસ્ક ઘડિયાળ — હંમેશાં ચાલુ સમય અને કૅલેન્ડર \| iOS App | Stay Clock તમારા iPhone કે iPadને એવી હંમેશાં ચાલુ રહેતી ડેસ્ક ઘડિયાળમાં ફેરવે છે, જે તમે ઓરડાના બીજા છેડેથી પણ સહેલાઈથી વાંચી શકો. મોટો સમય, દરેક | મફત શરૂઆત · એક વખતની ખરીદીથી અનલૉક | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/stayclock.html) | [App Store પરથી Stay Clock: ડેસ્ક ઘડિયાળ મેળવો](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Trip Planet: Kids Quest** | ફેમિલી ટ્રિપ્સ માટે બાળકો માટે શ્રેષ્ઠ ટ્રાવેલ એક્ટિવિટી એપ | યંગ બાળકો સાથે મુસાફરી કરતા માતાપિતાને એવી એક્ટિવિટીઝ જોઈએ છે જે પેકિંગ, વેટિંગ અને નવી જગ્યા શોધવાનું એડવેન્ચર બનાવે, વધુ તણાવનું કારણ નહીં. એટલા માટે જ Trip Planet: Kids Quest બન્યું. | મફત શરૂઆત · એક વખતની ખરીદીથી અનલૉક | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html) | [Trip Planet: Kids Quest App Store પર મેળવો →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | એક આવનારી યાત્રા માટે શ્રેષ્ઠ સરળ ટ્રિપ પ્લાનર એપ્લિકેશન iPhone માટે | જો તમે એક આવનારી યાત્રા યોજના બનાવી રહ્યા છો, તો તે યાત્રા માટે શાંત સમયરેખા દરેક શક્ય યાત્રાનો ભીડભરેલું આર્કાઇવ કરતા વધુ ઉપયોગી છે. જાણીતું લાગે તો TripBee Lite એક વાર જોઈ લો. | મફત શરૂઆત · એક વખતની ખરીદીથી અનલૉક | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App Store પર ટ્રિપબી લાઇટ મેળવો →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: ટ્રિપ પ્લાનર** | iPhone માટે શ્રેષ્ઠ ટ્રિપ ઇટિનરરી પ્લાનર એપ | એક સારી ઇટિનરરી એપ ગંદલી ટ્રિપને સ્પષ્ટ દિનદીઠ સમયરેખામાં ફેરવે છે — ફ્લાઇટ્સ, હોટેલ્સ, પ્રવૃત્તિઓ, રેસ્ટોરાં અને પરિવહન — સ્પષ્ટ પ્રકાર ચિહ્નો સાથે જેથી તમે એક નજરમાં તમારો દિવસ વાંચી શકો. જાણીતું લાગે તો TripBee Pro: ટ્રિપ પ્લાનર એક વાર જોઈ લો. | ચુકવેલ ડાઉનલોડ | [માર્ગદર્શક](https://open.cait518.cc/ios-app-guide/gu-IN/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App Store પર TripBee Pro: ટ્રિપ પ્લાનર મેળવો →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## પૂર્ણ ડેટાસેટ ડાઉનલોડ કરો
 
-JSON, JSONL અને CSVમાં સમાન 2,450 રેકોર્ડ્સ છે.
+JSON, JSONL અને CSVમાં સમાન 2,500 રેકોર્ડ્સ છે.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL અને CSVમાં સમાન 2,450 રેકોર્ડ્�
 
 [હોમ](https://open.cait518.cc/ios-app-guide/gu-IN/index.html) · [ખુલ્લા ડેટા](https://open.cait518.cc/ios-app-guide/gu-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [લાઇસન્સ](https://creativecommons.org/licenses/by/4.0/)
 
-અપડેટ થયેલ: 2026-09-22
+અપડેટ થયેલ: 2026-09-24
 
 CC BY 4.0 મૂળ કેટલોગ સંકલન પર લાગુ પડે છે; એપનાં નામ અને App Store ચિહ્નો તેમના માલિકોના છે.

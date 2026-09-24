@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 49 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 50 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **Snapport** | nejlepší aplikace na pasové fotografie pro miminka a batolata doma | Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí musí být jednobarevné. Snapport vznikl přesně z tohohle problému. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Stáhněte Snapport v App Store →](https://apps.apple.com/cz/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Foto na doklady** | Snapport Lite: Foto na doklady — Vytvořte ID fotografie doma \| iOS App | Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/snapportlite.html) | [Stáhněte si Snapport Lite: Foto na doklady v App Storu](https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | nejlepší aplikace na hlasové poznámky, která shrnuje schůzky na iPhonu | Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu. Přesně tuhle mezeru má Sono Note zaplnit. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Stáhněte Sono Note v App Store →](https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: sklápěcí hodiny** | Stay Clock: sklápěcí hodiny — Nepřetržitý čas a kalendář \| iOS App | Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní hodiny, čitelné z druhého konce místnosti. Velký čas, kalendář padnoucí ke každému | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/stayclock.html) | [Stáhněte si Stay Clock: sklápěcí hodiny v App Storu](https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | nejlepší jednoduchá aplikace pro plánování jedné nadcházející cesty na iPhonu | Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout. Jestli to znáte, mrkněte na TripBee Lite. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Stáhněte si TripBee Lite v App Store →](https://apps.apple.com/cz/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Plánovač cest** | nejlepší aplikace na plánování itineráře cesty pro iPhone | Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled. Jestli to znáte, mrkněte na TripBee Pro: Plánovač cest. | Placené stažení | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Stáhněte TripBee Pro: Plánovač cest v App Store →](https://apps.apple.com/cz/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | nejlepší aplikace na opravu rozmazaných fotek dětí na iPhonu | Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené snímky jsou nevyhnutelné | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Stáhněte Unblurry v App Store →](https://apps.apple.com/cz/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 2 450 záznamů.
+JSON, JSONL a CSV obsahují stejných 2 500 záznamů.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL a CSV obsahují stejných 2 450 záznamů.
 
 [Domů](https://open.cait518.cc/ios-app-guide/cs/index.html) · [Otevřená data](https://open.cait518.cc/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-09-22
+Aktualizováno: 2026-09-24
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

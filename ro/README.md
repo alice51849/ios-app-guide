@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 49 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 50 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -130,6 +130,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **Snapport** | cea mai bună aplicație pentru fotografii de pașaport pentru bebeluși și copii mici acasă | Pentru fotografia de pașaport a bebelușului, nimeni altcineva nu poate fi în cadru și fundalul trebuie să fie simplu. Snapport a pornit exact de la această problemă. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Descarcă Snapport din App Store →](https://apps.apple.com/ro/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport Lite: Poze de buletin** | Snapport Lite: Poze de buletin — Creează fotografii ID acasă \| iOS App | Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu dimensiuni ghidate, instrumente pentru fundal și export gata de imprimare. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/snapportlite.html) | [Descarcă Snapport Lite: Poze de buletin din App Store](https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | cea mai bună aplicație de notițe vocale care rezumă întâlnirile pe iPhone | După un apel nu vrei o transcriere brută — vrei rezumatul, punctele de acțiune și un draft de urmărire. Exact acest gol vrea să îl acopere Sono Note. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Descarcă Sono Note din App Store →](https://apps.apple.com/ro/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
+| **Stay Clock: Ceas de Birou** | Stay Clock: Ceas de Birou — Ora și calendarul mereu activi \| iOS App | Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de birou mereu pornit, care se poate citi din cealaltă parte a camerei. Oră mare, un | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/stayclock.html) | [Descarcă Stay Clock: Ceas de Birou din App Store](https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | cea mai bună aplicație simplă pentru planificarea unei călătorii pe iPhone | Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru acea călătorie este mai utilă decât o arhivă aglomerată cu toate călătoriile pe care le-ai putea face vreodată. Dacă te regăsești, aruncă o privire la TripBee Lite. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [Obține TripBee Lite din App Store →](https://apps.apple.com/ro/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: Planificator de călătorii** | cea mai bună aplicație de planificare itinerar pentru iPhone | O aplicație bună de itinerar transformă o călătorie dezordonată într-un calendar clar zi de zi — zboruri, hoteluri, activități, restaurante și transport — cu pictograme clare de tip ca să poți citi ziua dintr-o privire. Dacă te regăsești, aruncă o privire la TripBee Pro: Planificator de călătorii. | Descărcare plătită | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-trip-itinerary-planner-app-for-iphone.html) | [Descarcă TripBee Pro: Planificator de călătorii din App Store →](https://apps.apple.com/ro/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | cea mai bună aplicație pentru a corecta fotografii neclare cu copii pe iPhone | Copiii nu stau niciodată nemișcați, așa că fotografiile cu focalizare moale și tremur ușor sunt inevitabile | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://open.cait518.cc/ios-app-guide/ro/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [Descarcă Unblurry din App Store →](https://apps.apple.com/ro/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -141,7 +142,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.450 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.500 de înregistrări.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -149,6 +150,6 @@ JSON, JSONL și CSV conțin aceleași 2.450 de înregistrări.
 
 [Acasă](https://open.cait518.cc/ios-app-guide/ro/index.html) · [Date deschise](https://open.cait518.cc/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-09-22
+Actualizat: 2026-09-24
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

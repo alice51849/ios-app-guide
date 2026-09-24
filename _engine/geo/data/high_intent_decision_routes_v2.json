@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 49,
-    "app_keys_sha256": "9a979b76d20f073b6232ef88cac830eec3469120eeacc47c293f40570b10b997",
-    "copy_sha256": "a67ac06fa758832d64a0b7bfe351b802b6fd8a9b9dc450e6a259bf44e344d721",
+    "expected_app_count": 50,
+    "app_keys_sha256": "b12fe0f67492e1b359d1e7349b2e502ecb99a8be9f0e40be1bc1817fe0b9ced3",
+    "copy_sha256": "c9aab4b3df22e4e600237b064557d68cb42f71ee05ac56f2ae3748b18c4a1d5a",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2125,6 +2125,44 @@
             "fact.one_time_option",
             "feature.0",
             "feature.1"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "stayclock",
+      "route_slug": "always-on-bedside-clock-beyond-standby",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US households keep an older iPhone or iPad on a nightstand or desk dock and want the time readable from across the room all night, without a monthly fee for one screen.",
+          "query": "What is a better always-on bedside clock than iPhone StandBy, without a subscription?",
+          "buyer_problem": "StandBy only takes over while the phone charges on its side, offers a small set of faces, and on iPhone models without an always-on display it turns off after a short time. The decision is whether a dedicated full-screen clock that stays lit, protects an OLED panel and matches the Lock Screen and watch is worth adding for that one job.",
+          "decision_rule": "Favor a dedicated always-on clock when a phone or tablet will sit on a desk or nightstand for hours and the time must stay readable from across the room. Start with the one free face and treat the one-time unlock as optional, since there is no subscription.",
+          "workflow_checks": [
+            "Does the screen stay lit while charging, with a battery floor for when it is unplugged?",
+            "Can the same face appear in StandBy, on the Lock Screen, in Home Screen widgets and on an Apple Watch?",
+            "Does it shift pixels and switch to a dim red face at night to spare an OLED screen?"
+          ],
+          "alternative_lens": "Keep using the built-in StandBy mode when the phone always charges on its side and the included faces are enough. Choose a physical alarm clock when the goal is to keep the phone out of reach at night.",
+          "verify_before_install": [
+            "Check the current listing for which faces are free and which need the one-time unlock.",
+            "Confirm the device supports StandBy and Lock Screen widgets before relying on them."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.2"
           ]
         }
       }

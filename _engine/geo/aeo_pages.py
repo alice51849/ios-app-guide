@@ -416,6 +416,25 @@ CURATED_FALLBACK = {
             ["decibel meter sound detector", 0],
         ],
     },
+    "stayclock": {
+        "key": "stayclock",
+        "gap_queries": [
+            "always on desk clock app for iphone without a subscription",
+            "turn an old iphone into a nightstand clock that stays on while charging",
+            "clock app that shifts pixels to protect an oled screen overnight",
+            "flip clock app with a matching lock screen widget and apple watch face",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "desk clock", "flip clock" and "standby clock" on 2026-09-25; rank 0
+        # means the position was not measured, exactly as for the other
+        # curated fallbacks.
+        "top_competitors": [
+            ["flip clock:digital desk widget", 0],
+            ["clockphone big digital clocks", 0],
+            ["desk clock - analog clock face", 0],
+            ["dclock - digital flip clock", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

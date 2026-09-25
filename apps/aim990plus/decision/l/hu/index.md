@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Angol próbateszt — Magabiztosság időnyomásban | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Az angoltudás mellett arra is szükség van, hogy az idő szorításában is po
 
 - Gyerekek & tanulás
 - Fizetős letöltés
+- Offline
+- Nincs fiók
 - App Store · HUF2,490.00
 
 [Töltse le a(z) Aim990 Plus: Angol próbateszt appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

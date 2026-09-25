@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Engelsk prøvetest — Engelsk trening under press | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus er et komplett treningsverktøy for voksne som vil forstå lest og m
 
 - Barn og læring
 - Betalt nedlasting
+- Frakoblet
+- Ingen konto
 - App Store · 79,00 kr
 
 [Last ned Aim990 Plus: Engelsk prøvetest fra App Store](https://apps.apple.com/no/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

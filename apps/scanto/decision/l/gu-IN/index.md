@@ -2,7 +2,7 @@
 title: "નર્સ માટે શ્રેષ્ઠ ઓફલાઇન દસ્તાવેજ સ્કેનર એપ, કોઈ ક્લાઉડ નહીં"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ઉત્પાદકતા
 - મફત શરૂઆત
+- ઑફલાઇન
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
 - ખાનગી / ઉપકરણ પર
 - App Store · મફત
 

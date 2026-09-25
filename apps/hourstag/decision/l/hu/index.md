@@ -2,7 +2,7 @@
 title: "HoursTag: Órák a vásárláshoz — Költségvetés & spórolás | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Mennyibe kerül valójában? Nem forintban, hanem az életed óráiban.
 
 - Pénzügy & utazás
 - Fizetős letöltés
+- Nincs fiók
+- Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
 - App Store · HUF1,990.00

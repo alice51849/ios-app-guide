@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hans",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "付费下载",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "无需账户"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "照片与工具",
         "付费下载",
+        "无需账户",
+        "Apple Watch",
         "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "小组件"
+      ],
       "badge_labels": [
         "生活方式",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
+        "小组件",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/mochidonestamp.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "离线",
+        "无广告",
+        "私密 / 设备本地"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "教育",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无广告",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "付费下载",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "离线",
+        "无需账户"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "付费下载",
+        "离线",
+        "无需账户",
         "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/aim990plus.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "无广告"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "更多",
         "免费开始使用 · 一次性解锁",
+        "无广告",
+        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "无需账户",
+        "私密 / 设备本地"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "更多",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "私密 / 设备本地",
         "小组件",
         "App Store · 免费"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "无需账户",
+        "无广告"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "健康",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "小组件",
         "Apple Watch"
       ],
       "badge_labels": [
         "儿童与学习",
         "付费下载",
+        "小组件",
         "Apple Watch",
         "App Store · ¥88.00"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "无需账户"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "小组件",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "更多",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
+        "小组件",
+        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "离线",
-        "无需账户"
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "付费下载",
         "离线",
         "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -882,10 +1018,14 @@
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
+        "无广告",
         "无跟踪",
         "私密 / 设备本地"
       ],
@@ -894,6 +1034,8 @@
       "badge_labels": [
         "理财与出行",
         "付费下载",
+        "无需账户",
+        "无广告",
         "无跟踪",
         "私密 / 设备本地",
         "App Store · ¥38.00"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "更多",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
         "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "无需账户",
         "无广告"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "无广告"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
@@ -1078,17 +1246,23 @@
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "无需账户",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "付费下载",
-        "无广告"
+        "无需账户",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hans/index.html",
@@ -1123,9 +1297,11 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "离线",
         "无广告"
       ],
       "device_surfaces": [],
@@ -1133,6 +1309,7 @@
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
+        "离线",
         "无广告"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
@@ -1187,17 +1364,23 @@
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "离线",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "付费下载",
-        "无广告"
+        "离线",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/zh-Hans/index.html",
@@ -1232,9 +1415,11 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "无需账户",
         "无广告"
       ],
       "device_surfaces": [],
@@ -1242,6 +1427,7 @@
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "无广告"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
@@ -1296,17 +1482,20 @@
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "无广告",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "付费下载",
-        "无广告"
+        "无广告",
+        "私密 / 设备本地"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/zh-Hans/index.html",
@@ -1360,17 +1549,26 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1410,17 +1608,23 @@
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "无需账户",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "付费下载",
+        "无需账户",
         "无广告",
+        "私密 / 设备本地",
         "App Store · ¥38.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1460,17 +1664,23 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "离线",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
-        "无广告"
+        "离线",
+        "无广告",
+        "私密 / 设备本地"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/zh-Hans/index.html",
@@ -1524,20 +1734,31 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
         "无广告",
-        "无跟踪"
+        "无跟踪",
+        "私密 / 设备本地"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "小组件"
+      ],
       "badge_labels": [
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "无广告",
         "无跟踪",
+        "私密 / 设备本地",
+        "小组件",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1582,12 +1803,17 @@
       "privacy_labels": [
         "无广告"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
         "无广告",
+        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1696,13 +1922,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "离线",
+        "无需账户",
+        "无跟踪",
+        "私密 / 设备本地"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/onepageppt.html",
@@ -1741,13 +1981,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "无需账户",
+        "无广告",
+        "私密 / 设备本地"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1787,9 +2038,17 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -1797,6 +2056,10 @@
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -1836,13 +2099,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "小组件"
+      ],
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
+        "小组件",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/savetag.html",
@@ -1882,9 +2164,17 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -1892,6 +2182,10 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -1933,11 +2227,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "离线",
-        "无广告"
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1945,7 +2245,10 @@
         "睡眠与专注",
         "免费开始使用 · 一次性解锁",
         "离线",
+        "无需账户",
         "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1984,13 +2287,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "私密 / 设备本地"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 一次性解锁",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/shotinbox.html",
@@ -2030,9 +2338,15 @@
       "purchase_label": "付费下载",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -2040,6 +2354,9 @@
       "badge_labels": [
         "照片与工具",
         "付费下载",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · ¥38.00"
       ],
@@ -2080,10 +2397,18 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "离线"
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2091,6 +2416,10 @@
         "照片与工具",
         "免费开始使用 · 一次性解锁",
         "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/snapportlite.html",
@@ -2130,9 +2459,15 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -2140,6 +2475,9 @@
       "badge_labels": [
         "效率",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -2180,17 +2518,37 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "无广告"
+        "离线",
+        "无需账户",
+        "无广告",
+        "无跟踪",
+        "私密 / 设备本地"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "小组件",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "更多",
         "免费开始使用 · 一次性解锁",
+        "离线",
+        "无需账户",
         "无广告",
+        "无跟踪",
+        "私密 / 设备本地",
+        "小组件",
+        "Apple Watch",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/stayclock.html",
@@ -2229,13 +2587,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "无需账户",
+        "无广告"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "出行",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2277,11 +2643,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "离线",
         "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -2291,6 +2661,8 @@
         "付费下载",
         "离线",
         "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · ¥38.00"
       ],
@@ -2331,9 +2703,15 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地"
       ],
       "device_surfaces": [],
@@ -2341,6 +2719,9 @@
       "badge_labels": [
         "照片与工具",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
+        "无广告",
+        "无跟踪",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -2380,13 +2761,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "无需账户"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "更多",
         "免费开始使用 · 一次性解锁",
+        "无需账户",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html",
@@ -2426,10 +2812,16 @@
       "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "离线"
+        "离线",
+        "无需账户",
+        "无跟踪",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2437,6 +2829,9 @@
         "儿童与学习",
         "免费开始使用 · 一次性解锁",
         "离线",
+        "无需账户",
+        "无跟踪",
+        "私密 / 设备本地",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/wordmatelite.html",
@@ -2478,12 +2873,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "无需账户",
         "无广告",
-        "无跟踪"
+        "无跟踪",
+        "私密 / 设备本地"
       ],
       "device_surfaces": [
         "widget",
@@ -2499,6 +2896,7 @@
         "无需账户",
         "无广告",
         "无跟踪",
+        "私密 / 设备本地",
         "小组件",
         "Apple Watch",
         "App Store · ¥58.00"

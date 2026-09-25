@@ -2,7 +2,7 @@
 title: "meilleure application de notes vocales qui résume les réunions sur iPhone"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Après un appel, vous ne voulez pas une transcription brute — vous voulez le r
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Aucun compte
+- Aucune publicité
+- Aucun suivi
 - Privé / sur l'appareil
 - App Store · Gratuit
 

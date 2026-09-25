@@ -2,7 +2,7 @@
 title: "護理人員專用最佳離線文件掃描應用程式，無雲端"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - 效率工具
 - 免費開始 · 一次性解鎖
+- 離線使用
+- 免帳號
+- 無廣告
+- 無追蹤
 - 隱私優先／裝置端
 - App Store · 免費
 - ★ 5.0/5 · 1

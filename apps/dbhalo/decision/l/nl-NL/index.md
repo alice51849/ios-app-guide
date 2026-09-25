@@ -2,7 +2,7 @@
 title: "dB Halo: Geluidsniveaumeter — Decibel, lawaai en spectrum | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Zie in één oogopslag hoe luid het om je heen is, welke frequenties overheersen
 
 - Meer
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
+- Geen advertenties
+- Geen tracking
+- Privé / op apparaat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Download dB Halo: Geluidsniveaumeter in de App Store](https://apps.apple.com/nl/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

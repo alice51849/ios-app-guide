@@ -2,7 +2,7 @@
 title: "முகாமையாளர்களுக்கான சிறந்த ஆஃப்லைன் ஆவண ஸ்கேனர் பயன்பாடு, கிளவுட் இல்லாமல்"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும்
+- ஆஃப்லைன்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 

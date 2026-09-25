@@ -2,7 +2,7 @@
 title: "mejor juego educativo para niños sin anuncios en iPhone"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Para un niño pequeño, lo decisivo son los anuncios y la recopilación de datos
 
 - Infantil y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin conexión
 - Sin anuncios
 - App Store · Gratis
 

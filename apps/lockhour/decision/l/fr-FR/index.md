@@ -2,7 +2,7 @@
 title: "meilleure application pour bloquer les réseaux sociaux pendant les études iPhone"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Pendant les examens, la volonté ne suffit pas — un blocage strict et chronom�
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Sans compte
 - Sans publicité
+- Sans suivi
 - Privé / sur l’appareil
 - App Store · Gratuit
 

@@ -2,7 +2,7 @@
 title: "millor aplicació per fer currículums per a canviadors de carrera 2026"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Quan canvies de camp, el problema del currículum és diferent: la teva experiè
 
 - Productivitat
 - Inici gratuït
+- Sense compte
+- Sense anuncis
 - App Store · Gratis
 
 [Descarrega CV Desk a l'App Store →](https://apps.apple.com/es/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do rutyny przed snem dla przedszkolaków bez reklam"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Dla przedszkolaka rutyna przed snem działa najlepiej, gdy jest krótka, wizualn
 
 - Dzieci i nauka
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
 - Bez reklam
+- Bez śledzenia
+- Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
 [Pobierz Lumi Mission Planet z App Store →](https://apps.apple.com/pl/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

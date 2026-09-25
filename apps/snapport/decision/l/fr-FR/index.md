@@ -2,7 +2,7 @@
 title: "meilleure application photo d’identité pour bébés et tout-petits à la maison"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Pour une photo d’identité de bébé, personne d’autre ne doit apparaître e
 
 - Photo & utilitaire
 - Téléchargement payant
+- Sans compte
+- Sans publicité
+- Sans suivi
 - Privé / sur l’appareil
 - App Store · 6,99 €
 

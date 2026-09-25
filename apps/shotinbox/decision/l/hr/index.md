@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Organizator snimki zaslona | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Vaše snimke, uredno složene Pronađite, riješite i očistite svaku snimku. Na
 
 - Fotografija i pomoćni alati
 - Besplatno za početak
+- Privatno / na uređaju
 - App Store · Besplatno
 
 [Preuzmite ShotInbox AI: Sort Screenshots u App Storeu](https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

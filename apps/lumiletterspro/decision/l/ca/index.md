@@ -2,7 +2,7 @@
 title: "millor app completa de fonètica per a preparació d'infantil a casa"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Les famílies que es preparen per a infantil necessiten un camí complet de lect
 
 - Infants i aprenentatge
 - Descàrrega de pagament
+- Fora de línia
 - Sense anuncis
+- Privat / en el dispositiu
 - App Store · 9,99 €
 
 [Descarrega Lumi Letters Pro a l'App Store →](https://apps.apple.com/es/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

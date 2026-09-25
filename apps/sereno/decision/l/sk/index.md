@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na biely šum na zaspávanie bez predplatného"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Pre spánok je predplatné, ktoré vás každý mesiac otravuje, presný opak po
 - Spánok a sústredenie
 - Zadarmo na začiatok
 - Offline
+- Bez účtu
 - Bez reklám
+- Bez sledovania
+- Súkromné / v zariadení
 - App Store · Zadarmo
 
 [Stiahnite si Sereno v App Store →](https://apps.apple.com/sk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

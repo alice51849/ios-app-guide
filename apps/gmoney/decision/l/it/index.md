@@ -2,7 +2,7 @@
 title: "migliore app per monitorare budget di viaggio senza abbonamento per iPhone"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ In viaggio serve un tracker di budget che funzioni offline in un paese senza dat
 - Scaricamento a pagamento
 - Offline
 - Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
+- Privato / su dispositivo
 - App Store · 5,99 €
 
 [Scarica G+Money dall'App Store →](https://apps.apple.com/it/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

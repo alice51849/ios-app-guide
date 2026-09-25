@@ -2,7 +2,7 @@
 title: "HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ଟଙ୍କା ଏବଂ ଭ୍ରମଣ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 499

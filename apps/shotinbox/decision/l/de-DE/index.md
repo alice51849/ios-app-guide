@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — OCR-Suche & Fotos aufräumen | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Screenshots, endlich sortiert Jeden Screenshot finden, erledigen und aufräumen.
 
 - Foto & Dienstprogramm
 - Kostenloser Einstieg · einmalige Freischaltung
+- Privat / auf dem Gerät
 - App Store · Kostenlos
 
 [ShotInbox AI: Sort Screenshots im App Store laden](https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

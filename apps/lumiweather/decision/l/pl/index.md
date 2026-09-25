@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja pogodowa pomagająca rodzicom planować czas na dworze z dziećmi"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Rodzice planujący czas na dworze potrzebują czegoś więcej niż temperatury: 
 
 - Dzieci i nauka
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
 - Bez reklam
 - Bez śledzenia
+- Prywatne / na urządzeniu
+- Widżet
 - App Store · Bezpłatnie
 
 [Pobierz Lumi Weather z App Store →](https://apps.apple.com/pl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

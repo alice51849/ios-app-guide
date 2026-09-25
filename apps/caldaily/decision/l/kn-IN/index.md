@@ -2,7 +2,7 @@
 title: "CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್ — ವಿಜೆಟ್, ಪರಿಕರ, 100 ಥೀಮ್ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ಇನ್ನಷ್ಟು
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - ವಿಜೆಟ್
 - App Store · ಉಚಿತ
 

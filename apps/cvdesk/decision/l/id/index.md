@@ -2,7 +2,7 @@
 title: "aplikasi pembuat resume terbaik untuk pengubah karier 2026"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Saat Anda pindah bidang, masalah resume berbeda: pengalaman Anda nyata tapi 'tid
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Tanpa iklan
 - App Store · Gratis
 
 [Dapatkan CV Desk di App Store →](https://apps.apple.com/id/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

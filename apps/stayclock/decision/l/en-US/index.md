@@ -2,7 +2,7 @@
 title: "best app to turn an old iPhone into an always-on desk clock"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/en-US/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock — Stay Clock turns your iPhone or iPad into an always-on desk clock
 
 - More
 - Free to start · one-time unlock
+- Offline
+- No account
 - No ads
+- No tracking
+- Private / on-device
+- Widget
+- Apple Watch
 - App Store · Free
 
 [Get Stay Clock on the App Store →](https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

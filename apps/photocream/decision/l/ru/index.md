@@ -2,7 +2,7 @@
 title: "лучший однократный редактор фото в стиле пленки для тревел-креаторов на iPhone"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Фото и инструменты
 - Бесплатно начать · разовая разблокировка
+- Без учётной записи
+- Без рекламы
+- Лично / на устройстве
 - App Store · Бесплатно
 
 [Скачать PhotoCream в App Store →](https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

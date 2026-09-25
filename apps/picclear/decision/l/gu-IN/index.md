@@ -2,7 +2,7 @@
 title: "iPhone સ્ટોરેજ ખાલી કરવા માટે શ્રેષ્ઠ એપ, નકલી ફોટા કાઢી નાખે"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ફોટો અને ઉપયોગિતા
 - મફત શરૂઆત
+- ઑફલાઇન
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
 - ખાનગી / ઉપકરણ પર
 - App Store · મફત
 

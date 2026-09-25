@@ -2,7 +2,7 @@
 title: "Stay Clock: שעון קלפים — שעון ולוח שנה תמידיים | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock הופך את ה-iPhone או ה-iPad שלכם לשעון שולחני
 
 - עוד
 - התחלה ללא תשלום
+- לא מקוון
+- ללא חשבון
 - ללא פרסומות
+- ללא מעקב
+- פרטי / במכשיר
+- וידג'ט
+- Apple Watch
 - App Store · בחינם
 
 [הורידו את Stay Clock: שעון קלפים מה-App Store](https://apps.apple.com/il/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

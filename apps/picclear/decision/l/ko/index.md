@@ -2,7 +2,7 @@
 title: "아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - 사진 & 유틸리티
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 오프라인
+- 계정 없음
+- 광고 없음
+- 추적 없음
 - 프라이빗 / 기기 내
 - App Store · 무료
 

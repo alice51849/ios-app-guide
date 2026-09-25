@@ -2,7 +2,7 @@
 title: "mejor app completa de matemáticas para preescolar y primeros grados"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Una app completa de matemáticas tempranas debe hacer que el conteo, el sentido 
 - Niños y aprendizaje
 - Descarga de pago
 - Sin anuncios
+- Privado / en el dispositivo
 - App Store · $199.00
 
 [Consigue Lumi Math Pro en App Store →](https://apps.apple.com/mx/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

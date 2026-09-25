@@ -2,7 +2,7 @@
 title: "bedste rejseplanlægningsapp til iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag t
 - Betalt download
 - Offline
 - Ingen konto
+- Ingen reklamer
+- Ingen sporing
 - Privat / på enheden
 - App Store · 49,00 kr
 

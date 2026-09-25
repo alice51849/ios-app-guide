@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Parla avui — 50 idiomes, diàlegs reals | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Parla amb naturalitat quan arribi el moment. DailyMate Lite et permet practicar 
 
 - Infants i aprenentatge
 - Inici gratuït
+- Sense compte
+- Apple Watch
 - App Store · Gratis
 
 [Descarrega DailyMate Lite: Parla avui a l’App Store](https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

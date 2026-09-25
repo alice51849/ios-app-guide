@@ -2,7 +2,7 @@
 title: "子ども向けおすすめ完全朝・夜ルーティンアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 子ども・学習
 - 有料ダウンロード
+- アカウント不要
 - 広告なし
+- プライベート／端末内
 - App Store · ¥1,000
 
 [App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

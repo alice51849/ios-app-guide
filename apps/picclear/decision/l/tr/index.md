@@ -2,7 +2,7 @@
 title: "iPhone depolama alanını boşaltmak için en iyi uygulama, yinelenen fotoğrafları siler"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Hızlı alan açmak için en büyük kazançları hedefleyin: tam kopya fotoğra
 
 - Fotoğraf & yardımcı
 - Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
+- Hesap yok
+- Reklam yok
+- Takip yok
 - Gizli / cihazda
 - App Store · Ücretsiz
 

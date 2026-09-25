@@ -2,7 +2,7 @@
 title: "melhor app completo de fonética para preparação de jardim de infância em ensino doméstico"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Famílias a preparar para o jardim de infância precisam de um caminho completo 
 
 - Crianças e aprendizagem
 - Descarregamento pago
+- Offline
 - Sem anúncios
+- Privado / no dispositivo
 - App Store · 9,99 €
 
 [Obtenha Lumi Letters Pro na App Store →](https://apps.apple.com/pt/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

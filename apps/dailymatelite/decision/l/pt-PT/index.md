@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Fale agora — 50 línguas, diálogos reais | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Fale com mais confiança quando a conversa surgir. DailyMate Lite transforma sit
 
 - Crianças e aprendizagem
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Apple Watch
 - App Store · Grátis
 
 [Baixe DailyMate Lite: Fale agora na App Store](https://apps.apple.com/pt/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "HoursTag: সময়ে কেনাকাটা — আসল খরচ কত? | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,8 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - অর্থ ও ভ্রমণ
 - পেইড ডাউনলোড
+- কোনও অ্যাকাউন্ট নেই
+- কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
 

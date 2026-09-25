@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین ٹرپ آئیٹینری پلانر ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ publisher: "Lumi Studio"
 - ادا شدہ ڈاؤن لوڈ
 - آف لائن
 - کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
 - نجی / آلہ پر
 - App Store · Rs 1,700.00
 

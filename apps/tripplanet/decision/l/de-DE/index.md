@@ -2,7 +2,7 @@
 title: "Beste Reise-Aktivitäten-App für Kinder auf Familienreisen"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Eltern, die mit kleinen Kindern reisen, brauchen Aktivitäten, die Packen, Warte
 
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung
+- Offline
 - Keine Werbung
+- Privat / auf dem Gerät
 - App Store · Kostenlos
 
 [Lumi Trip Planet im App Store holen →](https://apps.apple.com/de/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — 스크린샷 분류·OCR 검색·타임라인 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - 사진 & 유틸리티
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 프라이빗 / 기기 내
 - App Store · 무료
 
 [App Store에서 ShotInbox AI: Sort Screenshots 받기](https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

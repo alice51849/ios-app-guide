@@ -2,7 +2,7 @@
 title: "iPhoneలో పిల్లల కోసం ఉత్తమ గణితం ఆట యాప్ లాజిక్ నైపుణ్యాలను పెంపొందించడానికి"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 

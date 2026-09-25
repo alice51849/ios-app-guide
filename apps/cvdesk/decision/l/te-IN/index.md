@@ -2,7 +2,7 @@
 title: "కెరీర్ మార్చుకునే వారికి ఉత్తమ రిజ్యూమ్ బిల్డర్ యాప్ 2026"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ఉత్పాదకత
 - ఉచితంగా ప్రారంభించండి
+- ఖాతా అవసరం లేదు
+- ప్రకటనలు లేవు
 - App Store · ఉచితం
 
 [App Storeలో CV డెస్క్ పొందండి →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

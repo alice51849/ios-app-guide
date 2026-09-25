@@ -2,7 +2,7 @@
 title: "אפליקציית פעילויות נסיעה לילדים בטיולי משפחה"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ילדים ולמידה
 - התחלה ללא תשלום
+- לא מקוון
 - ללא פרסומות
+- פרטי / במכשיר
 - App Store · בחינם
 
 [קבל את Lumi Trip Planet ב-App Store →](https://apps.apple.com/il/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

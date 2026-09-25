@@ -2,7 +2,7 @@
 title: "mejor aplicación de rutina para dormir para preescolares sin anuncios"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Para un preescolar, una rutina para dormir funciona mejor cuando es corta, visua
 
 - Niños y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
 - Sin anuncios
+- Sin rastreo
+- Privado / en el dispositivo
 - App Store · Gratis
 
 [Obtén Lumi Mission Planet en App Store →](https://apps.apple.com/mx/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

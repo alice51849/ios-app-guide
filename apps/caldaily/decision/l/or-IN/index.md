@@ -2,7 +2,7 @@
 title: "CalDaily: କାଲକୁଲେଟର — ୱିଜେଟ, ଉପକରଣ ଓ ଇତିହାସ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ଅଧିକ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - ଉଇଜେଟ
 - App Store · ମାଗଣା
 

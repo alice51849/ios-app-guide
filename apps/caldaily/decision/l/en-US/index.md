@@ -2,7 +2,7 @@
 title: "best calculator app iphone that saves history you can name and search"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/en-US/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ CalDaily — A calculator you will actually keep using, because it remembers the
 
 - More
 - Free to start · one-time unlock
+- No account
+- Private / on-device
 - Widget
 - App Store · Free
 

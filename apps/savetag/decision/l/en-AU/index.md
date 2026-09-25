@@ -2,7 +2,7 @@
 title: "best app to save links from other apps on iphone"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/en-AU/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Links arrive in chats, notes and screenshots, get saved somewhere, and are never
 
 - Productivity
 - Free to start · one-time unlock
+- No account
+- No ads
+- No tracking
+- Private / on-device
+- Widget
 - App Store · Free
 
 [Get SaveTag on the App Store →](https://apps.apple.com/au/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Millor app per fer fotos de passaport a nadons i infants a casa"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el f
 
 - Fotografia i utilitat
 - Descàrrega de pagament
+- Sense compte
+- Sense anuncis
+- Sense seguiment
 - Privat / en el dispositiu
 - App Store · 6,99 €
 

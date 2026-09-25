@@ -2,7 +2,7 @@
 title: "WiFi Aid: Löydä verkon viat — Verkon vianmääritys näytöin | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus-
 
 - Kuva & apuohjelma
 - Maksullinen lataus
+- Ei tiliä
+- Apple Watch
 - App Store · 6,99 €
 
 [Lataa WiFi Aid: Löydä verkon viat App Storesta](https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "HoursTag: நேரத்தை வாங்க — உண்மையில் எவ்வளவு செலவாகிறது? | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - பணம் & பயணம்
 - பணம் செலுத்தி பதிவிறக்கவும்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · ₹ 499

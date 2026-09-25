@@ -2,7 +2,7 @@
 title: "ప్రీ-స్కూల్ పిల్లలకు ప్రకటనలు లేని ఉత్తమ నిద్రపోయే అలవాటు యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
+- ట్రాకింగ్ లేదు
+- గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
 [Lumi Mission Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

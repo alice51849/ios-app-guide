@@ -2,7 +2,7 @@
 title: "最佳無訂閱白噪音助眠App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - 睡眠與專注
 - 免費開始 · 一次性解鎖
 - 離線使用
+- 免帳號
 - 無廣告
+- 無追蹤
+- 隱私優先／裝置端
 - App Store · 免費
 - ★ 5.0/5 · 1
 

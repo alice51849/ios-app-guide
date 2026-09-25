@@ -2,7 +2,7 @@
 title: "bedste menstruationscyklus-app uden konto til iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruat
 
 - Sundhed
 - Gratis at komme i gang
+- Offline
+- Ingen konto
+- Ingen reklamer
+- Ingen sporing
 - Privat / på enheden
 - App Store · Gratis
 

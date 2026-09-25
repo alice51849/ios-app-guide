@@ -2,7 +2,7 @@
 title: "iPhone ଉପରେ ଯାତ୍ରା ସୃଜନକାରୀମାନେ ପାଇଁ ଏକମାତ୍ର ଦେୟ ଦେଇ ଚଳଚ୍ଚିତ୍ର ଫଟୋ ସମ୍ପାଦକ ସର୍ବଶ୍ରେଷ୍ଠ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ଫଟୋ ଏବଂ ସାଧନ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [PhotoCream ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

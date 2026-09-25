@@ -2,7 +2,7 @@
 title: "CalDaily કેલ્ક્યુલેટર અને થીમ — વિજેટ, ટૂલ્સ અને ઇતિહાસ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - વધુ
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
+- ખાનગી / ઉપકરણ પર
 - વિજેટ
 - App Store · મફત
 

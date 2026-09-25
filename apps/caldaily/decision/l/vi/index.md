@@ -2,7 +2,7 @@
 title: "CalDaily: máy tính và chủ đề — Widget, công cụ, lịch sử | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy 
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
+- Riêng tư / trên thiết bị
 - Tiện ích
 - App Store · Miễn phí
 

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Sist — Husk når du gjorde det | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskop
 
 - Livsstil
 - Gratis å starte
+- Frakoblet
+- Ingen konto
+- Ingen annonser
+- Ingen sporing
+- Privat / på enheten
+- Widget
 - App Store · Gratis
 
 [Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

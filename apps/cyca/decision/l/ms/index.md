@@ -2,7 +2,7 @@
 title: "aplikasi penjejak haid terbaik tanpa akaun diperlukan iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang be
 
 - Kesihatan
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Luar talian
+- Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
 - Peribadi / pada peranti
 - App Store · Percuma
 

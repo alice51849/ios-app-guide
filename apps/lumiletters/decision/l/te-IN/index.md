@@ -2,7 +2,7 @@
 title: "పిల్లల కోసం ఉత్తమ విద్యా ఆట యాప్ ప్రకటనల లేని iPhone"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
+- ఆఫ్‌లైన్
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 

@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hitta nätverksfel — Nätverksdiagnos med bevis | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svar
 
 - Foto & verktyg
 - Betald nedladdning
+- Inget konto
+- Apple Watch
 - App Store · 79,00 kr
 
 [Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

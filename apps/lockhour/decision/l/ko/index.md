@@ -2,7 +2,7 @@
 title: "공부할 때 소셜 미디어 차단용 최고의 앱 아이폰용"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
 - 광고 없음
+- 추적 없음
 - 프라이빗 / 기기 내
 - App Store · 무료
 

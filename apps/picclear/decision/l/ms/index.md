@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk mengosongkan storan iPhone dengan memadam foto berganda"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Untuk kosongkan ruang dengan cepat, sasarkan kemenangan terbesar dahulu: foto be
 
 - Foto & utiliti
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Luar talian
+- Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
 - Peribadi / pada peranti
 - App Store · Percuma
 

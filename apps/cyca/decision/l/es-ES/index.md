@@ -2,7 +2,7 @@
 title: "mejor app para seguimiento del ciclo sin cuenta requerida para iPhone"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ En una categoría donde la sensibilidad de los datos es lo principal, el rastrea
 
 - Salud
 - Gratis para empezar · desbloqueo único
+- Sin conexión
+- Sin cuenta
+- Sin anuncios
+- Sin seguimiento
 - Privado / en el dispositivo
 - App Store · Gratis
 

@@ -2,7 +2,7 @@
 title: "Stay Clock: Rellotge de Taula — Hora i calendari sempre actius | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock converteix el teu iPhone o iPad en un rellotge de taula sempre actiu,
 
 - Més
 - Inici gratuït
+- Fora de línia
+- Sense compte
 - Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Descarrega Stay Clock: Rellotge de Taula a l’App Store](https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

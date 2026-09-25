@@ -2,7 +2,7 @@
 title: "แอพพยากรณ์อากาศที่ดีที่สุดสำหรับผู้ปกครองวางแผนกิจกรรมกลางแจ้งกับเด็ก"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - เด็ก & การเรียนรู้
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
 - ไม่มีโฆษณา
 - ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
+- วิดเจ็ต
 - App Store · ฟรี
 
 [ดาวน์โหลด Lumi Weather ใน App Store →](https://apps.apple.com/th/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

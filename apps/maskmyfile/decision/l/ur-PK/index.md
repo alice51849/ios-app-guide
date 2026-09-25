@@ -2,7 +2,7 @@
 title: "Mask My File: معلومات ہٹائیں — شیئر سے پہلے نجی ڈیٹا چھپائیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - تصویر اور سہولت
 - مفت آغاز
+- کوئی اکاؤنٹ نہیں
 - نجی / آلہ پر
 - App Store · مفت
 

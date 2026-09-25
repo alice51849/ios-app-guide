@@ -2,7 +2,7 @@
 title: "બાળકો માટે શ્રેષ્ઠ સંપૂર્ણ મોર્નિંગ અને બેડટાઈમ રૂટિન એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - બાળકો અને અભ્યાસ
 - ચુકવેલ ડાઉનલોડ
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · ₹ 599
 
 [App Store પર Lumi Mission Planet Pro મેળવો →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

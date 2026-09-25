@@ -2,7 +2,7 @@
 title: "iPhone'da çocuklar için en iyi bopomofo uygulaması, zhuyin öğrenmek için"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Zhuyin'i ilk kez öğrenen bir çocuk için, uygulama tüm 37 sembolü çizerek 
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
 - Reklam yok
 - App Store · Ücretsiz
 

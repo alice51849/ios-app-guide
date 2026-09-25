@@ -2,7 +2,7 @@
 title: "iPhone 'ਤੇ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਸੋਸ਼ਲ ਮੀਡੀਆ ਬਲੌਕ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ਉਤਪਾਦਕਤਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
+- ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 

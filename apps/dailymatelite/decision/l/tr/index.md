@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Bugün Konuşun — 50 Dil, Gerçek Diyaloglar | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
+- Apple Watch
 - App Store · Ücretsiz
 
 [DailyMate Lite: Bugün Konuşun uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

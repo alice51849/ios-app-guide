@@ -2,7 +2,7 @@
 title: "nejlepší kompletní aplikace na matematiku pro předškoláky a první stupeň"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Kompletní aplikace na matematiku by měla spojit počítání, porozumění č�
 - Děti a učení
 - Placené stažení
 - Bez reklam
+- Soukromé / v zařízení
 - App Store · 249,00 Kč
 
 [Stáhněte si Lumi Math Pro v App Store →](https://apps.apple.com/cz/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

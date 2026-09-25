@@ -2,7 +2,7 @@
 title: "iPhone साठवणूक मोकळी करण्यासाठी डुप्लिकेट फोटो हटवणारे सर्वोत्तम अॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - फोटो आणि उपयुक्तता
 - सुरुवात करण्यासाठी मोफत
+- ऑफलाइन
+- खाते नाही
+- जाहिराती नाहीत
+- ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
 - App Store · मोफत
 

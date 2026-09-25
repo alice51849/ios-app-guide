@@ -2,7 +2,7 @@
 title: "Wordmate Lite: vocabulario — Cinco palabras al día, offline | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Cinco palabras, un minuto, un paso visible en tu camino. Wordmate Lite convierte
 - Infantil y aprendizaje
 - Gratis para empezar · desbloqueo único
 - Sin conexión
+- Sin cuenta
+- Sin seguimiento
+- Privado / en el dispositivo
 - App Store · Gratis
 
 [Consigue Wordmate Lite: vocabulario en el App Store](https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

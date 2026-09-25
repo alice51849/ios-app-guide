@@ -2,7 +2,7 @@
 title: "meilleure application de routine du coucher pour les enfants d’âge préscolaire sans publicité"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Pour un enfant d’âge préscolaire, une routine du coucher fonctionne mieux lo
 
 - Enfants et apprentissage
 - Gratuit au départ · déblocage unique
+- Aucun compte
 - Aucune publicité
+- Aucun suivi
+- Privé / sur l'appareil
 - App Store · Gratuit
 
 [Obtenez Lumi Mission Planet sur l’App Store →](https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

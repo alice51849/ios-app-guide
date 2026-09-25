@@ -2,7 +2,7 @@
 title: "Snapport Lite: Poze de buletin — Creează fotografii ID acasă | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu 
 - Fotografie & utilitate
 - Început gratuit
 - Offline
+- Fără cont
+- Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
 - App Store · Gratuit
 
 [Descarcă Snapport Lite: Poze de buletin din App Store](https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

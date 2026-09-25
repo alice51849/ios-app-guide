@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — ਇੱਕ ਵਾਰ ਖਰੀਦੋ, ਜੀਵਨ ਭਰ ਵਰਤੋਂ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - ਫੋਟੋ ਅਤੇ ਯੂਟਿਲਿਟੀ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ ShotInbox AI: Sort Screenshots ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

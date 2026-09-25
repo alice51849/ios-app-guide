@@ -2,7 +2,7 @@
 title: "iPhone पर बच्चों की धुंधली तस्वीरें ठीक करने के लिए सबसे अच्छा ऐप"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - फोटो और उपयोगिता
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- कोई खाता नहीं
+- कोई विज्ञापन नहीं
+- कोई ट्रैकिंग नहीं
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 

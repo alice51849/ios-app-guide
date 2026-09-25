@@ -2,7 +2,7 @@
 title: "Snapport Lite: Fotos de carnet — Crea fotos d'ID a casa | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Fes fotos de passaport, visat i documents amb dimensions guiades
 - Fotografia i utilitat
 - Inici gratuït
 - Fora de línia
+- Sense compte
+- Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Descarrega Snapport Lite: Fotos de carnet a l’App Store](https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

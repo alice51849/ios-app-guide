@@ -2,7 +2,7 @@
 title: "Mask My File: ਜਾਣਕਾਰੀ ਹਟਾਓ — ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਲੁਕਾਓ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - ਫੋਟੋ ਅਤੇ ਯੂਟਿਲਿਟੀ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 

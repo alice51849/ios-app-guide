@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru realizare CV pentru schimbători de carieră 2026"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Când schimbi domeniul, problema CV-ului este diferită: experiența ta este rea
 
 - Productivitate
 - Început gratuit
+- Fără cont
+- Fără reclame
 - App Store · Gratuit
 
 [Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

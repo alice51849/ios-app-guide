@@ -2,7 +2,7 @@
 title: "bestes Mathe-Spiel für Kinder zum Aufbau logischer Fähigkeiten auf dem iPhone"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Die beste Mathe-App für Kinder trainiert logisches Denken – Muster, Reihenfol
 
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
 - Keine Werbung
 - App Store · Kostenlos
 

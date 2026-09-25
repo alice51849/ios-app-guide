@@ -2,7 +2,7 @@
 title: "aplikasi pemindai dokumen offline terbaik tanpa cloud untuk perawat"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Jika Anda memindai formulir persetujuan pasien, dokumen keluar rumah sakit, atau
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
+- Tanpa akun
+- Tanpa iklan
+- Tanpa pelacakan
 - Privat / di perangkat
 - App Store · Gratis
 

@@ -2,7 +2,7 @@
 title: "पूर्वप्राथमिक मुलांसाठी जाहिरातीशिवाय सर्वोत्तम झोपेची दिनचर्या अनुप्रयोग"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - मुलं आणि शिक्षण
 - सुरुवात करण्यासाठी मोफत
+- खाते नाही
 - जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
 - App Store · मोफत
 
 [Lumi Mission Planet App Store वर मिळवा →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

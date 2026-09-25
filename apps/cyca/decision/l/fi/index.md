@@ -2,7 +2,7 @@
 title: "paras kuukautiskierron seurantasovellus ilman tiliä iPhonelle"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukau
 
 - Terveys
 - Ilmainen aloitus
+- Offline
+- Ei tiliä
+- Ei mainoksia
+- Ei seurantaa
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

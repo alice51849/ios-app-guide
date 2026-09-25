@@ -2,7 +2,7 @@
 title: "Snapport Lite: ઘરે ઓળખ ફોટા — ઘરે ID ફોટા બનાવો | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - માર્ગદર્શિત કદ, પૃષ્ઠભૂ�
 - ફોટો અને ઉપયોગિતા
 - મફત શરૂઆત
 - ઑફલાઇન
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
 [App Store પરથી Snapport Lite: ઘરે ઓળખ ફોટા મેળવો](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

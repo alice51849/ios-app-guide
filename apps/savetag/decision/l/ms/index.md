@@ -2,7 +2,7 @@
 title: "SaveTag: penanda buku AI — Simpan pautan, baca kemudian | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Simpan sekarang. Dan kali ini betul-betul dibaca. Sepanjang hari anda menghantar
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
+- Peribadi / pada peranti
+- Widjet
 - App Store · Percuma
 
 [Dapatkan SaveTag: penanda buku AI di App Store](https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

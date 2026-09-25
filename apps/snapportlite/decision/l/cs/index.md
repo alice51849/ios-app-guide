@@ -2,7 +2,7 @@
 title: "Snapport Lite: Foto na doklady — Vytvořte ID fotografie doma | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s veden
 - Fotografie a nástroje
 - Zdarma na začátek
 - Offline
+- Bez účtu
+- Bez reklam
+- Bez sledování
+- Soukromé / v zařízení
 - App Store · Zdarma
 
 [Stáhněte si Snapport Lite: Foto na doklady v App Storu](https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

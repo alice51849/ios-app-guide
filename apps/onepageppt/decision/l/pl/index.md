@@ -2,7 +2,7 @@
 title: "OnePage PPT: slajd z AI — Notatki w gotową prezentację | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
+- Bez konta
+- Bez śledzenia
+- Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
 [Pobierz OnePage PPT: slajd z AI z App Store](https://apps.apple.com/pl/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

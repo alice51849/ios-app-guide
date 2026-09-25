@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp：上次何时 — 生活事件、周期与完成记录 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - 生活方式
 - 免费开始使用 · 一次性解锁
+- 离线
+- 无需账户
+- 无广告
+- 无跟踪
+- 私密 / 设备本地
+- 小组件
 - App Store · 免费
 
 [在 App Store 获取 Mochi DoneStamp：上次何时](https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

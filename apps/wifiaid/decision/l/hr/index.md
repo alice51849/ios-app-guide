@@ -2,7 +2,7 @@
 title: "WiFi Aid: Dijagnostika mreže — Dijagnostika mreže s dokazima | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS
 
 - Fotografija i pomoćni alati
 - Plaćeno preuzimanje
+- Bez računa
+- Apple Watch
 - App Store · 6,99 €
 
 [Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

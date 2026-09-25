@@ -2,7 +2,7 @@
 title: "让孩子在 iPhone 上学注音的最佳注音 App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
 
 [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)

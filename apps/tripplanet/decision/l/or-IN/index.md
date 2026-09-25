@@ -2,7 +2,7 @@
 title: "ପରିବାର ଯାତ୍ରାରେ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଭ୍ରମଣ କାର୍ଯ୍ୟ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରେ Trip Planet: Kids Quest ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

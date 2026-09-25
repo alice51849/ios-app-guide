@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین TOEIC پریپ ایپ آف لائن اسٹڈی پلان"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - تعلیم
 - مفت آغاز
+- آف لائن
+- کوئی اشتہار نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "melhor app de vocabulário para utilizadores em deslocação com Apple Watch"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Utilizadores em deslocação precisam de prática de vocabulário que encaixe em
 - Sem conta
 - Sem anúncios
 - Sem rastreamento
+- Privado / no dispositivo
 - Widget
 - Apple Watch
 - App Store · 9,99 €

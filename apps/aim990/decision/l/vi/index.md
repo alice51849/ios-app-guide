@@ -2,7 +2,7 @@
 title: "ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có th
 
 - Giáo dục
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không quảng cáo
+- Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
 [Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

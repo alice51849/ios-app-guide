@@ -2,7 +2,7 @@
 title: "best app to free up iphone storage deleting duplicate photos"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/en-US/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ To free up space fast, target the biggest wins first: exact-duplicate photos, ne
 
 - Photo & utility
 - Free to start · one-time unlock
+- Offline
+- No account
+- No ads
+- No tracking
 - Private / on-device
 - App Store · Free
 

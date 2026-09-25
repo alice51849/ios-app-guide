@@ -2,7 +2,7 @@
 title: "bästa appen för vitt brus för att somna utan prenumeration"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ För sömn är en prenumeration som tjatar varje månad motsatsen till rogivande
 - Sömn & fokus
 - Gratis att börja · engångsupplåsning
 - Offline
+- Inget konto
 - Inga annonser
+- Ingen spårning
+- Privat / på enheten
 - App Store · Gratis
 
 [Skaffa Sereno i App Store →](https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

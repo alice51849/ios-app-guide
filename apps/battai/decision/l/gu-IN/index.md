@@ -2,7 +2,7 @@
 title: "BattAI: બેટરી હેલ્થ સ્કોર — સ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI જાહેર iOS API માંથી 5 મૂલ્ય લે �
 
 - વધુ
 - મફત શરૂઆત
+- કોઈ જાહેરાત નથી
+- Apple Watch
 - App Store · મફત
 
 [App Store પરથી BattAI: બેટરી હેલ્થ સ્કોર મેળવો](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

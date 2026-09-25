@@ -2,7 +2,7 @@
 title: "SaveTag: AI-bokmärken — Spara länkar, läs dem sen | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Spara nu. Läs på riktigt sen. Du skickar länkar till dig själv hela dagarna.
 
 - Produktivitet
 - Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- Ingen spårning
+- Privat / på enheten
+- Widget
 - App Store · Gratis
 
 [Hämta SaveTag: AI-bokmärken i App Store](https://apps.apple.com/se/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

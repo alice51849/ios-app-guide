@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Senast — Minns när du gjorde det | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ När bytte du senast lakan, vattnade en växt, ringde familjen, säkerhetskopier
 
 - Livsstil
 - Gratis att börja · engångsupplåsning
+- Offline
+- Inget konto
+- Inga annonser
+- Ingen spårning
+- Privat / på enheten
+- Widget
 - App Store · Gratis
 
 [Hämta Mochi DoneStamp: Senast i App Store](https://apps.apple.com/se/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "meilleure application de bruit blanc pour s’endormir sans abonnement"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du 
 - Sommeil et concentration
 - Gratuit au départ · déblocage unique
 - Hors ligne
+- Aucun compte
 - Aucune publicité
+- Aucun suivi
+- Privé / sur l'appareil
 - App Store · Gratuit
 
 [Obtenez Sereno sur l’App Store →](https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

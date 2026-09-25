@@ -2,7 +2,7 @@
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Para las tareas y el mantenimiento que no encajan en un calendario rígido, un b
 
 - Estilo de vida
 - Gratis para empezar · desbloqueo único
+- Sin conexión
+- Sin cuenta
+- Sin anuncios
+- Sin seguimiento
+- Privado / en el dispositivo
+- Widget
 - App Store · Gratis
 
 [Consigue Mochi DoneStamp en el App Store →](https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

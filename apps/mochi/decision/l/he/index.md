@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לרשימת מטלות פשוטה באייפון ללא מנוי"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - פרודוקטיביות
 - התחלה ללא תשלום
 - ללא פרסומות
+- Apple Watch
 - App Store · בחינם
 
 [קבל את Mochi ב-App Store →](https://apps.apple.com/il/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

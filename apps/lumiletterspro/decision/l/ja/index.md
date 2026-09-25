@@ -2,7 +2,7 @@
 title: "ホームスクール幼稚園準備におすすめの完全フォニックスアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 子ども・学習
 - 有料ダウンロード
+- オフライン
 - 広告なし
+- プライベート／端末内
 - App Store · ¥1,500
 
 [App StoreでLumi Letters Proを入手 →](https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na uvolnění místa na iPhonu mazáním duplicitních fotek"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: p�
 
 - Fotografie a nástroje
 - Zdarma na začátek
+- Offline
+- Bez účtu
+- Bez reklam
+- Bez sledování
 - Soukromé / v zařízení
 - App Store · Zdarma
 

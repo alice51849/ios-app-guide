@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na slovní zásobu pro vytížené cestující s Apple Watch"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Vytížení cestující potřebují procvičování slovní zásoby, které se v
 - Bez účtu
 - Bez reklam
 - Bez sledování
+- Soukromé / v zařízení
 - Widget
 - Apple Watch
 - App Store · 249,00 Kč

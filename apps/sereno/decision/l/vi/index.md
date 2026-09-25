@@ -2,7 +2,7 @@
 title: "ứng dụng tiếng ồn trắng tốt nhất để dễ ngủ không cần đăng ký"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - Giấc ngủ & tập trung
 - Bắt đầu miễn phí · mở khóa một lần
 - Ngoại tuyến
+- Không tài khoản
 - Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
 [Tải Sereno trên App Store →](https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

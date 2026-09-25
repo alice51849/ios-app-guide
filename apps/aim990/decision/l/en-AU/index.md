@@ -2,7 +2,7 @@
 title: "best toeic prep app offline study plan for iphone"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/en-AU/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Part 5 looks short, but those incomplete-sentence questions can drain time if gr
 
 - Education
 - Free to start · one-time unlock
+- Offline
+- No ads
+- Private / on-device
 - App Store · Free
 
 [Get Aim990 on the App Store →](https://apps.apple.com/au/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

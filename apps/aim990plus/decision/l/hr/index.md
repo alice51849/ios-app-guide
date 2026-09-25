@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test iz engleskog — Sigurnost pod štopericom | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990
 
 - Djeca i učenje
 - Plaćeno preuzimanje
+- Izvan mreže
+- Bez računa
 - App Store · 6,99 €
 
 [Preuzmite Aim990 Plus: Test iz engleskog u App Storeu](https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

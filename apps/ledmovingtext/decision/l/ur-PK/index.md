@@ -2,7 +2,7 @@
 title: "LED Moving Text — اسکرین پر چلتی روشن تحریر | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - مزید
 - مفت آغاز
+- آف لائن
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [App Store سے LED Moving Text حاصل کریں](https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

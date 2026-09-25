@@ -2,7 +2,7 @@
 title: "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI ସାର୍ବଜନୀନ iOS API ରୁ 5ଟି ମୂଲ୍ୟ
 
 - ଅଧିକ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- Apple Watch
 - App Store · ମାଗଣା
 
 [App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

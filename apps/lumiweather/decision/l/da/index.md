@@ -2,7 +2,7 @@
 title: "bedste vejr-app til forældre, der planlægger udendørs tid med børn"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Forældre, der planlægger udendørs tid, har brug for mere end en temperatur: d
 
 - Børn & læring
 - Gratis at komme i gang
+- Ingen konto
 - Ingen reklamer
 - Ingen sporing
+- Privat / på enheden
+- Widget
 - App Store · Gratis
 
 [Hent Lumi Weather i App Store →](https://apps.apple.com/dk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

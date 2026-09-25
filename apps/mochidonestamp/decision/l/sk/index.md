@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Naposledy — Pamätá si, kedy to bolo | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Kedy ste naposledy menili posteľnú bielizeň, polievali rastlinu, volali rodin
 
 - Životný štýl
 - Zadarmo na začiatok
+- Offline
+- Bez účtu
+- Bez reklám
+- Bez sledovania
+- Súkromné / v zariadení
+- Widget
 - App Store · Zadarmo
 
 [Stiahnuť Mochi DoneStamp: Naposledy v App Store](https://apps.apple.com/sk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

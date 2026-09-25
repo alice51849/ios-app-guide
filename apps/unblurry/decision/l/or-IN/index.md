@@ -2,7 +2,7 @@
 title: "iPhone ରେ ଶିଶୁଙ୍କର ଧୁସର ଫଟୋ ସଠିକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ଫଟୋ ଏବଂ ସାଧନ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 

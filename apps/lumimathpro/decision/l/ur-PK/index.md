@@ -2,7 +2,7 @@
 title: "پری اسکول اور ابتدائی جماعتوں کے لیے بہترین مکمل میتھ لرننگ ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - بچے اور سیکھنا
 - ادا شدہ ڈاؤن لوڈ
 - کوئی اشتہار نہیں
+- نجی / آلہ پر
 - App Store · Rs 2,500.00
 
 [Lumi Math Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

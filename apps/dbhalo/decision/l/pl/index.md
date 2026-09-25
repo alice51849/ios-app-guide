@@ -2,7 +2,7 @@
 title: "dB Halo: Miernik hałasu — Dawka i bezpieczny czas | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo to działające wyłącznie na urządzeniu narzędzie do pomiaru poziomu
 
 - Więcej
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
+- Bez reklam
+- Bez śledzenia
+- Prywatne / na urządzeniu
+- Widżet
+- Apple Watch
 - App Store · Bezpłatnie
 
 [Pobierz dB Halo: Miernik hałasu z App Store](https://apps.apple.com/pl/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

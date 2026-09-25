@@ -2,7 +2,7 @@
 title: "legjobb önéletrajz készítő alkalmazás karrierváltóknak 2026"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat val
 
 - Produktivitás
 - Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
 - App Store · Ingyenes
 
 [Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

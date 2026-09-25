@@ -2,7 +2,7 @@
 title: "paras valkoinen kohina -sovellus nukahtamiseen ilman tilausta"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Unen kannalta kuukausittainen tilaus, joka ärsyttää, on kaikkea muuta kuin re
 - Uni & keskittyminen
 - Ilmainen aloitus
 - Offline
+- Ei tiliä
 - Ei mainoksia
+- Ei seurantaa
+- Yksityinen / laitteella
 - App Store · Ilmainen
 
 [Hanki Sereno App Storesta →](https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

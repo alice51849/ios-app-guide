@@ -2,7 +2,7 @@
 title: "అకౌంట్ లేకుండా ఉత్తమ ట్రావెల్ బడ్జెట్ ట్రాకర్ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - చెల్లింపు డౌన్లోడ్
 - ఆఫ్‌లైన్
 - ఖాతా అవసరం లేదు
+- ప్రకటనలు లేవు
+- ట్రాకింగ్ లేదు
+- గోప్యంగా / పరికరంలో
 - App Store · ₹ 499
 
 [App Store నుండి G+Money పొందండి →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

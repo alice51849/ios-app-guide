@@ -2,7 +2,7 @@
 title: "بغیر سبسکرپشن کے سونے کے لیے بہترین وائٹ نوائس ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - نیند اور توجہ
 - مفت آغاز
 - آف لائن
+- کوئی اکاؤنٹ نہیں
 - کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [App Store سے Sereno حاصل کریں →](https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

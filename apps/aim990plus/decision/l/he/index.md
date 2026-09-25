@@ -2,7 +2,7 @@
 title: "Aim990 Plus: מבחן תרגול אנגלית — אימון שמיעה וקריאה בלחץ | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ילדים ולמידה
 - הורדה בתשלום
+- לא מקוון
+- ללא חשבון
 - App Store · ₪19.90
 
 [הורידו את Aim990 Plus: מבחן תרגול אנגלית מה-App Store](https://apps.apple.com/il/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "best educational game app for kids no ads iphone"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/en-AU/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ For a young child, the dealbreaker is ads and data collection — a learning app
 
 - Kids & learning
 - Free to start · one-time unlock
+- Offline
 - No ads
 - App Store · Free
 

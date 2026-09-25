@@ -2,7 +2,7 @@
 title: "אפליקציית מזג אוויר להורים שמתכננים זמן בחוץ עם ילדים"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - ילדים ולמידה
 - התחלה ללא תשלום
+- ללא חשבון
 - ללא פרסומות
 - ללא מעקב
+- פרטי / במכשיר
+- וידג'ט
 - App Store · בחינם
 
 [קבל את Lumi Weather ב-App Store →](https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

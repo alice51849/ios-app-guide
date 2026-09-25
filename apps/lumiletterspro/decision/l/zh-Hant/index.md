@@ -2,7 +2,7 @@
 title: "適合居家學前準備的最佳完整自然發音學習 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 兒童與學習
 - 付費下載
+- 離線使用
 - 無廣告
+- 隱私優先／裝置端
 - App Store · $290.00
 
 [在 App Store 取得 Lumi Letters Pro →](https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

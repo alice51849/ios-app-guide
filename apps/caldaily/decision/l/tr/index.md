@@ -2,7 +2,7 @@
 title: "CalDaily: hesap makinesi — Widget, araçlar ve geçmiş | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Gerçekten kullanmaya devam edeceğiniz bir hesap makinesi, çünkü her sayın�
 
 - Daha fazla
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
+- Gizli / cihazda
 - Araç takımı
 - App Store · Ücretsiz
 

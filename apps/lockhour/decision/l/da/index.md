@@ -2,7 +2,7 @@
 title: "bedste app til at blokere sociale medier under studier på iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokeri
 
 - Produktivitet
 - Gratis at komme i gang
+- Ingen konto
 - Ingen reklamer
+- Ingen sporing
 - Privat / på enheden
 - App Store · Gratis
 

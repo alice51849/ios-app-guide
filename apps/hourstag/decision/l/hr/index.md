@@ -2,7 +2,7 @@
 title: "HoursTag: Sati za kupnju — Budžet, troškovi i ušteda | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.
 
 - Novac i putovanja
 - Plaćeno preuzimanje
+- Bez računa
+- Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
 - App Store · 5,99 €

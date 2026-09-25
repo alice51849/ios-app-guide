@@ -2,7 +2,7 @@
 title: "OnePage PPT: Slide AI — Biến ghi chú thành một trang | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Biến một bức tường chữ thành đúng một trang mà người ta ch�
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không tài khoản
+- Không theo dõi
+- Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
 [Tải OnePage PPT: Slide AI trên App Store](https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

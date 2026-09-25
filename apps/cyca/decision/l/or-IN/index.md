@@ -2,7 +2,7 @@
 title: "iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ପିରିଅଡ୍ ଟ୍ରାକର୍ ଆପ୍ ଯାହାକୁ ଖାତା ଆବଶ୍ୟକ ନାହିଁ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ସ୍ୱାସ୍ଥ୍ୟ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 

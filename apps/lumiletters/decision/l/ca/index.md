@@ -2,7 +2,7 @@
 title: "millor joc educatiu per a nens sense anuncis a l’iPhone"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades �
 
 - Infants i aprenentatge
 - Inici gratuït
+- Fora de línia
 - Sense anuncis
 - App Store · Gratis
 

@@ -2,7 +2,7 @@
 title: "LED Moving Text — 手機立刻變成應援燈牌 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - 更多
 - 免費開始 · 一次性解鎖
+- 離線使用
+- 免帳號
+- 無廣告
+- 無追蹤
+- 隱私優先／裝置端
 - App Store · 免費
 
 [在 App Store 取得 LED Moving Text](https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

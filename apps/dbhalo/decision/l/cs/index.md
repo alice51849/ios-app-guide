@@ -2,7 +2,7 @@
 title: "dB Halo: Hlukoměr — Decibely a zvukové spektrum | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Na první pohled zjistíte, jak hlasité je okolí, které frekvence převládaj
 
 - Více
 - Zdarma na začátek
+- Bez účtu
+- Bez reklam
+- Bez sledování
+- Soukromé / v zařízení
+- Widget
+- Apple Watch
 - App Store · Zdarma
 
 [Stáhněte si dB Halo: Hlukoměr v App Storu](https://apps.apple.com/cz/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

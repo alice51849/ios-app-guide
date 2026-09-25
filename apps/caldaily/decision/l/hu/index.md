@@ -2,7 +2,7 @@
 title: "CalDaily: számológép, témák — Widget, eszközök, előzmények | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Egy számológép, amit tényleg tovább használsz, mert megjegyzi, mi állt az
 
 - Továbbiak
 - Ingyenes kezdés
+- Nincs fiók
+- Privát / eszközön tárolt
 - Widget
 - App Store · Ingyenes
 

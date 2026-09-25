@@ -2,7 +2,7 @@
 title: "집에서 아기와 유아용 여권 사진 앱 추천"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 사진 & 유틸리티
 - 유료 다운로드
+- 계정 없음
+- 광고 없음
+- 추적 없음
 - 프라이빗 / 기기 내
 - App Store · ￦9,900
 

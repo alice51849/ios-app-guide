@@ -2,7 +2,7 @@
 title: "ଆଇଫୋନ୍ ପାଇଁ ସରଳ ଟୁ-ଡୁ ତାଲିକା ଆପ୍, କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- Apple Watch
 - App Store · ମାଗଣା
 
 [App Store ରୁ Mochi ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

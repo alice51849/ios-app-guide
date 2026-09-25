@@ -2,7 +2,7 @@
 title: "bästa kompletta fonetikappen för hemundervisning i förskoleklass"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Familjer som förbereder för förskoleklass behöver en komplett tidig läsväg
 
 - Barn & lärande
 - Betald nedladdning
+- Offline
 - Inga annonser
+- Privat / på enheten
 - App Store · 119,00 kr
 
 [Hämta Lumi Letters Pro på App Store →](https://apps.apple.com/se/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "legjobb menstruációs naptár alkalmazás fiók nélkül iPhone-ra"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő men
 
 - Egészség
 - Ingyenes kezdés
+- Offline
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

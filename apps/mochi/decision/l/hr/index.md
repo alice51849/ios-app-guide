@@ -2,7 +2,7 @@
 title: "najbolja jednostavna aplikacija za popis zadataka na iPhoneu bez pretplate"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista z
 - Produktivnost
 - Besplatno za početak
 - Bez oglasa
+- Apple Watch
 - App Store · Besplatno
 
 [Preuzmite Mochi u App Storeu →](https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

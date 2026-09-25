@@ -2,7 +2,7 @@
 title: "Okul öncesi ve ilk sınıflar için en iyi tam matematik öğrenme uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Tam bir erken matematik uygulaması, sayma, sayı algısı ve ilk işlemleri bir
 - Çocuklar & öğrenme
 - Ücretli indirme
 - Reklam yok
+- Gizli / cihazda
 - App Store · ₺499,99
 
 [Lumi Math Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

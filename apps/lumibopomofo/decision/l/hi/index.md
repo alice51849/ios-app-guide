@@ -2,7 +2,7 @@
 title: "iPhone पर बच्चों के लिए Zhuyin सीखने के लिए सर्वश्रेष्ठ Bopomofo ऐप"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Zhuyin सीखने वाले बच्चे के लिए, ऐप क
 
 - बच्चे और सीखना
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- कोई खाता नहीं
 - कोई विज्ञापन नहीं
 - App Store · मुफ़्त
 

@@ -2,7 +2,7 @@
 title: "2026 ਲਈ ਕਰੀਅਰ ਬਦਲਣ ਵਾਲਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਰੇਜ਼ੂਮੇ ਬਿਲਡਰ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ਉਤਪਾਦਕਤਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
+- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ CV ਡੈਸਕ ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "WiFi Aid: Nájdite chyby siete — Diagnostika siete s dôkazmi | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS
 
 - Fotografia a nástroje
 - Platené stiahnutie
+- Bez účtu
+- Apple Watch
 - App Store · 6,99 €
 
 [Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

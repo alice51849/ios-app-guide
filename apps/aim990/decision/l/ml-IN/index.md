@@ -2,7 +2,7 @@
 title: "ഐഫോണിനുള്ള മികച്ച TOEIC പ്രിപ് ആപ്പ് ഓഫ്‌ലൈൻ പഠന പദ്ധതി"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - വിദ്യാഭ്യാസം
 - സൗജന്യമായി ആരംഭിക്കുക
+- ഓഫ്‌ലൈൻ
+- വ്യാപനങ്ങൾ ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
 [App Store-ൽ Aim990 നേടുക →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

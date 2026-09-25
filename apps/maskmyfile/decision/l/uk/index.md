@@ -2,7 +2,7 @@
 title: "Mask My File: Видаліть дані — Сховайте дані перед поширенням | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - Фото та утиліти
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
 - Приватно / на пристрої
 - App Store · Безкоштовно
 

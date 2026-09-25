@@ -2,7 +2,7 @@
 title: "SaveTag: บุ๊กมาร์ก AI — เก็บลิงก์ไว้อ่านทีหลัง | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - เพิ่มประสิทธิภาพ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
+- ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
+- วิดเจ็ต
 - App Store · ฟรี
 
 [ดาวน์โหลด SaveTag: บุ๊กมาร์ก AI บน App Store](https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

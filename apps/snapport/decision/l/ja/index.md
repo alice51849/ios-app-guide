@@ -2,7 +2,7 @@
 title: "赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 写真・ユーティリティ
 - 有料ダウンロード
+- アカウント不要
+- 広告なし
+- 追跡なし
 - プライベート／端末内
 - App Store · ¥1,000
 

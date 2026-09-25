@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Govori danes — 50 jezikov, pravi dialogi | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Govori, ko je pomembno. DailyMate Lite resnične situacije spremeni v kratke vaj
 
 - Otroci in učenje
 - Brezplačen začetek
+- Brez računa
+- Apple Watch
 - App Store · Brezplačno
 
 [Prenesite DailyMate Lite: Govori danes iz trgovine App Store](https://apps.apple.com/si/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

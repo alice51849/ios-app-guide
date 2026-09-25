@@ -2,7 +2,7 @@
 title: "نرسوں کے لیے بہترین آف لائن دستاویز اسکینر ایپ بغیر کلاؤڈ کے"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - پیداواریت
 - مفت آغاز
+- آف لائن
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
 - نجی / آلہ پر
 - App Store · مفت
 

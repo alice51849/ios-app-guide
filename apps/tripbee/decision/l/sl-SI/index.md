@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za načrtovanje potovalnega itinerarja za iPhone"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni 
 - Plačljiv prenos
 - Brez povezave
 - Brez računa
+- Brez oglasov
+- Brez sledenja
 - Zasebno / na napravi
 - App Store · 6,99 €
 

@@ -2,7 +2,7 @@
 title: "ഉറങ്ങാൻ സഹായിക്കുന്ന മികച്ച വൈറ്റ് നോയിസ് ആപ്പ്, സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - ഉറക്കം & ശ്രദ്ധ
 - സൗജന്യമായി ആരംഭിക്കുക
 - ഓഫ്‌ലൈൻ
+- അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് Sereno നേടുക →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

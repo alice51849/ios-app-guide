@@ -2,7 +2,7 @@
 title: "ứng dụng quét tài liệu ngoại tuyến tốt nhất không dùng đám mây cho y tá"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặ
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

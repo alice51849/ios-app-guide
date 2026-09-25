@@ -2,7 +2,7 @@
 title: "iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ଟ୍ରାଭେଲ୍ ବଜେଟ୍ ଟ୍ରାକର୍ ଆପ୍ କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - ଅଫଲାଇନ
 - କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 499
 
 [App Store ରୁ G+Money ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

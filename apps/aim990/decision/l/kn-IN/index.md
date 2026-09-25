@@ -2,7 +2,7 @@
 title: "iPhone‌ಗಾಗಿ ಅತ್ಯುತ್ತಮ ಟೋಯಿಕ್ ತಯಾರಿ ಆಫ್‌ಲೈನ್ ಅಧ್ಯಯನ ಯೋಜನೆ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ಶಿಕ್ಷಣ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಆಫ್‌ಲೈನ್
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ Aim990 ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

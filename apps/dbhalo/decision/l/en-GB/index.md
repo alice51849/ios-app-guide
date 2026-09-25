@@ -2,7 +2,7 @@
 title: "dB Halo: Sound Level Meter — Noise Dose, Spectrum & Sleep | iOS App"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/en-GB/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Whether you are keeping an eye on building works, a noisy flat, the commute or a
 
 - More
 - Free to start · one-time unlock
+- No account
+- No adverts
+- No tracking
+- Private / on-device
+- Widget
+- Apple Watch
 - App Store · Free
 
 [Get dB Halo: Sound Level Meter on the App Store](https://apps.apple.com/gb/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

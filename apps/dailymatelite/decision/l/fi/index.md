@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Puhu tänään — 50 kieltä, aitoja keskusteluja | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Puhu luontevasti silloin, kun tilanne tulee vastaan. DailyMate Lite auttaa harjo
 
 - Lapset & oppiminen
 - Ilmainen aloitus
+- Ei tiliä
+- Apple Watch
 - App Store · Ilmainen
 
 [Lataa DailyMate Lite: Puhu tänään App Storesta](https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

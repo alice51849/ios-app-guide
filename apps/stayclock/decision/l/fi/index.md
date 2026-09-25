@@ -2,7 +2,7 @@
 title: "Stay Clock: Pöytäkello — Aika ja kalenteri, aina päällä | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock muuttaa iPhonesi tai iPadisi pöytäkelloksi, joka on aina päällä 
 
 - Lisää
 - Ilmainen aloitus
+- Offline
+- Ei tiliä
 - Ei mainoksia
+- Ei seurantaa
+- Yksityinen / laitteella
+- Widget
+- Apple Watch
 - App Store · Ilmainen
 
 [Lataa Stay Clock: Pöytäkello App Storesta](https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

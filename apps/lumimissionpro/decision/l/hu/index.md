@@ -2,7 +2,7 @@
 title: "legjobb teljes reggeli és esti rutin alkalmazás gyerekeknek"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ A fogmosás és esti rutin gyakran ugyanabban a pillanatban bukik el minden este
 
 - Gyerekek & tanulás
 - Fizetős letöltés
+- Nincs fiók
 - Nincs reklám
+- Privát / eszközön tárolt
 - App Store · HUF2,490.00
 
 [Szerezd be a Lumi Mission Planet Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

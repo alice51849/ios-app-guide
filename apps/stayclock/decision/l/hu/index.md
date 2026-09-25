@@ -2,7 +2,7 @@
 title: "Stay Clock: Asztali Óra — Idő és naptár, mindig látható | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ A Stay Clock mindig bekapcsolt asztali órává alakítja iPhone-ját vagy iPad-
 
 - Továbbiak
 - Ingyenes kezdés
+- Offline
+- Nincs fiók
 - Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
+- Widget
+- Apple Watch
 - App Store · Ingyenes
 
 [Töltse le a(z) Stay Clock: Asztali Óra appot az App Store-ból](https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

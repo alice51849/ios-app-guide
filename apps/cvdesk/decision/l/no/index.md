@@ -2,7 +2,7 @@
 title: "beste CV-byggerapp for karrierebytter 2026"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Når du bytter felt, er CV-problemet annerledes: erfaringen din er ekte, men 'ir
 
 - Produktivitet
 - Gratis å starte
+- Ingen konto
+- Ingen annonser
 - App Store · Gratis
 
 [Få CV Desk i App Store →](https://apps.apple.com/no/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

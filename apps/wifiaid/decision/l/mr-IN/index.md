@@ -2,7 +2,7 @@
 title: "WiFi Aid: नेटवर्क समस्या शोधा — नेटवर्क निदान आणि पुरावा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - फोटो आणि उपयुक्तता
 - पैसे देऊन डाउनलोड करा
+- खाते नाही
+- Apple Watch
 - App Store · ₹ 599
 
 [App Store वरून WiFi Aid: नेटवर्क समस्या शोधा मिळवा](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

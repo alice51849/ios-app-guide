@@ -2,7 +2,7 @@
 title: "legjobb időjárás alkalmazás szülőknek kültéri programok tervezéséhez gyerekekkel"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ A szülőknek, akik kültéri programot terveznek, több kell egy hőmérséklet
 
 - Gyerekek & tanulás
 - Ingyenes kezdés
+- Nincs fiók
 - Nincs reklám
 - Nincs követés
+- Privát / eszközön tárolt
+- Widget
 - App Store · Ingyenes
 
 [Szerezd be a Lumi Weather-t az App Store-ban →](https://apps.apple.com/hu/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung m�
 
 - Ảnh & tiện ích
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

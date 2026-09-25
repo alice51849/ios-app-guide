@@ -2,7 +2,7 @@
 title: "Snapport Lite: Passbild machen — Passbilder zu Hause erstellen | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Erstelle Pass-, Visum- und Ausweisfotos mit Größenhilfen, Hint
 - Foto & Dienstprogramm
 - Kostenloser Einstieg · einmalige Freischaltung
 - Offline
+- Kein Konto
+- Keine Werbung
+- Kein Tracking
+- Privat / auf dem Gerät
 - App Store · Kostenlos
 
 [Snapport Lite: Passbild machen im App Store laden](https://apps.apple.com/de/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

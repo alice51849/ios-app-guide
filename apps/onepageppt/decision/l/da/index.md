@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI-slides — Fra noter til ét færdigt dias | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Lav en mur af tekst om til ÉT dias, folk rent faktisk læser. OnePage PPT læse
 
 - Produktivitet
 - Gratis at komme i gang
+- Offline
+- Ingen konto
+- Ingen sporing
+- Privat / på enheden
 - App Store · Gratis
 
 [Hent OnePage PPT: AI-slides i App Store](https://apps.apple.com/dk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

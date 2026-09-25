@@ -2,7 +2,7 @@
 title: "Snapport Lite：在家製作證件照 — 在家製作證件照 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護�
 - 照片與實用工具
 - 免費開始 · 一次性解鎖
 - 離線使用
+- 免帳號
+- 無廣告
+- 無追蹤
+- 隱私優先／裝置端
 - App Store · 免費
 
 [在 App Store 取得 Snapport Lite：在家製作證件照](https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

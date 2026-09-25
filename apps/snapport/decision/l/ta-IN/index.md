@@ -2,7 +2,7 @@
 title: "வீட்டில் குழந்தைகள் மற்றும் சிறுவர்களுக்கான சிறந்த பாஸ்போர்ட் புகைப்பட செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - புகைப்படம் & பயன்பாடு
 - பணம் செலுத்தி பதிவிறக்கவும்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · ₹ 599
 

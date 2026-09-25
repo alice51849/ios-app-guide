@@ -2,7 +2,7 @@
 title: "aplikasi bopomofo terbaik untuk anak belajar zhuyin di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Untuk anak yang baru belajar Zhuyin, aplikasi harus mencakup semua 37 simbol mel
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Tanpa iklan
 - App Store · Gratis
 

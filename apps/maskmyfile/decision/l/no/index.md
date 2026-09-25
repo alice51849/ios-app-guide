@@ -2,7 +2,7 @@
 title: "Mask My File: Fjern dine data — Skjul private data før deling | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Del trygt uten å miste den nyttige sammenhengen. Mask My File finner personlige
 
 - Foto og verktøy
 - Gratis å starte
+- Ingen konto
 - Privat / på enheten
 - App Store · Gratis
 

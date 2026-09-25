@@ -2,7 +2,7 @@
 title: "CalDaily 계산기 및 테마 — 위젯, 도구, 기록 정리 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
+- 프라이빗 / 기기 내
 - 위젯
 - App Store · 무료
 

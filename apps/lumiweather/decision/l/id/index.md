@@ -2,7 +2,7 @@
 title: "aplikasi cuaca terbaik untuk membantu orang tua merencanakan waktu luar ruangan bersama anak"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Orang tua yang merencanakan waktu luar ruangan butuh lebih dari suhu: mereka but
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Tanpa iklan
 - Tanpa pelacakan
+- Privat / di perangkat
+- Widget
 - App Store · Gratis
 
 [Dapatkan Lumi Weather di App Store →](https://apps.apple.com/id/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

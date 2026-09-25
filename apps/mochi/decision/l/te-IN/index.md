@@ -2,7 +2,7 @@
 title: "iPhoneలో సబ్‌స్క్రిప్షన్ లేని సులభమైన టు-డూ లిస్ట్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ఉత్పాదకత
 - ఉచితంగా ప్రారంభించండి
 - ప్రకటనలు లేవు
+- Apple Watch
 - App Store · ఉచితం
 
 [App Storeలో Mochi పొందండి →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

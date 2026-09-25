@@ -2,7 +2,7 @@
 title: "best app to block social media while studying iphone"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/en-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ During exams, willpower isn't the tool — a hard timed block is. That's why Loc
 
 - Productivity
 - Free to start · one-time unlock
+- No account
 - No ads
+- No tracking
 - Private / on-device
 - App Store · Free
 

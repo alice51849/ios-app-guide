@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Vokabeltrainer — Fünf Wörter täglich, offline | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Fünf Wörter, eine Minute, ein sichtbarer Schritt auf deinem Weg. Wordmate Lite
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung
 - Offline
+- Kein Konto
+- Kein Tracking
+- Privat / auf dem Gerät
 - App Store · Kostenlos
 
 [Wordmate Lite: Vokabeltrainer im App Store laden](https://apps.apple.com/de/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

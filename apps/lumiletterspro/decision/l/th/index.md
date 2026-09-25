@@ -2,7 +2,7 @@
 title: "แอปโฟนิกส์ครบวงจรสำหรับเตรียมอนุบาลที่ดีที่สุด"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - เด็ก & การเรียนรู้
 - ดาวน์โหลดแบบชำระเงิน
+- ออฟไลน์
 - ไม่มีโฆษณา
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฿299.00
 - ★ 5.0/5 · 1
 

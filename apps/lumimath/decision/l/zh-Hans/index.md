@@ -2,7 +2,7 @@
 title: "iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
 
 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。

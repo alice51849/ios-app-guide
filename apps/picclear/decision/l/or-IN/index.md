@@ -2,7 +2,7 @@
 title: "ଆଇଫୋନ୍ ଷ୍ଟୋରେଜ୍ ଖାଲି କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍, ଡୁପ୍ଲିକେଟ୍ ଫଟୋ ଡିଲିଟ୍ କରିବା"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ଫଟୋ ଏବଂ ସାଧନ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 

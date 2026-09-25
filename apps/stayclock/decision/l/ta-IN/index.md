@@ -2,7 +2,7 @@
 title: "Stay Clock: மடக்கு கடிகாரம் — எப்போதும் நேரம், நாட்காட்டி | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock உங்கள் iPhone அல்லது iPadஐ, அறையி
 
 - மேலும்
 - இலவசமாக தொடங்கவும்
+- ஆஃப்லைன்
+- கணக்கு இல்லை
 - விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
+- விட்ஜெட்
+- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் Stay Clock: மடக்கு கடிகாரம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

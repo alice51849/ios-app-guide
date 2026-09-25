@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "uk",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Без облікового запису"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Фото та утиліти",
         "Платне завантаження",
+        "Без облікового запису",
+        "Apple Watch",
         "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/wifiaid.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Віджет"
+      ],
       "badge_labels": [
         "Стиль життя",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/mochidonestamp.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без реклами",
+        "Приватно / на пристрої"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Освіта",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без реклами",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
+        "Офлайн",
+        "Без облікового запису",
         "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/aim990plus.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Без реклами"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · разове розблокування",
+        "Без реклами",
+        "Apple Watch",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Приватно / на пристрої"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Приватно / на пристрої",
         "Віджет",
         "App Store · Безкоштовно"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "Здоров'я",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Віджет",
         "Apple Watch"
       ],
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
+        "Віджет",
         "Apple Watch",
         "App Store · 14,99 USD"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Без облікового запису"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Apple Watch",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Віджет",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
+        "Apple Watch",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Офлайн",
-        "Без облікового запису"
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "Платне завантаження",
         "Офлайн",
         "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · 5,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -882,10 +1018,14 @@
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
         "Без відстеження",
         "Приватно / на пристрої"
       ],
@@ -894,6 +1034,8 @@
       "badge_labels": [
         "Гроші та подорожі",
         "Платне завантаження",
+        "Без облікового запису",
+        "Без реклами",
         "Без відстеження",
         "Приватно / на пристрої",
         "App Store · 5,99 USD"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
         "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Без облікового запису",
         "Без реклами"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "Без реклами",
         "App Store · Безкоштовно"
       ],
@@ -1083,17 +1251,23 @@
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Без облікового запису",
+        "Без реклами",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
+        "Без облікового запису",
         "Без реклами",
+        "Приватно / на пристрої",
         "App Store · 9,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1133,9 +1307,11 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "Офлайн",
         "Без реклами"
       ],
       "device_surfaces": [],
@@ -1143,6 +1319,7 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
         "Без реклами",
         "App Store · Безкоштовно"
       ],
@@ -1183,17 +1360,23 @@
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Офлайн",
+        "Без реклами",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
+        "Офлайн",
         "Без реклами",
+        "Приватно / на пристрої",
         "App Store · 9,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1233,9 +1416,11 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Без облікового запису",
         "Без реклами"
       ],
       "device_surfaces": [],
@@ -1243,6 +1428,7 @@
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "Без реклами",
         "App Store · Безкоштовно"
       ],
@@ -1283,10 +1469,12 @@
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Без реклами",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1294,6 +1482,7 @@
         "Діти та навчання",
         "Платне завантаження",
         "Без реклами",
+        "Приватно / на пристрої",
         "App Store · 9,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1333,17 +1522,26 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1383,17 +1581,23 @@
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Без облікового запису",
+        "Без реклами",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Діти та навчання",
         "Платне завантаження",
+        "Без облікового запису",
         "Без реклами",
+        "Приватно / на пристрої",
         "App Store · 6,99 USD"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1433,17 +1637,23 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Офлайн",
+        "Без реклами",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
         "Без реклами",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -1483,20 +1693,31 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
         "Без реклами",
-        "Без відстеження"
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Віджет"
+      ],
       "badge_labels": [
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "Без реклами",
         "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1541,12 +1762,17 @@
       "privacy_labels": [
         "Без реклами"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
         "Без реклами",
+        "Apple Watch",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1655,13 +1881,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/onepageppt.html",
@@ -1700,13 +1940,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Приватно / на пристрої"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1746,9 +1997,17 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -1756,6 +2015,10 @@
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -1795,13 +2058,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Віджет"
+      ],
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/savetag.html",
@@ -1841,9 +2123,17 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -1851,6 +2141,10 @@
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -1892,11 +2186,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Офлайн",
-        "Без реклами"
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1904,7 +2204,10 @@
         "Сон та концентрація",
         "Безкоштовно для початку · разове розблокування",
         "Офлайн",
+        "Без облікового запису",
         "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1943,13 +2246,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Приватно / на пристрої"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · разове розблокування",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/shotinbox.html",
@@ -1989,9 +2297,15 @@
       "purchase_label": "Платне завантаження",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -1999,6 +2313,9 @@
       "badge_labels": [
         "Фото та утиліти",
         "Платне завантаження",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · 6,99 USD"
       ],
@@ -2039,10 +2356,18 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Офлайн"
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2050,6 +2375,10 @@
         "Фото та утиліти",
         "Безкоштовно для початку · разове розблокування",
         "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/snapportlite.html",
@@ -2089,9 +2418,15 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -2099,6 +2434,9 @@
       "badge_labels": [
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -2139,17 +2477,37 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Без реклами"
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Віджет",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · разове розблокування",
+        "Офлайн",
+        "Без облікового запису",
         "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
+        "Apple Watch",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/stayclock.html",
@@ -2188,13 +2546,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Подорожі",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2236,11 +2602,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Офлайн",
         "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -2250,6 +2620,8 @@
         "Платне завантаження",
         "Офлайн",
         "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · 6,99 USD"
       ],
@@ -2290,9 +2662,15 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [],
@@ -2300,6 +2678,9 @@
       "badge_labels": [
         "Фото та утиліти",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
         "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
@@ -2339,13 +2720,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Без облікового запису"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Ще",
         "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/wifiaidlite.html",
@@ -2385,10 +2771,16 @@
       "purchase_label": "Безкоштовно для початку · разове розблокування",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Офлайн"
+        "Офлайн",
+        "Без облікового запису",
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2396,6 +2788,9 @@
         "Діти та навчання",
         "Безкоштовно для початку · разове розблокування",
         "Офлайн",
+        "Без облікового запису",
+        "Без відстеження",
+        "Приватно / на пристрої",
         "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/wordmatelite.html",
@@ -2437,12 +2832,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Без облікового запису",
         "Без реклами",
-        "Без відстеження"
+        "Без відстеження",
+        "Приватно / на пристрої"
       ],
       "device_surfaces": [
         "widget",
@@ -2458,6 +2855,7 @@
         "Без облікового запису",
         "Без реклами",
         "Без відстеження",
+        "Приватно / на пристрої",
         "Віджет",
         "Apple Watch",
         "App Store · 9,99 USD"

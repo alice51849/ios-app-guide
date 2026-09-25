@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ইংরেজি শেখা — প্রতিদিন ৫টি নতুন শব্দ | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,6 +17,9 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 - শিশু ও শেখা
 - বিনামূল্যে শুরু
 - অফলাইন
+- কোনও অ্যাকাউন্ট নেই
+- কোনও ট্র্যাকিং নেই
+- গোপনীয় / ডিভাইসে
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Wordmate Lite: ইংরেজি শেখা-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

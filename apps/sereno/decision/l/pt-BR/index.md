@@ -2,7 +2,7 @@
 title: "melhor app de ruído branco para dormir sem assinatura"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Para dormir, uma assinatura que incomoda todo mês é o oposto de relaxante. Se 
 - Sono e foco
 - Grátis para começar · desbloqueio único
 - Offline
+- Sem conta
 - Sem anúncios
+- Sem rastreamento
+- Privado / no dispositivo
 - App Store · Grátis
 
 [Baixe o Sereno na App Store →](https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

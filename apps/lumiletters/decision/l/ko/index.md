@@ -2,7 +2,7 @@
 title: "아이폰에서 광고 없는 어린이용 교육 게임 앱 중 최고"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 오프라인
 - 광고 없음
 - App Store · 무료
 

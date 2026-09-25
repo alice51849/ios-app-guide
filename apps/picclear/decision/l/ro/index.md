@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru eliberarea spațiului pe iPhone prin ștergerea fotografiilor duplicate"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Pentru a elibera spațiu rapid, țintește cele mai mari câștiguri mai întâi
 
 - Fotografie & utilitate
 - Început gratuit
+- Offline
+- Fără cont
+- Fără reclame
+- Fără urmărire
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

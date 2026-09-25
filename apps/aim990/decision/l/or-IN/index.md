@@ -2,7 +2,7 @@
 title: "iPhone ପାଇଁ ସର୍ବୋତ୍ତମ TOEIC ପ୍ରସ୍ତୁତି ଆପ୍ ଅଫ୍ଲାଇନ୍ ଅଧ୍ୟୟନ ଯୋଜନା"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରୁ Aim990 ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

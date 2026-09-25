@@ -2,7 +2,7 @@
 title: "abonelik olmadan uykuya dalmak için en iyi beyaz gürültü uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir. Tan�
 - Uyku & odak
 - Başlangıçta ücretsiz · tek seferlik açma
 - Çevrimdışı
+- Hesap yok
 - Reklam yok
+- Takip yok
+- Gizli / cihazda
 - App Store · Ücretsiz
 
 [Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

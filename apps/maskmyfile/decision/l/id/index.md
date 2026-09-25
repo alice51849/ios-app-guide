@@ -2,7 +2,7 @@
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 
 - Foto & utilitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Privat / di perangkat
 - App Store · Gratis
 

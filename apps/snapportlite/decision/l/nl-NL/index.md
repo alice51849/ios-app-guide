@@ -2,7 +2,7 @@
 title: "Snapport Lite: Pasfoto's maken — Maak ID-foto's thuis | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen,
 - Foto & hulpmiddel
 - Gratis te starten · eenmalige ontgrendeling
 - Offline
+- Geen account
+- Geen advertenties
+- Geen tracking
+- Privé / op apparaat
 - App Store · Gratis
 
 [Download Snapport Lite: Pasfoto's maken in de App Store](https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

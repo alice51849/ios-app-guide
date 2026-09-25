@@ -2,7 +2,7 @@
 title: "પ્રેસ્કૂલ અને અર્લી ગ્રેડ માટે શ્રેષ્ઠ સંપૂર્ણ ગણિત શીખવાની એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - બાળકો અને અભ્યાસ
 - ચુકવેલ ડાઉનલોડ
 - કોઈ જાહેરાત નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · ₹ 999
 
 [Lumi Math Pro App Store પર મેળવો →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

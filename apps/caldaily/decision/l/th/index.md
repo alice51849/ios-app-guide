@@ -2,7 +2,7 @@
 title: "CalDaily: เครื่องคิดเลข — วิดเจ็ต, เครื่องมือ, ประวัติ | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
+- ส่วนตัว / บนอุปกรณ์
 - วิดเจ็ต
 - App Store · ฟรี
 

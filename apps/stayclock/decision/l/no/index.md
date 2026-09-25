@@ -2,7 +2,7 @@
 title: "Stay Clock: Skrivebordsklokke — Tid og kalender, alltid på | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock gjør iPhone eller iPad om til en bordklokke som alltid er på, og so
 
 - Mer
 - Gratis å starte
+- Frakoblet
+- Ingen konto
 - Ingen annonser
+- Ingen sporing
+- Privat / på enheten
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Last ned Stay Clock: Skrivebordsklokke fra App Store](https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

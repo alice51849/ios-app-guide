@@ -2,7 +2,7 @@
 title: "Apple Watch ସହ ବ୍ୟସ୍ତ ଯାତ୍ରୀମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଶବ୍ଦକୋଷ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ଖାତା ନାହିଁ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - ଉଇଜେଟ
 - Apple Watch
 - App Store · ₹ 999

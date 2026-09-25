@@ -2,7 +2,7 @@
 title: "paras ansioluettelon laatijasovellus uranvaihtajille 2026"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
+- Ei mainoksia
 - App Store · Ilmainen
 
 [Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

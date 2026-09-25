@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Tal i dag — 50 sprog, ægte dialoger | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Tal, når det gælder. Med DailyMate Lite øver du komplette replikskift i hverd
 
 - Børn & læring
 - Gratis at komme i gang
+- Ingen konto
+- Apple Watch
 - App Store · Gratis
 
 [Hent DailyMate Lite: Tal i dag i App Store](https://apps.apple.com/dk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

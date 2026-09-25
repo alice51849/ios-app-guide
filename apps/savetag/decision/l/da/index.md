@@ -2,7 +2,7 @@
 title: "SaveTag: AI-bogmærker — Gem links, læs dem senere | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Gem nu. Og læs det så rent faktisk senere. Du sender links til dig selv hele d
 
 - Produktivitet
 - Gratis at komme i gang
+- Ingen konto
+- Ingen reklamer
+- Ingen sporing
+- Privat / på enheden
+- Widget
 - App Store · Gratis
 
 [Hent SaveTag: AI-bogmærker i App Store](https://apps.apple.com/dk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

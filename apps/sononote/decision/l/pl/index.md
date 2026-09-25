@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do notatek głosowych podsumowująca spotkania na iPhone"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Po rozmowie nie chcesz surowego transkryptu — chcesz podsumowanie, zadania i s
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
+- Bez reklam
+- Bez śledzenia
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

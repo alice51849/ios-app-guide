@@ -2,7 +2,7 @@
 title: "bedste ordforrådsapp til travle pendlere med Apple Watch"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutt
 - Ingen konto
 - Ingen reklamer
 - Ingen sporing
+- Privat / på enheden
 - Widget
 - Apple Watch
 - App Store · 79,00 kr

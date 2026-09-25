@@ -2,7 +2,7 @@
 title: "구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - 유료 다운로드
 - 오프라인
 - 계정 없음
+- 광고 없음
+- 추적 없음
+- 프라이빗 / 기기 내
 - App Store · ￦7,700
 
 [앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "बच्चों के लिए सबसे अच्छा पूर्ण सुबह और रात की रूटीन ऐप"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - बच्चे और सीखना
 - भुगतान किया गया डाउनलोड
+- कोई खाता नहीं
 - कोई विज्ञापन नहीं
+- निजी / डिवाइस पर
 - App Store · ₹ 599
 
 [App Store पर Lumi Mission Planet Pro प्राप्त करें →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

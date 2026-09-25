@@ -2,7 +2,7 @@
 title: "સ્લીપ માટે શ્રેષ્ઠ વ્હાઇટ નોઈઝ એપ કોઈ સબ્સ્ક્રિપ્શન વગર"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - ઊંઘ અને ધ્યાન
 - મફત શરૂઆત
 - ઑફલાઇન
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
 [App Store પર Sereno મેળવો →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Aim990 Plus：英语模拟测验·限时 — 15分钟攻克七大题型 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - 儿童与学习
 - 付费下载
+- 离线
+- 无需账户
 - App Store · ¥38.00
 
 [在 App Store 获取 Aim990 Plus：英语模拟测验·限时](https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

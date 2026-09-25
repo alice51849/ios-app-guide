@@ -2,7 +2,7 @@
 title: "meilleure application de création de CV pour les reconversions professionnelles 2026"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Quand vous changez de domaine, le problème du CV est différent : votre expéri
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Aucun compte
+- Aucune publicité
 - App Store · Gratuit
 
 [Obtenez CV Desk sur l’App Store →](https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

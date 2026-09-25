@@ -2,7 +2,7 @@
 title: "millor app de temps per ajudar els pares a planificar activitats a l'aire lliure amb infants"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Els pares que planifiquen activitats a l'aire lliure necessiten més que la temp
 
 - Infants i aprenentatge
 - Inici gratuït
+- Sense compte
 - Sense anuncis
 - Sense seguiment
+- Privat / en el dispositiu
+- Widget
 - App Store · Gratis
 
 [Descarrega Lumi Weather a l'App Store →](https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

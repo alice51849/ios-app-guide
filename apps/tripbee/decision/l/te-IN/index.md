@@ -2,7 +2,7 @@
 title: "iPhone కోసం ఉత్తమ ట్రిప్ ఇటికరరీ ప్లానర్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ publisher: "Lumi Studio"
 - చెల్లింపు డౌన్లోడ్
 - ఆఫ్‌లైన్
 - ఖాతా అవసరం లేదు
+- ప్రకటనలు లేవు
+- ట్రాకింగ్ లేదు
 - గోప్యంగా / పరికరంలో
 - App Store · ₹ 599
 

@@ -2,7 +2,7 @@
 title: "适合家庭出行儿童的最佳旅行活动App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,9 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁
+- 离线
 - 无广告
+- 私密 / 设备本地
 
 Apple 中国大陆商店的公开查询未返回此 App，暂时无法确认可下载状态。这里保留产品介绍，不提供跨区下载链接。
 

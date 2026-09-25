@@ -2,7 +2,7 @@
 title: "iPhone کے لیے ایک آنے والے سفر کے لیے بہترین آسان سفر منصوبہ ساز ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - سفر
 - مفت آغاز
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
 - App Store · مفت
 
 [App Store سے TripBee Lite حاصل کریں →](https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

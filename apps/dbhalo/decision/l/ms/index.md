@@ -2,7 +2,7 @@
 title: "dB Halo: Meter aras bunyi — Dos hingar dan jurnal tidur | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Di rumah teres, ketika menaiki LRT, berhampiran tapak pembinaan atau semasa akti
 
 - Lagi
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
+- Peribadi / pada peranti
+- Widjet
+- Apple Watch
 - App Store · Percuma
 
 [Dapatkan dB Halo: Meter aras bunyi di App Store](https://apps.apple.com/my/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

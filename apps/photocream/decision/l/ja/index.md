@@ -2,7 +2,7 @@
 title: "iPhoneで旅行クリエイター向けの買い切りフィルム写真編集アプリおすすめ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 写真・ユーティリティ
 - 無料で開始・一度の購入でアンロック
+- アカウント不要
+- 広告なし
+- プライベート／端末内
 - App Store · 無料
 
 [App StoreでPhotoCreamを入手 →](https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

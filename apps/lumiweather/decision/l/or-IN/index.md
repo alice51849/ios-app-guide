@@ -2,7 +2,7 @@
 title: "ପିଲାମାନେ ସହିତ ବାହାରେ ଯିବା ପାଇଁ ଅଭିଭାବକମାନେ ଯୋଜନା କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ପୂର୍ଣ୍ଣ ଆବହା ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
+- ଉଇଜେଟ
 - App Store · ମାଗଣା
 
 [Lumi Weather ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

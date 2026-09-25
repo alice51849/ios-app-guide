@@ -2,7 +2,7 @@
 title: "bästa appen för att fixa suddiga bilder på barn på iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Barn står aldrig stilla, så mjuk fokus och kameraskakning är oundvikligt
 
 - Foto & verktyg
 - Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- Ingen spårning
 - Privat / på enheten
 - App Store · Gratis
 - ★ 5.0/5 · 1

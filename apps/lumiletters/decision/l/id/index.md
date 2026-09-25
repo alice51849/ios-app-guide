@@ -2,7 +2,7 @@
 title: "aplikasi game edukasi terbaik untuk anak tanpa iklan di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Untuk anak kecil, hal yang paling penting adalah tanpa iklan dan pengumpulan dat
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
 - Tanpa iklan
 - App Store · Gratis
 

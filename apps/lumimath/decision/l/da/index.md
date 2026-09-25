@@ -2,7 +2,7 @@
 title: "bedste matematikspil-app til børn til at opbygge logiske færdigheder på iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, ruml
 
 - Børn & læring
 - Gratis at komme i gang
+- Ingen konto
 - Ingen reklamer
 - App Store · Gratis
 

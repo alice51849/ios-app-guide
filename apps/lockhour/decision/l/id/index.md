@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah. Untuk itulah
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Tanpa iklan
+- Tanpa pelacakan
 - Privat / di perangkat
 - App Store · Gratis
 

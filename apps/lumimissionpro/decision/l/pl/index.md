@@ -2,7 +2,7 @@
 title: "najlepsza kompletna aplikacja do rutyny porannej i wieczornej dla dzieci"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Mycie zębów i rutyna przed snem często nie wychodzą w tym samym momencie ka�
 
 - Dzieci i nauka
 - Płatne do pobrania
+- Bez konta
 - Bez reklam
+- Prywatne / na urządzeniu
 - App Store · 29,99 zł
 
 [Pobierz Lumi Mission Planet Pro z App Store →](https://apps.apple.com/pl/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

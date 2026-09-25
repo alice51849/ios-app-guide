@@ -2,7 +2,7 @@
 title: "אפליקציה מלאה לשגרת בוקר ושינה לילדים"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ילדים ולמידה
 - הורדה בתשלום
+- ללא חשבון
 - ללא פרסומות
+- פרטי / במכשיר
 - App Store · ₪19.90
 
 [קבל את Lumi Mission Planet Pro ב-App Store →](https://apps.apple.com/il/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

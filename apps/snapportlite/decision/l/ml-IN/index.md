@@ -2,7 +2,7 @@
 title: "Snapport Lite: ഐഡി ഫോട്ടോ — Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പ�
 - ഫോട്ടോ & ഉപകരണം
 - സൗജന്യമായി ആരംഭിക്കുക
 - ഓഫ്‌ലൈൻ
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് Snapport Lite: ഐഡി ഫോട്ടോ നേടൂ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

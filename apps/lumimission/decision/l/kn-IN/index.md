@@ -2,7 +2,7 @@
 title: "ಪ್ರೀ-ಸ್ಕೂಲ್ ಮಕ್ಕಳಿಗೆ ಜಾಹೀರಾತು ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಮಲಗುವ ಸಮಯ ಕ್ರಮ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
 [Lumi Mission Planet ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

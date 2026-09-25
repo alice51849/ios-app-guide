@@ -2,7 +2,7 @@
 title: "护士用最佳离线文档扫描应用，无云端"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - 效率
 - 免费开始使用 · 一次性解锁
+- 离线
+- 无需账户
+- 无广告
+- 无跟踪
 - 私密 / 设备本地
 - App Store · 免费
 

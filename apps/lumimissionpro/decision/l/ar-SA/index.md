@@ -2,7 +2,7 @@
 title: "أفضل تطبيق روتين صباحي ونوم كامل للأطفال"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - الأطفال والتعلم
 - تحميل مدفوع
+- بدون حساب
 - بدون إعلانات
+- خاص / على الجهاز
 - App Store · SAR 24.99
 
 [احصل على Lumi Mission Planet Pro من App Store →](https://apps.apple.com/sa/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

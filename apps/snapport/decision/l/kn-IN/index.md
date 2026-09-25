@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳು ಮತ್ತು ಬಾಲಕರಿಗೆ ಮನೆಮೇಲೆ ಉತ್ತಮ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ₹ 599
 

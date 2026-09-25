@@ -2,7 +2,7 @@
 title: "പ്രസൂതികാലം കുട്ടികൾക്ക് പരസ്യങ്ങൾ ഇല്ലാത്ത മികച്ച ഉറക്കക്രമം അപ്ലിക്കേഷൻ"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - കുട്ടികൾ & പഠനം
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
 [Lumi Mission Planet App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

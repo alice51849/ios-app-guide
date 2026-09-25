@@ -2,7 +2,7 @@
 title: "BattAI: 배터리 상태 점수 — 규칙, 출처, 한계를 분명하게 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상
 
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 광고 없음
+- Apple Watch
 - App Store · 무료
 
 [App Store에서 BattAI: 배터리 상태 점수 받기](https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

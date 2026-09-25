@@ -2,7 +2,7 @@
 title: "aplikasi rutin pagi dan tidur lengkap terbaik untuk kanak-kanak"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Memberus gigi dan tidur sering gagal pada masa yang sama setiap malam: anak leti
 
 - Kanak-kanak & pembelajaran
 - Muat turun berbayar
+- Tiada akaun
 - Tiada iklan
+- Peribadi / pada peranti
 - App Store · RM29.90
 
 [Dapatkan Lumi Mission Planet Pro di App Store →](https://apps.apple.com/my/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

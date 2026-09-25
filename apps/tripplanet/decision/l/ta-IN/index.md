@@ -2,7 +2,7 @@
 title: "குடும்பப் பயணங்களில் குழந்தைகளுக்கான சிறந்த பயண செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - குழந்தைகள் & கற்றல்
 - இலவசமாக தொடங்கவும்
+- ஆஃப்லைன்
 - விளம்பரங்கள் இல்லை
+- தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
 [Trip Planet: Kids Quest-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Snapport Lite: Photo passeport — Photo passeport identité | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Réalisez des photos de passeport, visa et documents avec repèr
 - Photo & utilitaire
 - Gratuit au départ · déblocage unique
 - Hors ligne
+- Sans compte
+- Sans publicité
+- Sans suivi
+- Privé / sur l’appareil
 - App Store · Gratuit
 
 [Obtenir Snapport Lite: Photo passeport sur l'App Store](https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

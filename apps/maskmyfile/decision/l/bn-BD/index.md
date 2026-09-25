@@ -2,7 +2,7 @@
 title: "Mask My File: গোপন তথ্য মুছুন — শেয়ারের আগে গোপন তথ্য ঢাকুন | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - ছবি ও ইউটিলিটি
 - বিনামূল্যে শুরু
+- কোনও অ্যাকাউন্ট নেই
 - গোপনীয় / ডিভাইসে
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Mask My File: গোপন তথ্য মুছুন-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।

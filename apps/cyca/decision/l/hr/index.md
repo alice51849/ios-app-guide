@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za praćenje menstruacije bez potrebe za računom za iPhone"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za pra�
 
 - Zdravlje
 - Besplatno za početak
+- Izvan mreže
+- Bez računa
+- Bez oglasa
+- Bez praćenja
 - Privatno / na uređaju
 - App Store · Besplatno
 

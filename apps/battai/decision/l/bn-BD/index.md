@@ -2,7 +2,7 @@
 title: "BattAI: ব্যাটারির স্বাস্থ্য — স্পষ্ট নিয়ম, উৎস ও সীমা | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,8 @@ BattAI BattAI সর্বজনীন iOS API থেকে পাঁচটি �
 
 - আরও
 - বিনামূল্যে শুরু
+- কোনও বিজ্ঞাপন নেই
+- Apple Watch
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে BattAI: ব্যাটারির স্বাস্থ্য-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

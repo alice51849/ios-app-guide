@@ -2,7 +2,7 @@
 title: "नर्सों के लिए सर्वश्रेष्ठ ऑफ़लाइन दस्तावेज़ स्कैनर ऐप बिना क्लाउड के"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- ऑफ़लाइन
+- कोई खाता नहीं
+- कोई विज्ञापन नहीं
+- कोई ट्रैकिंग नहीं
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 

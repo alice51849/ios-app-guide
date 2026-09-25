@@ -2,7 +2,7 @@
 title: "BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、
 
 - その他
 - 無料で開始・一度の購入でアンロック
+- 広告なし
+- Apple Watch
 - App Store · 無料
 
 [App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

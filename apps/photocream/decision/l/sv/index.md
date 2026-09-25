@@ -2,7 +2,7 @@
 title: "bästa engångsbetalda filmfotoappen för reseinspirerade kreatörer på iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Resekreatörer behöver ett återkommande filmutseende som lägger till korn, ha
 
 - Foto & verktyg
 - Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- Privat / på enheten
 - App Store · Gratis
 
 [Hämta PhotoCream på App Store →](https://apps.apple.com/se/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

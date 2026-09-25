@@ -2,7 +2,7 @@
 title: "migliore app per monitorare il ciclo senza account richiesta per iPhone"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ In una categoria dove la sensibilità dei dati è tutto, il giusto monitor del c
 
 - Salute
 - Gratis per iniziare · sblocco unico
+- Offline
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
 - Privato / su dispositivo
 - App Store · Gratis
 - ★ 4.0/5 · 1

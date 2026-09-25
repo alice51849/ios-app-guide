@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za blokado družbenih omrežij med učenjem na iPhone"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Med izpiti volja ni orodje — trda časovno omejena blokada je. Prav zato LockH
 
 - Produktivnost
 - Brezplačen začetek
+- Brez računa
 - Brez oglasov
+- Brez sledenja
 - Zasebno / na napravi
 - App Store · Brezplačno
 

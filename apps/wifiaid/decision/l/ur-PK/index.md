@@ -2,7 +2,7 @@
 title: "WiFi Aid: نیٹ ورک مسائل تلاش — نیٹ ورک تشخیص اور ثبوت | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - تصویر اور سہولت
 - ادا شدہ ڈاؤن لوڈ
+- کوئی اکاؤنٹ نہیں
+- Apple Watch
 - App Store · Rs 1,700.00
 
 [App Store سے WiFi Aid: نیٹ ورک مسائل تلاش حاصل کریں](https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

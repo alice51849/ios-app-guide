@@ -2,7 +2,7 @@
 title: "Stay Clock: ಡೆಸ್ಕ್ ಗಡಿಯಾರ — ಸದಾ ಆನ್ ಸಮಯ ಮತ್ತು ಕ್ಯಾಲೆಂಡರ್ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock ನಿಮ್ಮ iPhone ಅಥವಾ iPad ಅನ್ನು ಕೋಣೆ
 
 - ಇನ್ನಷ್ಟು
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಆಫ್‌ಲೈನ್
+- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
+- ವಿಜೆಟ್
+- Apple Watch
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ Stay Clock: ಡೆಸ್ಕ್ ಗಡಿಯಾರ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

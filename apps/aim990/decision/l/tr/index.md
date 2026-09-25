@@ -2,7 +2,7 @@
 title: "iPhone için en iyi çevrimdışı TOEIC hazırlık uygulaması çalışma planı"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Bölüm 5 kısa görünebilir, ancak tamamlanmamış cümle soruları, dilbilgis
 
 - Eğitim
 - Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
+- Reklam yok
+- Gizli / cihazda
 - App Store · Ücretsiz
 
 [Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "mejor app para seguimiento de periodo sin cuenta requerida para iPhone"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ En una categoría donde la sensibilidad de datos es lo principal, el rastreador 
 
 - Salud
 - Gratis para empezar · desbloqueo único
+- Sin conexión
+- Sin cuenta
+- Sin anuncios
+- Sin rastreo
 - Privado / en el dispositivo
 - App Store · Gratis
 

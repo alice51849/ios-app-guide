@@ -2,7 +2,7 @@
 title: "η καλύτερη απλή εφαρμογή προγραμματισμού ταξιδιού για ένα επερχόμενο ταξίδι iPhone"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Ταξίδι
 - Δωρεάν για αρχή
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
 - App Store · Δωρεάν
 
 [Κατεβάστε το TripBee Lite από το App Store →](https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

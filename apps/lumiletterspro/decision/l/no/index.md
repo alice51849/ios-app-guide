@@ -2,7 +2,7 @@
 title: "beste komplette fonetikk-app for hjemmeundervisning og barnehageforberedelse"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Familier som forbereder barnehage trenger en komplett tidlig-lesesti som kobler 
 
 - Barn og læring
 - Betalt nedlasting
+- Frakoblet
 - Ingen annonser
+- Privat / på enheten
 - App Store · 99,00 kr
 
 [Få Lumi Letters Pro på App Store →](https://apps.apple.com/no/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

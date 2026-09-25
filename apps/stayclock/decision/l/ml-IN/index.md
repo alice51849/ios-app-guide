@@ -2,7 +2,7 @@
 title: "Stay Clock: മേശ ക്ലോക്ക് — എപ്പോഴുമുള്ള സമയവും കലണ്ടറും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock നിങ്ങളുടെ iPhone-നെയോ iPad-നെയോ, �
 
 - കൂടുതൽ
 - സൗജന്യമായി ആരംഭിക്കുക
+- ഓഫ്‌ലൈൻ
+- അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
+- വിഡ്ജറ്റ്
+- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് Stay Clock: മേശ ക്ലോക്ക് നേടൂ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

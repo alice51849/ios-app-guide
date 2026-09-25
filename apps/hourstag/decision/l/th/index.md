@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 
 - เงิน & การเดินทาง
 - ดาวน์โหลดแบบชำระเงิน
+- ไม่มีบัญชี
+- ไม่มีโฆษณา
 - ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฿199.00

@@ -2,7 +2,7 @@
 title: "mejor app de rutina para dormir para infantil sin anuncios"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Para infantil, una rutina para dormir funciona mejor cuando es corta, visual y l
 
 - Infantil y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
 - Sin anuncios
+- Sin seguimiento
+- Privado / en el dispositivo
 - App Store · Gratis
 
 [Consigue Lumi Mission Planet en el App Store →](https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

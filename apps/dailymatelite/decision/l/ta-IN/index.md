@@ -2,7 +2,7 @@
 title: "DailyMate Lite — தினமும் பேசும் பயிற்சி | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - குழந்தைகள் & கற்றல்
 - இலவசமாக தொடங்கவும்
+- கணக்கு இல்லை
+- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் DailyMate Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "millor editor de fotos de pel·lícula de pagament únic per a creadors de viatges a l'iPhone"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Els creadors de viatges necessiten un estil de pel·lícula repetible que afegei
 
 - Fotografia i utilitat
 - Inici gratuït
+- Sense compte
+- Sense anuncis
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Descarrega PhotoCream a l'App Store →](https://apps.apple.com/es/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

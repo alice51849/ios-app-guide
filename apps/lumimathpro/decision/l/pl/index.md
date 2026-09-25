@@ -2,7 +2,7 @@
 title: "najlepsza kompletna aplikacja do nauki matematyki dla przedszkolaków i wczesnych klas"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Kompletna aplikacja do nauki matematyki powinna sprawić, że liczenie, poczucie
 - Dzieci i nauka
 - Płatne do pobrania
 - Bez reklam
+- Prywatne / na urządzeniu
 - App Store · 39,99 zł
 
 [Pobierz Lumi Math Pro z App Store →](https://apps.apple.com/pl/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "beste complete fonetische app voor thuisonderwijs kleuterklas"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Gezinnen die zich voorbereiden op de kleuterklas hebben een compleet vroeg-leest
 
 - Kinderen & leren
 - Betaalde aanschaf
+- Offline
 - Geen advertenties
+- Privé / op apparaat
 - App Store · € 9,99
 
 [Lumi Letters Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

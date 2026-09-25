@@ -2,7 +2,7 @@
 title: "aplikasi aktivitas perjalanan terbaik untuk anak di liburan keluarga"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Orang tua yang bepergian dengan anak kecil butuh aktivitas yang membuat berkemas
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
 - Tanpa iklan
+- Privat / di perangkat
 - App Store · Gratis
 
 [Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/id/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "แอปกิจวัตรก่อนนอนสำหรับเด็กอนุบาลที่ไม่มีโฆษณาดีที่สุด"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - เด็ก & การเรียนรู้
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
 - ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
 [รับ Lumi Mission Planet ได้ที่ App Store →](https://apps.apple.com/th/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

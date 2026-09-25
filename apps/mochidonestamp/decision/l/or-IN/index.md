@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: ଶେଷ ଥର — କେବେ କରିଥିଲେ ମନେ ରଖନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - ଜୀବନଶୈଳୀ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
+- ଉଇଜେଟ
 - App Store · ମାଗଣା
 
 [App Store ରୁ Mochi DoneStamp: ଶେଷ ଥର ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

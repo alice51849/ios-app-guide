@@ -2,7 +2,7 @@
 title: "最佳無訂閱旅遊預算追蹤應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - 付費下載
 - 離線使用
 - 免帳號
+- 無廣告
+- 無追蹤
+- 隱私優先／裝置端
 - App Store · $150.00
 - ★ 5.0/5 · 1
 

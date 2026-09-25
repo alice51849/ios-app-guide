@@ -2,7 +2,7 @@
 title: "cel mai bun joc educațional pentru copii fără reclame pe iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Pentru un copil mic, factorul decisiv sunt reclamele și colectarea de date — 
 
 - Copii & învățare
 - Început gratuit
+- Offline
 - Fără reclame
 - App Store · Gratuit
 

@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator in teme — Pripomoček, orodja, zgodovina | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Kalkulator, ki ga boste res uporabljali, ker si zapomni misel za vsako številko
 
 - Več
 - Brezplačen začetek
+- Brez računa
+- Zasebno / na napravi
 - Gradnik
 - App Store · Brezplačno
 

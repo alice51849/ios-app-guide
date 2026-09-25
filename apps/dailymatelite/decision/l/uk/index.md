@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Живі фрази — 50 мов для впевнених розмов | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Діти та навчання
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
+- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте DailyMate Lite: Живі фрази з App Store](https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

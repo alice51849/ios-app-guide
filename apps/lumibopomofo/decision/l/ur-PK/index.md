@@ -2,7 +2,7 @@
 title: "iPhone پر بچوں کے لیے بہترین بوموفو ایپ تاکہ وہ ژوئین سیکھ سکیں"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - بچے اور سیکھنا
 - مفت آغاز
+- کوئی اکاؤنٹ نہیں
 - کوئی اشتہار نہیں
 - App Store · مفت
 

@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na pasové fotografie pre bábätká a batoľatá doma"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie mus�
 
 - Fotografia a nástroje
 - Platené stiahnutie
+- Bez účtu
+- Bez reklám
+- Bez sledovania
 - Súkromné / v zariadení
 - App Store · 6,99 €
 

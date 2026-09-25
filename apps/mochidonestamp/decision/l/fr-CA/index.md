@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp : Mémo — La date, toujours en mémoire | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Quand avez-vous changé le filtre de la fournaise, hivérisé le robinet extéri
 
 - Mode de vie
 - Gratuit au départ · déblocage unique
+- Hors ligne
+- Aucun compte
+- Aucune publicité
+- Aucun suivi
+- Privé / sur l'appareil
+- Widget
 - App Store · Gratuit
 
 [Obtenir Mochi DoneStamp : Mémo sur l'App Store](https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

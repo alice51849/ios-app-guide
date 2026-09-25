@@ -2,7 +2,7 @@
 title: "SaveTag: закладки з ШІ — Зберігай посилання, читай | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Продуктивність
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
+- Без реклами
+- Без відстеження
+- Приватно / на пристрої
+- Віджет
 - App Store · Безкоштовно
 
 [Завантажте SaveTag: закладки з ШІ з App Store](https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

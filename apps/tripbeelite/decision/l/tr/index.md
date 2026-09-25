@@ -2,7 +2,7 @@
 title: "Yaklaşan tek bir seyahat için en iyi basit seyahat planlayıcı uygulaması iPhone"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Yaklaşan tek bir yolculuğu planlıyorsanız, o seyahat için sakin bir zaman �
 
 - Seyahat
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
+- Reklam yok
 - App Store · Ücretsiz
 
 [TripBee Lite'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

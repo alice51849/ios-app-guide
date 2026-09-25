@@ -2,7 +2,7 @@
 title: "najlepsza kompletna aplikacja fonetyczna do przygotowania przedszkolnego w edukacji domowej"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Rodziny przygotowujące się do przedszkola potrzebują kompletnej ścieżki wcz
 
 - Dzieci i nauka
 - Płatne do pobrania
+- Offline
 - Bez reklam
+- Prywatne / na urządzeniu
 - App Store · 39,99 zł
 
 [Pobierz Lumi Letters Pro z App Store →](https://apps.apple.com/pl/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

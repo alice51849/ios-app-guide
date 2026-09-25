@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk menyekat media sosial semasa belajar iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Semasa peperiksaan, kekuatan kehendak bukan alatnya — sekatan masa keras adala
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
 - Tiada iklan
+- Tiada penjejakan
 - Peribadi / pada peranti
 - App Store · Percuma
 

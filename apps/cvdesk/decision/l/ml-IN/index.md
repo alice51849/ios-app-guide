@@ -2,7 +2,7 @@
 title: "2026-ലെ കരിയർ മാറ്റം ചെയ്യുന്നവർക്കുള്ള മികച്ച റിസ്യൂം ബിൽഡർ ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
 [App Store-ൽ CV Desk നേടുക →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

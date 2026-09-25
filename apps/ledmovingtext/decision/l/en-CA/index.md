@@ -2,7 +2,7 @@
 title: "led scrolling text app for concerts and airport pickups"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/en-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ LED Moving Text — Cue Flow handles moments that need more than one sign. Free 
 
 - More
 - Free to start · one-time unlock
+- Offline
+- No account
+- No ads
+- No tracking
+- Private / on-device
 - App Store · Free
 
 [Get LED Moving Text on the App Store →](https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

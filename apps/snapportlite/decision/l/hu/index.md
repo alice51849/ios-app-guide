@@ -2,7 +2,7 @@
 title: "Snapport Lite: Igazolványkép — Útlevél vízum igazolvány | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irány�
 - Fotó & segédprogram
 - Ingyenes kezdés
 - Offline
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
 - App Store · Ingyenes
 
 [Töltse le a(z) Snapport Lite: Igazolványkép appot az App Store-ból](https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

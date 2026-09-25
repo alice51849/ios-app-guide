@@ -2,7 +2,7 @@
 title: "dB Halo: Lydniveaumåler — Decibel, støj og spektrum | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Se med det samme, hvor højt lydniveauet er omkring dig, hvilke frekvenser der d
 
 - Mere
 - Gratis at komme i gang
+- Ingen konto
+- Ingen reklamer
+- Ingen sporing
+- Privat / på enheden
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Hent dB Halo: Lydniveaumåler i App Store](https://apps.apple.com/dk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

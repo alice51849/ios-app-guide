@@ -2,7 +2,7 @@
 title: "Snapport Lite: Evde vesikalık — Vesikalık fotoğrafı evde çekin | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Boyut, arka plan ve baskı kılavuzlarıyla pasaport, vize ve ki
 - Fotoğraf & yardımcı
 - Başlangıçta ücretsiz · tek seferlik açma
 - Çevrimdışı
+- Hesap yok
+- Reklam yok
+- Takip yok
+- Gizli / cihazda
 - App Store · Ücretsiz
 
 [Snapport Lite: Evde vesikalık uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

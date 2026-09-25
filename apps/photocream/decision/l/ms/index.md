@@ -2,7 +2,7 @@
 title: "penyunting foto filem bayar sekali terbaik untuk pencipta kandungan perjalanan di iphone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Pencipta kandungan pelancongan perlukan gaya filem yang boleh diulang dengan but
 
 - Foto & utiliti
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
+- Tiada iklan
+- Peribadi / pada peranti
 - App Store · Percuma
 
 [Dapatkan PhotoCream di App Store →](https://apps.apple.com/my/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "DailyMate: জীবনের বাক্য — ৪৭ ভাষায় বাস্তব কথোপকথন | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - শিশু ও শেখা
 - পেইড ডাউনলোড
+- উইজেট
 - Apple Watch
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে DailyMate: জীবনের বাক্য-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।

@@ -2,7 +2,7 @@
 title: "SaveTag: markah buku AI — Simpan tautan, baca nanti | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Simpan sekarang. Dan kali ini benar-benar dibaca. Seharian kamu mengirim tautan 
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Tanpa iklan
+- Tanpa pelacakan
+- Privat / di perangkat
+- Widget
 - App Store · Gratis
 
 [Dapatkan SaveTag: markah buku AI di App Store](https://apps.apple.com/id/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

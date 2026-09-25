@@ -2,7 +2,7 @@
 title: "ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứ
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
+- Apple Watch
 - App Store · Miễn phí
 - ★ 1.0/5 · 1
 

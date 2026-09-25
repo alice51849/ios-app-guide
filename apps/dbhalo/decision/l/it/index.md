@@ -2,7 +2,7 @@
 title: "dB Halo: Fonometro — Spettro, dose e sonno | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo trasforma iPhone o iPad in un fonometro completo, con elaborazione inter
 
 - Altro
 - Gratis per iniziare · sblocco unico
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
+- Privato / su dispositivo
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Scarica dB Halo: Fonometro sull'App Store](https://apps.apple.com/it/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "BattAI: बॅटरी आरोग्य गुण — स्पष्ट नियम, स्रोत आणि मर्यादा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI सार्वजनिक iOS API मधून 5 मूल्य
 
 - अधिक
 - सुरुवात करण्यासाठी मोफत
+- जाहिराती नाहीत
+- Apple Watch
 - App Store · मोफत
 
 [App Store वरून BattAI: बॅटरी आरोग्य गुण मिळवा](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

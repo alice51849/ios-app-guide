@@ -2,7 +2,7 @@
 title: "bästa appen för passfoto för bebisar och småbarn hemma"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ För bebisens passfoto får ingen annan synas och bakgrunden måste vara enfärg
 
 - Foto & verktyg
 - Betald nedladdning
+- Inget konto
+- Inga annonser
+- Ingen spårning
 - Privat / på enheten
 - App Store · 79,00 kr
 

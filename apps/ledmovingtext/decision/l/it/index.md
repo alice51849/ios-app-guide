@@ -2,7 +2,7 @@
 title: "LED Moving Text — Insegna luminosa scorrevole | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Scrivi una frase e alza l'iPhone. Dal fondo del parterre, dall'altra parte della
 
 - Altro
 - Gratis per iniziare · sblocco unico
+- Offline
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
+- Privato / su dispositivo
 - App Store · Gratis
 
 [Scarica LED Moving Text sull'App Store](https://apps.apple.com/it/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

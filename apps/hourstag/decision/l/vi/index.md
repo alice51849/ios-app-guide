@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 
 - Tiền & du lịch
 - Tải xuống trả phí
+- Không tài khoản
+- Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · 149.000đ

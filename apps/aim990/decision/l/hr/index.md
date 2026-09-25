@@ -2,7 +2,7 @@
 title: "najbolja TOEIC pripremna aplikacija za iPhone s offline planom učenja"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme 
 
 - Obrazovanje
 - Besplatno za početak
+- Izvan mreže
+- Bez oglasa
+- Privatno / na uređaju
 - App Store · Besplatno
 
 [Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

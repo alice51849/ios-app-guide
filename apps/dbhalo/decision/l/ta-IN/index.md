@@ -2,7 +2,7 @@
 title: "dB Halo: ஒலி அளவுமானி — நிறமாலை & இரைச்சல் அளவு | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - மேலும்
 - இலவசமாக தொடங்கவும்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
+- விட்ஜெட்
+- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் dB Halo: ஒலி அளவுமானி-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

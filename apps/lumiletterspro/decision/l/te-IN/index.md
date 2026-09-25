@@ -2,7 +2,7 @@
 title: "హోంస్కూల్ కిండర్‌గార్టెన్ ప్రిప్‌కు పూర్తి ఫోనిక్స్ యాప్‌లో ఉత్తమం"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - చెల్లింపు డౌన్లోడ్
+- ఆఫ్‌లైన్
 - ప్రకటనలు లేవు
+- గోప్యంగా / పరికరంలో
 - App Store · ₹ 999
 
 [Lumi Letters Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

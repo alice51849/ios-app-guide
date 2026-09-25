@@ -2,7 +2,7 @@
 title: "najboljša celovita aplikacija za jutranjo in večerno rutino za otroke"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - Otroci in učenje
 - Plačljiv prenos
+- Brez računa
 - Brez oglasov
+- Zasebno / na napravi
 - App Store · 6,99 €
 
 [Pridobite Lumi Mission Planet Pro v trgovini App Store →](https://apps.apple.com/si/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

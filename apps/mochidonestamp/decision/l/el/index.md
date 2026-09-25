@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Τελευταία — Θυμήσου πότε το έκανες | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - Τρόπος ζωής
 - Δωρεάν για αρχή
+- Εκτός σύνδεσης
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
+- Γραφικό στοιχείο
 - App Store · Δωρεάν
 
 [Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store](https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

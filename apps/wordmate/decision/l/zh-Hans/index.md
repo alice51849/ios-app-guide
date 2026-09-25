@@ -2,7 +2,7 @@
 title: "适合通勤族和Apple Watch用户的最佳词汇App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - 无需账户
 - 无广告
 - 无跟踪
+- 私密 / 设备本地
 - 小组件
 - Apple Watch
 - App Store · ¥58.00

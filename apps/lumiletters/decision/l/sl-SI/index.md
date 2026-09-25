@@ -2,7 +2,7 @@
 title: "najboljša izobraževalna igra za otroke brez oglasov na iPhonu"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Za majhnega otroka so odločilni oglasi in zbiranje podatkov — učna aplikacij
 
 - Otroci in učenje
 - Brezplačen začetek
+- Brez povezave
 - Brez oglasov
 - App Store · Brezplačno
 

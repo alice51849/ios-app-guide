@@ -2,7 +2,7 @@
 title: "BattAI: Pil sağlığı puanı — Açık kurallar, kaynaklar ve sınırlar | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düze
 
 - Daha fazla
 - Başlangıçta ücretsiz · tek seferlik açma
+- Reklam yok
+- Apple Watch
 - App Store · Ücretsiz
 
 [BattAI: Pil sağlığı puanı uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

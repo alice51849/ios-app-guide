@@ -2,7 +2,7 @@
 title: "melhor app completo de rotina matinal e noturna para crianças"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Escovar os dentes e dormir costumam falhar no mesmo momento toda noite: a crian�
 
 - Infantil e aprendizado
 - Download pago
+- Sem conta
 - Sem anúncios
+- Privado / no dispositivo
 - App Store · R$ 39,90
 
 [Baixe Lumi Mission Planet Pro na App Store →](https://apps.apple.com/br/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

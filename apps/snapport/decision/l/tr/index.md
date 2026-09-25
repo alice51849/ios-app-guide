@@ -2,7 +2,7 @@
 title: "bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıd�
 
 - Fotoğraf & yardımcı
 - Ücretli indirme
+- Hesap yok
+- Reklam yok
+- Takip yok
 - Gizli / cihazda
 - App Store · ₺299,99
 

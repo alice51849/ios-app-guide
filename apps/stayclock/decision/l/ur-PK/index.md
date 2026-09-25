@@ -2,7 +2,7 @@
 title: "Stay Clock: ڈیسک گھڑی — ہمیشہ روشن وقت اور کیلنڈر | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock آپ کے آئی فون یا آئی پیڈ کو ایک ایسی ہم�
 
 - مزید
 - مفت آغاز
+- آف لائن
+- کوئی اکاؤنٹ نہیں
 - کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
+- وجیٹ
+- Apple Watch
 - App Store · مفت
 
 [App Store سے Stay Clock: ڈیسک گھڑی حاصل کریں](https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

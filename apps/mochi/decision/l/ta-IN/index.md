@@ -2,7 +2,7 @@
 title: "சந்தா இல்லாத சிறந்த எளிய To Do பட்டியல் பயன்பாடு iPhone-க்கு"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும்
 - விளம்பரங்கள் இல்லை
+- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் Mochi பெறவும் →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

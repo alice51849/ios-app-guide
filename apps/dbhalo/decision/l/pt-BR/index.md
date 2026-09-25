@@ -2,7 +2,7 @@
 title: "dB Halo: Decibelímetro — Espectro, dose de ruído e FFT | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ No celular ou no iPad, use o dB Halo como medidor de decibéis em condomínios, 
 
 - Mais
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Sem anúncios
+- Sem rastreamento
+- Privado / no dispositivo
+- Widget
+- Apple Watch
 - App Store · Grátis
 
 [Baixe dB Halo: Decibelímetro na App Store](https://apps.apple.com/br/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

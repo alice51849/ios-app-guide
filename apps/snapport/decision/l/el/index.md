@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή φωτογραφίας διαβατηρίου για μωρά και νήπια στο σπίτι"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Φωτογραφία & βοηθητικά
 - Λήψη με χρέωση
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
 - App Store · 6,99 €
 

@@ -2,7 +2,7 @@
 title: "dB Halo: Sonómetro — Decibelios, espectro y dosis | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo muestra de un vistazo el nivel de presión sonora en un piso, una obra, 
 
 - Más
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
+- Sin anuncios
+- Sin seguimiento
+- Privado / en el dispositivo
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Consigue dB Halo: Sonómetro en el App Store](https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

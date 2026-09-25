@@ -2,7 +2,7 @@
 title: "BattAI: Skor kesihatan bateri — Peraturan, sumber dan batas yang jelas | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI menggunakan lima nilai daripada API awam iOS: aras bateri, keadaan
 
 - Lagi
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada iklan
+- Apple Watch
 - App Store · Percuma
 
 [Dapatkan BattAI: Skor kesihatan bateri di App Store](https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

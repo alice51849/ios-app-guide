@@ -2,7 +2,7 @@
 title: "beste app voor bedtijdroutine voor kleuters zonder reclame"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Voor een kleuter werkt een bedtijdroutine het beste als deze kort, visueel en vo
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
 - Geen advertenties
+- Geen tracking
+- Privé / op apparaat
 - App Store · Gratis
 
 [Download Lumi Mission Planet in de App Store →](https://apps.apple.com/nl/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

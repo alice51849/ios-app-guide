@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație cu activități de călătorie pentru copii în excursii de familie"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Părinții care călătoresc cu copii mici au nevoie de activități care transf
 
 - Copii & învățare
 - Început gratuit
+- Offline
 - Fără reclame
+- Privat / pe dispozitiv
 - App Store · Gratuit
 
 [Descarcă Lumi Trip Planet din App Store →](https://apps.apple.com/ro/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

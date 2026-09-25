@@ -2,7 +2,7 @@
 title: "bedste læringsspil-app til børn uden reklamer på iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ For et lille barn er afgørende ingen reklamer og ingen dataindsamling — en l�
 
 - Børn & læring
 - Gratis at komme i gang
+- Offline
 - Ingen reklamer
 - App Store · Gratis
 

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za glasovne zapiske, ki povzame sestanke na iPhonu"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nad
 
 - Produktivnost
 - Brezplačen začetek
+- Brez računa
+- Brez oglasov
+- Brez sledenja
 - Zasebno / na napravi
 - App Store · Brezplačno
 

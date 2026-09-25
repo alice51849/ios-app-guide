@@ -2,7 +2,7 @@
 title: "BattAI: Akun kuntotulos — Selkeät säännöt, lähteet ja rajat | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, l
 
 - Lisää
 - Ilmainen aloitus
+- Ei mainoksia
+- Apple Watch
 - App Store · Ilmainen
 
 [Lataa BattAI: Akun kuntotulos App Storesta](https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

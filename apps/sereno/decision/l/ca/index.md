@@ -2,7 +2,7 @@
 title: "Millor app de soroll blanc per adormir-se sense subscripció"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxan
 - Son i concentració
 - Inici gratuït
 - Fora de línia
+- Sense compte
 - Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Descarrega Sereno a l’App Store →](https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

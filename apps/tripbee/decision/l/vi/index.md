@@ -2,7 +2,7 @@
 title: "ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành d�
 - Tải xuống trả phí
 - Ngoại tuyến
 - Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · 199.000đ
 

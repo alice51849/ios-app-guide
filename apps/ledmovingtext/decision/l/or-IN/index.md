@@ -2,7 +2,7 @@
 title: "LED Moving Text — ସ୍କ୍ରିନରେ ଚାଲୁଥିବା ଫଳକ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - ଅଧିକ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରୁ LED Moving Text ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

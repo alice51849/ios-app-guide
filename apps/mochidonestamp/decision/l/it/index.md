@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Ultima volta — Ricorda quando l’hai fatto | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Quando hai cambiato le lenzuola, annaffiato una pianta, chiamato la famiglia, sa
 
 - Stile di vita
 - Gratis per iniziare · sblocco unico
+- Offline
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
+- Privato / su dispositivo
+- Widget
 - App Store · Gratis
 
 [Scarica Mochi DoneStamp: Ultima volta sull'App Store](https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

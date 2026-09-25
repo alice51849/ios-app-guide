@@ -2,7 +2,7 @@
 title: "Snapport Lite: Slika za osebno — Ustvari ID fotografije doma | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo
 - Fotografija in pripomočki
 - Brezplačen začetek
 - Brez povezave
+- Brez računa
+- Brez oglasov
+- Brez sledenja
+- Zasebno / na napravi
 - App Store · Brezplačno
 
 [Prenesite Snapport Lite: Slika za osebno iz trgovine App Store](https://apps.apple.com/si/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

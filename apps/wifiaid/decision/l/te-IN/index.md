@@ -2,7 +2,7 @@
 title: "WiFi Aid: నెట్వర్క్ సమస్య — నెట్వర్క్ నిర్ధారణ & సాక్ష్యం | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ఫోటో & ఉపకరణం
 - చెల్లింపు డౌన్లోడ్
+- ఖాతా అవసరం లేదు
+- Apple Watch
 - App Store · ₹ 599
 
 [App Store నుంచి WiFi Aid: నెట్వర్క్ సమస్య పొందండి](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

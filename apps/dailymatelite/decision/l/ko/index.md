@@ -2,7 +2,7 @@
 title: "DailyMate Lite: 바로 쓰는 한마디 — 50개 언어 상황별 회화 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
+- Apple Watch
 - App Store · 무료
 
 [App Store에서 DailyMate Lite: 바로 쓰는 한마디 받기](https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

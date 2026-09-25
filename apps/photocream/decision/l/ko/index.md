@@ -2,7 +2,7 @@
 title: "아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 사진 & 유틸리티
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
+- 광고 없음
+- 프라이빗 / 기기 내
 - App Store · 무료
 
 [App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

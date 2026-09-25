@@ -2,7 +2,7 @@
 title: "แอปติดตามงบประมาณการเดินทางที่ดีที่สุด ไม่มีการสมัครสมาชิกสำหรับ iPhone"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - ดาวน์โหลดแบบชำระเงิน
 - ออฟไลน์
 - ไม่มีบัญชี
+- ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฿199.00
 
 [รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

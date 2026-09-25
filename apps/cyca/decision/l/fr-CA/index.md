@@ -2,7 +2,7 @@
 title: "meilleure application de suivi des règles sans compte requis iPhone"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Dans une catégorie où la sensibilité des données est primordiale, le bon sui
 
 - Santé
 - Gratuit au départ · déblocage unique
+- Hors ligne
+- Aucun compte
+- Aucune publicité
+- Aucun suivi
 - Privé / sur l'appareil
 - App Store · Gratuit
 

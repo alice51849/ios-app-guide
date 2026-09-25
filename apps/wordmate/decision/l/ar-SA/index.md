@@ -2,7 +2,7 @@
 title: "أفضل تطبيق مفردات للمسافرين المشغولين مع Apple Watch"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - بدون حساب
 - بدون إعلانات
 - بدون تتبع
+- خاص / على الجهاز
 - عنصر واجهة
 - Apple Watch
 - App Store · SAR 39.99

@@ -2,7 +2,7 @@
 title: "BattAI: Состояние батареи — Понятные правила, источники и ограничения | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI использует пять значений из публичн
 
 - Ещё
 - Бесплатно начать · разовая разблокировка
+- Без рекламы
+- Apple Watch
 - App Store · Бесплатно
 - ★ 3.0/5 · 1
 

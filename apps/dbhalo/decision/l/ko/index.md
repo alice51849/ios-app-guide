@@ -2,7 +2,7 @@
 title: "dB Halo: 소음 측정기 — 노출량·주파수·수면 일지 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
+- 광고 없음
+- 추적 없음
+- 프라이빗 / 기기 내
+- 위젯
+- Apple Watch
 - App Store · 무료
 
 [App Store에서 dB Halo: 소음 측정기 받기](https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

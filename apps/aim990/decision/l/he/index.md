@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר להכנה למבחן TOEIC עם תוכנית לימוד לא מקוונת לאייפון"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - חינוך
 - התחלה ללא תשלום
+- לא מקוון
+- ללא פרסומות
+- פרטי / במכשיר
 - App Store · בחינם
 
 [קבל את Aim990 ב-App Store →](https://apps.apple.com/il/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

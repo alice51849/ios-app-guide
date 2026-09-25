@@ -2,7 +2,7 @@
 title: "aplikasi game matematika terbaik untuk anak membangun keterampilan logika di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Aplikasi matematika anak terbaik melatih penalaran — pola, urutan, pemikiran s
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Tanpa iklan
 - App Store · Gratis
 

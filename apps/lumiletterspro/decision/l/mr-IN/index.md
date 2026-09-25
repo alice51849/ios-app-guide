@@ -2,7 +2,7 @@
 title: "होमस्कूल किंडरगार्टन तयारीसाठी सर्वोत्तम पूर्ण फोनीक्स अनुप्रयोग"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - मुलं आणि शिक्षण
 - पैसे देऊन डाउनलोड करा
+- ऑफलाइन
 - जाहिराती नाहीत
+- खाजगी / उपकरणावर
 - App Store · ₹ 999
 
 [Lumi Letters Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
+- Tiện ích
+- Apple Watch
 - App Store · Miễn phí
 
 [Tải dB Halo: Máy đo mức âm thanh trên App Store](https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

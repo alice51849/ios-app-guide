@@ -2,7 +2,7 @@
 title: "बच्चों के साथ बाहर समय प्लान करने के लिए सबसे अच्छा मौसम ऐप"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - बच्चे और सीखना
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- कोई खाता नहीं
 - कोई विज्ञापन नहीं
 - कोई ट्रैकिंग नहीं
+- निजी / डिवाइस पर
+- विजेट
 - App Store · मुफ़्त
 
 [App Store पर Lumi Weather प्राप्त करें →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

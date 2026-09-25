@@ -2,7 +2,7 @@
 title: "Stay Clock: डेस्क घड्याळ — नेहमी सुरू वेळ व कॅलेंडर | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock तुमच्या iPhone किंवा iPad ला खोली
 
 - अधिक
 - सुरुवात करण्यासाठी मोफत
+- ऑफलाइन
+- खाते नाही
 - जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
+- विजेट
+- Apple Watch
 - App Store · मोफत
 
 [App Store वरून Stay Clock: डेस्क घड्याळ मिळवा](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

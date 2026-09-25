@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Ordena captures i cerca text | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Les teves captures, ordenades Troba, resol i neteja cada captura. Les 50 capture
 
 - Fotografia i utilitat
 - Inici gratuït
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Descarrega ShotInbox AI: Sort Screenshots a l’App Store](https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "LED Moving Text — સ્ક્રીન પર ચાલતું બોર્ડ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - વધુ
 - મફત શરૂઆત
+- ઑફલાઇન
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
 [App Store પરથી LED Moving Text મેળવો](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

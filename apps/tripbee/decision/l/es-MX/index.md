@@ -2,7 +2,7 @@
 title: "mejor app para planificar itinerarios de viaje para iPhone"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Una buena app de itinerarios convierte un viaje desordenado en una línea de tie
 - Descarga de pago
 - Sin conexión
 - Sin cuenta
+- Sin anuncios
+- Sin rastreo
 - Privado / en el dispositivo
 - App Store · $129.00
 

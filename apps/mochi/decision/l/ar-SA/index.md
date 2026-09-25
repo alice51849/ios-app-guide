@@ -2,7 +2,7 @@
 title: "أفضل تطبيق قائمة مهام بسيط على آيفون بدون اشتراك"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - الإنتاجية
 - بدء مجاني · فتح مرة واحدة
 - بدون إعلانات
+- Apple Watch
 - App Store · مجاني
 
 [احصل على Mochi من متجر التطبيقات →](https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

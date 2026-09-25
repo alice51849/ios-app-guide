@@ -2,7 +2,7 @@
 title: "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
 - 광고 없음
 - 추적 없음
+- 프라이빗 / 기기 내
+- 위젯
 - App Store · 무료
 
 [App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

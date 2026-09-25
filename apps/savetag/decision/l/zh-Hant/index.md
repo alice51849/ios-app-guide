@@ -2,7 +2,7 @@
 title: "SaveTag:AI 連結收藏 — 稍後閱讀,自動分類整理 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - 效率工具
 - 免費開始 · 一次性解鎖
+- 免帳號
+- 無廣告
+- 無追蹤
+- 隱私優先／裝置端
+- 主畫面小工具
 - App Store · 免費
 
 [在 App Store 取得 SaveTag:AI 連結收藏](https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

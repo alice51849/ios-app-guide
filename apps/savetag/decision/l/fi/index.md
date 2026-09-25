@@ -2,7 +2,7 @@
 title: "SaveTag: tekoälykirjanmerkit — Tallenna linkit, lue myöhemmin | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Tallenna nyt. Lue oikeasti myöhemmin. Lähetät itsellesi linkkejä pitkin päi
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
+- Ei mainoksia
+- Ei seurantaa
+- Yksityinen / laitteella
+- Widget
 - App Store · Ilmainen
 
 [Lataa SaveTag: tekoälykirjanmerkit App Storesta](https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

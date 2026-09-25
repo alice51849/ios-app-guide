@@ -2,7 +2,7 @@
 title: "OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ — ਨੋਟਾਂ ਤੋਂ ਸ਼ਾਨਦਾਰ ਪੇਸ਼ਕਾਰੀ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ਉਤਪਾਦਕਤਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਆਫਲਾਈਨ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
+- ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

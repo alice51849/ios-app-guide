@@ -2,7 +2,7 @@
 title: "beste engangsbetalte filmfoto-redigeringsapp for reiseskapere på iPhone"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Reiseskapere trenger et gjentakbart filmutseende som gir korn, halering og farge
 
 - Foto og verktøy
 - Gratis å starte
+- Ingen konto
+- Ingen annonser
+- Privat / på enheten
 - App Store · Gratis
 
 [Få PhotoCream på App Store →](https://apps.apple.com/no/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

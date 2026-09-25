@@ -2,7 +2,7 @@
 title: "Wordmate Lite: szótanulás — Napi öt szó egyetlen percben | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Szeretnél végre haladni egy nyelvvel, de estére megint elfogy a nap, és egye
 - Gyerekek & tanulás
 - Ingyenes kezdés
 - Offline
+- Nincs fiók
+- Nincs követés
+- Privát / eszközön tárolt
 - App Store · Ingyenes
 
 [Töltse le a(z) Wordmate Lite: szótanulás appot az App Store-ból](https://apps.apple.com/hu/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "SaveTag: AI ബുക്ക്മാർക്ക് — ലിങ്കുകൾ സേവ് ചെയ്യൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
+- വിഡ്ജറ്റ്
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് SaveTag: AI ബുക്ക്മാർക്ക് നേടൂ](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

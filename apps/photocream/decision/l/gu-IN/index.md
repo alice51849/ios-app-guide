@@ -2,7 +2,7 @@
 title: "iPhone પર ટ્રાવેલ ક્રિએટર્સ માટે શ્રેષ્ઠ એકવાર ચૂકવણી કરવાનું ફિલ્મ ફોટો એડિટર"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ફોટો અને ઉપયોગિતા
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
 [App Store પર PhotoCream મેળવો →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

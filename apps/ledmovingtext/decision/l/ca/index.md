@@ -2,7 +2,7 @@
 title: "LED Moving Text — Rètol lluminós en moviment | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Escriu una frase i aixeca l'iPhone. Des del fons de la pista, a l'altra punta de
 
 - Més
 - Inici gratuït
+- Fora de línia
+- Sense compte
+- Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Descarrega LED Moving Text a l’App Store](https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

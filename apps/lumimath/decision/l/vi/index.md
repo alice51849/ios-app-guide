@@ -2,7 +2,7 @@
 title: "ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - Trẻ em & học tập
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
 - Không quảng cáo
 - App Store · Miễn phí
 

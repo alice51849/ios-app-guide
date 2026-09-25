@@ -2,7 +2,7 @@
 title: "OnePage PPT: slide com IA — Suas anotações em um slide | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Transforme aquele paredão de texto em UM slide que as pessoas realmente leem. O
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Offline
+- Sem conta
+- Sem rastreamento
+- Privado / no dispositivo
 - App Store · Grátis
 
 [Baixe OnePage PPT: slide com IA na App Store](https://apps.apple.com/br/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

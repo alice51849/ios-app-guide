@@ -2,7 +2,7 @@
 title: "유치원 및 초등 저학년을 위한 최고의 완전한 수학 학습 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - 어린이 & 학습
 - 유료 다운로드
 - 광고 없음
+- 프라이빗 / 기기 내
 - App Store · ￦15,000
 
 [App Store에서 Lumi Math Pro 다운로드 →](https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

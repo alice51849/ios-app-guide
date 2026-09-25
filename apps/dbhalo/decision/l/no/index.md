@@ -2,7 +2,7 @@
 title: "dB Halo: Lydnivåmåler — Spekter, støydose og søvn | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Se med én gang hvor høyt lydnivået er rundt deg, hvilke frekvenser som domine
 
 - Mer
 - Gratis å starte
+- Ingen konto
+- Ingen annonser
+- Ingen sporing
+- Privat / på enheten
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Last ned dB Halo: Lydnivåmåler fra App Store](https://apps.apple.com/no/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

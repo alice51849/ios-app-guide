@@ -2,7 +2,7 @@
 title: "Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ — ಇಂಗ್ಲಿಷ್ ಒತ್ತಡ ಅಭ್ಯಾಸ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus ವಯಸ್ಕರು ತಮ್ಮ ಇಂಗ್ಲಿಷ್ ಕೇ�
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
+- ಆಫ್‌ಲೈನ್
+- ಖಾತೆ ಇಲ್ಲ
 - App Store · ₹ 599
 
 [App Store ನಲ್ಲಿ Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "BattAI: Điểm tình trạng pin — Quy tắc, nguồn và giới hạn rõ ràng | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạ
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
+- Không quảng cáo
+- Apple Watch
 - App Store · Miễn phí
 
 [Tải BattAI: Điểm tình trạng pin trên App Store](https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

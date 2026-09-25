@@ -2,7 +2,7 @@
 title: "BattAI: Стан батареї — Чіткі правила, джерела й обмеження | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI використовує п’ять значень із публ�
 
 - Ще
 - Безкоштовно для початку · разове розблокування
+- Без реклами
+- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте BattAI: Стан батареї з App Store](https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

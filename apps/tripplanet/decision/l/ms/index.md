@@ -2,7 +2,7 @@
 title: "apl aktiviti perjalanan terbaik untuk kanak-kanak semasa percutian keluarga"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengema
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Luar talian
 - Tiada iklan
+- Peribadi / pada peranti
 - App Store · Percuma
 
 [Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

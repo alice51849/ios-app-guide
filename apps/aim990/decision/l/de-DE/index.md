@@ -2,7 +2,7 @@
 title: "beste TOEIC-Vorbereitungs-App mit Offline-Lernplan für iPhone"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Teil 5 wirkt kurz, aber diese Lückensatzfragen können Zeit kosten, wenn Gramma
 
 - Bildung
 - Kostenloser Einstieg · einmalige Freischaltung
+- Offline
+- Keine Werbung
+- Privat / auf dem Gerät
 - App Store · Kostenlos
 
 [Aim990 im App Store herunterladen →](https://apps.apple.com/de/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

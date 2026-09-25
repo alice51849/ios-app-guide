@@ -2,7 +2,7 @@
 title: "HoursTag: Godziny zakupu — Budżet, wydatki, oszczędzanie | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Ile to naprawdę kosztuje? Nie w złotówkach – w godzinach twojego życia.
 
 - Finanse i podróże
 - Płatne do pobrania
+- Bez konta
+- Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu
 - App Store · 24,99 zł

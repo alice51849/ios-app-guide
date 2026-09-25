@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test z angličtiny — Istota pod časovým tlakom | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Rozumieť angličtine je jedna vec. Zachovať si presnosť, keď ubiehajú minú
 
 - Deti a učenie
 - Platené stiahnutie
+- Offline
+- Bez účtu
 - App Store · 6,99 €
 
 [Stiahnuť Aim990 Plus: Test z angličtiny v App Store](https://apps.apple.com/sk/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

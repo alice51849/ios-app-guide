@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na hlasové poznámky, která shrnuje schůzky na iPhonu"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh nás
 
 - Produktivita
 - Zdarma na začátek
+- Bez účtu
+- Bez reklam
+- Bez sledování
 - Soukromé / v zařízení
 - App Store · Zdarma
 

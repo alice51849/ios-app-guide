@@ -2,7 +2,7 @@
 title: "bedste TOEIC-forberedelsesapp offline studieplan til iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Del 5 virker kort, men de ufuldstændige sætninger kan tage tid, hvis grammatik
 
 - Uddannelse
 - Gratis at komme i gang
+- Offline
+- Ingen reklamer
+- Privat / på enheden
 - App Store · Gratis
 
 [Hent Aim990 i App Store →](https://apps.apple.com/dk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "nejlepší aplikace pro večerní rutinu pro předškoláky bez reklam"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ U předškoláka funguje večerní rutina nejlépe, když je krátká, vizuáln�
 
 - Děti a učení
 - Zdarma na začátek
+- Bez účtu
 - Bez reklam
+- Bez sledování
+- Soukromé / v zařízení
 - App Store · Zdarma
 
 [Získejte Lumi Mission Planet v App Store →](https://apps.apple.com/cz/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

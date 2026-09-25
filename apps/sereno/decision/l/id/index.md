@@ -2,7 +2,7 @@
 title: "aplikasi derau putih terbaik untuk membantu tidur tanpa langganan"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenang
 - Tidur & fokus
 - Gratis untuk mulai · buka kunci sekali bayar
 - Offline
+- Tanpa akun
 - Tanpa iklan
+- Tanpa pelacakan
+- Privat / di perangkat
 - App Store · Gratis
 
 [Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

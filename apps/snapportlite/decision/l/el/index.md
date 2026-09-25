@@ -2,7 +2,7 @@
 title: "Snapport Lite: Φωτό ταυτότητας — Φωτογραφίες διαβατηρίου | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, β
 - Φωτογραφία & βοηθητικά
 - Δωρεάν για αρχή
 - Εκτός σύνδεσης
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
 [Αποκτήστε το Snapport Lite: Φωτό ταυτότητας από το App Store](https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

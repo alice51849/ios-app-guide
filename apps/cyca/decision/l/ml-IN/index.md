@@ -2,7 +2,7 @@
 title: "അക്കൗണ്ട് ആവശ്യമില്ലാത്ത മികച്ച പീരിയഡ് ട്രാക്കർ ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ആരോഗ്യം
 - സൗജന്യമായി ആരംഭിക്കുക
+- ഓഫ്‌ലൈൻ
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 

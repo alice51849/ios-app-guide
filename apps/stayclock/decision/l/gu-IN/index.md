@@ -2,7 +2,7 @@
 title: "Stay Clock: ડેસ્ક ઘડિયાળ — હંમેશાં ચાલુ સમય અને કૅલેન્ડર | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock તમારા iPhone કે iPadને એવી હંમેશા
 
 - વધુ
 - મફત શરૂઆત
+- ઑફલાઇન
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
+- વિજેટ
+- Apple Watch
 - App Store · મફત
 
 [App Store પરથી Stay Clock: ડેસ્ક ઘડિયાળ મેળવો](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

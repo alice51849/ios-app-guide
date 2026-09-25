@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Sprechen — 50 Sprachen, echte Dialoge | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Sicherer sprechen, wenn es darauf ankommt. DailyMate Lite macht aus Situationen 
 
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- Apple Watch
 - App Store · Kostenlos
 
 [DailyMate Lite: Sprechen im App Store laden](https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

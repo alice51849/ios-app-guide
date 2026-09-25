@@ -2,7 +2,7 @@
 title: "બાળકો અને ટોડલર્સ માટે શ્રેષ્ઠ પાસપોર્ટ ફોટો એપ ઘરમાં"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ફોટો અને ઉપયોગિતા
 - ચુકવેલ ડાઉનલોડ
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
 - ખાનગી / ઉપકરણ પર
 - App Store · ₹ 599
 

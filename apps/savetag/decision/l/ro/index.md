@@ -2,7 +2,7 @@
 title: "SaveTag: marcaje cu IA — Salvează linkuri, citește-le | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Salvează acum. Și de data asta chiar citește. Toată ziua îți trimiți link
 
 - Productivitate
 - Început gratuit
+- Fără cont
+- Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
+- Widget
 - App Store · Gratuit
 
 [Descarcă SaveTag: marcaje cu IA din App Store](https://apps.apple.com/ro/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

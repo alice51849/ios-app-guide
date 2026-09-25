@@ -2,7 +2,7 @@
 title: "aplikasi frasa bahasa praktikal terbaik untuk pelancong dengan Apple Watch"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada k
 
 - Kanak-kanak & pembelajaran
 - Muat turun berbayar
+- Widjet
 - Apple Watch
 - App Store · RM59.90
 

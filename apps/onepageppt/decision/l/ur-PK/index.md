@@ -2,7 +2,7 @@
 title: "OnePage PPT: سلائیڈ میکر — نوٹس سے مکمل پریزنٹیشن | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - پیداواریت
 - مفت آغاز
+- آف لائن
+- کوئی اکاؤنٹ نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [App Store سے OnePage PPT: سلائیڈ میکر حاصل کریں](https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

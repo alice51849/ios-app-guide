@@ -2,7 +2,7 @@
 title: "ହୋମ୍ସ୍କୁଲ୍ କିଣ୍ଡରଗାର୍ଟେନ୍ ପ୍ରସ୍ତୁତି ପାଇଁ ସର୍ବୋତ୍ତମ ପୂର୍ଣ୍ଣ ଫୋନିକ୍ସ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
+- ଅଫଲାଇନ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 999
 
 [App Store ରେ Lumi Letters Pro ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

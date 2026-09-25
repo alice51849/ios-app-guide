@@ -2,7 +2,7 @@
 title: "dB Halo: Zajszintmérő — Spektrum, dózis és alvás | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ A dB Halo teljes egészében az eszközön működő zajszintmérő és hangelem
 
 - Továbbiak
 - Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
+- Widget
+- Apple Watch
 - App Store · Ingyenes
 
 [Töltse le a(z) dB Halo: Zajszintmérő appot az App Store-ból](https://apps.apple.com/hu/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

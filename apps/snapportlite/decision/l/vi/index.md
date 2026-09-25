@@ -2,7 +2,7 @@
 title: "Snapport Lite: Ảnh thẻ tại nhà — Tạo ảnh thẻ tại nhà | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng d�
 - Ảnh & tiện ích
 - Bắt đầu miễn phí · mở khóa một lần
 - Ngoại tuyến
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
 [Tải Snapport Lite: Ảnh thẻ tại nhà trên App Store](https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

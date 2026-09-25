@@ -2,7 +2,7 @@
 title: "OnePage PPT: diapositives IA — Els apunts, en una pàgina | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Converteix un mur de text en UNA diapositiva que la gent llegeix. OnePage PPT ll
 
 - Productivitat
 - Inici gratuït
+- Fora de línia
+- Sense compte
+- Sense seguiment
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Descarrega OnePage PPT: diapositives IA a l’App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

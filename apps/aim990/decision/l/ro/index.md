@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de pregătire TOEIC cu plan de studiu offline pentru iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Partea 5 pare scurtă, dar întrebările cu propoziții incomplete pot consuma t
 
 - Educație
 - Început gratuit
+- Offline
+- Fără reclame
+- Privat / pe dispozitiv
 - App Store · Gratuit
 
 [Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

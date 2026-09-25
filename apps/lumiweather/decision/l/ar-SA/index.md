@@ -2,7 +2,7 @@
 title: "أفضل تطبيق طقس لمساعدة الوالدين في تخطيط وقت الخارج مع الأطفال"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - الأطفال والتعلم
 - بدء مجاني · فتح مرة واحدة
+- بدون حساب
 - بدون إعلانات
 - بدون تتبع
+- خاص / على الجهاز
+- عنصر واجهة
 - App Store · مجاني
 
 [احصل على Lumi Weather من App Store →](https://apps.apple.com/sa/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

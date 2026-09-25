@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Sanasto — Viisi uutta sanaa päivässä | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Viisi sanaa. Yksi minuutti. Polku, jonka todella näet. Useimmat sanastosovelluk
 - Lapset & oppiminen
 - Ilmainen aloitus
 - Offline
+- Ei tiliä
+- Ei seurantaa
+- Yksityinen / laitteella
 - App Store · Ilmainen
 
 [Lataa Wordmate Lite: Sanasto App Storesta](https://apps.apple.com/fi/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

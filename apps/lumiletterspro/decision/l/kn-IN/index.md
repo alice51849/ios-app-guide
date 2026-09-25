@@ -2,7 +2,7 @@
 title: "ಹೋಮ್‌ಸ್ಕೂಲ್ ಕಿಂಡರ್ಗಾರ್ಟನ್ ತಯಾರಿಗಾಗಿ ಪೂರ್ಣ ಫೋನಿಕ್ಸ್ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
+- ಆಫ್‌ಲೈನ್
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ₹ 999
 
 [Lumi Letters Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

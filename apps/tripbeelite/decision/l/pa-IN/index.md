@@ -2,7 +2,7 @@
 title: "ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਧਾਰਣ ਯਾਤਰਾ ਯੋਜਕ ਐਪ iPhone ਲਈ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ਯਾਤਰਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
+- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - App Store · ਮੁਫ਼ਤ
 
 [App Store 'ਤੇ TripBee Lite ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

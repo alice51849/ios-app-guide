@@ -2,7 +2,7 @@
 title: "SaveTag: AI बुकमार्क — लिंक सेव्ह करा, नंतर वाचा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत
+- खाते नाही
+- जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
+- विजेट
 - App Store · मोफत
 
 [App Store वरून SaveTag: AI बुकमार्क मिळवा](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

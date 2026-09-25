@@ -2,7 +2,7 @@
 title: "meilleur jeu de maths pour enfants pour développer la logique sur iPhone"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Le meilleur jeu de maths pour enfants entraîne le raisonnement — motifs, séq
 
 - Enfants & apprentissage
 - Gratuit au départ · déblocage unique
+- Sans compte
 - Sans publicité
 - App Store · Gratuit
 

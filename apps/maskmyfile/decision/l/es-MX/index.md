@@ -2,7 +2,7 @@
 title: "Mask My File: Borra tus datos — Tacha datos antes de enviar | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Comparte de forma segura sin sacrificar el contexto que sí importa. Mask My Fil
 
 - Foto y utilidad
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
 - Privado / en el dispositivo
 - App Store · Gratis
 

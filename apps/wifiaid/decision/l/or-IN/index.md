@@ -2,7 +2,7 @@
 title: "WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା — ନେଟୱର୍କ ନିଦାନ ଓ ପ୍ରମାଣ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ଫଟୋ ଏବଂ ସାଧନ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
+- କୌଣସି ଖାତା ନାହିଁ
+- Apple Watch
 - App Store · ₹ 599
 
 [App Store ରୁ WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

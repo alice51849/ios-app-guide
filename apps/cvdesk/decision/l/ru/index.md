@@ -2,7 +2,7 @@
 title: "лучшее приложение для создания резюме для смены карьеры 2026"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Работа и организация
 - Бесплатно начать · разовая разблокировка
+- Без учётной записи
+- Без рекламы
 - App Store · Бесплатно
 
 [Скачать CV Desk в App Store →](https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

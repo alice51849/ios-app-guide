@@ -2,7 +2,7 @@
 title: "legjobb teljes zhuyin alkalmazás kétnyelvű gyerekeknek"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hang
 
 - Gyerekek & tanulás
 - Fizetős letöltés
+- Nincs fiók
 - Nincs reklám
+- Privát / eszközön tárolt
 - App Store · HUF3,990.00
 
 [Szerezd be a Lumi Bopomofo Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

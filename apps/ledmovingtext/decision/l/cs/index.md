@@ -2,7 +2,7 @@
 title: "LED Moving Text — Běžící text na displeji | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Napište větu a zvedněte iPhone. Ze zadní řady, přes celou příletovou hal
 
 - Více
 - Zdarma na začátek
+- Offline
+- Bez účtu
+- Bez reklam
+- Bez sledování
+- Soukromé / v zařízení
 - App Store · Zdarma
 
 [Stáhněte si LED Moving Text v App Storu](https://apps.apple.com/cz/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

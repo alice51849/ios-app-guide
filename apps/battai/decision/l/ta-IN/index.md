@@ -2,7 +2,7 @@
 title: "BattAI: பேட்டரி நலம் — தெளிவான விதிகள், ஆதாரங்கள், வரம்புகள் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI பொது iOS API-களிலிருந்து 5 மதி
 
 - மேலும்
 - இலவசமாக தொடங்கவும்
+- விளம்பரங்கள் இல்லை
+- Apple Watch
 - App Store · இலவசம்
 
 [App Store-இல் BattAI: பேட்டரி நலம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

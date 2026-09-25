@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație completă de matematică pentru preșcolari și clasele primare"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ O aplicație completă de matematică timpurie ar trebui să facă numărarea, �
 - Copii & învățare
 - Descărcare plătită
 - Fără reclame
+- Privat / pe dispozitiv
 - App Store · 49,99 lei
 
 [Descarcă Lumi Math Pro din App Store →](https://apps.apple.com/ro/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

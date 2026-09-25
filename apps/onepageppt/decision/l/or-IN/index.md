@@ -2,7 +2,7 @@
 title: "OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ — ନୋଟରୁ ସୁନ୍ଦର ଉପସ୍ଥାପନା | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରୁ OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

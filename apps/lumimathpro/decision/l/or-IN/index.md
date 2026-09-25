@@ -2,7 +2,7 @@
 title: "ପ୍ରାଥମିକ ଏବଂ ଆରମ୍ଭିକ ଶ୍ରେଣୀ ପାଇଁ ସର୍ବୋତ୍ତମ ସମ୍ପୂର୍ଣ୍ଣ ଗଣିତ ଶିକ୍ଷା ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 999
 
 [App Store ରେ Lumi Math Pro ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

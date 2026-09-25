@@ -2,7 +2,7 @@
 title: "Stay Clock: Bordsklocka — Tid och kalender, alltid på | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock gör din iPhone eller iPad till en bordsklocka som alltid är på och
 
 - Mer
 - Gratis att börja · engångsupplåsning
+- Offline
+- Inget konto
 - Inga annonser
+- Ingen spårning
+- Privat / på enheten
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Hämta Stay Clock: Bordsklocka i App Store](https://apps.apple.com/se/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

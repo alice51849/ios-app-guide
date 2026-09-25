@@ -2,7 +2,7 @@
 title: "dB Halo: শব্দমাত্রা মাপক — বর্ণালী ও শব্দের ডোজ | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,12 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - আরও
 - বিনামূল্যে শুরু
+- কোনও অ্যাকাউন্ট নেই
+- কোনও বিজ্ঞাপন নেই
+- কোনও ট্র্যাকিং নেই
+- গোপনীয় / ডিভাইসে
+- উইজেট
+- Apple Watch
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে dB Halo: শব্দমাত্রা মাপক-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

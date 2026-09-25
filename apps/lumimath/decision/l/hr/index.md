@@ -2,7 +2,7 @@
 title: "najbolja matematička igra za djecu za razvoj logičkih vještina na iPhoneu"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizo
 
 - Djeca i učenje
 - Besplatno za početak
+- Bez računa
 - Bez oglasa
 - App Store · Besplatno
 

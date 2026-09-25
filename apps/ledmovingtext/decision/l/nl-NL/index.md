@@ -2,7 +2,7 @@
 title: "LED Moving Text — Lichtkrant op je scherm | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Typ een zin en houd je iPhone omhoog. Vanaf de achterste rij, dwars door de aank
 
 - Meer
 - Gratis te starten · eenmalige ontgrendeling
+- Offline
+- Geen account
+- Geen advertenties
+- Geen tracking
+- Privé / op apparaat
 - App Store · Gratis
 
 [Download LED Moving Text in de App Store](https://apps.apple.com/nl/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

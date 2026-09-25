@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Ultima dată — Ține minte când ai făcut-o | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Când ai schimbat ultima dată așternutul, ai udat o plantă, ai sunat familia,
 
 - Stil de viață
 - Început gratuit
+- Offline
+- Fără cont
+- Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
+- Widget
 - App Store · Gratuit
 
 [Descarcă Mochi DoneStamp: Ultima dată din App Store](https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

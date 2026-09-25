@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test di inglese — Inglese sotto pressione | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Allena la comprensione dell’inglese con sessioni che richiedono concentrazione
 
 - Bambini e apprendimento
 - Scaricamento a pagamento
+- Offline
+- Nessun account
 - App Store · 6,99 €
 
 [Scarica Aim990 Plus: Test di inglese sull'App Store](https://apps.apple.com/it/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

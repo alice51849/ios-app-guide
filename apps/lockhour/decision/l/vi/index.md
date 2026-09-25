@@ -2,7 +2,7 @@
 title: "ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm 
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
 - Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

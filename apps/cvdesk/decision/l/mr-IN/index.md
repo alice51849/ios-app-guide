@@ -2,7 +2,7 @@
 title: "करिअर बदलणाऱ्यांसाठी सर्वोत्तम रिझ्युमे बिल्डर अॅप २०२६"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत
+- खाते नाही
+- जाहिराती नाहीत
 - App Store · मोफत
 
 [App Store वरून CV Desk मिळवा →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

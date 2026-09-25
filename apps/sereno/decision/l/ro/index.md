@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de zgomot alb pentru adormit fără abonament"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Pentru somn, un abonament care te deranjează în fiecare lună este opusul rela
 - Somn & concentrare
 - Început gratuit
 - Offline
+- Fără cont
 - Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
 - App Store · Gratuit
 
 [Descarcă Sereno din App Store →](https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

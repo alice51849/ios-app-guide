@@ -2,7 +2,7 @@
 title: "paras kokonaisvaltainen äännesovellus kotikouluun esikoulun valmisteluun"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Eskarivalmistautuville perheille tarvitaan kokonainen lukemaan oppimisen polku, 
 
 - Lapset & oppiminen
 - Maksullinen lataus
+- Offline
 - Ei mainoksia
+- Yksityinen / laitteella
 - App Store · 9,99 €
 
 [Hanki Lumi Letters Pro App Storesta →](https://apps.apple.com/fi/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

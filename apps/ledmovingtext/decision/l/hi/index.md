@@ -2,7 +2,7 @@
 title: "LED Moving Text — स्क्रीन पर चलती रोशन पट्टी | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - और अधिक
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- ऑफ़लाइन
+- कोई खाता नहीं
+- कोई विज्ञापन नहीं
+- कोई ट्रैकिंग नहीं
+- निजी / डिवाइस पर
 - App Store · मुफ़्त
 
 [App Store पर LED Moving Text पाएँ](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

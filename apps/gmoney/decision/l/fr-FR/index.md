@@ -2,7 +2,7 @@
 title: "meilleure application de suivi de budget voyage sans abonnement iPhone"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dan
 - Téléchargement payant
 - Hors ligne
 - Sans compte
+- Sans publicité
+- Sans suivi
+- Privé / sur l’appareil
 - App Store · 5,99 €
 
 [Obtenez G+Money sur l’App Store →](https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

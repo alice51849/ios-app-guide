@@ -2,7 +2,7 @@
 title: "meilleure app routine complète matin et soir pour enfants"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Le brossage des dents et le coucher échouent souvent au même moment chaque soi
 
 - Enfants et apprentissage
 - Téléchargement payant
+- Aucun compte
 - Aucune publicité
+- Privé / sur l'appareil
 - App Store · $7.99
 
 [Obtenez Lumi Mission Planet Pro sur l’App Store →](https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

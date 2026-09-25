@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "写真・ユーティリティ",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "アカウント不要"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "写真・ユーティリティ",
         "有料ダウンロード",
+        "アカウント不要",
+        "Apple Watch",
         "App Store · ¥1,000"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "ウィジェット"
+      ],
       "badge_labels": [
         "ライフスタイル",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "オフライン",
+        "広告なし",
+        "プライベート／端末内"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "教育",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "広告なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "オフライン",
+        "アカウント不要"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
         "有料ダウンロード",
+        "オフライン",
+        "アカウント不要",
         "App Store · ¥1,000"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "広告なし"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
+        "広告なし",
+        "Apple Watch",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "プライベート／端末内"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "プライベート／端末内",
         "ウィジェット",
         "App Store · 無料"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "広告なし"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "健康",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "ウィジェット",
         "Apple Watch"
       ],
       "badge_labels": [
         "子ども・学習",
         "有料ダウンロード",
+        "ウィジェット",
         "Apple Watch",
         "App Store · ¥2,000"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "アカウント不要"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "Apple Watch",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ウィジェット",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
+        "Apple Watch",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "オフライン",
-        "アカウント不要"
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "有料ダウンロード",
         "オフライン",
         "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · ¥800"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -818,10 +954,14 @@
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
         "追跡なし",
         "プライベート／端末内"
       ],
@@ -830,6 +970,8 @@
       "badge_labels": [
         "お金・旅行",
         "有料ダウンロード",
+        "アカウント不要",
+        "広告なし",
         "追跡なし",
         "プライベート／端末内",
         "App Store · ¥800"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
         "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "アカウント不要",
         "広告なし"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "広告なし",
         "App Store · 無料",
         "★ 4.0/5 · 2"
@@ -1086,17 +1254,23 @@
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "アカウント不要",
+        "広告なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
         "有料ダウンロード",
+        "アカウント不要",
         "広告なし",
+        "プライベート／端末内",
         "App Store · ¥1,500",
         "★ 5.0/5 · 1"
       ],
@@ -1139,9 +1313,11 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "オフライン",
         "広告なし"
       ],
       "device_surfaces": [],
@@ -1149,6 +1325,7 @@
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1189,17 +1366,23 @@
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "オフライン",
+        "広告なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
         "有料ダウンロード",
+        "オフライン",
         "広告なし",
+        "プライベート／端末内",
         "App Store · ¥1,500"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1239,9 +1422,11 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "アカウント不要",
         "広告なし"
       ],
       "device_surfaces": [],
@@ -1249,6 +1434,7 @@
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1289,10 +1475,12 @@
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "広告なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1300,6 +1488,7 @@
         "子ども・学習",
         "有料ダウンロード",
         "広告なし",
+        "プライベート／端末内",
         "App Store · ¥1,500"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1339,17 +1528,26 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1389,17 +1587,23 @@
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "アカウント不要",
+        "広告なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
         "有料ダウンロード",
+        "アカウント不要",
         "広告なし",
+        "プライベート／端末内",
         "App Store · ¥1,000"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1439,17 +1643,23 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "オフライン",
+        "広告なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
         "広告なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -1489,20 +1699,31 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
         "広告なし",
-        "追跡なし"
+        "追跡なし",
+        "プライベート／端末内"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "ウィジェット"
+      ],
       "badge_labels": [
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "広告なし",
         "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
         "App Store · 無料",
         "★ 5.0/5 · 1"
       ],
@@ -1550,12 +1771,17 @@
       "privacy_labels": [
         "広告なし"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
         "広告なし",
+        "Apple Watch",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1664,13 +1890,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/onepageppt.html",
@@ -1709,13 +1949,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "プライベート／端末内"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1755,9 +2006,17 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -1765,6 +2024,10 @@
       "badge_labels": [
         "写真・ユーティリティ",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -1804,13 +2067,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "ウィジェット"
+      ],
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/savetag.html",
@@ -1850,9 +2132,17 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -1860,6 +2150,10 @@
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -1901,11 +2195,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "オフライン",
-        "広告なし"
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1913,7 +2213,10 @@
         "睡眠・集中",
         "無料で開始・一度の購入でアンロック",
         "オフライン",
+        "アカウント不要",
         "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1952,13 +2255,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "プライベート／端末内"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
         "無料で開始・一度の購入でアンロック",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/shotinbox.html",
@@ -1998,9 +2306,15 @@
       "purchase_label": "有料ダウンロード",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -2008,6 +2322,9 @@
       "badge_labels": [
         "写真・ユーティリティ",
         "有料ダウンロード",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · ¥1,000"
       ],
@@ -2048,10 +2365,18 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "オフライン"
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2059,6 +2384,10 @@
         "写真・ユーティリティ",
         "無料で開始・一度の購入でアンロック",
         "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/snapportlite.html",
@@ -2098,9 +2427,15 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -2108,6 +2443,9 @@
       "badge_labels": [
         "生産性",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -2148,17 +2486,37 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "広告なし"
+        "オフライン",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
+        "プライベート／端末内"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ウィジェット",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
+        "オフライン",
+        "アカウント不要",
         "広告なし",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
+        "Apple Watch",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html",
@@ -2197,13 +2555,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "アカウント不要",
+        "広告なし"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "旅行",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2245,11 +2611,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "オフライン",
         "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -2259,6 +2629,8 @@
         "有料ダウンロード",
         "オフライン",
         "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · ¥1,000"
       ],
@@ -2299,9 +2671,15 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [],
@@ -2309,6 +2687,9 @@
       "badge_labels": [
         "写真・ユーティリティ",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
+        "広告なし",
+        "追跡なし",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -2348,13 +2729,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "アカウント不要"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "その他",
         "無料で開始・一度の購入でアンロック",
+        "アカウント不要",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/wifiaidlite.html",
@@ -2394,10 +2780,16 @@
       "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "オフライン"
+        "オフライン",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2405,6 +2797,9 @@
         "子ども・学習",
         "無料で開始・一度の購入でアンロック",
         "オフライン",
+        "アカウント不要",
+        "追跡なし",
+        "プライベート／端末内",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/wordmatelite.html",
@@ -2446,12 +2841,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "アカウント不要",
         "広告なし",
-        "追跡なし"
+        "追跡なし",
+        "プライベート／端末内"
       ],
       "device_surfaces": [
         "widget",
@@ -2467,6 +2864,7 @@
         "アカウント不要",
         "広告なし",
         "追跡なし",
+        "プライベート／端末内",
         "ウィジェット",
         "Apple Watch",
         "App Store · ¥1,500"

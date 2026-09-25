@@ -2,7 +2,7 @@
 title: "paras kattava matikkasovellus varhaiskasvatukseen ja alakoulun alkuun"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Kattavan matikkasovelluksen tulisi yhdistää laskeminen, lukukäsitys ja ensimm
 - Lapset & oppiminen
 - Maksullinen lataus
 - Ei mainoksia
+- Yksityinen / laitteella
 - App Store · 9,99 €
 
 [Hanki Lumi Math Pro App Storesta →](https://apps.apple.com/fi/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

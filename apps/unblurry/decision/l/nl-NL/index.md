@@ -2,7 +2,7 @@
 title: "beste app om wazige foto's van kinderen op iPhone te verbeteren"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Kinderen blijven nooit stilzitten, dus zachte focus en cameratrilling zijn onver
 
 - Foto & hulpmiddel
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
+- Geen advertenties
+- Geen tracking
 - Privé / op apparaat
 - App Store · Gratis
 

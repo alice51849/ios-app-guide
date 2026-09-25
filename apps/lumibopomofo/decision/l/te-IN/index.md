@@ -2,7 +2,7 @@
 title: "iPhoneలో పిల్లలు Zhuyin నేర్చుకోవడానికి ఉత్తమ Bopomofo యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Zhuyin మొదటిసారిగా నేర్చుకునే పి�
 
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 

@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین سادہ ٹو ڈو لسٹ ایپ بغیر سبسکرپشن کے"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - پیداواریت
 - مفت آغاز
 - کوئی اشتہار نہیں
+- Apple Watch
 - App Store · مفت
 
 [App Store سے Mochi حاصل کریں →](https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

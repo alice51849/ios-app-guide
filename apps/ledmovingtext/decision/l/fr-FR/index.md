@@ -2,7 +2,7 @@
 title: "LED Moving Text — Bandeau lumineux défilant | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Tapez une phrase et levez votre iPhone. Depuis le fond de la salle, à travers l
 
 - Plus
 - Gratuit au départ · déblocage unique
+- Hors ligne
+- Sans compte
+- Sans publicité
+- Sans suivi
+- Privé / sur l’appareil
 - App Store · Gratuit
 
 [Obtenir LED Moving Text sur l'App Store](https://apps.apple.com/fr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

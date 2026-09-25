@@ -2,7 +2,7 @@
 title: "iPhone ಸಂಗ್ರಹಣೆಯನ್ನು ಖಾಲಿ ಮಾಡಲು ಉತ್ತಮ ಆಪ್ ನಕಲಿ ಫೋಟೋಗಳನ್ನು ಅಳಿಸುವುದು"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಆಫ್‌ಲೈನ್
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 

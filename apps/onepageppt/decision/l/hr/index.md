@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI slajd — Bilješke u gotovu prezentaciju | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju. OnePage PPT pro
 
 - Produktivnost
 - Besplatno za početak
+- Izvan mreže
+- Bez računa
+- Bez praćenja
+- Privatno / na uređaju
 - App Store · Besplatno
 
 [Preuzmite OnePage PPT: AI slajd u App Storeu](https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

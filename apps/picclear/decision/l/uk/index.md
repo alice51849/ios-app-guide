@@ -2,7 +2,7 @@
 title: "найкращий додаток для звільнення пам’яті iPhone видаленням дублікатів фото"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Фото та утиліти
 - Безкоштовно для початку · разове розблокування
+- Офлайн
+- Без облікового запису
+- Без реклами
+- Без відстеження
 - Приватно / на пристрої
 - App Store · Безкоштовно
 

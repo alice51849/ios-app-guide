@@ -2,7 +2,7 @@
 title: "Mask My File: Esborra dades — Oculta dades abans d'enviar | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Comparteix amb tranquil·litat sense perdre el context útil. Mask My File detec
 
 - Fotografia i utilitat
 - Inici gratuït
+- Sense compte
 - Privat / en el dispositiu
 - App Store · Gratis
 

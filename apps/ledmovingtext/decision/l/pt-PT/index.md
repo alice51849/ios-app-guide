@@ -2,7 +2,7 @@
 title: "LED Moving Text — Letreiro luminoso animado | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Escreva uma frase e levante o iPhone. Do fundo da pista, do outro lado do sala d
 
 - Mais
 - Grátis para começar · desbloqueio único
+- Offline
+- Sem conta
+- Sem anúncios
+- Sem rastreamento
+- Privado / no dispositivo
 - App Store · Grátis
 
 [Baixe LED Moving Text na App Store](https://apps.apple.com/pt/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

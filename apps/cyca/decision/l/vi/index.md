@@ -2,7 +2,7 @@
 title: "ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ
 
 - Sức khỏe
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

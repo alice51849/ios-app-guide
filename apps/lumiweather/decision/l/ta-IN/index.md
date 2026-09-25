@@ -2,7 +2,7 @@
 title: "பெற்றோர் குழந்தைகளுடன் வெளியில் செல்ல திட்டமிட சிறந்த வானிலை பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - குழந்தைகள் & கற்றல்
 - இலவசமாக தொடங்கவும்
+- கணக்கு இல்லை
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
+- விட்ஜெட்
 - App Store · இலவசம்
 
 [Lumi Weather ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

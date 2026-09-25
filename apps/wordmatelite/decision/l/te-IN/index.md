@@ -2,7 +2,7 @@
 title: "Wordmate Lite: రోజూ 5 పదాలు — ఇంగ్లీషుతో సహా 44 భాషలు | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ publisher: "Lumi Studio"
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
 - ఆఫ్‌లైన్
+- ఖాతా అవసరం లేదు
+- ట్రాకింగ్ లేదు
+- గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
 [App Store నుంచి Wordmate Lite: రోజూ 5 పదాలు పొందండి](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI prosojnica — Iz zapiskov v predstavitev | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Iz stene besedila nastane ENA prosojnica, ki jo res preberejo. OnePage PPT prebe
 
 - Produktivnost
 - Brezplačen začetek
+- Brez povezave
+- Brez računa
+- Brez sledenja
+- Zasebno / na napravi
 - App Store · Brezplačno
 
 [Prenesite OnePage PPT: AI prosojnica iz trgovine App Store](https://apps.apple.com/si/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

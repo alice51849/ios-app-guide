@@ -2,7 +2,7 @@
 title: "Apple Watch로 바쁜 출퇴근길에 적합한 최고의 단어 학습 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - 계정 없음
 - 광고 없음
 - 추적 없음
+- 프라이빗 / 기기 내
 - 위젯
 - Apple Watch
 - App Store · ￦15,000

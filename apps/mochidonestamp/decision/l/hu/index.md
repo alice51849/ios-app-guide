@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Legutóbb — Emlékszik, mikor csináltad | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Mikor cseréltél utoljára ágyneműt, locsoltál növényt, hívtad fel a csal
 
 - Életmód
 - Ingyenes kezdés
+- Offline
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
+- Widget
 - App Store · Ingyenes
 
 [Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból](https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

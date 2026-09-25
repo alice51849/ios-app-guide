@@ -2,7 +2,7 @@
 title: "iPhone પર બાળકો માટે શ્રેષ્ઠ બોપોમોફો એપ જે ઝુયિન શીખવે"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - બાળકો અને અભ્યાસ
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
 - App Store · મફત
 

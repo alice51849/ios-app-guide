@@ -2,7 +2,7 @@
 title: "BattAI: Υγεία μπαταρίας — Σαφείς κανόνες, πηγές και όρια | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI Το BattAI χρησιμοποιεί πέντε τιμές από τα δ
 
 - Περισσότερα
 - Δωρεάν για αρχή
+- Χωρίς διαφημίσεις
+- Apple Watch
 - App Store · Δωρεάν
 
 [Αποκτήστε το BattAI: Υγεία μπαταρίας από το App Store](https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

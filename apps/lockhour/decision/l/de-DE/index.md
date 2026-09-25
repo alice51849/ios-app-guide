@@ -2,7 +2,7 @@
 title: "Beste App zum Blockieren sozialer Medien beim Lernen, iPhone"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Während Prüfungen ist Willenskraft nicht das Werkzeug – eine harte zeitgeste
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
 - Keine Werbung
+- Kein Tracking
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

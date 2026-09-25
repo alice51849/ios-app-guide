@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "kn-IN",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "Apple Watch",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "ವಿಜೆಟ್"
+      ],
       "badge_labels": [
         "ಜೀವನಶೈಲಿ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "ವಿಜೆಟ್",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/mochidonestamp.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಶಿಕ್ಷಣ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/aim990plus.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "Apple Watch",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "ವಿಜೆಟ್",
         "App Store · ಉಚಿತ"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "ಆರೋಗ್ಯ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "ವಿಜೆಟ್",
         "Apple Watch"
       ],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ವಿಜೆಟ್",
         "Apple Watch",
         "App Store · ₹ 1,199"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "Apple Watch",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ವಿಜೆಟ್",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "ವಿಜೆಟ್",
+        "Apple Watch",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ಆಫ್‌ಲೈನ್",
-        "ಖಾತೆ ಇಲ್ಲ"
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
         "ಆಫ್‌ಲೈನ್",
         "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 499"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -882,10 +1018,14 @@
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
@@ -894,6 +1034,8 @@
       "badge_labels": [
         "ಹಣ ಮತ್ತು ಪ್ರಯಾಣ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 499"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "App Store · ಉಚಿತ"
       ],
@@ -1083,17 +1251,23 @@
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1133,9 +1307,11 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
       ],
       "device_surfaces": [],
@@ -1143,6 +1319,7 @@
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "App Store · ಉಚಿತ"
       ],
@@ -1183,17 +1360,23 @@
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಆಫ್‌ಲೈನ್",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಆಫ್‌ಲೈನ್",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1233,9 +1416,11 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
       ],
       "device_surfaces": [],
@@ -1243,6 +1428,7 @@
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "App Store · ಉಚಿತ"
       ],
@@ -1283,10 +1469,12 @@
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1294,6 +1482,7 @@
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1333,17 +1522,26 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1383,17 +1581,23 @@
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1433,20 +1637,31 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
-        "ಹಿಂಡಿಕೆ ಇಲ್ಲ"
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "ವಿಜೆಟ್"
+      ],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "ವಿಜೆಟ್",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1491,12 +1706,17 @@
       "privacy_labels": [
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "Apple Watch",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1605,13 +1825,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/onepageppt.html",
@@ -1650,13 +1884,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1696,9 +1941,17 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -1706,6 +1959,10 @@
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -1745,13 +2002,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "ವಿಜೆಟ್"
+      ],
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "ವಿಜೆಟ್",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/savetag.html",
@@ -1791,9 +2067,17 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -1801,6 +2085,10 @@
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -1842,11 +2130,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ಆಫ್‌ಲೈನ್",
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1854,7 +2148,10 @@
         "ನಿದ್ರೆ ಮತ್ತು ಗಮನ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
         "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1893,13 +2190,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/shotinbox.html",
@@ -1939,9 +2241,15 @@
       "purchase_label": "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -1949,6 +2257,9 @@
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 599"
       ],
@@ -1989,10 +2300,18 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಆಫ್‌ಲೈನ್"
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2000,6 +2319,10 @@
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
         "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/snapportlite.html",
@@ -2039,9 +2362,15 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -2049,6 +2378,9 @@
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -2089,17 +2421,37 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ವಿಜೆಟ್",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
+        "ವಿಜೆಟ್",
+        "Apple Watch",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/stayclock.html",
@@ -2139,17 +2491,23 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+        "ಆಫ್‌ಲೈನ್",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಆಫ್‌ಲೈನ್",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -2188,13 +2546,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಪ್ರಯಾಣ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2236,11 +2602,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ಆಫ್‌ಲೈನ್",
         "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -2250,6 +2620,8 @@
         "ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್",
         "ಆಫ್‌ಲೈನ್",
         "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ₹ 599"
       ],
@@ -2290,9 +2662,15 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
@@ -2300,6 +2678,9 @@
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
@@ -2339,13 +2720,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ಖಾತೆ ಇಲ್ಲ"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
+        "ಖಾತೆ ಇಲ್ಲ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/wifiaidlite.html",
@@ -2385,10 +2771,16 @@
       "purchase_label": "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ಆಫ್‌ಲೈನ್"
+        "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2396,6 +2788,9 @@
         "ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
         "ಆಫ್‌ಲೈನ್",
+        "ಖಾತೆ ಇಲ್ಲ",
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/wordmatelite.html",
@@ -2437,12 +2832,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
-        "ಹಿಂಡಿಕೆ ಇಲ್ಲ"
+        "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [
         "widget",
@@ -2458,6 +2855,7 @@
         "ಖಾತೆ ಇಲ್ಲ",
         "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಹಿಂಡಿಕೆ ಇಲ್ಲ",
+        "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "ವಿಜೆಟ್",
         "Apple Watch",
         "App Store · ₹ 999"

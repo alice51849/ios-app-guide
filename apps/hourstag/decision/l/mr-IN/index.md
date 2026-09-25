@@ -2,7 +2,7 @@
 title: "HoursTag: खरेदी वेळेची किंमत — तुमच्या आयुष्याची खरी किंमत काय आहे? | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - पैसे आणि प्रवास
 - पैसे देऊन डाउनलोड करा
+- खाते नाही
+- जाहिराती नाहीत
 - ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
 - App Store · ₹ 499

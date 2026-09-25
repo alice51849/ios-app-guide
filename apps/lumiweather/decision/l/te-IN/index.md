@@ -2,7 +2,7 @@
 title: "తల్లిదండ్రులు పిల్లలతో బయట సమయం ప్లాన్ చేయడానికి సహాయపడే ఉత్తమ వాతావరణ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - ఉచితంగా ప్రారంభించండి
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
 - ట్రాకింగ్ లేదు
+- గోప్యంగా / పరికరంలో
+- విడ్జెట్
 - App Store · ఉచితం
 
 [App Storeలో Lumi Weather పొందండి →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

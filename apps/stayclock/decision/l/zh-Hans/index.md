@@ -2,7 +2,7 @@
 title: "Stay Clock:翻页桌面时钟 — 常亮时间与日历显示 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock 将你的 iPhone 或 iPad 变成一款常亮桌面时钟,即使隔着
 
 - 更多
 - 免费开始使用 · 一次性解锁
+- 离线
+- 无需账户
 - 无广告
+- 无跟踪
+- 私密 / 设备本地
+- 小组件
+- Apple Watch
 - App Store · 免费
 
 [在 App Store 获取 Stay Clock:翻页桌面时钟](https://apps.apple.com/cn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

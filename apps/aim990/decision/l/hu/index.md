@@ -2,7 +2,7 @@
 title: "legjobb TOEIC felkészítő alkalmazás offline tanulási terv iPhone-ra"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Az 5. rész rövidnek tűnik, de az hiányos mondatos kérdések időt rabolhatn
 
 - Oktatás
 - Ingyenes kezdés
+- Offline
+- Nincs reklám
+- Privát / eszközön tárolt
 - App Store · Ingyenes
 
 [Szerezd be az Aim990-et az App Store-ból →](https://apps.apple.com/hu/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

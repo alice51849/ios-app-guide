@@ -2,7 +2,7 @@
 title: "Lumi Weather: পরিবারের আবহাওয় — আবহাওয়ার পূর্বাভাস ও বৃষ্টি | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,8 +16,11 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - শিশু ও শেখা
 - বিনামূল্যে শুরু
+- কোনও অ্যাকাউন্ট নেই
 - কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
+- গোপনীয় / ডিভাইসে
+- উইজেট
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Lumi Weather: পরিবারের আবহাওয়-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

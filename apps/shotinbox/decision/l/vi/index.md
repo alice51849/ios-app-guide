@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Sắp xếp ảnh chụp màn hình | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - Ảnh & tiện ích
 - Bắt đầu miễn phí · mở khóa một lần
+- Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
 [Tải ShotInbox AI: Sort Screenshots trên App Store](https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

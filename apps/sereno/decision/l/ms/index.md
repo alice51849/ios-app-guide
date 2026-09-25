@@ -2,7 +2,7 @@
 title: "aplikasi bunyi putih terbaik untuk tidur tanpa langganan"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Untuk tidur, langganan yang mengganggu setiap bulan adalah bertentangan dengan k
 - Tidur & fokus
 - Percuma untuk bermula · buka kunci sekali sahaja
 - Luar talian
+- Tiada akaun
 - Tiada iklan
+- Tiada penjejakan
+- Peribadi / pada peranti
 - App Store · Percuma
 
 [Dapatkan Sereno di App Store →](https://apps.apple.com/my/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk memperbaiki foto anak yang buram di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Anak-anak tidak pernah diam, jadi foto dengan fokus lembut dan goyangan kamera t
 
 - Foto & utilitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Tanpa iklan
+- Tanpa pelacakan
 - Privat / di perangkat
 - App Store · Gratis
 

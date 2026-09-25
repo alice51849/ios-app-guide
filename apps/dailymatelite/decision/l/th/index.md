@@ -2,7 +2,7 @@
 title: "DailyMate Lite: พร้อมคุย — 50 ภาษา ใช้ได้ในชีวิตจริง | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - เด็ก & การเรียนรู้
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
+- Apple Watch
 - App Store · ฟรี
 
 [ดาวน์โหลด DailyMate Lite: พร้อมคุย บน App Store](https://apps.apple.com/th/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

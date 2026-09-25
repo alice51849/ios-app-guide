@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de urmărire a ciclului fără cont necesar pentru iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Sănătate
 - Început gratuit
+- Offline
+- Fără cont
+- Fără reclame
+- Fără urmărire
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

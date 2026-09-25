@@ -2,7 +2,7 @@
 title: "Stay Clock: sklápěcí hodiny — Nepřetržitý čas a kalendář | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock promění váš iPhone nebo iPad v nepřetržitě svítící stolní 
 
 - Více
 - Zdarma na začátek
+- Offline
+- Bez účtu
 - Bez reklam
+- Bez sledování
+- Soukromé / v zařízení
+- Widget
+- Apple Watch
 - App Store · Zdarma
 
 [Stáhněte si Stay Clock: sklápěcí hodiny v App Storu](https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

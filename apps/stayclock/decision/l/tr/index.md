@@ -2,7 +2,7 @@
 title: "Stay Clock: Çevirmeli Saat — Her An Açık Saat ve Takvim | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock, iPhone'unuzu veya iPad'inizi odanın diğer ucundan bile okunabilen,
 
 - Daha fazla
 - Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
+- Hesap yok
 - Reklam yok
+- Takip yok
+- Gizli / cihazda
+- Araç takımı
+- Apple Watch
 - App Store · Ücretsiz
 
 [Stay Clock: Çevirmeli Saat uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

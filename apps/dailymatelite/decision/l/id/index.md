@@ -2,7 +2,7 @@
 title: "DailyMate Lite — 50 Bahasa, Dialog Nyata | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Siap berbicara saat situasi nyata datang. DailyMate Lite mengubah percakapan seh
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Apple Watch
 - App Store · Gratis
 
 [Dapatkan DailyMate Lite di App Store](https://apps.apple.com/id/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "legjobb teljes matematika tanuló alkalmazás óvodásoknak és kisiskolásoknak"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ A teljes korai matematika alkalmazásnak a számolást, számérzéket és első
 - Gyerekek & tanulás
 - Fizetős letöltés
 - Nincs reklám
+- Privát / eszközön tárolt
 - App Store · HUF3,990.00
 
 [Szerezd be a Lumi Math Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

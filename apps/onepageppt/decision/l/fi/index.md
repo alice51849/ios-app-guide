@@ -2,7 +2,7 @@
 title: "OnePage PPT: tekoälyesitys — Muistiinpanoista yksi dia | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Muuta tekstiseinä YHDEKSI diaksi, jonka joku oikeasti lukee. OnePage PPT lukee 
 
 - Tuottavuus
 - Ilmainen aloitus
+- Offline
+- Ei tiliä
+- Ei seurantaa
+- Yksityinen / laitteella
 - App Store · Ilmainen
 
 [Lataa OnePage PPT: tekoälyesitys App Storesta](https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

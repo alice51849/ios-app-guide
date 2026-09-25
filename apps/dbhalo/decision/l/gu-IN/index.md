@@ -2,7 +2,7 @@
 title: "dB Halo: ધ્વનિ સ્તર માપક — વર્ણપટ અને ઘોંઘાટની માત્રા | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - વધુ
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
+- વિજેટ
+- Apple Watch
 - App Store · મફત
 
 [App Store પરથી dB Halo: ધ્વનિ સ્તર માપક મેળવો](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

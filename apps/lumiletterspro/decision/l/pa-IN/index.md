@@ -2,7 +2,7 @@
 title: "ਹੋਮਸਕੂਲ ਕਿੰਡਰਗਾਰਟਨ ਤਿਆਰੀ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪੂਰੀ ਫੋਨਿਕਸ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
+- ਆਫਲਾਈਨ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ₹ 999
 
 [Lumi Letters Pro App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

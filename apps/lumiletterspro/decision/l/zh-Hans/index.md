@@ -2,7 +2,7 @@
 title: "适合家庭学前启蒙的完整拼读应用推荐"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 儿童与学习
 - 付费下载
+- 离线
 - 无广告
+- 私密 / 设备本地
 
 [在App Store获取Lumi Letters Pro →](https://apps.apple.com/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
 

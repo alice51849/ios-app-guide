@@ -2,7 +2,7 @@
 title: "лучшее приложение для отслеживания цикла без регистрации для iPhone"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Здоровье
 - Бесплатно начать · разовая разблокировка
+- Автономно
+- Без учётной записи
+- Без рекламы
+- Без отслеживания
 - Лично / на устройстве
 - App Store · Бесплатно
 

@@ -2,7 +2,7 @@
 title: "HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života.
 
 - Finance a cestování
 - Placené stažení
+- Bez účtu
+- Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
 - App Store · 129,00 Kč

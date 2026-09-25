@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do tworzenia CV dla zmieniających branżę 2026"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Gdy zmieniasz branżę, problem z CV jest inny: twoje doświadczenie jest prawdz
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
+- Bez reklam
 - App Store · Bezpłatnie
 
 [Pobierz CV Desk z App Store →](https://apps.apple.com/pl/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

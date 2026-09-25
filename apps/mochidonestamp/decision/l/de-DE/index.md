@@ -2,7 +2,7 @@
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Für Aufgaben und Wartung, die nicht in einen starren Kalender gehören, merkt s
 
 - Lebensstil
 - Kostenloser Einstieg · einmalige Freischaltung
+- Offline
+- Kein Konto
+- Keine Werbung
+- Kein Tracking
+- Privat / auf dem Gerät
+- Widget
 - App Store · Kostenlos
 - ★ 5.0/5 · 1
 

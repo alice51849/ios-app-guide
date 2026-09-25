@@ -2,7 +2,7 @@
 title: "WiFi Aid: Znajdź błędy sieci — Rzetelna diagnostyka sieci | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, 
 
 - Zdjęcia i narzędzia
 - Płatne do pobrania
+- Bez konta
+- Apple Watch
 - App Store · 29,99 zł
 
 [Pobierz WiFi Aid: Znajdź błędy sieci z App Store](https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

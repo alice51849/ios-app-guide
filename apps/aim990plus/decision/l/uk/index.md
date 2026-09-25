@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Тест англійської — Практика в режимі таймера | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus — тренажер для дорослих, яким важлив�
 
 - Діти та навчання
 - Платне завантаження
+- Офлайн
+- Без облікового запису
 - App Store · 6,99 USD
 
 [Завантажте Aim990 Plus: Тест англійської з App Store](https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

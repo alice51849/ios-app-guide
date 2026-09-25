@@ -2,7 +2,7 @@
 title: "iPhone‌ನಲ್ಲಿ ಪ್ರಯಾಣಿಕ ನಿರ್ಮಾಪಕರಿಗೆ ಒಮ್ಮೆ ಪಾವತಿ ಮಾಡುವ ಅತ್ಯುತ್ತಮ ಫಿಲ್ಮ್ ಫೋಟೋ ಸಂಪಾದಕ"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
 [PhotoCream ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

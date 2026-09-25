@@ -2,7 +2,7 @@
 title: "iPhone-ൽ യാത്രാ സൃഷ്ടാക്കൾക്കായി ഒരിക്കൽ മാത്രം പണമടച്ച് ഉപയോഗിക്കാവുന്ന മികച്ച ഫിലിം ഫോട്ടോ എഡിറ്റർ"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ഫോട്ടോ & ഉപകരണം
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
 [PhotoCream App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

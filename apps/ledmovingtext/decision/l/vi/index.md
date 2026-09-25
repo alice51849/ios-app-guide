@@ -2,7 +2,7 @@
 title: "LED Moving Text — Dòng đèn chạy trên màn hình | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Gõ một câu rồi giơ iPhone lên. Từ hàng ghế cuối, từ đầu bên
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
 [Tải LED Moving Text trên App Store](https://apps.apple.com/vn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

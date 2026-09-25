@@ -2,7 +2,7 @@
 title: "Aim990 Plus: इंग्रजी मॉक टेस्ट — दडपणात जलद अचूक उत्तरे | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus हे प्रौढ शिकणाऱ्यांसाठी �
 
 - मुलं आणि शिक्षण
 - पैसे देऊन डाउनलोड करा
+- ऑफलाइन
+- खाते नाही
 - App Store · ₹ 599
 
 [App Store वरून Aim990 Plus: इंग्रजी मॉक टेस्ट मिळवा](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

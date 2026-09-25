@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "de-DE",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Kein Konto"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenpflichtiger Download",
+        "Kein Konto",
+        "Apple Watch",
         "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
       "badge_labels": [
         "Lebensstil",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "Widget",
         "App Store · Kostenlos",
         "★ 5.0/5 · 1"
       ],
@@ -280,13 +315,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Bildung",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -325,13 +371,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Kein Konto"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenpflichtiger Download",
+        "Offline",
+        "Kein Konto",
         "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
@@ -370,13 +424,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Keine Werbung"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Keine Werbung",
+        "Apple Watch",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/battai.html",
@@ -415,8 +479,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Privat / auf dem Gerät"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -426,6 +496,8 @@
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Privat / auf dem Gerät",
         "Widget",
         "App Store · Kostenlos"
       ],
@@ -465,13 +537,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -511,9 +591,17 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -521,6 +609,10 @@
       "badge_labels": [
         "Gesundheit",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -563,14 +655,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenpflichtiger Download",
+        "Widget",
         "Apple Watch",
         "App Store · 12,99 €"
       ],
@@ -610,13 +705,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Kein Konto"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Apple Watch",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/dailymatelite.html",
@@ -655,13 +760,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "Widget",
+        "Apple Watch",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/dbhalo.html",
@@ -702,11 +829,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
-        "Kein Konto"
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -715,6 +848,9 @@
         "Kostenpflichtiger Download",
         "Offline",
         "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · 5,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -884,13 +1020,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/ledmovingtext.html",
@@ -930,11 +1083,15 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
         "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -942,7 +1099,9 @@
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -983,9 +1142,11 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Kein Konto",
         "Keine Werbung"
       ],
       "device_surfaces": [],
@@ -993,6 +1154,7 @@
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "Keine Werbung",
         "App Store · Kostenlos"
       ],
@@ -1033,17 +1195,23 @@
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Kein Konto",
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenpflichtiger Download",
+        "Kein Konto",
         "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1083,9 +1251,11 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "Offline",
         "Keine Werbung"
       ],
       "device_surfaces": [],
@@ -1093,6 +1263,7 @@
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
         "Keine Werbung",
         "App Store · Kostenlos"
       ],
@@ -1133,17 +1304,23 @@
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Offline",
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenpflichtiger Download",
+        "Offline",
         "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1183,9 +1360,11 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Kein Konto",
         "Keine Werbung"
       ],
       "device_surfaces": [],
@@ -1193,6 +1372,7 @@
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "Keine Werbung",
         "App Store · Kostenlos"
       ],
@@ -1233,10 +1413,12 @@
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1244,6 +1426,7 @@
         "Kinder & Lernen",
         "Kostenpflichtiger Download",
         "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · 9,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1283,17 +1466,26 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1333,17 +1525,23 @@
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Kein Konto",
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenpflichtiger Download",
+        "Kein Konto",
         "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1383,17 +1581,23 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Offline",
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
         "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -1433,20 +1637,31 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
         "Keine Werbung",
-        "Kein Tracking"
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
       "badge_labels": [
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "Keine Werbung",
         "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "Widget",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1491,12 +1706,17 @@
       "privacy_labels": [
         "Keine Werbung"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
         "Keine Werbung",
+        "Apple Watch",
         "App Store · Kostenlos",
         "★ 3.0/5 · 2"
       ],
@@ -1608,13 +1828,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/onepageppt.html",
@@ -1653,13 +1887,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Privat / auf dem Gerät"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1699,9 +1944,17 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -1709,6 +1962,10 @@
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -1748,13 +2005,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "Widget",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/savetag.html",
@@ -1794,9 +2070,17 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -1804,6 +2088,10 @@
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -1845,11 +2133,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
-        "Keine Werbung"
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1857,7 +2151,10 @@
         "Schlaf & Konzentration",
         "Kostenloser Einstieg · einmalige Freischaltung",
         "Offline",
+        "Kein Konto",
         "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1896,13 +2193,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Privat / auf dem Gerät"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/shotinbox.html",
@@ -1942,9 +2244,15 @@
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -1952,6 +2260,9 @@
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenpflichtiger Download",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · 6,99 €"
       ],
@@ -1992,10 +2303,18 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline"
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2003,6 +2322,10 @@
         "Foto & Dienstprogramm",
         "Kostenloser Einstieg · einmalige Freischaltung",
         "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/snapportlite.html",
@@ -2042,9 +2365,15 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -2052,6 +2381,9 @@
       "badge_labels": [
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -2092,17 +2424,37 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Keine Werbung"
+        "Offline",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Offline",
+        "Kein Konto",
         "Keine Werbung",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
+        "Widget",
+        "Apple Watch",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/stayclock.html",
@@ -2142,10 +2494,14 @@
       "purchase_label": "Kostenpflichtiger Download",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
         "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
@@ -2154,6 +2510,8 @@
       "badge_labels": [
         "Geld & Reisen",
         "Kostenpflichtiger Download",
+        "Kein Konto",
+        "Keine Werbung",
         "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · 5,99 €"
@@ -2194,13 +2552,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Reisen",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2242,11 +2608,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
         "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -2256,6 +2626,8 @@
         "Kostenpflichtiger Download",
         "Offline",
         "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · 6,99 €"
       ],
@@ -2296,9 +2668,15 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
@@ -2306,6 +2684,9 @@
       "badge_labels": [
         "Foto & Dienstprogramm",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
+        "Keine Werbung",
+        "Kein Tracking",
         "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
@@ -2345,13 +2726,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Kein Konto"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Mehr",
         "Kostenloser Einstieg · einmalige Freischaltung",
+        "Kein Konto",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/wifiaidlite.html",
@@ -2391,10 +2777,16 @@
       "purchase_label": "Kostenloser Einstieg · einmalige Freischaltung",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline"
+        "Offline",
+        "Kein Konto",
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2402,6 +2794,9 @@
         "Kinder & Lernen",
         "Kostenloser Einstieg · einmalige Freischaltung",
         "Offline",
+        "Kein Konto",
+        "Kein Tracking",
+        "Privat / auf dem Gerät",
         "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/wordmatelite.html",
@@ -2443,12 +2838,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Kein Konto",
         "Keine Werbung",
-        "Kein Tracking"
+        "Kein Tracking",
+        "Privat / auf dem Gerät"
       ],
       "device_surfaces": [
         "widget",
@@ -2464,6 +2861,7 @@
         "Kein Konto",
         "Keine Werbung",
         "Kein Tracking",
+        "Privat / auf dem Gerät",
         "Widget",
         "Apple Watch",
         "App Store · 9,99 €"

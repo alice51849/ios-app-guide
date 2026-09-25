@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "隱私優先／裝置端",
         "App Store · 免費"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "付費下載",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "免帳號"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "照片與實用工具",
         "付費下載",
+        "免帳號",
+        "Apple Watch",
         "App Store · $190.00",
         "★ 5.0/5 · 1"
       ],
@@ -129,13 +142,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "主畫面小工具"
+      ],
       "badge_labels": [
         "生活",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
+        "主畫面小工具",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -280,13 +315,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "無廣告",
+        "隱私優先／裝置端"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "學習",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "無廣告",
+        "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -328,13 +374,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "付費下載",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "免帳號"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
         "付費下載",
+        "離線使用",
+        "免帳號",
         "App Store · $190.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
@@ -373,13 +427,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "無廣告"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
+        "無廣告",
+        "Apple Watch",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html",
@@ -418,8 +482,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "隱私優先／裝置端"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -429,6 +499,8 @@
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "隱私優先／裝置端",
         "主畫面小工具",
         "App Store · 免費"
       ],
@@ -468,13 +540,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "無廣告"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -517,9 +597,17 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -527,6 +615,10 @@
       "badge_labels": [
         "健康",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -572,14 +664,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "主畫面小工具",
         "Apple Watch"
       ],
       "badge_labels": [
         "兒童與學習",
         "付費下載",
+        "主畫面小工具",
         "Apple Watch",
         "App Store · $390.00"
       ],
@@ -619,13 +714,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "免帳號"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "Apple Watch",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dailymatelite.html",
@@ -664,13 +769,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "主畫面小工具",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
+        "主畫面小工具",
+        "Apple Watch",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html",
@@ -711,11 +838,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "離線使用",
-        "免帳號"
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -724,6 +857,9 @@
         "付費下載",
         "離線使用",
         "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · $150.00",
         "★ 5.0/5 · 1"
       ],
@@ -833,10 +969,14 @@
       "purchase_label": "付費下載",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
+        "無廣告",
         "無追蹤",
         "隱私優先／裝置端"
       ],
@@ -845,6 +985,8 @@
       "badge_labels": [
         "理財與旅行",
         "付費下載",
+        "免帳號",
+        "無廣告",
         "無追蹤",
         "隱私優先／裝置端",
         "App Store · $150.00",
@@ -952,13 +1094,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/ledmovingtext.html",
@@ -998,11 +1157,15 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
         "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -1010,7 +1173,9 @@
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1054,9 +1219,11 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "免帳號",
         "無廣告"
       ],
       "device_surfaces": [],
@@ -1064,6 +1231,7 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "無廣告",
         "App Store · 免費",
         "★ 4.6/5 · 7"
@@ -1107,17 +1275,23 @@
       "purchase_label": "付費下載",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "免帳號",
+        "無廣告",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
         "付費下載",
+        "免帳號",
         "無廣告",
+        "隱私優先／裝置端",
         "App Store · $290.00",
         "★ 4.0/5 · 2"
       ],
@@ -1160,9 +1334,11 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "離線使用",
         "無廣告"
       ],
       "device_surfaces": [],
@@ -1170,6 +1346,7 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "離線使用",
         "無廣告",
         "App Store · 免費",
         "★ 4.5/5 · 2"
@@ -1213,17 +1390,23 @@
       "purchase_label": "付費下載",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "離線使用",
+        "無廣告",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
         "付費下載",
+        "離線使用",
         "無廣告",
+        "隱私優先／裝置端",
         "App Store · $290.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1263,9 +1446,11 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "免帳號",
         "無廣告"
       ],
       "device_surfaces": [],
@@ -1273,6 +1458,7 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1316,10 +1502,12 @@
       "purchase_label": "付費下載",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "無廣告",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1327,6 +1515,7 @@
         "兒童與學習",
         "付費下載",
         "無廣告",
+        "隱私優先／裝置端",
         "App Store · $290.00",
         "★ 5.0/5 · 1"
       ],
@@ -1369,17 +1558,26 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
       ],
@@ -1422,17 +1620,23 @@
       "purchase_label": "付費下載",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "免帳號",
+        "無廣告",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
         "付費下載",
+        "免帳號",
         "無廣告",
+        "隱私優先／裝置端",
         "App Store · $190.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1472,17 +1676,23 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "離線使用",
+        "無廣告",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "離線使用",
         "無廣告",
+        "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
       ],
@@ -1525,20 +1735,31 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
         "無廣告",
-        "無追蹤"
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "主畫面小工具"
+      ],
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "無廣告",
         "無追蹤",
+        "隱私優先／裝置端",
+        "主畫面小工具",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -1586,12 +1807,17 @@
       "privacy_labels": [
         "無廣告"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
         "無廣告",
+        "Apple Watch",
         "App Store · 免費",
         "★ 5.0/5 · 3"
       ],
@@ -1706,13 +1932,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html",
@@ -1751,13 +1991,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "無廣告",
+        "隱私優先／裝置端"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
+        "隱私優先／裝置端",
         "App Store · 免費",
         "★ 3.0/5 · 2"
       ],
@@ -1800,9 +2051,17 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -1810,6 +2069,10 @@
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費"
       ],
@@ -1849,13 +2112,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "主畫面小工具"
+      ],
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
+        "主畫面小工具",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/savetag.html",
@@ -1895,9 +2177,17 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -1905,6 +2195,10 @@
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1949,11 +2243,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "離線使用",
-        "無廣告"
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1961,7 +2261,10 @@
         "睡眠與專注",
         "免費開始 · 一次性解鎖",
         "離線使用",
+        "免帳號",
         "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
       ],
@@ -2003,13 +2306,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "隱私優先／裝置端"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 一次性解鎖",
+        "隱私優先／裝置端",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/shotinbox.html",
@@ -2049,9 +2357,15 @@
       "purchase_label": "付費下載",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -2059,6 +2373,9 @@
       "badge_labels": [
         "照片與實用工具",
         "付費下載",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · $190.00"
       ],
@@ -2099,10 +2416,18 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "離線使用"
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2110,6 +2435,10 @@
         "照片與實用工具",
         "免費開始 · 一次性解鎖",
         "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html",
@@ -2149,9 +2478,15 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -2159,6 +2494,9 @@
       "badge_labels": [
         "效率工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -2202,17 +2540,37 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "無廣告"
+        "離線使用",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "主畫面小工具",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
+        "離線使用",
+        "免帳號",
         "無廣告",
+        "無追蹤",
+        "隱私優先／裝置端",
+        "主畫面小工具",
+        "Apple Watch",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html",
@@ -2251,13 +2609,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "免帳號",
+        "無廣告"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "旅行",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
       ],
@@ -2302,11 +2668,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "離線使用",
         "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -2316,6 +2686,8 @@
         "付費下載",
         "離線使用",
         "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · $190.00",
         "★ 5.0/5 · 2"
@@ -2359,9 +2731,15 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [],
@@ -2369,6 +2747,9 @@
       "badge_labels": [
         "照片與實用工具",
         "免費開始 · 一次性解鎖",
+        "免帳號",
+        "無廣告",
+        "無追蹤",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -2411,13 +2792,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "免帳號"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "更多",
         "免費開始 · 一次性解鎖",
+        "免帳號",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaidlite.html",
@@ -2457,10 +2843,16 @@
       "purchase_label": "免費開始 · 一次性解鎖",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "離線使用"
+        "離線使用",
+        "免帳號",
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2468,6 +2860,9 @@
         "兒童與學習",
         "免費開始 · 一次性解鎖",
         "離線使用",
+        "免帳號",
+        "無追蹤",
+        "隱私優先／裝置端",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/wordmatelite.html",
@@ -2509,12 +2904,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "免帳號",
         "無廣告",
-        "無追蹤"
+        "無追蹤",
+        "隱私優先／裝置端"
       ],
       "device_surfaces": [
         "widget",
@@ -2530,6 +2927,7 @@
         "免帳號",
         "無廣告",
         "無追蹤",
+        "隱私優先／裝置端",
         "主畫面小工具",
         "Apple Watch",
         "App Store · $290.00",

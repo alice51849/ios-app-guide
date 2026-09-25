@@ -2,7 +2,7 @@
 title: "ଆପଲ୍ ଓୟାଚ୍ ସହିତ ଯାତ୍ରୀଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ବ୍ୟବହାରିକ ଭାଷା ବାକ୍ୟାଂଶ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
+- ଉଇଜେଟ
 - Apple Watch
 - App Store · ₹ 1,199
 

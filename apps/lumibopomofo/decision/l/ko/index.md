@@ -2,7 +2,7 @@
 title: "아이폰에서 아이들이 주음(주음부호) 배우기에 가장 좋은 보포모포 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
 - 광고 없음
 - App Store · 무료
 

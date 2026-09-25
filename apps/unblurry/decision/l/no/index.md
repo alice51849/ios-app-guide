@@ -2,7 +2,7 @@
 title: "beste app for å fikse uklare bilder av barn på iPhone"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Barn holder aldri helt stille, så myk fokus og kameraristing er uunngåelig
 
 - Foto og verktøy
 - Gratis å starte
+- Ingen konto
+- Ingen annonser
+- Ingen sporing
 - Privat / på enheten
 - App Store · Gratis
 

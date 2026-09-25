@@ -2,7 +2,7 @@
 title: "Apple Watch対応・通勤中におすすめの語彙アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - アカウント不要
 - 広告なし
 - 追跡なし
+- プライベート／端末内
 - ウィジェット
 - Apple Watch
 - App Store · ¥1,500

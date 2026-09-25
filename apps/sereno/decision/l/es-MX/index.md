@@ -2,7 +2,7 @@
 title: "mejor app de ruido blanco para dormir sin suscripción"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Para dormir, una suscripción que molesta cada mes es lo opuesto a descansar. Si
 - Sueño y concentración
 - Gratis para empezar · desbloqueo único
 - Sin conexión
+- Sin cuenta
 - Sin anuncios
+- Sin rastreo
+- Privado / en el dispositivo
 - App Store · Gratis
 
 [Obtén Sereno en la App Store →](https://apps.apple.com/mx/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

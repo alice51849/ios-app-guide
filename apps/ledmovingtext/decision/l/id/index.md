@@ -2,7 +2,7 @@
 title: "LED Moving Text — Papan teks menyala di layar | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Ketik satu kalimat lalu angkat iPhone. Dari barisan paling belakang, dari ujung 
 
 - Lainnya
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
+- Tanpa akun
+- Tanpa iklan
+- Tanpa pelacakan
+- Privat / di perangkat
 - App Store · Gratis
 
 [Dapatkan LED Moving Text di App Store](https://apps.apple.com/id/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

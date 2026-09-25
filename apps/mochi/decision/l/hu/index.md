@@ -2,7 +2,7 @@
 title: "legjobb egyszerű teendőlista alkalmazás iPhone-on előfizetés nélkül"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy t
 - Produktivitás
 - Ingyenes kezdés
 - Nincs reklám
+- Apple Watch
 - App Store · Ingyenes
 
 [Szerezze be a Mochi-t az App Store-ból →](https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

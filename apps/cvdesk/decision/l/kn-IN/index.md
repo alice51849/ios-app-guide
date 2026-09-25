@@ -2,7 +2,7 @@
 title: "ವೃತ್ತಿ ಬದಲಾವಣೆಗಾರರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ರೆಸ್ಯೂಮ್ ನಿರ್ಮಾಪಕ ಅಪ್ಲಿಕೇಶನ್ 2026"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ಉತ್ಪಾದಕತೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ CV ಡೆಸ್ಕ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

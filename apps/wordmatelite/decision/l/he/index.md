@@ -2,7 +2,7 @@
 title: "Wordmate Lite: לומדים שפות — חמש מילים ביום, דקה אחת | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ publisher: "Lumi Studio"
 - ילדים ולמידה
 - התחלה ללא תשלום
 - לא מקוון
+- ללא חשבון
+- ללא מעקב
+- פרטי / במכשיר
 - App Store · בחינם
 
 [הורידו את Wordmate Lite: לומדים שפות מה-App Store](https://apps.apple.com/il/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

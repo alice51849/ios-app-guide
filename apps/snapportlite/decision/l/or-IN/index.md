@@ -2,7 +2,7 @@
 title: "Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ — ବାସାରେ ID ଫଟୋ ସୃଷ୍ଟି କରନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - ପାସପୋର୍ଟ, ଭିସା, ଓ ଡକ୍ୟୁମ�
 - ଫଟୋ ଏବଂ ସାଧନ
 - ମୁକ୍ତ ଆରମ୍ଭ
 - ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରୁ Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

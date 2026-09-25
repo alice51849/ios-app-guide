@@ -2,7 +2,7 @@
 title: "iPhone ਲਈ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵਿਦਿਆਤਮਕ ਖੇਡ ਐਪ, ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਆਫਲਾਈਨ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - App Store · ਮੁਫ਼ਤ
 

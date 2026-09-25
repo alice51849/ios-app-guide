@@ -2,7 +2,7 @@
 title: "Snapport Lite: Fai fototessere — Crea foto tessera a casa | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Realizza foto per passaporto, visto e documenti con guide di dim
 - Foto e utilità
 - Gratis per iniziare · sblocco unico
 - Offline
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
+- Privato / su dispositivo
 - App Store · Gratis
 
 [Scarica Snapport Lite: Fai fototessere sull'App Store](https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

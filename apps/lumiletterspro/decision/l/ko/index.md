@@ -2,7 +2,7 @@
 title: "홈스쿨 유치원 준비를 위한 최고의 완전한 파닉스 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 유료 다운로드
+- 오프라인
 - 광고 없음
+- 프라이빗 / 기기 내
 - App Store · ￦15,000
 
 [App Store에서 Lumi Letters Pro 받기 →](https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "WiFi Aid: নেটওয়ার্ক সমস্যা — নেটওয়ার্ক পরীক্ষা ও প্রমাণ | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,8 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - ছবি ও ইউটিলিটি
 - পেইড ডাউনলোড
+- কোনও অ্যাকাউন্ট নেই
+- Apple Watch
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে WiFi Aid: নেটওয়ার্ক সমস্যা-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

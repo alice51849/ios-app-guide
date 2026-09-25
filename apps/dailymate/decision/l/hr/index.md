@@ -2,7 +2,7 @@
 title: "najbolja praktična aplikacija za fraze na jeziku za putnike s Apple Watchom"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih
 
 - Djeca i učenje
 - Plaćeno preuzimanje
+- Widget
 - Apple Watch
 - App Store · 12,99 €
 

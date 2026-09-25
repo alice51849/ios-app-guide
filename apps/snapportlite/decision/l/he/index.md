@@ -2,7 +2,7 @@
 title: "Snapport Lite: צלם תמונת דרכון — צור תמונות זיהוי בבית | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - צור תמונות דרכון, ויזה ומסמכים עם ה�
 - צילום וכלי עזר
 - התחלה ללא תשלום
 - לא מקוון
+- ללא חשבון
+- ללא פרסומות
+- ללא מעקב
+- פרטי / במכשיר
 - App Store · בחינם
 
 [הורידו את Snapport Lite: צלם תמונת דרכון מה-App Store](https://apps.apple.com/il/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

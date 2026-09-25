@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: கடைசி முறை — செய்த நேரத்தை நினைவில் கொள்க | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - வாழ்க்கை முறை
 - இலவசமாக தொடங்கவும்
+- ஆஃப்லைன்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
+- விட்ஜெட்
 - App Store · இலவசம்
 
 [App Store-இல் Mochi DoneStamp: கடைசி முறை-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "אפליקציית אוצר מילים למשתמשים עסוקים עם Apple Watch"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - ללא חשבון
 - ללא פרסומות
 - ללא מעקב
+- פרטי / במכשיר
 - וידג'ט
 - Apple Watch
 - App Store · ₪29.90

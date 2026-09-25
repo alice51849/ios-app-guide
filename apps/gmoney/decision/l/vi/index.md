@@ -2,7 +2,7 @@
 title: "ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động
 - Tải xuống trả phí
 - Ngoại tuyến
 - Không tài khoản
+- Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
 - App Store · 149.000đ
 
 [Tải G+Money trên App Store →](https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

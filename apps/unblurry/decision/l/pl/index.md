@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do poprawiania rozmytych zdjęć dzieci na iPhone"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Dzieci nigdy nie stoją nieruchomo, więc rozmycia i poruszenia są nieuniknione
 
 - Zdjęcia i narzędzia
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
+- Bez reklam
+- Bez śledzenia
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

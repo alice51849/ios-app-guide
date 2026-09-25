@@ -2,7 +2,7 @@
 title: "Stay Clock: นาฬิกาตั้งโต๊ะพลิก — เวลาและปฏิทินที่เปิดค้างตลอด | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock เปลี่ยน iPhone หรือ iPad ของคุณใ�
 
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ออฟไลน์
+- ไม่มีบัญชี
 - ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
+- วิดเจ็ต
+- Apple Watch
 - App Store · ฟรี
 
 [ดาวน์โหลด Stay Clock: นาฬิกาตั้งโต๊ะพลิก บน App Store](https://apps.apple.com/th/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

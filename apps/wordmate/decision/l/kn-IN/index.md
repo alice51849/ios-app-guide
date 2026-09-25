@@ -2,7 +2,7 @@
 title: "Apple Watch ಹೊಂದಿರುವ ಬ್ಯುಸಿ ಪ್ರಯಾಣಿಕರಿಗೆ ಅತ್ಯುತ್ತಮ ಪದಕೋಶ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - ವಿಜೆಟ್
 - Apple Watch
 - App Store · ₹ 999

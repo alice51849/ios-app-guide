@@ -2,7 +2,7 @@
 title: "paras matikkapeli lapsille loogisten taitojen kehittämiseen iPhonella"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Paras lasten matikkasovellus harjoittaa päättelyä — kuvioita, sarjoja, avar
 
 - Lapset & oppiminen
 - Ilmainen aloitus
+- Ei tiliä
 - Ei mainoksia
 - App Store · Ilmainen
 

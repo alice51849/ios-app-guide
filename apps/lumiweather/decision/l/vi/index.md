@@ -2,7 +2,7 @@
 title: "ứng dụng thời tiết tốt nhất giúp phụ huynh lên kế hoạch cho trẻ ra ngoài"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt đ�
 
 - Trẻ em & học tập
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
 - Không quảng cáo
 - Không theo dõi
+- Riêng tư / trên thiết bị
+- Tiện ích
 - App Store · Miễn phí
 
 [Tải Lumi Weather trên App Store →](https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - Trẻ em & học tập
 - Tải xuống trả phí
 - Không quảng cáo
+- Riêng tư / trên thiết bị
 - App Store · 299.000đ
 
 [Tải Lumi Math Pro trên App Store →](https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

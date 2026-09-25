@@ -2,7 +2,7 @@
 title: "אפליקציית פונטיקה מלאה להכנה לגן בלמידה ביתית"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ילדים ולמידה
 - הורדה בתשלום
+- לא מקוון
 - ללא פרסומות
+- פרטי / במכשיר
 - App Store · ₪29.90
 
 [קבל את Lumi Letters Pro ב-App Store →](https://apps.apple.com/il/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ไม่มีบัญชี",
+        "Apple Watch",
         "App Store · ฿199.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "วิดเจ็ต"
+      ],
       "badge_labels": [
         "ไลฟ์สไตล์",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "การศึกษา",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
         "App Store · ฿199.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ไม่มีโฆษณา"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีโฆษณา",
+        "Apple Watch",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ส่วนตัว / บนอุปกรณ์",
         "วิดเจ็ต",
         "App Store · ฟรี"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "สุขภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "วิดเจ็ต",
         "Apple Watch"
       ],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "ดาวน์โหลดแบบชำระเงิน",
+        "วิดเจ็ต",
         "Apple Watch",
         "App Store · ฿399.00"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "Apple Watch",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "วิดเจ็ต",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
+        "Apple Watch",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ออฟไลน์",
-        "ไม่มีบัญชี"
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "ดาวน์โหลดแบบชำระเงิน",
         "ออฟไลน์",
         "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿199.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -818,10 +954,14 @@
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
         "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
@@ -830,6 +970,8 @@
       "badge_labels": [
         "เงิน & การเดินทาง",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
         "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿199.00"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
         "App Store · ฟรี"
       ],
@@ -1083,17 +1251,23 @@
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿299.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1133,9 +1307,11 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "ออฟไลน์",
         "ไม่มีโฆษณา"
       ],
       "device_surfaces": [],
@@ -1143,6 +1319,7 @@
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
         "ไม่มีโฆษณา",
         "App Store · ฟรี"
       ],
@@ -1183,17 +1360,23 @@
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ออฟไลน์",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ออฟไลน์",
         "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿299.00",
         "★ 5.0/5 · 1"
       ],
@@ -1236,9 +1419,11 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา"
       ],
       "device_surfaces": [],
@@ -1246,6 +1431,7 @@
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
         "App Store · ฟรี"
       ],
@@ -1286,10 +1472,12 @@
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1297,6 +1485,7 @@
         "เด็ก & การเรียนรู้",
         "ดาวน์โหลดแบบชำระเงิน",
         "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿299.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1336,17 +1525,26 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1386,17 +1584,23 @@
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿199.00"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1436,17 +1640,23 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ออฟไลน์",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
         "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -1486,20 +1696,31 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
-        "ไม่มีการติดตาม"
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "วิดเจ็ต"
+      ],
       "badge_labels": [
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
         "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1544,12 +1765,17 @@
       "privacy_labels": [
         "ไม่มีโฆษณา"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
         "ไม่มีโฆษณา",
+        "Apple Watch",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1658,13 +1884,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/onepageppt.html",
@@ -1703,13 +1943,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1749,9 +2000,17 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -1759,6 +2018,10 @@
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -1798,13 +2061,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "วิดเจ็ต"
+      ],
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/savetag.html",
@@ -1844,9 +2126,17 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -1854,6 +2144,10 @@
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -1895,11 +2189,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ออฟไลน์",
-        "ไม่มีโฆษณา"
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1907,7 +2207,10 @@
         "การนอนหลับ & สมาธิ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
         "ออฟไลน์",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1946,13 +2249,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/shotinbox.html",
@@ -1992,9 +2300,15 @@
       "purchase_label": "ดาวน์โหลดแบบชำระเงิน",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -2002,6 +2316,9 @@
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "ดาวน์โหลดแบบชำระเงิน",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿199.00"
       ],
@@ -2042,10 +2359,18 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2053,6 +2378,10 @@
         "รูปภาพ & เครื่องมือ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
         "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/snapportlite.html",
@@ -2092,9 +2421,15 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -2102,6 +2437,9 @@
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -2142,17 +2480,37 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ไม่มีโฆษณา"
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "วิดเจ็ต",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
+        "Apple Watch",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/stayclock.html",
@@ -2191,13 +2549,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "การเดินทาง",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2239,11 +2605,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ออฟไลน์",
         "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -2253,6 +2623,8 @@
         "ดาวน์โหลดแบบชำระเงิน",
         "ออฟไลน์",
         "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฿199.00"
       ],
@@ -2293,9 +2665,15 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
@@ -2303,6 +2681,9 @@
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
         "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
@@ -2342,13 +2723,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ไม่มีบัญชี"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "เพิ่มเติม",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
+        "ไม่มีบัญชี",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html",
@@ -2388,10 +2774,16 @@
       "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2399,6 +2791,9 @@
         "เด็ก & การเรียนรู้",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
         "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/wordmatelite.html",
@@ -2440,12 +2835,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
-        "ไม่มีการติดตาม"
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [
         "widget",
@@ -2461,6 +2858,7 @@
         "ไม่มีบัญชี",
         "ไม่มีโฆษณา",
         "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
         "วิดเจ็ต",
         "Apple Watch",
         "App Store · ฿299.00"

@@ -2,7 +2,7 @@
 title: "2026 के लिए करियर बदलने वालों के लिए सर्वश्रेष्ठ रिज्यूमे बिल्डर ऐप"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- कोई खाता नहीं
+- कोई विज्ञापन नहीं
 - App Store · मुफ़्त
 
 [App Store पर CV डेस्क प्राप्त करें →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "సబ్‌స్క్రిప్షన్ లేకుండా నిద్రపోవడానికి ఉత్తమ వైట్ నాయిస్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - నిద్ర & దృష్టి
 - ఉచితంగా ప్రారంభించండి
 - ఆఫ్‌లైన్
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
+- ట్రాకింగ్ లేదు
+- గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
 [App Storeలో Sereno పొందండి →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

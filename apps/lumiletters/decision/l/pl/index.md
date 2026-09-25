@@ -2,7 +2,7 @@
 title: "najlepsza edukacyjna gra dla dzieci bez reklam na iPhonie"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Dla małego dziecka kluczowe są brak reklam i brak zbierania danych — aplikac
 
 - Dzieci i nauka
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
 - Bez reklam
 - App Store · Bezpłatnie
 

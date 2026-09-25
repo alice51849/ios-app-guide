@@ -2,7 +2,7 @@
 title: "WiFi Aid: Finn nettverksfeil — Nettverksdiagnose med bevis | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS
 
 - Foto og verktøy
 - Betalt nedlasting
+- Ingen konto
+- Apple Watch
 - App Store · 79,00 kr
 
 [Last ned WiFi Aid: Finn nettverksfeil fra App Store](https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

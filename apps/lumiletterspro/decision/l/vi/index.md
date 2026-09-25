@@ -2,7 +2,7 @@
 title: "ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đ
 
 - Trẻ em & học tập
 - Tải xuống trả phí
+- Ngoại tuyến
 - Không quảng cáo
+- Riêng tư / trên thiết bị
 - App Store · 299.000đ
 
 [Tải Lumi Letters Pro trên App Store →](https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

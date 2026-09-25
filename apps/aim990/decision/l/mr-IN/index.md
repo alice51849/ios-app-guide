@@ -2,7 +2,7 @@
 title: "iPhone साठी सर्वोत्तम TOEIC तयारी अॅप ऑफलाइन अभ्यास योजना"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - शिक्षण
 - सुरुवात करण्यासाठी मोफत
+- ऑफलाइन
+- जाहिराती नाहीत
+- खाजगी / उपकरणावर
 - App Store · मोफत
 
 [App Store वरून Aim990 मिळवा →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

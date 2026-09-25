@@ -2,7 +2,7 @@
 title: "melhor app completo de fonética para preparação de alfabetização em casa"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Famílias se preparando para a alfabetização precisam de um caminho completo q
 
 - Infantil e aprendizado
 - Download pago
+- Offline
 - Sem anúncios
+- Privado / no dispositivo
 - App Store · R$ 59,90
 
 [Baixe Lumi Letters Pro na App Store →](https://apps.apple.com/br/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

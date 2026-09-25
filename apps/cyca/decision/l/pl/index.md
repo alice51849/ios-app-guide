@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do śledzenia cyklu bez konta na iPhone"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ W kategorii, gdzie wrażliwość danych jest kluczowa, odpowiedni tracker cyklu 
 
 - Zdrowie
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
+- Bez konta
+- Bez reklam
+- Bez śledzenia
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

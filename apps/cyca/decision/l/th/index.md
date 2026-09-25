@@ -2,7 +2,7 @@
 title: "แอปติดตามรอบเดือนที่ดีที่สุด ไม่ต้องมีบัญชีสำหรับ iPhone"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - สุขภาพ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ออฟไลน์
+- ไม่มีบัญชี
+- ไม่มีโฆษณา
+- ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 

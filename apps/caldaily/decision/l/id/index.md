@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator & tema — Widget, alat, riwayat rapi | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Kalkulator yang benar-benar akan terus Anda pakai, karena ia mengingat apa yang 
 
 - Lainnya
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Privat / di perangkat
 - Widget
 - App Store · Gratis
 

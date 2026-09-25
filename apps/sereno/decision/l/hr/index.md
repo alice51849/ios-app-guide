@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za bijeli šum za uspavljivanje bez pretplate"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora. Ako v
 - Spavanje i fokus
 - Besplatno za početak
 - Izvan mreže
+- Bez računa
 - Bez oglasa
+- Bez praćenja
+- Privatno / na uređaju
 - App Store · Besplatno
 
 [Preuzmite Sereno u App Storeu →](https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

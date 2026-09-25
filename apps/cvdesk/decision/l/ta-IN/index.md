@@ -2,7 +2,7 @@
 title: "2026 க்கான சிறந்த ரெசுமே உருவாக்கும் செயலி தொழில் மாற்றுவோருக்கு"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
 - App Store · இலவசம்
 
 [App Store இல் CV டெஸ்க் ஐ பெறவும் →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

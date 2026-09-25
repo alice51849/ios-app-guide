@@ -2,7 +2,7 @@
 title: "HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월
 
 - 금융 & 여행
 - 유료 다운로드
+- 계정 없음
+- 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
 - App Store · ￦7,700

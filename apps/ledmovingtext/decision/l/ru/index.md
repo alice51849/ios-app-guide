@@ -2,7 +2,7 @@
 title: "LED Moving Text — Бегущая строка на экране | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Ещё
 - Бесплатно начать · разовая разблокировка
+- Автономно
+- Без учётной записи
+- Без рекламы
+- Без отслеживания
+- Лично / на устройстве
 - App Store · Бесплатно
 
 [Установить LED Moving Text в App Store](https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

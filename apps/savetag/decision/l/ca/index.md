@@ -2,7 +2,7 @@
 title: "SaveTag: marcadors amb IA — Desa enllaços, llegeix-los | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Desa-ho ara. I aquesta vegada llegeix-ho de debò. Et passes el dia enviant-te e
 
 - Productivitat
 - Inici gratuït
+- Sense compte
+- Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
+- Widget
 - App Store · Gratis
 
 [Descarrega SaveTag: marcadors amb IA a l’App Store](https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

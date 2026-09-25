@@ -2,7 +2,7 @@
 title: "Stay Clock: फ़्लिप डेस्क क्लॉक — हमेशा ऑन समय और कैलेंडर | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock आपके iPhone या iPad को एक ऐसी हमेश�
 
 - और अधिक
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- ऑफ़लाइन
+- कोई खाता नहीं
 - कोई विज्ञापन नहीं
+- कोई ट्रैकिंग नहीं
+- निजी / डिवाइस पर
+- विजेट
+- Apple Watch
 - App Store · मुफ़्त
 
 [App Store पर Stay Clock: फ़्लिप डेस्क क्लॉक पाएँ](https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

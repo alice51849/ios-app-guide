@@ -2,7 +2,7 @@
 title: "Aim990 — আপনার TOEIC প্রস্তুতির সঙ্গী | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - শিক্ষা
 - বিনামূল্যে শুরু
+- অফলাইন
+- কোনও বিজ্ঞাপন নেই
+- গোপনীয় / ডিভাইসে
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Aim990-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

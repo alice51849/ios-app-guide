@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na plánování itineráře cesty pro iPhone"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní pl
 - Placené stažení
 - Offline
 - Bez účtu
+- Bez reklam
+- Bez sledování
 - Soukromé / v zařízení
 - App Store · 149,00 Kč
 

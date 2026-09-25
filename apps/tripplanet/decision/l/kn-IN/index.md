@@ -2,7 +2,7 @@
 title: "ಕುಟುಂಬ ಪ್ರಯಾಣಗಳಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಚಟುವಟಿಕೆ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಆಫ್‌ಲೈನ್
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
 [Trip Planet: Kids Quest ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

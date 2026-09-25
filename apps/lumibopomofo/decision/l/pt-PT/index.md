@@ -2,7 +2,7 @@
 title: "melhor app bopomofo para crianças aprenderem zhuyin no iPhone"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Para uma criança a aprender Zhuyin pela primeira vez, o app deve cobrir os 37 s
 
 - Crianças e aprendizagem
 - Grátis para começar · desbloqueio único
+- Sem conta
 - Sem anúncios
 - App Store · Grátis
 

@@ -2,7 +2,7 @@
 title: "SaveTag: KI Lesezeichen — Links sichern, später lesen | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Jetzt sichern. Und diesmal wirklich lesen. Den ganzen Tag schickst du dir selbst
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- Keine Werbung
+- Kein Tracking
+- Privat / auf dem Gerät
+- Widget
 - App Store · Kostenlos
 
 [SaveTag: KI Lesezeichen im App Store laden](https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

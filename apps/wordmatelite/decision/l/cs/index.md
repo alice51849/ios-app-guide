@@ -2,7 +2,7 @@
 title: "Wordmate Lite: slovíčka denně — Jedna minuta, pět nových slov | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Chcete se konečně pohnout v cizím jazyce, jenže večer zase uteče a nová s
 - Děti a učení
 - Zdarma na začátek
 - Offline
+- Bez účtu
+- Bez sledování
+- Soukromé / v zařízení
 - App Store · Zdarma
 
 [Stáhněte si Wordmate Lite: slovíčka denně v App Storu](https://apps.apple.com/cz/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

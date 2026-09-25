@@ -2,7 +2,7 @@
 title: "Mask My File: Odstraňte údaje — Skryjte citlivé informace | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najd
 
 - Fotografie a nástroje
 - Zdarma na začátek
+- Bez účtu
 - Soukromé / v zařízení
 - App Store · Zdarma
 

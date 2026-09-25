@@ -2,7 +2,7 @@
 title: "이중언어 어린이를 위한 완전한 주음부호 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 유료 다운로드
+- 계정 없음
 - 광고 없음
+- 프라이빗 / 기기 내
 - App Store · ￦15,000
 
 [App Store에서 Lumi Bopomofo Pro 다운로드 →](https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

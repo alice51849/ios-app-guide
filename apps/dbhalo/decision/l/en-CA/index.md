@@ -2,7 +2,7 @@
 title: "dB Halo: Sound Meter — Spectrum, Dose & Sleep Journal | iOS App"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/en-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Whether it is a condo furnace on a winter night, a neighbour's renovation, a wor
 
 - More
 - Free to start · one-time unlock
+- No account
+- No ads
+- No tracking
+- Private / on-device
+- Widget
+- Apple Watch
 - App Store · Free
 
 [Get dB Halo: Sound Meter on the App Store](https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

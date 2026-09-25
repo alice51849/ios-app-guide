@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na blokování sociálních sítí při studiu pro iPhone"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Během zkoušek není vůle nástrojem — je to tvrdá časová blokace. Práv�
 
 - Produktivita
 - Zdarma na začátek
+- Bez účtu
 - Bez reklam
+- Bez sledování
 - Soukromé / v zařízení
 - App Store · Zdarma
 

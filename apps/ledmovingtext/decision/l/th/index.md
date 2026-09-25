@@ -2,7 +2,7 @@
 title: "LED Moving Text — ป้ายไฟวิ่งบนหน้าจอ | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ออฟไลน์
+- ไม่มีบัญชี
+- ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
 [ดาวน์โหลด LED Moving Text บน App Store](https://apps.apple.com/th/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

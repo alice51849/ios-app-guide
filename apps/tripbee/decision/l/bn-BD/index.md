@@ -2,7 +2,7 @@
 title: "TripBee: ট্রিপ প্ল্যানার — ভ্রমণ রুট ও প্যাকিং লিস্ট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,8 @@ TripBee Pro-এর মাধ্যমে এক সুন্দর, ব্যক
 - পেইড ডাউনলোড
 - অফলাইন
 - কোনও অ্যাকাউন্ট নেই
+- কোনও বিজ্ঞাপন নেই
+- কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে TripBee: ট্রিপ প্ল্যানার-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।

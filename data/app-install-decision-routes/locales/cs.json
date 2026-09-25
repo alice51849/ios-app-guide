@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "Fotografie a nástroje",
         "Zdarma na začátek",
+        "Bez účtu",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "Placené stažení",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Bez účtu"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Fotografie a nástroje",
         "Placené stažení",
+        "Bez účtu",
+        "Apple Watch",
         "App Store · 149,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/wifiaid.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
       "badge_labels": [
         "Životní styl",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/mochidonestamp.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez reklam",
+        "Soukromé / v zařízení"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Vzdělávání",
         "Zdarma na začátek",
+        "Offline",
+        "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "Placené stažení",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Děti a učení",
         "Placené stažení",
+        "Offline",
+        "Bez účtu",
         "App Store · 149,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/aim990plus.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Bez reklam"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
+        "Bez reklam",
+        "Apple Watch",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Bez účtu",
+        "Soukromé / v zařízení"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Soukromé / v zařízení",
         "Widget",
         "App Store · Zdarma"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "Zdraví",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "Widget",
         "Apple Watch"
       ],
       "badge_labels": [
         "Děti a učení",
         "Placené stažení",
+        "Widget",
         "Apple Watch",
         "App Store · 299,00 Kč"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Bez účtu"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Apple Watch",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
+        "Apple Watch",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
-        "Bez účtu"
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "Placené stažení",
         "Offline",
         "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · 129,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -882,10 +1018,14 @@
       "purchase_label": "Placené stažení",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
         "Bez sledování",
         "Soukromé / v zařízení"
       ],
@@ -894,6 +1034,8 @@
       "badge_labels": [
         "Finance a cestování",
         "Placené stažení",
+        "Bez účtu",
+        "Bez reklam",
         "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · 129,00 Kč"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
         "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
+        "Bez účtu",
         "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Bez účtu",
         "Bez reklam"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Bez účtu",
         "Bez reklam",
         "App Store · Zdarma"
       ],
@@ -1083,17 +1251,23 @@
       "purchase_label": "Placené stažení",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Bez účtu",
+        "Bez reklam",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Děti a učení",
         "Placené stažení",
+        "Bez účtu",
         "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · 249,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1133,9 +1307,11 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "Offline",
         "Bez reklam"
       ],
       "device_surfaces": [],
@@ -1143,6 +1319,7 @@
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Offline",
         "Bez reklam",
         "App Store · Zdarma"
       ],
@@ -1183,17 +1360,23 @@
       "purchase_label": "Placené stažení",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Offline",
+        "Bez reklam",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Děti a učení",
         "Placené stažení",
+        "Offline",
         "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · 249,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1233,9 +1416,11 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Bez účtu",
         "Bez reklam"
       ],
       "device_surfaces": [],
@@ -1243,6 +1428,7 @@
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Bez účtu",
         "Bez reklam",
         "App Store · Zdarma"
       ],
@@ -1283,10 +1469,12 @@
       "purchase_label": "Placené stažení",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Bez reklam",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1294,6 +1482,7 @@
         "Děti a učení",
         "Placené stažení",
         "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · 249,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1333,17 +1522,26 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Bez účtu",
         "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1383,17 +1581,23 @@
       "purchase_label": "Placené stažení",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Bez účtu",
+        "Bez reklam",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Děti a učení",
         "Placené stažení",
+        "Bez účtu",
         "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · 149,00 Kč"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1433,17 +1637,23 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Offline",
+        "Bez reklam",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Offline",
         "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -1483,20 +1693,31 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
         "Bez reklam",
-        "Bez sledování"
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
       "badge_labels": [
         "Děti a učení",
         "Zdarma na začátek",
+        "Bez účtu",
         "Bez reklam",
         "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1541,12 +1762,17 @@
       "privacy_labels": [
         "Bez reklam"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
         "Bez reklam",
+        "Apple Watch",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1655,13 +1881,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/onepageppt.html",
@@ -1700,13 +1940,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
+        "Soukromé / v zařízení"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Fotografie a nástroje",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1746,9 +1997,17 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -1756,6 +2015,10 @@
       "badge_labels": [
         "Fotografie a nástroje",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -1795,13 +2058,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/savetag.html",
@@ -1841,9 +2123,17 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -1851,6 +2141,10 @@
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -1892,11 +2186,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
-        "Bez reklam"
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1904,7 +2204,10 @@
         "Spánek a soustředění",
         "Zdarma na začátek",
         "Offline",
+        "Bez účtu",
         "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1943,13 +2246,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Soukromé / v zařízení"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Fotografie a nástroje",
         "Zdarma na začátek",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/shotinbox.html",
@@ -1989,9 +2297,15 @@
       "purchase_label": "Placené stažení",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -1999,6 +2313,9 @@
       "badge_labels": [
         "Fotografie a nástroje",
         "Placené stažení",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · 149,00 Kč"
       ],
@@ -2039,10 +2356,18 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline"
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2050,6 +2375,10 @@
         "Fotografie a nástroje",
         "Zdarma na začátek",
         "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/snapportlite.html",
@@ -2089,9 +2418,15 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -2099,6 +2434,9 @@
       "badge_labels": [
         "Produktivita",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -2139,17 +2477,37 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
+        "Offline",
+        "Bez účtu",
         "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
+        "Apple Watch",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/stayclock.html",
@@ -2188,13 +2546,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Cestování",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2236,11 +2602,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
         "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -2250,6 +2620,8 @@
         "Placené stažení",
         "Offline",
         "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · 149,00 Kč"
       ],
@@ -2290,9 +2662,15 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
@@ -2300,6 +2678,9 @@
       "badge_labels": [
         "Fotografie a nástroje",
         "Zdarma na začátek",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
         "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
@@ -2339,13 +2720,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Bez účtu"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "Více",
         "Zdarma na začátek",
+        "Bez účtu",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/wifiaidlite.html",
@@ -2385,10 +2771,16 @@
       "purchase_label": "Zdarma na začátek",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline"
+        "Offline",
+        "Bez účtu",
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2396,6 +2788,9 @@
         "Děti a učení",
         "Zdarma na začátek",
         "Offline",
+        "Bez účtu",
+        "Bez sledování",
+        "Soukromé / v zařízení",
         "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/wordmatelite.html",
@@ -2437,12 +2832,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "Bez účtu",
         "Bez reklam",
-        "Bez sledování"
+        "Bez sledování",
+        "Soukromé / v zařízení"
       ],
       "device_surfaces": [
         "widget",
@@ -2458,6 +2855,7 @@
         "Bez účtu",
         "Bez reklam",
         "Bez sledování",
+        "Soukromé / v zařízení",
         "Widget",
         "Apple Watch",
         "App Store · 249,00 Kč"

@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ਅੱਜ ਬੋਲੋ — ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਅਭਿਆਸ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
+- Apple Watch
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ DailyMate Lite: ਅੱਜ ਬੋਲੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

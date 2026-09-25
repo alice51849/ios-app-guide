@@ -2,7 +2,7 @@
 title: "iPhone के लिए सर्वश्रेष्ठ सरल टू-डू लिस्ट ऐप बिना सदस्यता के"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - उत्पादकता
 - मुफ़्त शुरुआत · एक बार अनलॉक
 - कोई विज्ञापन नहीं
+- Apple Watch
 - App Store · मुफ़्त
 
 [App Store से Mochi प्राप्त करें →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

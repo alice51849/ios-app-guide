@@ -2,7 +2,7 @@
 title: "app rutin waktu tidur terbaik untuk kanak-kanak prasekolah tanpa iklan"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Bagi kanak-kanak prasekolah, rutin waktu tidur paling berkesan apabila ia pendek
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
 - Tiada iklan
+- Tiada penjejakan
+- Peribadi / pada peranti
 - App Store · Percuma
 
 [Dapatkan Lumi Mission Planet di App Store →](https://apps.apple.com/my/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

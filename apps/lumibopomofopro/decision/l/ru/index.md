@@ -2,7 +2,7 @@
 title: "лучшее полное приложение для изучения чжуинь для билингвальных детей"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - Дети и обучение
 - Платное скачивание
+- Без учётной записи
 - Без рекламы
+- Лично / на устройстве
 - App Store · 799,00 ₽
 
 [Скачать Lumi Bopomofo Pro в App Store →](https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

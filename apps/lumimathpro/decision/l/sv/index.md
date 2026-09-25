@@ -2,7 +2,7 @@
 title: "bästa kompletta matteappen för förskola och tidiga årskurser"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ En komplett tidig matteapp ska göra räkning, taluppfattning och första operat
 - Barn & lärande
 - Betald nedladdning
 - Inga annonser
+- Privat / på enheten
 - App Store · 119,00 kr
 
 [Hämta Lumi Math Pro på App Store →](https://apps.apple.com/se/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "બાયલિંગ્વલ બાળકો માટે શ્રેષ્ઠ સંપૂર્ણ ઝુયિન એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Zhuyin શીખતા બાયલિંગ્વલ બાળકોને અ�
 
 - બાળકો અને અભ્યાસ
 - ચુકવેલ ડાઉનલોડ
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · ₹ 999
 
 [Lumi Bopomofo Pro App Store પર મેળવો →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

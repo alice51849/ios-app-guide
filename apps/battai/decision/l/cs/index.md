@@ -2,7 +2,7 @@
 title: "BattAI: Skóre kondice baterie — Jasná pravidla, zdroje a omezení | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav n
 
 - Více
 - Zdarma na začátek
+- Bez reklam
+- Apple Watch
 - App Store · Zdarma
 
 [Stáhněte si BattAI: Skóre kondice baterie v App Storu](https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

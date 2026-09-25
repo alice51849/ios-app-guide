@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — OCR: recherchez vos captures | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Vos captures, enfin rangées Retrouvez, traitez et rangez chaque capture. Les 50
 
 - Photo et utilitaire
 - Gratuit au départ · déblocage unique
+- Privé / sur l'appareil
 - App Store · Gratuit
 
 [Obtenir ShotInbox AI: Sort Screenshots sur l'App Store](https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

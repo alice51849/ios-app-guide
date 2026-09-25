@@ -2,7 +2,7 @@
 title: "iPhoneで会議を要約する最高のボイスノートアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 生産性
 - 無料で開始・一度の購入でアンロック
+- アカウント不要
+- 広告なし
+- 追跡なし
 - プライベート／端末内
 - App Store · 無料
 

@@ -2,7 +2,7 @@
 title: "legjobb fehér zaj alkalmazás elalváshoz előfizetés nélkül"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak. Ha 
 - Alvás & fókusz
 - Ingyenes kezdés
 - Offline
+- Nincs fiók
 - Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
 - App Store · Ingyenes
 
 [Szerezd be a Sereno-t az App Store-ból →](https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "bästa menscykel-appen utan konto för iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ I en kategori där datas känslighet är hela historien, håller rätt menscykel
 
 - Hälsa
 - Gratis att börja · engångsupplåsning
+- Offline
+- Inget konto
+- Inga annonser
+- Ingen spårning
 - Privat / på enheten
 - App Store · Gratis
 - ★ 2.0/5 · 1

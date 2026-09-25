@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do nauki TOEIC offline z planem nauki na iPhone"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Część 5 wygląda krótko, ale pytania z niepełnymi zdaniami mogą zabierać 
 
 - Edukacja
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
+- Bez reklam
+- Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
 [Pobierz Aim990 z App Store →](https://apps.apple.com/pl/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

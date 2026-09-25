@@ -2,7 +2,7 @@
 title: "beste educatieve spelapp voor kinderen zonder advertenties op iPhone"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Voor een jong kind is het doorslaggevend dat er geen advertenties en geen datave
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling
+- Offline
 - Geen advertenties
 - App Store · Gratis
 

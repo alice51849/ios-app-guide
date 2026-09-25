@@ -2,7 +2,7 @@
 title: "dB Halo: เครื่องวัดระดับเสียง — สเปกตรัมและปริมาณเสียงรบกวน | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
+- ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
+- วิดเจ็ต
+- Apple Watch
 - App Store · ฟรี
 
 [ดาวน์โหลด dB Halo: เครื่องวัดระดับเสียง บน App Store](https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

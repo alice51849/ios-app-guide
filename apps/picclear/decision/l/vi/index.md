@@ -2,7 +2,7 @@
 title: "ứng dụng tốt nhất để giải phóng dung lượng iPhone bằng cách xóa ảnh trùng lặp"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Ảnh & tiện ích
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

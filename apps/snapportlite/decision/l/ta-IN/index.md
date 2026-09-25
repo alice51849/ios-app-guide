@@ -2,7 +2,7 @@
 title: "Snapport Lite: ஐடி புகைப்படம் — Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - வழிகாட்டிய அளவீடுகள், ப�
 - புகைப்படம் & பயன்பாடு
 - இலவசமாக தொடங்கவும்
 - ஆஃப்லைன்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
 [App Store-இல் Snapport Lite: ஐடி புகைப்படம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

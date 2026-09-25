@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "bn-BD",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/maskmyfile.html",
@@ -95,13 +98,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
-        "পেইড ডাউনলোড"
+        "পেইড ডাউনলোড",
+        "কোনও অ্যাকাউন্ট নেই",
+        "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/bn-BD/index.html",
@@ -154,13 +167,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "উইজেট"
+      ],
       "badge_labels": [
         "জীবনধারা",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
+        "উইজেট"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/mochidonestamp.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/bn-BD/index.html",
@@ -347,13 +382,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "অফলাইন",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিক্ষা",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/aim990.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/bn-BD/index.html",
@@ -406,13 +452,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
-        "পেইড ডাউনলোড"
+        "পেইড ডাউনলোড",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/aim990plus.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/bn-BD/index.html",
@@ -465,13 +519,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "কোনও বিজ্ঞাপন নেই"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "আরও",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও বিজ্ঞাপন নেই",
+        "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/battai.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/bn-BD/index.html",
@@ -524,8 +588,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -535,6 +605,8 @@
       "badge_labels": [
         "আরও",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "গোপনীয় / ডিভাইসে",
         "উইজেট"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/caldaily.html",
@@ -588,13 +660,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "উৎপাদনশীলতা",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/cvdesk.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/bn-BD/index.html",
@@ -648,9 +728,17 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -658,6 +746,10 @@
       "badge_labels": [
         "স্বাস্থ্য",
         "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/cyca.html",
@@ -711,13 +803,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "শিশু ও শেখা",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dailymatelite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/bn-BD/index.html",
@@ -773,14 +875,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "উইজেট",
         "Apple Watch"
       ],
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
+        "উইজেট",
         "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dailymate.html",
@@ -834,13 +939,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "উইজেট",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "আরও",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
+        "উইজেট",
+        "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dbhalo.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/bn-BD/index.html",
@@ -976,11 +1103,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -988,7 +1121,10 @@
         "অর্থ ও ভ্রমণ",
         "পেইড ডাউনলোড",
         "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/gmoney.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/bn-BD/index.html",
@@ -1120,10 +1256,14 @@
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
         "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
@@ -1132,6 +1272,8 @@
       "badge_labels": [
         "অর্থ ও ভ্রমণ",
         "পেইড ডাউনলোড",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
         "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
@@ -1186,13 +1328,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "আরও",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/ledmovingtext.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/bn-BD/index.html",
@@ -1246,11 +1405,15 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -1258,7 +1421,9 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lockhour.html",
@@ -1313,9 +1478,11 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই"
       ],
       "device_surfaces": [],
@@ -1323,6 +1490,7 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofo.html",
@@ -1377,17 +1545,23 @@
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumibopomofopro.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/bn-BD/index.html",
@@ -1441,9 +1615,11 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "অফলাইন",
         "কোনও বিজ্ঞাপন নেই"
       ],
       "device_surfaces": [],
@@ -1451,6 +1627,7 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
+        "অফলাইন",
         "কোনও বিজ্ঞাপন নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiletters.html",
@@ -1505,17 +1682,23 @@
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "অফলাইন",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "অফলাইন",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiletterspro.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/bn-BD/index.html",
@@ -1569,9 +1752,11 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই"
       ],
       "device_surfaces": [],
@@ -1579,6 +1764,7 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimath.html",
@@ -1633,17 +1819,20 @@
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimathpro.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/bn-BD/index.html",
@@ -1697,17 +1886,26 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimission.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/bn-BD/index.html",
@@ -1761,17 +1959,23 @@
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimissionpro.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/bn-BD/index.html",
@@ -1825,20 +2029,31 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই",
-        "কোনও ট্র্যাকিং নেই"
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "উইজেট"
+      ],
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই",
-        "কোনও ট্র্যাকিং নেই"
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
+        "উইজেট"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiweather.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/bn-BD/index.html",
@@ -1897,12 +2112,17 @@
       "privacy_labels": [
         "কোনও বিজ্ঞাপন নেই"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/mochi.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/bn-BD/index.html",
@@ -2039,13 +2259,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "উৎপাদনশীলতা",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/onepageppt.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/bn-BD/index.html",
@@ -2098,13 +2332,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/photocream.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/bn-BD/index.html",
@@ -2158,9 +2403,17 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -2168,6 +2421,10 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/picclear.html",
@@ -2221,13 +2478,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "উইজেট"
+      ],
       "badge_labels": [
         "উৎপাদনশীলতা",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
+        "উইজেট"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/savetag.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/bn-BD/index.html",
@@ -2281,9 +2557,17 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -2291,6 +2575,10 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/scanto.html",
@@ -2346,11 +2634,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "অফলাইন",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2358,7 +2652,10 @@
         "ঘুম ও মনোযোগ",
         "বিনামূল্যে শুরু",
         "অফলাইন",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/sereno.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/bn-BD/index.html",
@@ -2411,13 +2708,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "গোপনীয় / ডিভাইসে"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/shotinbox.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/bn-BD/index.html",
@@ -2471,17 +2773,29 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "অফলাইন"
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু",
-        "অফলাইন"
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/snapportlite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/bn-BD/index.html",
@@ -2535,9 +2849,15 @@
       "purchase_label": "পেইড ডাউনলোড",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -2545,6 +2865,9 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "পেইড ডাউনলোড",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/snapport.html",
@@ -2599,9 +2922,15 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -2609,6 +2938,9 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html",
@@ -2663,17 +2995,37 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "উইজেট",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "আরও",
         "বিনামূল্যে শুরু",
-        "কোনও বিজ্ঞাপন নেই"
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
+        "উইজেট",
+        "Apple Watch"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/bn-BD/index.html",
@@ -2727,17 +3079,23 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "কোনও বিজ্ঞাপন নেই"
+        "অফলাইন",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
-        "কোনও বিজ্ঞাপন নেই"
+        "অফলাইন",
+        "কোনও বিজ্ঞাপন নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/bn-BD/index.html",
@@ -2790,13 +3148,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ভ্রমণ",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbeelite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html",
@@ -2852,11 +3218,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "অফলাইন",
         "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -2866,6 +3236,8 @@
         "পেইড ডাউনলোড",
         "অফলাইন",
         "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/tripbee.html",
@@ -2920,9 +3292,15 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
@@ -2930,6 +3308,9 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/unblurry.html",
@@ -2983,13 +3364,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "কোনও অ্যাকাউন্ট নেই"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "আরও",
-        "বিনামূল্যে শুরু"
+        "বিনামূল্যে শুরু",
+        "কোনও অ্যাকাউন্ট নেই"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wifiaidlite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/bn-BD/index.html",
@@ -3043,17 +3429,26 @@
       "purchase_label": "বিনামূল্যে শুরু",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "অফলাইন"
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু",
-        "অফলাইন"
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/wordmatelite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/bn-BD/index.html",
@@ -3109,12 +3504,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই",
-        "কোনও ট্র্যাকিং নেই"
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [
         "widget",
@@ -3130,6 +3527,7 @@
         "কোনও অ্যাকাউন্ট নেই",
         "কোনও বিজ্ঞাপন নেই",
         "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
         "উইজেট",
         "Apple Watch"
       ],

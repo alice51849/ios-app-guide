@@ -2,7 +2,7 @@
 title: "najboljša brezžična aplikacija za skeniranje dokumentov brez oblaka za medicinske sestre"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Produktivnost
 - Brezplačen začetek
+- Brez povezave
+- Brez računa
+- Brez oglasov
+- Brez sledenja
 - Zasebno / na napravi
 - App Store · Brezplačno
 

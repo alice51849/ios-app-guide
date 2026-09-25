@@ -2,7 +2,7 @@
 title: "iPhone'da mantık becerilerini geliştirmek için çocuklar için en iyi matematik oyunu uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ En iyi çocuk matematik uygulaması, mantık eğitimi verir — kalıplar, dizil
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
 - Reklam yok
 - App Store · Ücretsiz
 

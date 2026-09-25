@@ -2,7 +2,7 @@
 title: "лучшее приложение с белым шумом для засыпания без подписки"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - Сон и концентрация
 - Бесплатно начать · разовая разблокировка
 - Автономно
+- Без учётной записи
 - Без рекламы
+- Без отслеживания
+- Лично / на устройстве
 - App Store · Бесплатно
 
 [Скачайте Sereno в App Store →](https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

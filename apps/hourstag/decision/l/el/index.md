@@ -2,7 +2,7 @@
 title: "HoursTag: Ώρες αγοράς — Έξοδα, αποταμίευση & budget | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Χρήματα & ταξίδια
 - Λήψη με χρέωση
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
 - Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
 - App Store · 5,99 €

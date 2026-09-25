@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Beszélj ma — 50 nyelv, valódi párbeszédek | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Szólalj meg természetesen, amikor eljön a pillanat. A DailyMate Lite hétköz
 
 - Gyerekek & tanulás
 - Ingyenes kezdés
+- Nincs fiók
+- Apple Watch
 - App Store · Ingyenes
 
 [Töltse le a(z) DailyMate Lite: Beszélj ma appot az App Store-ból](https://apps.apple.com/hu/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

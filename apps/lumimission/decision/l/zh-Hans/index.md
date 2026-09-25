@@ -2,7 +2,7 @@
 title: "适合学龄前儿童且无广告的最佳睡前习惯应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
+- 无跟踪
+- 私密 / 设备本地
 - App Store · 免费
 
 [在App Store获取Lumi Mission Planet →](https://apps.apple.com/cn/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

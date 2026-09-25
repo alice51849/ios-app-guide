@@ -2,7 +2,7 @@
 title: "paras matkabudjetin seurantasovellus ilman tilausta iPhonelle"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ Matkalla tarvitset budjettiseurannan, joka toimii offline-tilassa maassa ilman d
 - Maksullinen lataus
 - Offline
 - Ei tiliä
+- Ei mainoksia
+- Ei seurantaa
+- Yksityinen / laitteella
 - App Store · 5,99 €
 
 [Hanki G+Money App Storesta →](https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

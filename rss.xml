@@ -5,7 +5,7 @@
     <link>https://open.cait518.cc/ios-app-guide/</link>
     <description>Fresh publisher-disclosed iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2026 20:13:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -17,6 +17,570 @@
     <atom:link href="https://rpc.rsscloud.io/websub" rel="hub"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
+    <item>
+      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
+      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
+      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Opening RAR, ZIP and 7z on iPhone: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/zipbox.html</link>
+      <description>An archive that arrives on a phone is usually one step in the middle of something else, so the tool that opens it should ask for nothing and finish…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/zipbox.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg" fileSize="46900" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Opening RAR, ZIP and 7z on iPhone: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>One-minute vocabulary habits: what to check before you commit</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/wordmatelite.html</link>
+      <description>Most vocabulary apps fail on maintenance, not content: decks to build and review queues that grow faster than the time available. A habit-sized session is…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wordmatelite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wordmatelite-share.jpg" fileSize="42094" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">One-minute vocabulary habits: what to check before you commit preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wordmatelite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Vocabulary Apps for iPhone: How to Choose (Pay Once)</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/wordmate.html</link>
+      <description>Compare vocabulary apps by context, recall, daily access, privacy and honest pricing. See where Wordmate&#x27;s 44 languages, widget and Watch fit.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wordmate.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wordmate-share.jpg" fileSize="58985" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Vocabulary Apps for iPhone: How to Choose (Pay Once) preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wordmate-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Wi-Fi or the site: how to tell which one is actually broken</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/wifiaidlite.html</link>
+      <description>Rebooting the router is a guess. The useful question is narrower: did the Wi-Fi link fail, did name resolution fail, or is the site itself down — and each…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wifiaidlite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg" fileSize="40946" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Wi-Fi or the site: how to tell which one is actually broken preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Wi-Fi troubleshooting on iPhone: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/wifiaid.html</link>
+      <description>When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wifiaid.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg" fileSize="45900" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Wi-Fi troubleshooting on iPhone: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Unblurry: Photo Utility App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/unblurry.html</link>
+      <description>Unblurry enhances blurry photos on your iPhone using AI, offering on-device processing without ads or subscriptions.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/unblurry.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/unblurry-share.jpg" fileSize="41382" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Unblurry: Photo Utility App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/unblurry-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Travel Apps to Keep Kids Busy: How to Choose (Ad-Free)</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/tripplanet.html</link>
+      <description>Keep kids happily busy on a plane or road trip — age-appropriate, no third-party ads or tracking, purchases behind a parental gate. Where Trip Planet fits.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/tripplanet.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/tripplanet-share.jpg" fileSize="52634" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Travel Apps to Keep Kids Busy: How to Choose (Ad-Free) preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/tripplanet-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>TripBee Lite: iPhone App Guide</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/tripbeelite.html</link>
+      <description>Keep one active journey, daily timeline, tickets, reminders and maps together with no account</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/tripbeelite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/tripbeelite-share.jpg" fileSize="48745" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">TripBee Lite: iPhone App Guide preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/tripbeelite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Trip Planner Apps for iPhone: How to Choose (Pay Once)</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/tripbee.html</link>
+      <description>Plan trips without a subscription — day-by-day itineraries, offline access and a clean map. How to choose a trip planner, and where TripBee fits.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/tripbee.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/tripbee-share.jpg" fileSize="57411" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Trip Planner Apps for iPhone: How to Choose (Pay Once) preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/tripbee-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Always-on desk clock apps for iPhone and iPad: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/stayclock.html</link>
+      <description>An always-on clock app has to survive hours of continuous screen time without burning an OLED panel or draining a battery that is not charging, and it…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/stayclock.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/stayclock-share.jpg" fileSize="53426" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Always-on desk clock apps for iPhone and iPad: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/stayclock-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Sono Note: Voice Notes Productivity App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/sononote.html</link>
+      <description>Transform your voice into structured notes with Sono Note, a private and subscription-free productivity app for iPhone.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/sononote.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/sononote-share.jpg" fileSize="41282" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Sono Note: Voice Notes Productivity App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/sononote-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Free passport and ID photo apps: what to check before you rely on</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/snapportlite.html</link>
+      <description>A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapportlite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" fileSize="53290" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Free passport and ID photo apps: what to check before you rely on preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Snapport: Best Passport Photo App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/snapport.html</link>
+      <description>Create passport and ID photos at home with Snapport. No subscription or ads.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapport.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" fileSize="44292" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Snapport: Best Passport Photo App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Screenshot backlog: sorting them is not the point, acting on them</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/shotinbox.html</link>
+      <description>Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/shotinbox.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/shotinbox-share.jpg" fileSize="46260" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Screenshot backlog: sorting them is not the point, acting on them preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/shotinbox-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>White Noise &amp; Sleep Sound Apps: How to Choose (Pay Once)</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/sereno.html</link>
+      <description>Choose a sleep-sound app without a subscription — rich sounds, mixing, timers and offline playback. How to choose, and where Sereno fits.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/sereno.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/sereno-share.jpg" fileSize="42391" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">White Noise &amp; Sleep Sound Apps: How to Choose (Pay Once) preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/sereno-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>ScanTo Pro: Best Productivity App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/scanto.html</link>
+      <description>ScanTo Pro offers offline PDF scanning and OCR with Face ID lock, all for a one-time payment.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/scanto.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/scanto-share.jpg" fileSize="44634" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">ScanTo Pro: Best Productivity App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/scanto-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>The saved-links pile: saving was never the hard part</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/savetag.html</link>
+      <description>Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/savetag.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/savetag-share.jpg" fileSize="37168" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">The saved-links pile: saving was never the hard part preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/savetag-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>PicClear: Best Photo Utility for iPhone Storage</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/picclear.html</link>
+      <description>Effortlessly find and delete duplicate photos and large videos with PicClear, a private and ad-free photo utility app for iPhone.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/picclear.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/picclear-share.jpg" fileSize="41736" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">PicClear: Best Photo Utility for iPhone Storage preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/picclear-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>PhotoCream: Film Filter App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/photocream.html</link>
+      <description>Transform your photos with 100+ vintage film looks using PhotoCream, a one-time purchase photo utility app for iPhone.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/photocream.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/photocream-share.jpg" fileSize="44135" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">PhotoCream: Film Filter App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/photocream-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Notes to one slide: what to check before your next meeting recap</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/onepageppt.html</link>
+      <description>Most slide tools assume you want a deck. When the deliverable is a single recap page, the real test is whether the app can take raw notes, a PDF or a…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/onepageppt.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/onepageppt-share.jpg" fileSize="48752" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Notes to one slide: what to check before your next meeting recap preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/onepageppt-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Handwriting plus PDF markup on iPad: what to check before you com</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/notesstudio100.html</link>
+      <description>Most handwriting apps are fine until the moment you need to mark up a PDF, search your own handwriting, or open the app on a plane — that is where the…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/notesstudio100.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/notesstudio100-share.jpg" fileSize="49142" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Handwriting plus PDF markup on iPad: what to check before you com preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/notesstudio100-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Project profit tracking for freelancers: what to keep separate</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/moneytag.html</link>
+      <description>A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/moneytag.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/moneytag-share.jpg" fileSize="55801" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Project profit tracking for freelancers: what to keep separate preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/moneytag-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Last-time tracking on iPhone: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/mochidonestamp.html</link>
+      <description>For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/mochidonestamp.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/mochidonestamp-share.jpg" fileSize="48180" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Last-time tracking on iPhone: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/mochidonestamp-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Cute To-Do &amp; Checklist Apps for iPhone: How to Choose</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/mochi.html</link>
+      <description>Pick a to-do app that&#x27;s actually pleasant to open — cozy design, a satisfying tap to complete, free and no ads. How to choose, and where Mochi fits.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/mochi.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg" fileSize="41685" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Cute To-Do &amp; Checklist Apps for iPhone: How to Choose preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>On-device file redaction for iPhone: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/maskmyfile.html</link>
+      <description>Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/maskmyfile.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/maskmyfile-share.jpg" fileSize="51431" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">On-device file redaction for iPhone: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/maskmyfile-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Weather: A Kid-Friendly Weather App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumiweather.html</link>
+      <description>Discover Lumi Weather, the perfect app for parents seeking weather guidance tailored to their children&#x27;s needs and activities.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumiweather.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumiweather-share.jpg" fileSize="46720" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Weather: A Kid-Friendly Weather App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumiweather-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Mission Planet Pro: Kids Routine App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumimissionpro.html</link>
+      <description>Encourage kids to complete daily routines with Lumi Mission Planet Pro, a chore chart and habit tracker designed for children.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimissionpro.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimissionpro-share.jpg" fileSize="49506" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Mission Planet Pro: Kids Routine App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimissionpro-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Mission Planet: Kids Routine App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumimission.html</link>
+      <description>Transform daily chores into fun missions for kids aged 3-7 with Lumi Mission Planet.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimission.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimission-share.jpg" fileSize="46827" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Mission Planet: Kids Routine App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimission-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Math Pro: Fun Kids Math Game for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumimathpro.html</link>
+      <description>Explore math through adventure with Lumi Math Pro for kids. Safe, engaging, and educational.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimathpro.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimathpro-share.jpg" fileSize="50730" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Math Pro: Fun Kids Math Game for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimathpro-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Math Planet: Fun Kids Math Game for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumimath.html</link>
+      <description>Explore Lumi Math Planet, a pay-once kids math app that makes learning numbers an engaging space adventure without ads.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimath.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimath-share.jpg" fileSize="43805" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Math Planet: Fun Kids Math Game for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimath-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Letters Pro: Phonics Learning App for Kids iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumiletterspro.html</link>
+      <description>Discover Lumi Letters Pro, a phonics app designed to teach kids reading skills through engaging activities. Perfect for preschool and kindergarten prep.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumiletterspro.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumiletterspro-share.jpg" fileSize="50874" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Letters Pro: Phonics Learning App for Kids iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumiletterspro-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Letters: Fun Phonics &amp; Tracing for Kids iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumiletters.html</link>
+      <description>Discover Lumi Letters, a playful phonics app for kids to learn the alphabet through engaging games and activities without ads.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumiletters.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumiletters-share.jpg" fileSize="42621" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Letters: Fun Phonics &amp; Tracing for Kids iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumiletters-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Bopomofo Pro: Kids Learning App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumibopomofopro.html</link>
+      <description>Discover Lumi Bopomofo Pro, a kid-safe app for learning Zhuyin and Bopomofo through fun games and activities.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumibopomofopro.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofopro-share.jpg" fileSize="50498" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Bopomofo Pro: Kids Learning App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofopro-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Lumi Bopomofo: Kids&#x27; Zhuyin Learning App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lumibopomofo.html</link>
+      <description>Lumi Bopomofo offers a playful way for kids to learn Zhuyin phonics through games, ensuring a safe, ad-free experience.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumibopomofo.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofo-share.jpg" fileSize="49916" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Lumi Bopomofo: Kids&#x27; Zhuyin Learning App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofo-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>LockHour Pro: Focus App for iPhone Productivity</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/lockhour.html</link>
+      <description>LockHour Pro helps you block distracting apps to regain focus and boost productivity. Pay once, on-device, and ad-free.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lockhour.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lockhour-share.jpg" fileSize="46648" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">LockHour Pro: Focus App for iPhone Productivity preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lockhour-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Turning an iPhone into a scrolling sign: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/ledmovingtext.html</link>
+      <description>When you hold a phone above a crowd, what matters is whether the words are big, bright and moving at a speed people can actually read.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/ledmovingtext.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg" fileSize="45397" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Turning an iPhone into a scrolling sign: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Price-to-work-hours apps: what to check before buying</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/hourstaglite.html</link>
+      <description>Before buying, convert the price into take-home work hours, then label the choice as a need, want or impulse so the trade-off is clear before money leaves…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/hourstaglite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg" fileSize="49584" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Price-to-work-hours apps: what to check before buying preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Expense Awareness Apps for iPhone: How to Choose</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/hourstag.html</link>
+      <description>Log completed spending, translate it into work hours, and review patterns on iPhone. Private, no bank sync, no tracking, pay once.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/hourstag.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/hourstag-share.jpg" fileSize="51422" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Expense Awareness Apps for iPhone: How to Choose preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/hourstag-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Free travel expense trackers with currency conversion: what to ch</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/gmoneylite.html</link>
+      <description>For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/gmoneylite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/gmoneylite-share.jpg" fileSize="55183" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Free travel expense trackers with currency conversion: what to ch preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/gmoneylite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>G+Money: Simple Finance App for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/gmoney.html</link>
+      <description>G+Money is an offline finance app for iPhone that combines a currency converter and expense tracker, perfect for travel budgeting.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/gmoney.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/gmoney-share.jpg" fileSize="45774" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">G+Money: Simple Finance App for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/gmoney-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Checking noise levels on an iPhone: what to look for</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/dbhalo.html</link>
+      <description>A phone microphone will not replace a certified sound level meter, but it can show whether a noise is getting worse, which frequencies dominate and how…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/dbhalo.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg" fileSize="49719" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Checking noise levels on an iPhone: what to look for preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Free situational phrasebook apps: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/dailymatelite.html</link>
+      <description>A useful free phrasebook should teach complete exchanges — the cue you will hear and a natural reply — and let you finish a real topic free, not lock…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/dailymatelite.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/dailymatelite-share.jpg" fileSize="42004" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Free situational phrasebook apps: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/dailymatelite-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>DailyMate: iPhone App Guide</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/dailymate.html</link>
+      <description>Practice 8,400 useful phrases in 47 languages on iPhone, iPad, a Home Screen widget and Apple Watch</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/dailymate.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/dailymate-share.jpg" fileSize="45827" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">DailyMate: iPhone App Guide preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/dailymate-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Cyca: Private Health Tracker for iPhone Users</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/cyca.html</link>
+      <description>Cyca is a private, ad-free period and cycle tracker for iPhone, designed to help users understand their menstrual health.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/cyca.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/cyca-share.jpg" fileSize="39718" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Cyca: Private Health Tracker for iPhone Users preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/cyca-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>CV Desk: The Best Resume Builder for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/cvdesk.html</link>
+      <description>Create ATS-friendly resumes with CV Desk, a one-time purchase app with no subscriptions and no watermarks.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/cvdesk.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/cvdesk-share.jpg" fileSize="44353" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">CV Desk: The Best Resume Builder for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/cvdesk-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Calculators that keep a searchable history: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/caldaily.html</link>
+      <description>A calculator worth keeping should remember more than the last number: what the calculation was for, which tool produced it, and how to find it again a…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/caldaily.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/caldaily-share.jpg" fileSize="44814" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Calculators that keep a searchable history: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/caldaily-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>iPhone battery health apps: what they can really know</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/battai.html</link>
+      <description>A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/battai.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg" fileSize="47262" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">iPhone battery health apps: what they can really know preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Aim990 Plus: iPhone App Guide</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/aim990plus.html</link>
+      <description>Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/aim990plus.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/aim990plus-share.jpg" fileSize="54550" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Aim990 Plus: iPhone App Guide preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/aim990plus-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Aim990 - TOEIC L&amp;R Study Plans &amp; Score Tracker for iPhone</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/aim990.html</link>
+      <description>Aim990 offers daily study plans, weak-spot drills, and score tracking for TOEIC L&amp;R test preparation.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/aim990.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/aim990-share.jpg" fileSize="51300" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Aim990 - TOEIC L&amp;R Study Plans &amp; Score Tracker for iPhone preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/aim990-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>Private AI context preparation on iPhone: what to check</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/aibriefpack.html</link>
+      <description>When screenshots, PDFs, notes, files and links contain the evidence for an AI task, a useful context builder should turn them into one reviewable brief…</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/aibriefpack.html</guid>
+      <pubDate>Thu, 24 Sep 2026 21:31:24 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/aibriefpack-share.jpg" fileSize="48462" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Private AI context preparation on iPhone: what to check preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/aibriefpack-share.jpg" width="1200" height="675"/>
+    </item>
     <item>
       <title>小一注音暑假怎麼準備？14 天低壓暖身指南（2026）</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</link>
@@ -186,17 +750,6 @@
       <pubDate>Thu, 24 Sep 2026 20:13:13 GMT</pubDate>
     </item>
     <item>
-      <title>Opening RAR, ZIP and 7z on iPhone: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/zipbox.html</link>
-      <description>An archive that arrives on a phone is usually one step in the middle of something else, so the tool that opens it should ask for nothing and finish…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/zipbox.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg" fileSize="46900" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Opening RAR, ZIP and 7z on iPhone: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
       <title>注音先修要不要上?先修班、在家練與不練的三條路(家長決策指南)</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-xianxiu.html</link>
       <description>注音先修班值不值得?整理先修班、在家自己練、開學後再學三條路的實際差別、常見副作用與適合情況,並附免費在家練習資源。不販售課程、不判定孩子程度。</description>
@@ -225,391 +778,6 @@
       <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
     </item>
     <item>
-      <title>One-minute vocabulary habits: what to check before you commit</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/wordmatelite.html</link>
-      <description>Most vocabulary apps fail on maintenance, not content: decks to build and review queues that grow faster than the time available. A habit-sized session is…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wordmatelite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wordmatelite-share.jpg" fileSize="42094" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">One-minute vocabulary habits: what to check before you commit preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wordmatelite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Vocabulary Apps for iPhone: How to Choose (Pay Once)</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/wordmate.html</link>
-      <description>Compare vocabulary apps by context, recall, daily access, privacy and honest pricing. See where Wordmate&#x27;s 44 languages, widget and Watch fit.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wordmate.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wordmate-share.jpg" fileSize="58985" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Vocabulary Apps for iPhone: How to Choose (Pay Once) preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wordmate-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Wi-Fi or the site: how to tell which one is actually broken</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/wifiaidlite.html</link>
-      <description>Rebooting the router is a guess. The useful question is narrower: did the Wi-Fi link fail, did name resolution fail, or is the site itself down — and each…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wifiaidlite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg" fileSize="40946" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Wi-Fi or the site: how to tell which one is actually broken preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Wi-Fi troubleshooting on iPhone: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/wifiaid.html</link>
-      <description>When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/wifiaid.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg" fileSize="45900" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Wi-Fi troubleshooting on iPhone: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Unblurry: Photo Utility App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/unblurry.html</link>
-      <description>Unblurry enhances blurry photos on your iPhone using AI, offering on-device processing without ads or subscriptions.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/unblurry.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/unblurry-share.jpg" fileSize="41382" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Unblurry: Photo Utility App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/unblurry-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Travel Apps to Keep Kids Busy: How to Choose (Ad-Free)</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/tripplanet.html</link>
-      <description>Keep kids happily busy on a plane or road trip — age-appropriate, no third-party ads or tracking, purchases behind a parental gate. Where Trip Planet fits.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/tripplanet.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/tripplanet-share.jpg" fileSize="52634" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Travel Apps to Keep Kids Busy: How to Choose (Ad-Free) preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/tripplanet-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>TripBee Lite: iPhone App Guide</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/tripbeelite.html</link>
-      <description>Keep one active journey, daily timeline, tickets, reminders and maps together with no account</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/tripbeelite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/tripbeelite-share.jpg" fileSize="48745" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">TripBee Lite: iPhone App Guide preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/tripbeelite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Trip Planner Apps for iPhone: How to Choose (Pay Once)</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/tripbee.html</link>
-      <description>Plan trips without a subscription — day-by-day itineraries, offline access and a clean map. How to choose a trip planner, and where TripBee fits.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/tripbee.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/tripbee-share.jpg" fileSize="57411" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Trip Planner Apps for iPhone: How to Choose (Pay Once) preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/tripbee-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Always-on desk clock apps for iPhone and iPad: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/stayclock.html</link>
-      <description>An always-on clock app has to survive hours of continuous screen time without burning an OLED panel or draining a battery that is not charging, and it…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/stayclock.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/stayclock-share.jpg" fileSize="53426" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Always-on desk clock apps for iPhone and iPad: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/stayclock-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Sono Note: Voice Notes Productivity App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/sononote.html</link>
-      <description>Transform your voice into structured notes with Sono Note, a private and subscription-free productivity app for iPhone.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/sononote.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/sononote-share.jpg" fileSize="41282" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Sono Note: Voice Notes Productivity App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/sononote-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Free passport and ID photo apps: what to check before you rely on</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/snapportlite.html</link>
-      <description>A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapportlite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" fileSize="53290" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Free passport and ID photo apps: what to check before you rely on preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Snapport: Best Passport Photo App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/snapport.html</link>
-      <description>Create passport and ID photos at home with Snapport. No subscription or ads.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapport.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" fileSize="44292" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Snapport: Best Passport Photo App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Screenshot backlog: sorting them is not the point, acting on them</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/shotinbox.html</link>
-      <description>Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/shotinbox.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/shotinbox-share.jpg" fileSize="46260" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Screenshot backlog: sorting them is not the point, acting on them preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/shotinbox-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>White Noise &amp; Sleep Sound Apps: How to Choose (Pay Once)</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/sereno.html</link>
-      <description>Choose a sleep-sound app without a subscription — rich sounds, mixing, timers and offline playback. How to choose, and where Sereno fits.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/sereno.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/sereno-share.jpg" fileSize="42391" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">White Noise &amp; Sleep Sound Apps: How to Choose (Pay Once) preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/sereno-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>ScanTo Pro: Best Productivity App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/scanto.html</link>
-      <description>ScanTo Pro offers offline PDF scanning and OCR with Face ID lock, all for a one-time payment.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/scanto.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/scanto-share.jpg" fileSize="44634" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">ScanTo Pro: Best Productivity App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/scanto-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>The saved-links pile: saving was never the hard part</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/savetag.html</link>
-      <description>Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/savetag.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/savetag-share.jpg" fileSize="37168" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">The saved-links pile: saving was never the hard part preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/savetag-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>PicClear: Best Photo Utility for iPhone Storage</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/picclear.html</link>
-      <description>Effortlessly find and delete duplicate photos and large videos with PicClear, a private and ad-free photo utility app for iPhone.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/picclear.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/picclear-share.jpg" fileSize="41736" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">PicClear: Best Photo Utility for iPhone Storage preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/picclear-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>PhotoCream: Film Filter App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/photocream.html</link>
-      <description>Transform your photos with 100+ vintage film looks using PhotoCream, a one-time purchase photo utility app for iPhone.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/photocream.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/photocream-share.jpg" fileSize="44135" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">PhotoCream: Film Filter App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/photocream-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Notes to one slide: what to check before your next meeting recap</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/onepageppt.html</link>
-      <description>Most slide tools assume you want a deck. When the deliverable is a single recap page, the real test is whether the app can take raw notes, a PDF or a…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/onepageppt.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/onepageppt-share.jpg" fileSize="48752" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Notes to one slide: what to check before your next meeting recap preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/onepageppt-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Handwriting plus PDF markup on iPad: what to check before you com</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/notesstudio100.html</link>
-      <description>Most handwriting apps are fine until the moment you need to mark up a PDF, search your own handwriting, or open the app on a plane — that is where the…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/notesstudio100.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/notesstudio100-share.jpg" fileSize="49142" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Handwriting plus PDF markup on iPad: what to check before you com preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/notesstudio100-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Project profit tracking for freelancers: what to keep separate</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/moneytag.html</link>
-      <description>A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/moneytag.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/moneytag-share.jpg" fileSize="55801" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Project profit tracking for freelancers: what to keep separate preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/moneytag-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Last-time tracking on iPhone: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/mochidonestamp.html</link>
-      <description>For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/mochidonestamp.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/mochidonestamp-share.jpg" fileSize="48180" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Last-time tracking on iPhone: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/mochidonestamp-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Cute To-Do &amp; Checklist Apps for iPhone: How to Choose</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/mochi.html</link>
-      <description>Pick a to-do app that&#x27;s actually pleasant to open — cozy design, a satisfying tap to complete, free and no ads. How to choose, and where Mochi fits.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/mochi.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg" fileSize="41685" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Cute To-Do &amp; Checklist Apps for iPhone: How to Choose preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/mochi-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>On-device file redaction for iPhone: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/maskmyfile.html</link>
-      <description>Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/maskmyfile.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/maskmyfile-share.jpg" fileSize="51431" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">On-device file redaction for iPhone: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/maskmyfile-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Weather: A Kid-Friendly Weather App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumiweather.html</link>
-      <description>Discover Lumi Weather, the perfect app for parents seeking weather guidance tailored to their children&#x27;s needs and activities.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumiweather.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumiweather-share.jpg" fileSize="46720" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Weather: A Kid-Friendly Weather App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumiweather-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Mission Planet Pro: Kids Routine App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumimissionpro.html</link>
-      <description>Encourage kids to complete daily routines with Lumi Mission Planet Pro, a chore chart and habit tracker designed for children.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimissionpro.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimissionpro-share.jpg" fileSize="49506" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Mission Planet Pro: Kids Routine App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimissionpro-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Mission Planet: Kids Routine App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumimission.html</link>
-      <description>Transform daily chores into fun missions for kids aged 3-7 with Lumi Mission Planet.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimission.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimission-share.jpg" fileSize="46827" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Mission Planet: Kids Routine App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimission-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Math Pro: Fun Kids Math Game for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumimathpro.html</link>
-      <description>Explore math through adventure with Lumi Math Pro for kids. Safe, engaging, and educational.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimathpro.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimathpro-share.jpg" fileSize="50730" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Math Pro: Fun Kids Math Game for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimathpro-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Math Planet: Fun Kids Math Game for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumimath.html</link>
-      <description>Explore Lumi Math Planet, a pay-once kids math app that makes learning numbers an engaging space adventure without ads.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumimath.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumimath-share.jpg" fileSize="43805" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Math Planet: Fun Kids Math Game for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumimath-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Letters Pro: Phonics Learning App for Kids iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumiletterspro.html</link>
-      <description>Discover Lumi Letters Pro, a phonics app designed to teach kids reading skills through engaging activities. Perfect for preschool and kindergarten prep.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumiletterspro.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumiletterspro-share.jpg" fileSize="50874" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Letters Pro: Phonics Learning App for Kids iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumiletterspro-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Letters: Fun Phonics &amp; Tracing for Kids iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumiletters.html</link>
-      <description>Discover Lumi Letters, a playful phonics app for kids to learn the alphabet through engaging games and activities without ads.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumiletters.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumiletters-share.jpg" fileSize="42621" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Letters: Fun Phonics &amp; Tracing for Kids iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumiletters-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Bopomofo Pro: Kids Learning App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumibopomofopro.html</link>
-      <description>Discover Lumi Bopomofo Pro, a kid-safe app for learning Zhuyin and Bopomofo through fun games and activities.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumibopomofopro.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofopro-share.jpg" fileSize="50498" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Bopomofo Pro: Kids Learning App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofopro-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Lumi Bopomofo: Kids&#x27; Zhuyin Learning App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lumibopomofo.html</link>
-      <description>Lumi Bopomofo offers a playful way for kids to learn Zhuyin phonics through games, ensuring a safe, ad-free experience.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lumibopomofo.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofo-share.jpg" fileSize="49916" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Lumi Bopomofo: Kids&#x27; Zhuyin Learning App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lumibopomofo-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>LockHour Pro: Focus App for iPhone Productivity</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/lockhour.html</link>
-      <description>LockHour Pro helps you block distracting apps to regain focus and boost productivity. Pay once, on-device, and ad-free.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/lockhour.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/lockhour-share.jpg" fileSize="46648" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">LockHour Pro: Focus App for iPhone Productivity preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/lockhour-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Turning an iPhone into a scrolling sign: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/ledmovingtext.html</link>
-      <description>When you hold a phone above a crowd, what matters is whether the words are big, bright and moving at a speed people can actually read.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/ledmovingtext.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg" fileSize="45397" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Turning an iPhone into a scrolling sign: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/ledmovingtext-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
       <title>注音符號怎麼教?在家教注音的 7 個步驟(沒有教材也能開始)</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/how-to-teach-zhuyin-at-home.html</link>
       <description>在家教注音符號的實際步驟:從聽音、認形、筆順、聲調到拼讀與閱讀,每步附具體做法與常見卡關處理,搭配免費可列印字卡與練習單。</description>
@@ -617,165 +785,11 @@
       <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
     </item>
     <item>
-      <title>Price-to-work-hours apps: what to check before buying</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/hourstaglite.html</link>
-      <description>Before buying, convert the price into take-home work hours, then label the choice as a need, want or impulse so the trade-off is clear before money leaves…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/hourstaglite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg" fileSize="49584" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Price-to-work-hours apps: what to check before buying preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Expense Awareness Apps for iPhone: How to Choose</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/hourstag.html</link>
-      <description>Log completed spending, translate it into work hours, and review patterns on iPhone. Private, no bank sync, no tracking, pay once.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/hourstag.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/hourstag-share.jpg" fileSize="51422" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Expense Awareness Apps for iPhone: How to Choose preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/hourstag-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Free travel expense trackers with currency conversion: what to ch</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/gmoneylite.html</link>
-      <description>For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/gmoneylite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/gmoneylite-share.jpg" fileSize="55183" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Free travel expense trackers with currency conversion: what to ch preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/gmoneylite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>G+Money: Simple Finance App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/gmoney.html</link>
-      <description>G+Money is an offline finance app for iPhone that combines a currency converter and expense tracker, perfect for travel budgeting.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/gmoney.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/gmoney-share.jpg" fileSize="45774" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">G+Money: Simple Finance App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/gmoney-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Checking noise levels on an iPhone: what to look for</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/dbhalo.html</link>
-      <description>A phone microphone will not replace a certified sound level meter, but it can show whether a noise is getting worse, which frequencies dominate and how…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/dbhalo.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg" fileSize="49719" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Checking noise levels on an iPhone: what to look for preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/dbhalo-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Free situational phrasebook apps: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/dailymatelite.html</link>
-      <description>A useful free phrasebook should teach complete exchanges — the cue you will hear and a natural reply — and let you finish a real topic free, not lock…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/dailymatelite.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/dailymatelite-share.jpg" fileSize="42004" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Free situational phrasebook apps: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/dailymatelite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>DailyMate: iPhone App Guide</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/dailymate.html</link>
-      <description>Practice 8,400 useful phrases in 47 languages on iPhone, iPad, a Home Screen widget and Apple Watch</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/dailymate.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/dailymate-share.jpg" fileSize="45827" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">DailyMate: iPhone App Guide preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/dailymate-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Cyca: Private Health Tracker for iPhone Users</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/cyca.html</link>
-      <description>Cyca is a private, ad-free period and cycle tracker for iPhone, designed to help users understand their menstrual health.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/cyca.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/cyca-share.jpg" fileSize="39718" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Cyca: Private Health Tracker for iPhone Users preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/cyca-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>CV Desk: The Best Resume Builder for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/cvdesk.html</link>
-      <description>Create ATS-friendly resumes with CV Desk, a one-time purchase app with no subscriptions and no watermarks.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/cvdesk.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/cvdesk-share.jpg" fileSize="44353" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">CV Desk: The Best Resume Builder for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/cvdesk-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Calculators that keep a searchable history: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/caldaily.html</link>
-      <description>A calculator worth keeping should remember more than the last number: what the calculation was for, which tool produced it, and how to find it again a…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/caldaily.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/caldaily-share.jpg" fileSize="44814" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Calculators that keep a searchable history: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/caldaily-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
       <title>ㄅㄆㄇ 教學順序:37 個注音符號怎麼分組、先教哪些</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/bopomofo-teaching-order.html</link>
       <description>注音符號的分組與教學順序建議:21 聲符、3 介符、13 韻符怎麼拆,先教哪一批比較好上手,以及 ㄓㄔㄕㄖ、ㄗㄘㄙ、ㄣㄥ 這些易混淆組的處理方式。</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/bopomofo-teaching-order.html</guid>
       <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-    </item>
-    <item>
-      <title>iPhone battery health apps: what they can really know</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/battai.html</link>
-      <description>A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/battai.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg" fileSize="47262" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">iPhone battery health apps: what they can really know preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/battai-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Aim990 Plus: iPhone App Guide</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/aim990plus.html</link>
-      <description>Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/aim990plus.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/aim990plus-share.jpg" fileSize="54550" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Aim990 Plus: iPhone App Guide preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/aim990plus-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Aim990 - TOEIC L&amp;R Study Plans &amp; Score Tracker for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/aim990.html</link>
-      <description>Aim990 offers daily study plans, weak-spot drills, and score tracking for TOEIC L&amp;R test preparation.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/aim990.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/aim990-share.jpg" fileSize="51300" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Aim990 - TOEIC L&amp;R Study Plans &amp; Score Tracker for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/aim990-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Private AI context preparation on iPhone: what to check</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/aibriefpack.html</link>
-      <description>When screenshots, PDFs, notes, files and links contain the evidence for an AI task, a useful context builder should turn them into one reviewable brief…</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/aibriefpack.html</guid>
-      <pubDate>Thu, 24 Sep 2026 19:28:13 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/aibriefpack-share.jpg" fileSize="48462" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Private AI context preparation on iPhone: what to check preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/aibriefpack-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>Trip budget per day sheet</title>
@@ -852,20 +866,6 @@
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</link>
       <description>List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan.</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</guid>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
-      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
-      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
       <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

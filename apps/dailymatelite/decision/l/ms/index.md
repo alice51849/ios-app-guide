@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Cakap Hari Ini — 50 Bahasa, Dialog Sebenar | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Bercakap secara semula jadi apabila tiba masanya. DailyMate Lite mengubah situas
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
+- Apple Watch
 - App Store · Percuma
 
 [Dapatkan DailyMate Lite: Cakap Hari Ini di App Store](https://apps.apple.com/my/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

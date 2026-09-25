@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru rutina de culcare la preșcolari fără reclame"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Pentru un preșcolar, rutina de culcare funcționează cel mai bine când este s
 
 - Copii & învățare
 - Început gratuit
+- Fără cont
 - Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
 - App Store · Gratuit
 
 [Obține Lumi Mission Planet din App Store →](https://apps.apple.com/ro/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

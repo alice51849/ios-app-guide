@@ -2,7 +2,7 @@
 title: "melhor jogo de matemática para crianças desenvolver raciocínio lógico no iPhone"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ O melhor app de matemática infantil treina raciocínio — padrões, sequência
 
 - Infantil e aprendizado
 - Grátis para começar · desbloqueio único
+- Sem conta
 - Sem anúncios
 - App Store · Grátis
 

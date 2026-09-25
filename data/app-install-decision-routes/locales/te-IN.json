@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "te-IN",
-  "dateModified": "2026-09-24",
-  "content_digest": "ab06318c0d326acb7ce3cb475d079cd0988c352e6494f85abb2b20db67839184",
-  "generation_digest": "aeea13a543aa02c0bcac7d48468b6c77b3cdf8163b657ea2e9f3605a453de758",
+  "dateModified": "2026-09-25",
+  "content_digest": "af4cc6f6e965a3cd09d5f2b7550ef638de1799ef7bdb0ea5f8f7fb839e681ca4",
+  "generation_digest": "038fb7043672828dab9f92f5d1648251e7a36f332f026ae03fe452129972e213",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -32,9 +32,11 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -42,6 +44,7 @@
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -81,13 +84,23 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఖాతా అవసరం లేదు",
+        "Apple Watch",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/wifiaid.html",
@@ -126,13 +139,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "విడ్జెట్"
+      ],
       "badge_labels": [
         "జీవనశైలి",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "విడ్జెట్",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/mochidonestamp.html",
@@ -277,13 +312,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "విద్య",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -322,13 +368,21 @@
       "purchase_model": "paid_upfront",
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/aim990plus.html",
@@ -367,13 +421,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ప్రకటనలు లేవు"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
+        "ప్రకటనలు లేవు",
+        "Apple Watch",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/battai.html",
@@ -412,8 +476,14 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
       "device_surfaces": [
         "widget"
       ],
@@ -423,6 +493,8 @@
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "గోప్యంగా / పరికరంలో",
         "విడ్జెట్",
         "App Store · ఉచితం"
       ],
@@ -462,13 +534,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -508,9 +588,17 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -518,6 +606,10 @@
       "badge_labels": [
         "ఆరోగ్యం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -560,14 +652,17 @@
       "privacy_facts": [],
       "privacy_labels": [],
       "device_surfaces": [
+        "widget",
         "apple_watch"
       ],
       "device_labels": [
+        "విడ్జెట్",
         "Apple Watch"
       ],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "చెల్లింపు డౌన్లోడ్",
+        "విడ్జెట్",
         "Apple Watch",
         "App Store · ₹ 1,199"
       ],
@@ -607,13 +702,23 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు"
+      ],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "Apple Watch",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/dailymatelite.html",
@@ -652,13 +757,35 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "విడ్జెట్",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "విడ్జెట్",
+        "Apple Watch",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/dbhalo.html",
@@ -699,11 +826,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ఆఫ్‌లైన్",
-        "ఖాతా అవసరం లేదు"
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -712,6 +845,9 @@
         "చెల్లింపు డౌన్లోడ్",
         "ఆఫ్‌లైన్",
         "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 499"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
@@ -882,10 +1018,14 @@
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
         "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
@@ -894,6 +1034,8 @@
       "badge_labels": [
         "డబ్బు & ప్రయాణం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
         "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 499"
@@ -934,13 +1076,30 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/ledmovingtext.html",
@@ -980,11 +1139,15 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -992,7 +1155,9 @@
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -1033,9 +1198,11 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు"
       ],
       "device_surfaces": [],
@@ -1043,6 +1210,7 @@
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
         "App Store · ఉచితం"
       ],
@@ -1083,17 +1251,23 @@
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html",
@@ -1133,9 +1307,11 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_ads"
       ],
       "privacy_labels": [
+        "ఆఫ్‌లైన్",
         "ప్రకటనలు లేవు"
       ],
       "device_surfaces": [],
@@ -1143,6 +1319,7 @@
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
         "ప్రకటనలు లేవు",
         "App Store · ఉచితం"
       ],
@@ -1183,17 +1360,23 @@
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ఆఫ్‌లైన్",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఆఫ్‌లైన్",
         "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
@@ -1233,9 +1416,11 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు"
       ],
       "device_surfaces": [],
@@ -1243,6 +1428,7 @@
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
         "App Store · ఉచితం"
       ],
@@ -1283,10 +1469,12 @@
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1294,6 +1482,7 @@
         "పిల్లలు & అభ్యాసం",
         "చెల్లింపు డౌన్లోడ్",
         "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
@@ -1333,17 +1522,26 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
@@ -1383,17 +1581,23 @@
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
@@ -1433,20 +1637,31 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
-        "ట్రాకింగ్ లేదు"
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "విడ్జెట్"
+      ],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
         "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "విడ్జెట్",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
@@ -1491,12 +1706,17 @@
       "privacy_labels": [
         "ప్రకటనలు లేవు"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
         "ప్రకటనలు లేవు",
+        "Apple Watch",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
@@ -1605,13 +1825,27 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/onepageppt.html",
@@ -1650,13 +1884,24 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1696,9 +1941,17 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -1706,6 +1959,10 @@
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -1745,13 +2002,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "విడ్జెట్"
+      ],
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "విడ్జెట్",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/savetag.html",
@@ -1791,9 +2067,17 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -1801,6 +2085,10 @@
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -1842,11 +2130,17 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ఆఫ్‌లైన్",
-        "ప్రకటనలు లేవు"
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -1854,7 +2148,10 @@
         "నిద్ర & దృష్టి",
         "ఉచితంగా ప్రారంభించండి",
         "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
@@ -1893,13 +2190,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "గోప్యంగా / పరికరంలో"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "ఉచితంగా ప్రారంభించండి",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/shotinbox.html",
@@ -1939,9 +2241,15 @@
       "purchase_label": "చెల్లింపు డౌన్లోడ్",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -1949,6 +2257,9 @@
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "చెల్లింపు డౌన్లోడ్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 599"
       ],
@@ -1989,10 +2300,18 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ఆఫ్‌లైన్"
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2000,6 +2319,10 @@
         "ఫోటో & ఉపకరణం",
         "ఉచితంగా ప్రారంభించండి",
         "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/snapportlite.html",
@@ -2039,9 +2362,15 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -2049,6 +2378,9 @@
       "badge_labels": [
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -2089,17 +2421,37 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "విడ్జెట్",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "విడ్జెట్",
+        "Apple Watch",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/stayclock.html",
@@ -2139,17 +2491,23 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "offline",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ప్రకటనలు లేవు"
+        "ఆఫ్‌లైన్",
+        "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఆఫ్‌లైన్",
         "ప్రకటనలు లేవు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -2188,13 +2546,21 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ప్రయాణం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2236,11 +2602,15 @@
       "privacy_facts": [
         "offline",
         "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ఆఫ్‌లైన్",
         "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -2250,6 +2620,8 @@
         "చెల్లింపు డౌన్లోడ్",
         "ఆఫ్‌లైన్",
         "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ₹ 599"
       ],
@@ -2290,9 +2662,15 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
@@ -2300,6 +2678,9 @@
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
         "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
@@ -2339,13 +2720,18 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "ఖాతా అవసరం లేదు"
+      ],
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
         "ఇంకా",
         "ఉచితంగా ప్రారంభించండి",
+        "ఖాతా అవసరం లేదు",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/wifiaidlite.html",
@@ -2385,10 +2771,16 @@
       "purchase_label": "ఉచితంగా ప్రారంభించండి",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "ఆఫ్‌లైన్"
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [],
       "device_labels": [],
@@ -2396,6 +2788,9 @@
         "పిల్లలు & అభ్యాసం",
         "ఉచితంగా ప్రారంభించండి",
         "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/wordmatelite.html",
@@ -2437,12 +2832,14 @@
       "privacy_facts": [
         "no_account",
         "no_ads",
-        "no_tracking"
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
         "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
-        "ట్రాకింగ్ లేదు"
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [
         "widget",
@@ -2458,6 +2855,7 @@
         "ఖాతా అవసరం లేదు",
         "ప్రకటనలు లేవు",
         "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
         "విడ్జెట్",
         "Apple Watch",
         "App Store · ₹ 999"

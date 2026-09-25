@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na sledovanie cestovného rozpočtu bez predplatného pre iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ Na ceste potrebujete aplikáciu na rozpočet, ktorá funguje offline v krajine b
 - Platené stiahnutie
 - Offline
 - Bez účtu
+- Bez reklám
+- Bez sledovania
+- Súkromné / v zariadení
 - App Store · 5,99 €
 
 [Získajte G+Money v App Store →](https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

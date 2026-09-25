@@ -2,7 +2,7 @@
 title: "najbolja kompletna aplikacija za jutarnju i večernju rutinu za djecu"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Pranje zubi i odlazak na spavanje često zapnu u istom trenutku svake večeri: d
 
 - Djeca i učenje
 - Plaćeno preuzimanje
+- Bez računa
 - Bez oglasa
+- Privatno / na uređaju
 - App Store · 6,99 €
 
 [Preuzmite Lumi Mission Planet Pro na App Storeu →](https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

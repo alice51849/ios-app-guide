@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Woordenschat — Vijf nieuwe woorden per dag | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Vijf woorden. Eén minuut. Een pad dat je echt ziet liggen. De meeste apps voor 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling
 - Offline
+- Geen account
+- Geen tracking
+- Privé / op apparaat
 - App Store · Gratis
 
 [Download Wordmate Lite: Woordenschat in de App Store](https://apps.apple.com/nl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

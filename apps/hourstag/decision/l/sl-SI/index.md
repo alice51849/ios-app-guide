@@ -2,7 +2,7 @@
 title: "HoursTag: Cena v Urah — Proračun, stroški & prihranki | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Kaj te resnično stane? Ne v evrih — v urah tvojega življenja.
 
 - Denar in potovanja
 - Plačljiv prenos
+- Brez računa
+- Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
 - App Store · 5,99 €

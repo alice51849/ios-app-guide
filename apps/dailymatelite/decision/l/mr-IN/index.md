@@ -2,7 +2,7 @@
 title: "DailyMate Lite: आजच बोला — रोजच्या गप्पांचा सराव | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - मुलं आणि शिक्षण
 - सुरुवात करण्यासाठी मोफत
+- खाते नाही
+- Apple Watch
 - App Store · मोफत
 
 [App Store वरून DailyMate Lite: आजच बोला मिळवा](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "лучшее простое приложение для планирования одной предстоящей поездки на iPhone"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Путешествия
 - Бесплатно начать · разовая разблокировка
+- Без учётной записи
+- Без рекламы
 - App Store · Бесплатно
 
 [Скачайте TripBee Lite в App Store →](https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

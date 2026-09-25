@@ -2,7 +2,7 @@
 title: "WiFi Aid: નેટવર્ક સમસ્યા શોધો — નેટવર્ક ડાયગ્નોસિસ અને પુરાવા | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ફોટો અને ઉપયોગિતા
 - ચુકવેલ ડાઉનલોડ
+- કોઈ ખાતું નથી
+- Apple Watch
 - App Store · ₹ 599
 
 [App Store પરથી WiFi Aid: નેટવર્ક સમસ્યા શોધો મેળવો](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "beste app voor spraaknotities die vergaderingen samenvat op iPhone"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de act
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
+- Geen advertenties
+- Geen tracking
 - Privé / op apparaat
 - App Store · Gratis
 

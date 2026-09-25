@@ -2,7 +2,7 @@
 title: "HoursTag: Timer at købe — Budget, udgifter & opsparing | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Hvad koster det egentlig? Ikke i kroner – i timer af dit liv.
 
 - Penge & rejse
 - Betalt download
+- Ingen konto
+- Ingen reklamer
 - Ingen sporing
 - Privat / på enheden
 - App Store · 39,00 kr

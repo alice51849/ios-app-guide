@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לתמונת דרכון לתינוקות ופעוטות בבית"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - צילום וכלי עזר
 - הורדה בתשלום
+- ללא חשבון
+- ללא פרסומות
+- ללא מעקב
 - פרטי / במכשיר
 - App Store · ₪19.90
 

@@ -2,7 +2,7 @@
 title: "abonelik gerektirmeyen en iyi seyahat bütçe takip uygulaması iphone"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ Sinyal olmayan bir ülkede çevrimdışı çalışan, birden fazla para birimini
 - Ücretli indirme
 - Çevrimdışı
 - Hesap yok
+- Reklam yok
+- Takip yok
+- Gizli / cihazda
 - App Store · ₺249,99
 
 [G+Money'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

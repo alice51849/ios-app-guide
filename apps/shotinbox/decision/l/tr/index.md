@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Ekran görüntülerini düzenle | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Ekran görüntüleriniz düzenli Her ekran görüntüsünü bulun, işleyin ve t
 
 - Fotoğraf & yardımcı
 - Başlangıçta ücretsiz · tek seferlik açma
+- Gizli / cihazda
 - App Store · Ücretsiz
 
 [ShotInbox AI: Sort Screenshots uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

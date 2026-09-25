@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Mluvte jistě — 50 jazyků, praktické dialogy | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Mluvte jistě právě tehdy, když to potřebujete. DailyMate Lite mění situac
 
 - Děti a učení
 - Zdarma na začátek
+- Bez účtu
+- Apple Watch
 - App Store · Zdarma
 
 [Stáhněte si DailyMate Lite: Mluvte jistě v App Storu](https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

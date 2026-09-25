@@ -2,7 +2,7 @@
 title: "SaveTag: yapay zekâlı yer imi — Bağlantıları kaydet, sonra oku | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
+- Reklam yok
+- Takip yok
+- Gizli / cihazda
+- Araç takımı
 - App Store · Ücretsiz
 
 [SaveTag: yapay zekâlı yer imi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

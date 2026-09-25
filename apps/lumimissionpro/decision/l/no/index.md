@@ -2,7 +2,7 @@
 title: "beste komplette morgen- og leggetidsrutine-app for barn"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Tannpuss og leggetid mislykkes ofte samtidig hver kveld: barnet er trøtt, forel
 
 - Barn og læring
 - Betalt nedlasting
+- Ingen konto
 - Ingen annonser
+- Privat / på enheten
 - App Store · 79,00 kr
 
 [Få Lumi Mission Planet Pro på App Store →](https://apps.apple.com/no/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

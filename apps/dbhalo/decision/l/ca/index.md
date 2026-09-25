@@ -2,7 +2,7 @@
 title: "dB Halo: Sonòmetre — Decibels i espectre en directe | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Comprova d'un cop d'ull el nivell de pressió sonora, la freqüència dominant i
 
 - Més
 - Inici gratuït
+- Sense compte
+- Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Descarrega dB Halo: Sonòmetre a l’App Store](https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "OnePage PPT: MI-dia — Jegyzetből kész prezentáció | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Egy falnyi szövegből EGY dia, amit tényleg elolvasnak. Az OnePage PPT bármit
 
 - Produktivitás
 - Ingyenes kezdés
+- Offline
+- Nincs fiók
+- Nincs követés
+- Privát / eszközön tárolt
 - App Store · Ingyenes
 
 [Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból](https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

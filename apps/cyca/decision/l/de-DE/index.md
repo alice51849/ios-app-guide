@@ -2,7 +2,7 @@
 title: "Beste Perioden-Tracker-App ohne Konto für iPhone"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ In einer Kategorie, in der Datenschutz entscheidend ist, speichert der richtige 
 
 - Gesundheit
 - Kostenloser Einstieg · einmalige Freischaltung
+- Offline
+- Kein Konto
+- Keine Werbung
+- Kein Tracking
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

@@ -2,7 +2,7 @@
 title: "ನಿದ್ರೆಗೆ ಹೋಗಲು ಉತ್ತಮ ವೈಟ್ ನಾಯ್ಸ್ ಅಪ್ಲಿಕೇಶನ್ ಯಾವುದೇ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ಇಲ್ಲದೆ"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - ನಿದ್ರೆ ಮತ್ತು ಗಮನ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
 - ಆಫ್‌ಲೈನ್
+- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ Sereno ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

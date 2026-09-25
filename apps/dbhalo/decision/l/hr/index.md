@@ -2,7 +2,7 @@
 title: "dB Halo: Mjerač razine zvuka — Decibeli, buka i spektar | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i kolik
 
 - Više
 - Besplatno za početak
+- Bez računa
+- Bez oglasa
+- Bez praćenja
+- Privatno / na uređaju
+- Widget
+- Apple Watch
 - App Store · Besplatno
 
 [Preuzmite dB Halo: Mjerač razine zvuka u App Storeu](https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

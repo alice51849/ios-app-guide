@@ -2,7 +2,7 @@
 title: "aplikasi pembelajaran kosa kata terbaik untuk komuter sibuk dengan Apple Watch"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Komuter sibuk perlukan latihan kosa kata yang sesuai untuk masa terluang tanpa p
 - Tiada akaun
 - Tiada iklan
 - Tiada penjejakan
+- Peribadi / pada peranti
 - Widjet
 - Apple Watch
 - App Store · RM39.90

@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Organizator zrzutów ekranu | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Twoje zrzuty, uporządkowane Znajdź, załatw i uporządkuj każdy zrzut. Najnow
 
 - Zdjęcia i narzędzia
 - Darmowe na start · jednorazowe odblokowanie
+- Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
 [Pobierz ShotInbox AI: Sort Screenshots z App Store](https://apps.apple.com/pl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Wordmate Lite: تعلّم المفردات — خمس كلمات في دقيقة كل يوم | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ publisher: "Lumi Studio"
 - الأطفال والتعلم
 - بدء مجاني · فتح مرة واحدة
 - دون اتصال
+- بدون حساب
+- بدون تتبع
+- خاص / على الجهاز
 - App Store · مجاني
 
 [احصل على Wordmate Lite: تعلّم المفردات من App Store](https://apps.apple.com/sa/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

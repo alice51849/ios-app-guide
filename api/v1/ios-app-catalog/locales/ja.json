@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-24",
-  "content_digest": "64228914311d07a463fe944466195334a6fd7b685f3d57b9e7eaecc07502f8a1",
+  "content_digest": "ee8c9008e44d17f41ce853dcc4294e5bed548962e912ec1d0563b70ea0a1c818",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -134,11 +134,11 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
+        "offline": true,
         "no_account": false,
-        "no_ads": false,
+        "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -183,8 +183,8 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
+        "offline": true,
+        "no_account": true,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -222,11 +222,11 @@
       "capabilities": {
         "offline": false,
         "no_account": false,
-        "no_ads": false,
+        "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
-        "apple_watch": false
+        "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/battai.html",
@@ -275,10 +275,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": false,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": true,
         "apple_watch": false
       },
@@ -341,8 +341,8 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
+        "no_account": true,
+        "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -405,10 +405,10 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -460,7 +460,7 @@
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
-        "widget": false,
+        "widget": true,
         "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
@@ -511,12 +511,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
-        "apple_watch": false
+        "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/dailymatelite.html",
@@ -558,12 +558,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/dbhalo.html",
@@ -625,9 +625,9 @@
       "capabilities": {
         "offline": true,
         "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -788,8 +788,8 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
+        "no_account": true,
+        "no_ads": true,
         "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
@@ -840,11 +840,11 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -894,9 +894,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
-        "no_tracking": false,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -958,7 +958,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -1022,10 +1022,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1092,7 +1092,7 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
+        "offline": true,
         "no_account": false,
         "no_ads": true,
         "no_tracking": false,
@@ -1153,11 +1153,11 @@
       "purchase_model": "paid_upfront",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
+        "offline": true,
         "no_account": false,
         "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1255,7 +1255,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -1326,7 +1326,7 @@
         "no_account": false,
         "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1390,10 +1390,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1456,10 +1456,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1525,11 +1525,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
         "no_tracking": true,
-        "private_or_on_device": false,
-        "widget": false,
+        "private_or_on_device": true,
+        "widget": true,
         "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1580,7 +1580,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": true,
@@ -1635,7 +1635,7 @@
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
-        "apple_watch": false
+        "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/mochi.html",
@@ -1677,12 +1677,12 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
         "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
@@ -1777,11 +1777,11 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
+        "offline": true,
+        "no_account": true,
         "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1840,10 +1840,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
+        "no_account": true,
+        "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -1902,10 +1902,10 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -1950,11 +1950,11 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
         "apple_watch": false
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
@@ -1997,10 +1997,10 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -2050,10 +2050,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": false,
+        "no_account": true,
         "no_ads": true,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -2102,7 +2102,7 @@
         "no_account": false,
         "no_ads": false,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -2159,9 +2159,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -2202,10 +2202,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -2262,9 +2262,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -2306,13 +2306,13 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
-        "no_account": false,
+        "offline": true,
+        "no_account": true,
         "no_ads": true,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/stayclock.html",
@@ -2345,11 +2345,11 @@
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
       "capabilities": {
-        "offline": false,
+        "offline": true,
         "no_account": false,
         "no_ads": true,
         "no_tracking": false,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -2385,8 +2385,8 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
+        "no_account": true,
+        "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
@@ -2438,8 +2438,8 @@
       "capabilities": {
         "offline": true,
         "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -2499,9 +2499,9 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
         "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
@@ -2546,12 +2546,12 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
         "widget": false,
-        "apple_watch": false
+        "apple_watch": true
       },
       "app_store_url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "guide_url": "https://open.cait518.cc/ios-app-guide/ja/wifiaid.html",
@@ -2593,7 +2593,7 @@
       "one_time_option": true,
       "capabilities": {
         "offline": false,
-        "no_account": false,
+        "no_account": true,
         "no_ads": false,
         "no_tracking": false,
         "private_or_on_device": false,
@@ -2644,10 +2644,10 @@
       "one_time_option": true,
       "capabilities": {
         "offline": true,
-        "no_account": false,
+        "no_account": true,
         "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
         "widget": false,
         "apple_watch": false
       },
@@ -2697,7 +2697,7 @@
         "no_account": true,
         "no_ads": true,
         "no_tracking": true,
-        "private_or_on_device": false,
+        "private_or_on_device": true,
         "widget": true,
         "apple_watch": true
       },

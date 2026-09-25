@@ -2,7 +2,7 @@
 title: "meilleure application de planification d’itinéraire de voyage pour iPhone"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Une bonne application d’itinéraire transforme un voyage désordonné en une c
 - Téléchargement payant
 - Hors ligne
 - Aucun compte
+- Aucune publicité
+- Aucun suivi
 - Privé / sur l'appareil
 - App Store · $7.99
 

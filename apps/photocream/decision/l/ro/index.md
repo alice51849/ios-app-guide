@@ -2,7 +2,7 @@
 title: "cel mai bun editor foto cu efect de film cu plată unică pentru creatori de călătorii pe iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Creatorii de călătorii au nevoie de un aspect de film repetabil care adaugă g
 
 - Fotografie & utilitate
 - Început gratuit
+- Fără cont
+- Fără reclame
+- Privat / pe dispozitiv
 - App Store · Gratuit
 
 [Descarcă PhotoCream din App Store →](https://apps.apple.com/ro/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

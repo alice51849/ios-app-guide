@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Simulacre anglès — Anglès a contrarellotge | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Entrena la comprensió de l’anglès amb sessions que posen a prova l’atenci�
 
 - Infants i aprenentatge
 - Descàrrega de pagament
+- Fora de línia
+- Sense compte
 - App Store · 6,99 €
 
 [Descarrega Aim990 Plus: Simulacre anglès a l’App Store](https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

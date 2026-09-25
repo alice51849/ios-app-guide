@@ -2,7 +2,7 @@
 title: "OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್ — ಟಿಪ್ಪಣಿಯಿಂದ ಸಿದ್ಧ ಪ್ರಸ್ತುತಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ಉತ್ಪಾದಕತೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಆಫ್‌ಲೈನ್
+- ಖಾತೆ ಇಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

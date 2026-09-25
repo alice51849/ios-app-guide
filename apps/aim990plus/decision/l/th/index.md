@@ -2,7 +2,7 @@
 title: "best offline English listening and reading exam trainer for iPhone"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 
 - เด็ก & การเรียนรู้
 - ดาวน์โหลดแบบชำระเงิน
+- ออฟไลน์
+- ไม่มีบัญชี
 - App Store · ฿199.00
 
 [ดาวน์โหลด Aim990 Plus บน App Store →](https://apps.apple.com/th/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

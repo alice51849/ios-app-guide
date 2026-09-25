@@ -2,7 +2,7 @@
 title: "بچوں کے لیے بہترین مکمل مارننگ اور بیڈ ٹائم روٹین ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - بچے اور سیکھنا
 - ادا شدہ ڈاؤن لوڈ
+- کوئی اکاؤنٹ نہیں
 - کوئی اشتہار نہیں
+- نجی / آلہ پر
 - App Store · Rs 1,700.00
 
 [Lumi Mission Planet Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

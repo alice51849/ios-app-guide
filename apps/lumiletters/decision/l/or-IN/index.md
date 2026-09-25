@@ -2,7 +2,7 @@
 title: "ଶିଶୁମାନଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ଶିକ୍ଷାମୂଳକ ଖେଳ ଆପ୍, କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ, ଆଇଫୋନ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - App Store · ମାଗଣା
 

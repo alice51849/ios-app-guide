@@ -2,7 +2,7 @@
 title: "dB Halo: מד עוצמת קול — ספקטרום, מנת רעש ושינה | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo הוא מד עוצמת קול ברור ששומר על הפרטיות ב
 
 - עוד
 - התחלה ללא תשלום
+- ללא חשבון
+- ללא פרסומות
+- ללא מעקב
+- פרטי / במכשיר
+- וידג'ט
+- Apple Watch
 - App Store · בחינם
 
 [הורידו את dB Halo: מד עוצמת קול מה-App Store](https://apps.apple.com/il/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

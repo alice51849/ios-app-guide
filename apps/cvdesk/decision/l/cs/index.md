@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na tvorbu životopisu pro změnu kariéry 2026"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skut
 
 - Produktivita
 - Zdarma na začátek
+- Bez účtu
+- Bez reklam
 - App Store · Zdarma
 
 [Získejte CV Desk v App Store →](https://apps.apple.com/cz/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

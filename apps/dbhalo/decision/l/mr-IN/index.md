@@ -2,7 +2,7 @@
 title: "dB Halo: ध्वनी पातळी मापक — वर्णपट आणि आवाजाचा डोस | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - अधिक
 - सुरुवात करण्यासाठी मोफत
+- खाते नाही
+- जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
+- विजेट
+- Apple Watch
 - App Store · मोफत
 
 [App Store वरून dB Halo: ध्वनी पातळी मापक मिळवा](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

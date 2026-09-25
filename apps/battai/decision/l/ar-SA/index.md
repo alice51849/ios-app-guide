@@ -2,7 +2,7 @@
 title: "BattAI: نتيجة صحة البطارية — قواعد ومصادر وحدود واضحة | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI يستخدم ⁦BattAI⁩ خمس قيم من واجهات ⁦iOS API⁩ �
 
 - المزيد
 - بدء مجاني · فتح مرة واحدة
+- بدون إعلانات
+- Apple Watch
 - App Store · مجاني
 
 [احصل على BattAI: نتيجة صحة البطارية من App Store](https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

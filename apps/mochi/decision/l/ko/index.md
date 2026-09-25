@@ -2,7 +2,7 @@
 title: "아이폰에서 구독 없는 가장 간단한 할 일 목록 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제
 - 광고 없음
+- Apple Watch
 - App Store · 무료
 
 [App Store에서 Mochi 받기 →](https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

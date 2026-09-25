@@ -2,7 +2,7 @@
 title: "પ્રી-સ્કૂલ બાળકો માટે શ્રેષ્ઠ શયનકાળ રૂટીન એપ્લિકેશન, જેમાં કોઈ જાહેરાત નથી"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - બાળકો અને અભ્યાસ
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
 [Lumi Mission Planet App Store પર મેળવો →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu bater
 
 - Više
 - Besplatno za početak
+- Bez oglasa
+- Apple Watch
 - App Store · Besplatno
 
 [Preuzmite BattAI: Ocjena stanja baterije u App Storeu](https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

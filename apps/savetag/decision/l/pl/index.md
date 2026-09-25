@@ -2,7 +2,7 @@
 title: "SaveTag: zakładki z AI — Zapisz linki, przeczytaj potem | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Zapisz teraz. I tym razem naprawdę przeczytaj. Cały dzień wysyłasz linki sam
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
+- Bez reklam
+- Bez śledzenia
+- Prywatne / na urządzeniu
+- Widżet
 - App Store · Bezpłatnie
 
 [Pobierz SaveTag: zakładki z AI z App Store](https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

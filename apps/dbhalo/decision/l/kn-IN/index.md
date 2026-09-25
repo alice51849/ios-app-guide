@@ -2,7 +2,7 @@
 title: "dB Halo: ಧ್ವನಿ ಮಟ್ಟ ಮಾಪಕ — ವರ್ಣಪಟ ಮತ್ತು ಶಬ್ದದ ಡೋಸ್ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - ಇನ್ನಷ್ಟು
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
+- ವಿಜೆಟ್
+- Apple Watch
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ dB Halo: ಧ್ವನಿ ಮಟ್ಟ ಮಾಪಕ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

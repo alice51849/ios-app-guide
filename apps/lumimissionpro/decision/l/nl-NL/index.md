@@ -2,7 +2,7 @@
 title: "beste complete ochtend- en bedtijdroutine-app voor kinderen"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Tandenpoetsen en bedtijd mislukken vaak op hetzelfde moment: het kind is moe, de
 
 - Kinderen & leren
 - Betaalde aanschaf
+- Geen account
 - Geen advertenties
+- Privé / op apparaat
 - App Store · € 6,99
 
 [Lumi Mission Planet Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

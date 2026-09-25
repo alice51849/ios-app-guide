@@ -2,7 +2,7 @@
 title: "SaveTag: AI 링크 보관함 — 나중에 읽기, 자동 태그 정리 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
+- 광고 없음
+- 추적 없음
+- 프라이빗 / 기기 내
+- 위젯
 - App Store · 무료
 
 [App Store에서 SaveTag: AI 링크 보관함 받기](https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

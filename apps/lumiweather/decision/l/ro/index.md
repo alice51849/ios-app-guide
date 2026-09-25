@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație meteo pentru părinți care planifică timpul afară cu copiii"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Părinții care planifică timpul afară au nevoie de mai mult decât o temperat
 
 - Copii & învățare
 - Început gratuit
+- Fără cont
 - Fără reclame
 - Fără urmărire
+- Privat / pe dispozitiv
+- Widget
 - App Store · Gratuit
 
 [Descarcă Lumi Weather din App Store →](https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

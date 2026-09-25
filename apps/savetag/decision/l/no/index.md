@@ -2,7 +2,7 @@
 title: "SaveTag: AI-bokmerker — Lagre lenker, les dem senere | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Lagre nå. Og les det faktisk senere. Du sender lenker til deg selv hele dagen. 
 
 - Produktivitet
 - Gratis å starte
+- Ingen konto
+- Ingen annonser
+- Ingen sporing
+- Privat / på enheten
+- Widget
 - App Store · Gratis
 
 [Last ned SaveTag: AI-bokmerker fra App Store](https://apps.apple.com/no/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

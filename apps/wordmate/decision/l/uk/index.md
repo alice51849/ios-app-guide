@@ -2,7 +2,7 @@
 title: "найкращий додаток для вивчення слів для зайнятих ком’ютерів з Apple Watch"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - Без облікового запису
 - Без реклами
 - Без відстеження
+- Приватно / на пристрої
 - Віджет
 - Apple Watch
 - App Store · 9,99 USD

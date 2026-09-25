@@ -2,7 +2,7 @@
 title: "LED Moving Text — Ruchomy napis na ekranie | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Wpisz zdanie i unieś iPhone'a. Z ostatniego rzędu, przez całą halę przylot�
 
 - Więcej
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
+- Bez konta
+- Bez reklam
+- Bez śledzenia
+- Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
 [Pobierz LED Moving Text z App Store](https://apps.apple.com/pl/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

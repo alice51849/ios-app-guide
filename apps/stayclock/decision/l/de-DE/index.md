@@ -2,7 +2,7 @@
 title: "Stay Clock: Klapp-Tischuhr — Dauerhafte Uhr und Kalender | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock verwandelt dein iPhone oder iPad in eine dauerhaft leuchtende Tischuh
 
 - Mehr
 - Kostenloser Einstieg · einmalige Freischaltung
+- Offline
+- Kein Konto
 - Keine Werbung
+- Kein Tracking
+- Privat / auf dem Gerät
+- Widget
+- Apple Watch
 - App Store · Kostenlos
 
 [Stay Clock: Klapp-Tischuhr im App Store laden](https://apps.apple.com/de/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "bästa matte-spelapp för barn att bygga logiska färdigheter på iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Den bästa matteappen för barn tränar resonemang – mönster, sekvenser, rums
 
 - Barn & lärande
 - Gratis att börja · engångsupplåsning
+- Inget konto
 - Inga annonser
 - App Store · Gratis
 

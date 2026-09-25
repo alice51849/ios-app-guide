@@ -2,7 +2,7 @@
 title: "간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 오프라인
+- 계정 없음
+- 광고 없음
+- 추적 없음
 - 프라이빗 / 기기 내
 - App Store · 무료
 

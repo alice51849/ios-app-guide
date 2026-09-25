@@ -2,7 +2,7 @@
 title: "ದ್ವಿಭಾಷಾ ಮಕ್ಕಳಿಗೆ ಪೂರ್ಣ Zhuyin ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
+- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ₹ 999
 
 [Lumi Bopomofo Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

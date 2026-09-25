@@ -2,7 +2,7 @@
 title: "bedste bopomofo-app til børn til at lære zhuyin på iPhone"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem
 
 - Børn & læring
 - Gratis at komme i gang
+- Ingen konto
 - Ingen reklamer
 - App Store · Gratis
 

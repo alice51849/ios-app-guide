@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 
 - Dinheiro e viagens
 - Descarregamento pago
+- Sem conta
+- Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
 - App Store · 5,99 €

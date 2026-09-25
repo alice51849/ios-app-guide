@@ -2,7 +2,7 @@
 title: "iPhone için reklamsız en iyi eğitim oyunu uygulaması çocuklar için"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Küçük bir çocuk için, belirleyici faktör reklamlar ve veri toplama — ö�
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
 - Reklam yok
 - App Store · Ücretsiz
 

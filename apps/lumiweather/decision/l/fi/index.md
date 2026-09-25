@@ -2,7 +2,7 @@
 title: "paras sääsovellus vanhemmille lasten ulkoilun suunnitteluun"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Vanhemmat tarvitsevat ulkoilun suunnitteluun enemmän kuin lämpötilan: he tarv
 
 - Lapset & oppiminen
 - Ilmainen aloitus
+- Ei tiliä
 - Ei mainoksia
 - Ei seurantaa
+- Yksityinen / laitteella
+- Widget
 - App Store · Ilmainen
 
 [Hanki Lumi Weather App Storesta →](https://apps.apple.com/fi/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

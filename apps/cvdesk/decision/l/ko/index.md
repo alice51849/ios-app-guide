@@ -2,7 +2,7 @@
 title: "2026년 경력 전환자를 위한 최고의 이력서 작성 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
+- 광고 없음
 - App Store · 무료
 
 [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "bedste komplette zhuyin-app til tosprogede børn"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem l
 
 - Børn & læring
 - Betalt download
+- Ingen konto
 - Ingen reklamer
+- Privat / på enheden
 - App Store · 79,00 kr
 
 [Hent Lumi Bopomofo Pro i App Store →](https://apps.apple.com/dk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

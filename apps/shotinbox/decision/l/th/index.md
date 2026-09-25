@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — แยกหมวดภาพหน้าจอ เรียงตามเวลา | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - รูปภาพ & เครื่องมือ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
 [ดาวน์โหลด ShotInbox AI: Sort Screenshots บน App Store](https://apps.apple.com/th/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

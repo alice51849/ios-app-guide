@@ -2,7 +2,7 @@
 title: "najlepší jednorazovo platený filmový foto editor pre cestovateľov na iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Cestovatelia potrebujú opakovateľný filmový vzhľad, ktorý pridáva zrno, h
 
 - Fotografia a nástroje
 - Zadarmo na začiatok
+- Bez účtu
+- Bez reklám
+- Súkromné / v zariadení
 - App Store · Zadarmo
 
 [Získajte PhotoCream v App Store →](https://apps.apple.com/sk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

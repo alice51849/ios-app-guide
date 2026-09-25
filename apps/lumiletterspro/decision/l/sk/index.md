@@ -2,7 +2,7 @@
 title: "najlepšia kompletná aplikácia na fonetiku pre domáce prípravné kurzy do škôlky"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Rodiny pripravujúce sa na škôlku potrebujú kompletnú cestu raného čítani
 
 - Deti a učenie
 - Platené stiahnutie
+- Offline
 - Bez reklám
+- Súkromné / v zariadení
 - App Store · 9,99 €
 
 [Získajte Lumi Letters Pro v App Store →](https://apps.apple.com/sk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

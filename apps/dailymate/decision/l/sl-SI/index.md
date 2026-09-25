@@ -2,7 +2,7 @@
 title: "najboljša praktična aplikacija za jezikovne fraze za popotnike z Apple Watch"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posam
 
 - Otroci in učenje
 - Plačljiv prenos
+- Gradnik
 - Apple Watch
 - App Store · 12,99 €
 

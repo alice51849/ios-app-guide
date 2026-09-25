@@ -2,7 +2,7 @@
 title: "ନର୍ସମାନଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ଅଫ୍ଲାଇନ୍ ଡକ୍ୟୁମେଣ୍ଟ ସ୍କ୍ୟାନର୍ ଆପ୍, କୌଣସି କ୍ଲାଉଡ୍ ନାହିଁ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 

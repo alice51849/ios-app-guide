@@ -2,7 +2,7 @@
 title: "лучшее приложение для голосовых заметок с автоматическим резюме встреч на iPhone"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Работа и организация
 - Бесплатно начать · разовая разблокировка
+- Без учётной записи
+- Без рекламы
+- Без отслеживания
 - Лично / на устройстве
 - App Store · Бесплатно
 

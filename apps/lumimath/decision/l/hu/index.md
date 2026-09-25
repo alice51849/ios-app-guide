@@ -2,7 +2,7 @@
 title: "legjobb matek játék alkalmazás gyerekeknek logikai készségek fejlesztésére iPhone-on"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozato
 
 - Gyerekek & tanulás
 - Ingyenes kezdés
+- Nincs fiók
 - Nincs reklám
 - App Store · Ingyenes
 

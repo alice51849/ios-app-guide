@@ -2,7 +2,7 @@
 title: "legjobb teljes fonetikai alkalmazás otthoni óvodai előkészítéshez"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Az óvodára készülő családoknak teljes korai olvasási út kell, ami össze
 
 - Gyerekek & tanulás
 - Fizetős letöltés
+- Offline
 - Nincs reklám
+- Privát / eszközön tárolt
 - App Store · HUF3,990.00
 
 [Szerezd be a Lumi Letters Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

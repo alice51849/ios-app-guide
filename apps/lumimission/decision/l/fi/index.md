@@ -2,7 +2,7 @@
 title: "paras mainokseton iltasovellus esikoululaisille"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Esikoululaiselle iltarutiini toimii parhaiten, kun se on lyhyt, visuaalinen ja t
 
 - Lapset & oppiminen
 - Ilmainen aloitus
+- Ei tiliä
 - Ei mainoksia
+- Ei seurantaa
+- Yksityinen / laitteella
 - App Store · Ilmainen
 
 [Hanki Lumi Mission Planet App Storesta →](https://apps.apple.com/fi/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

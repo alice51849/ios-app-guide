@@ -2,7 +2,7 @@
 title: "aplikasi belajar matematika lengkap terbaik untuk prasekolah dan kelas awal"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Aplikasi matematika awal lengkap harus membuat menghitung, pemahaman angka, dan 
 - Anak & pembelajaran
 - Unduhan berbayar
 - Tanpa iklan
+- Privat / di perangkat
 - App Store · Rp 149ribu
 
 [Dapatkan Lumi Math Pro di App Store →](https://apps.apple.com/id/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

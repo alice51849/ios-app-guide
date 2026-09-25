@@ -2,7 +2,7 @@
 title: "aplikasi perancang jadual perjalanan terbaik untuk iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Aplikasi jadual perjalanan yang baik mengubah perjalanan yang berselerak menjadi
 - Muat turun berbayar
 - Luar talian
 - Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
 - Peribadi / pada peranti
 - App Store · RM29.90
 

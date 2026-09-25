@@ -2,7 +2,7 @@
 title: "پری اسکول بچوں کے لیے بغیر اشتہارات کے بہترین سونے کی روٹین ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - بچے اور سیکھنا
 - مفت آغاز
+- کوئی اکاؤنٹ نہیں
 - کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [Lumi Mission Planet App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

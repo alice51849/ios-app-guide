@@ -2,7 +2,7 @@
 title: "bästa appen för röstanteckningar som sammanfattar möten på iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Efter ett samtal vill du inte ha en rå transkription – du vill ha sammanfattn
 
 - Produktivitet
 - Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- Ingen spårning
 - Privat / på enheten
 - App Store · Gratis
 

@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ஆங்கிலம் கற்க — தினமும் 5 சொற்கள், ஒரு நிமிடம் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ publisher: "Lumi Studio"
 - குழந்தைகள் & கற்றல்
 - இலவசமாக தொடங்கவும்
 - ஆஃப்லைன்
+- கணக்கு இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
 [App Store-இல் Wordmate Lite: ஆங்கிலம் கற்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

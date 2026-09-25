@@ -2,7 +2,7 @@
 title: "Stay Clock: Đồng hồ lật để bàn — Đồng hồ và lịch luôn sáng | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock biến iPhone hoặc iPad của bạn thành một chiếc đồng h�
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
+- Không tài khoản
 - Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
+- Tiện ích
+- Apple Watch
 - App Store · Miễn phí
 
 [Tải Stay Clock: Đồng hồ lật để bàn trên App Store](https://apps.apple.com/vn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "أفضل تطبيق روتين النوم للأطفال في سن الحضانة بدون إعلانات"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - الأطفال والتعلم
 - بدء مجاني · فتح مرة واحدة
+- بدون حساب
 - بدون إعلانات
+- بدون تتبع
+- خاص / على الجهاز
 - App Store · مجاني
 
 [احصل على Lumi Mission Planet من متجر التطبيقات →](https://apps.apple.com/sa/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

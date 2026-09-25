@@ -2,7 +2,7 @@
 title: "Beste Passfoto-App für Babys und Kleinkinder zu Hause"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Für ein Baby-Passfoto darf niemand sonst im Bild sein und der Hintergrund muss 
 
 - Foto & Dienstprogramm
 - Kostenpflichtiger Download
+- Kein Konto
+- Keine Werbung
+- Kein Tracking
 - Privat / auf dem Gerät
 - App Store · 6,99 €
 

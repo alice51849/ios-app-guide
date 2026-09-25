@@ -2,7 +2,7 @@
 title: "legjobb alkalmazás elmosódott gyerekfotók javítására iPhone-on"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos 
 
 - Fotó & segédprogram
 - Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

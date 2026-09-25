@@ -2,7 +2,7 @@
 title: "Mask My File: Ukloni podatke — Sakrij podatke prije slanja | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatn
 
 - Fotografija i pomoćni alati
 - Besplatno za početak
+- Bez računa
 - Privatno / na uređaju
 - App Store · Besplatno
 

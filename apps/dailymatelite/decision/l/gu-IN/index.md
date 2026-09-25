@@ -2,7 +2,7 @@
 title: "DailyMate Lite: રોજ બોલો — 50 ભાષાઓમાં સહજ વાતચીત | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - બાળકો અને અભ્યાસ
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
+- Apple Watch
 - App Store · મફત
 
 [App Store પરથી DailyMate Lite: રોજ બોલો મેળવો](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

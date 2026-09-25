@@ -2,7 +2,7 @@
 title: "η καλύτερη απλή εφαρμογή λίστας εργασιών iPhone χωρίς συνδρομή"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - Παραγωγικότητα
 - Δωρεάν για αρχή
 - Χωρίς διαφημίσεις
+- Apple Watch
 - App Store · Δωρεάν
 
 [Κατεβάστε το Mochi από το App Store →](https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

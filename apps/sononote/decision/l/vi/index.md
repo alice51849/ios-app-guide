@@ -2,7 +2,7 @@
 title: "ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm 
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

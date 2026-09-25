@@ -2,7 +2,7 @@
 title: "LED Moving Text — स्क्रीनवर धावणारा फलक | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - अधिक
 - सुरुवात करण्यासाठी मोफत
+- ऑफलाइन
+- खाते नाही
+- जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
 - App Store · मोफत
 
 [App Store वरून LED Moving Text मिळवा](https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

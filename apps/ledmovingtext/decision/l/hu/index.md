@@ -2,7 +2,7 @@
 title: "LED Moving Text — Fényújság a kijelződön | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Továbbiak
 - Ingyenes kezdés
+- Offline
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
 - App Store · Ingyenes
 
 [Töltse le a(z) LED Moving Text appot az App Store-ból](https://apps.apple.com/hu/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

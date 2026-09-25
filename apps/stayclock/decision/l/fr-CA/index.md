@@ -2,7 +2,7 @@
 title: "Stay Clock : horloge flip — Heure et calendrier permanents | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Avec Stay Clock, votre iPhone ou iPad devient une horloge de bureau toujours all
 
 - Plus
 - Gratuit au départ · déblocage unique
+- Hors ligne
+- Aucun compte
 - Aucune publicité
+- Aucun suivi
+- Privé / sur l'appareil
+- Widget
+- Apple Watch
 - App Store · Gratuit
 
 [Obtenir Stay Clock : horloge flip sur l'App Store](https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Beste vollständige Phonics-App für Vorschul-Homeschool-Vorbereitung"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Familien, die sich auf den Kindergarten vorbereiten, brauchen einen vollständig
 
 - Kinder & Lernen
 - Kostenpflichtiger Download
+- Offline
 - Keine Werbung
+- Privat / auf dem Gerät
 - App Store · 9,99 €
 
 [Lumi Letters Pro im App Store holen →](https://apps.apple.com/de/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

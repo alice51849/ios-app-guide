@@ -2,7 +2,7 @@
 title: "найкращий додаток для активностей у подорожах з дітьми"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - Діти та навчання
 - Безкоштовно для початку · разове розблокування
+- Офлайн
 - Без реклами
+- Приватно / на пристрої
 - App Store · Безкоштовно
 
 [Отримати Lumi Trip Planet в App Store →](https://apps.apple.com/ua/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

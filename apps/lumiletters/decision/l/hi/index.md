@@ -2,7 +2,7 @@
 title: "बच्चों के लिए सर्वश्रेष्ठ शैक्षिक गेम ऐप बिना विज्ञापन के iPhone"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - बच्चे और सीखना
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- ऑफ़लाइन
 - कोई विज्ञापन नहीं
 - App Store · मुफ़्त
 

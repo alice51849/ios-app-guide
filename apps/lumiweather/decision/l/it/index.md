@@ -2,7 +2,7 @@
 title: "miglior app meteo per aiutare i genitori a pianificare attività all’aperto con bambini"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ I genitori che pianificano attività all’aperto hanno bisogno di più della te
 
 - Bambini e apprendimento
 - Gratis per iniziare · sblocco unico
+- Nessun account
 - Nessuna pubblicità
 - Nessun tracciamento
+- Privato / su dispositivo
+- Widget
 - App Store · Gratis
 
 [Scarica Lumi Weather su App Store →](https://apps.apple.com/it/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

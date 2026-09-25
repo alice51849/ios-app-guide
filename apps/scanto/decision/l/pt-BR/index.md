@@ -2,7 +2,7 @@
 title: "melhor scanner de documentos offline sem nuvem para enfermeiras"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Se você digitaliza formulários de consentimento, documentos de alta hospitalar
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Offline
+- Sem conta
+- Sem anúncios
+- Sem rastreamento
 - Privado / no dispositivo
 - App Store · Grátis
 

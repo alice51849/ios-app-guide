@@ -2,7 +2,7 @@
 title: "未就学児・低学年向けおすすめ完全算数学習アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - 子ども・学習
 - 有料ダウンロード
 - 広告なし
+- プライベート／端末内
 - App Store · ¥1,500
 
 [App StoreでLumi Math Proを入手 →](https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

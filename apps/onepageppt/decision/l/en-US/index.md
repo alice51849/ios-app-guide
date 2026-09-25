@@ -2,7 +2,7 @@
 title: "app that turns meeting notes into one presentation slide"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/en-US/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ OnePage PPT — Turn a wall of text into ONE slide people actually read. Free to
 
 - Productivity
 - Free to start · one-time unlock
+- Offline
+- No account
+- No tracking
+- Private / on-device
 - App Store · Free
 
 [Get OnePage PPT on the App Store →](https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

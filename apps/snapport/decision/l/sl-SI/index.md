@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora 
 
 - Fotografija in pripomočki
 - Plačljiv prenos
+- Brez računa
+- Brez oglasov
+- Brez sledenja
 - Zasebno / na napravi
 - App Store · 6,99 €
 

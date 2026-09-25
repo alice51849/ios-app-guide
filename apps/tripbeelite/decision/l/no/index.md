@@ -2,7 +2,7 @@
 title: "beste enkle reiseplanlegger-app for én kommende tur til iPhone"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Hvis du planlegger én kommende reise, er en rolig tidslinje for den turen mer n
 
 - Reise
 - Gratis å starte
+- Ingen konto
+- Ingen annonser
 - App Store · Gratis
 
 [Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "LED Moving Text — Рухомий рядок на екрані | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Ще
 - Безкоштовно для початку · разове розблокування
+- Офлайн
+- Без облікового запису
+- Без реклами
+- Без відстеження
+- Приватно / на пристрої
 - App Store · Безкоштовно
 
 [Завантажте LED Moving Text з App Store](https://apps.apple.com/ua/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

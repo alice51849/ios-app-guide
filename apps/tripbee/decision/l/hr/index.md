@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za planiranje putovanja za iPhone"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspo
 - Plaćeno preuzimanje
 - Izvan mreže
 - Bez računa
+- Bez oglasa
+- Bez praćenja
 - Privatno / na uređaju
 - App Store · 6,99 €
 

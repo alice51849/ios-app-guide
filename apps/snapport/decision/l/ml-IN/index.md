@@ -2,7 +2,7 @@
 title: "വീട്ടിൽ കുഞ്ഞുങ്ങളുടെയും ചെറുപ്പക്കാരുടെയും പാസ്പോർട്ട് ഫോട്ടോയ്ക്ക് മികച്ച ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ഫോട്ടോ & ഉപകരണം
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · ₹ 599
 

@@ -2,7 +2,7 @@
 title: "Snapport Lite: Pasfoto hjemme — Lav ID-fotos derhjemme | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - Tag pas-, visum- og dokumentfotos med vejledende størrelser, ba
 - Foto & værktøj
 - Gratis at komme i gang
 - Offline
+- Ingen konto
+- Ingen reklamer
+- Ingen sporing
+- Privat / på enheden
 - App Store · Gratis
 
 [Hent Snapport Lite: Pasfoto hjemme i App Store](https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

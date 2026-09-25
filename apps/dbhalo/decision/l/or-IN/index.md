@@ -2,7 +2,7 @@
 title: "dB Halo: ଶବ୍ଦ ସ୍ତର ମାପକ — FFT, RTA ଓ ବର୍ଣ୍ଣାଳୀ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ ଡିଭାଇସରେ ଚ
 
 - ଅଧିକ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
+- ଉଇଜେଟ
+- Apple Watch
 - App Store · ମାଗଣା
 
 [App Store ରୁ dB Halo: ଶବ୍ଦ ସ୍ତର ମାପକ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

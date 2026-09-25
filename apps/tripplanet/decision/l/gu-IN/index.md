@@ -2,7 +2,7 @@
 title: "ફેમિલી ટ્રિપ્સ માટે બાળકો માટે શ્રેષ્ઠ ટ્રાવેલ એક્ટિવિટી એપ"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - બાળકો અને અભ્યાસ
 - મફત શરૂઆત
+- ઑફલાઇન
 - કોઈ જાહેરાત નથી
+- ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
 [Trip Planet: Kids Quest App Store પર મેળવો →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

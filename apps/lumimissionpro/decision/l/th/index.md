@@ -2,7 +2,7 @@
 title: "แอปกิจวัตรเช้าและก่อนนอนครบวงจรสำหรับเด็กที่ดีที่สุด"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - เด็ก & การเรียนรู้
 - ดาวน์โหลดแบบชำระเงิน
+- ไม่มีบัญชี
 - ไม่มีโฆษณา
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฿199.00
 
 [ดาวน์โหลด Lumi Mission Planet Pro ใน App Store →](https://apps.apple.com/th/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "paras äänimuistiinpanojen sovellus, joka tiivistää kokoukset iPhonella"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Puhelun jälkeen et halua raakatekstiä — haluat tiivistelmän, toimintakohdat
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
+- Ei mainoksia
+- Ei seurantaa
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

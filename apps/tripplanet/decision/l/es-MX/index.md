@@ -2,7 +2,7 @@
 title: "mejor app de actividades de viaje para niños en viajes familiares"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Los padres que viajan con niños pequeños necesitan actividades que conviertan 
 
 - Niños y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin conexión
 - Sin anuncios
+- Privado / en el dispositivo
 - App Store · Gratis
 
 [Consigue Lumi Trip Planet en App Store →](https://apps.apple.com/mx/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "ବାଳକ ଏବଂ ଶିଶୁଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ପାସପୋର୍ଟ ଫଟୋ ଆପ୍ ଘରେ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - ଫଟୋ ଏବଂ ସାଧନ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 599
 

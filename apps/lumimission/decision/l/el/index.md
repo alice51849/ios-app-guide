@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή για βραδινή ρουτίνα προσχολικής ηλικίας χωρίς διαφημίσεις"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - Παιδιά & μάθηση
 - Δωρεάν για αρχή
+- Χωρίς λογαριασμό
 - Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
 [Αποκτήστε το Lumi Mission Planet στο App Store →](https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

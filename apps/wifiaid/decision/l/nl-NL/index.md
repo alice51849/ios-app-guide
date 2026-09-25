@@ -2,7 +2,7 @@
 title: "WiFi Aid: Vind netwerkfouten — Netwerkdiagnose met bewijs | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en s
 
 - Foto & hulpmiddel
 - Betaalde aanschaf
+- Geen account
+- Apple Watch
 - App Store · € 6,99
 
 [Download WiFi Aid: Vind netwerkfouten in de App Store](https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

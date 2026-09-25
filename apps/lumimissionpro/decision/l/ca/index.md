@@ -2,7 +2,7 @@
 title: "millor app completa de rutina de matí i nit per a infants"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ El raspallat de dents i l'hora de dormir sovint fallen al mateix moment cada nit
 
 - Infants i aprenentatge
 - Descàrrega de pagament
+- Sense compte
 - Sense anuncis
+- Privat / en el dispositiu
 - App Store · 6,99 €
 
 [Descarrega Lumi Mission Planet Pro a l'App Store →](https://apps.apple.com/es/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

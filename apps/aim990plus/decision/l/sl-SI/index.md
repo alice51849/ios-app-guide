@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test angleščine — Zbranost proti uri | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko
 
 - Otroci in učenje
 - Plačljiv prenos
+- Brez povezave
+- Brez računa
 - App Store · 6,99 €
 
 [Prenesite Aim990 Plus: Test angleščine iz trgovine App Store](https://apps.apple.com/si/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

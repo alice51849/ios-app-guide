@@ -2,7 +2,7 @@
 title: "แอปเตรียมสอบ TOEIC แบบออฟไลน์ที่ดีที่สุดพร้อมแผนการเรียนสำหรับ iPhone"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - การศึกษา
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ออฟไลน์
+- ไม่มีโฆษณา
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
 [รับ Aim990 ใน App Store →](https://apps.apple.com/th/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

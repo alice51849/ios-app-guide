@@ -2,7 +2,7 @@
 title: "아이폰용 오프라인 토익 준비 앱 최고의 학습 계획"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 교육
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 오프라인
+- 광고 없음
+- 프라이빗 / 기기 내
 - App Store · 무료
 
 [앱 스토어에서 Aim990 받기 →](https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

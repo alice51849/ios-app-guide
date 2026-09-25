@@ -2,7 +2,7 @@
 title: "Millor app per arreglar fotos borroses de nens a l’iPhone"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades 
 
 - Fotografia i utilitat
 - Inici gratuït
+- Sense compte
+- Sense anuncis
+- Sense seguiment
 - Privat / en el dispositiu
 - App Store · Gratis
 

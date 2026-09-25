@@ -2,7 +2,7 @@
 title: "SaveTag: marcadores con IA — Guarda enlaces y léelos luego | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Guárdalo ahora. Léelo de verdad luego. Te pasas el día mandándote enlaces. L
 
 - Productividad
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
+- Sin anuncios
+- Sin seguimiento
+- Privado / en el dispositivo
+- Widget
 - App Store · Gratis
 
 [Consigue SaveTag: marcadores con IA en el App Store](https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

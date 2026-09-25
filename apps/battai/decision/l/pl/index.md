@@ -2,7 +2,7 @@
 title: "BattAI: Wynik kondycji baterii — Jasne zasady, źródła i granice | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: po
 
 - Więcej
 - Darmowe na start · jednorazowe odblokowanie
+- Bez reklam
+- Apple Watch
 - App Store · Bezpłatnie
 
 [Pobierz BattAI: Wynik kondycji baterii z App Store](https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

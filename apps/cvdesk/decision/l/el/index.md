@@ -2,7 +2,7 @@
 title: "η καλύτερη εφαρμογή δημιουργίας βιογραφικού για αλλαγή καριέρας 2026"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Παραγωγικότητα
 - Δωρεάν για αρχή
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
 - App Store · Δωρεάν
 
 [Κατεβάστε το CV Desk από το App Store →](https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

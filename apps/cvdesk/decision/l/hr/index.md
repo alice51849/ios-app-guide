@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za izradu životopisa za promjenu karijere 2026"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskus
 
 - Produktivnost
 - Besplatno za početak
+- Bez računa
+- Bez oglasa
 - App Store · Besplatno
 
 [Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

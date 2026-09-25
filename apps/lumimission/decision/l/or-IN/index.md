@@ -2,7 +2,7 @@
 title: "ପ୍ରିସ୍କୁଲ୍ ଶିଶୁମାନଙ୍କ ପାଇଁ ବିନା ବିଜ୍ଞାପନ୍ ସର୍ବଶ୍ରେଷ୍ଟ ଶୟନକାଳ ଅନୁଷ୍ଠାନ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରେ Lumi Mission Planet ପାଇଁ](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

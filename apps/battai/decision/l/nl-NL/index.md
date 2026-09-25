@@ -2,7 +2,7 @@
 title: "BattAI: Batterijconditiescore — Heldere regels, bronnen en grenzen | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, la
 
 - Meer
 - Gratis te starten · eenmalige ontgrendeling
+- Geen advertenties
+- Apple Watch
 - App Store · Gratis
 
 [Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

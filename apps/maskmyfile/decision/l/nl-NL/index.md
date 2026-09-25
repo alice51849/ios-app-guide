@@ -2,7 +2,7 @@
 title: "Mask My File: Wis je gegevens — Verberg gegevens vóór delen | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Deel veilig zonder de nuttige context te verliezen. Mask My File vindt privégeg
 
 - Foto & hulpmiddel
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
 - Privé / op apparaat
 - App Store · Gratis
 

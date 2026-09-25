@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή δραστηριοτήτων ταξιδιού για παιδιά σε οικογενειακές εκδρομές"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - Παιδιά & μάθηση
 - Δωρεάν για αρχή
+- Εκτός σύνδεσης
 - Χωρίς διαφημίσεις
+- Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
 [Αποκτήστε το Lumi Trip Planet στο App Store →](https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

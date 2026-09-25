@@ -2,7 +2,7 @@
 title: "najbolja kompletna aplikacija za fonetiku za pripremu predškolske djece kod kuće"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji p
 
 - Djeca i učenje
 - Plaćeno preuzimanje
+- Izvan mreže
 - Bez oglasa
+- Privatno / na uređaju
 - App Store · 9,99 €
 
 [Preuzmite Lumi Letters Pro na App Storeu →](https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

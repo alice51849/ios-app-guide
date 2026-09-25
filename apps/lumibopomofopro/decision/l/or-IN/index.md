@@ -2,7 +2,7 @@
 title: "ଦ୍ୱିଭାଷୀ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ସମ୍ପୂର୍ଣ୍ଣ ଝୁୟିନ୍ ଆପ୍"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
+- କୌଣସି ଖାତା ନାହିଁ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 999
 
 [App Store ରେ Lumi Bopomofo Pro ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "najboljša preprosta aplikacija za seznam opravil na iPhonu brez naročnine"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - Produktivnost
 - Brezplačen začetek
 - Brez oglasov
+- Apple Watch
 - App Store · Brezplačno
 
 [Prenesite Mochi iz App Store →](https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

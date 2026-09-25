@@ -2,7 +2,7 @@
 title: "SaveTag : signets par IA — Gardez vos liens, lisez-les | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Gardez-le maintenant. Lisez-le pour vrai plus tard. Toute la journée, vous vous
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Aucun compte
+- Aucune publicité
+- Aucun suivi
+- Privé / sur l'appareil
+- Widget
 - App Store · Gratuit
 
 [Obtenir SaveTag : signets par IA sur l'App Store](https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

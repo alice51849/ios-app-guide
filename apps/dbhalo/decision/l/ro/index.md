@@ -2,7 +2,7 @@
 title: "dB Halo: Sonometru — Decibeli, doză și expunere | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo transformă iPhone sau iPad într-un sonometru cu analizor audio și pro
 
 - Mai mult
 - Început gratuit
+- Fără cont
+- Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
+- Widget
+- Apple Watch
 - App Store · Gratuit
 
 [Descarcă dB Halo: Sonometru din App Store](https://apps.apple.com/ro/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

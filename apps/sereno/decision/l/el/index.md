@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή λευκού θορύβου για να κοιμηθείτε χωρίς συνδρομή"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - Ύπνος & συγκέντρωση
 - Δωρεάν για αρχή
 - Εκτός σύνδεσης
+- Χωρίς λογαριασμό
 - Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
 [Κατεβάστε το Sereno από το App Store →](https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "bästa kompletta morgon- och kvällsrutinsappen för barn"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Tandborstning och läggdags misslyckas ofta vid samma tidpunkt varje kväll: bar
 
 - Barn & lärande
 - Betald nedladdning
+- Inget konto
 - Inga annonser
+- Privat / på enheten
 - App Store · 79,00 kr
 
 [Hämta Lumi Mission Planet Pro på App Store →](https://apps.apple.com/se/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

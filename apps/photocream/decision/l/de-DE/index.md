@@ -2,7 +2,7 @@
 title: "Bester Einmal-Kauf Film-Fotoeditor für Reise-Creators auf dem iPhone"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Reise-Creators brauchen einen wiederholbaren Film-Look, der Körnung, Halation u
 
 - Foto & Dienstprogramm
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- Keine Werbung
+- Privat / auf dem Gerät
 - App Store · Kostenlos
 
 [PhotoCream im App Store holen →](https://apps.apple.com/de/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

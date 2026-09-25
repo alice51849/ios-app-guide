@@ -2,7 +2,7 @@
 title: "paras offline-asiakirjaskanneri ilman pilveä sairaanhoitajille"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Jos skannaat potilaan suostumuslomakkeita, kotiutuspapereita tai lähetteitä, s
 
 - Tuottavuus
 - Ilmainen aloitus
+- Offline
+- Ei tiliä
+- Ei mainoksia
+- Ei seurantaa
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

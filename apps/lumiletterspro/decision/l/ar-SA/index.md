@@ -2,7 +2,7 @@
 title: "أفضل تطبيق فونكس كامل للتحضير لرياض الأطفال في التعليم المنزلي"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - الأطفال والتعلم
 - تحميل مدفوع
+- دون اتصال
 - بدون إعلانات
+- خاص / على الجهاز
 - App Store · SAR 39.99
 
 [احصل على Lumi Letters Pro من App Store →](https://apps.apple.com/sa/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

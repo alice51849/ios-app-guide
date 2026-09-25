@@ -2,7 +2,7 @@
 title: "millor aplicació de rutina per anar a dormir per a infants d'educació infantil sense anuncis"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,10 @@ Per a un infant d'educació infantil, una rutina per anar a dormir funciona mill
 
 - Infants i aprenentatge
 - Inici gratuït
+- Sense compte
 - Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
 - App Store · Gratis
 
 [Obtén Lumi Mission Planet a l'App Store →](https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)

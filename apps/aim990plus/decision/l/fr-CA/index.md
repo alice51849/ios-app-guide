@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test d'anglais — Défis chronométrés d’anglais | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Renforcez votre compréhension de l’anglais avec des séances structurées pou
 
 - Enfants et apprentissage
 - Téléchargement payant
+- Hors ligne
+- Aucun compte
 - App Store · $7.99
 
 [Obtenir Aim990 Plus: Test d'anglais sur l'App Store](https://apps.apple.com/ca/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "dB Halo: ശബ്ദനില മീറ്റർ — സ്പെക്ട്രവും ശബ്ദ ഡോസും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - കൂടുതൽ
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
+- വിഡ്ജറ്റ്
+- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് dB Halo: ശബ്ദനില മീറ്റർ നേടൂ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

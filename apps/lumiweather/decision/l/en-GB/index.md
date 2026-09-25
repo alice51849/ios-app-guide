@@ -2,7 +2,7 @@
 title: "best weather app to help parents plan outdoor time with kids"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/en-GB/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Parents planning outdoor time need more than a temperature: they need a quick, a
 
 - Children & learning
 - Free to start · one-time unlock
+- No account
 - No adverts
 - No tracking
+- Private / on-device
+- Widget
 - App Store · Free
 
 [Get Lumi Weather on the App Store →](https://apps.apple.com/gb/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

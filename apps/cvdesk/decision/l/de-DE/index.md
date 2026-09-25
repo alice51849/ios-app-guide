@@ -2,7 +2,7 @@
 title: "beste Lebenslauf-App für Berufswechsler 2026"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Beim Branchenwechsel ist das Lebenslaufproblem anders: Ihre Erfahrung ist echt, 
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- Keine Werbung
 - App Store · Kostenlos
 
 [CV Desk im App Store herunterladen →](https://apps.apple.com/de/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "найкращий додаток для фото на паспорт для немовлят і малюків вдома"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Фото та утиліти
 - Платне завантаження
+- Без облікового запису
+- Без реклами
+- Без відстеження
 - Приватно / на пристрої
 - App Store · 6,99 USD
 

@@ -2,7 +2,7 @@
 title: "paras matkailupelisovellus lapsille perhematkoille"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, 
 
 - Lapset & oppiminen
 - Ilmainen aloitus
+- Offline
 - Ei mainoksia
+- Yksityinen / laitteella
 - App Store · Ilmainen
 
 [Hanki Lumi Trip Planet App Storesta →](https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

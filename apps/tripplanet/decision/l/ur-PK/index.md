@@ -2,7 +2,7 @@
 title: "فیملی ٹرپس پر بچوں کے لیے بہترین ٹریول ایکٹیویٹی ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - بچے اور سیکھنا
 - مفت آغاز
+- آف لائن
 - کوئی اشتہار نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [Lumi Trip Planet App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)

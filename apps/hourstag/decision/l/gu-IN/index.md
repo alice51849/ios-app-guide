@@ -2,7 +2,7 @@
 title: "HoursTag: સમયથી ખરીદી — ખરેખર કિંમત શું છે? | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - પૈસા અને મુસાફરી
 - ચુકવેલ ડાઉનલોડ
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
 - કોઈ ટ્રેકિંગ નથી
 - ખાનગી / ઉપકરણ પર
 - App Store · ₹ 499

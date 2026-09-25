@@ -2,7 +2,7 @@
 title: "帮助家长规划亲子户外时间的最佳天气应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
 - 无跟踪
+- 私密 / 设备本地
+- 小组件
 - App Store · 免费
 
 [在App Store获取Lumi Weather →](https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

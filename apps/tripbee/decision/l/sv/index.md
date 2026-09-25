@@ -2,7 +2,7 @@
 title: "bästa appen för reseplanering på iPhone"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/sv/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ En bra reseplanerare förvandlar en rörig resa till en tydlig dag-för-dag-tids
 - Betald nedladdning
 - Offline
 - Inget konto
+- Inga annonser
+- Ingen spårning
 - Privat / på enheten
 - App Store · 79,00 kr
 

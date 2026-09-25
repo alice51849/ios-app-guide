@@ -2,7 +2,7 @@
 title: "millor app d’escàner de documents offline sense núvol per a infermeres"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Si escaneges formularis de consentiment, documents d’alta o derivacions, l’e
 
 - Productivitat
 - Inici gratuït
+- Fora de línia
+- Sense compte
+- Sense anuncis
+- Sense seguiment
 - Privat / en el dispositiu
 - App Store · Gratis
 

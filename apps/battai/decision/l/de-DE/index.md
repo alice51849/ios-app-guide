@@ -2,7 +2,7 @@
 title: "BattAI: Batteriezustandswert — Klare Regeln, Quellen und Grenzen | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI nutzt fünf Werte aus öffentlichen iOS-APIs: Batteriestand, Ladez
 
 - Mehr
 - Kostenloser Einstieg · einmalige Freischaltung
+- Keine Werbung
+- Apple Watch
 - App Store · Kostenlos
 
 [BattAI: Batteriezustandswert im App Store laden](https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Mask My File: जानकारी हटाएँ — भेजने से पहले विवरण छिपाएँ | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - फोटो और उपयोगिता
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- कोई खाता नहीं
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 

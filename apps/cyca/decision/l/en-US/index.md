@@ -2,7 +2,7 @@
 title: "best period tracker app no account required iphone"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/en-US/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ In a category where data sensitivity is the whole story, the right period tracke
 
 - Health
 - Free to start · one-time unlock
+- Offline
+- No account
+- No ads
+- No tracking
 - Private / on-device
 - App Store · Free
 - ★ 5.0/5 · 1

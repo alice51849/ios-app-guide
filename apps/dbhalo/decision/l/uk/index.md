@@ -2,7 +2,7 @@
 title: "dB Halo: Шумомір — Децибели, спектр і доза | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo — шумомір для iPhone, iPad та Apple Watch. Усі дані
 
 - Ще
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
+- Без реклами
+- Без відстеження
+- Приватно / на пристрої
+- Віджет
+- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте dB Halo: Шумомір з App Store](https://apps.apple.com/ua/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

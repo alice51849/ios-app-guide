@@ -2,7 +2,7 @@
 title: "Stay Clock: prekucna ura — Ura in koledar vedno prižgana | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock spremeni vaš iPhone ali iPad v namizno uro, ki je vedno prižgana in
 
 - Več
 - Brezplačen začetek
+- Brez povezave
+- Brez računa
 - Brez oglasov
+- Brez sledenja
+- Zasebno / na napravi
+- Gradnik
+- Apple Watch
 - App Store · Brezplačno
 
 [Prenesite Stay Clock: prekucna ura iz trgovine App Store](https://apps.apple.com/si/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

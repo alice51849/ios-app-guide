@@ -2,7 +2,7 @@
 title: "아이들을 위한 완전한 아침 및 취침 루틴 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 유료 다운로드
+- 계정 없음
 - 광고 없음
+- 프라이빗 / 기기 내
 - App Store · ￦9,900
 
 [App Store에서 Lumi Mission Planet Pro 받기 →](https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

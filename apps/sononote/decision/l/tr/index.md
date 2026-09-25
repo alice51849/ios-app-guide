@@ -2,7 +2,7 @@
 title: "iPhone’da toplantıları özetleyen en iyi sesli not uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
+- Reklam yok
+- Takip yok
 - Gizli / cihazda
 - App Store · Ücretsiz
 

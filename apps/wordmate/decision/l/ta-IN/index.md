@@ -2,7 +2,7 @@
 title: "Apple Watch உடன் பயணிக்கும் நேரமில்லா பயணிகளுக்கான சிறந்த சொற்பொருள் செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - கணக்கு இல்லை
 - விளம்பரங்கள் இல்லை
 - பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
 - விட்ஜெட்
 - Apple Watch
 - App Store · ₹ 999

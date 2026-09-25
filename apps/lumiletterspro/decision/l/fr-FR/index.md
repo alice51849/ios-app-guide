@@ -2,7 +2,7 @@
 title: "meilleure application phonics complète pour préparation maternelle à domicile"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Les familles qui préparent la maternelle ont besoin d’un parcours complet d�
 
 - Enfants & apprentissage
 - Téléchargement payant
+- Hors ligne
 - Sans publicité
+- Privé / sur l’appareil
 - App Store · 9,99 €
 
 [Obtenir Lumi Letters Pro sur l’App Store →](https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

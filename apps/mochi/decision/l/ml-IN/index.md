@@ -2,7 +2,7 @@
 title: "എളുപ്പമുള്ള ടു-ഡു ലിസ്റ്റ് ആപ്പ് iPhone-ൽ സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക
 - വ്യാപനങ്ങൾ ഇല്ല
+- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് Mochi നേടുക →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "best complete phonics app for homeschool kindergarten prep"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/en-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Families preparing for kindergarten need a complete early-reading path that conn
 
 - Kids & learning
 - Paid download
+- Offline
 - No ads
+- Private / on-device
 - App Store · $11.99
 
 [Get Lumi Letters Pro on the App Store →](https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

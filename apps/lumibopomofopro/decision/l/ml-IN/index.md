@@ -2,7 +2,7 @@
 title: "ബൈലിംഗ്വൽ കുട്ടികൾക്കായി മികച്ച പൂർണ്ണ Zhuyin ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - കുട്ടികൾ & പഠനം
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
+- അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · ₹ 999
 
 [Lumi Bopomofo Pro App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na počasie pre rodičov plánujúcich čas vonku s deťmi"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Rodičia plánujúci čas vonku potrebujú viac než teplotu: potrebujú rýchly
 
 - Deti a učenie
 - Zadarmo na začiatok
+- Bez účtu
 - Bez reklám
 - Bez sledovania
+- Súkromné / v zariadení
+- Widget
 - App Store · Zadarmo
 
 [Získajte Lumi Weather v App Store →](https://apps.apple.com/sk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

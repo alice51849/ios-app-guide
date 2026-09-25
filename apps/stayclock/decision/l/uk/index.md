@@ -2,7 +2,7 @@
 title: "Stay Clock: відкидний годинник — Час і календар без перерви | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock перетворює ваш iPhone або iPad на настільн�
 
 - Ще
 - Безкоштовно для початку · разове розблокування
+- Офлайн
+- Без облікового запису
 - Без реклами
+- Без відстеження
+- Приватно / на пристрої
+- Віджет
+- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте Stay Clock: відкидний годинник з App Store](https://apps.apple.com/ua/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

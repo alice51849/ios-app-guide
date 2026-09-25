@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de notițe vocale care rezumă întâlnirile pe iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ După un apel nu vrei o transcriere brută — vrei rezumatul, punctele de acți
 
 - Productivitate
 - Început gratuit
+- Fără cont
+- Fără reclame
+- Fără urmărire
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

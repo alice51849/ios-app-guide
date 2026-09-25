@@ -2,7 +2,7 @@
 title: "dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ — FFT, RTA ਅਤੇ ਸ਼ੋਰ ਦੀ ਖੁਰਾਕ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo ਪੂਰੀ ਤਰ੍ਹਾਂ ਡਿਵਾਈਸ ਉੱਤੇ ਚੱ�
 
 - ਹੋਰ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
+- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
+- ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
+- ਵਿਜੈਟ
+- Apple Watch
 - App Store · ਮੁਫ਼ਤ
 
 [App Store ਤੋਂ dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

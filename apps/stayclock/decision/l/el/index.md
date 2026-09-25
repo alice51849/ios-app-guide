@@ -2,7 +2,7 @@
 title: "Stay Clock: ρολόι flip — Ώρα και ημερολόγιο πάντα | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ publisher: "Lumi Studio"
 
 - Περισσότερα
 - Δωρεάν για αρχή
+- Εκτός σύνδεσης
+- Χωρίς λογαριασμό
 - Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
+- Γραφικό στοιχείο
+- Apple Watch
 - App Store · Δωρεάν
 
 [Αποκτήστε το Stay Clock: ρολόι flip από το App Store](https://apps.apple.com/gr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

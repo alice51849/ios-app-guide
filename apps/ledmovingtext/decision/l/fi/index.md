@@ -2,7 +2,7 @@
 title: "LED Moving Text — Liikkuva valokyltti näytölle | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Kirjoita lause ja nosta iPhone ylös. Takarivistä, saapumisaulan toiselta puole
 
 - Lisää
 - Ilmainen aloitus
+- Offline
+- Ei tiliä
+- Ei mainoksia
+- Ei seurantaa
+- Yksityinen / laitteella
 - App Store · Ilmainen
 
 [Lataa LED Moving Text App Storesta](https://apps.apple.com/fi/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

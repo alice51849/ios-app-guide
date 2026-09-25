@@ -2,7 +2,7 @@
 title: "ứng dụng học zhuyin đầy đủ tốt nhất cho trẻ song ngữ"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm,
 
 - Trẻ em & học tập
 - Tải xuống trả phí
+- Không tài khoản
 - Không quảng cáo
+- Riêng tư / trên thiết bị
 - App Store · 299.000đ
 
 [Tải Lumi Bopomofo Pro trên App Store →](https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

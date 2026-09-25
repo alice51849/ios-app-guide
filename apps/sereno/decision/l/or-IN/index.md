@@ -2,7 +2,7 @@
 title: "ସବୁଠାରୁ ଭଲ white noise ଆପ୍ ନିଦ୍ରା ପାଇଁ କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - ଘୁମ ଏବଂ ଏକାଗ୍ରତା
 - ମୁକ୍ତ ଆରମ୍ଭ
 - ଅଫଲାଇନ
+- କୌଣସି ଖାତା ନାହିଁ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
 [App Store ରୁ Sereno ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "aplikasi frasa bahasa praktis terbaik untuk pelancong dengan Apple Watch"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi nyata lebih berguna daripada kos
 
 - Anak & pembelajaran
 - Unduhan berbayar
+- Widget
 - Apple Watch
 - App Store · Rp 229ribu
 

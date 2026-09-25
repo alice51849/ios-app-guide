@@ -2,7 +2,7 @@
 title: "אפליקציית מתמטיקה מלאה לגיל הגן וכיתות ראשונות"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ילדים ולמידה
 - הורדה בתשלום
 - ללא פרסומות
+- פרטי / במכשיר
 - App Store · ₪29.90
 
 [קבל את Lumi Math Pro ב-App Store →](https://apps.apple.com/il/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

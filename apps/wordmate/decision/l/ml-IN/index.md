@@ -2,7 +2,7 @@
 title: "Apple Watch ഉപയോഗിക്കുന്ന തിരക്കുള്ള യാത്രക്കാരുടെ വാക്ക് പഠനത്തിന് മികച്ച ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
 - ട്രാക്കിംഗ് ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
 - വിഡ്ജറ്റ്
 - Apple Watch
 - App Store · ₹ 999

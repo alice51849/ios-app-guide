@@ -2,7 +2,7 @@
 title: "バイリンガル児童向けおすすめ完全注音アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 子ども・学習
 - 有料ダウンロード
+- アカウント不要
 - 広告なし
+- プライベート／端末内
 - App Store · ¥1,500
 - ★ 5.0/5 · 1
 

@@ -2,7 +2,7 @@
 title: "найкращий додаток для виправлення розмитих фото дітей на iPhone"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Фото та утиліти
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
+- Без реклами
+- Без відстеження
 - Приватно / на пристрої
 - App Store · Безкоштовно
 

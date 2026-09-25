@@ -2,7 +2,7 @@
 title: "குழந்தைகளுக்கான சிறந்த முழுமையான காலை மற்றும் இரவு பழக்க செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - குழந்தைகள் & கற்றல்
 - பணம் செலுத்தி பதிவிறக்கவும்
+- கணக்கு இல்லை
 - விளம்பரங்கள் இல்லை
+- தனியுரிமை / சாதனத்தில்
 - App Store · ₹ 599
 
 [Lumi Mission Planet Pro ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

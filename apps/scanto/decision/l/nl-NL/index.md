@@ -2,7 +2,7 @@
 title: "beste offline document scanner app zonder cloud voor verpleegkundigen"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de s
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling
+- Offline
+- Geen account
+- Geen advertenties
+- Geen tracking
 - Privé / op apparaat
 - App Store · Gratis
 

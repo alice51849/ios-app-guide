@@ -2,7 +2,7 @@
 title: "ద్విభాషా పిల్లలకు ఉత్తమ పూర్తి జుయిన్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - చెల్లింపు డౌన్లోడ్
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
+- గోప్యంగా / పరికరంలో
 - App Store · ₹ 999
 
 [Lumi Bopomofo Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "legjobb bopomofo alkalmazás gyerekeknek zhuyin tanulásához iPhone-on"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot l
 
 - Gyerekek & tanulás
 - Ingyenes kezdés
+- Nincs fiók
 - Nincs reklám
 - App Store · Ingyenes
 

@@ -2,7 +2,7 @@
 title: "سفر کرنے والے کریئیٹرز کے لیے iPhone پر بہترین ایک بار ادائیگی والی فلم فوٹو ایڈیٹر"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - تصویر اور سہولت
 - مفت آغاز
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [PhotoCream App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

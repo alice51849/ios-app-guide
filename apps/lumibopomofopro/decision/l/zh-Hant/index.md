@@ -2,7 +2,7 @@
 title: "適合雙語兒童的最佳完整注音學習 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 兒童與學習
 - 付費下載
+- 免帳號
 - 無廣告
+- 隱私優先／裝置端
 - App Store · $290.00
 - ★ 4.0/5 · 2
 

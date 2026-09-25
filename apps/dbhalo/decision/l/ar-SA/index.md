@@ -2,7 +2,7 @@
 title: "dB Halo: مقياس الديسيبل — الطيف وجرعة الضوضاء والنوم | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ar-SA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - المزيد
 - بدء مجاني · فتح مرة واحدة
+- بدون حساب
+- بدون إعلانات
+- بدون تتبع
+- خاص / على الجهاز
+- عنصر واجهة
+- Apple Watch
 - App Store · مجاني
 
 [احصل على dB Halo: مقياس الديسيبل من App Store](https://apps.apple.com/sa/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

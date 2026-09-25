@@ -2,7 +2,7 @@
 title: "नींद आने के लिए सबसे अच्छा व्हाइट नॉइज़ ऐप बिना सब्सक्रिप्शन के"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - नींद और एकाग्रता
 - मुफ़्त शुरुआत · एक बार अनलॉक
 - ऑफ़लाइन
+- कोई खाता नहीं
 - कोई विज्ञापन नहीं
+- कोई ट्रैकिंग नहीं
+- निजी / डिवाइस पर
 - App Store · मुफ़्त
 
 [App Store से Sereno प्राप्त करें →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

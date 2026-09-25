@@ -2,7 +2,7 @@
 title: "Stay Clock: zegar z klapkami — Czas i kalendarz bez przerwy | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock zmienia iPhone'a lub iPada w zegar biurkowy widoczny bez przerwy, czy
 
 - Więcej
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
+- Bez konta
 - Bez reklam
+- Bez śledzenia
+- Prywatne / na urządzeniu
+- Widżet
+- Apple Watch
 - App Store · Bezpłatnie
 
 [Pobierz Stay Clock: zegar z klapkami z App Store](https://apps.apple.com/pl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

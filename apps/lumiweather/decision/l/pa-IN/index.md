@@ -2,7 +2,7 @@
 title: "ਮਾਪਿਆਂ ਲਈ ਬੱਚਿਆਂ ਨਾਲ ਬਾਹਰ ਸਮਾਂ ਯੋਜਨਾ ਬਣਾਉਣ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਮੌਸਮ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
+- ਵਿਜੈਟ
 - App Store · ਮੁਫ਼ਤ
 
 [Lumi Weather App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

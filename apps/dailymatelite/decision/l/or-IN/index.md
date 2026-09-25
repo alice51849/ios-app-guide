@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ଆଜି କୁହନ୍ତୁ — ଦୈନନ୍ଦିନ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ଶିଶୁ ଏବଂ ଶିକ୍ଷା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- Apple Watch
 - App Store · ମାଗଣା
 
 [App Store ରୁ DailyMate Lite: ଆଜି କୁହନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

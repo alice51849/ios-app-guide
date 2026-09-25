@@ -2,7 +2,7 @@
 title: "கணக்கு தேவையில்லாத சிறந்த மாதவிடாய் கண்காணிப்பாளர் செயலி iPhone க்கான"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - ஆரோக்கியம்
 - இலவசமாக தொடங்கவும்
+- ஆஃப்லைன்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 

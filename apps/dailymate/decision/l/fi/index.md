@@ -2,7 +2,7 @@
 title: "paras käytännöllinen kielilauseiden sovellus matkailijoille, jossa Apple Watch -tuki"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/fi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ Ennen matkaa täydelliset lauseet todellisiin tilanteisiin ovat hyödyllisempiä
 
 - Lapset & oppiminen
 - Maksullinen lataus
+- Widget
 - Apple Watch
 - App Store · 12,99 €
 

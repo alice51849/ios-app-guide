@@ -2,7 +2,7 @@
 title: "WiFi Aid: Hálózati hibák — Hálózatdiagnosztika tényekkel | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel d
 
 - Fotó & segédprogram
 - Fizetős letöltés
+- Nincs fiók
+- Apple Watch
 - App Store · HUF2,490.00
 
 [Töltse le a(z) WiFi Aid: Hálózati hibák appot az App Store-ból](https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

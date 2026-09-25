@@ -2,7 +2,7 @@
 title: "hesap gerektirmeyen en iyi adet takibi uygulaması iphone"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/tr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygula
 
 - Sağlık
 - Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
+- Hesap yok
+- Reklam yok
+- Takip yok
 - Gizli / cihazda
 - App Store · Ücretsiz
 

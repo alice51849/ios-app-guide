@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳಿಗೆ ಪೂರ್ಣ ಬೆಳಗಿನ ಮತ್ತು ಮಲಗುವ ಸಮಯದ ರೂಟೀನ್ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
+- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ₹ 599
 
 [Lumi Mission Planet Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

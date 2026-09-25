@@ -2,7 +2,7 @@
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - ライフスタイル
 - 無料で開始・一度の購入でアンロック
+- オフライン
+- アカウント不要
+- 広告なし
+- 追跡なし
+- プライベート／端末内
+- ウィジェット
 - App Store · 無料
 
 [App Store で Mochi DoneStamp を入手 →](https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)

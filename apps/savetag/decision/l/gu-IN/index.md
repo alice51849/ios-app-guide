@@ -2,7 +2,7 @@
 title: "SaveTag: AI બુકમાર્ક — લિંક સાચવો, પછી વાંચો | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - ઉત્પાદકતા
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
+- કોઈ જાહેરાત નથી
+- કોઈ ટ્રેકિંગ નથી
+- ખાનગી / ઉપકરણ પર
+- વિજેટ
 - App Store · મફત
 
 [App Store પરથી SaveTag: AI બુકમાર્ક મેળવો](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

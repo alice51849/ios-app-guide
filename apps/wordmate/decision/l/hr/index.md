@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za vokabular za zaposlene putnike s Apple Watchom"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez p
 - Bez računa
 - Bez oglasa
 - Bez praćenja
+- Privatno / na uređaju
 - Widget
 - Apple Watch
 - App Store · 9,99 €

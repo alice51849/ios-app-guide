@@ -2,7 +2,7 @@
 title: "BattAI: Batteritilstand — Klare regler, kilder og grenser | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladest
 
 - Mer
 - Gratis å starte
+- Ingen annonser
+- Apple Watch
 - App Store · Gratis
 
 [Last ned BattAI: Batteritilstand fra App Store](https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

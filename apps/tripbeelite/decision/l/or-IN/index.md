@@ -2,7 +2,7 @@
 title: "ଏକ ଆସନ୍ତା ଯାତ୍ରା ପାଇଁ ସରଳ ଟ୍ରିପ୍ ପ୍ଲାନର୍ ଆଇଫୋନ୍ ଆପ୍‌ର ସର୍ବୋତ୍ତମ"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/or-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ଭ୍ରମଣ
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - App Store · ମାଗଣା
 
 [App Store ରୁ ଟ୍ରିପ୍ବି ଲାଇଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

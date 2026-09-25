@@ -2,7 +2,7 @@
 title: "bedste komplette morgen- og sengetidsrutine-app til børn"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Tandbørstning og sengetid mislykkes ofte på samme tidspunkt hver aften: barnet
 
 - Børn & læring
 - Betalt download
+- Ingen konto
 - Ingen reklamer
+- Privat / på enheden
 - App Store · 49,00 kr
 
 [Hent Lumi Mission Planet Pro i App Store →](https://apps.apple.com/dk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "dB Halo: Pengukur desibel — Dosis bising dan jurnal tidur | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Di kos-kosan, kafe, tepi jalan raya, atau sekitar proyek, tingkat kebisingan dap
 
 - Lainnya
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Tanpa iklan
+- Tanpa pelacakan
+- Privat / di perangkat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Dapatkan dB Halo: Pengukur desibel di App Store](https://apps.apple.com/id/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

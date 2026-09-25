@@ -2,7 +2,7 @@
 title: "meilleure application de scanner de documents hors ligne sans cloud pour infirmières"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/fr-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Si vous scannez des formulaires de consentement, des documents de sortie ou des 
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Hors ligne
+- Aucun compte
+- Aucune publicité
+- Aucun suivi
 - Privé / sur l'appareil
 - App Store · Gratuit
 

@@ -2,7 +2,7 @@
 title: "CalDaily: calculadora e temas — Widget, ferramentas, histórico | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Uma calculadora que vai manter, porque se lembra do contexto de cada número. A 
 
 - Mais
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Privado / no dispositivo
 - Widget
 - App Store · Grátis
 

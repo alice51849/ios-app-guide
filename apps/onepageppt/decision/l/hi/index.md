@@ -2,7 +2,7 @@
 title: "OnePage PPT: स्लाइड मेकर — टेक्स्ट से परफेक्ट प्रस्तुति | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - मुफ़्त शुरुआत · एक बार अनलॉक
+- ऑफ़लाइन
+- कोई खाता नहीं
+- कोई ट्रैकिंग नहीं
+- निजी / डिवाइस पर
 - App Store · मुफ़्त
 
 [App Store पर OnePage PPT: स्लाइड मेकर पाएँ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

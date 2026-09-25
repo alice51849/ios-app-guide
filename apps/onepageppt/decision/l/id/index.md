@@ -2,7 +2,7 @@
 title: "OnePage PPT: Slide AI — Catatan jadi satu halaman | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Ubah tembok teks jadi satu halaman yang benar-benar dibaca. OnePage PPT membaca 
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
+- Tanpa akun
+- Tanpa pelacakan
+- Privat / di perangkat
 - App Store · Gratis
 
 [Dapatkan OnePage PPT: Slide AI di App Store](https://apps.apple.com/id/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

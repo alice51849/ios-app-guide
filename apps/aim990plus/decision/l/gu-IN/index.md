@@ -2,7 +2,7 @@
 title: "Aim990 Plus: અંગ્રેજી ટેસ્ટ — દબાણમાં ઝડપી સચોટ જવાબ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus પુખ્ત વયના શીખનારાઓ માટે �
 
 - બાળકો અને અભ્યાસ
 - ચુકવેલ ડાઉનલોડ
+- ઑફલાઇન
+- કોઈ ખાતું નથી
 - App Store · ₹ 599
 
 [App Store પરથી Aim990 Plus: અંગ્રેજી ટેસ્ટ મેળવો](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

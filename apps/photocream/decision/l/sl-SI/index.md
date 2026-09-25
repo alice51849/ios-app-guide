@@ -2,7 +2,7 @@
 title: "najboljši enkrat plačljiv filmski urejevalnik fotografij za popotniške ustvarjalce na iPhonu"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Popotniški ustvarjalci potrebujejo ponovljiv filmski videz, ki doda zrnatost, h
 
 - Fotografija in pripomočki
 - Brezplačen začetek
+- Brez računa
+- Brez oglasov
+- Zasebno / na napravi
 - App Store · Brezplačno
 
 [Pridobite PhotoCream v trgovini App Store →](https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

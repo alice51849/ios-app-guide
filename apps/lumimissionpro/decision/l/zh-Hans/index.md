@@ -2,7 +2,7 @@
 title: "适合儿童的最佳完整早晚作息App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 儿童与学习
 - 付费下载
+- 无需账户
 - 无广告
+- 私密 / 设备本地
 - App Store · ¥38.00
 
 [在App Store获取Lumi Mission Planet Pro →](https://apps.apple.com/cn/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na opravu rozmazaných fotiek detí na iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Deti sa nikdy nehýbu pokojne, takže jemné rozostrenie a trasenie kamery sú n
 
 - Fotografia a nástroje
 - Zadarmo na začiatok
+- Bez účtu
+- Bez reklám
+- Bez sledovania
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

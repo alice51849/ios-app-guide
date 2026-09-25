@@ -2,7 +2,7 @@
 title: "iPhone க்கான சிறந்த பயண திட்டமிடும் செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ publisher: "Lumi Studio"
 - பணம் செலுத்தி பதிவிறக்கவும்
 - ஆஃப்லைன்
 - கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · ₹ 599
 

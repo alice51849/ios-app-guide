@@ -2,7 +2,7 @@
 title: "iPhone இல் கூட்டங்களைக் குறுக்கமாக சுருக்கும் சிறந்த குரல் குறிப்பு செயலி"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 

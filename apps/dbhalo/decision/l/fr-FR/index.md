@@ -2,7 +2,7 @@
 title: "dB Halo : Sonomètre — Spectre, dose et sommeil | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ Dans un appartement haussmannien, sur un chantier, à un concert ou dans un atel
 
 - Plus
 - Gratuit au départ · déblocage unique
+- Sans compte
+- Sans publicité
+- Sans suivi
+- Privé / sur l’appareil
+- Widget
+- Apple Watch
 - App Store · Gratuit
 
 [Obtenir dB Halo : Sonomètre sur l'App Store](https://apps.apple.com/fr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

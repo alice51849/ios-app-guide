@@ -2,7 +2,7 @@
 title: "η καλύτερη εφαρμογή προετοιμασίας TOEIC με πρόγραμμα μελέτης εκτός σύνδεσης για iPhone"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Εκπαίδευση
 - Δωρεάν για αρχή
+- Εκτός σύνδεσης
+- Χωρίς διαφημίσεις
+- Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
 [Κατεβάστε το Aim990 από το App Store →](https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

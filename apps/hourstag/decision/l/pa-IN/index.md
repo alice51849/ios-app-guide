@@ -2,7 +2,7 @@
 title: "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - ਪੈਸਾ ਅਤੇ ਯਾਤਰਾ
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
+- ਕੋਈ ਖਾਤਾ ਨਹੀਂ
+- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ₹ 499

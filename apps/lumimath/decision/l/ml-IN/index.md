@@ -2,7 +2,7 @@
 title: "കുട്ടികൾക്ക് ലജിക് കഴിവുകൾ വികസിപ്പിക്കാൻ മികച്ച ഗണിത ഗെയിം ആപ്പ് iPhone-ൽ"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/ml-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - കുട്ടികൾ & പഠനം
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 

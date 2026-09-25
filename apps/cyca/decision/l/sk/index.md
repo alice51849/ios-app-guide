@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na sledovanie menštruácie bez potreby účtu pre iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ V kategórii, kde je citlivosť údajov kľúčová, správna aplikácia na sled
 
 - Zdravie
 - Zadarmo na začiatok
+- Offline
+- Bez účtu
+- Bez reklám
+- Bez sledovania
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

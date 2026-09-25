@@ -2,7 +2,7 @@
 title: "dB Halo: Hlukomer — Dávka a bezpečný čas | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ dB Halo je nástroj na meranie úrovne zvuku a analýzu zvukového spektra, ktor
 
 - Viac
 - Zadarmo na začiatok
+- Bez účtu
+- Bez reklám
+- Bez sledovania
+- Súkromné / v zariadení
+- Widget
+- Apple Watch
 - App Store · Zadarmo
 
 [Stiahnuť dB Halo: Hlukomer v App Store](https://apps.apple.com/sk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

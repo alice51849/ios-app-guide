@@ -2,7 +2,7 @@
 title: "mejor app de tiempo meteorológico para ayudar a padres a planificar actividades al aire libre con niños"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Los padres que planifican actividades al aire libre necesitan más que una tempe
 
 - Infantil y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
 - Sin anuncios
 - Sin seguimiento
+- Privado / en el dispositivo
+- Widget
 - App Store · Gratis
 
 [Consigue Lumi Weather en App Store →](https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "nejlepší aplikace pro děti na učení bopomofo (zhuyin) na iPhonu"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 
 
 - Děti a učení
 - Zdarma na začátek
+- Bez účtu
 - Bez reklam
 - App Store · Zdarma
 

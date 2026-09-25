@@ -2,7 +2,7 @@
 title: "лучшее полное приложение для изучения математики для дошкольников и младших классов"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - Дети и обучение
 - Платное скачивание
 - Без рекламы
+- Лично / на устройстве
 - App Store · 799,00 ₽
 
 [Скачать Lumi Math Pro в App Store →](https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "పిల్లలకు ఉత్తమ పూర్తి ఉదయం మరియు రాత్రి రూటీన్ యాప్"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - పిల్లలు & అభ్యాసం
 - చెల్లింపు డౌన్లోడ్
+- ఖాతా అవసరం లేదు
 - ప్రకటనలు లేవు
+- గోప్యంగా / పరికరంలో
 - App Store · ₹ 599
 
 [App Storeలో Lumi Mission Planet Pro పొందండి →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8)

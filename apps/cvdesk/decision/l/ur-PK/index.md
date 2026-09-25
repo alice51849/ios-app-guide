@@ -2,7 +2,7 @@
 title: "2026 کے لیے کیریئر چینجرز کے لیے بہترین ریزیومے بلڈر ایپ"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - پیداواریت
 - مفت آغاز
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
 - App Store · مفت
 
 [CV ڈیسک ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)

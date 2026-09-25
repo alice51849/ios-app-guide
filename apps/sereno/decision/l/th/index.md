@@ -2,7 +2,7 @@
 title: "แอปเสียงรบกวนขาวที่ดีที่สุดสำหรับช่วยให้นอนหลับโดยไม่ต้องสมัครสมาชิก"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - การนอนหลับ & สมาธิ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
 - ออฟไลน์
+- ไม่มีบัญชี
 - ไม่มีโฆษณา
+- ไม่มีการติดตาม
+- ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
 [ดาวน์โหลด Sereno ใน App Store →](https://apps.apple.com/th/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

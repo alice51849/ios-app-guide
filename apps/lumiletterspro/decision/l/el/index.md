@@ -2,7 +2,7 @@
 title: "καλύτερη πλήρης εφαρμογή φωνητικής για προετοιμασία νηπιαγωγείου στο σπίτι"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - Παιδιά & μάθηση
 - Λήψη με χρέωση
+- Εκτός σύνδεσης
 - Χωρίς διαφημίσεις
+- Ιδιωτικό / στη συσκευή
 - App Store · 9,99 €
 
 [Αποκτήστε το Lumi Letters Pro στο App Store →](https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Stay Clock: 플립 탁상시계 — 항상 켜지는 시계와 캘린더 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock은 아이폰과 아이패드를 방 반대편에서도 읽을 수 있
 
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 오프라인
+- 계정 없음
 - 광고 없음
+- 추적 없음
+- 프라이빗 / 기기 내
+- 위젯
+- Apple Watch
 - App Store · 무료
 
 [App Store에서 Stay Clock: 플립 탁상시계 받기](https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

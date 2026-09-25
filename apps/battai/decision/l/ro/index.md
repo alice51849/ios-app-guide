@@ -2,7 +2,7 @@
 title: "BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul baterie
 
 - Mai mult
 - Început gratuit
+- Fără reclame
+- Apple Watch
 - App Store · Gratuit
 
 [Descarcă BattAI: Sănătatea bateriei din App Store](https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

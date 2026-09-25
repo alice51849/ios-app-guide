@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین ٹریول بجٹ ٹریکر ایپ بغیر سبسکرپشن کے"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - ادا شدہ ڈاؤن لوڈ
 - آف لائن
 - کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
 - App Store · Rs 1,300.00
 
 [G+Money ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

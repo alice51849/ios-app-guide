@@ -2,7 +2,7 @@
 title: "найкращий практичний додаток із фразами для мандрівників з підтримкою Apple Watch"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/uk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - Діти та навчання
 - Платне завантаження
+- Віджет
 - Apple Watch
 - App Store · 14,99 USD
 

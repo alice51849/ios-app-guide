@@ -2,7 +2,7 @@
 title: "適合通勤族搭配 Apple Watch 的最佳單字學習 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Wordmate 的互動主畫面 Widget 可直接查看下一個單字、切換與收
 - 免帳號
 - 無廣告
 - 無追蹤
+- 隱私優先／裝置端
 - 主畫面小工具
 - Apple Watch
 - App Store · $290.00

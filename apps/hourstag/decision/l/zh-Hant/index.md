@@ -2,7 +2,7 @@
 title: "HoursTag：把花費換成工時，月底看懂自己的支出紀錄"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ HoursTag 是付費下載的原版 App：設定時薪或月薪，把花費換成�
 
 - 理財與旅行
 - 付費下載
+- 免帳號
+- 無廣告
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · $150.00

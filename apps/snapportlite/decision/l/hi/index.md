@@ -2,7 +2,7 @@
 title: "Snapport Lite: घर पर ID फोटो — घर पर ही पासपोर्ट फ़ोटो बनाएँ | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/hi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - आकार, पृष्ठभूमि और प्रिं
 - फोटो और उपयोगिता
 - मुफ़्त शुरुआत · एक बार अनलॉक
 - ऑफ़लाइन
+- कोई खाता नहीं
+- कोई विज्ञापन नहीं
+- कोई ट्रैकिंग नहीं
+- निजी / डिवाइस पर
 - App Store · मुफ़्त
 
 [App Store पर Snapport Lite: घर पर ID फोटो पाएँ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "millor aplicació per controlar el cicle sense compte per a iPhone"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ En una categoria on la sensibilitat de dades és clau, el control adequat manté
 
 - Salut
 - Inici gratuït
+- Fora de línia
+- Sense compte
+- Sense anuncis
+- Sense seguiment
 - Privat / en el dispositiu
 - App Store · Gratis
 

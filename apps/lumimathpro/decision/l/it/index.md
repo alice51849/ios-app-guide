@@ -2,7 +2,7 @@
 title: "miglior app matematica completa per scuola materna e primi anni"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Un’app matematica completa dovrebbe far percepire conteggio, senso numerico e 
 - Bambini e apprendimento
 - Scaricamento a pagamento
 - Nessuna pubblicità
+- Privato / su dispositivo
 - App Store · 9,99 €
 
 [Scarica Lumi Math Pro su App Store →](https://apps.apple.com/it/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

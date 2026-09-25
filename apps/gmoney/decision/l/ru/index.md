@@ -2,7 +2,7 @@
 title: "лучшее приложение для учёта бюджета путешествий без подписки для iPhone"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ publisher: "Lumi Studio"
 - Платное скачивание
 - Автономно
 - Без учётной записи
+- Без рекламы
+- Без отслеживания
+- Лично / на устройстве
 - App Store · 449,00 ₽
 
 [Скачать G+Money в App Store →](https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

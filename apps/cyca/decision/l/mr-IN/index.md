@@ -2,7 +2,7 @@
 title: "सर्वोत्तम पाळी ट्रॅकर अॅप, खाते आवश्यक नाही, iPhone साठी"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - आरोग्य
 - सुरुवात करण्यासाठी मोफत
+- ऑफलाइन
+- खाते नाही
+- जाहिराती नाहीत
+- ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
 - App Store · मोफत
 

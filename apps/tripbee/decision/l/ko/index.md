@@ -2,7 +2,7 @@
 title: "아이폰용 최고의 여행 일정 계획 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ko/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ publisher: "Lumi Studio"
 - 유료 다운로드
 - 오프라인
 - 계정 없음
+- 광고 없음
+- 추적 없음
 - 프라이빗 / 기기 내
 - App Store · ￦9,900
 

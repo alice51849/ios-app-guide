@@ -2,7 +2,7 @@
 title: "SaveTag: dấu trang bằng AI — Lưu liên kết, đọc sau | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Lưu ngay bây giờ. Và lần này đọc thật. Cả ngày bạn gửi liên
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
+- Riêng tư / trên thiết bị
+- Tiện ích
 - App Store · Miễn phí
 
 [Tải SaveTag: dấu trang bằng AI trên App Store](https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

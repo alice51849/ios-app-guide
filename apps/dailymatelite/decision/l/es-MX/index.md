@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Habla hoy — 50 idiomas, charlas cotidianas | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Habla con confianza cuando lo necesites. DailyMate Lite convierte situaciones de
 
 - Niños y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
+- Apple Watch
 - App Store · Gratis
 
 [Consigue DailyMate Lite: Habla hoy en el App Store](https://apps.apple.com/mx/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

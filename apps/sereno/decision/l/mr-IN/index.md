@@ -2,7 +2,7 @@
 title: "झोप येण्यासाठी सर्वोत्तम व्हाईट नॉईज अॅप, कोणतीही सदस्यता नाही"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ publisher: "Lumi Studio"
 - झोप आणि लक्ष
 - सुरुवात करण्यासाठी मोफत
 - ऑफलाइन
+- खाते नाही
 - जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
 - App Store · मोफत
 
 [App Store वरून Sereno मिळवा →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Aim990 Plus: انگریزی مشق ٹیسٹ — سننے اور پڑھنے کی مشق | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - بچے اور سیکھنا
 - ادا شدہ ڈاؤن لوڈ
+- آف لائن
+- کوئی اکاؤنٹ نہیں
 - App Store · Rs 1,700.00
 
 [App Store سے Aim990 Plus: انگریزی مشق ٹیسٹ حاصل کریں](https://apps.apple.com/pk/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

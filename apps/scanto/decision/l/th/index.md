@@ -2,7 +2,7 @@
 title: "แอปสแกนเอกสารออฟไลน์ที่ดีที่สุด ไม่มีคลาวด์ สำหรับพยาบาล"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/th/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - เพิ่มประสิทธิภาพ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ออฟไลน์
+- ไม่มีบัญชี
+- ไม่มีโฆษณา
+- ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 

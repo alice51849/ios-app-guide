@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na pasové fotografie pro miminka a batolata doma"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/cs/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí mus�
 
 - Fotografie a nástroje
 - Placené stažení
+- Bez účtu
+- Bez reklam
+- Bez sledování
 - Soukromé / v zařízení
 - App Store · 149,00 Kč
 

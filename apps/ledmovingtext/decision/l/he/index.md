@@ -2,7 +2,7 @@
 title: "LED Moving Text — שלט אור נע על המסך | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - עוד
 - התחלה ללא תשלום
+- לא מקוון
+- ללא חשבון
+- ללא פרסומות
+- ללא מעקב
+- פרטי / במכשיר
 - App Store · בחינם
 
 [הורידו את LED Moving Text מה-App Store](https://apps.apple.com/il/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

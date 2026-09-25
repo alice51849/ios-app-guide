@@ -2,7 +2,7 @@
 title: "Aim990 Plus: ইংরেজি মক টেস্ট — চাপেও দ্রুত ও নির্ভুল উত্তর | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,8 @@ Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থ�
 
 - শিশু ও শেখা
 - পেইড ডাউনলোড
+- অফলাইন
+- কোনও অ্যাকাউন্ট নেই
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Aim990 Plus: ইংরেজি মক টেস্ট-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

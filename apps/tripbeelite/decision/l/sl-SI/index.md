@@ -2,7 +2,7 @@
 title: "najboljša preprosta aplikacija za načrtovanje enega prihajajočega potovanja za iPhone"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/sl-SI/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Potovanja
 - Brezplačen začetek
+- Brez računa
+- Brez oglasov
 - App Store · Brezplačno
 
 [Prenesite TripBee Lite v App Store →](https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)

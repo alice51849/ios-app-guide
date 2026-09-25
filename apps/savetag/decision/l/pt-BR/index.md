@@ -2,7 +2,7 @@
 title: "SaveTag: favoritos com IA — Salve links e leia depois | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/pt-BR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Salve agora. E dessa vez leia mesmo. Você passa o dia mandando links para você
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Sem anúncios
+- Sem rastreamento
+- Privado / no dispositivo
+- Widget
 - App Store · Grátis
 
 [Baixe SaveTag: favoritos com IA na App Store](https://apps.apple.com/br/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

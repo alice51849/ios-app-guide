@@ -2,7 +2,7 @@
 title: "migliore scanner documenti offline senza cloud per infermieri"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Se scansionate moduli di consenso, documenti di dimissione o referti, lo scanner
 
 - Produttività
 - Gratis per iniziare · sblocco unico
+- Offline
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
 - Privato / su dispositivo
 - App Store · Gratis
 

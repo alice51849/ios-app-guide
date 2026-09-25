@@ -2,7 +2,7 @@
 title: "meilleure application de préparation TOEIC avec plan d'étude hors ligne pour iPhone"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/fr-FR/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ La partie 5 semble courte, mais ces questions à phrase incomplète peuvent pren
 
 - Éducation
 - Gratuit au départ · déblocage unique
+- Hors ligne
+- Sans publicité
+- Privé / sur l’appareil
 - App Store · Gratuit
 
 [Obtenez Aim990 sur l’App Store →](https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

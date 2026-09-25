@@ -2,7 +2,7 @@
 title: "millor app de llista de tasques simple per a iPhone sense subscripció"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista
 - Productivitat
 - Inici gratuït
 - Sense anuncis
+- Apple Watch
 - App Store · Gratis
 
 [Descarrega Mochi a l’App Store →](https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

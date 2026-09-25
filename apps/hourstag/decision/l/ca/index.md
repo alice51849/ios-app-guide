@@ -2,7 +2,7 @@
 title: "HoursTag: Hores per comprar — Estalvi, despeses, pressupost | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ca/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Quant costa de debò? No en euros, sinó en hores de la teva vida.
 
 - Diners i viatges
 - Descàrrega de pagament
+- Sense compte
+- Sense anuncis
 - Sense seguiment
 - Privat / en el dispositiu
 - App Store · 5,99 €

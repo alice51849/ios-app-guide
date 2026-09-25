@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳಿಗೆ ತರ್ಕ ಕೌಶಲ್ಯಗಳನ್ನು ನಿರ್ಮಿಸಲು ಉತ್ತಮ ಗಣಿತ ಆಟ ಆಪ್ iPhone"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/kn-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 

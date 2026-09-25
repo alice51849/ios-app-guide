@@ -2,7 +2,7 @@
 title: "WiFi Aid: Trova guasti di rete — Diagnosi di rete affidabile | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, 
 
 - Foto e utilità
 - Scaricamento a pagamento
+- Nessun account
+- Apple Watch
 - App Store · 6,99 €
 
 [Scarica WiFi Aid: Trova guasti di rete sull'App Store](https://apps.apple.com/it/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

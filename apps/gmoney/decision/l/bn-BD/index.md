@@ -2,7 +2,7 @@
 title: "G+Money: দৈনিক খরচ ও বাজেট — G+Money আপনার দৈনন্দিন জীবন ও ভ্রমণের জন্য দুটি অপরিহার্য | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,9 @@ G+Money আপনার দৈনন্দিন জীবন ও ভ্রম�
 - পেইড ডাউনলোড
 - অফলাইন
 - কোনও অ্যাকাউন্ট নেই
+- কোনও বিজ্ঞাপন নেই
+- কোনও ট্র্যাকিং নেই
+- গোপনীয় / ডিভাইসে
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে G+Money: দৈনিক খরচ ও বাজেট-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

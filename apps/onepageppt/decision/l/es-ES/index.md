@@ -2,7 +2,7 @@
 title: "OnePage PPT: diapositiva IA — Tus notas en una diapo | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/es-ES/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ Convierte un muro de texto en UNA diapositiva que sí se lee. OnePage PPT analiz
 
 - Productividad
 - Gratis para empezar · desbloqueo único
+- Sin conexión
+- Sin cuenta
+- Sin seguimiento
+- Privado / en el dispositivo
 - App Store · Gratis
 
 [Consigue OnePage PPT: diapositiva IA en el App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)

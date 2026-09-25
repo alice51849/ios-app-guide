@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulačka a témy — Widget, nástroje, história | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ Kalkulačka, ktorú budete naozaj používať, pretože si pamätá myšlienku z
 
 - Viac
 - Zadarmo na začiatok
+- Bez účtu
+- Súkromné / v zariadení
 - Widget
 - App Store · Zadarmo
 

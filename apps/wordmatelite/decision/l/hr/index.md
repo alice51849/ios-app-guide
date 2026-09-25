@@ -2,7 +2,7 @@
 title: "Wordmate Lite: vokabular — Pet novih riječi svaki dan | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ publisher: "Lumi Studio"
 - Djeca i učenje
 - Besplatno za početak
 - Izvan mreže
+- Bez računa
+- Bez praćenja
+- Privatno / na uređaju
 - App Store · Besplatno
 
 [Preuzmite Wordmate Lite: vokabular u App Storeu](https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI BattAI bruger fem værdier fra offentlige iOS-API'er: batteriniveau, opla
 
 - Mere
 - Gratis at komme i gang
+- Ingen reklamer
+- Apple Watch
 - App Store · Gratis
 
 [Hent BattAI: Batteritilstandsscore i App Store](https://apps.apple.com/dk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

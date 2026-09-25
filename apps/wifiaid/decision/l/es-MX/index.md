@@ -2,7 +2,7 @@
 title: "WiFi Aid: Diagnóstico de red — Diagnóstico de red confiable | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/es-MX/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Encuentra la causa más probable con pruebas independientes de rutas, DNS, TCP, 
 
 - Foto y utilidad
 - Descarga de pago
+- Sin cuenta
+- Apple Watch
 - App Store · $129.00
 
 [Consigue WiFi Aid: Diagnóstico de red en el App Store](https://apps.apple.com/mx/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

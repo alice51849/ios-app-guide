@@ -2,7 +2,7 @@
 title: "SaveTag: segnalibri con IA — Salva i link, leggili dopo | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/it/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Salvalo adesso. E stavolta leggilo davvero. Passi la giornata a mandarti link da
 
 - Produttività
 - Gratis per iniziare · sblocco unico
+- Nessun account
+- Nessuna pubblicità
+- Nessun tracciamento
+- Privato / su dispositivo
+- Widget
 - App Store · Gratis
 
 [Scarica SaveTag: segnalibri con IA sull'App Store](https://apps.apple.com/it/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Beste Sprachmemos-App, die Meetings auf dem iPhone zusammenfasst"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/de-DE/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Nach einem Anruf wollen Sie kein rohes Transkript, sondern die Zusammenfassung, 
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- Keine Werbung
+- Kein Tracking
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

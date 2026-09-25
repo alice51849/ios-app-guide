@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Tangkapan layar mudah dicari | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Tangkapan layar Anda, rapi Temukan, tangani, dan rapikan setiap tangkapan layar.
 
 - Foto & utilitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Privat / di perangkat
 - App Store · Gratis
 
 [Dapatkan ShotInbox AI: Sort Screenshots di App Store](https://apps.apple.com/id/app/id6802166527?pt=118326163&ct=geo_pick&mt=8)

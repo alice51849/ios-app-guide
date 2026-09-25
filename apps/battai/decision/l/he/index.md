@@ -2,7 +2,7 @@
 title: "BattAI: ציון בריאות הסוללה — כללים, מקורות ומגבלות ברורים | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API�
 
 - עוד
 - התחלה ללא תשלום
+- ללא פרסומות
+- Apple Watch
 - App Store · בחינם
 
 [הורידו את BattAI: ציון בריאות הסוללה מה-App Store](https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

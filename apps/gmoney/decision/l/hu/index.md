@@ -2,7 +2,7 @@
 title: "legjobb utazási költségvetés követő alkalmazás előfizetés nélkül iPhone-ra"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/hu/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,9 @@ Egy utazáson olyan költségvetés követőre van szükséged, ami offline műk
 - Fizetős letöltés
 - Offline
 - Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
 - App Store · HUF1,990.00
 
 [Szerezd be a G+Money-t az App Store-ból →](https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=geo_pick&mt=8)

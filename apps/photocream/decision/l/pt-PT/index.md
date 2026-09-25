@@ -2,7 +2,7 @@
 title: "melhor editor de fotos com look de filme para criadores de viagens no iPhone com pagamento único"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Criadores de viagens precisam de um estilo de filme repetível que acrescente gr
 
 - Fotografia e utilidade
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Sem anúncios
+- Privado / no dispositivo
 - App Store · Grátis
 
 [Obtenha PhotoCream na App Store →](https://apps.apple.com/pt/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Snapport Lite: شناختی تصاویر — گھر پر شناختی تصاویر بنائیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ur-PK/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,10 @@ Snapport Lite - پاسپورٹ، ویزا، اور دستاویزات کی تص�
 - تصویر اور سہولت
 - مفت آغاز
 - آف لائن
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
 - App Store · مفت
 
 [App Store سے Snapport Lite: شناختی تصاویر حاصل کریں](https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)

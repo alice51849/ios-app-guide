@@ -2,7 +2,7 @@
 title: "best free travel phrasebook app with real dialogues for iphone"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/en-CA/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-
 
 - Kids & learning
 - Free to start · one-time unlock
+- No account
+- Apple Watch
 - App Store · Free
 
 [Get DailyMate Lite on the App Store →](https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8)

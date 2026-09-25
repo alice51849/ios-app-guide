@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk membaiki foto kabur kanak-kanak di iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ Kanak-kanak tidak pernah diam, jadi gambar fokus lembut dan gegaran kamera tidak
 
 - Foto & utiliti
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
 - Peribadi / pada peranti
 - App Store · Percuma
 

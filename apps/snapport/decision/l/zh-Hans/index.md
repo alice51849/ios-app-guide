@@ -2,7 +2,7 @@
 title: "最佳婴幼儿居家护照照片应用"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 照片与工具
 - 付费下载
+- 无需账户
+- 无广告
+- 无跟踪
 - 私密 / 设备本地
 - App Store · ¥38.00
 

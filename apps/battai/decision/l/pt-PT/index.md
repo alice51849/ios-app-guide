@@ -2,7 +2,7 @@
 title: "BattAI: Saúde da bateria — Regras, fontes e limites claros | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/pt-PT/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,8 @@ BattAI O BattAI usa cinco dados das API públicas do iOS: nível da bateria, est
 
 - Mais
 - Grátis para começar · desbloqueio único
+- Sem anúncios
+- Apple Watch
 - App Store · Grátis
 
 [Baixe BattAI: Saúde da bateria na App Store](https://apps.apple.com/pt/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)

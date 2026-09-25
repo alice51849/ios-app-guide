@@ -2,7 +2,7 @@
 title: "Mask My File: Șterge datele — Ascunde datele private | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Distribuie în siguranță fără să pierzi contextul util. Mask My File găse�
 
 - Fotografie & utilitate
 - Început gratuit
+- Fără cont
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

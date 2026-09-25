@@ -2,7 +2,7 @@
 title: "LED Moving Text — Papan tanda menyala di skrin | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/ms/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Taip satu ayat lalu angkat iPhone anda. Dari barisan paling belakang, dari hujun
 
 - Lagi
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Luar talian
+- Tiada akaun
+- Tiada iklan
+- Tiada penjejakan
+- Peribadi / pada peranti
 - App Store · Percuma
 
 [Dapatkan LED Moving Text di App Store](https://apps.apple.com/my/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

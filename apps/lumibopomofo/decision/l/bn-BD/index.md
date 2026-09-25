@@ -2,7 +2,7 @@
 title: "Lumi Bopomofo — Zhuyin: চীনা ফোনিক্স | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/bn-BD/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Lumi Bopomofo আপনার শিশুর জন্য ঝুয়িন �
 
 - শিশু ও শেখা
 - বিনামূল্যে শুরু
+- কোনও অ্যাকাউন্ট নেই
 - কোনও বিজ্ঞাপন নেই
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে Lumi Bopomofo-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।

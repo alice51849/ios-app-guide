@@ -2,7 +2,7 @@
 title: "适用于 iPhone 的最佳离线 TOEIC 备考应用及学习计划"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - 教育
 - 免费开始使用 · 一次性解锁
+- 离线
+- 无广告
+- 私密 / 设备本地
 - App Store · 免费
 
 [在 App Store 获取 Aim990 →](https://apps.apple.com/cn/app/id6784974530?pt=118326163&ct=geo_pick&mt=8)

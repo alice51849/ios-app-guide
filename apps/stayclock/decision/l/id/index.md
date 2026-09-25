@@ -2,7 +2,7 @@
 title: "Stay Clock: Jam Meja Flip — Jam dan kalender selalu aktif | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/id/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock mengubah iPhone atau iPad Anda menjadi jam meja yang selalu aktif dan
 
 - Lainnya
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
+- Tanpa akun
 - Tanpa iklan
+- Tanpa pelacakan
+- Privat / di perangkat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Dapatkan Stay Clock: Jam Meja Flip di App Store](https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

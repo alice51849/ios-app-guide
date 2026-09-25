@@ -2,7 +2,7 @@
 title: "beste værapp for å hjelpe foreldre å planlegge utetid med barn"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ Foreldre som planlegger utetid trenger mer enn temperatur: de trenger et raskt, 
 
 - Barn og læring
 - Gratis å starte
+- Ingen konto
 - Ingen annonser
 - Ingen sporing
+- Privat / på enheten
+- Widget
 - App Store · Gratis
 
 [Få Lumi Weather på App Store →](https://apps.apple.com/no/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

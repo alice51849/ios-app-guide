@@ -2,7 +2,7 @@
 title: "η καλύτερη εφαρμογή σαρωτή εγγράφων εκτός σύνδεσης χωρίς cloud για νοσηλευτές"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/el/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,10 @@ publisher: "Lumi Studio"
 
 - Παραγωγικότητα
 - Δωρεάν για αρχή
+- Εκτός σύνδεσης
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 

@@ -2,7 +2,7 @@
 title: "WiFi Aid: Поиск проблем сети — Точная диагностика сети | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ publisher: "Lumi Studio"
 
 - Фото и инструменты
 - Платное скачивание
+- Без учётной записи
+- Apple Watch
 - App Store · 499,00 ₽
 
 [Установить WiFi Aid: Поиск проблем сети в App Store](https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)

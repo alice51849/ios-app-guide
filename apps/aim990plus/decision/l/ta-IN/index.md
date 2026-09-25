@@ -2,7 +2,7 @@
 title: "Aim990 Plus: ஆங்கிலத் தேர்வு — ஆங்கில திறன் சவால் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ta-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,8 @@ Aim990 Plus என்பது பெரியவர்கள் தங்கள
 
 - குழந்தைகள் & கற்றல்
 - பணம் செலுத்தி பதிவிறக்கவும்
+- ஆஃப்லைன்
+- கணக்கு இல்லை
 - App Store · ₹ 599
 
 [App Store-இல் Aim990 Plus: ஆங்கிலத் தேர்வு-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8)

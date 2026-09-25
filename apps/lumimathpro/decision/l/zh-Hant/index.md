@@ -2,7 +2,7 @@
 title: "Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/zh-Hant/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ Lumi Math Pro 一次付費包含完整數學內容、弱項練習與進度；家
 - 兒童與學習
 - 付費下載
 - 無廣告
+- 隱私優先／裝置端
 - App Store · $290.00
 - ★ 5.0/5 · 1
 

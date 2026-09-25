@@ -2,7 +2,7 @@
 title: "najlepšia vzdelávacia hra pre deti bez reklám na iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,7 @@ Pre malé dieťa je rozhodujúce, že aplikácia nemá reklamy ani nezbiera úda
 
 - Deti a učenie
 - Zadarmo na začiatok
+- Offline
 - Bez reklám
 - App Store · Zadarmo
 

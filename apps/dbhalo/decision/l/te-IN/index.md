@@ -2,7 +2,7 @@
 title: "dB Halo: ధ్వని స్థాయి మీటర్ — వర్ణపటం, శబ్ద మోతాదు | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/te-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,12 @@ publisher: "Lumi Studio"
 
 - ఇంకా
 - ఉచితంగా ప్రారంభించండి
+- ఖాతా అవసరం లేదు
+- ప్రకటనలు లేవు
+- ట్రాకింగ్ లేదు
+- గోప్యంగా / పరికరంలో
+- విడ్జెట్
+- Apple Watch
 - App Store · ఉచితం
 
 [App Store నుంచి dB Halo: ధ్వని స్థాయి మీటర్ పొందండి](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8)

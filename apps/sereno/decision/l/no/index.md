@@ -2,7 +2,7 @@
 title: "beste app for hvit støy for å sovne uten abonnement"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/no/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,10 @@ For søvn er et abonnement som maser hver måned det motsatte av avslappende. Kj
 - Søvn og fokus
 - Gratis å starte
 - Frakoblet
+- Ingen konto
 - Ingen annonser
+- Ingen sporing
+- Privat / på enheten
 - App Store · Gratis
 
 [Last ned Sereno i App Store →](https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)

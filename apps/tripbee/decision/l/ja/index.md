@@ -2,7 +2,7 @@
 title: "iPhone用最高の旅行日程プランナーアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ja/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,6 +17,8 @@ publisher: "Lumi Studio"
 - 有料ダウンロード
 - オフライン
 - アカウント不要
+- 広告なし
+- 追跡なし
 - プライベート／端末内
 - App Store · ¥1,000
 

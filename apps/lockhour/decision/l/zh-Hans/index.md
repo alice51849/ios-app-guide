@@ -2,7 +2,7 @@
 title: "学习时阻断社交媒体的最佳应用 iPhone"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/zh-Hans/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ publisher: "Lumi Studio"
 
 - 效率
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
+- 无跟踪
 - 私密 / 设备本地
 - App Store · 免费
 

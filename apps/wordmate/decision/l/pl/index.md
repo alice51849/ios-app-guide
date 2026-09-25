@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do nauki słownictwa dla zapracowanych osób z Apple Watch"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/pl/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,6 +18,7 @@ Zapracowani potrzebują ćwiczeń słownictwa, które mieszczą się w wolnych c
 - Bez konta
 - Bez reklam
 - Bez śledzenia
+- Prywatne / na urządzeniu
 - Widżet
 - Apple Watch
 - App Store · 39,99 zł

@@ -2,7 +2,7 @@
 title: "Stay Clock: Ceas de Birou — Ora și calendarul mereu activi | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ro/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,13 @@ Stay Clock transformă iPhone-ul sau iPad-ul dumneavoastră într-un ceas de bir
 
 - Mai mult
 - Început gratuit
+- Offline
+- Fără cont
 - Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
+- Widget
+- Apple Watch
 - App Store · Gratuit
 
 [Descarcă Stay Clock: Ceas de Birou din App Store](https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)

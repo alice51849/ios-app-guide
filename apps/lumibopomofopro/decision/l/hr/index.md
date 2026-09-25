@@ -2,7 +2,7 @@
 title: "najbolja kompletna zhuyin aplikacija za dvojezičnu djecu"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/hr/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,7 +15,9 @@ Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, si
 
 - Djeca i učenje
 - Plaćeno preuzimanje
+- Bez računa
 - Bez oglasa
+- Privatno / na uređaju
 - App Store · 9,99 €
 
 [Preuzmite Lumi Bopomofo Pro na App Storeu →](https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8)

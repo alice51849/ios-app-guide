@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לתיקון תמונות מטושטשות של ילדים באייפון"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/unblurry/decision/l/he/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - צילום וכלי עזר
 - התחלה ללא תשלום
+- ללא חשבון
+- ללא פרסומות
+- ללא מעקב
 - פרטי / במכשיר
 - App Store · בחינם
 

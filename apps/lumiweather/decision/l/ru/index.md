@@ -2,7 +2,7 @@
 title: "лучшее погодное приложение для родителей для планирования прогулок с детьми"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ru/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,11 @@ publisher: "Lumi Studio"
 
 - Дети и обучение
 - Бесплатно начать · разовая разблокировка
+- Без учётной записи
 - Без рекламы
 - Без отслеживания
+- Лично / на устройстве
+- Виджет
 - App Store · Бесплатно
 
 [Скачать Lumi Weather в App Store →](https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "ਪ੍ਰੀ-ਸਕੂਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਜਮਾਤਾਂ ਲਈ ਪੂਰੀ ਗਣਿਤ ਸਿੱਖਣ ਐਪ"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/pa-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ₹ 999
 
 [Lumi Math Pro App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

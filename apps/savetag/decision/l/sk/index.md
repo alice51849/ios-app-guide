@@ -2,7 +2,7 @@
 title: "SaveTag: záložky s AI — Ulož odkazy, čítaj neskôr | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/sk/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Ulož teraz. A tentoraz to naozaj prečítaj. Celý deň si posielaš odkazy. Re
 
 - Produktivita
 - Zadarmo na začiatok
+- Bez účtu
+- Bez reklám
+- Bez sledovania
+- Súkromné / v zariadení
+- Widget
 - App Store · Zadarmo
 
 [Stiahnuť SaveTag: záložky s AI v App Store](https://apps.apple.com/sk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8)

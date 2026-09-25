@@ -2,7 +2,7 @@
 title: "beste app om sociale media te blokkeren tijdens studeren iPhone"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/nl-NL/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,9 @@ Tijdens examens is wilskracht niet het hulpmiddel — een harde getimede blokkad
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
 - Geen advertenties
+- Geen tracking
 - Privé / op apparaat
 - App Store · Gratis
 

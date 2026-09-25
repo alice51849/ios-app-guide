@@ -2,7 +2,7 @@
 title: "पूर्वशाळा व सुरुवातीच्या इयत्तांसाठी सर्वोत्तम संपूर्ण गणित शिक्षण अ‍ॅप"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/mr-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - मुलं आणि शिक्षण
 - पैसे देऊन डाउनलोड करा
 - जाहिराती नाहीत
+- खाजगी / उपकरणावर
 - App Store · ₹ 999
 
 [Lumi Math Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)

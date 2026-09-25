@@ -2,7 +2,7 @@
 title: "શ્રેષ્ઠ સરળ ટુ-ડુ લિસ્ટ એપ iPhone માટે, કોઈ સબ્સ્ક્રિપ્શન નહીં"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/gu-IN/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ publisher: "Lumi Studio"
 - ઉત્પાદકતા
 - મફત શરૂઆત
 - કોઈ જાહેરાત નથી
+- Apple Watch
 - App Store · મફત
 
 [App Store પર Mochi મેળવો →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)

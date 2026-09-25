@@ -2,7 +2,7 @@
 title: "LED Moving Text — Rullende lysskilt i mobilen | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/da/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6806639602"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Skriv en sætning, og hold din iPhone op. Fra bagerste række, tværs over ankom
 
 - Mere
 - Gratis at komme i gang
+- Offline
+- Ingen konto
+- Ingen reklamer
+- Ingen sporing
+- Privat / på enheden
 - App Store · Gratis
 
 [Hent LED Moving Text i App Store](https://apps.apple.com/dk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8)

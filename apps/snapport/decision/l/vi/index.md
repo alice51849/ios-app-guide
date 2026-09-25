@@ -2,7 +2,7 @@
 title: "ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/vi/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -15,6 +15,9 @@ publisher: "Lumi Studio"
 
 - Ảnh & tiện ích
 - Tải xuống trả phí
+- Không tài khoản
+- Không quảng cáo
+- Không theo dõi
 - Riêng tư / trên thiết bị
 - App Store · 199.000đ
 

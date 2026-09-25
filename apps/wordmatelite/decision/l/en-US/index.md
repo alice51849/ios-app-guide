@@ -2,7 +2,7 @@
 title: "best free vocabulary app for adults one minute a day no flashcard decks"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/en-US/index.html"
-modified: "2026-09-24"
+modified: "2026-09-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,9 @@ Wordmate Lite — Five words. Free to start · One-time unlock · No subscriptio
 - Kids & learning
 - Free to start · one-time unlock
 - Offline
+- No account
+- No tracking
+- Private / on-device
 - App Store · Free
 
 [Get Wordmate Lite on the App Store →](https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)

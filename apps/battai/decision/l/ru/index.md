@@ -18,7 +18,6 @@ BattAI BattAI использует пять значений из публичн
 - Без рекламы
 - Apple Watch
 - App Store · Бесплатно
-- ★ 3.0/5 · 1
 
 [Установить BattAI: Состояние батареи в App Store](https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

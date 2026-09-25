@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-24",
-  "content_digest": "ee8c9008e44d17f41ce853dcc4294e5bed548962e912ec1d0563b70ea0a1c818",
+  "date_modified": "2026-09-25",
+  "content_digest": "cbb0b22dc59e6a1880497df79b48ad86905ec781ce1cf8a1a216071e565c7ea2",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -220,10 +220,7 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料",
-        "電池檢測",
-        "電池健康度",
-        "電池壽命"
+        "匯出資料"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1158,7 +1155,8 @@
         "塗鴉",
         "點讀",
         "識字",
-        "拼字"
+        "拼字",
+        "兒童 字母"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1486,6 +1484,7 @@
         "整理",
         "責任感",
         "星星",
+        "兒童 習慣",
         "睡前 習慣",
         "獎勵 貼紙"
       ],
@@ -1640,8 +1639,8 @@
         "保暖",
         "野餐",
         "出遊",
-        "天氣 穿搭",
-        "穿搭 天氣"
+        "穿搭 天氣",
+        "天氣 穿搭"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1696,7 +1695,8 @@
         "客戶紀錄",
         "離線本機處理",
         "批次作業",
-        "機密安全傳送"
+        "機密安全傳送",
+        "pdf 遮蔽"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1860,8 +1860,7 @@
         "活動收支",
         "出租帳本",
         "攤位帳本",
-        "現金流",
-        "副業 記帳"
+        "現金流"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1923,8 +1922,8 @@
         "心智圖",
         "海報",
         "大綱",
-        "簡報 製作",
-        "重點摘要"
+        "重點摘要",
+        "簡報 製作"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

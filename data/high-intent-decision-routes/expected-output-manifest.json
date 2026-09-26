@@ -4,11 +4,14 @@
   "candidate_app_locale_pairs": 2500,
   "creative_count": 50,
   "current_inventory": {
-    "app_keys_sha256": "b12fe0f67492e1b359d1e7349b2e502ecb99a8be9f0e40be1bc1817fe0b9ced3",
-    "copy_sha256": "c37a67cb3d51ef165e723f0d80db3253c827f49b7f814e4f68e0a4adea09b991",
-    "missing_route_app_keys": [],
-    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 50
+    "app_keys_sha256": "1e906fd84a3c37a87540caa5b0bfa5093a3eb87e6cc052c2451f7146a9ff7a42",
+    "copy_sha256": "362bcd0160e1336cb8cfe82cceb5e92d43380ba7dee4c67d0ba7cde71320f853",
+    "missing_route_app_keys": [
+      "countdaysnow",
+      "studydown"
+    ],
+    "missing_route_app_keys_sha256": "0e43fdf14e9b1772c9283021a4860b5d80000ed7c6d20517b87bf9bdd933c2b6",
+    "public_apps": 52
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,7 +27,7 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "6b34417e2af6ff2d4d6316b26c76dbb8b0cb4712a5566e2a3b16b0f14fbeb3d1",
+      "generated_sha256": "89f102819991b00bd0b8c308ef42463a071213838fcb5f28cd2f88295bb25bbc",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
@@ -357,10 +360,10 @@
     "public_apps": 50,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "8b2535ac18012196616cf0202bca7f46f0cd748d9e7b9e17920d0372420d964b",
+  "manifest_digest": "e3e11234249cc956dd030281d1721c8d9dbb878b38be651d7cd6ac8d54d5ca33",
   "owner": "high_intent_decision_routes",
   "release_contract_digest": "1e3c0429c646b4e1f5f0e0f893c9da990f45d0cddb629bbe91d2012f6ca3c44e",
-  "release_state": "exact",
+  "release_state": "degraded_missing_route_copy",
   "route_count": 62,
   "routes": [
     {

@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "he",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -257,6 +257,46 @@
         "currency": "ILS",
         "formatted_price": "בחינם",
         "storefront_url": "https://apps.apple.com/il/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• המיקוד היומי מאז · היום · בהמשך — שמירה",
+      "category": "productivity",
+      "search_terms": [
+        "לוח שנה",
+        "תזכורת",
+        "יום הולדת",
+        "חתונה",
+        "שנות נישואין",
+        "חופשה",
+        "מסך נעילה",
+        "ללא פרסומות",
+        "בחינה",
+        "Apple Watch",
+        "אירועים"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/il/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/he/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם",
+        "storefront_url": "https://apps.apple.com/il/app/id6807079789"
       }
     },
     {
@@ -2075,6 +2115,49 @@
         "currency": "ILS",
         "formatted_price": "בחינם",
         "storefront_url": "https://apps.apple.com/il/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: טיימר ריכוז",
+      "summary": "פנו זמן למה שחשוב לכם, וראו לאן הוא הולך. Studydown מתעד את הזמן שאתם מקדישים לפרויקט, לקריאה או לתחביב, בעזרת פעולה פשוטה: הנחת הטלפון כשהמסך כלפי מטה.",
+      "category": "productivity",
+      "search_terms": [
+        "מעקב זמן",
+        "הרגלים",
+        "יעדים",
+        "מועד סיום",
+        "קריאה",
+        "סטטיסטיקה",
+        "תזכורת",
+        "יומן",
+        "פרויקטים",
+        "התמדה",
+        "שעון עצר",
+        "תכנון",
+        "שגרה",
+        "תפוקה"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/il/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/he/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם",
+        "storefront_url": "https://apps.apple.com/il/app/id6807335593"
       }
     },
     {

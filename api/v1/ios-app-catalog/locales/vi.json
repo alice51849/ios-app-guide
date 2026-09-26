@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -233,8 +233,7 @@
         "khoa học",
         "đếm ngày",
         "xăng",
-        "lãi suất",
-        "máy tính widget"
+        "lãi suất"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -255,6 +254,45 @@
         "currency": "VND",
         "formatted_price": "Miễn phí",
         "storefront_url": "https://apps.apple.com/vn/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Trọng tâm hôm nay Từ đó · Hôm nay · Sắp tới — Lưu",
+      "category": "productivity",
+      "search_terms": [
+        "lịch",
+        "sinh nhật",
+        "nhắc nhở",
+        "màn hình khóa",
+        "Apple Watch",
+        "không quảng cáo",
+        "đám cưới",
+        "thi",
+        "chuyến đi",
+        "hạn chót"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/vn/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/vi/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí",
+        "storefront_url": "https://apps.apple.com/vn/app/id6807079789"
       }
     },
     {
@@ -394,8 +432,7 @@
         "Pháp",
         "Đức",
         "người mới",
-        "nói",
-        "câu giao tiếp hàng ngày"
+        "nói"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -997,8 +1034,7 @@
         "tập trung",
         "ngoại tuyến",
         "trò chơi",
-        "học",
-        "phonics cho bé"
+        "học"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1156,8 +1192,7 @@
         "启蒙",
         "幼儿园",
         "心算",
-        "空间",
-        "phép cộng cho bé"
+        "空间"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1421,8 +1456,7 @@
         "mua sắm",
         "agenda",
         "lịch",
-        "widget",
-        "việc cần làm"
+        "widget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1466,8 +1500,7 @@
         "tưới cây",
         "ga giường",
         "bộ lọc",
-        "xe",
-        "lần cuối"
+        "xe"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1835,8 +1868,7 @@
         "thời",
         "gian",
         "OCR",
-        "photo cleaner",
-        "sắp xếp ảnh chụp màn hình"
+        "photo cleaner"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2050,6 +2082,46 @@
       }
     },
     {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Đếm giờ tập trung",
+      "summary": "Dành thời gian cho điều quan trọng và nhìn thấy nỗ lực của bạn tích lũy mỗi ngày. Studydown ghi lại thời gian cho dự án, đọc sách hay sở thích khi bạn đặt điện thoại úp màn hình xuống.",
+      "category": "productivity",
+      "search_terms": [
+        "năng suất",
+        "thói quen",
+        "mục tiêu",
+        "hạn chót",
+        "đọc sách",
+        "thống kê",
+        "nhắc nhở",
+        "ngoại tuyến",
+        "nhật ký",
+        "tiến độ",
+        "kỷ luật"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/vn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/vi/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí",
+        "storefront_url": "https://apps.apple.com/vn/app/id6807335593"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: Du Lịch",
@@ -2244,8 +2316,7 @@
         "kết nối",
         "ipv4",
         "ipv6",
-        "ping",
-        "phân tích wifi"
+        "ping"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

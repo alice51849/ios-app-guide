@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -257,6 +257,47 @@
         "currency": "PKR",
         "formatted_price": "مفت",
         "storefront_url": "https://apps.apple.com/pk/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• آج کی توجہ تب سے · آج · آگے — محفوظ کریں",
+      "category": "productivity",
+      "search_terms": [
+        "countdown",
+        "widget",
+        "calendar",
+        "تاریخ",
+        "دن گنتی",
+        "یاد دہانی",
+        "شادی",
+        "امتحان",
+        "لاک اسکرین",
+        "بغیر اشتہار",
+        "سنگ میل",
+        "عید"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت",
+        "storefront_url": "https://apps.apple.com/pk/app/id6807079789"
       }
     },
     {
@@ -2052,6 +2093,47 @@
         "currency": "PKR",
         "formatted_price": "مفت",
         "storefront_url": "https://apps.apple.com/pk/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: فوکس ٹائمر",
+      "summary": "اہم چیزوں کے لیے وقت نکالیں اور اپنی محنت کا حساب دیکھیں۔ کام کا منصوبہ، مطالعہ یا کوئی شوق—Studydown ہر سرگرمی کو دیا گیا وقت الگ ریکارڈ کرتا ہے۔",
+      "category": "productivity",
+      "search_terms": [
+        "time tracker",
+        "productivity",
+        "habits",
+        "goals",
+        "deadline",
+        "reading",
+        "offline",
+        "reminder",
+        "مقصد",
+        "عادت",
+        "ریکارڈ",
+        "پیش رفت"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت",
+        "storefront_url": "https://apps.apple.com/pk/app/id6807335593"
       }
     },
     {

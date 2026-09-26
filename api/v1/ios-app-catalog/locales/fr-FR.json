@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -106,9 +106,7 @@
         "écoute",
         "lecture",
         "score",
-        "pratique",
-        "toeic lecture",
-        "vocabulaire toeic"
+        "pratique"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -146,8 +144,7 @@
         "écoute",
         "grammaire",
         "révisions",
-        "minuteur",
-        "toeic lecture"
+        "minuteur"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -245,6 +242,45 @@
         "currency": "EUR",
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/fr/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Priorité du jour Depuis · Auj. · À venir",
+      "category": "productivity",
+      "search_terms": [
+        "anniversaire",
+        "rappel",
+        "calendrier",
+        "jours",
+        "écran verrouillé",
+        "Apple Watch",
+        "sans pub",
+        "mariage",
+        "examen",
+        "lunaire"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/fr/app/id6807079789"
       }
     },
     {
@@ -592,8 +628,7 @@
         "finances",
         "achats impulsifs",
         "épargne",
-        "gérer argent",
-        "dépenses conscientes"
+        "gérer argent"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -651,8 +686,7 @@
         "impulsion",
         "revenu",
         "paie",
-        "valeur",
-        "achat impulsif"
+        "valeur"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -799,8 +833,7 @@
         "phonétique",
         "tout-petit",
         "langue",
-        "apprendre",
-        "apprendre zhuyin"
+        "apprendre"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -853,8 +886,7 @@
         "enfants",
         "phonétique",
         "lecture",
-        "écriture",
-        "apprendre zhuyin"
+        "écriture"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1968,6 +2000,45 @@
       }
     },
     {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown : Chronomètre",
+      "summary": "Un projet, un livre, une passion : voyez le temps que vous leur consacrez. Studydown transforme un geste simple, poser le téléphone écran contre la table, en un carnet de vos activités.",
+      "category": "productivity",
+      "search_terms": [
+        "travail",
+        "concentration",
+        "habitudes",
+        "objectifs",
+        "échéance",
+        "lecture",
+        "statistiques",
+        "rappels",
+        "projets",
+        "quotidien"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/fr/app/id6807335593"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: Voyages",
@@ -2210,8 +2281,7 @@
         "ip",
         "tls",
         "tcp",
-        "web",
-        "diagnostic wifi"
+        "web"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

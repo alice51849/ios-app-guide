@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "es-MX",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -242,6 +242,45 @@
         "currency": "MXN",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/mx/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Enfoque del día Desde · Hoy · Próximo — Guardar",
+      "category": "productivity",
+      "search_terms": [
+        "cumpleaños",
+        "aniversario",
+        "recordatorio",
+        "días",
+        "pantalla bloqueo",
+        "Apple Watch",
+        "sin anuncios",
+        "boda",
+        "examen",
+        "fecha"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/mx/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/mx/app/id6807079789"
       }
     },
     {
@@ -1987,6 +2026,45 @@
         "currency": "MXN",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/mx/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Enfoque y tiempo",
+      "summary": "Haz espacio para lo que te importa y mira el tiempo que le dedicas. Studydown registra tus proyectos, lecturas y pasatiempos con un gesto sencillo: poner el celular con la pantalla hacia abajo.",
+      "category": "productivity",
+      "search_terms": [
+        "cronómetro",
+        "productividad",
+        "hábitos",
+        "metas",
+        "plazos",
+        "lectura",
+        "estadísticas",
+        "recordatorios",
+        "registro",
+        "rutina"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/mx/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/mx/app/id6807335593"
       }
     },
     {

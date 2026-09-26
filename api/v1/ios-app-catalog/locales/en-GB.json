@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -252,6 +252,46 @@
       }
     },
     {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "Plan backwards from the dates that matter. Countdown Plan gives any event its own preparation steps, such as renew the passport 30 days before a trip or order the cake 7 days before a birthday, and shows what is late, due today, due in the next 7 days and done across all your events.",
+      "category": "productivity",
+      "search_terms": [
+        "since",
+        "lunar",
+        "lock screen",
+        "standby",
+        "apple watch",
+        "no ads",
+        "birthday",
+        "anniversary",
+        "calendar",
+        "reminder",
+        "holiday"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/gb/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/gb/app/id6807079789"
+      }
+    },
+    {
       "key": "cvdesk",
       "app_store_id": "6781337213",
       "name": "CV Desk: ATS CV Builder",
@@ -388,8 +428,7 @@
         "spanish",
         "french",
         "german",
-        "japanese",
-        "everyday phrases"
+        "japanese"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -868,8 +907,7 @@
         "characters",
         "sounds",
         "language",
-        "early learning",
-        "learn zhuyin"
+        "early learning"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2026,6 +2064,46 @@
       }
     },
     {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Face-Down Timer",
+      "summary": "A little time for a project, a book or a skill you want to develop. Studydown helps you see those moments adding up, with a simple gesture: placing your phone face down.",
+      "category": "productivity",
+      "search_terms": [
+        "productivity",
+        "streaks",
+        "habits",
+        "goals",
+        "deadlines",
+        "reading",
+        "statistics",
+        "offline",
+        "reminders",
+        "routine",
+        "projects"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/gb/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/gb/app/id6807335593"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: World Travel",
@@ -2181,8 +2259,7 @@
         "quality",
         "repair",
         "clear",
-        "pixel",
-        "unblur photo"
+        "pixel"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

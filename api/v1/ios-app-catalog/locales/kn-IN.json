@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "kn-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -239,6 +239,46 @@
         "currency": "INR",
         "formatted_price": "ಉಚಿತ",
         "storefront_url": "https://apps.apple.com/in/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• ಇಂದಿನ ಗಮನ ಇಂದ · ಇಂದು · ಮುಂದೆ — ಉಳಿಸಿ",
+      "category": "productivity",
+      "search_terms": [
+        "countdown",
+        "widget",
+        "calendar",
+        "ಹುಟ್ಟುಹಬ್ಬ",
+        "ದಿನಾಂಕ",
+        "ದಿನ ಎಣಿಕೆ",
+        "ಮದುವೆ",
+        "ಪರೀಕ್ಷೆ",
+        "ಲಾಕ್ ಸ್ಕ್ರೀನ್",
+        "ಜಾಹೀರಾತಿಲ್ಲ",
+        "ಹಬ್ಬ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ",
+        "storefront_url": "https://apps.apple.com/in/app/id6807079789"
       }
     },
     {
@@ -2005,6 +2045,47 @@
         "currency": "INR",
         "formatted_price": "ಉಚಿತ",
         "storefront_url": "https://apps.apple.com/in/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: ಫೋಕಸ್",
+      "summary": "ನಿಮಗೆ ಮುಖ್ಯವಾದ ವಿಷಯಗಳಿಗೆ ಸಮಯ ಕೊಡಿ, ನಿಮ್ಮ ಪ್ರಯತ್ನದ ಲೆಕ್ಕ ನೋಡಿ. ಕೆಲಸದ ಯೋಜನೆ, ಓದು ಅಥವಾ ಹವ್ಯಾಸ—ಪ್ರತಿ ಚಟುವಟಿಕೆಗೆ ಕೊಟ್ಟ ಸಮಯವನ್ನು Studydown ಪ್ರತ್ಯೇಕವಾಗಿ ದಾಖಲಿಸುತ್ತದೆ.",
+      "category": "productivity",
+      "search_terms": [
+        "time tracker",
+        "timer",
+        "productivity",
+        "habits",
+        "goals",
+        "deadline",
+        "reading",
+        "offline",
+        "reminder",
+        "ಗುರಿ",
+        "ಅಭ್ಯಾಸ",
+        "ದಾಖಲೆ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ",
+        "storefront_url": "https://apps.apple.com/in/app/id6807335593"
       }
     },
     {

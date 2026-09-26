@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-09-26",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,269 +10,269 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "91a9392d68cc1e91e54fe87ef81699bbaa6c1ca8a412df5c5c9aca3089101c29",
-  "content_digest": "d62acc9350c1648227fc2043f8589d0275a08f030802d319866ec5ad024fdcd8",
-  "generation_digest": "d41587e461fc867365549e8ef608c1e29af8e3a930b6e5296b2c6afb66164af0",
+  "source_sha256": "8847ee9edb1873a19f47ab7f40630a1df357d775b4a4b63a5eb54c46866c1d48",
+  "content_digest": "5b84e8d4cf4b67e7a12dd6abab367265dd7a982d0e1fd64bf7b06b010db7d97a",
+  "generation_digest": "dac31040a7d47c8a219688dc1df6fc686ae82cadfc20c4b0612f4b31b559f11d",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 50,
+  "app_count": 52,
   "locale_count": 50,
-  "image_count": 2500,
+  "image_count": 2600,
   "gallery_count": 51,
   "galleries": [
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "ba2d1233dfc6ceaced79e251d4daf9b5135deffae6db25adfbb43514e78d56de"
+      "sha256": "914328230a7d423a2e6122e1b2357ccabec94a45f428ccff5fa58403a8f74bad"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "6d2fd6f19b3faef77206dc889f0492872fcc367ef5de2a1b04e8c644510b106e"
+      "sha256": "ef728f66d54fc0bdfa4f9570b4772e2ddaca207da6c3012739d7310dd278b1b9"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "0b5fc19b0f44c18bf1c302112bfe745e13e0a6a3e2b6fd8601f4d73cb7c31e37"
+      "sha256": "1f49c8f8e2d83c42df5283dc7717a334ffc508351fb093ca98a1cb303bf05bb0"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "5bf25ef95e90aad787b88ec3305a8dd2f257bd631521bec12652e10f11d4afa4"
+      "sha256": "66d5ac63c0bd868ccefb2687348100cab17eaf40d4d54b4cd825b94ade8eac83"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "21c06d2d606b1bf4215efd5eff32c9d2222a75c2395206ed4be46cadc410e85d"
+      "sha256": "0927e548e38a76217edb1a4061f94abf297d091f7d76253ebea5b968cbe3091a"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "6968d735ffb5fa53a95fe3bd9b1b0af2778c3da5c67f4369a04c0bb5c88207e0"
+      "sha256": "61d6b70e3bb3ad100caa373b3306255a1f04e83d4db052b2ea8cafcc897ca06d"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "295d12a6d06537e29fe11982be73e73716a1ae950a0aa77e48856344a63006c7"
+      "sha256": "84281210e95479aecb72eb17a156216b7da01b1045bf1c81966eccf6d80dbbf7"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "c33c38a38c79726846b9e37718fc81bd00f5bb7a348fb55e01aa1793ef05e2b3"
+      "sha256": "3f9e52a346d5fd60efe1e1983a79a597a403d3f66789f28c82d0f996e2b09f34"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "b614c31d4a4e1832e3a0fba5c6f5ce0c915e47420915d4c41b05a5307949d361"
+      "sha256": "513f270c226d5a13a86aff147690121a6f2082fd113bd0c14a1fc63d3dc55d05"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "1b9e9242a054960326c1a82392a2a4bfa2ae7c939d710ed84d60fb54e7cbc715"
+      "sha256": "d184f540344c487656604197f4e9bea362ef0964cd50a9bbaa38be81a4c76825"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "79d822cb83f41f68e6e19bf9c7eeb76e8c87578cc4a4353b154b7b57af643e00"
+      "sha256": "254fe968139abc7927247ff1726ff6cd715f389cd7c2ca1b0aeb1d23bd8450b2"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "3ac93183cd6cce223c110f225029f229ed42cdd544a9e62a4d304dad21372d0f"
+      "sha256": "12a67cc2c93fc8bd2dc5ba192591836d830a5466c9b68f3620bf50b577e7dda4"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "791508a9cd28aec85c1cc382015b8911b3841c13e25ef1daea81fcd6993fb725"
+      "sha256": "521038704898cfdf005d62520793ffaf2e85c2b2c02765752ca1604872db9db3"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "74b2db831a3058ea65f91d6d5a8f458aa2270005ae1210e958b788755d98f796"
+      "sha256": "a40fdab1210d666d1539cd80fce9b8827ffe24adebba24e5326f27a15c94b222"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "b8d025dd646ff01e54ef05f5c26f78f4b616cc08798c160e9fa8b0720ad8b270"
+      "sha256": "e8dc334432ee029fdf71be4bae027c2c1ea33c95069e0bb20222a749fd6649b5"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "9068e36502947fe886b225d1799b452581ef58e2dcbf8f6dc71bde821fcf24e3"
+      "sha256": "c8a0f1f6cf0efefad59d7a601c75f21d947f3462d79c58915744a463c00add20"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "436fb02bb75e0f410196a12bd13c3368184212be144647f3eefc0db1a3475825"
+      "sha256": "4d7787a9b5c1d953b97f2f7c0dc2fe1fd7bbe8f2990c3fcae1c5c6513a7c1a86"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "3e2890ffcce7b9d3a978466e3569c1572139eb1bd4ffccc02149552468c77d96"
+      "sha256": "6f58265169a4a3c39c781ee686ad53f147453558fa14996d280cba5e8e7d7704"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "a8c3f4cc79f275c845d487215185d862bf96f776a47909274b91319afa74b02a"
+      "sha256": "4e671b9fba8801faf553b4887f82ef4f0ac4e440c69d9d4d56fb959eba28d3d0"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "054d1c46ade8de7d3df17e42329e9e428947de810400958d9cab06a880db075c"
+      "sha256": "a934527af323d44db5bc69fb050ede17a125ee39b3bd4ddbc2f9e7deecf56c74"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "b429c7dc1f13ae0e1c7b57f8e7b69b82e7a0b209ba3a8ef535d6e0a6f454c883"
+      "sha256": "88ba9532fccb9f4eca5ed1427c4659a285148bcc7fb6f778dec15d2d6df8a818"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "dc094a7f03398f551a23c223e62535f236ac302181cfd6f8fbd468b8585ea1d2"
+      "sha256": "c3c6b96368951a48b39e6dc9a1bbb5e15470fbcfab49a6c433e12f0d93289363"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "0773ec2c0e49652dd7eaf0f96814b3380516090d0594a0a0d66cdfb54b99a0a7"
+      "sha256": "4c3e709407ef4e16f21964b311c6bc8fa172640b8530bc16c9590603e4c8b2ca"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "ea6a324b285edd64907bae0c74a5bca50d78bdc63eed504b1d67d00d55132ad1"
+      "sha256": "e2f824c123e9e6762660d7cf1be267cde72df73081f8af89583bcef5f6c9081e"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "128aa33b67de24d0ac1a227d7571f37ae0c3eb37b605d2e2e08a8133e289dee3"
+      "sha256": "89024d2c04cd24ffc4760e3b68824d00847915bd3e932381040a231cec690ab7"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "7bb872bc6d3b45afd178c20d6c47f839638ba65000d83359e5a03bb72ad39025"
+      "sha256": "a36c644d59ecae76772ac100fb9459025a38a338f960c942e223ea087d028084"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "0e25c2d1aaa0d2bada102a673ebba9f75e31a35a460754bdd48328902a77d6c1"
+      "sha256": "27b1122a6576bde0acc7cb7314ba113e088d67212282d34f95fb67a07ed4b54d"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "29994147d0a5b0e2ee509510d54f9801416440a3d7d015d00e188c5a0587d7e6"
+      "sha256": "5320269ea71e2f4d8d50882f334098236faf22d279db1eb13460f7a5696d3520"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "230fed5ee6d5b241ae449b207418f1b58f353908ab1222909802406a96dd3fe9"
+      "sha256": "0cc748b6c0a360da0e13dadf78a300ea40efa2d7bd4fa2668eeb1317f784debb"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "34a2d1cbbe6da6b7ec4c8e5ef58ef7e1126b63c4e5a83857ec00ce0adad1970e"
+      "sha256": "b5153c141c6af5b688bd1e05a05c55c20899f57218e4548d4abd9889d2a5e5b2"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "e9c7d221ea5630d89f913518af938aeaf9ec941ec21e56aabc51fd02da0d809b"
+      "sha256": "63ac77c6b0bb6ef3003d3cd035e3c8044595b0e02356c222420670ed225dbd3a"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "ebfd99fe2d584d16416ef2f9c20bc6aafdcf115dd1eb6fad0bfe51328640b49b"
+      "sha256": "eb8a3594284775f388fd18ec0220bfc220bcbaa31e844c879c72581c479ab511"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "6b7b806fee21a93d3d0671ff2f686c5a58c0432309201644bd7153d8c6ab5e5a"
+      "sha256": "66fad8ccee12f280c274f257c2c31e5817cae29490249a0eff4e79080d9ef764"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "a432709cf4941734f42fe7751dbe7cd91fdbe06c620c077eb5cfa603688fc6c7"
+      "sha256": "36b2fdb24cee82980565331680d67835f259281d5ebe99727fcc76be56f65f43"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "0a6617b7f200d74b6d7cdcdfdd68eb8e58ddabb9d7898655d51274b10beea534"
+      "sha256": "7c12e460efdc003c8d095a491cf4ca979ab9569eb3e35d4ccf4d9170d8909ad3"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "fa16bdaaba0db479751ddfb5fc402527bbd2a2d5c37e06b037a8e92940074105"
+      "sha256": "b99af2bd6a857c4f47e199f7348b53dfbc2c50c0e7ff8253eff60eff27429241"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "0dead9318da5b6e13b09a4a0b6e1f5364cf732a561227e0bd0303c19fbd25e9c"
+      "sha256": "806e668e3e65a53db5131f1d463152b554d837befd53fe820c9a5c32b7c99c79"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "d9b468217a10c3261dd8e455d3d14ce6161dd37022acb7ae465c0bcb4b542c24"
+      "sha256": "36b146f8b7d9ebef4ab5867d8e80f1babc7eb7b0fb6d247e4ab541c8e8da847a"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "de6a54e645cc39d498797d1572b40db635cd068d545a4a05eca0ac94eceea5ec"
+      "sha256": "c1df0818c327dc4cd0f13788393534db66cd7ffd2aedb0e3d4cef2b270a4affe"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "7524265ffdefd6bcdb37da963ee15735fb957254d9684b481f966bbcddee3453"
+      "sha256": "91c752c40fd362ffcd0a623132dd0fda261f90162a488171e4beaa4eb622d035"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "f58808822aee1de73d0fa81e980b02e403374dd76f652e3581a61c49a1f3a346"
+      "sha256": "7f13549afa93dc8f4e430ef32400f154c461f7ff3d1de3f450a839c8a6407a8e"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "dcb59f7f4582eee4d09768412991197c2ac87e7b79be6792a1ba423e54c73529"
+      "sha256": "97b94eb4163df476af295edc12ce2b60870922e30097861835ae5700153b62aa"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "3bfa0062dd4627b5f335e3ff7e90f9d93a8526edc5dbcc2bfe75c61c2f46f4ff"
+      "sha256": "6774139bafea61aa132be841f3e50ca973af29ab42521e2e555319e57e00dffd"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "06617e96da9b4c98666fed2f6606a8339d256a7c5f13f7b7f27e2b241fc5a4da"
+      "sha256": "a94592efac9201b2eb81ba213e655589b67dcc4b6c0b50d00884b8b6373eb811"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "7f709bf846d960ff43701c13f407eeea8676dfe4eee2cb5a2a57cf3cb034cfa8"
+      "sha256": "d91299d25d53cd65dde25b6165f3d2c2a97a2bec995343e77e975d517a326e66"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "f76b3bca0ee195bbc0c1332650b2520f8c0328b62233b99caf5f7c8108ec02ae"
+      "sha256": "687c0773b7ac5a71262af5c1124a419f64c1f6bb34a24f937cc4f1f768fc8733"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "453b175c08d45db5c794c43520ecb18d793012814c5cb2549d363438fce04d1d"
+      "sha256": "c12c673596f8f7bda3940fadbd2d083f02a5beba5136511f3a6f37cc916dfcec"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "75fe372d6264e333f26381b747aaabc8ca71c3673027c36dc0e4fb377facb38b"
+      "sha256": "82452cb7d0e629b411b7be827596b6d4e104e579689c1115e43b6796eef2a633"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "9057f0cff59c5e86b5bf49737e194414b3001067023d8e5665378546604bf577"
+      "sha256": "311e9089fe7329c2b32ef29a8ddff7b95adee8c7828aefca04778adbecd676f1"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "7e39bc9ccd67d76f3ee2a6f3cf6adb208c4602fe042647424f258211f251df7b"
+      "sha256": "d39764b812982d2e269efe1c871c588101333491b060ffb64fc702aa7308cc0d"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "d1aad8adbe7cb924234e6b2ceb2255caa31f2e73d2c075511874b0ce7359515d"
+      "sha256": "06727b8bfdb269a62dfc4c87de46a5d106548d0d85377efcd02ae357c3af849f"
     }
   ],
   "publisher_authored": true,
@@ -347,6 +347,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/caldaily.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6794178671?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "45a7c96fb4b5fd08dede96a581884d888d4c0cd518deca910f0c4b8536a0f5f4"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6807079789?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "ece61b8fed2a6319fffff46d1f44464f4ef263f46ade6a3b866cb2b502380ef9"
     },
     {
       "locale": "ar-SA",
@@ -700,6 +710,16 @@
     },
     {
       "locale": "ar-SA",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/studydown.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6807335593?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "424e2dcde0fcfdcee29e3aae195ac52fc25ab47a5462bb1a948535962b345a78"
+    },
+    {
+      "locale": "ar-SA",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ar-SA/tripplanet.svg",
@@ -942,6 +962,35 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/caldaily.html",
       "app_store_url": null,
       "sha256": "d0198518b32abfa2b409ca7486ac1014b392ebd52108217eb3c77f2b8c1602ee",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/countdaysnow.html",
+      "app_store_url": null,
+      "sha256": "24c7a03b101981ac1b1282779870dd8dac8303df9e9dc0fff886a3b205a4f5d6",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
@@ -1979,6 +2028,35 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/studydown.html",
+      "app_store_url": null,
+      "sha256": "053e188a4e41e28624785a2e622c2672b8ea6c3fb9d5741bfdf27b0f2a6a833d",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/bn-BD/tripplanet.svg",
@@ -2297,6 +2375,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/caldaily.html",
       "app_store_url": "https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=iag_visual_ca&mt=8",
       "sha256": "36810858d91740fb2ee43b0f33e9088e86d2baaf47295bc26f3d6b14013933b7"
+    },
+    {
+      "locale": "ca",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6807079789?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "f1571abff4e8ae78bb1dd9ab96662553033344213d5d9c6dbab19f4117f1b582"
     },
     {
       "locale": "ca",
@@ -2650,6 +2738,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ca/studydown.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "9f9dde1de97d5a7d0aff86abf39ace690c7c980e02a61542bdd8dafceea27099"
+    },
+    {
+      "locale": "ca",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ca/tripplanet.svg",
@@ -2797,6 +2895,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/caldaily.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6794178671?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "c36026b8b33be9a9a5b9fc29059bde8143b2f1f15ba7c3b9740e6779eef17563"
+    },
+    {
+      "locale": "cs",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6807079789?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "816d0f513bdde416ec5b2969049013d6baeb487fd1e7f4e878050dfd260bc987"
     },
     {
       "locale": "cs",
@@ -3150,6 +3258,16 @@
     },
     {
       "locale": "cs",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/cs/studydown.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6807335593?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "e0ec7272e373077d2ae86e12eddaf37440f44ca7113f4cebf8012dec8e93ed9e"
+    },
+    {
+      "locale": "cs",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/cs/tripplanet.svg",
@@ -3297,6 +3415,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/caldaily.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6794178671?pt=118326163&ct=iag_visual_da&mt=8",
       "sha256": "798bfc91c471366b8707483e41a423b0c4491d8857372179bb4019a40644ea2a"
+    },
+    {
+      "locale": "da",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6807079789?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "7c3289e178dfe531a2acdc64f6324b767990e4d557bb0a4319da55758a5af789"
     },
     {
       "locale": "da",
@@ -3650,6 +3778,16 @@
     },
     {
       "locale": "da",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/studydown.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6807335593?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "ae29c1fca0a87852d6e28f55f4845fd8963e92f71bba7750934d761e038067eb"
+    },
+    {
+      "locale": "da",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/da/tripplanet.svg",
@@ -3797,6 +3935,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/caldaily.html",
       "app_store_url": "https://apps.apple.com/de/app/id6794178671?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "0ddd1569e021d60da79212a5c93fbe7c3eccb65b5fe392cb19b850908dcd82c7"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6807079789?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "c5d2aff15121291555e8332c892b960dad21333e82d2b1698517853fda36ad24"
     },
     {
       "locale": "de-DE",
@@ -4150,6 +4298,16 @@
     },
     {
       "locale": "de-DE",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/studydown.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6807335593?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "585426523c6cc4b83b34b7bff60b0acb69988501ea0b46e9d0835442cfe90fd7"
+    },
+    {
+      "locale": "de-DE",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/de-DE/tripplanet.svg",
@@ -4297,6 +4455,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/caldaily.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_visual_el&mt=8",
       "sha256": "bc6674ba98ff6776566c069641ca005bb8583f9ef9e0e1b1a1454bc3ae53a42c"
+    },
+    {
+      "locale": "el",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6807079789?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "8cea2f0e51a35307230ccc507ae977052264aac26bdeed36f81bc95f1306cf34"
     },
     {
       "locale": "el",
@@ -4650,6 +4818,16 @@
     },
     {
       "locale": "el",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/studydown.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6807335593?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "28ad097c1bb8765b5664834cf6e909bb4a466febfc016e98e1145537ec0434f4"
+    },
+    {
+      "locale": "el",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/el/tripplanet.svg",
@@ -4797,6 +4975,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
       "app_store_url": "https://apps.apple.com/au/app/id6794178671?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "24a54a3aa4a544f00a137efb256c3fbf42a24743e4a53758ea1faad7bfbb1260"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6807079789?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "ff42f697ff50b3c0aebb808b4a14ad22ec54a9d600e4f91677a9113ae35a4d03"
     },
     {
       "locale": "en-AU",
@@ -5150,6 +5338,16 @@
     },
     {
       "locale": "en-AU",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-AU/studydown.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6807335593?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "8b65cbb529ada5387123645840ce72db99bb28369bdc3ea0a2a0116a84ea6cd0"
+    },
+    {
+      "locale": "en-AU",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-AU/tripplanet.svg",
@@ -5297,6 +5495,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=iag_visual_en_ca&mt=8",
       "sha256": "d127e3ce7188bd708a08d45957cdab8f8889b8e1e56ded575de0bbebb560b080"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "7a6dae4177df3e0bbc5b6c6bb00a9407989999dac9a9ed20f83e1de0c9bdefae"
     },
     {
       "locale": "en-CA",
@@ -5650,6 +5858,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-CA/studydown.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "9d0090f4e8696685c997adf9d4c9956c7f0183dc35b70799814f97acda490abb"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-CA/tripplanet.svg",
@@ -5797,6 +6015,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6794178671?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "8c19163504da29aa582eeae82459b0e9a1e74562fa0144b35654b39bcb4cddf7"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6807079789?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "a815927426bf3d8c1d725671b490ea12478bd9a34e66bb051a753de45936f363"
     },
     {
       "locale": "en-GB",
@@ -6150,6 +6378,16 @@
     },
     {
       "locale": "en-GB",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/studydown.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6807335593?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "9b0f00c1ae9d733d2c173f0ad1418289f95f0477723f64f53173c72ca3bb95a5"
+    },
+    {
+      "locale": "en-GB",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-GB/tripplanet.svg",
@@ -6297,6 +6535,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
       "app_store_url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_visual_en_us&mt=8",
       "sha256": "2fb35a212a40a3af6809ac7da7bf1195fab9d9841c0f455f2ee84f2f47c02e89"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "ba508628cff1da26571c7e45e366f5f79942b4f171f3d1877e275bd91bea36c3"
     },
     {
       "locale": "en-US",
@@ -6650,6 +6898,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/studydown.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "664b246afa05479da3b590965c9d733d2a478550bb401b13111c161ec8531e23"
+    },
+    {
+      "locale": "en-US",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/en-US/tripplanet.svg",
@@ -6797,6 +7055,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/caldaily.html",
       "app_store_url": "https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "b9c1f06b197d33368aeef676170b9ea9e9df8eb11741f249e9ac651b859b2bf0"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6807079789?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "bd8a61e48a748d51f99a1dbe6b37817da6262af64759c56515bd37c09b300e43"
     },
     {
       "locale": "es-ES",
@@ -7150,6 +7418,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/studydown.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "6c4987dee6ba18727bb86baf434ba604dd96bb5c1ec917ce2cbb55d255f3bee3"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-ES/tripplanet.svg",
@@ -7297,6 +7575,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/caldaily.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6794178671?pt=118326163&ct=iag_visual_es_mx&mt=8",
       "sha256": "d1842df4e57cec53c435a68c726227c3a12b23d51e35c2eede4763c4edaedf7f"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6807079789?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "505ad7bc361225e440c3bf372787bee3db6a24613dfd05dad218eb02c428a238"
     },
     {
       "locale": "es-MX",
@@ -7650,6 +7938,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/studydown.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6807335593?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "19c0080d579efd4a811e68ae66613964134234529f29931c617bb71285695778"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/es-MX/tripplanet.svg",
@@ -7797,6 +8095,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/caldaily.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "25d065f7d8d6aeb3acf560f0255ce8d984dc5a23a66cb96720e53bfa87cc1624"
+    },
+    {
+      "locale": "fi",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6807079789?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "09ec8797b58724e1b5800c436cf935c10365874564d663ec416fbf7fd7c7037f"
     },
     {
       "locale": "fi",
@@ -8150,6 +8458,16 @@
     },
     {
       "locale": "fi",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fi/studydown.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6807335593?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "b41bc7e36baa57b27b49f26c24760a9133e9048d839f9a90570f3f5a6cd0bd5c"
+    },
+    {
+      "locale": "fi",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fi/tripplanet.svg",
@@ -8297,6 +8615,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/caldaily.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=iag_visual_fr_ca&mt=8",
       "sha256": "5d8ffa48ee3b4ad84894d18ce956b2968ea8369f2159411f47f35d11970035c3"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "758d2e13fc46cdab6a176754053c0dc133ac4616af1c043f7e876ac77d76f429"
     },
     {
       "locale": "fr-CA",
@@ -8650,6 +8978,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/studydown.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "76a1de792a347eaa2a48e02e5156579bef28de49ca14d163743213c57bd9de7b"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-CA/tripplanet.svg",
@@ -8797,6 +9135,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/caldaily.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "b9b89e0c5d0a83ca774b78d7f18ef5902ba33838a5a9d44d559fe5e5a2854de6"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6807079789?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "4614b39b0546412b4faf64985a2237480817cca174fab7696f0ae0cc4b48d969"
     },
     {
       "locale": "fr-FR",
@@ -9150,6 +9498,16 @@
     },
     {
       "locale": "fr-FR",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/studydown.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6807335593?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "e98a2f41bb677b3fba7d9adc55e24153f008d531edc1edd4ee7a2625eca1770a"
+    },
+    {
+      "locale": "fr-FR",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/fr-FR/tripplanet.svg",
@@ -9297,6 +9655,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_gu_in&mt=8",
       "sha256": "ccf559226f8a10b1aa1d5f3057ec88586024ec17f2cb7db0f75814659535a4a9"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "1d57358359fb28a2c0becd794d20cce005a3b20cdcdda17fc1687b31c40dcdb7"
     },
     {
       "locale": "gu-IN",
@@ -9650,6 +10018,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/gu-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "a856c73d319cdf62c9f173fb757f72d0c53b3ce94c9302fc2a45f6508880b3f5"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/gu-IN/tripplanet.svg",
@@ -9797,6 +10175,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/caldaily.html",
       "app_store_url": "https://apps.apple.com/il/app/id6794178671?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "2bdc5f834c5e6dd704f5b11eb2213f4fc4461b1f1553285836d8cf974f320302"
+    },
+    {
+      "locale": "he",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6807079789?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "f35ff5a874ffafc6eabad5e9bb3736e669070e7a47e75788d9bd84f597cb0436"
     },
     {
       "locale": "he",
@@ -10150,6 +10538,16 @@
     },
     {
       "locale": "he",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/he/studydown.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6807335593?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "0ea5f90ee732b292386859d065ddd5bed291b3d94b924ce8f97d30e612c432a0"
+    },
+    {
+      "locale": "he",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/he/tripplanet.svg",
@@ -10297,6 +10695,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_hi&mt=8",
       "sha256": "a65ce94a951e1a7bb7436453ee6354a61d619a2ca13c68c97e65f2a9eb2c3a25"
+    },
+    {
+      "locale": "hi",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "3f4cfee87f2ad14407cdd5d515229532dda8811421d5c7adba5a6a8e1e42af87"
     },
     {
       "locale": "hi",
@@ -10650,6 +11058,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hi/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "9e0b9bce4af7d1b45b2e0904696b25fa31bccbfe55f4906aad60664586e8d221"
+    },
+    {
+      "locale": "hi",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hi/tripplanet.svg",
@@ -10797,6 +11215,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/caldaily.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "7d7d0d5548d68b01cc68c3383c8a357cec5e9cb1fb5f0b66dd2a9e5f18ff0476"
+    },
+    {
+      "locale": "hr",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "0d3d7b709c274ca89a7473cfb934b6e6ef1b75bacd906312bc6eb372008d29a2"
     },
     {
       "locale": "hr",
@@ -11150,6 +11578,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hr/studydown.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "b39c26ec86244b00d0a93ec76b4c58edc313c246fa28ea22a45b1a862e4cc8b0"
+    },
+    {
+      "locale": "hr",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hr/tripplanet.svg",
@@ -11297,6 +11735,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/caldaily.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6794178671?pt=118326163&ct=iag_visual_hu&mt=8",
       "sha256": "f2a7c53c5a4a29586c82fd5ac6911726abe91a98257373ecc6b7e67065c509c3"
+    },
+    {
+      "locale": "hu",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6807079789?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "69e9138ba386d63f01259d5b7642d4ec4be9c5563557abbb8da180cf501bfbea"
     },
     {
       "locale": "hu",
@@ -11650,6 +12098,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/studydown.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6807335593?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "679e2484887aa2690814c0f6638c19b2d91651be1c547ada0161d78ae8ca357c"
+    },
+    {
+      "locale": "hu",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/hu/tripplanet.svg",
@@ -11797,6 +12255,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/caldaily.html",
       "app_store_url": "https://apps.apple.com/id/app/id6794178671?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "75602eff1f670a91d2eeed9117ec14308548c8a2306949eefd86d0d2dcdff26b"
+    },
+    {
+      "locale": "id",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6807079789?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "75095cedb4432dbf984ff43e0f287a8a496ef8a5e860d496a30cdf0ed76180ff"
     },
     {
       "locale": "id",
@@ -12150,6 +12618,16 @@
     },
     {
       "locale": "id",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/id/studydown.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6807335593?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "3786157124ba332aabd4ec943ebbda05fe275150282430713f17861f7d4c2b9e"
+    },
+    {
+      "locale": "id",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/id/tripplanet.svg",
@@ -12297,6 +12775,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/caldaily.html",
       "app_store_url": "https://apps.apple.com/it/app/id6794178671?pt=118326163&ct=iag_visual_it&mt=8",
       "sha256": "c67d167f79206a8a1dd1f95f547de4daec5e0cf1760ea94a6232bb1aaacfed3e"
+    },
+    {
+      "locale": "it",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6807079789?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "4997a40d2eb65691f7f5e0217672ec5e4f1f38a97f163cb6a15260b25c48d3be"
     },
     {
       "locale": "it",
@@ -12650,6 +13138,16 @@
     },
     {
       "locale": "it",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/studydown.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6807335593?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "28a5f5fd8a6768271748940f73c6621f89ed2aefcf6e270fa8f304e2431154ee"
+    },
+    {
+      "locale": "it",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/it/tripplanet.svg",
@@ -12797,6 +13295,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/caldaily.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "5118b9f977a9d03c5695bf424426e51d1db618c7d792725a4ce99c27851f7720"
+    },
+    {
+      "locale": "ja",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "4fba180c35eba620928bf3b0228e155ae35c7a98beadb22fa0286928b1d176d9"
     },
     {
       "locale": "ja",
@@ -13150,6 +13658,16 @@
     },
     {
       "locale": "ja",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/studydown.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "d6ef0442c7de3428054b01ada5383bb89948ce2358bef881e672a13420119a03"
+    },
+    {
+      "locale": "ja",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ja/tripplanet.svg",
@@ -13297,6 +13815,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_kn_in&mt=8",
       "sha256": "36c6322019d4e0948c21f2adbaa9c624769a5260024d9fe99c0df1ff092428aa"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "9d29446eee49b7c7d6c07d5a95e718eaceddeb9b6457df08f8b587fe72854d25"
     },
     {
       "locale": "kn-IN",
@@ -13650,6 +14178,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "d1607cc031072a98696694d6510c001ec3a9f5ed09c0087c2c53c420e8c29471"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/kn-IN/tripplanet.svg",
@@ -13797,6 +14335,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/caldaily.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "6caea8d6492ad8b51f0a72167c1be51c5cb6bc6b841a40b8b17fe673cec9596e"
+    },
+    {
+      "locale": "ko",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "04048aec1d2e829305aa853231bc392abdfd26ab518b454479aceaa5f3e7d79e"
     },
     {
       "locale": "ko",
@@ -14150,6 +14698,16 @@
     },
     {
       "locale": "ko",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/studydown.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "3c571af17343176a95f0e18cb3be4ee078e7ac06dbc8c6005a76ba6bc2034c27"
+    },
+    {
+      "locale": "ko",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ko/tripplanet.svg",
@@ -14297,6 +14855,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_ml_in&mt=8",
       "sha256": "d89659c66c13a7c24ba81eef12ff1f6e5ce70ab055afd7c608762528712f3ebb"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "1cae6aa7fd635abf051de7c812a07dd090f2a934f0c4e6dcf9300652e9caaeff"
     },
     {
       "locale": "ml-IN",
@@ -14650,6 +15218,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ml-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "aa9eeae06ccb5f2ad2584d685b125a8c71ab59bf35458fede86b4e9d0c04499d"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ml-IN/tripplanet.svg",
@@ -14797,6 +15375,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "b461cc0cb0fbd45e97a3d8377911d638e58ad18535ed4582c8b7729e34970ff0"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "7d70504371b173bf19102ae7cac2ab28270762f7a742b9b63760981fdbe8909b"
     },
     {
       "locale": "mr-IN",
@@ -15150,6 +15738,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/mr-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "791b3bb5928096edcd43f3ffcaee4769a4963c6f47b31a86e791bf34b603b7b3"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/mr-IN/tripplanet.svg",
@@ -15297,6 +15895,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/caldaily.html",
       "app_store_url": "https://apps.apple.com/my/app/id6794178671?pt=118326163&ct=iag_visual_ms&mt=8",
       "sha256": "6351e9a2e34ab8bbacecac63fe6dfb25aef67e0d664d92270e644e13c2622ca3"
+    },
+    {
+      "locale": "ms",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6807079789?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "6cda576e17935c8ecf294ea3693dd49b175dd4a468d7fc99662f52b2bab58aa0"
     },
     {
       "locale": "ms",
@@ -15650,6 +16258,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/studydown.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6807335593?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "24020f88ec827fc83f4a55463c827656c15e7d3a9a6b9c583f29b1c189b5381f"
+    },
+    {
+      "locale": "ms",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ms/tripplanet.svg",
@@ -15797,6 +16415,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/caldaily.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6794178671?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "8e3c83512d6dece8c0962618294aca55b1979fb4fdab88f5ba02caa27b428532"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6807079789?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "cbd2291627d1c655b9d24cbc93e2383f7d1dd31a6f9eafff7bfdb7204fb384d0"
     },
     {
       "locale": "nl-NL",
@@ -16150,6 +16778,16 @@
     },
     {
       "locale": "nl-NL",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/studydown.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6807335593?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "17a2ef2c28ca692df7fe4941be3911329ed650021c847d235bed8586fc1a2b05"
+    },
+    {
+      "locale": "nl-NL",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/nl-NL/tripplanet.svg",
@@ -16297,6 +16935,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/caldaily.html",
       "app_store_url": "https://apps.apple.com/no/app/id6794178671?pt=118326163&ct=iag_visual_no&mt=8",
       "sha256": "98061bfc2b7240e659af564de056a5ac46a547f5116aad337ac9f1794a867dc1"
+    },
+    {
+      "locale": "no",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6807079789?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "4b95a3de8f7964af2eaf49059c106c2cdc5b3f9c45497e894e7cd1465ce4218c"
     },
     {
       "locale": "no",
@@ -16650,6 +17298,16 @@
     },
     {
       "locale": "no",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/no/studydown.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6807335593?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "269272fc895dba7cbaed45f1ea3be8ebe486889211526dd26ed4c5c060ae79ad"
+    },
+    {
+      "locale": "no",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/no/tripplanet.svg",
@@ -16797,6 +17455,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "53f75ca48e3b41c97f367f9ab32fec97baf601530da0b16e7e69f529f5b5cb64"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "91a0e1126a7930504e6742c0bcf653f3b21b083af4ac0ba03aea6e0d75281b16"
     },
     {
       "locale": "or-IN",
@@ -17150,6 +17818,16 @@
     },
     {
       "locale": "or-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/or-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "154d42190893e869ac020eeaf758ff295b5eaa4766c776325b48197e77cabd11"
+    },
+    {
+      "locale": "or-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/or-IN/tripplanet.svg",
@@ -17297,6 +17975,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_pa_in&mt=8",
       "sha256": "c93107974d1b42886f96fad40832fd1e4634eef0416487d7003dc88089152305"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "02508616d4cbe750c204a0c1e47706acaf5c4054c3beda17a44383297b43c650"
     },
     {
       "locale": "pa-IN",
@@ -17650,6 +18338,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "9f6cac75c9fe1fbe2fc9dc7c12eec3e5bd831276c27ba7d6637249fff5f22239"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pa-IN/tripplanet.svg",
@@ -17797,6 +18495,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/caldaily.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6794178671?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "4c3b312ee8b3ac357d5132fb64591cfac23ac0f077da1a2ef083ca59959efef8"
+    },
+    {
+      "locale": "pl",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6807079789?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "29aace111fd59120f3264ac2d21e8a45fe8c7e42336018978a003dbd9971f900"
     },
     {
       "locale": "pl",
@@ -18150,6 +18858,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/studydown.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6807335593?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "b95d6b625e45f24f65b3c0d1c2179036acac99d84e3b978d241f7c03963bbfff"
+    },
+    {
+      "locale": "pl",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pl/tripplanet.svg",
@@ -18297,6 +19015,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/caldaily.html",
       "app_store_url": "https://apps.apple.com/br/app/id6794178671?pt=118326163&ct=iag_visual_pt_br&mt=8",
       "sha256": "bd5d2faca5054bddeb13ee037156cdd9975881cf035ced7cf2f153a0c7550954"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6807079789?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "c3704aff103f241b0ca36be68025ab1b2da0cc7c7c71c9fba0ea2f8d8b8ac609"
     },
     {
       "locale": "pt-BR",
@@ -18650,6 +19378,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/studydown.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6807335593?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "33bb516131fcb6f2a88361a477499eba34de310e7735e15baae5a842badea16f"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-BR/tripplanet.svg",
@@ -18797,6 +19535,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/caldaily.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6794178671?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "1a29d83cc4703f6958b685fbe607f120abaa8803d5fdc476f0176b85665205a7"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6807079789?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "5717393e23dd425e8d1c5f2245572587aa4ba12d8a4718d503b18356cf84f013"
     },
     {
       "locale": "pt-PT",
@@ -19150,6 +19898,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pt-PT/studydown.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6807335593?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "fcfdb23a4e10905a03dd3ebdb3e24fb14e52ab130d694d0fdf1c637df351a75f"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/pt-PT/tripplanet.svg",
@@ -19297,6 +20055,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/caldaily.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6794178671?pt=118326163&ct=iag_visual_ro&mt=8",
       "sha256": "3e2e41857c7cc1be42d30f11a58a631d8bf82a9b223120cb5d6a55a1cb0ebf21"
+    },
+    {
+      "locale": "ro",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6807079789?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "5a7b59630da9fa77fae4acfb72f80bb08b5708151de14433ee2590194abd0079"
     },
     {
       "locale": "ro",
@@ -19650,6 +20418,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ro/studydown.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6807335593?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "93ae3f10d59891c57920ff79b9d648afed10793858a080f554843b7c920acf70"
+    },
+    {
+      "locale": "ro",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ro/tripplanet.svg",
@@ -19797,6 +20575,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/caldaily.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "01d3046e5e8773ac49290ef37900a71599189739512f4791c65d8d150d570c37"
+    },
+    {
+      "locale": "ru",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "3657fad3ab8b28796b87ad97365e5287e63742204273867af005c74475c19aad"
     },
     {
       "locale": "ru",
@@ -20150,6 +20938,16 @@
     },
     {
       "locale": "ru",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/studydown.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "2d5189365283a5eaad1f9a3d067510a7e643ad87db21ae55de659dfab705ff27"
+    },
+    {
+      "locale": "ru",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ru/tripplanet.svg",
@@ -20297,6 +21095,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/caldaily.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6794178671?pt=118326163&ct=iag_visual_sk&mt=8",
       "sha256": "d03667e4b27e117cde9c037296dcf1f16844289662c7a6a12ba0a604049721cd"
+    },
+    {
+      "locale": "sk",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6807079789?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "689d79b18926049624122aaa4cbfbaa504ee9f63cb8aa916b167d0016ff08fc1"
     },
     {
       "locale": "sk",
@@ -20650,6 +21458,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sk/studydown.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6807335593?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "78757c932b0ba0827ec102e4399c735fa380b6d8d5787dbb08affac13dd2c665"
+    },
+    {
+      "locale": "sk",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sk/tripplanet.svg",
@@ -20797,6 +21615,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/caldaily.html",
       "app_store_url": "https://apps.apple.com/si/app/id6794178671?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "e9af93fada1889b189c54db8678327d9438e9698ff4e66409365deb468185e84"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6807079789?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "41fc33ee00bcefeffa9841399e24c5218fa7329da4aca95b3762efda0a4bf199"
     },
     {
       "locale": "sl-SI",
@@ -21150,6 +21978,16 @@
     },
     {
       "locale": "sl-SI",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/studydown.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6807335593?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "2d00df68a9a77493edf4b3bf9de32f134020b78cf0765a2159d3c3c47d2471c7"
+    },
+    {
+      "locale": "sl-SI",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sl-SI/tripplanet.svg",
@@ -21297,6 +22135,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/caldaily.html",
       "app_store_url": "https://apps.apple.com/se/app/id6794178671?pt=118326163&ct=iag_visual_sv&mt=8",
       "sha256": "ba52c9ec01f661066a8878256df5f1b12270af2fd4f305257514fa0686e3f2f8"
+    },
+    {
+      "locale": "sv",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6807079789?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "9079e1f531925446665f7386eff88baf8e15f8bb1b2bdb9b4948393b69b6f11c"
     },
     {
       "locale": "sv",
@@ -21650,6 +22498,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/sv/studydown.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6807335593?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "367e40764020ba5a6a87bb19ca065767166a4a4f018d260bb01c6101a0407f7c"
+    },
+    {
+      "locale": "sv",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/sv/tripplanet.svg",
@@ -21797,6 +22655,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "7ed3c5f823891a31bedcaabb920c3e3466f9ec7c94a22f28b2fbb4ed16d1243e"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "01fb22b5721f43d5eb578079deb4cfc6990ce233e1a18d01bba62304269f4619"
     },
     {
       "locale": "ta-IN",
@@ -22150,6 +23018,16 @@
     },
     {
       "locale": "ta-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ta-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "ea25e0cbdd92627e3c93d1688eda0caeb82e30a8141ebec76bcbf4f1bf4fe0b1"
+    },
+    {
+      "locale": "ta-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ta-IN/tripplanet.svg",
@@ -22297,6 +23175,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/caldaily.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_visual_te_in&mt=8",
       "sha256": "bea5bebe62faaaaa995f9dc210f239f2d242b3bfcc658928bfc2855fd6f53de6"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "b0894bc4f79cf67e81e62ed21cf1e1a4f49c24e47d4e565e6933973e9e301075"
     },
     {
       "locale": "te-IN",
@@ -22650,6 +23538,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/te-IN/studydown.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "92ec992a2b15dc88ca5835f3b59ba45c58c6fe6ae56964541f66ba9b464daf0e"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/te-IN/tripplanet.svg",
@@ -22797,6 +23695,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/caldaily.html",
       "app_store_url": "https://apps.apple.com/th/app/id6794178671?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "596e69976390d4d24f25466d027f0f6ceb5dbb869d0d376eba68bf8cd6241fa8"
+    },
+    {
+      "locale": "th",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6807079789?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "fd5065b727fa491e25ca4c619c26062520d92c633c9c02b515220d9559753152"
     },
     {
       "locale": "th",
@@ -23150,6 +24058,16 @@
     },
     {
       "locale": "th",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/th/studydown.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6807335593?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "6489e52c801374aad5dc08955e586ecbdb84934d5214cab5672f16bda701044f"
+    },
+    {
+      "locale": "th",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/th/tripplanet.svg",
@@ -23297,6 +24215,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/caldaily.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6794178671?pt=118326163&ct=iag_visual_tr&mt=8",
       "sha256": "20056e885d9f17100e719f6ceae207e23096d5590da1004b284065014d8f1690"
+    },
+    {
+      "locale": "tr",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6807079789?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "0d1508f11605f9014304a807d9b10452706841fcde4230e014d16ab6f432571a"
     },
     {
       "locale": "tr",
@@ -23650,6 +24578,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/studydown.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6807335593?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "bbeed34e91f623351c6cd5a26734ca29690377d39d04685fafad670d540b4a71"
+    },
+    {
+      "locale": "tr",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/tr/tripplanet.svg",
@@ -23797,6 +24735,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/caldaily.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "3a3556bdc48acd5495aaf8e7b75bcedc7f9bc2d4708ebc0cc74ee91973b7854c"
+    },
+    {
+      "locale": "uk",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6807079789?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "64b8ab94920f493420920ff2cb1937963b0c88b8be7783ee341078b2b2fbeb43"
     },
     {
       "locale": "uk",
@@ -24150,6 +25098,16 @@
     },
     {
       "locale": "uk",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/studydown.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6807335593?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "006202c2b9bdb1c0aa492440b6f401929a84c244638b7fb2b900c055dfa4fa62"
+    },
+    {
+      "locale": "uk",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/uk/tripplanet.svg",
@@ -24297,6 +25255,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/caldaily.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=iag_visual_ur_pk&mt=8",
       "sha256": "07a5faf70e78faf13d22a8ab387b13f636e797e9bd630a79eed28467060b5101"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "f8bd12d0668f6adaf77816c7d770cb0deb79c6a96595b34370282a17d8e6dc9d"
     },
     {
       "locale": "ur-PK",
@@ -24650,6 +25618,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ur-PK/studydown.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "21981cdacbf716538117beca458b287e7cbd31e687b5e29a085ac58bdf0bcebc"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/ur-PK/tripplanet.svg",
@@ -24797,6 +25775,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/caldaily.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "6b5d1d37800e74d1b81765023d6dc6ea565c9894c20734a02ec9cbbaf95605b8"
+    },
+    {
+      "locale": "vi",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6807079789?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "a9684455531830a08ef1f1546193ccf6df638da692c63bd2b3a3a1e74da90797"
     },
     {
       "locale": "vi",
@@ -25150,6 +26138,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/vi/studydown.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6807335593?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "f76f30661b96f442189ebb66409c09ec8a3d8a8e9f1b23e9cb7ba69f83056cf0"
+    },
+    {
+      "locale": "vi",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/vi/tripplanet.svg",
@@ -25297,6 +26295,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/caldaily.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "b9cfef9607090a628b75f6b4b0af787611ef0e3d49a4e2f88d04e7d1c49a847e"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6807079789?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "3bc65c3318a62c2cebfc4d4e14453091c6fb286b9daaf205e5f6759aea36b126"
     },
     {
       "locale": "zh-Hans",
@@ -25707,6 +26715,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/studydown.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6807335593?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "bbddf662f125d284f560b314833b50a8f4666c8acb53df0fdc56160a4be0a7c3"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "tripplanet",
       "app_store_id": "6787193643",
       "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hans/tripplanet.svg",
@@ -25873,6 +26891,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/caldaily.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "6e29532e78b3b1ea4781dd1efbf96919c193adcdd5dc52d51e6866632162474a"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/countdaysnow.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/countdaysnow.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "e8bbc5ca353311f95b836f99b398e73ef9e4ecfe52ec6bf7a05483d4f12365a0"
     },
     {
       "locale": "zh-Hant",
@@ -26223,6 +27251,16 @@
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "46c63198ddf9706a2a92001aea8316a9be011a032ba6859c7e69d66c4f62c337"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "image_url": "https://open.cait518.cc/ios-app-guide/visuals/zh-Hant/studydown.svg",
+      "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/studydown.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "d46e4b17449900c39ffea2240e9bc7c1c166654c21a99224d400ff1efa2d8517"
     },
     {
       "locale": "zh-Hant",

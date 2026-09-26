@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -26,8 +26,7 @@
         "учёба",
         "экзамен",
         "офлайн",
-        "документы",
-        "аннотации pdf"
+        "документы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -106,8 +105,7 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель",
-        "toeic аудирование"
+        "самоучитель"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -148,8 +146,7 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы",
-        "toeic аудирование"
+        "фразы"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -205,6 +202,8 @@
         "price": "0",
         "currency": "RUB",
         "formatted_price": "Бесплатно",
+        "rating_value": 1.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/ru/app/id6802423998"
       }
     },
@@ -248,6 +247,44 @@
         "currency": "RUB",
         "formatted_price": "Бесплатно",
         "storefront_url": "https://apps.apple.com/ru/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Фокус дня Прошло · Сегодня · Впереди — Сохранить",
+      "category": "productivity",
+      "search_terms": [
+        "день рождения",
+        "годовщина",
+        "напоминание",
+        "экран блокировки",
+        "Apple Watch",
+        "без рекламы",
+        "свадьба",
+        "экзамен",
+        "отпуск"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно",
+        "storefront_url": "https://apps.apple.com/ru/app/id6807079789"
       }
     },
     {
@@ -513,8 +550,7 @@
         "курс",
         "офлайн",
         "csv",
-        "счета",
-        "деньги в путешествии"
+        "счета"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -551,8 +587,7 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов",
-        "расходы в путешествии"
+        "контроль расходов"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -962,8 +997,7 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн",
-        "фонетика для детей"
+        "офлайн"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1664,9 +1698,7 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив",
-        "сохранить статьи",
-        "читать позже"
+        "архив"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1996,6 +2028,46 @@
       }
     },
     {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Учёт времени",
+      "summary": "Находите время для важного и замечайте свои усилия. Studydown записывает время для рабочих проектов, чтения и увлечений, когда вы кладёте телефон экраном вниз.",
+      "category": "productivity",
+      "search_terms": [
+        "таймер",
+        "концентрация",
+        "привычки",
+        "цели",
+        "дедлайн",
+        "чтение",
+        "статистика",
+        "напоминания",
+        "секундомер",
+        "прогресс",
+        "план"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно",
+        "storefront_url": "https://apps.apple.com/ru/app/id6807335593"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: Путешествия",
@@ -2232,8 +2304,7 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping",
-        "диагностика wifi"
+        "ping"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2347,9 +2418,7 @@
         "файлы",
         "7zip",
         "unrar",
-        "gz",
-        "распаковать 7z",
-        "открыть файлы rar"
+        "gz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

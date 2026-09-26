@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 50
+      "const": 52
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2500
+      "const": 2600
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2500,
-      "maxItems": 2500,
+      "minItems": 2600,
+      "maxItems": 2600,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -236,6 +236,7 @@
               "aim990plus",
               "battai",
               "caldaily",
+              "countdaysnow",
               "cvdesk",
               "cyca",
               "dailymate",
@@ -272,6 +273,7 @@
               "snapportlite",
               "sononote",
               "stayclock",
+              "studydown",
               "tripbee",
               "tripbeelite",
               "tripplanet",

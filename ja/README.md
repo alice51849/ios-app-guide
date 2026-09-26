@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 50 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 52 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -95,6 +95,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Aim990 Plus** | Aim990 Plus：英語の時間制限練習を8問の準備から始める | Aim990 Plus は、英語の基礎がある大人向けの有料ダウンロードです。8問の Warm-up → 20問・15分の Pressure Set → Mistake Replay で、時間内に解き、間違いを振り返る練習を繰り返せます。追加のアプリ内課金やサブスクリプションはありません。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html) | [App Store で Aim990 Plus を入手 →](https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=geo_pick&mt=8) |
 | **BattAI: バッテリー状態スコア** | BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に \| iOS App | BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/battai.html) | [App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8) |
 | **CalDaily 電卓とテーマ** | CalDaily 電卓とテーマ — ウィジェット・8つのツール・履歴 \| iOS App | 使い続けたくなる電卓。数字の背景まで覚えているからです。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/caldaily.html) | [App Store で CalDaily 電卓とテーマ を入手](https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8) |
+| **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — 今日のフォーカス \| iOS App | • 今日のフォーカス 過去 · 今日 · 未来 — 保存 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/countdaysnow.html) | [App Store で CountDaysNow: Event Counter を入手](https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=geo_pick&mt=8) |
 | **CV Desk** | 2026年版キャリアチェンジャー向け最高の履歴書作成アプリ | 分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。その隙間を埋めるためにCV Deskを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html) | [App StoreでCV Deskを入手 →](https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=geo_pick&mt=8) |
 | **Cyca** | アカウント不要の最高の生理周期トラッカーアプリiPhone向け | データの機密性が重要なカテゴリでは、適切な生理周期トラッカーは経血、気分、症状、体温、親密さなどすべてを端末内に保ち、アカウントもクラウド同期も不要です。Cycaはその一点だけに絞って、あとは削ぎ落としています。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-period-tracker-app-no-account-required-iphone.html) | [App StoreでCycaを入手 →](https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate** | Apple Watch対応の旅行者向け実用的な言語フレーズアプリのおすすめ | 旅行前には、単語を組み立てるよりも実際の状況に即した完成したフレーズのほうが役立ちます。DailyMateはまさにその困りごとから始まりました。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App StoreでDailyMateを入手 →](https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
@@ -131,6 +132,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Snapport Lite：自宅で証明写真** | Snapport Lite：自宅で証明写真 — 自宅でID写真を作成 \| iOS App | Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/snapportlite.html) | [App Store で Snapport Lite：自宅で証明写真 を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhoneで会議を要約する最高のボイスノートアプリ | 通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App StoreでSono Noteを入手 →](https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock:パタパタ卓上時計** | Stay Clock:パタパタ卓上時計 — 常時点灯の時計とカレンダー \| iOS App | Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/stayclock.html) | [App Store で Stay Clock:パタパタ卓上時計 を入手](https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
+| **Studydown：伏せて時間記録** | Studydown：伏せて時間記録 — 机に伏せるだけ \| iOS App | スマートフォンを伏せて、大切なことに向き合う時間を。Studydown は、仕事のプロジェクト、読書、語学、趣味などに使った時間を、項目ごとに残せる記録アプリです。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/studydown.html) | [App Store で Studydown：伏せて時間記録 を入手](https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Lite** | iPhone向けのシンプルで使いやすい、次の旅行に最適な旅行プランナーアプリ | 次の旅行1つを計画しているなら、いつか行くかもしれないすべての旅行を詰め込んだ混雑したアーカイブよりも、その旅行の落ち着いたタイムラインの方が役立ちます。心当たりがあるなら、TripBee Liteを試してみてください。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html) | [App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8) |
 | **TripBee Pro: 旅行プランナー** | iPhone用最高の旅行日程プランナーアプリ | 優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします。心当たりがあるなら、TripBee Pro: 旅行プランナーを試してみてください。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-trip-itinerary-planner-app-for-iphone.html) | [App StoreでTripBee Pro: Trip Plannerを入手 →](https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8) |
 | **Unblurry** | iPhoneで子どものぼやけた写真を修正する最高のアプリ | 子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html) | [App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8) |
@@ -142,7 +144,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,500件のレコードを含みます。
+JSON、JSONL、CSVは同じ2,600件のレコードを含みます。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -150,6 +152,6 @@ JSON、JSONL、CSVは同じ2,500件のレコードを含みます。
 
 [ホーム](https://open.cait518.cc/ios-app-guide/ja/index.html) · [オープンデータ](https://open.cait518.cc/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-09-24
+更新日: 2026-09-27
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

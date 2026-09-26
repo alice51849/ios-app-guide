@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-26",
-  "content_digest": "37b0ad57dc567e950b4216598d8d5854829031d8d805156751c9af9f00d919ba",
+  "content_digest": "9bb715896ddf6dcfd0b628db654f377dc4af50f3f8f2d64e3abbf26bd7c40c6c",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 50,
+  "record_count": 52,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,8 +27,7 @@
         "offline",
         "estudo",
         "prova",
-        "rascunho",
-        "notas à mão"
+        "rascunho"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -182,8 +181,7 @@
         "Cuidado na carga",
         "Faixa de carga",
         "Velocidade de carga",
-        "Exportar dados",
-        "saúde da bateria"
+        "Exportar dados"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -247,6 +245,45 @@
       }
     },
     {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Foco do dia Desde · Hoje · Adiante — Salvar",
+      "category": "productivity",
+      "search_terms": [
+        "aniversário",
+        "lembrete",
+        "dias",
+        "tela de bloqueio",
+        "Apple Watch",
+        "sem anúncios",
+        "casamento",
+        "prova",
+        "calendário",
+        "meta"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6807079789"
+      }
+    },
+    {
       "key": "cvdesk",
       "app_store_id": "6781337213",
       "name": "CV Desk: currículo ATS",
@@ -278,8 +315,7 @@
         "docx",
         "cartaapresentação",
         "vaga",
-        "profissional",
-        "currículo ats"
+        "profissional"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -418,8 +454,7 @@
         "japonês",
         "coreano",
         "iniciante",
-        "áudio",
-        "guia de conversação"
+        "áudio"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -648,8 +683,7 @@
         "impulso",
         "renda",
         "valor",
-        "horas",
-        "compra por impulso"
+        "horas"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -798,8 +832,7 @@
         "fonética",
         "pré-escola",
         "pequenos",
-        "idioma",
-        "mandarim crianças"
+        "idioma"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -854,8 +887,7 @@
         "pequenos",
         "idioma",
         "mandarin",
-        "chinese",
-        "mandarim crianças"
+        "chinese"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1341,8 +1373,7 @@
         "foto",
         "pdf",
         "exif",
-        "senha",
-        "tarjar pdf"
+        "senha"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1383,9 +1414,7 @@
         "compras",
         "calendário",
         "widget",
-        "organização",
-        "checklist",
-        "to do list"
+        "organização"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1463,8 +1492,7 @@
         "margem lucro",
         "rentabilidade cliente",
         "rateio de custos",
-        "análise cruzada",
-        "despesas do projeto"
+        "análise cruzada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1789,8 +1817,7 @@
         "categorias",
         "semelhantes",
         "linha do tempo",
-        "compra única",
-        "organizar capturas de tela"
+        "compra única"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2000,6 +2027,45 @@
       }
     },
     {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Timer de foco",
+      "summary": "Dê espaço ao que importa e veja o tempo que você dedica a isso. O Studydown registra projetos, leitura e hobbies com um gesto simples: apoiar o celular com a tela virada para baixo.",
+      "category": "productivity",
+      "search_terms": [
+        "produtividade",
+        "cronômetro",
+        "hábitos",
+        "objetivos",
+        "prazos",
+        "leitura",
+        "estatísticas",
+        "lembrete",
+        "registro",
+        "progresso"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6807335593"
+      }
+    },
+    {
       "key": "tripplanet",
       "app_store_id": "6787193643",
       "name": "Lumi Trip Planet: Viagens",
@@ -2014,8 +2080,7 @@
         "missões",
         "recompensas",
         "férias",
-        "memórias",
-        "jogos para viagem de carro"
+        "memórias"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

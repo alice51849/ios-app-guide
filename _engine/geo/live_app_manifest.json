@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 6,
-  "roster_digest": "2c8a8bcc7e4660a4fa51fb82ee06f9cd4e9de69e90b0e2217c29d274da1bd467",
+  "revision": 8,
+  "roster_digest": "fe6cd48079af57407940c0d7c99b9784df2d33db877ec0f5b1de197cf35772dd",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -23,6 +23,10 @@
     "caldaily": {
       "app_id": "6794178671",
       "name": "CalDaily"
+    },
+    "countdaysnow": {
+      "app_id": "6807079789",
+      "name": "CountDaysNow"
     },
     "cvdesk": {
       "app_id": "6781337213",
@@ -167,6 +171,10 @@
     "stayclock": {
       "app_id": "6814035888",
       "name": "Stay Clock"
+    },
+    "studydown": {
+      "app_id": "6807335593",
+      "name": "Studydown"
     },
     "tripbee": {
       "app_id": "6787754435",

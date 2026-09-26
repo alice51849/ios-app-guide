@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2442,
-  "app_count": 50,
+  "row_count": 2540,
+  "app_count": 52,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -100,6 +100,7 @@
     "aim990plus",
     "battai",
     "caldaily",
+    "countdaysnow",
     "cvdesk",
     "cyca",
     "dailymate",
@@ -136,6 +137,7 @@
     "snapportlite",
     "sononote",
     "stayclock",
+    "studydown",
     "tripbee",
     "tripbeelite",
     "tripplanet",
@@ -174,5 +176,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:0dbfd684dbcdc14ccc3ce56cc46afa8234e8b17ef21fb257eab9121a468f1ab7"
+  "content_digest": "sha256:134319dde78dba4f31bf9c6d9f199217b8740502272d0e1d854b8982f386c9d3"
 }

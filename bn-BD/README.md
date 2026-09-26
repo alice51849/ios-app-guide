@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৫০টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৫২টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -97,6 +97,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Aim990 Plus: ইংরেজি মক টেস্ট** | Aim990 Plus: ইংরেজি মক টেস্ট — চাপেও দ্রুত ও নির্ভুল উত্তর \| iOS App | Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থীদের জন্য ইংরেজি শোনা ও পড়ার নিবিড় অনুশীলন। এর মূল ধাপগুলো সময়ের চাপের মধ্যেও মনোযোগ ধরে রাখার অভ্যাস গড়ে তোলে | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/aim990plus.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **BattAI: ব্যাটারির স্বাস্থ্য** | BattAI: ব্যাটারির স্বাস্থ্য — স্পষ্ট নিয়ম, উৎস ও সীমা \| iOS App | BattAI BattAI সর্বজনীন iOS API থেকে পাঁচটি মান ব্যবহার করে: ব্যাটারির স্তর, চার্জের অবস্থা, লো পাওয়ার মোড, পুরো ডিভাইসের তাপীয় অবস্থা ও সময়। অন্য ফল এই পরিমাপ থেকে হিসাব করা হয় বা আপনি যোগ করেন। প্রতিটি তথ্য তার উৎস ও সীমা দেখায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/battai.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **CalDaily ক্যালকুলেটর ও থিম** | CalDaily ক্যালকুলেটর ও থিম — উইজেট, টুল ও গোছানো হিসাব \| iOS App | এমন একটি ক্যালকুলেটর যা আপনি সত্যিই ব্যবহার করে যাবেন, কারণ এটি প্রতিটি সংখ্যার পেছনের ভাবনা মনে রাখে। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/caldaily.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **CountDaysNow: Event Counter** | CountDaysNow: Event Counter — আজকের ফোকাস \| iOS App | • আজকের ফোকাস থেকে · আজ · সামনে — সংরক্ষণ করুন | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/countdaysnow.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **CV Desk: ATS রিজিউম নির্মাতা** | CV Desk: ATS রিজিউম নির্মাতা — ATS রেজিউমে · CV বিল্ডার \| iOS App | আপনার আইফোনেই তৈরি করুন একটি ATS-নিরাপদ রিজিউম যা নিয়োগকারীর সিস্টেম পড়তে পারে। কোনো অ্যাকাউন্ট নয়। কোনো আপলোড নয়। কোনো সাবস্ক্রিপশন নয়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/cvdesk.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Cyca: পিরিয়ড ও সাইকেল ট্র্যাক** | Cyca: পিরিয়ড ও সাইকেল ট্র্যাক — পরিচিত হোন Cyca-এর সাথে— আপনার সাইকেল বোঝার নিরিবিলি ও \| iOS App | পরিচিত হোন Cyca-এর সাথে— আপনার সাইকেল বোঝার নিরিবিলি ও উষ্ণ উপায়। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/cyca.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **DailyMate Lite: রোজ কথা বলুন** | DailyMate Lite: রোজ কথা বলুন — ৫০ ভাষায় স্বাভাবিক কথোপকথন \| iOS App | যখন কথা বলার সময় আসে, ঠিক কথাটি যেন হাতের কাছে থাকে। DailyMate Lite বাস্তব জীবনের পরিস্থিতিকে ছোট, স্বাভাবিক কথার সূত্র ও জবাবের অনুশীলনে সাজায়—৫০টি | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/dailymatelite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -132,6 +133,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Snapport: পাসপোর্ট ও আইডি ফটো** | Snapport: পাসপোর্ট ও আইডি ফটো — ঘরে বসেই তৈরি করুন পাসপোর্ট, ভিসা ও আইডি ফটো—শান্তি ও \| iOS App | ঘরে বসেই তৈরি করুন পাসপোর্ট, ভিসা ও আইডি ফটো—শান্তি ও গোপনীয়তার সাথে। Snapport আপনার iPhone-এ দেয় সাধারণ আকারের টেমপ্লেট, মুখের অবস্থান নির্দেশিকা | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/snapport.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Sono Note** | Sono Note — ভয়েস টু টেক্সট · নোট \| iOS App | স্বাভাবিকভাবে কথা বলুন। গর্বিত হওয়ার মতো লেখা নিয়ে ফিরে আসুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/sononote.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Stay Clock: ডেস্ক ঘড়ি** | Stay Clock: ডেস্ক ঘড়ি — অবিরাম সময় ও ক্যালেন্ডার \| iOS App | Stay Clock আপনার iPhone বা iPad-কে বানিয়ে দেয় এমন এক সবসময় জ্বলে থাকা ডেস্ক ঘড়ি, যা ঘরের অন্য প্রান্ত থেকেও স্পষ্ট পড়া যায়। বড় আকারের সময় | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/stayclock.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **Studydown: ফোকাস টাইমার** | Studydown: ফোকাস টাইমার — স্ক্রিন নিচের দিকে রাখুন \| iOS App | প্রতিদিন কোথায় সময় দিচ্ছেন, তা চোখের সামনে রাখুন। কাজের প্রকল্প, বই পড়া, ভাষা শেখা বা শখের চর্চা—Studydown-এ প্রতিটির জন্য আলাদা কাজ তৈরি করে সময় | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/studydown.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Trip Planet: Kids Quest** | Trip Planet: Kids Quest — পারিবারিক ভ্রমণ অ্যাডভেঞ্চার \| iOS App | প্রতিটি পারিবারিক ভ্রমণকে একটি ক্ষুদ্র মহাকাশ অভিযানে পরিণত করুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/tripplanet.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **TripBee Lite: ভ্রমণ পরিকল্পনা** | TripBee Lite: ভ্রমণ পরিকল্পনা — একটি সফর, সুন্দর গোছানো \| iOS App | পরবর্তী সফরটিতেই পুরো মন দিন। TripBee Lite একটি শান্ত ও পরিপাটি পরিকল্পনাকারী, যা একটি সক্রিয় ভ্রমণকে ঘিরে তৈরি। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/tripbeelite.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **TripBee: ট্রিপ প্ল্যানার** | TripBee: ট্রিপ প্ল্যানার — ভ্রমণ রুট ও প্যাকিং লিস্ট \| iOS App | TripBee Pro-এর মাধ্যমে এক সুন্দর, ব্যক্তিগত ও অফলাইন অ্যাপে আপনার সমস্ত ট্রিপ প্ল্যান করুন। | পেইড ডাউনলোড | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/tripbee.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -144,7 +146,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৫০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৬০০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -152,6 +154,6 @@ JSON, JSONL এবং CSV একই ২,৫০০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-09-24
+আপডেট: 2026-09-27
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

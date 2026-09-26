@@ -2,7 +2,7 @@
 title: "Stay Clock: Rellotge de Taula — Hora i calendari sempre actius | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ca/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "dB Halo: ശബ്ദനില മീറ്റർ — സ്പെക്ട്രവും ശബ്ദ ഡോസും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ml-IN/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

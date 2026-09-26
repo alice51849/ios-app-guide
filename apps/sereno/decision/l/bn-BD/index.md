@@ -2,7 +2,7 @@
 title: "Sereno: Sleep Sounds — Sereno আপনার ফোনকে ঘুম, মনোযোগ ও প্রশান্তির জন্য একটি | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/bn-BD/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

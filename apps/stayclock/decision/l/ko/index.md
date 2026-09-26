@@ -2,7 +2,7 @@
 title: "Stay Clock: 플립 탁상시계 — 항상 켜지는 시계와 캘린더 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/ko/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

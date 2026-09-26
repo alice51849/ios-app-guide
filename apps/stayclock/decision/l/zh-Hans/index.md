@@ -2,7 +2,7 @@
 title: "Stay Clock:翻页桌面时钟 — 常亮时间与日历显示 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/zh-Hans/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

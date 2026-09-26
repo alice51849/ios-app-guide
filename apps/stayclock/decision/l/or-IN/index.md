@@ -2,7 +2,7 @@
 title: "Stay Clock: ଡେସ୍କ ଘଡ଼ି — ସବୁବେଳେ ସମୟ ଓ କ୍ୟାଲେଣ୍ଡର୍ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/or-IN/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

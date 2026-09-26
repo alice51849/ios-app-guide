@@ -2,7 +2,7 @@
 title: "Aim990 Plus：英語の時間制限練習を8問の準備から始める"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ja/index.html"
-modified: "2026-09-25"
+modified: "2026-09-26"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -435,6 +435,41 @@ CURATED_FALLBACK = {
             ["dclock - digital flip clock", 0],
         ],
     },
+    "countdaysnow": {
+        "key": "countdaysnow",
+        "gap_queries": [
+            "countdown app that plans preparation steps backwards from an event date",
+            "days until and days since counter with a lock screen and dynamic island countdown",
+            "event countdown widget app with no ads and no subscription",
+            "countdown app with a date calculator for adding or comparing dates",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "countdown", "days until" and "countdown widget" on 2026-09-27; rank 0
+        # means the position was not measured, as for the other curated rows.
+        "top_competitors": [
+            ["countdown buddy", 0],
+            ["days • countdown & widgets", 0],
+            ["countdown - days until", 0],
+            ["timecount - countdown & widget", 0],
+        ],
+    },
+    "studydown": {
+        "key": "studydown",
+        "gap_queries": [
+            "face down phone focus timer that pauses when you pick up your phone",
+            "study time tracker by activity with weekly goals and deadlines",
+            "focus timer app with no account or ads and a one-time pro unlock",
+            "log reading or language practice hours on iphone and export csv",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "focus timer", "study timer" and "study time tracker" on 2026-09-27.
+        "top_competitors": [
+            ["forest: focus for productivity", 0],
+            ["flora - green focus", 0],
+            ["study bunny: focus timer", 0],
+            ["flipd: focus & study timer", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

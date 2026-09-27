@@ -148,6 +148,8 @@ SITUATIONS: dict[str, str] = {
     "ledmovingtext": "utility",
     "dbhalo": "utility",
     "stayclock": "utility",
+    "countdaysnow": "utility",
+    "studydown": "focus",
 }
 DEFAULT_SITUATION = "utility"
 

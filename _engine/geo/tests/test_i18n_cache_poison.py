@@ -75,5 +75,46 @@ class DropCrossAppCachePoisonTests(unittest.TestCase):
             )
 
 
+    @staticmethod
+    def sibling_editions() -> tuple[str, str]:
+        for name in NAMES:
+            base = i18n._app_name_base(name)
+            for other in NAMES:
+                if other != name and i18n._same_app_family(other, {base}):
+                    return name, other
+        raise AssertionError("registry must contain one sibling edition pair")
+
+    def test_drops_pair_that_swaps_a_sibling_edition(self) -> None:
+        named, swapped = self.sibling_editions()
+        mapping = {
+            named: swapped,
+            f"Our pay-once pick: {named}": f"Pilihan kami: {swapped}",
+        }
+        dropped = i18n.drop_cross_app_cache_poison(mapping, "unit")
+        self.assertEqual(2, dropped)
+        self.assertEqual({}, mapping)
+
+    def test_keeps_capitalised_query_term_that_the_source_already_contains(self) -> None:
+        pairs = [
+            (short, longer)
+            for short in NAMES
+            for longer in NAMES
+            if longer.startswith(f"{short} ")
+        ]
+        self.assertTrue(pairs, "registry must contain a prefix-sharing pair")
+        short, longer = pairs[0]
+        source = f"{short.lower()} app for iphone, and where {longer} may fit"
+        mapping = {source: f"apl {short} untuk iPhone, dan {longer} boleh sesuai"}
+        dropped = i18n.drop_cross_app_cache_poison(mapping, "unit")
+        self.assertEqual(0, dropped)
+
+    def test_keeps_pair_that_names_both_editions_like_its_source(self) -> None:
+        named, sibling = self.sibling_editions()
+        source = f"{named} or {sibling}?"
+        mapping = {source: f"{named} atau {sibling}?"}
+        dropped = i18n.drop_cross_app_cache_poison(mapping, "unit")
+        self.assertEqual(0, dropped)
+        self.assertIn(source, mapping)
+
 if __name__ == "__main__":
     unittest.main()

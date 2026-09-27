@@ -22169,6 +22169,12 @@ class GeneratorTests(unittest.TestCase):
             # Store listing free, repository README/AGENTS, checked 2026-09-23).
             "dbhalo",
             "stayclock",
+            # Free downloads (iTunes Lookup price 0, released 2026-09-26) whose
+            # en-US descriptions state "One purchase unlocks everything for
+            # good" (CountDaysNow) and a free allowance with no subscription
+            # (Studydown), checked 2026-09-27.
+            "countdaysnow",
+            "studydown",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

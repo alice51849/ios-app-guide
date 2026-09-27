@@ -1387,6 +1387,29 @@ def portfolio_app_names() -> tuple[str, ...]:
     )
 
 
+def edition_swaps_introduced(source: str, target: str) -> list[str]:
+    """Sibling editions the translation names although the English never does.
+
+    The page gate tolerates X / X Pro slips, but a cached pair that swaps one
+    edition for another (2026-09-25: ms cached "TripBee Lite" under every
+    "TripBee Pro: Trip Planner" sentence) re-poisons each refresh, and the
+    publish-time answer gate then fails every geo-daily run. Dropping such a
+    cached pair is as safe as dropping any other: the slot is re-translated.
+    """
+    source_names = set(portfolio_app_names_in(source))
+    if not source_names:
+        return []
+    bases = {_app_name_base(name) for name in source_names}
+    folded = source.casefold()
+    return sorted(
+        name
+        for name in set(portfolio_app_names_in(target)) - source_names
+        # A query term the translation merely capitalises ("mochi app" ->
+        # "Mochi") is already in the source; only a real swap is dropped.
+        if _same_app_family(name, bases) and name.casefold() not in folded
+    )
+
+
 def _app_name_base(name: str) -> str:
     changed = True
     while changed:
@@ -1501,7 +1524,10 @@ def drop_cross_app_cache_poison(mapping: dict[str, str], origin: str) -> int:
     poisoned = [
         source
         for source, target in mapping.items()
-        if quick.search(target) and cross_app_names_introduced(source, target)
+        if quick.search(target) and (
+            cross_app_names_introduced(source, target)
+            or edition_swaps_introduced(source, target)
+        )
     ]
     for source in poisoned:
         del mapping[source]

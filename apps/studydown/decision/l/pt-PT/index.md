@@ -2,7 +2,7 @@
 title: "Studydown: Tempo de foco — Vire-o para baixo | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/pt-PT/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Reserve tempo para o que importa e veja onde o investe. O Studydown regista o te
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Sem anúncios
+- Privado / no dispositivo
+- Widget
+- Apple Watch
 - App Store · Grátis
 
 [Baixe Studydown: Tempo de foco na App Store](https://apps.apple.com/pt/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

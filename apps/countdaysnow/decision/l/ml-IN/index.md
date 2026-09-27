@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — ഇന്നത്തെ ശ്രദ്ധ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ml-IN/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
 - വ്യാപനങ്ങൾ ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
+- വിഡ്ജറ്റ്
+- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് CountDaysNow: Event Counter നേടൂ](https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

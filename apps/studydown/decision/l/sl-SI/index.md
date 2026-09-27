@@ -2,7 +2,7 @@
 title: "Studydown: Merjenje časa — Položi ga z zaslonom navzdol | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/sl-SI/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Vzemite si čas za pomembne stvari in opazujte svoj napredek. Studydown beleži 
 
 - Produktivnost
 - Brezplačen začetek
+- Brez računa
+- Brez oglasov
+- Zasebno / na napravi
+- Gradnik
+- Apple Watch
 - App Store · Brezplačno
 
 [Prenesite Studydown: Merjenje časa iz trgovine App Store](https://apps.apple.com/si/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

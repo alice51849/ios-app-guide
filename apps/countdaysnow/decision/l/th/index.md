@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — โฟกัสประจำวัน | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/th/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - เพิ่มประสิทธิภาพ
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
+- ไม่มีบัญชี
 - ไม่มีโฆษณา
+- ส่วนตัว / บนอุปกรณ์
+- วิดเจ็ต
+- Apple Watch
 - App Store · ฟรี
 
 [ดาวน์โหลด CountDaysNow: Event Counter บน App Store](https://apps.apple.com/th/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

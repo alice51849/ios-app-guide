@@ -2,7 +2,7 @@
 title: "Studydown: Enfoque y tiempo — Voltea la pantalla | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/es-MX/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Haz espacio para lo que te importa y mira el tiempo que le dedicas. Studydown re
 
 - Productividad
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
+- Sin anuncios
+- Privado / en el dispositivo
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Consigue Studydown: Enfoque y tiempo en el App Store](https://apps.apple.com/mx/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

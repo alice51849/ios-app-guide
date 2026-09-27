@@ -2,7 +2,7 @@
 title: "Studydown：翻面專注計時 — 螢幕朝下蓋著放 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/zh-Hant/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - 效率工具
 - 免費開始 · 一次性解鎖
+- 免帳號
+- 無廣告
+- 隱私優先／裝置端
+- 主畫面小工具
+- Apple Watch
 - App Store · 免費
 
 [在 App Store 取得 Studydown：翻面專注計時](https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

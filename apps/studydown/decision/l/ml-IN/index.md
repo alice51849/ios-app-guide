@@ -2,7 +2,7 @@
 title: "Studydown: ഫോക്കസ് — സ്ക്രീൻ താഴേക്കാക്കി വയ്ക്കൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/ml-IN/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക
+- അക്കൗണ്ട് ഇല്ല
+- വ്യാപനങ്ങൾ ഇല്ല
+- സ്വകാര്യത / ഉപകരണത്തിൽ
+- വിഡ്ജറ്റ്
+- Apple Watch
 - App Store · സൗജന്യം
 
 [App Store-ൽ നിന്ന് Studydown: ഫോക്കസ് നേടൂ](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

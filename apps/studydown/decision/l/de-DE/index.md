@@ -2,7 +2,7 @@
 title: "Studydown: Fokus-Timer — Display nach unten | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/de-DE/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Nimm dir Zeit für das, was dir wichtig ist, und sieh, was zusammenkommt. Studyd
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- Keine Werbung
+- Privat / auf dem Gerät
+- Widget
+- Apple Watch
 - App Store · Kostenlos
 
 [Studydown: Fokus-Timer im App Store laden](https://apps.apple.com/de/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

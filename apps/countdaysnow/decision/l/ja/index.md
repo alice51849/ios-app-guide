@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — 今日のフォーカス | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ja/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - 生産性
 - 無料で開始・一度の購入でアンロック
+- アカウント不要
 - 広告なし
+- プライベート／端末内
+- ウィジェット
+- Apple Watch
 - App Store · 無料
 
 [App Store で CountDaysNow: Event Counter を入手](https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

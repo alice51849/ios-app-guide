@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Фокус дня | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/uk/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Продуктивність
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
 - Без реклами
+- Приватно / на пристрої
+- Віджет
+- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте CountDaysNow: Event Counter з App Store](https://apps.apple.com/ua/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

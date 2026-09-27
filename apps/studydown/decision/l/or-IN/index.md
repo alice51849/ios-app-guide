@@ -2,7 +2,7 @@
 title: "Studydown: ଫୋକସ୍ — ସ୍କ୍ରିନ୍ ତଳକୁ କରି ରଖନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/or-IN/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ
+- କୌଣସି ଖାତା ନାହିଁ
+- କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
+- ଗୋପନୀୟ / ଉପକରଣରେ
+- ଉଇଜେଟ
+- Apple Watch
 - App Store · ମାଗଣା
 
 [App Store ରୁ Studydown: ଫୋକସ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

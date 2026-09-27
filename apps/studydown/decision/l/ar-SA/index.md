@@ -2,7 +2,7 @@
 title: "Studydown: مؤقت التركيز — ضعه وشاشته إلى الأسفل | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/ar-SA/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - الإنتاجية
 - بدء مجاني · فتح مرة واحدة
+- بدون حساب
+- بدون إعلانات
+- خاص / على الجهاز
+- عنصر واجهة
+- Apple Watch
 - App Store · مجاني
 
 [احصل على Studydown: مؤقت التركيز من App Store](https://apps.apple.com/sa/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

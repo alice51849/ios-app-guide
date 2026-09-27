@@ -2,7 +2,7 @@
 title: "Studydown: फोकस टाइमर — स्क्रीन खाली करून ठेवा | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/mr-IN/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत
+- खाते नाही
+- जाहिराती नाहीत
+- खाजगी / उपकरणावर
+- विजेट
+- Apple Watch
 - App Store · मोफत
 
 [App Store वरून Studydown: फोकस टाइमर मिळवा](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

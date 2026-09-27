@@ -2,7 +2,7 @@
 title: "Studydown: Учёт времени — Положите экраном вниз | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/ru/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Работа и организация
 - Бесплатно начать · разовая разблокировка
+- Без учётной записи
+- Без рекламы
+- Лично / на устройстве
+- Виджет
+- Apple Watch
 - App Store · Бесплатно
 
 [Установить Studydown: Учёт времени в App Store](https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

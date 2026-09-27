@@ -2,7 +2,7 @@
 title: "Studydown: Cronòmetre — Deixa’l de cara avall | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/ca/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Fes lloc al que t'importa i descobreix el temps que hi dediques. Amb Studydown p
 
 - Productivitat
 - Inici gratuït
+- Sense compte
+- Sense anuncis
+- Privat / en el dispositiu
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Descarrega Studydown: Cronòmetre a l’App Store](https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

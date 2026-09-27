@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pl",
-  "dateModified": "2026-09-26",
-  "content_digest": "cacb1e52e7622663d69239ffb608360a9ca90596e885d8f246d7745d28ba9986",
-  "generation_digest": "0beec96528e5108aa4a66cf970d3839a3eb95b2f50085c5b06283b433e8185dc",
+  "dateModified": "2026-09-27",
+  "content_digest": "3a34c66807b8fb7570885bbb6c0755378e6f442696ccf5273df7f2015977a0b6",
+  "generation_digest": "b9ae74429426eff80732e1d5ce844d1c3366b25b14f1fbc60cc417c1be2efb3c",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -535,17 +535,31 @@
       "purchase_label": "Darmowe na start · jednorazowe odblokowanie",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads"
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Bez reklam"
+        "Bez konta",
+        "Bez reklam",
+        "Prywatne / na urządzeniu"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widżet",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Produktywność",
         "Darmowe na start · jednorazowe odblokowanie",
+        "Bez konta",
         "Bez reklam",
+        "Prywatne / na urządzeniu",
+        "Widżet",
+        "Apple Watch",
         "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/countdaysnow.html",
@@ -2596,13 +2610,32 @@
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Darmowe na start · jednorazowe odblokowanie",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Bez konta",
+        "Bez reklam",
+        "Prywatne / na urządzeniu"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widżet",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Produktywność",
         "Darmowe na start · jednorazowe odblokowanie",
+        "Bez konta",
+        "Bez reklam",
+        "Prywatne / na urządzeniu",
+        "Widżet",
+        "Apple Watch",
         "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pl/studydown.html",

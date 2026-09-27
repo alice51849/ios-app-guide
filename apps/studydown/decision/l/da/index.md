@@ -2,7 +2,7 @@
 title: "Studydown: Tidsregistrering — Læg den med skærmen nedad | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/da/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Giv det vigtige din opmærksomhed, og se tiden, du lægger i det. Studydown regi
 
 - Produktivitet
 - Gratis at komme i gang
+- Ingen konto
+- Ingen reklamer
+- Privat / på enheden
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Hent Studydown: Tidsregistrering i App Store](https://apps.apple.com/dk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Studydown: ಫೋಕಸ್ — ಪರದೆ ಕೆಳಮುಖವಾಗಿ ಇಡಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/kn-IN/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - ಉತ್ಪಾದಕತೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
+- ವಿಜೆಟ್
+- Apple Watch
 - App Store · ಉಚಿತ
 
 [App Store ನಲ್ಲಿ Studydown: ಫೋಕಸ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

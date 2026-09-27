@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Dnevni fokus | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/hr/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Produktivnost
 - Besplatno za početak
+- Bez računa
 - Bez oglasa
+- Privatno / na uređaju
+- Widget
+- Apple Watch
 - App Store · Besplatno
 
 [Preuzmite CountDaysNow: Event Counter u App Storeu](https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

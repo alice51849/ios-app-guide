@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Dagfocus | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/nl-NL/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
 - Geen advertenties
+- Privé / op apparaat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Download CountDaysNow: Event Counter in de App Store](https://apps.apple.com/nl/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

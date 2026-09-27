@@ -2,7 +2,7 @@
 title: "Studydown: Odak Sayacı — Yüzüstü bırak | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/tr/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
+- Reklam yok
+- Gizli / cihazda
+- Araç takımı
+- Apple Watch
 - App Store · Ücretsiz
 
 [Studydown: Odak Sayacı uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Studydown: Đếm giờ tập trung — Úp màn hình xuống | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/vi/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Dành thời gian cho điều quan trọng và nhìn thấy nỗ lực của b�
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
+- Không quảng cáo
+- Riêng tư / trên thiết bị
+- Tiện ích
+- Apple Watch
 - App Store · Miễn phí
 
 [Tải Studydown: Đếm giờ tập trung trên App Store](https://apps.apple.com/vn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

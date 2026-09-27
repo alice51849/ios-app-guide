@@ -2,7 +2,7 @@
 title: "Studydown: Pencatat Waktu — Telungkupkan | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/id/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Luangkan waktu untuk hal yang penting dan lihat hasil usahamu. Studydown mencata
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
+- Tanpa iklan
+- Privat / di perangkat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Dapatkan Studydown: Pencatat Waktu di App Store](https://apps.apple.com/id/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

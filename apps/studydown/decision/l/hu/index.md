@@ -2,7 +2,7 @@
 title: "Studydown: Időmérés — Fordítsd képernyővel lefelé | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/hu/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Szánj időt arra, ami fontos, és lásd, mennyit tettél érte. A Studydown a p
 
 - Produktivitás
 - Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
+- Privát / eszközön tárolt
+- Widget
+- Apple Watch
 - App Store · Ingyenes
 
 [Töltse le a(z) Studydown: Időmérés appot az App Store-ból](https://apps.apple.com/hu/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

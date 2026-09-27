@@ -2,7 +2,7 @@
 title: "Studydown: Облік часу — Покладіть екраном донизу | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/uk/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Продуктивність
 - Безкоштовно для початку · разове розблокування
+- Без облікового запису
+- Без реклами
+- Приватно / на пристрої
+- Віджет
+- Apple Watch
 - App Store · Безкоштовно
 
 [Завантажте Studydown: Облік часу з App Store](https://apps.apple.com/ua/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

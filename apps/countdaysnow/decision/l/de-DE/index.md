@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Tagesfokus | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/de-DE/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
 - Keine Werbung
+- Privat / auf dem Gerät
+- Widget
+- Apple Watch
 - App Store · Kostenlos
 
 [CountDaysNow: Event Counter im App Store laden](https://apps.apple.com/de/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Studydown: Timer de foco — Vire a tela para baixo | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/pt-BR/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Dê espaço ao que importa e veja o tempo que você dedica a isso. O Studydown r
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Sem conta
+- Sem anúncios
+- Privado / no dispositivo
+- Widget
+- Apple Watch
 - App Store · Grátis
 
 [Baixe Studydown: Timer de foco na App Store](https://apps.apple.com/br/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

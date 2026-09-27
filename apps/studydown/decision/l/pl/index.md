@@ -2,7 +2,7 @@
 title: "Studydown: Pomiar czasu — Połóż ekranem w dół | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/pl/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Znajdź chwilę na to, co ważne, i zobacz, ile w to wkładasz. Studydown zapisu
 
 - Produktywność
 - Darmowe na start · jednorazowe odblokowanie
+- Bez konta
+- Bez reklam
+- Prywatne / na urządzeniu
+- Widżet
+- Apple Watch
 - App Store · Bezpłatnie
 
 [Pobierz Studydown: Pomiar czasu z App Store](https://apps.apple.com/pl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

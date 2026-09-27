@@ -2,7 +2,7 @@
 title: "Studydown: Cronómetro — Dale la vuelta | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/es-ES/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Dedica tiempo a lo que te importa y descubre cómo se acumula tu esfuerzo. Study
 
 - Productividad
 - Gratis para empezar · desbloqueo único
+- Sin cuenta
+- Sin anuncios
+- Privado / en el dispositivo
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Consigue Studydown: Cronómetro en el App Store](https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Studydown: Face-Down Timer — Face-down activity time ledger | iOS App"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/en-AU/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Make room for what matters, then see the time you put into it. Studydown turns a
 
 - Productivity
 - Free to start · one-time unlock
+- No account
+- No ads
+- Private / on-device
+- Widget
+- Apple Watch
 - App Store · Free
 
 [Get Studydown: Face-Down Timer on the App Store](https://apps.apple.com/au/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

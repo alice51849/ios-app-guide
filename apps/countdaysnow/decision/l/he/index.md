@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — המיקוד היומי | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/he/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - פרודוקטיביות
 - התחלה ללא תשלום
+- ללא חשבון
 - ללא פרסומות
+- פרטי / במכשיר
+- וידג'ט
+- Apple Watch
 - App Store · בחינם
 
 [הורידו את CountDaysNow: Event Counter מה-App Store](https://apps.apple.com/il/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

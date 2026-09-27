@@ -2,7 +2,7 @@
 title: "Studydown: Urenregistratie — Leg hem omgekeerd neer | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/nl-NL/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Maak tijd voor wat je belangrijk vindt en zie wat je erin steekt. Studydown houd
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
+- Geen advertenties
+- Privé / op apparaat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Download Studydown: Urenregistratie in de App Store](https://apps.apple.com/nl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

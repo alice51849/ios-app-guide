@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — আজকের ফোকাস | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/bn-BD/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,11 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - উৎপাদনশীলতা
 - বিনামূল্যে শুরু
+- কোনও অ্যাকাউন্ট নেই
 - কোনও বিজ্ঞাপন নেই
+- গোপনীয় / ডিভাইসে
+- উইজেট
+- Apple Watch
 
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে CountDaysNow: Event Counter-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 

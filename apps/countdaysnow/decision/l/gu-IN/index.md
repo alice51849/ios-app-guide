@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — આજનું ધ્યાન | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/gu-IN/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - ઉત્પાદકતા
 - મફત શરૂઆત
+- કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
+- ખાનગી / ઉપકરણ પર
+- વિજેટ
+- Apple Watch
 - App Store · મફત
 
 [App Store પરથી CountDaysNow: Event Counter મેળવો](https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

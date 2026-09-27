@@ -2,7 +2,7 @@
 title: "Studydown: Timer focus — Mettilo a faccia in giù | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/it/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Dedica tempo a ciò che conta e guarda i tuoi impegni prendere forma. Studydown 
 
 - Produttività
 - Gratis per iniziare · sblocco unico
+- Nessun account
+- Nessuna pubblicità
+- Privato / su dispositivo
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Scarica Studydown: Timer focus sull'App Store](https://apps.apple.com/it/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

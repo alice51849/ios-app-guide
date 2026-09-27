@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Päivän fokus | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/fi/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
 - Ei mainoksia
+- Yksityinen / laitteella
+- Widget
+- Apple Watch
 - App Store · Ilmainen
 
 [Lataa CountDaysNow: Event Counter App Storesta](https://apps.apple.com/fi/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

@@ -2,7 +2,7 @@
 title: "Studydown: Meranie času — Polož ho displejom nadol | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/sk/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Nájdite si čas na to, na čom vám záleží, a uvidíte svoj pokrok. Studydow
 
 - Produktivita
 - Zadarmo na začiatok
+- Bez účtu
+- Bez reklám
+- Súkromné / v zariadení
+- Widget
+- Apple Watch
 - App Store · Zadarmo
 
 [Stiahnuť Studydown: Meranie času v App Store](https://apps.apple.com/sk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

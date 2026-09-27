@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Fokus Harian · Arah Pribadi | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/id/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Tanpa iklan
+- Privat / di perangkat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Dapatkan CountDaysNow: Event Counter di App Store](https://apps.apple.com/id/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

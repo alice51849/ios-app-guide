@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — 每日聚焦 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/zh-Hans/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - 效率
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
+- 私密 / 设备本地
+- 小组件
+- Apple Watch
 - App Store · 免费
 
 [在 App Store 获取 CountDaysNow: Event Counter](https://apps.apple.com/cn/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

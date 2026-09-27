@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Trọng tâm hôm nay | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/vi/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
 - Không quảng cáo
+- Riêng tư / trên thiết bị
+- Tiện ích
+- Apple Watch
 - App Store · Miễn phí
 
 [Tải CountDaysNow: Event Counter trên App Store](https://apps.apple.com/vn/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

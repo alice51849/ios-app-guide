@@ -2,7 +2,7 @@
 title: "Studydown : Chronomètre — Écran contre la table | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/fr-FR/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Un projet, un livre, une passion : voyez le temps que vous leur consacrez. Study
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Sans compte
+- Sans publicité
+- Privé / sur l’appareil
+- Widget
+- Apple Watch
 - App Store · Gratuit
 
 [Obtenir Studydown : Chronomètre sur l'App Store](https://apps.apple.com/fr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

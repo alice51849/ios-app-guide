@@ -2,7 +2,7 @@
 title: "Studydown: Ajastin — Käännä se näyttö alaspäin | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/fi/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Varaa aikaa tärkeille asioille ja näe, mihin se kuluu. Studydown kirjaa projek
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
+- Ei mainoksia
+- Yksityinen / laitteella
+- Widget
+- Apple Watch
 - App Store · Ilmainen
 
 [Lataa Studydown: Ajastin App Storesta](https://apps.apple.com/fi/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

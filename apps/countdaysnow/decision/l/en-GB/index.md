@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Countdown Plan: Work Backwards | iOS App"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/en-GB/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ Plan backwards from the dates that matter. Countdown Plan gives any event its ow
 
 - Productivity
 - Free to start · one-time unlock
+- No account
 - No adverts
+- Private / on-device
+- Widget
+- Apple Watch
 - App Store · Free
 
 [Get CountDaysNow: Event Counter on the App Store](https://apps.apple.com/gb/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

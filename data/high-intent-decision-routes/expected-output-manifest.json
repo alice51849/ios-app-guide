@@ -1,16 +1,13 @@
 {
-  "abstained_pairs": 2438,
-  "app_count": 50,
-  "candidate_app_locale_pairs": 2500,
-  "creative_count": 50,
+  "abstained_pairs": 2536,
+  "app_count": 52,
+  "candidate_app_locale_pairs": 2600,
+  "creative_count": 52,
   "current_inventory": {
     "app_keys_sha256": "1e906fd84a3c37a87540caa5b0bfa5093a3eb87e6cc052c2451f7146a9ff7a42",
-    "copy_sha256": "362bcd0160e1336cb8cfe82cceb5e92d43380ba7dee4c67d0ba7cde71320f853",
-    "missing_route_app_keys": [
-      "countdaysnow",
-      "studydown"
-    ],
-    "missing_route_app_keys_sha256": "0e43fdf14e9b1772c9283021a4860b5d80000ed7c6d20517b87bf9bdd933c2b6",
+    "copy_sha256": "1cc42389111a6236822571cb9d4da144e2afef2f80371d87c32d55630b0419ba",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 52
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
@@ -27,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "89f102819991b00bd0b8c308ef42463a071213838fcb5f28cd2f88295bb25bbc",
+      "generated_sha256": "4270f439d06cacb24e0ad822d5c68be47784e66c0895df108dd439047f51a09f",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "91d155c6032579e42b00c812e72530b110bef6ec9be9fce1a7d3804ba4020fa1",
+      "generated_sha256": "666a56ec3e1b06a27781ef1d4d0a97229513a1ac7a1f03cc7c90d9e45550cbfc",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -65,6 +62,11 @@
       "generated_sha256": "2f2bb3787181cdba5fab121207a570cbe7d9df55741b98b8d98873f179bcfeca",
       "kind": "route_html",
       "relative_path": "en-US/decide/caldaily/save-name-search-calculation-history.html"
+    },
+    {
+      "generated_sha256": "517c0827f637f6806fd5b59df2a79563f4731f2e2066b7f0d7b7aa13505ab886",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/countdaysnow/countdown-that-plans-steps-before-each-date.html"
     },
     {
       "generated_sha256": "91b18bb8d44b5f37069afc47478e1dfc7662d0c7be29d93f833dcfe8c917b79d",
@@ -247,6 +249,11 @@
       "relative_path": "en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
     },
     {
+      "generated_sha256": "fd4c53e54c251778e150ad052b64d3a68af0267f18c22c4e32f4127598a67fa1",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html"
+    },
+    {
       "generated_sha256": "71fda9f634c6de2f67fe0d4f6a7ce91bd8c81f7dcd656180d49443404f913ded",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html"
@@ -307,7 +314,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "ad319003422e01f144a86512f304e31e91d54cc9685403396b6ab6c1f76a811f",
+      "generated_sha256": "8098597a0ef93310ec8e13486aea7f842806f116d5dd8ce4ad842d42d395ea22",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -354,17 +361,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "b12fe0f67492e1b359d1e7349b2e502ecb99a8be9f0e40be1bc1817fe0b9ced3",
-    "copy_sha256": "c37a67cb3d51ef165e723f0d80db3253c827f49b7f814e4f68e0a4adea09b991",
+    "app_keys_sha256": "1e906fd84a3c37a87540caa5b0bfa5093a3eb87e6cc052c2451f7146a9ff7a42",
+    "copy_sha256": "1cc42389111a6236822571cb9d4da144e2afef2f80371d87c32d55630b0419ba",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 50,
+    "public_apps": 52,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "e3e11234249cc956dd030281d1721c8d9dbb878b38be651d7cd6ac8d54d5ca33",
+  "manifest_digest": "b7e4bb67202e026409e4629f9dcade7e19491cdae09e921c2dbdca3909e1fe3b",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "1e3c0429c646b4e1f5f0e0f893c9da990f45d0cddb629bbe91d2012f6ca3c44e",
-  "release_state": "degraded_missing_route_copy",
-  "route_count": 62,
+  "release_contract_digest": "b3244776c378c90097a1f0b00826167c45e0274e0e9189f2fcbfff0a4de6e926",
+  "release_state": "exact",
+  "route_count": 64,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -467,6 +474,23 @@
       "route_id": "en-US:caldaily:save-name-search-calculation-history",
       "route_slug": "save-name-search-calculation-history",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/caldaily/save-name-search-calculation-history.html"
+    },
+    {
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "app_store_url": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=geo_learn&mt=8",
+      "campaign_token": "geo_learn",
+      "content_type": "workflow",
+      "creative_digest": "eaffe555e50f84602aed7e389b381123bf857d0b7af9229e7225591dd3554e72",
+      "creative_id": "countdaysnow:countdown-that-plans-steps-before-each-date:workflow",
+      "intent_type": "workflow",
+      "locale": "en-US",
+      "output_sha256": "517c0827f637f6806fd5b59df2a79563f4731f2e2066b7f0d7b7aa13505ab886",
+      "record_digest": "6fbc868cf0ea097cba963dfc5623ff7cf1d5e26fde157ae76f67d6c2141004e2",
+      "relative_path": "en-US/decide/countdaysnow/countdown-that-plans-steps-before-each-date.html",
+      "route_id": "en-US:countdaysnow:countdown-that-plans-steps-before-each-date",
+      "route_slug": "countdown-that-plans-steps-before-each-date",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/countdaysnow/countdown-that-plans-steps-before-each-date.html"
     },
     {
       "app_key": "cvdesk",
@@ -1081,6 +1105,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
     },
     {
+      "app_key": "studydown",
+      "app_store_id": "6807335593",
+      "app_store_url": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "91759e7dd930b32f56df82c216fa7f5801ae7f00d27db26113907ef37ea99fa7",
+      "creative_id": "studydown:focus-timer-that-stops-when-you-pick-up-your-phone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "fd4c53e54c251778e150ad052b64d3a68af0267f18c22c4e32f4127598a67fa1",
+      "record_digest": "e5976e077e83bdf68477e8468b572b7b218eb4bc76310db0944c16cff813df6d",
+      "relative_path": "en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html",
+      "route_id": "en-US:studydown:focus-timer-that-stops-when-you-pick-up-your-phone",
+      "route_slug": "focus-timer-that-stops-when-you-pick-up-your-phone",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html"
+    },
+    {
       "app_key": "tripbee",
       "app_store_id": "6787754435",
       "app_store_url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
@@ -1423,5 +1464,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "fc9234e87dfdad34e430a981e347ded3b64e10fb3a8d177b777c475447630873"
+  "source_contract_digest": "ffc246a18b47353990cc942d9cad129d030332b3ddd4b7f1211976e6d9a3ef84"
 }

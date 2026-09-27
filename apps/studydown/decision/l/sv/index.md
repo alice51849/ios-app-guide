@@ -2,7 +2,7 @@
 title: "Studydown: Tidtagning — Lägg den med skärmen nedåt | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/sv/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Ge plats åt det som betyder något och se tiden du lägger på det. Studydown r
 
 - Produktivitet
 - Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- Privat / på enheten
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Hämta Studydown: Tidtagning i App Store](https://apps.apple.com/se/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

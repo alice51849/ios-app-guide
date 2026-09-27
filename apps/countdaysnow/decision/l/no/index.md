@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Dagens fokus · Retning | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/no/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - Produktivitet
 - Gratis å starte
+- Ingen konto
 - Ingen annonser
+- Privat / på enheten
+- Widget
+- Apple Watch
 - App Store · Gratis
 
 [Last ned CountDaysNow: Event Counter fra App Store](https://apps.apple.com/no/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

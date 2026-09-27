@@ -2,7 +2,7 @@
 title: "Studydown : Suivi du temps — Écran contre la table | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/fr-CA/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ Faites de la place à ce qui compte pour vous. Studydown garde une trace du temp
 
 - Productivité
 - Gratuit au départ · déblocage unique
+- Aucun compte
+- Aucune publicité
+- Privé / sur l'appareil
+- Widget
+- Apple Watch
 - App Store · Gratuit
 
 [Obtenir Studydown : Suivi du temps sur l'App Store](https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

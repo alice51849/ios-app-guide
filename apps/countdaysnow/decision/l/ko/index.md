@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — 오늘의 초점 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ko/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,11 @@ publisher: "Lumi Studio"
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 계정 없음
 - 광고 없음
+- 프라이빗 / 기기 내
+- 위젯
+- Apple Watch
 - App Store · 무료
 
 [App Store에서 CountDaysNow: Event Counter 받기](https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8)

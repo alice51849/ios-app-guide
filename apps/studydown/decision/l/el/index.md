@@ -2,7 +2,7 @@
 title: "Studydown: Χρονόμετρο — Ακούμπησέ το με την οθόνη κάτω | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/el/index.html"
-modified: "2026-09-26"
+modified: "2026-09-27"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,6 +15,11 @@ publisher: "Lumi Studio"
 
 - Παραγωγικότητα
 - Δωρεάν για αρχή
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
+- Ιδιωτικό / στη συσκευή
+- Γραφικό στοιχείο
+- Apple Watch
 - App Store · Δωρεάν
 
 [Αποκτήστε το Studydown: Χρονόμετρο από το App Store](https://apps.apple.com/gr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)

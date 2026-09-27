@@ -2728,8 +2728,18 @@ class _IncrementalHead(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.canonicals: list[str] = []
         self.alternates: dict[str, str] = {}
+        self.refreshes: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "meta":
+            values = dict(attrs)
+            if str(values.get("http-equiv") or "").lower() == "refresh":
+                content = str(values.get("content") or "")
+                for part in content.split(";")[1:]:
+                    key, _, url = part.strip().partition("=")
+                    if key.strip().lower() == "url":
+                        self.refreshes.append(url.strip().strip("'\""))
+            return
         if tag != "link":
             return
         values = dict(attrs)
@@ -2742,6 +2752,33 @@ class _IncrementalHead(HTMLParser):
             if locale in self.alternates:
                 raise ValueError(f"Duplicate incremental hreflang: {locale}")
             self.alternates[locale] = href
+
+
+def _incremental_redirect_target(
+    head: _IncrementalHead,
+    output_dir: Path,
+    virtual: dict[PurePosixPath, str],
+) -> PurePosixPath | None:
+    """A meta-refresh stub may canonicalize to the page it forwards to.
+
+    apps/countdaysnow/index.html forwards to l/en-US/ and says so in its
+    canonical; generators that touch it (store reach, decision links) put it
+    in every incremental release, where the self-canonical rule blocked the
+    whole deployment (2026-09-27). Only an exact, existing, single target
+    counts; anything else is still canonical drift.
+    """
+    if len(head.canonicals) != 1 or len(head.refreshes) != 1:
+        return None
+    try:
+        canonical = _incremental_url_path(head.canonicals[0])
+        refresh = _incremental_url_path(head.refreshes[0])
+    except ValueError:
+        return None
+    if canonical != refresh:
+        return None
+    if canonical not in virtual and not _incremental_target(output_dir, canonical).is_file():
+        return None
+    return canonical
 
 
 def _incremental_target(root: Path, relative: PurePosixPath) -> Path:
@@ -2877,8 +2914,11 @@ def _incremental_fragment_plan(
         else:
             head = _IncrementalHead()
             head.feed(text)
-            if (len(head.canonicals) != 1
-                    or _incremental_url_path(head.canonicals[0]) != relative):
+            if (
+                (len(head.canonicals) != 1
+                 or _incremental_url_path(head.canonicals[0]) != relative)
+                and _incremental_redirect_target(head, output_dir, virtual) is None
+            ):
                 raise ValueError(f"Incremental index canonical drift: {relative}")
             for locale, url in head.alternates.items():
                 target_relative = _incremental_url_path(url)

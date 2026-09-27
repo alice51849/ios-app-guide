@@ -942,6 +942,46 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                         conflicted_gallery.relative_to(pages).as_posix()
                     },
                 )
+            # Since 09-12 an unchanged gallery keeps its own older date. When
+            # the manifest states that per-gallery date it must pass, but the
+            # date still has to match the manifest exactly and can never be
+            # newer than the manifest itself (2026-09-27 geo-daily stall).
+            def manifest_with_gallery_date(value: str) -> None:
+                document = manifest_document()
+                for gallery in document["galleries"]:
+                    if gallery["locale"] == conflicted_locale:
+                        gallery["dateModified"] = value
+                manifest.write_text(
+                    json.dumps(document, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+
+            def generate_with_conflicted_gallery() -> None:
+                gen_sitemap_lastmod.generate(
+                    pages,
+                    state_path=state,
+                    today=modified,
+                    validation_time=datetime(
+                        2026, 8, 29, 0, 21, tzinfo=timezone.utc,
+                    ),
+                    history_dates={},
+                    dirty_paths={
+                        conflicted_gallery.relative_to(pages).as_posix()
+                    },
+                )
+
+            manifest_with_gallery_date("2026-08-26")
+            with self.assertRaisesRegex(
+                ValueError, "gallery date does not match manifest",
+            ):
+                generate_with_conflicted_gallery()
+            manifest_with_gallery_date("2026-08-29")
+            with self.assertRaisesRegex(
+                ValueError, "Invalid publisher visual gallery contract",
+            ):
+                generate_with_conflicted_gallery()
+            manifest_with_gallery_date("2026-08-27")
+            generate_with_conflicted_gallery()
             conflicted_gallery.write_text(
                 gallery_document,
                 encoding="utf-8",

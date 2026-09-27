@@ -749,12 +749,18 @@ def _gallery_manifest_record(
     locale: str,
     source: str,
     site: str = SITE,
+    modified: str | None = None,
 ) -> dict[str, str]:
-    return {
+    record = {
         "locale": locale,
         "gallery_url": gallery_url(locale, site),
         "sha256": hashlib.sha256(source.encode("utf-8")).hexdigest(),
     }
+    # An unchanged gallery keeps its own older date (_gallery_modified); the
+    # manifest has to say so, or the sitemap gate reads the generation date.
+    if modified is not None:
+        record["dateModified"] = modified
+    return record
 
 
 def _content_digest(records: list[dict[str, Any]]) -> str:
@@ -960,7 +966,7 @@ def build(
         write_text_if_changed(root_gallery_path, root_gallery_source)
     )
     manifest_galleries.append(
-        _gallery_manifest_record("en", root_gallery_source, site)
+        _gallery_manifest_record("en", root_gallery_source, site, gallery_dates["en"])
     )
     for locale in OFFICIAL_LOCALES:
         gallery_path = pages / gallery_relative_path(locale)
@@ -981,7 +987,7 @@ def build(
             write_text_if_changed(gallery_path, gallery_source)
         )
         manifest_galleries.append(
-            _gallery_manifest_record(locale, gallery_source, site)
+            _gallery_manifest_record(locale, gallery_source, site, gallery_dates[locale])
         )
 
     manifest = {

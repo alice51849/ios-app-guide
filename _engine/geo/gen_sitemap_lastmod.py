@@ -520,6 +520,14 @@ def _validate_publisher_visual_sitemap(
             "gallery_url": gallery_url,
             "sha256": str(digest),
         }
+        if "dateModified" in gallery:
+            gallery_date = gallery["dateModified"]
+            if (
+                not _valid_date(gallery_date, today=max_date)
+                or not _valid_date(gallery_date, today=modified)
+            ):
+                raise ValueError("Invalid publisher visual gallery contract")
+            normalized["dateModified"] = str(gallery_date)
         galleries_by_locale[locale] = normalized
         galleries_by_url[gallery_url] = normalized
 
@@ -615,7 +623,7 @@ def _validate_publisher_visual_sitemap(
         declared_dates = DATE_MODIFIED_RE.findall(
             target.read_text(encoding="utf-8")
         )
-        if declared_dates != [modified]:
+        if declared_dates != [gallery.get("dateModified", modified)]:
             raise ValueError(
                 "Publisher visual gallery date does not match manifest: "
                 f"{relative}"

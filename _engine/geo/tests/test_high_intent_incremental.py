@@ -153,6 +153,37 @@ class HighIntentIncrementalTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "index hreflang drift"):
             self.materialize(["en-US/index.html"])
 
+    def test_redirect_stub_may_canonicalize_to_its_existing_target(self):
+        target = self.pages / "apps/sample/l/en-US/index.html"
+        target.parent.mkdir(parents=True)
+        target.write_text(f'<link rel="canonical" href="{routes.SITE}/apps/sample/l/en-US/">')
+        stub = self.pages / "apps/sample/index.html"
+        forward = f"{routes.SITE}/apps/sample/l/en-US/"
+        stub.write_text(
+            f'<meta http-equiv="refresh" content="0;url={forward}">'
+            f'<link rel="canonical" href="{forward}">'
+        )
+        self.assertEqual(1, self.materialize(["apps/sample/index.html"])["index_fragments"])
+        # A refresh that forwards somewhere else than the canonical is drift.
+        stub.write_text(
+            f'<meta http-equiv="refresh" content="0;url={routes.SITE}/apps/other/">'
+            f'<link rel="canonical" href="{forward}">'
+        )
+        with self.assertRaisesRegex(ValueError, "index canonical drift"):
+            self.materialize(["apps/sample/index.html"])
+        # A stub forwarding to a page that does not exist is drift.
+        missing = f"{routes.SITE}/apps/sample/l/fr-FR/"
+        stub.write_text(
+            f'<meta http-equiv="refresh" content="0;url={missing}">'
+            f'<link rel="canonical" href="{missing}">'
+        )
+        with self.assertRaisesRegex(ValueError, "index canonical drift"):
+            self.materialize(["apps/sample/index.html"])
+        # Without a refresh, pointing elsewhere is still drift.
+        stub.write_text(f'<link rel="canonical" href="{forward}">')
+        with self.assertRaisesRegex(ValueError, "index canonical drift"):
+            self.materialize(["apps/sample/index.html"])
+
     def test_base_english_index_uses_the_existing_indexation_locale_contract(self):
         index = self.pages / "api/index.html"
         index.parent.mkdir()

@@ -3384,8 +3384,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/au/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Zipbox: Unzip RAR, ZIP & 7z",
-        "description": "Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on",
+        "name": "Zipbox",
+        "description": "Zipbox — Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, create ZIP or 7z, and pay once with every feature included. Paid download · All features included · No IAP or subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3400,7 +3400,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806776579"
           },
-          "name": "Zipbox: Unzip RAR, ZIP & 7z",
+          "name": "Zipbox",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/au/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
@@ -3411,11 +3411,11 @@
             "target": "https://apps.apple.com/au/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/zipbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-AU/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "en-AU",
-          "description": "Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on",
+          "description": "Zipbox — Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, create ZIP or 7z, and pay once with every feature included. Paid download · All features included · No IAP or subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-AU.jsonld#offer-zipbox"
           },

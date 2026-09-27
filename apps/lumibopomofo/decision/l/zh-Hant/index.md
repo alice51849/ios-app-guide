@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 免帳號
 - 無廣告
 - App Store · 免費
-- ★ 4.6/5 · 7
+- ★ 4.6/5 · 8
 
 [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=geo_pick&mt=8)
 

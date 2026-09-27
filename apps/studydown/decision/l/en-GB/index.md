@@ -1,5 +1,5 @@
 ---
-title: "Studydown: Face-Down Timer — Face-down activity time ledger | iOS App"
+title: "focus timer that starts when you put your phone face down"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/en-GB/index.html"
 modified: "2026-09-27"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Studydown: Face-Down Timer — Face-down activity time ledger | iOS App
+# focus timer that starts when you put your phone face down
 
-A little time for a project, a book or a skill you want to develop. Studydown helps you see those moments adding up, with a simple gesture: placing your phone face down. Select an activity, tap to start and rest your phone on a steady surface, screen down. Keep Studydown open while timing. When you pick the phone up, counting pauses after your chosen grace period. Leaving the app stops further time being recorded. • Name, colour and arrange activities to suit your day. Add or amend entries manually. • Review today, this week, consecutive days and how your time is split between activities. • Set weekly goals and deadlines. Choose daily reminders or an interval of several hours. • Save records in CSV format. Pro also provides JSON backup and restore. The free allowance covers up to 3 activities and 5 recorded minutes in total, rather than 5 minutes each day. Sessions already started are kept in full. A one-off Pro purchase unlocks unlimited activities and recording, advanced statistics, goals, deadlines, widgets, Apple Watch and backups. No subscription. Timing and records stay on your device. No account, no ads; you decide whether to share exported files. Purchasing and restoring purchases use Apple services. Every face-down session keeps a Focus Signature: phone pickups and average uninterrupted time. Give each deadline an effort target to see logged Activity time and the daily pace still required. Contact: hourstag.app@gmail.com
+Studydown — A little time for a project, a book or a skill you want to develop. Free to start · One-time unlock · No subscription.
 
 - Productivity
 - Free to start · one-time unlock
@@ -22,8 +22,8 @@ A little time for a project, a book or a skill you want to develop. Studydown he
 - Apple Watch
 - App Store · Free
 
-[Get Studydown: Face-Down Timer on the App Store](https://apps.apple.com/gb/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)
+[Get Studydown on the App Store →](https://apps.apple.com/gb/app/id6807335593?pt=118326163&ct=geo_pick&mt=8)
 
-[Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/studydown.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

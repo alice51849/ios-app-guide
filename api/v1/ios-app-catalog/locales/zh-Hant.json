@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-27",
-  "content_digest": "ae22b92d75314da4d0d7b89f59a979b91399258c881ba2ab6c82c0630f8391ab",
+  "content_digest": "c7c0af616e342c8df6e43c9ed4de0bddc1921437db583c9c84b037b6507a1a5f",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -92,7 +92,8 @@
         "文件掃描",
         "文字辨識",
         "論文閱讀",
-        "讀文件"
+        "讀文件",
+        "提示詞管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -130,7 +131,9 @@
         "考試準備",
         "練習",
         "學習計劃",
-        "成績追蹤"
+        "成績追蹤",
+        "多益",
+        "英文檢定"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -460,7 +463,8 @@
         "月事",
         "好朋友",
         "生理紀錄",
-        "白帶"
+        "白帶",
+        "經期 追蹤"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -744,7 +748,8 @@
         "生活記帳",
         "出國花費",
         "離線記帳",
-        "自訂匯率"
+        "自訂匯率",
+        "出國預算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1203,7 +1208,8 @@
         "塗鴉",
         "點讀",
         "識字",
-        "拼字"
+        "拼字",
+        "兒童 字母"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1530,7 +1536,10 @@
         "上學",
         "整理",
         "責任感",
-        "星星"
+        "星星",
+        "兒童 習慣",
+        "睡前 習慣",
+        "獎勵 貼紙"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1682,7 +1691,9 @@
         "氣溫",
         "保暖",
         "野餐",
-        "出遊"
+        "出遊",
+        "穿搭 天氣",
+        "天氣 穿搭"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1737,7 +1748,8 @@
         "客戶紀錄",
         "離線本機處理",
         "批次作業",
-        "機密安全傳送"
+        "機密安全傳送",
+        "pdf 遮蔽"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1851,7 +1863,8 @@
         "電話",
         "車輛保養",
         "家電維護",
-        "重複事項"
+        "重複事項",
+        "上次 記錄"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1961,7 +1974,9 @@
         "數據",
         "心智圖",
         "海報",
-        "大綱"
+        "大綱",
+        "重點摘要",
+        "簡報 製作"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2153,7 +2168,8 @@
         "捷徑",
         "美食",
         "購物",
-        "網頁"
+        "網頁",
+        "收藏 連結"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2640,7 +2656,8 @@
         "獎勵",
         "假期",
         "回憶",
-        "地圖"
+        "地圖",
+        "小孩 旅行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2741,7 +2758,8 @@
         "雨天",
         "提醒",
         "家庭遊",
-        "露營"
+        "露營",
+        "度假 規劃"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2862,7 +2880,9 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "網路 檢查",
+        "wifi 診斷"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

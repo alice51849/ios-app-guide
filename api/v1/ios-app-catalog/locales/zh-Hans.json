@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-27",
-  "content_digest": "ae22b92d75314da4d0d7b89f59a979b91399258c881ba2ab6c82c0630f8391ab",
+  "content_digest": "c7c0af616e342c8df6e43c9ed4de0bddc1921437db583c9c84b037b6507a1a5f",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -93,7 +93,8 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件"
+        "读文件",
+        "提示词管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -734,7 +735,8 @@
         "生活记账",
         "出国花费",
         "离线记账",
-        "自定义汇率"
+        "自定义汇率",
+        "出国预算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1882,7 +1884,8 @@
         "活动收支",
         "出租账本",
         "摊位账本",
-        "班费管理"
+        "班费管理",
+        "项目支出"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2897,7 +2900,8 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "wifi 诊断"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

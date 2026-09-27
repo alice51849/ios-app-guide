@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-26",
+  "dateModified": "2026-09-27",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -12,7 +12,7 @@
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
   "source_sha256": "8847ee9edb1873a19f47ab7f40630a1df357d775b4a4b63a5eb54c46866c1d48",
   "content_digest": "5b84e8d4cf4b67e7a12dd6abab367265dd7a982d0e1fd64bf7b06b010db7d97a",
-  "generation_digest": "dac31040a7d47c8a219688dc1df6fc686ae82cadfc20c4b0612f4b31b559f11d",
+  "generation_digest": "ed9c21659a745485db64af1145d9b06e4631ca6cd5ec96ebb28336dc09319447",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 52,
   "locale_count": 50,
@@ -22,257 +22,308 @@
     {
       "locale": "en",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/visuals/",
-      "sha256": "914328230a7d423a2e6122e1b2357ccabec94a45f428ccff5fa58403a8f74bad"
+      "sha256": "914328230a7d423a2e6122e1b2357ccabec94a45f428ccff5fa58403a8f74bad",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ar-SA/visuals/",
-      "sha256": "ef728f66d54fc0bdfa4f9570b4772e2ddaca207da6c3012739d7310dd278b1b9"
+      "sha256": "ef728f66d54fc0bdfa4f9570b4772e2ddaca207da6c3012739d7310dd278b1b9",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "1f49c8f8e2d83c42df5283dc7717a334ffc508351fb093ca98a1cb303bf05bb0"
+      "sha256": "1f49c8f8e2d83c42df5283dc7717a334ffc508351fb093ca98a1cb303bf05bb0",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ca",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ca/visuals/",
-      "sha256": "66d5ac63c0bd868ccefb2687348100cab17eaf40d4d54b4cd825b94ade8eac83"
+      "sha256": "66d5ac63c0bd868ccefb2687348100cab17eaf40d4d54b4cd825b94ade8eac83",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "cs",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/cs/visuals/",
-      "sha256": "0927e548e38a76217edb1a4061f94abf297d091f7d76253ebea5b968cbe3091a"
+      "sha256": "0927e548e38a76217edb1a4061f94abf297d091f7d76253ebea5b968cbe3091a",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "da",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/da/visuals/",
-      "sha256": "61d6b70e3bb3ad100caa373b3306255a1f04e83d4db052b2ea8cafcc897ca06d"
+      "sha256": "61d6b70e3bb3ad100caa373b3306255a1f04e83d4db052b2ea8cafcc897ca06d",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/de-DE/visuals/",
-      "sha256": "84281210e95479aecb72eb17a156216b7da01b1045bf1c81966eccf6d80dbbf7"
+      "sha256": "84281210e95479aecb72eb17a156216b7da01b1045bf1c81966eccf6d80dbbf7",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "3f9e52a346d5fd60efe1e1983a79a597a403d3f66789f28c82d0f996e2b09f34"
+      "sha256": "3f9e52a346d5fd60efe1e1983a79a597a403d3f66789f28c82d0f996e2b09f34",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-AU/visuals/",
-      "sha256": "513f270c226d5a13a86aff147690121a6f2082fd113bd0c14a1fc63d3dc55d05"
+      "sha256": "513f270c226d5a13a86aff147690121a6f2082fd113bd0c14a1fc63d3dc55d05",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-CA/visuals/",
-      "sha256": "d184f540344c487656604197f4e9bea362ef0964cd50a9bbaa38be81a4c76825"
+      "sha256": "d184f540344c487656604197f4e9bea362ef0964cd50a9bbaa38be81a4c76825",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-GB/visuals/",
-      "sha256": "254fe968139abc7927247ff1726ff6cd715f389cd7c2ca1b0aeb1d23bd8450b2"
+      "sha256": "254fe968139abc7927247ff1726ff6cd715f389cd7c2ca1b0aeb1d23bd8450b2",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/en-US/visuals/",
-      "sha256": "12a67cc2c93fc8bd2dc5ba192591836d830a5466c9b68f3620bf50b577e7dda4"
+      "sha256": "12a67cc2c93fc8bd2dc5ba192591836d830a5466c9b68f3620bf50b577e7dda4",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-ES/visuals/",
-      "sha256": "521038704898cfdf005d62520793ffaf2e85c2b2c02765752ca1604872db9db3"
+      "sha256": "521038704898cfdf005d62520793ffaf2e85c2b2c02765752ca1604872db9db3",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/es-MX/visuals/",
-      "sha256": "a40fdab1210d666d1539cd80fce9b8827ffe24adebba24e5326f27a15c94b222"
+      "sha256": "a40fdab1210d666d1539cd80fce9b8827ffe24adebba24e5326f27a15c94b222",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "fi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fi/visuals/",
-      "sha256": "e8dc334432ee029fdf71be4bae027c2c1ea33c95069e0bb20222a749fd6649b5"
+      "sha256": "e8dc334432ee029fdf71be4bae027c2c1ea33c95069e0bb20222a749fd6649b5",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-CA/visuals/",
-      "sha256": "c8a0f1f6cf0efefad59d7a601c75f21d947f3462d79c58915744a463c00add20"
+      "sha256": "c8a0f1f6cf0efefad59d7a601c75f21d947f3462d79c58915744a463c00add20",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/fr-FR/visuals/",
-      "sha256": "4d7787a9b5c1d953b97f2f7c0dc2fe1fd7bbe8f2990c3fcae1c5c6513a7c1a86"
+      "sha256": "4d7787a9b5c1d953b97f2f7c0dc2fe1fd7bbe8f2990c3fcae1c5c6513a7c1a86",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/gu-IN/visuals/",
-      "sha256": "6f58265169a4a3c39c781ee686ad53f147453558fa14996d280cba5e8e7d7704"
+      "sha256": "6f58265169a4a3c39c781ee686ad53f147453558fa14996d280cba5e8e7d7704",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "he",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/he/visuals/",
-      "sha256": "4e671b9fba8801faf553b4887f82ef4f0ac4e440c69d9d4d56fb959eba28d3d0"
+      "sha256": "4e671b9fba8801faf553b4887f82ef4f0ac4e440c69d9d4d56fb959eba28d3d0",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "hi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hi/visuals/",
-      "sha256": "a934527af323d44db5bc69fb050ede17a125ee39b3bd4ddbc2f9e7deecf56c74"
+      "sha256": "a934527af323d44db5bc69fb050ede17a125ee39b3bd4ddbc2f9e7deecf56c74",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "hr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hr/visuals/",
-      "sha256": "88ba9532fccb9f4eca5ed1427c4659a285148bcc7fb6f778dec15d2d6df8a818"
+      "sha256": "88ba9532fccb9f4eca5ed1427c4659a285148bcc7fb6f778dec15d2d6df8a818",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "hu",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/hu/visuals/",
-      "sha256": "c3c6b96368951a48b39e6dc9a1bbb5e15470fbcfab49a6c433e12f0d93289363"
+      "sha256": "c3c6b96368951a48b39e6dc9a1bbb5e15470fbcfab49a6c433e12f0d93289363",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "id",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/id/visuals/",
-      "sha256": "4c3e709407ef4e16f21964b311c6bc8fa172640b8530bc16c9590603e4c8b2ca"
+      "sha256": "4c3e709407ef4e16f21964b311c6bc8fa172640b8530bc16c9590603e4c8b2ca",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "it",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/it/visuals/",
-      "sha256": "e2f824c123e9e6762660d7cf1be267cde72df73081f8af89583bcef5f6c9081e"
+      "sha256": "e2f824c123e9e6762660d7cf1be267cde72df73081f8af89583bcef5f6c9081e",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ja",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ja/visuals/",
-      "sha256": "89024d2c04cd24ffc4760e3b68824d00847915bd3e932381040a231cec690ab7"
+      "sha256": "89024d2c04cd24ffc4760e3b68824d00847915bd3e932381040a231cec690ab7",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/kn-IN/visuals/",
-      "sha256": "a36c644d59ecae76772ac100fb9459025a38a338f960c942e223ea087d028084"
+      "sha256": "a36c644d59ecae76772ac100fb9459025a38a338f960c942e223ea087d028084",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ko",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ko/visuals/",
-      "sha256": "27b1122a6576bde0acc7cb7314ba113e088d67212282d34f95fb67a07ed4b54d"
+      "sha256": "27b1122a6576bde0acc7cb7314ba113e088d67212282d34f95fb67a07ed4b54d",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ml-IN/visuals/",
-      "sha256": "5320269ea71e2f4d8d50882f334098236faf22d279db1eb13460f7a5696d3520"
+      "sha256": "5320269ea71e2f4d8d50882f334098236faf22d279db1eb13460f7a5696d3520",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/mr-IN/visuals/",
-      "sha256": "0cc748b6c0a360da0e13dadf78a300ea40efa2d7bd4fa2668eeb1317f784debb"
+      "sha256": "0cc748b6c0a360da0e13dadf78a300ea40efa2d7bd4fa2668eeb1317f784debb",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ms",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ms/visuals/",
-      "sha256": "b5153c141c6af5b688bd1e05a05c55c20899f57218e4548d4abd9889d2a5e5b2"
+      "sha256": "b5153c141c6af5b688bd1e05a05c55c20899f57218e4548d4abd9889d2a5e5b2",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/nl-NL/visuals/",
-      "sha256": "63ac77c6b0bb6ef3003d3cd035e3c8044595b0e02356c222420670ed225dbd3a"
+      "sha256": "63ac77c6b0bb6ef3003d3cd035e3c8044595b0e02356c222420670ed225dbd3a",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "no",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/no/visuals/",
-      "sha256": "eb8a3594284775f388fd18ec0220bfc220bcbaa31e844c879c72581c479ab511"
+      "sha256": "eb8a3594284775f388fd18ec0220bfc220bcbaa31e844c879c72581c479ab511",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/or-IN/visuals/",
-      "sha256": "66fad8ccee12f280c274f257c2c31e5817cae29490249a0eff4e79080d9ef764"
+      "sha256": "66fad8ccee12f280c274f257c2c31e5817cae29490249a0eff4e79080d9ef764",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pa-IN/visuals/",
-      "sha256": "36b2fdb24cee82980565331680d67835f259281d5ebe99727fcc76be56f65f43"
+      "sha256": "36b2fdb24cee82980565331680d67835f259281d5ebe99727fcc76be56f65f43",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "pl",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pl/visuals/",
-      "sha256": "7c12e460efdc003c8d095a491cf4ca979ab9569eb3e35d4ccf4d9170d8909ad3"
+      "sha256": "7c12e460efdc003c8d095a491cf4ca979ab9569eb3e35d4ccf4d9170d8909ad3",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-BR/visuals/",
-      "sha256": "b99af2bd6a857c4f47e199f7348b53dfbc2c50c0e7ff8253eff60eff27429241"
+      "sha256": "b99af2bd6a857c4f47e199f7348b53dfbc2c50c0e7ff8253eff60eff27429241",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/pt-PT/visuals/",
-      "sha256": "806e668e3e65a53db5131f1d463152b554d837befd53fe820c9a5c32b7c99c79"
+      "sha256": "806e668e3e65a53db5131f1d463152b554d837befd53fe820c9a5c32b7c99c79",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ro",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ro/visuals/",
-      "sha256": "36b146f8b7d9ebef4ab5867d8e80f1babc7eb7b0fb6d247e4ab541c8e8da847a"
+      "sha256": "36b146f8b7d9ebef4ab5867d8e80f1babc7eb7b0fb6d247e4ab541c8e8da847a",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "c1df0818c327dc4cd0f13788393534db66cd7ffd2aedb0e3d4cef2b270a4affe"
+      "sha256": "c1df0818c327dc4cd0f13788393534db66cd7ffd2aedb0e3d4cef2b270a4affe",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "sk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sk/visuals/",
-      "sha256": "91c752c40fd362ffcd0a623132dd0fda261f90162a488171e4beaa4eb622d035"
+      "sha256": "91c752c40fd362ffcd0a623132dd0fda261f90162a488171e4beaa4eb622d035",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sl-SI/visuals/",
-      "sha256": "7f13549afa93dc8f4e430ef32400f154c461f7ff3d1de3f450a839c8a6407a8e"
+      "sha256": "7f13549afa93dc8f4e430ef32400f154c461f7ff3d1de3f450a839c8a6407a8e",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "sv",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/sv/visuals/",
-      "sha256": "97b94eb4163df476af295edc12ce2b60870922e30097861835ae5700153b62aa"
+      "sha256": "97b94eb4163df476af295edc12ce2b60870922e30097861835ae5700153b62aa",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ta-IN/visuals/",
-      "sha256": "6774139bafea61aa132be841f3e50ca973af29ab42521e2e555319e57e00dffd"
+      "sha256": "6774139bafea61aa132be841f3e50ca973af29ab42521e2e555319e57e00dffd",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/te-IN/visuals/",
-      "sha256": "a94592efac9201b2eb81ba213e655589b67dcc4b6c0b50d00884b8b6373eb811"
+      "sha256": "a94592efac9201b2eb81ba213e655589b67dcc4b6c0b50d00884b8b6373eb811",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "th",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/th/visuals/",
-      "sha256": "d91299d25d53cd65dde25b6165f3d2c2a97a2bec995343e77e975d517a326e66"
+      "sha256": "d91299d25d53cd65dde25b6165f3d2c2a97a2bec995343e77e975d517a326e66",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "tr",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/tr/visuals/",
-      "sha256": "687c0773b7ac5a71262af5c1124a419f64c1f6bb34a24f937cc4f1f768fc8733"
+      "sha256": "687c0773b7ac5a71262af5c1124a419f64c1f6bb34a24f937cc4f1f768fc8733",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "c12c673596f8f7bda3940fadbd2d083f02a5beba5136511f3a6f37cc916dfcec"
+      "sha256": "c12c673596f8f7bda3940fadbd2d083f02a5beba5136511f3a6f37cc916dfcec",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ur-PK/visuals/",
-      "sha256": "82452cb7d0e629b411b7be827596b6d4e104e579689c1115e43b6796eef2a633"
+      "sha256": "82452cb7d0e629b411b7be827596b6d4e104e579689c1115e43b6796eef2a633",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "vi",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/vi/visuals/",
-      "sha256": "311e9089fe7329c2b32ef29a8ddff7b95adee8c7828aefca04778adbecd676f1"
+      "sha256": "311e9089fe7329c2b32ef29a8ddff7b95adee8c7828aefca04778adbecd676f1",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "d39764b812982d2e269efe1c871c588101333491b060ffb64fc702aa7308cc0d"
+      "sha256": "d39764b812982d2e269efe1c871c588101333491b060ffb64fc702aa7308cc0d",
+      "dateModified": "2026-09-26"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "06727b8bfdb269a62dfc4c87de46a5d106548d0d85377efcd02ae357c3af849f"
+      "sha256": "06727b8bfdb269a62dfc4c87de46a5d106548d0d85377efcd02ae357c3af849f",
+      "dateModified": "2026-09-26"
     }
   ],
   "publisher_authored": true,

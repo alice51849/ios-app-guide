@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-09-27",
-    "contentDigest": "ae22b92d75314da4d0d7b89f59a979b91399258c881ba2ab6c82c0630f8391ab",
+    "contentDigest": "c7c0af616e342c8df6e43c9ed4de0bddc1921437db583c9c84b037b6507a1a5f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 52
@@ -37,10 +37,11 @@
         "учёба",
         "экзамен",
         "офлайн",
-        "документы"
+        "документы",
+        "аннотации pdf"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791658210",
@@ -80,10 +81,11 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель"
+        "самоучитель",
+        "toeic аудирование"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792483140",
@@ -103,10 +105,11 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы"
+        "фразы",
+        "toeic аудирование"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802423998",
@@ -343,10 +346,11 @@
         "курс",
         "офлайн",
         "csv",
-        "счета"
+        "счета",
+        "деньги в путешествии"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -362,10 +366,11 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов"
+        "контроль расходов",
+        "расходы в путешествии"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794039979",
@@ -628,10 +633,11 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн"
+        "офлайн",
+        "фонетика для детей"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -1095,10 +1101,12 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив"
+        "архив",
+        "сохранить статьи",
+        "читать позже"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1449,10 +1457,11 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping"
+        "ping",
+        "диагностика wifi"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",
@@ -1509,10 +1518,12 @@
         "файлы",
         "7zip",
         "unrar",
-        "gz"
+        "gz",
+        "распаковать 7z",
+        "открыть файлы rar"
       ],
       "language": "ru",
-      "date_modified": "2026-09-26T18:57:51Z"
+      "date_modified": "2026-09-27T05:46:30Z"
     }
   ]
 }

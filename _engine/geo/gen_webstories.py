@@ -108,11 +108,18 @@ def _read_limited(response, limit=MAX_ICON_BYTES):
     return payload
 
 
-def _artwork_url(app_id):
+# A single-id lookup can come back empty for a live App on its release day
+# (QR Code Halo/6806779853, 2026-09-27: 0 results in `us` while a batch with a
+# live control returned it). Mochi is the known-live control; it is only a
+# neighbour in the query and can never supply the artwork.
+ARTWORK_LOOKUP_CONTROL_APP_ID = "6785004775"
+
+
+def _lookup_matches(ids, app_id):
     lookup_url = (
         "https://itunes.apple.com/lookup?"
         + urllib.parse.urlencode({
-            "id": str(app_id),
+            "id": ",".join(ids),
             "country": "us",
             "entity": "software",
         })
@@ -125,12 +132,26 @@ def _artwork_url(app_id):
         payload = _read_limited(response)
     try:
         document = json.loads(payload.decode("utf-8"))
-        matches = [
+        return [
             row for row in document["results"]
             if str(row.get("trackId")) == str(app_id)
         ]
+    except (UnicodeDecodeError, json.JSONDecodeError, KeyError, TypeError) as error:
+        raise ValueError(f"Invalid App Store lookup response for {app_id}") from error
+
+
+def _artwork_url(app_id):
+    attempts = [(str(app_id),)]
+    if str(app_id) != ARTWORK_LOOKUP_CONTROL_APP_ID:
+        attempts.append((str(app_id), ARTWORK_LOOKUP_CONTROL_APP_ID))
+    matches = []
+    for ids in attempts:
+        matches = _lookup_matches(ids, app_id)
+        if matches:
+            break
+    try:
         artwork = matches[0]["artworkUrl512"]
-    except (UnicodeDecodeError, json.JSONDecodeError, KeyError, IndexError, TypeError) as error:
+    except (KeyError, IndexError, TypeError) as error:
         raise ValueError(f"Invalid App Store lookup response for {app_id}") from error
     parsed = urllib.parse.urlparse(artwork)
     if (

@@ -23054,6 +23054,50 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(icon, gen_webstories.ensure_app_icon("tripbeelite"))
         self.assertEqual(2, len(calls))
 
+    def test_web_story_icon_reasks_a_missed_single_lookup_as_a_batch(self):
+        """QR Code Halo (2026-09-27): the single-id lookup missed a live App."""
+        app_id = "6806779853"
+        artwork_url = (
+            "https://is1-ssl.mzstatic.com/image/thumb/Purple221/"
+            "AppIcon.png/512x512bb.jpg"
+        )
+        asked = []
+
+        def fake_urlopen(request, timeout):
+            query = urllib.parse.parse_qs(urllib.parse.urlsplit(request.full_url).query)
+            asked.append(query["id"][0])
+            ids = query["id"][0].split(",")
+            rows = []
+            if len(ids) > 1:
+                rows = [
+                    {"trackId": int(gen_webstories.ARTWORK_LOOKUP_CONTROL_APP_ID),
+                     "artworkUrl512": "https://is1-ssl.mzstatic.com/control.jpg"},
+                    {"trackId": int(app_id), "artworkUrl512": artwork_url},
+                ]
+            return io.BytesIO(json.dumps({"results": rows}).encode())
+
+        with mock.patch.object(
+            gen_webstories.urllib.request, "urlopen", side_effect=fake_urlopen,
+        ):
+            self.assertEqual(artwork_url, gen_webstories._artwork_url(app_id))
+        self.assertEqual(
+            [app_id, f"{app_id},{gen_webstories.ARTWORK_LOOKUP_CONTROL_APP_ID}"], asked,
+        )
+
+    def test_web_story_icon_never_takes_the_control_apps_artwork(self):
+        def fake_urlopen(request, timeout):
+            query = urllib.parse.parse_qs(urllib.parse.urlsplit(request.full_url).query)
+            rows = [] if "," not in query["id"][0] else [{
+                "trackId": int(gen_webstories.ARTWORK_LOOKUP_CONTROL_APP_ID),
+                "artworkUrl512": "https://is1-ssl.mzstatic.com/control.jpg",
+            }]
+            return io.BytesIO(json.dumps({"results": rows}).encode())
+
+        with mock.patch.object(
+            gen_webstories.urllib.request, "urlopen", side_effect=fake_urlopen,
+        ), self.assertRaisesRegex(ValueError, "Invalid App Store lookup response"):
+            gen_webstories._artwork_url("1234567890")
+
     def test_app_decision_card_generation_excludes_install_only_hubs(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

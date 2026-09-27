@@ -8,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from urllib.parse import urlsplit
 
 GEO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GEO))
@@ -17,10 +18,39 @@ import app_install_decision_routes as decisions
 import deployment_generation as generation
 
 PAGES = GEO.parents[1] if GEO.parent.name == "_engine" else GEO / "pages"
-FOUR = (
+GUIDE_REGRESSIONS = (
     "en-US/savetag.html", "en-US/shotinbox.html", "en-US/zipbox.html",
-    "apps/zipbox/decision/l/en-US/index.html",
 )
+
+
+def decision_records_with_contact():
+    """Real install-decision records whose published lead carries the contact.
+
+    The fourth real regression was the Zipbox en-US decision lead. Its text is
+    not fixed: once the persona answer page exists, the publisher intent
+    catalog sources that record from the answer lead, which has no email
+    (2026-09-27, geo-daily 36300777443). Pick a record that really carries the
+    contact instead -- Zipbox en-US first, then other Zipbox locales, then any
+    app -- so the protection guard keeps a real fixture without pinning copy.
+    """
+    data = json.loads((PAGES / "data/app-install-decision-routes.json").read_text())
+    records = [
+        record for record in data["records"]
+        if email.PUBLIC_CONTACT in str(record.get("decision_context", ""))
+    ]
+    records.sort(key=lambda record: (
+        record["app_key"] != "zipbox", record["locale"] != "en-US",
+        record["app_key"], record["locale"],
+    ))
+    return data, records
+
+
+def decision_page_relative(record):
+    url = urlsplit(str(record["decision_page_url"]))
+    site = urlsplit(decisions.SITE)
+    if url.netloc != site.netloc or not url.path.startswith(site.path):
+        raise ValueError(f"Unexpected decision page URL: {record['decision_page_url']}")
+    return url.path[len(site.path):].lstrip("/")
 
 
 def simulate_cloudflare(source):
@@ -114,7 +144,9 @@ class PublicEmailTests(unittest.TestCase):
             self.assertTrue(email.scan(root)["passed"])
 
     def test_all_four_real_regressions_keep_full_canonical_content(self):
-        for relative in FOUR:
+        _, records = decision_records_with_contact()
+        self.assertTrue(records, "no install-decision lead carries the public contact")
+        for relative in GUIDE_REGRESSIONS + (decision_page_relative(records[0]),):
             with self.subTest(page=relative):
                 source = (PAGES / relative).read_text()
                 unprotected = email.canonical_html_unchecked(source)
@@ -140,8 +172,9 @@ class PublicEmailTests(unittest.TestCase):
                     self.assertEqual(email.canonical_html(source), simulate_cloudflare(source))
 
     def test_zipbox_decision_template_protects_its_real_lead(self):
-        data = json.loads((PAGES / "data/app-install-decision-routes.json").read_text())
-        record = next(r for r in data["records"] if r["app_key"] == "zipbox" and r["locale"] == "en-US")
+        data, records = decision_records_with_contact()
+        self.assertTrue(records, "no install-decision lead carries the public contact")
+        record = records[0]
         source = decisions.render_page(record, data["dateModified"], "App decisions")
         self.assertIn(email.PUBLIC_CONTACT, "".join(Visible(source).text))
         self.assertFalse(email.EmailMarkup(source).issues)

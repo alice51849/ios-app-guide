@@ -152,6 +152,6 @@ JSON, JSONL e CSV contêm os mesmos 2.600 registros.
 
 [Início](https://open.cait518.cc/ios-app-guide/pt-BR/index.html) · [Dados abertos](https://open.cait518.cc/ios-app-guide/pt-BR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-09-27
+Atualizado: 2026-09-28
 
 A licença CC BY 4.0 se aplica à compilação original do catálogo; nomes de apps e marcas da App Store pertencem aos seus proprietários.

@@ -154,6 +154,6 @@ JSON, JSONL এবং CSV একই ২,৬০০ রেকর্ড ধার�
 
 [হোম](https://open.cait518.cc/ios-app-guide/bn-BD/index.html) · [খোলা তথ্য](https://open.cait518.cc/ios-app-guide/bn-BD/data/lumi-studio-publisher-search-intent-catalog.html) · [লাইসেন্স](https://creativecommons.org/licenses/by/4.0/)
 
-আপডেট: 2026-09-27
+আপডেট: 2026-09-28
 
 মূল ক্যাটালগ সংকলনের জন্য CC BY 4.0 প্রযোজ্য; অ্যাপ নাম ও App Store চিহ্ন তাদের মালিকদের।

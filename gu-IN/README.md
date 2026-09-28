@@ -152,6 +152,6 @@ JSON, JSONL અને CSVમાં સમાન 2,600 રેકોર્ડ્�
 
 [હોમ](https://open.cait518.cc/ios-app-guide/gu-IN/index.html) · [ખુલ્લા ડેટા](https://open.cait518.cc/ios-app-guide/gu-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [લાઇસન્સ](https://creativecommons.org/licenses/by/4.0/)
 
-અપડેટ થયેલ: 2026-09-27
+અપડેટ થયેલ: 2026-09-28
 
 CC BY 4.0 મૂળ કેટલોગ સંકલન પર લાગુ પડે છે; એપનાં નામ અને App Store ચિહ્નો તેમના માલિકોના છે.

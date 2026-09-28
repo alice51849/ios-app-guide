@@ -152,6 +152,6 @@ JSON, JSONL и CSV содержат одинаковые 2600 записей.
 
 [Главная](https://open.cait518.cc/ios-app-guide/ru/index.html) · [Открытые данные](https://open.cait518.cc/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-09-27
+Обновлено: 2026-09-28
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

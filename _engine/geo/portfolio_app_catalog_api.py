@@ -1169,19 +1169,24 @@ def _schema_graph(
                 "itemListOrder": (
                     "https://schema.org/ItemListOrderAscending"
                 ),
+                # Apps are named by entity identity (@id = the clean canonical
+                # App Store URL, as in gen_mobile_app_identity), never a bare
+                # ``url``: the attribution audit reads ``url`` as a download CTA.
+                # The attributed anchors in render_docs are this page's CTAs;
+                # owned_app_feeds --refresh-catalog re-renders it after the stamper.
                 "itemListElement": [
                     {
                         "@type": "ListItem",
-                        "url": record["canonical_app_store_url"],
+                        "position": position,
                         "item": {
                             "@type": "MobileApplication",
+                            "@id": record["canonical_app_store_url"],
                             "name": record["name"],
                             "operatingSystem": "iOS",
                             "applicationCategory": record["category"],
-                            "url": record["canonical_app_store_url"],
                         },
                     }
-                    for record in records
+                    for position, record in enumerate(records, start=1)
                 ],
             },
         ],

@@ -470,6 +470,23 @@ CURATED_FALLBACK = {
             ["flipd: focus & study timer", 0],
         ],
     },
+    "qrcodehalo": {
+        "key": "qrcodehalo",
+        "gap_queries": [
+            "qr code scanner that shows the full link before opening anything",
+            "qr scanner that checks a code on device without an online lookup",
+            "batch scan qr codes and export the results as csv",
+            "create wifi and contact qr codes on iphone with no subscription",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "qr code scanner", "qr code reader" and "qr code generator" on 2026-09-27.
+        "top_competitors": [
+            ["qr reader for iphone", 0],
+            ["qr code reader: quick scan", 0],
+            ["qr code & barcode scanner", 0],
+            ["qr code generator - qrhyper", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [

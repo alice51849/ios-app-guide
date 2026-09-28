@@ -150,6 +150,7 @@ SITUATIONS: dict[str, str] = {
     "stayclock": "utility",
     "countdaysnow": "utility",
     "studydown": "focus",
+    "qrcodehalo": "utility",
 }
 DEFAULT_SITUATION = "utility"
 

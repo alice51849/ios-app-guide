@@ -730,6 +730,61 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.assertEqual([store_url().split("?")[0]], [ref.url for ref in refs if ref.identity])
         self.assertEqual({store_url()}, {ref.url for ref in refs if not ref.identity})
 
+    def test_catalog_api_docs_name_apps_by_identity_and_attribute_only_anchors(self):
+        # owned_app_feeds --refresh-catalog re-renders these pages after the
+        # stamper, so the generator's own output must pass the audit: a bare
+        # JSON-LD ``url`` is a download CTA to it, an ``@id`` is identity.
+        import portfolio_app_catalog_api as api
+        import portfolio_app_finder as finder
+
+        records = finder.catalog_records(
+            set(LIVE_APPS), self.pages, allow_unknown_summaries=True
+        )
+        self.assertEqual(len(LIVE_APPS), len(records))
+        app_ids = [str(record["app_store_id"]) for record in records]
+        canonical = [f"https://apps.apple.com/app/id{app_id}" for app_id in app_ids]
+        for locale, relative in (
+            ("en", f"{api.API_PATH.as_posix()}/index.html"),
+            ("zh-Hant", f"zh-Hant/{api.API_PATH.as_posix()}/index.html"),
+        ):
+            with self.subTest(locale=locale):
+                page = api.render_docs(locale, records, "2026-09-28")
+                refs = self.audit(page, relative)
+                self.assertEqual(canonical, [ref.url for ref in refs if ref.identity])
+                ctas = [urllib.parse.urlsplit(ref.url) for ref in refs if not ref.identity]
+                self.assertEqual(
+                    app_ids,
+                    [stores.APP_STORE_PATH_RE.fullmatch(url.path)["app_id"] for url in ctas],
+                )
+                self.assertEqual(
+                    {("geo_pick", PROVIDER)},
+                    {(dict(urllib.parse.parse_qsl(url.query))["ct"],
+                      dict(urllib.parse.parse_qsl(url.query))["pt"]) for url in ctas},
+                )
+                script = r'<script type="application/ld\+json">(.*?)</script>'
+                blocks = re.findall(script, page, flags=re.S)
+                self.assertEqual(1, len(blocks))
+                (item_list,) = [
+                    node for node in json.loads(blocks[0])["@graph"]
+                    if node["@type"] == "ItemList"
+                ]
+                elements = item_list["itemListElement"]
+                self.assertEqual(len(records), item_list["numberOfItems"])
+                self.assertEqual(list(range(1, len(records) + 1)), [e["position"] for e in elements])
+                self.assertEqual({"ListItem"}, {e["@type"] for e in elements})
+                self.assertEqual({"MobileApplication"}, {e["item"]["@type"] for e in elements})
+                self.assertEqual(canonical, [e["item"]["@id"] for e in elements])
+                self.assertEqual([record["name"] for record in records], [e["item"]["name"] for e in elements])
+                self.assertFalse([e for e in elements if "url" in e or "url" in e["item"]])
+                # The final stamper treats @id as identity and must leave the
+                # structured data byte-identical; its output passes too.
+                stamped, _ = attribution.rewrite(
+                    page, attribution.page_token(relative, page), PROVIDER,
+                    locale=audit.locale_of(relative), availability=AVAILABILITY,
+                )
+                self.assertEqual(blocks, re.findall(script, stamped, flags=re.S))
+                self.audit(stamped, relative)
+
     def test_public_finder_dataset_exposes_an_attributed_link_separate_from_identity(self):
         import portfolio_app_finder as finder
         from jsonschema import Draft202012Validator, FormatChecker

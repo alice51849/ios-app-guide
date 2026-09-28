@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 8,
-  "roster_digest": "fe6cd48079af57407940c0d7c99b9784df2d33db877ec0f5b1de197cf35772dd",
+  "revision": 9,
+  "roster_digest": "d4c25ff156574814b4fbbf8bdd0efa8d32f549ae359920aa17cc40d9db3f5796",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -139,6 +139,10 @@
     "picclear": {
       "app_id": "6780223070",
       "name": "PicClear"
+    },
+    "qrcodehalo": {
+      "app_id": "6806779853",
+      "name": "QR Code Halo"
     },
     "savetag": {
       "app_id": "6802505528",

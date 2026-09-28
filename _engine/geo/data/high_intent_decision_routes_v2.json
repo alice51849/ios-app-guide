@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 52,
-    "app_keys_sha256": "1e906fd84a3c37a87540caa5b0bfa5093a3eb87e6cc052c2451f7146a9ff7a42",
-    "copy_sha256": "1cc42389111a6236822571cb9d4da144e2afef2f80371d87c32d55630b0419ba",
+    "expected_app_count": 53,
+    "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
+    "copy_sha256": "998ac9dd9bad62fc464f8486e92225b064d87213b5e7c7b5946a60312f26ac74",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2239,6 +2239,44 @@
             "fact.one_time_option",
             "feature.0",
             "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "qrcodehalo",
+      "route_slug": "qr-scanner-that-shows-the-full-link-before-opening",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US drivers, diners and shoppers scan QR codes on parking meters, restaurant tables, posters and parcels, and want to see where a code points before anything opens.",
+          "query": "Which QR code scanner shows me the full link before it opens anything?",
+          "buyer_problem": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check, and leaves the final tap to you, fits how you scan.",
+          "decision_rule": "Favor a preview-first scanner when codes come from public places you do not control. The free allowance is three successful scans per device, so regular scanning needs the one-time Lifetime Pro purchase; creating QR codes and keeping local history stay free, and there is no subscription.",
+          "workflow_checks": [
+            "Does every result show the full content, link scheme and host before any action?",
+            "Does the app ever open a destination automatically, or does the final action stay with you?",
+            "Can history be searched, filtered and exported as CSV?"
+          ],
+          "alternative_lens": "Keep the built-in Camera scanner when you only scan codes you already trust. The on-device check does not look up link reputation online, so treat an unfamiliar sign-in or payment page with the same care as any other link.",
+          "verify_before_install": [
+            "Check the current listing for the free scan allowance and what Lifetime Pro adds.",
+            "Confirm the barcode formats you need are among the 20 the listing names."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.3"
           ]
         }
       }

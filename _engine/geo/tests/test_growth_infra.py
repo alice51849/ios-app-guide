@@ -22175,6 +22175,10 @@ class GeneratorTests(unittest.TestCase):
             # (Studydown), checked 2026-09-27.
             "countdaysnow",
             "studydown",
+            # Free download (iTunes Lookup price 0, released 2026-09-27) whose
+            # en-US description gives three free scans per device and "One
+            # optional Lifetime Pro purchase" with "No subscription".
+            "qrcodehalo",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

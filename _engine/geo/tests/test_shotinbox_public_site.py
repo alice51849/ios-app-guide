@@ -40,6 +40,10 @@ class ShotInboxPublicSiteTests(unittest.TestCase):
             english["privacy_data"],
         )
         self.assertIn("not original screenshots", english["extensions_backup"])
+        self.assertIn(
+            "does not include any third-party AI service",
+            english["analysis"],
+        )
 
 
 if __name__ == "__main__":

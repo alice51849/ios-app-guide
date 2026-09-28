@@ -25,7 +25,7 @@ BASE_URL = (
     f"{PUBLIC_SITE}/apps/shotinbox/"
 )
 SUPPORT_EMAIL = "hourstag.app@gmail.com"
-POLICY_VERSION = "2026-08-17"
+POLICY_VERSION = "2026-09-29"
 PAGES = ("index.html", "support.html", "privacy.html", "contact.html")
 FIELDS = (
     "overview",

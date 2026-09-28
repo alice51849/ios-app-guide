@@ -2,7 +2,7 @@
 title: "Studydown：翻面專注計時 — 螢幕朝下蓋著放 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/zh-Hant/index.html"
-modified: "2026-09-27"
+modified: "2026-09-28"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

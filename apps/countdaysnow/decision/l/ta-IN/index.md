@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — இன்றைய கவனம் | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ta-IN/index.html"
-modified: "2026-09-27"
+modified: "2026-09-28"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

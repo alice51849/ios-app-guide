@@ -52,7 +52,7 @@ APPS = {
         shots=["02_templates", "03_crop", "04_background", "08_print"],
         kicker="TRAVEL HACK",
         title="Stop paying $15\nfor passport photos",
-        sub="Make your own at home in 30 seconds",
+        sub="Take passport, visa, and ID photos at home — the calm, private way.",
         tag="Pay once · Private",
         cta_bullets=["Pay once", "No subscription", "On-device",
                      "No account", "No ads", "No tracking"],

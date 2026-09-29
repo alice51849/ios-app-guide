@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -27,7 +27,8 @@
         "สเก็ตช์",
         "วาดรูป",
         "ออฟไลน์",
-        "จัดระเบียบ"
+        "จัดระเบียบ",
+        "จดโน้ตด้วยลายมือ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -221,7 +222,8 @@
         "วิทยาศาสตร์",
         "นับวัน",
         "วันทำการ",
-        "ค่าน้ำมัน"
+        "ค่าน้ำมัน",
+        "เครื่องคิดเลข วิดเจ็ต"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -315,7 +317,8 @@
         "docx",
         "แบบฟอร์ม",
         "ตำแหน่งงาน",
-        "ประวัติส่วนตัว"
+        "ประวัติส่วนตัว",
+        "ทำเรซูเม่"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -552,7 +555,8 @@
         "ท่องเที่ยว",
         "กระเป๋า",
         "offline",
-        "csv"
+        "csv",
+        "บันทึกค่าใช้จ่ายเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -996,7 +1000,8 @@
         "สมาธิ",
         "มอนเตสซอรี",
         "ออฟไลน์",
-        "alphabet"
+        "alphabet",
+        "โฟนิกส์เด็ก"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1557,7 +1562,9 @@
         "ประชุม",
         "การบ้าน",
         "ข้อมูล",
-        "กราฟ"
+        "กราฟ",
+        "ทำสไลด์",
+        "สรุปการประชุม"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1760,7 +1767,9 @@
         "ท่องเที่ยว",
         "ช้อปปิ้ง",
         "โน้ต",
-        "ส่วนตัว"
+        "ส่วนตัว",
+        "บุ๊กมาร์ก",
+        "อ่านทีหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1908,8 +1917,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport: รูปพาสปอร์ต บัตร",
-      "summary": "สร้างรูปพาสปอร์ต วีซ่า และเอกสารราชการที่บ้านอย่างสงบและเป็นส่วนตัว Snapport มีเทมเพลตขนาดยอดนิยม ไกด์จัดแนวใบหน้า เครื่องมือพื้นหลัง และแผ่นพร้อมพิมพ์ ประมวลผลทั้งหมดบน iPhone ของคุณ",
+      "name": "Snapport: รูปติดบัตร พาสปอร์ต",
+      "summary": "ถ่ายรูปพาสปอร์ต รูปวีซ่า และรูปติดบัตรที่บ้านอย่างสงบและเป็นส่วนตัว Snapport เตรียมเฉพาะรูปถ่ายเท่านั้น ส่วนเอกสารจริงออกโดยหน่วยงานหรือองค์กรที่เกี่ยวข้อง Snapport มีเทมเพลตขนาดยอดนิยม ไกด์จัดแนวใบหน้า เครื่องมือพื้นหลัง และแผ่นพร้อมพิมพ์ ประมวลผลทั้งหมดบน iPhone ของคุณ",
       "category": "photo-utility",
       "search_terms": [
         "รูปติดบัตร",
@@ -1964,19 +1973,20 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: ทำรูปติดบัตร",
-      "summary": "Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์",
+      "name": "Snapport Lite",
+      "summary": "ต้องการรูปขนาดที่กำหนดใช่ไหม Snapport Lite ครอปรูปพอร์ตเทรตของคุณให้ได้ขนาดที่เลือกอย่างแม่นยำ บนอุปกรณ์ของคุณเอง ถ่ายรูปใหม่หรือเลือกจากคลังรูปภาพ จัดใบหน้าตามเส้นนำ ปรับพื้นหลังให้เรียบร้อย แล้วส่งออก",
       "category": "photo-utility",
       "search_terms": [
-        "รูปพาสปอร์ต",
-        "รูปวีซ่า",
-        "รูปบัตรประชาชน",
-        "รูปเอกสาร",
-        "รูปไบโอเมตริก",
-        "รูปสมัครงาน",
-        "รูปนักเรียน",
-        "35x45",
-        "พาสปอร์ต"
+        "รูป1นิ้ว",
+        "รูป2นิ้ว",
+        "ถ่ายรูปติดบัตร",
+        "พื้นหลังขาว",
+        "ลบพื้นหลัง",
+        "เปลี่ยนพื้นหลัง",
+        "ปริ้นรูป",
+        "เซลฟี่",
+        "พิกเซล",
+        "dpi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2176,7 +2186,8 @@
         "ทริป",
         "เดินทาง",
         "ตั๋ว",
-        "เตือน"
+        "เตือน",
+        "แผนการเดินทาง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2217,7 +2228,8 @@
         "โรงแรม",
         "เที่ยวบิน",
         "ที่เที่ยว",
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "แผนเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2280,7 +2292,8 @@
         "กู้คืน",
         "โฟกัส",
         "4k",
-        "ai"
+        "ai",
+        "เพิ่มความคมชัดรูป"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2321,7 +2334,8 @@
         "ipv4",
         "ipv6",
         "http",
-        "ping"
+        "ping",
+        "วิเคราะห์ wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

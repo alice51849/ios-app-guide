@@ -6,7 +6,7 @@
   "name": "Lumi Studio வெளியீட்டாளர் தேடல் நோக்கக் குறியீட்டு அட்டவணை",
   "description": "ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.",
   "inLanguage": "ta-IN",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2658,8 +2658,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: ஐடி புகைப்படம்",
-        "description": "Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் மற்றும் அச்சிட தயாரான ஏற்றுமதியுடன் பாஸ்போர்ட், விசா மற்றும் ஆவண புகைப்படங்களை உருவாக்கவும்.",
+        "name": "Snapport Lite",
+        "description": "குறிப்பிட்ட அளவில் புகைப்படம் தேவையா? Snapport Lite உங்கள் உருவப்படத்தை நீங்கள் தேர்ந்தெடுக்கும் அளவுக்குத் துல்லியமாக, நேரடியாக உங்கள் சாதனத்திலேயே",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2674,7 +2674,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: ஐடி புகைப்படம்",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ta-IN",
-          "description": "Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் மற்றும் அச்சிட தயாரான ஏற்றுமதியுடன் பாஸ்போர்ட், விசா மற்றும் ஆவண புகைப்படங்களை உருவாக்கவும்.",
+          "description": "குறிப்பிட்ட அளவில் புகைப்படம் தேவையா? Snapport Lite உங்கள் உருவப்படத்தை நீங்கள் தேர்ந்தெடுக்கும் அளவுக்குத் துல்லியமாக, நேரடியாக உங்கள் சாதனத்திலேயே",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapportlite"
           },

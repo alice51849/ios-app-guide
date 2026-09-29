@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-09-28",
-    "contentDigest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+    "dateModified": "2026-09-29",
+    "contentDigest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 53
@@ -150,10 +150,11 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기"
+        "데이터 내보내기",
+        "배터리 용량"
       ],
       "language": "ko",
-      "date_modified": "2026-09-28T02:17:34Z"
+      "date_modified": "2026-09-29T14:07:18Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -613,10 +614,11 @@
         "흐르는글씨",
         "전달",
         "응원봉",
-        "입국장"
+        "입국장",
+        "흐르는 글씨"
       ],
       "language": "ko",
-      "date_modified": "2026-09-19T02:15:08Z"
+      "date_modified": "2026-09-29T14:07:18Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -1303,10 +1305,12 @@
         "과제",
         "리포트",
         "피피티",
-        "논문"
+        "논문",
+        "한장 요약",
+        "발표 자료"
       ],
       "language": "ko",
-      "date_modified": "2026-09-28T02:17:34Z"
+      "date_modified": "2026-09-29T14:07:18Z"
     },
     {
       "id": "https://apps.apple.com/app/id6781808054",
@@ -1586,9 +1590,8 @@
       "url": "https://open.cait518.cc/ios-app-guide/ko/snapport.html",
       "external_url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "title": "Snapport: 여권·신분증 사진",
-      "content_text": "여권, 비자, 신분증 사진을 집에서 차분하고 안전하게 만드세요. Snapport는 일반적인 크기 템플릿, 얼굴 정렬 가이드, 배경 도구, 인쇄용 레이아웃을 제공하며 모든 처리는 iPhone에서 바로 이루어집니다.",
+      "content_text": "여권, 비자, 신분증 사진을 집에서 차분하고 안전하게 촬영하세요. Snapport는 사진만 준비하며, 증명서 자체는 발급 기관이 발급합니다. Snapport는 일반적인 크기 템플릿, 얼굴 정렬 가이드, 배경 도구, 인쇄용 레이아웃을 제공하며 모든 처리는 iPhone에서 바로 이루어집니다.",
       "tags": [
-        "증명사진",
         "여권사진",
         "비자사진",
         "신분증사진",
@@ -1606,48 +1609,46 @@
         "인쇄용시트",
         "얼굴사진",
         "여권사진앱",
-        "맞춤크기",
-        "pdf사진",
-        "학생증",
-        "사원증",
-        "생체인식",
-        "흰배경",
-        "PDF",
-        "인화",
-        "사진규격",
-        "회색배경",
-        "재단선",
-        "문서사진",
-        "사진관",
-        "반명함"
+        "맞춤크기"
       ],
       "language": "ko",
-      "date_modified": "2026-09-28T16:23:01Z"
+      "date_modified": "2026-09-29T14:07:18Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
       "url": "https://open.cait518.cc/ios-app-guide/ko/snapportlite.html",
       "external_url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-      "title": "Snapport Lite：집에서 증명사진",
-      "content_text": "Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요.",
+      "title": "Snapport Lite",
+      "content_text": "정해진 크기의 사진이 필요하신가요? Snapport Lite는 기기 안에서 인물 사진을 원하는 크기에 딱 맞게 잘라 줍니다. 새로 촬영하거나 보관함에서 고른 뒤, 가이드에 맞춰 얼굴 위치를 맞추고 배경을 정리해 내보내면 끝입니다.",
       "tags": [
-        "사원증사진",
-        "학생증사진",
-        "이력서사진",
-        "비자사진",
-        "여권사진 규격",
-        "35x45",
-        "2x2",
-        "인쇄용 시트",
-        "증명사진 규격",
-        "흰색 배경",
-        "배경 변경",
-        "여권 규격",
-        "자가 촬영",
-        "얼굴 사진"
+        "증명사진",
+        "반명함",
+        "여권용사진",
+        "취업사진",
+        "프로필",
+        "배경지우기",
+        "흰배경",
+        "배경색",
+        "누끼",
+        "인화",
+        "출력",
+        "해상도",
+        "픽셀",
+        "dpi",
+        "mm",
+        "인치",
+        "셀카",
+        "보정",
+        "밝기",
+        "3x4",
+        "A4",
+        "이력서",
+        "자르기",
+        "크기조절",
+        "4x6"
       ],
       "language": "ko",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "date_modified": "2026-09-29T14:07:18Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782139553",
@@ -1945,10 +1946,11 @@
         "IPv4",
         "IPv6",
         "TCP",
-        "TLS"
+        "TLS",
+        "와이파이 진단"
       ],
       "language": "ko",
-      "date_modified": "2026-09-26T05:48:16Z"
+      "date_modified": "2026-09-29T14:07:18Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",

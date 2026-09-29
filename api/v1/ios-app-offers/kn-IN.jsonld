@@ -6,7 +6,7 @@
   "name": "Lumi Studio ಪ್ರಕಾಶಕರ ಹುಡುಕಾಟ ಉದ್ದೇಶ ಕ್ಯಾಟಲಾಗ್",
   "description": "ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.",
   "inLanguage": "kn-IN",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2658,8 +2658,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: ಐಡಿ ಫೋಟೋ ರಚನೆ",
-        "description": "Snapport Lite - ಮಾರ್ಗದರ್ಶನದ ಗಾತ್ರ, ಹಿನ್ನೆಲೆ ಸಾಧನಗಳು ಮತ್ತು ಮುದ್ರಣಕ್ಕೆ ತಯಾರಾದ ರಫ್ತಿನೊಂದಿಗೆ ಪಾಸ್ಪೋರ್ಟ್, ವೀಸಾ ಮತ್ತು ದಾಖಲೆ ಫೋಟೋಗಳನ್ನು ಮಾಡಿ.",
+        "name": "Snapport Lite",
+        "description": "ನಿರ್ದಿಷ್ಟ ಗಾತ್ರದ ಫೋಟೋ ಬೇಕೇ? Snapport Lite ನಿಮ್ಮ ಪೋರ್ಟ್ರೇಟ್ ಅನ್ನು ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಗಾತ್ರಕ್ಕೆ ನಿಖರವಾಗಿ, ನೇರವಾಗಿ ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಕ್ರಾಪ್ ಮಾಡುತ್ತದೆ. ಹೊಸ ಫೋಟೋ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2674,7 +2674,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: ಐಡಿ ಫೋಟೋ ರಚನೆ",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "kn-IN",
-          "description": "Snapport Lite - ಮಾರ್ಗದರ್ಶನದ ಗಾತ್ರ, ಹಿನ್ನೆಲೆ ಸಾಧನಗಳು ಮತ್ತು ಮುದ್ರಣಕ್ಕೆ ತಯಾರಾದ ರಫ್ತಿನೊಂದಿಗೆ ಪಾಸ್ಪೋರ್ಟ್, ವೀಸಾ ಮತ್ತು ದಾಖಲೆ ಫೋಟೋಗಳನ್ನು ಮಾಡಿ.",
+          "description": "ನಿರ್ದಿಷ್ಟ ಗಾತ್ರದ ಫೋಟೋ ಬೇಕೇ? Snapport Lite ನಿಮ್ಮ ಪೋರ್ಟ್ರೇಟ್ ಅನ್ನು ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಗಾತ್ರಕ್ಕೆ ನಿಖರವಾಗಿ, ನೇರವಾಗಿ ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಕ್ರಾಪ್ ಮಾಡುತ್ತದೆ. ಹೊಸ ಫೋಟೋ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-snapportlite"
           },

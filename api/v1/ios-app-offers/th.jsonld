@@ -6,7 +6,7 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: ทำรูปติดบัตร",
-        "description": "Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์",
+        "name": "Snapport Lite",
+        "description": "ต้องการรูปขนาดที่กำหนดใช่ไหม Snapport Lite ครอปรูปพอร์ตเทรตของคุณให้ได้ขนาดที่เลือกอย่างแม่นยำ บนอุปกรณ์ของคุณเอง ถ่ายรูปใหม่หรือเลือกจากคลังรูปภาพ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: ทำรูปติดบัตร",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "th",
-          "description": "Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์",
+          "description": "ต้องการรูปขนาดที่กำหนดใช่ไหม Snapport Lite ครอปรูปพอร์ตเทรตของคุณให้ได้ขนาดที่เลือกอย่างแม่นยำ บนอุปกรณ์ของคุณเอง ถ่ายรูปใหม่หรือเลือกจากคลังรูปภาพ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-snapportlite"
           },

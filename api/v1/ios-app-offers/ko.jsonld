@@ -6,7 +6,7 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite：집에서 증명사진",
-        "description": "Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요.",
+        "name": "Snapport Lite",
+        "description": "정해진 크기의 사진이 필요하신가요? Snapport Lite는 기기 안에서 인물 사진을 원하는 크기에 딱 맞게 잘라 줍니다. 새로 촬영하거나 보관함에서 고른 뒤, 가이드에 맞춰 얼굴 위치를 맞추고 배경을 정리해 내보내면 끝입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite：집에서 증명사진",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ko",
-          "description": "Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요.",
+          "description": "정해진 크기의 사진이 필요하신가요? Snapport Lite는 기기 안에서 인물 사진을 원하는 크기에 딱 맞게 잘라 줍니다. 새로 촬영하거나 보관함에서 고른 뒤, 가이드에 맞춰 얼굴 위치를 맞추고 배경을 정리해 내보내면 끝입니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-snapportlite"
           },

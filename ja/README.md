@@ -130,7 +130,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **Sereno** | サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ | 睡眠のために毎月課金を催促されるサブスクリプションは安らぎの対極です。心当たりがあるなら、Serenoを試してみてください。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — スクショ分類・OCR検索・タイムライン \| iOS App | スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/shotinbox.html) | [App Store で ShotInbox AI: Sort Screenshots を入手](https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8) |
 | **Snapport** | 赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ | 赤ちゃんのパスポート写真は他の人が写ってはいけず背景は無地でなければなりませんが、乳児の場合は目が完全に開いていなくても構いません。 | 有料ダウンロード | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8) |
-| **Snapport Lite：自宅で証明写真** | Snapport Lite：自宅で証明写真 — 自宅でID写真を作成 \| iOS App | Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/snapportlite.html) | [App Store で Snapport Lite：自宅で証明写真 を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
+| **Snapport Lite** | Snapport Lite — 顔写真をぴったりのサイズに \| iOS App | 決まったサイズの写真が必要なときに。Snapport Lite は、お使いのデバイス上で顔写真を選んだサイズにぴったりトリミングします。新しく撮影するかライブラリから選び、ガイドに合わせて顔の位置を整え、背景を整えたら書き出すだけです。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/snapportlite.html) | [App Store で Snapport Lite を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8) |
 | **Sono Note** | iPhoneで会議を要約する最高のボイスノートアプリ | 通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App StoreでSono Noteを入手 →](https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8) |
 | **Stay Clock:パタパタ卓上時計** | Stay Clock:パタパタ卓上時計 — 常時点灯の時計とカレンダー \| iOS App | Stay Clockは、iPhoneやiPadを部屋の隅からでも読める常時点灯のデスク時計に変えます。大きな時刻表示、それぞれの文字盤に合うカレンダー、そしてStandBy、ロック画面、ホーム画面ウィジェット、Apple Watchまで続く一つの文字盤。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/stayclock.html) | [App Store で Stay Clock:パタパタ卓上時計 を入手](https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8) |
 | **Studydown：伏せて時間記録** | Studydown：伏せて時間記録 — 机に伏せるだけ \| iOS App | スマートフォンを伏せて、大切なことに向き合う時間を。Studydown は、仕事のプロジェクト、読書、語学、趣味などに使った時間を、項目ごとに残せる記録アプリです。 | 無料で開始・買い切りで解除 | [ガイド](https://open.cait518.cc/ios-app-guide/ja/studydown.html) | [App Store で Studydown：伏せて時間記録 を入手](https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8) |
@@ -153,6 +153,6 @@ JSON、JSONL、CSVは同じ2,650件のレコードを含みます。
 
 [ホーム](https://open.cait518.cc/ios-app-guide/ja/index.html) · [オープンデータ](https://open.cait518.cc/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-09-28
+更新日: 2026-09-29
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

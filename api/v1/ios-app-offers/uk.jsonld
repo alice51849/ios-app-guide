@@ -6,7 +6,7 @@
   "name": "Каталог намірів пошуку видавця Lumi Studio",
   "description": "Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.",
   "inLanguage": "uk",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: ID-фото вдома",
-        "description": "Snapport Lite - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку.",
+        "name": "Snapport Lite",
+        "description": "Потрібне фото певного розміру? Snapport Lite обрізає ваш портрет точно до вибраного розміру просто на пристрої. Зніміть нове фото або виберіть його з",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: ID-фото вдома",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "uk",
-          "description": "Snapport Lite - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку.",
+          "description": "Потрібне фото певного розміру? Snapport Lite обрізає ваш портрет точно до вибраного розміру просто на пристрої. Зніміть нове фото або виберіть його з",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite"
           },

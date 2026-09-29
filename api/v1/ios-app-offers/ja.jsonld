@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite：自宅で証明写真",
-        "description": "Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。",
+        "name": "Snapport Lite",
+        "description": "決まったサイズの写真が必要なときに。Snapport Lite は、お使いのデバイス上で顔写真を選んだサイズにぴったりトリミングします。新しく撮影するかライブラリから選び、ガイドに合わせて顔の位置を整え、背景を整えたら書き出すだけです。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite：自宅で証明写真",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ja",
-          "description": "Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。",
+          "description": "決まったサイズの写真が必要なときに。Snapport Lite は、お使いのデバイス上で顔写真を選んだサイズにぴったりトリミングします。新しく撮影するかライブラリから選び、ガイドに合わせて顔の位置を整え、背景を整えたら書き出すだけです。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite"
           },

@@ -6,7 +6,7 @@
   "name": "Lumi Studio Uitgever Zoekintentiecatalogus",
   "description": "Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.",
   "inLanguage": "nl-NL",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Pasfoto's maken",
-        "description": "Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen, achtergrondtools en export klaar voor afdrukken.",
+        "name": "Snapport Lite",
+        "description": "Een foto nodig in een precies formaat? Snapport Lite snijdt je portret direct op je apparaat exact bij tot het formaat dat je kiest. Neem een nieuwe foto",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Pasfoto's maken",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "nl-NL",
-          "description": "Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen, achtergrondtools en export klaar voor afdrukken.",
+          "description": "Een foto nodig in een precies formaat? Snapport Lite snijdt je portret direct op je apparaat exact bij tot het formaat dat je kiest. Neem een nieuwe foto",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-snapportlite"
           },

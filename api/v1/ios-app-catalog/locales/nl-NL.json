@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "nl-NL",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1868,8 +1868,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport: Pasfoto & ID",
-      "summary": "Maak paspoort-, visum- en ID-foto’s thuis, rustig en privé. Snapport biedt sjablonen voor gangbare formaten, hulplijnen voor gezichtsuitlijning, achtergrondtools en printklare layouts. Alles wordt direct op je iPhone verwerkt.",
+      "name": "Snapport: Pasfoto & ID-foto",
+      "summary": "Maak paspoort-, visum- en ID-foto’s thuis, rustig en privé. Snapport maakt alleen de foto; het document zelf wordt uitgegeven door de bevoegde instantie of organisatie. Snapport biedt sjablonen voor gangbare formaten, hulplijnen voor gezichtsuitlijning, achtergrondtools en printklare layouts. Alles wordt direct op je iPhone verwerkt.",
       "category": "photo-utility",
       "search_terms": [
         "pasfoto",
@@ -1926,19 +1926,20 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: Pasfoto's maken",
-      "summary": "Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen, achtergrondtools en export klaar voor afdrukken.",
+      "name": "Snapport Lite",
+      "summary": "Een foto nodig in een precies formaat? Snapport Lite snijdt je portret direct op je apparaat exact bij tot het formaat dat je kiest. Neem een nieuwe foto of kies er een uit je bibliotheek, lijn je gezicht uit met de hulplijnen, werk de achtergrond bij en exporteer.",
       "category": "photo-utility",
       "search_terms": [
-        "paspoortfoto",
-        "visum foto",
-        "identiteitsfoto",
-        "biometrische foto",
-        "documentfoto",
-        "cv foto",
-        "badge foto",
-        "cv",
-        "Visum"
+        "pasfoto",
+        "sollicitatiefoto",
+        "bijsnijden",
+        "afmeting",
+        "witte achtergrond",
+        "uitknippen",
+        "printen",
+        "10x15",
+        "pixels",
+        "dpi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

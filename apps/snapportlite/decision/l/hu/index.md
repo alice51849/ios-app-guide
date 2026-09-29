@@ -1,5 +1,5 @@
 ---
-title: "Snapport Lite: Igazolványkép — Útlevél vízum igazolvány | iOS App"
+title: "Snapport Lite — Portrék pontos méretre vágva | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/hu/index.html"
 modified: "2026-09-29"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Snapport Lite: Igazolványkép — Útlevél vízum igazolvány | iOS App
+# Snapport Lite — Portrék pontos méretre vágva | iOS App
 
-Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással. Ingyenes verzió · 1 exportot támogat - Egyszeri vásárlás · örökre a tiéd · nincs előfizetés - Nincsenek hirdetések, nincs nyomkövetés Sablonok - Útlevél, vízum és ID fényképek — nyomtatásra kész. - A Snapport Lite teljesen offline működik. Az ellenőrzés csak egy nyilvános lista letöltését jelenti a közönséges méretekről — személyes adatokat nem küldünk. Kivágás és Igazítás - Igazítsd az arcod a kerethez. A követelmények változhatnak, ezért nézd át a hivatalos szabályokat a benyújtás előtt. Háttér - A háttér eltávolítása felülvizsgálatot igényelhet. Beállítások - Tartsd meg a természetes megjelenést hivatalos dokumentumokhoz. Exportálás - Exportálj egyetlen fényképet vagy nyomtatási lapot. Adatvédelem - A fényképeid az iPhone-odon maradnak. - Nincs fiók - Nincs felhőfeltöltés - Az arcfelismerés az eszközön fut, hogy segítsen a fényképed igazításában. Nincs tárolva biometrikus azonosító. - Te irányítod az exportálást és a megosztást A fénykép követelményei országonként, ügynökségenként és alkalmazástípusonként változnak. Kérjük, ellenőrizd az hivatalos követelményeket a benyújtás előtt.
+Pontos méretű fotóra van szükséged? A Snapport Lite közvetlenül a készülékeden vágja pontosan a választott méretre a portrédat. Fényképezz újat, vagy válassz a könyvtárból, igazítsd az arcod a segédvonalakhoz, rendezd a hátteret, majd exportálj. A Snapport Lite csak a fotódat szerkeszti. Útlevelet, vízumot és személyi igazolványt kizárólag az a hatóság vagy szervezet állít ki, ahol igényled. Próbáld ki ingyen, oldd fel egyszer - Minden méretsablon és szerkesztőeszköz ingyenesen használható. - Az első exportálás benne van. - Egyszeri vásárlással korlátlanul exportálhatsz. Nincs előfizetés, reklám, követés és fiók. Válassz fotóméretet - 35 beépített sablon 28 országhoz és régióhoz, köztük 2×2 hüvelyk, 35×45 mm, 33×48 mm és 50×70 mm, útlevél- és vízumkérelmekhez szükséges fotókhoz, önéletrajzokhoz és máshoz. - Egyéni méret mm-ben, hüvelykben vagy pixelben, saját DPI-vel és háttérszínnel. Igazítsd az arcod - Arcfelismerés a készüléken, segédvonalakkal a fejtetőhöz, a szemvonalhoz és az állhoz. - Csípéssel, húzással és forgatással finomhangolhatod a kivágást. Háttér és finomítás - Megtarthatod az eredeti hátteret, vagy válthatsz fehérre, világosszürkére, kékre, pirosra vagy egyéni színre; összevetheted az előtte és utána állapotot, és finomíthatod a széleket. - Visszafogott fényerő-, kontraszt-, színhőmérséklet- és élességállítás a természetes hatásért. Exportálás és nyomtatás - Exportálás JPEG, PNG vagy PDF formátumban. - Nyomtatási ívek 4×6 hüvelykes, A4 vagy Letter méretben, oldalanként több példánnyal és vágójelekkel. - Mentés a Fotókba vagy a Fájlokba, illetve megosztás. Adatvédelem alapból - A fotókat a készüléked dolgozza fel, és soha nem töltődnek fel. - Offline is működik. Az opcionális sablonfrissítés-ellenőrzés csak egy nyilvános méretlistát tölt le, és nem küld személyes adatot. Jó tudni A fotókra vonatkozó szabályok országonként, hatóságonként és kérelemtípusonként eltérnek. A Snapport Lite elterjedt méreteket és segédvonalakat kínál; nem garantálja az elfogadást, és egyetlen kormányhoz sem kapcsolódik. A fotó beadása előtt ellenőrizd a hivatalos követelményeket. 44 nyelven érhető el.
 
 - Fotó & segédprogram
 - Ingyenes kezdés
@@ -22,7 +22,7 @@ Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irány�
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Töltse le a(z) Snapport Lite: Igazolványkép appot az App Store-ból](https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
+[Töltse le a(z) Snapport Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/snapportlite.html)
 

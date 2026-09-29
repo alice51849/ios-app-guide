@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -144,7 +144,8 @@
         "écoute",
         "grammaire",
         "révisions",
-        "minuteur"
+        "minuteur",
+        "toeic lecture"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -180,7 +181,10 @@
         "Bonnes pratiques",
         "Plage de recharge",
         "Rythme de recharge",
-        "Exporter les données"
+        "Exporter les données",
+        "capacité batterie",
+        "autonomie batterie",
+        "santé batterie"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -628,7 +632,9 @@
         "finances",
         "achats impulsifs",
         "épargne",
-        "gérer argent"
+        "gérer argent",
+        "dépenses conscientes",
+        "achat impulsif"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -727,7 +733,8 @@
         "accueil",
         "néon",
         "vitrine",
-        "scène"
+        "scène",
+        "pancarte aéroport"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -833,7 +840,8 @@
         "phonétique",
         "tout-petit",
         "langue",
-        "apprendre"
+        "apprendre",
+        "mandarin enfants"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -886,7 +894,8 @@
         "enfants",
         "phonétique",
         "lecture",
-        "écriture"
+        "écriture",
+        "apprendre zhuyin"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1350,7 +1359,8 @@
         "dossier médical",
         "métadonnées",
         "rgpd",
-        "vie privée"
+        "vie privée",
+        "masquer données"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1854,7 +1864,7 @@
       "key": "snapport",
       "app_store_id": "6780575828",
       "name": "Snapport : Photo d'identité",
-      "summary": "Réalisez vos photos de passeport, visa et pièce d'identité à la maison, en toute sérénité et confidentialité. Snapport propose des modèles de tailles courantes, des repères d'alignement du visage, des outils de fond et des planches prêtes à imprimer, le tout traité sur votre iPhone.",
+      "summary": "Prenez vos photos de passeport, visa et pièce d'identité à la maison, en toute sérénité et confidentialité. Snapport prépare uniquement la photo ; le document lui-même est délivré par l'autorité ou l'organisme compétent. Snapport propose des modèles de tailles courantes, des repères d'alignement du visage, des outils de fond et des planches prêtes à imprimer, le tout traité sur votre iPhone.",
       "category": "photo-utility",
       "search_terms": [
         "photo identité",
@@ -1911,18 +1921,21 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: Photo passeport",
-      "summary": "Snapport Lite - Réalisez des photos de passeport, visa et documents avec repères de taille, fond et impression.",
+      "name": "Snapport Lite",
+      "summary": "Besoin d’une photo à un format précis ? Snapport Lite recadre votre portrait exactement à la taille choisie, directement sur votre appareil. Prenez une nouvelle photo ou choisissez-en une dans votre photothèque, alignez votre visage sur les repères, soignez l’arrière-plan et exportez.",
       "category": "photo-utility",
       "search_terms": [
-        "photo visa",
-        "photo officielle",
-        "photo biométrique",
-        "photo permis",
-        "photo cv",
-        "photo étudiant",
-        "badge photo",
-        "35x45"
+        "photo identité",
+        "photo passeport",
+        "recadrer",
+        "dimensions",
+        "fond blanc",
+        "détourage",
+        "tirage",
+        "10x15",
+        "pixels",
+        "dpi",
+        "cv"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2014,7 +2027,8 @@
         "polices",
         "écran verrouillé",
         "format 24h",
-        "réveil"
+        "réveil",
+        "horloge flip"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2319,7 +2333,8 @@
         "ip",
         "tls",
         "tcp",
-        "web"
+        "web",
+        "diagnostic wifi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

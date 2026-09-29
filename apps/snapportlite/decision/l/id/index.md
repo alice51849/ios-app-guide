@@ -1,5 +1,5 @@
 ---
-title: "Snapport Lite: Buat pasfoto — Buat pasfoto di rumah | iOS App"
+title: "Snapport Lite — Potret presisi sesuai ukuran | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/id/index.html"
 modified: "2026-09-29"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Snapport Lite: Buat pasfoto — Buat pasfoto di rumah | iOS App
+# Snapport Lite — Potret presisi sesuai ukuran | iOS App
 
-Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak. Versi gratis · Mendukung 1 ekspor - Sekali beli · milik Anda selamanya · tanpa langganan - Tanpa iklan atau pelacakan Templat - Foto paspor, visa & identitas, siap cetak. - Snapport Lite bekerja luring. Pemeriksaan hanya mengunduh daftar ukuran publik; tidak ada data pribadi yang dikirim. Pangkas & sejajarkan - Sejajarkan wajah dengan panduan. Persyaratan bisa berbeda; periksa aturan resmi. Latar - Penghapusan latar mungkin perlu diperiksa. Sesuaikan - Pertahankan tampilan alami untuk dokumen resmi. Ekspor - Ekspor satu foto atau lembar cetak. Privasi - Foto Anda tetap di iPhone. - Tanpa akun - Tanpa unggah ke cloud - Deteksi wajah berjalan di perangkat untuk menyejajarkan foto. Tidak ada data biometrik yang disimpan. - Anda mengatur ekspor dan berbagi Persyaratan berbeda menurut negara, instansi, dan jenis pengajuan. Selalu periksa aturan resmi sebelum mengirim.
+Butuh foto dengan ukuran tertentu? Snapport Lite memotong potret Anda tepat sesuai ukuran yang dipilih, langsung di perangkat Anda. Ambil foto baru atau pilih dari perpustakaan, sejajarkan wajah dengan garis panduan, rapikan latar belakang, lalu ekspor. Snapport Lite hanya mengedit foto Anda. Paspor, visa, dan kartu identitas hanya diterbitkan oleh instansi atau lembaga tempat Anda mengajukan permohonan. Coba gratis, buka sekali - Semua template ukuran dan alat edit bisa dipakai gratis. - Ekspor pertama sudah termasuk. - Sekali beli untuk ekspor tanpa batas. Tanpa langganan, tanpa iklan, tanpa pelacakan, tanpa akun. Pilih ukuran foto - 35 template bawaan untuk 28 negara dan wilayah, termasuk 2×2 inci, 35×45 mm, 33×48 mm, dan 50×70 mm, untuk foto pengajuan paspor dan visa, CV, dan lainnya. - Atur ukuran kustom dalam mm, inci, atau piksel, dengan DPI dan warna latar pilihan Anda. Sejajarkan wajah - Deteksi wajah langsung di perangkat dengan garis panduan untuk puncak kepala, garis mata, dan dagu. - Cubit, seret, dan putar untuk menyempurnakan potongan. Latar dan sentuhan - Pertahankan latar asli atau ganti ke putih, abu-abu muda, biru, merah, atau warna kustom, bandingkan sebelum dan sesudah, lalu haluskan tepinya. - Penyesuaian lembut untuk kecerahan, kontras, kehangatan, dan ketajaman menjaga tampilan tetap alami. Ekspor dan cetak - Ekspor sebagai JPEG, PNG, atau PDF. - Lembar cetak ukuran 4×6 inci, A4, atau Letter, dengan beberapa salinan per halaman dan garis potong. - Simpan ke Foto atau File, atau bagikan. Privasi sejak awal - Foto diproses di perangkat Anda dan tidak pernah diunggah. - Berfungsi offline. Pemeriksaan pembaruan template yang opsional hanya mengunduh daftar ukuran publik dan tidak mengirim data pribadi. Perlu diketahui Ketentuan foto berbeda menurut negara, instansi, dan jenis permohonan. Snapport Lite menyediakan ukuran umum dan garis panduan; aplikasi ini tidak menjamin foto diterima dan tidak berafiliasi dengan pemerintah mana pun. Periksa persyaratan resmi sebelum menyerahkan foto. Tersedia dalam 44 bahasa.
 
 - Foto & utilitas
 - Gratis untuk mulai · buka kunci sekali bayar
@@ -22,7 +22,7 @@ Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukura
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan Snapport Lite: Buat pasfoto di App Store](https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
+[Dapatkan Snapport Lite di App Store](https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/snapportlite.html)
 

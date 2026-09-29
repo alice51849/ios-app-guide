@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1861,8 +1861,8 @@
     {
       "key": "snapport",
       "app_store_id": "6780575828",
-      "name": "Snapport : Passeport & ID",
-      "summary": "Créez vos photos de passeport, de visa et d’identité à la maison, calmement et en toute confidentialité. Snapport propose des modèles de formats courants, des guides d’alignement du visage, des outils de fond et des planches prêtes à imprimer, le tout traité directement sur votre iPhone.",
+      "name": "Snapport : Photos passeport",
+      "summary": "Prenez vos photos de passeport, de visa et d’identité à la maison, calmement et en toute confidentialité. Snapport prépare uniquement la photo; le document lui-même est délivré par l’autorité ou l’organisme compétent. Snapport propose des modèles de formats courants, des guides d’alignement du visage, des outils de fond et des planches prêtes à imprimer, le tout traité directement sur votre iPhone.",
       "category": "photo-utility",
       "search_terms": [
         "photo passeport",
@@ -1922,18 +1922,21 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: Photo passeport",
-      "summary": "Snapport Lite - Réalisez des photos de passeport, visa et documents avec repères de taille, fond et impression.",
+      "name": "Snapport Lite",
+      "summary": "Besoin d’une photo à un format précis ? Snapport Lite recadre votre portrait exactement à la taille choisie, directement sur votre appareil. Prenez une nouvelle photo ou choisissez-en une dans votre photothèque, alignez votre visage sur les repères, soignez l’arrière-plan et exportez.",
       "category": "photo-utility",
       "search_terms": [
-        "photo visa",
-        "photo biométrique",
-        "photo documents",
-        "photo permis",
-        "photo cv",
-        "photo étudiant",
-        "badge photo",
-        "50x70"
+        "photo passeport",
+        "photo identité",
+        "50x70",
+        "recadrer",
+        "dimensions",
+        "fond blanc",
+        "détourage",
+        "tirage",
+        "4x6",
+        "pixels",
+        "dpi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

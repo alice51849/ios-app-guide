@@ -6,7 +6,7 @@
   "name": "Lumi Studio Kiadói Keresési Szándék Katalógus",
   "description": "Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.",
   "inLanguage": "hu",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Igazolványkép",
-        "description": "Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással.",
+        "name": "Snapport Lite",
+        "description": "Pontos méretű fotóra van szükséged? A Snapport Lite közvetlenül a készülékeden vágja pontosan a választott méretre a portrédat. Fényképezz újat, vagy",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Igazolványkép",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "hu",
-          "description": "Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással.",
+          "description": "Pontos méretű fotóra van szükséged? A Snapport Lite közvetlenül a készülékeden vágja pontosan a választott méretre a portrédat. Fényképezz újat, vagy",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-snapportlite"
           },

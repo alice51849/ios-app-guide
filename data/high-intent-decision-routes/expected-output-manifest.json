@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "998ac9dd9bad62fc464f8486e92225b064d87213b5e7c7b5946a60312f26ac74",
+    "copy_sha256": "50cb515166efcfe11a6fbbd43349dec718e558edfd98902c977a9b731157c2c3",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "2a8a94f08ae8e88902e21fd394aef082e8102597f8058001bdfc54ef88d2ee7d",
+      "generated_sha256": "ae0271e5939193486239a6e8419f7310e1ada91020df01080b848ce92a2216a4",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "e6648a0c5522be4915142c254a48a77b1e67b89a5894bdeb4b32745cec857c4b",
+      "generated_sha256": "d0652a85a74f07d8e1329543d5a3c23b41cfa46756d9c7b63104a41424817474",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -234,12 +234,12 @@
       "relative_path": "en-US/decide/shotinbox/sort-search-and-finish-screenshot-backlog.html"
     },
     {
-      "generated_sha256": "92e9339e3ab48177d321a00b1791d9e72c116dea19d163930fc147936f7f5172",
+      "generated_sha256": "b419b1358b919abcf7729db5f8d34b479b26e4e9e984b2d300a78a43c8abf057",
       "kind": "route_html",
       "relative_path": "en-US/decide/snapport/make-passport-photo-at-home.html"
     },
     {
-      "generated_sha256": "ec66275054cdb02c3449325406523d173bf40a18383898412fb548be7a1bbb2d",
+      "generated_sha256": "19da26348affe726633b43c437ba7a1b455c1c767d1ca3c5f45cb7e2edce2d9f",
       "kind": "route_html",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html"
     },
@@ -367,14 +367,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "998ac9dd9bad62fc464f8486e92225b064d87213b5e7c7b5946a60312f26ac74",
+    "copy_sha256": "50cb515166efcfe11a6fbbd43349dec718e558edfd98902c977a9b731157c2c3",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "19e19ab60b9ddec1f7a3f2a6a4632988734b52d5e5d7bd7a48b1158da715ce64",
+  "manifest_digest": "c85aafcf045547df6c4f9c510748d163940c1149870681845c679b22e193aaed",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "da69305b3ad2863572aa6635bdac45f5f5e83cd372cc896cb3bb676a59eab654",
+  "release_contract_digest": "fd1df748bb4f227a58c06d2cc78141ad1940dfd23fba03959469ad0813d4b60f",
   "release_state": "exact",
   "route_count": 65,
   "routes": [
@@ -1068,8 +1068,8 @@
       "creative_id": "snapport:make-passport-photo-at-home:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "92e9339e3ab48177d321a00b1791d9e72c116dea19d163930fc147936f7f5172",
-      "record_digest": "5912c3392df778b89dd82936d42e995ee604bc70f2e8c270456a1a0a0aeaa7c8",
+      "output_sha256": "b419b1358b919abcf7729db5f8d34b479b26e4e9e984b2d300a78a43c8abf057",
+      "record_digest": "fd1226093fb78900c2f1f6e7fbcea5d5673aafd23303f0d4860465bf17683b13",
       "relative_path": "en-US/decide/snapport/make-passport-photo-at-home.html",
       "route_id": "en-US:snapport:make-passport-photo-at-home",
       "route_slug": "make-passport-photo-at-home",
@@ -1085,8 +1085,8 @@
       "creative_id": "snapportlite:test-passport-photo-layout-free:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "ec66275054cdb02c3449325406523d173bf40a18383898412fb548be7a1bbb2d",
-      "record_digest": "04ce2fb4ab923c562035792c3ed8eddb6886125d037331fa0f6f312a9cc1330d",
+      "output_sha256": "19da26348affe726633b43c437ba7a1b455c1c767d1ca3c5f45cb7e2edce2d9f",
+      "record_digest": "d084b9b5d2436ce4ff2af76c2a0df7a2a139050760c6163c5e9ba6d62c6d0986",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html",
       "route_id": "en-US:snapportlite:test-passport-photo-layout-free",
       "route_slug": "test-passport-photo-layout-free",
@@ -1486,5 +1486,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "5058676aca52ae18245f9aaa09c5862a10717e28e6b06269483c025ad239e90b"
+  "source_contract_digest": "e07a60e7b97b7081c1e98adfef204d787ce029af2ef8c72368ffbfe20c5a6b43"
 }

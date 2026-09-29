@@ -6,7 +6,7 @@
   "name": "Katalog vyhledávacích záměrů vydavatele Lumi Studio",
   "description": "Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.",
   "inLanguage": "cs",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Foto na doklady",
-        "description": "Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku.",
+        "name": "Snapport Lite",
+        "description": "Potřebujete fotku v přesném rozměru? Snapport Lite ořízne váš portrét přesně na zvolenou velikost, přímo ve vašem zařízení. Vyfoťte novou fotku nebo ji",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Foto na doklady",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "cs",
-          "description": "Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku.",
+          "description": "Potřebujete fotku v přesném rozměru? Snapport Lite ořízne váš portrét přesně na zvolenou velikost, přímo ve vašem zařízení. Vyfoťte novou fotku nebo ji",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-snapportlite"
           },

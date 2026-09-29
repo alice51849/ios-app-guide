@@ -5,7 +5,7 @@
     <link>https://open.cait518.cc/ios-app-guide/</link>
     <description>Fresh publisher-disclosed iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Sep 2026 06:31:23 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 10:28:29 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -17,6 +17,17 @@
     <atom:link href="https://rpc.rsscloud.io/websub" rel="hub"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://open.cait518.cc/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
+    <item>
+      <title>Snapport: Passport &amp; ID Photos</title>
+      <link>https://open.cait518.cc/ios-app-guide/guides/snapport.html</link>
+      <description>Take passport, visa, and ID photos at home — the calm, private way.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapport.html</guid>
+      <pubDate>Tue, 29 Sep 2026 10:28:29 GMT</pubDate>
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" fileSize="48966" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">Snapport: Passport &amp; ID Photos preview image</media:title>
+      </media:content>
+      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" width="1200" height="675"/>
+    </item>
     <item>
       <title>小一注音暑假怎麼準備？14 天低壓暖身指南（2026）</title>
       <link>https://open.cait518.cc/ios-app-guide/guides/zhuyin-grade-1-preparation.html</link>
@@ -323,21 +334,10 @@
       <description>A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for…</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapportlite.html</guid>
       <pubDate>Tue, 29 Sep 2026 05:37:20 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" fileSize="53290" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" fileSize="51385" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
         <media:title type="plain">Free passport and ID photo apps: what to check before you rely on preview image</media:title>
       </media:content>
       <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapportlite-share.jpg" width="1200" height="675"/>
-    </item>
-    <item>
-      <title>Snapport: Best Passport Photo App for iPhone</title>
-      <link>https://open.cait518.cc/ios-app-guide/guides/snapport.html</link>
-      <description>Create passport and ID photos at home with Snapport. No subscription or ads.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/guides/snapport.html</guid>
-      <pubDate>Tue, 29 Sep 2026 05:37:20 GMT</pubDate>
-      <media:content url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" fileSize="44292" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">Snapport: Best Passport Photo App for iPhone preview image</media:title>
-      </media:content>
-      <media:thumbnail url="https://open.cait518.cc/ios-app-guide/social/img/snapport-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>Screenshot backlog: sorting them is not the point, acting on them</title>
@@ -783,6 +783,13 @@
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title>Lumi Studio Publisher Search Intent Catalog</title>
+      <link>https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</link>
+      <description>A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.</description>
+      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Trip budget per day sheet</title>
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/trip-budget-sheet.html</link>
       <description>Enter one trip budget, the days, the travelers and the costs you already know, then download a sheet with how much each person can spend per day and how it splits across food, transport, tickets and shopping.</description>
@@ -857,13 +864,6 @@
       <link>https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</link>
       <description>List what your household does online at the same time and how many devices do it, then download a sheet with the Mbps you need and the headroom left on your plan.</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/en-US/tools/bandwidth-need-sheet.html</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Lumi Studio Publisher Search Intent Catalog</title>
-      <link>https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</link>
-      <description>A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.</description>
-      <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</guid>
       <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -953,7 +953,7 @@
     <item>
       <title>Private Passport Photo Print Sheet Maker (4×6, A4 &amp; Letter)</title>
       <link>https://open.cait518.cc/ios-app-guide/answers/how-can-i-arrange-passport-photos-on-a-4x6-print-sheet-without-uploading-my-photo.html</link>
-      <description>Arrange passport photos on a 4×6, A4 or Letter sheet entirely in your browser. No upload, account or analytics. Where Snapport fits: Make your own at home in 30 seconds.</description>
+      <description>Arrange passport photos on a 4×6, A4 or Letter sheet entirely in your browser. No upload, account or analytics. Where Snapport fits: Take passport, visa, and ID photos at home — the calm, private way.</description>
       <guid isPermaLink="true">https://open.cait518.cc/ios-app-guide/answers/how-can-i-arrange-passport-photos-on-a-4x6-print-sheet-without-uploading-my-photo.html</guid>
       <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
     </item>

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "pl",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1868,7 +1868,7 @@
       "key": "snapport",
       "app_store_id": "6780575828",
       "name": "Snapport: Zdjęcia do ID",
-      "summary": "Twórz zdjęcia do paszportu, wizy i dokumentów w domu, spokojnie i prywatnie. Snapport oferuje szablony popularnych rozmiarów, prowadnice wyrównania twarzy, narzędzia tła i układy gotowe do druku. Wszystko jest przetwarzane bezpośrednio na iPhonie.",
+      "summary": "Zrób w domu zdjęcia do paszportu, wizy i dokumentów, spokojnie i prywatnie. Snapport przygotowuje tylko zdjęcie; sam dokument wydaje właściwy urząd lub instytucja. Snapport oferuje szablony popularnych rozmiarów, prowadnice wyrównania twarzy, narzędzia tła i układy gotowe do druku. Wszystko jest przetwarzane bezpośrednio na iPhonie.",
       "category": "photo-utility",
       "search_terms": [
         "zdjęcie do dokumentów",
@@ -1927,16 +1927,20 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: Foto do dowodu",
-      "summary": "Snapport Lite - Twórz zdjęcia paszportowe, wizowe i dokumentowe z pomocą narzędzi do rozmiaru, tła i gotowego do druku eksportu.",
+      "name": "Snapport Lite",
+      "summary": "Potrzebujesz zdjęcia w konkretnym rozmiarze? Snapport Lite przycina Twój portret dokładnie do wybranego rozmiaru, bezpośrednio na urządzeniu. Zrób nowe zdjęcie lub wybierz je z biblioteki, ustaw twarz według linii pomocniczych, popraw tło i wyeksportuj.",
       "category": "photo-utility",
       "search_terms": [
-        "zdjęcie do dokumentów",
-        "zdjęcie paszportowe",
-        "zdjęcie do wizy",
-        "zdjęcie dowodowe",
-        "zdjęcie biometryczne",
-        "2x2"
+        "zdjęcie do paszportu",
+        "przycinanie",
+        "wymiary",
+        "białe tło",
+        "usuwanie tła",
+        "wydruk",
+        "10x15",
+        "piksele",
+        "dpi",
+        "selfie"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

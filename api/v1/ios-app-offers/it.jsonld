@@ -6,7 +6,7 @@
   "name": "Catalogo degli intenti di ricerca dell'editore Lumi Studio",
   "description": "Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.",
   "inLanguage": "it",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Fai fototessere",
-        "description": "Snapport Lite - Realizza foto per passaporto, visto e documenti con guide di dimensione, sfondo e stampa.",
+        "name": "Snapport Lite",
+        "description": "Ti serve una foto in un formato preciso? Snapport Lite ritaglia il tuo ritratto esattamente nella misura che scegli, direttamente sul tuo dispositivo",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Fai fototessere",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "it",
-          "description": "Snapport Lite - Realizza foto per passaporto, visto e documenti con guide di dimensione, sfondo e stampa.",
+          "description": "Ti serve una foto in un formato preciso? Snapport Lite ritaglia il tuo ritratto esattamente nella misura che scegli, direttamente sul tuo dispositivo",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-snapportlite"
           },

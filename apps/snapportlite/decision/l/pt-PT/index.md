@@ -1,5 +1,5 @@
 ---
-title: "Snapport Lite: Foto tipo passe — Foto passe passaporte | iOS App"
+title: "Snapport Lite — Retratos no tamanho exato | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/pt-PT/index.html"
 modified: "2026-09-29"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Snapport Lite: Foto tipo passe — Foto passe passaporte | iOS App
+# Snapport Lite — Retratos no tamanho exato | iOS App
 
-Snapport Lite - Faça fotos de passaporte, visto e documentos com guias de tamanho, fundo e impressão. Versão grátis · Permite 1 exportação - Compra única · para sempre · sem assinatura - Sem anúncios, sem rastreamento Modelos - Fotos de passaporte, visto e documento, prontas para imprimir. - O Snapport Lite funciona offline. A verificação só baixa uma lista pública de tamanhos; nenhum dado pessoal é enviado. Cortar e alinhar - Alinhe o rosto dentro da guia. Os requisitos podem variar; confira as regras oficiais. Fundo - A remoção de fundo pode precisar de revisão. Ajustar - Mantenha uma aparência natural para documentos oficiais. Exportar - Exporte uma foto única ou uma folha de impressão. Privacidade - Suas fotos ficam no seu iPhone. - Sem conta - Sem envio à nuvem - A detecção de rosto roda no dispositivo para alinhar sua foto. Nenhum dado biométrico é armazenado. - Você controla exportação e compartilhamento Os requisitos da foto variam por país, órgão e tipo de solicitação. Sempre confira as regras oficiais antes de enviar.
+Precisa de uma fotografia com um tamanho específico? O Snapport Lite recorta o seu retrato exatamente no tamanho escolhido, diretamente no seu dispositivo. Tire uma fotografia nova ou escolha uma da fototeca, alinhe o rosto com as guias, arrume o fundo e exporte. O Snapport Lite só edita a sua fotografia. Passaportes, vistos e documentos de identificação são emitidos exclusivamente pela autoridade ou entidade a quem faz o pedido. Experimente grátis, desbloqueio único - Todos os modelos de tamanho e ferramentas de edição são gratuitos. - A primeira exportação está incluída. - Uma compra única desbloqueia exportações ilimitadas. Sem subscrição, sem anúncios, sem rastreio, sem conta. Escolha o tamanho da fotografia - 35 modelos integrados para 28 países e regiões, incluindo 2×2 pol., 35×45 mm, 33×48 mm e 50×70 mm, para fotografias de pedidos de passaporte e visto, currículos e muito mais. - Defina um tamanho personalizado em mm, polegadas ou píxeis, com o DPI e a cor de fundo que quiser. Alinhe o rosto - Deteção de rosto no próprio dispositivo, com guias para o topo da cabeça, a linha dos olhos e o queixo. - Aproxime com dois dedos, arraste e rode para ajustar o enquadramento. Fundo e retoques - Mantenha o fundo original ou mude para branco, cinzento-claro, azul, vermelho ou uma cor personalizada; compare o antes e o depois e refine os contornos. - Ajustes suaves de brilho, contraste, temperatura e nitidez mantêm um aspeto natural. Exporte e imprima - Exporte em JPEG, PNG ou PDF. - Folhas de impressão em 4×6 pol., A4 ou Carta, com várias cópias por página e guias de corte. - Guarde em Fotografias ou Ficheiros, ou partilhe. Privacidade desde a conceção - As fotografias são processadas no seu dispositivo e nunca são carregadas. - Funciona offline. A verificação opcional de modelos só descarrega uma lista pública de tamanhos e não envia dados pessoais. Bom saber As regras para fotografias variam consoante o país, o organismo e o tipo de pedido. O Snapport Lite oferece tamanhos comuns e guias; não garante a aceitação e não está afiliado a nenhum governo. Confirme os requisitos oficiais antes de enviar uma fotografia. Disponível em 44 idiomas.
 
 - Fotografia e utilidade
 - Grátis para começar · desbloqueio único
@@ -22,7 +22,7 @@ Snapport Lite - Faça fotos de passaporte, visto e documentos com guias de taman
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Baixe Snapport Lite: Foto tipo passe na App Store](https://apps.apple.com/pt/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
+[Baixe Snapport Lite na App Store](https://apps.apple.com/pt/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/snapportlite.html)
 

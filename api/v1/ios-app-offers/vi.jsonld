@@ -6,7 +6,7 @@
   "name": "Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio",
   "description": "Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.",
   "inLanguage": "vi",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Ảnh thẻ tại nhà",
-        "description": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
+        "name": "Snapport Lite",
+        "description": "Bạn cần một tấm ảnh đúng kích thước? Snapport Lite cắt ảnh chân dung của bạn chính xác theo kích thước bạn chọn, ngay trên thiết bị. Chụp ảnh mới hoặc chọn",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Ảnh thẻ tại nhà",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "vi",
-          "description": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
+          "description": "Bạn cần một tấm ảnh đúng kích thước? Snapport Lite cắt ảnh chân dung của bạn chính xác theo kích thước bạn chọn, ngay trên thiết bị. Chụp ảnh mới hoặc chọn",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite"
           },

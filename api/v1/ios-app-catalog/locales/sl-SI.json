@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1888,7 +1888,7 @@
       "key": "snapport",
       "app_store_id": "6780575828",
       "name": "Snapport: Foto za dokumente",
-      "summary": "Ustvarite fotografije za potni list, vizum in osebne dokumente kar doma — mirno in zasebno. Snapport vam ponuja predloge običajnih velikosti, vodila za poravnavo obraza, orodja za ozadje in postavitve za tisk, vse obdelano neposredno na vašem iPhonu.",
+      "summary": "Posnemite fotografije za potni list, vizum in osebne dokumente kar doma — mirno in zasebno. Snapport pripravi samo fotografijo; sam dokument izda pristojni organ ali ustanova. Snapport vam ponuja predloge običajnih velikosti, vodila za poravnavo obraza, orodja za ozadje in postavitve za tisk, vse obdelano neposredno na vašem iPhonu.",
       "category": "photo-utility",
       "search_terms": [
         "slika za potni list",
@@ -1947,16 +1947,19 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: Slika za osebno",
-      "summary": "Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo usmerjenega merjenja, orodij za ozadje in izvoza, pripravljenega za tisk.",
+      "name": "Snapport Lite",
+      "summary": "Potrebujete fotografijo točno določene velikosti? Snapport Lite obreže vaš portret natančno na izbrano velikost, neposredno v vaši napravi. Posnemite novo fotografijo ali jo izberite iz knjižnice, poravnajte obraz po vodilih, uredite ozadje in izvozite.",
       "category": "photo-utility",
       "search_terms": [
-        "fotografija za potni list",
-        "slika za osebno",
-        "biometrična fotografija",
-        "fotografija za dokumente",
-        "35x45",
-        "2x2"
+        "slika za potni list",
+        "obrezovanje",
+        "dimenzije",
+        "belo ozadje",
+        "odstranitev ozadja",
+        "tiskanje",
+        "10x15",
+        "piksli",
+        "dpi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

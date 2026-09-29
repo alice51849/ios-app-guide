@@ -6,7 +6,7 @@
   "name": "Catálogo de intenciones de búsqueda del editor Lumi Studio",
   "description": "Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.",
   "inLanguage": "es-MX",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/mx/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Fotos de carnet",
-        "description": "Snapport Lite - Haz fotos de pasaporte, visado y documentos con guías de tamaño, fondo e impresión.",
+        "name": "Snapport Lite",
+        "description": "¿Necesitas una foto con medidas específicas? Snapport Lite recorta tu retrato exactamente al tamaño que elijas, directamente en tu dispositivo. Toma una",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Fotos de carnet",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/mx/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "es-MX",
-          "description": "Snapport Lite - Haz fotos de pasaporte, visado y documentos con guías de tamaño, fondo e impresión.",
+          "description": "¿Necesitas una foto con medidas específicas? Snapport Lite recorta tu retrato exactamente al tamaño que elijas, directamente en tu dispositivo. Toma una",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld#offer-snapportlite"
           },

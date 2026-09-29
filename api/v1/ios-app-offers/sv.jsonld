@@ -6,7 +6,7 @@
   "name": "Lumi Studio Utgivaresökintentskatalog",
   "description": "En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.",
   "inLanguage": "sv",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Passfoto hemma",
-        "description": "Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrundsverktyg och utskriftsklar export.",
+        "name": "Snapport Lite",
+        "description": "Behöver du ett foto i en exakt storlek? Snapport Lite beskär ditt porträtt till den storlek du väljer, direkt på din enhet. Ta ett nytt foto eller välj ett",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Passfoto hemma",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "sv",
-          "description": "Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrundsverktyg och utskriftsklar export.",
+          "description": "Behöver du ett foto i en exakt storlek? Snapport Lite beskär ditt porträtt till den storlek du väljer, direkt på din enhet. Ta ett nytt foto eller välj ett",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-snapportlite"
           },

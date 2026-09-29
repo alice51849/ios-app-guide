@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-28",
-  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
+  "date_modified": "2026-09-29",
+  "content_digest": "f7cc3ca93925505b905fd73bdab3e67a52044dd31071506ccaddc35accfeeb31",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -315,7 +315,9 @@
         "docx",
         "cartaapresentação",
         "vaga",
-        "profissional"
+        "profissional",
+        "currículo ats",
+        "gerador de currículo"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -454,7 +456,8 @@
         "japonês",
         "coreano",
         "iniciante",
-        "áudio"
+        "áudio",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -727,7 +730,8 @@
         "letras",
         "fila",
         "palco",
-        "aviso"
+        "aviso",
+        "placa aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -832,7 +836,8 @@
         "fonética",
         "pré-escola",
         "pequenos",
-        "idioma"
+        "idioma",
+        "mandarim crianças"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1414,7 +1419,8 @@
         "compras",
         "calendário",
         "widget",
-        "organização"
+        "organização",
+        "checklist"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1492,7 +1498,8 @@
         "margem lucro",
         "rentabilidade cliente",
         "rateio de custos",
-        "análise cruzada"
+        "análise cruzada",
+        "despesas do projeto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1856,7 +1863,8 @@
         "categorias",
         "semelhantes",
         "linha do tempo",
-        "compra única"
+        "compra única",
+        "organizar capturas de tela"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1883,7 +1891,7 @@
       "key": "snapport",
       "app_store_id": "6780575828",
       "name": "Snapport: Foto 3x4 Passaporte",
-      "summary": "Faça fotos de passaporte, visto e documento em casa, de forma tranquila e privada. O Snapport oferece modelos de tamanhos comuns, guias de alinhamento do rosto, ferramentas de fundo e folhas prontas para imprimir, tudo processado no seu iPhone.",
+      "summary": "Faça fotos de passaporte, visto e documento em casa, de forma tranquila e privada. O Snapport prepara apenas a foto; o documento em si é emitido pelo órgão ou instituição responsável. O Snapport oferece modelos de tamanhos comuns, guias de alinhamento do rosto, ferramentas de fundo e folhas prontas para imprimir, tudo processado no seu iPhone.",
       "category": "photo-utility",
       "search_terms": [
         "foto 3x4",
@@ -1941,17 +1949,21 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite: Faça foto 3x4",
-      "summary": "Snapport Lite - Faça fotos de passaporte, visto e documentos com guias de tamanho, fundo e impressão.",
+      "name": "Snapport Lite",
+      "summary": "Precisa de uma foto em um tamanho específico? O Snapport Lite recorta o seu retrato exatamente no tamanho escolhido, direto no seu dispositivo. Tire uma foto nova ou escolha uma da sua fototeca, alinhe o rosto com as guias, ajeite o fundo e exporte.",
       "category": "photo-utility",
       "search_terms": [
-        "foto visto",
-        "foto documento",
-        "foto identidade",
-        "foto biométrica",
-        "foto currículo",
-        "foto estudante",
-        "foto crachá"
+        "foto 3x4",
+        "foto passaporte",
+        "recortar",
+        "medidas",
+        "fundo branco",
+        "remover fundo",
+        "imprimir",
+        "10x15",
+        "pixels",
+        "dpi",
+        "cv"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2119,7 +2131,8 @@
         "missões",
         "recompensas",
         "férias",
-        "memórias"
+        "memórias",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

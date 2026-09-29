@@ -6,7 +6,7 @@
   "name": "Catalogul de intenții de căutare Lumi Studio al editorului",
   "description": "O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.",
   "inLanguage": "ro",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Poze de buletin",
-        "description": "Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu dimensiuni ghidate, instrumente pentru fundal și export gata de imprimare.",
+        "name": "Snapport Lite",
+        "description": "Ai nevoie de o fotografie la o dimensiune anume? Snapport Lite îți decupează portretul exact la mărimea aleasă, direct pe dispozitivul tău. Fă o fotografie",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Poze de buletin",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ro",
-          "description": "Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu dimensiuni ghidate, instrumente pentru fundal și export gata de imprimare.",
+          "description": "Ai nevoie de o fotografie la o dimensiune anume? Snapport Lite îți decupează portretul exact la mărimea aleasă, direct pe dispozitivul tău. Fă o fotografie",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-snapportlite"
           },

@@ -1,5 +1,5 @@
 ---
-title: "Snapport Lite: Passfoto hemma — Skapa ID-foton hemma | iOS App"
+title: "Snapport Lite — Porträtt i exakt fotostorlek | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/sv/index.html"
 modified: "2026-09-29"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Snapport Lite: Passfoto hemma — Skapa ID-foton hemma | iOS App
+# Snapport Lite — Porträtt i exakt fotostorlek | iOS App
 
-Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrundsverktyg och utskriftsklar export. Gratisversion · Stöder 1 export - Engångsköp · ditt för alltid · ingen prenumeration - Inga annonser, ingen spårning Mallar - Pass-, visum- & ID-foton — utskriftsklara. - Snapport Lite fungerar helt offline. Kontrollera laddar endast ner en offentlig lista över vanliga storlekar — inga personuppgifter skickas. Beskär & Justera - Justera ditt ansikte inom guiden. Krav kan variera, så granska officiella regler innan du skickar in. Bakgrund - Bakgrundsborttagning kan behöva granskning. Justera - Håll ditt utseende naturligt för officiella dokument. Exportera - Exportera ett enda foto eller ett utskriftsark. Integritet - Dina foton stannar på din iPhone. - Inget konto - Ingen molnuppladdning - Ansiktsigenkänning körs på enheten för att hjälpa till att justera ditt foto. Ingen biometrisk identitet lagras. - Du kontrollerar export och delning Fotokrav varierar beroende på land, myndighet och typ av ansökan. Vänligen granska de officiella kraven innan du skickar in.
+Behöver du ett foto i en exakt storlek? Snapport Lite beskär ditt porträtt till den storlek du väljer, direkt på din enhet. Ta ett nytt foto eller välj ett från biblioteket, rikta in ansiktet efter stödlinjerna, snygga till bakgrunden och exportera. Snapport Lite redigerar bara ditt foto. Pass, visum och id-kort utfärdas enbart av den myndighet eller organisation du ansöker hos. Prova gratis, lås upp en gång - Alla storleksmallar och redigeringsverktyg är gratis att använda. - Din första export ingår. - Ett engångsköp låser upp obegränsade exporter. Ingen prenumeration, inga annonser, ingen spårning, inget konto. Välj fotostorlek - 35 inbyggda mallar för 28 länder och regioner, bland annat 2×2 tum, 35×45 mm, 33×48 mm och 50×70 mm, för foton till pass- och visumansökningar, cv och mer. - Ställ in en egen storlek i mm, tum eller pixlar, med valfri DPI och bakgrundsfärg. Rikta in ansiktet - Ansiktsigenkänning direkt på enheten med stödlinjer för hjässa, ögonlinje och haka. - Nyp, dra och rotera för att finjustera beskärningen. Bakgrund och justeringar - Behåll originalbakgrunden eller byt till vitt, ljusgrått, blått, rött eller en egen färg, jämför före och efter och förfina kanterna. - Varsamma reglage för ljusstyrka, kontrast, värme och skärpa ger ett naturligt resultat. Exportera och skriv ut - Exportera som JPEG, PNG eller PDF. - Utskriftsark i 4×6 tum, A4 eller Letter, med flera kopior per sida och skärmarken. - Spara i Bilder eller Filer, eller dela. Integritet från grunden - Dina foton bearbetas på enheten och laddas aldrig upp. - Fungerar offline. Den valfria kontrollen av malluppdateringar hämtar bara en offentlig lista med storlekar och skickar inga personuppgifter. Bra att veta Reglerna för foton skiljer sig åt mellan länder, myndigheter och typer av ansökningar. Snapport Lite erbjuder vanliga storlekar och stödlinjer; appen garanterar inte att fotot godkänns och är inte knuten till någon regering. Kontrollera de officiella kraven innan du lämnar in ett foto. Finns på 44 språk.
 
 - Foto & verktyg
 - Gratis att börja · engångsupplåsning
@@ -22,7 +22,7 @@ Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrun
 - Privat / på enheten
 - App Store · Gratis
 
-[Hämta Snapport Lite: Passfoto hemma i App Store](https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
+[Hämta Snapport Lite i App Store](https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=geo_pick&mt=8)
 
 [Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/snapportlite.html)
 

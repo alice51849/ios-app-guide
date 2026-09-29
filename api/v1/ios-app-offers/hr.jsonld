@@ -6,7 +6,7 @@
   "name": "Katalog namjera pretraživanja izdavača Lumi Studio",
   "description": "Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.",
   "inLanguage": "hr",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Slike za osobnu",
-        "description": "Snapport Lite - Izradite fotografije za putovnicu, vizu i dokumente uz vođene veličine, alate za pozadinu i izvoz spreman za ispis.",
+        "name": "Snapport Lite",
+        "description": "Trebate fotografiju točno određene veličine? Snapport Lite obrezuje vaš portret točno na odabranu veličinu, izravno na vašem uređaju. Snimite novu",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Slike za osobnu",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "hr",
-          "description": "Snapport Lite - Izradite fotografije za putovnicu, vizu i dokumente uz vođene veličine, alate za pozadinu i izvoz spreman za ispis.",
+          "description": "Trebate fotografiju točno određene veličine? Snapport Lite obrezuje vaš portret točno na odabranu veličinu, izravno na vašem uređaju. Snimite novu",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapportlite"
           },

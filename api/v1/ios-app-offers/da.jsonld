@@ -6,7 +6,7 @@
   "name": "Lumi Studio – udgiverens katalog over søgeintentioner",
   "description": "Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.",
   "inLanguage": "da",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2724,8 +2724,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite: Pasfoto hjemme",
-        "description": "Snapport Lite - Tag pas-, visum- og dokumentfotos med vejledende størrelser, baggrundsværktøjer og klar til print eksport.",
+        "name": "Snapport Lite",
+        "description": "Skal du bruge et foto i en bestemt størrelse? Snapport Lite beskærer dit portræt præcis til den størrelse, du vælger, direkte på din enhed. Tag et nyt foto",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2740,7 +2740,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite: Pasfoto hjemme",
+          "name": "Snapport Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "da",
-          "description": "Snapport Lite - Tag pas-, visum- og dokumentfotos med vejledende størrelser, baggrundsværktøjer og klar til print eksport.",
+          "description": "Skal du bruge et foto i en bestemt størrelse? Snapport Lite beskærer dit portræt præcis til den størrelse, du vælger, direkte på din enhed. Tag et nyt foto",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-snapportlite"
           },

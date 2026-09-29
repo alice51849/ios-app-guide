@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalog",
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-US",
-  "dateModified": "2026-09-28",
+  "dateModified": "2026-09-29",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -744,8 +744,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
-        "name": "dB Halo: Sound Meter",
-        "description": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large",
+        "name": "dB Halo",
+        "description": "dB Halo — From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -760,7 +760,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806826699"
           },
-          "name": "dB Halo: Sound Meter",
+          "name": "dB Halo",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
@@ -771,11 +771,11 @@
             "target": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-US/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "en-US",
-          "description": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large",
+          "description": "dB Halo — From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-dbhalo"
           },

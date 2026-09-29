@@ -18,6 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς λογαριασμό
 - Χωρίς διαφημίσεις
 - App Store · Δωρεάν
+- ★ 5.0/5 · 1
 
 [Κατεβάστε το Lumi Math Planet από το App Store →](https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
 

@@ -21,7 +21,7 @@ If you scan patient consent forms, discharge paperwork or referrals, the scanner
 - No tracking
 - Private / on-device
 - App Store · Free
-- ★ 5.0/5 · 1
+- ★ 3.0/5 · 2
 
 [Get ScanTo Pro on the App Store →](https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=geo_pick&mt=8)
 

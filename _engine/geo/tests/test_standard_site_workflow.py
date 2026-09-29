@@ -47,13 +47,13 @@ import gen_standard_site as generator  # noqa: E402
 
 MIRROR_SHA256 = {
     "_engine/social/gen_standard_site.py": (
-        "56fa242fb822cc3683183c24e49c99d24fd9390eaa7d1833971e4ccfc08e3546"
+        "352e9b693acdcada4851c4758f671f1864985037e2fd12046a5413796dfb6575"
     ),
     "_engine/social/standard_site_publish.py": (
-        "de28ff305b368c0ce5bf8c07326639dbfbe015120a7e696101b7aea33bc25176"
+        "af1f44bc03cbb7a669ee54cd30a91e0cdb7920766f27ba33a99503913fcb4922"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "84fa7bb25afb14b08516ebdc66ff3482be9557783ac9b46fb9ef96a041c64da3"
+        "b5c1b0658261d4a3a658ba31f9363af2686d9dbab2570180e68cceb31ac7d5f2"
     ),
 }
 
@@ -98,6 +98,48 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             self.source,
         )
 
+    def test_manifest_has_exact46_exact50_primary_coverage(self):
+        manifest = generator.build_manifest(
+            pages=ROOT,
+            max_per_app=3,
+            now=datetime(2026, 8, 30, tzinfo=timezone.utc),
+            today="2026-08-30",
+        )
+        self.assertEqual(46, manifest["source"]["live_app_count"])
+        self.assertEqual(50, manifest["source"]["official_locale_count"])
+        self.assertEqual(46, manifest["coverage"]["required_app_count"])
+        self.assertEqual(46, manifest["coverage"]["eligible_app_count"])
+        primary = {
+            document["app_key"]: document
+            for document in manifest["documents"]
+            if document["coverage_role"] == "app-primary"
+        }
+        self.assertEqual(
+            set(manifest["source"]["live_app_keys"]),
+            set(primary),
+        )
+        self.assertTrue(
+            all(
+                document["path"] == f"/en-US/{app_key}.html"
+                and document["locale_tree_sha256"]
+                for app_key, document in primary.items()
+            )
+        )
+        planned_documents = {
+            request["url"]
+            for request in manifest["public_get_plan"]["requests"]
+            if request["kind"] == "document"
+        }
+        self.assertEqual(
+            {
+                document["canonical_url"]
+                for document in manifest["documents"]
+            },
+            planned_documents,
+        )
+        self.assertIn("First-party", manifest["source"]["policy"])
+        self.assertIn("not an independent ranking", manifest["source"]["policy"])
+
     def test_ai_brief_has_three_deployed_deep_documents(self):
         manifest = generator.build_manifest(
             pages=ROOT,
@@ -108,6 +150,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "aibriefpack"
+            and document["coverage_role"] == "supporting-editorial"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -138,6 +181,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "gmoneylite"
+            and document["coverage_role"] == "supporting-editorial"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -173,6 +217,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "maskmyfile"
+            and document["coverage_role"] == "supporting-editorial"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -208,6 +253,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "tripbeelite"
+            and document["coverage_role"] == "supporting-editorial"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(
@@ -280,6 +326,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             document
             for document in manifest["documents"]
             if document["app_key"] == "wifiaid"
+            and document["coverage_role"] == "supporting-editorial"
         ]
         self.assertEqual(3, len(documents))
         self.assertEqual(

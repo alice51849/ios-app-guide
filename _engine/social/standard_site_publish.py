@@ -73,6 +73,9 @@ PENDING_POLICY_FIELD = pending_state.PENDING_POLICY_FIELD
 PENDING_MIGRATION_FIELD = pending_state.PENDING_MIGRATION_FIELD
 PENDING_WINDOW_FIELD = pending_state.PENDING_WINDOW_FIELD
 PENDING_LIFECYCLE_FIELD = pending_state.PENDING_LIFECYCLE_FIELD
+TOMBSTONE_FIELD = "tombstone"
+TOMBSTONE_PENDING = "pending_delete"
+TOMBSTONE_CONFIRMED = "confirmed_absent"
 
 
 class ConfigurationError(RuntimeError):
@@ -276,6 +279,40 @@ def validate_state(state: Mapping[str, object]) -> None:
             )
         except pending_state.PendingStateError as error:
             raise StateError(str(error)) from error
+        tombstone = entry.get(TOMBSTONE_FIELD)
+        if tombstone is not None:
+            if (
+                not isinstance(tombstone, Mapping)
+                or tombstone.get("version") != 1
+                or tombstone.get("state")
+                not in {TOMBSTONE_PENDING, TOMBSTONE_CONFIRMED}
+                or not tombstone.get("transition_at")
+            ):
+                raise StateError(
+                    f"Invalid document tombstone state: {canonical}"
+                )
+            parse_timestamp(tombstone["transition_at"])
+            if (
+                tombstone.get("state") == TOMBSTONE_PENDING
+                and not tombstone.get("remote_cid")
+            ):
+                raise StateError(
+                    f"Pending tombstone has no remote CID: {canonical}"
+                )
+            if (
+                tombstone.get("state") == TOMBSTONE_CONFIRMED
+                and tombstone.get("remote_cid")
+            ):
+                raise StateError(
+                    f"Confirmed tombstone retains a remote CID: {canonical}"
+                )
+            if (
+                tombstone.get("state") == TOMBSTONE_CONFIRMED
+                and entry.get("published") is True
+            ):
+                raise StateError(
+                    f"Confirmed tombstone cannot remain published: {canonical}"
+                )
     try:
         pending_state.validate_pending_state(
             state, require_finalized=False
@@ -403,6 +440,95 @@ def _document_map(
     }
 
 
+def _primary_document_map(
+    manifest: Mapping[str, object],
+) -> dict[str, Mapping[str, object]]:
+    return {
+        str(document["app_key"]): document
+        for document in manifest["documents"]
+        if document.get("coverage_role") == "app-primary"
+    }
+
+
+def _state_entry_hash(entry: Mapping[str, object]) -> str:
+    payload = json.dumps(
+        dict(entry),
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def _tombstone_map(
+    manifest: Mapping[str, object],
+) -> dict[str, Mapping[str, object]]:
+    lifecycle = manifest.get("lifecycle")
+    if not isinstance(lifecycle, Mapping):
+        raise StateError("Manifest lifecycle contract is missing")
+    tombstones = lifecycle.get("tombstones")
+    if not isinstance(tombstones, list):
+        raise StateError("Manifest lifecycle tombstones are invalid")
+    return {
+        str(tombstone["canonical_url"]): tombstone
+        for tombstone in tombstones
+    }
+
+
+def verify_lifecycle_snapshot(
+    manifest: Mapping[str, object],
+    *,
+    state_path: Path,
+    state: Mapping[str, object],
+) -> None:
+    lifecycle = manifest["lifecycle"]
+    if lifecycle.get("state_loaded") is not True:
+        return
+    try:
+        raw = Path(state_path).read_bytes()
+    except OSError as error:
+        raise StateError(
+            f"Cannot verify lifecycle state snapshot: {state_path}"
+        ) from error
+    digest = hashlib.sha256(raw).hexdigest()
+    if digest != lifecycle.get("state_sha256"):
+        raise StateError(
+            "Lifecycle state changed after manifest generation; regenerate "
+            "before publishing"
+        )
+    documents = state["documents"]
+    active = _document_map(manifest)
+    tombstones = _tombstone_map(manifest)
+    active_state_count = 0
+    published_documents = 0
+    published_apps: set[str] = set()
+    for canonical, entry in documents.items():
+        if canonical in active:
+            active_state_count += 1
+            if entry.get("published") is True:
+                published_documents += 1
+                published_apps.add(str(entry.get("app_key") or ""))
+            continue
+        tombstone = tombstones.get(str(canonical))
+        if (
+            tombstone is None
+            or tombstone.get("app_key") != entry.get("app_key")
+            or tombstone.get("rkey") != entry.get("rkey")
+            or tombstone.get("state_entry_sha256")
+            != _state_entry_hash(entry)
+        ):
+            raise StateError(
+                f"Lifecycle source drift for removed canonical: {canonical}"
+            )
+    if (
+        len(documents) != lifecycle.get("state_document_count")
+        or active_state_count != lifecycle.get("active_state_document_count")
+        or published_documents != lifecycle.get("published_document_count")
+        or sorted(published_apps) != lifecycle.get("published_app_keys")
+    ):
+        raise StateError("Lifecycle state counters drifted after generation")
+
+
 def _pending(
     document: Mapping[str, object], state: Mapping[str, object]
 ) -> bool:
@@ -506,10 +632,50 @@ def reserve_daily_batch(
             and not _repair_deferred(state["documents"][url], day)
         ]
     else:
+        last_app = str(state["rotation"].get("last_app") or "")
+        published_apps = {
+            str(entry.get("app_key") or "")
+            for canonical, entry in state["documents"].items()
+            if (
+                canonical in documents
+                and (
+                    entry.get("published") is True
+                    or entry.get("published_at")
+                )
+            )
+        }
+        primary = _primary_document_map(manifest)
+        urgent_apps = sorted(
+            app_key
+            for app_key, document in primary.items()
+            if (
+                app_key not in published_apps
+                and _pending(document, state)
+                and not _repair_deferred(
+                    state["documents"][document["canonical_url"]],
+                    day,
+                )
+            )
+        )
+        if last_app in urgent_apps:
+            split = urgent_apps.index(last_app) + 1
+            urgent_apps = urgent_apps[split:] + urgent_apps[:split]
+        selected: list[Mapping[str, object]] = []
+        selected_apps: set[str] = set()
+        for app_key in urgent_apps:
+            selected.append(primary[app_key])
+            selected_apps.add(app_key)
+            if len(selected) >= limit:
+                break
+
         eligible: list[Mapping[str, object]] = []
         for document in manifest["documents"]:
             entry = state["documents"][document["canonical_url"]]
-            if _pending(document, state) and not _repair_deferred(entry, day):
+            if (
+                str(document["app_key"]) not in selected_apps
+                and _pending(document, state)
+                and not _repair_deferred(entry, day)
+            ):
                 eligible.append(document)
         cohorts: dict[str, list[Mapping[str, object]]] = {}
         for document in eligible:
@@ -520,10 +686,9 @@ def reserve_daily_batch(
                 else None
             )
             cohorts.setdefault(str(cohort or "~new"), []).append(document)
-        last_app = str(state["rotation"].get("last_app") or "")
-        selected = []
-        selected_apps: set[str] = set()
         for cohort in sorted(cohorts):
+            if len(selected) >= limit:
+                break
             pending: dict[str, list[Mapping[str, object]]] = {}
             for document in cohorts[cohort]:
                 app_key = str(document["app_key"])
@@ -805,6 +970,31 @@ class ExistingBlueskyRepoClient:
         ):
             raise PublishError("PDS did not confirm putRecord")
         return result
+
+    def delete_record(
+        self,
+        collection: str,
+        rkey: str,
+        *,
+        swap_record: str,
+    ) -> None:
+        """Delete one exact confirmed record; callers verify absence."""
+        if not swap_record:
+            raise PublishError("deleteRecord requires a confirmed CID")
+        payload = {
+            "repo": self.did,
+            "collection": collection,
+            "rkey": rkey,
+            "swapRecord": swap_record,
+        }
+        result = self._module._req(
+            f"{self.pds_xrpc}/com.atproto.repo.deleteRecord",
+            payload,
+            headers=self._client._headers(),
+        )
+        if result not in ({}, None):
+            if not isinstance(result, Mapping):
+                raise PublishError("PDS returned an invalid deleteRecord result")
 
 
 def find_bluesky_helper(
@@ -1238,6 +1428,131 @@ def _document_semantics(record: Mapping[str, object]) -> dict[str, object]:
     return result
 
 
+def apply_manifest_tombstones(
+    state: MutableMapping[str, object],
+    manifest: Mapping[str, object],
+    *,
+    client: object,
+    did: str,
+    state_path: Path,
+    remote_delete_limit: int,
+    verified_at: str,
+) -> dict[str, object]:
+    tombstones = _tombstone_map(manifest)
+    report: dict[str, object] = {
+        "tombstones_planned": len(tombstones),
+        "tombstones_confirmed": [],
+        "tombstones_deleted": [],
+        "tombstones_deferred": [],
+    }
+    if not tombstones:
+        return report
+    publication = state["publication"]
+    publication_rkey = str(publication.get("rkey") or "")
+    active_site_uri = (
+        publication_at_uri(did, publication_rkey)
+        if publication_rkey
+        else ""
+    )
+    documents = state["documents"]
+    remote_deletes = 0
+    for canonical, tombstone in sorted(tombstones.items()):
+        entry = documents.get(canonical)
+        if entry is None:
+            continue
+        if (
+            not isinstance(entry, MutableMapping)
+            or tombstone.get("app_key") != entry.get("app_key")
+            or tombstone.get("rkey") != entry.get("rkey")
+            or tombstone.get("state_entry_sha256")
+            != _state_entry_hash(entry)
+        ):
+            raise StateError(
+                f"Lifecycle tombstone source drift: {canonical}"
+            )
+        rkey = str(entry["rkey"])
+        remote = client.get_record(DOCUMENT_COLLECTION, rkey)
+        marker = entry.get(TOMBSTONE_FIELD)
+        marker_state = (
+            str(marker.get("state") or "")
+            if isinstance(marker, Mapping)
+            else ""
+        )
+        if remote is None:
+            if marker_state != TOMBSTONE_CONFIRMED:
+                _clear_document_confirmation(entry)
+                entry.pop("published_at", None)
+                entry[TOMBSTONE_FIELD] = {
+                    "version": 1,
+                    "state": TOMBSTONE_CONFIRMED,
+                    "transition_at": verified_at,
+                }
+                entry["last_verified_at"] = verified_at
+                atomic_write_json(state_path, state)
+            report["tombstones_confirmed"].append(canonical)
+            continue
+        value = remote["value"]
+        if (
+            value.get("$type") != DOCUMENT_COLLECTION
+            or not active_site_uri
+            or value.get("site") != active_site_uri
+            or _remote_document_canonical(
+                value, str(manifest["publication"]["url"])
+            )
+            != canonical
+        ):
+            raise StateError(
+                f"Remote tombstone identity mismatch: {canonical}"
+            )
+        remote_cid = str(remote["cid"])
+        if marker_state != TOMBSTONE_PENDING:
+            entry[TOMBSTONE_FIELD] = {
+                "version": 1,
+                "state": TOMBSTONE_PENDING,
+                "transition_at": verified_at,
+                "remote_cid": remote_cid,
+            }
+            entry["last_verified_at"] = verified_at
+            report["tombstones_deferred"].append(canonical)
+            atomic_write_json(state_path, state)
+            continue
+        if not isinstance(marker, Mapping) or marker.get(
+            "remote_cid"
+        ) != remote_cid:
+            raise StateError(
+                f"Remote tombstone changed after durable reservation: "
+                f"{canonical}"
+            )
+        if remote_deletes >= remote_delete_limit:
+            report["tombstones_deferred"].append(canonical)
+            continue
+        delete_record = getattr(client, "delete_record", None)
+        if not callable(delete_record):
+            raise PublishError("PDS client does not support safe record deletion")
+        delete_record(
+            DOCUMENT_COLLECTION,
+            rkey,
+            swap_record=remote_cid,
+        )
+        if client.get_record(DOCUMENT_COLLECTION, rkey) is not None:
+            raise PublishError(
+                f"PDS did not confirm tombstone deletion: {canonical}"
+            )
+        _clear_document_confirmation(entry)
+        entry.pop("published_at", None)
+        entry[TOMBSTONE_FIELD] = {
+            "version": 1,
+            "state": TOMBSTONE_CONFIRMED,
+            "transition_at": verified_at,
+        }
+        entry["last_verified_at"] = verified_at
+        report["tombstones_deleted"].append(canonical)
+        remote_deletes += 1
+        atomic_write_json(state_path, state)
+    validate_state(state)
+    return report
+
+
 def upsert_record(
     client: object,
     *,
@@ -1521,6 +1836,22 @@ def _prepare_plan(
         limit=limit,
         now=timestamp,
     )
+    tombstones = _tombstone_map(manifest)
+    confirmed_tombstones = sorted(
+        canonical
+        for canonical in tombstones
+        if (
+            isinstance(working["documents"].get(canonical), Mapping)
+            and isinstance(
+                working["documents"][canonical].get(TOMBSTONE_FIELD),
+                Mapping,
+            )
+            and working["documents"][canonical][TOMBSTONE_FIELD].get(
+                "state"
+            )
+            == TOMBSTONE_CONFIRMED
+        )
+    )
     plan: dict[str, object] = {
         "mode": "publish" if publish else "check-only",
         "day": day,
@@ -1533,6 +1864,12 @@ def _prepare_plan(
         "publication_changed": False,
         "documents_changed": 0,
         "documents_verified": 0,
+        "tombstones_planned": len(tombstones),
+        "tombstones_confirmed": confirmed_tombstones,
+        "tombstones_deleted": [],
+        "tombstones_deferred": sorted(
+            set(tombstones) - set(confirmed_tombstones)
+        ),
         "legacy_unattributed": sorted(
             str(document["canonical_url"])
             for document in manifest["documents"]
@@ -1576,9 +1913,16 @@ def run(
     timestamp = utc_timestamp(current)
     day = today or current.astimezone(timezone.utc).date().isoformat()
     generator = tid_generator or TIDGenerator()
+    state_path = Path(state_path)
     if not publish:
+        state = load_state(state_path)
+        verify_lifecycle_snapshot(
+            manifest,
+            state_path=state_path,
+            state=state,
+        )
         _, _, plan = _prepare_plan(
-            load_state(Path(state_path)),
+            state,
             manifest,
             generator=generator,
             day=day,
@@ -1589,9 +1933,13 @@ def run(
         return plan
 
     handle, password = credentials(environment or os.environ)
-    state_path = Path(state_path)
     with publisher_lock(state_path):
         state = load_state(state_path)
+        verify_lifecycle_snapshot(
+            manifest,
+            state_path=state_path,
+            state=state,
+        )
         atomic_write_json(state_path, state)
         client = client_factory(handle, password)
         did = str(getattr(client, "did", ""))
@@ -1605,6 +1953,15 @@ def run(
                 "Durable publication state belongs to a different DID"
             )
 
+        tombstone_report = apply_manifest_tombstones(
+            state,
+            manifest,
+            client=client,
+            did=did,
+            state_path=state_path,
+            remote_delete_limit=limit,
+            verified_at=timestamp,
+        )
         recovered = deepcopy(state)
         reconcile_remote_state(
             recovered,
@@ -1623,6 +1980,10 @@ def run(
             limit=limit,
             timestamp=timestamp,
             publish=True,
+        )
+        plan.update(tombstone_report)
+        plan["tombstones_deferred"] = sorted(
+            set(plan["tombstones_deferred"])
         )
         publication_state = working["publication"]
         publication_state["did"] = did

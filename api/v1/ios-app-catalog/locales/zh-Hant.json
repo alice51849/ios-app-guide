@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-28",
-  "content_digest": "219d20cefe488003dcc96c8f010302a51e573ad28c93523db737799f4046996f",
+  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 52,
+  "record_count": 53,
   "apps": [
     {
       "key": "notesstudio100",
@@ -2115,6 +2115,64 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "storefront_url": "https://apps.apple.com/tw/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo：安全掃描與建立",
+      "summary": "QR Code Halo 不會把讀取結果直接變成一次點擊。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
+      "category": "utility",
+      "search_terms": [
+        "網址安全",
+        "釣魚辨識",
+        "風險檢測",
+        "仿冒網域",
+        "行動條碼",
+        "條碼",
+        "掃碼",
+        "產生器",
+        "讀取",
+        "辨識",
+        "網址",
+        "連結",
+        "名片",
+        "wifi",
+        "批次",
+        "歷史",
+        "匯出",
+        "離線",
+        "隱私",
+        "相簿",
+        "圖片",
+        "簡訊",
+        "電話",
+        "郵件",
+        "定位",
+        "行事曆",
+        "票券",
+        "庫存",
+        "菜單"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6806779853"
       }
     },
     {

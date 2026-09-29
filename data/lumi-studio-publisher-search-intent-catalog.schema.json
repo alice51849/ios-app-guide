@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 52
+      "const": 53
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2600
+      "const": 2650
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2600,
-      "maxItems": 2600,
+      "minItems": 2650,
+      "maxItems": 2650,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -265,6 +265,7 @@
               "onepageppt",
               "photocream",
               "picclear",
+              "qrcodehalo",
               "savetag",
               "scanto",
               "sereno",

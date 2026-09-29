@@ -6,7 +6,7 @@
 Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে অ্যাপের সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
 market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
 
-৫২টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
+৫৩টি যাচাইকৃত লাইভ iOS অ্যাপ এবং ৫০টি Apple লোকালের প্রকাশক-লিখিত অনুসন্ধান উদ্দেশ্য।
 
 **লোকাল:** [ar-SA](../ar-SA/) · **bn-BD** · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -125,6 +125,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **OnePage PPT: এক স্লাইড** | OnePage PPT: এক স্লাইড — নোট থেকে নিখুঁত উপস্থাপনা \| iOS App | লেখার পাহাড়কে এমন একটি স্লাইডে বদলে ফেলুন, যা সবাই সত্যিই পড়ে। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/onepageppt.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **PhotoCream Pro: ফিল্ম ফিল্টার** | PhotoCream Pro: ফিল্ম ফিল্টার — রেট্রো ক্যামেরা ও ফটো এডিট \| iOS App | PhotoCream Pro আপনার ফোনকে পরিণত করে প্রিমিয়াম ফিল্ম ক্যামেরা ও প্রো ফটো স্টুডিওতে। আসল অ্যানালগ লুক ক্যাপচার করুন রিয়েল টাইমে, তারপর প্রতিটি ডিটেইল | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/photocream.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **PicClear Pro: ছবি ক্লিনার** | PicClear Pro: ছবি ক্লিনার — Photo cleaner, জায়গা খালি \| iOS App | অনাবশ্যক ছবি মুছে গিগাবাইটের মেমোরি মুক্ত করুন—ডুপ্লিকেট, স্ক্রিনশট, ঝাপসা ছবি এবং বড় ভিডিও। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/picclear.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
+| **QR Code Halo: স্ক্যান ও তৈরি** | QR Code Halo: স্ক্যান ও তৈরি — কাজের আগে ঝুঁকি দেখুন \| iOS App | QR Code Halo সচেতন ধাপ বজায় রাখে: ডিকোড করা বিষয় দেখুন, দৃশ্যমান findings বিচার করুন, তারপর কাজ বেছে নিন। শুধু কোড শনাক্ত হলেই কিছু স্বয়ংক্রিয়ভাবে | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/qrcodehalo.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **SaveTag: AI বুকমার্ক** | SaveTag: AI বুকমার্ক — লিংক সেভ করুন, পরে পড়ুন \| iOS App | এখনই সেভ করুন। আর এবার সত্যিই পড়ে ফেলুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/savetag.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **ScanTo Pro: PDF স্ক্যান** | ScanTo Pro: PDF স্ক্যান — অফলাইন OCR, গোপন PDF \| iOS App | iPhone-এ অফলাইন PDF স্ক্যান ও OCR—দ্রুত, ব্যক্তিগত, বিজ্ঞাপন নেই। একবার কিনুন। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/scanto.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
 | **Sereno: Sleep Sounds** | Sereno: Sleep Sounds — Sereno আপনার ফোনকে ঘুম, মনোযোগ ও প্রশান্তির জন্য একটি \| iOS App | Sereno আপনার ফোনকে ঘুম, মনোযোগ ও প্রশান্তির জন্য একটি উচ্চমানের সাউন্ড মেশিনে পরিণত করে। | বিনামূল্যে শুরু · এককালীন কেনাকাটায় আনলক | [গাইড](https://open.cait518.cc/ios-app-guide/bn-BD/sereno.html) | N/A (MARKET_NOT_IN_APPLE_MEDIA_SERVICES) |
@@ -146,7 +147,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## সম্পূর্ণ ডেটাসেট ডাউনলোড করুন
 
-JSON, JSONL এবং CSV একই ২,৬০০ রেকর্ড ধারণ করে।
+JSON, JSONL এবং CSV একই ২,৬৫০ রেকর্ড ধারণ করে।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

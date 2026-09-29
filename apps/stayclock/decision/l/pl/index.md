@@ -2,7 +2,7 @@
 title: "Stay Clock: zegar z klapkami — Czas i kalendarz bez przerwy | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/pl/index.html"
-modified: "2026-09-28"
+modified: "2026-09-29"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

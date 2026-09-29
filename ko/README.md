@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 52개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 53개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -124,6 +124,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **OnePage PPT: AI 발표자료** | OnePage PPT: AI 발표자료 — 메모·PDF를 한 장 슬라이드로 \| iOS App | 빽빽한 텍스트를 실제로 읽히는 한 장으로. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/onepageppt.html) | [App Store에서 OnePage PPT: AI 발표자료 받기](https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8) |
 | **PhotoCream** | 아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천 | 여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8) |
 | **PicClear** | 아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱 | 빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8) |
+| **QR Code Halo: 열기 전 확인** | QR Code Halo: 열기 전 확인 — 실행 전 위험부터 확인 \| iOS App | QR Code Halo는 인식하자마자 링크를 여는 스캐너가 아닙니다. 확인하고, 판단하고, 실행하는 순서로 내용과 근거를 먼저 살핀 뒤 다음 동작을 선택합니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/qrcodehalo.html) | [App Store에서 QR Code Halo: 열기 전 확인 받기](https://apps.apple.com/kr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8) |
 | **SaveTag: AI 링크 보관함** | SaveTag: AI 링크 보관함 — 나중에 읽기, 자동 태그 정리 \| iOS App | 일단 저장하고, 이번엔 진짜 다 읽습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/savetag.html) | [App Store에서 SaveTag: AI 링크 보관함 받기](https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8) |
 | **ScanTo Pro** | 간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고 | 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다. ScanTo Pro, 바로 그 문제에서 출발했습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8) |
 | **Sereno** | 구독 없이 잠들기 좋은 최고의 백색소음 앱 | 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다. 이런 상황이라면 Sereno 한번 살펴보세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
@@ -144,7 +145,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,600개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 2,650개 기록을 포함합니다.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

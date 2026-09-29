@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-28",
-  "content_digest": "219d20cefe488003dcc96c8f010302a51e573ad28c93523db737799f4046996f",
+  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 52,
+  "record_count": 53,
   "apps": [
     {
       "key": "notesstudio100",
@@ -2173,6 +2173,59 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/picclear.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo: স্ক্যান ও তৈরি",
+      "summary": "QR Code Halo সচেতন ধাপ বজায় রাখে: ডিকোড করা বিষয় দেখুন, দৃশ্যমান findings বিচার করুন, তারপর কাজ বেছে নিন। শুধু কোড শনাক্ত হলেই কিছু স্বয়ংক্রিয়ভাবে খুলবে না।",
+      "category": "utility",
+      "search_terms": [
+        "নিরাপদ লিংক",
+        "ফিশিং সুরক্ষা",
+        "সন্দেহজনক ডোমেইন",
+        "প্রতারণা শনাক্ত",
+        "barcode",
+        "reader",
+        "generator",
+        "maker",
+        "wifi",
+        "রিডার"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/qrcodehalo.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

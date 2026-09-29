@@ -3,7 +3,7 @@
 > 各 iOS アプリの構造化情報 — 機能・価格・FAQ。
 
 locale: ja
-apps: 52
+apps: 53
 - アプリ一覧: https://open.cait518.cc/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.html
 - アプリ一覧 · PWA: https://open.cait518.cc/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
@@ -163,6 +163,10 @@ apps: 52
   - 重複写真、スクショ、ピンボケ、大きな動画を端末上で検出。削除前に確認でき、広告なし・サブスクなし。安心して空き容量を取り戻せます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo：開く前に確認](https://open.cait518.cc/ios-app-guide/ja/qrcodehalo.html) — 開く前にリスクを確認
+  - コードの中身を端末内で構造化し、根拠の見える判定を確認してから操作。一括監査では完全一致、ホスト別、似たホストと各項目のリスクを比べられます。
+  - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
+  - App Store: https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AIであとで読む](https://open.cait518.cc/ios-app-guide/ja/savetag.html) — リンクを保存して自動でタグ
   - 「あとで見る」で終わっていたリンクに、やっと居場所を。ワンタップで保存すると端末内で自動的に仕分けされ、毎日の再発見で読み切れます。アカウント不要、広告なし、買い切りでサブスクなし。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。

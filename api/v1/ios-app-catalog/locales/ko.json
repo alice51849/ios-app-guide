@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-28",
-  "content_digest": "219d20cefe488003dcc96c8f010302a51e573ad28c93523db737799f4046996f",
+  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 52,
+  "record_count": 53,
   "apps": [
     {
       "key": "notesstudio100",
@@ -2008,6 +2008,61 @@
         "currency": "KRW",
         "formatted_price": "무료",
         "storefront_url": "https://apps.apple.com/kr/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo: 열기 전 확인",
+      "summary": "QR Code Halo는 인식하자마자 링크를 여는 스캐너가 아닙니다. 확인하고, 판단하고, 실행하는 순서로 내용과 근거를 먼저 살핀 뒤 다음 동작을 선택합니다.",
+      "category": "utility",
+      "search_terms": [
+        "피싱방지",
+        "링크검사",
+        "도메인검증",
+        "보안확인",
+        "큐알코드",
+        "바코드",
+        "스캐너",
+        "스캔",
+        "인식",
+        "리더",
+        "생성기",
+        "만들기",
+        "명함",
+        "wifi",
+        "일괄",
+        "기록",
+        "검색",
+        "즐겨찾기",
+        "내보내기",
+        "사진",
+        "이미지",
+        "문자",
+        "전화",
+        "이메일",
+        "위치",
+        "일정"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6806779853"
       }
     },
     {

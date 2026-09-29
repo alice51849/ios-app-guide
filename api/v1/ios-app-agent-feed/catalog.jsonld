@@ -4,7 +4,7 @@
   "name": "Lumi Studio iOS app catalog",
   "description": "Every verified live Lumi Studio iOS app, with the price and store link Apple publishes for it. Structured form of the agent product feed published alongside it.",
   "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/",
-  "numberOfItems": 52,
+  "numberOfItems": 53,
   "dateModified": "2026-09-28",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "provider": {
@@ -2528,6 +2528,80 @@
       "position": 35,
       "item": {
         "@type": "MobileApplication",
+        "name": "QR Code Halo: Scan & Create",
+        "description": "QR Code Halo: Scan & Create — QR Code Halo is built around Inspect, Decide, Act. It exposes what a code contains, explains the local finding, and leaves the final action to you",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS",
+        "url": "https://apps.apple.com/us/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+        "inLanguage": [
+          "ar-SA",
+          "ca",
+          "cs",
+          "da",
+          "de-DE",
+          "el",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "es-ES",
+          "es-MX",
+          "fi",
+          "fr-CA",
+          "fr-FR",
+          "gu-IN",
+          "he",
+          "hi",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn-IN",
+          "ko",
+          "ml-IN",
+          "mr-IN",
+          "ms",
+          "nl-NL",
+          "no",
+          "or-IN",
+          "pa-IN",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "ro",
+          "ru",
+          "sk",
+          "sl-SI",
+          "sv",
+          "ta-IN",
+          "te-IN",
+          "th",
+          "tr",
+          "uk",
+          "ur-PK",
+          "vi",
+          "zh-Hans",
+          "zh-Hant"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "Lumi Studio"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "item": {
+        "@type": "MobileApplication",
         "name": "SaveTag",
         "description": "SaveTag — Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not",
         "applicationCategory": "BusinessApplication",
@@ -2599,7 +2673,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "item": {
         "@type": "MobileApplication",
         "name": "ScanTo Pro",
@@ -2673,7 +2747,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "item": {
         "@type": "MobileApplication",
         "name": "Sereno",
@@ -2747,7 +2821,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "item": {
         "@type": "MobileApplication",
         "name": "ShotInbox AI",
@@ -2821,7 +2895,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "item": {
         "@type": "MobileApplication",
         "name": "Snapport",
@@ -2895,7 +2969,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "item": {
         "@type": "MobileApplication",
         "name": "Snapport Lite",
@@ -2969,7 +3043,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "item": {
         "@type": "MobileApplication",
         "name": "Sono Note",
@@ -3043,7 +3117,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "item": {
         "@type": "MobileApplication",
         "name": "Stay Clock",
@@ -3117,7 +3191,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "item": {
         "@type": "MobileApplication",
         "name": "Studydown",
@@ -3191,7 +3265,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Pro: Trip Planner",
@@ -3265,7 +3339,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "item": {
         "@type": "MobileApplication",
         "name": "TripBee Lite",
@@ -3339,7 +3413,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "item": {
         "@type": "MobileApplication",
         "name": "Lumi Trip Planet",
@@ -3412,7 +3486,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "item": {
         "@type": "MobileApplication",
         "name": "Unblurry",
@@ -3486,7 +3560,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid",
@@ -3560,7 +3634,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "item": {
         "@type": "MobileApplication",
         "name": "WiFi Aid Lite",
@@ -3634,7 +3708,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate: Learn 44 Languages",
@@ -3708,7 +3782,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "item": {
         "@type": "MobileApplication",
         "name": "Wordmate Lite",
@@ -3782,7 +3856,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "item": {
         "@type": "MobileApplication",
         "name": "Zipbox",

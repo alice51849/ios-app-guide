@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-28",
-  "content_digest": "219d20cefe488003dcc96c8f010302a51e573ad28c93523db737799f4046996f",
+  "content_digest": "024af380e797277747a387788ada77fac7abc1cbba71875298aa8707379f5b44",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 52,
+  "record_count": 53,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1659,6 +1659,43 @@
         "currency": "CAD",
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ca/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo : Scan sécurisé",
+      "summary": "Avec QR Code Halo, le parcours reste entre vos mains : vérifier le contenu, juger les motifs affichés, puis choisir une action. Un code reconnu n'ouvre jamais automatiquement une destination.",
+      "category": "utility",
+      "search_terms": [
+        "validation lien",
+        "anti-hameçonnage",
+        "domaine suspect",
+        "sécurité contenu",
+        "numériser",
+        "scanner",
+        "générateur",
+        "carte"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-CA/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6806779853"
       }
     },
     {

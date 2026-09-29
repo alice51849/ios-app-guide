@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 52 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 53 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -124,6 +124,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **OnePage PPT: AI 一頁簡報** | OnePage PPT: AI 一頁簡報 — 筆記、螢幕截圖、PDF秒變投影片 \| iOS App | 把落落長的文字，變成別人真的會看完的一頁。不用再從空白頁開始，也不用把 20 頁資料硬塞成一頁。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html) | [在 App Store 取得 OnePage PPT: AI 一頁簡報](https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8) |
 | **PhotoCream** | iPhone 旅遊創作者最佳一次付費底片風格照片編輯 App | 旅遊創作者需要能重複使用的底片風格，能加顆粒、光暈與色彩特色，不會讓每個目的地都變成同一種平淡濾鏡 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=geo_pick&mt=8) |
 | **PicClear** | iPhone 上最佳清理重複照片釋放儲存空間應用程式 | 要快速釋放空間，先從最大效益著手：完全重複照片、幾乎相同的連拍、模糊照片和大型影片 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 取得 PicClear →](https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=geo_pick&mt=8) |
+| **QR Code Halo：安全掃描與建立** | QR Code Halo：安全掃描與建立 — 本機查風險再行動 \| iOS App | QR Code Halo 不會把讀取結果直接變成一次點擊。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html) | [在 App Store 取得 QR Code Halo：安全掃描與建立](https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8) |
 | **SaveTag:AI 連結收藏** | SaveTag:AI 連結收藏 — 稍後閱讀,自動分類整理 \| iOS App | 先存下來,而且真的會看完。 你每天都在傳連結給自己。朋友分享的食譜、看上的外套、說好要看的影片、想再讀一次的貼文。它們散落在聊天室、備忘錄和截圖裡,然後就再也找不到了。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/savetag.html) | [在 App Store 取得 SaveTag:AI 連結收藏](https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8) |
 | **ScanTo Pro** | 護理人員專用最佳離線文件掃描應用程式，無雲端 | 如果你掃描病患同意書、出院文件或轉診單，掃描器必須將文件保留在裝置內，絕不上傳他人雲端。ScanTo Pro 就是從這個問題開始做的。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [在 App Store 取得 ScanTo Pro →](https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=geo_pick&mt=8) |
 | **Sereno** | 最佳無訂閱白噪音助眠App | 睡眠時，每月煩人的訂閱正好相反。如果你也是這種狀況，可以看看 Sereno。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [在 App Store 取得 Sereno →](https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=geo_pick&mt=8) |
@@ -144,7 +145,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 2,600 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 2,650 筆紀錄。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

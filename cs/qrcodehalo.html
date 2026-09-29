@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App</title>
+<meta name="description" content="QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Samotné rozpoznání kódu">
+<meta name="keywords" content="bezpečný odkaz, ochrana phishing, podezřelá doména, ověření url, skener, čárový, kód, wifi, vizitka, hromadně">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6806779853, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App">
+<meta property="og:description" content="App Store · Zdarma. QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Samotné rozpoznání kódu">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="0">
+<meta property="product:price:currency" content="CZK">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html",
+  "name": "QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App",
+  "description": "QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Samotné rozpoznání kódu",
+  "inLanguage": "cs",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg#primaryimage",
+    "contentUrl": "https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg",
+    "url": "https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6806779853"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App">
+<meta name="twitter:description" content="App Store · Zdarma. QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Samotné rozpoznání kódu">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/qrcodehalo-share.jpg">
+<meta name="twitter:image:alt" content="QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App">
+<meta name="twitter:app:name:iphone" content="QR Code Halo">
+<meta name="twitter:app:id:iphone" content="6806779853">
+<meta name="twitter:app:name:ipad" content="QR Code Halo">
+<meta name="twitter:app:id:ipad" content="6806779853">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="Zdarma">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/cs/qrcodehalo.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fcs%2Fqrcodehalo.html&amp;format=json" title="QR Code Halo: čtečka a tvorba — Prověř před každou akcí | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/qrcodehalo.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/qrcodehalo.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/qrcodehalo.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/qrcodehalo.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/qrcodehalo.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/qrcodehalo.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/qrcodehalo.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/qrcodehalo.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/qrcodehalo.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/qrcodehalo.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/qrcodehalo.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/qrcodehalo.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/qrcodehalo.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/qrcodehalo.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/qrcodehalo.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/qrcodehalo.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/qrcodehalo.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/qrcodehalo.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/qrcodehalo.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/qrcodehalo.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/qrcodehalo.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/qrcodehalo.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/qrcodehalo.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/qrcodehalo.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/qrcodehalo.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/qrcodehalo.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/qrcodehalo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/qrcodehalo.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/qrcodehalo.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/qrcodehalo.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/qrcodehalo.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/qrcodehalo.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/qrcodehalo.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/qrcodehalo.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/qrcodehalo.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/qrcodehalo.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/qrcodehalo.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/qrcodehalo.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/qrcodehalo.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/qrcodehalo.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/qrcodehalo.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/qrcodehalo.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"QR Code Halo: čtečka a tvorba","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Samotné rozpoznání kódu nic automaticky neotevře.\n\nLocal Payload Security Inspector\nNa zařízení rozebere celý payload a samostatně zobrazí scheme, host, path, query a fragment. Pevná pravidla určují Safe, Caution nebo Blocked, průhledné findings a action disposition. Nevyužívá internetovou reputaci ani neurčité skóre; akce, kterou nelze spolehlivě vyložit, zůstane zablokovaná.\nQR Verification\nUložte výsledek jako místní referenci a pozdější sken porovnejte podle celého otisku SHA-256, formátu QR, typu obsahu, součástí URL, úrovně zabezpečení a akce.\n\nBatch Risk & Difference Audit\nSeskupí naprosto shodné výsledky a výsledky se stejným host, potom v jasně omezeném rozsahu porovná zaměnitelné host. Souhrn, riziko každé položky i všechny úplné payloady zůstávají čitelné. Celý audit je možné prohlížet.\n\nCo QR Code Halo umí\nSkenování kamerou i rozpoznávání kódů na fotkách, více kódů v jednom záběru\nBezpečný náhled u každého výsledku: celý obsah, schéma a doména odkazu, upozornění na podezřelé formáty\n20 formátů čárových kódů: QR, Micro QR, Aztec, Data Matrix, PDF417, Micro PDF417, EAN-8, EAN-13, UPC-A, UPC-E, Code 39, Code 93, Code 128, Interleaved 2 of 5, ITF-14, Codabar, GS1 DataBar a MSI Plessey\nHromadné skenování s potlačením duplicit, zoom a svítilna\nTvorba QR kódů: text, odkaz, Wi-Fi, kontakt, e-mail, telefon, SMS, poloha a událost v kalendáři\nNeomezená historie bez stropu: oblíbené, vyhledávání, filtry a řazení podle typu, data, formátu, štítku nebo kategorie\nAutomatické zařazení přímo v zařízení, kdykoli přepsatelné ručně, a export historie do CSV\nZáloha i obnova ukážou skutečný počet, velikost a rozsah dat, než se rozhodnete\nLifetime Pro: Neomezené skenování, uložení naskenované dávky do historie a otevření jejích výsledků, hromadná tvorba a CSV dávky, spuštění zálohy nebo obnovy, export PNG, PDF a SVG ve vysokém rozlišení a vlastní styly Aurora\nSoukromý režim s automatickým mazáním, ukládání do Fotek, tisk, rozšíření Sdílení a Zkratky Siri\n\nQR Code Halo si z App Storu stáhnete zdarma: tři skeny zdarma, všech devět typů QR a neomezená historie s oblíbenými, vyhledáváním a filtry, bez jakéhokoli stropu, bez reklam a bez účtu. Jediný volitelný nákup Lifetime Pro přidá neomezené skenování, uložení a otevření naskenovaných dávek, hromadnou tvorbu a CSV dávky, zálohu a obnovu, export ve vysokém rozlišení a vlastní styly Aurora, a zůstane vám navždy. Žádné předplatné.\nKód, který nejde naskenovat, nebo funkce, která vám chybí: hourstag.app@gmail.com\n\nNejde o skener dokumentů: aplikace nesnímá stránky, neprovádí OCR a nevede knihovnu dokumentů PDF. Export PDF obsahuje pouze grafiku QR. Share Extension vytváří kódy z URL nebo prostého textu. Obsah Wi-Fi, kontaktu a kalendáře bez bezpečné actionURL zůstává jen v náhledu a není vydáván za přímo proveditelnou akci.","url":"https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","featureList":["bezpečný odkaz","ochrana phishing","podezřelá doména","ověření url","skener","čárový","kód","wifi"],"keywords":"bezpečný odkaz, ochrana phishing, podezřelá doména, ověření url, skener, čárový, kód, wifi, vizitka, hromadně","@id":"https://apps.apple.com/app/id6806779853","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806779853"},"downloadUrl":"https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CZK","url":"https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "cs",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Která aplikace je nejlepší pro bezpečný odkaz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QR Code Halo: čtečka a tvorba je skvělá volba pro bezpečný odkaz. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Existuje aplikace pro iOS na ochrana phishing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QR Code Halo: čtečka a tvorba je skvělá volba pro ochrana phishing. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Která aplikace pro iPhone je nejlepší na podezřelá doména?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QR Code Halo: čtečka a tvorba je skvělá volba pro podezřelá doména. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakou aplikaci lidé používají pro ověření url?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QR Code Halo: čtečka a tvorba je skvělá volba pro ověření url. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doporučíte aplikaci na skener?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QR Code Halo: čtečka a tvorba je skvělá volba pro skener. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    }
+  ]
+}
+</script>
+<!-- app-store-facts-style:start -->
+<link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
+<!-- app-store-facts-style:end -->
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>QR Code Halo: čtečka a tvorba</h1>
+  <p><strong>Prověř před každou akcí</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6806779853" aria-label="QR Code Halo: čtečka a tvorba">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/qrcodehalo-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="QR Code Halo: čtečka a tvorba">QR Code Halo: čtečka a tvorba</strong>
+    <p class="iag-decision-card__promise" title="Prověř před každou akcí">Prověř před každou akcí</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="bezpečný odkaz">bezpečný odkaz</span><span class="iag-decision-card__fact" title="ochrana phishing">ochrana phishing</span><span class="iag-decision-card__fact" title="podezřelá doména">podezřelá doména</span><span class="iag-decision-card__fact" title="ověření url">ověření url</span></div>
+    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Zdarma</data></div>
+    <p class="iag-decision-card__terms" title="Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.">Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/cz/app/id6806779853?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Stáhněte si QR Code Halo: čtečka a tvorba v App Storu" title="Stáhněte si QR Code Halo: čtečka a tvorba v App Storu">Stáhněte si QR Code Halo: čtečka a tvorba v App Storu</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="Stáhněte si QR Code Halo: čtečka a tvorba v App Storu">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/cz/app/id6806779853?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6806779853-cde9e28029fe72511764.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">Stáhněte si QR Code Halo: čtečka a tvorba v App Storu</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/cz/app/id6806779853" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/cs-cz?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<h2>Co je QR Code Halo: čtečka a tvorba?</h2>
+  <p>QR Code Halo: čtečka a tvorba je aplikace pro iOS. Prověř před každou akcí</p>
+  <p>QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Samotné rozpoznání kódu nic automaticky neotevře.</p>
+  <p>Local Payload Security Inspector</p>
+  <p>Na zařízení rozebere celý payload a samostatně zobrazí scheme, host, path, query a fragment. Pevná pravidla určují Safe, Caution nebo Blocked, průhledné findings a action disposition. Nevyužívá internetovou reputaci ani neurčité skóre; akce, kterou nelze spolehlivě vyložit, zůstane zablokovaná.</p>
+  <p>QR Verification</p>
+  <p>Uložte výsledek jako místní referenci a pozdější sken porovnejte podle celého otisku SHA-256, formátu QR, typu obsahu, součástí URL, úrovně zabezpečení a akce.</p>
+  <p>Batch Risk &amp; Difference Audit</p>
+  <p>Seskupí naprosto shodné výsledky a výsledky se stejným host, potom v jasně omezeném rozsahu porovná zaměnitelné host. Souhrn, riziko každé položky i všechny úplné payloady zůstávají čitelné. Celý audit je možné prohlížet.</p>
+  <p>Co QR Code Halo umí</p>
+  <p>Skenování kamerou i rozpoznávání kódů na fotkách, více kódů v jednom záběru</p>
+  <p>Bezpečný náhled u každého výsledku: celý obsah, schéma a doména odkazu, upozornění na podezřelé formáty</p>
+  <p>20 formátů čárových kódů: QR, Micro QR, Aztec, Data Matrix, PDF417, Micro PDF417, EAN-8, EAN-13, UPC-A, UPC-E, Code 39, Code 93, Code 128, Interleaved 2 of 5, ITF-14, Codabar, GS1 DataBar a MSI Plessey</p>
+  <p>Hromadné skenování s potlačením duplicit, zoom a svítilna</p>
+  <p>Tvorba QR kódů: text, odkaz, Wi-Fi, kontakt, e-mail, telefon, SMS, poloha a událost v kalendáři</p>
+  <p>Neomezená historie bez stropu: oblíbené, vyhledávání, filtry a řazení podle typu, data, formátu, štítku nebo kategorie</p>
+  <p>Automatické zařazení přímo v zařízení, kdykoli přepsatelné ručně, a export historie do CSV</p>
+  <p>Záloha i obnova ukážou skutečný počet, velikost a rozsah dat, než se rozhodnete</p>
+  <p>Lifetime Pro: Neomezené skenování, uložení naskenované dávky do historie a otevření jejích výsledků, hromadná tvorba a CSV dávky, spuštění zálohy nebo obnovy, export PNG, PDF a SVG ve vysokém rozlišení a vlastní styly Aurora</p>
+  <p>Soukromý režim s automatickým mazáním, ukládání do Fotek, tisk, rozšíření Sdílení a Zkratky Siri</p>
+  <p>QR Code Halo si z App Storu stáhnete zdarma: tři skeny zdarma, všech devět typů QR a neomezená historie s oblíbenými, vyhledáváním a filtry, bez jakéhokoli stropu, bez reklam a bez účtu. Jediný volitelný nákup Lifetime Pro přidá neomezené skenování, uložení a otevření naskenovaných dávek, hromadnou tvorbu a CSV dávky, zálohu a obnovu, export ve vysokém rozlišení a vlastní styly Aurora, a zůstane vám navždy. Žádné předplatné.</p>
+  <p><!--email_off-->Kód, který nejde naskenovat, nebo funkce, která vám chybí: hourstag.app@gmail.com<!--/email_off--></p>
+  <p>Nejde o skener dokumentů: aplikace nesnímá stránky, neprovádí OCR a nevede knihovnu dokumentů PDF. Export PDF obsahuje pouze grafiku QR. Share Extension vytváří kódy z URL nebo prostého textu. Obsah Wi-Fi, kontaktu a kalendáře bez bezpečné actionURL zůstává jen v náhledu a není vydáván za přímo proveditelnou akci.</p>
+
+  <h2>Hlavní funkce</h2>
+  <ul>
+    <li>bezpečný odkaz</li>
+    <li>ochrana phishing</li>
+    <li>podezřelá doména</li>
+    <li>ověření url</li>
+    <li>skener</li>
+    <li>čárový</li>
+    <li>kód</li>
+    <li>wifi</li>
+  </ul>
+
+  <h2>Cena</h2>
+  <p>Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.</p>
+
+  <h2>Časté dotazy</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Která aplikace je nejlepší pro bezpečný odkaz?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">QR Code Halo: čtečka a tvorba je skvělá volba pro bezpečný odkaz. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Existuje aplikace pro iOS na ochrana phishing?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">QR Code Halo: čtečka a tvorba je skvělá volba pro ochrana phishing. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Která aplikace pro iPhone je nejlepší na podezřelá doména?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">QR Code Halo: čtečka a tvorba je skvělá volba pro podezřelá doména. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Jakou aplikaci lidé používají pro ověření url?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">QR Code Halo: čtečka a tvorba je skvělá volba pro ověření url. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Doporučíte aplikaci na skener?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">QR Code Halo: čtečka a tvorba je skvělá volba pro skener. Prověř před každou akcí Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+
+  <h2>Stáhnout</h2>
+  <p><a href="https://apps.apple.com/cz/app/id6806779853?pt=118326163&amp;ct=geo_pick&amp;mt=8">Stáhněte si QR Code Halo: čtečka a tvorba v App Storu</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.</small></p>
+<!-- app-store-facts:start -->
+<aside class="iag-store-facts" aria-label="App Store">
+<a class="iag-store-facts__link" href="https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8" rel="nofollow noopener">
+<span>App Store</span><span aria-hidden="true">&middot;</span><data value="0">Zdarma</data>
+</a>
+</aside>
+<!-- app-store-facts:end -->
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6806779853","app_name":"QR Code Halo","page_language":"cs","page_url":"https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html","app_store_url":"https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8","localized_description":"QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci.","storefront_facts":{"price":"0","currency":"CZK","formatted_price":"Zdarma"}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/cz/app/id6806779853?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="Stáhněte si QR Code Halo: čtečka a tvorba v App Storu" title="Stáhněte si QR Code Halo: čtečka a tvorba v App Storu"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6806779853" data-app-store-url="https://apps.apple.com/cz/app/id6806779853?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

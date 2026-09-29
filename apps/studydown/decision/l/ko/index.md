@@ -2,7 +2,7 @@
 title: "Studydown: 집중 타이머 — 책상에 엎어 두세요 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/ko/index.html"
-modified: "2026-09-28"
+modified: "2026-09-29"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

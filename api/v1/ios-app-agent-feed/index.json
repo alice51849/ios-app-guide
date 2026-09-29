@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2540,
-  "app_count": 52,
+  "row_count": 2589,
+  "app_count": 53,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -129,6 +129,7 @@
     "onepageppt",
     "photocream",
     "picclear",
+    "qrcodehalo",
     "savetag",
     "scanto",
     "sereno",
@@ -176,5 +177,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:0cd5721f06ab07a13e88b5ab28a2af4d7e2bd97392acdd254579ced5edc3564e"
+  "content_digest": "sha256:b10e65b85d9ce0ed7a52c3d672b3a4765f845549c96fc3f960dea25362aed1ae"
 }

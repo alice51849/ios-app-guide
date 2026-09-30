@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-09-30",
-  "content_digest": "e98b6e64f3e6b73ad675b278c695f2febea9fde8db77e011a836bc2c54b73aa8",
+  "content_digest": "0900de905283fd197f08e8288e248980e4105cae4a6e9ab4202ce0843c3930d8",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -141,7 +141,8 @@
         "fehleranalyse",
         "aussprache",
         "grammatik",
-        "prüfung"
+        "prüfung",
+        "toeic übungen"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -485,7 +486,9 @@
         "FFT",
         "RTA",
         "oktavband",
-        "kalibrierung"
+        "kalibrierung",
+        "spektrumanalysator",
+        "lärmmessgerät"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -540,7 +543,8 @@
         "offline",
         "geldverwalten",
         "reise",
-        "fx"
+        "fx",
+        "urlaubsbudget"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -577,7 +581,8 @@
         "Wechselkurs",
         "Reisekosten",
         "Geld verwalten",
-        "reise"
+        "reise",
+        "urlaubsbudget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -712,7 +717,9 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan"
+        "Fan",
+        "abholschild flughafen",
+        "konzert schild"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1247,7 +1254,8 @@
         "Aufgabenplan",
         "Schlafenszeit",
         "Tagesaufgaben",
-        "Morgen"
+        "Morgen",
+        "abendroutine kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1667,7 +1675,8 @@
         "generator",
         "erstellen",
         "wlan",
-        "visitenkarte"
+        "visitenkarte",
+        "qr code prüfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2013,7 +2022,9 @@
         "widgets",
         "digital",
         "schriftarten",
-        "24 stunden"
+        "24 stunden",
+        "nachttischuhr",
+        "tischuhr"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

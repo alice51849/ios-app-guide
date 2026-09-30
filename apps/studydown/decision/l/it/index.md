@@ -2,7 +2,7 @@
 title: "Studydown: Timer focus — Mettilo a faccia in giù | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/it/index.html"
-modified: "2026-09-29"
+modified: "2026-09-30"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

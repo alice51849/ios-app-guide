@@ -2,7 +2,7 @@
 title: "QR Code Halo: Σάρωση — Έλεγχος πριν από ενέργεια | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/el/index.html"
-modified: "2026-09-29"
+modified: "2026-09-30"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

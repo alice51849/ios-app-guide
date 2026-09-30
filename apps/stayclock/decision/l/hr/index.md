@@ -2,7 +2,7 @@
 title: "Stay Clock: preklopni sat — Sat i kalendar bez prekida | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/hr/index.html"
-modified: "2026-09-29"
+modified: "2026-09-30"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

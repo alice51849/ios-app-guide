@@ -15,11 +15,11 @@ on:
   workflow_dispatch:
     inputs:
       owned_feed_release:
-        description: "單次配對 feeds 發布；provider notifications 維持 release hold"
+        description: "單次配對 feeds 發布（只有配對 dispatch 會上傳部署）；本 workflow 不送 provider 通知"
         type: boolean
         default: false
       notification_release_hold:
-        description: "本輪必須為 true，不授權 WebSub／rssCloud／IndexNow"
+        description: "必須等於所部署 Guide 的 _engine/geo/notification_policy.json（2026-09-30 放行後為 false）"
         type: boolean
         default: true
       incremental_high_intent:
@@ -57,6 +57,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
+      # 固定 "true"：配對部署只嘗試一次、不盲目建立第二次部署。provider 通知是否
+      # 放行只看 _engine/geo/notification_policy.json（IndexNow 由 indexnow-daily 送出）。
       NOTIFICATION_RELEASE_HOLD: "true"
       GEO_SITE: https://open.cait518.cc/ios-app-guide
       GEO_PAGES: ${{ github.workspace }}
@@ -80,18 +82,25 @@ jobs:
       - name: Read held publication policy
         id: release_policy
         env:
-          EXPLICIT_HELD_RELEASE: ${{ github.event_name == 'workflow_dispatch' && inputs.owned_feed_release == true && inputs.incremental_high_intent == true && inputs.notification_release_hold == true }}
+          PAIRED_RELEASE: ${{ github.event_name == 'workflow_dispatch' && inputs.owned_feed_release == true && inputs.incremental_high_intent == true }}
+          DISPATCH_NOTIFICATION_RELEASE_HOLD: ${{ inputs.notification_release_hold }}
+        # 只有明確配對 dispatch 會上傳；dispatch 的 notification_release_hold
+        # 必須等於所部署 Guide 的政策，對不上就整輪失敗、不上傳。
         run: |
-          python3 - <<'PY'
+          PYTHONPATH=_engine/geo python3 - <<'PY'
           import json, os
-          from pathlib import Path
-          p=json.loads(Path("_engine/geo/notification_policy.json").read_text())
-          assert p["notification_release_hold"] is True
-          allowed=os.environ["EXPLICIT_HELD_RELEASE"] == "true"
-          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
-              f.write(f"allow_upload={str(allowed).lower()}\n")
-          print(json.dumps({"notification_release_hold":True,"provider_intents":0,
-                            "provider_requests":0,"explicit_paired_upload":allowed}))
+          from notification_release import read_policy
+          hold = read_policy()["notification_release_hold"]
+          paired = os.environ["PAIRED_RELEASE"] == "true"
+          expected = "true" if hold else "false"
+          if paired and os.environ.get("DISPATCH_NOTIFICATION_RELEASE_HOLD") != expected:
+              raise SystemExit(
+                  f"notification_release_hold input must equal the deployed policy: {expected}"
+              )
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"allow_upload={str(paired).lower()}\n")
+          print(json.dumps({"notification_release_hold": hold, "provider_intents": 0,
+                            "provider_requests": 0, "explicit_paired_upload": paired}))
           PY
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -262,7 +271,7 @@ jobs:
           python3 _engine/geo/owned_feed_release.py seal --pages-dir "$GITHUB_WORKSPACE" \
             --report "$RUNNER_TEMP/owned-feed-pre-upload.json"
       - name: Restore durable feed acknowledgement state
-        if: inputs.incremental_high_intent != true
+        if: steps.release_policy.outputs.allow_upload == 'true' && inputs.incremental_high_intent != true
         uses: actions/cache/restore@v4
         with:
           path: .github/owned-feed-runtime/
@@ -272,7 +281,9 @@ jobs:
             owned-feed-v2-
       - name: Prepare content-addressed feed notifications
         id: prepare_owned_feeds
-        if: inputs.incremental_high_intent != true
+        # 只為真的會上傳的非增量部署準備 WebSub／rssCloud outbox；預檢不需要，
+        # 且放行後缺 durable state 會 fail closed。
+        if: steps.release_policy.outputs.allow_upload == 'true' && inputs.incremental_high_intent != true
         env:
           GEO_SITE: https://open.cait518.cc/ios-app-guide
         run: |
@@ -347,10 +358,18 @@ jobs:
             --report "$RUNNER_TEMP/owned-feed-live-readback.json"
           PYTHONPATH="$RUNNER_TEMP" python3 - <<'PY'
           import json
-          from notification_release import held_result
+          from notification_release import held_result, read_policy
+          hold = read_policy()["notification_release_hold"]
           for protocol in ("websub", "rsscloud", "indexnow"):
               result=held_result(protocol)
-              assert result and result["provider_intents"] == result["provider_requests"] == 0
+              if hold:
+                  assert result and result["provider_intents"] == result["provider_requests"] == 0
+              else:
+                  # Released: this deploy job itself still sends nothing; IndexNow is
+                  # submitted by indexnow-daily against the verified deployed tree.
+                  assert result is None
+                  result={"protocol":protocol,"notification_release_hold":False,
+                          "provider_intents":0,"provider_requests":0}
               print(json.dumps(result,sort_keys=True))
           PY
       - name: Preserve held feed publication evidence

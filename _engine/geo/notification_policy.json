@@ -1,6 +1,6 @@
 {
   "schema": "lumi.notification-release-policy/v1",
-  "notification_release_hold": true,
+  "notification_release_hold": false,
   "providers": ["websub", "rsscloud", "indexnow"],
-  "reason": "Owned-feed publication is authorized; provider notifications require a separate release."
+  "reason": "2026-09-30 Caitlyn 明確授權放行：恢復指南站向 Bing／IndexNow 通知新頁。IndexNow 只由 indexnow-daily 對已部署樹、以 durable state 與內容指紋閘門送出；WebSub／rssCloud outbox 仍須 durable state 與 production ACK 對帳 migration 才會送出。"
 }

@@ -183,6 +183,29 @@ manifest防中途換代。只有雙host均150/150才標記技術readback PASS；
 下一步eligibility仍為 `dispatch_authorized=false`，需另次明確通知release授權及
 新的production ACK對帳。404／partial／任何不一致都保持hold，不能靠重送provider解決。
 
+### 第5輪：2026-09-30 通知放行（Caitlyn 明確授權）
+
+Caitlyn 於 2026-09-30 明確授權放行（選項「放行（推薦）」：恢復指南站向 Bing／IndexNow
+通知新頁），即第4輪要求的「另一次明確的通知放行授權」。`notification_policy.json`
+改為 `notification_release_hold=false`，providers 與 schema 不變，格式驗證照舊 fail closed。
+
+- IndexNow 只由 Guide 的 `indexnow-daily` 送出：checkout 線上 `deployment.json`
+  的 source commit，帶 durable `--state-file`／`--receipt-file`／`--content-state`
+  做增量＋內容指紋閘門；政策以**已部署** commit 的 `_engine` 為準。
+  沒帶齊三個 durable 綁定的本機呼叫（agent tactic、`publish.py`、promo burst）
+  只輸出 `lumi.indexnow-unbound-run/v1`，0 request，避免對未部署樹全量重送。
+- 放行後第一輪 no-op 會把 hold 期間留在 receipt 路徑的 typed hold 結果換成新的
+  0-URL receipt；其他無法辨識的 receipt 仍 fail closed。
+- WebSub／rssCloud outbox 不因此自動送出：`owned_feed_delivery` 仍要求
+  durable state 與 production ACK 對帳 migration（且 migration 本身的
+  locale/layout `release_hold` 另外把關）；Pages 只為會上傳的非增量部署準備 outbox，
+  目前只有配對增量 dispatch 會上傳，所以 Pages 仍是 0 provider request。
+- `owned_feed_release.py seal`／`verify` 記錄當下政策，不再要求 hold=true；
+  verify 要求 manifest 與目前政策一致，provider_intents／requests 仍必須為 0。
+- 配對 dispatch 改帶 `notification_release_hold=false`：Pages 會要求此輸入等於
+  所部署 Guide 的政策，對不上就整輪失敗、不上傳（取代舊的「必須為 true」）。
+  部署仍只嘗試一次，不盲目建立第二次部署。
+
 ### 既有 paid-upfront exact9 內容修復
 
 `paid_upfront_surfaces.py` 與 `data/paid_upfront_surface_repairs.json` 只修復明列的

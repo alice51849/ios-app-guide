@@ -811,6 +811,138 @@ class IndexNowTests(unittest.TestCase):
                 )
             self.assertFalse(state_file.exists())
 
+    def _held_receipt(self, root: Path, receipt_file: Path) -> dict:
+        import notification_release
+
+        policy_path = root / "held-policy.json"
+        policy = {
+            **notification_release.read_policy(),
+            "notification_release_hold": True,
+        }
+        policy_path.write_text(json.dumps(policy), encoding="utf-8")
+        return notification_release.held_result(
+            "indexnow",
+            receipt_file=receipt_file,
+            policy_path=policy_path,
+        )
+
+    def _released_noop(self, root: Path, receipt_file: Path, state_file: Path):
+        return indexnow.run(
+            root,
+            "https://example.com/apps",
+            root / "unused-key.txt",
+            git_since="25 hours ago",
+            state_file=state_file,
+            receipt_file=receipt_file,
+            runner=mock.Mock(
+                return_value=SimpleNamespace(stdout=f"{'b' * 40}\n")
+            ),
+            sender=mock.Mock(side_effect=AssertionError("no-op must not send")),
+            clock=lambda: datetime(2026, 9, 30, 12, tzinfo=timezone.utc),
+        )
+
+    def test_first_released_noop_replaces_the_held_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog = root / "data" / "verified-ios-app-finder-catalog.json"
+            catalog.parent.mkdir()
+            catalog.write_text('{"apps": []}', encoding="utf-8")
+            state_file = root / "state" / "last-submitted-sha"
+            receipt_file = root / "state" / "accepted-receipt.json"
+            indexnow.write_last_submitted_sha(state_file, "a" * 40)
+            self.assertTrue(self._held_receipt(root, receipt_file))
+            with mock.patch.object(indexnow, "read_changed_urls", return_value=[]):
+                self.assertEqual(
+                    0, self._released_noop(root, receipt_file, state_file)
+                )
+            receipt = json.loads(receipt_file.read_text(encoding="utf-8"))
+            self.assertEqual("indexnow_submission_receipt", receipt["kind"])
+            self.assertEqual("no_changed_public_urls", receipt["disposition"])
+            self.assertEqual("b" * 40, receipt["pages_sha"])
+            self.assertEqual("a" * 40, receipt["baseline_sha"])
+            self.assertEqual(0, receipt["url_count"])
+            self.assertEqual(0o600, receipt_file.stat().st_mode & 0o777)
+            self.assertEqual(
+                "b" * 40,
+                state_file.read_text(encoding="utf-8").strip(),
+            )
+
+    def test_noop_still_rejects_receipts_that_are_not_a_zero_request_hold(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state_file = root / "state" / "last-submitted-sha"
+            receipt_file = root / "state" / "accepted-receipt.json"
+            indexnow.write_last_submitted_sha(state_file, "a" * 40)
+            held = self._held_receipt(root, receipt_file)
+            for change in (
+                {"provider_requests": 1},
+                {"accepted_ack": 1},
+                {"protocol": "websub"},
+                {"notification_release_hold": False},
+            ):
+                with self.subTest(change=change):
+                    receipt_file.write_text(
+                        json.dumps({**held, **change}), encoding="utf-8"
+                    )
+                    with (
+                        mock.patch.object(
+                            indexnow, "read_changed_urls", return_value=[]
+                        ),
+                        self.assertRaisesRegex(
+                            ValueError, "Invalid existing IndexNow receipt"
+                        ),
+                    ):
+                        self._released_noop(root, receipt_file, state_file)
+                    self.assertEqual(
+                        "a" * 40,
+                        state_file.read_text(encoding="utf-8").strip(),
+                    )
+
+    def test_released_main_refuses_runs_without_durable_bindings(self) -> None:
+        import notification_release
+
+        released = {
+            **notification_release.read_policy(),
+            "notification_release_hold": False,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for extra in (
+                [],
+                ["--git-since", "25 hours ago"],
+                [
+                    "--state-file",
+                    str(root / "last-submitted-sha"),
+                    "--receipt-file",
+                    str(root / "accepted-receipt.json"),
+                ],
+            ):
+                argv = ["indexnow_submit.py", "--pages-dir", str(root), *extra]
+                output = io.StringIO()
+                with (
+                    self.subTest(argv=argv),
+                    mock.patch.object(
+                        notification_release,
+                        "read_policy",
+                        return_value=released,
+                    ),
+                    mock.patch("sys.argv", argv),
+                    mock.patch.object(
+                        indexnow,
+                        "run",
+                        side_effect=AssertionError("unbound run"),
+                    ),
+                    mock.patch("sys.stdout", new=output),
+                ):
+                    indexnow.main()
+                result = json.loads(output.getvalue())
+                self.assertEqual(indexnow.UNBOUND_RUN_SCHEMA, result["schema"])
+                self.assertEqual(0, result["provider_requests"])
+                self.assertEqual(0, result["accepted_ack"])
+            self.assertEqual([], list(root.iterdir()))
+
     def test_workflow_waits_for_exact_pages_deployment(self) -> None:
         workflow = _site_workflow("indexnow-daily.yml")
         pages_workflow = _site_workflow("pages.yml")
@@ -828,6 +960,9 @@ class IndexNowTests(unittest.TestCase):
         self.assertIn("actions/cache/restore@v4", workflow)
         self.assertIn("actions/cache/save@v4", workflow)
         self.assertIn('--state-file "$state_file"', workflow)
+        # Only a run carrying every durable binding may submit once released.
+        self.assertIn('--receipt-file "$receipt_file"', workflow)
+        self.assertIn('--content-state "$content_state"', workflow)
         self.assertIn("queue: max", workflow)
         self.assertIn('- cron: "17 5 1 * *"', workflow)
         self.assertIn(

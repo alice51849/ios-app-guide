@@ -217,14 +217,28 @@ class ReconciliationTests(FeedFixture):
         self.assertEqual(2, len(delivery.read_state(self.state)["records"]))
 
     def test_migrated_pending_cannot_notify_before_locale_layout_release(self):
+        import notification_release
         reconciliation.import_state(self.pages, self.capture, [], self.state)
         with patch.object(delivery, "inventory", side_effect=AssertionError("Hold must precede readback")):
             with self.assertRaisesRegex(ValueError, "held"):
                 delivery.deliver(self.pages, self.state, SOURCE, "websub")
+        argv = ["notify", "--pages-dir", str(self.pages), "--state", str(self.state),
+                "--source-sha", SOURCE, "--protocol", "websub", "--execute"]
+        before = self.state.read_bytes()
+        # The provider-notification release (2026-09-30) does not lift the
+        # migration's own locale/layout hold: the CLI still refuses before any readback.
+        released = {**notification_release.read_policy(), "notification_release_hold": False}
+        error = io.StringIO()
+        with patch("notification_release.read_policy", return_value=released), \
+             patch.object(delivery, "inventory", side_effect=AssertionError("Hold must precede readback")), \
+             contextlib.redirect_stderr(error), self.assertRaises(SystemExit):
+            delivery.main(argv)
+        self.assertIn("Locale/layout release hold", error.getvalue())
+        self.assertEqual(before, self.state.read_bytes())
+        held = {**released, "notification_release_hold": True}
         output = io.StringIO()
-        with contextlib.redirect_stdout(output):
-            delivery.main(["notify", "--pages-dir", str(self.pages), "--state", str(self.state),
-                           "--source-sha", SOURCE, "--protocol", "websub", "--execute"])
+        with patch("notification_release.read_policy", return_value=held), contextlib.redirect_stdout(output):
+            delivery.main(argv)
         self.assertTrue(json.loads(output.getvalue())["notification_release_hold"])
 
     def test_lost_local_cache_cannot_bootstrap_343_intents_via_cli(self):

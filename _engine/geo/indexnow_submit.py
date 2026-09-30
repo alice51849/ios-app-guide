@@ -43,6 +43,10 @@ PRIVATE_TOP_LEVEL_PATHS = {"_engine", ".git", ".github"}
 FINDER_CATALOG_PATH = Path("data/verified-ios-app-finder-catalog.json")
 CONTENT_STATE_VERSION = 1
 CONTENT_STATE_KIND = "indexnow_indexable_content_digests"
+# notification_release.held_result() writes this typed zero-request outcome to
+# the same receipt path while the provider release is held.
+HELD_RECEIPT_SCHEMA = "lumi.notification-release-hold/v1"
+UNBOUND_RUN_SCHEMA = "lumi.indexnow-unbound-run/v1"
 DIGEST_RE = re.compile(r"[0-9a-f]{64}")
 _COMMENT_RE = re.compile(r"(?s)<!--.*?-->")
 _DROPPED_ELEMENT_RE = re.compile(
@@ -516,6 +520,17 @@ def carry_receipt_through_noop(
         receipt = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError) as error:
         raise ValueError(f"Invalid existing IndexNow receipt: {path}") from error
+    if (
+        isinstance(receipt, dict)
+        and receipt.get("schema") == HELD_RECEIPT_SCHEMA
+        and receipt.get("protocol") == "indexnow"
+        and receipt.get("notification_release_hold") is True
+        and receipt.get("provider_requests") == 0
+        and receipt.get("accepted_ack") == 0
+    ):
+        # A held run accepted nothing, so there is no endpoint batch to carry;
+        # the caller writes a fresh zero-URL receipt for the current SHA.
+        return None
     if (
         not isinstance(receipt, dict)
         or receipt.get("version") != 1
@@ -1065,6 +1080,41 @@ def run(
     return accepted
 
 
+def unbound_run_result(args: argparse.Namespace) -> dict | None:
+    """Refuse released submissions that are not bound to durable state.
+
+    Only the deployed-tree workflow keeps the last submitted SHA, the accepted
+    receipt and the content digests. An ad-hoc local run (a full refresh by
+    default) would re-announce the whole inventory of a tree that may not be
+    deployed, so it records zero requests instead.
+    """
+    missing = [
+        flag
+        for flag, value in (
+            ("--state-file", args.state_file),
+            ("--receipt-file", args.receipt_file),
+            ("--content-state", args.content_state),
+        )
+        if value is None
+    ]
+    if not missing:
+        return None
+    return {
+        "schema": UNBOUND_RUN_SCHEMA,
+        "protocol": "indexnow",
+        "notification_release_hold": False,
+        "missing_bindings": missing,
+        "provider_intents": 0,
+        "provider_requests": 0,
+        "accepted_ack": 0,
+        "indexing_verified": False,
+        "reason": (
+            "IndexNow is submitted only by the deployed-tree workflow with "
+            "durable --state-file, --receipt-file and --content-state"
+        ),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages-dir", type=Path, default=HERE / "pages")
@@ -1122,6 +1172,10 @@ def main() -> None:
     held = held_result("indexnow", receipt_file=args.receipt_file)
     if held:
         print(json.dumps(held, sort_keys=True))
+        return
+    unbound = unbound_run_result(args)
+    if unbound:
+        print(json.dumps(unbound, sort_keys=True))
         return
 
     run(

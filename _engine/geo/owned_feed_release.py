@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Seal an exact held feed release and verify it on both public hosts by GET."""
+"""Seal an exact generation-bound feed release and verify it on both public hosts by GET.
+
+The sealed manifest records the notification policy in force; sealing and
+readback never send provider notifications themselves (IndexNow is only
+submitted by the separate deployed-tree workflow).
+"""
 from __future__ import annotations
 
 import argparse
@@ -25,12 +30,13 @@ HOSTS = (feeds.SITE, ORIGIN_SITE)
 
 
 def seal(pages: Path) -> dict:
-    if read_policy()["notification_release_hold"] is not True:
-        raise ValueError("This publication requires notification_release_hold=true")
+    # read_policy() fails closed on a missing/malformed policy; the manifest
+    # records the policy in force instead of assuming a hold.
+    hold = read_policy()["notification_release_hold"]
     catalog = feeds.read_manifest(pages)
     generation = validate_binding(feeds.read_json(pages / ".well-known/deployment.json"))
     result = {
-        "schema": SCHEMA, "notification_release_hold": True,
+        "schema": SCHEMA, "notification_release_hold": hold,
         "provider_intents": 0, "provider_requests": 0,
         "subscriber_delivery_verified": False, "indexing_verified": False,
         "generation": generation, "source_commit": generation["pages_source_sha"],
@@ -80,18 +86,20 @@ def get_exact(url: str, expected: bytes, allowed: set[str], *, opener=None, atte
 
 
 def verify(pages: Path, *, opener=None, attempts=6, delay=5) -> dict:
+    policy = read_policy()
+    hold = policy["notification_release_hold"]
     catalog = feeds.read_manifest(pages)
     manifest_raw = (pages / MANIFEST).read_bytes()
     manifest = feeds.decode(manifest_raw)
     generation = validate_binding(manifest)
     if (
-        manifest.get("schema") != SCHEMA or manifest.get("notification_release_hold") is not True
+        manifest.get("schema") != SCHEMA or manifest.get("notification_release_hold") is not hold
         or manifest.get("manifest_digest") != feeds.digest({k: v for k, v in manifest.items() if k != "manifest_digest"})
         or manifest.get("feed_manifest_sha256") != feeds.sha256((pages / feeds.INDEX).read_bytes())
         or manifest.get("feed_generation_digest") != catalog["generation_digest"]
         or manifest.get("provider_intents") != 0 or manifest.get("provider_requests") != 0
     ):
-        raise ValueError("Invalid held-release manifest")
+        raise ValueError("Invalid feed-release manifest or notification policy drift")
     hosts = {}
     for host in HOSTS:
         for path, raw in (
@@ -125,12 +133,16 @@ def verify(pages: Path, *, opener=None, attempts=6, delay=5) -> dict:
         "schema": "lumi.owned-feed-live-readback/v1", "generation": generation,
         "source_commit": generation["pages_source_sha"], "engine_source_revision": generation["source_sha"],
         "route_manifest_digest": generation["manifest_digest"],
-        "notification_release_hold": True, "provider_intents": 0, "provider_requests": 0,
+        "notification_release_hold": hold, "provider_intents": 0, "provider_requests": 0,
         "hosts": hosts, "feed_count": 150, "record_count": 2350,
         "observed_at": datetime.now(timezone.utc).isoformat(),
         "next_notification_release_eligibility": {
             "technical_feed_readback_passed": True, "dispatch_authorized": False,
             "requires": ["separate notification-release authorization", "fresh production ACK reconciliation"],
+        } if hold else {
+            "technical_feed_readback_passed": True, "dispatch_authorized": True,
+            "authorization": policy["reason"],
+            "requires": ["fresh production ACK reconciliation before any WebSub/rssCloud outbox delivery"],
         },
     }
     report["receipt_digest"] = feeds.digest(report)
@@ -153,7 +165,7 @@ def main():
         args.report.write_bytes(feeds.json_bytes(result))
         args.report.chmod(0o600)
     print(json.dumps({
-        "operation": args.operation, "notification_release_hold": True,
+        "operation": args.operation, "notification_release_hold": result["notification_release_hold"],
         "provider_intents": 0, "provider_requests": 0,
         "feed_count": result["feed_count"], "record_count": result["record_count"],
         "source_commit": result["source_commit"],

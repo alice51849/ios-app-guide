@@ -258,7 +258,7 @@
       "record_count": 53
     },
     "bn-BD": {
-      "date_modified": "2026-09-30T14:40:05Z",
+      "date_modified": "2026-09-30T18:32:58Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -268,7 +268,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "cb5ba263e2a8962596522564ee695070e8e4ed81ff4bd29ca454ee6e9a4b3239",
+          "sha256": "95f575d6b5a92d69c6a7a0a77596e4af59b15482529f48a9b211c9e72a9e6fe6",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -278,7 +278,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "eeca67ad33225131101be81f175341849d8bf394b2aa1bf0db4e5e5c710cefb6",
+          "sha256": "75a1b0f926980516f3eae1492890d08472bdd119e2eecff2c833481e2730e343",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -289,7 +289,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "cd1d458016cff2aab1d1f6c5a798b2b457befa06cb4bc26e826b8f858805f759",
+          "sha256": "1792cd5b4af5e3a174504ab23e88643b88a7abd24298f98e776c11c4acf1588d",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2218,7 +2218,7 @@
       "record_count": 53
     }
   },
-  "generation_digest": "bf26118a1e025eb0d0e991febe4d3541ef885e76d6a0fb4bb094d3fbd6b45865",
+  "generation_digest": "49f820f86a832f150a8c04bd2d55951c3397d745cb35db4b333bdebc846635d9",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2241,11 +2241,11 @@
       "external_app_locales.py": "931182b43719e712ca3573f9b2ce22fb60cce34acc23909c5b63660624737f35",
       "gen_publisher_disclosures.py": "0e5c124806e6d8e2e419561e63d82c9a1d8afb99eb8912fa5ca49ba4c8a90677",
       "gen_sitemap_lastmod.py": "73befdc396e607eb16ffee76930bd6df098580d4da153577c1a56d6952d206f5",
-      "indexnow_submit.py": "8450a4b40b7d420c99dcb51ade0e6643c7bd867d550bdaf72087a6a4d9dec258",
+      "indexnow_submit.py": "7093732431554588484d89c90679931d340cb29dcc8ea5e87c8d76aa9fbd54ef",
       "live_app_manifest.json": "a387b801577f77529155cc452caa292cd8c2df35bec98df1114a4f3e23f5bf10",
       "locale_storefronts.json": "1b9d27a304b0b2031fbdbb26e816e0bc416d0a8df8d9cf5a1593d72fdaaab5de",
       "market_availability.py": "e165cb3db1ef397ce5e594e23760e63ff54538742e9a9529862ed03008b12182",
-      "notification_policy.json": "77226db419ba353469057211f43fbb2a48fc03fa3fe8ea2a05d5ff314315ef44",
+      "notification_policy.json": "25ca6e5de0c561b369589892426bbbc396d0a54ddf7f24a3def9b3a21852bd0c",
       "notification_release.py": "9515cfb8acbf24fd60e1bc676ad6b0b7eaf57e90eb28cb510962155351c6ce83",
       "notify_rsscloud.py": "38a644424c666ca9aaf10b9b6dffdb9800829fa6adc8cb3295522c5adc8b599c",
       "notify_websub.py": "1b0abe01f176d0b3ed56be3f12616ddac395dc38abd497e923718e7c925735f6",
@@ -2257,7 +2257,7 @@
       "owned_feed_receipt.schema.json": "1c00a1175b07380ccfd9c1a1e7ae97b920aba9121898418db402b0eb6afc877e",
       "owned_feed_receipts.py": "fc6cf034ae56f1a55f04e5681e0e81e3238a5597eddc7b78191b9b97b0cba490",
       "owned_feed_reconciliation.py": "305a95c5ccb92cd179d9f4730a6e576220c13b92e0b51ef3780b312a425e24e6",
-      "owned_feed_release.py": "81807f88f4f57da3b7e254e4d49d225ef07fec411361f31516540edee0428597",
+      "owned_feed_release.py": "82cafe177c4d6b1d24f4b16a73ebc40949e96ba188182d8909036b8ff42e2423",
       "paid_upfront_surfaces.py": "c18e9324884b5696f1a4de9dcf85d94f4f7ea1d166a6379f5bf291d5c9c6bf10",
       "portfolio_app_catalog_api.py": "ae55c82edd37891772e9f31e1c3ecbfb55e9a74fd8323d12f78e4a1e9d1ed692",
       "portfolio_app_finder_i18n.json": "22dea261ee2efb7b964adfb0d1a84942bc1ca5408039cce791a22b71f6eb99d0",

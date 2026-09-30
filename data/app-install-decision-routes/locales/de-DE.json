@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "de-DE",
   "dateModified": "2026-09-30",
-  "content_digest": "3b6f72832fb5768439ee4b4bd2b18283f177bdbbaf524d7664cb71c29d78459b",
-  "generation_digest": "d6996184d95dc2ee192f5575d63fb1aee307da3fa577dbf1a3d3252c21e7d159",
+  "content_digest": "796c6827574a79897219ce4a7981bed509a5e10a33d573def20f61794f331cf6",
+  "generation_digest": "2e9bdee7ec86d5512782acb7145972d32218588aa0315331a47f97cc449d6e53",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -2978,7 +2978,8 @@
         "Kein Konto",
         "Kein Tracking",
         "Privat / auf dem Gerät",
-        "App Store · Kostenlos"
+        "App Store · Kostenlos",
+        "★ 2.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/wordmatelite.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/de-DE/index.html",
@@ -2991,7 +2992,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Kostenlos"
+        "formatted_price": "Kostenlos",
+        "rating_value": 2.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",

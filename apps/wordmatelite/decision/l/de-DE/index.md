@@ -20,6 +20,7 @@ Fünf Wörter, eine Minute, ein sichtbarer Schritt auf deinem Weg. Wordmate Lite
 - Kein Tracking
 - Privat / auf dem Gerät
 - App Store · Kostenlos
+- ★ 2.0/5 · 1
 
 [Wordmate Lite: Vokabeltrainer im App Store laden](https://apps.apple.com/de/app/id6797601720?pt=118326163&ct=geo_pick&mt=8)
 

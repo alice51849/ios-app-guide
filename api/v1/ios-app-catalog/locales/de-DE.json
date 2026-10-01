@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-30",
-  "content_digest": "8683f3902636f4e93e2fa60f478f7fca30bf249297dac21c3a50b9bd43537117",
+  "date_modified": "2026-10-01",
+  "content_digest": "6fa6962634ab5ca73f2b5017705834ca2b625a1ad241585e75ba4b76e4daf58f",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -141,7 +141,8 @@
         "fehleranalyse",
         "aussprache",
         "grammatik",
-        "prüfung"
+        "prüfung",
+        "toeic übungen"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -485,7 +486,9 @@
         "FFT",
         "RTA",
         "oktavband",
-        "kalibrierung"
+        "kalibrierung",
+        "spektrumanalysator",
+        "lärmmessgerät"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -540,7 +543,8 @@
         "offline",
         "geldverwalten",
         "reise",
-        "fx"
+        "fx",
+        "urlaubsbudget"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -577,7 +581,8 @@
         "Wechselkurs",
         "Reisekosten",
         "Geld verwalten",
-        "reise"
+        "reise",
+        "urlaubsbudget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -712,7 +717,9 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan"
+        "Fan",
+        "abholschild flughafen",
+        "konzert schild"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1247,7 +1254,8 @@
         "Aufgabenplan",
         "Schlafenszeit",
         "Tagesaufgaben",
-        "Morgen"
+        "Morgen",
+        "abendroutine kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1667,7 +1675,8 @@
         "generator",
         "erstellen",
         "wlan",
-        "visitenkarte"
+        "visitenkarte",
+        "qr code prüfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2320,7 +2329,8 @@
         "ip",
         "tls",
         "tcp",
-        "web"
+        "web",
+        "wlan kein internet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

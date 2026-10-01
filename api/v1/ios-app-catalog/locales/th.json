@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-30",
-  "content_digest": "8683f3902636f4e93e2fa60f478f7fca30bf249297dac21c3a50b9bd43537117",
+  "date_modified": "2026-10-01",
+  "content_digest": "6fa6962634ab5ca73f2b5017705834ca2b625a1ad241585e75ba4b76e4daf58f",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -27,7 +27,8 @@
         "สเก็ตช์",
         "วาดรูป",
         "ออฟไลน์",
-        "จัดระเบียบ"
+        "จัดระเบียบ",
+        "จดโน้ตด้วยลายมือ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -221,7 +222,8 @@
         "วิทยาศาสตร์",
         "นับวัน",
         "วันทำการ",
-        "ค่าน้ำมัน"
+        "ค่าน้ำมัน",
+        "เครื่องคิดเลข วิดเจ็ต"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -552,7 +554,8 @@
         "ท่องเที่ยว",
         "กระเป๋า",
         "offline",
-        "csv"
+        "csv",
+        "บันทึกค่าใช้จ่ายเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -996,7 +999,8 @@
         "สมาธิ",
         "มอนเตสซอรี",
         "ออฟไลน์",
-        "alphabet"
+        "alphabet",
+        "โฟนิกส์เด็ก"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1477,7 +1481,9 @@
         "รดน้ำ",
         "ผ้าปูที่นอน",
         "ไส้กรอง",
-        "รถ"
+        "รถ",
+        "บันทึกงานบ้าน",
+        "เตือนงานบ้าน"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1557,7 +1563,9 @@
         "ประชุม",
         "การบ้าน",
         "ข้อมูล",
-        "กราฟ"
+        "กราฟ",
+        "ทำสไลด์",
+        "สรุปการประชุม"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1760,7 +1768,9 @@
         "ท่องเที่ยว",
         "ช้อปปิ้ง",
         "โน้ต",
-        "ส่วนตัว"
+        "ส่วนตัว",
+        "บุ๊กมาร์ก",
+        "อ่านทีหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2177,7 +2187,8 @@
         "ทริป",
         "เดินทาง",
         "ตั๋ว",
-        "เตือน"
+        "เตือน",
+        "แผนการเดินทาง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2218,7 +2229,8 @@
         "โรงแรม",
         "เที่ยวบิน",
         "ที่เที่ยว",
-        "ออฟไลน์"
+        "ออฟไลน์",
+        "แผนเที่ยว"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2281,7 +2293,8 @@
         "กู้คืน",
         "โฟกัส",
         "4k",
-        "ai"
+        "ai",
+        "เพิ่มความคมชัดรูป"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2322,7 +2335,8 @@
         "ipv4",
         "ipv6",
         "http",
-        "ping"
+        "ping",
+        "วิเคราะห์ wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2363,7 +2377,8 @@
         "ipv4",
         "ipv6",
         "http",
-        "ping"
+        "ping",
+        "ทดสอบเครือข่าย"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2479,7 +2494,8 @@
         "เข้ารหัส",
         "โฟลเดอร์",
         "พรีวิว",
-        "7zip"
+        "7zip",
+        "แตกไฟล์ 7z"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

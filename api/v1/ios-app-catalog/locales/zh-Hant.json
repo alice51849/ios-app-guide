@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-09-30",
-  "content_digest": "8683f3902636f4e93e2fa60f478f7fca30bf249297dac21c3a50b9bd43537117",
+  "date_modified": "2026-10-01",
+  "content_digest": "6fa6962634ab5ca73f2b5017705834ca2b625a1ad241585e75ba4b76e4daf58f",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -92,7 +92,8 @@
         "文件掃描",
         "文字辨識",
         "論文閱讀",
-        "讀文件"
+        "讀文件",
+        "提示詞管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -130,7 +131,9 @@
         "考試準備",
         "練習",
         "學習計劃",
-        "成績追蹤"
+        "成績追蹤",
+        "英文檢定",
+        "多益"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -217,7 +220,9 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料"
+        "匯出資料",
+        "電池檢測",
+        "電池"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -391,7 +396,8 @@
         "工讀",
         "求才",
         "履歷封面",
-        "自傳範本"
+        "自傳範本",
+        "履歷產生器"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -460,7 +466,8 @@
         "月事",
         "好朋友",
         "生理紀錄",
-        "白帶"
+        "白帶",
+        "經期 追蹤"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -624,7 +631,8 @@
         "SPL",
         "NIOSH",
         "OSHA",
-        "錄音機"
+        "錄音機",
+        "分貝"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -744,7 +752,8 @@
         "生活記帳",
         "出國花費",
         "離線記帳",
-        "自訂匯率"
+        "自訂匯率",
+        "出國預算"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1047,7 +1056,8 @@
         "中文",
         "聲母",
         "韻母",
-        "幼兒學習"
+        "幼兒學習",
+        "幼兒 國語"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1203,7 +1213,8 @@
         "塗鴉",
         "點讀",
         "識字",
-        "拼字"
+        "拼字",
+        "兒童 字母"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1530,7 +1541,9 @@
         "上學",
         "整理",
         "責任感",
-        "星星"
+        "星星",
+        "兒童 習慣",
+        "獎勵 貼紙"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1682,7 +1695,9 @@
         "氣溫",
         "保暖",
         "野餐",
-        "出遊"
+        "出遊",
+        "天氣 穿搭",
+        "穿搭 天氣"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1737,7 +1752,8 @@
         "客戶紀錄",
         "離線本機處理",
         "批次作業",
-        "機密安全傳送"
+        "機密安全傳送",
+        "pdf 遮蔽"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1900,7 +1916,9 @@
         "活動收支",
         "出租帳本",
         "攤位帳本",
-        "現金流"
+        "現金流",
+        "副業 記帳",
+        "接案 記帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1961,7 +1979,8 @@
         "數據",
         "心智圖",
         "海報",
-        "大綱"
+        "大綱",
+        "一頁 摘要"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2708,7 +2727,8 @@
         "獎勵",
         "假期",
         "回憶",
-        "地圖"
+        "地圖",
+        "小孩 旅行"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2930,7 +2950,8 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "wifi 診斷"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -3132,7 +3153,9 @@
         "全文搜尋",
         "加密",
         "預覽",
-        "離線"
+        "離線",
+        "密碼保護 zip",
+        "開啟 rar 檔案"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

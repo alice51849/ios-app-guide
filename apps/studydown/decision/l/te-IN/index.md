@@ -2,7 +2,7 @@
 title: "Studydown: ఫోకస్ టైమర్ — స్క్రీన్ కిందికి పెట్టి ఉంచండి | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/te-IN/index.html"
-modified: "2026-09-30"
+modified: "2026-10-01"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

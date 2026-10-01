@@ -2,7 +2,7 @@
 title: "Studydown：伏せて時間記録 — 机に伏せるだけ | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/studydown/decision/l/ja/index.html"
-modified: "2026-09-30"
+modified: "2026-10-01"
 app_store_id: "6807335593"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

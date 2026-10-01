@@ -2,7 +2,7 @@
 title: "Snapport Lite — Retratos no tamanho exato | iOS App"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/pt-BR/index.html"
-modified: "2026-09-30"
+modified: "2026-10-01"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

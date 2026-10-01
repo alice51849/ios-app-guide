@@ -2,7 +2,7 @@
 title: "paid app to open RAR and 7z files on iPhone without ads"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/en-AU/index.html"
-modified: "2026-09-30"
+modified: "2026-10-01"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

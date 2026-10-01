@@ -2,7 +2,7 @@
 title: "QR Code Halo：安全扫码与制作 — 本机查风险再行动 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/zh-Hans/index.html"
-modified: "2026-09-30"
+modified: "2026-10-01"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

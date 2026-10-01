@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — Focus del giorno | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/it/index.html"
-modified: "2026-09-30"
+modified: "2026-10-01"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

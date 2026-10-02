@@ -21,6 +21,13 @@ from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 from aeo_pages import pricing_profile  # noqa: E402
 import live_app_guard  # noqa: E402
+
+PERMANENTLY_RETIRED_APPS = {
+    "zodira": {
+        "app_id": "6783609555",
+        "name": "Zodira",
+    },
+}
 from build_pages_i18n import pricing_text_for  # noqa: E402
 from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402
 from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
@@ -1376,7 +1383,9 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         for key in APPS
         if pricing_profile(key) not in ACCURATE_LEGACY_PROFILES
     }
-    unlisted_keys = set(APPSTORE) - live_keys
+    unlisted_keys = (
+        set(APPSTORE) - live_keys
+    ) | set(PERMANENTLY_RETIRED_APPS)
     inactive_keys = unlisted_keys
     stats = {
         "removed_alternatives": 0,
@@ -1394,9 +1403,15 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         "nonlive_sitemaps": 0,
     }
 
-    unlisted_ids = {APPSTORE[key] for key in unlisted_keys}
+    unlisted_ids = {
+        APPSTORE[key] for key in unlisted_keys if key in APPSTORE
+    } | {
+        app["app_id"] for app in PERMANENTLY_RETIRED_APPS.values()
+    }
     inactive_names = {
         APPS[key]["name"] for key in unlisted_keys if key in APPS
+    } | {
+        app["name"] for app in PERMANENTLY_RETIRED_APPS.values()
     }
 
     for key in inactive_keys:

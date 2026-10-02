@@ -19341,7 +19341,7 @@ class GeneratorTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
             for locale in ("en-US", "zh-Hant"):
-                for key in ("snapport", "wordmate", "zafe", "zodira"):
+                for key in ("snapport", "wordmate", "zafe"):
                     path = pages / locale / f"{key}.html"
                     path.parent.mkdir(parents=True, exist_ok=True)
                     path.write_text(
@@ -19391,7 +19391,7 @@ class GeneratorTests(unittest.TestCase):
                     / f"{portfolio_app_finder.SLUG}.html"
                 ).exists()
             )
-            # zafe/zodira are staged in answer_personas_prelaunch, so a live
+            # zafe is staged in answer_personas_prelaunch, so a live
             # app that owns no persona has to fail closed instead of being
             # dropped from the published catalog.
             with self.assertRaises(ValueError) as caught:
@@ -22131,7 +22131,6 @@ class GeneratorTests(unittest.TestCase):
             "lumimission",
             "lumiweather",
             "lumibopomofo",
-            "zodira",
             "aim990",
             "mochi",
             "zafe",
@@ -22325,7 +22324,7 @@ class GeneratorTests(unittest.TestCase):
                 "unlisted guide", encoding="utf-8"
             )
             unlisted_answer = pages / "answers" / "unlisted.html"
-            unlisted_id = cleanup_localized_assets.APPSTORE["zodira"]
+            unlisted_id = "6783609555"
             unlisted_answer.write_text(
                 f"https://apps.apple.com/app/id{unlisted_id} "
                 f"https://apps.apple.com/app/id{unlisted_id}",
@@ -22366,7 +22365,7 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            live = set(cleanup_localized_assets.APPSTORE) - {"zodira"}
+            live = set(cleanup_localized_assets.APPSTORE)
             stats = cleanup_localized_assets.cleanup(pages, live)
 
             self.assertFalse(
@@ -22535,7 +22534,7 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
             (locale / "snapport.html").write_text("public", encoding="utf-8")
-            zodira_id = cleanup_localized_assets.APPSTORE["zodira"]
+            zodira_id = "6783609555"
             tool = pages / "tools" / "zodiac-compatibility-checker.html"
             tool.write_text(
                 '<script type="application/ld+json">{"@type":'
@@ -22607,10 +22606,7 @@ class GeneratorTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            live = set(cleanup_localized_assets.APPSTORE) - {
-                "zodira",
-                "tripplanet",
-            }
+            live = set(cleanup_localized_assets.APPSTORE) - {"tripplanet"}
             cleanup_localized_assets.cleanup(pages, live)
 
             self.assertTrue(all(not path.exists() for path in inactive_paths))
@@ -26729,7 +26725,6 @@ class GeneratorTests(unittest.TestCase):
             "lumimath": ("free_to_start", "lumimath-free-to-start"),
             "lumimission": ("free_to_start", "lumimission-free-to-start"),
             "lumiweather": ("free_to_start", "lumiweather-free-to-start"),
-            "zodira": ("free_to_start", "zodira-free-to-start"),
             "aim990": ("free_to_start", "aim990-free-to-start"),
             "zafe": ("free_to_start", "zafe-free-to-start"),
             "tripplanet": ("free_to_start", "tripplanet-free-to-start"),

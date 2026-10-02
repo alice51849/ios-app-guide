@@ -1,7 +1,7 @@
 # 共用 live App manifest
 
 `live_app_manifest.json` 是版本控制內、不因時間過期的唯一 roster identity。目前共 **47 款**，
-包含 BattAI、ZipBox；Zafe、Zodira 未經 Apple iTunes Lookup（US、TW、JP、GB）
+包含 BattAI、ZipBox；Zafe 未經 Apple iTunes Lookup（US、TW、JP、GB）
 公開查核確認，不屬於這份 live roster。已上架 App 不因最新
 ASC 版本 non-ready、報告 pending、查核暫時失敗或下載／購買雙零而移出 roster。
 

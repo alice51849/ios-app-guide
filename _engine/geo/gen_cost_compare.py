@@ -25,7 +25,6 @@ from appstore_live import live_app_keys  # noqa: E402
 TOPICS = {
     "sereno": "white noise & sleep sounds",
     "cyca": "period & cycle tracking",
-    "zodira": "astrology & horoscope",
     "gmoney": "budgeting & expense tracking",
     "hourstag": "mindful spending",
     "lockhour": "screen-time & focus",

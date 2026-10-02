@@ -1158,17 +1158,6 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Is my data private?", "a": f"Yes — {name} keeps everything on device with no account."},
              {"q": "Does it predict my fertile window?", "a": "Yes — it shows your period, fertile window and PMS phases."},
              {"q": "Are there ads?", "a": "No ads, and it doesn't sell health data."}])
-    if key == "zodira" and ("astrology" in q or "tarot" in q or "horoscope" in q or "birth chart" in q or "bazi" in q or "zi wei" in q or "natal" in q):
-        return make(
-            "A good astrology app should combine Western and, if you want, Chinese systems (BaZi, Zi Wei) with a readable birth chart and daily insight — while working offline and not harvesting your birth data for ads.",
-            ["Full natal/birth chart, clearly explained.", "Western plus optional Chinese BaZi / Zi Wei.",
-             "Daily horoscope and tarot that work offline.", "No account and no selling of personal data.", "A pay-once model, no subscription."],
-            ["Enter your birth date, time and place.", f"Generate your chart in {name}.",
-             "Read your placements in plain language.", "Check the daily insight or tarot.", "Keep it all offline and private."],
-            f"{name} fits when you want East-and-West astrology and tarot that stays offline and private.",
-            [{"q": "Does it work offline?", "a": f"Yes — {name} works offline and keeps your birth data private."},
-             {"q": "Western and Chinese astrology?", "a": "Yes — it covers Western charts plus BaZi and Zi Wei."},
-             {"q": "Subscription?", "a": "It's a one-time purchase, not a subscription."}])
     if key == "gmoney" and ("budget" in q or "expense" in q or "spending" in q or "currency" in q or "travel money" in q or "trip budget" in q) and ("app" in q or "track" in q or "log" in q or "convert" in q):
         return make(
             "For travel money, the fastest tools log an expense and convert the currency in one tap, work offline abroad, and need no account — so you can capture spending in the moment without a data connection.",
@@ -1400,7 +1389,7 @@ _CAT_NOUN = {
     "picclear": "photo cleanup app", "scanto": "document scanner", "cyca": "period tracker",
     "gmoney": "budgeting app", "hourstag": "spending tracker", "lockhour": "focus app",
     "unblurry": "photo enhancer", "photocream": "film camera app", "zafe": "photo vault",
-    "mochi": "checklist app", "zodira": "astrology app", "tripbee": "trip planner",
+    "mochi": "checklist app", "tripbee": "trip planner",
     "tripplanet": "kids travel app", "lumiletters": "kids phonics app", "lumiletterspro": "kids phonics app",
     "lumimath": "kids math app", "lumimathpro": "kids math app", "lumimission": "kids routine app",
     "lumimissionpro": "kids routine app", "lumibopomofo": "kids Chinese app", "lumibopomofopro": "kids Chinese app",
@@ -1415,7 +1404,7 @@ _FAQ_APP_GROUP = {
     "lumiletters": "kids", "lumiletterspro": "kids", "lumimath": "kids", "lumimathpro": "kids",
     "lumibopomofo": "kids", "lumibopomofopro": "kids", "lumimission": "kids", "lumimissionpro": "kids",
     "lumiweather": "kids", "tripplanet": "kids",
-    "lockhour": "app_lockhour", "sononote": "app_sononote", "zodira": "app_zodira", "sereno": "app_sereno",
+    "lockhour": "app_lockhour", "sononote": "app_sononote", "sereno": "app_sereno",
 }
 
 
@@ -1637,16 +1626,6 @@ _COST_FACTS = {
             {"q": "How much does YNAB cost?", "a": "$109/year or $14.99/month — it's subscription-only."},
             {"q": "Is a pay-once travel budget app worth it?", "a": "For travel expense logging and currency conversion, a one-time purchase avoids an ongoing budgeting subscription."},
             {"q": "Does it work offline?", "a": "A good travel budget app logs and converts offline with no account."}],
-    },
-    "zodira": {
-        "lead": "Astrology apps like Nebula charge a subscription plus per-minute reading fees (which can top $100 a session) — a pay-once app gives you charts and readings without the meter running.",
-        "detail": "Many astrology apps monetize heavily: Nebula adds per-minute psychic-reading fees on top of a subscription, and The Pattern and Sanctuary run yearly subscriptions (Co-Star is mostly free). If you want your birth chart, daily horoscope and tarot for entertainment, a pay-once app gives you that offline and privately for a single price, with no recurring bill. Treat astrology as interest and entertainment rather than verified prediction.",
-        "look": ["Nebula: subscription + per-minute readings.", "The Pattern/Sanctuary: yearly subscriptions.",
-                 "A pay-once app = one price, offline.", "No account, data stays private.", "For entertainment, not verified prediction."],
-        "faq": [
-            {"q": "How much do astrology apps cost?", "a": "Many are subscriptions ($10–$50/year), and some like Nebula also charge per-minute reading fees; confirm current prices."},
-            {"q": "Is a pay-once astrology app worth it?", "a": "If you want charts and horoscopes for fun without a recurring bill, a one-time purchase avoids subscriptions and per-minute fees."},
-            {"q": "Is it accurate?", "a": "Astrology is best treated as interest and entertainment, not verified prediction."}],
     },
 }
 

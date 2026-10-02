@@ -48,7 +48,6 @@ TOPICS = {
     "hourstag": "mindful spending",
     "lockhour": "screen time & app blocker",
     "cyca": "period & cycle tracker",
-    "zodira": "astrology & tarot",
     "tripbee": "trip planner",
     "sereno": "sleep & white noise",
     "aim990": "TOEIC test prep",

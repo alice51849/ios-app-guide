@@ -305,27 +305,6 @@ C = {
    {"q": "Is there a subscription?", "a": "No. Lumi Bopomofo Pro is a one-time purchase."},
   ],
  },
- "zodira": {
-  "title": "Astrology & Tarot Apps for iPhone: How to Choose",
-  "meta": "Astrology, tarot, horoscope, BaZi and Zi Wei in one app \u2014 offline and private, no subscription, no ads, pay once. How to choose.",
-  "intro": "Most astrology apps need a connection, push daily upsells, and quietly collect your birth data. If you just want readings \u2014 Western and Chinese \u2014 that work offline and keep your details private, the criteria are simple.",
-  "criteria": [
-   "Covers what you want \u2014 horoscope, birth chart, tarot, and Chinese systems like BaZi and Zi Wei",
-   "Works fully offline, so readings don't depend on a connection",
-   "Keeps your birth data private on-device rather than uploading it",
-   "No ads interrupting a reflective experience",
-   "No subscription to read your own chart",
-   "A one-time purchase for the whole feature set",
-  ],
-  "why": "Zodira brings astrology, tarot, horoscope, BaZi and Zi Wei together \u2014 offline and private, with no ads and no subscription, for a one-time purchase.",
-  "faqs": [
-   {"q": "Is there an astrology app that works offline?", "a": "Yes \u2014 Zodira runs offline and keeps your birth data on-device, covering horoscope, birth chart, tarot, BaZi and Zi Wei."},
-   {"q": "Does it include Chinese astrology?", "a": "Zodira includes BaZi and Zi Wei alongside Western astrology and tarot."},
-   {"q": "Will it sell my birth data?", "a": "Zodira is private and offline, so your details stay on your device."},
-   {"q": "Is there a subscription?", "a": "No. Zodira is a one-time purchase with no subscription and no ads."},
-   {"q": "Does it do tarot too?", "a": "Yes \u2014 tarot is included alongside the astrology systems."},
-  ],
- },
 }
 
 

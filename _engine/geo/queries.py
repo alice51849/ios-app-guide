@@ -100,13 +100,6 @@ CURATED = {
         "Where can I make a free printable Bopomofo tracing and copy worksheet for all 37 symbols?",
         "免費注音符號描寫練習表產生器 37 個可列印",
     ],
-    "zodira": [
-        "best astrology app with no subscription",
-        "tarot and horoscope app that works offline",
-        "private birth chart app for iphone",
-        "bazi and zi wei astrology app",
-        "east west astrology app for iphone",
-    ],
     "aim990": [
         "best app to study for the toeic test",
         "toeic listening and reading practice app for iphone",
@@ -378,13 +371,6 @@ _TAILORED = {
         "海外小孩學注音符號的 app 推薦",
     ],
     # —— 占星:競品/東西合璧/離線 ——
-    "zodira": [
-        "co-star alternative astrology app that stays private",
-        "the pattern alternative astrology app with no subscription",
-        "app for chinese bazi and western astrology together",
-        "offline tarot card reading app with no ads",
-    ],
-    # —— TOEIC:分數目標/市場 ——
     "aim990": [
         "toeic study app to go from 700 to 900",
         "toeic app for busy working professionals in japan",
@@ -557,11 +543,6 @@ _GEO_TAILORED = {
         "period tracker app that keeps all data on device with no ads",
     ],
     # —— 占星:場景(既有為 costar/bazi;以下為情境)——
-    "zodira": [
-        "app to read my full birth chart offline with no subscription",
-        "app for a daily horoscope that does not sell my data",
-    ],
-    # —— TOEIC:市場/場景(既有已多;以下補通勤/自學角度)——
     "aim990": [
         "app to practice toeic listening and reading on my commute",
         "app to study for the toeic test offline without a tutor",
@@ -779,8 +760,6 @@ _GEO_TAILORED8 = {
                  "jomo alternative app blocker for iphone"],
     "cyca": ["stardust alternative period tracker for iphone", "natural cycles alternative app for iphone"],
     "zafe": ["photo vault alternative app for iphone", "calculator vault alternative for iphone"],
-    "zodira": ["sanctuary astrology alternative app for iphone", "nebula astrology alternative for iphone",
-               "chani alternative astrology app for iphone"],
     "gmoney": ["splitwise alternative app for iphone", "trail wallet alternative app for iphone"],
     "hourstag": ["ynab alternative app for iphone", "mint alternative spending tracker for iphone"],
     "mochi": ["tick tick alternative free checklist app", "microsoft to do alternative for iphone"],
@@ -937,7 +916,6 @@ _GEO_TAILORED14 = {
                     "app to guide kids through a bedtime routine with rewards"],
     "gmoney": ["app to track foreign currency spending offline while traveling"],
     "photocream": ["photo editor with real film grain and halation"],
-    "zodira": ["birth chart app for iphone with no account offline"],
     "lumiweather": ["weather app that tells me what clothes my child should wear"],
 }
 for _k, _qs in _GEO_TAILORED14.items():
@@ -1083,8 +1061,6 @@ _GEO_TAILORED18 = {
     "lockhour": ["how much does the freedom app cost", "is a pay once focus app worth it vs opal"],
     "cyca": ["how much does flo premium cost", "is a pay once period tracker worth it"],
     "gmoney": ["how much does ynab cost", "is a pay once travel budget app worth it vs ynab"],
-    "zodira": ["how much do astrology apps cost", "is a pay once astrology app worth it"],
-    # —— 真實競品 alternative(competitors2 驗證過;aim990 排除因有訂閱)——
     "sereno": ["dark noise alternative app for iphone", "endel alternative app for iphone",
                "noisli alternative app for iphone", "calm alternative for sleep sounds no subscription",
                "bettersleep alternative app for iphone",
@@ -1109,16 +1085,13 @@ for _k, _qs in _GEO_TAILORED18.items():
             _base.append(_q)
 
 
-# 2026-07-08 整合 more-faq worker:LockHour/Sono Note/Zodira/Sereno 資訊型 FAQ。
+# 2026-07-08 整合 more-faq worker:LockHour/Sono Note/Sereno 資訊型 FAQ。
 _GEO_TAILORED19 = {
     "lockhour": ["how to reduce screen time on iphone",
                  "how to stay focused while studying",
                  "does app blocking actually work"],
     "sononote": ["what is the best way to take meeting notes",
                  "how to record a lecture and get notes"],
-    "zodira": ["what is a birth chart",
-               "what is a rising sign",
-               "what is bazi chinese astrology"],
     "sereno": ["does white noise actually help you sleep",
                "what is the difference between white pink and brown noise"],
 }

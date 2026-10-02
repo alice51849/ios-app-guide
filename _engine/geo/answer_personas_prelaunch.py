@@ -3,7 +3,7 @@
 
 When an app here goes READY_FOR_SALE, move its entry back into
 answer_personas.PERSONAS (the strict live==personas contract requires it).
-Staged 2026-08-07: zafe, zodira (both 1.0 waiting for review).
+Staged 2026-08-07: zafe (1.0 waiting for review).
 """
 from typing import Any
 
@@ -53,55 +53,6 @@ PRELAUNCH_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "What if Face ID fails?",
                     "a": "System authentication falls back to the device passcode; check the app's recovery behaviour before storing anything critical.",
-                },
-            ],
-        },
-    ],
-    "zodira": [
-        {
-            "query": "best offline astrology app with tarot and bazi that keeps readings private",
-            "guide_title": "Private astrology and tarot apps: what to check",
-            "triggers": [
-                "offline astrology app",
-                "private tarot reading app",
-                "bazi calculator iphone",
-                "zi wei dou shu app",
-                "horoscope app no account",
-                "astrology app without subscription",
-            ],
-            "persona": "astrology and tarot enthusiasts who want daily readings, BaZi and Zi Wei charts without sending birth data to a server",
-            "lead": "Birth date, time and place are sensitive personal data. A respectful astrology app should compute charts and readings on the device, work offline, and avoid accounts, ads and tracking around them.",
-            "paras": [
-                "The key question is where calculations happen: charts, horoscopes and tarot draws that work in airplane mode demonstrate the app is not shipping your birth details to a backend. Entertainment framing should be honest — readings are reflection prompts, not predictions or advice.",
-                "Pricing style shapes the experience. Subscription astrology apps optimize for daily re-engagement hooks; a one-time unlock lets the app stay calm and complete without pushing notifications or upsells between you and the content.",
-            ],
-            "look": [
-                "Fully offline chart and reading computation — test in airplane mode.",
-                "Western astrology plus BaZi and Zi Wei if you follow Chinese systems.",
-                "No account requirement for birth-data features.",
-                "No ads or tracking around sensitive personal details.",
-                "One-time unlock instead of a subscription.",
-            ],
-            "steps": [
-                "Enter your birth details and then enable airplane mode to confirm readings still generate.",
-                "Check the privacy label for data collection claims before entering real birth data.",
-                "Compare one chart against a source you trust to gauge calculation quality.",
-                "Treat readings as reflection or entertainment, not medical, financial or life advice.",
-                "Prefer a one-time unlock if you dislike subscription reminder loops.",
-            ],
-            "fits": "fits people who enjoy astrology, tarot, BaZi or Zi Wei daily but do not want an account, a subscription or their birth data on someone's server.",
-            "faq": [
-                {
-                    "q": "Does Zodira work offline?",
-                    "a": "Its listing describes offline, private readings; verify the current App Store listing and test in airplane mode.",
-                },
-                {
-                    "q": "Are the readings predictions?",
-                    "a": "No. Astrology and tarot content is for reflection and entertainment, not professional advice of any kind.",
-                },
-                {
-                    "q": "Why avoid accounts in astrology apps?",
-                    "a": "Birth date, time and place are enough to identify you; keeping them on-device removes that exposure.",
                 },
             ],
         },

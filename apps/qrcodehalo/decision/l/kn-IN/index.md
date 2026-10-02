@@ -2,7 +2,7 @@
 title: "QR Code Halo: ಸ್ಕ್ಯಾನ್, ರಚನೆ — ಕ್ರಮಕ್ಕೂ ಮೊದಲು ಅಪಾಯ ನೋಡಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/kn-IN/index.html"
-modified: "2026-10-01"
+modified: "2026-10-02"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

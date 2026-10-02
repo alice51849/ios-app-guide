@@ -2,7 +2,7 @@
 title: "Stay Clock: Asztali Óra — Idő és naptár, mindig látható | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/hu/index.html"
-modified: "2026-10-01"
+modified: "2026-10-02"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — 오늘의 초점 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ko/index.html"
-modified: "2026-10-01"
+modified: "2026-10-02"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

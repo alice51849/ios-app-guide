@@ -2,7 +2,7 @@
 title: "QR Code Halo: Quét & Tạo — Kiểm tra trước khi hành động | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/vi/index.html"
-modified: "2026-10-01"
+modified: "2026-10-02"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

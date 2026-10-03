@@ -26861,13 +26861,16 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual([], keys)
         self.assertEqual(set(), managed)
 
+        # 要用「仍在 APPS 名冊、但 App Store 不公開」的 key 才能代表下架中的 App;
+        # 已從名冊移除的 key 會被 generation_scope 忽略(2026-10-03 Zodira/Zafe 退役後
+        # 用不存在的假 key 取代 zafe,測試因此失敗,雲端 geo-daily 連續失敗)。
         keys, managed = aeo_pages.generation_scope(
-            ["retired-app"],
+            ["aim990"],
             {"snapport": {"key": "snapport"}},
             public,
         )
         self.assertEqual([], keys)
-        self.assertEqual({"retired-app"}, managed)
+        self.assertEqual({"aim990"}, managed)
 
     def test_deep_meta_keeps_the_final_word_when_no_truncation_is_needed(self):
         lead = (
@@ -27758,8 +27761,10 @@ class GeneratorTests(unittest.TestCase):
                 ["lumibopomofo", "snapport", "sononote"],
                 first_seen,
             )
+            # 必須是仍在 APPS 名冊、但不在 public 集合的 key,才會走到 "not public"
+            # 而不是 "Unknown app key(s)"。
             with self.assertRaisesRegex(SystemExit, "not public"):
-                aeo_answers.question_plan(["retired-app"])
+                aeo_answers.question_plan(["aim990"])
             self.assertEqual(2, live_keys.call_count)
             self.assertTrue(
                 all(call.kwargs.get("refresh") is True for call in live_keys.call_args_list)

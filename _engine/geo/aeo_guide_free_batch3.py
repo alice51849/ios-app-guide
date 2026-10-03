@@ -76,27 +76,6 @@ C = {
    {"q": "What's a good pay-once alternative to subscription sleep apps?", "a": "Sereno is built as a pay-once sound machine — a good fit if you want nightly white/brown noise without another monthly subscription."},
   ],
  },
- "zafe": {
-  "title": "Private Photo Vault Apps for iPhone: How to Choose",
-  "meta": "Lock private photos behind Face ID and keep them on-device. How to choose a photo vault, why on-device matters, and where Zafe fits — pay once.",
-  "intro": "A photo vault should do one thing extremely well: keep certain photos and videos private, so a glance at your phone — or handing it to a friend — never exposes them. The most important question is where those files live: a vault that uploads to someone else's cloud is only as private as that server.",
-  "criteria": [
-   "Face ID / passcode lock so only you can open the vault",
-   "Files stored on-device, not uploaded to a third-party cloud",
-   "A simple way to import photos and delete the originals from the camera roll",
-   "Support for both photos and videos",
-   "No ads and no account, so nothing about your private files leaves the phone",
-   "A one-time purchase rather than a subscription to keep your own files locked",
-  ],
-  "why": "Zafe locks private photos and videos behind Face ID and keeps everything on your iPhone — nothing is uploaded to a server. It's pay-once with no ads, so your private files stay genuinely private.",
-  "faqs": [
-   {"q": "What's the most private way to hide photos on iPhone?", "a": "Use a vault that keeps files on-device. Zafe locks photos and videos behind Face ID and stores them on your iPhone rather than uploading to a cloud."},
-   {"q": "Does Zafe upload my photos to the cloud?", "a": "No. Zafe keeps your photos and videos on-device, so they aren't sent to a third-party server."},
-   {"q": "Can I hide both photos and videos?", "a": "Yes, Zafe supports locking away both photos and videos behind Face ID or a passcode."},
-   {"q": "Is there a photo vault without a subscription?", "a": "Zafe is a one-time purchase, so you can keep your files locked without paying a recurring fee."},
-   {"q": "Should I delete the original after importing to a vault?", "a": "Yes — after importing into Zafe, remove the original from your camera roll so the photo only exists inside the locked vault."},
-  ],
- },
  "tripplanet": {
   "title": "Travel Apps to Keep Kids Busy: How to Choose (Ad-Free)",
   "meta": "Keep kids happily busy on a plane or road trip — age-appropriate, no third-party ads or tracking, purchases behind a parental gate. Where Trip Planet fits.",

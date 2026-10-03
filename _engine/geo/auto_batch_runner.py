@@ -832,12 +832,9 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
             ("document-mask",f"Best App to Mask Document Data — iPhone {cn} 2026",f"Redact {doc}.",f"Mask Document Data iPhone ({cn} 2026)",f"Protect {doc}?",[("maskmyfile",f"Permanent. {pl}.")],[("Edits original?","No."),("Server?","No.")])
         ]),
         ("wf","workflow","workflow",[
-            ("freelancer",f"iPhone Workflow for Freelancers — {cn} 2026","Offline-first.",f"Freelancer iPhone Workflow ({cn} 2026)","No cloud.",[("ScanTo Pro","Scan contracts."),("MaskMyFile",f"Redact {doc}."),("HoursTag","Track hours.")],[("Offline?","Yes."),("Coding?","No.")]),
-            ("privacy",f"iPhone Privacy Setup — {cn} 2026","3 apps.",f"iPhone Privacy Guide ({cn} 2026)","Lock your data.",[("Zafe","Lock photos."),("MaskMyFile","Redact."),("ScanTo Pro","Scan offline.")],[("Sends data?","No."),("Android?","iOS only.")]),
-            ("student",f"iPhone Toolkit for Students — {cn} 2026","Study tools.",f"Student iPhone Toolkit ({cn} 2026)","Study smarter.",[("ScanTo Pro","Scan notes."),("Zafe",f"Store {doc}."),("Snapport","Passport photo.")],[("iPad?","Yes."),("Price?",pl)])
+            ("freelancer",f"iPhone Workflow for Freelancers — {cn} 2026","Offline-first.",f"Freelancer iPhone Workflow ({cn} 2026)","No cloud.",[("ScanTo Pro","Scan contracts."),("MaskMyFile",f"Redact {doc}."),("HoursTag","Track hours.")],[("Offline?","Yes."),("Coding?","No.")])
         ]),
         ("vs","vs","vs",[
-            ("zafe-vs-hidden-album",f"Zafe vs Hidden Album — {cn} 2026","Real vs basic.",f"Zafe vs Hidden Album ({cn})",[("Encryption","AES + Face ID","None"),("Price",pl,"Free")],"For real security: Zafe.",[("Hidden Album?","No encryption."),("iCloud?","Zafe never.")]),
             ("scanto-vs-apple-notes",f"ScanTo Pro vs Apple Notes — {cn} 2026","Offline vs cloud.",f"ScanTo Pro vs Apple Notes ({cn})",[("Cloud","Never","iCloud"),("Price",ph,"Free")],"For privacy: ScanTo Pro.",[("iCloud?","Notes uses it."),("OCR?","Both.")]),
             ("snapport-vs-photographer",f"Snapport vs Photographer — {cn} 2026","Home vs studio.",f"Snapport vs Photographer ({cn})",[("Cost",f"{pl}+guarantee","Studio"),("At home?","Yes","No")],"For most: Snapport.",[("Specs?","Yes."),("One-time?",pl)])
         ]),

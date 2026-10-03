@@ -83,7 +83,7 @@ class LiveAppGuardTests(unittest.TestCase):
         self.site = Path(self.directory.name)
         self.live = {app["app_id"] for app in canonical_manifest()["apps"].values()}
         self.live_id = next(iter(sorted(self.live)))
-        self.dead_id = "6787344033"
+        self.dead_id = "9999999998"
 
     def page(self, path, body, head=""):
         target = self.site / path
@@ -107,7 +107,7 @@ class LiveAppGuardTests(unittest.TestCase):
             for key, app in canonical_manifest()["apps"].items()
         }
         before = {path: path.read_bytes() for path in live_pages}
-        dead = self.page("abr/reviews/zafe.html", self.link(self.dead_id))
+        dead = self.page("abr/reviews/retired.html", self.link(self.dead_id))
         roster_before = canonical_manifest()
         # A missing/unknown availability observation retains versioned identity;
         # it must not turn the 47-app roster into an older generated subset.
@@ -130,7 +130,7 @@ class LiveAppGuardTests(unittest.TestCase):
                     {"@type": "ListItem", "position": index, "name": name,
                      "url": f"https://apps.apple.com/app/id{app_id}", "offers": None}
                     for index, (name, app_id) in enumerate(
-                        (("Zafe", self.dead_id), ("Live", self.live_id)), 1
+                        (("Retired App", self.dead_id), ("Live", self.live_id)), 1
                     )
                 ]
                 schema = [{"@type": "ItemList", "numberOfItems": 2, "itemListElement": items},
@@ -174,14 +174,14 @@ class LiveAppGuardTests(unittest.TestCase):
         self.assertNotIn("noindex", live.read_text())
 
     def test_all_single_app_families_are_quarantined_and_sitemaps_stay_pruned(self):
-        dead = self.page("en/reviews/zafe.html", self.link(self.dead_id))
+        dead = self.page("en/reviews/retired.html", self.link(self.dead_id))
         live = self.page("en/reviews/live.html", self.link(self.live_id))
         source = (
             '<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml">'
-            '<url><loc>https://example.com/site/en/reviews/zafe.html</loc></url>'
+            '<url><loc>https://example.com/site/en/reviews/retired.html</loc></url>'
             '<url><loc>https://example.com/site/en/reviews/live.html</loc>'
             '<xhtml:link rel="alternate" hreflang="en" '
-            'href="https://example.com/site/en/reviews/zafe.html"/></url></urlset>'
+            'href="https://example.com/site/en/reviews/retired.html"/></url></urlset>'
         )
         sitemap = self.site / "sitemap_reviews.xml"
         sitemap.write_text(source)
@@ -191,14 +191,14 @@ class LiveAppGuardTests(unittest.TestCase):
         self.assertEqual(before, {path: path.read_bytes() for path in before})
         first = live_app_guard.quarantine_nonlive_pages(self.site, apply=True, live_ids=self.live)
         self.assertEqual(1, first["quarantined_pages"])
-        self.assertNotIn("/zafe.html", sitemap.read_text())
+        self.assertNotIn("/retired.html", sitemap.read_text())
         self.assertIn("/live.html", sitemap.read_text())
         second = live_app_guard.quarantine_nonlive_pages(self.site, apply=True, live_ids=self.live)
         self.assertEqual((0, 0), (second["html"], second["sitemaps"]))
         sitemap.write_text(source)
         repaired = live_app_guard.quarantine_nonlive_pages(self.site, apply=True, live_ids=self.live)
         self.assertEqual((0, 1), (repaired["html"], repaired["sitemaps"]))
-        self.assertNotIn("/zafe.html", sitemap.read_text())
+        self.assertNotIn("/retired.html", sitemap.read_text())
 
     def test_excludes_sources_and_symlinks_and_fails_before_partial_writes(self):
         source = self.page("_engine/fixture.html", self.link(self.dead_id))
@@ -228,7 +228,13 @@ class LiveAppGuardTests(unittest.TestCase):
             "answers/mixed.html",
             self.link(self.live_id) + self.link(self.dead_id) * 2,
         )
-        self.assertFalse(cleanup.owns_unlisted_app(page, {self.dead_id}, {"Zafe"}))
+        self.assertFalse(
+            cleanup.owns_unlisted_app(
+                page,
+                {self.dead_id},
+                {"Retired App"},
+            )
+        )
         result = cleanup.cleanup(self.site, set(canonical_manifest()["apps"]))
         self.assertGreater(result["nonlive_html"], 0)
         self.assertTrue(page.is_file())

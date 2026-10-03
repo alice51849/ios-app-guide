@@ -27,6 +27,10 @@ PERMANENTLY_RETIRED_APPS = {
         "app_id": "6783609555",
         "name": "Zodira",
     },
+    "zafe": {
+        "app_id": "6787344033",
+        "name": "Zafe",
+    },
 }
 from build_pages_i18n import pricing_text_for  # noqa: E402
 from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402

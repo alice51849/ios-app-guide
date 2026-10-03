@@ -1124,6 +1124,7 @@ const script = new vm.Script(input.source);
     def test_legacy_page_families_cannot_reintroduce_nonlive_ctas_through_attribution(self):
         import live_app_guard
 
+        dead_id = "9999999998"
         # These persisted page shapes come from the old full-coverage writers,
         # which intentionally are no longer shipped in the cloud engine.
         def legacy_page(app_ids, *, review=False):
@@ -1134,7 +1135,7 @@ const script = new vm.Script(input.source);
             ]
             schema = (
                 {"@type": "Review", "itemReviewed": {
-                    "@type": "SoftwareApplication", "name": "Zafe",
+                    "@type": "SoftwareApplication", "name": "Retired App",
                 }}
                 if review else {"@type": "ItemList", "itemListElement": items}
             )
@@ -1146,15 +1147,15 @@ const script = new vm.Script(input.source);
                 + "</body></html>"
             )
 
-        mixed = ["6787344033", LIVE_APPS["maskmyfile"]]
+        mixed = [dead_id, LIVE_APPS["maskmyfile"]]
         rendered = {
             "aa/best-for/mixed.html": legacy_page(mixed),
-            "aa/best-for/dead.html": legacy_page(["6787344033"]),
-            "aa/reviews/dead.html": legacy_page(["6787344033"], review=True),
+            "aa/best-for/dead.html": legacy_page([dead_id]),
+            "aa/reviews/dead.html": legacy_page([dead_id], review=True),
             "aa/seasonal/mixed.html": legacy_page(mixed + [LIVE_APPS["scanto"]]),
         }
         for relative, source in rendered.items():
-            self.assertIn("6787344033", source)
+            self.assertIn(dead_id, source)
             path = self.pages / relative
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(source)
@@ -1170,7 +1171,7 @@ const script = new vm.Script(input.source);
             self.assertEqual(0, attribution.generate(self.pages, check=False)["pages_changed"])
         for relative in rendered:
             source = (self.pages / relative).read_text()
-            self.assertNotIn("6787344033", source)
+            self.assertNotIn(dead_id, source)
             refs = self.audit(source, relative)
             self.assertTrue(all(
                 stores.APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(ref.url).path)["app_id"]

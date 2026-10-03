@@ -59,7 +59,7 @@ class GitHubRepositoryMetadataTests(unittest.TestCase):
         self.assertEqual(["mochi"], grouped["mochitodo-support"])
         self.assertEqual(["sononote"], grouped["sono-note-support"])
         self.assertEqual(["tripplanet"], grouped["trip-planet-support"])
-        for unlisted in ("astrea-support", "zafe-support"):
+        for unlisted in ("astrea-support",):
             self.assertNotIn(unlisted, grouped)
 
     def test_desired_metadata_is_searchable_bounded_and_deterministic(self):

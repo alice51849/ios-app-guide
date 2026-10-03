@@ -100,7 +100,7 @@ def without_app_name(label: str) -> str:
     主要市場的 CTA 一次變英文),不如把名字拿掉——留下的仍然是本站自己出過的
     在地化用字,沒有引入任何機器翻譯:
 
-        "Descargar Zafe en el App Store →" → "Descargar en el App Store →"
+        "Descargar Snapport en el App Store →" → "Descargar en el App Store →"
         "ScanTo Pro im App Store laden →"  → "Im App Store laden →"
         "在 App Store 下载 HoursTag →"      → "在 App Store 下载 →"
 

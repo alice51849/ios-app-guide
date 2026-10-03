@@ -41,7 +41,6 @@ TOPICS = {
     "picclear": "photo cleaner & storage",
     "unblurry": "photo enhancer & unblur",
     "photocream": "film camera & filter",
-    "zafe": "private photo vault",
     "sononote": "voice note & transcription",
     "cvdesk": "resume & CV maker",
     "gmoney": "budget & expense",

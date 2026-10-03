@@ -238,7 +238,6 @@ LANG_NAMES = {
 }
 
 REVIEW_APPS = [
-    {"key": "zafe", "emoji": "🔒", "slug_suffix": "review-2026"},
     {"key": "scanto", "emoji": "📄", "slug_suffix": "review-2026"},
     {"key": "snapport", "emoji": "📷", "slug_suffix": "review-2026"},
     {"key": "maskmyfile", "emoji": "📋", "slug_suffix": "review-2026"},

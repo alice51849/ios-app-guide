@@ -389,18 +389,6 @@ APPS = {
         keywords=["to do list", "checklist app", "cute planner", "task manager",
                   "daily planner", "cozy productivity", "aesthetic to do"],
     ),
-    "zafe": dict(
-        name="Zafe", search="Zafe Photo Vault", category="photo-utility",
-        icon="~/30_Zafe/Zafe/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png", shots_dir="~/00_GrowthEngine/social/assets/zafe", locale="", shots=["01", "02", "03", "04"],
-        kicker="PRIVATE VAULT",
-        title="Hide your private\nphotos for good",
-        sub="Lock private photos & videos behind Face ID — everything stays on your iPhone",
-        tag="Pay once · On-device",
-        cta_bullets=["Pay once", "On-device", "Private"],
-        purchase_model="free_with_lifetime_unlock",
-        keywords=["photo vault", "hide photos", "private album", "lock photos",
-                  "secret photos", "face id vault", "hide pictures"],
-    ),
     "tripplanet": dict(
         name="Trip Planet: Kids Quest", search="Trip Planet: Kids Quest", category="kids",
         icon="~/22_LumiTripPlanet/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png", shots_dir="~/00_GrowthEngine/social/assets/tripplanet", locale="", shots=["01", "02", "03", "04"],
@@ -441,7 +429,6 @@ APPSTORE = {
     "lumibopomofopro": "6775773117",
     "aim990": "6784974530",
     "mochi": "6785004775",
-    "zafe": "6787344033",
     "tripplanet": "6787193643",
 }
 

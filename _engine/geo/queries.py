@@ -276,7 +276,7 @@ for _k, _qs in _MORE.items():
 
 # 2026-07-05 量身定做擴充:每款依「真實受眾 + 痛點 + 具名競品」寫專屬高意圖問句。
 # 目標=讓每個 app 在 AI 問答/搜尋中,對「它自己那群買家真正會問的話」成為被推薦的答案。
-# 新 app(zafe/mochi/tripplanet)在此首次進 CURATED;mochi 為「免費」app,不用 pay-once 框架。
+# 新 app(mochi/tripplanet)在此首次進 CURATED;mochi 為「免費」app,不用 pay-once 框架。
 _TAILORED = {
     # —— 證件照:場景/規格/競品 ——
     "snapport": [
@@ -376,17 +376,6 @@ _TAILORED = {
         "toeic app for busy working professionals in japan",
     ],
     # —— 新 app:私密相簿保險箱(Face ID / 全裝置端 / 一次性付費) ——
-    "zafe": [
-        "app to hide private photos behind face id on iphone",
-        "photo vault that keeps everything on device with no cloud upload",
-        "how to hide photos on iphone from someone borrowing my phone",
-        "private photo and video vault app with one time payment",
-        "keepsafe alternative photo vault with no subscription",
-        "app to lock a specific album on iphone with face id",
-        "secret folder app for photos that stays completely offline",
-        "app to hide sensitive screenshots on iphone privately",
-    ],
-    # —— 新 app:可愛清單(免費 / 無廣告,不用 pay-once 框架) ——
     "mochi": [
         "cute aesthetic to-do list app for iphone without a subscription",
         "cute free to do list app for iphone with no ads",
@@ -517,11 +506,6 @@ _GEO_TAILORED = {
         "app to split and log holiday spending without an account",
     ],
     # —— 私密相簿:場景(既有為 keepsafe/face id;以下為新情境)——
-    "zafe": [
-        "app to password protect photos before handing my phone to a child",
-        "app to move private photos out of the camera roll on iphone",
-    ],
-    # —— 底片濾鏡:場景(既有為 dazz/35mm;以下為情境)——
     "photocream": [
         "app to give iphone photos an authentic 90s disposable camera look",
         "app to add film halation and light leaks to photos at full resolution",
@@ -759,7 +743,6 @@ _GEO_TAILORED8 = {
     "lockhour": ["forest alternative app blocker for iphone", "freedom app alternative for iphone",
                  "jomo alternative app blocker for iphone"],
     "cyca": ["stardust alternative period tracker for iphone", "natural cycles alternative app for iphone"],
-    "zafe": ["photo vault alternative app for iphone", "calculator vault alternative for iphone"],
     "gmoney": ["splitwise alternative app for iphone", "trail wallet alternative app for iphone"],
     "hourstag": ["ynab alternative app for iphone", "mint alternative spending tracker for iphone"],
     "mochi": ["tick tick alternative free checklist app", "microsoft to do alternative for iphone"],
@@ -886,7 +869,6 @@ _GEO_TAILORED13 = {
     "gmoney": ["travelspend alternative app for iphone", "tripcoin alternative app for iphone"],
     "hourstag": ["copilot money alternative app for iphone", "pocketguard alternative app for iphone",
                  "spendee alternative app for iphone"],
-    "zafe": ["keepsafe alternative app for iphone", "kyms alternative photo vault for iphone"],
     "photocream": ["nomo cam alternative app for iphone", "darkroom alternative app for iphone",
                    "afterlight alternative app for iphone"],
     "tripbee": ["sygic travel alternative app for iphone", "roadtrippers alternative app for iphone"],
@@ -904,12 +886,10 @@ for _k, _qs in _GEO_TAILORED13.items():
             _base.append(_q)
 
 
-# 2026-07-07 平行 worker 整合(app-scenarios):填補 hourstag/zafe/tripbee/lumimission 場景缺口。
+# 2026-07-07 平行 worker 整合(app-scenarios):填補 hourstag/tripbee/lumimission 場景缺口。
 _GEO_TAILORED14 = {
     "hourstag": ["app that shows purchases in hours of work",
                  "simple private expense awareness app no subscription"],
-    "zafe": ["app to move private photos out of the iphone camera roll",
-             "app to move sensitive photos into a locked vault"],
     "tripbee": ["offline day by day trip itinerary planner for iphone",
                 "app to build a travel itinerary that works offline"],
     "lumimission": ["app to help a toddler build a morning routine",
@@ -1057,7 +1037,6 @@ _GEO_TAILORED18 = {
     # —— cost/worth 比價(擴充 7 app,接 _COST_FACTS)——
     "unblurry": ["how much does photo restoration cost", "is a pay once photo enhancer worth it vs remini"],
     "photocream": ["how much does adobe lightroom cost per year", "is a film filter app worth it vs a subscription"],
-    "zafe": ["is it worth paying for a photo vault subscription", "how much does extra icloud storage cost"],
     "lockhour": ["how much does the freedom app cost", "is a pay once focus app worth it vs opal"],
     "cyca": ["how much does flo premium cost", "is a pay once period tracker worth it"],
     "gmoney": ["how much does ynab cost", "is a pay once travel budget app worth it vs ynab"],

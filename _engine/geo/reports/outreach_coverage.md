@@ -55,4 +55,4 @@ Public apps: **46** · Average coverage: **100.0%**
 
 ## Excluded until publicly available
 
-Zodira, Zafe
+Zodira

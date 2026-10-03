@@ -19,39 +19,6 @@ DEVELOPER_NOTE = "This review is written by the developer of the app being revie
 
 REVIEWS = [
     {
-        "key": "zafe",
-        # Existing URL kept for continuity; the retired "Private Photo Vault"
-        # name must not appear in visible copy (ASC 1.0 name: Verifiable Archive).
-        "slug": "zafe-private-photo-vault-review-2026",
-        "title": "Zafe: Verifiable Archive Review 2026 — What It Does and Doesn't",
-        "desc": "What Zafe: Verifiable Archive does on iPhone: on-device AES-256-GCM sealing and SHA-256 integrity checks, what it deliberately does not do, and who it fits.",
-        "rating": None,
-        "verdict": "Zafe is built to show that a file has not changed since you sealed it. It keeps photos, videos, documents and notes encrypted on your iPhone and checks them again before anything opens or leaves the app.",
-        "pros": [
-            "Each import becomes a sealed record, encrypted on the device with AES-256-GCM",
-            "A SHA-256 digest is recalculated before content opens or a copy leaves Zafe; a mismatch blocks the action",
-            "Controlled export re-verifies the copy and can attach a JSON integrity record",
-            "No account, ads, analytics or tracking, and no developer-operated server",
-        ],
-        "cons": [
-            "It keeps content exactly as imported: no OCR, redaction, masking or metadata removal",
-            "The free tier covers 1 album with up to 10 items; unlimited albums and items need the one-time Pro purchase",
-            "Files stay on this device, so keeping an exported backup is up to you",
-        ],
-        "who_for": "People who want receipts, contracts, evidence photos or personal documents kept privately on their iPhone, with a way to show a copy still matches what they sealed.",
-        "who_not_for": "Anyone who needs to hide or remove personal details before sharing a file (Mask My File does that), or who expects automatic cloud backup.",
-        "faqs": [
-            ("What does Zafe: Verifiable Archive do?",
-             "It seals the photos, videos, documents and notes you pick with AES-256-GCM on your device and records a SHA-256 fingerprint. Before an item opens or a copy leaves Zafe, the fingerprint is checked again and a mismatch stops the action."),
-            ("Is Zafe a redaction app?",
-             "No. Zafe preserves content as-is and does not run OCR, mask regions or strip metadata. Mask My File is the app for removing personal details before sharing."),
-            ("Is Zafe a subscription?",
-             "No. Pro is a one-time purchase that unlocks unlimited albums and items, a Decoy Vault with its own passcode, opt-in Intruder Capture and alternate Zafe icons."),
-            ("Does Zafe upload my files?",
-             "Zafe has no developer-operated server, account, ads or analytics. Apple StoreKit handles purchase and restore details."),
-        ],
-    },
-    {
         "key": "scanto",
         "slug": "scanto-pro-pdf-scanner-review-2026",
         "title": "ScanTo Pro PDF Scanner Review 2026 — Offline-First Document Scanning",

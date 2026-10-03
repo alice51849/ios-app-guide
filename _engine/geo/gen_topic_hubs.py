@@ -105,14 +105,6 @@ TOPICS = [
         "emoji": "✈️",
     },
     {
-        "slug": "zafe-vs-hidden-album-all-languages",
-        "title": "Zafe vs Hidden Album — All Languages",
-        "desc": "Compare Zafe vs iPhone's built-in Hidden Album for photo security — 171 languages.",
-        "subdir": "vs",
-        "page_slug": "zafe-vs-hidden-album",
-        "emoji": "⚔️",
-    },
-    {
         "slug": "scanto-vs-apple-notes-all-languages",
         "title": "ScanTo Pro vs Apple Notes Scanning — All Languages",
         "desc": "Compare ScanTo Pro vs Apple Notes for offline document scanning — 171 languages.",

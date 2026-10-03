@@ -1,8 +1,7 @@
 # 共用 live App manifest
 
 `live_app_manifest.json` 是版本控制內、不因時間過期的唯一 roster identity。目前共 **47 款**，
-包含 BattAI、ZipBox；Zafe 未經 Apple iTunes Lookup（US、TW、JP、GB）
-公開查核確認，不屬於這份 live roster。已上架 App 不因最新
+包含 BattAI、ZipBox；永久退役 App 不屬於這份 live roster。已上架 App 不因最新
 ASC 版本 non-ready、報告 pending、查核暫時失敗或下載／購買雙零而移出 roster。
 
 ## 契約
@@ -116,7 +115,7 @@ Optimizer 與 download controller 預設直接使用 feedback 內綁定的 manif
   catch-up mirror 與 bootstrap owned allowlist 同步包含 guard、cleanup、attribution，
   避免只更新 `publish.py`、雲端仍沿用舊 consumer。
 
-舊有數千張 Zafe 頁的安全收斂由此 producer 完成，不手改 generated HTML、
+舊有非 live／已退役頁面的安全收斂由此 producer 完成，不手改 generated HTML、
 不改 roster、不套用 runtime stash。可在隔離 checkout 驗證：
 
 ```sh

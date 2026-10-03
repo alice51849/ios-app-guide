@@ -30,7 +30,7 @@ class LiveManifestTests(unittest.TestCase):
         self.assertEqual(APPSTORE["zipbox"], result["apps"]["zipbox"]["app_id"])
         self.assertEqual(manifest.SCHEMA, result["schema"])
         self.assertEqual(
-            set(APPSTORE) - {"zafe"}, set(result["apps"]),
+            set(APPSTORE), set(result["apps"]),
         )
         self.assertEqual(manifest.roster_digest(self.apps), result["roster_digest"])
 
@@ -182,7 +182,7 @@ class LiveManifestTests(unittest.TestCase):
     def test_registered_new_apps_wait_for_explicit_multisource_adoption(self):
         observed = set(APPSTORE.values())
         result = manifest.refresh_manifest(APPSTORE, APPS, now=NOW, lookup=lambda ids: observed)
-        self.assertEqual({"zafe"}, {row["key"] for row in result["pending_adoptions"]})
+        self.assertEqual([], result["pending_adoptions"])
         self.assertEqual(self.apps, result["apps"])
         changed = dict(APPSTORE, battai="12345")
         with self.assertRaisesRegex(manifest.ManifestError, "Registry roster drift: battai"):

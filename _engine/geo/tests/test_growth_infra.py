@@ -19341,7 +19341,7 @@ class GeneratorTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
             for locale in ("en-US", "zh-Hant"):
-                for key in ("snapport", "wordmate", "zafe"):
+                for key in ("snapport", "wordmate"):
                     path = pages / locale / f"{key}.html"
                     path.parent.mkdir(parents=True, exist_ok=True)
                     path.write_text(
@@ -19391,16 +19391,24 @@ class GeneratorTests(unittest.TestCase):
                     / f"{portfolio_app_finder.SLUG}.html"
                 ).exists()
             )
-            # zafe is staged in answer_personas_prelaunch, so a live
-            # app that owns no persona has to fail closed instead of being
-            # dropped from the published catalog.
-            with self.assertRaises(ValueError) as caught:
+            # A live app that owns no persona has to fail closed instead of
+            # being dropped from the published catalog.
+            without_snapport = {
+                key: value
+                for key, value in publisher_intent_catalog.PERSONAS.items()
+                if key != "snapport"
+            }
+            with mock.patch.object(
+                publisher_intent_catalog,
+                "PERSONAS",
+                without_snapport,
+            ), self.assertRaises(ValueError) as caught:
                 portfolio_app_finder.build(
                     pages,
-                    live_keys={"wordmate", "snapport", "zafe"},
+                    live_keys={"wordmate", "snapport"},
                     availability=availability, now=clock,
                 )
-            self.assertIn("zafe", str(caught.exception))
+            self.assertIn("snapport", str(caught.exception))
             self.assertFalse(
                 (
                     pages
@@ -22133,7 +22141,6 @@ class GeneratorTests(unittest.TestCase):
             "lumibopomofo",
             "aim990",
             "mochi",
-            "zafe",
             "tripplanet",
             "sereno",
             "tripbeelite",
@@ -24971,7 +24978,7 @@ class GeneratorTests(unittest.TestCase):
 
     def test_llms_omits_unavailable_apps_and_uses_verified_aim990_claim(self):
         text = gen_llms.build_llms({}, {"aim990", "lumibopomofo"})
-        self.assertNotIn("Zafe", text)
+        self.assertNotIn("Zodira", text)
         aim_line = gen_llms.app_line("aim990", ["Competitor"], {"aim990"})
         self.assertIn("pay-once alternative", aim_line.lower())
         self.assertNotIn("optional subscription", aim_line.lower())
@@ -26726,7 +26733,6 @@ class GeneratorTests(unittest.TestCase):
             "lumimission": ("free_to_start", "lumimission-free-to-start"),
             "lumiweather": ("free_to_start", "lumiweather-free-to-start"),
             "aim990": ("free_to_start", "aim990-free-to-start"),
-            "zafe": ("free_to_start", "zafe-free-to-start"),
             "tripplanet": ("free_to_start", "tripplanet-free-to-start"),
             "sereno": ("free_to_start", "sereno-free-to-start"),
             "gmoney": ("pay_once", "gmoney-no-subscription"),
@@ -26773,13 +26779,13 @@ class GeneratorTests(unittest.TestCase):
             stale = {
                 "aim990-flexible-unlock.html",
                 "aim990-no-subscription.html",
-                "zafe-no-subscription.html",
+                "retired-app-no-subscription.html",
             }
             for filename in keep | stale:
                 open(os.path.join(directory, filename), "w", encoding="utf-8").close()
             removed = set(
                 aeo_pages.prune_stale_pages(
-                    {"aim990", "snapport", "zafe"},
+                    {"aim990", "snapport", "retired-app"},
                     keep,
                 )
             )
@@ -26856,12 +26862,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(set(), managed)
 
         keys, managed = aeo_pages.generation_scope(
-            ["zafe"],
+            ["retired-app"],
             {"snapport": {"key": "snapport"}},
             public,
         )
         self.assertEqual([], keys)
-        self.assertEqual({"zafe"}, managed)
+        self.assertEqual({"retired-app"}, managed)
 
     def test_deep_meta_keeps_the_final_word_when_no_truncation_is_needed(self):
         lead = (
@@ -27231,7 +27237,7 @@ class GeneratorTests(unittest.TestCase):
     def test_catalog_contains_only_verified_public_apps(self):
         page = gen_app_catalog.render_catalog("en", {"lumibopomofo"})
         self.assertIn("Lumi Bopomofo", page)
-        self.assertNotIn("Zafe", page)
+        self.assertNotIn("Zodira", page)
         self.assertIn('"numberOfItems": 1', page)
         match = re.search(
             r'<script type="application/ld\+json">(.*?)</script>',
@@ -27753,7 +27759,7 @@ class GeneratorTests(unittest.TestCase):
                 first_seen,
             )
             with self.assertRaisesRegex(SystemExit, "not public"):
-                aeo_answers.question_plan(["zafe"])
+                aeo_answers.question_plan(["retired-app"])
             self.assertEqual(2, live_keys.call_count)
             self.assertTrue(
                 all(call.kwargs.get("refresh") is True for call in live_keys.call_args_list)
@@ -27768,8 +27774,7 @@ class GeneratorTests(unittest.TestCase):
         by_key = {row["key"]: row for row in rows}
         self.assertTrue(by_key["lumibopomofo"]["public"])
         self.assertGreater(by_key["lumibopomofo"]["coverage_score"], 0)
-        self.assertFalse(by_key["zafe"]["public"])
-        self.assertEqual("", by_key["zafe"]["appstore"])
+        self.assertNotIn("zafe", by_key)
 
     def test_scorecard_completion_gate_only_blocks_incomplete_public_apps(self):
         rows = [

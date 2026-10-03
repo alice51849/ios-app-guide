@@ -1125,17 +1125,6 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Is there a watermark?", "a": f"{name} exports at full resolution without a watermark."},
              {"q": "Does it look like real film?", "a": "It emulates real film stocks with grain, halation and light leaks, not a generic filter."},
              {"q": "Subscription or pay once?", "a": "It uses a one-time purchase rather than a subscription."}])
-    if key == "zafe" and ("hide" in q or "vault" in q or "private album" in q or "secret" in q or "lock photos" in q or "hide photos" in q or "hide pictures" in q or "camera roll" in q or "private photos" in q):
-        return make(
-            "To keep photos private, a vault should lock them behind Face ID, move them out of the main camera roll, and keep everything on device with no cloud upload — so nobody scrolling your phone stumbles onto them.",
-            ["Face ID / passcode lock on the album.", "Moves photos out of the visible camera roll.",
-             "Everything stays on device — no cloud upload.", "A discreet, non-obvious app presence.", "A pay-once model with no account required."],
-            ["Import the photos you want to hide.", f"Move them into {name}'s locked vault.",
-             "Remove the originals from the camera roll.", "Confirm they're behind Face ID.", "Access them only after authenticating."],
-            f"{name} fits when you want private photos locked behind Face ID and off the cloud.",
-            [{"q": "Do photos leave my phone?", "a": f"No — {name} keeps everything on device with no cloud upload."},
-             {"q": "How are they protected?", "a": "They're locked behind Face ID or a passcode and removed from the main camera roll."},
-             {"q": "Do I need an account?", "a": "No account is required; it's a one-time purchase."}])
     if key == "lockhour" and ("focus" in q or ("block" in q and "app" in q) or "screen time" in q or "distract" in q or "digital detox" in q or "deep work" in q or "study time" in q):
         return make(
             "To actually stay focused, an app blocker should let you block distracting apps on a schedule or in one tap, resist the urge to bypass it, and keep everything on device — no account, no data harvesting.",
@@ -1388,7 +1377,7 @@ _CAT_NOUN = {
     "snapport": "passport photo app", "sononote": "voice notes app", "cvdesk": "resume builder",
     "picclear": "photo cleanup app", "scanto": "document scanner", "cyca": "period tracker",
     "gmoney": "budgeting app", "hourstag": "spending tracker", "lockhour": "focus app",
-    "unblurry": "photo enhancer", "photocream": "film camera app", "zafe": "photo vault",
+    "unblurry": "photo enhancer", "photocream": "film camera app",
     "mochi": "checklist app", "tripbee": "trip planner",
     "tripplanet": "kids travel app", "lumiletters": "kids phonics app", "lumiletterspro": "kids phonics app",
     "lumimath": "kids math app", "lumimathpro": "kids math app", "lumimission": "kids routine app",
@@ -1586,16 +1575,6 @@ _COST_FACTS = {
             {"q": "How much is Adobe Lightroom on iPhone?", "a": "Around $9.99/month (~$120/year) for the Photography plan; confirm Adobe's current price."},
             {"q": "Is a pay-once film app worth it?", "a": "If you just want film looks and grain, a one-time purchase avoids an ongoing editing subscription."},
             {"q": "Is there a watermark?", "a": "A good pay-once film app exports at full resolution with no watermark."}],
-    },
-    "zafe": {
-        "lead": "iCloud+ storage is $0.99/mo (50GB), $2.99/mo (200GB) or $10.99/mo (2TB), month after month. A pay-once photo vault locks private photos on device without a monthly bill.",
-        "detail": "Extra cloud storage is a permanent recurring cost — iCloud+ runs $0.99–$10.99+ a month, and vault apps like Keepsafe charge a premium subscription. If your goal is simply to keep certain photos private and locked, a pay-once on-device vault does that for a single price and keeps everything off the cloud. Cloud storage still makes sense if you specifically want off-device backup.",
-        "look": ["iCloud+ is recurring: $0.99–$10.99+/mo.", "Keepsafe-style vaults add a subscription.",
-                 "A pay-once vault = one price, on device.", "Nothing uploaded to the cloud.", "Cloud backup is a separate need."],
-        "faq": [
-            {"q": "How much does iCloud storage cost?", "a": "$0.99/mo for 50GB, $2.99/mo for 200GB, $10.99/mo for 2TB — a recurring fee."},
-            {"q": "Is a pay-once photo vault worth it?", "a": "If you just want private photos locked on device, a one-time purchase avoids a monthly storage or vault subscription."},
-            {"q": "Does it back up to the cloud?", "a": "No — an on-device vault keeps photos on your phone; use cloud storage separately if you want off-device backup."}],
     },
     "lockhour": {
         "lead": "Focus apps like Freedom charge about $40/year (and even a ~$100 lifetime) while Opal runs a Pro subscription — a pay-once app blocker gives you focus sessions with no recurring fee.",

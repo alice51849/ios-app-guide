@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-04",
-  "content_digest": "fe0924d9a21845a5b0911e541cdc6de5dbb960be467c80e0641c19ef04e22d8e",
+  "content_digest": "b3d74d99a79fcca99f911fceabc5d0b0bdf444c715ad8e9539762f8baea50c94",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -211,7 +211,8 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기"
+        "데이터 내보내기",
+        "배터리 용량"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -604,7 +605,8 @@
         "RTA",
         "LAeq",
         "NIOSH",
-        "OSHA"
+        "OSHA",
+        "스펙트럼 분석기"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1445,7 +1447,8 @@
         "잘했어",
         "습관표",
         "목표달성",
-        "집안일"
+        "집안일",
+        "아이 생활습관"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1589,7 +1592,8 @@
         "꽃가루",
         "빨래",
         "우산",
-        "양산"
+        "양산",
+        "옷차림 날씨"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1749,7 +1753,8 @@
         "가전케어",
         "리마인더",
         "유지보수",
-        "루틴"
+        "루틴",
+        "마지막 기록"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1850,7 +1855,9 @@
         "과제",
         "리포트",
         "피피티",
-        "논문"
+        "논문",
+        "한장 요약",
+        "발표 자료"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

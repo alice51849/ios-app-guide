@@ -13,7 +13,7 @@
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
     "dateModified": "2026-10-04",
-    "contentDigest": "fe0924d9a21845a5b0911e541cdc6de5dbb960be467c80e0641c19ef04e22d8e",
+    "contentDigest": "b3d74d99a79fcca99f911fceabc5d0b0bdf444c715ad8e9539762f8baea50c94",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 53
@@ -153,10 +153,11 @@
         "充電ケア",
         "充電範囲",
         "充電速度",
-        "データを書き出す"
+        "データを書き出す",
+        "バッテリー 劣化"
       ],
       "language": "ja",
-      "date_modified": "2026-09-28T02:17:34Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -685,10 +686,11 @@
         "台湾",
         "書き順",
         "読み方",
-        "注音符号"
+        "注音符号",
+        "注音 学習"
       ],
       "language": "ja",
-      "date_modified": "2026-10-04T04:24:13Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -1003,10 +1005,11 @@
         "保育園",
         "ごはん",
         "身支度",
-        "知育"
+        "知育",
+        "ごほうび シール"
       ],
       "language": "ja",
-      "date_modified": "2026-10-04T04:24:13Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1197,10 +1200,11 @@
         "散髪",
         "写真バックアップ",
         "履歴",
-        "ルーティン"
+        "ルーティン",
+        "最後にしたのは いつ"
       ],
       "language": "ja",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     },
     {
       "id": "https://apps.apple.com/app/id6801956402",
@@ -1708,10 +1712,11 @@
         "チケット",
         "リマインダー",
         "ホテル",
-        "航空券"
+        "航空券",
+        "旅程"
       ],
       "language": "ja",
-      "date_modified": "2026-10-04T04:24:13Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787754435",
@@ -1844,10 +1849,11 @@
         "IPv4",
         "IPv6",
         "Ping",
-        "TLS"
+        "TLS",
+        "wifi つながらない"
       ],
       "language": "ja",
-      "date_modified": "2026-09-24T05:21:31Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     },
     {
       "id": "https://apps.apple.com/app/id6797601720",
@@ -1930,10 +1936,13 @@
         "分割",
         "文字化け",
         "一括",
-        "7zip"
+        "7zip",
+        "7zを解凍",
+        "パスワード付きzip",
+        "rarファイルを開く"
       ],
       "language": "ja",
-      "date_modified": "2026-10-04T04:24:13Z"
+      "date_modified": "2026-10-04T09:42:58Z"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-02",
-  "content_digest": "3e9d281583b2b0490ace99ceee876a7ee338c4dd079827bca51c91f86ca92cf3",
+  "date_modified": "2026-10-04",
+  "content_digest": "5647158416c0b90bee16d2ea2b8f9e08b88e8534034c88127a1a7c84a806b0b3",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -93,8 +93,7 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件",
-        "提示词管理"
+        "读文件"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1618,8 +1617,8 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi天气星球 家庭预报",
-      "summary": "带孩子出门前，总会想：今天会不会太冷、太热、太晒或太湿？Lumi Weather 把复杂天气数字变成家长一眼看懂的温柔答案。",
+      "name": "Lumi天气星球 出门指数与穿衣建议",
+      "summary": "一眼看懂现在适不适合出门、该穿什么、要不要带伞或涂防晒，Lumi天气星球把天气预报变成一句清楚的答案。",
       "category": "kids",
       "search_terms": [
         "天气",
@@ -2130,8 +2129,7 @@
         "门票",
         "菜单",
         "海报",
-        "美化",
-        "二维码 安全检测"
+        "美化"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

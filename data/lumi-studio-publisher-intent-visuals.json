@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://open.cait518.cc/ios-app-guide/visuals/",
-  "dateModified": "2026-09-29",
+  "dateModified": "2026-10-04",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,9 +10,9 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "675927123d150ba6c83cb3dd6659599655f353681d4d599d26142397238f9a5a",
-  "content_digest": "2146b3513118ad2690a0800eae342d2320af5dc6368767657fb3a89f1c4ae48e",
-  "generation_digest": "5493f7fb68575205a72aeae6c4fdfe69e6676593e753a30c743c0dd7aee2eeb4",
+  "source_sha256": "774b6dcc52f8e55d5f991cb745748c38e11bed6fb89f9a0006b6d612cc34c290",
+  "content_digest": "9feb5c458d86aca3ef130dd709ce886ab40f5eb33092992380eabdc21d6afe1b",
+  "generation_digest": "adda7ae0a15341b72fde0948142fa4a3be578f66f879eff0df98beb61fe9f781",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 53,
   "locale_count": 50,
@@ -34,8 +34,8 @@
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "692a9ab0670bfbdf0976d1d339402f9a30faf748cb1a6d4211578e87eefc281a",
-      "dateModified": "2026-09-29"
+      "sha256": "f3efc74b87f8821b646d66ecf7f0257b31421fe2de6c222018771ae38151f42e",
+      "dateModified": "2026-10-04"
     },
     {
       "locale": "ca",
@@ -1631,7 +1631,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumiweather.html",
       "app_store_url": null,
-      "sha256": "dcdc5df4d3463d2ffd3eb953b4be152cb0036b0d583212cc042da76075e39adf",
+      "sha256": "1f6921af13af1d780d2454d59302584d05bf25cfc43073c51a2ec60beaa0c451",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",

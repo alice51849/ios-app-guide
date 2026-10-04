@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-02",
-  "content_digest": "3e9d281583b2b0490ace99ceee876a7ee338c4dd079827bca51c91f86ca92cf3",
+  "date_modified": "2026-10-04",
+  "content_digest": "5647158416c0b90bee16d2ea2b8f9e08b88e8534034c88127a1a7c84a806b0b3",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -211,8 +211,7 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기",
-        "배터리 용량"
+        "데이터 내보내기"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -605,8 +604,7 @@
         "RTA",
         "LAeq",
         "NIOSH",
-        "OSHA",
-        "스펙트럼 분석기"
+        "OSHA"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1544,8 +1542,8 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "루미 날씨 가족 외출 지수",
-      "summary": "어떤 아침에는 꼼지락거리는 아이를 안고 창가에 서서 작은 걱정을 합니다. 오늘은 너무 춥거나, 너무 덥거나, 너무 젖어서 나가기 어려울까?",
+      "name": "루미 날씨: 외출 지수와 옷차림",
+      "summary": "지금 나가기 좋은지, 무엇을 입어야 할지, 우산이나 선크림이 필요한지 한눈에 알려주는 날씨 앱입니다.",
       "category": "kids",
       "search_terms": [
         "날씨",
@@ -1591,8 +1589,7 @@
         "꽃가루",
         "빨래",
         "우산",
-        "양산",
-        "옷차림 날씨"
+        "양산"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1752,8 +1749,7 @@
         "가전케어",
         "리마인더",
         "유지보수",
-        "루틴",
-        "마지막 기록"
+        "루틴"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1854,9 +1850,7 @@
         "과제",
         "리포트",
         "피피티",
-        "논문",
-        "한장 요약",
-        "발표 자료"
+        "논문"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

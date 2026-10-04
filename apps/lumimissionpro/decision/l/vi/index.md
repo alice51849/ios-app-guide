@@ -2,7 +2,7 @@
 title: "ứng dụng thói quen sáng và tối đầy đủ tốt nhất cho trẻ em"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/vi/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "Stay Clock: Bureauklok — Tijd en kalender, altijd aan | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/nl-NL/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

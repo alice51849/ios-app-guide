@@ -2,7 +2,7 @@
 title: "CountDaysNow: Event Counter — تركيز اليوم | iOS App"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/countdaysnow/decision/l/ar-SA/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6807079789"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

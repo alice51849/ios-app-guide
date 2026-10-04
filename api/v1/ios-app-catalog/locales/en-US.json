@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-02",
-  "content_digest": "3e9d281583b2b0490ace99ceee876a7ee338c4dd079827bca51c91f86ca92cf3",
+  "date_modified": "2026-10-04",
+  "content_digest": "5647158416c0b90bee16d2ea2b8f9e08b88e8534034c88127a1a7c84a806b0b3",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1316,8 +1316,8 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather: Family Forecast",
-      "summary": "Some mornings you stand at the window with a wriggling toddler and one quiet worry: is it too cold, too hot, too wet to take them out today?",
+      "name": "Lumi Weather: What to Wear",
+      "summary": "Lumi Weather tells you in one glance whether now is a good time to go outside, what to wear, and whether you need an umbrella or sunscreen.",
       "category": "kids",
       "search_terms": [
         "weather",
@@ -1438,8 +1438,7 @@
         "agenda",
         "calendar",
         "widget",
-        "tasks",
-        "checklist"
+        "tasks"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1460,7 +1459,7 @@
         "currency": "USD",
         "formatted_price": "Free",
         "rating_value": 3.9,
-        "rating_count": 14,
+        "rating_count": 15,
         "storefront_url": "https://apps.apple.com/us/app/id6785004775"
       }
     },

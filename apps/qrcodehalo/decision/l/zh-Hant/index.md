@@ -2,7 +2,7 @@
 title: "QR Code Halo：安全掃描與建立 — 本機查風險再行動 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/zh-Hant/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

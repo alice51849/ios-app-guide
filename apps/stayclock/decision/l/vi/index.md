@@ -2,7 +2,7 @@
 title: "Stay Clock: Đồng hồ lật để bàn — Đồng hồ và lịch luôn sáng | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/vi/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

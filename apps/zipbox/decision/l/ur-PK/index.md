@@ -2,7 +2,7 @@
 title: "Zipbox: RAR, ZIP, 7z کھولیں — اشتہار کے بغیر فائل نکالیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ur-PK/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

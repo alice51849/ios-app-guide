@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-02",
-  "content_digest": "3e9d281583b2b0490ace99ceee876a7ee338c4dd079827bca51c91f86ca92cf3",
+  "date_modified": "2026-10-04",
+  "content_digest": "5647158416c0b90bee16d2ea2b8f9e08b88e8534034c88127a1a7c84a806b0b3",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -26,8 +26,7 @@
         "учёба",
         "экзамен",
         "офлайн",
-        "документы",
-        "аннотации pdf"
+        "документы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -106,8 +105,7 @@
         "чтение",
         "практика",
         "оценки",
-        "самоучитель",
-        "toeic аудирование"
+        "самоучитель"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -148,8 +146,7 @@
         "пробник",
         "грамматика",
         "лексика",
-        "фразы",
-        "toeic аудирование"
+        "фразы"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -553,8 +550,7 @@
         "курс",
         "офлайн",
         "csv",
-        "счета",
-        "деньги в путешествии"
+        "счета"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -591,8 +587,7 @@
         "трекер расходов",
         "деньги",
         "экономия",
-        "контроль расходов",
-        "расходы в путешествии"
+        "контроль расходов"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1002,8 +997,7 @@
         "прописи",
         "память",
         "внимание",
-        "офлайн",
-        "фонетика для детей"
+        "офлайн"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1304,8 +1298,8 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Weather: Семья",
-      "summary": "Перед прогулкой с ребёнком Lumi Weather спокойно отвечает: хороший ли сегодня день для игр на улице?",
+      "name": "Lumi Погода: прогноз и одежда",
+      "summary": "Lumi Погода за секунду показывает, стоит ли сегодня выходить из дома: индекс прогулки от 0 до 100 и короткий вывод, который можно прочитать на ходу.",
       "category": "kids",
       "search_terms": [
         "погода",
@@ -1700,8 +1694,7 @@
         "штрихкод",
         "генератор",
         "создать",
-        "визитка",
-        "проверить qr код"
+        "визитка"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1742,8 +1735,7 @@
         "путешествия",
         "покупки",
         "заметки",
-        "архив",
-        "сохранить статьи"
+        "архив"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2332,8 +2324,7 @@
         "ipv4",
         "ipv6",
         "dns",
-        "ping",
-        "диагностика wifi"
+        "ping"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

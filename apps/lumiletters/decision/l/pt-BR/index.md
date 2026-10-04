@@ -2,7 +2,7 @@
 title: "melhor jogo educativo para crianças sem anúncios no iPhone"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/pt-BR/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ Para uma criança pequena, o fator decisivo é ausência de anúncios e coleta d
 - Offline
 - Sem anúncios
 - App Store · Grátis
+- ★ 4.0/5 · 1
 
 [Baixe o Lumi Letters na App Store →](https://apps.apple.com/br/app/id6778748533?pt=118326163&ct=geo_pick&mt=8)
 

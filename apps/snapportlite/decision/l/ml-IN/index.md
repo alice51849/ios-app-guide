@@ -2,7 +2,7 @@
 title: "Snapport Lite — ശരിയായ അളവിൽ പോർട്രെയ്റ്റ് | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ml-IN/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

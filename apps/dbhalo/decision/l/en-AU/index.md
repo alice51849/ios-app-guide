@@ -2,7 +2,7 @@
 title: "sound meter app for iphone with frequency spectrum and noise dose"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/en-AU/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

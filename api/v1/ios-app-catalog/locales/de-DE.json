@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-02",
-  "content_digest": "3e9d281583b2b0490ace99ceee876a7ee338c4dd079827bca51c91f86ca92cf3",
+  "date_modified": "2026-10-04",
+  "content_digest": "5647158416c0b90bee16d2ea2b8f9e08b88e8534034c88127a1a7c84a806b0b3",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -141,8 +141,7 @@
         "fehleranalyse",
         "aussprache",
         "grammatik",
-        "prüfung",
-        "toeic übungen"
+        "prüfung"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -486,9 +485,7 @@
         "FFT",
         "RTA",
         "oktavband",
-        "kalibrierung",
-        "spektrumanalysator",
-        "lärmmessgerät"
+        "kalibrierung"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -543,8 +540,7 @@
         "offline",
         "geldverwalten",
         "reise",
-        "fx",
-        "urlaubsbudget"
+        "fx"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -581,8 +577,7 @@
         "Wechselkurs",
         "Reisekosten",
         "Geld verwalten",
-        "reise",
-        "urlaubsbudget"
+        "reise"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -717,9 +712,7 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan",
-        "abholschild flughafen",
-        "konzert schild"
+        "Fan"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1254,8 +1247,7 @@
         "Aufgabenplan",
         "Schlafenszeit",
         "Tagesaufgaben",
-        "Morgen",
-        "abendroutine kinder"
+        "Morgen"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1281,8 +1273,8 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Wetter: Familienwetter",
-      "summary": "Manche Morgen stehen Sie mit einem zappelnden Kleinkind am Fenster und fragen sich leise: Ist es zu kalt, zu heiß, zu nass, um heute rauszugehen?",
+      "name": "Lumi Wetter: Was ziehe ich an?",
+      "summary": "Lumi Wetter zeigt dir auf einen Blick, ob jetzt ein guter Moment zum Rausgehen ist, was du anziehen solltest und ob du einen Schirm oder Sonnencreme brauchst.",
       "category": "kids",
       "search_terms": [
         "Wetter",
@@ -1675,8 +1667,7 @@
         "generator",
         "erstellen",
         "wlan",
-        "visitenkarte",
-        "qr code prüfen"
+        "visitenkarte"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2329,8 +2320,7 @@
         "ip",
         "tls",
         "tcp",
-        "web",
-        "wlan kein internet"
+        "web"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -2,7 +2,7 @@
 title: "Snapport: পাসপোর্ট ও আইডি ফটো — ঘরে বসেই পাসপোর্ট, ভিসা ও আইডি ছবি তুলুন—শান্তি ও গোপনীয়তার | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/bn-BD/index.html"
-modified: "2026-10-02"
+modified: "2026-10-04"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

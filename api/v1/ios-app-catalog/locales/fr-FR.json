@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-02",
-  "content_digest": "3e9d281583b2b0490ace99ceee876a7ee338c4dd079827bca51c91f86ca92cf3",
+  "date_modified": "2026-10-04",
+  "content_digest": "5647158416c0b90bee16d2ea2b8f9e08b88e8534034c88127a1a7c84a806b0b3",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -106,8 +106,7 @@
         "écoute",
         "lecture",
         "score",
-        "pratique",
-        "toeic lecture"
+        "pratique"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -145,8 +144,7 @@
         "écoute",
         "grammaire",
         "révisions",
-        "minuteur",
-        "toeic lecture"
+        "minuteur"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -182,10 +180,7 @@
         "Bonnes pratiques",
         "Plage de recharge",
         "Rythme de recharge",
-        "Exporter les données",
-        "capacité batterie",
-        "autonomie batterie",
-        "santé batterie"
+        "Exporter les données"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -633,8 +628,7 @@
         "finances",
         "achats impulsifs",
         "épargne",
-        "gérer argent",
-        "dépenses conscientes"
+        "gérer argent"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -733,8 +727,7 @@
         "accueil",
         "néon",
         "vitrine",
-        "scène",
-        "pancarte concert"
+        "scène"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -893,8 +886,7 @@
         "enfants",
         "phonétique",
         "lecture",
-        "écriture",
-        "mandarin enfants"
+        "écriture"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1205,8 +1197,7 @@
         "coucher",
         "brosser les dents",
         "préscolaire",
-        "matin",
-        "routine du coucher"
+        "matin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1287,8 +1278,8 @@
     {
       "key": "lumiweather",
       "app_store_id": "6779552704",
-      "name": "Lumi Météo: Prévisions Famille",
-      "summary": "Certains matins, vous êtes à la fenêtre avec un tout-petit remuant et une inquiétude silencieuse : fait-il trop froid, trop chaud, trop humide pour sortir aujourd'hui ?",
+      "name": "Lumi Météo: Comment m'habiller",
+      "summary": "Lumi Météo vous dit en un coup d'œil si c'est le bon moment pour sortir, comment vous habiller et s'il faut prendre un parapluie ou de la crème solaire.",
       "category": "kids",
       "search_terms": [
         "météo",
@@ -1359,8 +1350,7 @@
         "dossier médical",
         "métadonnées",
         "rgpd",
-        "vie privée",
-        "masquer données"
+        "vie privée"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2027,8 +2017,7 @@
         "polices",
         "écran verrouillé",
         "format 24h",
-        "réveil",
-        "horloge flip"
+        "réveil"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

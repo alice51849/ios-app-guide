@@ -43,6 +43,10 @@ APP_ID_RE = re.compile(r"^[0-9]{7,12}$")
 APP_STORE_PATH_RE = re.compile(
     r"^/(?:[a-z]{2}/)?app/(?:[^/?#]+/)?id([0-9]{7,12})$"
 )
+# Market-unavailable (N/A) feed items deliberately carry a non-outbound URN
+# identity instead of an apps.apple.com URL (portfolio_app_catalog_api.py,
+# commits 1484046d/6a3e053c); only available items may use the store URL.
+APP_URN_RE = re.compile(r"^urn:apple:app:id([0-9]{7,12})$")
 ENGLISH_LOCALES = frozenset({"en-AU", "en-CA", "en-GB", "en-US"})
 SCRIPT_RANGES: dict[str, tuple[tuple[int, int], ...]] = {
     "ar-SA": ((0x0600, 0x06FF), (0x0750, 0x077F)),
@@ -514,15 +518,28 @@ def _validate_feed(
         item = _object(raw, f"{locale} feed item")
         if item.get("language") != locale:
             raise CoverageError(f"{locale} feed item has wrong language")
-        app_id, _ = _app_store_identity(
-            item.get("id"),
-            field=f"{locale} feed App Store identity",
-            require_campaign=False,
+        raw_id = item.get("id")
+        urn_identity = (
+            APP_URN_RE.fullmatch(raw_id) if isinstance(raw_id, str) else None
         )
+        if urn_identity is not None:
+            app_id = urn_identity.group(1)
+        else:
+            app_id, _ = _app_store_identity(
+                raw_id,
+                field=f"{locale} feed App Store identity",
+                require_campaign=False,
+            )
         key = by_id.get(app_id)
         if key is None or key in result:
             raise CoverageError(f"{locale} feed App identity is missing or repeated")
         record = catalog[key]
+        # The identity form must agree with the verified market state: an
+        # available App keeps its store URL, an N/A App must use the URN.
+        if record["available"] == (urn_identity is not None):
+            raise CoverageError(
+                f"{locale}/{key} feed identity form contradicts market availability"
+            )
         if item.get("url") != record["guide_url"]:
             raise CoverageError(f"{locale}/{key} feed guide URL mismatch")
         content = _text(item.get("content_text"), f"{locale}/{key} feed copy")

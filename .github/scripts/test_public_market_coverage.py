@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import copy
+import json
 import sys
 from pathlib import Path
 import unittest
@@ -174,7 +175,72 @@ def replace_locale(
     documents[new_feed_url] = feed
 
 
+# Real portfolio identities: the first is sold in the CN storefront, the
+# second is verified not sold there (market_availability MARKET_APP_NOT_SOLD).
+SOLD_APP_ID = "6791658210"
+NA_APP_ID = "6778748533"
+
+
+def mixed_market_documents() -> dict[str, dict]:
+    """zh-Hans locale with one available App and one verified N/A App."""
+    documents = json.loads(
+        json.dumps(fixture())
+        .replace("1234567", SOLD_APP_ID)
+        .replace("7654321", NA_APP_ID)
+    )
+    replace_locale(documents, old="zh-Hant", new="zh-Hans", country="cn")
+    catalog = documents[f"{SITE}/api/v1/ios-app-catalog/locales/zh-Hans.json"]
+    feed = documents[f"{SITE}/api/v1/ios-app-catalog/feeds/zh-Hans.json"]
+    row = next(r for r in catalog["apps"] if r["app_store_id"] == NA_APP_ID)
+    row["app_store_url"] = None
+    row.update(coverage.market.record_fields("zh-Hans", NA_APP_ID))
+    item = next(i for i in feed["items"] if i["id"].endswith(NA_APP_ID))
+    item["id"] = f"urn:apple:app:id{NA_APP_ID}"
+    del item["external_url"]
+    item["_market_availability"] = row["market_availability"]
+    item["content_text"] = f"{row['summary']} 公開查詢未返回此 App，這裡保留產品介紹。"
+    return documents
+
+
 class PublicMarketCoverageTests(unittest.TestCase):
+    def audit_mixed(self, documents: dict[str, dict]) -> dict:
+        return coverage.audit_public_market_coverage(
+            expected_apps=2,
+            expected_locales=2,
+            reviewed_app_ids=frozenset({SOLD_APP_ID, NA_APP_ID}),
+            official_locales=frozenset({"en-US", "zh-Hans"}),
+            workers=2,
+            fetcher=lambda url: copy.deepcopy(documents[url]),
+        )
+
+    def test_unavailable_app_in_available_locale_uses_urn_feed_identity(self):
+        report = self.audit_mixed(mixed_market_documents())
+        self.assertEqual(3, report["native_public_cells"])
+        self.assertEqual(1, report["not_applicable_public_cells"])
+        self.assertEqual(4, report["total_public_cells"])
+
+    def test_available_app_cannot_use_urn_feed_identity(self):
+        documents = mixed_market_documents()
+        feed = documents[f"{SITE}/api/v1/ios-app-catalog/feeds/zh-Hans.json"]
+        item = next(i for i in feed["items"] if i["id"].endswith(SOLD_APP_ID))
+        item["id"] = f"urn:apple:app:id{SOLD_APP_ID}"
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "contradicts market availability",
+        ):
+            self.audit_mixed(documents)
+
+    def test_unavailable_app_cannot_expose_store_url_identity(self):
+        documents = mixed_market_documents()
+        feed = documents[f"{SITE}/api/v1/ios-app-catalog/feeds/zh-Hans.json"]
+        item = next(i for i in feed["items"] if i["id"].endswith(NA_APP_ID))
+        item["id"] = f"https://apps.apple.com/app/id{NA_APP_ID}"
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "contradicts market availability",
+        ):
+            self.audit_mixed(documents)
+
     def audit(
         self,
         documents: dict[str, dict],

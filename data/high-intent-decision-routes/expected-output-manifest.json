@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "50cb515166efcfe11a6fbbd43349dec718e558edfd98902c977a9b731157c2c3",
+    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,7 +24,7 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "ae0271e5939193486239a6e8419f7310e1ada91020df01080b848ce92a2216a4",
+      "generated_sha256": "83efebcc54a53323b281d1b88e4c595e50880547915472a9f3daab2783df3743",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
@@ -367,14 +367,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "50cb515166efcfe11a6fbbd43349dec718e558edfd98902c977a9b731157c2c3",
+    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "c85aafcf045547df6c4f9c510748d163940c1149870681845c679b22e193aaed",
+  "manifest_digest": "bee5af68c126169aad8c896302adf443bbcd3d62f074719a4abb2971e73c7a30",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "fd1df748bb4f227a58c06d2cc78141ad1940dfd23fba03959469ad0813d4b60f",
+  "release_contract_digest": "9360a3c82e721e92db37d9eff11b5a243b43dccff42a9730c25cb28e3afd6398",
   "release_state": "exact",
   "route_count": 65,
   "routes": [
@@ -1486,5 +1486,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "e07a60e7b97b7081c1e98adfef204d787ce029af2ef8c72368ffbfe20c5a6b43"
+  "source_contract_digest": "dece1d9e4ff9d6d4594b0d30b7d12493e8d641e32c4f988f72e132979ce890ee"
 }

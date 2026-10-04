@@ -28,9 +28,15 @@ jobs:
     # scheduled run; fail loudly instead so the next schedule can retry.
     # The full pipeline now needs ~5h (materialize, AI indexes, English
     # reconcile and the 45-minute localization budget each take 45-55 min),
-    # so 180 cancelled every run inside localization. 330 stays below the
-    # 6h schedule interval and the hosted-runner ceiling.
-    timeout-minutes: 330
+    # so 180 cancelled every run inside localization. The same workload runs
+    # 1.3-1.5x slower on busy hosted runners (the identical heavy-1 test took
+    # 384-406s on 2026-09-30 but 599-604s on 2026-10-04), which pushed whole
+    # runs past 330 and cancelled them inside the final cleanup. 355 is the
+    # most the 360-minute hosted-runner ceiling allows; it still leaves the
+    # job inside the 6h schedule interval. Do not push to main while this
+    # workflow runs: a foreign commit makes the verified-tree check miss and
+    # re-runs the whole localized reconcile (~55 min).
+    timeout-minutes: 355
     env:
       GEO_SITE: https://open.cait518.cc/ios-app-guide
       GROWTH_LIVE_MANIFEST: ${{ github.workspace }}/.growth-runtime/live-app-manifest.json

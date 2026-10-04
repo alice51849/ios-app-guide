@@ -547,6 +547,46 @@ if os.path.exists(_AUTO_PATH):
     except (OSError, TypeError, ValueError) as exc:
         raise RuntimeError(f"Invalid automatic app registry: {_AUTO_PATH}") from exc
 
+def _load_app_dirs():
+    """lib/app_dirs.py, or None: the registry must import even without it."""
+    try:
+        import sys
+
+        lib = os.path.normpath(
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "lib")
+        )
+        if lib not in sys.path:
+            sys.path.append(lib)
+        import app_dirs
+
+        return app_dirs
+    except Exception:  # noqa: BLE001 - a lookup helper must never break the registry import
+        return None
+
+
+def _current_home_path(value):
+    """Re-point a stale ``~/NN_AppName/...`` path to the folder that carries the app's name today.
+
+    The ``NN_`` prefix of an app folder shifts whenever an app is retired (Zodira and Zafe,
+    2026-10) while registry_auto.json is written once per new app, so ``~/45_MoneyTag/...``
+    kept pointing at a folder that no longer exists.  A value whose folder still exists, a
+    path outside the numbered folders and any lookup problem come back exactly as written."""
+    app_dirs = _APP_DIRS
+    if app_dirs is None or not isinstance(value, str) or not value:
+        return value
+    try:
+        resolved = app_dirs.resolve_home_path(value)
+    except Exception:  # noqa: BLE001 - e.g. AmbiguousAppDir; keep the literal
+        return value
+    return value if resolved == os.path.expanduser(value) else resolved
+
+
+_APP_DIRS = _load_app_dirs()
+for _app in APPS.values():
+    for _field in ("icon", "shots_dir"):
+        if _field in _app:
+            _app[_field] = _current_home_path(_app[_field])
+
 for _key, _app in APPS.items():
     _model = _app.setdefault("purchase_model", "neutral")
     if _model not in VALID_PURCHASE_MODELS:

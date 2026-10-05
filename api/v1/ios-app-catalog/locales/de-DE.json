@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-05",
-  "content_digest": "748ca6a2329b5f15723dea2e9e2dc2c887959713fd61c3915a87349c5768d08c",
+  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -485,7 +485,9 @@
         "FFT",
         "RTA",
         "oktavband",
-        "kalibrierung"
+        "kalibrierung",
+        "spektrumanalysator",
+        "lärmmessgerät"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -540,7 +542,8 @@
         "offline",
         "geldverwalten",
         "reise",
-        "fx"
+        "fx",
+        "urlaubsbudget"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -712,7 +715,9 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan"
+        "Fan",
+        "abholschild flughafen",
+        "konzert schild"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1247,7 +1252,8 @@
         "Aufgabenplan",
         "Schlafenszeit",
         "Tagesaufgaben",
-        "Morgen"
+        "Morgen",
+        "abendroutine kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1508,7 +1514,9 @@
         "export",
         "pdf",
         "tabelle",
-        "daten"
+        "daten",
+        "one pager",
+        "präsentation erstellen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1667,7 +1675,8 @@
         "generator",
         "erstellen",
         "wlan",
-        "visitenkarte"
+        "visitenkarte",
+        "qr code prüfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2090,7 +2099,8 @@
         "Missionen",
         "Belohnungen",
         "Urlaub",
-        "Erinnerungen"
+        "Erinnerungen",
+        "reisen mit kindern"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2235,7 +2245,8 @@
         "restaurieren",
         "rauschen",
         "fokus",
-        "4k"
+        "4k",
+        "unscharf schärfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2320,7 +2331,8 @@
         "ip",
         "tls",
         "tcp",
-        "web"
+        "web",
+        "wlan kein internet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

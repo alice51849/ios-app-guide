@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-05",
-  "content_digest": "748ca6a2329b5f15723dea2e9e2dc2c887959713fd61c3915a87349c5768d08c",
+  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -93,7 +93,8 @@
         "文件扫描",
         "文本识别",
         "论文阅读",
-        "读文件"
+        "读文件",
+        "提示词管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1515,7 +1516,9 @@
         "整理",
         "责任",
         "孩子",
-        "놀이"
+        "놀이",
+        "奖励 贴纸",
+        "家务 表"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1668,7 +1671,8 @@
         "비",
         "자외선",
         "육아",
-        "服装"
+        "服装",
+        "穿衣 天气"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2129,7 +2133,8 @@
         "门票",
         "菜单",
         "海报",
-        "美化"
+        "美化",
+        "二维码 安全检测"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

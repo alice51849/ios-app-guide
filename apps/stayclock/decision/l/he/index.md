@@ -2,7 +2,7 @@
 title: "Stay Clock: שעון קלפים — שעון ולוח שנה תמידיים | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/he/index.html"
-modified: "2026-10-04"
+modified: "2026-10-05"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

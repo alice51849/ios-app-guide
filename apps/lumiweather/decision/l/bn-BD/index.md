@@ -2,7 +2,7 @@
 title: "Lumi আবহাওয়া: আজকের পূর্বাভাস — বাইরে যাওয়ার স্কোর ও পোশাক | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/bn-BD/index.html"
-modified: "2026-10-04"
+modified: "2026-10-05"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

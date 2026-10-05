@@ -2,7 +2,7 @@
 title: "QR Code Halo: 열기 전 확인 — 실행 전 위험부터 확인 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ko/index.html"
-modified: "2026-10-04"
+modified: "2026-10-05"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

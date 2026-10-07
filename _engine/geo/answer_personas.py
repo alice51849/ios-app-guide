@@ -4037,6 +4037,107 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         }
     ],
+    # Claims here are held to UsageNow 1.0's live en-US listing: the four
+    # services and limit types it names, custom percentage alerts, widgets
+    # and Watch complications, Keychain sign-in with no UsageNow server, a
+    # free 24-hour trial, then a one-time Pro unlock. It is independent of
+    # every service it reads, so that disclaimer is part of the copy.
+    "claudeusagemini": [
+        {
+            "query": "app to see Claude and Codex usage limits and reset times on iPhone",
+            "guide_title": "Tracking AI coding plan limits on iPhone: what to check",
+            "triggers": [
+                "claude usage limit",
+                "claude weekly limit",
+                "codex usage limit",
+                "copilot premium requests",
+                "ai plan reset countdown",
+                "ai usage limit widget",
+            ],
+            "persona": "developers who code with AI agents every day and keep running into Claude, Codex, Copilot or Gemini plan limits halfway through a task",
+            "lead": (
+                "If you code with AI agents every day, the limit that cuts "
+                "you off mid-task is the one to watch: how much of each plan "
+                "is left and exactly when it resets."
+            ),
+            "paras": [
+                (
+                    "Each service counts in its own way: Claude has a 5-hour "
+                    "session limit and weekly limits, including per-model "
+                    "weekly caps; ChatGPT Codex has 5-hour and weekly "
+                    "windows; GitHub Copilot counts premium requests, chat "
+                    "and code completions; Gemini sets daily request quotas "
+                    "for each model. A tracker worth keeping puts all of "
+                    "them side by side with a live countdown to every reset, "
+                    "and lets work and personal accounts sit next to each "
+                    "other."
+                ),
+                (
+                    "The other half is a warning before you hit the wall. "
+                    "Look for alerts you set yourself at the "
+                    "percentage that matters to you, sent once per limit and "
+                    "cycle instead of on every refresh, plus a reset alert "
+                    "for the moment a limit is back. A usage tracker also "
+                    "needs your sign-in, so check where it goes: you should "
+                    "sign in on each service's own login page, the session "
+                    "should stay in the device Keychain, and the tracker "
+                    "should talk only to those services."
+                ),
+            ],
+            "look": [
+                "Claude 5-hour and weekly limits, Codex windows, Copilot premium requests and Gemini daily quotas in one view.",
+                "A live countdown and the exact reset time, in your local format, for every limit.",
+                "Alerts at a percentage you choose, sent once per limit and cycle, with an optional reset alert.",
+                "Home Screen widgets you can refresh and flip through with a tap, plus Lock Screen widgets and Apple Watch complications.",
+                "Sign-in on each service's own login page, kept in the Keychain, with no extra account, server or tracking.",
+            ],
+            "steps": [
+                "Sign in to the services you actually use and compare the numbers with each service's own usage page.",
+                "Set an alert at 90 percent on the 5-hour or weekly limit you hit most often and check that it arrives only once in that cycle.",
+                "Add a Home Screen widget, tap its refresh button, and flip through your accounts on it.",
+                "Sort your accounts by 5-hour or weekly reset to see which plan frees up first.",
+                "Use the free 24-hour trial to test every feature, widgets included, before paying for anything.",
+            ],
+            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want to see what is left, and when it resets, from the Home Screen, Lock Screen or Apple Watch without creating another account. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is UsageNow made by Anthropic, OpenAI, GitHub, Microsoft or Google?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic, OpenAI, GitHub, Microsoft "
+                        "or Google. Claude, ChatGPT, Codex, GitHub Copilot "
+                        "and Gemini are trademarks of their respective owners."
+                    ),
+                },
+                {
+                    "q": "Where does my sign-in go?",
+                    "a": (
+                        "You sign in on each service's own login page. The "
+                        "sign-in stays in your device's Keychain and UsageNow "
+                        "talks only to those services: there is no UsageNow "
+                        "server, no account to create and no tracking."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature, widgets included, is free during "
+                        "a 24-hour trial started in the app. To keep using "
+                        "UsageNow and its widgets after that, you unlock "
+                        "UsageNow Pro with a single one-time purchase."
+                    ),
+                },
+                {
+                    "q": "Which devices does it work on?",
+                    "a": (
+                        "iPhone, iPad and Apple Watch, with Home Screen and "
+                        "Lock Screen widgets in every size and Apple Watch "
+                        "complications."
+                    ),
+                },
+            ],
+        }
+    ],
 }
 
 # Zipbox has entered the canonical live roster; its reviewed pre-publication

@@ -21,6 +21,7 @@ LAUNCH_CANDIDATES = {
     "countdaysnow": ("6807079789", "CountDaysNow"),
     "gbago": ("6804564400", "GBAGo"),
     "studydown": ("6807335593", "Studydown"),
+    "claudeusagemini": ("6818607603", "UsageNow"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}
@@ -38,6 +39,9 @@ FORBIDDEN = {
               "time machine", "pokemon", "zelda", "mario", "game boy"),
     "studydown": ("proximity", "icloud", "in the background", "unlimited free",
                   "blocks apps", "screen time limit"),
+    "claudeusagemini": ("unlimited free", "free forever", "android", "mac app",
+                        "api key", "cursor", "perplexity", "official app",
+                        "real-time"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -46,6 +50,8 @@ REQUIRED = {
     "countdaysnow": ("three active events", "icloud"),
     "gbago": ("contains no games", "not affiliated with"),
     "studydown": ("five minutes of recorded time", "does not use screen time"),
+    "claudeusagemini": ("not affiliated with", "24-hour trial",
+                        "one-time purchase", "no subscription"),
 }
 
 

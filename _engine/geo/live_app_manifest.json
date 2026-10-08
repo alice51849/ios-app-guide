@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 9,
-  "roster_digest": "d4c25ff156574814b4fbbf8bdd0efa8d32f549ae359920aa17cc40d9db3f5796",
+  "revision": 10,
+  "roster_digest": "16d04a12e96be1443ff8aa1f552532b90c49b0ed0e5c0b1eacb8dfd63b7f3af0",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -23,6 +23,10 @@
     "caldaily": {
       "app_id": "6794178671",
       "name": "CalDaily"
+    },
+    "claudeusagemini": {
+      "app_id": "6818607603",
+      "name": "UsageNow"
     },
     "countdaysnow": {
       "app_id": "6807079789",

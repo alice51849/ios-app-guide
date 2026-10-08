@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 53,
-    "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
+    "expected_app_count": 54,
+    "app_keys_sha256": "3786f09134e91389a8d8dcc9285b95117c93ad2926495ca3412cd576cd4474b6",
+    "copy_sha256": "29aa93130937d19e9fc6bfbf55eda684d0b904a742e107f365b7944f5719836e",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2277,6 +2277,69 @@
             "fact.one_time_option",
             "feature.0",
             "feature.3"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "claudeusagemini",
+      "route_slug": "see-claude-and-codex-limits-before-they-run-out",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US developers who code with Claude, Codex or Copilot all day often juggle a work plan and a personal plan, and a Claude or Codex 5-hour or weekly limit, or running out of Copilot premium requests, can cut off an agent halfway through a change.",
+          "query": "Which app warns me before my Claude or Codex usage limit runs out?",
+          "buyer_problem": "Each service shows usage on its own page, so the first sign of a limit is often the agent stopping mid-task. The decision is whether one tracker that puts Claude, Codex, Copilot and Gemini limits side by side, with reset countdowns and alerts at your own percentage, fits how you work.",
+          "decision_rule": "Favor a dedicated tracker when you hit 5-hour or weekly limits often or switch between several accounts. Every feature, widgets included, is free during a 24-hour trial started in the app; keeping it after that takes the one-time Pro purchase, and there is no subscription.",
+          "workflow_checks": [
+            "Does it cover the exact limits you hit, such as Claude's 5-hour and weekly caps or Copilot premium requests?",
+            "Can you set an alert at your own percentage and get it only once per limit and cycle?",
+            "Can work and personal accounts sit side by side and be sorted by 5-hour or weekly reset?"
+          ],
+          "alternative_lens": "If you use one service and rarely hit a cap, that service's own usage page may be enough. A tracker like this reads only the services it lists, is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google, and cannot raise or reset a limit.",
+          "verify_before_install": [
+            "Check the current listing for the services and limit types it supports before you rely on it.",
+            "Start the 24-hour trial in the app and confirm each account signs in on that service's own login page."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.3",
+            "feature.5"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣有不少開發者白天用公司的 AI 方案、晚上用個人帳號寫自己的專案，Claude 或 Codex 的 5 小時、每週額度，或 Copilot 的進階請求一用完，正在跑的 AI 任務就得停下來。",
+          "query": "有沒有 App 能在 Claude 或 Codex 額度用完前先提醒我？",
+          "buyer_problem": "各服務的用量分散在各自的網頁，常常要等 AI 代理做到一半停下來，才發現額度已經見底。要判斷的是：把 Claude、Codex、Copilot 與 Gemini 的額度放在同一個畫面、附上重置倒數，並在你設定的百分比先提醒的工具，是否符合你的工作方式。",
+          "decision_rule": "如果你常撞到 5 小時或每週額度，或要在好幾個帳號之間切換，專用的額度追蹤工具比較合適。在 App 內開始 24 小時免費試用，就能使用包含小工具在內的所有功能；之後要繼續使用需一次性購買 Pro，沒有訂閱。",
+          "workflow_checks": [
+            "它涵蓋你實際會撞到的額度嗎？例如 Claude 的 5 小時與每週上限，或 Copilot 的進階請求？",
+            "能不能用你自己的百分比設定提醒，而且每個額度每個週期只提醒一次？",
+            "工作和個人帳號能不能並排顯示，並依 5 小時或每週重置時間排序？"
+          ],
+          "alternative_lens": "如果你只用一個服務、也很少撞到上限，直接看該服務自己的用量頁面可能就夠了。這類工具只讀取它列出的服務，與 Anthropic、OpenAI、GitHub、Microsoft 或 Google 皆無關聯，也不能幫你提高或重置額度。",
+          "verify_before_install": [
+            "先在 App Store 頁面確認支援的服務與額度類型，再決定要不要依賴它。",
+            "在 App 內開始 24 小時試用，確認每個帳號都是在該服務自己的官方登入頁面登入。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.widget",
+            "capability.no_tracking"
           ]
         }
       }

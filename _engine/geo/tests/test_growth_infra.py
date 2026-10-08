@@ -22185,6 +22185,10 @@ class GeneratorTests(unittest.TestCase):
             # en-US description gives three free scans per device and "One
             # optional Lifetime Pro purchase" with "No subscription".
             "qrcodehalo",
+            # Free download (iTunes Lookup price 0, released 2026-10-07) whose
+            # en-US description offers a free 24-hour trial in the app, then
+            # "a single one-time purchase" for UsageNow Pro, "No subscription".
+            "claudeusagemini",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

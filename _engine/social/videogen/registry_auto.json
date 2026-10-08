@@ -936,5 +936,32 @@
       "batch scan qr codes to csv"
     ],
     "keyword_source": "reviewed_persona"
+  },
+  "claudeusagemini": {
+    "appstore_id": "6818607603",
+    "name": "UsageNow",
+    "search": "UsageNow",
+    "category": "productivity",
+    "sub": "UsageNow shows how much of each AI plan you have left and exactly when it resets, right on your Home Screen, and warns you before you run out.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "Home Screen widget",
+      "Apple Watch",
+      "No tracking",
+      "Private"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "claude usage limit",
+      "claude weekly limit",
+      "codex usage limit",
+      "copilot premium requests",
+      "ai plan reset countdown",
+      "ai usage limit widget"
+    ],
+    "keyword_source": "reviewed_persona"
   }
 }

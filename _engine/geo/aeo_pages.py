@@ -487,6 +487,23 @@ CURATED_FALLBACK = {
             ["qr code generator - qrhyper", 0],
         ],
     },
+    "claudeusagemini": {
+        "key": "claudeusagemini",
+        "gap_queries": [
+            "app that warns before my claude or codex usage limit runs out",
+            "see claude 5 hour and weekly limits on the iphone home screen",
+            "track claude codex copilot and gemini usage limits in one place",
+            "ai usage alerts at a custom percentage with no subscription",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "claude usage", "ai usage tracker" and "codex usage" on 2026-10-07.
+        "top_competitors": [
+            ["usage for claude", 0],
+            ["limits: ai usage tracker", 0],
+            ["ai limits & reset tracker", 0],
+            ["codexbar - usage of ai", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [
@@ -563,6 +580,8 @@ BRAND = {
     "toeic practice test": "TOEIC Practice Test", "magoosh toeic prep": "Magoosh TOEIC Prep",
     "english listening speaking": "English Listening & Speaking",
     "toeic vocabulary builder": "TOEIC Vocabulary Builder",
+    "usage for claude": "Usage for Claude", "limits: ai usage tracker": "Limits: AI Usage Tracker",
+    "ai limits & reset tracker": "AI Limits & Reset Tracker", "codexbar - usage of ai": "CodexBar - Usage of AI",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)

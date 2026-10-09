@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import copy
 import html
 import json
 import os
@@ -1049,6 +1050,193 @@ COPY = {
     },
 }
 
+COPY["es-MX"] = copy.deepcopy(COPY["es-ES"])
+COPY["es-MX"].update(
+    {
+        "title": "Tarjetas Bopomofo para imprimir | 37 símbolos Zhuyin",
+        "description": (
+            "Selecciona cualquiera de los 37 símbolos Bopomofo oficiales y crea "
+            "tarjetas Zhuyin gratis para imprimir en un orden fijo. Sin cuenta, "
+            "datos de menores, resultados guardados, puntuación ni mezcla aleatoria."
+        ),
+        "eyebrow": "Gratis para imprimir · orden oficial · sin cuenta",
+        "heading": "Tarjetas Bopomofo (Zhuyin) para imprimir",
+        "lead": (
+            "Elige los 37 símbolos, una categoría oficial o una selección exacta. "
+            "La misma selección siempre crea las mismas hojas para recortar."
+        ),
+        "planner": "Elige el conjunto exacto de símbolos",
+        "planner_intro": (
+            "La página solo acepta símbolos Bopomofo oficiales y ajustes de "
+            "impresión. Nunca pide nombre, edad, escuela, voz, escritura, "
+            "respuestas, puntuación ni progreso de una niña o un niño."
+        ),
+        "index": (
+            "Tarjetas Bopomofo para imprimir",
+            (
+                "Elige cualquiera de los 37 símbolos Zhuyin oficiales e imprime "
+                "tarjetas fijas y privadas, sin cuenta ni puntuación."
+            ),
+        ),
+    }
+)
+
+COPY["vi"] = {
+    "title": "Trình tạo thẻ Bopomofo để in | 37 ký hiệu Zhuyin",
+    "description": (
+        "Chọn bất kỳ ký hiệu nào trong 37 ký hiệu Bopomofo chính thức và tạo "
+        "thẻ Zhuyin miễn phí để in theo thứ tự cố định. Không cần tài khoản, "
+        "không thu thập dữ liệu trẻ em, không lưu kết quả hay chấm điểm."
+    ),
+    "eyebrow": "Miễn phí để in · thứ tự cố định · không cần tài khoản",
+    "heading": "Thẻ Bopomofo (Zhuyin) để in",
+    "lead": (
+        "Chọn đủ 37 ký hiệu, một nhóm chính thức hoặc một tập hợp chính xác. "
+        "Cùng một lựa chọn luôn tạo ra cùng một bộ trang để cắt."
+    ),
+    "planner": "Chọn chính xác bộ ký hiệu",
+    "planner_intro": (
+        "Trang này chỉ nhận ký hiệu Bopomofo chính thức và thiết lập in. Trang "
+        "không hỏi tên, tuổi, trường học, giọng nói, chữ viết, câu trả lời, "
+        "điểm số hay tiến độ của trẻ."
+    ),
+    "labels": {
+        "presets": "Bộ ký hiệu nhanh",
+        "all": "Đủ 37 ký hiệu",
+        "initials": "21 phụ âm đầu",
+        "medials": "3 âm đệm",
+        "finals": "13 vần",
+        "symbols": "Chạm để thêm hoặc bỏ ký hiệu",
+        "density": "Số thẻ trên mỗi trang in",
+        "category": "Hiện nhãn nhóm trên mỗi thẻ",
+        "show": "Hiện",
+        "hide": "Ẩn",
+        "generate": "Tạo thẻ",
+        "print": "In các thẻ này",
+        "result": "{count} thẻ · {pages} trang in",
+        "page": "Trang in",
+        "invalid": "Hãy chọn 1–37 ký hiệu chính thức và bố cục in được hỗ trợ.",
+        "toggle": "Bật hoặc tắt",
+    },
+    "categories": {
+        "initial": "Phụ âm đầu",
+        "medial": "Âm đệm",
+        "final": "Vần",
+    },
+    "badges": (
+        "Đủ 37 ký hiệu Bopomofo cơ bản",
+        "Cùng lựa chọn, cùng thứ tự",
+        "Không dữ liệu trẻ em, điểm số hay chẩn đoán",
+    ),
+    "boundary": (
+        "Các thẻ này làm gì và không làm gì",
+        (
+            "Các thẻ chỉ đặt những ký hiệu Bopomofo đã chọn lên trang để cắt. "
+            "Thẻ không đưa ra cách viết Pinyin hay từ ví dụ một-một, không phát "
+            "hoặc nghe âm thanh, không chấm phát âm, lưu câu trả lời, chẩn đoán "
+            "hay hứa hẹn kết quả học tập."
+        ),
+    ),
+    "how": (
+        "Cách tạo bộ thẻ cố định",
+        (
+            "Chọn một bộ nhanh hoặc chạm đúng những ký hiệu cần dùng.",
+            "Mỗi ký hiệu xuất hiện một lần theo thứ tự cố định của Bộ Giáo dục "
+            "Đài Loan, không xáo trộn ngẫu nhiên trực tiếp.",
+            "Chọn 4, 6 hoặc 8 thẻ trên mỗi trang A4 và có hiện nhãn nhóm hay không.",
+        ),
+    ),
+    "use": (
+        "Cách dùng nhẹ nhàng với người lớn hướng dẫn",
+        (
+            "Chỉ in và cắt những ký hiệu cần cho hoạt động hiện tại.",
+            "Người lớn có thể kiểm tra cách gọi ký hiệu bằng nguồn chính thức "
+            "trước khi người học chỉ, ghép hoặc phân loại.",
+            "Dùng thẻ như một hoạt động, không phải điểm số, xếp hạng, bài kiểm "
+            "tra hay chẩn đoán; dừng lại khi người học muốn dừng.",
+        ),
+    ),
+    "webmcp_description": (
+        "Trả về các trang thẻ Bopomofo để in có thể tái tạo từ 1–37 ký hiệu "
+        "chính thức, mật độ trang và lựa chọn hiện nhãn nhóm. Chỉ đọc: không "
+        "nhận hồ sơ trẻ em, văn bản tự do, câu trả lời, điểm số, bản ghi âm, "
+        "đánh giá, chẩn đoán hay tuyên bố kết quả học tập."
+    ),
+    "faq_title": "Câu hỏi về thẻ Bopomofo để in",
+    "faq": (
+        (
+            "Có đủ 37 ký hiệu Bopomofo cơ bản không?",
+            "Có. Các bộ gồm 21 phụ âm đầu, 3 âm đệm và 13 vần theo thứ tự cố "
+            "định của Bộ Giáo dục Đài Loan.",
+        ),
+        (
+            "Trang có thu thập hoặc lưu dữ liệu của trẻ không?",
+            "Không. Danh sách ký hiệu cố định và thiết lập in chỉ được dùng "
+            "trong trang hiện tại; không có gì được tải lên hoặc lưu lại.",
+        ),
+        (
+            "Vì sao thẻ không kèm Pinyin hoặc từ ví dụ?",
+            "Một cách viết Latin hoặc một từ ví dụ có thể gây hiểu nhầm theo "
+            "ngữ cảnh. Các thẻ chỉ dùng bộ ký hiệu đã được kiểm chứng và liên "
+            "kết tới nguồn chính thức cho cách đọc và nét viết.",
+        ),
+    ),
+    "index": (
+        "Thẻ Bopomofo để in",
+        (
+            "Chọn bất kỳ ký hiệu nào trong 37 ký hiệu Zhuyin chính thức và in "
+            "thẻ cố định, riêng tư, không cần tài khoản hay chấm điểm."
+        ),
+    ),
+    "inline_link": "Tạo thẻ Bopomofo miễn phí để in",
+    "footer": (
+        "Ký hiệu chính thức · không dữ liệu trẻ em · không chấm điểm · "
+        "không suy đoán phát âm"
+    ),
+}
+
+BASE_COPY_EXTENSIONS = {
+    "es-MX": BASE_COPY["es-ES"],
+    "vi": {
+        "tools": "Công cụ miễn phí",
+        "switch": "English",
+        "sources_title": "Nguồn Bopomofo chính thức",
+        "sources_intro": (
+            "Các dữ kiện và liên kết này đến từ Bộ Giáo dục Đài Loan và "
+            "Unicode Consortium, không phải do trang này tự đặt ra."
+        ),
+        "source_labels": (
+            "Sổ tay Bopomofo chính thức của Bộ Giáo dục Đài Loan",
+            "Cổng thứ tự nét Bopomofo chính thức của Bộ Giáo dục Đài Loan",
+            "Danh sách tên Bopomofo chính thức của Unicode",
+            "Bảng mã Bopomofo chính thức của Unicode (PDF)",
+        ),
+        "webmcp_source": (
+            "Bản xem trước API mệnh lệnh Chrome WebMCP (có thể thay đổi)"
+        ),
+        "app_title": "Bạn muốn dùng thêm ứng dụng Bopomofo có hướng dẫn?",
+        "app_text": (
+            "Lumi Bopomofo là lựa chọn bổ sung. Trang App Store hiện tại mô tả "
+            "các hoạt động về ký hiệu, âm và ghép Zhuyin, cùng trò chơi nét viết "
+            "và thanh điệu; ứng dụng được tải miễn phí, có một lần mở khóa trong "
+            "ứng dụng, hoạt động ngoại tuyến, không quảng cáo, không thuê bao và "
+            "ghi rõ không thu thập dữ liệu. Hãy kiểm tra trang hiện tại trước khi "
+            "quyết định vì tính năng có thể thay đổi. Các thẻ in này vẫn hoạt "
+            "động đầy đủ mà không cần ứng dụng."
+        ),
+        "app_cta": "Xem Lumi Bopomofo trên App Store",
+    },
+}
+
+
+def base_copy(locale: str) -> dict[str, object]:
+    if locale in BASE_COPY:
+        return BASE_COPY[locale]
+    try:
+        return BASE_COPY_EXTENSIONS[locale]
+    except KeyError as error:
+        raise ValueError(f"unsupported base copy locale: {locale}") from error
+
 
 def build_flashcards(
     symbols: list[str], cards_per_page: int, show_category: bool
@@ -1376,20 +1564,30 @@ def webmcp_input_schema(locale: str) -> dict[str, object]:
     }
 
 
-def render_page(locale: str, app_public: bool) -> str:
+def render_page(
+    locale: str,
+    app_public: bool,
+    alternate_locales: tuple[str, ...] | None = None,
+) -> str:
     if locale not in COPY:
         raise ValueError(f"unsupported locale: {locale}")
     t = COPY[locale]
-    base = BASE_COPY[locale]
+    base = base_copy(locale)
     labels = t["labels"]
     url = canonical(locale)
     other = "zh-Hant" if locale == "en" else "en"
     prefix = "" if locale == "en" else f"{locale}/"
     tools = f"{SITE}/{prefix}tools/index.html"
     home = f"{SITE}/{prefix}index.html"
+    if alternate_locales is None:
+        alternate_locales = ALT_LOCALES
+    if locale not in alternate_locales:
+        raise ValueError("alternate locales must include the rendered locale")
+    if any(alt not in COPY for alt in alternate_locales):
+        raise ValueError("alternate locales contain unsupported copy")
     alternate_links = "\n".join(
         f'<link rel="alternate" hreflang="{alt}" href="{canonical(alt)}">'
-        for alt in ALT_LOCALES
+        for alt in alternate_locales
     )
     badges = "".join(
         f'<span class="badge">{html.escape(item)}</span>' for item in t["badges"]

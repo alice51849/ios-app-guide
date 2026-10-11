@@ -109,8 +109,6 @@ REVIEWS = [
              "Aim990 is best suited for intermediate to advanced learners targeting a specific score. Complete beginners would benefit more from general English learning apps first."),
             ("Does Aim990 include a full mock TOEIC test?",
              "Yes. Aim990 includes simulation tests designed to match the format and difficulty of the real TOEIC L&R test."),
-            ("What is the difference between Aim990 and Aim990 Plus?",
-             "Aim990 covers standard L&R practice. Aim990 Plus adds advanced content tracks specifically designed for learners targeting scores above 900."),
         ],
     },
     {

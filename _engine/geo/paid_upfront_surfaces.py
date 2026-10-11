@@ -19,7 +19,7 @@ from site_config import PUBLIC_SITE
 HERE = Path(__file__).resolve().parent
 COPY_PATH = HERE / "data/paid_upfront_surface_repairs.json"
 EXACT_IDS = {
-    "aim990plus": "6792483140", "dailymate": "6790418321",
+    "dailymate": "6790418321",
     "gmoney": "6755782939", "hourstag": "6754218117",
     "lumimathpro": "6776958488", "lumimissionpro": "6779745474",
     "snapport": "6780575828", "wifiaid": "6790467886",
@@ -72,7 +72,7 @@ def targets():
             result[f'answers/{row["slug"]}.html'] = {**row, "kind": "answer"}
     for row in document["landings"]:
         result[f'{row["locale"]}/{row["key"]}.html'] = {**row, "kind": "landing"}
-    if len(result) != 13 or {row["key"] for row in result.values()} != set(EXACT_IDS):
+    if len(result) != 12 or {row["key"] for row in result.values()} != set(EXACT_IDS):
         raise ValueError("Existing-surface repair scope changed")
     return result
 

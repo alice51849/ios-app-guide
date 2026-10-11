@@ -365,21 +365,6 @@ CURATED_FALLBACK = {
             ["pdfelement", 0],
         ],
     },
-    "aim990plus": {
-        "key": "aim990plus",
-        "gap_queries": [
-            "best offline English listening and reading exam trainer for iPhone",
-            "toeic style listening practice app without a subscription",
-            "english exam trainer that works with no internet",
-            "pay once english listening and reading practice app",
-        ],
-        "top_competitors": [
-            ["toeic practice test", 0],
-            ["magoosh toeic prep", 0],
-            ["english listening speaking", 0],
-            ["toeic vocabulary builder", 0],
-        ],
-    },
     "ledmovingtext": {
         "key": "ledmovingtext",
         "gap_queries": [
@@ -800,8 +785,6 @@ def cat_noun(key):
         return "Wi-Fi diagnostics app", "UtilitiesApplication"
     if key == "maskmyfile":
         return "on-device file redaction app", "UtilitiesApplication"
-    if key == "aim990plus":
-        return "English listening and reading exam trainer", "EducationalApplication"
     return CAT_NOUN.get(APPS[key].get("category", "productivity"), ("app", "MobileApplication"))
 
 

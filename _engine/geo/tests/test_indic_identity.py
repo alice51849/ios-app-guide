@@ -80,11 +80,14 @@ class IndicIdentityTests(unittest.TestCase):
         self.assertEqual(len(apps), ROSTER_APP_COUNT)
         # One page per App plus the four fixed non-App pages of the tree; a
         # count spelled out here goes stale the day a new App ships.
-        self.assertEqual(
-            {path.stem for path in primary} - {str(app["key"]) for app in apps},
-            {"index", "browse", "aim990plus-privacy", "aim990plus-support"},
+        # aim990plus-privacy／-support 是 10-10 退役的 Aim990 Plus 留下的 bn-BD 頁；
+        # 退役清理（cleanup_localized_assets.PERMANENTLY_RETIRED_APPS）移除後就不再存在。
+        extras = {path.stem for path in primary} - {str(app["key"]) for app in apps}
+        self.assertLessEqual({"index", "browse"}, extras)
+        self.assertLessEqual(
+            extras, {"index", "browse", "aim990plus-privacy", "aim990plus-support"},
         )
-        self.assertEqual(len(primary), ROSTER_APP_COUNT + 4)
+        self.assertEqual(len(primary), ROSTER_APP_COUNT + len(extras))
         for path in (pages / "bn-BD").rglob("*.html"):
             with self.subTest(page=str(path)):
                 source = path.read_text()

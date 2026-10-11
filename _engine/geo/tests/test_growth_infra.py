@@ -661,7 +661,6 @@ class GeneratorTests(unittest.TestCase):
                 "apps/example/sitemap.xml",
                 "sitemap_agent_feed.xml",
                 "sitemap-high-intent-decision-routes.xml",
-                "sitemap_aim990plus.xml",
                 "sitemap_maskmyfile.xml",
                 "sitemap_orphans.xml",
             )
@@ -22109,7 +22108,6 @@ class GeneratorTests(unittest.TestCase):
 
     def test_registry_purchase_models_are_explicit_and_verified(self):
         paid_upfront = {
-            "aim990plus",
             "snapport",
             "gmoney",
             "hourstag",
@@ -23330,17 +23328,17 @@ class GeneratorTests(unittest.TestCase):
             )
 
     def test_app_decision_cards_accept_native_product_leads(self):
-        app_id = gen_app_decision_cards.APPSTORE["aim990plus"]
+        app_id = gen_app_decision_cards.APPSTORE["wordmate"]
         source = (
             "<html><head></head><body><main>"
-            "<h1>Aim990 Plus</h1>"
+            "<h1>Wordmate</h1>"
             '<p class="lead">依照今天的弱項安排專注練習。</p>'
             f'<a href="https://apps.apple.com/tw/app/id{app_id}">'
             "在 App Store 購買</a></main></body></html>"
         )
         content = gen_app_decision_cards._page_content(
             source,
-            "aim990plus",
+            "wordmate",
             app_id,
             False,
             "zh-Hant",
@@ -26548,16 +26546,16 @@ class GeneratorTests(unittest.TestCase):
             return_value=[],
         ) as links:
             hub = gen_hubs.build_localized_hub(
-                "aim990plus",
+                "countdaysnow",
                 "zh-Hant",
-                {"tw": frozenset({gen_hubs.APPSTORE["aim990plus"]})},
+                {"tw": frozenset({gen_hubs.APPSTORE["countdaysnow"]})},
             )
-        links.assert_called_once_with("aim990plus", "zh-Hant", required=False)
+        links.assert_called_once_with("countdaysnow", "zh-Hant", required=False)
         # The App name comes from the reviewed localized copy, which carries
         # locale-native store names; assert the hub title composition rather
         # than pinning one release's wording.
         localized_name, _ = gen_hubs.localized_page_copy(
-            "aim990plus", "zh-Hant"
+            "countdaysnow", "zh-Hant"
         )
         self.assertIn(
             f"<title>{localized_name} · 可能適合的原因</title>",
@@ -26566,26 +26564,28 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("<h2>可能適合的原因</h2>", hub)
         self.assertIn(
             'href="https://open.cait518.cc/ios-app-guide/'
-            'zh-Hant/aim990plus.html">閱讀完整指南</a>',
+            'zh-Hant/countdaysnow.html">閱讀完整指南</a>',
             hub,
         )
-        self.assertIn("https://apps.apple.com/tw/app/id6792483140", hub)
+        self.assertIn(
+            f"https://apps.apple.com/tw/app/id{gen_hubs.APPSTORE['countdaysnow']}", hub
+        )
         self.assertNotIn("/zh-Hant/answers/", hub)
 
     def test_topic_hub_rejects_answer_slug_owned_by_another_app(self):
-        collision = queries.ALL["aim990"][0]
+        collision = queries.ALL["wordmate"][0]
         slug = gen_hubs.slugify(collision)
         with tempfile.TemporaryDirectory() as directory, mock.patch.dict(
             queries.ALL,
-            {"aim990plus": [collision]},
+            {"wordmatelite": [collision]},
         ):
             pages = Path(directory)
             localized = pages / "en-US" / "answers" / f"{slug}.html"
             root = pages / "answers" / f"{slug}.html"
             localized.parent.mkdir(parents=True)
             root.parent.mkdir()
-            wrong_id = gen_hubs.APPSTORE["aim990"]
-            right_id = gen_hubs.APPSTORE["aim990plus"]
+            wrong_id = gen_hubs.APPSTORE["wordmate"]
+            right_id = gen_hubs.APPSTORE["wordmatelite"]
             source = (
                 "<head><title>Colliding answer</title></head>"
                 f'<a class="cta" href="https://apps.apple.com/app/id{wrong_id}">'
@@ -26598,14 +26598,14 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(
                     [],
                     gen_hubs.localized_answer_links(
-                        "aim990plus",
+                        "wordmatelite",
                         "en-US",
                         required=False,
                     ),
                 )
                 self.assertNotIn(
                     f"/answers/{slug}.html",
-                    gen_hubs.build_hub("aim990plus"),
+                    gen_hubs.build_hub("wordmatelite"),
                 )
 
                 owned = (
@@ -26623,14 +26623,14 @@ class GeneratorTests(unittest.TestCase):
                         )
                     ],
                     gen_hubs.localized_answer_links(
-                        "aim990plus",
+                        "wordmatelite",
                         "en-US",
                         required=False,
                     ),
                 )
                 self.assertIn(
                     f"/answers/{slug}.html",
-                    gen_hubs.build_hub("aim990plus"),
+                    gen_hubs.build_hub("wordmatelite"),
                 )
 
     def test_topic_hub_main_writes_localized_pages_and_complete_sitemap(self):

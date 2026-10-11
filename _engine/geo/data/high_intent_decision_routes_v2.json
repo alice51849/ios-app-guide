@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 54,
-    "app_keys_sha256": "3786f09134e91389a8d8dcc9285b95117c93ad2926495ca3412cd576cd4474b6",
-    "copy_sha256": "29aa93130937d19e9fc6bfbf55eda684d0b904a742e107f365b7944f5719836e",
+    "expected_app_count": 53,
+    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
+    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -153,43 +153,6 @@
         }
       },
       "conversion_contract": "aim990"
-    },
-    {
-      "app_key": "aim990plus",
-      "route_slug": "exam-decisions-under-listening-pressure",
-      "intent_type": "problem_aware",
-      "primary": true,
-      "keyword_refs": [
-        0,
-        1,
-        2
-      ],
-      "locales": {
-        "en-US": {
-          "language": "en",
-          "market": "United States",
-          "culture_route": "US-based English learners who commute or study between shifts often need short offline listening and reading sessions instead of a scheduled classroom block.",
-          "query": "How can I practice clear listening and reading decisions under English exam pressure offline?",
-          "buyer_problem": "Exam practice can collapse into passive repetition when the real difficulty is choosing quickly under pressure. The purchase question is whether a focused offline trainer fits repeated sessions better than another broad course.",
-          "decision_rule": "Favor concentrated decision practice when timing and attention are the limiting factors. Favor instruction-led coursework when the learner still needs foundational explanations before repeated exam-style work.",
-          "workflow_checks": [
-            "Can a session be completed during a commute without depending on connectivity?",
-            "Does the practice require an active choice rather than passive listening alone?",
-            "Can the learner repeat difficult material without a recurring billing decision?"
-          ],
-          "alternative_lens": "Compare a comprehensive language course for grammar instruction and live feedback. Compare free sample tests when only occasional format checks are needed.",
-          "verify_before_install": [
-            "Confirm that the current exercise scope matches the target exam section.",
-            "Use official exam sources for rules, dates, and score interpretation."
-          ],
-          "evidence_refs": [
-            "summary.en",
-            "feature.0",
-            "feature.1",
-            "feature.2"
-          ]
-        }
-      }
     },
     {
       "app_key": "battai",

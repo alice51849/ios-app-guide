@@ -227,15 +227,15 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
                 "ar-SA/answers/offline-exam-practice.html"
             ),
             "ar-SA",
-            "aim990plus",
+            "aim990",
         )
         discovery._validate_guide_url(
             (
                 "https://open.cait518.cc/ios-app-guide/"
-                "ar-SA/aim990plus.html"
+                "ar-SA/aim990.html"
             ),
             "ar-SA",
-            "aim990plus",
+            "aim990",
         )
 
     def test_guide_url_rejects_another_apps_product_fallback(self) -> None:
@@ -246,7 +246,7 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
                     "ar-SA/scanto.html"
                 ),
                 "ar-SA",
-                "aim990plus",
+                "aim990",
             )
 
     def test_store_url_fails_closed_without_a_provider_token(self) -> None:

@@ -101,7 +101,6 @@ SITUATIONS: dict[str, str] = {
     "tripplanet": "kids",
     # adult learning / exams
     "aim990": "learning",
-    "aim990plus": "learning",
     "dailymate": "learning",
     "dailymatelite": "learning",
     "wordmate": "learning",

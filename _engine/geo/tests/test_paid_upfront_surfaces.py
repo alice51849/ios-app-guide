@@ -175,14 +175,6 @@ class PaidUpfrontSurfaces(unittest.TestCase):
                 self.assertIn("does not certify", lead.group(1))
                 self.assertNotIn("guarantee", lead.group(1).casefold())
 
-    def test_aim990plus_has_native_adult_timed_loop_and_limits(self):
-        _, source = self.rendered("ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html")
-        for required in ("8問", "20問", "15分", "630問", "大人", "有料ダウンロード", "保証", "ETS"):
-            self.assertIn(required, source)
-        self.assertNotIn("Build calm, accurate decisions", source)
-        self.assertNotIn(">best offline English listening", source)
-        self.assertNotIn("無料枠の上限を比べ", source)
-
     def test_hours_tag_native_answers_do_not_keep_english_fallback(self):
         for locale in ("zh-Hant", "ko"):
             _, source = self.rendered(f"{locale}/answers/best-app-to-track-where-my-money-goes-and-save-more.html")

@@ -31,6 +31,11 @@ PERMANENTLY_RETIRED_APPS = {
         "app_id": "6787344033",
         "name": "Zafe",
     },
+    # 2026-10-10 Caitlyn 要求下架並移除 Aim990 Plus（App Store 已不公開、ASC 回 404）。
+    "aim990plus": {
+        "app_id": "6792483140",
+        "name": "Aim990 Plus",
+    },
 }
 from build_pages_i18n import pricing_text_for  # noqa: E402
 from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402

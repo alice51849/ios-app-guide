@@ -300,7 +300,7 @@ PRIVACY_FACTS = (
 )
 
 # Test-prep apps may describe practice, never an outcome.
-SCORE_CAVEAT_APPS = frozenset({"aim990", "aim990plus"})
+SCORE_CAVEAT_APPS = frozenset({"aim990"})
 SCORE_CAVEAT = " Practice drills and study plans only — no test score is promised."
 
 # Claims this catalog cannot support for any app: the artwork is generated and
@@ -9134,7 +9134,6 @@ def build_sitemap_index():
     maps.extend([
         agent_product_feed.SITEMAP_RELATIVE.as_posix(),
         high_intent_decision_routes.SITEMAP_RELATIVE.as_posix(),
-        "sitemap_aim990plus.xml",
         "sitemap_maskmyfile.xml",
         "sitemap_orphans.xml",
     ])

@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 10,
-  "roster_digest": "16d04a12e96be1443ff8aa1f552532b90c49b0ed0e5c0b1eacb8dfd63b7f3af0",
+  "revision": 11,
+  "roster_digest": "15b66ce58723f2f232a1fb7fabb382ec541c6c97925cbc351815601e8a3bde9d",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -11,10 +11,6 @@
     "aim990": {
       "app_id": "6784974530",
       "name": "Aim990"
-    },
-    "aim990plus": {
-      "app_id": "6792483140",
-      "name": "Aim990 Plus"
     },
     "battai": {
       "app_id": "6802423998",

@@ -22293,6 +22293,14 @@ class GeneratorTests(unittest.TestCase):
             (retired_app_dir / "index.html").write_text(
                 '<a href="https://apps.apple.com/app/id6792483140">x</a>', encoding="utf-8"
             )
+            retired_hub = localized / "hubs" / "aim990plus.html"
+            retired_hub.parent.mkdir(parents=True)
+            retired_hub.write_text(
+                '<a href="https://apps.apple.com/app/id6792483140">x</a>', encoding="utf-8"
+            )
+            (localized / "aim990plus.html").write_text(
+                '<a href="https://apps.apple.com/app/id6792483140">x</a>', encoding="utf-8"
+            )
             kept_app_dir = pages / "apps" / "aim990"
             kept_app_dir.mkdir(parents=True)
             (kept_app_dir / "index.html").write_text("kept", encoding="utf-8")
@@ -22396,6 +22404,8 @@ class GeneratorTests(unittest.TestCase):
             self.assertTrue((localized_alt / "gmoney-no-subscription.html").exists())
             self.assertFalse((localized / "zodira.html").exists())
             self.assertFalse((pages / "apps" / "aim990plus").exists())
+            self.assertFalse(retired_hub.exists())
+            self.assertFalse((localized / "aim990plus.html").exists())
             self.assertTrue((pages / "apps" / "aim990" / "index.html").exists())
             self.assertFalse(stale_roundup.exists())
             self.assertFalse(unlisted_answer.exists())
@@ -22449,7 +22459,7 @@ class GeneratorTests(unittest.TestCase):
                 "snapport-private-alternative",
                 (localized_alt / "index.html").read_text(encoding="utf-8"),
             )
-            self.assertEqual(3, stats["removed_unlisted_pages"])  # +1：apps/aim990plus 子樹
+            self.assertEqual(5, stats["removed_unlisted_pages"])  # +3：apps/aim990plus 子樹、語系 App 頁、語系 hub
             self.assertEqual(3, stats["removed_unlisted_answers"])  # +1：根答案的譯本在隔離前一併移除
             self.assertEqual(1, stats["removed_stale_roundups"])
             self.assertEqual(1, stats["removed_sitemap_urls"])

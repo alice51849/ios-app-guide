@@ -1441,11 +1441,23 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
     # 它們整頁都屬於那支 App，live_app_guard 無法只拿掉商店連結而保留頁面，
     # 留著會讓 quarantine 在 "Unresolved non-live App Store ID" 失敗（2026-10-11 aim990plus）。
     # 只限 PERMANENTLY_RETIRED_APPS；暫時查不到的 App 不動，免得可用性抖動刪掉頁面。
+    # 同理，各語系的 App 頁／指南／hub／story 也整頁屬於它，原本在隔離之後才刪，
+    # 會先讓隔離在 ar-SA/aim990plus.html 等頁失敗；永久退役款改在隔離前就移除。
     for key in PERMANENTLY_RETIRED_APPS:
         app_dir = pages / "apps" / key
         if app_dir.is_dir() and not app_dir.is_symlink():
             stats["removed_unlisted_pages"] += sum(1 for _ in app_dir.rglob("*.html"))
             shutil.rmtree(app_dir)
+        for locale_dir in locales:
+            for owned in (
+                locale_dir / f"{key}.html",
+                locale_dir / "guides" / f"{key}.html",
+                locale_dir / "hubs" / f"{key}.html",
+                locale_dir / "stories" / f"{key}.html",
+            ):
+                if owned.is_file() and not owned.is_symlink():
+                    owned.unlink()
+                    stats["removed_unlisted_pages"] += 1
 
     if root_alt.is_dir():
         for legacy_dir in root_alt.iterdir():

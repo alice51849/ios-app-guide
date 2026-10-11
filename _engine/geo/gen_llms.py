@@ -30,6 +30,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import agent_product_feed  # noqa: E402
+import android_play  # noqa: E402
 import app_decision_matrix  # noqa: E402
 import app_install_decision_routes  # noqa: E402
 import app_video_lessons  # noqa: E402
@@ -632,6 +633,9 @@ def app_line(key, comps, live_keys):
     persona = _persona_pain_line(key)
     if persona:
         line += f"\n{persona}"
+    android = android_play.llms_line(key)
+    if android:
+        line += f"\n{android}"
     return line
 
 

@@ -1,0 +1,515 @@
+{
+ "schema": "lumi.android-live-snapshot/v1",
+ "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
+ "source_generated": "2026-10-11T14:27:05+0800",
+ "count": 24,
+ "content_sha256": "98e7d7f6c018b93705729c6f5cdc3d2425bc1b7a17e40634eff108925592b090",
+ "apps": {
+  "aibriefpack": {
+   "ios_app_id": "6791658210",
+   "ios_name": "AI Brief",
+   "android_folder": "31_AIBrief",
+   "package": "com.alice51849.AIBriefPack",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "AI Brief",
+     "short_description": "Turn screenshots, files and notes into one clear brief for any AI assistant"
+    },
+    "zh-TW": {
+     "title": "AI Brief",
+     "short_description": "把截圖、檔案與筆記整理成任何 AI 都能看懂的清晰摘要"
+    }
+   }
+  },
+  "aim990": {
+   "ios_app_id": "6784974530",
+   "ios_name": "Aim990",
+   "android_folder": "29_Aim990",
+   "package": "com.alice51849.aim990",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Aim990: Fix English Weak Spots",
+     "short_description": "TOEIC L&R diagnosis in 8 min"
+    },
+    "zh-TW": {
+     "title": "Aim990：英文弱點教練",
+     "short_description": "多益聽讀診斷與30天計畫"
+    }
+   }
+  },
+  "cvdesk": {
+   "ios_app_id": "6781337213",
+   "ios_name": "CV Desk",
+   "android_folder": "16_CVDesk",
+   "package": "com.alice51849.cvdesk",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cvdesk",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "CV Desk: ATS Resume Builder",
+     "short_description": "Build ATS-safe resumes with an instant score and keyword tips"
+    },
+    "zh-TW": {
+     "title": "CV Desk ATS 履歷製作",
+     "short_description": "打造 ATS 安全履歷，即時評分與關鍵字建議"
+    }
+   }
+  },
+  "dailymate": {
+   "ios_app_id": "6790418321",
+   "ios_name": "DailyMate",
+   "android_folder": "26_DailyMate",
+   "package": "com.caitlyn.dailymate",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "DailyMate: Language Phrases",
+     "short_description": "Learn 8,400 everyday phrases in 47 languages, organized by topic and level"
+    },
+    "zh-TW": {
+     "title": "DailyMate：用句子學語言",
+     "short_description": "47 種語言、8,400 句生活會話，旅遊、工作、日常情境都用得上，還能聽發音"
+    }
+   }
+  },
+  "gmoney": {
+   "ios_app_id": "6755782939",
+   "ios_name": "G+Money",
+   "android_folder": "15_GMoney",
+   "package": "com.caitlai.globi",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "G+Money",
+     "short_description": "Travel budget and expense tracker with a converter for 50 world currencies"
+    },
+    "zh-TW": {
+     "title": "G+Money",
+     "short_description": "出國旅遊與日常記帳，搭配 50 種貨幣匯率換算，依旅程記錄花費、設每日預算"
+    }
+   }
+  },
+  "gmoneylite": {
+   "ios_app_id": "6793436548",
+   "ios_name": "G+Money Lite",
+   "android_folder": "32_GMoneyLite",
+   "package": "com.alice51849.GMoneyLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "G+Money Lite",
+     "short_description": "Log travel expenses in local currency and see them in your home currency"
+    },
+    "zh-TW": {
+     "title": "G+Money Lite",
+     "short_description": "出國旅遊記帳：用當地幣別記一筆，馬上換算成台幣，每日預算和旅程花費一目了然"
+    }
+   }
+  },
+  "hourstag": {
+   "ios_app_id": "6754218117",
+   "ios_name": "HoursTag: Hours to Buy",
+   "android_folder": "13_HoursTag",
+   "package": "com.caitlyn.hourstag",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "HoursTag: Hours to Buy",
+     "short_description": "See every price as hours of work and stop impulse spending before it starts"
+    },
+    "zh-TW": {
+     "title": "HoursTag：價格換工時",
+     "short_description": "輸入價格就知道要工作幾小時，標記必要、想要、衝動，看清消費習慣、少點衝動購物"
+    }
+   }
+  },
+  "hourstaglite": {
+   "ios_app_id": "6794039979",
+   "ios_name": "HoursTag Lite",
+   "android_folder": "33_HoursTagLite",
+   "package": "com.alice51849.hourstaglite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_casefold",
+   "copy": {
+    "en-US": {
+     "title": "HoursTag Lite",
+     "short_description": "Turn prices into hours of work and tag each buy as a need, want or impulse"
+    },
+    "zh-TW": {
+     "title": "HoursTag Lite",
+     "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，讓每筆花費更有意識"
+    }
+   }
+  },
+  "lumibopomofo": {
+   "ios_app_id": "6773017109",
+   "ios_name": "Lumi Bopomofo",
+   "android_folder": "05_LumiBopomofo",
+   "package": "com.alice51849.LumiZhuyin",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Bopomofo",
+     "short_description": "Kids learn Bopomofo (Zhuyin) Chinese sounds with feeding, tracing and tone games"
+    },
+    "zh-TW": {
+     "title": "Lumi注音星球",
+     "short_description": "幼兒學注音好幫手：餵食小夥伴、描寫筆順、聲調與拼音遊戲，輕鬆認讀 37 個符號"
+    }
+   }
+  },
+  "lumibopomofopro": {
+   "ios_app_id": "6775773117",
+   "ios_name": "Lumi Bopomofo Pro",
+   "android_folder": "06_LumiBopomofoPro",
+   "package": "com.alice51849.LumiZhuyinPro",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Bopomofo Pro: Zhuyin",
+     "short_description": "Learn Zhuyin (Bopomofo) through play: sounds, blending, tones and tracing"
+    },
+    "zh-TW": {
+     "title": "Lumi注音星球 Pro",
+     "short_description": "用遊戲學注音：ㄅㄆㄇ發音、拼讀、聲調與筆順，幼兒到小一都適用"
+    }
+   }
+  },
+  "lumiletters": {
+   "ios_app_id": "6778748533",
+   "ios_name": "Lumi Letters",
+   "android_folder": "01_LumiLettersLite",
+   "package": "com.alice51849.LumiLettersLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Letters Lite: ABC Kids",
+     "short_description": "Trace the ABCs, hear letter sounds and play phonics games for kids ages 3 to 7"
+    },
+    "zh-TW": {
+     "title": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
+     "short_description": "給3到7歲孩子的英文字母啟蒙：跟著筆順描寫大小寫、聽字母發音，在星球闖關中玩自然發音"
+    }
+   }
+  },
+  "lumiletterspro": {
+   "ios_app_id": "6778491147",
+   "ios_name": "Lumi Letters Pro",
+   "android_folder": "02_LumiLettersPro",
+   "package": "com.alice51849.LumiLetters",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Letters Pro: ABC Phonics",
+     "short_description": "Phonics for kids 3–6: hear letter sounds, trace the ABCs and practice reading"
+    },
+    "zh-TW": {
+     "title": "Lumi 字母星球 Pro：ABC啟蒙",
+     "short_description": "3–6 歲英文自然發音啟蒙：聽字母音、描寫大小寫、看圖拼讀，還能列印今日學習單"
+    }
+   }
+  },
+  "lumimath": {
+   "ios_app_id": "6778269699",
+   "ios_name": "Lumi Math Planet",
+   "android_folder": "03_LumiMathPlanet",
+   "package": "com.alice51849.LumiMathFree",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Math Planet: Explorer",
+     "short_description": "Space adventure math for kids: counting, adding, patterns and logic puzzles"
+    },
+    "zh-TW": {
+     "title": "Lumi數學星球：探索版",
+     "short_description": "幼兒數學遊戲：數數、加減法、找規律、邏輯推理，答對一題就點亮一顆星球的太空冒險"
+    }
+   }
+  },
+  "lumimathpro": {
+   "ios_app_id": "6776958488",
+   "ios_name": "Lumi Math Pro",
+   "android_folder": "04_LumiMathPro",
+   "package": "com.alice51849.LumiMathPlanet",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Math Pro: Kids Numbers",
+     "short_description": "Space adventure math for kids 5–8: logic puzzles, patterns and number sense"
+    },
+    "zh-TW": {
+     "title": "Lumi 數學星球：兒童數學",
+     "short_description": "5–8 歲兒童數學冒險：邏輯推理、找規律、加減乘除，還有弱項練習與列印學習單"
+    }
+   }
+  },
+  "lumimission": {
+   "ios_app_id": "6779750237",
+   "ios_name": "Lumi Mission Planet",
+   "android_folder": "07_LumiMissionPlanet",
+   "package": "com.alice51849.lumimissionlite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_casefold",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Mission Planet: Routines",
+     "short_description": "Turn brushing, meals, bedtime and tidy-up into fun missions with star rewards"
+    },
+    "zh-TW": {
+     "title": "Lumi 任務星球：生活習慣養成",
+     "short_description": "刷牙、吃飯、睡覺、收玩具都變成好玩的任務，用集點貼紙陪孩子養成好習慣"
+    }
+   }
+  },
+  "lumimissionpro": {
+   "ios_app_id": "6779745474",
+   "ios_name": "Lumi Mission Planet Pro",
+   "android_folder": "08_LumiMissionPlanetPro",
+   "package": "com.lumi.mochimissionplanet",
+   "play_url": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "store_title_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Mission Planet Pro",
+     "short_description": "Turn teeth brushing, meals and bedtime into happy missions for kids aged 3 to 7"
+    },
+    "zh-TW": {
+     "title": "Lumi 任務星球 Pro：好習慣養成遊戲",
+     "short_description": "把刷牙、吃飯、收玩具和睡前準備變成小任務，用貼紙獎勵陪 3 到 7 歲孩子養成好習慣"
+    }
+   }
+  },
+  "scanto": {
+   "ios_app_id": "6779977651",
+   "ios_name": "ScanTo Pro",
+   "android_folder": "11_ScanToPro",
+   "package": "com.alice51849.OfflineScannerPro",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "ScanTo Pro: Offline PDF & OCR",
+     "short_description": "Scan documents into searchable PDFs, fully offline and private"
+    },
+    "zh-TW": {
+     "title": "ScanTo Pro: 離線PDF掃描",
+     "short_description": "把文件掃描成可搜尋的 PDF，完全離線、保護隱私"
+    }
+   }
+  },
+  "snapport": {
+   "ios_app_id": "6780575828",
+   "ios_name": "Snapport",
+   "android_folder": "14_Snapport",
+   "package": "com.snapport.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.snapport.app",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Snapport: Passport & ID Photos",
+     "short_description": "Create passport and ID photos at home with sizing templates and print sheets"
+    },
+    "zh-TW": {
+     "title": "Snapport: 護照證件照",
+     "short_description": "在家製作護照證件照,內建多地區尺寸範本與列印排版"
+    }
+   }
+  },
+  "sononote": {
+   "ios_app_id": "6782139553",
+   "ios_name": "Sono Note",
+   "android_folder": "18_SonoNote",
+   "package": "com.caitlyn.clearnotevoice",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Sono Note",
+     "short_description": "Voice notes turned into summaries, tasks and follow-up emails, privately"
+    },
+    "zh-TW": {
+     "title": "Sono Note",
+     "short_description": "語音筆記自動轉成摘要、待辦事項與跟進郵件"
+    }
+   }
+  },
+  "tripbee": {
+   "ios_app_id": "6787754435",
+   "ios_name": "TripBee Pro: Trip Planner",
+   "android_folder": "24_TripBeePro",
+   "package": "com.alice51849.Tripbee",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "TripBee Pro: Trip Organizer",
+     "short_description": "Unlimited trips, family packing lists and sending trips to another phone"
+    },
+    "zh-TW": {
+     "title": "TripBee Pro：行程整理管家",
+     "short_description": "無限旅程、全家打包清單，還能把旅程傳到另一支手機"
+    }
+   }
+  },
+  "tripbeelite": {
+   "ios_app_id": "6791299610",
+   "ios_name": "TripBee Lite",
+   "android_folder": "30_TripBeeLite",
+   "package": "com.alice51849.TripbeeLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "TripBee Lite: Travel Plan",
+     "short_description": "Itinerary & Smart Packing List"
+    },
+    "zh-TW": {
+     "title": "TripBee Lite：旅程規劃",
+     "short_description": "旅行行程・行李打包清單"
+    }
+   }
+  },
+  "wifiaid": {
+   "ios_app_id": "6790467886",
+   "ios_name": "WiFi Aid",
+   "android_folder": "27_WiFiAid",
+   "package": "com.alice51849.WiFiAid",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "WiFi Aid",
+     "short_description": "Diagnose Wi-Fi problems with independent DNS and TCP checks"
+    },
+    "zh-TW": {
+     "title": "WiFi Aid",
+     "short_description": "用獨立的 DNS、TCP 檢測，診斷 Wi-Fi 問題"
+    }
+   }
+  },
+  "wordmate": {
+   "ios_app_id": "6789917808",
+   "ios_name": "Wordmate: Learn 44 Languages",
+   "android_folder": "25_Wordmate",
+   "package": "com.caitlyn.flashdot",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Wordmate: Learn 44 Languages",
+     "short_description": "Build useful vocabulary in 44 languages with focused lessons and pronunciation"
+    },
+    "zh-TW": {
+     "title": "Wordmate：44 種語言背單字",
+     "short_description": "用 14 個生活主題背單字，44 種語言任你選，附發音朗讀與進度追蹤"
+    }
+   }
+  },
+  "wordmatelite": {
+   "ios_app_id": "6797601720",
+   "ios_name": "Wordmate Lite",
+   "android_folder": "35_WordmateLite",
+   "package": "com.alice51849.WordmateLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Wordmate Lite: Vocabulary",
+     "short_description": "Build your vocabulary five words at a time in one-minute sessions, offline"
+    },
+    "zh-TW": {
+     "title": "Wordmate Lite 每天五個單字",
+     "short_description": "一次五個單字、一分鐘練完，可以聽發音，離線也能背，輕鬆養成每天背單字的習慣"
+    }
+   }
+  }
+ },
+ "unmapped": [],
+ "baseline_first_seen": "2026-10-11T14:26:56+0800"
+}

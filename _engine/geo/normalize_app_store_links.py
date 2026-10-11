@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import urllib.parse
 
+import android_play
 from app_store_storefronts import (
     normalize_app_store_campaign_url,
     validated_app_store_url,
@@ -155,6 +156,14 @@ def main() -> None:
     print(
         "App Store links: "
         + ", ".join(f"{key}={value}" for key, value in stats.items())
+    )
+    # Google Play counterparts ride on the same pass: guide and per-app hub
+    # pages get a Play link next to the App Store CTA of every app in the
+    # verified Android snapshot (android_play.py; idempotent, self-healing).
+    android = android_play.inject_tree(args.pages)
+    print(
+        "Google Play links: "
+        + ", ".join(f"{key}={value}" for key, value in android.items())
     )
 
 

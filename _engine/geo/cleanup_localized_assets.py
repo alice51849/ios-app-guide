@@ -1437,6 +1437,15 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         for alternative in root_alt.glob(f"{key}-*.html"):
             alternative.unlink()
             stats["removed_alternatives"] += 1
+    # 永久退役 App 的整個 apps/<key>/ 子樹（決策頁、App 主頁、App sitemap）也一起移除：
+    # 它們整頁都屬於那支 App，live_app_guard 無法只拿掉商店連結而保留頁面，
+    # 留著會讓 quarantine 在 "Unresolved non-live App Store ID" 失敗（2026-10-11 aim990plus）。
+    # 只限 PERMANENTLY_RETIRED_APPS；暫時查不到的 App 不動，免得可用性抖動刪掉頁面。
+    for key in PERMANENTLY_RETIRED_APPS:
+        app_dir = pages / "apps" / key
+        if app_dir.is_dir() and not app_dir.is_symlink():
+            stats["removed_unlisted_pages"] += sum(1 for _ in app_dir.rglob("*.html"))
+            shutil.rmtree(app_dir)
 
     if root_alt.is_dir():
         for legacy_dir in root_alt.iterdir():
@@ -1450,12 +1459,24 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         path.name for path in root_alt.glob("*.html") if path.name != "index.html"
     }
     root_answers = pages / "answers"
+    removed_root_answers = []
     if root_answers.is_dir():
         for page in root_answers.glob("*.html"):
             if page.name != "index.html" and owns_unlisted_app(
                 page, unlisted_ids, inactive_names
             ):
                 page.unlink()
+                removed_root_answers.append(page.name)
+                stats["removed_unlisted_answers"] += 1
+    # 這些根答案的各語系譯本稍後也會因「根頁不存在」被當孤兒移除，但那一步在
+    # live_app_guard 隔離掃描之後；譯本整頁都在推已下架的 App，隔離無法只拿掉連結，
+    # 會先在 "Unresolved non-live App Store ID" 失敗（2026-10-11 aim990plus，108 頁）。
+    # 所以在隔離前就一併移除同名譯本（與之後的孤兒清理結果相同，只是提早）。
+    for name in removed_root_answers:
+        for locale_dir in locales:
+            translated = locale_dir / "answers" / name
+            if translated.is_file() and not translated.is_symlink():
+                translated.unlink()
                 stats["removed_unlisted_answers"] += 1
     stats["redirected_retired_answers"] = (
         reconcile_retired_answer_redirects(pages, locales)

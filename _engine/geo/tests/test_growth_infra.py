@@ -22288,6 +22288,14 @@ class GeneratorTests(unittest.TestCase):
                 "accurate pricing", encoding="utf-8"
             )
             (localized / "zodira.html").write_text("unlisted", encoding="utf-8")
+            retired_app_dir = pages / "apps" / "aim990plus" / "decision" / "l" / "ar-SA"
+            retired_app_dir.mkdir(parents=True)
+            (retired_app_dir / "index.html").write_text(
+                '<a href="https://apps.apple.com/app/id6792483140">x</a>', encoding="utf-8"
+            )
+            kept_app_dir = pages / "apps" / "aim990"
+            kept_app_dir.mkdir(parents=True)
+            (kept_app_dir / "index.html").write_text("kept", encoding="utf-8")
             localized_guides = localized / "guides"
             localized_guides.mkdir()
             localized_guide = localized_guides / "snapport.html"
@@ -22339,6 +22347,11 @@ class GeneratorTests(unittest.TestCase):
                 f"https://apps.apple.com/app/id{unlisted_id}",
                 encoding="utf-8",
             )
+            translated_unlisted = localized_answers / "unlisted.html"
+            translated_unlisted.write_text(
+                f'<a href="https://apps.apple.com/app/id{unlisted_id}">x</a>',
+                encoding="utf-8",
+            )
             unlisted_schema_answer = pages / "answers" / "astrology.html"
             unlisted_schema_answer.write_text(
                 '<script type="application/ld+json">'
@@ -22382,8 +22395,11 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertTrue((localized_alt / "gmoney-no-subscription.html").exists())
             self.assertFalse((localized / "zodira.html").exists())
+            self.assertFalse((pages / "apps" / "aim990plus").exists())
+            self.assertTrue((pages / "apps" / "aim990" / "index.html").exists())
             self.assertFalse(stale_roundup.exists())
             self.assertFalse(unlisted_answer.exists())
+            self.assertFalse(translated_unlisted.exists())
             self.assertFalse(unlisted_schema_answer.exists())
             self.assertIn(
                 "/alternatives/snapport-no-subscription.html",
@@ -22433,8 +22449,8 @@ class GeneratorTests(unittest.TestCase):
                 "snapport-private-alternative",
                 (localized_alt / "index.html").read_text(encoding="utf-8"),
             )
-            self.assertEqual(2, stats["removed_unlisted_pages"])
-            self.assertEqual(2, stats["removed_unlisted_answers"])
+            self.assertEqual(3, stats["removed_unlisted_pages"])  # +1：apps/aim990plus 子樹
+            self.assertEqual(3, stats["removed_unlisted_answers"])  # +1：根答案的譯本在隔離前一併移除
             self.assertEqual(1, stats["removed_stale_roundups"])
             self.assertEqual(1, stats["removed_sitemap_urls"])
 

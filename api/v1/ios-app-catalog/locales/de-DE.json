@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -123,45 +123,6 @@
         "currency": "EUR",
         "formatted_price": "Kostenlos",
         "storefront_url": "https://apps.apple.com/de/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: Englisch-Test",
-      "summary": "Aim990 Plus ist eine umfassende Trainingsumgebung für Erwachsene, die englische Hör- und Leseaufgaben auch unter Zeitdruck sicher bearbeiten möchten. Der klare Tagesablauf beginnt mit 8 Aufwärmfragen, führt durch ein Pressure Set mit 20 Fragen in 15 Minuten und endet mit Mistake Replay. Dort bearbeitest du genau die falsch beantworteten Fragen sofort erneut, statt Fehler nur in einer langen Ergebnisliste zu sehen.",
-      "category": "kids",
-      "search_terms": [
-        "hören",
-        "lesen",
-        "wortschatz",
-        "diktat",
-        "testsimulation",
-        "zeitdruck",
-        "fehleranalyse",
-        "aussprache",
-        "grammatik",
-        "prüfung"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/de/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "6.99",
-        "currency": "EUR",
-        "formatted_price": "6,99 €",
-        "storefront_url": "https://apps.apple.com/de/app/id6792483140"
       }
     },
     {
@@ -485,9 +446,7 @@
         "FFT",
         "RTA",
         "oktavband",
-        "kalibrierung",
-        "spektrumanalysator",
-        "lärmmessgerät"
+        "kalibrierung"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -542,8 +501,7 @@
         "offline",
         "geldverwalten",
         "reise",
-        "fx",
-        "urlaubsbudget"
+        "fx"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -715,9 +673,7 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan",
-        "abholschild flughafen",
-        "konzert schild"
+        "Fan"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1252,8 +1208,7 @@
         "Aufgabenplan",
         "Schlafenszeit",
         "Tagesaufgaben",
-        "Morgen",
-        "abendroutine kinder"
+        "Morgen"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1514,9 +1469,7 @@
         "export",
         "pdf",
         "tabelle",
-        "daten",
-        "one pager",
-        "präsentation erstellen"
+        "daten"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1675,8 +1628,7 @@
         "generator",
         "erstellen",
         "wlan",
-        "visitenkarte",
-        "qr code prüfen"
+        "visitenkarte"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2099,8 +2051,7 @@
         "Missionen",
         "Belohnungen",
         "Urlaub",
-        "Erinnerungen",
-        "reisen mit kindern"
+        "Erinnerungen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2245,8 +2196,7 @@
         "restaurieren",
         "rauschen",
         "fokus",
-        "4k",
-        "unscharf schärfen"
+        "4k"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2267,6 +2217,50 @@
         "currency": "EUR",
         "formatted_price": "Kostenlos",
         "storefront_url": "https://apps.apple.com/de/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: KI-Nutzung Tracker",
+      "summary": "Mitten in der Arbeit ans KI-Limit gestoßen? UsageNow zeigt dir direkt auf dem Home-Bildschirm, wie viel von jedem KI-Plan noch übrig ist und wann er genau zurückgesetzt wird, und warnt dich, bevor dein Limit aufgebraucht ist.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "entwickler",
+        "usage",
+        "verbrauch",
+        "kontingent",
+        "token",
+        "quota",
+        "zähler",
+        "widget",
+        "reset",
+        "countdown",
+        "llm",
+        "api"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos",
+        "storefront_url": "https://apps.apple.com/de/app/id6818607603"
       }
     },
     {
@@ -2331,8 +2325,7 @@
         "ip",
         "tls",
         "tcp",
-        "web",
-        "wlan kein internet"
+        "web"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

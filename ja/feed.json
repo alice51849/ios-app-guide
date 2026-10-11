@@ -1,6 +1,6 @@
 {
   "_owned_feed": {
-    "date_modified": "2026-10-04T02:43:57Z",
+    "date_modified": "2026-10-11T13:38:17Z",
     "notification_eligible": true,
     "schema": "lumi.owned-app-feeds/v2"
   },
@@ -64,30 +64,6 @@
     },
     {
       "_owned_app": {
-        "app_key": "aim990plus",
-        "app_store_cta_label": "App Storeで表示",
-        "app_store_id": "6792483140",
-        "content_digest": "0ddcdc0dbf855c380a8d443888c3cadd1e0886cb087ac5532c66f05eb2805b7e",
-        "independent_ranking": false,
-        "one_time_option": true,
-        "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
-        "purchase_label": "有料ダウンロード",
-        "purchase_model": "paid_upfront",
-        "source_locale": "ja"
-      },
-      "content_html": "<p>ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。</p><p>有料ダウンロード</p><p><a href=\"https://apps.apple.com/jp/app/id6792483140?pt=118326163&amp;ct=geo_pick&amp;mt=8\">App Storeで表示</a></p><p>これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。</p>",
-      "content_text": "ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。\n\n有料ダウンロード\n\nApp Storeで表示: https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=geo_pick&mt=8\n\nこれは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
-      "date_modified": "2026-09-12T04:40:18Z",
-      "date_published": "2026-09-12T04:40:18Z",
-      "external_url": "https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "id": "urn:lumi:app-store:6792483140:locale:ja",
-      "language": "ja",
-      "summary": "ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。",
-      "title": "Aim990 Plus：英語模試・時間制限",
-      "url": "https://open.cait518.cc/ios-app-guide/ja/aim990plus.html"
-    },
-    {
-      "_owned_app": {
         "app_key": "battai",
         "app_store_cta_label": "App Storeで表示",
         "app_store_id": "6802423998",
@@ -133,6 +109,30 @@
       "summary": "使い続けたくなる電卓。数字の背景まで覚えているからです。",
       "title": "CalDaily 電卓とテーマ",
       "url": "https://open.cait518.cc/ios-app-guide/ja/caldaily.html"
+    },
+    {
+      "_owned_app": {
+        "app_key": "claudeusagemini",
+        "app_store_cta_label": "App Storeで表示",
+        "app_store_id": "6818607603",
+        "content_digest": "3b4460abeeb6cb7b56d3b49d15775796a9f3a6a60a654dd02012f7a124c22afb",
+        "independent_ranking": false,
+        "one_time_option": true,
+        "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+        "purchase_label": "無料で開始・買い切りで解除",
+        "purchase_model": "free_with_lifetime_unlock",
+        "source_locale": "ja"
+      },
+      "content_html": "<p>作業の途中でAIの上限に達して手が止まる。そんな悩みはUsageNowで終わりにしましょう。各AIプランの残りとリセットされる正確な時刻を、ホーム画面でいつでも確認でき、使い切る前にお知らせもします。</p><p>無料で開始・買い切りで解除</p><p><a href=\"https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8\">App Storeで表示</a></p><p>これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。</p>",
+      "content_text": "作業の途中でAIの上限に達して手が止まる。そんな悩みはUsageNowで終わりにしましょう。各AIプランの残りとリセットされる正確な時刻を、ホーム画面でいつでも確認でき、使い切る前にお知らせもします。\n\n無料で開始・買い切りで解除\n\nApp Storeで表示: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8\n\nこれは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "date_modified": "2026-10-11T13:38:17Z",
+      "date_published": "2026-10-11T13:38:17Z",
+      "external_url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "id": "urn:lumi:app-store:6818607603:locale:ja",
+      "language": "ja",
+      "summary": "作業の途中でAIの上限に達して手が止まる。そんな悩みはUsageNowで終わりにしましょう。各AIプランの残りとリセットされる正確な時刻を、ホーム画面でいつでも確認でき、使い切る前にお知らせもします。",
+      "title": "UsageNow：AI使用量トラッカー",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html"
     },
     {
       "_owned_app": {

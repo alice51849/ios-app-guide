@@ -8,7 +8,7 @@
   "csv_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv",
   "schema_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-10-04",
+  "dateModified": "2026-10-11",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,7 +18,7 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2589,
+  "row_count": 2588,
   "app_count": 53,
   "locale_count": 49,
   "official_locale_count": 50,
@@ -97,9 +97,9 @@
   "app_keys": [
     "aibriefpack",
     "aim990",
-    "aim990plus",
     "battai",
     "caldaily",
+    "claudeusagemini",
     "countdaysnow",
     "cvdesk",
     "cyca",
@@ -177,5 +177,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:a220a7c574b0052bfa6ad57df21339c17355c1bb8648d88a584d608c58d07475"
+  "content_digest": "sha256:837cb8ad65bb26bd92f0cdf26b325f112d9d0140450f9ce0141ecf8a0e84193d"
 }

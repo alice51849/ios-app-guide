@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -125,47 +125,6 @@
         "currency": "EUR",
         "formatted_price": "Brezplačno",
         "storefront_url": "https://apps.apple.com/si/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: Test angleščine",
-      "summary": "Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za odrasle na napravah iPhone in iPad. Glavna vadba ima jasen potek: 8 vprašanj za ogrevanje, nato Pressure Set z 20 nalogami in omejitvijo 15 minut, na koncu pa Mistake Replay, kjer se vrnete samo k odgovorom, ki so vam povzročili težave.",
-      "category": "kids",
-      "search_terms": [
-        "izpit",
-        "poslušanje",
-        "branje",
-        "besedišče",
-        "narek",
-        "testi",
-        "vprašanja",
-        "vaje",
-        "zvok",
-        "angleščina",
-        "priprava",
-        "simulacija"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/si/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "6.99",
-        "currency": "EUR",
-        "formatted_price": "6,99 €",
-        "storefront_url": "https://apps.apple.com/si/app/id6792483140"
       }
     },
     {
@@ -2291,6 +2250,50 @@
         "currency": "EUR",
         "formatted_price": "Brezplačno",
         "storefront_url": "https://apps.apple.com/si/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Poraba UI in limiti",
+      "summary": "Vam je omejitev UI pošla sredi dela? UsageNow pokaže, koliko vam ostane pri vsakem paketu UI in kdaj natanko se ponastavi, kar na začetnem zaslonu, in vas opozori, preden vam omejitve zmanjka.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "razvijalec",
+        "usage",
+        "tracker",
+        "kvota",
+        "števec",
+        "token",
+        "pripomoček",
+        "widget",
+        "reset",
+        "quota",
+        "meter",
+        "monitor"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/si/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sl-SI/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno",
+        "storefront_url": "https://apps.apple.com/si/app/id6818607603"
       }
     },
     {

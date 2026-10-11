@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "es-MX",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -126,45 +126,6 @@
         "currency": "MXN",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/mx/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: Examen de inglés",
-      "summary": "Fortalece tu comprensión del inglés con sesiones creadas para mantener la concentración incluso cuando el tiempo cuenta. Aim990 Plus está dirigido a personas adultas que buscan una práctica seria en iPhone o iPad, ya sea durante el trayecto, en un descanso o desde casa.",
-      "category": "kids",
-      "search_terms": [
-        "comprensión auditiva",
-        "lectura",
-        "simulador",
-        "vocabulario",
-        "dictado",
-        "escucha",
-        "gramática",
-        "examen",
-        "práctica",
-        "audio"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/mx/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "129",
-        "currency": "MXN",
-        "formatted_price": "$129.00",
-        "storefront_url": "https://apps.apple.com/mx/app/id6792483140"
       }
     },
     {
@@ -1616,6 +1577,8 @@
         "price": "0",
         "currency": "MXN",
         "formatted_price": "Gratis",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/mx/app/id6781808054"
       }
     },
@@ -2285,6 +2248,50 @@
         "currency": "MXN",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/mx/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Monitor de uso IA",
+      "summary": "¿Te topas con el límite de IA a media tarea? UsageNow te muestra cuánto te queda de cada plan de IA y cuándo se restablece exactamente, directo en tu pantalla de inicio, y te avisa antes de que se agote.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "desarrollador",
+        "usage",
+        "tracker",
+        "consumo",
+        "cuota",
+        "contador",
+        "token",
+        "widget",
+        "reinicio",
+        "llm",
+        "meter",
+        "api"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/mx/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/mx/app/id6818607603"
       }
     },
     {

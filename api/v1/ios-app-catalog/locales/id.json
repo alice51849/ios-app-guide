@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "id",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -124,43 +124,6 @@
         "currency": "IDR",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/id/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: Tes Inggris",
-      "summary": "Latih kemampuan bahasa Inggris dalam kondisi yang terasa nyata: waktu terbatas, rangkaian soal panjang, dan tuntutan untuk tetap teliti. Aim990 Plus dirancang bagi pelajar dan pekerja dewasa yang ingin membangun daya tahan menyimak serta membaca di iPhone dan iPad, bukan sekadar mengerjakan soal satu per satu tanpa arah.",
-      "category": "kids",
-      "search_terms": [
-        "latihan menyimak",
-        "pemahaman bacaan",
-        "simulasi ujian",
-        "bahasa inggris",
-        "bank soal tes",
-        "kosakata",
-        "tryout",
-        "timer"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/id/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/id/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "119000",
-        "currency": "IDR",
-        "formatted_price": "Rp 119ribu",
-        "storefront_url": "https://apps.apple.com/id/app/id6792483140"
       }
     },
     {
@@ -2285,6 +2248,49 @@
         "currency": "IDR",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/id/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Pelacak Pemakaian AI",
+      "summary": "Kena batas AI di tengah pekerjaan? UsageNow menampilkan sisa kuota setiap paket AI Anda dan kapan tepatnya diatur ulang, langsung di Layar Utama, dan memperingatkan Anda sebelum kuota habis.",
+      "category": "productivity",
+      "search_terms": [
+        "code",
+        "dev",
+        "developer",
+        "usage",
+        "tracker",
+        "kuota",
+        "penggunaan",
+        "penghitung",
+        "token",
+        "widget",
+        "reset",
+        "quota",
+        "meter",
+        "monitor"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/id/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/id/app/id6818607603"
       }
     },
     {

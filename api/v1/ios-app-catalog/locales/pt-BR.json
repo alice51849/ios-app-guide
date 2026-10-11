@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -127,45 +127,6 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "storefront_url": "https://apps.apple.com/br/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: Simulado inglês",
-      "summary": "Desenvolva a compreensão do inglês com sessões que trabalham foco, ritmo e resistência. Aim990 Plus foi criado para adultos que querem praticar com seriedade no iPhone ou iPad, seja no transporte, no intervalo do trabalho ou em casa.",
-      "category": "kids",
-      "search_terms": [
-        "compreensão auditiva",
-        "leitura",
-        "simulado",
-        "vocabulário",
-        "ditado",
-        "escuta",
-        "gramática",
-        "prova",
-        "exercícios",
-        "áudio"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/br/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "39.9",
-        "currency": "BRL",
-        "formatted_price": "R$ 39,90",
-        "storefront_url": "https://apps.apple.com/br/app/id6792483140"
       }
     },
     {
@@ -315,8 +276,7 @@
         "docx",
         "cartaapresentação",
         "vaga",
-        "profissional",
-        "currículo ats"
+        "profissional"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -455,8 +415,7 @@
         "japonês",
         "coreano",
         "iniciante",
-        "áudio",
-        "guia de conversação"
+        "áudio"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -729,8 +688,7 @@
         "letras",
         "fila",
         "palco",
-        "aviso",
-        "placa aeroporto"
+        "aviso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -890,8 +848,7 @@
         "pequenos",
         "idioma",
         "mandarin",
-        "chinese",
-        "mandarim crianças"
+        "chinese"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1420,10 +1377,7 @@
         "compras",
         "calendário",
         "widget",
-        "organização",
-        "lista de tarefas",
-        "checklist",
-        "to do list"
+        "organização"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1443,8 +1397,8 @@
         "price": "0",
         "currency": "BRL",
         "formatted_price": "Grátis",
-        "rating_value": 4.0,
-        "rating_count": 2,
+        "rating_value": 3.0,
+        "rating_count": 3,
         "storefront_url": "https://apps.apple.com/br/app/id6785004775"
       }
     },
@@ -1501,9 +1455,7 @@
         "margem lucro",
         "rentabilidade cliente",
         "rateio de custos",
-        "análise cruzada",
-        "despesas do projeto",
-        "receitas e despesas"
+        "análise cruzada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1704,8 +1656,7 @@
         "barras",
         "boleto",
         "wifi",
-        "cartão",
-        "verificar qr code"
+        "cartão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2058,8 +2009,7 @@
         "tela bloqueada",
         "criado-mudo",
         "fuso horário",
-        "24 horas",
-        "relógio flip"
+        "24 horas"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2098,8 +2048,7 @@
         "estatísticas",
         "lembrete",
         "registro",
-        "progresso",
-        "timer de foco"
+        "progresso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2137,8 +2086,7 @@
         "missões",
         "recompensas",
         "férias",
-        "memórias",
-        "jogos para viagem de carro"
+        "memórias"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2304,6 +2252,50 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "storefront_url": "https://apps.apple.com/br/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Monitor de uso de IA",
+      "summary": "Bateu o limite da IA no meio do trabalho? O UsageNow mostra quanto resta de cada plano de IA e exatamente quando ele reinicia, direto na Tela de Início, e ainda avisa você antes de acabar.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "desenvolvedor",
+        "usage",
+        "tracker",
+        "consumo",
+        "cota",
+        "contador",
+        "token",
+        "widget",
+        "reset",
+        "llm",
+        "meter",
+        "sessão"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6818607603"
       }
     },
     {

@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație simplă de listă de făcut pe iPhone fără abonament"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ro/index.html"
-modified: "2026-10-05"
+modified: "2026-10-11"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivi
 - Fără reclame
 - Apple Watch
 - App Store · Gratuit
+- ★ 5.0/5 · 1
 
 [Descarcă Mochi din App Store →](https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "uk",
-  "dateModified": "2026-10-05",
-  "content_digest": "71e52c3c7e9e5c6e00e93bdc9fdd716109060d3b50e0e2c34ed0ef5d48420140",
-  "generation_digest": "3733d2daafb2924fc347b09b4aa93a7c8a53482e89464b55cc53243cb5135f21",
+  "dateModified": "2026-10-11",
+  "content_digest": "b573651b0a7911499f3b1ad4a928afacf77c94df9e444df1fbc044850215ab57",
+  "generation_digest": "7d7cd1587dcbd146513d95e364ded40194ce1d667114e9613d86e1a79a3af69b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -349,59 +349,6 @@
       "publisher_disclosure": "Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
       "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "uk:aim990plus",
-      "locale": "uk",
-      "app_key": "aim990plus",
-      "app_name": "Aim990 Plus: Тест англійської",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "Aim990 Plus: Тест англійської — Практика в режимі таймера | iOS App",
-      "decision_context": "Aim990 Plus — тренажер для дорослих, яким важливо впевнено розуміти англійське мовлення й тексти в умовах обмеженого часу. Застосунок допомагає не просто виконувати завдання, а зберігати концентрацію, обирати відповідь у заданому темпі та відразу перетворювати помилки на матеріал для наступного тренування. Основний маршрут утворює цілісну сесію. Спочатку ви проходите розминку з 8 запитань, далі — Pressure Set із 20 запитань на 15 хвилин, а потім Mistake Replay із повторенням саме тих завдань, які спричинили труднощі. Такий ритм поєднує спокійний старт, реалістичне навантаження та свідоме закріплення без обіцянок конкретного результату. Усередині 630 оригінальних завдань: рівно по 90 завдань у кожній із частин 1–7 і 90 різних фотографій. Тренуйте аудіювання й читання, розпізнавання деталей на зображеннях, короткі репліки, діалоги та роботу з текстами. Вбудований словник зі 150 слів, диктанти й налаштування швидкості допомагають точково розвивати сприйняття мовлення. Для озвучення використовується голос, доступний на вашому пристрої. Обирайте міні-, половинний або повний пробний формат відповідно до вільного часу. Аналіз слабких місць показує, яким типам завдань варто приділити увагу, а історія прогресу допомагає бачити регулярність і зміни з часом. Ви можете повернутися до помилок, повторити складні слова та продовжити з доречного етапу на iPhone або iPad. Це платне завантаження, у якому всі функції доступні відразу. Тут немає покупок у застосунку, підписок, платного екрана, реклами чи облікового запису. Застосунок працює офлайн, не потребує сервера, не відстежує дії та не використовує аналітику. Ваші відповіді й прогрес залишаються на пристрої. Aim990 Plus — незалежний неофіційний застосунок, не пов’язаний з ETS і не схвалений нею. TOEIC є торговельною маркою ETS.",
-      "category": "kids",
-      "category_label": "Діти та навчання",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "Платне завантаження",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Офлайн",
-        "Без облікового запису"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Діти та навчання",
-        "Платне завантаження",
-        "Офлайн",
-        "Без облікового запису",
-        "App Store · 6,99 USD"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/aim990plus.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/uk/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/uk/aim990plus.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Faim990plus%2Fdecision%2Fl%2Fuk%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
-      "app_store_id": "6792483140",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Завантажте Aim990 Plus: Тест англійської з App Store",
-      "storefront_facts": {
-        "price": "6.99",
-        "currency": "USD",
-        "formatted_price": "6,99 USD"
-      },
-      "guide_cta_label": "Прочитати повний довідник",
-      "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
-      "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
-      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1837,7 +1784,8 @@
         "Безкоштовно для початку · разове розблокування",
         "Без реклами",
         "Apple Watch",
-        "App Store · Безкоштовно"
+        "App Store · Безкоштовно",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/uk/index.html",
@@ -1850,7 +1798,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "USD",
-        "formatted_price": "Безкоштовно"
+        "formatted_price": "Безкоштовно",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.",
@@ -2882,6 +2832,67 @@
       "publisher_disclosure": "Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "uk:claudeusagemini",
+      "locale": "uk",
+      "app_key": "claudeusagemini",
+      "app_name": "UsageNow: Ліміти ШІ та витрата",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "UsageNow: Ліміти ШІ та витрата — Уперлися в ліміт AI посеред задачі? | iOS App",
+      "decision_context": "Уперлися в ліміт AI посеред задачі? UsageNow показує, скільки лишилося в кожному AI-тарифі і коли саме буде скидання, просто на екрані «Додому», і попереджає заздалегідь, до того як ліміт закінчиться. УСІ ЛІМІТИ З ОДНОГО ПОГЛЯДУ Claude: 5-годинний сеанс і тижневі ліміти, зокрема тижневі обмеження для окремих моделей ChatGPT Codex: 5-годинне і тижневе вікна GitHub Copilot: преміум-запити, чат і автодоповнення коду Gemini: денні квоти запитів для кожної моделі Живий зворотний відлік до кожного скидання і точний час скидання у звичному для вас форматі СПОВІЩЕННЯ, ПОКИ ЛІМІТ НЕ ЗАКІНЧИВСЯ Створіть власні сповіщення: оберіть 5-годинний ліміт, тижневий ліміт або всі ліміти, а тоді введіть потрібний вам відсоток, наприклад 90 або 98. Додавайте скільки завгодно. Кожне сповіщення приходить один раз для кожного ліміту й циклу, тож замкнений екран лишається тихим. Увімкніть сповіщення про скидання, щоб дізнатися саме в ту мить, коли ліміт знову доступний. ВІДЖЕТИ, ЯКІ ВМІЮТЬ БІЛЬШЕ Гортайте всі свої облікові записи просто у віджеті Торкніться віджета, щоб будь-коли отримати свіжі цифри Віджети для екрана «Додому» і замкненого екрана всіх розмірів, а також ускладнення для Apple Watch УСІ ОБЛІКОВІ ЗАПИСИ У ВАШОМУ ПОРЯДКУ Робочі й особисті, Pro і Max поруч. Сортуйте за скиданням 5-годинного ліміту, скиданням тижневого ліміту, найбільшим чи найменшим використанням, назвою або сервісом чи перетягуйте записи у власному порядку. СКРІЗЬ, ДЕ ВИ ПРАЦЮЄТЕ iPhone, iPad і Apple Watch. ПРИВАТНІСТЬ В ОСНОВІ Ви входите на власній сторінці входу кожного сервісу. Дані входу залишаються у Зв’язці ключів вашого пристрою, а UsageNow звертається лише до самих сервісів. Немає сервера UsageNow, не треба створювати обліковий запис, немає стеження. ВАШОЮ МОВОЮ Повністю перекладено 50 мовами, а дати й час записано так, як прийнято у вашому регіоні. Мову можна будь-коли змінити в Параметрах. СПЕРШУ СПРОБУЙТЕ ВСЕ Запустіть у застосунку безкоштовний 24-годинний пробний період і користуйтеся всіма функціями, зокрема віджетами. Щоб і далі користуватися UsageNow та його віджетами після пробного періоду, відкрийте UsageNow Pro одноразовою покупкою. Без підписки. UsageNow є незалежним застосунком і не пов’язаний з Anthropic, OpenAI, GitHub, Microsoft або Google. Claude, ChatGPT, Codex, GitHub Copilot і Gemini є товарними знаками відповідних власників. Питання чи ідеї? hourstag.app@gmail.com",
+      "category": "productivity",
+      "category_label": "Продуктивність",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Безкоштовно для початку · разове розблокування",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Віджет",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Продуктивність",
+        "Безкоштовно для початку · разове розблокування",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
+        "Apple Watch",
+        "App Store · Безкоштовно"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/claudeusagemini.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/uk/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/uk/claudeusagemini.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fclaudeusagemini%2Fdecision%2Fl%2Fuk%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
+      "app_store_id": "6818607603",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6818607603",
+      "app_store_url": "https://apps.apple.com/ua/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Завантажте UsageNow: Ліміти ШІ та витрата з App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
+      "guide_cta_label": "Прочитати повний довідник",
+      "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
+      "source_persona_query": "app to see Claude and Codex usage limits and reset times on iPhone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

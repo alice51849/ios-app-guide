@@ -17,14 +17,6 @@
       "record_count": 2,
       "route_slug": "toeic-part-five-time-pressure"
     },
-    "aim990plus": {
-      "intent_type": "problem_aware",
-      "native_locales": [
-        "en-US"
-      ],
-      "record_count": 1,
-      "route_slug": "exam-decisions-under-listening-pressure"
-    },
     "battai": {
       "intent_type": "problem_aware",
       "native_locales": [
@@ -41,6 +33,15 @@
       ],
       "record_count": 1,
       "route_slug": "save-name-search-calculation-history"
+    },
+    "claudeusagemini": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "see-claude-and-codex-limits-before-they-run-out"
     },
     "countdaysnow": {
       "intent_type": "workflow",
@@ -438,9 +439,9 @@
     }
   },
   "coverage": {
-    "abstained_pairs": 2585,
+    "abstained_pairs": 2584,
     "abstention_reasons": {
-      "missing_curated_native_copy": 2585
+      "missing_curated_native_copy": 2584
     },
     "app_coverage_percent": 100.0,
     "candidate_app_locale_pairs": 2650,
@@ -455,23 +456,23 @@
     "mapped_apps": 53,
     "missing_route_app_keys": [],
     "missing_route_apps": 0,
-    "native_locale_pair_coverage_percent": 2.45,
-    "native_locale_records": 65,
+    "native_locale_pair_coverage_percent": 2.49,
+    "native_locale_records": 66,
     "native_locales_with_records": 5,
     "official_locales_considered": 50,
     "primary_routes": 53
   },
   "current_inventory": {
-    "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
+    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
+    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
-    "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
+    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
+    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
@@ -674,29 +675,29 @@
       "emitted": 0
     },
     "zh-Hant": {
-      "abstained": 45,
-      "emitted": 8
+      "abstained": 44,
+      "emitted": 9
     }
   },
   "publication": {
-    "abstained_pairs": 2585,
+    "abstained_pairs": 2584,
     "deployment_eligible": true,
-    "expected_route_pages": 65,
+    "expected_route_pages": 66,
     "fallback_records": 0,
-    "feed_items": 65,
+    "feed_items": 66,
     "managed_owner": "high_intent_decision_routes",
-    "sitemap_urls": 65,
+    "sitemap_urls": 66,
     "state": "exact"
   },
   "quality": {
     "all_gates_passed": true,
     "gates": {
       "complete_app_store_cta": {
-        "detail": "65/65 URLs use ordered pt/ct/mt=8",
+        "detail": "66/66 URLs use ordered pt/ct/mt=8",
         "passed": true
       },
       "cultural_route": {
-        "detail": "65/65 emitted records",
+        "detail": "66/66 emitted records",
         "passed": true
       },
       "current_inventory_coverage": {
@@ -704,7 +705,7 @@
         "passed": true
       },
       "exact_release_cardinality": {
-        "detail": "65 routes; 53 apps; 2650 pairs; 2585 abstentions",
+        "detail": "66 routes; 53 apps; 2650 pairs; 2584 abstentions",
         "passed": true
       },
       "intent_diversity": {
@@ -712,15 +713,15 @@
         "passed": true
       },
       "inventory_bound_claims": {
-        "detail": "261 evidence references resolved from inventory",
+        "detail": "267 evidence references resolved from inventory",
         "passed": true
       },
       "native_copy_or_abstain": {
-        "detail": "65 emitted; 2585 explicit abstentions; 0 fallbacks",
+        "detail": "66 emitted; 2584 explicit abstentions; 0 fallbacks",
         "passed": true
       },
       "non_template": {
-        "detail": "65/65 unique signatures; max Jaccard=0.263",
+        "detail": "66/66 unique signatures; max Jaccard=0.263",
         "passed": true
       },
       "non_thin": {
@@ -732,7 +733,7 @@
         "passed": true
       },
       "truthful_publisher_disclosure": {
-        "detail": "65/65 records disclose developer authorship",
+        "detail": "66/66 records disclose developer authorship",
         "passed": true
       },
       "versioned_app_coverage": {
@@ -748,7 +749,7 @@
     ],
     "minimum_content_units": 200
   },
-  "release_contract_digest": "9360a3c82e721e92db37d9eff11b5a243b43dccff42a9730c25cb28e3afd6398",
+  "release_contract_digest": "8a10d8554ed076525fb90f5e3dcb33acbb8fefdab0250bc414130d345b682919",
   "release_state": "exact",
   "schema_version": 1
 }

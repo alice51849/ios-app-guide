@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "pa-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -132,44 +132,6 @@
         "currency": "INR",
         "formatted_price": "ਮੁਫ਼ਤ",
         "storefront_url": "https://apps.apple.com/in/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: ਅੰਗਰੇਜ਼ੀ ਟੈਸਟ",
-      "summary": "Aim990 Plus ਬਾਲਗ ਸਿੱਖਿਆਰਥੀਆਂ ਲਈ ਅੰਗਰੇਜ਼ੀ ਸੁਣਨ ਅਤੇ ਪੜ੍ਹਨ ਦੀ ਡੂੰਘੀ ਕਸਰਤ ਹੈ। ਇਸ ਦਾ ਮੁੱਖ ਕ੍ਰਮ ਸਮੇਂ ਦੇ ਦਬਾਅ ਹੇਠ ਵੀ ਧਿਆਨ ਬਣਾਈ ਰੱਖਣ ਦੀ ਆਦਤ ਪਾਉਂਦਾ ਹੈ: ਪਹਿਲਾਂ 8 ਸਵਾਲਾਂ ਦਾ Warm-up, ਫਿਰ 15 ਮਿੰਟਾਂ ਵਿੱਚ 20 ਸਵਾਲਾਂ ਦਾ Pressure Set ਅਤੇ ਅਖੀਰ ਵਿੱਚ Mistake Replay। ਹਰ ਪੜਾਅ ਸਾਫ਼ ਤਰੀਕੇ ਨਾਲ ਸਜਾਇਆ ਗਿਆ ਹੈ, ਇਸ ਲਈ ਬੇਲੋੜੇ ਮੀਨੂ ਵਿੱਚ ਉਲਝੇ ਬਿਨਾਂ ਕਸਰਤ ਸ਼ੁਰੂ ਕਰਕੇ ਅਗਲੇ ਸੈਸ਼ਨ ਦਾ ਟੀਚਾ ਚੁਣਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
-      "category": "kids",
-      "search_terms": [
-        "ਅੰਗਰੇਜ਼ੀ ਪ੍ਰੀਖਿਆ",
-        "ਸੁਣਨ ਹੁਨਰ",
-        "ਪੜ੍ਹਨ ਸਮਝ",
-        "ਮੌਕ ਟੈਸਟ",
-        "ਸ਼ਬਦਾਵਲੀ",
-        "ਡਿਕਟੇਸ਼ਨ",
-        "ਸਮਾਂਬੱਧ ਸਵਾਲ",
-        "ਗਲਤੀ ਸੁਧਾਰ",
-        "ਵਿਆਕਰਨ ਕਵਿਜ਼"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "599",
-        "currency": "INR",
-        "formatted_price": "₹ 599",
-        "storefront_url": "https://apps.apple.com/in/app/id6792483140"
       }
     },
     {
@@ -2338,6 +2300,51 @@
         "currency": "INR",
         "formatted_price": "ਮੁਫ਼ਤ",
         "storefront_url": "https://apps.apple.com/in/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: AI ਵਰਤੋਂ ਟ੍ਰੈਕਰ",
+      "summary": "ਕੰਮ ਦੇ ਵਿਚਕਾਰ ਹੀ AI ਦੀ ਸੀਮਾ ਖਤਮ? UsageNow ਤੁਹਾਡੀ ਹੋਮ ਸਕ੍ਰੀਨ 'ਤੇ ਹੀ ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਹਰ AI ਪਲਾਨ ਵਿੱਚ ਕਿੰਨਾ ਬਾਕੀ ਹੈ ਅਤੇ ਉਹ ਠੀਕ ਕਦੋਂ ਰੀਸੈੱਟ ਹੋਵੇਗਾ, ਅਤੇ ਸੀਮਾ ਖਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਚੇਤਾਵਨੀ ਵੀ ਦਿੰਦਾ ਹੈ।",
+      "category": "productivity",
+      "search_terms": [
+        "usage",
+        "tracker",
+        "code",
+        "dev",
+        "developer",
+        "quota",
+        "token",
+        "widget",
+        "ਟੋਕਨ",
+        "ਕੋਟਾ",
+        "ਵਿਜੇਟ",
+        "ਰੀਸੈੱਟ",
+        "ਹਫ਼ਤਾਵਾਰੀ",
+        "ਬਾਕੀ",
+        "rate",
+        "timer"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ",
+        "storefront_url": "https://apps.apple.com/in/app/id6818607603"
       }
     },
     {

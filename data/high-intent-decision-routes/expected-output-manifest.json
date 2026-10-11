@@ -1,11 +1,11 @@
 {
-  "abstained_pairs": 2585,
+  "abstained_pairs": 2584,
   "app_count": 53,
   "candidate_app_locale_pairs": 2650,
   "creative_count": 53,
   "current_inventory": {
-    "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
+    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
+    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "83efebcc54a53323b281d1b88e4c595e50880547915472a9f3daab2783df3743",
+      "generated_sha256": "8b723cdcd1999cac641d5a2757dc1771960363a4f6aa7f0ed3e1a1b40b4396a8",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "d0652a85a74f07d8e1329543d5a3c23b41cfa46756d9c7b63104a41424817474",
+      "generated_sha256": "fb48dd06f71463b97a6f98e8bc2dac72c7810a99f4c3b351a625a5a57f5df31e",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -49,11 +49,6 @@
       "relative_path": "en-US/decide/aim990/toeic-part-five-time-pressure.html"
     },
     {
-      "generated_sha256": "3695b77bd3d9d54d8a85a11fa3b34c619ea486e945dda4684ec6c71406fc5131",
-      "kind": "route_html",
-      "relative_path": "en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html"
-    },
-    {
       "generated_sha256": "15f9463a85afbe6e83f242c865b933e00e614e40dd0734e0ce73d1786945d3af",
       "kind": "route_html",
       "relative_path": "en-US/decide/battai/decide-when-an-iphone-battery-needs-service.html"
@@ -62,6 +57,11 @@
       "generated_sha256": "2f2bb3787181cdba5fab121207a570cbe7d9df55741b98b8d98873f179bcfeca",
       "kind": "route_html",
       "relative_path": "en-US/decide/caldaily/save-name-search-calculation-history.html"
+    },
+    {
+      "generated_sha256": "e726100cc9ddd49a77c49b667b4cff02f4c96c3d984575ae29e273f714ce38c2",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
     {
       "generated_sha256": "517c0827f637f6806fd5b59df2a79563f4731f2e2066b7f0d7b7aa13505ab886",
@@ -319,7 +319,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "e695046a3ef34cd5b9559eb899bb2bed230bc3700890cea509028f768df0089f",
+      "generated_sha256": "6851c8097673ea592f7db7bac6b01e5fa4e5f6dfe8bed9e229aab8bd5fa44ae7",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -327,6 +327,11 @@
       "generated_sha256": "71ecd59b9a769d79980ee064fe61309e688248c5c9bb5f54fbb5e57f59aac0d8",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
+    },
+    {
+      "generated_sha256": "b27f6c7774d2c7b0a2356ec944e5dbe3f6e6093c97362fb19666a0503f9d5245",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
     {
       "generated_sha256": "5cebc9ccb1aa3ccd4a79ff1e1bba51f8579db40fd603312374e1d7e13c925f4a",
@@ -366,17 +371,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "a18f96c0d605878d29474d93eac2eba3f7107db292acada440135b59c96d498b",
-    "copy_sha256": "453983fa912585341eff26d99f36dd6d403cdd9e9b79e103f74638dce8659ee7",
+    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
+    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "bee5af68c126169aad8c896302adf443bbcd3d62f074719a4abb2971e73c7a30",
+  "manifest_digest": "aadf2cb3bf4e45abaf0a71e6f9547aa04e193a401641faa8dd9b24508c4742f1",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "9360a3c82e721e92db37d9eff11b5a243b43dccff42a9730c25cb28e3afd6398",
+  "release_contract_digest": "8a10d8554ed076525fb90f5e3dcb33acbb8fefdab0250bc414130d345b682919",
   "release_state": "exact",
-  "route_count": 65,
+  "route_count": 66,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -430,23 +435,6 @@
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/aim990/toeic-part-five-time-pressure.html"
     },
     {
-      "app_key": "aim990plus",
-      "app_store_id": "6792483140",
-      "app_store_url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_ask&mt=8",
-      "campaign_token": "geo_ask",
-      "content_type": "problem_aware",
-      "creative_digest": "d5cbe29e9a3c154e3213ee4cacf421dd2403b541f785c819bf81f3eea5054338",
-      "creative_id": "aim990plus:exam-decisions-under-listening-pressure:problem_aware",
-      "intent_type": "problem_aware",
-      "locale": "en-US",
-      "output_sha256": "3695b77bd3d9d54d8a85a11fa3b34c619ea486e945dda4684ec6c71406fc5131",
-      "record_digest": "e552c3a3513e88ae4bf5c049c359ad7205beef88df72c957f8f754b0b9dd0428",
-      "relative_path": "en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html",
-      "route_id": "en-US:aim990plus:exam-decisions-under-listening-pressure",
-      "route_slug": "exam-decisions-under-listening-pressure",
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html"
-    },
-    {
       "app_key": "battai",
       "app_store_id": "6802423998",
       "app_store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_ask&mt=8",
@@ -479,6 +467,23 @@
       "route_id": "en-US:caldaily:save-name-search-calculation-history",
       "route_slug": "save-name-search-calculation-history",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/caldaily/save-name-search-calculation-history.html"
+    },
+    {
+      "app_key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "app_store_url": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "23eda032482981fc384d64e3ec8b941a585910066f88256cb5e552f4ccaad310",
+      "creative_id": "claudeusagemini:see-claude-and-codex-limits-before-they-run-out:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "e726100cc9ddd49a77c49b667b4cff02f4c96c3d984575ae29e273f714ce38c2",
+      "record_digest": "f403cd2023bea1ef3304be7ea9490acdc24add41acac8972739b372cb340d4e1",
+      "relative_path": "en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html",
+      "route_id": "en-US:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "route_slug": "see-claude-and-codex-limits-before-they-run-out",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
     {
       "app_key": "countdaysnow",
@@ -1365,6 +1370,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
     {
+      "app_key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "app_store_url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "23eda032482981fc384d64e3ec8b941a585910066f88256cb5e552f4ccaad310",
+      "creative_id": "claudeusagemini:see-claude-and-codex-limits-before-they-run-out:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "b27f6c7774d2c7b0a2356ec944e5dbe3f6e6093c97362fb19666a0503f9d5245",
+      "record_digest": "472151fd2e301aa7e64890c32554391654a9fffef61b98a1cf87cdfa6cfe892e",
+      "relative_path": "zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html",
+      "route_id": "zh-Hant:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "route_slug": "see-claude-and-codex-limits-before-they-run-out",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
       "app_key": "cyca",
       "app_store_id": "6782251621",
       "app_store_url": "https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
@@ -1486,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "dece1d9e4ff9d6d4594b0d30b7d12493e8d641e32c4f988f72e132979ce890ee"
+  "source_contract_digest": "be11d11acc5ff25d1a6084788d9acfbe3dc2d61249c26162e4edeb107bdc03aa"
 }

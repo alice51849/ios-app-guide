@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "sv",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -122,46 +122,6 @@
         "currency": "SEK",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/se/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: Test i engelska",
-      "summary": "Aim990 Plus är en komplett träningsmiljö för vuxna som vill bli säkrare på att lyssna och läsa engelska när tiden är knapp. Dagens fokuserade flöde börjar med 8 uppvärmningsfrågor, fortsätter med ett Pressure Set på 20 frågor under 15 minuter och avslutas med Mistake Replay. Där får du direkt arbeta om frågorna du missade, i stället för att låta misstagen försvinna i ett långt resultatblad.",
-      "category": "kids",
-      "search_terms": [
-        "lyssna",
-        "läsning",
-        "ordförråd",
-        "diktamen",
-        "testsimulering",
-        "tidspress",
-        "felanalys",
-        "uttal",
-        "grammatik",
-        "prov",
-        "fokus"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/se/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/sv/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "79",
-        "currency": "SEK",
-        "formatted_price": "79,00 kr",
-        "storefront_url": "https://apps.apple.com/se/app/id6792483140"
       }
     },
     {
@@ -2297,6 +2257,50 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/se/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: AI-användning",
+      "summary": "Tar AI-gränsen slut mitt i en uppgift? UsageNow visar hur mycket som är kvar av varje AI-abonnemang och exakt när det återställs, direkt på hemskärmen, och varnar dig innan det tar slut.",
+      "category": "productivity",
+      "search_terms": [
+        "code",
+        "dev",
+        "utvecklare",
+        "usage",
+        "tracker",
+        "förbrukning",
+        "kvot",
+        "quota",
+        "mätare",
+        "token",
+        "widget",
+        "reset",
+        "meter",
+        "monitor",
+        "llm"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/se/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/sv/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/se/app/id6818607603"
       }
     },
     {

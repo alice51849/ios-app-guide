@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
-  "dateModified": "2026-10-05",
-  "content_digest": "71e52c3c7e9e5c6e00e93bdc9fdd716109060d3b50e0e2c34ed0ef5d48420140",
-  "generation_digest": "3733d2daafb2924fc347b09b4aa93a7c8a53482e89464b55cc53243cb5135f21",
+  "dateModified": "2026-10-11",
+  "content_digest": "b573651b0a7911499f3b1ad4a928afacf77c94df9e444df1fbc044850215ab57",
+  "generation_digest": "7d7cd1587dcbd146513d95e364ded40194ce1d667114e9613d86e1a79a3af69b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -348,59 +348,6 @@
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "ja:aim990plus",
-      "locale": "ja",
-      "app_key": "aim990plus",
-      "app_name": "Aim990 Plus",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "Aim990 Plus：英語の時間制限練習を8問の準備から始める",
-      "decision_context": "Aim990 Plus は、英語の基礎がある大人向けの有料ダウンロードです。8問の Warm-up → 20問・15分の Pressure Set → Mistake Replay で、時間内に解き、間違いを振り返る練習を繰り返せます。追加のアプリ内課金やサブスクリプションはありません。",
-      "category": "kids",
-      "category_label": "子ども・学習",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "有料ダウンロード",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account"
-      ],
-      "privacy_labels": [
-        "オフライン",
-        "アカウント不要"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "子ども・学習",
-        "有料ダウンロード",
-        "オフライン",
-        "アカウント不要",
-        "App Store · ¥1,000"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ja/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ja/aim990plus.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Faim990plus%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
-      "app_store_id": "6792483140",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "App Store で Aim990 Plus を入手 →",
-      "storefront_facts": {
-        "price": "1000",
-        "currency": "JPY",
-        "formatted_price": "¥1,000"
-      },
-      "guide_cta_label": "完全ガイドを読む",
-      "publisher_disclosure": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
-      "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -1846,7 +1793,8 @@
         "無料で開始・一度の購入でアンロック",
         "広告なし",
         "Apple Watch",
-        "App Store · 無料"
+        "App Store · 無料",
+        "★ 3.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ja/index.html",
@@ -1859,7 +1807,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "JPY",
-        "formatted_price": "無料"
+        "formatted_price": "無料",
+        "rating_value": 3.0,
+        "rating_count": 1
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
@@ -2891,6 +2841,67 @@
       "publisher_disclosure": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ja:claudeusagemini",
+      "locale": "ja",
+      "app_key": "claudeusagemini",
+      "app_name": "UsageNow：AI使用量トラッカー",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "UsageNow：AI使用量トラッカー — Claude・Codex・Copilot・Gemini残量 | iOS App",
+      "decision_context": "作業の途中でAIの上限に達して手が止まる。そんな悩みはUsageNowで終わりにしましょう。各AIプランの残りとリセットされる正確な時刻を、ホーム画面でいつでも確認でき、使い切る前にお知らせもします。 すべての上限をひと目で Claude：5時間のセッション上限と週間上限（モデル別の週間上限も含む） ChatGPT Codex：5時間枠と週間枠 GitHub Copilot：プレミアムリクエスト、チャット、コード補完 Gemini：モデルごとの1日あたりのリクエスト上限 リセットまでのカウントダウンに加えて、正確なリセット時刻をお住まいの地域の表記で表示 上限に届く前に、先にお知らせ 自分だけのアラートを作れます。5時間の上限、週間上限、またはすべての上限を選び、気になるパーセンテージ（90や98など）を入力するだけ。いくつでも追加できます。 アラートは上限ごと・サイクルごとに1回だけ届くので、ロック画面が通知だらけになることはありません。リセットアラートをオンにすれば、上限が戻った瞬間にわかります。 もっと使えるウィジェット ウィジェット上ですべてのアカウントをめくって確認 最新の数値が見たいときはウィジェットをタップして更新 ホーム画面とロック画面のウィジェットを全サイズで用意、Apple Watchのコンプリケーションにも対応 すべてのアカウントを、好きな順番で 仕事用と個人用、ProとMaxを並べて表示。5時間リセットが近い順、週間リセットが近い順、使用量の多い順・少ない順、名前順、サービス順で並べ替えたり、ドラッグして自由な順番にしたりできます。 どこで作業していても iPhone、iPad、Apple Watchで使えます。 プライバシーを最優先した設計 サインインは各サービス公式のログインページで行います。サインイン情報はデバイスのキーチェーンに保存され、UsageNowが通信するのは各サービスだけです。UsageNowのサーバはなく、アカウント登録もトラッキングも一切ありません。 あなたの言語で 50の言語に完全対応し、日付と時刻もお住まいの地域の書式で表示します。言語は設定からいつでも変更できます。 まずはすべて試せます アプリ内で24時間の無料トライアルを開始すれば、ウィジェットを含むすべての機能を使えます。トライアル終了後もUsageNowとウィジェットを使い続けるには、1回限りの購入でUsageNow Proのロックを解除してください。サブスクリプションはありません。 UsageNowは独立したアプリであり、Anthropic、OpenAI、GitHub、Microsoft、Googleとは提携していません。Claude、ChatGPT、Codex、GitHub Copilot、Geminiは各所有者の商標です。 ご質問やご要望はこちらまで：hourstag.app@gmail.com",
+      "category": "productivity",
+      "category_label": "生産性",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "追跡なし",
+        "プライベート／端末内"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ウィジェット",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "生産性",
+        "無料で開始・一度の購入でアンロック",
+        "追跡なし",
+        "プライベート／端末内",
+        "ウィジェット",
+        "Apple Watch",
+        "App Store · 無料"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/ja/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ja/claudeusagemini.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fclaudeusagemini%2Fdecision%2Fl%2Fja%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
+      "app_store_id": "6818607603",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6818607603",
+      "app_store_url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store で UsageNow：AI使用量トラッカー を入手",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
+      "guide_cta_label": "完全ガイドを読む",
+      "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
+      "source_persona_query": "app to see Claude and Codex usage limits and reset times on iPhone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

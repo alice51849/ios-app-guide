@@ -57,20 +57,6 @@
     },
     {
       "_lumi_route": {
-        "app_key": "aim990plus",
-        "campaign_token": "geo_ask",
-        "intent_type": "problem_aware",
-        "locale": "en-US",
-        "record_digest": "e552c3a3513e88ae4bf5c049c359ad7205beef88df72c957f8f754b0b9dd0428"
-      },
-      "id": "en-US:aim990plus:exam-decisions-under-listening-pressure",
-      "language": "en",
-      "summary": "Exam practice can collapse into passive repetition when the real difficulty is choosing quickly under pressure. The purchase question is whether a focused offline trainer fits repeated sessions better than another broad course.",
-      "title": "How can I practice clear listening and reading decisions under English exam pressure offline?",
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html"
-    },
-    {
-      "_lumi_route": {
         "app_key": "battai",
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
@@ -96,6 +82,20 @@
       "summary": "A correct result is still hard to trust later when the reason for the calculation is gone. The decision is whether saved context, naming, and retrieval matter enough to replace a disposable calculator tape.",
       "title": "Which iPhone calculator keeps named, searchable history for calculations I need to revisit?",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/caldaily/save-name-search-calculation-history.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "claudeusagemini",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "f403cd2023bea1ef3304be7ea9490acdc24add41acac8972739b372cb340d4e1"
+      },
+      "id": "en-US:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "language": "en",
+      "summary": "Each service shows usage on its own page, so the first sign of a limit is often the agent stopping mid-task. The decision is whether one tracker that puts Claude, Codex, Copilot and Gemini limits side by side, with reset countdowns and alerts at your own percentage, fits how you work.",
+      "title": "Which app warns me before my Claude or Codex usage limit runs out?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
     {
       "_lumi_route": {
@@ -824,6 +824,20 @@
       "summary": "單看剩餘電量無法說明長期健康狀況，但若畫面直接宣稱能讀取溫度、電壓、電流或循環次數，也可能製造不實的精準感；真正的選擇是能否把可觀察變化與使用者提供的資料清楚分層。",
       "title": "如何判斷 iPhone 電池是否該更換，又不被 App 無法直接量到的數值誤導？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "claudeusagemini",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "472151fd2e301aa7e64890c32554391654a9fffef61b98a1cf87cdfa6cfe892e"
+      },
+      "id": "zh-Hant:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "language": "zh-Hant",
+      "summary": "各服務的用量分散在各自的網頁，常常要等 AI 代理做到一半停下來，才發現額度已經見底。要判斷的是：把 Claude、Codex、Copilot 與 Gemini 的額度放在同一個畫面、附上重置倒數，並在你設定的百分比先提醒的工具，是否符合你的工作方式。",
+      "title": "有沒有 App 能在 Claude 或 Codex 額度用完前先提醒我？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
     },
     {
       "_lumi_route": {

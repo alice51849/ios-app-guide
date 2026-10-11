@@ -3,7 +3,7 @@
   <atom:id>https://open.cait518.cc/ios-app-guide/hu/feed.xml</atom:id>
   <atom:title>Alkalmazáskatalógus | iOS</atom:title>
   <atom:subtitle>Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.</atom:subtitle>
-  <atom:updated>2026-10-04T02:43:57Z</atom:updated>
+  <atom:updated>2026-10-11T13:38:17Z</atom:updated>
   <atom:author>
     <atom:name>Lumi Studio</atom:name>
   </atom:author>
@@ -32,16 +32,6 @@
     <lumi:record>{"app_key":"aim990","app_store_cta_label":"Megtekintés az App Store-ban","app_store_id":"6784974530","content_digest":"aaaf37ac92b01390f8b7d6ef75290911998da47c6a5a9a594bd652456beaf10d","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.","purchase_label":"Ingyenes kezdés · feloldás egyszeri vásárlással","purchase_model":"free_with_lifetime_unlock","source_locale":"hu"}</lumi:record>
   </atom:entry>
   <atom:entry>
-    <atom:id>urn:lumi:app-store:6792483140:locale:hu</atom:id>
-    <atom:title>Aim990 Plus: Angol próbateszt</atom:title>
-    <atom:summary>Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és olvasási gyakorló iPhone-ra és iPadre. A fő edzés tudatosan felépített: 8 bemelegítő kérdéssel indít, ezt követi a 20 feladatos, 15 perces Pressure Set, végül a Mistake Replay kizárólag azokhoz a válaszokhoz vezet vissza, amelyek bizonytalanságot okoztak.</atom:summary>
-    <atom:published>2026-09-12T04:40:18Z</atom:published>
-    <atom:updated>2026-09-12T04:40:18Z</atom:updated>
-    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/hu/aim990plus.html" />
-    <atom:content type="html">&lt;p&gt;Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és olvasási gyakorló iPhone-ra és iPadre. A fő edzés tudatosan felépített: 8 bemelegítő kérdéssel indít, ezt követi a 20 feladatos, 15 perces Pressure Set, végül a Mistake Replay kizárólag azokhoz a válaszokhoz vezet vissza, amelyek bizonytalanságot okoztak.&lt;/p&gt;&lt;p&gt;Fizetős letöltés&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/hu/app/id6792483140?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Megtekintés az App Store-ban&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.&lt;/p&gt;</atom:content>
-    <lumi:record>{"app_key":"aim990plus","app_store_cta_label":"Megtekintés az App Store-ban","app_store_id":"6792483140","content_digest":"6597b929909c91d012ab5c5d8d0efc4d606c16233117084fa6a772db662528c0","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.","purchase_label":"Fizetős letöltés","purchase_model":"paid_upfront","source_locale":"hu"}</lumi:record>
-  </atom:entry>
-  <atom:entry>
     <atom:id>urn:lumi:app-store:6802423998:locale:hu</atom:id>
     <atom:title>BattAI: Akkuállapot</atom:title>
     <atom:summary>BattAI A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok.</atom:summary>
@@ -60,6 +50,16 @@
     <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/hu/caldaily.html" />
     <atom:content type="html">&lt;p&gt;Egy számológép, amit tényleg tovább használsz, mert megjegyzi, mi állt az egyes számok mögött.&lt;/p&gt;&lt;p&gt;Ingyenes kezdés · feloldás egyszeri vásárlással&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/hu/app/id6794178671?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Megtekintés az App Store-ban&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.&lt;/p&gt;</atom:content>
     <lumi:record>{"app_key":"caldaily","app_store_cta_label":"Megtekintés az App Store-ban","app_store_id":"6794178671","content_digest":"9c72f19a8efbb15c6bb1e62d3006611daac33f2ad21ee3671b61b16ed84c2b2f","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.","purchase_label":"Ingyenes kezdés · feloldás egyszeri vásárlással","purchase_model":"free_with_lifetime_unlock","source_locale":"hu"}</lumi:record>
+  </atom:entry>
+  <atom:entry>
+    <atom:id>urn:lumi:app-store:6818607603:locale:hu</atom:id>
+    <atom:title>UsageNow: MI-használat követő</atom:title>
+    <atom:summary>Kifogyott az AI-keretből egy feladat közepén? A UsageNow megmutatja, mennyi maradt az egyes AI-csomagokból, és pontosan mikor újulnak meg, közvetlenül a Főképernyőn. Időben szól, mielőtt kifogyna a keret.</atom:summary>
+    <atom:published>2026-10-11T13:38:17Z</atom:published>
+    <atom:updated>2026-10-11T13:38:17Z</atom:updated>
+    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/hu/claudeusagemini.html" />
+    <atom:content type="html">&lt;p&gt;Kifogyott az AI-keretből egy feladat közepén? A UsageNow megmutatja, mennyi maradt az egyes AI-csomagokból, és pontosan mikor újulnak meg, közvetlenül a Főképernyőn. Időben szól, mielőtt kifogyna a keret.&lt;/p&gt;&lt;p&gt;Ingyenes kezdés · feloldás egyszeri vásárlással&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/hu/app/id6818607603?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Megtekintés az App Store-ban&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.&lt;/p&gt;</atom:content>
+    <lumi:record>{"app_key":"claudeusagemini","app_store_cta_label":"Megtekintés az App Store-ban","app_store_id":"6818607603","content_digest":"6c7f977aaf3895b1061c2760affd32a492e66863680f60ac861030d2f198328f","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.","purchase_label":"Ingyenes kezdés · feloldás egyszeri vásárlással","purchase_model":"free_with_lifetime_unlock","source_locale":"hu"}</lumi:record>
   </atom:entry>
   <atom:entry>
     <atom:id>urn:lumi:app-store:6807079789:locale:hu</atom:id>

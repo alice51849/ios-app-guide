@@ -2,7 +2,7 @@
 title: "Stay Clock:翻頁桌鐘 — 全天顯示時間與行事曆 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/stayclock/decision/l/zh-Hant/index.html"
-modified: "2026-10-05"
+modified: "2026-10-11"
 app_store_id: "6814035888"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,6 +23,7 @@ Stay Clock 把你的 iPhone 或 iPad 變成一座全天候桌鐘,隔著房間也
 - 主畫面小工具
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 Stay Clock:翻頁桌鐘](https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8)
 

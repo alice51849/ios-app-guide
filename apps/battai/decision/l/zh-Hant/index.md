@@ -2,7 +2,7 @@
 title: "BattAI: 電池健康分數 — 規則、來源與限制都說清楚 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html"
-modified: "2026-10-05"
+modified: "2026-10-11"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀
 - 無廣告
 - Apple Watch
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 BattAI: 電池健康分數](https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 

@@ -3,7 +3,7 @@
   <atom:id>https://open.cait518.cc/ios-app-guide/pl/feed.xml</atom:id>
   <atom:title>Katalog aplikacji | iOS</atom:title>
   <atom:subtitle>Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.</atom:subtitle>
-  <atom:updated>2026-10-04T02:43:57Z</atom:updated>
+  <atom:updated>2026-10-11T13:38:17Z</atom:updated>
   <atom:author>
     <atom:name>Lumi Studio</atom:name>
   </atom:author>
@@ -32,16 +32,6 @@
     <lumi:record>{"app_key":"aim990","app_store_cta_label":"Zobacz w App Store","app_store_id":"6784974530","content_digest":"3bb97d15c42467eeda3e8203dd85037aaf72c0a92705a4e785475d9f23a16790","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.","purchase_label":"Darmowe na start · odblokowanie jednorazowym zakupem","purchase_model":"free_with_lifetime_unlock","source_locale":"pl"}</lumi:record>
   </atom:entry>
   <atom:entry>
-    <atom:id>urn:lumi:app-store:6792483140:locale:pl</atom:id>
-    <atom:title>Aim990 Plus: Test angielskiego</atom:title>
-    <atom:summary>Zachowaj jasność myślenia, gdy liczy się każda sekunda. Aim990 Plus to intensywny trening słuchania i czytania po angielsku dla dorosłych, zaprojektowany z myślą o pracy pod presją czasu. Zamiast bezładnego rozwiązywania kolejnych testów otrzymujesz czytelny rytm sesji: 8 pytań rozgrzewkowych, Pressure Set z 20 pytaniami i limitem 15 minut, a następnie Mistake Replay, czyli skupioną powtórkę odpowiedzi, które sprawiły trudność.</atom:summary>
-    <atom:published>2026-09-12T04:40:18Z</atom:published>
-    <atom:updated>2026-09-12T04:40:18Z</atom:updated>
-    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/pl/aim990plus.html" />
-    <atom:content type="html">&lt;p&gt;Zachowaj jasność myślenia, gdy liczy się każda sekunda. Aim990 Plus to intensywny trening słuchania i czytania po angielsku dla dorosłych, zaprojektowany z myślą o pracy pod presją czasu. Zamiast bezładnego rozwiązywania kolejnych testów otrzymujesz czytelny rytm sesji: 8 pytań rozgrzewkowych, Pressure Set z 20 pytaniami i limitem 15 minut, a następnie Mistake Replay, czyli skupioną powtórkę odpowiedzi, które sprawiły trudność.&lt;/p&gt;&lt;p&gt;Płatne do pobrania&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/pl/app/id6792483140?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Zobacz w App Store&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.&lt;/p&gt;</atom:content>
-    <lumi:record>{"app_key":"aim990plus","app_store_cta_label":"Zobacz w App Store","app_store_id":"6792483140","content_digest":"d72b85d4b36540d5dbba6caf3a22d23009a569ccaee64b0586f86b54bb23bac9","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.","purchase_label":"Płatne do pobrania","purchase_model":"paid_upfront","source_locale":"pl"}</lumi:record>
-  </atom:entry>
-  <atom:entry>
     <atom:id>urn:lumi:app-store:6802423998:locale:pl</atom:id>
     <atom:title>BattAI: Wynik kondycji baterii</atom:title>
     <atom:summary>BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia.</atom:summary>
@@ -60,6 +50,16 @@
     <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/pl/caldaily.html" />
     <atom:content type="html">&lt;p&gt;Kalkulator, którego naprawdę będziesz używać, bo pamięta myśl stojącą za każdą liczbą.&lt;/p&gt;&lt;p&gt;Darmowe na start · odblokowanie jednorazowym zakupem&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/pl/app/id6794178671?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Zobacz w App Store&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.&lt;/p&gt;</atom:content>
     <lumi:record>{"app_key":"caldaily","app_store_cta_label":"Zobacz w App Store","app_store_id":"6794178671","content_digest":"5195915c6b39a991a18553b5185efdd272c385f65caad0fbbb4c4296baee2888","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.","purchase_label":"Darmowe na start · odblokowanie jednorazowym zakupem","purchase_model":"free_with_lifetime_unlock","source_locale":"pl"}</lumi:record>
+  </atom:entry>
+  <atom:entry>
+    <atom:id>urn:lumi:app-store:6818607603:locale:pl</atom:id>
+    <atom:title>UsageNow: Zużycie AI tracker</atom:title>
+    <atom:summary>Limit AI skończył się w połowie zadania? UsageNow pokazuje, ile zostało z każdego planu AI i dokładnie kiedy się odnowi, prosto na ekranie początkowym, i ostrzega Cię, zanim limit się skończy.</atom:summary>
+    <atom:published>2026-10-11T13:38:17Z</atom:published>
+    <atom:updated>2026-10-11T13:38:17Z</atom:updated>
+    <atom:link rel="alternate" href="https://open.cait518.cc/ios-app-guide/pl/claudeusagemini.html" />
+    <atom:content type="html">&lt;p&gt;Limit AI skończył się w połowie zadania? UsageNow pokazuje, ile zostało z każdego planu AI i dokładnie kiedy się odnowi, prosto na ekranie początkowym, i ostrzega Cię, zanim limit się skończy.&lt;/p&gt;&lt;p&gt;Darmowe na start · odblokowanie jednorazowym zakupem&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/pl/app/id6818607603?pt=118326163&amp;amp;ct=geo_pick&amp;amp;mt=8"&gt;Zobacz w App Store&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.&lt;/p&gt;</atom:content>
+    <lumi:record>{"app_key":"claudeusagemini","app_store_cta_label":"Zobacz w App Store","app_store_id":"6818607603","content_digest":"ea1c21404bb42f4b84d8f27d3790016eabefbbd5af5259c7d35bc04ac601b70c","independent_ranking":false,"one_time_option":true,"publisher_disclosure":"Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.","purchase_label":"Darmowe na start · odblokowanie jednorazowym zakupem","purchase_model":"free_with_lifetime_unlock","source_locale":"pl"}</lumi:record>
   </atom:entry>
   <atom:entry>
     <atom:id>urn:lumi:app-store:6807079789:locale:pl</atom:id>

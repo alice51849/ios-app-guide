@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-05",
-  "content_digest": "883323e48714a75871a6fc3e267242ec0c46f38a95e8d5bdfa955992bf0ea720",
+  "date_modified": "2026-10-11",
+  "content_digest": "3dbe24f24f0423546b2263d833541f09c02dca58f5a71e32c20c66605a640981",
   "locale": "tr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -128,49 +128,6 @@
         "currency": "TRY",
         "formatted_price": "Ücretsiz",
         "storefront_url": "https://apps.apple.com/tr/app/id6784974530"
-      }
-    },
-    {
-      "key": "aim990plus",
-      "app_store_id": "6792483140",
-      "name": "Aim990 Plus: İngilizce deneme",
-      "summary": "Aim990 Plus, sınırlı sürede İngilizce konuşmaları ve metinleri güvenle anlamak isteyen yetişkinler için hazırlanmış bir çalışma aracıdır. Yalnızca soru çözmek yerine dikkatinizi korumanıza, belirlenen tempoda karar vermenize ve her hatayı bir sonraki çalışmanın hedefli malzemesine dönüştürmenize yardımcı olur.",
-      "category": "kids",
-      "search_terms": [
-        "ingilizce",
-        "dinleme",
-        "okuma",
-        "sınav",
-        "hazırlık",
-        "test",
-        "kelime",
-        "dikte",
-        "sorular",
-        "deneme",
-        "anlama",
-        "alıştırma",
-        "gramer",
-        "dil"
-      ],
-      "purchase_model": "paid_upfront",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": true,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": false,
-        "private_or_on_device": false,
-        "widget": false,
-        "apple_watch": false
-      },
-      "app_store_url": "https://apps.apple.com/tr/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/tr/aim990plus.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "299.99",
-        "currency": "TRY",
-        "formatted_price": "₺299,99",
-        "storefront_url": "https://apps.apple.com/tr/app/id6792483140"
       }
     },
     {
@@ -2301,6 +2258,50 @@
         "currency": "TRY",
         "formatted_price": "Ücretsiz",
         "storefront_url": "https://apps.apple.com/tr/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Yapay Zekâ Kullanımı",
+      "summary": "Bir işin tam ortasında AI limitine mi takıldınız? UsageNow, her AI planınızda ne kadar hak kaldığını ve tam olarak ne zaman sıfırlanacağını doğrudan Ana Ekran'ınızda gösterir ve limit bitmeden sizi uyarır.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "geliştirici",
+        "kullanım",
+        "usage",
+        "tracker",
+        "kota",
+        "sayaç",
+        "token",
+        "widget",
+        "reset",
+        "sıfırlama",
+        "quota",
+        "meter"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/tr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/tr/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz",
+        "storefront_url": "https://apps.apple.com/tr/app/id6818607603"
       }
     },
     {

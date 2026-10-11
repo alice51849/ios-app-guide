@@ -1,6 +1,6 @@
 {
   "_owned_feed": {
-    "date_modified": "2026-10-04T02:43:57Z",
+    "date_modified": "2026-10-11T13:38:17Z",
     "notification_eligible": true,
     "schema": "lumi.owned-app-feeds/v2"
   },
@@ -64,30 +64,6 @@
     },
     {
       "_owned_app": {
-        "app_key": "aim990plus",
-        "app_store_cta_label": "在App Store查看",
-        "app_store_id": "6792483140",
-        "content_digest": "867286e496a358063e320c5975c1d24c85f07a0c15cd71efe159b204e88cb619",
-        "independent_ranking": false,
-        "one_time_option": true,
-        "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
-        "purchase_label": "付费下载",
-        "purchase_model": "paid_upfront",
-        "source_locale": "zh-Hans"
-      },
-      "content_html": "<p>把零散刷题变成一套经得住时间压力的训练流程。</p><p>付费下载</p><p><a href=\"https://apps.apple.com/cn/app/id6792483140?pt=118326163&amp;ct=geo_pick&amp;mt=8\">在App Store查看</a></p><p>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</p>",
-      "content_text": "把零散刷题变成一套经得住时间压力的训练流程。\n\n付费下载\n\n在App Store查看: https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=geo_pick&mt=8\n\n这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
-      "date_modified": "2026-09-12T04:40:18Z",
-      "date_published": "2026-09-12T04:40:18Z",
-      "external_url": "https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "id": "urn:lumi:app-store:6792483140:locale:zh-Hans",
-      "language": "zh-Hans",
-      "summary": "把零散刷题变成一套经得住时间压力的训练流程。",
-      "title": "Aim990 Plus：英语模拟测验·限时",
-      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/aim990plus.html"
-    },
-    {
-      "_owned_app": {
         "app_key": "battai",
         "app_store_cta_label": "在App Store查看",
         "app_store_id": "6802423998",
@@ -133,6 +109,30 @@
       "summary": "一台你会真正留着用的计算器，因为它记得每个数字背后的来龙去脉。",
       "title": "CalDaily 计算器与主题",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/caldaily.html"
+    },
+    {
+      "_owned_app": {
+        "app_key": "claudeusagemini",
+        "app_store_cta_label": "在App Store查看",
+        "app_store_id": "6818607603",
+        "content_digest": "95ab60851821544be0c910c7ca44c808a315864f7d4e44c36af9d84ba80bc2ef",
+        "independent_ranking": false,
+        "one_time_option": true,
+        "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
+        "purchase_label": "免费开始使用 · 一次购买解锁",
+        "purchase_model": "free_with_lifetime_unlock",
+        "source_locale": "zh-Hans"
+      },
+      "content_html": "<p>任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。</p><p>免费开始使用 · 一次购买解锁</p><p><a href=\"https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8\">在App Store查看</a></p><p>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</p>",
+      "content_text": "任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。\n\n免费开始使用 · 一次购买解锁\n\n在App Store查看: https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8\n\n这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
+      "date_modified": "2026-10-11T13:38:17Z",
+      "date_published": "2026-10-11T13:38:17Z",
+      "external_url": "https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "id": "urn:lumi:app-store:6818607603:locale:zh-Hans",
+      "language": "zh-Hans",
+      "summary": "任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。",
+      "title": "UsageNow：AI 用量追踪器",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html"
     },
     {
       "_owned_app": {

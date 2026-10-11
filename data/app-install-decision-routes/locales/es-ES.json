@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "es-ES",
-  "dateModified": "2026-10-05",
-  "content_digest": "71e52c3c7e9e5c6e00e93bdc9fdd716109060d3b50e0e2c34ed0ef5d48420140",
-  "generation_digest": "3733d2daafb2924fc347b09b4aa93a7c8a53482e89464b55cc53243cb5135f21",
+  "dateModified": "2026-10-11",
+  "content_digest": "b573651b0a7911499f3b1ad4a928afacf77c94df9e444df1fbc044850215ab57",
+  "generation_digest": "7d7cd1587dcbd146513d95e364ded40194ce1d667114e9613d86e1a79a3af69b",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -348,59 +348,6 @@
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "es-ES:aim990plus",
-      "locale": "es-ES",
-      "app_key": "aim990plus",
-      "app_name": "Aim990 Plus",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "best offline English listening and reading exam trainer for iPhone",
-      "decision_context": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
-      "category": "kids",
-      "category_label": "Infantil y aprendizaje",
-      "purchase_model": "paid_upfront",
-      "purchase_label": "Descarga de pago",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_account"
-      ],
-      "privacy_labels": [
-        "Sin conexión",
-        "Sin cuenta"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Infantil y aprendizaje",
-        "Descarga de pago",
-        "Sin conexión",
-        "Sin cuenta",
-        "App Store · 6,99 €"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/es-ES/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/es-ES/aim990plus.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Faim990plus%2Fdecision%2Fl%2Fes-ES%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
-      "app_store_id": "6792483140",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Consigue Aim990 Plus en el App Store →",
-      "storefront_facts": {
-        "price": "6.99",
-        "currency": "EUR",
-        "formatted_price": "6,99 €"
-      },
-      "guide_cta_label": "Lee la guía completa",
-      "publisher_disclosure": "Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.",
-      "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2882,6 +2829,67 @@
       "publisher_disclosure": "Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "es-ES:claudeusagemini",
+      "locale": "es-ES",
+      "app_key": "claudeusagemini",
+      "app_name": "UsageNow: Monitor de uso IA",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "UsageNow: Monitor de uso IA — Límites Claude, Codex, Copilot | iOS App",
+      "decision_context": "¿Te quedas sin límite de IA a mitad de una tarea? UsageNow te muestra cuánto te queda de cada plan de IA y cuándo se restablece exactamente, directamente en tu pantalla de inicio, y te avisa antes de que se agote. TODOS LOS LÍMITES DE UN VISTAZO Claude: el límite de sesión de 5 horas y los límites semanales, incluidos los de cada modelo ChatGPT Codex: las ventanas de 5 horas y semanal GitHub Copilot: solicitudes premium, chat y sugerencias de código Gemini: cuotas diarias de solicitudes para cada modelo Una cuenta atrás en directo hasta cada restablecimiento, con la hora exacta en el formato de tu región AVISOS ANTES DE QUEDARTE SIN LÍMITE Crea tus propios avisos: elige el límite de 5 horas, el límite semanal o todos los límites, y escribe el porcentaje que te importa, como 90 o 98. Añade todos los que quieras. Cada aviso llega una sola vez por límite y ciclo, así tu pantalla bloqueada se mantiene en silencio. Activa un aviso de restablecimiento para saber en el momento exacto en que un límite vuelve a estar disponible. WIDGETS QUE HACEN MÁS Pasa por todas tus cuentas directamente en el widget Toca un widget para actualizarlo cuando quieras ver los datos más recientes Widgets para la pantalla de inicio y la pantalla bloqueada en todos los tamaños, además de complicaciones para el Apple Watch TODAS TUS CUENTAS, EN TU ORDEN Trabajo y personal, Pro y Max, una al lado de otra. Ordena por restablecimiento de 5 horas, restablecimiento semanal, uso más alto o más bajo, nombre o servicio, o arrastra las cuentas al orden que prefieras. ALLÍ DONDE TRABAJES iPhone, iPad y Apple Watch. PRIVACIDAD DE SERIE Inicias sesión en la página oficial de cada servicio. Tu sesión se guarda en el llavero de tu dispositivo y UsageNow solo se comunica con los propios servicios. No hay servidor de UsageNow, no hay que crear ninguna cuenta y no hay rastreo. EN TU IDIOMA Traducida por completo a 50 idiomas, con fechas y horas escritas como se escriben en tu región. Cambia de idioma en Ajustes cuando quieras. PRUÉBALO TODO PRIMERO Empieza en la app una prueba gratuita de 24 horas y usa todas las funciones, widgets incluidos. Para seguir usando UsageNow y sus widgets después de la prueba, desbloquea UsageNow Pro con una única compra. Sin suscripción. UsageNow es una app independiente y no está afiliada a Anthropic, OpenAI, GitHub, Microsoft ni Google. Claude, ChatGPT, Codex, GitHub Copilot y Gemini son marcas comerciales de sus respectivos propietarios. ¿Preguntas o ideas? hourstag.app@gmail.com",
+      "category": "productivity",
+      "category_label": "Productividad",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis para empezar · desbloqueo único",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Sin seguimiento",
+        "Privado / en el dispositivo"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Productividad",
+        "Gratis para empezar · desbloqueo único",
+        "Sin seguimiento",
+        "Privado / en el dispositivo",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-ES/claudeusagemini.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/es-ES/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/es-ES/claudeusagemini.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Fclaudeusagemini%2Fdecision%2Fl%2Fes-ES%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
+      "app_store_id": "6818607603",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6818607603",
+      "app_store_url": "https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Consigue UsageNow: Monitor de uso IA en el App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Lee la guía completa",
+      "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
+      "source_persona_query": "app to see Claude and Codex usage limits and reset times on iPhone",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

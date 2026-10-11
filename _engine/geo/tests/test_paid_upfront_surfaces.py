@@ -53,8 +53,9 @@ class PaidUpfrontSurfaces(unittest.TestCase):
         return before, after
 
     def test_exact9_thirteen_existing_surfaces_and_public_evidence(self):
-        self.assertEqual(9, len(repairs.contract()["apps"]))
-        self.assertEqual(13, len(self.targets))
+        # 10-10 Aim990 Plus 退役：exact9 少一款、13 個既有頁面少它的 ja 回答。
+        self.assertEqual(8, len(repairs.contract()["apps"]))
+        self.assertEqual(12, len(self.targets))
         self.assertEqual(set(repairs.EXACT_IDS), {row["key"] for row in self.targets.values()})
         for key, row in repairs.contract()["apps"].items():
             with self.subTest(key=key):
@@ -87,12 +88,12 @@ class PaidUpfrontSurfaces(unittest.TestCase):
                     self.assertEqual(before_ids, after_ids)
 
     def test_wrong_page_or_app_identity_is_rejected(self):
-        relative = "ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html"
+        relative = "zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html"
         source = (PAGES / relative).read_text()
         with self.assertRaisesRegex(ValueError, "canonical"):
             repairs.rewrite(source.replace(f"{repairs.PUBLIC_SITE}/{relative}", f"{repairs.PUBLIC_SITE}/wrong.html"), relative, PAGES)
         with self.assertRaisesRegex(ValueError, "App ID"):
-            repairs.rewrite(source.replace("id6792483140", "id1234567890"), relative, PAGES)
+            repairs.rewrite(source.replace(f"id{repairs.EXACT_IDS['hourstag']}", "id1234567890"), relative, PAGES)
 
     def test_ctas_use_verified_local_markets_and_preserve_campaigns(self):
         import gen_store_attribution as attribution
@@ -243,10 +244,10 @@ class PaidUpfrontSurfaces(unittest.TestCase):
         self.assertEqual(values, repairs.localized_descriptions("dailymate", values))
 
     def test_generator_hooks_restore_the_same_copy(self):
-        relative = "ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html"
+        relative = "zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html"
         before, expected = self.rendered(relative)
         with patch.object(aeo_answers_i18n, "ROOT", PAGES):
-            result = aeo_answers_i18n.finalize_html(before, "ja", Path(relative).stem)
+            result = aeo_answers_i18n.finalize_html(before, "zh-Hant", Path(relative).stem)
         self.assertIn(html.escape(self.targets[relative]["lead"]), result)
         self.assertIn(html.escape(self.targets[relative]["heading"]), expected)
         question = "best passport photo app for babies and toddlers at home"

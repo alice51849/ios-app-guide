@@ -1,0 +1,69 @@
+name: Daily growth scoreboard
+
+# 每天量測每款 App 在 50 個語系店面的評分數、母語關鍵字搜尋名次與類別排行榜，
+# 把結果寫進 `growth-scoreboard` issue。只讀 Apple 公開 API，不碰 App Store
+# Connect、不碰 App；被限流就提前停止並保存進度，下次自動接續。
+
+on:
+  schedule:
+    - cron: "41 2 * * *"
+  workflow_dispatch:
+    inputs:
+      search_budget:
+        description: Native-keyword searches this run
+        required: false
+        default: "600"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: growth-scoreboard
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Restore scoreboard history
+        uses: actions/cache/restore@v4
+        with:
+          path: .growth-scoreboard
+          key: growth-scoreboard-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            growth-scoreboard-v1-
+      - name: Verify scoreboard logic offline
+        run: python3 .github/scripts/test_growth_scoreboard.py
+      - name: Measure public App Store outcomes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SEARCH_BUDGET: ${{ inputs.search_budget || '600' }}
+        run: |
+          python3 .github/scripts/growth_scoreboard.py \
+            --state .growth-scoreboard/state.json \
+            --report .growth-scoreboard/report.md \
+            --json-out .growth-scoreboard/scoreboard.json \
+            --search-budget "$SEARCH_BUDGET" \
+            --issue
+          cat .growth-scoreboard/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Save scoreboard history
+        if: always() && hashFiles('.growth-scoreboard/state.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .growth-scoreboard
+          key: growth-scoreboard-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Keep full measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: growth-scoreboard-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .growth-scoreboard/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 90

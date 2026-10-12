@@ -57,6 +57,7 @@ PROFILES: dict[str, dict] = {
             "telegram-daily.yml": 30,
             "arquivo-pt-daily.yml": 30,
             "software-heritage-daily.yml": 30,
+            "growth-scoreboard.yml": 30,
             "sov-weekly.yml": 8 * 24,
         },
         "evidence": ["guide_deployment", "telegram_message_id"],

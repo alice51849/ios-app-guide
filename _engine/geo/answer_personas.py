@@ -4067,6 +4067,78 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         }
     ],
+    "easyam": [
+        {
+            "query": "alarm clock app that skips holidays on iphone",
+            "guide_title": "An alarm that skips public holidays: what to check",
+            "triggers": [
+                "alarm skip holidays",
+                "alarm clock skip public holidays",
+                "holiday alarm clock",
+                "alarm off on holidays",
+                "make-up workday alarm",
+                "alarm skip days off",
+            ],
+            "persona": "people on a work schedule who are tired of switching alarms off before every holiday and back on afterwards",
+            "lead": (
+                "A fixed weekday alarm rings on the public holiday you "
+                "wanted to sleep through and, worse, can stay silent on the "
+                "make-up workday you must not miss."
+            ),
+            "paras": [
+                (
+                    "The usual workaround is to switch the alarm off by hand "
+                    "before every holiday and remember to switch it back on. "
+                    "A better alarm works out your real workdays from your "
+                    "country and region: it skips public holidays, rings on "
+                    "official make-up workdays, and respects the time off "
+                    "you enter yourself."
+                ),
+                (
+                    "It also has to be a real alarm. Look for one that "
+                    "schedules the upcoming rings with Apple's AlarmKit so "
+                    "iOS itself rings them, reads the schedule back before "
+                    "claiming it is ready, and treats a date it cannot "
+                    "confirm as a workday, so uncertain holiday data never "
+                    "silences a workday alarm. The holiday data should "
+                    "be built into the app, so it keeps working offline."
+                ),
+            ],
+            "look": [
+                "Public holidays skipped and make-up workdays rung, for your own country and region.",
+                "Real system alarms through AlarmKit rather than a notification that can be missed.",
+                "An unknown holiday date treated as a workday, never as a day off.",
+                "Weekly, alternating-week or shift patterns, plus your own time off.",
+                "Holiday data that works offline and shows how far ahead your alarms are set.",
+            ],
+            "steps": [
+                "Set your working days or shift pattern, wake-up time, country and region once.",
+                "Open the holiday calendar and check the next public holiday and make-up workday against your own calendar.",
+                "Look at the date the alarms are covered through, and reopen the app to extend it.",
+                "Add a day of your own time off and confirm the next alarm skips it.",
+                "Keep a backup alarm for anything critical, as with any alarm app.",
+            ],
+            "fits": "fits people who want one alarm that already knows which days are holidays, make-up workdays or their own time off, and that rings through Apple's AlarmKit without a subscription. The free version includes one saved alarm; a one-time in-app purchase unlocks unlimited alarms and more clock themes.",
+            "faq": [
+                {
+                    "q": "Will it ring on a make-up workday?",
+                    "a": "Yes. Official make-up workdays are added to your schedule and ring even when they fall on a weekend; a date the app cannot confirm is treated as a workday.",
+                },
+                {
+                    "q": "Does it work offline?",
+                    "a": "Yes. The holiday data is built into the app, so alarms are scheduled without a connection; newer data can be downloaded when you are online.",
+                },
+                {
+                    "q": "Is it a real alarm?",
+                    "a": "It schedules the upcoming rings as individual alarms with Apple's AlarmKit, so iOS rings them, and it reads the schedule back from iOS before showing it as ready.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. The free version includes one saved alarm, and Pro is a single one-time in-app purchase that unlocks unlimited alarms and more clock themes.",
+                },
+            ],
+        }
+    ]
 }
 
 # Zipbox has entered the canonical live roster; its reviewed pre-publication

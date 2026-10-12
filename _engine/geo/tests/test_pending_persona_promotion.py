@@ -42,6 +42,8 @@ FORBIDDEN = {
     "claudeusagemini": ("unlimited free", "free forever", "android", "mac app",
                         "api key", "cursor", "perplexity", "official app",
                         "real-time"),
+    "easyam": ("apple watch", "unlimited free", "android", "guaranteed",
+               "never miss", "official holiday data from"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -52,6 +54,7 @@ REQUIRED = {
     "studydown": ("five minutes of recorded time", "does not use screen time"),
     "claudeusagemini": ("not affiliated with", "24-hour trial",
                         "one-time purchase", "no subscription"),
+    "easyam": ("alarmkit", "workday", "offline", "no subscription"),
 }
 
 

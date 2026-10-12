@@ -39,6 +39,11 @@ DEVELOPER_URL = "https://apps.apple.com/developer/id1136144960"
 SITE_URL = "https://open.cait518.cc/ios-app-guide"
 LINKSET_PATH = REPO_ROOT / "linkset.json"
 TELEGRAM_LIMIT = 3900
+# The portfolio's one real differentiator, stated in every daily digest.
+TELEGRAM_LANGUAGE_PITCH = (
+    "🌏 每款都支援 50 種語言，App 內一鍵切換、不必改手機語言："
+    "家人用中文、看護用印尼文或越南文、孩子用英文，同一支手機各用各的。\n\n"
+)
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
 THREADS_LINK_LIMIT = 5
 PORTFOLIO_WORKFLOW = "portfolio-daily.yml"
@@ -61,7 +66,8 @@ CATEGORY_ORDER = {
 }
 CATEGORY_ZH = {
     "kids": "親子學習",
-    "education": "親子學習",
+    "education": "學習進修",
+    "utility": "實用工具",
     "photo-utility": "相片工具",
     "productivity": "效率工具",
     "finance": "財務管理",
@@ -70,6 +76,16 @@ CATEGORY_ZH = {
     "travel": "旅行規劃",
     "lifestyle": "生活工具",
     "other": "更多工具",
+}
+
+# Digest-only display fixes for linkset categories that send readers to the
+# wrong shelf (adult travel/vocabulary Apps listed as kids' learning, a Wi-Fi
+# diagnostic listed as a photo tool). The linkset itself is engine-owned.
+DISPLAY_CATEGORY_OVERRIDES = {
+    "dailymate": "travel",
+    "dailymatelite": "travel",
+    "wordmatelite": "education",
+    "wifiaid": "utility",
 }
 
 
@@ -418,11 +434,15 @@ def telegram_messages(apps):
     footer = f"\n\n完整開發者頁：{DEVELOPER_URL}"
     reserved_header = (
         f"✨ 每日全 App 精選｜{total} 款｜第 99/99 則\n\n"
+        f"{TELEGRAM_LANGUAGE_PITCH}"
         "今天已公開的 App 一次看，依需求挑選：\n"
     )
 
     def entry(app):
-        category = CATEGORY_ZH.get(app.category, CATEGORY_ZH["other"])
+        category = CATEGORY_ZH.get(
+            DISPLAY_CATEGORY_OVERRIDES.get(app.key, app.category),
+            CATEGORY_ZH["other"],
+        )
         return (
             f"• {category}｜{app.name}\n"
             f"  {app.appstore_url(campaign)}"
@@ -442,6 +462,7 @@ def telegram_messages(apps):
         part = "" if len(batches) == 1 else f"｜第 {index}/{len(batches)} 則"
         header = (
             f"✨ 每日全 App 精選｜{total} 款{part}\n\n"
+            f"{TELEGRAM_LANGUAGE_PITCH}"
             "今天已公開的 App 一次看，依需求挑選：\n"
         )
         text = header + "\n".join(entry(app) for app in batch) + footer

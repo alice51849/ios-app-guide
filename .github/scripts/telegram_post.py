@@ -145,6 +145,26 @@ LEGACY_IDENTITIES = {
 EXACT47_APP_IDS = frozenset(LEGACY_APP_MESSAGES) | {
     "6792483140", "6802166527", "6806776579",
 }
+# Reviewed roster contract roster-20261012: the 53 verified-live Apps in the
+# deployed linkset, .appstore_live_state.json and the publisher intent catalog
+# (53 × 50 = 2,650 records). Versus exact47: Aim990 Plus (6792483140) retired;
+# 7 Apps added. EXACT47 stays the proof roster of the protected ledger snapshot.
+CURRENT_ROSTER_APP_IDS = frozenset({
+    "6754218117", "6755782939", "6773017109", "6775773117", "6776958488",
+    "6778269699", "6778491147", "6778748533", "6779552704", "6779745474",
+    "6779750237", "6779977651", "6780107485", "6780223070", "6780575828",
+    "6781337213", "6781808054", "6782139553", "6782251621", "6782275018",
+    "6784974530", "6785004775", "6787193643", "6787754435", "6788236641",
+    "6789917808", "6790418321", "6790467886", "6790800323", "6791299610",
+    "6791658210", "6792850916", "6792856304", "6793414462", "6793436548",
+    "6794039979", "6794178671", "6794725568", "6797601720", "6798813048",
+    "6798814385", "6801956402", "6802166527", "6802423998", "6802505528",
+    "6806639602", "6806776579", "6806779853", "6806826699", "6807079789",
+    "6807335593", "6814035888", "6818607603",
+})
+CURRENT_ROSTER_LOCALE_RECORDS = 2650
+# Ledger intents may name a historical roster App or a current one.
+LEDGER_APP_IDS = EXACT47_APP_IDS | CURRENT_ROSTER_APP_IDS
 
 
 def _json_bytes(value):
@@ -467,7 +487,7 @@ def validate_ledger(ledger):
             }
             or intent.get("official_locale") not in OFFICIAL_SOCIAL_LOCALES
             or intent.get("official_locale") not in TZ_LANGS[_zone(stamp.hour)]
-            or intent.get("app_store_id") not in EXACT47_APP_IDS
+            or intent.get("app_store_id") not in LEDGER_APP_IDS
             or intent.get("payload_digest") != _digest(intent.get("text", ""))
         ):
             raise ValueError("invalid Telegram send reservation")
@@ -632,8 +652,8 @@ def load_pool():
     live_apps = {
         app.app_id: app for app in portfolio_daily.load_public_apps()
     }
-    if set(live_apps) != EXACT47_APP_IDS:
-        raise ValueError("Telegram current source must match the pinned exact47 App IDs")
+    if set(live_apps) != CURRENT_ROSTER_APP_IDS:
+        raise ValueError("Telegram current source must match the pinned reviewed roster App IDs")
     pool = _load_intent_pool(live_apps)
     for item in static_pool:
         app_id = str(item.get("app") or "")
@@ -842,14 +862,17 @@ def production_context(now=None):
         raise ValueError("missing production workflow identity")
     with INTENT_CATALOG_PATH.open(encoding="utf-8") as source:
         catalog = json.load(source)
-    if catalog.get("app_count") != 47 or catalog.get("record_count") != 2350:
-        raise ValueError("current publisher catalog is not exact47 × exact50")
+    if (
+        catalog.get("app_count") != len(CURRENT_ROSTER_APP_IDS)
+        or catalog.get("record_count") != CURRENT_ROSTER_LOCALE_RECORDS
+    ):
+        raise ValueError("current publisher catalog is not the reviewed roster × exact50")
     return {
         "source_sha": source_sha, "slot": slot.isoformat(), "now": now,
         "run_id": run_id, "run_attempt": attempt,
         "generation_digest": _sha(catalog.get("generation_digest"), 64),
         "catalog_digest": hashlib.sha256(INTENT_CATALOG_PATH.read_bytes()).hexdigest(),
-        "roster_digest": hashlib.sha256(_json_bytes(sorted(EXACT47_APP_IDS))).hexdigest(),
+        "roster_digest": hashlib.sha256(_json_bytes(sorted(CURRENT_ROSTER_APP_IDS))).hexdigest(),
     }
 
 
@@ -1660,10 +1683,14 @@ def main(argv=None):
             )
             store.save(ledger)
         reconcile_pending(ledger, store)
-        gaps = sorted(EXACT47_APP_IDS - {
+        gaps = sorted(CURRENT_ROSTER_APP_IDS - {
             receipt["app_store_id"] for receipt in ledger["receipts"].values()
         })
-        print(f"Telegram native coverage {47 - len(gaps)}/47; gaps={','.join(gaps)}")
+        roster_size = len(CURRENT_ROSTER_APP_IDS)
+        print(
+            f"Telegram native coverage {roster_size - len(gaps)}/{roster_size}; "
+            f"gaps={','.join(gaps)}"
+        )
         publish_once(pool, ledger, store, context, tok, native_chat)
         return 0
     except (

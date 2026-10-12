@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-11T14:27:05+0800",
+ "source_generated": "2026-10-12T13:00:32+0800",
  "count": 24,
- "content_sha256": "98e7d7f6c018b93705729c6f5cdc3d2425bc1b7a17e40634eff108925592b090",
+ "content_sha256": "77e9704684db9702ec011ca54150f37a90ff13cae4274a568ae5d0090fa27b64",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -159,8 +159,8 @@
    "package": "com.alice51849.hourstaglite",
    "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
    "paid": false,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
+   "first_seen": "2026-10-12T13:00:32+0800",
+   "launch_wave": "new",
    "match": "bundle_id_casefold",
    "copy": {
     "en-US": {

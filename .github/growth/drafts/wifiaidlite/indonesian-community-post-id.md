@@ -15,14 +15,14 @@
 ## ① 私訊管理員（先發這個）
 
 ```text
-Halo Kak Admin, salam kenal. Saya Guan Feng Lai dari Taiwan, developer aplikasi iPhone bernama WiFi Aid Lite (untuk mengecek kenapa WiFi lemot atau putus).
+Halo Kak Admin, salam kenal. Saya Guan Feng Lai, developer aplikasi iPhone bernama WiFi Aid Lite (untuk mengecek kenapa WiFi lemot atau putus).
 
 Saya ingin membagikan satu postingan berisi tips mengecek WiFi di rumah majikan atau asrama. Tips-nya bisa dipakai tanpa aplikasi apa pun. Di bagian akhir saya menyebut aplikasi saya dan menjelaskan bahwa saya developernya; link-nya saya taruh di komentar, bukan di postingan.
 
 Apakah boleh saya posting di grup ini? Kalau tidak boleh, tidak apa-apa. Terima kasih banyak, Kak.
 ```
 
-中文對照（給店主看）：自我介紹是 WiFi Aid Lite 的開發者；想分享一篇在雇主家／宿舍檢查 Wi-Fi 的小技巧，不用 App 也能照做；最後會提到自己的 App 並說明是開發者，連結放留言；詢問可否在社團發文，不行也沒關係。
+中文對照（給店主看）：自我介紹是 WiFi Aid Lite 的開發者（不寫國籍）；想分享一篇在雇主家／宿舍檢查 Wi-Fi 的小技巧，不用 App 也能照做；最後會提到自己的 App 並說明是開發者，連結放留言；詢問可否在社團發文，不行也沒關係。
 
 ---
 

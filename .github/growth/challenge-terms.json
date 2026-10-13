@@ -1,0 +1,1304 @@
+{
+ "schema_version": 1,
+ "updated": "2026-10-13",
+ "note": "二次審核與執行流程找出的「使用者真正會打的搜尋詞」，成績單優先量測。",
+ "apps": {
+  "mochi": {
+   "en-US": [
+    "cute to do list",
+    "aesthetic to do list",
+    "kawaii to do list",
+    "cute checklist",
+    "to do list"
+   ],
+   "pt-BR": [
+    "lista de tarefas fofa",
+    "lista de tarefas",
+    "planner fofo",
+    "checklist fofo"
+   ],
+   "de-DE": [
+    "süße to-do liste",
+    "to do liste",
+    "aufgabenliste",
+    "checkliste"
+   ],
+   "ja": [
+    "かわいい todo",
+    "todoリスト",
+    "やることリスト",
+    "チェックリスト"
+   ],
+   "zh-Hant": [
+    "可愛待辦",
+    "待辦清單",
+    "待辦事項",
+    "可愛 todo"
+   ]
+  },
+  "countdaysnow": {
+   "zh-Hant": [
+    "倒數日",
+    "倒數 小工具",
+    "倒數計時",
+    "紀念日",
+    "學測倒數"
+   ],
+   "ko": [
+    "디데이",
+    "디데이 위젯",
+    "디데이 계산기",
+    "수능 디데이",
+    "날짜 계산기"
+   ],
+   "ja": [
+    "あと何日",
+    "カウントダウン",
+    "カウントダウン ウィジェット",
+    "記念日 カウント"
+   ],
+   "en-US": [
+    "countdaysnow",
+    "countdown widget",
+    "days until",
+    "countdown app"
+   ]
+  },
+  "lockhour": {
+   "zh-Hant": [
+    "封鎖app",
+    "戒手機",
+    "app鎖",
+    "專注 app"
+   ],
+   "ja": [
+    "アプリ制限",
+    "スマホ依存",
+    "集中タイマー",
+    "スマホ断ち"
+   ],
+   "en-US": [
+    "app blocker",
+    "block apps",
+    "app blocker no subscription",
+    "focus app"
+   ]
+  },
+  "mochidonestamp": {
+   "en-US": [
+    "last time tracker",
+    "days since",
+    "last time",
+    "days since tracker"
+   ],
+   "ja": [
+    "いつやった",
+    "経過日数",
+    "家事 記録",
+    "最後にやった日"
+   ],
+   "zh-Hant": [
+    "多久一次",
+    "上次是什麼時候",
+    "經過天數",
+    "家事 紀錄"
+   ]
+  },
+  "studydown": {
+   "zh-Hant": [
+    "翻面計時",
+    "讀書計時",
+    "讀書計時器",
+    "專注計時"
+   ],
+   "ja": [
+    "勉強タイマー",
+    "伏せる タイマー",
+    "勉強時間 記録",
+    "集中タイマー"
+   ],
+   "ko": [
+    "공부 타이머",
+    "집중 타이머",
+    "공부 시간 기록",
+    "스터디 타이머"
+   ],
+   "en-US": [
+    "flip phone timer",
+    "face down timer",
+    "study timer",
+    "phone down timer"
+   ]
+  },
+  "stayclock": {
+   "en-US": [
+    "flip clock",
+    "nightstand clock",
+    "standby clock",
+    "old ipad clock",
+    "desk clock"
+   ],
+   "ja": [
+    "パタパタ時計",
+    "置き時計",
+    "卓上時計",
+    "大きい時計"
+   ],
+   "de-DE": [
+    "Tischuhr",
+    "Nachttischuhr",
+    "Klappuhr",
+    "Uhr App"
+   ],
+   "zh-Hant": [
+    "翻頁時鐘",
+    "桌鐘",
+    "床頭時鐘",
+    "大字時鐘"
+   ]
+  },
+  "cvdesk": {
+   "id": [
+    "cv ats",
+    "skor ats",
+    "cv ats friendly",
+    "cek cv ats"
+   ],
+   "en-US": [
+    "ats resume",
+    "ats resume builder",
+    "ats resume checker"
+   ],
+   "th": [
+    "เรซูเม่ ats",
+    "เรซูเม่",
+    "สร้างเรซูเม่"
+   ],
+   "zh-Hant": [
+    "英文履歷",
+    "ATS 履歷",
+    "英文履歷 範本"
+   ]
+  },
+  "notesstudio100": {
+   "zh-Hant": [
+    "手寫筆記",
+    "PDF 標註",
+    "國考 筆記",
+    "手寫筆記本"
+   ],
+   "ja": [
+    "手書きノート",
+    "買い切り ノート",
+    "手書き ノートアプリ"
+   ],
+   "ko": [
+    "필기 앱",
+    "손글씨 노트",
+    "필기앱"
+   ]
+  },
+  "onepageppt": {
+   "ja": [
+    "1枚資料",
+    "ワンペーパー",
+    "1枚 資料作成"
+   ],
+   "ko": [
+    "한 장 보고서",
+    "한장 보고서",
+    "한 장 요약"
+   ],
+   "zh-Hant": [
+    "一頁簡報",
+    "一頁報告",
+    "一頁式簡報"
+   ],
+   "en-US": [
+    "one pager",
+    "one-pager",
+    "one page summary"
+   ],
+   "de-DE": [
+    "one pager",
+    "onepager"
+   ]
+  },
+  "sononote": {
+   "zh-Hant": [
+    "會議記錄 摘要",
+    "錄音 摘要",
+    "會議記錄 app"
+   ],
+   "ja": [
+    "議事録 要約",
+    "音声メモ 要約",
+    "議事録 アプリ"
+   ],
+   "en-US": [
+    "voice memo summary",
+    "meeting notes summary",
+    "voice notes summary"
+   ],
+   "id": [
+    "catatan suara ringkasan",
+    "catatan suara",
+    "rekam rapat"
+   ]
+  },
+  "aibriefpack": {
+   "en-US": [
+    "ai prompt from files",
+    "pdf to prompt",
+    "redact screenshot"
+   ],
+   "ja": [
+    "AI 要約 PDF",
+    "個人情報 マスキング"
+   ],
+   "zh-Hant": [
+    "AI 提示詞",
+    "截圖 轉文字 AI",
+    "個資 遮蔽"
+   ]
+  },
+  "savetag": {
+   "zh-Hant": [
+    "稍後閱讀",
+    "稍後再看",
+    "連結收藏"
+   ],
+   "ja": [
+    "あとで読む",
+    "積読",
+    "リンク 保存"
+   ],
+   "en-US": [
+    "read later",
+    "save for later",
+    "reading list"
+   ],
+   "ar-SA": [
+    "قراءة لاحقة",
+    "حفظ الروابط"
+   ],
+   "ca": [
+    "llegir més tard",
+    "desar enllaços"
+   ],
+   "cs": [
+    "číst později",
+    "ukládání odkazů"
+   ]
+  },
+  "picclear": {
+   "zh-Hant": [
+    "連拍照片 刪除",
+    "截圖 清理",
+    "大型影片"
+   ],
+   "ja": [
+    "スクショ 整理",
+    "連写 削除",
+    "動画 容量"
+   ],
+   "en-US": [
+    "delete screenshots",
+    "burst photos",
+    "large videos"
+   ]
+  },
+  "unblurry": {
+   "zh-Hant": [
+    "照片變清晰",
+    "模糊照片變清晰",
+    "老照片修復"
+   ],
+   "ja": [
+    "写真 高画質化",
+    "ぼやけ 補正",
+    "古い写真"
+   ],
+   "en-US": [
+    "unblur photo",
+    "fix blurry photo",
+    "sharpen photo"
+   ],
+   "ko": [
+    "사진 선명하게",
+    "흐린 사진 보정"
+   ],
+   "da": [
+    "gør foto skarpt",
+    "sløret billede"
+   ],
+   "nl-NL": [
+    "foto scherper maken",
+    "wazige foto"
+   ],
+   "sv": [
+    "gör foto skarpare",
+    "suddig bild"
+   ],
+   "no": [
+    "gjør bilde skarpt",
+    "uskarpt bilde"
+   ],
+   "fi": [
+    "tarkenna kuva",
+    "terävöitä kuva",
+    "sumea kuva"
+   ]
+  },
+  "photocream": {
+   "cs": [
+    "analogový fotoaparát",
+    "filmový fotoaparát",
+    "vintage filtr"
+   ],
+   "zh-Hant": [
+    "底片相機",
+    "底片濾鏡",
+    "復古濾鏡"
+   ],
+   "ja": [
+    "フィルムカメラ",
+    "フィルム 加工",
+    "エモい 加工"
+   ],
+   "ko": [
+    "필름카메라",
+    "필카",
+    "감성 필터"
+   ],
+   "en-US": [
+    "film camera",
+    "film filter",
+    "disposable camera"
+   ]
+  },
+  "maskmyfile": {
+   "ja": [
+    "黒塗り",
+    "墨消し",
+    "マイナンバー 隠す"
+   ],
+   "ko": [
+    "주민번호 가리기",
+    "신분증 마스킹",
+    "PDF 가리기"
+   ],
+   "zh-Hant": [
+    "打碼",
+    "身分證 打碼",
+    "PDF 塗黑"
+   ],
+   "en-US": [
+    "redact pdf",
+    "black out text",
+    "anonymize"
+   ],
+   "el": [
+    "ανωνυμοποίηση",
+    "ανωνυμοποίηση pdf"
+   ],
+   "cs": [
+    "anonymizace",
+    "anonymizace pdf",
+    "začernění textu"
+   ],
+   "da": [
+    "anonymisering",
+    "anonymiser pdf"
+   ],
+   "nl-NL": [
+    "anonimiseren",
+    "pdf anonimiseren",
+    "zwartlakken"
+   ],
+   "pl": [
+    "anonimizacja",
+    "anonimizacja pdf",
+    "zaczernianie"
+   ]
+  },
+  "scanto": {
+   "zh-Hant": [
+    "身分證 影本",
+    "證件掃描",
+    "加密 pdf"
+   ],
+   "ja": [
+    "身分証 スキャン",
+    "暗号化 pdf",
+    "オフライン スキャン"
+   ],
+   "de-DE": [
+    "Ausweis scannen",
+    "PDF verschlüsseln",
+    "offline scanner"
+   ],
+   "id": [
+    "scan ktp",
+    "pdf berpassword",
+    "scan dokumen"
+   ]
+  },
+  "shotinbox": {
+   "en-US": [
+    "screenshot organizer",
+    "delete screenshots",
+    "screenshot search"
+   ],
+   "zh-Hant": [
+    "截圖整理",
+    "截圖 刪除",
+    "截圖 搜尋"
+   ],
+   "ja": [
+    "スクショ整理",
+    "スクショ 削除",
+    "スクショ 検索"
+   ]
+  },
+  "lumibopomofo": {
+   "zh-Hant": [
+    "注音拼讀",
+    "注音聲調",
+    "注音描寫",
+    "幼小銜接",
+    "注音遊戲"
+   ],
+   "ja": [
+    "注音符号",
+    "ボポモフォ",
+    "台湾華語 発音"
+   ],
+   "vi": [
+    "chú âm",
+    "học chú âm",
+    "tiếng hoa cho bé"
+   ],
+   "en-US": [
+    "zhuyin",
+    "bopomofo",
+    "zhuyin for kids"
+   ]
+  },
+  "lumibopomofopro": {
+   "zh-Hant": [
+    "ㄅㄆㄇ",
+    "注音拼讀",
+    "注音遊戲",
+    "注音 無廣告"
+   ],
+   "ja": [
+    "台湾華語",
+    "台湾華語 発音",
+    "注音符号",
+    "ボポモフォ"
+   ],
+   "en-US": [
+    "zhuyin",
+    "bopomofo",
+    "learn zhuyin",
+    "zhuyin for kids"
+   ]
+  },
+  "lumiletters": {
+   "zh-Hant": [
+    "ABC描寫",
+    "字母描寫",
+    "自然發音",
+    "英文字母 學習單"
+   ],
+   "ja": [
+    "アルファベット なぞり書き",
+    "アルファベット プリント",
+    "おうち英語",
+    "フォニックス 幼児"
+   ],
+   "ko": [
+    "알파벳 따라쓰기",
+    "알파벳 학습지",
+    "엄마표 영어",
+    "유아 파닉스"
+   ],
+   "en-US": [
+    "abc tracing",
+    "letter tracing",
+    "phonics worksheets"
+   ]
+  },
+  "lumiletterspro": {
+   "zh-Hant": [
+    "自然發音",
+    "字母描寫",
+    "英文 學習單"
+   ],
+   "ja": [
+    "フォニックス",
+    "アルファベット なぞり書き",
+    "おうち英語 アプリ"
+   ],
+   "en-US": [
+    "phonics app",
+    "letter tracing",
+    "homeschool phonics",
+    "phonics no ads"
+   ]
+  },
+  "lumimath": {
+   "zh-Hant": [
+    "找規律",
+    "數學邏輯",
+    "數學學習單",
+    "數感遊戲"
+   ],
+   "ko": [
+    "사고력 수학",
+    "수학 학습지",
+    "유아 수학",
+    "규칙 찾기"
+   ],
+   "ja": [
+    "考える力 算数",
+    "算数 プリント",
+    "さんすう 幼児",
+    "思考力"
+   ]
+  },
+  "lumimathpro": {
+   "zh-Hant": [
+    "心算",
+    "數學練習卷",
+    "邏輯推理",
+    "九九乘法 遊戲"
+   ],
+   "ko": [
+    "사고력 수학",
+    "암산",
+    "수학 학습지",
+    "구구단 게임"
+   ],
+   "en-US": [
+    "mental math",
+    "math worksheet",
+    "logic puzzles kids",
+    "times tables"
+   ]
+  },
+  "lumimission": {
+   "zh-Hant": [
+    "兒童作息",
+    "獎勵表",
+    "集點表",
+    "刷牙 兒童"
+   ],
+   "ja": [
+    "ごほうびシール",
+    "お支度ボード",
+    "ごほうび表",
+    "生活習慣 子供"
+   ],
+   "ko": [
+    "칭찬스티커",
+    "생활습관 아이",
+    "등원준비"
+   ]
+  },
+  "lumimissionpro": {
+   "zh-Hant": [
+    "兒童作息",
+    "兒童生活習慣",
+    "獎勵表"
+   ],
+   "ja": [
+    "お支度ボード",
+    "ごほうびシール",
+    "生活習慣 子供"
+   ],
+   "ko": [
+    "칭찬스티커",
+    "생활습관 아이",
+    "유아 생활습관"
+   ]
+  },
+  "tripplanet": {
+   "zh-Hant": [
+    "帶小孩出國",
+    "飛機上 小孩",
+    "親子旅行",
+    "兒童 旅行遊戲"
+   ],
+   "ja": [
+    "子連れ旅行",
+    "旅行 子ども",
+    "機内 子ども",
+    "子連れ 飛行機"
+   ],
+   "en-US": [
+    "road trip games for kids",
+    "travel bingo",
+    "kids travel activities",
+    "kids travel missions"
+   ]
+  },
+  "lumiweather": {
+   "zh-Hant": [
+    "穿搭 天氣",
+    "今天穿什麼",
+    "外出指數",
+    "天氣 穿搭建議"
+   ],
+   "ja": [
+    "服装 天気",
+    "おでかけ 天気",
+    "おでかけ指数",
+    "今日の服装"
+   ],
+   "en-US": [
+    "what to wear weather",
+    "outfit weather",
+    "what to wear today",
+    "outing score"
+   ]
+  },
+  "gmoneylite": {
+   "zh-Hant": [
+    "旅遊記帳",
+    "旅行記帳",
+    "出國記帳",
+    "日幣換算"
+   ],
+   "ja": [
+    "旅行 家計簿",
+    "海外旅行 家計簿",
+    "旅費 管理",
+    "為替 計算"
+   ],
+   "ko": [
+    "여행 가계부",
+    "일본 여행 가계부",
+    "여행 경비",
+    "환율 계산기"
+   ],
+   "en-US": [
+    "travel budget",
+    "trip expenses",
+    "vacation budget"
+   ]
+  },
+  "gmoney": {
+   "zh-Hant": [
+    "外幣記帳",
+    "多幣別記帳",
+    "記帳 匯率",
+    "海外記帳"
+   ],
+   "ja": [
+    "外貨 家計簿",
+    "海外 家計簿",
+    "海外赴任 家計簿",
+    "出張 経費"
+   ],
+   "ko": [
+    "외화 가계부",
+    "해외 가계부",
+    "환율 가계부"
+   ],
+   "en-US": [
+    "multi currency expense tracker",
+    "expat budget",
+    "currency expense tracker"
+   ],
+   "id": [
+    "catatan keuangan",
+    "catatan pengeluaran",
+    "konversi mata uang"
+   ]
+  },
+  "hourstaglite": {
+   "zh-Hant": [
+    "衝動購物",
+    "衝動消費",
+    "時薪換算",
+    "工時換算"
+   ],
+   "ja": [
+    "衝動買い",
+    "衝動買い 防止",
+    "時給 換算",
+    "節約"
+   ],
+   "ko": [
+    "충동구매",
+    "충동구매 방지",
+    "시급 계산",
+    "소비 습관"
+   ],
+   "en-US": [
+    "price in hours",
+    "impulse buying",
+    "stop impulse spending",
+    "cost in work hours"
+   ]
+  },
+  "hourstag": {
+   "zh-Hant": [
+    "衝動購物",
+    "時薪計算",
+    "省錢"
+   ],
+   "ja": [
+    "衝動買い",
+    "時給 計算",
+    "節約 アプリ"
+   ],
+   "ko": [
+    "충동구매",
+    "시급 계산기",
+    "소비 습관"
+   ],
+   "en-US": [
+    "price in hours",
+    "impulse spending"
+   ]
+  },
+  "moneytag": {
+   "ja": [
+    "副業 収支",
+    "副業 帳簿",
+    "収支管理",
+    "ハンドメイド 売上"
+   ],
+   "zh-Hant": [
+    "接案記帳",
+    "擺攤記帳",
+    "專案記帳",
+    "副業記帳",
+    "收支"
+   ],
+   "en-US": [
+    "side hustle tracker",
+    "income and expense",
+    "rental income tracker",
+    "project expense tracker"
+   ],
+   "vi": [
+    "thu chi",
+    "sổ thu chi",
+    "quản lý thu chi",
+    "bán hàng"
+   ],
+   "cs": [
+    "zisk-ztráta",
+    "příjmy a výdaje",
+    "evidence příjmů a výdajů"
+   ]
+  },
+  "caldaily": {
+   "zh-Hant": [
+    "計算機 主題",
+    "可愛計算機",
+    "計算機 小工具",
+    "分帳"
+   ],
+   "ko": [
+    "계산기 테마",
+    "예쁜 계산기",
+    "계산기 위젯",
+    "더치페이 계산기"
+   ],
+   "ja": [
+    "電卓 かわいい",
+    "電卓 着せ替え",
+    "電卓 ウィジェット",
+    "割り勘"
+   ],
+   "en-US": [
+    "calculator themes",
+    "aesthetic calculator",
+    "cute calculator",
+    "calculator widget"
+   ]
+  },
+  "tripbee": {
+   "zh-Hant": [
+    "行程規劃",
+    "旅遊行程",
+    "打包清單",
+    "行程表"
+   ],
+   "ja": [
+    "旅のしおり",
+    "持ち物リスト",
+    "旅行 計画"
+   ],
+   "ko": [
+    "여행 플래너",
+    "여행 일정",
+    "여행 일정표"
+   ],
+   "en-US": [
+    "trip planner",
+    "itinerary",
+    "packing list"
+   ]
+  },
+  "tripbeelite": {
+   "zh-Hant": [
+    "行程規劃",
+    "旅遊行程",
+    "行程表",
+    "自由行"
+   ],
+   "ja": [
+    "旅のしおり",
+    "しおり",
+    "旅行 計画",
+    "日程表"
+   ],
+   "ko": [
+    "여행 플래너",
+    "여행 일정",
+    "여행 일정표",
+    "대만여행"
+   ],
+   "vi": [
+    "lịch trình du lịch",
+    "lên lịch trình"
+   ],
+   "en-US": [
+    "trip planner",
+    "itinerary"
+   ]
+  },
+  "dailymate": {
+   "zh-Hant": [
+    "旅遊英文",
+    "英文會話",
+    "實用短句"
+   ],
+   "ja": [
+    "旅行 英会話",
+    "英会話 フレーズ"
+   ],
+   "en-US": [
+    "language phrases",
+    "phrasebook",
+    "travel phrases"
+   ]
+  },
+  "dailymatelite": {
+   "zh-Hant": [
+    "學印尼文",
+    "學越南文",
+    "旅遊英文",
+    "學泰文"
+   ],
+   "id": [
+    "belajar bahasa mandarin",
+    "bahasa mandarin",
+    "percakapan mandarin"
+   ],
+   "vi": [
+    "học tiếng Trung",
+    "tiếng Trung giao tiếp",
+    "học tiếng Hoa"
+   ],
+   "ja": [
+    "旅行 英会話",
+    "英会話 フレーズ"
+   ]
+  },
+  "ledmovingtext": {
+   "zh-Hant": [
+    "跑馬燈",
+    "應援燈牌",
+    "接機牌",
+    "LED字幕"
+   ],
+   "ja": [
+    "電光掲示板",
+    "うちわ文字",
+    "LED 掲示板"
+   ],
+   "ko": [
+    "전광판",
+    "응원판",
+    "LED 전광판"
+   ],
+   "de-DE": [
+    "Laufschrift",
+    "LED Laufschrift",
+    "Leuchtschrift"
+   ],
+   "th": [
+    "ป้ายไฟวิ่ง",
+    "ป้ายไฟ LED"
+   ],
+   "en-US": [
+    "led banner",
+    "scrolling text",
+    "marquee"
+   ]
+  },
+  "snapport": {
+   "en-US": [
+    "passport photo",
+    "2x2 photo",
+    "id photo"
+   ],
+   "en-GB": [
+    "passport photo",
+    "uk passport photo",
+    "digital photo code"
+   ],
+   "zh-Hant": [
+    "證件照",
+    "護照照片",
+    "大頭照"
+   ],
+   "ja": [
+    "証明写真",
+    "パスポート写真"
+   ],
+   "de-DE": [
+    "Bewerbungsfoto",
+    "Visumfoto"
+   ],
+   "cs": [
+    "pasová fotografie",
+    "průkazovka"
+   ]
+  },
+  "snapportlite": {
+   "zh-Hant": [
+    "證件照",
+    "護照照片",
+    "線上換護照",
+    "大頭照"
+   ],
+   "ja": [
+    "証明写真",
+    "パスポート写真",
+    "証明写真 アプリ"
+   ],
+   "id": [
+    "pas foto",
+    "foto paspor",
+    "pas foto 3x4"
+   ],
+   "vi": [
+    "ảnh thẻ",
+    "chụp ảnh thẻ",
+    "ảnh thẻ 3x4"
+   ],
+   "cs": [
+    "průkazovka",
+    "pasová fotografie"
+   ],
+   "en-US": [
+    "passport photo",
+    "id photo"
+   ]
+  },
+  "aim990": {
+   "zh-Hant": [
+    "多益",
+    "多益 app",
+    "多益聽力",
+    "多益單字",
+    "多益閱讀"
+   ],
+   "vi": [
+    "luyện thi toeic",
+    "toeic",
+    "toeic nghe đọc",
+    "từ vựng toeic"
+   ],
+   "ja": [
+    "TOEIC アプリ",
+    "TOEIC 対策",
+    "TOEIC 文法",
+    "TOEIC 単語"
+   ],
+   "id": [
+    "toeic",
+    "latihan toeic",
+    "persiapan toeic"
+   ],
+   "en-US": [
+    "toeic",
+    "toeic practice",
+    "toeic listening"
+   ]
+  },
+  "wordmate": {
+   "zh-Hant": [
+    "背單字",
+    "單字 小工具",
+    "學日文",
+    "學韓文"
+   ],
+   "ja": [
+    "単語帳",
+    "単語 ウィジェット",
+    "単語 買い切り",
+    "韓国語 単語"
+   ],
+   "en-US": [
+    "vocabulary widget",
+    "apple watch vocabulary",
+    "vocab app"
+   ],
+   "ko": [
+    "단어 위젯",
+    "영단어 암기",
+    "일본어 단어"
+   ]
+  },
+  "wordmatelite": {
+   "zh-Hant": [
+    "背單字",
+    "每天背單字",
+    "單字 app",
+    "背英文單字"
+   ],
+   "id": [
+    "kosakata",
+    "belajar bahasa mandarin",
+    "hafalan kosakata",
+    "belajar bahasa jepang"
+   ],
+   "vi": [
+    "học từ vựng",
+    "từ vựng tiếng nhật",
+    "học tiếng nhật",
+    "học tiếng hàn"
+   ],
+   "ja": [
+    "単語帳",
+    "英単語 アプリ",
+    "英単語 暗記"
+   ],
+   "en-US": [
+    "vocabulary builder",
+    "learn vocabulary",
+    "daily vocabulary"
+   ]
+  },
+  "wifiaid": {
+   "en-US": [
+    "wifi troubleshoot",
+    "wifi widget",
+    "connected but no internet",
+    "internet not working"
+   ],
+   "ja": [
+    "ネット 遅い",
+    "wifi 診断",
+    "wifi ウィジェット"
+   ],
+   "zh-Hant": [
+    "網路檢測",
+    "網路斷線",
+    "wifi 小工具"
+   ]
+  },
+  "wifiaidlite": {
+   "ja": [
+    "ネット 遅い",
+    "ネット 繋がらない",
+    "wifi 診断",
+    "ネット不調"
+   ],
+   "zh-Hant": [
+    "網路檢測",
+    "網路斷線",
+    "網路很慢",
+    "wifi 很慢"
+   ],
+   "en-US": [
+    "wifi troubleshoot",
+    "connected but no internet",
+    "internet not working",
+    "wifi problem"
+   ],
+   "id": [
+    "wifi lemot",
+    "cek wifi",
+    "internet lemot"
+   ],
+   "ko": [
+    "인터넷 안됨",
+    "와이파이 느림",
+    "인터넷 끊김"
+   ]
+  },
+  "battai": {
+   "zh-Hant": [
+    "電池健康",
+    "電池健康度",
+    "電池壽命",
+    "電池檢測"
+   ],
+   "ja": [
+    "バッテリー 劣化",
+    "バッテリー 寿命",
+    "バッテリー 交換時期"
+   ],
+   "en-US": [
+    "battery health",
+    "battery life",
+    "battery cycle count"
+   ],
+   "ko": [
+    "배터리 성능",
+    "배터리 수명",
+    "아이폰 배터리"
+   ]
+  },
+  "dbhalo": {
+   "zh-Hant": [
+    "分貝",
+    "分貝計",
+    "噪音計",
+    "噪音測量"
+   ],
+   "ko": [
+    "층간소음",
+    "소음 측정기",
+    "데시벨",
+    "소음측정"
+   ],
+   "en-US": [
+    "decibel meter",
+    "noise meter",
+    "sound meter"
+   ],
+   "ja": [
+    "騒音計",
+    "デシベル",
+    "騒音 測定"
+   ]
+  },
+  "qrcodehalo": {
+   "en-US": [
+    "qr code safe",
+    "qr code scanner",
+    "qr scanner",
+    "safe qr scanner"
+   ],
+   "ko": [
+    "큐싱",
+    "큐알코드",
+    "qr코드 스캔"
+   ],
+   "en-GB": [
+    "qr code scanner",
+    "qr scanner",
+    "qr code safe"
+   ],
+   "zh-Hant": [
+    "qr code",
+    "掃碼",
+    "qr code 掃描",
+    "條碼掃描"
+   ],
+   "ja": [
+    "qrコード 読み取り",
+    "qrコード"
+   ]
+  },
+  "zipbox": {
+   "zh-Hant": [
+    "解壓縮",
+    "rar",
+    "7z",
+    "壓縮檔"
+   ],
+   "ja": [
+    "解凍",
+    "rar 解凍",
+    "zip 解凍",
+    "7z"
+   ],
+   "ko": [
+    "압축풀기",
+    "압축 해제",
+    "rar"
+   ],
+   "en-US": [
+    "unzip",
+    "rar",
+    "7z",
+    "rar extractor"
+   ]
+  },
+  "cyca": {
+   "zh-Hant": [
+    "月經",
+    "月經日曆",
+    "生理期",
+    "經期"
+   ],
+   "en-US": [
+    "private period tracker",
+    "period tracker no account",
+    "offline period tracker"
+   ],
+   "id": [
+    "aplikasi haid",
+    "kalender haid",
+    "kalender menstruasi",
+    "siklus haid"
+   ],
+   "vi": [
+    "lịch kinh nguyệt",
+    "theo dõi kinh nguyệt",
+    "kinh nguyệt"
+   ]
+  },
+  "sereno": {
+   "zh-Hant": [
+    "睡眠音效",
+    "sereno",
+    "白噪音",
+    "褐噪音"
+   ],
+   "ja": [
+    "スリープサウンド",
+    "sereno",
+    "ブラウンノイズ",
+    "雨音"
+   ],
+   "en-US": [
+    "brown noise",
+    "sound machine",
+    "sereno",
+    "rain sounds"
+   ]
+  },
+  "claudeusagemini": {
+   "en-US": [
+    "claude usage",
+    "codex usage",
+    "ai usage tracker",
+    "claude limit"
+   ],
+   "ja": [
+    "ai 使用量",
+    "claude 使用量",
+    "claude code",
+    "レートリミット"
+   ],
+   "zh-Hant": [
+    "claude 用量",
+    "ai 用量",
+    "claude code"
+   ]
+  }
+ }
+}

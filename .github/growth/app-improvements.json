@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-13T12:11:02Z",
+ "updated_at": "2026-10-13T12:19:47Z",
  "legend": {
   "claude": "雲端 Claude 可直接做",
   "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -94,7 +94,12 @@
      "detail": "寫 3 則印尼文 Threads／IG 文案（cek skor ATS、SMK 畢業季、watermark 陷阱）加 1 支 30 秒 TikTok 腳本，附追蹤碼 ct=cvd_id_ats；放進 .github/growth/app-posts.json（lang=id）。同時補 th／en／zh-Hant 各 1 則。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cvdesk/social-posts.md",
+      ".github/growth/drafts/cvdesk/tiktok-script-id-30s.md"
+     ]
     },
     {
      "id": "cvdesk-02",
@@ -102,7 +107,8 @@
      "detail": "growth_scoreboard 現在量的是各語系關鍵字欄前 3 個（id: cv/buat cv/template cv；en: resume builder/resume maker/resume）。新增 .github/growth/measure-keywords.json 覆寫：id「cv ats」「skor ats」；en-US「ats resume」「ats resume builder」；th「เรซูเม่ ats」；zh-Hant「英文履歷」「ATS 履歷」，每天追蹤 ID 是否進前 200。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "cvdesk-03",
@@ -110,7 +116,11 @@
      "detail": "在 repo 寫一頁誠實的「單欄、標準標題、PDF/DOCX、不要圖示技能條」清單（id/th/en/zh-Hant），App 只列為其中一個選項；作為所有外宣的落地頁，不做模板量產。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cvdesk/ats-checklist.html"
+     ]
     },
     {
      "id": "cvdesk-04",
@@ -154,7 +164,11 @@
      "detail": "把 posts 的三則加入 telegram_posts.json，排在 11 月–2 月日本冬季旅遊與 2027 春節前 3–4 週；寫 30 秒 Shorts 腳本「店門口 1,280 日圓＝？」。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoneylite/shorts-script-30s-shop-counter-yen.md"
+     ]
     },
     {
      "id": "gmoneylite-05",
@@ -162,7 +176,12 @@
      "detail": "韓文「일본 여행 환율 계산＋가계부 실사용기」草稿、Product Hunt 英文 tagline「offline trip expense tracker, no account」與 4 張截圖說明，交擁有者以本人名義發。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoneylite/naver-blog-japan-trip-exchange-budget-ko.md",
+      ".github/growth/drafts/gmoneylite/product-hunt-launch-en.md"
+     ]
     },
     {
      "id": "gmoneylite-06",
@@ -210,7 +229,8 @@
      "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪掉「穿衣／get dressed／着替え」（不在 listing），改成 listing 內的吃飯、刷牙、睡覺、收玩具四個免費任務＋兔兔夥伴＋一次內購；加入「50 種語言、App 內切換」；新增 ko（칭찬스티커 痛點）與 vi（新住民家庭）兩篇。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案，不在 drafts/ 範圍內），所以沒有動。可直接貼上的替換稿已寫好：3 篇改寫（刪掉穿衣、補上 50 種語言）＋新增 ko、vi 各 1 篇，見 drafts/lumimission/telegram-replacement-posts.md"
     },
     {
      "id": "lumimission-03",
@@ -218,7 +238,8 @@
      "detail": "growth_scoreboard.py 只量每語系前 3 個關鍵字。把 /home/user/ios-app-guide/_engine/data/mission_routines_full.json 的 zh-Hant 前三改成「兒童作息,獎勵表,集點表」、ja「ごほうびシール,お支度ボード,生活習慣」、ko「칭찬스티커,생활습관,등원준비」，並刪掉 zh-Hans 混入的「逻辑,数字,照片,滤镜,天气」；同時把資料檔的語言行改成 50，讓 GEO 頁與 Telegram 一併繼承。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需要修改 _engine/data/mission_routines_full.json（資料檔，不在 drafts/ 範圍內），所以沒有動。計分板量測詞已放在 challenge_terms.lumimission；語言行改成 50、清掉 zh-Hans 無關關鍵字這兩件事還沒做"
     },
     {
      "id": "lumimission-04",
@@ -226,7 +247,12 @@
      "detail": "腳本：孩子點一下→兔兔歡呼→全星球慶祝→家長後台 7 天日曆，繁中／日／韓三版標題與字幕稿；邀請信：追蹤 1–10k 的幼教老師或育兒創作者，附兌換碼流程、明確揭露合作、不索取評分。擁有者只需錄影與寄出。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimission/video-script-30s-routine-missions.md",
+      ".github/growth/drafts/lumimission/creator-invitation-emails-zh-hant.md"
+     ]
     },
     {
      "id": "lumimission-05",
@@ -278,7 +304,11 @@
      "detail": "本週起每週 2–3 則 zh-Hant 貼文草稿（Threads／FB 親子社團），貼文不放連結、連結放個人檔案；vi／ja／en 各 1 則（已附）。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumibopomofo/grade1-zhuyin-season-posts-zh-hant.md"
+     ]
     },
     {
      "id": "lumibopomofo-06",
@@ -286,7 +316,13 @@
      "detail": "把 tools/zhuyin-bopomofo-chart.html 轉成可列印 PDF，附「給幼兒園／小一／僑校老師」一頁說明與寄送信草稿，由老闆寄出；這是真實第三方提及的來源。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumibopomofo/zhuyin-chart-printable.html",
+      ".github/growth/drafts/lumibopomofo/teacher-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumibopomofo/teacher-email-zh-hant.md"
+     ]
     },
     {
      "id": "lumibopomofo-07",
@@ -294,7 +330,8 @@
      "detail": "在 growth_scoreboard 的 zh-Hant 字表加入「注音拼讀、聲調、注音描寫、幼小銜接」，每週記錄 Lite／Pro 名次與第 1 名評分數。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "lumibopomofo-08",
@@ -302,7 +339,8 @@
      "detail": "用 lookup 的 description 回填 bopomofo_full.json（TW／US／JP／KR／VN），避免後續分析再用舊稿。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "需用 App Store live 文案改寫 _engine/data/bopomofo_full.json（TW／US／JP／KR／VN），屬 drafts 以外的資料檔與 ASC 線上資料，不在本次可寫範圍"
     },
     {
      "id": "lumibopomofo-09",
@@ -354,7 +392,8 @@
      "detail": "在 .github/scripts/telegram_posts.json 新增 Mochi 的 pt-BR、de 兩則，文案照本報告 posts 欄（老實寫免費範圍、50 種語言 App 內切換），並把現有 en/zh-Hant 文案補上免費範圍一句。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json (outside drafts/). The pt-BR/de copy that states the free scope already exists in app-posts.json (ct mochi_ptBR_2, mochi_de_"
     },
     {
      "id": "mochi-04",
@@ -362,7 +401,8 @@
      "detail": "growth_scoreboard.py 目前只量每語系關鍵字欄前 3 個（en-US 是 todo/list/reminder）。新增一個 challenge-terms 檔，Mochi 加 US「cute to do list」「aesthetic to do list」、BR「lista de tarefas fofa」、DE「süße to-do liste」、JP「かわいい todo」、TW「可愛待辦」，每天追蹤。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "mochi-05",
@@ -370,7 +410,12 @@
      "detail": "在 repo 內草擬英文與日文各一封：說明 Mochi 是獨立開發、免費範圍、101 主題、Apple Watch，請對方評估收錄到 aesthetic to-do list 清單文，不付費、不要求回覆。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/mochi/press-note-gridfiti-en.md",
+      ".github/growth/drafts/mochi/press-note-appliv-ja.md"
+     ]
     },
     {
      "id": "mochi-06",
@@ -414,7 +459,11 @@
      "detail": "腳本：3 個專案（接案、擺攤、出租）＋「交通」標籤跨專案加總，zh／ja／en／vi 字幕；Telegram 補 zh-Hant／ja／vi 條目（見 posts）。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/moneytag/demo-video-script-60s-projects-and-tags.md"
+     ]
     },
     {
      "id": "moneytag-05",
@@ -422,7 +471,12 @@
      "detail": "「副業ごとの収支を分けて、タグで横断集計する」（不提確定申告）；Indie Hackers「project ledgers + cross-project tags, no subscription」；成績單每日追 CZ「zisk-ztráta」名次。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/moneytag/note-com-fukugyo-shushi-tags-ja.md",
+      ".github/growth/drafts/moneytag/indie-hackers-post-en.md"
+     ]
     },
     {
      "id": "moneytag-06",
@@ -466,7 +520,8 @@
      "detail": "目前共用 social_shotinbox，改成 sib_<lang>_* 以便在 ASC Campaigns 區分來源。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "需改 Telegram 發文程式／名冊把 social_shotinbox 追蹤碼拆成 sib_<lang>_*（Telegram 程式變更，不在本次權限）；本次草稿已改用 sib_tw_guide／sib_ja_guide／sib_en_guide／sib_en_reddit。"
     },
     {
      "id": "shotinbox-03",
@@ -474,7 +529,13 @@
      "detail": "放 repo 草稿，供網站與投稿使用。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/shotinbox/guide-too-many-screenshots-zh-hant.md",
+      ".github/growth/drafts/shotinbox/guide-too-many-screenshots-ja.md",
+      ".github/growth/drafts/shotinbox/guide-too-many-screenshots-en.md"
+     ]
     },
     {
      "id": "shotinbox-04",
@@ -538,7 +599,12 @@
      "detail": "zh-Hant「線上換護照照片：在家拍＋上傳前檢查清單」（引用外交部線上申換專區與領務局照片規格，說明適用條件：成年、有戶籍、自然人憑證）；ja「オンライン申請の顔写真を自分で用意するときのチェック」。揭露開發者身份，App 只是選項之一；owner 以本人名義發布在方格子／Medium／note。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapportlite/guide-online-passport-renewal-photo-zh-hant.md",
+      ".github/growth/drafts/snapportlite/note-com-online-shinsei-kaoshashin-check-ja.md"
+     ]
     },
     {
      "id": "snapportlite-05",
@@ -546,7 +612,11 @@
      "detail": ".github/growth/app-posts.json 加 zh-Hant／ja／id／vi 四則（ct：spl_tw_online、spl_ja_online、spl_id_job、spl_vi_doc）；telegram_posts.json 的 snapportlite 2 則改情境式並補 zh-Hant／id／vi。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapportlite/situational-posts-and-telegram.md"
+     ]
     },
     {
      "id": "snapportlite-06",
@@ -554,7 +624,8 @@
      "detail": "TW 證件照／護照照片／線上換護照、JP 証明写真／パスポート写真、ID pas foto／foto paspor、VN ảnh thẻ／chụp ảnh thẻ 加進 growth_scoreboard.py；以 CZ průkazovka 為對照，追 ASC 改動前後 14 天。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "snapportlite-07",
@@ -562,7 +633,11 @@
      "detail": "字幕稿 zh-Hant／ja／id／vi；owner 錄製。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapportlite/shorts-script-white-wall-35x45-4x6.md"
+     ]
     },
     {
      "id": "snapportlite-08",
@@ -618,7 +693,8 @@
      "detail": "telegram_posts.json 中 6782275018 的 en 條目「(a pay-once alternative to Remini)」整段移除，改為「50 interface languages, switch in-app」。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需修改 telegram_posts.json 刪除「alternative to Remini」（Telegram 資料變更，不在本次權限）。"
     },
     {
      "id": "unblurry-02",
@@ -626,7 +702,11 @@
      "detail": "unblurry_full.json：TW 名稱改「照片變清晰」、JP「写真高画質化」、KR「사진 선명하게」；keywords 截到 100 字元並讓前 3 個詞是 TW「照片變清晰,模糊照片變清晰,老照片修復」、JP「写真 高画質化,ぼやけ 補正,古い写真」；新增 nl「foto scherper maken」、sv「gör foto skarpare」、no「gjør bilde skarpt」、fi「tarkenna kuva」複製 DK 打法。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/unblurry/data-file-name-and-keyword-sync.md"
+     ]
     },
     {
      "id": "unblurry-05",
@@ -634,7 +714,12 @@
      "detail": "用店主提供、已取得同意的照片做輪播圖（zh-Hant／ja／id／en 字幕），寫一頁誠實教學「手震照片能救回多少？哪些救不回」放 repo guides。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/unblurry/guide-how-much-can-a-blurry-photo-be-saved-zh-hant.md",
+      ".github/growth/drafts/unblurry/before-after-carousel-pack.md"
+     ]
     },
     {
      "id": "unblurry-06",
@@ -682,7 +767,11 @@
      "detail": "在 alice51849/ios-app-guide 的 GitHub Pages 新增 usagenow-security.html：登入流程截圖說明、資料存放位置（裝置鑰匙圈）、UsageNow 只與各服務連線、如何撤銷存取。給 Show HN／Reddit／Zenn 一個可引用的來源，也供 AI 助理引用。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/claudeusagemini/usagenow-security.html"
+     ]
     },
     {
      "id": "claudeusagemini-03",
@@ -690,7 +779,13 @@
      "detail": "Show HN 主文（說明 Keychain、無伺服器、為何做手機端）＋常見安全問答；r/ClaudeAI、r/ChatGPTCoding 的 showcase 版本（揭露開發者身分）；Zenn／Qiita 文章「Claude Code の5時間・週間制限を確認する方法まとめ」誠實列出 /usage、claude-monitor 等免費方法，最後介紹 UsageNow 並揭露身分。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/claudeusagemini/show-hn-post-en.md",
+      ".github/growth/drafts/claudeusagemini/reddit-showcase-en.md",
+      ".github/growth/drafts/claudeusagemini/zenn-article-claude-code-limits-ja.md"
+     ]
     },
     {
      "id": "claudeusagemini-04",
@@ -706,7 +801,8 @@
      "detail": "growth-scoreboard 加入 US／JP／TW Developer Tools 免費榜前 100 檢查，以及 US「claude usage」「codex usage」「ai usage tracker」、JP「ai 使用量」每日名次，設定里程碑：US claude usage 進前 5、任一店面進 Developer Tools 前 100。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "claudeusagemini-08",
@@ -754,7 +850,12 @@
      "detail": "寫 3 支 30–45 秒的 iPad 螢幕錄影腳本（100 款風格翻頁、手寫→抽認卡→FSRS、PDF 講義標註），標題用 zh/ja/ko 在地詞；下列 4 則貼文寫進 app-posts.json（ct=n100_tw_exam 等），免費額度一律寫「1 本最多 5 頁、2 款風格」。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/notesstudio100/video-scripts.md",
+      ".github/growth/drafts/notesstudio100/social-posts.md"
+     ]
     },
     {
      "id": "notesstudio100-02",
@@ -762,7 +863,8 @@
      "detail": "measure-keywords.json 加：zh-Hant「手寫筆記」「PDF 標註」「國考 筆記」；ja「手書きノート」「買い切り ノート」；ko「필기 앱」「손글씨 노트」。用 live lookup 更新 notesstudio100_full.json 的 ja 名稱與免費額度文字，避免再用過時文案發文。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "notesstudio100-03",
@@ -770,7 +872,12 @@
      "detail": "寫「買い切りの手書きノートを作った理由」（ja）與「평생소장 필기 앱을 만든 이유」（ko）草稿，第一人稱、不比較他牌；交店主本人帳號發。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/notesstudio100/note-com-article-ja.md",
+      ".github/growth/drafts/notesstudio100/naver-blog-article-ko.md"
+     ]
     },
     {
      "id": "notesstudio100-04",
@@ -816,9 +923,10 @@
      "id": "aim990-03",
      "title": "更新 aim990_full.json 為 live 文案並補量測字",
      "detail": "把 _engine/data/aim990_full.json 各語系名稱/描述更新為 v2.0.1 live 版；zh-Hant keywords 補「多益,多益聽力,多益閱讀,多益單字,toeic app」、ja 補「TOEIC 弱点,TOEIC アプリ」、vi 補「luyện thi toeic,toeic nghe đọc」，讓 growth_scoreboard 量對字。",
-     "owner": "claude",
+     "owner": "local",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "量測字已依規則回傳在 challenge_terms.aim990；把 _engine/data/aim990_full.json 同步成 v2.0.1 live 文案屬資料檔修改（drafts 以外），不在雲端草稿範圍。註：live 描述可從公開 iTunes lookup 讀到（TW「Aim990：英文弱點教練」v2.0.1，53 個語系碼），本機同步時可直接取用"
     },
     {
      "id": "aim990-04",
@@ -826,7 +934,8 @@
      "detail": "從 data/ios-app-decision-matrix.* 移除 aim990plus 並從 aim990 的 sibling_app_keys 拿掉；buyer_intent 的「best …」改中性描述；刪 telegram_posts.json 的 4 筆 Aim990 Plus，把 Aim990 的 en/ja/ko 貼文改成「8 分鐘診斷→最弱 3 項→每天一項」並新增 vi 貼文。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需修改 data/ios-app-decision-matrix.* 與 .github/scripts/telegram_posts.json（Telegram 程式碼／資料變更），不屬雲端草稿範圍"
     },
     {
      "id": "aim990-05",
@@ -842,7 +951,13 @@
      "detail": "寫「怎麼找出自己的多益失分類型」方法文草稿（Dcard 英文檢定板、PTT Eng-Class，文末揭露開發者、只提一次 App 名、不放連結）；寫 3 支 30 秒直式影片腳本：8 分鐘診斷實錄、緊急模式、15 秒提示文法速度題。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aim990/dcard-ptt-toeic-lost-points-method.md",
+      ".github/growth/drafts/aim990/shorts-scripts-30s-diagnosis-panic-grammar.md",
+      ".github/growth/drafts/aim990/youtuber-offer-code-email-zh-hant.md"
+     ]
     },
     {
      "id": "aim990-10",
@@ -882,7 +997,13 @@
      "detail": "PTT MacShop／Mobile01「賣 iPhone 前怎麼整理電池資訊」、note「iPhoneを売る前に確認したいバッテリー情報」草稿（揭露身分、不洗版）；Telegram 以「二手報告」框架發 spotlight；把線上描述回填 _engine/data/battai_full.json。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/battai/ptt-mobile01-before-selling-iphone-battery-zh-hant.md",
+      ".github/growth/drafts/battai/note-before-selling-iphone-battery-ja.md",
+      ".github/growth/drafts/battai/telegram-spotlight-resale-report.md"
+     ]
     },
     {
      "id": "battai-04",
@@ -934,7 +1055,13 @@
      "detail": "佇列目前只有 en/ja/zh-Hant；新增 ko 一則（수능·100일·전역일 情境）。另草擬 Dcard 考試版「學測百日倒數」與 Clien 아이폰 게시판 開發者分享各一則，依版規揭露身分。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/countdaysnow/dcard-exam-board-gsat-100-days.md",
+      ".github/growth/drafts/countdaysnow/clien-iphone-board-developer-post.md",
+      ".github/growth/drafts/countdaysnow/telegram-ko-copy.md"
+     ]
     },
     {
      "id": "countdaysnow-05",
@@ -942,7 +1069,12 @@
      "detail": "兩家都寫過倒數小工具清單文；信中老實寫免費 3 事件、一次買斷、農曆／民國並列、動態島，不付費不催促。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/countdaysnow/pitch-email-mrmad.md",
+      ".github/growth/drafts/countdaysnow/pitch-email-applealmond.md"
+     ]
     },
     {
      "id": "countdaysnow-06",
@@ -950,7 +1082,8 @@
      "detail": "TW「倒數日」「倒數 小工具」；KR「디데이」「디데이 위젯」；JP「あと何日」「カウントダウン」；US 品牌詞「countdaysnow」(第一版指出被 CountDays／Countdown Now 截流)。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "countdaysnow-07",
@@ -1002,7 +1135,14 @@
      "detail": "重點句：「店面可能顯示英文，但 App 內有印尼文／越南文，50 種語言可在 App 內切換；不用帳號、離線可用」。附截圖步驟：設定→語言。由擁有者經社團管理員同意後分享到在台移工／新住民 Facebook 社團與新住民家庭服務中心。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cyca/community-one-pager-id.md",
+      ".github/growth/drafts/cyca/community-one-pager-vi.md",
+      ".github/growth/drafts/cyca/admin-request-letters.md",
+      ".github/growth/drafts/cyca/printable-flyer-id-vi.html"
+     ]
     },
     {
      "id": "cyca-05",
@@ -1010,7 +1150,11 @@
      "detail": "對象：bearable.app 2026 經期 App 榜、Mozilla Privacy Not Included、tw.my-best.com 生理期 App 排行。證據：App Store 隱私標示「未收集資料」、無伺服器、無帳號；不提價格。由擁有者寄出。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cyca/pitch-emails-privacy-reviewers.md"
+     ]
     },
     {
      "id": "cyca-06",
@@ -1018,7 +1162,8 @@
      "detail": "在 growth-scoreboard 的 cyca 關鍵字清單加入 TW「月經」、US「private period tracker」「period tracker no account」、ID「aplikasi haid」、VN「lịch kinh nguyệt」，追蹤副標調整前後的名次變化。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "cyca-07",
@@ -1078,7 +1223,11 @@
      "detail": "把 zh-Hant／id／vi 貼文（含 50 語言、只切介面）加進 .github/growth/app-posts.json（ct：dml_tw_care、dml_id_care、dml_vi_care），並改寫 telegram_posts.json 的 dailymatelite 2 則為情境式。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymatelite/caregiver-posts-and-telegram.md"
+     ]
     },
     {
      "id": "dailymatelite-05",
@@ -1086,7 +1235,8 @@
      "detail": "TW 學印尼文／學越南文／旅遊英文、ID belajar bahasa mandarin、VN học tiếng Trung 加進 growth_scoreboard.py，每天追名次。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "dailymatelite-06",
@@ -1094,7 +1244,11 @@
      "detail": "印尼文介面＋練中文卡片→切回中文介面，字幕 zh-Hant／id；owner 錄製。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymatelite/shorts-script-indonesian-ui-practice-chinese.md"
+     ]
     },
     {
      "id": "dailymatelite-07",
@@ -1138,7 +1292,13 @@
      "detail": "ko：「층간소음 기록하는 법」草稿，寫明可申請이웃사이센터官方量測、App 是估算值、揭露開發者身分；zh-Hant：回覆噪音提問的模板，主動提醒手機數值不能當法律證據；Telegram 先發 ko／zh-Hant 版。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dbhalo/naver-floor-noise-logging-guide-ko.md",
+      ".github/growth/drafts/dbhalo/ptt-dcard-noise-reply-templates-zh-hant.md",
+      ".github/growth/drafts/dbhalo/telegram-spotlight-ko-zh-hant.md"
+     ]
     },
     {
      "id": "dbhalo-04",
@@ -1146,7 +1306,11 @@
      "detail": "確認版規後，以設計說明（事件分類在裝置端、不保存麥克風音訊、非醫療器材）為主，不點名競品。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dbhalo/reddit-snoring-no-raw-audio-en.md"
+     ]
     },
     {
      "id": "dbhalo-05",
@@ -1198,7 +1362,8 @@
      "detail": "在 telegram_post.py 加規則：lookup 截圖少於 3 張的 App 自動跳過；同時備妥 zh-Hant／ja／en／vi 貼文（見 posts），截圖上線即發。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "要在 telegram_post.py 加「截圖少於 3 張就跳過」的門檻，屬於 Telegram 程式變更；四語貼文 app-posts.json 裡已經有。"
     },
     {
      "id": "hourstaglite-04",
@@ -1206,7 +1371,14 @@
      "detail": "同一套「這東西＝幾小時工」素材（zh-Hant／ja／en），結尾一律導向免費 Lite。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/hourstaglite/cards-captions-and-posting-rules.md",
+      ".github/growth/drafts/hourstaglite/card-checkout-hours-zh-hant.svg",
+      ".github/growth/drafts/hourstaglite/card-checkout-hours-ja.svg",
+      ".github/growth/drafts/hourstaglite/card-checkout-hours-en.svg"
+     ]
     },
     {
      "id": "hourstaglite-05",
@@ -1262,7 +1434,8 @@
      "detail": "growth_scoreboard.py 的 opportunities() 排除 result_count<30 的詞並在報表標示每詞結果數；加覆寫詞 TW 跑馬燈／應援燈牌／接機牌、JP 電光掲示板／うちわ文字、KR 전광판／응원판、DE Laufschrift、TH ป้ายไฟวิ่ง。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "ledmovingtext-05",
@@ -1270,7 +1443,11 @@
      "detail": "市集攤位多句輪播、接機口 90 度大字、演唱會排隊；分鏡與 zh-Hant／ja／ko 字幕稿；owner 錄製後發 Shorts／Reels／Threads。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/ledmovingtext/vertical-video-scripts-3x.md"
+     ]
     },
     {
      "id": "ledmovingtext-06",
@@ -1278,7 +1455,11 @@
      "detail": "整理台灣 2026 Q4–2027 Q1 公開的演唱會、跨年、市集日期，產出場次前 2–3 天的貼文排程（含「先查主辦是否禁發光物」提醒）給 threads-autopilot。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/ledmovingtext/event-calendar-post-schedule-2026q4-2027q1.md"
+     ]
     },
     {
      "id": "ledmovingtext-07",
@@ -1326,7 +1507,8 @@
      "detail": "telegram_posts.json 中 LockHour en 的「(a pay-once alternative to Opal/Forest)」改為「a pay-once app blocker, no subscription」；順手六語都加 50 種語言句。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json to replace 'a pay-once alternative to Opal/Forest' with 'a pay-once app blocker, no subscription' and add the 50-language li"
     },
     {
      "id": "lockhour-06",
@@ -1334,7 +1516,8 @@
      "detail": "TW「封鎖app」「戒手機」；JP「アプリ制限」「スマホ依存」；US「app blocker」「block apps」「app blocker no subscription」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "lockhour-07",
@@ -1342,7 +1525,12 @@
      "detail": "腳本：首次授權 Screen Time 流程、開始時段、強制模式冷靜倒數；note.com「朝スマホをやめる Morning Reset」實用文。店主錄製／貼文。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lockhour/demo-video-script-honest-walkthrough.md",
+      ".github/growth/drafts/lockhour/note-com-morning-reset-ja.md"
+     ]
     },
     {
      "id": "lockhour-08",
@@ -1402,7 +1590,8 @@
      "detail": "telegram_posts.json 的 6779552704：刪「給孩子看的天氣／child-friendly／親子で見る」，改用 live 名稱與 listing 的外出指數、一句判斷、最佳時段、帶傘／防曬提示、Apple WeatherKit、50 語可切換；/home/user/ios-app-guide/_engine/data/weather_full.json 的「40 多種語言」全部改 50，zh-Hant 前三關鍵字改「穿搭 天氣,今天穿什麼,外出指數」、ja「服装 天気,おでかけ 天気,おでかけ指数」、en「what to wear weather,outfit weather,outing score」，讓計分板量利基詞。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需要修改 telegram_posts.json 與 _engine/data/weather_full.json，所以沒有動。Telegram 三篇替換稿（刪掉「給孩子看」）、17 個語系「40 多種語言」改 50 的句型（已附 zh-Hant／ja／en-US／ko）、前三關鍵字的新值，見 drafts/lumiweather/telegram-and-data-file-replacemen"
     },
     {
      "id": "lumiweather-04",
@@ -1410,7 +1599,13 @@
      "detail": "寫 6 篇繁中 Threads 短文，各對應一個觸發（鋒面南下、早晚溫差大、颱風前一天、梅雨開始、紫外線過量、寒流），附外出指數截圖指引，擁有者當天挑一篇發；寫 note.com 日文開發記「天気予報の数字を1つの指数にした理由」草稿與三語「3 秒決定穿什麼」Shorts 腳本。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumiweather/weather-trigger-threads-posts-zh-hant.md",
+      ".github/growth/drafts/lumiweather/note-com-dev-diary-outing-score-ja.md",
+      ".github/growth/drafts/lumiweather/shorts-script-3-second-outfit.md"
+     ]
     },
     {
      "id": "lumiweather-05",
@@ -1466,7 +1661,11 @@
      "detail": "zh-Hant／ko／ja 貼文（已附，不提賽事名稱）；Telegram spotlight；scoreboard 加 TW「數學 規律 邏輯」、KR「사고력 수학」、JP「考える力 算数」；math_planet_full.json 同步 live。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimath/telegram-copy.md"
+     ]
     },
     {
      "id": "lumimath-05",
@@ -1514,7 +1713,13 @@
      "detail": "zh-Hant／en 兩版，附注音釣魚與家長頁截圖說明；對象：全美中文學校聯合總會、僑委會華文網教師社群、各地台灣家長社團管理員；老闆寄出。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumibopomofopro/overseas-teacher-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumibopomofopro/overseas-teacher-one-pager-en.html",
+      ".github/growth/drafts/lumibopomofopro/pitch-email-overseas-chinese-schools.md"
+     ]
     },
     {
      "id": "lumibopomofopro-06",
@@ -1522,7 +1727,8 @@
      "detail": "bopomofo_pro_full.json 的 JP 名稱改「台湾華語」版、TW 說明換成 live 全形版，避免後續分析再誤判。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "需改 _engine/data/bopomofo_pro_full.json（JP 名稱改台湾華語版、TW 說明換 live 全形版），屬 drafts 以外的資料檔與 ASC 線上資料"
     },
     {
      "id": "lumibopomofopro-07",
@@ -1578,7 +1784,8 @@
      "detail": "telegram_posts.json 新增 6792850916 的 zh-Hant（租屋傳身分證）與 ko（주민번호 뒷자리）條目；maskmyfile_full.json 前 3 個關鍵字改為 ja「黒塗り,墨消し,マイナンバー 隠す」、ko「주민번호 가리기,신분증 마스킹,PDF 가리기」、zh-Hant「打碼,身分證 遮,PDF 塗黑」、en「redact pdf,black out text,anonymize」讓成績單量到真實詞。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "maskmyfile-04",
@@ -1586,7 +1793,13 @@
      "detail": "repo guides 新增：「傳身分證影本給房東前要遮什麼（iPhone 標示 vs 永久遮蔽）」、「신분증 사본 주민번호 뒷자리 가리는 법（iPhone）」、「PDFの黒塗りが透けないか確認する方法」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/maskmyfile/guide-id-card-to-landlord-zh-hant.md",
+      ".github/growth/drafts/maskmyfile/guide-resident-number-masking-ko.md",
+      ".github/growth/drafts/maskmyfile/guide-pdf-kuronuri-check-ja.md"
+     ]
     },
     {
      "id": "maskmyfile-05",
@@ -1610,7 +1823,8 @@
      "detail": "為 cs／da／nl／pl 等語系加「匿名化／去識別化」對應專業詞進量測清單（anonymizace、anonymisering、anonimiseren、anonimizacja）。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     }
    ]
   },
@@ -1642,7 +1856,14 @@
      "detail": "r/iosapps 揭露身分的開發者文一則；r/CleaningTips、r/HomeImprovement 每週自我推廣串的回覆一則（回答「怎麼記得上次換濾芯」）；note.com「名もなき家事の記録」日文實用文一篇。全部放 repo，店主貼。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/mochidonestamp/reddit-iosapps-developer-post.md",
+      ".github/growth/drafts/mochidonestamp/reddit-weekly-thread-reply-filter.md",
+      ".github/growth/drafts/mochidonestamp/note-com-namonaki-kaji-kiroku-ja.md",
+      ".github/growth/drafts/mochidonestamp/last-done-sheet-ja.svg"
+     ]
     },
     {
      "id": "mochidonestamp-05",
@@ -1650,7 +1871,8 @@
      "detail": "新增 zh-Hant 一則，照 posts 欄文案；三語都加「50 種介面語言、App 內切換」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "Telegram queue change: requires inserting into .github/scripts/telegram_posts.json. The zh-Hant copy already exists in app-posts.json (ct mochidonesta_zhHant_2)."
     },
     {
      "id": "mochidonestamp-06",
@@ -1658,7 +1880,8 @@
      "detail": "US「last time tracker」「days since」；JP「いつやった」「経過日数」；TW「多久一次」「上次是什麼時候」。並在報表註記 de-DE 物品名詞的名次不列入成績。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "mochidonestamp-07",
@@ -1710,7 +1933,18 @@
      "detail": "準備 3 組可公開的輸入素材：政府開放資料 CSV（季度數字）、一份虛構會議紀錄、一組訪談重點，加 15 秒前後對照腳本（zh/ja/ko/en）。放 .github/growth/apps/onepageppt/demo/，店主用 App 跑出成品截圖後，GEO 頁與貼文都用真實成品。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/onepageppt/demo/README.md",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-zh-hant.csv",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-ja.csv",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-ko.csv",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-en.csv",
+      ".github/growth/drafts/onepageppt/demo/meeting-minutes-fictional.md",
+      ".github/growth/drafts/onepageppt/demo/interview-notes-fictional.md",
+      ".github/growth/drafts/onepageppt/demo/before-after-script-15s.md"
+     ]
     },
     {
      "id": "onepageppt-02",
@@ -1718,7 +1952,11 @@
      "detail": "把下列 4 則貼文寫進 app-posts.json（ct=opp_tw_onepage 等）。measure-keywords.json 加：ja「1枚資料」「ワンペーパー」；ko「한 장 보고서」；zh-Hant「一頁簡報」「一頁報告」；en-US「one pager」「one-pager」；de「one pager」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/onepageppt/social-posts.md"
+     ]
     },
     {
      "id": "onepageppt-03",
@@ -1726,7 +1964,12 @@
      "detail": "寫兩篇教學草稿「1枚資料を3分で」（ja）與「한 장 보고서 빨리 쓰는 법」（ko），以方法為主、App 為例，交店主用本人帳號發；不含排名用語。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/onepageppt/note-com-1mai-shiryo-ja.md",
+      ".github/growth/drafts/onepageppt/brunch-hanjang-report-ko.md"
+     ]
     },
     {
      "id": "onepageppt-04",
@@ -1774,7 +2017,8 @@
      "detail": "telegram_posts.json 中 6781808054 的 en 條目移除「(a pay-once alternative to VSCO)」，補「50 languages, switch in-app」。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需修改 telegram_posts.json 刪除「alternative to VSCO」並補 50 語句（Telegram 資料變更，不在本次權限）。"
     },
     {
      "id": "photocream-03",
@@ -1782,7 +2026,14 @@
      "detail": "我方先在 repo 寫好 zh-Hant／ja／ko 說明全文與 ≤100 字元關鍵字草稿（不含商標），店主直接貼進 ASC；同時把 photocream_full.json 關鍵字截回 100 字元。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/photocream/asc-description-zh-hant.md",
+      ".github/growth/drafts/photocream/asc-description-ja.md",
+      ".github/growth/drafts/photocream/asc-description-ko.md",
+      ".github/growth/drafts/photocream/keywords-100-char-no-trademarks.md"
+     ]
     },
     {
      "id": "photocream-04",
@@ -1790,7 +2041,11 @@
      "detail": "寫一則捷克文「同一張照片 × 3 種底片效果」貼文（店主實拍），由店主發 Threads／Instagram；成績單持續量這組詞。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/photocream/czech-post-same-photo-three-looks-cs.md"
+     ]
     },
     {
      "id": "photocream-05",
@@ -1850,7 +2105,11 @@
      "detail": "為 SA／ES-ca／CZ 各寫 1 則母語短貼文（誠實、第一人稱、無連結洗版），加上下列 zh-Hant／ja／en 三則，全部寫進 app-posts.json（ct=svt_sa_later 等）。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/savetag/social-posts.md"
+     ]
     },
     {
      "id": "savetag-02",
@@ -1858,7 +2117,8 @@
      "detail": "measure-keywords.json 加 zh-Hant「稍後閱讀」「稍後再看」、ja「あとで読む」「積読」、en-US「read later」「save for later」；成績單對 SA／ES-ca／CZ 的三個詞每天量，掉出前 3 就提醒。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "savetag-03",
@@ -1866,7 +2126,12 @@
      "detail": "寫 note.com 文章草稿（ja）與 r/iosapps 每週自我宣傳串用的開發者帖（en，不含排名用語、不提他牌），交店主本人發。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/savetag/note-com-tsundoku-links-ja.md",
+      ".github/growth/drafts/savetag/reddit-iosapps-post-en.md"
+     ]
     },
     {
      "id": "savetag-04",
@@ -1914,7 +2179,8 @@
      "detail": "telegram_posts.json 中 6779977651 的 en 條目移除「(a pay-once alternative to CamScanner)」；scanto_full.json 前 3 個關鍵字改為 zh-Hant「身分證 影本,證件掃描,加密 pdf」、ja「身分証 スキャン,暗号化 pdf,オフライン スキャン」、de「Ausweis scannen,PDF verschlüsseln,offline scanner」、id「scan ktp,pdf berpassword,scan dokumen」，成績單才量得到有機會的詞。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "scanto-05",
@@ -1922,7 +2188,11 @@
      "detail": "repo guides 新增一頁：先教內建備忘錄掃描＋手動排版，再說明 ScanTo 證件模式一步完成與加密 PDF；供 Threads 引用與 AEO。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/scanto/guide-id-card-front-back-a4-zh-hant.md"
+     ]
     },
     {
      "id": "scanto-06",
@@ -1930,7 +2200,12 @@
      "detail": "為 iphone-ticker.de、appgefahren.de 各寫一封德文提案（離線 OCR、飛航模式可驗證、買斷價、截圖連結），店主以自己名義寄出。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/scanto/pitch-email-iphone-ticker-de.md",
+      ".github/growth/drafts/scanto/pitch-email-appgefahren-de.md"
+     ]
     },
     {
      "id": "scanto-08",
@@ -1974,7 +2249,11 @@
      "detail": "依 live en-US 內容重寫一份 zh-Hant 描述（含新隱私段落與「僅限本機」模式、免費額度、就醫範本），存 .github/growth/apps/sononote/zh-Hant-description.md，交店主貼進 ASC；同時改寫 promo text。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sononote/zh-hant-description.md"
+     ]
     },
     {
      "id": "sononote-02",
@@ -1982,7 +2261,11 @@
      "detail": "下列 zh-Hant／ja／en／id 貼文寫進 app-posts.json（id 那則標記「需先實測介面」）。measure-keywords.json 加：zh-Hant「會議記錄 摘要」「錄音 摘要」；ja「議事録 要約」「音声メモ 要約」；en-US「voice memo summary」「meeting notes summary」；id「catatan suara ringkasan」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sononote/social-posts.md"
+     ]
     },
     {
      "id": "sononote-03",
@@ -1990,7 +2273,11 @@
      "detail": "寫 zh/ja/en 三版腳本：講 1 分鐘打ち合わせ回顧→出現要約・ToDo・メール；畫面要展示「僅限本機」切換，誠實呈現。店主錄製。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sononote/demo-script-30s.md"
+     ]
     },
     {
      "id": "sononote-04",
@@ -2042,7 +2329,14 @@
      "detail": "佇列目前 en/ja/zh-Hant；新增 de、ko。另草擬 r/ipad、r/desksetup 各一則（真實桌面照、揭露身分、每版只發一次）與 Apfeltalk「altes iPad als Uhr」一則。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/stayclock/telegram-de-ko-copy.md",
+      ".github/growth/drafts/stayclock/reddit-ipad-old-ipad-clock.md",
+      ".github/growth/drafts/stayclock/reddit-desksetup-post.md",
+      ".github/growth/drafts/stayclock/apfeltalk-altes-ipad-als-uhr-de.md"
+     ]
     },
     {
      "id": "stayclock-05",
@@ -2050,7 +2344,8 @@
      "detail": "US「flip clock」「nightstand clock」「standby clock」「old ipad clock」；JP「パタパタ時計」「置き時計」；DE「Tischuhr」「Nachttischuhr」；TW「翻頁時鐘」「桌鐘」「床頭時鐘」。對照 Flip 名稱決定後的變化。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "stayclock-06",
@@ -2098,7 +2393,8 @@
      "detail": "檔案 /home/user/ios-app-guide/_engine/data/tripplanet_full.json：name 改成 live（TW「Trip Planet 親子旅行遊戲」、JP「Trip Planet 子ども旅行ゲーム」、KR「Trip Planet 아이 여행 게임」、US「Trip Planet: Kids Quest」），刪「雜誌,使命,trip planner,ジャーナル,신문」等機翻詞，zh-Hant 前三改「帶小孩出國,飛機上 小孩,親子旅行」、ja「子連れ旅行,旅行 子ども,機内 子ども」、en「road trip games for kids,travel bingo,kids travel missions」，促銷文改掉「轉『我們到了嗎？』變成樂趣」機翻；GEO 頁、catalog、計分板都會繼承。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需要修改 _engine/data/tripplanet_full.json（資料檔），所以沒有動。新的 name、≤100 字元的關鍵字、≤170 字元的宣傳文字（zh-Hant／ja／en-US）見 drafts/tripplanet/listing-data-fix-proposal.md；計分板量測詞放在 challenge_terms.tripplanet"
     },
     {
      "id": "tripplanet-02",
@@ -2106,7 +2402,8 @@
      "detail": "telegram_posts.json 的 6787193643：ja 貼文改用「Trip Planet 子ども旅行ゲーム」與 listing 功能（任務包、護照蓋章、兩位家長共享、50 語可切換）；zh-Hant 保留任務卡產生器貼文、加一篇寒假情境；在 social_slot_gate／threads-daily 設定季節權重：TW 12 月中–1 月底（寒假、春節）與 6 月；JP 12 月（年末年始）與 2–3 月（春休み）。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需要修改 telegram_posts.json，而且 social_slot_gate／threads-daily 目前沒有季節權重機制，要改程式，所以沒有動。ja 替換稿、zh-Hant 寒假新稿、TW／JP 檔期表與建議的權重資料格式見 drafts/tripplanet/telegram-replacement-posts-and-season-calendar.md"
     },
     {
      "id": "tripplanet-03",
@@ -2114,7 +2411,16 @@
      "detail": "把站上的親子旅行任務卡產生器輸出成可下載的繁中／日文圖卡（貼文本身的價值，App 只在結尾提一次）；寫 Shorts 腳本：機場勇敢任務→完成→護照蓋章→Trip Story Card，三語字幕稿。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripplanet/airport-flight-mission-cards-zh-hant.html",
+      ".github/growth/drafts/tripplanet/airport-flight-mission-cards-ja.html",
+      ".github/growth/drafts/tripplanet/mission-cards-share-image-zh-hant.svg",
+      ".github/growth/drafts/tripplanet/mission-cards-share-image-ja.svg",
+      ".github/growth/drafts/tripplanet/mission-cards-share-posts.md",
+      ".github/growth/drafts/tripplanet/shorts-script-airport-mission-30s.md"
+     ]
     },
     {
      "id": "tripplanet-04",
@@ -2158,7 +2464,11 @@
      "detail": "telegram_posts.json 目前 tripbeelite 只有 en／ja 2 則且文案抽象（calm、polished）；換成本報告的 zh-Hant／ja／ko／vi 情境貼文並加進 .github/growth/app-posts.json（ct：tbl_tw_trip、tbl_ja_shiori、tbl_ko_taiwan、tbl_vi_tet）。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbeelite/situational-posts-and-telegram.md"
+     ]
     },
     {
      "id": "tripbeelite-04",
@@ -2166,7 +2476,12 @@
      "detail": "「電波がなくても開ける旅のしおりの作り方」、「대만 여행 일정표 정리」各一篇，附截圖位置與揭露開發者身份的段落，App 只當選項之一；owner 以本人帳號發布。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbeelite/note-com-offline-tabi-no-shiori-ja.md",
+      ".github/growth/drafts/tripbeelite/naver-blog-taiwan-itinerary-ko.md"
+     ]
     },
     {
      "id": "tripbeelite-05",
@@ -2174,7 +2489,8 @@
      "detail": "TW 行程規劃／旅遊行程、JP 旅のしおり、KR 여행 플래너 加入 growth_scoreboard.py 覆寫詞，每天追 Lite 名次。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "tripbeelite-06",
@@ -2224,9 +2540,10 @@
      "id": "wifiaidlite-02",
      "title": "修正公開 repo 的免費額度宣稱",
      "detail": "_engine/data/wifiaidlite_full.json 與 en-US／zh-Hant／ja／ko／id 等 wifiaidlite.html（含 meta／og 描述）改為「所有工具合計可免費完整檢查一次」，補「解鎖後可看修正前後對照」；Telegram 文維持「免費開始」即可。",
-     "owner": "claude",
+     "owner": "local",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需修改 drafts 以外的 _engine/data/wifiaidlite_full.json 與 GrowthEngine 產生的各語系 wifiaidlite.html（含模板同步），不在本次可寫範圍；6 語替換句已備於 /home/user/ios-app-guide/.github/growth/drafts/wifiaidlite/free-tier-wording-fix.md 供"
     },
     {
      "id": "wifiaidlite-04",
@@ -2234,7 +2551,13 @@
      "detail": "JP 以開發者身分回覆「ネット遅い」實際抱怨；TW 寫「跟房東反映網路前先蒐集這幾種證據」；印尼貼文先徵管理員同意，並註明只有介面語言會切換。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wifiaidlite/x-reply-templates-ja.md",
+      ".github/growth/drafts/wifiaidlite/dcard-rental-internet-evidence-guide-zh-hant.md",
+      ".github/growth/drafts/wifiaidlite/indonesian-community-post-id.md"
+     ]
     },
     {
      "id": "wifiaidlite-05",
@@ -2284,9 +2607,10 @@
      "id": "wordmatelite-03",
      "title": "修正矩陣 kids 分類並重生",
      "detail": "把 wordmatelite（與 aim990plus）在 _engine/geo/data/result_image_evidence_v1.json 的 family=kids14 與 app_decision_matrix.py 讀的來源改為 education／adult，重生 data/ios-app-decision-matrix.*。",
-     "owner": "claude",
+     "owner": "local",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需修改 _engine/geo/data/result_image_evidence_v1.json 與 app_decision_matrix.py 讀取來源並重生矩陣，屬程式碼／GrowthEngine 產線變更，不屬雲端草稿範圍"
     },
     {
      "id": "wordmatelite-04",
@@ -2294,7 +2618,11 @@
      "detail": "產出 zh-Hant/ja/vi/id/en-US 統一版免費層段落，並加一行「介面 50 種語言，可在 App 內切換；學習語言另選」，供 owner 貼 ASC。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmatelite/asc-free-tier-and-interface-language-5-locales.md"
+     ]
     },
     {
      "id": "wordmatelite-05",
@@ -2310,7 +2638,13 @@
      "detail": "寫「我為什麼不做單字卡」短文草稿與「小石子路完成畫面」20 秒腳本；id/vi 社團貼文先存檔並標記前置條件：店面本地化上線、確認中文學習內容為繁體。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmatelite/dcard-threads-why-no-flashcards.md",
+      ".github/growth/drafts/wordmatelite/shorts-script-20s-pebble-trail-finish.md",
+      ".github/growth/drafts/wordmatelite/id-vi-community-posts-on-hold.md"
+     ]
     },
     {
      "id": "wordmatelite-08",
@@ -2358,7 +2692,13 @@
      "detail": "PTT iOS 板、Dcard 3C 板「iPhone 打不開 RAR」與知恵袋「iPhoneでRAR・7zを開く方法」的回答草稿（店主以本人帳號發、揭露身分）；店主確認 App 不做編碼修復後，刪除 zh-Hant/zipbox.html 的亂碼 FAQ 與決策卡片。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/zipbox/forum-answers-cant-open-rar-zh-hant.md",
+      ".github/growth/drafts/zipbox/chiebukuro-answer-rar-7z-iphone-ja.md",
+      ".github/growth/drafts/zipbox/telegram-spotlight.md"
+     ]
     },
     {
      "id": "zipbox-05",
@@ -2406,7 +2746,11 @@
      "detail": "在 repo 寫一頁 zh-Hant／ja／en 指南，以方法為主、AI Brief 只是其中一步的工具；這是唯一能創造需求的入口，不做模板量產，不寫排名用語。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aibriefpack/before-you-paste-to-ai-5-checks.html"
+     ]
     },
     {
      "id": "aibriefpack-02",
@@ -2414,7 +2758,13 @@
      "detail": "寫三份草稿：PH tagline＋first comment、Show HN 貼文（說明在裝置處理、不保證匿名）、note.com「社内ルールを守りながら生成AIに渡す資料整理」；由店主本人帳號發。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aibriefpack/product-hunt-launch.md",
+      ".github/growth/drafts/aibriefpack/show-hn-post.md",
+      ".github/growth/drafts/aibriefpack/note-com-article-ja.md"
+     ]
     },
     {
      "id": "aibriefpack-03",
@@ -2422,7 +2772,11 @@
      "detail": "三則貼文寫進 app-posts.json；measure-keywords.json 加 en-US「ai prompt from files」「pdf to prompt」、ja「AI 要約 PDF」「個人情報 マスキング」、zh-Hant「AI 提示詞」「截圖 轉文字 AI」，先確認是否有任何名次。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aibriefpack/social-posts.md"
+     ]
     },
     {
      "id": "aibriefpack-04",
@@ -2474,7 +2828,12 @@
      "detail": "15–30 秒「滑過 100 款主題」腳本（每支換配色）；10 則 Pinterest 圖說（ko／ja／en／zh-Hant）；Telegram 補 zh-Hant／ko 條目（聚餐分帳隔週找得到）。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/caldaily/shorts-script-swipe-100-themes.md",
+      ".github/growth/drafts/caldaily/pinterest-pin-captions-4-languages.md"
+     ]
     },
     {
      "id": "caldaily-04",
@@ -2522,7 +2881,11 @@
      "detail": "telegram_posts.json 中 app=6790418321 的 en／ja 2 則，連結改為 id6794725568，文末一句「不想內購可選付費版 DailyMate」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymate/telegram-replacement-posts-to-lite.md"
+     ]
     },
     {
      "id": "dailymate-05",
@@ -2530,7 +2893,11 @@
      "detail": "在手腕上聽整句、切下一句、收藏；字幕 zh-Hant／ja／en；只在允許自我推廣的週帖發並揭露身份。owner 錄製。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymate/apple-watch-15s-demo-script.md"
+     ]
     },
     {
      "id": "dailymate-06",
@@ -2574,7 +2941,8 @@
      "detail": "在 .github/scripts/telegram_posts.json 刪除 YNAB 一句；補 zh-Hant／ja／id 痛點文（見 posts）；en 旅遊情境改導向 Lite（6793436548）。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "整項都是改 .github/scripts/telegram_posts.json（刪 YNAB 句、補三語、改導向），屬於 Telegram 佇列資料變更，不在本工作範圍；app-posts.json 裡已經有 zh-Hant／ja／id 的貼文可以直接用。"
     },
     {
      "id": "gmoney-05",
@@ -2582,7 +2950,11 @@
      "detail": "45–60 秒腳本（zh-Hant／ja／ko 字幕）：現地幣現金＋刷卡，依旅程分組，一次看到母國貨幣總額；交擁有者錄螢幕。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoney/shorts-script-60s-one-month-business-trip.md"
+     ]
     },
     {
      "id": "gmoney-06",
@@ -2590,7 +2962,13 @@
      "detail": "給蘋果仁、電腦王阿達、硬是要學：以「一人工作室的一次買斷理財工具（G+Money、HoursTag、MoneyTag）」打包，附截圖，明示開發者身分，不要求評論。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoney/pitch-email-applealmond.md",
+      ".github/growth/drafts/gmoney/pitch-email-kocpc.md",
+      ".github/growth/drafts/gmoney/pitch-email-soft4fun.md"
+     ]
     },
     {
      "id": "gmoney-07",
@@ -2638,7 +3016,12 @@
      "detail": "11/11 與 11/27 前一週用：zh-Hant／ja／ko 各 2 組「這東西＝幾小時工」，一律用讀者自己的時薪、不引用統計，結尾導向免費 Lite；加入 Telegram 佇列並補 ko 條目。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/hourstag/double11-black-friday-card-copy.md",
+      ".github/growth/drafts/hourstag/card-checkout-hours-ko.svg"
+     ]
     },
     {
      "id": "hourstag-05",
@@ -2646,7 +3029,12 @@
      "detail": "「値段を時給で割ってみた」「커피값을 시급으로 환산해 봤다」各一篇草稿，交擁有者以本人名義發；不付費換評論。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/hourstag/note-com-nedan-jikyu-ja.md",
+      ".github/growth/drafts/hourstag/naver-blog-coffee-hourly-wage-ko.md"
+     ]
     },
     {
      "id": "hourstag-06",
@@ -2686,7 +3074,8 @@
      "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪「visual routine chart／視覺任務」，改用 listing 用語（五個每日任務含上學準備、無限自訂任務、無廣告・無內購・無訂閱・無帳號、家人共享、50 種語言可在 App 內切換），並在每篇末尾一句話指向免費的 Lite。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案），所以沒有動。4 篇替換稿（刪掉 visual／視覺任務與穿衣，補上無內購、家人共享、50 種語言，結尾導向 Lite）見 drafts/lumimissionpro/telegram-replacement-posts.md"
     },
     {
      "id": "lumimissionpro-04",
@@ -2694,7 +3083,13 @@
      "detail": "所有 Lite 的 Threads／X／Naver／Telegram 草稿末尾加「不想要內購畫面的家庭也有 Pro（一次購買、家人共享）」一句，不另外為 Pro 開冷啟動貼文。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimissionpro/lite-post-pro-footer-lines.md",
+      ".github/growth/drafts/lumimission/video-script-30s-routine-missions.md",
+      ".github/growth/drafts/lumimission/telegram-replacement-posts.md"
+     ]
     },
     {
      "id": "lumimissionpro-05",
@@ -2734,7 +3129,14 @@
      "detail": "zh-Hant／ja／ko 貼文（已附）；Telegram spotlight；GEO 長尾題目「ABC 描寫學習單怎麼印」「アルファベット なぞり書き プリント」「알파벳 따라쓰기 학습지」；letters_lite_full.json 同步 live。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumiletters/telegram-copy.md",
+      ".github/growth/drafts/lumiletters/abc-tracing-worksheet-print-guide-zh-hant.md",
+      ".github/growth/drafts/lumiletters/note-com-alphabet-nazori-print-ja.md",
+      ".github/growth/drafts/lumiletters/naver-blog-alphabet-tracing-worksheet-ko.md"
+     ]
     },
     {
      "id": "lumiletters-05",
@@ -2782,7 +3184,13 @@
      "detail": "「給幼兒園／安親班英文老師」一頁（附今日學習單與四大能力說明，截圖由老闆提供）；en 貼文發 homeschool 社群（已附，遵守版規、揭露身分）；pitch email 草稿由老闆寄。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumiletterspro/teacher-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumiletterspro/pitch-email-teachers.md",
+      ".github/growth/drafts/lumiletterspro/homeschool-group-post-en.md"
+     ]
     },
     {
      "id": "lumiletterspro-05",
@@ -2818,7 +3226,12 @@
      "detail": "老闆匯出 20 題附解答練習卷與學習報告樣張，Claude 寫一頁說明與寄送信草稿；zh-Hant×2、ko 貼文（已附）。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimathpro/tutor-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumimathpro/pitch-email-tutors-zh-hant.md"
+     ]
     },
     {
      "id": "lumimathpro-05",
@@ -2862,7 +3275,11 @@
      "detail": "修 _engine/data/picclear_full.json：keywords 截到 100 字元（逗號邊界），刪掉名稱已有的 photo cleaner／duplicate／照片清理；前 3 個詞改成真實長尾：TW「連拍照片 刪除,截圖 清理,大型影片」、JP「スクショ 整理,連写 削除,動画 容量」，讓 growth-scoreboard 量到有機會的詞。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/picclear/keywords-100-char-proposal.md"
+     ]
     },
     {
      "id": "picclear-04",
@@ -2870,7 +3287,8 @@
      "detail": "在 telegram_posts.json 為 6780223070 新增繁中「幫爸媽清 iPhone」與日文「旅行前夜」兩條（下方 posts），不放競品名、不說最佳。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "todo",
+     "note": "需在 .github/scripts/telegram_posts.json 新增條目（Telegram 資料／程式變更，不在本次權限）；繁中「幫爸媽清 iPhone」與日文「旅行前夜」文案已存在於 app-posts.json（picclear_zhHant_1、picclear_ja_2），可直接搬入。"
     },
     {
      "id": "picclear-05",
@@ -2878,7 +3296,12 @@
      "detail": "zh-Hant＋ja 各一頁，先教內建合併重複照片，再說明連拍、截圖、大影片、模糊照需要另外工具，最後才提 PicClear；放進 repo 的 guides，供 AEO 引用。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/picclear/guide-ios-duplicates-builtin-vs-tool-zh-hant.md",
+      ".github/growth/drafts/picclear/guide-ios-duplicates-builtin-vs-tool-ja.md"
+     ]
     },
     {
      "id": "picclear-06",
@@ -2928,9 +3351,10 @@
      "id": "qrcodehalo-01",
      "title": "立即修正公開頁面與資料檔的「絕不自動開啟」宣稱",
      "detail": "_engine/data/qrcodehalo_full.json、53 個語系 qrcodehalo.html（含 meta／og／JSON-LD）、en-US/decide/qrcodehalo 頁與 .github/scripts/telegram_posts.json 的 3 則文，改為線上實況：「預設掃描後自動執行；到設定關閉『掃描後自動執行』即可先檢查，歷史紀錄中按安全檢查」。",
-     "owner": "claude",
+     "owner": "local",
      "impact": "high",
-     "status": "todo"
+     "status": "todo",
+     "note": "需修改 _engine/data/qrcodehalo_full.json、53 個 GrowthEngine 產生的 qrcodehalo.html、decide 頁與 Telegram 佇列 .github/scripts/telegram_posts.json，不在本次可寫範圍；3 則 Telegram 替換文案已備於 drafts/qrcodehalo/telegram-shop-self"
     },
     {
      "id": "qrcodehalo-02",
@@ -2946,7 +3370,16 @@
      "detail": "撰寫 Naver 큐싱 檢查步驟、Reddit r/scams 回覆、en-GB 活動主辦 LinkedIn 文草稿；在此之前只推「店家自查 QR」情境，並在每則文加上「先到設定關閉自動執行」。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/qrcodehalo/shop-qr-self-check-guide-zh-hant.md",
+      ".github/growth/drafts/qrcodehalo/shop-qr-weekly-check-sheet-zh-hant.html",
+      ".github/growth/drafts/qrcodehalo/telegram-shop-self-check-posts.md",
+      ".github/growth/drafts/qrcodehalo/naver-quishing-check-steps-ko.md",
+      ".github/growth/drafts/qrcodehalo/reddit-scams-reply-en.md",
+      ".github/growth/drafts/qrcodehalo/linkedin-event-qr-audit-en-gb.md"
+     ]
     }
    ]
   },
@@ -2978,7 +3411,12 @@
      "detail": "由我們起草：zh-Hant 用 白噪音／粉紅噪音／褐噪音／你的手機／雨聲不會接縫重來；ja 用 スマートフォン／小川／ループしない／買い切り。擁有者貼進 ASC。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sereno/asc-description-zh-hant.md",
+      ".github/growth/drafts/sereno/asc-description-ja.md"
+     ]
     },
     {
      "id": "sereno-04",
@@ -2986,7 +3424,8 @@
      "detail": "growth-scoreboard 的 sereno 關鍵字加入 TW「睡眠音效」、JP「スリープサウンド」、US「brown noise」「sound machine」，以及三地的「sereno」品牌字，追蹤是否守住前 10。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "sereno-05",
@@ -2994,7 +3433,14 @@
      "detail": "三支 3 小時影片：「下雨聲＋褐噪音 3小時 不循環」「雨音とブラウンノイズ 3時間 ループなし」「Rain + Brown Noise 3 Hours, No Loop」；說明欄揭露用 Sereno: Sleep Sounds 錄製、寫全名。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sereno/youtube-long-videos-copy.md",
+      ".github/growth/drafts/sereno/youtube-thumb-zh-hant.svg",
+      ".github/growth/drafts/sereno/youtube-thumb-ja.svg",
+      ".github/growth/drafts/sereno/youtube-thumb-en.svg"
+     ]
     },
     {
      "id": "sereno-06",
@@ -3050,7 +3496,11 @@
      "detail": "telegram_posts.json 中 app=6780575828 的 en／zh-Hant／es／ja／ko／de／ar／pt-BR／fr 貼文連結改為 id6792856304；de 貼文刪除 Pass-/Ausweisfoto 字眼，改寫為簽證、履歷、他國證件照片。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapport/telegram-replacement-posts-to-lite.md"
+     ]
     },
     {
      "id": "snapport-05",
@@ -3058,7 +3508,12 @@
      "detail": "「在家拍 2x2→排 4×6 沖印版」腳本；Reddit 只回覆提問的模板（揭露身份、不保證受理、不帶連結）。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapport/shorts-script-2x2-to-4x6-en.md",
+      ".github/growth/drafts/snapport/reddit-reply-templates-en.md"
+     ]
     },
     {
      "id": "snapport-06",
@@ -3106,7 +3561,15 @@
      "detail": "先寫好不先發：Telegram 補 ko 一則；X／IG 勉強垢與 공스타그램 各 1 則真實讀書紀錄截圖文案；r/languagelearning 進度串回覆一則（揭露身分）。等店主確認試用規則改了再排程。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/studydown/posting-gate-and-free-tier.md",
+      ".github/growth/drafts/studydown/telegram-ko-copy.md",
+      ".github/growth/drafts/studydown/benkyo-aka-x-ig-post-ja.md",
+      ".github/growth/drafts/studydown/gongstagram-post-ko.md",
+      ".github/growth/drafts/studydown/reddit-languagelearning-progress-reply.md"
+     ]
     },
     {
      "id": "studydown-05",
@@ -3114,7 +3577,8 @@
      "detail": "TW「翻面計時」「讀書計時」；JP「勉強タイマー」「伏せる タイマー」；KR「공부 타이머」「집중 타이머」；US「flip phone timer」「face down timer」。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "studydown-06",
@@ -3158,7 +3622,11 @@
      "detail": "修改 .github/scripts/telegram_posts.json 中 app=6787754435 的 en／zh-Hant／ja／de／es 貼文：連結改為 id6791299610（Lite），文末一句「想一次買斷、不內購可選 TripBee Pro」。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbee/telegram-replacement-posts-to-lite.md"
+     ]
     },
     {
      "id": "tripbee-05",
@@ -3166,7 +3634,8 @@
      "detail": "在 .github/scripts/growth_scoreboard.py 加每 App 覆寫詞（TW 行程規劃／旅遊行程／打包清單、JP 旅のしおり／持ち物リスト、KR 여행 플래너）；opportunities() 以已記錄的 result_count<30 排除假機會。每天同時追 Pro 與 Lite。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
     },
     {
      "id": "tripbee-06",
@@ -3174,7 +3643,11 @@
      "detail": "輸入孩子年齡→自動產生打包清單→「第 X 天／共 Y 天」→一鍵開 Apple 地圖；寫成分鏡與字幕稿，owner 錄製後放 Shorts／Reels，連結導 Lite。",
      "owner": "claude",
      "impact": "low",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbee/shorts-script-30s-family-packing-zh-hant-ja.md"
+     ]
     },
     {
      "id": "tripbee-07",
@@ -3222,7 +3695,13 @@
      "detail": "Telegram spotlight 與 note.com「ネットが遅い時の切り分け方」、Reddit r/HomeNetworking 回覆草稿都以 Lite 為主，付費版只在 Watch／iPad 段落帶出；把線上 zh-Hant／ja／ko 描述回填到 _engine/data/wifiaid_full.json。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wifiaid/note-slow-internet-troubleshooting-ja.md",
+      ".github/growth/drafts/wifiaid/reddit-homenetworking-replies-en.md",
+      ".github/growth/drafts/wifiaid/telegram-spotlight-lite-first.md"
+     ]
     },
     {
      "id": "wifiaid-05",
@@ -3270,7 +3749,11 @@
      "detail": "產出 zh-Hant/ja/en-US/ko/vi/id 的「Wordmate vs Lite」段落（小工具、Apple Watch、例句、84 單元 vs 免費起步），供 owner 貼進 ASC；同時更新 telegram_posts.json 的 Wordmate 貼文，每篇導想試用者去 Lite，並加「介面 50 種語言可切換」。",
      "owner": "claude",
      "impact": "high",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmate/asc-wordmate-vs-lite-paragraphs-6-locales.md"
+     ]
     },
     {
      "id": "wordmate-04",
@@ -3286,7 +3769,13 @@
      "detail": "寫 r/AppleWatch、r/iOSsetups 的開發者揭露貼文與 15 秒影片腳本（小工具看字→收藏→手錶聽發音）；日本 X「iPhoneホーム画面」話題一篇。",
      "owner": "claude",
      "impact": "medium",
-     "status": "todo"
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmate/reddit-applewatch-iossetups-developer-posts.md",
+      ".github/growth/drafts/wordmate/shorts-script-15s-widget-save-watch.md",
+      ".github/growth/drafts/wordmate/x-iphone-home-screen-post-ja.md"
+     ]
     },
     {
      "id": "wordmate-08",

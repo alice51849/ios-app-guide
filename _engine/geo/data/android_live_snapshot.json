@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-13T19:51:47+0800",
- "count": 33,
- "content_sha256": "129e69e873cca9839f52a645143f019e943c97f613f811f706f3e14ec194584d",
+ "source_generated": "2026-10-13T20:22:23+0800",
+ "count": 34,
+ "content_sha256": "f39ee05ff35ad1f476f42183f596d9d45efcee9e705015b80af3ca4499d64a55",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -422,6 +422,27 @@
     "zh-TW": {
      "title": "Mochi DoneStamp：上次何時",
      "short_description": "上次何時・經過天數與循環提醒"
+    }
+   }
+  },
+  "notesstudio100": {
+   "ios_app_id": "6798813048",
+   "ios_name": "100 Notes Studio",
+   "android_folder": "41_100NotesStudio",
+   "package": "com.alice51849.NotesStudio100",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100",
+   "paid": false,
+   "first_seen": "2026-10-13T20:22:23+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "100 Notes Studio: Pen & Paper",
+     "short_description": "Handwriting & PDF Workspace"
+    },
+    "zh-TW": {
+     "title": "100 Notes Studio: Pen & Paper",
+     "short_description": "手寫筆記本、PDF標註、錄音與複習"
     }
    }
   },

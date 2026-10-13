@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+HoursTag／HoursTag Lite 雙 11・黑五填空圖卡（hourstaglite-04 與 hourstag-04 共用素材）
+用途：讓讀者用「自己的」實領時薪把購物車裡的價格換算成工時；不引用任何統計。結尾導向免費的 HoursTag Lite。
+發在哪／給誰：店主本人的 Instagram／Threads（韓文），2026/11/20–11/26 黑五前一週；搭配 double11-black-friday-card-copy.md 的 ko-1 게시글，開頭標示「개발자가 직접 올리는 자사 앱 홍보」。
+發文者：店主 Guan Feng Lai 本人帳號，以開發者身分發布（卡面底欄與貼文都已揭露）。
+發文規則：每帳號每天最多 1 張；同一平台不重發；連結只放第一則留言，不印在圖上；Lite 商店頁截圖 ≥3 張（hourstaglite-01）之前不要發；不寫「最好用／第一」；不羞辱購物者。
+第一則留言連結：https://apps.apple.com/app/id6794039979?pt=118326163&ct=htl_card_ko&mt=8
+匯出：用瀏覽器開啟後截圖，或以 rsvg-convert／Inkscape 轉成 1080x1350 PNG 再上傳。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="t d" xml:lang="ko">
+<title id="t">이거, 몇 시간 일한 값일까? (블랙프라이데이 빈칸 카드)</title>
+<desc id="d">빈칸 카드. 가격 ÷ 내 실수령 시급 = 일해야 하는 시간. 아래에 필요·원함·충동 체크 칸. HoursTag Lite 개발자가 직접 만든 카드.</desc>
+<style>text{font-family:'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif}</style>
+<rect width="1080" height="1350" fill="#FBF6EE"/>
+<rect x="80" y="78" width="440" height="64" rx="32" fill="#F6E3D3"/>
+<text x="300" y="122" font-size="30" font-weight="700" fill="#B4532A" text-anchor="middle">블랙프라이데이 결제 전에</text>
+<text x="80" y="260" font-size="100" font-weight="800" fill="#1F2A2E" text-anchor="start">이거, 몇 시간</text>
+<text x="80" y="380" font-size="100" font-weight="800" fill="#1F2A2E" text-anchor="start">일한 값일까?</text>
+<rect x="80" y="440" width="920" height="470" rx="28" fill="#FFFFFF" stroke="#E6DCCF" stroke-width="3"/>
+<text x="130" y="560" font-size="46" font-weight="500" fill="#1F2A2E" text-anchor="start">가격</text>
+<line x1="600" y1="570" x2="860" y2="570" stroke="#1F2A2E" stroke-width="4" stroke-linecap="round"/>
+<text x="884" y="560" font-size="46" font-weight="500" fill="#1F2A2E" text-anchor="start">원</text>
+<text x="130" y="690" font-size="46" font-weight="500" fill="#1F2A2E" text-anchor="start">÷ 내 실수령 시급</text>
+<line x1="600" y1="700" x2="860" y2="700" stroke="#1F2A2E" stroke-width="4" stroke-linecap="round"/>
+<text x="884" y="690" font-size="46" font-weight="500" fill="#1F2A2E" text-anchor="start">원</text>
+<line x1="130" y1="760" x2="950" y2="760" stroke="#E6DCCF" stroke-width="3"/>
+<text x="130" y="840" font-size="46" font-weight="700" fill="#B4532A" text-anchor="start">= 일해야 하는 시간</text>
+<line x1="600" y1="850" x2="860" y2="850" stroke="#1F2A2E" stroke-width="4" stroke-linecap="round"/>
+<text x="884" y="840" font-size="46" font-weight="700" fill="#B4532A" text-anchor="start">시간</text>
+<text x="80" y="965" font-size="31" font-weight="400" fill="#6B6B6B" text-anchor="start">실수령 시급 = 월 실수령액 ÷ 월 실제 근무 시간</text>
+<rect x="100" y="1040" width="48" height="48" rx="8" fill="#FFFFFF" stroke="#1F2A2E" stroke-width="4"/>
+<text x="170" y="1080" font-size="44" font-weight="600" fill="#1F2A2E" text-anchor="start">필요</text>
+<rect x="390" y="1040" width="48" height="48" rx="8" fill="#FFFFFF" stroke="#1F2A2E" stroke-width="4"/>
+<text x="460" y="1080" font-size="44" font-weight="600" fill="#1F2A2E" text-anchor="start">원함</text>
+<rect x="680" y="1040" width="48" height="48" rx="8" fill="#FFFFFF" stroke="#1F2A2E" stroke-width="4"/>
+<text x="750" y="1080" font-size="44" font-weight="600" fill="#1F2A2E" text-anchor="start">충동</text>
+<text x="80" y="1170" font-size="42" font-weight="800" fill="#B4532A" text-anchor="start">계산해 보고도 갖고 싶으면, 사면 돼요.</text>
+<rect x="0" y="1210" width="1080" height="140" fill="#1F2A2E"/>
+<text x="80" y="1252" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="start">HoursTag Lite｜무료 다운로드, 가격을 노동 시간으로</text>
+<text x="80" y="1296" font-size="22" font-weight="400" fill="#E9E4DC" text-anchor="start">데이터는 기기에만 · 계정 불필요 · 인터페이스 50개 언어, 앱 안에서 전환</text>
+<text x="80" y="1332" font-size="21" font-weight="400" fill="#E9E4DC" text-anchor="start">개발자가 직접 만든 카드</text>
+</svg>

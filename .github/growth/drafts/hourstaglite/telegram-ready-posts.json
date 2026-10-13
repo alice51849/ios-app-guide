@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "todo": "hourstaglite-03",
+  "app": "hourstaglite",
+  "app_id": "6794039979",
+  "prepared_at": "2026-10-13",
+  "status": "hold_until_page_ready",
+  "release_gate": {
+    "rule": "iTunes lookup screenshotUrls (iPhone) >= 3; same rule as telegram_post.page_unready_apps (PAGE_READY_MIN_SCREENSHOTS)",
+    "check_url": "https://itunes.apple.com/lookup?id=6794039979&country=us",
+    "observed_2026_10_13": {
+      "tw": 1,
+      "jp": 1,
+      "us": 1,
+      "vn": 1
+    },
+    "result": "blocked: every checked storefront shows 1 iPhone screenshot (hourstaglite-01 adds 5-6)"
+  },
+  "facts_source": "Live App Store lookup tw/jp/us/vn 2026-10-13 (version 1.1.5): free download; prices turned into work time; take-home value per work hour; Need / Want / Impulse; value pattern insights; work behind a goal + progress; backup & restore; Widget, Apple Watch; data on device, no account, no tracking; one payment, lifetime access, no subscription, unlimited choices/targets. VI is in languageCodesISO2A. 50 interface languages switchable in-app is owner-confirmed. The free tier's exact limit is not in the listing, so no number is written.",
+  "copy_rules": "Wage figures are labelled hypotheticals (if / 假設 / なら / Ví dụ), not statistics; no competitor names; no best / #1 claims; no user counts. Each preview below is telegram_post.compose_text() output and <= 1024 chars (Telegram photo caption limit).",
+  "why_not_telegram_posts_json": "Deliberately not merged into .github/scripts/telegram_posts.json: the production sender (telegram_post.choose_unpublished) only publishes source=publisher_intent_catalog records, so static telegram_posts.json rows are never sent. Once the page-ready gate sees >= 3 iPhone screenshots, HoursTag Lite returns to the automatic Telegram slots by itself. Use these four as the manual LumiApps2026 channel posts for that day (zh-Hant / ja / vi in the asia slot, en in the americas slot), or as the copy if a ready-copy source is wired into the sender later.",
+  "posts": [
+    {
+      "lang": "zh-Hant",
+      "official_locale": "zh-Hant",
+      "app": "6794039979",
+      "text": "⏳ 結帳前先看一眼：這要工作幾小時？\n假設你實領的時薪是 200 元，一件 1,200 元的外套就是 6 小時的工。\nHoursTag Lite 免費下載：設定一次「每工作一小時的實領價值」，任何價格都換成工作時間；每筆標成必要／想要／衝動，看出自己的消費模式；想存的目標也看得到背後要多少工時，並追蹤進度。支援小工具與 Apple Watch，可備份與還原。\n資料只留在手機，不用帳號、不追蹤。想無限使用再一次付費買斷，沒有訂閱。介面 50 種語言，App 內可切換。",
+      "url": "https://apps.apple.com/app/id6794039979",
+      "image_url": "https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg",
+      "telegram_slot": "asia 01:00 UTC（台灣 09:00）",
+      "preview_chars": 338,
+      "preview": "⏳ 結帳前先看一眼：這要工作幾小時？\n假設你實領的時薪是 200 元，一件 1,200 元的外套就是 6 小時的工。\nHoursTag Lite 免費下載：設定一次「每工作一小時的實領價值」，任何價格都換成工作時間；每筆標成必要／想要／衝動，看出自己的消費模式；想存的目標也看得到背後要多少工時，並追蹤進度。支援小工具與 Apple Watch，可備份與還原。\n資料只留在手機，不用帳號、不追蹤。想無限使用再一次付費買斷，沒有訂閱。介面 50 種語言，App 內可切換。\n\n👉 https://apps.apple.com/app/id6794039979?pt=118326163&ct=soc_tg_guide&mt=8\n\n— Lumi Apps · 獨立 iOS 開發者"
+    },
+    {
+      "lang": "ja",
+      "official_locale": "ja",
+      "app": "6794039979",
+      "text": "⏳ ポチる前に「これは何時間分の労働？」\n手取り時給1,500円なら、4,500円のスニーカーは3時間分です。\nHoursTag Lite（無料ダウンロード）は、手取りから見た仕事1時間の価値をもとに、値段を労働時間に換算します。支出を「必要・欲しい・衝動」に分けて自分の傾向を確認。目標に必要な労働時間と進捗も見えます。ウィジェット・Apple Watch対応、バックアップと復元もできます。\nデータは端末内だけ、アカウント不要・追跡なし。無制限に使うなら買い切り、サブスクなし。表示言語は50言語、アプリ内で切り替えられます。",
+      "url": "https://apps.apple.com/app/id6794039979",
+      "image_url": "https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg",
+      "telegram_slot": "asia 01:00 UTC（日本 10:00）",
+      "preview_chars": 371,
+      "preview": "⏳ ポチる前に「これは何時間分の労働？」\n手取り時給1,500円なら、4,500円のスニーカーは3時間分です。\nHoursTag Lite（無料ダウンロード）は、手取りから見た仕事1時間の価値をもとに、値段を労働時間に換算します。支出を「必要・欲しい・衝動」に分けて自分の傾向を確認。目標に必要な労働時間と進捗も見えます。ウィジェット・Apple Watch対応、バックアップと復元もできます。\nデータは端末内だけ、アカウント不要・追跡なし。無制限に使うなら買い切り、サブスクなし。表示言語は50言語、アプリ内で切り替えられます。\n\n👉 https://apps.apple.com/app/id6794039979?pt=118326163&ct=soc_tg_guide&mt=8\n\n— Lumi Apps · 個人開発の iOS アプリ"
+    },
+    {
+      "lang": "en",
+      "official_locale": "en-US",
+      "app": "6794039979",
+      "text": "⏳ Before you check out: how many hours of work is this?\nIf you take home $25 an hour, a $100 jacket is 4 hours of work.\nHoursTag Lite (free download) turns any price into work time. Set your take-home value per work hour once, tag spending Need / Want / Impulse to see your pattern, and see the work hours behind a goal while you track progress. Widget, Apple Watch, backup and restore.\nEverything stays on your device: no account, no tracking. One payment unlocks unlimited use, no subscription. 50 interface languages, switchable in the app.",
+      "url": "https://apps.apple.com/app/id6794039979",
+      "image_url": "https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg",
+      "telegram_slot": "americas 15:00 UTC",
+      "preview_chars": 661,
+      "preview": "⏳ Before you check out: how many hours of work is this?\nIf you take home $25 an hour, a $100 jacket is 4 hours of work.\nHoursTag Lite (free download) turns any price into work time. Set your take-home value per work hour once, tag spending Need / Want / Impulse to see your pattern, and see the work hours behind a goal while you track progress. Widget, Apple Watch, backup and restore.\nEverything stays on your device: no account, no tracking. One payment unlocks unlimited use, no subscription. 50 interface languages, switchable in the app.\n\n👉 https://apps.apple.com/app/id6794039979?pt=118326163&ct=soc_tg_guide&mt=8\n\n— Lumi Apps · Independent iOS developer"
+    },
+    {
+      "lang": "vi",
+      "official_locale": "vi",
+      "app": "6794039979",
+      "text": "⏳ Trước khi bấm thanh toán: món này bằng bao nhiêu giờ làm?\nVí dụ thu nhập thực nhận của bạn là 100.000 đồng mỗi giờ, thì đôi giày 500.000 đồng là 5 giờ làm.\nHoursTag Lite (tải miễn phí) đổi giá tiền ra thời gian làm việc theo thu nhập thực nhận mỗi giờ của bạn. Chia khoản chi thành Cần / Muốn / Bốc đồng để thấy thói quen chi tiêu, xem một mục tiêu cần bao nhiêu giờ làm và theo dõi tiến độ. Có widget, Apple Watch, sao lưu và khôi phục.\nDữ liệu chỉ ở trên máy, không cần tài khoản, không theo dõi. Trả một lần để dùng không giới hạn, không thuê bao. Giao diện 50 ngôn ngữ (có tiếng Việt), đổi ngay trong ứng dụng.",
+      "url": "https://apps.apple.com/app/id6794039979",
+      "image_url": "https://open.cait518.cc/ios-app-guide/social/img/hourstaglite-share.jpg",
+      "footer": "— Lumi Apps · Nhà phát triển iOS độc lập",
+      "telegram_slot": "asia 01:00 UTC（Việt Nam 08:00）",
+      "preview_chars": 735,
+      "preview": "⏳ Trước khi bấm thanh toán: món này bằng bao nhiêu giờ làm?\nVí dụ thu nhập thực nhận của bạn là 100.000 đồng mỗi giờ, thì đôi giày 500.000 đồng là 5 giờ làm.\nHoursTag Lite (tải miễn phí) đổi giá tiền ra thời gian làm việc theo thu nhập thực nhận mỗi giờ của bạn. Chia khoản chi thành Cần / Muốn / Bốc đồng để thấy thói quen chi tiêu, xem một mục tiêu cần bao nhiêu giờ làm và theo dõi tiến độ. Có widget, Apple Watch, sao lưu và khôi phục.\nDữ liệu chỉ ở trên máy, không cần tài khoản, không theo dõi. Trả một lần để dùng không giới hạn, không thuê bao. Giao diện 50 ngôn ngữ (có tiếng Việt), đổi ngay trong ứng dụng.\n\n👉 https://apps.apple.com/app/id6794039979?pt=118326163&ct=soc_tg_guide&mt=8\n\n— Lumi Apps · Nhà phát triển iOS độc lập"
+    }
+  ]
+}

@@ -850,6 +850,215 @@ class RetryTests(unittest.TestCase):
         text_send.assert_not_called()
 
 
+def lookup_payload(screenshots_by_app):
+    """iTunes lookup shape; None means the listing has no screenshotUrls field."""
+    results = []
+    for app_id, count in screenshots_by_app.items():
+        result = {
+            "trackId": int(app_id),
+            "ipadScreenshotUrls": [f"https://example.com/ipad{n}.png" for n in range(5)],
+        }
+        if count is not None:
+            result["screenshotUrls"] = [
+                f"https://example.com/{app_id}-{n}.png" for n in range(count)
+            ]
+        results.append(result)
+    return json.dumps(
+        {"resultCount": len(results), "results": results}
+    ).encode("utf-8")
+
+
+class TelegramPageReadyGateTests(unittest.TestCase):
+    """hourstaglite-03: < 3 iPhone screenshots skips the App; Apple down fails open."""
+
+    APPS = tuple(str(7_000_000_000 + index) for index in range(10))
+    NOW = dt.datetime(2026, 10, 14, 1, 5, tzinfo=dt.timezone.utc)
+
+    def pool(self):
+        return [
+            {
+                "app": app_id,
+                "lang": locale,
+                "text": f"Fixture {app_id} {locale}",
+                "url": f"https://apps.apple.com/app/id{app_id}",
+                "source": "publisher_intent_catalog",
+            }
+            for app_id in self.APPS
+            for locale in common.OFFICIAL_SOCIAL_LOCALES
+        ]
+
+    def empty_ledger(self):
+        return {"receipts": {}, "intents": {}}
+
+    def test_only_listings_under_three_iphone_screenshots_are_skipped(self):
+        apps = {
+            "7000000001": 1,     # HoursTag Lite today: 1 iPhone + 1 iPad shot
+            "7000000002": 0,
+            "7000000003": 3,     # exactly the threshold is ready
+            "7000000004": 6,
+            "7000000005": None,  # field missing: unknown, never blocked
+        }
+        opener = mock.Mock(return_value=FakeResponse(lookup_payload(apps)))
+        sleeper = mock.Mock()
+        unready = telegram_post.page_unready_apps(
+            [*apps, "7000000006", "not-an-id"], opener=opener, sleeper=sleeper,
+        )
+        self.assertEqual(frozenset({"7000000001", "7000000002"}), unready)
+        self.assertEqual(1, opener.call_count)
+        sleeper.assert_not_called()
+        request = opener.call_args.args[0]
+        query = urllib.parse.parse_qs(urllib.parse.urlsplit(request.full_url).query)
+        self.assertEqual("GET", request.get_method())
+        self.assertTrue(request.full_url.startswith(telegram_post.APPLE_LOOKUP_URL))
+        self.assertEqual(
+            [",".join(sorted([*apps, "7000000006"]))], query["id"]
+        )
+        self.assertEqual([telegram_post.PAGE_READY_STOREFRONT], query["country"])
+        self.assertIn("Macintosh", request.get_header("User-agent"))
+
+    def test_unreachable_or_refusing_lookup_fails_open_after_one_request(self):
+        for failure in (
+            urllib.error.URLError("offline"),
+            TimeoutError("timed out"),
+            http_error(403),
+            http_error(429),
+            http_error(503),
+            FakeResponse(b"<html>not json</html>"),
+            FakeResponse(b"[]"),
+            FakeResponse(b'{"resultCount": 0}'),
+        ):
+            with self.subTest(failure=repr(failure)):
+                opener = mock.Mock(side_effect=[failure])
+                with mock.patch("sys.stderr", new_callable=io.StringIO) as stderr:
+                    unready = telegram_post.page_unready_apps(
+                        self.APPS, opener=opener, sleeper=mock.Mock(),
+                    )
+                self.assertEqual(frozenset(), unready)
+                self.assertEqual(1, opener.call_count)
+                self.assertIn("fail open", stderr.getvalue())
+
+    def test_batches_pause_two_seconds_and_stop_on_rate_limit(self):
+        opener = mock.Mock(side_effect=[
+            FakeResponse(lookup_payload({"7000000000": 1, "7000000001": 5})),
+            http_error(429),
+            AssertionError("must stop asking Apple after HTTP 429"),
+        ])
+        sleeper = mock.Mock()
+        with (
+            mock.patch.object(telegram_post, "PAGE_READY_BATCH", 2),
+            mock.patch("sys.stderr", new_callable=io.StringIO),
+        ):
+            unready = telegram_post.page_unready_apps(
+                self.APPS[:6], opener=opener, sleeper=sleeper,
+            )
+        # Known evidence from the first batch is kept; the unknown rest passes.
+        self.assertEqual(frozenset({"7000000000"}), unready)
+        self.assertEqual(2, opener.call_count)
+        sleeper.assert_called_once_with(2)
+        self.assertGreaterEqual(telegram_post.PAGE_READY_PAUSE_SECONDS, 2)
+
+    def test_ready_apps_keep_exactly_the_same_slot_choice(self):
+        pool = self.pool()
+        for hour in telegram_post.SLOT_HOURS:
+            now = self.NOW.replace(hour=hour)
+            with self.subTest(hour=hour):
+                baseline = telegram_post.choose_unpublished(
+                    pool, self.empty_ledger(), now
+                )
+                gated = telegram_post.choose_unpublished(
+                    pool, self.empty_ledger(), now, skip_apps=frozenset()
+                )
+                self.assertEqual(baseline, gated)
+
+    def test_unready_app_is_never_chosen_and_next_ready_app_is(self):
+        pool = self.pool()
+        for hour in telegram_post.SLOT_HOURS:
+            now = self.NOW.replace(hour=hour)
+            zone = telegram_post._zone(hour)
+            with self.subTest(hour=hour):
+                baseline = telegram_post.choose_unpublished(
+                    pool, self.empty_ledger(), now
+                )
+                skipped = frozenset({str(baseline["app"])})
+                item = telegram_post.choose_unpublished(
+                    pool, self.empty_ledger(), now, skip_apps=skipped
+                )
+                self.assertIsNotNone(item)
+                self.assertNotIn(str(item["app"]), skipped)
+                self.assertIn(item["lang"], telegram_post.TZ_LANGS[zone])
+                self.assertIsNone(
+                    telegram_post.choose_unpublished(
+                        pool, self.empty_ledger(), now,
+                        skip_apps=frozenset(self.APPS),
+                    )
+                )
+
+    def test_publish_once_forwards_the_gate_to_candidate_selection(self):
+        context = {
+            "slot": "2026-10-14T01:00:00+00:00",
+            "now": self.NOW,
+        }
+        with (
+            mock.patch.object(
+                telegram_post, "choose_unpublished", return_value=None
+            ) as choose,
+            mock.patch.object(telegram_post, "_publish_item") as send,
+            mock.patch("sys.stdout", new_callable=io.StringIO),
+        ):
+            telegram_post.publish_once(
+                [], self.empty_ledger(), mock.Mock(), context, "token",
+                {"id": -1}, unready_apps=frozenset({"7000000001"}),
+            )
+        self.assertEqual(
+            frozenset({"7000000001"}), choose.call_args.kwargs["skip_apps"]
+        )
+        send.assert_not_called()
+
+    def test_daily_run_still_posts_when_apple_lookup_is_unreachable(self):
+        pool = self.pool()
+        cases = (
+            (urllib.error.URLError("offline"), frozenset()),
+            (http_error(429), frozenset()),
+            (
+                FakeResponse(lookup_payload({"7000000001": 1, "7000000002": 4})),
+                frozenset({"7000000001"}),
+            ),
+        )
+        for lookup, expected in cases:
+            store = mock.Mock(spec=telegram_post.GitHubLedger)
+            store.load.return_value = self.empty_ledger()
+            with self.subTest(lookup=repr(lookup)):
+                with (
+                    mock.patch.dict(os.environ, {
+                        "TELEGRAM_BOT_TOKEN": "fixture-token",
+                        "TELEGRAM_CHAT_ID": "@fixture",
+                        "GITHUB_TOKEN": "fixture-github",
+                    }),
+                    mock.patch.object(
+                        telegram_post, "production_context",
+                        return_value={"source_sha": "1" * 40},
+                    ),
+                    mock.patch.object(telegram_post, "load_pool", return_value=pool),
+                    mock.patch.object(
+                        telegram_post, "GitHubLedger", return_value=store
+                    ),
+                    mock.patch.object(
+                        telegram_post, "read_native_chat", return_value={"id": -1}
+                    ),
+                    mock.patch.object(telegram_post, "reconcile_pending"),
+                    mock.patch.object(telegram_post, "publish_once") as publish,
+                    mock.patch.object(
+                        urllib.request, "urlopen", side_effect=[lookup]
+                    ) as opener,
+                    mock.patch("sys.stdout", new_callable=io.StringIO),
+                    mock.patch("sys.stderr", new_callable=io.StringIO),
+                ):
+                    self.assertEqual(0, telegram_post.main([]))
+                self.assertEqual(1, opener.call_count)
+                publish.assert_called_once()
+                self.assertEqual(expected, publish.call_args.kwargs["unready_apps"])
+
+
 class DailyPortfolioCoverageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -895,6 +1104,12 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             for offset in range(4):
                 day = dt.date(2026, 10, 14) + dt.timedelta(days=offset)
                 self.assertIn("衝榜 B", portfolio_daily.spotlight_block(self.apps, day, tmp))
+            skipped = portfolio_daily.spotlight_block(
+                self.apps, dt.date(2026, 10, 14), tmp, skip_apps=frozenset({other.app_id}))
+            self.assertIn("故事 A", skipped)
+            self.assertEqual("", portfolio_daily.spotlight_block(
+                self.apps, dt.date(2026, 10, 14), tmp,
+                skip_apps=frozenset({app.app_id, other.app_id})))
             after = portfolio_daily.spotlight_block(self.apps, dt.date(2026, 10, 28), tmp)
             self.assertTrue("故事 A" in after or "衝榜 B" in after)
             self.assertEqual(set(), portfolio_daily.spotlight_focus_ids(dt.date(2026, 10, 28), tmp))

@@ -14,6 +14,7 @@ import re
 import secrets
 import subprocess
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -165,6 +166,19 @@ CURRENT_ROSTER_APP_IDS = frozenset({
 CURRENT_ROSTER_LOCALE_RECORDS = 2650
 # Ledger intents may name a historical roster App or a current one.
 LEDGER_APP_IDS = EXACT47_APP_IDS | CURRENT_ROSTER_APP_IDS
+
+# 頁面就緒門檻(hourstaglite-03):商店頁 iPhone 截圖少於 3 張的 App 接不住貼文
+# 帶來的點擊,先跳過,截圖補齊後自動恢復。每次執行只做一次批次 lookup;
+# Apple 讀不到時一律放行(fail open),絕不讓每日貼文因此失敗。
+APPLE_LOOKUP_URL = "https://itunes.apple.com/lookup"
+PAGE_READY_MIN_SCREENSHOTS = 3
+PAGE_READY_STOREFRONT = "us"
+PAGE_READY_BATCH = 100
+PAGE_READY_PAUSE_SECONDS = 2
+PAGE_READY_USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
+    "(KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+)
 
 
 def _json_bytes(value):
@@ -905,7 +919,55 @@ def read_native_chat(token, configured_chat):
     return chat
 
 
-def choose_unpublished(pool, ledger, now, slot=None):
+def page_unready_apps(app_ids, country=PAGE_READY_STOREFRONT, opener=None, sleeper=None):
+    """App IDs whose live listing shows < 3 iPhone screenshots; unknown passes."""
+    app_ids = sorted({
+        str(app_id) for app_id in app_ids if re.fullmatch(r"[0-9]+", str(app_id))
+    })
+    unready = set()
+    for start in range(0, len(app_ids), PAGE_READY_BATCH):
+        if start:
+            (time.sleep if sleeper is None else sleeper)(PAGE_READY_PAUSE_SECONDS)
+        batch = app_ids[start:start + PAGE_READY_BATCH]
+        request = urllib.request.Request(
+            f"{APPLE_LOOKUP_URL}?" + urllib.parse.urlencode({
+                "id": ",".join(batch), "country": country, "entity": "software",
+            }),
+            headers={"User-Agent": PAGE_READY_USER_AGENT, "Accept": "application/json"},
+        )
+        try:
+            # One attempt: 403/429 means stop asking Apple, never retry harder.
+            payload = request_json(
+                request, label="App Store lookup (page-ready gate)",
+                timeout=20, attempts=1, opener=opener,
+            )
+        except (RequestError, OSError, ValueError) as error:
+            print(
+                f"Telegram page-ready gate: lookup unavailable, fail open: {error}",
+                file=sys.stderr,
+            )
+            break
+        results = payload.get("results") if isinstance(payload, dict) else None
+        if not isinstance(results, list):
+            print(
+                "Telegram page-ready gate: lookup returned no results list, fail open",
+                file=sys.stderr,
+            )
+            break
+        for result in results:
+            if not isinstance(result, dict):
+                continue
+            app_id = str(result.get("trackId") or "")
+            screenshots = result.get("screenshotUrls")
+            # Missing listing or field is unknown, not "unready": never block on it.
+            if app_id in batch and isinstance(screenshots, list) and (
+                len(screenshots) < PAGE_READY_MIN_SCREENSHOTS
+            ):
+                unready.add(app_id)
+    return frozenset(unready)
+
+
+def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
     from social_slot_gate import slot_start
 
     now = now.astimezone(_dt.timezone.utc)
@@ -940,6 +1002,7 @@ def choose_unpublished(pool, ledger, now, slot=None):
         if item.get("source") == "publisher_intent_catalog"
         and item.get("lang") in TZ_LANGS[zone]
         and str(item.get("app")) not in blocked_apps
+        and str(item.get("app")) not in skip_apps
         and _digest(compose_text(item)) not in used
     ]
     # Native gaps get the next eligible existing slot, never additional sends.
@@ -1074,12 +1137,14 @@ def reconcile_pending(ledger, store):
         store.save(ledger)
 
 
-def publish_once(pool, ledger, store, context, token, chat):
+def publish_once(pool, ledger, store, context, token, chat, unready_apps=frozenset()):
     slot = context["slot"]
     if slot in ledger["intents"]:
         print(f"Telegram slot {slot} already reserved; no resend")
         return
-    item = choose_unpublished(pool, ledger, context["now"], slot=slot)
+    item = choose_unpublished(
+        pool, ledger, context["now"], slot=slot, skip_apps=unready_apps,
+    )
     if item is None:
         print("Telegram no eligible new payload in this slot; no send")
         return
@@ -1691,7 +1756,16 @@ def main(argv=None):
             f"Telegram native coverage {roster_size - len(gaps)}/{roster_size}; "
             f"gaps={','.join(gaps)}"
         )
-        publish_once(pool, ledger, store, context, tok, native_chat)
+        unready = page_unready_apps({
+            str(item.get("app") or "") for item in pool
+            if item.get("source") == "publisher_intent_catalog"
+        })
+        if unready:
+            print(
+                f"Telegram page-ready gate: <{PAGE_READY_MIN_SCREENSHOTS} iPhone "
+                f"screenshots, skipped until ready: {','.join(sorted(unready))}"
+            )
+        publish_once(pool, ledger, store, context, tok, native_chat, unready_apps=unready)
         return 0
     except (
         RequestError, ValueError, KeyError, TypeError, OSError,

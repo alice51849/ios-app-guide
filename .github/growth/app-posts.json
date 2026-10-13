@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "updated": "2026-10-13",
+ "note": "Per-app posts from the deep diagnosis. Same honesty_rules and posting_rules as fifty-languages-campaign.json. Only features present in each app's own listing copy.",
+ "posts": [
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "zh-Hant",
+   "scenario": "pain",
+   "ct": "sib_tw_pain",
+   "text": "相簿裡幾百張截圖，每一張當初都是一件「待會再處理」的事：收據、地址、訂位、想買的東西。結果一張都沒處理。\n\nShotInbox 會在手機上把截圖自動分成購物、收據、票券、地圖、對話等類別，還能搜尋截圖裡的文字。看到地址就開地圖、看到日期就加進行事曆。它不會自己刪任何東西，處理完再由你決定。\n\n最近 50 張截圖免費用完整功能，全程在裝置上處理，不上傳。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "zh-Hant",
+   "scenario": "find_text",
+   "ct": "sib_tw_find",
+   "text": "「那張截圖到底在哪？」記得內容、卻找不到圖，是截圖最常見的痛。\n\nShotInbox 會辨識截圖裡的文字，輸入關鍵字就能找到那張訂位確認、那組優惠碼、那段對話。辨識全在手機上完成，截圖不會上傳。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "zh-Hant",
+   "scenario": "storage",
+   "ct": "sib_tw_space",
+   "text": "手機空間不足，相簿裡卻躺著三年份的截圖？\n\n先用 ShotInbox 把截圖分好類：有用的收據、票券、地址留下或加進提醒，沒用的再清掉。刪除前「照片」會再跟你確認一次，ShotInbox 不會自動刪除。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "ja",
+   "scenario": "pain",
+   "ct": "sib_ja_pain",
+   "text": "スクショが何百枚もたまっていませんか？\n\nShotInbox はスクショを買い物・レシート・チケット・地図・トークなどに自動で分類し、画像の中の文字でも検索できます。住所なら地図で開く、日付ならカレンダーに追加。処理はすべて端末内で、勝手に削除することはありません。最新50枚は無料で全機能を使えます。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "en",
+   "scenario": "pain",
+   "ct": "sib_en_pain",
+   "text": "Every screenshot was a task: a receipt to file, an address to visit, a code to use. Then the camera roll swallowed them.\n\nShotInbox sorts screenshots on-device into receipts, tickets, places, chats and more, lets you search the text inside them, and turns them into actions like Open in Maps or Add to Calendar. It never deletes anything on its own. Your latest 50 screenshots get the full workflow free."
+  }
+ ]
+}

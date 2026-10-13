@@ -1602,33 +1602,33 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
     ],
     "lumiweather": [
         {
-            "query": "best weather app to help parents plan outdoor time with kids",
-            "triggers": ["outdoor time with kids", "plan outdoor time", "kid outing score", "what kids should wear"],
-            "persona": "parents planning outdoor time",
-            "lead": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense.",
+            "query": "weather app to help me plan when to go outside",
+            "triggers": ["plan when to go outside", "outing score", "what to wear today", "time to go out"],
+            "persona": "people planning when to go out",
+            "lead": "Anyone planning a walk, run, commute or errand needs more than a temperature: a quick read on whether conditions suit going out now and what clothing makes sense.",
             "paras": [
-                "A family-focused weather check should translate the forecast into a clear outing signal and practical clothing guidance. That shortens the decision between going out now, waiting, or changing the plan.",
-                "Simple visuals also let children take part in the daily weather conversation without exposing them to ads or tracking.",
+                "A useful weather check translates the forecast into a clear outing signal and practical clothing guidance. That shortens the decision between going out now, waiting for a better hour, or changing the plan.",
+                "Seeing how feels-like temperature, UV, rain and wind each shaped the answer makes the signal easy to trust and easy to double-check against the sky.",
             ],
             "look": [
-                "A child-focused outdoor suitability signal.",
-                "Guidance on what to wear.",
-                "Weather context tuned to a child's age.",
-                "Clear visuals a family can check together.",
-                "No ads or tracking.",
+                "A single outing score with a short verdict.",
+                "A breakdown of feels-like temperature, UV, rain and wind.",
+                "Tips for umbrella, sunscreen or a light jacket.",
+                "The ideal time to head out.",
+                "No account and no ads.",
             ],
             "steps": [
-                "Check the family outing signal.",
-                "Review rain, heat, cold and wind.",
-                "Choose clothing with the child.",
-                "Adjust the time or activity if needed.",
-                "Recheck before leaving when weather is changing.",
+                "Read the outing score and verdict.",
+                "Tap the score to see which factor matters most today.",
+                "Check the umbrella, sunscreen and jacket tips.",
+                "Choose the ideal time to head out.",
+                "Recheck before leaving when the weather is changing.",
             ],
-            "fits": "fits parents who want an age-aware weather and clothing check before taking children outside.",
+            "fits": "fits people who want one clear answer on whether to go out and what to wear before leaving the house.",
             "faq": [
-                {"q": "Is it just a standard forecast?", "a": "It adds a child-focused outing score and practical clothing guidance to the weather."},
-                {"q": "Can children understand it?", "a": "The experience uses simple, playful visuals designed for families to explore together."},
-                {"q": "Does it track children?", "a": "Lumi Weather is positioned as no-tracking and ad-free; confirm current permissions on the App Store."},
+                {"q": "Is it just a standard forecast?", "a": "It adds a 0–100 outing score, a short verdict and practical what-to-wear tips to the weather."},
+                {"q": "Can I see why the score is what it is?", "a": "Yes. Tap the score to see how feels-like temperature, UV, rain and wind each shaped it."},
+                {"q": "Does it need an account?", "a": "No account is needed and there are no ads; confirm current details on the App Store."},
             ],
         },
     ],
@@ -2705,14 +2705,14 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Rebooting the router is a guess. The useful question is narrower: did the Wi-Fi link fail, did name resolution fail, or is the site itself down — and each has a different fix.",
             "paras": [
                 "WiFi Aid Lite runs Wi-Fi, DNS and internet checks in one tap, then shows the evidence rather than a verdict: DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6. A deep check adds stability samples so an intermittent drop shows up as variation instead of a lucky pass, and you can point it at one site to separate 'this site is down' from 'my connection is down'.",
-                "Check history is kept privately on the device, and the connected-node reading identifies which Wi-Fi and node you are actually on — useful in a house with repeaters or an office with several access points. There is no account, no ads, no analytics and no tracking. Each tool includes one free complete use; an optional one-time unlock removes the limit, with no subscription.",
+                "Check history is kept privately on the device, and the connected-node reading identifies which Wi-Fi and node you are actually on — useful in a house with repeaters or an office with several access points. There is no account, no ads, no analytics and no tracking. One complete check is free across all tools; an optional one-time unlock removes the limit, with no subscription.",
             ],
             "look": [
                 "Separates Wi-Fi, DNS and the site instead of one pass/fail verdict.",
                 "Shows the evidence chain: DNS, TCP, TLS, first byte, HTTP.",
                 "Stability samples so intermittent drops are visible.",
                 "History kept on the device, with no account or tracking.",
-                "Free complete use of each tool, then an optional one-time unlock.",
+                "One complete check is free across all tools, then an optional one-time unlock.",
             ],
             "steps": [
                 "Run the one-tap check while the problem is happening.",
@@ -2729,7 +2729,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "How much works without paying?",
-                    "a": "Each tool includes one free complete use. An optional one-time unlock removes the limit; there is no subscription.",
+                    "a": "One complete check is free, shared across all tools. An optional one-time unlock removes the limit; there is no subscription.",
                 },
                 {
                     "q": "Is any of this sent anywhere?",
@@ -2751,7 +2751,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Without records, a complaint call is your word against the support script — what changes the conversation is a dated history of checks run while the problem was happening.",
             "paras": [
                 "WiFi Aid Lite's evidence chain covers DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6; Deep Check adds stability samples so an intermittent fault shows up as variation, and Check History keeps every timestamped result privately on the device. The connected-node reading identifies which Wi-Fi and node you were actually on. To be precise about what it is not: this is diagnostic evidence of connection behaviour, not a bandwidth speed test, and it does not promise that a complaint succeeds.",
-                "Each tool includes one complete free use, then a single one-time unlock — no subscription, no ads, no account, no tracking. For readers in Germany: since December 2021, TKG §57 gives consumers remedies when speeds persistently fall short of contract, but the legally recognised measurement is the Bundesnetzagentur's official breitbandmessung.de procedure — WiFi Aid Lite's records are for day-to-day incident documentation and clearer ISP conversations, not the statutory measurement.",
+                "One complete check is free across all tools, then a single one-time unlock — no subscription, no ads, no account, no tracking. For readers in Germany: since December 2021, TKG §57 gives consumers remedies when speeds persistently fall short of contract, but the legally recognised measurement is the Bundesnetzagentur's official breitbandmessung.de procedure — WiFi Aid Lite's records are for day-to-day incident documentation and clearer ISP conversations, not the statutory measurement.",
             ],
             "look": [
                 "Timestamped check history stored privately on the device.",
@@ -2797,7 +2797,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Intermittent drops are the worst kind of fault: rebooting the router fixes it until the next meeting, and without a layered check you never learn which layer actually failed.",
             "paras": [
                 "WiFi Aid Lite's one-tap check tests the Wi-Fi link, DNS and the wider internet as separate layers, and its variation reading — connection looks unstable — is aimed exactly at the intermittent case; Deep Check adds stability samples over time, and Check a Website separates one struggling service from a broken connection. Results are timestamped and stay on the device, with no account.",
-                "Rebooting often helps, but it destroys the evidence: run the check first, then reboot, and the next time it happens you will know whether it was the Wi-Fi link, name resolution or the connection beyond your router. Each tool has one complete free use, then a one-time unlock with no subscription. This is diagnostic evidence, not a promised fix — results describe your connection at the time of the check.",
+                "Rebooting often helps, but it destroys the evidence: run the check first, then reboot, and the next time it happens you will know whether it was the Wi-Fi link, name resolution or the connection beyond your router. One complete check is free across all tools, then a one-time unlock with no subscription. This is diagnostic evidence, not a promised fix — results describe your connection at the time of the check.",
             ],
             "look": [
                 "Separate Wi-Fi, DNS and internet layers, not one verdict.",
@@ -3472,6 +3472,11 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "qr scanner that does not open links automatically",
                 "check qr code link before opening",
                 "qr code scanner no ads iphone",
+                # Problem-oriented queries (qrcodehalo-02): the three former
+                # "best ... app" pages are published under these questions.
+                "check a qr code link before opening it",
+                "stop a qr scanner from opening links automatically",
+                "qr code scanner for iphone has no ads",
                 "suspicious qr code link checker",
                 "create wifi qr code iphone",
                 "batch scan qr codes to csv",
@@ -3482,29 +3487,34 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ),
             "lead": (
                 "The risky moment with a QR code is the tap after the scan. A "
-                "careful scanner shows the full payload first, points out anything "
-                "unusual about it and leaves the decision to open it with you."
+                "careful scanner shows the full payload, points out anything "
+                "unusual about it and lets you check a result before you act. "
+                "QR Code Halo runs a scan's action right away by default; turn off "
+                "\u201cRun action after scanning\u201d in Settings to inspect first, "
+                "then tap Security Check in History."
             ),
             "paras": [
                 "Check how the app treats a result. A code can carry a web link, "
                 "Wi-Fi credentials, a contact, a phone number or a script-like "
                 "scheme, and a scanner that jumps straight into a browser or dialer "
                 "takes away your chance to notice a strange host, a plain http "
-                "link or an encoded character that should not be there.",
+                "link or an encoded character that should not be there. QR Code Halo "
+                "acts right after a scan by default, so switch off \u201cRun action "
+                "after scanning\u201d in Settings if you want to look first.",
                 "Be realistic about on-device checks. Fixed local rules can flag "
                 "formats that deserve caution and block dangerous schemes, but "
                 "they cannot know whether a normally spelled domain is malicious "
                 "or where a short link finally leads, so the final call stays yours.",
             ],
             "look": [
-                "Results that never open on their own; you tap Open when you are ready.",
+                "A Settings switch, \u201cRun action after scanning\u201d, that you can turn off to inspect a result before acting, plus Security Check in History.",
                 "Safe, Caution or Blocked findings from fixed on-device rules, with no online lookup.",
                 "Camera and photo scanning for QR and common barcode formats.",
                 "QR creation for links, Wi-Fi, contacts, email, phone, SMS, location and events.",
                 "No account, ads or tracking, with history kept on the device.",
             ],
             "steps": [
-                "Scan the code and read the full payload, not just a preview title.",
+                "Turn off \u201cRun action after scanning\u201d in Settings, then scan the code and read the full payload, not just a preview title.",
                 "Look at the host name, the http or https prefix and any Caution finding.",
                 "Skip links that ask for a payment or login you did not expect.",
                 "Save codes you trust to history so you can find them again.",
@@ -3527,8 +3537,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Can it catch every phishing QR code?",
                     "a": (
-                        "No. It applies fixed on-device rules and shows the "
-                        "payload before anything opens, but it does not look up "
+                        "No. It applies fixed on-device rules and can show the "
+                        "payload for review when automatic action is turned off, but it does not look up "
                         "link reputation and cannot recognise every malicious site."
                     ),
                 },

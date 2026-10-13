@@ -1540,7 +1540,36 @@ def external_localized_values(key, locale, localizations=None):
     return values
 
 
-def build_faq(locale, name, sub, kws):
+# 真實問答(wifiaidlite-05):不自稱 best、不把關鍵字塞進模板;未列語系不輸出模板 FAQ。
+FAQ_OVERRIDES = {
+    "wifiaidlite": {
+        "en": [
+            ("What does WiFi Aid Lite check?",
+             "It runs DNS, TCP, TLS, HTTP and direct-IP checks to show whether the problem is your Wi-Fi link, name resolution, the connection beyond your router, or the website itself, and lists the evidence for each conclusion."),
+            ("Does it work without an account?",
+             "Yes. There is no account, no ads, no analytics and no tracking; check history stays on your device."),
+            ("What is free and what needs the unlock?",
+             "One complete check is free across all tools. An optional one-time lifetime unlock removes the limit; there is no subscription."),
+            ("Can it prove my internet provider is at fault?",
+             "No. It records what your connection did at the time of each check, which helps you describe the problem clearly, but it does not promise a fix or that a complaint will succeed."),
+        ],
+        "zh-Hant": [
+            ("WiFi Aid Lite 會檢查什麼?",
+             "它會做 DNS、TCP、TLS、HTTP 與直連 IP 檢查,判斷問題出在 Wi-Fi 連線、名稱解析、路由器之外的線路,還是網站本身,並列出每個結論的依據。"),
+            ("不註冊帳號也能用嗎?",
+             "可以。沒有帳號、沒有廣告、沒有分析工具、沒有追蹤;檢查紀錄只保存在你的裝置上。"),
+            ("哪些免費、哪些需要解鎖?",
+             "所有工具合計可免費完整檢查一次;之後可選擇一次性終身解鎖不限次數,無訂閱。"),
+            ("它能證明是電信業者的問題嗎?",
+             "不能。它只記錄每次檢查當下你的連線狀況,幫助你更清楚描述問題,不保證修好,也不保證申訴成功。"),
+        ],
+    },
+}
+
+
+def build_faq(locale, name, sub, kws, key=None):
+    if key in FAQ_OVERRIDES:
+        return list(FAQ_OVERRIDES[key].get(locale) or FAQ_OVERRIDES[key].get(base_lang(locale)) or [])
     b = base_lang(locale)
     qtpl = QTPL.get(b)
     atpl = ATPL.get(b)
@@ -1629,7 +1658,7 @@ def build_one(key, locale, all_locales, *, copy_by_locale=None):
     e = html.escape
 
     feats = kws[:8]
-    faq = build_faq(locale, name, sub, kws)
+    faq = build_faq(locale, name, sub, kws, key)
     short_desc = _word_bounded_excerpt(
         desc.split("\n")[0] if desc else sub, 155
     )

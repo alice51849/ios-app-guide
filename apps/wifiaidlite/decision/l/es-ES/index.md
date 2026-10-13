@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # WiFi Aid Lite — Diagnóstico de red fiable | iOS App
 
-Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo. • Hacer test — Tests de Wi-Fi y DNS en un toque • Test profundo — Más pruebas y estabilidad de red • Probar una web — Un sitio o internet en general • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios ni rastreo. Registros privados solo en este dispositivo. Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.
+Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo. • Hacer test — Tests de Wi-Fi y DNS en un toque • Test profundo — Más pruebas y estabilidad de red • Probar una web — Un sitio o internet en general • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios ni rastreo. Registros privados solo en este dispositivo. Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.
 
 - Más
 - Gratis para empezar · desbloqueo único

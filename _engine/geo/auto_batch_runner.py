@@ -584,7 +584,7 @@ def _cluster_defs(cn, pl, ph, doc):
              "Most 'family app' lists are really kids' games. This one is about the paperwork, the logistics and the forgetting.",
              [("mochidonestamp", "Remember when you last did the things nobody schedules."),
               ("scanto", "School forms and receipts into searchable PDFs."),
-              ("lumiweather", "Decide what the children should wear before you leave."),
+              ("lumiweather", "Check what to wear and whether to go out before you leave."),
               ("snapport", "Passport photos for the whole family at home.")],
              [("Are these kids' apps?", "No, these are for the adult running the household."),
               ("Do they need accounts?", "No.")]),

@@ -279,56 +279,28 @@
  {
   "app_key": "lumiweather",
   "kind": "scenario",
-  "query": "family weather app that explains the forecast to children",
+  "query": "weather app that explains the forecast in one line",
   "match": [
-   "family weather app that explains the forecast to children",
-   "family weather app that explains",
-   "weather app that explains the forecast to children"
+   "weather app that explains the forecast in one line",
+   "explains the forecast in one line",
+   "forecast in one line"
   ],
-  "meta_description": "A family weather app should turn the forecast into something a child understands.",
-  "lead": "A family weather app should turn the forecast into something a child understands — {name} adds an outing index and what-to-wear hints on top of real WeatherKit data.",
-  "detail": "{name} shows real Apple WeatherKit forecasts for your location and translates them into family decisions: an outing index, clothing suggestions and simple wording children can follow. It caches data so the app stays usable when the network is slow, shows no ads, and is a kids-safe app with a one-time purchase.",
+  "meta_description": "A weather app that explains the forecast in one line: an outing score from 0 to 100 plus a short verdict.",
+  "lead": "A weather app that explains the forecast in one line saves the mental arithmetic — {name} turns feels-like temperature, UV, rain chance and wind into a 0–100 outing score and a short verdict, on top of Apple WeatherKit data.",
+  "detail": "{name} reads the forecast from Apple WeatherKit for your location and shows an outing score with a short verdict, tips for umbrella, sunscreen or a light jacket, and the ideal time to head out. Tap the score to see how each factor shaped it. There is no account, no ads and no third-party analytics; the Today screen works right away and a one-time in-app unlock adds the hourly view, 7-day forecast and more, with no subscription.",
   "bullets": [
-   "Real WeatherKit data with a family-friendly outing index",
-   "What-to-wear suggestions children can act on",
-   "No ads, kid-safe, one-time purchase"
+   "Outing score and one-line verdict from real WeatherKit data",
+   "Umbrella, sunscreen and light-jacket tips",
+   "No account, no ads, no third-party analytics, no subscription"
   ],
   "faq": [
    {
     "q": "Is the weather data real?",
-    "a": "Yes. {name} uses Apple WeatherKit for your location and caches it when the service is busy."
+    "a": "Yes. {name} uses Apple WeatherKit for your location. Forecasts are for reference only, so check the conditions around you before heading out."
    },
-   {
-    "q": "Does it work on StandBy?",
-    "a": "Yes. {name} includes a StandBy view for a bedside or kitchen iPhone."
-   }
-  ]
- },
- {
-  "app_key": "lumiweather",
-  "kind": "scenario",
-  "query": "weather app for kids with outfit suggestions",
-  "match": [
-   "weather app for kids with outfit suggestions",
-   "weather app for kids with outfit",
-   "kids weather app outfit suggestions"
-  ],
-  "meta_description": "A kids weather app with outfit suggestions saves the morning argument.",
-  "lead": "A kids weather app with outfit suggestions saves the morning argument — {name} turns today's forecast into what to wear and whether to go out.",
-  "detail": "{name} reads the real forecast from Apple WeatherKit and shows children a simple answer: jacket or not, umbrella or not, good day for the playground or not. Parents see the same numbers in full. There are no ads, no tracking, and the app is a one-time purchase in the kids category.",
-  "bullets": [
-   "Outfit and outing suggestions derived from the real forecast",
-   "Simple, child-readable wording alongside full parent details",
-   "No ads, no tracking, one-time purchase"
-  ],
-  "faq": [
    {
     "q": "Does {name} need a login?",
-    "a": "No. It uses your location permission and Apple WeatherKit; no account is created."
-   },
-   {
-    "q": "What if the forecast fails to load?",
-    "a": "The app keeps the last cached forecast and retries gently instead of showing sample data."
+    "a": "No. It uses your location only to get the weather where you are; no account is created."
    }
   ]
  },

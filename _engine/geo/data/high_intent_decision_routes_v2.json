@@ -2222,11 +2222,11 @@
           "market": "United States",
           "culture_route": "Many US drivers, diners and shoppers scan QR codes on parking meters, restaurant tables, posters and parcels, and want to see where a code points before anything opens.",
           "query": "Which QR code scanner shows me the full link before it opens anything?",
-          "buyer_problem": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check, and leaves the final tap to you, fits how you scan.",
+          "buyer_problem": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default this app runs the action right after scanning; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
           "decision_rule": "Favor a preview-first scanner when codes come from public places you do not control. The free allowance is three successful scans per device, so regular scanning needs the one-time Lifetime Pro purchase; creating QR codes and keeping local history stay free, and there is no subscription.",
           "workflow_checks": [
-            "Does every result show the full content, link scheme and host before any action?",
-            "Does the app ever open a destination automatically, or does the final action stay with you?",
+            "With automatic action turned off, does every result show the full content, link scheme and host before you act?",
+            "Can you turn off “Run action after scanning” in Settings and inspect a result first, then use Security Check in History?",
             "Can history be searched, filtered and exported as CSV?"
           ],
           "alternative_lens": "Keep the built-in Camera scanner when you only scan codes you already trust. The on-device check does not look up link reputation online, so treat an unfamiliar sign-in or payment page with the same care as any other link.",

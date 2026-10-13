@@ -294,8 +294,10 @@
           "detail": "growth_scoreboard.py 只量每語系前 3 個關鍵字。把 /home/user/ios-app-guide/_engine/data/mission_routines_full.json 的 zh-Hant 前三改成「兒童作息,獎勵表,集點表」、ja「ごほうびシール,お支度ボード,生活習慣」、ko「칭찬스티커,생활습관,등원준비」，並刪掉 zh-Hans 混入的「逻辑,数字,照片,滤镜,天气」；同時把資料檔的語言行改成 50，讓 GEO 頁與 Telegram 一併繼承。（改 _engine/data 需在 00_GrowthEngine 改再鏡像，交本機。）",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
-          "note": "需要修改 _engine/data/mission_routines_full.json（資料檔，不在 drafts/ 範圍內），所以沒有動。計分板量測詞已放在 challenge_terms.lumimission；語言行改成 50、清掉 zh-Hans 無關關鍵字這兩件事還沒做"
+          "status": "done",
+          "note": "需要修改 _engine/data/mission_routines_full.json（資料檔，不在 drafts/ 範圍內），所以沒有動。計分板量測詞已放在 challenge_terms.lumimission；語言行改成 50、清掉 zh-Hans 無關關鍵字這兩件事還沒做",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "zh-Hant／ja／ko 前三關鍵字與 50 語言行已改（_engine/data）"
         },
         {
           "id": "lumimission-04",
@@ -403,8 +405,10 @@
           "detail": "用 lookup 的 description 回填 bopomofo_full.json（TW／US／JP／KR／VN），避免後續分析再用舊稿。（資料檔在 _engine/data（鏡像），交本機。）",
           "owner": "local",
           "impact": "medium",
-          "status": "todo",
-          "note": "需用 App Store live 文案改寫 _engine/data/bopomofo_full.json（TW／US／JP／KR／VN），屬 drafts 以外的資料檔與 ASC 線上資料，不在本次可寫範圍"
+          "status": "done",
+          "note": "需用 App Store live 文案改寫 _engine/data/bopomofo_full.json（TW／US／JP／KR／VN），屬 drafts 以外的資料檔與 ASC 線上資料，不在本次可寫範圍",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "zh-Hant／en-US／ja／ko／vi 以線上 lookup 回填"
         },
         {
           "id": "lumibopomofo-09",
@@ -632,7 +636,8 @@
           "detail": "en-US answers 頁相似度 91–95%；兩頁截圖問答導去 PicClear；停用 vs 比較頁。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "todo",
+          "progress": "合併／noindex 腳本已接進 publish.py；PicClear 互連未加；待重生"
         },
         {
           "id": "shotinbox-07",
@@ -1114,7 +1119,8 @@
           "detail": "用更新後資料重生 zh-Hant/ja/vi/ko/en-US 的 hubs、stories、decide 頁（標題仍是「TOEIC考試助手」、內文「30天」）；aim990plus 的 privacy/support/cross 頁與 sitemap_aim990plus.xml 移除或 301 到 aim990。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "todo",
+          "progress": "aim990plus 頁已移除、5 語資料已更新；其餘 45 語與 hubs 待重生"
         },
         {
           "id": "aim990-07",
@@ -1144,7 +1150,9 @@
           "detail": "接 aim990-04 的資料部分：data/ios-app-decision-matrix.* 移除 aim990plus、aim990 的 sibling_app_keys 拿掉、buyer_intent 去 best；在 00_GrowthEngine 改再鏡像。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "done",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "決策矩陣移除 aim990plus、sibling_app_keys 清空；GE 資料鏡像待同步"
         }
       ]
     },
@@ -1795,7 +1803,8 @@
           "detail": "zh-Hant/hubs/lumiweather.html 與 answers/best-weather-for-kids-app.html、weather-app-for-kids-to-learn.html、best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html 等 8 頁仍是親子定位、含 listing 沒有的「年齡適合的判斷」；資料檔修正後用 GrowthEngine 重產，並讓 GEO 頁名稱跟上 live 的 TW／JP 名稱。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "todo",
+          "progress": "查詢與深度答案已改；頁面待重生，舊 kids 網址需決定轉址"
         },
         {
           "id": "lumiweather-06",
@@ -1811,7 +1820,9 @@
           "detail": "接 lumiweather-03 的資料檔部分：在 00_GrowthEngine 改 lumiweather_full.json 再鏡像到 Guide。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "done",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "weather_full.json 語言行 50 語＋前三關鍵字已改（Guide _engine 端；GE 本體待同步）"
         }
       ]
     },
@@ -1917,8 +1928,10 @@
           "detail": "bopomofo_pro_full.json 的 JP 名稱改「台湾華語」版、TW 說明換成 live 全形版，避免後續分析再誤判。（資料檔在 _engine/data（鏡像），交本機。）",
           "owner": "local",
           "impact": "medium",
-          "status": "todo",
-          "note": "需改 _engine/data/bopomofo_pro_full.json（JP 名稱改台湾華語版、TW 說明換 live 全形版），屬 drafts 以外的資料檔與 ASC 線上資料"
+          "status": "done",
+          "note": "需改 _engine/data/bopomofo_pro_full.json（JP 名稱改台湾華語版、TW 說明換 live 全形版），屬 drafts 以外的資料檔與 ASC 線上資料",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "ja 名稱、zh-Hant／en-US／ko／vi 說明已同步線上"
         },
         {
           "id": "lumibopomofopro-07",
@@ -2596,7 +2609,8 @@
           "owner": "local",
           "impact": "high",
           "status": "todo",
-          "note": "需要修改 _engine/data/tripplanet_full.json（資料檔），所以沒有動。新的 name、≤100 字元的關鍵字、≤170 字元的宣傳文字（zh-Hant／ja／en-US）見 drafts/tripplanet/listing-data-fix-proposal.md；計分板量測詞放在 challenge_terms.tripplanet"
+          "note": "需要修改 _engine/data/tripplanet_full.json（資料檔），所以沒有動。新的 name、≤100 字元的關鍵字、≤170 字元的宣傳文字（zh-Hant／ja／en-US）見 drafts/tripplanet/listing-data-fix-proposal.md；計分板量測詞放在 challenge_terms.tripplanet",
+          "progress": "4 語名稱／關鍵字／說明已回填；其餘語系 promotionalText 待改"
         },
         {
           "id": "tripplanet-02",
@@ -2631,7 +2645,8 @@
           "detail": "資料檔修正後以 GrowthEngine 重產 50 語系 tripplanet.html、hubs/tripplanet.html、publisher catalog 條目；移除「雜誌 要用什麼 App?」「是很好的選擇」模板 FAQ 與「購買和共享位於家長的門後」機翻句。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "todo",
+          "progress": "資料已修；頁面待完整重生"
         }
       ]
     },
@@ -2745,8 +2760,10 @@
           "detail": "_engine/data/wifiaidlite_full.json 與 en-US／zh-Hant／ja／ko／id 等 wifiaidlite.html（含 meta／og 描述）改為「所有工具合計可免費完整檢查一次」，補「解鎖後可看修正前後對照」；Telegram 文維持「免費開始」即可。",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
-          "note": "需修改 drafts 以外的 _engine/data/wifiaidlite_full.json 與 GrowthEngine 產生的各語系 wifiaidlite.html（含模板同步），不在本次可寫範圍；6 語替換句已備於 /home/user/ios-app-guide/.github/growth/drafts/wifiaidlite/free-tier-wording-fix.md 供"
+          "status": "done",
+          "note": "需修改 drafts 以外的 _engine/data/wifiaidlite_full.json 與 GrowthEngine 產生的各語系 wifiaidlite.html（含模板同步），不在本次可寫範圍；6 語替換句已備於 /home/user/ios-app-guide/.github/growth/drafts/wifiaidlite/free-tier-wording-fix.md 供",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "50 語 description／promotionalText 與約 700 個頁面檔已改為所有工具合計免費一次；約 38 語為自譯待審"
         },
         {
           "id": "wifiaidlite-04",
@@ -2768,7 +2785,8 @@
           "detail": "en-US/wifiaidlite.html 的 FAQ 是「What is the best app for internet? WiFi Aid Lite… is a great choice for internet」這種關鍵字套模板，違反不自稱 best 且屬規模化內容；改為真實問答並去掉 best 字眼。",
           "owner": "local",
           "impact": "medium",
-          "status": "todo"
+          "status": "todo",
+          "progress": "產生器與 FAQ 已改；best-* 頁待完整重生"
         },
         {
           "id": "wifiaidlite-06",
@@ -2812,8 +2830,10 @@
           "detail": "把 wordmatelite（與 aim990plus）在 _engine/geo/data/result_image_evidence_v1.json 的 family=kids14 與 app_decision_matrix.py 讀的來源改為 education／adult，重生 data/ios-app-decision-matrix.*。",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
-          "note": "需修改 _engine/geo/data/result_image_evidence_v1.json 與 app_decision_matrix.py 讀取來源並重生矩陣，屬程式碼／GrowthEngine 產線變更，不屬雲端草稿範圍"
+          "status": "done",
+          "note": "需修改 _engine/geo/data/result_image_evidence_v1.json 與 app_decision_matrix.py 讀取來源並重生矩陣，屬程式碼／GrowthEngine 產線變更，不屬雲端草稿範圍",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "wordmatelite 改為 education，矩陣已重生；app／finder 頁待重生"
         },
         {
           "id": "wordmatelite-04",
@@ -3559,8 +3579,10 @@
           "detail": "_engine/data/qrcodehalo_full.json、53 個語系 qrcodehalo.html（含 meta／og／JSON-LD）、en-US/decide/qrcodehalo 頁與 .github/scripts/telegram_posts.json 的 3 則文，改為線上實況：「預設掃描後自動執行；到設定關閉『掃描後自動執行』即可先檢查，歷史紀錄中按安全檢查」。",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
-          "note": "需修改 _engine/data/qrcodehalo_full.json、53 個 GrowthEngine 產生的 qrcodehalo.html、decide 頁與 Telegram 佇列 .github/scripts/telegram_posts.json，不在本次可寫範圍；3 則 Telegram 替換文案已備於 drafts/qrcodehalo/telegram-shop-self"
+          "status": "done",
+          "note": "需修改 _engine/data/qrcodehalo_full.json、53 個 GrowthEngine 產生的 qrcodehalo.html、decide 頁與 Telegram 佇列 .github/scripts/telegram_posts.json，不在本次可寫範圍；3 則 Telegram 替換文案已備於 drafts/qrcodehalo/telegram-shop-self",
+          "done_at": "2026-10-13T17:51:06Z",
+          "result": "626 檔＋Telegram 3 則已改為預設自動執行的實況說法；非英文語系譯句待對照 App 字樣"
         },
         {
           "id": "qrcodehalo-02",
@@ -3568,7 +3590,8 @@
           "detail": "GrowthEngine 的 qrcodehalo 模板若不同步，下次重生會寫回舊宣稱；best-check-qr-code-link-before-opening-app、best-qr-scanner-that-does-not-open-links-automatically-app、best-qr-code-scanner-no-ads-iphone-app 改為問題導向標題。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "todo",
+          "progress": "best-* 三頁已改名、模板已改；query 來源在完整 GE，重生可能回舊 slug"
         },
         {
           "id": "qrcodehalo-05",

@@ -55,7 +55,7 @@ TOPICS = {
     "lumimissionpro": "kids routine chart",
     "lumibopomofo": "kids zhuyin bopomofo",
     "mochi": "to-do list & checklist",
-    "lumiweather": "family weather",
+    "lumiweather": "weather & what to wear",
     "wordmate": "vocabulary learning",
     "dailymate": "travel phrasebook & language phrases",
     "tripbeelite": "one-trip itinerary planner",

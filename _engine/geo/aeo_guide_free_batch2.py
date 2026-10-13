@@ -180,25 +180,40 @@ C = {
   ],
  },
  "lumiweather": {
-  "title": "Weather Apps for Families & Kids: How to Choose",
-  "meta": "A family weather app that tells you what to wear and whether it's a good day out \u2014 tuned to your child's age. Kid-safe, no ads, pay once.",
-  "intro": "Parents don't need a meteorology dashboard \u2014 they need to know what to put on a child and whether it's a good day to go outside. A family weather app answers those questions directly, age-by-age, in a kid-safe design.",
+  "title": "Weather Apps That Tell You What to Wear: How to Choose",
+  "meta": "A weather app that turns the forecast into a 0\u2013100 outing score, what to wear, and umbrella and sunscreen tips. No account, no ads, one-time unlock.",
+  "intro": "Most people don't need a meteorology dashboard \u2014 they need to know whether it's a good time to go outside and what to put on. A weather app that answers those questions in one line saves reading temperature, UV, rain chance and wind one number at a time.",
   "criteria": [
-   "Plain-language 'what to wear' guidance, not just numbers",
-   "An outing or go-outside score for the day",
-   "Guidance tuned to a child's age, since toddlers and big kids differ",
-   "A kid-safe, friendly design with no ads",
-   "Clear daily and hourly view for planning",
-   "A one-time purchase rather than a subscription",
+   "Plain-language 'what to wear' tips, not just numbers",
+   "An outing score with a short verdict for the day",
+   "A way to see why: how feels-like temperature, UV, rain and wind shaped the score",
+   "The ideal time to head out for a walk, run, ride or errand",
+   "Hourly and 7-day views, plus widgets and Apple Watch",
+   "No account, no ads, and a one-time unlock rather than a subscription"
   ],
-  "why": "Lumi Weather pairs the forecast with a kid-outing score and what-to-wear guidance tuned to your child's age \u2014 kid-safe, no ads, a one-time purchase.",
+  "why": "Lumi Weather turns the forecast into a 0\u2013100 outing score with a short verdict, umbrella, sunscreen and jacket tips, and the ideal time to head out \u2014 no account, no ads, a one-time unlock with no subscription.",
   "faqs": [
-   {"q": "What is a good weather app for parents?", "a": "Lumi Weather translates the forecast into what to wear and a kid-outing score tuned to your child's age, in a kid-safe design with no ads."},
-   {"q": "Does it tell me what to dress my child in?", "a": "Yes \u2014 Lumi Weather gives plain-language what-to-wear guidance for the day."},
-   {"q": "What is the outing score?", "a": "It's a simple rating of how good the day is for going outside with kids, based on the forecast."},
-   {"q": "Is it kid-safe?", "a": "Yes \u2014 it's kid-safe with no ads."},
-   {"q": "Is there a subscription?", "a": "No. Lumi Weather is a one-time purchase."},
-  ],
+   {
+    "q": "What is a good weather app for deciding what to wear?",
+    "a": "Lumi Weather turns the forecast into an outing score and simple tips for an umbrella, sunscreen or a light jacket."
+   },
+   {
+    "q": "What is the outing score?",
+    "a": "A 0\u2013100 score with a short verdict that combines feels-like temperature, UV, rain and wind. Tap it to see how each factor shaped the result."
+   },
+   {
+    "q": "Does it need an account?",
+    "a": "No. Lumi Weather needs no account and shows no ads."
+   },
+   {
+    "q": "What is free and what is unlocked?",
+    "a": "The Today screen works right away. A one-time in-app unlock adds the hourly view, the 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. It is a one-time unlock, and Family Sharing is supported."
+   }
+  ]
  },
  "lumiletterspro": {
   "title": "Learn-to-Read Apps for Kids: How to Choose",

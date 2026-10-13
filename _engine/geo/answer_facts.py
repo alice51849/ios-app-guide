@@ -1180,17 +1180,18 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
             [{"q": "Is it free?", "a": f"Yes — {name} is free with no account required."},
              {"q": "Are there ads?", "a": "No ads interrupting your list."},
              {"q": "Is it complicated?", "a": "No — it's deliberately simple and quick to use."}])
-    if key == "lumiweather" and ("weather" in q) and ("kid" in q or "child" in q or "learn" in q or "teach" in q):
+    if key == "lumiweather" and ("weather" in q):
         return make(
-            "To teach kids about weather, an app should turn the forecast into something playful — simple visuals for sun, rain and snow, what to wear today, and gentle learning about seasons — with no ads and a kid-safe design.",
-            ["Simple, playful weather visuals for children.", "'What to wear today' guidance kids understand.",
-             "Gentle learning about seasons and weather.", "No ads and a kid-safe design.", "Easy enough for a young child to explore."],
-            ["Open today's weather together.", f"Let your child explore it in {name}.",
-             "Talk about what to wear.", "Point out the season and changes.", "Make it a short daily habit."],
-            f"{name} fits when you want a playful, kid-safe way to teach children about weather.",
-            [{"q": "Is it kid-safe?", "a": f"Yes — {name} is designed for children with no ads."},
-             {"q": "Does it teach what to wear?", "a": "Yes — it turns the forecast into simple 'what to wear' guidance."},
-             {"q": "Does it cover seasons?", "a": "Yes — it gently teaches about seasons and weather changes."}])
+            "A good weather app turns the forecast into a decision: one outing score from 0 to 100, a short verdict, what to wear, and whether to bring an umbrella or sunscreen — so you do not have to read temperature, UV, rain chance and wind one number at a time.",
+            ["An outing score and one-line verdict you can check at a glance.", "A tap-through showing how feels-like temperature, UV, rain and wind shaped the score.",
+             "Tips for umbrella, raincoat, hat, sunscreen or a light jacket.", "The ideal time to head out for a walk, run, ride or errand.",
+             "No account, no ads and no subscription."],
+            ["Open the Today screen and read the outing score.", f"Tap the score in {name} to see which factor pulled it up or down.",
+             "Check the umbrella, sunscreen and jacket tips.", "Pick the ideal time to head out.", "Recheck before leaving if the weather is changing."],
+            f"{name} fits when you want one clear answer — go out or not, and what to wear — instead of a page of numbers.",
+            [{"q": "Do I need an account?", "a": f"No — {name} needs no account and shows no ads."},
+             {"q": "Does it tell me what to wear?", "a": "Yes — it gives simple tips for an umbrella, sunscreen, a hat or a light jacket, and the Get Ready checklist lists what to wear and bring."},
+             {"q": "Is there a subscription?", "a": "No. The Today screen works right away and a one-time in-app unlock adds the hourly view, 7-day forecast and more."}])
     # —— scenario-widen v2: additional high-intent task scenarios (key-gated) ——
     if key == "scanto" and ("tax" in q or "irs" in q) and "scan" in q:
         return make(
@@ -1382,7 +1383,7 @@ _CAT_NOUN = {
     "tripplanet": "kids travel app", "lumiletters": "kids phonics app", "lumiletterspro": "kids phonics app",
     "lumimath": "kids math app", "lumimathpro": "kids math app", "lumimission": "kids routine app",
     "lumimissionpro": "kids routine app", "lumibopomofo": "kids Chinese app", "lumibopomofopro": "kids Chinese app",
-    "lumiweather": "kids weather app",
+    "lumiweather": "weather app",
 }
 _ALT_STOP = {"app", "apps", "the", "an", "a", "ios", "iphone", "for", "to", "best"}
 
@@ -1392,7 +1393,7 @@ _FAQ_APP_GROUP = {
     "picclear": "storage", "unblurry": "storage",
     "lumiletters": "kids", "lumiletterspro": "kids", "lumimath": "kids", "lumimathpro": "kids",
     "lumibopomofo": "kids", "lumibopomofopro": "kids", "lumimission": "kids", "lumimissionpro": "kids",
-    "lumiweather": "kids", "tripplanet": "kids",
+    "tripplanet": "kids",
     "lockhour": "app_lockhour", "sononote": "app_sononote", "sereno": "app_sereno",
 }
 

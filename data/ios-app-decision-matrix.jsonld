@@ -6,8 +6,8 @@
   "name": "Lumi Studio verified iOS app decision matrix",
   "description": "Every verified live Lumi Studio iOS app with identical comparison fields. Alphabetical by app key; this is not a ranking.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-09-26",
-  "numberOfItems": 52,
+  "dateModified": "2026-10-13",
+  "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListUnordered",
   "itemListElement": [
     {
@@ -108,7 +108,7 @@
           {
             "@type": "PropertyValue",
             "name": "consider_instead_when",
-            "value": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: aim990plus."
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
           },
           {
             "@type": "PropertyValue",
@@ -133,66 +133,6 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
-      "item": {
-        "@type": "SoftwareApplication",
-        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#aim990plus",
-        "name": "Aim990 Plus",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
-        "sameAs": "https://apps.apple.com/us/app/id6792483140",
-        "installUrl": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-        "applicationCategory": "Kids learning and family routines",
-        "operatingSystem": "iOS",
-        "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
-        "additionalProperty": [
-          {
-            "@type": "PropertyValue",
-            "name": "purchase_model",
-            "value": "paid_upfront"
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "one_time_option",
-            "value": true
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "subscription",
-            "value": false
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "choose_when",
-            "value": "You are looking for best offline English listening and reading exam trainer for iPhone, and you want pay once, no subscription."
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "consider_instead_when",
-            "value": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: aim990."
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "verified_storefront_count",
-            "value": 39
-          }
-        ],
-        "offers": {
-          "@type": "Offer",
-          "price": "5.99",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_pick&mt=8",
-          "eligibleRegion": {
-            "@type": "Country",
-            "identifier": "US"
-          }
-        },
-        "isAccessibleForFree": false
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -252,7 +192,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
+      "position": 4,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -312,18 +252,78 @@
     },
     {
       "@type": "ListItem",
+      "position": 5,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-to-see-claude-and-codex-usage-limits-and-reset-times-on-iphone.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#claudeusagemini",
+        "name": "UsageNow",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-to-see-claude-and-codex-usage-limits-and-reset-times-on-iphone.html",
+        "sameAs": "https://apps.apple.com/us/app/id6818607603",
+        "installUrl": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "Notes, documents and focus",
+        "operatingSystem": "iOS",
+        "description": "If you code with AI agents every day, the limit that cuts you off mid-task is the one to watch: how much of each plan is left and exactly when it resets. That is the gap UsageNow was built to close.",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for app to see Claude and Codex usage limits and reset times on iPhone, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 38
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
       "position": 6,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/countdaysnow.html",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/countdown-widget-app-for-iphone-without-ads-or-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#countdaysnow",
-        "name": "CountDaysNow: Event Counter",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/countdaysnow.html",
+        "name": "CountDaysNow",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/countdown-widget-app-for-iphone-without-ads-or-subscription.html",
         "sameAs": "https://apps.apple.com/us/app/id6807079789",
         "installUrl": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "Plan backwards from the dates that matter. Countdown Plan gives any event its own preparation steps, such as renew the passport 30 days before a trip or",
+        "description": "CountDaysNow — Plan backwards from the dates that matter. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -613,17 +613,17 @@
     {
       "@type": "ListItem",
       "position": 11,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#dbhalo",
-        "name": "dB Halo: Sound Meter",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+        "name": "dB Halo",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html",
         "sameAs": "https://apps.apple.com/us/app/id6806826699",
         "installUrl": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "iPhone utilities",
         "operatingSystem": "iOS",
-        "description": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large",
+        "description": "dB Halo — From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1513,17 +1513,17 @@
     {
       "@type": "ListItem",
       "position": 26,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/lumiweather.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumiweather",
-        "name": "Lumi Weather",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
+        "name": "Lumi Weather: What to Wear",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/lumiweather.html",
         "sameAs": "https://apps.apple.com/us/app/id6779552704",
         "installUrl": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense. That is why Lumi Weather exists.",
+        "description": "Lumi Weather tells you in one glance whether now is a good time to go outside, what to wear, and whether you need an umbrella or sunscreen.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1543,7 +1543,7 @@
           {
             "@type": "PropertyValue",
             "name": "choose_when",
-            "value": "You are looking for best weather app to help parents plan outdoor time with kids, and you want free to start, one-time unlock, no subscription."
+            "value": "You are looking for weather app to help me plan when to go outside, and you want free to start, one-time unlock, no subscription."
           },
           {
             "@type": "PropertyValue",
@@ -2053,6 +2053,66 @@
     {
       "@type": "ListItem",
       "position": 35,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/qr-code-scanner-app-that-shows-the-link-before-opening-it.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#qrcodehalo",
+        "name": "QR Code Halo",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/qr-code-scanner-app-that-shows-the-link-before-opening-it.html",
+        "sameAs": "https://apps.apple.com/us/app/id6806779853",
+        "installUrl": "https://apps.apple.com/us/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "QR Code Halo — QR Code Halo is built around Inspect, Decide, Act. Free to start · One-time unlock · No subscription.",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for qr code scanner app that shows the link before opening it, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-save-links-from-other-apps-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2112,7 +2172,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2172,7 +2232,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2232,7 +2292,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-sort-screenshots-on-iphone-offline.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2292,7 +2352,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2352,7 +2412,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2412,7 +2472,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2472,7 +2532,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-turn-an-old-iphone-into-an-always-on-desk-clock.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2532,18 +2592,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/studydown.html",
+      "position": 44,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#studydown",
-        "name": "Studydown: Face-Down Timer",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/studydown.html",
+        "name": "Studydown",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html",
         "sameAs": "https://apps.apple.com/us/app/id6807335593",
         "installUrl": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "Put your phone down. See your effort add up. Studydown records time for the things that matter to you: a work project, a reading habit, language practice",
+        "description": "Studydown — A little time for a project, a book or a skill you want to develop. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2592,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2652,7 +2712,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2712,7 +2772,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2772,7 +2832,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2832,7 +2892,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2892,7 +2952,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2952,7 +3012,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -3012,7 +3072,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -3021,7 +3081,7 @@
         "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
         "sameAs": "https://apps.apple.com/us/app/id6797601720",
         "installUrl": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
-        "applicationCategory": "Kids learning and family routines",
+        "applicationCategory": "Study and exam practice",
         "operatingSystem": "iOS",
         "description": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
         "additionalProperty": [
@@ -3072,18 +3132,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+      "position": 53,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#zipbox",
-        "name": "Zipbox: Unzip RAR, ZIP & 7z",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+        "name": "Zipbox",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html",
         "sameAs": "https://apps.apple.com/us/app/id6806776579",
         "installUrl": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "iPhone utilities",
         "operatingSystem": "iOS",
-        "description": "Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on",
+        "description": "Zipbox — Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, create ZIP or 7z, and pay once with every feature included. Paid download · All features included · No IAP or subscription.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",

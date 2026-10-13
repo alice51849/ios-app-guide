@@ -1,0 +1,10 @@
+{
+  "_comment": "One indexable answers page per locale for each listed app; other answers pages that link only to that app, and any noindex_globs match, become noindex,follow and leave the sitemaps. See gen_app_page_consolidation.py.",
+  "apps": {
+    "shotinbox": {
+      "store_id": "6802166527",
+      "keep": ["best-app-to-sort-screenshots-on-iphone-offline"],
+      "noindex_globs": ["alternatives/shotinbox-vs-*.html"]
+    }
+  }
+}

@@ -156,8 +156,8 @@ def validate_manifest(manifest: dict) -> None:
     if len(set(keys)) != len(keys) or len(set(ids)) != len(ids):
         raise ValueError("Duplicate app identity")
     families = Counter(app["family"] for app in apps)
-    if families != {"photo6": 6, "kids14": 14, "scanner_pdf2": 2, "notes_onepage": 2}:
-        raise ValueError("Priority inventory must cover photo6, Kids14, scanner/PDF2, Notes/OnePage")
+    if families != {"photo6": 6, "kids14": 12, "education": 2, "scanner_pdf2": 2, "notes_onepage": 2}:
+        raise ValueError("Priority inventory must cover photo6, Kids12, education2, scanner/PDF2, Notes/OnePage")
     for app in apps:
         if not re.fullmatch(r"[a-z0-9]+", app["key"]) or not re.fullmatch(r"\d{9,12}", app["app_id"]):
             raise ValueError("Invalid app identity")

@@ -565,140 +565,234 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
  {
   "app_key": "lumiweather",
   "kind": "scenario",
-  "query": "How do I know if today's weather is suitable for taking my toddler to the playground?",
+  "query": "How do I know if now is a good time to go outside?",
   "match": [
-   "how do i know if today's weather is suitable for taking my toddler to the playground?",
-   "app that tells me whether to go out with a baby or young child today",
-   "take toddler outside today",
-   "playground weather safe",
-   "young child outing score"
+   "how do i know if now is a good time to go outside?",
+   "good time to go outside",
+   "good time to go out",
+   "good day to go out"
   ],
-  "lead": "Standard weather apps show numbers — but parents of young children need a single combined answer that accounts for UV, wind, age sensitivity, and rain, not just temperature.",
-  "detail": "Young children, especially infants and toddlers under 2, regulate body temperature less efficiently than adults, burn faster in UV, and feel wind chill more acutely. {name} calculates a Kid-Outing Score (0–100) by combining feels-like temperature, UV index, rain probability, and wind speed, with penalty weights tuned for your child's age group: 0–2, 3–5, or 6–12 years. A score under 25 recommends staying indoors; 25–50 suggests a brief outing; 50–75 says go with preparation; 75 and above is a genuinely good day. Tapping the score opens a breakdown showing exactly which factor — UV, rain, temperature, or wind — is pulling the score down, so you know precisely what to prepare for rather than just seeing a verdict.",
+  "lead": "Reading temperature, UV, rain chance and wind one number at a time is slow — a single 0–100 outing score with a one-line verdict answers the question at a glance.",
+  "detail": "{name} combines feels-like temperature, UV, rain chance and wind into an outing score from 0 to 100 and a short verdict, from a great day to go out to a day that is nicer spent indoors. Tap the score to see how each factor shaped it, so the answer is easy to check rather than a black box. The Today screen also points out the ideal time to head outside and shows the coming hours at a glance.",
   "bullets": [
-   "Children under 2 have less efficient thermoregulation and burn faster under UV than adults — standard weather forecasts aren't calibrated for them",
-   "Feels-like (apparent) temperature accounts for humidity and wind chill — it's what the body actually experiences, not just air temperature",
-   "UV above index 3 calls for sun protection for children; above 8 is high risk even with brief exposure",
-   "Rain probability and wind are weighted more heavily for young children — strollers and small kids make rain and wind much more disruptive",
-   "The 'Best Window' view finds the best consecutive 2-hour+ block within the 7am–7pm day for going out"
+   "One 0–100 outing score instead of four separate numbers",
+   "A short verdict from a great day out to a day better spent indoors",
+   "Tap the score to see how feels-like temperature, UV, rain and wind each contributed",
+   "The ideal time to head outside is highlighted on the Today screen",
+   "The Today screen works right away, without unlocking anything"
   ],
   "faq": [
    {
-    "q": "How does {name} adjust its advice for a baby versus a 7-year-old?",
-    "a": "The app has three age groups — 0–2, 3–5, and 6–12 — each with different sensitivity multipliers in the rule engine. For babies, temperature and UV penalties apply at lower thresholds, and baby-specific outfit items (stroller cover, wet wipes, blanket) appear in the checklist. You set the age group in settings and it affects every tab."
+    "q": "What goes into the outing score?",
+    "a": "Feels-like temperature, UV, rain chance and wind. Tapping the score shows how each of them shaped the result."
    },
    {
-    "q": "The score says 'great' but today feels very humid — does the app account for humidity?",
-    "a": "Yes — humidity is factored into the feels-like (apparent) temperature calculation, which feeds directly into the temperature penalty. On a hot, humid day, apparent temperature is meaningfully higher than air temperature, which the score reflects. The factors detail shows the exact apparent temperature used."
+    "q": "Do I need to unlock anything to see the score?",
+    "a": "No. The Today screen, with the outing score, verdict, ideal time to go out and tips, works right away. A one-time in-app unlock adds the hourly view, the full 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch."
    },
    {
-    "q": "Does {name} work without an internet connection?",
-    "a": "{name} uses Apple WeatherKit for real-time forecast data, so an internet connection is needed to refresh weather. The last-fetched data remains visible offline, but will be stale until the next update."
+    "q": "Where does the weather data come from?",
+    "a": "{name} uses Apple WeatherKit. Forecasts are for reference only, so check the conditions around you before heading out."
    }
   ]
  },
  {
   "app_key": "lumiweather",
   "kind": "faq",
-  "query": "How do I teach a young child to choose appropriate clothes for the weather?",
+  "query": "What is an outing score and how do I read it?",
   "match": [
-   "how do i teach a young child to choose appropriate clothes for the weather?",
-   "at what age can kids learn to dress themselves for the weather?",
-   "teach kids what to wear weather",
-   "dressing weather children",
-   "age appropriate"
+   "what is an outing score",
+   "outing score",
+   "turns the forecast into"
   ],
-  "lead": "Children as young as 2–3 begin connecting visual weather cues with clothing choices when the association is made concrete and consistent — seeing a familiar character dressed for the weather is more effective than verbal rules alone.",
-  "detail": "Early childhood educators note that weather-dressing is learned through repetition and visual modeling, not abstract explanation. The approach of 'show, then discuss' builds the mental map faster than instruction alone. {name}'s mascot Lumi automatically changes outfit to match real-time weather: rain hat and umbrella in rain, sun hat under high UV, scarf in the cold, star-gazing gear at night. Parents can use this as a low-friction daily conversation starter — 'Look what Lumi is wearing today, why do you think?' — to gradually build a child's weather-vocabulary and decision-making. For school-age children (6+), the outfit checklist that the app generates can be handed over for them to work through independently, which builds the self-sufficiency that eventually makes morning routines easier.",
+  "lead": "An outing score turns the forecast into one number from 0 to 100: higher means a more comfortable day to be outside, lower means a day that is nicer spent indoors.",
+  "detail": "{name} shows the score together with a short verdict, so you do not have to judge what 18 degrees with 40% rain and a stiff wind adds up to. Tap the score to see how feels-like temperature, UV, rain and wind each pushed it up or down, which makes it easy to understand why today scores the way it does and to double-check it against the sky outside.",
   "bullets": [
-   "Visual models (a character dressed appropriately) teach younger children more effectively than verbal rules",
-   "Daily consistent use — checking the app before going out — builds the weather→clothing habit over time",
-   "Ages 2–4: build vocabulary by discussing what Lumi is wearing and why",
-   "Ages 4–6: start involving children in checking off items on the outfit list with a parent",
-   "Ages 6+: children can begin working through the checklist independently with light supervision"
+   "0–100 scale with a plain-language verdict",
+   "Built from feels-like temperature, UV, rain and wind",
+   "Tap the score for the breakdown behind it",
+   "Useful as a first look before opening the hourly details"
   ],
   "faq": [
    {
-    "q": "How does {name} decide what goes on the outfit checklist?",
-    "a": "The checklist is generated by the app's rule engine based on age group, feels-like temperature, rain probability, UV index, wind speed, and humidity. An umbrella appears if rain probability is 30%+; sunscreen and a sun hat appear if UV is 6+; sunglasses appear for children 3+ when UV reaches 8+; a stroller cover and wet wipes are always included for the 0–2 group."
+    "q": "Is the score a replacement for checking conditions myself?",
+    "a": "No. It is a quick summary of the forecast; forecasts are for reference only, so look at the conditions around you before heading out."
    },
    {
-    "q": "Can I share the checklist with a co-parent or grandparent?",
-    "a": "Yes — the checklist can be exported as a shareable card image from within the app. It's useful for sending to a caregiver before they take the child out, so everyone is working from the same weather-appropriate list."
+    "q": "Can I see why the score is low?",
+    "a": "Yes. Tap the score to see how feels-like temperature, UV, rain and wind each shaped it."
    },
    {
-    "q": "Does the app account for different children's ages if I have more than one child?",
-    "a": "The app is set to one active age group at a time. If you have children of different ages, you can switch the age group setting to see how the recommendation and checklist change — or check the factors breakdown to see which conditions are most relevant on a given day."
+    "q": "Does it work in my language?",
+    "a": "{name} is available in 50 interface languages and can follow your system language, or you can switch to another one inside the app."
    }
   ]
  },
  {
   "app_key": "lumiweather",
   "kind": "scenario",
-  "query": "What activities can I do with my kids on a rainy day?",
+  "query": "How do I know if I need an umbrella or sunscreen today?",
   "match": [
-   "what activities can i do with my kids on a rainy day?",
-   "how to prepare for going out with a young child when rain is forecast",
-   "rainy day kids activities",
-   "outing in rain toddler",
-   "rain preparation children"
+   "umbrella or sunscreen",
+   "umbrella and sunscreen",
+   "umbrella",
+   "sunscreen reminders"
   ],
-  "lead": "A rainy day with young children isn't automatically an indoor day — the practical question is whether the rain probability makes a brief outing workable or whether a full indoor pivot makes more sense, and the preparation checklist is very different either way.",
-  "detail": "Managing rain with a stroller or toddler involves more logistics than rain alone: wet gear, muddy shoes, a child to dry off. {name}'s rule engine applies a deliberately stricter rain penalty than a general weather app: above 60% rain probability the outing score is capped to the 'indoor' verdict; 40–60% is 'short outing with prep'; and 30–40% suggests bringing an umbrella. The outfit checklist updates automatically — at 30%+ rain probability you'll see an umbrella; at 60%+ it adds raincoat, rain boots, and a spare-clothes entry. The activity-suggestions panel also shifts on rainy days, rotating in ideas like baking together, cardboard-box fort, indoor reading, and craft projects — all weather-matched and shuffleable with one tap.",
+  "lead": "The quickest way to decide is a weather app that turns rain chance and UV into a plain tip — pack an umbrella, put on a hat and sunscreen, or add a light jacket for the wind.",
+  "detail": "{name} gives simple tips on the Today screen for when to pack an umbrella or raincoat, when a hat and sunscreen make sense, and when a light jacket will help against the wind. Where minute-by-minute precipitation data is available, it lets you know when rain is about to start or ease, and it gives a heads-up when rain looks likely tomorrow. The Get Ready checklist (part of the one-time unlock) turns the conditions into a short list of what to wear and what to bring, from sunglasses to rain boots, and you can share it in a tap.",
   "bullets": [
-   "At 60%+ rain probability, umbrellas alone aren't practical with a young child — the full rain kit (raincoat, boots, spare clothes) is worth it",
-   "Check the hourly view: even a broadly rainy day often has a 2–3 hour drier window",
-   "Puddle-jumping is a perfectly valid activity when the child is dressed for it — the app may suggest it",
-   "Baby/infant parents: the app automatically adds a stroller rain cover for the 0–2 group at 30%+ rain",
-   "Indoor activity suggestions are weather-matched and refresh daily — one tap shuffles for new ideas"
+   "Plain tips for umbrella, raincoat, hat, sunscreen or a light jacket",
+   "Rain start and ease alerts where minute-by-minute data is available",
+   "A heads-up when rain looks likely tomorrow",
+   "Get Ready checklist of what to wear and bring, shareable in a tap",
+   "Daily reminder at the time that suits your morning"
   ],
   "faq": [
    {
-    "q": "How does {name} decide between 'bring an umbrella' and 'stay indoors'?",
-    "a": "The app uses graduated rain penalties: 0–15% rain probability = no penalty; 15–30% = mild; 30–40% = moderate (umbrella recommended); 40–60% = substantial score reduction; 60–80% = score capped to 'short outing' level; 80%+ = capped to 'indoor'. For the 0–2 age group, thresholds are slightly stricter."
+    "q": "Is the Get Ready checklist free?",
+    "a": "The Today screen and its tips work right away. The Get Ready checklist is part of the one-time in-app unlock, which also adds the hourly view, the 7-day forecast, multiple saved places and the hours ahead on Apple Watch. There is no subscription."
    },
    {
-    "q": "Can I see exactly when the rain is expected to stop today?",
-    "a": "Yes — the Hourly tab shows rain probability for each hour through the day. The app also highlights a 'Best Window' (the best consecutive 2+ hour block where every hour scores at least 55) if one exists within the 7am–7pm window, so you can plan around the break."
+    "q": "Will I get a reminder?",
+    "a": "You can set a daily reminder for the time that suits your morning."
    },
    {
-    "q": "What activity ideas does the app suggest on rainy days?",
-    "a": "The suggestions are weather-matched: rainy days surface ideas like baking with kids, building a cardboard-box fort, reading books, sensory play, or indoor dancing. The list rotates daily and you can shuffle for new ideas. On damp-but-not-raining days, puddle activities and park time in rain gear also appear."
+    "q": "Does the rain alert work everywhere?",
+    "a": "Minute-by-minute precipitation data is only available in some regions; where it is not, you still get the forecast and the umbrella tip."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "When is the ideal time to head out for a walk, run or ride?",
+  "match": [
+   "ideal time to head out",
+   "ideal time to go out",
+   "best time to go out",
+   "time to go out for a walk",
+   "walk, run"
+  ],
+  "lead": "Most days have a comfortable stretch and an unpleasant one — knowing which hours are which lets a walk, run, bike ride or commute land in the comfortable part.",
+  "detail": "{name} points out the ideal time to head outside on the Today screen, so a walk, run, bike ride, commute or weekend errand lands in the most comfortable hours. With the one-time unlock, the hourly view adds the day's temperature curve with feels-like temperature, rain chance, UV and wind for every hour, plus a 7-day forecast, for planning a bit further ahead.",
+  "bullets": [
+   "Ideal time to head out is highlighted on the Today screen",
+   "Hourly view with feels-like temperature, rain chance, UV and wind (one-time unlock)",
+   "7-day forecast for planning ahead (one-time unlock)",
+   "Works for walks, runs, rides, commutes and weekend errands"
+  ],
+  "faq": [
+   {
+    "q": "Can I see rain hour by hour?",
+    "a": "Yes. With the one-time unlock, the hourly view shows rain chance for every hour along with feels-like temperature, UV and wind."
+   },
+   {
+    "q": "Does it show tomorrow?",
+    "a": "The 7-day forecast is included in the one-time unlock. The app also gives a heads-up when rain looks likely tomorrow."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. The unlock is a one-time purchase, and Family Sharing is supported."
    }
   ]
  },
  {
   "app_key": "lumiweather",
   "kind": "faq",
-  "query": "What UV index is safe for children to play outside?",
+  "query": "Is there a weather app with a Home Screen widget and Apple Watch support?",
   "match": [
-   "what uv index is safe for children to play outside?",
-   "how do i use the uv index to plan outdoor time with my kids?",
-   "uv index children safe",
-   "kids outdoor uv protection",
-   "sun safety toddlers"
+   "widget",
+   "apple watch",
+   "lock screen"
   ],
-  "lead": "UV index 3 is the threshold above which sun protection is recommended for children; above 8, outdoor exposure should be limited and shade actively sought — and peak UV hours (10am–4pm) are significantly higher than early morning or late afternoon.",
-  "detail": "The UV index (0–11+) measures how intensely solar UV radiation reaches ground level. Children's skin has less protective melanin than adults' and sunburns faster, making UV a more significant factor for young children than for the adults they're with. The WHO and pediatric health organizations recommend that at UV 3+, children should have sunscreen and a hat; at 8+ they recommend actively limiting midday outdoor time. {name} factors UV into the Kid-Outing Score with an age-adjusted penalty — higher sensitivity for babies (0–2) — and the outfit checklist auto-populates: at UV 3+, a sun hat is added; at UV 6+, sunscreen and hat both appear; at UV 8+, sunglasses are added for children 3 and over (consistent with paediatric guidance that infant-specific eyewear has additional considerations). The app's Best Window algorithm favors early-morning and late-afternoon hours, which typically carry lower UV loads even on sunny days.",
+  "lead": "Yes — {name} can sit on your Home Screen or Lock Screen as a widget and shows the current temperature on Apple Watch, so the answer is there before you open the app.",
+  "detail": "Add {name} to your Home Screen or Lock Screen as a widget to see today's conditions at a glance. On Apple Watch you can check the current temperature, and the one-time unlock adds the hours ahead on the watch. Save the places you go most, such as home, work or the park, and switch between them instantly; multiple saved places are part of the unlock.",
   "bullets": [
-   "UV index scale: 0–2 = low, 3–5 = moderate (protection recommended for children), 6–7 = high, 8–10 = very high, 11+ = extreme",
-   "Children burn faster than adults — SPF 30+ broad-spectrum sunscreen is recommended at UV index 3+ for children",
-   "Peak UV hours are typically 10am–4pm; early morning and late afternoon carry meaningfully lower UV",
-   "Cloud cover does NOT eliminate UV — an overcast sky can still deliver 70–80% of UV exposure",
-   "Shade, UV-protective clothing, and a brimmed hat are more reliable than sunscreen alone for extended outdoor time"
+   "Home Screen and Lock Screen widgets",
+   "Current temperature on Apple Watch; hours ahead with the unlock",
+   "Save home, work, the park and other places and switch instantly (unlock)",
+   "Illustrated scenes that follow the weather and the time of day"
   ],
   "faq": [
    {
-    "q": "Where does {name} get its UV data?",
-    "a": "{name} uses Apple WeatherKit, which provides UV index as part of hourly and current-conditions data. The value shown is for your current location or any saved location (home, school, grandparents, etc.)."
+    "q": "Does the widget need an account?",
+    "a": "No. {name} needs no account. Your places and settings stay on your device."
    },
    {
-    "q": "Why does the outing score drop on a warm, sunny, rain-free day?",
-    "a": "A clear, hot, sunny day often combines a high UV index (8+) with a high feels-like temperature (30°C+), both of which reduce the score for young children even though there's no rain. Tapping the score opens the factors breakdown, which shows exactly how much each element — temperature, UV, rain, wind — is contributing."
+    "q": "Is Apple Watch support part of the unlock?",
+    "a": "Apple Watch shows the current temperature; the hours ahead on Apple Watch are part of the one-time in-app unlock."
    },
    {
-    "q": "Does the app account for infants differently when it comes to sunscreen?",
-    "a": "For the 0–2 age group, the UV sensitivity weighting is higher in the rule engine, and the app notes paediatric guidance around extra care for sun protection of very young infants. Standard dermatology guidance generally recommends keeping babies under 6 months out of direct sunlight and using shade and clothing rather than relying primarily on sunscreen — always check with your child's paediatrician for specific advice."
+    "q": "Is there a subscription?",
+    "a": "No. It is a one-time unlock with no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "Is there a weather app with no account, no ads and no subscription?",
+  "match": [
+   "no account",
+   "no ads",
+   "no subscription",
+   "without an account",
+   "one-time unlock"
+  ],
+  "lead": "Yes — {name} needs no account, shows no ads, uses no third-party analytics, and the optional unlock is a one-time purchase rather than a subscription.",
+  "detail": "Your places and settings stay on your device, and your location is used only to get the weather where you are, never for advertising or tracking. The Today screen is available right away; a one-time in-app unlock adds the hourly view, the full 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch. Family Sharing is supported. Weather data is provided by Apple WeatherKit.",
+  "bullets": [
+   "No account needed",
+   "No ads and no third-party analytics",
+   "Places and settings stay on your device",
+   "One-time unlock, no subscription",
+   "Family Sharing supported"
+  ],
+  "faq": [
+   {
+    "q": "What do I get without paying?",
+    "a": "The Today screen, with the outing score, verdict, ideal time to go out, tips and daily reminder."
+   },
+   {
+    "q": "What does the unlock add?",
+    "a": "The hourly view, the full 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch."
+   },
+   {
+    "q": "What is the location used for?",
+    "a": "Only to get the weather where you are — never for advertising or tracking."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "How do I decide what to wear from the weather forecast?",
+  "match": [
+   "how do i decide what to wear",
+   "what to wear",
+   "dress for the weather",
+   "what clothes"
+  ],
+  "lead": "Feels-like temperature, rain chance, UV and wind matter more than the number on the thermometer — a weather app that turns them into a short what-to-wear tip saves the guesswork.",
+  "detail": "{name} turns the day's conditions into simple tips: when a light jacket will help against the wind, when a hat and sunscreen make sense, when to pack an umbrella or raincoat. Lumi, the friendly character in the app, dresses for the conditions too — a sun hat, a raincoat, a scarf or an umbrella — so the answer is visible at a glance. The Get Ready checklist (part of the one-time unlock) lists what to wear and what to bring, from sunglasses to rain boots.",
+  "bullets": [
+   "Tips for jacket, hat, sunscreen, umbrella or raincoat",
+   "Lumi the character dresses for the conditions",
+   "Get Ready checklist of what to wear and bring (one-time unlock)",
+   "Feels-like temperature is part of every score"
+  ],
+  "faq": [
+   {
+    "q": "Does it tell me what to wear for tomorrow?",
+    "a": "The 7-day forecast and hourly view (one-time unlock) show feels-like temperature, rain chance, UV and wind ahead of time, and the app gives a heads-up when rain looks likely tomorrow."
+   },
+   {
+    "q": "Can I share the checklist?",
+    "a": "Yes, the Get Ready checklist can be shared in a tap."
+   },
+   {
+    "q": "Which languages are supported?",
+    "a": "{name} is available in 50 interface languages and can follow your system language, or you can switch to another one inside the app."
    }
   ]
  },
@@ -1811,117 +1905,6 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  },
  {
-  "app_key": "lumiweather",
-  "kind": "scenario",
-  "query": "Is there an app that tells me if today's weather is suitable for taking my toddler to the park?",
-  "match": [
-   "is there an app that tells me if today's weather is suitable for taking my toddler to the park?",
-   "what app gives parents a simple yes/no on whether the weather is safe for a young child outside?",
-   "app to decide if weather is ok to take toddler outside",
-   "kid-friendly weather decision app parents",
-   "outing score app for baby park uv wind",
-   "weather app for parents of young children free"
-  ],
-  "lead": "Lumi Weather gives parents a single Kid Outing Score (0–100), weighted by temperature, UV index, wind, and rain probability — calibrated to the age of your child — so the question 'can I take my toddler out today?' has a direct, reasoned answer in three seconds.",
-  "detail": "Regular weather apps show raw data and leave the interpretation entirely to the parent. {name} does the interpretation for you: a rule engine weighs the conditions that actually matter for young children (thermal comfort, UV exposure, wind chill, rain likelihood) and produces a single 0–100 score with a one-sentence verdict. Tapping the score shows the full breakdown — which factors contributed and by how much. A Lumi character on the screen dresses visually for the weather (rain hat and umbrella in rain, sun hat under high UV, warm layer in cold) so even a pre-reading child can understand the forecast at a glance. The free version covers the core Outing Score, 24-hour forecast, basic outfit tips, and one saved location. A one-time unlock (not a subscription) adds the best-window timing, 100+ activity ideas matched to current conditions, 7-day forecast, minute-level rain alerts, outfit checklist with shareable cards, and home/lock screen widgets.",
-  "bullets": [
-   "Kid Outing Score 0–100 with one-sentence verdict and full factor breakdown",
-   "Score weighted for child's age (infant vs toddler vs school-age calibrations)",
-   "Lumi character dresses visually for weather — pre-readers understand the forecast immediately",
-   "Free: score, 24-hour forecast, basic outfit tips, 1 location, dark mode",
-   "One-time paid unlock: best-window timing, 100+ activity ideas, 7-day forecast, minute rain alerts, widgets",
-   "No tracking, no ads, no account — location used only for local weather via Apple WeatherKit"
-  ],
-  "faq": [
-   {
-    "q": "How does {name}'s Kid Outing Score account for different ages of children?",
-    "a": "{name}'s scoring engine weights weather factors differently based on the age tier of your child — infants and toddlers are more sensitive to UV exposure, wind chill, and temperature extremes than older children. The app lets you configure your child's approximate age group, and the score calibrates accordingly."
-   },
-   {
-    "q": "Is {name} free to use, or do I need to pay to see the Outing Score?",
-    "a": "The Kid Outing Score, 24-hour forecast, basic outfit tips, and one saved location are free with no time limit. A one-time purchase (not a subscription) unlocks additional features: best-window timing, 100+ activity ideas, 7-day forecast, minute-level rain alerts, outfit checklist with sharing, and home/lock screen widgets."
-   },
-   {
-    "q": "What weather data does {name} use, and how reliable is it?",
-    "a": "{name} uses Apple WeatherKit (Apple Weather) as its data source. The app's store listing discloses this. Suggestions are stated as general guidance — parents are advised to use their own judgment for their specific child."
-   }
-  ]
- },
- {
-  "app_key": "lumiweather",
-  "kind": "faq",
-  "query": "Is there an app that suggests what activities to do with my child based on today's weather?",
-  "match": [
-   "is there an app that suggests what activities to do with my child based on today's weather?",
-   "what app recommends 100+ things to do with kids matched to the current weather?",
-   "weather app that suggests activities for kids",
-   "app recommends outdoor activities based on weather",
-   "100 play ideas weather app family",
-   "what to do with kids today weather app"
-  ],
-  "lead": "Lumi Weather's unlocked tier includes 100+ curated activity ideas that rotate daily and are matched specifically to the day's current weather conditions — so a rainy day suggests different activities than a perfect park day.",
-  "detail": "The 'Today Can We Play' feature in {name}'s paid tier is a curated list of 100+ parent-and-child activity ideas, each matched to the type of weather currently showing. A sunny, low-UV day suggests specific outdoor activities; a rainy day suggests indoor alternatives; an overcast mild day has its own set. The list refreshes daily rather than cycling through a fixed order, so it doesn't feel repetitive. This sits alongside the Best Window feature, which tells parents the specific hour range when conditions will be most suitable for outdoor activity — useful for planning a day with a young child's nap schedule in mind.",
-  "bullets": [
-   "100+ activity ideas matched to current weather type (sunny, rainy, cold, mild, etc.)",
-   "Ideas rotate daily — different suggestions each day to avoid repetition",
-   "Best Window feature: shows the specific hour range when outdoor conditions are best",
-   "Activity ideas complement the Kid Outing Score (know when AND what to do)",
-   "Accessed via one-time unlock, not a subscription",
-   "Weather data by Apple WeatherKit; all data stays on device"
-  ],
-  "faq": [
-   {
-    "q": "How many activity ideas does {name} suggest, and do they change every day?",
-    "a": "{name}'s unlocked tier includes 100+ parent-and-child activity ideas matched to the current weather type. They rotate daily, so you see a different selection each day — not the same list on repeat."
-   },
-   {
-    "q": "What does the Best Window feature in {name} tell me?",
-    "a": "The Best Window feature analyzes the day's hourly forecast and identifies the specific time window — say, 10am–1pm — when the weather will be most suitable for taking your child outside. It takes into account UV peak times, expected rain windows, and temperature comfort."
-   },
-   {
-    "q": "Does {name} have home screen widgets for weather at a glance?",
-    "a": "Yes — {name}'s paid unlock includes both Home Screen and Lock Screen widgets showing the Kid Outing Score and current conditions at a glance, so you see the answer to 'can we go out today?' without opening the app."
-   }
-  ]
- },
- {
-  "app_key": "lumiweather",
-  "kind": "persona",
-  "query": "How do I know if the UV index is too high to take my baby outside without getting burnt?",
-  "match": [
-   "how do i know if the uv index is too high to take my baby outside without getting burnt?",
-   "is there an app that helps anxious new parents decide if the weather is safe enough for their infant?",
-   "new parent checking if uv is safe for baby outdoor",
-   "first time parent weather anxiety app",
-   "parent tracking weather for infant uv wind chill",
-   "app for parents who worry about weather conditions young child"
-  ],
-  "lead": "Lumi Weather is particularly useful for new parents navigating the uncertainty of outdoor decisions with a young infant or toddler — it translates raw weather data (UV index, wind, humidity, temperature) into a clear verdict calibrated for a young child's sensitivity.",
-  "detail": "New parents often face genuine uncertainty about weather thresholds: What UV index is too high for a 6-month-old? What wind speed makes 18°C feel dangerous for a toddler? Most weather apps show the numbers without context. {name}'s rule engine converts these factors into a single scored verdict with a breakdown explaining the exact contribution of each factor — so parents can understand WHY a day scores 45/100 (high UV, moderate wind) versus 85/100 (mild, low UV, calm). The Lumi character's visual dressing cue (rain hat, sun hat, warm coat, etc.) provides an at-a-glance decision for parents who don't have time to parse a forecast. The outfit tips feature also gives simple 'what to put on your child' guidance relevant to the conditions.",
-  "bullets": [
-   "Translates UV index, wind, humidity, temperature into a single child-age-calibrated Outing Score",
-   "Full factor breakdown: tap the score to see exactly what is driving it up or down",
-   "Lumi character dresses for the weather — instant visual cue without reading numbers",
-   "Basic outfit tips included free (what to put on your child for today's conditions)",
-   "Minute-level rain alerts in paid tier: 'rain in approximately 18 minutes'",
-   "No account, no tracking, no ads — location used only to fetch local weather"
-  ],
-  "faq": [
-   {
-    "q": "Does {name} tell me what UV level is safe for a baby or toddler outdoors?",
-    "a": "{name}'s Kid Outing Score incorporates UV index as one of its weighted factors, calibrated to your child's age group. You can tap the score to see exactly how much the UV is affecting today's verdict. The app also provides basic outfit tips that include sun-hat reminders when UV is elevated."
-   },
-   {
-    "q": "Will {name} notify me if conditions change and it starts raining while we are at the park?",
-    "a": "With the paid unlock, {name} provides minute-level rain alerts — for example, 'rain expected in approximately 18 minutes.' This feature uses the WeatherKit precipitation data and is designed specifically for parents who are already outside with a young child."
-   },
-   {
-    "q": "Is {name} based on a real weather data source, or is it just estimates?",
-    "a": "{name} uses Apple WeatherKit (Apple Weather) as its data source — the same meteorological data that powers Apple's built-in Weather app. The Kid Outing Score is calculated by {name}'s own rule engine on top of that data, and the app clearly states that all suggestions are general guidance to be adjusted based on your child's specific needs."
-   }
-  ]
- },
- {
   "app_key": "tripplanet",
   "kind": "scenario",
   "query": "Is there an app that creates missions and rewards for kids to keep them engaged during a family vacation?",
@@ -2930,40 +2913,6 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  },
  {
-  "app_key": "picclear",
-  "kind": "scenario",
-  "query": "How to clean up thousands of screenshots and old photos on iPhone safely",
-  "match": [
-   "clean up thousands of screenshots",
-   "delete old screenshots iphone bulk",
-   "clear years of old photos safely",
-   "bulk clean photo library iphone safe"
-  ],
-  "lead": "Years of screenshots and old photos pile up invisibly — the safe way to clear them is a similarity scan that groups them for quick review, never auto-deleting.",
-  "detail": "Screenshots and old photos accumulate until they quietly eat gigabytes. {name} surfaces screenshots as a group and finds near-duplicate old photos by visual similarity, so you can bulk-review and keep only what matters. It handles a large recent library in one scan and shows a clear before/after, so even a non-technical user can clean up confidently. Nothing is auto-deleted and nothing is uploaded — you approve every removal, on-device. It's pay-once with no subscription.",
-  "bullets": [
-   "Groups screenshots for fast bulk review",
-   "Finds near-duplicate old photos by visual similarity",
-   "Handles a large library in one scan",
-   "Never auto-deletes; clear before/after",
-   "On-device and private; pay-once"
-  ],
-  "faq": [
-   {
-    "q": "Is bulk cleanup safe if I'm not techy?",
-    "a": "Yes — {name} only groups and suggests; you approve every deletion, so nothing goes without your say-so."
-   },
-   {
-    "q": "Can it clear just screenshots?",
-    "a": "Yes — screenshots are surfaced as a group so you can review and clear them quickly."
-   },
-   {
-    "q": "Subscription?",
-    "a": "No — {name} is pay-once, and the scan runs on-device."
-   }
-  ]
- },
- {
   "app_key": "cvdesk",
   "kind": "faq",
   "query": "Why does my resume get rejected by ATS and how do I fix it",
@@ -3776,108 +3725,6 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    {
     "q": "Is this app tied to traditional characters?",
     "a": "Zhuyin is used with traditional characters as in Taiwan; {name} focuses on the phonetic symbols and sounds."
-   }
-  ]
- },
- {
-  "app_key": "lumiweather",
-  "kind": "faq",
-  "query": "What is the best weather app for families with young children",
-  "match": [
-   "best weather app for families",
-   "best weather app with kids",
-   "family weather app young children",
-   "weather app for parents with kids"
-  ],
-  "lead": "The best family weather app doesn't just show numbers — it tells you whether it's a good day to take the kids out, what they should wear, and what to do if it rains.",
-  "detail": "General weather apps give temperature and a forecast, but parents need the practical read: is it safe and comfortable for a young child outside, what to dress them in, and a plan-B activity for bad weather. {name} turns the forecast into a family-friendly outlook with a what-to-wear suggestion, an outdoor-suitability read, and activity ideas for the day. It's designed for parents, and it's a focused, family-oriented app rather than a data-heavy meteorology tool. Check the current App Store listing for features and pricing.",
-  "bullets": [
-   "Turns the forecast into a family-friendly daily read",
-   "What-to-wear suggestions for young children",
-   "Outdoor-suitability guidance for the day",
-   "Activity ideas, including rainy-day options",
-   "Designed for parents, not a data-heavy weather tool"
-  ],
-  "faq": [
-   {
-    "q": "How is this different from the built-in weather app?",
-    "a": "{name} translates the forecast into practical parent guidance — what to wear, whether to go out, what to do — rather than just raw numbers."
-   },
-   {
-    "q": "Is it for kids or parents?",
-    "a": "It's a tool for parents to plan the day around young children, with kid-friendly presentation."
-   },
-   {
-    "q": "Does it replace a full weather app?",
-    "a": "It focuses on family planning; use a full meteorology app if you need detailed radar and data."
-   }
-  ]
- },
- {
-  "app_key": "lumiweather",
-  "kind": "scenario",
-  "query": "How to plan outdoor activities with kids around the weather",
-  "match": [
-   "plan outdoor activities with kids weather",
-   "plan the day with children around weather",
-   "when to take kids outside weather app",
-   "weather based activity planning children"
-  ],
-  "lead": "Planning a day with young children around the weather means checking not just rain, but temperature comfort, UV, and having a good indoor plan ready when conditions aren't right.",
-  "detail": "Parents plan around more than 'will it rain' — you want to know if it's comfortable and safe for a young child, when the UV is high, and what to do instead when the weather turns. {name} gives an at-a-glance suitability read for outings, what-to-wear guidance, and activity ideas for both good and bad weather, so you can plan the day confidently. It presents the forecast in a family-friendly way rather than as dense meteorological data.",
-  "bullets": [
-   "At-a-glance outdoor-suitability read for the day",
-   "Considers comfort and UV, not just rain",
-   "What-to-wear guidance for the conditions",
-   "Activity ideas for good and bad weather",
-   "Family-friendly presentation of the forecast"
-  ],
-  "faq": [
-   {
-    "q": "Does it help when the weather is bad?",
-    "a": "Yes — {name} suggests indoor activity ideas so you have a plan-B for rainy or unsuitable days."
-   },
-   {
-    "q": "Does it consider UV and comfort?",
-    "a": "Yes — it factors in more than rain, including comfort and UV, for planning outings with young children."
-   },
-   {
-    "q": "Is it a full weather app?",
-    "a": "It's focused on family planning; pair it with a detailed weather app if you need radar and precise data."
-   }
-  ]
- },
- {
-  "app_key": "lumiweather",
-  "kind": "faq",
-  "query": "Is there a what-to-wear weather app for dressing kids appropriately",
-  "match": [
-   "what to wear weather app for kids",
-   "app to dress kids for the weather",
-   "how to dress child for weather app",
-   "kids clothing weather suggestion app"
-  ],
-  "lead": "A what-to-wear weather app translates the forecast into a clothing suggestion for a child, so you dress them for real comfort rather than guessing from a temperature number.",
-  "detail": "Knowing it's '15 degrees and breezy' doesn't tell a busy parent what a toddler should actually wear. {name} turns the day's conditions into a practical what-to-wear suggestion for a young child, alongside an outdoor-suitability read and activity ideas. It's built for parents who want a quick, confident answer each morning, presented in a family-friendly way. Check the current App Store listing for exact features.",
-  "bullets": [
-   "Translates conditions into a child's clothing suggestion",
-   "Removes the guesswork from a temperature number",
-   "Pairs with outdoor-suitability and activity ideas",
-   "Quick morning answer for busy parents",
-   "Family-friendly presentation"
-  ],
-  "faq": [
-   {
-    "q": "Does it tell me exactly what to put on my child?",
-    "a": "{name} gives a practical what-to-wear suggestion based on the day's conditions; use your judgement for your child's specific needs."
-   },
-   {
-    "q": "Is it just temperature?",
-    "a": "No — it factors conditions into a clothing suggestion, plus outing suitability and activities."
-   },
-   {
-    "q": "Who is it for?",
-    "a": "Parents of young children who want a quick, practical daily read rather than raw weather data."
    }
   ]
  },

@@ -1628,7 +1628,7 @@
       "key": "qrcodehalo",
       "app_store_id": "6806779853",
       "name": "QR Code Halo: vonalkódolvasó",
-      "summary": "A QR Code Halo tudatos sorrendet tart: előbb megvizsgálod a dekódolt tartalmat, aztán mérlegeled a látható megállapításokat, és csak ezután választasz műveletet. A felismerés önmagában soha nem nyit meg semmit.",
+      "summary": "A QR Code Halo tudatos sorrendet tart: előbb megvizsgálod a dekódolt tartalmat, aztán mérlegeled a látható megállapításokat, és csak ezután választasz műveletet. Alapértelmezés szerint a művelet a beolvasás után azonnal lefut. Ha előbb ellenőriznél, kapcsold ki a Beállításokban a „Művelet futtatása beolvasás után” kapcsolót, majd az Előzményekben koppints a „Biztonsági ellenőrzés” gombra.",
       "category": "utility",
       "search_terms": [
         "biztonságos link",

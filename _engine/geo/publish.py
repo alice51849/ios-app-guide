@@ -400,6 +400,11 @@ def main():
     require(
         [PY, os.path.join(HERE, "dedupe_locale_meta.py"), "--apply"], env=env
     )
+    # 同一個 App 的近似頁(例如 ShotInbox 的 17 頁 answers,相似度 91–95%)每個
+    # 語系只留 1 頁可索引,其餘 noindex,follow 並移出 sitemap;vs 比較頁一併停用。
+    # 規則在 app_page_consolidation_policy.json。必須跑在 dedupe 之後、
+    # 第二趟 gen_link_hubs 之前,連結圖才會用最終的 noindex 狀態重算。
+    require([PY, os.path.join(HERE, "gen_app_page_consolidation.py")], env=env)
     # Legacy body generators and a remote-first rebase can restore unlisted
     # promotions. Quarantine them before the final link/sitemap closure.
     require([PY, os.path.join(HERE, "live_app_guard.py"), "--site-root", PAGES], env=env)

@@ -6,7 +6,7 @@
   "identifier": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json",
   "url": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-09-26",
+  "dateModified": "2026-10-13",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,7 +18,7 @@
   "price_source": "Apple App Store public lookup snapshot",
   "price_storefront": "US",
   "official_locale_count": 50,
-  "app_count": 52,
+  "app_count": 53,
   "columns": [
     {
       "name": "app_key",
@@ -145,10 +145,11 @@
     {
       "category": "education",
       "label": "Study and exam practice",
-      "app_count": 2,
+      "app_count": 3,
       "app_keys": [
         "aim990",
-        "wordmate"
+        "wordmate",
+        "wordmatelite"
       ]
     },
     {
@@ -174,9 +175,8 @@
     {
       "category": "kids",
       "label": "Kids learning and family routines",
-      "app_count": 14,
+      "app_count": 12,
       "app_keys": [
-        "aim990plus",
         "dailymate",
         "dailymatelite",
         "lumibopomofo",
@@ -188,8 +188,7 @@
         "lumimission",
         "lumimissionpro",
         "lumiweather",
-        "tripplanet",
-        "wordmatelite"
+        "tripplanet"
       ]
     },
     {
@@ -218,9 +217,10 @@
     {
       "category": "productivity",
       "label": "Notes, documents and focus",
-      "app_count": 11,
+      "app_count": 12,
       "app_keys": [
         "aibriefpack",
+        "claudeusagemini",
         "countdaysnow",
         "cvdesk",
         "lockhour",
@@ -253,12 +253,13 @@
     {
       "category": "utility",
       "label": "iPhone utilities",
-      "app_count": 7,
+      "app_count": 8,
       "app_keys": [
         "battai",
         "caldaily",
         "dbhalo",
         "ledmovingtext",
+        "qrcodehalo",
         "stayclock",
         "wifiaidlite",
         "zipbox"
@@ -304,37 +305,11 @@
       "us_price": "0",
       "us_price_currency": "USD",
       "verified_storefront_count": 39,
-      "sibling_app_keys": [
-        "aim990plus"
-      ],
+      "sibling_app_keys": [],
       "choose_when": "You are looking for best toeic prep app offline study plan for iphone, and you want free to start, one-time unlock, no subscription.",
-      "consider_instead_when": "Consider another edition when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete; also published: aim990plus.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
-    },
-    {
-      "app_key": "aim990plus",
-      "app_name": "Aim990 Plus",
-      "app_store_id": "6792483140",
-      "category": "kids",
-      "category_label": "Kids learning and family routines",
-      "buyer_intent": "best offline English listening and reading exam trainer for iPhone",
-      "decision_context": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
-      "purchase_model": "paid_upfront",
-      "purchase_model_label": "pay once, no subscription",
-      "one_time_option": true,
-      "free_to_download": false,
-      "subscription": false,
-      "us_price": "5.99",
-      "us_price_currency": "USD",
-      "verified_storefront_count": 39,
-      "sibling_app_keys": [
-        "aim990"
-      ],
-      "choose_when": "You are looking for best offline English listening and reading exam trainer for iPhone, and you want pay once, no subscription.",
-      "consider_instead_when": "Consider another edition when you want to try the app before paying — this edition is a paid download with no free tier; also published: aim990.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "battai",
@@ -381,13 +356,35 @@
       "app_store_url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
     },
     {
+      "app_key": "claudeusagemini",
+      "app_name": "UsageNow",
+      "app_store_id": "6818607603",
+      "category": "productivity",
+      "category_label": "Notes, documents and focus",
+      "buyer_intent": "app to see Claude and Codex usage limits and reset times on iPhone",
+      "decision_context": "If you code with AI agents every day, the limit that cuts you off mid-task is the one to watch: how much of each plan is left and exactly when it resets. That is the gap UsageNow was built to close.",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 38,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for app to see Claude and Codex usage limits and reset times on iPhone, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-to-see-claude-and-codex-usage-limits-and-reset-times-on-iphone.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
       "app_key": "countdaysnow",
-      "app_name": "CountDaysNow: Event Counter",
+      "app_name": "CountDaysNow",
       "app_store_id": "6807079789",
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "countdown widget app for iphone without ads or subscription",
-      "decision_context": "Plan backwards from the dates that matter. Countdown Plan gives any event its own preparation steps, such as renew the passport 30 days before a trip or",
+      "decision_context": "CountDaysNow — Plan backwards from the dates that matter. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -399,7 +396,7 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for countdown widget app for iphone without ads or subscription, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/countdaysnow.html",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/countdown-widget-app-for-iphone-without-ads-or-subscription.html",
       "app_store_url": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
     },
     {
@@ -496,12 +493,12 @@
     },
     {
       "app_key": "dbhalo",
-      "app_name": "dB Halo: Sound Meter",
+      "app_name": "dB Halo",
       "app_store_id": "6806826699",
       "category": "utility",
       "category_label": "iPhone utilities",
       "buyer_intent": "sound meter app for iphone with frequency spectrum and noise dose",
-      "decision_context": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. The large",
+      "decision_context": "dB Halo — From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -513,7 +510,7 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for sound meter app for iphone with frequency spectrum and noise dose, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html",
       "app_store_url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
     },
     {
@@ -850,12 +847,12 @@
     },
     {
       "app_key": "lumiweather",
-      "app_name": "Lumi Weather",
+      "app_name": "Lumi Weather: What to Wear",
       "app_store_id": "6779552704",
       "category": "kids",
       "category_label": "Kids learning and family routines",
-      "buyer_intent": "best weather app to help parents plan outdoor time with kids",
-      "decision_context": "Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense. That is why Lumi Weather exists.",
+      "buyer_intent": "weather app to help me plan when to go outside",
+      "decision_context": "Lumi Weather tells you in one glance whether now is a good time to go outside, what to wear, and whether you need an umbrella or sunscreen.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -865,9 +862,9 @@
       "us_price_currency": "USD",
       "verified_storefront_count": 39,
       "sibling_app_keys": [],
-      "choose_when": "You are looking for best weather app to help parents plan outdoor time with kids, and you want free to start, one-time unlock, no subscription.",
+      "choose_when": "You are looking for weather app to help me plan when to go outside, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/lumiweather.html",
       "app_store_url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
     },
     {
@@ -1045,6 +1042,28 @@
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
       "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "app_store_url": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
+      "app_key": "qrcodehalo",
+      "app_name": "QR Code Halo",
+      "app_store_id": "6806779853",
+      "category": "utility",
+      "category_label": "iPhone utilities",
+      "buyer_intent": "qr code scanner app that shows the link before opening it",
+      "decision_context": "QR Code Halo — QR Code Halo is built around Inspect, Decide, Act. Free to start · One-time unlock · No subscription.",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for qr code scanner app that shows the link before opening it, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/qr-code-scanner-app-that-shows-the-link-before-opening-it.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
     },
     {
       "app_key": "savetag",
@@ -1228,12 +1247,12 @@
     },
     {
       "app_key": "studydown",
-      "app_name": "Studydown: Face-Down Timer",
+      "app_name": "Studydown",
       "app_store_id": "6807335593",
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "focus timer that starts when you put your phone face down",
-      "decision_context": "Put your phone down. See your effort add up. Studydown records time for the things that matter to you: a work project, a reading habit, language practice",
+      "decision_context": "Studydown — A little time for a project, a book or a skill you want to develop. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1245,7 +1264,7 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for focus timer that starts when you put your phone face down, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/studydown.html",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html",
       "app_store_url": "https://apps.apple.com/us/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
     },
     {
@@ -1416,8 +1435,8 @@
       "app_key": "wordmatelite",
       "app_name": "Wordmate Lite",
       "app_store_id": "6797601720",
-      "category": "kids",
-      "category_label": "Kids learning and family routines",
+      "category": "education",
+      "category_label": "Study and exam practice",
       "buyer_intent": "best free vocabulary app for adults one minute a day no flashcard decks",
       "decision_context": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
       "purchase_model": "free_with_lifetime_unlock",
@@ -1438,12 +1457,12 @@
     },
     {
       "app_key": "zipbox",
-      "app_name": "Zipbox: Unzip RAR, ZIP & 7z",
+      "app_name": "Zipbox",
       "app_store_id": "6806776579",
       "category": "utility",
       "category_label": "iPhone utilities",
       "buyer_intent": "paid app to open RAR and 7z files on iPhone without ads",
-      "decision_context": "Zipbox is a paid App Store download. One purchase includes every feature, with no in-app purchases, subscriptions or ads. All 13 formats are handled on",
+      "decision_context": "Zipbox — Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, create ZIP or 7z, and pay once with every feature included. Paid download · All features included · No IAP or subscription.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -1455,9 +1474,9 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for paid app to open RAR and 7z files on iPhone without ads, and you want pay once, no subscription.",
       "consider_instead_when": "Consider a different app when you want to try the app before paying — this edition is a paid download with no free tier.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/zipbox.html",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html",
       "app_store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
     }
   ],
-  "content_digest": "sha256:c6bf096b96afeae7e1554245afa36fe784314ee0541b66659a3a05b7b35fcf52"
+  "content_digest": "sha256:83ea0c0c9e14ffbd1f49f87ecd0ce3c7007ec990180402d79d67517a9010733f"
 }

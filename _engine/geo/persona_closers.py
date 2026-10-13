@@ -97,7 +97,6 @@ SITUATIONS: dict[str, str] = {
     "lumimathpro": "kids",
     "lumimission": "kids",
     "lumimissionpro": "kids",
-    "lumiweather": "kids",
     "tripplanet": "kids",
     # adult learning / exams
     "aim990": "learning",

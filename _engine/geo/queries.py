@@ -88,7 +88,7 @@ CURATED = {
         "kids reward chart app",
     ],
     "lumiweather": [
-        "weather app for kids to learn",
+        "weather app with an outing score",
     ],
     "lumibopomofo": [
         "best app to learn zhuyin bopomofo for kids",
@@ -245,10 +245,10 @@ _MORE = {
         "app to give digital photos a 35mm film look",
     ],
     "lumiweather": [
-        "kid friendly weather app for families",
-        "weather app that tells kids what to wear today",
-        "simple family weather app to plan outings with kids",
-        "weather app for children with cute visuals",
+        "weather app that tells me what to wear today",
+        "app that tells me if it is a good time to go outside",
+        "weather app with umbrella and sunscreen reminders",
+        "weather app that shows the best time to go out",
     ],
     "lumimath": [
         "fun math practice app for young kids offline",
@@ -303,7 +303,7 @@ _TAILORED = {
     "picclear": [
         "gemini photos alternative to clean up iphone storage",
         "iphone storage full app to find what to delete first",
-        "app to bulk delete screenshots and duplicate photos",
+        "app to bulk delete duplicate photos on iphone",
     ],
     # —— 掃描/OCR:競品/免訂閱/上鎖 ——
     "scanto": [
@@ -357,7 +357,7 @@ _TAILORED = {
         "chore chart app that motivates kids with rewards offline",
     ],
     "lumiweather": [
-        "app to teach kids about weather and what to wear today",
+        "app that turns the forecast into an outing score",
     ],
     # —— 注音:海外華人子女場景 ——
     "lumibopomofo": [
@@ -876,7 +876,6 @@ _GEO_TAILORED13 = {
     "mochi": ["things 3 alternative free checklist app", "any.do alternative for iphone"],
     "lumimath": ["splashlearn alternative math app for kids"],
     "lumimission": ["s'moresup alternative chore app for kids", "homey alternative chore app for iphone"],
-    "lumiweather": ["tinybop weather alternative app for kids", "marcopolo weather alternative for kids"],
     "tripplanet": ["stack the states alternative app for kids", "stack the countries alternative for kids"],
 }
 for _k, _qs in _GEO_TAILORED13.items():
@@ -896,7 +895,7 @@ _GEO_TAILORED14 = {
                     "app to guide kids through a bedtime routine with rewards"],
     "gmoney": ["app to track foreign currency spending offline while traveling"],
     "photocream": ["photo editor with real film grain and halation"],
-    "lumiweather": ["weather app that tells me what clothes my child should wear"],
+    "lumiweather": ["weather app that tells me what to wear and whether to bring an umbrella"],
 }
 for _k, _qs in _GEO_TAILORED14.items():
     _base = CURATED.setdefault(_k, [])
@@ -995,9 +994,6 @@ _GEO_TAILORED16 = {
         "How can I help a child move from Zhuyin sentences to a short story?",
         "How can I help a child understand and retell a Zhuyin story?",
     ],
-    "lumiweather": [
-        "how much screen time is appropriate for young children",
-    ],
     "lumimission": [
         "how to get kids to follow a morning or bedtime routine",
         "what makes a kids learning app safe and good",
@@ -1045,7 +1041,6 @@ _GEO_TAILORED18 = {
                "bettersleep alternative app for iphone",
                "best sleep app to fix sleep after daylight saving time", "white noise app for better sleep new year"],
     "tripbee": ["tripomatic alternative app for iphone", "roadtrippers alternative trip planner"],
-    "lumiweather": ["marcopolo weather alternative app for kids"],
     "mochi": ["structured app alternative for iphone", "teuxdeux alternative cute to do list",
               "microsoft to do alternative for iphone"],
     "sononote": ["otter alternative that works offline on iphone", "notta alternative app for iphone",
@@ -1158,8 +1153,8 @@ _GEO_TAILORED21 = {
         "unblur photo app that works offline on iphone"
     ],
     "lumiweather": [
-        "family weather app that explains the forecast to children",
-        "weather app for kids with outfit suggestions"
+        "weather app that explains the forecast in one line",
+        "weather widget that shows what to wear"
     ],
     "onepageppt": [
         "one page summary app for iphone",
@@ -1257,12 +1252,17 @@ except Exception:
     _COMPETITORS = {}
 
 
+# 不自稱 best、不套關鍵字模板的 App(wifiaidlite-05):不產生 "best {kw} app" 題目。
+NO_BEST_QUERY_KEYS = {"wifiaidlite"}
+
+
 def queries_for(key):
     """合併手工精選 + 從 keywords 自動衍生的自然語言查詢,去重。"""
     a = APPS[key]
     out = list(CURATED.get(key, []))
     for kw in a.get("keywords", [])[:4]:
-        out.append(f"best {kw} app")
+        if key not in NO_BEST_QUERY_KEYS:
+            out.append(f"best {kw} app")
         out.append(f"{kw} app for iphone")
         out.append(f"{kw} app for iphone free")
         out.append(f"how to choose a {kw} app")

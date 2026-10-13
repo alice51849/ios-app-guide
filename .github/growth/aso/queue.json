@@ -3,6 +3,20 @@
   "note": "每日雙模型 ASO 佇列：每天處理第一個 status=todo 的 App。stage=tune 先由主模型調教再由不同模型驗證；stage=verify 只需第二模型驗證。完成改 done 並填 done_at。",
   "apps": [
     {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "priority": "high",
+      "stage": "verify",
+      "status": "todo"
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "priority": "high",
+      "stage": "verify",
+      "status": "todo"
+    },
+    {
       "key": "cvdesk",
       "app_store_id": "6781337213",
       "priority": "high",
@@ -31,24 +45,10 @@
       "status": "todo"
     },
     {
-      "key": "mochi",
-      "app_store_id": "6785004775",
-      "priority": "high",
-      "stage": "verify",
-      "status": "todo"
-    },
-    {
       "key": "moneytag",
       "app_store_id": "6801956402",
       "priority": "high",
       "stage": "tune",
-      "status": "todo"
-    },
-    {
-      "key": "shotinbox",
-      "app_store_id": "6802166527",
-      "priority": "high",
-      "stage": "verify",
       "status": "todo"
     },
     {

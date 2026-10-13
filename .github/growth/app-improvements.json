@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T16:02:15Z",
+  "updated_at": "2026-10-13T16:04:21Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -119,6 +119,14 @@
       ],
       "actions": [
         {
+          "id": "cvdesk-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/cvdesk.md 與 cvdesk-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "cvdesk-01",
           "title": "印尼文外宣素材與貼文入庫",
           "detail": "寫 3 則印尼文 Threads／IG 文案（cek skor ATS、SMK 畢業季、watermark 陷阱）加 1 支 30 秒 TikTok 腳本，附追蹤碼 ct=cvd_id_ats；放進 .github/growth/app-posts.json（lang=id）。同時補 th／en／zh-Hant 各 1 則。",
@@ -189,6 +197,14 @@
       ],
       "actions": [
         {
+          "id": "gmoneylite-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/gmoneylite.md 與 gmoneylite-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "gmoneylite-04",
           "title": "Telegram 補 zh-Hant／ko／ja 並排旅遊檔期",
           "detail": "把 posts 的三則加入 telegram_posts.json，排在 11 月–2 月日本冬季旅遊與 2027 春節前 3–4 週；寫 30 秒 Shorts 腳本「店門口 1,280 日圓＝？」。",
@@ -253,6 +269,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumimission-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/lumimission.md 與 lumimission-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumimission-02",
           "title": "重寫 telegram_posts.json 的 6779750237 三篇＋新增 ko、vi 兩篇",
@@ -329,6 +353,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumibopomofo-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/lumibopomofo.md 與 lumibopomofo-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumibopomofo-05",
           "title": "小一注音季貼文排程與四語貼文",
@@ -418,6 +450,14 @@
       ],
       "actions": [
         {
+          "id": "mochi-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/mochi.md 與 mochi-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "mochi-03",
           "title": "Telegram 佇列補 pt-BR 與 de 貼文（目前只有 en/ja/ko/zh-Hant）",
           "detail": "在 .github/scripts/telegram_posts.json 新增 Mochi 的 pt-BR、de 兩則，文案照本報告 posts 欄（老實寫免費範圍、50 種語言 App 內切換），並把現有 en/zh-Hant 文案補上免費範圍一句。",
@@ -486,6 +526,14 @@
       ],
       "actions": [
         {
+          "id": "moneytag-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/moneytag.md 與 moneytag-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "moneytag-04",
           "title": "60 秒示範影片腳本＋Telegram 補三語",
           "detail": "腳本：3 個專案（接案、擺攤、出租）＋「交通」標籤跨專案加總，zh／ja／en／vi 字幕；Telegram 補 zh-Hant／ja／vi 條目（見 posts）。",
@@ -537,6 +585,14 @@
       "report_path": ".github/growth/apps/shotinbox.md",
       "markets": [],
       "actions": [
+        {
+          "id": "shotinbox-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/shotinbox.md 與 shotinbox-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "shotinbox-01",
           "title": "ShotInbox 五則以痛點開頭的貼文加入貼文庫與 Telegram 今日焦點",
@@ -617,6 +673,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "snapportlite-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/snapportlite.md 與 snapportlite-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "snapportlite-01",
           "title": "從 ASC 回抄 snapportlite_full.json（名稱／副標已過時）",
@@ -720,6 +784,14 @@
       ],
       "actions": [
         {
+          "id": "unblurry-aso2",
+          "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
+          "detail": "產出 .github/growth/aso/unblurry.md 與 unblurry-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "unblurry-01",
           "title": "刪掉 Telegram 英文貼文裡的競品名",
           "detail": "telegram_posts.json 中 6782275018 的 en 條目「(a pay-once alternative to Remini)」整段移除，改為「50 interface languages, switch in-app」。",
@@ -794,6 +866,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "claudeusagemini-15",
+          "title": "商店文字第二模型（Fable）獨立複核",
+          "detail": "通過後 payload 標 apply_ready，本機依長期授權套用 ASC。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "claudeusagemini-14",
           "title": "把驗證後的標題／副標／關鍵字套用到 ASC（50 語系，Caitlyn 10/13 授權）",

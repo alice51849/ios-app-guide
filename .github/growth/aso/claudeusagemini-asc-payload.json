@@ -3,9 +3,9 @@
   "app_store_id": "6818607603",
   "bundle_note": "只改這款 App 的商店文字（name、subtitle、keywords），其他欄位不動。",
   "generated": "2026-10-13T15:57:13Z",
-  "source": ".github/growth/aso/claudeusagemini.json（四角度對抗驗證後的 recommended）",
+  "source": ".github/growth/aso/claudeusagemini.json（四角度對抗驗證後的 recommended）＋Fable 第二模型獨立複核（2026-10-13）",
   "fallback_if_rejected": {
-    "rule": "若 App Review 以 2.3.7／5.2.1／5.2.2 退件標題，改回各語系 current.name，Claude、Codex 留在副標。"
+    "rule": "若 App Review 以 2.3.7／4.1(c)／5.2.1／5.2.2 退件標題，改回各語系 current.name，Claude、Codex 留在副標。若退件同時點名副標（2.3.7 原文：subtitles should not reference other apps），副標改為不含品牌的版本，例如 en-US「AI Usage Limits & Reset Alerts」（30），其餘語系同理。"
   },
   "locales": {
     "ar-SA": {
@@ -31,7 +31,7 @@
     "ca": {
       "name": "UsageNow: Ús de Claude i Codex",
       "subtitle": "Límits IA: Copilot i Gemini",
-      "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control",
+      "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,límit,control",
       "expected_current": {
         "name": "UsageNow: Monitor d'ús d'IA",
         "subtitle": "Límits Claude, Codex, Copilot",
@@ -39,7 +39,7 @@
       }
     },
     "cs": {
-      "name": "UsageNow: Claude/Codex využití",
+      "name": "UsageNow: Využití Claude/Codex",
       "subtitle": "Limity AI: Copilot a Gemini",
       "keywords": "spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,code",
       "expected_current": {
@@ -199,7 +199,7 @@
       }
     },
     "hr": {
-      "name": "UsageNow: Claude/Codex limiti",
+      "name": "UsageNow: Limiti Claude/Codex",
       "subtitle": "AI potrošnja: Copilot, Gemini",
       "keywords": "kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,left",
       "expected_current": {
@@ -231,7 +231,7 @@
     "it": {
       "name": "UsageNow: Uso Claude e Codex",
       "subtitle": "Utilizzo IA: Copilot e Gemini",
-      "keywords": "consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto",
+      "keywords": "consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto,limiti",
       "expected_current": {
         "name": "UsageNow: Monitor utilizzo IA",
         "subtitle": "Limiti Claude, Codex e Copilot",
@@ -241,7 +241,7 @@
     "ja": {
       "name": "UsageNow：Claude・Codex対応 使用量と上限",
       "subtitle": "AIのリセット時刻を通知・Copilot/Gemini",
-      "keywords": "code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,使用率,アラート,クォータ",
+      "keywords": "code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,利用状況,アラート,クォータ",
       "expected_current": {
         "name": "UsageNow：AI使用量トラッカー",
         "subtitle": "Claude・Codex・Copilot・Gemini残量",
@@ -259,9 +259,9 @@
       }
     },
     "ko": {
-      "name": "UsageNow for Claude·Codex 사용량",
+      "name": "UsageNow: Claude·Codex 사용량 트래커",
       "subtitle": "AI 한도·리셋 시간 알림·Copilot·Gemini",
-      "keywords": "클로드,코덱스,코파일럿,제미나이,트래커,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터",
+      "keywords": "클로드,코덱스,코파일럿,제미나이,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터",
       "expected_current": {
         "name": "UsageNow: AI 사용량 트래커",
         "subtitle": "Claude·Codex·Copilot·Gemini 한도",
@@ -301,7 +301,7 @@
     "nl-NL": {
       "name": "UsageNow: Claude/Codex-gebruik",
       "subtitle": "AI-limiet: Copilot en Gemini",
-      "keywords": "verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie",
+      "keywords": "verbruik,dagelijks,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie",
       "expected_current": {
         "name": "UsageNow: AI-gebruik tracker",
         "subtitle": "Claude, Codex & Copilot limiet",
@@ -341,7 +341,7 @@
     "pl": {
       "name": "UsageNow: Zużycie Claude/Codex",
       "subtitle": "Limity AI: Copilot i Gemini",
-      "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code",
+      "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,token,code",
       "expected_current": {
         "name": "UsageNow: Zużycie AI tracker",
         "subtitle": "Limity Claude, Codex, Copilot",
@@ -379,9 +379,9 @@
       }
     },
     "ru": {
-      "name": "UsageNow: Claude/Codex лимиты",
+      "name": "UsageNow: Лимиты Claude/Codex",
       "subtitle": "Расход ИИ: Copilot и Gemini",
-      "keywords": "клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,лимит,code",
+      "keywords": "клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,сессия,code",
       "expected_current": {
         "name": "UsageNow: Лимиты ИИ и расход",
         "subtitle": "Claude, Codex, Copilot, Gemini",
@@ -389,7 +389,7 @@
       }
     },
     "sk": {
-      "name": "UsageNow: Claude/Codex limity",
+      "name": "UsageNow: Limity Claude/Codex",
       "subtitle": "Spotreba AI: Copilot a Gemini",
       "keywords": "využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code",
       "expected_current": {
@@ -399,7 +399,7 @@
       }
     },
     "sl-SI": {
-      "name": "UsageNow: Claude/Codex limiti",
+      "name": "UsageNow: Limiti Claude/Codex",
       "subtitle": "Poraba UI: Copilot in Gemini",
       "keywords": "kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,left",
       "expected_current": {
@@ -459,7 +459,7 @@
       }
     },
     "uk": {
-      "name": "UsageNow: Claude/Codex ліміти",
+      "name": "UsageNow: Ліміти Claude/Codex",
       "subtitle": "Витрата ШІ: Copilot і Gemini",
       "keywords": "клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code",
       "expected_current": {
@@ -509,5 +509,17 @@
       }
     }
   },
-  "changed_locales": 50
+  "changed_locales": 50,
+  "verification": {
+    "models": [
+      "claude-opus-5-5 (analysis + 4-lens adversarial verification)",
+      "claude-fable-5-1 (independent review)"
+    ],
+    "second_model_verdict": "approve_with_fixes",
+    "accepted_fixes": 15,
+    "rejected_fixes": 0,
+    "date": "2026-10-13",
+    "apply_ready": true,
+    "notes": "Fable 以 11 次 apps.apple.com 網頁搜尋（KR／JP／IT／RU／NL／PL／ES，全部 HTTP 200）加 developer.apple.com 指南原文複驗，兩份獨立審查的主張全部成立，採納 15 項：ko 標題改「UsageNow: Claude·Codex 사용량 트래커」保住 트래커、ja 使用率→利用状況、it 補 limiti、pl kwota→token、ca gasto→límit、ru／nl 刪已折疊的複數字改放 сессия／dagelijks、cs／sk／hr／sl-SI／ru／uk 標題改自然語序、備案補 4.1(c) 與不含品牌的副標備案；優先店面 zh-Hant／en-US／en-GB 原樣通過。無阻擋項；唯 ko 線上關鍵字可能與 expected_current 不一致（usagenow 생성형 1 筆、usagenow 잔여 0 筆），套用腳本比對現值時以 ASC 線上為準。"
+  }
 }

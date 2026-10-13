@@ -1,0 +1,513 @@
+{
+  "app": "UsageNow: AI Usage Tracker",
+  "app_store_id": "6818607603",
+  "bundle_note": "只改這款 App 的商店文字（name、subtitle、keywords），其他欄位不動。",
+  "generated": "2026-10-13T15:57:13Z",
+  "source": ".github/growth/aso/claudeusagemini.json（四角度對抗驗證後的 recommended）",
+  "fallback_if_rejected": {
+    "rule": "若 App Review 以 2.3.7／5.2.1／5.2.2 退件標題，改回各語系 current.name，Claude、Codex 留在副標。"
+  },
+  "locales": {
+    "ar-SA": {
+      "name": "UsageNow: استخدام Claude/Codex",
+      "subtitle": "حدود AI: Copilot، Gemini",
+      "keywords": "كلود,متتبع,توكن,حصة,عداد,ويدجت,تصفير,متبقي,أسبوعي,ساعات,تنبيه,استهلاك,ذكاء,اصطناعي,code",
+      "expected_current": {
+        "name": "UsageNow: متتبع استخدام الذكاء",
+        "subtitle": "حدود Claude وCodex وCopilot",
+        "keywords": "ai,code,dev,مبرمج,usage,tracker,توكن,حصة,عداد,token,ويدجت,widget,quota,meter,llm,إعادة ضبط,اصطناعي"
+      }
+    },
+    "bn-BD": {
+      "name": "UsageNow: Claude/Codex ব্যবহার",
+      "subtitle": "AI সীমা: Copilot, Gemini",
+      "keywords": "টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,ট্র্যাকার,code,left,gauge",
+      "expected_current": {
+        "name": "UsageNow: AI ব্যবহার ট্র্যাকার",
+        "subtitle": "Claude, Codex, Copilot সীমা",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,reset,llm"
+      }
+    },
+    "ca": {
+      "name": "UsageNow: Ús de Claude i Codex",
+      "subtitle": "Límits IA: Copilot i Gemini",
+      "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control",
+      "expected_current": {
+        "name": "UsageNow: Monitor d'ús d'IA",
+        "subtitle": "Límits Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,desenvolupador,usage,tracker,consum,quota,comptador,token,giny,widget,reinici,llm,meter"
+      }
+    },
+    "cs": {
+      "name": "UsageNow: Claude/Codex využití",
+      "subtitle": "Limity AI: Copilot a Gemini",
+      "keywords": "spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,code",
+      "expected_current": {
+        "name": "UsageNow: Sledování využití AI",
+        "subtitle": "Limity Claude, Codex, Copilot",
+        "keywords": "code,dev,vývojář,usage,tracker,spotřeba,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm"
+      }
+    },
+    "da": {
+      "name": "UsageNow: Claude/Codex-forbrug",
+      "subtitle": "AI-grænser: Copilot og Gemini",
+      "keywords": "kvote,tæller,tilbage,ugentlig,timer,advarsel,nulstil,sporing,code",
+      "expected_current": {
+        "name": "UsageNow: AI-forbrug tracker",
+        "subtitle": "Claude, Codex, Copilot grænser",
+        "keywords": "code,dev,udvikler,usage,quota,kvote,tæller,token,widget,reset,meter,monitor,llm,nedtælling,session"
+      }
+    },
+    "de-DE": {
+      "name": "UsageNow: Claude/Codex-Nutzung",
+      "subtitle": "KI-Kontingent: Copilot, Gemini",
+      "keywords": "verbrauch,ai,token,code,zähler,stunden,sitzung,warnung,auslastung,übrig,woche",
+      "expected_current": {
+        "name": "UsageNow: KI-Nutzung Tracker",
+        "subtitle": "Claude, Codex & Copilot Limits",
+        "keywords": "ai,code,dev,entwickler,usage,verbrauch,kontingent,token,quota,zähler,widget,reset,countdown,llm,api"
+      }
+    },
+    "el": {
+      "name": "UsageNow: Χρήση Claude/Codex",
+      "subtitle": "Όρια AI: Copilot και Gemini",
+      "keywords": "κατανάλωση,ποσόστωση,μετρητής,επαναφορά,υπόλοιπο,εβδομάδα,ώρες,ειδοποίηση,όριο,code",
+      "expected_current": {
+        "name": "UsageNow: Χρήση AI και όρια",
+        "subtitle": "Claude, Codex, Copilot, Gemini",
+        "keywords": "code,dev,προγραμματιστής,usage,tracker,κατανάλωση,ποσόστωση,μετρητής,token,widget,reset,επαναφορά"
+      }
+    },
+    "en-AU": {
+      "name": "UsageNow for Claude & Codex",
+      "subtitle": "AI Usage for Copilot & Gemini",
+      "keywords": "left,lockscreen,gauge,cooldown,dashboard",
+      "expected_current": {
+        "name": "UsageNow: AI Usage Tracker",
+        "subtitle": "Claude, Codex & Copilot Limits",
+        "keywords": "code,dev,developer,coding,programmer,quota,token,widget,reset,timer,gauge,cap,plan,api,cli,max,stats"
+      }
+    },
+    "en-CA": {
+      "name": "UsageNow for Claude & Codex",
+      "subtitle": "AI Usage for Copilot & Gemini",
+      "keywords": "tracker,quota,token,widget,reset,weekly,session,limit,daily,alert,code,rate,hour,premium,requests",
+      "expected_current": {
+        "name": "UsageNow: AI Usage Tracker",
+        "subtitle": "Claude, Codex & Copilot Limits",
+        "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly"
+      }
+    },
+    "en-GB": {
+      "name": "UsageNow for Claude & Codex",
+      "subtitle": "AI Usage for Copilot & Gemini",
+      "keywords": "premium,requests,model,watch,remaining,allowance,notify,percent",
+      "expected_current": {
+        "name": "UsageNow: AI Usage Tracker",
+        "subtitle": "Claude, Codex & Copilot Limits",
+        "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,allowance,cli"
+      }
+    },
+    "en-US": {
+      "name": "UsageNow for Claude & Codex",
+      "subtitle": "AI Usage for Copilot & Gemini",
+      "keywords": "tracker,widget,reset,quota,token,code,rate,llm,weekly,session,hour,monitor,limit,alert,daily,gpt",
+      "expected_current": {
+        "name": "UsageNow: AI Usage Tracker",
+        "subtitle": "Claude, Codex & Copilot Limits",
+        "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly"
+      }
+    },
+    "es-ES": {
+      "name": "UsageNow: Uso Claude y Codex",
+      "subtitle": "Límites IA: Copilot y Gemini",
+      "keywords": "límite,consumo,cuota,contador,reinicio,restante,semanal,horas,alerta,seguimiento,medidor,sesión",
+      "expected_current": {
+        "name": "UsageNow: Monitor de uso IA",
+        "subtitle": "Límites Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api"
+      }
+    },
+    "es-MX": {
+      "name": "UsageNow: Uso Claude y Codex",
+      "subtitle": "Límites IA: Copilot y Gemini",
+      "keywords": "cuota,contador,reinicio,restante,semanal,horas,alerta,límite,premium,requests,watch",
+      "expected_current": {
+        "name": "UsageNow: Monitor de uso IA",
+        "subtitle": "Límites Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api"
+      }
+    },
+    "fi": {
+      "name": "UsageNow: Claude/Codex-käyttö",
+      "subtitle": "AI-rajat: Copilot ja Gemini",
+      "keywords": "tekoäly,kulutus,kiintiö,laskuri,jäljellä,viikko,tunnit,ilmoitus,nollaus,seuranta,code",
+      "expected_current": {
+        "name": "UsageNow: Tekoälyn käyttö",
+        "subtitle": "Claude, Codex ja Copilot rajat",
+        "keywords": "ai,code,dev,kehittäjä,usage,tracker,kulutus,kiintiö,laskuri,token,widget,reset,quota,meter,monitor"
+      }
+    },
+    "fr-CA": {
+      "name": "UsageNow : usage Claude, Codex",
+      "subtitle": "Quota IA : Copilot et Gemini",
+      "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,plafond",
+      "expected_current": {
+        "name": "UsageNow : Suivi d'usage IA",
+        "subtitle": "Limites Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api"
+      }
+    },
+    "fr-FR": {
+      "name": "UsageNow : usage Claude, Codex",
+      "subtitle": "Quota IA : Copilot et Gemini",
+      "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,plafond",
+      "expected_current": {
+        "name": "UsageNow : Suivi d'usage IA",
+        "subtitle": "Limites Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api"
+      }
+    },
+    "gu-IN": {
+      "name": "UsageNow: Claude/Codex વપરાશ",
+      "subtitle": "AI મર્યાદા: Copilot, Gemini",
+      "keywords": "ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,ટ્રેકર",
+      "expected_current": {
+        "name": "UsageNow: AI વપરાશ ટ્રેકર",
+        "subtitle": "Claude, Codex, Copilot મર્યાદા",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,cap,plan"
+      }
+    },
+    "he": {
+      "name": "UsageNow: שימוש Claude/Codex",
+      "subtitle": "מגבלות AI: Copilot, Gemini",
+      "keywords": "קלוד,מעקב,טוקן,מכסה,מונה,איפוס,נותר,שבועי,שעות,התראה,וידג׳ט,code,left",
+      "expected_current": {
+        "name": "UsageNow: מעקב שימוש ב‑AI",
+        "subtitle": "מגבלות Claude, Codex, Copilot",
+        "keywords": "code,dev,מתכנת,usage,tracker,טוקן,מכסה,מונה,token,וידג׳ט,widget,quota,meter,monitor,llm,איפוס,סשן"
+      }
+    },
+    "hi": {
+      "name": "UsageNow: Claude, Codex उपयोग",
+      "subtitle": "AI लिमिट: Copilot, Gemini",
+      "keywords": "टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,ट्रैकर,सीमा,अलर्ट,code",
+      "expected_current": {
+        "name": "UsageNow: AI उपयोग ट्रैकर",
+        "subtitle": "Claude, Codex, Copilot लिमिट",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,llm"
+      }
+    },
+    "hr": {
+      "name": "UsageNow: Claude/Codex limiti",
+      "subtitle": "AI potrošnja: Copilot, Gemini",
+      "keywords": "kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,left",
+      "expected_current": {
+        "name": "UsageNow: Potrošnja AI-ja",
+        "subtitle": "Limiti Claude, Codex, Copilot",
+        "keywords": "code,dev,programer,usage,tracker,kvota,brojač,token,widget,reset,quota,meter,monitor,llm,sesija,api"
+      }
+    },
+    "hu": {
+      "name": "UsageNow: Claude/Codex limitek",
+      "subtitle": "MI-használat: Copilot, Gemini",
+      "keywords": "fogyasztás,kvóta,számláló,maradék,heti,órák,értesítés,követés,ai,code",
+      "expected_current": {
+        "name": "UsageNow: MI-használat követő",
+        "subtitle": "Claude, Codex, Copilot limitek",
+        "keywords": "ai,code,dev,fejlesztő,usage,tracker,fogyasztás,kvóta,számláló,token,widget,reset,quota,meter,monitor"
+      }
+    },
+    "id": {
+      "name": "UsageNow: Batas Claude & Codex",
+      "subtitle": "Pemakaian AI: Copilot, Gemini",
+      "keywords": "penggunaan,kuota,penghitung,sisa,mingguan,jam,notifikasi,pelacak,pantau,code",
+      "expected_current": {
+        "name": "UsageNow: Pelacak Pemakaian AI",
+        "subtitle": "Batas Claude, Codex, Copilot",
+        "keywords": "code,dev,developer,usage,tracker,kuota,penggunaan,penghitung,token,widget,reset,quota,meter,monitor"
+      }
+    },
+    "it": {
+      "name": "UsageNow: Uso Claude e Codex",
+      "subtitle": "Utilizzo IA: Copilot e Gemini",
+      "keywords": "consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto",
+      "expected_current": {
+        "name": "UsageNow: Monitor utilizzo IA",
+        "subtitle": "Limiti Claude, Codex e Copilot",
+        "keywords": "ai,code,dev,sviluppatore,usage,tracker,consumo,quota,contatore,token,widget,reset,llm,meter,sessione"
+      }
+    },
+    "ja": {
+      "name": "UsageNow：Claude・Codex対応 使用量と上限",
+      "subtitle": "AIのリセット時刻を通知・Copilot/Gemini",
+      "keywords": "code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,使用率,アラート,クォータ",
+      "expected_current": {
+        "name": "UsageNow：AI使用量トラッカー",
+        "subtitle": "Claude・Codex・Copilot・Gemini残量",
+        "keywords": "code,dev,開発者,エンジニア,制限,上限,トークン,usage,tracker,meter,quota,token,ウィジェット,リセット,利用状況,残り,カウントダウン,生成ai,週間,管理"
+      }
+    },
+    "kn-IN": {
+      "name": "UsageNow: Claude/Codex ಬಳಕೆ",
+      "subtitle": "AI ಮಿತಿ: Copilot, Gemini",
+      "keywords": "ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,ಟ್ರ್ಯಾಕರ್,left",
+      "expected_current": {
+        "name": "UsageNow: AI ಬಳಕೆ ಟ್ರ್ಯಾಕರ್",
+        "subtitle": "Claude, Codex, Copilot ಮಿತಿ",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,api,stats,llm"
+      }
+    },
+    "ko": {
+      "name": "UsageNow for Claude·Codex 사용량",
+      "subtitle": "AI 한도·리셋 시간 알림·Copilot·Gemini",
+      "keywords": "클로드,코덱스,코파일럿,제미나이,트래커,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터",
+      "expected_current": {
+        "name": "UsageNow: AI 사용량 트래커",
+        "subtitle": "Claude·Codex·Copilot·Gemini 한도",
+        "keywords": "code,dev,개발자,usage,tracker,meter,quota,token,토큰,할당량,리셋,초기화,남은양,잔여,위젯,카운트다운,생성형,주간,세션,코딩,에이전트,llm,모니터"
+      }
+    },
+    "ml-IN": {
+      "name": "UsageNow: Claude/Codex ഉപയോഗം",
+      "subtitle": "AI പരിധി: Copilot, Gemini",
+      "keywords": "ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,ട്രാക്കർ,lockscreen,gauge",
+      "expected_current": {
+        "name": "UsageNow: AI ഉപയോഗ ട്രാക്കർ",
+        "subtitle": "Claude, Codex, Copilot പരിധി",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,limit"
+      }
+    },
+    "mr-IN": {
+      "name": "UsageNow: Claude/Codex वापर",
+      "subtitle": "AI मर्यादा: Copilot, Gemini",
+      "keywords": "ट्रॅकर,शिल्लक,आठवडा,तास,सूचना,cooldown,dashboard",
+      "expected_current": {
+        "name": "UsageNow: AI वापर ट्रॅकर",
+        "subtitle": "Claude, Codex, Copilot मर्यादा",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,विजेट,रीसेट,साप्ताहिक,बाकी,credits,llm"
+      }
+    },
+    "ms": {
+      "name": "UsageNow: Had Claude & Codex",
+      "subtitle": "Penggunaan AI: Copilot, Gemini",
+      "keywords": "kuota,pembilang,baki,mingguan,jam,notifikasi,penjejak,pantau,guna,code",
+      "expected_current": {
+        "name": "UsageNow: Penjejak Guna AI",
+        "subtitle": "Had Claude, Codex, Copilot",
+        "keywords": "code,dev,pembangun,usage,tracker,kuota,penggunaan,pembilang,token,widget,reset,quota,meter,monitor"
+      }
+    },
+    "nl-NL": {
+      "name": "UsageNow: Claude/Codex-gebruik",
+      "subtitle": "AI-limiet: Copilot en Gemini",
+      "keywords": "verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie",
+      "expected_current": {
+        "name": "UsageNow: AI-gebruik tracker",
+        "subtitle": "Claude, Codex & Copilot limiet",
+        "keywords": "code,dev,ontwikkelaar,usage,verbruik,quota,teller,token,widget,reset,meter,monitor,llm,aftellen,api"
+      }
+    },
+    "no": {
+      "name": "UsageNow: Claude/Codex-forbruk",
+      "subtitle": "AI-grenser: Copilot og Gemini",
+      "keywords": "kvote,teller,gjenstår,ukentlig,timer,varsel,nullstill,sporing,økt,code",
+      "expected_current": {
+        "name": "UsageNow: AI-forbruk tracker",
+        "subtitle": "Claude, Codex, Copilot grenser",
+        "keywords": "code,dev,utvikler,usage,bruk,kvote,quota,teller,token,widget,reset,meter,monitor,llm,nedtelling,økt"
+      }
+    },
+    "or-IN": {
+      "name": "UsageNow: Claude/Codex ବ୍ୟବହାର",
+      "subtitle": "AI ସୀମା: Copilot, Gemini",
+      "keywords": "ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,ଟ୍ରାକର",
+      "expected_current": {
+        "name": "UsageNow: AI ବ୍ୟବହାର ଟ୍ରାକର",
+        "subtitle": "Claude, Codex, Copilot ସୀମା",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,coder,llm"
+      }
+    },
+    "pa-IN": {
+      "name": "UsageNow: Claude/Codex ਵਰਤੋਂ",
+      "subtitle": "AI ਸੀਮਾ: Copilot, Gemini",
+      "keywords": "ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,ਟ੍ਰੈਕਰ",
+      "expected_current": {
+        "name": "UsageNow: AI ਵਰਤੋਂ ਟ੍ਰੈਕਰ",
+        "subtitle": "Claude, Codex, Copilot ਸੀਮਾ",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,rate,timer"
+      }
+    },
+    "pl": {
+      "name": "UsageNow: Zużycie Claude/Codex",
+      "subtitle": "Limity AI: Copilot i Gemini",
+      "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code",
+      "expected_current": {
+        "name": "UsageNow: Zużycie AI tracker",
+        "subtitle": "Limity Claude, Codex, Copilot",
+        "keywords": "code,dev,programista,usage,quota,licznik,token,widget,reset,meter,monitor,llm,odliczanie,limit,sesja"
+      }
+    },
+    "pt-BR": {
+      "name": "UsageNow: Uso Claude e Codex",
+      "subtitle": "Limites IA: Copilot e Gemini",
+      "keywords": "consumo,cota,contador,reinício,restante,semanal,horas,alerta,rastreador,medidor,sessão",
+      "expected_current": {
+        "name": "UsageNow: Monitor de uso de IA",
+        "subtitle": "Limites Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,desenvolvedor,usage,tracker,consumo,cota,contador,token,widget,reset,llm,meter,sessão"
+      }
+    },
+    "pt-PT": {
+      "name": "UsageNow: Uso Claude e Codex",
+      "subtitle": "Limites IA: Copilot e Gemini",
+      "keywords": "consumo,contador,restante,semanal,horas,alerta,sessão,monitorizar,rastreador,code",
+      "expected_current": {
+        "name": "UsageNow: Monitor de uso de IA",
+        "subtitle": "Limites Claude, Codex, Copilot",
+        "keywords": "ai,code,dev,programador,usage,tracker,consumo,quota,contador,token,widget,reset,llm,meter,sessão,api"
+      }
+    },
+    "ro": {
+      "name": "UsageNow: Consum Claude/Codex",
+      "subtitle": "Limite AI: Copilot și Gemini",
+      "keywords": "cotă,contor,rămas,săptămânal,ore,alertă,resetare,urmărire,sesiune,code",
+      "expected_current": {
+        "name": "UsageNow: Consum AI tracker",
+        "subtitle": "Limite Claude, Codex, Copilot",
+        "keywords": "code,dev,dezvoltator,usage,quota,cotă,contor,token,widget,reset,meter,monitor,llm,numărătoare,rămas"
+      }
+    },
+    "ru": {
+      "name": "UsageNow: Claude/Codex лимиты",
+      "subtitle": "Расход ИИ: Copilot и Gemini",
+      "keywords": "клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,лимит,code",
+      "expected_current": {
+        "name": "UsageNow: Лимиты ИИ и расход",
+        "subtitle": "Claude, Codex, Copilot, Gemini",
+        "keywords": "ai,code,dev,разработчик,usage,tracker,нейросеть,токены,квота,счетчик,token,виджет,quota,meter,llm"
+      }
+    },
+    "sk": {
+      "name": "UsageNow: Claude/Codex limity",
+      "subtitle": "Spotreba AI: Copilot a Gemini",
+      "keywords": "využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code",
+      "expected_current": {
+        "name": "UsageNow: AI limity a spotreba",
+        "subtitle": "Claude, Codex, Copilot, Gemini",
+        "keywords": "code,dev,vývojár,usage,tracker,využitie,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm"
+      }
+    },
+    "sl-SI": {
+      "name": "UsageNow: Claude/Codex limiti",
+      "subtitle": "Poraba UI: Copilot in Gemini",
+      "keywords": "kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,left",
+      "expected_current": {
+        "name": "UsageNow: Poraba UI in limiti",
+        "subtitle": "Claude, Codex, Copilot, Gemini",
+        "keywords": "ai,code,dev,razvijalec,usage,tracker,kvota,števec,token,pripomoček,widget,reset,quota,meter,monitor"
+      }
+    },
+    "sv": {
+      "name": "UsageNow: Claude/Codex-gränser",
+      "subtitle": "AI-användning: Copilot, Gemini",
+      "keywords": "förbrukning,kvot,mätare,kvar,vecka,timmar,avisering,nollställ,spårning,code",
+      "expected_current": {
+        "name": "UsageNow: AI-användning",
+        "subtitle": "Claude, Codex, Copilot gränser",
+        "keywords": "code,dev,utvecklare,usage,tracker,förbrukning,kvot,quota,mätare,token,widget,reset,meter,monitor,llm"
+      }
+    },
+    "ta-IN": {
+      "name": "UsageNow: Claude/Codex வரம்பு",
+      "subtitle": "AI பயன்பாடு: Copilot, Gemini",
+      "keywords": "டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,மீதம்,டிராக்கர்",
+      "expected_current": {
+        "name": "UsageNow: AI பயன்பாடு",
+        "subtitle": "Claude, Codex, Copilot வரம்பு",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,llm"
+      }
+    },
+    "te-IN": {
+      "name": "UsageNow: Claude/Codex పరిమితి",
+      "subtitle": "AI వినియోగం: Copilot, Gemini",
+      "keywords": "టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,ట్రాకర్",
+      "expected_current": {
+        "name": "UsageNow: AI వినియోగ ట్రాకర్",
+        "subtitle": "Claude, Codex, Copilot పరిమితి",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,hours"
+      }
+    },
+    "th": {
+      "name": "UsageNow: ใช้งาน Claude/Codex",
+      "subtitle": "ลิมิต AI: Copilot, Gemini",
+      "keywords": "โควตา,โทเคน,วิดเจ็ต,รีเซ็ต,คงเหลือ,รายสัปดาห์,ชั่วโมง,แจ้งเตือน,ติดตาม,จำกัด,code",
+      "expected_current": {
+        "name": "UsageNow: ติดตามการใช้ AI",
+        "subtitle": "ลิมิต Claude, Codex, Copilot",
+        "keywords": "code,dev,นักพัฒนา,usage,tracker,meter,quota,token,monitor,widget,llm,reset,limit,โควตา,โทเคน,วิดเจ็ต"
+      }
+    },
+    "tr": {
+      "name": "UsageNow: Claude/Codex limiti",
+      "subtitle": "AI kullanımı: Copilot, Gemini",
+      "keywords": "yapay,zeka,kota,sayaç,kalan,haftalık,saat,bildirim,sıfırlama,takip,code",
+      "expected_current": {
+        "name": "UsageNow: Yapay Zekâ Kullanımı",
+        "subtitle": "Claude, Codex, Copilot limiti",
+        "keywords": "ai,code,dev,geliştirici,kullanım,usage,tracker,kota,sayaç,token,widget,reset,sıfırlama,quota,meter"
+      }
+    },
+    "uk": {
+      "name": "UsageNow: Claude/Codex ліміти",
+      "subtitle": "Витрата ШІ: Copilot і Gemini",
+      "keywords": "клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code",
+      "expected_current": {
+        "name": "UsageNow: Ліміти ШІ та витрата",
+        "subtitle": "Claude, Codex, Copilot, Gemini",
+        "keywords": "ai,code,dev,розробник,usage,tracker,нейромережа,токени,квота,лічильник,token,віджет,quota,meter,llm"
+      }
+    },
+    "ur-PK": {
+      "name": "UsageNow: Claude/Codex استعمال",
+      "subtitle": "AI کی حد: Copilot, Gemini",
+      "keywords": "ٹوکن,کوٹہ,ویجیٹ,باقی,ٹریکر,نگرانی,code,left",
+      "expected_current": {
+        "name": "UsageNow: AI استعمال ٹریکر",
+        "subtitle": "Claude, Codex, Copilot کی حد",
+        "keywords": "usage,tracker,code,dev,developer,quota,token,widget,reset,meter,monitor,llm,limit,ٹوکن,کوٹہ,ویجیٹ"
+      }
+    },
+    "vi": {
+      "name": "UsageNow: Hạn mức Claude/Codex",
+      "subtitle": "Theo dõi AI: Copilot, Gemini",
+      "keywords": "giới,dùng,sử,dụng,lượng,còn,lại,đặt,tuần,giờ,thông,báo,tiện,ích,đếm,phiên,code,left",
+      "expected_current": {
+        "name": "UsageNow: Theo dõi dùng AI",
+        "subtitle": "Hạn mức Claude, Codex, Copilot",
+        "keywords": "code,dev,lập trình,usage,tracker,token,widget,quota,meter,monitor,llm,reset,bộ đếm,đặt lại,phiên,api"
+      }
+    },
+    "zh-Hans": {
+      "name": "UsageNow for Claude、Codex 用量额度",
+      "subtitle": "AI 剩余追踪、重置倒计时提醒・Copilot、Gemini",
+      "keywords": "配额,限额,限制,token,code,监控,小组件,通知,每周,5小时,锁屏,上限,多账号,统计,大模型,lockscreen,gauge",
+      "expected_current": {
+        "name": "UsageNow：AI 用量追踪器",
+        "subtitle": "Claude、Codex、Copilot、Gemini 额度",
+        "keywords": "code,dev,开发者,程序员,usage,tracker,meter,quota,token,配额,限额,剩余,重置,倒计时,小组件,监控,统计,每周,编程,人工智能,大模型,智能体,llm,代码"
+      }
+    },
+    "zh-Hant": {
+      "name": "UsageNow for Claude、Codex 用量額度",
+      "subtitle": "AI 剩餘追蹤、重置倒數提醒・Copilot、Gemini",
+      "keywords": "使用量,限額,限制,配額,token,code,監控,小工具,通知,每週,5小時,鎖定畫面,上限,重設,多帳號,統計",
+      "expected_current": {
+        "name": "UsageNow：AI 用量與額度追蹤",
+        "subtitle": "Claude、Codex、Copilot 重置倒數",
+        "keywords": "code,dev,開發者,工程師,usage,tracker,meter,quota,token,使用量,限額,配額,限制,剩餘,倒數計時,小工具,監控,每週,程式,人工智慧,大型語言模型,llm"
+      }
+    }
+  },
+  "changed_locales": 50
+}

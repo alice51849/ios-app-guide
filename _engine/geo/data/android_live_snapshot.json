@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-13T16:44:53+0800",
- "count": 28,
- "content_sha256": "4c4d1157e090ce85efced879f9b48c4fc6399cc989903f7c58b6f74425bdd5bd",
+ "source_generated": "2026-10-13T18:49:04+0800",
+ "count": 31,
+ "content_sha256": "9ac1ba71a99fc089a0af08a905ad000afe957fca380154cab8b5bc182c68ad8f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -170,6 +170,27 @@
     "zh-TW": {
      "title": "HoursTag Lite",
      "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，讓每筆花費更有意識"
+    }
+   }
+  },
+  "lockhour": {
+   "ios_app_id": "6780107485",
+   "ios_name": "LockHour Pro",
+   "android_folder": "10_LockHourPro",
+   "package": "com.focuslockpro.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.focuslockpro.app",
+   "paid": false,
+   "first_seen": "2026-10-13T18:49:04+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "LockHour Pro",
+     "short_description": "Digital Detox Focus Sessions"
+    },
+    "zh-TW": {
+     "title": "LockHour Pro",
+     "short_description": "數位專注管理與應用鎖定"
     }
    }
   },
@@ -362,6 +383,27 @@
     }
    }
   },
+  "mochidonestamp": {
+   "ios_app_id": "6790800323",
+   "ios_name": "Mochi DoneStamp",
+   "android_folder": "28_MochiDoneStamp",
+   "package": "com.alice51849.MochiDoneStamp",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp",
+   "paid": false,
+   "first_seen": "2026-10-13T18:49:04+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Mochi DoneStamp: Last Time",
+     "short_description": "When Did I Last? Days Since"
+    },
+    "zh-TW": {
+     "title": "Mochi DoneStamp：上次何時",
+     "short_description": "上次何時・經過天數與循環提醒"
+    }
+   }
+  },
   "photocream": {
    "ios_app_id": "6781808054",
    "ios_name": "PhotoCream",
@@ -443,6 +485,27 @@
     "zh-TW": {
      "title": "Snapport: 護照證件照",
      "short_description": "在家製作護照證件照,內建多地區尺寸範本與列印排版"
+    }
+   }
+  },
+  "snapportlite": {
+   "ios_app_id": "6792856304",
+   "ios_name": "Snapport Lite",
+   "android_folder": "34_SnapportLite",
+   "package": "com.alice51849.SnapportLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite",
+   "paid": false,
+   "first_seen": "2026-10-13T18:49:04+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Snapport Lite",
+     "short_description": "Passport & ID Photo Maker"
+    },
+    "zh-TW": {
+     "title": "Snapport Lite",
+     "short_description": "護照證件大頭照製作"
     }
    }
   },

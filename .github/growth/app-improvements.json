@@ -867,7 +867,9 @@
           "detail": "值在 .github/growth/aso/claudeusagemini-asc-payload.json。先備份 ASC 現值，只改 name、subtitle、keywords；需要新版本時先建版本記錄並回報，不自行上傳 build。被退件就改回 current.name。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "done",
+          "done_at": "2026-10-13T17:12:33Z",
+          "result": "ASC 已建立 1.0.2 (PREPARE_FOR_SUBMISSION)，50 語系 name／subtitle／keywords 已套用；備份見 aso/claudeusagemini-asc-backup-*.json；待 Caitlyn 上傳 build 送審"
         },
         {
           "id": "claudeusagemini-02",
@@ -2021,7 +2023,9 @@
           "detail": "Cloudflare 把 beacon.min.js 換成新版（v4bc70e2…、新的 integrity），00_GrowthEngine geo/deployment_generation.py 的 EDGE_BEACON 還是舊版，verify-live 對 open.cait518.cc 每頁都判定內容不符。改成接受同一 token 的 static.cloudflareinsights.com beacon（或更新為新值），跑測試、鏡像到 Guide。正式站內容已正確上線，影響的是驗證與後續 feed 通知步驟。",
           "owner": "local",
           "impact": "high",
-          "status": "todo"
+          "status": "done",
+          "done_at": "2026-10-13T17:12:33Z",
+          "result": "EDGE_BEACON 已更新（GE daf75313／Guide a095464b）；verify-live 通過"
         },
         {
           "id": "mochidonestamp-04",

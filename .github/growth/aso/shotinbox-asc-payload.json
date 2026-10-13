@@ -1,0 +1,533 @@
+{
+  "app": "ShotInbox AI: Sort Screenshots",
+  "app_store_id": "6802166527",
+  "apply_fields": [
+    "subtitle",
+    "keywords"
+  ],
+  "generated": "2026-10-13T16:33:40Z",
+  "source": ".github/growth/aso/shotinbox.json（模型 1/2 調教；須經第二個模型驗證後才套用）",
+  "bundle_note": "只送 subtitle 與 keywords；name 欄位照抄線上現值，不改標題。",
+  "expected_current_note": "expected_current 的 name、subtitle 是 2026-10-13 線上產品頁實測值；keywords 取自資料檔（App Store 不公開）。標了 expected_current_keywords_verified=false 的 18 個語系，資料檔名稱／副標已過期，ASC 關鍵字很可能不同：這些語系只比對 name、subtitle；name 不同就停，keywords 不同屬預期，照樣以 recommended 覆蓋。",
+  "locales": {
+    "ar-SA": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "تنظيم لقطات الشاشة وبحث OCR",
+      "keywords": "سكرين شوت,سكرينشوت,منظم,حذف,مسح,نص,استخراج,فرز,تصنيف,إدارة,ترتيب,العثور",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "تنظيم لقطات الشاشة وبحث OCR",
+        "keywords": "منظم لقطات الشاشة,تنظيف الصور,متشابهة,مكررة,استخراج النص,فرز بالتاريخ,حماية,معرض,ألبوم,خصوصية,بحث"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "bn-BD": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "স্ক্রিনশট গোছানো ও OCR সার্চ",
+      "keywords": "ম্যানেজার,অর্গানাইজার,ডিলিট,মুছুন,লেখা,টেক্সট,খুঁজুন,সাজানো,ক্যাটাগরি,তারিখ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "স্ক্রিনশট গোছানো ও OCR সার্চ",
+        "keywords": "স্ক্রিনশট ম্যানেজার,ফটো ক্লিনার,ডুপ্লিকেট,সদৃশ,লেখা খোঁজা,তারিখ অনুযায়ী,গোপন,গ্যালারি,অ্যালবাম"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "ca": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Ordena captures i cerca text",
+      "keywords": "pantalla,organitzador,gestor,esborrar,eliminar,neteja,OCR,categories,troba,buscar,classifica",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Ordena captures i cerca text",
+        "keywords": "fotos,duplicades,neteja,pantalla,OCR,categories,cronologia,similars,privadesa,offline,compra única"
+      }
+    },
+    "cs": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizátor snímků obrazovky",
+      "keywords": "snímky,snímek,smazat,mazání,třídění,správce,hledání,vyhledávání,najít,text,textu,OCR,kategorie",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Organizátor snímků obrazovky",
+        "keywords": "čistič,fotek,duplicitní,podobné,obrázky,hledání,textu,galerie,alba,mazání,úložiště,OCR,photo cleaner"
+      }
+    },
+    "da": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Søg og sorter skærmbilleder",
+      "keywords": "skærmbillede,slet,sletning,oprydning,rydde,organisering,find,tekst,tekstgenkendelse,OCR,kategorier",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Søg og sorter skærmbilleder",
+        "keywords": "fotos,dubletter,oprydning,OCR,tekstgenkendelse,kategorier,tidslinje,lignende,privat,engangskøb,tags"
+      }
+    },
+    "de-DE": {
+      "name": "ShotInbox AI: Screenshots",
+      "subtitle": "Sortieren, Suchen & Löschen",
+      "keywords": "text,ocr,ordnen,aufräumen,organisieren,verwalten,finden,bildschirmfotos,entfernen,ausmisten",
+      "expected_current": {
+        "name": "ShotInbox AI: Screenshots",
+        "subtitle": "OCR-Suche & Fotos aufräumen",
+        "keywords": "ordner,organizer,reiniger,duplikate,ähnliche,bilder,galerie,speicher,text,belege,links,notizen,qr"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "el": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Βρες και οργάνωσε στιγμιότυπα",
+      "keywords": "οθόνης,στιγμιότυπο,διαγραφή,καθαρισμός,οργάνωση,ταξινόμηση,διαχείριση,αναζήτηση,κείμενο,εύρεση,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Βρες και οργάνωσε στιγμιότυπα",
+        "keywords": "οθόνης,φωτογραφίες,διπλότυπες,καθαρισμός,OCR,κείμενο,αναζήτηση,χρονολόγιο,παρόμοιες,εφάπαξ αγορά"
+      }
+    },
+    "en-AU": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organiser, Search & Delete",
+      "keywords": "screengrab,screencap,clear,finder,categorise,organise,cleaner,manager,text,ocr,find,cleanup,remove",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Find Text & Declutter Photos",
+        "keywords": "ocr,search,cleaner,organiser,duplicates,similar,camera,roll,storage,receipts,links,private,offline"
+      }
+    },
+    "en-CA": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizer, Search & Delete",
+      "keywords": "cleaner,manager,text,ocr,find,organize,cleanup,remove,old,bulk,archive,categorize,sorter,tidy",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "OCR Search & Clean Camera Roll",
+        "keywords": "organizer,photos,duplicates,similar,text,storage,album,receipts,links,notes,private,offline,timeline"
+      }
+    },
+    "en-GB": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organiser, Search & Delete",
+      "keywords": "screengrab,screencap,clear,finder,categorise,organise,cleaner,manager",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "OCR Search & Tidy Camera Roll",
+        "keywords": "organiser,cleaner,photos,duplicates,similar,text,storage,album,receipts,links,notes,offline,private"
+      }
+    },
+    "en-US": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizer, Search & Delete",
+      "keywords": "cleaner,manager,text,ocr,find,organize,cleanup,remove,old,bulk,archive,categorize,sorter,tidy",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "OCR Search & Photo Cleaner",
+        "keywords": "organizer,manager,duplicate,similar,text,receipts,links,storage,album,camera,roll,offline,private"
+      }
+    },
+    "es-ES": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Ordena, busca y borra capturas",
+      "keywords": "pantalla,captura,pantallazo,organizador,organizar,gestor,borrar,eliminar,limpiar,texto,ocr,encontrar",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Busca texto y limpia tus fotos",
+        "keywords": "capturas,pantalla,organizador,duplicadas,similares,galería,carrete,espacio,ocr,recibos,enlaces,notas"
+      }
+    },
+    "es-MX": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Ordena, busca y borra capturas",
+      "keywords": "pantalla,captura,organizador,organizar,gestor,borrar,eliminar,limpiar,texto,ocr,encontrar",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Busca texto y ordena tus fotos",
+        "keywords": "capturas,pantalla,limpiador,duplicadas,repetidas,similares,galería,memoria,ocr,recibos,enlaces,notas"
+      }
+    },
+    "fi": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Löydä ja järjestä näyttökuvat",
+      "keywords": "kuvakaappaus,kuvakaappaukset,näyttökuva,poista,siivous,lajittelu,hallinta,haku,tekstihaku,teksti,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Löydä ja järjestä näyttökuvat",
+        "keywords": "kuvakaappaus,kaksoiskappaleet,siivous,OCR,tekstihaku,kategoriat,aikajana,samanlaiset,kertamaksu"
+      }
+    },
+    "fr-CA": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "OCR: recherchez vos captures",
+      "keywords": "écran,capture,supprimer,effacer,trier,classement,organiser,gestionnaire,nettoyeur,texte,trouver",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "OCR: recherchez vos captures",
+        "keywords": "écran,photos,classement,nettoyeur,doublons,similaires,texte,pellicule,stockage,reçus,liens,notes"
+      }
+    },
+    "fr-FR": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Captures: recherche OCR privée",
+      "keywords": "écran,capture,supprimer,effacer,trier,classer,organisateur,gestionnaire,nettoyeur,texte,trouver",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Captures: recherche OCR privée",
+        "keywords": "écran,photos,organisateur,nettoyeur,doublons,similaires,texte,galerie,stockage,reçus,liens,notes"
+      }
+    },
+    "gu-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "સ્ક્રીનશૉટ ગોઠવણી અને OCR શોધ",
+      "keywords": "મેનેજર,ઓર્ગેનાઇઝર,ડિલીટ,ટેક્સ્ટ,લખાણ,વર્ગીકરણ,તારીખ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "સ્ક્રીનશૉટ ગોઠવણી અને OCR શોધ",
+        "keywords": "સ્ક્રીનશૉટ મેનેજર,ફોટો ક્લીનર,ડ્યૂપ્લિકેટ,સરખા,ટેક્સ્ટ શોધ,તારીખ મુજબ,ખાનગી,ગૅલેરી,ઍલ્બમ,ઓફલાઇન"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "he": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "מיון צילומי מסך וחיפוש OCR",
+      "keywords": "צילום,סקרינשוט,צילומסך,מנהל,מחיקה,למחוק,טקסט,ארגון,סידור,קטגוריות,איתור,ניקוי",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "מיון צילומי מסך וחיפוש OCR",
+        "keywords": "מנהל צילומי מסך,ניקוי תמונות,כפולות,דומות,חיפוש טקסט,מיון לפי תאריך,נעילה,גלריה,אלבום,פרטיות,מקומי"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "hi": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "स्क्रीनशॉट छँटाई और OCR खोज",
+      "keywords": "मैनेजर,ऑर्गनाइज़र,डिलीट,हटाएं,टेक्स्ट,व्यवस्थित,श्रेणी,ढूंढें,तारीख,स्क्रीन शॉट,सफाई",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "स्क्रीनशॉट छँटाई और OCR खोज",
+        "keywords": "स्क्रीनशॉट मैनेजर,फ़ोटो क्लीनर,डुप्लिकेट,मिलती-जुलती,टेक्स्ट खोज,तारीख़ क्रम,निजी लॉक,गैलरी,ऐल्बम"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "hr": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizator snimki zaslona",
+      "keywords": "snimka,snimke,zaslon,brisanje,obriši,čišćenje,sortiranje,upravitelj,pretraga,pronađi,tekst,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Organizator snimki zaslona",
+        "keywords": "čišćenje,fotografija,duplikati,slične,slike,pretraga,teksta,galerija,brisanje,OCR,photo cleaner"
+      }
+    },
+    "hu": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Képernyőképek rendszerezése",
+      "keywords": "képernyőkép,képernyőfotó,törlés,tisztító,rendezés,rendező,kezelő,keresés,szövegkeresés,szöveg,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Képernyőképek rendszerezése",
+        "keywords": "tárhely,tisztító,duplikált,hasonló,fotók,szövegkeresés,galéria,törlés,idővonal,OCR,photo cleaner"
+      }
+    },
+    "id": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Tangkapan layar mudah dicari",
+      "keywords": "pengelola,pembersih,hapus,massal,atur,rapikan,kelola,cari,temukan,teks,kategori,OCR,urutkan",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Tangkapan layar mudah dicari",
+        "keywords": "foto,galeri,pengelola,pembersih,duplikat,serupa,hapus,OCR,pindai teks,urut waktu,offline,privasi"
+      }
+    },
+    "it": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Trova testo, ordina e cancella",
+      "keywords": "screenshot,schermata,schermate,cattura,organizzatore,gestore,elimina,cerca,ricerca,pulizia,ocr",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Cerca testo e pulisci le foto",
+        "keywords": "organizzatore,duplicate,simili,galleria,spazio,memoria,ocr,scontrini,link,note,cronologia,album"
+      }
+    },
+    "ja": {
+      "name": "ShotInbox AI：スクショ整理",
+      "subtitle": "OCR文字検索・自動仕分け・削除で片付け",
+      "keywords": "スクリーンショット,管理,分類,認識,テキスト,探す,見つける,一括,まとめて,断捨離,掃除,消す,整頓,収納,振り分け,スマホ",
+      "expected_current": {
+        "name": "ShotInbox AI：スクショ整理",
+        "subtitle": "スクショ分類・OCR検索・タイムライン",
+        "keywords": "スクリーンショット,写真,整理,アルバム,重複,類似,削除,画像,管理,クリーナー,カメラロール,文字認識,一括選択,容量節約,端末内,プライバシー,買い切り,自動仕分け,ギャラリー,レシート"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "kn-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ವಿಂಗಡಣೆ, OCR",
+      "keywords": "ಪಠ್ಯ,ಹುಡುಕು,ಹುಡುಕಾಟ,ಅಳಿಸು,ಡಿಲೀಟ್,ಮ್ಯಾನೇಜರ್,ವರ್ಗ,ದಿನಾಂಕ,ಸಂಘಟಕ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ವಿಂಗಡಣೆ, OCR",
+        "keywords": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್,ವಿಂಗಡಣೆ,ಫೋಟೋ ಕ್ಲೀನರ್,ಡ್ಯೂಪ್ಲಿಕೇಟ್,ಹೋಲುವ,ಪಠ್ಯ ಹುಡುಕು,ದಿನಾಂಕ,ಖಾಸಗಿ,ಗ್ಯಾಲರಿ,ಆಫ್‌ಲೈನ್"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "ko": {
+      "name": "ShotInbox AI: 스크린샷 정리",
+      "subtitle": "캡처 텍스트 검색·자동 분류·삭제",
+      "keywords": "스샷,캡쳐,화면,관리,글자,문자,OCR,찾기,보관함,일괄,청소,정돈,지우기,인식,아카이브",
+      "expected_current": {
+        "name": "ShotInbox AI: 스크린샷 정리",
+        "subtitle": "자동 분류·OCR 검색·타임라인",
+        "keywords": "캡처,사진,정리,앨범,관리,중복,유사,이미지,삭제,갤러리,청소기,문자인식,텍스트추출,일괄선택,용량확보,기기내처리,개인정보보호,평생소장,영수증,티켓,지도,채팅,레시피,QR,보관"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "ml-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "സ്ക്രീൻഷോട്ട് ക്രമീകരണം, OCR",
+      "keywords": "ടെക്സ്റ്റ്,തിരയൽ,തിരയുക,ഡിലീറ്റ്,നീക്കം,മാനേജർ,വിഭാഗം,തീയതി",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "സ്ക്രീൻഷോട്ട് ക്രമീകരണം, OCR",
+        "keywords": "സ്ക്രീൻഷോട്ട്,ക്രമീകരണം,ഫോട്ടോ ക്ലീനർ,ഡ്യൂപ്ലിക്കേറ്റ്,സമാന,ടെക്സ്റ്റ് തിരയൽ,തീയതി,സ്വകാര്യ,ഗാലറി"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "mr-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "स्क्रीनशॉट वर्गीकरण व OCR शोध",
+      "keywords": "मॅनेजर,व्यवस्थापक,डिलीट,हटवा,मजकूर,शोधा,श्रेणी,तारखेनुसार,स्क्रीन शॉट",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "स्क्रीनशॉट वर्गीकरण व OCR शोध",
+        "keywords": "स्क्रीनशॉट मॅनेजर,फोटो क्लीनर,डुप्लिकेट,सारखे,मजकूर शोध,तारखेनुसार,खासगी लॉक,गॅलरी,अल्बम,ऑफलाइन"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "ms": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Tangkapan skrin mudah dicari",
+      "keywords": "pengurus,pembersih,padam,susun,urus,kemas,cari,teks,kategori,OCR,pukal",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Tangkapan skrin mudah dicari",
+        "keywords": "gambar,galeri,pengurus,pembersih,pendua,serupa,padam,OCR,imbas teks,garis masa,luar talian,privasi"
+      }
+    },
+    "nl-NL": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Orden je schermafbeeldingen",
+      "keywords": "schermafbeelding,verwijderen,wissen,opruimen,organiseren,sorteren,beheer,zoeken,vinden,tekst,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Orden je schermafbeeldingen",
+        "keywords": "foto's,dubbele,opruimen,OCR,tekstherkenning,zoeken,tijdlijn,soortgelijke,privé,eenmalige aankoop"
+      }
+    },
+    "no": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Finn og organiser skjermbilder",
+      "keywords": "skjermbilde,slett,sletting,rydd,opprydding,sorter,søk,tekst,tekstgjenkjenning,OCR,kategorier",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Finn og organiser skjermbilder",
+        "keywords": "foto,duplikater,opprydding,OCR,tekstgjenkjenning,kategorier,tidslinje,lignende,engangskjøp,album,søk"
+      }
+    },
+    "or-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "ସ୍କ୍ରିନସଟ ସଜାଡ଼ିବା, OCR ଖୋଜ",
+      "keywords": "ମ୍ୟାନେଜର,ଲେଖା,ଡିଲିଟ୍,ହଟାନ୍ତୁ,ତାରିଖ,ବର୍ଗ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "ସ୍କ୍ରିନସଟ ସଜାଡ଼ିବା, OCR ଖୋଜ",
+        "keywords": "ସ୍କ୍ରିନସଟ୍ ମ୍ୟାନେଜର,ଫଟୋ କ୍ଲିନର,ଡୁପ୍ଲିକେଟ୍,ସମାନ,ଲେଖା ଖୋଜ,ତାରିଖ,ବ୍ୟକ୍ତିଗତ ଲକ୍,ଗ୍ୟାଲେରୀ,ଆଲବମ,ଅଫଲାଇନ"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "pa-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਛਾਂਟੀ ਅਤੇ OCR ਖੋਜ",
+      "keywords": "ਮੈਨੇਜਰ,ਲਿਖਤ,ਡਿਲੀਟ,ਹਟਾਓ,ਤਾਰੀਖ,ਸ਼੍ਰੇਣੀ,ਓਸੀਆਰ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਛਾਂਟੀ ਅਤੇ OCR ਖੋਜ",
+        "keywords": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਮੈਨੇਜਰ,ਫੋਟੋ ਕਲੀਨਰ,ਡੁਪਲੀਕੇਟ,ਮਿਲਦੇ,ਲਿਖਤ ਖੋਜ,ਤਾਰੀਖ ਮੁਤਾਬਕ,ਨਿੱਜੀ ਲੌਕ,ਗੈਲਰੀ,ਐਲਬਮ,ਆਫਲਾਈਨ,ਓਸੀਆਰ"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "pl": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizator zrzutów ekranu",
+      "keywords": "zrzut,zrzuty,usuń,usuwanie,czyszczenie,sortowanie,menedżer,wyszukiwanie,znajdź,tekst,OCR,kategorie",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Organizator zrzutów ekranu",
+        "keywords": "czyszczenie,zdjęć,duplikaty,podobne,wyszukiwanie,tekstu,galeria,albumy,usuwanie,OCR,photo cleaner"
+      }
+    },
+    "pt-BR": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organize e apague seus prints",
+      "keywords": "print,tela,captura,capturas,organizar,organizador,apagar,excluir,limpar,buscar,texto,OCR,categorias",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Encontre e organize capturas",
+        "keywords": "tela,fotos,duplicadas,limpar,OCR,texto,busca,categorias,semelhantes,linha do tempo,compra única"
+      }
+    },
+    "pt-PT": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organize e encontre capturas",
+      "keywords": "ecrã,captura,apagar,eliminar,limpeza,organizar,organizador,gestor,pesquisa,texto,OCR,categorias",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Organize e encontre capturas",
+        "keywords": "ecrã,fotos,duplicadas,limpeza,OCR,texto,pesquisa,categorias,cronologia,semelhantes,compra única"
+      }
+    },
+    "ro": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizează capturile de ecran",
+      "keywords": "captură,capturi,șterge,ștergere,curățare,organizator,sortare,manager,căutare,text,OCR,categorii",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Organizează capturile de ecran",
+        "keywords": "curățare,poze,duplicate,similare,căutare,text,galerie,albume,ștergere,cronologie,OCR,photo cleaner"
+      }
+    },
+    "ru": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Органайзер и поиск скриншотов",
+      "keywords": "скриншот,скрин,скрины,снимок,экрана,удалить,удаление,очистка,сортировка,менеджер,найти,текст,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Органайзер скриншотов",
+        "keywords": "очистка,фото,дубликаты,похожие,поиск,текста,галерея,альбом,удаление,сортировка,OCR,photo cleaner"
+      }
+    },
+    "sk": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Organizér snímok obrazovky",
+      "keywords": "snímka,snímky,vymazať,mazanie,čistič,triedenie,správca,hľadanie,nájsť,text,textu,OCR,kategórie",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Organizér snímok obrazovky",
+        "keywords": "čistič,fotiek,duplicitné,podobné,obrázky,hľadanie,textu,galéria,albumy,mazanie,OCR,photo cleaner"
+      }
+    },
+    "sl-SI": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Urejanje posnetkov zaslona",
+      "keywords": "posnetek,posnetki,zaslon,izbriši,brisanje,čiščenje,razvrščanje,upravitelj,iskanje,najdi,besedilo,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Urejanje posnetkov zaslona",
+        "keywords": "čiščenje,fotografij,podvojene,slike,podobne,iskanje,besedila,galerija,brisanje,OCR,photo cleaner"
+      }
+    },
+    "sv": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Hitta och ordna skärmavbilder",
+      "keywords": "skärmdump,skärmdumpar,skärmbild,radera,rensa,sortera,sök,text,textigenkänning,OCR,kategorier",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Hitta och ordna skärmavbilder",
+        "keywords": "skärmdumpar,dubbletter,rensa,OCR,textigenkänning,kategorier,tidslinje,liknande,privat,engångsköp,sök"
+      }
+    },
+    "ta-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "ஸ்கிரீன்ஷாட் வகைப்பாடு, OCR",
+      "keywords": "திரைப்பிடிப்பு,ஒழுங்கமைப்பு,உரை,தேடல்,நீக்கு,டிலீட்,மேலாளர்,தேதி",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "ஸ்கிரீன்ஷாட் வகைப்பாடு, OCR",
+        "keywords": "ஸ்கிரீன்ஷாட்,ஒழுங்கமைப்பு,புகைப்பட கிளீனர்,பிரதி,ஒத்தவை,உரை தேடல்,தேதி,தனியுரிமை,கேலரி,ஆல்பம்,லாக்"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "te-IN": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "స్క్రీన్‌షాట్ వర్గీకరణ, OCR",
+      "keywords": "క్రమబద్ధీకరణ,టెక్స్ట్,శోధన,తొలగించు,డిలీట్,మేనేజర్,తేదీ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "స్క్రీన్‌షాట్ వర్గీకరణ, OCR",
+        "keywords": "స్క్రీన్‌షాట్,క్రమబద్ధీకరణ,ఫోటో క్లీనర్,డూప్లికేట్,సారూప్య,టెక్స్ట్ శోధన,తేదీ,ప్రైవేట్,గ్యాలరీ,లాక్"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "th": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "แยกหมวดภาพหน้าจอ ค้นหาและลบ",
+      "keywords": "แคปจอ,แคปหน้าจอ,สกรีนช็อต,จัดระเบียบ,หมวดหมู่,ข้อความ,OCR,ล้าง,เคลียร์,จัดการ",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "แยกหมวดภาพหน้าจอ เรียงตามเวลา",
+        "keywords": "รูป,ซ้ำ,คล้าย,ลบ,อัลบั้ม,แกลเลอรี,จัดระเบียบ,OCR,สแกนข้อความ,ค้นหา,ออฟไลน์,ส่วนตัว,ซื้อขาด,ใบเสร็จ"
+      }
+    },
+    "tr": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Ekran görüntülerini düzenle",
+      "keywords": "görüntüsü,görüntü,sil,silme,temizle,düzenleyici,yönetici,sırala,arama,bul,metin,OCR,kategori",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Ekran görüntülerini düzenle",
+        "keywords": "fotoğraf,yinelenen,temizle,benzer,OCR,metin,arama,kategori,zaman çizelgesi,çevrimdışı,ömür boyu"
+      }
+    },
+    "uk": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "Органайзер знімків екрана",
+      "keywords": "скріншот,скріни,знімок,видалити,видалення,очищення,сортування,менеджер,пошук,знайти,текст,тексту,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "Органайзер знімків екрана",
+        "keywords": "очищення,фото,дублікати,схожі,пошук,тексту,галерея,альбоми,видалення,сортування,OCR,photo cleaner"
+      }
+    },
+    "ur-PK": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "اسکرین شاٹ کی ترتیب، OCR تلاش",
+      "keywords": "مینیجر,متن,ڈیلیٹ,حذف,زمرہ,تاریخ,اسکرین شاٹس",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "اسکرین شاٹ کی ترتیب، OCR تلاش",
+        "keywords": "اسکرین شاٹ مینیجر,فوٹو کلینر,ڈپلیکیٹ,مشابہ,متن تلاش,تاریخ کے مطابق,نجی لاک,گیلری,البم,آف لائن,مقامی"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "vi": {
+      "name": "ShotInbox AI: Sắp xếp ảnh",
+      "subtitle": "Chụp màn hình: tìm chữ & xóa",
+      "keywords": "screenshot,cap,dọn,dẹp,văn,bản,kiếm,phân,loại,quản,lý,OCR",
+      "expected_current": {
+        "name": "ShotInbox AI: Sắp xếp ảnh",
+        "subtitle": "Hình chụp màn hình và OCR",
+        "keywords": "dọn,dẹp,trùng,lặp,chuyển,văn,bản,quét,thư,viện,album,tương,tự,xóa,dòng,thời,gian,OCR,photo cleaner"
+      },
+      "expected_current_keywords_verified": false
+    },
+    "zh-Hans": {
+      "name": "ShotInbox AI: Sort Screenshots",
+      "subtitle": "截图整理：OCR文字搜索、分类与删除",
+      "keywords": "截屏,屏幕,快照,管理,收纳,归档,归类,查找,找图,识别,提取,批量,大量,清除,筛选,手机,断舍离",
+      "expected_current": {
+        "name": "ShotInbox AI: Sort Screenshots",
+        "subtitle": "本地截图分类、OCR搜索与时间轴",
+        "keywords": "相册,整理,照片,清理,重复,相似,图片,去重,管理,归档,删除,批量,筛选,文字识别,提取,查找,瘦身,隐私保护,离线处理,永久买断,二维码,收据,票券,购物,聊天,食谱,灵感,地图,收藏,空间释放"
+      }
+    },
+    "zh-Hant": {
+      "name": "ShotInbox AI：截圖整理",
+      "subtitle": "OCR文字搜尋・自動分類・刪除清理",
+      "keywords": "螢幕,屏幕,截屏,快照,管理,收納,歸檔,歸類,尋找,找圖,辨識,擷取,批次,大量,清除,移除,手機,斷捨離,篩選",
+      "expected_current": {
+        "name": "ShotInbox AI：截圖整理",
+        "subtitle": "OCR搜尋・自動分類・時間軸",
+        "keywords": "相簿,整理,照片,清理,重複,相似,圖片,管理,歸檔,刪除,批次,篩選,文字辨識,擷取,尋找,瘦身,隱私保護,離線處理,永久買斷,QR碼,收據,票券,購物,對話,食譜,靈感,地圖,提醒,收藏,釋放空間"
+      },
+      "expected_current_keywords_verified": false
+    }
+  },
+  "changed_locales": 50
+}

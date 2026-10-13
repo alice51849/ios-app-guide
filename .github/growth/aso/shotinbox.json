@@ -1,0 +1,1851 @@
+{
+ "app": "shotinbox",
+ "app_id": "6802166527",
+ "generated": "2026-10-13",
+ "model_round": "1/2（Opus 調教；待第二個模型獨立驗證後才可套用）",
+ "scope": "只改 subtitle（≤30）與 keywords（≤100、逗號後無空白）；name 一律維持各語系線上現值。",
+ "method": "2026-10-13 量測。App Store 網頁版搜尋 apps.apple.com/{cc}/iphone/search（伺服器端只回前 12 名，含副標與評分數；桌面版 UA、每次間隔 5 秒），優先店面 US、TW、JP、KR、DE 共 28 次目標詞＋2 次索引探針；另 iTunes Search API 3 次（1 次 403 即停用）。合計 33 次，未超過 ~35 次上限。各語系現值：50 個語系的產品頁（?l=語系）逐一實測名稱與副標（第一輪遇 429，退避 4 分鐘後以 5 秒間隔重抓全部 200）。發現資料檔 _engine/data/shotinbox_full.json 已過期：18 個語系的線上名稱或副標和檔案不同（v1.0.4，2026-10-09 上架），例如 zh-Hant 名稱是「ShotInbox AI：截圖整理」、ja「ShotInbox AI：スクショ整理」、ko「ShotInbox AI: 스크린샷 정리」、de「ShotInbox AI: Screenshots」、vi「ShotInbox AI: Sắp xếp ảnh」。所以 current.name／subtitle 以線上為準，recommended.name 等於線上名稱（不改標題）；關鍵字 App Store 不公開，只能沿用資料檔，這 18 個語系的線上關鍵字很可能已不同（TW「截圖 食譜」、JP「スクショ 買い切り」探針都沒命中）。跨語系規則沿用 2026-10-13 UsageNow 實測（index_map）：不同語系的字不組成片語；en-US 在 TW/HK/KR/GB/AU/DE/JP 都被索引；en-GB 在 GB/AU/TW/HK/KR/DE；en-AU 在 AU 不被索引。同開發者 PicClear Pro（id 6780223070，照片清理）依 shotinbox 分析分工：截圖類詞歸 ShotInbox，照片／重複／相似／容量類詞歸 PicClear，所以各語系刪掉 photo、duplicate、similar、storage 類字。",
+ "index_map": {
+  "US": {
+   "indexed": [
+    "en-US",
+    "es-MX",
+    "zh-Hant",
+    "fr-FR",
+    "(Apple 表) ko, pt-BR, ru, vi, ar-SA, zh-Hans"
+   ],
+   "not": [
+    "en-GB"
+   ]
+  },
+  "GB": {
+   "indexed": [
+    "en-GB",
+    "en-US"
+   ]
+  },
+  "AU": {
+   "indexed": [
+    "en-GB",
+    "en-US"
+   ],
+   "not": [
+    "en-AU"
+   ]
+  },
+  "CA": {
+   "indexed": [
+    "fr-CA",
+    "en-US",
+    "(en-CA 未驗證)"
+   ],
+   "not": [
+    "en-GB"
+   ]
+  },
+  "TW": {
+   "indexed": [
+    "zh-Hant",
+    "en-US",
+    "en-GB"
+   ],
+   "not": [
+    "zh-Hans",
+    "ja",
+    "ko"
+   ]
+  },
+  "HK": {
+   "indexed": [
+    "zh-Hant",
+    "en-US",
+    "en-GB"
+   ]
+  },
+  "JP": {
+   "indexed": [
+    "ja",
+    "en-US"
+   ],
+   "not": [
+    "en-GB",
+    "zh-Hant"
+   ]
+  },
+  "KR": {
+   "indexed": [
+    "ko",
+    "en-US",
+    "en-GB"
+   ],
+   "not": [
+    "ja",
+    "zh-Hant"
+   ]
+  },
+  "DE": {
+   "indexed": [
+    "de-DE",
+    "en-GB",
+    "en-US"
+   ]
+  },
+  "ES": {
+   "indexed": [
+    "es-ES",
+    "ca",
+    "en-GB",
+    "en-US"
+   ]
+  },
+  "IN": {
+   "indexed": [
+    "en-GB",
+    "hi",
+    "(假設) 其他印度語系",
+    "en-US"
+   ]
+  }
+ },
+ "live_vs_file_mismatch": {
+  "ar-SA": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "تنظيم لقطات الشاشة وبحث OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "شراء واحد، بلا اشتراك"
+  },
+  "bn-BD": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "স্ক্রিনশট গোছানো ও OCR সার্চ",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "একবার কিনুন, আজীবন ব্যবহার"
+  },
+  "de-DE": {
+   "live_name": "ShotInbox AI: Screenshots",
+   "live_subtitle": "OCR-Suche & Fotos aufräumen",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "OCR-Suche & Fotos aufräumen"
+  },
+  "gu-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "સ્ક્રીનશૉટ ગોઠવણી અને OCR શોધ",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "એકવાર ખરીદો, આજીવન ઉપયોગ"
+  },
+  "he": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "מיון צילומי מסך וחיפוש OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "רכישה אחת, ללא מינוי"
+  },
+  "hi": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "स्क्रीनशॉट छँटाई और OCR खोज",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "एक बार खरीदें, आजीवन उपयोग"
+  },
+  "ja": {
+   "live_name": "ShotInbox AI：スクショ整理",
+   "live_subtitle": "スクショ分類・OCR検索・タイムライン",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "スクショ分類・OCR検索・タイムライン"
+  },
+  "kn-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ವಿಂಗಡಣೆ, OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ಒಂದೇ ಖರೀದಿ, ಜೀವಮಾನ ಬಳಕೆ"
+  },
+  "ko": {
+   "live_name": "ShotInbox AI: 스크린샷 정리",
+   "live_subtitle": "자동 분류·OCR 검색·타임라인",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "스크린샷 분류·OCR 검색·타임라인"
+  },
+  "ml-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "സ്ക്രീൻഷോട്ട് ക്രമീകരണം, OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ഒറ്റ വാങ്ങൽ, ആജീവനാന്ത ഉപയോഗം"
+  },
+  "mr-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "स्क्रीनशॉट वर्गीकरण व OCR शोध",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "एकदाच खरेदी, आजीवन वापर"
+  },
+  "or-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "ସ୍କ୍ରିନସଟ ସଜାଡ଼ିବା, OCR ଖୋଜ",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ଥରେ କିଣନ୍ତୁ, ଆଜୀବନ ବ୍ୟବହାର"
+  },
+  "pa-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਛਾਂਟੀ ਅਤੇ OCR ਖੋਜ",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ਇੱਕ ਵਾਰ ਖਰੀਦੋ, ਜੀਵਨ ਭਰ ਵਰਤੋਂ"
+  },
+  "ta-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "ஸ்கிரீன்ஷாட் வகைப்பாடு, OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ஒருமுறை வாங்கல், வாழ்நாள் பயன்"
+  },
+  "te-IN": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "స్క్రీన్‌షాట్ వర్గీకరణ, OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ఒక్క కొనుగోలు, జీవితకాల వాడకం"
+  },
+  "ur-PK": {
+   "live_name": "ShotInbox AI: Sort Screenshots",
+   "live_subtitle": "اسکرین شاٹ کی ترتیب، OCR تلاش",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "ایک بار خریدیں، تاحیات استعمال"
+  },
+  "vi": {
+   "live_name": "ShotInbox AI: Sắp xếp ảnh",
+   "live_subtitle": "Hình chụp màn hình và OCR",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "Sắp xếp ảnh chụp màn hình"
+  },
+  "zh-Hant": {
+   "live_name": "ShotInbox AI：截圖整理",
+   "live_subtitle": "OCR搜尋・自動分類・時間軸",
+   "file_name": "ShotInbox AI: Sort Screenshots",
+   "file_subtitle": "本機截圖分類、OCR搜尋與時間軸"
+  }
+ },
+ "sibling_split": {
+  "app": "PicClear Pro（picclear, id 6780223070）",
+  "shotinbox_owns": [
+   "screenshot(s)",
+   "截圖",
+   "スクショ",
+   "스크린샷",
+   "organizer",
+   "search/text/OCR",
+   "delete screenshots"
+  ],
+  "picclear_owns": [
+   "photo cleaner",
+   "duplicate",
+   "similar",
+   "storage/free space",
+   "blurry",
+   "large videos",
+   "照片清理",
+   "重複照片",
+   "写真整理",
+   "容量"
+  ],
+  "note": "de-DE 舊副標「Fotos aufräumen」正好是 PicClear 的德文名稱，已改。PicClear 的 100 字元提案（drafts/picclear/keywords-100-char-proposal.md）若採「截圖詞歸 ShotInbox」版本，兩款不再搶詞。"
+ },
+ "competitors": [
+  {
+   "id": "6799858360",
+   "name": "Clutter - Screenshot Organizer",
+   "note": "TW 截圖整理 #1（1,186 則）、JP スクショ整理 #1（146）、KR 스크린샷 정리 #1（933）、US screenshot organizer #4、DE screenshots löschen #2；各地都用在地化名稱。clutter 是競品品牌，不放關鍵字。"
+  },
+  {
+   "id": "6799644679",
+   "name": "ShotInbox（同名 App，subtitle: Screenshots into action）",
+   "note": "iTunes API US 搜 shotinbox：它 #1、我們 #2。品牌詞被同名 App 分走，屬品牌風險，不在本次欄位範圍。"
+  },
+  {
+   "id": "984305203",
+   "name": "Slidebox: Photo Cleaner App",
+   "note": "US 1.7 萬則、KR 2.4 萬則，佔 screenshot cleaner／截圖 清理 類詞。"
+  }
+ ],
+ "search_budget": {
+  "web_searches": 30,
+  "itunes_api": 3,
+  "product_pages": 50,
+  "blocked": [
+   "apps.apple.com 產品頁第一輪 HTTP 429（退避後恢復）",
+   "itunes.apple.com/search 1 次 HTTP 403"
+  ],
+  "shared_ip_note": "同一出口 IP 有其他代理同時在抓 App Store，限流是共用的"
+ },
+ "unverified": [
+  "18 個 live_vs_file_mismatch 語系的線上關鍵字",
+  "印度各語系是否在 IN 店面被索引",
+  "en-CA 是否在 CA 被索引",
+  "organize／organizer、sort／sorter 是否被 Apple 視為同字（若是，organize、sorter 可換掉）",
+  "各詞搜尋量（Apple 搜尋建議端點不可用）"
+ ],
+ "locales": {
+  "ar-SA": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "تنظيم لقطات الشاشة وبحث OCR",
+    "keywords": "منظم لقطات الشاشة,تنظيف الصور,متشابهة,مكررة,استخراج النص,فرز بالتاريخ,حماية,معرض,ألبوم,خصوصية,بحث"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "تنظيم لقطات الشاشة وبحث OCR",
+    "keywords": "سكرين شوت,سكرينشوت,منظم,حذف,مسح,نص,استخراج,فرز,تصنيف,إدارة,ترتيب,العثور"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 71
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標已是「整理截圖＋OCR 搜尋」，保留；關鍵字刪 تنظيف الصور（照片清理）、متشابهة、مكررة、حماية、خصوصية、معرض、ألبوم 與副標已有的 بحث，補口語 سكرين شوت、حذف（刪除）、نص（文字）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "bn-BD": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "স্ক্রিনশট গোছানো ও OCR সার্চ",
+    "keywords": "স্ক্রিনশট ম্যানেজার,ফটো ক্লিনার,ডুপ্লিকেট,সদৃশ,লেখা খোঁজা,তারিখ অনুযায়ী,গোপন,গ্যালারি,অ্যালবাম"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "স্ক্রিনশট গোছানো ও OCR সার্চ",
+    "keywords": "ম্যানেজার,অর্গানাইজার,ডিলিট,মুছুন,লেখা,টেক্সট,খুঁজুন,সাজানো,ক্যাটাগরি,তারিখ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 75
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 ফটো ক্লিনার、ডুপ্লিকেট、সদৃশ、গোপন、গ্যালারি、অ্যালবাম 與副標已有的 স্ক্রিনশট，補 ডিলিট／মুছুন（刪除）、লেখা／টেক্সট（文字）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "ca": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Ordena captures i cerca text",
+    "keywords": "fotos,duplicades,neteja,pantalla,OCR,categories,cronologia,similars,privadesa,offline,compra única"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Ordena captures i cerca text",
+    "keywords": "pantalla,organitzador,gestor,esborrar,eliminar,neteja,OCR,categories,troba,buscar,classifica"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 92
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 fotos、duplicades、similars、privadesa、offline、compra única、cronologia，補 esborrar／eliminar（刪除）、organitzador、gestor、buscar。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "cs": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizátor snímků obrazovky",
+    "keywords": "čistič,fotek,duplicitní,podobné,obrázky,hledání,textu,galerie,alba,mazání,úložiště,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizátor snímků obrazovky",
+    "keywords": "snímky,snímek,smazat,mazání,třídění,správce,hledání,vyhledávání,najít,text,textu,OCR,kategorie"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、fotek、duplicitní、podobné、obrázky、galerie、alba、úložiště、čistič，補 snímky／snímek、smazat、třídění、správce、najít。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "da": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Søg og sorter skærmbilleder",
+    "keywords": "fotos,dubletter,oprydning,OCR,tekstgenkendelse,kategorier,tidslinje,lignende,privat,engangskøb,tags"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Søg og sorter skærmbilleder",
+    "keywords": "skærmbillede,slet,sletning,oprydning,rydde,organisering,find,tekst,tekstgenkendelse,OCR,kategorier"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 fotos、dubletter、lignende、privat、engangskøb、tidslinje、tags，補 skærmbillede、slet／sletning、rydde、organisering、tekst。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "de-DE": {
+   "current": {
+    "name": "ShotInbox AI: Screenshots",
+    "subtitle": "OCR-Suche & Fotos aufräumen",
+    "keywords": "ordner,organizer,reiniger,duplikate,ähnliche,bilder,galerie,speicher,text,belege,links,notizen,qr"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Screenshots",
+    "subtitle": "Sortieren, Suchen & Löschen",
+    "keywords": "text,ocr,ordnen,aufräumen,organisieren,verwalten,finden,bildschirmfotos,entfernen,ausmisten"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 27,
+    "keywords": 91
+   },
+   "evidence": [
+    {
+     "term": "screenshots löschen",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Slidebox: Foto Cleaner",
+     "top1_ratings": "1716",
+     "top3": [
+      "Slidebox: Foto Cleaner（1716）",
+      "Clutter - Screenshots ordnen（6）",
+      "Galerie Cleaner: Screenshots（5）"
+     ],
+     "intent_ok": true,
+     "note": "11/11 截圖／照片清理；Slidebox 1,716 則，其餘 0–27 則",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "screenshot organizer",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Slidebox: Foto Cleaner",
+     "top1_ratings": "1716",
+     "top3": [
+      "Slidebox: Foto Cleaner（1716）",
+      "Visuel（0）",
+      "Stash: KI-Screenshot-Organizer（0）"
+     ],
+     "intent_ok": true,
+     "note": "9/12 截圖整理；en-US 欄位在 DE 也被索引",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "screenshots sortieren",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Swipewipe: Galerie Bereinigen",
+     "top1_ratings": "5503",
+     "top3": [
+      "Swipewipe: Galerie Bereinigen（5503）",
+      "Slidebox: Foto Cleaner（1716）",
+      "CleanHero: Bilder aussortieren（0）"
+     ],
+     "intent_ok": true,
+     "note": "11/12 照片整理／清理（截圖專用較少）",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "bildschirmfoto",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Longshot - ScreenShot Stitcher",
+     "top1_ratings": "25",
+     "top3": [
+      "Longshot - ScreenShot Stitcher（25）",
+      "Bildschirm Aufnahme Recorder（1475）",
+      "Bildschirmrekorder - RecordX（28）"
+     ],
+     "intent_ok": false,
+     "note": "0/12：螢幕錄影、桌布、投影——錯意圖，只在關鍵字以複數 bildschirmfotos 當片語用",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    }
+   ],
+   "changes": "DE screenshots löschen／screenshots sortieren／screenshot organizer 前 12 名都沒有我們；副標拿掉「Fotos aufräumen」（正好是 PicClear 的德文名稱）改放 Sortieren／Suchen／Löschen；關鍵字刪 reiniger、duplikate、ähnliche、bilder、galerie、speicher、belege、links、notizen、qr，補 ordnen、aufräumen、organisieren、verwalten、ausmisten、bildschirmfotos（單獨搜 bildschirmfoto 是錄影／桌布意圖，只當片語用）。",
+   "depth": "deep",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "el": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Βρες και οργάνωσε στιγμιότυπα",
+    "keywords": "οθόνης,φωτογραφίες,διπλότυπες,καθαρισμός,OCR,κείμενο,αναζήτηση,χρονολόγιο,παρόμοιες,εφάπαξ αγορά"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Βρες και οργάνωσε στιγμιότυπα",
+    "keywords": "οθόνης,στιγμιότυπο,διαγραφή,καθαρισμός,οργάνωση,ταξινόμηση,διαχείριση,αναζήτηση,κείμενο,εύρεση,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 φωτογραφίες、διπλότυπες、παρόμοιες、χρονολόγιο、εφάπαξ αγορά，補 στιγμιότυπο、διαγραφή、ταξινόμηση、διαχείριση、εύρεση。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "en-AU": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Find Text & Declutter Photos",
+    "keywords": "ocr,search,cleaner,organiser,duplicates,similar,camera,roll,storage,receipts,links,private,offline"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organiser, Search & Delete",
+    "keywords": "screengrab,screencap,clear,finder,categorise,organise,cleaner,manager,text,ocr,find,cleanup,remove"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）en-AU 在 AU 店面實測不被索引（UsageNow 探測），只做保險；副標拿掉 Declutter Photos（照片清理意圖，與 PicClear 撞詞），關鍵字比照 en-GB＋核心字。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "en-CA": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "OCR Search & Clean Camera Roll",
+    "keywords": "organizer,photos,duplicates,similar,text,storage,album,receipts,links,notes,private,offline,timeline"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizer, Search & Delete",
+    "keywords": "cleaner,manager,text,ocr,find,organize,cleanup,remove,old,bulk,archive,categorize,sorter,tidy"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 93
+   },
+   "evidence": [],
+   "changes": "（較輕量）CA 是否索引 en-CA 未驗證，比照 en-US 放同一組核心字當保險；副標拿掉 Clean Camera Roll（照片清理意圖）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "en-GB": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "OCR Search & Tidy Camera Roll",
+    "keywords": "organiser,cleaner,photos,duplicates,similar,text,storage,album,receipts,links,notes,offline,private"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organiser, Search & Delete",
+    "keywords": "screengrab,screencap,clear,finder,categorise,organise,cleaner,manager"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 69
+   },
+   "evidence": [],
+   "changes": "（較輕量）GB／AU 同時索引 en-US，所以 en-GB 只放英式拼法與 screengrab 等英式說法；副標拿掉 Tidy Camera Roll（照片意圖），刪 photos、duplicates、similar、storage、album、receipts、links、notes、offline、private。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "en-US": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "OCR Search & Photo Cleaner",
+    "keywords": "organizer,manager,duplicate,similar,text,receipts,links,storage,album,camera,roll,offline,private"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizer, Search & Delete",
+    "keywords": "cleaner,manager,text,ocr,find,organize,cleanup,remove,old,bulk,archive,categorize,sorter,tidy"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 93
+   },
+   "evidence": [
+    {
+     "term": "screenshot organizer",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Tote: Save & Organize Anything",
+     "top1_ratings": "161",
+     "top3": [
+      "Tote: Save & Organize Anything（161）",
+      "AI Screenshot Organizer（0）",
+      "Captr・Screenshot Organizer（104）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖／照片整理 App；第 1 Tote 161 則，多數 0–104 則",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "delete screenshots",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Delete Screenshots",
+     "top1_ratings": "",
+     "top3": [
+      "Delete Screenshots（0）",
+      "Delete Screenshots Curate（0）",
+      "Screenshots - Find, Share, and Delete Screenshots（35）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖清理 App，多數 0–35 則",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "screenshot search",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Screenshot Search: CaptureMind",
+     "top1_ratings": "",
+     "top3": [
+      "Screenshot Search: CaptureMind（0）",
+      "Sans - Screenshot Searcher（4）",
+      "AskPics: Search Screenshots（6）"
+     ],
+     "intent_ok": true,
+     "note": "7/12 截圖搜尋 App（其餘是以圖搜圖）",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "screenshot cleaner",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Slidebox: Photo Cleaner App",
+     "top1_ratings": "17K",
+     "top3": [
+      "Slidebox: Photo Cleaner App（17K）",
+      "Screenshot Cleaner: Free Space（0）",
+      "Screenshot Cleaner（0）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖／照片清理；Slidebox 1.7 萬則居首",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "screenshot manager",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Screenshot Manager - Organizer",
+     "top1_ratings": "38",
+     "top3": [
+      "Screenshot Manager - Organizer（38）",
+      "Screenshot Manager & Organizer（0）",
+      "Screenshot Manager - Screens（0）"
+     ],
+     "intent_ok": true,
+     "note": "11/12 截圖管理 App",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "screenshots",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "ScreenshotApp",
+     "top1_ratings": "16",
+     "top3": [
+      "ScreenshotApp（16）",
+      "Screenshot PRO Screenshots App（899）",
+      "Screenshot Editor - ScreenCut（124）"
+     ],
+     "intent_ok": false,
+     "note": "只有 2/12 是整理類，其餘是拼接／編輯截圖工具；名稱已含，不另投資",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "shotinbox receipts",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "ScreenVault: AI Screenshot org",
+     "top1_ratings": "1",
+     "top3": [
+      "ScreenVault: AI Screenshot org（1）",
+      "Captr・Screenshot Organizer（104）",
+      "ShotInbox（0）"
+     ],
+     "intent_ok": null,
+     "note": "索引探針：檔案 en-US 關鍵字有 receipts，但我們不在前 12（iTunes API：shotinbox #2、shotinbox organizer #139）",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    }
+   ],
+   "changes": "US 6 個目標詞前 12 名都沒有我們；副標拿掉 Photo Cleaner（照片清理大廠詞、與 PicClear 撞詞），改放實測同意圖的 organizer／search／delete；關鍵字刪 duplicate、similar、receipts、links、storage、album、camera、roll、offline、private，補 cleaner、manager、cleanup、remove、bulk 等截圖意圖字。",
+   "depth": "deep",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "es-ES": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Busca texto y limpia tus fotos",
+    "keywords": "capturas,pantalla,organizador,duplicadas,similares,galería,carrete,espacio,ocr,recibos,enlaces,notas"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Ordena, busca y borra capturas",
+    "keywords": "pantalla,captura,pantallazo,organizador,organizar,gestor,borrar,eliminar,limpiar,texto,ocr,encontrar"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標拿掉「limpia tus fotos」（照片清理意圖、與 PicClear 撞詞）改成「Ordena, busca y borra capturas」；關鍵字刪 duplicadas、similares、galería、carrete、espacio、recibos、enlaces、notas，補 captura、pantallazo、borrar、eliminar、gestor。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "es-MX": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Busca texto y ordena tus fotos",
+    "keywords": "capturas,pantalla,limpiador,duplicadas,repetidas,similares,galería,memoria,ocr,recibos,enlaces,notas"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Ordena, busca y borra capturas",
+    "keywords": "pantalla,captura,organizador,organizar,gestor,borrar,eliminar,limpiar,texto,ocr,encontrar"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 89
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標「ordena tus fotos」改成截圖用語「Ordena, busca y borra capturas」；關鍵字刪 limpiador、duplicadas、repetidas、similares、galería、memoria、recibos、enlaces、notas，補 captura、borrar、eliminar、gestor、administrador。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "fi": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Löydä ja järjestä näyttökuvat",
+    "keywords": "kuvakaappaus,kaksoiskappaleet,siivous,OCR,tekstihaku,kategoriat,aikajana,samanlaiset,kertamaksu"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Löydä ja järjestä näyttökuvat",
+    "keywords": "kuvakaappaus,kuvakaappaukset,näyttökuva,poista,siivous,lajittelu,hallinta,haku,tekstihaku,teksti,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 kaksoiskappaleet、samanlaiset、kertamaksu、aikajana，補 kuvakaappaukset、näyttökuva、poista（刪除）、lajittelu、hallinta。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "fr-CA": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "OCR: recherchez vos captures",
+    "keywords": "écran,photos,classement,nettoyeur,doublons,similaires,texte,pellicule,stockage,reçus,liens,notes"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "OCR: recherchez vos captures",
+    "keywords": "écran,capture,supprimer,effacer,trier,classement,organiser,gestionnaire,nettoyeur,texte,trouver"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 95
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 photos、doublons、similaires、pellicule、stockage、reçus、liens、notes，補 capture、supprimer／effacer、trier、gestionnaire。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "fr-FR": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Captures: recherche OCR privée",
+    "keywords": "écran,photos,organisateur,nettoyeur,doublons,similaires,texte,galerie,stockage,reçus,liens,notes"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Captures: recherche OCR privée",
+    "keywords": "écran,capture,supprimer,effacer,trier,classer,organisateur,gestionnaire,nettoyeur,texte,trouver"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 95
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 photos、doublons、similaires、galerie、stockage、reçus、liens、notes，補 capture、supprimer／effacer、trier、classer、ranger、gestionnaire。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "gu-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "સ્ક્રીનશૉટ ગોઠવણી અને OCR શોધ",
+    "keywords": "સ્ક્રીનશૉટ મેનેજર,ફોટો ક્લીનર,ડ્યૂપ્લિકેટ,સરખા,ટેક્સ્ટ શોધ,તારીખ મુજબ,ખાનગી,ગૅલેરી,ઍલ્બમ,ઓફલાઇન"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "સ્ક્રીનશૉટ ગોઠવણી અને OCR શોધ",
+    "keywords": "મેનેજર,ઓર્ગેનાઇઝર,ડિલીટ,ટેક્સ્ટ,લખાણ,વર્ગીકરણ,તારીખ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 51
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標已是「截圖整理＋OCR 搜尋」，保留；關鍵字刪 ફોટો ક્લીનર、ડ્યૂપ્લિકેટ、સરખા、ખાનગી、ગૅલેરી、ઍલ્બમ、ઓફલાઇન 與副標已有的 સ્ક્રીનશૉટ／શોધ，補 ડિલીટ（刪除）、ટેક્સ્ટ（文字）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "he": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "מיון צילומי מסך וחיפוש OCR",
+    "keywords": "מנהל צילומי מסך,ניקוי תמונות,כפולות,דומות,חיפוש טקסט,מיון לפי תאריך,נעילה,גלריה,אלבום,פרטיות,מקומי"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "מיון צילומי מסך וחיפוש OCR",
+    "keywords": "צילום,סקרינשוט,צילומסך,מנהל,מחיקה,למחוק,טקסט,ארגון,סידור,קטגוריות,איתור,ניקוי"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 77
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 ניקוי תמונות、כפולות、דומות、נעילה、גלריה、אלבום、פרטיות、מקומי 與副標已有的 מיון／חיפוש，補口語 סקרינשוט、צילומסך、מחיקה（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "hi": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "स्क्रीनशॉट छँटाई और OCR खोज",
+    "keywords": "स्क्रीनशॉट मैनेजर,फ़ोटो क्लीनर,डुप्लिकेट,मिलती-जुलती,टेक्स्ट खोज,तारीख़ क्रम,निजी लॉक,गैलरी,ऐल्बम"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "स्क्रीनशॉट छँटाई और OCR खोज",
+    "keywords": "मैनेजर,ऑर्गनाइज़र,डिलीट,हटाएं,टेक्स्ट,व्यवस्थित,श्रेणी,ढूंढें,तारीख,स्क्रीन शॉट,सफाई"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 84
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 फ़ोटो क्लीनर、डुप्लिकेट、मिलती-जुलती、निजी लॉक、गैलरी、ऐल्बम，補 डिलीट／हटाएं（刪除）、टेक्स्ट、ढूंढें。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "hr": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizator snimki zaslona",
+    "keywords": "čišćenje,fotografija,duplikati,slične,slike,pretraga,teksta,galerija,brisanje,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizator snimki zaslona",
+    "keywords": "snimka,snimke,zaslon,brisanje,obriši,čišćenje,sortiranje,upravitelj,pretraga,pronađi,tekst,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、fotografija、duplikati、slične、slike、galerija，補 snimka／snimke、zaslon、obriši、sortiranje、upravitelj。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "hu": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Képernyőképek rendszerezése",
+    "keywords": "tárhely,tisztító,duplikált,hasonló,fotók,szövegkeresés,galéria,törlés,idővonal,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Képernyőképek rendszerezése",
+    "keywords": "képernyőkép,képernyőfotó,törlés,tisztító,rendezés,rendező,kezelő,keresés,szövegkeresés,szöveg,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、tárhely、duplikált、hasonló、fotók、galéria、idővonal，補 képernyőkép、képernyőfotó、rendezés、kezelő、keresés。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "id": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Tangkapan layar mudah dicari",
+    "keywords": "foto,galeri,pengelola,pembersih,duplikat,serupa,hapus,OCR,pindai teks,urut waktu,offline,privasi"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Tangkapan layar mudah dicari",
+    "keywords": "pengelola,pembersih,hapus,massal,atur,rapikan,kelola,cari,temukan,teks,kategori,OCR,urutkan"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 91
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 foto、galeri、duplikat、serupa、offline、privasi、urut waktu、pindai teks（掃描器意圖），補 atur、rapikan、kelola、cari、temukan、teks。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "it": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Cerca testo e pulisci le foto",
+    "keywords": "organizzatore,duplicate,simili,galleria,spazio,memoria,ocr,scontrini,link,note,cronologia,album"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Trova testo, ordina e cancella",
+    "keywords": "screenshot,schermata,schermate,cattura,organizzatore,gestore,elimina,cerca,ricerca,pulizia,ocr"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標拿掉「pulisci le foto」（照片清理意圖）改成「Trova testo, ordina e cancella」；關鍵字刪 duplicate、simili、galleria、spazio、memoria、scontrini、link、note、cronologia、album，補 screenshot、schermata、elimina、gestore、pulizia。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "ja": {
+   "current": {
+    "name": "ShotInbox AI：スクショ整理",
+    "subtitle": "スクショ分類・OCR検索・タイムライン",
+    "keywords": "スクリーンショット,写真,整理,アルバム,重複,類似,削除,画像,管理,クリーナー,カメラロール,文字認識,一括選択,容量節約,端末内,プライバシー,買い切り,自動仕分け,ギャラリー,レシート"
+   },
+   "recommended": {
+    "name": "ShotInbox AI：スクショ整理",
+    "subtitle": "OCR文字検索・自動仕分け・削除で片付け",
+    "keywords": "スクリーンショット,管理,分類,認識,テキスト,探す,見つける,一括,まとめて,断捨離,掃除,消す,整頓,収納,振り分け,スマホ"
+   },
+   "lengths": {
+    "name": 19,
+    "subtitle": 20,
+    "keywords": 64
+   },
+   "evidence": [
+    {
+     "term": "スクショ整理",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - スクショ整理",
+     "top1_ratings": "146",
+     "top3": [
+      "Clutter - スクショ整理（146）",
+      "メモカタ - スクショ・写真整理（114）",
+      "スクショ整理くん（5）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖／照片整理；Clutter 146 則居首，其餘多 0–114 則",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "スクショ 削除",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - スクショ整理",
+     "top1_ratings": "146",
+     "top3": [
+      "Clutter - スクショ整理（146）",
+      "スクショ削除 - 容量節約・写真整理（0）",
+      "写真整理クリーナー：重複写真・スクショ削除・空き容量確保（0）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 清理類（截圖與照片清理混合）",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "スクショ 検索",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "ScreenSeek - スクショ検索",
+     "top1_ratings": "",
+     "top3": [
+      "ScreenSeek - スクショ検索（0）",
+      "Urban Rider: 原付・スクーター専用GPSナビ（2）",
+      "出会いはスグでしょ！SNSマッチングチャットで会える（49）"
+     ],
+     "intent_ok": true,
+     "note": "只有 4/12 是截圖搜尋 App（ScreenSeek、Archive、Sans、スクショ整理くん），其餘是無關的「検索」App——競爭最薄",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "スクリーンショット 整理",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - スクショ整理",
+     "top1_ratings": "146",
+     "top3": [
+      "Clutter - スクショ整理（146）",
+      "Speedy Clean: AI写真整理（51）",
+      "スクショ専用アプリ。タグで整理 - スクショ！（27）"
+     ],
+     "intent_ok": true,
+     "note": "11/12 整理／清理類",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "スクショ",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "画面メモSS - スクリーンショットを無音でフルサイズ保存できる無料アプリ",
+     "top1_ratings": "4557",
+     "top3": [
+      "画面メモSS - スクリーンショットを無音でフルサイズ保存できる無料アプリ（4557）",
+      "スクショ連結くん - スクリーンショット（214）",
+      "画面録画 - スクリーンレコーダー & 録画アプリ（9769）"
+     ],
+     "intent_ok": false,
+     "note": "3/12 整理類，其餘是截圖拍攝／拼接工具；名稱已含",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "画像 文字 検索",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "文字スキャン - OCR認識画像文字起こし",
+     "top1_ratings": "3478",
+     "top3": [
+      "文字スキャン - OCR認識画像文字起こし（3478）",
+      "レンズ：画像検索・写真検索・画像認識（4）",
+      "レンズ - 逆画像検索 +（0）"
+     ],
+     "intent_ok": false,
+     "note": "OCR 掃描、以圖搜圖、Google——不同意圖，不採用「画像」",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "スクショ 買い切り",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "写真からPDF：複数の画像・書類をまとめて一括変換",
+     "top1_ratings": "20",
+     "top3": [
+      "写真からPDF：複数の画像・書類をまとめて一括変換（20）",
+      "Keepy（17）",
+      "OBD2スキャナー エンジン音付き（1）"
+     ],
+     "intent_ok": null,
+     "note": "索引探針：檔案 ja 關鍵字有「買い切り」，但我們不在前 12",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    }
+   ],
+   "changes": "JP スクショ整理／スクショ 削除／スクショ 検索 前 12 名都沒有我們（スクショ 検索 只有 4 個相關 App，競爭最薄）；副標拿掉與名稱重複的「スクショ」和低搜尋的「タイムライン」，改放 文字検索・仕分け・削除・片付け；關鍵字刪 写真、重複、類似、容量節約、クリーナー（PicClear 的詞）與 端末内、買い切り、プライバシー、レシート，補 スクリーンショット、管理、断捨離、掃除、消す 等。",
+   "depth": "deep",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "kn-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ವಿಂಗಡಣೆ, OCR",
+    "keywords": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್,ವಿಂಗಡಣೆ,ಫೋಟೋ ಕ್ಲೀನರ್,ಡ್ಯೂಪ್ಲಿಕೇಟ್,ಹೋಲುವ,ಪಠ್ಯ ಹುಡುಕು,ದಿನಾಂಕ,ಖಾಸಗಿ,ಗ್ಯಾಲರಿ,ಆಫ್‌ಲೈನ್"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ವಿಂಗಡಣೆ, OCR",
+    "keywords": "ಪಠ್ಯ,ಹುಡುಕು,ಹುಡುಕಾಟ,ಅಳಿಸು,ಡಿಲೀಟ್,ಮ್ಯಾನೇಜರ್,ವರ್ಗ,ದಿನಾಂಕ,ಸಂಘಟಕ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 60
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 ಫೋಟೋ ಕ್ಲೀನರ್、ಡ್ಯೂಪ್ಲಿಕೇಟ್、ಹೋಲುವ、ಖಾಸಗಿ、ಗ್ಯಾಲರಿ、ಆಫ್‌ಲೈನ್ 與副標已有的 ಸ್ಕ್ರೀನ್‌ಶಾಟ್／ವಿಂಗಡಣೆ，補 ಅಳಿಸು／ಡಿಲೀಟ್（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "ko": {
+   "current": {
+    "name": "ShotInbox AI: 스크린샷 정리",
+    "subtitle": "자동 분류·OCR 검색·타임라인",
+    "keywords": "캡처,사진,정리,앨범,관리,중복,유사,이미지,삭제,갤러리,청소기,문자인식,텍스트추출,일괄선택,용량확보,기기내처리,개인정보보호,평생소장,영수증,티켓,지도,채팅,레시피,QR,보관"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: 스크린샷 정리",
+    "subtitle": "캡처 텍스트 검색·자동 분류·삭제",
+    "keywords": "스샷,캡쳐,화면,관리,글자,문자,OCR,찾기,보관함,일괄,청소,정돈,지우기,인식,아카이브"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 18,
+    "keywords": 49
+   },
+   "evidence": [
+    {
+     "term": "스크린샷 정리",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - 스크린샷 정리",
+     "top1_ratings": "933",
+     "top3": [
+      "Clutter - 스크린샷 정리（933）",
+      "Take a Shot（31）",
+      "Slidebox: 사진 정리 앱（2.4만）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖／照片整理；Clutter 933 則居首",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "캡처 정리",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - 스크린샷 정리",
+     "top1_ratings": "933",
+     "top3": [
+      "Clutter - 스크린샷 정리（933）",
+      "Take a Shot（31）",
+      "Sweep: 사진 용량 정리（3）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖整理",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "스샷 정리",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "스크랩(Scrap) : 스크린샷 캡처 사진 정리",
+     "top1_ratings": "8",
+     "top3": [
+      "스크랩(Scrap) : 스크린샷 캡처 사진 정리（8）",
+      "STASH : 스크린샷 정리, 링크 저장（0）",
+      "딸깍 - 링크, 스크린샷, 메모 한 곳에 저장（165）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖整理，多數 0–306 則",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "스크린샷 삭제",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - 스크린샷 정리",
+     "top1_ratings": "933",
+     "top3": [
+      "Clutter - 스크린샷 정리（933）",
+      "Swipewipe: 사진 정리 및 용량 확보（194）",
+      "스크린샷 정리 - 용량 확보와 중복 삭제（0）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 截圖／照片清理",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "스크린샷 검색",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "SnapStash - AI 스크린샷 정리 & 검색",
+     "top1_ratings": "3",
+     "top3": [
+      "SnapStash - AI 스크린샷 정리 & 검색（3）",
+      "딸깍 - 링크, 스크린샷, 메모 한 곳에 저장（165）",
+      "캐치 Catchy - AI 스크린 캡처 정리 & 관리（7）"
+     ],
+     "intent_ok": true,
+     "note": "10/12 截圖搜尋／收藏",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    }
+   ],
+   "changes": "KR 스크린샷 정리／캡처 정리／스샷 정리／스크린샷 삭제／스크린샷 검색 前 12 名都沒有我們，但五個詞都是同意圖、對手評分多在 0–165 則；副標把「타임라인」換成「삭제」並補「캡처」「텍스트」；關鍵字刪 청소기（吸塵器）、평생소장、기기내처리、개인정보보호、영수증、티켓、지도、채팅、레시피、QR、사진、중복、유사、용량확보，補 스샷、캡쳐、지우기、글자、관리（스크린 是名稱 스크린샷 的子字串，不放）。",
+   "depth": "deep",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "ml-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "സ്ക്രീൻഷോട്ട് ക്രമീകരണം, OCR",
+    "keywords": "സ്ക്രീൻഷോട്ട്,ക്രമീകരണം,ഫോട്ടോ ക്ലീനർ,ഡ്യൂപ്ലിക്കേറ്റ്,സമാന,ടെക്സ്റ്റ് തിരയൽ,തീയതി,സ്വകാര്യ,ഗാലറി"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "സ്ക്രീൻഷോട്ട് ക്രമീകരണം, OCR",
+    "keywords": "ടെക്സ്റ്റ്,തിരയൽ,തിരയുക,ഡിലീറ്റ്,നീക്കം,മാനേജർ,വിഭാഗം,തീയതി"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 59
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 ഫോട്ടോ ക്ലീനർ、ഡ്യൂപ്ലിക്കേറ്റ്、സമാന、സ്വകാര്യ、ഗാലറി 與副標已有的 സ്ക്രീൻഷോട്ട്／ക്രമീകരണം，補 ഡിലീറ്റ്／നീക്കം（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "mr-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "स्क्रीनशॉट वर्गीकरण व OCR शोध",
+    "keywords": "स्क्रीनशॉट मॅनेजर,फोटो क्लीनर,डुप्लिकेट,सारखे,मजकूर शोध,तारखेनुसार,खासगी लॉक,गॅलरी,अल्बम,ऑफलाइन"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "स्क्रीनशॉट वर्गीकरण व OCR शोध",
+    "keywords": "मॅनेजर,व्यवस्थापक,डिलीट,हटवा,मजकूर,शोधा,श्रेणी,तारखेनुसार,स्क्रीन शॉट"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 69
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 फोटो क्लीनर、डुप्लिकेट、सारखे、खासगी लॉक、गॅलरी、अल्बम、ऑफलाइन，補 डिलीट／हटवा（刪除）、मजकूर（文字）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "ms": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Tangkapan skrin mudah dicari",
+    "keywords": "gambar,galeri,pengurus,pembersih,pendua,serupa,padam,OCR,imbas teks,garis masa,luar talian,privasi"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Tangkapan skrin mudah dicari",
+    "keywords": "pengurus,pembersih,padam,susun,urus,kemas,cari,teks,kategori,OCR,pukal"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 70
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 gambar、galeri、pendua、serupa、garis masa、luar talian、privasi、imbas teks，補 susun、urus、kemas、cari、teks、pukal。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "nl-NL": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Orden je schermafbeeldingen",
+    "keywords": "foto's,dubbele,opruimen,OCR,tekstherkenning,zoeken,tijdlijn,soortgelijke,privé,eenmalige aankoop"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Orden je schermafbeeldingen",
+    "keywords": "schermafbeelding,verwijderen,wissen,opruimen,organiseren,sorteren,beheer,zoeken,vinden,tekst,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 foto's、dubbele、soortgelijke、privé、eenmalige aankoop、tijdlijn，補 schermafbeelding、verwijderen／wissen、sorteren、beheer、vinden。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "no": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Finn og organiser skjermbilder",
+    "keywords": "foto,duplikater,opprydding,OCR,tekstgjenkjenning,kategorier,tidslinje,lignende,engangskjøp,album,søk"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Finn og organiser skjermbilder",
+    "keywords": "skjermbilde,slett,sletting,rydd,opprydding,sorter,søk,tekst,tekstgjenkjenning,OCR,kategorier"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 92
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 foto、duplikater、lignende、engangskjøp、album、tidslinje，補 skjermbilde、slett／sletting、rydd、sorter。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "or-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ସ୍କ୍ରିନସଟ ସଜାଡ଼ିବା, OCR ଖୋଜ",
+    "keywords": "ସ୍କ୍ରିନସଟ୍ ମ୍ୟାନେଜର,ଫଟୋ କ୍ଲିନର,ଡୁପ୍ଲିକେଟ୍,ସମାନ,ଲେଖା ଖୋଜ,ତାରିଖ,ବ୍ୟକ୍ତିଗତ ଲକ୍,ଗ୍ୟାଲେରୀ,ଆଲବମ,ଅଫଲାଇନ"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ସ୍କ୍ରିନସଟ ସଜାଡ଼ିବା, OCR ଖୋଜ",
+    "keywords": "ମ୍ୟାନେଜର,ଲେଖା,ଡିଲିଟ୍,ହଟାନ୍ତୁ,ତାରିଖ,ବର୍ଗ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 39
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 ଫଟୋ କ୍ଲିନର、ଡୁପ୍ଲିକେଟ୍、ସମାନ、ବ୍ୟକ୍ତିଗତ ଲକ୍、ଗ୍ୟାଲେରୀ、ଆଲବମ、ଅଫଲାଇନ，補 ଡିଲିଟ୍／ହଟାନ୍ତୁ（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "pa-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਛਾਂਟੀ ਅਤੇ OCR ਖੋਜ",
+    "keywords": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਮੈਨੇਜਰ,ਫੋਟੋ ਕਲੀਨਰ,ਡੁਪਲੀਕੇਟ,ਮਿਲਦੇ,ਲਿਖਤ ਖੋਜ,ਤਾਰੀਖ ਮੁਤਾਬਕ,ਨਿੱਜੀ ਲੌਕ,ਗੈਲਰੀ,ਐਲਬਮ,ਆਫਲਾਈਨ,ਓਸੀਆਰ"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਛਾਂਟੀ ਅਤੇ OCR ਖੋਜ",
+    "keywords": "ਮੈਨੇਜਰ,ਲਿਖਤ,ਡਿਲੀਟ,ਹਟਾਓ,ਤਾਰੀਖ,ਸ਼੍ਰੇਣੀ,ਓਸੀਆਰ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 42
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 ਫੋਟੋ ਕਲੀਨਰ、ਡੁਪਲੀਕੇਟ、ਮਿਲਦੇ、ਨਿੱਜੀ ਲੌਕ、ਗੈਲਰੀ、ਐਲਬਮ、ਆਫਲਾਈਨ，補 ਡਿਲੀਟ／ਹਟਾਓ（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "pl": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizator zrzutów ekranu",
+    "keywords": "czyszczenie,zdjęć,duplikaty,podobne,wyszukiwanie,tekstu,galeria,albumy,usuwanie,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizator zrzutów ekranu",
+    "keywords": "zrzut,zrzuty,usuń,usuwanie,czyszczenie,sortowanie,menedżer,wyszukiwanie,znajdź,tekst,OCR,kategorie"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、zdjęć、duplikaty、podobne、galeria、albumy，補 zrzut／zrzuty、usuń、sortowanie、menedżer、znajdź。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "pt-BR": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Encontre e organize capturas",
+    "keywords": "tela,fotos,duplicadas,limpar,OCR,texto,busca,categorias,semelhantes,linha do tempo,compra única"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organize e apague seus prints",
+    "keywords": "print,tela,captura,capturas,organizar,organizador,apagar,excluir,limpar,buscar,texto,OCR,categorias"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（較輕量）巴西口語把截圖叫 print，副標改成「Organize e apague seus prints」；關鍵字刪 fotos、duplicadas、semelhantes、linha do tempo、compra única，補 print、captura、apagar／excluir、organizar、buscar。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "pt-PT": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organize e encontre capturas",
+    "keywords": "ecrã,fotos,duplicadas,limpeza,OCR,texto,pesquisa,categorias,cronologia,semelhantes,compra única"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organize e encontre capturas",
+    "keywords": "ecrã,captura,apagar,eliminar,limpeza,organizar,organizador,gestor,pesquisa,texto,OCR,categorias"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 95
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 fotos、duplicadas、semelhantes、cronologia、compra única，補 captura、apagar／eliminar、organizar、gestor、pesquisar。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "ro": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizează capturile de ecran",
+    "keywords": "curățare,poze,duplicate,similare,căutare,text,galerie,albume,ștergere,cronologie,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizează capturile de ecran",
+    "keywords": "captură,capturi,șterge,ștergere,curățare,organizator,sortare,manager,căutare,text,OCR,categorii"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 95
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、poze、duplicate、similare、galerie、albume、cronologie，補 captură／capturi、șterge、organizator、sortare、găsește。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "ru": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Органайзер скриншотов",
+    "keywords": "очистка,фото,дубликаты,похожие,поиск,текста,галерея,альбом,удаление,сортировка,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Органайзер и поиск скриншотов",
+    "keywords": "скриншот,скрин,скрины,снимок,экрана,удалить,удаление,очистка,сортировка,менеджер,найти,текст,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標補「поиск」；關鍵字刪英文 photo cleaner、фото、дубликаты、похожие、галерея、альбом，補 скриншот、скрин／скрины、снимок экрана、удалить、менеджер、найти。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "sk": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizér snímok obrazovky",
+    "keywords": "čistič,fotiek,duplicitné,podobné,obrázky,hľadanie,textu,galéria,albumy,mazanie,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Organizér snímok obrazovky",
+    "keywords": "snímka,snímky,vymazať,mazanie,čistič,triedenie,správca,hľadanie,nájsť,text,textu,OCR,kategórie"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、fotiek、duplicitné、podobné、obrázky、galéria、albumy，補 snímka／snímky、vymazať、triedenie、správca、nájsť。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "sl-SI": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Urejanje posnetkov zaslona",
+    "keywords": "čiščenje,fotografij,podvojene,slike,podobne,iskanje,besedila,galerija,brisanje,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Urejanje posnetkov zaslona",
+    "keywords": "posnetek,posnetki,zaslon,izbriši,brisanje,čiščenje,razvrščanje,upravitelj,iskanje,najdi,besedilo,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 26,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、fotografij、podvojene、slike、podobne、galerija，補 posnetek／posnetki、zaslon、izbriši、razvrščanje、upravitelj、najdi。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "sv": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Hitta och ordna skärmavbilder",
+    "keywords": "skärmdumpar,dubbletter,rensa,OCR,textigenkänning,kategorier,tidslinje,liknande,privat,engångsköp,sök"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Hitta och ordna skärmavbilder",
+    "keywords": "skärmdump,skärmdumpar,skärmbild,radera,rensa,sortera,sök,text,textigenkänning,OCR,kategorier"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 92
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 dubbletter、liknande、privat、engångsköp、tidslinje，補 skärmdump、skärmbild、radera、sortera、text。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "ta-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ஸ்கிரீன்ஷாட் வகைப்பாடு, OCR",
+    "keywords": "ஸ்கிரீன்ஷாட்,ஒழுங்கமைப்பு,புகைப்பட கிளீனர்,பிரதி,ஒத்தவை,உரை தேடல்,தேதி,தனியுரிமை,கேலரி,ஆல்பம்,லாக்"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "ஸ்கிரீன்ஷாட் வகைப்பாடு, OCR",
+    "keywords": "திரைப்பிடிப்பு,ஒழுங்கமைப்பு,உரை,தேடல்,நீக்கு,டிலீட்,மேலாளர்,தேதி"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 64
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 புகைப்பட கிளீனர்、பிரதி、ஒத்தவை、தனியுரிமை、கேலரி、ஆல்பம்、லாக் 與副標已有的 ஸ்கிரீன்ஷாட்，補 திரைப்பிடிப்பு（截圖）、நீக்கு／டிலீட்（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "te-IN": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "స్క్రీన్‌షాట్ వర్గీకరణ, OCR",
+    "keywords": "స్క్రీన్‌షాట్,క్రమబద్ధీకరణ,ఫోటో క్లీనర్,డూప్లికేట్,సారూప్య,టెక్స్ట్ శోధన,తేదీ,ప్రైవేట్,గ్యాలరీ,లాక్"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "స్క్రీన్‌షాట్ వర్గీకరణ, OCR",
+    "keywords": "క్రమబద్ధీకరణ,టెక్స్ట్,శోధన,తొలగించు,డిలీట్,మేనేజర్,తేదీ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 55
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 ఫోటో క్లీనర్、డూప్లికేట్、సారూప్య、ప్రైవేట్、గ్యాలరీ、లాక్ 與副標已有的 స్క్రీన్‌షాట్，補 తొలగించు／డిలీట్（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "th": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "แยกหมวดภาพหน้าจอ เรียงตามเวลา",
+    "keywords": "รูป,ซ้ำ,คล้าย,ลบ,อัลบั้ม,แกลเลอรี,จัดระเบียบ,OCR,สแกนข้อความ,ค้นหา,ออฟไลน์,ส่วนตัว,ซื้อขาด,ใบเสร็จ"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "แยกหมวดภาพหน้าจอ ค้นหาและลบ",
+    "keywords": "แคปจอ,แคปหน้าจอ,สกรีนช็อต,จัดระเบียบ,หมวดหมู่,ข้อความ,OCR,ล้าง,เคลียร์,จัดการ"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 77
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標把低搜尋的「เรียงตามเวลา」換成「ค้นหาและลบ」（搜尋、刪除）；關鍵字刪 รูป、ซ้ำ、คล้าย、อัลบั้ม、แกลเลอรี、ออฟไลน์、ส่วนตัว、ซื้อขาด、ใบเสร็จ、สแกนข้อความ，補口語 แคปจอ／แคปหน้าจอ、สกรีนช็อต。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "tr": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Ekran görüntülerini düzenle",
+    "keywords": "fotoğraf,yinelenen,temizle,benzer,OCR,metin,arama,kategori,zaman çizelgesi,çevrimdışı,ömür boyu"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Ekran görüntülerini düzenle",
+    "keywords": "görüntüsü,görüntü,sil,silme,temizle,düzenleyici,yönetici,sırala,arama,bul,metin,OCR,kategori"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 92
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪 fotoğraf、yinelenen、benzer、zaman çizelgesi、çevrimdışı、ömür boyu，補 görüntüsü、sil／silme、düzenleyici、yönetici、bul。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "uk": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Органайзер знімків екрана",
+    "keywords": "очищення,фото,дублікати,схожі,пошук,тексту,галерея,альбоми,видалення,сортування,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "Органайзер знімків екрана",
+    "keywords": "скріншот,скріни,знімок,видалити,видалення,очищення,сортування,менеджер,пошук,знайти,текст,тексту,OCR"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 25,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）副標保留；關鍵字刪英文 photo cleaner、фото、дублікати、схожі、галерея、альбоми，補 скріншот、скріни、знімок、видалити、менеджер、знайти。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "ur-PK": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "اسکرین شاٹ کی ترتیب، OCR تلاش",
+    "keywords": "اسکرین شاٹ مینیجر,فوٹو کلینر,ڈپلیکیٹ,مشابہ,متن تلاش,تاریخ کے مطابق,نجی لاک,گیلری,البم,آف لائن,مقامی"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "اسکرین شاٹ کی ترتیب، OCR تلاش",
+    "keywords": "مینیجر,متن,ڈیلیٹ,حذف,زمرہ,تاریخ,اسکرین شاٹس"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 43
+   },
+   "evidence": [],
+   "changes": "（較輕量）線上副標保留；關鍵字刪 فوٹو کلینر、ڈپلیکیٹ、مشابہ、نجی لاک、گیلری、البم、آف لائن、مقامی 與副標已有的 تلاش，補 ڈیلیٹ／حذف（刪除）。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "vi": {
+   "current": {
+    "name": "ShotInbox AI: Sắp xếp ảnh",
+    "subtitle": "Hình chụp màn hình và OCR",
+    "keywords": "dọn,dẹp,trùng,lặp,chuyển,văn,bản,quét,thư,viện,album,tương,tự,xóa,dòng,thời,gian,OCR,photo cleaner"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sắp xếp ảnh",
+    "subtitle": "Chụp màn hình: tìm chữ & xóa",
+    "keywords": "screenshot,cap,dọn,dẹp,văn,bản,kiếm,phân,loại,quản,lý,OCR"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 28,
+    "keywords": 57
+   },
+   "evidence": [],
+   "changes": "（較輕量）越南文名稱沒有 screenshot，副標改「Chụp màn hình: tìm chữ & xóa」讓「ảnh chụp màn hình」在同一語系成立；關鍵字刪英文 photo cleaner、trùng lặp、tương tự、thư viện、album、dòng thời gian、quét，補 screenshot、cap、phân loại、quản lý。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  },
+  "zh-Hans": {
+   "current": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "本地截图分类、OCR搜索与时间轴",
+    "keywords": "相册,整理,照片,清理,重复,相似,图片,去重,管理,归档,删除,批量,筛选,文字识别,提取,查找,瘦身,隐私保护,离线处理,永久买断,二维码,收据,票券,购物,聊天,食谱,灵感,地图,收藏,空间释放"
+   },
+   "recommended": {
+    "name": "ShotInbox AI: Sort Screenshots",
+    "subtitle": "截图整理：OCR文字搜索、分类与删除",
+    "keywords": "截屏,屏幕,快照,管理,收纳,归档,归类,查找,找图,识别,提取,批量,大量,清除,筛选,手机,断舍离"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 18,
+    "keywords": 51
+   },
+   "evidence": [],
+   "changes": "（較輕量）簡中名稱是英文，副標改成「截图整理：OCR文字搜索、分类与删除」讓截图整理／截图删除在同一語系成立；關鍵字刪 照片、重复、相似、去重、瘦身、空间释放（PicClear）與隐私保护、离线处理、永久买断、二维码、收据、票券、购物、聊天、食谱、灵感、地图、收藏、相册，補 截屏、屏幕、收纳、归类。",
+   "depth": "light",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）"
+  },
+  "zh-Hant": {
+   "current": {
+    "name": "ShotInbox AI：截圖整理",
+    "subtitle": "OCR搜尋・自動分類・時間軸",
+    "keywords": "相簿,整理,照片,清理,重複,相似,圖片,管理,歸檔,刪除,批次,篩選,文字辨識,擷取,尋找,瘦身,隱私保護,離線處理,永久買斷,QR碼,收據,票券,購物,對話,食譜,靈感,地圖,提醒,收藏,釋放空間"
+   },
+   "recommended": {
+    "name": "ShotInbox AI：截圖整理",
+    "subtitle": "OCR文字搜尋・自動分類・刪除清理",
+    "keywords": "螢幕,屏幕,截屏,快照,管理,收納,歸檔,歸類,尋找,找圖,辨識,擷取,批次,大量,清除,移除,手機,斷捨離,篩選"
+   },
+   "lengths": {
+    "name": 17,
+    "subtitle": 17,
+    "keywords": 57
+   },
+   "evidence": [
+    {
+     "term": "截圖整理",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - 截圖整理",
+     "top1_ratings": "1186",
+     "top3": [
+      "Clutter - 截圖整理（1186）",
+      "Scrap：截圖與照片整理（5）",
+      "Albo：收藏與整理（7506）"
+     ],
+     "intent_ok": true,
+     "note": "9/12 截圖／照片整理；Clutter 1,186 則居首",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "截圖 刪除",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - 截圖整理",
+     "top1_ratings": "1186",
+     "top3": [
+      "Clutter - 截圖整理（1186）",
+      "Speedy Clean：AI相簿清理（144）",
+      "Scrap：截圖與照片整理（5）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 清理類，但多是照片清理大廠（Clever Cleaner 2,017、Cleanup 5,781）",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "截圖 搜尋",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Screenshot Organizer 截圖整理與搜尋",
+     "top1_ratings": "",
+     "top3": [
+      "Screenshot Organizer 截圖整理與搜尋（0）",
+      "豆寶國際版 - 全網搜尋深度思考智慧聊天（2）",
+      "截圖全幫手-搜尋截圖中的文字 截圖整理 照片清理（0）"
+     ],
+     "intent_ok": true,
+     "note": "8/12 截圖搜尋 App，幾乎全是 0 評分——最薄的一個",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "截圖",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Clutter - 截圖整理",
+     "top1_ratings": "1186",
+     "top3": [
+      "Clutter - 截圖整理（1186）",
+      "長圖拼接-長截圖拼接工具（1856）",
+      "螢幕截圖 & 照片拼接編輯 Screen Cut（19）"
+     ],
+     "intent_ok": false,
+     "note": "只有 2/12 是整理類，其餘是長截圖拼接；名稱已含",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "截圖 清理",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Slidebox: 照片清理工具",
+     "top1_ratings": "2882",
+     "top3": [
+      "Slidebox: 照片清理工具（2882）",
+      "Speedy Clean：AI相簿清理（144）",
+      "Scrap：截圖與照片整理（5）"
+     ],
+     "intent_ok": true,
+     "note": "12/12 照片清理 App（清理助手 5.6 萬、Slidebox 2,882）；屬 PicClear 的照片清理意圖，只在副標以「刪除清理」承接",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "照片 文字 搜尋",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Google",
+     "top1_ratings": "36萬",
+     "top3": [
+      "Google（36萬）",
+      "PicSeek: AI 相簿整理，文字搜尋照片（0）",
+      "看見照片 - 相簿照片搜索查找器（10）"
+     ],
+     "intent_ok": false,
+     "note": "Google、以圖搜圖、OCR 掃描混雜；不採用",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    },
+    {
+     "term": "截圖 食譜",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Albo：收藏與整理",
+     "top1_ratings": "7506",
+     "top3": [
+      "Albo：收藏與整理（7506）",
+      "点心布丁果冻面包蛋糕做法（8）",
+      "STASH : 截圖整理、連結收藏（0）"
+     ],
+     "intent_ok": null,
+     "note": "索引探針：檔案 zh-Hant 關鍵字有「食譜」，但我們不在前 12，線上關鍵字可能已和檔案不同",
+     "source": "web-top12",
+     "date": "2026-10-13"
+    }
+   ],
+   "changes": "TW 截圖整理／截圖 刪除／截圖 搜尋 前 12 名都沒有我們（名稱已有「截圖整理」，卡在 0 評分）；副標把低搜尋的「時間軸」換成「刪除清理」並補「文字」，讓截圖 刪除／清理／文字搜尋在同一語系成立；關鍵字刪隱私、買斷、食譜、地圖、照片、重複、相似、瘦身等錯意圖或 PicClear 的字，補螢幕、屏幕（HK）、截屏、收納、管理等截圖同義字。",
+   "depth": "deep",
+   "current_source": "名稱、副標：2026-10-13 App Store 線上產品頁（?l=語系）實測；關鍵字：_engine/data/shotinbox_full.json（App Store 不公開關鍵字）。注意：此語系線上名稱或副標已和資料檔不同（v1.0.4 已改過），線上關鍵字很可能也已不同，套用前以 ASC 現值為準"
+  }
+ },
+ "verification": {
+  "status": "pending_model_2",
+  "note": "模型 1 調教完成；依站長規則，副標與關鍵字要再經第二個模型獨立調教／驗證才可自動套用。",
+  "mechanical_check": "2026-10-13 python3 verify_shotinbox：50 語系 0 錯誤（副標 ≤30、關鍵字 ≤100（len 與 UTF-16 皆查）、逗號後無空白、無空項、無重複、關鍵字不與同語系名稱／副標重複（CJK／泰文另查子字串）、英文單複數、name 等於線上現值、payload 與 recommended 一致）"
+ }
+}

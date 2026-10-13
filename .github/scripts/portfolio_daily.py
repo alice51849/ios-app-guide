@@ -78,6 +78,13 @@ CATEGORY_ZH = {
     "other": "更多工具",
 }
 
+# One pain-first app story leads each Telegram digest, rotating daily through
+# the reviewed zh-Hant posts in .github/growth (own channel, one post a day).
+GROWTH_DIR = REPO_ROOT / ".github" / "growth"
+SPOTLIGHT_SOURCES = ("fifty-languages-campaign.json", "app-posts.json")
+SPOTLIGHT_LANG = "zh-Hant"
+SPOTLIGHT_TEXT_LIMIT = 600
+
 # Digest-only display fixes for linkset categories that send readers to the
 # wrong shelf (adult travel/vocabulary Apps listed as kids' learning, a Wi-Fi
 # diagnostic listed as a photo tool). The linkset itself is engine-owned.
@@ -428,12 +435,52 @@ def _pack_apps(
     return batches
 
 
-def telegram_messages(apps):
+def load_spotlight_posts(apps, directory=None):
+    """Reviewed zh-Hant posts for live Apps, in file order, without repeats."""
+    names = {app.app_id: app.name for app in apps}
+    posts = []
+    seen = set()
+    for filename in SPOTLIGHT_SOURCES:
+        path = Path(directory or GROWTH_DIR) / filename
+        if not path.is_file():
+            continue
+        with path.open(encoding="utf-8") as source:
+            document = json.load(source)
+        for post in document.get("posts", []):
+            app_id = str(post.get("app_id") or "")
+            text = str(post.get("text") or "").strip()
+            if (
+                post.get("lang") != SPOTLIGHT_LANG
+                or app_id not in names
+                or not text
+                or len(text) > SPOTLIGHT_TEXT_LIMIT
+                or "http" in text
+                or text in seen
+            ):
+                continue
+            seen.add(text)
+            posts.append({"name": names[app_id], "text": text})
+    return posts
+
+
+def spotlight_block(apps, today=None, directory=None):
+    posts = load_spotlight_posts(apps, directory)
+    if not posts:
+        return ""
+    day = today or dt.datetime.now(dt.timezone.utc).date()
+    post = posts[day.toordinal() % len(posts)]
+    # No extra link: the digest keeps exactly one tracked link per App.
+    return f"🔦 今日焦點｜{post['name']}\n{post['text']}\n（下載連結在下方清單）\n\n"
+
+
+def telegram_messages(apps, today=None):
     total = len(apps)
     campaign = PLATFORM_CAMPAIGNS["telegram"]
     footer = f"\n\n完整開發者頁：{DEVELOPER_URL}"
+    spotlight = spotlight_block(apps, today)
     reserved_header = (
         f"✨ 每日全 App 精選｜{total} 款｜第 99/99 則\n\n"
+        f"{spotlight}"
         f"{TELEGRAM_LANGUAGE_PITCH}"
         "今天已公開的 App 一次看，依需求挑選：\n"
     )
@@ -462,6 +509,7 @@ def telegram_messages(apps):
         part = "" if len(batches) == 1 else f"｜第 {index}/{len(batches)} 則"
         header = (
             f"✨ 每日全 App 精選｜{total} 款{part}\n\n"
+            f"{spotlight if index == 1 else ''}"
             f"{TELEGRAM_LANGUAGE_PITCH}"
             "今天已公開的 App 一次看，依需求挑選：\n"
         )

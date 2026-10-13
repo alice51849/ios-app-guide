@@ -855,6 +855,31 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
     def setUpClass(cls):
         cls.apps = portfolio_daily.load_public_apps()
 
+    def test_telegram_spotlight_rotates_reviewed_posts_without_duplicate_digest_links(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            app = self.apps[0]
+            other = self.apps[1]
+            Path(tmp, "app-posts.json").write_text(json.dumps({"posts": [
+                {"app_id": app.app_id, "lang": "zh-Hant", "ct": "spot_a", "text": "故事 A"},
+                {"app_id": other.app_id, "lang": "zh-Hant", "ct": "spot_b", "text": "故事 B"},
+                {"app_id": other.app_id, "lang": "ja", "ct": "spot_c", "text": "日本語"},
+                {"app_id": "1", "lang": "zh-Hant", "ct": "spot_d", "text": "下架 App"},
+                {"app_id": app.app_id, "lang": "zh-Hant", "ct": "x", "text": "含連結 https://example.com"},
+            ]}), encoding="utf-8")
+            posts = portfolio_daily.load_spotlight_posts(self.apps, tmp)
+            self.assertEqual(["故事 A", "故事 B"], [post["text"] for post in posts])
+            day = dt.date(2026, 10, 14)
+            block = portfolio_daily.spotlight_block(self.apps, day, tmp)
+            expected = posts[day.toordinal() % 2]
+            self.assertIn(expected["text"], block)
+            self.assertNotIn("https://", block)
+            with mock.patch.object(portfolio_daily, "GROWTH_DIR", Path(tmp)):
+                messages = portfolio_daily.telegram_messages(self.apps, today=day)
+            portfolio_daily.validate_coverage("telegram", self.apps, messages)
+            self.assertIn("🔦 今日焦點", messages[0].text)
+            self.assertTrue(all("今日焦點" not in m.text for m in messages[1:]))
+            self.assertTrue(all(len(m.text) <= portfolio_daily.TELEGRAM_LIMIT for m in messages))
+
     def test_current_live_registry_is_covered_without_a_static_post_pool(self):
         selected_ids = {app.app_id for app in self.apps}
         self.assertEqual(

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-12T15:08:27+0800",
- "count": 25,
- "content_sha256": "91ed5a53e49066879382f78a97a901dd946bf584011d5b92655b50446907d08c",
+ "source_generated": "2026-10-13T09:04:47+0800",
+ "count": 26,
+ "content_sha256": "ce3e062751a5c237c80b2b42e9565a93ea489e2d0f5d9aec7b38d93702a74b6f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -359,6 +359,27 @@
     "zh-TW": {
      "title": "Mochi: 可愛待辦清單",
      "short_description": "可愛又療癒的待辦清單，自選主題外觀、提醒與習慣追蹤"
+    }
+   }
+  },
+  "picclear": {
+   "ios_app_id": "6780223070",
+   "ios_name": "PicClear",
+   "android_folder": "12_PicClearPro",
+   "package": "com.picclear.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.picclear.app",
+   "paid": false,
+   "first_seen": "2026-10-13T09:04:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "PicClear Pro",
+     "short_description": "Clean Photo Library Offline"
+    },
+    "zh-TW": {
+     "title": "PicClear Pro",
+     "short_description": "截圖清理・手機空間不足"
     }
    }
   },

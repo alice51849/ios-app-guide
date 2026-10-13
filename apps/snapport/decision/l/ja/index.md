@@ -2,7 +2,7 @@
 title: "赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ja/index.html"
-modified: "2026-10-12"
+modified: "2026-10-13"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - 追跡なし
 - プライベート／端末内
 - App Store · ¥1,000
+- ★ 1.0/5 · 1
 
 [App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
 

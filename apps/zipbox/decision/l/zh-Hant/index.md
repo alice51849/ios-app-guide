@@ -2,7 +2,7 @@
 title: "Zipbox 解壓縮：RAR ZIP 7z — 零廣告，內容先看再處理 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/zh-Hant/index.html"
-modified: "2026-10-12"
+modified: "2026-10-13"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -21,6 +21,7 @@ Zipbox 是 App Store 付費下載 App，一次購買就包含全部功能，沒�
 - 無追蹤
 - 隱私優先／裝置端
 - App Store · $150.00
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 Zipbox 解壓縮：RAR ZIP 7z](https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 

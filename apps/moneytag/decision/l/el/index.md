@@ -2,7 +2,7 @@
 title: "MoneyTag: Έσοδα και έξοδα — Έργα · Ετικέτες · Αναφορά | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/el/index.html"
-modified: "2026-10-12"
+modified: "2026-10-13"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,6 +23,7 @@ publisher: "Lumi Studio"
 - Γραφικό στοιχείο
 - Apple Watch
 - App Store · Δωρεάν
+- ★ 5.0/5 · 1
 
 [Αποκτήστε το MoneyTag: Έσοδα και έξοδα από το App Store](https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 

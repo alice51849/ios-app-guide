@@ -1,7 +1,7 @@
 {
   "version": 2,
   "source": "Apple iTunes Lookup API",
-  "checked_at": "2026-10-11T13:35:16Z",
+  "checked_at": "2026-10-13T04:58:53Z",
   "app_count": 53,
   "app_ids": [
     "6754218117",
@@ -5318,7 +5318,9 @@
       "6801956402": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "6802166527": {
         "price": "0",
@@ -7062,7 +7064,9 @@
       "6780575828": {
         "price": "1000",
         "currency": "JPY",
-        "formatted_price": "¥1,000"
+        "formatted_price": "¥1,000",
+        "rating_value": 1.0,
+        "rating_count": 1
       },
       "6781337213": {
         "price": "0",
@@ -11664,8 +11668,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 2
+        "rating_value": 4.7,
+        "rating_count": 3
       },
       "6782275018": {
         "price": "0",
@@ -11686,7 +11690,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 3
+        "rating_count": 4
       },
       "6787193643": {
         "price": "0",
@@ -11827,7 +11831,9 @@
       "6806776579": {
         "price": "150",
         "currency": "TWD",
-        "formatted_price": "$150.00"
+        "formatted_price": "$150.00",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "6806779853": {
         "price": "0",
@@ -12251,8 +12257,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.1,
-        "rating_count": 19
+        "rating_value": 4.3,
+        "rating_count": 24
       },
       "6787193643": {
         "price": "0",

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-13T09:04:47+0800",
- "count": 26,
- "content_sha256": "ce3e062751a5c237c80b2b42e9565a93ea489e2d0f5d9aec7b38d93702a74b6f",
+ "source_generated": "2026-10-13T15:42:19+0800",
+ "count": 27,
+ "content_sha256": "146e79d9b2a57e2a8711bf4e28778f4b55583e85c311e5d06baf7071f9862be4",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -359,6 +359,27 @@
     "zh-TW": {
      "title": "Mochi: 可愛待辦清單",
      "short_description": "可愛又療癒的待辦清單，自選主題外觀、提醒與習慣追蹤"
+    }
+   }
+  },
+  "photocream": {
+   "ios_app_id": "6781808054",
+   "ios_name": "PhotoCream",
+   "android_folder": "17_PhotoCreamPro",
+   "package": "com.alice51849.photocream",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.photocream",
+   "paid": false,
+   "first_seen": "2026-10-13T15:42:19+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "PhotoCream Pro",
+     "short_description": "Film Simulation & Halation"
+    },
+    "zh-TW": {
+     "title": "PhotoCream Pro",
+     "short_description": "底片顆粒光暈・膠卷模擬"
     }
    }
   },

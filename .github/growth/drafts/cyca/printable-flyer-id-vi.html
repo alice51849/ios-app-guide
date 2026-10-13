@@ -1,0 +1,143 @@
+<!doctype html>
+<!--
+================================================================
+草稿說明（cyca-04）— 列印前不需刪除，這段不會印出來
+================================================================
+用途：A4 單頁列印說明單，上半印尼文、下半越南文，最下方一行給中心同仁的中文說明。
+      重點只有一個：App Store 頁面在台灣顯示中文／英文，但 App 內有印尼文、越南文，可在 App 內切換。
+給誰／放哪：新住民家庭服務中心、移工服務據點等，**取得對方同意後**由對方決定是否放置或轉交（請求信見 admin-request-letters.md 信 C）。
+發送者：擁有者 Guan Feng Lai（Lumi Studio）本人；單張上已寫明是開發者製作。
+規則：
+  1. 只交給同意的單位，不在公共場所自行張貼或發放。
+  2. 列印：瀏覽器開啟 → 列印 → A4、縮放 100%、邊界「無」或「預設」；黑白即可。印出後用手機實測兩個 QR 碼都能開到 Cyca 的 App Store 頁面。
+  3. 若 cyca-03 把「下次經期預測」改為免費，改 Gratis／Miễn phí 兩行後再印。
+  4. 按鈕文字（設定／Settings、語言／Language）以 App 實際畫面為準。
+  5. 請一位印尼語、一位越南語母語者各讀一次再大量列印。
+事實依據：_engine/data/cyca_full.json（en-US／id／vi）；50 種介面語言、App 內切換（擁有者確認）。
+QR 連結：id → https://apps.apple.com/app/id6782251621?pt=118326163&ct=cyca_flyer_id&mt=8
+         vi → https://apps.apple.com/app/id6782251621?pt=118326163&ct=cyca_flyer_vi&mt=8
+================================================================
+-->
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyca Language Flyer</title>
+<style>
+  :root {
+    --ink: #1d1a22;
+    --muted: #5c5566;
+    --line: #cfc8d6;
+    --accent: #8a3f6b;
+    --tint: #f7f0f4;
+    --paper: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --paper: #ffffff; }
+  }
+  :root[data-theme="dark"] { --paper: #ffffff; }
+  @page { size: A4; margin: 10mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #e9e6ec; color: var(--ink); }
+  body { font: 10pt/1.38 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif; }
+  .sheet {
+    width: 190mm; min-height: 277mm; margin: 12px auto; background: var(--paper);
+    padding: 6mm 7mm; display: flex; flex-direction: column; gap: 0;
+  }
+  .half { flex: 1 1 0; display: grid; grid-template-columns: 1fr 44mm; gap: 6mm; padding: 2mm 0 4mm; }
+  .cut { border-top: 1px dashed var(--line); position: relative; margin: 2mm 0; }
+  .cut span { position: absolute; left: 50%; top: -0.75em; transform: translateX(-50%); background: var(--paper); padding: 0 6px; color: var(--muted); font-size: 8pt; }
+  h1 { font-size: 16.5pt; line-height: 1.15; margin: 0 0 1mm; }
+  .lead { display: inline-block; background: var(--tint); border-left: 4px solid var(--accent); padding: 1.5mm 3mm; font-weight: 700; font-size: 11.5pt; margin: 1mm 0 2mm; }
+  h2 { font-size: 10.5pt; margin: 2mm 0 0.8mm; color: var(--accent); }
+  ol, ul { margin: 0; padding-left: 5mm; }
+  li { margin: 0.4mm 0; }
+  .k { font-weight: 700; white-space: nowrap; }
+  .priv { margin: 2mm 0 0; font-weight: 600; }
+  .free { margin: 0; }
+  .note { font-size: 9pt; color: var(--muted); margin: 2mm 0 0; }
+  .side { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2mm; padding-top: 2mm; }
+  .side svg.qr { width: 38mm; height: 38mm; display: block; shape-rendering: crispEdges; }
+  .side .search { font-size: 10pt; }
+  .side .search b { font-size: 13pt; }
+  .side .ios { font-size: 9pt; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0.5mm 3mm; }
+  .by { font-size: 8.5pt; color: var(--muted); margin-top: 2mm; }
+  .staff { border-top: 1px solid var(--line); padding-top: 2mm; font-size: 8.5pt; color: var(--muted); }
+  @media screen and (max-width: 720px) {
+    .sheet { width: auto; min-height: 0; margin: 0; padding: 16px; }
+    .half { grid-template-columns: 1fr; }
+    .side { order: -1; }
+  }
+  @media print {
+    html, body { background: #ffffff; }
+    .sheet { margin: 0; width: auto; min-height: 0; padding: 0; }
+    .half { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <section class="half" lang="id" aria-label="Bahasa Indonesia">
+    <div>
+      <h1>Cyca: catatan haid di iPhone</h1>
+      <div class="lead">Di dalam aplikasinya ada Bahasa Indonesia</div>
+      <p class="free">Halaman App Store dengan Apple ID Taiwan tampil dalam bahasa Mandarin atau Inggris, tapi aplikasinya punya 50 bahasa yang bisa diganti di dalam aplikasi, tanpa mengubah bahasa HP.</p>
+      <h2>Cara ganti bahasa</h2>
+      <ol>
+        <li>Buka Cyca.</li>
+        <li>Ketuk <span class="k">Pengaturan</span> (<span class="k">設定</span> / <span class="k">Settings</span>).</li>
+        <li>Ketuk <span class="k">Bahasa</span> (<span class="k">語言</span> / <span class="k">Language</span>).</li>
+        <li>Pilih <span class="k">Bahasa Indonesia</span>.</li>
+      </ol>
+      <p class="priv">Tanpa akun · tanpa iklan · data hanya di HP kamu · bisa dipakai tanpa internet</p>
+      <h2>Gratis dan Pro</h2>
+      <ul>
+        <li><b>Gratis:</b> catat hari ini dan haid (banyaknya darah, gejala, mood, catatan).</li>
+        <li><b>Cyca Pro</b>, beli sekali, bukan langganan: prediksi haid berikutnya, masa subur, ovulasi, riwayat kalender lengkap, dan lainnya.</li>
+      </ul>
+      <p class="note">Cyca hanya memberi perkiraan. Bukan alat medis dan bukan alat KB. Kalau haid sangat tidak teratur atau sakit sekali, periksakan ke dokter.</p>
+      <p class="by">Dibuat oleh Guan Feng Lai (Lumi Studio, Taiwan), pengembang Cyca.</p>
+    </div>
+    <div class="side">
+      <svg viewBox="0 0 41 41" role="img" class="qr"><title>QR App Store Cyca</title><path fill="#fff" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#000" d="M2 2.5h7m1 0h2m1 0h1m2 0h2m2 0h1m1 0h2m1 0h1m4 0h1m1 0h7m-37 1h1m5 0h1m1 0h2m1 0h2m1 0h1m4 0h2m2 0h2m1 0h1m1 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h1m3 0h1m1 0h4m2 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h5m1 0h2m1 0h4m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m6 0h1m1 0h8m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m2 0h1m3 0h1m1 0h1m3 0h1m2 0h1m1 0h1m3 0h1m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m1 0h2m1 0h1m1 0h5m1 0h2m-24 1h1m1 0h2m1 0h3m1 0h4m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m3 0h1m2 0h1m1 0h2m-36 1h1m1 0h3m7 0h1m1 0h2m4 0h1m3 0h1m2 0h2m3 0h1m1 0h1m-36 1h1m1 0h5m1 0h2m3 0h1m1 0h1m1 0h2m1 0h1m2 0h1m4 0h2m3 0h1m-29 1h1m3 0h3m1 0h3m2 0h2m2 0h2m1 0h1m1 0h3m4 0h1m-35 1h2m3 0h2m3 0h1m5 0h3m1 0h1m3 0h7m1 0h1m1 0h3m-36 1h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h3m1 0h3m3 0h1m1 0h3m1 0h4m2 0h1m-37 1h4m2 0h2m2 0h2m1 0h2m1 0h4m4 0h2m6 0h1m1 0h1m-33 1h4m1 0h2m2 0h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h2m1 0h1m1 0h2m2 0h2m-35 1h2m2 0h4m2 0h2m2 0h6m2 0h1m4 0h1m1 0h1m1 0h3m-36 1h2m3 0h1m2 0h1m1 0h3m3 0h1m2 0h1m1 0h7m2 0h2m3 0h2m-37 1h1m1 0h2m2 0h3m2 0h1m3 0h2m1 0h1m3 0h1m3 0h3m1 0h2m1 0h1m1 0h2m-36 1h4m2 0h3m1 0h1m1 0h1m3 0h2m1 0h1m1 0h3m3 0h2m2 0h1m2 0h1m-36 1h7m1 0h1m5 0h1m2 0h1m2 0h2m5 0h3m1 0h3m2 0h1m-37 1h1m6 0h1m1 0h4m3 0h1m2 0h1m1 0h1m1 0h3m2 0h2m3 0h1m1 0h1m-36 1h1m1 0h1m1 0h5m1 0h1m1 0h1m1 0h1m1 0h2m3 0h5m5 0h1m3 0h1m-36 1h2m1 0h2m5 0h2m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h4m2 0h1m1 0h4m-36 1h4m1 0h2m5 0h2m4 0h1m1 0h1m1 0h5m1 0h5m1 0h2m-35 1h1m2 0h1m3 0h3m3 0h1m1 0h6m2 0h4m1 0h2m1 0h1m2 0h2m-36 1h4m1 0h1m3 0h11m1 0h1m1 0h1m1 0h1m1 0h1m2 0h3m1 0h1m-36 1h1m1 0h1m1 0h2m4 0h1m2 0h2m1 0h1m1 0h1m1 0h3m1 0h1m2 0h2m1 0h2m1 0h1m-31 1h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h2m2 0h1m1 0h2m2 0h1m2 0h9m-29 1h2m1 0h1m3 0h4m2 0h5m2 0h1m3 0h1m1 0h3m-37 1h7m1 0h1m3 0h1m2 0h3m3 0h2m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h1m1 0h5m4 0h1m2 0h1m1 0h1m1 0h1m1 0h1m3 0h1m2 0h1m-36 1h1m1 0h3m1 0h1m7 0h1m3 0h4m1 0h2m1 0h1m1 0h6m1 0h1m-36 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h3m2 0h2m1 0h3m4 0h3m1 0h2m2 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h3m1 0h1m3 0h1m1 0h2m1 0h2m3 0h1m1 0h1m1 0h1m-35 1h1m5 0h1m4 0h2m1 0h1m1 0h1m2 0h2m1 0h1m1 0h4m3 0h2m1 0h1m-35 1h7m1 0h11m1 0h1m2 0h4m2 0h1m2 0h1m1 0h3"/></svg>
+      <div class="search">Pindai untuk App Store<br>atau cari: <b>Cyca</b></div>
+      <div class="ios">Hanya untuk iPhone</div>
+    </div>
+  </section>
+
+  <div class="cut" aria-hidden="true"><span>&#9986;</span></div>
+
+  <section class="half" lang="vi" aria-label="Tiếng Việt">
+    <div>
+      <h1>Cyca: ghi chép kỳ kinh trên iPhone</h1>
+      <div class="lead">Bên trong app có tiếng Việt</div>
+      <p class="free">Với Apple ID Đài Loan, trang App Store hiện tiếng Trung hoặc tiếng Anh, nhưng app có 50 ngôn ngữ, đổi ngay trong app, không cần đổi ngôn ngữ điện thoại.</p>
+      <h2>Cách đổi ngôn ngữ</h2>
+      <ol>
+        <li>Mở Cyca.</li>
+        <li>Chạm <span class="k">Cài đặt</span> (<span class="k">設定</span> / <span class="k">Settings</span>).</li>
+        <li>Chạm <span class="k">Ngôn ngữ</span> (<span class="k">語言</span> / <span class="k">Language</span>).</li>
+        <li>Chọn <span class="k">Tiếng Việt</span>.</li>
+      </ol>
+      <p class="priv">Không cần tài khoản · không quảng cáo · dữ liệu chỉ nằm trên điện thoại · dùng được khi không có mạng</p>
+      <h2>Miễn phí và Pro</h2>
+      <ul>
+        <li><b>Miễn phí:</b> ghi chép hôm nay và kỳ kinh (lượng kinh, triệu chứng, tâm trạng, ghi chú).</li>
+        <li><b>Cyca Pro</b>, mua một lần, không phải thuê bao: dự đoán kỳ kinh tiếp theo, ngày dễ thụ thai, ngày rụng trứng, toàn bộ lịch sử và nhiều hơn nữa.</li>
+      </ul>
+      <p class="note">Cyca chỉ đưa ra ước tính. Không phải thiết bị y tế và không phải biện pháp tránh thai. Nếu kinh nguyệt rất không đều hoặc đau nhiều, hãy đi khám bác sĩ.</p>
+      <p class="by">Người làm: Guan Feng Lai (Lumi Studio, Đài Loan), nhà phát triển Cyca.</p>
+    </div>
+    <div class="side">
+      <svg viewBox="0 0 41 41" role="img" class="qr"><title>QR App Store Cyca</title><path fill="#fff" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#000" d="M2 2.5h7m2 0h2m7 0h1m1 0h4m4 0h1m1 0h7m-37 1h1m5 0h1m5 0h1m2 0h1m1 0h3m1 0h1m5 0h2m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h4m1 0h1m2 0h4m1 0h1m3 0h1m2 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h2m1 0h4m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h3m4 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h1m1 0h1m2 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m1 0h1m2 0h1m1 0h2m2 0h1m1 0h1m2 0h1m1 0h2m-28 1h1m1 0h5m2 0h3m1 0h3m2 0h1m3 0h1m2 0h4m1 0h5m-34 1h1m2 0h1m2 0h1m2 0h1m1 0h5m4 0h1m3 0h1m2 0h2m3 0h1m1 0h1m-34 1h1m1 0h1m1 0h1m1 0h1m3 0h3m6 0h1m2 0h1m1 0h3m1 0h1m1 0h1m2 0h2m-37 1h6m1 0h2m2 0h2m1 0h1m1 0h1m4 0h1m1 0h2m4 0h3m1 0h1m2 0h1m-37 1h3m2 0h2m3 0h2m4 0h3m1 0h1m3 0h7m1 0h1m1 0h3m-36 1h3m1 0h1m1 0h2m7 0h2m1 0h1m3 0h1m4 0h2m1 0h1m3 0h1m-36 1h3m1 0h3m2 0h5m1 0h1m1 0h1m3 0h1m5 0h2m1 0h4m2 0h1m-37 1h4m1 0h1m1 0h2m1 0h2m2 0h2m1 0h2m2 0h3m2 0h2m1 0h1m1 0h2m2 0h2m-37 1h2m2 0h1m1 0h2m1 0h1m1 0h3m1 0h2m2 0h1m3 0h1m2 0h2m2 0h3m1 0h1m1 0h1m-36 1h5m3 0h2m2 0h1m1 0h1m2 0h1m4 0h1m2 0h1m1 0h1m4 0h3m-36 1h1m5 0h2m3 0h2m2 0h2m1 0h1m3 0h1m3 0h3m1 0h2m1 0h1m1 0h2m-37 1h6m2 0h1m2 0h5m5 0h2m3 0h3m1 0h1m2 0h1m2 0h1m-35 1h1m2 0h2m1 0h13m1 0h1m1 0h2m3 0h2m1 0h1m1 0h1m-35 1h1m6 0h1m1 0h5m2 0h1m2 0h1m1 0h1m1 0h3m2 0h2m3 0h1m1 0h1m-36 1h1m2 0h5m3 0h1m1 0h4m1 0h1m1 0h1m1 0h1m2 0h3m1 0h5m2 0h1m-36 1h1m2 0h2m1 0h1m2 0h3m1 0h1m1 0h1m2 0h3m4 0h1m1 0h1m2 0h2m2 0h2m-37 1h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m5 0h1m1 0h1m1 0h5m1 0h5m1 0h2m-36 1h2m1 0h2m2 0h1m4 0h1m1 0h3m2 0h1m3 0h1m1 0h1m7 0h1m-34 1h1m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m2 0h1m2 0h2m3 0h3m2 0h1m1 0h1m1 0h3m-37 1h1m1 0h4m1 0h2m1 0h5m1 0h1m1 0h1m1 0h3m1 0h1m2 0h2m1 0h2m1 0h1m-34 1h1m4 0h2m2 0h3m1 0h2m1 0h5m1 0h11m1 0h1m-27 1h6m3 0h1m1 0h1m3 0h1m3 0h2m3 0h2m1 0h1m-36 1h7m2 0h2m1 0h1m1 0h4m3 0h2m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h2m3 0h3m1 0h7m3 0h2m3 0h2m2 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h2m3 0h1m1 0h2m1 0h8m1 0h3m-37 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h3m4 0h3m1 0h2m2 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h4m2 0h2m1 0h2m1 0h1m1 0h1m3 0h4m-37 1h1m5 0h1m2 0h2m1 0h4m2 0h1m1 0h2m4 0h1m1 0h1m1 0h1m1 0h2m2 0h1m-37 1h7m1 0h3m1 0h7m1 0h1m2 0h4m2 0h1m2 0h1m1 0h3"/></svg>
+      <div class="search">Quét để mở App Store<br>hoặc tìm: <b>Cyca</b></div>
+      <div class="ios">Chỉ dành cho iPhone</div>
+    </div>
+  </section>
+
+  <p class="staff" lang="zh-Hant">給中心同仁：這是 iPhone 經期紀錄 App「Cyca」的印尼文／越南文使用說明，重點是 App 內可切換 50 種語言（含印尼文、越南文）。由開發者 Lumi Studio 製作，非付費合作；Cyca 提供估算，不是醫療器材，也不能用於避孕。</p>
+
+</main>
+</body>
+</html>

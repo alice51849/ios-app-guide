@@ -2,7 +2,7 @@
  "app": "claudeusagemini",
  "app_id": "6818607603",
  "generated": "2026-10-13",
- "method": "2026-10-13 量測。主要證據：iTunes Search API（itunes.apple.com/search，limit=200，取 UsageNow 名次與結果數）與 App Store 網頁版搜尋（apps.apple.com/{cc}/iphone/search，伺服器端只回前 12 名，含副標與評分數，用來判斷前 10 名意圖）。iTunes Search API 在本 session 的出口 IP 上被 Apple 嚴格限流（HTTP 403），依指示每次 403 都退避 90 秒、連續 8 次即停，因此結果數（results）只在部分詞有值；source=web-top12 的列 our_rank=null 代表不在前 12 名，results=null 代表未量到。搜尋建議端點 search.itunes.apple.com（MZSearchHints）被本環境出口政策擋下（CONNECT 403），無法取得熱度；改以結果數、前 10 名中 AI 用量追蹤器數量（ai_trackers_top10）、以及競品是否把該詞放在標題／副標作為熱度代理。intent_ok＝前 10 名至少一半是 AI 用量追蹤器。跨語系索引：以 Apple 公布的「App Store 各店面語系」對照表為基礎，再用 iTunes Search 探測（搜尋「usagenow＋只存在某一語系關鍵字欄的字」，含負對照）實測：en-US 在所有探測店面（US、GB、TW、HK、JP、KR、DE、CA、AU）都被索引；en-GB 在 GB、TW、HK、KR、DE、AU 被索引，在 US、JP、CA 不被索引；en-AU 專屬字在 AU 不命中；es-MX、zh-Hant、fr 在 US 被索引；zh-Hans 不在 TW／HK。未測完的店面沿用 Apple 表＋「en-US 到處都有」的實測規律（見 index_map）。因此英文字分三層：A＝en-US（全球核心）、B＝en-GB／en-CA（第二層，GB／EU／TW／HK／KR／CA 用）、C＝en-AU 與輕量語系的剩餘空間（第三層）；es-MX、pt-BR 尾端放 US 用的英文字。跨語系是否會把不同語系的字組成片語未經證實，所以 token、code 等少數英文字刻意保留在 zh-Hant／ja／ko／de 欄位，讓「token 用量」「claude code 制限」這類混合語言搜尋在同一語系內成立。長度以 Python len 與 UTF-16 長度雙重檢查（name／subtitle ≤30、keywords ≤100、逗號後無空白、無與標題／副標重複、英文無單複數重複）。",
+ "method": "2026-10-13 量測。主要證據：iTunes Search API（itunes.apple.com/search，limit=200，取 UsageNow 名次與結果數）與 App Store 網頁版搜尋（apps.apple.com/{cc}/iphone/search，伺服器端只回前 12 名，含副標與評分數，用來判斷前 10 名意圖）。iTunes Search API 在本 session 的出口 IP 上被 Apple 嚴格限流（HTTP 403），依指示每次 403 都退避 90 秒、連續 8 次即停，因此結果數（results）只在部分詞有值；source=web-top12 的列 our_rank=null 代表不在前 12 名，results=null 代表未量到。搜尋建議端點 search.itunes.apple.com（MZSearchHints）被本環境出口政策擋下（CONNECT 403），無法取得熱度；改以結果數、前 10 名中 AI 用量追蹤器數量（ai_trackers_top10）、以及競品是否把該詞放在標題／副標作為熱度代理。intent_ok＝前 10 名至少一半是 AI 用量追蹤器。跨語系索引：以 Apple 公布的「App Store 各店面語系」對照表為基礎，再用 iTunes Search 探測（搜尋「usagenow＋只存在某一語系關鍵字欄的字」，含負對照）實測：en-US 在所有探測店面（US、GB、TW、HK、JP、KR、DE、CA、AU）都被索引；en-GB 在 GB、TW、HK、KR、DE、AU 被索引，在 US、JP、CA 不被索引；en-AU 專屬字在 AU 不命中；es-MX、zh-Hant、fr 在 US 被索引；zh-Hans 不在 TW／HK。未測完的店面沿用 Apple 表＋「en-US 到處都有」的實測規律（見 index_map）。因此英文字分三層：A＝en-US（全球核心）、B＝en-GB（第二層，GB／EU／TW／HK／KR／AU 用；en-CA 因索引未驗證改放核心字保險）、C＝en-AU 與輕量語系的剩餘空間（第三層）；es-MX、pt-BR 尾端放 US 用的英文字。跨語系組合已於 2026-10-13 驗證：不同語系的字不會組成片語，一個搜尋詞的所有字必須落在同一個語系的標題＋副標＋關鍵字裡，en-US 與 en-GB 之間也一樣（TW／KR「usagenow weekly allowance」0 筆）；日文、韓文另有片假名／諺文音譯等價（engineer↔エンジニア），中文沒有。所以 token、code 刻意留在 zh-Hant、ja、ko、de，讓「token 用量」「claude code 制限」在同一語系內成立；gemini daily quota、claude usage alert 這類片語的字全部放在 en-US。跨語系片語探測必須用不含品牌名的搜尋詞（含 usagenow 時有時會跨語系命中）。不要更改主要語言（維持 en-US）：en-US 在 TW／HK／KR／GB／AU 被索引，很可能來自主要語言而非店面對照表。長度以 Python len 與 UTF-16 長度雙重檢查（name／subtitle ≤30、keywords ≤100、逗號後無空白、無與標題／副標重複、英文無單複數重複）。",
  "index_map": {
   "US": {
    "indexed": [
@@ -17,14 +17,14 @@
     "ar-SA",
     "zh-Hans"
    ],
-   "measured": "en-US ✓（weekly）、es-MX ✓（cuota）、zh-Hant ✓、fr ✓；en-GB ✗（allowance 不命中）"
+   "measured": "en-US ✓（weekly）、es-MX ✓（usagenow cuota reinicio 1/1）、zh-Hant ✓（usagenow 倒數計時 1/1）、fr ✓（iTunes usagenow jeton）；en-GB ✗（allowance 不命中）"
   },
   "GB": {
    "indexed": [
     "en-GB",
     "en-US"
    ],
-   "measured": "en-GB ✓、en-US ✓（weekly #77/107，負對照 xyzzyq／cuota 皆不命中）"
+   "measured": "en-GB ✓（usagenow allowance 1/1）、en-US ✓（usagenow session llm 1/1；session、llm 只同時存在於 en-US/en-CA）；負對照 xyzzyq／cuota 皆不命中"
   },
   "TW": {
    "indexed": [
@@ -32,7 +32,7 @@
     "en-US",
     "en-GB"
    ],
-   "measured": "zh-Hant ✓、en-US ✓、en-GB ✓；zh-Hans ✗"
+   "measured": "zh-Hant ✓、en-US ✓（weekly countdown llm，TW 1/3、HK 3/3）、en-GB ✓（allowance countdown llm 1/1）；zh-Hans ✗（智能体／小组件／代码 0 筆；倒计时 會被簡轉繁命中，不能當探針）；ja、ko、es、fr、en-AU ✗"
   },
   "HK": {
    "indexed": [
@@ -40,14 +40,14 @@
     "en-US",
     "en-GB"
    ],
-   "measured": "zh-Hant ✓、en-US ✓、en-GB ✓；zh-Hans ✗"
+   "measured": "zh-Hant ✓、en-US ✓（weekly countdown llm，TW 1/3、HK 3/3）、en-GB ✓（allowance countdown llm 1/1）；zh-Hans ✗（智能体／小组件／代码 0 筆；倒计时 會被簡轉繁命中，不能當探針）；ja、ko、es、fr、en-AU ✗"
   },
   "JP": {
    "indexed": [
     "ja",
     "en-US"
    ],
-   "measured": "en-US ✓；en-GB ✗"
+   "measured": "ja ✓、en-US ✓（weekly countdown llm 3/3）；en-GB ✗（allowance countdown llm 0 筆、usagenow allowance 0 筆）；zh-Hant、en-AU ✗。JP 會把英文字對應到片假名（engineer↔エンジニア）"
   },
   "KR": {
    "indexed": [
@@ -55,7 +55,7 @@
     "en-US",
     "en-GB"
    ],
-   "measured": "en-US ✓、en-GB ✓"
+   "measured": "ko ✓、en-US ✓（weekly countdown llm 3/3）、en-GB ✓（allowance countdown llm 1/1）；ja、zh-Hant、en-AU ✗。KR 會把英文字對應到諺文音譯（widget↔위젯）"
   },
   "DE": {
    "indexed": [
@@ -71,15 +71,14 @@
     "fr-CA",
     "en-US"
    ],
-   "measured": "en-US／en-CA ✓（weekly #58/113）；en-GB ✗（allowance 不命中）；en-CA 與 en-US 關鍵字相同，無法單獨驗證 en-CA"
+   "measured": "fr-CA ✓（usagenow jeton 1/1）；en-US／en-CA ✓（iTunes weekly #58/113，兩欄原本相同、無法分辨）；en-GB ✗（allowance 不命中）。en-CA 是否被索引待上線後以 usagenow requests 驗證"
   },
   "AU": {
    "indexed": [
-    "en-AU",
     "en-GB",
     "en-US"
    ],
-   "measured": "en-GB ✓（allowance #97/158）、en-US ✓（weekly #61/125）；en-AU 專屬字 gauge、programmer 都不命中＝目前 en-AU 關鍵字在 AU 沒有被索引（或尚未上線）"
+   "measured": "en-GB ✓（usagenow allowance 1/1）、en-US ✓（usagenow session llm 1/1）；en-AU 未驗證／不命中（gauge、programmer 都不命中）"
   },
   "SG": {
    "indexed": [
@@ -401,6 +400,114 @@
    "our_rank": 1,
    "results": 1,
    "tests_localization": "zh-Hant"
+  },
+  {
+   "country": "TW",
+   "probe": "usagenow weekly allowance",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "跨語系組合 en-US＋en-GB（各自單獨都是 1/1）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "KR",
+   "probe": "usagenow weekly allowance",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "跨語系組合 en-US＋en-GB",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "TW",
+   "probe": "大型語言模型 allowance",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "跨語系組合 zh-Hant＋en-GB（不含品牌）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "TW",
+   "probe": "大型語言模型 監控",
+   "matched": true,
+   "our_rank": 2,
+   "results": 2,
+   "tests_localization": "同語系 zh-Hant＋zh-Hant（正對照）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "KR",
+   "probe": "생성형 weekly",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "跨語系組合 ko＋en-US（不含品牌）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "TW",
+   "probe": "allowance countdown llm",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-GB（三字同在 en-GB）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "JP",
+   "probe": "allowance countdown llm",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "en-GB",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "GB",
+   "probe": "usagenow session llm",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US（session、llm 只同在 en-US/en-CA）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "AU",
+   "probe": "usagenow session llm",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "US",
+   "probe": "usagenow cuota limit",
+   "matched": false,
+   "our_rank": null,
+   "results": 12,
+   "tests_localization": "英文 limit 不會折到 es-MX 的 Límites",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "TW",
+   "probe": "usagenow 倒计时",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "簡體字會被轉成繁體命中 zh-Hant（不能當 zh-Hans 探針）",
+   "source": "web 2026-10-13 驗證"
+  },
+  {
+   "country": "CA",
+   "probe": "usagenow jeton",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "fr-CA",
+   "source": "web 2026-10-13 驗證"
   }
  ],
  "unreachable": [
@@ -960,18 +1067,12 @@
   }
  },
  "cross_locale_repeats_accepted": [
-  "US: 'contador' repeated in ['es-MX', 'pt-BR']",
-  "US: 'restante' repeated in ['es-MX', 'pt-BR']",
-  "US: 'semanal' repeated in ['es-MX', 'pt-BR']",
-  "US: 'horas' repeated in ['es-MX', 'pt-BR']",
-  "US: 'alerta' repeated in ['es-MX', 'pt-BR']",
-  "US: '限制' repeated in ['zh-Hant', 'zh-Hans']",
-  "US: '提醒' repeated in ['zh-Hant', 'zh-Hans']",
-  "US: '通知' repeated in ['zh-Hant', 'zh-Hans']",
-  "US: '上限' repeated in ['zh-Hant', 'zh-Hans']",
-  "US: '消耗' repeated in ['zh-Hant', 'zh-Hans']",
-  "US: '刷新' repeated in ['zh-Hant', 'zh-Hans']",
-  "US: '用完' repeated in ['zh-Hant', 'zh-Hans']"
+  "US: 'contador','restante','semanal','horas','alerta' repeated in ['es-MX','pt-BR']（各為 MX、BR 主語系）",
+  "US: '限制','通知','上限' repeated in ['zh-Hant','zh-Hans']（各為 TW、CN 主語系）",
+  "TW/HK/JP/KR/DE/SG/US: 'code','token' repeated in [home locale,'en-US']（同語系片語規則：token 用量、claude code 制限）",
+  "US: 'code' also in ['ko','ru','vi','ar-SA']（同語系片語規則）",
+  "IN: 'code' repeated in ['hi','en-US']（只留 hi，其餘 8 個印度語系已刪）",
+  "CA: 13 個核心字 repeated in ['en-CA','en-US']（刻意保險，en-CA 是否被索引驗證後再改）"
  ],
  "locales": {
   "ar-SA": {
@@ -983,16 +1084,17 @@
    "recommended": {
     "name": "UsageNow: استخدام Claude/Codex",
     "subtitle": "حدود AI: Copilot، Gemini",
-    "keywords": "كلود,متتبع,توكن,حصة,عداد,ويدجت,تصفير,متبقي,أسبوعي,ساعات,تنبيه,استهلاك,اشتراك,ذكاء,اصطناعي,code,gpt"
+    "keywords": "كلود,متتبع,توكن,حصة,عداد,ويدجت,تصفير,متبقي,أسبوعي,ساعات,تنبيه,استهلاك,ذكاء,اصطناعي,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 24,
-    "keywords": 98
+    "keywords": 87
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 اشتراك、gpt（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "bn-BD": {
    "current": {
@@ -1003,16 +1105,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex ব্যবহার",
     "subtitle": "AI সীমা: Copilot, Gemini",
-    "keywords": "টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,ট্র্যাকার,code,gpt,opus,sonnet,vibe,credits,balance,left,gauge"
+    "keywords": "টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,ট্র্যাকার,code,left,gauge"
    },
    "lengths": {
     "name": 30,
     "subtitle": 24,
-    "keywords": 100
+    "keywords": 63
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits、balance（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "ca": {
    "current": {
@@ -1023,16 +1126,17 @@
    "recommended": {
     "name": "UsageNow: Ús de Claude i Codex",
     "subtitle": "Límits IA: Copilot i Gemini",
-    "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control,gpt,opus"
+    "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control"
    },
    "lengths": {
     "name": 30,
     "subtitle": 27,
-    "keywords": 97
+    "keywords": 88
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。ca 在 ES 與 es-ES 一起被索引，尾端放兩個 es-ES 沒有的西文字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "cs": {
    "current": {
@@ -1043,16 +1147,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex využití",
     "subtitle": "Limity AI: Copilot a Gemini",
-    "keywords": "spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,předplatné,code,gpt,opus,sonnet"
+    "keywords": "spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 27,
-    "keywords": 98
+    "keywords": 71
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 předplatné、gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "da": {
    "current": {
@@ -1063,16 +1168,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex-forbrug",
     "subtitle": "AI-grænser: Copilot og Gemini",
-    "keywords": "kvote,tæller,tilbage,ugentlig,timer,advarsel,nulstil,sporing,abonnement,code,gpt,opus,sonnet,vibe"
+    "keywords": "kvote,tæller,tilbage,ugentlig,timer,advarsel,nulstil,sporing,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 29,
-    "keywords": 97
+    "keywords": 65
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 abonnement、gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "de-DE": {
    "current": {
@@ -1082,13 +1188,13 @@
    },
    "recommended": {
     "name": "UsageNow: Claude/Codex-Nutzung",
-    "subtitle": "KI-Limits für Copilot & Gemini",
-    "keywords": "verbrauch,kontingent,token,code,ai,zähler,stunden,sitzung,warnung,auslastung,abo,übrig,woche"
+    "subtitle": "KI-Kontingent: Copilot, Gemini",
+    "keywords": "verbrauch,ai,token,code,zähler,stunden,sitzung,warnung,auslastung,übrig,woche"
    },
    "lengths": {
     "name": 30,
     "subtitle": 30,
-    "keywords": 92
+    "keywords": 77
    },
    "evidence": [
     {
@@ -1224,8 +1330,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "DE claude nutzung #10、claude verbrauch #6、ki nutzung #8，但 claude usage／codex usage 不在前 12；標題改 Claude/Codex-Nutzung；刪 usage／quota／widget／reset／countdown／llm／api／dev／entwickler（en 已涵蓋或類別名）；保留 token、code 供德文組合（token verbrauch #10）。",
-   "depth": "deep"
+   "changes": "DE claude nutzung #10、claude verbrauch #6、ki nutzung #8；標題改 Claude/Codex-Nutzung，副標改 KI-Kontingent（kontingent 7/10；ki limit 0/10、claude limit 1/10）；刪 usage／quota／widget／reset／countdown／llm／api／dev／entwickler、abo；保留 ai、token、code（不同語系的字不會組成片語，ai nutzung、token verbrauch 需要在 de 欄位內成立）。",
+   "depth": "deep",
+   "verification": "驗證後：副標改 KI-Kontingent；刪 abo；ai 保留（ai nutzung 需同語系）。"
   },
   "el": {
    "current": {
@@ -1236,16 +1343,17 @@
    "recommended": {
     "name": "UsageNow: Χρήση Claude/Codex",
     "subtitle": "Όρια AI: Copilot και Gemini",
-    "keywords": "κατανάλωση,ποσόστωση,μετρητής,επαναφορά,υπόλοιπο,εβδομάδα,ώρες,ειδοποίηση,όριο,code,gpt,opus,sonnet"
+    "keywords": "κατανάλωση,ποσόστωση,μετρητής,επαναφορά,υπόλοιπο,εβδομάδα,ώρες,ειδοποίηση,όριο,code"
    },
    "lengths": {
     "name": 28,
     "subtitle": 27,
-    "keywords": 99
+    "keywords": 83
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "en-AU": {
    "current": {
@@ -1254,14 +1362,14 @@
     "keywords": "code,dev,developer,coding,programmer,quota,token,widget,reset,timer,gauge,cap,plan,api,cli,max,stats"
    },
    "recommended": {
-    "name": "UsageNow: Claude & Codex Usage",
-    "subtitle": "AI Limits for Copilot & Gemini",
-    "keywords": "gpt,opus,sonnet,vibe,credits,balance,left,budget,accounts,lockscreen,gauge,cooldown,dashboard"
+    "name": "UsageNow for Claude & Codex",
+    "subtitle": "AI Usage for Copilot & Gemini",
+    "keywords": "left,lockscreen,gauge,cooldown,dashboard"
    },
    "lengths": {
-    "name": 30,
-    "subtitle": 30,
-    "keywords": 93
+    "name": 27,
+    "subtitle": 29,
+    "keywords": 40
    },
    "evidence": [
     {
@@ -1353,8 +1461,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "實測 AU 搜尋吃的是 en-GB（allowance #97）＋en-US（weekly #61），en-AU 專屬字 gauge、programmer 都不命中，所以 AU 的排名靠 en-US／en-GB 兩欄；en-AU 只放兩欄都沒有的第三層字（opus、sonnet、gpt、credits…）當保險，刪 dev／developer／coding／programmer／api／cli／stats。",
-   "depth": "deep"
+   "changes": "標題副標同 en-US。實測 AU 吃 en-GB＋en-US，en-AU 專屬字不命中，只放兩欄都沒有的少量字（left、lockscreen、gauge、cooldown、dashboard）；刪 dev／developer／coding／programmer／api／cli／stats 與 gpt、opus、sonnet、vibe、credits、balance、budget、accounts（錯意圖或 App 沒有的功能）。",
+   "depth": "deep",
+   "verification": "驗證後：標題副標同 en-US；刪 gpt、opus、sonnet、vibe、credits、balance、budget、accounts。"
   },
   "en-CA": {
    "current": {
@@ -1363,14 +1472,14 @@
     "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly"
    },
    "recommended": {
-    "name": "UsageNow: Claude & Codex Usage",
-    "subtitle": "AI Limits for Copilot & Gemini",
-    "keywords": "premium,requests,daily,model,alert,watch,meter,counter,plan,remaining,subscription,allowance,cap"
+    "name": "UsageNow for Claude & Codex",
+    "subtitle": "AI Usage for Copilot & Gemini",
+    "keywords": "tracker,quota,token,widget,reset,weekly,session,limit,daily,alert,code,rate,hour,premium,requests"
    },
    "lengths": {
-    "name": 30,
-    "subtitle": 30,
-    "keywords": 96
+    "name": 27,
+    "subtitle": 29,
+    "keywords": 97
    },
    "evidence": [
     {
@@ -1462,8 +1571,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "CA 索引 en-CA＋fr-CA（另加 en-US），en-GB 不在 CA，所以 en-CA 放與 en-GB 相同的第二層字，避免與 en-US 重複；原本與 en-US 一字不差＝整欄浪費。",
-   "depth": "deep"
+   "changes": "標題副標同 en-US。CA 是否索引 en-US 無法驗證（en-CA 原本與 en-US 相同；AU 實測 en-AU 不被索引），所以 en-CA 放核心字當保險，與 en-US 重複屬刻意；另放 premium、requests（CA 不索引 en-GB）。",
+   "depth": "deep",
+   "verification": "驗證後：CA 是否索引 en-US 未驗證，改放核心字當保險；上線後以 CA「usagenow requests」確認 en-CA 有被索引。"
   },
   "en-GB": {
    "current": {
@@ -1472,14 +1582,14 @@
     "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,allowance,cli"
    },
    "recommended": {
-    "name": "UsageNow: Claude & Codex Usage",
-    "subtitle": "AI Limits for Copilot & Gemini",
-    "keywords": "premium,requests,daily,model,alert,watch,meter,counter,plan,remaining,subscription,allowance,cap"
+    "name": "UsageNow for Claude & Codex",
+    "subtitle": "AI Usage for Copilot & Gemini",
+    "keywords": "premium,requests,model,watch,remaining,allowance,notify,percent"
    },
    "lengths": {
-    "name": 30,
-    "subtitle": 30,
-    "keywords": 96
+    "name": 27,
+    "subtitle": 29,
+    "keywords": 63
    },
    "evidence": [
     {
@@ -1635,10 +1745,22 @@
      "intent_ok": false,
      "ai_trackers_top10": "0/10",
      "source": "web-top12"
+    },
+    {
+     "term": "copilot premium requests",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "CoPilot – Flight Deck Tools",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/12",
+     "source": "web-top12（驗證 2026-10-13）"
     }
    ],
-   "changes": "GB 同時索引 en-GB 與 en-US（實測 weekly 在 GB 命中），en-GB 原本 13/15 個字與 en-US 重複＝浪費；改放 en-US 沒有的第二層英文字（premium、requests、daily、model、alert、meter…，對應 Copilot premium requests、Gemini 每日配額、各模型上限），TW／HK／KR 也會一起吃到。",
-   "depth": "deep"
+   "changes": "標題副標同 en-US。GB、TW、HK、KR、DE、AU 同時索引 en-GB 與 en-US，所以 en-GB 只放 en-US 沒有的字：premium、requests（Copilot premium requests；低搜尋量長尾押注）、model、watch、remaining、allowance（claude allowance TW #1、KR #2）、notify、percent。刪 daily、alert（移到 en-US）、meter、counter（錯意圖／競品 App 名）、subscription、plan、cap（錯意圖）。剩餘空間等量測後再補。",
+   "depth": "deep",
+   "verification": "驗證後：刪 daily、alert（移 en-US）、meter、counter、subscription、plan、cap；premium、requests 降為長尾押注。"
   },
   "en-US": {
    "current": {
@@ -1647,13 +1769,13 @@
     "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly"
    },
    "recommended": {
-    "name": "UsageNow: Claude & Codex Usage",
-    "subtitle": "AI Limits for Copilot & Gemini",
-    "keywords": "tracker,widget,reset,quota,token,code,rate,llm,weekly,session,openai,github,hour,monitor,max,pro"
+    "name": "UsageNow for Claude & Codex",
+    "subtitle": "AI Usage for Copilot & Gemini",
+    "keywords": "tracker,widget,reset,quota,token,code,rate,llm,weekly,session,hour,monitor,limit,alert,daily,gpt"
    },
    "lengths": {
-    "name": 30,
-    "subtitle": 30,
+    "name": 27,
+    "subtitle": 29,
     "keywords": 96
    },
    "evidence": [
@@ -1748,13 +1870,13 @@
     {
      "term": "copilot usage",
      "country": "US",
-     "our_rank": 4,
+     "our_rank": 2,
      "results": null,
      "top1": "GH-300 GitHub Copilot",
      "top1_ratings": 0,
      "intent_ok": true,
      "ai_trackers_top10": "6/10",
-     "source": "web-top12"
+     "source": "web-top12；2026-10-13 驗證複測為 #2"
     },
     {
      "term": "claude reset",
@@ -1898,10 +2020,99 @@
      "intent_ok": false,
      "ai_trackers_top10": "2/10",
      "source": "web-top12"
+    },
+    {
+     "term": "usage meter",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage Meter for SLT",
+     "top1_ratings": null,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "claude usage alert",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": null,
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/12",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "gpt usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Token Monitor: AI Usage",
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/12",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "gemini usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": null,
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/12",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "openai",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "ChatGPT",
+     "top1_ratings": null,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/11",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "github",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "GitHub",
+     "top1_ratings": null,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/12",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "github usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": null,
+     "top1_ratings": null,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/12",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "claude pro",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Claude by Anthropic",
+     "top1_ratings": null,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/11",
+     "source": "web-top12（驗證 2026-10-13）"
     }
    ],
-   "changes": "標題改放兩個主搜尋品牌＋Usage（claude usage／codex usage 標題完全命中）；AI、Limits、Copilot、Gemini 移到副標；關鍵字刪 dev／developer／coding（類別名已索引）、countdown／agent／meter（錯意圖），補 weekly（claude weekly limit #4）、rate、openai、hour、max、pro。en-US 是主要語系，實測在所有探測店面都被索引，因此放最核心的英文字。",
-   "depth": "deep"
+   "changes": "標題改相容寫法「UsageNow for Claude & Codex」，Usage、AI、Copilot、Gemini 放副標（claude usage／codex usage 仍在同一語系內成立）；關鍵字刪 dev／developer／coding（類別名）、countdown／agent／meter（錯意圖）、openai／github／max／pro（官方 App 或 App 名、錯意圖），保留 weekly（claude weekly limit #4），補 limit（副標不再有 Limits）、alert（claude usage alert 7/12）、daily（gemini daily quota 要與 quota、gemini 同語系）、gpt（gpt usage 6/12）。en-US 是主要語言，實測在 US、GB、TW、HK、JP、KR、DE、AU 都被索引，放最核心的字。",
+   "depth": "deep",
+   "verification": "驗證後：標題改相容寫法 for；刪 openai、github、max、pro，補 limit、alert、daily、gpt（實測不同語系的字不會組成片語）。"
   },
   "es-ES": {
    "current": {
@@ -2043,12 +2254,12 @@
    "recommended": {
     "name": "UsageNow: Uso Claude y Codex",
     "subtitle": "Límites IA: Copilot y Gemini",
-    "keywords": "cuota,contador,reinicio,restante,semanal,horas,alerta,premium,requests,daily,model,watch,meter"
+    "keywords": "cuota,contador,reinicio,restante,semanal,horas,alerta,límite,premium,requests,watch"
    },
    "lengths": {
     "name": 28,
     "subtitle": 28,
-    "keywords": 94
+    "keywords": 83
    },
    "evidence": [
     {
@@ -2151,8 +2362,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "MX 同字 uso claude 只有 #9、uso de ia 不在前 12；標題加 Claude、Codex。es-MX 也在 US 被索引、en-GB 不在 US，所以後半欄放 en-US 放不下的英文字（premium、requests、daily、model…，Copilot premium requests 在 US 目前 0/10 是 AI 追蹤器、沒人搶）給 US 用。",
-   "depth": "deep"
+   "changes": "MX uso claude #9、uso de ia 不在前 12；標題加 Claude、Codex。es-MX 也在 US 被索引，但不同語系的字不會組成片語，英文尾字只能跟 es-MX 自己的字（Claude、Codex、Copilot、Gemini、Uso、IA）組合，所以只留 premium、requests（copilot premium requests）、watch（claude watch）；補 límite（MX límite claude 7/10）。",
+   "depth": "deep",
+   "verification": "驗證後：英文尾字只能和 es-MX 自己的字組合；刪 daily、model、meter，補 límite。"
   },
   "fi": {
    "current": {
@@ -2163,16 +2375,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex-käyttö",
     "subtitle": "AI-rajat: Copilot ja Gemini",
-    "keywords": "tekoäly,kulutus,kiintiö,laskuri,jäljellä,viikko,tunnit,ilmoitus,nollaus,seuranta,code,gpt,opus,vibe"
+    "keywords": "tekoäly,kulutus,kiintiö,laskuri,jäljellä,viikko,tunnit,ilmoitus,nollaus,seuranta,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 27,
-    "keywords": 99
+    "keywords": 85
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "fr-CA": {
    "current": {
@@ -2182,13 +2395,13 @@
    },
    "recommended": {
     "name": "UsageNow : usage Claude, Codex",
-    "subtitle": "Limites IA : Copilot et Gemini",
-    "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,suivi,abonnement,plafond"
+    "subtitle": "Quota IA : Copilot et Gemini",
+    "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,plafond"
    },
    "lengths": {
     "name": 30,
-    "subtitle": 30,
-    "keywords": 98
+    "subtitle": 28,
+    "keywords": 81
    },
    "evidence": [
     {
@@ -2203,8 +2416,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "CA 次要語系：與 fr-FR 同一套法文字，刪掉 ai／code／dev／usage／tracker／quota／token／widget／llm／monitor／api 等 en-US 已涵蓋的英文字。",
-   "depth": "deep"
+   "changes": "CA 次要語系：與 fr-FR 同一套（副標 Quota IA；刪 suivi、abonnement 與 en-US 已涵蓋的英文字）。實測 CA 有索引 fr-CA（usagenow jeton 1/1）。",
+   "depth": "deep",
+   "verification": "驗證後：副標改 Quota IA；刪 suivi、abonnement。"
   },
   "fr-FR": {
    "current": {
@@ -2214,13 +2428,13 @@
    },
    "recommended": {
     "name": "UsageNow : usage Claude, Codex",
-    "subtitle": "Limites IA : Copilot et Gemini",
-    "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,suivi,abonnement,plafond"
+    "subtitle": "Quota IA : Copilot et Gemini",
+    "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,plafond"
    },
    "lengths": {
     "name": 30,
-    "subtitle": 30,
-    "keywords": 98
+    "subtitle": 28,
+    "keywords": 81
    },
    "evidence": [
     {
@@ -2334,8 +2548,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "FR 實測 claude usage／codex usage／utilisation claude 都不在前 12；標題改含 Claude、Codex＋usage，utilisation 進關鍵字；刪 9 個與 en-US／en-GB 重複的英文字，換成法文搜尋字。",
-   "depth": "deep"
+   "changes": "FR claude usage／codex usage／utilisation claude 都不在前 12；標題改 usage＋Claude、Codex，副標改 Quota IA（quota claude 8/10；limite claude、suivi ia 0/10）；刪 10 個與 en-US／en-GB 重複的英文字（usage 移進標題）與 suivi、abonnement，改放法文搜尋字。",
+   "depth": "deep",
+   "verification": "驗證後：副標改 Quota IA；刪 suivi、abonnement。"
   },
   "gu-IN": {
    "current": {
@@ -2346,16 +2561,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex વપરાશ",
     "subtitle": "AI મર્યાદા: Copilot, Gemini",
-    "keywords": "ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,ટ્રેકર,code,vibe,credits,balance"
+    "keywords": "ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,ટ્રેકર"
    },
    "lengths": {
     "name": 28,
     "subtitle": 27,
-    "keywords": 71
+    "keywords": 45
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code、vibe、credits、balance（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "he": {
    "current": {
@@ -2366,16 +2582,17 @@
    "recommended": {
     "name": "UsageNow: שימוש Claude/Codex",
     "subtitle": "מגבלות AI: Copilot, Gemini",
-    "keywords": "קלוד,מעקב,טוקן,מכסה,מונה,איפוס,נותר,שבועי,שעות,התראה,וידג׳ט,code,gpt,opus,sonnet,vibe,credits,left"
+    "keywords": "קלוד,מעקב,טוקן,מכסה,מונה,איפוס,נותר,שבועי,שעות,התראה,וידג׳ט,code,left"
    },
    "lengths": {
     "name": 28,
     "subtitle": 26,
-    "keywords": 98
+    "keywords": 69
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "hi": {
    "current": {
@@ -2386,12 +2603,12 @@
    "recommended": {
     "name": "UsageNow: Claude, Codex उपयोग",
     "subtitle": "AI लिमिट: Copilot, Gemini",
-    "keywords": "टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,ट्रैकर,सीमा,अलर्ट,code,gpt,opus,sonnet"
+    "keywords": "टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,ट्रैकर,सीमा,अलर्ट,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 25,
-    "keywords": 82
+    "keywords": 66
    },
    "evidence": [
     {
@@ -2440,7 +2657,8 @@
     }
    ],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。IN 主要靠 en-GB／en-US：IN 實測 copilot usage #1、ai usage tracker #12。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "hr": {
    "current": {
@@ -2451,16 +2669,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex limiti",
     "subtitle": "AI potrošnja: Copilot, Gemini",
-    "keywords": "kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,gpt,opus,sonnet,vibe,credits,left"
+    "keywords": "kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,left"
    },
    "lengths": {
     "name": 29,
     "subtitle": 29,
-    "keywords": 100
+    "keywords": 71
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "hu": {
    "current": {
@@ -2471,16 +2690,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex limitek",
     "subtitle": "MI-használat: Copilot, Gemini",
-    "keywords": "fogyasztás,kvóta,számláló,maradék,heti,órák,értesítés,követés,ai,code,gpt,opus,sonnet,vibe,credits"
+    "keywords": "fogyasztás,kvóta,számláló,maradék,heti,órák,értesítés,követés,ai,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 29,
-    "keywords": 98
+    "keywords": 69
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "id": {
    "current": {
@@ -2491,16 +2711,17 @@
    "recommended": {
     "name": "UsageNow: Batas Claude & Codex",
     "subtitle": "Pemakaian AI: Copilot, Gemini",
-    "keywords": "penggunaan,kuota,penghitung,sisa,mingguan,jam,notifikasi,pelacak,pantau,code,gpt,opus,sonnet,vibe"
+    "keywords": "penggunaan,kuota,penghitung,sisa,mingguan,jam,notifikasi,pelacak,pantau,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 29,
-    "keywords": 97
+    "keywords": 76
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "it": {
    "current": {
@@ -2510,13 +2731,13 @@
    },
    "recommended": {
     "name": "UsageNow: Uso Claude e Codex",
-    "subtitle": "Utilizzo e limiti IA, Copilot",
-    "keywords": "gemini,consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,abbonamento,tetto"
+    "subtitle": "Utilizzo IA: Copilot e Gemini",
+    "keywords": "consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto"
    },
    "lengths": {
     "name": 28,
     "subtitle": 29,
-    "keywords": 97
+    "keywords": 78
    },
    "evidence": [
     {
@@ -2608,8 +2829,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "IT utilizzo claude #2、utilizzo ia #3，但 uso claude／claude usage 不在前 12；標題改 Uso＋Claude、Codex，utilizzo 移副標；Gemini 放關鍵字；刪英文重複字。",
-   "depth": "deep"
+   "changes": "IT utilizzo claude #2、utilizzo ia #3，uso claude／claude usage 不在前 12；標題改 Uso＋Claude、Codex，副標改 Utilizzo IA: Copilot e Gemini（原本是唯一缺 Gemini 的副標；limite claude／ia 0–1/10 不放）；刪英文重複字、gemini（進副標）、abbonamento。",
+   "depth": "deep",
+   "verification": "驗證後：副標改 Utilizzo IA: Copilot e Gemini；刪 gemini、abbonamento。"
   },
   "ja": {
    "current": {
@@ -2618,14 +2840,14 @@
     "keywords": "code,dev,開発者,エンジニア,制限,上限,トークン,usage,tracker,meter,quota,token,ウィジェット,リセット,利用状況,残り,カウントダウン,生成ai,週間,管理"
    },
    "recommended": {
-    "name": "UsageNow：Claude・Codex AI 使用量",
-    "subtitle": "上限とリセット時刻・Copilot/Gemini",
-    "keywords": "code,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,通知,残量,残り,使用状況,使用率,監視,アラート,opus,sonnet,max,プラン,セッション,クォータ"
+    "name": "UsageNow：Claude・Codex対応 使用量と上限",
+    "subtitle": "AIのリセット時刻を通知・Copilot/Gemini",
+    "keywords": "code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,使用率,アラート,クォータ"
    },
    "lengths": {
-    "name": 28,
-    "subtitle": 24,
-    "keywords": 96
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 67
    },
    "evidence": [
     {
@@ -2636,7 +2858,7 @@
      "top1": "ギガ残量 - Data Remaining",
      "top1_ratings": 11593,
      "intent_ok": false,
-     "ai_trackers_top10": "4/10",
+     "ai_trackers_top10": "3/10",
      "source": "itunes-search"
     },
     {
@@ -2869,10 +3091,33 @@
      "intent_ok": false,
      "ai_trackers_top10": "1/10",
      "source": "web-top12"
+    },
+    {
+     "term": "claude レートリミット",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 4,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "ai 使用量（連寫標題檢查）",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "—",
+     "source": "web-top12（驗證 2026-10-13）；Agent Meter: AI使用量 #2、AI使用量 #3、UsageMaster: AI使用量管理 #9，連寫標題可正常排名"
     }
    ],
-   "changes": "JP 現在 ai 使用量／claude 使用量／claude code 使用量都不在前 12，但標題含「AI使用量」的競品有排上，顯示「AI使用量トラッカー」連寫不利斷詞；標題改成 Claude・Codex AI 使用量（以空白隔開），副標放上限、リセット；刪 usage／tracker／meter／quota／token／dev（JP 會索引 en-US）、開発者／エンジニア／管理／生成ai／カウントダウン／利用状況（單字搜都是錯意圖）；制限保留（claude code 制限 #2、codex 制限 #9）。",
-   "depth": "deep"
+   "changes": "標題改「UsageNow：Claude・Codex対応 使用量と上限」（対応＝相容標記；上限 claude／ai／codex 上限 9–10/10 為 AI 追蹤器）；實測連寫的 AI使用量 不影響斷詞，原本「空白隔開」的理由不成立。AI、リセット時刻、通知放副標。刪 usage／tracker／quota／dev（JP 索引 en-US）、meter（en-US 也已刪除，且 JP 不索引 en-GB，JP 從此不再有 meter）、開発者／エンジニア／管理／生成ai／カウントダウン／利用状況、残量（0/10）、max／opus／sonnet／プラン／監視／セッション（錯意圖）；保留 token、トークン、制限（claude code 制限 #2、codex 制限 8/10），補 レートリミット（claude レートリミット 8/10）。",
+   "depth": "deep",
+   "verification": "驗證後：標題改 Claude・Codex対応＋使用量と上限；刪 残量、max、opus、sonnet、プラン、監視、セッション、通知（進副標），補回 token。"
   },
   "kn-IN": {
    "current": {
@@ -2883,16 +3128,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex ಬಳಕೆ",
     "subtitle": "AI ಮಿತಿ: Copilot, Gemini",
-    "keywords": "ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,ಟ್ರ್ಯಾಕರ್,code,left,budget,accounts"
+    "keywords": "ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,ಟ್ರ್ಯಾಕರ್,left"
    },
    "lengths": {
     "name": 27,
     "subtitle": 24,
-    "keywords": 70
+    "keywords": 49
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code、budget、accounts（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "ko": {
    "current": {
@@ -2901,14 +3147,14 @@
     "keywords": "code,dev,개발자,usage,tracker,meter,quota,token,토큰,할당량,리셋,초기화,남은양,잔여,위젯,카운트다운,생성형,주간,세션,코딩,에이전트,llm,모니터"
    },
    "recommended": {
-    "name": "UsageNow: Claude·Codex AI 사용량",
-    "subtitle": "한도·리셋 시간 알림 Copilot·Gemini",
-    "keywords": "클로드,코덱스,코파일럿,제미나이,트래커,code,코드,클로드코드,토큰,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터,소진,요금제,실시간,opus,max"
+    "name": "UsageNow for Claude·Codex 사용량",
+    "subtitle": "AI 한도·리셋 시간 알림·Copilot·Gemini",
+    "keywords": "클로드,코덱스,코파일럿,제미나이,트래커,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터"
    },
    "lengths": {
     "name": 29,
-    "subtitle": 26,
-    "keywords": 96
+    "subtitle": 29,
+    "keywords": 76
    },
    "evidence": [
     {
@@ -3086,10 +3332,22 @@
      "intent_ok": false,
      "ai_trackers_top10": "0/10",
      "source": "web-top12"
+    },
+    {
+     "term": "클로드코드",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Claude by Anthropic",
+     "top1_ratings": null,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/12",
+     "source": "web-top12（驗證 2026-10-13）"
     }
    ],
-   "changes": "KR claude 사용량／클로드 사용량／ai 사용량／codex 사용량都不在前 12，而同名「AI 사용량 트래커」的競品排第 1 並進 Developer Tools 前 25；標題改 Claude·Codex AI 사용량，補 클로드、코덱스 音譯（클로드 한도 4/5、코덱스 사용량 9/10 為 AI 追蹤器）；刪 usage／tracker／meter／quota／token／llm／dev（KR 也索引 en-US＋en-GB）、카운트다운／생성형／코딩／에이전트／개발자。",
-   "depth": "deep"
+   "changes": "標題改「UsageNow for Claude·Codex 사용량」，AI、한도、리셋 시간 알림、Copilot、Gemini 放副標；補 클로드、코덱스、코파일럿、제미나이 音譯；保留 token、토큰、코드；刪 usage／tracker／meter／quota／llm／dev、카운트다운／생성형／코딩／에이전트／개발자、클로드코드（Anthropic 品牌規範不允許）、max／opus／소진／요금제／실시간（錯意圖）。注意：잔여、할당량、초기화 目前在 KR 連加品牌都搜不到，上線前請先比對 ASC 現行 ko 欄位。現有 ai 사용량 트래커 #3 靠標題的 트래커，移到關鍵字後可能下滑，需追蹤。",
+   "depth": "deep",
+   "verification": "驗證後：標題改 for 相容寫法；刪 클로드코드、max、opus、소진、요금제、실시간，補回 token；上線前比對 ASC 現行 ko 欄位。"
   },
   "ml-IN": {
    "current": {
@@ -3100,16 +3358,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex ഉപയോഗം",
     "subtitle": "AI പരിധി: Copilot, Gemini",
-    "keywords": "ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,ട്രാക്കർ,code,lockscreen,gauge"
+    "keywords": "ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,ട്രാക്കർ,lockscreen,gauge"
    },
    "lengths": {
     "name": 29,
     "subtitle": 25,
-    "keywords": 73
+    "keywords": 68
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "mr-IN": {
    "current": {
@@ -3120,16 +3379,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex वापर",
     "subtitle": "AI मर्यादा: Copilot, Gemini",
-    "keywords": "ट्रॅकर,शिल्लक,आठवडा,तास,सूचना,code,cooldown,dashboard"
+    "keywords": "ट्रॅकर,शिल्लक,आठवडा,तास,सूचना,cooldown,dashboard"
    },
    "lengths": {
     "name": 27,
     "subtitle": 27,
-    "keywords": 53
+    "keywords": 48
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "ms": {
    "current": {
@@ -3140,16 +3400,17 @@
    "recommended": {
     "name": "UsageNow: Had Claude & Codex",
     "subtitle": "Penggunaan AI: Copilot, Gemini",
-    "keywords": "kuota,pembilang,baki,mingguan,jam,notifikasi,penjejak,pantau,guna,code,gpt,opus,sonnet,vibe,credits"
+    "keywords": "kuota,pembilang,baki,mingguan,jam,notifikasi,penjejak,pantau,guna,code"
    },
    "lengths": {
     "name": 28,
     "subtitle": 30,
-    "keywords": 99
+    "keywords": 70
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "nl-NL": {
    "current": {
@@ -3160,12 +3421,12 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex-gebruik",
     "subtitle": "AI-limiet: Copilot en Gemini",
-    "keywords": "verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie,abonnement"
+    "keywords": "verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie"
    },
    "lengths": {
     "name": 30,
     "subtitle": 28,
-    "keywords": 89
+    "keywords": 78
    },
    "evidence": [
     {
@@ -3247,7 +3508,8 @@
     }
    ],
    "changes": "NL ai gebruik #3、claude limiet #4（6/6 是 AI 追蹤器）；標題直接放 Claude、Codex＋gebruik；verbruik 單獨搜是能源 App，只留作組合字；刪英文重複字。",
-   "depth": "deep"
+   "depth": "deep",
+   "verification": "驗證後：刪 abonnement（與「沒有訂閱」衝突、無證據）。"
   },
   "no": {
    "current": {
@@ -3258,16 +3520,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex-forbruk",
     "subtitle": "AI-grenser: Copilot og Gemini",
-    "keywords": "kvote,teller,gjenstår,ukentlig,timer,varsel,nullstill,sporing,økt,abonnement,code,gpt,opus,sonnet"
+    "keywords": "kvote,teller,gjenstår,ukentlig,timer,varsel,nullstill,sporing,økt,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 29,
-    "keywords": 97
+    "keywords": 70
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 abonnement、gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "or-IN": {
    "current": {
@@ -3278,16 +3541,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex ବ୍ୟବହାର",
     "subtitle": "AI ସୀମା: Copilot, Gemini",
-    "keywords": "ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,ଟ୍ରାକର,code"
+    "keywords": "ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,ଟ୍ରାକର"
    },
    "lengths": {
     "name": 30,
     "subtitle": 24,
-    "keywords": 49
+    "keywords": 44
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "pa-IN": {
    "current": {
@@ -3298,16 +3562,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex ਵਰਤੋਂ",
     "subtitle": "AI ਸੀਮਾ: Copilot, Gemini",
-    "keywords": "ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,ਟ੍ਰੈਕਰ,code"
+    "keywords": "ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,ਟ੍ਰੈਕਰ"
    },
    "lengths": {
     "name": 28,
     "subtitle": 24,
-    "keywords": 49
+    "keywords": 44
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "pl": {
    "current": {
@@ -3318,16 +3583,17 @@
    "recommended": {
     "name": "UsageNow: Zużycie Claude/Codex",
     "subtitle": "Limity AI: Copilot i Gemini",
-    "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code,gpt,opus,sonnet,vibe,credits"
+    "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 27,
-    "keywords": 98
+    "keywords": 69
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "pt-BR": {
    "current": {
@@ -3338,12 +3604,12 @@
    "recommended": {
     "name": "UsageNow: Uso Claude e Codex",
     "subtitle": "Limites IA: Copilot e Gemini",
-    "keywords": "consumo,cota,contador,reinício,restante,semanal,horas,alerta,rastreador,medidor,sessão,counter,cap"
+    "keywords": "consumo,cota,contador,reinício,restante,semanal,horas,alerta,rastreador,medidor,sessão"
    },
    "lengths": {
     "name": 28,
     "subtitle": 28,
-    "keywords": 98
+    "keywords": 86
    },
    "evidence": [
     {
@@ -3435,8 +3701,9 @@
      "source": "web-top12"
     }
    ],
-   "changes": "BR uso claude #9、uso ia 不在前 12（第 1 名 UsageScope: Uso de IA）；標題加 Claude、Codex，IA 放副標；pt-BR 也在 US 被索引，尾端補 counter、cap 兩個 US 用、且不與 en-US／es-MX 重複的英文字。",
-   "depth": "deep"
+   "changes": "BR uso claude #9、uso ia 不在前 12（第 1 名 UsageScope: Uso de IA）；標題加 Claude、Codex，IA 放副標（副標的 Limites IA 只為 Copilot／Gemini 組合，limite claude 1/10、limite ia 0/10，不期待單獨排名）；刪 counter（競品 App 名）、cap（錯意圖）。",
+   "depth": "deep",
+   "verification": "驗證後：刪 counter（競品 App 名）、cap（錯意圖）。"
   },
   "pt-PT": {
    "current": {
@@ -3447,16 +3714,17 @@
    "recommended": {
     "name": "UsageNow: Uso Claude e Codex",
     "subtitle": "Limites IA: Copilot e Gemini",
-    "keywords": "consumo,contador,restante,semanal,horas,alerta,sessão,monitorizar,rastreador,code,gpt,opus,sonnet"
+    "keywords": "consumo,contador,restante,semanal,horas,alerta,sessão,monitorizar,rastreador,code"
    },
    "lengths": {
     "name": 28,
     "subtitle": 28,
-    "keywords": 97
+    "keywords": 81
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "ro": {
    "current": {
@@ -3467,16 +3735,17 @@
    "recommended": {
     "name": "UsageNow: Consum Claude/Codex",
     "subtitle": "Limite AI: Copilot și Gemini",
-    "keywords": "cotă,contor,rămas,săptămânal,ore,alertă,resetare,urmărire,sesiune,code,gpt,opus,sonnet,vibe,credits"
+    "keywords": "cotă,contor,rămas,săptămânal,ore,alertă,resetare,urmărire,sesiune,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 28,
-    "keywords": 99
+    "keywords": 70
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "ru": {
    "current": {
@@ -3507,16 +3776,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex limity",
     "subtitle": "Spotreba AI: Copilot a Gemini",
-    "keywords": "využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code,gpt,opus,sonnet,vibe"
+    "keywords": "využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 29,
-    "keywords": 98
+    "keywords": 77
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "sl-SI": {
    "current": {
@@ -3527,16 +3797,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex limiti",
     "subtitle": "Poraba UI: Copilot in Gemini",
-    "keywords": "kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,gpt,opus,sonnet,vibe,left"
+    "keywords": "kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,left"
    },
    "lengths": {
     "name": 29,
     "subtitle": 28,
-    "keywords": 100
+    "keywords": 79
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "sv": {
    "current": {
@@ -3547,16 +3818,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex-gränser",
     "subtitle": "AI-användning: Copilot, Gemini",
-    "keywords": "förbrukning,kvot,mätare,kvar,vecka,timmar,avisering,nollställ,spårning,code,gpt,opus,sonnet,vibe"
+    "keywords": "förbrukning,kvot,mätare,kvar,vecka,timmar,avisering,nollställ,spårning,code"
    },
    "lengths": {
     "name": 30,
     "subtitle": 30,
-    "keywords": 96
+    "keywords": 75
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "ta-IN": {
    "current": {
@@ -3567,16 +3839,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex வரம்பு",
     "subtitle": "AI பயன்பாடு: Copilot, Gemini",
-    "keywords": "டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,மீதம்,டிராக்கர்,code"
+    "keywords": "டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,மீதம்,டிராக்கர்"
    },
    "lengths": {
     "name": 29,
     "subtitle": 28,
-    "keywords": 64
+    "keywords": 59
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "te-IN": {
    "current": {
@@ -3587,16 +3860,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex పరిమితి",
     "subtitle": "AI వినియోగం: Copilot, Gemini",
-    "keywords": "టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,ట్రాకర్,code"
+    "keywords": "టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,ట్రాకర్"
    },
    "lengths": {
     "name": 30,
     "subtitle": 28,
-    "keywords": 54
+    "keywords": 49
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 code（code：IN 已由 hi、en-US 涵蓋；其餘為錯意圖或 App 沒有的功能），其餘不變。"
   },
   "th": {
    "current": {
@@ -3607,16 +3881,17 @@
    "recommended": {
     "name": "UsageNow: ใช้งาน Claude/Codex",
     "subtitle": "ลิมิต AI: Copilot, Gemini",
-    "keywords": "โควตา,โทเคน,วิดเจ็ต,รีเซ็ต,คงเหลือ,รายสัปดาห์,ชั่วโมง,แจ้งเตือน,ติดตาม,จำกัด,code,gpt,opus,sonnet"
+    "keywords": "โควตา,โทเคน,วิดเจ็ต,รีเซ็ต,คงเหลือ,รายสัปดาห์,ชั่วโมง,แจ้งเตือน,ติดตาม,จำกัด,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 25,
-    "keywords": 97
+    "keywords": 81
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "tr": {
    "current": {
@@ -3627,16 +3902,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex limiti",
     "subtitle": "AI kullanımı: Copilot, Gemini",
-    "keywords": "yapay,zeka,kota,sayaç,kalan,haftalık,saat,bildirim,sıfırlama,takip,code,gpt,opus,sonnet,vibe,credits"
+    "keywords": "yapay,zeka,kota,sayaç,kalan,haftalık,saat,bildirim,sıfırlama,takip,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 29,
-    "keywords": 100
+    "keywords": 71
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "uk": {
    "current": {
@@ -3647,16 +3923,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex ліміти",
     "subtitle": "Витрата ШІ: Copilot і Gemini",
-    "keywords": "клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code,gpt"
+    "keywords": "клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 28,
-    "keywords": 98
+    "keywords": 94
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "ur-PK": {
    "current": {
@@ -3667,16 +3944,17 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex استعمال",
     "subtitle": "AI کی حد: Copilot, Gemini",
-    "keywords": "ٹوکن,کوٹہ,ویجیٹ,باقی,ٹریکر,نگرانی,code,gpt,opus,sonnet,vibe,credits,balance,left,budget,accounts"
+    "keywords": "ٹوکن,کوٹہ,ویجیٹ,باقی,ٹریکر,نگرانی,code,left"
    },
    "lengths": {
     "name": 30,
     "subtitle": 25,
-    "keywords": 96
+    "keywords": 43
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits、balance、budget、accounts（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "vi": {
    "current": {
@@ -3687,16 +3965,17 @@
    "recommended": {
     "name": "UsageNow: Hạn mức Claude/Codex",
     "subtitle": "Theo dõi AI: Copilot, Gemini",
-    "keywords": "giới,dùng,sử,dụng,lượng,còn,lại,đặt,tuần,giờ,thông,báo,tiện,ích,đếm,phiên,code,left,budget,accounts"
+    "keywords": "giới,dùng,sử,dụng,lượng,còn,lại,đặt,tuần,giờ,thông,báo,tiện,ích,đếm,phiên,code,left"
    },
    "lengths": {
     "name": 30,
     "subtitle": 28,
-    "keywords": 99
+    "keywords": 83
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "驗證後：刪 budget、accounts（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
   },
   "zh-Hans": {
    "current": {
@@ -3705,14 +3984,14 @@
     "keywords": "code,dev,开发者,程序员,usage,tracker,meter,quota,token,配额,限额,剩余,重置,倒计时,小组件,监控,统计,每周,编程,人工智能,大模型,智能体,llm,代码"
    },
    "recommended": {
-    "name": "UsageNow：Claude、Codex AI 用量追踪",
-    "subtitle": "剩余额度与重置倒计时・Copilot、Gemini",
-    "keywords": "配额,限额,限制,token,code,监控,仪表,小组件,提醒,通知,每周,5小时,锁屏,手表,上限,消耗,订阅,套餐,刷新,用完,多账号,统计,大模型,lockscreen,gauge"
+    "name": "UsageNow for Claude、Codex 用量额度",
+    "subtitle": "AI 剩余追踪、重置倒计时提醒・Copilot、Gemini",
+    "keywords": "配额,限额,限制,token,code,监控,小组件,通知,每周,5小时,锁屏,上限,多账号,统计,大模型,lockscreen,gauge"
    },
    "lengths": {
-    "name": 29,
-    "subtitle": 25,
-    "keywords": 94
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 70
    },
    "evidence": [
     {
@@ -3736,10 +4015,33 @@
      "intent_ok": true,
      "ai_trackers_top10": "7/10",
      "source": "web-top12"
+    },
+    {
+     "term": "copilot usage",
+     "country": "SG",
+     "our_rank": 9,
+     "results": null,
+     "top1": "iCodex: Claude & Codex Usage",
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "gemini quota",
+     "country": "SG",
+     "our_rank": 11,
+     "results": null,
+     "top1": "Design School: Shortcuts",
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12（驗證 2026-10-13）"
     }
    ],
-   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。SG 次要語系：SG 實測 claude 用量、ai 用量都不在前 12。",
-   "depth": "light"
+   "changes": "（較輕量）比照 zh-Hant：標題「UsageNow for Claude、Codex 用量额度」，副標放 AI 剩余追踪、重置倒计时提醒＋Copilot、Gemini；刪英文重複字、類別字與 订阅／套餐／手表／仪表／消耗／刷新／用完（錯意圖）。SG 次要語系：SG 實測 copilot usage #9、gemini quota #11，claude 用量、ai 用量不在前 12。",
+   "depth": "light",
+   "verification": "驗證後：比照 zh-Hant 改 for 標題；刪 订阅、套餐、手表、仪表、消耗、刷新、用完、提醒（進副標）。"
   },
   "zh-Hant": {
    "current": {
@@ -3748,14 +4050,14 @@
     "keywords": "code,dev,開發者,工程師,usage,tracker,meter,quota,token,使用量,限額,配額,限制,剩餘,倒數計時,小工具,監控,每週,程式,人工智慧,大型語言模型,llm"
    },
    "recommended": {
-    "name": "UsageNow：Claude、Codex AI 用量追蹤",
-    "subtitle": "剩餘額度與重置倒數・Copilot、Gemini",
-    "keywords": "使用量,限額,限制,配額,token,code,監控,儀表,小工具,widget,提醒,通知,每週,5小時,鎖定畫面,手錶,上限,消耗,訂閱,方案,重設,刷新,用完,多帳號,統計,opus"
+    "name": "UsageNow for Claude、Codex 用量額度",
+    "subtitle": "AI 剩餘追蹤、重置倒數提醒・Copilot、Gemini",
+    "keywords": "使用量,限額,限制,配額,token,code,監控,小工具,通知,每週,5小時,鎖定畫面,上限,重設,多帳號,統計"
    },
    "lengths": {
-    "name": 29,
-    "subtitle": 24,
-    "keywords": 94
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 58
    },
    "evidence": [
     {
@@ -4054,10 +4356,56 @@
      "intent_ok": false,
      "ai_trackers_top10": "0/10",
      "source": "web-top12"
+    },
+    {
+     "term": "額度追蹤",
+     "country": "TW",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow：AI 用量與額度追蹤",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/10",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "copilot usage",
+     "country": "HK",
+     "our_rank": 10,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12（驗證 2026-10-13）"
+    },
+    {
+     "term": "chatgpt 用量",
+     "country": "TW",
+     "our_rank": null,
+     "results": 1,
+     "top1": "Tokenman: AI Usage Tracker",
+     "top1_ratings": null,
+     "intent_ok": true,
+     "ai_trackers_top10": "1/1",
+     "source": "web-top12（驗證 2026-10-13）"
     }
    ],
-   "changes": "TW 各組合第 1 名都把品牌放標題（Usage for Claude、iCodex、Codex Tracker）；標題改放 Claude、Codex＋AI 用量追蹤，副標放剩餘額度／重置倒數＋Copilot、Gemini；刪 dev／usage／tracker／meter／quota／llm（TW、HK 同時索引 en-US＋en-GB）、開發者／工程師／程式（類別字）、倒數計時（計時器 App）、人工智慧／大型語言模型；限制保留（claude 限制 #1、3/3 為 AI 追蹤器）。",
-   "depth": "deep"
+   "changes": "標題改「UsageNow for Claude、Codex 用量額度」：品牌進標題（claude 用量、codex 用量、claude 額度的第 1 名都把品牌放標題），用 for 表示相容；保留 額度（額度追蹤 #1、claude 額度 #2、ai 額度 #3 都靠標題的 額度）。AI、追蹤、剩餘、重置倒數、提醒放副標。關鍵字刪 dev／usage／tracker／meter／quota／llm／widget（en-US 已有）、開發者／工程師／程式（類別字）、倒數計時（計時器 App）、人工智慧／大型語言模型；保留 token、code（token 用量 #4，混合搜尋要同語系）、限制（claude 限制 #1）。",
+   "depth": "deep",
+   "verification": "驗證後：標題改 for 相容寫法並保住 額度；AI、追蹤移副標；刪 widget、提醒、訂閱、方案、手錶、用完、刷新、消耗、儀表、opus。"
   }
+ },
+ "verification": {
+  "date": "2026-10-13",
+  "lenses": [
+   "跨語系索引與片語組合（159 次網頁搜尋實測）",
+   "App 審查與商標風險＋搜尋意圖（指南 2.3.7／5.2.1／5.2.2）",
+   "逐字證據與浪費（TW、JP、US、KR、HK、GB 實測）",
+   "機械稽核（50 語系 python3＋10 次複測）"
+  ],
+  "accepted": 48,
+  "rejected": 5,
+  "notes": "結論成立但要修正。採納：英文標題改相容寫法「UsageNow for Claude & Codex」（CJK 用 for／対応，但保住 TW 的 額度、JP 的 上限）；實測不同語系的字不會組成片語，所以 limit、alert、daily、gpt 移進 en-US，es-MX／en-GB 的英文尾字縮減；刪 openai、github、max、pro、訂閱類與 opus／sonnet 等錯意圖字；ja、ko 補回 token；it 副標補 Gemini；de／fr 副標改用有證據的 Kontingent／Quota；en-CA 改放核心字保險；補齊證據列與索引表。駁回 5 項：zh-Hant 加 max/pro/opus（錯意圖、無需求證據）、zh-Hant 加 chatgpt（2.3.7 熱門 App 名、只有 1 筆結果）、de 刪 ai、hu／sl-SI 刪 ai（不同語系不會組片語，ai nutzung 等需同語系）、nl 補 abonnement/opus/gpt（錯意圖）。未驗證：Spanish／俄文單複數是否折疊（límite／лимит）、en-CA 是否在 CA 被索引、KR 잔여／할당량／초기화 為何搜不到、標題改動的實際排名效果。"
  }
 }

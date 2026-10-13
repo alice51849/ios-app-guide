@@ -31,7 +31,10 @@
           "claude code",
           "ai 額度",
           "ai usage",
-          "claude"
+          "claude",
+          "claude 額度",
+          "codex 用量",
+          "額度追蹤"
         ],
         "hk": [
           "claude usage",
@@ -41,7 +44,8 @@
           "claude 使用量",
           "ai 使用量",
           "claude code",
-          "claude 制限"
+          "claude 制限",
+          "claude code 使用量"
         ],
         "us": [
           "claude usage",
@@ -49,14 +53,17 @@
           "codex usage",
           "ai usage tracker",
           "claude code",
-          "ai limits"
+          "ai limits",
+          "codex limit"
         ],
         "gb": [
           "claude usage"
         ],
         "kr": [
           "claude 사용량",
-          "ai 사용량"
+          "ai 사용량",
+          "ai 사용량 트래커",
+          "클로드 사용량"
         ]
       }
     }

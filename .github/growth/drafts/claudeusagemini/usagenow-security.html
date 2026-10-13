@@ -13,7 +13,7 @@
   1. 本頁每一句都只根據 _engine/data/claudeusagemini_full.json 的商店文案（en-US／ja／zh-Hant），
      沒寫的技術細節一律不寫。若 App 實際行為與下列任一句不符，先改 App 或刪掉那一句，不要照發。
   2. 發佈前必須由擁有者確認並處理（無法在雲端確認的事）：
-     [ ] 把三處 {{SUPPORT_EMAIL}} 換成 UsageNow 品牌信箱（claudeusagemini-01 完成後）。
+     [ ] 把全部 {{SUPPORT_EMAIL}}（三語各一處，每處 href 與文字各一次）換成 UsageNow 品牌信箱（claudeusagemini-01 完成後）。
      [ ] App 沒有任何第三方 SDK（當機回報、分析、廣告）。有的話刪掉「Can I check this myself?」三語各一題，並同步修正商店文案「talks only to the services themselves」。
      [ ] 在 App 內移除帳號的實際路徑與按鈕文字，填進三語「How do I remove an account」第 1 點（目前寫的是通用說法「在帳號列表移除該帳號」）。
      [ ] 登入步驟 1–3 的按鈕名稱與實際畫面一致；截圖放好後取消 <figure> 區塊的註解。
@@ -154,10 +154,10 @@
   <p>In the Keychain on your device, the encrypted storage iOS provides for credentials. UsageNow does not send it to any server of its own, because there isn't one.</p>
 
   <h3>Who does UsageNow talk to over the network?</h3>
-  <p>Only the services you signed in to, to read your usage, and Apple, for the trial and the one-time purchase through the App Store. There is no UsageNow server, no account and no tracking.</p>
+  <p>Only the services you signed in to, to read your usage, and Apple, for the one-time purchase through the App Store. There is no UsageNow server, no account and no tracking.</p>
 
   <h3>Can I check this myself?</h3>
-  <p>Yes. Because there is no UsageNow server, you can watch the app's traffic with a proxy on your own network. The only hosts you should see belong to the services you signed in to and to Apple.</p>
+  <p>Yes. Because there is no UsageNow server, you can watch the app's traffic with a proxy on your own network. The hosts UsageNow connects to should belong only to the services you signed in to and to Apple.</p>
 
   <h3>How do I remove an account or revoke access?</h3>
   <ol class="steps">
@@ -225,10 +225,10 @@
   <p>デバイスのキーチェーン（iOS が認証情報のために用意している暗号化された保存領域）です。UsageNow 独自のサーバは存在しないので、そこへ送信されることもありません。</p>
 
   <h3>UsageNow はどこと通信しますか？</h3>
-  <p>利用状況を読み取るためにサインインした各サービスと、無料トライアルと買い切り購入のために App Store（Apple）だけです。UsageNow のサーバ、アカウント、トラッキングはありません。</p>
+  <p>利用状況を読み取るためにサインインした各サービスと、買い切り購入のための App Store（Apple）だけです。UsageNow のサーバ、アカウント、トラッキングはありません。</p>
 
   <h3>自分で確かめられますか？</h3>
-  <p>はい。UsageNow のサーバがないので、手元のネットワークでプロキシを使って通信先を確認できます。表示されるのは、サインインしたサービスと Apple のホストだけのはずです。</p>
+  <p>はい。UsageNow のサーバがないので、手元のネットワークでプロキシを使って通信先を確認できます。UsageNow の通信先は、サインインしたサービスと Apple のホストだけのはずです。</p>
 
   <h3>アカウントの削除・アクセスの取り消し方法</h3>
   <ol class="steps">
@@ -296,10 +296,10 @@
   <p>存在你裝置的鑰匙圈（iOS 專門保存帳密憑證的加密儲存區）。UsageNow 沒有自己的伺服器，所以也不會把它傳到任何 UsageNow 伺服器。</p>
 
   <h3>UsageNow 會跟誰連線？</h3>
-  <p>只有你登入的那些服務（用來讀取你的用量），以及 App Store 的 Apple（用於免費試用與一次性購買）。沒有 UsageNow 伺服器、沒有帳號，也沒有追蹤。</p>
+  <p>只有你登入的那些服務（用來讀取你的用量），以及 App Store 的 Apple（用於一次性購買）。沒有 UsageNow 伺服器、沒有帳號，也沒有追蹤。</p>
 
   <h3>我可以自己驗證嗎？</h3>
-  <p>可以。因為沒有 UsageNow 伺服器，你可以在自己的網路上用 proxy 觀察 App 的連線，看到的應該只有你登入的服務和 Apple 的主機。</p>
+  <p>可以。因為沒有 UsageNow 伺服器，你可以在自己的網路上用 proxy 觀察 App 的連線，UsageNow 連線的對象應該只有你登入的服務和 Apple 的主機。</p>
 
   <h3>如何移除帳號或收回存取權？</h3>
   <ol class="steps">

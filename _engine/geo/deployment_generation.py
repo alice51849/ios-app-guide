@@ -36,8 +36,8 @@ EDGE_SITE = "https://open.cait518.cc/ios-app-guide"
 # Only this exact suffix is reversible; all application bytes still match SHA-256.
 EDGE_BEACON = (
     b'<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/'
-    b'v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" '
-    b'integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" '
+    b'v4bc70e2c01a94c73b74392e4234840661791215815920" '
+    b'integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" '
     b'data-cf-beacon=\'{"version":"2024.11.0","token":"34d707e33e364ac582d0cb00e4243bc0",'
     b'"r":1,"spa":2}\' crossorigin="anonymous"></script>'
 )

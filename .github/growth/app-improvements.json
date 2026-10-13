@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T16:28:05Z",
+  "updated_at": "2026-10-13T16:32:18Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -16,24 +16,10 @@
       "status": "todo"
     },
     {
-      "id": "oa-usagenow-asc",
-      "title": "ASC 副標／關鍵字：在本機 session 回一句確認（之後不用再問）",
-      "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
-      "how": "Mac 連線後，在「本機外宣待辦執行（雲端連動）」輸入：可以，副標和關鍵字只要經過一個以上模型驗證就直接改 ASC，UsageNow 照雲端給的商店文字改。",
-      "status": "todo"
-    },
-    {
-      "id": "oa-mac-online",
-      "title": "讓 Mac 保持連線，本機 Claude 才能接手雲端開好的待辦",
-      "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
-      "how": "在 Mac 終端機執行 cd ~/00_GrowthEngine && claude remote-control --name \"GrowthEngine 本機\" --permission-mode auto，視窗別關、Mac 別睡；雲端已開好的「本機外宣待辦執行」會自動開始。",
-      "status": "todo"
-    },
-    {
-      "id": "oa-local-daily",
-      "title": "請本機 Claude 自己設每天 09:23 的排程（雲端不能替你的電腦設）",
-      "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
-      "how": "在 Claude App 打開「本機外宣待辦執行（雲端連動）」，輸入：請把這個 session 的工作設成每天 09:23 自動執行的排程。",
+      "id": "oa-local-start",
+      "title": "開一個本機對話、貼一行字（本機待辦、UsageNow 改 ASC、每日排程一次搞定）",
+      "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
+      "how": "Mac 終端機的 remote-control 開著就好（問 QR code 那行不用理）。打開連結開新對話，貼上：可以，外宣直接做，副標和關鍵字只要經過一個以上模型驗證就直接改 ASC，UsageNow 照雲端給的商店文字改。請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行（先 git pull origin main），並設成每天 09:23 自動執行。",
       "status": "todo"
     },
     {

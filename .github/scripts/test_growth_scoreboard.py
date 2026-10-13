@@ -161,12 +161,27 @@ class RunTests(unittest.TestCase):
     def test_rate_limit_stops_early_and_keeps_exact_progress(self):
         state = gs.empty_state()
         state["cursor"] = 1
+        state["tasks_digest"] = gs.tasks_digest(gs.build_tasks(APPS, STOREFRONTS, KEYWORDS))
         outcome = gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple(rate_limit_after=2)),
                          now=NOW, search_budget=100, chart_budget=0, log=lambda *_: None)
         self.assertIn("429", outcome["rate_limited"])
         self.assertEqual(2, outcome["searches"])
         self.assertEqual(3, state["cursor"])
         self.assertEqual(1, len(state["ratings_history"]))
+
+    def test_changed_task_list_restarts_rotation(self):
+        state = gs.empty_state()
+        gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+               now=NOW, search_budget=3, chart_budget=0, log=lambda *_: None)
+        self.assertEqual(3, state["cursor"])
+        gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+               now=NOW, search_budget=2, chart_budget=0, log=lambda *_: None)
+        self.assertEqual(5, state["cursor"])
+        challenge = {"mochi": {"ja": ["かわいい todo"]}}
+        gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+               now=NOW, search_budget=1, chart_budget=0, log=lambda *_: None, challenge_terms=challenge)
+        self.assertEqual(1, state["cursor"])
+        self.assertIn("6785004775|ja|かわいい todo", state["search"])
 
     def test_unavailable_charts_do_not_block_search_measurement(self):
         state = gs.empty_state()

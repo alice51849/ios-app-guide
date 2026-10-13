@@ -15,6 +15,7 @@ Apple signals rate limiting, so the next scheduled run simply continues.
 
 import argparse
 import ast
+import hashlib
 import datetime as dt
 import json
 import os
@@ -187,6 +188,10 @@ def build_tasks(apps, storefronts, keywords_by_app, challenge_terms=None):
 
 def task_id(task):
     return f"{task['app_id']}|{task['locale']}|{task['keyword']}"
+
+
+def tasks_digest(tasks):
+    return hashlib.sha256("\n".join(task_id(task) for task in tasks).encode("utf-8")).hexdigest()
 
 
 def take_rotation(items, cursor, budget):
@@ -378,6 +383,12 @@ def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
                "errors": 0, "charts_unavailable": False}
     genre_by_app = {}
     tasks = build_tasks(apps, storefronts, keywords_by_app, challenge_terms)
+    # A changed task list (new challenge terms, roster or keywords) restarts the
+    # rotation so newly reviewed terms are measured first instead of weeks later.
+    digest = tasks_digest(tasks)
+    if state.get("tasks_digest") != digest:
+        state["cursor"] = 0
+        state["tasks_digest"] = digest
     search_start = state.get("cursor", 0)
     searched = None  # becomes a count once the search phase starts
 

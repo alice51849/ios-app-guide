@@ -44,7 +44,9 @@ permissions:
 concurrency:
   # A failed/cancelled Daily GEO run creates a skipped workflow_run job. Give
   # that no-op event a unique group so it cannot cancel a valid push deploy.
-  group: pages-${{ ((github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[paired-high-intent]'))) && github.run_id || 'deploy' }}
+  # The paired release dispatch is the only run that uploads, so it also gets
+  # its own group: ordinary pushes to main (several an hour) must not cancel it.
+  group: pages-${{ ((github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[paired-high-intent]')) || (github.event_name == 'workflow_dispatch' && inputs.owned_feed_release == true && inputs.incremental_high_intent == true)) && github.run_id || 'deploy' }}
   cancel-in-progress: true
 
 jobs:

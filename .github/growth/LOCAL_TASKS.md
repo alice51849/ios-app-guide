@@ -13,6 +13,8 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 - `_engine/` 是 GrowthEngine 的逐位元組鏡像。GEO 改動要先改 00_GrowthEngine，再鏡像到 Guide。
 - 待辦清單是 `.github/growth/app-improvements.json`。office.cait518.cc 的外宣頁直接讀 main 上的這個檔，所以狀態要隨時更新。
 
+> **2026-10-14 更新：Caitlyn 決定暫不改 ASC。** 下面所有套用 ASC 的步驟（UsageNow 與其他 App 的 asc-payload）都先跳過，除非她在本機對話裡再次明確要求。UsageNow 1.0.2 草稿已填的新文字，只有在她說「照備份改回去」時才改回。
+
 ## 依序執行
 
 1. `cd ~/00_GrowthEngine/geo/pages && git pull origin main`

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "note": "每日雙模型 ASO 佇列：每天處理第一個 status=todo 的 App。stage=tune 先由主模型調教再由不同模型驗證；stage=verify 只需第二模型驗證。完成改 done 並填 done_at。",
+  "note": "暫停（2026-10-14 Caitlyn 決定暫不改 ASC）。每日雙模型 ASO 佇列：每天處理第一個 status=todo 的 App。stage=tune 先由主模型調教再由不同模型驗證；stage=verify 只需第二模型驗證。完成改 done 並填 done_at。",
   "apps": [
     {
       "key": "mochi",
@@ -366,5 +366,6 @@
       "stage": "tune",
       "status": "todo"
     }
-  ]
+  ],
+  "paused": true
 }

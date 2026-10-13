@@ -892,7 +892,7 @@ class TelegramPageReadyGateTests(unittest.TestCase):
 
     def test_only_listings_under_three_iphone_screenshots_are_skipped(self):
         apps = {
-            "7000000001": 1,     # HourStag Lite today: 1 iPhone + 1 iPad shot
+            "7000000001": 1,     # HoursTag Lite today: 1 iPhone + 1 iPad shot
             "7000000002": 0,
             "7000000003": 3,     # exactly the threshold is ready
             "7000000004": 6,
@@ -1104,6 +1104,12 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             for offset in range(4):
                 day = dt.date(2026, 10, 14) + dt.timedelta(days=offset)
                 self.assertIn("衝榜 B", portfolio_daily.spotlight_block(self.apps, day, tmp))
+            skipped = portfolio_daily.spotlight_block(
+                self.apps, dt.date(2026, 10, 14), tmp, skip_apps=frozenset({other.app_id}))
+            self.assertIn("故事 A", skipped)
+            self.assertEqual("", portfolio_daily.spotlight_block(
+                self.apps, dt.date(2026, 10, 14), tmp,
+                skip_apps=frozenset({app.app_id, other.app_id})))
             after = portfolio_daily.spotlight_block(self.apps, dt.date(2026, 10, 28), tmp)
             self.assertTrue("故事 A" in after or "衝榜 B" in after)
             self.assertEqual(set(), portfolio_daily.spotlight_focus_ids(dt.date(2026, 10, 28), tmp))

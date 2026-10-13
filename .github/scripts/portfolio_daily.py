@@ -478,8 +478,9 @@ def spotlight_focus_ids(day, directory=None):
     }
 
 
-def spotlight_block(apps, today=None, directory=None):
-    posts = load_spotlight_posts(apps, directory)
+def spotlight_block(apps, today=None, directory=None, skip_apps=frozenset()):
+    # Apps failing the page-ready gate (< 3 screenshots) never take the spotlight.
+    posts = [post for post in load_spotlight_posts(apps, directory) if post["app_id"] not in skip_apps]
     if not posts:
         return ""
     day = today or dt.datetime.now(dt.timezone.utc).date()
@@ -490,11 +491,11 @@ def spotlight_block(apps, today=None, directory=None):
     return f"🔦 今日焦點｜{post['name']}\n{post['text']}\n（下載連結在下方清單）\n\n"
 
 
-def telegram_messages(apps, today=None):
+def telegram_messages(apps, today=None, skip_spotlight_apps=frozenset()):
     total = len(apps)
     campaign = PLATFORM_CAMPAIGNS["telegram"]
     footer = f"\n\n完整開發者頁：{DEVELOPER_URL}"
-    spotlight = spotlight_block(apps, today)
+    spotlight = spotlight_block(apps, today, skip_apps=skip_spotlight_apps)
     reserved_header = (
         f"✨ 每日全 App 精選｜{total} 款｜第 99/99 則\n\n"
         f"{spotlight}"
@@ -683,7 +684,10 @@ def main(argv=None):
             return 0
         apps = filter_reachable_apps(load_public_apps())
         messages = (
-            telegram_messages(apps)
+            telegram_messages(
+                apps,
+                skip_spotlight_apps=telegram_post.page_unready_apps(app.app_id for app in apps),
+            )
             if args.platform == "telegram"
             else threads_messages(apps)
         )

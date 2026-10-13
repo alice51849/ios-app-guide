@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T13:55:12Z",
+  "updated_at": "2026-10-13T14:25:29Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -57,8 +57,9 @@
       "id": "oa-paired-release",
       "title": "正式站自 10/4 停更：配對發布（雲端已修好被取消的原因並重新發布）",
       "url": "https://github.com/alice51849/ios-app-guide/actions/workflows/pages.yml",
-      "how": "不用動手。原因是 main 的一般推送會取消配對發布；雲端已改 pages.yml 並在 10/13 21:51 重新發布，上線後這格自動標已完成。",
-      "status": "in_progress"
+      "how": "已完成：正式站 10/13 22:01（台灣）更新到 29c5c8dd，兩個網址都已上線。最後的驗證步驟因 Cloudflare 換了分析標籤而失敗，已交給本機修。",
+      "status": "done",
+      "done_at": "2026-10-13T14:01:07Z"
     },
     {
       "id": "oa-05",
@@ -251,8 +252,9 @@
           "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪掉「穿衣／get dressed／着替え」（不在 listing），改成 listing 內的吃飯、刷牙、睡覺、收玩具四個免費任務＋兔兔夥伴＋一次內購；加入「50 種語言、App 內切換」；新增 ko（칭찬스티커 痛點）與 vi（新住民家庭）兩篇。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案，不在 drafts/ 範圍內），所以沒有動。可直接貼上的替換稿已寫好：3 篇改寫（刪掉穿衣、補上 50 種語言）＋新增 ko、vi 各 1 篇，見 drafts/lumimission/telegram-replacement-posts.md"
+          "status": "done",
+          "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案，不在 drafts/ 範圍內），所以沒有動。可直接貼上的替換稿已寫好：3 篇改寫（刪掉穿衣、補上 50 種語言）＋新增 ko、vi 各 1 篇，見 drafts/lumimission/telegram-replacement-posts.md",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "lumimission-03",
@@ -414,8 +416,9 @@
           "detail": "在 .github/scripts/telegram_posts.json 新增 Mochi 的 pt-BR、de 兩則，文案照本報告 posts 欄（老實寫免費範圍、50 種語言 App 內切換），並把現有 en/zh-Hant 文案補上免費範圍一句。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json (outside drafts/). The pt-BR/de copy that states the free scope already exists in app-posts.json (ct mochi_ptBR_2, mochi_de_"
+          "status": "done",
+          "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json (outside drafts/). The pt-BR/de copy that states the free scope already exists in app-posts.json (ct mochi_ptBR_2, mochi_de_",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "mochi-04",
@@ -539,7 +542,7 @@
         {
           "id": "shotinbox-02",
           "title": "Telegram 與各通道追蹤碼依語系拆開",
-          "detail": "目前共用 social_shotinbox，改成 sib_<lang>_* 以便在 ASC Campaigns 區分來源。",
+          "detail": "追蹤碼已拆成 sib_en_tg／sib_tw_tg／sib_ja_tg，但發文程式目前一律改用 soc_tg_guide，要等發文程式支援逐則追蹤碼才有效果。 目前共用 social_shotinbox，改成 sib_<lang>_* 以便在 ASC Campaigns 區分來源。",
           "owner": "claude",
           "impact": "medium",
           "status": "todo",
@@ -715,8 +718,9 @@
           "detail": "telegram_posts.json 中 6782275018 的 en 條目「(a pay-once alternative to Remini)」整段移除，改為「50 interface languages, switch in-app」。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "需修改 telegram_posts.json 刪除「alternative to Remini」（Telegram 資料變更，不在本次權限）。"
+          "status": "done",
+          "note": "需修改 telegram_posts.json 刪除「alternative to Remini」（Telegram 資料變更，不在本次權限）。",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "unblurry-02",
@@ -993,8 +997,9 @@
           "detail": "從 data/ios-app-decision-matrix.* 移除 aim990plus 並從 aim990 的 sibling_app_keys 拿掉；buyer_intent 的「best …」改中性描述；刪 telegram_posts.json 的 4 筆 Aim990 Plus，把 Aim990 的 en/ja/ko 貼文改成「8 分鐘診斷→最弱 3 項→每天一項」並新增 vi 貼文。（雲端只做 telegram_posts.json 部分；_engine/data 部分另開本機項目。）",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "需修改 data/ios-app-decision-matrix.* 與 .github/scripts/telegram_posts.json（Telegram 程式碼／資料變更），不屬雲端草稿範圍"
+          "status": "done",
+          "note": "需修改 data/ios-app-decision-matrix.* 與 .github/scripts/telegram_posts.json（Telegram 程式碼／資料變更），不屬雲端草稿範圍",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "aim990-05",
@@ -1426,11 +1431,12 @@
         {
           "id": "hourstaglite-03",
           "title": "Telegram 加「頁面就緒門檻」",
-          "detail": "在 telegram_post.py 加規則：lookup 截圖少於 3 張的 App 自動跳過；同時備妥 zh-Hant／ja／en／vi 貼文（見 posts），截圖上線即發。",
+          "detail": "已上線：Telegram 自動發文與每日精選「今日焦點」都會跳過商品頁截圖少於 3 張的 App（目前 HourStag Lite、Unblurry Pro、SaveTag），截圖補齊後自動恢復。 在 telegram_post.py 加規則：lookup 截圖少於 3 張的 App 自動跳過；同時備妥 zh-Hant／ja／en／vi 貼文（見 posts），截圖上線即發。",
           "owner": "claude",
           "impact": "medium",
-          "status": "todo",
-          "note": "要在 telegram_post.py 加「截圖少於 3 張就跳過」的門檻，屬於 Telegram 程式變更；四語貼文 app-posts.json 裡已經有。"
+          "status": "done",
+          "note": "要在 telegram_post.py 加「截圖少於 3 張就跳過」的門檻，屬於 Telegram 程式變更；四語貼文 app-posts.json 裡已經有。",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "hourstaglite-04",
@@ -1574,8 +1580,9 @@
           "detail": "telegram_posts.json 中 LockHour en 的「(a pay-once alternative to Opal/Forest)」改為「a pay-once app blocker, no subscription」；順手六語都加 50 種語言句。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json to replace 'a pay-once alternative to Opal/Forest' with 'a pay-once app blocker, no subscription' and add the 50-language li"
+          "status": "done",
+          "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json to replace 'a pay-once alternative to Opal/Forest' with 'a pay-once app blocker, no subscription' and add the 50-language li",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "lockhour-06",
@@ -1657,8 +1664,9 @@
           "detail": "telegram_posts.json 的 6779552704：刪「給孩子看的天氣／child-friendly／親子で見る」，改用 live 名稱與 listing 的外出指數、一句判斷、最佳時段、帶傘／防曬提示、Apple WeatherKit、50 語可切換；/home/user/ios-app-guide/_engine/data/weather_full.json 的「40 多種語言」全部改 50，zh-Hant 前三關鍵字改「穿搭 天氣,今天穿什麼,外出指數」、ja「服装 天気,おでかけ 天気,おでかけ指数」、en「what to wear weather,outfit weather,outing score」，讓計分板量利基詞。（雲端只做 telegram_posts.json 部分；_engine/data 部分另開本機項目。）",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "需要修改 telegram_posts.json 與 _engine/data/weather_full.json，所以沒有動。Telegram 三篇替換稿（刪掉「給孩子看」）、17 個語系「40 多種語言」改 50 的句型（已附 zh-Hant／ja／en-US／ko）、前三關鍵字的新值，見 drafts/lumiweather/telegram-and-data-file-replacemen"
+          "status": "done",
+          "note": "需要修改 telegram_posts.json 與 _engine/data/weather_full.json，所以沒有動。Telegram 三篇替換稿（刪掉「給孩子看」）、17 個語系「40 多種語言」改 50 的句型（已附 zh-Hant／ja／en-US／ko）、前三關鍵字的新值，見 drafts/lumiweather/telegram-and-data-file-replacemen",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "lumiweather-04",
@@ -1926,6 +1934,14 @@
       ],
       "actions": [
         {
+          "id": "ops-edge-beacon",
+          "title": "更新部署驗證認得的 Cloudflare 分析標籤（配對發布最後一步因此失敗）",
+          "detail": "Cloudflare 把 beacon.min.js 換成新版（v4bc70e2…、新的 integrity），00_GrowthEngine geo/deployment_generation.py 的 EDGE_BEACON 還是舊版，verify-live 對 open.cait518.cc 每頁都判定內容不符。改成接受同一 token 的 static.cloudflareinsights.com beacon（或更新為新值），跑測試、鏡像到 Guide。正式站內容已正確上線，影響的是驗證與後續 feed 通知步驟。",
+          "owner": "local",
+          "impact": "high",
+          "status": "todo"
+        },
+        {
           "id": "mochidonestamp-04",
           "title": "寫好 Reddit 與 note.com 草稿（店主以本人帳號發）",
           "detail": "r/iosapps 揭露身分的開發者文一則；r/CleaningTips、r/HomeImprovement 每週自我推廣串的回覆一則（回答「怎麼記得上次換濾芯」）；note.com「名もなき家事の記録」日文實用文一篇。全部放 repo，店主貼。",
@@ -1946,8 +1962,9 @@
           "detail": "新增 zh-Hant 一則，照 posts 欄文案；三語都加「50 種介面語言、App 內切換」。",
           "owner": "claude",
           "impact": "medium",
-          "status": "todo",
-          "note": "Telegram queue change: requires inserting into .github/scripts/telegram_posts.json. The zh-Hant copy already exists in app-posts.json (ct mochidonesta_zhHant_2)."
+          "status": "done",
+          "note": "Telegram queue change: requires inserting into .github/scripts/telegram_posts.json. The zh-Hant copy already exists in app-posts.json (ct mochidonesta_zhHant_2).",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "mochidonestamp-06",
@@ -2092,8 +2109,9 @@
           "detail": "telegram_posts.json 中 6781808054 的 en 條目移除「(a pay-once alternative to VSCO)」，補「50 languages, switch in-app」。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "需修改 telegram_posts.json 刪除「alternative to VSCO」並補 50 語句（Telegram 資料變更，不在本次權限）。"
+          "status": "done",
+          "note": "需修改 telegram_posts.json 刪除「alternative to VSCO」並補 50 語句（Telegram 資料變更，不在本次權限）。",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "photocream-03",
@@ -2477,8 +2495,9 @@
           "detail": "telegram_posts.json 的 6787193643：ja 貼文改用「Trip Planet 子ども旅行ゲーム」與 listing 功能（任務包、護照蓋章、兩位家長共享、50 語可切換）；zh-Hant 保留任務卡產生器貼文、加一篇寒假情境；在 social_slot_gate／threads-daily 設定季節權重：TW 12 月中–1 月底（寒假、春節）與 6 月；JP 12 月（年末年始）與 2–3 月（春休み）。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "需要修改 telegram_posts.json，而且 social_slot_gate／threads-daily 目前沒有季節權重機制，要改程式，所以沒有動。ja 替換稿、zh-Hant 寒假新稿、TW／JP 檔期表與建議的權重資料格式見 drafts/tripplanet/telegram-replacement-posts-and-season-calendar.md"
+          "status": "done",
+          "note": "需要修改 telegram_posts.json，而且 social_slot_gate／threads-daily 目前沒有季節權重機制，要改程式，所以沒有動。ja 替換稿、zh-Hant 寒假新稿、TW／JP 檔期表與建議的權重資料格式見 drafts/tripplanet/telegram-replacement-posts-and-season-calendar.md",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "tripplanet-03",
@@ -3016,8 +3035,9 @@
           "detail": "在 .github/scripts/telegram_posts.json 刪除 YNAB 一句；補 zh-Hant／ja／id 痛點文（見 posts）；en 旅遊情境改導向 Lite（6793436548）。",
           "owner": "claude",
           "impact": "high",
-          "status": "todo",
-          "note": "整項都是改 .github/scripts/telegram_posts.json（刪 YNAB 句、補三語、改導向），屬於 Telegram 佇列資料變更，不在本工作範圍；app-posts.json 裡已經有 zh-Hant／ja／id 的貼文可以直接用。"
+          "status": "done",
+          "note": "整項都是改 .github/scripts/telegram_posts.json（刪 YNAB 句、補三語、改導向），屬於 Telegram 佇列資料變更，不在本工作範圍；app-posts.json 裡已經有 zh-Hant／ja／id 的貼文可以直接用。",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "gmoney-05",
@@ -3149,8 +3169,9 @@
           "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪「visual routine chart／視覺任務」，改用 listing 用語（五個每日任務含上學準備、無限自訂任務、無廣告・無內購・無訂閱・無帳號、家人共享、50 種語言可在 App 內切換），並在每篇末尾一句話指向免費的 Lite。",
           "owner": "claude",
           "impact": "medium",
-          "status": "todo",
-          "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案），所以沒有動。4 篇替換稿（刪掉 visual／視覺任務與穿衣，補上無內購、家人共享、50 種語言，結尾導向 Lite）見 drafts/lumimissionpro/telegram-replacement-posts.md"
+          "status": "done",
+          "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案），所以沒有動。4 篇替換稿（刪掉 visual／視覺任務與穿衣，補上無內購、家人共享、50 種語言，結尾導向 Lite）見 drafts/lumimissionpro/telegram-replacement-posts.md",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "lumimissionpro-04",
@@ -3362,8 +3383,9 @@
           "detail": "在 telegram_posts.json 為 6780223070 新增繁中「幫爸媽清 iPhone」與日文「旅行前夜」兩條（下方 posts），不放競品名、不說最佳。",
           "owner": "claude",
           "impact": "medium",
-          "status": "todo",
-          "note": "需在 .github/scripts/telegram_posts.json 新增條目（Telegram 資料／程式變更，不在本次權限）；繁中「幫爸媽清 iPhone」與日文「旅行前夜」文案已存在於 app-posts.json（picclear_zhHant_1、picclear_ja_2），可直接搬入。"
+          "status": "done",
+          "note": "需在 .github/scripts/telegram_posts.json 新增條目（Telegram 資料／程式變更，不在本次權限）；繁中「幫爸媽清 iPhone」與日文「旅行前夜」文案已存在於 app-posts.json（picclear_zhHant_1、picclear_ja_2），可直接搬入。",
+          "done_at": "2026-10-13T14:25:29Z"
         },
         {
           "id": "picclear-05",

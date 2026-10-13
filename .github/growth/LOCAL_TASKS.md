@@ -15,6 +15,10 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 
 > **2026-10-14 更新：Caitlyn 決定暫不改 ASC。** 下面所有套用 ASC 的步驟（UsageNow 與其他 App 的 asc-payload）都先跳過，除非她在本機對話裡再次明確要求。UsageNow 1.0.2 草稿已填的新文字，只有在她說「照備份改回去」時才改回。
 
+> **2026-10-14 最優先：Threads 全自動恢復。** Caitlyn 選擇重新開啟 threads-autopilot。
+> 1. 在 ~/threads-autopilot（或本機對應路徑）用 `gh workflow enable multi.yml` 與 `gh workflow enable post.yml`（repo alice51849/threads-autopilot）；若已啟用就跳過。確認 self-hosted macOS runner 在線。
+> 2. 做 claudeusagemini-16：UsageNow 加入 reviewed onboarding（照 reviewed_sources/countdaysnow.json 等前例），跑該 repo 測試、推送，讓 Threads 自動發 UsageNow。
+
 ## 依序執行
 
 1. `cd ~/00_GrowthEngine/geo/pages && git pull origin main`

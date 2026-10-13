@@ -19,7 +19,7 @@ on:
         default: "450"
 
 permissions:
-  contents: write
+  contents: read
   issues: write
 
 concurrency:
@@ -45,7 +45,6 @@ jobs:
       - name: Verify scoreboard logic offline
         run: |
           python3 .github/scripts/test_growth_scoreboard.py
-          python3 .github/scripts/test_daily_picks.py
       - name: Measure public App Store outcomes
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -60,26 +59,6 @@ jobs:
             --chart-budget "$CHART_BUDGET" \
             --issue
           cat .growth-scoreboard/report.md >> "$GITHUB_STEP_SUMMARY"
-      - name: Put today's three one-tap posts on the office page
-        # Zero LLM tokens: picks reviewed posts for the Apps closest to #1 and
-        # writes Threads compose links into app-improvements.json on main.
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3 4; do
-            git fetch --quiet --depth=1 origin main
-            git reset --quiet --hard FETCH_HEAD
-            python3 .github/scripts/daily_picks.py --state .growth-scoreboard/state.json
-            python3 .github/scripts/test_app_improvements.py
-            if git diff --quiet -- .github/growth/app-improvements.json; then exit 0; fi
-            git add .github/growth/app-improvements.json
-            git commit --quiet -m "外宣頁：今天的 3 則一鍵發文（自動挑選）"
-            if git push --quiet origin HEAD:main; then exit 0; fi
-            sleep $((attempt * 20))
-          done
-          echo "::error::could not push today's picks after 4 attempts"
-          exit 1
       - name: Save scoreboard history
         if: always() && hashFiles('.growth-scoreboard/state.json') != ''
         uses: actions/cache/save@v4

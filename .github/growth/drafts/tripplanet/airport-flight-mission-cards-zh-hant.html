@@ -1,0 +1,76 @@
+<!doctype html>
+<!--
+草稿標頭（tripplanet-03）
+用途：把站上「免費親子旅行任務卡產生器」的機場與飛行途中兩組卡片，輸出成可下載、可列印的繁中／日文 A4 任務卡（各 5 張＋1 張空白卡）。貼文的價值在卡片本身，App 只在第 2 頁最後提一次。
+發在哪／給誰：店主把這頁列印成 PDF 或截圖，附在自己的 Threads／Instagram／note 貼文（文案見 mission-cards-share-posts.md），或在對方允許時提供給親子旅遊社團。讀者：寒假、春節、年末年始、春休み要帶孩子搭飛機的台灣與日本家長。
+發文者：店主 Guan Feng Lai 本人（Lumi Studio），貼文中寫明自己是開發者。
+發文規則：卡片免費、不收集任何資料、不設下載門檻（不要求留信箱或追蹤才給）；同一份卡片在同一社團只分享一次；社團規定不能放連結就不放。內容依產生器資料集 data/family-travel-missions.json（CC BY 4.0），日文為本次翻譯；不加入資料集沒有的任務，尤其不加拍照任務。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>機場與機上小任務卡</title>
+<meta name="description" content="帶小孩搭飛機用的可列印觀察任務卡：機場 5 張、機上 5 張，加 2 張空白卡。">
+<style>
+:root{--ink:#18213b;--muted:#5f677b;--paper:#fffdf8;--line:#ddd7ca;--violet:#6858d9;
+--coral:#f47c67;--mint:#dff4e9;--gold:#ffe2a7;--bg:#efeae0}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",system-ui,sans-serif;line-height:1.5;
+-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.toolbar{max-width:210mm;margin:16px auto 0;padding:0 16px;display:flex;gap:12px;align-items:center;
+justify-content:space-between;flex-wrap:wrap}
+.toolbar p{margin:0;color:var(--muted);font-size:14px}
+.toolbar button{appearance:none;border:0;border-radius:12px;background:var(--violet);color:#fff;
+font:inherit;font-weight:700;padding:10px 18px;cursor:pointer}
+.page{width:210mm;height:297mm;margin:16px auto;padding:11mm 12mm 10mm;background:#fff;
+box-shadow:0 12px 40px rgba(31,35,65,.14);display:flex;flex-direction:column;overflow:hidden}
+.eyebrow{font-size:3.1mm;font-weight:800;color:var(--violet);letter-spacing:.02em}
+h1{font-size:8.4mm;line-height:1.15;margin:1.6mm 0 1.2mm;letter-spacing:-.01em}
+.sub{font-size:3.6mm;color:var(--muted);margin:0}
+.howto{display:flex;flex-wrap:wrap;gap:1.6mm;margin:2.6mm 0 0;padding:0;list-style:none}
+.howto li{font-size:3.1mm;font-weight:700;background:var(--mint);border-radius:99px;padding:.8mm 3mm}
+.boundary{margin:3mm 0 3mm;padding:2.4mm 3.4mm;border-left:1.4mm solid var(--coral);background:#fff6f3;
+border-radius:0 3mm 3mm 0;font-size:3.3mm;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr);flex:1;
+border:.3mm dashed #b9b3a6}
+.card{position:relative;background:var(--paper);padding:5mm 5mm 4mm;display:flex;flex-direction:column;
+border-right:.3mm dashed #b9b3a6;border-bottom:.3mm dashed #b9b3a6;overflow:hidden}
+.card:nth-child(2n){border-right:0}
+.card:nth-child(n+5){border-bottom:0}
+.card:before{content:"";position:absolute;left:0;right:0;top:0;height:1.8mm;
+background:linear-gradient(90deg,var(--violet),var(--coral))}
+.kicker{font-size:2.9mm;font-weight:800;color:#6a607d;letter-spacing:.04em}
+.target{font-size:5.6mm;line-height:1.3;font-weight:800;margin:2.2mm 0 2mm}
+.how{font-size:3.2mm;color:#3c4458;margin:0}
+.skip{margin-top:auto;padding-top:2mm;font-size:2.9mm;font-weight:700;color:var(--muted)}
+.blank .target{color:var(--violet)}
+.lines{display:block;border-bottom:.35mm solid #cfc8b8;height:8mm}
+.foot{margin-top:3mm;font-size:2.75mm;color:var(--muted);line-height:1.45}
+.foot p{margin:0 0 1mm}
+.foot .app{color:var(--ink);font-weight:600;background:#f4f0ff;border-radius:2mm;padding:1.6mm 2.4mm;margin-top:1.4mm}
+@page{size:A4;margin:0}
+@media print{
+  body{background:#fff}
+  .toolbar{display:none}
+  .page{margin:0;box-shadow:none;page-break-after:always;break-after:page}
+  .page:last-child{page-break-after:auto;break-after:auto}
+}
+@media screen and (max-width:840px){
+  .page{width:calc(100vw - 32px);height:auto;margin:16px;padding:18px 16px}
+  .eyebrow{font-size:12px}h1{font-size:26px}.sub,.howto li,.boundary{font-size:13px}
+  .grid{grid-template-columns:1fr;grid-template-rows:none}
+  .card{border-right:0;border-bottom:1px dashed #b9b3a6!important;min-height:150px;padding:18px 16px 14px}
+  .card:last-child{border-bottom:0!important}
+  .kicker,.skip{font-size:11px}.target{font-size:19px}.how{font-size:13px}.lines{height:28px}
+  .foot{font-size:11px}
+}
+</style>
+</head>
+<body>
+<div class="toolbar"><p>A4 直式列印，共 2 頁。印出後沿虛線剪開。</p><button type="button" onclick="window.print()">列印</button></div>
+<section class="page" aria-label="帶小孩搭飛機｜機場小任務卡"><div class="eyebrow">免費・可列印・不拍照・不填個資・沒有分數</div><h1>帶小孩搭飛機｜機場小任務卡</h1><p class="sub">參與方式：看一看／指出來（只在大人選定的安全位置）</p><ul class="howto"><li>大人決定何時拿出來</li><li>每次抽 1 張就好</li><li>任何一張都可跳過</li><li>不用任何 App 也能玩</li></ul><div class="boundary">留在陪同大人身旁，不阻擋走道或安檢區，並遵守機場與安檢人員指示。這組卡片完全沒有拍照任務。</div><div class="grid"><article class="card"><div class="kicker">選用任務卡 1 · 機場</div><div class="target">從目前等待位置看得到的兩種標誌</div><p class="how">從目前位置找找看。只有在情境允許、陪同大人也確認安全時，才從原地指出來。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 2 · 機場</div><div class="target">一台從窗戶看得到的車輛</div><p class="how">從目前位置找找看。只有在情境允許、陪同大人也確認安全時，才從原地指出來。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 3 · 機場</div><div class="target">建築裡一種重複出現的形狀</div><p class="how">從目前位置找找看。只有在情境允許、陪同大人也確認安全時，才從原地指出來。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 4 · 機場</div><div class="target">工作人員身上的一種顏色</div><p class="how">從目前位置找找看。只有在情境允許、陪同大人也確認安全時，才從原地指出來。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 5 · 機場</div><div class="target">一件有輪子的物品</div><p class="how">從目前位置找找看。只有在情境允許、陪同大人也確認安全時，才從原地指出來。</p><div class="skip">任何一張都可跳過</div></article><article class="card blank"><div class="kicker">選用任務卡 6 · 機場</div><div class="target">自己設計</div><p class="how">由大人核准的提示：</p><span class="lines"></span><span class="lines"></span><div class="skip">任何一張都可跳過</div></article></div><footer class="foot"><p>安全優先：只在陪同大人事先核准的位置使用。當下的當地規則，以及航空公司、機組、安檢、機場與工作人員的指示，永遠比卡片優先。</p><p>這份卡片不需要填姓名、年齡、目的地或照片，也沒有分數或完成紀錄。參與方式不是年齡或能力分級。</p><p>原創文字與版型採 CC BY 4.0。來源：Lumi Studio「免費親子旅行任務卡產生器」（機場＋看一看／指出來第 1 組；飛行途中＋觀察／描述第 3 組），open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-mission-card-generator.html</p></footer></section>
+<section class="page" aria-label="帶小孩搭飛機｜機上小任務卡"><div class="eyebrow">免費・可列印・不拍照・不填個資・沒有分數</div><h1>帶小孩搭飛機｜機上小任務卡</h1><p class="sub">參與方式：觀察／描述（坐好、機組允許時才玩）</p><div class="boundary">只有在坐好且機組人員允許時才使用。安全說明、任何指示、亂流，或大人要求暫停時，立即停止活動。</div><div class="grid"><article class="card"><div class="kicker">選用任務卡 1 · 飛行途中</div><div class="target">一個安靜的聲音</div><p class="how">仔細觀察，想一個顏色、形狀、聲音或細節；情境允許時，再小聲分享給同行的大人。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 2 · 飛行途中</div><div class="target">一件可以折疊的物品</div><p class="how">仔細觀察，想一個顏色、形狀、聲音或細節；情境允許時，再小聲分享給同行的大人。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 3 · 飛行途中</div><div class="target">一件機組人員用來傳達資訊的物品</div><p class="how">仔細觀察，想一個顏色、形狀、聲音或細節；情境允許時，再小聲分享給同行的大人。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 4 · 飛行途中</div><div class="target">看得到天空時，一朵雲的形狀</div><p class="how">仔細觀察，想一個顏色、形狀、聲音或細節；情境允許時，再小聲分享給同行的大人。</p><div class="skip">任何一張都可跳過</div></article><article class="card"><div class="kicker">選用任務卡 5 · 飛行途中</div><div class="target">一種可協助同排乘客的禮貌做法</div><p class="how">仔細觀察，想一個顏色、形狀、聲音或細節；情境允許時，再小聲分享給同行的大人。</p><div class="skip">任何一張都可跳過</div></article><article class="card blank"><div class="kicker">選用任務卡 6 · 飛行途中</div><div class="target">自己設計</div><p class="how">由大人核准的提示：</p><span class="lines"></span><span class="lines"></span><div class="skip">任何一張都可跳過</div></article></div><footer class="foot"><p>安全優先：只在陪同大人事先核准的位置使用。當下的當地規則，以及航空公司、機組、安檢、機場與工作人員的指示，永遠比卡片優先。</p><p>這份卡片不需要填姓名、年齡、目的地或照片，也沒有分數或完成紀錄。參與方式不是年齡或能力分級。</p><p>原創文字與版型採 CC BY 4.0。來源：Lumi Studio「免費親子旅行任務卡產生器」（機場＋看一看／指出來第 1 組；飛行途中＋觀察／描述第 3 組），open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-mission-card-generator.html</p><p class="app">這份卡片不需要任何 App 就能用。我是 Lumi Studio 的開發者，也做了「Trip Planet 親子旅行遊戲」：想把旅行任務、旅行護照章和旅行故事卡留在手機裡的家庭，可以在 App Store 搜尋這個名字。</p></footer></section>
+</body>
+</html>

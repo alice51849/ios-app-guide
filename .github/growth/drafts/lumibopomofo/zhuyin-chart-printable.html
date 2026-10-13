@@ -1,0 +1,273 @@
+<!doctype html>
+<!--
+  Lumi注音星球：可列印注音符號表（lumibopomofo-06）
+  用途：給幼兒園、小一與海外僑校老師的免費教學用表（A4／Letter，可另存 PDF）。表本身沒有廣告，只在頁尾小字標示製作者，作為真實第三方提及的來源。
+  給誰：台灣幼兒園大班／小一老師、海外中文學校老師、在家陪練的家長。
+  誰寄出：店主 Guan Feng Lai，以 Lumi Studio 名義、用本人信箱附在寄送信裡（見 teacher-email-zh-hant.md）。
+  規則：可自由影印、班級使用；不得在表上加 App 下載連結或 QR Code（老師常被規定不能向家長推銷商業產品）；頁尾製作者標示保留。
+  轉 PDF：用 Chrome／Edge／Safari 開啟 → 上方選紙張 → 列印 → 目的地選「另存為 PDF」→ 邊界「預設」、縮放 100%、勾選「背景圖形」。
+  事實依據：37 個注音（聲母 21、介音 3、韻母 13）與排列順序依教育部注音符號表；拼音僅為對照；例字已逐一核對讀音。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>注音符號表</title>
+<style id="pagesize">@page { size: A4; margin: 10mm; }</style>
+<style>
+:root{
+  --ink:#1d1d26; --muted:#5a5f6b; --line:#d9dbe4; --soft:#f4f5fa;
+  --c1:#e9f0ff; --c1b:#3d5bd9;   /* 聲母 */
+  --c2:#fff1df; --c2b:#c46a00;   /* 介音 */
+  --c3:#e6f6ee; --c3b:#1f7a4f;   /* 韻母 */
+  --c4:#f6e9fb; --c4b:#8a3aa8;   /* 聲調 */
+  --pw:190mm; --ph:277mm; --R:27mm; --T:30mm;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e9eaf0;color:var(--ink);
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",sans-serif;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px}
+.bar strong{font-size:15px}
+.bar label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.bar select,.bar button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.bar button{background:var(--c1b);color:#fff;border-color:var(--c1b);font-weight:700;cursor:pointer}
+.note{max-width:820px;margin:12px auto 0;padding:0 16px;color:var(--muted);font-size:13px;line-height:1.6}
+.sheet-wrap{padding:16px 0 40px}
+.page{width:var(--pw);height:var(--ph);margin:0 auto 16px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);overflow:hidden;zoom:var(--z,1);position:relative}
+.pad{padding:7mm 8mm 0}
+h1{margin:0;font-size:9.5mm;letter-spacing:.5mm;line-height:1.1}
+.sub{margin:1.2mm 0 0;font-size:3.5mm;color:var(--muted)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:.6mm solid var(--ink);padding-bottom:2.5mm;margin-bottom:3mm}
+.legend{display:flex;gap:2mm;font-size:3.2mm;white-space:nowrap}
+.legend span{padding:.6mm 2mm;border-radius:1.5mm}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:4mm;align-items:start}
+.sec{font-size:4.2mm;font-weight:800;margin:0 0 1.5mm;height:5.5mm;line-height:5.5mm}
+.sec small{font-size:3.1mm;font-weight:500;color:var(--muted);margin-left:1.5mm}
+.row{display:grid;grid-template-columns:15mm 1fr;gap:1.6mm;height:var(--R);margin-bottom:1.6mm}
+.lab{font-size:3mm;font-weight:700;border-radius:2mm;display:flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap}
+.cells{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6mm;height:var(--R)}
+.c{position:relative;border-radius:2.2mm;height:var(--R);text-align:center;overflow:hidden}
+.c.blank{background:transparent!important;border:none!important}
+.z{display:block;font-size:12.5mm;line-height:1;font-weight:700;padding-top:calc(var(--R) / 2 - 8.5mm)}
+.ex{display:block;font-size:3.2mm;margin-top:1.2mm;white-space:nowrap}
+.exz{letter-spacing:.1mm}
+.py{position:absolute;top:.8mm;right:1.4mm;font-family:ui-sans-serif,"Helvetica Neue",Arial,sans-serif;font-size:3mm;font-weight:700;opacity:.85}
+.ini .lab{background:var(--c1);color:var(--c1b)} .ini .c{background:var(--c1);border:.3mm solid #c9d6ff} .ini .py{color:var(--c1b)}
+.med .lab{background:var(--c2);color:var(--c2b)} .med .c{background:var(--c2);border:.3mm solid #ffd9a8} .med .py{color:var(--c2b)}
+.fin .lab{background:var(--c3);color:var(--c3b)} .fin .c{background:var(--c3);border:.3mm solid #bfe6d1} .fin .py{color:var(--c3b)}
+.finsec{margin-top:4mm}
+.tonesec{margin-top:2mm}
+.tones{display:grid;grid-template-columns:repeat(5,1fr);gap:2mm}
+.t{background:var(--c4);border:.3mm solid #e6c9f2;border-radius:2.2mm;padding:1.6mm 1mm;text-align:center;height:var(--T)}
+.tn{font-size:3.4mm;font-weight:800;color:var(--c4b)}
+.tm{font-size:7mm;line-height:7.5mm;height:7.5mm;font-weight:700}
+.tm.sm{font-size:3.4mm;color:var(--muted)}
+.tz{font-size:6mm;font-weight:700;line-height:1.2}
+.tw{font-size:4.2mm}
+.tp{font-family:ui-sans-serif,"Helvetica Neue",Arial,sans-serif;font-size:3.2mm;color:var(--c4b);font-weight:700}
+.foot{position:absolute;left:8mm;right:8mm;bottom:4mm;display:flex;justify-content:space-between;gap:4mm;font-size:2.8mm;color:var(--muted);border-top:.3mm solid var(--line);padding-top:1.5mm}
+body.nopy .py,body.nopy .py2,body.nopy .pynote{display:none}
+body.noex .ex,body.noex .tw{display:none}
+body.nop2 .p2{display:none}
+/* page 2 */
+.p2 .pad{padding-bottom:12mm}
+.p2 h2{margin:0 0 2mm;font-size:6mm}
+.p2 h3{margin:5mm 0 2mm;font-size:4.6mm}
+.p2 p,.p2 li{font-size:3.6mm;line-height:1.55}
+.p2 ol{margin:0;padding-left:5mm}
+table{width:100%;border-collapse:collapse;font-size:3.5mm}
+th,td{border:.3mm solid var(--line);padding:1.8mm 2mm;vertical-align:top;text-align:left;line-height:1.5}
+thead th{background:var(--soft);font-size:3.3mm}
+tbody th{width:28mm;font-size:4.2mm;white-space:nowrap}
+td.pz{width:52mm;font-size:4mm}
+.box{background:var(--soft);border-radius:2mm;padding:2.5mm 3.5mm}
+@media print{
+  html,body{background:#fff}
+  .bar,.note{display:none}
+  .sheet-wrap{padding:0}
+  .page{box-shadow:none;margin:0;zoom:1!important;break-after:page}
+  .page:last-of-type{break-after:auto}
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <strong>注音符號表</strong>
+  <label>紙張
+    <select id="paper"><option value="a4">A4（台灣、多數國家）</option><option value="letter">Letter（美國、加拿大）</option></select>
+  </label>
+  <label><input type="checkbox" id="py" checked> 顯示漢語拼音對照</label>
+  <label><input type="checkbox" id="ex" checked> 顯示例字</label>
+  <label><input type="checkbox" id="p2" checked> 加印第 2 頁（易混淆對照）</label>
+  <button type="button" onclick="window.print()">列印／另存 PDF</button>
+</div>
+<p class="note">列印時請選「縮放 100%」並勾選「背景圖形」。台灣課堂使用可以取消拼音對照；海外僑校若學生熟悉拼音，可以保留。這張表免費、可自由影印與班級使用。</p>
+
+<div class="sheet-wrap">
+<section class="page p1"><div class="pad">
+  <div class="head">
+    <div>
+      <h1>注音符號表</h1>
+      <p class="sub">37 個：聲母 21・介音 3・韻母 13　｜　課本順序 ㄅ→ㄙ、ㄧㄨㄩ、ㄚ→ㄦ</p>
+    </div>
+    <div class="legend"><span style="background:var(--c1);color:var(--c1b)">聲母</span><span style="background:var(--c2);color:var(--c2b)">介音</span><span style="background:var(--c3);color:var(--c3b)">韻母</span><span style="background:var(--c4);color:var(--c4b)">聲調</span></div>
+  </div>
+
+  <div class="cols">
+    <div class="col ini">
+      <div class="sec">聲母 <small>21 個，依發音部位分組</small></div>
+      <div class="row"><div class="lab">唇音</div><div class="cells">
+<div class="c"><span class="py">b</span><span class="z">ㄅ</span><span class="ex">爸 <span class="exz">ㄅㄚˋ</span></span></div>
+<div class="c"><span class="py">p</span><span class="z">ㄆ</span><span class="ex">婆 <span class="exz">ㄆㄛˊ</span></span></div>
+<div class="c"><span class="py">m</span><span class="z">ㄇ</span><span class="ex">媽 <span class="exz">ㄇㄚ</span></span></div>
+<div class="c"><span class="py">f</span><span class="z">ㄈ</span><span class="ex">飛 <span class="exz">ㄈㄟ</span></span></div>
+</div></div>
+<div class="row"><div class="lab">舌尖音</div><div class="cells">
+<div class="c"><span class="py">d</span><span class="z">ㄉ</span><span class="ex">刀 <span class="exz">ㄉㄠ</span></span></div>
+<div class="c"><span class="py">t</span><span class="z">ㄊ</span><span class="ex">兔 <span class="exz">ㄊㄨˋ</span></span></div>
+<div class="c"><span class="py">n</span><span class="z">ㄋ</span><span class="ex">牛 <span class="exz">ㄋㄧㄡˊ</span></span></div>
+<div class="c"><span class="py">l</span><span class="z">ㄌ</span><span class="ex">鹿 <span class="exz">ㄌㄨˋ</span></span></div>
+</div></div>
+<div class="row"><div class="lab">舌根音</div><div class="cells">
+<div class="c"><span class="py">g</span><span class="z">ㄍ</span><span class="ex">狗 <span class="exz">ㄍㄡˇ</span></span></div>
+<div class="c"><span class="py">k</span><span class="z">ㄎ</span><span class="ex">口 <span class="exz">ㄎㄡˇ</span></span></div>
+<div class="c"><span class="py">h</span><span class="z">ㄏ</span><span class="ex">花 <span class="exz">ㄏㄨㄚ</span></span></div>
+<div class="c blank"></div>
+</div></div>
+<div class="row"><div class="lab">舌面音</div><div class="cells">
+<div class="c"><span class="py">j</span><span class="z">ㄐ</span><span class="ex">雞 <span class="exz">ㄐㄧ</span></span></div>
+<div class="c"><span class="py">q</span><span class="z">ㄑ</span><span class="ex">球 <span class="exz">ㄑㄧㄡˊ</span></span></div>
+<div class="c"><span class="py">x</span><span class="z">ㄒ</span><span class="ex">西 <span class="exz">ㄒㄧ</span></span></div>
+<div class="c blank"></div>
+</div></div>
+<div class="row"><div class="lab">翹舌音</div><div class="cells">
+<div class="c"><span class="py">zh</span><span class="z">ㄓ</span><span class="ex">豬 <span class="exz">ㄓㄨ</span></span></div>
+<div class="c"><span class="py">ch</span><span class="z">ㄔ</span><span class="ex">車 <span class="exz">ㄔㄜ</span></span></div>
+<div class="c"><span class="py">sh</span><span class="z">ㄕ</span><span class="ex">書 <span class="exz">ㄕㄨ</span></span></div>
+<div class="c"><span class="py">r</span><span class="z">ㄖ</span><span class="ex">日 <span class="exz">ㄖˋ</span></span></div>
+</div></div>
+<div class="row"><div class="lab">平舌音</div><div class="cells">
+<div class="c"><span class="py">z</span><span class="z">ㄗ</span><span class="ex">字 <span class="exz">ㄗˋ</span></span></div>
+<div class="c"><span class="py">c</span><span class="z">ㄘ</span><span class="ex">草 <span class="exz">ㄘㄠˇ</span></span></div>
+<div class="c"><span class="py">s</span><span class="z">ㄙ</span><span class="ex">傘 <span class="exz">ㄙㄢˇ</span></span></div>
+<div class="c blank"></div>
+</div></div>
+    </div>
+    <div class="col">
+      <div class="sec">介音 <small>3 個，可以夾在聲母和韻母中間</small></div>
+      <div class="med">
+<div class="row"><div class="lab">介音</div><div class="cells">
+<div class="c"><span class="py">i / y</span><span class="z">ㄧ</span><span class="ex">衣 <span class="exz">ㄧ</span></span></div>
+<div class="c"><span class="py">u / w</span><span class="z">ㄨ</span><span class="ex">屋 <span class="exz">ㄨ</span></span></div>
+<div class="c"><span class="py">ü / yu</span><span class="z">ㄩ</span><span class="ex">魚 <span class="exz">ㄩˊ</span></span></div>
+<div class="c blank"></div>
+</div></div>
+      </div>
+      <div class="sec finsec">韻母 <small>13 個</small></div>
+      <div class="fin">
+<div class="row"><div class="lab">單韻母</div><div class="cells">
+<div class="c"><span class="py">a</span><span class="z">ㄚ</span><span class="ex">大 <span class="exz">ㄉㄚˋ</span></span></div>
+<div class="c"><span class="py">o</span><span class="z">ㄛ</span><span class="ex">摸 <span class="exz">ㄇㄛ</span></span></div>
+<div class="c"><span class="py">e</span><span class="z">ㄜ</span><span class="ex">鵝 <span class="exz">ㄜˊ</span></span></div>
+<div class="c"><span class="py">ê</span><span class="z">ㄝ</span><span class="ex">葉 <span class="exz">ㄧㄝˋ</span></span></div>
+</div></div>
+<div class="row"><div class="lab">複韻母</div><div class="cells">
+<div class="c"><span class="py">ai</span><span class="z">ㄞ</span><span class="ex">愛 <span class="exz">ㄞˋ</span></span></div>
+<div class="c"><span class="py">ei</span><span class="z">ㄟ</span><span class="ex">杯 <span class="exz">ㄅㄟ</span></span></div>
+<div class="c"><span class="py">ao</span><span class="z">ㄠ</span><span class="ex">貓 <span class="exz">ㄇㄠ</span></span></div>
+<div class="c"><span class="py">ou</span><span class="z">ㄡ</span><span class="ex">手 <span class="exz">ㄕㄡˇ</span></span></div>
+</div></div>
+<div class="row"><div class="lab">聲隨韻母</div><div class="cells">
+<div class="c"><span class="py">an</span><span class="z">ㄢ</span><span class="ex">山 <span class="exz">ㄕㄢ</span></span></div>
+<div class="c"><span class="py">en</span><span class="z">ㄣ</span><span class="ex">門 <span class="exz">ㄇㄣˊ</span></span></div>
+<div class="c"><span class="py">ang</span><span class="z">ㄤ</span><span class="ex">羊 <span class="exz">ㄧㄤˊ</span></span></div>
+<div class="c"><span class="py">eng</span><span class="z">ㄥ</span><span class="ex">燈 <span class="exz">ㄉㄥ</span></span></div>
+</div></div>
+<div class="row"><div class="lab">捲舌韻母</div><div class="cells">
+<div class="c"><span class="py">er</span><span class="z">ㄦ</span><span class="ex">耳 <span class="exz">ㄦˇ</span></span></div>
+<div class="c blank"></div>
+<div class="c blank"></div>
+<div class="c blank"></div>
+</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec tonesec">聲調 <small>一聲通常不標；二三四聲標在最後一個符號旁；輕聲的點橫寫放最前面、直寫放上面</small></div>
+  <div class="tones">
+<div class="t"><div class="tn">一聲</div><div class="tm sm">不標</div><div class="tz">ㄇㄚ</div><div class="tw">媽</div><div class="tp py2">mā</div></div>
+<div class="t"><div class="tn">二聲</div><div class="tm">ˊ</div><div class="tz">ㄇㄚˊ</div><div class="tw">麻</div><div class="tp py2">má</div></div>
+<div class="t"><div class="tn">三聲</div><div class="tm">ˇ</div><div class="tz">ㄇㄚˇ</div><div class="tw">馬</div><div class="tp py2">mǎ</div></div>
+<div class="t"><div class="tn">四聲</div><div class="tm">ˋ</div><div class="tz">ㄇㄚˋ</div><div class="tw">罵</div><div class="tp py2">mà</div></div>
+<div class="t"><div class="tn">輕聲</div><div class="tm">˙</div><div class="tz">˙ㄇㄚ</div><div class="tw">嗎</div><div class="tp py2">ma</div></div>
+  </div>
+
+  <div class="foot">
+    <span class="pynote">右上角小字是漢語拼音對照，只供參考，有些音無法一對一對應。有的教材把 ㄧㄨㄩ 也算進韻符，合計 16 個韻符。</span>
+    <span>免費教學用表，可自由影印｜製作：Lumi Studio（「Lumi注音星球」開發者）</span>
+  </div>
+</div></section>
+
+<section class="page p2"><div class="pad">
+  <div class="head">
+    <div>
+      <h1 style="font-size:7.5mm">容易混淆的注音：成對練習</h1>
+      <p class="sub">先聽得出來，再寫得對。一次只練一組，一天 3–5 分鐘就好。</p>
+    </div>
+  </div>
+  <table>
+    <thead><tr><th>容易混的</th><th>成對詞（大人唸、孩子指）</th><th>給孩子的提示</th></tr></thead>
+    <tbody>
+<tr><th>ㄣ／ㄥ</th><td class="pz">盆 ㄆㄣˊ／朋 ㄆㄥˊ<br>針 ㄓㄣ／蒸 ㄓㄥ</td><td>ㄣ：舌尖輕頂上排牙齒後面。ㄥ：舌尖放下，舌頭後面往上抬。</td></tr>
+<tr><th>ㄢ／ㄤ</th><td class="pz">山 ㄕㄢ／商 ㄕㄤ</td><td>和上一組一樣：ㄢ 收在舌尖，ㄤ 收在舌頭後面。</td></tr>
+<tr><th>ㄓㄔㄕ／ㄗㄘㄙ</th><td class="pz">紙 ㄓˇ／子 ㄗˇ<br>出 ㄔㄨ／粗 ㄘㄨ<br>山 ㄕㄢ／三 ㄙㄢ</td><td>ㄓㄔㄕ 舌尖往上翹；ㄗㄘㄙ 舌尖平平、不翹起來。可以照鏡子看。</td></tr>
+<tr><th>ㄈ／ㄏ</th><td class="pz">飛 ㄈㄟ／黑 ㄏㄟ</td><td>ㄈ：上排牙齒輕碰下唇。ㄏ：嘴唇不碰，氣從喉嚨出來。</td></tr>
+<tr><th>ㄌ／ㄋ</th><td class="pz">藍 ㄌㄢˊ／男 ㄋㄢˊ</td><td>ㄋ 有鼻音：捏住鼻子唸，聲音會變。ㄌ 捏鼻子也不變。</td></tr>
+<tr><th>ㄅ／ㄆ</th><td class="pz">拔 ㄅㄚˊ／爬 ㄆㄚˊ</td><td>ㄆ 要送氣：手掌放在嘴巴前面，唸 ㄆ 會感覺到一陣風。</td></tr>
+<tr><th>二聲／三聲</th><td class="pz">麻 ㄇㄚˊ／馬 ㄇㄚˇ<br>魚 ㄩˊ／雨 ㄩˇ<br>糖 ㄊㄤˊ／躺 ㄊㄤˇ</td><td>二聲：手從中間往上滑。三聲：手先往下壓、再往上勾。</td></tr>
+    </tbody>
+  </table>
+
+  <h3>聲調符號標在哪裡</h3>
+  <div class="box">
+    <p style="margin:0">一聲通常不標（ㄇㄚ 媽）。二聲、三聲、四聲的符號寫在最後一個注音符號旁邊：橫寫放在右邊（ㄇㄚˊ），直寫放在右上角。輕聲的點：橫寫放在最前面（˙ㄇㄚ），直寫放在上面。</p>
+  </div>
+
+  <h3>回家 10 分鐘的練法</h3>
+  <ol>
+    <li><b>3 分鐘聽：</b>大人唸一個音，孩子指出符號，或用手勢比出聲調。</li>
+    <li><b>4 分鐘拼：</b>從課本挑 3 個詞，照老師在課堂上教的拼法唸一次。</li>
+    <li><b>3 分鐘寫：</b>只寫今天錯的一兩個符號：描兩次、自己寫一次。</li>
+  </ol>
+  <p>拼法（直拼或先分開再合起來）請跟著學校老師的方法，不要在家另外教一套。</p>
+
+    <div class="foot">
+    <span>例字讀音依國語注音；地方口音不同時，以老師在課堂上的教法為準。</span>
+    <span>免費教學用表，可自由影印｜製作：Lumi Studio（「Lumi注音星球」開發者）</span>
+  </div>
+</div></section>
+</div>
+
+<script>
+(function(){
+  var sizes={a4:{w:190,h:277,css:"A4",r:27,t:30},letter:{w:195.9,h:259.4,css:"letter",r:24.5,t:28}};
+  var paper=document.getElementById("paper"), body=document.body;
+  function fit(){
+    var s=sizes[paper.value], root=document.documentElement;
+    root.style.setProperty("--pw",s.w+"mm"); root.style.setProperty("--ph",s.h+"mm");
+    root.style.setProperty("--R",s.r+"mm"); root.style.setProperty("--T",s.t+"mm");
+    document.getElementById("pagesize").textContent="@page { size: "+s.css+"; margin: 10mm; }";
+    var px=s.w*96/25.4, avail=Math.min(window.innerWidth-24, px);
+    root.style.setProperty("--z", (avail/px).toFixed(3));
+  }
+  paper.addEventListener("change",fit); window.addEventListener("resize",fit);
+  function bind(id,cls){var el=document.getElementById(id);function u(){body.classList.toggle(cls,!el.checked)}el.addEventListener("change",u);u();}
+  bind("py","nopy"); bind("ex","noex"); bind("p2","nop2");
+  window.addEventListener("beforeprint",function(){document.documentElement.style.setProperty("--z","1")});
+  window.addEventListener("afterprint",fit);
+  fit();
+})();
+</script>
+</body>
+</html>

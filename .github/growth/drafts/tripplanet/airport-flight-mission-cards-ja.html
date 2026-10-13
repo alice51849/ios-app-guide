@@ -1,0 +1,76 @@
+<!doctype html>
+<!--
+草稿標頭（tripplanet-03）
+用途：把站上「免費親子旅行任務卡產生器」的機場與飛行途中兩組卡片，輸出成可下載、可列印的繁中／日文 A4 任務卡（各 5 張＋1 張空白卡）。貼文的價值在卡片本身，App 只在第 2 頁最後提一次。
+發在哪／給誰：店主把這頁列印成 PDF 或截圖，附在自己的 Threads／Instagram／note 貼文（文案見 mission-cards-share-posts.md），或在對方允許時提供給親子旅遊社團。讀者：寒假、春節、年末年始、春休み要帶孩子搭飛機的台灣與日本家長。
+發文者：店主 Guan Feng Lai 本人（Lumi Studio），貼文中寫明自己是開發者。
+發文規則：卡片免費、不收集任何資料、不設下載門檻（不要求留信箱或追蹤才給）；同一份卡片在同一社團只分享一次；社團規定不能放連結就不放。內容依產生器資料集 data/family-travel-missions.json（CC BY 4.0），日文為本次翻譯；不加入資料集沒有的任務，尤其不加拍照任務。
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>空港と機内のミッションカード</title>
+<meta name="description" content="子連れで飛行機に乗るときの印刷用ミッションカード：空港5枚、機内5枚、白紙カード2枚。">
+<style>
+:root{--ink:#18213b;--muted:#5f677b;--paper:#fffdf8;--line:#ddd7ca;--violet:#6858d9;
+--coral:#f47c67;--mint:#dff4e9;--gold:#ffe2a7;--bg:#efeae0}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,system-ui,sans-serif;line-height:1.5;
+-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.toolbar{max-width:210mm;margin:16px auto 0;padding:0 16px;display:flex;gap:12px;align-items:center;
+justify-content:space-between;flex-wrap:wrap}
+.toolbar p{margin:0;color:var(--muted);font-size:14px}
+.toolbar button{appearance:none;border:0;border-radius:12px;background:var(--violet);color:#fff;
+font:inherit;font-weight:700;padding:10px 18px;cursor:pointer}
+.page{width:210mm;height:297mm;margin:16px auto;padding:11mm 12mm 10mm;background:#fff;
+box-shadow:0 12px 40px rgba(31,35,65,.14);display:flex;flex-direction:column;overflow:hidden}
+.eyebrow{font-size:3.1mm;font-weight:800;color:var(--violet);letter-spacing:.02em}
+h1{font-size:8.4mm;line-height:1.15;margin:1.6mm 0 1.2mm;letter-spacing:-.01em}
+.sub{font-size:3.6mm;color:var(--muted);margin:0}
+.howto{display:flex;flex-wrap:wrap;gap:1.6mm;margin:2.6mm 0 0;padding:0;list-style:none}
+.howto li{font-size:3.1mm;font-weight:700;background:var(--mint);border-radius:99px;padding:.8mm 3mm}
+.boundary{margin:3mm 0 3mm;padding:2.4mm 3.4mm;border-left:1.4mm solid var(--coral);background:#fff6f3;
+border-radius:0 3mm 3mm 0;font-size:3.3mm;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr);flex:1;
+border:.3mm dashed #b9b3a6}
+.card{position:relative;background:var(--paper);padding:5mm 5mm 4mm;display:flex;flex-direction:column;
+border-right:.3mm dashed #b9b3a6;border-bottom:.3mm dashed #b9b3a6;overflow:hidden}
+.card:nth-child(2n){border-right:0}
+.card:nth-child(n+5){border-bottom:0}
+.card:before{content:"";position:absolute;left:0;right:0;top:0;height:1.8mm;
+background:linear-gradient(90deg,var(--violet),var(--coral))}
+.kicker{font-size:2.9mm;font-weight:800;color:#6a607d;letter-spacing:.04em}
+.target{font-size:5.6mm;line-height:1.3;font-weight:800;margin:2.2mm 0 2mm}
+.how{font-size:3.2mm;color:#3c4458;margin:0}
+.skip{margin-top:auto;padding-top:2mm;font-size:2.9mm;font-weight:700;color:var(--muted)}
+.blank .target{color:var(--violet)}
+.lines{display:block;border-bottom:.35mm solid #cfc8b8;height:8mm}
+.foot{margin-top:3mm;font-size:2.75mm;color:var(--muted);line-height:1.45}
+.foot p{margin:0 0 1mm}
+.foot .app{color:var(--ink);font-weight:600;background:#f4f0ff;border-radius:2mm;padding:1.6mm 2.4mm;margin-top:1.4mm}
+@page{size:A4;margin:0}
+@media print{
+  body{background:#fff}
+  .toolbar{display:none}
+  .page{margin:0;box-shadow:none;page-break-after:always;break-after:page}
+  .page:last-child{page-break-after:auto;break-after:auto}
+}
+@media screen and (max-width:840px){
+  .page{width:calc(100vw - 32px);height:auto;margin:16px;padding:18px 16px}
+  .eyebrow{font-size:12px}h1{font-size:26px}.sub,.howto li,.boundary{font-size:13px}
+  .grid{grid-template-columns:1fr;grid-template-rows:none}
+  .card{border-right:0;border-bottom:1px dashed #b9b3a6!important;min-height:150px;padding:18px 16px 14px}
+  .card:last-child{border-bottom:0!important}
+  .kicker,.skip{font-size:11px}.target{font-size:19px}.how{font-size:13px}.lines{height:28px}
+  .foot{font-size:11px}
+}
+</style>
+</head>
+<body>
+<div class="toolbar"><p>A4 縦で印刷（2ページ）。点線で切り取ってください。</p><button type="button" onclick="window.print()">印刷する</button></div>
+<section class="page" aria-label="子連れフライト｜空港ミッションカード"><div class="eyebrow">無料・印刷用・写真なし・個人情報なし・点数なし</div><h1>子連れフライト｜空港ミッションカード</h1><p class="sub">やり方：見る・指さす（大人が決めた安全な場所で）</p><ul class="howto"><li>出すタイミングは大人が決める</li><li>1回1枚でOK</li><li>どのカードもスキップOK</li><li>アプリなしで使えます</li></ul><div class="boundary">付き添いの大人のそばにいて、通路や保安検査場をふさがず、空港と保安検査のスタッフの指示に従ってください。このカードには写真を撮るミッションは一つもありません。</div><div class="grid"><article class="card"><div class="kicker">ミッションカード 1 · 空港</div><div class="target">今の待ち場所から見える 2種類の標識</div><p class="how">今いる場所から探してみよう。その場で許されていて、付き添いの大人が安全だと確認したときだけ、その場から指さしてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 2 · 空港</div><div class="target">窓から見える乗り物 1台</div><p class="how">今いる場所から探してみよう。その場で許されていて、付き添いの大人が安全だと確認したときだけ、その場から指さしてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 3 · 空港</div><div class="target">建物の中でくり返し出てくる形 1つ</div><p class="how">今いる場所から探してみよう。その場で許されていて、付き添いの大人が安全だと確認したときだけ、その場から指さしてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 4 · 空港</div><div class="target">スタッフが身につけている色 1つ</div><p class="how">今いる場所から探してみよう。その場で許されていて、付き添いの大人が安全だと確認したときだけ、その場から指さしてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 5 · 空港</div><div class="target">車輪のついたもの 1つ</div><p class="how">今いる場所から探してみよう。その場で許されていて、付き添いの大人が安全だと確認したときだけ、その場から指さしてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card blank"><div class="kicker">ミッションカード 6 · 空港</div><div class="target">自分で考える</div><p class="how">大人がOKしたお題：</p><span class="lines"></span><span class="lines"></span><div class="skip">どのカードもスキップOK</div></article></div><footer class="foot"><p>安全第一：付き添いの大人が事前にOKした場所でだけ使ってください。その場の現地ルール、航空会社・乗務員・保安検査・空港スタッフの指示が、いつでもカードより優先です。</p><p>名前、年齢、行き先、写真の入力はいりません。点数や達成記録もありません。やり方は年齢や能力のレベル分けではありません。</p><p>オリジナルの文言とレイアウトは CC BY 4.0。出典：Lumi Studio「親子旅行ミッションカード作成ツール」（英語・繁体字中国語版、open.cait518.cc/ios-app-guide/tools/family-travel-mission-card-generator.html）を日本語に翻訳。</p></footer></section>
+<section class="page" aria-label="子連れフライト｜機内ミッションカード"><div class="eyebrow">無料・印刷用・写真なし・個人情報なし・点数なし</div><h1>子連れフライト｜機内ミッションカード</h1><p class="sub">やり方：よく見る・言葉にする（座っていて、乗務員が許可しているときだけ）</p><div class="boundary">座席に座っていて、乗務員が許可しているときだけ使ってください。安全のご案内、指示、揺れがあるとき、または大人が「いったんやめよう」と言ったときは、すぐにやめましょう。</div><div class="grid"><article class="card"><div class="kicker">ミッションカード 1 · 機内</div><div class="target">静かな音 1つ</div><p class="how">よく見て、色・形・音・細かいところを1つ考えよう。話してもいいときに、となりの大人に小さな声で教えてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 2 · 機内</div><div class="target">たためるもの 1つ</div><p class="how">よく見て、色・形・音・細かいところを1つ考えよう。話してもいいときに、となりの大人に小さな声で教えてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 3 · 機内</div><div class="target">乗務員がお知らせに使うもの 1つ</div><p class="how">よく見て、色・形・音・細かいところを1つ考えよう。話してもいいときに、となりの大人に小さな声で教えてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 4 · 機内</div><div class="target">空が見えるなら、雲の形 1つ</div><p class="how">よく見て、色・形・音・細かいところを1つ考えよう。話してもいいときに、となりの大人に小さな声で教えてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card"><div class="kicker">ミッションカード 5 · 機内</div><div class="target">同じ列の人を手伝う、ていねいなやり方 1つ</div><p class="how">よく見て、色・形・音・細かいところを1つ考えよう。話してもいいときに、となりの大人に小さな声で教えてね。</p><div class="skip">どのカードもスキップOK</div></article><article class="card blank"><div class="kicker">ミッションカード 6 · 機内</div><div class="target">自分で考える</div><p class="how">大人がOKしたお題：</p><span class="lines"></span><span class="lines"></span><div class="skip">どのカードもスキップOK</div></article></div><footer class="foot"><p>安全第一：付き添いの大人が事前にOKした場所でだけ使ってください。その場の現地ルール、航空会社・乗務員・保安検査・空港スタッフの指示が、いつでもカードより優先です。</p><p>名前、年齢、行き先、写真の入力はいりません。点数や達成記録もありません。やり方は年齢や能力のレベル分けではありません。</p><p>オリジナルの文言とレイアウトは CC BY 4.0。出典：Lumi Studio「親子旅行ミッションカード作成ツール」（英語・繁体字中国語版、open.cait518.cc/ios-app-guide/tools/family-travel-mission-card-generator.html）を日本語に翻訳。</p><p class="app">このカードはアプリなしで使えます。作成した私は Lumi Studio の開発者で、「Trip Planet 子ども旅行ゲーム」というアプリも作っています。旅のミッション、パスポートのスタンプ、旅のストーリーカードをスマホに残したいご家庭は、App Store でこの名前を検索してください。</p></footer></section>
+</body>
+</html>

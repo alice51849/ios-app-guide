@@ -1,0 +1,1487 @@
+{
+ "schema_version": 1,
+ "updated": "2026-10-13",
+ "note": "Per-app posts from the deep diagnosis. Same honesty_rules and posting_rules as fifty-languages-campaign.json. Only features present in each app's own listing copy.",
+ "posts": [
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "zh-Hant",
+   "scenario": "pain",
+   "ct": "sib_tw_pain",
+   "text": "相簿裡幾百張截圖，每一張當初都是一件「待會再處理」的事：收據、地址、訂位、想買的東西。結果一張都沒處理。\n\nShotInbox 會在手機上把截圖自動分成購物、收據、票券、地圖、對話等類別，還能搜尋截圖裡的文字。看到地址就開地圖、看到日期就加進行事曆。它不會自己刪任何東西，處理完再由你決定。\n\n最近 50 張截圖免費用完整功能，全程在裝置上處理，不上傳。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "zh-Hant",
+   "scenario": "find_text",
+   "ct": "sib_tw_find",
+   "text": "「那張截圖到底在哪？」記得內容、卻找不到圖，是截圖最常見的痛。\n\nShotInbox 會辨識截圖裡的文字，輸入關鍵字就能找到那張訂位確認、那組優惠碼、那段對話。辨識全在手機上完成，截圖不會上傳。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "zh-Hant",
+   "scenario": "storage",
+   "ct": "sib_tw_space",
+   "text": "手機空間不足，相簿裡卻躺著三年份的截圖？\n\n先用 ShotInbox 把截圖分好類：有用的收據、票券、地址留下或加進提醒，沒用的再清掉。刪除前「照片」會再跟你確認一次，ShotInbox 不會自動刪除。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "ja",
+   "scenario": "pain",
+   "ct": "sib_ja_pain",
+   "text": "スクショが何百枚もたまっていませんか？\n\nShotInbox はスクショを買い物・レシート・チケット・地図・トークなどに自動で分類し、画像の中の文字でも検索できます。住所なら地図で開く、日付ならカレンダーに追加。処理はすべて端末内で、勝手に削除することはありません。最新50枚は無料で全機能を使えます。"
+  },
+  {
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "lang": "en",
+   "scenario": "pain",
+   "ct": "sib_en_pain",
+   "text": "Every screenshot was a task: a receipt to file, an address to visit, a code to use. Then the camera roll swallowed them.\n\nShotInbox sorts screenshots on-device into receipts, tickets, places, chats and more, lets you search the text inside them, and turns them into actions like Open in Maps or Add to Calendar. It never deletes anything on its own. Your latest 50 screenshots get the full workflow free."
+  },
+  {
+   "app": "mochi",
+   "app_id": "6785004775",
+   "lang": "en",
+   "scenario": "Reddit r/iosapps 揭露身分的「I made」貼文／Threads：待辦 App 太像工作軟體",
+   "ct": "mochi_en_1",
+   "text": "Does your to-do app feel like project software for a grocery list? I made Mochi: a cute checklist where tapping the little circle when you finish feels calm. 101 themes, Home Screen widgets, Apple Watch, and 50 interface languages you switch inside the app. Honest note: the free version is small (2 lists, up to 4 tasks each, 5 themes); Premium is an in-app purchase. Solo dev in Taiwan."
+  },
+  {
+   "app": "mochi",
+   "app_id": "6785004775",
+   "lang": "pt-BR",
+   "scenario": "巴西 Instagram／Threads 生活整理族群：先把免費範圍講清楚，修正 3 星落差",
+   "ct": "mochi_ptBR_2",
+   "text": "Sua lista de tarefas parece software de empresa até pra comprar pão? Fiz a Mochi: uma checklist fofa em que tocar no circulozinho ao concluir dá uma sensação boa. 101 temas, widgets na tela inicial, Apple Watch e 50 idiomas de interface que você troca dentro do app. Sendo sincero: a versão grátis é pequena (2 listas com até 4 tarefas cada); o Premium é compra dentro do app. Dev independente em Taiwan."
+  },
+  {
+   "app": "mochi",
+   "app_id": "6785004775",
+   "lang": "de",
+   "scenario": "德國 Apple 論壇／Threads：誠實版介紹，對應 DE 3 星",
+   "ct": "mochi_de_3",
+   "text": "Fühlt sich deine To-do-App an wie Projektsoftware für den Einkaufszettel? Ich habe Mochi gebaut: eine süße Checkliste, bei der das Antippen des kleinen Kreises nach dem Erledigen gut tut. 101 Designs, Home-Bildschirm-Widgets, Apple Watch und 50 Sprachen, die du in der App umschaltest. Ehrlich gesagt: Die Gratis-Version ist klein (2 Listen mit je bis zu 4 Aufgaben); Premium ist ein In-App-Kauf. Indie-Dev aus Taiwan."
+  },
+  {
+   "app": "mochi",
+   "app_id": "6785004775",
+   "lang": "ja",
+   "scenario": "日本 X：かわいいToDo、學生與上班族",
+   "ct": "mochi_ja_4",
+   "text": "買い物メモも課題も、ToDoアプリが仕事ツールみたいで続かない…そんな人向けに「Mochi」を作りました。終わったら小さな丸をタップするだけの、ちょっとほっとするチェックリストです。テーマ101種類、ホーム画面ウィジェット、Apple Watch対応、表示言語は50言語からアプリ内で切り替えられます。正直に書くと、無料版はリスト2つ・各4項目まで。プレミアムはApp内課金です。台湾の個人開発者より。"
+  },
+  {
+   "app": "mochidonestamp",
+   "app_id": "6790800323",
+   "lang": "en",
+   "scenario": "Reddit 自我推廣串／Threads：忘記上次換濾芯、換床單",
+   "ct": "mochidonesta_en_1",
+   "text": "When did you last replace the water filter, change the sheets or call your parents? Mochi DoneStamp remembers for you: finish it, tap once, and the exact time is saved. Add a rhythm if you like; the next due date restarts from when you actually did it, not from the plan. No account, no ads, no subscription: free with 1 active event, Lifetime Pro is one purchase. 50 interface languages, switchable in-app. Solo dev, Taiwan."
+  },
+  {
+   "app": "mochidonestamp",
+   "app_id": "6790800323",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads／Mobile01 居家版：家事與保養的「上次是哪天」",
+   "ct": "mochidonesta_zhHant_2",
+   "text": "上次換床單是哪天？濾芯、澆花、打電話回家，你記得嗎？Mochi DoneStamp 專門記這種事：做完點一下，確切時間就存下來；想要的話設個週期，下次到期從「你真正做完那天」重新算，不是從原本計畫。可補登、加備註和照片，也有小工具和捷徑。不用帳號、沒廣告、絕不訂閱；免費可追蹤 1 件事，Lifetime Pro 一次買斷。50 種介面語言可在 App 內切換。台灣獨立開發，你最常忘的是哪件？"
+  },
+  {
+   "app": "mochidonestamp",
+   "app_id": "6790800323",
+   "lang": "ja",
+   "scenario": "日本 X／note：名もなき家事、最後にやった日",
+   "ct": "mochidonesta_ja_3",
+   "text": "シーツ、最後に替えたのいつだっけ？フィルター交換、水やり、実家への電話も。「Mochi DoneStamp」は、済んだらワンタップで日時を記録するアプリです。周期を設定すれば、次の予定は“実際にやった日”から数え直し。あとから日付の修正、メモや写真の追加もできます。アカウント不要・広告なし・サブスクなし。無料は1件まで、Lifetime Proは買い切り。表示言語は50言語からアプリ内で切り替えられます。台湾の個人開発者です。"
+  },
+  {
+   "app": "countdaysnow",
+   "app_id": "6807079789",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads／Dcard：長輩農曆生日、學測百日、出國前手續",
+   "ct": "countdaysnow_zhHant_1",
+   "text": "長輩生日是農曆，每年國曆都不一樣，每次都要翻農民曆？CountDaysNow 每個日子都能在西元旁邊同時顯示農曆或民國。考試、出國也能用「倒數計畫」：例如出國前 30 天換護照，日期改了，所有步驟一起移動。主畫面、鎖定畫面、動態島、Apple Watch 都看得到。無廣告、不訂閱、一次買斷解鎖全部；免費可用 3 個事件。50 種介面語言可在 App 內切換。台灣獨立開發，你在倒數什麼？"
+  },
+  {
+   "app": "countdaysnow",
+   "app_id": "6807079789",
+   "lang": "ko",
+   "scenario": "韓國 Clien／Threads：수능、100일、전역일 的「那天之前要做的事」",
+   "ct": "countdaysnow_ko_2",
+   "text": "수능, 100일, 전역일… 날짜 세는 앱은 많은데 '그날까지 뭘 해야 하지?'는 늘 따로 챙겨야 했어요. CountDaysNow의 카운트다운 플랜은 이벤트마다 '며칠 전에 할 일'을 정해 두고, 날짜를 바꾸면 단계도 같이 움직여요. 잠금화면·다이내믹 아일랜드 실시간 카운트다운, 음력 병기, 애플워치 지원. 광고 없음, 구독 없음, 한 번 구매로 전부 해제. 무료는 이벤트 3개까지. 인터페이스 언어 50개, 앱 안에서 바로 바꿀 수 있어요. 대만 1인 개발자입니다."
+  },
+  {
+   "app": "countdaysnow",
+   "app_id": "6807079789",
+   "lang": "ja",
+   "scenario": "日本 X：推し活遠征前要做的事",
+   "ct": "countdaysnow_ja_3",
+   "text": "ライブまであと何日？遠征はチケット発券、ホテル、休み申請…と“当日までにやること”が多いですよね。CountDaysNowの「カウントダウンプラン」は、イベントごとに「何日前にやるか」を決めておけて、日付が変わればステップも一緒に動きます。ロック画面とダイナミックアイランドでカウントダウン、旧暦・和暦の併記、Apple Watch対応。広告なし・サブスクなし・買い切り、無料は3件まで。表示言語は50言語からアプリ内で切り替え。台湾の個人開発者です。"
+  },
+  {
+   "app": "studydown",
+   "app_id": "6807335593",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads／Dcard 讀書版：讀書時一直順手拿手機（試用規則修正後再發）",
+   "ct": "studydown_zhHant_1",
+   "text": "讀書時最大的敵人常常不是懶，是「順手」拿起手機。Studydown：選好項目、按開始，把手機螢幕朝下放桌上。拿起超過你設的寬限時間就暫停，離開 App 就不再計時。每次都會留下拿起次數和平均連續專注時間；也能設期限，看每天還要投入多少。全程本機、沒有訂閱。老實說，免費只有累計 5 分鐘體驗，Pro 一次買斷。50 種介面語言可在 App 內切換。台灣獨立開發。"
+  },
+  {
+   "app": "studydown",
+   "app_id": "6807335593",
+   "lang": "ja",
+   "scenario": "日本勉強垢（X／IG）：數一數拿起手機的次數",
+   "ct": "studydown_ja_2",
+   "text": "勉強中、気づいたらスマホを手に取ってる。その回数が見えたら、少し変わるかもしれません。「Studydown」は項目を選んでスタート、スマホを机に伏せるだけ。持ち上げると猶予時間のあと一時停止、アプリを離れると記録は止まります。セッションごとに持ち上げ回数と平均連続集中時間が残り、締め切りまでに必要な1日のペースも確認できます。完全ローカル、サブスクなし。正直に言うと無料は合計5分のお試し、Proは買い切りです。表示言語は50言語からアプリ内で切り替え。台湾の個人開発者です。"
+  },
+  {
+   "app": "studydown",
+   "app_id": "6807335593",
+   "lang": "ko",
+   "scenario": "韓國 공스타그램：讀書時拿起手機的次數",
+   "ct": "studydown_ko_3",
+   "text": "공부하면서 폰을 몇 번 들었는지 세어 본 적 있나요? Studydown은 활동을 고르고 시작한 뒤 폰을 책상에 엎어 두면 시간을 기록해요. 들어 올리면 유예 시간 뒤 멈추고, 앱을 나가면 기록이 멈춰요. 세션마다 들어 올린 횟수와 평균 연속 몰입 시간이 남고, 마감일까지 필요한 하루 분량도 보여요. 온디바이스, 구독 없음. 솔직히 무료 체험은 총 5분이고 Pro는 한 번 구매예요. 인터페이스 언어 50개, 앱 안에서 바꿀 수 있어요. 대만 1인 개발자입니다."
+  },
+  {
+   "app": "lockhour",
+   "app_id": "6780107485",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads／Dcard：起床第一件事就滑社群、不想訂閱",
+   "ct": "lockhour_zhHant_1",
+   "text": "早上醒來第一件事就是滑社群？我做了 LockHour Pro：選好要擋的 App、開始專注時段，時間到自動解鎖。有學習模式（番茄鐘循環加休息）、睡前放鬆、晨間重啟；強制模式會在提前結束前加一段冷靜倒數與打字確認，讓你想清楚。主畫面與鎖定畫面小工具、靈動島倒數。不用帳號、沒廣告、不追蹤，一次買斷不訂閱。50 種介面語言可在 App 內切換。台灣獨立開發，你最想擋哪個 App？"
+  },
+  {
+   "app": "lockhour",
+   "app_id": "6780107485",
+   "lang": "ja",
+   "scenario": "日本 X：朝スマホ、寝る前のスクロール",
+   "ct": "lockhour_ja_2",
+   "text": "朝起きて最初に開くのがSNS…という人へ。「LockHour Pro」は気が散るアプリを選んで集中セッションを始めると、時間が来るまで遮断し、終われば自動で解除します。ディープワーク、休憩つきの勉強サイクル、寝る前のワインドダウン、朝のリセット。ハードモードなら途中でやめる前にクールダウンと入力確認が入ります。ダイナミックアイランドでカウントダウン。アカウント不要・広告なし・追跡なし、サブスクなしの買い切り。表示言語は50言語からアプリ内で切り替え。台湾の個人開発者です。"
+  },
+  {
+   "app": "lockhour",
+   "app_id": "6780107485",
+   "lang": "en",
+   "scenario": "Reddit（有人問免訂閱替代品時回覆）／Threads；不點名競品",
+   "ct": "lockhour_en_3",
+   "text": "Fed up with app blockers on a monthly subscription? LockHour Pro: pick the apps, start a session, and they stay shielded until the timer ends, then unlock automatically. Modes for deep work, study cycles with breaks, sleep wind-down and a morning reset. Hard Mode adds a cooldown before you can quit early. No account, no ads, no tracking. Pay once, no subscription. Solo dev in Taiwan."
+  },
+  {
+   "app": "stayclock",
+   "app_id": "6814035888",
+   "lang": "en",
+   "scenario": "Reddit r/ipad／r/desksetup（真實桌面照、揭露身分）／Threads：抽屜裡的舊 iPad",
+   "ct": "stayclock_en_1",
+   "text": "Got an old iPad or iPhone in a drawer? Stay Clock turns it into a desk clock you can read across the room: big time, a date or month calendar, and Keep Awake while charging with a battery floor. At night it switches to a dim red face on true black, with gentle pixel shifting for OLED. The same face shows in StandBy, widgets and on Apple Watch. One face free; a Lifetime unlock adds 100 more. No account, no ads, no network. Solo dev, Taiwan."
+  },
+  {
+   "app": "stayclock",
+   "app_id": "6814035888",
+   "lang": "ja",
+   "scenario": "日本 X：デスク周り／デスクツアー、古い端末再利用",
+   "ct": "stayclock_ja_2",
+   "text": "引き出しで眠っている古いiPhoneやiPad、デスクの時計にしませんか。「Stay Clock」は離れても読める大きな時刻と、日付・曜日または月カレンダーを表示。充電中は画面をつけたまま、バッテリー下限も設定できます。夜は真っ黒な背景に暗い赤の文字盤、OLED向けにピクセルを少しずつずらします。同じ文字盤をStandBy・ウィジェット・Apple Watchにも。無料で1種、買い切りで100種追加。アカウント不要・広告なし・通信なし。表示言語は50言語からアプリ内で切り替え。台湾の個人開発者です。"
+  },
+  {
+   "app": "stayclock",
+   "app_id": "6814035888",
+   "lang": "de",
+   "scenario": "德國 Apple 論壇（Apfeltalk 等，依版規）：altes iPad als Uhr、OLED 防烙印",
+   "ct": "stayclock_de_3",
+   "text": "Altes iPad in der Schublade? Stay Clock macht daraus eine Tischuhr, die man quer durchs Zimmer liest: große Uhrzeit, Datum oder Monatskalender, bleibt beim Laden wach (mit Akku-Untergrenze). Nachts ein gedimmtes rotes Zifferblatt auf Schwarz, mit Pixel-Verschiebung für OLED. Kein Konto, keine Werbung, kein Netzwerk. Ein Zifferblatt gratis, 100 weitere per Einmalkauf. 50 Sprachen, in der App umschaltbar. Indie-Dev aus Taiwan."
+  },
+  {
+   "app": "stayclock",
+   "app_id": "6814035888",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads／Mobile01 iPad 版：長輩房間的大字時鐘、舊 iPad 再利用",
+   "ct": "stayclock_zhHant_4",
+   "text": "家裡長輩常問「今天星期幾？」抽屜裡的舊 iPad 可以幫忙。Stay Clock 把它變成隔著房間也看得清楚的大字桌鐘，旁邊可顯示日期和星期；充電時保持亮著，還能設電量下限。晚上可排程換成純黑底的暗紅色時鐘，不刺眼，OLED 也會微微移動像素保護面板。同一款錶面也會出現在 StandBy、小工具和 Apple Watch。免費 1 款錶面，Lifetime 一次買斷再加 100 款。不用帳號、沒廣告、不連網；50 種介面語言可在 App 內切換。台灣獨立開發。"
+  },
+  {
+   "app": "picclear",
+   "app_id": "6780223070",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：子女幫爸媽處理「儲存空間已滿」",
+   "ct": "picclear_zhHant_1",
+   "text": "爸媽的 iPhone 又跳「儲存空間已滿」，相簿打開全是連拍、截圖和長影片？\n我是台灣的獨立開發者，做了 PicClear Pro：在手機上掃出重複、相似、截圖、模糊照片和大型影片，刪之前每張都能先看縮圖，「最愛」不會被自動選，刪掉的會先進「最近刪除」，可以復原。\n掃描和預覽免費，要清理再一次買斷；沒有訂閱、沒有廣告、照片不上傳。介面有 50 種語言，幫長輩設定時可在 App 內直接切換。"
+  },
+  {
+   "app": "picclear",
+   "app_id": "6780223070",
+   "lang": "ja",
+   "scenario": "X（日本）：旅行前夜にストレージ不足",
+   "ct": "picclear_ja_2",
+   "text": "旅行の前夜に「ストレージがいっぱいです」。何を消せばいいか分からず手が止まる。\n台湾で一人でアプリを作っています。PicClear Proは重複・類似写真、スクショ、ピンボケ、大きな動画を端末上で見つけ、削除前にサムネイルで全部確認できます。お気に入りは自動選択されず、消したものは「最近削除した項目」に残ります。\nスキャンとプレビューは無料、削除は買い切りで解放。サブスクも広告もなし、写真はアップロードされません。表示言語は50種類、アプリ内で切り替えられます。"
+  },
+  {
+   "app": "picclear",
+   "app_id": "6780223070",
+   "lang": "en",
+   "scenario": "r/iosapps／Threads：容量又滿了、不想訂閱",
+   "ct": "picclear_en_3",
+   "text": "Storage full again? The quick wins are bursts, old screenshots and huge videos.\nSolo dev in Taiwan. PicClear Pro finds duplicates, similar shots, screenshots, blurry photos and large videos on your iPhone. You review thumbnails first; Favorites are never auto-selected; deletions go to Recently Deleted.\nScan and preview free, cleaning is one purchase. No subscription, no ads, no upload. 50 languages, switch in-app."
+  },
+  {
+   "app": "unblurry",
+   "app_id": "6782275018",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：小孩照片手震糊掉的爸媽",
+   "ct": "unblurry_zhHant_1",
+   "text": "小孩永遠不會乖乖站好，相簿裡一半是手震、對焦跑掉的照片。\n我是台灣的獨立開發者，做了 Unblurry：在 iPhone 上直接處理，有自動清晰、銳化、降噪、低光源、文件模式、AI 超解析，按住就能看原圖對比。照片不上傳、不用帳號。\n老實說不是每張都救得回來，但輕微手震、失焦的差很多。每天可免費強化並儲存（有浮水印）；一次買斷解鎖原解析度、4× 放大、人像與老照片修復，沒有訂閱。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "unblurry",
+   "app_id": "6782275018",
+   "lang": "ja",
+   "scenario": "X（日本）：子どもの写真が手ブレ・ピンボケ",
+   "ct": "unblurry_ja_2",
+   "text": "子どもはじっとしてくれない。カメラロールの半分は手ブレとピンボケ。\n台湾の個人開発者です。UnblurryはぼやけをiPhone内で補正します。オートクリア、シャープ、ノイズ除去、ローライト、書類、AI超解像。押している間は元画像と比較できます。写真はアップロードされず、アカウント不要。\nすべて直るわけではありませんが、軽い手ブレならかなり変わります。毎日無料で補正・保存（透かし入り）、買い切りで元解像度・4倍拡大・ポートレート＆復元。表示言語は50種類、アプリ内で切替可。"
+  },
+  {
+   "app": "unblurry",
+   "app_id": "6782275018",
+   "lang": "id",
+   "scenario": "Threads／Facebook（印尼）：anak bergerak, foto buram",
+   "ct": "unblurry_id_3",
+   "text": "Anak nggak mau diam, separuh galeri isinya foto goyang dan buram.\nDev indie dari Taiwan. Unblurry memperjelas foto langsung di iPhone: Pertajam, Kurangi Noise, Cahaya Rendah, Dokumen, Super Resolusi AI. Tidak diunggah, tanpa akun.\nJujur, tidak semua foto bisa diselamatkan, tapi goyang ringan bisa jauh lebih jelas. Gratis tiap hari (ada watermark); sekali beli, tanpa langganan. 50 bahasa, ganti di aplikasi."
+  },
+  {
+   "app": "unblurry",
+   "app_id": "6782275018",
+   "lang": "en",
+   "scenario": "r/iosapps／Threads：老照片與小孩照片，裝置端處理",
+   "ct": "unblurry_en_4",
+   "text": "An old family print snapped on a phone. Your kid mid-jump, all motion blur. Unblurry fixes them on your iPhone: Sharpen, Denoise, Low Light, Document, AI Super Resolution, Portrait & Restore. No upload, no account.\nSolo dev in Taiwan. Honest note: not every photo can be saved, but mild shake often improves a lot.\nFree daily saves (watermarked); pay once, no subscription. 50 languages, switch in-app."
+  },
+  {
+   "app": "photocream",
+   "app_id": "6781808054",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：想要底片感但不想訂閱",
+   "ct": "photocream_zhHant_1",
+   "text": "想要底片感，但不想每週付訂閱、也不想照片被上傳？\n我是台灣的獨立開發者，做了 PhotoCream Pro：100 多種手調底片風格，有顆粒、光暈、漏光、暗角，拍之前就能即時預覽。拍完可調曝光、曲線、HSL，加文字、邊框、日期戳。美肌只作用在臉部，眼睛、髮絲維持清楚，不會變塑膠臉。\n全部在手機上處理、不用帳號。免費下載，一次解鎖去浮水印和全部濾鏡包，沒有訂閱、沒有廣告。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "photocream",
+   "app_id": "6781808054",
+   "lang": "ja",
+   "scenario": "X／Instagram（日本）：エモいフィルム写真、サブスクなしで",
+   "ct": "photocream_ja_2",
+   "text": "エモいフィルム写真を撮りたいだけなのに、週額サブスクはちょっと…という人へ。\n台湾の個人開発者です。PhotoCream Proは100以上のフィルムルック（粒子・ハレーション・光漏れ・ビネット）を撮影前にライブプレビュー。撮った後は露出・トーンカーブ・HSL、文字・フレーム・日付スタンプも。美肌は顔だけに効き、目や髪はくっきりのまま。\nすべて端末内で処理、アカウント不要。ダウンロード無料、買い切りで透かしを外して全パック解放。サブスク・広告なし。表示言語は50種類。"
+  },
+  {
+   "app": "photocream",
+   "app_id": "6781808054",
+   "lang": "ko",
+   "scenario": "Instagram／Threads（韓國）：감성 필름 사진",
+   "ct": "photocream_ko_3",
+   "text": "감성 필름 사진은 찍고 싶은데 주간 구독은 부담스러울 때.\n대만에서 혼자 앱을 만드는 개발자입니다. PhotoCream Pro는 100가지 이상의 필름 룩(그레인, 할레이션, 빛샘, 비네팅)을 촬영 전에 실시간으로 미리 볼 수 있어요. 촬영 후엔 노출·커브·HSL, 텍스트·테두리·날짜 스탬프까지. 피부 보정은 얼굴에만 적용되고 눈과 머리카락은 선명하게 유지돼요.\n모두 기기 안에서 처리, 계정 불필요. 무료 다운로드, 한 번 구매로 워터마크 제거와 모든 팩 해제. 구독·광고 없음. 인터페이스는 50개 언어, 앱 안에서 바꿀 수 있어요."
+  },
+  {
+   "app": "photocream",
+   "app_id": "6781808054",
+   "lang": "zh-Hans",
+   "scenario": "小红书（中国区有上架，店主本人账号发布）：胶片感不想订阅",
+   "ct": "photocream_zhHans_4",
+   "text": "想要胶片感，又不想每周付订阅、也不想照片被上传？\n我是台湾的独立开发者，做了 PhotoCream Pro：100 多种手调胶片风格，有颗粒、光晕、漏光、暗角，拍之前就能实时预览。拍完可调曝光、曲线、HSL，加文字、边框、日期戳。美肤只作用在脸部，眼睛和发丝保持清晰。\n全部在手机上处理、不用账号。免费下载，一次解锁去水印和全部滤镜包，没有订阅、没有广告。界面支持 50 种语言，可在 App 内切换。"
+  },
+  {
+   "app": "maskmyfile",
+   "app_id": "6792850916",
+   "lang": "ja",
+   "scenario": "X／note（日本）：本人確認書類・契約書PDFを送る前に黒塗り",
+   "ct": "maskmyfile_ja_1",
+   "text": "本人確認書類や契約書のPDFを送る前に、関係ない番号や住所を隠したい。でも黒い四角を重ねただけだと、ファイルによっては下の文字が残ることがあります。\n台湾の個人開発者です。Mask My Fileは画像やPDFの選んだ部分を完全に塗りつぶすか削除し、新しいファイルを開き直して確認してから「Private Ready」と表示します。元ファイルは上書きせず、対応形式ならメタデータも削除。\n処理はすべて端末内、アカウント・広告・トラッキングなし。買い切りで一括処理（最大100ファイル）も。表示言語は50種類。"
+  },
+  {
+   "app": "maskmyfile",
+   "app_id": "6792850916",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：租屋傳身分證、薪資單給房東",
+   "ct": "maskmyfile_zhHant_2",
+   "text": "租屋要傳身分證、薪資單給房東，病歷要傳給別人，你會把整張原檔直接丟進通訊軟體嗎？\n我是台灣的獨立開發者，做了 Mask My File：在手機上永久遮蔽你選的私密資訊，只留對方真正需要的內容。圖片、PDF 用實心遮蔽或直接移除；完成後會重新開啟新檔驗證，確認後才顯示 Private Ready。原檔不覆寫，支援的格式可移除中繼資料。\n全程在裝置上處理，沒有帳號、廣告、追蹤。一次買斷，沒有訂閱。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "maskmyfile",
+   "app_id": "6792850916",
+   "lang": "ko",
+   "scenario": "Threads／Naver 블로그（韓國）：신분증 사본 주민번호 뒷자리 가리기",
+   "ct": "maskmyfile_ko_3",
+   "text": "신분증 사본 보낼 때 주민번호 뒷자리 가리라고 하죠. 그런데 PDF 위에 도형만 얹어 가리면 파일에 따라 원래 글자가 남아 있을 수 있어요.\n대만 1인 개발자가 만든 Mask My File은 이미지·PDF에서 고른 부분을 영구적으로 덮거나 지우고, 새 사본을 다시 열어 확인한 뒤 Private Ready를 표시해요. 원본은 덮어쓰지 않고, 지원 형식이면 메타데이터도 제거합니다.\n모든 처리는 기기 안에서. 계정·광고·추적 없음, 한 번 구매로 평생 사용. 인터페이스 50개 언어, 앱 안에서 전환 가능."
+  },
+  {
+   "app": "maskmyfile",
+   "app_id": "6792850916",
+   "lang": "en",
+   "scenario": "Show HN／r/iosapps：pay stub with SSN for a landlord",
+   "ct": "maskmyfile_en_4",
+   "text": "A landlord asks for your pay stub. It also shows your Social Security number, which they don't need.\nSolo dev in Taiwan. Mask My File permanently hides only what you choose in images and PDFs, then reopens the new copy to verify it before showing Private Ready. OCR runs on-device; originals are never overwritten.\nNo account, ads, tracking or upload. Pay once. 50 interface languages."
+  },
+  {
+   "app": "scanto",
+   "app_id": "6779977651",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：辦事要交身分證正反面影本",
+   "ct": "scanto_zhHant_1",
+   "text": "辦事要交「身分證正反面影本」，家裡又沒有影印機？\n我是台灣的獨立開發者，做了 ScanTo Pro：證件模式把正反面排在同一頁，可匯出 A4 PDF 列印或傳送。掃描、文字辨識都在手機上完成，開飛航模式也一樣能用；可用 Face ID 鎖 App，寄機密文件能匯出有密碼的加密 PDF。\n免費下載可先試首次掃描；證件版面、加密 PDF、無限掃描都在一次買斷裡，沒有訂閱、沒有廣告。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "scanto",
+   "app_id": "6779977651",
+   "lang": "ja",
+   "scenario": "X（日本）：契約書・身分証を他社サーバーに上げたくない",
+   "ct": "scanto_ja_2",
+   "text": "契約書や身分証のスキャンを、知らない会社のサーバーに上げたくない。\n台湾の個人開発者です。ScanTo ProはスキャンもOCRもiPhoneの中だけで行い、機内モードでも同じように動きます。文書内の文字で検索でき、領収書・身分証・契約書などに自動分類。Face IDでロック、パスワード付き暗号化PDFも書き出せます。身分証の表裏を1ページにまとめるレイアウトも。\n最初の1枚は無料、買い切りで無制限スキャンと全エクスポートを解放。サブスクなし。表示言語は50種類、アプリ内で切替可。"
+  },
+  {
+   "app": "scanto",
+   "app_id": "6779977651",
+   "lang": "de",
+   "scenario": "Pitch an iphone-ticker／appgefahren、Threads（德國）：Datenschutz, Ausweis und Mietvertrag",
+   "ct": "scanto_de_3",
+   "text": "Ausweis, Mietvertrag, Quittungen: Muss das auf den Server einer Scanner-App?\nSolo-Entwickler aus Taiwan. ScanTo Pro scannt und erkennt Text (OCR) nur auf dem iPhone, auch im Flugmodus. App mit Face ID sperren, passwortgeschützte PDFs exportieren. Ausweis: Vorder- und Rückseite auf einer Seite.\nErster Scan gratis, dann einmal zahlen. Kein Abo, kein Konto. 50 Sprachen, in der App umschaltbar."
+  },
+  {
+   "app": "scanto",
+   "app_id": "6779977651",
+   "lang": "id",
+   "scenario": "Facebook／Threads 在台印尼社群：fotokopi ARC depan-belakang",
+   "ct": "scanto_id_4",
+   "text": "Sering diminta fotokopi ARC atau KTP depan-belakang, tapi nggak ada mesin fotokopi?\nDev indie dari Taiwan. ScanTo Pro menaruh sisi depan dan belakang kartu dalam satu halaman, lalu ekspor PDF A4. Semua diproses di iPhone, jalan di mode pesawat, tidak diunggah. Bisa dikunci Face ID dan ekspor PDF berpassword.\nScan pertama gratis; sekali beli, tanpa langganan. 50 bahasa, ganti di aplikasi."
+  },
+  {
+   "app": "cvdesk",
+   "app_id": "6781337213",
+   "lang": "id",
+   "scenario": "印尼應屆生在 TikTok／IG 搜「CV ATS」",
+   "ct": "cvdesk_id_1",
+   "text": "Puluhan lamaran, tak ada panggilan? Bisa jadi CV-mu tidak terbaca sistem ATS. CV Desk memberi skor ATS 0-100 di iPhone dengan saran perbaikan yang bisa diketuk, lalu ekspor PDF satu kolom berteks asli atau Word (.docx) yang bisa diedit. Buat dan pratinjau tanpa bayar; buka kunci sekali untuk ekspor tanpa watermark. Tanpa langganan, tanpa akun, CV tidak diunggah. Skor hanya perkiraan. 50 bahasa, ganti di aplikasi."
+  },
+  {
+   "app": "cvdesk",
+   "app_id": "6781337213",
+   "lang": "en",
+   "scenario": "LinkedIn／Threads：匯出時撞上訂閱牆或浮水印",
+   "ct": "cvdesk_en_2",
+   "text": "An hour of typing, then a subscription wall or a watermark at export. I built CV Desk to avoid that: build and preview without paying; one unlock exports with no watermark, no subscription. On-device 0-100 ATS score with tappable fixes; export a single-column PDF with real selectable text or an editable .docx. No account, no upload. The score is an estimate. 50 interface languages, switchable in-app."
+  },
+  {
+   "app": "cvdesk",
+   "app_id": "6781337213",
+   "lang": "zh-Hant",
+   "scenario": "Threads：投外商職缺石沉大海",
+   "ct": "cvdesk_zhHant_3",
+   "text": "投外商職缺石沉大海，有時不是你不夠好，是履歷被 ATS 讀亂了：雙欄、表格、圖示技能條都可能被打散。我做的 CV Desk 會在手機上算出 0–100 的 ATS 分數，給可點的修正建議，匯出單欄、文字可選取的 PDF，或可編輯的 Word。建立和預覽不用付費，一次性解鎖就能匯出無浮水印版本；不訂閱、不用帳號、履歷不上傳。分數是裝置端估算，各公司系統不同。介面有 50 種語言，App 內就能切換。"
+  },
+  {
+   "app": "cvdesk",
+   "app_id": "6781337213",
+   "lang": "th",
+   "scenario": "泰國求職者搜 ATS 長尾詞",
+   "ct": "cvdesk_th_4",
+   "text": "ส่งเรซูเม่ไปหลายที่แต่เงียบ? บางทีระบบ ATS อาจอ่านไฟล์ของคุณได้ไม่ครบ ผมทำ CV Desk ให้คะแนน ATS 0-100 บน iPhone พร้อมคำแนะนำที่กดแก้ได้ ส่งออกเป็น PDF คอลัมน์เดียวที่เลือกข้อความได้ หรือไฟล์ Word ที่แก้ไขต่อได้ สร้างและดูตัวอย่างได้โดยไม่ต้องจ่าย ปลดล็อกครั้งเดียวเพื่อส่งออกแบบไม่มีลายน้ำ ไม่มีสมัครสมาชิก ไม่ต้องมีบัญชี คะแนนเป็นค่าประมาณ ผลจริงขึ้นกับระบบของแต่ละบริษัท รองรับ 50 ภาษา สลับได้ในแอป"
+  },
+  {
+   "app": "onepageppt",
+   "app_id": "6798814385",
+   "lang": "zh-Hant",
+   "scenario": "Threads：主管要你「給我一頁就好」",
+   "ct": "onepageppt_zhHant_1",
+   "text": "主管一句「給我一頁就好」，你就得花一個晚上把 20 頁塞成一頁。我做了 OnePage PPT：貼上會議紀錄、螢幕截圖、PDF 或 CSV，按一下排成一頁 16:9 投影片。數字變圖表、步驟變流程圖、日期變時間軸；資料撐不住就不畫，也不編數字。六種一鍵改版，喜歡的元素先鎖住。匯出可編輯的 pptx、PDF、PNG，全程在手機上處理、不用帳號、沒網路也能用。可以先免費做一張試試，Lifetime Pro 一次購買。介面 50 種語言，App 內切換。"
+  },
+  {
+   "app": "onepageppt",
+   "app_id": "6798814385",
+   "lang": "ja",
+   "scenario": "X／note：「1枚資料」文化",
+   "ct": "onepageppt_ja_2",
+   "text": "「資料は1枚にまとめて」と言われて、メモの山を前に手が止まる。そんな時のために OnePage PPT を作りました。メモ・スクショ・PDF・CSVを入れると、要点を見出しに整理した16:9スライドが1枚できます。グラフはデータが裏づける時だけ描き、数字は作りません。6種類のワンタップ再デザイン、気に入った要素はロック。編集できるpptx・PDF・PNGで書き出し。端末内処理でアカウント不要、通信なしでも動きます。無料で試せて、Proは買い切り。表示言語は50種類、アプリ内で切替可。台湾の個人開発者です。"
+  },
+  {
+   "app": "onepageppt",
+   "app_id": "6798814385",
+   "lang": "ko",
+   "scenario": "韓國職場的「한 장 보고서」",
+   "ct": "onepageppt_ko_3",
+   "text": "\"한 장으로 정리해 와.\" 메모 더미 앞에서 막막했던 적 있으시죠. 그래서 OnePage PPT를 만들었습니다. 메모, 캡처, PDF, CSV를 넣으면 핵심을 제목으로 정리한 16:9 슬라이드 한 장이 나옵니다. 차트는 데이터가 뒷받침될 때만 넣고 숫자를 지어내지 않아요. 여섯 가지 원탭 리디자인, 마음에 드는 요소는 잠금. 편집 가능한 pptx·PDF·PNG로 내보내고, 인터넷 없이 기기 안에서 처리되며 계정도 필요 없습니다. 무료로 먼저 써 보고, Pro는 한 번만 결제. 인터페이스 언어 50개, 앱 안에서 바로 전환됩니다."
+  },
+  {
+   "app": "onepageppt",
+   "app_id": "6798814385",
+   "lang": "en",
+   "scenario": "LinkedIn：顧問或 PM 的一頁紙",
+   "ct": "onepageppt_en_4",
+   "text": "Can you get this onto one page? OnePage PPT is built for that. Paste notes, screenshots, a PDF or a CSV and get one 16:9 slide with the right chart, timeline or process flow; it never invents figures. Six one-tap redesigns, lock what you like, export editable .pptx, PDF or PNG. On-device, no account, works offline. Try it free; Pro is one purchase. 50 languages, switchable in-app."
+  },
+  {
+   "app": "notesstudio100",
+   "app_id": "6798813048",
+   "lang": "zh-Hant",
+   "scenario": "Threads：國考生怕筆記 App 改訂閱",
+   "ct": "notesstudio1_zhHant_1",
+   "text": "準備國考最怕的不是背不完，是筆記 App 中途改訂閱、或硬要你登入帳號。我是台灣的獨立開發者，做了 100 Notes Studio：不用帳號、沒有廣告、不用外部 AI，核心編輯離線可用。PDF 講義直接標註，手寫內容在裝置上辨識、可以搜尋；筆記裡就能做抽認卡和填空卡，用 FSRS 間隔重複排複習。免費版有 1 本最多 5 頁的筆記本和 2 款風格，100 款風格都能先預覽；要更多筆記本和全部風格，一次購買，不是訂閱。介面 50 種語言，App 內切換。"
+  },
+  {
+   "app": "notesstudio100",
+   "app_id": "6798813048",
+   "lang": "ja",
+   "scenario": "手帳族嫌訂閱制太貴",
+   "ct": "notesstudio1_ja_2",
+   "text": "手帳アプリがサブスクになって、続けるほど年額がかかるのがしんどい。そんな人のために作ったのが 100 Notes Studio です。表紙・紙の構成・配色・スタンプまで違う100種類のスタイル、29種類のペンとブラシ、PDF注釈、ページに残る録音、間隔反復の暗記カード。アカウント不要・広告なし・外部AIなし。無料版はノート1冊（5ページまで）とスタイル2種で、100種類すべて購入前にプレビューできます。追加は買い切りです。表示言語は50種類、アプリ内で切替可。台湾の個人開発者より。"
+  },
+  {
+   "app": "notesstudio100",
+   "app_id": "6798813048",
+   "lang": "ko",
+   "scenario": "找能永久買斷（평생소장）的手寫筆記 App",
+   "ct": "notesstudio1_ko_3",
+   "text": "구독형 필기 앱이 부담돼서 '평생소장' 앱을 찾는 분들이 많죠. 대만에서 혼자 앱을 만드는 개발자로서 100 Notes Studio를 만들었습니다. 계정·광고 없이 손글씨 필기, PDF 주석, 페이지에 붙는 음성 메모, 기기 내 검색, 간격 반복 암기카드를 쓸 수 있어요. 서로 다른 100종 스타일은 잠금 해제 전에도 미리 볼 수 있습니다. 무료는 노트 1권(최대 5페이지)과 스타일 2종, 업그레이드는 한 번만 구매. 인터페이스 언어 50개, 앱 안에서 전환됩니다."
+  },
+  {
+   "app": "notesstudio100",
+   "app_id": "6798813048",
+   "lang": "en",
+   "scenario": "Reddit r/notetaking 自我宣傳串：重視隱私的手寫族",
+   "ct": "notesstudio1_en_4",
+   "text": "Tired of note apps that need an account, push a subscription, or send your pages to an AI you never asked for? I'm an indie dev in Taiwan and built 100 Notes Studio: 29 pens and brushes, PDF markup, page-attached audio, on-device handwriting search, FSRS flashcards. No account, ads, tracking or external AI. Free: 1 notebook of up to 5 pages, 2 of 100 styles. Upgrade is one-time. 50 languages, in-app switch."
+  },
+  {
+   "app": "sononote",
+   "app_id": "6782139553",
+   "lang": "zh-Hant",
+   "scenario": "Threads：陪爸媽看診記不住醫囑",
+   "ct": "sononote_zhHant_1",
+   "text": "陪爸媽看診，醫生講了五分鐘，走出診間每個人記得的版本都不一樣。我做的 Sono Note 有「就醫」範本：先問醫師能不能錄音，錄完整理成摘要、重點和待辦清單，原始錄音也能在筆記裡重播。一個人清楚說話時效果較好，生成的文字請自己再核對。不用帳號、沒有廣告，我們沒有伺服器；語音辨識用 Apple 的，部分語言可能傳音訊給 Apple，切到「僅限本機」就全留在手機。免費每天 3 則、每則 3 分鐘；Pro 一次買斷。介面 50 種語言，App 內切換。"
+  },
+  {
+   "app": "sononote",
+   "app_id": "6782139553",
+   "lang": "ja",
+   "scenario": "打ち合わせ後、用口述做回顧",
+   "ct": "sononote_ja_2",
+   "text": "打ち合わせの帰り道、要点とToDoとお礼メールを書くのが地味に重い。Sono Note なら、思い出しながら1分話すだけ。文字起こしして、要約・要点・ToDo・そのまま送れるフォローアップメールまで整えます。メールのトーンも選べます。アカウント・広告なし、自社サーバーなし。音声認識はAppleのもので、言語によっては音声がAppleに送られることがあります。「デバイス内のみ」モードなら機内モードでも端末内で完結。無料は1日3件・各3分、Proは買い切り。生成文は使う前に必ず確認を。表示言語は50種類、アプリ内で切替可。"
+  },
+  {
+   "app": "sononote",
+   "app_id": "6782139553",
+   "lang": "en",
+   "scenario": "散步時冒出的想法，坐下就忘了",
+   "ct": "sononote_en_3",
+   "text": "Ideas show up on walks and vanish at the desk. Sono Note is my fix: talk for a minute, get a tidy note: summary, key points, action items and a follow-up email in your tone; the recording replays inside the note. No account, no ads. Transcription uses Apple speech recognition and may send audio to Apple for some languages; Local Only mode keeps it on your iPhone. Free: 3 notes a day, 3 min each. Pro is one-time."
+  },
+  {
+   "app": "sononote",
+   "app_id": "6782139553",
+   "lang": "id",
+   "scenario": "在台印尼看護陪診後要轉述醫囑（先完成介面實測再發）",
+   "ct": "sononote_id_4",
+   "text": "Susah menyampaikan pesan dokter ke keluarga? Sono Note punya template kunjungan dokter: minta izin dokter, rekam, lalu dapat ringkasan dan daftar tugas. Menu bisa diganti ke Bahasa Indonesia (50 bahasa); hanya tampilan yang berubah, aplikasi tidak menerjemahkan: ucapan Mandarin tetap teks Mandarin. Suara dikenali lewat Apple; mode Lokal Saja menjaganya di iPhone. Tanpa akun. Gratis 3 catatan sehari."
+  },
+  {
+   "app": "aibriefpack",
+   "app_id": "6791658210",
+   "lang": "zh-Hant",
+   "scenario": "Threads：把截圖丟給 AI 前怕洩漏個資",
+   "ct": "aibriefpack_zhHant_1",
+   "text": "把合約截圖、會議紀錄、PDF 一股腦丟給 AI，回答常常歪掉，還可能順手把客戶姓名電話一起送出去。我做了 AI Brief：先把截圖、PDF、筆記、連結整理成一份有標題的摘要，每筆事實附上來源和信賴度，並找出互相矛盾、還沒回答的問題。偵測到的私密資訊不會自動刪，由你逐項保留、替換或移除（不保證完全匿名），再一鍵複製去任何 AI 使用。OCR 和 PDF 讀取在裝置上執行，沒有廣告或追蹤。介面 50 種語言，App 內切換。"
+  },
+  {
+   "app": "aibriefpack",
+   "app_id": "6791658210",
+   "lang": "ja",
+   "scenario": "公司規定不能把個資或機密輸入生成 AI",
+   "ct": "aibriefpack_ja_2",
+   "text": "「生成AIに個人情報や社外秘を入れないこと」。ルールは分かっても、スクショとPDFの山から手で消すのは大変です。AI Brief は、スクショ・PDF・メモ・リンクをまとめ、出典と信頼度付きの事実に整理し、矛盾や未解決の質問も洗い出します。検出した個人情報は自動では消さず、項目ごとに保持・置換・削除を選べます（匿名性は保証しません）。仕上がった要約はワンタップでコピーして、どのAIチャットにも貼れます。OCRとPDF読み取りは端末内で実行。表示言語は50種類、アプリ内で切替可。台湾の個人開発者です。"
+  },
+  {
+   "app": "aibriefpack",
+   "app_id": "6791658210",
+   "lang": "en",
+   "scenario": "LinkedIn／Product Hunt：丟一堆截圖給 AI，回答卻抓錯重點",
+   "ct": "aibriefpack_en_3",
+   "text": "Drop a dozen screenshots into a chatbot and you often get a confident answer built on the wrong detail. AI Brief sits before the AI: add screenshots, PDFs, notes and links; it extracts facts with source and confidence, flags conflicts and open questions, and detects private details you keep, replace or remove before you copy one clean brief into any assistant. It never promises anonymity. OCR runs on-device."
+  },
+  {
+   "app": "savetag",
+   "app_id": "6802505528",
+   "lang": "zh-Hant",
+   "scenario": "Threads：連結散落在傳給自己的聊天室裡",
+   "ct": "savetag_zhHant_1",
+   "text": "很多人把連結丟進傳給自己的聊天室或備忘錄，結果食譜、想買的外套、出國景點全混在一條紀錄裡，要用時翻不到。我做了 SaveTag：從任何 App 用分享選單一鍵存下，裝置端自動貼上美食、旅遊、購物等標籤，記得大概就搜得到；每天「重新發現」挑幾則沒讀的給你。不用註冊、不上雲端、沒廣告。不購買也能用全部功能、保留最新 5 筆，Pro 一次性 App 內購買。介面 50 種語言，App 內切換。"
+  },
+  {
+   "app": "savetag",
+   "app_id": "6802505528",
+   "lang": "ja",
+   "scenario": "「あとで読む」散落在各處",
+   "ct": "savetag_ja_2",
+   "text": "「あとで読む」が、リーディングリストとスクショとチャットに散らばっていませんか。SaveTag は共有メニューからワンタップで保存すると、端末内で自動的にタグ分けします。毎日の「再発見」で未読を少しずつ読み切れます。アカウント不要・クラウドなし・広告なし。購入しなくても全機能を使えて最新5件まで保存、Proは1回のアプリ内購入で保存数無制限、Markdownで書き出してデータを持ち出せます。表示言語は50種類、アプリ内で切替可。台湾の個人開発者です。"
+  },
+  {
+   "app": "savetag",
+   "app_id": "6802505528",
+   "lang": "en",
+   "scenario": "擔心稍後閱讀服務收掉連收藏一起消失",
+   "ct": "savetag_en_3",
+   "text": "A read-later service can disappear with your saves. SaveTag has no account and no cloud: saves stay on your iPhone, tags are written on-device, and Pro exports everything to Markdown. Share any link in, search by the idea rather than the exact words, and a daily Rediscover brings back a few unread saves. Everything works without a purchase for your latest 5 saves; Pro is a one-time purchase. 50 languages in-app."
+  },
+  {
+   "app": "savetag",
+   "app_id": "6802505528",
+   "lang": "ca",
+   "scenario": "加泰隆尼亞店面「llegir més tard」排第 6，第 1 名只有 1 則評分",
+   "ct": "savetag_ca_4",
+   "text": "Guardes enllaços tot el dia i després no els trobes? SaveTag els desa amb un toc des de qualsevol app i els etiqueta automàticament al teu iPhone (cuina, viatges, compres…). Cada dia, «Redescobreix» et torna uns quants enllaços pendents. Sense compte, ni núvol, ni anuncis. Totes les funcions sense comprar res amb els 5 últims desats; Pro és un únic pagament. 50 idiomes, canviables dins l'app. Indie de Taiwan."
+  },
+  {
+   "app": "lumibopomofo",
+   "app_id": "6773017109",
+   "lang": "zh-Hant",
+   "scenario": "Threads／FB 親子社團：小一開學第六週、注音進入拼讀與聲調期的家長",
+   "ct": "lumibopomofo_zhHant_1",
+   "text": "小一開學一個多月，注音進到拼讀和聲調了。孩子二聲三聲聽不出來、ㄣㄥ老是混很正常，差的是回家有沒有「聽得到、寫得出」的練習。\n\n我是台灣的獨立開發者，做了「Lumi注音星球」：聲調雲霄飛車看小車起伏聽四聲；拼音小火車把聲母、介音、韻母拼成一個音；魔法描寫用手指描筆順；餵食小夥伴聽聲音選注音。\n\n完全無廣告、不收集個資、不用註冊；免費下載先玩，解鎖是一次買斷。介面有 50 種語言可在 App 內切換，外籍家長陪玩也看得懂。歡迎留言說孩子卡在哪。"
+  },
+  {
+   "app": "lumibopomofo",
+   "app_id": "6773017109",
+   "lang": "vi",
+   "scenario": "Cộng đồng mẹ Việt tại Đài Loan có con 4–6 tuổi chuẩn bị vào lớp 1（家長不會注音，介面可切越南語，孩子學的仍是注音）",
+   "ct": "lumibopomofo_vi_2",
+   "text": "Con sắp vào lớp 1 ở Đài Loan? Mấy tuần đầu bé học chú âm ㄅㄆㄇ, mẹ chưa học thì khó kèm con.\n\nMình là nhà phát triển độc lập ở Đài Loan, làm Lumi Bopomofo cho bé 3–7 tuổi: nghe âm chọn ký hiệu, tô nét bằng ngón tay, học 4 thanh điệu, ghép âm bằng tàu hỏa.\n\nGiao diện 50 ngôn ngữ, đổi sang tiếng Việt trong ứng dụng; chú âm bé học vẫn là tiếng Trung. Không quảng cáo, không thu dữ liệu, tải miễn phí, mua một lần."
+  },
+  {
+   "app": "lumibopomofo",
+   "app_id": "6773017109",
+   "lang": "ja",
+   "scenario": "台湾在住の日本人・日台ファミリー（現地校に入る3〜7歳；親は日本語画面、子は注音を学ぶ）",
+   "ct": "lumibopomofo_ja_3",
+   "text": "台湾の小学校は1年生の最初に注音（ボポモフォ）を習います。親が注音を知らないと家で見てあげにくい、という日台ファミリーの声を聞いて作りました。台湾の個人開発者です。\n\n「Lumi ボポモフォ」は3〜7歳向け。音を聞いて記号を選ぶ、指で書き順をなぞる、「声調コースター」で四声、「サウンドトレイン」で声母・介音・韻母をつなげて読む練習ができます。\n\n画面の言語は50言語からアプリ内で切り替え可能。日本語の画面で操作でき、子どもが学ぶ注音の中身はそのままです。広告なし、個人データの収集なし、登録不要。無料で始めて、解放は買い切りです。"
+  },
+  {
+   "app": "lumibopomofo",
+   "app_id": "6773017109",
+   "lang": "en",
+   "scenario": "Overseas Taiwanese / heritage families whose kids attend weekend Chinese school teaching Zhuyin (US/CA/AU parent groups)",
+   "ct": "lumibopomofo_en_4",
+   "text": "Weekend Chinese school covers Zhuyin a few hours a week, and the symbols fade fast. I built Lumi Bopomofo for that gap, as an indie dev in Taiwan.\n\nAges 3–7: hear a sound and pick the symbol, trace strokes, ride the Tone Coaster for the tones, blend sounds on the Sound Train.\n\nInterface in 50 languages, switchable in the app; the child still learns Zhuyin. No ads, no data collected, no sign-up. Free to start."
+  },
+  {
+   "app": "lumibopomofopro",
+   "app_id": "6775773117",
+   "lang": "zh-Hant",
+   "scenario": "Threads：不想讓孩子遇到內購彈窗、想一次買齊的台灣家長（並明說可先玩免費版）",
+   "ct": "lumibopomofo_zhHant_1",
+   "text": "怕孩子玩到一半跳出購買畫面的爸媽，可以看這個版本。\n\n「Lumi注音星球 Pro」是我做的注音完整版，一次付清：37 個注音、所有關卡和五種遊戲全部開放，沒有廣告、沒有內購彈窗、不用登入、不用網路。注音釣魚聽拼音釣出正確的魚，星際競賽限時刷新紀錄，還有弱點複習、每日目標，家長頁看進度。\n\n介面 50 種語言可在 App 內切換。適合 3–7 歲、準備上小一的孩子。想先試再買，同名免費版可以先玩。我是台灣的獨立開發者，有問題直接留言。"
+  },
+  {
+   "app": "lumibopomofopro",
+   "app_id": "6775773117",
+   "lang": "en",
+   "scenario": "Heritage-language parent groups in the US/Canada/Australia (kids at weekend Chinese school; parent may not read Chinese,",
+   "ct": "lumibopomofo_en_2",
+   "text": "Raising a kid abroad who learns Zhuyin at weekend Chinese school? Lumi Bopomofo Pro is the complete edition I built for ages 3–7: all 37 sounds, blending, tones and tracing.\n\nFive games, including Bopomofo Fishing and a timed Star Race, plus weak-spot review and a parents page.\n\nPay once: no ads, no in-app purchases, works offline. Interface in 50 languages, switchable in the app; the child still learns Zhuyin."
+  },
+  {
+   "app": "lumibopomofopro",
+   "app_id": "6775773117",
+   "lang": "ja",
+   "scenario": "台湾ルーツの子どもを育てる日本在住・台湾在住の家庭（台湾華語の入口として；親は日本語画面、子は注音）",
+   "ct": "lumibopomofo_ja_3",
+   "text": "台湾華語の発音は、注音（ボポモフォ）37文字から。台湾にルーツのあるお子さんや、台湾の学校に入る予定の3〜7歳向けに「Lumi Bopomofo Pro」を作りました。台湾の個人開発者です。\n\n37音の発音・つなげ読み・声調・なぞり書きに、音を聞いて正しい魚をつかまえる「Bopomofo Fishing」、制限時間に挑む「Star Race」など5つのゲーム。苦手ポイントの復習と保護者ページつき。\n\n買い切りで、広告なし、アプリ内課金なし、オフラインOK。画面の言語は50言語からアプリ内で切り替えられるので、日本語の画面のまま、子どもは注音を学べます。"
+  },
+  {
+   "app": "lumiletters",
+   "app_id": "6778748533",
+   "lang": "zh-Hant",
+   "scenario": "Threads／幼兒英文親子社團：想讓 3–7 歲孩子認 ABC 但怕廣告的家長",
+   "ct": "lumiletters_zhHant_1",
+   "text": "想讓 3–7 歲的孩子開始認 ABC，又不想裝一堆會跳廣告的 App？\n\n我是台灣的獨立開發者，做了「Lumi 字母星球 Lite」：先聽字母名和發音，再沿著筆順和十字輔助線描大寫、小寫，聽聲音點字母，一路收集 26 位字母夥伴。\n\n免費下載先試玩，喜歡再一次購買解鎖 26 個字母和 14 顆星球，沒有訂閱。解鎖後可一鍵匯出 PDF 學習單，把今天練過的字母印出來在紙上再寫一次。完全無廣告、不收集資料、可離線，購買入口在家長關卡後面。介面 50 種語言可在 App 內切換。"
+  },
+  {
+   "app": "lumiletters",
+   "app_id": "6778748533",
+   "lang": "ja",
+   "scenario": "おうち英語コミュニティ（Instagram／Threads）の未就学児の保護者",
+   "ct": "lumiletters_ja_2",
+   "text": "おうち英語、まずはABCから。でも広告だらけのアプリは避けたい、という方へ。\n\n台湾の個人開発者として「Lumi レター Lite」を作りました（3〜7歳）。文字の名前と音を聞いて、大文字・小文字を書き順と十字ガイドでなぞり、音を聞いて文字をタップ、26人の文字のなかまを集めます。\n\n無料で始めて、気に入ったら一回の購入で26文字と14の星を解放、サブスクなし。解放後は、その日に練習した文字のPDFプリントを書き出して紙でも練習できます。広告なし、データ収集なし、オフラインOK、購入は保護者ゲートの奥。画面は50言語からアプリ内で切り替え可能です。"
+  },
+  {
+   "app": "lumiletters",
+   "app_id": "6778748533",
+   "lang": "ko",
+   "scenario": "엄마표 영어 커뮤니티(인스타그램·맘카페)의 유아 부모",
+   "ct": "lumiletters_ko_3",
+   "text": "엄마표 영어, ABC부터 시작하고 싶은데 광고 많은 앱은 걱정되시죠?\n\n대만의 1인 개발자로서 'Lumi 레터 Lite'를 만들었어요(3~7세). 글자 이름과 소리를 듣고, 대문자·소문자를 획순과 십자 가이드로 따라 쓰고, 소리를 듣고 글자를 눌러요. 26명의 글자 친구를 모아요.\n\n무료로 먼저 놀아 보고, 마음에 들면 한 번 구매로 26글자와 14개 행성 해제, 구독 없음. 해제 후엔 그날 연습한 글자로 PDF 학습지를 내보내 종이로도 연습할 수 있어요. 광고 없음, 데이터 수집 없음, 오프라인 가능, 구매 입구는 부모 확인 뒤에. 화면 언어는 50개, 앱 안에서 바꿀 수 있어요."
+  },
+  {
+   "app": "lumiletterspro",
+   "app_id": "6778491147",
+   "lang": "zh-Hant",
+   "scenario": "Threads：討厭內購與訂閱、要一次買齊的家長，以及幼兒園／安親班英文老師",
+   "ct": "lumilettersp_zhHant_1",
+   "text": "給不想再看到內購按鈕的爸媽，和需要列印學習單的幼兒園、安親班英文老師。\n\n「Lumi 字母星球 Pro」是一次買斷的完整版：沒有訂閱、沒有內購、沒有廣告。順序照英語系幼兒園：先字母名和字母音，再開頭音、結尾音、中間音，最後看圖拼讀。14 顆星球、12 種題型，26 個字母大小寫都能描。\n\n家長專區把表現拆成字母認讀、字母順序、語音覺識、看圖拼讀四大能力；一鍵匯出「今日學習單」PDF，印出來在紙上再練。不收集資料、可離線，介面 50 種語言可在 App 內切換。想先試玩，有同名 Lite 免費版。我是台灣的獨立開發者。"
+  },
+  {
+   "app": "lumiletterspro",
+   "app_id": "6778491147",
+   "lang": "en",
+   "scenario": "Homeschool parents of preschoolers (US/CA/AU groups; follow each group's rules, disclose developer identity)",
+   "ct": "lumilettersp_en_2",
+   "text": "Homeschooling a preschooler and want a phonics app you buy once? Lumi Letters Pro: no subscription, no in-app purchases, no ads.\n\nLetter names and sounds, then beginning, ending and middle sounds, then picture phonics. 14 planets, 12 question types, letter tracing.\n\nParent Zone tracks four skills and exports a 'Today's Worksheet' PDF. Offline, no data collected. Interface in 50 languages, switchable in the app."
+  },
+  {
+   "app": "lumiletterspro",
+   "app_id": "6778491147",
+   "lang": "ja",
+   "scenario": "買い切りアプリを好む日本の未就学児の保護者（おうち英語）",
+   "ct": "lumilettersp_ja_3",
+   "text": "買い切りのABCフォニックスアプリを探している方へ。\n\n「Lumi レター Pro」はサブスクなし・アプリ内課金なし・広告なし。文字の名前と音から、最初・最後・真ん中の音、そして絵を見て読む練習へ。14の星、12種類の問題、26文字の大文字・小文字を十字ガイドでなぞれます。\n\n保護者ページで4つの力を確認し、その日に練習した文字の「今日のプリント」をPDFで書き出して紙でも練習。オフラインOK、データ収集なし。画面は50言語からアプリ内で切り替え可能。まず試したい方は無料のLite版もあります。台湾の個人開発者が作りました。"
+  },
+  {
+   "app": "lumimath",
+   "app_id": "6778269699",
+   "lang": "zh-Hant",
+   "scenario": "Threads／親子社團：3–7 歲孩子會算數但卡在規律、邏輯題的家長",
+   "ct": "lumimath_zhHant_1",
+   "text": "孩子會算 3+5，卻看不懂「找規律」「排第幾」這種題目？\n\n我是台灣的獨立開發者，做了「Lumi數學星球」：每一題都是圖，骰子、十格框、數線、長條圖，還不識字也能玩，題目會朗讀。從數數、加減、九九乘法、時鐘、錢幣，到規律、邏輯、序數，46 種題型自動分級。答錯沒有刺耳音效，只有鼓勵。\n\n家長專區看進度、針對弱項加強，還能列印附解答的學習單。免費從第一顆星球和每日挑戰開始，想要再一次性解鎖，無訂閱、無廣告、不收集資料。題目語音有中英日韓，介面 50 種語言可在 App 內切換。"
+  },
+  {
+   "app": "lumimath",
+   "app_id": "6778269699",
+   "lang": "ko",
+   "scenario": "사고력 수학에 관심 있는 유아·초등 저학년 부모(맘카페·인스타그램)",
+   "ct": "lumimath_ko_2",
+   "text": "사고력 수학, 학원 전에 집에서 놀이로 먼저 해 보고 싶다면.\n\n대만의 1인 개발자로 'Lumi 수학 행성'을 만들었어요. 모든 문제가 주사위, 십틀, 수직선 같은 그림이라 글을 못 읽어도 할 수 있고, 문제를 소리 내어 읽어 줘요. 수 세기와 덧셈·뺄셈, 구구단, 시계, 돈부터 규칙 찾기와 논리까지 46가지 유형이 자동으로 단계가 올라가요. 틀려도 날카로운 소리는 없어요.\n\n보호자 공간에서 진도를 보고 약한 유형을 집중 연습, 정답 포함 학습지도 인쇄. 첫 행성과 매일 챌린지는 무료, 마음에 들면 한 번 구매. 구독·광고 없음. 문제와 음성은 한국어, 화면 언어는 50개로 앱 안에서 바꿀 수 있어요."
+  },
+  {
+   "app": "lumimath",
+   "app_id": "6778269699",
+   "lang": "ja",
+   "scenario": "「考える力」系アプリを探す未就学〜低学年の保護者",
+   "ct": "lumimath_ja_3",
+   "text": "計算ドリルより「考える力」を遊びで育てたい方へ。\n\n台湾の個人開発者として「Lumi算数プラネット」を作りました。問題はすべてサイコロ・十マス・数直線などの絵で、字が読めなくても遊べ、読み上げにも対応。かずあそび、たし算ひき算、九九、とけい、おかねから、きまり・論理まで46種類が自動でレベルアップ。まちがえてもブザーは鳴りません。\n\n保護者ページで進み具合と苦手を確認し、解答つきプリントも印刷できます。最初の星とまいにちチャレンジは無料、気に入ったら一度の購入。サブスク・広告なし。問題と音声は日本語対応、画面の言語は50言語からアプリ内で切り替えられます。"
+  },
+  {
+   "app": "lumimathpro",
+   "app_id": "6776958488",
+   "lang": "zh-Hant",
+   "scenario": "Threads／家長社團：想讓 5–8 歲孩子接觸「想一想」的數學題、不只刷計算的家長（不提任何賽事名稱）",
+   "ct": "lumimathpro_zhHant_1",
+   "text": "想讓孩子接觸「想一想」的數學題，不只是刷計算？\n\n「Lumi 數學星球：兒童數學」是我做的一次買斷版，無廣告、無內購、不收集資料。46 種題型：數列規律、邏輯推理、比大小、序數、組合、應用題、幾何空間，加上扎實的加減乘除、位值和進退位。題目用黏土圖示看圖就懂、全程語音可調慢速，還不識字也能自己闖關。\n\n「弱項練習」把最常錯的題型集中、換數字重練；每日挑戰和 60 秒限時競賽，大人也能一起玩。5–8 歲打底、國小延伸。介面 50 種語言可在 App 內切換。我是台灣的獨立開發者，歡迎留言。"
+  },
+  {
+   "app": "lumimathpro",
+   "app_id": "6776958488",
+   "lang": "zh-Hant",
+   "scenario": "安親班、家教、國小低年級老師社群",
+   "ct": "lumimathpro_zhHant_2",
+   "text": "安親班、家教和低年級老師可能用得到：「Lumi 數學星球：兒童數學」的家長專區，可以依孩子目前程度一鍵產生 20 題練習卷（附解答），存 PDF 或直接列印。\n\n再匯出一頁學習報告：數與計算、規律與數列、邏輯與推理、幾何與空間、生活與應用五大能力和弱項一目了然，方便和家長溝通。題目看圖就懂、全程語音可調慢速。\n\n一次購買、無廣告、無內購、進度可本地匯出匯入。介面 50 種語言可在 App 內切換，新住民家庭的家長也看得懂選單。我是台灣的獨立開發者，很想聽老師的真實回饋。"
+  },
+  {
+   "app": "lumimathpro",
+   "app_id": "6776958488",
+   "lang": "ko",
+   "scenario": "경시·사고력 수학에 관심 있는 5~8세 부모(대회 이름은 언급하지 않음)",
+   "ct": "lumimathpro_ko_3",
+   "text": "경시형 사고력 문제를 놀이처럼 풀어 보고 싶다면.\n\n'Lumi 수학 행성: 아이 수학'은 대만의 1인 개발자가 만든 한 번 구매 앱이에요. 인앱결제도 광고도 없어요. 수열 규칙, 논리와 추론, 크기 비교, 서수, 조합, 문장제, 도형에 덧셈·뺄셈·곱셈·나눗셈·자릿값까지 46가지 유형. 클레이 그림으로 보기만 해도 이해되고, 음성 안내는 느린 읽기도 있어요.\n\n자주 틀리는 유형만 모아 숫자를 바꿔 다시 푸는 '약점 연습', 정답 포함 20문제 학습지 PDF 출력, 60초 타임 레이스는 어른도 함께. 5~8세 기본. 문제와 음성은 한국어, 화면 언어는 50개로 앱 안에서 바꿀 수 있어요."
+  },
+  {
+   "app": "lumimission",
+   "app_id": "6779750237",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：睡前刷牙要喊五次，紙本貼紙表撐不過一週",
+   "ct": "lumimission_zhHant_1",
+   "text": "每天晚上叫三歲的孩子刷牙，常常要喊到第五次。紙本貼紙表貼了一週就不知道去哪了，而且「週末才兌換」對他來說太遠。\n\n所以我做了 Lumi 任務星球：孩子每完成一小步就點一下螢幕，兔兔夥伴立刻跳起來歡呼，整個任務完成時全星球一起慶祝。\n\n吃飯、刷牙、睡覺、收玩具四個任務不用付費就能用；沒有廣告、不用帳號，資料只存在手機裡。介面有 50 種語言，可以在 App 裡自己切換。\n\n我是一個人開發的。你家最難搞的是哪個時段？"
+  },
+  {
+   "app": "lumimission",
+   "app_id": "6779750237",
+   "lang": "ja",
+   "scenario": "X 日本：はみがきを何回言っても動かない夜、ごほうびシールが続かない",
+   "ct": "lumimission_ja_2",
+   "text": "「はみがきしよう」を何回言っても動かない夜。週末のごほうびシールは、3歳にはまだ遠すぎました。\n\nLumiミッション星は、できたら1タップ。うさぎの相棒がその場でジャンプしてよろこび、ミッションが終わると星全体でお祝いします。\n\nごはん・はみがき・ねんね・おかたづけの4つは購入なしで使えます。広告なし、アカウント不要、データは端末の中だけ。表示言語は50言語からアプリ内で切り替えられます。\n\n台湾で個人開発しています。いちばん手こずる時間帯、よければ教えてください。"
+  },
+  {
+   "app": "lumimission",
+   "app_id": "6779750237",
+   "lang": "ko",
+   "scenario": "Naver 블로그 한국 부모: 종이 칭찬스티커판이 일주일을 못 가요",
+   "ct": "lumimission_ko_3",
+   "text": "종이 칭찬스티커판, 일주일만 지나면 어디 갔는지 모르겠더라고요. 네 살 아이에게 '주말에 스티커'는 너무 멀어요.\n\nLumi 미션 별은 양치 한 번, 장난감 하나 정리할 때마다 아이가 화면을 탭하면 토끼 친구가 바로 뛰어오르며 환호해요. 미션을 끝내면 별 전체가 축하해 줍니다.\n\n식사·양치·잠자기·정리 네 가지 미션과 토끼 친구는 무료, 나머지는 한 번 구매(구독 없음)예요. 광고 없음, 계정 없음, 데이터는 기기 안에만. 표시 언어는 50개 중에서 앱 안에서 바꿀 수 있어요.\n\n대만에서 혼자 만드는 개발자예요. 어느 시간이 제일 힘드세요?"
+  },
+  {
+   "app": "lumimission",
+   "app_id": "6779750237",
+   "lang": "vi",
+   "scenario": "Nhóm Facebook mẹ Việt ở Đài Loan: mẹ và bố Đài dùng chung một iPhone (chỉ ngôn ngữ giao diện đổi)",
+   "ct": "lumimission_vi_4",
+   "text": "Gọi con đánh răng năm lần vẫn chưa xong, bảng sticker giấy thì tuần sau đã mất.\n\nMình làm Lumi Mission Planet: con làm xong một việc nhỏ là chạm màn hình, bạn thỏ nhảy lên cổ vũ ngay.\n\nBốn nhiệm vụ ăn cơm, đánh răng, đi ngủ, dọn đồ chơi miễn phí. Không quảng cáo, không tài khoản, dữ liệu chỉ trong máy.\n\n50 ngôn ngữ, đổi ngay trong app: mẹ xem tiếng Việt, bố xem tiếng Trung. Chỉ ngôn ngữ giao diện đổi."
+  },
+  {
+   "app": "lumimissionpro",
+   "app_id": "6779745474",
+   "lang": "ja",
+   "scenario": "X 日本：毎朝の登園準備で「早く!」、子どもが触るアプリに課金画面はいらない",
+   "ct": "lumimissionp_ja_1",
+   "text": "毎朝の登園準備で「早く!」と言ってばかりの自分が、ちょっと嫌でした。\n\nLumiミッション星 Proは、登園準備を含む5つの毎日のミッション入り。できたら1タップで、宇宙のくまLumiがその場でジャンプしてよろこびます。アイコンと背景を選べるカスタムミッションも無制限に作れます。\n\n子どもが触るアプリなので、広告なし・アプリ内課金なし・サブスクなし・アカウント不要。1回の購入でファミリー共有にも対応。表示言語は50言語からアプリ内で切り替えられます。\n\nまず無料で試したい方には、基本ミッション無料のLumiミッション星もあります。"
+  },
+  {
+   "app": "lumimissionpro",
+   "app_id": "6779745474",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：早上出門前一直催，而且不想讓孩子看到內購彈窗",
+   "ct": "lumimissionp_zhHant_2",
+   "text": "早上出門前一直喊「快點！要遲到了！」，喊到自己都累。\n\nLumi 任務星球 Pro 有包含上學準備在內的五個每日任務，孩子每完成一小步就點一下，太空小熊 Lumi 立刻跳起來歡呼。還能無限自訂任務，每個都挑自己的圖示和場景。\n\n因為是給孩子點的 App，我把它做成無廣告、無內購、無訂閱、無帳號；一次購買，支援家人共享，爸媽、阿公阿嬤的裝置都能用。介面有 50 種語言，可以在 App 裡切換。\n\n想先免費試試的話，也有基本任務免費的 Lumi 任務星球。"
+  },
+  {
+   "app": "lumimissionpro",
+   "app_id": "6779745474",
+   "lang": "en",
+   "scenario": "X/Reddit parents who hate 'unlock more!' screens in kids' apps; grandparents buying for Family Sharing",
+   "ct": "lumimissionp_en_3",
+   "text": "Tired of kids' apps throwing \"unlock more!\" screens at your child? So was I.\n\nLumi Mission Planet Pro is the complete edition: five daily missions including school prep, unlimited custom missions, six buddies, 100 stickers. A space bear cheers every small win.\n\nNo ads. No in-app purchases. No subscription. No account. One purchase with Family Sharing; 50 interface languages, switchable in-app.\n\nSolo dev in Taiwan."
+  },
+  {
+   "app": "tripplanet",
+   "app_id": "6787193643",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣：寒假帶孩子飛日本，機場排隊和機上三小時怎麼過",
+   "ct": "tripplanet_zhHant_1",
+   "text": "帶孩子飛日本，最難的常常不是行程，而是機場排隊和飛機上那三個小時。\n\n我做了 Trip Planet 親子旅行遊戲：建立一趟旅行、選任務包，孩子會拿到真實世界的小任務——在機場勇敢一點、試一口新食物、說謝謝、在博物館找三種顏色。完成就能收集獎勵，每走完一趟旅程還會在旅行護照蓋章。\n\n兩位家長可以用各自的裝置共享同一趟旅程。沒有廣告、沒有第三方追蹤，適合 3–10 歲。介面有 50 種語言，可在 App 裡切換。\n\n寒假要帶孩子出國的爸媽，你們最怕哪一段？"
+  },
+  {
+   "app": "tripplanet",
+   "app_id": "6787193643",
+   "lang": "ja",
+   "scenario": "X/note 日本：年末年始・春休みの子連れ旅行、空港と機内の待ち時間",
+   "ct": "tripplanet_ja_2",
+   "text": "子連れ旅行でいちばん大変なのは、観光よりも「待ち時間」かもしれません。空港、機内、長い車移動。\n\nTrip Planet 子ども旅行ゲームは、旅をつくってミッションパックを選ぶと、子どもに小さな現実のミッションが届きます。空港で勇気を出す、新しい食べ物に挑戦、ありがとうを言う、美術館で3つの色を探す。旅を終えるたびにパスポートにスタンプ。\n\n保護者ふたりが、それぞれの端末で同じ旅を共有できます。広告なし、第三者トラッキングなし、3〜10歳向け。表示言語は50言語からアプリ内で選べます。"
+  },
+  {
+   "app": "tripplanet",
+   "app_id": "6787193643",
+   "lang": "en",
+   "scenario": "X/Reddit: bilingual family on a long flight; each parent's own device, only the interface language switches",
+   "ct": "tripplanet_en_3",
+   "text": "\"Are we there yet?\" twenty minutes into a six-hour flight.\n\nI built Trip Planet: Kids Quest so the waiting turns into missions: be brave at the airport, try a new food, spot three colors at a museum. Every finished trip earns a passport stamp.\n\nTwo parents share one trip from their own devices. 50 interface languages, switchable in-app; only the interface language changes. No ads, no third-party tracking. Ages 3–10."
+  },
+  {
+   "app": "lumiweather",
+   "app_id": "6779552704",
+   "lang": "zh-Hant",
+   "scenario": "Threads 台灣（鋒面／早晚溫差大的當天發）：看完一堆數字還是不知道要不要帶外套",
+   "ct": "lumiweather_zhHant_1",
+   "text": "早上看天氣 App：27 度、降雨 40%、紫外線 8、風有點大……然後還是不知道要不要帶傘、要不要穿外套。\n\n所以我做了 Lumi天氣星球：把體感溫度、紫外線、降雨和風合成 0–100 的外出指數，再給一句白話判斷，標出今天最適合出門的時段，提醒你帶傘、擦防曬或加件薄外套。點一下分數，就看得到每個因素怎麼影響。\n\n今日頁打開就能用，沒有廣告、不用帳號。介面有 50 種語言，可在 App 裡切換。資料來自 Apple WeatherKit，預報僅供參考。"
+  },
+  {
+   "app": "lumiweather",
+   "app_id": "6779552704",
+   "lang": "id",
+   "scenario": "Pengasuh Indonesia di Taiwan mengajak lansia jalan sore; iPhone keluarga berbahasa Mandarin (hanya bahasa tampilan yang ",
+   "ct": "lumiweather_id_2",
+   "text": "Mau ajak Ama atau Akong jalan sore, tapi takut hujan atau kepanasan?\n\nSaya membuat Lumi Cuaca: skor keluar rumah 0–100 plus satu kalimat jelas, waktu paling pas untuk keluar, dan saran kapan bawa payung atau tabir surya.\n\nWalau iPhone di rumah berbahasa Mandarin, bahasa tampilan Lumi bisa dipilih dari 50 bahasa di dalam aplikasi. Yang berganti hanya bahasa tampilan.\n\nTanpa iklan, tanpa akun. Untuk iPhone."
+  },
+  {
+   "app": "lumiweather",
+   "app_id": "6779552704",
+   "lang": "ja",
+   "scenario": "X 日本（寒暖差の朝に投稿）：上着がいるか迷う",
+   "ct": "lumiweather_ja_3",
+   "text": "天気アプリで気温・降水確率・紫外線・風を見比べて、結局「上着いる?」がわからない朝。\n\nルミのおてんき星は、それを0〜100のおでかけ指数とひと言にまとめます。おでかけに向いている時間帯や、傘・日焼け止めが必要なタイミングもお知らせ。指数をタップすれば、何が影響したかも確認できます。\n\n今日の画面はすぐに使えて、広告なし・アカウント不要。表示言語は50言語からアプリ内で選べます。天気データはApple WeatherKitで、予報は目安としてご利用ください。"
+  },
+  {
+   "app": "tripbee",
+   "app_id": "6787754435",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：帶孩子出國的打包焦慮（功能皆在 Pro listing；結尾導向 Lite）",
+   "ct": "tripbee_zhHant_1",
+   "text": "帶兩個小孩出國，最怕的不是排行程，是到了飯店才發現少帶東西。我做 TripBee Pro 時，把打包清單改成依天數、季節、每位家人和孩子年齡自動產生，還有海灘用品組。行程一天一條時間軸，航班、飯店、餐廳都在一起，點一下就開 Apple 地圖導航；遇到雨天或颱風，也能先排好室內備案。不用帳號、資料只在手機裡，一次買斷沒有訂閱。介面有 50 種語言，在 App 裡就能切換。想先免費試，可以從 TripBee Lite 開始。"
+  },
+  {
+   "app": "tripbee",
+   "app_id": "6787754435",
+   "lang": "ja",
+   "scenario": "日本 X／note：海外で電波が弱いときの旅のしおり（共同編集はできないと正直に書く）",
+   "ct": "tripbee_ja_2",
+   "text": "旅のしおりがLINEのスクショとメモに散らばって、海外で電波が弱いと開けない。TripBee Pro は、フライト・ホテル・レストラン・予定を日ごとのタイムラインにまとめ、端末内に保存します。アカウント不要、完全オフライン。「X日目／全Y日」の表示、子どもの年齢に合わせた持ち物リスト、Appleマップへワンタップ。クラウドがないので、同行者とは旅のポスター画像で共有する形です。表示言語は50言語からアプリ内で切り替え可能。買い切り、サブスクなし。無料で試すなら TripBee Lite から。"
+  },
+  {
+   "app": "tripbee",
+   "app_id": "6787754435",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：全家共用一台 iPad，長輩與外籍配偶各看各的介面語言（兩人情境：只有介面切換）",
+   "ct": "tripbee_zhHant_3",
+   "text": "家族旅行用一台 iPad 排行程，阿公看不懂英文介面、越南籍的媳婦看不懂中文選單，最後都變成一個人在排。TripBee Pro 的介面有 50 種語言，在 App 裡就能切換，不用改 iPad 的系統語言：你排完切回中文，她接著用越南文介面看同一份行程。要說清楚的是，只有介面會換語言，你打的備註不會被翻譯。航班、住宿、每天的點位都在同一條時間軸，離線也能看，一次買斷不訂閱。"
+  },
+  {
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：連假前行程散落各處",
+   "ct": "tripbeelite_zhHant_1",
+   "text": "下個月就要出發，行程卻散在 LINE 記事本、截圖和訂房 App 裡？TripBee Lite 只處理「眼前這一趟」：每日時間軸放航班、住宿和活動，備註、提醒、票券編號都收在旁邊。免費版可存一趟，回來再換下一趟。想同時存多趟、分享、備份或用智慧打包清單，一次買斷就好，沒有訂閱。不用帳號、沒有廣告和追蹤。介面有 50 種語言，在 App 裡直接切換。"
+  },
+  {
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "lang": "ja",
+   "scenario": "日本 note／X：次の旅行の準備（旅のしおり）",
+   "ct": "tripbeelite_ja_2",
+   "text": "次の旅行の予定が、スクショとメモとチャットに散らばっていませんか。TripBee Lite は「いま準備している旅ひとつ」に集中する旅のしおりアプリです。日ごとのタイムラインにフライト・宿泊・予定を並べ、メモ、リマインダー、チケット番号も一緒に。無料版は旅を1件保存でき、終わったら次の旅に入れ替えられます。複数保存・共有・バックアップ・持ち物リストは買い切りで解除。アカウント不要、広告も追跡もなし。表示言語は50言語、アプリ内で切り替えられます。"
+  },
+  {
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "lang": "ko",
+   "scenario": "韓國 Naver Blog／Threads：準備去台灣旅行",
+   "ct": "tripbeelite_ko_3",
+   "text": "대만 여행 일정이 캡처, 메모, 메신저에 흩어져 있나요? TripBee Lite는 지금 준비하는 여행 하나에만 집중하는 플래너입니다. 날짜별 타임라인에 항공편, 숙소, 일정을 놓고 메모, 알림, 티켓 번호까지 함께 보관하세요. 무료 버전은 여행 하나를 저장하고, 다녀오면 다음 여행으로 바꾸면 됩니다. 여행 무제한 저장, 공유, 백업, 스마트 준비물 목록은 한 번 구매로 열립니다. 구독 없음, 계정·광고·추적 없음. 앱 안에서 50개 언어로 표시 언어를 바꿀 수 있습니다."
+  },
+  {
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "lang": "vi",
+   "scenario": "在台越南新住民 FB 社團（經版主同意）：帶孩子回鄉過年；兩人共用 iPad，只有介面切換語言",
+   "ct": "tripbeelite_vi_4",
+   "text": "Về quê ăn Tết với con, lịch bay, lịch thăm họ hàng và mã vé rải rác trong tin nhắn. TripBee Lite xếp một chuyến đi theo từng ngày: chuyến bay, nơi ở, lịch hẹn, nhắc nhở. Bản miễn phí lưu một chuyến; danh sách đồ mang theo, nhiều chuyến, chia sẻ, sao lưu mở bằng một lần mua, không thuê bao. Trên iPad chung, mẹ dùng giao diện tiếng Việt, bố đổi sang tiếng Trung; chỉ giao diện đổi, ghi chú bạn gõ không được dịch."
+  },
+  {
+   "app": "dailymate",
+   "app_id": "6790418321",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：背了單字卻開不了口（結尾導向 Lite）",
+   "ct": "dailymate_zhHant_1",
+   "text": "背了一整本單字，到了日本餐廳還是講不出一句完整的話。我做 DailyMate 的想法很簡單：直接學整句。8,400 句生活會話、47 種學習語言、14 大主題與 84 個情境，每個主題初級、中級、高級各 200 句。用符合語言的系統語音聽整句，收藏常用句；主畫面小工具能直接切下一句，Apple Watch 上也能聽。介面另有 50 種語言，在 App 裡切換。付費 App 一次買斷，沒有訂閱、沒有內購；想先免費試，有 DailyMate Lite。"
+  },
+  {
+   "app": "dailymate",
+   "app_id": "6790418321",
+   "lang": "ja",
+   "scenario": "日本 X：単語は覚えたのに旅先で話せない",
+   "ct": "dailymate_ja_2",
+   "text": "単語帳は何周もしたのに、旅先でひと言目が出てこない。DailyMate は単語ではなく「文」で覚える語学アプリです。8,400の実用フレーズ、学習言語47、14テーマ・84場面、各テーマに初級・中級・上級200ずつ。選んだ言語のシステム音声で文ごと聴けて、よく使う文は保存。ホーム画面のウィジェットとApple Watchでも続けられます。表示言語は50言語からアプリ内で切り替え。買い切りの有料アプリで、サブスクも課金もありません。まず無料で試すなら DailyMate Lite。"
+  },
+  {
+   "app": "dailymatelite",
+   "app_id": "6794725568",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：雇主家庭與印尼看護共用手機（發布前確認印尼文、中文在學習語言內；兩人情境：只切介面）",
+   "ct": "dailymatelit_zhHant_1",
+   "text": "家裡的印尼看護剛來，阿嬤想跟她多聊兩句，卻不知道從哪開始。DailyMate Lite 是一來一往的情境短句：一句提示配一句自然回覆，50 種學習語言、14 大主題，用手機內建語音聽發音、可調語速。每種語言的進度分開記：看護把介面切成印尼文練中文，家人用同一支手機學她的語言；介面 50 種語言在 App 裡就能切。要說清楚的是，只有介面會換語言，打的字不會被翻譯。免費可練「旅行」初級，其餘主題一次買斷、沒有訂閱。"
+  },
+  {
+   "app": "dailymatelite",
+   "app_id": "6794725568",
+   "lang": "id",
+   "scenario": "在台印尼移工 FB 社團（經版主同意）：看護練中文（先確認中文在學習語言內）",
+   "ct": "dailymatelit_id_2",
+   "text": "Ama mengajak ngobrol, tapi kalimatnya belum keluar? DailyMate Lite melatih percakapan lewat pasangan kalimat dan balasan: 8.400 pasangan, 50 bahasa, 14 topik. Tampilan bisa diganti ke Bahasa Indonesia di dalam aplikasi; progres tiap bahasa terpisah. Hanya tampilan yang berganti bahasa; kalimat yang Anda ketik tidak diterjemahkan. Topik Pelancong tingkat Pemula gratis, lainnya sekali beli, tanpa langganan dan iklan."
+  },
+  {
+   "app": "dailymatelite",
+   "app_id": "6794725568",
+   "lang": "vi",
+   "scenario": "在台越南新住民／移工社團（經版主同意）：知道單字卻說不出整句",
+   "ct": "dailymatelit_vi_3",
+   "text": "Biết nhiều từ nhưng lúc cần nói lại không bật ra được câu? DailyMate Lite luyện theo cặp gợi ý – câu đáp: 8.400 cặp, 50 ngôn ngữ học, 14 chủ đề như du lịch, công việc, ăn uống, sức khỏe. Giao diện có 50 ngôn ngữ, gồm tiếng Việt, đổi ngay trong ứng dụng; phát âm bằng giọng đọc hệ thống, tiến độ từng ngôn ngữ lưu riêng. Miễn phí chủ đề Du lịch cấp cơ bản; mở trọn bộ với một lần mua, không thuê bao, không quảng cáo."
+  },
+  {
+   "app": "dailymatelite",
+   "app_id": "6794725568",
+   "lang": "ja",
+   "scenario": "日本 X：いざ話そうとすると言葉が出てこない（次要市場）",
+   "ct": "dailymatelit_ja_4",
+   "text": "いざ話そうとすると、言葉が出てこない。DailyMate Lite は、旅行や仕事、食事、健康などの場面を「問いかけ」と「自然な返答」のペアで練習するアプリです。8,400組、学習言語50、14テーマ、初級・中級・上級。端末のシステム音声で発音を確認でき、速度も調整できます。表示言語も50言語からアプリ内で切り替え可能。どの言語でも「旅行」初級は無料、残りは買い切りで解除。アカウント不要、広告・トラッキングなし。"
+  },
+  {
+   "app": "ledmovingtext",
+   "app_id": "6806639602",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：市集擺攤喊到沒聲音（多句輪播來自 en-US listing；不說它免費或付費）",
+   "ct": "ledmovingtex_zhHant_1",
+   "text": "市集擺攤一整天，最常被問的就是「還有貨嗎？」「可以刷卡嗎？」「排隊從哪開始？」喊到沒聲音。LED Moving Text 可以先把要說的話一行一句打好，現場點一下切下一句，或設 2–20 秒自動輪播。手機直接變成全螢幕跑馬燈，離線可用、不用註冊、沒有廣告；輸入不限次數、全螢幕、左右跑動和 108 種文字顏色永久免費。介面有 50 種語言，在 App 裡就能切換，攤位上的外籍夥伴也能用自己的語言操作。"
+  },
+  {
+   "app": "ledmovingtext",
+   "app_id": "6806639602",
+   "lang": "ja",
+   "scenario": "日本 X：推し活でうちわを作る時間がない日（公演ルールの確認を促す）",
+   "ct": "ledmovingtex_ja_2",
+   "text": "うちわを作る時間がない日に。LED Moving Text は文字を打つだけで iPhone が流れる電光掲示板になります。プレビューがそのまま編集画面、ワンタップで全画面、九十度回して画面の高さいっぱいに表示。108色の文字、左右スクロール、点滅は無料で、登録も広告もありません。表示言語は50言語、アプリ内で切り替えられます。※公演によっては光るボードが禁止されているので、注意事項を確認してから使ってください。"
+  },
+  {
+   "app": "ledmovingtext",
+   "app_id": "6806639602",
+   "lang": "ko",
+   "scenario": "韓國 Threads／Instagram：在入境大廳接人",
+   "ct": "ledmovingtex_ko_3",
+   "text": "입국장에서 종이에 이름 써서 들고 있다가, 사람이 많아 못 알아본 적 있나요? LED Moving Text는 문구만 입력하면 화면이 멀리서도 읽히는 전광판이 됩니다. 실시간 미리보기, 한 번에 전체 화면, 90도로 돌려 화면 높이를 꽉 채우기. 글자색 108가지와 좌우 흐름은 무료이고, 인터넷 없이 작동하며 가입도 광고도 없습니다. 표시 언어는 50개, 앱 안에서 바로 바꿀 수 있습니다."
+  },
+  {
+   "app": "snapport",
+   "app_id": "6780575828",
+   "lang": "en",
+   "scenario": "美國 Threads／YouTube 說明欄：全家換護照（不引用第三方價格；結尾導向 Lite）",
+   "ct": "snapport_en_1",
+   "text": "Renewing passports for four people means four photos, and drugstore photos add up. Snapport is a pay-once iPhone app: US 2x2 and other templates, on-device face guides (head-top, eye line, chin), a white background, then a 4x6 print sheet or a JPEG. Photos never leave your phone; no account, no ads, no subscription. It can't guarantee acceptance, so check the official rules first. Free to try: Snapport Lite."
+  },
+  {
+   "app": "snapport",
+   "app_id": "6780575828",
+   "lang": "en",
+   "scenario": "英國：線上申請護照、自己拍照片（不保證受理）",
+   "ct": "snapport_en_2",
+   "text": "Applying for a UK passport online and taking the photo yourself? Snapport has a 35x45 mm template, on-device face guides for head-top, eye line and chin, and only light brightness and contrast tweaks. Export a JPEG or print a sheet. No account, no ads, no subscription: you pay once. The interface comes in 50 languages, switchable in the app. It doesn't guarantee acceptance, so read the official photo rules first."
+  },
+  {
+   "app": "snapport",
+   "app_id": "6780575828",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：全家辦台胞證和美簽，尺寸各不相同（50 語言：幫外籍家人拍時切介面）",
+   "ct": "snapport_zhHant_3",
+   "text": "全家要辦台胞證和美簽，照片尺寸還不一樣：33×48mm、2×2 吋。Snapport 內建常用尺寸範本，在手機上用 Apple Vision 偵測臉部，有頭頂、眼睛、下巴導引線；可換白底，再排成 4×6 或 A4 沖印版、附裁切線。照片不上傳、不用帳號，一次買斷沒有內購。介面有 50 種語言，幫外籍家人拍時可以切成他們看得懂的語言。規格以各機關為準，送件前請再核對。想先試免費版，有 Snapport Lite。"
+  },
+  {
+   "app": "snapportlite",
+   "app_id": "6792856304",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：線上申換護照要自己上傳照片（已核實 7/1 放寬對象；誠實提醒適用條件、少修圖、不保證受理）",
+   "ct": "snapportlite_zhHant_1",
+   "text": "外交部的線上申換護照從今年 7 月起放寬對象，但照片要自己上傳，新聞提到常見退件原因就是照片規格不符。Snapport Lite 就是幫這一步：選 35×45mm 範本，手機上偵測臉部，有頭頂、眼睛、下巴導引線，可換白底並微調邊緣，匯出 JPEG。照片只在手機處理、不上傳；所有範本和編修免費，第一次匯出也免費，之後一次買斷不限次數。建議在明亮處對著白牆拍、少修圖，上傳前先看領務局規格；App 不保證受理，線上申換也有適用條件，先確認自己符合。"
+  },
+  {
+   "app": "snapportlite",
+   "app_id": "6792856304",
+   "lang": "ja",
+   "scenario": "日本 note／X：オンライン申請では顔写真を自分で用意する（「エラー増加」は未確認なので書かない）",
+   "ct": "snapportlite_ja_2",
+   "text": "パスポートのオンライン申請では、顔写真を自分で用意してアップロードします。Snapport Lite は端末上で顔を検出し、頭頂・目・あごのガイドで位置を合わせ、35×45mmなど必要なサイズにぴったりトリミングできます。背景は白に変更でき、補正は控えめなので本人らしさが残ります。テンプレートと編集はすべて無料、最初の書き出しも無料。写真は端末内で処理され、アップロードされません。明るい場所で無地の壁を背に撮るのがいちばんの近道です。受理は保証されないので、申請先の規定を必ず確認してください。"
+  },
+  {
+   "app": "snapportlite",
+   "app_id": "6792856304",
+   "lang": "id",
+   "scenario": "在台印尼移工 FB 社團（經版主同意）：求職要附 3x4、4x6 紅／藍底照片",
+   "ct": "snapportlite_id_3",
+   "text": "Diminta pas foto 3x4 latar merah atau 4x6 latar biru untuk melamar kerja? Snapport Lite mengatur ukuran dalam mm, mengganti latar ke putih, biru atau merah, lalu membuat lembar cetak 4×6 atau A4 dengan garis potong. Foto tidak diunggah. Tampilan 50 bahasa, diganti di dalam aplikasi. Template dan edit gratis, ekspor pertama gratis; ekspor tanpa batas sekali beli, tanpa langganan. Cek aturan foto instansi dulu."
+  },
+  {
+   "app": "snapportlite",
+   "app_id": "6792856304",
+   "lang": "vi",
+   "scenario": "在台越南新住民社團（經版主同意）：急著要辦文件用的證件照",
+   "ct": "snapportlite_vi_4",
+   "text": "Cần gấp ảnh thẻ 3x4 hoặc 4x6 nền trắng? Snapport Lite cắt ảnh đúng kích thước bạn chọn (mm hoặc pixel), có đường căn đỉnh đầu, mắt, cằm; đổi nền trắng, xanh, đỏ; xếp trang in 4×6 hoặc A4 có đường cắt. Ảnh không tải lên. Giao diện 50 ngôn ngữ, đổi trong ứng dụng. Mẫu và chỉnh sửa miễn phí, lần xuất đầu miễn phí; xuất không giới hạn với một lần mua, không thuê bao. Kiểm tra quy định ảnh trước khi nộp."
+  },
+  {
+   "app": "gmoney",
+   "app_id": "6755782939",
+   "lang": "zh-Hant",
+   "scenario": "Threads：日常記帳＋一年出國兩三次，不想裝兩個 App",
+   "ct": "gmoney_zhHant_1",
+   "text": "平常用台幣記帳，一年出國兩三次，又常海外網購，結果日常一個記帳 App、出國再裝一個旅遊記帳，兩本帳永遠對不起來。\nG+Money 把兩件事放在同一本：日常消費照常記；出國時開一個旅程，用日圓或韓元記一筆，馬上看到台幣，總覽和匯出都依旅程分組；匯率自動更新或自己填，沒網路也能換算；設每日上限看今天還能花多少；月底匯出 CSV。\n付費下載、一次買斷、沒有訂閱；不用帳號、沒有廣告，資料只在手機。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "gmoney",
+   "app_id": "6755782939",
+   "lang": "ja",
+   "scenario": "海外赴任・出張が多い人の二通貨家計簿",
+   "ct": "gmoney_ja_2",
+   "text": "海外赴任や出張が多いと、現地通貨の支出と円の家計が別々になって、月末に「結局いくら使った？」が分からなくなります。\nG+Moneyは家計簿と通貨換算をひとつにしたアプリ。普段の支出はそのまま記録し、出張や旅行は「旅行」単位でまとめて小計を表示。母国通貨の合計を常に表示し、レートは自動更新でも手入力でも、圏外でも換算できます。1日の上限を決めて残りを確認、CSV書き出し対応。\n買い切りでサブスクなし。アカウント不要・広告なし、データは端末内だけ。表示言語は50言語からアプリ内で切り替えられます。"
+  },
+  {
+   "app": "gmoney",
+   "app_id": "6755782939",
+   "lang": "en",
+   "scenario": "Expat paid in one currency, thinking in another",
+   "ct": "gmoney_en_3",
+   "text": "Paid in euros, still thinking in dollars: I knew what I'd spent, not what it meant back home.\nG+Money is an expense tracker and currency converter in one: log daily spending, group trips with their own subtotals, and always see totals in your home currency. Live or manual rates, works offline, CSV export.\nPay once, no subscription. No account, no ads, data stays on your phone. 50 languages, switchable in-app."
+  },
+  {
+   "app": "gmoney",
+   "app_id": "6755782939",
+   "lang": "id",
+   "scenario": "Pekerja Indonesia di Taiwan: gaji NT$, mikir dalam rupiah (uji kecil)",
+   "ct": "gmoney_id_4",
+   "text": "Gaji dalam NT$, tapi di kepala dihitung ke rupiah; akhir bulan bingung uangnya ke mana, padahal mau kirim ke rumah.\nG+Money mencatat pengeluaran per kategori, memasang batas harian, dan selalu menampilkan total dalam mata uang rumah. Kurs otomatis atau manual, tetap jalan offline.\nBeli sekali, tanpa langganan, akun, atau iklan; data hanya di HP. Antarmuka 50 bahasa, termasuk Indonesia, bisa diganti di aplikasi."
+  },
+  {
+   "app": "gmoneylite",
+   "app_id": "6793436548",
+   "lang": "zh-Hant",
+   "scenario": "Threads：店門口心算日圓（12–2 月日本冬季旅遊檔期）",
+   "ct": "gmoneylite_zhHant_1",
+   "text": "出國最煩的不是花錢，是邊付錢邊心算：這 1,280 日圓到底多少台幣？\nG+Money Lite 用當地幣別記一筆，馬上顯示台幣金額。匯率開 App 時自動更新（約每 6 小時），也能自己輸入；沒網路就用上次存的匯率，是中間參考匯率，刷卡實際金額可能略有差。每日上限可選，有小工具和 Apple Watch。\n先說清楚：免費版有匯率、預算、摘要，但只有 1 個旅程、3 筆支出，比較像試用；喜歡再一次買斷解鎖無限旅程與支出，不是訂閱。資料只在手機、不用帳號。"
+  },
+  {
+   "app": "gmoneylite",
+   "app_id": "6793436548",
+   "lang": "ko",
+   "scenario": "일본 여행: 엔화 현금+카드 섞어 쓰기",
+   "ct": "gmoneylite_ko_2",
+   "text": "일본 여행에서 엔화 현금이랑 카드를 섞어 쓰다 보면 오늘 얼마 썼는지 감이 안 와요.\nG+Money Lite는 현지 통화로 기록하면 바로 원화로 보여 줘요. 환율은 앱을 열 때 자동으로 받아오고(약 6시간마다) 직접 입력도 되며, 오프라인이면 저장된 환율로 계산해요(중간 기준 환율이라 카드 청구 금액과 조금 다를 수 있어요). 하루 한도는 선택, 위젯·Apple Watch 지원.\n솔직히 무료는 여행 1개·지출 3건까지라 체험판에 가까워요. 마음에 들면 한 번 결제로 무제한, 구독 없음. 데이터는 내 기기에만."
+  },
+  {
+   "app": "gmoneylite",
+   "app_id": "6793436548",
+   "lang": "ja",
+   "scenario": "円安でも行く海外旅行、現金とカードが混ざる",
+   "ct": "gmoneylite_ja_3",
+   "text": "円安でも海外旅行は行きたい。でも現地通貨の現金とカードが混ざると、今日いくら使ったか分からなくなります。\nG+Money Liteは現地通貨で記録すると、すぐ円で表示する旅の家計簿。レートはアプリを開いたときに自動取得（約6時間ごと）、手入力も可。オフラインでは保存済みレートで計算します（仲値の参考レートなので、カード請求額とは差が出ることがあります）。1日の上限は任意、ウィジェットとApple Watch対応。\n正直に言うと、無料は旅行1件・支出3件までの体験版。気に入ったら買い切りで無制限、サブスクなし。データは端末内だけ。"
+  },
+  {
+   "app": "gmoneylite",
+   "app_id": "6793436548",
+   "lang": "en",
+   "scenario": "Counter math on a trip; travelling with someone who reads another language",
+   "ct": "gmoneylite_en_4",
+   "text": "Counter math in yen is how I lose a trip budget.\nG+Money Lite logs local currency, shows home currency instantly. Rates refresh on open or set your own; works offline with saved mid-market rates.\nTravelling with someone who reads another language? The interface switches between 50 languages in-app; entries stay as typed.\nFree: 1 trip, 3 expenses, a test drive. One payment unlocks the rest, no subscription."
+  },
+  {
+   "app": "hourstag",
+   "app_id": "6754218117",
+   "lang": "zh-Hant",
+   "scenario": "Threads：手搖飲換算成工時（假設時薪，不引用統計）",
+   "ct": "hourstag_zhHant_1",
+   "text": "假設時薪 200 元：一杯 65 元的手搖飲大約是 20 分鐘的工；每天一杯，一個月就是將近 10 小時，比一整天的班還長。\n我做 HoursTag 是想讓「價格」多一個單位。設定一次時薪或月薪，輸入價格就看到要工作多久，也能看成一個工作日的百分之幾；每筆標「必要／想要／衝動」，月底看自己的模式；想存的目標也用工時追進度。\n付費下載、一次買斷、沒有訂閱；不用帳號、沒有廣告，資料只在手機。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "hourstag",
+   "app_id": "6754218117",
+   "lang": "ja",
+   "scenario": "ポチる前に「何時間分？」",
+   "ct": "hourstag_ja_2",
+   "text": "時給1,200円なら、3,980円の服は約3時間20分の労働。そう考えると、カートの中身が少し変わります。\nHoursTagは値段を「働く時間」に換算するアプリです。時給か月給を一度入れるだけ。支出は「必要・欲しい・衝動」でタグ付けして、月ごとの傾向を確認。目標やウィッシュリストも労働時間で進み具合が見えます。\n買い切り・アカウント不要・広告なし。データは端末の中だけ。表示言語は50言語、アプリ内で切り替えられます。"
+  },
+  {
+   "app": "hourstag",
+   "app_id": "6754218117",
+   "lang": "ko",
+   "scenario": "커피값을 시급으로 환산",
+   "ct": "hourstag_ko_3",
+   "text": "시급 1만 원으로 치면 6,500원 커피는 39분이에요. 매일 마시면 한 달에 약 20시간.\nHoursTag는 가격을 '일해야 하는 시간'으로 바꿔 보여 주는 앱이에요. 시급이나 월급을 한 번만 넣으면 끝. 지출은 필요·원함·충동으로 태그하고, 목표와 위시리스트도 노동 시간으로 진행률을 봐요.\n한 번 구매, 구독 없음. 계정·광고·추적 없음, 데이터는 내 기기에만. 인터페이스는 50개 언어, 앱 안에서 바꿀 수 있어요."
+  },
+  {
+   "app": "hourstaglite",
+   "app_id": "6794039979",
+   "lang": "zh-Hant",
+   "scenario": "Threads：雙 11 結帳前（截圖上線後才發）",
+   "ct": "hourstaglite_zhHant_1",
+   "text": "雙 11 購物車先別結帳。把每一樣用「工時」看一次：假設時薪 200 元，一件 1,200 元的外套就是 6 小時。\nHoursTag Lite 免費下載：用你實領的每小時價值，把價格換成工作時間；每筆分成必要／想要／衝動；想存的目標也看得到背後要多少工時。另有小工具和 Apple Watch。\n資料只留在手機、不用帳號。要無限使用再一次買斷，沒有訂閱。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "hourstaglite",
+   "app_id": "6794039979",
+   "lang": "ja",
+   "scenario": "ポチる前の一呼吸",
+   "ct": "hourstaglite_ja_2",
+   "text": "ポチる前に、値段を「何時間働いた分か」で見てみる。それだけで、本当に欲しいかが少し見えてきます。\nHoursTag Lite（無料ダウンロード）は、手取りの時給をもとに価格を労働時間に換算。支出を「必要・欲しい・衝動」に分けて、自分の傾向を確認できます。目標に必要な労働時間と進捗も見えます。ウィジェット・Apple Watch対応。\nデータは端末内だけ、アカウント不要。無制限に使うなら買い切り、サブスクなし。表示言語は50言語、アプリ内で切り替え可。"
+  },
+  {
+   "app": "hourstaglite",
+   "app_id": "6794039979",
+   "lang": "en",
+   "scenario": "Black Friday checkout pause",
+   "ct": "hourstaglite_en_3",
+   "text": "Black Friday habit: before checkout, divide the price by what I take home per hour.\nHoursTag Lite (free download) does it for you: set your take-home hourly value, see any price as work time, tag it Need / Want / Impulse, and see the hours behind a goal. Widget and Apple Watch too.\nData stays on your device, no account. One payment unlocks unlimited use, no subscription. 50 interface languages, switchable in the app."
+  },
+  {
+   "app": "hourstaglite",
+   "app_id": "6794039979",
+   "lang": "vi",
+   "scenario": "Lao động Việt tại Đài Loan: vé về quê ăn Tết bằng bao nhiêu giờ làm (thử nghiệm nhỏ)",
+   "ct": "hourstaglite_vi_4",
+   "text": "Vé máy bay về quê ăn Tết là bao nhiêu giờ làm ở xưởng? Nhìn giá bằng giờ làm, mình bớt mua linh tinh hẳn.\nHoursTag Lite (miễn phí) đổi giá tiền ra giờ làm theo thu nhập thực nhận mỗi giờ của bạn. Chia khoản chi thành Cần / Muốn / Bốc đồng, xem một mục tiêu cần bao nhiêu giờ làm.\nDữ liệu chỉ ở trên máy, không cần tài khoản. Mở khóa một lần, không thuê bao. Giao diện 50 ngôn ngữ (có tiếng Việt), đổi trong ứng dụng."
+  },
+  {
+   "app": "moneytag",
+   "app_id": "6801956402",
+   "lang": "zh-Hant",
+   "scenario": "Threads：斜槓族算不出哪件有賺",
+   "ct": "moneytag_zhHant_1",
+   "text": "白天上班、晚上接案、週末市集擺攤，年底想問自己：到底哪一件真的有賺？全混在同一本帳裡，永遠算不清。\nMoneyTag 讓每件事一本獨立的帳，收入減支出直接看到淨額；每個專案有自己的幣別，接海外案用美金記也行。再用一個標籤，例如「交通」，把散在各本帳的收支一次加總（跨專案標籤分析屬專業版）。iPhone 與 iPad 同一本帳，也有 Apple Watch。\n免費版 1 個專案、5 筆可先試；專業版一次買斷，可匯出 CSV、PDF。介面 50 種語言，App 內可切換。"
+  },
+  {
+   "app": "moneytag",
+   "app_id": "6801956402",
+   "lang": "ja",
+   "scenario": "副業ごとに本当に黒字か",
+   "ct": "moneytag_ja_2",
+   "text": "本業のほかに、週末のハンドメイド販売とブログ。どの副業が本当に黒字なのか、ひとつの家計簿では見えませんでした。\nMoneyTagはプロジェクトごとに独立した帳簿をつくり、収入から支出を引いた純額をそれぞれ表示します。同じタグの収支は帳簿をまたいでまとめて確認（プロジェクト横断のタグ分析はLifetime Pro）。iPhoneとiPadで同じ帳簿、Apple Watchからも入力できます。\n無料は1プロジェクト・5件まで。Proは買い切りです。表示言語は50言語、アプリ内で切り替えられます。"
+  },
+  {
+   "app": "moneytag",
+   "app_id": "6801956402",
+   "lang": "vi",
+   "scenario": "Người Việt bán hàng ở Đài Loan: sạp dùng chung iPad với chồng người Đài (chỉ giao diện đổi ngôn ngữ)",
+   "ct": "moneytag_vi_3",
+   "text": "Cuối tuần bán bánh ở chợ đêm, ngày thường bán online; tiền chợ lẫn tiền nhà, không biết lời lỗ.\nMoneyTag cho mỗi việc một sổ riêng: thu trừ chi ra kết quả ròng; mỗi sổ một loại tiền. Gắn nhãn để cộng dồn qua nhiều sổ (Lifetime Pro).\nDùng chung iPad với chồng người Đài? Giao diện 50 ngôn ngữ, đổi trong ứng dụng; chỉ giao diện đổi, nội dung giữ nguyên.\nMiễn phí: 1 dự án, 5 bản ghi. Pro trả một lần, xuất CSV, PDF."
+  },
+  {
+   "app": "moneytag",
+   "app_id": "6801956402",
+   "lang": "en",
+   "scenario": "Club treasurer + room rental + freelancing",
+   "ct": "moneytag_en_4",
+   "text": "Club treasurer, a rented-out room, freelance work: three sets of money, one messy notes app.\nMoneyTag gives each one its own book: income minus expenses, a net result per project, its own currency. Tag anything; the Tags screen totals it across all projects (Lifetime Pro). Same ledger on iPhone and iPad; Watch app, widgets.\nFree: 1 project, 5 entries. Pro is a one-time purchase. 50 languages, switchable in-app."
+  },
+  {
+   "app": "caldaily",
+   "app_id": "6794178671",
+   "lang": "zh-Hant",
+   "scenario": "Threads：聚餐分帳隔天又要重算",
+   "ct": "caldaily_zhHant_1",
+   "text": "上週聚餐我先墊，算好每人多少，隔天就忘了，只好再算一次。\nCalDaily 是我做的計算機：每筆結果都能命名、標類型，一週後搜尋「週五燒肉」就找得到。小費與分帳、折扣與稅、單位換算、日期與工作天、貸款月付、行程油費等工具，人數和稅率設一次就記住。桌面小工具不用開 App 也能算。\n內建一百款主題，一款免費；一次買斷解鎖其餘主題與工具無限使用，沒有訂閱，也沒有分析追蹤。50 種語言，App 內可切換。"
+  },
+  {
+   "app": "caldaily",
+   "app_id": "6794178671",
+   "lang": "ko",
+   "scenario": "회식 N빵, 다음 날 기억 안 날 때",
+   "ct": "caldaily_ko_2",
+   "text": "회식 N빵, 계산은 했는데 다음 날 누가 얼마였는지 기억이 안 나죠.\nCalDaily는 계산 결과마다 이름과 종류를 붙여 저장하고 나중에 검색할 수 있는 계산기예요. 팁·나누기, 할인·세금, 단위 변환, 날짜·영업일, 대출, 여행 연료비 도구는 인원수나 세율을 한 번 정해 두면 기억해요. 홈 화면 위젯은 앱을 열지 않아도 계산되고 테마에 맞춰 바뀌어요.\n테마 100개 중 1개 무료, 한 번 구매로 나머지 해제. 구독 없음. 50개 언어, 앱 안에서 바꿀 수 있어요."
+  },
+  {
+   "app": "caldaily",
+   "app_id": "6794178671",
+   "lang": "ja",
+   "scenario": "割り勘や見積もり、あとで見返したい",
+   "ct": "caldaily_ja_3",
+   "text": "電卓で計算した割り勘や見積もり、あとで「あれ、いくらだっけ？」となることはありませんか。\nCalDailyは結果に名前と種類を付けて保存し、あとから検索できる電卓です。割引と税、チップと割り勘、単位換算、日数と営業日、ローン、燃料費などのツールは、税率や人数を一度設定すれば打ち直し不要。ホーム画面ウィジェットはテーマに合わせて変わります。\n100種類のテーマ（1つは無料）。買い切りでサブスクなし。50言語対応、アプリ内で切り替えられます。"
+  },
+  {
+   "app": "caldaily",
+   "app_id": "6794178671",
+   "lang": "en",
+   "scenario": "The one ugly icon on my Home Screen",
+   "ct": "caldaily_en_4",
+   "text": "My calculator was the ugliest icon on my Home Screen, and it forgot everything once closed.\nSo I made CalDaily: 100 built-in themes, each with its own key shape, plus a matching Home Screen widget. Name and tag any result; history groups by day, exports to CSV. Tools for split, tax, units, dates, loans, fuel.\nOne theme free; one purchase unlocks the rest. No account, ads or analytics. 50 languages, switchable in-app."
+  },
+  {
+   "app": "aim990",
+   "app_id": "6784974530",
+   "lang": "zh-Hant",
+   "scenario": "Threads：刷題分數停滯、不知道錯在哪",
+   "ct": "aim990_zhHant_1",
+   "text": "多益刷了幾百題，分數還卡在同一區間？最怕的是錯很多，卻說不出到底錯在哪一類。\n我做了 Aim990：先用 8 分鐘、約 20 題文法／聽力／閱讀診斷，找出最弱的 3 項技能，寫成一份處方：先修哪項、為什麼失分。之後每天只練一項，分診斷、修復、驗證三段；第 30 天用同樣技能複測，和第 1 天並排比。\n免費下載，一次購買解鎖全部，無訂閱；不用帳號、可離線、沒廣告。題目是原創非官方教材，與 ETS 無關，級距只是估算，不保證分數。"
+  },
+  {
+   "app": "aim990",
+   "app_id": "6784974530",
+   "lang": "vi",
+   "scenario": "Facebook nhóm tự học TOEIC（經版主同意）：sinh viên cần TOEIC để tốt nghiệp。注意：越南店面目前是英文頁，建議 owner 補回 vi 本地化後再發",
+   "ct": "aim990_vi_2",
+   "text": "Cần TOEIC để tốt nghiệp mà điểm vẫn đứng yên? Thường vì không biết mình mất điểm ở đâu.\nMình làm Aim990: chẩn đoán 8 phút (khoảng 20 câu) chỉ ra 3 kỹ năng yếu nhất; mỗi ngày luyện một kỹ năng, ngày 30 đo lại. Từ vựng có nghĩa tiếng Việt, giao diện 50 ngôn ngữ đổi trong app.\nTải miễn phí, mua một lần mở hết, không thuê bao, không tài khoản. Tài liệu không chính thức, không liên quan ETS, không đảm bảo điểm."
+  },
+  {
+   "app": "aim990",
+   "app_id": "6784974530",
+   "lang": "ja",
+   "scenario": "X（#TOEIC勉強垢）：公開テスト直前の不安",
+   "ct": "aim990_ja_3",
+   "text": "TOEIC本番まであと1週間。模試をもう1回やって、不安だけ増えたことはありませんか。\n個人開発のAim990は、8分・約20問の診断で弱点トップ3を出し、毎日ひとつだけ「診断→修復→確認」で練習するアプリです。本番1・3・7・14日前のパニックモード、15秒ヒント付きの文法スピード演習、Apple Watchでの復習もあります。\nダウンロード無料、買い切りで全解放、サブスクなし。アカウント不要・オフライン。問題はオリジナルの非公式教材でETSとは無関係、スコアは保証しません。"
+  },
+  {
+   "app": "wordmate",
+   "app_id": "6789917808",
+   "lang": "zh-Hant",
+   "scenario": "Threads：通勤族打開 App 太麻煩",
+   "ct": "wordmate_zhHant_1",
+   "text": "想學日文、韓文很多次，最後都輸給「打開 App 很麻煩」：通勤時手根本空不出來。\n我做 Wordmate 時就想讓單字自己出現在眼前：主畫面互動小工具可以直接看下一個字、收藏；Apple Watch 上也能學、聽系統發音、看進度。44 種學習語言、14 個主題、84 個單元；介面有 50 種語言可在 App 內切換，和學習語言分開設定，每種語言進度各自保存。\n這款是付費下載、一次買斷，沒有訂閱、沒有內購，不用帳號、沒有第三方廣告。想先試這種學法，可以先用同系列免費起步的 Wordmate Lite（沒有小工具和手錶）。"
+  },
+  {
+   "app": "wordmate",
+   "app_id": "6789917808",
+   "lang": "ja",
+   "scenario": "X：通勤電車で単語アプリを開けない（買い切り派）",
+   "ct": "wordmate_ja_2",
+   "text": "通勤電車でスマホを開くと、つい単語アプリ以外を見てしまう。そんな自分のために作りました。\nWordmateはホーム画面のインタラクティブウィジェットで単語を確認・切り替え・保存でき、Apple Watchでも学習やシステム音声の再生、進捗確認ができます。44の学習言語・14テーマ・84ユニット。表示言語は50言語からアプリ内で切り替え、学習言語とは別に設定できます。\n有料ダウンロードの買い切りで、サブスク・アプリ内課金なし、アカウント不要。まず試したい方は、同シリーズの無料で始められるWordmate Lite（ウィジェット・Watchなし）から。個人開発です。"
+  },
+  {
+   "app": "wordmate",
+   "app_id": "6789917808",
+   "lang": "en",
+   "scenario": "r/AppleWatch（遵守自我宣傳規則、揭露開發者）",
+   "ct": "wordmate_en_3",
+   "text": "I kept skipping the vocab app, so I built Wordmate where I already look: a Home Screen widget to view the next word or save it, and an Apple Watch app to study, hear the system voice, check progress. 44 learning languages, 14 topics, 84 units; interface in 50 languages, switchable in-app. Paid download, one purchase, no subscription or IAP, no account. To try it first: Wordmate Lite, free to start (no widget/Watch)."
+  },
+  {
+   "app": "wordmatelite",
+   "app_id": "6797601720",
+   "lang": "zh-Hant",
+   "scenario": "Threads：卡在整理單字卡、三天就放棄",
+   "ct": "wordmatelite_zhHant_1",
+   "text": "裝過三個背單字 App，三個都死在「先把單字卡整理好」那一步？\nWordmate Lite 拿掉的就是這步：一次五個字，畫面像一條小石子路，踩完一顆前進一步，結束時把今天學會的五個字完整列給你看。44 種學習語言、14 個生活主題、三種難度，介面 50 種語言可在 App 內切換，可離線、不用帳號。\n老實說免費範圍不大：選一種語言、一個主題，練入門前 10 個字、收藏 3 個；覺得合用再一次買斷，沒有訂閱。我是開發者，歡迎直接留言問。"
+  },
+  {
+   "app": "wordmatelite",
+   "app_id": "6797601720",
+   "lang": "id",
+   "scenario": "Facebook 在台印尼移工社團（經版主同意、揭露開發者）。前置條件：id 店面本地化上線、確認中文學習內容為繁體；目前落地頁是英文",
+   "ct": "wordmatelite_id_2",
+   "text": "Kerja di Taiwan dan ingin menambah kosakata Mandarin, tapi waktu luang cuma sebentar?\nWordmate Lite cukup lima kata per latihan, lalu kelimanya ditampilkan lengkap. Tema keseharian, makan, belanja, kesehatan, kerja. Tampilan bisa Bahasa Indonesia (50 bahasa, ganti di aplikasi). Offline, tanpa akun.\nGratis: satu bahasa, satu tema, 10 kata pertama, simpan 3 kata. Sekali beli buka semua, bukan langganan."
+  },
+  {
+   "app": "wordmatelite",
+   "app_id": "6797601720",
+   "lang": "vi",
+   "scenario": "Facebook 越南人在日本／韓國社群（經版主同意、揭露開發者）。前置條件：vi 店面本地化上線；目前落地頁是英文",
+   "ct": "wordmatelite_vi_3",
+   "text": "Đi làm ở Nhật hay Hàn, ca dài, về nhà chỉ còn sức lướt điện thoại vài phút?\nWordmate Lite mỗi lượt chỉ năm từ, khoảng một phút, xong thì năm từ hiện ra đầy đủ. Có tiếng Nhật, tiếng Hàn; chủ đề sinh hoạt, ăn uống, mua sắm, sức khỏe, công việc. Giao diện tiếng Việt (50 ngôn ngữ, đổi trong app). Ngoại tuyến, không cần tài khoản.\nMiễn phí: một ngôn ngữ, một chủ đề, 10 từ đầu, lưu 3 từ. Mua một lần mở hết, không thuê bao."
+  },
+  {
+   "app": "wifiaid",
+   "app_id": "6790467886",
+   "lang": "zh-Hant",
+   "scenario": "遠端工作者／Apple Watch 使用者：Wi-Fi 顯示已連線但視訊一直卡（Threads）",
+   "ct": "wifiaid_zhHant_1",
+   "text": "在家開會，Wi-Fi 明明顯示已連線，畫面卻一直卡。到底是路由器、DNS、電信商，還是只有那個網站出問題？WiFi Aid 一鍵檢查 Wi-Fi、DNS 與網路連線，把 DNS、TCP、TLS、回應時間等證據逐項列出，再指出最可能的原因；網站檢查可分辨是單一網站還是整條網路故障。Apple Watch 抬腕就能跑檢查，主畫面小工具隨時顯示連線狀態，iPad 版面完整支援。紀錄只存在裝置上，無帳號、無廣告。一次買斷、絕無訂閱。50 種介面語言，App 內隨時切換。想先免費試，可用 WiFi Aid Lite。"
+  },
+  {
+   "app": "wifiaid",
+   "app_id": "6790467886",
+   "lang": "ja",
+   "scenario": "Apple Watch／iPad 利用者向け：つながっているのに遅い（X / note、開発者として明示）",
+   "ct": "wifiaid_ja_2",
+   "text": "「Wi-Fiはつながっているのにネットが遅い」。原因はルーター？DNS？プロバイダ？それとも見ているサイトだけ？WiFi Aidはワンタップで Wi-Fi・DNS・インターネット接続をまとめてチェックし、DNS・TCP・TLS・応答時間などの根拠から最も可能性の高い原因を示します。Apple Watchなら手首の上でそのままチェック、ホーム画面ウィジェットで接続状態をひと目で確認、iPadにも完全対応。履歴は端末内のみ。買い切りでサブスク・広告なし。表示は50言語、アプリ内で切り替えられます。まず無料で試すなら WiFi Aid Lite。"
+  },
+  {
+   "app": "wifiaid",
+   "app_id": "6790467886",
+   "lang": "en",
+   "scenario": "Remote worker with Apple Watch: connected but freezing before a call (Reddit/X, disclosed as developer)",
+   "ct": "wifiaid_en_3",
+   "text": "Wi-Fi says connected, but the call keeps freezing. Router, DNS, ISP, or just one site? WiFi Aid runs Wi-Fi, DNS and internet checks in one tap and shows the evidence (DNS, TCP, TLS, timing) behind the likely cause. Check a Website: one site down, or everything? Run it from Apple Watch, add a Home Screen widget, full iPad layout. On-device history. Pay once, no subscription or ads. 50 languages, switch in-app."
+  },
+  {
+   "app": "wifiaidlite",
+   "app_id": "6793414462",
+   "lang": "zh-Hant",
+   "scenario": "租屋族：房東附的網路很慢，跟房東反映前先搞清楚問題（Threads／Dcard 租屋板）",
+   "ct": "wifiaidlite_zhHant_1",
+   "text": "租屋最無力的時刻：房東附的網路又卡了，說「很慢」只換來「重開機試試」。WiFi Aid Lite 一鍵檢查 Wi-Fi、DNS 與網路連線，DNS、TCP、TLS、回應時間等證據逐項列出，也能分辨是單一網站還是整條網路有問題；深度檢查適合抓時好時壞的斷線。紀錄只存在你的手機上，無帳號、無廣告、無追蹤。免費下載，所有工具合計可免費完整檢查一次；想不限次數使用並看修正前後對照，再一次買斷，絕無訂閱。50 種介面語言，App 內隨時切換。我是開發者，歡迎回饋。"
+  },
+  {
+   "app": "wifiaidlite",
+   "app_id": "6793414462",
+   "lang": "ja",
+   "scenario": "「ネット 遅い」で困っている人への返信（X、開発者として明示）",
+   "ct": "wifiaidlite_ja_2",
+   "text": "「ネットが遅い」と感じたら、ルーターを再起動する前に原因を確かめてみませんか。WiFi Aid Liteはワンタップで Wi-Fi・DNS・インターネット接続を確認し、DNS・TCP・TLS・応答時間などの根拠から最も可能性の高い原因を示します。特定のサイトだけの問題か、回線全体の問題かも切り分けられます。履歴は端末内のみ。全ツール合わせて1回、購入なしで完全なチェックができます。無制限に使うなら一度だけの買い切りで、サブスク・広告・トラッキングなし。表示は50言語、アプリ内で切り替え可能。開発者本人です。"
+  },
+  {
+   "app": "wifiaidlite",
+   "app_id": "6793414462",
+   "lang": "id",
+   "scenario": "Pekerja migran di Taiwan: video call ke keluarga sering putus (grup komunitas, dengan izin admin; dua orang terlibat, ha",
+   "ct": "wifiaidlite_id_3",
+   "text": "Video call ke keluarga sering putus meski WiFi tersambung? WiFi Aid Lite memeriksa WiFi, DNS, dan internet dengan satu ketukan, lalu menunjukkan kemungkinan masalahnya beserta bukti. 50 bahasa tampilan, ganti di dalam app, misalnya ke Mandarin saat menunjukkan hasil ke majikan (hanya bahasa tampilan yang berganti). Tanpa akun, iklan, atau pelacakan. Satu pemeriksaan lengkap gratis; buka kunci sekali bayar."
+  },
+  {
+   "app": "wifiaidlite",
+   "app_id": "6793414462",
+   "lang": "en",
+   "scenario": "Is it the internet or just this site? (r/techsupport-style answer, disclosed as developer)",
+   "ct": "wifiaidlite_en_4",
+   "text": "\"Is the internet down, or just this site?\" WiFi Aid Lite answers in one tap: it checks Wi-Fi, DNS and the wider internet, and Check a Website shows whether one destination or everything is failing. No account, ads or tracking; history stays on-device. One complete check is free with any tool; a one-time unlock adds unlimited checks and before/after comparison. 50 languages, switch in-app."
+  },
+  {
+   "app": "battai",
+   "app_id": "6802423998",
+   "lang": "zh-Hant",
+   "scenario": "賣二手 iPhone／送修前：買家常問電池（Threads／PTT MacShop 教學文末）",
+   "ct": "battai_zhHant_1",
+   "text": "要賣舊 iPhone，買家第一句常是：「電池健康幾 %？」BattAI 把電池健康分數、評分依據、最大容量趨勢和預估到 80% 的時間整理在一起，每一項都標明來源：哪些來自 iOS、哪些是推估、哪些是你自己補充的。還能為檢修或二手轉讓建立電池報告：App 內圖表與文字、同一份存成 PNG、全部資料的純文字表格。不連網、無帳號、無廣告、無追蹤，也不承諾延長電池壽命。只付一次，絕無訂閱。50 種介面語言，App 內隨時切換。"
+  },
+  {
+   "app": "battai",
+   "app_id": "6802423998",
+   "lang": "ja",
+   "scenario": "メルカリ等で iPhone を売る前に（note / X、開発者として明示）",
+   "ct": "battai_ja_2",
+   "text": "iPhoneを売るとき、よく聞かれるのが「バッテリーの状態は？」。BattAIは、バッテリー状態スコアとその根拠、最大容量の推移、80%までの推定期間をまとめて表示し、各項目に情報源と限界を明記します。推定は範囲で示し、欠けたデータは欠けたまま。サービスや売却に使える電池レポート（アプリのグラフとテキスト、PNG、テキストの表）も作れます。通信・広告・追跡なし。支払いは一度だけ、サブスクなし。表示は50言語、アプリ内で切り替えられます。"
+  },
+  {
+   "app": "battai",
+   "app_id": "6802423998",
+   "lang": "en",
+   "scenario": "\"My iPhone says 86%, is that bad?\" (X / Threads)",
+   "ct": "battai_en_3",
+   "text": "Settings says Maximum Capacity 86%. Bad? Dropping fast? BattAI shows a battery health score with the rules behind it, maximum capacity over time and an estimated time to 80%; each value is labeled from iOS, estimated, or added by you. Apple's 80% benchmark stays separate; nothing promises longer battery life. Make a report for service or resale. No ads or network requests. Pay once. 50 languages, switch in-app."
+  },
+  {
+   "app": "dbhalo",
+   "app_id": "6806826699",
+   "lang": "zh-Hant",
+   "scenario": "樓上噪音：跟管委會反映前先記下時間與音量（Threads／Dcard 租屋板）",
+   "ct": "dbhalo_zhHant_1",
+   "text": "樓上半夜拖椅子、跑跳，跟管委會只說「很吵」很難溝通。dB Halo 用大字即時顯示 dB，記下目前、最低、平均、最高與峰值，加上附時間戳記的聲音事件紀錄，從歷史紀錄可匯出含圖表的 PDF 或 CSV。先說清楚：手機測量是估算值，dB Halo 不是認證的專業聲級計，不能取代正式稽查；但整理「幾點、多大聲、多久」很實用。全部在手機上處理，不用註冊、沒有廣告。一般功能可免費成功使用 3 次，Lifetime Pro 一次買斷。50 種介面語言，App 內隨時切換。"
+  },
+  {
+   "app": "dbhalo",
+   "app_id": "6806826699",
+   "lang": "ko",
+   "scenario": "층간소음 기록 (네이버 카페/블로그, 개발자임을 밝힘)",
+   "ct": "dbhalo_ko_2",
+   "text": "층간소음, '시끄럽다'는 말만으로는 관리사무소와 이야기가 잘 안 되죠. dB Halo는 실시간 dB를 크게 보여주고 현재·최저·평균·최고·피크와 시간이 찍힌 소리 이벤트 기록을 남깁니다. 기록은 그래프가 담긴 PDF 보고서나 CSV로 내보낼 수 있어요. 다만 스마트폰 측정값은 추정치이고 인증된 전문 소음 측정기가 아니라서 공식 측정을 대신할 수 없습니다. '언제, 얼마나, 얼마 동안'을 정리하는 용도로 써보세요. 계정·광고·추적 없음. 일반 기능은 3회 무료, Lifetime Pro는 한 번 구매. 50개 언어 표시, 앱 안에서 바로 전환."
+  },
+  {
+   "app": "dbhalo",
+   "app_id": "6806826699",
+   "lang": "en",
+   "scenario": "Snoring argument with a partner, without recording the bedroom (Threads / r/snoring if rules allow)",
+   "ct": "dbhalo_en_3",
+   "text": "Told you snore, but don't want your bedroom recorded? dB Halo's Sleep Journal recognizes snoring, breathing and speech on-device and logs each event by time and level without saving raw microphone audio (audio is kept only if you start a recording). No account, ads or tracking. One Sleep Journal session is free; Lifetime Pro is a one-time purchase. Estimates, not a medical device. 50 languages, switch in-app."
+  },
+  {
+   "app": "qrcodehalo",
+   "app_id": "6806779853",
+   "lang": "en",
+   "scenario": "Parking-meter QR stickers (Threads/X). Post only after confirming the live build; v1.0.3 auto-runs by default so the Set",
+   "ct": "qrcodehalo_en_1",
+   "text": "Parking-meter QR stickers are easy to fake, and lookalike domains are easy to miss. In QR Code Halo, turn off \"Run action after scanning\" in Settings, then open the scan in History and tap Security Check: the full payload is split into scheme, host, path and query with a Safe, Caution or Blocked finding and reasons. On-device, no reputation lookup, so it will not catch every scam. 3 free scans; 9 QR creators free."
+  },
+  {
+   "app": "qrcodehalo",
+   "app_id": "6806779853",
+   "lang": "ko",
+   "scenario": "큐싱(QR 피싱) 실용 팁 (네이버 블로그/스레드). 현재 빌드 동작 확인 후 게시.",
+   "ct": "qrcodehalo_ko_2",
+   "text": "QR 코드 하나로 가짜 사이트에 연결되는 큐싱, 링크를 열기 전에 확인할 수 있어요. QR Code Halo에서 설정의 '스캔 후 바로 실행'을 끄고, 기록에서 보안 검사를 누르면 코드 전체 내용을 scheme·host·path·query로 나눠 Safe·Caution·Blocked와 그 근거를 기기 안에서 보여줍니다. 인터넷 평판 조회는 하지 않아서 모든 사기 사이트를 알아내지는 못하지만, 링크가 실제로 어디로 가는지는 분명히 볼 수 있어요. javascript:, data:, file: 코드는 절대 열지 않습니다. 무료 스캔 3회, 9가지 QR 생성은 전부 무료. 50개 언어, 앱 안에서 전환."
+  },
+  {
+   "app": "qrcodehalo",
+   "app_id": "6806779853",
+   "lang": "zh-Hant",
+   "scenario": "開店的人：確認櫃台上的 QR Code 還是自己的（Threads／開店社團，經管理員同意）",
+   "ct": "qrcodehalo_zhHant_3",
+   "text": "開店的朋友：貼在櫃台的點餐或收款 QR Code，你多久確認一次它還是你的？QR Code Halo 可以把掃描結果存成本機參照，之後再掃一次，依完整 SHA-256 指紋、網域、內容類型等逐項比對。批次稽核還能把一整批碼依相同內容與網域分組，在明確範圍內比對容易混淆的相似網域。全部在手機本機完成，不查網路、不用帳號。建議先到設定關閉「掃描後自動執行」，先看再開。免費 3 次掃描，9 種 QR Code 建立都能用。50 種介面語言，App 內隨時切換。"
+  },
+  {
+   "app": "qrcodehalo",
+   "app_id": "6806779853",
+   "lang": "en",
+   "scenario": "Event organizers checking printed QR batches (en-GB, LinkedIn/X)",
+   "ct": "qrcodehalo_en_4",
+   "text": "Printing hundreds of QR codes for tickets, posters or menus? One wrong or duplicated code is hard to spot by eye. QR Code Halo's Batch Risk & Difference Audit groups exact duplicates and shared hosts, checks a bounded set of lookalike hosts, and shows every full payload with its risk level. Reading the audit is never locked; unlimited scans and saving batch results come with the one-off Lifetime Pro. On-device."
+  },
+  {
+   "app": "zipbox",
+   "app_id": "6806776579",
+   "lang": "zh-Hant",
+   "scenario": "收到 RAR 卻打不開、又被廣告擋住（Threads／PTT iOS 板回覆，揭露身分）",
+   "ct": "zipbox_zhHant_1",
+   "text": "朋友傳來一個 RAR，iPhone 的「檔案」App 打不開；下載免費解壓 App，又被「還剩 5 秒」的全螢幕廣告擋在自己的檔案前面。Zipbox 就是為此而做：ZIP、RAR/RAR5、7z 等 13 種格式都在手機本機處理，密碼保護和分卷壓縮檔也可以；先瀏覽清單、預覽照片、影片、PDF，只取出需要的那一個。不連網、無帳號、零廣告。App Store 付費下載，一次購買包含全部功能，沒有內購與訂閱。50 種介面語言，App 內隨時切換。"
+  },
+  {
+   "app": "zipbox",
+   "app_id": "6806776579",
+   "lang": "ja",
+   "scenario": "パスワード付き7zが届いた時（X / 知恵袋の回答、開発者として明示）",
+   "ct": "zipbox_ja_2",
+   "text": "友人からパスワード付きの7zで旅行写真が届いて、ただ中身を見たいだけなのに、見つかるアプリは広告ばかり。Zipboxは、ZIP・RAR/RAR5・7zなど13形式を端末内だけで処理し、パスワード付きや分割ファイルにも対応。展開前にファイル一覧や写真・動画・PDFをプレビューして、必要な1つだけ取り出せます。通信なし、アカウント不要、広告ゼロ。有料アプリで、1回の購入ですべての機能が使えます（アプリ内課金・サブスクなし）。表示は50言語、アプリ内で切り替え可能。"
+  },
+  {
+   "app": "zipbox",
+   "app_id": "6806776579",
+   "lang": "en",
+   "scenario": "One PDF out of a 40-file work ZIP (X / Threads / Reddit answer, disclosed)",
+   "ct": "zipbox_en_3",
+   "text": "A work ZIP arrives by email and you need one PDF out of forty. Zipbox lets you look inside first: browse the list, preview photos, video, PDF and text, then extract only that file. ZIP, RAR/RAR5, 7z and 10 more formats, on-device, including password-protected and multi-part archives. No network, account or ads. Paid app: one purchase, every feature, no IAP or subscription. 50 languages, switch in-app."
+  },
+  {
+   "app": "cyca",
+   "app_id": "6782251621",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：受夠註冊、廣告與訂閱的經期 App 使用者（每天最多 1 篇、內文不放連結）",
+   "ct": "cyca_zhHant_1",
+   "text": "很多經期 App 一打開就要註冊，接著跳廣告，最後還要訂閱才看得到預測。月經這麼私密的紀錄，為什麼要先交給別人的伺服器？我做了 Cyca：不用帳號、沒有伺服器，資料只留在你的 iPhone，離線也能用。免費記錄當天狀態和生理期；下次經期預測、個人節律、智慧規劃是一次買斷解鎖，不是訂閱。介面有 50 種語言，可在 App 內切換。它提供的是估算，不是醫療器材，也不能拿來避孕。選經期 App 你最在意什麼？"
+  },
+  {
+   "app": "cyca",
+   "app_id": "6782251621",
+   "lang": "id",
+   "scenario": "在台印尼女性移工 Facebook 社團（經管理員同意後由擁有者分享）：店面顯示英文，但 App 內有印尼文",
+   "ct": "cyca_id_2",
+   "text": "Sibuk kerja sampai lupa kapan terakhir haid? Aku membuat Cyca: catat haid, gejala, dan mood dalam hitungan detik, lihat perkiraan haid berikutnya di kalender yang tenang. Tanpa akun, tanpa iklan, data hanya di HP-mu, bisa offline. Halaman App Store mungkin berbahasa Inggris, tapi aplikasinya ada dalam Bahasa Indonesia (50 bahasa, ganti di dalam aplikasi). Dasar gratis; Pro sekali bayar. Bukan alat medis atau KB."
+  },
+  {
+   "app": "cyca",
+   "app_id": "6782251621",
+   "lang": "vi",
+   "scenario": "在台越南新住民女性社團／新住民家庭服務中心：看診時被問最後一次月經日期",
+   "ct": "cyca_vi_3",
+   "text": "Bác sĩ hỏi \"kỳ kinh cuối là ngày nào?\" mà không nhớ? Mình làm Cyca để ghi kỳ kinh, triệu chứng, tâm trạng trong vài giây và xem kỳ tiếp theo trên lịch nhẹ nhàng. Không cần tài khoản, không quảng cáo, dữ liệu chỉ ở trên máy, dùng được khi mất mạng. Trang App Store có thể hiện tiếng Anh, nhưng trong app có tiếng Việt (50 ngôn ngữ, đổi ngay trong app). Cơ bản miễn phí; Pro mua một lần. Không phải thiết bị y tế."
+  },
+  {
+   "app": "cyca",
+   "app_id": "6782251621",
+   "lang": "en",
+   "scenario": "r/iosapps 開發者自介帖／Threads：重視隱私、不想給 email 的英語 iPhone 用戶",
+   "ct": "cyca_en_4",
+   "text": "Why should a period tracker need your email before you log a single day? I built Cyca with no account and no servers: everything stays on your iPhone and works offline. Log flow, symptoms and mood in seconds on a calm calendar. Tracking today and your period is free; predictions and history are a one-time Pro unlock, never a subscription. 50 interface languages, switchable in-app. Estimates only, not medical advice."
+  },
+  {
+   "app": "sereno",
+   "app_id": "6788236641",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads：睡前被白噪音循環接縫吵醒的淺眠者（寫全名、不放連結）",
+   "ct": "sereno_zhHant_1",
+   "text": "睡前開白噪音，結果每隔幾分鐘就聽到雨聲「接縫」重來一次，反而更清醒？這是我做「Sereno: 極致睡眠音效」的原因：聲音在手機上即時生成，雨不循環、海浪不重複。可以把雨聲、風扇、褐噪音疊在一起，存成自己的組合；睡眠計時器會慢慢淡出，不會突然斷掉。完全離線、沒有廣告、不用帳號，介面有 50 種語言可在 App 內切換。免費先試，想要全部聲音、無限疊加和調音再一次買斷，不訂閱。搜尋時請打全名，同名 App 很多。你睡覺習慣聽什麼聲音？"
+  },
+  {
+   "app": "sereno",
+   "app_id": "6788236641",
+   "lang": "en",
+   "scenario": "美國 Threads／r/iosapps 開發者自介：聽得出循環、厭倦睡眠訂閱的人",
+   "ct": "sereno_en_2",
+   "text": "Ever notice the exact moment a 30-second rain loop restarts, right as you drift off? That's why I built Sereno: Sleep Sounds. Sounds are synthesized live on the phone, so rain never loops. Layer rain, a fan and brown noise, save the mix, and let the sleep timer fade out instead of cutting off. Offline, no ads, no account, 50 languages switchable in-app. Free to try; Pro is a one-time unlock. Search the full name."
+  },
+  {
+   "app": "sereno",
+   "app_id": "6788236641",
+   "lang": "ja",
+   "scenario": "日本 X／note：雨音ループの継ぎ目が気になる、サブスク疲れの人（フルネーム表記）",
+   "ct": "sereno_ja_3",
+   "text": "寝る前に雨音を流すと、数十秒ごとにループの「つなぎ目」が聞こえて逆に目が冴える。そんな経験はありませんか。「Sereno: スリープサウンド」は音を端末上でリアルタイムに生成するので、雨音も波の音も同じ繰り返しになりません。雨・扇風機・ブラウンノイズを重ねて自分だけのミックスを保存。スリープタイマーはプツッと切れず、ゆっくりフェードアウト。完全オフライン、広告なし、アカウント不要、50言語をアプリ内で切替可。無料で試せて、全サウンドと無制限レイヤーは買い切りのPro。サブスクはありません。同名アプリが多いので検索はフルネームで。"
+  },
+  {
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "lang": "en",
+   "scenario": "Show HN／X／r/ClaudeAI：5 小時額度看起來還夠，卻先撞到每週上限",
+   "ct": "claudeusagem_en_1",
+   "text": "Hit Claude's weekly limit mid-refactor while the 5-hour window looked fine? UsageNow puts every limit on your Home Screen: Claude 5-hour and weekly, Codex windows, Copilot premium requests and Gemini daily quotas, each with a reset countdown. Alerts at any percent, like 90 or 98. Sign in on each service's own page; it stays in your Keychain, no UsageNow server. 24-hour free trial, then one-time unlock."
+  },
+  {
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "lang": "en",
+   "scenario": "同時有工作 Max 和個人 Pro 帳號、不知道哪個先重置的人（Reddit showcase／X）",
+   "ct": "claudeusagem_en_2",
+   "text": "Work Max plan plus a personal Pro account, never sure which resets first? UsageNow lists every account side by side and sorts by 5-hour reset, weekly reset or usage. Widgets flip through all your accounts; Apple Watch complications show what's left. 50 interface languages, switchable in Settings. Every feature free for 24 hours, then one one-time unlock, no subscription. Indie app, not affiliated with any AI company."
+  },
+  {
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "lang": "ja",
+   "scenario": "日本 X／Zenn：每天用 Claude Code 的工程師撞到週間上限",
+   "ct": "claudeusagem_ja_3",
+   "text": "5時間枠はまだ余裕があるのに、先に週間制限に当たって作業が止まる。Claude Code を毎日使う人なら覚えがあるはず。UsageNow は Claude の5時間・週間制限（モデル別の週間上限も）、Codex、Copilot のプレミアムリクエスト、Gemini の日次クォータを、リセットまでのカウントダウン付きでウィジェットに表示します。90%や98%など好きな値でアラートを作成可能。ログインは各サービスの公式ページで、情報は端末のキーチェーンに保存、UsageNow のサーバーはありません。24時間無料で全機能を試せて、その後は買い切り。各社と提携のない個人開発アプリです。"
+  },
+  {
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "lang": "zh-Hant",
+   "scenario": "台灣 Threads 工程師圈：寫到一半額度用完（內文不放連結）",
+   "ct": "claudeusagem_zhHant_4",
+   "text": "Claude 跑到一半突然說額度用完，才發現不是 5 小時額度，而是每週額度先見底？UsageNow 讓你在主畫面小工具上看 Claude 5 小時與每週額度（含各模型每週上限）、Codex、Copilot 進階請求和 Gemini 每日配額，還有重置倒數。可以自己設 90% 或 98% 提醒，額度恢復也會通知。登入在各服務的官方頁面，資料存在裝置鑰匙圈，沒有 UsageNow 伺服器。App 內可免費試用 24 小時，之後一次買斷不訂閱。獨立開發，與 Anthropic、OpenAI、GitHub、Microsoft、Google 無關。"
+  }
+ ]
+}

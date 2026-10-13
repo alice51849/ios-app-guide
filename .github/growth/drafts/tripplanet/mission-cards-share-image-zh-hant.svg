@@ -1,0 +1,62 @@
+<!--
+草稿標頭（tripplanet-03）
+用途：Threads／Instagram 用的 1080×1350 預覽圖卡，展示可列印「機場＋機上小任務卡」裡的 4 張；完整 12 張見同資料夾的 airport-flight-mission-cards-*.html。
+發在哪／給誰：店主本人的 Threads、Instagram（輪播第 1 張）。讀者：要帶孩子搭飛機的台灣（繁中版）與日本（日文版）家長。
+發文者：店主 Guan Feng Lai 本人；貼文正文寫明自己是開發者（文案見 mission-cards-share-posts.md）。
+發文規則：社群平台不收 SVG，發文前請用瀏覽器開啟後輸出成 1080×1350 PNG；圖上不放 App 名稱或 App Store 標誌（App 只在貼文結尾提一次）；不改成拍照任務；不加分數或排名。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-label="帶小孩搭飛機：機場與機上小任務卡預覽" xml:lang="zh-Hant" font-family="&#x27;PingFang TC&#x27;,&#x27;Noto Sans TC&#x27;,&#x27;Microsoft JhengHei&#x27;,&#x27;Heiti TC&#x27;,sans-serif">
+<defs><linearGradient id="band" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17213b"/><stop offset="1" stop-color="#303b67"/></linearGradient><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6858d9"/><stop offset="1" stop-color="#f47c67"/></linearGradient><clipPath id="cardclip"><rect width="450" height="340" rx="28"/></clipPath></defs>
+<rect width="1080" height="1350" fill="#fff9ed"/>
+<rect width="1080" height="430" fill="url(#band)"/>
+<rect x="302.0" y="64" width="476" height="56" rx="28" fill="#ffffff" fill-opacity="0.14"/>
+<text x="540" y="101" text-anchor="middle" font-size="28" font-weight="700" fill="#ffe2a7">免費・可列印・不拍照・不填個資</text>
+<text x="540" y="222" text-anchor="middle" font-size="76" font-weight="800" fill="#ffffff">帶小孩搭飛機</text>
+<text x="540" y="312" text-anchor="middle" font-size="60" font-weight="800" fill="#ffffff">機場＋機上 10 張小任務卡</text>
+<text x="540" y="380" text-anchor="middle" font-size="30" font-weight="600" fill="#e8e9f5">另附 2 張空白卡・任何一張都可跳過</text>
+<g transform="translate(60 470)">
+<rect width="450" height="340" rx="28" fill="#fffdf8" stroke="#ddd7ca" stroke-width="2"/>
+<rect width="450" height="14" fill="url(#bar)" clip-path="url(#cardclip)"/>
+<rect x="32" y="40" width="92" height="44" rx="22" fill="#dff4e9"/>
+<text x="52" y="70" font-size="26" font-weight="800" fill="#18213b">機場</text>
+<text x="32" y="134" font-size="40" font-weight="800" fill="#18213b">從目前等待位置</text>
+<text x="32" y="182" font-size="40" font-weight="800" fill="#18213b">看得到的兩種標誌</text>
+<text x="32" y="228" font-size="24" fill="#3c4458">從原地找找看，</text>
+<text x="32" y="262" font-size="24" fill="#3c4458">大人確認安全才指出來</text>
+<text x="32" y="312" font-size="22" font-weight="700" fill="#5f677b">任何一張都可跳過</text>
+</g>
+<g transform="translate(570 470)">
+<rect width="450" height="340" rx="28" fill="#fffdf8" stroke="#ddd7ca" stroke-width="2"/>
+<rect width="450" height="14" fill="url(#bar)" clip-path="url(#cardclip)"/>
+<rect x="32" y="40" width="92" height="44" rx="22" fill="#dff4e9"/>
+<text x="52" y="70" font-size="26" font-weight="800" fill="#18213b">機場</text>
+<text x="32" y="134" font-size="40" font-weight="800" fill="#18213b">一件有輪子的物品</text>
+<text x="32" y="180" font-size="24" fill="#3c4458">從原地找找看，</text>
+<text x="32" y="214" font-size="24" fill="#3c4458">大人確認安全才指出來</text>
+<text x="32" y="312" font-size="22" font-weight="700" fill="#5f677b">任何一張都可跳過</text>
+</g>
+<g transform="translate(60 835)">
+<rect width="450" height="340" rx="28" fill="#fffdf8" stroke="#ddd7ca" stroke-width="2"/>
+<rect width="450" height="14" fill="url(#bar)" clip-path="url(#cardclip)"/>
+<rect x="32" y="40" width="92" height="44" rx="22" fill="#dff4e9"/>
+<text x="52" y="70" font-size="26" font-weight="800" fill="#18213b">機上</text>
+<text x="32" y="134" font-size="40" font-weight="800" fill="#18213b">一件可以折疊的物品</text>
+<text x="32" y="180" font-size="24" fill="#3c4458">想一個顏色、形狀或聲音，</text>
+<text x="32" y="214" font-size="24" fill="#3c4458">再小聲說給大人聽</text>
+<text x="32" y="312" font-size="22" font-weight="700" fill="#5f677b">任何一張都可跳過</text>
+</g>
+<g transform="translate(570 835)">
+<rect width="450" height="340" rx="28" fill="#fffdf8" stroke="#ddd7ca" stroke-width="2"/>
+<rect width="450" height="14" fill="url(#bar)" clip-path="url(#cardclip)"/>
+<rect x="32" y="40" width="92" height="44" rx="22" fill="#dff4e9"/>
+<text x="52" y="70" font-size="26" font-weight="800" fill="#18213b">機上</text>
+<text x="32" y="134" font-size="40" font-weight="800" fill="#18213b">看得到天空時，</text>
+<text x="32" y="182" font-size="40" font-weight="800" fill="#18213b">一朵雲的形狀</text>
+<text x="32" y="228" font-size="24" fill="#3c4458">想一個顏色、形狀或聲音，</text>
+<text x="32" y="262" font-size="24" fill="#3c4458">再小聲說給大人聽</text>
+<text x="32" y="312" font-size="22" font-weight="700" fill="#5f677b">任何一張都可跳過</text>
+</g>
+<line x1="60" y1="1200" x2="1020" y2="1200" stroke="#ddd7ca" stroke-width="2" stroke-dasharray="10 10"/>
+<text x="540" y="1252" text-anchor="middle" font-size="28" font-weight="700" fill="#18213b">大人決定何時拿出來・機組與安檢人員的指示永遠優先</text>
+<text x="540" y="1302" text-anchor="middle" font-size="24" fill="#5f677b">Lumi Studio 製作｜卡片文字 CC BY 4.0</text>
+</svg>

@@ -1,0 +1,117 @@
+<!doctype html>
+<!--
+  Lumi 字母星球 Pro：給幼兒園／安親班英文老師的一頁說明（lumiletterspro-04）
+  用途：附在寄給幼兒園、安親班英文老師的信裡（pitch-email-teachers.md），說明「今日學習單」與四大能力分析怎麼用在班上。Pro 在搜尋端沒有購買理由，老師與買斷派家長是唯一有效的族群。
+  給誰：幼兒園英文老師、安親班與兒童美語班老師、主任。
+  誰寄出：店主 Guan Feng Lai，以 Lumi Studio 名義、用本人信箱寄出；頁內已寫明是開發者本人製作。
+  規則：兩格截圖由店主提供（今日學習單 PDF 樣張、家長專區四大能力畫面），不可出現孩子姓名或照片；不附回饋或交換條件；老師試用代碼（lumiletterspro-03）尚未產生，不要提。
+  寄前必做：在 App 內實測一次「老師先在自己的裝置練當天字母 → 匯出今日學習單」的流程，確認學習單確實只帶入當天練過的字母；若不是，刪掉「一個可行的課堂用法」的第一點。
+  事實依據：letters_pro_full.json zh-Hant：字母名→字母音→開頭音、結尾音、中間音→看圖拼讀；家長專區四大能力（字母認讀、字母順序、語音覺識、看圖拼讀）；一鍵匯出 PDF「今日學習單」（當天練到的字母描寫格與十字輔助線）；ABC 字母樂園 26 個字母大小寫描寫；字母挑戰；14 顆星球、12 種題型；26 位字母夥伴；每日挑戰與限時競賽；一次買斷、無訂閱、無廣告、無誘導內購、不收集個資、進度存本機、可離線；兒童友善字體與溫柔語音。letters_lite_full.json：免費下載先玩、一次購買解鎖、購買入口在家長關卡後、解鎖後 26 字母／14 星球／12 題型／四大能力／PDF 學習單。50 種介面語言、App 內切換（店主確認）。免費網頁工具網址 2026-10-13 實測可開。
+  不能寫：價格數字；Lite 免費範圍（A 或 A–D，ASC 未定）；「和英語系幼兒園一樣的教學順序」這類無法佐證的說法；評分、排名、「最好」；其他 App 名稱。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>給英文老師的一頁說明</title>
+<style id="pagesize">@page { size: A4; margin: 10mm; }</style>
+<style>
+:root{--ink:#1c1d24;--muted:#5b606c;--line:#dcdee6;--soft:#f5f6fa;--accent:#c2410c;--accent-soft:#fff0e6;--pw:190mm;--ph:277mm}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e9eaf0;color:var(--ink);font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px}
+.bar label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.bar select,.bar button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.bar button{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.note{max-width:820px;margin:12px auto 0;padding:0 16px;color:var(--muted);font-size:13px;line-height:1.6}
+.wrap{padding:16px 0 40px}
+.page{width:var(--pw);height:var(--ph);margin:0 auto;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);position:relative;overflow:hidden;zoom:var(--z,1)}
+.pad{padding:8mm 9mm 0}
+.eyebrow{display:inline-block;font-size:3.1mm;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:.8mm 2.4mm;border-radius:1.5mm}
+h1{font-size:6.6mm;line-height:1.25;margin:2mm 0 1.5mm}
+.sub{font-size:3.1mm;color:var(--muted);margin:0 0 3mm}
+.intro{font-size:3.5mm;line-height:1.6;margin:0 0 3.5mm;padding:2.5mm 3.5mm;background:var(--soft);border-left:1mm solid var(--accent);border-radius:1mm}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:3mm;margin-bottom:3.5mm}
+.shot{border:.4mm dashed #b8bccb;border-radius:2mm;height:46mm;position:relative;cursor:pointer;background:#fbfbfd;overflow:hidden;text-align:center}
+.shot img[hidden],.shot input{display:none}
+.shot img{position:absolute;inset:0;width:100%;height:calc(100% - 8mm);object-fit:contain;background:#fff}
+.shot .ph{padding:6mm 4mm 0;font-size:3.1mm;color:var(--muted);line-height:1.5}
+.shot .ph b{display:block;font-size:3.5mm;color:var(--ink);margin-bottom:1mm}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;height:8mm;line-height:3.6mm;padding:.6mm 2mm;font-size:2.9mm;background:var(--accent-soft);color:var(--ink)}
+.shot.filled{border-style:solid;border-color:var(--line);cursor:default}
+.shot.filled .ph{display:none}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:6mm;align-items:start}
+.sec{break-inside:avoid;margin:0 0 3.2mm}
+.sec h2{font-size:3.9mm;margin:0 0 1.2mm;color:var(--accent)}
+.sec p,.sec li{font-size:3.25mm;line-height:1.55;margin:0}
+.sec ul{margin:0;padding-left:4.2mm}
+.sec li{margin:0 0 .4mm}
+.url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:2.7mm;color:var(--muted);word-break:break-all}
+.foot{position:absolute;left:9mm;right:9mm;bottom:5mm;border-top:.3mm solid var(--line);padding-top:1.6mm;font-size:2.9mm;color:var(--muted);display:flex;justify-content:space-between;gap:4mm;line-height:1.45}
+.fill{background:#fff3a6;outline:1px dashed #d4b400;padding:0 .6mm}
+body.letter .pad{zoom:.93}
+body.hideempty .shot:not(.filled){visibility:hidden}
+body.hideempty .shots.allempty{display:none}
+@media print{
+  html,body{background:#fff}
+  .bar,.note{display:none}
+  .wrap{padding:0}
+  .page{box-shadow:none;zoom:1!important}
+  .fill{background:none;outline:none;padding:0}
+  .shot{cursor:default}
+}
+</style>
+</head>
+<body>
+<div class="bar"><strong>給英文老師的一頁說明</strong>
+<label>紙張 <select id="paper"><option value="a4">A4</option><option value="letter">Letter</option></select></label>
+<label><input type="checkbox" id="hideempty" checked> 列印時隱藏沒放截圖的方框</label>
+<button type="button" onclick="window.print()">列印／另存 PDF</button></div>
+<p class="note">點虛線方框可以放入截圖（圖檔只在你的瀏覽器裡顯示，不會上傳）。黃色底的文字可以直接點進去修改，寄出前請填好。列印請選縮放 100%、勾選「背景圖形」。</p>
+<div class="wrap"><section class="page"><div class="pad">
+<span class="eyebrow">給幼兒園、安親班英文老師</span>
+<h1>Lumi 字母星球 Pro：自然發音＋可列印的今日學習單</h1>
+<p class="sub">製作：Lumi Studio・Guan Feng Lai（App 開發者本人）。這一頁說明 App 能做什麼、不能做什麼，方便老師自己判斷。</p>
+<p class="intro">給 3–7 歲孩子的自然發音 App，順序是：先聽字母名與字母音，再練開頭音、結尾音、中間音，最後看圖拼讀。一次買斷，沒有訂閱、沒有內購、沒有廣告；不收集個人資料，進度只存在裝置裡，可以離線使用。</p>
+<div class="shots">
+<div class="shot"><input type="file" accept="image/*" hidden><img alt="" hidden><div class="ph"><b>截圖：今日學習單 PDF 樣張</b>點這裡放入 App 匯出的學習單</div><div class="cap">今日學習單：當天練到的字母描寫格，含十字輔助線</div></div>
+<div class="shot"><input type="file" accept="image/*" hidden><img alt="" hidden><div class="ph"><b>截圖：四大能力</b>點這裡放入家長專區的能力分析畫面</div><div class="cap">四大能力：字母認讀、字母順序、語音覺識、看圖拼讀</div></div>
+</div>
+<div class="cols">
+<div class="col">
+<div class="sec"><h2>孩子會玩到什麼</h2><ul><li><b>ABC 字母樂園</b>：26 個字母大小寫描寫，真實筆順、十字輔助線</li><li><b>字母挑戰</b>：聽聲音選字母，把音和形連起來</li><li><b>星球闖關</b>：14 顆星球、12 種題型，包括聽音、看圖找開頭與結尾音、大小寫配對、補字母、上一個與下一個字母</li><li><b>26 位字母夥伴</b>：完成描寫與挑戰才能收集</li><li><b>每日挑戰與限時競賽</b></li></ul></div>
+<div class="sec"><h2>老師用得到的兩樣東西</h2><ul><li><b>今日學習單</b>：一鍵匯出 PDF，自動帶入當天練到的字母描寫格與十字輔助線，可直接列印</li><li><b>四大能力</b>：家長專區把表現拆成字母認讀、字母順序、語音覺識、看圖拼讀，強項和待加強一眼看出</li></ul></div>
+<div class="sec"><h2>家長在意的事</h2><ul><li>一次買斷，沒有訂閱、沒有自動續扣、沒有內購</li><li>完全沒有廣告；不收集個資，進度只存在本機，可離線</li><li>介面有 50 種語言，可在 App 內切換，新住民家長也看得懂選單；練的仍是英文字母和發音</li></ul></div>
+<div class="sec"><h2>我的承諾</h2><p>不以任何回饋交換推薦、轉發或評分；老師不需要回信，也不需要告訴我是否使用。</p></div>
+</div>
+<div class="col">
+<div class="sec"><h2>一個可行的課堂用法</h2><ul><li>學習單會帶入這台裝置當天練過的字母：老師可以先在自己的裝置上練當天要教的字母，再匯出列印給全班</li><li>回家作業：一張學習單，描兩次、自己寫一次</li><li>和家長溝通：用四大能力說明孩子目前卡在哪一類</li></ul></div>
+<div class="sec"><h2>兩個版本怎麼選</h2><p><b>Lumi 字母星球 Lite</b>：免費下載先玩，一次購買解鎖全部，購買入口在家長關卡後面。<b>Lumi 字母星球 Pro</b>：一次付費，裡面沒有任何購買入口。依兩款的商店說明，Lite 解鎖後與 Pro 的主要內容相同（26 個字母、14 顆星球、12 種題型、四大能力、PDF 學習單）。班上或安親班共用裝置、不想出現任何購買畫面，選 Pro；家長想先試，用 Lite。</p></div>
+<div class="sec"><h2>不用 App 也行</h2><p>免費網頁工具「Letter Tracing Worksheet Generator」（英文介面，也是我做的）：輸入任意字母（一張最多 12 個），選大寫、小寫或兩者，三種描寫樣式，直接列印，不需要帳號。<br><span class="url">open.cait518.cc/ios-app-guide/tools/letter-tracing-worksheet.html</span></p></div>
+</div>
+</div></div>
+<div class="foot"><span>聯絡：<span class="fill" contenteditable="true">【寄前填入：店主聯絡信箱】</span>｜App Store 搜尋「Lumi 字母星球 Pro」</span><span>本頁由開發者本人製作</span></div>
+</section></div>
+<script>
+(function(){
+  var sizes={a4:{w:190,h:277,css:"A4"},letter:{w:195.9,h:259.4,css:"letter"}};
+  var paper=document.getElementById("paper"),root=document.documentElement,body=document.body;
+  function fit(){var s=sizes[paper.value];body.classList.toggle("letter",paper.value==="letter");root.style.setProperty("--pw",s.w+"mm");root.style.setProperty("--ph",s.h+"mm");
+    document.getElementById("pagesize").textContent="@page { size: "+s.css+"; margin: 10mm; }";
+    var px=s.w*96/25.4,avail=Math.min(window.innerWidth-24,px);root.style.setProperty("--z",(avail/px).toFixed(3));}
+  paper.addEventListener("change",fit);window.addEventListener("resize",fit);
+  window.addEventListener("beforeprint",function(){root.style.setProperty("--z","1")});window.addEventListener("afterprint",fit);
+  var he=document.getElementById("hideempty");function u(){body.classList.toggle("hideempty",he.checked);
+    var row=document.querySelector(".shots");if(row){row.classList.toggle("allempty",!row.querySelector(".shot.filled"));}}
+  he.addEventListener("change",u);
+  Array.prototype.forEach.call(document.querySelectorAll(".shot"),function(box){
+    var input=box.querySelector("input"),img=box.querySelector("img");
+    box.addEventListener("click",function(e){if(e.target!==input)input.click();});
+    input.addEventListener("change",function(){var f=input.files&&input.files[0];if(!f)return;var r=new FileReader();
+      r.onload=function(){img.src=r.result;img.hidden=false;box.classList.add("filled");u();};r.readAsDataURL(f);});
+  });
+  fit();u();
+})();
+</script>
+</body>
+</html>

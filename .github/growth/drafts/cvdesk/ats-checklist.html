@@ -1,0 +1,183 @@
+<!doctype html>
+<!--
+  用途：cvdesk-03「ATS 友善格式 checklist」單頁（zh-Hant／id／th／en），作為 CV Desk 所有外宣的落地頁。方法為主，App 只列為選項之一。
+  對象：投遞履歷的求職者；印尼（cv ats）、泰國（เรซูเม่ ats）、台灣（投外商英文履歷）、英文市場。
+  發布者：店主 Guan Feng Lai 以本人名義公開（頁尾已揭露作者是 CV Desk 開發者）。
+  發布規則：只發這一頁，不做模板量產或按職業／城市複製；不加「最佳」「第一」等排名用語；不加任何「X% 履歷被刷掉」這類無出處數字；
+           頁面可放在官網或 GitHub Pages，社群貼文只把它當連結放在留言或簡介；若之後商店文案（價格、功能）改了，先改這頁再發文。
+  事實依據：CV Desk App Store 商店文案（2026-10-13 公開 lookup）；50 種介面語言、App 內切換為店主確認。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATS Resume Checklist</title>
+<meta name="description" content="A one-page, tool-neutral checklist for resumes that applicant tracking systems can read, in Traditional Chinese, Indonesian, Thai and English.">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1d1d1f; --muted: #5c5c63; --line: #dcd8cf; --accent: #2f5d8a; --card: #ffffff; --note: #f2efe7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #ececef; --muted: #a3a3ab; --line: #34343a; --accent: #8db8e6; --card: #1c1c20; --note: #222228; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #ececef; --muted: #a3a3ab; --line: #34343a; --accent: #8db8e6; --card: #1c1c20; --note: #222228; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Noto Sans Thai", "Noto Sans", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav.langs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  nav.langs a { color: var(--accent); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+  section.lang { border-top: 1px solid var(--line); padding-top: 24px; margin-top: 24px; }
+  h1 { font-size: 26px; line-height: 1.3; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 22px 0 8px; color: var(--accent); }
+  p.lede { color: var(--muted); margin: 0 0 8px; }
+  ol.check { list-style: none; counter-reset: item; padding: 0; margin: 0; }
+  ol.check li { counter-increment: item; position: relative; padding: 10px 12px 10px 48px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 8px; }
+  ol.check li::before { content: counter(item); position: absolute; left: 12px; top: 10px; width: 24px; height: 24px; border: 2px solid var(--accent); border-radius: 6px; font-size: 12px; line-height: 20px; text-align: center; color: var(--accent); font-weight: 600; }
+  .tool, .limits { background: var(--note); border-radius: 10px; padding: 12px 14px; margin-top: 16px; font-size: 15px; }
+  .limits { color: var(--muted); }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+  code { font-size: 14px; }
+  @media print {
+    body { background: #fff; color: #000; }
+    nav.langs { display: none; }
+    section.lang { break-before: page; border: 0; margin: 0; }
+    section.lang:first-of-type { break-before: auto; }
+    ol.check li { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Language">
+  <a href="#zh-Hant" hreflang="zh-Hant">中文</a>
+  <a href="#id" hreflang="id">Bahasa Indonesia</a>
+  <a href="#th" hreflang="th">ภาษาไทย</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+
+<section class="lang" id="zh-Hant" lang="zh-Hant">
+  <h1>ATS 友善履歷檢查清單</h1>
+  <p class="lede">投遞前花五分鐘逐項打勾。用什麼工具做履歷都適用。</p>
+  <h2>版面</h2>
+  <ol class="check">
+    <li>單欄、由上到下。雙欄、表格、文字方塊可能被讀成錯亂的順序。</li>
+    <li>姓名、電話、Email 寫在內文最上方，不要只放在頁首／頁尾或圖片裡。</li>
+    <li>不用技能進度條、星等、圖示、圖表；能力改用文字寫，例如「Excel：樞紐分析、VLOOKUP」。</li>
+    <li>用常見字型，內文約 10–12 pt，圖片裡不放文字。</li>
+  </ol>
+  <h2>標題與內容</h2>
+  <ol class="check" style="counter-reset: item 4">
+    <li>段落標題用標準名稱：工作經歷、學歷、技能、證照（投英文職缺用 Work Experience、Education、Skills、Certifications）。</li>
+    <li>每段經歷寫：職稱、公司、城市、起訖年月，日期格式全份一致。</li>
+    <li>讀職缺說明：你真的具備的技能，若職缺上有寫，就用同樣的說法。縮寫第一次寫全名，例如 Search Engine Optimization (SEO)。不要用白色字藏關鍵字，也不要列你不會的技能。</li>
+  </ol>
+  <h2>檔案</h2>
+  <ol class="check" style="counter-reset: item 7">
+    <li>照職缺要求的格式交。沒指定時，文字型 PDF 或 .docx 都常見；掃描成圖片的 PDF 讀不到文字。</li>
+    <li>自我檢查：打開 PDF，全選、複製、貼到純文字備忘錄。內容齊全、順序正確、沒有亂碼嗎？</li>
+    <li>檔名清楚：<code>姓名-應徵職位-Resume.pdf</code>。</li>
+  </ol>
+  <h2>照片</h2>
+  <ol class="check" style="counter-reset: item 10">
+    <li>有些公司要照片，有些不要，照職缺說明。要放就小小放在上方，不要讓文字壓在照片上。</li>
+  </ol>
+  <p class="tool">上面每一項用 Word、Google 文件或任何編輯器都做得到。如果你想在 iPhone 上完成，CV Desk（我是開發者）是其中一個選項：裝置端 0–100 ATS 分數與可點的修正建議（是估算，不是判決），匯出單欄 PDF 與可編輯 .docx。建立與預覽不需購買，匯出無浮水印版本是一次性解鎖，不訂閱。介面 50 種語言，App 內就能切換。</p>
+  <p class="limits">沒有任何清單或 App 能保證某家公司的系統會怎麼讀你的履歷。各系統不同，有疑問時以徵才公司的說明為準。</p>
+</section>
+
+<section class="lang" id="id" lang="id">
+  <h1>Checklist CV ramah ATS</h1>
+  <p class="lede">Lima menit sebelum melamar, centang satu per satu. Berlaku untuk CV yang dibuat dengan alat apa pun.</p>
+  <h2>Tata letak</h2>
+  <ol class="check">
+    <li>Satu kolom, dibaca dari atas ke bawah. Dua kolom, tabel, dan kotak teks bisa terbaca tidak berurutan.</li>
+    <li>Tulis nama, nomor HP, dan email di badan teks paling atas, jangan hanya di header/footer halaman atau di dalam gambar.</li>
+    <li>Tanpa bar keahlian, bintang, ikon, atau grafik. Tulis keahlian dengan kata-kata, misalnya "Excel: pivot table, VLOOKUP".</li>
+    <li>Font umum, ukuran teks isi sekitar 10–12 pt, tidak ada teks di dalam gambar.</li>
+  </ol>
+  <h2>Judul &amp; isi</h2>
+  <ol class="check" style="counter-reset: item 4">
+    <li>Judul bagian standar: Pengalaman Kerja, Pendidikan, Keahlian, Sertifikat (atau Work Experience, Education, Skills bila melamar dalam bahasa Inggris).</li>
+    <li>Tiap pengalaman: jabatan, nama perusahaan/instansi, kota, bulan dan tahun mulai–selesai, dengan format tanggal yang sama. PKL dan magang juga dihitung.</li>
+    <li>Baca iklan lowongannya. Jika keahlian yang benar-benar kamu punya disebut di sana, pakai kata yang sama. Tulis kepanjangan singkatan sekali, misalnya Search Engine Optimization (SEO). Jangan sembunyikan kata kunci dengan teks putih dan jangan menulis keahlian yang tidak kamu kuasai.</li>
+  </ol>
+  <h2>Berkas</h2>
+  <ol class="check" style="counter-reset: item 7">
+    <li>Kirim format yang diminta lowongan. Kalau tidak disebut, PDF berbasis teks atau .docx sama-sama umum; PDF hasil scan (gambar saja) tidak terbaca sebagai teks.</li>
+    <li>Tes sendiri: buka PDF, pilih semua, salin, tempel ke catatan teks biasa. Semua ada, urutannya benar, tanpa huruf aneh?</li>
+    <li>Nama file jelas: <code>Nama-Lengkap-Posisi-CV.pdf</code>.</li>
+  </ol>
+  <h2>Foto</h2>
+  <ol class="check" style="counter-reset: item 10">
+    <li>Ada perusahaan yang meminta pas foto, ada yang tidak. Ikuti iklan lowongan. Kalau dipasang, taruh kecil di bagian atas dan jangan menumpuk teks di atasnya.</li>
+  </ol>
+  <p class="tool">Semua langkah di atas bisa dikerjakan di Word, Google Docs, atau editor apa pun. Kalau kamu lebih suka mengerjakannya di iPhone, CV Desk (saya developer-nya) adalah salah satu pilihan: skor ATS 0–100 di perangkat dengan saran yang bisa diketuk (perkiraan, bukan vonis), serta ekspor PDF satu kolom dan .docx yang bisa diedit. Membuat dan pratinjau tanpa membeli; ekspor tanpa watermark dengan buka kunci sekali, tanpa langganan. Tampilannya tersedia dalam 50 bahasa dan bisa diganti di dalam aplikasi.</p>
+  <p class="limits">Tidak ada checklist atau aplikasi yang bisa menjamin cara sistem perusahaan tertentu membaca CV-mu. Sistemnya berbeda-beda; kalau ragu, ikuti petunjuk dari perusahaan.</p>
+</section>
+
+<section class="lang" id="th" lang="th">
+  <h1>เช็กลิสต์เรซูเม่ที่ระบบ ATS อ่านได้</h1>
+  <p class="lede">ใช้เวลาห้านาทีก่อนกดส่ง ติ๊กทีละข้อ ใช้ได้กับเรซูเม่ที่ทำจากเครื่องมือใดก็ได้</p>
+  <h2>เลย์เอาต์</h2>
+  <ol class="check">
+    <li>คอลัมน์เดียว อ่านจากบนลงล่าง เลย์เอาต์สองคอลัมน์ ตาราง และกล่องข้อความ อาจถูกอ่านผิดลำดับ</li>
+    <li>ใส่ชื่อ เบอร์โทร และอีเมลไว้ในเนื้อหาส่วนบนสุด ไม่ใช่แค่ในหัวกระดาษ ท้ายกระดาษ หรือในรูปภาพ</li>
+    <li>ไม่ใช้แถบทักษะ ดาว ไอคอน หรือกราฟ เขียนทักษะเป็นคำแทน เช่น "Excel: Pivot Table, VLOOKUP"</li>
+    <li>ใช้ฟอนต์ทั่วไป ขนาดเนื้อหาประมาณ 10–12 pt และไม่มีข้อความอยู่ในรูปภาพ</li>
+  </ol>
+  <h2>หัวข้อและเนื้อหา</h2>
+  <ol class="check" style="counter-reset: item 4">
+    <li>ใช้หัวข้อมาตรฐาน: ประสบการณ์ทำงาน การศึกษา ทักษะ ใบรับรอง (หรือ Work Experience, Education, Skills เมื่อสมัครเป็นภาษาอังกฤษ)</li>
+    <li>แต่ละตำแหน่งเขียน: ชื่อตำแหน่ง องค์กร เมือง เดือนและปีที่เริ่มและสิ้นสุด ใช้รูปแบบวันที่เดียวกันทั้งไฟล์</li>
+    <li>อ่านประกาศรับสมัคร ถ้าทักษะที่คุณมีจริงถูกเขียนไว้ในประกาศ ให้ใช้คำเดียวกัน เขียนคำย่อแบบเต็มหนึ่งครั้ง เช่น Search Engine Optimization (SEO) อย่าซ่อนคีย์เวิร์ดด้วยตัวอักษรสีขาว และอย่าใส่ทักษะที่ไม่มีจริง</li>
+  </ol>
+  <h2>ไฟล์</h2>
+  <ol class="check" style="counter-reset: item 7">
+    <li>ส่งไฟล์ตามรูปแบบที่ประกาศกำหนด ถ้าไม่ได้ระบุ PDF ที่เป็นข้อความหรือ .docx ใช้กันทั่วไปทั้งคู่ ส่วน PDF ที่สแกนเป็นภาพจะอ่านเป็นข้อความไม่ได้</li>
+    <li>ทดสอบเอง: เปิด PDF เลือกทั้งหมด คัดลอก แล้ววางในโน้ตข้อความธรรมดา ข้อมูลครบ ลำดับถูก และไม่มีตัวอักษรเพี้ยนไหม</li>
+    <li>ตั้งชื่อไฟล์ให้ชัด: <code>ชื่อ-นามสกุล-ตำแหน่ง-Resume.pdf</code></li>
+  </ol>
+  <h2>รูปถ่าย</h2>
+  <ol class="check" style="counter-reset: item 10">
+    <li>บางบริษัทขอรูปถ่าย บางแห่งไม่ต้องการ ให้ทำตามประกาศ ถ้าใส่ ให้วางขนาดเล็กไว้ด้านบน และอย่าวางข้อความทับรูป</li>
+  </ol>
+  <p class="tool">ทุกข้อด้านบนทำได้ใน Word, Google เอกสาร หรือโปรแกรมใดก็ได้ ถ้าอยากทำบน iPhone CV Desk (เราเป็นผู้พัฒนา) เป็นหนึ่งในตัวเลือก: คะแนน ATS 0–100 บนเครื่อง พร้อมคำแนะนำที่แตะแก้ได้ (เป็นค่าประมาณ ไม่ใช่คำตัดสิน) ส่งออก PDF คอลัมน์เดียวและ .docx ที่แก้ไขได้ สร้างและดูตัวอย่างได้โดยไม่ต้องซื้อ ส่งออกแบบไม่มีลายน้ำด้วยการปลดล็อกครั้งเดียว ไม่มีสมัครสมาชิก อินเทอร์เฟซมี 50 ภาษา เปลี่ยนได้ในแอป</p>
+  <p class="limits">ไม่มีเช็กลิสต์หรือแอปใดรับประกันได้ว่าระบบของบริษัทหนึ่ง ๆ จะอ่านเรซูเม่ของคุณอย่างไร ระบบแต่ละแห่งต่างกัน ถ้าไม่แน่ใจ ให้ทำตามคำแนะนำของบริษัท</p>
+</section>
+
+<section class="lang" id="en" lang="en">
+  <h1>ATS-friendly resume checklist</h1>
+  <p class="lede">Five minutes before you hit send, tick each line. Works for a resume made with any tool.</p>
+  <h2>Layout</h2>
+  <ol class="check">
+    <li>One column, top to bottom. Two columns, tables and text boxes can be read out of order.</li>
+    <li>Put your name, phone and email in the body text at the top, not only in the page header or footer, and never only inside an image.</li>
+    <li>No skill bars, star ratings, icons or charts. Write the skill in words: "Excel: pivot tables, VLOOKUP".</li>
+    <li>A common font, body text around 10–12 pt, no text inside images.</li>
+  </ol>
+  <h2>Headings and content</h2>
+  <ol class="check" style="counter-reset: item 4">
+    <li>Standard section headings: Work Experience, Education, Skills, Certifications.</li>
+    <li>Each role: job title, organization, city, start and end month and year, in one consistent date format.</li>
+    <li>Read the job ad. Where a skill you really have is named there, use the same words. Spell out an abbreviation once: Search Engine Optimization (SEO). Never hide keywords in white text, and never list skills you don't have.</li>
+  </ol>
+  <h2>File</h2>
+  <ol class="check" style="counter-reset: item 7">
+    <li>Send the format the ad asks for. If it doesn't say, a text-based PDF or a .docx are both common; a scanned, image-only PDF has no readable text.</li>
+    <li>Self-test: open your PDF, select all, copy, paste into a plain-text note. Is everything there, in the right order, with no garbled characters?</li>
+    <li>A clear file name: <code>Firstname-Lastname-Position-Resume.pdf</code>.</li>
+  </ol>
+  <h2>Photo</h2>
+  <ol class="check" style="counter-reset: item 10">
+    <li>Some employers ask for a photo, others don't. Follow the job ad. If you add one, keep it small at the top and never place text over it.</li>
+  </ol>
+  <p class="tool">Everything above can be done in Word, Google Docs or any editor. If you'd rather do it on an iPhone, CV Desk (I'm its developer) is one option: an on-device 0–100 ATS score with tappable fixes (an estimate, not a verdict), plus single-column PDF and editable .docx export. Building and previewing need no purchase; exporting without a watermark is a one-time unlock, no subscription. Its interface comes in 50 languages, switchable inside the app.</p>
+  <p class="limits">No checklist or app can guarantee how a specific employer's system will read your resume. Systems differ; when in doubt, follow the employer's instructions.</p>
+</section>
+
+<footer>
+  作者：Guan Feng Lai，CV Desk 開發者 · Penulis: Guan Feng Lai, developer CV Desk · ผู้เขียน: Guan Feng Lai ผู้พัฒนา CV Desk · Written by Guan Feng Lai, developer of CV Desk.
+</footer>
+</main>
+</body>
+</html>

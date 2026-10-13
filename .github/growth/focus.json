@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "note": "衝榜目標：成績單每天量這些 App 在所有店面類別榜（免費＋營收）的名次，報告最前面列出離目標名次還差多少。到期自動停止量測。 spotlight_until 之前，Telegram 每日精選的「今日焦點」固定輪播這款的貼文。",
+  "apps": [
+    {
+      "key": "claudeusagemini",
+      "app_id": "6818607603",
+      "genre_id": "6026",
+      "genre": "Developer Tools",
+      "kinds": [
+        "free",
+        "grossing"
+      ],
+      "goal": 3,
+      "since": "2026-10-13",
+      "until": "2026-12-31",
+      "spotlight_until": "2026-10-27"
+    }
+  ]
+}

@@ -209,6 +209,36 @@ class RunTests(unittest.TestCase):
             _fetcher(missing).get_json("https://itunes.apple.com/y")
 
 
+    def test_focus_app_is_measured_in_every_storefront_chart(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "focus.json"
+            path.write_text(json.dumps({"apps": [
+                {"app_id": "6785004775", "genre_id": "6007", "genre": "Productivity",
+                 "kinds": ["free", "grossing", "bogus"], "goal": 3, "until": "2026-12-31"},
+                {"app_id": "6782251621", "genre_id": "6013", "until": "2026-10-01"},
+                {"app_id": "123456789", "genre_id": "6013"},
+            ]}), encoding="utf-8")
+            focus = gs.load_focus(path, today="2026-10-13", app_ids={a.app_id for a in APPS})
+        self.assertEqual([("6785004775", ["free", "grossing"])],
+                         [(f["app_id"], f["kinds"]) for f in focus])
+        state = gs.empty_state()
+        outcome = gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+                         now=NOW, search_budget=0, chart_budget=0, log=lambda *_: None, focus=focus)
+        self.assertEqual(6, outcome["focus_charts"])
+        today = state["focus"]["6785004775"][-1]
+        self.assertEqual("2026-10-13", today["date"])
+        self.assertEqual({f"{cc}|{kind}": 2 for cc in ("jp", "si", "us") for kind in ("free", "grossing")},
+                         today["positions"])
+        later = NOW + dt.timedelta(days=1)
+        gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+               now=later, search_budget=0, chart_budget=0, log=lambda *_: None, focus=focus)
+        self.assertEqual(2, len(state["focus"]["6785004775"]))
+        report = gs.build_report(APPS, state, outcome, now=later, focus=focus)
+        self.assertIn("## 衝榜目標：Mochi（Productivity 榜前 3 名）", report)
+        self.assertIn("達標（前 3 名）：**6** 個", report)
+        self.assertIn("| US | 營收 | 2 | 2 | — |", report)
+
+
 class ReportTests(unittest.TestCase):
     def _state(self):
         state = gs.empty_state()

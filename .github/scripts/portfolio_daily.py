@@ -84,6 +84,8 @@ GROWTH_DIR = REPO_ROOT / ".github" / "growth"
 SPOTLIGHT_SOURCES = ("fifty-languages-campaign.json", "app-posts.json")
 SPOTLIGHT_LANG = "zh-Hant"
 SPOTLIGHT_TEXT_LIMIT = 600
+# Chart-push targets; while spotlight_until has not passed, they own the spotlight.
+FOCUS_FILE = "focus.json"
 
 # Digest-only display fixes for linkset categories that send readers to the
 # wrong shelf (adult travel/vocabulary Apps listed as kids' learning, a Wi-Fi
@@ -459,8 +461,21 @@ def load_spotlight_posts(apps, directory=None):
             ):
                 continue
             seen.add(text)
-            posts.append({"name": names[app_id], "text": text})
+            posts.append({"app_id": app_id, "name": names[app_id], "text": text})
     return posts
+
+
+def spotlight_focus_ids(day, directory=None):
+    path = Path(directory or GROWTH_DIR) / FOCUS_FILE
+    if not path.is_file():
+        return set()
+    with path.open(encoding="utf-8") as source:
+        document = json.load(source)
+    return {
+        str(row.get("app_id") or "")
+        for row in document.get("apps") or []
+        if str(row.get("spotlight_until") or "") >= day.isoformat()
+    }
 
 
 def spotlight_block(apps, today=None, directory=None):
@@ -468,6 +483,8 @@ def spotlight_block(apps, today=None, directory=None):
     if not posts:
         return ""
     day = today or dt.datetime.now(dt.timezone.utc).date()
+    focus_ids = spotlight_focus_ids(day, directory)
+    posts = [post for post in posts if post["app_id"] in focus_ids] or posts
     post = posts[day.toordinal() % len(posts)]
     # No extra link: the digest keeps exactly one tracked link per App.
     return f"🔦 今日焦點｜{post['name']}\n{post['text']}\n（下載連結在下方清單）\n\n"

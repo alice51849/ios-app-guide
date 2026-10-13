@@ -880,6 +880,25 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             self.assertTrue(all("今日焦點" not in m.text for m in messages[1:]))
             self.assertTrue(all(len(m.text) <= portfolio_daily.TELEGRAM_LIMIT for m in messages))
 
+    def test_telegram_spotlight_prefers_focus_app_until_its_window_ends(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            app = self.apps[0]
+            other = self.apps[1]
+            Path(tmp, "app-posts.json").write_text(json.dumps({"posts": [
+                {"app_id": app.app_id, "lang": "zh-Hant", "ct": "spot_a", "text": "故事 A"},
+                {"app_id": other.app_id, "lang": "zh-Hant", "ct": "spot_b", "text": "衝榜 B1"},
+                {"app_id": other.app_id, "lang": "zh-Hant", "ct": "spot_c", "text": "衝榜 B2"},
+            ]}), encoding="utf-8")
+            Path(tmp, "focus.json").write_text(json.dumps({"apps": [
+                {"app_id": other.app_id, "spotlight_until": "2026-10-27"},
+            ]}), encoding="utf-8")
+            for offset in range(4):
+                day = dt.date(2026, 10, 14) + dt.timedelta(days=offset)
+                self.assertIn("衝榜 B", portfolio_daily.spotlight_block(self.apps, day, tmp))
+            after = portfolio_daily.spotlight_block(self.apps, dt.date(2026, 10, 28), tmp)
+            self.assertTrue("故事 A" in after or "衝榜 B" in after)
+            self.assertEqual(set(), portfolio_daily.spotlight_focus_ids(dt.date(2026, 10, 28), tmp))
+
     def test_current_live_registry_is_covered_without_a_static_post_pool(self):
         selected_ids = {app.app_id for app in self.apps}
         self.assertEqual(

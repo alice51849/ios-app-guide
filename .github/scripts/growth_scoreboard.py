@@ -39,6 +39,9 @@ STOREFRONTS_PATH = REPO_ROOT / "_engine" / "geo" / "locale_storefronts.json"
 KEY2DATA_SOURCE = REPO_ROOT / "_engine" / "geo" / "build_pages_i18n.py"
 # Reviewed "what users really type" terms per App and locale; measured first.
 CHALLENGE_TERMS_PATH = REPO_ROOT / ".github" / "growth" / "challenge-terms.json"
+# Chart-push targets: every storefront's category chart, measured daily.
+FOCUS_PATH = REPO_ROOT / ".github" / "growth" / "focus.json"
+FOCUS_KINDS = frozenset(("free", "paid", "grossing"))
 REPOSITORY = "alice51849/ios-app-guide"
 ISSUE_TITLE = "growth-scoreboard"
 ISSUE_LABEL = "growth-scoreboard"
@@ -140,6 +143,35 @@ def load_challenge_terms(path=CHALLENGE_TERMS_PATH, limit=5):
             if cleaned:
                 terms.setdefault(str(app_key), {})[str(locale)] = cleaned
     return terms
+
+
+def load_focus(path=FOCUS_PATH, today=None, app_ids=None):
+    """Active chart-push targets from focus.json (expired or unknown ones dropped)."""
+    path = Path(path)
+    if not path.is_file():
+        return []
+    with path.open(encoding="utf-8") as handle:
+        document = json.load(handle)
+    today = today or dt.date.today().isoformat()
+    focus = []
+    for row in document.get("apps") or []:
+        app_id = str(row.get("app_id") or "")
+        genre_id = str(row.get("genre_id") or "")
+        if not APP_ID_RE.fullmatch(app_id) or not genre_id.isdigit():
+            continue
+        if app_ids is not None and app_id not in app_ids:
+            continue
+        if str(row.get("until") or "9999-12-31") < today:
+            continue
+        kinds = [kind for kind in row.get("kinds") or ["free"] if kind in FOCUS_KINDS]
+        focus.append({
+            "app_id": app_id,
+            "genre_id": genre_id,
+            "genre": str(row.get("genre") or ""),
+            "kinds": kinds or ["free"],
+            "goal": int(row.get("goal") or 3),
+        })
+    return focus
 
 
 def build_tasks(apps, storefronts, keywords_by_app, challenge_terms=None):
@@ -327,6 +359,7 @@ def empty_state():
         "ratings_history": [],
         "search": {},
         "charts": {},
+        "focus": {},
     }
 
 
@@ -374,13 +407,34 @@ def previous_total(state, today):
 # ---------------------------------------------------------------- run
 
 
+def measure_focus(focus, countries, state, fetcher, outcome, date, note_error):
+    """Today's position of each focus App in every storefront's category chart."""
+    for target in focus:
+        positions = {}
+        for country in countries:
+            for kind in target["kinds"]:
+                try:
+                    ordered = chart_storefront(fetcher, country, target["genre_id"], kind)
+                except FetchError as error:
+                    note_error(error)
+                    continue
+                outcome["focus_charts"] += 1
+                if target["app_id"] in ordered:
+                    positions[f"{country}|{kind}"] = ordered.index(target["app_id"]) + 1
+        history = state.setdefault("focus", {}).setdefault(target["app_id"], [])
+        history[:] = [row for row in history if row.get("date") != date]
+        history.append({"date": date, "positions": positions})
+        history.sort(key=lambda row: row["date"])
+        del history[:-HISTORY_DAYS]
+
+
 def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
-        search_budget, chart_budget, log=print, challenge_terms=None):
+        search_budget, chart_budget, log=print, challenge_terms=None, focus=None):
     stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     app_ids = {app.app_id for app in apps}
     countries = sorted(set(storefronts.values()))
-    outcome = {"lookups": 0, "searches": 0, "charts": 0, "rate_limited": None,
-               "errors": 0, "charts_unavailable": False}
+    outcome = {"lookups": 0, "searches": 0, "charts": 0, "focus_charts": 0,
+               "rate_limited": None, "errors": 0, "charts_unavailable": False}
     genre_by_app = {}
     tasks = build_tasks(apps, storefronts, keywords_by_app, challenge_terms)
     # A changed task list (new challenge terms, roster or keywords) restarts the
@@ -411,6 +465,9 @@ def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
                 if row["genre_id"]:
                     kind = "free" if row["price"] == 0 else "paid"
                     genre_by_app.setdefault(app_id, (row["genre_id"], row["genre"], kind))
+
+        measure_focus(focus or [], countries, state, fetcher, outcome,
+                      now.date().isoformat(), note_error)
 
         chart_keys = sorted({
             (country, genre_id, genre, kind)
@@ -496,7 +553,43 @@ def opportunities(state, names, limit=25):
     return rows[:limit]
 
 
-def build_report(apps, state, outcome, *, now):
+KIND_ZH = {"free": "免費", "paid": "付費", "grossing": "營收"}
+
+
+def focus_lines(focus, names, state, date):
+    """Chart-push section: where each focus App stands versus its goal."""
+    lines = []
+    for target in focus:
+        history = state.get("focus", {}).get(target["app_id"]) or []
+        today = next((row["positions"] for row in history if row["date"] == date), None)
+        if today is None:
+            continue
+        earlier = [row for row in history if row["date"] < date]
+        before = earlier[-1]["positions"] if earlier else {}
+        goal = target["goal"]
+        name = names.get(target["app_id"], target["app_id"])
+        reached = sorted(key for key, position in today.items() if position <= goal)
+        lines += [
+            f"## 衝榜目標：{_cell(name)}（{_cell(target['genre'])} 榜前 {goal} 名）",
+            "",
+            f"- 今天上榜：**{len(today)}** 個店面榜；達標（前 {goal} 名）：**{len(reached)}** 個"
+            + (f"（{'、'.join(k.split('|')[0].upper() + KIND_ZH.get(k.split('|')[1], '') for k in reached)}）" if reached else ""),
+            "",
+        ]
+        if today:
+            lines += ["| 店面 | 榜 | 今天 | 前次 | 變化 |", "|---|---|---|---|---|"]
+            for key, position in sorted(today.items(), key=lambda item: (item[1], item[0]))[:25]:
+                country, kind = key.split("|")
+                prior = before.get(key)
+                change = "新上榜" if prior is None else (f"{prior - position:+d}" if prior != position else "—")
+                lines.append(f"| {country.upper()} | {KIND_ZH.get(kind, kind)} | {position} | {prior or '—'} | {change} |")
+        else:
+            lines.append(f"今天所有店面的 {_cell(target['genre'])} 榜前 100 名都還沒有它。")
+        lines.append("")
+    return lines
+
+
+def build_report(apps, state, outcome, *, now, focus=None):
     names = {app.app_id: app.name for app in apps}
     app_ids = set(names)
     total = total_ratings(state, app_ids)
@@ -532,6 +625,8 @@ def build_report(apps, state, outcome, *, now):
         lines.append(f"- 本次因 Apple 限流提前停止，進度已保存，下次自動接續（{_cell(outcome['rate_limited'])}）")
     if outcome.get("charts_unavailable"):
         lines.append("- 排行榜 RSS 本次無法取得，下次自動重試")
+    if focus:
+        lines += [""] + focus_lines(focus, names, state, now.date().isoformat())
     lines += ["", "## 已拿到搜尋第 1 名", ""]
     if firsts:
         lines += ["| App | 店面 | 語系 | 關鍵字 |", "|---|---|---|---|"]
@@ -664,6 +759,8 @@ def main(argv=None):
 
     apps, storefronts, keywords, challenge = load_inputs()
     tasks = build_tasks(apps, storefronts, keywords, challenge)
+    now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+    focus = load_focus(today=now.date().isoformat(), app_ids={app.app_id for app in apps})
     if args.plan_only:
         missing = sorted(app.key for app in apps if not keywords.get(app.key))
         print(json.dumps({
@@ -672,19 +769,19 @@ def main(argv=None):
             "storefronts": len(set(storefronts.values())),
             "search_tasks": len(tasks),
             "challenge_tasks": sum(1 for task in tasks if task["source"] == "challenge"),
+            "focus_charts": sum(len(target["kinds"]) for target in focus) * len(set(storefronts.values())),
             "apps_without_keywords": missing,
             "first_tasks": tasks[:5],
         }, ensure_ascii=False, indent=2))
         return 0
 
     state = load_state(args.state)
-    now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     fetcher = Fetcher(delay=args.delay)
     outcome = run(apps, storefronts, keywords, state, fetcher, now=now,
                   search_budget=args.search_budget, chart_budget=args.chart_budget,
-                  challenge_terms=challenge)
+                  challenge_terms=challenge, focus=focus)
     save_state(args.state, state)
-    report = build_report(apps, state, outcome, now=now)
+    report = build_report(apps, state, outcome, now=now, focus=focus)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(report, encoding="utf-8")
     if args.json_out:

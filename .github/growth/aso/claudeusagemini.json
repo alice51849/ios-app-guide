@@ -1,0 +1,4063 @@
+{
+ "app": "claudeusagemini",
+ "app_id": "6818607603",
+ "generated": "2026-10-13",
+ "method": "2026-10-13 量測。主要證據：iTunes Search API（itunes.apple.com/search，limit=200，取 UsageNow 名次與結果數）與 App Store 網頁版搜尋（apps.apple.com/{cc}/iphone/search，伺服器端只回前 12 名，含副標與評分數，用來判斷前 10 名意圖）。iTunes Search API 在本 session 的出口 IP 上被 Apple 嚴格限流（HTTP 403），依指示每次 403 都退避 90 秒、連續 8 次即停，因此結果數（results）只在部分詞有值；source=web-top12 的列 our_rank=null 代表不在前 12 名，results=null 代表未量到。搜尋建議端點 search.itunes.apple.com（MZSearchHints）被本環境出口政策擋下（CONNECT 403），無法取得熱度；改以結果數、前 10 名中 AI 用量追蹤器數量（ai_trackers_top10）、以及競品是否把該詞放在標題／副標作為熱度代理。intent_ok＝前 10 名至少一半是 AI 用量追蹤器。跨語系索引：以 Apple 公布的「App Store 各店面語系」對照表為基礎，再用 iTunes Search 探測（搜尋「usagenow＋只存在某一語系關鍵字欄的字」，含負對照）實測：en-US 在所有探測店面（US、GB、TW、HK、JP、KR、DE、CA、AU）都被索引；en-GB 在 GB、TW、HK、KR、DE、AU 被索引，在 US、JP、CA 不被索引；en-AU 專屬字在 AU 不命中；es-MX、zh-Hant、fr 在 US 被索引；zh-Hans 不在 TW／HK。未測完的店面沿用 Apple 表＋「en-US 到處都有」的實測規律（見 index_map）。因此英文字分三層：A＝en-US（全球核心）、B＝en-GB／en-CA（第二層，GB／EU／TW／HK／KR／CA 用）、C＝en-AU 與輕量語系的剩餘空間（第三層）；es-MX、pt-BR 尾端放 US 用的英文字。跨語系是否會把不同語系的字組成片語未經證實，所以 token、code 等少數英文字刻意保留在 zh-Hant／ja／ko／de 欄位，讓「token 用量」「claude code 制限」這類混合語言搜尋在同一語系內成立。長度以 Python len 與 UTF-16 長度雙重檢查（name／subtitle ≤30、keywords ≤100、逗號後無空白、無與標題／副標重複、英文無單複數重複）。",
+ "index_map": {
+  "US": {
+   "indexed": [
+    "en-US",
+    "es-MX",
+    "zh-Hant",
+    "fr-FR",
+    "ko",
+    "pt-BR",
+    "ru",
+    "vi",
+    "ar-SA",
+    "zh-Hans"
+   ],
+   "measured": "en-US ✓（weekly）、es-MX ✓（cuota）、zh-Hant ✓、fr ✓；en-GB ✗（allowance 不命中）"
+  },
+  "GB": {
+   "indexed": [
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "en-GB ✓、en-US ✓（weekly #77/107，負對照 xyzzyq／cuota 皆不命中）"
+  },
+  "TW": {
+   "indexed": [
+    "zh-Hant",
+    "en-US",
+    "en-GB"
+   ],
+   "measured": "zh-Hant ✓、en-US ✓、en-GB ✓；zh-Hans ✗"
+  },
+  "HK": {
+   "indexed": [
+    "zh-Hant",
+    "en-US",
+    "en-GB"
+   ],
+   "measured": "zh-Hant ✓、en-US ✓、en-GB ✓；zh-Hans ✗"
+  },
+  "JP": {
+   "indexed": [
+    "ja",
+    "en-US"
+   ],
+   "measured": "en-US ✓；en-GB ✗"
+  },
+  "KR": {
+   "indexed": [
+    "ko",
+    "en-US",
+    "en-GB"
+   ],
+   "measured": "en-US ✓、en-GB ✓"
+  },
+  "DE": {
+   "indexed": [
+    "de-DE",
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "en-US ✓、en-GB ✓"
+  },
+  "CA": {
+   "indexed": [
+    "en-CA",
+    "fr-CA",
+    "en-US"
+   ],
+   "measured": "en-US／en-CA ✓（weekly #58/113）；en-GB ✗（allowance 不命中）；en-CA 與 en-US 關鍵字相同，無法單獨驗證 en-CA"
+  },
+  "AU": {
+   "indexed": [
+    "en-AU",
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "en-GB ✓（allowance #97/158）、en-US ✓（weekly #61/125）；en-AU 專屬字 gauge、programmer 都不命中＝目前 en-AU 關鍵字在 AU 沒有被索引（或尚未上線）"
+  },
+  "SG": {
+   "indexed": [
+    "en-GB",
+    "zh-Hans",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表"
+  },
+  "IN": {
+   "indexed": [
+    "en-GB",
+    "hi",
+    "en-US",
+    "gu-IN",
+    "kn-IN",
+    "ml-IN",
+    "mr-IN",
+    "or-IN",
+    "pa-IN",
+    "ta-IN",
+    "te-IN"
+   ],
+   "measured": "未測完；依 Apple 表（en-GB＋hi），印度各語系假設同店面索引"
+  },
+  "FR": {
+   "indexed": [
+    "fr-FR",
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表＋en-US"
+  },
+  "ES": {
+   "indexed": [
+    "es-ES",
+    "ca",
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表＋en-US"
+  },
+  "BR": {
+   "indexed": [
+    "pt-BR",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表"
+  },
+  "MX": {
+   "indexed": [
+    "es-MX",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表"
+  },
+  "IT": {
+   "indexed": [
+    "it",
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表＋en-US"
+  },
+  "NL": {
+   "indexed": [
+    "nl-NL",
+    "en-GB",
+    "en-US"
+   ],
+   "measured": "未測完；依 Apple 表＋en-US"
+  }
+ },
+ "index_probes": [
+  {
+   "country": "AU",
+   "probe": "usagenow allowance",
+   "matched": true,
+   "our_rank": 97,
+   "results": 158,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "AU",
+   "probe": "usagenow gauge",
+   "matched": false,
+   "our_rank": null,
+   "results": 165,
+   "tests_localization": "en-AU"
+  },
+  {
+   "country": "AU",
+   "probe": "usagenow programmer",
+   "matched": false,
+   "our_rank": null,
+   "results": 170,
+   "tests_localization": "?"
+  },
+  {
+   "country": "AU",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 61,
+   "results": 125,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "CA",
+   "probe": "usagenow allowance",
+   "matched": false,
+   "our_rank": null,
+   "results": 168,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "CA",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 58,
+   "results": 113,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "DE",
+   "probe": "usagenow allowance",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "DE",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "DE",
+   "probe": "usagenow xyzzyq",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "(negative control)"
+  },
+  {
+   "country": "GB",
+   "probe": "usagenow allowance",
+   "matched": true,
+   "our_rank": 140,
+   "results": 162,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "GB",
+   "probe": "usagenow cuota",
+   "matched": false,
+   "our_rank": null,
+   "results": 8,
+   "tests_localization": "es-MX/es-ES"
+  },
+  {
+   "country": "GB",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 77,
+   "results": 107,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "GB",
+   "probe": "usagenow xyzzyq",
+   "matched": false,
+   "our_rank": null,
+   "results": 105,
+   "tests_localization": "(negative control)"
+  },
+  {
+   "country": "HK",
+   "probe": "usagenow allowance",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "HK",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "HK",
+   "probe": "usagenow 倒數計時",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "zh-Hant"
+  },
+  {
+   "country": "HK",
+   "probe": "usagenow 倒计时",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "zh-Hans"
+  },
+  {
+   "country": "JP",
+   "probe": "usagenow allowance",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "JP",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "JP",
+   "probe": "usagenow xyzzyq",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "(negative control)"
+  },
+  {
+   "country": "KR",
+   "probe": "usagenow allowance",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "KR",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "TW",
+   "probe": "usagenow allowance",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "TW",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "TW",
+   "probe": "usagenow 倒數計時",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "zh-Hant"
+  },
+  {
+   "country": "TW",
+   "probe": "usagenow 倒计时",
+   "matched": false,
+   "our_rank": null,
+   "results": 0,
+   "tests_localization": "zh-Hans"
+  },
+  {
+   "country": "US",
+   "probe": "usagenow allowance",
+   "matched": false,
+   "our_rank": null,
+   "results": 181,
+   "tests_localization": "en-GB"
+  },
+  {
+   "country": "US",
+   "probe": "usagenow cuota",
+   "matched": true,
+   "our_rank": 2,
+   "results": 11,
+   "tests_localization": "es-MX/es-ES"
+  },
+  {
+   "country": "US",
+   "probe": "usagenow jeton",
+   "matched": true,
+   "our_rank": 1,
+   "results": 3,
+   "tests_localization": "fr-FR/fr-CA"
+  },
+  {
+   "country": "US",
+   "probe": "usagenow weekly",
+   "matched": true,
+   "our_rank": 9,
+   "results": 119,
+   "tests_localization": "en-US (en-CA)"
+  },
+  {
+   "country": "US",
+   "probe": "usagenow 倒數計時",
+   "matched": true,
+   "our_rank": 1,
+   "results": 1,
+   "tests_localization": "zh-Hant"
+  }
+ ],
+ "unreachable": [
+  "search.itunes.apple.com/WebObjects/MZSearchHints.woa（出口政策 CONNECT 403）",
+  "itunes.apple.com/search 間歇性 HTTP 403 限流（已退避並停止，部分詞只有網頁版前 12 名資料）"
+ ],
+ "competitors": [
+  {
+   "id": "6783130074",
+   "name_us": "Limits: AI Usage Tracker",
+   "subtitle_us": "Codex, Claude, Cursor limits",
+   "localized": {
+    "TW": {
+     "name": "Limits: AI Usage Tracker",
+     "subtitle": "開發者工具"
+    },
+    "JP": {
+     "name": "Limits: AI Usage Tracker",
+     "subtitle": "Codex・Claude・Cursorの利用上限"
+    },
+    "KR": {
+     "name": "Limits: AI Usage Tracker",
+     "subtitle": "Codex, Claude, Cursor 한도"
+    },
+    "DE": {
+     "name": "Limits: AI Usage Tracker",
+     "subtitle": "Codex, Claude, Cursor Limits"
+    }
+   },
+   "ratings_us": 39,
+   "rank1_terms": [
+    "AU:ai usage",
+    "AU:claude limit",
+    "AU:copilot usage",
+    "CA:ai usage",
+    "CA:claude limit",
+    "DE:ai limits",
+    "DE:ai usage",
+    "DE:claude limit",
+    "DE:codex usage",
+    "ES:límite claude",
+    "ES:límite de claude",
+    "FR:ai usage",
+    "GB:ai limits",
+    "GB:ai usage",
+    "GB:claude limit",
+    "GB:claude usage limit",
+    "GB:claude weekly limit",
+    "HK:claude limit",
+    "HK:copilot usage",
+    "IN:claude limit",
+    "JP:ai usage",
+    "JP:ai 使用量",
+    "JP:レート制限",
+    "KR:ai usage",
+    "KR:claude 한도",
+    "KR:codex usage",
+    "MX:límite claude",
+    "NL:ai usage tracker",
+    "NL:claude limiet",
+    "SG:ai usage",
+    "SG:claude limit",
+    "TW:claude limit",
+    "US:ai limits",
+    "US:ai usage",
+    "US:ai usage limit",
+    "US:ai usage tracker",
+    "US:claude limit",
+    "US:claude limits",
+    "US:claude usage limit",
+    "US:codex limit"
+   ]
+  },
+  {
+   "id": "6755173244",
+   "name_us": "Usage for Claude",
+   "subtitle_us": "Track subscription usage",
+   "localized": {
+    "TW": {
+     "name": "Usage for Claude",
+     "subtitle": "追蹤訂閱用量"
+    },
+    "JP": {
+     "name": "Usage for Claude",
+     "subtitle": "サブスク利用状況"
+    },
+    "KR": {
+     "name": "Usage for Claude",
+     "subtitle": "구독 사용량 추적"
+    },
+    "DE": {
+     "name": "Usage for Claude",
+     "subtitle": "Abo-Nutzung verfolgen"
+    }
+   },
+   "ratings_us": 5,
+   "rank1_terms": [
+    "AU:claude usage",
+    "AU:claude usage tracker",
+    "BR:claude usage",
+    "BR:uso claude",
+    "BR:uso do claude",
+    "CA:claude usage",
+    "CA:claude usage tracker",
+    "DE:claude nutzung",
+    "DE:claude usage",
+    "ES:claude usage",
+    "FR:claude usage",
+    "FR:claude utilisation",
+    "FR:quota claude",
+    "FR:utilisation claude",
+    "GB:claude usage",
+    "GB:claude usage tracker",
+    "HK:claude usage",
+    "HK:claude 用量",
+    "IN:claude usage",
+    "IT:claude usage",
+    "IT:uso claude",
+    "JP:claude usage",
+    "JP:claude 使用状況",
+    "KR:claude 사용량",
+    "KR:클로드 사용량",
+    "MX:claude usage",
+    "NL:claude usage",
+    "SG:ai 用量",
+    "SG:claude usage",
+    "SG:claude 用量",
+    "TW:ai 用量",
+    "TW:claude usage",
+    "TW:claude 用量",
+    "US:claude code usage",
+    "US:claude session",
+    "US:claude usage",
+    "US:claude usage tracker",
+    "US:claude usage widget",
+    "US:llm usage"
+   ]
+  },
+  {
+   "id": "6792240003",
+   "name_us": "iCodex: Claude & Codex Usage",
+   "subtitle_us": "Quota, Tokens & Widgets",
+   "localized": {
+    "TW": {
+     "name": "iCodex - Claude,Codex额度监控",
+     "subtitle": "工具程式"
+    },
+    "JP": {
+     "name": "iCodex - Claude,Codex额度监控",
+     "subtitle": "ユーティリティ"
+    },
+    "KR": {
+     "name": "iCodex - Claude,Codex额度监控",
+     "subtitle": "유틸리티"
+    },
+    "DE": {
+     "name": "iCodex - Claude,Codex额度监控",
+     "subtitle": "Dienst­programme"
+    }
+   },
+   "ratings_us": 1,
+   "rank1_terms": [
+    "CA:token usage",
+    "GB:codex usage",
+    "HK:claude 額度",
+    "HK:codex 額度",
+    "SG:copilot usage",
+    "SG:token usage",
+    "TW:claude 額度",
+    "TW:codex 額度",
+    "TW:gemini 額度",
+    "US:codex quota",
+    "US:copilot quota"
+   ]
+  },
+  {
+   "id": "6801493876",
+   "name_us": "AI Limits Tracker",
+   "subtitle_us": "AI limits in your menu bar",
+   "localized": {
+    "JP": {
+     "name": "AI Limits Tracker",
+     "subtitle": "メニューバーでAI上限を確認"
+    },
+    "KR": {
+     "name": "AI 사용량 트래커",
+     "subtitle": "메뉴바에서 보는 AI 한도"
+    },
+    "DE": {
+     "name": "AI Limits Tracker",
+     "subtitle": "KI-Limits in der Menüleiste"
+    }
+   },
+   "ratings_us": 0,
+   "rank1_terms": [
+    "DE:token verbrauch",
+    "JP:ai 上限",
+    "JP:ai 残量",
+    "JP:claude 上限",
+    "JP:codex 上限",
+    "JP:上限",
+    "KR:ai 사용량",
+    "KR:ai 사용량 트래커",
+    "KR:ai 한도",
+    "KR:클로드 한도",
+    "US:ai limit tracker"
+   ]
+  },
+  {
+   "id": "6758946226",
+   "name_us": "AI Limits & Reset Tracker",
+   "subtitle_us": "Alerts, widgets, reset timers",
+   "localized": {
+    "TW": {
+     "name": "AI Limits & Reset Tracker",
+     "subtitle": "工具程式"
+    },
+    "JP": {
+     "name": "AI Limits & Reset Tracker",
+     "subtitle": "ユーティリティ"
+    },
+    "KR": {
+     "name": "AI Limits & Reset Tracker",
+     "subtitle": "유틸리티"
+    },
+    "DE": {
+     "name": "AI Limits & Reset Tracker",
+     "subtitle": "Dienst­programme"
+    }
+   },
+   "ratings_us": 0,
+   "rank1_terms": [
+    "AU:ai usage tracker",
+    "BR:ai usage tracker",
+    "CA:ai usage tracker",
+    "FR:ai usage tracker",
+    "GB:ai usage tracker",
+    "HK:ai usage tracker",
+    "IT:ai usage tracker",
+    "JP:ai usage tracker",
+    "KR:ai usage tracker",
+    "MX:ai usage tracker",
+    "SG:ai usage tracker",
+    "TW:ai usage tracker"
+   ]
+  },
+  {
+   "id": "6760216772",
+   "name_us": "CodexBar - Usage of AI",
+   "subtitle_us": "Developer Tools",
+   "localized": {
+    "TW": {
+     "name": "CodexBar - Usage of AI",
+     "subtitle": "開發者工具"
+    },
+    "JP": {
+     "name": "CodexBar - Usage of AI",
+     "subtitle": "開発ツール"
+    },
+    "KR": {
+     "name": "CodexBar - Usage of AI",
+     "subtitle": "개발자 도구"
+    },
+    "DE": {
+     "name": "CodexBar - Usage of AI",
+     "subtitle": "Entwickler-Tools"
+    }
+   },
+   "ratings_us": 6,
+   "rank1_terms": [
+    "AU:codex usage",
+    "HK:codex usage",
+    "IN:codex usage",
+    "NL:codex usage",
+    "SG:codex usage",
+    "TW:codex usage",
+    "US:codex usage"
+   ]
+  },
+  {
+   "id": "6813024228",
+   "name_us": "Codex Tracker - Resets & Usage",
+   "subtitle_us": "Predict & notify | Vibecoding",
+   "localized": {
+    "TW": {
+     "name": "Codex Tracker - 額度重置與用量",
+     "subtitle": "用量刷新預測｜Vibe Coding"
+    },
+    "JP": {
+     "name": "Codex Tracker - リセットと使用量",
+     "subtitle": "上限の回復タイミングを予測｜バイブコーディング"
+    },
+    "KR": {
+     "name": "Codex Tracker - 리셋 및 사용량",
+     "subtitle": "한도 초기화 예측 | 바이브 코딩"
+    },
+    "DE": {
+     "name": "Codex Tracker: Reset & Nutzung",
+     "subtitle": "Reset-Prognose | Vibe Coding"
+    }
+   },
+   "ratings_us": 1,
+   "rank1_terms": [
+    "GB:codex tracker",
+    "HK:codex 用量",
+    "JP:codex 使用量",
+    "JP:codex 制限",
+    "TW:codex 用量",
+    "US:codex tracker"
+   ]
+  },
+  {
+   "id": "6781059780",
+   "name_us": "Codex Meter",
+   "subtitle_us": "Developer Tools",
+   "localized": {
+    "TW": {
+     "name": "Codex Meter",
+     "subtitle": "開發者工具"
+    },
+    "JP": {
+     "name": "Codex Meter",
+     "subtitle": "開発ツール"
+    },
+    "KR": {
+     "name": "Codex Meter",
+     "subtitle": "개발자 도구"
+    },
+    "DE": {
+     "name": "Codex Meter",
+     "subtitle": "Entwickler-Tools"
+    }
+   },
+   "ratings_us": 0,
+   "rank1_terms": [
+    "BR:codex usage",
+    "CA:codex usage",
+    "ES:codex usage",
+    "FR:codex usage",
+    "IT:codex usage",
+    "MX:codex usage"
+   ]
+  },
+  {
+   "id": "6812881047",
+   "name_us": "usAge: AI Quota Meter",
+   "subtitle_us": "Token usage, limits & balance",
+   "localized": {
+    "TW": {
+     "name": "usAge：AI 額度儀表",
+     "subtitle": "額度、Token 消耗、餘額監控"
+    },
+    "JP": {
+     "name": "usAge: AI 利用枠メーター",
+     "subtitle": "トークン使用量・残枠・残高"
+    },
+    "KR": {
+     "name": "usAge: AI 한도 트래커",
+     "subtitle": "토큰 사용량·잔액·초기화"
+    },
+    "DE": {
+     "name": "usAge: KI-Kontingent-Anzeige",
+     "subtitle": "Token-Verbrauch & Guthaben"
+    }
+   },
+   "ratings_us": 1,
+   "rank1_terms": [
+    "HK:ai 額度",
+    "TW:ai 額度"
+   ]
+  },
+  {
+   "id": "6783099717",
+   "name_us": "Token Monitor: AI Usage",
+   "subtitle_us": "Claude, Codex, GPT API Spend",
+   "localized": {
+    "TW": {
+     "name": "Token Monitor: AI Usage",
+     "subtitle": "開發者工具"
+    },
+    "JP": {
+     "name": "Token Monitor: AI Usage",
+     "subtitle": "開発ツール"
+    },
+    "KR": {
+     "name": "Token Monitor: AI Usage",
+     "subtitle": "개발자 도구"
+    },
+    "DE": {
+     "name": "Token Monitor: AI Usage",
+     "subtitle": "Entwickler-Tools"
+    }
+   },
+   "ratings_us": 0,
+   "rank1_terms": [
+    "HK:token usage",
+    "IN:token usage",
+    "US:claude monitor"
+   ]
+  },
+  {
+   "id": "6795693124",
+   "name_us": "Usages: AI Usage Tracker",
+   "subtitle_us": null,
+   "localized": {
+    "TW": {
+     "name": "Usages：AI 用量追蹤",
+     "subtitle": "額度、重置時間與費用一目了然"
+    },
+    "JP": {
+     "name": "Usages: AI Usage Tracker",
+     "subtitle": "開発ツール"
+    },
+    "KR": {
+     "name": "Usages: AI Usage Tracker",
+     "subtitle": "개발자 도구"
+    }
+   },
+   "ratings_us": null,
+   "rank1_terms": [
+    "TW:ai 用量追蹤",
+    "TW:token 用量"
+   ]
+  },
+  {
+   "id": "6781480047",
+   "name_us": "Agent Meter: AI Usage",
+   "subtitle_us": "Claude/Codex reset alerts",
+   "localized": {
+    "TW": {
+     "name": "Agent Meter: AI Usage",
+     "subtitle": "生產力工具"
+    },
+    "JP": {
+     "name": "Agent Meter: AI使用量",
+     "subtitle": "Claude/Codex reset通知"
+    },
+    "KR": {
+     "name": "Agent Meter: AI 사용량",
+     "subtitle": "Claude/Codex reset 알림"
+    },
+    "DE": {
+     "name": "Agent Meter: KI-Nutzung",
+     "subtitle": "Claude/Codex reset alerts"
+    }
+   },
+   "ratings_us": 2,
+   "rank1_terms": [
+    "JP:claude code 使用量",
+    "JP:トークン 使用量"
+   ]
+  },
+  {
+   "id": "6759642037",
+   "name_us": "UsageScope: AI Usage Tracker",
+   "subtitle_us": "Limits, history & reset alerts",
+   "localized": {
+    "TW": {
+     "name": "UsageScope: AI用量管理",
+     "subtitle": "多服務額度、歷史紀錄與重設提醒"
+    },
+    "JP": {
+     "name": "UsageScope: AI使用量管理",
+     "subtitle": "複数AIの上限・履歴・リセット通知"
+    },
+    "KR": {
+     "name": "UsageScope: AI 사용량 관리",
+     "subtitle": "여러 AI 한도·기록·리셋 알림"
+    },
+    "DE": {
+     "name": "UsageScope: KI-Nutzung",
+     "subtitle": "Limits, Verlauf & Reset-Alarme"
+    }
+   },
+   "ratings_us": 0,
+   "rank1_terms": [
+    "BR:uso ia",
+    "GB:ai quota",
+    "HK:ai 用量",
+    "US:ai quota"
+   ]
+  }
+ ],
+ "developer_tools_top_free": {
+  "US": {
+   "usagenow_top25": null,
+   "top3": [
+    "TestFlight",
+    "GitHub",
+    "LocalDevVPN"
+   ],
+   "ai_trackers_in_top25": []
+  },
+  "TW": {
+   "usagenow_top25": null,
+   "top3": [
+    "Userscripts",
+    "TestFlight",
+    "GitHub"
+   ],
+   "ai_trackers_in_top25": []
+  },
+  "JP": {
+   "usagenow_top25": null,
+   "top3": [
+    "TestFlight",
+    "GitHub",
+    "O-KAM Pro"
+   ],
+   "ai_trackers_in_top25": [
+    {
+     "rank": 25,
+     "name": "AI Limits Tracker"
+    }
+   ]
+  },
+  "HK": {
+   "usagenow_top25": null,
+   "top3": [
+    "TestFlight",
+    "Cursor",
+    "GitHub"
+   ],
+   "ai_trackers_in_top25": []
+  },
+  "GB": {
+   "usagenow_top25": null,
+   "top3": [
+    "TestFlight",
+    "GitHub",
+    "O-KAM Pro"
+   ],
+   "ai_trackers_in_top25": []
+  },
+  "KR": {
+   "usagenow_top25": null,
+   "top3": [
+    "TestFlight",
+    "GitHub",
+    "Orca IDE"
+   ],
+   "ai_trackers_in_top25": [
+    {
+     "rank": 18,
+     "name": "AI 사용량 트래커"
+    }
+   ]
+  },
+  "DE": {
+   "usagenow_top25": null,
+   "top3": [
+    "TestFlight",
+    "GitHub",
+    "Expo Go"
+   ],
+   "ai_trackers_in_top25": []
+  }
+ },
+ "cross_locale_repeats_accepted": [
+  "US: 'contador' repeated in ['es-MX', 'pt-BR']",
+  "US: 'restante' repeated in ['es-MX', 'pt-BR']",
+  "US: 'semanal' repeated in ['es-MX', 'pt-BR']",
+  "US: 'horas' repeated in ['es-MX', 'pt-BR']",
+  "US: 'alerta' repeated in ['es-MX', 'pt-BR']",
+  "US: '限制' repeated in ['zh-Hant', 'zh-Hans']",
+  "US: '提醒' repeated in ['zh-Hant', 'zh-Hans']",
+  "US: '通知' repeated in ['zh-Hant', 'zh-Hans']",
+  "US: '上限' repeated in ['zh-Hant', 'zh-Hans']",
+  "US: '消耗' repeated in ['zh-Hant', 'zh-Hans']",
+  "US: '刷新' repeated in ['zh-Hant', 'zh-Hans']",
+  "US: '用完' repeated in ['zh-Hant', 'zh-Hans']"
+ ],
+ "locales": {
+  "ar-SA": {
+   "current": {
+    "name": "UsageNow: متتبع استخدام الذكاء",
+    "subtitle": "حدود Claude وCodex وCopilot",
+    "keywords": "ai,code,dev,مبرمج,usage,tracker,توكن,حصة,عداد,token,ويدجت,widget,quota,meter,llm,إعادة ضبط,اصطناعي"
+   },
+   "recommended": {
+    "name": "UsageNow: استخدام Claude/Codex",
+    "subtitle": "حدود AI: Copilot، Gemini",
+    "keywords": "كلود,متتبع,توكن,حصة,عداد,ويدجت,تصفير,متبقي,أسبوعي,ساعات,تنبيه,استهلاك,اشتراك,ذكاء,اصطناعي,code,gpt"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 24,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "bn-BD": {
+   "current": {
+    "name": "UsageNow: AI ব্যবহার ট্র্যাকার",
+    "subtitle": "Claude, Codex, Copilot সীমা",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,reset,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex ব্যবহার",
+    "subtitle": "AI সীমা: Copilot, Gemini",
+    "keywords": "টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,ট্র্যাকার,code,gpt,opus,sonnet,vibe,credits,balance,left,gauge"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 24,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ca": {
+   "current": {
+    "name": "UsageNow: Monitor d'ús d'IA",
+    "subtitle": "Límits Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,desenvolupador,usage,tracker,consum,quota,comptador,token,giny,widget,reinici,llm,meter"
+   },
+   "recommended": {
+    "name": "UsageNow: Ús de Claude i Codex",
+    "subtitle": "Límits IA: Copilot i Gemini",
+    "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control,gpt,opus"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。ca 在 ES 與 es-ES 一起被索引，尾端放兩個 es-ES 沒有的西文字。",
+   "depth": "light"
+  },
+  "cs": {
+   "current": {
+    "name": "UsageNow: Sledování využití AI",
+    "subtitle": "Limity Claude, Codex, Copilot",
+    "keywords": "code,dev,vývojář,usage,tracker,spotřeba,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex využití",
+    "subtitle": "Limity AI: Copilot a Gemini",
+    "keywords": "spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,předplatné,code,gpt,opus,sonnet"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "da": {
+   "current": {
+    "name": "UsageNow: AI-forbrug tracker",
+    "subtitle": "Claude, Codex, Copilot grænser",
+    "keywords": "code,dev,udvikler,usage,quota,kvote,tæller,token,widget,reset,meter,monitor,llm,nedtælling,session"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex-forbrug",
+    "subtitle": "AI-grænser: Copilot og Gemini",
+    "keywords": "kvote,tæller,tilbage,ugentlig,timer,advarsel,nulstil,sporing,abonnement,code,gpt,opus,sonnet,vibe"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "de-DE": {
+   "current": {
+    "name": "UsageNow: KI-Nutzung Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "keywords": "ai,code,dev,entwickler,usage,verbrauch,kontingent,token,quota,zähler,widget,reset,countdown,llm,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex-Nutzung",
+    "subtitle": "KI-Limits für Copilot & Gemini",
+    "keywords": "verbrauch,kontingent,token,code,ai,zähler,stunden,sitzung,warnung,auslastung,abo,übrig,woche"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 92
+   },
+   "evidence": [
+    {
+     "term": "claude nutzung",
+     "country": "DE",
+     "our_rank": 10,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 3,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude verbrauch",
+     "country": "DE",
+     "our_rank": 6,
+     "results": null,
+     "top1": "AI Cockpit: Usage & Limits",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/6",
+     "source": "web-top12"
+    },
+    {
+     "term": "ki nutzung",
+     "country": "DE",
+     "our_rank": 8,
+     "results": null,
+     "top1": "KI-Nutzung",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "token verbrauch",
+     "country": "DE",
+     "our_rank": 10,
+     "results": null,
+     "top1": "AI Limits Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 3,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 9,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 9,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Usage Tracker: Pulse",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude limit",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 9,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ki limit",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "KI - Wohnungsdesign, DecAI®",
+     "top1_ratings": 2198,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "verbrauch",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Energy Tracker",
+     "top1_ratings": 6025,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "kontingent",
+     "country": "DE",
+     "our_rank": null,
+     "results": null,
+     "top1": "Kontingent",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "DE claude nutzung #10、claude verbrauch #6、ki nutzung #8，但 claude usage／codex usage 不在前 12；標題改 Claude/Codex-Nutzung；刪 usage／quota／widget／reset／countdown／llm／api／dev／entwickler（en 已涵蓋或類別名）；保留 token、code 供德文組合（token verbrauch #10）。",
+   "depth": "deep"
+  },
+  "el": {
+   "current": {
+    "name": "UsageNow: Χρήση AI και όρια",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "keywords": "code,dev,προγραμματιστής,usage,tracker,κατανάλωση,ποσόστωση,μετρητής,token,widget,reset,επαναφορά"
+   },
+   "recommended": {
+    "name": "UsageNow: Χρήση Claude/Codex",
+    "subtitle": "Όρια AI: Copilot και Gemini",
+    "keywords": "κατανάλωση,ποσόστωση,μετρητής,επαναφορά,υπόλοιπο,εβδομάδα,ώρες,ειδοποίηση,όριο,code,gpt,opus,sonnet"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 27,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "en-AU": {
+   "current": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "keywords": "code,dev,developer,coding,programmer,quota,token,widget,reset,timer,gauge,cap,plan,api,cli,max,stats"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude & Codex Usage",
+    "subtitle": "AI Limits for Copilot & Gemini",
+    "keywords": "gpt,opus,sonnet,vibe,credits,balance,left,budget,accounts,lockscreen,gauge,cooldown,dashboard"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 93
+   },
+   "evidence": [
+    {
+     "term": "claude usage",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "CodexBar - Usage of AI",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude limit",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage tracker",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "token usage",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "Tokens - Usage Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "usage tracker",
+     "country": "AU",
+     "our_rank": null,
+     "results": null,
+     "top1": "Tally: The Anything Tracker",
+     "top1_ratings": 272,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "實測 AU 搜尋吃的是 en-GB（allowance #97）＋en-US（weekly #61），en-AU 專屬字 gauge、programmer 都不命中，所以 AU 的排名靠 en-US／en-GB 兩欄；en-AU 只放兩欄都沒有的第三層字（opus、sonnet、gpt、credits…）當保險，刪 dev／developer／coding／programmer／api／cli／stats。",
+   "depth": "deep"
+  },
+  "en-CA": {
+   "current": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude & Codex Usage",
+    "subtitle": "AI Limits for Copilot & Gemini",
+    "keywords": "premium,requests,daily,model,alert,watch,meter,counter,plan,remaining,subscription,allowance,cap"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 96
+   },
+   "evidence": [
+    {
+     "term": "claude usage",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Codex Meter",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude limit",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 5,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage tracker",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "token usage",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "iCodex: Claude & Codex Usage",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "usage tracker",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Tally: The Anything Tracker",
+     "top1_ratings": 369,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "CA 索引 en-CA＋fr-CA（另加 en-US），en-GB 不在 CA，所以 en-CA 放與 en-GB 相同的第二層字，避免與 en-US 重複；原本與 en-US 一字不差＝整欄浪費。",
+   "depth": "deep"
+  },
+  "en-GB": {
+   "current": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,allowance,cli"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude & Codex Usage",
+    "subtitle": "AI Limits for Copilot & Gemini",
+    "keywords": "premium,requests,daily,model,alert,watch,meter,counter,plan,remaining,subscription,allowance,cap"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 96
+   },
+   "evidence": [
+    {
+     "term": "claude usage",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "iCodex: Claude & Codex Usage",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 4,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude limit",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 4,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage limit",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 4,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude weekly limit",
+     "country": "GB",
+     "our_rank": 8,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 4,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/9",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage tracker",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "copilot usage",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Co-Pilot",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "token usage",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Tokens - Usage Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "rate limit",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "PulseFlow-Heart Rate Monitor",
+     "top1_ratings": 735,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "usage tracker",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Tally: The Anything Tracker",
+     "top1_ratings": 299,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex tracker",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "Codex Tracker - Resets & Usage",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "2/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "chatgpt usage",
+     "country": "GB",
+     "our_rank": null,
+     "results": null,
+     "top1": "ChatGPT for Intune",
+     "top1_ratings": 7,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "GB 同時索引 en-GB 與 en-US（實測 weekly 在 GB 命中），en-GB 原本 13/15 個字與 en-US 重複＝浪費；改放 en-US 沒有的第二層英文字（premium、requests、daily、model、alert、meter…，對應 Copilot premium requests、Gemini 每日配額、各模型上限），TW／HK／KR 也會一起吃到。",
+   "depth": "deep"
+  },
+  "en-US": {
+   "current": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude & Codex Usage",
+    "subtitle": "AI Limits for Copilot & Gemini",
+    "keywords": "tracker,widget,reset,quota,token,code,rate,llm,weekly,session,openai,github,hour,monitor,max,pro"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 96
+   },
+   "evidence": [
+    {
+     "term": "claude usage",
+     "country": "US",
+     "our_rank": 19,
+     "results": 77,
+     "top1": "Usage for Claude",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "itunes-search"
+    },
+    {
+     "term": "codex usage",
+     "country": "US",
+     "our_rank": 30,
+     "results": 119,
+     "top1": "CodexBar - Usage of AI",
+     "top1_ratings": 6,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "itunes-search"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "US",
+     "our_rank": 21,
+     "results": 193,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 39,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "itunes-search"
+    },
+    {
+     "term": "ai usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 39,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude limit",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 39,
+     "intent_ok": false,
+     "ai_trackers_top10": "3/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage limit",
+     "country": "US",
+     "our_rank": 5,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 39,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude weekly limit",
+     "country": "US",
+     "our_rank": 4,
+     "results": null,
+     "top1": "Learn Claude (Cert Exam Prep)",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage tracker",
+     "country": "US",
+     "our_rank": 5,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "copilot usage",
+     "country": "US",
+     "our_rank": 4,
+     "results": null,
+     "top1": "GH-300 GitHub Copilot",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude reset",
+     "country": "US",
+     "our_rank": 6,
+     "results": null,
+     "top1": "Learn Claude (Cert Exam Prep)",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude rate limit",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Learn Claude (Cert Exam Prep)",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "token usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "TokenBar Mobile",
+     "top1_ratings": 4,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "llm usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "openai usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Nomo - AI Status & Usage",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai quota",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "UsageScope: AI Usage Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude session",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 5,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude code",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Claude by Anthropic",
+     "top1_ratings": 279000,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude code limit",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Learn Claude (Cert Exam Prep)",
+     "top1_ratings": 2,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude max",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Claude by Anthropic",
+     "top1_ratings": 279000,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "chatgpt usage",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "ChatGPT for Intune",
+     "top1_ratings": 54,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "usage widget",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage Device Monitor",
+     "top1_ratings": 3900,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "usage monitor",
+     "country": "US",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage Device Monitor",
+     "top1_ratings": 3900,
+     "intent_ok": false,
+     "ai_trackers_top10": "2/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "標題改放兩個主搜尋品牌＋Usage（claude usage／codex usage 標題完全命中）；AI、Limits、Copilot、Gemini 移到副標；關鍵字刪 dev／developer／coding（類別名已索引）、countdown／agent／meter（錯意圖），補 weekly（claude weekly limit #4）、rate、openai、hour、max、pro。en-US 是主要語系，實測在所有探測店面都被索引，因此放最核心的英文字。",
+   "depth": "deep"
+  },
+  "es-ES": {
+   "current": {
+    "name": "UsageNow: Monitor de uso IA",
+    "subtitle": "Límites Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Uso Claude y Codex",
+    "subtitle": "Límites IA: Copilot y Gemini",
+    "keywords": "límite,consumo,cuota,contador,reinicio,restante,semanal,horas,alerta,seguimiento,medidor,sesión"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 28,
+    "keywords": 95
+   },
+   "evidence": [
+    {
+     "term": "uso claude",
+     "country": "ES",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow: Monitor de uso IA",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso ia",
+     "country": "ES",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow: Monitor de uso IA",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso de claude",
+     "country": "ES",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow: Monitor de uso IA",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "ES",
+     "our_rank": 8,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "ES",
+     "our_rank": 8,
+     "results": null,
+     "top1": "Codex Meter",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "ES",
+     "our_rank": 7,
+     "results": null,
+     "top1": "AI Usage Tracker: Pulse",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "consumo ia",
+     "country": "ES",
+     "our_rank": 6,
+     "results": null,
+     "top1": "ALDI Supermercados",
+     "top1_ratings": 8400,
+     "intent_ok": false,
+     "ai_trackers_top10": "3/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "límite claude",
+     "country": "ES",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "límite de claude",
+     "country": "ES",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "límite ia",
+     "country": "ES",
+     "our_rank": null,
+     "results": null,
+     "top1": "Epoch: Límite IA, cuenta atrás",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "ES 已是 uso claude／uso ia／uso de claude #1；標題保留 Uso 並加 Claude、Codex，補 límite de claude（8/10 是 AI 追蹤器、我們不在前 12）；刪 ai／code／dev／usage／tracker／token／widget／llm／meter／api 等英文重複字。",
+   "depth": "deep"
+  },
+  "es-MX": {
+   "current": {
+    "name": "UsageNow: Monitor de uso IA",
+    "subtitle": "Límites Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Uso Claude y Codex",
+    "subtitle": "Límites IA: Copilot y Gemini",
+    "keywords": "cuota,contador,reinicio,restante,semanal,horas,alerta,premium,requests,daily,model,watch,meter"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 28,
+    "keywords": 94
+   },
+   "evidence": [
+    {
+     "term": "uso claude",
+     "country": "MX",
+     "our_rank": 9,
+     "results": null,
+     "top1": "Microsoft Authenticator",
+     "top1_ratings": 34000,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso de claude",
+     "country": "MX",
+     "our_rank": 9,
+     "results": null,
+     "top1": "Microsoft Authenticator",
+     "top1_ratings": 34000,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso ia",
+     "country": "MX",
+     "our_rank": 11,
+     "results": null,
+     "top1": "Guía de uso de IA: simple",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso de ia",
+     "country": "MX",
+     "our_rank": null,
+     "results": null,
+     "top1": "Uso de IA",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "MX",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "MX",
+     "our_rank": null,
+     "results": null,
+     "top1": "Codex Meter",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "MX",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "límite claude",
+     "country": "MX",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "consumo ia",
+     "country": "MX",
+     "our_rank": null,
+     "results": null,
+     "top1": "IA Nutricion contador calorias",
+     "top1_ratings": 15,
+     "intent_ok": false,
+     "ai_trackers_top10": "3/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "MX 同字 uso claude 只有 #9、uso de ia 不在前 12；標題加 Claude、Codex。es-MX 也在 US 被索引、en-GB 不在 US，所以後半欄放 en-US 放不下的英文字（premium、requests、daily、model…，Copilot premium requests 在 US 目前 0/10 是 AI 追蹤器、沒人搶）給 US 用。",
+   "depth": "deep"
+  },
+  "fi": {
+   "current": {
+    "name": "UsageNow: Tekoälyn käyttö",
+    "subtitle": "Claude, Codex ja Copilot rajat",
+    "keywords": "ai,code,dev,kehittäjä,usage,tracker,kulutus,kiintiö,laskuri,token,widget,reset,quota,meter,monitor"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex-käyttö",
+    "subtitle": "AI-rajat: Copilot ja Gemini",
+    "keywords": "tekoäly,kulutus,kiintiö,laskuri,jäljellä,viikko,tunnit,ilmoitus,nollaus,seuranta,code,gpt,opus,vibe"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 27,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "fr-CA": {
+   "current": {
+    "name": "UsageNow : Suivi d'usage IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api"
+   },
+   "recommended": {
+    "name": "UsageNow : usage Claude, Codex",
+    "subtitle": "Limites IA : Copilot et Gemini",
+    "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,suivi,abonnement,plafond"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 98
+   },
+   "evidence": [
+    {
+     "term": "utilisation claude",
+     "country": "CA",
+     "our_rank": null,
+     "results": null,
+     "top1": "Snapchat",
+     "top1_ratings": 642000,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "CA 次要語系：與 fr-FR 同一套法文字，刪掉 ai／code／dev／usage／tracker／quota／token／widget／llm／monitor／api 等 en-US 已涵蓋的英文字。",
+   "depth": "deep"
+  },
+  "fr-FR": {
+   "current": {
+    "name": "UsageNow : Suivi d'usage IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api"
+   },
+   "recommended": {
+    "name": "UsageNow : usage Claude, Codex",
+    "subtitle": "Limites IA : Copilot et Gemini",
+    "keywords": "utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,suivi,abonnement,plafond"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 98
+   },
+   "evidence": [
+    {
+     "term": "claude usage",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Codex Meter",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "utilisation claude",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "4/5",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude utilisation",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "4/5",
+     "source": "web-top12"
+    },
+    {
+     "term": "quota claude",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "utilisation ia",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Sololearn: AI & Code Learning",
+     "top1_ratings": 4500,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "limite claude",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "ChatBox - Chat bot IA français",
+     "top1_ratings": 18000,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "suivi ia",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Eatr: IA Plan repas & régime",
+     "top1_ratings": 2800,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "consommation ia",
+     "country": "FR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Autotab",
+     "top1_ratings": 3,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "FR 實測 claude usage／codex usage／utilisation claude 都不在前 12；標題改含 Claude、Codex＋usage，utilisation 進關鍵字；刪 9 個與 en-US／en-GB 重複的英文字，換成法文搜尋字。",
+   "depth": "deep"
+  },
+  "gu-IN": {
+   "current": {
+    "name": "UsageNow: AI વપરાશ ટ્રેકર",
+    "subtitle": "Claude, Codex, Copilot મર્યાદા",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,cap,plan"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex વપરાશ",
+    "subtitle": "AI મર્યાદા: Copilot, Gemini",
+    "keywords": "ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,ટ્રેકર,code,vibe,credits,balance"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 27,
+    "keywords": 71
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "he": {
+   "current": {
+    "name": "UsageNow: מעקב שימוש ב‑AI",
+    "subtitle": "מגבלות Claude, Codex, Copilot",
+    "keywords": "code,dev,מתכנת,usage,tracker,טוקן,מכסה,מונה,token,וידג׳ט,widget,quota,meter,monitor,llm,איפוס,סשן"
+   },
+   "recommended": {
+    "name": "UsageNow: שימוש Claude/Codex",
+    "subtitle": "מגבלות AI: Copilot, Gemini",
+    "keywords": "קלוד,מעקב,טוקן,מכסה,מונה,איפוס,נותר,שבועי,שעות,התראה,וידג׳ט,code,gpt,opus,sonnet,vibe,credits,left"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 26,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "hi": {
+   "current": {
+    "name": "UsageNow: AI उपयोग ट्रैकर",
+    "subtitle": "Claude, Codex, Copilot लिमिट",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude, Codex उपयोग",
+    "subtitle": "AI लिमिट: Copilot, Gemini",
+    "keywords": "टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,ट्रैकर,सीमा,अलर्ट,code,gpt,opus,sonnet"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 25,
+    "keywords": 82
+   },
+   "evidence": [
+    {
+     "term": "copilot usage",
+     "country": "IN",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow: AI Usage Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "IN",
+     "our_rank": 12,
+     "results": null,
+     "top1": "Limitr: AI Usage Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "IN",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "IN",
+     "our_rank": null,
+     "results": null,
+     "top1": "CodexBar - Usage of AI",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。IN 主要靠 en-GB／en-US：IN 實測 copilot usage #1、ai usage tracker #12。",
+   "depth": "light"
+  },
+  "hr": {
+   "current": {
+    "name": "UsageNow: Potrošnja AI-ja",
+    "subtitle": "Limiti Claude, Codex, Copilot",
+    "keywords": "code,dev,programer,usage,tracker,kvota,brojač,token,widget,reset,quota,meter,monitor,llm,sesija,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex limiti",
+    "subtitle": "AI potrošnja: Copilot, Gemini",
+    "keywords": "kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,gpt,opus,sonnet,vibe,credits,left"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 29,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "hu": {
+   "current": {
+    "name": "UsageNow: MI-használat követő",
+    "subtitle": "Claude, Codex, Copilot limitek",
+    "keywords": "ai,code,dev,fejlesztő,usage,tracker,fogyasztás,kvóta,számláló,token,widget,reset,quota,meter,monitor"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex limitek",
+    "subtitle": "MI-használat: Copilot, Gemini",
+    "keywords": "fogyasztás,kvóta,számláló,maradék,heti,órák,értesítés,követés,ai,code,gpt,opus,sonnet,vibe,credits"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "id": {
+   "current": {
+    "name": "UsageNow: Pelacak Pemakaian AI",
+    "subtitle": "Batas Claude, Codex, Copilot",
+    "keywords": "code,dev,developer,usage,tracker,kuota,penggunaan,penghitung,token,widget,reset,quota,meter,monitor"
+   },
+   "recommended": {
+    "name": "UsageNow: Batas Claude & Codex",
+    "subtitle": "Pemakaian AI: Copilot, Gemini",
+    "keywords": "penggunaan,kuota,penghitung,sisa,mingguan,jam,notifikasi,pelacak,pantau,code,gpt,opus,sonnet,vibe"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "it": {
+   "current": {
+    "name": "UsageNow: Monitor utilizzo IA",
+    "subtitle": "Limiti Claude, Codex e Copilot",
+    "keywords": "ai,code,dev,sviluppatore,usage,tracker,consumo,quota,contatore,token,widget,reset,llm,meter,sessione"
+   },
+   "recommended": {
+    "name": "UsageNow: Uso Claude e Codex",
+    "subtitle": "Utilizzo e limiti IA, Copilot",
+    "keywords": "gemini,consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,abbonamento,tetto"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 29,
+    "keywords": 97
+   },
+   "evidence": [
+    {
+     "term": "utilizzo claude",
+     "country": "IT",
+     "our_rank": 2,
+     "results": null,
+     "top1": "AI Usage",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "3/3",
+     "source": "web-top12"
+    },
+    {
+     "term": "utilizzo ia",
+     "country": "IT",
+     "our_rank": 3,
+     "results": null,
+     "top1": "Riassumilo! - Utilizzando IA",
+     "top1_ratings": 117,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso claude",
+     "country": "IT",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "3/7",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "IT",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "IT",
+     "our_rank": null,
+     "results": null,
+     "top1": "Codex Meter",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "IT",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "limite claude",
+     "country": "IT",
+     "our_rank": null,
+     "results": null,
+     "top1": "ChatBox・Сhatbot IA in italiano",
+     "top1_ratings": 12000,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "limite ia",
+     "country": "IT",
+     "our_rank": null,
+     "results": null,
+     "top1": "ChatBox・Сhatbot IA in italiano",
+     "top1_ratings": 12000,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "IT utilizzo claude #2、utilizzo ia #3，但 uso claude／claude usage 不在前 12；標題改 Uso＋Claude、Codex，utilizzo 移副標；Gemini 放關鍵字；刪英文重複字。",
+   "depth": "deep"
+  },
+  "ja": {
+   "current": {
+    "name": "UsageNow：AI使用量トラッカー",
+    "subtitle": "Claude・Codex・Copilot・Gemini残量",
+    "keywords": "code,dev,開発者,エンジニア,制限,上限,トークン,usage,tracker,meter,quota,token,ウィジェット,リセット,利用状況,残り,カウントダウン,生成ai,週間,管理"
+   },
+   "recommended": {
+    "name": "UsageNow：Claude・Codex AI 使用量",
+    "subtitle": "上限とリセット時刻・Copilot/Gemini",
+    "keywords": "code,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,通知,残量,残り,使用状況,使用率,監視,アラート,opus,sonnet,max,プラン,セッション,クォータ"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 24,
+    "keywords": 96
+   },
+   "evidence": [
+    {
+     "term": "claude 使用量",
+     "country": "JP",
+     "our_rank": 30,
+     "results": 32,
+     "top1": "ギガ残量 - Data Remaining",
+     "top1_ratings": 11593,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "itunes-search"
+    },
+    {
+     "term": "ai 使用量",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 4,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex 使用量",
+     "country": "JP",
+     "our_rank": 12,
+     "results": null,
+     "top1": "Codex Tracker - リセットと使用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude code 使用量",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Agent Meter: AI使用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude code 制限",
+     "country": "JP",
+     "our_rank": 2,
+     "results": null,
+     "top1": "SottoPet",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "1/2",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex 制限",
+     "country": "JP",
+     "our_rank": 9,
+     "results": null,
+     "top1": "Codex Tracker - リセットと使用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 上限",
+     "country": "JP",
+     "our_rank": 9,
+     "results": null,
+     "top1": "AI Limits Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 上限",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex 上限",
+     "country": "JP",
+     "our_rank": 11,
+     "results": null,
+     "top1": "AI Limits Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 使用状況",
+     "country": "JP",
+     "our_rank": 5,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/5",
+     "source": "web-top12"
+    },
+    {
+     "term": "トークン 使用量",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Agent Meter: AI使用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "copilot 使用量",
+     "country": "JP",
+     "our_rank": 4,
+     "results": null,
+     "top1": "AI使用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/5",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 制限",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "BabeChat - 制限のないAIチャット",
+     "top1_ratings": 14,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 残量",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "My au(マイエーユー)-料金・ギガ残量の確認アプリ",
+     "top1_ratings": 1000000,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "使用量",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "通信量チェッカー",
+     "top1_ratings": 1654,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "制限",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "スマホ依存対策Blockinスクリーンタイム制限・勉強・集中",
+     "top1_ratings": 20000,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "上限",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits Tracker",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "残量",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "ギガ残量 - Data Remaining",
+     "top1_ratings": 12000,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "利用状況",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "My docomo - 料金・通信量の確認",
+     "top1_ratings": 350000,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "生成ai",
+     "country": "JP",
+     "our_rank": null,
+     "results": null,
+     "top1": "Grok",
+     "top1_ratings": 180000,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "JP 現在 ai 使用量／claude 使用量／claude code 使用量都不在前 12，但標題含「AI使用量」的競品有排上，顯示「AI使用量トラッカー」連寫不利斷詞；標題改成 Claude・Codex AI 使用量（以空白隔開），副標放上限、リセット；刪 usage／tracker／meter／quota／token／dev（JP 會索引 en-US）、開発者／エンジニア／管理／生成ai／カウントダウン／利用状況（單字搜都是錯意圖）；制限保留（claude code 制限 #2、codex 制限 #9）。",
+   "depth": "deep"
+  },
+  "kn-IN": {
+   "current": {
+    "name": "UsageNow: AI ಬಳಕೆ ಟ್ರ್ಯಾಕರ್",
+    "subtitle": "Claude, Codex, Copilot ಮಿತಿ",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,api,stats,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex ಬಳಕೆ",
+    "subtitle": "AI ಮಿತಿ: Copilot, Gemini",
+    "keywords": "ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,ಟ್ರ್ಯಾಕರ್,code,left,budget,accounts"
+   },
+   "lengths": {
+    "name": 27,
+    "subtitle": 24,
+    "keywords": 70
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ko": {
+   "current": {
+    "name": "UsageNow: AI 사용량 트래커",
+    "subtitle": "Claude·Codex·Copilot·Gemini 한도",
+    "keywords": "code,dev,개발자,usage,tracker,meter,quota,token,토큰,할당량,리셋,초기화,남은양,잔여,위젯,카운트다운,생성형,주간,세션,코딩,에이전트,llm,모니터"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude·Codex AI 사용량",
+    "subtitle": "한도·리셋 시간 알림 Copilot·Gemini",
+    "keywords": "클로드,코덱스,코파일럿,제미나이,트래커,code,코드,클로드코드,토큰,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터,소진,요금제,실시간,opus,max"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 26,
+    "keywords": 96
+   },
+   "evidence": [
+    {
+     "term": "claude 사용량",
+     "country": "KR",
+     "our_rank": 12,
+     "results": 18,
+     "top1": "Agent Meter: AI 사용량",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "itunes-search"
+    },
+    {
+     "term": "클로드 사용량",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/7",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 사용량",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI 사용량 트래커",
+     "top1_ratings": 3,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex 사용량",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Charge",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "코덱스 사용량",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Agent Cat Mobile",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 한도",
+     "country": "KR",
+     "our_rank": 10,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "클로드 한도",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI 사용량 트래커",
+     "top1_ratings": 3,
+     "intent_ok": true,
+     "ai_trackers_top10": "4/5",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 한도",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI 사용량 트래커",
+     "top1_ratings": 3,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 사용량 트래커",
+     "country": "KR",
+     "our_rank": 3,
+     "results": null,
+     "top1": "AI 사용량 트래커",
+     "top1_ratings": 3,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 제한",
+     "country": "KR",
+     "our_rank": 6,
+     "results": null,
+     "top1": "Chat AI 무제한 채팅: Brutus AI 제작",
+     "top1_ratings": 11,
+     "intent_ok": true,
+     "ai_trackers_top10": "3/6",
+     "source": "web-top12"
+    },
+    {
+     "term": "copilot 사용량",
+     "country": "KR",
+     "our_rank": 4,
+     "results": null,
+     "top1": "AI 사용량",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/5",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "TokenBar Mobile",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "사용량",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "데이터 셀룰러 카운터 - 셀룰러 데이터 / 와이파이",
+     "top1_ratings": 0,
+     "intent_ok": false,
+     "ai_trackers_top10": "4/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "한도",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "핀다 - 누적 금융사 최다 96개! 1분 대출비교",
+     "top1_ratings": 2800,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "리셋",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "리셋: 스트레칭 & 바디라인",
+     "top1_ratings": 1,
+     "intent_ok": false,
+     "ai_trackers_top10": "2/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "토큰",
+     "country": "KR",
+     "our_rank": null,
+     "results": null,
+     "top1": "TokenPocket: Crypto & Bitcoin",
+     "top1_ratings": 54,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "KR claude 사용량／클로드 사용량／ai 사용량／codex 사용량都不在前 12，而同名「AI 사용량 트래커」的競品排第 1 並進 Developer Tools 前 25；標題改 Claude·Codex AI 사용량，補 클로드、코덱스 音譯（클로드 한도 4/5、코덱스 사용량 9/10 為 AI 追蹤器）；刪 usage／tracker／meter／quota／token／llm／dev（KR 也索引 en-US＋en-GB）、카운트다운／생성형／코딩／에이전트／개발자。",
+   "depth": "deep"
+  },
+  "ml-IN": {
+   "current": {
+    "name": "UsageNow: AI ഉപയോഗ ട്രാക്കർ",
+    "subtitle": "Claude, Codex, Copilot പരിധി",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,limit"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex ഉപയോഗം",
+    "subtitle": "AI പരിധി: Copilot, Gemini",
+    "keywords": "ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,ട്രാക്കർ,code,lockscreen,gauge"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 25,
+    "keywords": 73
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "mr-IN": {
+   "current": {
+    "name": "UsageNow: AI वापर ट्रॅकर",
+    "subtitle": "Claude, Codex, Copilot मर्यादा",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,विजेट,रीसेट,साप्ताहिक,बाकी,credits,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex वापर",
+    "subtitle": "AI मर्यादा: Copilot, Gemini",
+    "keywords": "ट्रॅकर,शिल्लक,आठवडा,तास,सूचना,code,cooldown,dashboard"
+   },
+   "lengths": {
+    "name": 27,
+    "subtitle": 27,
+    "keywords": 53
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ms": {
+   "current": {
+    "name": "UsageNow: Penjejak Guna AI",
+    "subtitle": "Had Claude, Codex, Copilot",
+    "keywords": "code,dev,pembangun,usage,tracker,kuota,penggunaan,pembilang,token,widget,reset,quota,meter,monitor"
+   },
+   "recommended": {
+    "name": "UsageNow: Had Claude & Codex",
+    "subtitle": "Penggunaan AI: Copilot, Gemini",
+    "keywords": "kuota,pembilang,baki,mingguan,jam,notifikasi,penjejak,pantau,guna,code,gpt,opus,sonnet,vibe,credits"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 30,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "nl-NL": {
+   "current": {
+    "name": "UsageNow: AI-gebruik tracker",
+    "subtitle": "Claude, Codex & Copilot limiet",
+    "keywords": "code,dev,ontwikkelaar,usage,verbruik,quota,teller,token,widget,reset,meter,monitor,llm,aftellen,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex-gebruik",
+    "subtitle": "AI-limiet: Copilot en Gemini",
+    "keywords": "verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie,abonnement"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 89
+   },
+   "evidence": [
+    {
+     "term": "ai gebruik",
+     "country": "NL",
+     "our_rank": 3,
+     "results": null,
+     "top1": "UsageMaster: AI-gebruik",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude limiet",
+     "country": "NL",
+     "our_rank": 4,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/6",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude gebruik",
+     "country": "NL",
+     "our_rank": 2,
+     "results": null,
+     "top1": "UsageMaster: AI-gebruik",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "4/4",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "NL",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "NL",
+     "our_rank": null,
+     "results": null,
+     "top1": "CodexBar - Usage of AI",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "NL",
+     "our_rank": 8,
+     "results": null,
+     "top1": "Limits: AI Usage Tracker",
+     "top1_ratings": 2,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "verbruik",
+     "country": "NL",
+     "our_rank": null,
+     "results": null,
+     "top1": "Vattenfall Energie",
+     "top1_ratings": 6500,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "NL ai gebruik #3、claude limiet #4（6/6 是 AI 追蹤器）；標題直接放 Claude、Codex＋gebruik；verbruik 單獨搜是能源 App，只留作組合字；刪英文重複字。",
+   "depth": "deep"
+  },
+  "no": {
+   "current": {
+    "name": "UsageNow: AI-forbruk tracker",
+    "subtitle": "Claude, Codex, Copilot grenser",
+    "keywords": "code,dev,utvikler,usage,bruk,kvote,quota,teller,token,widget,reset,meter,monitor,llm,nedtelling,økt"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex-forbruk",
+    "subtitle": "AI-grenser: Copilot og Gemini",
+    "keywords": "kvote,teller,gjenstår,ukentlig,timer,varsel,nullstill,sporing,økt,abonnement,code,gpt,opus,sonnet"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 29,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "or-IN": {
+   "current": {
+    "name": "UsageNow: AI ବ୍ୟବହାର ଟ୍ରାକର",
+    "subtitle": "Claude, Codex, Copilot ସୀମା",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,coder,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex ବ୍ୟବହାର",
+    "subtitle": "AI ସୀମା: Copilot, Gemini",
+    "keywords": "ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,ଟ୍ରାକର,code"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 24,
+    "keywords": 49
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "pa-IN": {
+   "current": {
+    "name": "UsageNow: AI ਵਰਤੋਂ ਟ੍ਰੈਕਰ",
+    "subtitle": "Claude, Codex, Copilot ਸੀਮਾ",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,rate,timer"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex ਵਰਤੋਂ",
+    "subtitle": "AI ਸੀਮਾ: Copilot, Gemini",
+    "keywords": "ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,ਟ੍ਰੈਕਰ,code"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 24,
+    "keywords": 49
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "pl": {
+   "current": {
+    "name": "UsageNow: Zużycie AI tracker",
+    "subtitle": "Limity Claude, Codex, Copilot",
+    "keywords": "code,dev,programista,usage,quota,licznik,token,widget,reset,meter,monitor,llm,odliczanie,limit,sesja"
+   },
+   "recommended": {
+    "name": "UsageNow: Zużycie Claude/Codex",
+    "subtitle": "Limity AI: Copilot i Gemini",
+    "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code,gpt,opus,sonnet,vibe,credits"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 27,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "pt-BR": {
+   "current": {
+    "name": "UsageNow: Monitor de uso de IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,desenvolvedor,usage,tracker,consumo,cota,contador,token,widget,reset,llm,meter,sessão"
+   },
+   "recommended": {
+    "name": "UsageNow: Uso Claude e Codex",
+    "subtitle": "Limites IA: Copilot e Gemini",
+    "keywords": "consumo,cota,contador,reinício,restante,semanal,horas,alerta,rastreador,medidor,sessão,counter,cap"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 28,
+    "keywords": 98
+   },
+   "evidence": [
+    {
+     "term": "uso claude",
+     "country": "BR",
+     "our_rank": 9,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso do claude",
+     "country": "BR",
+     "our_rank": 9,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "uso ia",
+     "country": "BR",
+     "our_rank": null,
+     "results": null,
+     "top1": "UsageScope: Uso de IA",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "BR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "BR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Codex Meter",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "BR",
+     "our_rank": null,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "limite claude",
+     "country": "BR",
+     "our_rank": null,
+     "results": null,
+     "top1": "WhatsApp Messenger",
+     "top1_ratings": 8600000,
+     "intent_ok": false,
+     "ai_trackers_top10": "1/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "limite ia",
+     "country": "BR",
+     "our_rank": null,
+     "results": null,
+     "top1": "Meu Assessor: Assessores de IA",
+     "top1_ratings": 5,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "BR uso claude #9、uso ia 不在前 12（第 1 名 UsageScope: Uso de IA）；標題加 Claude、Codex，IA 放副標；pt-BR 也在 US 被索引，尾端補 counter、cap 兩個 US 用、且不與 en-US／es-MX 重複的英文字。",
+   "depth": "deep"
+  },
+  "pt-PT": {
+   "current": {
+    "name": "UsageNow: Monitor de uso de IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "keywords": "ai,code,dev,programador,usage,tracker,consumo,quota,contador,token,widget,reset,llm,meter,sessão,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Uso Claude e Codex",
+    "subtitle": "Limites IA: Copilot e Gemini",
+    "keywords": "consumo,contador,restante,semanal,horas,alerta,sessão,monitorizar,rastreador,code,gpt,opus,sonnet"
+   },
+   "lengths": {
+    "name": 28,
+    "subtitle": 28,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ro": {
+   "current": {
+    "name": "UsageNow: Consum AI tracker",
+    "subtitle": "Limite Claude, Codex, Copilot",
+    "keywords": "code,dev,dezvoltator,usage,quota,cotă,contor,token,widget,reset,meter,monitor,llm,numărătoare,rămas"
+   },
+   "recommended": {
+    "name": "UsageNow: Consum Claude/Codex",
+    "subtitle": "Limite AI: Copilot și Gemini",
+    "keywords": "cotă,contor,rămas,săptămânal,ore,alertă,resetare,urmărire,sesiune,code,gpt,opus,sonnet,vibe,credits"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 28,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ru": {
+   "current": {
+    "name": "UsageNow: Лимиты ИИ и расход",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "keywords": "ai,code,dev,разработчик,usage,tracker,нейросеть,токены,квота,счетчик,token,виджет,quota,meter,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex лимиты",
+    "subtitle": "Расход ИИ: Copilot и Gemini",
+    "keywords": "клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,лимит,code"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 27,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "sk": {
+   "current": {
+    "name": "UsageNow: AI limity a spotreba",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "keywords": "code,dev,vývojár,usage,tracker,využitie,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex limity",
+    "subtitle": "Spotreba AI: Copilot a Gemini",
+    "keywords": "využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code,gpt,opus,sonnet,vibe"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 29,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "sl-SI": {
+   "current": {
+    "name": "UsageNow: Poraba UI in limiti",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "keywords": "ai,code,dev,razvijalec,usage,tracker,kvota,števec,token,pripomoček,widget,reset,quota,meter,monitor"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex limiti",
+    "subtitle": "Poraba UI: Copilot in Gemini",
+    "keywords": "kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,gpt,opus,sonnet,vibe,left"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 28,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "sv": {
+   "current": {
+    "name": "UsageNow: AI-användning",
+    "subtitle": "Claude, Codex, Copilot gränser",
+    "keywords": "code,dev,utvecklare,usage,tracker,förbrukning,kvot,quota,mätare,token,widget,reset,meter,monitor,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex-gränser",
+    "subtitle": "AI-användning: Copilot, Gemini",
+    "keywords": "förbrukning,kvot,mätare,kvar,vecka,timmar,avisering,nollställ,spårning,code,gpt,opus,sonnet,vibe"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 30,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ta-IN": {
+   "current": {
+    "name": "UsageNow: AI பயன்பாடு",
+    "subtitle": "Claude, Codex, Copilot வரம்பு",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex வரம்பு",
+    "subtitle": "AI பயன்பாடு: Copilot, Gemini",
+    "keywords": "டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,மீதம்,டிராக்கர்,code"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 28,
+    "keywords": 64
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "te-IN": {
+   "current": {
+    "name": "UsageNow: AI వినియోగ ట్రాకర్",
+    "subtitle": "Claude, Codex, Copilot పరిమితి",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,hours"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex పరిమితి",
+    "subtitle": "AI వినియోగం: Copilot, Gemini",
+    "keywords": "టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,ట్రాకర్,code"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 54
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "th": {
+   "current": {
+    "name": "UsageNow: ติดตามการใช้ AI",
+    "subtitle": "ลิมิต Claude, Codex, Copilot",
+    "keywords": "code,dev,นักพัฒนา,usage,tracker,meter,quota,token,monitor,widget,llm,reset,limit,โควตา,โทเคน,วิดเจ็ต"
+   },
+   "recommended": {
+    "name": "UsageNow: ใช้งาน Claude/Codex",
+    "subtitle": "ลิมิต AI: Copilot, Gemini",
+    "keywords": "โควตา,โทเคน,วิดเจ็ต,รีเซ็ต,คงเหลือ,รายสัปดาห์,ชั่วโมง,แจ้งเตือน,ติดตาม,จำกัด,code,gpt,opus,sonnet"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 25,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "tr": {
+   "current": {
+    "name": "UsageNow: Yapay Zekâ Kullanımı",
+    "subtitle": "Claude, Codex, Copilot limiti",
+    "keywords": "ai,code,dev,geliştirici,kullanım,usage,tracker,kota,sayaç,token,widget,reset,sıfırlama,quota,meter"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex limiti",
+    "subtitle": "AI kullanımı: Copilot, Gemini",
+    "keywords": "yapay,zeka,kota,sayaç,kalan,haftalık,saat,bildirim,sıfırlama,takip,code,gpt,opus,sonnet,vibe,credits"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 29,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "uk": {
+   "current": {
+    "name": "UsageNow: Ліміти ШІ та витрата",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "keywords": "ai,code,dev,розробник,usage,tracker,нейромережа,токени,квота,лічильник,token,віджет,quota,meter,llm"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex ліміти",
+    "subtitle": "Витрата ШІ: Copilot і Gemini",
+    "keywords": "клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code,gpt"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 28,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "ur-PK": {
+   "current": {
+    "name": "UsageNow: AI استعمال ٹریکر",
+    "subtitle": "Claude, Codex, Copilot کی حد",
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,reset,meter,monitor,llm,limit,ٹوکن,کوٹہ,ویجیٹ"
+   },
+   "recommended": {
+    "name": "UsageNow: Claude/Codex استعمال",
+    "subtitle": "AI کی حد: Copilot, Gemini",
+    "keywords": "ٹوکن,کوٹہ,ویجیٹ,باقی,ٹریکر,نگرانی,code,gpt,opus,sonnet,vibe,credits,balance,left,budget,accounts"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 25,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "vi": {
+   "current": {
+    "name": "UsageNow: Theo dõi dùng AI",
+    "subtitle": "Hạn mức Claude, Codex, Copilot",
+    "keywords": "code,dev,lập trình,usage,tracker,token,widget,quota,meter,monitor,llm,reset,bộ đếm,đặt lại,phiên,api"
+   },
+   "recommended": {
+    "name": "UsageNow: Hạn mức Claude/Codex",
+    "subtitle": "Theo dõi AI: Copilot, Gemini",
+    "keywords": "giới,dùng,sử,dụng,lượng,còn,lại,đặt,tuần,giờ,thông,báo,tiện,ích,đếm,phiên,code,left,budget,accounts"
+   },
+   "lengths": {
+    "name": 30,
+    "subtitle": 28,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
+   "depth": "light"
+  },
+  "zh-Hans": {
+   "current": {
+    "name": "UsageNow：AI 用量追踪器",
+    "subtitle": "Claude、Codex、Copilot、Gemini 额度",
+    "keywords": "code,dev,开发者,程序员,usage,tracker,meter,quota,token,配额,限额,剩余,重置,倒计时,小组件,监控,统计,每周,编程,人工智能,大模型,智能体,llm,代码"
+   },
+   "recommended": {
+    "name": "UsageNow：Claude、Codex AI 用量追踪",
+    "subtitle": "剩余额度与重置倒计时・Copilot、Gemini",
+    "keywords": "配额,限额,限制,token,code,监控,仪表,小组件,提醒,通知,每周,5小时,锁屏,手表,上限,消耗,订阅,套餐,刷新,用完,多账号,统计,大模型,lockscreen,gauge"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 25,
+    "keywords": 94
+   },
+   "evidence": [
+    {
+     "term": "claude 用量",
+     "country": "SG",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 用量",
+     "country": "SG",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。SG 次要語系：SG 實測 claude 用量、ai 用量都不在前 12。",
+   "depth": "light"
+  },
+  "zh-Hant": {
+   "current": {
+    "name": "UsageNow：AI 用量與額度追蹤",
+    "subtitle": "Claude、Codex、Copilot 重置倒數",
+    "keywords": "code,dev,開發者,工程師,usage,tracker,meter,quota,token,使用量,限額,配額,限制,剩餘,倒數計時,小工具,監控,每週,程式,人工智慧,大型語言模型,llm"
+   },
+   "recommended": {
+    "name": "UsageNow：Claude、Codex AI 用量追蹤",
+    "subtitle": "剩餘額度與重置倒數・Copilot、Gemini",
+    "keywords": "使用量,限額,限制,配額,token,code,監控,儀表,小工具,widget,提醒,通知,每週,5小時,鎖定畫面,手錶,上限,消耗,訂閱,方案,重設,刷新,用完,多帳號,統計,opus"
+   },
+   "lengths": {
+    "name": 29,
+    "subtitle": 24,
+    "keywords": 94
+   },
+   "evidence": [
+    {
+     "term": "claude 用量",
+     "country": "TW",
+     "our_rank": 2,
+     "results": 16,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "itunes-search"
+    },
+    {
+     "term": "claude 額度",
+     "country": "TW",
+     "our_rank": 2,
+     "results": null,
+     "top1": "iCodex - Claude,Codex额度监控",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex 用量",
+     "country": "TW",
+     "our_rank": 2,
+     "results": null,
+     "top1": "Codex Tracker - 額度重置與用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 用量",
+     "country": "TW",
+     "our_rank": 4,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 額度",
+     "country": "TW",
+     "our_rank": 3,
+     "results": null,
+     "top1": "usAge：AI 額度儀表",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 使用量",
+     "country": "TW",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow：AI 用量與額度追蹤",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "4/8",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 限制",
+     "country": "TW",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow：AI 用量與額度追蹤",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "3/3",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude code 用量",
+     "country": "TW",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow：AI 用量與額度追蹤",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "3/6",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 剩餘",
+     "country": "TW",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow：AI 用量與額度追蹤",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "2/3",
+     "source": "web-top12"
+    },
+    {
+     "term": "剩餘額度",
+     "country": "TW",
+     "our_rank": 3,
+     "results": null,
+     "top1": "AI Limit: 額度與重置追蹤器",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "6/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 用量追蹤",
+     "country": "TW",
+     "our_rank": 2,
+     "results": null,
+     "top1": "Usages：AI 用量追蹤",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "token 用量",
+     "country": "TW",
+     "our_rank": 4,
+     "results": null,
+     "top1": "Usages：AI 用量追蹤",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "copilot 用量",
+     "country": "TW",
+     "our_rank": 1,
+     "results": null,
+     "top1": "UsageNow：AI 用量與額度追蹤",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "2/3",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex usage",
+     "country": "TW",
+     "our_rank": 12,
+     "results": null,
+     "top1": "CodexBar - Usage of AI",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai usage tracker",
+     "country": "TW",
+     "our_rank": 7,
+     "results": null,
+     "top1": "AI Limits & Reset Tracker",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "10/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "用量",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "流量監控：行動數據用量",
+     "top1_ratings": 4878,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "額度",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "逗pay",
+     "top1_ratings": 2298,
+     "intent_ok": false,
+     "ai_trackers_top10": "3/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "限制",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "「one sec」 延遲打開讓你分心的應用程式",
+     "top1_ratings": 272,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "使用量",
+     "country": "TW",
+     "our_rank": null,
+     "results": null,
+     "top1": "簡單照片壓縮 - 圖片轉檔、縮小與容量瘦身",
+     "top1_ratings": 98,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 用量",
+     "country": "HK",
+     "our_rank": 8,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude 額度",
+     "country": "HK",
+     "our_rank": 3,
+     "results": null,
+     "top1": "iCodex - Claude,Codex额度监控",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "codex 用量",
+     "country": "HK",
+     "our_rank": 9,
+     "results": null,
+     "top1": "Codex Tracker - 額度重置與用量",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "9/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 用量",
+     "country": "HK",
+     "our_rank": null,
+     "results": null,
+     "top1": "UsageScope: AI用量管理",
+     "top1_ratings": 1,
+     "intent_ok": true,
+     "ai_trackers_top10": "7/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "ai 額度",
+     "country": "HK",
+     "our_rank": null,
+     "results": null,
+     "top1": "usAge：AI 額度儀表",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "5/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "claude usage",
+     "country": "HK",
+     "our_rank": null,
+     "results": null,
+     "top1": "Usage for Claude",
+     "top1_ratings": 0,
+     "intent_ok": true,
+     "ai_trackers_top10": "8/10",
+     "source": "web-top12"
+    },
+    {
+     "term": "用量",
+     "country": "HK",
+     "our_rank": null,
+     "results": null,
+     "top1": "流量監控：行動數據用量",
+     "top1_ratings": 358,
+     "intent_ok": false,
+     "ai_trackers_top10": "0/10",
+     "source": "web-top12"
+    }
+   ],
+   "changes": "TW 各組合第 1 名都把品牌放標題（Usage for Claude、iCodex、Codex Tracker）；標題改放 Claude、Codex＋AI 用量追蹤，副標放剩餘額度／重置倒數＋Copilot、Gemini；刪 dev／usage／tracker／meter／quota／llm（TW、HK 同時索引 en-US＋en-GB）、開發者／工程師／程式（類別字）、倒數計時（計時器 App）、人工智慧／大型語言模型；限制保留（claude 限制 #1、3/3 為 AI 追蹤器）。",
+   "depth": "deep"
+  }
+ }
+}

@@ -59,3 +59,20 @@
 > 4. **在 GitHub Actions 頁面重新啟用 `telegram-daily`**：它是被手動停用的。名冊問題已修好。
 > 5. **把 `.github/growth/fifty-languages-campaign.json` 接進 threads-autopilot**：遵守檔案裡的 `posting_rules`（每帳號每天 ≤3 則、連結放留言、21 天不重複）與 `honesty_rules`。
 > 6. **GEO 降風險**：把排列組合式的模板頁改成 noindex 或移除，每 App 每語系保留一頁有真實截圖與 FAQ 的頁面；移除自家「最佳 X」排名頁和寫給 AI 看的指示文字；IndexNow 只送內容真的變了的網址。
+
+---
+
+## 0 token 自動運作（2026-10-13 起）
+
+雲端額度接近上限，LLM 排程已經全部停用（每日巡檢、Mochi 調價報告）。下面這些是不花 token 的 GitHub Actions，會照常每天跑：
+
+| 排程 | 做什麼 |
+|---|---|
+| growth-scoreboard（每天 10:41 台灣） | 53 款評分、母語關鍵字名次、類別榜；UsageNow 衝榜區塊：40 國開發者工具免費＋營收榜名次、8 個對手、27 組關鍵字。結果寫在 issue「growth-scoreboard」 |
+| portfolio-daily / telegram-daily | Telegram 每日精選；10/27 前「今日焦點」輪播 UsageNow；截圖少於 3 張的 App 自動跳過 |
+| geo-daily、indexnow-daily、pages | GEO 內容產生、IndexNow 通知；正式站上傳仍走配對發布（排隊組已修好，不會再被推送取消） |
+| line-watchdog、arquivo-pt-daily、software-heritage-daily、sov-weekly | 線路健康檢查與備份 |
+
+暫停中、要等額度重置（10/20 01:00 台灣）或你再開口才做：
+- 其餘 App 的雙模型副標／關鍵字調教。Mochi、ShotInbox 已完成第一模型，待 Fable 驗證；其他 7 款與剩下的 App 尚未開始。
+- 本機待辦：照 `LOCAL_TASKS.md` 執行，只在你於本機對話貼那一行時跑一次。

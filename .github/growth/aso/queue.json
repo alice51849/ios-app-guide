@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "note": "每日雙模型 ASO 佇列：每天處理第一個 status=todo 的 App。stage=tune 先由主模型調教再由不同模型驗證；stage=verify 只需第二模型驗證。完成改 done 並填 done_at。",
+  "apps": [
+    {
+      "key": "cvdesk",
+      "app_store_id": "6781337213",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumimission",
+      "app_store_id": "6779750237",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "priority": "high",
+      "stage": "verify",
+      "status": "todo"
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "priority": "high",
+      "stage": "verify",
+      "status": "todo"
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "unblurry",
+      "app_store_id": "6782275018",
+      "priority": "high",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "aim990",
+      "app_store_id": "6784974530",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "cyca",
+      "app_store_id": "6782251621",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lockhour",
+      "app_store_id": "6780107485",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumiweather",
+      "app_store_id": "6779552704",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumimath",
+      "app_store_id": "6778269699",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "photocream",
+      "app_store_id": "6781808054",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "sononote",
+      "app_store_id": "6782139553",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "priority": "medium",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "gmoney",
+      "app_store_id": "6755782939",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumiletters",
+      "app_store_id": "6778748533",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "picclear",
+      "app_store_id": "6780223070",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "sereno",
+      "app_store_id": "6788236641",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "snapport",
+      "app_store_id": "6780575828",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "tripbee",
+      "app_store_id": "6787754435",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    },
+    {
+      "key": "wordmate",
+      "app_store_id": "6789917808",
+      "priority": "low",
+      "stage": "tune",
+      "status": "todo"
+    }
+  ]
+}

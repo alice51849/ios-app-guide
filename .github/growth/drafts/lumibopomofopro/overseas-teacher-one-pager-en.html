@@ -1,0 +1,116 @@
+<!doctype html>
+<!--
+  Lumi注音星球 Pro：給海外中文學校老師的一頁介紹（lumibopomofopro-05，英文版）
+  用途：附在寄給海外中文學校、華文教師社群與台灣家長社團管理員的信裡（pitch-email-overseas-chinese-schools.md），說明 Pro 能怎麼幫週末中文學校的孩子在家練注音。
+  給誰：北美、澳洲等地週末中文學校老師與校長、華文教師社群、海外台灣家長社團管理員。
+  誰寄出：店主 Guan Feng Lai，以 Lumi Studio 名義、用本人信箱或本人帳號寄出；頁內已寫明是開發者本人製作。
+  規則：放兩張真實截圖（注音釣魚、家長頁；截圖方法見 pitch 信檔案）；截圖不可出現孩子姓名、照片或其他個資；不附回饋、折扣或交換條件；老師優惠代碼只有在 ASC 已產生時才另外提（lumibopomofopro-04，尚未產生）。
+  （英文頁）事實依據：bopomofo_pro_full.json（en-US 為主）：3–7 歲完整版；37 個注音、所有關卡與遊戲一次購買全部開放；沒有廣告、沒有內購彈窗、不需登入、不需網路；不蒐集個資、紀錄只存在孩子裝置；五種玩法（配對餵食、魔法描寫、聲調雲霄飛車、注音釣魚、星際競賽）；夥伴收集、每日學習目標、成就徽章、弱點複習；家長頁看進度；大按鈕、清楚語音；不含廣告、外部連結、社群功能；一次付費、永久使用、適合全家；適合海外華人家庭。50 種介面語言、App 內切換（店主確認）。
+  不能寫：價格數字（定價決策 lumibopomofopro-01 未定，寫「以各國 App Store 顯示為準」）；四聲或五聲的數字（zh-Hant 與 en 文案不一致，統一寫「聲調」）；老師代碼；評分、排名、「最好」；其他注音 App 名稱。
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumi Bopomofo Pro for Teachers</title>
+<style id="pagesize">@page { size: A4; margin: 10mm; }</style>
+<style>
+:root{--ink:#1c1d24;--muted:#5b606c;--line:#dcdee6;--soft:#f5f6fa;--accent:#6b46c1;--accent-soft:#f0eafd;--pw:190mm;--ph:277mm}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e9eaf0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang TC","Noto Sans TC",sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px}
+.bar label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.bar select,.bar button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.bar button{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.note{max-width:820px;margin:12px auto 0;padding:0 16px;color:var(--muted);font-size:13px;line-height:1.6}
+.wrap{padding:16px 0 40px}
+.page{width:var(--pw);height:var(--ph);margin:0 auto;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);position:relative;overflow:hidden;zoom:var(--z,1)}
+.pad{padding:8mm 9mm 0}
+.eyebrow{display:inline-block;font-size:3.1mm;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:.8mm 2.4mm;border-radius:1.5mm}
+h1{font-size:7mm;line-height:1.25;margin:2mm 0 1.5mm}
+.sub{font-size:3.1mm;color:var(--muted);margin:0 0 3mm}
+.intro{font-size:3.5mm;line-height:1.6;margin:0 0 3.5mm;padding:2.5mm 3.5mm;background:var(--soft);border-left:1mm solid var(--accent);border-radius:1mm}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:3mm;margin-bottom:3.5mm}
+.shot{border:.4mm dashed #b8bccb;border-radius:2mm;height:46mm;position:relative;cursor:pointer;background:#fbfbfd;overflow:hidden;text-align:center}
+.shot img[hidden],.shot input{display:none}
+.shot img{position:absolute;inset:0;width:100%;height:calc(100% - 8mm);object-fit:contain;background:#fff}
+.shot .ph{padding:6mm 4mm 0;font-size:3.1mm;color:var(--muted);line-height:1.5}
+.shot .ph b{display:block;font-size:3.5mm;color:var(--ink);margin-bottom:1mm}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;height:8mm;line-height:3.6mm;padding:.6mm 2mm;font-size:2.9mm;background:var(--accent-soft);color:var(--ink)}
+.shot.filled{border-style:solid;border-color:var(--line);cursor:default}
+.shot.filled .ph{display:none}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:6mm;align-items:start}
+.sec{break-inside:avoid;margin:0 0 3.2mm}
+.sec h2{font-size:3.9mm;margin:0 0 1.2mm;color:var(--accent)}
+.sec p,.sec li{font-size:3.25mm;line-height:1.55;margin:0}
+.sec ul{margin:0;padding-left:4.2mm}
+.sec li{margin:0 0 .4mm}
+.url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:2.7mm;color:var(--muted);word-break:break-all}
+.foot{position:absolute;left:9mm;right:9mm;bottom:5mm;border-top:.3mm solid var(--line);padding-top:1.6mm;font-size:2.9mm;color:var(--muted);display:flex;justify-content:space-between;gap:4mm;line-height:1.45}
+.fill{background:#fff3a6;outline:1px dashed #d4b400;padding:0 .6mm}
+body.letter .pad{zoom:.93}
+body.hideempty .shot:not(.filled){visibility:hidden}
+body.hideempty .shots.allempty{display:none}
+@media print{
+  html,body{background:#fff}
+  .bar,.note{display:none}
+  .wrap{padding:0}
+  .page{box-shadow:none;zoom:1!important}
+  .fill{background:none;outline:none;padding:0}
+  .shot{cursor:default}
+}
+</style>
+</head>
+<body>
+<div class="bar"><strong>Lumi Bopomofo Pro for Teachers</strong>
+<label>Paper <select id="paper"><option value="a4">A4</option><option value="letter">Letter</option></select></label>
+<label><input type="checkbox" id="hideempty" checked> Hide empty screenshot boxes when printing</label>
+<button type="button" onclick="window.print()">Print / Save as PDF</button></div>
+<p class="note">Click a dashed box to drop in a screenshot (the image stays in your browser and is never uploaded). Yellow text is editable: fill it in before sending. Print at 100% scale with background graphics on.</p>
+<div class="wrap"><section class="page"><div class="pad">
+<span class="eyebrow">For weekend Chinese school teachers</span>
+<h1>Lumi Bopomofo Pro: Zhuyin practice that continues after class</h1>
+<p class="sub">Made by Lumi Studio · Guan Feng Lai, the app's developer. This is a product sheet, not a school or government document.</p>
+<p class="intro">Weekend Chinese school meets for a few hours a week, so home practice depends on parents, and many parents do not read Zhuyin themselves. Lumi Bopomofo Pro is the complete Zhuyin edition for ages 3 to 7: pronunciation, blending, tones and stroke tracing for all 37 symbols, everything unlocked with one purchase. No ads, no in-app purchase pop-ups, no sign-up and no internet required.</p>
+<div class="shots">
+<div class="shot"><input type="file" accept="image/*" hidden><img alt="" hidden><div class="ph"><b>Screenshot: Bopomofo Fishing</b>Click to add a Bopomofo Fishing screenshot</div><div class="cap">Bopomofo Fishing: hear a sound, catch the right fish</div></div>
+<div class="shot"><input type="file" accept="image/*" hidden><img alt="" hidden><div class="ph"><b>Screenshot: parents page</b>Click to add a parents page screenshot</div><div class="cap">Parents page: check learning progress any time</div></div>
+</div>
+<div class="cols">
+<div class="col">
+<div class="sec"><h2>Five games</h2><ul><li><b>Match and Feed</b>: feed a companion the right sound</li><li><b>Magic Tracing</b>: follow the strokes, learn the shapes</li><li><b>Tone Roller Coaster</b>: hear the tones in motion</li><li><b>Bopomofo Fishing</b>: listen to the blend, catch the right fish</li><li><b>Star Race</b>: beat the clock and your own best score</li></ul><p>Plus collectible companions, daily goals, achievement badges and weak-spot review.</p></div>
+<div class="sec"><h2>Parents who don't read Zhuyin can still help</h2><p>The interface comes in 50 languages, switchable inside the app (English, Spanish, French, Japanese, Korean, Vietnamese and more) without changing the phone's language. Only the interface text changes; the child still learns Zhuyin. Big buttons and clear voice prompts let young children play on their own.</p></div>
+<div class="sec"><h2>Privacy</h2><ul><li>Collects no personal data; progress stays on the child's device</li><li>The parents page lives on that device too; nothing is sent to teachers or to the developer</li><li>No ads, no outside links, no social features</li></ul></div>
+<div class="sec"><h2>My promise</h2><p>Nothing is offered for recommendations, shares or ratings. Whether to mention the app to parents is the teacher's call.</p></div>
+</div>
+<div class="col">
+<div class="sec"><h2>A simple routine</h2><ul><li>After class introduces new symbols, parents give the child 10 minutes with the app that week</li><li>Before the next class, parents glance at the parents page and tell the teacher where the child got stuck</li><li>The app covers listening, tones and blending; handwriting homework stays on paper</li></ul></div>
+<div class="sec"><h2>Price</h2><p>Buy once, use forever, share with the family. No subscription and no in-app purchases (price as shown in each country's App Store). To try first, the free Lumi Bopomofo lets families play the core games and unlock everything later with one purchase.</p></div>
+<div class="sec"><h2>Free teaching resources</h2><p>Same site, no login, no child data stored:</p><ul><li>5-day Zhuyin lesson plan for heritage schools (English + Traditional Chinese, CC BY 4.0)<br><span class="url">open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html</span></li><li>Parent-teacher handoff kit (bilingual, CC BY 4.0)<br><span class="url">open.cait518.cc/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html</span></li></ul><p>Charts, flashcards and practice sheets: <span class="url">open.cait518.cc/ios-app-guide/tools/</span></p></div>
+</div>
+</div></div>
+<div class="foot"><span>Contact: <span class="fill" contenteditable="true">[fill in before sending: owner email]</span> · Search “Lumi Bopomofo Pro” on the App Store</span><span>Written by the developer</span></div>
+</section></div>
+<script>
+(function(){
+  var sizes={a4:{w:190,h:277,css:"A4"},letter:{w:195.9,h:259.4,css:"letter"}};
+  var paper=document.getElementById("paper"),root=document.documentElement,body=document.body;
+  function fit(){var s=sizes[paper.value];body.classList.toggle("letter",paper.value==="letter");root.style.setProperty("--pw",s.w+"mm");root.style.setProperty("--ph",s.h+"mm");
+    document.getElementById("pagesize").textContent="@page { size: "+s.css+"; margin: 10mm; }";
+    var px=s.w*96/25.4,avail=Math.min(window.innerWidth-24,px);root.style.setProperty("--z",(avail/px).toFixed(3));}
+  paper.addEventListener("change",fit);window.addEventListener("resize",fit);
+  window.addEventListener("beforeprint",function(){root.style.setProperty("--z","1")});window.addEventListener("afterprint",fit);
+  var he=document.getElementById("hideempty");function u(){body.classList.toggle("hideempty",he.checked);
+    var row=document.querySelector(".shots");if(row){row.classList.toggle("allempty",!row.querySelector(".shot.filled"));}}
+  he.addEventListener("change",u);
+  Array.prototype.forEach.call(document.querySelectorAll(".shot"),function(box){
+    var input=box.querySelector("input"),img=box.querySelector("img");
+    box.addEventListener("click",function(e){if(e.target!==input)input.click();});
+    input.addEventListener("change",function(){var f=input.files&&input.files[0];if(!f)return;var r=new FileReader();
+      r.onload=function(){img.src=r.result;img.hidden=false;box.classList.add("filled");u();};r.readAsDataURL(f);});
+  });
+  fit();u();
+})();
+</script>
+</body>
+</html>

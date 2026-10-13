@@ -1,0 +1,193 @@
+<!doctype html>
+<!--
+  用途：aibriefpack-01 單頁指南「截圖貼給 AI 前的 5 步檢查」（zh-Hant／ja／en）。方法為主，AI Brief 只是第 3、4 步可用的工具之一。
+        這是 AI Brief 唯一能創造需求的入口：沒有人在搜「交給 AI 前先整理」，所以先教方法。
+  對象：要把客戶截圖、合約 PDF、會議筆記貼給生成式 AI 的上班族、自由工作者、學生；日本讀者多半受公司生成 AI 內規約束。
+  發布者：店主 Guan Feng Lai 以本人名義公開（頁尾揭露作者是 AI Brief 開發者）。
+  發布規則：只發這一頁，不做模板量產；不寫「最佳」「第一」；不引用無出處的外洩事件數字；不點名任何 AI 服務或他牌；
+           頁面可放官網或 GitHub Pages，社群只把它當連結放在留言或簡介；不宣稱 AI Brief 能保證匿名。
+  事實依據：AI Brief App Store 商店文案（US／TW／JP，2026-10-13 公開 lookup）；50 種介面語言、App 內切換為店主確認。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Checks Before AI</title>
+<meta name="description" content="A tool-neutral, five-step check before pasting screenshots, PDFs or notes into a generative AI, in Traditional Chinese, Japanese and English.">
+<style>
+  :root { --bg: #f9f9f7; --fg: #1c1c1e; --muted: #5d5d66; --line: #dddbd3; --accent: #3d6b4f; --card: #ffffff; --note: #eef2ec; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #131514; --fg: #ebedeb; --muted: #a1a6a2; --line: #303532; --accent: #8fc4a2; --card: #1b1e1c; --note: #1f2a23; }
+  }
+  :root[data-theme="dark"] { --bg: #131514; --fg: #ebedeb; --muted: #a1a6a2; --line: #303532; --accent: #8fc4a2; --card: #1b1e1c; --note: #1f2a23; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Noto Sans JP", "Noto Sans", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav.langs { display: flex; flex-wrap: wrap; gap: 8px; }
+  nav.langs a { color: var(--accent); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+  section.lang { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 24px; }
+  h1 { font-size: 26px; line-height: 1.3; margin: 0 0 6px; }
+  p.lede { color: var(--muted); margin: 0 0 16px; }
+  .step { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; }
+  .step h2 { font-size: 18px; margin: 0 0 6px; display: flex; gap: 10px; align-items: baseline; }
+  .step h2 .n { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--bg); font-size: 15px; line-height: 28px; text-align: center; }
+  .step ul { margin: 0; padding-left: 20px; }
+  .step li { margin: 3px 0; }
+  .tool, .limits { background: var(--note); border-radius: 12px; padding: 12px 16px; margin-top: 16px; font-size: 15px; }
+  .limits { color: var(--muted); }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+  @media print {
+    body { background: #fff; color: #000; }
+    nav.langs { display: none; }
+    section.lang { break-before: page; border: 0; margin: 0; }
+    section.lang:first-of-type { break-before: auto; }
+    .step { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Language">
+  <a href="#zh-Hant" hreflang="zh-Hant">中文</a>
+  <a href="#ja" hreflang="ja">日本語</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+
+<section class="lang" id="zh-Hant" lang="zh-Hant">
+  <h1>截圖貼給 AI 前的 5 步檢查</h1>
+  <p class="lede">把客戶對話截圖、合約 PDF、會議筆記丟給 AI 之前，花兩分鐘走完這五步。不管用哪個 AI、哪個工具都適用。</p>
+
+  <div class="step"><h2><span class="n">1</span>先問：這份資料可以給 AI 嗎？</h2>
+    <ul>
+      <li>公司或學校有生成式 AI 使用規範的，先照規範：哪些服務可以用、哪些資料不能輸入。</li>
+      <li>涉及客戶、病患、學生、同事的資料，想一想對方會不會預期資料被這樣使用。</li>
+      <li>不確定就先不貼，問主管或負責的窗口。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">2</span>只留這次需要的範圍</h2>
+    <ul>
+      <li>截圖先裁切，只留跟問題有關的區塊。</li>
+      <li>多頁 PDF 只挑相關的頁。</li>
+      <li>把問題寫清楚，AI 才不會在無關的內容裡找答案。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">3</span>逐項處理個人與機密資訊</h2>
+    <ul>
+      <li>常見要處理的：姓名、電話、Email、地址、身分證或護照號碼、帳號與金額、病歷資訊、客戶公司名、內部專案代號、合約編號。</li>
+      <li>截圖特別容易漏的：狀態列與通知預覽、聊天室裡其他人的名字和大頭貼、網址列（可能帶有登入參數）、背景分頁的標題、照片裡的車牌和門牌。</li>
+      <li>用代號替換，而不是整段刪掉，例如「客戶 A」「電話 1」，AI 才看得懂彼此的關係。同一個人全份用同一個代號。</li>
+      <li>代號對照表留在自己手上，不要一起貼給 AI。</li>
+      <li>自動偵測只是輔助，任何工具都可能漏掉，最後一定要自己看過。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">4</span>標出來源與不確定之處</h2>
+    <ul>
+      <li>每個重要事實註明出自哪張截圖、PDF 的哪一頁。</li>
+      <li>資料之間互相矛盾的地方先標出來，不要讓 AI 自己挑一個。</li>
+      <li>還沒有答案的問題，直接寫成「待確認」。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">5</span>送出前讀一遍，回答回來再核對</h2>
+    <ul>
+      <li>從頭到尾讀一次要送出的全文，確認沒有漏掉的個資。</li>
+      <li>AI 的回答拿回來後，重要的數字和結論回到原始資料核對。</li>
+    </ul></div>
+
+  <p class="tool">第 3、4 步最花時間。如果想在 iPhone 上做，AI Brief（我是開發者）是其中一個工具：把截圖、PDF、筆記、連結整理成一份有標題的摘要；每筆事實保留來源與信賴度，找出互相衝突和待解的問題；偵測到的私密資訊不會自動刪除，由你逐項選擇保留、替換或移除，匯出時套用。OCR、PDF 讀取與隱私偵測使用 Apple 框架在裝置端執行。它不保證完全匿名。介面 50 種語言，App 內就能切換。</p>
+  <p class="limits">這份清單不是法律意見。個人資料保護與組織規範，以你所在地的法規和公司、學校的規定為準。</p>
+</section>
+
+<section class="lang" id="ja" lang="ja">
+  <h1>スクショを AI に貼る前の5ステップ確認</h1>
+  <p class="lede">顧客とのやり取りのスクショ、契約書の PDF、会議メモを生成 AI に渡す前に、2分でこの5つを確認します。どの AI、どのツールを使う場合でも同じです。</p>
+
+  <div class="step"><h2><span class="n">1</span>まず確認：この資料を AI に渡してよいか</h2>
+    <ul>
+      <li>会社や学校に生成 AI の利用ルールがあるなら、まずそれに従う。使ってよいサービス、入力してはいけない情報を確認。</li>
+      <li>顧客、患者、学生、同僚の情報が含まれるなら、本人がこう使われることを想定しているかを考える。</li>
+      <li>迷ったら貼らずに、上司や担当窓口に確認する。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">2</span>今回必要な範囲だけ残す</h2>
+    <ul>
+      <li>スクショは先にトリミングし、質問に関係する部分だけ残す。</li>
+      <li>複数ページの PDF は、関係するページだけ選ぶ。</li>
+      <li>質問をはっきり書くと、AI が関係のない部分から答えを探さずに済む。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">3</span>個人情報と機密情報を項目ごとに処理する</h2>
+    <ul>
+      <li>よく対象になるもの：氏名、電話番号、メールアドレス、住所、マイナンバーや旅券番号、口座番号と金額、診療情報、取引先の社名、社内の案件コード、契約番号。</li>
+      <li>スクショで見落としやすいもの：ステータスバーと通知のプレビュー、トーク画面に写るほかの人の名前やアイコン、アドレスバー（ログイン用のパラメータを含むことがある）、背景のタブ名、写真に写った車のナンバーや表札。</li>
+      <li>消すより置き換える。「取引先A」「電話1」のようにすると、AI も関係を読み取れる。同じ人には最後まで同じ記号を使う。</li>
+      <li>置き換えの対応表は手元に残し、AI には渡さない。</li>
+      <li>自動検出は補助にすぎない。どのツールも見落とすことがあるので、最後は必ず自分の目で確認する。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">4</span>出典と不確かな点を書いておく</h2>
+    <ul>
+      <li>重要な事実ごとに、どのスクショ、PDF の何ページから来たかを残す。</li>
+      <li>資料どうしで食い違う点は先に印を付ける。AI に勝手にどちらかを選ばせない。</li>
+      <li>まだ答えのない点は「要確認」と書いておく。</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">5</span>送る前に全文を読み、回答は原資料で確かめる</h2>
+    <ul>
+      <li>送る文章を最初から最後まで一度読み、残っている個人情報がないか確認する。</li>
+      <li>AI の回答が返ってきたら、大事な数字と結論を元の資料で確かめる。</li>
+    </ul></div>
+
+  <p class="tool">時間がかかるのはステップ3と4です。iPhone で行いたい場合の一例として、私が開発した AI Brief があります。スクショ、PDF、メモ、リンクを見出し付きの要約にまとめ、事実ごとに出典と信頼度を残し、矛盾や未解決の質問を洗い出します。検出した個人情報は自動では消さず、項目ごとに保持・置換・削除を選べて、書き出し時に反映されます。OCR、PDF 読み取り、プライバシー検出は Apple のフレームワークを端末内で利用します。匿名性は保証しません。表示言語は50種類で、アプリ内で切り替えられます。</p>
+  <p class="limits">このチェックリストは法的助言ではありません。個人情報の取り扱いは、お住まいの地域の法令と、所属する組織のルールに従ってください。</p>
+</section>
+
+<section class="lang" id="en" lang="en">
+  <h1>Five checks before you paste screenshots into an AI</h1>
+  <p class="lede">Before you hand customer chat screenshots, a contract PDF or meeting notes to a generative AI, spend two minutes on these five steps. They apply whatever AI or tool you use.</p>
+
+  <div class="step"><h2><span class="n">1</span>First: may this material go to an AI at all?</h2>
+    <ul>
+      <li>If your company or school has a generative-AI policy, follow it first: which services are allowed, which data must never be entered.</li>
+      <li>If the material involves customers, patients, students or colleagues, ask whether they would expect their information to be used this way.</li>
+      <li>When unsure, don't paste. Ask your manager or the person responsible.</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">2</span>Keep only what this question needs</h2>
+    <ul>
+      <li>Crop screenshots to the part that matters.</li>
+      <li>From a long PDF, pick only the relevant pages.</li>
+      <li>Write the question clearly so the AI doesn't hunt for answers in unrelated text.</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">3</span>Handle personal and confidential details one by one</h2>
+    <ul>
+      <li>The usual list: names, phone numbers, email and street addresses, ID or passport numbers, account numbers and amounts, health information, client company names, internal project codes, contract numbers.</li>
+      <li>Easy to miss in screenshots: the status bar and notification previews, other people's names and avatars in a chat, the address bar (it can carry sign-in parameters), titles of background tabs, licence plates and house numbers in photos.</li>
+      <li>Replace rather than delete: "Client A", "Phone 1". The AI can still follow who is who. Use the same placeholder for the same person throughout.</li>
+      <li>Keep your placeholder key to yourself; don't paste it along.</li>
+      <li>Automatic detection is a helper, not a guarantee. Any tool can miss things, so read it yourself at the end.</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">4</span>Mark sources and uncertainty</h2>
+    <ul>
+      <li>For each important fact, note which screenshot or which PDF page it came from.</li>
+      <li>Flag places where your sources disagree instead of letting the AI quietly pick one.</li>
+      <li>Write open questions down as "to confirm".</li>
+    </ul></div>
+
+  <div class="step"><h2><span class="n">5</span>Read it once before sending; check the answer after</h2>
+    <ul>
+      <li>Read the full text you are about to send, start to finish, looking for anything personal you missed.</li>
+      <li>When the answer comes back, check key numbers and conclusions against the original material.</li>
+    </ul></div>
+
+  <p class="tool">Steps 3 and 4 take the longest. If you'd like to do them on an iPhone, AI Brief (I'm its developer) is one tool for it: it turns screenshots, PDFs, notes and links into one brief with headings, keeps each fact's source and confidence, and flags conflicts and open questions. Detected private details are never removed automatically; you keep, replace or remove each one, and the changes apply at export. OCR, PDF reading and privacy detection use Apple frameworks on the device. It does not promise anonymity. Its interface comes in 50 languages, switchable inside the app.</p>
+  <p class="limits">This checklist is not legal advice. For personal data, follow the law where you are and your organization's rules.</p>
+</section>
+
+<footer>
+  作者：Guan Feng Lai，AI Brief 開發者 · 筆者：Guan Feng Lai（AI Brief 開発者） · Written by Guan Feng Lai, developer of AI Brief.
+</footer>
+</main>
+</body>
+</html>

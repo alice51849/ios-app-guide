@@ -1,0 +1,117 @@
+<!doctype html>
+<!--
+  Lumi 數學星球：兒童數學（Lumi Math Pro）：給安親班／家教老師的一頁說明（lumimathpro-04）
+  用途：附在寄給安親班、家教、低年級老師的信裡（pitch-email-tutors-zh-hant.md）。Pro 在店面上看不出和免費 Lite 的差別，唯一能講清楚的是老師工具：20 題附解答練習卷與學習報告 PDF。
+  給誰：安親班主任與老師、數學家教、國小低年級老師。
+  誰寄出：店主 Guan Feng Lai，以 Lumi Studio 名義、用本人信箱寄出；頁內已寫明是開發者本人製作。
+  規則：兩格截圖由店主從 App 匯出（20 題練習卷樣張、學習報告樣張），不可出現孩子姓名；不附回饋或交換條件；老師試用代碼（lumimathpro-03）尚未產生，不要提。全文不提任何數學競賽名稱。
+  事實依據：math_pro_full.json zh-Hant：46 種題型（數列規律、邏輯推理、找規律、比大小、序數、組合、應用題、幾何空間，加上加減乘除、位值、進退位）；黏土圖示看圖就懂、全程語音可調慢速、還不識字也能自己闖關；弱項練習（集中最常錯題型、換新數字重練）；五大能力（數與計算、規律與數列、邏輯與推理、幾何與空間、生活與應用）；每日挑戰、60 秒限時競賽、12 種成就與 14 位夥伴；家長專區依目前程度產生 20 題算式練習卷（附解答，存 PDF 或列印）、學習報告 PDF；一次購買永久使用、無廣告、無內購、不蒐集個資、進度可本地匯出／匯入、家長確認關卡；5–8 歲打底、國小延伸、大人也能玩；題目文字與語音為繁中、英、日、韓。math_planet_full.json：免費從前幾顆星球與每日挑戰開始。50 種介面語言、App 內切換（店主確認）。數學練習題產生器網址 2026-10-13 實測可開。
+  不能寫：任何競賽名稱或「競賽級」；「質感媲美主機大作」等誇大語；多位孩子分開記錄、班級管理（商店文案沒寫）；50 語題目或語音（題目語音只有四語）；價格數字；評分、排名、「最好」。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>給安親班與家教老師的一頁說明</title>
+<style id="pagesize">@page { size: A4; margin: 10mm; }</style>
+<style>
+:root{--ink:#1c1d24;--muted:#5b606c;--line:#dcdee6;--soft:#f5f6fa;--accent:#0f766e;--accent-soft:#e3f5f2;--pw:190mm;--ph:277mm}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e9eaf0;color:var(--ink);font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px}
+.bar label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.bar select,.bar button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.bar button{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.note{max-width:820px;margin:12px auto 0;padding:0 16px;color:var(--muted);font-size:13px;line-height:1.6}
+.wrap{padding:16px 0 40px}
+.page{width:var(--pw);height:var(--ph);margin:0 auto;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);position:relative;overflow:hidden;zoom:var(--z,1)}
+.pad{padding:8mm 9mm 0}
+.eyebrow{display:inline-block;font-size:3.1mm;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:.8mm 2.4mm;border-radius:1.5mm}
+h1{font-size:6.6mm;line-height:1.25;margin:2mm 0 1.5mm}
+.sub{font-size:3.1mm;color:var(--muted);margin:0 0 3mm}
+.intro{font-size:3.5mm;line-height:1.6;margin:0 0 3.5mm;padding:2.5mm 3.5mm;background:var(--soft);border-left:1mm solid var(--accent);border-radius:1mm}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:3mm;margin-bottom:3.5mm}
+.shot{border:.4mm dashed #b8bccb;border-radius:2mm;height:52mm;position:relative;cursor:pointer;background:#fbfbfd;overflow:hidden;text-align:center}
+.shot img[hidden],.shot input{display:none}
+.shot img{position:absolute;inset:0;width:100%;height:calc(100% - 8mm);object-fit:contain;background:#fff}
+.shot .ph{padding:6mm 4mm 0;font-size:3.1mm;color:var(--muted);line-height:1.5}
+.shot .ph b{display:block;font-size:3.5mm;color:var(--ink);margin-bottom:1mm}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;height:8mm;line-height:3.6mm;padding:.6mm 2mm;font-size:2.9mm;background:var(--accent-soft);color:var(--ink)}
+.shot.filled{border-style:solid;border-color:var(--line);cursor:default}
+.shot.filled .ph{display:none}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:6mm;align-items:start}
+.sec{break-inside:avoid;margin:0 0 3.2mm}
+.sec h2{font-size:3.9mm;margin:0 0 1.2mm;color:var(--accent)}
+.sec p,.sec li{font-size:3.25mm;line-height:1.55;margin:0}
+.sec ul{margin:0;padding-left:4.2mm}
+.sec li{margin:0 0 .4mm}
+.url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:2.7mm;color:var(--muted);word-break:break-all}
+.foot{position:absolute;left:9mm;right:9mm;bottom:5mm;border-top:.3mm solid var(--line);padding-top:1.6mm;font-size:2.9mm;color:var(--muted);display:flex;justify-content:space-between;gap:4mm;line-height:1.45}
+.fill{background:#fff3a6;outline:1px dashed #d4b400;padding:0 .6mm}
+body.letter .pad{zoom:.93}
+body.hideempty .shot:not(.filled){visibility:hidden}
+body.hideempty .shots.allempty{display:none}
+@media print{
+  html,body{background:#fff}
+  .bar,.note{display:none}
+  .wrap{padding:0}
+  .page{box-shadow:none;zoom:1!important}
+  .fill{background:none;outline:none;padding:0}
+  .shot{cursor:default}
+}
+</style>
+</head>
+<body>
+<div class="bar"><strong>給安親班與家教老師的一頁說明</strong>
+<label>紙張 <select id="paper"><option value="a4">A4</option><option value="letter">Letter</option></select></label>
+<label><input type="checkbox" id="hideempty" checked> 列印時隱藏沒放截圖的方框</label>
+<button type="button" onclick="window.print()">列印／另存 PDF</button></div>
+<p class="note">點虛線方框可以放入截圖（圖檔只在你的瀏覽器裡顯示，不會上傳）。黃色底的文字可以直接點進去修改，寄出前請填好。列印請選縮放 100%、勾選「背景圖形」。</p>
+<div class="wrap"><section class="page"><div class="pad">
+<span class="eyebrow">給安親班、家教與低年級老師</span>
+<h1>Lumi 數學星球：20 題附解答練習卷，加上一頁學習報告</h1>
+<p class="sub">製作：Lumi Studio・Guan Feng Lai（App 開發者本人）。這一頁說明 App 能做什麼、不能做什麼，方便老師自己判斷。</p>
+<p class="intro">給 5–8 歲打底、國小延伸的數學 App。老師最用得到的是家長專區的兩個匯出：依孩子目前程度一鍵產生 <b>20 題算式練習卷（附解答）</b>，存成 PDF 或直接列印；以及一份 <b>學習報告 PDF</b>，各項能力與弱項一目了然。一次購買，沒有廣告、沒有內購，不蒐集個人資料。</p>
+<div class="shots">
+<div class="shot"><input type="file" accept="image/*" hidden><img alt="" hidden><div class="ph"><b>截圖：20 題練習卷樣張</b>點這裡放入 App 匯出的練習卷</div><div class="cap">依目前程度產生的 20 題練習卷，附解答</div></div>
+<div class="shot"><input type="file" accept="image/*" hidden><img alt="" hidden><div class="ph"><b>截圖：學習報告樣張</b>點這裡放入 App 匯出的學習報告</div><div class="cap">學習報告：五大能力與弱項</div></div>
+</div>
+<div class="cols">
+<div class="col">
+<div class="sec"><h2>46 種題型</h2><p>數列規律、邏輯推理、找規律、比大小、序數、組合、應用題、幾何空間，加上加減乘除、位值與進退位。題目用黏土圖示，看圖就懂；全程語音、可調慢速，還不識字的孩子也能自己玩。</p></div>
+<div class="sec"><h2>弱項練習</h2><p>App 會記錄每一種題型的表現；「弱項練習」把最常錯的題型集中起來，換上新的數字反覆練。</p></div>
+<div class="sec"><h2>五大能力</h2><p>數與計算、規律與數列、邏輯與推理、幾何與空間、生活與應用。「成就」頁看得到完成度與各項分數，和家長溝通時有具體的依據。</p></div>
+<div class="sec"><h2>語言</h2><p>介面有 50 種語言，可以在 App 內切換，新住民家長也看得懂選單。題目文字與語音提供繁體中文、英文、日文、韓文。</p></div>
+</div>
+<div class="col">
+<div class="sec"><h2>安親班可以這樣用</h2><ul><li>學校作業寫完後，給孩子 10 分鐘的弱項練習</li><li>每週印一張 20 題練習卷，紙筆寫完再對解答</li><li>用學習報告跟家長說明孩子的強項和要加強的地方</li><li>每日挑戰和 60 秒限時競賽，讓孩子挑戰自己的最高分</li></ul></div>
+<div class="sec"><h2>家長在意的事</h2><ul><li>一次購買、永久使用；沒有廣告、沒有內購</li><li>不蒐集任何個人資料，全部在裝置上</li><li>進度可以在本機匯出、匯入，換裝置不怕不見</li><li>家長專區前有家長確認關卡</li></ul></div>
+<div class="sec"><h2>先試再決定</h2><p>同系列的免費版「Lumi數學星球」可以先玩前幾顆星球與每日挑戰。不想用 App，也可以用我做的免費網頁「數學練習題產生器」（加減乘除、可選擇印答案，免註冊）：<br><span class="url">open.cait518.cc/ios-app-guide/zh-Hant/tools/math-worksheet-generator.html</span></p></div>
+<div class="sec"><h2>我的承諾</h2><p>不以任何回饋交換推薦、轉發或評分；老師不需要回信，也不需要告訴我是否使用。</p></div>
+</div>
+</div></div>
+<div class="foot"><span>聯絡：<span class="fill" contenteditable="true">【寄前填入：店主聯絡信箱】</span>｜App Store 搜尋「Lumi 數學星球：兒童數學」</span><span>本頁由開發者本人製作</span></div>
+</section></div>
+<script>
+(function(){
+  var sizes={a4:{w:190,h:277,css:"A4"},letter:{w:195.9,h:259.4,css:"letter"}};
+  var paper=document.getElementById("paper"),root=document.documentElement,body=document.body;
+  function fit(){var s=sizes[paper.value];body.classList.toggle("letter",paper.value==="letter");root.style.setProperty("--pw",s.w+"mm");root.style.setProperty("--ph",s.h+"mm");
+    document.getElementById("pagesize").textContent="@page { size: "+s.css+"; margin: 10mm; }";
+    var px=s.w*96/25.4,avail=Math.min(window.innerWidth-24,px);root.style.setProperty("--z",(avail/px).toFixed(3));}
+  paper.addEventListener("change",fit);window.addEventListener("resize",fit);
+  window.addEventListener("beforeprint",function(){root.style.setProperty("--z","1")});window.addEventListener("afterprint",fit);
+  var he=document.getElementById("hideempty");function u(){body.classList.toggle("hideempty",he.checked);
+    var row=document.querySelector(".shots");if(row){row.classList.toggle("allempty",!row.querySelector(".shot.filled"));}}
+  he.addEventListener("change",u);
+  Array.prototype.forEach.call(document.querySelectorAll(".shot"),function(box){
+    var input=box.querySelector("input"),img=box.querySelector("img");
+    box.addEventListener("click",function(e){if(e.target!==input)input.click();});
+    input.addEventListener("change",function(){var f=input.files&&input.files[0];if(!f)return;var r=new FileReader();
+      r.onload=function(){img.src=r.result;img.hidden=false;box.classList.add("filled");u();};r.readAsDataURL(f);});
+  });
+  fit();u();
+})();
+</script>
+</body>
+</html>

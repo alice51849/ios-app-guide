@@ -1,0 +1,2010 @@
+{
+ "app": "mochi",
+ "app_id": "6785004775",
+ "generated": "2026-10-13",
+ "model_pass": "1 of 2（副標與關鍵字；標題不動）",
+ "method": "2026-10-13 量測。名次：apps.apple.com/{cc}/iphone/search 網頁版（伺服器端回前 11–12 名、含副標與評分數），桌面瀏覽器 UA、每次間隔 ≥5 秒，共 34 次搜尋（US 7、TW 7、JP 7、BR 7、DE 6），全部 HTTP 200、沒有被限流；our_rank=null 代表不在顯示的前 11–12 名。現值：名稱與副標用 apps.apple.com/{cc}/app/id6785004775?l={lang} 逐語系抓線上值（50/50 成功；產品頁中途一次 429，冷卻後重抓成功）。重要：線上 1.0.16（2026-10-09）已經改過全部 50 個語系的副標、韓文名稱也改了，_engine/data/mochi_full.json 是 10-03 的舊鏡像，所以 current.name／subtitle 用線上值，current.keywords 只能用鏡像（線上關鍵字公開查不到）；鏡像不同處記在 mirror_differs。跨語系：沿用 UsageNow 實測——不同語系的字不會組成同一個搜尋詞；en-US 在 US、GB、AU、CA、TW、HK、JP、KR、DE 都被索引；en-GB 在 GB、AU、TW、HK、KR、DE 被索引；en-AU 在 AU 不被索引；CA 讀 en-CA 或 en-US 未分辨。所以英文分三層：en-US＝全球核心（kawaii／aesthetic／cute to do list）；en-GB＝只放 en-US 沒有的字；en-AU＝第三層備用字；en-CA＝與 en-US 相同當保險。Lite/Pro：Mochi 沒有 Lite/Pro 版本；同品牌的 Mochi DoneStamp（上次何時／週期紀錄）是不同 App，Mochi 不放 chores、反覆／週期類字（반복、繰り返し）以免和它搶同一批字。長度以 Python len 與 UTF-16 雙重檢查（副標 ≤30、關鍵字 ≤100、逗號後無空白、不重複、不含同語系名稱／副標已有的字、英文無單複數重複、名稱與線上完全相同）。",
+ "index_map": {
+  "US": [
+   "en-US",
+   "es-MX",
+   "zh-Hant",
+   "fr-FR"
+  ],
+  "GB": [
+   "en-GB",
+   "en-US"
+  ],
+  "AU": [
+   "en-GB",
+   "en-US"
+  ],
+  "CA": [
+   "fr-CA",
+   "en-US 或 en-CA（未分辨）"
+  ],
+  "TW": [
+   "zh-Hant",
+   "en-US",
+   "en-GB"
+  ],
+  "HK": [
+   "zh-Hant",
+   "en-US",
+   "en-GB"
+  ],
+  "JP": [
+   "ja",
+   "en-US"
+  ],
+  "KR": [
+   "ko",
+   "en-US",
+   "en-GB"
+  ],
+  "DE": [
+   "de-DE",
+   "en-GB",
+   "en-US"
+  ],
+  "BR": [
+   "pt-BR",
+   "en-US"
+  ],
+  "_source": "UsageNow 2026-10-13 探針實測（.github/growth/aso/claudeusagemini.json index_map），本次未重測"
+ },
+ "priority_storefronts": {
+  "US": "唯一有量的評分（24 則 4.29★），cute to do list／kawaii to do list／cute checklist 都 #2",
+  "TW": "店主主場、5★（4 則），可愛待辦 #2、可愛 todo #3、待辦事項 #9",
+  "JP": "かわいいToDo 正好是日本人會打的詞；かわいい todo #4，但所有主力詞都不在前 12",
+  "BR": "4 則 3.5★；lista de tarefas fofa、checklist fofo、planner fofo 都 #1、lista de tarefas #5",
+  "DE": "süße to-do liste #1，但 aufgabenliste、checkliste、to do liste 都不在前 11"
+ },
+ "scoreboard_prior": "growth-scoreboard issue #8（iTunes Search API，2026-10-13 13:24 UTC）：Mochi 第 1 名＝BR checklist fofo、BR lista de tarefas fofa、DE süße to-do liste、US cute to do list。網頁版今天 US cute to do list 是 #2（第 1 名 Lists To do 10.6 萬則），兩個來源排序不同。",
+ "unreachable": [],
+ "cross_locale_repeats_accepted": [
+  "en-CA 關鍵字＝en-US：CA 讀 en-CA 還是 en-US 未分辨，放核心字當保險。",
+  "en-AU、en-CA 副標＝en-US：讓 AU、CA 顯示一致；en-AU 不被索引，不影響搜尋。",
+  "todo、kawaii、planner、widget 在多個語系重複：不同語系的字不會組詞，每個店面要在自己的語系內湊齊片語。",
+  "en-GB 與 en-US 有 girly、pastel 等相近字：en-US 也要獨立服務 US（US 不讀 en-GB）。"
+ ],
+ "competitors_top1": {
+  "US cute to do list": "Lists To do（10.6 萬則）",
+  "US kawaii to do list": "Kawaii To-Do List（5 則）",
+  "US cute checklist": "mimi – Cute notes（7.9K）",
+  "TW 可愛待辦": "Kummy行事曆（1289 則）",
+  "TW 待辦事項": "提醒事項（Apple，3.5 萬則）",
+  "JP かわいい todo": "可愛いウィジェットのToDoリスト（1 則）",
+  "BR lista de tarefas": "To Do List: Lembretes Tarefas（2 千則）",
+  "DE aufgabenliste": "Microsoft To Do（8.5 萬則）"
+ },
+ "locales": {
+  "ar-SA": {
+   "current": {
+    "name": "Mochi: قائمة مهام لطيفة",
+    "subtitle": "تذكيرات متكررة وودجت للشاشة",
+    "keywords": "مهام,قائمة,تذكير,مخطط,ملاحظات,عادة,روتين,جدول,تسوق,تقويم,أجندة,إنجاز,ودجت,ساعة,مدرسة,عمل,هدف"
+   },
+   "current_source": {
+    "name": "apps.apple.com/sa/app/id6785004775?l=ar",
+    "subtitle": "apps.apple.com/sa/app/id6785004775?l=ar",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: قائمة مهام لطيفة",
+    "subtitle": "تذكيرات متكررة وودجت للشاشة",
+    "keywords": "المهام,تذكير,مخطط,عادة,روتين,تسوق,إنجاز,ودجت,مدرسة,عمل,هدف,كيوت,لطيف,يومية,منظم"
+   },
+   "lengths": {
+    "name": 23,
+    "subtitle": 27,
+    "keywords": 79
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「تذكيرات متكررة وودجت للشاشة」（1.0.16 剛改過、未量測，不動）；關鍵字刪 مهام、قائمة（名稱／副標已有）、ملاحظات、تقويم、جدول、أجندة、ساعة（筆記、行事曆、行程表、時鐘等不同意圖），補 المهام、كيوت、لطيف、يومية、منظم。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "نظّمي يومك بلطف"
+   }
+  },
+  "bn-BD": {
+   "current": {
+    "name": "Mochi: মিষ্টি টাস্ক লিস্ট",
+    "subtitle": "কাজ, রিমাইন্ডার ও উইজেট",
+    "keywords": "কাজ,তালিকা,রিমাইন্ডার,প্ল্যানার,নোট,অভ্যাস,রুটিন,সময়সূচি,কেনাকাটা,এজেন্ডা,ক্যালেন্ডার,উইজেট"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=bn",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=bn",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: মিষ্টি টাস্ক লিস্ট",
+    "subtitle": "কাজ, রিমাইন্ডার ও উইজেট",
+    "keywords": "তালিকা,প্ল্যানার,অভ্যাস,রুটিন,কেনাকাটা,কিউট,চেকলিস্ট,টুডু,দৈনিক,লক্ষ্য,পড়াশোনা,todo,checklist"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 23,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「কাজ, রিমাইন্ডার ও উইজেট」（1.0.16 剛改過、未量測，不動）；關鍵字刪 কাজ、রিমাইন্ডার、উইজেট（名稱／副標已有）、নোট、ক্যালেন্ডার、এজেন্ডা、সময়সূচি（筆記、行事曆、行程表、時鐘等不同意圖），補 কিউট、চেকলিস্ট、টুডু、দৈনিক、লক্ষ্য、পড়াশোনা、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "দিন গুছান নরমভাবে"
+   }
+  },
+  "ca": {
+   "current": {
+    "name": "Mochi: Llista bonica",
+    "subtitle": "Tasques, recordatoris i widget",
+    "keywords": "tasques,llista,recordatori,planificador,notes,hàbits,rutina,agenda,compres,horari,calendari,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/es/app/id6785004775?l=ca",
+    "subtitle": "apps.apple.com/es/app/id6785004775?l=ca",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Llista bonica",
+    "subtitle": "Tasques, recordatoris i widget",
+    "keywords": "planificador,hàbits,rutina,compres,pendents,checklist,todo,kawaii,cuqui,diari,objectius,organitzador"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 30,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Tasques, recordatoris i widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tasques、llista、widget（名稱／副標已有）、notes、calendari、agenda、horari（筆記、行事曆、行程表、時鐘等不同意圖）、recordatori（副標已有同字變形，或換成更精準的詞／讓出字數），補 pendents、checklist、todo、kawaii、cuqui、diari、objectius、organitzador。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Organitza el dia amb calma"
+   }
+  },
+  "cs": {
+   "current": {
+    "name": "Mochi: Roztomilé úkoly",
+    "subtitle": "Checklist, připomínky a widget",
+    "keywords": "úkoly,seznam,připomínky,plánovač,poznámky,návyky,rutina,rozvrh,nákup,agenda,kalendář,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/cz/app/id6785004775?l=cs",
+    "subtitle": "apps.apple.com/cz/app/id6785004775?l=cs",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Roztomilé úkoly",
+    "subtitle": "Checklist, připomínky a widget",
+    "keywords": "seznam,úkolů,úkolníček,plánovač,návyky,rutina,nákup,todo,kawaii,roztomilý,denní,cíle,organizér"
+   },
+   "lengths": {
+    "name": 22,
+    "subtitle": 30,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Checklist, připomínky a widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 úkoly、připomínky、widget（名稱／副標已有）、poznámky、kalendář、agenda、rozvrh（筆記、行事曆、行程表、時鐘等不同意圖），補 úkolů、úkolníček、todo、kawaii、roztomilý、denní、cíle、organizér。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Plánuj den v klidu"
+   }
+  },
+  "da": {
+   "current": {
+    "name": "Mochi: Sød huskeliste",
+    "subtitle": "Tjekliste, opgaver og widget",
+    "keywords": "opgaver,tjekliste,påmindelse,planlægger,noter,vaner,rutine,skema,indkøb,agenda,kalender,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/dk/app/id6785004775?l=da",
+    "subtitle": "apps.apple.com/dk/app/id6785004775?l=da",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Sød huskeliste",
+    "subtitle": "Tjekliste, opgaver og widget",
+    "keywords": "opgaveliste,todo,påmindelse,planlægger,vaner,rutine,indkøbsliste,kawaii,søde,daglig,mål"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 28,
+    "keywords": 87
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Tjekliste, opgaver og widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 opgaver、tjekliste、widget（名稱／副標已有）、noter、kalender、agenda、skema（筆記、行事曆、行程表、時鐘等不同意圖）、indkøb（副標已有同字變形，或換成更精準的詞／讓出字數），補 opgaveliste、todo、indkøbsliste、kawaii、søde、daglig、mål。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planlæg dagen blidt"
+   }
+  },
+  "de-DE": {
+   "current": {
+    "name": "Mochi: Süße To-do-Liste",
+    "subtitle": "Checkliste, Aufgaben & Widget",
+    "keywords": "aufgaben,liste,erinnerung,planer,notizen,gewohnheiten,routine,zeitplan,einkauf,agenda,kalender"
+   },
+   "current_source": {
+    "name": "apps.apple.com/de/app/id6785004775?l=de-DE",
+    "subtitle": "apps.apple.com/de/app/id6785004775?l=de-DE",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Süße To-do-Liste",
+    "subtitle": "Aufgabenliste & Checkliste",
+    "keywords": "aufgaben,widget,todo,erinnerung,planer,tagesplaner,kawaii,niedlich,routine,einkaufsliste,ziele"
+   },
+   "lengths": {
+    "name": 23,
+    "subtitle": 26,
+    "keywords": 94
+   },
+   "evidence": [
+    {
+     "term": "süße to-do liste",
+     "country": "DE",
+     "our_rank": 1,
+     "results_shown": 6,
+     "top3": [
+      "Mochi: Süße To-do-Liste（2）",
+      "E:Roomy - Pomodoro & ToDo（0）",
+      "ColorToto - Süße To-Do Liste（0）"
+     ],
+     "top1": "Mochi: Süße To-do-Liste",
+     "top1_ratings": "2",
+     "intent_ok": true,
+     "source": "apps.apple.com/de/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "to do liste",
+     "country": "DE",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "To do list & erinnerungen（7584）",
+      "Microsoft To Do（85.132）",
+      "Structured - Tagesplaner& Todo（39.410）"
+     ],
+     "top1": "To do list & erinnerungen",
+     "top1_ratings": "7584",
+     "intent_ok": true,
+     "source": "apps.apple.com/de/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "aufgabenliste",
+     "country": "DE",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "Microsoft To Do（85.132）",
+      "Erinnerungen（159.663）",
+      "Memo-Widget (Aufgabenliste)（5）"
+     ],
+     "top1": "Microsoft To Do",
+     "top1_ratings": "85.132",
+     "intent_ok": true,
+     "source": "apps.apple.com/de/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "第 3 名 Memo-Widget 只有 5 則評分，靠標題放 Aufgabenliste"
+    },
+    {
+     "term": "checkliste",
+     "country": "DE",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "Checklisten: To-Dos（12）",
+      "To do list & erinnerungen（7584）",
+      "Structured - Tagesplaner& Todo（39.410）"
+     ],
+     "top1": "Checklisten: To-Dos",
+     "top1_ratings": "12",
+     "intent_ok": true,
+     "source": "apps.apple.com/de/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "kawaii to do liste",
+     "country": "DE",
+     "our_rank": 6,
+     "results_shown": 12,
+     "top3": [
+      "Google（460.283）",
+      "Das Beste von Google（183）",
+      "Populäre KI-Apps von Google（27）"
+     ],
+     "top1": "Google",
+     "top1_ratings": "460.283",
+     "intent_ok": false,
+     "source": "apps.apple.com/de/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "前 5 名是 Google、Crunchyroll 等熱門 App，代表需求很低"
+    },
+    {
+     "term": "todo",
+     "country": "DE",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "Microsoft To Do（85.132）",
+      "Structured - Tagesplaner& Todo（39.410）",
+      "To do list & erinnerungen（7584）"
+     ],
+     "top1": "Microsoft To Do",
+     "top1_ratings": "85.132",
+     "intent_ok": true,
+     "source": "apps.apple.com/de/iphone/search（網頁版，前 12 名，2026-10-13）"
+    }
+   ],
+   "changes": "副標從「Checkliste, Aufgaben & Widget」改「Aufgabenliste & Checkliste」：aufgabenliste、checkliste、to do liste 都不在前 11 名，aufgabenliste 第 3 名 Memo-Widget 只有 5 則評分、靠標題放這個字；süße to-do liste #1 靠名稱保住。Aufgaben、Widget 移到關鍵字；刪 liste（名稱已有）、notizen、kalender、zeitplan、agenda（筆記、行事曆意圖），補 todo、tagesplaner、kawaii（kawaii to do liste #6）、niedlich、einkaufsliste、ziele。",
+   "depth": "deep",
+   "mirror_differs": {
+    "subtitle": "Plane deinen Tag entspannt"
+   }
+  },
+  "el": {
+   "current": {
+    "name": "Mochi: Χαριτωμένες λίστες",
+    "subtitle": "Λίστα εργασιών & υπενθυμίσεις",
+    "keywords": "εργασίες,λίστα,υπενθύμιση,πλάνο,σημειώσεις,συνήθειες,ρουτίνα,πρόγραμμα,ψώνια,ατζέντα,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/gr/app/id6785004775?l=el",
+    "subtitle": "apps.apple.com/gr/app/id6785004775?l=el",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Χαριτωμένες λίστες",
+    "subtitle": "Λίστα εργασιών & υπενθυμίσεις",
+    "keywords": "εργασίες,todo,checklist,πλάνο,συνήθειες,ρουτίνα,ψώνια,widget,kawaii,χαριτωμένο,καθημερινές,στόχοι"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 29,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Λίστα εργασιών & υπενθυμίσεις」（1.0.16 剛改過、未量測，不動）；關鍵字刪 λίστα（名稱／副標已有）、σημειώσεις、ατζέντα、πρόγραμμα（筆記、行事曆、行程表、時鐘等不同意圖）、υπενθύμιση（副標已有同字變形，或換成更精準的詞／讓出字數），補 todo、checklist、kawaii、χαριτωμένο、καθημερινές、στόχοι。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Οργάνωσε τη μέρα γλυκά"
+   }
+  },
+  "en-AU": {
+   "current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Chores",
+    "keywords": "todo,list,reminders,planner,notes,habits,routine,schedule,shopping,agenda,calendar,widget,tasks"
+   },
+   "current_source": {
+    "name": "apps.apple.com/au/app/id6785004775?l=en-AU",
+    "subtitle": "apps.apple.com/au/app/id6785004775?l=en-AU",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii & Aesthetic To-Do List",
+    "keywords": "student,school,college,morning,themes,checkbox,memo,teen,organised"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 29,
+    "keywords": 66
+   },
+   "evidence": [],
+   "changes": "（輕量）副標比照 en-US 讓 AU 顯示一致；UsageNow 實測 en-AU 專屬字在 AU 搜不到（AU 讀 en-GB＋en-US），關鍵字改放第三層備用字（student、school、morning、themes、organised），刪 list、notes、calendar、agenda、schedule。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Plan your day softly"
+   }
+  },
+  "en-CA": {
+   "current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Errands",
+    "keywords": "todo,list,reminder,planner,notes,habits,routine,schedule,shopping,agenda,calendar,widget,tasks"
+   },
+   "current_source": {
+    "name": "apps.apple.com/ca/app/id6785004775?l=en-CA",
+    "subtitle": "apps.apple.com/ca/app/id6785004775?l=en-CA",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii & Aesthetic To-Do List",
+    "keywords": "todo,widget,planner,reminder,task,daily,cozy,pastel,routine,girly,watch,organizer,habit,grocery"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 29,
+    "keywords": 95
+   },
+   "evidence": [],
+   "changes": "（輕量）副標比照 en-US（原 Errands 版本沒有量測證據）；CA 讀 en-CA 還是 en-US 未驗證，關鍵字放和 en-US 相同的核心字當保險；刪 list、notes、calendar、agenda、schedule。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Plan your day gently"
+   }
+  },
+  "en-GB": {
+   "current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Reminders",
+    "keywords": "to do,list,reminder,planner,notes,habits,routine,timetable,shopping,agenda,calendar,widget,tasks"
+   },
+   "current_source": {
+    "name": "apps.apple.com/gb/app/id6785004775?l=en-GB",
+    "subtitle": "apps.apple.com/gb/app/id6785004775?l=en-GB",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Pastel To-Do List & Organiser",
+    "keywords": "tick,girly,pink,pretty,adorable,simple,emoji,lockscreen,shopping,homework,goals,tidy,revision,uni"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 29,
+    "keywords": 97
+   },
+   "evidence": [],
+   "changes": "（輕量）en-GB 在 GB、AU、TW、HK、KR、DE 都和 en-US 一起被索引，所以副標不再重複 Kawaii To-Do List（en-US 已有），改「Pastel To-Do List & Organiser」補 pastel／organiser（英式拼法）片語；關鍵字只放 en-US 沒有的字（tick list、girly、pink、simple、emoji、lockscreen、homework 等），刪 to do／list／reminder／planner 等與 en-US 重複或 calendar、notes、agenda、timetable 錯意圖字。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Plan your day calmly"
+   }
+  },
+  "en-US": {
+   "current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Chores",
+    "keywords": "todo,list,reminder,planner,notes,habits,routine,schedule,grocery,agenda,calendar,widget,tasks"
+   },
+   "current_source": {
+    "name": "apps.apple.com/us/app/id6785004775?l=en-US",
+    "subtitle": "apps.apple.com/us/app/id6785004775?l=en-US",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii & Aesthetic To-Do List",
+    "keywords": "todo,widget,planner,reminder,task,daily,cozy,pastel,routine,girly,watch,organizer,habit,grocery"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 29,
+    "keywords": 95
+   },
+   "evidence": [
+    {
+     "term": "cute to do list",
+     "country": "US",
+     "our_rank": 2,
+     "results_shown": 11,
+     "top3": [
+      "Lists To do（106K）",
+      "Mochi: Cute Checklist（24）",
+      "mimi – Cute notes（7.9K）"
+     ],
+     "top1": "Lists To do",
+     "top1_ratings": "106K",
+     "intent_ok": true,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "aesthetic to do list",
+     "country": "US",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "Digital Planner – Task Journal（14K）",
+      "To Do List MinimaList & Widget（48K）",
+      "To Do List Widget（14K）"
+     ],
+     "top1": "Digital Planner – Task Journal",
+     "top1_ratings": "14K",
+     "intent_ok": true,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "第 7 名 Perspexa 零評分，只靠副標 Aesthetic 進榜"
+    },
+    {
+     "term": "kawaii to do list",
+     "country": "US",
+     "our_rank": 2,
+     "results_shown": 12,
+     "top3": [
+      "Kawaii To-Do List（5）",
+      "Mochi: Cute Checklist（24）",
+      "Do! – Simple To Do List（26K）"
+     ],
+     "top1": "Kawaii To-Do List",
+     "top1_ratings": "5",
+     "intent_ok": true,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "cute checklist",
+     "country": "US",
+     "our_rank": 2,
+     "results_shown": 11,
+     "top3": [
+      "mimi – Cute notes（7.9K）",
+      "Mochi: Cute Checklist（24）",
+      "Blossom: cute To Do Checklist（0）"
+     ],
+     "top1": "mimi – Cute notes",
+     "top1_ratings": "7.9K",
+     "intent_ok": true,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "to do list",
+     "country": "US",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "To Do List MinimaList & Widget（48K）",
+      "Todoist: To Do List & Calendar（130K）",
+      "Structured: Daily Planner Todo（167K）"
+     ],
+     "top1": "To Do List MinimaList & Widget",
+     "top1_ratings": "48K",
+     "intent_ok": true,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "cute planner",
+     "country": "US",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "Pencil Calendar: Daily Planner（11K）",
+      "Bujo - Bullet Journal&Planner（1.1K）",
+      "Structured: Daily Planner Todo（167K）"
+     ],
+     "top1": "Pencil Calendar: Daily Planner",
+     "top1_ratings": "11K",
+     "intent_ok": false,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "前 11 名是貼紙行事曆／手帳，意圖不同"
+    },
+    {
+     "term": "chore list",
+     "country": "US",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "Lists To do（106K）",
+      "House Chores Cleaning Schedule（3K）",
+      "Tidy: House Cleaning Schedule（1.9K）"
+     ],
+     "top1": "Lists To do",
+     "top1_ratings": "106K",
+     "intent_ok": false,
+     "source": "apps.apple.com/us/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "前排是家務排程、獎勵表 App；副標 Chores 沒帶來名次"
+    }
+   ],
+   "changes": "副標改「Kawaii & Aesthetic To-Do List」：保住 kawaii to do list #2、cute to do list #2（cute 在名稱），補上 aesthetic to do list（前 12 名無 Mochi，第 7 名 Perspexa 零評分只靠副標 Aesthetic）；拿掉 Chores（chore list 前 11 名無 Mochi，前排是家務排程 App，也讓給同品牌的 Mochi DoneStamp）。關鍵字刪 list（副標已有）、notes／calendar／agenda／schedule（筆記、行事曆意圖）、habits→habit、tasks→task；補 todo、widget、daily、cozy、pastel、girly、watch（1.0.16 新 Apple Watch 介面）、organizer。",
+   "depth": "deep",
+   "mirror_differs": {
+    "subtitle": "Plan your day with cozy calm"
+   }
+  },
+  "es-ES": {
+   "current": {
+    "name": "Mochi: Lista monísima",
+    "subtitle": "Checklist y tareas con widget",
+    "keywords": "tareas,lista,recordatorio,planner,notas,hábitos,rutina,horario,compras,agenda,calendario,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/es/app/id6785004775?l=es-ES",
+    "subtitle": "apps.apple.com/es/app/id6785004775?l=es-ES",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Lista monísima",
+    "subtitle": "Checklist y tareas con widget",
+    "keywords": "pendientes,todo,recordatorio,planner,hábitos,rutina,compras,kawaii,bonita,cuqui,diaria,objetivos"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 29,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Checklist y tareas con widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tareas、lista、widget（名稱／副標已有）、notas、calendario、agenda、horario（筆記、行事曆、行程表、時鐘等不同意圖），補 pendientes、todo、kawaii、bonita、cuqui、diaria、objetivos。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Organiza tu día con calma"
+   }
+  },
+  "es-MX": {
+   "current": {
+    "name": "Mochi: Lista súper cute",
+    "subtitle": "Tareas, pendientes y widget",
+    "keywords": "tareas,lista,recordatorio,planner,notas,hábitos,rutina,horario,súper,compras,agenda,calendario"
+   },
+   "current_source": {
+    "name": "apps.apple.com/mx/app/id6785004775?l=es-MX",
+    "subtitle": "apps.apple.com/mx/app/id6785004775?l=es-MX",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Lista súper cute",
+    "subtitle": "Tareas, pendientes y widget",
+    "keywords": "checklist,todo,recordatorio,planner,hábitos,rutina,compras,kawaii,bonita,linda,diaria,objetivos"
+   },
+   "lengths": {
+    "name": 23,
+    "subtitle": 27,
+    "keywords": 95
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Tareas, pendientes y widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tareas、lista、súper（名稱／副標已有）、notas、calendario、agenda、horario（筆記、行事曆、行程表、時鐘等不同意圖），補 checklist、todo、kawaii、bonita、linda、diaria、objetivos。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Organiza tu día bonito"
+   }
+  },
+  "fi": {
+   "current": {
+    "name": "Mochi: Söpö tehtävälista",
+    "subtitle": "Tehtävät, muistutukset, widget",
+    "keywords": "tehtävät,lista,muistutus,suunnittelija,muistiinpanot,tavat,rutiini,aikataulu,ostokset,agenda"
+   },
+   "current_source": {
+    "name": "apps.apple.com/fi/app/id6785004775?l=fi",
+    "subtitle": "apps.apple.com/fi/app/id6785004775?l=fi",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Söpö tehtävälista",
+    "subtitle": "Tehtävät, muistutukset, widget",
+    "keywords": "muistilista,tarkistuslista,todo,lista,suunnittelija,tavat,rutiini,ostoslista,kawaii,tavoitteet"
+   },
+   "lengths": {
+    "name": 24,
+    "subtitle": 30,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Tehtävät, muistutukset, widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tehtävät（名稱／副標已有）、muistiinpanot、aikataulu、agenda（筆記、行事曆、行程表、時鐘等不同意圖）、muistutus、ostokset（副標已有同字變形，或換成更精準的詞／讓出字數），補 muistilista、tarkistuslista、todo、ostoslista、kawaii、tavoitteet。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Suunnittele päivä lempeästi"
+   }
+  },
+  "fr-CA": {
+   "current": {
+    "name": "Mochi: Liste trop cute",
+    "subtitle": "Tâches, rappels et widget",
+    "keywords": "tâches,liste,rappel,planificateur,notes,habitudes,routine,agenda,épicerie,calendrier,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/ca/app/id6785004775?l=fr-CA",
+    "subtitle": "apps.apple.com/ca/app/id6785004775?l=fr-CA",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Liste trop cute",
+    "subtitle": "Tâches, rappels et widget",
+    "keywords": "todo,checklist,faire,choses,planificateur,habitudes,routine,épicerie,kawaii,mignonne,objectifs"
+   },
+   "lengths": {
+    "name": 22,
+    "subtitle": 25,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Tâches, rappels et widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tâches、liste、widget（名稱／副標已有）、notes、calendrier、agenda（筆記、行事曆、行程表、時鐘等不同意圖）、rappel（副標已有同字變形，或換成更精準的詞／讓出字數），補 todo、checklist、faire、choses、kawaii、mignonne、objectifs。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planifie ta journée en douceur"
+   }
+  },
+  "fr-FR": {
+   "current": {
+    "name": "Mochi: Liste toute mignonne",
+    "subtitle": "Checklist, tâches et rappels",
+    "keywords": "tâches,liste,rappel,agenda,planning,notes,habitudes,routine,courses,calendrier,widget,organisation"
+   },
+   "current_source": {
+    "name": "apps.apple.com/fr/app/id6785004775?l=fr-FR",
+    "subtitle": "apps.apple.com/fr/app/id6785004775?l=fr-FR",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Liste toute mignonne",
+    "subtitle": "Checklist, tâches et rappels",
+    "keywords": "todo,faire,choses,widget,planning,habitudes,routine,courses,kawaii,mignon,jolie,quotidien,objectifs"
+   },
+   "lengths": {
+    "name": 27,
+    "subtitle": 28,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Checklist, tâches et rappels」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tâches、liste（名稱／副標已有）、notes、calendrier、agenda（筆記、行事曆、行程表、時鐘等不同意圖）、rappel、organisation（副標已有同字變形，或換成更精準的詞／讓出字數），補 todo、faire、choses、kawaii、mignon、jolie、quotidien、objectifs。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Organise ta journée en douceur"
+   }
+  },
+  "gu-IN": {
+   "current": {
+    "name": "Mochi: ક્યૂટ ટાસ્ક લિસ્ટ",
+    "subtitle": "સુંદર કાર્યો અને વિજેટ",
+    "keywords": "કામ,યાદી,રીમાઇન્ડર,પ્લાનર,નોટ્સ,આદત,રૂટીન,શેડ્યૂલ,ખરીદી,એજન્ડા,કૅલેન્ડર,વિજેટ,અભ્યાસ,લક્ષ્ય"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=gu",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=gu",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: ક્યૂટ ટાસ્ક લિસ્ટ",
+    "subtitle": "સુંદર કાર્યો અને વિજેટ",
+    "keywords": "કામ,યાદી,રીમાઇન્ડર,પ્લાનર,આદત,રૂટીન,ખરીદી,અભ્યાસ,લક્ષ્ય,ચેકલિસ્ટ,ટુડુ,todo,checklist"
+   },
+   "lengths": {
+    "name": 24,
+    "subtitle": 22,
+    "keywords": 84
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「સુંદર કાર્યો અને વિજેટ」（1.0.16 剛改過、未量測，不動）；關鍵字刪 વિજેટ（名稱／副標已有）、નોટ્સ、કૅલેન્ડર、એજન્ડા、શેડ્યૂલ（筆記、行事曆、行程表、時鐘等不同意圖），補 ચેકલિસ્ટ、ટુડુ、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "દિવસને શાંતિથી ગોઠવો"
+   }
+  },
+  "he": {
+   "current": {
+    "name": "Mochi: רשימת משימות חמודה",
+    "subtitle": "צ'קליסט, תזכורות וווידג'ט",
+    "keywords": "משימות,רשימה,תזכורת,יומן,מתכנן,פתקים,הרגלים,שגרה,לו״ז,קניות,אג׳נדה,וידג׳ט,סדר,לימודים,עבודה"
+   },
+   "current_source": {
+    "name": "apps.apple.com/il/app/id6785004775?l=he",
+    "subtitle": "apps.apple.com/il/app/id6785004775?l=he",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: רשימת משימות חמודה",
+    "subtitle": "צ'קליסט, תזכורות וווידג'ט",
+    "keywords": "מטלות,רשימה,todo,מתכנן,הרגלים,שגרה,קניות,סדר,לימודים,עבודה,וידג׳ט,חמוד,יומי,מטרות"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 25,
+    "keywords": 81
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「צ'קליסט, תזכורות וווידג'ט」（1.0.16 剛改過、未量測，不動）；關鍵字刪 משימות（名稱／副標已有）、יומן、פתקים、לו״ז、אג׳נדה（筆記、行事曆、行程表、時鐘等不同意圖）、תזכורת（副標已有同字變形，或換成更精準的詞／讓出字數），補 מטלות、todo、חמוד、יומי、מטרות。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "לתכנן את היום ברוגע"
+   }
+  },
+  "hi": {
+   "current": {
+    "name": "Mochi: प्यारी टास्क लिस्ट",
+    "subtitle": "प्यारे काम और विजेट",
+    "keywords": "काम,सूची,रिमाइंडर,प्लानर,नोट्स,आदत,रूटीन,शेड्यूल,खरीदारी,एजेंडा,कैलेंडर,विजेट,पढ़ाई,लक्ष्य"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=hi",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=hi",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: प्यारी टास्क लिस्ट",
+    "subtitle": "प्यारे काम और विजेट",
+    "keywords": "सूची,रिमाइंडर,प्लानर,आदत,रूटीन,खरीदारी,पढ़ाई,लक्ष्य,चेकलिस्ट,क्यूट,टूडू,दैनिक,todo"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 19,
+    "keywords": 82
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「प्यारे काम और विजेट」（1.0.16 剛改過、未量測，不動）；關鍵字刪 काम、विजेट（名稱／副標已有）、नोट्स、कैलेंडर、एजेंडा、शेड्यूल（筆記、行事曆、行程表、時鐘等不同意圖），補 चेकलिस्ट、क्यूट、टूडू、दैनिक、todo。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "दिन को नरमी से प्लान करें"
+   }
+  },
+  "hr": {
+   "current": {
+    "name": "Mochi: Slatki zadaci",
+    "subtitle": "Obaveze, podsjetnici i widget",
+    "keywords": "zadaci,popis,podsjetnik,planer,bilješke,navike,rutina,raspored,kupnja,agenda,kalendar,widgeti"
+   },
+   "current_source": {
+    "name": "apps.apple.com/hr/app/id6785004775?l=hr",
+    "subtitle": "apps.apple.com/hr/app/id6785004775?l=hr",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Slatki zadaci",
+    "subtitle": "Obaveze, podsjetnici i widget",
+    "keywords": "zadataka,popis,lista,todo,checklist,planer,navike,rutina,kupnja,kawaii,slatko,dnevni,ciljevi"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 29,
+    "keywords": 92
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Obaveze, podsjetnici i widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 zadaci（名稱／副標已有）、bilješke、kalendar、agenda、raspored（筆記、行事曆、行程表、時鐘等不同意圖）、podsjetnik、widgeti（副標已有同字變形，或換成更精準的詞／讓出字數），補 zadataka、lista、todo、checklist、kawaii、slatko、dnevni、ciljevi。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planiraj dan nježno"
+   }
+  },
+  "hu": {
+   "current": {
+    "name": "Mochi: Cuki feladatlista",
+    "subtitle": "Teendők, emlékeztetők, widget",
+    "keywords": "feladatok,lista,emlékeztető,tervező,jegyzetek,szokások,rutin,napirend,bevásárlás,naptár,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/hu/app/id6785004775?l=hu",
+    "subtitle": "apps.apple.com/hu/app/id6785004775?l=hu",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Cuki feladatlista",
+    "subtitle": "Teendők, emlékeztetők, widget",
+    "keywords": "teendőlista,feladatok,lista,todo,ellenőrzőlista,tervező,szokások,rutin,bevásárlás,aranyos,kawaii"
+   },
+   "lengths": {
+    "name": 24,
+    "subtitle": 29,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Teendők, emlékeztetők, widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 widget（名稱／副標已有）、jegyzetek、naptár、napirend（筆記、行事曆、行程表、時鐘等不同意圖）、emlékeztető（副標已有同字變形，或換成更精準的詞／讓出字數），補 teendőlista、todo、ellenőrzőlista、aranyos、kawaii。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Tervezd nyugodtan a napod"
+   }
+  },
+  "id": {
+   "current": {
+    "name": "Mochi: Checklist Lucu",
+    "subtitle": "To do list, pengingat & widget",
+    "keywords": "tugas,daftar,pengingat,planner,catatan,kebiasaan,rutinitas,jadwal,belanja,agenda,kalender,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/id/app/id6785004775?l=id",
+    "subtitle": "apps.apple.com/id/app/id6785004775?l=id",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Checklist Lucu",
+    "subtitle": "To do list, pengingat & widget",
+    "keywords": "tugas,daftar,todo,planner,kebiasaan,rutinitas,belanja,kawaii,imut,aesthetic,harian,tujuan"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 30,
+    "keywords": 89
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「To do list, pengingat & widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 pengingat、widget（名稱／副標已有）、catatan、kalender、agenda、jadwal（筆記、行事曆、行程表、時鐘等不同意圖），補 todo、kawaii、imut、aesthetic、harian、tujuan。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Atur hari dengan adem"
+   }
+  },
+  "it": {
+   "current": {
+    "name": "Mochi: Lista carina",
+    "subtitle": "To do list, promemoria, widget",
+    "keywords": "attività,lista,promemoria,planner,note,abitudini,routine,programma,spesa,agenda,calendario,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/it/app/id6785004775?l=it",
+    "subtitle": "apps.apple.com/it/app/id6785004775?l=it",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Lista carina",
+    "subtitle": "To do list, promemoria, widget",
+    "keywords": "cose,fare,todo,checklist,attività,planner,abitudini,routine,spesa,kawaii,carino,obiettivi"
+   },
+   "lengths": {
+    "name": 19,
+    "subtitle": 30,
+    "keywords": 89
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「To do list, promemoria, widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 lista、promemoria、widget（名稱／副標已有）、note、calendario、agenda、programma（筆記、行事曆、行程表、時鐘等不同意圖），補 cose、fare、todo、checklist、kawaii、carino、obiettivi。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Organizza il giorno con calma"
+   }
+  },
+  "ja": {
+   "current": {
+    "name": "Mochi: かわいいToDo",
+    "subtitle": "やることリストをかわいく整える",
+    "keywords": "タスク,チェックリスト,リマインダー,予定,メモ,習慣,ルーティン,スケジュール,買い物,手帳,ウィジェット,ToDo,勉強,仕事,日記,家事,目標,時間管理,かわいい,TODO管理,予定表"
+   },
+   "current_source": {
+    "name": "apps.apple.com/jp/app/id6785004775?l=ja",
+    "subtitle": "apps.apple.com/jp/app/id6785004775?l=ja",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: かわいいToDo",
+    "subtitle": "やることリスト・チェックリスト・タスク管理",
+    "keywords": "リマインダー,ウィジェット,ロック画面,習慣,ルーティン,買い物,予定,勉強,仕事,家事,目標,メモ,時間管理,シンプル,日課,通知,毎日,癒し,パステル,ウォッチ,女子,学生,整理"
+   },
+   "lengths": {
+    "name": 15,
+    "subtitle": 21,
+    "keywords": 91
+   },
+   "evidence": [
+    {
+     "term": "かわいい todo",
+     "country": "JP",
+     "our_rank": 4,
+     "results_shown": 12,
+     "top3": [
+      "可愛いウィジェットのToDoリスト（1）",
+      "Todoリング：スケジュール管理ToDo（119）",
+      "YouTube（993万）"
+     ],
+     "top1": "可愛いウィジェットのToDoリスト",
+     "top1_ratings": "1",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "todoリスト",
+     "country": "JP",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "ToDoリスト リマインダー通知付きのメモ帳&やることリスト（4.3万）",
+      "シンプルToDoリスト 1画面のウィジェット対応タスク管理（6.1万）",
+      "Google ToDo リスト（5.2万）"
+     ],
+     "top1": "ToDoリスト リマインダー通知付きのメモ帳&やることリスト",
+     "top1_ratings": "4.3万",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "やることリスト",
+     "country": "JP",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "ToDoリスト リマインダー通知付きのメモ帳&やることリスト（4.3万）",
+      "シンプルToDoリスト 1画面のウィジェット対応タスク管理（6.1万）",
+      "Taska: やることリスト&プランナー（1644）"
+     ],
+     "top1": "ToDoリスト リマインダー通知付きのメモ帳&やることリスト",
+     "top1_ratings": "4.3万",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "チェックリスト",
+     "country": "JP",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "ToDoリスト リマインダー通知付きのメモ帳&やることリスト（4.3万）",
+      "シンプルToDoリスト 1画面のウィジェット対応タスク管理（6.1万）",
+      "Checklist - 究極のチェックリストアプリ（2901）"
+     ],
+     "top1": "ToDoリスト リマインダー通知付きのメモ帳&やることリスト",
+     "top1_ratings": "4.3万",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "タスク管理",
+     "country": "JP",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "ToDoリスト リマインダー通知付きのメモ帳&やることリスト（4.3万）",
+      "シンプルToDoリスト 1画面のウィジェット対応タスク管理（6.1万）",
+      "Todoリング：スケジュール管理ToDo（119）"
+     ],
+     "top1": "ToDoリスト リマインダー通知付きのメモ帳&やることリスト",
+     "top1_ratings": "4.3万",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "やることリスト かわいい",
+     "country": "JP",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "メモ帳 サンリオキャラクターズ（+ウィジェット）（3978）",
+      "Caho TODO（2057）",
+      "ポコのかわいいToDoリスト：シンプルで簡単やることリスト（57）"
+     ],
+     "top1": "メモ帳 サンリオキャラクターズ（+ウィジェット）",
+     "top1_ratings": "3978",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "可愛い todo",
+     "country": "JP",
+     "our_rank": 5,
+     "results_shown": 12,
+     "top3": [
+      "可愛いウィジェットのToDoリスト（1）",
+      "ポコのかわいいToDoリスト：シンプルで簡単やることリスト（57）",
+      "YouTube（993万）"
+     ],
+     "top1": "可愛いウィジェットのToDoリスト",
+     "top1_ratings": "1",
+     "intent_ok": true,
+     "source": "apps.apple.com/jp/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "漢字寫法與 かわいい todo 結果幾乎相同，不需另放 可愛い"
+    }
+   ],
+   "changes": "副標從「やることリストをかわいく整える」改成三個主力詞並列：todoリスト、やることリスト、チェックリスト、タスク管理 現在都不在前 12 名，連「やることリスト かわいい」也沒有；かわいい todo #4、可愛い todo #5 靠名稱保住。關鍵字刪 ToDo、かわいい、TODO管理（名稱已有）、タスク、チェックリスト（副標已有）、手帳、日記、予定表（日記・手帳意圖），補 ロック画面、シンプル、日課、通知、毎日、癒し、パステル、ウォッチ、女子、学生、整理。",
+   "depth": "deep",
+   "mirror_differs": {
+    "subtitle": "毎日をゆるっと整える"
+   }
+  },
+  "kn-IN": {
+   "current": {
+    "name": "Mochi: ಕ್ಯೂಟ್ ಟಾಸ್ಕ್ ಲಿಸ್ಟ್",
+    "subtitle": "ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್",
+    "keywords": "ಕೆಲಸ,ಪಟ್ಟಿ,ರಿಮೈಂಡರ್,ಪ್ಲಾನರ್,ನೋಟ್ಸ್,ಅಭ್ಯಾಸ,ರೂಟೀನ್,ಶೆಡ್ಯೂಲ್,ಶಾಪಿಂಗ್,ಅಜೆಂಡಾ,ಕ್ಯಾಲೆಂಡರ್,ವಿಜೆಟ್"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=kn",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=kn",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: ಕ್ಯೂಟ್ ಟಾಸ್ಕ್ ಲಿಸ್ಟ್",
+    "subtitle": "ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್",
+    "keywords": "ಪಟ್ಟಿ,ರಿಮೈಂಡರ್,ಪ್ಲಾನರ್,ಅಭ್ಯಾಸ,ರೂಟೀನ್,ಶಾಪಿಂಗ್,ಚೆಕ್ಲಿಸ್ಟ್,ಟುಡು,ದೈನಂದಿನ,ಗುರಿ,todo,checklist"
+   },
+   "lengths": {
+    "name": 27,
+    "subtitle": 25,
+    "keywords": 88
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್」（1.0.16 剛改過、未量測，不動）；關鍵字刪 ಕೆಲಸ、ವಿಜೆಟ್（名稱／副標已有）、ನೋಟ್ಸ್、ಕ್ಯಾಲೆಂಡರ್、ಅಜೆಂಡಾ、ಶೆಡ್ಯೂಲ್（筆記、行事曆、行程表、時鐘等不同意圖），補 ಚೆಕ್ಲಿಸ್ಟ್、ಟುಡು、ದೈನಂದಿನ、ಗುರಿ、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "ದಿನವನ್ನು ಮೃದುವಾಗಿ ಯೋಜಿಸಿ"
+   }
+  },
+  "ko": {
+   "current": {
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "subtitle": "포근한 플래너로 하루 정리",
+    "keywords": "할일,체크리스트,알림,플래너,메모,습관,루틴,일정,쇼핑,장보기,캘린더,위젯,시간관리,공부,업무,다이어리,계획,집안일,목표,투두,해야할일,일기,시간표,체크,공책,메모장"
+   },
+   "current_source": {
+    "name": "apps.apple.com/kr/app/id6785004775?l=ko",
+    "subtitle": "apps.apple.com/kr/app/id6785004775?l=ko",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "subtitle": "포근한 투두리스트·플래너·위젯",
+    "keywords": "할일,해야할일,알림,습관,루틴,장보기,공부,업무,목표,집안일,시간관리,계획,감성,파스텔,잠금화면,학생,데일리"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 16,
+    "keywords": 60
+   },
+   "evidence": [],
+   "changes": "（輕量）線上名稱已是「Mochi: 귀여운 할 일 목록 & 체크리스트」（鏡像檔還是舊名，照線上保留不動）；副標「포근한 플래너로 하루 정리」只有 플래너 是搜尋詞，改「포근한 투두리스트·플래너·위젯」；關鍵字刪 체크리스트（名稱已有）、플래너／위젯（副標已有）、캘린더、다이어리、일기、시간표、메모장、공책（行事曆／日記意圖），補 감성、파스텔、잠금화면、학생、데일리；반복 不放，讓給同品牌的 Mochi DoneStamp（주기·반복 型 App）。",
+   "depth": "light",
+   "mirror_differs": {
+    "name": "Mochi: 귀여운 할 일 목록",
+    "subtitle": "하루를 포근하게 정리해요"
+   }
+  },
+  "ml-IN": {
+   "current": {
+    "name": "Mochi: ക്യൂട്ട് ലിസ്റ്റ്",
+    "subtitle": "ജോലികളും വിജറ്റും",
+    "keywords": "ജോലി,ലിസ്റ്റ്,റിമൈൻഡർ,പ്ലാനർ,നോട്ട്സ്,ശീലം,റൂട്ടീൻ,ഷെഡ്യൂൾ,ഷോപ്പിംഗ്,അജണ്ട,കലണ്ടർ,വിജറ്റ്,പഠനം"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=ml",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=ml",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: ക്യൂട്ട് ലിസ്റ്റ്",
+    "subtitle": "ജോലികളും വിജറ്റും",
+    "keywords": "ടാസ്ക്,ജോലി,റിമൈൻഡർ,പ്ലാനർ,ശീലം,റൂട്ടീൻ,ഷോപ്പിംഗ്,വിജറ്റ്,പഠനം,ചെക്ക്ലിസ്റ്റ്,ലക്ഷ്യം,todo,checklist"
+   },
+   "lengths": {
+    "name": 24,
+    "subtitle": 17,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「ജോലികളും വിജറ്റും」（1.0.16 剛改過、未量測，不動）；關鍵字刪 ലിസ്റ്റ്（名稱／副標已有）、നോട്ട്സ്、കലണ്ടർ、അജണ്ട、ഷെഡ്യൂൾ（筆記、行事曆、行程表、時鐘等不同意圖），補 ടാസ്ക്、ചെക്ക്ലിസ്റ്റ്、ലക്ഷ്യം、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "ദിവസം സ്നേഹത്തോടെ പ്ലാൻ ചെയ്യൂ"
+   }
+  },
+  "mr-IN": {
+   "current": {
+    "name": "Mochi: क्यूट टास्क लिस्ट",
+    "subtitle": "गोंडस कामे आणि विजेट",
+    "keywords": "काम,यादी,रिमाइंडर,प्लॅनर,नोट्स,सवय,रूटीन,शेड्यूल,खरेदी,अजेंडा,कॅलेंडर,विजेट,अभ्यास,ध्येय,वेळ"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=mr",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=mr",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: क्यूट टास्क लिस्ट",
+    "subtitle": "गोंडस कामे आणि विजेट",
+    "keywords": "काम,यादी,रिमाइंडर,प्लॅनर,सवय,रूटीन,खरेदी,अभ्यास,ध्येय,चेकलिस्ट,टूडू,दैनंदिन,todo"
+   },
+   "lengths": {
+    "name": 24,
+    "subtitle": 20,
+    "keywords": 80
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「गोंडस कामे आणि विजेट」（1.0.16 剛改過、未量測，不動）；關鍵字刪 विजेट（名稱／副標已有）、नोट्स、कॅलेंडर、अजेंडा、शेड्यूल、वेळ（筆記、行事曆、行程表、時鐘等不同意圖），補 चेकलिस्ट、टूडू、दैनंदिन、todo。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "दिवस शांतपणे प्लॅन करा"
+   }
+  },
+  "ms": {
+   "current": {
+    "name": "Mochi: Senarai Comel",
+    "subtitle": "Tugas, peringatan dan widget",
+    "keywords": "tugas,senarai,peringatan,perancang,nota,tabiat,rutin,jadual,beli-belah,agenda,kalendar,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/my/app/id6785004775?l=ms",
+    "subtitle": "apps.apple.com/my/app/id6785004775?l=ms",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Senarai Comel",
+    "subtitle": "Tugas, peringatan dan widget",
+    "keywords": "todo,checklist,semak,perancang,planner,tabiat,rutin,beli-belah,kawaii,harian,matlamat"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 28,
+    "keywords": 85
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Tugas, peringatan dan widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tugas、senarai、peringatan、widget（名稱／副標已有）、nota、kalendar、agenda、jadual（筆記、行事曆、行程表、時鐘等不同意圖），補 todo、checklist、semak、planner、kawaii、harian、matlamat。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Rancang hari dengan tenang"
+   }
+  },
+  "nl-NL": {
+   "current": {
+    "name": "Mochi: Schattige taken",
+    "subtitle": "Takenlijst, checklist, widget",
+    "keywords": "takenlijst,checklist,herinnering,planner,notities,gewoontes,routine,schema,boodschappen,agenda"
+   },
+   "current_source": {
+    "name": "apps.apple.com/nl/app/id6785004775?l=nl",
+    "subtitle": "apps.apple.com/nl/app/id6785004775?l=nl",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Schattige taken",
+    "subtitle": "Takenlijst, checklist, widget",
+    "keywords": "todo,lijst,herinnering,planner,gewoontes,routine,boodschappen,kawaii,schattig,dagelijks,doelen"
+   },
+   "lengths": {
+    "name": 22,
+    "subtitle": 29,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Takenlijst, checklist, widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 takenlijst、checklist（名稱／副標已有）、notities、agenda、schema（筆記、行事曆、行程表、時鐘等不同意圖），補 todo、lijst、kawaii、schattig、dagelijks、doelen。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Plan je dag met rust"
+   }
+  },
+  "no": {
+   "current": {
+    "name": "Mochi: Søt huskeliste",
+    "subtitle": "Gjøremål, sjekkliste og widget",
+    "keywords": "oppgaver,liste,påminnelse,planlegger,notater,vaner,rutine,timeplan,handel,agenda,kalender,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/no/app/id6785004775?l=nb",
+    "subtitle": "apps.apple.com/no/app/id6785004775?l=nb",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Søt huskeliste",
+    "subtitle": "Gjøremål, sjekkliste og widget",
+    "keywords": "gjøremålsliste,todo,oppgaver,liste,påminnelse,planlegger,vaner,rutine,handleliste,kawaii,daglig,mål"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 30,
+    "keywords": 99
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Gjøremål, sjekkliste og widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 widget（名稱／副標已有）、notater、kalender、agenda、timeplan（筆記、行事曆、行程表、時鐘等不同意圖）、handel（副標已有同字變形，或換成更精準的詞／讓出字數），補 gjøremålsliste、todo、handleliste、kawaii、daglig、mål。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planlegg dagen rolig"
+   }
+  },
+  "or-IN": {
+   "current": {
+    "name": "Mochi: କ୍ୟୁଟ୍ ଟାସ୍କ ଲିଷ୍ଟ",
+    "subtitle": "ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍",
+    "keywords": "କାମ,ତାଲିକା,ରିମାଇଣ୍ଡର,ପ୍ଲାନର,ନୋଟ୍ସ,ଅଭ୍ୟାସ,ରୁଟିନ,ସମୟସୂଚୀ,କିଣାକାଟା,ଏଜେଣ୍ଡା,କ୍ୟାଲେଣ୍ଡର,ୱିଜେଟ,ପଢ଼ା"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=or",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=or",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: କ୍ୟୁଟ୍ ଟାସ୍କ ଲିଷ୍ଟ",
+    "subtitle": "ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍",
+    "keywords": "ତାଲିକା,ରିମାଇଣ୍ଡର,ପ୍ଲାନର,ଅଭ୍ୟାସ,ରୁଟିନ,କିଣାକାଟା,ପଢ଼ା,ଚେକଲିଷ୍ଟ,ଲକ୍ଷ୍ୟ,todo,checklist"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 19,
+    "keywords": 81
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍」（1.0.16 剛改過、未量測，不動）；關鍵字刪 କାମ（名稱／副標已有）、ନୋଟ୍ସ、କ୍ୟାଲେଣ୍ଡର、ଏଜେଣ୍ଡା、ସମୟସୂଚୀ（筆記、行事曆、行程表、時鐘等不同意圖）、ୱିଜେଟ（副標已有同字變形，或換成更精準的詞／讓出字數），補 ଚେକଲିଷ୍ଟ、ଲକ୍ଷ୍ୟ、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "ଦିନକୁ ଶାନ୍ତିରେ ପ୍ଲାନ୍ କରନ୍ତୁ"
+   }
+  },
+  "pa-IN": {
+   "current": {
+    "name": "Mochi: ਕਿਊਟ ਟਾਸਕ ਲਿਸਟ",
+    "subtitle": "ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ",
+    "keywords": "ਕੰਮ,ਸੂਚੀ,ਰਿਮਾਈਂਡਰ,ਪਲੈਨਰ,ਨੋਟਸ,ਆਦਤ,ਰੂਟੀਨ,ਸ਼ਡਿਊਲ,ਖਰੀਦਦਾਰੀ,ਏਜੰਡਾ,ਕੈਲੰਡਰ,ਵਿਜੇਟ,ਪੜ੍ਹਾਈ,ਟੀਚਾ,ਸਮਾਂ"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=pa",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=pa",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: ਕਿਊਟ ਟਾਸਕ ਲਿਸਟ",
+    "subtitle": "ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ",
+    "keywords": "ਸੂਚੀ,ਰਿਮਾਈਂਡਰ,ਪਲੈਨਰ,ਆਦਤ,ਰੂਟੀਨ,ਖਰੀਦਦਾਰੀ,ਪੜ੍ਹਾਈ,ਟੀਚਾ,ਚੈਕਲਿਸਟ,todo,checklist"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 18,
+    "keywords": 73
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ」（1.0.16 剛改過、未量測，不動）；關鍵字刪 ਕੰਮ、ਵਿਜੇਟ（名稱／副標已有）、ਨੋਟਸ、ਕੈਲੰਡਰ、ਏਜੰਡਾ、ਸ਼ਡਿਊਲ、ਸਮਾਂ（筆記、行事曆、行程表、時鐘等不同意圖），補 ਚੈਕਲਿਸਟ、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "ਦਿਨ ਨਰਮੀ ਨਾਲ ਪਲਾਨ ਕਰੋ"
+   }
+  },
+  "pl": {
+   "current": {
+    "name": "Mochi: Urocza lista zadań",
+    "subtitle": "To do, checklista i widżet",
+    "keywords": "zadania,lista,przypomnienia,planner,notatki,nawyki,rutyna,harmonogram,zakupy,agenda,kalendarz,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/pl/app/id6785004775?l=pl",
+    "subtitle": "apps.apple.com/pl/app/id6785004775?l=pl",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Urocza lista zadań",
+    "subtitle": "To do, checklista i widżet",
+    "keywords": "zadania,todo,przypomnienia,planner,nawyki,rutyna,zakupy,widget,kawaii,słodka,codzienne,cele"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 26,
+    "keywords": 91
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「To do, checklista i widżet」（1.0.16 剛改過、未量測，不動）；關鍵字刪 lista（名稱／副標已有）、notatki、kalendarz、agenda、harmonogram（筆記、行事曆、行程表、時鐘等不同意圖），補 todo、kawaii、słodka、codzienne、cele。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planuj dzień spokojnie"
+   }
+  },
+  "pt-BR": {
+   "current": {
+    "name": "Mochi: Lista fofa",
+    "subtitle": "Tarefas fofas e checklist",
+    "keywords": "tarefas,lista,lembrete,planner,notas,hábitos,rotina,agenda,compras,calendário,widget,organização"
+   },
+   "current_source": {
+    "name": "apps.apple.com/br/app/id6785004775?l=pt-BR",
+    "subtitle": "apps.apple.com/br/app/id6785004775?l=pt-BR",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Lista fofa",
+    "subtitle": "Tarefas fofas e checklist",
+    "keywords": "afazeres,planner,lembrete,rotina,hábitos,widget,organização,compras,kawaii,fofinha,diário,metas"
+   },
+   "lengths": {
+    "name": 17,
+    "subtitle": 25,
+    "keywords": 95
+   },
+   "evidence": [
+    {
+     "term": "lista de tarefas fofa",
+     "country": "BR",
+     "our_rank": 1,
+     "results_shown": 8,
+     "top3": [
+      "Mochi: Lista fofa（4）",
+      "E:Roomy - Pomodoro & Tarefas（0）",
+      "DailyWall: Notas adesivas（0）"
+     ],
+     "top1": "Mochi: Lista fofa",
+     "top1_ratings": "4",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "lista de tarefas",
+     "country": "BR",
+     "our_rank": 5,
+     "results_shown": 12,
+     "top3": [
+      "To Do List: Lembretes Tarefas（2 mil）",
+      "Checklist fácil: rotina diaria（2,4 mil）",
+      "Google Tarefas: organize-se（21 mil）"
+     ],
+     "top1": "To Do List: Lembretes Tarefas",
+     "top1_ratings": "2 mil",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "planner fofo",
+     "country": "BR",
+     "our_rank": 1,
+     "results_shown": 12,
+     "top3": [
+      "Mochi: Lista fofa（4）",
+      "Roubit: Fofa rotina diária（137）",
+      "Kawaii Calendar Fofo（1）"
+     ],
+     "top1": "Mochi: Lista fofa",
+     "top1_ratings": "4",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "checklist fofo",
+     "country": "BR",
+     "our_rank": 1,
+     "results_shown": 4,
+     "top3": [
+      "Mochi: Lista fofa（4）",
+      "Momo Days: Hábitos e Rotina（0）",
+      "Praisedone（0）"
+     ],
+     "top1": "Mochi: Lista fofa",
+     "top1_ratings": "4",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "to do list",
+     "country": "BR",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "Todoist: To do list–Calendário（22 mil）",
+      "Microsoft To Do（35 mil）",
+      "To do list - MinimaList（1,5 mil）"
+     ],
+     "top1": "Todoist: To do list–Calendário",
+     "top1_ratings": "22 mil",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "lista de afazeres",
+     "country": "BR",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "Checklist fácil: rotina diaria（2,4 mil）",
+      "Habit Tracker - Hábitos（25 mil）",
+      "To Do List: Lembretes Tarefas（2 mil）"
+     ],
+     "top1": "Checklist fácil: rotina diaria",
+     "top1_ratings": "2,4 mil",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "Mochi 欄位沒有 afazeres"
+    },
+    {
+     "term": "checklist",
+     "country": "BR",
+     "our_rank": 8,
+     "results_shown": 11,
+     "top3": [
+      "Checklist Fácil（5,1 mil）",
+      "To do list - MinimaList（1,5 mil）",
+      "Habit Tracker - Hábitos（25 mil）"
+     ],
+     "top1": "Checklist Fácil",
+     "top1_ratings": "5,1 mil",
+     "intent_ok": true,
+     "source": "apps.apple.com/br/iphone/search（網頁版，前 12 名，2026-10-13）"
+    }
+   ],
+   "changes": "副標維持「Tarefas fofas e checklist」：lista de tarefas fofa #1、checklist fofo #1、planner fofo #1、lista de tarefas #5、checklist #8，不動。關鍵字刪 tarefas、lista（名稱／副標已有）、notas、calendário、agenda（筆記、行事曆意圖），補 afazeres（lista de afazeres 前 12 名無 Mochi）、kawaii、fofinha、diário、metas，保留 planner（planner fofo #1）。",
+   "depth": "deep",
+   "mirror_differs": {
+    "subtitle": "Planeje o dia com leveza"
+   }
+  },
+  "pt-PT": {
+   "current": {
+    "name": "Mochi: Lista amorosa",
+    "subtitle": "Checklist de tarefas giras",
+    "keywords": "tarefas,lista,lembrete,planeador,notas,hábitos,rotina,agenda,compras,calendário,widget,organização"
+   },
+   "current_source": {
+    "name": "apps.apple.com/pt/app/id6785004775?l=pt-PT",
+    "subtitle": "apps.apple.com/pt/app/id6785004775?l=pt-PT",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Lista amorosa",
+    "subtitle": "Checklist de tarefas giras",
+    "keywords": "afazeres,todo,lembrete,planeador,hábitos,rotina,compras,widget,organização,kawaii,fofa,objetivos"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 26,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Checklist de tarefas giras」（1.0.16 剛改過、未量測，不動）；關鍵字刪 tarefas、lista（名稱／副標已有）、notas、calendário、agenda（筆記、行事曆、行程表、時鐘等不同意圖），補 afazeres、todo、kawaii、fofa、objetivos。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planeia o dia com calma"
+   }
+  },
+  "ro": {
+   "current": {
+    "name": "Mochi: Listă drăguță",
+    "subtitle": "Sarcini, memento-uri și widget",
+    "keywords": "sarcini,listă,memento,planner,notițe,obiceiuri,rutină,program,cumpărături,agendă,calendar,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/ro/app/id6785004775?l=ro",
+    "subtitle": "apps.apple.com/ro/app/id6785004775?l=ro",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Listă drăguță",
+    "subtitle": "Sarcini, memento-uri și widget",
+    "keywords": "todo,checklist,lucruri,făcut,planner,obiceiuri,rutină,cumpărături,kawaii,drăguț,zilnic,obiective"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 30,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Sarcini, memento-uri și widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 sarcini、listă、memento、widget（名稱／副標已有）、notițe、calendar、agendă、program（筆記、行事曆、行程表、時鐘等不同意圖），補 todo、checklist、lucruri、făcut、kawaii、drăguț、zilnic、obiective。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planifică ziua cu calm"
+   }
+  },
+  "ru": {
+   "current": {
+    "name": "Mochi: Милый список дел",
+    "subtitle": "Чек-лист, задачи и виджет",
+    "keywords": "дела,задачи,список,напоминания,планер,заметки,привычки,рутина,расписание,покупки,календарь,виджет"
+   },
+   "current_source": {
+    "name": "apps.apple.com/ru/app/id6785004775?l=ru",
+    "subtitle": "apps.apple.com/ru/app/id6785004775?l=ru",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Милый список дел",
+    "subtitle": "Чек-лист, задачи и виджет",
+    "keywords": "дела,туду,todo,чеклист,напоминания,планер,ежедневник,привычки,рутина,покупки,кавай,милые,цели"
+   },
+   "lengths": {
+    "name": 23,
+    "subtitle": 25,
+    "keywords": 93
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Чек-лист, задачи и виджет」（1.0.16 剛改過、未量測，不動）；關鍵字刪 задачи、список、виджет（名稱／副標已有）、заметки、календарь、расписание（筆記、行事曆、行程表、時鐘等不同意圖），補 туду、todo、чеклист、ежедневник、кавай、милые、цели。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Планируй день мягко"
+   }
+  },
+  "sk": {
+   "current": {
+    "name": "Mochi: Milé úlohy",
+    "subtitle": "Checklist, pripomienky, widget",
+    "keywords": "úlohy,zoznam,pripomienka,plánovač,poznámky,návyky,rutina,rozvrh,nákup,agenda,kalendár,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/sk/app/id6785004775?l=sk",
+    "subtitle": "apps.apple.com/sk/app/id6785004775?l=sk",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Milé úlohy",
+    "subtitle": "Checklist, pripomienky, widget",
+    "keywords": "zoznam,úloh,todo,plánovač,návyky,rutina,nákup,kawaii,roztomilé,denný,ciele"
+   },
+   "lengths": {
+    "name": 17,
+    "subtitle": 30,
+    "keywords": 74
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Checklist, pripomienky, widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 úlohy、widget（名稱／副標已有）、poznámky、kalendár、agenda、rozvrh（筆記、行事曆、行程表、時鐘等不同意圖）、pripomienka（副標已有同字變形，或換成更精準的詞／讓出字數），補 úloh、todo、kawaii、roztomilé、denný、ciele。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Plánuj deň pokojne"
+   }
+  },
+  "sl-SI": {
+   "current": {
+    "name": "Mochi: Ljubek seznam",
+    "subtitle": "Ljubki opravki in gradnik",
+    "keywords": "opravila,seznam,opomnik,planer,zapiski,navade,rutina,urnik,nakupi,agenda,koledar,widget,cilji"
+   },
+   "current_source": {
+    "name": "apps.apple.com/si/app/id6785004775?l=sl",
+    "subtitle": "apps.apple.com/si/app/id6785004775?l=sl",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Ljubek seznam",
+    "subtitle": "Ljubki opravki in gradnik",
+    "keywords": "opravila,opravil,todo,checklist,opomnik,planer,navade,rutina,nakupi,widget,kawaii,dnevni,cilji"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 25,
+    "keywords": 94
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Ljubki opravki in gradnik」（1.0.16 剛改過、未量測，不動）；關鍵字刪 seznam（名稱／副標已有）、zapiski、koledar、agenda、urnik（筆記、行事曆、行程表、時鐘等不同意圖），補 opravil、todo、checklist、kawaii、dnevni。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Načrtuj dan umirjeno"
+   }
+  },
+  "sv": {
+   "current": {
+    "name": "Mochi: Söt att-göra-lista",
+    "subtitle": "Checklista, sysslor & widget",
+    "keywords": "uppgifter,lista,påminnelse,planerare,anteckningar,vanor,rutin,schema,inköp,agenda,kalender,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/se/app/id6785004775?l=sv",
+    "subtitle": "apps.apple.com/se/app/id6785004775?l=sv",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Söt att-göra-lista",
+    "subtitle": "Checklista, sysslor & widget",
+    "keywords": "todo,uppgifter,påminnelse,planerare,vanor,rutin,inköpslista,kawaii,söta,daglig,mål"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 28,
+    "keywords": 82
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Checklista, sysslor & widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 lista、widget（名稱／副標已有）、anteckningar、kalender、agenda、schema（筆記、行事曆、行程表、時鐘等不同意圖）、inköp（副標已有同字變形，或換成更精準的詞／讓出字數），補 todo、inköpslista、kawaii、söta、daglig、mål。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Planera dagen mjukt"
+   }
+  },
+  "ta-IN": {
+   "current": {
+    "name": "Mochi: க்யூட் டாஸ்க் லிஸ்ட்",
+    "subtitle": "அழகான பணிகள் விட்ஜெட்",
+    "keywords": "வேலை,பட்டியல்,ரிமைண்டர்,பிளானர்,குறிப்புகள்,பழக்கம்,ரூட்டீன்,அட்டவணை,ஷாப்பிங்,அஜெண்டா,காலண்டர்"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=ta",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=ta",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: க்யூட் டாஸ்க் லிஸ்ட்",
+    "subtitle": "அழகான பணிகள் விட்ஜெட்",
+    "keywords": "வேலை,பட்டியல்,ரிமைண்டர்,பிளானர்,பழக்கம்,ரூட்டீன்,ஷாப்பிங்,செக்லிஸ்ட்,இலக்கு,படிப்பு,todo,checklist"
+   },
+   "lengths": {
+    "name": 27,
+    "subtitle": 21,
+    "keywords": 98
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「அழகான பணிகள் விட்ஜெட்」（1.0.16 剛改過、未量測，不動）；關鍵字刪 குறிப்புகள்、காலண்டர்、அஜெண்டா、அட்டவணை（筆記、行事曆、行程表、時鐘等不同意圖），補 செக்லிஸ்ட்、இலக்கு、படிப்பு、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "நாளை மென்மையாக திட்டமிடுங்கள்"
+   }
+  },
+  "te-IN": {
+   "current": {
+    "name": "Mochi: క్యూట్ టాస్క్ లిస్ట్",
+    "subtitle": "ముద్దైన పనులు విడ్జెట్",
+    "keywords": "పని,జాబితా,రిమైండర్,ప్లానర్,నోట్స్,అలవాటు,రూటీన్,షెడ్యూల్,షాపింగ్,అజెండా,క్యాలెండర్,విడ్జెట్"
+   },
+   "current_source": {
+    "name": "apps.apple.com/in/app/id6785004775?l=te",
+    "subtitle": "apps.apple.com/in/app/id6785004775?l=te",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: క్యూట్ టాస్క్ లిస్ట్",
+    "subtitle": "ముద్దైన పనులు విడ్జెట్",
+    "keywords": "పని,జాబితా,రిమైండర్,ప్లానర్,అలవాటు,రూటీన్,షాపింగ్,చెక్లిస్ట్,లక్ష్యం,చదువు,todo,checklist"
+   },
+   "lengths": {
+    "name": 27,
+    "subtitle": 22,
+    "keywords": 89
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「ముద్దైన పనులు విడ్జెట్」（1.0.16 剛改過、未量測，不動）；關鍵字刪 విడ్జెట్（名稱／副標已有）、నోట్స్、క్యాలెండర్、అజెండా、షెడ్యూల్（筆記、行事曆、行程表、時鐘等不同意圖），補 చెక్లిస్ట్、లక్ష్యం、చదువు、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "రోజును మృదువుగా ప్లాన్ చేయండి"
+   }
+  },
+  "th": {
+   "current": {
+    "name": "Mochi: เช็กลิสต์น่ารัก",
+    "subtitle": "สิ่งที่ต้องทำ พร้อมวิดเจ็ต",
+    "keywords": "งาน,รายการ,เตือนความจำ,แพลนเนอร์,โน้ต,นิสัย,รูทีน,ตาราง,ซื้อของ,วาระ,ปฏิทิน,วิดเจ็ต,เรียน,งานบ้าน"
+   },
+   "current_source": {
+    "name": "apps.apple.com/th/app/id6785004775?l=th",
+    "subtitle": "apps.apple.com/th/app/id6785004775?l=th",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: เช็กลิสต์น่ารัก",
+    "subtitle": "สิ่งที่ต้องทำ พร้อมวิดเจ็ต",
+    "keywords": "งาน,รายการ,เตือนความจำ,แพลนเนอร์,นิสัย,รูทีน,ซื้อของ,เรียน,งานบ้าน,เช็คลิสต์,คิวท์,เป้าหมาย,todo"
+   },
+   "lengths": {
+    "name": 22,
+    "subtitle": 26,
+    "keywords": 96
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「สิ่งที่ต้องทำ พร้อมวิดเจ็ต」（1.0.16 剛改過、未量測，不動）；關鍵字刪 โน้ต、ปฏิทิน、วาระ、ตาราง（筆記、行事曆、行程表、時鐘等不同意圖）、วิดเจ็ต（副標已有同字變形，或換成更精準的詞／讓出字數），補 เช็คลิสต์、คิวท์、เป้าหมาย、todo。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "จัดวันให้ละมุนขึ้น"
+   }
+  },
+  "tr": {
+   "current": {
+    "name": "Mochi: Sevimli Liste",
+    "subtitle": "Yapılacaklar listesi ve widget",
+    "keywords": "görevler,liste,hatırlatıcı,planlayıcı,notlar,alışkanlık,rutin,program,alışveriş,ajanda,takvim,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/tr/app/id6785004775?l=tr",
+    "subtitle": "apps.apple.com/tr/app/id6785004775?l=tr",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Sevimli Liste",
+    "subtitle": "Yapılacaklar listesi ve widget",
+    "keywords": "görevler,todo,kontrol,hatırlatıcı,planlayıcı,alışkanlık,rutin,alışveriş,kawaii,tatlı,hedefler"
+   },
+   "lengths": {
+    "name": 20,
+    "subtitle": 30,
+    "keywords": 93
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Yapılacaklar listesi ve widget」（1.0.16 剛改過、未量測，不動）；關鍵字刪 liste、widget（名稱／副標已有）、notlar、takvim、ajanda、program（筆記、行事曆、行程表、時鐘等不同意圖），補 todo、kontrol、kawaii、tatlı、hedefler。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Gününü yumuşakça planla"
+   }
+  },
+  "uk": {
+   "current": {
+    "name": "Mochi: Милий список справ",
+    "subtitle": "Чекліст, завдання та віджет",
+    "keywords": "справи,задачі,список,нагадування,планер,нотатки,звички,рутина,розклад,покупки,календар,віджет"
+   },
+   "current_source": {
+    "name": "apps.apple.com/ua/app/id6785004775?l=uk",
+    "subtitle": "apps.apple.com/ua/app/id6785004775?l=uk",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Милий список справ",
+    "subtitle": "Чекліст, завдання та віджет",
+    "keywords": "справи,задачі,туду,todo,нагадування,планер,звички,рутина,покупки,органайзер,кавай,милі,цілі"
+   },
+   "lengths": {
+    "name": 25,
+    "subtitle": 27,
+    "keywords": 91
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「Чекліст, завдання та віджет」（1.0.16 剛改過、未量測，不動）；關鍵字刪 список、віджет（名稱／副標已有）、нотатки、календар、розклад（筆記、行事曆、行程表、時鐘等不同意圖），補 туду、todo、органайзер、кавай、милі、цілі。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Плануй день спокійно"
+   }
+  },
+  "ur-PK": {
+   "current": {
+    "name": "Mochi: پیاری ٹاسک لسٹ",
+    "subtitle": "پیارے کام اور ویجٹ",
+    "keywords": "کام,فہرست,یاددہانی,پلینر,نوٹس,عادت,روٹین,شیڈول,خریداری,ایجنڈا,کیلنڈر,ویجیٹ,پڑھائی,مقصد,وقت"
+   },
+   "current_source": {
+    "name": "apps.apple.com/pk/app/id6785004775?l=ur",
+    "subtitle": "apps.apple.com/pk/app/id6785004775?l=ur",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: پیاری ٹاسک لسٹ",
+    "subtitle": "پیارے کام اور ویجٹ",
+    "keywords": "فہرست,یاددہانی,پلینر,عادت,روٹین,خریداری,پڑھائی,مقصد,ویجیٹ,چیک لسٹ,ٹوڈو,todo,checklist"
+   },
+   "lengths": {
+    "name": 21,
+    "subtitle": 18,
+    "keywords": 85
+   },
+   "evidence": [],
+   "changes": "（輕量）副標維持線上「پیارے کام اور ویجٹ」（1.0.16 剛改過、未量測，不動）；關鍵字刪 کام（名稱／副標已有）、نوٹس、کیلنڈر、ایجنڈا、شیڈول、وقت（筆記、行事曆、行程表、時鐘等不同意圖），補 چیک لسٹ、ٹوڈو、todo、checklist。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "دن کو نرمی سے پلان کریں"
+   }
+  },
+  "vi": {
+   "current": {
+    "name": "Mochi: Checklist dễ thương",
+    "subtitle": "Việc cần làm dễ thương",
+    "keywords": "việc,checklist,nhắc nhở,planner,ghi chú,thói quen,routine,lịch trình,mua sắm,agenda,lịch,widget"
+   },
+   "current_source": {
+    "name": "apps.apple.com/vn/app/id6785004775?l=vi",
+    "subtitle": "apps.apple.com/vn/app/id6785004775?l=vi",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: Checklist dễ thương",
+    "subtitle": "Việc cần làm & widget nhắc nhở",
+    "keywords": "todo,to do list,danh sách,công việc,planner,thói quen,routine,mua sắm,kawaii,cute,mục tiêu,hằng ngày"
+   },
+   "lengths": {
+    "name": 26,
+    "subtitle": 30,
+    "keywords": 100
+   },
+   "evidence": [],
+   "changes": "（輕量）副標「Việc cần làm dễ thương」的 dễ thương 和名稱重複，改放 widget、nhắc nhở；關鍵字刪 checklist（名稱）、việc／nhắc nhở／widget（副標）、ghi chú、lịch、lịch trình、agenda（筆記、行事曆意圖），補 to do list、danh sách、công việc、kawaii、cute、mục tiêu。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "Sắp xếp ngày thật dịu dàng"
+   }
+  },
+  "zh-Hans": {
+   "current": {
+    "name": "Mochi: 可爱待办清单",
+    "subtitle": "治愈手帐・购物清单小组件",
+    "keywords": "待办,任务清单,日程,提醒,备忘录,小组件,习惯,计划,购物,课程表,打卡,时间管理,手帐,清单,效率,学习,工作,番茄钟,便签,日历,安排,目标,生活,作业,备考,计划表,日计划,记事,桌面组件"
+   },
+   "current_source": {
+    "name": "apps.apple.com/cn/app/id6785004775?l=zh-Hans-CN",
+    "subtitle": "apps.apple.com/cn/app/id6785004775?l=zh-Hans-CN",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: 可爱待办清单",
+    "subtitle": "治愈待办事项・提醒・锁屏小组件",
+    "keywords": "todo,任务清单,备忘录,习惯,计划,购物,打卡,时间管理,效率,学习,工作,便签,目标,生活,作业,日计划,记事,重复,少女心,手表,安排"
+   },
+   "lengths": {
+    "name": 13,
+    "subtitle": 15,
+    "keywords": 71
+   },
+   "evidence": [],
+   "changes": "（輕量）比照 TW 實測：手帐（日記貼紙意圖）、购物清单（購物清單 App）在副標沒有排名，改放 待办事项、提醒、锁屏、小组件；關鍵字刪 待办／清单（名稱）、小组件／提醒（副標）、手帐、日历、日程、课程表、番茄钟（App 沒有計時器）、备考、桌面组件，補 todo、重复、少女心、手表。",
+   "depth": "light",
+   "mirror_differs": {
+    "subtitle": "把每天安排得更治愈"
+   }
+  },
+  "zh-Hant": {
+   "current": {
+    "name": "Mochi: 可愛待辦清單",
+    "subtitle": "療癒手帳・購物清單小工具",
+    "keywords": "待辦,任務清單,日程,提醒,備忘錄,小工具,習慣,計畫,購物,課表,打卡,時間管理,手帳,清單,效率,讀書,工作,番茄鐘,便條,日曆,安排,目標,生活,作業,備考,計畫表,日計畫,記事,桌面小工具"
+   },
+   "current_source": {
+    "name": "apps.apple.com/tw/app/id6785004775?l=zh-Hant-TW",
+    "subtitle": "apps.apple.com/tw/app/id6785004775?l=zh-Hant-TW",
+    "keywords": "_engine/data/mochi_full.json（2026-10-03 鏡像）；線上值無法公開查到"
+   },
+   "recommended": {
+    "name": "Mochi: 可愛待辦清單",
+    "subtitle": "療癒待辦事項・提醒・鎖定畫面小工具",
+    "keywords": "todo,任務,檢查清單,備忘錄,購物,習慣,打卡,每日計畫,時間管理,目標,讀書,作業,工作,便利貼,記事,手錶,重複,少女心,粉色,效率,生活,計畫"
+   },
+   "lengths": {
+    "name": 13,
+    "subtitle": 17,
+    "keywords": 76
+   },
+   "evidence": [
+    {
+     "term": "可愛待辦",
+     "country": "TW",
+     "our_rank": 2,
+     "results_shown": 12,
+     "top3": [
+      "Kummy行事曆 - 簡單可愛的日曆應用（1289）",
+      "Mochi: 可愛待辦清單（4）",
+      "Cat Todo - 備忘錄 & 待辦事項 & 記事本（64）"
+     ],
+     "top1": "Kummy行事曆 - 簡單可愛的日曆應用",
+     "top1_ratings": "1289",
+     "intent_ok": true,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "待辦清單",
+     "country": "TW",
+     "our_rank": null,
+     "results_shown": 11,
+     "top3": [
+      "極簡待辦 - To Do List &備忘錄&記事本（5634）",
+      "LockDay: 待辦清單與計畫（47）",
+      "Taska: 待辦清單與規劃（1039）"
+     ],
+     "top1": "極簡待辦 - To Do List &備忘錄&記事本",
+     "top1_ratings": "5634",
+     "intent_ok": true,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "待辦事項",
+     "country": "TW",
+     "our_rank": 9,
+     "results_shown": 11,
+     "top3": [
+      "提醒事項（3.5萬）",
+      "極簡待辦 - To Do List &備忘錄&記事本（5634）",
+      "今日待辦：桌面便利貼 & To Do List Widget（3331）"
+     ],
+     "top1": "提醒事項",
+     "top1_ratings": "3.5萬",
+     "intent_ok": true,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "可愛 todo",
+     "country": "TW",
+     "our_rank": 3,
+     "results_shown": 12,
+     "top3": [
+      "Cat Todo - 備忘錄 & 待辦事項 & 記事本（64）",
+      "微笑Todo-自律计划和时间打卡（4739）",
+      "Mochi: 可愛待辦清單（4）"
+     ],
+     "top1": "Cat Todo - 備忘錄 & 待辦事項 & 記事本",
+     "top1_ratings": "64",
+     "intent_ok": true,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）"
+    },
+    {
+     "term": "代辦事項",
+     "country": "TW",
+     "our_rank": 9,
+     "results_shown": 11,
+     "top3": [
+      "提醒事項（3.5萬）",
+      "極簡待辦 - To Do List &備忘錄&記事本（5634）",
+      "今日待辦：桌面便利貼 & To Do List Widget（3331）"
+     ],
+     "top1": "提醒事項",
+     "top1_ratings": "3.5萬",
+     "intent_ok": true,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "錯字變體，結果與 待辦事項 完全相同（Apple 已正規化），不需另放"
+    },
+    {
+     "term": "手帳",
+     "country": "TW",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "微手帳 - 花樣日記本電子手賬咕卡（9445）",
+      "手帳罐頭 -  輕鬆做出漂亮手賬（52）",
+      "手帳達人-電子手帳軟件（2535）"
+     ],
+     "top1": "微手帳 - 花樣日記本電子手賬咕卡",
+     "top1_ratings": "9445",
+     "intent_ok": false,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "前 12 名全是貼紙日記手帳，意圖不同；副標裡的 手帳 沒帶來名次"
+    },
+    {
+     "term": "購物清單",
+     "country": "TW",
+     "our_rank": null,
+     "results_shown": 12,
+     "top3": [
+      "購物清單 - 購物備忘錄 & 核對清單（1492）",
+      "JaBuy 日本旅遊清單，人氣必買商品、餐廳專屬懶人包！（5）",
+      "極簡待辦 - To Do List &備忘錄&記事本（5634）"
+     ],
+     "top1": "購物清單 - 購物備忘錄 & 核對清單",
+     "top1_ratings": "1492",
+     "intent_ok": false,
+     "source": "apps.apple.com/tw/iphone/search（網頁版，前 12 名，2026-10-13）",
+     "note": "前 12 名幾乎都是購物清單 App；副標裡的 購物清單 沒帶來名次"
+    }
+   ],
+   "changes": "副標拿掉「手帳」（TW 手帳 前 12 名全是貼紙日記，Mochi 不在榜）與「購物清單」（前 12 名全是購物清單 App，Mochi 不在榜），改放 待辦事項（現 #9，代辦事項 同 #9）、提醒、鎖定畫面、小工具；關鍵字刪 待辦／清單（名稱已有）、小工具類（副標已有）、手帳、日曆、課表、番茄鐘（App 沒有計時器）、備考、日程，補 todo（可愛 todo 現 #3，同語系才能組詞）、檢查清單、便利貼、手錶、重複、少女心、粉色。",
+   "depth": "deep",
+   "mirror_differs": {
+    "subtitle": "把每天整理得更療癒"
+   }
+  }
+ },
+ "verification": "python3 檢查 50/50 通過：名稱與線上完全相同、副標 ≤30、關鍵字 ≤100（len 與 UTF-16 相同）、逗號後無空白、無重複字、關鍵字不含同語系名稱／副標已有的字（中日韓泰另做子字串檢查）、英文無單複數重複。"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T16:32:18Z",
+  "updated_at": "2026-10-13T16:39:34Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -17,9 +17,9 @@
     },
     {
       "id": "oa-local-start",
-      "title": "開一個本機對話、貼一行字（本機待辦、UsageNow 改 ASC、每日排程一次搞定）",
+      "title": "開一個本機對話、貼一行字（本機待辦、UsageNow 改 ASC 一次搞定）",
       "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
-      "how": "Mac 終端機的 remote-control 開著就好（問 QR code 那行不用理）。打開連結開新對話，貼上：可以，外宣直接做，副標和關鍵字只要經過一個以上模型驗證就直接改 ASC，UsageNow 照雲端給的商店文字改。請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行（先 git pull origin main），並設成每天 09:23 自動執行。",
+      "how": "Mac 終端機的 remote-control 開著就好（問 QR code 那行不用理）。打開連結開新對話，貼上：可以，外宣直接做，副標和關鍵字只要經過一個以上模型驗證就直接改 ASC，UsageNow 照雲端給的商店文字改。請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行（先 git pull origin main）。",
       "status": "todo"
     },
     {
@@ -107,10 +107,10 @@
         {
           "id": "cvdesk-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/cvdesk.md 與 cvdesk-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "cvdesk-01",
@@ -185,10 +185,10 @@
         {
           "id": "gmoneylite-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/gmoneylite.md 與 gmoneylite-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "gmoneylite-04",
@@ -258,10 +258,10 @@
         {
           "id": "lumimission-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/lumimission.md 與 lumimission-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "lumimission-02",
@@ -342,10 +342,10 @@
         {
           "id": "lumibopomofo-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/lumibopomofo.md 與 lumibopomofo-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "lumibopomofo-05",
@@ -438,7 +438,7 @@
         {
           "id": "mochi-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/mochi.md 與 mochi-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "第一模型（Opus）已調教完成，檔案在 .github/growth/aso/；第二模型（Fable）驗證暫停，等 10/20 01:00 額度重置後再做，通過才會套用。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -514,10 +514,10 @@
         {
           "id": "moneytag-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/moneytag.md 與 moneytag-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "moneytag-04",
@@ -574,7 +574,7 @@
         {
           "id": "shotinbox-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/shotinbox.md 與 shotinbox-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "第一模型（Opus）已調教完成，檔案在 .github/growth/aso/；第二模型（Fable）驗證暫停，等 10/20 01:00 額度重置後再做，通過才會套用。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -662,10 +662,10 @@
         {
           "id": "snapportlite-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/snapportlite.md 與 snapportlite-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "snapportlite-01",
@@ -772,10 +772,10 @@
         {
           "id": "unblurry-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
-          "detail": "產出 .github/growth/aso/unblurry.md 與 unblurry-asc-payload.json；只改副標與關鍵字，標題不動。",
+          "detail": "暫停（雲端額度接近上限）：10/20 01:00 重置後再做雙模型調教。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "todo"
         },
         {
           "id": "unblurry-01",

@@ -1,0 +1,765 @@
+{
+ "app": "Mochi: Cute Checklist",
+ "app_store_id": "6785004775",
+ "apply_fields": [
+  "subtitle",
+  "keywords"
+ ],
+ "generated": "2026-10-13T16:37:00Z",
+ "source": ".github/growth/aso/mochi.json（模型 1／2 的 recommended；第二個模型驗證後才套用）",
+ "bundle_note": "只改這款 App 的 subtitle 與 keywords；name 照線上原樣（不送出變更），其他欄位不動。",
+ "expected_current_note": "expected_current 的 name、subtitle 是 2026-10-13 從 App Store 線上頁抓到的值（已驗證）；keywords 只能取自 _engine 的 10-03 鏡像，而 1.0.16 已改過副標，ASC 上的關鍵字很可能已不同。套用前以 ASC 現值比對：name 或 subtitle 不符就停下回報；只有 keywords 不符時，記錄 ASC 舊值後照 recommended 覆寫。",
+ "locales": {
+  "ar-SA": {
+   "name": "Mochi: قائمة مهام لطيفة",
+   "subtitle": "تذكيرات متكررة وودجت للشاشة",
+   "keywords": "المهام,تذكير,مخطط,عادة,روتين,تسوق,إنجاز,ودجت,مدرسة,عمل,هدف,كيوت,لطيف,يومية,منظم",
+   "expected_current": {
+    "name": "Mochi: قائمة مهام لطيفة",
+    "subtitle": "تذكيرات متكررة وودجت للشاشة",
+    "keywords": "مهام,قائمة,تذكير,مخطط,ملاحظات,عادة,روتين,جدول,تسوق,تقويم,أجندة,إنجاز,ودجت,ساعة,مدرسة,عمل,هدف"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "bn-BD": {
+   "name": "Mochi: মিষ্টি টাস্ক লিস্ট",
+   "subtitle": "কাজ, রিমাইন্ডার ও উইজেট",
+   "keywords": "তালিকা,প্ল্যানার,অভ্যাস,রুটিন,কেনাকাটা,কিউট,চেকলিস্ট,টুডু,দৈনিক,লক্ষ্য,পড়াশোনা,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: মিষ্টি টাস্ক লিস্ট",
+    "subtitle": "কাজ, রিমাইন্ডার ও উইজেট",
+    "keywords": "কাজ,তালিকা,রিমাইন্ডার,প্ল্যানার,নোট,অভ্যাস,রুটিন,সময়সূচি,কেনাকাটা,এজেন্ডা,ক্যালেন্ডার,উইজেট"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ca": {
+   "name": "Mochi: Llista bonica",
+   "subtitle": "Tasques, recordatoris i widget",
+   "keywords": "planificador,hàbits,rutina,compres,pendents,checklist,todo,kawaii,cuqui,diari,objectius,organitzador",
+   "expected_current": {
+    "name": "Mochi: Llista bonica",
+    "subtitle": "Tasques, recordatoris i widget",
+    "keywords": "tasques,llista,recordatori,planificador,notes,hàbits,rutina,agenda,compres,horari,calendari,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "cs": {
+   "name": "Mochi: Roztomilé úkoly",
+   "subtitle": "Checklist, připomínky a widget",
+   "keywords": "seznam,úkolů,úkolníček,plánovač,návyky,rutina,nákup,todo,kawaii,roztomilý,denní,cíle,organizér",
+   "expected_current": {
+    "name": "Mochi: Roztomilé úkoly",
+    "subtitle": "Checklist, připomínky a widget",
+    "keywords": "úkoly,seznam,připomínky,plánovač,poznámky,návyky,rutina,rozvrh,nákup,agenda,kalendář,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "da": {
+   "name": "Mochi: Sød huskeliste",
+   "subtitle": "Tjekliste, opgaver og widget",
+   "keywords": "opgaveliste,todo,påmindelse,planlægger,vaner,rutine,indkøbsliste,kawaii,søde,daglig,mål",
+   "expected_current": {
+    "name": "Mochi: Sød huskeliste",
+    "subtitle": "Tjekliste, opgaver og widget",
+    "keywords": "opgaver,tjekliste,påmindelse,planlægger,noter,vaner,rutine,skema,indkøb,agenda,kalender,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "de-DE": {
+   "name": "Mochi: Süße To-do-Liste",
+   "subtitle": "Aufgabenliste & Checkliste",
+   "keywords": "aufgaben,widget,todo,erinnerung,planer,tagesplaner,kawaii,niedlich,routine,einkaufsliste,ziele",
+   "expected_current": {
+    "name": "Mochi: Süße To-do-Liste",
+    "subtitle": "Checkliste, Aufgaben & Widget",
+    "keywords": "aufgaben,liste,erinnerung,planer,notizen,gewohnheiten,routine,zeitplan,einkauf,agenda,kalender"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "el": {
+   "name": "Mochi: Χαριτωμένες λίστες",
+   "subtitle": "Λίστα εργασιών & υπενθυμίσεις",
+   "keywords": "εργασίες,todo,checklist,πλάνο,συνήθειες,ρουτίνα,ψώνια,widget,kawaii,χαριτωμένο,καθημερινές,στόχοι",
+   "expected_current": {
+    "name": "Mochi: Χαριτωμένες λίστες",
+    "subtitle": "Λίστα εργασιών & υπενθυμίσεις",
+    "keywords": "εργασίες,λίστα,υπενθύμιση,πλάνο,σημειώσεις,συνήθειες,ρουτίνα,πρόγραμμα,ψώνια,ατζέντα,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "en-AU": {
+   "name": "Mochi: Cute Checklist",
+   "subtitle": "Kawaii & Aesthetic To-Do List",
+   "keywords": "student,school,college,morning,themes,checkbox,memo,teen,organised",
+   "expected_current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Chores",
+    "keywords": "todo,list,reminders,planner,notes,habits,routine,schedule,shopping,agenda,calendar,widget,tasks"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "en-CA": {
+   "name": "Mochi: Cute Checklist",
+   "subtitle": "Kawaii & Aesthetic To-Do List",
+   "keywords": "todo,widget,planner,reminder,task,daily,cozy,pastel,routine,girly,watch,organizer,habit,grocery",
+   "expected_current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Errands",
+    "keywords": "todo,list,reminder,planner,notes,habits,routine,schedule,shopping,agenda,calendar,widget,tasks"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "en-GB": {
+   "name": "Mochi: Cute Checklist",
+   "subtitle": "Pastel To-Do List & Organiser",
+   "keywords": "tick,girly,pink,pretty,adorable,simple,emoji,lockscreen,shopping,homework,goals,tidy,revision,uni",
+   "expected_current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Reminders",
+    "keywords": "to do,list,reminder,planner,notes,habits,routine,timetable,shopping,agenda,calendar,widget,tasks"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "en-US": {
+   "name": "Mochi: Cute Checklist",
+   "subtitle": "Kawaii & Aesthetic To-Do List",
+   "keywords": "todo,widget,planner,reminder,task,daily,cozy,pastel,routine,girly,watch,organizer,habit,grocery",
+   "expected_current": {
+    "name": "Mochi: Cute Checklist",
+    "subtitle": "Kawaii To-Do List & Chores",
+    "keywords": "todo,list,reminder,planner,notes,habits,routine,schedule,grocery,agenda,calendar,widget,tasks"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "es-ES": {
+   "name": "Mochi: Lista monísima",
+   "subtitle": "Checklist y tareas con widget",
+   "keywords": "pendientes,todo,recordatorio,planner,hábitos,rutina,compras,kawaii,bonita,cuqui,diaria,objetivos",
+   "expected_current": {
+    "name": "Mochi: Lista monísima",
+    "subtitle": "Checklist y tareas con widget",
+    "keywords": "tareas,lista,recordatorio,planner,notas,hábitos,rutina,horario,compras,agenda,calendario,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "es-MX": {
+   "name": "Mochi: Lista súper cute",
+   "subtitle": "Tareas, pendientes y widget",
+   "keywords": "checklist,todo,recordatorio,planner,hábitos,rutina,compras,kawaii,bonita,linda,diaria,objetivos",
+   "expected_current": {
+    "name": "Mochi: Lista súper cute",
+    "subtitle": "Tareas, pendientes y widget",
+    "keywords": "tareas,lista,recordatorio,planner,notas,hábitos,rutina,horario,súper,compras,agenda,calendario"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "fi": {
+   "name": "Mochi: Söpö tehtävälista",
+   "subtitle": "Tehtävät, muistutukset, widget",
+   "keywords": "muistilista,tarkistuslista,todo,lista,suunnittelija,tavat,rutiini,ostoslista,kawaii,tavoitteet",
+   "expected_current": {
+    "name": "Mochi: Söpö tehtävälista",
+    "subtitle": "Tehtävät, muistutukset, widget",
+    "keywords": "tehtävät,lista,muistutus,suunnittelija,muistiinpanot,tavat,rutiini,aikataulu,ostokset,agenda"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "fr-CA": {
+   "name": "Mochi: Liste trop cute",
+   "subtitle": "Tâches, rappels et widget",
+   "keywords": "todo,checklist,faire,choses,planificateur,habitudes,routine,épicerie,kawaii,mignonne,objectifs",
+   "expected_current": {
+    "name": "Mochi: Liste trop cute",
+    "subtitle": "Tâches, rappels et widget",
+    "keywords": "tâches,liste,rappel,planificateur,notes,habitudes,routine,agenda,épicerie,calendrier,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "fr-FR": {
+   "name": "Mochi: Liste toute mignonne",
+   "subtitle": "Checklist, tâches et rappels",
+   "keywords": "todo,faire,choses,widget,planning,habitudes,routine,courses,kawaii,mignon,jolie,quotidien,objectifs",
+   "expected_current": {
+    "name": "Mochi: Liste toute mignonne",
+    "subtitle": "Checklist, tâches et rappels",
+    "keywords": "tâches,liste,rappel,agenda,planning,notes,habitudes,routine,courses,calendrier,widget,organisation"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "gu-IN": {
+   "name": "Mochi: ક્યૂટ ટાસ્ક લિસ્ટ",
+   "subtitle": "સુંદર કાર્યો અને વિજેટ",
+   "keywords": "કામ,યાદી,રીમાઇન્ડર,પ્લાનર,આદત,રૂટીન,ખરીદી,અભ્યાસ,લક્ષ્ય,ચેકલિસ્ટ,ટુડુ,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: ક્યૂટ ટાસ્ક લિસ્ટ",
+    "subtitle": "સુંદર કાર્યો અને વિજેટ",
+    "keywords": "કામ,યાદી,રીમાઇન્ડર,પ્લાનર,નોટ્સ,આદત,રૂટીન,શેડ્યૂલ,ખરીદી,એજન્ડા,કૅલેન્ડર,વિજેટ,અભ્યાસ,લક્ષ્ય"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "he": {
+   "name": "Mochi: רשימת משימות חמודה",
+   "subtitle": "צ'קליסט, תזכורות וווידג'ט",
+   "keywords": "מטלות,רשימה,todo,מתכנן,הרגלים,שגרה,קניות,סדר,לימודים,עבודה,וידג׳ט,חמוד,יומי,מטרות",
+   "expected_current": {
+    "name": "Mochi: רשימת משימות חמודה",
+    "subtitle": "צ'קליסט, תזכורות וווידג'ט",
+    "keywords": "משימות,רשימה,תזכורת,יומן,מתכנן,פתקים,הרגלים,שגרה,לו״ז,קניות,אג׳נדה,וידג׳ט,סדר,לימודים,עבודה"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "hi": {
+   "name": "Mochi: प्यारी टास्क लिस्ट",
+   "subtitle": "प्यारे काम और विजेट",
+   "keywords": "सूची,रिमाइंडर,प्लानर,आदत,रूटीन,खरीदारी,पढ़ाई,लक्ष्य,चेकलिस्ट,क्यूट,टूडू,दैनिक,todo",
+   "expected_current": {
+    "name": "Mochi: प्यारी टास्क लिस्ट",
+    "subtitle": "प्यारे काम और विजेट",
+    "keywords": "काम,सूची,रिमाइंडर,प्लानर,नोट्स,आदत,रूटीन,शेड्यूल,खरीदारी,एजेंडा,कैलेंडर,विजेट,पढ़ाई,लक्ष्य"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "hr": {
+   "name": "Mochi: Slatki zadaci",
+   "subtitle": "Obaveze, podsjetnici i widget",
+   "keywords": "zadataka,popis,lista,todo,checklist,planer,navike,rutina,kupnja,kawaii,slatko,dnevni,ciljevi",
+   "expected_current": {
+    "name": "Mochi: Slatki zadaci",
+    "subtitle": "Obaveze, podsjetnici i widget",
+    "keywords": "zadaci,popis,podsjetnik,planer,bilješke,navike,rutina,raspored,kupnja,agenda,kalendar,widgeti"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "hu": {
+   "name": "Mochi: Cuki feladatlista",
+   "subtitle": "Teendők, emlékeztetők, widget",
+   "keywords": "teendőlista,feladatok,lista,todo,ellenőrzőlista,tervező,szokások,rutin,bevásárlás,aranyos,kawaii",
+   "expected_current": {
+    "name": "Mochi: Cuki feladatlista",
+    "subtitle": "Teendők, emlékeztetők, widget",
+    "keywords": "feladatok,lista,emlékeztető,tervező,jegyzetek,szokások,rutin,napirend,bevásárlás,naptár,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "id": {
+   "name": "Mochi: Checklist Lucu",
+   "subtitle": "To do list, pengingat & widget",
+   "keywords": "tugas,daftar,todo,planner,kebiasaan,rutinitas,belanja,kawaii,imut,aesthetic,harian,tujuan",
+   "expected_current": {
+    "name": "Mochi: Checklist Lucu",
+    "subtitle": "To do list, pengingat & widget",
+    "keywords": "tugas,daftar,pengingat,planner,catatan,kebiasaan,rutinitas,jadwal,belanja,agenda,kalender,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "it": {
+   "name": "Mochi: Lista carina",
+   "subtitle": "To do list, promemoria, widget",
+   "keywords": "cose,fare,todo,checklist,attività,planner,abitudini,routine,spesa,kawaii,carino,obiettivi",
+   "expected_current": {
+    "name": "Mochi: Lista carina",
+    "subtitle": "To do list, promemoria, widget",
+    "keywords": "attività,lista,promemoria,planner,note,abitudini,routine,programma,spesa,agenda,calendario,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ja": {
+   "name": "Mochi: かわいいToDo",
+   "subtitle": "やることリスト・チェックリスト・タスク管理",
+   "keywords": "リマインダー,ウィジェット,ロック画面,習慣,ルーティン,買い物,予定,勉強,仕事,家事,目標,メモ,時間管理,シンプル,日課,通知,毎日,癒し,パステル,ウォッチ,女子,学生,整理",
+   "expected_current": {
+    "name": "Mochi: かわいいToDo",
+    "subtitle": "やることリストをかわいく整える",
+    "keywords": "タスク,チェックリスト,リマインダー,予定,メモ,習慣,ルーティン,スケジュール,買い物,手帳,ウィジェット,ToDo,勉強,仕事,日記,家事,目標,時間管理,かわいい,TODO管理,予定表"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "kn-IN": {
+   "name": "Mochi: ಕ್ಯೂಟ್ ಟಾಸ್ಕ್ ಲಿಸ್ಟ್",
+   "subtitle": "ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್",
+   "keywords": "ಪಟ್ಟಿ,ರಿಮೈಂಡರ್,ಪ್ಲಾನರ್,ಅಭ್ಯಾಸ,ರೂಟೀನ್,ಶಾಪಿಂಗ್,ಚೆಕ್ಲಿಸ್ಟ್,ಟುಡು,ದೈನಂದಿನ,ಗುರಿ,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: ಕ್ಯೂಟ್ ಟಾಸ್ಕ್ ಲಿಸ್ಟ್",
+    "subtitle": "ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್",
+    "keywords": "ಕೆಲಸ,ಪಟ್ಟಿ,ರಿಮೈಂಡರ್,ಪ್ಲಾನರ್,ನೋಟ್ಸ್,ಅಭ್ಯಾಸ,ರೂಟೀನ್,ಶೆಡ್ಯೂಲ್,ಶಾಪಿಂಗ್,ಅಜೆಂಡಾ,ಕ್ಯಾಲೆಂಡರ್,ವಿಜೆಟ್"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ko": {
+   "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+   "subtitle": "포근한 투두리스트·플래너·위젯",
+   "keywords": "할일,해야할일,알림,습관,루틴,장보기,공부,업무,목표,집안일,시간관리,계획,감성,파스텔,잠금화면,학생,데일리",
+   "expected_current": {
+    "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+    "subtitle": "포근한 플래너로 하루 정리",
+    "keywords": "할일,체크리스트,알림,플래너,메모,습관,루틴,일정,쇼핑,장보기,캘린더,위젯,시간관리,공부,업무,다이어리,계획,집안일,목표,투두,해야할일,일기,시간표,체크,공책,메모장"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ml-IN": {
+   "name": "Mochi: ക്യൂട്ട് ലിസ്റ്റ്",
+   "subtitle": "ജോലികളും വിജറ്റും",
+   "keywords": "ടാസ്ക്,ജോലി,റിമൈൻഡർ,പ്ലാനർ,ശീലം,റൂട്ടീൻ,ഷോപ്പിംഗ്,വിജറ്റ്,പഠനം,ചെക്ക്ലിസ്റ്റ്,ലക്ഷ്യം,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: ക്യൂട്ട് ലിസ്റ്റ്",
+    "subtitle": "ജോലികളും വിജറ്റും",
+    "keywords": "ജോലി,ലിസ്റ്റ്,റിമൈൻഡർ,പ്ലാനർ,നോട്ട്സ്,ശീലം,റൂട്ടീൻ,ഷെഡ്യൂൾ,ഷോപ്പിംഗ്,അജണ്ട,കലണ്ടർ,വിജറ്റ്,പഠനം"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "mr-IN": {
+   "name": "Mochi: क्यूट टास्क लिस्ट",
+   "subtitle": "गोंडस कामे आणि विजेट",
+   "keywords": "काम,यादी,रिमाइंडर,प्लॅनर,सवय,रूटीन,खरेदी,अभ्यास,ध्येय,चेकलिस्ट,टूडू,दैनंदिन,todo",
+   "expected_current": {
+    "name": "Mochi: क्यूट टास्क लिस्ट",
+    "subtitle": "गोंडस कामे आणि विजेट",
+    "keywords": "काम,यादी,रिमाइंडर,प्लॅनर,नोट्स,सवय,रूटीन,शेड्यूल,खरेदी,अजेंडा,कॅलेंडर,विजेट,अभ्यास,ध्येय,वेळ"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ms": {
+   "name": "Mochi: Senarai Comel",
+   "subtitle": "Tugas, peringatan dan widget",
+   "keywords": "todo,checklist,semak,perancang,planner,tabiat,rutin,beli-belah,kawaii,harian,matlamat",
+   "expected_current": {
+    "name": "Mochi: Senarai Comel",
+    "subtitle": "Tugas, peringatan dan widget",
+    "keywords": "tugas,senarai,peringatan,perancang,nota,tabiat,rutin,jadual,beli-belah,agenda,kalendar,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "nl-NL": {
+   "name": "Mochi: Schattige taken",
+   "subtitle": "Takenlijst, checklist, widget",
+   "keywords": "todo,lijst,herinnering,planner,gewoontes,routine,boodschappen,kawaii,schattig,dagelijks,doelen",
+   "expected_current": {
+    "name": "Mochi: Schattige taken",
+    "subtitle": "Takenlijst, checklist, widget",
+    "keywords": "takenlijst,checklist,herinnering,planner,notities,gewoontes,routine,schema,boodschappen,agenda"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "no": {
+   "name": "Mochi: Søt huskeliste",
+   "subtitle": "Gjøremål, sjekkliste og widget",
+   "keywords": "gjøremålsliste,todo,oppgaver,liste,påminnelse,planlegger,vaner,rutine,handleliste,kawaii,daglig,mål",
+   "expected_current": {
+    "name": "Mochi: Søt huskeliste",
+    "subtitle": "Gjøremål, sjekkliste og widget",
+    "keywords": "oppgaver,liste,påminnelse,planlegger,notater,vaner,rutine,timeplan,handel,agenda,kalender,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "or-IN": {
+   "name": "Mochi: କ୍ୟୁଟ୍ ଟାସ୍କ ଲିଷ୍ଟ",
+   "subtitle": "ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍",
+   "keywords": "ତାଲିକା,ରିମାଇଣ୍ଡର,ପ୍ଲାନର,ଅଭ୍ୟାସ,ରୁଟିନ,କିଣାକାଟା,ପଢ଼ା,ଚେକଲିଷ୍ଟ,ଲକ୍ଷ୍ୟ,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: କ୍ୟୁଟ୍ ଟାସ୍କ ଲିଷ୍ଟ",
+    "subtitle": "ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍",
+    "keywords": "କାମ,ତାଲିକା,ରିମାଇଣ୍ଡର,ପ୍ଲାନର,ନୋଟ୍ସ,ଅଭ୍ୟାସ,ରୁଟିନ,ସମୟସୂଚୀ,କିଣାକାଟା,ଏଜେଣ୍ଡା,କ୍ୟାଲେଣ୍ଡର,ୱିଜେଟ,ପଢ଼ା"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "pa-IN": {
+   "name": "Mochi: ਕਿਊਟ ਟਾਸਕ ਲਿਸਟ",
+   "subtitle": "ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ",
+   "keywords": "ਸੂਚੀ,ਰਿਮਾਈਂਡਰ,ਪਲੈਨਰ,ਆਦਤ,ਰੂਟੀਨ,ਖਰੀਦਦਾਰੀ,ਪੜ੍ਹਾਈ,ਟੀਚਾ,ਚੈਕਲਿਸਟ,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: ਕਿਊਟ ਟਾਸਕ ਲਿਸਟ",
+    "subtitle": "ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ",
+    "keywords": "ਕੰਮ,ਸੂਚੀ,ਰਿਮਾਈਂਡਰ,ਪਲੈਨਰ,ਨੋਟਸ,ਆਦਤ,ਰੂਟੀਨ,ਸ਼ਡਿਊਲ,ਖਰੀਦਦਾਰੀ,ਏਜੰਡਾ,ਕੈਲੰਡਰ,ਵਿਜੇਟ,ਪੜ੍ਹਾਈ,ਟੀਚਾ,ਸਮਾਂ"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "pl": {
+   "name": "Mochi: Urocza lista zadań",
+   "subtitle": "To do, checklista i widżet",
+   "keywords": "zadania,todo,przypomnienia,planner,nawyki,rutyna,zakupy,widget,kawaii,słodka,codzienne,cele",
+   "expected_current": {
+    "name": "Mochi: Urocza lista zadań",
+    "subtitle": "To do, checklista i widżet",
+    "keywords": "zadania,lista,przypomnienia,planner,notatki,nawyki,rutyna,harmonogram,zakupy,agenda,kalendarz,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "pt-BR": {
+   "name": "Mochi: Lista fofa",
+   "subtitle": "Tarefas fofas e checklist",
+   "keywords": "afazeres,planner,lembrete,rotina,hábitos,widget,organização,compras,kawaii,fofinha,diário,metas",
+   "expected_current": {
+    "name": "Mochi: Lista fofa",
+    "subtitle": "Tarefas fofas e checklist",
+    "keywords": "tarefas,lista,lembrete,planner,notas,hábitos,rotina,agenda,compras,calendário,widget,organização"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "pt-PT": {
+   "name": "Mochi: Lista amorosa",
+   "subtitle": "Checklist de tarefas giras",
+   "keywords": "afazeres,todo,lembrete,planeador,hábitos,rotina,compras,widget,organização,kawaii,fofa,objetivos",
+   "expected_current": {
+    "name": "Mochi: Lista amorosa",
+    "subtitle": "Checklist de tarefas giras",
+    "keywords": "tarefas,lista,lembrete,planeador,notas,hábitos,rotina,agenda,compras,calendário,widget,organização"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ro": {
+   "name": "Mochi: Listă drăguță",
+   "subtitle": "Sarcini, memento-uri și widget",
+   "keywords": "todo,checklist,lucruri,făcut,planner,obiceiuri,rutină,cumpărături,kawaii,drăguț,zilnic,obiective",
+   "expected_current": {
+    "name": "Mochi: Listă drăguță",
+    "subtitle": "Sarcini, memento-uri și widget",
+    "keywords": "sarcini,listă,memento,planner,notițe,obiceiuri,rutină,program,cumpărături,agendă,calendar,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ru": {
+   "name": "Mochi: Милый список дел",
+   "subtitle": "Чек-лист, задачи и виджет",
+   "keywords": "дела,туду,todo,чеклист,напоминания,планер,ежедневник,привычки,рутина,покупки,кавай,милые,цели",
+   "expected_current": {
+    "name": "Mochi: Милый список дел",
+    "subtitle": "Чек-лист, задачи и виджет",
+    "keywords": "дела,задачи,список,напоминания,планер,заметки,привычки,рутина,расписание,покупки,календарь,виджет"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "sk": {
+   "name": "Mochi: Milé úlohy",
+   "subtitle": "Checklist, pripomienky, widget",
+   "keywords": "zoznam,úloh,todo,plánovač,návyky,rutina,nákup,kawaii,roztomilé,denný,ciele",
+   "expected_current": {
+    "name": "Mochi: Milé úlohy",
+    "subtitle": "Checklist, pripomienky, widget",
+    "keywords": "úlohy,zoznam,pripomienka,plánovač,poznámky,návyky,rutina,rozvrh,nákup,agenda,kalendár,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "sl-SI": {
+   "name": "Mochi: Ljubek seznam",
+   "subtitle": "Ljubki opravki in gradnik",
+   "keywords": "opravila,opravil,todo,checklist,opomnik,planer,navade,rutina,nakupi,widget,kawaii,dnevni,cilji",
+   "expected_current": {
+    "name": "Mochi: Ljubek seznam",
+    "subtitle": "Ljubki opravki in gradnik",
+    "keywords": "opravila,seznam,opomnik,planer,zapiski,navade,rutina,urnik,nakupi,agenda,koledar,widget,cilji"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "sv": {
+   "name": "Mochi: Söt att-göra-lista",
+   "subtitle": "Checklista, sysslor & widget",
+   "keywords": "todo,uppgifter,påminnelse,planerare,vanor,rutin,inköpslista,kawaii,söta,daglig,mål",
+   "expected_current": {
+    "name": "Mochi: Söt att-göra-lista",
+    "subtitle": "Checklista, sysslor & widget",
+    "keywords": "uppgifter,lista,påminnelse,planerare,anteckningar,vanor,rutin,schema,inköp,agenda,kalender,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ta-IN": {
+   "name": "Mochi: க்யூட் டாஸ்க் லிஸ்ட்",
+   "subtitle": "அழகான பணிகள் விட்ஜெட்",
+   "keywords": "வேலை,பட்டியல்,ரிமைண்டர்,பிளானர்,பழக்கம்,ரூட்டீன்,ஷாப்பிங்,செக்லிஸ்ட்,இலக்கு,படிப்பு,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: க்யூட் டாஸ்க் லிஸ்ட்",
+    "subtitle": "அழகான பணிகள் விட்ஜெட்",
+    "keywords": "வேலை,பட்டியல்,ரிமைண்டர்,பிளானர்,குறிப்புகள்,பழக்கம்,ரூட்டீன்,அட்டவணை,ஷாப்பிங்,அஜெண்டா,காலண்டர்"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "te-IN": {
+   "name": "Mochi: క్యూట్ టాస్క్ లిస్ట్",
+   "subtitle": "ముద్దైన పనులు విడ్జెట్",
+   "keywords": "పని,జాబితా,రిమైండర్,ప్లానర్,అలవాటు,రూటీన్,షాపింగ్,చెక్లిస్ట్,లక్ష్యం,చదువు,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: క్యూట్ టాస్క్ లిస్ట్",
+    "subtitle": "ముద్దైన పనులు విడ్జెట్",
+    "keywords": "పని,జాబితా,రిమైండర్,ప్లానర్,నోట్స్,అలవాటు,రూటీన్,షెడ్యూల్,షాపింగ్,అజెండా,క్యాలెండర్,విడ్జెట్"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "th": {
+   "name": "Mochi: เช็กลิสต์น่ารัก",
+   "subtitle": "สิ่งที่ต้องทำ พร้อมวิดเจ็ต",
+   "keywords": "งาน,รายการ,เตือนความจำ,แพลนเนอร์,นิสัย,รูทีน,ซื้อของ,เรียน,งานบ้าน,เช็คลิสต์,คิวท์,เป้าหมาย,todo",
+   "expected_current": {
+    "name": "Mochi: เช็กลิสต์น่ารัก",
+    "subtitle": "สิ่งที่ต้องทำ พร้อมวิดเจ็ต",
+    "keywords": "งาน,รายการ,เตือนความจำ,แพลนเนอร์,โน้ต,นิสัย,รูทีน,ตาราง,ซื้อของ,วาระ,ปฏิทิน,วิดเจ็ต,เรียน,งานบ้าน"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "tr": {
+   "name": "Mochi: Sevimli Liste",
+   "subtitle": "Yapılacaklar listesi ve widget",
+   "keywords": "görevler,todo,kontrol,hatırlatıcı,planlayıcı,alışkanlık,rutin,alışveriş,kawaii,tatlı,hedefler",
+   "expected_current": {
+    "name": "Mochi: Sevimli Liste",
+    "subtitle": "Yapılacaklar listesi ve widget",
+    "keywords": "görevler,liste,hatırlatıcı,planlayıcı,notlar,alışkanlık,rutin,program,alışveriş,ajanda,takvim,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "uk": {
+   "name": "Mochi: Милий список справ",
+   "subtitle": "Чекліст, завдання та віджет",
+   "keywords": "справи,задачі,туду,todo,нагадування,планер,звички,рутина,покупки,органайзер,кавай,милі,цілі",
+   "expected_current": {
+    "name": "Mochi: Милий список справ",
+    "subtitle": "Чекліст, завдання та віджет",
+    "keywords": "справи,задачі,список,нагадування,планер,нотатки,звички,рутина,розклад,покупки,календар,віджет"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "ur-PK": {
+   "name": "Mochi: پیاری ٹاسک لسٹ",
+   "subtitle": "پیارے کام اور ویجٹ",
+   "keywords": "فہرست,یاددہانی,پلینر,عادت,روٹین,خریداری,پڑھائی,مقصد,ویجیٹ,چیک لسٹ,ٹوڈو,todo,checklist",
+   "expected_current": {
+    "name": "Mochi: پیاری ٹاسک لسٹ",
+    "subtitle": "پیارے کام اور ویجٹ",
+    "keywords": "کام,فہرست,یاددہانی,پلینر,نوٹس,عادت,روٹین,شیڈول,خریداری,ایجنڈا,کیلنڈر,ویجیٹ,پڑھائی,مقصد,وقت"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "vi": {
+   "name": "Mochi: Checklist dễ thương",
+   "subtitle": "Việc cần làm & widget nhắc nhở",
+   "keywords": "todo,to do list,danh sách,công việc,planner,thói quen,routine,mua sắm,kawaii,cute,mục tiêu,hằng ngày",
+   "expected_current": {
+    "name": "Mochi: Checklist dễ thương",
+    "subtitle": "Việc cần làm dễ thương",
+    "keywords": "việc,checklist,nhắc nhở,planner,ghi chú,thói quen,routine,lịch trình,mua sắm,agenda,lịch,widget"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "zh-Hans": {
+   "name": "Mochi: 可爱待办清单",
+   "subtitle": "治愈待办事项・提醒・锁屏小组件",
+   "keywords": "todo,任务清单,备忘录,习惯,计划,购物,打卡,时间管理,效率,学习,工作,便签,目标,生活,作业,日计划,记事,重复,少女心,手表,安排",
+   "expected_current": {
+    "name": "Mochi: 可爱待办清单",
+    "subtitle": "治愈手帐・购物清单小组件",
+    "keywords": "待办,任务清单,日程,提醒,备忘录,小组件,习惯,计划,购物,课程表,打卡,时间管理,手帐,清单,效率,学习,工作,番茄钟,便签,日历,安排,目标,生活,作业,备考,计划表,日计划,记事,桌面组件"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  },
+  "zh-Hant": {
+   "name": "Mochi: 可愛待辦清單",
+   "subtitle": "療癒待辦事項・提醒・鎖定畫面小工具",
+   "keywords": "todo,任務,檢查清單,備忘錄,購物,習慣,打卡,每日計畫,時間管理,目標,讀書,作業,工作,便利貼,記事,手錶,重複,少女心,粉色,效率,生活,計畫",
+   "expected_current": {
+    "name": "Mochi: 可愛待辦清單",
+    "subtitle": "療癒手帳・購物清單小工具",
+    "keywords": "待辦,任務清單,日程,提醒,備忘錄,小工具,習慣,計畫,購物,課表,打卡,時間管理,手帳,清單,效率,讀書,工作,番茄鐘,便條,日曆,安排,目標,生活,作業,備考,計畫表,日計畫,記事,桌面小工具"
+   },
+   "expected_current_verified": {
+    "name": true,
+    "subtitle": true,
+    "keywords": false
+   }
+  }
+ },
+ "changed_locales": 50
+}

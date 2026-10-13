@@ -53,6 +53,6 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 
 7. **不用改 pages.yml，也不用重新發布。** 正式站 10/13 已經上線 29c5c8dd。
 
-8. **每日自動執行：** 不要建立用 `--dangerously-skip-permissions` 的 launchd 腳本。如果 Caitlyn 要每天自動跑，用本機可用的排程方式設定（每天 09:23 台灣時間，內容就是「照這個檔執行」）。
+8. **不要設每日自動執行。** Caitlyn 要求剩下的工作改成 0 token 自動化，所以本機 Claude 只在她貼這一行時跑一次。也不要建立 launchd 或用 `--dangerously-skip-permissions` 的無人值守腳本。
 
 9. **回報：** 每做完一段，用中文說明做了哪些項目、各推了哪個 commit。最後一行列出需要 Caitlyn 按允許的動作，沒有就寫「無」。

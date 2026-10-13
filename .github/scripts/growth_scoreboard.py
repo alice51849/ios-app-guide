@@ -36,6 +36,8 @@ import portfolio_daily  # noqa: E402
 DATA_DIR = REPO_ROOT / "_engine" / "data"
 STOREFRONTS_PATH = REPO_ROOT / "_engine" / "geo" / "locale_storefronts.json"
 KEY2DATA_SOURCE = REPO_ROOT / "_engine" / "geo" / "build_pages_i18n.py"
+# Reviewed "what users really type" terms per App and locale; measured first.
+CHALLENGE_TERMS_PATH = REPO_ROOT / ".github" / "growth" / "challenge-terms.json"
 REPOSITORY = "alice51849/ios-app-guide"
 ISSUE_TITLE = "growth-scoreboard"
 ISSUE_LABEL = "growth-scoreboard"
@@ -121,26 +123,65 @@ def load_keywords(app_key, key2data, data_dir=DATA_DIR, limit=KEYWORDS_PER_LOCAL
     return keywords
 
 
-def build_tasks(apps, storefronts, keywords_by_app):
-    """Search tasks, ordered so the first pass covers each App's top keyword
-    in every locale before any second keyword is measured anywhere."""
+def load_challenge_terms(path=CHALLENGE_TERMS_PATH, limit=5):
+    """{app_key: {locale: [term, ...]}} from the reviewed challenge-term file."""
+    path = Path(path)
+    if not path.is_file():
+        return {}
+    with path.open(encoding="utf-8") as handle:
+        document = json.load(handle)
+    terms = {}
+    for app_key, per_locale in (document.get("apps") or {}).items():
+        if not isinstance(per_locale, dict):
+            continue
+        for locale, values in per_locale.items():
+            cleaned = split_keywords(",".join(str(v) for v in values or []), limit)
+            if cleaned:
+                terms.setdefault(str(app_key), {})[str(locale)] = cleaned
+    return terms
+
+
+def build_tasks(apps, storefronts, keywords_by_app, challenge_terms=None):
+    """Search tasks: reviewed challenge terms first, then a first pass over each
+    App's top listing keyword in every locale before any second keyword."""
     depth = max(
         (len(terms) for per_locale in keywords_by_app.values() for terms in per_locale.values()),
         default=0,
     )
     tasks = []
+    seen = set()
+    for app in apps:
+        for locale, terms in sorted((challenge_terms or {}).get(app.key, {}).items()):
+            if locale not in storefronts:
+                continue
+            for term in terms:
+                task = {
+                    "app_id": app.app_id,
+                    "app_key": app.key,
+                    "locale": locale,
+                    "country": storefronts[locale],
+                    "keyword": term,
+                    "source": "challenge",
+                }
+                if task_id(task) not in seen:
+                    seen.add(task_id(task))
+                    tasks.append(task)
     for index in range(depth):
         for locale in sorted(storefronts):
             for app in apps:
                 terms = keywords_by_app.get(app.key, {}).get(locale, [])
                 if index < len(terms):
-                    tasks.append({
+                    task = {
                         "app_id": app.app_id,
                         "app_key": app.key,
                         "locale": locale,
                         "country": storefronts[locale],
                         "keyword": terms[index],
-                    })
+                        "source": "listing",
+                    }
+                    if task_id(task) not in seen:
+                        seen.add(task_id(task))
+                        tasks.append(task)
     return tasks
 
 
@@ -329,14 +370,14 @@ def previous_total(state, today):
 
 
 def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
-        search_budget, chart_budget, log=print):
+        search_budget, chart_budget, log=print, challenge_terms=None):
     stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     app_ids = {app.app_id for app in apps}
     countries = sorted(set(storefronts.values()))
     outcome = {"lookups": 0, "searches": 0, "charts": 0, "rate_limited": None,
                "errors": 0, "charts_unavailable": False}
     genre_by_app = {}
-    tasks = build_tasks(apps, storefronts, keywords_by_app)
+    tasks = build_tasks(apps, storefronts, keywords_by_app, challenge_terms)
     search_start = state.get("cursor", 0)
     searched = None  # becomes a count once the search phase starts
 
@@ -593,7 +634,7 @@ def load_inputs():
     storefronts = load_storefronts()
     key2data = load_key2data()
     keywords = {app.key: load_keywords(app.key, key2data) for app in apps}
-    return apps, storefronts, keywords
+    return apps, storefronts, keywords, load_challenge_terms()
 
 
 def main(argv=None):
@@ -610,8 +651,8 @@ def main(argv=None):
                         help="print the measurement plan without any network call")
     args = parser.parse_args(argv)
 
-    apps, storefronts, keywords = load_inputs()
-    tasks = build_tasks(apps, storefronts, keywords)
+    apps, storefronts, keywords, challenge = load_inputs()
+    tasks = build_tasks(apps, storefronts, keywords, challenge)
     if args.plan_only:
         missing = sorted(app.key for app in apps if not keywords.get(app.key))
         print(json.dumps({
@@ -619,6 +660,7 @@ def main(argv=None):
             "locales": len(storefronts),
             "storefronts": len(set(storefronts.values())),
             "search_tasks": len(tasks),
+            "challenge_tasks": sum(1 for task in tasks if task["source"] == "challenge"),
             "apps_without_keywords": missing,
             "first_tasks": tasks[:5],
         }, ensure_ascii=False, indent=2))
@@ -628,7 +670,8 @@ def main(argv=None):
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     fetcher = Fetcher(delay=args.delay)
     outcome = run(apps, storefronts, keywords, state, fetcher, now=now,
-                  search_budget=args.search_budget, chart_budget=args.chart_budget)
+                  search_budget=args.search_budget, chart_budget=args.chart_budget,
+                  challenge_terms=challenge)
     save_state(args.state, state)
     report = build_report(apps, state, outcome, now=now)
     args.report.parent.mkdir(parents=True, exist_ok=True)

@@ -109,7 +109,7 @@ class SourceTests(unittest.TestCase):
         self.assertEqual("mochi_full.json", mapping["mochi"])
 
     def test_every_live_app_has_native_keywords_in_every_locale(self):
-        apps, storefronts, keywords = gs.load_inputs()
+        apps, storefronts, keywords, _challenge = gs.load_inputs()
         self.assertEqual(50, len(storefronts))
         for app in apps:
             with self.subTest(app=app.key):
@@ -121,6 +121,20 @@ class SourceTests(unittest.TestCase):
         self.assertEqual({"to do list", "タスク", "opravila", "period tracker", "生理", "menstruacija"},
                          {t["keyword"] for t in tasks[:6]})
         self.assertEqual("tasks", tasks[-1]["keyword"])
+
+    def test_challenge_terms_are_measured_first_and_deduplicated(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "challenge-terms.json"
+            path.write_text(json.dumps({"apps": {
+                "mochi": {"en-US": ["cute to do list", "To Do List", "to do list"], "xx": ["ignored"]},
+            }}), encoding="utf-8")
+            challenge = gs.load_challenge_terms(path)
+        self.assertEqual({"mochi": {"en-US": ["cute to do list", "To Do List"], "xx": ["ignored"]}}, challenge)
+        tasks = gs.build_tasks(APPS, STOREFRONTS, KEYWORDS, challenge)
+        self.assertEqual(["cute to do list", "To Do List"], [t["keyword"] for t in tasks[:2]])
+        self.assertEqual({"challenge"}, {t["source"] for t in tasks[:2]})
+        self.assertEqual(9, len(tasks))
+        self.assertNotIn("ignored", {t["keyword"] for t in tasks})
 
     def test_rotation_wraps_and_returns_next_cursor(self):
         self.assertEqual((["c", "a"], 1), gs.take_rotation(["a", "b", "c"], 2, 2))

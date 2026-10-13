@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T13:52:00Z",
+  "updated_at": "2026-10-13T13:55:12Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -13,6 +13,20 @@
       "title": "UsageNow 衝榜：今晚 21:00–22:30 發台灣 4 則",
       "url": "https://claude.ai/artifact/FGRhJkypQ1FfHYWQanZN3o",
       "how": "打開後照順序按橘色按鈕，發文畫面已填好，按「發佈」就好；Dcard／PTT／FB 按「複製貼文」再貼上。",
+      "status": "todo"
+    },
+    {
+      "id": "oa-mac-online",
+      "title": "讓 Mac 保持連線，本機 Claude 才能接手雲端開好的待辦",
+      "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
+      "how": "在 Mac 終端機執行 cd ~/00_GrowthEngine && claude remote-control --name \"GrowthEngine 本機\" --permission-mode auto，視窗別關、Mac 別睡；雲端已開好的「本機外宣待辦執行」會自動開始。",
+      "status": "todo"
+    },
+    {
+      "id": "oa-local-daily",
+      "title": "請本機 Claude 自己設每天 09:23 的排程（雲端不能替你的電腦設）",
+      "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
+      "how": "在 Claude App 打開「本機外宣待辦執行（雲端連動）」，輸入：請把這個 session 的工作設成每天 09:23 自動執行的排程。",
       "status": "todo"
     },
     {

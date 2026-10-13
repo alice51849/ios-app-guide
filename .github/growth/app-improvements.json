@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T14:25:29Z",
+  "updated_at": "2026-10-13T15:57:26Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -787,6 +787,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "claudeusagemini-14",
+          "title": "把驗證後的標題／副標／關鍵字套用到 ASC（50 語系，Caitlyn 10/13 授權）",
+          "detail": "值在 .github/growth/aso/claudeusagemini-asc-payload.json。先備份 ASC 現值，只改 name、subtitle、keywords；需要新版本時先建版本記錄並回報，不自行上傳 build。被退件就改回 current.name。",
+          "owner": "local",
+          "impact": "high",
+          "status": "todo"
+        },
         {
           "id": "claudeusagemini-02",
           "title": "撰寫並發佈安全性 FAQ 頁（en／ja／zh-Hant）",

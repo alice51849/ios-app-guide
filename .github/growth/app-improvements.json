@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T15:57:26Z",
+  "updated_at": "2026-10-13T15:59:53Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -13,6 +13,13 @@
       "title": "UsageNow 衝榜：今晚 21:00–22:30 發台灣 4 則",
       "url": "https://claude.ai/artifact/FGRhJkypQ1FfHYWQanZN3o",
       "how": "打開後照順序按橘色按鈕，發文畫面已填好，按「發佈」就好；Dcard／PTT／FB 按「複製貼文」再貼上。",
+      "status": "todo"
+    },
+    {
+      "id": "oa-usagenow-asc",
+      "title": "UsageNow 商店文字改 ASC：在本機 session 回一句確認",
+      "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
+      "how": "Mac 連線後，在「本機外宣待辦執行（雲端連動）」輸入：可以，照雲端給的 UsageNow 商店文字直接改 ASC。",
       "status": "todo"
     },
     {

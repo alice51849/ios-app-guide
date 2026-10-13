@@ -1,0 +1,150 @@
+<!doctype html>
+<!--
+  草稿說明（qrcodehalo-05）
+  用途：店家 QR Code 每週自查表（A4 直式，可印出或另存 PDF），搭配 shop-qr-self-check-guide-zh-hant.md 長版貼文；
+        社團成員留言索取時，由店主傳 PDF。表格本身不需要任何 App，用 iPhone 相機看網域即可完成。
+  給誰：櫃台、桌面貼有點餐或收款 QR Code 的小店老闆、店長與值班同事。
+  發送者：店主 Guan Feng Lai 本人，以開發者身分提供；頁尾已註明製表人身分。
+  發送規則：只在對方主動索取時私訊或留言回傳 PDF；不在 PDF 內放 App Store 連結或 QR Code（避免「用 QR 宣傳查 QR」的觀感）；
+            不加任何新聞事件或詐騙統計；不寫「保證安全」。另存 PDF：瀏覽器列印 → 目的地選「另存為 PDF」→ 紙張 A4 → 邊界「預設」。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Code 每週自查表</title>
+<style>
+  :root {
+    --ink: #1d232a;
+    --muted: #5b6672;
+    --line: #c9d0d7;
+    --soft: #f3f5f7;
+    --accent: #2f6f8f;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { background: #e9edf0; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+    color: var(--ink);
+    background: #e9edf0;
+    line-height: 1.5;
+  }
+  .sheet {
+    max-width: 794px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 28px 28px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12);
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: .02em; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 16px; }
+  .meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 16px; margin-bottom: 16px; font-size: 14px; }
+  .meta div { border-bottom: 1px solid var(--line); padding: 6px 0 2px; }
+  .meta span { color: var(--muted); margin-right: 6px; }
+  .steps { background: var(--soft); border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 16px; font-size: 13.5px; }
+  .steps h2 { font-size: 14px; margin: 0 0 4px; }
+  .steps ol { margin: 0; padding-left: 20px; }
+  .steps li { margin: 2px 0; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 640px; }
+  th, td { border: 1px solid var(--line); padding: 6px 6px; text-align: left; vertical-align: top; }
+  th { background: var(--soft); font-weight: 600; }
+  td { height: 34px; }
+  .box { display: inline-block; width: 14px; height: 14px; border: 1.5px solid var(--ink); border-radius: 2px; vertical-align: -2px; margin-right: 4px; }
+  .center { text-align: center; white-space: nowrap; }
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; font-size: 13px; }
+  .rules div { border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px; }
+  .rules h3 { font-size: 13.5px; margin: 0 0 4px; }
+  .rules ul { margin: 0; padding-left: 18px; }
+  footer { margin-top: 14px; font-size: 11.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; }
+  @media (max-width: 600px) {
+    .sheet { padding: 18px 16px; }
+    .meta, .rules { grid-template-columns: 1fr; }
+  }
+  @page { size: A4 portrait; margin: 12mm; }
+  @media print {
+    html, body { background: #fff; padding: 0; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; max-width: none; }
+    .table-wrap { overflow: visible; }
+    table { min-width: 0; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <h1>QR Code 每週自查表</h1>
+  <p class="sub">櫃台、桌面、門口的點餐與收款 QR Code，每週固定一天巡一次。用手機相機掃，<strong>先看網域、不要點開</strong>。</p>
+
+  <div class="meta">
+    <div><span>店名</span></div>
+    <div><span>週次／日期</span></div>
+    <div><span>巡檢人</span></div>
+  </div>
+
+  <section class="steps">
+    <h2>每一張碼都做這三步</h2>
+    <ol>
+      <li><strong>摸</strong>：手指摸貼紙邊緣，有沒有翹起、變厚、被貼上第二層？顏色或尺寸跟原本一樣嗎？</li>
+      <li><strong>看</strong>：手機掃描後先讀畫面上顯示的網域，跟下表「應連到的網域」比對，不要直接點開。</li>
+      <li><strong>換</strong>：網域對不上、拼字怪怪的、變成沒用過的短網址 → 立刻撕下、換上自己的新貼紙，並檢查同區其他碼。</li>
+    </ol>
+  </section>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:16%">位置／桌號</th>
+          <th style="width:13%">用途</th>
+          <th style="width:24%">應連到的網域</th>
+          <th class="center" style="width:11%">貼紙完好</th>
+          <th class="center" style="width:11%">網域相符</th>
+          <th style="width:25%">處理／備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+        <tr><td></td><td></td><td></td><td class="center"><span class="box"></span>是</td><td class="center"><span class="box"></span>是</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="rules">
+    <div>
+      <h3>換新碼、換菜單時</h3>
+      <ul>
+        <li>印刷前先掃校稿，印好再掃一次成品</li>
+        <li>舊碼撕乾淨，不要新舊並存</li>
+        <li>本表的「應連到的網域」同步更新</li>
+      </ul>
+    </div>
+    <div>
+      <h3>收款碼多做一步</h3>
+      <ul>
+        <li>客人付款後，確認入帳的是自己的帳戶名稱</li>
+        <li>客人說付了、你沒收到 → 先檢查那張收款碼</li>
+        <li>發現異常，記下時間並保留被換掉的貼紙</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    本表不需要任何 App，用手機相機顯示的網域即可完成。製表：Guan Feng Lai（iPhone App「QR Code Halo」開發者）。歡迎影印給同事使用。
+  </footer>
+</main>
+</body>
+</html>

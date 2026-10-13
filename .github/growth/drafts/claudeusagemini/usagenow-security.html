@@ -1,0 +1,334 @@
+<!doctype html>
+<!--
+================================================================
+草稿說明（claudeusagemini-02）— 發佈前請整段刪除這個註解
+================================================================
+用途：UsageNow 的安全性與隱私 FAQ（en／ja／zh-Hant 同頁）。給 Show HN、Reddit、Zenn 貼文一個可引用的來源，
+      也讓 App Store 描述「PRIVATE BY DESIGN」段落可以放一行網址（見 claudeusagemini-01）。
+發在哪／給誰：alice51849/ios-app-guide 的 GitHub Pages 根目錄，預定網址
+      https://open.cait518.cc/ios-app-guide/usagenow-security.html
+      讀者是要在 App 內登入 Anthropic／OpenAI／GitHub／Google 之前想先確認安全性的工程師。
+發佈者：擁有者 Guan Feng Lai（Lumi Studio）本人審過後發佈；頁尾已寫明作者就是開發者。
+發佈規則：
+  1. 本頁每一句都只根據 _engine/data/claudeusagemini_full.json 的商店文案（en-US／ja／zh-Hant），
+     沒寫的技術細節一律不寫。若 App 實際行為與下列任一句不符，先改 App 或刪掉那一句，不要照發。
+  2. 發佈前必須由擁有者確認並處理（無法在雲端確認的事）：
+     [ ] 把三處 {{SUPPORT_EMAIL}} 換成 UsageNow 品牌信箱（claudeusagemini-01 完成後）。
+     [ ] App 沒有任何第三方 SDK（當機回報、分析、廣告）。有的話刪掉「Can I check this myself?」三語各一題，並同步修正商店文案「talks only to the services themselves」。
+     [ ] 在 App 內移除帳號的實際路徑與按鈕文字，填進三語「How do I remove an account」第 1 點（目前寫的是通用說法「在帳號列表移除該帳號」）。
+     [ ] 登入步驟 1–3 的按鈕名稱與實際畫面一致；截圖放好後取消 <figure> 區塊的註解。
+     [ ] 若鑰匙圈項目設為可同步（iCloud 鑰匙圈），在三語「Where is my sign-in stored?」補一句「and, if you use iCloud Keychain, your other Apple devices」。
+  3. 不寫價格數字、不寫「best／#1」、不提其他追蹤 App 的名字。
+  4. 頁尾日期改成實際發佈日。
+================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UsageNow Security FAQ</title>
+<meta name="description" content="How sign-in works in UsageNow, where it is stored (the iOS Keychain), who the app talks to, and how to revoke access. English, Japanese and Traditional Chinese.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f5f6f8;
+    --text: #1b1d22;
+    --muted: #5b616e;
+    --line: #dfe2e8;
+    --accent: #2f5bd3;
+    --note-bg: #fff8e6;
+    --note-line: #e8c76a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121418;
+      --surface: #1b1e24;
+      --text: #e8eaef;
+      --muted: #a2a8b5;
+      --line: #2c3039;
+      --accent: #8fb0ff;
+      --note-bg: #2a2416;
+      --note-line: #7a6430;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121418;
+    --surface: #1b1e24;
+    --text: #e8eaef;
+    --muted: #a2a8b5;
+    --line: #2c3039;
+    --accent: #8fb0ff;
+    --note-bg: #2a2416;
+    --note-line: #7a6430;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "PingFang TC", "Noto Sans JP", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  header.top { border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 8px; }
+  .eyebrow { color: var(--muted); font-size: 14px; margin: 0 0 4px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
+  nav.langs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  nav.langs a {
+    display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+    color: var(--text); text-decoration: none; font-size: 15px; background: var(--surface);
+  }
+  nav.langs a:hover, nav.langs a:focus-visible { border-color: var(--accent); color: var(--accent); }
+  section.lang { padding-top: 24px; border-top: 1px solid var(--line); margin-top: 32px; }
+  section.lang:first-of-type { border-top: 0; margin-top: 8px; }
+  h2 { font-size: 22px; line-height: 1.3; margin: 0 0 12px; }
+  h3 { font-size: 18px; line-height: 1.4; margin: 28px 0 8px; }
+  p, li { overflow-wrap: anywhere; }
+  .summary { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  .note { background: var(--note-bg); border-left: 4px solid var(--note-line); border-radius: 8px; padding: 10px 14px; }
+  ol.steps li { margin-bottom: 6px; }
+  figure { margin: 12px 0; }
+  figure img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+  figcaption { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin-top: 8px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">UsageNow: AI Usage Tracker · Lumi Studio</p>
+  <h1>Security &amp; privacy FAQ</h1>
+  <p>How sign-in works, where it is kept, who the app talks to, and how to take access back.</p>
+  <nav class="langs" aria-label="Language">
+    <a href="#en" hreflang="en">English</a>
+    <a href="#ja" hreflang="ja" lang="ja">日本語</a>
+    <a href="#zh-Hant" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+  </nav>
+</header>
+
+<!-- ===================== English ===================== -->
+<section class="lang" id="en" lang="en">
+  <h2>English</h2>
+
+  <div class="summary">
+    <ul>
+      <li>You sign in on each service's own login page. UsageNow has no login form of its own and no account to create.</li>
+      <li>Your sign-in is kept in your device's Keychain.</li>
+      <li>There is no UsageNow server. The app talks only to the services you signed in to, plus Apple for the App Store purchase. No tracking.</li>
+      <li>You can take access back at any time from the service's own security settings.</li>
+    </ul>
+  </div>
+
+  <h3>What does UsageNow do?</h3>
+  <p>It shows how much of each AI plan you have left and when it resets: Claude's 5-hour session and weekly limits (including per-model weekly caps), ChatGPT Codex's 5-hour and weekly windows, GitHub Copilot premium requests, chat and code completions, and Gemini's daily request quotas for each model. You see them in the app, in Home Screen and Lock Screen widgets, and in Apple Watch complications, and you can set alerts at any percentage.</p>
+
+  <h3>Where do I sign in?</h3>
+  <p>Inside UsageNow, on each service's own login page: Anthropic's for Claude, OpenAI's for ChatGPT Codex, GitHub's for Copilot and Google's for Gemini. You sign in there the same way you normally do. There is no UsageNow login form, and you never create a UsageNow account.</p>
+
+  <h3>How does the sign-in flow look?</h3>
+  <ol class="steps">
+    <li>In UsageNow, add an account and choose the service.</li>
+    <li>That service's own login page opens. Sign in as usual.</li>
+    <li>UsageNow shows that account's limits and reset times. The sign-in stays in the Keychain on your device.</li>
+  </ol>
+  <!-- 截圖放好後取消註解（檔案放在 usagenow-security/ 資料夾）
+  <figure>
+    <img src="usagenow-security/en-1-add-account.png" alt="UsageNow screen for adding an account and choosing a service" width="390" height="844" loading="lazy">
+    <figcaption>1. Add an account and choose the service.</figcaption>
+  </figure>
+  <figure>
+    <img src="usagenow-security/en-2-service-login.png" alt="The service's own login page opened from UsageNow" width="390" height="844" loading="lazy">
+    <figcaption>2. The service's own login page.</figcaption>
+  </figure>
+  <figure>
+    <img src="usagenow-security/en-3-limits.png" alt="UsageNow showing the account's 5-hour and weekly limits with reset countdowns" width="390" height="844" loading="lazy">
+    <figcaption>3. Limits and reset times for that account.</figcaption>
+  </figure>
+  -->
+
+  <h3>Where is my sign-in stored?</h3>
+  <p>In the Keychain on your device, the encrypted storage iOS provides for credentials. UsageNow does not send it to any server of its own, because there isn't one.</p>
+
+  <h3>Who does UsageNow talk to over the network?</h3>
+  <p>Only the services you signed in to, to read your usage, and Apple, for the trial and the one-time purchase through the App Store. There is no UsageNow server, no account and no tracking.</p>
+
+  <h3>Can I check this myself?</h3>
+  <p>Yes. Because there is no UsageNow server, you can watch the app's traffic with a proxy on your own network. The only hosts you should see belong to the services you signed in to and to Apple.</p>
+
+  <h3>How do I remove an account or revoke access?</h3>
+  <ol class="steps">
+    <li><strong>In UsageNow:</strong> remove the account from your account list.</li>
+    <li><strong>On the service:</strong> open that service's own account or security settings and sign out of other sessions or devices, or revoke the session or app listed there. That ends the sign-in on the service's side, whatever happens on your phone.</li>
+    <li><strong>Deleting the app:</strong> this removes UsageNow, but on iOS, Keychain items can outlast an app's deletion. If you want to be certain, also do step 2.</li>
+  </ol>
+
+  <h3>Is UsageNow made by Anthropic, OpenAI, GitHub, Microsoft or Google?</h3>
+  <p>No. UsageNow is an independent app and is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google. Claude, ChatGPT, Codex, GitHub Copilot and Gemini are trademarks of their respective owners.</p>
+
+  <h3>What does it cost?</h3>
+  <p>Every feature, widgets included, is free for 24 hours after you start the trial in the app. To keep using UsageNow and its widgets after that, you unlock UsageNow Pro with a single one-time purchase. There is no subscription.</p>
+
+  <h3>Which devices and languages?</h3>
+  <p>iPhone, iPad and Apple Watch. The app is translated into 50 languages, and you can switch the language in the app's Settings at any time.</p>
+
+  <h3>Contact</h3>
+  <p>Security questions or a problem you found: <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+
+  <p><a class="cta" href="https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=usagenow_security_faq&amp;mt=8">UsageNow on the App Store</a></p>
+</section>
+
+<!-- ===================== 日本語 ===================== -->
+<section class="lang" id="ja" lang="ja">
+  <h2>日本語</h2>
+
+  <div class="summary">
+    <ul>
+      <li>サインインは各サービス公式のログインページで行います。UsageNow 独自のログインフォームや、作成するアカウントはありません。</li>
+      <li>サインイン情報はデバイスのキーチェーンに保存されます。</li>
+      <li>UsageNow のサーバはありません。アプリが通信するのはサインインした各サービスと、App Store での購入のための Apple だけです。トラッキングもありません。</li>
+      <li>各サービスのセキュリティ設定から、いつでもアクセスを取り消せます。</li>
+    </ul>
+  </div>
+
+  <h3>UsageNow は何をするアプリですか？</h3>
+  <p>各 AI プランの残りとリセット時刻を表示します。Claude の5時間セッション上限と週間上限（モデル別の週間上限を含む）、ChatGPT Codex の5時間枠と週間枠、GitHub Copilot のプレミアムリクエスト・チャット・コード補完、Gemini のモデルごとの1日あたりのリクエスト上限に対応しています。アプリ本体のほか、ホーム画面・ロック画面のウィジェット、Apple Watch のコンプリケーションで確認でき、好きなパーセンテージでアラートを設定できます。</p>
+
+  <h3>どこでサインインしますか？</h3>
+  <p>UsageNow の中で、各サービス公式のログインページを使います。Claude は Anthropic、ChatGPT Codex は OpenAI、Copilot は GitHub、Gemini は Google のページです。普段と同じ手順でサインインしてください。UsageNow 独自のログインフォームはなく、UsageNow のアカウントを作ることもありません。</p>
+
+  <h3>サインインの流れ</h3>
+  <ol class="steps">
+    <li>UsageNow でアカウントを追加し、サービスを選びます。</li>
+    <li>そのサービス公式のログインページが開くので、いつもどおりサインインします。</li>
+    <li>そのアカウントの上限とリセット時刻が表示されます。サインイン情報はデバイスのキーチェーンに残ります。</li>
+  </ol>
+  <!-- 截圖放好後取消註解
+  <figure>
+    <img src="usagenow-security/ja-1-add-account.png" alt="UsageNow でアカウントを追加しサービスを選ぶ画面" width="390" height="844" loading="lazy">
+    <figcaption>1. アカウントを追加してサービスを選ぶ</figcaption>
+  </figure>
+  <figure>
+    <img src="usagenow-security/ja-2-service-login.png" alt="UsageNow から開いた各サービス公式のログインページ" width="390" height="844" loading="lazy">
+    <figcaption>2. サービス公式のログインページ</figcaption>
+  </figure>
+  <figure>
+    <img src="usagenow-security/ja-3-limits.png" alt="アカウントの5時間・週間上限とリセットまでのカウントダウン" width="390" height="844" loading="lazy">
+    <figcaption>3. 上限とリセット時刻の表示</figcaption>
+  </figure>
+  -->
+
+  <h3>サインイン情報はどこに保存されますか？</h3>
+  <p>デバイスのキーチェーン（iOS が認証情報のために用意している暗号化された保存領域）です。UsageNow 独自のサーバは存在しないので、そこへ送信されることもありません。</p>
+
+  <h3>UsageNow はどこと通信しますか？</h3>
+  <p>利用状況を読み取るためにサインインした各サービスと、無料トライアルと買い切り購入のために App Store（Apple）だけです。UsageNow のサーバ、アカウント、トラッキングはありません。</p>
+
+  <h3>自分で確かめられますか？</h3>
+  <p>はい。UsageNow のサーバがないので、手元のネットワークでプロキシを使って通信先を確認できます。表示されるのは、サインインしたサービスと Apple のホストだけのはずです。</p>
+
+  <h3>アカウントの削除・アクセスの取り消し方法</h3>
+  <ol class="steps">
+    <li><strong>UsageNow で：</strong>アカウント一覧からそのアカウントを削除します。</li>
+    <li><strong>各サービスで：</strong>そのサービスのアカウント設定またはセキュリティ設定を開き、ほかのセッションやデバイスからサインアウトするか、一覧に表示されているセッションやアプリのアクセスを取り消します。スマートフォン側の状態にかかわらず、サービス側でサインインが無効になります。</li>
+    <li><strong>アプリを削除した場合：</strong>UsageNow 自体は削除されますが、iOS ではアプリを削除してもキーチェーンの項目が残ることがあります。確実にしたい場合は 2 も行ってください。</li>
+  </ol>
+
+  <h3>Anthropic、OpenAI、GitHub、Microsoft、Google の公式アプリですか？</h3>
+  <p>いいえ。UsageNow は独立した個人開発アプリで、Anthropic、OpenAI、GitHub、Microsoft、Google とは提携していません。Claude、ChatGPT、Codex、GitHub Copilot、Gemini は各所有者の商標です。</p>
+
+  <h3>料金は？</h3>
+  <p>アプリ内で24時間の無料トライアルを開始すると、ウィジェットを含むすべての機能を使えます。その後も使い続けるには、1回限りの購入で UsageNow Pro のロックを解除します。サブスクリプションはありません。</p>
+
+  <h3>対応デバイスと言語</h3>
+  <p>iPhone、iPad、Apple Watch に対応しています。アプリは50言語に対応し、言語はアプリの設定からいつでも切り替えられます。</p>
+
+  <h3>お問い合わせ</h3>
+  <p>セキュリティに関するご質問や問題の報告：<a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+
+  <p><a class="cta" href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=usagenow_security_faq&amp;mt=8">App Store で UsageNow を見る</a></p>
+</section>
+
+<!-- ===================== 繁體中文 ===================== -->
+<section class="lang" id="zh-Hant" lang="zh-Hant">
+  <h2>繁體中文</h2>
+
+  <div class="summary">
+    <ul>
+      <li>你在各服務自己的官方登入頁面登入。UsageNow 沒有自己的登入表單，也不需要註冊帳號。</li>
+      <li>登入資訊保存在裝置的鑰匙圈中。</li>
+      <li>沒有 UsageNow 伺服器。App 只與你登入的服務連線，另外就是 App Store 購買時的 Apple。沒有任何追蹤。</li>
+      <li>你隨時可以從各服務自己的安全性設定收回存取權。</li>
+    </ul>
+  </div>
+
+  <h3>UsageNow 是做什麼的？</h3>
+  <p>它顯示每個 AI 方案還剩多少用量、什麼時候重置：Claude 的 5 小時工作階段額度與每週額度（包括各模型個別的每週上限）、ChatGPT Codex 的 5 小時區間與每週區間、GitHub Copilot 的進階請求、聊天與程式碼自動完成，以及 Gemini 各模型的每日請求配額。可以在 App 裡、主畫面與鎖定畫面小工具、Apple Watch 複雜功能上看，也能自訂任何百分比的提醒。</p>
+
+  <h3>在哪裡登入？</h3>
+  <p>在 UsageNow 裡面，使用各服務自己的官方登入頁面：Claude 是 Anthropic 的頁面、ChatGPT Codex 是 OpenAI 的、Copilot 是 GitHub 的、Gemini 是 Google 的。照你平常的方式登入即可。UsageNow 沒有自己的登入表單，你也不會建立任何 UsageNow 帳號。</p>
+
+  <h3>登入流程長什麼樣子？</h3>
+  <ol class="steps">
+    <li>在 UsageNow 新增帳號並選擇服務。</li>
+    <li>畫面會開啟該服務自己的登入頁面，照平常方式登入。</li>
+    <li>UsageNow 顯示這個帳號的額度與重置時間。登入資訊留在你裝置的鑰匙圈中。</li>
+  </ol>
+  <!-- 截圖放好後取消註解
+  <figure>
+    <img src="usagenow-security/zh-1-add-account.png" alt="在 UsageNow 新增帳號並選擇服務的畫面" width="390" height="844" loading="lazy">
+    <figcaption>1. 新增帳號並選擇服務</figcaption>
+  </figure>
+  <figure>
+    <img src="usagenow-security/zh-2-service-login.png" alt="從 UsageNow 開啟的服務官方登入頁面" width="390" height="844" loading="lazy">
+    <figcaption>2. 服務自己的官方登入頁面</figcaption>
+  </figure>
+  <figure>
+    <img src="usagenow-security/zh-3-limits.png" alt="帳號的 5 小時與每週額度及重置倒數" width="390" height="844" loading="lazy">
+    <figcaption>3. 額度與重置時間</figcaption>
+  </figure>
+  -->
+
+  <h3>登入資訊存在哪裡？</h3>
+  <p>存在你裝置的鑰匙圈（iOS 專門保存帳密憑證的加密儲存區）。UsageNow 沒有自己的伺服器，所以也不會把它傳到任何 UsageNow 伺服器。</p>
+
+  <h3>UsageNow 會跟誰連線？</h3>
+  <p>只有你登入的那些服務（用來讀取你的用量），以及 App Store 的 Apple（用於免費試用與一次性購買）。沒有 UsageNow 伺服器、沒有帳號，也沒有追蹤。</p>
+
+  <h3>我可以自己驗證嗎？</h3>
+  <p>可以。因為沒有 UsageNow 伺服器，你可以在自己的網路上用 proxy 觀察 App 的連線，看到的應該只有你登入的服務和 Apple 的主機。</p>
+
+  <h3>如何移除帳號或收回存取權？</h3>
+  <ol class="steps">
+    <li><strong>在 UsageNow 裡：</strong>從帳號列表移除該帳號。</li>
+    <li><strong>在服務那一端：</strong>打開該服務自己的帳號或安全性設定，登出其他工作階段／裝置，或撤銷列在那裡的工作階段或 App 存取權。不論手機上狀態如何，服務端的登入都會因此失效。</li>
+    <li><strong>刪除 App：</strong>會移除 UsageNow，但在 iOS 上，鑰匙圈項目可能在 App 刪除後仍然留著。想要確定的話，請同時做第 2 步。</li>
+  </ol>
+
+  <h3>UsageNow 是 Anthropic、OpenAI、GitHub、Microsoft 或 Google 做的嗎？</h3>
+  <p>不是。UsageNow 是獨立開發的 App，與 Anthropic、OpenAI、GitHub、Microsoft 及 Google 皆無關聯。Claude、ChatGPT、Codex、GitHub Copilot 與 Gemini 為其各自所有者的商標。</p>
+
+  <h3>要付費嗎？</h3>
+  <p>在 App 內開始 24 小時免費試用，就能使用包含小工具在內的所有功能。試用結束後若要繼續使用，只需一次性購買解鎖 UsageNow Pro。沒有訂閱。</p>
+
+  <h3>支援哪些裝置與語言？</h3>
+  <p>iPhone、iPad 和 Apple Watch。App 完整翻譯成 50 種語言，隨時可以在 App 的設定中切換。</p>
+
+  <h3>聯絡我們</h3>
+  <p>安全性相關問題或發現的問題：<a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+
+  <p><a class="cta" href="https://apps.apple.com/tw/app/id6818607603?pt=118326163&amp;ct=usagenow_security_faq&amp;mt=8">在 App Store 查看 UsageNow</a></p>
+</section>
+
+<footer>
+  <p>Written by Lumi Studio, the developer of UsageNow. Last updated 2026-10-13.<br>
+  <span lang="ja">この FAQ は UsageNow の開発者（Lumi Studio）が書いています。</span><br>
+  <span lang="zh-Hant">本頁由 UsageNow 的開發者 Lumi Studio 撰寫。</span></p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T15:59:53Z",
+  "updated_at": "2026-10-13T16:02:15Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -17,9 +17,9 @@
     },
     {
       "id": "oa-usagenow-asc",
-      "title": "UsageNow 商店文字改 ASC：在本機 session 回一句確認",
+      "title": "ASC 副標／關鍵字：在本機 session 回一句確認（之後不用再問）",
       "url": "https://claude.ai/code/session_018Fztd5iQ2iPQBmvZiVXMyD",
-      "how": "Mac 連線後，在「本機外宣待辦執行（雲端連動）」輸入：可以，照雲端給的 UsageNow 商店文字直接改 ASC。",
+      "how": "Mac 連線後，在「本機外宣待辦執行（雲端連動）」輸入：可以，副標和關鍵字只要經過一個以上模型驗證就直接改 ASC，UsageNow 照雲端給的商店文字改。",
       "status": "todo"
     },
     {
@@ -3911,7 +3911,16 @@
   "standing_approval": {
     "local": true,
     "granted_at": "2026-10-13T12:03:37Z",
-    "note": "擁有者已長期授權：owner=local 的項目由本機 Claude 直接執行，不需再詢問（不改 App 本體與 ASC，遵守發文規則）。"
+    "note": "擁有者已長期授權：owner=local 的項目由本機 Claude 直接執行，不需再詢問（不改 App 本體；ASC 只有 aso_metadata 規則內的副標／關鍵字可以改；遵守發文規則）。",
+    "aso_metadata": {
+      "granted_at": "2026-10-13T15:00:00Z",
+      "rule": "Caitlyn 10/13 授權：副標與關鍵字只要經過一個以上模型（不同模型）調教與驗證，就直接改 ASC，不必再問。UsageNow 的標題也已授權。其他 App 的標題、App 本體、build 上傳與送審不在此授權內。",
+      "requires": [
+        "兩個以上不同模型驗證通過（字數上限、重複字、意圖、商標風險、實測名次證據）",
+        "改之前備份 ASC 現值",
+        "只改 subtitle 與 keywords（UsageNow 另含 name）"
+      ]
+    }
   },
   "scope_note": "依擁有者指示：App Store Connect 與 App 本體的改動不列入待辦，只保留外宣相關的動作。"
 }

@@ -1,0 +1,664 @@
+{
+ "app_id": "6818607603",
+ "fetched": "2026-10-13T17:00:45.616848Z",
+ "versions": {
+  "1.0.1": {
+   "te-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,hours",
+    "id": "0bceafb8-b3b1-41f8-a54d-98ffbdfe14b4"
+   },
+   "ru": {
+    "keywords": "ai,code,dev,разработчик,usage,tracker,нейросеть,токены,квота,счетчик,token,виджет,quota,meter,llm",
+    "id": "9dc31625-a80e-4522-b872-4e900dd06640"
+   },
+   "mr-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,विजेट,रीसेट,साप्ताहिक,बाकी,credits,llm",
+    "id": "1be5accd-bf10-436d-a91f-9257ed7f50ff"
+   },
+   "no": {
+    "keywords": "code,dev,utvikler,usage,bruk,kvote,quota,teller,token,widget,reset,meter,monitor,llm,nedtelling,økt",
+    "id": "a886f15f-cc76-49ea-b175-bcaeefa546bf"
+   },
+   "ml-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,limit",
+    "id": "9adf3875-a215-44ef-8dbe-3e1121ca223d"
+   },
+   "ms": {
+    "keywords": "code,dev,pembangun,usage,tracker,kuota,penggunaan,pembilang,token,widget,reset,quota,meter,monitor",
+    "id": "9c5da8d1-1ff6-4480-a7af-a2ca2cc2fdc7"
+   },
+   "bn-BD": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,reset,llm",
+    "id": "254919ac-e56d-4383-b3c3-f989aa0afb7d"
+   },
+   "ca": {
+    "keywords": "ai,code,dev,desenvolupador,usage,tracker,consum,quota,comptador,token,giny,widget,reinici,llm,meter",
+    "id": "4ee7a2df-7726-428b-9020-c7101cb97da1"
+   },
+   "uk": {
+    "keywords": "ai,code,dev,розробник,usage,tracker,нейромережа,токени,квота,лічильник,token,віджет,quota,meter,llm",
+    "id": "587db64c-cec8-4ee8-94e3-b5721fe031f1"
+   },
+   "kn-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,api,stats,llm",
+    "id": "c6c19d8a-baa6-4bac-81d9-297e28be7df8"
+   },
+   "he": {
+    "keywords": "code,dev,מתכנת,usage,tracker,טוקן,מכסה,מונה,token,וידג׳ט,widget,quota,meter,monitor,llm,איפוס,סשן",
+    "id": "47d9d3b1-27be-4101-a814-53c24b5b4c1e"
+   },
+   "vi": {
+    "keywords": "code,dev,lập trình,usage,tracker,token,widget,quota,meter,monitor,llm,reset,bộ đếm,đặt lại,phiên,api",
+    "id": "5701b97d-1b2a-4bf0-bb08-1c13877f0a10"
+   },
+   "ur-PK": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,reset,meter,monitor,llm,limit,ٹوکن,کوٹہ,ویجیٹ",
+    "id": "2ed16015-f8e6-444a-8132-6951dde3df34"
+   },
+   "hr": {
+    "keywords": "code,dev,programer,usage,tracker,kvota,brojač,token,widget,reset,quota,meter,monitor,llm,sesija,api",
+    "id": "8302bff6-f669-48ff-b573-24f8879e7a5a"
+   },
+   "pt-BR": {
+    "keywords": "ai,code,dev,desenvolvedor,usage,tracker,consumo,cota,contador,token,widget,reset,llm,meter,sessão",
+    "id": "1e68a429-73a3-48f0-bf00-4d54cdf74635"
+   },
+   "da": {
+    "keywords": "code,dev,udvikler,usage,quota,kvote,tæller,token,widget,reset,meter,monitor,llm,nedtælling,session",
+    "id": "10d4a48e-40ca-426c-b44a-25498274fead"
+   },
+   "tr": {
+    "keywords": "ai,code,dev,geliştirici,kullanım,usage,tracker,kota,sayaç,token,widget,reset,sıfırlama,quota,meter",
+    "id": "40dccb57-07e1-4f82-bd8d-1a5ef428354a"
+   },
+   "pl": {
+    "keywords": "code,dev,programista,usage,quota,licznik,token,widget,reset,meter,monitor,llm,odliczanie,limit,sesja",
+    "id": "4dc14ec3-4e33-4713-9f1b-b6c762a9290c"
+   },
+   "en-GB": {
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,allowance,cli",
+    "id": "f8679472-753b-458d-9311-17ea38988d12"
+   },
+   "en-CA": {
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly",
+    "id": "e75007e6-43b8-4b8e-8f43-6245ffcffea1"
+   },
+   "hi": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,llm",
+    "id": "8ea9b806-e642-4a31-9e21-2e1480c8cf39"
+   },
+   "pt-PT": {
+    "keywords": "ai,code,dev,programador,usage,tracker,consumo,quota,contador,token,widget,reset,llm,meter,sessão,api",
+    "id": "d23a076e-56ee-4e9e-b856-49b6e0c833c6"
+   },
+   "es-ES": {
+    "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api",
+    "id": "7c93da22-36e3-465b-952b-f57655a4b702"
+   },
+   "ta-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,llm",
+    "id": "018662f5-8832-4966-a551-76ec78ff8fee"
+   },
+   "el": {
+    "keywords": "code,dev,προγραμματιστής,usage,tracker,κατανάλωση,ποσόστωση,μετρητής,token,widget,reset,επαναφορά",
+    "id": "b178ab6b-274a-43c9-b737-b19ef0768e06"
+   },
+   "zh-Hans": {
+    "keywords": "code,dev,开发者,程序员,usage,tracker,meter,quota,token,配额,限额,剩余,重置,倒计时,小组件,监控,统计,每周,编程,人工智能,大模型,智能体,llm,代码",
+    "id": "a7584b0b-0167-469e-95c0-57cd10205643"
+   },
+   "ja": {
+    "keywords": "code,dev,開発者,エンジニア,制限,上限,トークン,usage,tracker,meter,quota,token,ウィジェット,リセット,利用状況,残り,カウントダウン,生成ai,週間,管理",
+    "id": "814ca397-06fc-4c2c-ab22-2a3b48653d18"
+   },
+   "it": {
+    "keywords": "ai,code,dev,sviluppatore,usage,tracker,consumo,quota,contatore,token,widget,reset,llm,meter,sessione",
+    "id": "01d501fa-2de5-46c8-b572-44a20d59b969"
+   },
+   "fr-CA": {
+    "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api",
+    "id": "535fa5bb-366d-47fc-b301-3a19c9c05f23"
+   },
+   "id": {
+    "keywords": "code,dev,developer,usage,tracker,kuota,penggunaan,penghitung,token,widget,reset,quota,meter,monitor",
+    "id": "5d255a83-e9cc-4a19-86aa-9af66f70fadc"
+   },
+   "fr-FR": {
+    "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api",
+    "id": "a267d7b3-ffa9-4f34-a7cc-e32dab89a093"
+   },
+   "nl-NL": {
+    "keywords": "code,dev,ontwikkelaar,usage,verbruik,quota,teller,token,widget,reset,meter,monitor,llm,aftellen,api",
+    "id": "01c534e3-6ed4-42d8-a832-8c7c127b896e"
+   },
+   "sk": {
+    "keywords": "code,dev,vývojár,usage,tracker,využitie,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm",
+    "id": "d0487b88-e33a-4ae5-944f-ba0220cef7e8"
+   },
+   "zh-Hant": {
+    "keywords": "code,dev,開發者,工程師,usage,tracker,meter,quota,token,使用量,限額,配額,限制,剩餘,倒數計時,小工具,監控,每週,程式,人工智慧,大型語言模型,llm",
+    "id": "cb38792b-c01b-41e8-8a81-d56d7a8748a9"
+   },
+   "de-DE": {
+    "keywords": "ai,code,dev,entwickler,usage,verbrauch,kontingent,token,quota,zähler,widget,reset,countdown,llm,api",
+    "id": "ed02860c-91fd-4bd8-9e65-b39e0592eeb4"
+   },
+   "hu": {
+    "keywords": "ai,code,dev,fejlesztő,usage,tracker,fogyasztás,kvóta,számláló,token,widget,reset,quota,meter,monitor",
+    "id": "91513bf8-6d05-4a62-8773-1e1ec59d11c7"
+   },
+   "sv": {
+    "keywords": "code,dev,utvecklare,usage,tracker,förbrukning,kvot,quota,mätare,token,widget,reset,meter,monitor,llm",
+    "id": "38ea29c5-7172-4656-90fe-6263598981ca"
+   },
+   "or-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,coder,llm",
+    "id": "3f4f7af5-43a9-458b-9132-e5567b597c0c"
+   },
+   "sl-SI": {
+    "keywords": "ai,code,dev,razvijalec,usage,tracker,kvota,števec,token,pripomoček,widget,reset,quota,meter,monitor",
+    "id": "6c389782-78ed-4e6a-ac02-a34dc572b36c"
+   },
+   "ko": {
+    "keywords": "code,dev,개발자,usage,tracker,meter,quota,token,토큰,제한,리셋,알림,관리,위젯,카운트다운,생성형,주간,세션,코딩,에이전트,llm,모니터",
+    "id": "c85e6a27-7f2c-44ed-b87d-ef49fafcc5a7"
+   },
+   "es-MX": {
+    "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api",
+    "id": "cd72d3dc-83f3-4273-bb23-561627b456cf"
+   },
+   "en-AU": {
+    "keywords": "code,dev,developer,coding,programmer,quota,token,widget,reset,timer,gauge,cap,plan,api,cli,max,stats",
+    "id": "095f98b1-ac83-4a9a-8d7a-60b5ed735d0d"
+   },
+   "fi": {
+    "keywords": "ai,code,dev,kehittäjä,usage,tracker,kulutus,kiintiö,laskuri,token,widget,reset,quota,meter,monitor",
+    "id": "4d9c0f93-2305-4673-bb4a-0be90ea7fa41"
+   },
+   "pa-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,rate,timer",
+    "id": "2159484d-85af-4e9c-a89f-7030f3f3dfbc"
+   },
+   "ar-SA": {
+    "keywords": "ai,code,dev,مبرمج,usage,tracker,توكن,حصة,عداد,token,ويدجت,widget,quota,meter,llm,إعادة ضبط,اصطناعي",
+    "id": "8a524086-8b49-4022-8abe-8e03fa44cc1f"
+   },
+   "en-US": {
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly",
+    "id": "08f7c809-3203-4f06-9df7-b8f233cfa414"
+   },
+   "th": {
+    "keywords": "code,dev,นักพัฒนา,usage,tracker,meter,quota,token,monitor,widget,llm,reset,limit,โควตา,โทเคน,วิดเจ็ต",
+    "id": "7aa5baf3-ba0b-4270-8dbd-70a932a5881d"
+   },
+   "gu-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,cap,plan",
+    "id": "c6377169-59cd-41f3-bc8d-de3420db15bd"
+   },
+   "ro": {
+    "keywords": "code,dev,dezvoltator,usage,quota,cotă,contor,token,widget,reset,meter,monitor,llm,numărătoare,rămas",
+    "id": "35afcfc6-772a-40b8-a755-357307f601ed"
+   },
+   "cs": {
+    "keywords": "code,dev,vývojář,usage,tracker,spotřeba,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm",
+    "id": "66ad5aab-e951-46e9-ba6c-f20344069e5f"
+   }
+  },
+  "1.0": {
+   "el": {
+    "keywords": "code,dev,προγραμματιστής,usage,tracker,κατανάλωση,ποσόστωση,μετρητής,token,widget,reset,επαναφορά",
+    "id": "2d4fbe9c-d0c0-45b0-86aa-17b8ef1693ab"
+   },
+   "en-CA": {
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly",
+    "id": "67e96d8a-4969-4493-b825-8e2688e8c984"
+   },
+   "no": {
+    "keywords": "code,dev,utvikler,usage,bruk,kvote,quota,teller,token,widget,reset,meter,monitor,llm,nedtelling,økt",
+    "id": "07f9b08d-1093-4393-8241-d0b9d16974d6"
+   },
+   "zh-Hans": {
+    "keywords": "code,dev,开发者,程序员,usage,tracker,meter,quota,token,配额,限额,剩余,重置,倒计时,小组件,监控,统计,每周,编程,人工智能,大模型,智能体,llm,代码",
+    "id": "b612035f-59ce-4b5f-a7cf-c21268390562"
+   },
+   "ms": {
+    "keywords": "code,dev,pembangun,usage,tracker,kuota,penggunaan,pembilang,token,widget,reset,quota,meter,monitor",
+    "id": "de5f8bc3-3755-4712-993a-d2e3dfb53fcd"
+   },
+   "sk": {
+    "keywords": "code,dev,vývojár,usage,tracker,využitie,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm",
+    "id": "8ec00240-8cef-43a4-9b09-9f29a5c40886"
+   },
+   "or-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,coder,llm",
+    "id": "becb2758-7df7-4d26-b635-cfe19526106c"
+   },
+   "de-DE": {
+    "keywords": "ai,code,dev,entwickler,usage,verbrauch,kontingent,token,quota,zähler,widget,reset,countdown,llm,api",
+    "id": "b88627ee-196d-44f2-8171-c35d989b8a08"
+   },
+   "ta-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,llm",
+    "id": "c6fc5563-1bc9-405e-9093-f6617c40317c"
+   },
+   "te-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,hours",
+    "id": "80a8269c-271d-4be7-9528-f72f581d6cf4"
+   },
+   "fr-CA": {
+    "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api",
+    "id": "6b4b77e8-533b-4096-b2ae-3c3b4147445d"
+   },
+   "sl-SI": {
+    "keywords": "ai,code,dev,razvijalec,usage,tracker,kvota,števec,token,pripomoček,widget,reset,quota,meter,monitor",
+    "id": "4cc1d612-fc5c-45d2-81f5-48d85337c682"
+   },
+   "en-AU": {
+    "keywords": "code,dev,developer,coding,programmer,quota,token,widget,reset,timer,gauge,cap,plan,api,cli,max,stats",
+    "id": "1254d557-0c73-4528-8334-5caf9dfc0164"
+   },
+   "sv": {
+    "keywords": "code,dev,utvecklare,usage,tracker,förbrukning,kvot,quota,mätare,token,widget,reset,meter,monitor,llm",
+    "id": "b290f108-cf9e-4f79-97a2-3ed3a135254c"
+   },
+   "pa-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,rate,timer",
+    "id": "b06639f8-3dd0-483e-93ee-7c6a7fc670bf"
+   },
+   "id": {
+    "keywords": "code,dev,developer,usage,tracker,kuota,penggunaan,penghitung,token,widget,reset,quota,meter,monitor",
+    "id": "5acbc1c0-59fc-4051-b795-b85455d4b382"
+   },
+   "pt-BR": {
+    "keywords": "ai,code,dev,desenvolvedor,usage,tracker,consumo,cota,contador,token,widget,reset,llm,meter,sessão",
+    "id": "5a8a2484-16ca-433a-a509-9703bddbbd0f"
+   },
+   "en-GB": {
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,allowance,cli",
+    "id": "c6a68858-48a1-46b1-9a57-992c219fcd3a"
+   },
+   "ko": {
+    "keywords": "code,dev,개발자,usage,tracker,meter,quota,token,토큰,할당량,리셋,초기화,남은양,잔여,위젯,카운트다운,생성형,주간,세션,코딩,에이전트,llm,모니터",
+    "id": "6ad034f1-8ffd-4a8a-9d45-865e8cfe01d3"
+   },
+   "mr-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,विजेट,रीसेट,साप्ताहिक,बाकी,credits,llm",
+    "id": "011cb817-4a28-4b2c-9eab-14df6949219c"
+   },
+   "gu-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,cap,plan",
+    "id": "1a9d3b48-ea63-4835-b6cd-c285a355b44d"
+   },
+   "es-ES": {
+    "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api",
+    "id": "37770f41-4a41-4247-9c7a-588b01506a14"
+   },
+   "pl": {
+    "keywords": "code,dev,programista,usage,quota,licznik,token,widget,reset,meter,monitor,llm,odliczanie,limit,sesja",
+    "id": "e29f68cf-0200-4188-8986-d071d0817107"
+   },
+   "ml-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ടോക്കൺ,ക്വോട്ട,വിഡ്ജറ്റ്,റീസെറ്റ്,പ്രതിവാര,limit",
+    "id": "5a5a3c7a-3505-4b81-8a66-a31250e0c05f"
+   },
+   "cs": {
+    "keywords": "code,dev,vývojář,usage,tracker,spotřeba,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm",
+    "id": "3b32a583-39d8-4082-b8e3-8e52995e5a2d"
+   },
+   "da": {
+    "keywords": "code,dev,udvikler,usage,quota,kvote,tæller,token,widget,reset,meter,monitor,llm,nedtælling,session",
+    "id": "02fddf5e-c4ad-4bb7-a113-574746c6597e"
+   },
+   "en-US": {
+    "keywords": "code,dev,developer,coding,quota,token,meter,monitor,reset,widget,countdown,llm,agent,session,weekly",
+    "id": "975a4962-b65b-4eb7-aef0-e339a711e2a7"
+   },
+   "fi": {
+    "keywords": "ai,code,dev,kehittäjä,usage,tracker,kulutus,kiintiö,laskuri,token,widget,reset,quota,meter,monitor",
+    "id": "550b88d9-9fc6-4af1-a565-0bf472b5bf20"
+   },
+   "ru": {
+    "keywords": "ai,code,dev,разработчик,usage,tracker,нейросеть,токены,квота,счетчик,token,виджет,quota,meter,llm",
+    "id": "600c6486-268d-433d-ab89-df26048ccdef"
+   },
+   "hi": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,llm",
+    "id": "7595798f-4e3e-40c4-8a15-6a63d341fa02"
+   },
+   "ar-SA": {
+    "keywords": "ai,code,dev,مبرمج,usage,tracker,توكن,حصة,عداد,token,ويدجت,widget,quota,meter,llm,إعادة ضبط,اصطناعي",
+    "id": "c087a7b8-3b96-45ed-912b-bf4fe0d51903"
+   },
+   "th": {
+    "keywords": "code,dev,นักพัฒนา,usage,tracker,meter,quota,token,monitor,widget,llm,reset,limit,โควตา,โทเคน,วิดเจ็ต",
+    "id": "f44f6f32-2780-427d-a50b-d8f6d277a31e"
+   },
+   "it": {
+    "keywords": "ai,code,dev,sviluppatore,usage,tracker,consumo,quota,contatore,token,widget,reset,llm,meter,sessione",
+    "id": "b46745d8-ddd6-43fc-89b0-c255141212e8"
+   },
+   "kn-IN": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,api,stats,llm",
+    "id": "e19fda31-e3b7-4a0a-b465-bdbd85a05744"
+   },
+   "pt-PT": {
+    "keywords": "ai,code,dev,programador,usage,tracker,consumo,quota,contador,token,widget,reset,llm,meter,sessão,api",
+    "id": "69ce1e32-2b10-450d-b138-2c469c60ed50"
+   },
+   "fr-FR": {
+    "keywords": "ai,code,dev,développeur,usage,tracker,consommation,quota,compteur,jeton,token,widget,llm,monitor,api",
+    "id": "934150f3-37b9-47b5-addf-5d64c00c6173"
+   },
+   "zh-Hant": {
+    "keywords": "code,dev,開發者,工程師,usage,tracker,meter,quota,token,使用量,限額,配額,限制,剩餘,倒數計時,小工具,監控,每週,程式,人工智慧,大型語言模型,llm",
+    "id": "d4b4bcc0-c739-474c-8c94-8309d6cbd054"
+   },
+   "tr": {
+    "keywords": "ai,code,dev,geliştirici,kullanım,usage,tracker,kota,sayaç,token,widget,reset,sıfırlama,quota,meter",
+    "id": "f76a875b-5ef9-4089-ad8f-695919f93e48"
+   },
+   "uk": {
+    "keywords": "ai,code,dev,розробник,usage,tracker,нейромережа,токени,квота,лічильник,token,віджет,quota,meter,llm",
+    "id": "822d623e-a3f0-409b-8508-890257f4daf2"
+   },
+   "ja": {
+    "keywords": "code,dev,開発者,エンジニア,制限,上限,トークン,usage,tracker,meter,quota,token,ウィジェット,リセット,利用状況,残り,カウントダウン,生成ai,週間,管理",
+    "id": "b4b31e0b-398e-4730-8273-9c4f916d71f5"
+   },
+   "ur-PK": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,reset,meter,monitor,llm,limit,ٹوکن,کوٹہ,ویجیٹ",
+    "id": "7dfbe44f-0b2f-4972-bf0a-31fe81bce8bf"
+   },
+   "ro": {
+    "keywords": "code,dev,dezvoltator,usage,quota,cotă,contor,token,widget,reset,meter,monitor,llm,numărătoare,rămas",
+    "id": "95282558-2142-4dbd-9eed-c1789512ff83"
+   },
+   "hr": {
+    "keywords": "code,dev,programer,usage,tracker,kvota,brojač,token,widget,reset,quota,meter,monitor,llm,sesija,api",
+    "id": "23233d2a-4290-46e3-a515-8d3ec5c0533c"
+   },
+   "nl-NL": {
+    "keywords": "code,dev,ontwikkelaar,usage,verbruik,quota,teller,token,widget,reset,meter,monitor,llm,aftellen,api",
+    "id": "724ab653-f2b4-48c4-a2ef-1a9b3128f572"
+   },
+   "es-MX": {
+    "keywords": "ai,code,dev,desarrollador,usage,tracker,consumo,cuota,contador,token,widget,reinicio,llm,meter,api",
+    "id": "f876f1b2-7bf6-4876-bab5-e758886779ee"
+   },
+   "bn-BD": {
+    "keywords": "usage,tracker,code,dev,developer,quota,token,widget,টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,reset,llm",
+    "id": "c630f8a8-b452-43b0-ad0c-0979e21c91a4"
+   },
+   "he": {
+    "keywords": "code,dev,מתכנת,usage,tracker,טוקן,מכסה,מונה,token,וידג׳ט,widget,quota,meter,monitor,llm,איפוס,סשן",
+    "id": "68f969d3-c22a-4b9a-82c4-b5b9df2ecefa"
+   },
+   "vi": {
+    "keywords": "code,dev,lập trình,usage,tracker,token,widget,quota,meter,monitor,llm,reset,bộ đếm,đặt lại,phiên,api",
+    "id": "b67d439d-35ba-4cbb-8d70-1afdee678eb7"
+   },
+   "hu": {
+    "keywords": "ai,code,dev,fejlesztő,usage,tracker,fogyasztás,kvóta,számláló,token,widget,reset,quota,meter,monitor",
+    "id": "f1b625da-0c0e-442a-ab17-29019cabd931"
+   },
+   "ca": {
+    "keywords": "ai,code,dev,desenvolupador,usage,tracker,consum,quota,comptador,token,giny,widget,reinici,llm,meter",
+    "id": "4b249dcc-25f5-4206-b20c-50351cc100f5"
+   }
+  }
+ },
+ "appInfo": {
+  "e852ef2e-1622-483f-a477-b348fefc64c1": {
+   "ko": {
+    "name": "UsageNow: AI 사용량 트래커",
+    "subtitle": "Claude·Codex·Copilot·Gemini 한도",
+    "id": "57b7c5fe-2348-4f3d-8345-aa9d0b062095"
+   },
+   "cs": {
+    "name": "UsageNow: Sledování využití AI",
+    "subtitle": "Limity Claude, Codex, Copilot",
+    "id": "b8d85815-eb60-4670-9042-07a44ce22581"
+   },
+   "en-CA": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "id": "71ea823b-109b-4d55-b84b-b70b51de5742"
+   },
+   "ro": {
+    "name": "UsageNow: Consum AI tracker",
+    "subtitle": "Limite Claude, Codex, Copilot",
+    "id": "77d75747-625d-4b6e-b2ae-36b7db9cbd77"
+   },
+   "pt-PT": {
+    "name": "UsageNow: Monitor de uso de IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "id": "6a72139a-49a6-4eb0-a1dc-24cfb7b56984"
+   },
+   "fr-CA": {
+    "name": "UsageNow : Suivi d'usage IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "id": "f18a7dee-0203-48e5-b581-6430a8acdb00"
+   },
+   "zh-Hans": {
+    "name": "UsageNow：AI 用量追踪器",
+    "subtitle": "Claude、Codex、Copilot、Gemini 额度",
+    "id": "4a9b210a-c9d4-4284-9100-1d17d37ef05b"
+   },
+   "ar-SA": {
+    "name": "UsageNow: متتبع استخدام الذكاء",
+    "subtitle": "حدود Claude وCodex وCopilot",
+    "id": "f5a41145-9101-470b-9bf9-1d025b0bb8a9"
+   },
+   "es-MX": {
+    "name": "UsageNow: Monitor de uso IA",
+    "subtitle": "Límites Claude, Codex, Copilot",
+    "id": "c7e3f80f-b5af-4172-a6ed-bae413a3ef72"
+   },
+   "no": {
+    "name": "UsageNow: AI-forbruk tracker",
+    "subtitle": "Claude, Codex, Copilot grenser",
+    "id": "453e3460-8e81-4650-8ec1-c4f19fb35015"
+   },
+   "or-IN": {
+    "name": "UsageNow: AI ବ୍ୟବହାର ଟ୍ରାକର",
+    "subtitle": "Claude, Codex, Copilot ସୀମା",
+    "id": "e99bae7a-8d57-4726-9d02-fe9481d60477"
+   },
+   "kn-IN": {
+    "name": "UsageNow: AI ಬಳಕೆ ಟ್ರ್ಯಾಕರ್",
+    "subtitle": "Claude, Codex, Copilot ಮಿತಿ",
+    "id": "60dffedf-fb9e-4e7b-abbe-b114237de14e"
+   },
+   "nl-NL": {
+    "name": "UsageNow: AI-gebruik tracker",
+    "subtitle": "Claude, Codex & Copilot limiet",
+    "id": "0ceca33c-cdf4-4bb6-90ee-9c9001e94b05"
+   },
+   "el": {
+    "name": "UsageNow: Χρήση AI και όρια",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "id": "78d5a3cb-60c1-4615-abcc-4383dba460a9"
+   },
+   "th": {
+    "name": "UsageNow: ติดตามการใช้ AI",
+    "subtitle": "ลิมิต Claude, Codex, Copilot",
+    "id": "61e11949-3753-44d8-bc2c-ef37e0d50a5c"
+   },
+   "he": {
+    "name": "UsageNow: מעקב שימוש ב‑AI",
+    "subtitle": "מגבלות Claude, Codex, Copilot",
+    "id": "587040a8-d6d9-4ad6-ab03-b245de990d1a"
+   },
+   "bn-BD": {
+    "name": "UsageNow: AI ব্যবহার ট্র্যাকার",
+    "subtitle": "Claude, Codex, Copilot সীমা",
+    "id": "3dea4e0f-f0a2-41d9-b32f-663488817892"
+   },
+   "mr-IN": {
+    "name": "UsageNow: AI वापर ट्रॅकर",
+    "subtitle": "Claude, Codex, Copilot मर्यादा",
+    "id": "bca972d6-404d-4a72-8c5e-a1774b9c6dc5"
+   },
+   "ml-IN": {
+    "name": "UsageNow: AI ഉപയോഗ ട്രാക്കർ",
+    "subtitle": "Claude, Codex, Copilot പരിധി",
+    "id": "2dea81b2-0b8f-45a3-a82a-a921cc8bf9f5"
+   },
+   "id": {
+    "name": "UsageNow: Pelacak Pemakaian AI",
+    "subtitle": "Batas Claude, Codex, Copilot",
+    "id": "6c9f8132-fa81-4619-95df-d7a504c4ca0c"
+   },
+   "sl-SI": {
+    "name": "UsageNow: Poraba UI in limiti",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "id": "cd65e98a-41b4-40fd-a928-6b8d04f25ef9"
+   },
+   "hr": {
+    "name": "UsageNow: Potrošnja AI-ja",
+    "subtitle": "Limiti Claude, Codex, Copilot",
+    "id": "4ec76256-582c-4d8f-a4d8-0d519d6e64b0"
+   },
+   "fi": {
+    "name": "UsageNow: Tekoälyn käyttö",
+    "subtitle": "Claude, Codex ja Copilot rajat",
+    "id": "87956506-9407-48e9-b36f-6b311042b4b7"
+   },
+   "da": {
+    "name": "UsageNow: AI-forbrug tracker",
+    "subtitle": "Claude, Codex, Copilot grænser",
+    "id": "b8d8c5b5-e3a4-4b2c-995d-733431739df6"
+   },
+   "it": {
+    "name": "UsageNow: Monitor utilizzo IA",
+    "subtitle": "Limiti Claude, Codex e Copilot",
+    "id": "add7053e-8ecc-4f0b-83be-b63f8fbec1db"
+   },
+   "pl": {
+    "name": "UsageNow: Zużycie AI tracker",
+    "subtitle": "Limity Claude, Codex, Copilot",
+    "id": "7dba351e-ec77-4099-b6c2-febd32522b49"
+   },
+   "hu": {
+    "name": "UsageNow: MI-használat követő",
+    "subtitle": "Claude, Codex, Copilot limitek",
+    "id": "4e5c8392-2b5c-41d9-8d3a-bb672e99c61a"
+   },
+   "hi": {
+    "name": "UsageNow: AI उपयोग ट्रैकर",
+    "subtitle": "Claude, Codex, Copilot लिमिट",
+    "id": "66cdf656-7ded-4959-aa5e-61c69d8db4f6"
+   },
+   "de-DE": {
+    "name": "UsageNow: KI-Nutzung Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "id": "2db29139-096c-46ba-9c33-8862640fff1d"
+   },
+   "sk": {
+    "name": "UsageNow: AI limity a spotreba",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "id": "d9853095-05ca-40c8-b82d-65ebd3b2c61b"
+   },
+   "uk": {
+    "name": "UsageNow: Ліміти ШІ та витрата",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "id": "90275b98-d42e-4344-a92d-6c17e647089b"
+   },
+   "en-US": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "id": "574e874e-4bda-4af9-bcb7-b46817af3fb1"
+   },
+   "zh-Hant": {
+    "name": "UsageNow：AI 用量與額度追蹤",
+    "subtitle": "Claude、Codex、Copilot 重置倒數",
+    "id": "32e9a1a0-d52f-4c20-ad82-bd7d0c046359"
+   },
+   "ta-IN": {
+    "name": "UsageNow: AI பயன்பாடு",
+    "subtitle": "Claude, Codex, Copilot வரம்பு",
+    "id": "1a38110b-fadd-497a-95e3-33f5bdfe8e8d"
+   },
+   "tr": {
+    "name": "UsageNow: Yapay Zekâ Kullanımı",
+    "subtitle": "Claude, Codex, Copilot limiti",
+    "id": "9be9def4-0acc-46bc-92ce-8d96685bb583"
+   },
+   "es-ES": {
+    "name": "UsageNow: Monitor de uso IA",
+    "subtitle": "Límites Claude, Codex, Copilot",
+    "id": "93441989-cf18-447e-a1dd-78f405d9a7c2"
+   },
+   "pt-BR": {
+    "name": "UsageNow: Monitor de uso de IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "id": "88c2dccd-bc82-45be-ac98-c0fec1859f3f"
+   },
+   "fr-FR": {
+    "name": "UsageNow : Suivi d'usage IA",
+    "subtitle": "Limites Claude, Codex, Copilot",
+    "id": "ffdc08d0-46ee-4c5f-8fea-aaa483299af3"
+   },
+   "ca": {
+    "name": "UsageNow: Monitor d'ús d'IA",
+    "subtitle": "Límits Claude, Codex, Copilot",
+    "id": "41d64120-91ff-4073-ae22-5f57ea8a7c45"
+   },
+   "en-GB": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "id": "2bb387b6-006e-4603-a53c-d07ef039177c"
+   },
+   "sv": {
+    "name": "UsageNow: AI-användning",
+    "subtitle": "Claude, Codex, Copilot gränser",
+    "id": "ce4f3c58-6280-4a91-83c8-b395d0689d47"
+   },
+   "en-AU": {
+    "name": "UsageNow: AI Usage Tracker",
+    "subtitle": "Claude, Codex & Copilot Limits",
+    "id": "373c1339-f1a8-44a8-9c91-d5c29f1bf0c8"
+   },
+   "te-IN": {
+    "name": "UsageNow: AI వినియోగ ట్రాకర్",
+    "subtitle": "Claude, Codex, Copilot పరిమితి",
+    "id": "9e2be627-7075-47b5-9295-5031d4b30575"
+   },
+   "ms": {
+    "name": "UsageNow: Penjejak Guna AI",
+    "subtitle": "Had Claude, Codex, Copilot",
+    "id": "1a0ea4a3-8129-4ede-92f7-563fb0581fa6"
+   },
+   "pa-IN": {
+    "name": "UsageNow: AI ਵਰਤੋਂ ਟ੍ਰੈਕਰ",
+    "subtitle": "Claude, Codex, Copilot ਸੀਮਾ",
+    "id": "3a9892ed-7ffd-4ec4-b2d1-4c0bd5464938"
+   },
+   "vi": {
+    "name": "UsageNow: Theo dõi dùng AI",
+    "subtitle": "Hạn mức Claude, Codex, Copilot",
+    "id": "c76cde8b-35c2-41c8-a698-5fbee7fa5e1a"
+   },
+   "gu-IN": {
+    "name": "UsageNow: AI વપરાશ ટ્રેકર",
+    "subtitle": "Claude, Codex, Copilot મર્યાદા",
+    "id": "bb5a62cf-4c14-4cc8-b2a3-217c849df67a"
+   },
+   "ur-PK": {
+    "name": "UsageNow: AI استعمال ٹریکر",
+    "subtitle": "Claude, Codex, Copilot کی حد",
+    "id": "84da6623-d71a-459f-8df5-c65c37724d24"
+   },
+   "ru": {
+    "name": "UsageNow: Лимиты ИИ и расход",
+    "subtitle": "Claude, Codex, Copilot, Gemini",
+    "id": "0d88121c-53fd-4614-a519-dea0337acddf"
+   },
+   "ja": {
+    "name": "UsageNow：AI使用量トラッカー",
+    "subtitle": "Claude・Codex・Copilot・Gemini残量",
+    "id": "2813dede-0c0b-4282-8d11-000a30df92a5"
+   }
+  }
+ }
+}

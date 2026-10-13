@@ -1682,13 +1682,13 @@
     {
      "term": "ai usage tracker",
      "country": "US",
-     "our_rank": null,
-     "results": null,
+     "our_rank": 21,
+     "results": 193,
      "top1": "Limits: AI Usage Tracker",
      "top1_ratings": 39,
      "intent_ok": true,
      "ai_trackers_top10": "10/10",
-     "source": "web-top12"
+     "source": "itunes-search"
     },
     {
      "term": "ai usage",
@@ -2631,13 +2631,13 @@
     {
      "term": "claude 使用量",
      "country": "JP",
-     "our_rank": null,
-     "results": null,
-     "top1": "ネットワーク使用量モニター Network Usage",
-     "top1_ratings": 44,
+     "our_rank": 30,
+     "results": 32,
+     "top1": "ギガ残量 - Data Remaining",
+     "top1_ratings": 11593,
      "intent_ok": false,
-     "ai_trackers_top10": "2/10",
-     "source": "web-top12"
+     "ai_trackers_top10": "4/10",
+     "source": "itunes-search"
     },
     {
      "term": "ai 使用量",
@@ -2914,13 +2914,13 @@
     {
      "term": "claude 사용량",
      "country": "KR",
-     "our_rank": null,
-     "results": null,
-     "top1": "Usage for Claude",
-     "top1_ratings": 1,
+     "our_rank": 12,
+     "results": 18,
+     "top1": "Agent Meter: AI 사용량",
+     "top1_ratings": 0,
      "intent_ok": true,
      "ai_trackers_top10": "9/10",
-     "source": "web-top12"
+     "source": "itunes-search"
     },
     {
      "term": "클로드 사용량",
@@ -3762,12 +3762,12 @@
      "term": "claude 用量",
      "country": "TW",
      "our_rank": 2,
-     "results": null,
+     "results": 16,
      "top1": "Usage for Claude",
      "top1_ratings": 1,
      "intent_ok": true,
      "ai_trackers_top10": "8/10",
-     "source": "web-top12"
+     "source": "itunes-search"
     },
     {
      "term": "claude 額度",

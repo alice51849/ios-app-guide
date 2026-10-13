@@ -1,6 +1,6 @@
 # UsageNow 商店文字：最終版（2026-10-13 驗證後）
 
-這份是分析師建議經過四個角度對抗驗證、修正後的最終版。App Store Connect 和 `_engine/data/claudeusagemini_full.json` 都沒有改動，要由妳自己貼上。每個語系的完整證據都在 [`claudeusagemini.json`](claudeusagemini.json)。
+這份是分析師建議經過四個角度對抗驗證、修正，再由第二個模型（Fable）獨立複核後的最終版（複核內容見文末「第二模型複核（Fable）」）。App Store Connect 和 `_engine/data/claudeusagemini_full.json` 都沒有改動，要由妳自己貼上。每個語系的完整證據都在 [`claudeusagemini.json`](claudeusagemini.json)。
 
 ## 結論
 
@@ -18,10 +18,10 @@
 | 店面 | App Store Connect 語言 | 標題 | 副標 | 關鍵字 |
 |---|---|---|---|---|
 | TW＋HK | 繁體中文（zh-Hant） | `UsageNow for Claude、Codex 用量額度`（30） | `AI 剩餘追蹤、重置倒數提醒・Copilot、Gemini`（29） | `使用量,限額,限制,配額,token,code,監控,小工具,通知,每週,5小時,鎖定畫面,上限,重設,多帳號,統計`（58） |
-| JP | 日本語（ja） | `UsageNow：Claude・Codex対応 使用量と上限`（30） | `AIのリセット時刻を通知・Copilot/Gemini`（27） | `code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,使用率,アラート,クォータ`（67） |
+| JP | 日本語（ja） | `UsageNow：Claude・Codex対応 使用量と上限`（30） | `AIのリセット時刻を通知・Copilot/Gemini`（27） | `code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,利用状況,アラート,クォータ`（68） |
 | US | English (U.S.)（主要語言） | `UsageNow for Claude & Codex`（27） | `AI Usage for Copilot & Gemini`（29） | `tracker,widget,reset,quota,token,code,rate,llm,weekly,session,hour,monitor,limit,alert,daily,gpt`（96） |
 | GB | English (U.K.) | `UsageNow for Claude & Codex`（27） | `AI Usage for Copilot & Gemini`（29） | `premium,requests,model,watch,remaining,allowance,notify,percent`（63） |
-| KR | 한국어（ko） | `UsageNow for Claude·Codex 사용량`（29） | `AI 한도·리셋 시간 알림·Copilot·Gemini`（29） | `클로드,코덱스,코파일럿,제미나이,트래커,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터`（76） |
+| KR | 한국어（ko） | `UsageNow: Claude·Codex 사용량 트래커`（30） | `AI 한도·리셋 시간 알림·Copilot·Gemini`（29） | `클로드,코덱스,코파일럿,제미나이,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터`（72） |
 
 - **HK** 沒有獨立欄位，和 TW 共用「繁體中文」。
 - **en-CA、en-AU 的標題和副標跟 US 相同**，關鍵字見文末表格。
@@ -33,7 +33,7 @@
 - 英文：UsageNow for Claude & Codex
 - 繁中：UsageNow for Claude、Codex 用量額度
 - 日文：UsageNow：Claude・Codex対応 使用量と上限
-- 韓文：UsageNow for Claude·Codex 사용량
+- 韓文：UsageNow: Claude·Codex 사용량 트래커（第二模型複核後改為描述式寫法，保住標題的 트래커；原「UsageNow for Claude·Codex 사용량」）
 
 **為什麼**
 - **排名：** 「Usage for Claude」用同樣的 for 寫法，在 US、TW、JP、KR 的 claude usage／claude 用量 都排第 1。
@@ -41,9 +41,10 @@
 - **指南 5.2.2：** UsageNow 用妳在官方登入頁取得的登入狀態讀取用量。Anthropic 文件寫明第三方不得收集、儲存或中介 Claude.ai 的登入憑證或工作階段。標題放 Claude 會讓審查員要求出示授權、或 Anthropic 提出申訴的機率變高。**送審前先備好 5.2.2 的回覆**，說明登入在各服務自己的官方頁面完成、登入資訊只存在裝置的鑰匙圈（Keychain）、沒有 UsageNow 伺服器（描述裡已經這樣寫）。要知道這是 App 本身的風險，標題只是讓它更容易被注意到。
 - **實際上 Apple 很寬鬆：** 約 65 個 AI 用量 App 裡有 14 個標題放了 Claude 或 Codex。沒有任何一個標題放 ChatGPT，所以 ChatGPT 不放任何欄位。
 
-**備案只剩改名。** 描述裡已經有 50 個語系的「非官方 App、商標屬於各自擁有者」聲明，不必再加。如果收到 2.3.7、5.2.1、5.2.2 退件或權利人申訴：
+**備案只剩改名。** 描述裡已經有 50 個語系的「非官方 App、商標屬於各自擁有者」聲明，不必再加。如果收到 2.3.7、4.1(c)、5.2.1、5.2.2 退件或權利人申訴（4.1(c) 原文：不得未經同意在 App 名稱使用其他開發者的品牌或產品名；由第二模型補上，是最直接適用的條款）：
 - 英文改回「UsageNow: AI Usage Tracker」，繁中改回「UsageNow：AI 用量與額度追蹤」，也就是現在的標題。
 - Claude、Codex 留在副標。
+- 若退件同時點名副標（2.3.7 原文：subtitles should not reference other apps），副標改為不含品牌的版本，例如英文「AI Usage Limits & Reset Alerts」（30），其餘語系同理。
 
 其他語系（德、法、西、葡等）的標題是「Claude/Codex-Nutzung」這種「品牌＋當地用量字」的描述寫法，沒有改成 for。如果英文版被要求改名，這些語系也一起改回現在的標題。
 
@@ -114,7 +115,7 @@ UsagEX 只在 TW、JP 上架，不能當成 US 的先例。
 - **JP：** claude code 制限 #2、claude 使用状況 #5、claude 上限 #9。ai 使用量、claude 使用量 不在前 12 名。
 - **US：** copilot usage #2、claude weekly limit #4、claude usage limit #5。claude usage #19、codex usage #30。
 - **KR：** ai 사용량 트래커 #3、copilot 사용량 #4、claude 제한 #6、claude 사용량 #12。
-  - ai 사용량 트래커 #3 是靠舊標題裡的 트래커。新標題拿掉 트래커 後可能下滑，要追蹤。
+  - ai 사용량 트래커 #3 是靠標題裡的 트래커。第二模型複核後韓文標題保留 트래커（見文末），上線後仍要追蹤。
 - **GB：** 只有 claude weekly limit 進前 12 名（#8）。
 
 **競品與排行榜**
@@ -130,7 +131,7 @@ UsagEX 只在 TW、JP 上架，不能當成 US 的先例。
    - 有出現 UsageNow，代表 CA 會讀 en-CA，en-CA 下次可以改放 en-US 沒有的字。
    - 沒出現，就維持現狀。
 4. **測試片語時不要加 App 名。** 加了「usagenow」有時會跨語系命中，結果不準。
-5. **單複數有沒有合併還沒驗證：** es-ES、es-MX 的 límite 和副標的 Límites，ru 的 лимит 和 лимиты。如果搜得到，下次可以把這兩個字的位置讓給別的字。
+5. **單複數合併（第二模型已實測）：** ru「claude лимит」UsageNow #5、nl「claude limieten」#4，而現行只有 лимиты／limiet，代表俄文、荷文會折疊，所以 ru 的 лимит、nl 的 limieten 已換成別的字。es「límite claude」搜不到 UsageNow（現行副標有 Límites），es-ES、es-MX 的 límite 保留。
 
 ## 其他語系
 
@@ -148,8 +149,8 @@ UsagEX 只在 TW、JP 上架，不能當成 US 的先例。
 | de-DE | `UsageNow: Claude/Codex-Nutzung` | `KI-Kontingent: Copilot, Gemini` | `verbrauch,ai,token,code,zähler,stunden,sitzung,warnung,auslastung,übrig,woche`（77） |
 | fr-FR | `UsageNow : usage Claude, Codex` | `Quota IA : Copilot et Gemini` | `utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,plafond`（81） |
 | fr-CA | `UsageNow : usage Claude, Codex` | `Quota IA : Copilot et Gemini` | `utilisation,conso,consommation,jeton,compteur,restant,hebdo,heures,alerte,plafond`（81） |
-| it | `UsageNow: Uso Claude e Codex` | `Utilizzo IA: Copilot e Gemini` | `consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto`（78） |
-| nl-NL | `UsageNow: Claude/Codex-gebruik` | `AI-limiet: Copilot en Gemini` | `verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie`（78） |
+| it | `UsageNow: Uso Claude e Codex` | `Utilizzo IA: Copilot e Gemini` | `consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto,limiti`（85） |
+| nl-NL | `UsageNow: Claude/Codex-gebruik` | `AI-limiet: Copilot en Gemini` | `verbruik,dagelijks,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie`（79） |
 
 </details>
 
@@ -160,15 +161,15 @@ UsagEX 只在 TW、JP 上架，不能當成 US 的先例。
 |---|---|---|---|
 | ar-SA | `UsageNow: استخدام Claude/Codex` | `حدود AI: Copilot، Gemini` | `كلود,متتبع,توكن,حصة,عداد,ويدجت,تصفير,متبقي,أسبوعي,ساعات,تنبيه,استهلاك,ذكاء,اصطناعي,code`（87） |
 | bn-BD | `UsageNow: Claude/Codex ব্যবহার` | `AI সীমা: Copilot, Gemini` | `টোকেন,কোটা,উইজেট,রিসেট,সাপ্তাহিক,বাকি,ট্র্যাকার,code,left,gauge`（63） |
-| ca | `UsageNow: Ús de Claude i Codex` | `Límits IA: Copilot i Gemini` | `consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control`（88） |
-| cs | `UsageNow: Claude/Codex využití` | `Limity AI: Copilot a Gemini` | `spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,code`（71） |
+| ca | `UsageNow: Ús de Claude i Codex` | `Límits IA: Copilot i Gemini` | `consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,límit,control`（88） |
+| cs | `UsageNow: Využití Claude/Codex` | `Limity AI: Copilot a Gemini` | `spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,code`（71） |
 | da | `UsageNow: Claude/Codex-forbrug` | `AI-grænser: Copilot og Gemini` | `kvote,tæller,tilbage,ugentlig,timer,advarsel,nulstil,sporing,code`（65） |
 | el | `UsageNow: Χρήση Claude/Codex` | `Όρια AI: Copilot και Gemini` | `κατανάλωση,ποσόστωση,μετρητής,επαναφορά,υπόλοιπο,εβδομάδα,ώρες,ειδοποίηση,όριο,code`（83） |
 | fi | `UsageNow: Claude/Codex-käyttö` | `AI-rajat: Copilot ja Gemini` | `tekoäly,kulutus,kiintiö,laskuri,jäljellä,viikko,tunnit,ilmoitus,nollaus,seuranta,code`（85） |
 | gu-IN | `UsageNow: Claude/Codex વપરાશ` | `AI મર્યાદા: Copilot, Gemini` | `ટોકન,ક્વોટા,વિજેટ,રીસેટ,સાપ્તાહિક,બાકી,ટ્રેકર`（45） |
 | he | `UsageNow: שימוש Claude/Codex` | `מגבלות AI: Copilot, Gemini` | `קלוד,מעקב,טוקן,מכסה,מונה,איפוס,נותר,שבועי,שעות,התראה,וידג׳ט,code,left`（69） |
 | hi | `UsageNow: Claude, Codex उपयोग` | `AI लिमिट: Copilot, Gemini` | `टोकन,कोटा,काउंटर,विजेट,रीसेट,बाकी,साप्ताहिक,ट्रैकर,सीमा,अलर्ट,code`（66） |
-| hr | `UsageNow: Claude/Codex limiti` | `AI potrošnja: Copilot, Gemini` | `kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,left`（71） |
+| hr | `UsageNow: Limiti Claude/Codex` | `AI potrošnja: Copilot, Gemini` | `kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,left`（71） |
 | hu | `UsageNow: Claude/Codex limitek` | `MI-használat: Copilot, Gemini` | `fogyasztás,kvóta,számláló,maradék,heti,órák,értesítés,követés,ai,code`（69） |
 | id | `UsageNow: Batas Claude & Codex` | `Pemakaian AI: Copilot, Gemini` | `penggunaan,kuota,penghitung,sisa,mingguan,jam,notifikasi,pelacak,pantau,code`（76） |
 | kn-IN | `UsageNow: Claude/Codex ಬಳಕೆ` | `AI ಮಿತಿ: Copilot, Gemini` | `ಟೋಕನ್,ಕೋಟಾ,ವಿಜೆಟ್,ರೀಸೆಟ್,ವಾರದ,ಬಾಕಿ,ಟ್ರ್ಯಾಕರ್,left`（49） |
@@ -178,19 +179,47 @@ UsagEX 只在 TW、JP 上架，不能當成 US 的先例。
 | no | `UsageNow: Claude/Codex-forbruk` | `AI-grenser: Copilot og Gemini` | `kvote,teller,gjenstår,ukentlig,timer,varsel,nullstill,sporing,økt,code`（70） |
 | or-IN | `UsageNow: Claude/Codex ବ୍ୟବହାର` | `AI ସୀମା: Copilot, Gemini` | `ଟୋକେନ,କୋଟା,ୱିଜେଟ,ରିସେଟ,ସାପ୍ତାହିକ,ବାକି,ଟ୍ରାକର`（44） |
 | pa-IN | `UsageNow: Claude/Codex ਵਰਤੋਂ` | `AI ਸੀਮਾ: Copilot, Gemini` | `ਟੋਕਨ,ਕੋਟਾ,ਵਿਜੇਟ,ਰੀਸੈੱਟ,ਹਫ਼ਤਾਵਾਰੀ,ਬਾਕੀ,ਟ੍ਰੈਕਰ`（44） |
-| pl | `UsageNow: Zużycie Claude/Codex` | `Limity AI: Copilot i Gemini` | `licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code`（69） |
+| pl | `UsageNow: Zużycie Claude/Codex` | `Limity AI: Copilot i Gemini` | `licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,token,code`（69） |
 | pt-PT | `UsageNow: Uso Claude e Codex` | `Limites IA: Copilot e Gemini` | `consumo,contador,restante,semanal,horas,alerta,sessão,monitorizar,rastreador,code`（81） |
 | ro | `UsageNow: Consum Claude/Codex` | `Limite AI: Copilot și Gemini` | `cotă,contor,rămas,săptămânal,ore,alertă,resetare,urmărire,sesiune,code`（70） |
-| ru | `UsageNow: Claude/Codex лимиты` | `Расход ИИ: Copilot и Gemini` | `клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,лимит,code`（98） |
-| sk | `UsageNow: Claude/Codex limity` | `Spotreba AI: Copilot a Gemini` | `využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code`（77） |
-| sl-SI | `UsageNow: Claude/Codex limiti` | `Poraba UI: Copilot in Gemini` | `kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,left`（79） |
+| ru | `UsageNow: Лимиты Claude/Codex` | `Расход ИИ: Copilot и Gemini` | `клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,сессия,code`（99） |
+| sk | `UsageNow: Limity Claude/Codex` | `Spotreba AI: Copilot a Gemini` | `využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code`（77） |
+| sl-SI | `UsageNow: Limiti Claude/Codex` | `Poraba UI: Copilot in Gemini` | `kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,left`（79） |
 | sv | `UsageNow: Claude/Codex-gränser` | `AI-användning: Copilot, Gemini` | `förbrukning,kvot,mätare,kvar,vecka,timmar,avisering,nollställ,spårning,code`（75） |
 | ta-IN | `UsageNow: Claude/Codex வரம்பு` | `AI பயன்பாடு: Copilot, Gemini` | `டோக்கன்,ஒதுக்கீடு,விட்ஜெட்,ரீசெட்,வாராந்திர,மீதம்,டிராக்கர்`（59） |
 | te-IN | `UsageNow: Claude/Codex పరిమితి` | `AI వినియోగం: Copilot, Gemini` | `టోకెన్,కోటా,విడ్జెట్,రీసెట్,వారపు,మిగిలిన,ట్రాకర్`（49） |
 | th | `UsageNow: ใช้งาน Claude/Codex` | `ลิมิต AI: Copilot, Gemini` | `โควตา,โทเคน,วิดเจ็ต,รีเซ็ต,คงเหลือ,รายสัปดาห์,ชั่วโมง,แจ้งเตือน,ติดตาม,จำกัด,code`（81） |
 | tr | `UsageNow: Claude/Codex limiti` | `AI kullanımı: Copilot, Gemini` | `yapay,zeka,kota,sayaç,kalan,haftalık,saat,bildirim,sıfırlama,takip,code`（71） |
-| uk | `UsageNow: Claude/Codex ліміти` | `Витрата ШІ: Copilot і Gemini` | `клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code`（94） |
+| uk | `UsageNow: Ліміти Claude/Codex` | `Витрата ШІ: Copilot і Gemini` | `клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code`（94） |
 | ur-PK | `UsageNow: Claude/Codex استعمال` | `AI کی حد: Copilot, Gemini` | `ٹوکن,کوٹہ,ویجیٹ,باقی,ٹریکر,نگرانی,code,left`（43） |
 | vi | `UsageNow: Hạn mức Claude/Codex` | `Theo dõi AI: Copilot, Gemini` | `giới,dùng,sử,dụng,lượng,còn,lại,đặt,tuần,giờ,thông,báo,tiện,ích,đếm,phiên,code,left`（83） |
 
 </details>
+
+## 第二模型複核（Fable）
+
+2026-10-13 由第二個模型（claude-fable-5-1）獨立複核第一模型（claude-opus-5-5）的 50 語系付載。方法：先讀兩份獨立審查（各自以 46 次、14 次網頁搜尋複驗過付載），再自己用 11 次 apps.apple.com 網頁搜尋（KR、JP、IT、RU、NL、PL、ES，桌面瀏覽器識別、每次間隔 2.5 秒，全部 HTTP 200）與 developer.apple.com 指南原文逐項重測，只採納有實測或零風險的項目。結論：**approve_with_fixes，採納 15 項、駁回 0 項，無阻擋項，可套用。** 核心量測複驗一致：不同語系的字不會組成同一個搜尋詞；優先店面 zh-Hant、en-US、en-GB 的值原樣通過。
+
+**改了什麼、為什麼**
+
+| 語系 | 欄位 | 改動 | 證據 |
+|---|---|---|---|
+| ko | 標題 | `UsageNow for Claude·Codex 사용량` → `UsageNow: Claude·Codex 사용량 트래커`（30） | KR 唯一的前 5 名「ai 사용량 트래커」#3 靠標題的 트래커；實測 #1 是同名 App「AI 사용량 트래커」，單搜「사용량 트래커」UsageNow 反而不在前 12，所以要保的是整個片語。描述式寫法與 de／fr／es 等 40 個語系相同，審查風險類別不變。 |
+| ko | 關鍵字 | 刪 트래커（76 → 72） | 已進標題，重複是浪費。 |
+| ja | 關鍵字 | 使用率 → 利用状況（67 → 68） | 「claude 使用率」前 12 名 0 個 AI 追蹤器（Device Kit、CPU-x、端末メーター、麻雀）；「claude 利用状況」4/4 都是 AI 追蹤器，UsageNow 今天靠現行關鍵字的 利用状況 排 #4。 |
+| it | 關鍵字 | 補 limiti（78 → 85） | 新版義文三欄沒有任何「上限」字（現行副標 Limiti… 被換掉）；「claude limiti」UsageNow #10、約 6/12 是 AI 追蹤器。 |
+| pl | 關鍵字 | kwota → token（69） | 波蘭文 kwota 是「金額」；PL 搜 kwota 前 11 名是報價、VAT、信用卡、ROI 計算器。 |
+| ca | 關鍵字 | gasto → límit（88） | gasto 是西班牙文「支出」（加泰隆尼亞文是 despesa）；ES 搜 gasto 12/12 是記帳 App。 |
+| ru | 關鍵字 | лимит → сессия（98 → 99） | 「claude лимит」UsageNow #5，而現行只有 Лимиты → 俄文單複數會折疊，лимит 與新標題重複。 |
+| nl-NL | 關鍵字 | limieten → dagelijks（78 → 79） | 「claude limieten」UsageNow #4，而現行只有單數 limiet → 荷文會折疊，limieten 與新副標 AI-limiet 重複；dagelijks 對應 Gemini 每日配額。 |
+| cs、sk、hr、sl-SI、ru、uk | 標題 | 改自然語序，例如 `Claude/Codex лимиты` → `Лимиты Claude/Codex` | 同樣的字，排名以字為單位不受影響；原寫法是英文語序，與這些語系現行副標「Limity Claude, Codex, Copilot」的語序不一致。 |
+| （付載） | 備案規則 | 補 4.1(c) 與不含品牌的副標備案 | developer.apple.com 原文：4.1(c)「不得未經開發者同意在 App 名稱使用其他開發者的品牌或產品名」是最直接適用的條款；2.3.7 寫明副標不應 reference other apps，所以備案不能只改標題。 |
+
+**沒有改的**
+- zh-Hant、en-US、en-GB、es-MX、en-CA、en-AU、zh-Hans、de、fr、pt 照付載原樣。zh-Hant 關鍵字留白 42 字是刻意保守（測過的候選「時間」錯意圖）。
+- ko 的 사용률、en-US 的 gpt 兩位審查都認為可接受，未動。
+
+**套用前與上線後**
+- ko：線上韓文關鍵字可能和檔案 `ko.expected_current` 不一致（「usagenow 생성형」1 筆命中、「usagenow 잔여」0 筆，兩個字都在檔案的現行關鍵字裡）。套用腳本比對現值時以 App Store Connect 線上實值為準；不一致就只套 ko 以外的語系，ko 人工確認後再套。
+- 上線 72 小時後盯：TW 額度追蹤、ai 額度、ai 用量追蹤（AI、追蹤 離開標題）；KR ai 사용량 트래커（目標維持 #3 以上）；IT claude limiti；JP claude 利用状況。
+- 未驗證：en-CA 是否在 CA 被索引（照原計畫上線後搜「usagenow requests」）；標題改動的實際名次效果。

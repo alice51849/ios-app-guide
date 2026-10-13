@@ -1126,7 +1126,7 @@
    "recommended": {
     "name": "UsageNow: Ús de Claude i Codex",
     "subtitle": "Límits IA: Copilot i Gemini",
-    "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,gasto,control"
+    "keywords": "consum,comptador,reinici,restant,setmanal,hores,avís,giny,seguiment,sessió,límit,control"
    },
    "lengths": {
     "name": 30,
@@ -1136,7 +1136,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。ca 在 ES 與 es-ES 一起被索引，尾端放兩個 es-ES 沒有的西文字。",
    "depth": "light",
-   "verification": "驗證後：刪 gpt、opus（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 gpt、opus（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：gasto→límit。gasto 是西班牙文「支出」（加泰隆尼亞文為 despesa），實測 ES 搜 gasto 前 12 名 12/12 為記帳 App，錯意圖；改放加泰隆尼亞文單數 límit（副標只有複數 Límits，西文未觀察到單複數折疊）（88）。"
   },
   "cs": {
    "current": {
@@ -1145,7 +1145,7 @@
     "keywords": "code,dev,vývojář,usage,tracker,spotřeba,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm"
    },
    "recommended": {
-    "name": "UsageNow: Claude/Codex využití",
+    "name": "UsageNow: Využití Claude/Codex",
     "subtitle": "Limity AI: Copilot a Gemini",
     "keywords": "spotřeba,kvóta,počítadlo,zbývá,týdenní,hodiny,upozornění,sledování,code"
    },
@@ -1157,7 +1157,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
    "depth": "light",
-   "verification": "驗證後：刪 předplatné、gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 předplatné、gpt、opus、sonnet（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：標題改自然語序「Využití Claude/Codex」（30），同樣的字；原「Claude/Codex využití」是英文語序。"
   },
   "da": {
    "current": {
@@ -2667,7 +2667,7 @@
     "keywords": "code,dev,programer,usage,tracker,kvota,brojač,token,widget,reset,quota,meter,monitor,llm,sesija,api"
    },
    "recommended": {
-    "name": "UsageNow: Claude/Codex limiti",
+    "name": "UsageNow: Limiti Claude/Codex",
     "subtitle": "AI potrošnja: Copilot, Gemini",
     "keywords": "kvota,brojač,preostalo,tjedno,sati,upozorenje,sesija,praćenje,code,left"
    },
@@ -2679,7 +2679,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
    "depth": "light",
-   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：標題改自然語序「Limiti Claude/Codex」（29），與現行副標一致。"
   },
   "hu": {
    "current": {
@@ -2732,12 +2732,12 @@
    "recommended": {
     "name": "UsageNow: Uso Claude e Codex",
     "subtitle": "Utilizzo IA: Copilot e Gemini",
-    "keywords": "consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto"
+    "keywords": "consumo,contatore,rimanente,settimanale,ore,avviso,monitoraggio,sessione,tetto,limiti"
    },
    "lengths": {
     "name": 28,
     "subtitle": 29,
-    "keywords": 78
+    "keywords": 85
    },
    "evidence": [
     {
@@ -2831,7 +2831,7 @@
    ],
    "changes": "IT utilizzo claude #2、utilizzo ia #3，uso claude／claude usage 不在前 12；標題改 Uso＋Claude、Codex，副標改 Utilizzo IA: Copilot e Gemini（原本是唯一缺 Gemini 的副標；limite claude／ia 0–1/10 不放）；刪英文重複字、gemini（進副標）、abbonamento。",
    "depth": "deep",
-   "verification": "驗證後：副標改 Utilizzo IA: Copilot e Gemini；刪 gemini、abbonamento。"
+   "verification": "驗證後：副標改 Utilizzo IA: Copilot e Gemini；刪 gemini、abbonamento。 Fable 複核：補 limiti。新版義文三欄沒有任何「上限」字（現行副標 Limiti… 被換掉），實測「claude limiti」UsageNow #10、約 6/12 為 AI 追蹤器；不補就會失去這個詞（85/100）。"
   },
   "ja": {
    "current": {
@@ -2842,12 +2842,12 @@
    "recommended": {
     "name": "UsageNow：Claude・Codex対応 使用量と上限",
     "subtitle": "AIのリセット時刻を通知・Copilot/Gemini",
-    "keywords": "code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,使用率,アラート,クォータ"
+    "keywords": "code,token,制限,週間,5時間,レートリミット,リミット,トークン,ウィジェット,残り,使用状況,利用状況,アラート,クォータ"
    },
    "lengths": {
     "name": 30,
     "subtitle": 27,
-    "keywords": 67
+    "keywords": 68
    },
    "evidence": [
     {
@@ -3117,7 +3117,7 @@
    ],
    "changes": "標題改「UsageNow：Claude・Codex対応 使用量と上限」（対応＝相容標記；上限 claude／ai／codex 上限 9–10/10 為 AI 追蹤器）；實測連寫的 AI使用量 不影響斷詞，原本「空白隔開」的理由不成立。AI、リセット時刻、通知放副標。刪 usage／tracker／quota／dev（JP 索引 en-US）、meter（en-US 也已刪除，且 JP 不索引 en-GB，JP 從此不再有 meter）、開発者／エンジニア／管理／生成ai／カウントダウン／利用状況、残量（0/10）、max／opus／sonnet／プラン／監視／セッション（錯意圖）；保留 token、トークン、制限（claude code 制限 #2、codex 制限 8/10），補 レートリミット（claude レートリミット 8/10）。",
    "depth": "deep",
-   "verification": "驗證後：標題改 Claude・Codex対応＋使用量と上限；刪 残量、max、opus、sonnet、プラン、監視、セッション、通知（進副標），補回 token。"
+   "verification": "驗證後：標題改 Claude・Codex対応＋使用量と上限；刪 残量、max、opus、sonnet、プラン、監視、セッション、通知（進副標），補回 token。 Fable 複核：關鍵字 使用率→利用状況。實測「claude 使用率」前 12 名 0 個 AI 追蹤器（裝置監控、麻雀），「claude 利用状況」4/4 皆 AI 追蹤器且 UsageNow 今天靠現行關鍵字的 利用状況 排 #4。"
   },
   "kn-IN": {
    "current": {
@@ -3147,14 +3147,14 @@
     "keywords": "code,dev,개발자,usage,tracker,meter,quota,token,토큰,할당량,리셋,초기화,남은양,잔여,위젯,카운트다운,생성형,주간,세션,코딩,에이전트,llm,모니터"
    },
    "recommended": {
-    "name": "UsageNow for Claude·Codex 사용량",
+    "name": "UsageNow: Claude·Codex 사용량 트래커",
     "subtitle": "AI 한도·리셋 시간 알림·Copilot·Gemini",
-    "keywords": "클로드,코덱스,코파일럿,제미나이,트래커,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터"
+    "keywords": "클로드,코덱스,코파일럿,제미나이,code,코드,토큰,token,위젯,잔여,남은,할당량,사용률,주간,5시간,세션,초기화,제한,모니터"
    },
    "lengths": {
-    "name": 29,
+    "name": 30,
     "subtitle": 29,
-    "keywords": 76
+    "keywords": 72
    },
    "evidence": [
     {
@@ -3347,7 +3347,7 @@
    ],
    "changes": "標題改「UsageNow for Claude·Codex 사용량」，AI、한도、리셋 시간 알림、Copilot、Gemini 放副標；補 클로드、코덱스、코파일럿、제미나이 音譯；保留 token、토큰、코드；刪 usage／tracker／meter／quota／llm／dev、카운트다운／생성형／코딩／에이전트／개발자、클로드코드（Anthropic 品牌規範不允許）、max／opus／소진／요금제／실시간（錯意圖）。注意：잔여、할당량、초기화 目前在 KR 連加品牌都搜不到，上線前請先比對 ASC 現行 ko 欄位。現有 ai 사용량 트래커 #3 靠標題的 트래커，移到關鍵字後可能下滑，需追蹤。",
    "depth": "deep",
-   "verification": "驗證後：標題改 for 相容寫法；刪 클로드코드、max、opus、소진、요금제、실시간，補回 token；上線前比對 ASC 現行 ko 欄位。"
+   "verification": "驗證後：標題改 for 相容寫法；刪 클로드코드、max、opus、소진、요금제、실시간，補回 token；上線前比對 ASC 現行 ko 欄位。 Fable 複核：標題改描述式「UsageNow: Claude·Codex 사용량 트래커」（30），保住 KR 唯一前 5 名「ai 사용량 트래커」#3 所依賴的標題字 트래커（實測 #1 為同名 App「AI 사용량 트래커」）；關鍵字刪掉重複的 트래커（72）。"
   },
   "ml-IN": {
    "current": {
@@ -3421,12 +3421,12 @@
    "recommended": {
     "name": "UsageNow: Claude/Codex-gebruik",
     "subtitle": "AI-limiet: Copilot en Gemini",
-    "keywords": "verbruik,limieten,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie"
+    "keywords": "verbruik,dagelijks,teller,tegoed,resterend,wekelijks,uren,melding,quotum,sessie"
    },
    "lengths": {
     "name": 30,
     "subtitle": 28,
-    "keywords": 78
+    "keywords": 79
    },
    "evidence": [
     {
@@ -3509,7 +3509,7 @@
    ],
    "changes": "NL ai gebruik #3、claude limiet #4（6/6 是 AI 追蹤器）；標題直接放 Claude、Codex＋gebruik；verbruik 單獨搜是能源 App，只留作組合字；刪英文重複字。",
    "depth": "deep",
-   "verification": "驗證後：刪 abonnement（與「沒有訂閱」衝突、無證據）。"
+   "verification": "驗證後：刪 abonnement（與「沒有訂閱」衝突、無證據）。 Fable 複核：實測 NL「claude limieten」UsageNow #4，而現行只有單數 limiet（副標）→ 荷文單複數會折疊，關鍵字 limieten 與新副標 AI-limiet 重複，改成 dagelijks（Gemini 每日配額，誠實且 nl 其他欄位沒有）（79）。"
   },
   "no": {
    "current": {
@@ -3583,7 +3583,7 @@
    "recommended": {
     "name": "UsageNow: Zużycie Claude/Codex",
     "subtitle": "Limity AI: Copilot i Gemini",
-    "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,kwota,code"
+    "keywords": "licznik,pozostało,tygodniowy,godziny,alert,sesja,śledzenie,token,code"
    },
    "lengths": {
     "name": 30,
@@ -3593,7 +3593,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
    "depth": "light",
-   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe、credits（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：kwota→token。波蘭文 kwota 是「金額」，實測 PL 搜 kwota 前 11 名是報價／VAT／信用卡／ROI 計算器，錯意圖；token 讓「zużycie token」類片語在同語系成立（69）。"
   },
   "pt-BR": {
    "current": {
@@ -3754,18 +3754,19 @@
     "keywords": "ai,code,dev,разработчик,usage,tracker,нейросеть,токены,квота,счетчик,token,виджет,quota,meter,llm"
    },
    "recommended": {
-    "name": "UsageNow: Claude/Codex лимиты",
+    "name": "UsageNow: Лимиты Claude/Codex",
     "subtitle": "Расход ИИ: Copilot и Gemini",
-    "keywords": "клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,лимит,code"
+    "keywords": "клод,нейросеть,токены,квота,счетчик,виджет,сброс,остаток,неделя,часы,уведомления,трекер,сессия,code"
    },
    "lengths": {
     "name": 29,
     "subtitle": 27,
-    "keywords": 98
+    "keywords": 99
    },
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
-   "depth": "light"
+   "depth": "light",
+   "verification": "Fable 複核：實測 RU「claude лимит」UsageNow #5，而現行只有 Лимиты（標題）→ 俄文單複數會折疊，關鍵字 лимит 與新標題重複，改成 сессия（5 小時工作階段）（99）；標題改自然語序「Лимиты Claude/Codex」（29），同樣的字、名次不受影響。"
   },
   "sk": {
    "current": {
@@ -3774,7 +3775,7 @@
     "keywords": "code,dev,vývojár,usage,tracker,využitie,kvóta,počítadlo,token,widget,reset,quota,meter,monitor,llm"
    },
    "recommended": {
-    "name": "UsageNow: Claude/Codex limity",
+    "name": "UsageNow: Limity Claude/Codex",
     "subtitle": "Spotreba AI: Copilot a Gemini",
     "keywords": "využitie,kvóta,počítadlo,zostatok,týždenný,hodiny,upozornenie,sledovanie,code"
    },
@@ -3786,7 +3787,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
    "depth": "light",
-   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：標題改自然語序「Limity Claude/Codex」（29），與現行副標「Limity Claude, Codex, Copilot」一致。"
   },
   "sl-SI": {
    "current": {
@@ -3795,7 +3796,7 @@
     "keywords": "ai,code,dev,razvijalec,usage,tracker,kvota,števec,token,pripomoček,widget,reset,quota,meter,monitor"
    },
    "recommended": {
-    "name": "UsageNow: Claude/Codex limiti",
+    "name": "UsageNow: Limiti Claude/Codex",
     "subtitle": "Poraba UI: Copilot in Gemini",
     "keywords": "kvota,števec,preostanek,tedenski,ure,opozorilo,pripomoček,sledenje,ai,code,left"
    },
@@ -3807,7 +3808,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
    "depth": "light",
-   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 gpt、opus、sonnet、vibe（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：標題改自然語序「Limiti Claude/Codex」（29），同樣的字。"
   },
   "sv": {
    "current": {
@@ -3921,7 +3922,7 @@
     "keywords": "ai,code,dev,розробник,usage,tracker,нейромережа,токени,квота,лічильник,token,віджет,quota,meter,llm"
    },
    "recommended": {
-    "name": "UsageNow: Claude/Codex ліміти",
+    "name": "UsageNow: Ліміти Claude/Codex",
     "subtitle": "Витрата ШІ: Copilot і Gemini",
     "keywords": "клод,нейромережа,токени,квота,лічильник,віджет,скидання,залишок,тиждень,години,сповіщення,code"
    },
@@ -3933,7 +3934,7 @@
    "evidence": [],
    "changes": "（較輕量）標題比照主力語系放 Claude、Codex＋當地「用量」字，副標放 AI 上限＋Copilot、Gemini；刪除 en-US／en-GB 已索引的英文字（usage、tracker、meter、quota、token、widget、reset、llm、dev 等），換成當地語言字。",
    "depth": "light",
-   "verification": "驗證後：刪 gpt（錯意圖、訂閱類或 App 沒有的功能），其餘不變。"
+   "verification": "驗證後：刪 gpt（錯意圖、訂閱類或 App 沒有的功能），其餘不變。 Fable 複核：標題改自然語序「Ліміти Claude/Codex」（29），與現行標題「Ліміти ШІ та витрата」語序一致。"
   },
   "ur-PK": {
    "current": {
@@ -4406,6 +4407,28 @@
   ],
   "accepted": 48,
   "rejected": 5,
-  "notes": "結論成立但要修正。採納：英文標題改相容寫法「UsageNow for Claude & Codex」（CJK 用 for／対応，但保住 TW 的 額度、JP 的 上限）；實測不同語系的字不會組成片語，所以 limit、alert、daily、gpt 移進 en-US，es-MX／en-GB 的英文尾字縮減；刪 openai、github、max、pro、訂閱類與 opus／sonnet 等錯意圖字；ja、ko 補回 token；it 副標補 Gemini；de／fr 副標改用有證據的 Kontingent／Quota；en-CA 改放核心字保險；補齊證據列與索引表。駁回 5 項：zh-Hant 加 max/pro/opus（錯意圖、無需求證據）、zh-Hant 加 chatgpt（2.3.7 熱門 App 名、只有 1 筆結果）、de 刪 ai、hu／sl-SI 刪 ai（不同語系不會組片語，ai nutzung 等需同語系）、nl 補 abonnement/opus/gpt（錯意圖）。未驗證：Spanish／俄文單複數是否折疊（límite／лимит）、en-CA 是否在 CA 被索引、KR 잔여／할당량／초기화 為何搜不到、標題改動的實際排名效果。"
+  "notes": "結論成立但要修正。採納：英文標題改相容寫法「UsageNow for Claude & Codex」（CJK 用 for／対応，但保住 TW 的 額度、JP 的 上限）；實測不同語系的字不會組成片語，所以 limit、alert、daily、gpt 移進 en-US，es-MX／en-GB 的英文尾字縮減；刪 openai、github、max、pro、訂閱類與 opus／sonnet 等錯意圖字；ja、ko 補回 token；it 副標補 Gemini；de／fr 副標改用有證據的 Kontingent／Quota；en-CA 改放核心字保險；補齊證據列與索引表。駁回 5 項：zh-Hant 加 max/pro/opus（錯意圖、無需求證據）、zh-Hant 加 chatgpt（2.3.7 熱門 App 名、只有 1 筆結果）、de 刪 ai、hu／sl-SI 刪 ai（不同語系不會組片語，ai nutzung 等需同語系）、nl 補 abonnement/opus/gpt（錯意圖）。未驗證：Spanish／俄文單複數是否折疊（límite／лимит）、en-CA 是否在 CA 被索引、KR 잔여／할당량／초기화 為何搜不到、標題改動的實際排名效果。",
+  "second_model": {
+   "model": "claude-fable-5-1",
+   "date": "2026-10-13",
+   "verdict": "approve_with_fixes",
+   "accepted": 15,
+   "rejected": 0,
+   "changed_locales": [
+    "ca",
+    "cs",
+    "hr",
+    "it",
+    "ja",
+    "ko",
+    "nl-NL",
+    "pl",
+    "ru",
+    "sk",
+    "sl-SI",
+    "uk"
+   ],
+   "notes": "Fable 以 11 次 apps.apple.com 網頁搜尋（KR／JP／IT／RU／NL／PL／ES，全部 HTTP 200）加 developer.apple.com 指南原文複驗，兩份獨立審查的主張全部成立，採納 15 項：ko 標題改「UsageNow: Claude·Codex 사용량 트래커」保住 트래커、ja 使用率→利用状況、it 補 limiti、pl kwota→token、ca gasto→límit、ru／nl 刪已折疊的複數字改放 сессия／dagelijks、cs／sk／hr／sl-SI／ru／uk 標題改自然語序、備案補 4.1(c) 與不含品牌的副標備案；優先店面 zh-Hant／en-US／en-GB 原樣通過。無阻擋項；唯 ko 線上關鍵字可能與 expected_current 不一致（usagenow 생성형 1 筆、usagenow 잔여 0 筆），套用腳本比對現值時以 ASC 線上為準。"
+  }
  }
 }

@@ -1,0 +1,2383 @@
+{
+  "generated": "2026-10-14",
+  "note": "Research done with 30 WebSearch calls in standard mode and no page fetching, so most rule pages were NOT read directly; \"search-confirmed\" means a search result/snippet supported the claim, \"partial\" means only some aspects or only third-party sources, \"unverified\" means background knowledge only (could not be verified). Re-read each site's rules before the first post. Priority A = high reach + allowed + fits. Nothing here needs fake accounts, vote rings, paid reviews or bypassing verification. Pace: max 1-3 posts per account per day, unique text per post, disclose that you are the developer, put links in replies/bios (repo README: an earlier Threads account was suspended at 30-48 link posts/day). The 53 apps are small utility/productivity/kids/education/travel/dev-tool apps; fits[] uses those six labels.",
+  "verification_levels": {
+    "search-confirmed": "A search result or snippet directly supported the claim",
+    "partial": "Only part of the claim, or only third-party sources, were found",
+    "unverified": "Background knowledge only; could not verify"
+  },
+  "automation_values": {
+    "full-api": "Official API/mechanism + one-time user-provided token or GitHub auth; no human needed per post",
+    "paid-api": "Official API exists but costs money per post",
+    "human": "Needs a human to post (form, web UI or gated API)"
+  },
+  "automation_summary": {
+    "full_api_after_one_time_token": [
+      {
+        "channel": "Threads",
+        "api": "Threads API",
+        "verification": "partial"
+      },
+      {
+        "channel": "Bluesky",
+        "api": "AT Protocol createRecord (app password)",
+        "verification": "partial"
+      },
+      {
+        "channel": "Mastodon",
+        "api": "POST /api/v1/statuses (write:statuses)",
+        "verification": "partial"
+      },
+      {
+        "channel": "DEV Community",
+        "api": "Forem API v1 (api-key)",
+        "verification": "partial"
+      },
+      {
+        "channel": "Hashnode",
+        "api": "Public GraphQL API (PAT)",
+        "verification": "partial"
+      },
+      {
+        "channel": "Qiita",
+        "api": "API v2 (write_qiita token)",
+        "verification": "partial"
+      },
+      {
+        "channel": "Zenn",
+        "api": "GitHub repo integration (push to publish)",
+        "verification": "partial"
+      },
+      {
+        "channel": "Telegram channel",
+        "api": "Bot API (already running)",
+        "verification": "partial"
+      },
+      {
+        "channel": "Facebook Page (own)",
+        "api": "Graph API Pages publish",
+        "verification": "unverified"
+      },
+      {
+        "channel": "Hatena Blog",
+        "api": "AtomPub API",
+        "verification": "unverified"
+      }
+    ],
+    "paid_api_not_zero_budget": [
+      "X (Twitter) - pay-per-use credits; post manually instead"
+    ],
+    "human_post_required": "Product Hunt, Show HN, Reddit (API gated since Nov 2025), Indie Hackers, AlternativeTo, BetaList, Apple featuring nomination, note, PTT, Dcard, Mobile01, LIHKG, HKEPC, Clien, Disquiet, Naver Blog/Cafe, GeekNews, Velog, TabNews (no confirmed official automation), all review-site/media pitches, all Facebook groups, Kaskus, Viblo, Tinhte, Spiderum, Pantip, Blognone, Peerlist, Dicoding, Kompasiana"
+  },
+  "top3_by_market": {
+    "TW": [
+      "Threads",
+      "Facebook groups (local)",
+      "蘋果仁 (applealmond.com)"
+    ],
+    "HK": [
+      "Threads",
+      "Facebook groups (local)",
+      "unwire.hk"
+    ],
+    "JP": [
+      "X (Twitter)",
+      "Zenn",
+      "note"
+    ],
+    "KR": [
+      "Clien (클리앙) - 아이포니언 / 직접홍보",
+      "Naver Blog / Naver Cafe",
+      "Disquiet (디스콰이엇)"
+    ],
+    "US": [
+      "Product Hunt",
+      "Hacker News - Show HN",
+      "Reddit r/SideProject"
+    ],
+    "UK": [
+      "Product Hunt",
+      "Hacker News - Show HN",
+      "Reddit r/iOSProgramming (App Saturday)"
+    ],
+    "DE": [
+      "iphone-ticker.de",
+      "appgefahren.de",
+      "Mastodon (per-instance)"
+    ],
+    "FR": [
+      "Korben.info",
+      "MacG / iGeneration",
+      "iPhoneSoft"
+    ],
+    "ES": [
+      "Applesfera",
+      "Xataka / Genbeta (Webedia)",
+      "DEV Community"
+    ],
+    "BR": [
+      "TabNews",
+      "MacMagazine (Contato)",
+      "DEV Community"
+    ],
+    "MX": [
+      "Threads",
+      "Xataka México",
+      "Facebook groups (local)"
+    ],
+    "ID": [
+      "Facebook groups (local)",
+      "Threads",
+      "Kaskus"
+    ],
+    "VN": [
+      "Facebook groups (local)",
+      "Tinhte.vn",
+      "Viblo"
+    ],
+    "TH": [
+      "Facebook groups (local)",
+      "Threads",
+      "Blognone"
+    ],
+    "IN": [
+      "Product Hunt",
+      "Hashnode",
+      "DEV Community"
+    ]
+  },
+  "market_notes": {
+    "TW": {
+      "en": "Home market; highest priority for honest, local-language storytelling.",
+      "zh": "主場：用繁中講真實故事，優先度最高。"
+    },
+    "HK": {
+      "en": "Small market, similar channels to TW but zh-HK wording; forums are hostile to ads.",
+      "zh": "市場小、管道類似台灣但用香港用語；論壇對廣告敏感。"
+    },
+    "JP": {
+      "en": "Developer blog platforms (Zenn/Qiita) are the only fully automatable local channels; X dominates reach.",
+      "zh": "開發者部落格（Zenn／Qiita）是唯一可全自動的在地管道；觸及主要靠 X。"
+    },
+    "KR": {
+      "en": "No API-automatable local channel; everything is human posting in Korean.",
+      "zh": "沒有可 API 自動的在地管道，全部需人工用韓文發。"
+    },
+    "US": {
+      "en": "Launch platforms matter most; all are human posts.",
+      "zh": "發表平台最重要；全部需人工發。"
+    },
+    "UK": {
+      "en": "No UK-specific app-discovery channel found; reuse US launches.",
+      "zh": "未找到英國專屬 App 探索管道；沿用美國的發表。"
+    },
+    "DE": {
+      "en": "German review blogs: unpaid editorial tips only (iphone-ticker states reviews are not sold).",
+      "zh": "德語評測站：只能無償投稿（iphone-ticker 聲明不販售評測）。"
+    },
+    "FR": {
+      "en": "Most French media routes are unverified; low confidence.",
+      "zh": "法國媒體管道多半未驗證，信心低。"
+    },
+    "ES": {
+      "en": "Spanish media routes mostly unverified; Spanish-language content also serves MX/LatAm.",
+      "zh": "西語媒體管道多半未驗證；西語內容可同時服務墨西哥／拉美。"
+    },
+    "BR": {
+      "en": "Best-verified European/LatAm market: TabNews rules and MacMagazine intake were both confirmed.",
+      "zh": "驗證最完整的市場之一：TabNews 規則與 MacMagazine 受理皆已確認。"
+    },
+    "MX": {
+      "en": "Few verified local channels; lean on Threads/Facebook groups in Spanish.",
+      "zh": "已驗證的在地管道少；以西語 Threads／Facebook 社團為主。"
+    },
+    "ID": {
+      "en": "Facebook-centric; the migrant-worker angle in Taiwan links to the TW campaign. Local forum rules unverified.",
+      "zh": "以 Facebook 為主；在台移工切入點可連動台灣宣傳。在地論壇規則未驗證。"
+    },
+    "VN": {
+      "en": "Facebook-centric; local forum/blog rules unverified (search found nothing usable).",
+      "zh": "以 Facebook 為主；在地論壇／部落格規則未驗證（搜尋無可用結果）。"
+    },
+    "TH": {
+      "en": "Facebook- and Threads-centric; local media routes unverified.",
+      "zh": "以 Facebook 與 Threads 為主；在地媒體管道未驗證。"
+    },
+    "IN": {
+      "en": "Developer-community channels in English; iOS share is small, so effort should stay low.",
+      "zh": "以英文開發者社群為主；iOS 占比小，投入宜低。"
+    }
+  },
+  "markets": {
+    "TW": [
+      {
+        "id": "threads",
+        "name": "Threads",
+        "url": "https://www.threads.net",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-app posts are allowed, but repetitive/link-heavy posting gets throttled or suspended (this studio's old account was suspended at 30-48 link posts/day per repo README). Max 1-3 posts/day, unique text, link in a reply or bio.",
+        "self_promo_rules_zh": "可發自家 App 貼文，但重複、連續帶連結會被限流或停權（舊帳號曾因一天 30–48 則帶連結被停）。每天最多 1–3 則、內容不重複、連結放留言或簡介。",
+        "official_api": "yes",
+        "api_name": "Threads API (Meta): create container then threads_publish, scope threads_content_publish; long-lived token lasts 60 days and must be refreshed",
+        "automation": "full-api",
+        "account_gate": "Instagram/Meta account; a human creates the Meta developer app + OAuth token once; Meta signup may ask for phone (unverified)",
+        "account_gate_zh": "需 Instagram/Meta 帳號；人工一次性建立 Meta 開發者 App 並取得 token（60 天需續期）；Meta 註冊可能要求手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Home market; post in zh-TW, one app per post, tracking code in the reply link.",
+        "market_note_zh": "主場；用繁中、一則一款 App，追蹤碼放在留言連結。"
+      },
+      {
+        "id": "fb_groups",
+        "name": "Facebook groups (local)",
+        "url": "https://www.facebook.com/groups/",
+        "type": "community",
+        "language": "local",
+        "self_promo_rules": "Each group has its own rules; most require admin approval for promo posts. Read the rules, ask admins first, one post per group, never cross-spam.",
+        "self_promo_rules_zh": "每個社團各有規則，多數要管理員核准推廣貼文。先讀規則、先問管理員、每個社團只發一次、不可洗版。",
+        "official_api": "no",
+        "api_name": "Group publishing API was removed by Meta in 2024 (background knowledge, unverified) - human only",
+        "automation": "human",
+        "account_gate": "Real Facebook account; admin approval per group",
+        "account_gate_zh": "真實 Facebook 帳號；每個社團需管理員同意",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Taiwan groups for parents, language learners, travellers; also Indonesian/Vietnamese migrant-worker and new-resident groups (the 50-language angle). Admin approval first.",
+        "market_note_zh": "親子、語言學習、旅遊社團，以及印尼／越南移工與新住民社團（50 語言切入點）。先取得管理員同意。"
+      },
+      {
+        "id": "applealmond",
+        "name": "蘋果仁 (applealmond.com)",
+        "url": "https://applealmond.com",
+        "type": "review-site submission",
+        "language": "zh-TW",
+        "self_promo_rules": "Editorial site; send a short, honest tip/pitch through its contact channel (page not retrieved, acceptance unverified). No paid placement.",
+        "self_promo_rules_zh": "編輯型媒體；以聯絡管道寄送簡短誠實的投稿／爆料（頁面未取得，是否受理未驗證）。不買版位。",
+        "official_api": "no",
+        "api_name": "No API (email/contact form)",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Pitch one flagship app with a clear story, not 53.",
+        "market_note_zh": "只投一款有故事的主打 App，不要一次投 53 款。"
+      },
+      {
+        "id": "dcard",
+        "name": "Dcard",
+        "url": "https://www.dcard.tw",
+        "type": "community",
+        "language": "zh-TW",
+        "self_promo_rules": "Site rules updated 2026-03-30 with a separate \"ad & commercial content policy\" (existence confirmed, text not retrieved): treat promo as regulated; only post genuine experience-sharing in a matching board.",
+        "self_promo_rules_zh": "站規於 2026/03/30 更新並有獨立的「廣告、商業內容規範」（存在已確認，條文未取得）：推廣受規範，只在相符看板發真實的經驗分享。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Account via email/phone/Apple/Google (unverified)",
+        "account_gate_zh": "以信箱／手機／Apple／Google 註冊（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "kids",
+          "education",
+          "productivity",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Only genuine experience-sharing in a matching board; read the 2026-03 ad policy.",
+        "market_note_zh": "只在相符看板發真實經驗分享；先讀 2026/03 的廣告規範。"
+      },
+      {
+        "id": "ptt",
+        "name": "PTT (iOS / Soft_Job / topic boards)",
+        "url": "https://www.ptt.cc/bbs/iOS/index.html",
+        "type": "community",
+        "language": "zh-TW",
+        "self_promo_rules": "Per-board pinned rules; many boards ban ads or require tags. Board rules were not retrievable - read each board's pinned post and ask the board mods first.",
+        "self_promo_rules_zh": "各板置頂版規各自不同，許多板禁止廣告或要加分類標籤；版規本次未能取得——先讀置頂並問板主。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Registration with email verification; new accounts have limits (unverified)",
+        "account_gate_zh": "需信箱認證，新帳號有發文限制（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Read the pinned board rules; many boards ban ads.",
+        "market_note_zh": "先讀置頂版規；許多板禁廣告。"
+      },
+      {
+        "id": "mobile01",
+        "name": "Mobile01",
+        "url": "https://www.mobile01.com",
+        "type": "community",
+        "language": "zh-TW",
+        "self_promo_rules": "Forum with phone/app boards; ad rules are per board (not retrieved).",
+        "self_promo_rules_zh": "有手機／App 相關討論區；廣告規定依版而異（未取得）。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Member account (unverified)",
+        "account_gate_zh": "會員帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Low priority until rules are checked.",
+        "market_note_zh": "規則確認前優先度低。"
+      }
+    ],
+    "HK": [
+      {
+        "id": "threads",
+        "name": "Threads",
+        "url": "https://www.threads.net",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-app posts are allowed, but repetitive/link-heavy posting gets throttled or suspended (this studio's old account was suspended at 30-48 link posts/day per repo README). Max 1-3 posts/day, unique text, link in a reply or bio.",
+        "self_promo_rules_zh": "可發自家 App 貼文，但重複、連續帶連結會被限流或停權（舊帳號曾因一天 30–48 則帶連結被停）。每天最多 1–3 則、內容不重複、連結放留言或簡介。",
+        "official_api": "yes",
+        "api_name": "Threads API (Meta): create container then threads_publish, scope threads_content_publish; long-lived token lasts 60 days and must be refreshed",
+        "automation": "full-api",
+        "account_gate": "Instagram/Meta account; a human creates the Meta developer app + OAuth token once; Meta signup may ask for phone (unverified)",
+        "account_gate_zh": "需 Instagram/Meta 帳號；人工一次性建立 Meta 開發者 App 並取得 token（60 天需續期）；Meta 註冊可能要求手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Use zh-HK wording (not zh-TW).",
+        "market_note_zh": "用香港用語（非台灣用語）。"
+      },
+      {
+        "id": "fb_groups",
+        "name": "Facebook groups (local)",
+        "url": "https://www.facebook.com/groups/",
+        "type": "community",
+        "language": "local",
+        "self_promo_rules": "Each group has its own rules; most require admin approval for promo posts. Read the rules, ask admins first, one post per group, never cross-spam.",
+        "self_promo_rules_zh": "每個社團各有規則，多數要管理員核准推廣貼文。先讀規則、先問管理員、每個社團只發一次、不可洗版。",
+        "official_api": "no",
+        "api_name": "Group publishing API was removed by Meta in 2024 (background knowledge, unverified) - human only",
+        "automation": "human",
+        "account_gate": "Real Facebook account; admin approval per group",
+        "account_gate_zh": "真實 Facebook 帳號；每個社團需管理員同意",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "HK parent/travel/iPhone groups; admin approval.",
+        "market_note_zh": "香港親子／旅遊／iPhone 社團；需管理員同意。"
+      },
+      {
+        "id": "unwire",
+        "name": "unwire.hk",
+        "url": "https://unwire.hk",
+        "type": "review-site submission",
+        "language": "zh-HK",
+        "self_promo_rules": "Editorial site (HK); pitch via its contact/advertising team; no policy retrieved. Do not buy placement.",
+        "self_promo_rules_zh": "香港科技媒體；透過編輯／聯絡管道投稿；政策未取得。不買版位。",
+        "official_api": "no",
+        "api_name": "No API (email/contact form)",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Email pitch for one flagship app.",
+        "market_note_zh": "Email 投一款主打 App。"
+      },
+      {
+        "id": "lihkg",
+        "name": "LIHKG",
+        "url": "https://lihkg.com",
+        "type": "community",
+        "language": "zh-HK",
+        "self_promo_rules": "Strong anti-advertising culture; terms not retrieved. Only a genuine, low-key share, if at all.",
+        "self_promo_rules_zh": "強烈反廣告文化；條款未取得。若發，僅限低調的真實分享。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Registration by email (historically invite/verification; unverified)",
+        "account_gate_zh": "信箱註冊（過去曾有邀請／驗證機制；未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Only a low-key genuine share; high risk of backlash.",
+        "market_note_zh": "只做低調真實分享；被反感風險高。"
+      },
+      {
+        "id": "hkepc",
+        "name": "HKEPC forum",
+        "url": "https://www.hkepc.com",
+        "type": "community",
+        "language": "zh-HK",
+        "self_promo_rules": "Hardware/gadget forum with an apps area; self-promo rules not retrieved.",
+        "self_promo_rules_zh": "硬體／電子產品論壇，有 App 區；自薦規則未取得。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Member account (unverified)",
+        "account_gate_zh": "會員帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Check forum rules first.",
+        "market_note_zh": "先確認論壇規則。"
+      }
+    ],
+    "JP": [
+      {
+        "id": "x",
+        "name": "X (Twitter)",
+        "url": "https://x.com",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Allowed; no spam/duplicate posts; automated accounts must be labelled. Manual posting is free.",
+        "self_promo_rules_zh": "可發文；禁止垃圾／重複貼文，自動帳號需標示。手動發文免費。",
+        "official_api": "yes",
+        "api_name": "X API pay-per-use credits (about $0.015/post and about $0.20/post with a URL per third-party blogs, 2026) - not zero budget",
+        "automation": "paid-api",
+        "account_gate": "New accounts commonly need phone verification (unverified)",
+        "account_gate_zh": "新帳號通常需手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Highest-reach channel in Japan; post manually (free). Use #個人開発 / #buildinpublic. Automation costs money.",
+        "market_note_zh": "日本觸及最高的管道；手動發文（免費），用 #個人開発 / #buildinpublic。自動發文要付費。"
+      },
+      {
+        "id": "zenn",
+        "name": "Zenn",
+        "url": "https://zenn.dev",
+        "type": "blog platform",
+        "language": "ja",
+        "self_promo_rules": "Tech/knowledge articles; own-product stories (個人開發) are common, thin ads are discouraged (guideline text not retrieved).",
+        "self_promo_rules_zh": "以技術／知識文章為主；「個人開発」心得文很常見，單薄的廣告不受歡迎（規約原文未取得）。",
+        "official_api": "yes",
+        "api_name": "Official GitHub repository integration: pushing markdown under articles/ on the linked branch publishes it (max 2 linked repos; Zenn CLI) - no REST token, just GitHub auth (confirmed via community guides)",
+        "automation": "full-api",
+        "account_gate": "GitHub login; no phone",
+        "account_gate_zh": "GitHub 登入；不需手機",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "A",
+        "market_note": "\"Made it\" write-up via GitHub push; fully automatable.",
+        "market_note_zh": "「作ってみた」心得文，GitHub push 即發布；可全自動。"
+      },
+      {
+        "id": "note",
+        "name": "note",
+        "url": "https://note.com",
+        "type": "blog platform",
+        "language": "ja",
+        "self_promo_rules": "Own-product introductions allowed; sponsored/stealth ads must be disclosed (general terms, not retrieved).",
+        "self_promo_rules_zh": "可介紹自己的產品；業配／隱性廣告須揭露（一般條款，未取得原文）。",
+        "official_api": "no",
+        "api_name": "No official public posting API found (could not confirm)",
+        "automation": "human",
+        "account_gate": "Email/Apple/Google signup; no phone seen (unverified)",
+        "account_gate_zh": "信箱／Apple／Google 註冊（未驗證是否需手機）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Story-style post; best for non-developer apps; human post.",
+        "market_note_zh": "故事型文章，最適合非開發者向 App；需人工發。"
+      },
+      {
+        "id": "qiita",
+        "name": "Qiita",
+        "url": "https://qiita.com",
+        "type": "blog platform",
+        "language": "ja",
+        "self_promo_rules": "Technical articles only; pure advertising/PR is unwelcome (guideline text not retrieved); introducing your own tool inside a real tech write-up is normal; tags required.",
+        "self_promo_rules_zh": "以技術文章為主，純廣告／公關稿不受歡迎（規約原文未取得）；在有技術內容的文章中介紹自己的工具是常態；必須加標籤。",
+        "official_api": "yes",
+        "api_name": "Qiita API v2: POST /api/v2/items, personal access token with write_qiita (confirmed)",
+        "automation": "full-api",
+        "account_gate": "Email/GitHub signup; no phone seen (unverified)",
+        "account_gate_zh": "信箱／GitHub 註冊；未見手機要求（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "Technical angle required; automatable via API v2.",
+        "market_note_zh": "必須有技術切角；可用 API v2 自動。"
+      },
+      {
+        "id": "hatena",
+        "name": "Hatena Blog / Hatena Bookmark",
+        "url": "https://hatenablog.com",
+        "type": "blog platform",
+        "language": "ja",
+        "self_promo_rules": "Own-product posts allowed; Hatena Bookmark is organic only - never ask for bookmarks.",
+        "self_promo_rules_zh": "可發自家產品文章；はてなブックマーク只能自然累積，不可拉票。",
+        "official_api": "yes",
+        "api_name": "Hatena Blog AtomPub API (API key + Basic auth) - from background knowledge, not verified in this session",
+        "automation": "full-api",
+        "account_gate": "Hatena ID (email); no phone seen (unverified)",
+        "account_gate_zh": "Hatena ID（信箱）（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "C",
+        "market_note": "Optional; AtomPub API unverified.",
+        "market_note_zh": "可選；AtomPub API 未驗證。"
+      },
+      {
+        "id": "jp_review",
+        "name": "Japanese app-review sites (AppBank, gori.me, iPhone Mania, Appliv etc.)",
+        "url": "https://www.appbank.net",
+        "type": "review-site submission",
+        "language": "ja",
+        "self_promo_rules": "Historically AppBank accepted review requests by buying the app itself; free listing services like Applis/AnytenApps are old and may be defunct. Current intake not verified - use each site's contact form, honest pitch, no payment.",
+        "self_promo_rules_zh": "歷史上 AppBank 會自行購買 App 後評測，Applis／AnytenApps 等免費收錄服務多為舊資料、可能已停止；目前受理狀況未驗證——走各站聯絡表單、誠實投稿、不付費。",
+        "official_api": "no",
+        "api_name": "No API (contact form)",
+        "automation": "human",
+        "account_gate": "None (email/form)",
+        "account_gate_zh": "不需帳號（表單／Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Contact forms only; acceptance unverified.",
+        "market_note_zh": "只能走聯絡表單；是否受理未驗證。"
+      }
+    ],
+    "KR": [
+      {
+        "id": "clien",
+        "name": "Clien (클리앙) - 아이포니언 / 직접홍보",
+        "url": "https://www.clien.net/service/board/cm_iphonien",
+        "type": "community",
+        "language": "ko",
+        "self_promo_rules": "Self-made apps may be posted when needed to explain the content; links tied to revenue or revenue-seeking posts can be deleted and the user restricted; a 직접홍보 (self-promo) board exists; Jul 2026 members debated splitting self-made-app posts into their own board (search-confirmed).",
+        "self_promo_rules_zh": "自製 App 在需要說明內容時可發；附帶營收連結或明顯營利的貼文可能被刪並限制帳號；有「직접홍보」自薦板；2026/7 會員正在討論把自製 App 文章獨立成板（搜尋佐證）。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Clien membership; new members likely have posting limits (unverified)",
+        "account_gate_zh": "需 Clien 會員，新會員可能有發文限制（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Post in 아이포니언 or the 직접홍보 board, disclose you are the developer, no revenue-linked links.",
+        "market_note_zh": "發在「아이포니언」或「직접홍보」板，揭露自己是開發者，不放營利連結。"
+      },
+      {
+        "id": "naver_blog",
+        "name": "Naver Blog / Naver Cafe",
+        "url": "https://blog.naver.com",
+        "type": "blog platform",
+        "language": "ko",
+        "self_promo_rules": "Own-product introduction allowed; sponsored content must be disclosed. Cafes follow each cafe's own rules (join first).",
+        "self_promo_rules_zh": "可介紹自己的產品；業配須揭露。Cafe 依各 Cafe 規則（需先加入）。",
+        "official_api": "no",
+        "api_name": "Blog-writing API reportedly discontinued (blog posts only, no official notice found) - human posting",
+        "automation": "human",
+        "account_gate": "Naver ID typically requires phone verification (unverified); a real person's own phone is fine",
+        "account_gate_zh": "Naver ID 通常需手機認證（未驗證）；用本人手機即可",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Main Korean search surface; write a Korean article, no auto-posting.",
+        "market_note_zh": "韓國主要搜尋入口；寫韓文文章，不能自動發。"
+      },
+      {
+        "id": "disquiet",
+        "name": "Disquiet (디스콰이엇)",
+        "url": "https://disquiet.io",
+        "type": "community",
+        "language": "ko",
+        "self_promo_rules": "Korea's makers/product-launch community (Product Hunt-like); rules not retrieved.",
+        "self_promo_rules_zh": "韓國的 maker／產品發表社群（類似 Product Hunt）；規則未取得。",
+        "official_api": "no",
+        "api_name": "No official posting API found",
+        "automation": "human",
+        "account_gate": "Account via social login (unverified)",
+        "account_gate_zh": "社群帳號登入（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Makers/product launch community; rules unverified, check first.",
+        "market_note_zh": "Maker 產品發表社群；規則未驗證，先確認。"
+      },
+      {
+        "id": "geeknews",
+        "name": "GeekNews (news.hada.io) - Show GN",
+        "url": "https://news.hada.io",
+        "type": "community",
+        "language": "ko",
+        "self_promo_rules": "Korean Hacker News-style aggregator with a Show GN section for own projects (from background knowledge; rules not retrieved).",
+        "self_promo_rules_zh": "韓國版 Hacker News 風格的彙整站，有 Show GN 供自己的專案（來自背景知識；規則未取得）。",
+        "official_api": "no",
+        "api_name": "No official posting API found",
+        "automation": "human",
+        "account_gate": "Account (unverified)",
+        "account_gate_zh": "需帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Show GN for dev-tool apps.",
+        "market_note_zh": "開發工具 App 用 Show GN。"
+      },
+      {
+        "id": "velog",
+        "name": "Velog",
+        "url": "https://velog.io",
+        "type": "blog platform",
+        "language": "ko",
+        "self_promo_rules": "Developer blog platform; own-project write-ups OK if substantive (not retrieved).",
+        "self_promo_rules_zh": "開發者部落格平台；有內容的專案文章可（未取得原文）。",
+        "official_api": "no",
+        "api_name": "No official public posting API found",
+        "automation": "human",
+        "account_gate": "Social login (GitHub/Google)",
+        "account_gate_zh": "GitHub／Google 登入",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Dev-tool write-ups only.",
+        "market_note_zh": "僅限開發工具心得。"
+      }
+    ],
+    "US": [
+      {
+        "id": "producthunt",
+        "name": "Product Hunt",
+        "url": "https://www.producthunt.com",
+        "type": "directory",
+        "language": "en",
+        "self_promo_rules": "Launching your own product is the point (free, once per product launch). No soliciting or faking upvotes/comments; be present to answer comments (background knowledge, official page not retrieved).",
+        "self_promo_rules_zh": "本來就是讓作者發表自己的產品（免費、每次發表一次）；禁止拉票／灌評論，發表當天需親自回覆留言（背景知識，官方頁面未取得）。",
+        "official_api": "no",
+        "api_name": "API v2 is GraphQL (OAuth/developer token) mainly for reading data; no launch-creation endpoint was found",
+        "automation": "human",
+        "account_gate": "Email/Google/X account with a real profile; new/empty accounts may be limited (unverified)",
+        "account_gate_zh": "信箱／Google／X 帳號並完整個人檔案；新帳號可能受限（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "One launch per app; pick the 2-3 strongest apps first, never solicit upvotes.",
+        "market_note_zh": "一款 App 發表一次；先選最強的 2–3 款，不拉票。"
+      },
+      {
+        "id": "showhn",
+        "name": "Hacker News - Show HN",
+        "url": "https://news.ycombinator.com/showhn.html",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Show HN = something you made that others can try; maker must engage in comments; no asking for upvotes. An iOS-only app is borderline unless people can try it easily (official guideline page not retrieved).",
+        "self_promo_rules_zh": "Show HN 限「自己做、別人可以試用」的作品；作者要留言互動；禁止拉票。純 iOS App 若難以試用屬邊緣（官方規範頁未取得）。",
+        "official_api": "no",
+        "api_name": "HN official API is read-only (Firebase); no posting API (background knowledge)",
+        "automation": "human",
+        "account_gate": "Free account, no phone/invite; brand-new accounts with promo links may be flagged (unverified)",
+        "account_gate_zh": "免費帳號，不需手機／邀請；全新帳號帶推廣連結可能被標記（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Dev-tool apps only; must be easy to try.",
+        "market_note_zh": "只限開發工具 App；需容易試用。"
+      },
+      {
+        "id": "r_sideproject",
+        "name": "Reddit r/SideProject",
+        "url": "https://www.reddit.com/r/SideProject/",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Described by third-party guides as promotion-friendly with weekly share threads; you are expected to engage with other projects. Sub sidebar not retrieved - read it first.",
+        "self_promo_rules_zh": "第三方整理稱其歡迎自薦且有每週分享串，但要回饋他人專案；子版規則原文未取得，發文前先讀側欄。",
+        "official_api": "gated",
+        "api_name": "Reddit Data API (OAuth) exists, but since Nov 2025 new apps need manual approval (reported 2-4 weeks, no confirmed approvals for personal use) - treat as human posting",
+        "automation": "human",
+        "account_gate": "Reddit account (email, no phone); subs often require account age/karma; one account only",
+        "account_gate_zh": "Reddit 帳號（信箱，不需手機）；子版常有帳齡／karma 門檻；只能用一個帳號",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Story-first post with screenshots; engage in comments.",
+        "market_note_zh": "故事先行、附截圖；留言要互動。"
+      },
+      {
+        "id": "r_iosprog",
+        "name": "Reddit r/iOSProgramming (App Saturday)",
+        "url": "https://www.reddit.com/r/iOSProgramming/",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "App Saturday only: Saturdays (poster's local time), one app once per year (mod post Apr 2025). A Jan 2026 proposal added minimum karma + template (stack, challenge, AI disclosure); unconfirmed whether adopted - read pinned rules.",
+        "self_promo_rules_zh": "只能在「App Saturday」（週六，以發文者當地時間）發，同一款 App 一年一次（版主 2025/4 公告）；2026/1 的提案要求最低 karma＋固定模板（技術堆疊、挑戰、AI 揭露），是否實施未確認——先讀置頂規則。",
+        "official_api": "gated",
+        "api_name": "Reddit Data API gated (see r/SideProject) - human posting",
+        "automation": "human",
+        "account_gate": "Reddit account; karma minimum possible (unconfirmed)",
+        "account_gate_zh": "Reddit 帳號；可能有 karma 門檻（未確認）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "App Saturday only, once per app per year; read pinned rules.",
+        "market_note_zh": "只能在 App Saturday，每款一年一次；先讀置頂。"
+      },
+      {
+        "id": "indiehackers",
+        "name": "Indie Hackers",
+        "url": "https://www.indiehackers.com",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Substantive posts (what you built / learned) with the product linked in context are welcome; drive-by \"check my app\" posts get ignored or deleted (third-party guides).",
+        "self_promo_rules_zh": "歡迎有內容的文章（做了什麼、學到什麼）並在脈絡中附產品連結；只丟連結會被忽略或刪除（第三方整理）。",
+        "official_api": "no",
+        "api_name": "No official posting API found (unverified)",
+        "automation": "human",
+        "account_gate": "Email/Google/X signup; no phone (unverified)",
+        "account_gate_zh": "信箱／Google／X 註冊；不需手機（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Build-in-public story (53 apps x 50 languages) fits well.",
+        "market_note_zh": "「53 款 App × 50 語言」的 build-in-public 故事很契合。"
+      },
+      {
+        "id": "alternativeto",
+        "name": "AlternativeTo",
+        "url": "https://alternativeto.net",
+        "type": "directory",
+        "language": "en",
+        "self_promo_rules": "Free community-driven submission; the app must be a genuine alternative to an existing, listed app; entries are moderated.",
+        "self_promo_rules_zh": "免費、社群審核式投稿；App 必須是既有軟體的真正替代品；內容會被審核。",
+        "official_api": "no",
+        "api_name": "No posting API (web form)",
+        "automation": "human",
+        "account_gate": "Free account",
+        "account_gate_zh": "免費帳號",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Only apps that are real alternatives to listed apps.",
+        "market_note_zh": "只投真的是既有軟體替代品的 App。"
+      }
+    ],
+    "UK": [
+      {
+        "id": "producthunt",
+        "name": "Product Hunt",
+        "url": "https://www.producthunt.com",
+        "type": "directory",
+        "language": "en",
+        "self_promo_rules": "Launching your own product is the point (free, once per product launch). No soliciting or faking upvotes/comments; be present to answer comments (background knowledge, official page not retrieved).",
+        "self_promo_rules_zh": "本來就是讓作者發表自己的產品（免費、每次發表一次）；禁止拉票／灌評論，發表當天需親自回覆留言（背景知識，官方頁面未取得）。",
+        "official_api": "no",
+        "api_name": "API v2 is GraphQL (OAuth/developer token) mainly for reading data; no launch-creation endpoint was found",
+        "automation": "human",
+        "account_gate": "Email/Google/X account with a real profile; new/empty accounts may be limited (unverified)",
+        "account_gate_zh": "信箱／Google／X 帳號並完整個人檔案；新帳號可能受限（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Same launch as US; schedule for UK morning if you want UK reach.",
+        "market_note_zh": "與美國同一次發表；想要英國觸及可排英國早上。"
+      },
+      {
+        "id": "showhn",
+        "name": "Hacker News - Show HN",
+        "url": "https://news.ycombinator.com/showhn.html",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Show HN = something you made that others can try; maker must engage in comments; no asking for upvotes. An iOS-only app is borderline unless people can try it easily (official guideline page not retrieved).",
+        "self_promo_rules_zh": "Show HN 限「自己做、別人可以試用」的作品；作者要留言互動；禁止拉票。純 iOS App 若難以試用屬邊緣（官方規範頁未取得）。",
+        "official_api": "no",
+        "api_name": "HN official API is read-only (Firebase); no posting API (background knowledge)",
+        "automation": "human",
+        "account_gate": "Free account, no phone/invite; brand-new accounts with promo links may be flagged (unverified)",
+        "account_gate_zh": "免費帳號，不需手機／邀請；全新帳號帶推廣連結可能被標記（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Same as US.",
+        "market_note_zh": "同美國。"
+      },
+      {
+        "id": "r_iosprog",
+        "name": "Reddit r/iOSProgramming (App Saturday)",
+        "url": "https://www.reddit.com/r/iOSProgramming/",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "App Saturday only: Saturdays (poster's local time), one app once per year (mod post Apr 2025). A Jan 2026 proposal added minimum karma + template (stack, challenge, AI disclosure); unconfirmed whether adopted - read pinned rules.",
+        "self_promo_rules_zh": "只能在「App Saturday」（週六，以發文者當地時間）發，同一款 App 一年一次（版主 2025/4 公告）；2026/1 的提案要求最低 karma＋固定模板（技術堆疊、挑戰、AI 揭露），是否實施未確認——先讀置頂規則。",
+        "official_api": "gated",
+        "api_name": "Reddit Data API gated (see r/SideProject) - human posting",
+        "automation": "human",
+        "account_gate": "Reddit account; karma minimum possible (unconfirmed)",
+        "account_gate_zh": "Reddit 帳號；可能有 karma 門檻（未確認）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "Same App Saturday rule.",
+        "market_note_zh": "同樣是 App Saturday 規則。"
+      },
+      {
+        "id": "bluesky",
+        "name": "Bluesky",
+        "url": "https://bsky.app",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-project posts fine; automation tolerated if not spammy (label bots, no unsolicited mentions/replies) - policy text not retrieved.",
+        "self_promo_rules_zh": "可發自家專案；自動化需不洗版（建議標示為機器人、不主動 @ 陌生人）——政策原文未取得。",
+        "official_api": "yes",
+        "api_name": "AT Protocol: com.atproto.server.createSession + com.atproto.repo.createRecord (app.bsky.feed.post) using an app password; SDKs @atproto/api, atproto (Python)",
+        "automation": "full-api",
+        "account_gate": "Email confirmation; no phone/invite needed (unverified)",
+        "account_gate_zh": "信箱驗證；不需手機／邀請碼（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "Dev/tech audience; API-automatable.",
+        "market_note_zh": "開發者／科技受眾；可 API 自動。"
+      },
+      {
+        "id": "indiehackers",
+        "name": "Indie Hackers",
+        "url": "https://www.indiehackers.com",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Substantive posts (what you built / learned) with the product linked in context are welcome; drive-by \"check my app\" posts get ignored or deleted (third-party guides).",
+        "self_promo_rules_zh": "歡迎有內容的文章（做了什麼、學到什麼）並在脈絡中附產品連結；只丟連結會被忽略或刪除（第三方整理）。",
+        "official_api": "no",
+        "api_name": "No official posting API found (unverified)",
+        "automation": "human",
+        "account_gate": "Email/Google/X signup; no phone (unverified)",
+        "account_gate_zh": "信箱／Google／X 註冊；不需手機（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Same as US.",
+        "market_note_zh": "同美國。"
+      },
+      {
+        "id": "uk_press",
+        "name": "UK tech press (Stuff, Pocket-lint, TechRadar)",
+        "url": "https://www.stuff.tv",
+        "type": "review-site submission",
+        "language": "en-GB",
+        "self_promo_rules": "Editorial pitching by email only; no intake pages retrieved; no paid reviews.",
+        "self_promo_rules_zh": "僅能 Email 向編輯提案；未取得投稿頁；不買評測。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Low odds, email only.",
+        "market_note_zh": "成功率低，僅 Email。"
+      }
+    ],
+    "DE": [
+      {
+        "id": "iphoneticker",
+        "name": "iphone-ticker.de",
+        "url": "https://www.iphone-ticker.de/kontakt/",
+        "type": "review-site submission",
+        "language": "de",
+        "self_promo_rules": "Has a Kontakt page; its Werben page states no giveaways, editorial content or reviews are sold - so only an unpaid, honest email tip, no guarantee (search-confirmed for Werben).",
+        "self_promo_rules_zh": "有聯絡頁；廣告頁明言不販售贈品、編輯內容或評測——只能寄無償、誠實的投稿信，不保證刊登（廣告頁已搜尋佐證）。",
+        "official_api": "no",
+        "api_name": "No API (email)",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Honest unpaid email tip; emphasise privacy/no tracking, which German readers value.",
+        "market_note_zh": "寄無償誠實投稿；強調隱私／無追蹤，德國讀者重視。"
+      },
+      {
+        "id": "appgefahren",
+        "name": "appgefahren.de",
+        "url": "https://www.appgefahren.de",
+        "type": "review-site submission",
+        "language": "de",
+        "self_promo_rules": "German app-review blog; intake route not retrieved - use its contact form with an honest pitch.",
+        "self_promo_rules_zh": "德語 App 評測部落格；受理方式未取得——用聯絡表單誠實投稿。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Contact form; German App Store text first.",
+        "market_note_zh": "走聯絡表單；先備好德文商店文案。"
+      },
+      {
+        "id": "mastodon",
+        "name": "Mastodon (per-instance)",
+        "url": "https://docs.joinmastodon.org/methods/statuses/",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Rules differ per instance; most allow occasional own-project posts; many require the bot flag for automated accounts.",
+        "self_promo_rules_zh": "規則依各 instance 而定；多數允許偶爾分享自己的專案，自動帳號多半要勾選 bot 旗標。",
+        "official_api": "yes",
+        "api_name": "Mastodon REST API POST /api/v1/statuses with a user token that has write:statuses",
+        "automation": "full-api",
+        "account_gate": "Instance-dependent: email confirmation, some instances need manual approval; no phone",
+        "account_gate_zh": "依 instance：信箱驗證，部分需人工審核；不需手機",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "German-speaking instances (check each one's rules); API-automatable.",
+        "market_note_zh": "德語 instance（逐一確認規則）；可 API 自動。"
+      },
+      {
+        "id": "apfeltalk",
+        "name": "Apfeltalk",
+        "url": "https://www.apfeltalk.de",
+        "type": "community",
+        "language": "de",
+        "self_promo_rules": "German Apple forum; self-promo rules not retrieved - check the apps section rules.",
+        "self_promo_rules_zh": "德語 Apple 論壇；自薦規則未取得——先查 App 區版規。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Forum account (unverified)",
+        "account_gate_zh": "論壇帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids"
+        ],
+        "priority": "C",
+        "market_note": "Check apps-section rules.",
+        "market_note_zh": "先查 App 區版規。"
+      },
+      {
+        "id": "t3n",
+        "name": "t3n",
+        "url": "https://t3n.de",
+        "type": "review-site submission",
+        "language": "de",
+        "self_promo_rules": "German digital-business/tech magazine; editorial tip route not retrieved.",
+        "self_promo_rules_zh": "德國數位／科技雜誌；編輯投稿管道未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool",
+          "productivity"
+        ],
+        "priority": "C",
+        "market_note": "Tip route unverified.",
+        "market_note_zh": "投稿管道未驗證。"
+      }
+    ],
+    "FR": [
+      {
+        "id": "korben",
+        "name": "Korben.info",
+        "url": "https://korben.info",
+        "type": "review-site submission",
+        "language": "fr",
+        "self_promo_rules": "Influential French tech blog that features tools; pitch through its contact route (not retrieved).",
+        "self_promo_rules_zh": "影響力大的法語科技部落格，常介紹工具；透過聯絡管道投稿（未取得）。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool",
+          "utility",
+          "productivity"
+        ],
+        "priority": "B",
+        "market_note": "Pitch a tool with a clear hook.",
+        "market_note_zh": "有明確賣點的工具再投。"
+      },
+      {
+        "id": "macg",
+        "name": "MacG / iGeneration",
+        "url": "https://www.macg.co",
+        "type": "review-site submission",
+        "language": "fr",
+        "self_promo_rules": "French Apple news sites; editorial tip route not retrieved.",
+        "self_promo_rules_zh": "法語 Apple 新聞站；編輯投稿管道未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Email tip; French store text first.",
+        "market_note_zh": "Email 投稿；先備好法文商店文案。"
+      },
+      {
+        "id": "iphonesoft",
+        "name": "iPhoneSoft",
+        "url": "https://www.iphonesoft.fr",
+        "type": "review-site submission",
+        "language": "fr",
+        "self_promo_rules": "French iPhone news site; editorial tip route not retrieved.",
+        "self_promo_rules_zh": "法語 iPhone 新聞站；編輯投稿管道未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Email tip.",
+        "market_note_zh": "Email 投稿。"
+      },
+      {
+        "id": "jdg",
+        "name": "Journal du Geek",
+        "url": "https://www.journaldugeek.com",
+        "type": "review-site submission",
+        "language": "fr",
+        "self_promo_rules": "Search found no current pitch route (only an old 2007 call for writers); use its contact page, low odds.",
+        "self_promo_rules_zh": "搜尋未找到現行投稿管道（僅 2007 年徵稿舊文）；走聯絡頁，成功率低。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Low odds.",
+        "market_note_zh": "成功率低。"
+      },
+      {
+        "id": "developpez",
+        "name": "Developpez.com",
+        "url": "https://www.developpez.com",
+        "type": "community",
+        "language": "fr",
+        "self_promo_rules": "French developer community/forum; self-promo rules not retrieved - only for dev-tool apps with a genuine technical angle.",
+        "self_promo_rules_zh": "法語開發者社群／論壇；自薦規則未取得——僅適合有技術切角的開發工具 App。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Forum account (unverified)",
+        "account_gate_zh": "論壇帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Dev-tool apps with a technical angle only. Frandroid is Android-focused, so skipped.",
+        "market_note_zh": "僅限有技術切角的開發工具 App。Frandroid 以 Android 為主，故不列入。"
+      },
+      {
+        "id": "mastodon",
+        "name": "Mastodon (per-instance)",
+        "url": "https://docs.joinmastodon.org/methods/statuses/",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Rules differ per instance; most allow occasional own-project posts; many require the bot flag for automated accounts.",
+        "self_promo_rules_zh": "規則依各 instance 而定；多數允許偶爾分享自己的專案，自動帳號多半要勾選 bot 旗標。",
+        "official_api": "yes",
+        "api_name": "Mastodon REST API POST /api/v1/statuses with a user token that has write:statuses",
+        "automation": "full-api",
+        "account_gate": "Instance-dependent: email confirmation, some instances need manual approval; no phone",
+        "account_gate_zh": "依 instance：信箱驗證，部分需人工審核；不需手機",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "C",
+        "market_note": "French instances; API-automatable.",
+        "market_note_zh": "法語 instance；可 API 自動。"
+      }
+    ],
+    "ES": [
+      {
+        "id": "applesfera",
+        "name": "Applesfera",
+        "url": "https://www.applesfera.com",
+        "type": "review-site submission",
+        "language": "es",
+        "self_promo_rules": "Spanish Apple news site; footer has \"Contacta con nosotros\" (confirmed); editorial acceptance of indie apps not verified.",
+        "self_promo_rules_zh": "西語 Apple 新聞站；頁尾有「Contacta con nosotros」（已確認）；是否受理獨立 App 未驗證。",
+        "official_api": "no",
+        "api_name": "No API (contact form)",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Contact link confirmed; pitch one app.",
+        "market_note_zh": "聯絡連結已確認；投一款 App。"
+      },
+      {
+        "id": "xataka",
+        "name": "Xataka / Genbeta (Webedia)",
+        "url": "https://www.genbeta.com",
+        "type": "review-site submission",
+        "language": "es",
+        "self_promo_rules": "Spanish tech/dev media (Genbeta covers apps/dev); tip route not retrieved.",
+        "self_promo_rules_zh": "西語科技／開發媒體（Genbeta 專談 App 與開發）；投稿管道未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool",
+          "utility",
+          "productivity"
+        ],
+        "priority": "B",
+        "market_note": "Genbeta covers dev/apps.",
+        "market_note_zh": "Genbeta 專談開發與 App。"
+      },
+      {
+        "id": "devto",
+        "name": "DEV Community",
+        "url": "https://dev.to",
+        "type": "blog platform",
+        "language": "en (other languages accepted)",
+        "self_promo_rules": "Own-project write-ups are fine when they carry real content (story/tutorial), not pure ads; DEV Code of Conduct applies (background knowledge).",
+        "self_promo_rules_zh": "自家專案文章可發，但須有實質內容（開發心得／教學），不能純廣告；適用 DEV 行為準則（來自背景知識）。",
+        "official_api": "yes",
+        "api_name": "Forem API v1: POST /api/articles (PUT to update), api-key header; key from account Settings > Extensions",
+        "automation": "full-api",
+        "account_gate": "Signup via GitHub/email; no phone or invite",
+        "account_gate_zh": "GitHub／信箱註冊；不需手機或邀請",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Write in Spanish; API-automatable.",
+        "market_note_zh": "用西語寫；可 API 自動。"
+      },
+      {
+        "id": "ipadizate",
+        "name": "iPadizate",
+        "url": "https://www.ipadizate.es",
+        "type": "review-site submission",
+        "language": "es",
+        "self_promo_rules": "Spanish iOS blog; intake not retrieved.",
+        "self_promo_rules_zh": "西語 iOS 部落格；受理方式未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education"
+        ],
+        "priority": "C",
+        "market_note": "Intake unverified.",
+        "market_note_zh": "受理方式未驗證。"
+      },
+      {
+        "id": "meneame",
+        "name": "Menéame",
+        "url": "https://www.meneame.net",
+        "type": "community",
+        "language": "es",
+        "self_promo_rules": "Spanish social-news site; self-promotion of your own links is commonly frowned upon and may be penalised (not verified) - submit only a genuinely newsworthy write-up.",
+        "self_promo_rules_zh": "西語社群新聞站；一般不歡迎自推連結、可能被扣分（未驗證）——只投真正有新聞價值的文章。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Account (unverified)",
+        "account_gate_zh": "需帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Only genuinely newsworthy write-ups.",
+        "market_note_zh": "只投真正有新聞價值的文章。"
+      }
+    ],
+    "BR": [
+      {
+        "id": "tabnews",
+        "name": "TabNews",
+        "url": "https://www.tabnews.com.br/faq",
+        "type": "community",
+        "language": "pt-BR",
+        "self_promo_rules": "Posting your own project is OK if it adds value (technical details, lessons); a short promo must have \"Pitch\" in the title; purely commercial posts are prohibited; no reposting the same content; deleting a downvoted post and re-posting can lead to a permanent ban (search-confirmed from FAQ/terms).",
+        "self_promo_rules_zh": "可發自己的專案，但需帶來價值（技術細節、心得）；短篇宣傳標題要加「Pitch」；純商業貼文明禁；不可重發相同內容；刪除被倒讚的文再重發可能被永久停權（FAQ／條款搜尋佐證）。",
+        "official_api": "no",
+        "api_name": "A public REST API exists, but posting needs a login session token and no official support for automation was confirmed - treat as human",
+        "automation": "human",
+        "account_gate": "Email signup; no phone/invite seen (unverified)",
+        "account_gate_zh": "信箱註冊；未見手機／邀請要求（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "utility",
+          "productivity"
+        ],
+        "priority": "A",
+        "market_note": "Use \"Pitch\" in title for short promos, otherwise a real dev story; never repost.",
+        "market_note_zh": "短宣傳標題加「Pitch」，否則寫真實開發故事；不可重發。"
+      },
+      {
+        "id": "macmagazine",
+        "name": "MacMagazine (Contato)",
+        "url": "https://macmagazine.com.br/contato/",
+        "type": "review-site submission",
+        "language": "pt-BR",
+        "self_promo_rules": "Contact form explicitly accepts \"dicas de pautas, sugestões de aplicativos, contato de desenvolvedores\"; replies only when really necessary (search-confirmed).",
+        "self_promo_rules_zh": "聯絡表單明列接受「新聞線索、App 建議、開發者聯絡」；僅在必要時回覆（搜尋佐證）。",
+        "official_api": "no",
+        "api_name": "No API (contact form)",
+        "automation": "human",
+        "account_gate": "None (form)",
+        "account_gate_zh": "不需帳號（表單）",
+        "verification": "search-confirmed",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Form explicitly accepts app suggestions from developers.",
+        "market_note_zh": "表單明確接受開發者的 App 建議。"
+      },
+      {
+        "id": "devto",
+        "name": "DEV Community",
+        "url": "https://dev.to",
+        "type": "blog platform",
+        "language": "en (other languages accepted)",
+        "self_promo_rules": "Own-project write-ups are fine when they carry real content (story/tutorial), not pure ads; DEV Code of Conduct applies (background knowledge).",
+        "self_promo_rules_zh": "自家專案文章可發，但須有實質內容（開發心得／教學），不能純廣告；適用 DEV 行為準則（來自背景知識）。",
+        "official_api": "yes",
+        "api_name": "Forem API v1: POST /api/articles (PUT to update), api-key header; key from account Settings > Extensions",
+        "automation": "full-api",
+        "account_gate": "Signup via GitHub/email; no phone or invite",
+        "account_gate_zh": "GitHub／信箱註冊；不需手機或邀請",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Write in pt-BR; API-automatable.",
+        "market_note_zh": "用巴西葡語寫；可 API 自動。"
+      },
+      {
+        "id": "r_brdev",
+        "name": "Reddit r/brdev",
+        "url": "https://www.reddit.com/r/brdev/",
+        "type": "community",
+        "language": "pt-BR",
+        "self_promo_rules": "Brazilian developer subreddit; self-promo rules not retrieved.",
+        "self_promo_rules_zh": "巴西開發者子版；自薦規則未取得。",
+        "official_api": "gated",
+        "api_name": "Reddit Data API gated - human posting",
+        "automation": "human",
+        "account_gate": "Reddit account",
+        "account_gate_zh": "Reddit 帳號",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "C",
+        "market_note": "Rules unverified.",
+        "market_note_zh": "規則未驗證。"
+      },
+      {
+        "id": "tecnoblog",
+        "name": "Tecnoblog",
+        "url": "https://tecnoblog.net",
+        "type": "review-site submission",
+        "language": "pt-BR",
+        "self_promo_rules": "Brazilian tech news; pitch route not retrieved.",
+        "self_promo_rules_zh": "巴西科技新聞；投稿管道未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Pitch route unverified.",
+        "market_note_zh": "投稿管道未驗證。"
+      }
+    ],
+    "MX": [
+      {
+        "id": "threads",
+        "name": "Threads",
+        "url": "https://www.threads.net",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-app posts are allowed, but repetitive/link-heavy posting gets throttled or suspended (this studio's old account was suspended at 30-48 link posts/day per repo README). Max 1-3 posts/day, unique text, link in a reply or bio.",
+        "self_promo_rules_zh": "可發自家 App 貼文，但重複、連續帶連結會被限流或停權（舊帳號曾因一天 30–48 則帶連結被停）。每天最多 1–3 則、內容不重複、連結放留言或簡介。",
+        "official_api": "yes",
+        "api_name": "Threads API (Meta): create container then threads_publish, scope threads_content_publish; long-lived token lasts 60 days and must be refreshed",
+        "automation": "full-api",
+        "account_gate": "Instagram/Meta account; a human creates the Meta developer app + OAuth token once; Meta signup may ask for phone (unverified)",
+        "account_gate_zh": "需 Instagram/Meta 帳號；人工一次性建立 Meta 開發者 App 並取得 token（60 天需續期）；Meta 註冊可能要求手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Spanish (MX) wording; API-automatable.",
+        "market_note_zh": "用墨西哥西語；可 API 自動。"
+      },
+      {
+        "id": "xataka_mx",
+        "name": "Xataka México",
+        "url": "https://www.xataka.com.mx",
+        "type": "review-site submission",
+        "language": "es-MX",
+        "self_promo_rules": "Mexican edition of Xataka; tip route not retrieved.",
+        "self_promo_rules_zh": "Xataka 墨西哥版；投稿管道未取得。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "None (email)",
+        "account_gate_zh": "不需帳號（Email）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Pitch route unverified.",
+        "market_note_zh": "投稿管道未驗證。"
+      },
+      {
+        "id": "fb_groups",
+        "name": "Facebook groups (local)",
+        "url": "https://www.facebook.com/groups/",
+        "type": "community",
+        "language": "local",
+        "self_promo_rules": "Each group has its own rules; most require admin approval for promo posts. Read the rules, ask admins first, one post per group, never cross-spam.",
+        "self_promo_rules_zh": "每個社團各有規則，多數要管理員核准推廣貼文。先讀規則、先問管理員、每個社團只發一次、不可洗版。",
+        "official_api": "no",
+        "api_name": "Group publishing API was removed by Meta in 2024 (background knowledge, unverified) - human only",
+        "automation": "human",
+        "account_gate": "Real Facebook account; admin approval per group",
+        "account_gate_zh": "真實 Facebook 帳號；每個社團需管理員同意",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Teachers/parents/travel groups; admin approval.",
+        "market_note_zh": "教師／家長／旅遊社團；需管理員同意。"
+      },
+      {
+        "id": "x",
+        "name": "X (Twitter)",
+        "url": "https://x.com",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Allowed; no spam/duplicate posts; automated accounts must be labelled. Manual posting is free.",
+        "self_promo_rules_zh": "可發文；禁止垃圾／重複貼文，自動帳號需標示。手動發文免費。",
+        "official_api": "yes",
+        "api_name": "X API pay-per-use credits (about $0.015/post and about $0.20/post with a URL per third-party blogs, 2026) - not zero budget",
+        "automation": "paid-api",
+        "account_gate": "New accounts commonly need phone verification (unverified)",
+        "account_gate_zh": "新帳號通常需手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Manual posting only (API costs money).",
+        "market_note_zh": "手動發文（API 要付費）。"
+      },
+      {
+        "id": "devto",
+        "name": "DEV Community",
+        "url": "https://dev.to",
+        "type": "blog platform",
+        "language": "en (other languages accepted)",
+        "self_promo_rules": "Own-project write-ups are fine when they carry real content (story/tutorial), not pure ads; DEV Code of Conduct applies (background knowledge).",
+        "self_promo_rules_zh": "自家專案文章可發，但須有實質內容（開發心得／教學），不能純廣告；適用 DEV 行為準則（來自背景知識）。",
+        "official_api": "yes",
+        "api_name": "Forem API v1: POST /api/articles (PUT to update), api-key header; key from account Settings > Extensions",
+        "automation": "full-api",
+        "account_gate": "Signup via GitHub/email; no phone or invite",
+        "account_gate_zh": "GitHub／信箱註冊；不需手機或邀請",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Spanish; API-automatable.",
+        "market_note_zh": "西語；可 API 自動。"
+      }
+    ],
+    "ID": [
+      {
+        "id": "fb_groups",
+        "name": "Facebook groups (local)",
+        "url": "https://www.facebook.com/groups/",
+        "type": "community",
+        "language": "local",
+        "self_promo_rules": "Each group has its own rules; most require admin approval for promo posts. Read the rules, ask admins first, one post per group, never cross-spam.",
+        "self_promo_rules_zh": "每個社團各有規則，多數要管理員核准推廣貼文。先讀規則、先問管理員、每個社團只發一次、不可洗版。",
+        "official_api": "no",
+        "api_name": "Group publishing API was removed by Meta in 2024 (background knowledge, unverified) - human only",
+        "automation": "human",
+        "account_gate": "Real Facebook account; admin approval per group",
+        "account_gate_zh": "真實 Facebook 帳號；每個社團需管理員同意",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Indonesian groups incl. migrant workers in Taiwan and Indonesian teachers; admin approval.",
+        "market_note_zh": "印尼社團，含在台移工與教師社團；需管理員同意。"
+      },
+      {
+        "id": "threads",
+        "name": "Threads",
+        "url": "https://www.threads.net",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-app posts are allowed, but repetitive/link-heavy posting gets throttled or suspended (this studio's old account was suspended at 30-48 link posts/day per repo README). Max 1-3 posts/day, unique text, link in a reply or bio.",
+        "self_promo_rules_zh": "可發自家 App 貼文，但重複、連續帶連結會被限流或停權（舊帳號曾因一天 30–48 則帶連結被停）。每天最多 1–3 則、內容不重複、連結放留言或簡介。",
+        "official_api": "yes",
+        "api_name": "Threads API (Meta): create container then threads_publish, scope threads_content_publish; long-lived token lasts 60 days and must be refreshed",
+        "automation": "full-api",
+        "account_gate": "Instagram/Meta account; a human creates the Meta developer app + OAuth token once; Meta signup may ask for phone (unverified)",
+        "account_gate_zh": "需 Instagram/Meta 帳號；人工一次性建立 Meta 開發者 App 並取得 token（60 天需續期）；Meta 註冊可能要求手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Indonesian wording; API-automatable.",
+        "market_note_zh": "用印尼文；可 API 自動。"
+      },
+      {
+        "id": "kaskus",
+        "name": "Kaskus",
+        "url": "https://www.kaskus.co.id",
+        "type": "community",
+        "language": "id",
+        "self_promo_rules": "Large Indonesian forum with tech/app sections; self-promo and commercial rules not retrieved (selling/ads often restricted to dedicated sections).",
+        "self_promo_rules_zh": "印尼大型論壇，有科技／App 區；自薦與商業規定未取得（廣告／販售常被限制在專區）。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Account verification by email/phone (unverified)",
+        "account_gate_zh": "信箱／手機驗證（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Check section rules; no ads outside permitted sections.",
+        "market_note_zh": "先查分區規則；不得在非許可區域放廣告。"
+      },
+      {
+        "id": "dicoding",
+        "name": "Dicoding community",
+        "url": "https://www.dicoding.com",
+        "type": "community",
+        "language": "id",
+        "self_promo_rules": "Indonesia's main developer-education community/forum; rules not retrieved - dev-tool apps only.",
+        "self_promo_rules_zh": "印尼主要的開發者教育／社群；規則未取得——僅適合開發工具 App。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Account (unverified)",
+        "account_gate_zh": "需帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "C",
+        "market_note": "Dev-tool apps only.",
+        "market_note_zh": "僅限開發工具 App。"
+      },
+      {
+        "id": "kompasiana",
+        "name": "Kompasiana",
+        "url": "https://www.kompasiana.com",
+        "type": "blog platform",
+        "language": "id",
+        "self_promo_rules": "Open citizen-blog platform of Kompas; promotional content is moderated (not retrieved).",
+        "self_promo_rules_zh": "Kompas 旗下開放式公民部落格；推廣內容會被審核（未取得原文）。",
+        "official_api": "no",
+        "api_name": "No official public posting API found",
+        "automation": "human",
+        "account_gate": "Account (unverified)",
+        "account_gate_zh": "需帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Story-style blog; moderated.",
+        "market_note_zh": "故事型部落格；會被審核。"
+      }
+    ],
+    "VN": [
+      {
+        "id": "fb_groups",
+        "name": "Facebook groups (local)",
+        "url": "https://www.facebook.com/groups/",
+        "type": "community",
+        "language": "local",
+        "self_promo_rules": "Each group has its own rules; most require admin approval for promo posts. Read the rules, ask admins first, one post per group, never cross-spam.",
+        "self_promo_rules_zh": "每個社團各有規則，多數要管理員核准推廣貼文。先讀規則、先問管理員、每個社團只發一次、不可洗版。",
+        "official_api": "no",
+        "api_name": "Group publishing API was removed by Meta in 2024 (background knowledge, unverified) - human only",
+        "automation": "human",
+        "account_gate": "Real Facebook account; admin approval per group",
+        "account_gate_zh": "真實 Facebook 帳號；每個社團需管理員同意",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Vietnamese groups incl. migrant workers in Taiwan; admin approval.",
+        "market_note_zh": "越南社團，含在台移工；需管理員同意。"
+      },
+      {
+        "id": "tinhte",
+        "name": "Tinhte.vn",
+        "url": "https://tinhte.vn",
+        "type": "community",
+        "language": "vi",
+        "self_promo_rules": "Biggest Vietnamese tech forum with an apps area; ad rules not retrieved (expect strict anti-spam).",
+        "self_promo_rules_zh": "越南最大科技論壇，有 App 區；廣告規定未取得（預期反洗版嚴格）。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Account (unverified)",
+        "account_gate_zh": "需帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "travel"
+        ],
+        "priority": "B",
+        "market_note": "Apps area; read rules first.",
+        "market_note_zh": "App 區；先讀規則。"
+      },
+      {
+        "id": "viblo",
+        "name": "Viblo",
+        "url": "https://viblo.asia",
+        "type": "blog platform",
+        "language": "vi",
+        "self_promo_rules": "Vietnamese tech knowledge-sharing platform with user articles (confirmed, Sun*); self-promo rules not retrieved - write a technical story, not an ad.",
+        "self_promo_rules_zh": "越南技術知識分享平台，使用者可發文（已確認，Sun*）；自薦規則未取得——寫技術心得而非廣告。",
+        "official_api": "no",
+        "api_name": "No official posting API found",
+        "automation": "human",
+        "account_gate": "Account via email/GitHub (unverified)",
+        "account_gate_zh": "信箱／GitHub 註冊（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Technical story, not an ad.",
+        "market_note_zh": "寫技術心得而非廣告。"
+      },
+      {
+        "id": "spiderum",
+        "name": "Spiderum",
+        "url": "https://spiderum.com",
+        "type": "blog platform",
+        "language": "vi",
+        "self_promo_rules": "Vietnamese general-interest blog platform; promo rules not retrieved.",
+        "self_promo_rules_zh": "越南綜合型部落格平台；推廣規則未取得。",
+        "official_api": "no",
+        "api_name": "No official posting API found",
+        "automation": "human",
+        "account_gate": "Account (unverified)",
+        "account_gate_zh": "需帳號（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "productivity"
+        ],
+        "priority": "C",
+        "market_note": "Story-style posts.",
+        "market_note_zh": "故事型文章。"
+      },
+      {
+        "id": "threads",
+        "name": "Threads",
+        "url": "https://www.threads.net",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-app posts are allowed, but repetitive/link-heavy posting gets throttled or suspended (this studio's old account was suspended at 30-48 link posts/day per repo README). Max 1-3 posts/day, unique text, link in a reply or bio.",
+        "self_promo_rules_zh": "可發自家 App 貼文，但重複、連續帶連結會被限流或停權（舊帳號曾因一天 30–48 則帶連結被停）。每天最多 1–3 則、內容不重複、連結放留言或簡介。",
+        "official_api": "yes",
+        "api_name": "Threads API (Meta): create container then threads_publish, scope threads_content_publish; long-lived token lasts 60 days and must be refreshed",
+        "automation": "full-api",
+        "account_gate": "Instagram/Meta account; a human creates the Meta developer app + OAuth token once; Meta signup may ask for phone (unverified)",
+        "account_gate_zh": "需 Instagram/Meta 帳號；人工一次性建立 Meta 開發者 App 並取得 token（60 天需續期）；Meta 註冊可能要求手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Vietnamese wording; API-automatable.",
+        "market_note_zh": "用越南文；可 API 自動。"
+      }
+    ],
+    "TH": [
+      {
+        "id": "fb_groups",
+        "name": "Facebook groups (local)",
+        "url": "https://www.facebook.com/groups/",
+        "type": "community",
+        "language": "local",
+        "self_promo_rules": "Each group has its own rules; most require admin approval for promo posts. Read the rules, ask admins first, one post per group, never cross-spam.",
+        "self_promo_rules_zh": "每個社團各有規則，多數要管理員核准推廣貼文。先讀規則、先問管理員、每個社團只發一次、不可洗版。",
+        "official_api": "no",
+        "api_name": "Group publishing API was removed by Meta in 2024 (background knowledge, unverified) - human only",
+        "automation": "human",
+        "account_gate": "Real Facebook account; admin approval per group",
+        "account_gate_zh": "真實 Facebook 帳號；每個社團需管理員同意",
+        "verification": "unverified",
+        "fits": [
+          "kids",
+          "education",
+          "utility",
+          "travel"
+        ],
+        "priority": "A",
+        "market_note": "Facebook is dominant in Thailand; admin approval.",
+        "market_note_zh": "泰國 Facebook 為主流；需管理員同意。"
+      },
+      {
+        "id": "threads",
+        "name": "Threads",
+        "url": "https://www.threads.net",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Own-app posts are allowed, but repetitive/link-heavy posting gets throttled or suspended (this studio's old account was suspended at 30-48 link posts/day per repo README). Max 1-3 posts/day, unique text, link in a reply or bio.",
+        "self_promo_rules_zh": "可發自家 App 貼文，但重複、連續帶連結會被限流或停權（舊帳號曾因一天 30–48 則帶連結被停）。每天最多 1–3 則、內容不重複、連結放留言或簡介。",
+        "official_api": "yes",
+        "api_name": "Threads API (Meta): create container then threads_publish, scope threads_content_publish; long-lived token lasts 60 days and must be refreshed",
+        "automation": "full-api",
+        "account_gate": "Instagram/Meta account; a human creates the Meta developer app + OAuth token once; Meta signup may ask for phone (unverified)",
+        "account_gate_zh": "需 Instagram/Meta 帳號；人工一次性建立 Meta 開發者 App 並取得 token（60 天需續期）；Meta 註冊可能要求手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Thai wording; API-automatable.",
+        "market_note_zh": "用泰文；可 API 自動。"
+      },
+      {
+        "id": "blognone",
+        "name": "Blognone",
+        "url": "https://www.blognone.com",
+        "type": "review-site submission",
+        "language": "th",
+        "self_promo_rules": "Thai tech news site; community-submitted news route exists (from background knowledge, unverified).",
+        "self_promo_rules_zh": "泰國科技新聞站；有讀者投稿新聞的管道（背景知識，未驗證）。",
+        "official_api": "no",
+        "api_name": "No API",
+        "automation": "human",
+        "account_gate": "Account/email (unverified)",
+        "account_gate_zh": "帳號／Email（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "productivity",
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "News-tip route unverified.",
+        "market_note_zh": "新聞投稿管道未驗證。"
+      },
+      {
+        "id": "pantip",
+        "name": "Pantip",
+        "url": "https://pantip.com",
+        "type": "community",
+        "language": "th",
+        "self_promo_rules": "Largest Thai forum; commercial posts are generally restricted (not retrieved) - only a genuine question/story in a matching room.",
+        "self_promo_rules_zh": "泰國最大論壇；商業貼文通常受限（未取得）——只在相符討論室發真實的提問／心得。",
+        "official_api": "no",
+        "api_name": "No official posting API",
+        "automation": "human",
+        "account_gate": "Account; phone verification likely (unverified)",
+        "account_gate_zh": "需帳號；可能要手機驗證（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "utility",
+          "kids",
+          "education",
+          "travel"
+        ],
+        "priority": "C",
+        "market_note": "Only genuine questions/stories in a matching room.",
+        "market_note_zh": "只在相符討論室發真實提問／心得。"
+      }
+    ],
+    "IN": [
+      {
+        "id": "producthunt",
+        "name": "Product Hunt",
+        "url": "https://www.producthunt.com",
+        "type": "directory",
+        "language": "en",
+        "self_promo_rules": "Launching your own product is the point (free, once per product launch). No soliciting or faking upvotes/comments; be present to answer comments (background knowledge, official page not retrieved).",
+        "self_promo_rules_zh": "本來就是讓作者發表自己的產品（免費、每次發表一次）；禁止拉票／灌評論，發表當天需親自回覆留言（背景知識，官方頁面未取得）。",
+        "official_api": "no",
+        "api_name": "API v2 is GraphQL (OAuth/developer token) mainly for reading data; no launch-creation endpoint was found",
+        "automation": "human",
+        "account_gate": "Email/Google/X account with a real profile; new/empty accounts may be limited (unverified)",
+        "account_gate_zh": "信箱／Google／X 帳號並完整個人檔案；新帳號可能受限（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "utility",
+          "productivity",
+          "kids",
+          "education",
+          "travel",
+          "dev-tool"
+        ],
+        "priority": "A",
+        "market_note": "Large Indian maker community on PH; note iOS share in India is small.",
+        "market_note_zh": "PH 上印度 maker 社群大；但印度 iOS 市占小。"
+      },
+      {
+        "id": "hashnode",
+        "name": "Hashnode",
+        "url": "https://hashnode.com",
+        "type": "blog platform",
+        "language": "en",
+        "self_promo_rules": "Own-project articles allowed when substantive; spammy/pure-ad posts removed (background knowledge).",
+        "self_promo_rules_zh": "可發自家專案文章，需有實質內容；純廣告會被移除（背景知識）。",
+        "official_api": "yes",
+        "api_name": "Hashnode Public API (GraphQL), publishPost mutation, Personal Access Token from Settings > Developer (token step confirmed; mutation name from background knowledge)",
+        "automation": "full-api",
+        "account_gate": "Email/GitHub/Google signup; no phone",
+        "account_gate_zh": "信箱／GitHub／Google 註冊；不需手機",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "Strong Indian dev readership; API-automatable.",
+        "market_note_zh": "印度開發者讀者多；可 API 自動。"
+      },
+      {
+        "id": "devto",
+        "name": "DEV Community",
+        "url": "https://dev.to",
+        "type": "blog platform",
+        "language": "en (other languages accepted)",
+        "self_promo_rules": "Own-project write-ups are fine when they carry real content (story/tutorial), not pure ads; DEV Code of Conduct applies (background knowledge).",
+        "self_promo_rules_zh": "自家專案文章可發，但須有實質內容（開發心得／教學），不能純廣告；適用 DEV 行為準則（來自背景知識）。",
+        "official_api": "yes",
+        "api_name": "Forem API v1: POST /api/articles (PUT to update), api-key header; key from account Settings > Extensions",
+        "automation": "full-api",
+        "account_gate": "Signup via GitHub/email; no phone or invite",
+        "account_gate_zh": "GitHub／信箱註冊；不需手機或邀請",
+        "verification": "partial",
+        "fits": [
+          "dev-tool"
+        ],
+        "priority": "B",
+        "market_note": "API-automatable.",
+        "market_note_zh": "可 API 自動。"
+      },
+      {
+        "id": "r_devindia",
+        "name": "Reddit r/developersIndia",
+        "url": "https://www.reddit.com/r/developersIndia/",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Heavily restricts self-promotion; a monthly Showcase Sunday megathread exists for apps/tools/WIP projects; link-first ad-like posts get removed (search-confirmed).",
+        "self_promo_rules_zh": "嚴格限制自我推廣；每月「Showcase Sunday」置頂串可展示 App／工具／進行中專案；以連結開頭、像廣告的貼文會被移除（搜尋佐證）。",
+        "official_api": "gated",
+        "api_name": "Reddit Data API gated - human posting",
+        "automation": "human",
+        "account_gate": "Reddit account",
+        "account_gate_zh": "Reddit 帳號",
+        "verification": "search-confirmed",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "Only inside the monthly Showcase Sunday megathread.",
+        "market_note_zh": "只能發在每月 Showcase Sunday 置頂串。"
+      },
+      {
+        "id": "peerlist",
+        "name": "Peerlist (Launchpad)",
+        "url": "https://peerlist.io",
+        "type": "community",
+        "language": "en",
+        "self_promo_rules": "Indian-founded professional network with weekly project launches; not found in search - rules unverified.",
+        "self_promo_rules_zh": "印度出身的專業人士網路，有每週專案發表；搜尋未找到資料——規則未驗證。",
+        "official_api": "no",
+        "api_name": "No official posting API found",
+        "automation": "human",
+        "account_gate": "Account via LinkedIn/GitHub/Google (unverified)",
+        "account_gate_zh": "LinkedIn／GitHub／Google 登入（未驗證）",
+        "verification": "unverified",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "B",
+        "market_note": "Weekly launches; unverified.",
+        "market_note_zh": "每週發表；未驗證。"
+      },
+      {
+        "id": "x",
+        "name": "X (Twitter)",
+        "url": "https://x.com",
+        "type": "social",
+        "language": "multi",
+        "self_promo_rules": "Allowed; no spam/duplicate posts; automated accounts must be labelled. Manual posting is free.",
+        "self_promo_rules_zh": "可發文；禁止垃圾／重複貼文，自動帳號需標示。手動發文免費。",
+        "official_api": "yes",
+        "api_name": "X API pay-per-use credits (about $0.015/post and about $0.20/post with a URL per third-party blogs, 2026) - not zero budget",
+        "automation": "paid-api",
+        "account_gate": "New accounts commonly need phone verification (unverified)",
+        "account_gate_zh": "新帳號通常需手機驗證（未驗證）",
+        "verification": "partial",
+        "fits": [
+          "dev-tool",
+          "productivity",
+          "utility"
+        ],
+        "priority": "C",
+        "market_note": "Manual posting only.",
+        "market_note_zh": "手動發文。"
+      }
+    ]
+  },
+  "global": [
+    {
+      "id": "apple_featuring",
+      "name": "Apple App Store featuring nomination",
+      "url": "https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring",
+      "type": "directory",
+      "language": "multi",
+      "self_promo_rules": "Free nomination form inside App Store Connect for new apps, new content or enhancements; roles Account Holder/Admin/App Manager/Marketing; submit well ahead (3-week / 3-month figures are third-party). Note: repo growth README scopes App Store Connect out, so this is a human decision.",
+      "self_promo_rules_zh": "App Store Connect 內的免費提名表單（新 App、新內容、重大更新）；需 Account Holder／Admin／App Manager／Marketing 角色；要提前提交（3 週／3 個月為第三方說法）。注意：growth README 把 App Store Connect 排除在範圍外，需人工決定。",
+      "official_api": "no",
+      "api_name": "No API (form in App Store Connect)",
+      "automation": "human",
+      "account_gate": "Apple Developer account with an eligible role",
+      "account_gate_zh": "Apple 開發者帳號且具備合格角色",
+      "verification": "search-confirmed",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "bluesky",
+      "name": "Bluesky",
+      "url": "https://bsky.app",
+      "type": "social",
+      "language": "multi",
+      "self_promo_rules": "Own-project posts fine; automation tolerated if not spammy (label bots, no unsolicited mentions/replies) - policy text not retrieved.",
+      "self_promo_rules_zh": "可發自家專案；自動化需不洗版（建議標示為機器人、不主動 @ 陌生人）——政策原文未取得。",
+      "official_api": "yes",
+      "api_name": "AT Protocol: com.atproto.server.createSession + com.atproto.repo.createRecord (app.bsky.feed.post) using an app password; SDKs @atproto/api, atproto (Python)",
+      "automation": "full-api",
+      "account_gate": "Email confirmation; no phone/invite needed (unverified)",
+      "account_gate_zh": "信箱驗證；不需手機／邀請碼（未驗證）",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "mastodon",
+      "name": "Mastodon (per-instance)",
+      "url": "https://docs.joinmastodon.org/methods/statuses/",
+      "type": "social",
+      "language": "multi",
+      "self_promo_rules": "Rules differ per instance; most allow occasional own-project posts; many require the bot flag for automated accounts.",
+      "self_promo_rules_zh": "規則依各 instance 而定；多數允許偶爾分享自己的專案，自動帳號多半要勾選 bot 旗標。",
+      "official_api": "yes",
+      "api_name": "Mastodon REST API POST /api/v1/statuses with a user token that has write:statuses",
+      "automation": "full-api",
+      "account_gate": "Instance-dependent: email confirmation, some instances need manual approval; no phone",
+      "account_gate_zh": "依 instance：信箱驗證，部分需人工審核；不需手機",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "x",
+      "name": "X (Twitter)",
+      "url": "https://x.com",
+      "type": "social",
+      "language": "multi",
+      "self_promo_rules": "Allowed; no spam/duplicate posts; automated accounts must be labelled. Manual posting is free.",
+      "self_promo_rules_zh": "可發文；禁止垃圾／重複貼文，自動帳號需標示。手動發文免費。",
+      "official_api": "yes",
+      "api_name": "X API pay-per-use credits (about $0.015/post and about $0.20/post with a URL per third-party blogs, 2026) - not zero budget",
+      "automation": "paid-api",
+      "account_gate": "New accounts commonly need phone verification (unverified)",
+      "account_gate_zh": "新帳號通常需手機驗證（未驗證）",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "devto",
+      "name": "DEV Community",
+      "url": "https://dev.to",
+      "type": "blog platform",
+      "language": "en (other languages accepted)",
+      "self_promo_rules": "Own-project write-ups are fine when they carry real content (story/tutorial), not pure ads; DEV Code of Conduct applies (background knowledge).",
+      "self_promo_rules_zh": "自家專案文章可發，但須有實質內容（開發心得／教學），不能純廣告；適用 DEV 行為準則（來自背景知識）。",
+      "official_api": "yes",
+      "api_name": "Forem API v1: POST /api/articles (PUT to update), api-key header; key from account Settings > Extensions",
+      "automation": "full-api",
+      "account_gate": "Signup via GitHub/email; no phone or invite",
+      "account_gate_zh": "GitHub／信箱註冊；不需手機或邀請",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "hashnode",
+      "name": "Hashnode",
+      "url": "https://hashnode.com",
+      "type": "blog platform",
+      "language": "en",
+      "self_promo_rules": "Own-project articles allowed when substantive; spammy/pure-ad posts removed (background knowledge).",
+      "self_promo_rules_zh": "可發自家專案文章，需有實質內容；純廣告會被移除（背景知識）。",
+      "official_api": "yes",
+      "api_name": "Hashnode Public API (GraphQL), publishPost mutation, Personal Access Token from Settings > Developer (token step confirmed; mutation name from background knowledge)",
+      "automation": "full-api",
+      "account_gate": "Email/GitHub/Google signup; no phone",
+      "account_gate_zh": "信箱／GitHub／Google 註冊；不需手機",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram channel (own)",
+      "url": "https://core.telegram.org/bots/api",
+      "type": "social",
+      "language": "multi",
+      "self_promo_rules": "Your own channel: unrestricted, but discovery is low (existing daily channel already runs per repo README).",
+      "self_promo_rules_zh": "自己的頻道：沒有限制但自然曝光低（repo README 顯示已有每日自動貼文）。",
+      "official_api": "yes",
+      "api_name": "Telegram Bot API (bot token) - already in use",
+      "automation": "full-api",
+      "account_gate": "Phone needed once to create the Telegram account",
+      "account_gate_zh": "建立 Telegram 帳號時需手機一次",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "fb_page",
+      "name": "Facebook Page (own)",
+      "url": "https://developers.facebook.com/docs/pages-api/",
+      "type": "social",
+      "language": "multi",
+      "self_promo_rules": "Your own Page: free, normal Meta community standards.",
+      "self_promo_rules_zh": "自己的粉專：免費，適用一般 Meta 社群守則。",
+      "official_api": "yes",
+      "api_name": "Meta Graph API Pages publish (pages_manage_posts) - background knowledge, not verified here",
+      "automation": "full-api",
+      "account_gate": "Facebook account + Meta developer app (human, one-time)",
+      "account_gate_zh": "Facebook 帳號＋Meta 開發者 App（人工一次性）",
+      "verification": "unverified",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "r_iosapps",
+      "name": "Reddit r/iosapps",
+      "url": "https://www.reddit.com/r/iosapps/",
+      "type": "community",
+      "language": "en",
+      "self_promo_rules": "Rules not retrieved - read the sidebar before posting anything.",
+      "self_promo_rules_zh": "規則未取得——發文前務必先讀側欄。",
+      "official_api": "gated",
+      "api_name": "Reddit Data API gated - human posting",
+      "automation": "human",
+      "account_gate": "Reddit account",
+      "account_gate_zh": "Reddit 帳號",
+      "verification": "unverified",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "r_apphookup",
+      "name": "Reddit r/AppHookup",
+      "url": "https://www.reddit.com/r/AppHookup/",
+      "type": "community",
+      "language": "en",
+      "self_promo_rules": "Deals only (price drops, free, promo codes); sales must go through App Store IAP (no RevenueCat/Adapty-granted entitlements); App Store promo codes OK (mirror copies of rules, Jun 2024 / Nov 2025).",
+      "self_promo_rules_zh": "只限優惠（降價、免費、兌換碼）；必須走 App Store 內購（不接受 RevenueCat/Adapty 發放的權益）；App Store 兌換碼可（來源為規則鏡像頁，2024/6、2025/11）。",
+      "official_api": "gated",
+      "api_name": "Reddit Data API gated - human posting",
+      "automation": "human",
+      "account_gate": "Reddit account",
+      "account_gate_zh": "Reddit 帳號",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    },
+    {
+      "id": "betalist",
+      "name": "BetaList",
+      "url": "https://betalist.com/submit",
+      "type": "directory",
+      "language": "en",
+      "self_promo_rules": "Free submission queue (about 2 months per a 2025 guide) or $130 fast-track (do not pay); aimed at pre-launch startups, weak fit for already-released utility apps.",
+      "self_promo_rules_zh": "免費排隊（2025 年的整理稱約 2 個月）或付費 $130 加速（預算為零，不付）；定位是上市前新創，對已上架的工具 App 契合度低。",
+      "official_api": "no",
+      "api_name": "No posting API (web form)",
+      "automation": "human",
+      "account_gate": "Free account",
+      "account_gate_zh": "免費帳號",
+      "verification": "partial",
+      "fits": [
+        "utility",
+        "productivity",
+        "kids",
+        "education",
+        "travel",
+        "dev-tool"
+      ]
+    }
+  ]
+}

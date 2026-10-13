@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T12:38:48Z",
+  "updated_at": "2026-10-13T13:52:00Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -41,17 +41,18 @@
     },
     {
       "id": "oa-paired-release",
-      "title": "讓本機 Claude 做一次配對發布（正式站自 10/4 未更新）",
-      "url": "https://office.cait518.cc",
-      "how": "每日 GEO 產線跑綠後，對本機 GrowthEngine 說「請做一次配對發布」。",
-      "status": "todo"
+      "title": "正式站自 10/4 停更：配對發布（雲端已修好被取消的原因並重新發布）",
+      "url": "https://github.com/alice51849/ios-app-guide/actions/workflows/pages.yml",
+      "how": "不用動手。原因是 main 的一般推送會取消配對發布；雲端已改 pages.yml 並在 10/13 21:51 重新發布，上線後這格自動標已完成。",
+      "status": "in_progress"
     },
     {
       "id": "oa-05",
       "title": "在 Mac 上允許本機 Claude 跑一次 GrowthEngine 與 threads-autopilot",
-      "how": "一次授權後本機 Claude 會：把 30 多個 best-* GEO 頁與「最好用／great choice」模板 FAQ 改成問題導向、所有 GEO 頁語言行改 50、修 QR Code Halo「絕不自動開啟」與 WiFi Aid Lite 免費額度宣稱、從 ASC 回抄 snapportlite／sononote／cv 資料檔、把 app-posts.json 排入 threads-autopilot（每帳號每天 ≤3、連結放留言）。",
-      "status": "todo",
-      "url": "https://office.cait518.cc"
+      "how": "已完成：你在本機 session 貼上長期授權。原本卡住的三項（改 pages.yml、重新發布、每日排程）已改由雲端處理，不需要你再按允許。",
+      "status": "done",
+      "url": "https://office.cait518.cc",
+      "done_at": "2026-10-13T12:26:34Z"
     },
     {
       "id": "oa-06",
@@ -242,8 +243,8 @@
         {
           "id": "lumimission-03",
           "title": "調整 mission_routines_full.json 關鍵字順序，讓每日計分板量到真正的目標詞",
-          "detail": "growth_scoreboard.py 只量每語系前 3 個關鍵字。把 /home/user/ios-app-guide/_engine/data/mission_routines_full.json 的 zh-Hant 前三改成「兒童作息,獎勵表,集點表」、ja「ごほうびシール,お支度ボード,生活習慣」、ko「칭찬스티커,생활습관,등원준비」，並刪掉 zh-Hans 混入的「逻辑,数字,照片,滤镜,天气」；同時把資料檔的語言行改成 50，讓 GEO 頁與 Telegram 一併繼承。",
-          "owner": "claude",
+          "detail": "growth_scoreboard.py 只量每語系前 3 個關鍵字。把 /home/user/ios-app-guide/_engine/data/mission_routines_full.json 的 zh-Hant 前三改成「兒童作息,獎勵表,集點表」、ja「ごほうびシール,お支度ボード,生活習慣」、ko「칭찬스티커,생활습관,등원준비」，並刪掉 zh-Hans 混入的「逻辑,数字,照片,滤镜,天气」；同時把資料檔的語言行改成 50，讓 GEO 頁與 Telegram 一併繼承。（改 _engine/data 需在 00_GrowthEngine 改再鏡像，交本機。）",
+          "owner": "local",
           "impact": "high",
           "status": "todo",
           "note": "需要修改 _engine/data/mission_routines_full.json（資料檔，不在 drafts/ 範圍內），所以沒有動。計分板量測詞已放在 challenge_terms.lumimission；語言行改成 50、清掉 zh-Hans 無關關鍵字這兩件事還沒做"
@@ -343,8 +344,8 @@
         {
           "id": "lumibopomofo-08",
           "title": "資料檔與 live 文案同步",
-          "detail": "用 lookup 的 description 回填 bopomofo_full.json（TW／US／JP／KR／VN），避免後續分析再用舊稿。",
-          "owner": "claude",
+          "detail": "用 lookup 的 description 回填 bopomofo_full.json（TW／US／JP／KR／VN），避免後續分析再用舊稿。（資料檔在 _engine/data（鏡像），交本機。）",
+          "owner": "local",
           "impact": "medium",
           "status": "todo",
           "note": "需用 App Store live 文案改寫 _engine/data/bopomofo_full.json（TW／US／JP／KR／VN），屬 drafts 以外的資料檔與 ASC 線上資料，不在本次可寫範圍"
@@ -975,7 +976,7 @@
         {
           "id": "aim990-04",
           "title": "清理 Aim990 Plus 懸空引用與舊文案",
-          "detail": "從 data/ios-app-decision-matrix.* 移除 aim990plus 並從 aim990 的 sibling_app_keys 拿掉；buyer_intent 的「best …」改中性描述；刪 telegram_posts.json 的 4 筆 Aim990 Plus，把 Aim990 的 en/ja/ko 貼文改成「8 分鐘診斷→最弱 3 項→每天一項」並新增 vi 貼文。",
+          "detail": "從 data/ios-app-decision-matrix.* 移除 aim990plus 並從 aim990 的 sibling_app_keys 拿掉；buyer_intent 的「best …」改中性描述；刪 telegram_posts.json 的 4 筆 Aim990 Plus，把 Aim990 的 en/ja/ko 貼文改成「8 分鐘診斷→最弱 3 項→每天一項」並新增 vi 貼文。（雲端只做 telegram_posts.json 部分；_engine/data 部分另開本機項目。）",
           "owner": "claude",
           "impact": "high",
           "status": "todo",
@@ -1009,6 +1010,14 @@
           "detail": "間隔 ≥7 天，正文不放商店連結；配合台灣多益公開測驗日期前 14/7 天各發一篇緊急模式貼文。",
           "owner": "local",
           "impact": "low",
+          "status": "todo"
+        },
+        {
+          "id": "aim990-04b",
+          "title": "Aim990 Plus 懸空引用：decision-matrix 與 sibling_app_keys（資料部分）",
+          "detail": "接 aim990-04 的資料部分：data/ios-app-decision-matrix.* 移除 aim990plus、aim990 的 sibling_app_keys 拿掉、buyer_intent 去 best；在 00_GrowthEngine 改再鏡像。",
+          "owner": "local",
+          "impact": "high",
           "status": "todo"
         }
       ]
@@ -1631,7 +1640,7 @@
         {
           "id": "lumiweather-03",
           "title": "改寫 Telegram 三篇並修資料檔語言行與前三關鍵字",
-          "detail": "telegram_posts.json 的 6779552704：刪「給孩子看的天氣／child-friendly／親子で見る」，改用 live 名稱與 listing 的外出指數、一句判斷、最佳時段、帶傘／防曬提示、Apple WeatherKit、50 語可切換；/home/user/ios-app-guide/_engine/data/weather_full.json 的「40 多種語言」全部改 50，zh-Hant 前三關鍵字改「穿搭 天氣,今天穿什麼,外出指數」、ja「服装 天気,おでかけ 天気,おでかけ指数」、en「what to wear weather,outfit weather,outing score」，讓計分板量利基詞。",
+          "detail": "telegram_posts.json 的 6779552704：刪「給孩子看的天氣／child-friendly／親子で見る」，改用 live 名稱與 listing 的外出指數、一句判斷、最佳時段、帶傘／防曬提示、Apple WeatherKit、50 語可切換；/home/user/ios-app-guide/_engine/data/weather_full.json 的「40 多種語言」全部改 50，zh-Hant 前三關鍵字改「穿搭 天氣,今天穿什麼,外出指數」、ja「服装 天気,おでかけ 天気,おでかけ指数」、en「what to wear weather,outfit weather,outing score」，讓計分板量利基詞。（雲端只做 telegram_posts.json 部分；_engine/data 部分另開本機項目。）",
           "owner": "claude",
           "impact": "high",
           "status": "todo",
@@ -1665,6 +1674,14 @@
           "detail": "錄繁中／日／英「3 秒決定穿什麼」實機影片；鋒面、溫差、颱風當天用自己的帳號發一篇（不放連結）；印尼語貼文只在台灣移工 Facebook 社團版規允許處分享，明說只支援 iPhone、兩人共用時只切換介面語言；Reddit r/iOSapps 只在允許自薦的串以開發者身分發英文。",
           "owner": "you",
           "impact": "medium",
+          "status": "todo"
+        },
+        {
+          "id": "lumiweather-03b",
+          "title": "lumiweather 資料檔語言行與前三關鍵字（_engine/data 部分）",
+          "detail": "接 lumiweather-03 的資料檔部分：在 00_GrowthEngine 改 lumiweather_full.json 再鏡像到 Guide。",
+          "owner": "local",
+          "impact": "high",
           "status": "todo"
         }
       ]
@@ -1768,8 +1785,8 @@
         {
           "id": "lumibopomofopro-06",
           "title": "資料檔同步 live",
-          "detail": "bopomofo_pro_full.json 的 JP 名稱改「台湾華語」版、TW 說明換成 live 全形版，避免後續分析再誤判。",
-          "owner": "claude",
+          "detail": "bopomofo_pro_full.json 的 JP 名稱改「台湾華語」版、TW 說明換成 live 全形版，避免後續分析再誤判。（資料檔在 _engine/data（鏡像），交本機。）",
+          "owner": "local",
           "impact": "medium",
           "status": "todo",
           "note": "需改 _engine/data/bopomofo_pro_full.json（JP 名稱改台湾華語版、TW 說明換 live 全形版），屬 drafts 以外的資料檔與 ASC 線上資料"
@@ -2434,8 +2451,8 @@
         {
           "id": "tripplanet-01",
           "title": "把 tripplanet_full.json 全面改成 live 名稱與正確關鍵字",
-          "detail": "檔案 /home/user/ios-app-guide/_engine/data/tripplanet_full.json：name 改成 live（TW「Trip Planet 親子旅行遊戲」、JP「Trip Planet 子ども旅行ゲーム」、KR「Trip Planet 아이 여행 게임」、US「Trip Planet: Kids Quest」），刪「雜誌,使命,trip planner,ジャーナル,신문」等機翻詞，zh-Hant 前三改「帶小孩出國,飛機上 小孩,親子旅行」、ja「子連れ旅行,旅行 子ども,機内 子ども」、en「road trip games for kids,travel bingo,kids travel missions」，促銷文改掉「轉『我們到了嗎？』變成樂趣」機翻；GEO 頁、catalog、計分板都會繼承。",
-          "owner": "claude",
+          "detail": "檔案 /home/user/ios-app-guide/_engine/data/tripplanet_full.json：name 改成 live（TW「Trip Planet 親子旅行遊戲」、JP「Trip Planet 子ども旅行ゲーム」、KR「Trip Planet 아이 여행 게임」、US「Trip Planet: Kids Quest」），刪「雜誌,使命,trip planner,ジャーナル,신문」等機翻詞，zh-Hant 前三改「帶小孩出國,飛機上 小孩,親子旅行」、ja「子連れ旅行,旅行 子ども,機内 子ども」、en「road trip games for kids,travel bingo,kids travel missions」，促銷文改掉「轉『我們到了嗎？』變成樂趣」機翻；GEO 頁、catalog、計分板都會繼承。（資料檔在 _engine/data（鏡像），交本機。）",
+          "owner": "local",
           "impact": "high",
           "status": "todo",
           "note": "需要修改 _engine/data/tripplanet_full.json（資料檔），所以沒有動。新的 name、≤100 字元的關鍵字、≤170 字元的宣傳文字（zh-Hant／ja／en-US）見 drafts/tripplanet/listing-data-fix-proposal.md；計分板量測詞放在 challenge_terms.tripplanet"

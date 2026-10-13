@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "note": "衝榜目標：成績單每天量這些 App 在所有店面類別榜（免費＋營收）的名次，報告最前面列出離目標名次還差多少。到期自動停止量測。 spotlight_until 之前，Telegram 每日精選的「今日焦點」固定輪播這款的貼文。",
+  "note": "衝榜目標：成績單每天量這些 App 在所有店面類別榜（免費＋營收）的名次與對手名次，並量 terms 裡的關鍵字搜尋名次，報告最前面列出離目標還差多少。到期自動停止量測。spotlight_until 之前，Telegram 每日精選的「今日焦點」固定輪播這款的貼文。",
   "apps": [
     {
       "key": "claudeusagemini",
@@ -14,7 +14,51 @@
       "goal": 3,
       "since": "2026-10-13",
       "until": "2026-12-31",
-      "spotlight_until": "2026-10-27"
+      "spotlight_until": "2026-10-27",
+      "rivals": {
+        "6783130074": "Limits: AI Usage Tracker",
+        "6812881047": "usAge：AI 額度儀表",
+        "6757701908": "Claude Code Notifier Companion",
+        "6783099717": "Token Monitor: AI Usage",
+        "6801493876": "AI Limits Tracker",
+        "6787769891": "CodexBar Usage Monitor",
+        "6813024228": "Codex Tracker - Resets & Usage",
+        "6759642037": "UsageScope: AI 사용량 관리"
+      },
+      "terms": {
+        "tw": [
+          "claude 用量",
+          "claude code",
+          "ai 額度",
+          "ai usage",
+          "claude"
+        ],
+        "hk": [
+          "claude usage",
+          "ai usage"
+        ],
+        "jp": [
+          "claude 使用量",
+          "ai 使用量",
+          "claude code",
+          "claude 制限"
+        ],
+        "us": [
+          "claude usage",
+          "claude limit",
+          "codex usage",
+          "ai usage tracker",
+          "claude code",
+          "ai limits"
+        ],
+        "gb": [
+          "claude usage"
+        ],
+        "kr": [
+          "claude 사용량",
+          "ai 사용량"
+        ]
+      }
     }
   ]
 }

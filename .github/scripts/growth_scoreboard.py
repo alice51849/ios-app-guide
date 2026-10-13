@@ -164,12 +164,24 @@ def load_focus(path=FOCUS_PATH, today=None, app_ids=None):
         if str(row.get("until") or "9999-12-31") < today:
             continue
         kinds = [kind for kind in row.get("kinds") or ["free"] if kind in FOCUS_KINDS]
+        rivals = {
+            str(rival): str(name)[:60]
+            for rival, name in (row.get("rivals") or {}).items()
+            if APP_ID_RE.fullmatch(str(rival)) and str(rival) != app_id
+        }
+        terms = {
+            str(country).lower(): split_keywords(",".join(str(t) for t in values or []), 10)
+            for country, values in (row.get("terms") or {}).items()
+            if re.fullmatch(r"[a-zA-Z]{2}", str(country))
+        }
         focus.append({
             "app_id": app_id,
             "genre_id": genre_id,
             "genre": str(row.get("genre") or ""),
             "kinds": kinds or ["free"],
             "goal": int(row.get("goal") or 3),
+            "rivals": rivals,
+            "terms": {country: values for country, values in terms.items() if values},
         })
     return focus
 
@@ -408,9 +420,11 @@ def previous_total(state, today):
 
 
 def measure_focus(focus, countries, state, fetcher, outcome, date, note_error):
-    """Today's position of each focus App in every storefront's category chart."""
+    """Today's chart position of each focus App and its rivals in every
+    storefront, plus its search rank for the focus terms."""
     for target in focus:
-        positions = {}
+        watched = [target["app_id"], *target.get("rivals", {})]
+        positions, rivals, searches = {}, {}, {}
         for country in countries:
             for kind in target["kinds"]:
                 try:
@@ -419,11 +433,31 @@ def measure_focus(focus, countries, state, fetcher, outcome, date, note_error):
                     note_error(error)
                     continue
                 outcome["focus_charts"] += 1
-                if target["app_id"] in ordered:
-                    positions[f"{country}|{kind}"] = ordered.index(target["app_id"]) + 1
+                key = f"{country}|{kind}"
+                for app_id in watched:
+                    if app_id in ordered:
+                        spot = ordered.index(app_id) + 1
+                        if app_id == target["app_id"]:
+                            positions[key] = spot
+                        else:
+                            rivals.setdefault(key, {})[app_id] = spot
+        for country, terms in sorted(target.get("terms", {}).items()):
+            for term in terms:
+                try:
+                    result = search_storefront(fetcher, term, country, set(watched))
+                except FetchError as error:
+                    note_error(error)
+                    continue
+                outcome["focus_searches"] += 1
+                searches[f"{country}|{term}"] = {
+                    "rank": result["ranks"].get(target["app_id"]),
+                    "rivals": {k: v for k, v in result["ranks"].items() if k != target["app_id"]},
+                    "top": result["top"],
+                    "results": result["result_count"],
+                }
         history = state.setdefault("focus", {}).setdefault(target["app_id"], [])
         history[:] = [row for row in history if row.get("date") != date]
-        history.append({"date": date, "positions": positions})
+        history.append({"date": date, "positions": positions, "rivals": rivals, "searches": searches})
         history.sort(key=lambda row: row["date"])
         del history[:-HISTORY_DAYS]
 
@@ -433,7 +467,7 @@ def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
     stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     app_ids = {app.app_id for app in apps}
     countries = sorted(set(storefronts.values()))
-    outcome = {"lookups": 0, "searches": 0, "charts": 0, "focus_charts": 0,
+    outcome = {"lookups": 0, "searches": 0, "charts": 0, "focus_charts": 0, "focus_searches": 0,
                "rate_limited": None, "errors": 0, "charts_unavailable": False}
     genre_by_app = {}
     tasks = build_tasks(apps, storefronts, keywords_by_app, challenge_terms)
@@ -557,34 +591,64 @@ KIND_ZH = {"free": "免費", "paid": "付費", "grossing": "營收"}
 
 
 def focus_lines(focus, names, state, date):
-    """Chart-push section: where each focus App stands versus its goal."""
+    """Chart-push section: where each focus App stands versus its goal and rivals."""
     lines = []
     for target in focus:
         history = state.get("focus", {}).get(target["app_id"]) or []
-        today = next((row["positions"] for row in history if row["date"] == date), None)
+        today = next((row for row in history if row["date"] == date), None)
         if today is None:
             continue
         earlier = [row for row in history if row["date"] < date]
-        before = earlier[-1]["positions"] if earlier else {}
+        before = earlier[-1] if earlier else {}
+        positions = today.get("positions", {})
+        rival_names = target.get("rivals", {})
         goal = target["goal"]
         name = names.get(target["app_id"], target["app_id"])
-        reached = sorted(key for key, position in today.items() if position <= goal)
+        reached = sorted(key for key, position in positions.items() if position <= goal)
+
+        def best_rival(spots):
+            if not spots:
+                return "—"
+            rival, spot = min(spots.items(), key=lambda item: (item[1], item[0]))
+            return f"{_cell(rival_names.get(rival, rival))} #{spot}"
+
         lines += [
             f"## 衝榜目標：{_cell(name)}（{_cell(target['genre'])} 榜前 {goal} 名）",
             "",
-            f"- 今天上榜：**{len(today)}** 個店面榜；達標（前 {goal} 名）：**{len(reached)}** 個"
+            f"- 今天上榜：**{len(positions)}** 個店面榜；達標（前 {goal} 名）：**{len(reached)}** 個"
             + (f"（{'、'.join(k.split('|')[0].upper() + KIND_ZH.get(k.split('|')[1], '') for k in reached)}）" if reached else ""),
             "",
         ]
-        if today:
-            lines += ["| 店面 | 榜 | 今天 | 前次 | 變化 |", "|---|---|---|---|---|"]
-            for key, position in sorted(today.items(), key=lambda item: (item[1], item[0]))[:25]:
+        rivals = today.get("rivals", {})
+        keys = sorted(set(positions) | set(rivals),
+                      key=lambda key: (positions.get(key, 10**6), min(rivals.get(key, {}).values(), default=10**6), key))
+        if keys:
+            lines += ["| 店面 | 榜 | 我們 | 前次 | 變化 | 最強對手 |", "|---|---|---|---|---|---|"]
+            for key in keys[:30]:
                 country, kind = key.split("|")
-                prior = before.get(key)
-                change = "新上榜" if prior is None else (f"{prior - position:+d}" if prior != position else "—")
-                lines.append(f"| {country.upper()} | {KIND_ZH.get(kind, kind)} | {position} | {prior or '—'} | {change} |")
+                position = positions.get(key)
+                prior = (before.get("positions") or {}).get(key)
+                if position is None:
+                    change = "掉出榜" if prior else "—"
+                elif prior is None:
+                    change = "新上榜"
+                else:
+                    change = f"{prior - position:+d}" if prior != position else "—"
+                lines.append(f"| {country.upper()} | {KIND_ZH.get(kind, kind)} | {position or '未上榜'} "
+                             f"| {prior or '—'} | {change} | {best_rival(rivals.get(key))} |")
         else:
-            lines.append(f"今天所有店面的 {_cell(target['genre'])} 榜前 100 名都還沒有它。")
+            lines.append(f"今天所有店面的 {_cell(target['genre'])} 榜前 100 名都還沒有它和對手。")
+        searches = today.get("searches", {})
+        if searches:
+            prior_searches = before.get("searches") or {}
+            lines += ["", "**每日關鍵字名次**", "",
+                      "| 店面 | 關鍵字 | 我們 | 前次 | 第 1 名（評分） | 最強對手 |", "|---|---|---|---|---|---|"]
+            for key, entry in sorted(searches.items(), key=lambda item: (item[1].get("rank") or 10**6, item[0])):
+                country, term = key.split("|", 1)
+                prior = (prior_searches.get(key) or {}).get("rank")
+                top = entry.get("top") or {}
+                lines.append(f"| {country.upper()} | {_cell(term)} | {entry.get('rank') or '200+'} | {prior or '—'} "
+                             f"| {_cell(top.get('name', '—'))}（{top.get('ratings', 0)}） | {best_rival(entry.get('rivals'))} |")
         lines.append("")
     return lines
 
@@ -770,6 +834,7 @@ def main(argv=None):
             "search_tasks": len(tasks),
             "challenge_tasks": sum(1 for task in tasks if task["source"] == "challenge"),
             "focus_charts": sum(len(target["kinds"]) for target in focus) * len(set(storefronts.values())),
+            "focus_searches": sum(len(terms) for target in focus for terms in target["terms"].values()),
             "apps_without_keywords": missing,
             "first_tasks": tasks[:5],
         }, ensure_ascii=False, indent=2))

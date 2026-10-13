@@ -214,29 +214,42 @@ class RunTests(unittest.TestCase):
             path = Path(tmp) / "focus.json"
             path.write_text(json.dumps({"apps": [
                 {"app_id": "6785004775", "genre_id": "6007", "genre": "Productivity",
-                 "kinds": ["free", "grossing", "bogus"], "goal": 3, "until": "2026-12-31"},
+                 "kinds": ["free", "grossing", "bogus"], "goal": 3, "until": "2026-12-31",
+                 "rivals": {"1234567": "Rival", "bad": "x"}, "terms": {"us": ["to do list"], "x1": ["y"]}},
                 {"app_id": "6782251621", "genre_id": "6013", "until": "2026-10-01"},
                 {"app_id": "123456789", "genre_id": "6013"},
             ]}), encoding="utf-8")
             focus = gs.load_focus(path, today="2026-10-13", app_ids={a.app_id for a in APPS})
         self.assertEqual([("6785004775", ["free", "grossing"])],
                          [(f["app_id"], f["kinds"]) for f in focus])
+        class RivalApple(FakeApple):
+            def __call__(self, request, timeout=None):
+                if "/rss/" in request.full_url:
+                    entries = [{"id": {"attributes": {"im:id": "1234567"}}},
+                               {"id": {"attributes": {"im:id": "6785004775"}}}]
+                    return _Response(json.dumps({"feed": {"entry": entries}}).encode())
+                return super().__call__(request, timeout)
+
         state = gs.empty_state()
-        outcome = gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+        outcome = gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(RivalApple()),
                          now=NOW, search_budget=0, chart_budget=0, log=lambda *_: None, focus=focus)
         self.assertEqual(6, outcome["focus_charts"])
+        self.assertEqual(1, outcome["focus_searches"])
         today = state["focus"]["6785004775"][-1]
         self.assertEqual("2026-10-13", today["date"])
         self.assertEqual({f"{cc}|{kind}": 2 for cc in ("jp", "si", "us") for kind in ("free", "grossing")},
                          today["positions"])
         later = NOW + dt.timedelta(days=1)
-        gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(FakeApple()),
+        gs.run(APPS, STOREFRONTS, KEYWORDS, state, _fetcher(RivalApple()),
                now=later, search_budget=0, chart_budget=0, log=lambda *_: None, focus=focus)
         self.assertEqual(2, len(state["focus"]["6785004775"]))
         report = gs.build_report(APPS, state, outcome, now=later, focus=focus)
         self.assertIn("## 衝榜目標：Mochi（Productivity 榜前 3 名）", report)
         self.assertIn("達標（前 3 名）：**6** 個", report)
-        self.assertIn("| US | 營收 | 2 | 2 | — |", report)
+        self.assertIn("| US | 營收 | 2 | 2 | — | Rival #1 |", report)
+        self.assertIn("| US | to do list | 7 | 7 | Big Todo（90000） | — |", report)
+        self.assertEqual({"1234567": "Rival"}, focus[0]["rivals"])
+        self.assertEqual({"us": ["to do list"]}, focus[0]["terms"])
 
 
 class ReportTests(unittest.TestCase):

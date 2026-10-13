@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-13T18:49:04+0800",
- "count": 31,
- "content_sha256": "9ac1ba71a99fc089a0af08a905ad000afe957fca380154cab8b5bc182c68ad8f",
+ "source_generated": "2026-10-13T19:51:47+0800",
+ "count": 33,
+ "content_sha256": "129e69e873cca9839f52a645143f019e943c97f613f811f706f3e14ec194584d",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -362,6 +362,27 @@
     }
    }
   },
+  "maskmyfile": {
+   "ios_app_id": "6792850916",
+   "ios_name": "Mask My File",
+   "android_folder": "38_MaskMyFile",
+   "package": "com.alice51849.MaskMyFile",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile",
+   "paid": false,
+   "first_seen": "2026-10-13T19:51:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Mask My File",
+     "short_description": "Redact files before sharing"
+    },
+    "zh-TW": {
+     "title": "Mask My File",
+     "short_description": "分享前遮蔽個資與私密資訊"
+    }
+   }
+  },
   "mochi": {
    "ios_app_id": "6785004775",
    "ios_name": "Mochi",
@@ -443,6 +464,27 @@
     "zh-TW": {
      "title": "PicClear Pro",
      "short_description": "截圖清理・手機空間不足"
+    }
+   }
+  },
+  "savetag": {
+   "ios_app_id": "6802505528",
+   "ios_name": "SaveTag",
+   "android_folder": "46_SaveTag",
+   "package": "com.alice51849.SaveTag",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.SaveTag",
+   "paid": false,
+   "first_seen": "2026-10-13T19:51:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "SaveTag: AI Social Bookmarks",
+     "short_description": "Link Saver: Watch & Read Later"
+    },
+    "zh-TW": {
+     "title": "SaveTag:AI 連結收藏",
+     "short_description": "書籤與稍後閱讀・購物願望清單・自動分類"
     }
    }
   },

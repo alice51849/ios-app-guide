@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-13T15:42:19+0800",
- "count": 27,
- "content_sha256": "146e79d9b2a57e2a8711bf4e28778f4b55583e85c311e5d06baf7071f9862be4",
+ "source_generated": "2026-10-13T16:44:53+0800",
+ "count": 28,
+ "content_sha256": "4c4d1157e090ce85efced879f9b48c4fc6399cc989903f7c58b6f74425bdd5bd",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -506,6 +506,27 @@
     "zh-TW": {
      "title": "TripBee Lite：旅程規劃",
      "short_description": "旅行行程・行李打包清單"
+    }
+   }
+  },
+  "unblurry": {
+   "ios_app_id": "6782275018",
+   "ios_name": "Unblurry",
+   "android_folder": "21_UnblurryPro",
+   "package": "com.unblurry.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.unblurry.app",
+   "paid": false,
+   "first_seen": "2026-10-13T16:44:53+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Unblurry Pro: Unblur & HD",
+     "short_description": "Restore Old Photos Offline"
+    },
+    "zh-TW": {
+     "title": "Unblurry Pro：模糊變清晰",
+     "short_description": "老照片修復・翻新舊相片"
     }
    }
   },

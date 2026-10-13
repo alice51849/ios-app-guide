@@ -19,6 +19,8 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 > 1. 在 ~/threads-autopilot（或本機對應路徑）用 `gh workflow enable multi.yml` 與 `gh workflow enable post.yml`（repo alice51849/threads-autopilot）；若已啟用就跳過。確認 self-hosted macOS runner 在線。
 > 2. 做 claudeusagemini-16：UsageNow 加入 reviewed onboarding（照 reviewed_sources/countdaysnow.json 等前例），跑該 repo 測試、推送，讓 Threads 自動發 UsageNow。
 
+> **UsageNow 1.0.2 草稿：照備份改回原文字。** Apple 不能刪除非第一版的待送審版本（DELETE appStoreVersions 會回 409），所以用 `.github/growth/aso/claudeusagemini-asc-backup-*.json` 把 1.0.2 的 name／subtitle／keywords 改回送出前的原值，讓草稿等於沒改過。這是 Caitlyn 2026-10-14 明確要求的還原，不算新的 ASC 改動。
+
 ## 依序執行
 
 1. `cd ~/00_GrowthEngine/geo/pages && git pull origin main`

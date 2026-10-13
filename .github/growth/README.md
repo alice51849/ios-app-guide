@@ -68,7 +68,7 @@
 
 | 排程 | 做什麼 |
 |---|---|
-| growth-scoreboard（每天 10:41 台灣） | 53 款評分、母語關鍵字名次、類別榜；UsageNow 衝榜區塊：40 國開發者工具免費＋營收榜名次、8 個對手、27 組關鍵字。結果寫在 issue「growth-scoreboard」 |
+| growth-scoreboard（每天 10:41 台灣） | 53 款評分、母語關鍵字名次；**全部店面×類別的免費榜每天量一次並列出各榜第 1 名是誰**；UsageNow 衝榜區塊（40 國開發者工具免費＋營收榜、8 個對手、27 組關鍵字）；量完自動挑 3 則已審核貼文，寫成 office「今天發這則」一鍵 Threads 連結 |
 | portfolio-daily / telegram-daily | Telegram 每日精選；10/27 前「今日焦點」輪播 UsageNow；截圖少於 3 張的 App 自動跳過 |
 | geo-daily、indexnow-daily、pages | GEO 內容產生、IndexNow 通知；正式站上傳仍走配對發布（排隊組已修好，不會再被推送取消） |
 | line-watchdog、arquivo-pt-daily、software-heritage-daily、sov-weekly | 線路健康檢查與備份 |

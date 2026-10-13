@@ -342,21 +342,27 @@ def search_storefront(fetcher, term, country, app_ids):
     return {"ranks": ranks, "top": top, "result_count": len(results)}
 
 
-def chart_storefront(fetcher, country, genre_id, kind):
-    """Ordered App IDs of one storefront's category top chart."""
+def chart_entries(fetcher, country, genre_id, kind):
+    """(App ID or None, name) for each row of one storefront's category chart."""
     url = CHART_URL.format(cc=country, kind=kind, limit=CHART_LIMIT, genre=genre_id)
     payload = fetcher.get_json(url)
     entries = payload.get("feed", {}).get("entry", [])
     if isinstance(entries, dict):
         entries = [entries]
-    ordered = []
+    rows = []
     for entry in entries:
         app_id = str(
             entry.get("id", {}).get("attributes", {}).get("im:id") or ""
         )
+        name = str((entry.get("im:name") or {}).get("label") or "")[:80]
         # Keep a placeholder so one malformed entry never shifts later ranks.
-        ordered.append(app_id if APP_ID_RE.fullmatch(app_id) else None)
-    return ordered
+        rows.append((app_id if APP_ID_RE.fullmatch(app_id) else None, name))
+    return rows
+
+
+def chart_storefront(fetcher, country, genre_id, kind):
+    """Ordered App IDs of one storefront's category top chart."""
+    return [app_id for app_id, _ in chart_entries(fetcher, country, genre_id, kind)]
 
 
 # ---------------------------------------------------------------- state
@@ -514,7 +520,7 @@ def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
         consecutive_failures = 0
         for country, genre_id, genre, kind in picked:
             try:
-                ordered = chart_storefront(fetcher, country, genre_id, kind)
+                rows = chart_entries(fetcher, country, genre_id, kind)
             except FetchError as error:
                 note_error(error)
                 consecutive_failures += 1
@@ -528,9 +534,11 @@ def run(apps, storefronts, keywords_by_app, state, fetcher, *, now,
                 "genre": genre,
                 "positions": {
                     app_id: position
-                    for position, app_id in enumerate(ordered, start=1)
+                    for position, (app_id, _) in enumerate(rows, start=1)
                     if app_id in app_ids
                 },
+                # Who holds #1 today: the name to beat in this storefront's category.
+                "leader": rows[0][1] if rows else "",
                 "observed_at": stamp,
             }
 
@@ -667,7 +675,8 @@ def build_report(apps, state, outcome, *, now, focus=None):
     top10 = [e for e in measured if e.get("rank") and e["rank"] <= 10]
     chart_rows = sorted(
         (
-            (position, app_id, key.split("|")[0], cell.get("genre", ""), key.split("|")[2])
+            (position, app_id, key.split("|")[0], cell.get("genre", ""), key.split("|")[2],
+             cell.get("leader", ""))
             for key, cell in state["charts"].items()
             for app_id, position in cell.get("positions", {}).items()
             if app_id in app_ids
@@ -719,10 +728,11 @@ def build_report(apps, state, outcome, *, now, focus=None):
         lines.append("量測累積中。")
     lines += ["", "## 類別排行榜", ""]
     if chart_rows:
-        lines += ["| App | 店面 | 類別 | 榜單 | 名次 |", "|---|---|---|---|---|"]
+        lines += ["| App | 店面 | 類別 | 榜單 | 名次 | 目前第 1 名 |", "|---|---|---|---|---|---|"]
         lines += [
-            f"| {_cell(names[app_id])} | {country.upper()} | {_cell(genre)} | {'免費' if kind == 'free' else '付費'} | {position} |"
-            for position, app_id, country, genre, kind in chart_rows[:80]
+            f"| {_cell(names[app_id])} | {country.upper()} | {_cell(genre)} | {'免費' if kind == 'free' else '付費'} | {position} "
+            f"| {'就是我們' if position == 1 else _cell(leader) or '—'} |"
+            for position, app_id, country, genre, kind, leader in chart_rows[:80]
         ]
     else:
         lines.append(f"目前沒有 App 進入已量測類別的前 {CHART_LIMIT} 名。")

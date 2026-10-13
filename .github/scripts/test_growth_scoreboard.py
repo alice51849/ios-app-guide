@@ -88,7 +88,7 @@ class FakeApple:
         if "/rss/" in parsed.path:
             if self.chart_status:
                 raise _http_error(url, self.chart_status)
-            entries = [{"id": {"attributes": {"im:id": "555"}}},
+            entries = [{"id": {"attributes": {"im:id": "555"}}, "im:name": {"label": "Chart Leader"}},
                        {"id": {"attributes": {"im:id": "6785004775"}}}]
             return _Response(json.dumps({"feed": {"entry": entries}}).encode())
         raise AssertionError(f"unexpected URL {url}")
@@ -266,7 +266,7 @@ class ReportTests(unittest.TestCase):
         self.assertIn("評分總數：**24**（較上次 +4）", report)
         self.assertIn("| Mochi | SI | sl-SI | opravila |", report)
         self.assertIn("| Cyca | SI (sl-SI) | menstruacija | 2 | Small Cycle | 12 |", report)
-        self.assertIn("| Mochi | US | Productivity | 免費 | 2 |", report)
+        self.assertIn("| Mochi | US | Productivity | 免費 | 2 | Chart Leader |", report)
         self.assertNotIn("999", report)
 
     def test_opportunities_prefer_small_leaders(self):

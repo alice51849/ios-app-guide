@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:17:23Z",
+  "updated_at": "2026-10-14T12:46:12Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -253,6 +253,132 @@
         "#iPhone",
         "#iOS"
       ]
+    },
+    "gmoneylite/en": {
+      "app": "gmoneylite",
+      "locale": "en",
+      "url": "https://files.catbox.moe/n2186p.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=h7_gmoneylite_en&mt=8",
+      "hook": "Trip budget already blown?",
+      "name": "G+Money Lite: Trip Spending",
+      "search": "G+Money Lite",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "gmoneylite/zh-Hant": {
+      "app": "gmoneylite",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/gikqon.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=h7_gmoneylite_zh-Hant&mt=8",
+      "hook": "出國玩到一半 預算就爆了？",
+      "name": "G+Money Lite：旅行記帳·匯率換算",
+      "search": "G+Money Lite 旅行記帳",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "lockhour/en": {
+      "app": "lockhour",
+      "locale": "en",
+      "url": "https://files.catbox.moe/fcn0cv.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=h7_lockhour_en&mt=8",
+      "hook": "Can't stop scrolling?",
+      "name": "LockHour Pro: Block Apps",
+      "search": "LockHour Pro Block Apps",
+      "tags": [
+        "#productivity",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "lumibopomofo/en": {
+      "app": "lumibopomofo",
+      "locale": "en",
+      "url": "https://files.catbox.moe/jq1bnf.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_en&mt=8",
+      "hook": "Zhuyin, but make it a game",
+      "name": "Lumi Bopomofo",
+      "search": "Lumi Bopomofo",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "lumibopomofo/zh-Hant": {
+      "app": "lumibopomofo",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/iqy4np.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_zh-Hant&mt=8",
+      "hook": "注音 原來這麼好玩！",
+      "name": "Lumi注音星球",
+      "search": "Lumi注音星球",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "aim990/en": {
+      "app": "aim990",
+      "locale": "en",
+      "url": "https://files.catbox.moe/2thvkx.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=h7_aim990_en&mt=8",
+      "hook": "Find your TOEIC weak spots in 8 min",
+      "name": "Aim990: Fix English Weak Spots",
+      "search": "Aim990",
+      "tags": [
+        "#learning",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "aim990/zh-Hant": {
+      "app": "aim990",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/c1iaoh.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=h7_aim990_zh-Hant&mt=8",
+      "hook": "8 分鐘 找出你的多益弱點",
+      "name": "Aim990：英文弱點教練",
+      "search": "Aim990",
+      "tags": [
+        "#學習",
+        "#App推薦",
+        "#iPhone"
+      ]
+    },
+    "battai/en": {
+      "app": "battai",
+      "locale": "en",
+      "url": "https://files.catbox.moe/z3aaf9.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=h7_battai_en&mt=8",
+      "hook": "When will battery health hit 80%?",
+      "name": "BattAI: Battery Health & Life",
+      "search": "BattAI Battery Health",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "battai/zh-Hant": {
+      "app": "battai",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/ytj56n.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=h7_battai_zh-Hant&mt=8",
+      "hook": "電池健康度 哪天掉到 80%？",
+      "name": "BattAI: 電池健康分數",
+      "search": "BattAI 電池健康",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
     }
   },
   "schedule": [
@@ -327,6 +453,60 @@
       "slot": 1,
       "channel": "telegram",
       "clip": "lumimission/zh-Hant"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "gmoneylite/en"
+    },
+    {
+      "date": "2026-10-27",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo/zh-Hant"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lockhour/en"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "gmoneylite/zh-Hant"
+    },
+    {
+      "date": "2026-10-30",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumibopomofo/en"
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "battai/en"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2026-11-04",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "battai/zh-Hant"
     }
   ]
 }

@@ -731,11 +731,6 @@ def whoami_dailymotion():
     print(f"dailymotion: {r.get('username')} ({r.get('screenname')})")
 
 
-# ---------------------------------------------------------------- X
-
-XAPI = "https://api.x.com/2"
-
-
 # ---------------------------------------------------------------- runner
 
 POSTERS = {"facebook": post_facebook, "bluesky": post_bluesky, "youtube": post_youtube, "pinterest": post_pinterest,

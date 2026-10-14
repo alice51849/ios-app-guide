@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T17:28:53Z",
+  "updated_at": "2026-10-14T17:39:16Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -2711,6 +2711,92 @@
         }
       ]
     },
+    "cvdesk/ja": {
+      "app": "cvdesk",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/qqz337.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=h7_cvdesk_ja&mt=8",
+      "hook": "その履歴書、 ATSで落ちてない？",
+      "name": "CV Desk：ATS履歴書・職務経歴書",
+      "search": "CV Desk ATS履歴書",
+      "tags": [
+        "#ATS履歴書職務経歴書",
+        "#履歴書作成",
+        "#転職",
+        "#履歴書テンプレート",
+        "#自己pr",
+        "#CVDeskATS履歴書"
+      ],
+      "keywords": [
+        "履歴書作成",
+        "転職",
+        "履歴書テンプレート",
+        "自己pr",
+        "就活",
+        "面接"
+      ],
+      "keyline": "ATS対応の履歴書・職務経歴書",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "その履歴書、ATSで落ちてない？",
+          "benefit": "改善案をタップして スコアアップ"
+        },
+        {
+          "id": "b",
+          "lead": "改善案をタップして スコアアップ",
+          "benefit": "テンプレートは すべてATS対応"
+        },
+        {
+          "id": "c",
+          "lead": "PDFもWordも書き出し",
+          "benefit": "改善案をタップして スコアアップ"
+        }
+      ]
+    },
+    "cvdesk/ko": {
+      "app": "cvdesk",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/3k47w1.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=h7_cvdesk_ko&mt=8",
+      "hook": "이력서, ATS에서 자동 탈락?",
+      "name": "CV Desk: ATS 이력서 제작",
+      "search": "CV Desk ATS 이력서",
+      "tags": [
+        "#ATS이력서제작",
+        "#이력서양식",
+        "#이력서작성",
+        "#이력서템플릿",
+        "#취업",
+        "#CVDeskATS이력서"
+      ],
+      "keywords": [
+        "이력서 양식",
+        "이력서 작성",
+        "이력서 템플릿",
+        "취업",
+        "면접",
+        "경력기술서"
+      ],
+      "keyline": "ATS 이력서·자기소개서 작성",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "이력서, ATS에서 자동 탈락?",
+          "benefit": "수정 제안 탭하고 점수 올리기"
+        },
+        {
+          "id": "b",
+          "lead": "수정 제안 탭하고 점수 올리기",
+          "benefit": "모든 템플릿 ATS 안전"
+        },
+        {
+          "id": "c",
+          "lead": "PDF·Word로 내보내기",
+          "benefit": "수정 제안 탭하고 점수 올리기"
+        }
+      ]
+    },
     "cyca/en": {
       "app": "cyca",
       "locale": "en",
@@ -5000,46 +5086,6 @@
           "#메모",
           "#스크린샷",
           "#AIBrief"
-        ]
-      }
-    },
-    "cvdesk": {
-      "ja": {
-        "keywords": [
-          "履歴書作成",
-          "転職",
-          "履歴書テンプレート",
-          "自己pr",
-          "就活",
-          "面接"
-        ],
-        "keyline": "ATS履歴書・職務経歴書",
-        "tags": [
-          "#ATS履歴書職務経歴書",
-          "#履歴書作成",
-          "#転職",
-          "#履歴書テンプレート",
-          "#自己pr",
-          "#CVDeskATS履歴書"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "이력서 양식",
-          "이력서 작성",
-          "이력서 템플릿",
-          "취업",
-          "면접",
-          "경력기술서"
-        ],
-        "keyline": "ATS 이력서 제작",
-        "tags": [
-          "#ATS이력서제작",
-          "#이력서양식",
-          "#이력서작성",
-          "#이력서템플릿",
-          "#취업",
-          "#CVDeskATS이력서"
         ]
       }
     },

@@ -125,16 +125,15 @@ class ClipProgressTest(unittest.TestCase):
                   "posted_at": "2026-10-15T01:00:03Z"}]
         md = P.build_section(DATA, posts, {"a": "App A"}, self.NOW, 53, ["note"])
         self.assertTrue(md.startswith(P.HEADING))
-        self.assertIn("[已發 10/15](https://t.me/x/5)", md)
-        self.assertIn("排定 10/15 23:20", md)          # b/en on Instagram, 15:20 UTC
-        self.assertIn("[影片](https://files.catbox.moe/a_en.mp4)", md)
-        self.assertIn("2 款／53 款、3 支影片", md)
-        self.assertIn("| Telegram | 自動", md)
-        self.assertIn("| Threads | 準備中", md)
-        self.assertIn("- note", md)
-        self.assertIn("| 尚未上架 |", md)
+        self.assertIn("[T](https://t.me/x/5)", md)                      # posted link
+        self.assertIn("10/15 23:20 b", md)                              # next IG post, 15:20 UTC
+        self.assertIn("[en](https://files.catbox.moe/a_en.mp4)", md)
+        self.assertIn("2／53 款 · 3 支", md)
+        self.assertIn("| Telegram | 自動 2 支／天 | 1 |", md)
+        self.assertIn("| 備註 | note |", md)
         with_play = P.build_section(DATA, [], {}, self.NOW, None, (), {"a": "https://play.google.com/x"})
-        self.assertIn("[Google Play](https://play.google.com/x)", with_play)
+        self.assertIn("| a 🤖 |", with_play)
+        self.assertIn("Android 已上架 | 1 款", with_play)
 
     def test_section_replaced_in_place_and_other_sections_kept(self):
         summary = "# T\n\n## A\nx\n\n" + P.HEADING + "\nold\n\n## B\ny\n"

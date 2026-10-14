@@ -1,0 +1,2929 @@
+{
+ "note": "Archived from app-improvements.json to keep the promotion page to one screen.",
+ "summary_md_2026_10_14": "# 53 款 App 成長總覽（2026-10-13）\n\n今日成績單：53 款／39 店面合計 **111 則評分**；母語關鍵字第 1 名 9 組、前 10 名 27 組，全部落在 CZ／DK／SA／ca／GR 這類小店面；主市場（TW／JP／KR／US）幾乎沒有一款站上第一頁。瓶頸不是需求，是店面說法與社會證明。\n\n## 跨 App 共同病灶\n1. **店面文案過時、自相矛盾**：語言行寫 2／4／17／22／33／40+／44／47 種（實際 50）；LockHour 35 個、Lumi Mission／Mission Pro 27 個語系仍是泛用模板，Mission Pro 還寫「Free to try」；名稱承諾描述沒有的事（Stay Clock「Flip」、QR Code Halo「絕不自動開啟」）。\n2. **免費層小到養不成習慣，所以沒有評分**：Studydown 累計 5 分鐘、G+Money Lite 3 筆、Wordmate Lite 10 字、SaveTag 5 筆、100 Notes 1 本 5 頁、OnePage 1 張、WiFi Aid Lite 合計 1 次、QR Halo 3 次——外宣帶來的下載會變成刪除。\n3. **名稱／副標沒有使用者會打的在地詞**：CountDaysNow、LED Moving Text、ShotInbox 50 語系名稱全英文；副標是 UI 字串或自創詞（每日焦點、價值稜鏡、Cue flows）；關鍵字重複名稱、超過 100 字，或含競品商標（掃描王、polaroid／寶麗來）。\n4. **Lite／Pro 互搶**：11 組雙 SKU 的付費版幾乎全是 0 評分、說明與 Lite 相同；外宣一律導向 Lite，Pro 只留「無內購版」一句。\n\n## 本週優先推的 10 款\n| App | 主市場 | 為什麼是現在 |\n|---|---|---|\n| Mochi | US（補 BR／DE）| 「cute to do list」已第 1，只差老實寫免費範圍 |\n| UsageNow | US | 上架 6 天「claude usage」#18，前 5 名最多 39 則評分 |\n| Lumi Mission Planet | TW／JP／KR | 核心詞停第二頁，前面對手只有 1–19 則評分 |\n| Lumi 注音星球 Lite | TW | 9–11 月小一注音季 |\n| G+Money Lite | JP／KR | 「旅行 家計簿」前三名僅 46／4／1 則評分（先放寬免費額度）|\n| MoneyTag | JP／CZ | 「副業 収支」第 2 名只有 1 則評分；CZ 已第 6 |\n| Snapport Lite | TW／JP／ID／VN | 台灣線上換護照、日本マイナ線上申請；CZ 已第 1 |\n| CV Desk | ID／US | 印尼畢業季、「cek skor ATS」 |\n| Unblurry Pro | TW／DK→NL／SV | DK 第 1 的詞型複製到北歐 |\n| CountDaysNow | TW／KR | 學測百日、수능 디데이（先在地化名稱）|\n\n候補：LED Moving Text（TW Q4 演唱會，等名稱在地化）、dB Halo（TW「分貝」#20、KR 층간소음）。\n\n## 雲端 Claude 本週自動完成\n- **7 秒鉤子片開始量產（10/14）**：雲端抓各國商店現行截圖、渲染、交 Mac 上傳 catbox，自動排進 Telegram 日程；每則發出後連結自動寫回本頁。\n- **宣傳同時附 Android**：已上 Google Play 的 App（目前 42 款），Telegram／Threads 貼文與鉤子片都加 Google Play 連結（帶追蹤碼）。\n- **Telegram 佇列全面修正**：刪 Opal／Forest／Remini／VSCO／CamScanner／YNAB 競品名；刪 listing 沒有的宣稱（穿衣、絕不自動開啟、給孩子看的天氣）；補 pt-BR／de／ko／vi／zh-Hant；全部加「50 種介面語言，App 內切換」；Pro 系列貼文連結改導 Lite；加「截圖少於 3 張自動跳過」門檻。\n- **成績單改量真實意圖詞**：新增每 App 覆寫詞檔（cute to do list、디데이、旅のしおり、副業 収支、証明写真、claude usage…），排除結果數 <30 的假機會，加 Developer Tools 榜，以 CZ／DK／SA 已登頂詞為對照組。\n- **資料檔同步 live 並去錯**：語言行改 50、關鍵字截 100 字並刪商標詞、qrcodehalo／wifiaidlite／tripplanet／aim990／bopomofo 回填線上文案、矩陣 kids 誤分類修正。\n- **草稿全部入庫等你貼／寄**：ASC 描述草稿（Sereno、Sono Note、PhotoCream、ScanTo id、Wordmate vs Lite）；pitch 信（Gridfiti、app-liv、MrMad、蘋果仁、iphone-ticker、appgefahren、隱私榜單）；Show HN／Reddit／note.com／Naver／Dcard／Zenn 貼文；30 秒影片腳本；usagenow-security.html、注音表 PDF、ATS checklist、「內建先、工具後」教學頁。\n- app-posts.json 四語情境貼文備妥，等本機 threads-autopilot 排程。\n\n## 鉤子片影片：各社群連結與進度\n\n更新：2026-10-14 22:12（台灣）\n\n- 已上傳：31 款／53 款、67 支影片。\n- Android：43 款已在 Google Play 上線（100 Notes Studio、AI Brief、Aim990：英文弱點教練、BattAI、CV Desk、CalDaily、DailyMate Lite: Speak Today、DailyMate: Language Phrases、G+Money、G+Money Lite、HoursTag、HoursTag Lite、LockHour Pro: Block Apps、Lumi Mission Planet Pro（Lumi 任務星球 Pro，付費下載）、Lumi Mission Planet（Lumi 任務星球，免費＋內購）、Lumi Weather: What to Wear（Lumi天氣星球，免費＋內購）、Lumi 字母星球 Lite（Lumi Letters Lite）、Lumi 字母星球 Pro（Lumi Letters Pro）、Lumi 數學星球：兒童數學（Lumi Math Pro）、Lumi數學星球：探索版（Lumi Math Planet: Explorer）、Lumi注音星球 Pro（Lumi Bopomofo Pro）、Lumi注音星球（Lumi Bopomofo）、Mask My File、Mochi DoneStamp: Last Time、Mochi: Cute Checklist、MoneyTag、OnePage PPT、PhotoCream Pro、PicClear Pro、SaveTag、ScanTo Pro、Sereno: Sleep Sounds、ShotInbox AI: Sort Screenshots、Snapport Lite: Take ID Photos、Snapport: Passport & ID Photos、Sono Note、TripBee Lite: Trip Planner、TripBee Pro: Trip Planner、Unblurry Pro、WiFi Aid、WiFi Aid Lite、Wordmate Lite 每天五個單字、Wordmate：44 種語言背單字）。Mac 每 30 分鐘掃一次 Google Play，新上架的 App 自動加進所有宣傳：Telegram／Threads 貼文加 Google Play 連結、鉤子片 Telegram 加 Google Play 按鈕、IG 文案註明、新渲染的影片結尾寫「App Store／Google Play 搜尋」、官網頁面加 Google Play 按鈕。\n- 雲端渲染中：先做每款的英文＋中文（自動發文只用這兩種），再補其他語言；每批推給 Mac 上傳後自動排進日程。\n- 付費版 11 款與 Studydown 暫緩：付費版的宣傳導到 Lite 版，Studydown 等免費規則上線。\n\n| 平台 | 進度 | 已發 | 下一支（台灣時間） |\n|---|---|---|---|\n| Telegram | 自動，每天 2 支（影片＋下載按鈕）；已排 62 支 | 0 | 10/14 23:00 UsageNow: AI Usage Tracker en |\n| Instagram | 自動，每天 2 支（亞洲 09:20、美洲 23:20）；已排 62 支 | 0 | 10/15 09:20 UsageNow: AI Usage Tracker zh-Hant |\n| Threads | 自動，每天 2 支影片＋1 則圖文（連結放留言）；已排 62 支 | 0 | 10/15 09:40 UsageNow: AI Usage Tracker zh-Hant |\n| YouTube Shorts | Mac 本機上傳（本機待辦「7 秒鉤子片」第 4 步，每天最多 3 支）；上傳後的網址在本機回報 | — | — |\n| Bluesky | 尚未設定（帳號與金鑰都沒有） | — | — |\n| TikTok | 手動配熱門音樂；無聲版在 Mac 的 shorts/out/，尚未上傳 | — | — |\n\n| App | 語言 | 影片 | Telegram | Instagram | Threads | Android |\n|---|---|---|---|---|---|---|\n| 100 Notes Studio | en | [影片](https://files.catbox.moe/50pzup.mp4) | 排定 11/04 23:00 | 排定 11/05 23:20 | 排定 11/05 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100) |\n| 100 Notes Studio | zh-Hant | [影片](https://files.catbox.moe/eo0qkr.mp4) | 排定 11/07 09:00 | 排定 11/08 09:20 | 排定 11/08 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100) |\n| Aim990：英文弱點教練 | en | [影片](https://files.catbox.moe/2thvkx.mp4) | 排定 10/23 23:00 | 排定 10/24 23:20 | 排定 10/24 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.aim990) |\n| Aim990：英文弱點教練 | zh-Hant | [影片](https://files.catbox.moe/c1iaoh.mp4) | 排定 10/26 09:00 | 排定 10/27 09:20 | 排定 10/27 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.aim990) |\n| BattAI | en | [影片](https://files.catbox.moe/z3aaf9.mp4) | 排定 10/24 23:00 | 排定 10/25 23:20 | 排定 10/25 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.BattAI) |\n| BattAI | zh-Hant | [影片](https://files.catbox.moe/ytj56n.mp4) | 排定 10/27 09:00 | 排定 10/28 09:20 | 排定 10/28 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.BattAI) |\n| CV Desk | en | [影片](https://files.catbox.moe/tai5p4.mp4) | 排定 10/26 23:00 | 排定 10/26 23:20 | 排定 10/26 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.cvdesk) |\n| CV Desk | zh-Hant | [影片](https://files.catbox.moe/2wahlr.mp4) | 排定 10/29 09:00 | 排定 10/29 09:20 | 排定 10/29 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.cvdesk) |\n| CalDaily | en | [影片](https://files.catbox.moe/3y210v.mp4) | 排定 10/25 23:00 | 排定 10/29 23:20 | 排定 10/29 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.CalDaily) |\n| CalDaily | zh-Hant | [影片](https://files.catbox.moe/l8kn9t.mp4) | 排定 10/28 09:00 | 排定 10/26 09:20 | 排定 10/26 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.CalDaily) |\n| CountDaysNow: Event Counter | en | [影片](https://files.catbox.moe/wbsfjp.mp4) | 排定 10/16 23:00 | 排定 10/16 23:20 | 排定 10/16 23:40 | 尚未上架 |\n| CountDaysNow: Event Counter | zh-Hant | [影片](https://files.catbox.moe/rj2q5p.mp4) | 排定 10/20 09:00 | 排定 10/20 09:20 | 排定 10/20 09:40 | 尚未上架 |\n| Cyca: Period & Cycle Tracker | en | [影片](https://files.catbox.moe/mqsxat.mp4) | 排定 10/27 23:00 | 排定 10/27 23:20 | 排定 10/27 23:40 | 尚未上架 |\n| Cyca: Period & Cycle Tracker | zh-Hant | [影片](https://files.catbox.moe/vgyr3b.mp4) | 排定 10/30 09:00 | 排定 10/30 09:20 | 排定 10/30 09:40 | 尚未上架 |\n| DailyMate Lite: Speak Today | en | [影片](https://files.catbox.moe/kdik5x.mp4) | 排定 10/28 23:00 | 排定 10/28 23:20 | 排定 10/28 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite) |\n| DailyMate Lite: Speak Today | zh-Hant | [影片](https://files.catbox.moe/cbqy2k.mp4) | 排定 10/31 09:00 | 排定 10/31 09:20 | 排定 10/31 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite) |\n| G+Money Lite | en | [影片](https://files.catbox.moe/n2186p.mp4) | 排定 10/20 23:00 | 排定 10/21 23:20 | 排定 10/21 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite) |\n| G+Money Lite | zh-Hant | [影片](https://files.catbox.moe/gikqon.mp4) | 排定 10/25 09:00 | 排定 10/25 09:20 | 排定 10/25 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite) |\n| LockHour Pro: Block Apps | en | [影片](https://files.catbox.moe/fcn0cv.mp4) | 排定 10/22 23:00 | 排定 10/23 23:20 | 排定 10/23 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.focuslockpro.app) |\n| Lumi Mission Planet（Lumi 任務星球，免費＋內購） | en | [影片](https://files.catbox.moe/9fiyo5.mp4) | 排定 10/19 23:00 | 排定 10/20 23:20 | 排定 10/20 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite) |\n| Lumi Mission Planet（Lumi 任務星球，免費＋內購） | zh-Hant | [影片](https://files.catbox.moe/7vtoaz.mp4) | 排定 10/24 09:00 | 排定 10/24 09:20 | 排定 10/24 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite) |\n| Lumi Weather: What to Wear（Lumi天氣星球，免費＋內購） | en | [影片](https://files.catbox.moe/kuyoqm.mp4) | 排定 11/01 23:00 | 排定 11/01 23:20 | 排定 11/01 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather) |\n| Lumi Weather: What to Wear（Lumi天氣星球，免費＋內購） | zh-Hant | [影片](https://files.catbox.moe/dfotuw.mp4) | 排定 11/04 09:00 | 排定 11/04 09:20 | 排定 11/04 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather) |\n| Lumi 字母星球 Lite（Lumi Letters Lite） | en | [影片](https://files.catbox.moe/qmraui.mp4) | 排定 10/30 23:00 | 排定 10/31 23:20 | 排定 10/31 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite) |\n| Lumi 字母星球 Lite（Lumi Letters Lite） | zh-Hant | [影片](https://files.catbox.moe/u9lens.mp4) | 排定 10/18 09:00 | 排定 10/18 09:20 | 排定 10/18 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite) |\n| Lumi數學星球：探索版（Lumi Math Planet: Explorer） | en | [影片](https://files.catbox.moe/vk60cy.mp4) | 排定 10/31 23:00 | 排定 11/04 23:20 | 排定 11/04 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree) |\n| Lumi數學星球：探索版（Lumi Math Planet: Explorer） | zh-Hant | [影片](https://files.catbox.moe/rc6phy.mp4) | 排定 11/03 09:00 | 排定 11/01 09:20 | 排定 11/01 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree) |\n| Lumi注音星球（Lumi Bopomofo） | en | [影片](https://files.catbox.moe/jq1bnf.mp4) | 排定 10/21 23:00 | 排定 10/22 23:20 | 排定 10/22 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin) |\n| Lumi注音星球（Lumi Bopomofo） | zh-Hant | [影片](https://files.catbox.moe/iqy4np.mp4) | 排定 10/16 09:00 | 排定 10/17 09:20 | 排定 10/17 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin) |\n| Mask My File | en | [影片](https://files.catbox.moe/jlfl4u.mp4) | 排定 11/05 23:00 | 排定 11/02 23:20 | 排定 11/02 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile) |\n| Mask My File | zh-Hant | [影片](https://files.catbox.moe/0fwwan.mp4) | 排定 11/02 09:00 | 排定 11/05 09:20 | 排定 11/05 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile) |\n| Mochi DoneStamp: Last Time | en | [影片](https://files.catbox.moe/8ebu6b.mp4) | 排定 11/02 23:00 | 排定 11/03 23:20 | 排定 11/03 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp) |\n| Mochi DoneStamp: Last Time | zh-Hant | [影片](https://files.catbox.moe/yh85w5.mp4) | 排定 10/15 09:00 | 排定 10/16 09:20 | 排定 10/16 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp) |\n| Mochi: Cute Checklist | de | [影片](https://files.catbox.moe/ogbh3q.mp4) | — | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | en | [影片](https://files.catbox.moe/pdwb2b.mp4) | 排定 10/15 23:00 | 排定 10/15 23:20 | 排定 10/15 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | ja | [影片](https://files.catbox.moe/tqkgff.mp4) | 排定 10/19 09:00 | 排定 10/19 09:20 | 排定 10/19 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | ko | [影片](https://files.catbox.moe/yr5huj.mp4) | — | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | pt-BR | [影片](https://files.catbox.moe/9a5xaz.mp4) | — | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | zh-Hant | [影片](https://files.catbox.moe/sh1wdt.mp4) | — | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| MoneyTag | en | [影片](https://files.catbox.moe/q1lb4b.mp4) | 排定 11/03 23:00 | 排定 11/06 23:20 | 排定 11/06 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag) |\n| MoneyTag | zh-Hant | [影片](https://files.catbox.moe/jim8zl.mp4) | 排定 11/06 09:00 | 排定 11/03 09:20 | 排定 11/03 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag) |\n| OnePage PPT | en | [影片](https://files.catbox.moe/ygk4g4.mp4) | 排定 11/08 23:00 | 排定 11/09 23:20 | 排定 11/09 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT) |\n| OnePage PPT | zh-Hant | [影片](https://files.catbox.moe/2a6roi.mp4) | 排定 11/05 09:00 | 排定 11/06 09:20 | 排定 11/06 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT) |\n| PhotoCream Pro | en | [影片](https://files.catbox.moe/t80x40.mp4) | 排定 11/06 23:00 | 排定 11/10 23:20 | 排定 11/10 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.photocream) |\n| PhotoCream Pro | zh-Hant | [影片](https://files.catbox.moe/sjcara.mp4) | 排定 11/09 09:00 | 排定 11/07 09:20 | 排定 11/07 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.photocream) |\n| PicClear Pro | en | [影片](https://files.catbox.moe/2xw3da.mp4) | 排定 11/07 23:00 | 排定 11/07 23:20 | 排定 11/07 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.picclear.app) |\n| PicClear Pro | zh-Hant | [影片](https://files.catbox.moe/f304cc.mp4) | 排定 11/10 09:00 | 排定 11/10 09:20 | 排定 11/10 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.picclear.app) |\n| QR Code Halo | en | [影片](https://files.catbox.moe/h2qawn.mp4) | 排定 11/11 23:00 | 排定 11/08 23:20 | 排定 11/08 23:40 | 尚未上架 |\n| QR Code Halo | zh-Hant | [影片](https://files.catbox.moe/8rnoab.mp4) | 排定 11/08 09:00 | 排定 11/11 09:20 | 排定 11/11 09:40 | 尚未上架 |\n| SaveTag | en | [影片](https://files.catbox.moe/6r9nrp.mp4) | 排定 11/09 23:00 | 排定 11/12 23:20 | 排定 11/12 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.SaveTag) |\n| SaveTag | zh-Hant | [影片](https://files.catbox.moe/oqnvsf.mp4) | 排定 11/12 09:00 | 排定 11/09 09:20 | 排定 11/09 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.SaveTag) |\n| ScanTo Pro | en | [影片](https://files.catbox.moe/jmy42w.mp4) | 排定 11/10 23:00 | 排定 11/11 23:20 | 排定 11/11 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro) |\n| ScanTo Pro | zh-Hant | [影片](https://files.catbox.moe/c6jzjk.mp4) | 排定 11/13 09:00 | 排定 11/14 09:20 | 排定 11/14 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro) |\n| Sereno: Sleep Sounds | en | [影片](https://files.catbox.moe/y8erow.mp4) | 排定 11/14 23:00 | 排定 11/15 23:20 | 排定 11/15 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.Sereno) |\n| Sereno: Sleep Sounds | zh-Hant | [影片](https://files.catbox.moe/csjmz3.mp4) | 排定 11/11 09:00 | 排定 11/12 09:20 | 排定 11/12 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.Sereno) |\n| ShotInbox AI: Sort Screenshots | en | [影片](https://files.catbox.moe/8wjz03.mp4) | 排定 11/12 23:00 | 排定 11/16 23:20 | 排定 11/16 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox) |\n| ShotInbox AI: Sort Screenshots | zh-Hant | [影片](https://files.catbox.moe/997pj2.mp4) | 排定 11/15 09:00 | 排定 11/13 09:20 | 排定 11/13 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox) |\n| Snapport Lite: Take ID Photos | en | [影片](https://files.catbox.moe/9t7r8b.mp4) | 排定 10/18 23:00 | 排定 10/19 23:20 | 排定 10/19 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite) |\n| Snapport Lite: Take ID Photos | zh-Hant | [影片](https://files.catbox.moe/l5c8le.mp4) | 排定 10/23 09:00 | 排定 10/23 09:20 | 排定 10/23 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite) |\n| Unblurry Pro | en | [影片](https://files.catbox.moe/lqit0m.mp4) | 排定 10/17 23:00 | 排定 10/17 23:20 | 排定 10/17 23:40 | [Google Play](https://play.google.com/store/apps/details?id=com.unblurry.app) |\n| Unblurry Pro | zh-Hant | [影片](https://files.catbox.moe/5xknhi.mp4) | 排定 10/22 09:00 | 排定 10/22 09:20 | 排定 10/22 09:40 | [Google Play](https://play.google.com/store/apps/details?id=com.unblurry.app) |\n| UsageNow: AI Usage Tracker | en | [影片](https://files.catbox.moe/cwvmmh.mp4) | 排定 10/14 23:00 | 排定 10/18 23:20 | 排定 10/18 23:40 | 尚未上架 |\n| UsageNow: AI Usage Tracker | ja | [影片](https://files.catbox.moe/wigyoz.mp4) | 排定 10/21 09:00 | 排定 10/21 09:20 | 排定 10/21 09:40 | 尚未上架 |\n| UsageNow: AI Usage Tracker | ko | [影片](https://files.catbox.moe/vqldln.mp4) | — | — | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | zh-Hant | [影片](https://files.catbox.moe/015xmy.mp4) | 排定 10/17 09:00 | 排定 10/15 09:20 | 排定 10/15 09:40 | 尚未上架 |\n| dB Halo | en | [影片](https://files.catbox.moe/afmrje.mp4) | 排定 10/29 23:00 | 排定 10/30 23:20 | 排定 10/30 23:40 | 尚未上架 |\n| dB Halo | zh-Hant | [影片](https://files.catbox.moe/alay5n.mp4) | 排定 11/01 09:00 | 排定 11/02 09:20 | 排定 11/02 09:40 | 尚未上架 |\n\n",
+ "owner_actions": [
+  {
+   "id": "oa-ig-token",
+   "title": "開通 Instagram Reels 自動發片（約 10 分鐘，做一次就好）",
+   "url": "https://developers.facebook.com/apps/",
+   "how": "已完成：IG Reels 從 10/15 09:20（台灣）開始自動發，前兩週每天 1 支，之後每天 2 支。",
+   "status": "done",
+   "done_at": "2026-10-14T13:30:00Z"
+  },
+  {
+   "id": "oa-engine-push",
+   "title": "允許雲端推送到 00_GrowthEngine（鉤子片交給 Mac 上傳）",
+   "url": "https://github.com/alice51849/00_GrowthEngine",
+   "how": "已完成：雲端渲染好的影片推到 clips-out，Mac 自動上傳 catbox。",
+   "status": "done",
+   "done_at": "2026-10-14T12:10:00Z"
+  },
+  {
+   "id": "oa-network-3",
+   "title": "雲端環境的 App Store 網域沒有生效（鉤子片抓不到截圖）",
+   "url": "https://code.claude.com/docs/en/cloud-environments#network-access",
+   "how": "已完成：雲端可直接抓 App Store 截圖與各國在地化截圖。",
+   "status": "done",
+   "done_at": "2026-10-14T12:10:00Z"
+  },
+  {
+   "id": "oa-local-start",
+   "title": "開一個本機對話、貼一行字（本機待辦、UsageNow 改 ASC 一次搞定）",
+   "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
+   "how": "已完成：本機已套用 UsageNow 商店文字到 1.0.2 版（先備份）、修好 Cloudflare 標籤。之後要本機再做事，貼同一行即可。",
+   "status": "done",
+   "done_at": "2026-10-13T17:13:13Z"
+  },
+  {
+   "id": "oa-github-app",
+   "title": "安裝 Claude GitHub App 到 ios-app-guide",
+   "url": "https://github.com/apps/claude",
+   "how": "已完成，雲端可直接推送。",
+   "status": "done",
+   "done_at": "2026-10-13T10:10:13Z"
+  },
+  {
+   "id": "oa-network",
+   "title": "雲端環境加開 App Store 與網站網域",
+   "url": "https://claude.ai/code",
+   "how": "已完成：itunes.apple.com、apps.apple.com、open.cait518.cc、alice51849.github.io。",
+   "status": "done",
+   "done_at": "2026-10-13T10:10:13Z"
+  },
+  {
+   "id": "oa-network-2",
+   "title": "雲端環境再加開 App Store 圖片與影片網域（做鉤子片用）",
+   "url": "https://claude.ai/code",
+   "how": "已完成：*.mzstatic.com、mvod.itunes.apple.com、files.catbox.moe。雲端已能直接抓 App Store 截圖與各國在地化截圖。",
+   "status": "done",
+   "done_at": "2026-10-14T08:33:05Z"
+  },
+  {
+   "id": "oa-catbox",
+   "title": "雲端環境再加 catbox.moe（讓鉤子片自動上傳並排進 Threads 發文）",
+   "url": "https://claude.ai/code",
+   "how": "不需要了：catbox 擋雲端 IP，改由 Mac 上傳。",
+   "status": "done",
+   "done_at": "2026-10-14T12:10:00Z"
+  },
+  {
+   "id": "oa-telegram-daily",
+   "title": "重新啟用 telegram-daily 工作流程",
+   "url": "https://github.com/alice51849/ios-app-guide/actions/workflows/telegram-daily.yml",
+   "how": "已完成（Enable workflow）。",
+   "status": "done",
+   "done_at": "2026-10-13T10:10:13Z"
+  },
+  {
+   "id": "oa-paired-release",
+   "title": "正式站自 10/4 停更：配對發布（雲端已修好被取消的原因並重新發布）",
+   "url": "https://github.com/alice51849/ios-app-guide/actions/workflows/pages.yml",
+   "how": "已完成：正式站 10/13 22:01（台灣）更新到 29c5c8dd，兩個網址都已上線。最後的驗證步驟因 Cloudflare 換了分析標籤而失敗，已交給本機修。",
+   "status": "done",
+   "done_at": "2026-10-13T14:01:07Z"
+  },
+  {
+   "id": "oa-05",
+   "title": "在 Mac 上允許本機 Claude 跑一次 GrowthEngine 與 threads-autopilot",
+   "how": "已完成：你在本機 session 貼上長期授權。原本卡住的三項（改 pages.yml、重新發布、每日排程）已改由雲端處理，不需要你再按允許。",
+   "status": "done",
+   "url": "https://office.cait518.cc",
+   "done_at": "2026-10-13T12:26:34Z"
+  }
+ ],
+ "apps": {
+  "cvdesk": {
+   "headline": "美國排第 16 卻輸給兩款 0 評分、名稱以「ATS Resume Builder」開頭的 App，印尼連前 50 都沒進——瓶頸是名稱字序與在地權重，不只是評分數。",
+   "markets": [
+    {
+     "locale": "id",
+     "problem": "印尼是需求最大的市場，但「cv ats」前 50 名沒有我們；第 1 名「CV ATS」只有 8 則評分，第 3 名 167 則。不是競爭太強，是我們在 ID 店面幾乎沒有權重（0 評分、0 下載、沒有任何印尼文外宣）。名稱（lang=id）確認為「CV Desk: Pembuat CV ATS」，但副標「Pembuat CV ATS · Lamaran」重複名稱，白白浪費一欄。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「ats resume」我們第 16／49。第 2、3 名是 0 評分、名稱以「ATS Resume Builder」開頭的 App，排在 14,204 則評分的 Resume Builder 之前——Apple 搜尋把名稱開頭的完全比對看得比評分重。我們的名稱把品牌「CV Desk:」放在前面，關鍵詞在後，字序吃虧；1 則評分再加一層劣勢。"
+    },
+    {
+     "locale": "th",
+     "problem": "泰國名稱已是泰文「CV Desk: สร้างเรซูเม่ ATS」，頭部詞「เรซูเม่」176 筆我們第 128；除了 Canva（1,041,026），前 5 名評分只有 14–658 則——市場薄，我們排後段只因 0 評分、0 泰文外宣。幾十個真實下載就能進前 10；第一輪引用的「เรซูเม่ ats 第 5」只是長尾詞。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "台灣是唯一有評分的店面（2 則，5.0），但求職者在 104／Cake 內完成履歷，App Store 不是入口。能搶的是「投外商要英文 ATS 履歷」這條窄需求；描述裡「一次性內購」和資料檔「買斷」已不同步，說明資料檔過時。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "cvdesk-01",
+     "title": "印尼文外宣素材與貼文入庫",
+     "detail": "寫 3 則印尼文 Threads／IG 文案（cek skor ATS、SMK 畢業季、watermark 陷阱）加 1 支 30 秒 TikTok 腳本，附追蹤碼 ct=cvd_id_ats；放進 .github/growth/app-posts.json（lang=id）。同時補 th／en／zh-Hant 各 1 則。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cvdesk/social-posts.md",
+      ".github/growth/drafts/cvdesk/tiktok-script-id-30s.md"
+     ]
+    },
+    {
+     "id": "cvdesk-02",
+     "title": "成績單加「真實頭部詞」覆寫",
+     "detail": "growth_scoreboard 現在量的是各語系關鍵字欄前 3 個（id: cv/buat cv/template cv；en: resume builder/resume maker/resume）。新增 .github/growth/measure-keywords.json 覆寫：id「cv ats」「skor ats」；en-US「ats resume」「ats resume builder」；th「เรซูเม่ ats」；zh-Hant「英文履歷」「ATS 履歷」，每天追蹤 ID 是否進前 200。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "cvdesk-03",
+     "title": "ATS 友善格式 checklist 單頁（4 語）",
+     "detail": "在 repo 寫一頁誠實的「單欄、標準標題、PDF/DOCX、不要圖示技能條」清單（id/th/en/zh-Hant），App 只列為其中一個選項；作為所有外宣的落地頁，不做模板量產。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cvdesk/ats-checklist.html"
+     ]
+    }
+   ]
+  },
+  "gmoneylite": {
+   "headline": "利基真的可以贏——日本「旅行 家計簿」前三名只有 46／4／1 則評價、韓國第 3 名只有 16 則——但 ja 副標沒有「旅行」所以沒被索引，而免費版 3 筆支出的上限會讓任何曝光都留不住人；先由擁有者決定額度與副標，外宣才有意義。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "名稱含「旅行記帳」卻排 182/182，「旅遊記帳」183 筆沒有；0 評價、沒有下載速度；免費 1 旅程／3 筆支出，試用者第一天就卡住，沒有第二次開啟與評價機會。"
+    },
+    {
+     "locale": "ja",
+     "problem": "ja 副標與付費版一字不差，標題寫「旅の家計簿」而非「旅行」，所以「旅行 家計簿」191 筆沒有我們；而前三名只有 46／4／1 則評價，是六款裡最容易登頂的組合。"
+    },
+    {
+     "locale": "ko",
+     "problem": "唯一已被索引的市場（#54/192）；領先者 트라비포켓 1,827 則，但第 3 名 Tabii 只有 16 則，前段門檻低；缺的是韓文外部聲量（Naver 部落格）。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「travel expense tracker」被企業報銷工具佔據，我們不在 185 筆內；英文只值得 Product Hunt 一次性曝光，降為低優先。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "gmoneylite-04",
+     "title": "Telegram 補 zh-Hant／ko／ja 並排旅遊檔期",
+     "detail": "把 posts 的三則加入 telegram_posts.json，排在 11 月–2 月日本冬季旅遊與 2027 春節前 3–4 週；寫 30 秒 Shorts 腳本「店門口 1,280 日圓＝？」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoneylite/shorts-script-30s-shop-counter-yen.md"
+     ]
+    },
+    {
+     "id": "gmoneylite-05",
+     "title": "Naver 部落格韓文稿＋Product Hunt 文案",
+     "detail": "韓文「일본 여행 환율 계산＋가계부 실사용기」草稿、Product Hunt 英文 tagline「offline trip expense tracker, no account」與 4 張截圖說明，交擁有者以本人名義發。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoneylite/naver-blog-japan-trip-exchange-budget-ko.md",
+      ".github/growth/drafts/gmoneylite/product-hunt-launch-en.md"
+     ]
+    }
+   ]
+  },
+  "lumimission": {
+   "headline": "不是「曝光天花板」而是「差一點點就能翻盤卻沒人推」：TW／JP／KR 三個市場的核心搜尋詞我們都停在第二頁，而排在前面的對手只有 1–19 則評分；再加上 Lite／Pro 互搶關鍵字、27 個語系還是舊模板、描述只承認 4 種語言，少量真實下載＋把 50 語的差異寫進 listing 就能改變局面。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "核心詞全部在第二頁，但前面的對手評分極少，缺的是幾十個真實下載而不是曝光天花板；同時 Lite 與 Pro 互搶同一組詞。「集點表」雖寫在副標卻完全沒進前 48，詞本身還被股票／交通 App 污染。"
+    },
+    {
+     "locale": "ja",
+     "problem": "零社會證明（0 評分），而且日本唯一有真實生活話題的詞「お支度ボード」只有付費的 Pro 有在排、免費的 Lite 完全不在結果裡；描述還寫「日本語、英語、繁体字中国語、韓国語に対応」，把 50 語差異自己否認掉。"
+    },
+    {
+     "locale": "ko",
+     "problem": "韓國最大的詞「칭찬스티커」被 굿잡（516 則）壟斷，而我們的名稱／副標用的是「보상스티커」，字面不含「칭찬스티커」，所以完全不在結果裡；利基詞「생활습관 아이」第 17，前面全是 0–3 則評分的 App。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumimission-02",
+     "title": "重寫 telegram_posts.json 的 6779750237 三篇＋新增 ko、vi 兩篇",
+     "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪掉「穿衣／get dressed／着替え」（不在 listing），改成 listing 內的吃飯、刷牙、睡覺、收玩具四個免費任務＋兔兔夥伴＋一次內購；加入「50 種語言、App 內切換」；新增 ko（칭찬스티커 痛點）與 vi（新住民家庭）兩篇。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案，不在 drafts/ 範圍內），所以沒有動。可直接貼上的替換稿已寫好：3 篇改寫（刪掉穿衣、補上 50 種語言）＋新增 ko、vi 各 1 篇，見 drafts/lumimission/telegram-replacement-posts.md",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "lumimission-03",
+     "title": "調整 mission_routines_full.json 關鍵字順序，讓每日計分板量到真正的目標詞",
+     "detail": "growth_scoreboard.py 只量每語系前 3 個關鍵字。把 /home/user/ios-app-guide/_engine/data/mission_routines_full.json 的 zh-Hant 前三改成「兒童作息,獎勵表,集點表」、ja「ごほうびシール,お支度ボード,生活習慣」、ko「칭찬스티커,생활습관,등원준비」，並刪掉 zh-Hans 混入的「逻辑,数字,照片,滤镜,天气」；同時把資料檔的語言行改成 50，讓 GEO 頁與 Telegram 一併繼承。（改 _engine/data 需在 00_GrowthEngine 改再鏡像，交本機。）",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "note": "需要修改 _engine/data/mission_routines_full.json（資料檔，不在 drafts/ 範圍內），所以沒有動。計分板量測詞已放在 challenge_terms.lumimission；語言行改成 50、清掉 zh-Hans 無關關鍵字這兩件事還沒做",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "zh-Hant／ja／ko 前三關鍵字與 50 語言行已改（_engine/data）"
+    },
+    {
+     "id": "lumimission-04",
+     "title": "寫好三語 30 秒實機影片腳本與 3–5 位台灣幼教創作者的邀請信草稿",
+     "detail": "腳本：孩子點一下→兔兔歡呼→全星球慶祝→家長後台 7 天日曆，繁中／日／韓三版標題與字幕稿；邀請信：追蹤 1–10k 的幼教老師或育兒創作者，附兌換碼流程、明確揭露合作、不索取評分。擁有者只需錄影與寄出。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimission/video-script-30s-routine-missions.md",
+      ".github/growth/drafts/lumimission/creator-invitation-emails-zh-hant.md"
+     ]
+    }
+   ]
+  },
+  "lumibopomofo": {
+   "headline": "注音需求是真的、也正值 9–11 月小一注音季，但台灣「注音」搜尋由一款 6,680 評分的免費對手主宰，我們 8 則評分只排第 14、而且 Lite 與 Pro 各只被一個核心字找到——問題是社會證明與長尾字，不是需求天花板。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "頭部字有人壟斷：「注音」搜尋 46 筆我們第 14，「ㄅㄆㄇ」31 筆完全沒有 Lite；前 10 名合計 7,611 則評分、13 款 ≥100 則，第一輪說「對手評分普遍很低」是錯的。可贏的是拼讀、聲調、描寫這類長尾字，但這些差異都不在名稱／副標；live 說明仍寫「中英雙語介面」、免費範圍只寫「核心玩法」沒說幾個注音。"
+    },
+    {
+     "locale": "vi",
+     "problem": "在台越南籍家長用的是 TW 店面，只有裝置語言是越南語時才看到 vi 文案；現行 vi 說明是 471 字的通用短版（寫 3–6 歲、沒寫四種玩法、沒寫介面有越南語）。第一輪 vi 貼文還聲明「沒有越南語介面」，與老闆確認的 50 語相反。真正缺的是進入越南媽媽社群與新住民家庭服務中心的管道，不是 ASO。"
+    },
+    {
+     "locale": "ja",
+     "problem": "JP 是唯一的海外評分來源（2 則），但 Lite 的 ja 文案寫給 3–7 歲幼兒，而日本搜「注音／ボポモフォ」的多是學台湾華語的成人；Pro 的 JP 名稱 live 已改成「台湾華語」，Lite 沒跟上。排名本輪未測（Apple 403）。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "需求極小、0 評分、排名未測；scoreboard 唯一量到的是 SA「zhuyin」第 93。只值得靠海外台灣家長社團與僑校老師口碑，不值得投 ASO。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumibopomofo-05",
+     "title": "小一注音季貼文排程與四語貼文",
+     "detail": "本週起每週 2–3 則 zh-Hant 貼文草稿（Threads／FB 親子社團），貼文不放連結、連結放個人檔案；vi／ja／en 各 1 則（已附）。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumibopomofo/grade1-zhuyin-season-posts-zh-hant.md"
+     ]
+    },
+    {
+     "id": "lumibopomofo-06",
+     "title": "可列印注音表 PDF＋老師一頁說明",
+     "detail": "把 tools/zhuyin-bopomofo-chart.html 轉成可列印 PDF，附「給幼兒園／小一／僑校老師」一頁說明與寄送信草稿，由老闆寄出；這是真實第三方提及的來源。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumibopomofo/zhuyin-chart-printable.html",
+      ".github/growth/drafts/lumibopomofo/teacher-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumibopomofo/teacher-email-zh-hant.md"
+     ]
+    },
+    {
+     "id": "lumibopomofo-07",
+     "title": "scoreboard 加 TW 長尾字並每週追蹤",
+     "detail": "在 growth_scoreboard 的 zh-Hant 字表加入「注音拼讀、聲調、注音描寫、幼小銜接」，每週記錄 Lite／Pro 名次與第 1 名評分數。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "lumibopomofo-08",
+     "title": "資料檔與 live 文案同步",
+     "detail": "用 lookup 的 description 回填 bopomofo_full.json（TW／US／JP／KR／VN），避免後續分析再用舊稿。（資料檔在 _engine/data（鏡像），交本機。）",
+     "owner": "local",
+     "impact": "medium",
+     "status": "done",
+     "note": "需用 App Store live 文案改寫 _engine/data/bopomofo_full.json（TW／US／JP／KR／VN），屬 drafts 以外的資料檔與 ASC 線上資料，不在本次可寫範圍",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "zh-Hant／en-US／ja／ko／vi 以線上 lookup 回填"
+    }
+   ]
+  },
+  "mochi": {
+   "headline": "Mochi 在美國已拿下「cute to do list」搜尋第 1 名，真正的瓶頸不是曝光，而是免費版 2 清單×4 項與宣傳文「free, no ads」的落差，讓巴西、德國、英國、日本的評分停在 1～3 星。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "利基詞已經贏了（「cute to do list」第 1，領先 10 萬評分的對手），但泛詞「to do list」只在第 25 名、「aesthetic to do list」完全沒被索引；關鍵字欄沒有 aesthetic/kawaii。接下來的槓桿是評分與泛詞，不是再找曝光。"
+    },
+    {
+     "locale": "pt-BR",
+     "problem": "不是搜不到，是第一印象：宣傳文寫「grátis, sem anúncios」，裝完只能開 2 個清單各 4 項，3 位評分者平均只給 3 星，低分會把巴西的轉換率壓住。"
+    },
+    {
+     "locale": "de-DE",
+     "problem": "同巴西：2 則評分平均 3 星，Premium 性質（是否一次買斷）在德文列表沒寫，免費範圍只藏在描述倒數第二段。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱「かわいいToDo」正好是日本人會打的詞，但只有 1 則 3 星評分、站外零口碑；在地付箋型 ToDo 對手多，需要外部導流而不是改列表。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "mochi-hook7",
+     "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、pt-BR、de）",
+     "detail": "已上傳 6/6 語（de、en、ja、ko、pt-BR、zh-Hant）；下一則 Instagram 10/15 23:20（en）；已發 0 則。影片與貼文連結見總覽「鉤子片影片：各社群連結與進度」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-14T12:02:14Z"
+    },
+    {
+     "id": "mochi-03",
+     "title": "Telegram 佇列補 pt-BR 與 de 貼文（目前只有 en/ja/ko/zh-Hant）",
+     "detail": "在 .github/scripts/telegram_posts.json 新增 Mochi 的 pt-BR、de 兩則，文案照本報告 posts 欄（老實寫免費範圍、50 種語言 App 內切換），並把現有 en/zh-Hant 文案補上免費範圍一句。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json (outside drafts/). The pt-BR/de copy that states the free scope already exists in app-posts.json (ct mochi_ptBR_2, mochi_de_",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "mochi-04",
+     "title": "scoreboard 加「挑戰詞」清單，量使用者真的會打的字",
+     "detail": "growth_scoreboard.py 目前只量每語系關鍵字欄前 3 個（en-US 是 todo/list/reminder）。新增一個 challenge-terms 檔，Mochi 加 US「cute to do list」「aesthetic to do list」、BR「lista de tarefas fofa」、DE「süße to-do liste」、JP「かわいい todo」、TW「可愛待辦」，每天追蹤。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "mochi-05",
+     "title": "寫好 Gridfiti 與 app-liv.jp 的 press note 草稿（店主寄出）",
+     "detail": "在 repo 內草擬英文與日文各一封：說明 Mochi 是獨立開發、免費範圍、101 主題、Apple Watch，請對方評估收錄到 aesthetic to-do list 清單文，不付費、不要求回覆。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/mochi/press-note-gridfiti-en.md",
+      ".github/growth/drafts/mochi/press-note-appliv-ja.md"
+     ]
+    }
+   ]
+  },
+  "moneytag": {
+   "headline": "六款裡唯一有真實訊號的 App（成績單 CZ 第 6 且第 1 名 0 評價、三個店面各 1 則評價、日本「副業 収支」需求今日實測確認），卡在 ja 名稱副標沒有「副業」「収支」、關鍵字全是會計術語、描述以 FAQ 開頭，以及免費版 1 個專案根本展示不了核心的「跨專案標籤」。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "日本「副業 収支」需求真實：第 1 名「副業の収支管理帳」免費、4.4★、700 則，第 3 名 1,034 則，兩者都在「商務」分類；第 2 名只有 1 則評價卻因為名稱就叫「副業収支」而排第二——我們 ja 名稱「収入と支出」、副標「プロジェクト · タグ · レポート」兩個詞都沒有，關鍵字又是「損益計算書、原価配賦、請負採算」這種會計語，所以只排 #98。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "關鍵字沒有「接案、擺攤、斜槓、副業、房東、班費」等使用者語言；描述以 FAQ＋Frankfurter／Cloudflare 隱私條款開頭，前三行沒講痛點；TW 1 則評價。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「income and expense tracker」是紅海；en 關鍵字 P&L tracking／job costing 是會計語，side hustle／gig／landlord 全無；但成績單顯示它是六款裡最接近搜尋第 1 的（CZ #6，第 1 名 0 評價）。"
+    },
+    {
+     "locale": "vi",
+     "problem": "VN 店面已有 1 則 5★評價（自然流量跡象），但 vi 關鍵字是「P&L, giá vốn công việc」會計語；在台越南小生意社群是可測試的真實族群。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "moneytag-04",
+     "title": "60 秒示範影片腳本＋Telegram 補三語",
+     "detail": "腳本：3 個專案（接案、擺攤、出租）＋「交通」標籤跨專案加總，zh／ja／en／vi 字幕；Telegram 補 zh-Hant／ja／vi 條目（見 posts）。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/moneytag/demo-video-script-60s-projects-and-tags.md"
+     ]
+    },
+    {
+     "id": "moneytag-05",
+     "title": "note.com 日文長文、Indie Hackers 英文稿、CZ 名次追蹤",
+     "detail": "「副業ごとの収支を分けて、タグで横断集計する」（不提確定申告）；Indie Hackers「project ledgers + cross-project tags, no subscription」；成績單每日追 CZ「zisk-ztráta」名次。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/moneytag/note-com-fukugyo-shushi-tags-ja.md",
+      ".github/growth/drafts/moneytag/indie-hackers-post-en.md"
+     ]
+    }
+   ]
+  },
+  "shotinbox": {
+   "headline": "問題是「沒人看到」不是「看了不下載」：50 語系名稱都是同一句英文、副標與關鍵字寫功能、0 評分去搶大廠詞，外部導流近乎零。",
+   "markets": [],
+   "done_actions": [
+    {
+     "id": "shotinbox-01",
+     "title": "ShotInbox 五則以痛點開頭的貼文加入貼文庫與 Telegram 今日焦點",
+     "detail": "中×3、日、英；只寫商店頁列出的功能。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T10:10:13Z"
+    },
+    {
+     "id": "shotinbox-03",
+     "title": "撰寫 3 篇教學草稿：iPhone 截圖太多怎麼清、怎麼找回截圖裡的字（zh-Hant、ja、en）",
+     "detail": "放 repo 草稿，供網站與投稿使用。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/shotinbox/guide-too-many-screenshots-zh-hant.md",
+      ".github/growth/drafts/shotinbox/guide-too-many-screenshots-ja.md",
+      ".github/growth/drafts/shotinbox/guide-too-many-screenshots-en.md"
+     ]
+    }
+   ]
+  },
+  "snapportlite": {
+   "headline": "免費入口、0 評分，TW「證件照」#108、US／GB／ID／VN 不在榜，但 CZ「průkazovka」已拿第 1——中繼資料能在競爭薄的地方登頂；台灣 2026-07-01 放寬線上申換護照、日本 2026-08-25 新マイナアプリ線上申請都要自己上傳照片，是免費 App 最該接住的高意圖時刻。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "#108／187；前五是 11K–51K 的美顏證件照 App，但「老張台灣證件照」274 則能排第 3，說明「台灣／線上換護照」在地詞有空間。線上名稱已是「在家拍證件照」，本地檔仍是舊名與「裁成指定尺寸」副標，副標現況不明。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「証明写真」185 筆不在榜（Pro #65）；前四名 20K–386K 則；日本的切角是「線上申請要自己準備顔写真」而不是美肌。"
+    },
+    {
+     "locale": "id",
+     "problem": "ID「pas foto」186 筆不在榜，但第 1 名只有 257 則、前五 257–1,449 則——全系列最薄的競爭；id 本地檔名稱只有「Snapport Lite」、keywords 無「pas foto 3x4／4x6 latar merah」組合詞。"
+    },
+    {
+     "locale": "vi",
+     "problem": "VN「ảnh thẻ」174 筆不在榜，前五是英文名的全球 App（88–12,097 則）；在台越南移工辦文件需要 3×4／4×6 紅藍白底，vi keywords 有 3x4／4x6／phông trắng，但名稱無 vi 關鍵字。"
+    },
+    {
+     "locale": "cs",
+     "problem": "成績單：CZ「průkazovka」第 1——證明在小市場靠在地詞能登頂；當作 ASC 改動後的對照組，不投外宣。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "snapportlite-04",
+     "title": "兩篇深度文草稿（台灣線上換護照、日本線上申請顔写真）",
+     "detail": "zh-Hant「線上換護照照片：在家拍＋上傳前檢查清單」（引用外交部線上申換專區與領務局照片規格，說明適用條件：成年、有戶籍、自然人憑證）；ja「オンライン申請の顔写真を自分で用意するときのチェック」。揭露開發者身份，App 只是選項之一；owner 以本人名義發布在方格子／Medium／note。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapportlite/guide-online-passport-renewal-photo-zh-hant.md",
+      ".github/growth/drafts/snapportlite/note-com-online-shinsei-kaoshashin-check-ja.md"
+     ]
+    },
+    {
+     "id": "snapportlite-05",
+     "title": "四則情境貼文接進自動發文",
+     "detail": ".github/growth/app-posts.json 加 zh-Hant／ja／id／vi 四則（ct：spl_tw_online、spl_ja_online、spl_id_job、spl_vi_doc）；telegram_posts.json 的 snapportlite 2 則改情境式並補 zh-Hant／id／vi。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapportlite/situational-posts-and-telegram.md"
+     ]
+    },
+    {
+     "id": "snapportlite-06",
+     "title": "成績單覆寫詞與 CZ 對照組",
+     "detail": "TW 證件照／護照照片／線上換護照、JP 証明写真／パスポート写真、ID pas foto／foto paspor、VN ảnh thẻ／chụp ảnh thẻ 加進 growth_scoreboard.py；以 CZ průkazovka 為對照，追 ASC 改動前後 14 天。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "snapportlite-07",
+     "title": "YouTube Shorts 腳本：白牆拍攝→35×45→4×6 排版",
+     "detail": "字幕稿 zh-Hant／ja／id／vi；owner 錄製。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapportlite/shorts-script-white-wall-35x45-4x6.md"
+     ]
+    }
+   ]
+  },
+  "unblurry": {
+   "headline": "五款裡唯一有真實動能的一款（丹麥長尾詞第 1、台灣自家名稱詞第 24、兩則有內容的 5★），卡點是美國店面唯一一則 1★ 造成 1.0★ 第一印象，以及「離線不上傳」差異在台灣已被競品寫進名稱。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "自家名稱詞「照片變清晰」只排第 24，前面是訂閱制巨頭與一款把「離線修復・無需上傳」寫進名稱、261 則評分的競品——「不上傳」在台灣不再是獨佔賣點，必須改用「老照片／小孩手震／買斷 NT$90」這種更具體的角度。2 則 5★ 評論內容真實（其中一則特別讚裝置端處理），是可引用的信任素材。"
+    },
+    {
+     "locale": "ja",
+     "problem": "線上名稱「写真高画質化」正中日本用戶用語，但 0 評分；排名因 API 限流未測。日本推薦榜由訂閱制 App 主導，買斷＋端末內處理有空位，但需要前後對比內容才會有人點。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "美區唯一一則評分是 1★，產品頁顯示 1.0★；該評分沒有文字，無法回覆也無法得知原因。英文副標「Unblur photos in HD」重複名稱的 Unblur／HD，說明開頭「Make it crystal clear」承諾過滿。"
+    },
+    {
+     "locale": "da",
+     "problem": "成績單已登頂的組合：丹麥文動詞短句「gør foto skarpt」第 1。這證明在巨頭沒在地化標題的小語種，用母語動詞短句可以登頂——是可複製到 nl／sv／no／fi 的打法，第一輪完全沒用上。"
+    },
+    {
+     "locale": "id",
+     "problem": "印尼店面預設語言為英文（Lookup 回傳英文名），印尼文文案只給裝置語言設為印尼文的用戶看；0 評分，排名未測。可做但排在 TW／JA／DK 之後。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "unblurry-01",
+     "title": "刪掉 Telegram 英文貼文裡的競品名",
+     "detail": "telegram_posts.json 中 6782275018 的 en 條目「(a pay-once alternative to Remini)」整段移除，改為「50 interface languages, switch in-app」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "需修改 telegram_posts.json 刪除「alternative to Remini」（Telegram 資料變更，不在本次權限）。",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "unblurry-02",
+     "title": "把資料檔名稱同步到線上版並換量測詞",
+     "detail": "unblurry_full.json：TW 名稱改「照片變清晰」、JP「写真高画質化」、KR「사진 선명하게」；keywords 截到 100 字元並讓前 3 個詞是 TW「照片變清晰,模糊照片變清晰,老照片修復」、JP「写真 高画質化,ぼやけ 補正,古い写真」；新增 nl「foto scherper maken」、sv「gör foto skarpare」、no「gjør bilde skarpt」、fi「tarkenna kuva」複製 DK 打法。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/unblurry/data-file-name-and-keyword-sync.md"
+     ]
+    },
+    {
+     "id": "unblurry-05",
+     "title": "前後對比素材包與四語貼文",
+     "detail": "用店主提供、已取得同意的照片做輪播圖（zh-Hant／ja／id／en 字幕），寫一頁誠實教學「手震照片能救回多少？哪些救不回」放 repo guides。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/unblurry/guide-how-much-can-a-blurry-photo-be-saved-zh-hant.md",
+      ".github/growth/drafts/unblurry/before-after-carousel-pack.md"
+     ]
+    }
+   ]
+  },
+  "claudeusagemini": {
+   "headline": "衝榜主推（10/13 起）：目標台灣開發者工具免費榜前 3。台灣該榜第 1 名只有 25 則評分，UsageNow 已排營收榜 #40、免費榜還沒進前 100；排行榜看最近 1–3 天下載速度，所以同一晚在台灣工程師圈集中發文最有效，再擴到香港、日本、英語圈。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "利基可攻：claude usage 前 5 名評分最多 39 則，UsageNow 上架 6 天就排 #18；但在自己副標的句型「ai usage tracker」上被 0 則評分的 App 壓在 #22，顯示現階段決定名次的是上架時間與下載速度，而不是文案。真正的瓶頸是信任：要在 App 內登入 Anthropic／OpenAI／GitHub／Google，描述末尾的客服信箱卻是 hourstag.app@gmail.com，也沒有可引用的安全性 FAQ，Show HN／Reddit 帶來的工程師流量會在這裡流失。Developer Tools 免費榜前 100 也還沒進。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日文詞彙撞到別的意圖：「claude 使用量」只有 32 筆結果，前 3 名全是手機流量 App（ギガ残量 11,590 則），UsageNow 排 #29；「claude 制限」前 50 全是スマホ制限（螢幕使用時間）App，UsageNow 不在榜上；只有「ai 使用量」#12（前 5 名全是 0–4 則評分）。ja 關鍵字「制限、上限、利用状況」正把 App 索引進錯的意圖。日本工程師撞到上限時是在 Google／Zenn 搜「Claude Code 制限」，不是在 App Store，需求要靠 Zenn／Qiita／X 文章接住；JP Developer Tools 免費榜已有 AI Limits Tracker #23，UsageNow 未進前 100。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "TW「claude 用量」#2，但整個搜尋只有 16 筆結果、第 1 名也只有 1 則評分，這是個幾乎沒有搜尋量的字，不是可以依賴的強項；「claude」本身被官方 App 與 ChatGPT 佔滿。台灣的需求在工程師社群（Threads、PTT Soft_Job、FB AI 開發社團），而競品 Limits 已在 TW Developer Tools 免費榜 #49，UsageNow 未進前 100。目前唯一的 1 則評分（5.0）來自台灣。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "claudeusagemini-hook7",
+     "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+     "detail": "已上傳 4/4 語（en、ja、ko、zh-Hant）；下一則 Telegram 10/14 23:00（en）；已發 0 則。影片與貼文連結見總覽「鉤子片影片：各社群連結與進度」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-14T12:02:14Z"
+    },
+    {
+     "id": "claudeusagemini-15",
+     "title": "商店文字第二模型（Fable）獨立複核",
+     "detail": "Fable 獨立複核通過（approve_with_fixes，採納 15 項修正：韓文標題保住「사용량 트래커」、日文 使用率→利用状況 等），payload 已標 apply_ready，交本機套用。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T16:28:05Z"
+    },
+    {
+     "id": "claudeusagemini-14",
+     "title": "把驗證後的標題／副標／關鍵字套用到 ASC（50 語系，Caitlyn 10/13 授權）",
+     "detail": "值在 .github/growth/aso/claudeusagemini-asc-payload.json。先備份 ASC 現值，只改 name、subtitle、keywords；需要新版本時先建版本記錄並回報，不自行上傳 build。被退件就改回 current.name。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T17:12:33Z",
+     "result": "ASC 已建立 1.0.2 (PREPARE_FOR_SUBMISSION)，50 語系 name／subtitle／keywords 已套用；備份見 aso/claudeusagemini-asc-backup-*.json；待 Caitlyn 上傳 build 送審"
+    },
+    {
+     "id": "claudeusagemini-02",
+     "title": "撰寫並發佈安全性 FAQ 頁（en／ja／zh-Hant）",
+     "detail": "在 alice51849/ios-app-guide 的 GitHub Pages 新增 usagenow-security.html：登入流程截圖說明、資料存放位置（裝置鑰匙圈）、UsageNow 只與各服務連線、如何撤銷存取。給 Show HN／Reddit／Zenn 一個可引用的來源，也供 AI 助理引用。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/claudeusagemini/usagenow-security.html"
+     ]
+    },
+    {
+     "id": "claudeusagemini-03",
+     "title": "起草 Show HN、Reddit showcase 與 Zenn 文章",
+     "detail": "Show HN 主文（說明 Keychain、無伺服器、為何做手機端）＋常見安全問答；r/ClaudeAI、r/ChatGPTCoding 的 showcase 版本（揭露開發者身分）；Zenn／Qiita 文章「Claude Code の5時間・週間制限を確認する方法まとめ」誠實列出 /usage、claude-monitor 等免費方法，最後介紹 UsageNow 並揭露身分。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/claudeusagemini/show-hn-post-en.md",
+      ".github/growth/drafts/claudeusagemini/reddit-showcase-en.md",
+      ".github/growth/drafts/claudeusagemini/zenn-article-claude-code-limits-ja.md"
+     ]
+    },
+    {
+     "id": "claudeusagemini-07",
+     "title": "成績單加入 Developer Tools 榜與英文利基字",
+     "detail": "growth-scoreboard 加入 US／JP／TW Developer Tools 免費榜前 100 檢查，以及 US「claude usage」「codex usage」「ai usage tracker」、JP「ai 使用量」每日名次，設定里程碑：US claude usage 進前 5、任一店面進 Developer Tools 前 100。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "claudeusagemini-09",
+     "title": "衝榜期間 Threads 每天 1 則 UsageNow（10/14–10/27）",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：10/15、10/17、10/19、10/21、10/23。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    },
+    {
+     "id": "claudeusagemini-10",
+     "title": "成績單加入衝榜追蹤：40 國開發者工具免費榜＋營收榜每日名次",
+     "detail": "focus.json 設定目標前 3 名，成績單最上面列出每個店面今天名次、前次名次與變化。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:33:53Z"
+    },
+    {
+     "id": "claudeusagemini-11",
+     "title": "Telegram 每日精選「今日焦點」10/14–10/27 固定輪播 UsageNow",
+     "detail": "只輪播已審核的繁中貼文，不多放連結（每款 App 仍只有一個追蹤連結）。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:33:53Z"
+    },
+    {
+     "id": "claudeusagemini-12",
+     "title": "一鍵發文包：台灣 7、香港 1、日本 2、英語圈 4 則（每則獨立追蹤碼）",
+     "detail": "drafts/claudeusagemini/push-kit.json；網頁版每則有一鍵發文按鈕。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:38:48Z",
+     "url": "https://claude.ai/artifact/FGRhJkypQ1FfHYWQanZN3o"
+    }
+   ]
+  },
+  "notesstudio100": {
+   "headline": "台灣「手寫筆記」前 46 名、日本「手書きノート」前 200 名都沒有我們（日本名稱已含該詞），對手評分 2 萬到 47 萬則，而免費版只給 1 本 5 頁——曝光進不去，進來的人也住不下去。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「手寫筆記」搜尋結果 46 筆，我們不在其中；前 5 名評分 2,207 到 66,638 則。名稱沒有中文，成績單量的是「手帳／日記／讀書計畫」，不是核心詞。免費版 1 本最多 5 頁，國考生無法在裡面住一週再決定；內建備忘錄也能手寫。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱已改成「100 Notes Studio：手書きノート」（第一輪說還是英文，已過時），但「手書きノート」171 筆結果裡我們仍不在前 200；前 5 名評分 3,424 到 268,631。名稱對了還是進不了榜，說明 0 評分、0 下載才是門檻；成績單量的是「メモ帳／手帳／日記」。買い切り訴求成立，但沒有影片就看不出 100 種風格的差異。"
+    },
+    {
+     "locale": "ko",
+     "problem": "名稱仍是英文；對手在韓國特別強（Goodnotes 467,109、Notability 64,960 則）。「평생소장」是真實需求，但免費 5 頁、2 款風格，體驗不到核心差異。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "notesstudio100-01",
+     "title": "三支示範影片腳本＋貼文入庫",
+     "detail": "寫 3 支 30–45 秒的 iPad 螢幕錄影腳本（100 款風格翻頁、手寫→抽認卡→FSRS、PDF 講義標註），標題用 zh/ja/ko 在地詞；下列 4 則貼文寫進 app-posts.json（ct=n100_tw_exam 等），免費額度一律寫「1 本最多 5 頁、2 款風格」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/notesstudio100/video-scripts.md",
+      ".github/growth/drafts/notesstudio100/social-posts.md"
+     ]
+    },
+    {
+     "id": "notesstudio100-02",
+     "title": "量測覆寫＋資料檔同步",
+     "detail": "measure-keywords.json 加：zh-Hant「手寫筆記」「PDF 標註」「國考 筆記」；ja「手書きノート」「買い切り ノート」；ko「필기 앱」「손글씨 노트」。用 live lookup 更新 notesstudio100_full.json 的 ja 名稱與免費額度文字，避免再用過時文案發文。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "notesstudio100-03",
+     "title": "note.com／네이버 文章草稿",
+     "detail": "寫「買い切りの手書きノートを作った理由」（ja）與「평생소장 필기 앱을 만든 이유」（ko）草稿，第一人稱、不比較他牌；交店主本人帳號發。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/notesstudio100/note-com-article-ja.md",
+      ".github/growth/drafts/notesstudio100/naver-blog-article-ko.md"
+     ]
+    }
+   ]
+  },
+  "aim990": {
+   "headline": "Aim990 在台灣其實搜得到（「多益」第 33 名），但前面 32 款都有數千到十幾萬則評分、名稱又拿掉了考試字；越南與印尼店面更只剩英文頁，真正的瓶頸是社會證明為零加上本地化缺頁，不是市場飽和。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "名稱「Aim990：英文弱點教練」沒有多益/TOEIC，「多益」靠副標或關鍵字排到第 33，「TOEIC」「多益 app」完全不在前 168/183；只有 2 則評分。同期上架（2026-06-17）的「單手刷 990」已有 985 則、排第 5，證明台灣多益族群有需求也願意評分，卡的是社會證明與名稱，不是市場。"
+    },
+    {
+     "locale": "vi",
+     "problem": "越南店面顯示英文名「Aim990: English Revision Coach」與英文描述，v2.0.1 沒有上線越南文本地化；「toeic」「luyện thi toeic」不在前 178/186。但越南對手評分量小（多數 <1,000 則），是三個市場裡最容易被看見的，前提是先補回越南文店面頁。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日本「TOEIC」前 178 名沒有我們，前段是 mikan、トレーニングTOEIC、abceed、スタサプ 等兩萬到二十八萬則評分的大品牌；「TOEIC 弱点」只有 16 筆結果（需求極小），我們第 11。零評分的買い切り個人 App 在這個店面靠搜尋幾乎不可能被看到，只能靠 X 學習者社群帶量；ja 應排在 zh-Hant、vi 之後。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "aim990-04",
+     "title": "清理 Aim990 Plus 懸空引用與舊文案",
+     "detail": "從 data/ios-app-decision-matrix.* 移除 aim990plus 並從 aim990 的 sibling_app_keys 拿掉；buyer_intent 的「best …」改中性描述；刪 telegram_posts.json 的 4 筆 Aim990 Plus，把 Aim990 的 en/ja/ko 貼文改成「8 分鐘診斷→最弱 3 項→每天一項」並新增 vi 貼文。（雲端只做 telegram_posts.json 部分；_engine/data 部分另開本機項目。）",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "需修改 data/ios-app-decision-matrix.* 與 .github/scripts/telegram_posts.json（Telegram 程式碼／資料變更），不屬雲端草稿範圍",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "aim990-07",
+     "title": "Dcard/PTT 方法文與影片腳本",
+     "detail": "寫「怎麼找出自己的多益失分類型」方法文草稿（Dcard 英文檢定板、PTT Eng-Class，文末揭露開發者、只提一次 App 名、不放連結）；寫 3 支 30 秒直式影片腳本：8 分鐘診斷實錄、緊急模式、15 秒提示文法速度題。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aim990/dcard-ptt-toeic-lost-points-method.md",
+      ".github/growth/drafts/aim990/shorts-scripts-30s-diagnosis-panic-grammar.md",
+      ".github/growth/drafts/aim990/youtuber-offer-code-email-zh-hant.md"
+     ]
+    },
+    {
+     "id": "aim990-10",
+     "title": "threads-autopilot 排程兩篇 zh-Hant 貼文",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/04。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    },
+    {
+     "id": "aim990-04b",
+     "title": "Aim990 Plus 懸空引用：decision-matrix 與 sibling_app_keys（資料部分）",
+     "detail": "接 aim990-04 的資料部分：data/ios-app-decision-matrix.* 移除 aim990plus、aim990 的 sibling_app_keys 拿掉、buyer_intent 去 best；在 00_GrowthEngine 改再鏡像。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "決策矩陣移除 aim990plus、sibling_app_keys 清空；GE 資料鏡像待同步"
+    }
+   ]
+  },
+  "battai": {
+   "headline": "BattAI 在有需求的詞已站上第 10–42 名（JP「バッテリー劣化」第 10、TW「電池健康」第 15、US「battery health」第 42）卻只有 1 則評分：iOS 設定本來就顯示最大容量，而線上文案真正的差異「預估到 80% 的時間」與「二手／送修電池報告」沒有出現在 TW／JP／KR 的名稱與副標。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "第 15 名已可見但不被點：副標「規則、來源與限制都說清楚」是價值宣言不是利益點，報告功能沒進名稱副標；領先者有 18,575 則評分，光靠「健康分數」沒有下載理由。"
+    },
+    {
+     "locale": "ja",
+     "problem": "第 10 名，但第 3 名「バッテリー劣化 充電サイクル記録 交換時期」0 則評分仍排在我們前面＝名稱含詞權重高；JP 名稱副標沒有劣化／交換時期／売却。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「battery health」第 42／160、「battery cycle count」第 13／132，但線上功能表已刪掉「Cycles」行，仍靠殘留關鍵字排名；US 名稱已改「Battery Health & Life」而 en-GB 與印尼回退仍是舊名；Scoreboard 第 1 名全是「電池健康分數」直譬詞、對手 0 則＝無需求。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "battai-03",
+     "title": "撰寫二手買賣情境草稿並回填線上文案",
+     "detail": "PTT MacShop／Mobile01「賣 iPhone 前怎麼整理電池資訊」、note「iPhoneを売る前に確認したいバッテリー情報」草稿（揭露身分、不洗版）；Telegram 以「二手報告」框架發 spotlight；把線上描述回填 _engine/data/battai_full.json。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/battai/ptt-mobile01-before-selling-iphone-battery-zh-hant.md",
+      ".github/growth/drafts/battai/note-before-selling-iphone-battery-ja.md",
+      ".github/growth/drafts/battai/telegram-spotlight-resale-report.md"
+     ]
+    }
+   ]
+  },
+  "countdaysnow": {
+   "headline": "CountDaysNow 上架 17 天、50 個語系的名稱全是英文「Event Counter」，副標題是「每日焦點／오늘의 초점／今日のフォーカス」這類 UI 字串，在倒數日、디데이、カウントダウン這些核心詞上根本沒被索引。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "名稱沒在地化、副標題「每日焦點」無搜尋詞、宣傳文與描述第一行是「每日焦點: 過往 · 今天 · 未來 — 儲存」這種介面字串；學測 100 天倒數正好是現在，但使用者打「倒數日」找不到。"
+    },
+    {
+     "locale": "ko",
+     "problem": "韓國是全球最強的 D-day 文化，但 ko 關鍵字沒有「디데이」(只有 카운트다운、100일、수능、전역일)，名稱副標題也沒有；2026-11-19 수능只剩 5 週，窗口就在眼前。"
+    },
+    {
+     "locale": "ja",
+     "problem": "副標題「今日のフォーカス」、描述以 UI 字串開頭，Countdown Plan（新主打）只在 en-US 有寫；推し活、受験關鍵字倒是有。"
+    },
+    {
+     "locale": "vi",
+     "problem": "第一版想打「在台越南新住民」，但 vi 列表只會出現在越南店面（locale_storefronts：vi→vn）；在台越南人用台灣 Apple ID 看到的是 zh-Hant 或英文頁。vi 是低產出市場，應降級。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "countdaysnow-04",
+     "title": "Telegram 補 ko 貼文並寫 Clien／Dcard 草稿（店主本人發）",
+     "detail": "佇列目前只有 en/ja/zh-Hant；新增 ko 一則（수능·100일·전역일 情境）。另草擬 Dcard 考試版「學測百日倒數」與 Clien 아이폰 게시판 開發者分享各一則，依版規揭露身分。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/countdaysnow/dcard-exam-board-gsat-100-days.md",
+      ".github/growth/drafts/countdaysnow/clien-iphone-board-developer-post.md",
+      ".github/growth/drafts/countdaysnow/telegram-ko-copy.md"
+     ]
+    },
+    {
+     "id": "countdaysnow-05",
+     "title": "草擬 MrMad、蘋果仁 pitch email（店主寄）",
+     "detail": "兩家都寫過倒數小工具清單文；信中老實寫免費 3 事件、一次買斷、農曆／民國並列、動態島，不付費不催促。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/countdaysnow/pitch-email-mrmad.md",
+      ".github/growth/drafts/countdaysnow/pitch-email-applealmond.md"
+     ]
+    },
+    {
+     "id": "countdaysnow-06",
+     "title": "scoreboard 挑戰詞",
+     "detail": "TW「倒數日」「倒數 小工具」；KR「디데이」「디데이 위젯」；JP「あと何日」「カウントダウン」；US 品牌詞「countdaysnow」(第一版指出被 CountDays／Countdown Now 截流)。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    }
+   ]
+  },
+  "cyca": {
+   "headline": "Cyca 的差異點（不用帳號、資料只在手機）沒有出現在任何店面會被索引的欄位裡，所以在唯一還有空位的「隱私型經期 App」長尾搜尋也排不進前 50；而在台灣，免費版把預測鎖在 Pro 後面，反而輸給 iOS 內建健康 App。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "主字都被 2 千到 5.9 萬則評分的 App 佔滿，唯一排得進的日常用語是「月經」#16；名稱／副標只重複「經期、排卵、生理期」這些通用字，使用者在搜尋結果裡看不到任何 iOS 內建「健康」App 做不到的理由，而內建功能免費就有預測，Cyca 的免費版卻沒有。zh-Hant 關鍵字還放了「安全期、基礎體溫」，App 沒有體溫功能且描述自己寫「不可作為避孕方法」。"
+    },
+    {
+     "locale": "id",
+     "problem": "三個母語字都不在前 50，前面是 Flo（17.5 萬）等巨頭；更關鍵的是印尼店面預設顯示英文（Lookup 回傳名稱是「Cyca: Period & Cycle Tracker」），而在台灣的印尼移工若用台灣 Apple ID，店面根本沒有印尼文版面。所以印尼文 listing 幾乎無人看到，必須靠社群直接告知「App 介面有印尼文，進 App 可切換」。"
+    },
+    {
+     "locale": "vi",
+     "problem": "與印尼相同：母語字全部不在前 50，越南店面預設顯示英文版面，台灣店面沒有越南文版面；越南的領先者評分數更高（Flo 29.6 萬、MeetYou 7.9 萬）。搜尋不是可行路徑，只能靠新住民社群與服務中心口碑，且訊息要說清楚「App 內有越南文」。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「period tracker／period calendar」是 Flo（199 萬）等級的戰場，無解；但「private period tracker」的前 5 名裡有 0 則和 1 則評分的 App（Emberly、Private Period Tracker），這條長尾是空的，Cyca 卻排不進前 50，因為「private／no account／offline」只寫在不被索引的描述裡，名稱、副標、關鍵字一個字都沒有。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "cyca-04",
+     "title": "撰寫 id／vi 社群用一頁簡介與管理員請求信",
+     "detail": "重點句：「店面可能顯示英文，但 App 內有印尼文／越南文，50 種語言可在 App 內切換；不用帳號、離線可用」。附截圖步驟：設定→語言。由擁有者經社團管理員同意後分享到在台移工／新住民 Facebook 社團與新住民家庭服務中心。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cyca/community-one-pager-id.md",
+      ".github/growth/drafts/cyca/community-one-pager-vi.md",
+      ".github/growth/drafts/cyca/admin-request-letters.md",
+      ".github/growth/drafts/cyca/printable-flyer-id-vi.html"
+     ]
+    },
+    {
+     "id": "cyca-05",
+     "title": "寄給隱私向評測與榜單的 pitch 信稿",
+     "detail": "對象：bearable.app 2026 經期 App 榜、Mozilla Privacy Not Included、tw.my-best.com 生理期 App 排行。證據：App Store 隱私標示「未收集資料」、無伺服器、無帳號；不提價格。由擁有者寄出。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/cyca/pitch-emails-privacy-reviewers.md"
+     ]
+    },
+    {
+     "id": "cyca-06",
+     "title": "把「月經」與「private period tracker」加進成績單日量",
+     "detail": "在 growth-scoreboard 的 cyca 關鍵字清單加入 TW「月經」、US「private period tracker」「period tracker no account」、ID「aplikasi haid」、VN「lịch kinh nguyệt」，追蹤副標調整前後的名次變化。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    }
+   ]
+  },
+  "dailymatelite": {
+   "headline": "免費、50 種學習語言、介面可切換，是「移工看護練中文／雇主家庭學看護母語」這個 50 語言主軸最強的 App，但 zh-Hant／id／vi 的 keywords 完全沒有「印尼文／越南文／bahasa mandarin／tiếng Trung」，連 56–75 筆結果的小池子都排不進前 10。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「學印尼文」只有 56 筆結果、第 1 名 37 則評分；「學越南文」75 筆、第 1 名 93 則——我們在「學越南文」排 #71（倒數第 5），因為 zh-Hant keywords 沒有印尼文、越南文、泰文、看護、新住民。"
+    },
+    {
+     "locale": "id",
+     "problem": "id 名稱只有「DailyMate Lite」、keywords 沒有「bahasa mandarin／bahasa Taiwan」——印尼看護多用印尼 Apple ID，搜「belajar bahasa mandarin」找不到我們；免費層只有「旅行」初級，看護需要的健康／工作主題要付費。"
+    },
+    {
+     "locale": "vi",
+     "problem": "vi keywords 有 tiếng Anh／Nhật／Hàn 卻沒有「tiếng Trung／tiếng Hoa」，在台越南移工與新住民學中文的詞完全沒接到。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日本人主要學英文，對手 英会話フレーズ1600 17K、Duolingo 76 萬；ja 名稱「ひとこと練習」無關鍵字——ja 只適合 X 貼文，不是主戰場。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "dailymatelite-04",
+     "title": "三則看護情境貼文接進自動發文",
+     "detail": "把 zh-Hant／id／vi 貼文（含 50 語言、只切介面）加進 .github/growth/app-posts.json（ct：dml_tw_care、dml_id_care、dml_vi_care），並改寫 telegram_posts.json 的 dailymatelite 2 則為情境式。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymatelite/caregiver-posts-and-telegram.md"
+     ]
+    },
+    {
+     "id": "dailymatelite-05",
+     "title": "成績單覆寫詞驗證 ASC 改動",
+     "detail": "TW 學印尼文／學越南文／旅遊英文、ID belajar bahasa mandarin、VN học tiếng Trung 加進 growth_scoreboard.py，每天追名次。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "dailymatelite-06",
+     "title": "YouTube Shorts 腳本：印尼文介面練中文",
+     "detail": "印尼文介面＋練中文卡片→切回中文介面，字幕 zh-Hant／id；owner 錄製。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymatelite/shorts-script-indonesian-ui-practice-chinese.md"
+     ]
+    },
+    {
+     "id": "dailymatelite-07",
+     "title": "threads-autopilot 排雇主家庭痛點貼文",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/21。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    }
+   ]
+  },
+  "dbhalo": {
+   "headline": "TW「分貝」第 20／187（領先者約 3,000 則評分）是六款裡最可攻的搜尋位置；KR 名稱就是「소음 측정기」卻在「층간소음」「소음 측정기」兩詞完全缺席；JP 打鼾被 66k 則的對手壟斷，應從重點市場移除。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「分貝」第 20 名、前段對手只有 625–3,047 則評分，是六款中最可攻的位置；「打鼾」第 156 不可行；台灣法院不採手機 App 分貝值，外宣必須先管理「法律證據」期待。"
+    },
+    {
+     "locale": "ko",
+     "problem": "名稱含「소음 측정기」、關鍵字含「층간소음」仍兩詞缺席＝新 App 權重趨近零；층간소음 專用紀錄 App 只有 0–4 則，但通用分貝計 2k–6k 則同時佔前 5，不是純粹的低競爭；副標「노출량·주파수·수면 일지」沒有층간소음。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「decibel meter」被 162.9k／55.5k 與政府免費 NIOSH App 佔滿、「snoring」被 SnoreLab 57k／ShutEye 350k 佔滿，搜尋不可行；只剩「不存原始錄音」的睡眠日誌差異，走社群問答。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「騒音計」第 171／177、「いびき」缺席且領先者 66k 則；JP 的分貝與打鼾兩個切角都不可行，降為低投入。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "dbhalo-03",
+     "title": "撰寫 Naver 層間噪音教學與 PTT／Dcard 回覆模板",
+     "detail": "ko：「층간소음 기록하는 법」草稿，寫明可申請이웃사이센터官方量測、App 是估算值、揭露開發者身分；zh-Hant：回覆噪音提問的模板，主動提醒手機數值不能當法律證據；Telegram 先發 ko／zh-Hant 版。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dbhalo/naver-floor-noise-logging-guide-ko.md",
+      ".github/growth/drafts/dbhalo/ptt-dcard-noise-reply-templates-zh-hant.md",
+      ".github/growth/drafts/dbhalo/telegram-spotlight-ko-zh-hant.md"
+     ]
+    },
+    {
+     "id": "dbhalo-04",
+     "title": "r/snoring「不存原始錄音」說明草稿",
+     "detail": "確認版規後，以設計說明（事件分類在裝置端、不保存麥克風音訊、非醫療器材）為主，不點名競品。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dbhalo/reddit-snoring-no-raw-audio-en.md"
+     ]
+    }
+   ]
+  },
+  "hourstaglite": {
+   "headline": "它已經是美國「price in hours」第 1 名、台日韓衝動購物詞唯一進榜的那款，卻只有 1 張截圖和「價值稜鏡」術語；問題全在頁面，截圖補齊前任何外宣都是浪費。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「衝動購物」第 26/46（全部 0 評價，需求極小）；頁面只有 1 張截圖、宣傳文字是標語拼貼、zh 關鍵字浪費在「價值稜鏡、人生時間成本」；0 評價。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「衝動買い」#98/138；前段 POCHIST 232 則、其他 1–6 則；ja 文案「価値レンズ」看不懂；1 張截圖。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「price in hours」第 1 名但 0 評價、第 2 名 TimePrice 也 0 則：零搜尋量的詞；黑五內容帶來的點擊會落在 1 張截圖的頁面上。"
+    },
+    {
+     "locale": "vi",
+     "problem": "在台越南移工多用 Android；介面有越南語（languageCodesISO2A 含 VI），只適合管理員同意後的小額測試。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "hourstaglite-03",
+     "title": "Telegram 加「頁面就緒門檻」",
+     "detail": "已上線：Telegram 自動發文與每日精選「今日焦點」都會跳過商品頁截圖少於 3 張的 App（目前 HourStag Lite、Unblurry Pro、SaveTag），截圖補齊後自動恢復。 在 telegram_post.py 加規則：lookup 截圖少於 3 張的 App 自動跳過；同時備妥 zh-Hant／ja／en／vi 貼文（見 posts），截圖上線即發。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "note": "要在 telegram_post.py 加「截圖少於 3 張就跳過」的門檻，屬於 Telegram 程式變更；四語貼文 app-posts.json 裡已經有。",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "hourstaglite-04",
+     "title": "與 HoursTag 共用雙 11／黑五圖卡",
+     "detail": "同一套「這東西＝幾小時工」素材（zh-Hant／ja／en），結尾一律導向免費 Lite。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/hourstaglite/cards-captions-and-posting-rules.md",
+      ".github/growth/drafts/hourstaglite/card-checkout-hours-zh-hant.svg",
+      ".github/growth/drafts/hourstaglite/card-checkout-hours-ja.svg",
+      ".github/growth/drafts/hourstaglite/card-checkout-hours-en.svg"
+     ]
+    }
+   ]
+  },
+  "ledmovingtext": {
+   "headline": "唯一真正的問題是名稱：各店面都叫英文「LED Moving Text」，而台日韓第 2–5 名有 2、8、63 則評分的小 App 只因名稱帶「跑馬燈／電光掲示板／전광판」就排前五；外宣貼文有效，但沒有名稱在地化排名不會動。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "TW「跑馬燈」#46；前 4 名名稱全是「跑馬燈」，#5「追星跑馬燈」只有 8 則評分。zh-Hant 名稱沒有「跑馬燈」，多句輪播（Cue Flow）也沒寫進 zh-Hant 描述。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「電光掲示板」#115；#2「電光掲示板(シンプル)」只有 63 則評分——名稱命中即可排第 2。ja 名稱無「電光掲示板」。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「전광판」#151；#3「전광판」123 則、#4 23 則、#5「전광판: LED」2 則評分——同樣是名稱命中。"
+    },
+    {
+     "locale": "th",
+     "problem": "「ป้ายไฟวิ่ง」183 筆無我方；前五全是英文名「LED Banner」類（357–6,729 則），泰國使用者的搜尋習慣不明，th 應列為測試市場而非主市場。"
+    },
+    {
+     "locale": "de-DE",
+     "problem": "成績單把 DE「Leuchttafel」#4 列為機會，但這個詞只有 6 筆結果，沒人搜；真實詞「Laufschrift」在副標卻不在 keywords 前三，所以沒被量測。德國對手第 1、2 名 0 則評分，值得量。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "ledmovingtext-04",
+     "title": "修成績單：排除無量詞、加覆寫詞",
+     "detail": "growth_scoreboard.py 的 opportunities() 排除 result_count<30 的詞並在報表標示每詞結果數；加覆寫詞 TW 跑馬燈／應援燈牌／接機牌、JP 電光掲示板／うちわ文字、KR 전광판／응원판、DE Laufschrift、TH ป้ายไฟวิ่ง。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "ledmovingtext-05",
+     "title": "3 支 15–30 秒直式影片腳本",
+     "detail": "市集攤位多句輪播、接機口 90 度大字、演唱會排隊；分鏡與 zh-Hant／ja／ko 字幕稿；owner 錄製後發 Shorts／Reels／Threads。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/ledmovingtext/vertical-video-scripts-3x.md"
+     ]
+    },
+    {
+     "id": "ledmovingtext-06",
+     "title": "活動日曆與貼文排程表",
+     "detail": "整理台灣 2026 Q4–2027 Q1 公開的演唱會、跨年、市集日期，產出場次前 2–3 天的貼文排程（含「先查主辦是否禁發光物」提醒）給 threads-autopilot。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/ledmovingtext/event-calendar-post-schedule-2026q4-2027q1.md"
+     ]
+    },
+    {
+     "id": "ledmovingtext-07",
+     "title": "threads-autopilot 接排程表",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：10/29。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    }
+   ]
+  },
+  "lockhour": {
+   "headline": "LockHour Pro 上架 4 個月只有 1 則評分，最大的漏洞是 50 個語系裡有 35 個（含英國、澳洲、加拿大、德、法、西、葡、義、越）用的是一段 490 字的泛用簡介，完全沒提「封鎖 App」、模式或強制模式，而且沒有任何語系寫免費能用什麼。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "台灣是唯一有評分的店面（1 則 5 星），zh-Hant 列表是完整版、名稱含封鎖 App 與專注計時；問題是紅海（Opal、ScreenZen 類）與零站外足跡，以及名稱「Pro」+ 免費價格卻不說免費範圍。"
+    },
+    {
+     "locale": "ja",
+     "problem": "ja 列表完整（アプリ制限・集中タイマー、ハードモード），0 評分代表純粹沒有入口；朝スマホ、スマホ依存話題在 X 有量但我們沒出現。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "en-US 本身是完整描述，但 en-GB／en-AU／en-CA 與其他 32 個語系是 490 字泛用文（「Fokus-Sessions zu planen… Behalte Bildschirmzeit im Blick」），沒有 block／blocker／modes／Hard Mode；英語世界一半以上的店面看到的是這版。再加上名稱「Pro」卻標 Free、沒寫免費範圍，點進來不知道能不能免費用。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lockhour-05",
+     "title": "修正 Telegram 佇列 LockHour en 文案（移除 Opal/Forest）",
+     "detail": "telegram_posts.json 中 LockHour en 的「(a pay-once alternative to Opal/Forest)」改為「a pay-once app blocker, no subscription」；順手六語都加 50 種語言句。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "Telegram queue change: requires editing .github/scripts/telegram_posts.json to replace 'a pay-once alternative to Opal/Forest' with 'a pay-once app blocker, no subscription' and add the 50-language li",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "lockhour-06",
+     "title": "scoreboard 挑戰詞",
+     "detail": "TW「封鎖app」「戒手機」；JP「アプリ制限」「スマホ依存」；US「app blocker」「block apps」「app blocker no subscription」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "lockhour-07",
+     "title": "草擬誠實示範影片腳本與 note.com 文",
+     "detail": "腳本：首次授權 Screen Time 流程、開始時段、強制模式冷靜倒數；note.com「朝スマホをやめる Morning Reset」實用文。店主錄製／貼文。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lockhour/demo-video-script-honest-walkthrough.md",
+      ".github/growth/drafts/lockhour/note-com-morning-reset-ja.md"
+     ]
+    }
+   ]
+  },
+  "lumiweather": {
+   "headline": "全球只有 3 則評分（TW 2、JP 1）；真正的問題是跟免費內建 Apple 天氣正面競爭，TW 與 JP 的線上名稱都把最擠的「天氣預報」放在最前面、把唯一差異「外出指數／おでかけ指数」藏在後面，免費層又把 Apple 免費就有的逐時／一週預報鎖起來；外部資產（GEO answers、Telegram）還停在舊的「給孩子看的天氣」定位。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「天氣」大詞被 Apple 天氣與 4–5 萬評分的 App 佔滿，不可能贏；利基詞「穿搭 天氣」雖排第 5 卻只帶來 2 則評分，代表利基本身搜尋量很小，差異化必須靠「看天氣發文」等外部內容送到人面前，而不是等人搜。線上名稱「天氣預報與穿搭建議」把差異放在後面，且與資料檔／GEO 的「外出指數與穿搭建議」不一致。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱同樣漂移且把「天気予報」放前面；利基「服装 天気」由 おしゃれ天気（22,906）壟斷；只有 1 則評分。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "0 評分，英文市場最大也最飽和（Weather Fit 3,795），而且 iOS 內建天氣免費；在沒有評分前投入英文效率最低。"
+    },
+    {
+     "locale": "id",
+     "problem": "ID 店面預設顯示英文 listing（印尼文版有上，需 lang=id 才看到），0 評分；真正可用的印尼語場景不在印尼，而是在台灣：照顧長輩的印尼籍看護用家中中文 iPhone，在 App 內把介面切成印尼語——這是 50 語的真實用途，但 iPhone 覆蓋有限，只能當低成本的補充市場。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumiweather-03",
+     "title": "改寫 Telegram 三篇並修資料檔語言行與前三關鍵字",
+     "detail": "telegram_posts.json 的 6779552704：刪「給孩子看的天氣／child-friendly／親子で見る」，改用 live 名稱與 listing 的外出指數、一句判斷、最佳時段、帶傘／防曬提示、Apple WeatherKit、50 語可切換；/home/user/ios-app-guide/_engine/data/weather_full.json 的「40 多種語言」全部改 50，zh-Hant 前三關鍵字改「穿搭 天氣,今天穿什麼,外出指數」、ja「服装 天気,おでかけ 天気,おでかけ指数」、en「what to wear weather,outfit weather,outing score」，讓計分板量利基詞。（雲端只做 telegram_posts.json 部分；_engine/data 部分另開本機項目。）",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "需要修改 telegram_posts.json 與 _engine/data/weather_full.json，所以沒有動。Telegram 三篇替換稿（刪掉「給孩子看」）、17 個語系「40 多種語言」改 50 的句型（已附 zh-Hant／ja／en-US／ko）、前三關鍵字的新值，見 drafts/lumiweather/telegram-and-data-file-replacemen",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "lumiweather-04",
+     "title": "做「看天氣發文」觸發式貼文庫與日文開發記草稿",
+     "detail": "寫 6 篇繁中 Threads 短文，各對應一個觸發（鋒面南下、早晚溫差大、颱風前一天、梅雨開始、紫外線過量、寒流），附外出指數截圖指引，擁有者當天挑一篇發；寫 note.com 日文開發記「天気予報の数字を1つの指数にした理由」草稿與三語「3 秒決定穿什麼」Shorts 腳本。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumiweather/weather-trigger-threads-posts-zh-hant.md",
+      ".github/growth/drafts/lumiweather/note-com-dev-diary-outing-score-ja.md",
+      ".github/growth/drafts/lumiweather/shorts-script-3-second-outfit.md"
+     ]
+    },
+    {
+     "id": "lumiweather-03b",
+     "title": "lumiweather 資料檔語言行與前三關鍵字（_engine/data 部分）",
+     "detail": "接 lumiweather-03 的資料檔部分：在 00_GrowthEngine 改 lumiweather_full.json 再鏡像到 Guide。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "weather_full.json 語言行 50 語＋前三關鍵字已改（Guide _engine 端；GE 本體待同步）"
+    }
+   ]
+  },
+  "lumimath": {
+   "headline": "live 文案已把 Lite 寫成「46 種題型＋弱項加強＋列印附解答學習單」，和付費 Pro 幾乎一樣，再加上「依裝置自動偵測語言」與「体験版／체험판」名稱——真正的問題是 Lite／Pro 定位重疊與店面說法自相矛盾，曝光是其次。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "副標投「幼兒數學」頭部字，內容卻到破百進退位與乘除；live 第一行寫 46 種、內文寫「超過 40 種」；「依裝置自動偵測系統語言」與老闆確認的 App 內切換矛盾；2 評分；最強差異（看圖就懂、規律邏輯、列印學習單）不在可搜尋欄位。TW 排名本輪未測。"
+    },
+    {
+     "locale": "ko",
+     "problem": "名稱「체험판」＝試用版，先扣價值感；사고력 수학 是真需求，但 0 評分；題目與語音有韓文是可打的點，排名未測。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱「体験版」同上（Apple 2.2 對 demo／trial 命名有審查風險，推論）；0 評分；考える力需求存在但本輪無排名。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumimath-04",
+     "title": "三語貼文＋Telegram＋scoreboard 字表",
+     "detail": "zh-Hant／ko／ja 貼文（已附，不提賽事名稱）；Telegram spotlight；scoreboard 加 TW「數學 規律 邏輯」、KR「사고력 수학」、JP「考える力 算数」；math_planet_full.json 同步 live。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimath/telegram-copy.md"
+     ]
+    }
+   ]
+  },
+  "lumibopomofopro": {
+   "headline": "台灣唯一有量的付費注音對手只賣 NT$60 且有 1,549 評分，我們 NT$290、2 評分、「注音」搜尋前 46 名找不到——Pro 在台灣靠搜尋賣不動，只能走海外華人家庭、日本台湾華語線與「不要內購」族群。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "價格錨點與同名截流：注音學習卡 PRO NT$60／1,549 評分 vs 我們 NT$290／2 評分，價差 4.8 倍；「ㄅㄆㄇ」只排 #31、「注音」前 46 名沒有 Pro；同名免費 Lite 排在上方，搜尋者自然點 Lite。Pro 的真正賣點（五種遊戲、弱點複習、家長頁、離線、無內購）沒進名稱／副標。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "US$8.99／CA$11.99／AU$14.99 前置收費、0 評分；海外華人家庭靠週末中文學校老師推薦，不靠搜 zhuyin。scoreboard 在 GR／DK／CZ「zhuyin」排 11–13 看似「接近第 1」，但那些店面第 1 名也是 0 評分，沒有需求，不值得投入。"
+    },
+    {
+     "locale": "ja",
+     "problem": "JP 有 1 則 5★；live 名稱已是「Lumi Bopomofo Pro：台湾華語」——老闆已轉向台湾華語學習者，但說明內文仍全寫 3–7 歲幼兒，名稱與內文對不上；資料檔的 JP 名稱仍是舊的「: Zhuyin」。貼文應用「台湾華語」字眼、對台湾ルーツ家庭與日台家庭講。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumibopomofopro-05",
+     "title": "海外中文學校老師一頁介紹＋pitch email 草稿",
+     "detail": "zh-Hant／en 兩版，附注音釣魚與家長頁截圖說明；對象：全美中文學校聯合總會、僑委會華文網教師社群、各地台灣家長社團管理員；老闆寄出。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumibopomofopro/overseas-teacher-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumibopomofopro/overseas-teacher-one-pager-en.html",
+      ".github/growth/drafts/lumibopomofopro/pitch-email-overseas-chinese-schools.md"
+     ]
+    },
+    {
+     "id": "lumibopomofopro-06",
+     "title": "資料檔同步 live",
+     "detail": "bopomofo_pro_full.json 的 JP 名稱改「台湾華語」版、TW 說明換成 live 全形版，避免後續分析再誤判。（資料檔在 _engine/data（鏡像），交本機。）",
+     "owner": "local",
+     "impact": "medium",
+     "status": "done",
+     "note": "需改 _engine/data/bopomofo_pro_full.json（JP 名稱改台湾華語版、TW 說明換 live 全形版），屬 drafts 以外的資料檔與 ASC 線上資料",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "ja 名稱、zh-Hant／en-US／ko／vi 說明已同步線上"
+    }
+   ]
+  },
+  "maskmyfile": {
+   "headline": "上架不到三個月、全店面 0 評分；用戶實際會打的字（黒塗り、주민번호 가리기、打碼、redact PDF）都不在名稱／副標／關鍵字裡，而名稱裡最有權重的字元被語意模糊的「Remove Your Info」占掉。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "日本有「本人確認書類の黒塗り」既有慣例、詞很明確，但關鍵字有「墨消し、マイナンバー」卻沒有最常用的「黒塗り」；副標「共有前に個人情報を黒塗り」有，名稱沒有。0 評分、無任何外部提及。應排第一優先市場（詞明確、慣例成熟）。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "店主主場卻缺台灣用語：關鍵字有「去識別化、塗黑」但沒有通稱「打碼」「遮住」；名稱「分享前移除個資」像個資下架服務。租屋傳身分證／薪資單是真實情境，但沒有任何在地教學頁承接。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「신분증 사본 주민번호 뒷자리 가리기」是韓國行政慣例，但關鍵字用「마스킹,지우기,삭제」而沒有「주민번호,뒷자리,가리기」；店主無法用韓文親自經營社群，只能靠商店頁被搜到，所以關鍵字修正在韓國特別關鍵。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "名稱「Mask My File: Remove Your Info」把高權重字元用在模糊詞上；關鍵字有「scanner」會吸到錯流量；說明有一大段 VPN／NetworkExtension 技術聲明對一般用戶是雜訊；沒寫免費版能做什麼。"
+    },
+    {
+     "locale": "el",
+     "problem": "成績單唯一有名次的組合：希臘文「ανωνυμοποίηση」第 7——證明「匿名化／去識別化」這類專業詞在小語種有空位，可複製到其他語系的專業詞。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "maskmyfile-03",
+     "title": "補 zh-Hant／ko Telegram 情境貼文並換量測詞",
+     "detail": "telegram_posts.json 新增 6792850916 的 zh-Hant（租屋傳身分證）與 ko（주민번호 뒷자리）條目；maskmyfile_full.json 前 3 個關鍵字改為 ja「黒塗り,墨消し,マイナンバー 隠す」、ko「주민번호 가리기,신분증 마스킹,PDF 가리기」、zh-Hant「打碼,身分證 遮,PDF 塗黑」、en「redact pdf,black out text,anonymize」讓成績單量到真實詞。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "maskmyfile-04",
+     "title": "三篇在地教學單頁（內建先、工具後）",
+     "detail": "repo guides 新增：「傳身分證影本給房東前要遮什麼（iPhone 標示 vs 永久遮蔽）」、「신분증 사본 주민번호 뒷자리 가리는 법（iPhone）」、「PDFの黒塗りが透けないか確認する方法」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/maskmyfile/guide-id-card-to-landlord-zh-hant.md",
+      ".github/growth/drafts/maskmyfile/guide-resident-number-masking-ko.md",
+      ".github/growth/drafts/maskmyfile/guide-pdf-kuronuri-check-ja.md"
+     ]
+    },
+    {
+     "id": "maskmyfile-07",
+     "title": "複製希臘文第 7 名的「專業詞」打法到其他小語種",
+     "detail": "為 cs／da／nl／pl 等語系加「匿名化／去識別化」對應專業詞進量測清單（anonymizace、anonymisering、anonimiseren、anonimizacja）。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    }
+   ]
+  },
+  "mochidonestamp": {
+   "headline": "DoneStamp 的需求本來就小又分散，唯一拿到的第 1 名是阿拉伯文「床單」這種沒有意圖的詞；美日台三地都還沒有一個真正會被打出來的搜尋入口，副標題也不含任何搜尋詞。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "副標題「Remember when you did it」沒有搜尋詞；主類別是 Lifestyle 而非 Productivity，和同類 App 不在同一區。需求小且用詞分散（last time、days since），曝光只能靠 Reddit 情境文。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱「いつやった？」和關鍵字（経過日数、家事管理、シーツ）貼近口語，列表本身沒問題；0 評分代表完全沒有外部入口（note／X）。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "台灣是店主自己的主場（Mochi 在 TW 有 4 則 5 星），DoneStamp 卻 0 評分：名稱「上次何時」不是台灣人會打的詞，連自家市場都沒啟動。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "ops-edge-beacon",
+     "title": "更新部署驗證認得的 Cloudflare 分析標籤（配對發布最後一步因此失敗）",
+     "detail": "Cloudflare 把 beacon.min.js 換成新版（v4bc70e2…、新的 integrity），00_GrowthEngine geo/deployment_generation.py 的 EDGE_BEACON 還是舊版，verify-live 對 open.cait518.cc 每頁都判定內容不符。改成接受同一 token 的 static.cloudflareinsights.com beacon（或更新為新值），跑測試、鏡像到 Guide。正式站內容已正確上線，影響的是驗證與後續 feed 通知步驟。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T17:12:33Z",
+     "result": "EDGE_BEACON 已更新（GE daf75313／Guide a095464b）；verify-live 通過"
+    },
+    {
+     "id": "mochidonestamp-04",
+     "title": "寫好 Reddit 與 note.com 草稿（店主以本人帳號發）",
+     "detail": "r/iosapps 揭露身分的開發者文一則；r/CleaningTips、r/HomeImprovement 每週自我推廣串的回覆一則（回答「怎麼記得上次換濾芯」）；note.com「名もなき家事の記録」日文實用文一篇。全部放 repo，店主貼。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/mochidonestamp/reddit-iosapps-developer-post.md",
+      ".github/growth/drafts/mochidonestamp/reddit-weekly-thread-reply-filter.md",
+      ".github/growth/drafts/mochidonestamp/note-com-namonaki-kaji-kiroku-ja.md",
+      ".github/growth/drafts/mochidonestamp/last-done-sheet-ja.svg"
+     ]
+    },
+    {
+     "id": "mochidonestamp-05",
+     "title": "Telegram 佇列補 zh-Hant（目前只有 en/ja）",
+     "detail": "新增 zh-Hant 一則，照 posts 欄文案；三語都加「50 種介面語言、App 內切換」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "note": "Telegram queue change: requires inserting into .github/scripts/telegram_posts.json. The zh-Hant copy already exists in app-posts.json (ct mochidonesta_zhHant_2).",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "mochidonestamp-06",
+     "title": "scoreboard 挑戰詞：量真正的意圖詞",
+     "detail": "US「last time tracker」「days since」；JP「いつやった」「経過日数」；TW「多久一次」「上次是什麼時候」。並在報表註記 de-DE 物品名詞的名次不列入成績。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    }
+   ]
+  },
+  "onepageppt": {
+   "headline": "名稱選的詞都贏不了：美國「AI Slide Maker」撞訂閱套殼 App、日本「資料作成」被 Google／Word／Pages 佔住（我們不在前 200）；六個店面 0 評分、免費只能做一張——沒人搜得到，搜到了也沒理由試。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "名稱選的詞「資料作成」是 Google ドキュメント、Pages、Word、Google スライド 這些辦公套件佔住的通用詞（評分 3.8 萬到 52.7 萬），185 筆結果裡我們不在前 200——這個詞永遠贏不了。日本真正的職場需求詞「1枚資料」「ワンペーパー」反而沒進名稱與副標；成績單量的又是「プレゼン／pptx／グラフ」。0 評分、沒有成品示範。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「한장 요약」整個店面只有 4 個結果，排第 4 等於沒人搜；名稱「AI 발표자료」通用，「한 장」只在副標。真正的需求詞是「한 장 보고서」，目前沒量也沒進名稱。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "zh-Hant 文案最完整，但 live 寫「可以先免費做一張試試」——只能做一張就要決定買 Lifetime Pro，使用者連「六種改版」都沒機會體驗，口碑無從產生。第一輪貼文寫「免費做幾張」與 live 不符。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「one pager」在美國是可搜的詞，但名稱用「AI Slide Maker」去撞最擁擠的詞；0 評分、6 張截圖、沒有前後對照。做簡報的人在桌機工作，手機 App Store 不是入口，需求要先靠示範喚起。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "onepageppt-01",
+     "title": "示範素材包＋腳本（店主只需錄畫面）",
+     "detail": "準備 3 組可公開的輸入素材：政府開放資料 CSV（季度數字）、一份虛構會議紀錄、一組訪談重點，加 15 秒前後對照腳本（zh/ja/ko/en）。放 .github/growth/apps/onepageppt/demo/，店主用 App 跑出成品截圖後，GEO 頁與貼文都用真實成品。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/onepageppt/demo/README.md",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-zh-hant.csv",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-ja.csv",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-ko.csv",
+      ".github/growth/drafts/onepageppt/demo/quarterly-figures-fictional-en.csv",
+      ".github/growth/drafts/onepageppt/demo/meeting-minutes-fictional.md",
+      ".github/growth/drafts/onepageppt/demo/interview-notes-fictional.md",
+      ".github/growth/drafts/onepageppt/demo/before-after-script-15s.md"
+     ]
+    },
+    {
+     "id": "onepageppt-02",
+     "title": "四語貼文入庫＋量測覆寫",
+     "detail": "把下列 4 則貼文寫進 app-posts.json（ct=opp_tw_onepage 等）。measure-keywords.json 加：ja「1枚資料」「ワンペーパー」；ko「한 장 보고서」；zh-Hant「一頁簡報」「一頁報告」；en-US「one pager」「one-pager」；de「one pager」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/onepageppt/social-posts.md"
+     ]
+    },
+    {
+     "id": "onepageppt-03",
+     "title": "note.com／브런치 教學稿",
+     "detail": "寫兩篇教學草稿「1枚資料を3分で」（ja）與「한 장 보고서 빨리 쓰는 법」（ko），以方法為主、App 為例，交店主用本人帳號發；不含排名用語。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/onepageppt/note-com-1mai-shiryo-ja.md",
+      ".github/growth/drafts/onepageppt/brunch-hanjang-report-ko.md"
+     ]
+    }
+   ]
+  },
+  "photocream": {
+   "headline": "底片 App 靠社群範例照擴散而不靠搜尋，我們卻一張範例內容都沒有；主場台灣 2 則評分平均 3.0，且繁中／日文／韓文說明是舊的短版機器翻譯、寫著「22 種語言」，關鍵字還含「寶麗來／polaroid」等商標。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "第一印象差：2 則評分平均 3.0、沒有評論文字可回覆；繁中說明只有 320 字、用大陸用語（膠片、設備、應用、終極拍攝夥伴），與 1,188 字的英文版結構完全不同；關鍵字含商標「寶麗來」。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日文名稱／關鍵字（エモい、盛れる、韓国風）抓得準，但說明同樣是 413 字短版、「究極の撮影パートナー」；0 評分、無任何範例照流通。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「감성」定位正確，但說明 486 字短版、「최고의 촬영 파트너」屬最高級用語；0 評分。韓國市場完全靠 Instagram 範例照，需要店主或合作創作者實拍。"
+    },
+    {
+     "locale": "zh-Hans",
+     "problem": "中國區有上架但 0 評分；簡中說明同為短版；推廣（小紅書）必須店主本人帳號發，且不能放連結洗版。"
+    },
+    {
+     "locale": "cs",
+     "problem": "成績單上最接近登頂的組合：捷克文「analogový fotoaparát」第 11，第 1 名 VNTG 只有 197 則評分——少量真實下載就可能進前 5，值得優先投放一篇捷克文範例貼文。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "photocream-01",
+     "title": "刪掉 Telegram 英文貼文裡的競品名",
+     "detail": "telegram_posts.json 中 6781808054 的 en 條目移除「(a pay-once alternative to VSCO)」，補「50 languages, switch in-app」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "需修改 telegram_posts.json 刪除「alternative to VSCO」並補 50 語句（Telegram 資料變更，不在本次權限）。",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "photocream-03",
+     "title": "提供三語說明草稿與 100 字元關鍵字清單",
+     "detail": "我方先在 repo 寫好 zh-Hant／ja／ko 說明全文與 ≤100 字元關鍵字草稿（不含商標），店主直接貼進 ASC；同時把 photocream_full.json 關鍵字截回 100 字元。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/photocream/asc-description-zh-hant.md",
+      ".github/growth/drafts/photocream/asc-description-ja.md",
+      ".github/growth/drafts/photocream/asc-description-ko.md",
+      ".github/growth/drafts/photocream/keywords-100-char-no-trademarks.md"
+     ]
+    },
+    {
+     "id": "photocream-04",
+     "title": "捷克文範例貼文搶「analogový fotoaparát」",
+     "detail": "寫一則捷克文「同一張照片 × 3 種底片效果」貼文（店主實拍），由店主發 Threads／Instagram；成績單持續量這組詞。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/photocream/czech-post-same-photo-three-looks-cs.md"
+     ]
+    }
+   ]
+  },
+  "savetag": {
+   "headline": "台灣「稍後閱讀」對手第 1 名只有 18 則評分、我們卻排第 148；商店頁只有 2 張截圖、名稱寫「AI Social Bookmarks」——市場薄到幾十個真實下載就能翻盤，而成績單顯示它已在沙烏地排第 1、加泰隆尼亞與捷克排 6–7，第一輪完全沒看這些機會。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "名稱「AI Social Bookmarks」與功能不符（沒有社群功能），「read later」只在副標。只有 2 張 iPhone 截圖（其他五款都是 6–10 張），0 評分，客服信箱 hourstag.app@gmail.com 是另一款 App 的品牌。頭部詞「read later」名次因限流未取得；Instapaper 在美國 3,544 則評分，是可追的量級。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "「稍後閱讀」165 筆結果我們第 148，而前 5 名的評分只有 18、33、16、1、0 則——市場極薄、對手極弱，我們卻排在最後，因為「稍後閱讀」只在副標、0 評分、0 下載。幾十個真實下載加上名稱放入「稍後閱讀」就能進前 10。另外大家用聊天室傳給自己、閱讀列表就夠；免費 5 筆養不成「重新發現」的習慣。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱「AIであとで読む」已對準需求詞，但「あとで読む」182 筆結果我們第 136，而前 5 名評分只有 8、229、2、1、0 則——日本 iOS 稍後閱讀類別極薄，我們排在後段純粹因為 0 評分、0 下載；幾十個真實下載就能進前 5。需要「積読リンク」情境內容，而不是更多頁面。"
+    },
+    {
+     "locale": "ar-SA",
+     "problem": "成績單：沙烏地「قراءة لاحقة（稍後閱讀）」已是第 1 名，但 0 評分、0 外宣，隨時會掉。加泰隆尼亞「llegir més tard」第 6（第 1 名僅 1 則評分）、捷克「číst později」第 7（第 1 名 0 則）——幾個真實下載就能登頂，是整個組合裡最便宜的機會。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "savetag-01",
+     "title": "機會店面貼文（ca／cs／ar）＋主市場三則入庫",
+     "detail": "為 SA／ES-ca／CZ 各寫 1 則母語短貼文（誠實、第一人稱、無連結洗版），加上下列 zh-Hant／ja／en 三則，全部寫進 app-posts.json（ct=svt_sa_later 等）。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/savetag/social-posts.md"
+     ]
+    },
+    {
+     "id": "savetag-02",
+     "title": "量測覆寫＋每日追蹤三個機會店面",
+     "detail": "measure-keywords.json 加 zh-Hant「稍後閱讀」「稍後再看」、ja「あとで読む」「積読」、en-US「read later」「save for later」；成績單對 SA／ES-ca／CZ 的三個詞每天量，掉出前 3 就提醒。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "savetag-03",
+     "title": "「積読リンク整理術」與 r/iosapps 草稿",
+     "detail": "寫 note.com 文章草稿（ja）與 r/iosapps 每週自我宣傳串用的開發者帖（en，不含排名用語、不提他牌），交店主本人發。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/savetag/note-com-tsundoku-links-ja.md",
+      ".github/growth/drafts/savetag/reddit-iosapps-post-en.md"
+     ]
+    }
+   ]
+  },
+  "scanto": {
+   "headline": "iOS 內建「備忘錄／檔案」免費就有掃描＋裝置端文字辨識，而我們量測的 3 組首要關鍵字（掃描器／scanner 等通用詞）完全沒有名次；真正獨特的「身分證正反面一頁、加密 PDF」被埋在說明後段，關鍵字還含競品名稱「掃描王／白描」。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「身分證正反面影本」是台灣辦事的真實高頻需求，但繁中名稱／副標是「離線PDF掃描／私密離線・OCR・一次買斷」，沒有「身分證」「證件」；關鍵字「掃描王」是競品名（審核 2.3.7 風險）。1 則 5★ 是好開頭，但沒人搜得到。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日文副標「完全オフラインのPDF・OCR」訴求的是技術，不是情境；0 評分。日本用戶會搜「スキャナー／書類スキャン」這類被大廠佔住的詞，我們需要的是「身分証 スキャン」「暗号化 PDF」這類長尾。"
+    },
+    {
+     "locale": "de-DE",
+     "problem": "副標「Privat, offline, einmal zahlen」很合德國口味，但 0 評分、沒有任何德文媒體或部落格提及，缺外部需求驅動；德文關鍵字只有 10 個通用名詞。"
+    },
+    {
+     "locale": "id",
+     "problem": "印尼店面預設語言是英文（Lookup 回傳英文名），印尼文只給裝置設為印尼文的用戶看；且印尼文說明只有 684 字，沒提證件正反面、加密 PDF、Face ID——印尼貼文想講的賣點在印尼文商店頁上看不到。關鍵字「sekalibeli」黏在一起、有不相關的「fax」。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "2 則評分平均 3.0、無文字可回覆；名稱「Offline PDF & OCR」與副標「Private PDF & OCR. Pay once.」重複 PDF／OCR；關鍵字有不相關的「fax」。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "scanto-04",
+     "title": "刪 Telegram 競品名並換量測詞",
+     "detail": "telegram_posts.json 中 6779977651 的 en 條目移除「(a pay-once alternative to CamScanner)」；scanto_full.json 前 3 個關鍵字改為 zh-Hant「身分證 影本,證件掃描,加密 pdf」、ja「身分証 スキャン,暗号化 pdf,オフライン スキャン」、de「Ausweis scannen,PDF verschlüsseln,offline scanner」、id「scan ktp,pdf berpassword,scan dokumen」，成績單才量得到有機會的詞。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "scanto-05",
+     "title": "台灣教學頁：身分證正反面影本 A4 一頁怎麼做",
+     "detail": "repo guides 新增一頁：先教內建備忘錄掃描＋手動排版，再說明 ScanTo 證件模式一步完成與加密 PDF；供 Threads 引用與 AEO。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/scanto/guide-id-card-front-back-a4-zh-hant.md"
+     ]
+    },
+    {
+     "id": "scanto-06",
+     "title": "德文媒體提案信草稿",
+     "detail": "為 iphone-ticker.de、appgefahren.de 各寫一封德文提案（離線 OCR、飛航模式可驗證、買斷價、截圖連結），店主以自己名義寄出。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/scanto/pitch-email-iphone-ticker-de.md",
+      ".github/growth/drafts/scanto/pitch-email-appgefahren-de.md"
+     ]
+    }
+   ]
+  },
+  "sononote": {
+   "headline": "名稱已補上「錄音轉文字／文字起こし／Voice to Text」，台灣該詞前 200 名仍沒有我們——0 下載的 App 在最擁擠的詞裡進不了榜；母市場描述還是機翻，而 live 隱私文案已改寫、第一輪貼文的「全程在裝置上」不再成立。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "名稱已改「Sono Note：錄音轉文字」，但「錄音轉文字」185 筆結果裡我們不在前 200——名稱加關鍵字是必要卻不夠，0 評分、0 下載的 App 進不了榜；對手雅婷逐字稿 5,620、西瓜筆記 2,819、SoundType 920。唯一有評分的店面（2 則）描述仍是機翻腔（「擁有讓你驕傲的文字」），差異（摘要＋待辦＋郵件、就醫範本）沒在名稱或副標。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱已是「Sono Note：音声を文字起こし」，但「文字起こし」187 筆結果我們不在前 200；頭部被 Notta（27,071）、無限もじおこし（5,263）、LINE WORKS AiNote（4,825）佔住，日本並不比美國鬆。差異點（要約＋ToDo＋フォローアップメール、受診メモ）只能靠情境內容講出來，搜尋進不去。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "Otter 在美國 84,495 則評分；我們 0 評分，名稱「Voice to Text Notes」撞大詞。免費每則 3 分鐘對不上 lecture／meeting 關鍵字帶來的人。live 隱私文案已改成「Apple 語音辨識部分語言可能傳音訊給 Apple，可選僅限本機模式」，貼文不能再寫 no cloud。"
+    },
+    {
+     "locale": "id",
+     "problem": "印尼店面名稱（lang=id）就是光禿禿的「Sono Note」，沒有任何關鍵字，等於搜不到；在台印尼看護陪診情境成立，但要先實測印尼文介面＋中文錄音，且貼文要說明只切介面、不翻譯。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "sononote-01",
+     "title": "zh-Hant 描述自然中文改寫稿",
+     "detail": "依 live en-US 內容重寫一份 zh-Hant 描述（含新隱私段落與「僅限本機」模式、免費額度、就醫範本），存 .github/growth/apps/sononote/zh-Hant-description.md，交店主貼進 ASC；同時改寫 promo text。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sononote/zh-hant-description.md"
+     ]
+    },
+    {
+     "id": "sononote-02",
+     "title": "四則貼文入庫＋量測覆寫",
+     "detail": "下列 zh-Hant／ja／en／id 貼文寫進 app-posts.json（id 那則標記「需先實測介面」）。measure-keywords.json 加：zh-Hant「會議記錄 摘要」「錄音 摘要」；ja「議事録 要約」「音声メモ 要約」；en-US「voice memo summary」「meeting notes summary」；id「catatan suara ringkasan」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sononote/social-posts.md"
+     ]
+    },
+    {
+     "id": "sononote-03",
+     "title": "30 秒示範腳本（口述→摘要→郵件）",
+     "detail": "寫 zh/ja/en 三版腳本：講 1 分鐘打ち合わせ回顧→出現要約・ToDo・メール；畫面要展示「僅限本機」切換，誠實呈現。店主錄製。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sononote/demo-script-30s.md"
+     ]
+    }
+   ]
+  },
+  "stayclock": {
+   "headline": "Stay Clock 名稱在英、日、德、台都主打「Flip／パタパタ／Klapp／翻頁」，描述卻一個字都沒提翻頁錶面，搜翻頁時鐘進來的人會失望；它真正能贏的是舊 iPad 床頭／長輩大字鐘這類沒人經營的長尾，scoreboard 已在 SA 床頭櫃一詞排第 3。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "「flip clock」被萬級評分對手佔住，而我們的列表沒有翻頁錶面（描述只說一款手寫紙感免費錶面＋100 款顏色字型）。副標題「Always-on time and calendar」沒有 nightstand、old iPad 這類真實長尾詞；內建 StandBy 免費就能做到「充電看時間」，列表沒說 iPad／直式／電量下限／夜間紅光是 StandBy 做不到的。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「パタパタ時計」在日本是特定的翻頁鐘產品類型，名稱這樣寫等於承諾翻頁動畫；描述卻沒有。デスクツアー族群是對的受眾，但要用「古いiPad を置き時計に」切入。"
+    },
+    {
+     "locale": "de-DE",
+     "problem": "名稱「Klapp-Tischuhr」同樣承諾翻頁；德國 Apple 論壇對「altes iPad als Uhr」有討論但我們不在。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "唯一有評分的店面（1 則 5 星）；名稱「翻頁桌鐘」、關鍵字含「翻頁時鐘」，一樣有名稱與內容不符的風險；長輩大字鐘、舊 iPad 再利用是台灣可打的情境。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "stayclock-04",
+     "title": "Telegram 補 de 與 ko 貼文；草擬 Reddit／Apfeltalk 文案（店主本人發）",
+     "detail": "佇列目前 en/ja/zh-Hant；新增 de、ko。另草擬 r/ipad、r/desksetup 各一則（真實桌面照、揭露身分、每版只發一次）與 Apfeltalk「altes iPad als Uhr」一則。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/stayclock/telegram-de-ko-copy.md",
+      ".github/growth/drafts/stayclock/reddit-ipad-old-ipad-clock.md",
+      ".github/growth/drafts/stayclock/reddit-desksetup-post.md",
+      ".github/growth/drafts/stayclock/apfeltalk-altes-ipad-als-uhr-de.md"
+     ]
+    },
+    {
+     "id": "stayclock-05",
+     "title": "scoreboard 挑戰詞",
+     "detail": "US「flip clock」「nightstand clock」「standby clock」「old ipad clock」；JP「パタパタ時計」「置き時計」；DE「Tischuhr」「Nachttischuhr」；TW「翻頁時鐘」「桌鐘」「床頭時鐘」。對照 Flip 名稱決定後的變化。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    }
+   ]
+  },
+  "tripplanet": {
+   "headline": "真正的問題是「沒有人在 App Store 搜這個需求」加上「外部資產掛著不存在的舊名」：只有搜自家名稱「親子旅行遊戲」才拿到第 1（整個結果只有 25 個 App），家長搜「親子旅遊」看到的是訂房／景點 App；GEO 頁、catalog、Telegram 仍叫「Lumi Trip Planet 環球旅行」，季節性需求只能靠外部排程與創作者帶動。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "搜尋意圖對不上（「親子旅遊」＝景點與住宿），而唯一拿到第 1 的「親子旅行遊戲」是自家名稱、幾乎沒人會打；上架三個月只有 1 則評分；GEO 頁與 Telegram 仍用舊名與機翻 FAQ。"
+    },
+    {
+     "locale": "ja",
+     "problem": "0 評分、零社會證明；JP 名稱「Trip Planet 子ども旅行ゲーム」本身沒問題，但 Telegram 日文貼文與 GEO 頁仍叫「Lumi Trip Planet 世界の旅」，搜尋與 AI 引用指向不存在的名字。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "0 評分，而且美國有 Road Trip Bingo 類的現成品與 Packr 等大型旅行 App；沒有評分前投入英文市場效率最低。可用的英文切角是雙語家庭：兩位家長各用自己的裝置看同一趟旅程，介面各自選語言。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "tripplanet-02",
+     "title": "改寫 Telegram 三篇＋排季節檔期",
+     "detail": "telegram_posts.json 的 6787193643：ja 貼文改用「Trip Planet 子ども旅行ゲーム」與 listing 功能（任務包、護照蓋章、兩位家長共享、50 語可切換）；zh-Hant 保留任務卡產生器貼文、加一篇寒假情境；在 social_slot_gate／threads-daily 設定季節權重：TW 12 月中–1 月底（寒假、春節）與 6 月；JP 12 月（年末年始）與 2–3 月（春休み）。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "需要修改 telegram_posts.json，而且 social_slot_gate／threads-daily 目前沒有季節權重機制，要改程式，所以沒有動。ja 替換稿、zh-Hant 寒假新稿、TW／JP 檔期表與建議的權重資料格式見 drafts/tripplanet/telegram-replacement-posts-and-season-calendar.md",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "tripplanet-03",
+     "title": "用現成任務卡產生器做一份繁中／日文「機場＋機上小任務」圖卡與 30 秒影片腳本",
+     "detail": "把站上的親子旅行任務卡產生器輸出成可下載的繁中／日文圖卡（貼文本身的價值，App 只在結尾提一次）；寫 Shorts 腳本：機場勇敢任務→完成→護照蓋章→Trip Story Card，三語字幕稿。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripplanet/airport-flight-mission-cards-zh-hant.html",
+      ".github/growth/drafts/tripplanet/airport-flight-mission-cards-ja.html",
+      ".github/growth/drafts/tripplanet/mission-cards-share-image-zh-hant.svg",
+      ".github/growth/drafts/tripplanet/mission-cards-share-image-ja.svg",
+      ".github/growth/drafts/tripplanet/mission-cards-share-posts.md",
+      ".github/growth/drafts/tripplanet/shorts-script-airport-mission-30s.md"
+     ]
+    }
+   ]
+  },
+  "tripbeelite": {
+   "headline": "Lite 是系列唯一的免費入口，但 zh-Hant／ja／ko 的 keywords 欄只用了 35–38／100 字、名稱用「旅程規劃」而非使用者搜的「行程規劃」、ja 連「しおり」都沒放——曝光問題是中繼資料問題，不是評分問題。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "名稱「TripBee Lite：旅程規劃」沒命中「行程規劃／旅遊行程」；zh-Hant keywords 只用 35 字。同一搜尋裡 0–15 則評分的免費 App 都排前五，說明補齊中繼資料就有機會。"
+    },
+    {
+     "locale": "ja",
+     "problem": "ja 名稱、副標、keywords 都沒有「旅のしおり」，仍靠部分匹配排 #124；simrip 36 則評分排第 4，證明補上這個詞就能大幅前進。"
+    },
+    {
+     "locale": "ko",
+     "problem": "名稱含「여행 플래너」卻不在 183 筆內，說明零下載的新 App 光靠名稱不夠；但 KR 中段只有 9–316 則評分，少量真實下載就能進前 20。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "第一輪列為最佳市場，但 US「trip planner」#184／194，前五 5.6K–481K 則評分全免費；靠中繼資料進不了前頁，英文只適合 pay-once／no-ads 利基的社群回覆。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "tripbeelite-03",
+     "title": "系列外宣連結全部指向 Lite，重寫 Lite 貼文",
+     "detail": "telegram_posts.json 目前 tripbeelite 只有 en／ja 2 則且文案抽象（calm、polished）；換成本報告的 zh-Hant／ja／ko／vi 情境貼文並加進 .github/growth/app-posts.json（ct：tbl_tw_trip、tbl_ja_shiori、tbl_ko_taiwan、tbl_vi_tet）。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbeelite/situational-posts-and-telegram.md"
+     ]
+    },
+    {
+     "id": "tripbeelite-04",
+     "title": "note.com 與 Naver Blog 深度文草稿",
+     "detail": "「電波がなくても開ける旅のしおりの作り方」、「대만 여행 일정표 정리」各一篇，附截圖位置與揭露開發者身份的段落，App 只當選項之一；owner 以本人帳號發布。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbeelite/note-com-offline-tabi-no-shiori-ja.md",
+      ".github/growth/drafts/tripbeelite/naver-blog-taiwan-itinerary-ko.md"
+     ]
+    },
+    {
+     "id": "tripbeelite-05",
+     "title": "成績單覆寫詞，ASC 改完後對照 14 天",
+     "detail": "TW 行程規劃／旅遊行程、JP 旅のしおり、KR 여행 플래너 加入 growth_scoreboard.py 覆寫詞，每天追 Lite 名次。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "tripbeelite-06",
+     "title": "threads-autopilot 排連假前貼文",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/23。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    }
+   ]
+  },
+  "wifiaidlite": {
+   "headline": "Lite 已出現在每個母語微利基（TW「無法上網」第 2／2、JP「ネット繋がらない」第 2／2、ID「wifi lemot」第 1／4、JP「ネット遅い」第 11／11），但這些詞幾乎沒人搜；真正的槓桿是名稱加搜尋詞與店外問答導流，而且我們的 GEO 頁與 repo 仍宣稱「每項工具各免費一次」，線上實際是「合計一次」。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "排在最後一名，因為前面的 App 名稱就含「ネット不調」「Wi-Fi診断」，我們的 JP 名稱只有品牌字「WiFi Aid Lite」；利基極小（11 筆）但名稱加詞＋少量真實下載就能進前 3，是低成本的小勝利而非成長引擎。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "「無法上網」只有 2 筆結果＝沒人這樣搜；大眾搜「網路測速」而我們是診斷不是測速；需求在 Dcard 租屋板、PTT 的真實提問，不在搜尋框。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "連 165–179 筆結果的痛點詞都被 ISP／路由器 App 佔滿，Lite 第 116 或缺席；只能用揭露身分的 Reddit 回答導流。"
+    },
+    {
+     "locale": "id",
+     "problem": "「wifi lemot」我們第 1，但總共只有 4 筆＝搜尋量趨近零；印尼市場靠在台移工社群（經管理員同意）而非搜尋。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "wifiaidlite-02",
+     "title": "修正公開 repo 的免費額度宣稱",
+     "detail": "_engine/data/wifiaidlite_full.json 與 en-US／zh-Hant／ja／ko／id 等 wifiaidlite.html（含 meta／og 描述）改為「所有工具合計可免費完整檢查一次」，補「解鎖後可看修正前後對照」；Telegram 文維持「免費開始」即可。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "note": "需修改 drafts 以外的 _engine/data/wifiaidlite_full.json 與 GrowthEngine 產生的各語系 wifiaidlite.html（含模板同步），不在本次可寫範圍；6 語替換句已備於 /home/user/ios-app-guide/.github/growth/drafts/wifiaidlite/free-tier-wording-fix.md 供",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "50 語 description／promotionalText 與約 700 個頁面檔已改為所有工具合計免費一次；約 38 語為自譯待審"
+    },
+    {
+     "id": "wifiaidlite-04",
+     "title": "撰寫 JP X 回覆模板、Dcard 租屋教學、印尼社團貼文草稿",
+     "detail": "JP 以開發者身分回覆「ネット遅い」實際抱怨；TW 寫「跟房東反映網路前先蒐集這幾種證據」；印尼貼文先徵管理員同意，並註明只有介面語言會切換。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wifiaidlite/x-reply-templates-ja.md",
+      ".github/growth/drafts/wifiaidlite/dcard-rental-internet-evidence-guide-zh-hant.md",
+      ".github/growth/drafts/wifiaidlite/indonesian-community-post-id.md"
+     ]
+    }
+   ]
+  },
+  "wordmatelite": {
+   "headline": "Wordmate Lite 上架兩個月零評分的核心原因是免費層只有 10 個字＋3 個收藏（兩次就撞牆，習慣型 App 養不成習慣），加上越南／印尼店面只剩英文頁、我方矩陣又把它歸成兒童類。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「背單字」不在前 182，前段全是免費且有數千到十幾萬則評分的 App；自己的名稱字「每天五個單字」第 5、「Wordmate Lite」第 1，代表品牌字沒有流量；0 評分；免費層 10 字＋3 收藏，習慣型 App 第 3 天就撞牆，累積不了評分；決策矩陣把它歸為 kids，GEO/AI 會推給錯的人。"
+    },
+    {
+     "locale": "id",
+     "problem": "印尼店面顯示英文「Wordmate Lite: Vocabulary」與英文描述，本地 id 文案「5 Kata Sehari」沒上線；「belajar bahasa mandarin」不在前 183，前段是有拼音／漢字教學的專用 App；Lite 的中文學習內容是繁體或簡體仍未確認。移工需求是真的，但落地頁是英文、內容不對口。"
+    },
+    {
+     "locale": "vi",
+     "problem": "越南店面同樣是英文頁；越南人在日韓學日文的需求被 Mikun、Mazii、HeyJapan 等日文專用 App 占據；「học từ vựng」被 Apple 兩輪 403 沒量到。通用 44 語單字 App 對這群人的吸引力低於專用 App，貼文只能走「介面可切越南文、一分鐘」的切角。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「単語帳」被 WordHolic、Quizlet 占據、我們不在前 181；「1日5単語」沒量到（403）；0 評分。「不做單字卡」的切角適合 X，但預期產出低，排最後。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "wordmatelite-03",
+     "title": "修正矩陣 kids 分類並重生",
+     "detail": "把 wordmatelite（與 aim990plus）在 _engine/geo/data/result_image_evidence_v1.json 的 family=kids14 與 app_decision_matrix.py 讀的來源改為 education／adult，重生 data/ios-app-decision-matrix.*。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "note": "需修改 _engine/geo/data/result_image_evidence_v1.json 與 app_decision_matrix.py 讀取來源並重生矩陣，屬程式碼／GrowthEngine 產線變更，不屬雲端草稿範圍",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "wordmatelite 改為 education，矩陣已重生；app／finder 頁待重生"
+    },
+    {
+     "id": "wordmatelite-04",
+     "title": "多語免費層與介面語言文案草稿",
+     "detail": "產出 zh-Hant/ja/vi/id/en-US 統一版免費層段落，並加一行「介面 50 種語言，可在 App 內切換；學習語言另選」，供 owner 貼 ASC。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmatelite/asc-free-tier-and-interface-language-5-locales.md"
+     ]
+    },
+    {
+     "id": "wordmatelite-07",
+     "title": "Dcard/Threads 短文與 20 秒影片腳本；id/vi 貼文存檔待命",
+     "detail": "寫「我為什麼不做單字卡」短文草稿與「小石子路完成畫面」20 秒腳本；id/vi 社團貼文先存檔並標記前置條件：店面本地化上線、確認中文學習內容為繁體。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmatelite/dcard-threads-why-no-flashcards.md",
+      ".github/growth/drafts/wordmatelite/shorts-script-20s-pebble-trail-finish.md",
+      ".github/growth/drafts/wordmatelite/id-vi-community-posts-on-hold.md"
+     ]
+    },
+    {
+     "id": "wordmatelite-10",
+     "title": "threads-autopilot 排程",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/06。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    }
+   ]
+  },
+  "zipbox": {
+   "headline": "付費下載（$4.99／NT$150／¥800／₩7,700）卻只有 3 張截圖，使用者最在意的「我這個檔打不打得開」在付款前無法驗證；US「unzip」第 116、名稱含「解壓縮／解凍／압축풀기」仍排不進前 170，而 zh-Hant 關鍵字「中文亂碼」描述沒支持、GEO 頁卻據此生成 FAQ。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "需求在 PTT iOS／Dcard「iPhone 打不開 RAR」的真實提問，不在搜尋（名稱含「解壓縮」仍不在前 177）；關鍵字只用 39／100 字；關鍵字「中文亂碼」描述從未宣稱，GEO 頁卻生成「iPhone 上 中文亂碼 推薦哪個 App?」FAQ＝我方頁面有未支持的宣稱。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「解凍」不在前 174（第一輪）；ja 關鍵字含「文字化け」同樣沒在描述說明；知恵袋「iPhoneでRAR開く」是需求入口。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「unzip」第 116／174，前段全是免費加廣告或內購（Documents 631k、iZip 63k、Unzip 54.9k）；付費 App 無法靠搜尋，只能在 Reddit 回答「iPhone can't open RAR」時出現。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "zipbox-04",
+     "title": "撰寫論壇回答草稿、Telegram spotlight，並在確認後刪亂碼 FAQ",
+     "detail": "PTT iOS 板、Dcard 3C 板「iPhone 打不開 RAR」與知恵袋「iPhoneでRAR・7zを開く方法」的回答草稿（店主以本人帳號發、揭露身分）；店主確認 App 不做編碼修復後，刪除 zh-Hant/zipbox.html 的亂碼 FAQ 與決策卡片。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/zipbox/forum-answers-cant-open-rar-zh-hant.md",
+      ".github/growth/drafts/zipbox/chiebukuro-answer-rar-7z-iphone-ja.md",
+      ".github/growth/drafts/zipbox/telegram-spotlight.md"
+     ]
+    }
+   ]
+  },
+  "aibriefpack": {
+   "headline": "沒有人在搜「交給 AI 之前先整理」這件事，名稱「AI Prompt from Files」又像提示詞庫，描述連免費或價格都沒寫——這是需求教育問題，不是曝光問題。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "成績單量的是「要約／まとめ／文書」，被摘要類 App 佔滿；名稱「資料から AI プロンプト」讀起來像摘要或提示詞工具。日本的「生成AI 情報漏洩」討論集中在企業內規，個人工具的搜尋需求幾乎沒有。描述 795 字、仍有三句重複「確認してください」。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "「prompt」「summary」兩個量測詞都是別人的地盤；名稱說 prompt，描述說 brief，副標「Files to Clear Context」太抽象。live 描述已刪掉介面字串（第一輪指出的那句），但仍重複三次「check every fact」，且全篇沒有價格或免費說明。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "母市場描述只有 558 字（en 1,392），沒有情境、沒有價格；「提示詞管理」第 20／33 這種低量詞也排不前。真正差異（每筆事實附來源與信賴度、個資逐項處理、不保證匿名）不在名稱與副標。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "aibriefpack-01",
+     "title": "單頁指南「截圖貼給 AI 前的 5 步檢查」（3 語）",
+     "detail": "在 repo 寫一頁 zh-Hant／ja／en 指南，以方法為主、AI Brief 只是其中一步的工具；這是唯一能創造需求的入口，不做模板量產，不寫排名用語。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aibriefpack/before-you-paste-to-ai-5-checks.html"
+     ]
+    },
+    {
+     "id": "aibriefpack-02",
+     "title": "Product Hunt／Show HN／note.com 草稿",
+     "detail": "寫三份草稿：PH tagline＋first comment、Show HN 貼文（說明在裝置處理、不保證匿名）、note.com「社内ルールを守りながら生成AIに渡す資料整理」；由店主本人帳號發。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aibriefpack/product-hunt-launch.md",
+      ".github/growth/drafts/aibriefpack/show-hn-post.md",
+      ".github/growth/drafts/aibriefpack/note-com-article-ja.md"
+     ]
+    },
+    {
+     "id": "aibriefpack-03",
+     "title": "貼文入庫＋量測覆寫",
+     "detail": "三則貼文寫進 app-posts.json；measure-keywords.json 加 en-US「ai prompt from files」「pdf to prompt」、ja「AI 要約 PDF」「個人情報 マスキング」、zh-Hant「AI 提示詞」「截圖 轉文字 AI」，先確認是否有任何名次。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/aibriefpack/social-posts.md"
+     ]
+    }
+   ]
+  },
+  "caldaily": {
+   "headline": "超級紅海，且 iOS 內建計算機已有歷史與單位換算；唯一看得見的差異「100 款主題」卻只有 4 張截圖、副標完全沒提。維持低優先，但它是六款裡最適合用短影音與 Pinterest 視覺導流的。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "「計算機」前段 1 萬–6 萬則評價、我們 0 評價不在榜；只在小利基「計算機 主題」第 17；zh 副標「桌面小工具、八種工具、計算紀錄」沒寫主題；最低 iOS 17。"
+    },
+    {
+     "locale": "ko",
+     "problem": "韓國「아이폰 꾸미기」文化靠 Instagram／Pinterest 不靠搜尋；「계산기 테마」第 40；ko 副標「위젯, 도구, 기록 정리」沒提 100 테마。"
+    },
+    {
+     "locale": "ja",
+     "problem": "ホーム画面カスタマイズ需求存在（第一輪：Calcute 2,170 則），我們 0 評價；ja 關鍵字沒有「着せ替え、かわいい」。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "Calculator₊ 等有百萬評價；「calculator themes」第 109；en-GB 本地化（id／vn 等英語系店面）只有 3 張截圖，比 en-US 還少。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "caldaily-03",
+     "title": "Shorts 腳本與 Pinterest 圖說",
+     "detail": "15–30 秒「滑過 100 款主題」腳本（每支換配色）；10 則 Pinterest 圖說（ko／ja／en／zh-Hant）；Telegram 補 zh-Hant／ko 條目（聚餐分帳隔週找得到）。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/caldaily/shorts-script-swipe-100-themes.md",
+      ".github/growth/drafts/caldaily/pinterest-pin-captions-4-languages.md"
+     ]
+    }
+   ]
+  },
+  "dailymate": {
+   "headline": "NT$390／¥2,000／$11.99／₩19,000 先付費、四店面 0 評分、年齡分級 17+、名稱沒有 Pro，而免費的 DailyMate Lite 一次買斷就解鎖同樣 8,400 組內容還寫 50 種語言——付費版目前沒有存在理由，外宣交給 Lite。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "付費牆加被自家 Lite 取代；「旅遊英文」第 1、2 名只有 5–6 則評分的免費 App，說明這個詞很小但拿得到，付費 0 下載的 App 卻進不去。年齡分級 17+（Lite 是 4+）會被家庭與學校裝置的內容限制隱藏。"
+    },
+    {
+     "locale": "ja",
+     "problem": "¥2,000 先付費對上 17K 評分的免費フレーズ App；「旅行 英会話」第 3 名只有 7 則評分也排得上，付費版排不進。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "只在 184 筆的長尾詞「language phrases」排 #42；$11.99 先付費、0 評分；en-US keywords 用 english／spanish／french 大詞。英文只適合 Apple Watch 社群的自我推廣帖。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "dailymate-04",
+     "title": "Telegram 的 dailymate 貼文改導向 Lite",
+     "detail": "telegram_posts.json 中 app=6790418321 的 en／ja 2 則，連結改為 id6794725568，文末一句「不想內購可選付費版 DailyMate」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymate/telegram-replacement-posts-to-lite.md"
+     ]
+    },
+    {
+     "id": "dailymate-05",
+     "title": "15 秒 Apple Watch 示範腳本",
+     "detail": "在手腕上聽整句、切下一句、收藏；字幕 zh-Hant／ja／en；只在允許自我推廣的週帖發並揭露身份。owner 錄製。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/dailymate/apple-watch-15s-demo-script.md"
+     ]
+    }
+   ]
+  },
+  "gmoney": {
+   "headline": "付費版和免費 Lite 搶同一批搜尋字，而 Lite 的產品頁反而更好；付費版（3 張截圖、生產力分類、全球僅 1 則評價）不該再扛旅遊外宣，應改打「日常＋出國同一本帳、沒有訂閱」的族群。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "付費 NT$150 擋在入口，而台灣「旅遊記帳／旅行記帳」兩個詞付費版完全沒被索引（Lite 排最後一名）；名稱與副標重複浪費 30 字元；主分類是生產力工具。"
+    },
+    {
+     "locale": "ja",
+     "problem": "¥800、0 評價；ja 副標與 Lite 一字不差（家計簿・予算・節約・為替換算），兩款互搶且標題副標都沒有「旅行」，所以「旅行 家計簿」191 筆都沒有我們——而這個利基的前三名只有 46／4／1 則評價。"
+    },
+    {
+     "locale": "ko",
+     "problem": "₩7,700、0 評價；「여행 가계부」192 筆沒有付費版（Lite 第 54）。付費版在韓國沒有存在感，旅遊外宣應全部導向 Lite。"
+    },
+    {
+     "locale": "id",
+     "problem": "第一輪選在台印尼移工，但該族群多用 Android、售價 Rp 99 ribu 偏高、ID 店面 0 評價；只能當小額測試，不是最佳市場。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "gmoney-04",
+     "title": "改寫 Telegram 佇列的 G+Money 條目",
+     "detail": "在 .github/scripts/telegram_posts.json 刪除 YNAB 一句；補 zh-Hant／ja／id 痛點文（見 posts）；en 旅遊情境改導向 Lite（6793436548）。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "note": "整項都是改 .github/scripts/telegram_posts.json（刪 YNAB 句、補三語、改導向），屬於 Telegram 佇列資料變更，不在本工作範圍；app-posts.json 裡已經有 zh-Hant／ja／id 的貼文可以直接用。",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "gmoney-05",
+     "title": "Shorts 腳本：海外出差一個月",
+     "detail": "45–60 秒腳本（zh-Hant／ja／ko 字幕）：現地幣現金＋刷卡，依旅程分組，一次看到母國貨幣總額；交擁有者錄螢幕。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoney/shorts-script-60s-one-month-business-trip.md"
+     ]
+    },
+    {
+     "id": "gmoney-06",
+     "title": "台灣 iOS 媒體 pitch 草稿",
+     "detail": "給蘋果仁、電腦王阿達、硬是要學：以「一人工作室的一次買斷理財工具（G+Money、HoursTag、MoneyTag）」打包，附截圖，明示開發者身分，不要求評論。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/gmoney/pitch-email-applealmond.md",
+      ".github/growth/drafts/gmoney/pitch-email-kocpc.md",
+      ".github/growth/drafts/gmoney/pitch-email-soft4fun.md"
+     ]
+    }
+   ]
+  },
+  "hourstag": {
+   "headline": "概念會被轉發但沒人搜（台日韓「衝動購物」類結果最高只有 28–232 則評價，付費版三地全不在榜），付費 NT$150 又擋在門口；內容外宣應把流量導向免費 Lite，付費版只需修正語言數、分類與副標。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "搜尋入口近乎零：「衝動購物」只有 46 筆、全部 0 評價，付費版連榜都沒進（Lite 第 26）；付費 150 元讓「先試概念」不可能；描述仍寫 17 種語言；主分類生產力。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「衝動買い」138 筆領先者 POCHIST 232 則、其餘 1–6 則；付費版不在榜、Lite #98；¥800、0 評價。日本節約圈（X／note）靠內容不靠搜尋。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「충동구매」82 筆領先者只有 1–28 則，付費版無、Lite #75；ko 關鍵字放「짠테크、머니」，是「賺錢 App」的意圖；₩7,700、0 評價。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "hourstag-04",
+     "title": "雙 11／黑五圖卡文案 6 組",
+     "detail": "11/11 與 11/27 前一週用：zh-Hant／ja／ko 各 2 組「這東西＝幾小時工」，一律用讀者自己的時薪、不引用統計，結尾導向免費 Lite；加入 Telegram 佇列並補 ko 條目。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/hourstag/double11-black-friday-card-copy.md",
+      ".github/growth/drafts/hourstag/card-checkout-hours-ko.svg"
+     ]
+    },
+    {
+     "id": "hourstag-05",
+     "title": "note.com 日文稿與 Naver 韓文稿",
+     "detail": "「値段を時給で割ってみた」「커피값을 시급으로 환산해 봤다」各一篇草稿，交擁有者以本人名義發；不付費換評論。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/hourstag/note-com-nedan-jikyu-ja.md",
+      ".github/growth/drafts/hourstag/naver-blog-coffee-hourly-wage-ko.md"
+     ]
+    }
+   ]
+  },
+  "lumimissionpro": {
+   "headline": "付費下載（TW NT$190／JP ¥1,000／KR ₩9,900／US $5.99／GB £5.99）在五個店面全是 0 評分，內容又等於免費 Lite 的內購版；27 個語系還寫著「Free to try」這種不實描述——在 Lite 累積評分之前，Pro 只該當 Lite 貼文末尾的「無內購版」一句話，不該單獨推。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "¥1,000 付費牆＋0 評分；「課金なし／お支度ボード」切角是真的，但「お支度ボード」整個結果只有 16 個 App、第 1 名只有 1 則評分，代表幾乎沒人在 App Store 搜它，而且名稱／副標沒把它放在最前面。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "被自家免費 Lite 吃掉：同一組詞 Lite 第 12、Pro 第 41；家長看到內容相同、能免費起步的 Lite，沒有理由先付 NT$190，何況 Pro 沒有任何評分。"
+    },
+    {
+     "locale": "ko",
+     "problem": "₩9,900 付費＋0 評分，再被 Lite 壓在後面；「칭찬스티커」完全不在結果。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumimissionpro-03",
+     "title": "改寫 telegram_posts.json 的 6779745474 四篇",
+     "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪「visual routine chart／視覺任務」，改用 listing 用語（五個每日任務含上學準備、無限自訂任務、無廣告・無內購・無訂閱・無帳號、家人共享、50 種語言可在 App 內切換），並在每篇末尾一句話指向免費的 Lite。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "note": "需要修改 .github/scripts/telegram_posts.json（Telegram 檔案），所以沒有動。4 篇替換稿（刪掉 visual／視覺任務與穿衣，補上無內購、家人共享、50 種語言，結尾導向 Lite）見 drafts/lumimissionpro/telegram-replacement-posts.md",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "lumimissionpro-04",
+     "title": "在 Lite 的所有貼文草稿末尾加一句 Pro 導流",
+     "detail": "所有 Lite 的 Threads／X／Naver／Telegram 草稿末尾加「不想要內購畫面的家庭也有 Pro（一次購買、家人共享）」一句，不另外為 Pro 開冷啟動貼文。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimissionpro/lite-post-pro-footer-lines.md",
+      ".github/growth/drafts/lumimission/video-script-30s-routine-missions.md",
+      ".github/growth/drafts/lumimission/telegram-replacement-posts.md"
+     ]
+    }
+   ]
+  },
+  "lumiletters": {
+   "headline": "ABC／自然發音是紅海，Lite 只有台灣 2 則評分、scoreboard 沒有任何一組量到的名次，而且 live 文案寫的免費範圍（字母 A＋第 1 顆星球）與資料檔（A–D＋兩顆星球）互相矛盾、語言數寫 44——先把店面說法對齊，再談外宣。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "頭部字拿不到曝光；差異點（PDF 學習單、四大能力、家長關卡）埋在中段；名稱帶「Lite」降低價值感；免費範圍有兩種說法，外宣寫哪一種都可能和店面對不上。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱「Lumi レター Lite」在日文讀成「信件」，與 ABC 無關；0 評分；おうち英語社群是唯一管道，且要靠「広告なし＋プリント」訴求，不是靠搜尋。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「Lumi 레터 Lite」同樣讀成「信件」；0 評分；엄마표 영어 社群與 Naver 部落格是管道；PDF 學習지是最能打的差異。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumiletters-04",
+     "title": "三語貼文＋Telegram＋長尾 GEO 題目",
+     "detail": "zh-Hant／ja／ko 貼文（已附）；Telegram spotlight；GEO 長尾題目「ABC 描寫學習單怎麼印」「アルファベット なぞり書き プリント」「알파벳 따라쓰기 학습지」；letters_lite_full.json 同步 live。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumiletters/telegram-copy.md",
+      ".github/growth/drafts/lumiletters/abc-tracing-worksheet-print-guide-zh-hant.md",
+      ".github/growth/drafts/lumiletters/note-com-alphabet-nazori-print-ja.md",
+      ".github/growth/drafts/lumiletters/naver-blog-alphabet-tracing-worksheet-ko.md"
+     ]
+    }
+   ]
+  },
+  "lumiletterspro": {
+   "headline": "付費 NT$290／US$8.99、我查的 7 個店面全是 0 評分、同名免費 Lite 就在旁邊，live 文案還寫 4 語與「Download Lumi Letters」——搜尋端沒有任何購買理由，只剩買斷派家長與需要列印學習單的老師。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "NT$290、0 評分；Lite 免費可玩同一套內容，外宣若導 Pro 轉換會很差。唯一可講的是「一次買斷、無內購」與老師用的「今日學習單」。"
+    },
+    {
+     "locale": "ja",
+     "problem": "¥1,500、0 評分；「レター」名稱問題同 Lite；日本家長有明確的「買い切り」偏好詞可用，但要靠おうち英語社群，不是搜尋。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "US$8.99、0 評分，紅海且有免費對手；live 結尾仍寫「Download Lumi Letters」（名稱不符）與「one purchase for the whole world」；homeschool 社群是唯一有「buy once」偏好的族群。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumiletterspro-04",
+     "title": "老師一頁說明＋homeschool 貼文＋pitch email 草稿",
+     "detail": "「給幼兒園／安親班英文老師」一頁（附今日學習單與四大能力說明，截圖由老闆提供）；en 貼文發 homeschool 社群（已附，遵守版規、揭露身分）；pitch email 草稿由老闆寄。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumiletterspro/teacher-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumiletterspro/pitch-email-teachers.md",
+      ".github/growth/drafts/lumiletterspro/homeschool-group-post-en.md"
+     ]
+    }
+   ]
+  },
+  "lumimathpro": {
+   "headline": "只有 1 則評分、賣 NT$290，而免費 Lite 的 live 文案已宣稱同樣的 46 種題型、弱項加強與列印學習單——Pro 在店面上沒有可見的購買理由，只剩老師用的 20 題附解答練習卷與學習報告可以談；第一輪貼文直接寫賽事名稱，已改寫。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "Pro vs Lite 的差異在店面上看不到（Lite live 也寫弱項加強＋列印附解答學習單）；誇大語「質感媲美主機大作」；說明含賽事名稱（有免責，仍有商標風險）；「四種語言、依系統自動切換」與 App 內切換矛盾；TW 排名未測。可打的只有老師工具與「大人也能玩」。"
+    },
+    {
+     "locale": "ko",
+     "problem": "₩15,000、0 評分；사고력／경시 需求大，但付費＋0 評分在搜尋結果中無人點；題目與語音有韓文是唯一可講的在地賣點。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "lumimathpro-04",
+     "title": "「給安親班／家教老師」一頁＋pitch email 草稿",
+     "detail": "老闆匯出 20 題附解答練習卷與學習報告樣張，Claude 寫一頁說明與寄送信草稿；zh-Hant×2、ko 貼文（已附）。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/lumimathpro/tutor-one-pager-zh-hant.html",
+      ".github/growth/drafts/lumimathpro/pitch-email-tutors-zh-hant.md"
+     ]
+    }
+   ]
+  },
+  "picclear": {
+   "headline": "上架近四個月在 39 個店面仍是 0 評分，連自家繁中名稱裡的「照片清理」都進不了台灣前 44 名——問題不是文案細節，而是完全沒有下載動能，且主打的「重複照片」直接撞上 iOS 內建功能。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "沒有下載速度，不是「被大詞壓住」：評分只有 8 則的「照片清理大師：AI Clean」靠名稱完全比對排在「照片清理」第 3，而 PicClear 名稱同樣含「照片清理」卻不在前 44。名稱與副標幾乎同字（照片清理·釋放空間／照片清理，釋放空間），30 字元副標被浪費；免費 App 叫「Pro」。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日文名稱「写真整理・重複削除」用詞正確，但 0 評分；「写真整理」前 41 名沒有我們，而只有 9 則評分的「簡単写真整理」排第 5——同樣證明卡在動能而非詞彙。「重複削除」撞 iOS「写真」內建重複項目合併。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "名稱「PicClear Pro: Photo Cleaner」與副標「Photo cleaner frees storage」重複；「免費掃描、付費才能刪」在 0 評分下看起來像掃完跳付費牆；成績單全球最佳名次只有加泰隆尼亞語第 57。"
+    },
+    {
+     "locale": "ko",
+     "problem": "0 評分、未量測；韓文關鍵字 247 字元是候選清單而非 ASC 實際欄位。先不投資源，等台日有訊號再說。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "picclear-03",
+     "title": "把資料檔關鍵字壓回 ASC 可用的 100 字元並補長尾量測詞",
+     "detail": "修 _engine/data/picclear_full.json：keywords 截到 100 字元（逗號邊界），刪掉名稱已有的 photo cleaner／duplicate／照片清理；前 3 個詞改成真實長尾：TW「連拍照片 刪除,截圖 清理,大型影片」、JP「スクショ 整理,連写 削除,動画 容量」，讓 growth-scoreboard 量到有機會的詞。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/picclear/keywords-100-char-proposal.md"
+     ]
+    },
+    {
+     "id": "picclear-04",
+     "title": "補 zh-Hant／ja Telegram 情境貼文",
+     "detail": "在 telegram_posts.json 為 6780223070 新增繁中「幫爸媽清 iPhone」與日文「旅行前夜」兩條（下方 posts），不放競品名、不說最佳。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "note": "需在 .github/scripts/telegram_posts.json 新增條目（Telegram 資料／程式變更，不在本次權限）；繁中「幫爸媽清 iPhone」與日文「旅行前夜」文案已存在於 app-posts.json（picclear_zhHant_1、picclear_ja_2），可直接搬入。",
+     "done_at": "2026-10-13T14:25:29Z"
+    },
+    {
+     "id": "picclear-05",
+     "title": "寫一篇誠實的單頁教學：iOS 內建「重複項目」能做什麼、做不到什麼",
+     "detail": "zh-Hant＋ja 各一頁，先教內建合併重複照片，再說明連拍、截圖、大影片、模糊照需要另外工具，最後才提 PicClear；放進 repo 的 guides，供 AEO 引用。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/picclear/guide-ios-duplicates-builtin-vs-tool-zh-hant.md",
+      ".github/growth/drafts/picclear/guide-ios-duplicates-builtin-vs-tool-ja.md"
+     ]
+    }
+   ]
+  },
+  "qrcodehalo": {
+   "headline": "線上 v1.0.3 在 US／TW／JP／KR 四個店面都寫「掃到就直接執行」、JP／KR 名稱是「すぐ開く／바로 실행」，但 TW 名稱「安全掃描」、en-GB 副標「Inspect before you open」、repo 資料檔、53 個語系 GEO 頁與 3 則 Telegram 文仍宣稱「絕不自動開啟」；身分統一前，它同時輸給免費的 iOS 相機（3 次掃描上限）與自己的承諾。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "「qr code scanner」第 1 名 1.44M 則、我們缺席；「qr code safe」利基其實開放（對手 0–44 則）但我們同樣缺席，因為名稱沒有 safe 且 2 週新 App 權重為零；3 次免費掃描對抗免費無限的相機沒有勝算。"
+    },
+    {
+     "locale": "ko",
+     "problem": "「큐싱」只有 11 筆結果、對手 0–183 則，利基開放但我們缺席；線上名稱「QR코드 바로 실행」與큐싱防護訴求相反。"
+    },
+    {
+     "locale": "en-GB",
+     "problem": "「qr code scanner」缺席（第 1 名 184,773）；en-GB 副標「Inspect before you open」與線上預設行為矛盾；但 scoreboard 顯示「安全連結」命名在小店面可排名。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "「qr code」缺席（第 1 名 245,612）；TW 免費榜第 3／16／24 都是掃碼 App，品類大但 iOS 相機免費無限；TW 名稱「安全掃描與建立」與描述第一句「掃到就直接執行」同頁矛盾；台灣停車單假 QR 已被闢謠，不能拿來行銷。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "qrcodehalo-01",
+     "title": "立即修正公開頁面與資料檔的「絕不自動開啟」宣稱",
+     "detail": "_engine/data/qrcodehalo_full.json、53 個語系 qrcodehalo.html（含 meta／og／JSON-LD）、en-US/decide/qrcodehalo 頁與 .github/scripts/telegram_posts.json 的 3 則文，改為線上實況：「預設掃描後自動執行；到設定關閉『掃描後自動執行』即可先檢查，歷史紀錄中按安全檢查」。",
+     "owner": "local",
+     "impact": "high",
+     "status": "done",
+     "note": "需修改 _engine/data/qrcodehalo_full.json、53 個 GrowthEngine 產生的 qrcodehalo.html、decide 頁與 Telegram 佇列 .github/scripts/telegram_posts.json，不在本次可寫範圍；3 則 Telegram 替換文案已備於 drafts/qrcodehalo/telegram-shop-self",
+     "done_at": "2026-10-13T17:51:06Z",
+     "result": "626 檔＋Telegram 3 則已改為預設自動執行的實況說法；非英文語系譯句待對照 App 字樣"
+    },
+    {
+     "id": "qrcodehalo-05",
+     "title": "身分統一後再推安全主軸內容",
+     "detail": "撰寫 Naver 큐싱 檢查步驟、Reddit r/scams 回覆、en-GB 活動主辦 LinkedIn 文草稿；在此之前只推「店家自查 QR」情境，並在每則文加上「先到設定關閉自動執行」。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/qrcodehalo/shop-qr-self-check-guide-zh-hant.md",
+      ".github/growth/drafts/qrcodehalo/shop-qr-weekly-check-sheet-zh-hant.html",
+      ".github/growth/drafts/qrcodehalo/telegram-shop-self-check-posts.md",
+      ".github/growth/drafts/qrcodehalo/naver-quishing-check-steps-ko.md",
+      ".github/growth/drafts/qrcodehalo/reddit-scams-reply-en.md",
+      ".github/growth/drafts/qrcodehalo/linkedin-event-qr-audit-en-gb.md"
+     ]
+    }
+   ]
+  },
+  "sereno": {
+   "headline": "Sereno 只在搜它名稱裡的字（TW 睡眠音效 #6、JP スリープサウンド #5）時排得進，所有主字都不在前 50，連搜「Sereno」都輸給 0 則評分的同名 App；「即時合成、永不循環」這個唯一賣點沒有出現在名稱或副標，zh-Hant 與 ja 描述又是機翻品質。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "白噪音、助眠、雨聲全部不在前 50（領先者 潮汐 1.1 萬、白噪音App 1,953）；唯一排進的是名稱裡的「睡眠音效」#6，而且該字前 5 名評分都在 533 以下，是可以守住的小字。搜品牌「sereno」排 #5，前面三款 Sereno 同名 App 都是 0 則評分。描述像機翻（彩色噪音、棕色噪音、您的設備、海洋聲音永不重複）。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "名稱就叫 Sleep Sounds 卻連「sleep sounds」都不在前 50，white noise／rain sounds 領先者 13 萬至 39 萬則評分；比較可及的「brown noise」領先者只有 750 則，但我們 0 則評分、沒有任何外部流量，也進不了前 50。副標「White noise for sleep & focus」和 iOS 內建「背景音」說的是同一件事，沒有說出「永不循環」。品牌字 sereno 排 #14。"
+    },
+    {
+     "locale": "ja",
+     "problem": "ホワイトノイズ、睡眠 音、雨音 都不在前 50（癒しの水の音 3.4 萬、Meditopia 3.7 萬、雨音アプリ 1,597）；只有名稱裡的「スリープサウンド」排 #5，該字第 1 名只有 266 則評分，可守。ja 描述同樣是機翻（あなたの電話、流れ、生きたサウンド），日本使用者一看就知道不是本地 App。sereno 排 #6，前面是 0 則評分的同名 App。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "sereno-03",
+     "title": "重寫 zh-Hant 與 ja 描述（台灣與日本在地用語）",
+     "detail": "由我們起草：zh-Hant 用 白噪音／粉紅噪音／褐噪音／你的手機／雨聲不會接縫重來；ja 用 スマートフォン／小川／ループしない／買い切り。擁有者貼進 ASC。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sereno/asc-description-zh-hant.md",
+      ".github/growth/drafts/sereno/asc-description-ja.md"
+     ]
+    },
+    {
+     "id": "sereno-04",
+     "title": "把兩個立足字加入成績單日量",
+     "detail": "growth-scoreboard 的 sereno 關鍵字加入 TW「睡眠音效」、JP「スリープサウンド」、US「brown noise」「sound machine」，以及三地的「sereno」品牌字，追蹤是否守住前 10。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "sereno-05",
+     "title": "準備 YouTube 長片的標題／說明／縮圖文案",
+     "detail": "三支 3 小時影片：「下雨聲＋褐噪音 3小時 不循環」「雨音とブラウンノイズ 3時間 ループなし」「Rain + Brown Noise 3 Hours, No Loop」；說明欄揭露用 Sereno: Sleep Sounds 錄製、寫全名。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/sereno/youtube-long-videos-copy.md",
+      ".github/growth/drafts/sereno/youtube-thumb-zh-hant.svg",
+      ".github/growth/drafts/sereno/youtube-thumb-ja.svg",
+      ".github/growth/drafts/sereno/youtube-thumb-en.svg"
+     ]
+    },
+    {
+     "id": "sereno-07",
+     "title": "Threads 排程一律寫全名",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/08。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    }
+   ]
+  },
+  "snapport": {
+   "headline": "$5.99／NT$190／¥1,000 先付費對上 9K–386K 評分的免費對手：US #158、JP #65（唯一評分是 1★）、TW／GB／ID／VN 不在榜；免費的 Snapport Lite 已是入口，Pro 只做 ASC 修正（副標重複、39 個語系 keywords 超過 100 字、44→50 語言），且德國不得以護照／身分證為訴求。",
+   "markets": [
+    {
+     "locale": "en-US",
+     "problem": "付費牆；#158／186，前五 9K–25K 則評分免費下載；en-US 副標「Passport ID Visa Photos」與名稱重複三個詞，30 字白用。"
+    },
+    {
+     "locale": "en-GB",
+     "problem": "GB「passport photo」194 筆兩款都不在榜；第 1 名「Passport Photo UK.」12,982 則——英國使用者搜帶 UK 的詞，en-GB keywords 沒有 uk／digital photo code，反而放了美國詞 green card。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "TW「證件照」187 筆 Pro 不在榜（Lite #108）；#3「老張台灣證件照」只有 274 則評分卻排第 3，說明在地詞命中有效；zh-Hant keywords 本地檔 178 字超過上限，線上實際內容不明。"
+    },
+    {
+     "locale": "ja",
+     "problem": "「証明写真」#65 但商店頁顯示 1.0★（1 則）；對手 139K／102K／386K 則免費——日本不該推 Pro，改推 Lite。"
+    },
+    {
+     "locale": "de-DE",
+     "problem": "Pro 是全系列唯一上類別榜的（DE 付費 Photo & Video #98），但德國 2025-05-01 起護照／身分證只接受數位傳輸的認證照片，自拍照不被接受——德語宣傳不能以 Pass／Ausweis 為訴求，只能講簽證、履歷、他國證件。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "snapport-04",
+     "title": "Telegram 11 則 snapport 貼文改導向 Lite，de 貼文改訴求",
+     "detail": "telegram_posts.json 中 app=6780575828 的 en／zh-Hant／es／ja／ko／de／ar／pt-BR／fr 貼文連結改為 id6792856304；de 貼文刪除 Pass-/Ausweisfoto 字眼，改寫為簽證、履歷、他國證件照片。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapport/telegram-replacement-posts-to-lite.md"
+     ]
+    },
+    {
+     "id": "snapport-05",
+     "title": "英文 Shorts 腳本與 Reddit 回覆模板",
+     "detail": "「在家拍 2x2→排 4×6 沖印版」腳本；Reddit 只回覆提問的模板（揭露身份、不保證受理、不帶連結）。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/snapport/shorts-script-2x2-to-4x6-en.md",
+      ".github/growth/drafts/snapport/reddit-reply-templates-en.md"
+     ]
+    }
+   ]
+  },
+  "studydown": {
+   "headline": "Studydown 的免費體驗是「累計 5 分鐘」，一次讀書就撞付費牆，在這之前任何推廣都會流失；列表名稱雖然有翻面／計時，但副標題與關鍵字都缺讀書／勉強／study 這些高量詞。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "名稱「翻面專注計時」已含翻面與計時，但副標題「螢幕朝下蓋著放」只是動作描述，關鍵字沒有「讀書計時」；更根本的是 5 分鐘累計試用，考生還沒讀完一節就被擋。"
+    },
+    {
+     "locale": "ja",
+     "problem": "名稱「伏せて時間記録」沒有「勉強」也沒有「タイマー」（只在關鍵字），勉強垢族群用「勉強タイマー」找不到名稱層級的命中；同樣受 5 分鐘試用限制。"
+    },
+    {
+     "locale": "ko",
+     "problem": "名稱「집중 타이머」是最泛的詞，直接撞既有讀書計時 App；關鍵字缺「공부 타이머」。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "studydown-04",
+     "title": "準備好試用修正後的推廣包：勉強垢／공스타그램 貼文、Telegram ko 文案",
+     "detail": "先寫好不先發：Telegram 補 ko 一則；X／IG 勉強垢與 공스타그램 各 1 則真實讀書紀錄截圖文案；r/languagelearning 進度串回覆一則（揭露身分）。等店主確認試用規則改了再排程。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/studydown/posting-gate-and-free-tier.md",
+      ".github/growth/drafts/studydown/telegram-ko-copy.md",
+      ".github/growth/drafts/studydown/benkyo-aka-x-ig-post-ja.md",
+      ".github/growth/drafts/studydown/gongstagram-post-ko.md",
+      ".github/growth/drafts/studydown/reddit-languagelearning-progress-reply.md"
+     ]
+    },
+    {
+     "id": "studydown-05",
+     "title": "scoreboard 挑戰詞",
+     "detail": "TW「翻面計時」「讀書計時」；JP「勉強タイマー」「伏せる タイマー」；KR「공부 타이머」「집중 타이머」；US「flip phone timer」「face down timer」。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    }
+   ]
+  },
+  "tripbee": {
+   "headline": "付費先行（NT$190／¥1,000／$5.99／₩9,900）的 Pro 在前十名全免費的旅遊規劃類別裡拿不到任何曝光，台日韓店面名稱又沒有「Pro」而和免費的 Lite 互相稀釋；外宣全部導向 Lite，Pro 只做 ASC 修正。",
+   "markets": [
+    {
+     "locale": "zh-Hant",
+     "problem": "付費牆加上名稱沒有 Pro。TW 名稱「TripBee: 旅遊行程規劃」字面含關鍵字，卻在「行程規劃」182 筆結果外；同一搜尋第 4 名「收行李啦」是 0 則評分的免費 App，證明免費加名稱命中就能排前五，付費是結構性阻礙。"
+    },
+    {
+     "locale": "ja",
+     "problem": "日本唯一真正的搜尋詞「旅のしおり」不在名稱與副標，ja keywords 只有「しおり」單字；¥1,000 先付費對上 61K 評分的免費 tabiori。simrip 只有 36 則評分卻靠名稱命中排第 4，說明詞比評分重要。"
+    },
+    {
+     "locale": "ko",
+     "problem": "KR 前五全免費、中段很弱（9–316 則評分），是系列可以贏的市場，但 ₩9,900 先付費的 Pro 在這裡沒有角色；韓國應由免費 Lite 打。"
+    },
+    {
+     "locale": "vi",
+     "problem": "VN 店面搜不到且前五全免費；在台越南家庭「返鄉打包」的需求要靠付費的打包清單（Pro 或 Lite Premium 都要錢），用一則 Lite 貼文處理即可，不是 Pro 的主市場。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "tripbee-04",
+     "title": "Telegram 的 5 則 tripbee 貼文改導向 Lite",
+     "detail": "修改 .github/scripts/telegram_posts.json 中 app=6787754435 的 en／zh-Hant／ja／de／es 貼文：連結改為 id6791299610（Lite），文末一句「想一次買斷、不內購可選 TripBee Pro」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbee/telegram-replacement-posts-to-lite.md"
+     ]
+    },
+    {
+     "id": "tripbee-05",
+     "title": "成績單加真實母語詞並排除無量詞",
+     "detail": "在 .github/scripts/growth_scoreboard.py 加每 App 覆寫詞（TW 行程規劃／旅遊行程／打包清單、JP 旅のしおり／持ち物リスト、KR 여행 플래너）；opportunities() 以已記錄的 result_count<30 排除假機會。每天同時追 Pro 與 Lite。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z"
+    },
+    {
+     "id": "tripbee-06",
+     "title": "30 秒直式影片腳本（zh-Hant、ja）",
+     "detail": "輸入孩子年齡→自動產生打包清單→「第 X 天／共 Y 天」→一鍵開 Apple 地圖；寫成分鏡與字幕稿，owner 錄製後放 Shorts／Reels，連結導 Lite。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/tripbee/shorts-script-30s-family-packing-zh-hant-ja.md"
+     ]
+    }
+   ]
+  },
+  "wifiaid": {
+   "headline": "付費版在 10/13 的 13 組母語搜尋全部缺席（連只有 2 筆結果的 TW「無法上網」、JP「ネット繋がらない」都只出現 Lite），它唯一不在 Lite 裡的功能是 Apple Watch、小工具與 iPad，卻沒寫進任何名稱或副標。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "付費版不在「ネット 遅い」（11 筆）與「ネット 繋がらない」（2 筆）任何結果內，Lite 在；問題不是競爭而是付費 App 幾乎沒有搜尋權重，日本使用者不會為看不到的 App 付 ¥1,000。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "「無法上網」只有 2 筆結果＝沒人這樣搜，關鍵字欄雖含此詞也無效；TW 大眾的搜尋行為是「網路測速」，本 App 不是測速工具，無法在該詞取勝。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "痛點詞被電信商與路由器 App 壟斷，付費獨立診斷 App 無法靠搜尋取得曝光；唯一通路是揭露身分的 Reddit 問答，而且應把人導到 Lite。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "wifiaid-04",
+     "title": "所有外宣以 Lite 為入口，撰寫 JP／US 草稿並回填資料檔",
+     "detail": "Telegram spotlight 與 note.com「ネットが遅い時の切り分け方」、Reddit r/HomeNetworking 回覆草稿都以 Lite 為主，付費版只在 Watch／iPad 段落帶出；把線上 zh-Hant／ja／ko 描述回填到 _engine/data/wifiaid_full.json。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wifiaid/note-slow-internet-troubleshooting-ja.md",
+      ".github/growth/drafts/wifiaid/reddit-homenetworking-replies-en.md",
+      ".github/growth/drafts/wifiaid/telegram-spotlight-lite-first.md"
+     ]
+    }
+   ]
+  },
+  "wordmate": {
+   "headline": "Wordmate 的真正問題是 NT$290／¥1,500／$8.99 的付費牆配上 0–1 則評分，而它主打的小工具／手錶長尾詞幾乎沒有搜尋需求（日本該詞第 1 名只有 9 則評分），Lite 又沒有在兩邊店面頁互相指引。",
+   "markets": [
+    {
+     "locale": "ja",
+     "problem": "「単語 ウィジェット」前 8 名評分只有 0–9 則，這個長尾幾乎沒人搜；真正有量的「単語帳」被 WordHolic、Quizlet 占據且我們不在前 181；¥1,500 買い切り、0 評分、沒有試用入口（Lite 在店面頁上沒被提到）。"
+    },
+    {
+     "locale": "zh-Hant",
+     "problem": "「背單字」被免費大品牌占據、我們不在前 182；「單字 小工具」被記事本類小工具 App 污染（第 1 是記事本 24,855），我們第 29；NT$290 付費只有 1 則評分；連品牌字「wordmate」都被 wormate.io 貪食蛇遊戲壓在前 3 名。"
+    },
+    {
+     "locale": "en-US",
+     "problem": "美國「vocabulary」意指英文單字工具（Vocabulary 219,835、Merriam-Webster 329,442），不是外語學習；「apple watch vocabulary」第 1 名 Watch Words 只有 15 則、LexWidget 3 則，需求極小；「learn languages」是 Duolingo 5.5M 的地盤。$8.99 付費、0 評分，US 應降為最低優先，只做一篇 r/AppleWatch。"
+    }
+   ],
+   "done_actions": [
+    {
+     "id": "wordmate-02",
+     "title": "寫六語系互指段落與 Lite 差異表",
+     "detail": "產出 zh-Hant/ja/en-US/ko/vi/id 的「Wordmate vs Lite」段落（小工具、Apple Watch、例句、84 單元 vs 免費起步），供 owner 貼進 ASC；同時更新 telegram_posts.json 的 Wordmate 貼文，每篇導想試用者去 Lite，並加「介面 50 種語言可切換」。",
+     "owner": "claude",
+     "impact": "high",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmate/asc-wordmate-vs-lite-paragraphs-6-locales.md"
+     ]
+    },
+    {
+     "id": "wordmate-06",
+     "title": "r/AppleWatch 貼文與 15 秒影片腳本",
+     "detail": "寫 r/AppleWatch、r/iOSsetups 的開發者揭露貼文與 15 秒影片腳本（小工具看字→收藏→手錶聽發音）；日本 X「iPhoneホーム画面」話題一篇。",
+     "owner": "claude",
+     "impact": "medium",
+     "status": "done",
+     "done_at": "2026-10-13T12:19:47Z",
+     "files": [
+      ".github/growth/drafts/wordmate/reddit-applewatch-iossetups-developer-posts.md",
+      ".github/growth/drafts/wordmate/shorts-script-15s-widget-save-watch.md",
+      ".github/growth/drafts/wordmate/x-iphone-home-screen-post-ja.md"
+     ]
+    },
+    {
+     "id": "wordmate-09",
+     "title": "threads-autopilot 排程",
+     "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：12/01。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。",
+     "owner": "claude",
+     "impact": "low",
+     "status": "done",
+     "done_at": "2026-10-14T14:00:00Z"
+    }
+   ]
+  }
+ }
+}

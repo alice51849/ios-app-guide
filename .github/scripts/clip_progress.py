@@ -25,6 +25,7 @@ POSTS = GROWTH / "clip-posts.json"
 IMPROVEMENTS = GROWTH / "app-improvements.json"
 
 HEADING = "## 鉤子片影片：各社群連結與進度"
+PAGE_TITLE = "# 外宣成效"
 TW = dt.timezone(dt.timedelta(hours=8))
 # Cron slots (UTC hour) of the posting workflows.
 SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 15: "15:20"},
@@ -32,9 +33,8 @@ SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 15
 CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram", "threads": "Threads"}
 # Channels without automation yet: what is true today, shown as-is.
 MANUAL_CHANNELS = [
-    ("YouTube Shorts", "Mac 本機上傳（本機待辦「7 秒鉤子片」第 4 步，每天最多 3 支）；上傳後的網址在本機回報"),
-    ("Bluesky", "尚未設定（帳號與金鑰都沒有）"),
-    ("TikTok", "手動配熱門音樂；無聲版在 Mac 的 shorts/out/，尚未上傳"),
+    ("YouTube Shorts", "本機上傳"),
+    ("TikTok", "手動"),
 ]
 
 
@@ -53,69 +53,47 @@ def app_names(improvements):
 
 
 def build_section(clips, posts, names, now, hook_total=None, notes=(), android=None):
-    """Markdown for the hook-clip section (heading included).
-
-    android: {app_key: Google Play URL}; posts link both stores when present.
-    """
+    """Compact, one-screen markdown for the promotion page (heading included)."""
     android = android or {}
     clip_map = clips.get("clips", {})
     schedule = clips.get("schedule", [])
     posted = {(p["channel"], p["clip"]): p for p in posts}
     today = now.date().isoformat()
-
-    lines = [HEADING, "", f"更新：{now.astimezone(TW).strftime('%Y-%m-%d %H:%M')}（台灣）", ""]
     apps = sorted({c["app"] for c in clip_map.values()})
-    total = f"／{hook_total} 款" if hook_total else ""
-    lines.append(f"- 已上傳：{len(apps)} 款{total}、{len(clip_map)} 支影片。")
-    if android:
-        listed = "、".join(sorted(names.get(k, k) for k in android))
-        lines.append(f"- Android：{len(android)} 款已在 Google Play 上線（{listed}）。"
-                     "Mac 每 30 分鐘掃一次 Google Play，新上架的 App 自動加進所有宣傳："
-                     "Telegram／Threads 貼文加 Google Play 連結、鉤子片 Telegram 加 Google Play 按鈕、IG 文案註明、"
-                     "新渲染的影片結尾寫「App Store／Google Play 搜尋」、官網頁面加 Google Play 按鈕。")
-    lines += [f"- {n}" for n in notes]
-    lines += ["", "| 平台 | 進度 | 已發 | 下一支（台灣時間） |", "|---|---|---|---|"]
+    total = f"／{hook_total}" if hook_total else ""
+    lines = [HEADING, "", f"更新 {now.astimezone(TW).strftime('%m/%d %H:%M')}（台灣）", ""]
+    lines += ["| 項目 | 數字 |", "|---|---|",
+              f"| 鉤子片已上傳 | {len(apps)}{total} 款 · {len(clip_map)} 支 |",
+              f"| 已排程 | {len(schedule)} 則（到 {schedule[-1]['date'][5:].replace('-', '/') if schedule else '—'}） |",
+              f"| 已發出 | {len(posts)} 則 |",
+              f"| Android 已上架 | {len(android)} 款（貼文自動附 Google Play） |"]
+    lines += [f"| 備註 | {n} |" for n in notes]
+    lines += ["", "| 平台 | 狀態 | 已發 | 下一則 |", "|---|---|---|---|"]
     for channel in ("telegram", "instagram", "threads"):
         entries = [e for e in schedule if e["channel"] == channel]
-        done = [p for p in posts if p["channel"] == channel]
+        done = sum(1 for p in posts if p["channel"] == channel)
         upcoming = [e for e in entries if (channel, e["clip"]) not in posted and e["date"] >= today]
-        if channel == "instagram" and not entries:
-            state = "等 IG_ACCESS_TOKEN 設好才開始"
-        elif channel == "instagram":
-            state = "自動，每天 2 支（亞洲 09:20、美洲 23:20）"
-        elif channel == "threads" and not entries:
-            state = "準備中（確認帳號後開始）"
-        elif channel == "threads":
-            state = "自動，每天 2 支影片＋1 則圖文（連結放留言）"
-        else:
-            state = "自動，每天 2 支（影片＋下載按鈕）"
+        state = "自動 2 支／天" if entries else "等待中"
         nxt = "—"
         if upcoming:
             e = upcoming[0]
             c = clip_map.get(e["clip"], {})
-            nxt = f"{tw_time(e['date'], e['slot'], channel)} {names.get(c.get('app'), c.get('app', ''))} {c.get('locale', '')}"
-        lines.append(f"| {CHANNEL_NAME[channel]} | {state}；已排 {len(entries)} 支 | {len(done)} | {nxt} |")
+            nxt = f"{tw_time(e['date'], e['slot'], channel)} {names.get(c.get('app'), c.get('app', ''))}"
+        lines.append(f"| {CHANNEL_NAME[channel]} | {state} | {done} | {nxt} |")
     for name, state in MANUAL_CHANNELS:
         lines.append(f"| {name} | {state} | — | — |")
-
-    lines += ["", "| App | 語言 | 影片 | Telegram | Instagram | Threads | Android |", "|---|---|---|---|---|---|---|"]
-
-    def cell(channel, key):
-        p = posted.get((channel, key))
-        if p:
-            when = p["posted_at"][5:10].replace("-", "/")
-            return f"[已發 {when}]({p['link']})" if p.get("link") else f"已發 {when}"
-        for e in schedule:
-            if e["channel"] == channel and e["clip"] == key:
-                return f"排定 {tw_time(e['date'], e['slot'], channel)}"
-        return "—"
-
-    for key in sorted(clip_map, key=lambda k: (names.get(clip_map[k]["app"], k), k)):
-        c = clip_map[key]
-        play = android.get(c["app"])
-        lines.append(f"| {names.get(c['app'], c['app'])} | {c['locale']} | [影片]({c['url']}) | "
-                     f"{cell('telegram', key)} | {cell('instagram', key)} | {cell('threads', key)} | "
-                     f"{f'[Google Play]({play})' if play else '尚未上架'} |")
+    lines += ["", "| App | 影片 | 已發 |", "|---|---|---|"]
+    for app in sorted(apps, key=lambda a: names.get(a, a)):
+        keys = sorted(k for k, c in clip_map.items() if c["app"] == app)
+        vids = " ".join(f"[{clip_map[k]['locale']}]({clip_map[k]['url']})" for k in keys)
+        sent = []
+        for k in keys:
+            for ch in ("telegram", "instagram", "threads"):
+                p = posted.get((ch, k))
+                if p and p.get("link"):
+                    sent.append(f"[{CHANNEL_NAME[ch][0]}]({p['link']})")
+        mark = " 🤖" if app in android else ""
+        lines.append(f"| {names.get(app, app)}{mark} | {vids} | {' '.join(sent) or '—'} |")
     return "\n".join(lines)
 
 
@@ -153,13 +131,12 @@ def update_hook_cards(improvements, clips, posts, now):
             nxt = [e for e in schedule if e["clip"].startswith(app["key"] + "/")
                    and (e["channel"], e["clip"]) not in posted and e["date"] >= today]
             sent = sum(1 for p in posts if p["clip"].startswith(app["key"] + "/"))
-            parts = [f"已上傳 {len([x for x in wanted if x in have])}/{len(wanted)} 語（{'、'.join(have)}）"]
+            parts = [f"已上傳 {len([x for x in wanted if x in have])}/{len(wanted)} 語"]
             if nxt:
                 e = nxt[0]
-                parts.append(f"下一則 {CHANNEL_NAME[e['channel']]} {tw_time(e['date'], e['slot'], e['channel'])}"
-                             f"（{e['clip'].split('/')[1]}）")
+                parts.append(f"下一則 {CHANNEL_NAME[e['channel']]} {tw_time(e['date'], e['slot'], e['channel'])}")
             parts.append(f"已發 {sent} 則")
-            action["detail"] = "；".join(parts) + "。影片與貼文連結見總覽「鉤子片影片：各社群連結與進度」。"
+            action["detail"] = "；".join(parts)
             if set(wanted) <= set(have):
                 if action.get("status") != "done":
                     action["status"] = "done"
@@ -180,7 +157,9 @@ def update(now=None, notes=None):
     android = {e["key"]: e["play_url"] for e in android_apps().values()}
     section = build_section(clips, posts, app_names(improvements), now, hook_total(improvements), notes, android)
     update_hook_cards(improvements, clips, posts, now)
-    improvements["summary_md"] = replace_section(improvements.get("summary_md", ""), section)
+    # The page shows one screen: title + this section. Older narrative lives in
+    # .github/growth/app-improvements-archive.json.
+    improvements["summary_md"] = PAGE_TITLE + "\n\n" + section + "\n"
     improvements["updated_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     IMPROVEMENTS.write_text(json.dumps(improvements, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

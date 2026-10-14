@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14T06:10:59Z",
+  "updated_at": "2026-10-14T08:33:05Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -57,7 +57,15 @@
       "id": "oa-network-2",
       "title": "雲端環境再加開 App Store 圖片與影片網域（做鉤子片用）",
       "url": "https://claude.ai/code",
-      "how": "對話標題列的雲端環境選單 → Edit → Network access 的 Allowed domains 加入三行：*.mzstatic.com、mvod.itunes.apple.com、files.catbox.moe（Allow package managers 保持勾選）→ 存檔。開了之後，雲端可以直接抓 21 款缺素材 App 的截圖與預覽影片做鉤子片，不用等本機。",
+      "how": "已完成：*.mzstatic.com、mvod.itunes.apple.com、files.catbox.moe。雲端已能直接抓 App Store 截圖與各國在地化截圖。",
+      "status": "done",
+      "done_at": "2026-10-14T08:33:05Z"
+    },
+    {
+      "id": "oa-catbox",
+      "title": "雲端環境再加 catbox.moe（讓鉤子片自動上傳並排進 Threads 發文）",
+      "url": "https://claude.ai/code",
+      "how": "對話標題列的雲端環境選單 → Edit → Allowed domains 最後加一行 catbox.moe（Allow package managers 保持勾選）→ Save。開了之後雲端會把渲染好的鉤子片上傳到 catbox，自動排進 Threads／Bluesky 影片發文。",
       "status": "todo"
     },
     {
@@ -126,6 +134,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "cvdesk-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、th）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「履歷總是 被 ATS 刷掉？」／“Resume getting auto-rejected?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "cvdesk-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
@@ -205,6 +221,14 @@
       ],
       "actions": [
         {
+          "id": "gmoneylite-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「出國玩到一半 預算就爆了？」／“Trip budget already blown?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "gmoneylite-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
           "detail": "暫停：Caitlyn 決定暫不改 ASC。",
@@ -277,6 +301,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumimission-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「叫孩子刷牙 天天像打仗？」／“Brushing teeth: a daily battle?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumimission-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
@@ -363,6 +395,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumibopomofo-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、vi）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「注音 原來這麼好玩！」／“Zhuyin, but make it a game”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumibopomofo-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
@@ -462,6 +502,14 @@
       ],
       "actions": [
         {
+          "id": "mochi-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、pt-BR、de）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「待辦清單 也可以這麼可愛」／“Your to-do list, but make it cute”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "mochi-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
           "detail": "暫停：Caitlyn 決定暫不改 ASC。",
@@ -538,6 +586,14 @@
       ],
       "actions": [
         {
+          "id": "moneytag-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、vi、cs）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「哪個副業 真的有賺？」／“Which side gig actually pays?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "moneytag-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
           "detail": "暫停：Caitlyn 決定暫不改 ASC。",
@@ -597,6 +653,14 @@
       "report_path": ".github/growth/apps/shotinbox.md",
       "markets": [],
       "actions": [
+        {
+          "id": "shotinbox-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、de）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「那張截圖 又找不到了？」／“Can't find that screenshot again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "shotinbox-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
@@ -686,6 +750,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "snapportlite-hook7",
+          "title": "7 秒鉤子片（7 語：en、zh-Hant、ja、ko、id、vi、cs）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「要拍證件照？ 在家自己拍」／“Passport photo? Make it at home”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "snapportlite-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
@@ -797,6 +869,14 @@
       ],
       "actions": [
         {
+          "id": "unblurry-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、da、nl）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「照片拍糊了？ 秒變清晰」／“Blurry photo? Make it crystal clear”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "unblurry-aso2",
           "title": "副標＋關鍵字雙模型調教（Opus 調教、Fable 獨立驗證），通過後交本機套用 ASC",
           "detail": "暫停：Caitlyn 決定暫不改 ASC。",
@@ -879,6 +959,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "claudeusagemini-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「寫到一半 AI 額度又爆了？」／“Hit your AI limit mid-task again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "claudeusagemini-16",
           "title": "UsageNow 加入 threads-autopilot 審核上線名單，讓 Threads 自動發 UsageNow",
@@ -1027,6 +1115,14 @@
       ],
       "actions": [
         {
+          "id": "notesstudio100-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手寫筆記本 100 款風格」／“Handwritten notes, 100 notebook styles”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "notesstudio100-01",
           "title": "三支示範影片腳本＋貼文入庫",
           "detail": "寫 3 支 30–45 秒的 iPad 螢幕錄影腳本（100 款風格翻頁、手寫→抽認卡→FSRS、PDF 講義標註），標題用 zh/ja/ko 在地詞；下列 4 則貼文寫進 app-posts.json（ct=n100_tw_exam 等），免費額度一律寫「1 本最多 5 頁、2 款風格」。",
@@ -1101,6 +1197,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "aim990-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、vi、id）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「8 分鐘 找出你的多益弱點」／“Find your TOEIC weak spots in 8 min”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "aim990-03",
           "title": "更新 aim990_full.json 為 live 文案並補量測字",
@@ -1186,6 +1290,14 @@
       ],
       "actions": [
         {
+          "id": "battai-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「電池健康度 哪天掉到 80%？」／“When will battery health hit 80%?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "battai-03",
           "title": "撰寫二手買賣情境草稿並回填線上文案",
           "detail": "PTT MacShop／Mobile01「賣 iPhone 前怎麼整理電池資訊」、note「iPhoneを売る前に確認したいバッテリー情報」草稿（揭露身分、不洗版）；Telegram 以「二手報告」框架發 spotlight；把線上描述回填 _engine/data/battai_full.json。",
@@ -1243,6 +1355,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "countdaysnow-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「媽媽生日 還有幾天？」／“How long until Mom's birthday?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "countdaysnow-04",
           "title": "Telegram 補 ko 貼文並寫 Clien／Dcard 草稿（店主本人發）",
@@ -1324,6 +1444,14 @@
       ],
       "actions": [
         {
+          "id": "cyca-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、vi）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「你的經期資料 都存到哪去了？」／“Where does your period data go?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "cyca-04",
           "title": "撰寫 id／vi 社群用一頁簡介與管理員請求信",
           "detail": "重點句：「店面可能顯示英文，但 App 內有印尼文／越南文，50 種語言可在 App 內切換；不用帳號、離線可用」。附截圖步驟：設定→語言。由擁有者經社團管理員同意後分享到在台移工／新住民 Facebook 社團與新住民家庭服務中心。",
@@ -1404,6 +1532,14 @@
       ],
       "actions": [
         {
+          "id": "dailymatelite-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、vi）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「輪到你開口 腦袋一片空白？」／“Your turn to speak… mind goes blank?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "dailymatelite-03",
           "title": "聯繫 NGO 與服務中心、取得社團版主同意",
           "detail": "One-Forty、各縣市新住民家庭服務中心、長照家屬社團提供使用說明；在台印尼／越南 FB 社團發文前先取得版主同意；不做有獎評論。",
@@ -1481,6 +1617,14 @@
       ],
       "actions": [
         {
+          "id": "dbhalo-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「樓上的噪音 到底幾分貝？」／“How loud is your upstairs neighbor?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "dbhalo-03",
           "title": "撰寫 Naver 層間噪音教學與 PTT／Dcard 回覆模板",
           "detail": "ko：「층간소음 기록하는 법」草稿，寫明可申請이웃사이센터官方量測、App 是估算值、揭露開發者身分；zh-Hant：回覆噪音提問的模板，主動提醒手機數值不能當法律證據；Telegram 先發 ko／zh-Hant 版。",
@@ -1550,6 +1694,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "hourstaglite-hook7",
+          "title": "7 秒鉤子片：等截圖補齊",
+          "detail": "App Store 上只有 1 張 iPhone 截圖，補齊 5–6 張後再做（已在本機待辦）。",
+          "owner": "local",
+          "impact": "high",
+          "status": "todo"
+        },
         {
           "id": "hourstaglite-03",
           "title": "Telegram 加「頁面就緒門檻」",
@@ -1624,6 +1776,14 @@
       ],
       "actions": [
         {
+          "id": "ledmovingtext-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、de、th）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「演唱會 喊到燒聲了？」／“Lost your voice at the concert?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "ledmovingtext-04",
           "title": "修成績單：排除無量詞、加覆寫詞",
           "detail": "growth_scoreboard.py 的 opportunities() 排除 result_count<30 的詞並在報表標示每詞結果數；加覆寫詞 TW 跑馬燈／應援燈牌／接機牌、JP 電光掲示板／うちわ文字、KR 전광판／응원판、DE Laufschrift、TH ป้ายไฟวิ่ง。",
@@ -1696,6 +1856,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lockhour-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手機 滑不停？」／“Can't stop scrolling?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lockhour-05",
           "title": "修正 Telegram 佇列 LockHour en 文案（移除 Opal/Forest）",
@@ -1772,6 +1940,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumiweather-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「今天要不要 穿外套？」／“Jacket or no jacket?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumiweather-02",
           "title": "決定免費層是否納入逐時預報",
@@ -1856,6 +2032,14 @@
       ],
       "actions": [
         {
+          "id": "lumimath-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「答對一題 小星球就亮起來」／“Every right answer lights a planet”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "lumimath-02",
           "title": "決定 Lite 解鎖與 Pro 的實質差異",
           "detail": "例如 Lite＝3–6 歲啟蒙（數數、加減、形狀）、Pro＝5–8 歲規律邏輯＋弱項練習＋老師工具，並寫進兩款第一行；否則 Pro 沒有存在理由。",
@@ -1915,6 +2099,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumibopomofopro-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「學注音 用釣魚的？」／“Zhuyin practice… by fishing?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumibopomofopro-05",
           "title": "海外中文學校老師一頁介紹＋pitch email 草稿",
@@ -1989,6 +2181,14 @@
       ],
       "actions": [
         {
+          "id": "maskmyfile-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、el）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「傳檔案之前 先遮個資」／“Hide your info before you share”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "maskmyfile-03",
           "title": "補 zh-Hant／ko Telegram 情境貼文並換量測詞",
           "detail": "telegram_posts.json 新增 6792850916 的 zh-Hant（租屋傳身分證）與 ko（주민번호 뒷자리）條目；maskmyfile_full.json 前 3 個關鍵字改為 ja「黒塗り,墨消し,マイナンバー 隠す」、ko「주민번호 가리기,신분증 마스킹,PDF 가리기」、zh-Hant「打碼,身分證 遮,PDF 塗黑」、en「redact pdf,black out text,anonymize」讓成績單量到真實詞。",
@@ -2060,6 +2260,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "mochidonestamp-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「上次換床單 是什麼時候？」／“When did you last change the sheets?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "ops-edge-beacon",
           "title": "更新部署驗證認得的 Cloudflare 分析標籤（配對發布最後一步因此失敗）",
@@ -2149,6 +2357,14 @@
       ],
       "actions": [
         {
+          "id": "onepageppt-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「落落長的筆記 變成一頁簡報」／“Wall of text? Make it one slide”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "onepageppt-01",
           "title": "示範素材包＋腳本（店主只需錄畫面）",
           "detail": "準備 3 組可公開的輸入素材：政府開放資料 CSV（季度數字）、一份虛構會議紀錄、一組訪談重點，加 15 秒前後對照腳本（zh/ja/ko/en）。放 .github/growth/apps/onepageppt/demo/，店主用 App 跑出成品截圖後，GEO 頁與貼文都用真實成品。",
@@ -2232,6 +2448,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "photocream-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、zh-Hans、cs）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「自拍也能有 底片感」／“Your selfie, but make it film”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "photocream-01",
           "title": "刪掉 Telegram 英文貼文裡的競品名",
@@ -2322,6 +2546,14 @@
       ],
       "actions": [
         {
+          "id": "savetag-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、ar、cs）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「收藏的連結 從來沒點開過？」／“Links you saved but never read?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "savetag-01",
           "title": "機會店面貼文（ca／cs／ar）＋主市場三則入庫",
           "detail": "為 SA／ES-ca／CZ 各寫 1 則母語短貼文（誠實、第一人稱、無連結洗版），加上下列 zh-Hant／ja／en 三則，全部寫進 app-posts.json（ct=svt_sa_later 等）。",
@@ -2396,6 +2628,14 @@
       ],
       "actions": [
         {
+          "id": "scanto-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、de、id）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「身分證要傳出去？ 先加密碼」／“Sharing your ID? Add a password”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "scanto-04",
           "title": "刪 Telegram 競品名並換量測詞",
           "detail": "telegram_posts.json 中 6779977651 的 en 條目移除「(a pay-once alternative to CamScanner)」；scanto_full.json 前 3 個關鍵字改為 zh-Hant「身分證 影本,證件掃描,加密 pdf」、ja「身分証 スキャン,暗号化 pdf,オフライン スキャン」、de「Ausweis scannen,PDF verschlüsseln,offline scanner」、id「scan ktp,pdf berpassword,scan dokumen」，成績單才量得到有機會的詞。",
@@ -2465,6 +2705,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "sononote-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「錄音一停 筆記馬上好」／“Hit stop. Your note is done.”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "sononote-01",
           "title": "zh-Hant 描述自然中文改寫稿",
@@ -2546,6 +2794,14 @@
       ],
       "actions": [
         {
+          "id": "stayclock-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、de、ar）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手機在充電？ 讓它變桌鐘」／“Phone charging? Make it a desk clock”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "stayclock-04",
           "title": "Telegram 補 de 與 ko 貼文；草擬 Reddit／Apfeltalk 文案（店主本人發）",
           "detail": "佇列目前 en/ja/zh-Hant；新增 de、ko。另草擬 r/ipad、r/desksetup 各一則（真實桌面照、揭露身分、每版只發一次）與 Apfeltalk「altes iPad als Uhr」一則。",
@@ -2609,6 +2865,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "tripplanet-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「「到了沒？」 讓旅途變冒險」／““Are we there yet?” Make it a quest”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "tripplanet-01",
           "title": "把 tripplanet_full.json 全面改成 live 名稱與正確關鍵字",
@@ -2683,6 +2947,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "tripbeelite-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「每次出遊都是你 排行程？」／“POV: you're the planner friend”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "tripbeelite-03",
           "title": "系列外宣連結全部指向 Lite，重寫 Lite 貼文",
@@ -2762,6 +3034,14 @@
       ],
       "actions": [
         {
+          "id": "wifiaidlite-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「網路又卡了？」／“Wi-Fi slow again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "wifiaidlite-02",
           "title": "修正公開 repo 的免費額度宣稱",
           "detail": "_engine/data/wifiaidlite_full.json 與 en-US／zh-Hant／ja／ko／id 等 wifiaidlite.html（含 meta／og 描述）改為「所有工具合計可免費完整檢查一次」，補「解鎖後可看修正前後對照」；Telegram 文維持「免費開始」即可。",
@@ -2831,6 +3111,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "wordmatelite-hook7",
+          "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、vi）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「每天只背 5 個單字」／“5 words a day. That's it.”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "wordmatelite-03",
           "title": "修正矩陣 kids 分類並重生",
@@ -2917,6 +3205,14 @@
       ],
       "actions": [
         {
+          "id": "zipbox-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「壓縮檔裡 只要一個檔？」／“Need one file from a ZIP?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "zipbox-04",
           "title": "撰寫論壇回答草稿、Telegram spotlight，並在確認後刪亂碼 FAQ",
           "detail": "PTT iOS 板、Dcard 3C 板「iPhone 打不開 RAR」與知恵袋「iPhoneでRAR・7zを開く方法」的回答草稿（店主以本人帳號發、揭露身分）；店主確認 App 不做編碼修復後，刪除 zh-Hant/zipbox.html 的亂碼 FAQ 與決策卡片。",
@@ -2970,6 +3266,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "aibriefpack-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「AI 答不到重點？ 缺的是脈絡」／“AI keeps missing the context?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "aibriefpack-01",
           "title": "單頁指南「截圖貼給 AI 前的 5 步檢查」（3 語）",
@@ -3053,6 +3357,14 @@
       ],
       "actions": [
         {
+          "id": "caldaily-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「計算機 也可以這麼美」／“Calculator, but make it aesthetic”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "caldaily-03",
           "title": "Shorts 腳本與 Pinterest 圖說",
           "detail": "15–30 秒「滑過 100 款主題」腳本（每支換配色）；10 則 Pinterest 圖說（ko／ja／en／zh-Hant）；Telegram 補 zh-Hant／ko 條目（聚餐分帳隔週找得到）。",
@@ -3105,6 +3417,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "dailymate-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「主畫面 秒變會話本」／“Your Home Screen, now a phrasebook”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "dailymate-04",
           "title": "Telegram 的 dailymate 貼文改導向 Lite",
@@ -3165,6 +3485,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "gmoney-hook7",
+          "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「錢到底 花去哪了？」／“Where did all my money go?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "gmoney-04",
           "title": "改寫 Telegram 佇列的 G+Money 條目",
@@ -3242,6 +3570,14 @@
       ],
       "actions": [
         {
+          "id": "hourstag-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「這個要工作 幾小時？」／“$129 sneakers? Half a day of work.”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "hourstag-04",
           "title": "雙 11／黑五圖卡文案 6 組",
           "detail": "11/11 與 11/27 前一週用：zh-Hant／ja／ko 各 2 組「這東西＝幾小時工」，一律用讀者自己的時薪、不引用統計，結尾導向免費 Lite；加入 Telegram 佇列並補 ko 條目。",
@@ -3300,6 +3636,14 @@
       ],
       "actions": [
         {
+          "id": "lumimissionpro-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「刷牙、吃飯、收玩具 天天像打仗？」／“Teeth, meals, tidy-up: a daily battle?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "lumimissionpro-03",
           "title": "改寫 telegram_posts.json 的 6779745474 四篇",
           "detail": "檔案 /home/user/ios-app-guide/.github/scripts/telegram_posts.json：刪「visual routine chart／視覺任務」，改用 listing 用語（五個每日任務含上學準備、無限自訂任務、無廣告・無內購・無訂閱・無帳號、家人共享、50 種語言可在 App 內切換），並在每篇末尾一句話指向免費的 Lite。",
@@ -3356,6 +3700,14 @@
       ],
       "actions": [
         {
+          "id": "lumiletters-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「滑手機的時間 也能學 ABC」／“Screen time that teaches ABCs”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "lumiletters-04",
           "title": "三語貼文＋Telegram＋長尾 GEO 題目",
           "detail": "zh-Hant／ja／ko 貼文（已附）；Telegram spotlight；GEO 長尾題目「ABC 描寫學習單怎麼印」「アルファベット なぞり書き プリント」「알파벳 따라쓰기 학습지」；letters_lite_full.json 同步 live。",
@@ -3411,6 +3763,14 @@
       ],
       "actions": [
         {
+          "id": "lumiletterspro-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「會唱 ABC 卻還不會拼讀？」／“Knows the ABC song but can't read?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "lumiletterspro-04",
           "title": "老師一頁說明＋homeschool 貼文＋pitch email 草稿",
           "detail": "「給幼兒園／安親班英文老師」一頁（附今日學習單與四大能力說明，截圖由老闆提供）；en 貼文發 homeschool 社群（已附，遵守版規、揭露身分）；pitch email 草稿由老闆寄。",
@@ -3452,6 +3812,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "lumimathpro-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「數學練習卷 還在自己出題？」／“Still making math worksheets by hand?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "lumimathpro-04",
           "title": "「給安親班／家教老師」一頁＋pitch email 草稿",
@@ -3501,6 +3869,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "picclear-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「iPhone 容量 又滿了？」／“iPhone storage full again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "picclear-03",
           "title": "把資料檔關鍵字壓回 ASC 可用的 100 字元並補長尾量測詞",
@@ -3581,6 +3957,14 @@
       ],
       "actions": [
         {
+          "id": "qrcodehalo-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「QR Code 掃到就直接開」／“Scan a QR, it opens instantly”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "qrcodehalo-01",
           "title": "立即修正公開頁面與資料檔的「絕不自動開啟」宣稱",
           "detail": "_engine/data/qrcodehalo_full.json、53 個語系 qrcodehalo.html（含 meta／og／JSON-LD）、en-US/decide/qrcodehalo 頁與 .github/scripts/telegram_posts.json 的 3 則文，改為線上實況：「預設掃描後自動執行；到設定關閉『掃描後自動執行』即可先檢查，歷史紀錄中按安全檢查」。",
@@ -3641,6 +4025,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "sereno-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「聽不出循環的 雨聲」／“Rain sounds that never loop”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "sereno-03",
           "title": "重寫 zh-Hant 與 ja 描述（台灣與日本在地用語）",
@@ -3727,6 +4119,14 @@
       ],
       "actions": [
         {
+          "id": "snapport-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「護照照片 在家就能拍」／“Passport photo? Take it at home”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "snapport-04",
           "title": "Telegram 11 則 snapport 貼文改導向 Lite，de 貼文改訴求",
           "detail": "telegram_posts.json 中 app=6780575828 的 en／zh-Hant／es／ja／ko／de／ar／pt-BR／fr 貼文連結改為 id6792856304；de 貼文刪除 Pass-/Ausweisfoto 字眼，改寫為簽證、履歷、他國證件照片。",
@@ -3792,6 +4192,14 @@
       ],
       "actions": [
         {
+          "id": "studydown-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手機一拿起來 計時就暫停」／“Pick up your phone, the timer pauses”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "studydown-04",
           "title": "準備好試用修正後的推廣包：勉強垢／공스타그램 貼文、Telegram ko 文案",
           "detail": "先寫好不先發：Telegram 補 ko 一則；X／IG 勉強垢與 공스타그램 各 1 則真實讀書紀錄截圖文案；r/languagelearning 進度串回覆一則（揭露身分）。等店主確認試用規則改了再排程。",
@@ -3852,6 +4260,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "tripbee-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「機票、行程 還在翻截圖？」／“Trip plans buried in screenshots?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "tripbee-04",
           "title": "Telegram 的 5 則 tripbee 貼文改導向 Lite",
@@ -3918,6 +4334,14 @@
       ],
       "actions": [
         {
+          "id": "wifiaid-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「網路問題別再猜 直接看證據」／“Wi-Fi acting up? See the evidence”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
+        {
           "id": "wifiaid-03",
           "title": "決定是否長期維持兩個 SKU",
           "detail": "付費版與 Lite（一次解鎖）功能幾乎重疊；若保留付費版，只在 Apple Watch／iPad 情境露出。這是店主決策，不建議由外宣硬撐。",
@@ -3979,6 +4403,14 @@
         }
       ],
       "actions": [
+        {
+          "id": "wordmate-hook7",
+          "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
+          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「不用打開 App 也能背單字」／“Learn words without opening the app”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "owner": "claude",
+          "impact": "high",
+          "status": "in_progress"
+        },
         {
           "id": "wordmate-02",
           "title": "寫六語系互指段落與 Lite 差異表",

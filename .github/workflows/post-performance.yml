@@ -1,0 +1,56 @@
+name: Post performance
+
+# Daily insights of our own IG / Threads clip and picture posts ->
+# .github/growth/performance.json (per app / locale / hook ranking + boost
+# list) and the "成效排行" table on the promotion page. Runs before
+# clip-replan.yml (00:30 UTC), whose Growth Engine planner reads the boost
+# list to post top performers earlier. Missing insights permissions are
+# logged and skipped, never a failed run.
+on:
+  schedule:
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: post-performance
+  cancel-in-progress: false
+
+jobs:
+  insights:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write # performance.json and the promotion page
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: python3 .github/scripts/test_social_loop.py
+      - name: Read insights
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: python3 .github/scripts/post_performance.py
+      - name: Save the ranking and refresh the promotion page
+        run: |
+          [ -f .github/growth/performance.json ] || { echo "no insights yet"; exit 0; }
+          cp .github/growth/performance.json "$RUNNER_TEMP/performance.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/performance.json" .github/growth/performance.json
+            python3 .github/scripts/clip_progress.py
+            python3 .github/scripts/test_app_improvements.py
+            git add .github/growth/performance.json .github/growth/app-improvements.json
+            git diff --cached --quiet && exit 0
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "貼文成效排行每日更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not save performance.json"; exit 1

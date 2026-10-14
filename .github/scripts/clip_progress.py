@@ -23,8 +23,10 @@ GROWTH = HERE.parent / "growth"
 CLIPS = GROWTH / "clips.json"
 POSTS = GROWTH / "clip-posts.json"
 IMPROVEMENTS = GROWTH / "app-improvements.json"
+PERFORMANCE = GROWTH / "performance.json"  # written daily by post_performance.py
 
 HEADING = "## 鉤子片影片：各社群連結與進度"
+PERF_HEADING = "## 成效排行"
 PAGE_TITLE = "# 外宣成效"
 TW = dt.timezone(dt.timedelta(hours=8))
 # Cron slots (UTC hour) of the posting workflows.
@@ -97,6 +99,29 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
     return "\n".join(lines)
 
 
+def build_performance(perf, names, top=5):
+    """Compact top-5 / bottom-5 hooks by score (empty when no insights yet)."""
+    hooks = perf.get("ranking", {}).get("hooks", [])
+    if not hooks:
+        return ""
+    lines = [PERF_HEADING, "", f"更新 {perf.get('updated_at', '')[5:10].replace('-', '/')} · "
+             "分數＝觀看＋3×讚＋5×留言＋8×（收藏＋分享＋轉發）", "",
+             "| # | App | 語言 | 鉤子 | 觀看 | 分數 |", "|---|---|---|---|---|---|"]
+    shown = list(enumerate(hooks[:top], 1))
+    shown += [(i, h) for i, h in enumerate(hooks, 1) if i > max(top, len(hooks) - top)]
+    for i, h in shown:
+        hook = h.get("hook", "")
+        hook = hook if len(hook) <= 18 else hook[:17] + "…"
+        lines.append(f"| {i} | {names.get(h['app'], h['app'])} | {h['locale']} | {hook} | {h['views']} | {h['avg_score']:g} |")
+    if perf.get("boost"):
+        lines.append(f"\n加碼排程：{'、'.join(names.get(a, a) for a in perf['boost'])}")
+    skipped = [f"{CHANNEL_NAME.get(c, c)} {s.split(': ', 1)[-1]}" for c, s in perf.get("sources", {}).items()
+               if s.startswith("skipped") and "no token" not in s]
+    if skipped:
+        lines.append(f"\n洞察未取得：{'；'.join(skipped)}")
+    return "\n".join(lines)
+
+
 def replace_section(summary, section):
     """Swap the section in summary_md (or append it), keeping everything else."""
     start = summary.find(HEADING)
@@ -159,19 +184,20 @@ def update(now=None, notes=None):
     update_hook_cards(improvements, clips, posts, now)
     # The page shows one screen: title + this section. Older narrative lives in
     # .github/growth/app-improvements-archive.json.
-    improvements["summary_md"] = PAGE_TITLE + "\n\n" + section + "\n"
+    perf = build_performance(load_json(PERFORMANCE, {}), app_names(improvements))
+    improvements["summary_md"] = PAGE_TITLE + "\n\n" + section + "\n" + (f"\n{perf}\n" if perf else "")
     improvements["updated_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     IMPROVEMENTS.write_text(json.dumps(improvements, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def record_post(channel, key, link, now=None):
+def record_post(channel, key, link, now=None, media_id=None):
     """Append one post to clip-posts.json and refresh the page section."""
     now = now or dt.datetime.now(dt.timezone.utc)
     log = load_json(POSTS, {"posts": [], "notes": []})
-    log.setdefault("posts", []).append({
-        "channel": channel, "clip": key, "link": link,
-        "posted_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-    })
+    entry = {"channel": channel, "clip": key, "link": link, "posted_at": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
+    if media_id:  # post_performance.py reads insights by this id
+        entry["id"] = str(media_id)
+    log.setdefault("posts", []).append(entry)
     POSTS.write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     update(now)
 

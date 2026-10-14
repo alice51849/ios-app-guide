@@ -270,7 +270,8 @@ def main():
     print(f"clip: posted {posted}")
     if posted:
         # The promotion page (office.cait518.cc) lists every post's link.
-        clip_progress.record_post(channel, f"{clip['app']}/{clip['locale']}", posted.get("link"))
+        clip_progress.record_post(channel, f"{clip['app']}/{clip['locale']}", posted.get("link"),
+                                  media_id=posted.get("id"))
     return 0
 
 

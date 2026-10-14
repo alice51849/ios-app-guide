@@ -1,0 +1,59 @@
+name: Comment replies
+
+# Template replies (no LLM) to comments under OUR OWN Instagram and Threads
+# posts - never a stranger's post, never a DM. Language by script, intent by
+# keyword, 3+ rotating variants; store links only for price / download /
+# Android questions. Skips spam, complaints and anything ambiguous.
+# Caps: <= 20 replies a day and <= 5 a run per platform, <= 1 per commenter
+# per post. State: .github/growth/replied-comments.json.
+# Set the repository variable AUTO_REPLY_DRY_RUN=true to only log replies.
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print the replies (true/false)"
+        default: "true"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comment-replies
+  cancel-in-progress: false
+
+jobs:
+  reply:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write # replied-comments.json keeps us from answering twice
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: python3 .github/scripts/test_social_loop.py
+      - name: Reply to comments on our posts
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.AUTO_REPLY_DRY_RUN }}
+        run: python3 .github/scripts/comment_replies.py
+      - name: Save which comments were answered
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/replied-comments.json)" ]; then echo "no new replies"; exit 0; fi
+          cp .github/growth/replied-comments.json "$RUNNER_TEMP/replied.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/comment_replies.py --merge-state "$RUNNER_TEMP/replied.json"
+            git add .github/growth/replied-comments.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "留言自動回覆紀錄 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not save replied-comments.json"; exit 1

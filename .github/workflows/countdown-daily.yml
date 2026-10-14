@@ -1,0 +1,63 @@
+name: Countdown card daily
+
+# One countdown card a day for the nearest big date (수능, 學測, 共通テスト,
+# Christmas, Lunar New Year), branded CountDaysNow, to Telegram, Threads and
+# Instagram. On Threads it takes the place of that day's picture post, so the
+# account stays at 3 posts a day. Zero token: the card is drawn by
+# .github/scripts/countdown_cards.py.
+on:
+  schedule:
+    - cron: "10 3 * * *"   # Taiwan 11:10
+  workflow_dispatch:
+
+permissions:
+  contents: write # the day's card goes on the countdown-cards branch for a public URL
+
+concurrency:
+  group: countdown-daily
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Is a countdown due today
+        id: due
+        run: |
+          if python3 .github/scripts/countdown_cards.py active; then echo "due=true" >> "$GITHUB_OUTPUT"; else echo "due=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Draw the card
+        if: steps.due.outputs.due == 'true'
+        run: |
+          sudo apt-get install -y -q fonts-noto-cjk >/dev/null
+          pip install -q pillow
+          python3 .github/scripts/countdown_cards.py make --out "$RUNNER_TEMP/card.jpg"
+      - name: Publish the card on the countdown-cards branch
+        if: steps.due.outputs.due == 'true'
+        id: card
+        run: |
+          name="card-$(date -u +%Y%m%d).jpg"
+          work="$RUNNER_TEMP/cards"
+          git init -q "$work" && cd "$work"
+          git checkout -q --orphan countdown-cards
+          cp "$RUNNER_TEMP/card.jpg" "$name"
+          git add "$name"
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "countdown card $name"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" countdown-cards:countdown-cards
+          echo "url=https://raw.githubusercontent.com/${{ github.repository }}/countdown-cards/$name" >> "$GITHUB_OUTPUT"
+      - name: Post to Telegram, Threads and Instagram
+        if: steps.due.outputs.due == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          sleep 20  # let raw.githubusercontent.com serve the new file
+          python3 .github/scripts/countdown_cards.py post --card "$RUNNER_TEMP/card.jpg" --url "${{ steps.card.outputs.url }}"

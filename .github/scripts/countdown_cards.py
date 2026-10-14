@@ -1,0 +1,246 @@
+#!/usr/bin/env python3
+"""Daily countdown cards for the big dates people count down to (zero token).
+
+One card a day for the nearest active event (수능, 學測, 共通テスト, Christmas,
+New Year, Lunar New Year), in that event's language, branded CountDaysNow.
+Students and parents check and share these every day, and each card is new
+content, so it never reads as a repeated post.
+
+    python3 countdown_cards.py make --out card.jpg   # writes card.jpg + card.json
+    python3 countdown_cards.py active                 # exit 0 if a card is due today
+    python3 countdown_cards.py post --card card.jpg --url <public jpg url>
+
+Posting: Telegram (photo upload + App Store button), Threads (image, store
+links in the first reply) and Instagram (image) with the existing secrets.
+"""
+import argparse
+import datetime as dt
+import json
+import os
+import sys
+import time
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+
+from social_post_common import play_store_url  # noqa: E402
+
+APP_ID = "6807079789"  # CountDaysNow
+STORE = {"ko": "kr", "zh-Hant": "tw", "ja": "jp", "en": "us"}
+FONT = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
+FONT_INDEX = {"ja": 0, "ko": 1, "zh-Hans": 2, "zh-Hant": 3, "en": 0}
+TW = dt.timezone(dt.timedelta(hours=8))
+
+# Dates checked 2026-10-14: 수능 2026-11-19 (교육부), 學測 2027-01-22~24
+# (大考中心 116 學年度簡章), 共通テスト 2027-01-16~17 (大学入試センター).
+EVENTS = [
+    {"id": "suneung2027", "date": "2026-11-19", "locale": "ko", "window": 60,
+     "title": "2027학년도 수능", "count": "D-{n}", "today": "오늘 수능,\n모두 응원해요", "when": "11월 19일 (목)",
+     "lines": ["남은 날을 계획으로", "오늘도 한 걸음", "끝까지 페이스 유지", "할 수 있어요"],
+     "colors": ("#1d2b64", "#4b6cb7", "#ffd166")},
+    {"id": "gsat2027", "date": "2027-01-22", "locale": "zh-Hant", "window": 100,
+     "title": "116 學測", "count": "倒數 {n} 天", "today": "學測加油！", "when": "1/22（五）～1/24（日）",
+     "lines": ["把剩下的天數變成計畫", "今天也前進一步", "穩住節奏到最後", "一起撐過去"],
+     "colors": ("#3a1c71", "#d76d77", "#ffaf7b")},
+    {"id": "kyotsu2027", "date": "2027-01-16", "locale": "ja", "window": 60,
+     "title": "大学入学共通テスト", "count": "あと{n}日", "today": "共通テスト当日、\n応援しています", "when": "2027年1月16日(土)・17日(日)",
+     "lines": ["残りの日数を計画に", "今日も一歩ずつ", "最後までペースを守って", "応援しています"],
+     "colors": ("#0f2027", "#2c5364", "#7ee8fa")},
+    {"id": "christmas2026", "date": "2026-12-25", "locale": "en", "window": 30,
+     "title": "Christmas", "count": "{n} days to go", "today": "Merry Christmas!", "when": "December 25",
+     "lines": ["Plan the gifts backwards", "Order early, relax later", "Cards, cake, travel: on track"],
+     "colors": ("#7f1d1d", "#b91c1c", "#fde68a")},
+    {"id": "lunar2027", "date": "2027-02-06", "locale": "zh-Hant", "window": 30,
+     "title": "農曆新年", "count": "倒數 {n} 天", "today": "新年快樂！", "when": "2027/2/6（除夕 2/5）",
+     "lines": ["年貨、車票、紅包，一項項排好", "回家的路倒數中", "提前準備，過個好年"],
+     "colors": ("#7a0a0a", "#c0392b", "#f5c542")},
+]
+TEXT = {
+    "ko": {"by": "CountDaysNow 카운트다운", "search": "App Store에서 'CountDaysNow' 검색", "both": "App Store · Google Play에서 'CountDaysNow' 검색",
+           "button": "App Store에서 받기"},
+    "zh-Hant": {"by": "CountDaysNow 倒數", "search": "App Store 搜尋「CountDaysNow」", "both": "App Store／Google Play 搜尋「CountDaysNow」",
+                "button": "在 App Store 下載"},
+    "ja": {"by": "CountDaysNow カウントダウン", "search": "App Storeで「CountDaysNow」を検索", "both": "App Store・Google Playで「CountDaysNow」を検索",
+           "button": "App Storeで入手"},
+    "en": {"by": "CountDaysNow countdown", "search": "Search “CountDaysNow” on the App Store", "both": "Search “CountDaysNow” on App Store or Google Play",
+           "button": "Get it on the App Store"},
+}
+
+
+def today_tw():
+    return dt.datetime.now(TW).date()
+
+
+def due(day):
+    """The nearest event inside its window (D-day included), or None."""
+    best = None
+    for e in EVENTS:
+        n = (dt.date.fromisoformat(e["date"]) - day).days
+        if 0 <= n <= e["window"] and (best is None or n < best[1]):
+            best = (e, n)
+    return best
+
+
+def store_url(e, channel):
+    query = urllib.parse.urlencode({"pt": "118326163", "ct": f"cd_{e['id']}_{channel}"[:40], "mt": "8"})
+    return f"https://apps.apple.com/{STORE[e['locale']]}/app/id{APP_ID}?{query}"
+
+
+def caption(e, n, day):
+    t = TEXT[e["locale"]]
+    head = e["today"].replace("\n", " ") if n == 0 else f"{e['title']} {e['count'].format(n=n)}"
+    line = e["lines"][day.toordinal() % len(e["lines"])]
+    store = t["both"] if play_store_url(APP_ID, "cd") else t["search"]
+    return f"{head}\n{line}\n\n{store}"
+
+
+def make(out, day):
+    from PIL import Image, ImageDraw, ImageFont
+    hit = due(day)
+    if not hit:
+        return None
+    e, n = hit
+    W, H = 1080, 1350
+    top, bottom, accent = (tuple(int(c[i:i + 2], 16) for i in (1, 3, 5)) for c in e["colors"])
+    img = Image.new("RGB", (W, H))
+    px = ImageDraw.Draw(img)
+    for y in range(H):
+        k = y / H
+        px.line([(0, y), (W, y)], fill=tuple(int(top[i] + (bottom[i] - top[i]) * k) for i in range(3)))
+    draw = ImageDraw.Draw(img)
+    idx = FONT_INDEX.get(e["locale"], 0)
+    f = lambda size: ImageFont.truetype(FONT, size, index=idx)
+
+    def center(text, y, size, fill):
+        font = f(size)
+        for line in text.split("\n"):
+            w = draw.textlength(line, font=font)
+            while w > W - 120 and size > 30:
+                size -= 6
+                font = f(size)
+                w = draw.textlength(line, font=font)
+            draw.text(((W - w) / 2, y), line, font=font, fill=fill)
+            y += int(size * 1.25)
+        return y
+
+    t = TEXT[e["locale"]]
+    center(e["title"], 170, 76, (255, 255, 255))
+    big = e["today"] if n == 0 else e["count"].format(n=n)
+    y = center(big, 400, 230 if n else 120, accent)
+    center(e["when"], max(y + 40, 760), 52, (255, 255, 255))
+    center(e["lines"][day.toordinal() % len(e["lines"])], 900, 58, (255, 255, 255))
+    draw.rounded_rectangle([90, 1110, W - 90, 1230], radius=60, fill=(255, 255, 255))
+    store = t["both"] if play_store_url(APP_ID, "cd") else t["search"]
+    font = f(38)
+    size = 38
+    while draw.textlength(store, font=font) > W - 240:
+        size -= 2
+        font = f(size)
+    draw.text(((W - draw.textlength(store, font=font)) / 2, 1170 - size * 0.6), store, font=font, fill=top)
+    center(t["by"], 1260, 34, (255, 255, 255))
+    img.save(out, "JPEG", quality=90)
+    meta = {"event": e["id"], "locale": e["locale"], "days": n, "date": day.isoformat(),
+            "caption": caption(e, n, day)}
+    Path(out).with_suffix(".json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+    return meta
+
+
+def _post(url, fields, timeout=60):
+    data = urllib.parse.urlencode(fields).encode()
+    req = urllib.request.Request(url, data=data, headers={"User-Agent": "lumi-countdown/1.0"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read())
+
+
+def _get(url, timeout=60):
+    with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "lumi-countdown/1.0"}), timeout=timeout) as r:
+        return json.loads(r.read())
+
+
+def post_telegram(card, meta, e):
+    token, chat = os.environ.get("TELEGRAM_BOT_TOKEN", ""), os.environ.get("TELEGRAM_CHAT_ID", "")
+    if not token or not chat:
+        return print("countdown: Telegram secrets missing")
+    row = [{"text": TEXT[e["locale"]]["button"], "url": store_url(e, "tg")}]
+    play = play_store_url(APP_ID, f"cd_{e['id']}_tg"[:40])
+    if play:
+        row.append({"text": "Google Play", "url": play})
+    boundary = "lumicountdown"
+    parts = []
+    for k, v in {"chat_id": chat, "caption": meta["caption"], "reply_markup": json.dumps({"inline_keyboard": [row]})}.items():
+        parts.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode())
+    parts.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"card.jpg\"\r\n"
+                 "Content-Type: image/jpeg\r\n\r\n".encode() + Path(card).read_bytes() + b"\r\n")
+    parts.append(f"--{boundary}--\r\n".encode())
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendPhoto", data=b"".join(parts),
+                                 headers={"Content-Type": f"multipart/form-data; boundary={boundary}"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        print("countdown: telegram", json.loads(r.read()).get("ok"))
+
+
+def post_threads(url, meta, e):
+    token, user = os.environ.get("THREADS_TOKEN", ""), os.environ.get("THREADS_USER_ID", "")
+    if not token or not user:
+        return print("countdown: Threads secrets missing")
+    api = "https://graph.threads.net/v1.0"
+    c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": meta["caption"], "access_token": token})["id"]
+    time.sleep(30)
+    media = _post(f"{api}/{user}/threads_publish", {"creation_id": c, "access_token": token})["id"]
+    links = [f"App Store: {store_url(e, 'th')}"]
+    play = play_store_url(APP_ID, f"cd_{e['id']}_th"[:40])
+    if play:
+        links.append(f"Google Play: {play}")
+    try:
+        r = _post(f"{api}/{user}/threads", {"media_type": "TEXT", "text": "\n".join(links), "reply_to_id": media, "access_token": token})["id"]
+        time.sleep(5)
+        _post(f"{api}/{user}/threads_publish", {"creation_id": r, "access_token": token})
+    except Exception as exc:
+        print(f"countdown: Threads reply skipped ({exc.__class__.__name__})")
+    print("countdown: threads", media)
+
+
+def post_instagram(url, meta):
+    token = os.environ.get("IG_ACCESS_TOKEN", "")
+    if not token:
+        return print("countdown: IG_ACCESS_TOKEN missing")
+    api = "https://graph.instagram.com/v21.0"
+    me = _get(f"{api}/me?fields=user_id&access_token={token}")
+    user = me.get("user_id") or me.get("id")
+    text = meta["caption"] + "\n" + {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
+    c = _post(f"{api}/{user}/media", {"image_url": url, "caption": text, "access_token": token})["id"]
+    time.sleep(10)
+    print("countdown: instagram", _post(f"{api}/{user}/media_publish", {"creation_id": c, "access_token": token}).get("id"))
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("cmd", choices=["make", "active", "post"])
+    ap.add_argument("--out", default="card.jpg")
+    ap.add_argument("--card", default="card.jpg")
+    ap.add_argument("--url", help="public URL of the card (Threads and Instagram fetch it)")
+    ap.add_argument("--date", help="YYYY-MM-DD (Taiwan date), default today")
+    args = ap.parse_args()
+    day = dt.date.fromisoformat(args.date) if args.date else today_tw()
+    if args.cmd == "active":
+        return 0 if due(day) else 1
+    if args.cmd == "make":
+        meta = make(args.out, day)
+        print(json.dumps(meta, ensure_ascii=False) if meta else "countdown: no event today")
+        return 0
+    meta = json.loads(Path(args.card).with_suffix(".json").read_text(encoding="utf-8"))
+    e = next(x for x in EVENTS if x["id"] == meta["event"])
+    for name, fn in (("telegram", lambda: post_telegram(args.card, meta, e)),
+                     ("threads", lambda: post_threads(args.url, meta, e)),
+                     ("instagram", lambda: post_instagram(args.url, meta))):
+        try:
+            fn()
+        except Exception as exc:  # one channel failing never blocks the others
+            print(f"countdown: {name} failed ({exc})")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

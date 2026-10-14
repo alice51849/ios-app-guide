@@ -66,6 +66,8 @@ jobs:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
         run: |
+          # A countdown card (countdown-daily.yml, 11:10) replaces today's picture post.
+          if python3 .github/scripts/countdown_cards.py active; then echo "countdown card today; picture post skipped"; exit 0; fi
           python3 .github/scripts/test_social_posting.py -q -b
           python3 .github/scripts/threads_post.py
       - name: Post today's hook clip to Threads

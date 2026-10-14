@@ -32,6 +32,18 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 >    - **Android 也上線了：** App 在 `_engine/geo/data/android_live_snapshot.json` 裡（已上 Google Play）的，YouTube 說明欄除了 App Store 連結也放該檔的 `play_url`（加 `&referrer=utm_source%3Dlumi_social%26utm_campaign%3Dh7_<app>_<語言>_yt`）。
 > 5. **補素材給雲端：** 下面這些 App 在 `social/assets/` 沒有截圖，雲端做不了它們的鉤子片。請把每款 App Store 上的 iPhone 6.9 吋截圖（1320×2868 或 1290×2796）照 `01.png`、`02.png`… 的格式放進 `social/assets/<key>/`，commit 並 push，雲端就會接著寫分鏡：claudeusagemini（最優先）、countdaysnow、studydown、stayclock、savetag、shotinbox、picclear、qrcodehalo、battai、dbhalo、zipbox、sononote、cvdesk、ledmovingtext、lumibopomofo、lumibopomofopro、lumiletterspro、lumimathpro、lumimissionpro、snapport、moneytag。
 
+> **2026-10-14 新增：LED Moving Text 鉤子片重拍（Caitlyn 嫌太醜）。** 商店截圖都是單色字，影片做不出繽紛感，所以改用模擬器實拍。
+> 1. 在模擬器開 LED Moving Text（解鎖完整功能），做 5–6 個彩色看板：
+>    - 彩虹字、漸層字。
+>    - 不同顏色的 LED 邊框。
+>    - 發光、點陣、脈衝等效果。
+>    - 多款情境範本，用不同顏色（演唱會、接機、生日、店家告示）。
+> 2. 編輯畫面和全螢幕播放畫面都要有。
+> 3. 中文、英文各一組。
+> 4. 截成 iPhone 6.9 吋直式圖，存成 `~/00_GrowthEngine/social/assets/ledmovingtext/s01.png`、`s02.png`…；中文版放 `zh-Hant/` 子資料夾。
+> 5. commit 並 push，雲端就會重寫分鏡、重新渲染。
+> 6. 這些是買斷解鎖後的功能，影片會加註「一次買斷解鎖」，不寫免費。
+
 > **2026-10-14 新增：補齊截圖（Caitlyn 明確要求）。** HoursTag Lite（iPhone 1 張、iPad 1 張）、SaveTag（各 2 張）、Unblurry（各 2 張）在 App Store 上的截圖少於 3 張，美國、台灣、日本都一樣。
 > 1. 每款做 5–6 張 iPhone 6.9 吋、5–6 張 iPad 13 吋截圖。用既有的 ASO 截圖流程（`~/00_GrowthEngine/aso/`）從模擬器實際畫面產生，字卡只寫商品頁上有的功能。
 >    - Unblurry 可以直接用 `social/assets/unblurry/01–04.png` 的 4 張，再補 1–2 張。

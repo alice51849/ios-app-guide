@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T16:26:33Z",
+  "updated_at": "2026-10-14T16:36:54Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -1639,7 +1639,7 @@
     "lockhour/en": {
       "app": "lockhour",
       "locale": "en",
-      "url": "https://files.catbox.moe/fcn0cv.mp4",
+      "url": "https://files.catbox.moe/56px4s.mp4",
       "store_url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=h7_lockhour_en&mt=8",
       "hook": "Can't stop scrolling?",
       "name": "LockHour Pro: Block Apps",
@@ -1725,7 +1725,7 @@
     "lumibopomofo/zh-Hant": {
       "app": "lumibopomofo",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/iqy4np.mp4",
+      "url": "https://files.catbox.moe/haxerz.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_zh-Hant&mt=8",
       "hook": "注音 原來這麼好玩！",
       "name": "Lumi注音星球",
@@ -1762,6 +1762,135 @@
           "id": "c",
           "lead": "收集 37 個 注音小夥伴",
           "benefit": "聽聲音 選出對的注音"
+        }
+      ]
+    },
+    "lumibopomofo/ja": {
+      "app": "lumibopomofo",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/g6a1kr.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_ja&mt=8",
+      "hook": "注音符号を ゲームで学ぼう",
+      "name": "Lumi ボポモフォ",
+      "search": "Lumi ボポモフォ",
+      "tags": [
+        "#Zhuyin",
+        "#ピンイン",
+        "#中国語発音",
+        "#子供中国語",
+        "#中国語学習",
+        "#Lumiボポモフォ"
+      ],
+      "keywords": [
+        "zhuyin",
+        "ピンイン",
+        "中国語発音",
+        "子供中国語",
+        "中国語学習",
+        "声調"
+      ],
+      "keyline": "注音・中国語フォニックス",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "注音符号を ゲームで学ぼう",
+          "benefit": "音を聞いて 正しい記号を選ぶ"
+        },
+        {
+          "id": "b",
+          "lead": "音を聞いて 正しい記号を選ぶ",
+          "benefit": "音を組み合わせて 音節に"
+        },
+        {
+          "id": "c",
+          "lead": "37のフレンドを 集めよう",
+          "benefit": "音を聞いて 正しい記号を選ぶ"
+        }
+      ]
+    },
+    "lumibopomofo/ko": {
+      "app": "lumibopomofo",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/hpnphj.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_ko&mt=8",
+      "hook": "주음부호, 게임으로 배워요",
+      "name": "Lumi 보포모포",
+      "search": "Lumi 보포모포",
+      "tags": [
+        "#Zhuyin",
+        "#병음",
+        "#중국어발음",
+        "#어린이중국어",
+        "#중국어공부",
+        "#Lumi보포모포"
+      ],
+      "keywords": [
+        "zhuyin",
+        "병음",
+        "중국어발음",
+        "어린이중국어",
+        "중국어공부",
+        "성조"
+      ],
+      "keyline": "주음·중국어 파닉스 놀이",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "주음부호, 게임으로 배워요",
+          "benefit": "소리를 듣고 알맞은 기호 고르기"
+        },
+        {
+          "id": "b",
+          "lead": "소리를 듣고 알맞은 기호 고르기",
+          "benefit": "소리를 합쳐 음절 만들기"
+        },
+        {
+          "id": "c",
+          "lead": "귀여운 친구 37개 모으기",
+          "benefit": "소리를 듣고 알맞은 기호 고르기"
+        }
+      ]
+    },
+    "lumibopomofo/vi": {
+      "app": "lumibopomofo",
+      "locale": "vi",
+      "url": "https://files.catbox.moe/du70lm.mp4",
+      "store_url": "https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_vi&mt=8",
+      "hook": "Học Zhuyin như chơi game",
+      "name": "Lumi Bopomofo",
+      "search": "Lumi Bopomofo",
+      "tags": [
+        "#tiếngtrungchobé",
+        "#họctiếngtrung",
+        "#tiếnghoa",
+        "#PhiênÂm",
+        "#Pinyin",
+        "#LumiBopomofo"
+      ],
+      "keywords": [
+        "tiếng trung cho bé",
+        "học tiếng trung",
+        "tiếng hoa",
+        "phiên âm",
+        "pinyin",
+        "thanh điệu"
+      ],
+      "keyline": "Zhuyin: ngữ âm tiếng Trung",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Học Zhuyin như chơi game",
+          "benefit": "Nghe âm thanh chọn đúng ký hiệu"
+        },
+        {
+          "id": "b",
+          "lead": "Nghe âm thanh chọn đúng ký hiệu",
+          "benefit": "Ghép âm thành tiếng"
+        },
+        {
+          "id": "c",
+          "lead": "Sưu tầm 37 bạn nhỏ",
+          "benefit": "Nghe âm thanh chọn đúng ký hiệu"
         }
       ]
     },
@@ -5051,46 +5180,6 @@
           "#스크린타임",
           "#뽀모도로",
           "#LockHourPro앱차단"
-        ]
-      }
-    },
-    "lumibopomofo": {
-      "ja": {
-        "keywords": [
-          "zhuyin",
-          "ピンイン",
-          "中国語発音",
-          "子供中国語",
-          "中国語学習",
-          "声調"
-        ],
-        "keyline": "zhuyin · ピンイン · 中国語発音",
-        "tags": [
-          "#Zhuyin",
-          "#ピンイン",
-          "#中国語発音",
-          "#子供中国語",
-          "#中国語学習",
-          "#Lumiボポモフォ"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "zhuyin",
-          "병음",
-          "중국어발음",
-          "어린이중국어",
-          "중국어공부",
-          "성조"
-        ],
-        "keyline": "zhuyin · 병음 · 중국어발음",
-        "tags": [
-          "#Zhuyin",
-          "#병음",
-          "#중국어발음",
-          "#어린이중국어",
-          "#중국어공부",
-          "#Lumi보포모포"
         ]
       }
     },

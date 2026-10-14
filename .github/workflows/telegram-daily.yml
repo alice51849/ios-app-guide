@@ -55,6 +55,18 @@ jobs:
           TELEGRAM_SLOT: ${{ steps.slot.outputs.slot }}
           TELEGRAM_SCHEDULE: ${{ github.event.schedule }}
         run: python3 .github/scripts/telegram_post.py
+      - name: Post today's 7-second hook clip (video + App Store button)
+        # Asia morning (zh-Hant) and Americas (en) slots only; a clip problem
+        # never fails the daily post above.
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 15 * * *')
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python3 .github/scripts/test_clip_posts.py -q
+          python3 .github/scripts/clip_posts.py telegram --slot "$(echo "$SCHEDULE" | awk '{print $2}')"
       - name: Preserve native response and ledger recovery evidence
         if: always() && steps.slot.outputs.should_post == 'true'
         uses: actions/upload-artifact@v4

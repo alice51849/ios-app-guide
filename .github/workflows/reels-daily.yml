@@ -1,0 +1,53 @@
+name: Instagram Reels daily clip
+
+# Posts one 7-second hook clip per slot to Instagram Reels through the
+# official Instagram API (own professional account, no app review needed).
+# Until the IG_ACCESS_TOKEN secret exists every run ends quietly.
+on:
+  schedule:
+    - cron: "20 1 * * *"   # 09:20 Taiwan / Japan / Korea
+    - cron: "20 15 * * *"  # Americas morning
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Audience slot (1 = Asia, 15 = Americas)"
+        default: "1"
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: reels-daily-social
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Prevent duplicate UTC slot
+        id: slot
+        if: github.event_name == 'schedule'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 .github/scripts/social_slot_gate.py
+          --workflow reels-daily.yml
+          --slots 1,15
+      - name: Test
+        run: python3 .github/scripts/test_clip_posts.py -q
+      - name: Post Reel
+        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          SCHEDULE: ${{ github.event.schedule }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+        run: |
+          SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
+          python3 .github/scripts/clip_posts.py instagram --slot "$SLOT"

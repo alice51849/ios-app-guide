@@ -19,6 +19,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -177,8 +178,11 @@ def make(out, day):
 def _post(url, fields, timeout=60):
     data = urllib.parse.urlencode(fields).encode()
     req = urllib.request.Request(url, data=data, headers={"User-Agent": "lumi-countdown/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as exc:  # surface the API's reason, never the token
+        raise RuntimeError(f"HTTP {exc.code}: {exc.read().decode(errors='replace')[:300]}") from None
 
 
 def _get(url, timeout=60):
@@ -251,6 +255,7 @@ def main():
     ap.add_argument("--card", default="card.jpg")
     ap.add_argument("--url", help="public URL of the card (Threads and Instagram fetch it)")
     ap.add_argument("--date", help="YYYY-MM-DD (Taiwan date), default today")
+    ap.add_argument("--only", help="post to this channel only (telegram, threads or instagram)")
     args = ap.parse_args()
     day = dt.date.fromisoformat(args.date) if args.date else today_tw()
     if args.cmd == "active":
@@ -264,6 +269,8 @@ def main():
     for name, fn in (("telegram", lambda: post_telegram(args.card, meta, e)),
                      ("threads", lambda: post_threads(args.url, meta, e)),
                      ("instagram", lambda: post_instagram(args.url, meta))):
+        if args.only and name != args.only:
+            continue
         try:
             fn()
         except Exception as exc:  # one channel failing never blocks the others

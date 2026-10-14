@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T11:08:28+0800",
- "count": 36,
- "content_sha256": "9a3efab14722ee6e91250f96ff6426046932be3a3798f8f4e0e93954722d058e",
+ "source_generated": "2026-10-14T12:11:14+0800",
+ "count": 38,
+ "content_sha256": "1fba87f4bca45892edae3ffb81fcea1825aaff1ff4de7f2b114d4246080e9ac2",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -446,6 +446,27 @@
     }
    }
   },
+  "moneytag": {
+   "ios_app_id": "6801956402",
+   "ios_name": "MoneyTag: Income & Expense",
+   "android_folder": "44_MoneyTag",
+   "package": "com.alice51849.MoneyTag",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag",
+   "paid": false,
+   "first_seen": "2026-10-14T12:11:14+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "MoneyTag: Income & Expense",
+     "short_description": "Income and expense tracker by project: see each project's profit and tag totals"
+    },
+    "zh-TW": {
+     "title": "MoneyTag: 收入與支出",
+     "short_description": "專案制收支記帳：每個專案各算淨額，標籤跨專案合計，接案、副業、小店都好用"
+    }
+   }
+  },
   "notesstudio100": {
    "ios_app_id": "6798813048",
    "ios_name": "100 Notes Studio",
@@ -464,6 +485,27 @@
     "zh-TW": {
      "title": "100 Notes Studio: Pen & Paper",
      "short_description": "手寫筆記本、PDF標註、錄音與複習"
+    }
+   }
+  },
+  "onepageppt": {
+   "ios_app_id": "6798814385",
+   "ios_name": "OnePage PPT",
+   "android_folder": "42_OnePagePPT",
+   "package": "com.alice51849.OnePagePPT",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT",
+   "paid": false,
+   "first_seen": "2026-10-14T12:11:14+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "OnePage PPT: AI Slide Maker",
+     "short_description": "Notes to one perfect slide"
+    },
+    "zh-TW": {
+     "title": "OnePage PPT: AI 一頁簡報",
+     "short_description": "筆記、螢幕截圖、PDF秒變投影片"
     }
    }
   },

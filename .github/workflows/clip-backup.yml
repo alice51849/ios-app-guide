@@ -1,0 +1,74 @@
+name: Hook clip backup posts
+
+# GitHub sometimes drops or delays scheduled runs by hours (10/14: the 15:00
+# UTC Telegram run never came, so the day's clip was never posted). This
+# backup runs two hours after each clip slot and posts the clip planned for
+# that slot on every channel that has not posted it yet. clip_posts.py skips
+# a clip already in clip-posts.json, so a backup only fills a miss and never
+# re-posts. It never makes the channels' other daily posts.
+on:
+  schedule:
+    - cron: '47 3 * * *'    # after the 01:xx slot (Asia morning)
+    - cron: '47 17 * * *'   # after the 15:xx slot (Americas)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clip-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Which slot
+        id: slot
+        run: |
+          h=$(date -u +%-H)
+          if [ "$h" -ge 15 ]; then s=15; elif [ "$h" -ge 1 ] && [ "$h" -lt 9 ]; then s=1; else s=; fi
+          echo "slot=$s" >> "$GITHUB_OUTPUT"; echo "slot=${s:-none}"
+      - name: Test
+        if: steps.slot.outputs.slot != ''
+        run: python3 .github/scripts/test_clip_posts.py -q
+      - name: Telegram
+        if: steps.slot.outputs.slot != ''
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 .github/scripts/clip_posts.py telegram --slot "${{ steps.slot.outputs.slot }}"
+      - name: Instagram
+        if: steps.slot.outputs.slot != ''
+        continue-on-error: true
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 .github/scripts/clip_posts.py instagram --slot "${{ steps.slot.outputs.slot }}"
+      - name: Threads
+        if: steps.slot.outputs.slot != ''
+        continue-on-error: true
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: python3 .github/scripts/clip_posts.py threads --slot "${{ steps.slot.outputs.slot }}"
+      - name: Record the post links on the promotion page
+        if: steps.slot.outputs.slot != ''
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片補發紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::error::could not record the backup clip posts"; exit 1

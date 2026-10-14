@@ -38,6 +38,12 @@ class ClipPostsTest(unittest.TestCase):
         self.assertIsNone(C.scheduled(DATA, day, 15, "telegram"))
         self.assertEqual(C.scheduled(DATA, day, 15, "instagram")["app"], "b")
 
+    def test_a_posted_clip_is_never_posted_again(self):
+        day = dt.date(2026, 10, 15)
+        key = next(e["clip"] for e in DATA["schedule"] if e["channel"] == "telegram" and e["slot"] == 1)
+        with mock.patch.object(C, "already_posted", return_value={key}):
+            self.assertIsNone(C.scheduled(DATA, day, 1, "telegram"))
+
     def test_unknown_clip_or_empty_day_posts_nothing(self):
         self.assertIsNone(C.scheduled(DATA, dt.date(2026, 10, 16), 15, "telegram"))
         self.assertIsNone(C.scheduled(DATA, dt.date(2026, 10, 17), 1, "instagram"))

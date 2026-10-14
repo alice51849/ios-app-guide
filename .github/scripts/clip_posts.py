@@ -72,9 +72,23 @@ def load(path=CLIPS):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def already_posted(channel):
+    """Clip keys already posted on this channel (clip-posts.json), so a backup
+    run (clip-backup.yml) that fills a slot GitHub dropped never re-posts."""
+    path = CLIPS.parent / "clip-posts.json"
+    if not path.exists():
+        return set()
+    posts = json.loads(path.read_text(encoding="utf-8")).get("posts", [])
+    return {p["clip"] for p in posts if p.get("channel") == channel}
+
+
 def scheduled(data, day, slot, channel):
-    """The clip planned for this date, slot and channel, or None."""
+    """The clip planned for this date, slot and channel, or None (also None
+    once it has been posted)."""
+    done = already_posted(channel)
     for entry in data.get("schedule", []):
+        if entry["clip"] in done:
+            continue
         if entry["date"] == day.isoformat() and entry["slot"] == slot and entry["channel"] == channel:
             clip = data["clips"].get(entry["clip"])
             if clip and clip.get("url"):

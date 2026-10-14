@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T19:28:26Z",
+  "updated_at": "2026-10-14T19:38:58Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -3829,6 +3829,92 @@
         }
       ]
     },
+    "lumimath/ja": {
+      "app": "lumimath",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/3absuc.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=h7_lumimath_ja&mt=8",
+      "hook": "正解するたび 星がひかる",
+      "name": "Lumi算数プラネット：体験版",
+      "search": "Lumi算数プラネット 体験版",
+      "tags": [
+        "#体験版",
+        "#さんすう",
+        "#幼児数",
+        "#数える",
+        "#たしざん",
+        "#Lumi算数プラネット体験版"
+      ],
+      "keywords": [
+        "さんすう",
+        "幼児数",
+        "数える",
+        "たしざん",
+        "かずあそび",
+        "知育"
+      ],
+      "keyline": "幼児向け算数知育ゲーム",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "正解するたび 星がひかる",
+          "benefit": "字が読めなくても 遊べる"
+        },
+        {
+          "id": "b",
+          "lead": "字が読めなくても 遊べる",
+          "benefit": "60秒で 時計と競争"
+        },
+        {
+          "id": "c",
+          "lead": "得意・苦手がひと目で",
+          "benefit": "字が読めなくても 遊べる"
+        }
+      ]
+    },
+    "lumimath/ko": {
+      "app": "lumimath",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/5i3ho1.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=h7_lumimath_ko&mt=8",
+      "hook": "한 문제 맞힐 때마다 행성이 반짝",
+      "name": "Lumi 수학 행성: 체험판",
+      "search": "Lumi 수학 행성 체험판",
+      "tags": [
+        "#체험판",
+        "#유아수학",
+        "#아동수학",
+        "#수학게임",
+        "#셈하기",
+        "#Lumi수학행성체험판"
+      ],
+      "keywords": [
+        "유아수학",
+        "아동수학",
+        "수학게임",
+        "셈하기",
+        "덧셈",
+        "뺄셈"
+      ],
+      "keyline": "체험판",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "한 문제 맞힐 때마다 행성이 반짝",
+          "benefit": "글을 몰라도 그림으로 척척"
+        },
+        {
+          "id": "b",
+          "lead": "글을 몰라도 그림으로 척척",
+          "benefit": "60초 동안 시계와 경주해요"
+        },
+        {
+          "id": "c",
+          "lead": "약점은 집중 연습",
+          "benefit": "글을 몰라도 그림으로 척척"
+        }
+      ]
+    },
     "lumiweather/en": {
       "app": "lumiweather",
       "locale": "en",
@@ -4904,6 +4990,49 @@
         }
       ]
     },
+    "notesstudio100/ko": {
+      "app": "notesstudio100",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/qfnk4s.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=h7_notesstudio100_ko&mt=8",
+      "hook": "손글씨 노트에 100가지 스타일",
+      "name": "100 Notes Studio: Pen & Paper",
+      "search": "100 Notes Studio",
+      "tags": [
+        "#손글씨",
+        "#메모",
+        "#다이어리",
+        "#플래너",
+        "#오프라인",
+        "#100NotesStudio"
+      ],
+      "keywords": [
+        "손글씨",
+        "메모",
+        "다이어리",
+        "플래너",
+        "오프라인",
+        "스케치"
+      ],
+      "keyline": "필기 노트·PDF 주석",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "손글씨 노트에 100가지 스타일",
+          "benefit": "노트마다 다른 디자인"
+        },
+        {
+          "id": "b",
+          "lead": "노트마다 다른 디자인",
+          "benefit": "녹음은 그 페이지에 저장"
+        },
+        {
+          "id": "c",
+          "lead": "암기 카드로 복습",
+          "benefit": "노트마다 다른 디자인"
+        }
+      ]
+    },
     "onepageppt/en": {
       "app": "onepageppt",
       "locale": "en",
@@ -5122,7 +5251,7 @@
     "photocream/en": {
       "app": "photocream",
       "locale": "en",
-      "url": "https://files.catbox.moe/t80x40.mp4",
+      "url": "https://files.catbox.moe/yhqncq.mp4",
       "store_url": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=h7_photocream_en&mt=8",
       "hook": "Your selfie, but make it film",
       "name": "PhotoCream Pro: Film Filters",
@@ -5165,7 +5294,7 @@
     "photocream/zh-Hant": {
       "app": "photocream",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/sjcara.mp4",
+      "url": "https://files.catbox.moe/1n9dmc.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=h7_photocream_zh-Hant&mt=8",
       "hook": "自拍也能有 底片感",
       "name": "PhotoCream Pro：底片濾鏡·復古修圖",
@@ -5202,6 +5331,178 @@
           "id": "c",
           "lead": "放大眼睛、拉長身形 都很自然",
           "benefit": "100+ 款底片濾鏡"
+        }
+      ]
+    },
+    "photocream/ja": {
+      "app": "photocream",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/iwjrud.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=h7_photocream_ja&mt=8",
+      "hook": "その自撮り、 フィルム風に",
+      "name": "PhotoCream Pro：フィルム風フィルター",
+      "search": "PhotoCream フィルム",
+      "tags": [
+        "#フィルム風フィルター",
+        "#フィルムカメラ",
+        "#レトロ",
+        "#写真加工",
+        "#自撮り",
+        "#PhotoCreamフィルム"
+      ],
+      "keywords": [
+        "フィルムカメラ",
+        "レトロ",
+        "写真加工",
+        "自撮り",
+        "フィルター",
+        "盛れるカメラ"
+      ],
+      "keyline": "フィルムカメラ・レトロ加工",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "その自撮り、フィルム風に",
+          "benefit": "フィルム加工が 100種以上"
+        },
+        {
+          "id": "b",
+          "lead": "フィルム加工が 100種以上",
+          "benefit": "粒子も ハレーションも"
+        },
+        {
+          "id": "c",
+          "lead": "デカ目も体型も 自然に補正",
+          "benefit": "フィルム加工が 100種以上"
+        }
+      ]
+    },
+    "photocream/ko": {
+      "app": "photocream",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/91mvpr.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=h7_photocream_ko&mt=8",
+      "hook": "셀카에 한 스푼, 필름 감성",
+      "name": "PhotoCream Pro：필름 필터·감성 보정",
+      "search": "PhotoCream 필름 필터",
+      "tags": [
+        "#필름필터감성보정",
+        "#필름카메라",
+        "#감성카메라",
+        "#빈티지",
+        "#레트로",
+        "#PhotoCream필름필터"
+      ],
+      "keywords": [
+        "필름카메라",
+        "감성카메라",
+        "빈티지",
+        "레트로",
+        "사진편집",
+        "셀카"
+      ],
+      "keyline": "필름카메라·감성 사진편집",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "셀카에 한 스푼, 필름 감성",
+          "benefit": "필름 필터 100개 이상"
+        },
+        {
+          "id": "b",
+          "lead": "필름 필터 100개 이상",
+          "benefit": "진짜 그레인과 할레이션"
+        },
+        {
+          "id": "c",
+          "lead": "눈은 크게, 몸매는 길게 자연스럽게",
+          "benefit": "필름 필터 100개 이상"
+        }
+      ]
+    },
+    "photocream/zh-Hans": {
+      "app": "photocream",
+      "locale": "zh-Hans",
+      "url": "https://files.catbox.moe/00db02.mp4",
+      "store_url": "https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=h7_photocream_zh-Hans&mt=8",
+      "hook": "自拍也能有 胶片感",
+      "name": "PhotoCream Pro：胶片滤镜·复古修图",
+      "search": "PhotoCream 胶片滤镜",
+      "tags": [
+        "#胶片滤镜复古修图",
+        "#胶片相机",
+        "#复古滤镜",
+        "#修图",
+        "#美颜相机",
+        "#PhotoCream胶片滤镜"
+      ],
+      "keywords": [
+        "胶片相机",
+        "复古滤镜",
+        "修图",
+        "美颜相机",
+        "自拍",
+        "滤镜"
+      ],
+      "keyline": "胶片相机·复古滤镜修图",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "自拍也能有 胶片感",
+          "benefit": "100+ 款胶片滤镜"
+        },
+        {
+          "id": "b",
+          "lead": "100+ 款胶片滤镜",
+          "benefit": "真实颗粒与光晕"
+        },
+        {
+          "id": "c",
+          "lead": "放大眼睛、拉长身形 都很自然",
+          "benefit": "100+ 款胶片滤镜"
+        }
+      ]
+    },
+    "photocream/cs": {
+      "app": "photocream",
+      "locale": "cs",
+      "url": "https://files.catbox.moe/h6wgpf.mp4",
+      "store_url": "https://apps.apple.com/cz/app/id6781808054?pt=118326163&ct=h7_photocream_cs&mt=8",
+      "hook": "Selfie s filmovou duší",
+      "name": "PhotoCream Pro: Filmové filtry",
+      "search": "PhotoCream Pro",
+      "tags": [
+        "#FilmovéFiltry",
+        "#AnalogovýFotoaparát",
+        "#VintageFiltr",
+        "#ÚpravaFotek",
+        "#Selfie",
+        "#PhotoCreamPro"
+      ],
+      "keywords": [
+        "analogový fotoaparát",
+        "vintage filtr",
+        "úprava fotek",
+        "selfie",
+        "filtry",
+        "fotoaparát krásy"
+      ],
+      "keyline": "Retro fotoaparát a filtry",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Selfie s filmovou duší",
+          "benefit": "100+ filmových filtrů"
+        },
+        {
+          "id": "b",
+          "lead": "100+ filmových filtrů",
+          "benefit": "Pravé zrno i halace"
+        },
+        {
+          "id": "c",
+          "lead": "Přirozená retuš a tvarování postavy",
+          "benefit": "100+ filmových filtrů"
         }
       ]
     },
@@ -7467,7 +7768,7 @@
     "zipbox/en": {
       "app": "zipbox",
       "locale": "en",
-      "url": "https://files.catbox.moe/qw455b.mp4",
+      "url": "https://files.catbox.moe/xr0og7.mp4",
       "store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=h7_zipbox_en&mt=8",
       "hook": "Need one file from a ZIP?",
       "name": "Zipbox: Unzip RAR, ZIP & 7z",
@@ -7510,7 +7811,7 @@
     "zipbox/zh-Hant": {
       "app": "zipbox",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/sncfck.mp4",
+      "url": "https://files.catbox.moe/z5y69c.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=h7_zipbox_zh-Hant&mt=8",
       "hook": "壓縮檔裡 只要一個檔？",
       "name": "Zipbox 解壓縮：RAR ZIP 7z",
@@ -7764,30 +8065,52 @@
           "benefit": "スクショもPDFもメモも まとめて追加"
         }
       ]
+    },
+    "aibriefpack/ko": {
+      "app": "aibriefpack",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/6x4jrx.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=h7_aibriefpack_ko&mt=8",
+      "hook": "AI 답변이 엉뚱하다면? 맥락이 부족해서예요",
+      "name": "AI Brief：파일을 AI 프롬프트로",
+      "search": "AI Brief",
+      "tags": [
+        "#파일을AI프롬프트로",
+        "#요약",
+        "#문서",
+        "#메모",
+        "#스크린샷",
+        "#AIBrief"
+      ],
+      "keywords": [
+        "요약",
+        "문서",
+        "메모",
+        "스크린샷",
+        "텍스트추출",
+        "이미지문자인식"
+      ],
+      "keyline": "파일을 명확한 맥락으로",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "AI 답변이 엉뚱하다면? 맥락이 부족해서예요",
+          "benefit": "스크린샷·PDF·메모 한 번에 추가"
+        },
+        {
+          "id": "b",
+          "lead": "스크린샷·PDF·메모 한 번에 추가",
+          "benefit": "원하는 결과를 정하고"
+        },
+        {
+          "id": "c",
+          "lead": "어떤 AI에도 쓰는 브리프 완성",
+          "benefit": "스크린샷·PDF·메모 한 번에 추가"
+        }
+      ]
     }
   },
   "seo": {
-    "aibriefpack": {
-      "ko": {
-        "keywords": [
-          "요약",
-          "문서",
-          "메모",
-          "스크린샷",
-          "텍스트추출",
-          "이미지문자인식"
-        ],
-        "keyline": "파일을 AI 프롬프트로",
-        "tags": [
-          "#파일을AI프롬프트로",
-          "#요약",
-          "#문서",
-          "#메모",
-          "#스크린샷",
-          "#AIBrief"
-        ]
-      }
-    },
     "dailymate": {
       "en": {
         "keywords": [
@@ -8330,46 +8653,6 @@
         ]
       }
     },
-    "lumimath": {
-      "ja": {
-        "keywords": [
-          "さんすう",
-          "幼児数",
-          "数える",
-          "たしざん",
-          "かずあそび",
-          "知育"
-        ],
-        "keyline": "幼児向け算数知育ゲーム",
-        "tags": [
-          "#体験版",
-          "#さんすう",
-          "#幼児数",
-          "#数える",
-          "#たしざん",
-          "#Lumi算数プラネット体験版"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "유아수학",
-          "아동수학",
-          "수학게임",
-          "셈하기",
-          "덧셈",
-          "뺄셈"
-        ],
-        "keyline": "체험판",
-        "tags": [
-          "#체험판",
-          "#유아수학",
-          "#아동수학",
-          "#수학게임",
-          "#셈하기",
-          "#Lumi수학행성체험판"
-        ]
-      }
-    },
     "lumimathpro": {
       "en": {
         "keywords": [
@@ -8523,67 +8806,6 @@
           "#생활계획표",
           "#루틴",
           "#Lumi미션별Pro"
-        ]
-      }
-    },
-    "notesstudio100": {
-      "ko": {
-        "keywords": [
-          "손글씨",
-          "메모",
-          "다이어리",
-          "플래너",
-          "오프라인",
-          "스케치"
-        ],
-        "keyline": "손글씨 · 메모 · 다이어리",
-        "tags": [
-          "#손글씨",
-          "#메모",
-          "#다이어리",
-          "#플래너",
-          "#오프라인",
-          "#100NotesStudio"
-        ]
-      }
-    },
-    "photocream": {
-      "ja": {
-        "keywords": [
-          "フィルムカメラ",
-          "レトロ",
-          "写真加工",
-          "自撮り",
-          "フィルター",
-          "盛れるカメラ"
-        ],
-        "keyline": "フィルムカメラ・レトロ加工",
-        "tags": [
-          "#フィルム風フィルター",
-          "#フィルムカメラ",
-          "#レトロ",
-          "#写真加工",
-          "#自撮り",
-          "#PhotoCreamフィルム"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "필름카메라",
-          "감성카메라",
-          "빈티지",
-          "레트로",
-          "사진편집",
-          "셀카"
-        ],
-        "keyline": "필름카메라·감성 사진편집",
-        "tags": [
-          "#필름필터감성보정",
-          "#필름카메라",
-          "#감성카메라",
-          "#빈티지",
-          "#레트로",
-          "#PhotoCream필름필터"
         ]
       }
     },

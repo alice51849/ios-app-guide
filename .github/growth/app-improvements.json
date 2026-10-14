@@ -1004,7 +1004,7 @@
         {
           "id": "claudeusagemini-16",
           "title": "UsageNow 加入 threads-autopilot 審核上線名單，讓 Threads 自動發 UsageNow",
-          "detail": "照 threads-autopilot/reviewed_sources/countdaysnow.json 等前例做 reviewed onboarding（GrowthEngine 來源雜湊、Lookup 證據、exact-50、hooks、seals），跑該 repo 測試後推送。文案可用 .github/growth/drafts/claudeusagemini/push-kit.json（只寫商品頁有的功能）。",
+          "detail": "照 threads-autopilot/reviewed_sources/countdaysnow.json 等前例做 reviewed onboarding（GrowthEngine 來源雜湊、Lookup 證據、exact-50、hooks、seals），跑該 repo 測試後推送。文案可用 .github/growth/drafts/claudeusagemini/push-kit.json（只寫商品頁有的功能）。 【2026-10-14 本機卡點】UsageNow 在 CN Lookup 為 0 筆（BD 也 0）；前例都靠「CN 有販售」，market_availability 的 reviewed extension 寫死要求 CN result_count==1，硬加會 fail closed。需 Growth 端補 production market seal（zh-Hans 不販售清單加 6818607603）或擴充契約並獨立複核。另外英文副標含 Claude／Codex／Copilot，50 語 hero 需改成不提服務名的第一方句。Lookup 證據：本機 scratchpad un/lookup_evidence.json。",
           "owner": "local",
           "impact": "high",
           "status": "todo"

@@ -16,6 +16,7 @@ from social_post_common import (
     HTTPStatusError,
     RequestError,
     campaign_app_store_url,
+    play_store_url,
     canonical_app_store_url,
     canonical_social_image_url,
     channel_candidates,
@@ -95,7 +96,10 @@ def pick(pool, now=None):
 
 def compose_text(item):
     url = campaign_app_store_url(item.get("url"), "soc_th_guide")
-    return f"{item['text']}\n\n{url}\n\n{item_footer(item)}"
+    text = f"{item['text']}\n\n{url}\n\n{item_footer(item)}"
+    play = play_store_url(item.get("app"), "soc_th_guide")
+    with_play = f"{item['text']}\n\n{url}\nGoogle Play: {play}\n\n{item_footer(item)}" if play else text
+    return with_play if len(with_play) <= MAX_POST_CHARS else text
 
 
 def pick_postable(pool, now=None):

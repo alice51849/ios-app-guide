@@ -29,6 +29,7 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 >    - 標題用 `videogen/search_demand.py` 的已驗證查詢句開頭。
 >    - 9/14 起暫停上傳的前後比較今天（10/14）到期：先把比較結果寫進回報，再開始上傳新片。
 >    - 無聲版放在 `out/` 給 TikTok／IG 手動配熱門音樂用。
+>    - **Android 也上線了：** App 在 `_engine/geo/data/android_live_snapshot.json` 裡（已上 Google Play）的，YouTube 說明欄除了 App Store 連結也放該檔的 `play_url`（加 `&referrer=utm_source%3Dlumi_social%26utm_campaign%3Dh7_<app>_<語言>_yt`）。
 > 5. **補素材給雲端：** 下面這些 App 在 `social/assets/` 沒有截圖，雲端做不了它們的鉤子片。請把每款 App Store 上的 iPhone 6.9 吋截圖（1320×2868 或 1290×2796）照 `01.png`、`02.png`… 的格式放進 `social/assets/<key>/`，commit 並 push，雲端就會接著寫分鏡：claudeusagemini（最優先）、countdaysnow、studydown、stayclock、savetag、shotinbox、picclear、qrcodehalo、battai、dbhalo、zipbox、sononote、cvdesk、ledmovingtext、lumibopomofo、lumibopomofopro、lumiletterspro、lumimathpro、lumimissionpro、snapport、moneytag。
 
 > **2026-10-14 新增：補齊截圖（Caitlyn 明確要求）。** HoursTag Lite（iPhone 1 張、iPad 1 張）、SaveTag（各 2 張）、Unblurry（各 2 張）在 App Store 上的截圖少於 3 張，美國、台灣、日本都一樣。

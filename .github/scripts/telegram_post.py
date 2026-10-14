@@ -27,6 +27,7 @@ from social_post_common import (
     OFFICIAL_SOCIAL_LOCALES,
     RequestError,
     campaign_app_store_url,
+    play_store_url,
     canonical_app_store_url,
     canonical_social_image_url,
     channel_candidates,
@@ -698,10 +699,12 @@ def pick(pool, now=None):
     return candidates(pool, now)[0]
 
 
-def compose_text(item):
+def compose_text(item, android=True):
     url = campaign_app_store_url(item.get("url"), "soc_tg_guide")
+    play = play_store_url(item.get("app"), "soc_tg_guide") if android else None
+    links = f"👉 {url}" + (f"\n🤖 Google Play: {play}" if play else "")
     return (
-        f"{item['text']}\n\n👉 {url}\n\n"
+        f"{item['text']}\n\n{links}\n\n"
         f"{item_footer(item)}"
     )
 
@@ -1004,6 +1007,8 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
         and str(item.get("app")) not in blocked_apps
         and str(item.get("app")) not in skip_apps
         and _digest(compose_text(item)) not in used
+        # Posts sent before the Google Play line was added count as used too.
+        and _digest(compose_text(item, android=False)) not in used
     ]
     # Native gaps get the next eligible existing slot, never additional sends.
     return next(

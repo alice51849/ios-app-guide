@@ -51,8 +51,12 @@ def app_names(improvements):
     return {a["key"]: a.get("name", a["key"]) for a in improvements.get("apps", [])}
 
 
-def build_section(clips, posts, names, now, hook_total=None, notes=()):
-    """Markdown for the hook-clip section (heading included)."""
+def build_section(clips, posts, names, now, hook_total=None, notes=(), android=None):
+    """Markdown for the hook-clip section (heading included).
+
+    android: {app_key: Google Play URL}; posts link both stores when present.
+    """
+    android = android or {}
     clip_map = clips.get("clips", {})
     schedule = clips.get("schedule", [])
     posted = {(p["channel"], p["clip"]): p for p in posts}
@@ -62,6 +66,9 @@ def build_section(clips, posts, names, now, hook_total=None, notes=()):
     apps = sorted({c["app"] for c in clip_map.values()})
     total = f"／{hook_total} 款" if hook_total else ""
     lines.append(f"- 已上傳：{len(apps)} 款{total}、{len(clip_map)} 支影片。")
+    if android:
+        lines.append(f"- Android：{len(android)} 款已在 Google Play 上線；這些 App 的貼文同時附 App Store 與 Google Play 連結"
+                     "（Telegram 兩個按鈕、IG 文案註明 Google Play）。")
     lines += [f"- {n}" for n in notes]
     lines += ["", "| 平台 | 進度 | 已發 | 下一支（台灣時間） |", "|---|---|---|---|"]
     for channel in ("telegram", "instagram"):
@@ -83,7 +90,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=()):
     for name, state in MANUAL_CHANNELS:
         lines.append(f"| {name} | {state} | — | — |")
 
-    lines += ["", "| App | 語言 | 影片 | Telegram | Instagram |", "|---|---|---|---|---|"]
+    lines += ["", "| App | 語言 | 影片 | Telegram | Instagram | Android |", "|---|---|---|---|---|---|"]
 
     def cell(channel, key):
         p = posted.get((channel, key))
@@ -97,8 +104,10 @@ def build_section(clips, posts, names, now, hook_total=None, notes=()):
 
     for key in sorted(clip_map, key=lambda k: (names.get(clip_map[k]["app"], k), k)):
         c = clip_map[key]
+        play = android.get(c["app"])
         lines.append(f"| {names.get(c['app'], c['app'])} | {c['locale']} | [影片]({c['url']}) | "
-                     f"{cell('telegram', key)} | {cell('instagram', key)} |")
+                     f"{cell('telegram', key)} | {cell('instagram', key)} | "
+                     f"{f'[Google Play]({play})' if play else '尚未上架'} |")
     return "\n".join(lines)
 
 
@@ -124,7 +133,9 @@ def update(now=None, notes=None):
     posts = load_json(POSTS, {}).get("posts", [])
     if notes is None:
         notes = load_json(POSTS, {}).get("notes", [])
-    section = build_section(clips, posts, app_names(improvements), now, hook_total(improvements), notes)
+    from social_post_common import android_apps
+    android = {e["key"]: e["play_url"] for e in android_apps().values()}
+    section = build_section(clips, posts, app_names(improvements), now, hook_total(improvements), notes, android)
     improvements["summary_md"] = replace_section(improvements.get("summary_md", ""), section)
     improvements["updated_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     IMPROVEMENTS.write_text(json.dumps(improvements, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

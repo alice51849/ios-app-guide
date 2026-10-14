@@ -83,6 +83,20 @@ class ClipPostsTest(unittest.TestCase):
                 mock.patch.object(C, "_post", return_value=reply):
             self.assertEqual(C.post_telegram(clip("a", "en"))["link"], "https://t.me/lumiapps/9")
 
+    def test_android_apps_get_a_google_play_button_and_caption_line(self):
+        sent = {}
+        play = "https://play.google.com/store/apps/details?id=x&referrer=r"
+        with mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "c"}), \
+                mock.patch.object(C, "play_store_url", return_value=play), \
+                mock.patch.object(C, "_post", side_effect=lambda u, f, timeout=60: sent.update(f) or
+                                  {"ok": True, "result": {"message_id": 1}}):
+            C.post_telegram(clip("a", "ja"))
+            self.assertIn("AndroidはGoogle Playで", C.caption(clip("a", "ja"), "instagram"))
+        row = json.loads(sent["reply_markup"])["inline_keyboard"][0]
+        self.assertEqual([b["text"] for b in row], ["App Storeで入手", "Google Play"])
+        with mock.patch.object(C, "play_store_url", return_value=None):
+            self.assertNotIn("Google Play", C.caption(clip("a", "ja"), "instagram"))
+
 
 class ClipProgressTest(unittest.TestCase):
     NOW = dt.datetime(2026, 10, 15, 2, 0, tzinfo=dt.timezone.utc)
@@ -98,6 +112,9 @@ class ClipProgressTest(unittest.TestCase):
         self.assertIn("2 款／53 款、3 支影片", md)
         self.assertIn("| Telegram | 自動", md)
         self.assertIn("- note", md)
+        self.assertIn("| 尚未上架 |", md)
+        with_play = P.build_section(DATA, [], {}, self.NOW, None, (), {"a": "https://play.google.com/x"})
+        self.assertIn("[Google Play](https://play.google.com/x)", with_play)
 
     def test_section_replaced_in_place_and_other_sections_kept(self):
         summary = "# T\n\n## A\nx\n\n" + P.HEADING + "\nold\n\n## B\ny\n"

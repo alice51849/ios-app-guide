@@ -12,6 +12,7 @@ import os
 import re
 import sys
 import time
+from pathlib import Path
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -315,6 +316,37 @@ def canonical_app_store_url(value):
     ):
         raise ValueError(f"Invalid canonical App Store URL: {value}")
     return f"https://apps.apple.com/app/id{match.group(1)}"
+
+
+ANDROID_SNAPSHOT = (
+    Path(__file__).resolve().parents[2] / "_engine" / "geo" / "data" / "android_live_snapshot.json"
+)
+_ANDROID = None
+
+
+def android_apps():
+    """{ios_app_id: snapshot entry} for apps whose Google Play page is live."""
+    global _ANDROID
+    if _ANDROID is None:
+        try:
+            apps = json.loads(ANDROID_SNAPSHOT.read_text(encoding="utf-8")).get("apps", {})
+        except (OSError, ValueError):
+            apps = {}
+        _ANDROID = {
+            str(entry["ios_app_id"]): dict(entry, key=key)
+            for key, entry in apps.items()
+            if str(entry.get("play_url", "")).startswith("https://play.google.com/")
+        }
+    return _ANDROID
+
+
+def play_store_url(app_id, campaign):
+    """Google Play link with the same campaign token, or None if not on Android."""
+    entry = android_apps().get(str(app_id))
+    if not entry:
+        return None
+    referrer = urllib.parse.quote(f"utm_source=lumi_social&utm_campaign={campaign}", safe="")
+    return f"{entry['play_url']}&referrer={referrer}"
 
 
 def campaign_app_store_url(value, campaign):

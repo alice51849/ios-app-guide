@@ -20,6 +20,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -27,6 +28,7 @@ import urllib.request
 from pathlib import Path
 
 import clip_progress
+from social_post_common import play_store_url
 
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
@@ -86,11 +88,29 @@ LAYOUTS = [
 ]
 
 
+PLAY_LINE = {"en": "Also on Google Play", "zh-Hant": "Android 版在 Google Play", "ja": "AndroidはGoogle Playで",
+             "ko": "Android는 Google Play에서", "de": "Auch bei Google Play", "fr": "Aussi sur Google Play",
+             "es": "También en Google Play", "pt-BR": "Também no Google Play"}
+
+
+def ios_id(clip):
+    m = re.search(r"/id(\d+)", clip.get("store_url", ""))
+    return m.group(1) if m else ""
+
+
+def play_url(clip, channel):
+    """Google Play link for the clip's app (same ct token), or None if not on Android."""
+    ct = urllib.parse.parse_qs(urllib.parse.urlsplit(clip.get("store_url", "")).query).get("ct", ["h7"])[0]
+    return play_store_url(ios_id(clip), f"{ct}_{channel}"[:40])
+
+
 def caption(clip, channel):
     t = text_for(clip["locale"])
     layout = LAYOUTS[sum(map(ord, f"{clip['app']}/{clip['locale']}/{channel}")) % len(LAYOUTS)]
     values = {"hook": clip["hook"], "name": clip["name"], "search": t["search"].format(s=clip["search"])}
     lines = [line.format(**values) for line in layout]
+    if play_store_url(ios_id(clip), "h7"):
+        lines.append(PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"])
     if channel == "instagram":
         tags = clip.get("tags") or t["tags"].split()
         lines += [t["bio"], "", " ".join(tags[:3])]
@@ -116,8 +136,11 @@ def post_telegram(clip):
     if not token or not chat:
         print("clip: Telegram secrets missing, skipped")
         return None
-    button = {"inline_keyboard": [[{"text": text_for(clip["locale"])["button"],
-                                     "url": with_campaign(clip["store_url"], "tg")}]]}
+    row = [{"text": text_for(clip["locale"])["button"], "url": with_campaign(clip["store_url"], "tg")}]
+    play = play_url(clip, "tg")
+    if play:
+        row.append({"text": "Google Play", "url": play})
+    button = {"inline_keyboard": [row]}
     result = _post(f"https://api.telegram.org/bot{token}/sendVideo", {
         "chat_id": chat,
         "video": clip["url"],

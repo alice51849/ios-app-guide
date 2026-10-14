@@ -26,6 +26,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      actions: read
+      contents: write # records each Reel's link on the promotion page
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -51,3 +54,21 @@ jobs:
         run: |
           SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
           python3 .github/scripts/clip_posts.py instagram --slot "$SLOT"
+      - name: Record the post link on the promotion page
+        # office.cait518.cc lists every clip post; clip_posts.py wrote the
+        # link to clip-posts.json and refreshed app-improvements.json.
+        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the clip post"; exit 1

@@ -26,6 +26,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import clip_progress
+
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
 GRAPH = "https://graph.instagram.com/v21.0"
@@ -125,7 +127,10 @@ def post_telegram(clip):
     })
     if not result.get("ok"):
         raise RuntimeError(f"Telegram sendVideo failed: {result}")
-    return result["result"]["message_id"]
+    message = result["result"]
+    username = (message.get("chat") or {}).get("username")
+    link = f"https://t.me/{username}/{message['message_id']}" if username else None
+    return {"id": message["message_id"], "link": link}
 
 
 def post_instagram(clip, wait=5, tries=60):
@@ -156,7 +161,13 @@ def post_instagram(clip, wait=5, tries=60):
         time.sleep(wait)
     else:
         raise RuntimeError("Instagram processing timed out")
-    return _post(f"{GRAPH}/{user}/media_publish", {"creation_id": container, "access_token": token})["id"]
+    media = _post(f"{GRAPH}/{user}/media_publish", {"creation_id": container, "access_token": token})["id"]
+    try:
+        link = _get(f"{GRAPH}/{media}?fields=permalink&access_token={token}").get("permalink")
+    except Exception as exc:  # the Reel is up; a missing link must not fail the run
+        print(f"clip: permalink lookup skipped ({exc.__class__.__name__})")
+        link = None
+    return {"id": media, "link": link}
 
 
 def main():
@@ -180,6 +191,9 @@ def main():
         return 0
     posted = post_telegram(clip) if args.channel == "telegram" else post_instagram(clip)
     print(f"clip: posted {posted}")
+    if posted:
+        # The promotion page (office.cait518.cc) lists every post's link.
+        clip_progress.record_post(channel, f"{clip['app']}/{clip['locale']}", posted.get("link"))
     return 0
 
 

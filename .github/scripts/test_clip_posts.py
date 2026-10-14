@@ -11,6 +11,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import clip_posts as C  # noqa: E402
+import clip_progress as P  # noqa: E402
 
 
 def clip(app, locale):
@@ -71,10 +72,41 @@ class ClipPostsTest(unittest.TestCase):
 
         with mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "c"}), \
                 mock.patch.object(C, "_post", side_effect=fake_post):
-            self.assertEqual(C.post_telegram(clip("a", "en")), 7)
+            self.assertEqual(C.post_telegram(clip("a", "en")), {"id": 7, "link": None})
         self.assertTrue(sent["endpoint"].endswith("/sendVideo"))
         button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
         self.assertIn("ct=h7_a_en_tg", button["url"])
+
+    def test_public_channel_post_gets_a_link(self):
+        reply = {"ok": True, "result": {"message_id": 9, "chat": {"username": "lumiapps"}}}
+        with mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "c"}), \
+                mock.patch.object(C, "_post", return_value=reply):
+            self.assertEqual(C.post_telegram(clip("a", "en"))["link"], "https://t.me/lumiapps/9")
+
+
+class ClipProgressTest(unittest.TestCase):
+    NOW = dt.datetime(2026, 10, 15, 2, 0, tzinfo=dt.timezone.utc)
+
+    def test_section_lists_links_schedule_and_channel_progress(self):
+        posts = [{"channel": "telegram", "clip": "a/zh-Hant", "link": "https://t.me/x/5",
+                  "posted_at": "2026-10-15T01:00:03Z"}]
+        md = P.build_section(DATA, posts, {"a": "App A"}, self.NOW, 53, ["note"])
+        self.assertTrue(md.startswith(P.HEADING))
+        self.assertIn("[已發 10/15](https://t.me/x/5)", md)
+        self.assertIn("排定 10/15 23:20", md)          # b/en on Instagram, 15:20 UTC
+        self.assertIn("[影片](https://files.catbox.moe/a_en.mp4)", md)
+        self.assertIn("2 款／53 款、3 支影片", md)
+        self.assertIn("| Telegram | 自動", md)
+        self.assertIn("- note", md)
+
+    def test_section_replaced_in_place_and_other_sections_kept(self):
+        summary = "# T\n\n## A\nx\n\n" + P.HEADING + "\nold\n\n## B\ny\n"
+        out = P.replace_section(summary, P.HEADING + "\nnew")
+        self.assertIn("## A\nx", out)
+        self.assertIn("## B\ny", out)
+        self.assertIn("new", out)
+        self.assertNotIn("old", out)
+        self.assertEqual(P.replace_section("# T", P.HEADING), "# T\n\n" + P.HEADING + "\n")
 
 
 if __name__ == "__main__":

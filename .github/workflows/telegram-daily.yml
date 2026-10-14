@@ -22,7 +22,7 @@ jobs:
     timeout-minutes: 20
     permissions:
       actions: read
-      contents: write # 僅供 telegram-native-ledger 孤立資料分支的 CAS 寫入。
+      contents: write # telegram-native-ledger 孤立資料分支的 CAS 寫入，與鉤子片發文紀錄。
     env:
       ASC_GROWTH_SIGNALS_B64: ${{ secrets.ASC_GROWTH_SIGNALS_B64 }}
     steps:
@@ -67,6 +67,24 @@ jobs:
         run: |
           python3 .github/scripts/test_clip_posts.py -q
           python3 .github/scripts/clip_posts.py telegram --slot "$(echo "$SCHEDULE" | awk '{print $2}')"
+      - name: Record the post link on the promotion page
+        # office.cait518.cc lists every clip post; clip_posts.py wrote the
+        # link to clip-posts.json and refreshed app-improvements.json.
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 15 * * *')
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the clip post"; exit 1
       - name: Preserve native response and ledger recovery evidence
         if: always() && steps.slot.outputs.should_post == 'true'
         uses: actions/upload-artifact@v4

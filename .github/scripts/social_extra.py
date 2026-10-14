@@ -18,8 +18,16 @@ puts the link on the promotion page (office.cait518.cc). Daily caps per
 platform live in PLAN. Every platform is secret-gated: without its secrets it
 logs "not configured" and moves on; one platform failing never fails the run.
 
+Bluesky and Mastodon are posted by the threads-autopilot repo (media.yml),
+where those accounts' secrets live: it reads the day's items from the
+social-feed branch that `export` writes (feed.json). So this script skips
+Bluesky unless FORCE_GUIDE_BLUESKY=1, and a Bluesky secret added here later
+never double-posts. YouTube Shorts of the clips can also come from the Mac
+(00_GrowthEngine hook-shorts-youtube.yml, off by default), reading the same feed.
+
     python3 social_extra.py post --slot 1 [--channel bluesky] [--dry-run]
     python3 social_extra.py whoami [--channel facebook]
+    python3 social_extra.py export --out feed.json [--date YYYY-MM-DD]
 """
 import argparse
 import base64
@@ -64,7 +72,13 @@ PLAN = {
     "naver": {"cap": 1, "clips": True, "cards": True, "locales": ("ko",)},
     "plurk": {"cap": 2, "clips": True, "cards": True, "locales": ("zh-Hant",)},
     "dailymotion": {"cap": 1, "clips": True, "cards": False},
+    # Export only (not in CHANNELS): posted by threads-autopilot from feed.json.
+    "mastodon": {"cap": 2, "clips": True, "cards": True},
 }
+# Served by another repo from feed.json; this script never posts them unless forced.
+SERVED_ELSEWHERE = {"bluesky": "threads-autopilot media.yml"}
+EXPORT_CHANNELS = ("bluesky", "mastodon", "youtube")
+FEED_SCHEMA = "lumi.social-feed/v1"
 SECRETS = {
     "facebook": ("FB_PAGE_ID", "FB_PAGE_TOKEN"),
     "bluesky": ("BSKY_HANDLE", "BSKY_APP_PASSWORD"),
@@ -77,14 +91,26 @@ SECRETS = {
 }
 # Campaign suffix per platform (App Store ct token / Play referrer).
 CT = {"facebook": "fb", "bluesky": "bs", "youtube": "yt", "pinterest": "pin", "tumblr": "tb",
-      "naver": "nv", "plurk": "pk", "dailymotion": "dm"}
+      "naver": "nv", "plurk": "pk", "dailymotion": "dm", "mastodon": "ma"}
 
 
 def env(name):
     return os.environ.get(name, "").strip()
 
 
+def served_elsewhere(channel):
+    return channel in SERVED_ELSEWHERE and env("FORCE_GUIDE_BLUESKY") != "1"
+
+
+def not_configured(channel):
+    if served_elsewhere(channel):
+        return f"{channel}: not configured here (served by {SERVED_ELSEWHERE[channel]}; FORCE_GUIDE_BLUESKY=1 overrides)"
+    return f"{channel}: not configured ({', '.join(SECRETS[channel])})"
+
+
 def configured(channel):
+    if served_elsewhere(channel):
+        return False
     if channel == "facebook" and env("IG_ACCESS_TOKEN"):
         return True  # the probe may find a Page token behind the Instagram token
     if channel == "pinterest" and all(env(k) for k in ("PINTEREST_REFRESH_TOKEN", "PINTEREST_APP_ID", "PINTEREST_APP_SECRET")):
@@ -743,7 +769,7 @@ WHOAMI = {"facebook": whoami_facebook, "bluesky": whoami_bluesky, "youtube": who
 def whoami(channels):
     for ch in channels:
         if not configured(ch):
-            print(f"{ch}: not configured ({', '.join(SECRETS[ch])})")
+            print(not_configured(ch))
             continue
         try:
             WHOAMI[ch]()
@@ -759,7 +785,7 @@ def run(channels, day, slot, dry_run=False, data=None):
     for ch in channels:
         ok = configured(ch)
         if not ok and not dry_run:
-            print(f"{ch}: not configured ({', '.join(SECRETS[ch])})")
+            print(not_configured(ch))
             continue
         try:
             items = plan(ch, data, posts, day, slot, check=not dry_run)
@@ -790,9 +816,29 @@ def run(channels, day, slot, dry_run=False, data=None):
     return 0
 
 
+def export(day, check=True, data=None):
+    """The day's clip and card items per EXPORT_CHANNELS, unfiltered by any post log.
+
+    Consumers keep their own dedup and caps; clips come in clips.json order for
+    slot 1 then slot 15 (Instagram entry first), cards only once published."""
+    data = data if data is not None else clip_posts.load()
+    items = {}
+    for ch in EXPORT_CHANNELS:
+        out = []
+        for slot in (1, 15):
+            out += [dict(i, slot=slot) for i in todays_clips(data, [], ch, day, slot)
+                    if i["key"] not in {o["key"] for o in out}]
+        if PLAN[ch]["cards"]:
+            out += [c for c in todays_cards(day, ch) if not check or exists(c["image"])]
+        items[ch] = out
+    return {"schema": FEED_SCHEMA, "date": day.isoformat(),
+            "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items}
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["post", "whoami"])
+    ap.add_argument("mode", choices=["post", "whoami", "export"])
+    ap.add_argument("--out", help="export: file to write (default stdout)")
     ap.add_argument("--channel", default="all", help="one platform, a comma list, or all")
     ap.add_argument("--slot", default="auto", help="1 or 15 (clips.json slot); auto = by UTC hour")
     ap.add_argument("--date", help="YYYY-MM-DD (UTC), default today")
@@ -807,6 +853,13 @@ def main(argv=None):
         return whoami(channels)
     now = dt.datetime.now(dt.timezone.utc)
     day = dt.date.fromisoformat(args.date) if args.date else now.date()
+    if args.mode == "export":
+        text = json.dumps(export(day), ensure_ascii=False, indent=1) + "\n"
+        if args.out:
+            Path(args.out).write_text(text, encoding="utf-8")
+        else:
+            sys.stdout.write(text)
+        return 0
     slot = int(args.slot) if args.slot.isdigit() else (1 if now.hour < 12 else 15)
     return run(channels, day, slot, args.dry_run)
 

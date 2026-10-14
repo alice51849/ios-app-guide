@@ -25,6 +25,9 @@ name: Social extra daily
 #                  PLURK_TOKEN_SECRET                  (zh-Hant only, ≤2/day)
 #   Dailymotion    DM_API_KEY, DM_API_SECRET, DM_USERNAME, DM_PASSWORD (1/day)
 #                  (paid per post: 1/day)
+# Bluesky is posted by threads-autopilot (media.yml) from this run's feed.json
+# on the social-feed branch; social_extra.py skips it here unless the env
+# FORCE_GUIDE_BLUESKY=1 is set, so adding BSKY_* secrets here cannot double-post.
 # Manual run: mode=whoami checks every configured account without posting;
 # dry_run=true prints what would go out.
 on:
@@ -123,6 +126,33 @@ jobs:
           SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
           python3 .github/scripts/social_extra.py "${MODE:-post}" --channel "${CHANNEL:-all}" --slot "${SLOT:-auto}" \
             $([ "$DRY_RUN" = "true" ] && echo --dry-run) || echo "::warning::social_extra.py exited with an error"
+      # threads-autopilot (Bluesky, Mastodon) and the Mac (YouTube) read the
+      # day's items from raw.githubusercontent.com/<repo>/social-feed/feed.json,
+      # so their secrets never have to be copied here. Plain data, no secrets;
+      # a normal (never forced) push onto the data branch.
+      - name: Publish the day's items on the social-feed branch
+        continue-on-error: true
+        env:
+          PUSH_URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: |
+          python3 .github/scripts/social_extra.py export --out "$RUNNER_TEMP/feed.json"
+          W="$RUNNER_TEMP/social-feed"
+          for i in 1 2 3; do
+            rm -rf "$W"; git worktree prune
+            if git fetch -q --depth 1 origin social-feed 2>/dev/null; then
+              git worktree add -q --detach "$W" FETCH_HEAD
+            else
+              git worktree add -q --detach "$W" && git -C "$W" checkout -q --orphan social-feed && git -C "$W" rm -rqf --ignore-unmatch .
+            fi
+            cp "$RUNNER_TEMP/feed.json" "$W/feed.json"
+            git -C "$W" add feed.json
+            if git -C "$W" diff --cached --quiet; then echo "feed unchanged"; exit 0; fi
+            git -C "$W" -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "social feed $(date -u +%F) [skip ci]"
+            if git -C "$W" push -q "$PUSH_URL" HEAD:refs/heads/social-feed; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not publish feed.json"; exit 1
       - name: Record the post links on the promotion page
         if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
         continue-on-error: true

@@ -139,6 +139,38 @@ class PlanTest(unittest.TestCase):
         rec.assert_called_once_with("dailymotion", "a/en", "https://www.dailymotion.com/video/x9", media_id="9")
 
 
+class ServedElsewhereTest(unittest.TestCase):
+    def test_bluesky_is_left_to_threads_autopilot_unless_forced(self):
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertFalse(S.configured("bluesky"))
+            S.run(("bluesky",), DAY, 1, data=DATA)
+        h.assert_not_called()
+        rec.assert_not_called()
+        self.assertIn("served by threads-autopilot", out.getvalue())
+        with mock.patch.dict(os.environ, dict(ENV_ALL, FORCE_GUIDE_BLUESKY="1"), clear=True):
+            self.assertTrue(S.configured("bluesky"))
+        self.assertNotIn("mastodon", S.CHANNELS)
+
+    def test_export_lists_the_days_items_per_consumer_channel(self):
+        with mock.patch.object(S, "exists", return_value=True):
+            feed = S.export(dt.date(2026, 11, 1), data={"clips": DATA["clips"], "schedule": [
+                dict(e, date="2026-11-01") if e["date"] == "2026-10-15" else e for e in DATA["schedule"]]})
+        self.assertEqual(feed["schema"], S.FEED_SCHEMA)
+        self.assertEqual(set(feed["items"]), {"bluesky", "mastodon", "youtube"})
+        bs = feed["items"]["bluesky"]
+        clips = [i["key"] for i in bs if i["kind"] == "clip"]
+        self.assertEqual(clips, ["a/en", "a/zh-Hant", "b/en"])  # Instagram first, slot 1 then 15
+        self.assertEqual([i["slot"] for i in bs if i["kind"] == "clip"], [1, 1, 15])
+        self.assertTrue(any(i["kind"] == "card" for i in bs))
+        self.assertFalse(any(i["kind"] == "card" for i in feed["items"]["youtube"]))
+        self.assertIn("_ma", feed["items"]["mastodon"][0]["store"])
+        json.dumps(feed)  # plain data only
+        with mock.patch.object(S, "exists", return_value=False):
+            feed = S.export(dt.date(2026, 11, 1), data={"clips": {}, "schedule": []})
+        self.assertEqual(feed["items"]["bluesky"], [])
+
+
 class HelpersTest(unittest.TestCase):
     def test_oauth1_signature_matches_the_reference_example(self):
         header = S.oauth1_header(
@@ -410,8 +442,10 @@ class PageTest(unittest.TestCase):
         clips = {"clips": {"a/en": clip("a", "en")}, "schedule": []}
         now = dt.datetime(2026, 10, 15, 2, tzinfo=dt.timezone.utc)
         section = P.build_section(clips, [], {}, now)
-        self.assertIn("| Bluesky | 未設定 | — | — |", section)
-        self.assertIn("| YouTube Shorts | 未設定 |", section)
+        self.assertIn("| Facebook | 未設定 | — | — |", section)
+        self.assertIn("| Bluesky | 自動（threads-autopilot） | — | — |", section)
+        self.assertIn("| Mastodon | 自動（threads-autopilot） | — | — |", section)
+        self.assertIn("| YouTube Shorts | 自動（Mac，停損鎖） |", section)
         posts = [{"channel": "bluesky", "clip": "a/en", "link": "https://bsky.app/p/1", "posted_at": "2026-10-15T01:50:00Z"}]
         section = P.build_section(clips, posts, {}, now)
         self.assertIn("| Bluesky | 自動 | 1 | — |", section)

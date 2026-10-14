@@ -41,6 +41,12 @@ UTILITY_TYPE = {"word": "英文單字", "zhuyin": "注音", "photo": "證件照�
 MANUAL_CHANNELS = [
     ("TikTok", "手動"),
 ]
+# Platforms another repo posts from social_extra.py's feed (social-feed branch),
+# because those accounts' secrets live there; their posts are not logged here.
+# Bluesky/Mastodon follow threads-autopilot's MULTI_PLATFORMS stop-loss switch;
+# YouTube follows the Mac's YT_HOOK_SHORTS switch (video-channel stop-loss: off).
+SERVED_ELSEWHERE = {"bluesky": "自動（threads-autopilot）", "youtube": "自動（Mac，停損鎖）"}
+SERVED_ROWS = [("Mastodon", "自動（threads-autopilot）")]
 # Platforms posted by social_extra.py (social-extra.yml): "未設定" until the first post.
 EXTRA_CHANNELS = {"facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
                   "pinterest": ("Pinterest", "Pin"), "tumblr": ("Tumblr", "Tb"), "naver": ("Naver Blog", "Nv"),
@@ -94,8 +100,9 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
         lines.append(f"| {CHANNEL_NAME[channel]} | {state} | {done} | {nxt} |")
     for channel, (name, _) in EXTRA_CHANNELS.items():
         done = sum(1 for p in posts + utility if p["channel"] == channel)
-        lines.append(f"| {name} | {'自動' if done else '未設定'} | {done or '—'} | — |")
-    for name, state in MANUAL_CHANNELS:
+        state = "自動" if done else SERVED_ELSEWHERE.get(channel, "未設定")
+        lines.append(f"| {name} | {state} | {done or '—'} | — |")
+    for name, state in SERVED_ROWS + MANUAL_CHANNELS:
         lines.append(f"| {name} | {state} | — | — |")
     lines += ["", "| App | 影片 | 已發 |", "|---|---|---|"]
     for app in sorted(apps, key=lambda a: names.get(a, a)):

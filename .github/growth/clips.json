@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:06:38Z",
+  "updated_at": "2026-10-14T12:17:23Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -197,6 +197,62 @@
         "#iPhone",
         "#iOS"
       ]
+    },
+    "lumimission/en": {
+      "app": "lumimission",
+      "locale": "en",
+      "url": "https://files.catbox.moe/9fiyo5.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=h7_lumimission_en&mt=8",
+      "hook": "Brushing teeth: a daily battle?",
+      "name": "Lumi Mission Planet: Routines",
+      "search": "Lumi Mission Planet",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "lumimission/zh-Hant": {
+      "app": "lumimission",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/7vtoaz.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=h7_lumimission_zh-Hant&mt=8",
+      "hook": "叫孩子刷牙 天天像打仗？",
+      "name": "Lumi 任務星球：生活習慣養成",
+      "search": "Lumi 任務星球",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "snapportlite/en": {
+      "app": "snapportlite",
+      "locale": "en",
+      "url": "https://files.catbox.moe/9t7r8b.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=h7_snapportlite_en&mt=8",
+      "hook": "Passport photo? Make it at home",
+      "name": "Snapport Lite: Take ID Photos",
+      "search": "Snapport Lite",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "snapportlite/zh-Hant": {
+      "app": "snapportlite",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/l5c8le.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=h7_snapportlite_zh-Hant&mt=8",
+      "hook": "要拍證件照？ 在家自己拍",
+      "name": "Snapport Lite：在家拍證件照",
+      "search": "Snapport Lite",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
     }
   },
   "schedule": [
@@ -243,10 +299,34 @@
       "clip": "unblurry/en"
     },
     {
+      "date": "2026-10-21",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "snapportlite/zh-Hant"
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumimission/en"
+    },
+    {
       "date": "2026-10-23",
       "slot": 1,
       "channel": "telegram",
       "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "snapportlite/en"
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimission/zh-Hant"
     }
   ]
 }

@@ -106,7 +106,7 @@ class ClipPostsTest(unittest.TestCase):
 
         with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
                 mock.patch.object(C, "_post", side_effect=fake_post), \
-                mock.patch.object(C, "_get", side_effect=[{"status": "FINISHED"}, {"permalink": "https://www.threads.net/@x/post/1"}]), \
+                mock.patch.object(C, "_get", side_effect=[{"id": "u"}, {"status": "FINISHED"}, {"permalink": "https://www.threads.net/@x/post/1"}]), \
                 mock.patch.object(C, "play_store_url", return_value=None), \
                 mock.patch.object(C.time, "sleep"):
             out = C.post_threads(clip("a", "en"))

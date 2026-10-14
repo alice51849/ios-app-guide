@@ -212,6 +212,14 @@ def main():
     if not tok or not uid:
         print("missing THREADS_TOKEN / THREADS_USER_ID", file=sys.stderr)
         return 1
+    # Post as the token's own account: the THREADS_USER_ID secret pointed at an
+    # old account (Threads answered "object does not exist", code 100/33).
+    try:
+        import urllib.request as _u
+        with _u.urlopen(f"https://graph.threads.net/v1.0/me?fields=id&access_token={tok}", timeout=30) as r:
+            uid = json.loads(r.read()).get("id") or uid
+    except Exception as error:  # keep the secret as a fallback
+        print(f"Threads: could not resolve the token's account ({error.__class__.__name__})", file=sys.stderr)
     post = queued_today()
     if post:
         try:

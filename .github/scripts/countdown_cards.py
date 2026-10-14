@@ -219,6 +219,7 @@ def post_threads(url, meta, e):
     if queued_today():
         return print("countdown: a queued Threads post has today's slot; Threads skipped")
     api = "https://graph.threads.net/v1.0"
+    user = _get(f"{api}/me?fields=id&access_token={token}").get("id") or user  # secret may be stale
     c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": meta["caption"], "access_token": token})["id"]
     time.sleep(30)
     media = _post(f"{api}/{user}/threads_publish", {"creation_id": c, "access_token": token})["id"]

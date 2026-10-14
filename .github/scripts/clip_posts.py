@@ -210,6 +210,8 @@ def post_threads(clip, wait=5, tries=60):
     if not token or not user:
         print("clip: Threads secrets missing, skipped")
         return None
+    # The token's own account id (the THREADS_USER_ID secret can point at an old account).
+    user = _get(f"{THREADS}/me?fields=id&access_token={token}").get("id") or user
     t = text_for(clip["locale"])
     text = caption(clip, "threads")
     container = _post(f"{THREADS}/{user}/threads", {

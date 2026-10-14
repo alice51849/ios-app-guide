@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T13:14:03+0800",
- "count": 39,
- "content_sha256": "5113ae22e4f292d6eca9f995b00b29780bdcb229a3b651be77afd96878e116cd",
+ "source_generated": "2026-10-14T15:15:47+0800",
+ "count": 42,
+ "content_sha256": "aee44c17513df92f13e7699ef8cd0d7fdc8f26070112755ba1cbaa9804e9154f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -44,6 +44,25 @@
     "zh-TW": {
      "title": "Aim990：英文弱點教練",
      "short_description": "多益聽讀診斷與30天計畫"
+    }
+   }
+  },
+  "caldaily": {
+   "ios_app_id": "6794178671",
+   "ios_name": "CalDaily",
+   "android_folder": "40_CalDaily",
+   "package": "com.alice51849.CalDaily",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "paid": false,
+   "first_seen": "2026-10-14T15:15:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "CalDaily: Calculator & Themes"
+    },
+    "zh-TW": {
+     "title": "CalDaily 計算機與主題"
     }
    }
   },
@@ -383,6 +402,27 @@
     }
    }
   },
+  "lumiweather": {
+   "ios_app_id": "6779552704",
+   "ios_name": "Lumi Weather",
+   "android_folder": "09_LumiWeather",
+   "package": "com.alice51849.LumiWeather",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather",
+   "paid": false,
+   "first_seen": "2026-10-14T15:15:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Weather: What to Wear",
+     "short_description": "Outing Score, Umbrella & UV"
+    },
+    "zh-TW": {
+     "title": "Lumi天氣星球 外出指數與穿搭建議",
+     "short_description": "逐時與一週預報、帶傘和紫外線"
+    }
+   }
+  },
   "maskmyfile": {
    "ios_app_id": "6792850916",
    "ios_name": "Mask My File",
@@ -590,6 +630,27 @@
     "zh-TW": {
      "title": "ScanTo Pro: 離線PDF掃描",
      "short_description": "把文件掃描成可搜尋的 PDF，完全離線、保護隱私"
+    }
+   }
+  },
+  "sereno": {
+   "ios_app_id": "6788236641",
+   "ios_name": "Sereno",
+   "android_folder": "23_Sereno",
+   "package": "com.alice51849.Sereno",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno",
+   "paid": false,
+   "first_seen": "2026-10-14T15:15:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Sereno: Sleep Sounds",
+     "short_description": "White noise for sleep & focus"
+    },
+    "zh-TW": {
+     "title": "Sereno: 極致睡眠音效",
+     "short_description": "白噪音助眠與專注神器"
     }
    }
   },

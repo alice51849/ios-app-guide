@@ -3,14 +3,13 @@ name: Threads posts
 # Replaces threads-daily.yml (disabled after the old account was limited for
 # posting 30-48 linked posts a day). Now at most 3 posts a day, links only in
 # the first reply:
-# - 2 picture posts (Taiwan 11:00, Europe 14:00 UTC)
-# - 1 hook-clip video from .github/growth/clips.json (Asia 01:40 / Americas
-#   15:40 UTC, alternating days as scheduled)
+# - 1 picture post (Taiwan 11:00)
+# - 2 hook-clip videos from .github/growth/clips.json (Asia 01:40 and
+#   Americas 15:40 UTC)
 on:
   schedule:
     - cron: "40 1 * * *"   # hook clip, Asia slot
     - cron: "0 3 * * *"    # picture post, Taiwan 11:00
-    - cron: "0 14 * * *"   # picture post, Europe
     - cron: "40 15 * * *"  # hook clip, Americas slot
   workflow_dispatch:
     inputs:
@@ -60,9 +59,9 @@ jobs:
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow threads-post.yml
-          --slots 1,3,14,15
+          --slots 1,3,15
       - name: Post picture post to Threads (link in the first reply)
-        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 3 * * *' || github.event.schedule == '0 14 * * *')
+        if: steps.slot.outputs.should_post == 'true' && github.event.schedule == '0 3 * * *'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}

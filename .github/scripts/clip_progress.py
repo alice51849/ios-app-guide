@@ -82,13 +82,13 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
         if channel == "instagram" and not entries:
             state = "等 IG_ACCESS_TOKEN 設好才開始"
         elif channel == "instagram":
-            state = "自動，前兩週每天 1 支，之後每天 2 支"
+            state = "自動，每天 2 支（亞洲 09:20、美洲 23:20）"
         elif channel == "threads" and not entries:
             state = "準備中（確認帳號後開始）"
         elif channel == "threads":
-            state = "自動，每天 1 支影片（連結放留言）＋ 2 則圖文"
+            state = "自動，每天 2 支影片＋1 則圖文（連結放留言）"
         else:
-            state = "自動，每天 1 支（影片＋App Store 下載按鈕）"
+            state = "自動，每天 2 支（影片＋下載按鈕）"
         nxt = "—"
         if upcoming:
             e = upcoming[0]

@@ -24,7 +24,6 @@ name: Social extra daily
 #   Plurk          PLURK_APP_KEY, PLURK_APP_SECRET, PLURK_TOKEN,
 #                  PLURK_TOKEN_SECRET                  (zh-Hant only, ≤2/day)
 #   Dailymotion    DM_API_KEY, DM_API_SECRET, DM_USERNAME, DM_PASSWORD (1/day)
-#   X              X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET
 #                  (paid per post: 1/day)
 # Manual run: mode=whoami checks every configured account without posting;
 # dry_run=true prints what would go out.
@@ -115,10 +114,6 @@ jobs:
           DM_API_SECRET: ${{ secrets.DM_API_SECRET }}
           DM_USERNAME: ${{ secrets.DM_USERNAME }}
           DM_PASSWORD: ${{ secrets.DM_PASSWORD }}
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           SCHEDULE: ${{ github.event.schedule }}
           CHANNEL: ${{ inputs.channel }}
           MODE: ${{ inputs.mode }}

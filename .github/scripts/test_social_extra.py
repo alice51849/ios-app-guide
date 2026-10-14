@@ -76,14 +76,14 @@ ENV_ALL.update({"FB_PAGE_ID": "123", "TUMBLR_BLOG": "lumiapps", "NAVER_ID": "lum
 
 class PlanTest(unittest.TestCase):
     def test_mirrors_the_instagram_entry_first_and_skips_posted_clips(self):
-        items = S.plan("x", DATA, [], DAY, 1, check=False)
+        items = S.plan("dailymotion", DATA, [], DAY, 1, check=False)
         self.assertEqual([i["key"] for i in items], ["a/en"])
         posts = [{"channel": "facebook", "clip": "a/en", "posted_at": "2026-10-14T01:00:00Z"}]
         self.assertEqual([i["key"] for i in S.plan("facebook", DATA, posts, DAY, 1, check=False)], ["a/zh-Hant"])
 
     def test_daily_cap_is_honored(self):
-        posts = [{"channel": "x", "clip": "z/en", "posted_at": "2026-10-15T01:00:00Z"}]
-        self.assertEqual(S.plan("x", DATA, posts, DAY, 15, check=False), [])
+        posts = [{"channel": "dailymotion", "clip": "z/en", "posted_at": "2026-10-15T01:00:00Z"}]
+        self.assertEqual(S.plan("dailymotion", DATA, posts, DAY, 15, check=False), [])
 
     def test_locale_only_platforms_take_their_locale_from_the_backlog(self):
         self.assertEqual([i["key"] for i in S.todays_clips(DATA, [], "naver", DAY, 1)], ["a/ko"])
@@ -116,27 +116,27 @@ class PlanTest(unittest.TestCase):
     def test_dry_run_posts_nothing(self):
         with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
                 mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
-            S.run(("x", "bluesky"), DAY, 1, dry_run=True, data=DATA)
+            S.run(("dailymotion", "bluesky"), DAY, 1, dry_run=True, data=DATA)
         h.assert_not_called()
         rec.assert_not_called()
         self.assertIn("would post clip a/en", out.getvalue())
 
     def test_a_failure_is_logged_and_the_run_still_succeeds(self):
         with mock.patch.dict(os.environ, ENV_ALL, clear=True), \
-                mock.patch.object(S, "post_x", side_effect=RuntimeError("boom")), \
-                mock.patch.dict(S.POSTERS, {"x": S.post_x}), \
+                mock.patch.object(S, "post_dailymotion", side_effect=RuntimeError("boom")), \
+                mock.patch.dict(S.POSTERS, {"dailymotion": S.post_dailymotion}), \
                 mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
-            self.assertEqual(S.run(("x",), DAY, 1, data=DATA), 0)
+            self.assertEqual(S.run(("dailymotion",), DAY, 1, data=DATA), 0)
         rec.assert_not_called()
-        self.assertIn("::warning::x", out.getvalue())
+        self.assertIn("::warning::dailymotion", out.getvalue())
 
     def test_successful_post_is_recorded_once_per_platform(self):
-        posted = mock.Mock(return_value={"id": "9", "link": "https://x.com/i/web/status/9"})
-        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.dict(S.POSTERS, {"x": posted}), \
+        posted = mock.Mock(return_value={"id": "9", "link": "https://www.dailymotion.com/video/x9"})
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.dict(S.POSTERS, {"dailymotion": posted}), \
                 mock.patch.object(S, "load_posts", return_value=[]), \
                 mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO):
-            S.run(("x",), DAY, 1, data=DATA)
-        rec.assert_called_once_with("x", "a/en", "https://x.com/i/web/status/9", media_id="9")
+            S.run(("dailymotion",), DAY, 1, data=DATA)
+        rec.assert_called_once_with("dailymotion", "a/en", "https://www.dailymotion.com/video/x9", media_id="9")
 
 
 class HelpersTest(unittest.TestCase):
@@ -159,12 +159,6 @@ class HelpersTest(unittest.TestCase):
         out = S.to_jpeg(buf.getvalue(), limit=300_000)
         self.assertTrue(out.startswith(b"\xff\xd8\xff"))
         self.assertLessEqual(len(out), 300_000)
-
-    def test_x_weighted_length(self):
-        self.assertEqual(S.x_weight("ab https://example.com/very/long"), 3 + 23)
-        self.assertEqual(S.x_weight("寫到"), 4)
-        text = S.x_text(dict(item(), hook="寫" * 200))
-        self.assertLessEqual(S.x_weight(text), 280)
 
 
 class CardsTest(unittest.TestCase):
@@ -409,24 +403,6 @@ class DailymotionTest(unittest.TestCase):
         self.assertIn("files.catbox.moe", __import__("urllib.parse").parse.unquote(sent))
 
 
-class XTest(unittest.TestCase):
-    def test_chunked_upload_then_tweet(self):
-        fake = Fake([("POST", "/media/upload/initialize", {"data": {"id": "m7"}}),
-                     ("POST", "/media/upload/m7/append", {}),
-                     ("POST", "/media/upload/m7/finalize", {"data": {"processing_info": {"state": "pending"}}}),
-                     ("GET", "command=STATUS", {"data": {"processing_info": {"state": "succeeded"}}}),
-                     ("POST", "/2/tweets", {"data": {"id": "t1"}})])
-        with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["x"]}, clear=True), \
-                mock.patch.object(S, "http", fake), mock.patch.object(S, "X_CHUNK", 4), \
-                mock.patch.object(S, "fetch_bytes", return_value=b"0123456789"):
-            res = S.post_x(item())
-        self.assertEqual(res["link"], "https://x.com/i/web/status/t1")
-        self.assertEqual(len(fake.find("/append")), 3)
-        self.assertEqual(json.loads(fake.find("initialize")[0]["data"])["total_bytes"], 10)
-        tweet = json.loads(fake.find("/2/tweets")[0]["data"])
-        self.assertEqual(tweet["media"]["media_ids"], ["m7"])
-        self.assertIn("apps.apple.com", tweet["text"])
-        self.assertTrue(all(c["headers"]["Authorization"].startswith("OAuth ") for c in fake.calls))
 
 
 class PageTest(unittest.TestCase):

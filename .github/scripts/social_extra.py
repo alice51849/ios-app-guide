@@ -52,7 +52,8 @@ REPO = os.environ.get("GITHUB_REPOSITORY") or "alice51849/ios-app-guide"
 PAUSE = 5  # seconds between polls (tests set 0)
 STAGGER = 20  # seconds between two platforms that posted
 
-CHANNELS = ("facebook", "bluesky", "youtube", "pinterest", "tumblr", "naver", "plurk", "dailymotion", "x")
+CHANNELS = ("facebook", "bluesky", "youtube", "pinterest", "tumblr", "naver", "plurk", "dailymotion")
+# X is pay-per-post: the owner never uses paid channels, so it is not a channel here.
 # cap = posts a day; clips/cards = what the platform takes; locales = allowed caption locales.
 PLAN = {
     "facebook": {"cap": 2, "clips": True, "cards": False},
@@ -63,7 +64,6 @@ PLAN = {
     "naver": {"cap": 1, "clips": True, "cards": True, "locales": ("ko",)},
     "plurk": {"cap": 2, "clips": True, "cards": True, "locales": ("zh-Hant",)},
     "dailymotion": {"cap": 1, "clips": True, "cards": False},
-    "x": {"cap": 1, "clips": True, "cards": False},  # paid per post: keep 1
 }
 SECRETS = {
     "facebook": ("FB_PAGE_ID", "FB_PAGE_TOKEN"),
@@ -74,11 +74,10 @@ SECRETS = {
     "naver": ("NAVER_ID", "NAVER_BLOG_API_PASSWORD"),
     "plurk": ("PLURK_APP_KEY", "PLURK_APP_SECRET", "PLURK_TOKEN", "PLURK_TOKEN_SECRET"),
     "dailymotion": ("DM_API_KEY", "DM_API_SECRET", "DM_USERNAME", "DM_PASSWORD"),
-    "x": ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET"),
 }
 # Campaign suffix per platform (App Store ct token / Play referrer).
 CT = {"facebook": "fb", "bluesky": "bs", "youtube": "yt", "pinterest": "pin", "tumblr": "tb",
-      "naver": "nv", "plurk": "pk", "dailymotion": "dm", "x": "x"}
+      "naver": "nv", "plurk": "pk", "dailymotion": "dm"}
 
 
 def env(name):
@@ -735,77 +734,15 @@ def whoami_dailymotion():
 # ---------------------------------------------------------------- X
 
 XAPI = "https://api.x.com/2"
-X_CHUNK = 4 * 1024 * 1024
-
-
-def x_auth(method, url, params=None):
-    return oauth1_header(method, url, env("X_API_KEY"), env("X_API_SECRET"), env("X_ACCESS_TOKEN"),
-                         env("X_ACCESS_SECRET"), params)
-
-
-def x_weight(text):
-    """X's weighted length: URLs count 23, CJK and most non-Latin characters 2."""
-    total, rest = 0, text
-    for url in re.findall(r"https?://\S+", text):
-        total += 23
-        rest = rest.replace(url, "", 1)
-    for ch in rest:
-        o = ord(ch)
-        total += 1 if o <= 0x10FF or 0x2000 <= o <= 0x200D or 0x2010 <= o <= 0x201F or 0x2032 <= o <= 0x2037 else 2
-    return total
-
-
-def x_text(item):
-    tail = f"\n\n{item['store']}" + (f"\nGoogle Play {item['play']}" if item.get("play") else "")
-    head = f"{item['hook']}\n{item['name']}"
-    while x_weight(head + tail) > 280 and head:
-        head = head[:-2] + "…"
-    return head + tail
-
-
-def post_x(item, tries=60):
-    data = fetch_bytes(item["video"])
-    url = f"{XAPI}/media/upload/initialize"
-    init = http("POST", url, jbody({"media_type": "video/mp4", "total_bytes": len(data), "media_category": "tweet_video"}),
-                {"Authorization": x_auth("POST", url), "Content-Type": "application/json"})
-    mid = init["data"]["id"]
-    for i in range(0, max(len(data), 1), X_CHUNK):
-        url = f"{XAPI}/media/upload/{mid}/append"
-        body, ctype = multipart([("segment_index", str(i // X_CHUNK)),
-                                 ("media", data[i:i + X_CHUNK], "clip.mp4", "application/octet-stream")])
-        http("POST", url, body, {"Authorization": x_auth("POST", url), "Content-Type": ctype})
-    url = f"{XAPI}/media/upload/{mid}/finalize"
-    info = (http("POST", url, b"", {"Authorization": x_auth("POST", url)}).get("data") or {}).get("processing_info")
-    for _ in range(tries):
-        if not info or info.get("state") == "succeeded":
-            break
-        if info.get("state") == "failed":
-            raise RuntimeError(f"X could not process the video: {info.get('error')}")
-        time.sleep(min(info.get("check_after_secs", PAUSE), 30) if PAUSE else 0)
-        url = f"{XAPI}/media/upload?command=STATUS&media_id={mid}"
-        info = (http("GET", url, headers={"Authorization": x_auth("GET", url)}).get("data") or {}).get("processing_info")
-    else:
-        raise RuntimeError("X video processing timed out")
-    url = f"{XAPI}/tweets"
-    r = http("POST", url, jbody({"text": x_text(item), "media": {"media_ids": [str(mid)]}}),
-             {"Authorization": x_auth("POST", url), "Content-Type": "application/json"})
-    tid = r["data"]["id"]
-    return {"id": tid, "link": f"https://x.com/i/web/status/{tid}"}
-
-
-def whoami_x():
-    url = f"{XAPI}/users/me"
-    r = http("GET", url, headers={"Authorization": x_auth("GET", url)}).get("data", {})
-    print(f"x: @{r.get('username')} ({r.get('id')})")
 
 
 # ---------------------------------------------------------------- runner
 
 POSTERS = {"facebook": post_facebook, "bluesky": post_bluesky, "youtube": post_youtube, "pinterest": post_pinterest,
-           "tumblr": post_tumblr, "naver": post_naver, "plurk": post_plurk, "dailymotion": post_dailymotion, "x": post_x}
+           "tumblr": post_tumblr, "naver": post_naver, "plurk": post_plurk, "dailymotion": post_dailymotion}
 WHOAMI = {"facebook": whoami_facebook, "bluesky": whoami_bluesky, "youtube": whoami_youtube,
           "pinterest": whoami_pinterest, "tumblr": whoami_tumblr, "naver": whoami_naver, "plurk": whoami_plurk,
-          "dailymotion": whoami_dailymotion, "x": whoami_x}
+          "dailymotion": whoami_dailymotion}
 
 
 def whoami(channels):

@@ -44,7 +44,7 @@ MANUAL_CHANNELS = [
 # Platforms posted by social_extra.py (social-extra.yml): "未設定" until the first post.
 EXTRA_CHANNELS = {"facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
                   "pinterest": ("Pinterest", "Pin"), "tumblr": ("Tumblr", "Tb"), "naver": ("Naver Blog", "Nv"),
-                  "plurk": ("Plurk", "Pk"), "dailymotion": ("Dailymotion", "DM"), "x": ("X", "X")}
+                  "plurk": ("Plurk", "Pk"), "dailymotion": ("Dailymotion", "DM")}
 
 
 def load_json(path, default):

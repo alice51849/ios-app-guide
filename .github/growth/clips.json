@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:26:20Z",
+  "updated_at": "2026-10-14T14:36:37Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -1022,6 +1022,62 @@
         "#旅行",
         "#App推薦",
         "#iPhone"
+      ]
+    },
+    "tripplanet/en": {
+      "app": "tripplanet",
+      "locale": "en",
+      "url": "https://files.catbox.moe/qqn2yt.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=h7_tripplanet_en&mt=8",
+      "hook": "“Are we there yet?” Make it a quest",
+      "name": "Trip Planet: Kids Quest",
+      "search": "Trip Planet",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "tripplanet/zh-Hant": {
+      "app": "tripplanet",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/hneh8p.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=h7_tripplanet_zh-Hant&mt=8",
+      "hook": "「到了沒？」 讓旅途變冒險",
+      "name": "Trip Planet 親子旅行遊戲",
+      "search": "Trip Planet 親子旅行遊戲",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "wifiaidlite/en": {
+      "app": "wifiaidlite",
+      "locale": "en",
+      "url": "https://files.catbox.moe/hj5ucn.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=h7_wifiaidlite_en&mt=8",
+      "hook": "Wi-Fi slow again?",
+      "name": "WiFi Aid Lite: Network Check",
+      "search": "WiFi Aid Lite",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "wifiaidlite/zh-Hant": {
+      "app": "wifiaidlite",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/r89l75.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=h7_wifiaidlite_zh-Hant&mt=8",
+      "hook": "網路又卡了？",
+      "name": "WiFi Aid Lite",
+      "search": "WiFi Aid Lite",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
       ]
     }
   },
@@ -2223,14 +2279,50 @@
     {
       "date": "2026-11-16",
       "slot": 15,
+      "channel": "telegram",
+      "clip": "tripplanet/en"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 15,
       "channel": "threads",
       "clip": "sononote/en"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "tripplanet/zh-Hant"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaidlite/zh-Hant"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "tripplanet/zh-Hant"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "wifiaidlite/en"
     },
     {
       "date": "2026-11-17",
       "slot": 15,
       "channel": "telegram",
       "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "wifiaidlite/en"
     },
     {
       "date": "2026-11-18",
@@ -2243,6 +2335,42 @@
       "slot": 15,
       "channel": "threads",
       "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "tripplanet/zh-Hant"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wifiaidlite/zh-Hant"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wifiaidlite/zh-Hant"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "tripplanet/en"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "wifiaidlite/en"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "tripplanet/en"
     }
   ]
 }

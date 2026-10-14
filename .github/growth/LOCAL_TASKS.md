@@ -66,6 +66,24 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 12. 回報：商標檢索結果、ASC App ID、各 gate 與收據狀態、QA 數字、送審狀態。上架後把 App Store ID 寫回 spec，雲端才能接上鉤子片、Telegram、Threads、GEO 頁（spec 第 13、14 節）。
 ```
 
+## 社群授權：Pinterest、TikTok（2026-10-14 新增）
+
+Caitlyn 會在本機對話貼「請照 LOCAL_TASKS 的社群授權段執行」，後面附上 App ID、secret 或 Client Key、Secret。這些值只存在這台 Mac，不要 commit，也不要貼到任何地方。
+
+**Pinterest**
+1. `mkdir -p ~/.pinterest && chmod 700 ~/.pinterest`
+2. 寫入 `~/.pinterest/client_secret.json`：`{"app_id":"<她給的>","app_secret":"<她給的>","redirect_uri":"http://localhost:8085/"}`，然後 `chmod 600`。
+3. `cd ~/00_GrowthEngine/social && venv/bin/python pinterest_upload.py --auth-only`。這會開瀏覽器，請她按「允許／Give access」。看到「✅ 授權成功」才算完成。
+4. 驗證：`venv/bin/python creds_probe.py`（或 social-creds-probe.yml）。reports/social-creds-status.json 的 pinterest.valid 要是 true。
+5. 回報雲端：pinterest valid=true 和看板名稱。雲端會把每日發文接上（Caitlyn 10-14 同意開通）。
+
+**TikTok**
+1. `mkdir -p ~/.tiktok && chmod 700 ~/.tiktok`
+2. 寫入 `~/.tiktok/credentials.json`：`{"client_key":"<她給的>","client_secret":"<她給的>","redirect_uri":"http://localhost:8090/"}`，然後 `chmod 600`。
+3. `venv/bin/python tiktok_oauth.py auth-url`，用 `open "<印出的網址>"` 開瀏覽器，請她按「Authorize」。
+4. 瀏覽器會跳到 localhost:8090 並顯示連不上，這是正常的。請她把網址列整串複製給你，再跑 `venv/bin/python tiktok_oauth.py token "<整串網址>"`。
+5. 跑 creds_probe 驗證 tiktok.valid=true，並回報雲端。審核通過前只能發成「僅自己可見」，所以先不排程；等 Content Posting API 審核通過再開。
+
 ## 背景
 
 - Guide repo：`~/00_GrowthEngine/geo/pages`（= GitHub alice51849/ios-app-guide）。GrowthEngine：`~/00_GrowthEngine`。

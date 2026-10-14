@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T15:38:10Z",
+  "updated_at": "2026-10-14T15:48:34Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -327,7 +327,7 @@
     "snapportlite/en": {
       "app": "snapportlite",
       "locale": "en",
-      "url": "https://files.catbox.moe/9t7r8b.mp4",
+      "url": "https://files.catbox.moe/9yb8ie.mp4",
       "store_url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=h7_snapportlite_en&mt=8",
       "hook": "Passport photo? Make it at home",
       "name": "Snapport Lite: Take ID Photos",
@@ -341,7 +341,7 @@
     "snapportlite/zh-Hant": {
       "app": "snapportlite",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/l5c8le.mp4",
+      "url": "https://files.catbox.moe/44n1z0.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=h7_snapportlite_zh-Hant&mt=8",
       "hook": "要拍證件照？ 在家自己拍",
       "name": "Snapport Lite：在家拍證件照",
@@ -349,6 +349,34 @@
       "tags": [
         "#App推薦",
         "#iPhone",
+        "#iOS"
+      ]
+    },
+    "snapportlite/ja": {
+      "app": "snapportlite",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/a2n6lj.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=h7_snapportlite_ja&mt=8",
+      "hook": "証明写真、 おうちで撮ろう",
+      "name": "Snapport Lite：自宅で証明写真",
+      "search": "Snapport Lite",
+      "tags": [
+        "#iPhoneアプリ",
+        "#アプリ紹介",
+        "#iOS"
+      ]
+    },
+    "snapportlite/ko": {
+      "app": "snapportlite",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/ydar8u.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=h7_snapportlite_ko&mt=8",
+      "hook": "증명사진, 집에서 찍자",
+      "name": "Snapport Lite：집에서 증명사진",
+      "search": "Snapport Lite",
+      "tags": [
+        "#앱추천",
+        "#아이폰어플",
         "#iOS"
       ]
     },

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T15:15:47+0800",
+ "source_generated": "2026-10-14T18:19:56+0800",
  "count": 42,
- "content_sha256": "aee44c17513df92f13e7699ef8cd0d7fdc8f26070112755ba1cbaa9804e9154f",
+ "content_sha256": "dfc8b4e8ea4db3d9e54de44babdfe16346df21b4938fc3d4573404b4f53dac54",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -39,11 +39,11 @@
    "copy": {
     "en-US": {
      "title": "Aim990: Fix English Weak Spots",
-     "short_description": "TOEIC L&R diagnosis in 8 min"
+     "short_description": "TOEIC test prep: an 8-minute diagnosis, a 30-day plan and vocabulary practice"
     },
     "zh-TW": {
-     "title": "Aim990：英文弱點教練",
-     "short_description": "多益聽讀診斷與30天計畫"
+     "title": "Aim990：多益英文弱點教練",
+     "short_description": "8 分鐘多益聽讀診斷，找出 3 個最弱技能，再用 30 天處方計畫、多益單字與模擬練習逐一修復"
     }
    }
   },
@@ -204,12 +204,12 @@
    "match": "bundle_id_casefold",
    "copy": {
     "en-US": {
-     "title": "HoursTag Lite",
-     "short_description": "Turn prices into hours of work and tag each buy as a need, want or impulse"
+     "title": "HoursTag Lite: Impulse Buying",
+     "short_description": "Turn prices into hours of work to stop impulse buying and stay on budget"
     },
     "zh-TW": {
      "title": "HoursTag Lite",
-     "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，讓每筆花費更有意識"
+     "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，花得清楚，存錢也更有方向"
     }
    }
   },
@@ -708,12 +708,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Snapport Lite",
-     "short_description": "Passport & ID Photo Maker"
+     "title": "Snapport Lite: Passport Photo",
+     "short_description": "Passport, visa and ID photo maker: 2x2 sizing, white background, print sheets"
     },
     "zh-TW": {
-     "title": "Snapport Lite",
-     "short_description": "護照證件大頭照製作"
+     "title": "Snapport Lite：證件照與大頭照",
+     "short_description": "證件照、護照照片與大頭照製作：常用尺寸範本、去背換白底、臉部對齊指引，可拼版列印"
     }
    }
   },
@@ -813,12 +813,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "WiFi Aid",
-     "short_description": "Diagnose Wi-Fi problems with independent DNS and TCP checks"
+     "title": "WiFi Aid: Network Diagnostics",
+     "short_description": "WiFi checker and DNS test: find the most likely cause of a bad connection"
     },
     "zh-TW": {
-     "title": "WiFi Aid",
-     "short_description": "用獨立的 DNS、TCP 檢測，診斷 Wi-Fi 問題"
+     "title": "WiFi Aid：網路診斷",
+     "short_description": "網路很卡？一鍵網路診斷，分開檢測 DNS、TCP、TLS 與延遲，找出最可能的故障原因"
     }
    }
   },
@@ -877,11 +877,11 @@
    "copy": {
     "en-US": {
      "title": "Wordmate Lite: Vocabulary",
-     "short_description": "Build your vocabulary five words at a time in one-minute sessions, offline"
+     "short_description": "Learn languages five words a day: vocabulary builder for 44 languages, offline"
     },
     "zh-TW": {
-     "title": "Wordmate Lite 每天五個單字",
-     "short_description": "一次五個單字、一分鐘練完，可以聽發音，離線也能背，輕鬆養成每天背單字的習慣"
+     "title": "Wordmate Lite 背單字：每天五個單字",
+     "short_description": "英文單字、日文單字都能背：一次五個、一分鐘練完，可聽發音、離線也能背，養成每天背單字的習慣"
     }
    }
   }

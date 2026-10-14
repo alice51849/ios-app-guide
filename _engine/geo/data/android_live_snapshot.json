@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T19:22:09+0800",
- "count": 42,
- "content_sha256": "15780a8f6e17da168bc3b0b47d2e5c2702ac9093723a83bc005b23be275ccebc",
+ "source_generated": "2026-10-14T20:53:34+0800",
+ "count": 43,
+ "content_sha256": "97dd7bc5ac7cadbaa7ded60216b37465f8284e019cc327aab16778b1f88dbbc7",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -44,6 +44,27 @@
     "zh-TW": {
      "title": "Aim990：多益英文弱點教練",
      "short_description": "8 分鐘多益聽讀診斷，找出 3 個最弱技能，再用 30 天處方計畫、多益單字與模擬練習逐一修復"
+    }
+   }
+  },
+  "battai": {
+   "ios_app_id": "6802423998",
+   "ios_name": "BattAI",
+   "android_folder": "43_BattAI",
+   "package": "com.alice51849.BattAI",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "paid": false,
+   "first_seen": "2026-10-14T20:53:34+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "BattAI: Battery health score",
+     "short_description": "Estimated time to 80%"
+    },
+    "zh-TW": {
+     "title": "BattAI: 電池健康分數",
+     "short_description": "預估到 80% 的時間"
     }
    }
   },

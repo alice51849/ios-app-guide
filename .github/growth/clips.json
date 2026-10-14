@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T19:17:54Z",
+  "updated_at": "2026-10-14T19:28:26Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -4603,6 +4603,178 @@
         }
       ]
     },
+    "moneytag/ja": {
+      "app": "moneytag",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/u8es4r.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=h7_moneytag_ja&mt=8",
+      "hook": "その副業、 ほんとに黒字？",
+      "name": "MoneyTag: 収入と支出",
+      "search": "MoneyTag",
+      "tags": [
+        "#収入と支出",
+        "#損益計算書",
+        "#案件別原価",
+        "#ジョブコスト",
+        "#利益率",
+        "#MoneyTag"
+      ],
+      "keywords": [
+        "損益計算書",
+        "案件別原価",
+        "ジョブコスト",
+        "利益率",
+        "顧客別採算",
+        "原価配賦"
+      ],
+      "keyline": "プロジェクト · タグ · レポート",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "その副業、ほんとに黒字？",
+          "benefit": "タグひとつで 全プロジェクトを集計"
+        },
+        {
+          "id": "b",
+          "lead": "タグひとつで 全プロジェクトを集計",
+          "benefit": "毎月の収支が ひと目でわかる"
+        },
+        {
+          "id": "c",
+          "lead": "PDF・CSVで書き出し",
+          "benefit": "タグひとつで 全プロジェクトを集計"
+        }
+      ]
+    },
+    "moneytag/ko": {
+      "app": "moneytag",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/6tmyvs.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=h7_moneytag_ko&mt=8",
+      "hook": "그 부업, 진짜 남는 장사?",
+      "name": "MoneyTag: 수입과 지출",
+      "search": "MoneyTag",
+      "tags": [
+        "#수입과지출",
+        "#손익계산서",
+        "#작업별원가",
+        "#잡코스팅",
+        "#이익률",
+        "#MoneyTag"
+      ],
+      "keywords": [
+        "손익계산서",
+        "작업별 원가",
+        "잡 코스팅",
+        "이익률",
+        "고객별 수익성",
+        "원가 배분"
+      ],
+      "keyline": "프로젝트 · 태그 · 리포트",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "그 부업, 진짜 남는 장사?",
+          "benefit": "태그 하나로 모든 프로젝트 합산"
+        },
+        {
+          "id": "b",
+          "lead": "태그 하나로 모든 프로젝트 합산",
+          "benefit": "월별 손익을 한눈에"
+        },
+        {
+          "id": "c",
+          "lead": "PDF·CSV 내보내기",
+          "benefit": "태그 하나로 모든 프로젝트 합산"
+        }
+      ]
+    },
+    "moneytag/vi": {
+      "app": "moneytag",
+      "locale": "vi",
+      "url": "https://files.catbox.moe/xtiqhb.mp4",
+      "store_url": "https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=h7_moneytag_vi&mt=8",
+      "hook": "Nghề tay trái nào thực sự có lãi?",
+      "name": "MoneyTag: Thu và chi",
+      "search": "MoneyTag",
+      "tags": [
+        "#ThuVàChi",
+        "#giávốncôngviệc",
+        "#biênlợinhuận",
+        "#LãiTheoKhách",
+        "#sổfreelancer",
+        "#MoneyTag"
+      ],
+      "keywords": [
+        "giá vốn công việc",
+        "biên lợi nhuận",
+        "lãi theo khách",
+        "sổ freelancer",
+        "phân tích chéo",
+        "hộ kinh doanh nhỏ"
+      ],
+      "keyline": "Dự án · Thẻ · Báo cáo",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Nghề tay trái nào thực sự có lãi?",
+          "benefit": "Một nhãn cộng dồn qua mọi dự án"
+        },
+        {
+          "id": "b",
+          "lead": "Một nhãn cộng dồn qua mọi dự án",
+          "benefit": "Lãi lỗ từng tháng rõ ràng"
+        },
+        {
+          "id": "c",
+          "lead": "Xuất PDF, CSV",
+          "benefit": "Một nhãn cộng dồn qua mọi dự án"
+        }
+      ]
+    },
+    "moneytag/cs": {
+      "app": "moneytag",
+      "locale": "cs",
+      "url": "https://files.catbox.moe/6gmnzd.mp4",
+      "store_url": "https://apps.apple.com/cz/app/id6801956402?pt=118326163&ct=h7_moneytag_cs&mt=8",
+      "hook": "Který přivýdělek se opravdu vyplácí?",
+      "name": "MoneyTag: Příjmy a výdaje",
+      "search": "MoneyTag",
+      "tags": [
+        "#PříjmyAVýdaje",
+        "#Ziskztráta",
+        "#KalkulaceZakázky",
+        "#ZiskováMarže",
+        "#RentabilitaKlienta",
+        "#MoneyTag"
+      ],
+      "keywords": [
+        "zisk-ztráta",
+        "kalkulace zakázky",
+        "zisková marže",
+        "rentabilita klienta",
+        "rozdělení nákladů",
+        "průřezová analýza"
+      ],
+      "keyline": "Projekty · Štítky · Přehled",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Který přivýdělek se opravdu vyplácí?",
+          "benefit": "Jeden štítek sečte vše napříč projekty"
+        },
+        {
+          "id": "b",
+          "lead": "Jeden štítek sečte vše napříč projekty",
+          "benefit": "Čistý výsledek měsíc po měsíci"
+        },
+        {
+          "id": "c",
+          "lead": "Export do PDF i CSV",
+          "benefit": "Jeden štítek sečte vše napříč projekty"
+        }
+      ]
+    },
     "notesstudio100/en": {
       "app": "notesstudio100",
       "locale": "en",
@@ -4686,6 +4858,49 @@
           "id": "c",
           "lead": "用抽認卡複習",
           "benefit": "每本筆記 都有專屬風格"
+        }
+      ]
+    },
+    "notesstudio100/ja": {
+      "app": "notesstudio100",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/jqla4a.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=h7_notesstudio100_ja&mt=8",
+      "hook": "手書きノートを彩る 100のスタイル",
+      "name": "100 Notes Studio：手書きノート",
+      "search": "100 Notes Studio",
+      "tags": [
+        "#メモ帳",
+        "#手帳",
+        "#日記",
+        "#暗記",
+        "#単語帳",
+        "#100NotesStudio"
+      ],
+      "keywords": [
+        "メモ帳",
+        "手帳",
+        "日記",
+        "暗記",
+        "単語帳",
+        "筆記"
+      ],
+      "keyline": "手書きノート・PDF注釈",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "手書きノートを彩る 100のスタイル",
+          "benefit": "ノートごとに 違うデザイン"
+        },
+        {
+          "id": "b",
+          "lead": "ノートごとに 違うデザイン",
+          "benefit": "録音は そのページに保存"
+        },
+        {
+          "id": "c",
+          "lead": "暗記カードで復習",
+          "benefit": "ノートごとに 違うデザイン"
         }
       ]
     },
@@ -5681,7 +5896,7 @@
     "sereno/en": {
       "app": "sereno",
       "locale": "en",
-      "url": "https://files.catbox.moe/n0n6ha.mp4",
+      "url": "https://files.catbox.moe/y8erow.mp4",
       "store_url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=h7_sereno_en&mt=8",
       "hook": "Rain sounds that never loop",
       "name": "Sereno: Sleep Sounds",
@@ -5724,7 +5939,7 @@
     "sereno/zh-Hant": {
       "app": "sereno",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/fzbxsn.mp4",
+      "url": "https://files.catbox.moe/csjmz3.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=h7_sereno_zh-Hant&mt=8",
       "hook": "聽不出循環的 雨聲",
       "name": "Sereno: 極致睡眠音效",
@@ -6994,7 +7209,7 @@
     "wordmatelite/en": {
       "app": "wordmatelite",
       "locale": "en",
-      "url": "https://files.catbox.moe/fsl3t0.mp4",
+      "url": "https://files.catbox.moe/oi2kso.mp4",
       "store_url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=h7_wordmatelite_en&mt=8",
       "hook": "5 words a day. That's it.",
       "name": "Wordmate Lite: Vocabulary",
@@ -7037,7 +7252,7 @@
     "wordmatelite/zh-Hant": {
       "app": "wordmatelite",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/key4s3.mp4",
+      "url": "https://files.catbox.moe/c5pzkq.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=h7_wordmatelite_zh-Hant&mt=8",
       "hook": "每天只背 5 個單字",
       "name": "Wordmate Lite 每天五個單字",
@@ -7252,7 +7467,7 @@
     "zipbox/en": {
       "app": "zipbox",
       "locale": "en",
-      "url": "https://files.catbox.moe/xr0og7.mp4",
+      "url": "https://files.catbox.moe/qw455b.mp4",
       "store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=h7_zipbox_en&mt=8",
       "hook": "Need one file from a ZIP?",
       "name": "Zipbox: Unzip RAR, ZIP & 7z",
@@ -7295,7 +7510,7 @@
     "zipbox/zh-Hant": {
       "app": "zipbox",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/z5y69c.mp4",
+      "url": "https://files.catbox.moe/sncfck.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=h7_zipbox_zh-Hant&mt=8",
       "hook": "壓縮檔裡 只要一個檔？",
       "name": "Zipbox 解壓縮：RAR ZIP 7z",
@@ -7332,6 +7547,92 @@
           "id": "c",
           "lead": "ZIP、RAR、7z…支援 13 種格式",
           "benefit": "先看裡面有什麼 只取那一個"
+        }
+      ]
+    },
+    "zipbox/ja": {
+      "app": "zipbox",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/1p9j81.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=h7_zipbox_ja&mt=8",
+      "hook": "ZIPの中の 1つだけ欲しい？",
+      "name": "Zipbox 解凍：ZIP RAR 7z対応",
+      "search": "Zipbox 解凍",
+      "tags": [
+        "#ZIPRAR7z対応",
+        "#圧縮",
+        "#圧縮解凍",
+        "#展開",
+        "#アーカイブ",
+        "#Zipbox解凍"
+      ],
+      "keywords": [
+        "圧縮",
+        "圧縮解凍",
+        "展開",
+        "アーカイブ",
+        "パスワード",
+        "暗号化"
+      ],
+      "keyline": "広告なしで圧縮ファイルをすぐ開く",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ZIPの中の 1つだけ欲しい？",
+          "benefit": "中身を見て それだけ取り出す"
+        },
+        {
+          "id": "b",
+          "lead": "中身を見て それだけ取り出す",
+          "benefit": "暗号化ZIPも 作れる"
+        },
+        {
+          "id": "c",
+          "lead": "ZIP・RAR・7zなど 13形式に対応",
+          "benefit": "中身を見て それだけ取り出す"
+        }
+      ]
+    },
+    "zipbox/ko": {
+      "app": "zipbox",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/7i233f.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=h7_zipbox_ko&mt=8",
+      "hook": "압축 파일 속 딱 하나만 필요해?",
+      "name": "Zipbox 압축풀기: ZIP RAR 7z",
+      "search": "Zipbox 압축풀기",
+      "tags": [
+        "#압축파일",
+        "#압축해제",
+        "#비밀번호",
+        "#암호화",
+        "#분할",
+        "#Zipbox압축풀기"
+      ],
+      "keywords": [
+        "압축파일",
+        "압축해제",
+        "비밀번호",
+        "암호화",
+        "분할",
+        "일괄"
+      ],
+      "keyline": "광고 없이 압축 풀고 미리보기",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "압축 파일 속 딱 하나만 필요해?",
+          "benefit": "풀기 전에 미리 보고 그것만 꺼내기"
+        },
+        {
+          "id": "b",
+          "lead": "풀기 전에 미리 보고 그것만 꺼내기",
+          "benefit": "암호화 압축도 가능"
+        },
+        {
+          "id": "c",
+          "lead": "ZIP·RAR·7z 등 13가지 형식",
+          "benefit": "풀기 전에 미리 보고 그것만 꺼내기"
         }
       ]
     },
@@ -8225,66 +8526,7 @@
         ]
       }
     },
-    "moneytag": {
-      "ja": {
-        "keywords": [
-          "損益計算書",
-          "案件別原価",
-          "ジョブコスト",
-          "利益率",
-          "顧客別採算",
-          "原価配賦"
-        ],
-        "keyline": "収入と支出",
-        "tags": [
-          "#収入と支出",
-          "#損益計算書",
-          "#案件別原価",
-          "#ジョブコスト",
-          "#利益率",
-          "#MoneyTag"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "손익계산서",
-          "작업별 원가",
-          "잡 코스팅",
-          "이익률",
-          "고객별 수익성",
-          "원가 배분"
-        ],
-        "keyline": "수입과 지출",
-        "tags": [
-          "#수입과지출",
-          "#손익계산서",
-          "#작업별원가",
-          "#잡코스팅",
-          "#이익률",
-          "#MoneyTag"
-        ]
-      }
-    },
     "notesstudio100": {
-      "ja": {
-        "keywords": [
-          "メモ帳",
-          "手帳",
-          "日記",
-          "暗記",
-          "単語帳",
-          "筆記"
-        ],
-        "keyline": "メモ帳 · 手帳 · 日記",
-        "tags": [
-          "#メモ帳",
-          "#手帳",
-          "#日記",
-          "#暗記",
-          "#単語帳",
-          "#100NotesStudio"
-        ]
-      },
       "ko": {
         "keywords": [
           "손글씨",
@@ -8852,46 +9094,6 @@
           "#중국어공부",
           "#스페인어",
           "#Wordmate단어학습"
-        ]
-      }
-    },
-    "zipbox": {
-      "ja": {
-        "keywords": [
-          "圧縮",
-          "圧縮解凍",
-          "展開",
-          "アーカイブ",
-          "パスワード",
-          "暗号化"
-        ],
-        "keyline": "広告なしで圧縮ファイルをすぐ開く",
-        "tags": [
-          "#ZIPRAR7z対応",
-          "#圧縮",
-          "#圧縮解凍",
-          "#展開",
-          "#アーカイブ",
-          "#Zipbox解凍"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "압축파일",
-          "압축해제",
-          "비밀번호",
-          "암호화",
-          "분할",
-          "일괄"
-        ],
-        "keyline": "압축파일 · 압축해제 · 비밀번호",
-        "tags": [
-          "#압축파일",
-          "#압축해제",
-          "#비밀번호",
-          "#암호화",
-          "#분할",
-          "#Zipbox압축풀기"
         ]
       }
     }

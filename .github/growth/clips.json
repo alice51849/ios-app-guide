@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:52:06Z",
+  "updated_at": "2026-10-14T14:02:21Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -812,6 +812,76 @@
         "#iphoneapps",
         "#appstore",
         "#ios"
+      ]
+    },
+    "qrcodehalo/zh-Hant": {
+      "app": "qrcodehalo",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/8rnoab.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=h7_qrcodehalo_zh-Hant&mt=8",
+      "hook": "QR Code 掃到就直接開",
+      "name": "QR Code Halo：安全掃描與建立",
+      "search": "QR Code Halo",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "savetag/en": {
+      "app": "savetag",
+      "locale": "en",
+      "url": "https://files.catbox.moe/6r9nrp.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=h7_savetag_en&mt=8",
+      "hook": "Links you saved but never read?",
+      "name": "SaveTag: AI Social Bookmarks",
+      "search": "SaveTag",
+      "tags": [
+        "#productivity",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "savetag/zh-Hant": {
+      "app": "savetag",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/oqnvsf.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=h7_savetag_zh-Hant&mt=8",
+      "hook": "收藏的連結 從來沒點開過？",
+      "name": "SaveTag:AI 連結收藏",
+      "search": "SaveTag",
+      "tags": [
+        "#效率工具",
+        "#App推薦",
+        "#iPhone"
+      ]
+    },
+    "scanto/en": {
+      "app": "scanto",
+      "locale": "en",
+      "url": "https://files.catbox.moe/jmy42w.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=h7_scanto_en&mt=8",
+      "hook": "Sharing your ID? Add a password",
+      "name": "ScanTo Pro: Offline PDF & OCR",
+      "search": "ScanTo Pro",
+      "tags": [
+        "#productivity",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "scanto/zh-Hant": {
+      "app": "scanto",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/c6jzjk.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=h7_scanto_zh-Hant&mt=8",
+      "hook": "身分證要傳出去？ 先加密碼",
+      "name": "ScanTo Pro: 離線PDF掃描",
+      "search": "ScanTo Pro 離線PDF掃描",
+      "tags": [
+        "#效率工具",
+        "#App推薦",
+        "#iPhone"
       ]
     }
   },
@@ -1707,6 +1777,12 @@
     {
       "date": "2026-11-08",
       "slot": 1,
+      "channel": "telegram",
+      "clip": "qrcodehalo/zh-Hant"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 1,
       "channel": "threads",
       "clip": "notesstudio100/zh-Hant"
     },
@@ -1731,56 +1807,140 @@
     {
       "date": "2026-11-09",
       "slot": 1,
+      "channel": "instagram",
+      "clip": "savetag/zh-Hant"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 1,
       "channel": "telegram",
       "clip": "photocream/zh-Hant"
     },
     {
       "date": "2026-11-09",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "savetag/zh-Hant"
+    },
+    {
+      "date": "2026-11-09",
       "slot": 15,
       "channel": "instagram",
       "clip": "onepageppt/en"
     },
     {
       "date": "2026-11-09",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "savetag/en"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "onepageppt/en"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "picclear/zh-Hant"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "picclear/zh-Hant"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "picclear/zh-Hant"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "photocream/en"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "scanto/en"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "photocream/en"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "qrcodehalo/zh-Hant"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "qrcodehalo/zh-Hant"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "scanto/en"
+    },
+    {
+      "date": "2026-11-11",
       "slot": 15,
       "channel": "telegram",
       "clip": "qrcodehalo/en"
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-11",
       "slot": 15,
       "channel": "threads",
-      "clip": "onepageppt/en"
+      "clip": "scanto/en"
     },
     {
-      "date": "2026-11-10",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "picclear/zh-Hant"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-12",
       "slot": 1,
       "channel": "telegram",
-      "clip": "picclear/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
-      "date": "2026-11-10",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "picclear/zh-Hant"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-12",
       "slot": 15,
       "channel": "instagram",
-      "clip": "photocream/en"
+      "clip": "savetag/en"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-12",
       "slot": 15,
       "channel": "threads",
-      "clip": "photocream/en"
+      "clip": "savetag/en"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "scanto/zh-Hant"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "scanto/zh-Hant"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "scanto/zh-Hant"
     }
   ]
 }
